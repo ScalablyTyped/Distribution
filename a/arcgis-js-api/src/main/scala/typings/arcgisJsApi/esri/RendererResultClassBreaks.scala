@@ -27,7 +27,8 @@ object RendererResultClassBreaks {
     __obj.asInstanceOf[RendererResultClassBreaks]
   }
   
-  extension [Self <: RendererResultClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererResultClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setField1(value: ClassBreaksResult): Self = StObject.set(x, "field1", value.asInstanceOf[js.Any])
     

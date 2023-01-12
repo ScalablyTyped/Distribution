@@ -17,7 +17,8 @@ object IonicEnvironmentFlags {
     __obj.asInstanceOf[IonicEnvironmentFlags]
   }
   
-  extension [Self <: IonicEnvironmentFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonicEnvironmentFlags] (val x: Self) extends AnyVal {
     
     inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     

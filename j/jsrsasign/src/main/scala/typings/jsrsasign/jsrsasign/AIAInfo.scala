@@ -17,7 +17,8 @@ object AIAInfo {
     __obj.asInstanceOf[AIAInfo]
   }
   
-  extension [Self <: AIAInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AIAInfo] (val x: Self) extends AnyVal {
     
     inline def setCaissuer(value: js.Array[String]): Self = StObject.set(x, "caissuer", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ICellMetadata {
     __obj.asInstanceOf[ICellMetadata]
   }
   
-  extension [Self <: ICellMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICellMetadata] (val x: Self) extends AnyVal {
     
     inline def setAzdata_cell_guid(value: String): Self = StObject.set(x, "azdata_cell_guid", value.asInstanceOf[js.Any])
     

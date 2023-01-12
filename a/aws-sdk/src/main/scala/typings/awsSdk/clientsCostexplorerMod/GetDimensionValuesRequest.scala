@@ -50,7 +50,8 @@ object GetDimensionValuesRequest {
     __obj.asInstanceOf[GetDimensionValuesRequest]
   }
   
-  extension [Self <: GetDimensionValuesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDimensionValuesRequest] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Context): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

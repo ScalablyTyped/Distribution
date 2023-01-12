@@ -69,7 +69,8 @@ object buildSrcClientInterfaceMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object buildSrcClientInterfaceMod {
       __obj.asInstanceOf[Descriptors]
     }
     
-    extension [Self <: Descriptors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptors] (val x: Self) extends AnyVal {
       
       inline def setBatching(value: StringDictionary[BundleDescriptor]): Self = StObject.set(x, "batching", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object buildSrcClientInterfaceMod {
       __obj.asInstanceOf[PaginationResponse[RequestObject, ResponseObject, ResponseType]]
     }
     
-    extension [Self <: PaginationResponse[?, ?, ?], RequestObject, ResponseObject, ResponseType](x: Self & (PaginationResponse[RequestObject, ResponseObject, ResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationResponse[?, ?, ?], RequestObject, ResponseObject, ResponseType] (val x: Self & (PaginationResponse[RequestObject, ResponseObject, ResponseType])) extends AnyVal {
       
       inline def setNextPageRequest(value: RequestObject): Self = StObject.set(x, "nextPageRequest", value.asInstanceOf[js.Any])
       

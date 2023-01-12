@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[JWTHeader]
     }
     
-    extension [Self <: JWTHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTHeader] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[JWTObject]
     }
     
-    extension [Self <: JWTObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTObject] (val x: Self) extends AnyVal {
       
       inline def setClaim(value: Any): Self = StObject.set(x, "claim", value.asInstanceOf[js.Any])
       

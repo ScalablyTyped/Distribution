@@ -182,7 +182,8 @@ object namespacesMenusMod {
         __obj.asInstanceOf[CreateCreatePropertiesType]
       }
       
-      extension [Self <: CreateCreatePropertiesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateCreatePropertiesType] (val x: Self) extends AnyVal {
         
         inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         
@@ -395,7 +396,8 @@ object namespacesMenusMod {
         __obj.asInstanceOf[OnClickData]
       }
       
-      extension [Self <: OnClickData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnClickData] (val x: Self) extends AnyVal {
         
         inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
         
@@ -557,7 +559,8 @@ object namespacesMenusMod {
         __obj.asInstanceOf[OnShownInfoType]
       }
       
-      extension [Self <: OnShownInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnShownInfoType] (val x: Self) extends AnyVal {
         
         inline def setContexts(value: js.Array[ContextType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
         
@@ -641,7 +644,8 @@ object namespacesMenusMod {
         __obj.asInstanceOf[OverrideContextContextOptionsType]
       }
       
-      extension [Self <: OverrideContextContextOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverrideContextContextOptionsType] (val x: Self) extends AnyVal {
         
         inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
         
@@ -848,7 +852,8 @@ object namespacesMenusMod {
         __obj.asInstanceOf[UpdateUpdatePropertiesType]
       }
       
-      extension [Self <: UpdateUpdatePropertiesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateUpdatePropertiesType] (val x: Self) extends AnyVal {
         
         inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
         

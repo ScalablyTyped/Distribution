@@ -18,7 +18,8 @@ object Polygon {
     __obj.asInstanceOf[Polygon]
   }
   
-  extension [Self <: Polygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
     
     inline def setRings(value: js.Array[js.Array[Position]]): Self = StObject.set(x, "rings", value.asInstanceOf[js.Any])
     

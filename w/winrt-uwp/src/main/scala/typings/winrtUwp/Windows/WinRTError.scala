@@ -20,7 +20,8 @@ object WinRTError {
     __obj.asInstanceOf[WinRTError]
   }
   
-  extension [Self <: WinRTError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WinRTError] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

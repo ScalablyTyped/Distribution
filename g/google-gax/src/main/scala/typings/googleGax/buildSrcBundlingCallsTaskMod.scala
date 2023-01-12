@@ -105,7 +105,8 @@ object buildSrcBundlingCallsTaskMod {
       __obj.asInstanceOf[SubResponseInfo]
     }
     
-    extension [Self <: SubResponseInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubResponseInfo] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object buildSrcBundlingCallsTaskMod {
       __obj.asInstanceOf[TaskData]
     }
     
-    extension [Self <: TaskData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskData] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       

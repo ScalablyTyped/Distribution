@@ -33,7 +33,8 @@ object EbsInstanceBlockDevice {
     __obj.asInstanceOf[EbsInstanceBlockDevice]
   }
   
-  extension [Self <: EbsInstanceBlockDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsInstanceBlockDevice] (val x: Self) extends AnyVal {
     
     inline def setAttachTime(value: js.Date): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeLiveSourceRequest {
     __obj.asInstanceOf[DescribeLiveSourceRequest]
   }
   
-  extension [Self <: DescribeLiveSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLiveSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     

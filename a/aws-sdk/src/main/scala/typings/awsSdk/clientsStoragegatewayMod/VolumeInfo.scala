@@ -45,7 +45,8 @@ object VolumeInfo {
     __obj.asInstanceOf[VolumeInfo]
   }
   
-  extension [Self <: VolumeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeInfo] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

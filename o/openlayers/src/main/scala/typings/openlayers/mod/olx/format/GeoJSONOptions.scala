@@ -20,7 +20,8 @@ object GeoJSONOptions {
     __obj.asInstanceOf[GeoJSONOptions]
   }
   
-  extension [Self <: GeoJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
     

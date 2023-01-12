@@ -216,7 +216,8 @@ object dxMenuOptions {
     __obj.asInstanceOf[dxMenuOptions[TKey]]
   }
   
-  extension [Self <: dxMenuOptions[?], TKey](x: Self & dxMenuOptions[TKey]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxMenuOptions[?], TKey] (val x: Self & dxMenuOptions[TKey]) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

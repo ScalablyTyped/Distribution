@@ -52,7 +52,8 @@ object HttpRule {
     __obj.asInstanceOf[HttpRule]
   }
   
-  extension [Self <: HttpRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpRule] (val x: Self) extends AnyVal {
     
     inline def setAdditionalBindings(value: js.Array[HttpRule]): Self = StObject.set(x, "additionalBindings", value.asInstanceOf[js.Any])
     

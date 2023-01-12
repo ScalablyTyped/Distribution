@@ -23,7 +23,8 @@ object DeleteThreatIntelSetRequest {
     __obj.asInstanceOf[DeleteThreatIntelSetRequest]
   }
   
-  extension [Self <: DeleteThreatIntelSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteThreatIntelSetRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

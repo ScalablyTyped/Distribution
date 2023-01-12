@@ -68,7 +68,8 @@ object IVBSAXAttributes {
     __obj.asInstanceOf[IVBSAXAttributes]
   }
   
-  extension [Self <: IVBSAXAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVBSAXAttributes] (val x: Self) extends AnyVal {
     
     inline def setGetIndexFromName(value: (String, String) => Double): Self = StObject.set(x, "getIndexFromName", js.Any.fromFunction2(value))
     

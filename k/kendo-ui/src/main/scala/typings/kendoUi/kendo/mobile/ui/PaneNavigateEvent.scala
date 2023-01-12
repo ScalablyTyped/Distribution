@@ -18,7 +18,8 @@ object PaneNavigateEvent {
     __obj.asInstanceOf[PaneNavigateEvent]
   }
   
-  extension [Self <: PaneNavigateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneNavigateEvent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: JQuery): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

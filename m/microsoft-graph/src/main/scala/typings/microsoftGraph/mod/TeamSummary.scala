@@ -19,7 +19,8 @@ object TeamSummary {
     __obj.asInstanceOf[TeamSummary]
   }
   
-  extension [Self <: TeamSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamSummary] (val x: Self) extends AnyVal {
     
     inline def setGuestsCount(value: NullableOption[Double]): Self = StObject.set(x, "guestsCount", value.asInstanceOf[js.Any])
     

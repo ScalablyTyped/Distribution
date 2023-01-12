@@ -23,7 +23,8 @@ object GalleriaJS {
       __obj.asInstanceOf[GalleriaEntry]
     }
     
-    extension [Self <: GalleriaEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleriaEntry] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object GalleriaJS {
       __obj.asInstanceOf[GalleriaOptions]
     }
     
-    extension [Self <: GalleriaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleriaOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

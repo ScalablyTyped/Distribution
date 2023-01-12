@@ -94,7 +94,8 @@ object Conversion {
     __obj.asInstanceOf[Conversion]
   }
   
-  extension [Self <: Conversion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
     
     inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
     

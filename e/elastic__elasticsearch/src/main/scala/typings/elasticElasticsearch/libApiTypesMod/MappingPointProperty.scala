@@ -26,7 +26,8 @@ object MappingPointProperty {
     __obj.asInstanceOf[MappingPointProperty]
   }
   
-  extension [Self <: MappingPointProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingPointProperty] (val x: Self) extends AnyVal {
     
     inline def setIgnore_malformed(value: Boolean): Self = StObject.set(x, "ignore_malformed", value.asInstanceOf[js.Any])
     

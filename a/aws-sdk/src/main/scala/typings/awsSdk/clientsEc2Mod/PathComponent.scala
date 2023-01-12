@@ -98,7 +98,8 @@ object PathComponent {
     __obj.asInstanceOf[PathComponent]
   }
   
-  extension [Self <: PathComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathComponent] (val x: Self) extends AnyVal {
     
     inline def setAclRule(value: AnalysisAclRule): Self = StObject.set(x, "AclRule", value.asInstanceOf[js.Any])
     

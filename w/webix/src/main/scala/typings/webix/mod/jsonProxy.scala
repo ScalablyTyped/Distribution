@@ -20,7 +20,8 @@ object jsonProxy {
     __obj.asInstanceOf[jsonProxy]
   }
   
-  extension [Self <: jsonProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jsonProxy] (val x: Self) extends AnyVal {
     
     inline def set$proxy(value: Boolean): Self = StObject.set(x, "$proxy", value.asInstanceOf[js.Any])
     

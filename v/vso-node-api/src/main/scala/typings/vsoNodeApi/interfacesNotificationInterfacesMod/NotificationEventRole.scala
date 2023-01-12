@@ -28,7 +28,8 @@ object NotificationEventRole {
     __obj.asInstanceOf[NotificationEventRole]
   }
   
-  extension [Self <: NotificationEventRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventRole] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -216,7 +216,8 @@ object typesGridlayoutMod {
         __obj.asInstanceOf[ICellConfig]
       }
       
-      extension [Self <: ICellConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICellConfig] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -270,7 +271,8 @@ object typesGridlayoutMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
         

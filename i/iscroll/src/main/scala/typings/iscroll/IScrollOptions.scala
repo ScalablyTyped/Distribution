@@ -126,7 +126,8 @@ object IScrollOptions {
     __obj.asInstanceOf[IScrollOptions]
   }
   
-  extension [Self <: IScrollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScrollOptions] (val x: Self) extends AnyVal {
     
     inline def setBounce(value: Boolean): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     

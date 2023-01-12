@@ -36,7 +36,8 @@ object EmailQueryOptions {
     __obj.asInstanceOf[EmailQueryOptions]
   }
   
-  extension [Self <: EmailQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setFolderIds(value: IVector[String]): Self = StObject.set(x, "folderIds", value.asInstanceOf[js.Any])
     

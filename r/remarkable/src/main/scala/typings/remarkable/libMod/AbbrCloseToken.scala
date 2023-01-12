@@ -21,7 +21,8 @@ object AbbrCloseToken {
     __obj.asInstanceOf[AbbrCloseToken]
   }
   
-  extension [Self <: AbbrCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbbrCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: abbr_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -126,7 +126,8 @@ object typesLayoutGridMod {
       __obj.asInstanceOf[GridProps]
     }
     
-    extension [Self <: GridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
       
       inline def setCloneStyles(value: Boolean): Self = StObject.set(x, "cloneStyles", value.asInstanceOf[js.Any])
       

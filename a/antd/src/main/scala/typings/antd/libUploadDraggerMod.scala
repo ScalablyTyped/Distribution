@@ -150,7 +150,8 @@ object libUploadDraggerMod extends Shortcut {
       __obj.asInstanceOf[DraggerProps]
     }
     
-    extension [Self <: DraggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggerProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object assetMod {
       __obj.asInstanceOf[AssetData]
     }
     
-    extension [Self <: AssetData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetData] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object assetMod {
       __obj.asInstanceOf[AssetDataWithoutFiles]
     }
     
-    extension [Self <: AssetDataWithoutFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetDataWithoutFiles] (val x: Self) extends AnyVal {
       
       inline def setFileSystemLocation(value: String): Self = StObject.set(x, "fileSystemLocation", value.asInstanceOf[js.Any])
       

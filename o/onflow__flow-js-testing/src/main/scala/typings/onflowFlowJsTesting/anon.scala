@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[AddressMap]
     }
     
-    extension [Self <: AddressMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressMap] (val x: Self) extends AnyVal {
       
       inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[AdminPort]
     }
     
-    extension [Self <: AdminPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdminPort] (val x: Self) extends AnyVal {
       
       inline def setAdminPort(value: Double): Self = StObject.set(x, "adminPort", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
@@ -165,7 +168,8 @@ object anon {
       __obj.asInstanceOf[ArgsCode]
     }
     
-    extension [Self <: ArgsCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgsCode] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
@@ -245,7 +250,8 @@ object anon {
       __obj.asInstanceOf[Keys]
     }
     
-    extension [Self <: Keys](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keys] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[KeyObject | PublicKey]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
@@ -272,7 +278,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
@@ -293,7 +300,8 @@ object anon {
       __obj.asInstanceOf[Pkey]
     }
     
-    extension [Self <: Pkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pkey] (val x: Self) extends AnyVal {
       
       inline def setPkey(value: String): Self = StObject.set(x, "pkey", value.asInstanceOf[js.Any])
       
@@ -322,7 +330,8 @@ object anon {
       __obj.asInstanceOf[Signers]
     }
     
-    extension [Self <: Signers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signers] (val x: Self) extends AnyVal {
       
       inline def setAddressMap(value: typings.onflowFlowJsTesting.srcAccountMod.AddressMap): Self = StObject.set(x, "addressMap", value.asInstanceOf[js.Any])
       
@@ -365,7 +374,8 @@ object anon {
       __obj.asInstanceOf[Transformers]
     }
     
-    extension [Self <: Transformers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformers] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

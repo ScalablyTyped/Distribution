@@ -24,7 +24,8 @@ object CorruptedFilterConfigurationException {
     __obj.asInstanceOf[CorruptedFilterConfigurationException]
   }
   
-  extension [Self <: CorruptedFilterConfigurationException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorruptedFilterConfigurationException] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
   }

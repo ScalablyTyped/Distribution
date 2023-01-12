@@ -23,7 +23,8 @@ object ViewerEventArgs {
     __obj.asInstanceOf[ViewerEventArgs]
   }
   
-  extension [Self <: ViewerEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewerEventArgs] (val x: Self) extends AnyVal {
     
     inline def setModel(value: ViewerItem): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

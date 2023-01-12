@@ -19,7 +19,8 @@ object IntrospectionNamedTypeRef {
     __obj.asInstanceOf[IntrospectionNamedTypeRef]
   }
   
-  extension [Self <: IntrospectionNamedTypeRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrospectionNamedTypeRef] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

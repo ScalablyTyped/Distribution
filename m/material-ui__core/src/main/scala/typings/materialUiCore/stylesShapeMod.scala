@@ -22,7 +22,8 @@ object stylesShapeMod extends Shortcut {
       __obj.asInstanceOf[Shape]
     }
     
-    extension [Self <: Shape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object stylesShapeMod extends Shortcut {
       __obj.asInstanceOf[ShapeOptions]
     }
     
-    extension [Self <: ShapeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShapeOptions] (val x: Self) extends AnyVal {
       
       inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       

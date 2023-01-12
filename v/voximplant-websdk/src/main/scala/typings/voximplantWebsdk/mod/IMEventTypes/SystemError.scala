@@ -30,7 +30,8 @@ object SystemError {
     __obj.asInstanceOf[SystemError]
   }
   
-  extension [Self <: SystemError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemError] (val x: Self) extends AnyVal {
     
     inline def setErrorData(value: js.Object): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     

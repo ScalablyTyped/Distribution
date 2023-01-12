@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConnectMiddlewareDirs(value: js.Array[String]): Self = StObject.set(x, "connectMiddlewareDirs", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[FittingContext]
     }
     
-    extension [Self <: FittingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FittingContext] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object mod {
       __obj.asInstanceOf[FittingDef]
     }
     
-    extension [Self <: FittingDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FittingDef] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object mod {
       __obj.asInstanceOf[PipeworksOptions]
     }
     
-    extension [Self <: PipeworksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeworksOptions] (val x: Self) extends AnyVal {
       
       inline def setAffinity(value: Affinity): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     }

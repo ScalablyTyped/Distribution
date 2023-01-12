@@ -21,7 +21,8 @@ object Generation {
     __obj.asInstanceOf[Generation]
   }
   
-  extension [Self <: Generation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Generation] (val x: Self) extends AnyVal {
     
     inline def setDex_name(value: String): Self = StObject.set(x, "dex_name", value.asInstanceOf[js.Any])
     

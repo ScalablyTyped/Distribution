@@ -17,7 +17,8 @@ object Each {
     __obj.asInstanceOf[Each]
   }
   
-  extension [Self <: Each](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Each] (val x: Self) extends AnyVal {
     
     inline def setEach(value: Validator): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
     

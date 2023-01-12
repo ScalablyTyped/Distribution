@@ -28,7 +28,8 @@ object SetStatusInput {
     __obj.asInstanceOf[SetStatusInput]
   }
   
-  extension [Self <: SetStatusInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStatusInput] (val x: Self) extends AnyVal {
     
     inline def setObjectIds(value: idList): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
     

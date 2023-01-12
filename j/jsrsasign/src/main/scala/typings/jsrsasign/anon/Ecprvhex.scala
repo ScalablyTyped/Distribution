@@ -17,7 +17,8 @@ object Ecprvhex {
     __obj.asInstanceOf[Ecprvhex]
   }
   
-  extension [Self <: Ecprvhex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ecprvhex] (val x: Self) extends AnyVal {
     
     inline def setEcprvhex(value: String): Self = StObject.set(x, "ecprvhex", value.asInstanceOf[js.Any])
     

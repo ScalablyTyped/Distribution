@@ -38,7 +38,8 @@ object EmptyStatement {
     __obj.asInstanceOf[EmptyStatement]
   }
   
-  extension [Self <: EmptyStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyStatement] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }

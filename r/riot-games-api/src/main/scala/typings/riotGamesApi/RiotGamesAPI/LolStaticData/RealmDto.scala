@@ -42,7 +42,8 @@ object RealmDto {
     __obj.asInstanceOf[RealmDto]
   }
   
-  extension [Self <: RealmDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealmDto] (val x: Self) extends AnyVal {
     
     inline def setCdn(value: String): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
     

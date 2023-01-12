@@ -18,7 +18,8 @@ object dxPolarChartCommonAxisSettingsStripStyleLabel {
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsStripStyleLabel]
   }
   
-  extension [Self <: dxPolarChartCommonAxisSettingsStripStyleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartCommonAxisSettingsStripStyleLabel] (val x: Self) extends AnyVal {
     
     inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

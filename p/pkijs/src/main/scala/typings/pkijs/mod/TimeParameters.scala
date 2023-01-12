@@ -20,7 +20,8 @@ object TimeParameters {
     __obj.asInstanceOf[TimeParameters]
   }
   
-  extension [Self <: TimeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AudioGraphConnection {
     __obj.asInstanceOf[AudioGraphConnection]
   }
   
-  extension [Self <: AudioGraphConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioGraphConnection] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: IAudioNode): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

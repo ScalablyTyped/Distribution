@@ -45,7 +45,8 @@ object CheckAutomatically {
     __obj.asInstanceOf[CheckAutomatically]
   }
   
-  extension [Self <: CheckAutomatically](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckAutomatically] (val x: Self) extends AnyVal {
     
     inline def setCheckAutomatically(value: ON_ERROR_RECOVERY | ON_LOAD): Self = StObject.set(x, "checkAutomatically", value.asInstanceOf[js.Any])
     

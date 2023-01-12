@@ -33,7 +33,8 @@ object typingsModelsSettlementTransferMod {
         __obj.asInstanceOf[CreateSettlementTransfer]
       }
       
-      extension [Self <: CreateSettlementTransfer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateSettlementTransfer] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -104,7 +105,8 @@ object typingsModelsSettlementTransferMod {
         __obj.asInstanceOf[SettlementTransferData]
       }
       
-      extension [Self <: SettlementTransferData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettlementTransferData] (val x: Self) extends AnyVal {
         
         inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
         

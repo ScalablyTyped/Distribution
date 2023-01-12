@@ -55,7 +55,8 @@ object HealthCheckResponse {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setIsHealthy(value: Boolean): Self = StObject.set(x, "isHealthy", value.asInstanceOf[js.Any])
     }

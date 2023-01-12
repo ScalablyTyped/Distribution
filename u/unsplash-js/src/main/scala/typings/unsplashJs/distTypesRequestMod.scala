@@ -72,7 +72,8 @@ object distTypesRequestMod {
       __obj.asInstanceOf[OrientationParam]
     }
     
-    extension [Self <: OrientationParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrientationParam] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distTypesRequestMod {
       __obj.asInstanceOf[PaginationParams]
     }
     
-    extension [Self <: PaginationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationParams] (val x: Self) extends AnyVal {
       
       inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
       

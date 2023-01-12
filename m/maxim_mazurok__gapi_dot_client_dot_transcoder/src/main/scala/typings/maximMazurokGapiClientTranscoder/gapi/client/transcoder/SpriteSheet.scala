@@ -58,7 +58,8 @@ object SpriteSheet {
     __obj.asInstanceOf[SpriteSheet]
   }
   
-  extension [Self <: SpriteSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSheet] (val x: Self) extends AnyVal {
     
     inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     

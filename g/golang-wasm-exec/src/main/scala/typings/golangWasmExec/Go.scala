@@ -38,7 +38,8 @@ object Go {
     __obj.asInstanceOf[Go]
   }
   
-  extension [Self <: Go](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Go] (val x: Self) extends AnyVal {
     
     inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
     

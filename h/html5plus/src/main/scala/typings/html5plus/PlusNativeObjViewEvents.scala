@@ -63,7 +63,8 @@ object PlusNativeObjViewEvents {
     __obj.asInstanceOf[PlusNativeObjViewEvents]
   }
   
-  extension [Self <: PlusNativeObjViewEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjViewEvents] (val x: Self) extends AnyVal {
     
     inline def setClick(value: String): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

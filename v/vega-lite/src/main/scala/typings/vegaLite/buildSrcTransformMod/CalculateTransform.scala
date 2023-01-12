@@ -26,7 +26,8 @@ object CalculateTransform {
     __obj.asInstanceOf[CalculateTransform]
   }
   
-  extension [Self <: CalculateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: FieldName): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

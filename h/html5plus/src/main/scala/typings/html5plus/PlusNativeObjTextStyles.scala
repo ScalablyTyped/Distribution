@@ -184,7 +184,8 @@ object PlusNativeObjTextStyles {
     __obj.asInstanceOf[PlusNativeObjTextStyles]
   }
   
-  extension [Self <: PlusNativeObjTextStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjTextStyles] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

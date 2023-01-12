@@ -16,7 +16,8 @@ object PickReadonlyScrollbarStyl {
     __obj.asInstanceOf[PickReadonlyScrollbarStyl]
   }
   
-  extension [Self <: PickReadonlyScrollbarStyl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickReadonlyScrollbarStyl] (val x: Self) extends AnyVal {
     
     inline def setThumbColor(value: String): Self = StObject.set(x, "thumbColor", value.asInstanceOf[js.Any])
   }

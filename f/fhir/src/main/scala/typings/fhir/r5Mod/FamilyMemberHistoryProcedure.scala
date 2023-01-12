@@ -66,7 +66,8 @@ object FamilyMemberHistoryProcedure {
     __obj.asInstanceOf[FamilyMemberHistoryProcedure]
   }
   
-  extension [Self <: FamilyMemberHistoryProcedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FamilyMemberHistoryProcedure] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

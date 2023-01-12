@@ -48,7 +48,8 @@ object distCommonjsViewsFeedFeedDateMod extends Shortcut {
       __obj.asInstanceOf[StrictFeedDateProps]
     }
     
-    extension [Self <: StrictFeedDateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFeedDateProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

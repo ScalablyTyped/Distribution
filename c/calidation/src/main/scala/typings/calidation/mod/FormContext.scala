@@ -48,7 +48,8 @@ object FormContext {
     __obj.asInstanceOf[FormContext[T]]
   }
   
-  extension [Self <: FormContext[?], T /* <: js.Object */](x: Self & FormContext[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormContext[?], T /* <: js.Object */] (val x: Self & FormContext[T]) extends AnyVal {
     
     inline def setDirty(value: Dirty[T]): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     

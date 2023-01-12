@@ -31,7 +31,8 @@ object GetConfigOptions {
     __obj.asInstanceOf[GetConfigOptions]
   }
   
-  extension [Self <: GetConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setIsModdedConfig(value: Boolean): Self = StObject.set(x, "isModdedConfig", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EnvironmentLanguage {
     __obj.asInstanceOf[EnvironmentLanguage]
   }
   
-  extension [Self <: EnvironmentLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentLanguage] (val x: Self) extends AnyVal {
     
     inline def setImages(value: EnvironmentImages): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

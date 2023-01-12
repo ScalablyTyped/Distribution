@@ -53,7 +53,8 @@ object ServiceSoftwareOptions {
     __obj.asInstanceOf[ServiceSoftwareOptions]
   }
   
-  extension [Self <: ServiceSoftwareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceSoftwareOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomatedUpdateDate(value: js.Date): Self = StObject.set(x, "AutomatedUpdateDate", value.asInstanceOf[js.Any])
     

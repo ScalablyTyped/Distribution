@@ -26,7 +26,8 @@ object XpackUsageMlInferenceIngestProcessor {
     __obj.asInstanceOf[XpackUsageMlInferenceIngestProcessor]
   }
   
-  extension [Self <: XpackUsageMlInferenceIngestProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInferenceIngestProcessor] (val x: Self) extends AnyVal {
     
     inline def setNum_docs_processed(value: XpackUsageMlInferenceIngestProcessorCount): Self = StObject.set(x, "num_docs_processed", value.asInstanceOf[js.Any])
     

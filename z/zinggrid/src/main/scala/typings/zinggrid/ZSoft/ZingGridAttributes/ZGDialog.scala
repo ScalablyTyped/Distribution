@@ -35,7 +35,8 @@ object ZGDialog {
     __obj.asInstanceOf[ZGDialog]
   }
   
-  extension [Self <: ZGDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGDialog] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

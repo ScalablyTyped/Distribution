@@ -47,7 +47,8 @@ object pluginMod {
       __obj.asInstanceOf[ExpirationPluginConfig]
     }
     
-    extension [Self <: ExpirationPluginConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpirationPluginConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       

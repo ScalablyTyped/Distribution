@@ -65,7 +65,8 @@ object libCardStyleMod {
       __obj.asInstanceOf[CardStyle]
     }
     
-    extension [Self <: CardStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardStyle] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ViewStyle): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

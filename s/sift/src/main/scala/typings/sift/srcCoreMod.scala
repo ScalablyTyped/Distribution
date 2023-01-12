@@ -145,7 +145,8 @@ object srcCoreMod {
       __obj.asInstanceOf[ArrayValueQuery[TValue]]
     }
     
-    extension [Self <: ArrayValueQuery[?], TValue](x: Self & ArrayValueQuery[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayValueQuery[?], TValue] (val x: Self & ArrayValueQuery[TValue]) extends AnyVal {
       
       inline def set$elemMatch(value: Query[TValue]): Self = StObject.set(x, "$elemMatch", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object srcCoreMod {
       __obj.asInstanceOf[BasicValueQuery[TValue]]
     }
     
-    extension [Self <: BasicValueQuery[?], TValue](x: Self & BasicValueQuery[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicValueQuery[?], TValue] (val x: Self & BasicValueQuery[TValue]) extends AnyVal {
       
       inline def set$all(value: js.Array[TValue]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
@@ -339,7 +341,8 @@ object srcCoreMod {
       __obj.asInstanceOf[NamedOperation]
     }
     
-    extension [Self <: NamedOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedOperation] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -391,7 +394,8 @@ object srcCoreMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (Any, Any) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       

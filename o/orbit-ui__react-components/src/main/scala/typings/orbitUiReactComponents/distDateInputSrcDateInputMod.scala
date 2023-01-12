@@ -50,7 +50,8 @@ object distDateInputSrcDateInputMod {
       __obj.asInstanceOf[DatePreset]
     }
     
-    extension [Self <: DatePreset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePreset] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object distDateInputSrcDateInputMod {
       __obj.asInstanceOf[InnerDateInputProps]
     }
     
-    extension [Self <: InnerDateInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerDateInputProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

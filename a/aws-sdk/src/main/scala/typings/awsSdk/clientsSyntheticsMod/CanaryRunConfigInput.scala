@@ -33,7 +33,8 @@ object CanaryRunConfigInput {
     __obj.asInstanceOf[CanaryRunConfigInput]
   }
   
-  extension [Self <: CanaryRunConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanaryRunConfigInput] (val x: Self) extends AnyVal {
     
     inline def setActiveTracing(value: NullableBoolean): Self = StObject.set(x, "ActiveTracing", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object MergedModifiers {
     __obj.asInstanceOf[MergedModifiers]
   }
   
-  extension [Self <: MergedModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergedModifiers] (val x: Self) extends AnyVal {
     
     inline def setMergedModifiers(value: StringDictionary[js.Function2[/* date */ js.Date, /* type */ String, Boolean]]): Self = StObject.set(x, "mergedModifiers", value.asInstanceOf[js.Any])
   }

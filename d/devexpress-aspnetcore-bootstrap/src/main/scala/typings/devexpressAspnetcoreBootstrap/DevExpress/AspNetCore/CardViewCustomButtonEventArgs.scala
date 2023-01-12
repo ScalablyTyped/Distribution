@@ -19,7 +19,8 @@ object CardViewCustomButtonEventArgs {
     __obj.asInstanceOf[CardViewCustomButtonEventArgs]
   }
   
-  extension [Self <: CardViewCustomButtonEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewCustomButtonEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     

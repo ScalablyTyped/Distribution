@@ -28,7 +28,8 @@ object ContentToken {
     __obj.asInstanceOf[ContentToken]
   }
   
-  extension [Self <: ContentToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentToken] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

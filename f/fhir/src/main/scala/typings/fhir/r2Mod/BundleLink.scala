@@ -29,7 +29,8 @@ object BundleLink {
     __obj.asInstanceOf[BundleLink]
   }
   
-  extension [Self <: BundleLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleLink] (val x: Self) extends AnyVal {
     
     inline def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     

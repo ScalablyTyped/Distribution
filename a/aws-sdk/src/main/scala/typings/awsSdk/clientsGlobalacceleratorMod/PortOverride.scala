@@ -23,7 +23,8 @@ object PortOverride {
     __obj.asInstanceOf[PortOverride]
   }
   
-  extension [Self <: PortOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortOverride] (val x: Self) extends AnyVal {
     
     inline def setEndpointPort(value: PortNumber): Self = StObject.set(x, "EndpointPort", value.asInstanceOf[js.Any])
     

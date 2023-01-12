@@ -38,7 +38,8 @@ object ElevationResult {
     __obj.asInstanceOf[ElevationResult]
   }
   
-  extension [Self <: ElevationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationResult] (val x: Self) extends AnyVal {
     
     inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     

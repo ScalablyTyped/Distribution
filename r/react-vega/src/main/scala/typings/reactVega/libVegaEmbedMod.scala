@@ -70,7 +70,8 @@ object libVegaEmbedMod {
       __obj.asInstanceOf[VegaEmbedProps]
     }
     
-    extension [Self <: VegaEmbedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VegaEmbedProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

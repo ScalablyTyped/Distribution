@@ -33,7 +33,8 @@ object TaskStartFailedEventDetails {
     __obj.asInstanceOf[TaskStartFailedEventDetails]
   }
   
-  extension [Self <: TaskStartFailedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskStartFailedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

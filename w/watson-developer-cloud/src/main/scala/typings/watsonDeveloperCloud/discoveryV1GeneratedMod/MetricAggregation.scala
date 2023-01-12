@@ -23,7 +23,8 @@ object MetricAggregation {
     __obj.asInstanceOf[MetricAggregation]
   }
   
-  extension [Self <: MetricAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricAggregation] (val x: Self) extends AnyVal {
     
     inline def setEvent_type(value: String): Self = StObject.set(x, "event_type", value.asInstanceOf[js.Any])
     

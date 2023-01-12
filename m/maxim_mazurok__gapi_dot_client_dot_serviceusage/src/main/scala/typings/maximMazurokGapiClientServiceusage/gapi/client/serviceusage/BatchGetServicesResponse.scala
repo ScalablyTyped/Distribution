@@ -16,7 +16,8 @@ object BatchGetServicesResponse {
     __obj.asInstanceOf[BatchGetServicesResponse]
   }
   
-  extension [Self <: BatchGetServicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetServicesResponse] (val x: Self) extends AnyVal {
     
     inline def setServices(value: js.Array[GoogleApiServiceusageV1Service]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     

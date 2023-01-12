@@ -37,7 +37,8 @@ object DistanceField {
     __obj.asInstanceOf[DistanceField]
   }
   
-  extension [Self <: DistanceField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceField] (val x: Self) extends AnyVal {
     
     inline def setDistanceField(value: String): Self = StObject.set(x, "distanceField", value.asInstanceOf[js.Any])
     

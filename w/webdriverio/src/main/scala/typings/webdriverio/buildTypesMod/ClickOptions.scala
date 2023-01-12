@@ -21,7 +21,8 @@ object ClickOptions {
     __obj.asInstanceOf[ClickOptions]
   }
   
-  extension [Self <: ClickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickOptions] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Double | String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

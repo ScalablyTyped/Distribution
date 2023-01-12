@@ -23,7 +23,8 @@ object ListMeshesInput {
     __obj.asInstanceOf[ListMeshesInput]
   }
   
-  extension [Self <: ListMeshesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMeshesInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: ListMeshesLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

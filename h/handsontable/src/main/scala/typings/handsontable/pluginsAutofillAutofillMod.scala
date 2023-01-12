@@ -33,7 +33,8 @@ object pluginsAutofillAutofillMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoInsertRow(value: Boolean): Self = StObject.set(x, "autoInsertRow", value.asInstanceOf[js.Any])
       

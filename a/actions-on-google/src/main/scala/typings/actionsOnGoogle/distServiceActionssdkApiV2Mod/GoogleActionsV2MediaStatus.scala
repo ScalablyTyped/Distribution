@@ -18,7 +18,8 @@ object GoogleActionsV2MediaStatus {
     __obj.asInstanceOf[GoogleActionsV2MediaStatus]
   }
   
-  extension [Self <: GoogleActionsV2MediaStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2MediaStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleActionsV2MediaStatusStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

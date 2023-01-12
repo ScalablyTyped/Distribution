@@ -36,7 +36,8 @@ object typesModulesVirtualMod {
       __obj.asInstanceOf[VirtualData]
     }
     
-    extension [Self <: VirtualData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualData] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object typesModulesVirtualMod {
       __obj.asInstanceOf[VirtualOptions]
     }
     
-    extension [Self <: VirtualOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualOptions] (val x: Self) extends AnyVal {
       
       inline def setAddSlidesAfter(value: Double): Self = StObject.set(x, "addSlidesAfter", value.asInstanceOf[js.Any])
       

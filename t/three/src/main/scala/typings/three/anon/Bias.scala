@@ -57,7 +57,8 @@ object Bias {
     __obj.asInstanceOf[Bias]
   }
   
-  extension [Self <: Bias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bias] (val x: Self) extends AnyVal {
     
     inline def setBias(value: IUniform[Any]): Self = StObject.set(x, "bias", value.asInstanceOf[js.Any])
     

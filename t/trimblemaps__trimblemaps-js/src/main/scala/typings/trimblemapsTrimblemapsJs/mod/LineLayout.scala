@@ -31,7 +31,8 @@ object LineLayout {
     __obj.asInstanceOf[LineLayout]
   }
   
-  extension [Self <: LineLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineLayout] (val x: Self) extends AnyVal {
     
     inline def `setLine-cap`(value: butt | round | square): Self = StObject.set(x, "line-cap", value.asInstanceOf[js.Any])
     

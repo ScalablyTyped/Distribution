@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[LineWidth]
     }
     
-    extension [Self <: LineWidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineWidth] (val x: Self) extends AnyVal {
       
       inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       

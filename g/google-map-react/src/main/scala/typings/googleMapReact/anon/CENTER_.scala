@@ -19,7 +19,8 @@ object CENTER_ {
     __obj.asInstanceOf[CENTER_]
   }
   
-  extension [Self <: CENTER_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CENTER_] (val x: Self) extends AnyVal {
     
     inline def setCENTER(value: Double): Self = StObject.set(x, "CENTER", value.asInstanceOf[js.Any])
     

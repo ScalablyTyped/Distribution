@@ -32,7 +32,8 @@ object TestReportWithArtifacts {
     __obj.asInstanceOf[TestReportWithArtifacts]
   }
   
-  extension [Self <: TestReportWithArtifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReportWithArtifacts] (val x: Self) extends AnyVal {
     
     inline def setDeviceContextId(value: String): Self = StObject.set(x, "deviceContextId", value.asInstanceOf[js.Any])
     

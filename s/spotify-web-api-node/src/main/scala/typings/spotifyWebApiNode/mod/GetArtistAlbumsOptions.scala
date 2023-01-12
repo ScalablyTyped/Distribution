@@ -17,7 +17,8 @@ object GetArtistAlbumsOptions {
     __obj.asInstanceOf[GetArtistAlbumsOptions]
   }
   
-  extension [Self <: GetArtistAlbumsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetArtistAlbumsOptions] (val x: Self) extends AnyVal {
     
     inline def setInclude_groups(value: String): Self = StObject.set(x, "include_groups", value.asInstanceOf[js.Any])
     

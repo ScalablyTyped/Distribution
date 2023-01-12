@@ -27,7 +27,8 @@ object libComponentsGroupedListGroupFooterDottypesMod {
       __obj.asInstanceOf[IGroupFooterProps]
     }
     
-    extension [Self <: IGroupFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupFooterProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IStyleFunctionOrObject[IGroupFooterStyleProps, IGroupFooterStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libComponentsGroupedListGroupFooterDottypesMod {
       __obj.asInstanceOf[IGroupFooterStyleProps]
     }
     
-    extension [Self <: IGroupFooterStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupFooterStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object libComponentsGroupedListGroupFooterDottypesMod {
       __obj.asInstanceOf[IGroupFooterStyles]
     }
     
-    extension [Self <: IGroupFooterStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupFooterStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

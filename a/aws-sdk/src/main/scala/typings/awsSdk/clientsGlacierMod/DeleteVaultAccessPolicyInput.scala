@@ -23,7 +23,8 @@ object DeleteVaultAccessPolicyInput {
     __obj.asInstanceOf[DeleteVaultAccessPolicyInput]
   }
   
-  extension [Self <: DeleteVaultAccessPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVaultAccessPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

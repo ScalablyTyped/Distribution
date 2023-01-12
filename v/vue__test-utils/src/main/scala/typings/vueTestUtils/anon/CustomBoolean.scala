@@ -15,7 +15,8 @@ object CustomBoolean {
     __obj.asInstanceOf[CustomBoolean]
   }
   
-  extension [Self <: CustomBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBoolean] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }

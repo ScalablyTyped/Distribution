@@ -18,7 +18,8 @@ object RegisterPublisherOutput {
     __obj.asInstanceOf[RegisterPublisherOutput]
   }
   
-  extension [Self <: RegisterPublisherOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterPublisherOutput] (val x: Self) extends AnyVal {
     
     inline def setPublisherId(value: PublisherId): Self = StObject.set(x, "PublisherId", value.asInstanceOf[js.Any])
     

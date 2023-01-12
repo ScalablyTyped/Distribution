@@ -32,7 +32,8 @@ object SwitchView {
     __obj.asInstanceOf[SwitchView]
   }
   
-  extension [Self <: SwitchView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchView] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

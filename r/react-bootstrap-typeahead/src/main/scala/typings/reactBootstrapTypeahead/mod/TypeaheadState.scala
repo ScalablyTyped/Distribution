@@ -29,7 +29,8 @@ object TypeaheadState {
     __obj.asInstanceOf[TypeaheadState[T]]
   }
   
-  extension [Self <: TypeaheadState[?], T /* <: TypeaheadModel */](x: Self & TypeaheadState[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadState[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadState[T]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

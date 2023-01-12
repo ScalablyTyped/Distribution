@@ -122,7 +122,8 @@ object resource {
       __obj.asInstanceOf[StringResourceWithLocation]
     }
     
-    extension [Self <: StringResourceWithLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringResourceWithLocation] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, Boolean, Locale, String, String, XInteractionHandler) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction6(value))
     }
@@ -191,7 +192,8 @@ object resource {
       __obj.asInstanceOf[StringResourceWithStorage]
     }
     
-    extension [Self <: StringResourceWithStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringResourceWithStorage] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (XStorage, Boolean, Locale, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction5(value))
     }
@@ -354,7 +356,8 @@ object resource {
       __obj.asInstanceOf[XLocale]
     }
     
-    extension [Self <: XLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLocale] (val x: Self) extends AnyVal {
       
       inline def setAvailableLocales(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLocales", value.asInstanceOf[js.Any])
       
@@ -542,7 +545,8 @@ object resource {
       __obj.asInstanceOf[XResourceBundle]
     }
     
-    extension [Self <: XResourceBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XResourceBundle] (val x: Self) extends AnyVal {
       
       inline def setGetDirectElement(value: String => Any): Self = StObject.set(x, "getDirectElement", js.Any.fromFunction1(value))
       
@@ -586,7 +590,8 @@ object resource {
       __obj.asInstanceOf[XResourceBundleLoader]
     }
     
-    extension [Self <: XResourceBundleLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XResourceBundleLoader] (val x: Self) extends AnyVal {
       
       inline def setLoadBundle(value: (String, Locale) => XResourceBundle): Self = StObject.set(x, "loadBundle", js.Any.fromFunction2(value))
       
@@ -758,7 +763,8 @@ object resource {
       __obj.asInstanceOf[XStringResourceManager]
     }
     
-    extension [Self <: XStringResourceManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourceManager] (val x: Self) extends AnyVal {
       
       inline def setGetUniqueNumericId(value: () => Double): Self = StObject.set(x, "getUniqueNumericId", js.Any.fromFunction0(value))
       
@@ -928,7 +934,8 @@ object resource {
       __obj.asInstanceOf[XStringResourcePersistence]
     }
     
-    extension [Self <: XStringResourcePersistence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourcePersistence] (val x: Self) extends AnyVal {
       
       inline def setExportBinary(value: () => SafeArray[Double]): Self = StObject.set(x, "exportBinary", js.Any.fromFunction0(value))
       
@@ -1084,7 +1091,8 @@ object resource {
       __obj.asInstanceOf[XStringResourceResolver]
     }
     
-    extension [Self <: XStringResourceResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourceResolver] (val x: Self) extends AnyVal {
       
       inline def setCurrentLocale(value: Locale): Self = StObject.set(x, "CurrentLocale", value.asInstanceOf[js.Any])
       
@@ -1148,7 +1156,8 @@ object resource {
       __obj.asInstanceOf[XStringResourceSupplier]
     }
     
-    extension [Self <: XStringResourceSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourceSupplier] (val x: Self) extends AnyVal {
       
       inline def setGetStringResource(value: () => XStringResourceResolver): Self = StObject.set(x, "getStringResource", js.Any.fromFunction0(value))
       
@@ -1225,7 +1234,8 @@ object resource {
       __obj.asInstanceOf[XStringResourceWithLocation]
     }
     
-    extension [Self <: XStringResourceWithLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourceWithLocation] (val x: Self) extends AnyVal {
       
       inline def setSetURL(value: String => Unit): Self = StObject.set(x, "setURL", js.Any.fromFunction1(value))
       
@@ -1302,7 +1312,8 @@ object resource {
       __obj.asInstanceOf[XStringResourceWithStorage]
     }
     
-    extension [Self <: XStringResourceWithStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XStringResourceWithStorage] (val x: Self) extends AnyVal {
       
       inline def setSetStorage(value: XStorage => Unit): Self = StObject.set(x, "setStorage", js.Any.fromFunction1(value))
       

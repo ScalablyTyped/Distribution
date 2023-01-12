@@ -18,7 +18,8 @@ object GetSearchResultsResponse {
     __obj.asInstanceOf[GetSearchResultsResponse]
   }
   
-  extension [Self <: GetSearchResultsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSearchResultsResponse] (val x: Self) extends AnyVal {
     
     inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     

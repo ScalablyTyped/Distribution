@@ -28,7 +28,8 @@ object IMouseTargetOverlayWidget {
     __obj.asInstanceOf[IMouseTargetOverlayWidget]
   }
   
-  extension [Self <: IMouseTargetOverlayWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetOverlayWidget] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

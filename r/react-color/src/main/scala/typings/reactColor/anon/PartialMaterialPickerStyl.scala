@@ -35,7 +35,8 @@ object PartialMaterialPickerStyl {
     __obj.asInstanceOf[PartialMaterialPickerStyl]
   }
   
-  extension [Self <: PartialMaterialPickerStyl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMaterialPickerStyl] (val x: Self) extends AnyVal {
     
     inline def setHEXinput(value: CSSProperties): Self = StObject.set(x, "HEXinput", value.asInstanceOf[js.Any])
     

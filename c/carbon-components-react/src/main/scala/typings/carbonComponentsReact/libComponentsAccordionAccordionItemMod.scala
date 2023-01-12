@@ -486,7 +486,8 @@ object libComponentsAccordionAccordionItemMod {
       __obj.asInstanceOf[AccordionItemProps]
     }
     
-    extension [Self <: AccordionItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1237,7 +1238,8 @@ object libComponentsAccordionAccordionItemMod {
       __obj.asInstanceOf[HeadingClickData]
     }
     
-    extension [Self <: HeadingClickData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingClickData] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

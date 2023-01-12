@@ -20,7 +20,8 @@ object CreateAudioFileInputNodeResult {
     __obj.asInstanceOf[CreateAudioFileInputNodeResult]
   }
   
-  extension [Self <: CreateAudioFileInputNodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAudioFileInputNodeResult] (val x: Self) extends AnyVal {
     
     inline def setFileInputNode(value: AudioFileInputNode): Self = StObject.set(x, "fileInputNode", value.asInstanceOf[js.Any])
     

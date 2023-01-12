@@ -75,7 +75,8 @@ object typesApnsvoipchannelresponseMod {
       __obj.asInstanceOf[APNSVoipChannelResponse]
     }
     
-    extension [Self <: APNSVoipChannelResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APNSVoipChannelResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       

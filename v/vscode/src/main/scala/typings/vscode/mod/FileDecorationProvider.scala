@@ -35,7 +35,8 @@ object FileDecorationProvider {
     __obj.asInstanceOf[FileDecorationProvider]
   }
   
-  extension [Self <: FileDecorationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDecorationProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChangeFileDecorations(
       value: (/* listener */ js.Function1[js.UndefOr[Uri | js.Array[Uri]], Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

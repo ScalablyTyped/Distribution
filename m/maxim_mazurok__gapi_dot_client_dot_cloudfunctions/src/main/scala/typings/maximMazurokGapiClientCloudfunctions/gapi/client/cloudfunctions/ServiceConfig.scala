@@ -74,7 +74,8 @@ object ServiceConfig {
     __obj.asInstanceOf[ServiceConfig]
   }
   
-  extension [Self <: ServiceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
     
     inline def setAllTrafficOnLatestRevision(value: Boolean): Self = StObject.set(x, "allTrafficOnLatestRevision", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object InRange {
     __obj.asInstanceOf[InRange]
   }
   
-  extension [Self <: InRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InRange] (val x: Self) extends AnyVal {
     
     inline def setInRange(value: RangeObject): Self = StObject.set(x, "inRange", value.asInstanceOf[js.Any])
     

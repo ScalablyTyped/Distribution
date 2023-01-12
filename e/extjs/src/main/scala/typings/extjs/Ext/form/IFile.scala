@@ -62,7 +62,8 @@ object IFile {
     __obj.asInstanceOf[IFile]
   }
   
-  extension [Self <: IFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFile] (val x: Self) extends AnyVal {
     
     inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

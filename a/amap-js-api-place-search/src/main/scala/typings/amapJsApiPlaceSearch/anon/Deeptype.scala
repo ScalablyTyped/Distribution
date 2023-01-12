@@ -22,7 +22,8 @@ object Deeptype {
     __obj.asInstanceOf[Deeptype]
   }
   
-  extension [Self <: Deeptype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deeptype] (val x: Self) extends AnyVal {
     
     inline def setDeep_type(value: DINING): Self = StObject.set(x, "deep_type", value.asInstanceOf[js.Any])
     

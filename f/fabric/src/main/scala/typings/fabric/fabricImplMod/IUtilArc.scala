@@ -54,7 +54,8 @@ object IUtilArc {
     __obj.asInstanceOf[IUtilArc]
   }
   
-  extension [Self <: IUtilArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilArc] (val x: Self) extends AnyVal {
     
     inline def setDrawArc(value: (CanvasRenderingContext2D, Double, Double, js.Array[Double]) => Unit): Self = StObject.set(x, "drawArc", js.Any.fromFunction4(value))
     

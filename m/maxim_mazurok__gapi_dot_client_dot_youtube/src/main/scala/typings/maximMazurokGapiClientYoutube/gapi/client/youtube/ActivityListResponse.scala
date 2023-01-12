@@ -38,7 +38,8 @@ object ActivityListResponse {
     __obj.asInstanceOf[ActivityListResponse]
   }
   
-  extension [Self <: ActivityListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

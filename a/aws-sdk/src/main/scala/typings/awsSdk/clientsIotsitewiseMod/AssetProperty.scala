@@ -48,7 +48,8 @@ object AssetProperty {
     __obj.asInstanceOf[AssetProperty]
   }
   
-  extension [Self <: AssetProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetProperty] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: PropertyAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

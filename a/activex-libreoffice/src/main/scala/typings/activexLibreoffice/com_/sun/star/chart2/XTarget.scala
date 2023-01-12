@@ -24,7 +24,8 @@ object XTarget {
     __obj.asInstanceOf[XTarget]
   }
   
-  extension [Self <: XTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTarget] (val x: Self) extends AnyVal {
     
     inline def setAddDrawElement(value: () => Unit): Self = StObject.set(x, "addDrawElement", js.Any.fromFunction0(value))
   }

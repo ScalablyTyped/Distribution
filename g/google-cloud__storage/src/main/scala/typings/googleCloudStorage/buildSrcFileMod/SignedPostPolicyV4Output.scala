@@ -17,7 +17,8 @@ object SignedPostPolicyV4Output {
     __obj.asInstanceOf[SignedPostPolicyV4Output]
   }
   
-  extension [Self <: SignedPostPolicyV4Output](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedPostPolicyV4Output] (val x: Self) extends AnyVal {
     
     inline def setFields(value: PolicyFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

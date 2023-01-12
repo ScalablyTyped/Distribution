@@ -119,7 +119,8 @@ object distTooltipSrcTooltipTriggerMod {
       __obj.asInstanceOf[InnerTooltipTriggerProps]
     }
     
-    extension [Self <: InnerTooltipTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTooltipTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFlip(value: Boolean): Self = StObject.set(x, "allowFlip", value.asInstanceOf[js.Any])
       

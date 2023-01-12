@@ -169,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Authentication]
     }
     
-    extension [Self <: Authentication](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[ChangePasswordOptions]
     }
     
-    extension [Self <: ChangePasswordOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangePasswordOptions] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     }
@@ -207,7 +209,8 @@ object mod {
       __obj.asInstanceOf[ConstraintOptions]
     }
     
-    extension [Self <: ConstraintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -238,7 +241,8 @@ object mod {
       __obj.asInstanceOf[CypherOptions]
     }
     
-    extension [Self <: CypherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypherOptions] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: js.Object): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
@@ -303,7 +307,8 @@ object mod {
       __obj.asInstanceOf[GraphDatabaseOptions]
     }
     
-    extension [Self <: GraphDatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphDatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -340,7 +345,8 @@ object mod {
       __obj.asInstanceOf[HttpOptions]
     }
     
-    extension [Self <: HttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -365,7 +371,8 @@ object mod {
       __obj.asInstanceOf[IndexOptions]
     }
     
-    extension [Self <: IndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -410,7 +417,8 @@ object mod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: DoneCallback => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction1(value))
       

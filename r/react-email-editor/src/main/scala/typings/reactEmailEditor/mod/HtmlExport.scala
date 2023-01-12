@@ -17,7 +17,8 @@ object HtmlExport {
     __obj.asInstanceOf[HtmlExport]
   }
   
-  extension [Self <: HtmlExport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlExport] (val x: Self) extends AnyVal {
     
     inline def setDesign(value: Design): Self = StObject.set(x, "design", value.asInstanceOf[js.Any])
     

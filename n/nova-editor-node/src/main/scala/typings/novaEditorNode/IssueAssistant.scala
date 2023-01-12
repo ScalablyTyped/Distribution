@@ -15,7 +15,8 @@ object IssueAssistant {
     __obj.asInstanceOf[IssueAssistant]
   }
   
-  extension [Self <: IssueAssistant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueAssistant] (val x: Self) extends AnyVal {
     
     inline def setProvideIssues(value: TextEditor => AssistantArray[Issue]): Self = StObject.set(x, "provideIssues", js.Any.fromFunction1(value))
   }

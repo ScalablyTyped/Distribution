@@ -65,7 +65,8 @@ object XHalfFloatReadOnlyBitmap {
     __obj.asInstanceOf[XHalfFloatReadOnlyBitmap]
   }
   
-  extension [Self <: XHalfFloatReadOnlyBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHalfFloatReadOnlyBitmap] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: IntegerRectangle2D => SafeArray[Double]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     

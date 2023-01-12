@@ -43,7 +43,8 @@ object PluginSummary {
     __obj.asInstanceOf[PluginSummary]
   }
   
-  extension [Self <: PluginSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginSummary] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

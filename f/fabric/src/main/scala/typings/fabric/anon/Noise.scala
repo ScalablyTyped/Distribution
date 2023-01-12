@@ -16,7 +16,8 @@ object Noise {
     __obj.asInstanceOf[Noise]
   }
   
-  extension [Self <: Noise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Noise] (val x: Self) extends AnyVal {
     
     inline def setNoise(value: Double): Self = StObject.set(x, "noise", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object BootstrapTreeViewNodeData {
     __obj.asInstanceOf[BootstrapTreeViewNodeData]
   }
   
-  extension [Self <: BootstrapTreeViewNodeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTreeViewNodeData] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object VideoSuggestions {
     __obj.asInstanceOf[VideoSuggestions]
   }
   
-  extension [Self <: VideoSuggestions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSuggestions] (val x: Self) extends AnyVal {
     
     inline def setEditorSuggestions(value: js.Array[String]): Self = StObject.set(x, "editorSuggestions", value.asInstanceOf[js.Any])
     

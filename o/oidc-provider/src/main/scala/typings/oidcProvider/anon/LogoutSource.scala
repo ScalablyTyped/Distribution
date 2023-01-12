@@ -24,7 +24,8 @@ object LogoutSource {
     __obj.asInstanceOf[LogoutSource]
   }
   
-  extension [Self <: LogoutSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogoutSource] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

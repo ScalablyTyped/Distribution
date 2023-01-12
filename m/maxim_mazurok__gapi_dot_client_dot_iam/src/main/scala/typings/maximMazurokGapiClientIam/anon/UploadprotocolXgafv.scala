@@ -58,7 +58,8 @@ object UploadprotocolXgafv {
     __obj.asInstanceOf[UploadprotocolXgafv]
   }
   
-  extension [Self <: UploadprotocolXgafv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadprotocolXgafv] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

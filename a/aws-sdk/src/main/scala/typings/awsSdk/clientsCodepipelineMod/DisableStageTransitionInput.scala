@@ -38,7 +38,8 @@ object DisableStageTransitionInput {
     __obj.asInstanceOf[DisableStageTransitionInput]
   }
   
-  extension [Self <: DisableStageTransitionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableStageTransitionInput] (val x: Self) extends AnyVal {
     
     inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "pipelineName", value.asInstanceOf[js.Any])
     

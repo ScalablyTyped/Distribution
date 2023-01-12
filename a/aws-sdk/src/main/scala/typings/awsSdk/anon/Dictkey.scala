@@ -20,7 +20,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object distHigherOrderComponentsWithSignInMod {
       __obj.asInstanceOf[withSignInProps]
     }
     
-    extension [Self <: withSignInProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withSignInProps] (val x: Self) extends AnyVal {
       
       inline def setSignIn(value: signInFunctionParams => Boolean): Self = StObject.set(x, "signIn", js.Any.fromFunction1(value))
     }

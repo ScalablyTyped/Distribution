@@ -44,7 +44,8 @@ object distSrcChunkerRabinMod {
       __obj.asInstanceOf[RabinOptions]
     }
     
-    extension [Self <: RabinOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RabinOptions] (val x: Self) extends AnyVal {
       
       inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       

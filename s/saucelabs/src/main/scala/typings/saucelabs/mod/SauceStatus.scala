@@ -22,7 +22,8 @@ object SauceStatus {
     __obj.asInstanceOf[SauceStatus]
   }
   
-  extension [Self <: SauceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SauceStatus] (val x: Self) extends AnyVal {
     
     inline def setService_operational(value: Boolean): Self = StObject.set(x, "service_operational", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object IZIndexManager {
     __obj.asInstanceOf[IZIndexManager]
   }
   
-  extension [Self <: IZIndexManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IZIndexManager] (val x: Self) extends AnyVal {
     
     inline def setBringToFront(value: /* comp */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "bringToFront", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object GcpServiceAccount {
     __obj.asInstanceOf[GcpServiceAccount]
   }
   
-  extension [Self <: GcpServiceAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcpServiceAccount] (val x: Self) extends AnyVal {
     
     inline def setService_account_key_file_json(value: String): Self = StObject.set(x, "service_account_key_file_json", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object CheckedKeys {
     __obj.asInstanceOf[CheckedKeys[TreeDataType]]
   }
   
-  extension [Self <: CheckedKeys[?], TreeDataType /* <: DataNode | BasicDataNode */](x: Self & CheckedKeys[TreeDataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckedKeys[?], TreeDataType /* <: DataNode | BasicDataNode */] (val x: Self & CheckedKeys[TreeDataType]) extends AnyVal {
     
     inline def setCheckedKeys(value: js.Array[typings.rcTree.esInterfaceMod.Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
     

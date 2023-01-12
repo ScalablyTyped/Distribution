@@ -19,7 +19,8 @@ object BatchRunReportsResponse {
     __obj.asInstanceOf[BatchRunReportsResponse]
   }
   
-  extension [Self <: BatchRunReportsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRunReportsResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

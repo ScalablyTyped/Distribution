@@ -35,7 +35,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[Answer]
     }
     
-    extension [Self <: Answer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Answer] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[DNSJSON]
     }
     
-    extension [Self <: DNSJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DNSJSON] (val x: Self) extends AnyVal {
       
       inline def setAnswer(value: js.Array[Answer]): Self = StObject.set(x, "Answer", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[Question]
     }
     
-    extension [Self <: Question](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Question] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

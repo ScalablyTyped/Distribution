@@ -18,7 +18,8 @@ object ResponseGetJobsV11200 {
     __obj.asInstanceOf[ResponseGetJobsV11200]
   }
   
-  extension [Self <: ResponseGetJobsV11200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetJobsV11200] (val x: Self) extends AnyVal {
     
     inline def setJobs(value: js.Array[Job]): Self = StObject.set(x, "jobs", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object distParserJsyamlResolversApiMod {
       __obj.asInstanceOf[FSResolver]
     }
     
-    extension [Self <: FSResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSResolver] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String => String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
@@ -60,7 +61,8 @@ object distParserJsyamlResolversApiMod {
       __obj.asInstanceOf[HTTPResolver]
     }
     
-    extension [Self <: HTTPResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPResolver] (val x: Self) extends AnyVal {
       
       inline def setGetResource(value: String => Response): Self = StObject.set(x, "getResource", js.Any.fromFunction1(value))
       
@@ -87,7 +89,8 @@ object distParserJsyamlResolversApiMod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

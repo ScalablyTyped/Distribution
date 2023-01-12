@@ -30,7 +30,8 @@ object typesAttributesResourceMod {
       __obj.asInstanceOf[AttributesResource]
     }
     
-    extension [Self <: AttributesResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributesResource] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesAttributesResourceMod {
       __obj.asInstanceOf[UnmarshalledAttributesResource]
     }
     
-    extension [Self <: UnmarshalledAttributesResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAttributesResource] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

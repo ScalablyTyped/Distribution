@@ -140,7 +140,8 @@ object OmitdefaultexistsAttributes {
     __obj.asInstanceOf[OmitdefaultexistsAttributes]
   }
   
-  extension [Self <: OmitdefaultexistsAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitdefaultexistsAttributes] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: () => StringDictionary[String]): Self = StObject.set(x, "attributes", js.Any.fromFunction0(value))
     

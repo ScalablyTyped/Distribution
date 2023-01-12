@@ -49,7 +49,8 @@ object IOpDef {
     __obj.asInstanceOf[IOpDef]
   }
   
-  extension [Self <: IOpDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOpDef] (val x: Self) extends AnyVal {
     
     inline def setAllowsUninitializedInput(value: Boolean): Self = StObject.set(x, "allowsUninitializedInput", value.asInstanceOf[js.Any])
     

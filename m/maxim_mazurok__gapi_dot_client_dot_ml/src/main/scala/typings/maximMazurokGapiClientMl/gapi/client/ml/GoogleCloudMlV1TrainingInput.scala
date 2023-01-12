@@ -171,7 +171,8 @@ object GoogleCloudMlV1TrainingInput {
     __obj.asInstanceOf[GoogleCloudMlV1TrainingInput]
   }
   
-  extension [Self <: GoogleCloudMlV1TrainingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1TrainingInput] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

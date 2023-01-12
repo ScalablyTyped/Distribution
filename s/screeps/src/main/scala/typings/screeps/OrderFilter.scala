@@ -29,7 +29,8 @@ object OrderFilter {
     __obj.asInstanceOf[OrderFilter]
   }
   
-  extension [Self <: OrderFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderFilter] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

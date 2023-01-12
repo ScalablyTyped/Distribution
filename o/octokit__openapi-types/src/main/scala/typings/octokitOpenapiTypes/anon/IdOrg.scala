@@ -40,7 +40,8 @@ object IdOrg {
     __obj.asInstanceOf[IdOrg]
   }
   
-  extension [Self <: IdOrg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdOrg] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['actor'] */ js.Any

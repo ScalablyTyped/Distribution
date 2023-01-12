@@ -23,7 +23,8 @@ object UrlClassification {
     __obj.asInstanceOf[UrlClassification]
   }
   
-  extension [Self <: UrlClassification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlClassification] (val x: Self) extends AnyVal {
     
     inline def setFirstParty(value: UrlClassificationParty): Self = StObject.set(x, "firstParty", value.asInstanceOf[js.Any])
     

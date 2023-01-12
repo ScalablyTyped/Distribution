@@ -17,7 +17,8 @@ object TabStripAnimationOpen {
     __obj.asInstanceOf[TabStripAnimationOpen]
   }
   
-  extension [Self <: TabStripAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabStripAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

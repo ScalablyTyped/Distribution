@@ -71,7 +71,8 @@ object BootstrapClientHyperLink {
     __obj.asInstanceOf[BootstrapClientHyperLink]
   }
   
-  extension [Self <: BootstrapClientHyperLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientHyperLink] (val x: Self) extends AnyVal {
     
     inline def setGetBadgeIconCssClass(value: () => String): Self = StObject.set(x, "GetBadgeIconCssClass", js.Any.fromFunction0(value))
     

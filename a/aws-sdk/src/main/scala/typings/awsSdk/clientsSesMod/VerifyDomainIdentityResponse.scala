@@ -18,7 +18,8 @@ object VerifyDomainIdentityResponse {
     __obj.asInstanceOf[VerifyDomainIdentityResponse]
   }
   
-  extension [Self <: VerifyDomainIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyDomainIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setVerificationToken(value: VerificationToken): Self = StObject.set(x, "VerificationToken", value.asInstanceOf[js.Any])
   }

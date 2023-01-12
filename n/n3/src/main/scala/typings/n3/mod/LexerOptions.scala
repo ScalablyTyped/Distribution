@@ -19,7 +19,8 @@ object LexerOptions {
     __obj.asInstanceOf[LexerOptions]
   }
   
-  extension [Self <: LexerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexerOptions] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GoogleCloudDialogflowV2beta1IntentTrainingPhrase {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentTrainingPhrase]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentTrainingPhrase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentTrainingPhrase] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

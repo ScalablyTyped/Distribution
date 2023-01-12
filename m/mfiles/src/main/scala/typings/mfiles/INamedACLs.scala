@@ -17,7 +17,8 @@ object INamedACLs {
     __obj.asInstanceOf[INamedACLs]
   }
   
-  extension [Self <: INamedACLs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INamedACLs] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

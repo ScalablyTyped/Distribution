@@ -22,7 +22,8 @@ object AppsScriptHttpRequestEventPostData {
     __obj.asInstanceOf[AppsScriptHttpRequestEventPostData]
   }
   
-  extension [Self <: AppsScriptHttpRequestEventPostData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsScriptHttpRequestEventPostData] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

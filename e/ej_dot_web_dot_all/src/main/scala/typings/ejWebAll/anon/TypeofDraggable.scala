@@ -20,7 +20,8 @@ object TypeofDraggable {
     __obj.asInstanceOf[TypeofDraggable]
   }
   
-  extension [Self <: TypeofDraggable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDraggable] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Draggable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Upgrade]
     }
     
-    extension [Self <: Upgrade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Upgrade] (val x: Self) extends AnyVal {
       
       inline def setUpgrade(value: Boolean): Self = StObject.set(x, "upgrade", value.asInstanceOf[js.Any])
     }

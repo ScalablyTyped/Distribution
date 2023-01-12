@@ -33,7 +33,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[NumberedStepOverrides]
     }
     
-    extension [Self <: NumberedStepOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberedStepOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[NumberedStepProps]
     }
     
-    extension [Self <: NumberedStepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberedStepProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[ProgressStepsOverrides]
     }
     
-    extension [Self <: ProgressStepsOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStepsOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[ProgressStepsProps]
     }
     
-    extension [Self <: ProgressStepsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStepsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[StepOverrides]
     }
     
-    extension [Self <: StepOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -314,7 +319,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -360,7 +366,8 @@ object progressStepsTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       

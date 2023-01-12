@@ -18,7 +18,8 @@ object DeleteEntityResponse {
     __obj.asInstanceOf[DeleteEntityResponse]
   }
   
-  extension [Self <: DeleteEntityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEntityResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

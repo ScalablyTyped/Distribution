@@ -41,7 +41,8 @@ object CommitidCommiturl {
     __obj.asInstanceOf[CommitidCommiturl]
   }
   
-  extension [Self <: CommitidCommiturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitidCommiturl] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object token {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: Token => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       
@@ -75,7 +76,8 @@ object token {
       __obj.asInstanceOf[TokenRange]
     }
     
-    extension [Self <: TokenRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRange] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: TokenRange => Double): Self = StObject.set(x, "compare", js.Any.fromFunction1(value))
       

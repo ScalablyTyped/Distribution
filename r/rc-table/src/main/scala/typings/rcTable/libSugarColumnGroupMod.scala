@@ -88,7 +88,8 @@ object libSugarColumnGroupMod {
       __obj.asInstanceOf[ColumnGroupProps[RecordType]]
     }
     
-    extension [Self <: ColumnGroupProps[?], RecordType](x: Self & ColumnGroupProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupProps[?], RecordType] (val x: Self & ColumnGroupProps[RecordType]) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

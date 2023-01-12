@@ -88,7 +88,8 @@ object AdditionalFunctions {
     __obj.asInstanceOf[AdditionalFunctions]
   }
   
-  extension [Self <: AdditionalFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalFunctions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalFunctions(value: exponent | percent | fraction | sqrt | (js.Array[exponent | percent | fraction | sqrt])): Self = StObject.set(x, "additionalFunctions", value.asInstanceOf[js.Any])
     

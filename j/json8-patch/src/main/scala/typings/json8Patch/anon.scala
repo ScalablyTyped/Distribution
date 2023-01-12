@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setReversible(value: `true`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Reversible]
     }
     
-    extension [Self <: Reversible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reversible] (val x: Self) extends AnyVal {
       
       inline def setReversible(value: `false`): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
     }

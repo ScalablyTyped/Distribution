@@ -22,7 +22,8 @@ object TenantResource {
     __obj.asInstanceOf[TenantResource]
   }
   
-  extension [Self <: TenantResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TenantResource] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

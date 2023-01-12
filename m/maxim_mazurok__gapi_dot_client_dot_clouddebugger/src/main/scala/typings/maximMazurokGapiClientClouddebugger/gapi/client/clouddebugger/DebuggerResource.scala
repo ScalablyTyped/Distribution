@@ -15,7 +15,8 @@ object DebuggerResource {
     __obj.asInstanceOf[DebuggerResource]
   }
   
-  extension [Self <: DebuggerResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebuggerResource] (val x: Self) extends AnyVal {
     
     inline def setDebuggees(value: DebuggeesResource): Self = StObject.set(x, "debuggees", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object PlanGateway {
     __obj.asInstanceOf[PlanGateway]
   }
   
-  extension [Self <: PlanGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanGateway] (val x: Self) extends AnyVal {
     
     inline def setAll(value: () => js.Promise[Plans]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
   }

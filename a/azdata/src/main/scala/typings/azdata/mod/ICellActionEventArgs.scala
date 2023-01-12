@@ -19,7 +19,8 @@ object ICellActionEventArgs {
     __obj.asInstanceOf[ICellActionEventArgs]
   }
   
-  extension [Self <: ICellActionEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICellActionEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object BiometricsLivenessActive {
     __obj.asInstanceOf[BiometricsLivenessActive]
   }
   
-  extension [Self <: BiometricsLivenessActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiometricsLivenessActive] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

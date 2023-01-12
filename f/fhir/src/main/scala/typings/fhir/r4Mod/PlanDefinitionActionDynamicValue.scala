@@ -27,7 +27,8 @@ object PlanDefinitionActionDynamicValue {
     __obj.asInstanceOf[PlanDefinitionActionDynamicValue]
   }
   
-  extension [Self <: PlanDefinitionActionDynamicValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActionDynamicValue] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

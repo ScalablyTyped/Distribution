@@ -19,7 +19,8 @@ object PostObjectParams {
     __obj.asInstanceOf[PostObjectParams]
   }
   
-  extension [Self <: PostObjectParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostObjectParams] (val x: Self) extends AnyVal {
     
     inline def setOSSAccessKeyId(value: String): Self = StObject.set(x, "OSSAccessKeyId", value.asInstanceOf[js.Any])
     

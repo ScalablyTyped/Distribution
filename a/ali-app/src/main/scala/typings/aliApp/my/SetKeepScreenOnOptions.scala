@@ -24,7 +24,8 @@ object SetKeepScreenOnOptions {
     __obj.asInstanceOf[SetKeepScreenOnOptions]
   }
   
-  extension [Self <: SetKeepScreenOnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetKeepScreenOnOptions] (val x: Self) extends AnyVal {
     
     inline def setKeepScreenOn(value: Boolean): Self = StObject.set(x, "keepScreenOn", value.asInstanceOf[js.Any])
     

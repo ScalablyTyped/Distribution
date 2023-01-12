@@ -27,7 +27,8 @@ object TemplateNodeIdentifier {
     __obj.asInstanceOf[TemplateNodeIdentifier]
   }
   
-  extension [Self <: TemplateNodeIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateNodeIdentifier] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Template): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

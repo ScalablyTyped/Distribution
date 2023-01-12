@@ -30,7 +30,8 @@ object Medals {
     __obj.asInstanceOf[Medals]
   }
   
-  extension [Self <: Medals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Medals] (val x: Self) extends AnyVal {
     
     inline def setDisplay_items_defidx(value: js.Array[Double]): Self = StObject.set(x, "display_items_defidx", value.asInstanceOf[js.Any])
     

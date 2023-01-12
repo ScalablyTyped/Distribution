@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[BaseURL]
     }
     
-    extension [Self <: BaseURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseURL] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
@@ -56,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -73,7 +76,8 @@ object anon {
       __obj.asInstanceOf[DoNotStripQMark]
     }
     
-    extension [Self <: DoNotStripQMark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoNotStripQMark] (val x: Self) extends AnyVal {
       
       inline def setDoNotStripQMark(value: Boolean): Self = StObject.set(x, "doNotStripQMark", value.asInstanceOf[js.Any])
       
@@ -96,7 +100,8 @@ object anon {
       __obj.asInstanceOf[StateOverride]
     }
     
-    extension [Self <: StateOverride](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateOverride] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       

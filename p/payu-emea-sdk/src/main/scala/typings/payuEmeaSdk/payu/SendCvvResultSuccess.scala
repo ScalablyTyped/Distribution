@@ -16,7 +16,8 @@ object SendCvvResultSuccess {
     __obj.asInstanceOf[SendCvvResultSuccess]
   }
   
-  extension [Self <: SendCvvResultSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendCvvResultSuccess] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: SUCCESS): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

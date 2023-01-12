@@ -32,7 +32,8 @@ object IVaultConnections {
     __obj.asInstanceOf[IVaultConnections]
   }
   
-  extension [Self <: IVaultConnections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultConnections] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IVaultConnection) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

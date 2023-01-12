@@ -24,7 +24,8 @@ object RuleSet {
     __obj.asInstanceOf[RuleSet]
   }
   
-  extension [Self <: RuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
     
     inline def setExec(value: js.Object => js.Array[Effect]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     

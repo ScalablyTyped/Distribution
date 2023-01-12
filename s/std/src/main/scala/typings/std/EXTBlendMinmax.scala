@@ -19,7 +19,8 @@ object EXTBlendMinmax {
     __obj.asInstanceOf[EXTBlendMinmax]
   }
   
-  extension [Self <: EXTBlendMinmax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTBlendMinmax] (val x: Self) extends AnyVal {
     
     inline def setMAX_EXT(value: GLenum): Self = StObject.set(x, "MAX_EXT", value.asInstanceOf[js.Any])
     

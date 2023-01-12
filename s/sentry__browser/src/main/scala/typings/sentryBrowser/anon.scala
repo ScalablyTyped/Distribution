@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[ErrorframesToPopnumberund]
     }
     
-    extension [Self <: ErrorframesToPopnumberund](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorframesToPopnumberund] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Mechanism]
     }
     
-    extension [Self <: Mechanism](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: typings.sentryTypes.typesMechanismMod.Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[PartialBreadcrumbsOptions]
     }
     
-    extension [Self <: PartialBreadcrumbsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBreadcrumbsOptions] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object anon {
       __obj.asInstanceOf[PartialLinkedErrorsOption]
     }
     
-    extension [Self <: PartialLinkedErrorsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLinkedErrorsOption] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object anon {
       __obj.asInstanceOf[PartialTryCatchOptions]
     }
     
-    extension [Self <: PartialTryCatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTryCatchOptions] (val x: Self) extends AnyVal {
       
       inline def setEventTarget(value: Boolean | js.Array[String]): Self = StObject.set(x, "eventTarget", value.asInstanceOf[js.Any])
       
@@ -262,7 +268,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyBreadcrumbsOption]
     }
     
-    extension [Self <: ReadonlyBreadcrumbsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyBreadcrumbsOption] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -289,7 +296,8 @@ object anon {
       __obj.asInstanceOf[SerializeAttribute]
     }
     
-    extension [Self <: SerializeAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeAttribute] (val x: Self) extends AnyVal {
       
       inline def setSerializeAttribute(value: String | js.Array[String]): Self = StObject.set(x, "serializeAttribute", value.asInstanceOf[js.Any])
       

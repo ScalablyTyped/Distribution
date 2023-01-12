@@ -19,7 +19,8 @@ object CreateLocalAudioTrackOptions {
     __obj.asInstanceOf[CreateLocalAudioTrackOptions]
   }
   
-  extension [Self <: CreateLocalAudioTrackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocalAudioTrackOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultDeviceCaptureMode(value: DefaultDeviceCaptureMode): Self = StObject.set(x, "defaultDeviceCaptureMode", value.asInstanceOf[js.Any])
     

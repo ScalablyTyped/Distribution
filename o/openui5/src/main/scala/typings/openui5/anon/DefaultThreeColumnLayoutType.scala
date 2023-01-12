@@ -69,7 +69,8 @@ object DefaultThreeColumnLayoutType {
     __obj.asInstanceOf[DefaultThreeColumnLayoutType]
   }
   
-  extension [Self <: DefaultThreeColumnLayoutType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultThreeColumnLayoutType] (val x: Self) extends AnyVal {
     
     inline def setDefaultThreeColumnLayoutType(
       value: LayoutType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LayoutType * / any */ String)

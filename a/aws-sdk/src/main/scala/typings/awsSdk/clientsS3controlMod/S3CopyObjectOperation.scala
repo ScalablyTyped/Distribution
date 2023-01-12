@@ -103,7 +103,8 @@ object S3CopyObjectOperation {
     __obj.asInstanceOf[S3CopyObjectOperation]
   }
   
-  extension [Self <: S3CopyObjectOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3CopyObjectOperation] (val x: Self) extends AnyVal {
     
     inline def setAccessControlGrants(value: S3GrantList): Self = StObject.set(x, "AccessControlGrants", value.asInstanceOf[js.Any])
     

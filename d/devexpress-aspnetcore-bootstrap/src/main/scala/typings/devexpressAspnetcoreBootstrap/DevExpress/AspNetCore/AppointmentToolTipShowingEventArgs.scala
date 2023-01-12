@@ -17,7 +17,8 @@ object AppointmentToolTipShowingEventArgs {
     __obj.asInstanceOf[AppointmentToolTipShowingEventArgs]
   }
   
-  extension [Self <: AppointmentToolTipShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentToolTipShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: BootstrapSchedulerAppointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object GzipOptions {
     __obj.asInstanceOf[GzipOptions]
   }
   
-  extension [Self <: GzipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GzipOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

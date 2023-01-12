@@ -27,7 +27,8 @@ object WatchAllOptions {
     __obj.asInstanceOf[WatchAllOptions]
   }
   
-  extension [Self <: WatchAllOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchAllOptions] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

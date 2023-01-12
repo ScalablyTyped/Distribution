@@ -89,7 +89,8 @@ object ExpressionMap {
     __obj.asInstanceOf[ExpressionMap]
   }
   
-  extension [Self <: ExpressionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionMap] (val x: Self) extends AnyVal {
     
     inline def setArrayExpression(value: ArrayExpression): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
     

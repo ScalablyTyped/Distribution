@@ -20,7 +20,8 @@ object FileName {
     __obj.asInstanceOf[FileName]
   }
   
-  extension [Self <: FileName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
     
     inline def setExtraAttributes(value: Any): Self = StObject.set(x, "extraAttributes", value.asInstanceOf[js.Any])
     

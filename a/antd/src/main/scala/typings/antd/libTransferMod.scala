@@ -105,7 +105,8 @@ object libTransferMod {
       __obj.asInstanceOf[KeyWiseTransferItem]
     }
     
-    extension [Self <: KeyWiseTransferItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyWiseTransferItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object libTransferMod {
       __obj.asInstanceOf[ListStyle]
     }
     
-    extension [Self <: ListStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListStyle] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: TransferDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
@@ -157,7 +159,8 @@ object libTransferMod {
       __obj.asInstanceOf[RenderResultObject]
     }
     
-    extension [Self <: RenderResultObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderResultObject] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: ReactElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -260,7 +263,8 @@ object libTransferMod {
       __obj.asInstanceOf[TransferItem]
     }
     
-    extension [Self <: TransferItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferItem] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -311,7 +315,8 @@ object libTransferMod {
       __obj.asInstanceOf[TransferLocale]
     }
     
-    extension [Self <: TransferLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferLocale] (val x: Self) extends AnyVal {
       
       inline def setItemUnit(value: String): Self = StObject.set(x, "itemUnit", value.asInstanceOf[js.Any])
       
@@ -445,7 +450,8 @@ object libTransferMod {
       __obj.asInstanceOf[TransferProps[RecordType]]
     }
     
-    extension [Self <: TransferProps[?], RecordType](x: Self & TransferProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferProps[?], RecordType] (val x: Self & TransferProps[RecordType]) extends AnyVal {
       
       inline def setChildren(value: /* props */ TransferListBodyProps[RecordType] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -592,7 +598,8 @@ object libTransferMod {
       __obj.asInstanceOf[TransferState]
     }
     
-    extension [Self <: TransferState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferState] (val x: Self) extends AnyVal {
       
       inline def setSourceSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "sourceSelectedKeys", value.asInstanceOf[js.Any])
       

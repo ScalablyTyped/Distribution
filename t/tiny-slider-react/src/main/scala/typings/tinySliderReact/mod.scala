@@ -156,7 +156,8 @@ object mod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setArrowKeys(value: Boolean): Self = StObject.set(x, "arrowKeys", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object mod {
       __obj.asInstanceOf[TinySliderInfo]
     }
     
-    extension [Self <: TinySliderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinySliderInfo] (val x: Self) extends AnyVal {
       
       inline def setCloneCount(value: Double): Self = StObject.set(x, "cloneCount", value.asInstanceOf[js.Any])
       
@@ -398,7 +400,8 @@ object mod {
       __obj.asInstanceOf[TinySliderProps]
     }
     
-    extension [Self <: TinySliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinySliderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -578,7 +581,8 @@ object mod {
       __obj.asInstanceOf[TinySliderSettings]
     }
     
-    extension [Self <: TinySliderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinySliderSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimateDelay(value: Double | `false`): Self = StObject.set(x, "animateDelay", value.asInstanceOf[js.Any])
       

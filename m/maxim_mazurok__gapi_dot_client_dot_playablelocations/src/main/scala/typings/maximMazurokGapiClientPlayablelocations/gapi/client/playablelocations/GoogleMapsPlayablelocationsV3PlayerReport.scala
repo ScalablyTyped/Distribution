@@ -28,7 +28,8 @@ object GoogleMapsPlayablelocationsV3PlayerReport {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3PlayerReport]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3PlayerReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3PlayerReport] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

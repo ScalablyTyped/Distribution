@@ -53,7 +53,8 @@ object UpdateDocumentRequest {
     __obj.asInstanceOf[UpdateDocumentRequest]
   }
   
-  extension [Self <: UpdateDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: AttachmentsSourceList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     

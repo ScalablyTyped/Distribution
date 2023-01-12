@@ -240,7 +240,8 @@ object mod {
       __obj.asInstanceOf[TsSafeElementFinder]
     }
     
-    extension [Self <: TsSafeElementFinder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TsSafeElementFinder] (val x: Self) extends AnyVal {
       
       inline def set$(value: /* selector */ String => ElementFinder): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
       

@@ -29,7 +29,8 @@ object ParentalControlSettings {
     __obj.asInstanceOf[ParentalControlSettings]
   }
   
-  extension [Self <: ParentalControlSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentalControlSettings] (val x: Self) extends AnyVal {
     
     inline def setCountriesBlockedForMinors(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "countriesBlockedForMinors", value.asInstanceOf[js.Any])
     

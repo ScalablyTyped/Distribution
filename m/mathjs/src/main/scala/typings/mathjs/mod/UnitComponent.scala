@@ -20,7 +20,8 @@ object UnitComponent {
     __obj.asInstanceOf[UnitComponent]
   }
   
-  extension [Self <: UnitComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitComponent] (val x: Self) extends AnyVal {
     
     inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     

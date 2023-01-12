@@ -17,7 +17,8 @@ object QueryExclude {
     __obj.asInstanceOf[QueryExclude]
   }
   
-  extension [Self <: QueryExclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExclude] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

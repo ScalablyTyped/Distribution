@@ -22,7 +22,8 @@ object PageUpdateData {
     __obj.asInstanceOf[PageUpdateData]
   }
   
-  extension [Self <: PageUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageUpdateData] (val x: Self) extends AnyVal {
     
     inline def setView(value: PageViewUpdateData): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ApplicationMaintenanceConfigurationDescription {
     __obj.asInstanceOf[ApplicationMaintenanceConfigurationDescription]
   }
   
-  extension [Self <: ApplicationMaintenanceConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationMaintenanceConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setApplicationMaintenanceWindowEndTime(value: ApplicationMaintenanceWindowEndTime): Self = StObject.set(x, "ApplicationMaintenanceWindowEndTime", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CoreTextLayoutRequest {
     __obj.asInstanceOf[CoreTextLayoutRequest]
   }
   
-  extension [Self <: CoreTextLayoutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextLayoutRequest] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

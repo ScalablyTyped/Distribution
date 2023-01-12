@@ -27,7 +27,8 @@ object ExitedEvent {
     __obj.asInstanceOf[ExitedEvent]
   }
   
-  extension [Self <: ExitedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitedEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ExitCode): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object ConverterTooltipDisplay {
     __obj.asInstanceOf[ConverterTooltipDisplay]
   }
   
-  extension [Self <: ConverterTooltipDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConverterTooltipDisplay] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

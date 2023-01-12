@@ -29,7 +29,8 @@ object StsPolicy {
     __obj.asInstanceOf[StsPolicy]
   }
   
-  extension [Self <: StsPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StsPolicy] (val x: Self) extends AnyVal {
     
     inline def setAppliesTo(value: NullableOption[js.Array[DirectoryObject]]): Self = StObject.set(x, "appliesTo", value.asInstanceOf[js.Any])
     

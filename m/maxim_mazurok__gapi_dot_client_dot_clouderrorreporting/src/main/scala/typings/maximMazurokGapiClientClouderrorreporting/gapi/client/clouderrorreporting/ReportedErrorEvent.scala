@@ -39,7 +39,8 @@ object ReportedErrorEvent {
     __obj.asInstanceOf[ReportedErrorEvent]
   }
   
-  extension [Self <: ReportedErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportedErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ErrorContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

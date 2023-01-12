@@ -28,7 +28,8 @@ object Held {
     __obj.asInstanceOf[Held]
   }
   
-  extension [Self <: Held](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Held] (val x: Self) extends AnyVal {
     
     inline def setHeld(value: held): Self = StObject.set(x, "Held", value.asInstanceOf[js.Any])
     

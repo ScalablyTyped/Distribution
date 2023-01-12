@@ -103,7 +103,8 @@ object IgGridColumnMovingLocale {
     __obj.asInstanceOf[IgGridColumnMovingLocale]
   }
   
-  extension [Self <: IgGridColumnMovingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumnMovingLocale] (val x: Self) extends AnyVal {
     
     inline def setDropDownMoveFirstText(value: String): Self = StObject.set(x, "dropDownMoveFirstText", value.asInstanceOf[js.Any])
     

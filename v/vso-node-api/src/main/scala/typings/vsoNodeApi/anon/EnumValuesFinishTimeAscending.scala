@@ -15,7 +15,8 @@ object EnumValuesFinishTimeAscending {
     __obj.asInstanceOf[EnumValuesFinishTimeAscending]
   }
   
-  extension [Self <: EnumValuesFinishTimeAscending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesFinishTimeAscending] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: FinishTimeAscending): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

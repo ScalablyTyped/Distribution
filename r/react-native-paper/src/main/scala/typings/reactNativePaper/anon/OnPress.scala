@@ -37,7 +37,8 @@ object OnPress {
     __obj.asInstanceOf[OnPress]
   }
   
-  extension [Self <: OnPress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPress] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

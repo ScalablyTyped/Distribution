@@ -22,7 +22,8 @@ object TargetReference {
     __obj.asInstanceOf[TargetReference]
   }
   
-  extension [Self <: TargetReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetReference] (val x: Self) extends AnyVal {
     
     inline def setDrive(value: DriveReference): Self = StObject.set(x, "drive", value.asInstanceOf[js.Any])
     

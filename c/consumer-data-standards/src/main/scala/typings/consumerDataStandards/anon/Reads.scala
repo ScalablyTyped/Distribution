@@ -22,7 +22,8 @@ object Reads {
     __obj.asInstanceOf[Reads]
   }
   
-  extension [Self <: Reads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reads] (val x: Self) extends AnyVal {
     
     inline def setReads(value: js.Array[EnergyUsageRead]): Self = StObject.set(x, "reads", value.asInstanceOf[js.Any])
     

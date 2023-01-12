@@ -26,7 +26,8 @@ object XInteractionHandler {
     __obj.asInstanceOf[XInteractionHandler]
   }
   
-  extension [Self <: XInteractionHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionHandler] (val x: Self) extends AnyVal {
     
     inline def setHandle(value: XInteractionRequest => Unit): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
   }

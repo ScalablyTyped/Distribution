@@ -23,7 +23,8 @@ object SourceCodeVersion {
     __obj.asInstanceOf[SourceCodeVersion]
   }
   
-  extension [Self <: SourceCodeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceCodeVersion] (val x: Self) extends AnyVal {
     
     inline def setType(value: SourceCodeVersionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

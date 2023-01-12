@@ -28,7 +28,8 @@ object ReadableWritablePair {
     __obj.asInstanceOf[ReadableWritablePair[R, W]]
   }
   
-  extension [Self <: ReadableWritablePair[?, ?], R, W](x: Self & (ReadableWritablePair[R, W])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableWritablePair[?, ?], R, W] (val x: Self & (ReadableWritablePair[R, W])) extends AnyVal {
     
     inline def setReadable(value: ReadableStream[R]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PackageLockV2 {
     __obj.asInstanceOf[PackageLockV2]
   }
   
-  extension [Self <: PackageLockV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageLockV2] (val x: Self) extends AnyVal {
     
     inline def setDependencies(
       value: NonNullable[

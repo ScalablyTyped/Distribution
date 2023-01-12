@@ -21,7 +21,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSDoc]
     }
     
-    extension [Self <: WJSDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSDoc] (val x: Self) extends AnyVal {
       
       inline def setP(value: js.Array[WJSPara]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSPara]
     }
     
-    extension [Self <: WJSPara](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSPara] (val x: Self) extends AnyVal {
       
       inline def setElts(value: js.Array[WJSParaElement]): Self = StObject.set(x, "elts", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSTable]
     }
     
-    extension [Self <: WJSTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSTable] (val x: Self) extends AnyVal {
       
       inline def setR(value: js.Array[WJSTableRow]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSTableCell]
     }
     
-    extension [Self <: WJSTableCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSTableCell] (val x: Self) extends AnyVal {
       
       inline def setP(value: js.Array[WJSPara]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
@@ -131,7 +135,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSTableRow]
     }
     
-    extension [Self <: WJSTableRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSTableRow] (val x: Self) extends AnyVal {
       
       inline def setC(value: js.Array[WJSTableCell]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object distTypingsTypesMod {
       __obj.asInstanceOf[WJSTextRun]
     }
     
-    extension [Self <: WJSTextRun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WJSTextRun] (val x: Self) extends AnyVal {
       
       inline def setT(value: s): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       

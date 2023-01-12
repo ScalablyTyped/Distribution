@@ -48,7 +48,8 @@ object DropdownProps {
     __obj.asInstanceOf[DropdownProps]
   }
   
-  extension [Self <: DropdownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

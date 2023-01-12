@@ -19,7 +19,8 @@ object Linux {
     __obj.asInstanceOf[Linux]
   }
   
-  extension [Self <: Linux](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linux] (val x: Self) extends AnyVal {
     
     inline def setAllowAllDevices(value: Boolean): Self = StObject.set(x, "AllowAllDevices", value.asInstanceOf[js.Any])
     

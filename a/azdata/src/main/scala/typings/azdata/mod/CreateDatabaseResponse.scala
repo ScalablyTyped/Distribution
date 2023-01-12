@@ -17,7 +17,8 @@ object CreateDatabaseResponse {
     __obj.asInstanceOf[CreateDatabaseResponse]
   }
   
-  extension [Self <: CreateDatabaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatabaseResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

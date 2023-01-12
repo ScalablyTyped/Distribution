@@ -23,7 +23,8 @@ object AdditionalInstanceConfiguration {
     __obj.asInstanceOf[AdditionalInstanceConfiguration]
   }
   
-  extension [Self <: AdditionalInstanceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalInstanceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSystemsManagerAgent(value: SystemsManagerAgent): Self = StObject.set(x, "systemsManagerAgent", value.asInstanceOf[js.Any])
     

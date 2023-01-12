@@ -15,7 +15,8 @@ object GlyphRunFlagValues {
     __obj.asInstanceOf[GlyphRunFlagValues]
   }
   
-  extension [Self <: GlyphRunFlagValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlyphRunFlagValues] (val x: Self) extends AnyVal {
     
     inline def setIsWhiteSpace(value: Double): Self = StObject.set(x, "IsWhiteSpace", value.asInstanceOf[js.Any])
   }

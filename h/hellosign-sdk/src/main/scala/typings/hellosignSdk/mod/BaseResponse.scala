@@ -20,7 +20,8 @@ object BaseResponse {
     __obj.asInstanceOf[BaseResponse]
   }
   
-  extension [Self <: BaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseResponse] (val x: Self) extends AnyVal {
     
     inline def setResHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "resHeaders", value.asInstanceOf[js.Any])
     

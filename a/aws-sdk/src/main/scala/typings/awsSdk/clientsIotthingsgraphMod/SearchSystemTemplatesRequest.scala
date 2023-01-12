@@ -28,7 +28,8 @@ object SearchSystemTemplatesRequest {
     __obj.asInstanceOf[SearchSystemTemplatesRequest]
   }
   
-  extension [Self <: SearchSystemTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSystemTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SystemTemplateFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

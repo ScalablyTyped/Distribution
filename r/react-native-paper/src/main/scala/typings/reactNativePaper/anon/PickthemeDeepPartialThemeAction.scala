@@ -197,7 +197,8 @@ object PickthemeDeepPartialThemeAction {
     __obj.asInstanceOf[PickthemeDeepPartialThemeAction]
   }
   
-  extension [Self <: PickthemeDeepPartialThemeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickthemeDeepPartialThemeAction] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

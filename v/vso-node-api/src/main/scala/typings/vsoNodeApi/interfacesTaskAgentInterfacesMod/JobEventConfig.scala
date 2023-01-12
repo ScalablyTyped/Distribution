@@ -15,7 +15,8 @@ object JobEventConfig {
     __obj.asInstanceOf[JobEventConfig]
   }
   
-  extension [Self <: JobEventConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobEventConfig] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }

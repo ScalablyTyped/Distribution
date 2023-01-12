@@ -34,7 +34,8 @@ object Identifier {
     __obj.asInstanceOf[Identifier]
   }
   
-  extension [Self <: Identifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object StandardMaterialValidator {
     __obj.asInstanceOf[StandardMaterialValidator]
   }
   
-  extension [Self <: StandardMaterialValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardMaterialValidator] (val x: Self) extends AnyVal {
     
     inline def setEnumValidators(value: Cull): Self = StObject.set(x, "enumValidators", value.asInstanceOf[js.Any])
     

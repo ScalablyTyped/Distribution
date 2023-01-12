@@ -21,7 +21,8 @@ object `40` {
     __obj.asInstanceOf[`40`[T]]
   }
   
-  extension [Self <: `40`[?], T](x: Self & `40`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `40`[?], T] (val x: Self & `40`[T]) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

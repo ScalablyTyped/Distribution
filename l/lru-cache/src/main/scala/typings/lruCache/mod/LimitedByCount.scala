@@ -21,7 +21,8 @@ object LimitedByCount {
     __obj.asInstanceOf[LimitedByCount]
   }
   
-  extension [Self <: LimitedByCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitedByCount] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
   }

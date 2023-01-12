@@ -115,7 +115,8 @@ object libS3ManagedUploadMod {
         __obj.asInstanceOf[ManagedUploadOptions]
       }
       
-      extension [Self <: ManagedUploadOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ManagedUploadOptions] (val x: Self) extends AnyVal {
         
         inline def setLeavePartsOnError(value: Boolean): Self = StObject.set(x, "leavePartsOnError", value.asInstanceOf[js.Any])
         
@@ -158,7 +159,8 @@ object libS3ManagedUploadMod {
         __obj.asInstanceOf[Progress]
       }
       
-      extension [Self <: Progress](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
         
         inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
         
@@ -195,7 +197,8 @@ object libS3ManagedUploadMod {
         __obj.asInstanceOf[SendData]
       }
       
-      extension [Self <: SendData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SendData] (val x: Self) extends AnyVal {
         
         inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
         

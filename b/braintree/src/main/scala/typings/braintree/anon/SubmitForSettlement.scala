@@ -15,7 +15,8 @@ object SubmitForSettlement {
     __obj.asInstanceOf[SubmitForSettlement]
   }
   
-  extension [Self <: SubmitForSettlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitForSettlement] (val x: Self) extends AnyVal {
     
     inline def setSubmitForSettlement(value: Boolean): Self = StObject.set(x, "submitForSettlement", value.asInstanceOf[js.Any])
   }

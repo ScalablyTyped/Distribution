@@ -45,7 +45,8 @@ object buildSrcSpecLayerMod {
       __obj.asInstanceOf[GenericLayerSpec[U]]
     }
     
-    extension [Self <: GenericLayerSpec[?], U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */](x: Self & GenericLayerSpec[U]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericLayerSpec[?], U /* <: GenericUnitSpec[Any, Any, SelectionParameter[SelectionType]] */] (val x: Self & GenericLayerSpec[U]) extends AnyVal {
       
       inline def setLayer(value: js.Array[GenericLayerSpec[U] | U]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object buildSrcSpecLayerMod {
       __obj.asInstanceOf[LayerSpec[F]]
     }
     
-    extension [Self <: LayerSpec[?], F /* <: Field */](x: Self & LayerSpec[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerSpec[?], F /* <: Field */] (val x: Self & LayerSpec[F]) extends AnyVal {
       
       inline def setEncoding(value: SharedCompositeEncoding[F]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

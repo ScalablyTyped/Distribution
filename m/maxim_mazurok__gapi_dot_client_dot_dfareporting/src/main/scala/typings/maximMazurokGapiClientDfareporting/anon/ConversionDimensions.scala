@@ -45,7 +45,8 @@ object ConversionDimensions {
     __obj.asInstanceOf[ConversionDimensions]
   }
   
-  extension [Self <: ConversionDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionDimensions] (val x: Self) extends AnyVal {
     
     inline def setActivityFilters(value: js.Array[DimensionValue]): Self = StObject.set(x, "activityFilters", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[LineColumnInfo]
     }
     
-    extension [Self <: LineColumnInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineColumnInfo] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[LineColumnOptions]
     }
     
-    extension [Self <: LineColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: Double): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     }

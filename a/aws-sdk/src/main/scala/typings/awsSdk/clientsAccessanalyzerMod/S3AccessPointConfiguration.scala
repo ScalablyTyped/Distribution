@@ -28,7 +28,8 @@ object S3AccessPointConfiguration {
     __obj.asInstanceOf[S3AccessPointConfiguration]
   }
   
-  extension [Self <: S3AccessPointConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3AccessPointConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccessPointPolicy(value: AccessPointPolicy): Self = StObject.set(x, "accessPointPolicy", value.asInstanceOf[js.Any])
     

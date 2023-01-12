@@ -16,7 +16,8 @@ object SmartHomeV1QueryPayload {
     __obj.asInstanceOf[SmartHomeV1QueryPayload]
   }
   
-  extension [Self <: SmartHomeV1QueryPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1QueryPayload] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }

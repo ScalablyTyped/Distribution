@@ -94,7 +94,8 @@ object gallery {
       __obj.asInstanceOf[GalleryItem]
     }
     
-    extension [Self <: GalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GalleryItem] (val x: Self) extends AnyVal {
       
       inline def setDrawing(value: XComponent): Self = StObject.set(x, "Drawing", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object gallery {
       __obj.asInstanceOf[XGalleryItem]
     }
     
-    extension [Self <: XGalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XGalleryItem] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: () => Double): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
@@ -300,7 +302,8 @@ object gallery {
       __obj.asInstanceOf[XGalleryTheme]
     }
     
-    extension [Self <: XGalleryTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XGalleryTheme] (val x: Self) extends AnyVal {
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
@@ -363,7 +366,8 @@ object gallery {
       __obj.asInstanceOf[XGalleryThemeProvider]
     }
     
-    extension [Self <: XGalleryThemeProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XGalleryThemeProvider] (val x: Self) extends AnyVal {
       
       inline def setInsertNewByName(value: String => XGalleryTheme): Self = StObject.set(x, "insertNewByName", js.Any.fromFunction1(value))
       

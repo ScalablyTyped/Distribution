@@ -51,7 +51,8 @@ object distTypesMod {
       __obj.asInstanceOf[CircularProgressbarDefaultProps]
     }
     
-    extension [Self <: CircularProgressbarDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularProgressbarDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object distTypesMod {
       __obj.asInstanceOf[CircularProgressbarProps]
     }
     
-    extension [Self <: CircularProgressbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularProgressbarProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -128,7 +130,8 @@ object distTypesMod {
       __obj.asInstanceOf[CircularProgressbarStyles]
     }
     
-    extension [Self <: CircularProgressbarStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularProgressbarStyles] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: CSSProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object distTypesMod {
       __obj.asInstanceOf[CircularProgressbarWrapperProps]
     }
     
-    extension [Self <: CircularProgressbarWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularProgressbarWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

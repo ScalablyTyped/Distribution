@@ -216,7 +216,8 @@ object ScrollViewPropsIOS {
     __obj.asInstanceOf[ScrollViewPropsIOS]
   }
   
-  extension [Self <: ScrollViewPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setAlwaysBounceHorizontal(value: Boolean): Self = StObject.set(x, "alwaysBounceHorizontal", value.asInstanceOf[js.Any])
     

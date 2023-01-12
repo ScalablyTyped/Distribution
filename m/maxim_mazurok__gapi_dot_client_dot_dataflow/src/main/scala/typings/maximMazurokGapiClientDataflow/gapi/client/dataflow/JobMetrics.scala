@@ -19,7 +19,8 @@ object JobMetrics {
     __obj.asInstanceOf[JobMetrics]
   }
   
-  extension [Self <: JobMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobMetrics] (val x: Self) extends AnyVal {
     
     inline def setMetricTime(value: String): Self = StObject.set(x, "metricTime", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object PartialTooltipProps {
     __obj.asInstanceOf[PartialTooltipProps]
   }
   
-  extension [Self <: PartialTooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipProps] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

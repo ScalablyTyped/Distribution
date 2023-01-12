@@ -17,7 +17,8 @@ object ProcessingModeEventArgs {
     __obj.asInstanceOf[ProcessingModeEventArgs]
   }
   
-  extension [Self <: ProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }

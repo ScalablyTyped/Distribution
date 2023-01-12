@@ -20,7 +20,8 @@ object IsMobilePhoneOptions {
     __obj.asInstanceOf[IsMobilePhoneOptions]
   }
   
-  extension [Self <: IsMobilePhoneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMobilePhoneOptions] (val x: Self) extends AnyVal {
     
     inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
     

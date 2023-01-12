@@ -33,7 +33,8 @@ object PutSchemaVersionMetadataInput {
     __obj.asInstanceOf[PutSchemaVersionMetadataInput]
   }
   
-  extension [Self <: PutSchemaVersionMetadataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSchemaVersionMetadataInput] (val x: Self) extends AnyVal {
     
     inline def setMetadataKeyValue(value: MetadataKeyValuePair): Self = StObject.set(x, "MetadataKeyValue", value.asInstanceOf[js.Any])
     

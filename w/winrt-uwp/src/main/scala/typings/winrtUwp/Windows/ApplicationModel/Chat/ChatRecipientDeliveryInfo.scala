@@ -47,7 +47,8 @@ object ChatRecipientDeliveryInfo {
     __obj.asInstanceOf[ChatRecipientDeliveryInfo]
   }
   
-  extension [Self <: ChatRecipientDeliveryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRecipientDeliveryInfo] (val x: Self) extends AnyVal {
     
     inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
     

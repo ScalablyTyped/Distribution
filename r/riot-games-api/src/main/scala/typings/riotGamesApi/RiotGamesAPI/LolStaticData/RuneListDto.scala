@@ -23,7 +23,8 @@ object RuneListDto {
     __obj.asInstanceOf[RuneListDto]
   }
   
-  extension [Self <: RuneListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuneListDto] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: BasicDataDto): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

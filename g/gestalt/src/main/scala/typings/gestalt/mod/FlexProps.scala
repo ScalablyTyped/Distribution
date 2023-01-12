@@ -58,7 +58,8 @@ object FlexProps {
     __obj.asInstanceOf[FlexProps]
   }
   
-  extension [Self <: FlexProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: start | end | center | between | around | evenly | stretch): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

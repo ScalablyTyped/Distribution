@@ -81,7 +81,8 @@ object GridExcelExporterSettingsGridFeatureOptions {
     __obj.asInstanceOf[GridExcelExporterSettingsGridFeatureOptions]
   }
   
-  extension [Self <: GridExcelExporterSettingsGridFeatureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridExcelExporterSettingsGridFeatureOptions] (val x: Self) extends AnyVal {
     
     inline def setColumnfixing(value: String): Self = StObject.set(x, "columnfixing", value.asInstanceOf[js.Any])
     

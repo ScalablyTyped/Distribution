@@ -33,7 +33,8 @@ object UpdateSiteRequest {
     __obj.asInstanceOf[UpdateSiteRequest]
   }
   
-  extension [Self <: UpdateSiteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSiteRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ConstrainedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

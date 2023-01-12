@@ -28,7 +28,8 @@ object ListTagsForStreamInput {
     __obj.asInstanceOf[ListTagsForStreamInput]
   }
   
-  extension [Self <: ListTagsForStreamInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForStreamInput] (val x: Self) extends AnyVal {
     
     inline def setExclusiveStartTagKey(value: TagKey): Self = StObject.set(x, "ExclusiveStartTagKey", value.asInstanceOf[js.Any])
     

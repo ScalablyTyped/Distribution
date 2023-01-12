@@ -20,7 +20,8 @@ object AdTextAsset {
     __obj.asInstanceOf[AdTextAsset]
   }
   
-  extension [Self <: AdTextAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdTextAsset] (val x: Self) extends AnyVal {
     
     inline def setPinning(value: String): Self = StObject.set(x, "pinning", value.asInstanceOf[js.Any])
     

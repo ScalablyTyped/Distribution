@@ -18,7 +18,8 @@ object DeleteImagePipelineRequest {
     __obj.asInstanceOf[DeleteImagePipelineRequest]
   }
   
-  extension [Self <: DeleteImagePipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteImagePipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setImagePipelineArn(value: ImagePipelineArn): Self = StObject.set(x, "imagePipelineArn", value.asInstanceOf[js.Any])
   }

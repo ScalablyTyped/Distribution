@@ -24,7 +24,8 @@ object FilterOptions {
     __obj.asInstanceOf[FilterOptions[T, S]]
   }
   
-  extension [Self <: FilterOptions[?, ?], T /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any */](x: Self & (FilterOptions[T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptions[?, ?], T /* <: FindConstant */, S /* <: /* import warning: importer.ImportType#apply Failed type conversion: screeps.FindTypes[T] */ js.Any */] (val x: Self & (FilterOptions[T, S])) extends AnyVal {
     
     inline def setFilter(
       value: (FilterFunction[

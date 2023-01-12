@@ -23,7 +23,8 @@ object ClusteringKey {
     __obj.asInstanceOf[ClusteringKey]
   }
   
-  extension [Self <: ClusteringKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusteringKey] (val x: Self) extends AnyVal {
     
     inline def setName(value: GenericString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

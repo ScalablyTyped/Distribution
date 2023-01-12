@@ -24,7 +24,8 @@ object Time {
     __obj.asInstanceOf[Time]
   }
   
-  extension [Self <: Time](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
     
     inline def setDollarreql_typeDollar(value: TIME): Self = StObject.set(x, "$reql_type$", value.asInstanceOf[js.Any])
     

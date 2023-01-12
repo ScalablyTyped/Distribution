@@ -230,7 +230,8 @@ object IPath {
     __obj.asInstanceOf[IPath]
   }
   
-  extension [Self <: IPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
     
     inline def setArc(
       value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], /* radius */ js.UndefOr[Double], /* startAngle */ js.UndefOr[Double], /* endAngle */ js.UndefOr[Double], /* anticlockwise */ js.UndefOr[Double]) => Unit

@@ -97,7 +97,8 @@ object PartialVictoryLabelProps {
     __obj.asInstanceOf[PartialVictoryLabelProps]
   }
   
-  extension [Self <: PartialVictoryLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVictoryLabelProps] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: StringOrNumberOrCallback): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PlotVariwideOnPointPositionOptions {
     __obj.asInstanceOf[PlotVariwideOnPointPositionOptions]
   }
   
-  extension [Self <: PlotVariwideOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVariwideOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

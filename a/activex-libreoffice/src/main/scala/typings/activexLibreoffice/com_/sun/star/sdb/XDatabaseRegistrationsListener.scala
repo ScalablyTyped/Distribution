@@ -45,7 +45,8 @@ object XDatabaseRegistrationsListener {
     __obj.asInstanceOf[XDatabaseRegistrationsListener]
   }
   
-  extension [Self <: XDatabaseRegistrationsListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseRegistrationsListener] (val x: Self) extends AnyVal {
     
     inline def setChangedDatabaseLocation(value: DatabaseRegistrationEvent => Unit): Self = StObject.set(x, "changedDatabaseLocation", js.Any.fromFunction1(value))
     

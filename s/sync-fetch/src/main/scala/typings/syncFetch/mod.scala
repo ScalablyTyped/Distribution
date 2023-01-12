@@ -208,7 +208,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SyncBody]
     }
     
-    extension [Self <: SyncBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncBody] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -291,7 +292,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SyncRequest]
     }
     
-    extension [Self <: SyncRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncRequest] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -353,7 +355,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SyncRequestInit]
     }
     
-    extension [Self <: SyncRequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncRequestInit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: SyncBodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -432,7 +435,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SyncResponse]
     }
     
-    extension [Self <: SyncResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -463,7 +467,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[URLLike]
     }
     
-    extension [Self <: URLLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLLike] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }

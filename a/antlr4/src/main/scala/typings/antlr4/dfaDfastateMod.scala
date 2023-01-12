@@ -175,7 +175,8 @@ object dfaDfastateMod {
       __obj.asInstanceOf[DFAState]
     }
     
-    extension [Self <: DFAState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DFAState] (val x: Self) extends AnyVal {
       
       inline def setConfigs(value: typings.antlr4.atnAtnconfigsetMod.default): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       

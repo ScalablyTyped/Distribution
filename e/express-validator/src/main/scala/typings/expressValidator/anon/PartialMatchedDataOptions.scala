@@ -20,7 +20,8 @@ object PartialMatchedDataOptions {
     __obj.asInstanceOf[PartialMatchedDataOptions]
   }
   
-  extension [Self <: PartialMatchedDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMatchedDataOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeOptionals(value: Boolean): Self = StObject.set(x, "includeOptionals", value.asInstanceOf[js.Any])
     

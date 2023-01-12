@@ -46,7 +46,8 @@ object NodeAPIAuth {
     __obj.asInstanceOf[NodeAPIAuth]
   }
   
-  extension [Self <: NodeAPIAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeAPIAuth] (val x: Self) extends AnyVal {
     
     inline def setNeedsPermission(
       value: String => js.Function3[

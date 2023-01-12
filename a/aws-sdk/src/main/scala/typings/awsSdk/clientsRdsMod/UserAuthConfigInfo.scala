@@ -38,7 +38,8 @@ object UserAuthConfigInfo {
     __obj.asInstanceOf[UserAuthConfigInfo]
   }
   
-  extension [Self <: UserAuthConfigInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserAuthConfigInfo] (val x: Self) extends AnyVal {
     
     inline def setAuthScheme(value: AuthScheme): Self = StObject.set(x, "AuthScheme", value.asInstanceOf[js.Any])
     

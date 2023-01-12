@@ -22,7 +22,8 @@ object TestTestEntry {
     __obj.asInstanceOf[TestTestEntry]
   }
   
-  extension [Self <: TestTestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestTestEntry] (val x: Self) extends AnyVal {
     
     inline def setName(value: test_retry): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

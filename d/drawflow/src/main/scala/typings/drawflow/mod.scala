@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[ConnectionEvent]
     }
     
-    extension [Self <: ConnectionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionEvent] (val x: Self) extends AnyVal {
       
       inline def setInput_class(value: String): Self = StObject.set(x, "input_class", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[ConnectionStartEvent]
     }
     
-    extension [Self <: ConnectionStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStartEvent] (val x: Self) extends AnyVal {
       
       inline def setOutput_class(value: String): Self = StObject.set(x, "output_class", value.asInstanceOf[js.Any])
       
@@ -621,7 +623,8 @@ object mod {
       __obj.asInstanceOf[DrawflowConnection]
     }
     
-    extension [Self <: DrawflowConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawflowConnection] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: js.Array[DrawflowConnectionDetail]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       
@@ -642,7 +645,8 @@ object mod {
       __obj.asInstanceOf[DrawflowConnectionDetail]
     }
     
-    extension [Self <: DrawflowConnectionDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawflowConnectionDetail] (val x: Self) extends AnyVal {
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -661,7 +665,8 @@ object mod {
       __obj.asInstanceOf[DrawflowExport]
     }
     
-    extension [Self <: DrawflowExport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawflowExport] (val x: Self) extends AnyVal {
       
       inline def setDrawflow(value: DictcustomModuleName): Self = StObject.set(x, "drawflow", value.asInstanceOf[js.Any])
     }
@@ -678,7 +683,8 @@ object mod {
       __obj.asInstanceOf[DrawflowModuleData]
     }
     
-    extension [Self <: DrawflowModuleData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawflowModuleData] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[DrawflowNode]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -725,7 +731,8 @@ object mod {
       __obj.asInstanceOf[DrawflowNode]
     }
     
-    extension [Self <: DrawflowNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawflowNode] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -762,7 +769,8 @@ object mod {
       __obj.asInstanceOf[MousePositionEvent]
     }
     
-    extension [Self <: MousePositionEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousePositionEvent] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

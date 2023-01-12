@@ -30,7 +30,8 @@ object ConditionDefinitionQuestionnaire {
     __obj.asInstanceOf[ConditionDefinitionQuestionnaire]
   }
   
-  extension [Self <: ConditionDefinitionQuestionnaire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionDefinitionQuestionnaire] (val x: Self) extends AnyVal {
     
     inline def setPurpose(value: preadmit | `diff-diagnosis` | outcome): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     

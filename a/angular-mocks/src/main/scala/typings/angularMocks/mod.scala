@@ -75,7 +75,8 @@ object mod {
         __obj.asInstanceOf[IAngularStatic]
       }
       
-      extension [Self <: IAngularStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IAngularStatic] (val x: Self) extends AnyVal {
         
         inline def setMock(value: IMockStatic): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       }
@@ -123,7 +124,8 @@ object mod {
         __obj.asInstanceOf[IExceptionHandlerProvider]
       }
       
-      extension [Self <: IExceptionHandlerProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IExceptionHandlerProvider] (val x: Self) extends AnyVal {
         
         inline def setMode(value: String => Unit): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
       }
@@ -597,7 +599,8 @@ object mod {
         __obj.asInstanceOf[IIntervalService]
       }
       
-      extension [Self <: IIntervalService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IIntervalService] (val x: Self) extends AnyVal {
         
         inline def setFlush(value: Double => Double): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       }
@@ -614,7 +617,8 @@ object mod {
         __obj.asInstanceOf[ILogCall]
       }
       
-      extension [Self <: ILogCall](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILogCall] (val x: Self) extends AnyVal {
         
         inline def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
         
@@ -640,7 +644,8 @@ object mod {
         __obj.asInstanceOf[ILogService]
       }
       
-      extension [Self <: ILogService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ILogService] (val x: Self) extends AnyVal {
         
         inline def setAssertEmpty(value: () => Unit): Self = StObject.set(x, "assertEmpty", js.Any.fromFunction0(value))
         
@@ -747,7 +752,8 @@ object mod {
           __obj.asInstanceOf[IAnimateService]
         }
         
-        extension [Self <: IAnimateService](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAnimateService] (val x: Self) extends AnyVal {
           
           inline def setCloseAndFlush(value: () => Unit): Self = StObject.set(x, "closeAndFlush", js.Any.fromFunction0(value))
           
@@ -838,7 +844,8 @@ object mod {
           __obj.asInstanceOf[IBrowserTriggerEventData]
         }
         
-        extension [Self <: IBrowserTriggerEventData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IBrowserTriggerEventData] (val x: Self) extends AnyVal {
           
           inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
           

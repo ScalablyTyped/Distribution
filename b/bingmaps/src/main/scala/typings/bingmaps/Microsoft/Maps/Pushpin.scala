@@ -117,7 +117,8 @@ object Pushpin {
     __obj.asInstanceOf[Pushpin]
   }
   
-  extension [Self <: Pushpin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pushpin] (val x: Self) extends AnyVal {
     
     inline def setGetAnchor(value: () => Point): Self = StObject.set(x, "getAnchor", js.Any.fromFunction0(value))
     

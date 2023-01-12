@@ -70,7 +70,8 @@ object TypeofMathUtils {
     __obj.asInstanceOf[TypeofMathUtils]
   }
   
-  extension [Self <: TypeofMathUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMathUtils] (val x: Self) extends AnyVal {
     
     inline def setCbrt(value: Double => Double): Self = StObject.set(x, "cbrt", js.Any.fromFunction1(value))
     

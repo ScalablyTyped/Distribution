@@ -33,7 +33,8 @@ object Metadestroybooleanundefin {
     __obj.asInstanceOf[Metadestroybooleanundefin]
   }
   
-  extension [Self <: Metadestroybooleanundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metadestroybooleanundefin] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: Boolean): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     

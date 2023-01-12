@@ -23,7 +23,8 @@ object JobDriver {
     __obj.asInstanceOf[JobDriver]
   }
   
-  extension [Self <: JobDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDriver] (val x: Self) extends AnyVal {
     
     inline def setSparkSqlJobDriver(value: SparkSqlJobDriver): Self = StObject.set(x, "sparkSqlJobDriver", value.asInstanceOf[js.Any])
     

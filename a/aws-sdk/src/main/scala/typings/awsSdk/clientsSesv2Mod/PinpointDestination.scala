@@ -18,7 +18,8 @@ object PinpointDestination {
     __obj.asInstanceOf[PinpointDestination]
   }
   
-  extension [Self <: PinpointDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinpointDestination] (val x: Self) extends AnyVal {
     
     inline def setApplicationArn(value: AmazonResourceName): Self = StObject.set(x, "ApplicationArn", value.asInstanceOf[js.Any])
     

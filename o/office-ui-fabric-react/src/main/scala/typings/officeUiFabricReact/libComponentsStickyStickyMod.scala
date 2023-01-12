@@ -111,7 +111,8 @@ object libComponentsStickyStickyMod {
       __obj.asInstanceOf[IStickyContext]
     }
     
-    extension [Self <: IStickyContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStickyContext] (val x: Self) extends AnyVal {
       
       inline def setScrollablePane(value: Requireable[js.Object]): Self = StObject.set(x, "scrollablePane", value.asInstanceOf[js.Any])
     }
@@ -132,7 +133,8 @@ object libComponentsStickyStickyMod {
       __obj.asInstanceOf[IStickyState]
     }
     
-    extension [Self <: IStickyState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStickyState] (val x: Self) extends AnyVal {
       
       inline def setDistanceFromTop(value: Double): Self = StObject.set(x, "distanceFromTop", value.asInstanceOf[js.Any])
       

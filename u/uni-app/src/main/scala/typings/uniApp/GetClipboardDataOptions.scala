@@ -28,7 +28,8 @@ object GetClipboardDataOptions {
     __obj.asInstanceOf[GetClipboardDataOptions]
   }
   
-  extension [Self <: GetClipboardDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClipboardDataOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

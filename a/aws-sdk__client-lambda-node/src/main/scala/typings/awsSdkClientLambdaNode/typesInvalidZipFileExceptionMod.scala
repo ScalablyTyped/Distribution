@@ -21,7 +21,8 @@ object typesInvalidZipFileExceptionMod {
       __obj.asInstanceOf[InvalidZipFileException]
     }
     
-    extension [Self <: InvalidZipFileException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidZipFileException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidZipFileException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesInvalidZipFileExceptionMod {
       __obj.asInstanceOf[InvalidZipFileExceptionDetails]
     }
     
-    extension [Self <: InvalidZipFileExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidZipFileExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

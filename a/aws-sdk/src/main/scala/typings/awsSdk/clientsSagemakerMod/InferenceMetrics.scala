@@ -23,7 +23,8 @@ object InferenceMetrics {
     __obj.asInstanceOf[InferenceMetrics]
   }
   
-  extension [Self <: InferenceMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceMetrics] (val x: Self) extends AnyVal {
     
     inline def setMaxInvocations(value: Integer): Self = StObject.set(x, "MaxInvocations", value.asInstanceOf[js.Any])
     

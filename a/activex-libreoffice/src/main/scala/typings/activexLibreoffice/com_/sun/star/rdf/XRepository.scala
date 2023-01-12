@@ -184,7 +184,8 @@ object XRepository {
     __obj.asInstanceOf[XRepository]
   }
   
-  extension [Self <: XRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRepository] (val x: Self) extends AnyVal {
     
     inline def setCreateBlankNode(value: () => XBlankNode): Self = StObject.set(x, "createBlankNode", js.Any.fromFunction0(value))
     

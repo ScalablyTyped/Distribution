@@ -19,7 +19,8 @@ object CollectionDef {
       __obj.asInstanceOf[IAnyList]
     }
     
-    extension [Self <: IAnyList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnyList] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[IAny]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object CollectionDef {
       __obj.asInstanceOf[IBytesList]
     }
     
-    extension [Self <: IBytesList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBytesList] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object CollectionDef {
       __obj.asInstanceOf[IFloatList]
     }
     
-    extension [Self <: IFloatList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFloatList] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object CollectionDef {
       __obj.asInstanceOf[IInt64List]
     }
     
-    extension [Self <: IInt64List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInt64List] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object CollectionDef {
       __obj.asInstanceOf[INodeList]
     }
     
-    extension [Self <: INodeList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INodeList] (val x: Self) extends AnyVal {
       
       inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

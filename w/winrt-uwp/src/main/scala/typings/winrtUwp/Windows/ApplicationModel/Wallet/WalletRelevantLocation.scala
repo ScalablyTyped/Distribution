@@ -21,7 +21,8 @@ object WalletRelevantLocation {
     __obj.asInstanceOf[WalletRelevantLocation]
   }
   
-  extension [Self <: WalletRelevantLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletRelevantLocation] (val x: Self) extends AnyVal {
     
     inline def setDisplayMessage(value: String): Self = StObject.set(x, "displayMessage", value.asInstanceOf[js.Any])
     

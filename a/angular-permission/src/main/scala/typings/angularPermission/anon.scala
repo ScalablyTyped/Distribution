@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Except]
     }
     
-    extension [Self <: Except](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Except] (val x: Self) extends AnyVal {
       
       inline def setExcept(value: js.Function0[Unit] | String | js.Array[String] | IPromise[Any]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       

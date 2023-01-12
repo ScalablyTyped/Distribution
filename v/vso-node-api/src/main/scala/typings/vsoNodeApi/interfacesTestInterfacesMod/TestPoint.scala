@@ -81,7 +81,8 @@ object TestPoint {
     __obj.asInstanceOf[TestPoint]
   }
   
-  extension [Self <: TestPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPoint] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: IdentityRef): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

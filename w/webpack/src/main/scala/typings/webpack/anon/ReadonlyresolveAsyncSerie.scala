@@ -91,7 +91,8 @@ object ReadonlyresolveAsyncSerie {
     __obj.asInstanceOf[ReadonlyresolveAsyncSerie]
   }
   
-  extension [Self <: ReadonlyresolveAsyncSerie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyresolveAsyncSerie] (val x: Self) extends AnyVal {
     
     inline def setAfterResolve(value: AsyncSeriesBailHook[js.Array[ResolveData], `false` | Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "afterResolve", value.asInstanceOf[js.Any])
     

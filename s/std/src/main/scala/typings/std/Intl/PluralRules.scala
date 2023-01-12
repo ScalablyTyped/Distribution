@@ -19,7 +19,8 @@ object PluralRules {
     __obj.asInstanceOf[PluralRules]
   }
   
-  extension [Self <: PluralRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralRules] (val x: Self) extends AnyVal {
     
     inline def setResolvedOptions(value: () => ResolvedPluralRulesOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
     

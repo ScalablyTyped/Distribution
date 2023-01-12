@@ -19,7 +19,8 @@ object NOTFOUND {
     __obj.asInstanceOf[NOTFOUND]
   }
   
-  extension [Self <: NOTFOUND](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOTFOUND] (val x: Self) extends AnyVal {
     
     inline def setNOT_FOUND(value: String): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
     

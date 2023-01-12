@@ -22,7 +22,8 @@ object AdsListResponse {
     __obj.asInstanceOf[AdsListResponse]
   }
   
-  extension [Self <: AdsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdsListResponse] (val x: Self) extends AnyVal {
     
     inline def setAds(value: js.Array[Ad]): Self = StObject.set(x, "ads", value.asInstanceOf[js.Any])
     

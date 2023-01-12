@@ -52,7 +52,8 @@ object libDateSingleMonthMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setGetDateExtra(value: /* date */ js.Date => ExtraData): Self = StObject.set(x, "getDateExtra", js.Any.fromFunction1(value))
       

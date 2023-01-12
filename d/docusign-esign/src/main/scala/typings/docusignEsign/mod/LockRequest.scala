@@ -40,7 +40,8 @@ object LockRequest {
     __obj.asInstanceOf[LockRequest]
   }
   
-  extension [Self <: LockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockRequest] (val x: Self) extends AnyVal {
     
     inline def setLockDurationInSeconds(value: String): Self = StObject.set(x, "lockDurationInSeconds", value.asInstanceOf[js.Any])
     

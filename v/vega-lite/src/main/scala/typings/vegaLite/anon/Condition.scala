@@ -21,7 +21,8 @@ object Condition {
     __obj.asInstanceOf[Condition[V, ES]]
   }
   
-  extension [Self <: Condition[?, ?], V /* <: (typings.vegaLite.buildSrcChanneldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */](x: Self & (Condition[V, ES])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Condition[?, ?], V /* <: (typings.vegaLite.buildSrcChanneldefMod.Value[ExprRef | SignalRef]) | js.Array[Double] */, ES /* <: ExprRef | SignalRef */] (val x: Self & (Condition[V, ES])) extends AnyVal {
     
     inline def setCondition(
       value: (ConditionalPredicate[ValueDef[V] | ES]) | (js.Array[ConditionalPredicate[ValueDef[V] | ES]])

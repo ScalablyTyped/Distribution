@@ -17,7 +17,8 @@ object PartialWithUserProps {
     __obj.asInstanceOf[PartialWithUserProps]
   }
   
-  extension [Self <: PartialWithUserProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialWithUserProps] (val x: Self) extends AnyVal {
     
     inline def setUser(value: User_): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     

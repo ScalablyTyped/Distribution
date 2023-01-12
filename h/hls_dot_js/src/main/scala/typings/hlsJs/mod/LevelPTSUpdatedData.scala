@@ -36,7 +36,8 @@ object LevelPTSUpdatedData {
     __obj.asInstanceOf[LevelPTSUpdatedData]
   }
   
-  extension [Self <: LevelPTSUpdatedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelPTSUpdatedData] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: LevelDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

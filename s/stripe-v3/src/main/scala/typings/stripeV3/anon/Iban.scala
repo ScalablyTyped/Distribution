@@ -18,7 +18,8 @@ object Iban {
     __obj.asInstanceOf[Iban]
   }
   
-  extension [Self <: Iban](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iban] (val x: Self) extends AnyVal {
     
     inline def setIban(value: String): Self = StObject.set(x, "iban", value.asInstanceOf[js.Any])
   }

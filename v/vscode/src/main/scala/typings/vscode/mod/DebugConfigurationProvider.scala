@@ -72,7 +72,8 @@ object DebugConfigurationProvider {
     __obj.asInstanceOf[DebugConfigurationProvider]
   }
   
-  extension [Self <: DebugConfigurationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugConfigurationProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDebugConfigurations(
       value: (/* folder */ js.UndefOr[WorkspaceFolder], /* token */ js.UndefOr[CancellationToken]) => ProviderResult[js.Array[DebugConfiguration]]

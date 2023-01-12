@@ -23,7 +23,8 @@ object Blocking {
     __obj.asInstanceOf[Blocking]
   }
   
-  extension [Self <: Blocking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blocking] (val x: Self) extends AnyVal {
     
     inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
     

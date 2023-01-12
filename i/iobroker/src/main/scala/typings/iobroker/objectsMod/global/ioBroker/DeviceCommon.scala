@@ -19,7 +19,8 @@ object DeviceCommon {
     __obj.asInstanceOf[DeviceCommon]
   }
   
-  extension [Self <: DeviceCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceCommon] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
   }

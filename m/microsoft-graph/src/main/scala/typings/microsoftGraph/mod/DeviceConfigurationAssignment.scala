@@ -18,7 +18,8 @@ object DeviceConfigurationAssignment {
     __obj.asInstanceOf[DeviceConfigurationAssignment]
   }
   
-  extension [Self <: DeviceConfigurationAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfigurationAssignment] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

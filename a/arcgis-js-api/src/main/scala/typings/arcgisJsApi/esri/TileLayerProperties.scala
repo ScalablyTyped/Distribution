@@ -76,7 +76,8 @@ object TileLayerProperties {
     __obj.asInstanceOf[TileLayerProperties]
   }
   
-  extension [Self <: TileLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     

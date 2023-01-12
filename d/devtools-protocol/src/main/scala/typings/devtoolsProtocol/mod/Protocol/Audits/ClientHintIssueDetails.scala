@@ -17,7 +17,8 @@ object ClientHintIssueDetails {
     __obj.asInstanceOf[ClientHintIssueDetails]
   }
   
-  extension [Self <: ClientHintIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientHintIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setClientHintIssueReason(value: ClientHintIssueReason): Self = StObject.set(x, "clientHintIssueReason", value.asInstanceOf[js.Any])
     

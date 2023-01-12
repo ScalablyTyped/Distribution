@@ -25,7 +25,8 @@ object buildSrcEnumsAttributeValuesMod {
       __obj.asInstanceOf[AttributeValuesType]
     }
     
-    extension [Self <: AttributeValuesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValuesType] (val x: Self) extends AnyVal {
       
       inline def setRPC_SYSTEM(value: String): Self = StObject.set(x, "RPC_SYSTEM", value.asInstanceOf[js.Any])
     }

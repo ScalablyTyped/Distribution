@@ -50,7 +50,8 @@ object PointCloudUniqueValueRendererProperties {
     __obj.asInstanceOf[PointCloudUniqueValueRendererProperties]
   }
   
-  extension [Self <: PointCloudUniqueValueRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudUniqueValueRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setColorUniqueValueInfos(value: js.Array[PointCloudUniqueValueRendererColorUniqueValueInfos]): Self = StObject.set(x, "colorUniqueValueInfos", value.asInstanceOf[js.Any])
     

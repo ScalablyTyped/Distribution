@@ -226,7 +226,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemInstanceRemoveOptions]
     }
     
-    extension [Self <: SyncListItemInstanceRemoveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemInstanceRemoveOptions] (val x: Self) extends AnyVal {
       
       inline def setIfMatch(value: String): Self = StObject.set(x, "ifMatch", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemInstanceUpdateOptions]
     }
     
-    extension [Self <: SyncListItemInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -415,7 +417,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemListInstanceCreateOptions]
     }
     
-    extension [Self <: SyncListItemListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -471,7 +474,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemListInstanceEachOptions]
     }
     
-    extension [Self <: SyncListItemListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: SyncListItemQueryFromBoundType): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -541,7 +545,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemListInstanceOptions]
     }
     
-    extension [Self <: SyncListItemListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: SyncListItemQueryFromBoundType): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -596,7 +601,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemListInstancePageOptions]
     }
     
-    extension [Self <: SyncListItemListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: SyncListItemQueryFromBoundType): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -717,7 +723,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemResource]
     }
     
-    extension [Self <: SyncListItemResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -754,7 +761,8 @@ object libRestPreviewSyncServiceSyncListSyncListItemMod {
       __obj.asInstanceOf[SyncListItemSolution]
     }
     
-    extension [Self <: SyncListItemSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncListItemSolution] (val x: Self) extends AnyVal {
       
       inline def setListSid(value: String): Self = StObject.set(x, "listSid", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object StyleJson {
     __obj.asInstanceOf[StyleJson]
   }
   
-  extension [Self <: StyleJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleJson] (val x: Self) extends AnyVal {
     
     inline def setStyleJson(value: js.Array[MapStyleItem]): Self = StObject.set(x, "styleJson", value.asInstanceOf[js.Any])
     

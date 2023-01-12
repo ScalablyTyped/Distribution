@@ -32,7 +32,8 @@ object VerificationResultValidator {
     __obj.asInstanceOf[VerificationResultValidator]
   }
   
-  extension [Self <: VerificationResultValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationResultValidator] (val x: Self) extends AnyVal {
     
     inline def setAttestationSignature(value: Signature): Self = StObject.set(x, "attestationSignature", value.asInstanceOf[js.Any])
     

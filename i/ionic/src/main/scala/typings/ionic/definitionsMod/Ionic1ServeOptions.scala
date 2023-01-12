@@ -40,7 +40,8 @@ object Ionic1ServeOptions {
     __obj.asInstanceOf[Ionic1ServeOptions]
   }
   
-  extension [Self <: Ionic1ServeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ionic1ServeOptions] (val x: Self) extends AnyVal {
     
     inline def setConsolelogs(value: Boolean): Self = StObject.set(x, "consolelogs", value.asInstanceOf[js.Any])
     

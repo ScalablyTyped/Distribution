@@ -27,7 +27,8 @@ object ExcludedTopic {
     __obj.asInstanceOf[ExcludedTopic]
   }
   
-  extension [Self <: ExcludedTopic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedTopic] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     

@@ -33,7 +33,8 @@ object ActionTypeSettings {
     __obj.asInstanceOf[ActionTypeSettings]
   }
   
-  extension [Self <: ActionTypeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTypeSettings] (val x: Self) extends AnyVal {
     
     inline def setEntityUrlTemplate(value: UrlTemplate): Self = StObject.set(x, "entityUrlTemplate", value.asInstanceOf[js.Any])
     

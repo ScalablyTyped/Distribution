@@ -18,7 +18,8 @@ object AddControlOptions {
     __obj.asInstanceOf[AddControlOptions]
   }
   
-  extension [Self <: AddControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddControlOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object KHRParallelShaderCompile {
     __obj.asInstanceOf[KHRParallelShaderCompile]
   }
   
-  extension [Self <: KHRParallelShaderCompile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KHRParallelShaderCompile] (val x: Self) extends AnyVal {
     
     inline def setCOMPLETION_STATUS_KHR(value: GLenum): Self = StObject.set(x, "COMPLETION_STATUS_KHR", value.asInstanceOf[js.Any])
   }

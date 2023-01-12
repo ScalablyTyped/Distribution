@@ -39,7 +39,8 @@ object distTabsSrcTabsContextMod {
       __obj.asInstanceOf[TabsContextType]
     }
     
-    extension [Self <: TabsContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsContextType] (val x: Self) extends AnyVal {
       
       inline def setIsManual(value: Boolean): Self = StObject.set(x, "isManual", value.asInstanceOf[js.Any])
       

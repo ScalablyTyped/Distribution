@@ -32,7 +32,8 @@ object Bins {
     __obj.asInstanceOf[Bins]
   }
   
-  extension [Self <: Bins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bins] (val x: Self) extends AnyVal {
     
     inline def setAggregate(value: js.Array[AggregatedFieldDef]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     

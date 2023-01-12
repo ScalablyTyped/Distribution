@@ -263,7 +263,8 @@ object sapMGrowingListMod {
       __obj.asInstanceOf[GrowingListSettings]
     }
     
-    extension [Self <: GrowingListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrowingListSettings] (val x: Self) extends AnyVal {
       
       inline def setScrollToLoad(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "scrollToLoad", value.asInstanceOf[js.Any])
       

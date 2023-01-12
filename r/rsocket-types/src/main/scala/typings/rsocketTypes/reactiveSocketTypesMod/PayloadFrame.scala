@@ -29,7 +29,8 @@ object PayloadFrame {
     __obj.asInstanceOf[PayloadFrame]
   }
   
-  extension [Self <: PayloadFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayloadFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

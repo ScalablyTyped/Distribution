@@ -20,7 +20,8 @@ object StorePurchaseProperties {
     __obj.asInstanceOf[StorePurchaseProperties]
   }
   
-  extension [Self <: StorePurchaseProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorePurchaseProperties] (val x: Self) extends AnyVal {
     
     inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
     

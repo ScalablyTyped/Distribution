@@ -129,7 +129,8 @@ object distTypedEventsMod {
       __obj.asInstanceOf[TypedEventBroadcaster[EmitEvents]]
     }
     
-    extension [Self <: TypedEventBroadcaster[?], EmitEvents /* <: EventsMap */](x: Self & TypedEventBroadcaster[EmitEvents]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedEventBroadcaster[?], EmitEvents /* <: EventsMap */] (val x: Self & TypedEventBroadcaster[EmitEvents]) extends AnyVal {
       
       inline def setEmit(value: (Any, EventParams[EmitEvents, Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     }

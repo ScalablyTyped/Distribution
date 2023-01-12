@@ -32,7 +32,8 @@ object miscCustomAnimationFrameRequesterMod {
       __obj.asInstanceOf[ICustomAnimationFrameRequester]
     }
     
-    extension [Self <: ICustomAnimationFrameRequester](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomAnimationFrameRequester] (val x: Self) extends AnyVal {
       
       inline def setRenderFunction(value: js.Function): Self = StObject.set(x, "renderFunction", value.asInstanceOf[js.Any])
       

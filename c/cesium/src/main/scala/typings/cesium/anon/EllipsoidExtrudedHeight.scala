@@ -28,7 +28,8 @@ object EllipsoidExtrudedHeight {
     __obj.asInstanceOf[EllipsoidExtrudedHeight]
   }
   
-  extension [Self <: EllipsoidExtrudedHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipsoidExtrudedHeight] (val x: Self) extends AnyVal {
     
     inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     

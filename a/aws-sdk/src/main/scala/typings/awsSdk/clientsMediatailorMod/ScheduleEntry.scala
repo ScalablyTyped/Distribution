@@ -63,7 +63,8 @@ object ScheduleEntry {
     __obj.asInstanceOf[ScheduleEntry]
   }
   
-  extension [Self <: ScheduleEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleEntry] (val x: Self) extends AnyVal {
     
     inline def setApproximateDurationSeconds(value: long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
     

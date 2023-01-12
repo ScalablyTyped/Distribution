@@ -18,7 +18,8 @@ object SQL {
     __obj.asInstanceOf[SQL]
   }
   
-  extension [Self <: SQL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQL] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Any] => BinaryNode): Self = StObject.set(x, "array", js.Any.fromFunction1(value))
     

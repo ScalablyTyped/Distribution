@@ -23,7 +23,8 @@ object OpaqueTagNode {
     __obj.asInstanceOf[OpaqueTagNode]
   }
   
-  extension [Self <: OpaqueTagNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpaqueTagNode] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

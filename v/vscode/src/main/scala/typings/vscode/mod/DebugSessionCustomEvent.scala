@@ -28,7 +28,8 @@ object DebugSessionCustomEvent {
     __obj.asInstanceOf[DebugSessionCustomEvent]
   }
   
-  extension [Self <: DebugSessionCustomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSessionCustomEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

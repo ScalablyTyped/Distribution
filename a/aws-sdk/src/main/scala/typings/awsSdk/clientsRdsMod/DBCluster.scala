@@ -349,7 +349,8 @@ object DBCluster {
     __obj.asInstanceOf[DBCluster]
   }
   
-  extension [Self <: DBCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCluster] (val x: Self) extends AnyVal {
     
     inline def setActivityStreamKinesisStreamName(value: String): Self = StObject.set(x, "ActivityStreamKinesisStreamName", value.asInstanceOf[js.Any])
     

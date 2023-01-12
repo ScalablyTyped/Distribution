@@ -49,7 +49,8 @@ object Templates {
     __obj.asInstanceOf[Templates[T]]
   }
   
-  extension [Self <: Templates[?], T /* <: BaseTagData */](x: Self & Templates[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Templates[?], T /* <: BaseTagData */] (val x: Self & Templates[T]) extends AnyVal {
     
     inline def setDropdown(value: js.ThisFunction1[/* this */ Tagify[T], /* settings */ TagifyRuntimeSettings[T], String]): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     

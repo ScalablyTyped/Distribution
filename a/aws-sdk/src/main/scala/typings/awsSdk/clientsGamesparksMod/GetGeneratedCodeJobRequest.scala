@@ -28,7 +28,8 @@ object GetGeneratedCodeJobRequest {
     __obj.asInstanceOf[GetGeneratedCodeJobRequest]
   }
   
-  extension [Self <: GetGeneratedCodeJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeneratedCodeJobRequest] (val x: Self) extends AnyVal {
     
     inline def setGameName(value: GameName): Self = StObject.set(x, "GameName", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object styleExpressionsMod {
       __obj.asInstanceOf[ParsingContext]
     }
     
-    extension [Self <: ParsingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingContext] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -356,7 +356,8 @@ object TypeofShaderChunk {
     __obj.asInstanceOf[TypeofShaderChunk]
   }
   
-  extension [Self <: TypeofShaderChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofShaderChunk] (val x: Self) extends AnyVal {
     
     inline def setAlphamap_fragment(value: String): Self = StObject.set(x, "alphamap_fragment", value.asInstanceOf[js.Any])
     

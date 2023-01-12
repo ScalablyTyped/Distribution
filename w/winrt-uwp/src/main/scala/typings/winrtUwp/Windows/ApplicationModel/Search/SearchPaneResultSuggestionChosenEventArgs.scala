@@ -17,7 +17,8 @@ object SearchPaneResultSuggestionChosenEventArgs {
     __obj.asInstanceOf[SearchPaneResultSuggestionChosenEventArgs]
   }
   
-  extension [Self <: SearchPaneResultSuggestionChosenEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPaneResultSuggestionChosenEventArgs] (val x: Self) extends AnyVal {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }

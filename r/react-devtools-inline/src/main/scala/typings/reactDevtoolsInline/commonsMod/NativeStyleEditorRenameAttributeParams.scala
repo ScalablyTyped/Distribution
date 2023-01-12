@@ -21,7 +21,8 @@ object NativeStyleEditorRenameAttributeParams {
     __obj.asInstanceOf[NativeStyleEditorRenameAttributeParams]
   }
   
-  extension [Self <: NativeStyleEditorRenameAttributeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeStyleEditorRenameAttributeParams] (val x: Self) extends AnyVal {
     
     inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     

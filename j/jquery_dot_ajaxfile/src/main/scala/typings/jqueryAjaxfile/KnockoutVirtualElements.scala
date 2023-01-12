@@ -41,7 +41,8 @@ object KnockoutVirtualElements {
     __obj.asInstanceOf[KnockoutVirtualElements]
   }
   
-  extension [Self <: KnockoutVirtualElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutVirtualElements] (val x: Self) extends AnyVal {
     
     inline def setAllowedBindings(value: StringDictionary[Boolean]): Self = StObject.set(x, "allowedBindings", value.asInstanceOf[js.Any])
     

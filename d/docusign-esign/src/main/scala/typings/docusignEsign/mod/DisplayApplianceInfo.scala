@@ -23,7 +23,8 @@ object DisplayApplianceInfo {
     __obj.asInstanceOf[DisplayApplianceInfo]
   }
   
-  extension [Self <: DisplayApplianceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayApplianceInfo] (val x: Self) extends AnyVal {
     
     inline def setDocumentData(value: js.Array[DisplayApplianceDocument]): Self = StObject.set(x, "documentData", value.asInstanceOf[js.Any])
     

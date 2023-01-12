@@ -49,7 +49,8 @@ object distPhotoswipeUiDefaultMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object distPhotoswipeUiDefaultMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddCaptionHTMLFn(value: (/* item */ Item, /* captionEl */ HTMLElement, /* isFake */ Boolean) => Boolean): Self = StObject.set(x, "addCaptionHTMLFn", js.Any.fromFunction3(value))
       
@@ -413,7 +415,8 @@ object distPhotoswipeUiDefaultMod {
       __obj.asInstanceOf[PhotoSwipeUIDefault]
     }
     
-    extension [Self <: PhotoSwipeUIDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoSwipeUIDefault] (val x: Self) extends AnyVal {
       
       inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
@@ -458,7 +461,8 @@ object distPhotoswipeUiDefaultMod {
       __obj.asInstanceOf[ShareButtonData]
     }
     
-    extension [Self <: ShareButtonData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareButtonData] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: Boolean): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       

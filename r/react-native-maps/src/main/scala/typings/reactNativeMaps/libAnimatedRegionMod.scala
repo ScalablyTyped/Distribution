@@ -96,7 +96,8 @@ object libAnimatedRegionMod {
       __obj.asInstanceOf[AnimatedMapRegion]
     }
     
-    extension [Self <: AnimatedMapRegion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedMapRegion] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* region */ Region, Unit] => String): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       

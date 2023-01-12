@@ -91,7 +91,8 @@ object distTypesAnnotationsJsonPropertyMod {
       __obj.asInstanceOf[JsonPropertyOptions]
     }
     
-    extension [Self <: JsonPropertyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonPropertyOptions] (val x: Self) extends AnyVal {
       
       inline def setAccess(value: Access): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       

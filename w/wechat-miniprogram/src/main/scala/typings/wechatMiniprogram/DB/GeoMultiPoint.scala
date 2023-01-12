@@ -19,7 +19,8 @@ object GeoMultiPoint {
     __obj.asInstanceOf[GeoMultiPoint]
   }
   
-  extension [Self <: GeoMultiPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoMultiPoint] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[GeoPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

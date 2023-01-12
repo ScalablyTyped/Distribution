@@ -24,7 +24,8 @@ object NavigationEventsProps {
     __obj.asInstanceOf[NavigationEventsProps]
   }
   
-  extension [Self <: NavigationEventsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationEventsProps] (val x: Self) extends AnyVal {
     
     inline def setOnDidBlur(value: /* payload */ NavigationEventPayload => Unit): Self = StObject.set(x, "onDidBlur", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object MouseHandlers {
     __obj.asInstanceOf[MouseHandlers[RawDatum, ElementType]]
   }
   
-  extension [Self <: MouseHandlers[?, ?], RawDatum /* <: Datum */, ElementType](x: Self & (MouseHandlers[RawDatum, ElementType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseHandlers[?, ?], RawDatum /* <: Datum */, ElementType] (val x: Self & (MouseHandlers[RawDatum, ElementType])) extends AnyVal {
     
     inline def setOnClick(value: (/* cell */ Cell[RawDatum], /* event */ MouseEvent[ElementType, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     

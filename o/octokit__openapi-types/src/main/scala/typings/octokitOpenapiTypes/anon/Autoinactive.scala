@@ -62,7 +62,8 @@ object Autoinactive {
     __obj.asInstanceOf[Autoinactive]
   }
   
-  extension [Self <: Autoinactive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autoinactive] (val x: Self) extends AnyVal {
     
     inline def setAuto_inactive(value: Boolean): Self = StObject.set(x, "auto_inactive", value.asInstanceOf[js.Any])
     

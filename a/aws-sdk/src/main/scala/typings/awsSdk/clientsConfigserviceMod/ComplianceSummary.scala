@@ -28,7 +28,8 @@ object ComplianceSummary {
     __obj.asInstanceOf[ComplianceSummary]
   }
   
-  extension [Self <: ComplianceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceSummary] (val x: Self) extends AnyVal {
     
     inline def setComplianceSummaryTimestamp(value: js.Date): Self = StObject.set(x, "ComplianceSummaryTimestamp", value.asInstanceOf[js.Any])
     

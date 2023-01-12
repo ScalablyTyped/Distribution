@@ -73,7 +73,8 @@ object PlotTreemapLevelsOptions {
     __obj.asInstanceOf[PlotTreemapLevelsOptions]
   }
   
-  extension [Self <: PlotTreemapLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object XDataSeries {
     __obj.asInstanceOf[XDataSeries]
   }
   
-  extension [Self <: XDataSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSeries] (val x: Self) extends AnyVal {
     
     inline def setGetDataPointByIndex(value: Double => XPropertySet): Self = StObject.set(x, "getDataPointByIndex", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object EmbeddedModule {
     __obj.asInstanceOf[EmbeddedModule]
   }
   
-  extension [Self <: EmbeddedModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedModule] (val x: Self) extends AnyVal {
     
     inline def setGetEditUrl(value: String => js.Promise[EmbeddedResponse]): Self = StObject.set(x, "getEditUrl", js.Any.fromFunction1(value))
     

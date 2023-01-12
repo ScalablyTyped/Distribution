@@ -19,7 +19,8 @@ object BusProps {
     __obj.asInstanceOf[BusProps]
   }
   
-  extension [Self <: BusProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

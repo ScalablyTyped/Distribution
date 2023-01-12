@@ -18,7 +18,8 @@ object ZeppelinMonitoringConfigurationDescription {
     __obj.asInstanceOf[ZeppelinMonitoringConfigurationDescription]
   }
   
-  extension [Self <: ZeppelinMonitoringConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZeppelinMonitoringConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     

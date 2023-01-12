@@ -18,7 +18,8 @@ object StartMonitoringScheduleRequest {
     __obj.asInstanceOf[StartMonitoringScheduleRequest]
   }
   
-  extension [Self <: StartMonitoringScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMonitoringScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setMonitoringScheduleName(value: MonitoringScheduleName): Self = StObject.set(x, "MonitoringScheduleName", value.asInstanceOf[js.Any])
   }

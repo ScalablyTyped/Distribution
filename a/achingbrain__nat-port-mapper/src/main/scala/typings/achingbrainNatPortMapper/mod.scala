@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[MapPortOptions]
     }
     
-    extension [Self <: MapPortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapPortOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -162,7 +164,8 @@ object mod {
       __obj.asInstanceOf[NatAPIOptions]
     }
     
-    extension [Self <: NatAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NatAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[UnmapPortOptions]
     }
     
-    extension [Self <: UnmapPortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmapPortOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       

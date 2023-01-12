@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2Bucket {
     __obj.asInstanceOf[GooglePrivacyDlpV2Bucket]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Bucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Bucket] (val x: Self) extends AnyVal {
     
     inline def setMax(value: GooglePrivacyDlpV2Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

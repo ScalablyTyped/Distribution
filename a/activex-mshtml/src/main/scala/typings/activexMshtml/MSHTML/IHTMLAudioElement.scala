@@ -17,7 +17,8 @@ object IHTMLAudioElement {
     __obj.asInstanceOf[IHTMLAudioElement]
   }
   
-  extension [Self <: IHTMLAudioElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLAudioElement] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLAudioElement_typekey(value: IHTMLAudioElement): Self = StObject.set(x, "MSHTML.IHTMLAudioElement_typekey", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetDiskResult {
     __obj.asInstanceOf[GetDiskResult]
   }
   
-  extension [Self <: GetDiskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiskResult] (val x: Self) extends AnyVal {
     
     inline def setDisk(value: Disk): Self = StObject.set(x, "disk", value.asInstanceOf[js.Any])
     

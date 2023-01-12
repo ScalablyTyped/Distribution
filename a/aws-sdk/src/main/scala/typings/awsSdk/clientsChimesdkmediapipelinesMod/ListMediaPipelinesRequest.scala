@@ -23,7 +23,8 @@ object ListMediaPipelinesRequest {
     __obj.asInstanceOf[ListMediaPipelinesRequest]
   }
   
-  extension [Self <: ListMediaPipelinesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMediaPipelinesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ResultMax): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

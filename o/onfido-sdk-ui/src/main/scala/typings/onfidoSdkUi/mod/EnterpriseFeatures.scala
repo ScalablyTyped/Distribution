@@ -28,7 +28,8 @@ object EnterpriseFeatures {
     __obj.asInstanceOf[EnterpriseFeatures]
   }
   
-  extension [Self <: EnterpriseFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseFeatures] (val x: Self) extends AnyVal {
     
     inline def setCobrand(value: EnterpriseCobranding): Self = StObject.set(x, "cobrand", value.asInstanceOf[js.Any])
     

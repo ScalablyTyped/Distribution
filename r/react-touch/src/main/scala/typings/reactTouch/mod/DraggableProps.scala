@@ -23,7 +23,8 @@ object DraggableProps {
     __obj.asInstanceOf[DraggableProps]
   }
   
-  extension [Self <: DraggableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* argument */ DraggableCallbackArgument => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

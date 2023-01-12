@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata 
     __obj.asInstanceOf[GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1p1alpha1GenerateAnalysisReportOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

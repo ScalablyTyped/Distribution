@@ -55,7 +55,8 @@ object NodeInfo {
     __obj.asInstanceOf[NodeInfo]
   }
   
-  extension [Self <: NodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeInfo] (val x: Self) extends AnyVal {
     
     inline def setAddedToClusterTime(value: string): Self = StObject.set(x, "AddedToClusterTime", value.asInstanceOf[js.Any])
     

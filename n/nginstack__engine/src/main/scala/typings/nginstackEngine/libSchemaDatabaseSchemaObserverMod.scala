@@ -37,7 +37,8 @@ object libSchemaDatabaseSchemaObserverMod {
       __obj.asInstanceOf[AddTableColumnsEvent]
     }
     
-    extension [Self <: AddTableColumnsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTableColumnsEvent] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libSchemaDatabaseSchemaObserverMod {
       __obj.asInstanceOf[AlterTableColumnsEvent]
     }
     
-    extension [Self <: AlterTableColumnsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlterTableColumnsEvent] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ColumnDef]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object libSchemaDatabaseSchemaObserverMod {
       __obj.asInstanceOf[DropTableColumnsEvent]
     }
     
-    extension [Self <: DropTableColumnsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropTableColumnsEvent] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

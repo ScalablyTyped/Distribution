@@ -29,7 +29,8 @@ object ArcGenerator {
     __obj.asInstanceOf[ArcGenerator]
   }
   
-  extension [Self <: ArcGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGenerator] (val x: Self) extends AnyVal {
     
     inline def setArcGenerator(value: typings.nivoChord.distTypesTypesMod.ArcGenerator): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
     

@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setProfileImageUrl(value: String): Self = StObject.set(x, "profileImageUrl", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionsBase]
     }
     
-    extension [Self <: StrategyOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationURL(value: String): Self = StObject.set(x, "authorizationURL", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    extension [Self <: StrategyOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

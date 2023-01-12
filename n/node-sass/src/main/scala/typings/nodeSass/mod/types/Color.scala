@@ -62,7 +62,8 @@ object Color {
   @js.native
   val ^ : ColorConstructor = js.native
   
-  extension [Self <: Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
     
     inline def setGetA(value: () => Double): Self = StObject.set(x, "getA", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object DefaultMatchRequiredType {
     __obj.asInstanceOf[DefaultMatchRequiredType]
   }
   
-  extension [Self <: DefaultMatchRequiredType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMatchRequiredType] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

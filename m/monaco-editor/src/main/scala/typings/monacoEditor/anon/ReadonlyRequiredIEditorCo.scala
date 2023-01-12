@@ -18,7 +18,8 @@ object ReadonlyRequiredIEditorCo {
     __obj.asInstanceOf[ReadonlyRequiredIEditorCo]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorCo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorCo] (val x: Self) extends AnyVal {
     
     inline def setIgnoreEmptyLines(value: Boolean): Self = StObject.set(x, "ignoreEmptyLines", value.asInstanceOf[js.Any])
     

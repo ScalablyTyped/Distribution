@@ -68,7 +68,8 @@ object RequestMaskincludeField {
     __obj.asInstanceOf[RequestMaskincludeField]
   }
   
-  extension [Self <: RequestMaskincludeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMaskincludeField] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

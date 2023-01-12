@@ -29,7 +29,8 @@ object AppsDynamiteBackendDlpScanSummary {
     __obj.asInstanceOf[AppsDynamiteBackendDlpScanSummary]
   }
   
-  extension [Self <: AppsDynamiteBackendDlpScanSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBackendDlpScanSummary] (val x: Self) extends AnyVal {
     
     inline def setScanId(value: String): Self = StObject.set(x, "scanId", value.asInstanceOf[js.Any])
     

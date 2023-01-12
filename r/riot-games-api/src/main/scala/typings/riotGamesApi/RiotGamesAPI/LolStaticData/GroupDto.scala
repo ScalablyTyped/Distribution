@@ -17,7 +17,8 @@ object GroupDto {
     __obj.asInstanceOf[GroupDto]
   }
   
-  extension [Self <: GroupDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupDto] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

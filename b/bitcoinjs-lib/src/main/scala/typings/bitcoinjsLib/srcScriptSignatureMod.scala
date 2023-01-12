@@ -28,7 +28,8 @@ object srcScriptSignatureMod {
       __obj.asInstanceOf[ScriptSignature]
     }
     
-    extension [Self <: ScriptSignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptSignature] (val x: Self) extends AnyVal {
       
       inline def setHashType(value: Double): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object TypeNumberConstructor {
     __obj.asInstanceOf[TypeNumberConstructor]
   }
   
-  extension [Self <: TypeNumberConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeNumberConstructor] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

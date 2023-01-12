@@ -54,7 +54,8 @@ object KnockoutValidationUtils {
     __obj.asInstanceOf[KnockoutValidationUtils]
   }
   
-  extension [Self <: KnockoutValidationUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationUtils] (val x: Self) extends AnyVal {
     
     inline def setContextFor(value: Element => KnockoutValidationConfiguration): Self = StObject.set(x, "contextFor", js.Any.fromFunction1(value))
     

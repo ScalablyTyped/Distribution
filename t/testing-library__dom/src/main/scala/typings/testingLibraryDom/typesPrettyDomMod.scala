@@ -194,7 +194,8 @@ object typesPrettyDomMod {
       __obj.asInstanceOf[PrettyDOMOptions]
     }
     
-    extension [Self <: PrettyDOMOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyDOMOptions] (val x: Self) extends AnyVal {
       
       inline def setFilterNode(value: /* node */ Node => Boolean): Self = StObject.set(x, "filterNode", js.Any.fromFunction1(value))
       

@@ -17,7 +17,8 @@ object EncodingParameters {
     __obj.asInstanceOf[EncodingParameters]
   }
   
-  extension [Self <: EncodingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodingParameters] (val x: Self) extends AnyVal {
     
     inline def setMaxAudioBitrate(value: Double): Self = StObject.set(x, "maxAudioBitrate", value.asInstanceOf[js.Any])
     

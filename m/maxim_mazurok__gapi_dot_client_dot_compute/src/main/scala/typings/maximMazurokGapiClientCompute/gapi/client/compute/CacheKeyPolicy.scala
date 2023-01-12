@@ -37,7 +37,8 @@ object CacheKeyPolicy {
     __obj.asInstanceOf[CacheKeyPolicy]
   }
   
-  extension [Self <: CacheKeyPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheKeyPolicy] (val x: Self) extends AnyVal {
     
     inline def setIncludeHost(value: Boolean): Self = StObject.set(x, "includeHost", value.asInstanceOf[js.Any])
     

@@ -180,7 +180,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -318,7 +319,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -404,7 +406,8 @@ object mod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -592,7 +595,8 @@ object mod {
       __obj.asInstanceOf[ZipObject]
     }
     
-    extension [Self <: ZipObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipObject] (val x: Self) extends AnyVal {
       
       inline def setAsArrayBuffer(value: () => js.typedarray.ArrayBuffer): Self = StObject.set(x, "asArrayBuffer", js.Any.fromFunction0(value))
       

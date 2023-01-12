@@ -23,7 +23,8 @@ object ElementaryStreamInfo {
     __obj.asInstanceOf[ElementaryStreamInfo]
   }
   
-  extension [Self <: ElementaryStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementaryStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setEndDTS(value: Double): Self = StObject.set(x, "endDTS", value.asInstanceOf[js.Any])
     

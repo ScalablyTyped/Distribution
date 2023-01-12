@@ -33,7 +33,8 @@ object libComponentsKeytipDataKeytipDataDottypesMod {
       __obj.asInstanceOf[IKeytipDataProps]
     }
     
-    extension [Self <: IKeytipDataProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipDataProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

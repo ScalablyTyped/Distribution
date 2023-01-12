@@ -17,7 +17,8 @@ object RedialRequestedEventArgs {
     __obj.asInstanceOf[RedialRequestedEventArgs]
   }
   
-  extension [Self <: RedialRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedialRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: () => Unit): Self = StObject.set(x, "handled", js.Any.fromFunction0(value))
   }

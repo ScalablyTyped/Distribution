@@ -18,7 +18,8 @@ object IOtherExpectation {
     __obj.asInstanceOf[IOtherExpectation]
   }
   
-  extension [Self <: IOtherExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOtherExpectation] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

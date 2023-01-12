@@ -164,7 +164,8 @@ object distCommonjsElementsLabelLabelMod extends Shortcut {
       __obj.asInstanceOf[StrictLabelProps]
     }
     
-    extension [Self <: StrictLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictLabelProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

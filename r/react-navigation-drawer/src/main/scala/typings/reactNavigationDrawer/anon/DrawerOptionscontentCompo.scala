@@ -75,7 +75,8 @@ object DrawerOptionscontentCompo {
     __obj.asInstanceOf[DrawerOptionscontentCompo]
   }
   
-  extension [Self <: DrawerOptionscontentCompo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerOptionscontentCompo] (val x: Self) extends AnyVal {
     
     inline def setContentComponent(value: ComponentType[DrawerContentComponentProps]): Self = StObject.set(x, "contentComponent", value.asInstanceOf[js.Any])
     

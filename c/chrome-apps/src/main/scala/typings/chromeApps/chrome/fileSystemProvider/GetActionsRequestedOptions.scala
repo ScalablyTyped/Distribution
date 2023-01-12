@@ -24,7 +24,8 @@ object GetActionsRequestedOptions {
     __obj.asInstanceOf[GetActionsRequestedOptions]
   }
   
-  extension [Self <: GetActionsRequestedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetActionsRequestedOptions] (val x: Self) extends AnyVal {
     
     inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
     

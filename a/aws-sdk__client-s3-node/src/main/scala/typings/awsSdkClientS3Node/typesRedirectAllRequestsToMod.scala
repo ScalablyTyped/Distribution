@@ -27,7 +27,8 @@ object typesRedirectAllRequestsToMod {
       __obj.asInstanceOf[RedirectAllRequestsTo]
     }
     
-    extension [Self <: RedirectAllRequestsTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectAllRequestsTo] (val x: Self) extends AnyVal {
       
       inline def setHostName(value: String): Self = StObject.set(x, "HostName", value.asInstanceOf[js.Any])
       

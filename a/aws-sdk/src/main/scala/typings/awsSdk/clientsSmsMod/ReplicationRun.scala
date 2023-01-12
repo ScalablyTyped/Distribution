@@ -68,7 +68,8 @@ object ReplicationRun {
     __obj.asInstanceOf[ReplicationRun]
   }
   
-  extension [Self <: ReplicationRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationRun] (val x: Self) extends AnyVal {
     
     inline def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
     

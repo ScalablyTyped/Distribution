@@ -23,7 +23,8 @@ object YieldExpression {
     __obj.asInstanceOf[YieldExpression]
   }
   
-  extension [Self <: YieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YieldExpression] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

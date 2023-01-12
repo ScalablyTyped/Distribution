@@ -19,7 +19,8 @@ object UpdateLogLevelsByResourceTypesRequest {
     __obj.asInstanceOf[UpdateLogLevelsByResourceTypesRequest]
   }
   
-  extension [Self <: UpdateLogLevelsByResourceTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLogLevelsByResourceTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultLogLevel(value: LogLevel): Self = StObject.set(x, "DefaultLogLevel", value.asInstanceOf[js.Any])
     

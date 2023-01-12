@@ -23,7 +23,8 @@ object UpdateControlPanelRequest {
     __obj.asInstanceOf[UpdateControlPanelRequest]
   }
   
-  extension [Self <: UpdateControlPanelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateControlPanelRequest] (val x: Self) extends AnyVal {
     
     inline def setControlPanelArn(value: stringMin1Max256PatternAZaZ09): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
     

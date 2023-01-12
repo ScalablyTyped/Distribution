@@ -21,7 +21,8 @@ object Digitaldelivery {
     __obj.asInstanceOf[Digitaldelivery]
   }
   
-  extension [Self <: Digitaldelivery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Digitaldelivery] (val x: Self) extends AnyVal {
     
     inline def setDigital_delivery(value: Boolean): Self = StObject.set(x, "digital_delivery", value.asInstanceOf[js.Any])
     

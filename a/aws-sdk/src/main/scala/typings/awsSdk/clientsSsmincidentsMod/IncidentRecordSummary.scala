@@ -55,7 +55,8 @@ object IncidentRecordSummary {
     __obj.asInstanceOf[IncidentRecordSummary]
   }
   
-  extension [Self <: IncidentRecordSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncidentRecordSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

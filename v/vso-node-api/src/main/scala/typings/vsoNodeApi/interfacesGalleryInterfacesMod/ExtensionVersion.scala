@@ -45,7 +45,8 @@ object ExtensionVersion {
     __obj.asInstanceOf[ExtensionVersion]
   }
   
-  extension [Self <: ExtensionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionVersion] (val x: Self) extends AnyVal {
     
     inline def setAssetUri(value: String): Self = StObject.set(x, "assetUri", value.asInstanceOf[js.Any])
     

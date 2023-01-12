@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialSessionexpirenumbe]
     }
     
-    extension [Self <: PartialSessionexpirenumbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSessionexpirenumbe] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => js.Object): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       

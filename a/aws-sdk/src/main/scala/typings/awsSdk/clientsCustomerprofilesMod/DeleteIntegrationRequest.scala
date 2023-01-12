@@ -23,7 +23,8 @@ object DeleteIntegrationRequest {
     __obj.asInstanceOf[DeleteIntegrationRequest]
   }
   
-  extension [Self <: DeleteIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

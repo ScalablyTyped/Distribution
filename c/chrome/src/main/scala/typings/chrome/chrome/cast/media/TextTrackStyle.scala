@@ -50,7 +50,8 @@ object TextTrackStyle {
     __obj.asInstanceOf[TextTrackStyle]
   }
   
-  extension [Self <: TextTrackStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackStyle] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

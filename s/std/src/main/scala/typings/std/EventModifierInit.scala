@@ -57,7 +57,8 @@ object EventModifierInit {
     __obj.asInstanceOf[EventModifierInit]
   }
   
-  extension [Self <: EventModifierInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventModifierInit] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: scala.Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

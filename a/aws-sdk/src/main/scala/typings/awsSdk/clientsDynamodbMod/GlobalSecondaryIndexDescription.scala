@@ -58,7 +58,8 @@ object GlobalSecondaryIndexDescription {
     __obj.asInstanceOf[GlobalSecondaryIndexDescription]
   }
   
-  extension [Self <: GlobalSecondaryIndexDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalSecondaryIndexDescription] (val x: Self) extends AnyVal {
     
     inline def setBackfilling(value: Backfilling): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
     

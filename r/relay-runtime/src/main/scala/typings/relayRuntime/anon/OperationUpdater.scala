@@ -20,7 +20,8 @@ object OperationUpdater {
     __obj.asInstanceOf[OperationUpdater]
   }
   
-  extension [Self <: OperationUpdater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationUpdater] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

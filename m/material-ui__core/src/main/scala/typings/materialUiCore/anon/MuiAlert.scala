@@ -25,7 +25,8 @@ object MuiAlert {
     __obj.asInstanceOf[MuiAlert]
   }
   
-  extension [Self <: MuiAlert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuiAlert] (val x: Self) extends AnyVal {
     
     inline def setMuiAlert(value: CloseText): Self = StObject.set(x, "MuiAlert", value.asInstanceOf[js.Any])
     

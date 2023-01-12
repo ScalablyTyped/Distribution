@@ -23,7 +23,8 @@ object ASPxClientTreeViewNodeCancelEventArgs {
     __obj.asInstanceOf[ASPxClientTreeViewNodeCancelEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeViewNodeCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeViewNodeCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNode(value: ASPxClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object ComputedContext_ {
     __obj.asInstanceOf[ComputedContext_]
   }
   
-  extension [Self <: ComputedContext_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedContext_] (val x: Self) extends AnyVal {
     
     inline def setGetDependencies(value: () => js.Array[Subscribable_[Any]]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
     

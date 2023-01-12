@@ -78,7 +78,8 @@ object MatchingBucket {
     __obj.asInstanceOf[MatchingBucket]
   }
   
-  extension [Self <: MatchingBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingBucket] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: string): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

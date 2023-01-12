@@ -16,7 +16,8 @@ object IPolicyList {
     __obj.asInstanceOf[IPolicyList]
   }
   
-  extension [Self <: IPolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPolicyList] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: js.Array[IPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     

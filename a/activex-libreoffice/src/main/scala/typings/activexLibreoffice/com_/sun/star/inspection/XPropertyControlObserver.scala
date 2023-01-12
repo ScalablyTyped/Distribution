@@ -30,7 +30,8 @@ object XPropertyControlObserver {
     __obj.asInstanceOf[XPropertyControlObserver]
   }
   
-  extension [Self <: XPropertyControlObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyControlObserver] (val x: Self) extends AnyVal {
     
     inline def setFocusGained(value: XPropertyControl => Unit): Self = StObject.set(x, "focusGained", js.Any.fromFunction1(value))
     

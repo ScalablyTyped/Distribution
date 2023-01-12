@@ -31,7 +31,8 @@ object DeveloperMetadata {
     __obj.asInstanceOf[DeveloperMetadata]
   }
   
-  extension [Self <: DeveloperMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object draggableMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: OnDraggableEnd => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         

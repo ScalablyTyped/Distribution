@@ -187,7 +187,8 @@ object mod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object mod {
       __obj.asInstanceOf[PortInfo]
     }
     
-    extension [Self <: PortInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortInfo] (val x: Self) extends AnyVal {
       
       inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
       
@@ -408,7 +410,8 @@ object mod {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setBrk(value: Boolean): Self = StObject.set(x, "brk", value.asInstanceOf[js.Any])
       
@@ -445,7 +448,8 @@ object mod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setBaudRate(
         value: `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double

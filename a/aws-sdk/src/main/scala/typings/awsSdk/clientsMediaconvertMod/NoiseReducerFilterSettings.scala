@@ -18,7 +18,8 @@ object NoiseReducerFilterSettings {
     __obj.asInstanceOf[NoiseReducerFilterSettings]
   }
   
-  extension [Self <: NoiseReducerFilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseReducerFilterSettings] (val x: Self) extends AnyVal {
     
     inline def setStrength(value: integerMin0Max3): Self = StObject.set(x, "Strength", value.asInstanceOf[js.Any])
     

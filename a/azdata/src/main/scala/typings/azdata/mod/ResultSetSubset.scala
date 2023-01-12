@@ -17,7 +17,8 @@ object ResultSetSubset {
     __obj.asInstanceOf[ResultSetSubset]
   }
   
-  extension [Self <: ResultSetSubset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultSetSubset] (val x: Self) extends AnyVal {
     
     inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     

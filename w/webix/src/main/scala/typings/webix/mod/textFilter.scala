@@ -38,7 +38,8 @@ object textFilter {
     __obj.asInstanceOf[textFilter]
   }
   
-  extension [Self <: textFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: textFilter] (val x: Self) extends AnyVal {
     
     inline def setBeginsWith(value: (Any, Any) => Boolean): Self = StObject.set(x, "beginsWith", js.Any.fromFunction2(value))
     

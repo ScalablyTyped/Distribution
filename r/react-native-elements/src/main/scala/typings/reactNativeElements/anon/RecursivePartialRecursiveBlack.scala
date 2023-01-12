@@ -87,7 +87,8 @@ object RecursivePartialRecursiveBlack {
     __obj.asInstanceOf[RecursivePartialRecursiveBlack]
   }
   
-  extension [Self <: RecursivePartialRecursiveBlack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialRecursiveBlack] (val x: Self) extends AnyVal {
     
     inline def setBlack(
       value: typings.reactNativeElements.distConfigThemeProviderMod.RecursivePartial[js.UndefOr[RecursivePartial[String]]]

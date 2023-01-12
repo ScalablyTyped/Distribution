@@ -39,7 +39,8 @@ object libConfigureMod {
       __obj.asInstanceOf[RecurlyOptions]
     }
     
-    extension [Self <: RecurlyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecurlyOptions] (val x: Self) extends AnyVal {
       
       inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
       

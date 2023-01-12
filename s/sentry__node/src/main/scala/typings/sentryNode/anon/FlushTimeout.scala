@@ -15,7 +15,8 @@ object FlushTimeout {
     __obj.asInstanceOf[FlushTimeout]
   }
   
-  extension [Self <: FlushTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlushTimeout] (val x: Self) extends AnyVal {
     
     inline def setFlushTimeout(value: Double): Self = StObject.set(x, "flushTimeout", value.asInstanceOf[js.Any])
     

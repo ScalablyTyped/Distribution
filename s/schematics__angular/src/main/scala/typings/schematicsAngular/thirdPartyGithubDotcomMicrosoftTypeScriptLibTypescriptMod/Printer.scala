@@ -48,7 +48,8 @@ object Printer {
     __obj.asInstanceOf[Printer]
   }
   
-  extension [Self <: Printer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
     
     inline def setPrintBundle(value: Bundle => java.lang.String): Self = StObject.set(x, "printBundle", js.Any.fromFunction1(value))
     

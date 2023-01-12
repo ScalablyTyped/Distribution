@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Did]
     }
     
-    extension [Self <: Did](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Did] (val x: Self) extends AnyVal {
       
       inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

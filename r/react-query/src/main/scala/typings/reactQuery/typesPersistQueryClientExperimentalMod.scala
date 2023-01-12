@@ -48,7 +48,8 @@ object typesPersistQueryClientExperimentalMod {
       __obj.asInstanceOf[PersistQueryClientOptions]
     }
     
-    extension [Self <: PersistQueryClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistQueryClientOptions] (val x: Self) extends AnyVal {
       
       inline def setBuster(value: String): Self = StObject.set(x, "buster", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object typesPersistQueryClientExperimentalMod {
       __obj.asInstanceOf[PersistedClient]
     }
     
-    extension [Self <: PersistedClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistedClient] (val x: Self) extends AnyVal {
       
       inline def setBuster(value: String): Self = StObject.set(x, "buster", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object typesPersistQueryClientExperimentalMod {
       __obj.asInstanceOf[Persistor]
     }
     
-    extension [Self <: Persistor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistor] (val x: Self) extends AnyVal {
       
       inline def setPersistClient(value: PersistedClient => Promisable[Unit]): Self = StObject.set(x, "persistClient", js.Any.fromFunction1(value))
       

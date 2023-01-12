@@ -149,7 +149,8 @@ object libMainareawidgetMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: Widget */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -207,7 +208,8 @@ object libMainareawidgetMod {
         __obj.asInstanceOf[IOptionsOptionalContent[T]]
       }
       
-      extension [Self <: IOptionsOptionalContent[?], T /* <: Widget */](x: Self & IOptionsOptionalContent[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptionsOptionalContent[?], T /* <: Widget */] (val x: Self & IOptionsOptionalContent[T]) extends AnyVal {
         
         inline def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         

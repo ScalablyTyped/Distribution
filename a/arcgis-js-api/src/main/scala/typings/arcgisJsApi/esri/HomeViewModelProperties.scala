@@ -33,7 +33,8 @@ object HomeViewModelProperties {
     __obj.asInstanceOf[HomeViewModelProperties]
   }
   
-  extension [Self <: HomeViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HomeViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

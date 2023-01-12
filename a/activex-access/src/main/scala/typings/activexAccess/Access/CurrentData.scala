@@ -58,7 +58,8 @@ object CurrentData {
     __obj.asInstanceOf[CurrentData]
   }
   
-  extension [Self <: CurrentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentData] (val x: Self) extends AnyVal {
     
     inline def setAccessDotCurrentData_typekey(value: CurrentData): Self = StObject.set(x, "Access.CurrentData_typekey", value.asInstanceOf[js.Any])
     

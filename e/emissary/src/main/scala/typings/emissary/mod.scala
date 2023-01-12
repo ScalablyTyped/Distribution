@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[IEmitter]
     }
     
-    extension [Self <: IEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEmitter] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: (String, Any) => Unit): Self = StObject.set(x, "behavior", js.Any.fromFunction2(value))
       
@@ -221,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ISubscription]
     }
     
-    extension [Self <: ISubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       

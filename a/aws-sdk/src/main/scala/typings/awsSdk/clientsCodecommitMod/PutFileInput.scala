@@ -58,7 +58,8 @@ object PutFileInput {
     __obj.asInstanceOf[PutFileInput]
   }
   
-  extension [Self <: PutFileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutFileInput] (val x: Self) extends AnyVal {
     
     inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     

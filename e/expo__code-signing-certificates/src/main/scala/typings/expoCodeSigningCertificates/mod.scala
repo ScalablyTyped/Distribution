@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[GenerateParameters]
     }
     
-    extension [Self <: GenerateParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateParameters] (val x: Self) extends AnyVal {
       
       inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       

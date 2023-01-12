@@ -19,7 +19,8 @@ object PublicKeyCredential {
     __obj.asInstanceOf[PublicKeyCredential]
   }
   
-  extension [Self <: PublicKeyCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyCredential] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

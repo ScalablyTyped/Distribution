@@ -37,7 +37,8 @@ object UserIndexMark {
     __obj.asInstanceOf[UserIndexMark]
   }
   
-  extension [Self <: UserIndexMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIndexMark] (val x: Self) extends AnyVal {
     
     inline def setUserIndexName(value: String): Self = StObject.set(x, "UserIndexName", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,8 @@ object BootstrapClientTabControl {
     __obj.asInstanceOf[BootstrapClientTabControl]
   }
   
-  extension [Self <: BootstrapClientTabControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientTabControl] (val x: Self) extends AnyVal {
     
     inline def setSetActiveTab(value: BootstrapClientTab => Unit): Self = StObject.set(x, "SetActiveTab", js.Any.fromFunction1(value))
   }

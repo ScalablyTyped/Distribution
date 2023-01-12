@@ -23,7 +23,8 @@ object PendingAggregationRequest {
     __obj.asInstanceOf[PendingAggregationRequest]
   }
   
-  extension [Self <: PendingAggregationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingAggregationRequest] (val x: Self) extends AnyVal {
     
     inline def setRequesterAccountId(value: AccountId): Self = StObject.set(x, "RequesterAccountId", value.asInstanceOf[js.Any])
     

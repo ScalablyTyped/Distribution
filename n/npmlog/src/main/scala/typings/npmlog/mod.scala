@@ -140,7 +140,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MessageObject]
     }
     
-    extension [Self <: MessageObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StyleObject]
     }
     
-    extension [Self <: StyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleObject] (val x: Self) extends AnyVal {
       
       inline def setBell(value: Boolean): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object RawEvents {
     __obj.asInstanceOf[RawEvents]
   }
   
-  extension [Self <: RawEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawEvents] (val x: Self) extends AnyVal {
     
     inline def setRawEvents(value: js.Array[EventInput]): Self = StObject.set(x, "rawEvents", value.asInstanceOf[js.Any])
     

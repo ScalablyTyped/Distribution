@@ -18,7 +18,8 @@ object DeviceManagementReports {
     __obj.asInstanceOf[DeviceManagementReports]
   }
   
-  extension [Self <: DeviceManagementReports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagementReports] (val x: Self) extends AnyVal {
     
     inline def setExportJobs(value: NullableOption[js.Array[DeviceManagementExportJob]]): Self = StObject.set(x, "exportJobs", value.asInstanceOf[js.Any])
     

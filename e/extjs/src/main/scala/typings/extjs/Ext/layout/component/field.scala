@@ -69,7 +69,8 @@ object field {
       __obj.asInstanceOf[IField]
     }
     
-    extension [Self <: IField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IField] (val x: Self) extends AnyVal {
       
       inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
       
@@ -155,7 +156,8 @@ object field {
       __obj.asInstanceOf[IHtmlEditor]
     }
     
-    extension [Self <: IHtmlEditor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHtmlEditor] (val x: Self) extends AnyVal {
       
       inline def setFinishedLayout(value: () => Unit): Self = StObject.set(x, "finishedLayout", js.Any.fromFunction0(value))
       

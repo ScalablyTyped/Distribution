@@ -28,7 +28,8 @@ object AnimationPropertiesOverride {
     __obj.asInstanceOf[AnimationPropertiesOverride]
   }
   
-  extension [Self <: AnimationPropertiesOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationPropertiesOverride] (val x: Self) extends AnyVal {
     
     inline def setBlendingSpeed(value: Double): Self = StObject.set(x, "blendingSpeed", value.asInstanceOf[js.Any])
     

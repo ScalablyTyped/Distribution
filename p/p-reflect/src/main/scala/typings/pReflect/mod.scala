@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[PromiseFulfilledResult[ValueType]]
     }
     
-    extension [Self <: PromiseFulfilledResult[?], ValueType](x: Self & PromiseFulfilledResult[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseFulfilledResult[?], ValueType] (val x: Self & PromiseFulfilledResult[ValueType]) extends AnyVal {
       
       inline def setIsFulfilled(value: `true`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[PromiseRejectedResult]
     }
     
-    extension [Self <: PromiseRejectedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseRejectedResult] (val x: Self) extends AnyVal {
       
       inline def setIsFulfilled(value: `false`): Self = StObject.set(x, "isFulfilled", value.asInstanceOf[js.Any])
       

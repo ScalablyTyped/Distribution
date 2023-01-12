@@ -35,7 +35,8 @@ object srcHeadingbuttonsuiMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setHeadingButtonsUI(value: HeadingButtonsUI): Self = StObject.set(x, "HeadingButtonsUI", value.asInstanceOf[js.Any])
       }

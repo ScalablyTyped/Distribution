@@ -57,7 +57,8 @@ object IAxisScaleGizmo {
     __obj.asInstanceOf[IAxisScaleGizmo]
   }
   
-  extension [Self <: IAxisScaleGizmo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAxisScaleGizmo] (val x: Self) extends AnyVal {
     
     inline def setDragBehavior(value: PointerDragBehavior): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
     

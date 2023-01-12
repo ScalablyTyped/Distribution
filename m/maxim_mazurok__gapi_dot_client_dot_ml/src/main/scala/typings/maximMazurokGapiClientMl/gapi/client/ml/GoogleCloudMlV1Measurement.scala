@@ -22,7 +22,8 @@ object GoogleCloudMlV1Measurement {
     __obj.asInstanceOf[GoogleCloudMlV1Measurement]
   }
   
-  extension [Self <: GoogleCloudMlV1Measurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1Measurement] (val x: Self) extends AnyVal {
     
     inline def setElapsedTime(value: String): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     

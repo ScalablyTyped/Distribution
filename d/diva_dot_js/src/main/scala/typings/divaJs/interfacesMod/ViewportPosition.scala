@@ -21,7 +21,8 @@ object ViewportPosition {
     __obj.asInstanceOf[ViewportPosition]
   }
   
-  extension [Self <: ViewportPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportPosition] (val x: Self) extends AnyVal {
     
     inline def setAnchorPage(value: Boolean): Self = StObject.set(x, "anchorPage", value.asInstanceOf[js.Any])
     

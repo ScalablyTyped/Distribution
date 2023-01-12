@@ -45,7 +45,8 @@ object PerceptionVideoProfile {
     __obj.asInstanceOf[PerceptionVideoProfile]
   }
   
-  extension [Self <: PerceptionVideoProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionVideoProfile] (val x: Self) extends AnyVal {
     
     inline def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     

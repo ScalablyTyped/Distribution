@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AttributeName]
     }
     
-    extension [Self <: AttributeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeName] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[AttributeValue]
     }
     
-    extension [Self <: AttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
       
       inline def setAttributeValue(value: String): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
     }
@@ -54,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -77,7 +80,8 @@ object anon {
       __obj.asInstanceOf[CustomMetricName]
     }
     
-    extension [Self <: CustomMetricName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMetricName] (val x: Self) extends AnyVal {
       
       inline def setCustomMetricName(value: String): Self = StObject.set(x, "customMetricName", value.asInstanceOf[js.Any])
     }
@@ -94,7 +98,8 @@ object anon {
       __obj.asInstanceOf[OnFirstInputDelay]
     }
     
-    extension [Self <: OnFirstInputDelay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFirstInputDelay] (val x: Self) extends AnyVal {
       
       inline def setOnFirstInputDelay(value: js.Function1[/* fid */ Double, Unit] => Unit): Self = StObject.set(x, "onFirstInputDelay", js.Any.fromFunction1(value))
     }
@@ -111,7 +116,8 @@ object anon {
       __obj.asInstanceOf[TraceName]
     }
     
-    extension [Self <: TraceName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceName] (val x: Self) extends AnyVal {
       
       inline def setTraceName(value: String): Self = StObject.set(x, "traceName", value.asInstanceOf[js.Any])
     }
@@ -129,7 +135,8 @@ object anon {
       __obj.asInstanceOf[TypeofPerformanceObserver]
     }
     
-    extension [Self <: TypeofPerformanceObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPerformanceObserver] (val x: Self) extends AnyVal {
       
       inline def setSupportedEntryTypes(value: js.Array[String]): Self = StObject.set(x, "supportedEntryTypes", value.asInstanceOf[js.Any])
       

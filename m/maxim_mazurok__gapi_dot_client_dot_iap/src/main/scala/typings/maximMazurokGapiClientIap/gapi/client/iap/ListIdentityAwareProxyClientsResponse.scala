@@ -19,7 +19,8 @@ object ListIdentityAwareProxyClientsResponse {
     __obj.asInstanceOf[ListIdentityAwareProxyClientsResponse]
   }
   
-  extension [Self <: ListIdentityAwareProxyClientsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityAwareProxyClientsResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityAwareProxyClients(value: js.Array[IdentityAwareProxyClient]): Self = StObject.set(x, "identityAwareProxyClients", value.asInstanceOf[js.Any])
     

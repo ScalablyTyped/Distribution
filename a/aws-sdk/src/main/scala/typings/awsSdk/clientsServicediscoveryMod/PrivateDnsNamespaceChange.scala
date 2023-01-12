@@ -23,7 +23,8 @@ object PrivateDnsNamespaceChange {
     __obj.asInstanceOf[PrivateDnsNamespaceChange]
   }
   
-  extension [Self <: PrivateDnsNamespaceChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateDnsNamespaceChange] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ResourceDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

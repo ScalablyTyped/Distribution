@@ -896,7 +896,8 @@ object ojtreemapMod {
         __obj.asInstanceOf[DataContext]
       }
       
-      extension [Self <: DataContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataContext] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -930,7 +931,8 @@ object ojtreemapMod {
         __obj.asInstanceOf[NodeContentContext[K, D]]
       }
       
-      extension [Self <: NodeContentContext[?, ?], K, D](x: Self & (NodeContentContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContentContext[?, ?], K, D] (val x: Self & (NodeContentContext[K, D])) extends AnyVal {
         
         inline def setBounds(value: WidthX): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
@@ -958,7 +960,8 @@ object ojtreemapMod {
         __obj.asInstanceOf[NodeContext]
       }
       
-      extension [Self <: NodeContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
         
         inline def setIndexPath(value: js.Array[Double]): Self = StObject.set(x, "indexPath", value.asInstanceOf[js.Any])
         
@@ -1003,7 +1006,8 @@ object ojtreemapMod {
         __obj.asInstanceOf[TooltipContext[K, D]]
       }
       
-      extension [Self <: TooltipContext[?, ?], K, D](x: Self & (TooltipContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TooltipContext[?, ?], K, D] (val x: Self & (TooltipContext[K, D])) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1238,7 +1242,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapEventMap[K, D]]
     }
     
-    extension [Self <: ojTreemapEventMap[?, ?], K, D](x: Self & (ojTreemapEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapEventMap[?, ?], K, D] (val x: Self & (ojTreemapEventMap[K, D])) extends AnyVal {
       
       inline def setAnimationDurationChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
       
@@ -2769,7 +2774,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapNodeEventMap]
     }
     
-    extension [Self <: ojTreemapNodeEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapNodeEventMap] (val x: Self) extends AnyVal {
       
       inline def setCategoriesChanged(value: JetElementCustomEvent[js.UndefOr[js.Array[String]]]): Self = StObject.set(x, "categoriesChanged", value.asInstanceOf[js.Any])
       
@@ -2856,7 +2862,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapNodeSettableProperties]
     }
     
-    extension [Self <: ojTreemapNodeSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapNodeSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -2972,7 +2979,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapNodeSettablePropertiesLenient]
     }
     
-    extension [Self <: ojTreemapNodeSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapNodeSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -3141,7 +3149,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapSettableProperties[K, D]]
     }
     
-    extension [Self <: ojTreemapSettableProperties[?, ?], K, D](x: Self & (ojTreemapSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapSettableProperties[?, ?], K, D] (val x: Self & (ojTreemapSettableProperties[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -3279,7 +3288,8 @@ object ojtreemapMod {
       __obj.asInstanceOf[ojTreemapSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojTreemapSettablePropertiesLenient[?, ?], K, D](x: Self & (ojTreemapSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojTreemapSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojTreemapSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

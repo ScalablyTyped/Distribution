@@ -74,7 +74,8 @@ object IntervalendTime {
     __obj.asInstanceOf[IntervalendTime]
   }
   
-  extension [Self <: IntervalendTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntervalendTime] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

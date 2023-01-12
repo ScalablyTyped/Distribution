@@ -154,7 +154,8 @@ object libVegaMod {
       __obj.asInstanceOf[VegaProps]
     }
     
-    extension [Self <: VegaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VegaProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Boolean | Actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

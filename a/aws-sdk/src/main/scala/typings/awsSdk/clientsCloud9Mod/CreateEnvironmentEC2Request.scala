@@ -68,7 +68,8 @@ object CreateEnvironmentEC2Request {
     __obj.asInstanceOf[CreateEnvironmentEC2Request]
   }
   
-  extension [Self <: CreateEnvironmentEC2Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentEC2Request] (val x: Self) extends AnyVal {
     
     inline def setAutomaticStopTimeMinutes(value: AutomaticStopTimeMinutes): Self = StObject.set(x, "automaticStopTimeMinutes", value.asInstanceOf[js.Any])
     

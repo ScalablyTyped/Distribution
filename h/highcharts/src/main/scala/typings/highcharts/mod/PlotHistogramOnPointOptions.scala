@@ -33,7 +33,8 @@ object PlotHistogramOnPointOptions {
     __obj.asInstanceOf[PlotHistogramOnPointOptions]
   }
   
-  extension [Self <: PlotHistogramOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHistogramOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotHistogramOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

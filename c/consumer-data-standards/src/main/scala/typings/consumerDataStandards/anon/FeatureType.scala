@@ -72,7 +72,8 @@ object FeatureType {
     __obj.asInstanceOf[FeatureType]
   }
   
-  extension [Self <: FeatureType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureType] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

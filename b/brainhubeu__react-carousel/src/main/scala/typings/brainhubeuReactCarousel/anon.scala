@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AfterCarouselItems]
     }
     
-    extension [Self <: AfterCarouselItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterCarouselItems] (val x: Self) extends AnyVal {
       
       inline def setAfterCarouselItems(value: () => Element): Self = StObject.set(x, "afterCarouselItems", js.Any.fromFunction0(value))
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setCarouselProps(value: typings.brainhubeuReactCarousel.mod.CarouselProps): Self = StObject.set(x, "carouselProps", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[PickCarouselPropsExcludek]
     }
     
-    extension [Self <: PickCarouselPropsExcludek](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickCarouselPropsExcludek] (val x: Self) extends AnyVal {
       
       inline def setAnimationSpeed(value: Double): Self = StObject.set(x, "animationSpeed", value.asInstanceOf[js.Any])
       

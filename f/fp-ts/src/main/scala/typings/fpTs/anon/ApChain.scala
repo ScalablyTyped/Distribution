@@ -30,7 +30,8 @@ object ApChain {
     __obj.asInstanceOf[ApChain[W, M]]
   }
   
-  extension [Self <: ApChain[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & (ApChain[W, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApChain[?, ?], W, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & (ApChain[W, M])) extends AnyVal {
     
     inline def setAp(
       value: (WriterT2[M, Any, W, js.Function1[Any, Any]], WriterT2[M, Any, W, Any]) => WriterT2[M, Any, W, Any]

@@ -59,7 +59,8 @@ object libMutexMod {
       __obj.asInstanceOf[Mutex]
     }
     
-    extension [Self <: Mutex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mutex] (val x: Self) extends AnyVal {
       
       inline def set_semaphore(value: Any): Self = StObject.set(x, "_semaphore", value.asInstanceOf[js.Any])
     }

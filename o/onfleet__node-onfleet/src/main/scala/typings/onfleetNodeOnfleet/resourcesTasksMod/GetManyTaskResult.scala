@@ -17,7 +17,8 @@ object GetManyTaskResult {
     __obj.asInstanceOf[GetManyTaskResult]
   }
   
-  extension [Self <: GetManyTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManyTaskResult] (val x: Self) extends AnyVal {
     
     inline def setLastId(value: String): Self = StObject.set(x, "lastId", value.asInstanceOf[js.Any])
     

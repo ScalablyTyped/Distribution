@@ -48,7 +48,8 @@ object SeriesMouseLeftButtonUpEventUIParam {
     __obj.asInstanceOf[SeriesMouseLeftButtonUpEventUIParam]
   }
   
-  extension [Self <: SeriesMouseLeftButtonUpEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMouseLeftButtonUpEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActualItemBrush(value: Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
     

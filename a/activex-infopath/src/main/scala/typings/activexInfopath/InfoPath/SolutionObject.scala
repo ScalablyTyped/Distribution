@@ -32,7 +32,8 @@ object SolutionObject {
     __obj.asInstanceOf[SolutionObject]
   }
   
-  extension [Self <: SolutionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionObject] (val x: Self) extends AnyVal {
     
     inline def setDOM(value: IXMLDOMDocument): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
     

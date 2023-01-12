@@ -29,7 +29,8 @@ object SecurityUserProfile {
     __obj.asInstanceOf[SecurityUserProfile]
   }
   
-  extension [Self <: SecurityUserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUserProfile] (val x: Self) extends AnyVal {
     
     inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

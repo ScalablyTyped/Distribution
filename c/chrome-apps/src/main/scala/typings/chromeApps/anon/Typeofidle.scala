@@ -46,7 +46,8 @@ object Typeofidle {
     __obj.asInstanceOf[Typeofidle]
   }
   
-  extension [Self <: Typeofidle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofidle] (val x: Self) extends AnyVal {
     
     inline def setOnStateChanged(value: Event[js.Function1[/* newState */ IdleState, Unit]]): Self = StObject.set(x, "onStateChanged", value.asInstanceOf[js.Any])
     

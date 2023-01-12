@@ -34,7 +34,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool] (val x: Self) extends AnyVal {
     
     inline def setAutoscale(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAutoscale): Self = StObject.set(x, "autoscale", value.asInstanceOf[js.Any])
     

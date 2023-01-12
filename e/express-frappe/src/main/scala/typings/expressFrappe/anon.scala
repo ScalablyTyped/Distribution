@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Json]
     }
     
-    extension [Self <: Json](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Boolean | OptionsJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ServeStaticOptions[ServerResponse[IncomingMessage]]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Partialuseioanysocketanyn]
     }
     
-    extension [Self <: Partialuseioanysocketanyn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialuseioanysocketanyn] (val x: Self) extends AnyVal {
       
       inline def setOnConnect(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Server */ /* io */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SocketIO.Socket */ /* socket */ Any) => Unit

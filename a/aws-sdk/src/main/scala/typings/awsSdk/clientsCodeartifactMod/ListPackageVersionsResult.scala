@@ -44,7 +44,8 @@ object ListPackageVersionsResult {
     __obj.asInstanceOf[ListPackageVersionsResult]
   }
   
-  extension [Self <: ListPackageVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPackageVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setDefaultDisplayVersion(value: PackageVersion): Self = StObject.set(x, "defaultDisplayVersion", value.asInstanceOf[js.Any])
     

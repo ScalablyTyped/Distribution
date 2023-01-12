@@ -16,7 +16,8 @@ object EnterpriseororgString {
     __obj.asInstanceOf[EnterpriseororgString]
   }
   
-  extension [Self <: EnterpriseororgString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseororgString] (val x: Self) extends AnyVal {
     
     inline def setEnterprise_or_org(value: String): Self = StObject.set(x, "enterprise_or_org", value.asInstanceOf[js.Any])
   }

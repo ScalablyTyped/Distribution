@@ -111,7 +111,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[CommonNumberFormatterOptions]
     }
     
-    extension [Self <: CommonNumberFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonNumberFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: short | long): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[CurrencyFormatterOptions]
     }
     
-    extension [Self <: CurrencyFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencyFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: symbol | accounting | code | name): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[DateFormatPart]
     }
     
-    extension [Self <: DateFormatPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormatPart] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: typings.globalize.distGlobalizeDateMod.globalizeDistGlobalizeAugmentingMod.DateFormatPartTypes
@@ -280,7 +283,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[DateFormatterOptions]
     }
     
-    extension [Self <: DateFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setDate(value: full | long | medium | short): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -327,7 +331,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[NumberFormatPart]
     }
     
-    extension [Self <: NumberFormatPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFormatPart] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: typings.globalize.distGlobalizeNumberMod.globalizeDistGlobalizeAugmentingMod.NumberFormatPartTypes
@@ -402,7 +407,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[NumberParserOptions]
     }
     
-    extension [Self <: NumberParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberParserOptions] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -424,7 +430,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[PluralGeneratorOptions]
     }
     
-    extension [Self <: PluralGeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluralGeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: cardinal | ordinal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -446,7 +453,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[RelativeTimeFormatterOptions]
     }
     
-    extension [Self <: RelativeTimeFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelativeTimeFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setForm(value: short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -843,7 +851,8 @@ object distGlobalizeMod extends Shortcut {
       __obj.asInstanceOf[UnitFormatterOptions]
     }
     
-    extension [Self <: UnitFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setForm(value: long | short | narrow): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       

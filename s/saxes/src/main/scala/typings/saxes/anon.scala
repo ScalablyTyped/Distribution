@@ -98,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Attribute[O]]
     }
     
-    extension [Self <: Attribute[?], O](x: Self & Attribute[O]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute[?], O] (val x: Self & Attribute[O]) extends AnyVal {
       
       inline def setAttribute(value: /* attribute */ AttributeEventForOptions[O] => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction1(value))
       
@@ -141,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

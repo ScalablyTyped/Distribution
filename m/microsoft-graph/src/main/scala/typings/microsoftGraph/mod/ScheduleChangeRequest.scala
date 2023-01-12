@@ -31,7 +31,8 @@ object ScheduleChangeRequest {
     __obj.asInstanceOf[ScheduleChangeRequest]
   }
   
-  extension [Self <: ScheduleChangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleChangeRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: NullableOption[ScheduleChangeRequestActor]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

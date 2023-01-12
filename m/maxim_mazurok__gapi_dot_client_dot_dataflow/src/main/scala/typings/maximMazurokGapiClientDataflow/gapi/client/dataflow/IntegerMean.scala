@@ -19,7 +19,8 @@ object IntegerMean {
     __obj.asInstanceOf[IntegerMean]
   }
   
-  extension [Self <: IntegerMean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerMean] (val x: Self) extends AnyVal {
     
     inline def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

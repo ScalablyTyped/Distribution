@@ -81,7 +81,8 @@ object requestMod {
       __obj.asInstanceOf[CommitResponse]
     }
     
-    extension [Self <: CommitResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitResponse] (val x: Self) extends AnyVal {
       
       inline def setIndexUpdates(value: Double): Self = StObject.set(x, "indexUpdates", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object requestMod {
       __obj.asInstanceOf[MutationResult]
     }
     
-    extension [Self <: MutationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationResult] (val x: Self) extends AnyVal {
       
       inline def setConflictDetected(value: Boolean): Self = StObject.set(x, "conflictDetected", value.asInstanceOf[js.Any])
       

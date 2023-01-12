@@ -15,7 +15,8 @@ object NodesHotThreadsResponse {
     __obj.asInstanceOf[NodesHotThreadsResponse]
   }
   
-  extension [Self <: NodesHotThreadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesHotThreadsResponse] (val x: Self) extends AnyVal {
     
     inline def setHot_threads(value: js.Array[NodesHotThreadsHotThread]): Self = StObject.set(x, "hot_threads", value.asInstanceOf[js.Any])
     

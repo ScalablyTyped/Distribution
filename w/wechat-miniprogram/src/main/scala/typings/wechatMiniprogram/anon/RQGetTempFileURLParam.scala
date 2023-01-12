@@ -19,7 +19,8 @@ object RQGetTempFileURLParam {
     __obj.asInstanceOf[RQGetTempFileURLParam]
   }
   
-  extension [Self <: RQGetTempFileURLParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQGetTempFileURLParam] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object DeleteCustomMetadataRequest {
     __obj.asInstanceOf[DeleteCustomMetadataRequest]
   }
   
-  extension [Self <: DeleteCustomMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

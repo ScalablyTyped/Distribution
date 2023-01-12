@@ -23,7 +23,8 @@ object Printing3DTexture2CoordMaterial {
     __obj.asInstanceOf[Printing3DTexture2CoordMaterial]
   }
   
-  extension [Self <: Printing3DTexture2CoordMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DTexture2CoordMaterial] (val x: Self) extends AnyVal {
     
     inline def setTexture(value: Printing3DModelTexture): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     

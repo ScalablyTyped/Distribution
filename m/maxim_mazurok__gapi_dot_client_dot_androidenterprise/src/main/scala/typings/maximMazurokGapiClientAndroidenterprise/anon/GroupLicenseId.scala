@@ -53,7 +53,8 @@ object GroupLicenseId {
     __obj.asInstanceOf[GroupLicenseId]
   }
   
-  extension [Self <: GroupLicenseId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLicenseId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

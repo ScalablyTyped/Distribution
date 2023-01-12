@@ -25,7 +25,8 @@ object Enc {
     __obj.asInstanceOf[Enc]
   }
   
-  extension [Self <: Enc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enc] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: EncryptionAlgValues): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

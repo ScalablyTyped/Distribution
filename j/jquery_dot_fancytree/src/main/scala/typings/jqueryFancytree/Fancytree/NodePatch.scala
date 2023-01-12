@@ -24,7 +24,8 @@ object NodePatch {
     __obj.asInstanceOf[NodePatch]
   }
   
-  extension [Self <: NodePatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePatch] (val x: Self) extends AnyVal {
     
     inline def setAppendChildren(value: NodeData): Self = StObject.set(x, "appendChildren", value.asInstanceOf[js.Any])
     

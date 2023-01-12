@@ -18,7 +18,8 @@ object DescribeHumanLoopRequest {
     __obj.asInstanceOf[DescribeHumanLoopRequest]
   }
   
-  extension [Self <: DescribeHumanLoopRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHumanLoopRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopName(value: HumanLoopName): Self = StObject.set(x, "HumanLoopName", value.asInstanceOf[js.Any])
   }

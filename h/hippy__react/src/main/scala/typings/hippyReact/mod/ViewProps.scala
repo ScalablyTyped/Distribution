@@ -74,7 +74,8 @@ object ViewProps {
     __obj.asInstanceOf[ViewProps]
   }
   
-  extension [Self <: ViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

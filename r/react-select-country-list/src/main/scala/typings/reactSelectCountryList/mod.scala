@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[CountryList]
     }
     
-    extension [Self <: CountryList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryList] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[CountryData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
         __obj.asInstanceOf[Countries]
       }
       
-      extension [Self <: Countries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Array[CountryData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -140,7 +142,8 @@ object mod {
         __obj.asInstanceOf[CountryData]
       }
       
-      extension [Self <: CountryData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CountryData] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -168,7 +171,8 @@ object mod {
         __obj.asInstanceOf[NativeCountries]
       }
       
-      extension [Self <: NativeCountries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NativeCountries] (val x: Self) extends AnyVal {
         
         inline def setNativeData(value: js.Array[CountryData]): Self = StObject.set(x, "nativeData", value.asInstanceOf[js.Any])
         

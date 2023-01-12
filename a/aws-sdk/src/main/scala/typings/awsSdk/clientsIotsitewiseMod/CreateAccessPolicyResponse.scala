@@ -23,7 +23,8 @@ object CreateAccessPolicyResponse {
     __obj.asInstanceOf[CreateAccessPolicyResponse]
   }
   
-  extension [Self <: CreateAccessPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicyArn(value: ARN): Self = StObject.set(x, "accessPolicyArn", value.asInstanceOf[js.Any])
     

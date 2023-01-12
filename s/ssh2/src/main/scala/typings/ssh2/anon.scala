@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Cipher]
     }
     
-    extension [Self <: Cipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: CipherAlgorithm): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

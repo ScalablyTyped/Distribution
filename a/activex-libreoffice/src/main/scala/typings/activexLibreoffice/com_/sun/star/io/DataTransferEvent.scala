@@ -24,7 +24,8 @@ object DataTransferEvent {
     __obj.asInstanceOf[DataTransferEvent]
   }
   
-  extension [Self <: DataTransferEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransferEvent] (val x: Self) extends AnyVal {
     
     inline def setAException(value: Any): Self = StObject.set(x, "aException", value.asInstanceOf[js.Any])
   }

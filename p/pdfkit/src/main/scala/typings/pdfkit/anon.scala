@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Actual]
     }
     
-    extension [Self <: Actual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Annots]
     }
     
-    extension [Self <: Annots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annots] (val x: Self) extends AnyVal {
       
       inline def setAnnots(value: Any): Self = StObject.set(x, "Annots", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Origin]
     }
     
-    extension [Self <: Origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: js.Array[Double]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -170,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Tagged]
     }
     
-    extension [Self <: Tagged](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tagged] (val x: Self) extends AnyVal {
       
       inline def setTagged(value: Boolean): Self = StObject.set(x, "tagged", value.asInstanceOf[js.Any])
       

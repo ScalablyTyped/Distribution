@@ -23,7 +23,8 @@ object ListDataCatalogsInput {
     __obj.asInstanceOf[ListDataCatalogsInput]
   }
   
-  extension [Self <: ListDataCatalogsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataCatalogsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxDataCatalogsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

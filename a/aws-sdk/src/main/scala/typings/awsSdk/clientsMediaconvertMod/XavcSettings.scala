@@ -93,7 +93,8 @@ object XavcSettings {
     __obj.asInstanceOf[XavcSettings]
   }
   
-  extension [Self <: XavcSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XavcSettings] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveQuantization(value: XavcAdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     

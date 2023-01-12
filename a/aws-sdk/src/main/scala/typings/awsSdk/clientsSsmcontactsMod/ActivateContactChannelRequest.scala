@@ -23,7 +23,8 @@ object ActivateContactChannelRequest {
     __obj.asInstanceOf[ActivateContactChannelRequest]
   }
   
-  extension [Self <: ActivateContactChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateContactChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setActivationCode(value: ActivationCode): Self = StObject.set(x, "ActivationCode", value.asInstanceOf[js.Any])
     

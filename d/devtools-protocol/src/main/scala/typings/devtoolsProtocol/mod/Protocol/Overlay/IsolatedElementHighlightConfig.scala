@@ -24,7 +24,8 @@ object IsolatedElementHighlightConfig {
     __obj.asInstanceOf[IsolatedElementHighlightConfig]
   }
   
-  extension [Self <: IsolatedElementHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsolatedElementHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setIsolationModeHighlightConfig(value: IsolationModeHighlightConfig): Self = StObject.set(x, "isolationModeHighlightConfig", value.asInstanceOf[js.Any])
     

@@ -188,7 +188,8 @@ object ZoneTestConfigurations {
     __obj.asInstanceOf[ZoneTestConfigurations]
   }
   
-  extension [Self <: ZoneTestConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneTestConfigurations] (val x: Self) extends AnyVal {
     
     inline def set__Zone_disable_jasmine(value: Boolean): Self = StObject.set(x, "__Zone_disable_jasmine", value.asInstanceOf[js.Any])
     

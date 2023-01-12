@@ -18,7 +18,8 @@ object ResourceIdKindPlaylistId {
     __obj.asInstanceOf[ResourceIdKindPlaylistId]
   }
   
-  extension [Self <: ResourceIdKindPlaylistId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceIdKindPlaylistId] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: KindPlaylistId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }

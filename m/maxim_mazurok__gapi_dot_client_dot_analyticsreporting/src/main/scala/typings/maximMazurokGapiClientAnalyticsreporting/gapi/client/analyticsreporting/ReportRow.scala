@@ -19,7 +19,8 @@ object ReportRow {
     __obj.asInstanceOf[ReportRow]
   }
   
-  extension [Self <: ReportRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Array[String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnTypeGetHistogramResponse {
     __obj.asInstanceOf[ReturnTypeGetHistogramResponse]
   }
   
-  extension [Self <: ReturnTypeGetHistogramResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetHistogramResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetHistogramRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

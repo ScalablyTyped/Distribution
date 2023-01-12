@@ -40,7 +40,8 @@ object BrowserBuilderOptions {
     __obj.asInstanceOf[BrowserBuilderOptions]
   }
   
-  extension [Self <: BrowserBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setAot(value: Boolean): Self = StObject.set(x, "aot", value.asInstanceOf[js.Any])
     

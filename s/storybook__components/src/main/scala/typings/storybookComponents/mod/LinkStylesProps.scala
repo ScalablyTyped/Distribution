@@ -23,7 +23,8 @@ object LinkStylesProps {
     __obj.asInstanceOf[LinkStylesProps]
   }
   
-  extension [Self <: LinkStylesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkStylesProps] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: Boolean): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

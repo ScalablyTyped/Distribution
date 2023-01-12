@@ -45,7 +45,8 @@ object settingMod {
       __obj.asInstanceOf[SettingOptions]
     }
     
-    extension [Self <: SettingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingOptions] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

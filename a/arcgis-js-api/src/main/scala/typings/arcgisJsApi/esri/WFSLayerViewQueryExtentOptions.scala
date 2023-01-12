@@ -21,7 +21,8 @@ object WFSLayerViewQueryExtentOptions {
     __obj.asInstanceOf[WFSLayerViewQueryExtentOptions]
   }
   
-  extension [Self <: WFSLayerViewQueryExtentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerViewQueryExtentOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

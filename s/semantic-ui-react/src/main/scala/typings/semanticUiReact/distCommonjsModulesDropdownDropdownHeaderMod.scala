@@ -65,7 +65,8 @@ object distCommonjsModulesDropdownDropdownHeaderMod extends Shortcut {
       __obj.asInstanceOf[StrictDropdownHeaderProps]
     }
     
-    extension [Self <: StrictDropdownHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictDropdownHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

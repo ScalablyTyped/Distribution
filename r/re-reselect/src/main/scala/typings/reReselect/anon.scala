@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Cache[S, R, C, D]]
     }
     
-    extension [Self <: Cache[?, ?, ?, ?], S, R, C, D](x: Self & (Cache[S, R, C, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache[?, ?, ?, ?], S, R, C, D] (val x: Self & (Cache[S, R, C, D])) extends AnyVal {
       
       inline def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[CacheSize]
     }
     
-    extension [Self <: CacheSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheSize] (val x: Self) extends AnyVal {
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     }
@@ -95,7 +97,8 @@ object anon {
       __obj.asInstanceOf[ClearCache[S, P, R, C, D]]
     }
     
-    extension [Self <: ClearCache[?, ?, ?, ?, ?], S, P, R, C, D](x: Self & (ClearCache[S, P, R, C, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearCache[?, ?, ?, ?, ?], S, P, R, C, D] (val x: Self & (ClearCache[S, P, R, C, D])) extends AnyVal {
       
       inline def setCache(value: ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[InputSelectors[D, C, S]]
     }
     
-    extension [Self <: InputSelectors[?, ?, ?], D, C, S](x: Self & (InputSelectors[D, C, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputSelectors[?, ?, ?], D, C, S] (val x: Self & (InputSelectors[D, C, S])) extends AnyVal {
       
       inline def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[KeySelector[D, C, S, P]]
     }
     
-    extension [Self <: KeySelector[?, ?, ?, ?], D, C, S, P](x: Self & (KeySelector[D, C, S, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeySelector[?, ?, ?, ?], D, C, S, P] (val x: Self & (KeySelector[D, C, S, P])) extends AnyVal {
       
       inline def setInputSelectors(value: D): Self = StObject.set(x, "inputSelectors", value.asInstanceOf[js.Any])
       

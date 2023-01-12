@@ -78,7 +78,8 @@ object srcStyleManagerMod {
       __obj.asInstanceOf[StyleManager]
     }
     
-    extension [Self <: StyleManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleManager] (val x: Self) extends AnyVal {
       
       inline def setGetStyleElements(value: () => js.Array[HTMLStyleElement]): Self = StObject.set(x, "getStyleElements", js.Any.fromFunction0(value))
       

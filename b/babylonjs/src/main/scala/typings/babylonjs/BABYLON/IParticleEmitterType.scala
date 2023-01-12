@@ -84,7 +84,8 @@ object IParticleEmitterType {
     __obj.asInstanceOf[IParticleEmitterType]
   }
   
-  extension [Self <: IParticleEmitterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParticleEmitterType] (val x: Self) extends AnyVal {
     
     inline def setApplyToShader(value: UniformBufferEffectCommonAccessor => Unit): Self = StObject.set(x, "applyToShader", js.Any.fromFunction1(value))
     

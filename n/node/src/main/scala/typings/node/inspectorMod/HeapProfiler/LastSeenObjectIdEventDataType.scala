@@ -17,7 +17,8 @@ object LastSeenObjectIdEventDataType {
     __obj.asInstanceOf[LastSeenObjectIdEventDataType]
   }
   
-  extension [Self <: LastSeenObjectIdEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastSeenObjectIdEventDataType] (val x: Self) extends AnyVal {
     
     inline def setLastSeenObjectId(value: Double): Self = StObject.set(x, "lastSeenObjectId", value.asInstanceOf[js.Any])
     

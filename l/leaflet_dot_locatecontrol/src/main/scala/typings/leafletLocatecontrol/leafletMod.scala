@@ -103,7 +103,8 @@ object leafletMod {
         __obj.asInstanceOf[LocateOptions]
       }
       
-      extension [Self <: LocateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocateOptions] (val x: Self) extends AnyVal {
         
         inline def setCacheLocation(value: Boolean): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
         

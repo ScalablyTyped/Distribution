@@ -36,7 +36,8 @@ object MaxDelayMs {
     __obj.asInstanceOf[MaxDelayMs]
   }
   
-  extension [Self <: MaxDelayMs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxDelayMs] (val x: Self) extends AnyVal {
     
     inline def setMaxDelayMs(value: Double): Self = StObject.set(x, "maxDelayMs", value.asInstanceOf[js.Any])
     

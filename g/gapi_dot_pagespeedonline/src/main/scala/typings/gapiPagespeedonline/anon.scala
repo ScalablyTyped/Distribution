@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Type]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object anon {
       __obj.asInstanceOf[AvoidBadRequests]
     }
     
-    extension [Self <: AvoidBadRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvoidBadRequests] (val x: Self) extends AnyVal {
       
       inline def setAvoidBadRequests(value: GoogleApiPageSpeedOnlineRuleResource): Self = StObject.set(x, "AvoidBadRequests", value.asInstanceOf[js.Any])
       
@@ -277,7 +279,8 @@ object anon {
       __obj.asInstanceOf[CssResponsebytes]
     }
     
-    extension [Self <: CssResponsebytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssResponsebytes] (val x: Self) extends AnyVal {
       
       inline def setCssResponsebytes(value: String): Self = StObject.set(x, "cssResponsebytes", value.asInstanceOf[js.Any])
       
@@ -326,7 +329,8 @@ object anon {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: js.Array[Args]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -375,7 +379,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -422,7 +427,8 @@ object anon {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Args): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -451,7 +457,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -478,7 +485,8 @@ object anon {
       __obj.asInstanceOf[Major]
     }
     
-    extension [Self <: Major](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -506,7 +514,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

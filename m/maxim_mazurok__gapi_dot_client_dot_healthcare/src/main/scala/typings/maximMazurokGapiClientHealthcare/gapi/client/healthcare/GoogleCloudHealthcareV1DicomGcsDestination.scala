@@ -31,7 +31,8 @@ object GoogleCloudHealthcareV1DicomGcsDestination {
     __obj.asInstanceOf[GoogleCloudHealthcareV1DicomGcsDestination]
   }
   
-  extension [Self <: GoogleCloudHealthcareV1DicomGcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudHealthcareV1DicomGcsDestination] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

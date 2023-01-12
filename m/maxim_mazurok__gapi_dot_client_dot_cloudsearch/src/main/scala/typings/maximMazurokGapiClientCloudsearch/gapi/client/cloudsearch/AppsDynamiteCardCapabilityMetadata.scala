@@ -16,7 +16,8 @@ object AppsDynamiteCardCapabilityMetadata {
     __obj.asInstanceOf[AppsDynamiteCardCapabilityMetadata]
   }
   
-  extension [Self <: AppsDynamiteCardCapabilityMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteCardCapabilityMetadata] (val x: Self) extends AnyVal {
     
     inline def setRequiredCapabilities(value: js.Array[String]): Self = StObject.set(x, "requiredCapabilities", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object USBEndpoint {
     __obj.asInstanceOf[USBEndpoint]
   }
   
-  extension [Self <: USBEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBEndpoint] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: USBDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

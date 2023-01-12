@@ -53,7 +53,8 @@ object Post {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setDate(value: MomentInput): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object Post {
       __obj.asInstanceOf[RenderData]
     }
     
-    extension [Self <: RenderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderData] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

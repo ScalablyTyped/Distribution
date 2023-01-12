@@ -22,7 +22,8 @@ object AssignMeta {
     __obj.asInstanceOf[AssignMeta[TContext, TEvent]]
   }
   
-  extension [Self <: AssignMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (AssignMeta[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AssignMeta[TContext, TEvent])) extends AnyVal {
     
     inline def setAction(value: AssignAction[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

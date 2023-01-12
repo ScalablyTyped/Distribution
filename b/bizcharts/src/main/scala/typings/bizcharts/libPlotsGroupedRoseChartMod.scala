@@ -52,7 +52,8 @@ object libPlotsGroupedRoseChartMod extends Shortcut {
       __obj.asInstanceOf[GroupedRoseOptions]
     }
     
-    extension [Self <: GroupedRoseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupedRoseOptions] (val x: Self) extends AnyVal {
       
       inline def setCategoryField(value: String): Self = StObject.set(x, "categoryField", value.asInstanceOf[js.Any])
       

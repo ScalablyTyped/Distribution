@@ -100,7 +100,8 @@ object CoinsFetchData {
     __obj.asInstanceOf[CoinsFetchData]
   }
   
-  extension [Self <: CoinsFetchData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsFetchData] (val x: Self) extends AnyVal {
     
     inline def setBlock_time_in_minutes(value: Double): Self = StObject.set(x, "block_time_in_minutes", value.asInstanceOf[js.Any])
     

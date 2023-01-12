@@ -25,7 +25,8 @@ object SettingTemplateValue {
     __obj.asInstanceOf[SettingTemplateValue]
   }
   
-  extension [Self <: SettingTemplateValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingTemplateValue] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: NullableOption[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object FirstAndThirdPartyAudienceIdKey {
     __obj.asInstanceOf[FirstAndThirdPartyAudienceIdKey]
   }
   
-  extension [Self <: FirstAndThirdPartyAudienceIdKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstAndThirdPartyAudienceIdKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

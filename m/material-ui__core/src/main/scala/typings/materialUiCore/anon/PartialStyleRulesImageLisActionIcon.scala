@@ -61,7 +61,8 @@ object PartialStyleRulesImageLisActionIcon {
     __obj.asInstanceOf[PartialStyleRulesImageLisActionIcon]
   }
   
-  extension [Self <: PartialStyleRulesImageLisActionIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesImageLisActionIcon] (val x: Self) extends AnyVal {
     
     inline def setActionIcon(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

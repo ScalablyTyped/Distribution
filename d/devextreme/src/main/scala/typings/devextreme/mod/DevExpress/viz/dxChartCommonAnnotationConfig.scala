@@ -54,7 +54,8 @@ object dxChartCommonAnnotationConfig {
     __obj.asInstanceOf[dxChartCommonAnnotationConfig]
   }
   
-  extension [Self <: dxChartCommonAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

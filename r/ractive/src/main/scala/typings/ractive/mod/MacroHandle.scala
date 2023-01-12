@@ -21,7 +21,8 @@ object MacroHandle {
     __obj.asInstanceOf[MacroHandle]
   }
   
-  extension [Self <: MacroHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacroHandle] (val x: Self) extends AnyVal {
     
     inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     

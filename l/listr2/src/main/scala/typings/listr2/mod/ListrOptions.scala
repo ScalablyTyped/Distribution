@@ -101,7 +101,8 @@ object ListrOptions {
     __obj.asInstanceOf[ListrOptions[Ctx]]
   }
   
-  extension [Self <: ListrOptions[?], Ctx](x: Self & ListrOptions[Ctx]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListrOptions[?], Ctx] (val x: Self & ListrOptions[Ctx]) extends AnyVal {
     
     inline def setCollectErrors(value: `false` | minimal | full): Self = StObject.set(x, "collectErrors", value.asInstanceOf[js.Any])
     

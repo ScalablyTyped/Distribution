@@ -19,7 +19,8 @@ object Preview {
     __obj.asInstanceOf[Preview]
   }
   
-  extension [Self <: Preview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preview] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     

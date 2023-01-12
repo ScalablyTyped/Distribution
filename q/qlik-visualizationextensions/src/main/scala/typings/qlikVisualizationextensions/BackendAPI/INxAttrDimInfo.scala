@@ -50,7 +50,8 @@ object INxAttrDimInfo {
     __obj.asInstanceOf[INxAttrDimInfo]
   }
   
-  extension [Self <: INxAttrDimInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAttrDimInfo] (val x: Self) extends AnyVal {
     
     inline def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     

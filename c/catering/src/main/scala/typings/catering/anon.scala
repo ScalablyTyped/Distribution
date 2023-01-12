@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Promise[T]]
     }
     
-    extension [Self <: Promise[?], T](x: Self & Promise[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promise[?], T] (val x: Self & Promise[T]) extends AnyVal {
       
       inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

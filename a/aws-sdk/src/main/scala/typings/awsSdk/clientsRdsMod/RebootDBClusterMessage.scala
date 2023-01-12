@@ -18,7 +18,8 @@ object RebootDBClusterMessage {
     __obj.asInstanceOf[RebootDBClusterMessage]
   }
   
-  extension [Self <: RebootDBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootDBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ISceneLike {
     __obj.asInstanceOf[ISceneLike]
   }
   
-  extension [Self <: ISceneLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISceneLike] (val x: Self) extends AnyVal {
     
     inline def setAddPendingData(value: Any => Unit): Self = StObject.set(x, "addPendingData", js.Any.fromFunction1(value))
     

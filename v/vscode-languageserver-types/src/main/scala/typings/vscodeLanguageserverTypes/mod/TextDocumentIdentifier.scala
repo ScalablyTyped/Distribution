@@ -33,7 +33,8 @@ object TextDocumentIdentifier {
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentIdentifier */ Boolean]
   
-  extension [Self <: TextDocumentIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentIdentifier] (val x: Self) extends AnyVal {
     
     inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }

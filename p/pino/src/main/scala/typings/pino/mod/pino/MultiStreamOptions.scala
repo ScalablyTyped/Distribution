@@ -18,7 +18,8 @@ object MultiStreamOptions {
     __obj.asInstanceOf[MultiStreamOptions]
   }
   
-  extension [Self <: MultiStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setDedupe(value: Boolean): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
     

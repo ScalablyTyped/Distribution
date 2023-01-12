@@ -18,7 +18,8 @@ object CompiledGenericToken {
     __obj.asInstanceOf[CompiledGenericToken[TType, TValue]]
   }
   
-  extension [Self <: CompiledGenericToken[?, ?], TType, TValue](x: Self & (CompiledGenericToken[TType, TValue])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledGenericToken[?, ?], TType, TValue] (val x: Self & (CompiledGenericToken[TType, TValue])) extends AnyVal {
     
     inline def setType(value: TType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

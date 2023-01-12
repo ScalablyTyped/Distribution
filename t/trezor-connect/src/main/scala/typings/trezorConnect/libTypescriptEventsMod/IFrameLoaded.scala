@@ -19,7 +19,8 @@ object IFrameLoaded {
     __obj.asInstanceOf[IFrameLoaded]
   }
   
-  extension [Self <: IFrameLoaded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFrameLoaded] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: UseBroadcastChannel): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

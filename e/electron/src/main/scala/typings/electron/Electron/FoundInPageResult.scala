@@ -38,7 +38,8 @@ object FoundInPageResult {
     __obj.asInstanceOf[FoundInPageResult]
   }
   
-  extension [Self <: FoundInPageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoundInPageResult] (val x: Self) extends AnyVal {
     
     inline def setActiveMatchOrdinal(value: Double): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     

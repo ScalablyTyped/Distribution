@@ -148,7 +148,8 @@ object gizmosPlaneDragGizmoMod {
       __obj.asInstanceOf[IPlaneDragGizmo]
     }
     
-    extension [Self <: IPlaneDragGizmo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlaneDragGizmo] (val x: Self) extends AnyVal {
       
       inline def setDragBehavior(value: PointerDragBehavior): Self = StObject.set(x, "dragBehavior", value.asInstanceOf[js.Any])
       

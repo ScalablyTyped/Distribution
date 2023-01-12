@@ -44,7 +44,8 @@ object NxDimension {
     __obj.asInstanceOf[NxDimension]
   }
   
-  extension [Self <: NxDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxDimension] (val x: Self) extends AnyVal {
     
     inline def setQAttributeDimensions(value: js.Array[NxAttrDimDef]): Self = StObject.set(x, "qAttributeDimensions", value.asInstanceOf[js.Any])
     

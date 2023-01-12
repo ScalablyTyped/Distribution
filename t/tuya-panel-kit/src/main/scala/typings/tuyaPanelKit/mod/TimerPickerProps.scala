@@ -176,7 +176,8 @@ object TimerPickerProps {
     __obj.asInstanceOf[TimerPickerProps]
   }
   
-  extension [Self <: TimerPickerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerPickerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

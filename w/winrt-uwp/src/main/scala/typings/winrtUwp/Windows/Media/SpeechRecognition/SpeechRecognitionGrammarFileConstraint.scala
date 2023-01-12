@@ -37,7 +37,8 @@ object SpeechRecognitionGrammarFileConstraint {
     __obj.asInstanceOf[SpeechRecognitionGrammarFileConstraint]
   }
   
-  extension [Self <: SpeechRecognitionGrammarFileConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionGrammarFileConstraint] (val x: Self) extends AnyVal {
     
     inline def setGrammarFile(value: StorageFile): Self = StObject.set(x, "grammarFile", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object typesSrcCoreConnectionHandshakeHandshakePayloadMod {
       __obj.asInstanceOf[HandshakePayload]
     }
     
-    extension [Self <: HandshakePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandshakePayload] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: default): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       

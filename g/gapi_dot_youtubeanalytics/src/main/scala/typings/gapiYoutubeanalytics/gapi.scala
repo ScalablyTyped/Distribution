@@ -26,7 +26,8 @@ object gapi {
           __obj.asInstanceOf[reports]
         }
         
-        extension [Self <: reports](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: reports] (val x: Self) extends AnyVal {
           
           inline def setQuery(value: Dimensions => HttpRequest[Any]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
         }

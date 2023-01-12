@@ -45,7 +45,8 @@ object PartialParams {
     __obj.asInstanceOf[PartialParams]
   }
   
-  extension [Self <: PartialParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialParams] (val x: Self) extends AnyVal {
     
     inline def setAsyncStorage(value: AsyncStorage): Self = StObject.set(x, "asyncStorage", value.asInstanceOf[js.Any])
     

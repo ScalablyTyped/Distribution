@@ -19,7 +19,8 @@ object AggregationsTestPopulation {
     __obj.asInstanceOf[AggregationsTestPopulation]
   }
   
-  extension [Self <: AggregationsTestPopulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsTestPopulation] (val x: Self) extends AnyVal {
     
     inline def setField(value: Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

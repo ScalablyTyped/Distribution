@@ -23,7 +23,8 @@ object ToggleTableCellOutsideBordersCommand {
     __obj.asInstanceOf[ToggleTableCellOutsideBordersCommand]
   }
   
-  extension [Self <: ToggleTableCellOutsideBordersCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleTableCellOutsideBordersCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object DescribeChannelModeratorResponse {
     __obj.asInstanceOf[DescribeChannelModeratorResponse]
   }
   
-  extension [Self <: DescribeChannelModeratorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChannelModeratorResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelModerator(value: ChannelModerator): Self = StObject.set(x, "ChannelModerator", value.asInstanceOf[js.Any])
     

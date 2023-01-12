@@ -923,7 +923,8 @@ object sapMMessagePageMod {
       __obj.asInstanceOf[MessagePageSettings]
     }
     
-    extension [Self <: MessagePageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePageSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       

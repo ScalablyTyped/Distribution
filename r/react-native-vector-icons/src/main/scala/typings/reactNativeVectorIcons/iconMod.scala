@@ -232,7 +232,8 @@ object iconMod {
       __obj.asInstanceOf[IconButtonProps]
     }
     
-    extension [Self <: IconButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -336,7 +337,8 @@ object iconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ColorValue | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -398,7 +400,8 @@ object iconMod {
       __obj.asInstanceOf[TabBarItemIOSProps]
     }
     
-    extension [Self <: TabBarItemIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarItemIOSProps] (val x: Self) extends AnyVal {
       
       inline def setIconColor(value: ColorValue | Double): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
       

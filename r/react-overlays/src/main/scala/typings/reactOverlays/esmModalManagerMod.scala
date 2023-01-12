@@ -39,7 +39,8 @@ object esmModalManagerMod {
       __obj.asInstanceOf[ModalInstance]
     }
     
-    extension [Self <: ModalInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalInstance] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: Element): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Power {
     __obj.asInstanceOf[Power]
   }
   
-  extension [Self <: Power](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Power] (val x: Self) extends AnyVal {
     
     inline def setPower(value: PowerConstant): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     

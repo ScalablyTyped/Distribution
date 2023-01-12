@@ -19,7 +19,8 @@ object CardViewBatchEditCardDeletingEventArgs {
     __obj.asInstanceOf[CardViewBatchEditCardDeletingEventArgs]
   }
   
-  extension [Self <: CardViewBatchEditCardDeletingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewBatchEditCardDeletingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCardValues(value: Any): Self = StObject.set(x, "cardValues", value.asInstanceOf[js.Any])
     

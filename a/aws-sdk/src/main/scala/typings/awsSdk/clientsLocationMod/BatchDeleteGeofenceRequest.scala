@@ -23,7 +23,8 @@ object BatchDeleteGeofenceRequest {
     __obj.asInstanceOf[BatchDeleteGeofenceRequest]
   }
   
-  extension [Self <: BatchDeleteGeofenceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteGeofenceRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionName(value: ResourceName): Self = StObject.set(x, "CollectionName", value.asInstanceOf[js.Any])
     

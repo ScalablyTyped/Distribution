@@ -109,7 +109,8 @@ object UiSchema {
     __obj.asInstanceOf[UiSchema[T, F]]
   }
   
-  extension [Self <: UiSchema[?, ?], T, F](x: Self & (UiSchema[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiSchema[?, ?], T, F] (val x: Self & (UiSchema[T, F])) extends AnyVal {
     
     inline def setAddable(value: Boolean): Self = StObject.set(x, "addable", value.asInstanceOf[js.Any])
     

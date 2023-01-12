@@ -24,7 +24,8 @@ object ProgressBarParams {
     __obj.asInstanceOf[ProgressBarParams]
   }
   
-  extension [Self <: ProgressBarParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarParams] (val x: Self) extends AnyVal {
     
     inline def setLegend(value: String | `true` | ValueStringCallback): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
     

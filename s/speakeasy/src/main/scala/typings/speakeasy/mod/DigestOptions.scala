@@ -24,7 +24,8 @@ object DigestOptions {
     __obj.asInstanceOf[DigestOptions]
   }
   
-  extension [Self <: DigestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestOptions] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

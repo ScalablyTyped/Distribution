@@ -18,7 +18,8 @@ object IReplyAbortContent {
     __obj.asInstanceOf[IReplyAbortContent]
   }
   
-  extension [Self <: IReplyAbortContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReplyAbortContent] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: abort): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

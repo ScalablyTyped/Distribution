@@ -33,7 +33,8 @@ object BucketCountByEffectivePermission {
     __obj.asInstanceOf[BucketCountByEffectivePermission]
   }
   
-  extension [Self <: BucketCountByEffectivePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketCountByEffectivePermission] (val x: Self) extends AnyVal {
     
     inline def setPubliclyAccessible(value: long): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     

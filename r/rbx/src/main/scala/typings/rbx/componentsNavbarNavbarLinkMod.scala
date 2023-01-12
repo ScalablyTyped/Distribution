@@ -72,7 +72,8 @@ object componentsNavbarNavbarLinkMod {
       __obj.asInstanceOf[NavbarLinkModifierProps]
     }
     
-    extension [Self <: NavbarLinkModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarLinkModifierProps] (val x: Self) extends AnyVal {
       
       inline def setArrowless(value: Boolean): Self = StObject.set(x, "arrowless", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object componentsNavbarNavbarLinkMod {
       __obj.asInstanceOf[NavbarLinkProps]
     }
     
-    extension [Self <: NavbarLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarLinkProps] (val x: Self) extends AnyVal {
       
       inline def setArrowless(value: Boolean): Self = StObject.set(x, "arrowless", value.asInstanceOf[js.Any])
       

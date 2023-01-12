@@ -48,7 +48,8 @@ object VoiceCommandContentTile {
     __obj.asInstanceOf[VoiceCommandContentTile]
   }
   
-  extension [Self <: VoiceCommandContentTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandContentTile] (val x: Self) extends AnyVal {
     
     inline def setAppContext(value: Any): Self = StObject.set(x, "appContext", value.asInstanceOf[js.Any])
     

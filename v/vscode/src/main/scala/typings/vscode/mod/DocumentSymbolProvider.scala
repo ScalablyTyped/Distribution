@@ -25,7 +25,8 @@ object DocumentSymbolProvider {
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
   
-  extension [Self <: DocumentSymbolProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSymbolProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentSymbols(
       value: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]

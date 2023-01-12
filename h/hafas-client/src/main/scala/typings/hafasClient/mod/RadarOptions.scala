@@ -61,7 +61,8 @@ object RadarOptions {
     __obj.asInstanceOf[RadarOptions]
   }
   
-  extension [Self <: RadarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadarOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

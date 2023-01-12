@@ -21,7 +21,8 @@ object distTelemetryPerformanceIperformancemeasurementMod {
       __obj.asInstanceOf[IPerformanceMeasurement]
     }
     
-    extension [Self <: IPerformanceMeasurement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerformanceMeasurement] (val x: Self) extends AnyVal {
       
       inline def setEndMeasurement(value: () => Unit): Self = StObject.set(x, "endMeasurement", js.Any.fromFunction0(value))
       

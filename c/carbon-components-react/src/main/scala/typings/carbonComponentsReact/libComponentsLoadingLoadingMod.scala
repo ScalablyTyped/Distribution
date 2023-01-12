@@ -477,7 +477,8 @@ object libComponentsLoadingLoadingMod extends Shortcut {
       __obj.asInstanceOf[LoadingProps]
     }
     
-    extension [Self <: LoadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

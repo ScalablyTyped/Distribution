@@ -38,7 +38,8 @@ object CollectionDefinition {
     __obj.asInstanceOf[CollectionDefinition]
   }
   
-  extension [Self <: CollectionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionDefinition] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

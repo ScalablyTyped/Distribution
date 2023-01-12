@@ -71,7 +71,8 @@ object AlbumName {
     __obj.asInstanceOf[AlbumName]
   }
   
-  extension [Self <: AlbumName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumName] (val x: Self) extends AnyVal {
     
     inline def setAlbumName(value: String): Self = StObject.set(x, "albumName", value.asInstanceOf[js.Any])
     

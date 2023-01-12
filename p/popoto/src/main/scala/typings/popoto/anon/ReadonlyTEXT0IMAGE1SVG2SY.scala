@@ -26,7 +26,8 @@ object ReadonlyTEXT0IMAGE1SVG2SY {
     __obj.asInstanceOf[ReadonlyTEXT0IMAGE1SVG2SY]
   }
   
-  extension [Self <: ReadonlyTEXT0IMAGE1SVG2SY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyTEXT0IMAGE1SVG2SY] (val x: Self) extends AnyVal {
     
     inline def setIMAGE(value: `1`): Self = StObject.set(x, "IMAGE", value.asInstanceOf[js.Any])
     

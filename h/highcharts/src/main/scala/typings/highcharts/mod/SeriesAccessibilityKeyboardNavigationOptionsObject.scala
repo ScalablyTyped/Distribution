@@ -19,7 +19,8 @@ object SeriesAccessibilityKeyboardNavigationOptionsObject {
     __obj.asInstanceOf[SeriesAccessibilityKeyboardNavigationOptionsObject]
   }
   
-  extension [Self <: SeriesAccessibilityKeyboardNavigationOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesAccessibilityKeyboardNavigationOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

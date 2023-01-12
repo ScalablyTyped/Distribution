@@ -19,7 +19,8 @@ object FittedBounds {
     __obj.asInstanceOf[FittedBounds]
   }
   
-  extension [Self <: FittedBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FittedBounds] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

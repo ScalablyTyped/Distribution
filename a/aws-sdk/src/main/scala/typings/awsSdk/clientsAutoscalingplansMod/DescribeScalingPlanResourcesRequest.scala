@@ -33,7 +33,8 @@ object DescribeScalingPlanResourcesRequest {
     __obj.asInstanceOf[DescribeScalingPlanResourcesRequest]
   }
   
-  extension [Self <: DescribeScalingPlanResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalingPlanResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

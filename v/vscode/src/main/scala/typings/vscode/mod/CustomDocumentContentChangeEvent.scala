@@ -24,7 +24,8 @@ object CustomDocumentContentChangeEvent {
     __obj.asInstanceOf[CustomDocumentContentChangeEvent[T]]
   }
   
-  extension [Self <: CustomDocumentContentChangeEvent[?], T /* <: CustomDocument */](x: Self & CustomDocumentContentChangeEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocumentContentChangeEvent[?], T /* <: CustomDocument */] (val x: Self & CustomDocumentContentChangeEvent[T]) extends AnyVal {
     
     inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object QueryStringNames {
     __obj.asInstanceOf[QueryStringNames]
   }
   
-  extension [Self <: QueryStringNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryStringNames] (val x: Self) extends AnyVal {
     
     inline def setItems(value: QueryStringNamesList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

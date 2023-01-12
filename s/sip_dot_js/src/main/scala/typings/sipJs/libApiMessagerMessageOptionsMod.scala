@@ -23,7 +23,8 @@ object libApiMessagerMessageOptionsMod {
       __obj.asInstanceOf[MessagerMessageOptions]
     }
     
-    extension [Self <: MessagerMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagerMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       

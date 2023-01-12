@@ -38,7 +38,8 @@ object StructureKeeperLair {
     __obj.asInstanceOf[StructureKeeperLair]
   }
   
-  extension [Self <: StructureKeeperLair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureKeeperLair] (val x: Self) extends AnyVal {
     
     inline def setTicksToSpawn(value: Double): Self = StObject.set(x, "ticksToSpawn", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object GanttRemoveEvent {
     __obj.asInstanceOf[GanttRemoveEvent]
   }
   
-  extension [Self <: GanttRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ReferenceFieldOptions {
     __obj.asInstanceOf[ReferenceFieldOptions]
   }
   
-  extension [Self <: ReferenceFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferenceFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
     

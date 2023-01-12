@@ -79,7 +79,8 @@ object libAccessibleTargetMod {
       __obj.asInstanceOf[IAccessibleTarget]
     }
     
-    extension [Self <: IAccessibleTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAccessibleTarget] (val x: Self) extends AnyVal {
       
       inline def setAccessible(value: Boolean): Self = StObject.set(x, "accessible", value.asInstanceOf[js.Any])
       

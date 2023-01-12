@@ -21,7 +21,8 @@ object SVGAnimatedBoolean {
     __obj.asInstanceOf[SVGAnimatedBoolean]
   }
   
-  extension [Self <: SVGAnimatedBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedBoolean] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: Boolean): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

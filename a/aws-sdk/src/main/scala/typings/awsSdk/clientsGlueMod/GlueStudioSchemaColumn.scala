@@ -23,7 +23,8 @@ object GlueStudioSchemaColumn {
     __obj.asInstanceOf[GlueStudioSchemaColumn]
   }
   
-  extension [Self <: GlueStudioSchemaColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueStudioSchemaColumn] (val x: Self) extends AnyVal {
     
     inline def setName(value: GlueStudioColumnNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

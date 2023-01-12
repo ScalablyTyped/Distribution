@@ -17,7 +17,8 @@ object AuditableModel {
     __obj.asInstanceOf[AuditableModel]
   }
   
-  extension [Self <: AuditableModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditableModel] (val x: Self) extends AnyVal {
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

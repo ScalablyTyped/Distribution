@@ -34,7 +34,8 @@ object CreatePackagingGroupResponse {
     __obj.asInstanceOf[CreatePackagingGroupResponse]
   }
   
-  extension [Self <: CreatePackagingGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePackagingGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

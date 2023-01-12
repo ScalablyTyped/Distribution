@@ -47,7 +47,8 @@ object UnoControlDialogElement {
     __obj.asInstanceOf[UnoControlDialogElement]
   }
   
-  extension [Self <: UnoControlDialogElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlDialogElement] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

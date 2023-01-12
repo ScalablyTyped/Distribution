@@ -19,7 +19,8 @@ object RuntimeAcceleratorConfig {
     __obj.asInstanceOf[RuntimeAcceleratorConfig]
   }
   
-  extension [Self <: RuntimeAcceleratorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeAcceleratorConfig] (val x: Self) extends AnyVal {
     
     inline def setCoreCount(value: String): Self = StObject.set(x, "coreCount", value.asInstanceOf[js.Any])
     

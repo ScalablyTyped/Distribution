@@ -19,7 +19,8 @@ object TypeDef {
     __obj.asInstanceOf[TypeDef]
   }
   
-  extension [Self <: TypeDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDef] (val x: Self) extends AnyVal {
     
     inline def setSubtype(value: Instantiable): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     

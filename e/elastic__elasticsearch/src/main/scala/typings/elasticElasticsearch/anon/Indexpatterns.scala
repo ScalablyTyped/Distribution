@@ -31,7 +31,8 @@ object Indexpatterns {
     __obj.asInstanceOf[Indexpatterns]
   }
   
-  extension [Self <: Indexpatterns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indexpatterns] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: Record[IndexName, IndicesAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PackageInfo {
     __obj.asInstanceOf[PackageInfo]
   }
   
-  extension [Self <: PackageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageInfo] (val x: Self) extends AnyVal {
     
     inline def setChangenumber(value: Double): Self = StObject.set(x, "changenumber", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object MetricWindow {
     __obj.asInstanceOf[MetricWindow]
   }
   
-  extension [Self <: MetricWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricWindow] (val x: Self) extends AnyVal {
     
     inline def setTumbling(value: TumblingWindow): Self = StObject.set(x, "tumbling", value.asInstanceOf[js.Any])
     

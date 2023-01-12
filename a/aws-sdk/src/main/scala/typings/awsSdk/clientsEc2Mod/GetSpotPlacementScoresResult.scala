@@ -23,7 +23,8 @@ object GetSpotPlacementScoresResult {
     __obj.asInstanceOf[GetSpotPlacementScoresResult]
   }
   
-  extension [Self <: GetSpotPlacementScoresResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSpotPlacementScoresResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

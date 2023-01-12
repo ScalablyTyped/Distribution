@@ -67,7 +67,8 @@ object XGraphicRasterizer {
     __obj.asInstanceOf[XGraphicRasterizer]
   }
   
-  extension [Self <: XGraphicRasterizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicRasterizer] (val x: Self) extends AnyVal {
     
     inline def setInitializeData(value: (XInputStream, Double, Double, js.Array[Size]) => Boolean): Self = StObject.set(x, "initializeData", js.Any.fromFunction4(value))
     

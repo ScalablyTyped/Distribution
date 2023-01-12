@@ -42,7 +42,8 @@ object GH2O {
     __obj.asInstanceOf[GH2O]
   }
   
-  extension [Self <: GH2O](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GH2O] (val x: Self) extends AnyVal {
     
     inline def setGH2O(value: XGH2O): Self = StObject.set(x, "GH2O", value.asInstanceOf[js.Any])
     

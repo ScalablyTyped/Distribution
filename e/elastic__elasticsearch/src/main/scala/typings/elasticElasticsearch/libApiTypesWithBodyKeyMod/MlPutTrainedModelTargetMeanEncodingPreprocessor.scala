@@ -22,7 +22,8 @@ object MlPutTrainedModelTargetMeanEncodingPreprocessor {
     __obj.asInstanceOf[MlPutTrainedModelTargetMeanEncodingPreprocessor]
   }
   
-  extension [Self <: MlPutTrainedModelTargetMeanEncodingPreprocessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelTargetMeanEncodingPreprocessor] (val x: Self) extends AnyVal {
     
     inline def setDefault_value(value: double): Self = StObject.set(x, "default_value", value.asInstanceOf[js.Any])
     

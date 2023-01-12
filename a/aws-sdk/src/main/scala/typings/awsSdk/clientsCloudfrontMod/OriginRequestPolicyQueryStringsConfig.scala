@@ -23,7 +23,8 @@ object OriginRequestPolicyQueryStringsConfig {
     __obj.asInstanceOf[OriginRequestPolicyQueryStringsConfig]
   }
   
-  extension [Self <: OriginRequestPolicyQueryStringsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRequestPolicyQueryStringsConfig] (val x: Self) extends AnyVal {
     
     inline def setQueryStringBehavior(value: OriginRequestPolicyQueryStringBehavior): Self = StObject.set(x, "QueryStringBehavior", value.asInstanceOf[js.Any])
     

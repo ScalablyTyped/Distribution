@@ -48,7 +48,8 @@ object Milestone {
     __obj.asInstanceOf[Milestone]
   }
   
-  extension [Self <: Milestone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Milestone] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: String): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

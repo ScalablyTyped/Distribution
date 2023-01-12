@@ -17,7 +17,8 @@ object Time {
     __obj.asInstanceOf[Time]
   }
   
-  extension [Self <: Time](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
     
     inline def setPointers(value: Double): Self = StObject.set(x, "pointers", value.asInstanceOf[js.Any])
     

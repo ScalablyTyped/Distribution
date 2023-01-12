@@ -33,7 +33,8 @@ object Transactionid {
     __obj.asInstanceOf[Transactionid]
   }
   
-  extension [Self <: Transactionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transactionid] (val x: Self) extends AnyVal {
     
     inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
     

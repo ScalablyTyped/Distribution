@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsAnchorMod extends Shortcut {
       __obj.asInstanceOf[AnchorProps]
     }
     
-    extension [Self <: AnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnchorProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

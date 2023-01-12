@@ -45,7 +45,8 @@ object DocumentIndexMark {
     __obj.asInstanceOf[DocumentIndexMark]
   }
   
-  extension [Self <: DocumentIndexMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentIndexMark] (val x: Self) extends AnyVal {
     
     inline def setIsMainEntry(value: Boolean): Self = StObject.set(x, "IsMainEntry", value.asInstanceOf[js.Any])
     

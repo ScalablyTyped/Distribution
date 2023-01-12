@@ -36,7 +36,8 @@ object SpecResult {
     __obj.asInstanceOf[SpecResult]
   }
   
-  extension [Self <: SpecResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecResult] (val x: Self) extends AnyVal {
     
     inline def setDebugLogs(value: js.Array[DebugLogEntry]): Self = StObject.set(x, "debugLogs", value.asInstanceOf[js.Any])
     

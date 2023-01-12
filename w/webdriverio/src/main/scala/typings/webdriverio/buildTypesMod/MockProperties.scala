@@ -17,7 +17,8 @@ object MockProperties {
     __obj.asInstanceOf[MockProperties]
   }
   
-  extension [Self <: MockProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MockProperties] (val x: Self) extends AnyVal {
     
     inline def setCalls(value: js.Array[Matches] | js.Promise[js.Array[Matches]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     

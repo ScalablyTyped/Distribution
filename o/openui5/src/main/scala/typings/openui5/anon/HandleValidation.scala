@@ -96,7 +96,8 @@ object HandleValidation {
     __obj.asInstanceOf[HandleValidation]
   }
   
-  extension [Self <: HandleValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleValidation] (val x: Self) extends AnyVal {
     
     inline def setActiveTerminologies(value: js.Array[String]): Self = StObject.set(x, "activeTerminologies", value.asInstanceOf[js.Any])
     

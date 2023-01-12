@@ -40,7 +40,8 @@ object IosNotificationSettings {
     __obj.asInstanceOf[IosNotificationSettings]
   }
   
-  extension [Self <: IosNotificationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosNotificationSettings] (val x: Self) extends AnyVal {
     
     inline def setAlertType(value: IosNotificationAlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     

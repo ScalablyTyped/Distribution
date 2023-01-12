@@ -51,7 +51,8 @@ object libContainerMod extends Shortcut {
       __obj.asInstanceOf[DialogContainerProps]
     }
     
-    extension [Self <: DialogContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContainerProps] (val x: Self) extends AnyVal {
       
       inline def setBlurComponentIOS(value: ReactNode): Self = StObject.set(x, "blurComponentIOS", value.asInstanceOf[js.Any])
       

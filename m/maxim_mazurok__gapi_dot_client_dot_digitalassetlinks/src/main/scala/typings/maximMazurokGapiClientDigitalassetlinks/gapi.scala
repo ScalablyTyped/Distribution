@@ -36,7 +36,8 @@ object gapi {
           __obj.asInstanceOf[AndroidAppAsset]
         }
         
-        extension [Self <: AndroidAppAsset](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AndroidAppAsset] (val x: Self) extends AnyVal {
           
           inline def setCertificate(value: CertificateInfo): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
           
@@ -63,7 +64,8 @@ object gapi {
           __obj.asInstanceOf[Asset]
         }
         
-        extension [Self <: Asset](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
           
           inline def setAndroidApp(value: AndroidAppAsset): Self = StObject.set(x, "androidApp", value.asInstanceOf[js.Any])
           
@@ -129,7 +131,8 @@ object gapi {
           __obj.asInstanceOf[BulkCheckRequest]
         }
         
-        extension [Self <: BulkCheckRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: BulkCheckRequest] (val x: Self) extends AnyVal {
           
           inline def setAllowGoogleInternalDataSources(value: Boolean): Self = StObject.set(x, "allowGoogleInternalDataSources", value.asInstanceOf[js.Any])
           
@@ -174,7 +177,8 @@ object gapi {
           __obj.asInstanceOf[BulkCheckResponse]
         }
         
-        extension [Self <: BulkCheckResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: BulkCheckResponse] (val x: Self) extends AnyVal {
           
           inline def setBulkErrorCode(value: String): Self = StObject.set(x, "bulkErrorCode", value.asInstanceOf[js.Any])
           
@@ -207,7 +211,8 @@ object gapi {
           __obj.asInstanceOf[CertificateInfo]
         }
         
-        extension [Self <: CertificateInfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
           
           inline def setSha256Fingerprint(value: String): Self = StObject.set(x, "sha256Fingerprint", value.asInstanceOf[js.Any])
           
@@ -240,7 +245,8 @@ object gapi {
           __obj.asInstanceOf[CheckResponse]
         }
         
-        extension [Self <: CheckResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CheckResponse] (val x: Self) extends AnyVal {
           
           inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
           
@@ -287,7 +293,8 @@ object gapi {
           __obj.asInstanceOf[ListResponse]
         }
         
-        extension [Self <: ListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListResponse] (val x: Self) extends AnyVal {
           
           inline def setDebugString(value: String): Self = StObject.set(x, "debugString", value.asInstanceOf[js.Any])
           
@@ -334,7 +341,8 @@ object gapi {
           __obj.asInstanceOf[Statement]
         }
         
-        extension [Self <: Statement](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
           
           inline def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
           
@@ -368,7 +376,8 @@ object gapi {
           __obj.asInstanceOf[StatementTemplate]
         }
         
-        extension [Self <: StatementTemplate](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: StatementTemplate] (val x: Self) extends AnyVal {
           
           inline def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
           
@@ -418,7 +427,8 @@ object gapi {
           __obj.asInstanceOf[WebAsset]
         }
         
-        extension [Self <: WebAsset](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WebAsset] (val x: Self) extends AnyVal {
           
           inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
           

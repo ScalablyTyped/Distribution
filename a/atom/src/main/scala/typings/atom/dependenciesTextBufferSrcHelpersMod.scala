@@ -39,7 +39,8 @@ object dependenciesTextBufferSrcHelpersMod {
       __obj.asInstanceOf[TextChange]
     }
     
-    extension [Self <: TextChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
       
       inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
       

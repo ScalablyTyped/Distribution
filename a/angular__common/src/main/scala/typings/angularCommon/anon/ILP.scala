@@ -152,7 +152,8 @@ object ILP {
     __obj.asInstanceOf[ILP]
   }
   
-  extension [Self <: ILP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILP] (val x: Self) extends AnyVal {
     
     inline def setARS(value: js.Array[String]): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object OrderFieldDef {
     __obj.asInstanceOf[OrderFieldDef[F]]
   }
   
-  extension [Self <: OrderFieldDef[?], F /* <: Field */](x: Self & OrderFieldDef[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderFieldDef[?], F /* <: Field */] (val x: Self & OrderFieldDef[F]) extends AnyVal {
     
     inline def setSort(value: SortOrder): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

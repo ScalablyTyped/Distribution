@@ -23,7 +23,8 @@ object DataResource {
     __obj.asInstanceOf[DataResource]
   }
   
-  extension [Self <: DataResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataResource] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

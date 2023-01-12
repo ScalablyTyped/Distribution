@@ -23,7 +23,8 @@ object DescribeIdentityIdFormatRequest {
     __obj.asInstanceOf[DescribeIdentityIdFormatRequest]
   }
   
-  extension [Self <: DescribeIdentityIdFormatRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIdentityIdFormatRequest] (val x: Self) extends AnyVal {
     
     inline def setPrincipalArn(value: String): Self = StObject.set(x, "PrincipalArn", value.asInstanceOf[js.Any])
     

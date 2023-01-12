@@ -32,7 +32,8 @@ object BroadcastStopResponse {
     __obj.asInstanceOf[BroadcastStopResponse]
   }
   
-  extension [Self <: BroadcastStopResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadcastStopResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

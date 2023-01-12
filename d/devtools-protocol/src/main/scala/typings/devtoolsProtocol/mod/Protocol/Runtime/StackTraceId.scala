@@ -17,7 +17,8 @@ object StackTraceId {
     __obj.asInstanceOf[StackTraceId]
   }
   
-  extension [Self <: StackTraceId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTraceId] (val x: Self) extends AnyVal {
     
     inline def setDebuggerId(value: UniqueDebuggerId): Self = StObject.set(x, "debuggerId", value.asInstanceOf[js.Any])
     

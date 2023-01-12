@@ -153,7 +153,8 @@ object buildApiMod {
       __obj.asInstanceOf[LogkittyOptions]
     }
     
-    extension [Self <: LogkittyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogkittyOptions] (val x: Self) extends AnyVal {
       
       inline def setAdbPath(value: String): Self = StObject.set(x, "adbPath", value.asInstanceOf[js.Any])
       

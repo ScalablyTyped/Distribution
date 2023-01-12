@@ -32,7 +32,8 @@ object Diff {
     __obj.asInstanceOf[Diff]
   }
   
-  extension [Self <: Diff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
     
     inline def setGetRemoteDiff(value: js.Function1[/* diff */ js.Object, Unit] => Unit): Self = StObject.set(x, "getRemoteDiff", js.Any.fromFunction1(value))
     

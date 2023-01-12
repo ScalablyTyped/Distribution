@@ -29,7 +29,8 @@ object CVE {
     __obj.asInstanceOf[CVE]
   }
   
-  extension [Self <: CVE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CVE] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

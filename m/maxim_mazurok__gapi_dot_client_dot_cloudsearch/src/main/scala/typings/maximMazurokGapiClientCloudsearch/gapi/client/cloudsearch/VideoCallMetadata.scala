@@ -15,7 +15,8 @@ object VideoCallMetadata {
     __obj.asInstanceOf[VideoCallMetadata]
   }
   
-  extension [Self <: VideoCallMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoCallMetadata] (val x: Self) extends AnyVal {
     
     inline def setMeetingUrl(value: String): Self = StObject.set(x, "meetingUrl", value.asInstanceOf[js.Any])
     

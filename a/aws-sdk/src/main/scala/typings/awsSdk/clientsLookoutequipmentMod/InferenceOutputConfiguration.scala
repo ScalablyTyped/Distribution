@@ -23,7 +23,8 @@ object InferenceOutputConfiguration {
     __obj.asInstanceOf[InferenceOutputConfiguration]
   }
   
-  extension [Self <: InferenceOutputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceOutputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: NameOrArn): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

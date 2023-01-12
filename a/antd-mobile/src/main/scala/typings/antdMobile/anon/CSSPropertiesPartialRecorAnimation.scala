@@ -9975,7 +9975,8 @@ object CSSPropertiesPartialRecorAnimation {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimation]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimation] (val x: Self) extends AnyVal {
     
     inline def `set--font-size`(value: String): Self = StObject.set(x, "--font-size", value.asInstanceOf[js.Any])
     

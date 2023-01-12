@@ -27,7 +27,8 @@ object ExcludedPlacement {
     __obj.asInstanceOf[ExcludedPlacement]
   }
   
-  extension [Self <: ExcludedPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedPlacement] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => Double): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     

@@ -58,7 +58,8 @@ object IQueryOptions {
     __obj.asInstanceOf[IQueryOptions]
   }
   
-  extension [Self <: IQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationSearchFilter(value: String): Self = StObject.set(x, "applicationSearchFilter", value.asInstanceOf[js.Any])
     

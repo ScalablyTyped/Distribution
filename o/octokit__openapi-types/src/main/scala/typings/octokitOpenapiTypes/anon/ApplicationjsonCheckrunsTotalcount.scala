@@ -17,7 +17,8 @@ object ApplicationjsonCheckrunsTotalcount {
     __obj.asInstanceOf[ApplicationjsonCheckrunsTotalcount]
   }
   
-  extension [Self <: ApplicationjsonCheckrunsTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonCheckrunsTotalcount] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: CheckrunsTotalcount): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

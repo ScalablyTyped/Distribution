@@ -26,7 +26,8 @@ object AdmissionRule {
     __obj.asInstanceOf[AdmissionRule]
   }
   
-  extension [Self <: AdmissionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdmissionRule] (val x: Self) extends AnyVal {
     
     inline def setEnforcementMode(value: String): Self = StObject.set(x, "enforcementMode", value.asInstanceOf[js.Any])
     

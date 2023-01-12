@@ -34,7 +34,8 @@ object AssetModelCompositeModelDefinition {
     __obj.asInstanceOf[AssetModelCompositeModelDefinition]
   }
   
-  extension [Self <: AssetModelCompositeModelDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetModelCompositeModelDefinition] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

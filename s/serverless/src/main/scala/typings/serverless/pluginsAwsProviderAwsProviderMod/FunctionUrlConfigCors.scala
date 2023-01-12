@@ -25,7 +25,8 @@ object FunctionUrlConfigCors {
     __obj.asInstanceOf[FunctionUrlConfigCors]
   }
   
-  extension [Self <: FunctionUrlConfigCors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionUrlConfigCors] (val x: Self) extends AnyVal {
     
     inline def setAllowCredentials(value: Boolean): Self = StObject.set(x, "allowCredentials", value.asInstanceOf[js.Any])
     

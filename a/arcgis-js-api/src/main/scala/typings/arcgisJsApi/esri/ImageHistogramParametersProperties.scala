@@ -50,7 +50,8 @@ object ImageHistogramParametersProperties {
     __obj.asInstanceOf[ImageHistogramParametersProperties]
   }
   
-  extension [Self <: ImageHistogramParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageHistogramParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: ExtentPropertiestypeexten | PolygonPropertiestypepoly): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

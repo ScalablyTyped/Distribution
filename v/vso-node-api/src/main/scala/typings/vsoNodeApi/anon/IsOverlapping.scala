@@ -17,7 +17,8 @@ object IsOverlapping {
     __obj.asInstanceOf[IsOverlapping]
   }
   
-  extension [Self <: IsOverlapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOverlapping] (val x: Self) extends AnyVal {
     
     inline def setIsOverlapping(value: scala.Double): Self = StObject.set(x, "isOverlapping", value.asInstanceOf[js.Any])
     

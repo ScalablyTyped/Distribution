@@ -161,7 +161,8 @@ object TransactionOptions {
       __obj.asInstanceOf[IReadOnly]
     }
     
-    extension [Self <: IReadOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReadOnly] (val x: Self) extends AnyVal {
       
       inline def setReadTime(value: ITimestamp): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
       
@@ -184,7 +185,8 @@ object TransactionOptions {
       __obj.asInstanceOf[IReadWrite]
     }
     
-    extension [Self <: IReadWrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReadWrite] (val x: Self) extends AnyVal {
       
       inline def setRetryTransaction(value: js.typedarray.Uint8Array): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
       

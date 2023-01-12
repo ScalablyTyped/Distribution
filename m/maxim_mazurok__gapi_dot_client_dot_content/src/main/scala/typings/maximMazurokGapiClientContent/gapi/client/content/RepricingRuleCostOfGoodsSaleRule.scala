@@ -19,7 +19,8 @@ object RepricingRuleCostOfGoodsSaleRule {
     __obj.asInstanceOf[RepricingRuleCostOfGoodsSaleRule]
   }
   
-  extension [Self <: RepricingRuleCostOfGoodsSaleRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepricingRuleCostOfGoodsSaleRule] (val x: Self) extends AnyVal {
     
     inline def setPercentageDelta(value: Double): Self = StObject.set(x, "percentageDelta", value.asInstanceOf[js.Any])
     

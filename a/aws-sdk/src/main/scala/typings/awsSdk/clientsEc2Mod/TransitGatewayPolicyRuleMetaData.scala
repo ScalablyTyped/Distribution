@@ -23,7 +23,8 @@ object TransitGatewayPolicyRuleMetaData {
     __obj.asInstanceOf[TransitGatewayPolicyRuleMetaData]
   }
   
-  extension [Self <: TransitGatewayPolicyRuleMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayPolicyRuleMetaData] (val x: Self) extends AnyVal {
     
     inline def setMetaDataKey(value: String): Self = StObject.set(x, "MetaDataKey", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object ChaiStatic {
     __obj.asInstanceOf[ChaiStatic]
   }
   
-  extension [Self <: ChaiStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

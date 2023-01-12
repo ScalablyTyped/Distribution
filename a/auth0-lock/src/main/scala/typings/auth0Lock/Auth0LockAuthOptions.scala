@@ -29,7 +29,8 @@ object Auth0LockAuthOptions {
     __obj.asInstanceOf[Auth0LockAuthOptions]
   }
   
-  extension [Self <: Auth0LockAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

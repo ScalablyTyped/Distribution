@@ -95,7 +95,8 @@ object RouteOptionsValidate {
     __obj.asInstanceOf[RouteOptionsValidate]
   }
   
-  extension [Self <: RouteOptionsValidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsValidate] (val x: Self) extends AnyVal {
     
     inline def setErrorFields(value: js.Object): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     

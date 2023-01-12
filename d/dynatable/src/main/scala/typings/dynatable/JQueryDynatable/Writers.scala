@@ -95,7 +95,8 @@ object Writers {
     __obj.asInstanceOf[Writers]
   }
   
-  extension [Self <: Writers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Writers] (val x: Self) extends AnyVal {
     
     inline def set_attributeWriter(value: /* record */ Any => Any): Self = StObject.set(x, "_attributeWriter", js.Any.fromFunction1(value))
     

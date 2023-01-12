@@ -25,7 +25,8 @@ object LookbackConfiguration {
     __obj.asInstanceOf[LookbackConfiguration]
   }
   
-  extension [Self <: LookbackConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookbackConfiguration] (val x: Self) extends AnyVal {
     
     inline def setClickDuration(value: Double): Self = StObject.set(x, "clickDuration", value.asInstanceOf[js.Any])
     

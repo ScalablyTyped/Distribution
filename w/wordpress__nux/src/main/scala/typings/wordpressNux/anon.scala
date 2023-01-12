@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedActions]
     }
     
-    extension [Self <: TypeofimportedActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedActions] (val x: Self) extends AnyVal {
       
       inline def setDisableTips(value: () => Unit): Self = StObject.set(x, "disableTips", js.Any.fromFunction0(value))
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    extension [Self <: TypeofimportedSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
       
       inline def setAreTipsEnabled(value: () => Boolean): Self = StObject.set(x, "areTipsEnabled", js.Any.fromFunction0(value))
       

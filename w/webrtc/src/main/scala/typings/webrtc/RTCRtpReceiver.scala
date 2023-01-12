@@ -24,7 +24,8 @@ object RTCRtpReceiver {
     __obj.asInstanceOf[RTCRtpReceiver]
   }
   
-  extension [Self <: RTCRtpReceiver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpReceiver] (val x: Self) extends AnyVal {
     
     inline def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = StObject.set(x, "getContributingSources", js.Any.fromFunction0(value))
     

@@ -16,7 +16,8 @@ object ListScreenshotClustersResponse {
     __obj.asInstanceOf[ListScreenshotClustersResponse]
   }
   
-  extension [Self <: ListScreenshotClustersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListScreenshotClustersResponse] (val x: Self) extends AnyVal {
     
     inline def setClusters(value: js.Array[ScreenshotCluster]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CLAMP {
     __obj.asInstanceOf[CLAMP]
   }
   
-  extension [Self <: CLAMP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLAMP] (val x: Self) extends AnyVal {
     
     inline def setCLAMP(value: String): Self = StObject.set(x, "CLAMP", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object NetworkConfig {
     __obj.asInstanceOf[NetworkConfig]
   }
   
-  extension [Self <: NetworkConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConfig] (val x: Self) extends AnyVal {
     
     inline def setDatapathProvider(value: String): Self = StObject.set(x, "datapathProvider", value.asInstanceOf[js.Any])
     

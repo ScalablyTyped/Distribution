@@ -37,7 +37,8 @@ object OptimizedDepInfo {
     __obj.asInstanceOf[OptimizedDepInfo]
   }
   
-  extension [Self <: OptimizedDepInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimizedDepInfo] (val x: Self) extends AnyVal {
     
     inline def setBrowserHash(value: String): Self = StObject.set(x, "browserHash", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object IgGridAppendRowsOnDemandLocale {
     __obj.asInstanceOf[IgGridAppendRowsOnDemandLocale]
   }
   
-  extension [Self <: IgGridAppendRowsOnDemandLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridAppendRowsOnDemandLocale] (val x: Self) extends AnyVal {
     
     inline def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
     

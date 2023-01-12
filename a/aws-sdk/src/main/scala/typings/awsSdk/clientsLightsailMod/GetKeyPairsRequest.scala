@@ -23,7 +23,8 @@ object GetKeyPairsRequest {
     __obj.asInstanceOf[GetKeyPairsRequest]
   }
   
-  extension [Self <: GetKeyPairsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKeyPairsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeDefaultKeyPair(value: Boolean): Self = StObject.set(x, "includeDefaultKeyPair", value.asInstanceOf[js.Any])
     

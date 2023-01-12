@@ -21,7 +21,8 @@ object DownloadButtonDescriptor {
     __obj.asInstanceOf[DownloadButtonDescriptor]
   }
   
-  extension [Self <: DownloadButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDownloadFilename(value: String): Self = StObject.set(x, "downloadFilename", value.asInstanceOf[js.Any])
     

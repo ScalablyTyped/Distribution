@@ -54,7 +54,8 @@ object relayHooksHelpersMod {
       __obj.asInstanceOf[KeyType[TData]]
     }
     
-    extension [Self <: KeyType[?], TData](x: Self & KeyType[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyType[?], TData] (val x: Self & KeyType[TData]) extends AnyVal {
       
       inline def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])
       

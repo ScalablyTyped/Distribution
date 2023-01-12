@@ -38,7 +38,8 @@ object AnimationSpec {
     __obj.asInstanceOf[AnimationSpec[TType]]
   }
   
-  extension [Self <: AnimationSpec[?], TType /* <: ChartType */](x: Self & AnimationSpec[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpec[?], TType /* <: ChartType */] (val x: Self & AnimationSpec[TType]) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[TType]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeSourceLocationRequest {
     __obj.asInstanceOf[DescribeSourceLocationRequest]
   }
   
-  extension [Self <: DescribeSourceLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSourceLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
   }

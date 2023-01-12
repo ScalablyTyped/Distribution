@@ -149,7 +149,8 @@ object ojGanttRowEventMap {
     __obj.asInstanceOf[ojGanttRowEventMap]
   }
   
-  extension [Self <: ojGanttRowEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojGanttRowEventMap] (val x: Self) extends AnyVal {
     
     inline def setLabelChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "labelChanged", value.asInstanceOf[js.Any])
     

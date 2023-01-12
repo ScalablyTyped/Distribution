@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setRuler(value: ^[BlockParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setRuler(value: ^[CoreParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Ruler]
     }
     
-    extension [Self <: Ruler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ruler] (val x: Self) extends AnyVal {
       
       inline def setRuler(value: ^[InlineParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
@@ -72,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       inline def setRules(value: typings.remarkable.libMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }

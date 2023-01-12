@@ -15,7 +15,8 @@ object CopyDBClusterParameterGroupResult {
     __obj.asInstanceOf[CopyDBClusterParameterGroupResult]
   }
   
-  extension [Self <: CopyDBClusterParameterGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyDBClusterParameterGroupResult] (val x: Self) extends AnyVal {
     
     inline def setDBClusterParameterGroup(value: DBClusterParameterGroup): Self = StObject.set(x, "DBClusterParameterGroup", value.asInstanceOf[js.Any])
     

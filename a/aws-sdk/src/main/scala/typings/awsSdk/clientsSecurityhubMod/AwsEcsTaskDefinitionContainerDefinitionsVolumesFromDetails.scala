@@ -23,7 +23,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetails] (val x: Self) extends AnyVal {
     
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     

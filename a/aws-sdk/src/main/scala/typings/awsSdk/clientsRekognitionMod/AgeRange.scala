@@ -23,7 +23,8 @@ object AgeRange {
     __obj.asInstanceOf[AgeRange]
   }
   
-  extension [Self <: AgeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgeRange] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: UInteger): Self = StObject.set(x, "High", value.asInstanceOf[js.Any])
     

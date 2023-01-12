@@ -28,7 +28,8 @@ object RevokeTokenRequest {
     __obj.asInstanceOf[RevokeTokenRequest]
   }
   
-  extension [Self <: RevokeTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

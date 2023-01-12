@@ -21,7 +21,8 @@ object FlashContour {
     __obj.asInstanceOf[FlashContour]
   }
   
-  extension [Self <: FlashContour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashContour] (val x: Self) extends AnyVal {
     
     inline def setFill(value: FlashFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

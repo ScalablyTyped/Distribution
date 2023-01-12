@@ -52,7 +52,8 @@ object libCommonFoldingRangeMod {
       __obj.asInstanceOf[FoldingRangeProviderMiddleware]
     }
     
-    extension [Self <: FoldingRangeProviderMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FoldingRangeProviderMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideFoldingRanges(
         value: js.ThisFunction4[

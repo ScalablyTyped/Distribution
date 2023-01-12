@@ -499,7 +499,8 @@ object outPlatformPackagerMod {
       __obj.asInstanceOf[IconInfo]
     }
     
-    extension [Self <: IconInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconInfo] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

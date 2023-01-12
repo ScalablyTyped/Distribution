@@ -42,7 +42,8 @@ object ListFormat {
     __obj.asInstanceOf[ListFormat]
   }
   
-  extension [Self <: ListFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFormat] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: js.Iterable[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

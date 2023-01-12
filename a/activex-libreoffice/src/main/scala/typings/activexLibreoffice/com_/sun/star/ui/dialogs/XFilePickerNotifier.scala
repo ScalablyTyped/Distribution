@@ -36,7 +36,8 @@ object XFilePickerNotifier {
     __obj.asInstanceOf[XFilePickerNotifier]
   }
   
-  extension [Self <: XFilePickerNotifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilePickerNotifier] (val x: Self) extends AnyVal {
     
     inline def setAddFilePickerListener(value: XFilePickerListener => Unit): Self = StObject.set(x, "addFilePickerListener", js.Any.fromFunction1(value))
     

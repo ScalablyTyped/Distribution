@@ -1489,7 +1489,8 @@ object sapMImageMod {
       __obj.asInstanceOf[ImageSettings]
     }
     
-    extension [Self <: ImageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveSrc(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeSrc", value.asInstanceOf[js.Any])
       

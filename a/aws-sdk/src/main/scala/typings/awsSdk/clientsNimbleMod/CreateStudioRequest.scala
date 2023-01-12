@@ -53,7 +53,8 @@ object CreateStudioRequest {
     __obj.asInstanceOf[CreateStudioRequest]
   }
   
-  extension [Self <: CreateStudioRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStudioRequest] (val x: Self) extends AnyVal {
     
     inline def setAdminRoleArn(value: RoleArn): Self = StObject.set(x, "adminRoleArn", value.asInstanceOf[js.Any])
     

@@ -378,7 +378,8 @@ object PartialManifest {
     __obj.asInstanceOf[PartialManifest]
   }
   
-  extension [Self <: PartialManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialManifest] (val x: Self) extends AnyVal {
     
     inline def setAction_handlers(
       value: js.Array[

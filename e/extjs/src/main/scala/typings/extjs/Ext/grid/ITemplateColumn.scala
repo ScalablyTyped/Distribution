@@ -30,7 +30,8 @@ object ITemplateColumn {
     __obj.asInstanceOf[ITemplateColumn]
   }
   
-  extension [Self <: ITemplateColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITemplateColumn] (val x: Self) extends AnyVal {
     
     inline def setDefaultRenderer(
       value: (/* value */ js.UndefOr[Any], /* meta */ js.UndefOr[Any], /* record */ js.UndefOr[Any]) => Unit

@@ -17,7 +17,8 @@ object RestEncoder {
     __obj.asInstanceOf[RestEncoder]
   }
   
-  extension [Self <: RestEncoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestEncoder] (val x: Self) extends AnyVal {
     
     inline def setRestEncoder(value: js.typedarray.Uint8Array): Self = StObject.set(x, "restEncoder", value.asInstanceOf[js.Any])
     

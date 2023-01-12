@@ -30,7 +30,8 @@ object SpineFileConfig {
     __obj.asInstanceOf[SpineFileConfig]
   }
   
-  extension [Self <: SpineFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpineFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     

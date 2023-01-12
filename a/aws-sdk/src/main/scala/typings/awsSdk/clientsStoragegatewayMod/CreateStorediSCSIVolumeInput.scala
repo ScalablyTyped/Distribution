@@ -61,7 +61,8 @@ object CreateStorediSCSIVolumeInput {
     __obj.asInstanceOf[CreateStorediSCSIVolumeInput]
   }
   
-  extension [Self <: CreateStorediSCSIVolumeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorediSCSIVolumeInput] (val x: Self) extends AnyVal {
     
     inline def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     

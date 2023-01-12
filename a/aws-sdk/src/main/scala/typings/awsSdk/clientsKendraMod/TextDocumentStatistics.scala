@@ -23,7 +23,8 @@ object TextDocumentStatistics {
     __obj.asInstanceOf[TextDocumentStatistics]
   }
   
-  extension [Self <: TextDocumentStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentStatistics] (val x: Self) extends AnyVal {
     
     inline def setIndexedTextBytes(value: IndexedTextBytes): Self = StObject.set(x, "IndexedTextBytes", value.asInstanceOf[js.Any])
     

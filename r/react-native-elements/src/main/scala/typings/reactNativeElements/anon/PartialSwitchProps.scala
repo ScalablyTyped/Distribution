@@ -195,7 +195,8 @@ object PartialSwitchProps {
     __obj.asInstanceOf[PartialSwitchProps]
   }
   
-  extension [Self <: PartialSwitchProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSwitchProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

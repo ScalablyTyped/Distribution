@@ -44,7 +44,8 @@ object Classifier {
     __obj.asInstanceOf[Classifier]
   }
   
-  extension [Self <: Classifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Array[Class]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

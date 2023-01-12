@@ -17,7 +17,8 @@ object LiftRequest {
     __obj.asInstanceOf[LiftRequest]
   }
   
-  extension [Self <: LiftRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiftRequest] (val x: Self) extends AnyVal {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     

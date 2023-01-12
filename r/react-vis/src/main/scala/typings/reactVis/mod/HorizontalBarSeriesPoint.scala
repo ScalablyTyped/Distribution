@@ -27,7 +27,8 @@ object HorizontalBarSeriesPoint {
     __obj.asInstanceOf[HorizontalBarSeriesPoint]
   }
   
-  extension [Self <: HorizontalBarSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalBarSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

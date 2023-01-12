@@ -23,7 +23,8 @@ object StockChartCategoryAxisItemSelect {
     __obj.asInstanceOf[StockChartCategoryAxisItemSelect]
   }
   
-  extension [Self <: StockChartCategoryAxisItemSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartCategoryAxisItemSelect] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String | js.Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

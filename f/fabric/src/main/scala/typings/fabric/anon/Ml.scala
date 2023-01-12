@@ -32,7 +32,8 @@ object Ml {
     __obj.asInstanceOf[Ml]
   }
   
-  extension [Self <: Ml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ml] (val x: Self) extends AnyVal {
     
     inline def setBl(value: Point): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     

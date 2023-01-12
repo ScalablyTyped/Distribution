@@ -19,7 +19,8 @@ object ScrollViewChangingEvent {
     __obj.asInstanceOf[ScrollViewChangingEvent]
   }
   
-  extension [Self <: ScrollViewChangingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewChangingEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
     

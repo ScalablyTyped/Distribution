@@ -76,7 +76,8 @@ object log {
       __obj.asInstanceOf[CommonLogging[T]]
     }
     
-    extension [Self <: CommonLogging[?], T](x: Self & CommonLogging[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonLogging[?], T] (val x: Self & CommonLogging[T]) extends AnyVal {
       
       inline def setError(value: String => T): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -128,7 +129,8 @@ object log {
       __obj.asInstanceOf[LogModule]
     }
     
-    extension [Self <: LogModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogModule] (val x: Self) extends AnyVal {
       
       inline def setNotverbose(value: NotVerboseLogModule): Self = StObject.set(x, "notverbose", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object log {
       __obj.asInstanceOf[NotVerboseLogModule]
     }
     
-    extension [Self <: NotVerboseLogModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotVerboseLogModule] (val x: Self) extends AnyVal {
       
       inline def setOr(value: VerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     }
@@ -198,7 +201,8 @@ object log {
       __obj.asInstanceOf[VerboseLogModule]
     }
     
-    extension [Self <: VerboseLogModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerboseLogModule] (val x: Self) extends AnyVal {
       
       inline def setOr(value: NotVerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     }

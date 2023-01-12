@@ -25,7 +25,8 @@ object YouTubeBroadcastSessionInfo {
     __obj.asInstanceOf[YouTubeBroadcastSessionInfo]
   }
   
-  extension [Self <: YouTubeBroadcastSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YouTubeBroadcastSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setBroadcastStats(value: YouTubeBroadcastStats): Self = StObject.set(x, "broadcastStats", value.asInstanceOf[js.Any])
     

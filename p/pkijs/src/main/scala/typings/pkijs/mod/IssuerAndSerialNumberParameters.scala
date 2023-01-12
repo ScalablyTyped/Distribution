@@ -21,7 +21,8 @@ object IssuerAndSerialNumberParameters {
     __obj.asInstanceOf[IssuerAndSerialNumberParameters]
   }
   
-  extension [Self <: IssuerAndSerialNumberParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerAndSerialNumberParameters] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: RelativeDistinguishedNames): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

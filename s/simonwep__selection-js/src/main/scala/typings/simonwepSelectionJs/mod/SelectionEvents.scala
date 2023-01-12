@@ -26,7 +26,8 @@ object SelectionEvents {
     __obj.asInstanceOf[SelectionEvents]
   }
   
-  extension [Self <: SelectionEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionEvents] (val x: Self) extends AnyVal {
     
     inline def setBeforestart(value: SelectionEvent => Boolean): Self = StObject.set(x, "beforestart", js.Any.fromFunction1(value))
     

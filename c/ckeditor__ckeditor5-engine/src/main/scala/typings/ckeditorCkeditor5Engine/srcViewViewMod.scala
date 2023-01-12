@@ -76,7 +76,8 @@ object srcViewViewMod {
       __obj.asInstanceOf[Observers]
     }
     
-    extension [Self <: Observers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
       
       inline def setArrowKeysObserver(value: ArrowKeysObserver): Self = StObject.set(x, "ArrowKeysObserver", value.asInstanceOf[js.Any])
       

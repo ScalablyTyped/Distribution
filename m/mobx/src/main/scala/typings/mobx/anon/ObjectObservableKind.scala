@@ -31,7 +31,8 @@ object ObjectObservableKind {
     __obj.asInstanceOf[ObjectObservableKind[T]]
   }
   
-  extension [Self <: ObjectObservableKind[?], T](x: Self & ObjectObservableKind[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectObservableKind[?], T] (val x: Self & ObjectObservableKind[T]) extends AnyVal {
     
     inline def setDebugObjectName(value: String): Self = StObject.set(x, "debugObjectName", value.asInstanceOf[js.Any])
     

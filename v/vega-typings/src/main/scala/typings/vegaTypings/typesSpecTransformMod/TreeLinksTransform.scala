@@ -19,7 +19,8 @@ object TreeLinksTransform {
     __obj.asInstanceOf[TreeLinksTransform]
   }
   
-  extension [Self <: TreeLinksTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeLinksTransform] (val x: Self) extends AnyVal {
     
     inline def setType(value: treelinks): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object OID {
     __obj.asInstanceOf[OID]
   }
   
-  extension [Self <: OID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OID] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     

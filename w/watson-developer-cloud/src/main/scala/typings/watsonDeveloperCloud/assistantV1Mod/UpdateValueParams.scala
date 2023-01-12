@@ -43,7 +43,8 @@ object UpdateValueParams {
     __obj.asInstanceOf[UpdateValueParams]
   }
   
-  extension [Self <: UpdateValueParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateValueParams] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

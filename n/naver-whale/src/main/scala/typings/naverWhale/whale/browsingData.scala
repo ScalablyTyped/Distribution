@@ -79,7 +79,8 @@ object browsingData {
       __obj.asInstanceOf[DataTypeSet]
     }
     
-    extension [Self <: DataTypeSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypeSet] (val x: Self) extends AnyVal {
       
       inline def setAppcache(value: Boolean): Self = StObject.set(x, "appcache", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object browsingData {
       __obj.asInstanceOf[OriginTypes]
     }
     
-    extension [Self <: OriginTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginTypes] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: Boolean): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object browsingData {
       __obj.asInstanceOf[RemovalOptions]
     }
     
-    extension [Self <: RemovalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovalOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludeOrigins(value: js.Array[String]): Self = StObject.set(x, "excludeOrigins", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object browsingData {
       __obj.asInstanceOf[SettingsResult]
     }
     
-    extension [Self <: SettingsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsResult] (val x: Self) extends AnyVal {
       
       inline def setDataRemovalPermitted(value: typings.chrome.chrome.browsingData.DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
       

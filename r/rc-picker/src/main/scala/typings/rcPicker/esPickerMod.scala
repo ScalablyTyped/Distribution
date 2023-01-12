@@ -470,7 +470,8 @@ object esPickerMod {
       __obj.asInstanceOf[PickerBaseProps[DateType]]
     }
     
-    extension [Self <: PickerBaseProps[?], DateType](x: Self & PickerBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerBaseProps[?], DateType] (val x: Self & PickerBaseProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1274,7 +1275,8 @@ object esPickerMod {
       __obj.asInstanceOf[PickerDateProps[DateType]]
     }
     
-    extension [Self <: PickerDateProps[?], DateType](x: Self & PickerDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerDateProps[?], DateType] (val x: Self & PickerDateProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -1757,7 +1759,8 @@ object esPickerMod {
       __obj.asInstanceOf[PickerRefConfig]
     }
     
-    extension [Self <: PickerRefConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerRefConfig] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -1862,7 +1865,8 @@ object esPickerMod {
       __obj.asInstanceOf[PickerSharedProps[DateType]]
     }
     
-    extension [Self <: PickerSharedProps[?], DateType](x: Self & PickerSharedProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerSharedProps[?], DateType] (val x: Self & PickerSharedProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -2428,7 +2432,8 @@ object esPickerMod {
       __obj.asInstanceOf[PickerTimeProps[DateType]]
     }
     
-    extension [Self <: PickerTimeProps[?], DateType](x: Self & PickerTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerTimeProps[?], DateType] (val x: Self & PickerTimeProps[DateType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

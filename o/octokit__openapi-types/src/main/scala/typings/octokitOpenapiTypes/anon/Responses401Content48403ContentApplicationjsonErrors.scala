@@ -17,7 +17,8 @@ object Responses401Content48403ContentApplicationjsonErrors {
     __obj.asInstanceOf[Responses401Content48403ContentApplicationjsonErrors]
   }
   
-  extension [Self <: Responses401Content48403ContentApplicationjsonErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses401Content48403ContentApplicationjsonErrors] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCardidNumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

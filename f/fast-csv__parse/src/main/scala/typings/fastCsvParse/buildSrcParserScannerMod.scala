@@ -60,7 +60,8 @@ object buildSrcParserScannerMod {
       __obj.asInstanceOf[ScannerArgs]
     }
     
-    extension [Self <: ScannerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScannerArgs] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

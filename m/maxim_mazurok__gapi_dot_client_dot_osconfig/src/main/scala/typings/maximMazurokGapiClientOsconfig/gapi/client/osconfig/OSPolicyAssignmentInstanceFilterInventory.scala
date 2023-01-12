@@ -22,7 +22,8 @@ object OSPolicyAssignmentInstanceFilterInventory {
     __obj.asInstanceOf[OSPolicyAssignmentInstanceFilterInventory]
   }
   
-  extension [Self <: OSPolicyAssignmentInstanceFilterInventory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentInstanceFilterInventory] (val x: Self) extends AnyVal {
     
     inline def setOsShortName(value: String): Self = StObject.set(x, "osShortName", value.asInstanceOf[js.Any])
     

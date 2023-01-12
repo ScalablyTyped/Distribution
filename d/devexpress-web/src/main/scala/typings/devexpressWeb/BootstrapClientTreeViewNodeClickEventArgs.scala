@@ -28,7 +28,8 @@ object BootstrapClientTreeViewNodeClickEventArgs {
     __obj.asInstanceOf[BootstrapClientTreeViewNodeClickEventArgs]
   }
   
-  extension [Self <: BootstrapClientTreeViewNodeClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientTreeViewNodeClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

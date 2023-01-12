@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compass-vertical-rhythm"
-version := "1.4-dt-20220624Z-f1578d"
+version := "1.4-dt-20220624Z-256009"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

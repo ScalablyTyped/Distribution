@@ -35,7 +35,8 @@ object PlotBubbleClusterZonesOptions {
     __obj.asInstanceOf[PlotBubbleClusterZonesOptions]
   }
   
-  extension [Self <: PlotBubbleClusterZonesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBubbleClusterZonesOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

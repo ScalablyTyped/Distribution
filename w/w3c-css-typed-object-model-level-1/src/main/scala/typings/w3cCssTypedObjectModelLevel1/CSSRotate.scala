@@ -31,7 +31,8 @@ object CSSRotate {
     __obj.asInstanceOf[CSSRotate]
   }
   
-  extension [Self <: CSSRotate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSRotate] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: CSSNumericValue): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

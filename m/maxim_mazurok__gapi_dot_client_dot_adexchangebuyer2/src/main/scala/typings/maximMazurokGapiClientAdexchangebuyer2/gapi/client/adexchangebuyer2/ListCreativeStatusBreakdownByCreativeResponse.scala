@@ -22,7 +22,8 @@ object ListCreativeStatusBreakdownByCreativeResponse {
     __obj.asInstanceOf[ListCreativeStatusBreakdownByCreativeResponse]
   }
   
-  extension [Self <: ListCreativeStatusBreakdownByCreativeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCreativeStatusBreakdownByCreativeResponse] (val x: Self) extends AnyVal {
     
     inline def setFilteredBidCreativeRows(value: js.Array[FilteredBidCreativeRow]): Self = StObject.set(x, "filteredBidCreativeRows", value.asInstanceOf[js.Any])
     

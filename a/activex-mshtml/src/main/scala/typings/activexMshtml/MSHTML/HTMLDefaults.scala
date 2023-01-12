@@ -55,7 +55,8 @@ object HTMLDefaults {
     __obj.asInstanceOf[HTMLDefaults]
   }
   
-  extension [Self <: HTMLDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLDefaults] (val x: Self) extends AnyVal {
     
     inline def setCanHaveHTML(value: Boolean): Self = StObject.set(x, "canHaveHTML", value.asInstanceOf[js.Any])
     

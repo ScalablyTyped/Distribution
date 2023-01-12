@@ -38,7 +38,8 @@ object CreateCellResponse {
     __obj.asInstanceOf[CreateCellResponse]
   }
   
-  extension [Self <: CreateCellResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCellResponse] (val x: Self) extends AnyVal {
     
     inline def setCellArn(value: stringMax256): Self = StObject.set(x, "CellArn", value.asInstanceOf[js.Any])
     

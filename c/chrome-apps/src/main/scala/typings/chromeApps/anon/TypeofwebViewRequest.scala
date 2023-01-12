@@ -214,7 +214,8 @@ object TypeofwebViewRequest {
     __obj.asInstanceOf[TypeofwebViewRequest]
   }
   
-  extension [Self <: TypeofwebViewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofwebViewRequest] (val x: Self) extends AnyVal {
     
     inline def setAddRequestCookie(value: Instantiable1[/* parameters */ AddCookie[RequestCookie], AddRequestCookie]): Self = StObject.set(x, "AddRequestCookie", value.asInstanceOf[js.Any])
     

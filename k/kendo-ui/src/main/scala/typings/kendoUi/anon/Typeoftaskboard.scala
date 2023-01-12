@@ -19,7 +19,8 @@ object Typeoftaskboard {
     __obj.asInstanceOf[Typeoftaskboard]
   }
   
-  extension [Self <: Typeoftaskboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeoftaskboard] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Instantiable0[Command]): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

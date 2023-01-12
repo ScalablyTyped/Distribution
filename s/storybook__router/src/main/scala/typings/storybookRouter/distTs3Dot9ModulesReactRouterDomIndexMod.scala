@@ -246,7 +246,8 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
       __obj.asInstanceOf[BrowserRouterProps]
     }
     
-    extension [Self <: BrowserRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
       __obj.asInstanceOf[HashRouterProps]
     }
     
-    extension [Self <: HashRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -679,7 +681,8 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1823,7 +1826,8 @@ object distTs3Dot9ModulesReactRouterDomIndexMod {
       __obj.asInstanceOf[NavLinkProps]
     }
     
-    extension [Self <: NavLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

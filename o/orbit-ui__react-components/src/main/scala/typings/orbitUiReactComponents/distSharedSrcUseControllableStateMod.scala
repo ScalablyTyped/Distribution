@@ -40,7 +40,8 @@ object distSharedSrcUseControllableStateMod {
       __obj.asInstanceOf[ControllableStateOptions[T]]
     }
     
-    extension [Self <: ControllableStateOptions[?], T](x: Self & ControllableStateOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControllableStateOptions[?], T] (val x: Self & ControllableStateOptions[T]) extends AnyVal {
       
       inline def setOnChange(value: (/* newState */ T, /* context */ js.UndefOr[OnChangeContext]) => js.UndefOr[T]): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
@@ -61,7 +62,8 @@ object distSharedSrcUseControllableStateMod {
       __obj.asInstanceOf[OnChangeContext]
     }
     
-    extension [Self <: OnChangeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeContext] (val x: Self) extends AnyVal {
       
       inline def setIsControlled(value: Boolean): Self = StObject.set(x, "isControlled", value.asInstanceOf[js.Any])
       

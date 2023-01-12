@@ -28,7 +28,8 @@ object KeyValueChangeRecord {
     __obj.asInstanceOf[KeyValueChangeRecord[K, V]]
   }
   
-  extension [Self <: KeyValueChangeRecord[?, ?], K, V](x: Self & (KeyValueChangeRecord[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValueChangeRecord[?, ?], K, V] (val x: Self & (KeyValueChangeRecord[K, V])) extends AnyVal {
     
     inline def setCurrentValue(value: V): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MRangeGroupBy {
     __obj.asInstanceOf[MRangeGroupBy]
   }
   
-  extension [Self <: MRangeGroupBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRangeGroupBy] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AddFlowOutputsResponse {
     __obj.asInstanceOf[AddFlowOutputsResponse]
   }
   
-  extension [Self <: AddFlowOutputsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddFlowOutputsResponse] (val x: Self) extends AnyVal {
     
     inline def setFlowArn(value: string): Self = StObject.set(x, "FlowArn", value.asInstanceOf[js.Any])
     

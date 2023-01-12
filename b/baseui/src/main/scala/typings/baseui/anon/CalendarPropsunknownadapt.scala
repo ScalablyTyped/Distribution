@@ -117,7 +117,8 @@ object CalendarPropsunknownadapt {
     __obj.asInstanceOf[CalendarPropsunknownadapt]
   }
   
-  extension [Self <: CalendarPropsunknownadapt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarPropsunknownadapt] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

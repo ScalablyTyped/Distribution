@@ -63,7 +63,8 @@ object MergePullRequestBySquashInput {
     __obj.asInstanceOf[MergePullRequestBySquashInput]
   }
   
-  extension [Self <: MergePullRequestBySquashInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergePullRequestBySquashInput] (val x: Self) extends AnyVal {
     
     inline def setAuthorName(value: Name): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     

@@ -157,7 +157,8 @@ object SimplePaginationOptions {
     __obj.asInstanceOf[SimplePaginationOptions]
   }
   
-  extension [Self <: SimplePaginationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplePaginationOptions] (val x: Self) extends AnyVal {
     
     inline def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
     

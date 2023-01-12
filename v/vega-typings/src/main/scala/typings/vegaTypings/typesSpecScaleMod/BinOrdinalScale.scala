@@ -28,7 +28,8 @@ object BinOrdinalScale {
     __obj.asInstanceOf[BinOrdinalScale]
   }
   
-  extension [Self <: BinOrdinalScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinOrdinalScale] (val x: Self) extends AnyVal {
     
     inline def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PartialClassesany {
     __obj.asInstanceOf[PartialClassesany]
   }
   
-  extension [Self <: PartialClassesany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesany] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Partial[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object spackMod {
       __obj.asInstanceOf[BundleOptions]
     }
     
-    extension [Self <: BundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
       
       inline def setWorkingDir(value: String): Self = StObject.set(x, "workingDir", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object spackMod {
       __obj.asInstanceOf[OutputConfig]
     }
     
-    extension [Self <: OutputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object spackMod {
       __obj.asInstanceOf[SpackConfig]
     }
     
-    extension [Self <: SpackConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpackConfig] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: EntryConfig): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

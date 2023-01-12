@@ -17,7 +17,8 @@ object MinDate {
     __obj.asInstanceOf[MinDate[T]]
   }
   
-  extension [Self <: MinDate[?], T](x: Self & MinDate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinDate[?], T] (val x: Self & MinDate[T]) extends AnyVal {
     
     inline def setIncludeDates(value: js.Array[T]): Self = StObject.set(x, "includeDates", value.asInstanceOf[js.Any])
     

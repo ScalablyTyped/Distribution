@@ -85,7 +85,8 @@ object MatchOptions {
     __obj.asInstanceOf[MatchOptions]
   }
   
-  extension [Self <: MatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: (js.Array[duration | nodes | distance | weight | datasources | speed]) | Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

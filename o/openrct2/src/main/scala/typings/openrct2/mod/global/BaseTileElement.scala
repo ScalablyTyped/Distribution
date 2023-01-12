@@ -39,7 +39,8 @@ object BaseTileElement {
     __obj.asInstanceOf[BaseTileElement]
   }
   
-  extension [Self <: BaseTileElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTileElement] (val x: Self) extends AnyVal {
     
     inline def setBaseHeight(value: Double): Self = StObject.set(x, "baseHeight", value.asInstanceOf[js.Any])
     

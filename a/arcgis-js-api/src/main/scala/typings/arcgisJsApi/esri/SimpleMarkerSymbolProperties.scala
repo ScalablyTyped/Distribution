@@ -54,7 +54,8 @@ object SimpleMarkerSymbolProperties {
     __obj.asInstanceOf[SimpleMarkerSymbolProperties]
   }
   
-  extension [Self <: SimpleMarkerSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleMarkerSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setOutline(value: SimpleLineSymbolProperties): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     

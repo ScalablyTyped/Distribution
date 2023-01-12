@@ -22,7 +22,8 @@ object AuthorizationsVoid {
       __obj.asInstanceOf[RequestHeaders]
     }
     
-    extension [Self <: RequestHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestHeaders] (val x: Self) extends AnyVal {
       
       inline def `setPayPal-Auth-Assertion`(value: String): Self = StObject.set(x, "PayPal-Auth-Assertion", value.asInstanceOf[js.Any])
       

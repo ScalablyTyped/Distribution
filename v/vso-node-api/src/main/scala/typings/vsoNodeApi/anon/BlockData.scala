@@ -19,7 +19,8 @@ object BlockData {
     __obj.asInstanceOf[BlockData]
   }
   
-  extension [Self <: BlockData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockData] (val x: Self) extends AnyVal {
     
     inline def setBlockData(value: scala.Double): Self = StObject.set(x, "blockData", value.asInstanceOf[js.Any])
     

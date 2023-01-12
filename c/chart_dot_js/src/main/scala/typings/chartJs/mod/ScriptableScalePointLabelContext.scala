@@ -30,7 +30,8 @@ object ScriptableScalePointLabelContext {
     __obj.asInstanceOf[ScriptableScalePointLabelContext]
   }
   
-  extension [Self <: ScriptableScalePointLabelContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableScalePointLabelContext] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Chart[ChartType, DefaultDataPoint[ChartType], Any]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

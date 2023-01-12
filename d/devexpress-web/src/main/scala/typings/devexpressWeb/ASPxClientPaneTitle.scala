@@ -28,7 +28,8 @@ object ASPxClientPaneTitle {
     __obj.asInstanceOf[ASPxClientPaneTitle]
   }
   
-  extension [Self <: ASPxClientPaneTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPaneTitle] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RadiusZ {
     __obj.asInstanceOf[RadiusZ]
   }
   
-  extension [Self <: RadiusZ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadiusZ] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

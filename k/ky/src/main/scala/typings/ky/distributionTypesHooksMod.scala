@@ -44,7 +44,8 @@ object distributionTypesHooksMod {
       __obj.asInstanceOf[BeforeRetryState]
     }
     
-    extension [Self <: BeforeRetryState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeRetryState] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object distributionTypesHooksMod {
       __obj.asInstanceOf[Hooks]
     }
     
-    extension [Self <: Hooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
       
       inline def setAfterResponse(value: js.Array[AfterResponseHook]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])
       

@@ -240,7 +240,8 @@ object distJobMod {
       __obj.asInstanceOf[JobAttributes[T]]
     }
     
-    extension [Self <: JobAttributes[?], T /* <: JobAttributesData */](x: Self & JobAttributes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobAttributes[?], T /* <: JobAttributesData */] (val x: Self & JobAttributes[T]) extends AnyVal {
       
       inline def setAgenda(value: Agenda): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
       

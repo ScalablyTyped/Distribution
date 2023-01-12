@@ -38,7 +38,8 @@ object ListReplaysRequest {
     __obj.asInstanceOf[ListReplaysRequest]
   }
   
-  extension [Self <: ListReplaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReplaysRequest] (val x: Self) extends AnyVal {
     
     inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     

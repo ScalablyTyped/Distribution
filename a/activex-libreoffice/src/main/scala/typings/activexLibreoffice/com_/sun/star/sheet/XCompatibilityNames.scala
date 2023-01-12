@@ -42,7 +42,8 @@ object XCompatibilityNames {
     __obj.asInstanceOf[XCompatibilityNames]
   }
   
-  extension [Self <: XCompatibilityNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCompatibilityNames] (val x: Self) extends AnyVal {
     
     inline def setGetCompatibilityNames(value: String => SafeArray[LocalizedName]): Self = StObject.set(x, "getCompatibilityNames", js.Any.fromFunction1(value))
   }

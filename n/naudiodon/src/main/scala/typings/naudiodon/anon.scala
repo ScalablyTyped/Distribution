@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[DefaultHostAPI]
     }
     
-    extension [Self <: DefaultHostAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultHostAPI] (val x: Self) extends AnyVal {
       
       inline def setDefaultHostAPI(value: Double): Self = StObject.set(x, "defaultHostAPI", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[InOptions]
     }
     
-    extension [Self <: InOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InOptions] (val x: Self) extends AnyVal {
       
       inline def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
     }
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[InOptionsOutOptions]
     }
     
-    extension [Self <: InOptionsOutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InOptionsOutOptions] (val x: Self) extends AnyVal {
       
       inline def setInOptions(value: AudioOptions): Self = StObject.set(x, "inOptions", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[OutOptions]
     }
     
-    extension [Self <: OutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutOptions] (val x: Self) extends AnyVal {
       
       inline def setOutOptions(value: AudioOptions): Self = StObject.set(x, "outOptions", value.asInstanceOf[js.Any])
     }

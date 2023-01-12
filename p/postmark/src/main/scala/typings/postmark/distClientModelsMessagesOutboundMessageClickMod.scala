@@ -58,7 +58,8 @@ object distClientModelsMessagesOutboundMessageClickMod {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setClickLocation(value: LinkClickLocation): Self = StObject.set(x, "ClickLocation", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distClientModelsMessagesOutboundMessageClickMod {
       __obj.asInstanceOf[OutboundMessageClicks]
     }
     
-    extension [Self <: OutboundMessageClicks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessageClicks] (val x: Self) extends AnyVal {
       
       inline def setClicks(value: js.Array[ClickEvent]): Self = StObject.set(x, "Clicks", value.asInstanceOf[js.Any])
       

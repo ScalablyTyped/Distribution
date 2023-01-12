@@ -81,7 +81,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Vue]
       }
       
-      extension [Self <: Vue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
         
         inline def set$ls(value: WebStorage): Self = StObject.set(x, "$ls", value.asInstanceOf[js.Any])
       }
@@ -134,7 +136,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[VueConstructor]
       }
       
-      extension [Self <: VueConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VueConstructor] (val x: Self) extends AnyVal {
         
         inline def setLs(value: WebStorage): Self = StObject.set(x, "ls", value.asInstanceOf[js.Any])
       }

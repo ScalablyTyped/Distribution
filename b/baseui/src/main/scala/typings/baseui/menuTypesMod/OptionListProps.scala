@@ -74,7 +74,8 @@ object OptionListProps {
     __obj.asInstanceOf[OptionListProps]
   }
   
-  extension [Self <: OptionListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionListProps] (val x: Self) extends AnyVal {
     
     inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     

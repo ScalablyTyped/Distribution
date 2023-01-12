@@ -28,7 +28,8 @@ object WebSocketHandshakeResponseReceivedEvent {
     __obj.asInstanceOf[WebSocketHandshakeResponseReceivedEvent]
   }
   
-  extension [Self <: WebSocketHandshakeResponseReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSocketHandshakeResponseReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

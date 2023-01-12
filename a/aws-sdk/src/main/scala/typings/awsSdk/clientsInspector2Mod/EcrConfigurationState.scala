@@ -18,7 +18,8 @@ object EcrConfigurationState {
     __obj.asInstanceOf[EcrConfigurationState]
   }
   
-  extension [Self <: EcrConfigurationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcrConfigurationState] (val x: Self) extends AnyVal {
     
     inline def setRescanDurationState(value: EcrRescanDurationState): Self = StObject.set(x, "rescanDurationState", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XRangeHighlighter {
     __obj.asInstanceOf[XRangeHighlighter]
   }
   
-  extension [Self <: XRangeHighlighter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRangeHighlighter] (val x: Self) extends AnyVal {
     
     inline def setAddSelectionChangeListener(value: XSelectionChangeListener => Unit): Self = StObject.set(x, "addSelectionChangeListener", js.Any.fromFunction1(value))
     

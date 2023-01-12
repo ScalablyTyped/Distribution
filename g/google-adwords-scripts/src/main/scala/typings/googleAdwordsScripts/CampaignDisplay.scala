@@ -44,7 +44,8 @@ object CampaignDisplay {
     __obj.asInstanceOf[CampaignDisplay]
   }
   
-  extension [Self <: CampaignDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignDisplay] (val x: Self) extends AnyVal {
     
     inline def setExcludedAudiences(value: () => AdWordsSelector[ExcludedAudience]): Self = StObject.set(x, "excludedAudiences", js.Any.fromFunction0(value))
     

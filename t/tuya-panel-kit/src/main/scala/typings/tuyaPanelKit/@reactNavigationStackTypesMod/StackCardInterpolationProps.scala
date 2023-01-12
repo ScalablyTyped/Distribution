@@ -66,7 +66,8 @@ object StackCardInterpolationProps {
     __obj.asInstanceOf[StackCardInterpolationProps]
   }
   
-  extension [Self <: StackCardInterpolationProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackCardInterpolationProps] (val x: Self) extends AnyVal {
     
     inline def setClosing(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     

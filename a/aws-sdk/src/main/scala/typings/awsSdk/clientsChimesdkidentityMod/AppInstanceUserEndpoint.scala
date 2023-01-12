@@ -63,7 +63,8 @@ object AppInstanceUserEndpoint {
     __obj.asInstanceOf[AppInstanceUserEndpoint]
   }
   
-  extension [Self <: AppInstanceUserEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInstanceUserEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAllowMessages(value: AllowMessages): Self = StObject.set(x, "AllowMessages", value.asInstanceOf[js.Any])
     

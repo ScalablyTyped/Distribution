@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[HolderCallback]
     }
     
-    extension [Self <: HolderCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HolderCallback] (val x: Self) extends AnyVal {
       
       inline def setHolderCallback(value: (/* div */ HTMLDivElement, /* noticeProps */ NoticePropskeyKey) => Unit): Self = StObject.set(x, "holderCallback", js.Any.fromFunction2(value))
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[NoticeContentuserPassKeyK]
     }
     
-    extension [Self <: NoticeContentuserPassKeyK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeContentuserPassKeyK] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object anon {
       __obj.asInstanceOf[NoticePropskeyKey]
     }
     
-    extension [Self <: NoticePropskeyKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticePropskeyKey] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -334,7 +339,8 @@ object anon {
       __obj.asInstanceOf[NoticePropskeyReactText]
     }
     
-    extension [Self <: NoticePropskeyReactText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticePropskeyReactText] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -420,7 +426,8 @@ object anon {
       __obj.asInstanceOf[NotificationPropsgetConta]
     }
     
-    extension [Self <: NotificationPropsgetConta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationPropsgetConta] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String | js.Object): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -469,7 +476,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setHolderCallback(value: (/* div */ HTMLDivElement, /* noticeProps */ NoticePropskeyKey) => Unit): Self = StObject.set(x, "holderCallback", js.Any.fromFunction2(value))
       

@@ -39,7 +39,8 @@ object IEditorFindOptions {
     __obj.asInstanceOf[IEditorFindOptions]
   }
   
-  extension [Self <: IEditorFindOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorFindOptions] (val x: Self) extends AnyVal {
     
     inline def setAddExtraSpaceOnTop(value: Boolean): Self = StObject.set(x, "addExtraSpaceOnTop", value.asInstanceOf[js.Any])
     

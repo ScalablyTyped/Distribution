@@ -21,7 +21,8 @@ object Metric {
     __obj.asInstanceOf[Metric]
   }
   
-  extension [Self <: Metric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

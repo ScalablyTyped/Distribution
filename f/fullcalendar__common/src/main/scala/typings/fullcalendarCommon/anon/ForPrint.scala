@@ -15,7 +15,8 @@ object ForPrint {
     __obj.asInstanceOf[ForPrint]
   }
   
-  extension [Self <: ForPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForPrint] (val x: Self) extends AnyVal {
     
     inline def setForPrint(value: Boolean): Self = StObject.set(x, "forPrint", value.asInstanceOf[js.Any])
   }

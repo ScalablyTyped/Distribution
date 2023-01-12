@@ -17,7 +17,8 @@ object MaxConcurrent {
     __obj.asInstanceOf[MaxConcurrent]
   }
   
-  extension [Self <: MaxConcurrent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxConcurrent] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrent(value: Double): Self = StObject.set(x, "MaxConcurrent", value.asInstanceOf[js.Any])
     

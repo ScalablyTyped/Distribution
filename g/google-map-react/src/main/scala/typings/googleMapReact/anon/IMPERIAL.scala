@@ -17,7 +17,8 @@ object IMPERIAL {
     __obj.asInstanceOf[IMPERIAL]
   }
   
-  extension [Self <: IMPERIAL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMPERIAL] (val x: Self) extends AnyVal {
     
     inline def setIMPERIAL(value: Double): Self = StObject.set(x, "IMPERIAL", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object buildSrcTimedEventMod {
       __obj.asInstanceOf[TimedEvent]
     }
     
-    extension [Self <: TimedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimedEvent] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SpanAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

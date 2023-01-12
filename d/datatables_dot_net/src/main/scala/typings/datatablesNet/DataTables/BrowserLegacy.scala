@@ -21,7 +21,8 @@ object BrowserLegacy {
     __obj.asInstanceOf[BrowserLegacy]
   }
   
-  extension [Self <: BrowserLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserLegacy] (val x: Self) extends AnyVal {
     
     inline def setBBounding(value: Boolean): Self = StObject.set(x, "bBounding", value.asInstanceOf[js.Any])
     

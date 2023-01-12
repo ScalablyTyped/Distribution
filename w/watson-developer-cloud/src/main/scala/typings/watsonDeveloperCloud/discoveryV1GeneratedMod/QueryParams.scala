@@ -87,7 +87,8 @@ object QueryParams {
     __obj.asInstanceOf[QueryParams]
   }
   
-  extension [Self <: QueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParams] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: String): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
     

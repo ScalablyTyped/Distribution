@@ -21,7 +21,8 @@ object ChartParallelAxesLabelsLevelsOptions {
     __obj.asInstanceOf[ChartParallelAxesLabelsLevelsOptions]
   }
   
-  extension [Self <: ChartParallelAxesLabelsLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartParallelAxesLabelsLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

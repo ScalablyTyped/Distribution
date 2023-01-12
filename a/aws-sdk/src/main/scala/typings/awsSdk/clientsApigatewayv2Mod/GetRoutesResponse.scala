@@ -23,7 +23,8 @@ object GetRoutesResponse {
     __obj.asInstanceOf[GetRoutesResponse]
   }
   
-  extension [Self <: GetRoutesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRoutesResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfRoute): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

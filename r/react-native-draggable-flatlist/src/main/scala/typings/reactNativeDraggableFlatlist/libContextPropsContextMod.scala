@@ -447,7 +447,8 @@ object libContextPropsContextMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

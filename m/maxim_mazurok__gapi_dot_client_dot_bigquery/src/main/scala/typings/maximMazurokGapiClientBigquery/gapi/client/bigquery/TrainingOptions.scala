@@ -227,7 +227,8 @@ object TrainingOptions {
     __obj.asInstanceOf[TrainingOptions]
   }
   
-  extension [Self <: TrainingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainingOptions] (val x: Self) extends AnyVal {
     
     inline def setAdjustStepChanges(value: Boolean): Self = StObject.set(x, "adjustStepChanges", value.asInstanceOf[js.Any])
     

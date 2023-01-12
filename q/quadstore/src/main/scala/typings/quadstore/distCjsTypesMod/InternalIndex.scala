@@ -17,7 +17,8 @@ object InternalIndex {
     __obj.asInstanceOf[InternalIndex]
   }
   
-  extension [Self <: InternalIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalIndex] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

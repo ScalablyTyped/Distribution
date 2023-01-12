@@ -15,7 +15,8 @@ object InputOutputPropertySet {
     __obj.asInstanceOf[InputOutputPropertySet]
   }
   
-  extension [Self <: InputOutputPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputOutputPropertySet] (val x: Self) extends AnyVal {
     
     inline def setHasBindingPropertyName(value: String => Boolean): Self = StObject.set(x, "hasBindingPropertyName", js.Any.fromFunction1(value))
   }

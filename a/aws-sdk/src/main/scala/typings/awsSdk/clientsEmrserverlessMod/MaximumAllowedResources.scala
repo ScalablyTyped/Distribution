@@ -28,7 +28,8 @@ object MaximumAllowedResources {
     __obj.asInstanceOf[MaximumAllowedResources]
   }
   
-  extension [Self <: MaximumAllowedResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumAllowedResources] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: CpuSize): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

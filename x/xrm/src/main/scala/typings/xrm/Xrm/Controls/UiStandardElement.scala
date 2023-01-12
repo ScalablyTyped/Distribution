@@ -30,7 +30,8 @@ object UiStandardElement {
     __obj.asInstanceOf[UiStandardElement]
   }
   
-  extension [Self <: UiStandardElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiStandardElement] (val x: Self) extends AnyVal {
     
     inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }

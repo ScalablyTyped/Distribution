@@ -62,7 +62,8 @@ object FileWriterSync {
     __obj.asInstanceOf[FileWriterSync]
   }
   
-  extension [Self <: FileWriterSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileWriterSync] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

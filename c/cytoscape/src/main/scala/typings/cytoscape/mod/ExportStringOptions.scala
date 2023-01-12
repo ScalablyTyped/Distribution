@@ -22,7 +22,8 @@ object ExportStringOptions {
     __obj.asInstanceOf[ExportStringOptions]
   }
   
-  extension [Self <: ExportStringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportStringOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

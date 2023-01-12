@@ -39,7 +39,8 @@ object distLibCommandsBitfieldMod {
       __obj.asInstanceOf[BitFieldGetOperation]
     }
     
-    extension [Self <: BitFieldGetOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldGetOperation] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BitFieldEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distLibCommandsBitfieldMod {
       __obj.asInstanceOf[BitFieldIncrByOperation]
     }
     
-    extension [Self <: BitFieldIncrByOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldIncrByOperation] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BitFieldEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distLibCommandsBitfieldMod {
       __obj.asInstanceOf[BitFieldOperation[S]]
     }
     
-    extension [Self <: BitFieldOperation[?], S /* <: String */](x: Self & BitFieldOperation[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldOperation[?], S /* <: String */] (val x: Self & BitFieldOperation[S]) extends AnyVal {
       
       inline def setOperation(value: S): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     }
@@ -108,7 +111,8 @@ object distLibCommandsBitfieldMod {
       __obj.asInstanceOf[BitFieldOverflowOperation]
     }
     
-    extension [Self <: BitFieldOverflowOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldOverflowOperation] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     }
@@ -131,7 +135,8 @@ object distLibCommandsBitfieldMod {
       __obj.asInstanceOf[BitFieldSetOperation]
     }
     
-    extension [Self <: BitFieldSetOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitFieldSetOperation] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BitFieldEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

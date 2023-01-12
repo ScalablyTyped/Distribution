@@ -18,7 +18,8 @@ object NormalizedOpen {
     __obj.asInstanceOf[NormalizedOpen]
   }
   
-  extension [Self <: NormalizedOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedOpen] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

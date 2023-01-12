@@ -18,7 +18,8 @@ object ManifestPayload {
     __obj.asInstanceOf[ManifestPayload]
   }
   
-  extension [Self <: ManifestPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestPayload] (val x: Self) extends AnyVal {
     
     inline def setPayloadData(value: ManifestPayloadData): Self = StObject.set(x, "PayloadData", value.asInstanceOf[js.Any])
     

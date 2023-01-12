@@ -15,7 +15,8 @@ object DispatchOptions {
     __obj.asInstanceOf[DispatchOptions]
   }
   
-  extension [Self <: DispatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchOptions] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object BackgroundColorString {
     __obj.asInstanceOf[BackgroundColorString]
   }
   
-  extension [Self <: BackgroundColorString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundColorString] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
   }

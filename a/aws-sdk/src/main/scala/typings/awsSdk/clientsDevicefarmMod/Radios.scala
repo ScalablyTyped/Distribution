@@ -33,7 +33,8 @@ object Radios {
     __obj.asInstanceOf[Radios]
   }
   
-  extension [Self <: Radios](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radios] (val x: Self) extends AnyVal {
     
     inline def setBluetooth(value: Boolean): Self = StObject.set(x, "bluetooth", value.asInstanceOf[js.Any])
     

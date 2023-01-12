@@ -46,7 +46,8 @@ object libPlotsGroupedColumnChartMod extends Shortcut {
       __obj.asInstanceOf[GroupedColumnOptions]
     }
     
-    extension [Self <: GroupedColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupedColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnSize(value: Double): Self = StObject.set(x, "columnSize", value.asInstanceOf[js.Any])
       

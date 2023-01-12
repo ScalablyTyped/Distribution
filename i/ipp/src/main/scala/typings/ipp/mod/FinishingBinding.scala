@@ -17,7 +17,8 @@ object FinishingBinding {
     __obj.asInstanceOf[FinishingBinding]
   }
   
-  extension [Self <: FinishingBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingBinding] (val x: Self) extends AnyVal {
     
     inline def `setBinding-reference-edge`(value: ReferenceEdge): Self = StObject.set(x, "binding-reference-edge", value.asInstanceOf[js.Any])
     

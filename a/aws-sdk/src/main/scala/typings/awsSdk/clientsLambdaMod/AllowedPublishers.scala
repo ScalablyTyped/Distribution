@@ -18,7 +18,8 @@ object AllowedPublishers {
     __obj.asInstanceOf[AllowedPublishers]
   }
   
-  extension [Self <: AllowedPublishers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedPublishers] (val x: Self) extends AnyVal {
     
     inline def setSigningProfileVersionArns(value: SigningProfileVersionArns): Self = StObject.set(x, "SigningProfileVersionArns", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object Runners {
     __obj.asInstanceOf[Runners]
   }
   
-  extension [Self <: Runners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runners] (val x: Self) extends AnyVal {
     
     inline def setRunners(
       value: js.Array[

@@ -99,7 +99,8 @@ object XControl {
     __obj.asInstanceOf[XControl]
   }
   
-  extension [Self <: XControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XControl] (val x: Self) extends AnyVal {
     
     inline def setContext(value: XInterface): Self = StObject.set(x, "Context", value.asInstanceOf[js.Any])
     

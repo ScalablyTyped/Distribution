@@ -176,7 +176,8 @@ object Typography {
     __obj.asInstanceOf[Typography]
   }
   
-  extension [Self <: Typography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
     
     inline def setDisplayLarge(value: Font): Self = StObject.set(x, "DisplayLarge", value.asInstanceOf[js.Any])
     

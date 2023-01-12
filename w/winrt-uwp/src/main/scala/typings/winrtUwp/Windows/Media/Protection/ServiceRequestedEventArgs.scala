@@ -28,7 +28,8 @@ object ServiceRequestedEventArgs {
     __obj.asInstanceOf[ServiceRequestedEventArgs]
   }
   
-  extension [Self <: ServiceRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DescriptionProps {
     __obj.asInstanceOf[DescriptionProps]
   }
   
-  extension [Self <: DescriptionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescriptionProps] (val x: Self) extends AnyVal {
     
     inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
   }

@@ -83,7 +83,8 @@ object QueryObj {
     __obj.asInstanceOf[QueryObj]
   }
   
-  extension [Self <: QueryObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObj] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: String => Query): Self = StObject.set(x, "ascending", js.Any.fromFunction1(value))
     

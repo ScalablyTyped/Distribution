@@ -55,7 +55,8 @@ object MergerSettingsTypeProSett {
     __obj.asInstanceOf[MergerSettingsTypeProSett]
   }
   
-  extension [Self <: MergerSettingsTypeProSett](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergerSettingsTypeProSett] (val x: Self) extends AnyVal {
     
     inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     

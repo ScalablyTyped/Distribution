@@ -21,7 +21,8 @@ object WithDecayConfig {
     __obj.asInstanceOf[WithDecayConfig]
   }
   
-  extension [Self <: WithDecayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithDecayConfig] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     

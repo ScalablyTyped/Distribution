@@ -19,7 +19,8 @@ object GridCapabilities {
     __obj.asInstanceOf[GridCapabilities]
   }
   
-  extension [Self <: GridCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridCapabilities] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

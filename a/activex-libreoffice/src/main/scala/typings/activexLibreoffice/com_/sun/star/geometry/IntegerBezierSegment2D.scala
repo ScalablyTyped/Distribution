@@ -34,7 +34,8 @@ object IntegerBezierSegment2D {
     __obj.asInstanceOf[IntegerBezierSegment2D]
   }
   
-  extension [Self <: IntegerBezierSegment2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerBezierSegment2D] (val x: Self) extends AnyVal {
     
     inline def setC1x(value: Double): Self = StObject.set(x, "C1x", value.asInstanceOf[js.Any])
     

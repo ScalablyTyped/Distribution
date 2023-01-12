@@ -47,7 +47,8 @@ object pagingPagerMemoryMod {
       __obj.asInstanceOf[PagerMemory]
     }
     
-    extension [Self <: PagerMemory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerMemory] (val x: Self) extends AnyVal {
       
       inline def setCurrentFilters(value: js.Array[String]): Self = StObject.set(x, "currentFilters", value.asInstanceOf[js.Any])
       

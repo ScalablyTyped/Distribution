@@ -17,7 +17,8 @@ object SheetOptions {
     __obj.asInstanceOf[SheetOptions]
   }
   
-  extension [Self <: SheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ SheetChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

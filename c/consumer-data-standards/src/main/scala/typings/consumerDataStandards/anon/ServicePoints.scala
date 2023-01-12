@@ -16,7 +16,8 @@ object ServicePoints {
     __obj.asInstanceOf[ServicePoints]
   }
   
-  extension [Self <: ServicePoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePoints] (val x: Self) extends AnyVal {
     
     inline def setServicePoints(value: js.Array[EnergyServicePoint]): Self = StObject.set(x, "servicePoints", value.asInstanceOf[js.Any])
     

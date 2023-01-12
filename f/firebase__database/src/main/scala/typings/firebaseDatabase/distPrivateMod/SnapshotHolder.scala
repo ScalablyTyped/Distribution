@@ -22,7 +22,8 @@ object SnapshotHolder {
     __obj.asInstanceOf[SnapshotHolder]
   }
   
-  extension [Self <: SnapshotHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotHolder] (val x: Self) extends AnyVal {
     
     inline def setGetNode(value: Path => Node2): Self = StObject.set(x, "getNode", js.Any.fromFunction1(value))
     

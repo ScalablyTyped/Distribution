@@ -23,7 +23,8 @@ object ToastProps {
     __obj.asInstanceOf[ToastProps]
   }
   
-  extension [Self <: ToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

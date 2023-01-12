@@ -19,7 +19,8 @@ object MlTrainedModelDeploymentAllocationStatus {
     __obj.asInstanceOf[MlTrainedModelDeploymentAllocationStatus]
   }
   
-  extension [Self <: MlTrainedModelDeploymentAllocationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelDeploymentAllocationStatus] (val x: Self) extends AnyVal {
     
     inline def setAllocation_count(value: integer): Self = StObject.set(x, "allocation_count", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TypeInstance {
     __obj.asInstanceOf[TypeInstance]
   }
   
-  extension [Self <: TypeInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeInstance] (val x: Self) extends AnyVal {
     
     inline def setIsScalar(value: () => Boolean): Self = StObject.set(x, "isScalar", js.Any.fromFunction0(value))
     

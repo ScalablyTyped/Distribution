@@ -56,7 +56,8 @@ object distDeclarationsSrcComponentsMultiValueMod {
       __obj.asInstanceOf[MultiValueComponents[Option, IsMulti, Group]]
     }
     
-    extension [Self <: MultiValueComponents[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueComponents[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiValueComponents[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (MultiValueComponents[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setContainer(value: ComponentType[MultiValueGenericProps[Option, IsMulti, Group]]): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object distDeclarationsSrcComponentsMultiValueMod {
       __obj.asInstanceOf[MultiValueGenericProps[Option, IsMulti, Group]]
     }
     
-    extension [Self <: MultiValueGenericProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueGenericProps[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiValueGenericProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (MultiValueGenericProps[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distDeclarationsSrcComponentsMultiValueMod {
       __obj.asInstanceOf[MultiValueRemoveProps[Option, IsMulti, Group]]
     }
     
-    extension [Self <: MultiValueRemoveProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (MultiValueRemoveProps[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiValueRemoveProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (MultiValueRemoveProps[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

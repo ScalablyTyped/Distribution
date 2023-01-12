@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[Envelope]
     }
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: Envelope => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: js.typedarray.Uint8Array): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       

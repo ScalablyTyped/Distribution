@@ -32,7 +32,8 @@ object OrdersRefundItemRequest {
     __obj.asInstanceOf[OrdersRefundItemRequest]
   }
   
-  extension [Self <: OrdersRefundItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrdersRefundItemRequest] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[OrdersCustomBatchRequestEntryRefundItemItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

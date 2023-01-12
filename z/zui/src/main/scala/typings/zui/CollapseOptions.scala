@@ -17,7 +17,8 @@ object CollapseOptions {
     __obj.asInstanceOf[CollapseOptions]
   }
   
-  extension [Self <: CollapseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapseOptions] (val x: Self) extends AnyVal {
     
     inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

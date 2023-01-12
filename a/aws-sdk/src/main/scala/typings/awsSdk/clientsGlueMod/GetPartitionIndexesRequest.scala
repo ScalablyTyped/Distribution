@@ -33,7 +33,8 @@ object GetPartitionIndexesRequest {
     __obj.asInstanceOf[GetPartitionIndexesRequest]
   }
   
-  extension [Self <: GetPartitionIndexesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPartitionIndexesRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

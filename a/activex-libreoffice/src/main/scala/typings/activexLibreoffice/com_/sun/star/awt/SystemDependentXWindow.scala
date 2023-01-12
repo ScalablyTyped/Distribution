@@ -26,7 +26,8 @@ object SystemDependentXWindow {
     __obj.asInstanceOf[SystemDependentXWindow]
   }
   
-  extension [Self <: SystemDependentXWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemDependentXWindow] (val x: Self) extends AnyVal {
     
     inline def setDisplayPointer(value: Double): Self = StObject.set(x, "DisplayPointer", value.asInstanceOf[js.Any])
     

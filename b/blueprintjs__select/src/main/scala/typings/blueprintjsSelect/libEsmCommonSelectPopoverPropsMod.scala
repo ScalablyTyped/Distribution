@@ -50,7 +50,8 @@ object libEsmCommonSelectPopoverPropsMod {
       __obj.asInstanceOf[SelectPopoverProps]
     }
     
-    extension [Self <: SelectPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setPopoverContentProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "popoverContentProps", value.asInstanceOf[js.Any])
       

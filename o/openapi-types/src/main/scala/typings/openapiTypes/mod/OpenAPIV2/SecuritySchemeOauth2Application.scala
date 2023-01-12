@@ -23,7 +23,8 @@ object SecuritySchemeOauth2Application {
     __obj.asInstanceOf[SecuritySchemeOauth2Application]
   }
   
-  extension [Self <: SecuritySchemeOauth2Application](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySchemeOauth2Application] (val x: Self) extends AnyVal {
     
     inline def setFlow(value: application): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     

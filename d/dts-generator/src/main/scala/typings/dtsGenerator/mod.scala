@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[DtsGeneratorOptions]
     }
     
-    extension [Self <: DtsGeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DtsGeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[ResolveModuleIdParams]
     }
     
-    extension [Self <: ResolveModuleIdParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveModuleIdParams] (val x: Self) extends AnyVal {
       
       inline def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
     }
@@ -233,7 +235,8 @@ object mod {
       __obj.asInstanceOf[ResolveModuleImportParams]
     }
     
-    extension [Self <: ResolveModuleImportParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveModuleImportParams] (val x: Self) extends AnyVal {
       
       inline def setCurrentModuleId(value: String): Self = StObject.set(x, "currentModuleId", value.asInstanceOf[js.Any])
       

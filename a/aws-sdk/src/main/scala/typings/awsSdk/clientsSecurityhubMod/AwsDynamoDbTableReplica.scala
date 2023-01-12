@@ -43,7 +43,8 @@ object AwsDynamoDbTableReplica {
     __obj.asInstanceOf[AwsDynamoDbTableReplica]
   }
   
-  extension [Self <: AwsDynamoDbTableReplica](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableReplica] (val x: Self) extends AnyVal {
     
     inline def setGlobalSecondaryIndexes(value: AwsDynamoDbTableReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     

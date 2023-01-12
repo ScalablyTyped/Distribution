@@ -63,7 +63,8 @@ object XConfigManager {
     __obj.asInstanceOf[XConfigManager]
   }
   
-  extension [Self <: XConfigManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConfigManager] (val x: Self) extends AnyVal {
     
     inline def setAddPropertyChangeListener(value: (String, XPropertyChangeListener) => Unit): Self = StObject.set(x, "addPropertyChangeListener", js.Any.fromFunction2(value))
     

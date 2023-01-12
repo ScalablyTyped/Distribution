@@ -18,7 +18,8 @@ object IotSiteWiseInputIdentifier {
     __obj.asInstanceOf[IotSiteWiseInputIdentifier]
   }
   
-  extension [Self <: IotSiteWiseInputIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotSiteWiseInputIdentifier] (val x: Self) extends AnyVal {
     
     inline def setIotSiteWiseAssetModelPropertyIdentifier(value: IotSiteWiseAssetModelPropertyIdentifier): Self = StObject.set(x, "iotSiteWiseAssetModelPropertyIdentifier", value.asInstanceOf[js.Any])
     

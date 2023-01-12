@@ -36,7 +36,8 @@ object typesSrcCoreConnectionConnectionManagerOptionsMod {
       __obj.asInstanceOf[ConnectionManagerOptions]
     }
     
-    extension [Self <: ConnectionManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setActivityTimeout(value: Double): Self = StObject.set(x, "activityTimeout", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ShowMarkers {
     __obj.asInstanceOf[ShowMarkers]
   }
   
-  extension [Self <: ShowMarkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowMarkers] (val x: Self) extends AnyVal {
     
     inline def setShowMarkers(value: Boolean): Self = StObject.set(x, "showMarkers", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object PerformanceGoalBidStrategy {
     __obj.asInstanceOf[PerformanceGoalBidStrategy]
   }
   
-  extension [Self <: PerformanceGoalBidStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceGoalBidStrategy] (val x: Self) extends AnyVal {
     
     inline def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
     

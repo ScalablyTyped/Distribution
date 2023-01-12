@@ -69,7 +69,8 @@ object ojInputPasswordSettablePropertiesLenient {
     __obj.asInstanceOf[ojInputPasswordSettablePropertiesLenient]
   }
   
-  extension [Self <: ojInputPasswordSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputPasswordSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: js.Array[AsyncValidator[String | Null]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

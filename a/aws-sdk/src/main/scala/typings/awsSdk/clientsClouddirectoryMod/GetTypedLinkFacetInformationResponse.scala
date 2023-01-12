@@ -18,7 +18,8 @@ object GetTypedLinkFacetInformationResponse {
     __obj.asInstanceOf[GetTypedLinkFacetInformationResponse]
   }
   
-  extension [Self <: GetTypedLinkFacetInformationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTypedLinkFacetInformationResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     

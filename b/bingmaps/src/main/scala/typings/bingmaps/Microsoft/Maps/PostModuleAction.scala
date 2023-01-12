@@ -22,7 +22,8 @@ object PostModuleAction {
     __obj.asInstanceOf[PostModuleAction]
   }
   
-  extension [Self <: PostModuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostModuleAction] (val x: Self) extends AnyVal {
     
     inline def setAddLayerFromUrl(value: String): Self = StObject.set(x, "addLayerFromUrl", value.asInstanceOf[js.Any])
     

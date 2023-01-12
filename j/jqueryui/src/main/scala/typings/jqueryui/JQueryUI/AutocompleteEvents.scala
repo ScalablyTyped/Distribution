@@ -30,7 +30,8 @@ object AutocompleteEvents {
     __obj.asInstanceOf[AutocompleteEvents]
   }
   
-  extension [Self <: AutocompleteEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteEvents] (val x: Self) extends AnyVal {
     
     inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     

@@ -27,7 +27,8 @@ object NodesAdaptiveSelection {
     __obj.asInstanceOf[NodesAdaptiveSelection]
   }
   
-  extension [Self <: NodesAdaptiveSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesAdaptiveSelection] (val x: Self) extends AnyVal {
     
     inline def setAvg_queue_size(value: long): Self = StObject.set(x, "avg_queue_size", value.asInstanceOf[js.Any])
     

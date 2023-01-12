@@ -19,7 +19,8 @@ object FormLayout {
     __obj.asInstanceOf[FormLayout]
   }
   
-  extension [Self <: FormLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormLayout] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

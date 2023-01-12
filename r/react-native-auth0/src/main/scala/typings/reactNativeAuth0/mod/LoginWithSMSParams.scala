@@ -21,7 +21,8 @@ object LoginWithSMSParams {
     __obj.asInstanceOf[LoginWithSMSParams]
   }
   
-  extension [Self <: LoginWithSMSParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginWithSMSParams] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

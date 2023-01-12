@@ -17,7 +17,8 @@ object UIkitCountdownElement {
     __obj.asInstanceOf[UIkitCountdownElement]
   }
   
-  extension [Self <: UIkitCountdownElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitCountdownElement] (val x: Self) extends AnyVal {
     
     inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     

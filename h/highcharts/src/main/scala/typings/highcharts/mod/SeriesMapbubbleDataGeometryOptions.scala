@@ -24,7 +24,8 @@ object SeriesMapbubbleDataGeometryOptions {
     __obj.asInstanceOf[SeriesMapbubbleDataGeometryOptions]
   }
   
-  extension [Self <: SeriesMapbubbleDataGeometryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMapbubbleDataGeometryOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: LonLatArray): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

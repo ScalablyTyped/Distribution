@@ -65,7 +65,8 @@ object WorkerOptions2 {
     __obj.asInstanceOf[WorkerOptions2]
   }
   
-  extension [Self <: WorkerOptions2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerOptions2] (val x: Self) extends AnyVal {
     
     inline def setChildWorkerPath(value: String): Self = StObject.set(x, "childWorkerPath", value.asInstanceOf[js.Any])
     

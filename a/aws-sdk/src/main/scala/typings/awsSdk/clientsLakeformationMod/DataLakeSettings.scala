@@ -53,7 +53,8 @@ object DataLakeSettings {
     __obj.asInstanceOf[DataLakeSettings]
   }
   
-  extension [Self <: DataLakeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLakeSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowExternalDataFiltering(value: NullableBoolean): Self = StObject.set(x, "AllowExternalDataFiltering", value.asInstanceOf[js.Any])
     

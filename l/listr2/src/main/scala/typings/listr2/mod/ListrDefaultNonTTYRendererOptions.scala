@@ -20,7 +20,8 @@ object ListrDefaultNonTTYRendererOptions {
     __obj.asInstanceOf[ListrDefaultNonTTYRendererOptions[T]]
   }
   
-  extension [Self <: ListrDefaultNonTTYRendererOptions[?], T /* <: ListrRendererValue */](x: Self & ListrDefaultNonTTYRendererOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListrDefaultNonTTYRendererOptions[?], T /* <: ListrRendererValue */] (val x: Self & ListrDefaultNonTTYRendererOptions[T]) extends AnyVal {
     
     inline def setNonTTYRenderer(value: T): Self = StObject.set(x, "nonTTYRenderer", value.asInstanceOf[js.Any])
     

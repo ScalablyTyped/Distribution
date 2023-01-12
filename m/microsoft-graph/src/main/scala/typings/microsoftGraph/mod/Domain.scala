@@ -103,7 +103,8 @@ object Domain {
     __obj.asInstanceOf[Domain]
   }
   
-  extension [Self <: Domain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     

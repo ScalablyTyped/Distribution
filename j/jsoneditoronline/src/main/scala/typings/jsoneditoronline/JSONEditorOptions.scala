@@ -23,7 +23,8 @@ object JSONEditorOptions {
     __obj.asInstanceOf[JSONEditorOptions]
   }
   
-  extension [Self <: JSONEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: () => Unit): Self = StObject.set(x, "change", js.Any.fromFunction0(value))
     

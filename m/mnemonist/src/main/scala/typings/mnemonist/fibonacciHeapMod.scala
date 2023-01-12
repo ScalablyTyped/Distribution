@@ -143,7 +143,8 @@ object fibonacciHeapMod {
       __obj.asInstanceOf[FibonacciHeap[T]]
     }
     
-    extension [Self <: FibonacciHeap[?], T](x: Self & FibonacciHeap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FibonacciHeap[?], T] (val x: Self & FibonacciHeap[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

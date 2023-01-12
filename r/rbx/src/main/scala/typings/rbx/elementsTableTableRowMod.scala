@@ -66,7 +66,8 @@ object elementsTableTableRowMod {
       __obj.asInstanceOf[TableRowHelperProps]
     }
     
-    extension [Self <: TableRowHelperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowHelperProps] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object elementsTableTableRowMod {
       __obj.asInstanceOf[TableRowProps]
     }
     
-    extension [Self <: TableRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

@@ -25,7 +25,8 @@ object GooglePrivacyDlpV2FindingLimits {
     __obj.asInstanceOf[GooglePrivacyDlpV2FindingLimits]
   }
   
-  extension [Self <: GooglePrivacyDlpV2FindingLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2FindingLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxFindingsPerInfoType(value: js.Array[GooglePrivacyDlpV2InfoTypeLimit]): Self = StObject.set(x, "maxFindingsPerInfoType", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object ApiClient {
     __obj.asInstanceOf[ApiClient]
   }
   
-  extension [Self <: ApiClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiClient] (val x: Self) extends AnyVal {
     
     inline def setAllowlists(value: AllowlistsApi): Self = StObject.set(x, "allowlists", value.asInstanceOf[js.Any])
     

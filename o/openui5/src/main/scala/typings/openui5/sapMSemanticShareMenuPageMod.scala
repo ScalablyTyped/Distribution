@@ -228,7 +228,8 @@ object sapMSemanticShareMenuPageMod {
       __obj.asInstanceOf[ShareMenuPageSettings]
     }
     
-    extension [Self <: ShareMenuPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareMenuPageSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomShareMenuContent(
         value: js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

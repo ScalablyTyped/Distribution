@@ -28,7 +28,8 @@ object EventFeedbackType {
     __obj.asInstanceOf[EventFeedbackType]
   }
   
-  extension [Self <: EventFeedbackType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFeedbackType] (val x: Self) extends AnyVal {
     
     inline def setFeedbackDate(value: js.Date): Self = StObject.set(x, "FeedbackDate", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object GoogleCloudAssetV1p7beta1Asset {
     __obj.asInstanceOf[GoogleCloudAssetV1p7beta1Asset]
   }
   
-  extension [Self <: GoogleCloudAssetV1p7beta1Asset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1p7beta1Asset] (val x: Self) extends AnyVal {
     
     inline def setAccessLevel(value: GoogleIdentityAccesscontextmanagerV1AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     

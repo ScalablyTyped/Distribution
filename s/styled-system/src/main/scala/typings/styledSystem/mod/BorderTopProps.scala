@@ -21,7 +21,8 @@ object BorderTopProps {
     __obj.asInstanceOf[BorderTopProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BorderTopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BorderTopProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderTopProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderTopProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBorderTop(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
     

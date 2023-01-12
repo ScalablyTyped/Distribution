@@ -16,7 +16,8 @@ object EducationOnPremisesInfo {
     __obj.asInstanceOf[EducationOnPremisesInfo]
   }
   
-  extension [Self <: EducationOnPremisesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationOnPremisesInfo] (val x: Self) extends AnyVal {
     
     inline def setImmutableId(value: NullableOption[String]): Self = StObject.set(x, "immutableId", value.asInstanceOf[js.Any])
     

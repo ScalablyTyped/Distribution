@@ -50,7 +50,8 @@ object FoldableWithIndexComposition12 {
     __obj.asInstanceOf[FoldableWithIndexComposition12[F, FI, G, GI]]
   }
   
-  extension [Self <: FoldableWithIndexComposition12[?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GI](x: Self & (FoldableWithIndexComposition12[F, FI, G, GI])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldableWithIndexComposition12[?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GI] (val x: Self & (FoldableWithIndexComposition12[F, FI, G, GI])) extends AnyVal {
     
     inline def setFoldMapWithIndex(
       value: Monoid[Any] => js.Function2[

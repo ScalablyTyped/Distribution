@@ -52,7 +52,8 @@ object SheetProperties {
     __obj.asInstanceOf[SheetProperties]
   }
   
-  extension [Self <: SheetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetProperties] (val x: Self) extends AnyVal {
     
     inline def setDataSourceSheetProperties(value: DataSourceSheetProperties): Self = StObject.set(x, "dataSourceSheetProperties", value.asInstanceOf[js.Any])
     

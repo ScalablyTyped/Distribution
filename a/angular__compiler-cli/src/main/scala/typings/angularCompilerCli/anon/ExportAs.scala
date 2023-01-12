@@ -17,7 +17,8 @@ object ExportAs {
     __obj.asInstanceOf[ExportAs]
   }
   
-  extension [Self <: ExportAs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportAs] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     

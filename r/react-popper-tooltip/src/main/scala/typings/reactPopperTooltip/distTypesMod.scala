@@ -38,7 +38,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetArrowPropsArg]
     }
     
-    extension [Self <: GetArrowPropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetArrowPropsArg] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetTooltipPropsArg]
     }
     
-    extension [Self <: GetTooltipPropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTooltipPropsArg] (val x: Self) extends AnyVal {
       
       inline def setOnMouseEnter(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
@@ -106,7 +108,8 @@ object distTypesMod {
       __obj.asInstanceOf[GetTriggerPropsArg]
     }
     
-    extension [Self <: GetTriggerPropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTriggerPropsArg] (val x: Self) extends AnyVal {
       
       inline def setOnBlur(value: /* event */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
@@ -204,7 +207,8 @@ object distTypesMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
@@ -366,7 +370,8 @@ object distTypesMod {
       __obj.asInstanceOf[TooltipTriggerProps]
     }
     
-    extension [Self <: TooltipTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ChildrenArg => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -441,7 +446,8 @@ object distTypesMod {
       __obj.asInstanceOf[TooltipTriggerState]
     }
     
-    extension [Self <: TooltipTriggerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipTriggerState] (val x: Self) extends AnyVal {
       
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       

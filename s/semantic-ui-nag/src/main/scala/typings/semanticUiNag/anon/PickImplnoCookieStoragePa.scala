@@ -23,7 +23,8 @@ object PickImplnoCookieStoragePa {
     __obj.asInstanceOf[PickImplnoCookieStoragePa]
   }
   
-  extension [Self <: PickImplnoCookieStoragePa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoCookieStoragePa] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

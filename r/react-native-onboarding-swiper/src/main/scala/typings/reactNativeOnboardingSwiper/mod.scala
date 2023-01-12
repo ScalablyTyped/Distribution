@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[DoneButtonProps]
     }
     
-    extension [Self <: DoneButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoneButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[DotProps]
     }
     
-    extension [Self <: DotProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotProps] (val x: Self) extends AnyVal {
       
       inline def setIsLight(value: Boolean): Self = StObject.set(x, "isLight", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[NextButtonProps]
     }
     
-    extension [Self <: NextButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
@@ -454,7 +459,8 @@ object mod {
       __obj.asInstanceOf[SkipButtonProps]
     }
     
-    extension [Self <: SkipButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       

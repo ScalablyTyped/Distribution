@@ -28,7 +28,8 @@ object ContainerDistributionConfiguration {
     __obj.asInstanceOf[ContainerDistributionConfiguration]
   }
   
-  extension [Self <: ContainerDistributionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerDistributionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setContainerTags(value: StringList): Self = StObject.set(x, "containerTags", value.asInstanceOf[js.Any])
     

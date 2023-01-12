@@ -138,7 +138,8 @@ object ConnectionConfig {
     __obj.asInstanceOf[ConnectionConfig]
   }
   
-  extension [Self <: ConnectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
     
     inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
     

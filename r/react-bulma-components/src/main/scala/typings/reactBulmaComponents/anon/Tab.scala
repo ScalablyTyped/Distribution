@@ -20,7 +20,8 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  extension [Self <: Tab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     inline def setTab(value: /* props */ PanelTabProps & (ElementProps[PanelTabProps, a]) => ReactElement): Self = StObject.set(x, "Tab", js.Any.fromFunction1(value))
   }

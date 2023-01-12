@@ -90,7 +90,8 @@ object RecommendationTemplate {
     __obj.asInstanceOf[RecommendationTemplate]
   }
   
-  extension [Self <: RecommendationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationTemplate] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

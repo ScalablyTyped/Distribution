@@ -28,7 +28,8 @@ object UpdateApplicationSettingsInput {
     __obj.asInstanceOf[UpdateApplicationSettingsInput]
   }
   
-  extension [Self <: UpdateApplicationSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

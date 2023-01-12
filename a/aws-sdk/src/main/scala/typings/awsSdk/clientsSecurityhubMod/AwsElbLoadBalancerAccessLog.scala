@@ -33,7 +33,8 @@ object AwsElbLoadBalancerAccessLog {
     __obj.asInstanceOf[AwsElbLoadBalancerAccessLog]
   }
   
-  extension [Self <: AwsElbLoadBalancerAccessLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerAccessLog] (val x: Self) extends AnyVal {
     
     inline def setEmitInterval(value: Integer): Self = StObject.set(x, "EmitInterval", value.asInstanceOf[js.Any])
     

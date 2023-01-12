@@ -18,7 +18,8 @@ object S3SetObjectAclOperation {
     __obj.asInstanceOf[S3SetObjectAclOperation]
   }
   
-  extension [Self <: S3SetObjectAclOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3SetObjectAclOperation] (val x: Self) extends AnyVal {
     
     inline def setAccessControlPolicy(value: S3AccessControlPolicy): Self = StObject.set(x, "AccessControlPolicy", value.asInstanceOf[js.Any])
     

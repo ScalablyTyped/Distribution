@@ -35,7 +35,8 @@ object Followers {
     __obj.asInstanceOf[Followers]
   }
   
-  extension [Self <: Followers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Followers] (val x: Self) extends AnyVal {
     
     inline def setFollowers(value: String): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
     

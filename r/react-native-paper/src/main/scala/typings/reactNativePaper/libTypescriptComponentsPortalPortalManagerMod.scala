@@ -35,7 +35,8 @@ object libTypescriptComponentsPortalPortalManagerMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setPortals(value: js.Array[Key]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object GoButton {
     __obj.asInstanceOf[GoButton]
   }
   
-  extension [Self <: GoButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoButton] (val x: Self) extends AnyVal {
     
     inline def setGoButton(value: ReactNode): Self = StObject.set(x, "goButton", value.asInstanceOf[js.Any])
     

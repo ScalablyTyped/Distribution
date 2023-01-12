@@ -33,7 +33,8 @@ object SemanticTextQuery {
     __obj.asInstanceOf[SemanticTextQuery]
   }
   
-  extension [Self <: SemanticTextQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticTextQuery] (val x: Self) extends AnyVal {
     
     inline def setFind(value: String => IVectorView[TextSegment]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
     

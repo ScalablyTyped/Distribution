@@ -23,7 +23,8 @@ object DescribeConnectClientAddInsResult {
     __obj.asInstanceOf[DescribeConnectClientAddInsResult]
   }
   
-  extension [Self <: DescribeConnectClientAddInsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectClientAddInsResult] (val x: Self) extends AnyVal {
     
     inline def setAddIns(value: ConnectClientAddInList): Self = StObject.set(x, "AddIns", value.asInstanceOf[js.Any])
     

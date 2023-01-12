@@ -30,7 +30,8 @@ object typesBaseEmbedTypesMod {
       __obj.asInstanceOf[EmbedPopup]
     }
     
-    extension [Self <: EmbedPopup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedPopup] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -76,7 +77,8 @@ object typesBaseEmbedTypesMod {
       __obj.asInstanceOf[EmbedWidget]
     }
     
-    extension [Self <: EmbedWidget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedWidget] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       

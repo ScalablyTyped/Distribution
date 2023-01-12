@@ -18,7 +18,8 @@ object ArtifactConfigOutput {
     __obj.asInstanceOf[ArtifactConfigOutput]
   }
   
-  extension [Self <: ArtifactConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setS3Encryption(value: S3EncryptionConfig): Self = StObject.set(x, "S3Encryption", value.asInstanceOf[js.Any])
     

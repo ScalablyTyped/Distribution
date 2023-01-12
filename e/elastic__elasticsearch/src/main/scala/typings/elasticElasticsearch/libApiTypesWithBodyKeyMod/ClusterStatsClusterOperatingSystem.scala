@@ -31,7 +31,8 @@ object ClusterStatsClusterOperatingSystem {
     __obj.asInstanceOf[ClusterStatsClusterOperatingSystem]
   }
   
-  extension [Self <: ClusterStatsClusterOperatingSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterOperatingSystem] (val x: Self) extends AnyVal {
     
     inline def setAllocated_processors(value: integer): Self = StObject.set(x, "allocated_processors", value.asInstanceOf[js.Any])
     

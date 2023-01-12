@@ -27,7 +27,8 @@ object distTypesSystemDistComponentsDragAndDropLockedLargeMod extends Shortcut {
       __obj.asInstanceOf[DragAndDropLockedLargeProps]
     }
     
-    extension [Self <: DragAndDropLockedLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragAndDropLockedLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

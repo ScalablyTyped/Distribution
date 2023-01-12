@@ -33,7 +33,8 @@ object identity {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -74,7 +75,8 @@ object identity {
       __obj.asInstanceOf[TokenDetails]
     }
     
-    extension [Self <: TokenDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenDetails] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object identity {
       __obj.asInstanceOf[TokenInformation]
     }
     
-    extension [Self <: TokenInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenInformation] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -133,7 +136,8 @@ object identity {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object identity {
       __obj.asInstanceOf[WebAuthFlowOptions]
     }
     
-    extension [Self <: WebAuthFlowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebAuthFlowOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       

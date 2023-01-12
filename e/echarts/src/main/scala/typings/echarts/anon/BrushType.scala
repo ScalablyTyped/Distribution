@@ -44,7 +44,8 @@ object BrushType {
     __obj.asInstanceOf[BrushType]
   }
   
-  extension [Self <: BrushType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrushType] (val x: Self) extends AnyVal {
     
     inline def setBrushType(value: String): Self = StObject.set(x, "brushType", value.asInstanceOf[js.Any])
     

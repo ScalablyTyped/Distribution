@@ -46,7 +46,8 @@ object typesDescribeGlobalTableSettingsInputMod {
       __obj.asInstanceOf[DescribeGlobalTableSettingsInput]
     }
     
-    extension [Self <: DescribeGlobalTableSettingsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeGlobalTableSettingsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

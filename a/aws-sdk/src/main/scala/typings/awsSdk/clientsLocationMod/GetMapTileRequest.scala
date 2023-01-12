@@ -38,7 +38,8 @@ object GetMapTileRequest {
     __obj.asInstanceOf[GetMapTileRequest]
   }
   
-  extension [Self <: GetMapTileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMapTileRequest] (val x: Self) extends AnyVal {
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
     

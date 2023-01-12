@@ -25,7 +25,8 @@ object typesDeleteStreamOutputMod {
       __obj.asInstanceOf[DeleteStreamOutput]
     }
     
-    extension [Self <: DeleteStreamOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteStreamOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }

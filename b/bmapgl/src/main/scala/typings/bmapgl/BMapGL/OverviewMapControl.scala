@@ -45,7 +45,8 @@ object OverviewMapControl {
     __obj.asInstanceOf[OverviewMapControl]
   }
   
-  extension [Self <: OverviewMapControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverviewMapControl] (val x: Self) extends AnyVal {
     
     inline def setChangeView(value: () => Unit): Self = StObject.set(x, "changeView", js.Any.fromFunction0(value))
     

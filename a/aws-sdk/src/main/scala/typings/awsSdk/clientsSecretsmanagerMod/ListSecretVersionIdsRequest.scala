@@ -33,7 +33,8 @@ object ListSecretVersionIdsRequest {
     __obj.asInstanceOf[ListSecretVersionIdsRequest]
   }
   
-  extension [Self <: ListSecretVersionIdsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSecretVersionIdsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeDeprecated(value: BooleanType): Self = StObject.set(x, "IncludeDeprecated", value.asInstanceOf[js.Any])
     

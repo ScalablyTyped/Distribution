@@ -32,7 +32,8 @@ object esComponentsInlineErrorFormItemMod {
       __obj.asInstanceOf[InlineErrorFormItemProps]
     }
     
-    extension [Self <: InlineErrorFormItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineErrorFormItemProps] (val x: Self) extends AnyVal {
       
       inline def setErrorType(value: popover | default): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object JoseHeaderParameters {
     __obj.asInstanceOf[JoseHeaderParameters]
   }
   
-  extension [Self <: JoseHeaderParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoseHeaderParameters] (val x: Self) extends AnyVal {
     
     inline def setCty(value: String): Self = StObject.set(x, "cty", value.asInstanceOf[js.Any])
     

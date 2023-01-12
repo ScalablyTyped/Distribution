@@ -246,7 +246,8 @@ object sapUiLayoutSplitterLayoutDataMod {
       __obj.asInstanceOf[SplitterLayoutDataSettings]
     }
     
-    extension [Self <: SplitterLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setMinSize(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       

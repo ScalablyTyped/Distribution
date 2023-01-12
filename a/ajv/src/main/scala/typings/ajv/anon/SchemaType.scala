@@ -19,7 +19,8 @@ object SchemaType {
     __obj.asInstanceOf[SchemaType]
   }
   
-  extension [Self <: SchemaType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaType] (val x: Self) extends AnyVal {
     
     inline def setSchemaType(value: js.Array[JSONType]): Self = StObject.set(x, "schemaType", value.asInstanceOf[js.Any])
     

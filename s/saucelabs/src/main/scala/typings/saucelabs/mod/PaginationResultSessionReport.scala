@@ -20,7 +20,8 @@ object PaginationResultSessionReport {
     __obj.asInstanceOf[PaginationResultSessionReport]
   }
   
-  extension [Self <: PaginationResultSessionReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationResultSessionReport] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[SessionReport]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

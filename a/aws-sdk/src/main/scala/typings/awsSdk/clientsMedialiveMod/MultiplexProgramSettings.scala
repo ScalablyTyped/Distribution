@@ -33,7 +33,8 @@ object MultiplexProgramSettings {
     __obj.asInstanceOf[MultiplexProgramSettings]
   }
   
-  extension [Self <: MultiplexProgramSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgramSettings] (val x: Self) extends AnyVal {
     
     inline def setPreferredChannelPipeline(value: PreferredChannelPipeline): Self = StObject.set(x, "PreferredChannelPipeline", value.asInstanceOf[js.Any])
     

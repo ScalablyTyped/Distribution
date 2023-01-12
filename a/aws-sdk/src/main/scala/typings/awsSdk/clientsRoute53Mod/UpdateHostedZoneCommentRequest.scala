@@ -23,7 +23,8 @@ object UpdateHostedZoneCommentRequest {
     __obj.asInstanceOf[UpdateHostedZoneCommentRequest]
   }
   
-  extension [Self <: UpdateHostedZoneCommentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHostedZoneCommentRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: ResourceDescription): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

@@ -142,7 +142,8 @@ object DocumentTaskChangeData {
     __obj.asInstanceOf[DocumentTaskChangeData]
   }
   
-  extension [Self <: DocumentTaskChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTaskChangeData] (val x: Self) extends AnyVal {
     
     inline def setAssignee(value: Identity): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object WebviewOptions {
     __obj.asInstanceOf[WebviewOptions]
   }
   
-  extension [Self <: WebviewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableCommandUris(value: Boolean | js.Array[String]): Self = StObject.set(x, "enableCommandUris", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object KeyRotationPolicy {
     __obj.asInstanceOf[KeyRotationPolicy]
   }
   
-  extension [Self <: KeyRotationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRotationPolicy] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

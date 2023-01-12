@@ -28,7 +28,8 @@ object TreemapExportOptions {
     __obj.asInstanceOf[TreemapExportOptions]
   }
   
-  extension [Self <: TreemapExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreemapExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutomaticPageLayout(value: Boolean): Self = StObject.set(x, "AutomaticPageLayout", value.asInstanceOf[js.Any])
     

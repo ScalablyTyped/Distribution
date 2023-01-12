@@ -28,7 +28,8 @@ object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeValidatingEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListBatchEditNodeValidatingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListBatchEditNodeValidatingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
     

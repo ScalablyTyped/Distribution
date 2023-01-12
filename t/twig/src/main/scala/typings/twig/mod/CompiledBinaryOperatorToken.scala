@@ -31,7 +31,8 @@ object CompiledBinaryOperatorToken {
     __obj.asInstanceOf[CompiledBinaryOperatorToken[TOperator]]
   }
   
-  extension [Self <: CompiledBinaryOperatorToken[?], TOperator /* <: BinaryOperator */](x: Self & CompiledBinaryOperatorToken[TOperator]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompiledBinaryOperatorToken[?], TOperator /* <: BinaryOperator */] (val x: Self & CompiledBinaryOperatorToken[TOperator]) extends AnyVal {
     
     inline def setAssociativity(value: leftToRight | String): Self = StObject.set(x, "associativity", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object OutputDestinationSettings {
     __obj.asInstanceOf[OutputDestinationSettings]
   }
   
-  extension [Self <: OutputDestinationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputDestinationSettings] (val x: Self) extends AnyVal {
     
     inline def setPasswordParam(value: string): Self = StObject.set(x, "PasswordParam", value.asInstanceOf[js.Any])
     

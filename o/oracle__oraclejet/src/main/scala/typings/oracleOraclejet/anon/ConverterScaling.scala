@@ -24,7 +24,8 @@ object ConverterScaling {
     __obj.asInstanceOf[ConverterScaling]
   }
   
-  extension [Self <: ConverterScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConverterScaling] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: js.Object): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

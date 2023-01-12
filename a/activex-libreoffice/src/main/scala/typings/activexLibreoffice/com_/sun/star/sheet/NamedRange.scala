@@ -68,7 +68,8 @@ object NamedRange {
     __obj.asInstanceOf[NamedRange]
   }
   
-  extension [Self <: NamedRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
     
     inline def setIsSharedFormula(value: Boolean): Self = StObject.set(x, "IsSharedFormula", value.asInstanceOf[js.Any])
     

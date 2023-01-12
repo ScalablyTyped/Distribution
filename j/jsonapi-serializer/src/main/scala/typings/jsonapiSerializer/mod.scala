@@ -71,7 +71,8 @@ object mod {
     @js.native
     val ^ : SerializerConstructor = js.native
     
-    extension [Self <: Serializer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: Any => Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     }
@@ -117,7 +118,8 @@ object mod {
       __obj.asInstanceOf[DeserializerOptions]
     }
     
-    extension [Self <: DeserializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializerOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[JSONAPIError]
     }
     
-    extension [Self <: JSONAPIError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAPIError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[JSONAPIErrorOptions]
     }
     
-    extension [Self <: JSONAPIErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAPIErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object mod {
       __obj.asInstanceOf[Relation]
     }
     
-    extension [Self <: Relation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object mod {
       __obj.asInstanceOf[SerializerOptions]
     }
     
-    extension [Self <: SerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

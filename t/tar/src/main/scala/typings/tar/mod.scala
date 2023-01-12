@@ -759,7 +759,8 @@ object mod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
@@ -1008,7 +1009,8 @@ object mod {
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    extension [Self <: ExtractOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
@@ -1194,7 +1196,8 @@ object mod {
       __obj.asInstanceOf[Fields_]
     }
     
-    extension [Self <: Fields_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields_] (val x: Self) extends AnyVal {
       
       inline def setCksum(value: Double): Self = StObject.set(x, "cksum", value.asInstanceOf[js.Any])
       
@@ -1251,7 +1254,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
@@ -1314,7 +1318,8 @@ object mod {
       __obj.asInstanceOf[HeaderProperties]
     }
     
-    extension [Self <: HeaderProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProperties] (val x: Self) extends AnyVal {
       
       inline def setDevmaj(value: Double): Self = StObject.set(x, "devmaj", value.asInstanceOf[js.Any])
       
@@ -1415,7 +1420,8 @@ object mod {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
@@ -1504,7 +1510,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: (/* path */ String, /* entry */ ReadEntry) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
@@ -1583,7 +1590,8 @@ object mod {
       __obj.asInstanceOf[ReadEntry]
     }
     
-    extension [Self <: ReadEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadEntry] (val x: Self) extends AnyVal {
       
       inline def setBlockRemain(value: Double): Self = StObject.set(x, "blockRemain", value.asInstanceOf[js.Any])
       
@@ -1696,7 +1704,8 @@ object mod {
       __obj.asInstanceOf[ReplaceOptions]
     }
     
-    extension [Self <: ReplaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       

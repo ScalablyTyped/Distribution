@@ -17,7 +17,8 @@ object DimensionConstraints {
     __obj.asInstanceOf[DimensionConstraints]
   }
   
-  extension [Self <: DimensionConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionConstraints] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: QualityConstraints): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[GlobalHookOptions]
     }
     
-    extension [Self <: GlobalHookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalHookOptions] (val x: Self) extends AnyVal {
       
       inline def setPrecede_node_loader(value: Boolean): Self = StObject.set(x, "precede_node_loader", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[LogOptions]
     }
     
-    extension [Self <: LogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object mod {
       __obj.asInstanceOf[Unmount]
     }
     
-    extension [Self <: Unmount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unmount] (val x: Self) extends AnyVal {
       
       inline def setUnmount(value: () => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction0(value))
     }

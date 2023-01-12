@@ -17,7 +17,8 @@ object MlEvaluateDataFrameDataframeClassificationSummaryRecall {
     __obj.asInstanceOf[MlEvaluateDataFrameDataframeClassificationSummaryRecall]
   }
   
-  extension [Self <: MlEvaluateDataFrameDataframeClassificationSummaryRecall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlEvaluateDataFrameDataframeClassificationSummaryRecall] (val x: Self) extends AnyVal {
     
     inline def setAvg_recall(value: double): Self = StObject.set(x, "avg_recall", value.asInstanceOf[js.Any])
     

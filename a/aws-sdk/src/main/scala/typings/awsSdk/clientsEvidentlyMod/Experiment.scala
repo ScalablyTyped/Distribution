@@ -111,7 +111,8 @@ object Experiment {
     __obj.asInstanceOf[Experiment]
   }
   
-  extension [Self <: Experiment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Experiment] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ExperimentArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

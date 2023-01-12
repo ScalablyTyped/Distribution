@@ -127,7 +127,8 @@ object multicomboConfig {
     __obj.asInstanceOf[multicomboConfig]
   }
   
-  extension [Self <: multicomboConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: multicomboConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

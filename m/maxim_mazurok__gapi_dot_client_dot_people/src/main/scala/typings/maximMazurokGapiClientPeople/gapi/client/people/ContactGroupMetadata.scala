@@ -22,7 +22,8 @@ object ContactGroupMetadata {
     __obj.asInstanceOf[ContactGroupMetadata]
   }
   
-  extension [Self <: ContactGroupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactGroupMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

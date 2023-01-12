@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[WithExtraArgument]
     }
     
-    extension [Self <: WithExtraArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithExtraArgument] (val x: Self) extends AnyVal {
       
       inline def setWithExtraArgument(value: Any => ThunkMiddleware[Any, Any, Any]): Self = StObject.set(x, "withExtraArgument", js.Any.fromFunction1(value))
     }

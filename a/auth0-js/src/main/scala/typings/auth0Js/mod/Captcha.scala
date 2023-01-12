@@ -17,7 +17,8 @@ object Captcha {
     __obj.asInstanceOf[Captcha]
   }
   
-  extension [Self <: Captcha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Captcha] (val x: Self) extends AnyVal {
     
     inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     

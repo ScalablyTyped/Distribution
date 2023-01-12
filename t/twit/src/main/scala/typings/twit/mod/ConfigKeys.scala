@@ -21,7 +21,8 @@ object ConfigKeys {
     __obj.asInstanceOf[ConfigKeys]
   }
   
-  extension [Self <: ConfigKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigKeys] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

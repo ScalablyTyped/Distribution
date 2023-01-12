@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: Boolean | MergeFunc): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       

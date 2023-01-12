@@ -18,7 +18,8 @@ object GetStatementResponse {
     __obj.asInstanceOf[GetStatementResponse]
   }
   
-  extension [Self <: GetStatementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStatementResponse] (val x: Self) extends AnyVal {
     
     inline def setStatement(value: Statement): Self = StObject.set(x, "Statement", value.asInstanceOf[js.Any])
     

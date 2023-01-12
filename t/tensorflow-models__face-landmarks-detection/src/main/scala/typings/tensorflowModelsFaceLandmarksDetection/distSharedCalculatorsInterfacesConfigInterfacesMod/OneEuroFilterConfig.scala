@@ -29,7 +29,8 @@ object OneEuroFilterConfig {
     __obj.asInstanceOf[OneEuroFilterConfig]
   }
   
-  extension [Self <: OneEuroFilterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OneEuroFilterConfig] (val x: Self) extends AnyVal {
     
     inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     

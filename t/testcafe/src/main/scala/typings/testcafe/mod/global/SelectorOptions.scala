@@ -37,7 +37,8 @@ object SelectorOptions {
     __obj.asInstanceOf[SelectorOptions]
   }
   
-  extension [Self <: SelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setBoundTestRun(value: TestController): Self = StObject.set(x, "boundTestRun", value.asInstanceOf[js.Any])
     

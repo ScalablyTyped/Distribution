@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: sha1 | md5 | passthrough): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object mod {
       __obj.asInstanceOf[NormalOption]
     }
     
-    extension [Self <: NormalOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalOption] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: hex | binary | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object mod {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setUpdate(
         value: (/* chunk */ Any, /* encoding */ BufferEncoding, /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]) => Unit
@@ -300,7 +303,8 @@ object mod {
       __obj.asInstanceOf[WithBufferOption]
     }
     
-    extension [Self <: WithBufferOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithBufferOption] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }

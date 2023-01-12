@@ -21,7 +21,8 @@ object XRelocatableResource {
     __obj.asInstanceOf[XRelocatableResource]
   }
   
-  extension [Self <: XRelocatableResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRelocatableResource] (val x: Self) extends AnyVal {
     
     inline def setRelocateToAnchor(value: XResource => Boolean): Self = StObject.set(x, "relocateToAnchor", js.Any.fromFunction1(value))
   }

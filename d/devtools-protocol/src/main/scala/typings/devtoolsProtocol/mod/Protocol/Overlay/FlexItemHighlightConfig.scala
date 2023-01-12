@@ -28,7 +28,8 @@ object FlexItemHighlightConfig {
     __obj.asInstanceOf[FlexItemHighlightConfig]
   }
   
-  extension [Self <: FlexItemHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexItemHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseSizeBorder(value: LineStyle): Self = StObject.set(x, "baseSizeBorder", value.asInstanceOf[js.Any])
     

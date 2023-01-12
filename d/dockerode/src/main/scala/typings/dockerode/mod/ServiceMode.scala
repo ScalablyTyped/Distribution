@@ -23,7 +23,8 @@ object ServiceMode {
     __obj.asInstanceOf[ServiceMode]
   }
   
-  extension [Self <: ServiceMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceMode] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: js.Object): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     

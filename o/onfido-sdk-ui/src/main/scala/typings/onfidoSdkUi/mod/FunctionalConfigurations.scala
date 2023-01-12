@@ -27,7 +27,8 @@ object FunctionalConfigurations {
     __obj.asInstanceOf[FunctionalConfigurations]
   }
   
-  extension [Self <: FunctionalConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionalConfigurations] (val x: Self) extends AnyVal {
     
     inline def setDisableAnalytics(value: Boolean): Self = StObject.set(x, "disableAnalytics", value.asInstanceOf[js.Any])
     

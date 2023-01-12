@@ -39,7 +39,8 @@ object PlotTilemapOnPointPositionOptions {
     __obj.asInstanceOf[PlotTilemapOnPointPositionOptions]
   }
   
-  extension [Self <: PlotTilemapOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

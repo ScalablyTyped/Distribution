@@ -82,7 +82,8 @@ object libSplitMod {
       __obj.asInstanceOf[SplitProps]
     }
     
-    extension [Self <: SplitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitProps] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       

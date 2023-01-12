@@ -26,7 +26,8 @@ object ScaleSymlogSpec {
     __obj.asInstanceOf[ScaleSymlogSpec]
   }
   
-  extension [Self <: ScaleSymlogSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleSymlogSpec] (val x: Self) extends AnyVal {
     
     inline def setConstant(value: Double): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     

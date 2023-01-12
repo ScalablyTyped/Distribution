@@ -17,7 +17,8 @@ object CustomerRiskData {
     __obj.asInstanceOf[CustomerRiskData]
   }
   
-  extension [Self <: CustomerRiskData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerRiskData] (val x: Self) extends AnyVal {
     
     inline def setCustomerBrowser(value: String): Self = StObject.set(x, "customerBrowser", value.asInstanceOf[js.Any])
     

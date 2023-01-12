@@ -55,7 +55,8 @@ object AppsDynamiteUploadMetadata {
     __obj.asInstanceOf[AppsDynamiteUploadMetadata]
   }
   
-  extension [Self <: AppsDynamiteUploadMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteUploadMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttachmentToken(value: String): Self = StObject.set(x, "attachmentToken", value.asInstanceOf[js.Any])
     

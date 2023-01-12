@@ -47,7 +47,8 @@ object ISourceChangeRequestedEventArgs {
     __obj.asInstanceOf[ISourceChangeRequestedEventArgs]
   }
   
-  extension [Self <: ISourceChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISourceChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
     

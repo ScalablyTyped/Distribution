@@ -29,7 +29,8 @@ object GoogleActionsV2RawInput {
     __obj.asInstanceOf[GoogleActionsV2RawInput]
   }
   
-  extension [Self <: GoogleActionsV2RawInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2RawInput] (val x: Self) extends AnyVal {
     
     inline def setInputType(value: GoogleActionsV2RawInputInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
     

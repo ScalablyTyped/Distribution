@@ -37,7 +37,8 @@ object GraticuleTransform {
     __obj.asInstanceOf[GraticuleTransform]
   }
   
-  extension [Self <: GraticuleTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraticuleTransform] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: (Vector2[(Vector2[Double | SignalRef]) | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

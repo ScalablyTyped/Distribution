@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterStringFilter] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

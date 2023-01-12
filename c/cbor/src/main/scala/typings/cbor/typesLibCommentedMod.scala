@@ -95,7 +95,8 @@ object typesLibCommentedMod {
       __obj.asInstanceOf[CommentOptions]
     }
     
-    extension [Self <: CommentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentOptions] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

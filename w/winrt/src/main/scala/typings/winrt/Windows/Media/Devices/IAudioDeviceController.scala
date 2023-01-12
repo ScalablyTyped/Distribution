@@ -29,7 +29,8 @@ object IAudioDeviceController {
     __obj.asInstanceOf[IAudioDeviceController]
   }
   
-  extension [Self <: IAudioDeviceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAudioDeviceController] (val x: Self) extends AnyVal {
     
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PartialDataModelSchemaOpt {
     __obj.asInstanceOf[PartialDataModelSchemaOpt]
   }
   
-  extension [Self <: PartialDataModelSchemaOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDataModelSchemaOpt] (val x: Self) extends AnyVal {
     
     inline def setBaseClass(value: Double): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     

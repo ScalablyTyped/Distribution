@@ -22,7 +22,8 @@ object SasPortalAssignment {
     __obj.asInstanceOf[SasPortalAssignment]
   }
   
-  extension [Self <: SasPortalAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalAssignment] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

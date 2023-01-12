@@ -25,7 +25,8 @@ object TsTemplateLiteralType {
     __obj.asInstanceOf[TsTemplateLiteralType]
   }
   
-  extension [Self <: TsTemplateLiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsTemplateLiteralType] (val x: Self) extends AnyVal {
     
     inline def setQuasis(value: js.Array[TemplateElement]): Self = StObject.set(x, "quasis", value.asInstanceOf[js.Any])
     

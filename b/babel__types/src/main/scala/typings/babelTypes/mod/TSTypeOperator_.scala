@@ -27,7 +27,8 @@ object TSTypeOperator_ {
     __obj.asInstanceOf[TSTypeOperator_]
   }
   
-  extension [Self <: TSTypeOperator_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeOperator_] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

@@ -819,7 +819,8 @@ object sapMRadioButtonMod {
       __obj.asInstanceOf[RadioButtonSettings]
     }
     
-    extension [Self <: RadioButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveHandling(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "activeHandling", value.asInstanceOf[js.Any])
       

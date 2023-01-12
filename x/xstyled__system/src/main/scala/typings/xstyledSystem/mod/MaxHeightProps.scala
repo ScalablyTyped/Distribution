@@ -16,7 +16,8 @@ object MaxHeightProps {
     __obj.asInstanceOf[MaxHeightProps[TLength]]
   }
   
-  extension [Self <: MaxHeightProps[?], TLength](x: Self & MaxHeightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxHeightProps[?], TLength] (val x: Self & MaxHeightProps[TLength]) extends AnyVal {
     
     inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLength]]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

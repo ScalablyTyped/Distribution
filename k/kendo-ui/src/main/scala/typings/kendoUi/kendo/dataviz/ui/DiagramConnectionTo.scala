@@ -17,7 +17,8 @@ object DiagramConnectionTo {
     __obj.asInstanceOf[DiagramConnectionTo]
   }
   
-  extension [Self <: DiagramConnectionTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionTo] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

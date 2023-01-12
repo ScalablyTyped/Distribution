@@ -75,7 +75,8 @@ object ResponseDateTimeRenderOption {
     __obj.asInstanceOf[ResponseDateTimeRenderOption]
   }
   
-  extension [Self <: ResponseDateTimeRenderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseDateTimeRenderOption] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientFileManagerItemCopiedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerItemCopiedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerItemCopiedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerItemCopiedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOldFolderFullName(value: String): Self = StObject.set(x, "oldFolderFullName", value.asInstanceOf[js.Any])
   }

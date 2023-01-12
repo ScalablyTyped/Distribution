@@ -27,7 +27,8 @@ object simplify {
       __obj.asInstanceOf[TopologyPreservingSimplifier]
     }
     
-    extension [Self <: TopologyPreservingSimplifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopologyPreservingSimplifier] (val x: Self) extends AnyVal {
       
       inline def setGetResultGeometry(value: () => Geometry): Self = StObject.set(x, "getResultGeometry", js.Any.fromFunction0(value))
       

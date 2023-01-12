@@ -17,7 +17,8 @@ object WLAuthorizationManager {
       __obj.asInstanceOf[RequestObject]
     }
     
-    extension [Self <: RequestObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestObject] (val x: Self) extends AnyVal {
       
       inline def setSetRequestHeader(value: (String, String) => Unit): Self = StObject.set(x, "setRequestHeader", js.Any.fromFunction2(value))
     }

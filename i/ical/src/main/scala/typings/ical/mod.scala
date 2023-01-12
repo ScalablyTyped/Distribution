@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[CalendarComponent]
     }
     
-    extension [Self <: CalendarComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarComponent] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[FreeBusy]
     }
     
-    extension [Self <: FreeBusy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreeBusy] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[Geo]
     }
     
-    extension [Self <: Geo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geo] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object mod {
       __obj.asInstanceOf[ParamList]
     }
     
-    extension [Self <: ParamList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamList] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

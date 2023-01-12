@@ -148,7 +148,8 @@ object ProxyHandler {
     __obj.asInstanceOf[ProxyHandler[T]]
   }
   
-  extension [Self <: ProxyHandler[?], T /* <: js.Object */](x: Self & ProxyHandler[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyHandler[?], T /* <: js.Object */] (val x: Self & ProxyHandler[T]) extends AnyVal {
     
     inline def setApply(value: (/* target */ T, /* thisArg */ Any, /* argArray */ js.Array[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
     

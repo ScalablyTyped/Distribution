@@ -1582,7 +1582,8 @@ object typesMod {
       __obj.asInstanceOf[PropOptions[T]]
     }
     
-    extension [Self <: PropOptions[?], T](x: Self & PropOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropOptions[?], T] (val x: Self & PropOptions[T]) extends AnyVal {
       
       inline def setAttribute(value: PropOptionsAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -1623,7 +1624,8 @@ object typesMod {
       __obj.asInstanceOf[PropOptionsAttributeIdentifierMap]
     }
     
-    extension [Self <: PropOptionsAttributeIdentifierMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropOptionsAttributeIdentifierMap] (val x: Self) extends AnyVal {
       
       inline def setSource(value: PropOptionsAttributeIdentifier): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       

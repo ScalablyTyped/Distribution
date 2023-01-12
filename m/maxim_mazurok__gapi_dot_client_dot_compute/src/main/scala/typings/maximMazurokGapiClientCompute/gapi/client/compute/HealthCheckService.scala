@@ -72,7 +72,8 @@ object HealthCheckService {
     __obj.asInstanceOf[HealthCheckService]
   }
   
-  extension [Self <: HealthCheckService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthCheckService] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

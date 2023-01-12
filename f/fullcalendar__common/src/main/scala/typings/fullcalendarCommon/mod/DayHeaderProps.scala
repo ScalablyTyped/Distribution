@@ -26,7 +26,8 @@ object DayHeaderProps {
     __obj.asInstanceOf[DayHeaderProps]
   }
   
-  extension [Self <: DayHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setDateProfile(value: DateProfile): Self = StObject.set(x, "dateProfile", value.asInstanceOf[js.Any])
     

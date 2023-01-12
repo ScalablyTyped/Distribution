@@ -20,7 +20,8 @@ object SystemInfoServiceCountry {
     __obj.asInstanceOf[SystemInfoServiceCountry]
   }
   
-  extension [Self <: SystemInfoServiceCountry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoServiceCountry] (val x: Self) extends AnyVal {
     
     inline def setServiceCountry(value: String): Self = StObject.set(x, "serviceCountry", value.asInstanceOf[js.Any])
   }

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[DatabaseOptionsnamestring]
     }
     
-    extension [Self <: DatabaseOptionsnamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseOptionsnamestring] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean | js.Object): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Key[K, V]]
     }
     
-    extension [Self <: Key[?, ?], K /* <: typings.lmdb.mod.Key */, V](x: Self & (Key[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?, ?], K /* <: typings.lmdb.mod.Key */, V] (val x: Self & (Key[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Value[V]]
     }
     
-    extension [Self <: Value[?], V](x: Self & Value[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], V] (val x: Self & Value[V]) extends AnyVal {
       
       inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

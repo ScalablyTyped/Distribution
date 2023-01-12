@@ -20,7 +20,8 @@ object EndpointPerformance {
     __obj.asInstanceOf[EndpointPerformance]
   }
   
-  extension [Self <: EndpointPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointPerformance] (val x: Self) extends AnyVal {
     
     inline def setEndpointInfo(value: EndpointInfo): Self = StObject.set(x, "EndpointInfo", value.asInstanceOf[js.Any])
     

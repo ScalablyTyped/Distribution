@@ -27,7 +27,8 @@ object PreCheckoutQuery {
     __obj.asInstanceOf[PreCheckoutQuery]
   }
   
-  extension [Self <: PreCheckoutQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreCheckoutQuery] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

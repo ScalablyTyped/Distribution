@@ -48,7 +48,8 @@ object libClassdefOpenKeyEventMod {
       __obj.asInstanceOf[OpenKeyEvent]
     }
     
-    extension [Self <: OpenKeyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenKeyEvent] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

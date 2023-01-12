@@ -33,7 +33,8 @@ object addonsArrayAddonCatalogCa {
     __obj.asInstanceOf[addonsArrayAddonCatalogCa]
   }
   
-  extension [Self <: addonsArrayAddonCatalogCa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: addonsArrayAddonCatalogCa] (val x: Self) extends AnyVal {
     
     inline def setAddons(value: js.Array[AddonCatalog]): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     

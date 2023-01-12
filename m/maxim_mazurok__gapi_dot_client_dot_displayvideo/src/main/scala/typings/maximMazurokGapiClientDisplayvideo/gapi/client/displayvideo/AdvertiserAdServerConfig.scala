@@ -19,7 +19,8 @@ object AdvertiserAdServerConfig {
     __obj.asInstanceOf[AdvertiserAdServerConfig]
   }
   
-  extension [Self <: AdvertiserAdServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserAdServerConfig] (val x: Self) extends AnyVal {
     
     inline def setCmHybridConfig(value: CmHybridConfig): Self = StObject.set(x, "cmHybridConfig", value.asInstanceOf[js.Any])
     

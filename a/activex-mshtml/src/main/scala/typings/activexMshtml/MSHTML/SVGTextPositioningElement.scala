@@ -103,7 +103,8 @@ object SVGTextPositioningElement {
     __obj.asInstanceOf[SVGTextPositioningElement]
   }
   
-  extension [Self <: SVGTextPositioningElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGTextPositioningElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

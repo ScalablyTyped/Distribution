@@ -17,7 +17,8 @@ object RevokeExtras {
     __obj.asInstanceOf[RevokeExtras]
   }
   
-  extension [Self <: RevokeExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

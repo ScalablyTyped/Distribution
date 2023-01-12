@@ -315,7 +315,8 @@ object esComponentsDividerDividerMod {
       __obj.asInstanceOf[DividerProps]
     }
     
-    extension [Self <: DividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

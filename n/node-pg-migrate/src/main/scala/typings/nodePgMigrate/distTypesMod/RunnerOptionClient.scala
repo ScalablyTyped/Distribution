@@ -21,7 +21,8 @@ object RunnerOptionClient {
     __obj.asInstanceOf[RunnerOptionClient]
   }
   
-  extension [Self <: RunnerOptionClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnerOptionClient] (val x: Self) extends AnyVal {
     
     inline def setDbClient(value: ClientBase): Self = StObject.set(x, "dbClient", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object Discoveryclusters {
     __obj.asInstanceOf[Discoveryclusters]
   }
   
-  extension [Self <: Discoveryclusters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discoveryclusters] (val x: Self) extends AnyVal {
     
     inline def setClusters(value: js.Array[Bannerwithcontentcontainer]): Self = StObject.set(x, "clusters", value.asInstanceOf[js.Any])
     

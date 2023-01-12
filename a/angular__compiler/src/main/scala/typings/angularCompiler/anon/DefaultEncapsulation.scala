@@ -27,7 +27,8 @@ object DefaultEncapsulation {
     __obj.asInstanceOf[DefaultEncapsulation]
   }
   
-  extension [Self <: DefaultEncapsulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultEncapsulation] (val x: Self) extends AnyVal {
     
     inline def setDefaultEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "defaultEncapsulation", value.asInstanceOf[js.Any])
     

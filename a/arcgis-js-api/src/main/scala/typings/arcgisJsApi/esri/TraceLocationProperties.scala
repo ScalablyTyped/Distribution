@@ -52,7 +52,8 @@ object TraceLocationProperties {
     __obj.asInstanceOf[TraceLocationProperties]
   }
   
-  extension [Self <: TraceLocationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceLocationProperties] (val x: Self) extends AnyVal {
     
     inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
     

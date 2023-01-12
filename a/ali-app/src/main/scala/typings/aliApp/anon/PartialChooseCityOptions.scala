@@ -29,7 +29,8 @@ object PartialChooseCityOptions {
     __obj.asInstanceOf[PartialChooseCityOptions]
   }
   
-  extension [Self <: PartialChooseCityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialChooseCityOptions] (val x: Self) extends AnyVal {
     
     inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     

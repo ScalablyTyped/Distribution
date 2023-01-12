@@ -28,7 +28,8 @@ object Players {
     __obj.asInstanceOf[Players]
   }
   
-  extension [Self <: Players](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Players] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

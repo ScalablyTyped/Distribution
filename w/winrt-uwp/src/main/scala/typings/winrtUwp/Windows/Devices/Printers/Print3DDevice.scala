@@ -17,7 +17,8 @@ object Print3DDevice {
     __obj.asInstanceOf[Print3DDevice]
   }
   
-  extension [Self <: Print3DDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Print3DDevice] (val x: Self) extends AnyVal {
     
     inline def setPrintSchema(value: PrintSchema): Self = StObject.set(x, "printSchema", value.asInstanceOf[js.Any])
   }

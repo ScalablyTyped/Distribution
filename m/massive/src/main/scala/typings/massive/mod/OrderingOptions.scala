@@ -33,7 +33,8 @@ object OrderingOptions {
     __obj.asInstanceOf[OrderingOptions]
   }
   
-  extension [Self <: OrderingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderingOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: ASC | asc_ | DESC | desc_): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

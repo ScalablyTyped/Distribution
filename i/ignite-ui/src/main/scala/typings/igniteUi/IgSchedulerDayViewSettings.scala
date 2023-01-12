@@ -37,7 +37,8 @@ object IgSchedulerDayViewSettings {
     __obj.asInstanceOf[IgSchedulerDayViewSettings]
   }
   
-  extension [Self <: IgSchedulerDayViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSchedulerDayViewSettings] (val x: Self) extends AnyVal {
     
     inline def setDayViewNumberOfDays(value: Double): Self = StObject.set(x, "dayViewNumberOfDays", value.asInstanceOf[js.Any])
     

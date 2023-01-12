@@ -41,7 +41,8 @@ object libConcurrentMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCollectResults(value: Boolean): Self = StObject.set(x, "collectResults", value.asInstanceOf[js.Any])
         
@@ -80,7 +81,8 @@ object libConcurrentMod {
         __obj.asInstanceOf[ResultSetGroup]
       }
       
-      extension [Self <: ResultSetGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResultSetGroup] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         

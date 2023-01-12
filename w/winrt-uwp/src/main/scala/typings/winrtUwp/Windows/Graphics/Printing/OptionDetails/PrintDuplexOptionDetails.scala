@@ -48,7 +48,8 @@ object PrintDuplexOptionDetails {
     __obj.asInstanceOf[PrintDuplexOptionDetails]
   }
   
-  extension [Self <: PrintDuplexOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintDuplexOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

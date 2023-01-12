@@ -47,7 +47,8 @@ object buildCryptoOperationMod {
       __obj.asInstanceOf[CryptoOperation]
     }
     
-    extension [Self <: CryptoOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoOperation] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

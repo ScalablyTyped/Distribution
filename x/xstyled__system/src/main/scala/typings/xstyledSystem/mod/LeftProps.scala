@@ -16,7 +16,8 @@ object LeftProps {
     __obj.asInstanceOf[LeftProps[TLength]]
   }
   
-  extension [Self <: LeftProps[?], TLength](x: Self & LeftProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeftProps[?], TLength] (val x: Self & LeftProps[TLength]) extends AnyVal {
     
     inline def setLeft(value: ResponsiveValue[Left[TLength]]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object JobOutboundMessageChannelComplete {
     __obj.asInstanceOf[JobOutboundMessageChannelComplete]
   }
   
-  extension [Self <: JobOutboundMessageChannelComplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOutboundMessageChannelComplete] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ChannelComplete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

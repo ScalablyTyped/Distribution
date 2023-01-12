@@ -347,7 +347,8 @@ object PressableProps {
     __obj.asInstanceOf[PressableProps]
   }
   
-  extension [Self <: PressableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressableProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

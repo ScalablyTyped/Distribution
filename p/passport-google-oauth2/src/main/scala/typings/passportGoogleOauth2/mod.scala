@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
-    extension [Self <: StrategyOptionsWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsWithRequest] (val x: Self) extends AnyVal {
       
       inline def setCallbackURL(value: String): Self = StObject.set(x, "callbackURL", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object CloseSectionId {
     __obj.asInstanceOf[CloseSectionId]
   }
   
-  extension [Self <: CloseSectionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseSectionId] (val x: Self) extends AnyVal {
     
     inline def setCloseSectionId(value: String): Self = StObject.set(x, "closeSectionId", value.asInstanceOf[js.Any])
     

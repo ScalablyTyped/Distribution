@@ -18,7 +18,8 @@ object IncludedProperty {
     __obj.asInstanceOf[IncludedProperty]
   }
   
-  extension [Self <: IncludedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludedProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: IncludedPropertyNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

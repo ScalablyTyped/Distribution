@@ -45,7 +45,8 @@ object buildHooksUseFocusMod {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object buildHooksUseFocusMod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: String => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction1(value))
       

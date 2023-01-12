@@ -46,7 +46,8 @@ object typesApplicationSettingsResourceMod {
       __obj.asInstanceOf[ApplicationSettingsResource]
     }
     
-    extension [Self <: ApplicationSettingsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationSettingsResource] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object typesApplicationSettingsResourceMod {
       __obj.asInstanceOf[UnmarshalledApplicationSettingsResource]
     }
     
-    extension [Self <: UnmarshalledApplicationSettingsResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledApplicationSettingsResource] (val x: Self) extends AnyVal {
       
       inline def setCampaignHook(value: UnmarshalledCampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
       

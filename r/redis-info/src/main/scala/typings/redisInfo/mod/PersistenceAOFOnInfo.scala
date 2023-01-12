@@ -39,7 +39,8 @@ object PersistenceAOFOnInfo {
     __obj.asInstanceOf[PersistenceAOFOnInfo]
   }
   
-  extension [Self <: PersistenceAOFOnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceAOFOnInfo] (val x: Self) extends AnyVal {
     
     inline def setAof_base_size(value: String): Self = StObject.set(x, "aof_base_size", value.asInstanceOf[js.Any])
     

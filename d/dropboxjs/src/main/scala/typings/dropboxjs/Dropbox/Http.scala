@@ -39,7 +39,8 @@ object Http {
       __obj.asInstanceOf[PollResult]
     }
     
-    extension [Self <: PollResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollResult] (val x: Self) extends AnyVal {
       
       inline def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object Http {
       __obj.asInstanceOf[PulledChange]
     }
     
-    extension [Self <: PulledChange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PulledChange] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object Http {
       __obj.asInstanceOf[PulledChanges]
     }
     
-    extension [Self <: PulledChanges](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PulledChanges] (val x: Self) extends AnyVal {
       
       inline def setBlankSlate(value: Boolean): Self = StObject.set(x, "blankSlate", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object Http {
       __obj.asInstanceOf[RangeInfo]
     }
     
-    extension [Self <: RangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeInfo] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object Http {
       __obj.asInstanceOf[UploadCursor]
     }
     
-    extension [Self <: UploadCursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCursor] (val x: Self) extends AnyVal {
       
       inline def setExpiresAt(value: js.Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       

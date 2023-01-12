@@ -234,7 +234,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -289,7 +290,8 @@ object mod {
       __obj.asInstanceOf[ParsedUrl]
     }
     
-    extension [Self <: ParsedUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedUrl] (val x: Self) extends AnyVal {
       
       inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
       
@@ -460,7 +462,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: bracket | index | comma | separator | `bracket-separator` | `colon-list-separator` | none): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       
@@ -515,7 +518,8 @@ object mod {
       __obj.asInstanceOf[UrlObject]
     }
     
-    extension [Self <: UrlObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlObject] (val x: Self) extends AnyVal {
       
       inline def setFragmentIdentifier(value: String): Self = StObject.set(x, "fragmentIdentifier", value.asInstanceOf[js.Any])
       

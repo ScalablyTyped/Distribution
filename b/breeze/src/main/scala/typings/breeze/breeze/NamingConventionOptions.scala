@@ -17,7 +17,8 @@ object NamingConventionOptions {
     __obj.asInstanceOf[NamingConventionOptions]
   }
   
-  extension [Self <: NamingConventionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingConventionOptions] (val x: Self) extends AnyVal {
     
     inline def setClientPropertyNameToServer(value: /* name */ String => String): Self = StObject.set(x, "clientPropertyNameToServer", js.Any.fromFunction1(value))
     

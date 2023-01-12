@@ -73,7 +73,8 @@ object DeviceState {
     __obj.asInstanceOf[DeviceState]
   }
   
-  extension [Self <: DeviceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceState] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

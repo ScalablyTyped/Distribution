@@ -18,7 +18,8 @@ object LineAndCharacter {
     __obj.asInstanceOf[LineAndCharacter]
   }
   
-  extension [Self <: LineAndCharacter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineAndCharacter] (val x: Self) extends AnyVal {
     
     inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OSPermissionSubscriptionState {
     __obj.asInstanceOf[OSPermissionSubscriptionState]
   }
   
-  extension [Self <: OSPermissionSubscriptionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPermissionSubscriptionState] (val x: Self) extends AnyVal {
     
     inline def setEmailSubscriptionStatus(value: OSEmailSubscriptionState): Self = StObject.set(x, "emailSubscriptionStatus", value.asInstanceOf[js.Any])
     

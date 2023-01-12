@@ -19,7 +19,8 @@ object TagKey {
     __obj.asInstanceOf[TagKey]
   }
   
-  extension [Self <: TagKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagKey] (val x: Self) extends AnyVal {
     
     inline def setTagKey(value: String): Self = StObject.set(x, "tagKey", value.asInstanceOf[js.Any])
     

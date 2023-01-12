@@ -25,7 +25,8 @@ object BarProps {
     __obj.asInstanceOf[BarProps]
   }
   
-  extension [Self <: BarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarProps] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object ExchangesFetchData {
     __obj.asInstanceOf[ExchangesFetchData]
   }
   
-  extension [Self <: ExchangesFetchData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangesFetchData] (val x: Self) extends AnyVal {
     
     inline def setAlert_notice(value: String): Self = StObject.set(x, "alert_notice", value.asInstanceOf[js.Any])
     

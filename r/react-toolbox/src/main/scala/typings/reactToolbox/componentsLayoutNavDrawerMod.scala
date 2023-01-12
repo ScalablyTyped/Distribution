@@ -61,7 +61,8 @@ object componentsLayoutNavDrawerMod {
       __obj.asInstanceOf[NavDrawerProps]
     }
     
-    extension [Self <: NavDrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavDrawerProps] (val x: Self) extends AnyVal {
       
       inline def setClipped(value: Boolean): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object componentsLayoutNavDrawerMod {
       __obj.asInstanceOf[NavDrawerTheme]
     }
     
-    extension [Self <: NavDrawerTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavDrawerTheme] (val x: Self) extends AnyVal {
       
       inline def setClipped(value: String): Self = StObject.set(x, "clipped", value.asInstanceOf[js.Any])
       

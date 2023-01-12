@@ -22,7 +22,8 @@ object PropertyLastErrorType {
     __obj.asInstanceOf[PropertyLastErrorType]
   }
   
-  extension [Self <: PropertyLastErrorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyLastErrorType] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

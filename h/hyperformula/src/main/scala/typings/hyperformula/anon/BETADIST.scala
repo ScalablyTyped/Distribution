@@ -118,7 +118,8 @@ object BETADIST {
     __obj.asInstanceOf[BETADIST]
   }
   
-  extension [Self <: BETADIST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BETADIST] (val x: Self) extends AnyVal {
     
     inline def setBETADIST(value: String): Self = StObject.set(x, "BETADIST", value.asInstanceOf[js.Any])
     

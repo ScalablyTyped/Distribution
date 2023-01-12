@@ -25,7 +25,8 @@ object WatcherSearchInputRequestDefinition {
     __obj.asInstanceOf[WatcherSearchInputRequestDefinition]
   }
   
-  extension [Self <: WatcherSearchInputRequestDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherSearchInputRequestDefinition] (val x: Self) extends AnyVal {
     
     inline def setBody(value: WatcherSearchInputRequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

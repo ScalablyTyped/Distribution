@@ -59,7 +59,8 @@ object InvoiceDetails {
     __obj.asInstanceOf[InvoiceDetails]
   }
   
-  extension [Self <: InvoiceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvoiceDetails] (val x: Self) extends AnyVal {
     
     inline def setAppliedStatus(value: Boolean): Self = StObject.set(x, "AppliedStatus", value.asInstanceOf[js.Any])
     

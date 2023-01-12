@@ -23,7 +23,8 @@ object IAccordionMenuOptions {
     __obj.asInstanceOf[IAccordionMenuOptions]
   }
   
-  extension [Self <: IAccordionMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccordionMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setMultiOpen(value: Boolean): Self = StObject.set(x, "multiOpen", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FleetSpotMaintenanceStrategiesRequest {
     __obj.asInstanceOf[FleetSpotMaintenanceStrategiesRequest]
   }
   
-  extension [Self <: FleetSpotMaintenanceStrategiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetSpotMaintenanceStrategiesRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityRebalance(value: FleetSpotCapacityRebalanceRequest): Self = StObject.set(x, "CapacityRebalance", value.asInstanceOf[js.Any])
     

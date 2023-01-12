@@ -18,7 +18,8 @@ object ModifyDefaultCreditSpecificationResult {
     __obj.asInstanceOf[ModifyDefaultCreditSpecificationResult]
   }
   
-  extension [Self <: ModifyDefaultCreditSpecificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDefaultCreditSpecificationResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceFamilyCreditSpecification(value: InstanceFamilyCreditSpecification): Self = StObject.set(x, "InstanceFamilyCreditSpecification", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ButtonRequest {
     __obj.asInstanceOf[ButtonRequest]
   }
   
-  extension [Self <: ButtonRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonRequest] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ButtonRequestType): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

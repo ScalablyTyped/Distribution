@@ -17,7 +17,8 @@ object ParametersPathAnalysisidOwnerQueryConfirmdelete {
     __obj.asInstanceOf[ParametersPathAnalysisidOwnerQueryConfirmdelete]
   }
   
-  extension [Self <: ParametersPathAnalysisidOwnerQueryConfirmdelete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathAnalysisidOwnerQueryConfirmdelete] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathAnalysisidOwnerQueryConfirmdelete): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

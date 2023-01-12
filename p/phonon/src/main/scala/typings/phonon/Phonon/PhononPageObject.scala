@@ -21,7 +21,8 @@ object PhononPageObject {
     __obj.asInstanceOf[PhononPageObject]
   }
   
-  extension [Self <: PhononPageObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononPageObject] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

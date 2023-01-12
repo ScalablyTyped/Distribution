@@ -28,7 +28,8 @@ object PasteOptions {
     __obj.asInstanceOf[PasteOptions]
   }
   
-  extension [Self <: PasteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasteOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     

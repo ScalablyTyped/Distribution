@@ -73,7 +73,8 @@ object GameServerGroup {
     __obj.asInstanceOf[GameServerGroup]
   }
   
-  extension [Self <: GameServerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameServerGroup] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupArn(value: AutoScalingGroupArn): Self = StObject.set(x, "AutoScalingGroupArn", value.asInstanceOf[js.Any])
     

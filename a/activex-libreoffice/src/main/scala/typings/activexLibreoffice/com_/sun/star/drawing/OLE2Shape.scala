@@ -102,7 +102,8 @@ object OLE2Shape {
     __obj.asInstanceOf[OLE2Shape]
   }
   
-  extension [Self <: OLE2Shape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OLE2Shape] (val x: Self) extends AnyVal {
     
     inline def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     

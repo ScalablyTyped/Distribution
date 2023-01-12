@@ -31,7 +31,8 @@ object StorageManager {
     __obj.asInstanceOf[StorageManager]
   }
   
-  extension [Self <: StorageManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageManager] (val x: Self) extends AnyVal {
     
     inline def setEstimate(value: () => js.Promise[StorageEstimate]): Self = StObject.set(x, "estimate", js.Any.fromFunction0(value))
     

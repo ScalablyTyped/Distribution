@@ -42,7 +42,8 @@ object IUnaryExpressionSyntax {
     __obj.asInstanceOf[IUnaryExpressionSyntax]
   }
   
-  extension [Self <: IUnaryExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUnaryExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsUnaryExpression(value: () => Boolean): Self = StObject.set(x, "isUnaryExpression", js.Any.fromFunction0(value))
   }

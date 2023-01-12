@@ -96,7 +96,8 @@ object PutIntegrationRequest {
     __obj.asInstanceOf[PutIntegrationRequest]
   }
   
-  extension [Self <: PutIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheKeyParameters(value: ListOfString): Self = StObject.set(x, "cacheKeyParameters", value.asInstanceOf[js.Any])
     

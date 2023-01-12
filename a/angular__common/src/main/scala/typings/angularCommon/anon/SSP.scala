@@ -21,7 +21,8 @@ object SSP {
     __obj.asInstanceOf[SSP]
   }
   
-  extension [Self <: SSP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSP] (val x: Self) extends AnyVal {
     
     inline def setGBP(value: js.Array[String]): Self = StObject.set(x, "GBP", value.asInstanceOf[js.Any])
     

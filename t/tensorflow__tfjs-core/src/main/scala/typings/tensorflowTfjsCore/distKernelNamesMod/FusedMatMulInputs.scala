@@ -25,7 +25,8 @@ object FusedMatMulInputs {
     __obj.asInstanceOf[FusedMatMulInputs]
   }
   
-  extension [Self <: FusedMatMulInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedMatMulInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: TensorInfo): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

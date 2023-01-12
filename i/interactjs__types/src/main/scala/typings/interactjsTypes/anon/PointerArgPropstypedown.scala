@@ -39,7 +39,8 @@ object PointerArgPropstypedown {
     __obj.asInstanceOf[PointerArgPropstypedown]
   }
   
-  extension [Self <: PointerArgPropstypedown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerArgPropstypedown] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: PointerEventType): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

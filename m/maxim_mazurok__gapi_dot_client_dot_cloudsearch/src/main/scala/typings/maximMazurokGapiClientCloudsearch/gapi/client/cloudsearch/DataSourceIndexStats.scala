@@ -22,7 +22,8 @@ object DataSourceIndexStats {
     __obj.asInstanceOf[DataSourceIndexStats]
   }
   
-  extension [Self <: DataSourceIndexStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceIndexStats] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

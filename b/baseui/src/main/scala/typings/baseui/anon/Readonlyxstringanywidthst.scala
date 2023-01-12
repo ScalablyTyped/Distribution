@@ -18,7 +18,8 @@ object Readonlyxstringanywidthst {
     __obj.asInstanceOf[Readonlyxstringanywidthst]
   }
   
-  extension [Self <: Readonlyxstringanywidthst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyxstringanywidthst] (val x: Self) extends AnyVal {
     
     inline def setMarginBottom(value: Any): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     

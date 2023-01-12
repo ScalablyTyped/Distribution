@@ -68,7 +68,8 @@ object JobExecution {
     __obj.asInstanceOf[JobExecution]
   }
   
-  extension [Self <: JobExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobExecution] (val x: Self) extends AnyVal {
     
     inline def setApproximateSecondsBeforeTimedOut(value: ApproximateSecondsBeforeTimedOut): Self = StObject.set(x, "approximateSecondsBeforeTimedOut", value.asInstanceOf[js.Any])
     

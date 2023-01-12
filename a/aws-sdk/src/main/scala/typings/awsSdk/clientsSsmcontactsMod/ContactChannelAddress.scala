@@ -18,7 +18,8 @@ object ContactChannelAddress {
     __obj.asInstanceOf[ContactChannelAddress]
   }
   
-  extension [Self <: ContactChannelAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChannelAddress] (val x: Self) extends AnyVal {
     
     inline def setSimpleAddress(value: SimpleAddress): Self = StObject.set(x, "SimpleAddress", value.asInstanceOf[js.Any])
     

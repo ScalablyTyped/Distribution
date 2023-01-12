@@ -101,7 +101,8 @@ object ILegend {
     __obj.asInstanceOf[ILegend]
   }
   
-  extension [Self <: ILegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILegend] (val x: Self) extends AnyVal {
     
     inline def setGetDisableSelection(value: () => Boolean): Self = StObject.set(x, "getDisableSelection", js.Any.fromFunction0(value))
     

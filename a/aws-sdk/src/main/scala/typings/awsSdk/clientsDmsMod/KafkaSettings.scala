@@ -103,7 +103,8 @@ object KafkaSettings {
     __obj.asInstanceOf[KafkaSettings]
   }
   
-  extension [Self <: KafkaSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaSettings] (val x: Self) extends AnyVal {
     
     inline def setBroker(value: String): Self = StObject.set(x, "Broker", value.asInstanceOf[js.Any])
     

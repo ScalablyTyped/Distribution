@@ -58,7 +58,8 @@ object Anomaly {
     __obj.asInstanceOf[Anomaly]
   }
   
-  extension [Self <: Anomaly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anomaly] (val x: Self) extends AnyVal {
     
     inline def setAnomalyEndDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyEndDate", value.asInstanceOf[js.Any])
     

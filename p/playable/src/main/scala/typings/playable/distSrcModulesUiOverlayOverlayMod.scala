@@ -231,7 +231,8 @@ object distSrcModulesUiOverlayOverlayMod {
       __obj.asInstanceOf[Overlay]
     }
     
-    extension [Self <: Overlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

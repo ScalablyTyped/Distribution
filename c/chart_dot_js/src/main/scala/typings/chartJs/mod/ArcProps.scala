@@ -35,7 +35,8 @@ object ArcProps {
     __obj.asInstanceOf[ArcProps]
   }
   
-  extension [Self <: ArcProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcProps] (val x: Self) extends AnyVal {
     
     inline def setCircumference(value: Double): Self = StObject.set(x, "circumference", value.asInstanceOf[js.Any])
     

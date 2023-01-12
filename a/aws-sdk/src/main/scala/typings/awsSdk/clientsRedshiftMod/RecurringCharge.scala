@@ -23,7 +23,8 @@ object RecurringCharge {
     __obj.asInstanceOf[RecurringCharge]
   }
   
-  extension [Self <: RecurringCharge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurringCharge] (val x: Self) extends AnyVal {
     
     inline def setRecurringChargeAmount(value: Double): Self = StObject.set(x, "RecurringChargeAmount", value.asInstanceOf[js.Any])
     

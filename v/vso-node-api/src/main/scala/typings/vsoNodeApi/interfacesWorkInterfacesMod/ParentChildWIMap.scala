@@ -19,7 +19,8 @@ object ParentChildWIMap {
     __obj.asInstanceOf[ParentChildWIMap]
   }
   
-  extension [Self <: ParentChildWIMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentChildWIMap] (val x: Self) extends AnyVal {
     
     inline def setChildWorkItemIds(value: js.Array[Double]): Self = StObject.set(x, "childWorkItemIds", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object SignatureLineObject {
     __obj.asInstanceOf[SignatureLineObject]
   }
   
-  extension [Self <: SignatureLineObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureLineObject] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[AppendOptions]
     }
     
-    extension [Self <: AppendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppendOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object mod {
       __obj.asInstanceOf[ReadableOptions]
     }
     
-    extension [Self <: ReadableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object mod {
       __obj.asInstanceOf[SubmitOptions]
     }
     
-    extension [Self <: SubmitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmitOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: httpsColon | httpColon): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

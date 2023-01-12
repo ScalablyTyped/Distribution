@@ -18,7 +18,8 @@ object BatchDeleteTableVersionResponse {
     __obj.asInstanceOf[BatchDeleteTableVersionResponse]
   }
   
-  extension [Self <: BatchDeleteTableVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteTableVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: TableVersionErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

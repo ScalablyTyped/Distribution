@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[RemoteAddress]
     }
     
-    extension [Self <: RemoteAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteAddress] (val x: Self) extends AnyVal {
       
       inline def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Socket]
     }
     
-    extension [Self <: Socket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Socket] (val x: Self) extends AnyVal {
       
       inline def setRemoteAddress(value: String): Self = StObject.set(x, "remoteAddress", value.asInstanceOf[js.Any])
       

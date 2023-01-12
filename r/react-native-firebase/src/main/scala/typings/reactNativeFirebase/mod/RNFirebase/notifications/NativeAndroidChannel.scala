@@ -39,7 +39,8 @@ object NativeAndroidChannel {
     __obj.asInstanceOf[NativeAndroidChannel]
   }
   
-  extension [Self <: NativeAndroidChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeAndroidChannel] (val x: Self) extends AnyVal {
     
     inline def setBypassDnd(value: Boolean): Self = StObject.set(x, "bypassDnd", value.asInstanceOf[js.Any])
     

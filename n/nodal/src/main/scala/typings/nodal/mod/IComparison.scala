@@ -22,7 +22,8 @@ object IComparison {
     __obj.asInstanceOf[IComparison]
   }
   
-  extension [Self <: IComparison](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComparison] (val x: Self) extends AnyVal {
     
     inline def set__count(value: Double): Self = StObject.set(x, "__count", value.asInstanceOf[js.Any])
     

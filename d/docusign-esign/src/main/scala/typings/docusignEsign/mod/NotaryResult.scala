@@ -17,7 +17,8 @@ object NotaryResult {
     __obj.asInstanceOf[NotaryResult]
   }
   
-  extension [Self <: NotaryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryResult] (val x: Self) extends AnyVal {
     
     inline def setJurisdictions(value: js.Array[Jurisdiction]): Self = StObject.set(x, "jurisdictions", value.asInstanceOf[js.Any])
     

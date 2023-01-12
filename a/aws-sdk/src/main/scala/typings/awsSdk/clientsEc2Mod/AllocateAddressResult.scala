@@ -53,7 +53,8 @@ object AllocateAddressResult {
     __obj.asInstanceOf[AllocateAddressResult]
   }
   
-  extension [Self <: AllocateAddressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateAddressResult] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

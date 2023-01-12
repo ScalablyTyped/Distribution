@@ -22,7 +22,8 @@ object PositionStyle {
     __obj.asInstanceOf[PositionStyle]
   }
   
-  extension [Self <: PositionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionStyle] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: center | start | auto): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

@@ -67,7 +67,8 @@ object PartialSliderActive {
     __obj.asInstanceOf[PartialSliderActive]
   }
   
-  extension [Self <: PartialSliderActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSliderActive] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

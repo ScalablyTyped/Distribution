@@ -15,7 +15,8 @@ object DeclarativeTableRowSelectedEvent {
     __obj.asInstanceOf[DeclarativeTableRowSelectedEvent]
   }
   
-  extension [Self <: DeclarativeTableRowSelectedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarativeTableRowSelectedEvent] (val x: Self) extends AnyVal {
     
     inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
   }

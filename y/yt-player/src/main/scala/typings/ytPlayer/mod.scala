@@ -326,7 +326,8 @@ object mod {
       __obj.asInstanceOf[YouTubePlayerOptions]
     }
     
-    extension [Self <: YouTubePlayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YouTubePlayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object libProgressProgressMonitorMod {
       __obj.asInstanceOf[ProgressMonitor]
     }
     
-    extension [Self <: ProgressMonitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressMonitor] (val x: Self) extends AnyVal {
       
       inline def setGetTaskProgressStackUpdate(value: (TaskProgressStatusArray, Double) => Boolean): Self = StObject.set(x, "getTaskProgressStackUpdate", js.Any.fromFunction2(value))
     }

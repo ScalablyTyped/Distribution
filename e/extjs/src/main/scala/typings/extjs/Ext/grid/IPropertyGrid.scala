@@ -74,7 +74,8 @@ object IPropertyGrid {
     __obj.asInstanceOf[IPropertyGrid]
   }
   
-  extension [Self <: IPropertyGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyGrid] (val x: Self) extends AnyVal {
     
     inline def setCustomEditors(value: Any): Self = StObject.set(x, "customEditors", value.asInstanceOf[js.Any])
     

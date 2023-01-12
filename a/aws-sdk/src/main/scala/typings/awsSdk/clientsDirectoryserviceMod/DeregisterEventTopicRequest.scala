@@ -23,7 +23,8 @@ object DeregisterEventTopicRequest {
     __obj.asInstanceOf[DeregisterEventTopicRequest]
   }
   
-  extension [Self <: DeregisterEventTopicRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterEventTopicRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

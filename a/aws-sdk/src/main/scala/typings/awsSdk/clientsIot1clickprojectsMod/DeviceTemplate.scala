@@ -23,7 +23,8 @@ object DeviceTemplate {
     __obj.asInstanceOf[DeviceTemplate]
   }
   
-  extension [Self <: DeviceTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceTemplate] (val x: Self) extends AnyVal {
     
     inline def setCallbackOverrides(value: DeviceCallbackOverrideMap): Self = StObject.set(x, "callbackOverrides", value.asInstanceOf[js.Any])
     

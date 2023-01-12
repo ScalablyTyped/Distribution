@@ -26,7 +26,8 @@ object StartQueryPlanningRequest {
     __obj.asInstanceOf[StartQueryPlanningRequest]
   }
   
-  extension [Self <: StartQueryPlanningRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartQueryPlanningRequest] (val x: Self) extends AnyVal {
     
     inline def setQueryPlanningContext(value: QueryPlanningContext): Self = StObject.set(x, "QueryPlanningContext", value.asInstanceOf[js.Any])
     

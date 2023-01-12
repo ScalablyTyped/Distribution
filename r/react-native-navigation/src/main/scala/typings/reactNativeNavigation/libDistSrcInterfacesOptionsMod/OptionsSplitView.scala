@@ -49,7 +49,8 @@ object OptionsSplitView {
     __obj.asInstanceOf[OptionsSplitView]
   }
   
-  extension [Self <: OptionsSplitView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsSplitView] (val x: Self) extends AnyVal {
     
     inline def setDisplayMode(value: auto | visible | hidden | overlay): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     

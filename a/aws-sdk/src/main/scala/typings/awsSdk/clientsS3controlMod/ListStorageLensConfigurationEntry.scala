@@ -33,7 +33,8 @@ object ListStorageLensConfigurationEntry {
     __obj.asInstanceOf[ListStorageLensConfigurationEntry]
   }
   
-  extension [Self <: ListStorageLensConfigurationEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStorageLensConfigurationEntry] (val x: Self) extends AnyVal {
     
     inline def setHomeRegion(value: S3AWSRegion): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     

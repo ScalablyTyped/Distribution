@@ -173,7 +173,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureAccountDetails]
     }
     
-    extension [Self <: ThreeDSecureAccountDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureAccountDetails] (val x: Self) extends AnyVal {
       
       inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
@@ -294,7 +295,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureAdditionalInformation]
     }
     
-    extension [Self <: ThreeDSecureAdditionalInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureAdditionalInformation] (val x: Self) extends AnyVal {
       
       inline def setAccountAgeIndicator(value: String): Self = StObject.set(x, "accountAgeIndicator", value.asInstanceOf[js.Any])
       
@@ -535,7 +537,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureBillingAddress]
     }
     
-    extension [Self <: ThreeDSecureBillingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureBillingAddress] (val x: Self) extends AnyVal {
       
       inline def setCountryCodeAlpha2(value: String): Self = StObject.set(x, "countryCodeAlpha2", value.asInstanceOf[js.Any])
       
@@ -616,7 +619,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureBinData]
     }
     
-    extension [Self <: ThreeDSecureBinData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureBinData] (val x: Self) extends AnyVal {
       
       inline def setCommercial(value: String): Self = StObject.set(x, "commercial", value.asInstanceOf[js.Any])
       
@@ -668,7 +672,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureCreateOptions]
     }
     
-    extension [Self <: ThreeDSecureCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthorization(value: String): Self = StObject.set(x, "authorization", value.asInstanceOf[js.Any])
       
@@ -741,7 +746,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureInfo]
     }
     
-    extension [Self <: ThreeDSecureInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureInfo] (val x: Self) extends AnyVal {
       
       inline def setCavv(value: String): Self = StObject.set(x, "cavv", value.asInstanceOf[js.Any])
       
@@ -792,7 +798,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureShippingAddress]
     }
     
-    extension [Self <: ThreeDSecureShippingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureShippingAddress] (val x: Self) extends AnyVal {
       
       inline def setCountryCodeAlpha2(value: String): Self = StObject.set(x, "countryCodeAlpha2", value.asInstanceOf[js.Any])
       
@@ -832,7 +839,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureVerificationData]
     }
     
-    extension [Self <: ThreeDSecureVerificationData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureVerificationData] (val x: Self) extends AnyVal {
       
       inline def setLookup(value: ThreeDSecureVersion): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
@@ -881,7 +889,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureVerifyOptions]
     }
     
-    extension [Self <: ThreeDSecureVerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureVerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAddFrame(value: (/* err */ js.UndefOr[BraintreeError], /* iframe */ js.UndefOr[HTMLIFrameElement]) => Unit): Self = StObject.set(x, "addFrame", js.Any.fromFunction2(value))
       
@@ -960,7 +969,8 @@ object modulesThreeDSecureMod {
       __obj.asInstanceOf[ThreeDSecureVerifyPayload]
     }
     
-    extension [Self <: ThreeDSecureVerifyPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThreeDSecureVerifyPayload] (val x: Self) extends AnyVal {
       
       inline def setBinData(value: ThreeDSecureBinData): Self = StObject.set(x, "binData", value.asInstanceOf[js.Any])
       

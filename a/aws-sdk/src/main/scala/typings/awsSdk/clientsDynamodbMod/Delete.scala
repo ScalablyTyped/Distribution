@@ -43,7 +43,8 @@ object Delete {
     __obj.asInstanceOf[Delete]
   }
   
-  extension [Self <: Delete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
     

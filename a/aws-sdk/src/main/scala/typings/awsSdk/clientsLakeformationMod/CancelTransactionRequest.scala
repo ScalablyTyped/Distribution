@@ -18,7 +18,8 @@ object CancelTransactionRequest {
     __obj.asInstanceOf[CancelTransactionRequest]
   }
   
-  extension [Self <: CancelTransactionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTransactionRequest] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: TransactionIdString): Self = StObject.set(x, "TransactionId", value.asInstanceOf[js.Any])
   }

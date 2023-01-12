@@ -33,7 +33,8 @@ object Contentreportsenabled {
     __obj.asInstanceOf[Contentreportsenabled]
   }
   
-  extension [Self <: Contentreportsenabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contentreportsenabled] (val x: Self) extends AnyVal {
     
     inline def setContent_reports_enabled(value: Boolean): Self = StObject.set(x, "content_reports_enabled", value.asInstanceOf[js.Any])
     

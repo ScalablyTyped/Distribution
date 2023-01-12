@@ -28,7 +28,8 @@ object RepublishAction {
     __obj.asInstanceOf[RepublishAction]
   }
   
-  extension [Self <: RepublishAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepublishAction] (val x: Self) extends AnyVal {
     
     inline def setQos(value: Qos): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     

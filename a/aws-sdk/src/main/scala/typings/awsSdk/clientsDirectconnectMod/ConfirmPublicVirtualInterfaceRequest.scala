@@ -18,7 +18,8 @@ object ConfirmPublicVirtualInterfaceRequest {
     __obj.asInstanceOf[ConfirmPublicVirtualInterfaceRequest]
   }
   
-  extension [Self <: ConfirmPublicVirtualInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmPublicVirtualInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
   }

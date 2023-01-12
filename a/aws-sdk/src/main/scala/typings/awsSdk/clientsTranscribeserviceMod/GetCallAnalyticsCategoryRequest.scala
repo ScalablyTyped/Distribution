@@ -18,7 +18,8 @@ object GetCallAnalyticsCategoryRequest {
     __obj.asInstanceOf[GetCallAnalyticsCategoryRequest]
   }
   
-  extension [Self <: GetCallAnalyticsCategoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCallAnalyticsCategoryRequest] (val x: Self) extends AnyVal {
     
     inline def setCategoryName(value: CategoryName): Self = StObject.set(x, "CategoryName", value.asInstanceOf[js.Any])
   }

@@ -108,7 +108,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigAttributes]
     }
     
-    extension [Self <: ConfigAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigAttributes] (val x: Self) extends AnyVal {
       
       inline def setLog_level(
         value: LOG_LEVEL_VERBOSE | LOG_LEVEL_DEBUG | LOG_LEVEL_INFO | LOG_LEVEL_WARN | LOG_LEVEL_ERROR | LOG_LEVEL_NONE
@@ -170,7 +171,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VariantInfo]
     }
     
-    extension [Self <: VariantInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantInfo] (val x: Self) extends AnyVal {
       
       inline def setGetAnonymousUserId(value: () => String): Self = StObject.set(x, "getAnonymousUserId", js.Any.fromFunction0(value))
       

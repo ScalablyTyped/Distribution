@@ -19,7 +19,8 @@ object FieldOptions {
     __obj.asInstanceOf[FieldOptions]
   }
   
-  extension [Self <: FieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String | Double | Boolean | js.Array[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

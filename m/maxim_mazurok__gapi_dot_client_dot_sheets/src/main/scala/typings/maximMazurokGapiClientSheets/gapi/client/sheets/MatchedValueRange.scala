@@ -19,7 +19,8 @@ object MatchedValueRange {
     __obj.asInstanceOf[MatchedValueRange]
   }
   
-  extension [Self <: MatchedValueRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchedValueRange] (val x: Self) extends AnyVal {
     
     inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
     

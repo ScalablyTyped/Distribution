@@ -19,7 +19,8 @@ object Beatvalue {
     __obj.asInstanceOf[Beatvalue]
   }
   
-  extension [Self <: Beatvalue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Beatvalue] (val x: Self) extends AnyVal {
     
     inline def setBeat_value(value: Double): Self = StObject.set(x, "beat_value", value.asInstanceOf[js.Any])
     

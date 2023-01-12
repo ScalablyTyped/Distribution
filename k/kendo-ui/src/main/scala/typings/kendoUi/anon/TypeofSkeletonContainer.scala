@@ -20,7 +20,8 @@ object TypeofSkeletonContainer {
     __obj.asInstanceOf[TypeofSkeletonContainer]
   }
   
-  extension [Self <: TypeofSkeletonContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonContainer] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => SkeletonContainer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

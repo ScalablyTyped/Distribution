@@ -23,7 +23,8 @@ object ColumnGroupSchema {
     __obj.asInstanceOf[ColumnGroupSchema]
   }
   
-  extension [Self <: ColumnGroupSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnGroupSchema] (val x: Self) extends AnyVal {
     
     inline def setColumnGroupColumnSchemaList(value: ColumnGroupColumnSchemaList): Self = StObject.set(x, "ColumnGroupColumnSchemaList", value.asInstanceOf[js.Any])
     

@@ -148,7 +148,8 @@ object typesFileInputUseFileUploadMod {
       __obj.asInstanceOf[FileUploadHookState[CustomError]]
     }
     
-    extension [Self <: FileUploadHookState[?], CustomError](x: Self & FileUploadHookState[CustomError]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadHookState[?], CustomError] (val x: Self & FileUploadHookState[CustomError]) extends AnyVal {
       
       inline def setReaders(value: Record[String, FileReader]): Self = StObject.set(x, "readers", value.asInstanceOf[js.Any])
     }
@@ -182,7 +183,8 @@ object typesFileInputUseFileUploadMod {
       __obj.asInstanceOf[FileUploadOptions[E, CustomError]]
     }
     
-    extension [Self <: FileUploadOptions[?, ?], E /* <: HTMLElement */, CustomError](x: Self & (FileUploadOptions[E, CustomError])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadOptions[?, ?], E /* <: HTMLElement */, CustomError] (val x: Self & (FileUploadOptions[E, CustomError])) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -230,7 +232,8 @@ object typesFileInputUseFileUploadMod {
       __obj.asInstanceOf[FileUploadState[CustomError]]
     }
     
-    extension [Self <: FileUploadState[?], CustomError](x: Self & FileUploadState[CustomError]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadState[?], CustomError] (val x: Self & FileUploadState[CustomError]) extends AnyVal {
       
       inline def setErrors(value: js.Array[FileValidationError[CustomError]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

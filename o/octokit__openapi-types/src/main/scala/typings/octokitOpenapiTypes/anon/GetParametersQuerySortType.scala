@@ -16,7 +16,8 @@ object GetParametersQuerySortType {
     __obj.asInstanceOf[GetParametersQuerySortType]
   }
   
-  extension [Self <: GetParametersQuerySortType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQuerySortType] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQuerySortType): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

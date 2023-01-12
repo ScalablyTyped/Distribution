@@ -25,7 +25,8 @@ object IShadow {
     __obj.asInstanceOf[IShadow]
   }
   
-  extension [Self <: IShadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShadow] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

@@ -160,7 +160,8 @@ object buildSrcAuthJwtclientMod {
       __obj.asInstanceOf[JWTOptions]
     }
     
-    extension [Self <: JWTOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalClaims(value: js.Object): Self = StObject.set(x, "additionalClaims", value.asInstanceOf[js.Any])
       

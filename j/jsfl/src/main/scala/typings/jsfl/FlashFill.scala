@@ -53,7 +53,8 @@ object FlashFill {
     __obj.asInstanceOf[FlashFill]
   }
   
-  extension [Self <: FlashFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashFill] (val x: Self) extends AnyVal {
     
     inline def setBitmapIsClipped(value: Boolean): Self = StObject.set(x, "bitmapIsClipped", value.asInstanceOf[js.Any])
     

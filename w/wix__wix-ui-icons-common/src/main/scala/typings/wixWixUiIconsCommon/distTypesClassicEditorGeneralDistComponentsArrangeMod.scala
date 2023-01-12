@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsArrangeMod extends Shortcut {
       __obj.asInstanceOf[ArrangeProps]
     }
     
-    extension [Self <: ArrangeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrangeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

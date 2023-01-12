@@ -32,7 +32,8 @@ object Session {
     __obj.asInstanceOf[Session]
   }
   
-  extension [Self <: Session](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
     
     inline def setCipherSuite(value: CipherSuite): Self = StObject.set(x, "cipherSuite", value.asInstanceOf[js.Any])
     

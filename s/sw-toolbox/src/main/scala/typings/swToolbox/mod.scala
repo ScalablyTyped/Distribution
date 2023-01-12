@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options_]
     }
     
-    extension [Self <: Options_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
       
       inline def setCache(value: CacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

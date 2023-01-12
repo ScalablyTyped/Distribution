@@ -25,7 +25,8 @@ object MappingJoinProperty {
     __obj.asInstanceOf[MappingJoinProperty]
   }
   
-  extension [Self <: MappingJoinProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingJoinProperty] (val x: Self) extends AnyVal {
     
     inline def setEager_global_ordinals(value: Boolean): Self = StObject.set(x, "eager_global_ordinals", value.asInstanceOf[js.Any])
     

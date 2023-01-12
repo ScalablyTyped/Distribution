@@ -35,7 +35,8 @@ object SoftEdgeFormat {
     __obj.asInstanceOf[SoftEdgeFormat]
   }
   
-  extension [Self <: SoftEdgeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftEdgeFormat] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

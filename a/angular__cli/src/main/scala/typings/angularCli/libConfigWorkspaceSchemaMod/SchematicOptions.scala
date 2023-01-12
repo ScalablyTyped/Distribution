@@ -55,7 +55,8 @@ object SchematicOptions {
     __obj.asInstanceOf[SchematicOptions]
   }
   
-  extension [Self <: SchematicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchematicOptions] (val x: Self) extends AnyVal {
     
     inline def `set@schematicsSlashangularColonapplication`(value: AngularApplicationOptionsSchema): Self = StObject.set(x, "@schematics/angular:application", value.asInstanceOf[js.Any])
     

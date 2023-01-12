@@ -15,7 +15,8 @@ object CordovaPlugins {
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  extension [Self <: CordovaPlugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
     
     inline def setBackgroundMode(value: CordovaPluginBackgroundMode): Self = StObject.set(x, "backgroundMode", value.asInstanceOf[js.Any])
   }

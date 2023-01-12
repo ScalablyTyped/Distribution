@@ -2263,7 +2263,8 @@ object AfricaAbidjan {
     __obj.asInstanceOf[AfricaAbidjan]
   }
   
-  extension [Self <: AfricaAbidjan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfricaAbidjan] (val x: Self) extends AnyVal {
     
     inline def setAfricaSlashAbidjan(value: C): Self = StObject.set(x, "Africa/Abidjan", value.asInstanceOf[js.Any])
     

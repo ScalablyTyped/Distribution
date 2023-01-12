@@ -596,7 +596,8 @@ object anon {
       __obj.asInstanceOf[IIconPartialIRenderer]
     }
     
-    extension [Self <: IIconPartialIRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIconPartialIRenderer] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -641,7 +642,8 @@ object anon {
       __obj.asInstanceOf[IOptionsloadingbooleanund]
     }
     
-    extension [Self <: IOptionsloadingbooleanund](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptionsloadingbooleanund] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -672,7 +674,8 @@ object anon {
       __obj.asInstanceOf[Icon]
     }
     
-    extension [Self <: Icon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: IResolvable): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     }
@@ -689,7 +692,8 @@ object anon {
       __obj.asInstanceOf[Ignore]
     }
     
-    extension [Self <: Ignore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ignore] (val x: Self) extends AnyVal {
       
       inline def setIgnore(value: js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
@@ -713,7 +717,8 @@ object anon {
       __obj.asInstanceOf[PartialIRenderer]
     }
     
-    extension [Self <: PartialIRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIRenderer] (val x: Self) extends AnyVal {
       
       inline def setRender(value: /* host */ HTMLElement => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -2814,7 +2819,8 @@ object anon {
       __obj.asInstanceOf[PartialIResolverPropsIPro]
     }
     
-    extension [Self <: PartialIResolverPropsIPro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIResolverPropsIPro] (val x: Self) extends AnyVal {
       
       inline def set$debugName(value: String): Self = StObject.set(x, "$debugName", value.asInstanceOf[js.Any])
       
@@ -9823,7 +9829,8 @@ object anon {
       __obj.asInstanceOf[PartialIResolverPropsIRea]
     }
     
-    extension [Self <: PartialIResolverPropsIRea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIResolverPropsIRea] (val x: Self) extends AnyVal {
       
       inline def set$debugName(value: String): Self = StObject.set(x, "$debugName", value.asInstanceOf[js.Any])
       
@@ -14766,7 +14773,8 @@ object anon {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

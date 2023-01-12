@@ -31,7 +31,8 @@ object PickImplrecursionPartialP {
     __obj.asInstanceOf[PickImplrecursionPartialP]
   }
   
-  extension [Self <: PickImplrecursionPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplrecursionPartialP] (val x: Self) extends AnyVal {
     
     inline def setApi(value: String): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

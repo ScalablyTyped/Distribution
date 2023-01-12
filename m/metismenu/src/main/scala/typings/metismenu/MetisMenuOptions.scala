@@ -23,7 +23,8 @@ object MetisMenuOptions {
     __obj.asInstanceOf[MetisMenuOptions]
   }
   
-  extension [Self <: MetisMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetisMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setParentTrigger(value: String): Self = StObject.set(x, "parentTrigger", value.asInstanceOf[js.Any])
     

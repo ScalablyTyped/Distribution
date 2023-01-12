@@ -76,7 +76,8 @@ object InstrumentPlayOptionsObject {
     __obj.asInstanceOf[InstrumentPlayOptionsObject]
   }
   
-  extension [Self <: InstrumentPlayOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstrumentPlayOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

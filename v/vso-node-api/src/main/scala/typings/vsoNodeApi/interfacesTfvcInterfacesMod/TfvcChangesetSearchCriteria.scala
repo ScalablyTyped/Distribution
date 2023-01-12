@@ -62,7 +62,8 @@ object TfvcChangesetSearchCriteria {
     __obj.asInstanceOf[TfvcChangesetSearchCriteria]
   }
   
-  extension [Self <: TfvcChangesetSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcChangesetSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

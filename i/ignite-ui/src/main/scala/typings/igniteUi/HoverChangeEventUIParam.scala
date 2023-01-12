@@ -23,7 +23,8 @@ object HoverChangeEventUIParam {
     __obj.asInstanceOf[HoverChangeEventUIParam]
   }
   
-  extension [Self <: HoverChangeEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverChangeEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     

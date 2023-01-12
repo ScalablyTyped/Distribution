@@ -22,7 +22,8 @@ object HeaderRowProps {
     __obj.asInstanceOf[HeaderRowProps]
   }
   
-  extension [Self <: HeaderRowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderRowProps] (val x: Self) extends AnyVal {
     
     inline def setHideSpacer(value: Boolean): Self = StObject.set(x, "hideSpacer", value.asInstanceOf[js.Any])
     

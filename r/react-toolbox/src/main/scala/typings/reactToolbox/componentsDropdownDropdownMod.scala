@@ -126,7 +126,8 @@ object componentsDropdownDropdownMod {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object componentsDropdownDropdownMod {
       __obj.asInstanceOf[DropdownTheme]
     }
     
-    extension [Self <: DropdownTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

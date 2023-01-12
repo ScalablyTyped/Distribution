@@ -15,7 +15,8 @@ object S3KeyFilter {
     __obj.asInstanceOf[S3KeyFilter]
   }
   
-  extension [Self <: S3KeyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3KeyFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterRules(value: FilterRuleList): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
     

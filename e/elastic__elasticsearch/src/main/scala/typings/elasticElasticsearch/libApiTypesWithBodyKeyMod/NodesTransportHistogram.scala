@@ -19,7 +19,8 @@ object NodesTransportHistogram {
     __obj.asInstanceOf[NodesTransportHistogram]
   }
   
-  extension [Self <: NodesTransportHistogram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesTransportHistogram] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

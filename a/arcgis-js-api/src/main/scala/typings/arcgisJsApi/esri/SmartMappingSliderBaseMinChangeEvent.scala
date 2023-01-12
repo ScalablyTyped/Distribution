@@ -21,7 +21,8 @@ object SmartMappingSliderBaseMinChangeEvent {
     __obj.asInstanceOf[SmartMappingSliderBaseMinChangeEvent]
   }
   
-  extension [Self <: SmartMappingSliderBaseMinChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingSliderBaseMinChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CAPABILITIESNEGOTIATIONERROR {
     __obj.asInstanceOf[CAPABILITIESNEGOTIATIONERROR]
   }
   
-  extension [Self <: CAPABILITIESNEGOTIATIONERROR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPABILITIESNEGOTIATIONERROR] (val x: Self) extends AnyVal {
     
     inline def setCAPABILITIES_NEGOTIATION_ERROR(value: capabilities_negotiation_error_): Self = StObject.set(x, "CAPABILITIES_NEGOTIATION_ERROR", value.asInstanceOf[js.Any])
     

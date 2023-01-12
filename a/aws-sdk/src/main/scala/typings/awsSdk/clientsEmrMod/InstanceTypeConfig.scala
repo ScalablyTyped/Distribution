@@ -48,7 +48,8 @@ object InstanceTypeConfig {
     __obj.asInstanceOf[InstanceTypeConfig]
   }
   
-  extension [Self <: InstanceTypeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTypeConfig] (val x: Self) extends AnyVal {
     
     inline def setBidPrice(value: XmlStringMaxLen256): Self = StObject.set(x, "BidPrice", value.asInstanceOf[js.Any])
     

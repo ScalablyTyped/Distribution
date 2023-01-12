@@ -148,7 +148,8 @@ object RasterInfoProperties {
     __obj.asInstanceOf[RasterInfoProperties]
   }
   
-  extension [Self <: RasterInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributeTable(value: FeatureSetProperties): Self = StObject.set(x, "attributeTable", value.asInstanceOf[js.Any])
     

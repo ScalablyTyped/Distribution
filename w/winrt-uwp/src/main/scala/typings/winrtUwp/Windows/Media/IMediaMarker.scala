@@ -23,7 +23,8 @@ object IMediaMarker {
     __obj.asInstanceOf[IMediaMarker]
   }
   
-  extension [Self <: IMediaMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaMarker] (val x: Self) extends AnyVal {
     
     inline def setMediaMarkerType(value: String): Self = StObject.set(x, "mediaMarkerType", value.asInstanceOf[js.Any])
     

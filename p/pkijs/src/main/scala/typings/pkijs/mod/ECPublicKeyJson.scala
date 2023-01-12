@@ -19,7 +19,8 @@ object ECPublicKeyJson {
     __obj.asInstanceOf[ECPublicKeyJson]
   }
   
-  extension [Self <: ECPublicKeyJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECPublicKeyJson] (val x: Self) extends AnyVal {
     
     inline def setCrv(value: String): Self = StObject.set(x, "crv", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: PaginationProps => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setPaginationProps(value: PaginationChildProps): Self = StObject.set(x, "paginationProps", value.asInstanceOf[js.Any])
       

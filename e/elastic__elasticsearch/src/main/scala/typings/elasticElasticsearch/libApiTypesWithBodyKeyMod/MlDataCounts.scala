@@ -64,7 +64,8 @@ object MlDataCounts {
     __obj.asInstanceOf[MlDataCounts]
   }
   
-  extension [Self <: MlDataCounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataCounts] (val x: Self) extends AnyVal {
     
     inline def setBucket_count(value: long): Self = StObject.set(x, "bucket_count", value.asInstanceOf[js.Any])
     

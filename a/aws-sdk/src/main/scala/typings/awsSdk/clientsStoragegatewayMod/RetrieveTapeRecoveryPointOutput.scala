@@ -18,7 +18,8 @@ object RetrieveTapeRecoveryPointOutput {
     __obj.asInstanceOf[RetrieveTapeRecoveryPointOutput]
   }
   
-  extension [Self <: RetrieveTapeRecoveryPointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveTapeRecoveryPointOutput] (val x: Self) extends AnyVal {
     
     inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     

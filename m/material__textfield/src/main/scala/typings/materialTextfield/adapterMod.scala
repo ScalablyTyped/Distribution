@@ -97,7 +97,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldInputAdapter]
     }
     
-    extension [Self <: MDCTextFieldInputAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldInputAdapter] (val x: Self) extends AnyVal {
       
       inline def setDeregisterInputInteractionHandler(value: (Any, SpecificEventListener[Any]) => Unit): Self = StObject.set(x, "deregisterInputInteractionHandler", js.Any.fromFunction2(value))
       
@@ -157,7 +158,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldLabelAdapter]
     }
     
-    extension [Self <: MDCTextFieldLabelAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldLabelAdapter] (val x: Self) extends AnyVal {
       
       inline def setFloatLabel(value: Boolean => Unit): Self = StObject.set(x, "floatLabel", js.Any.fromFunction1(value))
       
@@ -199,7 +201,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldLineRippleAdapter]
     }
     
-    extension [Self <: MDCTextFieldLineRippleAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldLineRippleAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateLineRipple(value: () => Unit): Self = StObject.set(x, "activateLineRipple", js.Any.fromFunction0(value))
       
@@ -234,7 +237,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldOutlineAdapter]
     }
     
-    extension [Self <: MDCTextFieldOutlineAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldOutlineAdapter] (val x: Self) extends AnyVal {
       
       inline def setCloseOutline(value: () => Unit): Self = StObject.set(x, "closeOutline", js.Any.fromFunction0(value))
       
@@ -297,7 +301,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCTextFieldRootAdapter]
     }
     
-    extension [Self <: MDCTextFieldRootAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldRootAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

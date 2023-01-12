@@ -16,7 +16,8 @@ object VersionIdentificator {
     __obj.asInstanceOf[VersionIdentificator]
   }
   
-  extension [Self <: VersionIdentificator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionIdentificator] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }

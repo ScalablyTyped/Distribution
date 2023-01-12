@@ -44,7 +44,8 @@ object ojarraydataproviderMod {
       __obj.asInstanceOf[SortComparators[D]]
     }
     
-    extension [Self <: SortComparators[?], D](x: Self & SortComparators[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortComparators[?], D] (val x: Self & SortComparators[D]) extends AnyVal {
       
       inline def setComparators(value: Map[/* keyof D */ String, js.Function2[/* a */ Any, /* b */ Any, Double]]): Self = StObject.set(x, "comparators", value.asInstanceOf[js.Any])
     }

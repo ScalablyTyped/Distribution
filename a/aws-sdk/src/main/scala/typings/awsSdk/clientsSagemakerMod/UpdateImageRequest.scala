@@ -38,7 +38,8 @@ object UpdateImageRequest {
     __obj.asInstanceOf[UpdateImageRequest]
   }
   
-  extension [Self <: UpdateImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteProperties(value: ImageDeletePropertyList): Self = StObject.set(x, "DeleteProperties", value.asInstanceOf[js.Any])
     

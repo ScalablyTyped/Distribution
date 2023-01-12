@@ -18,7 +18,8 @@ object IapPublicKeysResponse {
     __obj.asInstanceOf[IapPublicKeysResponse]
   }
   
-  extension [Self <: IapPublicKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IapPublicKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setPubkeys(value: PublicKeys): Self = StObject.set(x, "pubkeys", value.asInstanceOf[js.Any])
     

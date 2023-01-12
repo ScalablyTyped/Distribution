@@ -28,7 +28,8 @@ object ListFileSystemAssociationsOutput {
     __obj.asInstanceOf[ListFileSystemAssociationsOutput]
   }
   
-  extension [Self <: ListFileSystemAssociationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFileSystemAssociationsOutput] (val x: Self) extends AnyVal {
     
     inline def setFileSystemAssociationSummaryList(value: FileSystemAssociationSummaryList): Self = StObject.set(x, "FileSystemAssociationSummaryList", value.asInstanceOf[js.Any])
     

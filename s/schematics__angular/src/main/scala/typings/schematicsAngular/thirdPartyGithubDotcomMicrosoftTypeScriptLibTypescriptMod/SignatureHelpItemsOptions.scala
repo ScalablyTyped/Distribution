@@ -15,7 +15,8 @@ object SignatureHelpItemsOptions {
     __obj.asInstanceOf[SignatureHelpItemsOptions]
   }
   
-  extension [Self <: SignatureHelpItemsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpItemsOptions] (val x: Self) extends AnyVal {
     
     inline def setTriggerReason(value: SignatureHelpTriggerReason): Self = StObject.set(x, "triggerReason", value.asInstanceOf[js.Any])
     

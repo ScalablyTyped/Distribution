@@ -28,7 +28,8 @@ object SetDefaultSenderIdResult {
     __obj.asInstanceOf[SetDefaultSenderIdResult]
   }
   
-  extension [Self <: SetDefaultSenderIdResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDefaultSenderIdResult] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetArn(value: String): Self = StObject.set(x, "ConfigurationSetArn", value.asInstanceOf[js.Any])
     

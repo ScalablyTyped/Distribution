@@ -26,7 +26,8 @@ object CostCategorySplitChargeRuleParameter {
     __obj.asInstanceOf[CostCategorySplitChargeRuleParameter]
   }
   
-  extension [Self <: CostCategorySplitChargeRuleParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostCategorySplitChargeRuleParameter] (val x: Self) extends AnyVal {
     
     inline def setType(value: CostCategorySplitChargeRuleParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

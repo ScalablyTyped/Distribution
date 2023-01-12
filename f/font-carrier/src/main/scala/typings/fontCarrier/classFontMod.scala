@@ -31,7 +31,8 @@ object classFontMod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String | Buffer): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object classFontMod {
       __obj.asInstanceOf[FontOptions]
     }
     
-    extension [Self <: FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
       
       inline def setHorizAdvX(value: Double): Self = StObject.set(x, "horizAdvX", value.asInstanceOf[js.Any])
       

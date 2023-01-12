@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[HttpHeader]
     }
     
-    extension [Self <: HttpHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpHeader] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[HttpProviderAgent]
     }
     
-    extension [Self <: HttpProviderAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpProviderAgent] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[HttpProviderOptions]
     }
     
-    extension [Self <: HttpProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: HttpProviderAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

@@ -104,7 +104,8 @@ object TypeofcertificateProvider {
     __obj.asInstanceOf[TypeofcertificateProvider]
   }
   
-  extension [Self <: TypeofcertificateProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofcertificateProvider] (val x: Self) extends AnyVal {
     
     inline def setOnCertificatesRequested(
       value: Event[

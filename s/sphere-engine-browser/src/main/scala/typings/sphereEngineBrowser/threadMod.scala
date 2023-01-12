@@ -224,7 +224,8 @@ object threadMod {
       __obj.asInstanceOf[Thread]
     }
     
-    extension [Self <: Thread](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
       
       inline def setHasFocus(value: Boolean): Self = StObject.set(x, "hasFocus", value.asInstanceOf[js.Any])
       

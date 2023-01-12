@@ -23,7 +23,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: SegmentDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     

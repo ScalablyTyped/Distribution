@@ -42,7 +42,8 @@ object Float32 {
     __obj.asInstanceOf[Float32]
   }
   
-  extension [Self <: Float32](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Float32] (val x: Self) extends AnyVal {
     
     inline def setFloat32(value: Float32ArrayConstructor): Self = StObject.set(x, "Float32", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object MtermvectorsOperation {
     __obj.asInstanceOf[MtermvectorsOperation]
   }
   
-  extension [Self <: MtermvectorsOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MtermvectorsOperation] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: Any): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

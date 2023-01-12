@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[HighlightOptions]
     }
     
-    extension [Self <: HighlightOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreIllegals(value: Boolean): Self = StObject.set(x, "ignoreIllegals", value.asInstanceOf[js.Any])
       

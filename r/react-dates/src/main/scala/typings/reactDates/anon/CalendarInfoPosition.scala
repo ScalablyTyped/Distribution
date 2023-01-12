@@ -100,7 +100,8 @@ object CalendarInfoPosition {
     __obj.asInstanceOf[CalendarInfoPosition]
   }
   
-  extension [Self <: CalendarInfoPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarInfoPosition] (val x: Self) extends AnyVal {
     
     inline def setCalendarInfoPosition(value: CalendarInfoPositionShape): Self = StObject.set(x, "calendarInfoPosition", value.asInstanceOf[js.Any])
     

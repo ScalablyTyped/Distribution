@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[CODENAME]
     }
     
-    extension [Self <: CODENAME](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CODENAME] (val x: Self) extends AnyVal {
       
       inline def setCODENAME(value: InfiniteTuple): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[ERROR]
     }
     
-    extension [Self <: ERROR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERROR] (val x: Self) extends AnyVal {
       
       inline def setCODENAME(value: InfiniteTupleSet & typings.typescriptTuple.typescriptTupleStrings.Infinite): Self = StObject.set(x, "CODENAME", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Empty[Prefix, Tuple]]
     }
     
-    extension [Self <: Empty[?, ?], Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */](x: Self & (Empty[Prefix, Tuple])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty[?, ?], Prefix /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */] (val x: Self & (Empty[Prefix, Tuple])) extends AnyVal {
       
       inline def setEmpty(value: Prefix): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[EmptyNonEmpty[Longest, TupleSet]]
     }
     
-    extension [Self <: EmptyNonEmpty[?, ?], Longest, TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & (EmptyNonEmpty[Longest, TupleSet])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyNonEmpty[?, ?], Longest, TupleSet /* <: js.Array[js.Array[Any]] */] (val x: Self & (EmptyNonEmpty[Longest, TupleSet])) extends AnyVal {
       
       inline def setEmpty(value: Longest): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Equal[WhenEqual, Left, Right]]
     }
     
-    extension [Self <: Equal[?, ?, ?], WhenEqual, Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */](x: Self & (Equal[WhenEqual, Left, Right])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Equal[?, ?, ?], WhenEqual, Left /* <: js.Array[Any] */, Right /* <: js.Array[Any] */] (val x: Self & (Equal[WhenEqual, Left, Right])) extends AnyVal {
       
       inline def setEqual(value: WhenEqual): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
       
@@ -153,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Infinite[TupleSet]]
     }
     
-    extension [Self <: Infinite[?], TupleSet /* <: js.Array[js.Array[Any]] */](x: Self & Infinite[TupleSet]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Infinite[?], TupleSet /* <: js.Array[js.Array[Any]] */] (val x: Self & Infinite[TupleSet]) extends AnyVal {
       
       inline def setEmpty(value: js.Array[Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -186,7 +192,8 @@ object anon {
       __obj.asInstanceOf[NonEmpty[Holder, Tuple, Replacement]]
     }
     
-    extension [Self <: NonEmpty[?, ?, ?], Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement](x: Self & (NonEmpty[Holder, Tuple, Replacement])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonEmpty[?, ?, ?], Holder /* <: js.Array[Any] */, Tuple /* <: js.Array[Any] */, Replacement] (val x: Self & (NonEmpty[Holder, Tuple, Replacement])) extends AnyVal {
       
       inline def setEmpty(value: Holder): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       

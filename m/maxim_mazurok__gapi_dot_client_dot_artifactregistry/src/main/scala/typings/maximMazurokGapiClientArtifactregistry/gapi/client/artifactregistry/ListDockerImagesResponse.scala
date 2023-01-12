@@ -19,7 +19,8 @@ object ListDockerImagesResponse {
     __obj.asInstanceOf[ListDockerImagesResponse]
   }
   
-  extension [Self <: ListDockerImagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDockerImagesResponse] (val x: Self) extends AnyVal {
     
     inline def setDockerImages(value: js.Array[DockerImage]): Self = StObject.set(x, "dockerImages", value.asInstanceOf[js.Any])
     

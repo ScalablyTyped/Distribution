@@ -67,7 +67,8 @@ object tracingMod {
       __obj.asInstanceOf[Interaction]
     }
     
-    extension [Self <: Interaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object tracingMod {
       __obj.asInstanceOf[InteractionsRef]
     }
     
-    extension [Self <: InteractionsRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionsRef] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Set[Interaction]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
@@ -153,7 +155,8 @@ object tracingMod {
       __obj.asInstanceOf[Subscriber]
     }
     
-    extension [Self <: Subscriber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscriber] (val x: Self) extends AnyVal {
       
       inline def setOnInteractionScheduledWorkCompleted(value: Interaction => Unit): Self = StObject.set(x, "onInteractionScheduledWorkCompleted", js.Any.fromFunction1(value))
       
@@ -180,7 +183,8 @@ object tracingMod {
       __obj.asInstanceOf[SubscriberRef]
     }
     
-    extension [Self <: SubscriberRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriberRef] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Subscriber): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

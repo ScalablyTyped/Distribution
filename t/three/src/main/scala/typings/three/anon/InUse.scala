@@ -17,7 +17,8 @@ object InUse {
     __obj.asInstanceOf[InUse]
   }
   
-  extension [Self <: InUse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InUse] (val x: Self) extends AnyVal {
     
     inline def setInUse(value: Double): Self = StObject.set(x, "inUse", value.asInstanceOf[js.Any])
     

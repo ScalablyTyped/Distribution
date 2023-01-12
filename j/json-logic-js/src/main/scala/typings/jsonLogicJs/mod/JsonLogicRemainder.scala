@@ -20,7 +20,8 @@ object JsonLogicRemainder {
     __obj.asInstanceOf[JsonLogicRemainder[AddOps]]
   }
   
-  extension [Self <: JsonLogicRemainder[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicRemainder[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicRemainder[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicRemainder[AddOps]) extends AnyVal {
     
     inline def setPercentsign(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "%", value.asInstanceOf[js.Any])
   }

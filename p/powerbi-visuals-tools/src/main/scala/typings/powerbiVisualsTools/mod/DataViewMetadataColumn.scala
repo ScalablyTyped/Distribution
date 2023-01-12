@@ -70,7 +70,8 @@ object DataViewMetadataColumn {
     __obj.asInstanceOf[DataViewMetadataColumn]
   }
   
-  extension [Self <: DataViewMetadataColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewMetadataColumn] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: DataViewColumnAggregates): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

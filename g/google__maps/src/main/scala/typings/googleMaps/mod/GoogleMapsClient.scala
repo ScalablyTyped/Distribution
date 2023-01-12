@@ -554,7 +554,8 @@ object GoogleMapsClient {
     __obj.asInstanceOf[GoogleMapsClient]
   }
   
-  extension [Self <: GoogleMapsClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsClient] (val x: Self) extends AnyVal {
     
     inline def setDirections(
       value: (DirectionsRequest, /* callback */ js.UndefOr[ResponseCallback[DirectionsResponse]]) => RequestHandle[DirectionsResponse]

@@ -33,7 +33,8 @@ object Attachment {
     __obj.asInstanceOf[Attachment]
   }
   
-  extension [Self <: Attachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: NullableOption[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

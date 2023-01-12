@@ -44,7 +44,8 @@ object ImageFileConfig {
     __obj.asInstanceOf[ImageFileConfig]
   }
   
-  extension [Self <: ImageFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

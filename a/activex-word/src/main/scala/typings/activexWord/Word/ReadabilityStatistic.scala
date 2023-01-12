@@ -34,7 +34,8 @@ object ReadabilityStatistic {
     __obj.asInstanceOf[ReadabilityStatistic]
   }
   
-  extension [Self <: ReadabilityStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadabilityStatistic] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

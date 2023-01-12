@@ -79,7 +79,8 @@ object IStyleManager {
     __obj.asInstanceOf[IStyleManager]
   }
   
-  extension [Self <: IStyleManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStyleManager] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaderStyleCollection(value: AllSelected): Self = StObject.set(x, "columnHeaderStyleCollection", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object PagingControl {
     __obj.asInstanceOf[PagingControl]
   }
   
-  extension [Self <: PagingControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagingControl] (val x: Self) extends AnyVal {
     
     inline def setGetButtonState(value: Double => Double): Self = StObject.set(x, "getButtonState", js.Any.fromFunction1(value))
     

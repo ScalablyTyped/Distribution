@@ -25,7 +25,8 @@ object MSearchTemplateParams {
     __obj.asInstanceOf[MSearchTemplateParams]
   }
   
-  extension [Self <: MSearchTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MSearchTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

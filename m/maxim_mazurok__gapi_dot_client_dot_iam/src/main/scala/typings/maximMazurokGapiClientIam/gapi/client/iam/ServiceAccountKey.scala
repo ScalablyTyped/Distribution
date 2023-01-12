@@ -52,7 +52,8 @@ object ServiceAccountKey {
     __obj.asInstanceOf[ServiceAccountKey]
   }
   
-  extension [Self <: ServiceAccountKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAccountKey] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

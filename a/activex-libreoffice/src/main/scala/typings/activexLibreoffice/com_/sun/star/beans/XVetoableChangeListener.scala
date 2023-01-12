@@ -32,7 +32,8 @@ object XVetoableChangeListener {
     __obj.asInstanceOf[XVetoableChangeListener]
   }
   
-  extension [Self <: XVetoableChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVetoableChangeListener] (val x: Self) extends AnyVal {
     
     inline def setVetoableChange(value: PropertyChangeEvent => Unit): Self = StObject.set(x, "vetoableChange", js.Any.fromFunction1(value))
   }

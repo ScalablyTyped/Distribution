@@ -53,7 +53,8 @@ object transitionsTransitionMod {
       __obj.asInstanceOf[TransitionHandlerProps]
     }
     
-    extension [Self <: TransitionHandlerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionHandlerProps] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: Any): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object transitionsTransitionMod {
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       

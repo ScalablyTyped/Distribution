@@ -50,7 +50,8 @@ object PartialClassNameMapInputB {
     __obj.asInstanceOf[PartialClassNameMapInputB]
   }
   
-  extension [Self <: PartialClassNameMapInputB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapInputB] (val x: Self) extends AnyVal {
     
     inline def setAdornedEnd(value: String): Self = StObject.set(x, "adornedEnd", value.asInstanceOf[js.Any])
     

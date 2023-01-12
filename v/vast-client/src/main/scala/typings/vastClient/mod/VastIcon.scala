@@ -51,7 +51,8 @@ object VastIcon {
     __obj.asInstanceOf[VastIcon]
   }
   
-  extension [Self <: VastIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastIcon] (val x: Self) extends AnyVal {
     
     inline def setApiFramework(value: String): Self = StObject.set(x, "apiFramework", value.asInstanceOf[js.Any])
     

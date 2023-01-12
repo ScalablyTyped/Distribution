@@ -41,7 +41,8 @@ object IFileOptions {
     __obj.asInstanceOf[IFileOptions]
   }
   
-  extension [Self <: IFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileOptions] (val x: Self) extends AnyVal {
     
     inline def setCcEnableArenas(value: Boolean): Self = StObject.set(x, "ccEnableArenas", value.asInstanceOf[js.Any])
     

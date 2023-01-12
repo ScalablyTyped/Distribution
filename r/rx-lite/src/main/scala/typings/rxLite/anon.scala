@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Dictindex[T]]
     }
     
-    extension [Self <: Dictindex[?], T](x: Self & Dictindex[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictindex[?], T] (val x: Self & Dictindex[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[GetDisposable]
     }
     
-    extension [Self <: GetDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDisposable] (val x: Self) extends AnyVal {
       
       inline def setGetDisposable(value: () => IDisposable): Self = StObject.set(x, "getDisposable", js.Any.fromFunction0(value))
     }

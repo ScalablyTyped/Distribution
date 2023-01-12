@@ -26,7 +26,8 @@ object distComponentsContextMod extends Shortcut {
       __obj.asInstanceOf[IconContextProps]
     }
     
-    extension [Self <: IconContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconContextProps] (val x: Self) extends AnyVal {
       
       inline def setCsp(value: Nonce): Self = StObject.set(x, "csp", value.asInstanceOf[js.Any])
       

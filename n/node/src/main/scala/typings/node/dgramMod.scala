@@ -833,7 +833,8 @@ object dgramMod {
       __obj.asInstanceOf[BindOptions]
     }
     
-    extension [Self <: BindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindOptions] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -870,7 +871,8 @@ object dgramMod {
       __obj.asInstanceOf[RemoteInfo]
     }
     
-    extension [Self <: RemoteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -916,7 +918,8 @@ object dgramMod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setIpv6Only(value: Boolean): Self = StObject.set(x, "ipv6Only", value.asInstanceOf[js.Any])
       

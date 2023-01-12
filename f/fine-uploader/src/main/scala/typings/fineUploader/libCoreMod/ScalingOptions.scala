@@ -79,7 +79,8 @@ object ScalingOptions {
     __obj.asInstanceOf[ScalingOptions]
   }
   
-  extension [Self <: ScalingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomResizer(value: /* resizeInfo */ ResizeInfo => PromiseOptions): Self = StObject.set(x, "customResizer", js.Any.fromFunction1(value))
     

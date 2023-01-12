@@ -30,7 +30,8 @@ object EXTColorBufferHalfFloat {
     __obj.asInstanceOf[EXTColorBufferHalfFloat]
   }
   
-  extension [Self <: EXTColorBufferHalfFloat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTColorBufferHalfFloat] (val x: Self) extends AnyVal {
     
     inline def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: GLenum): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
     

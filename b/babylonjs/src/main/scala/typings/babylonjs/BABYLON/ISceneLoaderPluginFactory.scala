@@ -31,7 +31,8 @@ object ISceneLoaderPluginFactory {
     __obj.asInstanceOf[ISceneLoaderPluginFactory]
   }
   
-  extension [Self <: ISceneLoaderPluginFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISceneLoaderPluginFactory] (val x: Self) extends AnyVal {
     
     inline def setCanDirectLoad(value: /* data */ String => Boolean): Self = StObject.set(x, "canDirectLoad", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object MediaSourceOpenOperationCompletedEventArgs {
     __obj.asInstanceOf[MediaSourceOpenOperationCompletedEventArgs]
   }
   
-  extension [Self <: MediaSourceOpenOperationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSourceOpenOperationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: MediaSourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

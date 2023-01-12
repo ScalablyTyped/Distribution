@@ -39,7 +39,8 @@ object ValueLoadable {
     __obj.asInstanceOf[ValueLoadable[T]]
   }
   
-  extension [Self <: ValueLoadable[?], T](x: Self & ValueLoadable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueLoadable[?], T] (val x: Self & ValueLoadable[T]) extends AnyVal {
     
     inline def setContents(value: T): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

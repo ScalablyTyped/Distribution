@@ -19,7 +19,8 @@ object HelpersOptions {
     __obj.asInstanceOf[HelpersOptions]
   }
   
-  extension [Self <: HelpersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HelpersOptions] (val x: Self) extends AnyVal {
     
     inline def setClient(value: typings.elasticElasticsearch.libClientMod.default): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

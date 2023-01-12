@@ -24,7 +24,8 @@ object CallStartedEventMessageDetail {
     __obj.asInstanceOf[CallStartedEventMessageDetail]
   }
   
-  extension [Self <: CallStartedEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallStartedEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setCallEventType(value: NullableOption[TeamworkCallEventType]): Self = StObject.set(x, "callEventType", value.asInstanceOf[js.Any])
     

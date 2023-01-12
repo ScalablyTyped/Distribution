@@ -23,7 +23,8 @@ object DeviceUnderTest {
     __obj.asInstanceOf[DeviceUnderTest]
   }
   
-  extension [Self <: DeviceUnderTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceUnderTest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: AmazonResourceName): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     

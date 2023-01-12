@@ -19,7 +19,8 @@ object UpdateRepoRequest {
     __obj.asInstanceOf[UpdateRepoRequest]
   }
   
-  extension [Self <: UpdateRepoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRepoRequest] (val x: Self) extends AnyVal {
     
     inline def setRepo(value: Repo): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     

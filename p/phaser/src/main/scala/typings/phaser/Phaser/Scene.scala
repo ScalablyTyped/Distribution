@@ -253,7 +253,8 @@ object Scene {
     __obj.asInstanceOf[Scene]
   }
   
-  extension [Self <: Scene](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: GameObjectFactory): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

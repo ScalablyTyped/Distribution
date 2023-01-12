@@ -36,7 +36,8 @@ object FeatureTemplatesViewModelProperties {
     __obj.asInstanceOf[FeatureTemplatesViewModelProperties]
   }
   
-  extension [Self <: FeatureTemplatesViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTemplatesViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setFilterFunction(value: /* filterName */ Any => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction1(value))
     

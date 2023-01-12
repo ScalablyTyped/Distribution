@@ -46,7 +46,8 @@ object libComponentsTagTagMod {
       __obj.asInstanceOf[ChipTagProps]
     }
     
-    extension [Self <: ChipTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipTagProps] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: `false`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libComponentsTagTagMod {
       __obj.asInstanceOf[FilterTagProps]
     }
     
-    extension [Self <: FilterTagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterTagProps] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: `true`): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object libComponentsTagTagMod {
       __obj.asInstanceOf[SharedProps]
     }
     
-    extension [Self <: SharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

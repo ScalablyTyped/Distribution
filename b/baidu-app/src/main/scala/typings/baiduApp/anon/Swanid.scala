@@ -15,7 +15,8 @@ object Swanid {
     __obj.asInstanceOf[Swanid]
   }
   
-  extension [Self <: Swanid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Swanid] (val x: Self) extends AnyVal {
     
     inline def setSwanid(value: String): Self = StObject.set(x, "swanid", value.asInstanceOf[js.Any])
   }

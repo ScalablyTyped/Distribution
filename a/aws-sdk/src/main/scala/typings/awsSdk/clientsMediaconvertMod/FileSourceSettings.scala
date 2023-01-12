@@ -40,7 +40,8 @@ object FileSourceSettings {
     __obj.asInstanceOf[FileSourceSettings]
   }
   
-  extension [Self <: FileSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setConvert608To708(value: FileSourceConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     

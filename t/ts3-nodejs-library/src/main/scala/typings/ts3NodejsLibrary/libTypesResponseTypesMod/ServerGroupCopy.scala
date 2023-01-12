@@ -19,7 +19,8 @@ object ServerGroupCopy {
     __obj.asInstanceOf[ServerGroupCopy]
   }
   
-  extension [Self <: ServerGroupCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupCopy] (val x: Self) extends AnyVal {
     
     inline def setSgid(value: String): Self = StObject.set(x, "sgid", value.asInstanceOf[js.Any])
     

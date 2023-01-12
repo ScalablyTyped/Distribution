@@ -36,7 +36,8 @@ object LogInstance {
     __obj.asInstanceOf[LogInstance]
   }
   
-  extension [Self <: LogInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogInstance] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     

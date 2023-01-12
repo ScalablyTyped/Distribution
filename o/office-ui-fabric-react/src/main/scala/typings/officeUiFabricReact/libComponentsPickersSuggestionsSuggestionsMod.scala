@@ -80,7 +80,8 @@ object libComponentsPickersSuggestionsSuggestionsMod {
       __obj.asInstanceOf[ISuggestionsState]
     }
     
-    extension [Self <: ISuggestionsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsState] (val x: Self) extends AnyVal {
       
       inline def setSelectedActionType(value: SuggestionActionType): Self = StObject.set(x, "selectedActionType", value.asInstanceOf[js.Any])
     }

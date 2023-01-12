@@ -21,7 +21,8 @@ object ClaimsToSuppress {
     __obj.asInstanceOf[ClaimsToSuppress]
   }
   
-  extension [Self <: ClaimsToSuppress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimsToSuppress] (val x: Self) extends AnyVal {
     
     inline def setClaimsToAddOrOverride(value: StringMap): Self = StObject.set(x, "claimsToAddOrOverride", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Matrix {
     __obj.asInstanceOf[Matrix]
   }
   
-  extension [Self <: Matrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
     
     inline def setMatrix(value: js.Array[Double]): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
     

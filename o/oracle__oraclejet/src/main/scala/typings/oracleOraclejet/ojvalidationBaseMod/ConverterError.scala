@@ -17,7 +17,8 @@ object ConverterError {
     __obj.asInstanceOf[ConverterError]
   }
   
-  extension [Self <: ConverterError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConverterError] (val x: Self) extends AnyVal {
     
     inline def setGetMessage(value: () => ^): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
   }

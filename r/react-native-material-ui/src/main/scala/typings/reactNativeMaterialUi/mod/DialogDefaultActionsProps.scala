@@ -20,7 +20,8 @@ object DialogDefaultActionsProps {
     __obj.asInstanceOf[DialogDefaultActionsProps]
   }
   
-  extension [Self <: DialogDefaultActionsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogDefaultActionsProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

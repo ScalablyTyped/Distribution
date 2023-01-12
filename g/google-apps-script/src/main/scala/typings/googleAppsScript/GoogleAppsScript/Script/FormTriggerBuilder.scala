@@ -22,7 +22,8 @@ object FormTriggerBuilder {
     __obj.asInstanceOf[FormTriggerBuilder]
   }
   
-  extension [Self <: FormTriggerBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormTriggerBuilder] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

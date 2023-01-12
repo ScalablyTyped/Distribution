@@ -43,7 +43,8 @@ object ModifyActivityStreamResponse {
     __obj.asInstanceOf[ModifyActivityStreamResponse]
   }
   
-  extension [Self <: ModifyActivityStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyActivityStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setEngineNativeAuditFieldsIncluded(value: BooleanOptional): Self = StObject.set(x, "EngineNativeAuditFieldsIncluded", value.asInstanceOf[js.Any])
     

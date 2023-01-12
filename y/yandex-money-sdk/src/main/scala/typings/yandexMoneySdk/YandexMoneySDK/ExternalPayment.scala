@@ -24,7 +24,8 @@ object ExternalPayment {
       __obj.asInstanceOf[GetInstanceIdResult]
     }
     
-    extension [Self <: GetInstanceIdResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInstanceIdResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object ExternalPayment {
       __obj.asInstanceOf[ProcessOptions]
     }
     
-    extension [Self <: ProcessOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessOptions] (val x: Self) extends AnyVal {
       
       inline def setCsc(value: String): Self = StObject.set(x, "csc", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object ExternalPayment {
       __obj.asInstanceOf[ProcessResult]
     }
     
-    extension [Self <: ProcessResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessResult] (val x: Self) extends AnyVal {
       
       inline def setAcs_params(value: Dictkey): Self = StObject.set(x, "acs_params", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object ExternalPayment {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -198,7 +202,8 @@ object ExternalPayment {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setContract_amount(value: Double): Self = StObject.set(x, "contract_amount", value.asInstanceOf[js.Any])
       

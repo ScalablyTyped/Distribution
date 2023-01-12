@@ -33,7 +33,8 @@ object RestoreManagedPrefixListVersionRequest {
     __obj.asInstanceOf[RestoreManagedPrefixListVersionRequest]
   }
   
-  extension [Self <: RestoreManagedPrefixListVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreManagedPrefixListVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Long): Self = StObject.set(x, "CurrentVersion", value.asInstanceOf[js.Any])
     

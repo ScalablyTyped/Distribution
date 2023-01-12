@@ -20,7 +20,8 @@ object ProcessMemoryReport {
     __obj.asInstanceOf[ProcessMemoryReport]
   }
   
-  extension [Self <: ProcessMemoryReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessMemoryReport] (val x: Self) extends AnyVal {
     
     inline def setPrivateWorkingSetUsage(value: Double): Self = StObject.set(x, "privateWorkingSetUsage", value.asInstanceOf[js.Any])
     

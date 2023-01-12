@@ -36,7 +36,8 @@ object GqlQuery {
     __obj.asInstanceOf[GqlQuery]
   }
   
-  extension [Self <: GqlQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GqlQuery] (val x: Self) extends AnyVal {
     
     inline def setAllowLiterals(value: Boolean): Self = StObject.set(x, "allowLiterals", value.asInstanceOf[js.Any])
     

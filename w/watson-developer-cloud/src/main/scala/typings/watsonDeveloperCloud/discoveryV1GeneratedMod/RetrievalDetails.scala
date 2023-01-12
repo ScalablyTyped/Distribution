@@ -17,7 +17,8 @@ object RetrievalDetails {
     __obj.asInstanceOf[RetrievalDetails]
   }
   
-  extension [Self <: RetrievalDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrievalDetails] (val x: Self) extends AnyVal {
     
     inline def setDocument_retrieval_strategy(value: String): Self = StObject.set(x, "document_retrieval_strategy", value.asInstanceOf[js.Any])
     

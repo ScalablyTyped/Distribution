@@ -56,7 +56,8 @@ object typesMod {
       __obj.asInstanceOf[MDXModule]
     }
     
-    extension [Self <: MDXModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDXModule] (val x: Self) extends AnyVal {
       
       inline def setDefault(
         value: /* props */ MDXProps => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ Any
@@ -83,7 +84,8 @@ object typesMod {
       __obj.asInstanceOf[MDXProps]
     }
     
-    extension [Self <: MDXProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDXProps] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: MDXComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

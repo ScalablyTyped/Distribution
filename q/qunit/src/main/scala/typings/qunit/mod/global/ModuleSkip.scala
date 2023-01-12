@@ -21,7 +21,8 @@ object ModuleSkip {
     __obj.asInstanceOf[ModuleSkip]
   }
   
-  extension [Self <: ModuleSkip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSkip] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: moduleFunc1 & moduleFunc2): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
   }

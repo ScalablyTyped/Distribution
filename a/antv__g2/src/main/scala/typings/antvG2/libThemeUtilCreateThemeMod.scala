@@ -27,7 +27,8 @@ object libThemeUtilCreateThemeMod {
       __obj.asInstanceOf[ThemeCfg]
     }
     
-    extension [Self <: ThemeCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeCfg] (val x: Self) extends AnyVal {
       
       inline def setStyleSheet(value: StyleSheetCfg): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
       

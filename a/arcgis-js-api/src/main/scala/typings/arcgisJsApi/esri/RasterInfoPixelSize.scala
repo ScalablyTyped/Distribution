@@ -27,7 +27,8 @@ object RasterInfoPixelSize {
     __obj.asInstanceOf[RasterInfoPixelSize]
   }
   
-  extension [Self <: RasterInfoPixelSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterInfoPixelSize] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

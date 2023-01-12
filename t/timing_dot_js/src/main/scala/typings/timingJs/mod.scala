@@ -128,7 +128,8 @@ object mod {
       __obj.asInstanceOf[Timings]
     }
     
-    extension [Self <: Timings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timings] (val x: Self) extends AnyVal {
       
       inline def setAppcacheTime(value: Double): Self = StObject.set(x, "appcacheTime", value.asInstanceOf[js.Any])
       

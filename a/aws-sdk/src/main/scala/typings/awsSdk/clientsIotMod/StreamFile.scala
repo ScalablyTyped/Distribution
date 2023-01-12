@@ -23,7 +23,8 @@ object StreamFile {
     __obj.asInstanceOf[StreamFile]
   }
   
-  extension [Self <: StreamFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamFile] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: FileId): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

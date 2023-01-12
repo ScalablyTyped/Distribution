@@ -77,7 +77,8 @@ object PickImplkeyboardShortcuts {
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
   
-  extension [Self <: PickImplkeyboardShortcuts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplkeyboardShortcuts] (val x: Self) extends AnyVal {
     
     inline def setAllowMultiple(value: Boolean): Self = StObject.set(x, "allowMultiple", value.asInstanceOf[js.Any])
     

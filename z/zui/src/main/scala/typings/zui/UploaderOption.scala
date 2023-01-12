@@ -131,7 +131,8 @@ object UploaderOption {
     __obj.asInstanceOf[UploaderOption]
   }
   
-  extension [Self <: UploaderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploaderOption] (val x: Self) extends AnyVal {
     
     inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     

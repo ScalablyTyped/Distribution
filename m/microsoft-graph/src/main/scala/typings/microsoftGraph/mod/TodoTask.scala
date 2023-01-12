@@ -89,7 +89,8 @@ object TodoTask {
     __obj.asInstanceOf[TodoTask]
   }
   
-  extension [Self <: TodoTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TodoTask] (val x: Self) extends AnyVal {
     
     inline def setAttachmentSessions(value: NullableOption[js.Array[AttachmentSession]]): Self = StObject.set(x, "attachmentSessions", value.asInstanceOf[js.Any])
     

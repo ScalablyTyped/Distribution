@@ -33,7 +33,8 @@ object ModalDialogUngroupColumnEventUIParam {
     __obj.asInstanceOf[ModalDialogUngroupColumnEventUIParam]
   }
   
-  extension [Self <: ModalDialogUngroupColumnEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalDialogUngroupColumnEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setGroupedColumns(value: js.Array[Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     

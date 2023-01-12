@@ -66,7 +66,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Annotation]
     }
     
-    extension [Self <: Annotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setIpv4(value: String): Self = StObject.set(x, "ipv4", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[ExporterConfig]
     }
     
-    extension [Self <: ExporterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExporterConfig] (val x: Self) extends AnyVal {
       
       inline def setGetExportRequestHeaders(value: () => js.UndefOr[Record[String, String]]): Self = StObject.set(x, "getExportRequestHeaders", js.Any.fromFunction0(value))
       
@@ -265,7 +268,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[Span]
     }
     
-    extension [Self <: Span](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Span] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

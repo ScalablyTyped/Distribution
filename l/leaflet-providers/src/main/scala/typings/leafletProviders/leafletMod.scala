@@ -41,7 +41,8 @@ object leafletMod {
           __obj.asInstanceOf[ProviderConfig]
         }
         
-        extension [Self <: ProviderConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProviderConfig] (val x: Self) extends AnyVal {
           
           inline def setOptions(value: TileLayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
           

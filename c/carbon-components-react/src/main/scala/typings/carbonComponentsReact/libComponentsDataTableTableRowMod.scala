@@ -27,7 +27,8 @@ object libComponentsDataTableTableRowMod extends Shortcut {
       __obj.asInstanceOf[TableRowProps]
     }
     
-    extension [Self <: TableRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowProps] (val x: Self) extends AnyVal {
       
       inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       

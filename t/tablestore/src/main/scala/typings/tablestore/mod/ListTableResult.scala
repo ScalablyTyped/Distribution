@@ -15,7 +15,8 @@ object ListTableResult {
     __obj.asInstanceOf[ListTableResult]
   }
   
-  extension [Self <: ListTableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTableResult] (val x: Self) extends AnyVal {
     
     inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
     

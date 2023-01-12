@@ -37,7 +37,8 @@ object Atrule {
     __obj.asInstanceOf[Atrule]
   }
   
-  extension [Self <: Atrule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Atrule] (val x: Self) extends AnyVal {
     
     inline def setHasOnlyProperties(value: scala.Boolean): Self = StObject.set(x, "hasOnlyProperties", value.asInstanceOf[js.Any])
     

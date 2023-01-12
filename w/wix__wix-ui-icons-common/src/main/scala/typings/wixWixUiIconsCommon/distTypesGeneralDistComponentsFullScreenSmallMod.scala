@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsFullScreenSmallMod extends Shortcut {
       __obj.asInstanceOf[FullScreenSmallProps]
     }
     
-    extension [Self <: FullScreenSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

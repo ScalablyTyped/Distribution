@@ -28,7 +28,8 @@ object FairsharePolicy {
     __obj.asInstanceOf[FairsharePolicy]
   }
   
-  extension [Self <: FairsharePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FairsharePolicy] (val x: Self) extends AnyVal {
     
     inline def setComputeReservation(value: Integer): Self = StObject.set(x, "computeReservation", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Anomalyscore {
     __obj.asInstanceOf[Anomalyscore]
   }
   
-  extension [Self <: Anomalyscore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Anomalyscore] (val x: Self) extends AnyVal {
     
     inline def setAnomaly_score(value: double): Self = StObject.set(x, "anomaly_score", value.asInstanceOf[js.Any])
     

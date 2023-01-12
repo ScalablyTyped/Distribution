@@ -81,7 +81,8 @@ object Forks {
     __obj.asInstanceOf[Forks]
   }
   
-  extension [Self <: Forks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Forks] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

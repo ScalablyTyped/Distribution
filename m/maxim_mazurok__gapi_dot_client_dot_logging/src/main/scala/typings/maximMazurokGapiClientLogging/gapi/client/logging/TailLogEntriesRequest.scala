@@ -34,7 +34,8 @@ object TailLogEntriesRequest {
     __obj.asInstanceOf[TailLogEntriesRequest]
   }
   
-  extension [Self <: TailLogEntriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TailLogEntriesRequest] (val x: Self) extends AnyVal {
     
     inline def setBufferWindow(value: String): Self = StObject.set(x, "bufferWindow", value.asInstanceOf[js.Any])
     

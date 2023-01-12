@@ -20,7 +20,8 @@ object Indices {
     __obj.asInstanceOf[Indices]
   }
   
-  extension [Self <: Indices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indices] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: BackendValues): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "pixi__filter-alpha"
-version := "7.0.4-01b2c4"
+version := "7.0.4-559670"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-5fc355",
+  "org.scalablytyped" %%% "eventemitter3" % "4.0.7-0503e8",
   "org.scalablytyped" %%% "pixi__constants" % "7.0.4-d787af",
-  "org.scalablytyped" %%% "pixi__core" % "7.0.4-54713d",
-  "org.scalablytyped" %%% "pixi__extensions" % "7.0.4-ac99b3",
-  "org.scalablytyped" %%% "pixi__math" % "7.0.4-ea60ec",
-  "org.scalablytyped" %%% "pixi__runner" % "7.0.4-573f3f",
-  "org.scalablytyped" %%% "pixi__settings" % "7.0.4-309914",
-  "org.scalablytyped" %%% "pixi__ticker" % "7.0.4-d6eb76",
-  "org.scalablytyped" %%% "pixi__utils" % "7.0.4-3a4810",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f")
+  "org.scalablytyped" %%% "pixi__core" % "7.0.4-379bda",
+  "org.scalablytyped" %%% "pixi__extensions" % "7.0.4-738066",
+  "org.scalablytyped" %%% "pixi__math" % "7.0.4-2461f7",
+  "org.scalablytyped" %%% "pixi__runner" % "7.0.4-e227e3",
+  "org.scalablytyped" %%% "pixi__settings" % "7.0.4-9fffea",
+  "org.scalablytyped" %%% "pixi__ticker" % "7.0.4-dd9aea",
+  "org.scalablytyped" %%% "pixi__utils" % "7.0.4-e4c274",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

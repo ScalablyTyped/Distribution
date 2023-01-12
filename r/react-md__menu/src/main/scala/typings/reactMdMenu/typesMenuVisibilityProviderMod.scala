@@ -33,7 +33,8 @@ object typesMenuVisibilityProviderMod {
       __obj.asInstanceOf[MenuVisibilityContext]
     }
     
-    extension [Self <: MenuVisibilityContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuVisibilityContext] (val x: Self) extends AnyVal {
       
       inline def setSetVisible(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
       
@@ -54,7 +55,8 @@ object typesMenuVisibilityProviderMod {
       __obj.asInstanceOf[MenuVisibilityProviderProps]
     }
     
-    extension [Self <: MenuVisibilityProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuVisibilityProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

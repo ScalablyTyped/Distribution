@@ -23,7 +23,8 @@ object WorkflowGraph {
     __obj.asInstanceOf[WorkflowGraph]
   }
   
-  extension [Self <: WorkflowGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowGraph] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: EdgeList): Self = StObject.set(x, "Edges", value.asInstanceOf[js.Any])
     

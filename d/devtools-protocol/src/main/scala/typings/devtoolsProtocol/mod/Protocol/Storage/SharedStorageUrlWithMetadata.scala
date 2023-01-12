@@ -23,7 +23,8 @@ object SharedStorageUrlWithMetadata {
     __obj.asInstanceOf[SharedStorageUrlWithMetadata]
   }
   
-  extension [Self <: SharedStorageUrlWithMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStorageUrlWithMetadata] (val x: Self) extends AnyVal {
     
     inline def setReportingMetadata(value: js.Array[SharedStorageReportingMetadata]): Self = StObject.set(x, "reportingMetadata", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net-scroller"
-version := "1.4-dt-20211202Z-c8e17b"
+version := "1.4-dt-20211202Z-937b6c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

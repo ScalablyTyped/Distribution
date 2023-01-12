@@ -2081,7 +2081,8 @@ object mod {
       __obj.asInstanceOf[CountryData]
     }
     
-    extension [Self <: CountryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountryData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -2138,7 +2139,8 @@ object mod {
       __obj.asInstanceOf[EmojiFlags]
     }
     
-    extension [Self <: EmojiFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmojiFlags] (val x: Self) extends AnyVal {
       
       inline def setCodes(value: js.Array[String]): Self = StObject.set(x, "codes", value.asInstanceOf[js.Any])
       

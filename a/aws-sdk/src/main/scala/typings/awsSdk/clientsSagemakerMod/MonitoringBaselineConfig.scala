@@ -28,7 +28,8 @@ object MonitoringBaselineConfig {
     __obj.asInstanceOf[MonitoringBaselineConfig]
   }
   
-  extension [Self <: MonitoringBaselineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringBaselineConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseliningJobName(value: ProcessingJobName): Self = StObject.set(x, "BaseliningJobName", value.asInstanceOf[js.Any])
     

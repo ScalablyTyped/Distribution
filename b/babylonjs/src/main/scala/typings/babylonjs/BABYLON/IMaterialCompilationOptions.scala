@@ -23,7 +23,8 @@ object IMaterialCompilationOptions {
     __obj.asInstanceOf[IMaterialCompilationOptions]
   }
   
-  extension [Self <: IMaterialCompilationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMaterialCompilationOptions] (val x: Self) extends AnyVal {
     
     inline def setClipPlane(value: Boolean): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
     

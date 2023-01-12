@@ -33,7 +33,8 @@ object ListThingRegistrationTaskReportsRequest {
     __obj.asInstanceOf[ListThingRegistrationTaskReportsRequest]
   }
   
-  extension [Self <: ListThingRegistrationTaskReportsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThingRegistrationTaskReportsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: RegistryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

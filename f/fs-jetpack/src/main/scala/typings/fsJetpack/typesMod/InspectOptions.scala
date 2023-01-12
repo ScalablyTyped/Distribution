@@ -25,7 +25,8 @@ object InspectOptions {
     __obj.asInstanceOf[InspectOptions]
   }
   
-  extension [Self <: InspectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectOptions] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

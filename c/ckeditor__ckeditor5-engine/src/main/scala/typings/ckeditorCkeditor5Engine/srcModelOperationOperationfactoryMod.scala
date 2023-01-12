@@ -59,7 +59,8 @@ object srcModelOperationOperationfactoryMod {
       __obj.asInstanceOf[OperationFactory]
     }
     
-    extension [Self <: OperationFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationFactory] (val x: Self) extends AnyVal {
       
       inline def set_underscore(value: () => Unit): Self = StObject.set(x, "_", js.Any.fromFunction0(value))
     }

@@ -18,7 +18,8 @@ object OptionsForHtmlFileAsValidationTargetAndObjectAsResult {
     __obj.asInstanceOf[OptionsForHtmlFileAsValidationTargetAndObjectAsResult]
   }
   
-  extension [Self <: OptionsForHtmlFileAsValidationTargetAndObjectAsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsForHtmlFileAsValidationTargetAndObjectAsResult] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: json): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: Record[String, Any] */](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T /* <: Record[String, Any] */] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setAccessPropertiesByDotNotation(value: Boolean): Self = StObject.set(x, "accessPropertiesByDotNotation", value.asInstanceOf[js.Any])
       

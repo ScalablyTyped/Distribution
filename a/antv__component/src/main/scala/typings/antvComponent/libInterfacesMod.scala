@@ -148,7 +148,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IList]
     }
     
-    extension [Self <: IList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IList] (val x: Self) extends AnyVal {
       
       inline def setClearItems(value: () => Any): Self = StObject.set(x, "clearItems", js.Any.fromFunction0(value))
       
@@ -214,7 +215,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[ILocation[T]]
     }
     
-    extension [Self <: ILocation[?], T /* <: LocationCfg */](x: Self & ILocation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocation[?], T /* <: LocationCfg */] (val x: Self & ILocation[T]) extends AnyVal {
       
       inline def setGetLocation(value: () => T): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
       

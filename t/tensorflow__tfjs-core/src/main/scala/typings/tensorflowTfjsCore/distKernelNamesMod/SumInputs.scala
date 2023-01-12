@@ -16,7 +16,8 @@ object SumInputs {
     __obj.asInstanceOf[SumInputs]
   }
   
-  extension [Self <: SumInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SumInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FieldFolder {
     __obj.asInstanceOf[FieldFolder]
   }
   
-  extension [Self <: FieldFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldFolder] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: FolderColumnList): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

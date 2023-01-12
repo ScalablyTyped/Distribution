@@ -68,7 +68,8 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  extension [Self <: Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_key(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-analysis-key'] */ js.Any

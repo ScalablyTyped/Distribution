@@ -35,7 +35,8 @@ object QueryParameters {
     __obj.asInstanceOf[QueryParameters]
   }
   
-  extension [Self <: QueryParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

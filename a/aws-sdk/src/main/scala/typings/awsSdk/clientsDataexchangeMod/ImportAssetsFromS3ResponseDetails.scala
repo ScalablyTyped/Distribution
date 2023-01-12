@@ -28,7 +28,8 @@ object ImportAssetsFromS3ResponseDetails {
     __obj.asInstanceOf[ImportAssetsFromS3ResponseDetails]
   }
   
-  extension [Self <: ImportAssetsFromS3ResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAssetsFromS3ResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setAssetSources(value: ListOfAssetSourceEntry): Self = StObject.set(x, "AssetSources", value.asInstanceOf[js.Any])
     

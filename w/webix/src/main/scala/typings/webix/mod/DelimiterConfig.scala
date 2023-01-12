@@ -17,7 +17,8 @@ object DelimiterConfig {
     __obj.asInstanceOf[DelimiterConfig]
   }
   
-  extension [Self <: DelimiterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelimiterConfig] (val x: Self) extends AnyVal {
     
     inline def setCols(value: String): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

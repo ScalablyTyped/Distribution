@@ -15,7 +15,8 @@ object EthereumTxAck {
     __obj.asInstanceOf[EthereumTxAck]
   }
   
-  extension [Self <: EthereumTxAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumTxAck] (val x: Self) extends AnyVal {
     
     inline def setData_chunk(value: String): Self = StObject.set(x, "data_chunk", value.asInstanceOf[js.Any])
   }

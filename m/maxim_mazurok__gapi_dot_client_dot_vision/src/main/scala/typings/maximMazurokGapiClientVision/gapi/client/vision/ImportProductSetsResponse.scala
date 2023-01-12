@@ -22,7 +22,8 @@ object ImportProductSetsResponse {
     __obj.asInstanceOf[ImportProductSetsResponse]
   }
   
-  extension [Self <: ImportProductSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportProductSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setReferenceImages(value: js.Array[ReferenceImage]): Self = StObject.set(x, "referenceImages", value.asInstanceOf[js.Any])
     

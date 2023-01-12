@@ -19,7 +19,8 @@ object ClassificationCategory {
     __obj.asInstanceOf[ClassificationCategory]
   }
   
-  extension [Self <: ClassificationCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassificationCategory] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

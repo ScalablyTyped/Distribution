@@ -130,7 +130,8 @@ object JSONEditorOptions {
     __obj.asInstanceOf[JSONEditorOptions[TValue]]
   }
   
-  extension [Self <: JSONEditorOptions[?], TValue](x: Self & JSONEditorOptions[TValue]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorOptions[?], TValue] (val x: Self & JSONEditorOptions[TValue]) extends AnyVal {
     
     inline def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

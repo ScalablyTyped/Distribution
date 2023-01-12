@@ -19,7 +19,8 @@ object WrappingPublicKey {
     __obj.asInstanceOf[WrappingPublicKey]
   }
   
-  extension [Self <: WrappingPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappingPublicKey] (val x: Self) extends AnyVal {
     
     inline def setPem(value: String): Self = StObject.set(x, "pem", value.asInstanceOf[js.Any])
     

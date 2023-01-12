@@ -56,7 +56,8 @@ object CallbackExternalVpnGateway {
     __obj.asInstanceOf[CallbackExternalVpnGateway]
   }
   
-  extension [Self <: CallbackExternalVpnGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackExternalVpnGateway] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

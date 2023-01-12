@@ -19,7 +19,8 @@ object SqlResultSet {
     __obj.asInstanceOf[SqlResultSet]
   }
   
-  extension [Self <: SqlResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlResultSet] (val x: Self) extends AnyVal {
     
     inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
     

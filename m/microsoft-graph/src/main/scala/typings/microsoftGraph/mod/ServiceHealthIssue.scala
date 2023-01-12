@@ -47,7 +47,8 @@ object ServiceHealthIssue {
     __obj.asInstanceOf[ServiceHealthIssue]
   }
   
-  extension [Self <: ServiceHealthIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceHealthIssue] (val x: Self) extends AnyVal {
     
     inline def setClassification(value: ServiceHealthClassificationType): Self = StObject.set(x, "classification", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object PhotoImportItem {
     __obj.asInstanceOf[PhotoImportItem]
   }
   
-  extension [Self <: PhotoImportItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportItem] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

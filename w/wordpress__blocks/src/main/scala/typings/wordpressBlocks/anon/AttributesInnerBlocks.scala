@@ -19,7 +19,8 @@ object AttributesInnerBlocks {
     __obj.asInstanceOf[AttributesInnerBlocks[Attributes]]
   }
   
-  extension [Self <: AttributesInnerBlocks[?], Attributes /* <: BlockAttributes */](x: Self & AttributesInnerBlocks[Attributes]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesInnerBlocks[?], Attributes /* <: BlockAttributes */] (val x: Self & AttributesInnerBlocks[Attributes]) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

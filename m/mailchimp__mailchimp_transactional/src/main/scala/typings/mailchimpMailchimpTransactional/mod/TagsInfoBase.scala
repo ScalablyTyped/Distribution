@@ -50,7 +50,8 @@ object TagsInfoBase {
     __obj.asInstanceOf[TagsInfoBase]
   }
   
-  extension [Self <: TagsInfoBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagsInfoBase] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

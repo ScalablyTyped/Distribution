@@ -39,7 +39,8 @@ object PivotLine {
     __obj.asInstanceOf[PivotLine]
   }
   
-  extension [Self <: PivotLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotLine] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

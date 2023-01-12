@@ -32,7 +32,8 @@ object CIMMarkerPlacementAtExtremities {
     __obj.asInstanceOf[CIMMarkerPlacementAtExtremities]
   }
   
-  extension [Self <: CIMMarkerPlacementAtExtremities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAtExtremities] (val x: Self) extends AnyVal {
     
     inline def setExtremityPlacement(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ExtremityPlacement * / any */ String

@@ -19,7 +19,8 @@ object Weight {
     __obj.asInstanceOf[Weight]
   }
   
-  extension [Self <: Weight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Weight] (val x: Self) extends AnyVal {
     
     inline def setFIELD(value: String): Self = StObject.set(x, "FIELD", value.asInstanceOf[js.Any])
     

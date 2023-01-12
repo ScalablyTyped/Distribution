@@ -29,7 +29,8 @@ object ColumnMixins {
     __obj.asInstanceOf[ColumnMixins]
   }
   
-  extension [Self <: ColumnMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnMixins] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

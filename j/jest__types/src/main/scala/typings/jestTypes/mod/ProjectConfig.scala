@@ -174,7 +174,8 @@ object ProjectConfig {
     __obj.asInstanceOf[ProjectConfig]
   }
   
-  extension [Self <: ProjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
     
     inline def setAutomock(value: Boolean): Self = StObject.set(x, "automock", value.asInstanceOf[js.Any])
     

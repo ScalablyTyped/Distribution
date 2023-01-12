@@ -32,7 +32,8 @@ object ClassDeclaration {
     __obj.asInstanceOf[ClassDeclaration]
   }
   
-  extension [Self <: ClassDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassDeclaration] (val x: Self) extends AnyVal {
     
     inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
     

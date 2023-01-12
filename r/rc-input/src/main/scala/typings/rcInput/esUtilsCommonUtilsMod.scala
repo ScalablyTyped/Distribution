@@ -144,7 +144,8 @@ object esUtilsCommonUtilsMod {
       __obj.asInstanceOf[InputFocusOptions]
     }
     
-    extension [Self <: InputFocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFocusOptions] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: start | end | all): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

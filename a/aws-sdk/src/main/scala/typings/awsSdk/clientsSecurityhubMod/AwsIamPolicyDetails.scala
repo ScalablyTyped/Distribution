@@ -68,7 +68,8 @@ object AwsIamPolicyDetails {
     __obj.asInstanceOf[AwsIamPolicyDetails]
   }
   
-  extension [Self <: AwsIamPolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamPolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setAttachmentCount(value: Integer): Self = StObject.set(x, "AttachmentCount", value.asInstanceOf[js.Any])
     

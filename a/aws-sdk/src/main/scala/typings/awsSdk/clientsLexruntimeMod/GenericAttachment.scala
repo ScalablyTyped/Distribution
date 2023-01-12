@@ -38,7 +38,8 @@ object GenericAttachment {
     __obj.asInstanceOf[GenericAttachment]
   }
   
-  extension [Self <: GenericAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachmentLinkUrl(value: StringUrlWithLength): Self = StObject.set(x, "attachmentLinkUrl", value.asInstanceOf[js.Any])
     

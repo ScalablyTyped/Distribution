@@ -39,7 +39,8 @@ object libUtilBoundingBoxMod {
     
     inline def split(boundingBox: BoundingBox, relativeSplitPercentage: Double, direction: MosaicDirection): Split_ = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(boundingBox.asInstanceOf[js.Any], relativeSplitPercentage.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Split_]
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object libUtilBoundingBoxMod {
         __obj.asInstanceOf[Split_]
       }
       
-      extension [Self <: Split_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Split_] (val x: Self) extends AnyVal {
         
         inline def setFirst(value: BoundingBox): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
         
@@ -88,7 +90,8 @@ object libUtilBoundingBoxMod {
         __obj.asInstanceOf[Styles]
       }
       
-      extension [Self <: Styles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         

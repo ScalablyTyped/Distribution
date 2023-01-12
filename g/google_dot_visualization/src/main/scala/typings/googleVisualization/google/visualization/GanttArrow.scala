@@ -25,7 +25,8 @@ object GanttArrow {
     __obj.asInstanceOf[GanttArrow]
   }
   
-  extension [Self <: GanttArrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttArrow] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

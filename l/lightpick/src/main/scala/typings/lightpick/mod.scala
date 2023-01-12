@@ -385,7 +385,8 @@ object mod {
         __obj.asInstanceOf[Dropdowns]
       }
       
-      extension [Self <: Dropdowns](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dropdowns] (val x: Self) extends AnyVal {
         
         inline def setMonths(value: Boolean): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
         
@@ -409,7 +410,8 @@ object mod {
           __obj.asInstanceOf[Years]
         }
         
-        extension [Self <: Years](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Years] (val x: Self) extends AnyVal {
           
           inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
           
@@ -476,7 +478,8 @@ object mod {
           __obj.asInstanceOf[Buttons]
         }
         
-        extension [Self <: Buttons](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
           
           inline def setApply(value: String): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
           
@@ -500,7 +503,8 @@ object mod {
         }
       }
       
-      extension [Self <: Locale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
         
         inline def setButtons(value: Buttons): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
         
@@ -539,7 +543,8 @@ object mod {
           __obj.asInstanceOf[PluralizeFnLocale]
         }
         
-        extension [Self <: PluralizeFnLocale](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PluralizeFnLocale] (val x: Self) extends AnyVal {
           
           inline def setOne(value: String): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
           
@@ -548,7 +553,8 @@ object mod {
       }
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
       

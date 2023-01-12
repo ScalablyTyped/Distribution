@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "html5-to-pdf"
-version := "4.0-dt-20221102Z-f4f136"
+version := "4.0-dt-20221102Z-26ecda"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-00fd1d",
-  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1070637-6cacaf",
-  "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-c5fb11",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "puppeteer" % "19.2.2-41923e",
-  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-2319d5",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
-  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-3574d0")
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20211202Z-abc15b",
+  "org.scalablytyped" %%% "devtools-protocol" % "0.0.1070637-f8078b",
+  "org.scalablytyped" %%% "ms" % "v0.7.1-dt-20220818Z-d75a3b",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "puppeteer" % "19.2.2-a606ef",
+  "org.scalablytyped" %%% "puppeteer-core" % "19.2.2-cc2dbd",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
+  "org.scalablytyped" %%% "ws" % "8.5-dt-20220624Z-507aa7")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -43,7 +43,8 @@ object ExecuteCommandResponse {
     __obj.asInstanceOf[ExecuteCommandResponse]
   }
   
-  extension [Self <: ExecuteCommandResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteCommandResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: String): Self = StObject.set(x, "clusterArn", value.asInstanceOf[js.Any])
     

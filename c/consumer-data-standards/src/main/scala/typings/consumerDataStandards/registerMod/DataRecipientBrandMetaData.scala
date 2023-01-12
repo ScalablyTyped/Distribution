@@ -47,7 +47,8 @@ object DataRecipientBrandMetaData {
     __obj.asInstanceOf[DataRecipientBrandMetaData]
   }
   
-  extension [Self <: DataRecipientBrandMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRecipientBrandMetaData] (val x: Self) extends AnyVal {
     
     inline def setBrandName(value: String): Self = StObject.set(x, "brandName", value.asInstanceOf[js.Any])
     

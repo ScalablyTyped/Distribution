@@ -18,7 +18,8 @@ object IntentConfidence {
     __obj.asInstanceOf[IntentConfidence]
   }
   
-  extension [Self <: IntentConfidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentConfidence] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

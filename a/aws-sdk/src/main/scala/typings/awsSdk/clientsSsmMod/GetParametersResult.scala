@@ -23,7 +23,8 @@ object GetParametersResult {
     __obj.asInstanceOf[GetParametersResult]
   }
   
-  extension [Self <: GetParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersResult] (val x: Self) extends AnyVal {
     
     inline def setInvalidParameters(value: ParameterNameList): Self = StObject.set(x, "InvalidParameters", value.asInstanceOf[js.Any])
     

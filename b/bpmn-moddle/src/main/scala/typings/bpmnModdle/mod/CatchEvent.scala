@@ -46,7 +46,8 @@ object CatchEvent {
     __obj.asInstanceOf[CatchEvent]
   }
   
-  extension [Self <: CatchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatchEvent] (val x: Self) extends AnyVal {
     
     inline def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
     

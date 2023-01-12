@@ -509,7 +509,8 @@ object distTs3Dot9ModulesReactTextareaAutosizeDistDeclarationsSrcIndexMod extend
       __obj.asInstanceOf[TextareaAutosizeProps]
     }
     
-    extension [Self <: TextareaAutosizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaAutosizeProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1302,7 +1303,8 @@ object distTs3Dot9ModulesReactTextareaAutosizeDistDeclarationsSrcIndexMod extend
       __obj.asInstanceOf[TextareaHeightChangeMeta]
     }
     
-    extension [Self <: TextareaHeightChangeMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaHeightChangeMeta] (val x: Self) extends AnyVal {
       
       inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     }

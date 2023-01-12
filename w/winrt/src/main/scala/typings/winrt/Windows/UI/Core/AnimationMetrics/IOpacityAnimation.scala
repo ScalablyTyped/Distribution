@@ -29,7 +29,8 @@ object IOpacityAnimation {
     __obj.asInstanceOf[IOpacityAnimation]
   }
   
-  extension [Self <: IOpacityAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOpacityAnimation] (val x: Self) extends AnyVal {
     
     inline def setFinalOpacity(value: Double): Self = StObject.set(x, "finalOpacity", value.asInstanceOf[js.Any])
     

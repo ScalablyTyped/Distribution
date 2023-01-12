@@ -25,7 +25,8 @@ object MedicationDispensePerformer {
     __obj.asInstanceOf[MedicationDispensePerformer]
   }
   
-  extension [Self <: MedicationDispensePerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationDispensePerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object BaseRoomAttributes {
     __obj.asInstanceOf[BaseRoomAttributes]
   }
   
-  extension [Self <: BaseRoomAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseRoomAttributes] (val x: Self) extends AnyVal {
     
     inline def setCrossPod(value: Boolean): Self = StObject.set(x, "crossPod", value.asInstanceOf[js.Any])
     

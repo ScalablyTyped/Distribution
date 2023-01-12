@@ -28,7 +28,8 @@ object libPlotsVennTypesMod {
       __obj.asInstanceOf[CustomInfo]
     }
     
-    extension [Self <: CustomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomInfo] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Label): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libPlotsVennTypesMod {
       __obj.asInstanceOf[VennOptions]
     }
     
-    extension [Self <: VennOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VennOptions] (val x: Self) extends AnyVal {
       
       inline def setBlendMode(value: String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
       

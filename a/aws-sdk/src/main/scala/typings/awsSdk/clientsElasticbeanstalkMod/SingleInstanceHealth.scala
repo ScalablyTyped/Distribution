@@ -63,7 +63,8 @@ object SingleInstanceHealth {
     __obj.asInstanceOf[SingleInstanceHealth]
   }
   
-  extension [Self <: SingleInstanceHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleInstanceHealth] (val x: Self) extends AnyVal {
     
     inline def setApplicationMetrics(value: ApplicationMetrics): Self = StObject.set(x, "ApplicationMetrics", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeResourceGroupsResponse {
     __obj.asInstanceOf[DescribeResourceGroupsResponse]
   }
   
-  extension [Self <: DescribeResourceGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeResourceGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedItems(value: FailedItems): Self = StObject.set(x, "failedItems", value.asInstanceOf[js.Any])
     

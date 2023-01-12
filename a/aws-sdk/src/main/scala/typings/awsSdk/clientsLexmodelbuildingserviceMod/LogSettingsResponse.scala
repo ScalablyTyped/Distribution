@@ -38,7 +38,8 @@ object LogSettingsResponse {
     __obj.asInstanceOf[LogSettingsResponse]
   }
   
-  extension [Self <: LogSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

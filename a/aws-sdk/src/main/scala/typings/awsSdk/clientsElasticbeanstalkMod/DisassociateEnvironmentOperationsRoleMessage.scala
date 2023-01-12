@@ -18,7 +18,8 @@ object DisassociateEnvironmentOperationsRoleMessage {
     __obj.asInstanceOf[DisassociateEnvironmentOperationsRoleMessage]
   }
   
-  extension [Self <: DisassociateEnvironmentOperationsRoleMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateEnvironmentOperationsRoleMessage] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
   }

@@ -74,7 +74,8 @@ object Bibliography {
     __obj.asInstanceOf[Bibliography]
   }
   
-  extension [Self <: Bibliography](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     

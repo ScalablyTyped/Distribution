@@ -24,7 +24,8 @@ object BooleanTypeAnnotation_ {
     __obj.asInstanceOf[BooleanTypeAnnotation_]
   }
   
-  extension [Self <: BooleanTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: BooleanTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object CreateRecurringPayInCIT {
     __obj.asInstanceOf[CreateRecurringPayInCIT]
   }
   
-  extension [Self <: CreateRecurringPayInCIT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecurringPayInCIT] (val x: Self) extends AnyVal {
     
     inline def setBrowserInfo(value: BrowserInfoData): Self = StObject.set(x, "BrowserInfo", value.asInstanceOf[js.Any])
     

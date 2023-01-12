@@ -16,7 +16,8 @@ object AgentMutedStatus {
     __obj.asInstanceOf[AgentMutedStatus]
   }
   
-  extension [Self <: AgentMutedStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentMutedStatus] (val x: Self) extends AnyVal {
     
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
   }

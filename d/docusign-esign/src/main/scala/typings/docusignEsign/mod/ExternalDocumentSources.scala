@@ -73,7 +73,8 @@ object ExternalDocumentSources {
     __obj.asInstanceOf[ExternalDocumentSources]
   }
   
-  extension [Self <: ExternalDocumentSources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalDocumentSources] (val x: Self) extends AnyVal {
     
     inline def setBoxnetEnabled(value: String): Self = StObject.set(x, "boxnetEnabled", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object distSrcGherkinDocumentWalkerMod {
       __obj.asInstanceOf[GherkinDocumentWalker]
     }
     
-    extension [Self <: GherkinDocumentWalker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GherkinDocumentWalker] (val x: Self) extends AnyVal {
       
       inline def setCopyBackground(value: Any): Self = StObject.set(x, "copyBackground", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object distSrcGherkinDocumentWalkerMod {
       __obj.asInstanceOf[IFilters]
     }
     
-    extension [Self <: IFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilters] (val x: Self) extends AnyVal {
       
       inline def setAcceptBackground(value: /* background */ Background => Boolean): Self = StObject.set(x, "acceptBackground", js.Any.fromFunction1(value))
       
@@ -254,7 +256,8 @@ object distSrcGherkinDocumentWalkerMod {
       __obj.asInstanceOf[IHandlers]
     }
     
-    extension [Self <: IHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandlers] (val x: Self) extends AnyVal {
       
       inline def setHandleBackground(value: /* background */ Background => Unit): Self = StObject.set(x, "handleBackground", js.Any.fromFunction1(value))
       

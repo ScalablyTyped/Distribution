@@ -42,7 +42,8 @@ object INxPivotPage {
     __obj.asInstanceOf[INxPivotPage]
   }
   
-  extension [Self <: INxPivotPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPivotPage] (val x: Self) extends AnyVal {
     
     inline def setQArea(value: IRect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateDevicePoolResult {
     __obj.asInstanceOf[CreateDevicePoolResult]
   }
   
-  extension [Self <: CreateDevicePoolResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDevicePoolResult] (val x: Self) extends AnyVal {
     
     inline def setDevicePool(value: DevicePool): Self = StObject.set(x, "devicePool", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesGlobalWorkflow {
     __obj.asInstanceOf[EnumValuesGlobalWorkflow]
   }
   
-  extension [Self <: EnumValuesGlobalWorkflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesGlobalWorkflow] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: GlobalWorkflow): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

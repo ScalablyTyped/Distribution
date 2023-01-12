@@ -15,7 +15,8 @@ object GetRealtimeDataResponse {
     __obj.asInstanceOf[GetRealtimeDataResponse]
   }
   
-  extension [Self <: GetRealtimeDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRealtimeDataResponse] (val x: Self) extends AnyVal {
     
     inline def setRealtimeData(value: ContextRealtimeData): Self = StObject.set(x, "realtimeData", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object Dispose {
     __obj.asInstanceOf[Dispose]
   }
   
-  extension [Self <: Dispose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dispose] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

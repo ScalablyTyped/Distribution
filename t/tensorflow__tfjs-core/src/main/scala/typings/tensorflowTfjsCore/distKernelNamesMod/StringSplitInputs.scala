@@ -18,7 +18,8 @@ object StringSplitInputs {
     __obj.asInstanceOf[StringSplitInputs]
   }
   
-  extension [Self <: StringSplitInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringSplitInputs] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: scala.Any): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

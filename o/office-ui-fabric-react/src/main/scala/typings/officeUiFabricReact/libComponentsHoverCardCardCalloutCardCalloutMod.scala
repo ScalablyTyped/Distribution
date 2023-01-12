@@ -29,7 +29,8 @@ object libComponentsHoverCardCardCalloutCardCalloutMod {
       __obj.asInstanceOf[ICardCalloutProps]
     }
     
-    extension [Self <: ICardCalloutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICardCalloutProps] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

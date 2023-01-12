@@ -78,7 +78,8 @@ object TypeSummary {
     __obj.asInstanceOf[TypeSummary]
   }
   
-  extension [Self <: TypeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSummary] (val x: Self) extends AnyVal {
     
     inline def setDefaultVersionId(value: TypeVersionId): Self = StObject.set(x, "DefaultVersionId", value.asInstanceOf[js.Any])
     

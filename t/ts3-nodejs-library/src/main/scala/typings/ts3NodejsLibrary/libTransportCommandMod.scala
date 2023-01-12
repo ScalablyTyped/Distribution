@@ -2547,7 +2547,8 @@ object libTransportCommandMod {
         __obj.asInstanceOf[ParserArgument]
       }
       
-      extension [Self <: ParserArgument](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParserArgument] (val x: Self) extends AnyVal {
         
         inline def setCmd(value: Instantiable): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
         
@@ -2574,7 +2575,8 @@ object libTransportCommandMod {
         __obj.asInstanceOf[Parsers]
       }
       
-      extension [Self <: Parsers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: /* cmd */ Command => String): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
         

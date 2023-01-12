@@ -49,7 +49,8 @@ object ErrorBars {
     __obj.asInstanceOf[ErrorBars]
   }
   
-  extension [Self <: ErrorBars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorBars] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

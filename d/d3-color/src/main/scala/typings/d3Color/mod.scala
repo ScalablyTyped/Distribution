@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[Color_]
     }
     
-    extension [Self <: Color_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color_] (val x: Self) extends AnyVal {
       
       inline def setDisplayable(value: () => Boolean): Self = StObject.set(x, "displayable", js.Any.fromFunction0(value))
       

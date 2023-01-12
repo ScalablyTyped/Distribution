@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moment-strftime2"
-version := "1.0-dt-20211202Z-208788"
+version := "1.0-dt-20211202Z-485d04"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

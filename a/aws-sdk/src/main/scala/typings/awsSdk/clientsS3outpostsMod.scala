@@ -38,7 +38,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[CreateEndpointRequest]
     }
     
-    extension [Self <: CreateEndpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEndpointRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessType(value: EndpointAccessType): Self = StObject.set(x, "AccessType", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[CreateEndpointResult]
     }
     
-    extension [Self <: CreateEndpointResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEndpointResult] (val x: Self) extends AnyVal {
       
       inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[DeleteEndpointRequest]
     }
     
-    extension [Self <: DeleteEndpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteEndpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEndpointId(value: EndpointId): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setAccessType(value: EndpointAccessType): Self = StObject.set(x, "AccessType", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[ListEndpointsRequest]
     }
     
-    extension [Self <: ListEndpointsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEndpointsRequest] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
@@ -341,7 +347,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[ListEndpointsResult]
     }
     
-    extension [Self <: ListEndpointsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListEndpointsResult] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
@@ -379,7 +386,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[ListSharedEndpointsRequest]
     }
     
-    extension [Self <: ListSharedEndpointsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSharedEndpointsRequest] (val x: Self) extends AnyVal {
       
       inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
@@ -412,7 +420,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[ListSharedEndpointsResult]
     }
     
-    extension [Self <: ListSharedEndpointsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSharedEndpointsResult] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: Endpoints): Self = StObject.set(x, "Endpoints", value.asInstanceOf[js.Any])
       
@@ -442,7 +451,8 @@ object clientsS3outpostsMod {
       __obj.asInstanceOf[NetworkInterface]
     }
     
-    extension [Self <: NetworkInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
       
       inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
       

@@ -76,7 +76,8 @@ object IELangTestDefaults {
     __obj.asInstanceOf[IELangTestDefaults]
   }
   
-  extension [Self <: IELangTestDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangTestDefaults] (val x: Self) extends AnyVal {
     
     inline def setFormHtml(value: String): Self = StObject.set(x, "formHtml", value.asInstanceOf[js.Any])
     

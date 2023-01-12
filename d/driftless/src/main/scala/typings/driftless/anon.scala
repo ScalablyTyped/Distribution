@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[CustomClearTimeout]
     }
     
-    extension [Self <: CustomClearTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomClearTimeout] (val x: Self) extends AnyVal {
       
       inline def setCustomClearTimeout(value: /* repeated */ Any => Unit): Self = StObject.set(x, "customClearTimeout", js.Any.fromFunction1(value))
       

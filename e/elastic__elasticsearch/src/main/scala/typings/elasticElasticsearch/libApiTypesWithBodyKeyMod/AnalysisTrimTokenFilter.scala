@@ -20,7 +20,8 @@ object AnalysisTrimTokenFilter {
     __obj.asInstanceOf[AnalysisTrimTokenFilter]
   }
   
-  extension [Self <: AnalysisTrimTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisTrimTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: trim): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

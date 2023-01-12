@@ -39,7 +39,8 @@ object AggregationsMatrixStatsFields {
     __obj.asInstanceOf[AggregationsMatrixStatsFields]
   }
   
-  extension [Self <: AggregationsMatrixStatsFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMatrixStatsFields] (val x: Self) extends AnyVal {
     
     inline def setCorrelation(value: Record[Field, double]): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
     

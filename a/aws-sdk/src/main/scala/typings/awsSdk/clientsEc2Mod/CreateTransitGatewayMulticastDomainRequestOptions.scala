@@ -28,7 +28,8 @@ object CreateTransitGatewayMulticastDomainRequestOptions {
     __obj.asInstanceOf[CreateTransitGatewayMulticastDomainRequestOptions]
   }
   
-  extension [Self <: CreateTransitGatewayMulticastDomainRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayMulticastDomainRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoAcceptSharedAssociations(value: AutoAcceptSharedAssociationsValue): Self = StObject.set(x, "AutoAcceptSharedAssociations", value.asInstanceOf[js.Any])
     

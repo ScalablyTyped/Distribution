@@ -28,7 +28,8 @@ object EditorDefinitionOptions {
     __obj.asInstanceOf[EditorDefinitionOptions]
   }
   
-  extension [Self <: EditorDefinitionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorDefinitionOptions] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

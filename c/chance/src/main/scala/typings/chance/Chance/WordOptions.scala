@@ -19,7 +19,8 @@ object WordOptions {
     __obj.asInstanceOf[WordOptions]
   }
   
-  extension [Self <: WordOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordOptions] (val x: Self) extends AnyVal {
     
     inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
     

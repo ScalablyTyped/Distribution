@@ -40,7 +40,8 @@ object OpenLink {
     __obj.asInstanceOf[OpenLink]
   }
   
-  extension [Self <: OpenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenLink] (val x: Self) extends AnyVal {
     
     inline def setSetOnClose(value: OnClose => OpenLink): Self = StObject.set(x, "setOnClose", js.Any.fromFunction1(value))
     

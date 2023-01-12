@@ -39,7 +39,8 @@ object PlotGaugeOnPointPositionOptions {
     __obj.asInstanceOf[PlotGaugeOnPointPositionOptions]
   }
   
-  extension [Self <: PlotGaugeOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotGaugeOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

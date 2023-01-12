@@ -28,7 +28,8 @@ object SetDefaultMessageTypeResult {
     __obj.asInstanceOf[SetDefaultMessageTypeResult]
   }
   
-  extension [Self <: SetDefaultMessageTypeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetDefaultMessageTypeResult] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetArn(value: String): Self = StObject.set(x, "ConfigurationSetArn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ProtocolProperty {
     __obj.asInstanceOf[ProtocolProperty]
   }
   
-  extension [Self <: ProtocolProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

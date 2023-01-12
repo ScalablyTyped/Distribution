@@ -33,7 +33,8 @@ object SearchFacesByImageResponse {
     __obj.asInstanceOf[SearchFacesByImageResponse]
   }
   
-  extension [Self <: SearchFacesByImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFacesByImageResponse] (val x: Self) extends AnyVal {
     
     inline def setFaceMatches(value: FaceMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     

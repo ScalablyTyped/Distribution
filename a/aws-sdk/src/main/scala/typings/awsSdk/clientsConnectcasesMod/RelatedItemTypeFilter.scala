@@ -23,7 +23,8 @@ object RelatedItemTypeFilter {
     __obj.asInstanceOf[RelatedItemTypeFilter]
   }
   
-  extension [Self <: RelatedItemTypeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItemTypeFilter] (val x: Self) extends AnyVal {
     
     inline def setComment(value: CommentFilter): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

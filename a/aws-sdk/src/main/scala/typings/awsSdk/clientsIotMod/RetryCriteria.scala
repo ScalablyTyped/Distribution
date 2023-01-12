@@ -23,7 +23,8 @@ object RetryCriteria {
     __obj.asInstanceOf[RetryCriteria]
   }
   
-  extension [Self <: RetryCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryCriteria] (val x: Self) extends AnyVal {
     
     inline def setFailureType(value: RetryableFailureType): Self = StObject.set(x, "failureType", value.asInstanceOf[js.Any])
     

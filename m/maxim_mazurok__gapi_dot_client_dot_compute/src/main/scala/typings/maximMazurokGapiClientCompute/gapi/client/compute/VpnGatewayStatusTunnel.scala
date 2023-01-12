@@ -22,7 +22,8 @@ object VpnGatewayStatusTunnel {
     __obj.asInstanceOf[VpnGatewayStatusTunnel]
   }
   
-  extension [Self <: VpnGatewayStatusTunnel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnGatewayStatusTunnel] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayInterface(value: Double): Self = StObject.set(x, "localGatewayInterface", value.asInstanceOf[js.Any])
     

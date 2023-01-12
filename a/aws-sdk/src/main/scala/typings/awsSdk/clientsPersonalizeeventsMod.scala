@@ -38,7 +38,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: StringType): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setItemId(value: StringType): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
       
@@ -248,7 +251,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[PutEventsRequest]
     }
     
-    extension [Self <: PutEventsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
       
       inline def setEventList(value: EventList): Self = StObject.set(x, "eventList", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[PutItemsRequest]
     }
     
-    extension [Self <: PutItemsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutItemsRequest] (val x: Self) extends AnyVal {
       
       inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
       
@@ -312,7 +317,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[PutUsersRequest]
     }
     
-    extension [Self <: PutUsersRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutUsersRequest] (val x: Self) extends AnyVal {
       
       inline def setDatasetArn(value: Arn): Self = StObject.set(x, "datasetArn", value.asInstanceOf[js.Any])
       
@@ -345,7 +351,8 @@ object clientsPersonalizeeventsMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: UserProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object SendDocumentOptions {
     __obj.asInstanceOf[SendDocumentOptions]
   }
   
-  extension [Self <: SendDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

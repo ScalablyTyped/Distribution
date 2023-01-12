@@ -28,7 +28,8 @@ object HostbasedAuthMethodData {
     __obj.asInstanceOf[HostbasedAuthMethodData]
   }
   
-  extension [Self <: HostbasedAuthMethodData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostbasedAuthMethodData] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

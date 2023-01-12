@@ -17,7 +17,8 @@ object QueryRenderedFeaturesParams {
     __obj.asInstanceOf[QueryRenderedFeaturesParams]
   }
   
-  extension [Self <: QueryRenderedFeaturesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRenderedFeaturesParams] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

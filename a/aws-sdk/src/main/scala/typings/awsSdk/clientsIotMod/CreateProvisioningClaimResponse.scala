@@ -33,7 +33,8 @@ object CreateProvisioningClaimResponse {
     __obj.asInstanceOf[CreateProvisioningClaimResponse]
   }
   
-  extension [Self <: CreateProvisioningClaimResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProvisioningClaimResponse] (val x: Self) extends AnyVal {
     
     inline def setCertificateId(value: CertificateId): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     

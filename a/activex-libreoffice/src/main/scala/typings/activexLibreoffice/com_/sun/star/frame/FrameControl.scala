@@ -99,7 +99,8 @@ object FrameControl {
     __obj.asInstanceOf[FrameControl]
   }
   
-  extension [Self <: FrameControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameControl] (val x: Self) extends AnyVal {
     
     inline def setComponentUrl(value: String): Self = StObject.set(x, "ComponentUrl", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: OnEnterLifecycle): Self = StObject.set(x, "onEnter", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BatchUpdateDevicePositionError {
     __obj.asInstanceOf[BatchUpdateDevicePositionError]
   }
   
-  extension [Self <: BatchUpdateDevicePositionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateDevicePositionError] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

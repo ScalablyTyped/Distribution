@@ -48,7 +48,8 @@ object DescribeQueryResponse {
     __obj.asInstanceOf[DescribeQueryResponse]
   }
   
-  extension [Self <: DescribeQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setDeliveryS3Uri(value: DeliveryS3Uri): Self = StObject.set(x, "DeliveryS3Uri", value.asInstanceOf[js.Any])
     

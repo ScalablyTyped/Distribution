@@ -30,7 +30,8 @@ object DropdownOptions {
     __obj.asInstanceOf[DropdownOptions]
   }
   
-  extension [Self <: DropdownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownOptions] (val x: Self) extends AnyVal {
     
     inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     

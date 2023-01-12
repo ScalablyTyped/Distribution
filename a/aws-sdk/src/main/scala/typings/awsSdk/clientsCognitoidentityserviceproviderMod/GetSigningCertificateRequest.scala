@@ -18,7 +18,8 @@ object GetSigningCertificateRequest {
     __obj.asInstanceOf[GetSigningCertificateRequest]
   }
   
-  extension [Self <: GetSigningCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSigningCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }

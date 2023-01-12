@@ -51,7 +51,8 @@ object XGraphicTransformer {
     __obj.asInstanceOf[XGraphicTransformer]
   }
   
-  extension [Self <: XGraphicTransformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGraphicTransformer] (val x: Self) extends AnyVal {
     
     inline def setApplyBrightnessContrast(value: (XGraphic, Double, Double, Boolean) => XGraphic): Self = StObject.set(x, "applyBrightnessContrast", js.Any.fromFunction4(value))
     

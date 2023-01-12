@@ -196,7 +196,8 @@ object inputBaseEventMap {
     __obj.asInstanceOf[inputBaseEventMap[V, SP, SV, RV]]
   }
   
-  extension [Self <: inputBaseEventMap[?, ?, ?, ?], V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV](x: Self & (inputBaseEventMap[V, SP, SV, RV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: inputBaseEventMap[?, ?, ?, ?], V, SP /* <: inputBaseSettableProperties[V, SV, V] */, SV, RV] (val x: Self & (inputBaseEventMap[V, SP, SV, RV])) extends AnyVal {
     
     inline def setAsyncValidatorsChanged(value: JetElementCustomEvent[js.Array[AsyncValidator[V]]]): Self = StObject.set(x, "asyncValidatorsChanged", value.asInstanceOf[js.Any])
     

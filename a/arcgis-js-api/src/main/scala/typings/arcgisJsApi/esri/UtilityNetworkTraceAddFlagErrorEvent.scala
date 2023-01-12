@@ -20,7 +20,8 @@ object UtilityNetworkTraceAddFlagErrorEvent {
     __obj.asInstanceOf[UtilityNetworkTraceAddFlagErrorEvent]
   }
   
-  extension [Self <: UtilityNetworkTraceAddFlagErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilityNetworkTraceAddFlagErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: SimpleMarkerSymbol | PictureMarkerSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

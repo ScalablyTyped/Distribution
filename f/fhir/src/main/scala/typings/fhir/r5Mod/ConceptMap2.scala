@@ -156,7 +156,8 @@ object ConceptMap2 {
     __obj.asInstanceOf[ConceptMap2]
   }
   
-  extension [Self <: ConceptMap2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConceptMap2] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

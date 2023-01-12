@@ -18,7 +18,8 @@ object Presets {
     __obj.asInstanceOf[Presets]
   }
   
-  extension [Self <: Presets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Presets] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: StringDictionary[typings.remarkable.anon.Rules]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

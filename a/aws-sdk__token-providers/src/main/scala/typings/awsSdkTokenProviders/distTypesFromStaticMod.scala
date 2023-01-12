@@ -25,7 +25,8 @@ object distTypesFromStaticMod {
       __obj.asInstanceOf[FromStaticInit]
     }
     
-    extension [Self <: FromStaticInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromStaticInit] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

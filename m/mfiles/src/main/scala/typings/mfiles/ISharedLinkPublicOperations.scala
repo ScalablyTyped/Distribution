@@ -29,7 +29,8 @@ object ISharedLinkPublicOperations {
     __obj.asInstanceOf[ISharedLinkPublicOperations]
   }
   
-  extension [Self <: ISharedLinkPublicOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedLinkPublicOperations] (val x: Self) extends AnyVal {
     
     inline def setDownloadSharedFileInBlocks_Begin(value: (String, String, INamedValues) => IFileDownloadSession): Self = StObject.set(x, "DownloadSharedFileInBlocks_Begin", js.Any.fromFunction3(value))
     

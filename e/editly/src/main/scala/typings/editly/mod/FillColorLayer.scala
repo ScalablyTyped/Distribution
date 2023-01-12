@@ -31,7 +31,8 @@ object FillColorLayer {
     __obj.asInstanceOf[FillColorLayer]
   }
   
-  extension [Self <: FillColorLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillColorLayer] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

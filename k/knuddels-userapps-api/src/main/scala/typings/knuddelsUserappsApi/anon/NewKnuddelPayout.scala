@@ -23,7 +23,8 @@ object NewKnuddelPayout {
     __obj.asInstanceOf[NewKnuddelPayout]
   }
   
-  extension [Self <: NewKnuddelPayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewKnuddelPayout] (val x: Self) extends AnyVal {
     
     inline def setNewKnuddelPayout(value: Double): Self = StObject.set(x, "newKnuddelPayout", value.asInstanceOf[js.Any])
     

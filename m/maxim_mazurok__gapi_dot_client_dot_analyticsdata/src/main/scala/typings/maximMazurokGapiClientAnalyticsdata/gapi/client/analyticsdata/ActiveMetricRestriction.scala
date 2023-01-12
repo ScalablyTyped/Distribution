@@ -19,7 +19,8 @@ object ActiveMetricRestriction {
     __obj.asInstanceOf[ActiveMetricRestriction]
   }
   
-  extension [Self <: ActiveMetricRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveMetricRestriction] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

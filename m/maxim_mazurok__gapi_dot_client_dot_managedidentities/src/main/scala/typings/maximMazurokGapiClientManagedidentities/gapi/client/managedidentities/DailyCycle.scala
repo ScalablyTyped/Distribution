@@ -19,7 +19,8 @@ object DailyCycle {
     __obj.asInstanceOf[DailyCycle]
   }
   
-  extension [Self <: DailyCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DailyCycle] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

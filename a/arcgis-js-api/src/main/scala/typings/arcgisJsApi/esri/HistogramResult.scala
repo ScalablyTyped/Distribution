@@ -41,7 +41,8 @@ object HistogramResult {
     __obj.asInstanceOf[HistogramResult]
   }
   
-  extension [Self <: HistogramResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramResult] (val x: Self) extends AnyVal {
     
     inline def setBins(value: js.Array[Bin]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     

@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[AuditLoggerOptions]
     }
     
-    extension [Self <: AuditLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuditLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Boolean): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -243,7 +244,8 @@ object mod {
       __obj.asInstanceOf[BodyParserOptions]
     }
     
-    extension [Self <: BodyParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyParserOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -324,7 +326,8 @@ object mod {
       __obj.asInstanceOf[MetricsCallback]
     }
     
-    extension [Self <: MetricsCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsCallback] (val x: Self) extends AnyVal {
       
       inline def setErr(value: js.Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
@@ -375,7 +378,8 @@ object mod {
       __obj.asInstanceOf[MetricsCallbackOptions]
     }
     
-    extension [Self <: MetricsCallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsCallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionState(value: TMetricsCallback): Self = StObject.set(x, "connectionState", value.asInstanceOf[js.Any])
       
@@ -420,7 +424,8 @@ object mod {
       __obj.asInstanceOf[MultipartBodyParser_]
     }
     
-    extension [Self <: MultipartBodyParser_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartBodyParser_] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -519,7 +524,8 @@ object mod {
       __obj.asInstanceOf[QueryParserOptions]
     }
     
-    extension [Self <: QueryParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
       
@@ -583,7 +589,8 @@ object mod {
       __obj.asInstanceOf[RequestExpiryOptions]
     }
     
-    extension [Self <: RequestExpiryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestExpiryOptions] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteHeader(value: String): Self = StObject.set(x, "absoluteHeader", value.asInstanceOf[js.Any])
       
@@ -616,7 +623,8 @@ object mod {
       __obj.asInstanceOf[RequestLogger_]
     }
     
-    extension [Self <: RequestLogger_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestLogger_] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -663,7 +671,8 @@ object mod {
       __obj.asInstanceOf[ServeStatic_]
     }
     
-    extension [Self <: ServeStatic_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServeStatic_] (val x: Self) extends AnyVal {
       
       inline def setAppendRequestPath(value: Boolean): Self = StObject.set(x, "appendRequestPath", value.asInstanceOf[js.Any])
       
@@ -735,7 +744,8 @@ object mod {
       __obj.asInstanceOf[ThrottleOptions]
     }
     
-    extension [Self <: ThrottleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleOptions] (val x: Self) extends AnyVal {
       
       inline def setBurst(value: Double): Self = StObject.set(x, "burst", value.asInstanceOf[js.Any])
       
@@ -784,7 +794,8 @@ object mod {
       __obj.asInstanceOf[UrlEncodedBodyParser_]
     }
     
-    extension [Self <: UrlEncodedBodyParser_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlEncodedBodyParser_] (val x: Self) extends AnyVal {
       
       inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
       

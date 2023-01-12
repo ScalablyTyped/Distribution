@@ -29,7 +29,8 @@ object RequestDefinition {
     __obj.asInstanceOf[RequestDefinition]
   }
   
-  extension [Self <: RequestDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDefinition] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: RequestAuthDefinition): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

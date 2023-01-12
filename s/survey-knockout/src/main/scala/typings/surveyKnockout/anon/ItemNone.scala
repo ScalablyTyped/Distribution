@@ -56,7 +56,8 @@ object ItemNone {
     __obj.asInstanceOf[ItemNone]
   }
   
-  extension [Self <: ItemNone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemNone] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

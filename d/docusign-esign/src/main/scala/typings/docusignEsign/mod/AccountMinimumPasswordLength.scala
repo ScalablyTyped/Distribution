@@ -20,7 +20,8 @@ object AccountMinimumPasswordLength {
     __obj.asInstanceOf[AccountMinimumPasswordLength]
   }
   
-  extension [Self <: AccountMinimumPasswordLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountMinimumPasswordLength] (val x: Self) extends AnyVal {
     
     inline def setMaximumLength(value: String): Self = StObject.set(x, "maximumLength", value.asInstanceOf[js.Any])
     

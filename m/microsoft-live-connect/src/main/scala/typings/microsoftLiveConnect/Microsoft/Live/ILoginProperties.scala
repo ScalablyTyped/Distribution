@@ -53,7 +53,8 @@ object ILoginProperties {
     __obj.asInstanceOf[ILoginProperties]
   }
   
-  extension [Self <: ILoginProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoginProperties] (val x: Self) extends AnyVal {
     
     inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
     

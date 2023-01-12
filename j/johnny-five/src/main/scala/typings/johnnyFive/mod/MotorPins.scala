@@ -21,7 +21,8 @@ object MotorPins {
     __obj.asInstanceOf[MotorPins]
   }
   
-  extension [Self <: MotorPins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotorPins] (val x: Self) extends AnyVal {
     
     inline def setBrake(value: Double): Self = StObject.set(x, "brake", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FactoryProvider {
     __obj.asInstanceOf[FactoryProvider]
   }
   
-  extension [Self <: FactoryProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FactoryProvider] (val x: Self) extends AnyVal {
     
     inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
     

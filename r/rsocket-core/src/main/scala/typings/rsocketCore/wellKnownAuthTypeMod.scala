@@ -102,7 +102,8 @@ object wellKnownAuthTypeMod {
       __obj.asInstanceOf[WellKnownAuthType]
     }
     
-    extension [Self <: WellKnownAuthType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WellKnownAuthType] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object ResizeObserverEntry {
     __obj.asInstanceOf[ResizeObserverEntry]
   }
   
-  extension [Self <: ResizeObserverEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeObserverEntry] (val x: Self) extends AnyVal {
     
     inline def setBorderBoxSize(value: js.Array[ResizeObserverSize]): Self = StObject.set(x, "borderBoxSize", value.asInstanceOf[js.Any])
     

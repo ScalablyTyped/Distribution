@@ -19,7 +19,8 @@ object RegimesView {
     __obj.asInstanceOf[RegimesView]
   }
   
-  extension [Self <: RegimesView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegimesView] (val x: Self) extends AnyVal {
     
     inline def setMetric_name(value: js.Array[Active]): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     

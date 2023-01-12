@@ -22,7 +22,8 @@ object Extra {
     __obj.asInstanceOf[Extra]
   }
   
-  extension [Self <: Extra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
     
     inline def setDismissText(value: String): Self = StObject.set(x, "dismissText", value.asInstanceOf[js.Any])
     

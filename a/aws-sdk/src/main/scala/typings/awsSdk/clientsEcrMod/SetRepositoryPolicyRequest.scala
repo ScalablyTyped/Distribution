@@ -33,7 +33,8 @@ object SetRepositoryPolicyRequest {
     __obj.asInstanceOf[SetRepositoryPolicyRequest]
   }
   
-  extension [Self <: SetRepositoryPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRepositoryPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: ForceFlag): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

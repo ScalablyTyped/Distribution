@@ -39,7 +39,8 @@ object FieldSchemaInFormMultiChoice {
     __obj.asInstanceOf[FieldSchemaInFormMultiChoice]
   }
   
-  extension [Self <: FieldSchemaInFormMultiChoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormMultiChoice] (val x: Self) extends AnyVal {
     
     inline def setFillInChoice(value: Boolean): Self = StObject.set(x, "FillInChoice", value.asInstanceOf[js.Any])
     

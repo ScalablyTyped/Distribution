@@ -20,7 +20,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[IEventData]
     }
     
-    extension [Self <: IEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventData] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[IKeyboardEventData]
     }
     
-    extension [Self <: IKeyboardEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyboardEventData] (val x: Self) extends AnyVal {
       
       inline def setAltKey(value: Double): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[IMouseEventData]
     }
     
-    extension [Self <: IMouseEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMouseEventData] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[IPointEventData]
     }
     
-    extension [Self <: IPointEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPointEventData] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[ITouchData]
     }
     
-    extension [Self <: ITouchData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITouchData] (val x: Self) extends AnyVal {
       
       inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
       
@@ -377,7 +382,8 @@ object distEs2015EventInterfaceIeventdataMod {
       __obj.asInstanceOf[ITouchEventData]
     }
     
-    extension [Self <: ITouchEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITouchEventData] (val x: Self) extends AnyVal {
       
       inline def setChangedTouches(value: js.Array[ITouchData]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
       

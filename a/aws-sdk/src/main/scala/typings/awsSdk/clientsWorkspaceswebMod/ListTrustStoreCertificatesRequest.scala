@@ -28,7 +28,8 @@ object ListTrustStoreCertificatesRequest {
     __obj.asInstanceOf[ListTrustStoreCertificatesRequest]
   }
   
-  extension [Self <: ListTrustStoreCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrustStoreCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

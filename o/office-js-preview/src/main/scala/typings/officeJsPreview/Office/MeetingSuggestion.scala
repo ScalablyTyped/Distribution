@@ -65,7 +65,8 @@ object MeetingSuggestion {
     __obj.asInstanceOf[MeetingSuggestion]
   }
   
-  extension [Self <: MeetingSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingSuggestion] (val x: Self) extends AnyVal {
     
     inline def setAttendees(value: js.Array[EmailUser]): Self = StObject.set(x, "attendees", value.asInstanceOf[js.Any])
     

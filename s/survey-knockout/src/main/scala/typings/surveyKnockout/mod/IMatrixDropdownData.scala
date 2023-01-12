@@ -83,7 +83,8 @@ object IMatrixDropdownData {
     __obj.asInstanceOf[IMatrixDropdownData]
   }
   
-  extension [Self <: IMatrixDropdownData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMatrixDropdownData] (val x: Self) extends AnyVal {
     
     inline def setCheckIfValueInRowDuplicated(value: (MatrixDropdownRowModelBase, Question) => Boolean): Self = StObject.set(x, "checkIfValueInRowDuplicated", js.Any.fromFunction2(value))
     

@@ -15,7 +15,8 @@ object BaseActorRef {
     __obj.asInstanceOf[BaseActorRef[TEvent]]
   }
   
-  extension [Self <: BaseActorRef[?], TEvent /* <: EventObject */](x: Self & BaseActorRef[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseActorRef[?], TEvent /* <: EventObject */] (val x: Self & BaseActorRef[TEvent]) extends AnyVal {
     
     inline def setSend(value: TEvent => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }

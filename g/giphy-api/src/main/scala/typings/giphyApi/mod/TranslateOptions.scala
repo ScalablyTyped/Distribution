@@ -17,7 +17,8 @@ object TranslateOptions {
     __obj.asInstanceOf[TranslateOptions]
   }
   
-  extension [Self <: TranslateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
     
     inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }

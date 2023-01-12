@@ -26,7 +26,8 @@ object LocalQueueEvent {
     __obj.asInstanceOf[LocalQueueEvent[T]]
   }
   
-  extension [Self <: LocalQueueEvent[?], T](x: Self & LocalQueueEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalQueueEvent[?], T] (val x: Self & LocalQueueEvent[T]) extends AnyVal {
     
     inline def setQueued(value: (EntityId, Change[T], js.Array[LocalQueuedChange[T]]) => Unit): Self = StObject.set(x, "queued", js.Any.fromFunction3(value))
     

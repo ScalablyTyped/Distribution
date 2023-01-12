@@ -37,7 +37,8 @@ object AdvancedSecurityOverrides {
     __obj.asInstanceOf[AdvancedSecurityOverrides]
   }
   
-  extension [Self <: AdvancedSecurityOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedSecurityOverrides] (val x: Self) extends AnyVal {
     
     inline def setCommonCriteriaMode(value: String): Self = StObject.set(x, "commonCriteriaMode", value.asInstanceOf[js.Any])
     

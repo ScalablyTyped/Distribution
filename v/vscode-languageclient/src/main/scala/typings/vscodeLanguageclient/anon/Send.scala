@@ -15,7 +15,8 @@ object Send {
     __obj.asInstanceOf[Send[T]]
   }
   
-  extension [Self <: Send[?], T /* <: js.Function */](x: Self & Send[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Send[?], T /* <: js.Function */] (val x: Self & Send[T]) extends AnyVal {
     
     inline def setSend(value: T): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object Super_ {
     __obj.asInstanceOf[Super_]
   }
   
-  extension [Self <: Super_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Super_] (val x: Self) extends AnyVal {
     
     inline def setType(value: Super): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

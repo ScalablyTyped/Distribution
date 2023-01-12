@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Iterator[K, V]]
     }
     
-    extension [Self <: Iterator[?, ?], K, V](x: Self & (Iterator[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iterator[?, ?], K, V] (val x: Self & (Iterator[K, V])) extends AnyVal {
       
       inline def setHasNext(value: Boolean): Self = StObject.set(x, "hasNext", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Node[K, V]]
     }
     
-    extension [Self <: Node[?, ?], K, V](x: Self & (Node[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?, ?], K, V] (val x: Self & (Node[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

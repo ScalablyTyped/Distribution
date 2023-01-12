@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonMaintainercanmodify {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonMaintainercanmodify]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonMaintainercanmodify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonMaintainercanmodify] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathPullnumber): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

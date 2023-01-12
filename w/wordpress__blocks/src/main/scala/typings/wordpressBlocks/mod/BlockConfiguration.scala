@@ -73,7 +73,8 @@ object BlockConfiguration {
     __obj.asInstanceOf[BlockConfiguration[T]]
   }
   
-  extension [Self <: BlockConfiguration[?], T /* <: Record[String, Any] */](x: Self & BlockConfiguration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockConfiguration[?], T /* <: Record[String, Any] */] (val x: Self & BlockConfiguration[T]) extends AnyVal {
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

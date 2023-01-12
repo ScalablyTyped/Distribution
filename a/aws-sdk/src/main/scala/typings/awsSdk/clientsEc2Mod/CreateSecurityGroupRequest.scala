@@ -38,7 +38,8 @@ object CreateSecurityGroupRequest {
     __obj.asInstanceOf[CreateSecurityGroupRequest]
   }
   
-  extension [Self <: CreateSecurityGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSecurityGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

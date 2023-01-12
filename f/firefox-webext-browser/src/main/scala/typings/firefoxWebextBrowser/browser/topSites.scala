@@ -48,7 +48,8 @@ object topSites {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeBlocked(value: Boolean): Self = StObject.set(x, "includeBlocked", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object topSites {
       __obj.asInstanceOf[MostVisitedURL]
     }
     
-    extension [Self <: MostVisitedURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MostVisitedURL] (val x: Self) extends AnyVal {
       
       inline def setFavicon(value: String): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       

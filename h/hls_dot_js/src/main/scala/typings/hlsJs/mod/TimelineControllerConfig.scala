@@ -53,7 +53,8 @@ object TimelineControllerConfig {
     __obj.asInstanceOf[TimelineControllerConfig]
   }
   
-  extension [Self <: TimelineControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setCaptionsTextTrack1Label(value: String): Self = StObject.set(x, "captionsTextTrack1Label", value.asInstanceOf[js.Any])
     

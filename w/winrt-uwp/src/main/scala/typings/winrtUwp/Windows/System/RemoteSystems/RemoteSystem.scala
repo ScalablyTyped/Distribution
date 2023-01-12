@@ -61,7 +61,8 @@ object RemoteSystem {
     __obj.asInstanceOf[RemoteSystem]
   }
   
-  extension [Self <: RemoteSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystem] (val x: Self) extends AnyVal {
     
     inline def setApps(value: IVectorView[RemoteSystemApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     

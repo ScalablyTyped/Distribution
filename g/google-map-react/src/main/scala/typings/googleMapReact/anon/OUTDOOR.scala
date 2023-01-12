@@ -17,7 +17,8 @@ object OUTDOOR {
     __obj.asInstanceOf[OUTDOOR]
   }
   
-  extension [Self <: OUTDOOR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OUTDOOR] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT(value: String): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     

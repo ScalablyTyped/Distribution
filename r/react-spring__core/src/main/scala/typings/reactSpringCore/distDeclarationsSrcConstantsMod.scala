@@ -156,7 +156,8 @@ object distDeclarationsSrcConstantsMod {
       __obj.asInstanceOf[EasingDictionary]
     }
     
-    extension [Self <: EasingDictionary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EasingDictionary] (val x: Self) extends AnyVal {
       
       inline def setEaseInBack(value: Double => Double): Self = StObject.set(x, "easeInBack", js.Any.fromFunction1(value))
       

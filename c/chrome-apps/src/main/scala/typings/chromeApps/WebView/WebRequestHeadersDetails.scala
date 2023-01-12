@@ -31,7 +31,8 @@ object WebRequestHeadersDetails {
     __obj.asInstanceOf[WebRequestHeadersDetails]
   }
   
-  extension [Self <: WebRequestHeadersDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestHeadersDetails] (val x: Self) extends AnyVal {
     
     inline def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
     

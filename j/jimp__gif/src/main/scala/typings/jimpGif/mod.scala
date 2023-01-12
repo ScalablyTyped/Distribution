@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Gif]
     }
     
-    extension [Self <: Gif](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gif] (val x: Self) extends AnyVal {
       
       inline def setConstants(value: MIMEGIF): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       

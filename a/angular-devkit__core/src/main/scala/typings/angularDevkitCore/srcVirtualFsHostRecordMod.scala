@@ -93,7 +93,8 @@ object srcVirtualFsHostRecordMod {
       __obj.asInstanceOf[CordHostCreate]
     }
     
-    extension [Self <: CordHostCreate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordHostCreate] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object srcVirtualFsHostRecordMod {
       __obj.asInstanceOf[CordHostDelete]
     }
     
-    extension [Self <: CordHostDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordHostDelete] (val x: Self) extends AnyVal {
       
       inline def setKind(value: delete): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object srcVirtualFsHostRecordMod {
       __obj.asInstanceOf[CordHostOverwrite]
     }
     
-    extension [Self <: CordHostOverwrite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordHostOverwrite] (val x: Self) extends AnyVal {
       
       inline def setContent(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object srcVirtualFsHostRecordMod {
       __obj.asInstanceOf[CordHostRename]
     }
     
-    extension [Self <: CordHostRename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordHostRename] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Path_): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

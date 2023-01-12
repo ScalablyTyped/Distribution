@@ -38,7 +38,8 @@ object SpyAnd {
     __obj.asInstanceOf[SpyAnd]
   }
   
-  extension [Self <: SpyAnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpyAnd] (val x: Self) extends AnyVal {
     
     inline def setCallFake(value: js.Function => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
     

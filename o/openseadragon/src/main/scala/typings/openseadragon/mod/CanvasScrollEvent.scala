@@ -34,7 +34,8 @@ object CanvasScrollEvent {
     __obj.asInstanceOf[CanvasScrollEvent]
   }
   
-  extension [Self <: CanvasScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

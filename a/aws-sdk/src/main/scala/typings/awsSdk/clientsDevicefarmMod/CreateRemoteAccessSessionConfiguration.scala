@@ -23,7 +23,8 @@ object CreateRemoteAccessSessionConfiguration {
     __obj.asInstanceOf[CreateRemoteAccessSessionConfiguration]
   }
   
-  extension [Self <: CreateRemoteAccessSessionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRemoteAccessSessionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBillingMethod(value: BillingMethod): Self = StObject.set(x, "billingMethod", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IFindLoopsOptions {
     __obj.asInstanceOf[IFindLoopsOptions]
   }
   
-  extension [Self <: IFindLoopsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFindLoopsOptions] (val x: Self) extends AnyVal {
     
     inline def setRemoveFromOriginal(value: Boolean): Self = StObject.set(x, "removeFromOriginal", value.asInstanceOf[js.Any])
     

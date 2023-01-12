@@ -18,7 +18,8 @@ object AdditionalData {
     __obj.asInstanceOf[AdditionalData]
   }
   
-  extension [Self <: AdditionalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalData] (val x: Self) extends AnyVal {
     
     inline def setWebpackAST(value: js.Object): Self = StObject.set(x, "webpackAST", value.asInstanceOf[js.Any])
   }

@@ -543,7 +543,8 @@ object mod {
       __obj.asInstanceOf[PromiseState[T]]
     }
     
-    extension [Self <: PromiseState[?], T](x: Self & PromiseState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseState[?], T] (val x: Self & PromiseState[T]) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

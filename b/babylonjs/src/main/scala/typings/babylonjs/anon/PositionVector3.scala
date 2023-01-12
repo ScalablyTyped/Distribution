@@ -16,7 +16,8 @@ object PositionVector3 {
     __obj.asInstanceOf[PositionVector3]
   }
   
-  extension [Self <: PositionVector3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionVector3] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Vector3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object AddEvent {
     __obj.asInstanceOf[AddEvent]
   }
   
-  extension [Self <: AddEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddEvent] (val x: Self) extends AnyVal {
     
     inline def setController(value: Controller): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
   }

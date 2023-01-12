@@ -18,7 +18,8 @@ object CancelImageLaunchPermissionResult {
     __obj.asInstanceOf[CancelImageLaunchPermissionResult]
   }
   
-  extension [Self <: CancelImageLaunchPermissionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelImageLaunchPermissionResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

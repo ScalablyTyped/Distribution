@@ -44,7 +44,8 @@ object ReadonlydoneSyncHookMulti {
     __obj.asInstanceOf[ReadonlydoneSyncHookMulti]
   }
   
-  extension [Self <: ReadonlydoneSyncHookMulti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlydoneSyncHookMulti] (val x: Self) extends AnyVal {
     
     inline def setDone(value: SyncHook[js.Array[MultiStats], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

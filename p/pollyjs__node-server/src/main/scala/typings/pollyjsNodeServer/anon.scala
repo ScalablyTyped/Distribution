@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialServerConfig]
     }
     
-    extension [Self <: PartialServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServerConfig] (val x: Self) extends AnyVal {
       
       inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[PickConfigrecordingsDir]
     }
     
-    extension [Self <: PickConfigrecordingsDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickConfigrecordingsDir] (val x: Self) extends AnyVal {
       
       inline def setRecordingsDir(value: String): Self = StObject.set(x, "recordingsDir", value.asInstanceOf[js.Any])
     }

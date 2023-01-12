@@ -28,7 +28,8 @@ object CSSTranslate {
     __obj.asInstanceOf[CSSTranslate]
   }
   
-  extension [Self <: CSSTranslate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTranslate] (val x: Self) extends AnyVal {
     
     inline def setX(value: CSSNumericValue): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

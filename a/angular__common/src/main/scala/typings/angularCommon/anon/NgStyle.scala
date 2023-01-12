@@ -16,7 +16,8 @@ object NgStyle {
     __obj.asInstanceOf[NgStyle]
   }
   
-  extension [Self <: NgStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgStyle] (val x: Self) extends AnyVal {
     
     inline def setNgStyle(value: ngStyle): Self = StObject.set(x, "ngStyle", value.asInstanceOf[js.Any])
   }

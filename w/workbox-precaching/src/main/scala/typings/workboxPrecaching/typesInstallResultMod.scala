@@ -19,7 +19,8 @@ object typesInstallResultMod {
       __obj.asInstanceOf[InstallResult]
     }
     
-    extension [Self <: InstallResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallResult] (val x: Self) extends AnyVal {
       
       inline def setNotUpdatedURLs(value: js.Array[String]): Self = StObject.set(x, "notUpdatedURLs", value.asInstanceOf[js.Any])
       

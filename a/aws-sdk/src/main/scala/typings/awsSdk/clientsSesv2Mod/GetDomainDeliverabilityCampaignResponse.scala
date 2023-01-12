@@ -18,7 +18,8 @@ object GetDomainDeliverabilityCampaignResponse {
     __obj.asInstanceOf[GetDomainDeliverabilityCampaignResponse]
   }
   
-  extension [Self <: GetDomainDeliverabilityCampaignResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainDeliverabilityCampaignResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainDeliverabilityCampaign(value: DomainDeliverabilityCampaign): Self = StObject.set(x, "DomainDeliverabilityCampaign", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DatastorePartition {
     __obj.asInstanceOf[DatastorePartition]
   }
   
-  extension [Self <: DatastorePartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastorePartition] (val x: Self) extends AnyVal {
     
     inline def setAttributePartition(value: Partition): Self = StObject.set(x, "attributePartition", value.asInstanceOf[js.Any])
     

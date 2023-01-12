@@ -16,7 +16,8 @@ object AddonOnInstall {
     __obj.asInstanceOf[AddonOnInstall]
   }
   
-  extension [Self <: AddonOnInstall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddonOnInstall] (val x: Self) extends AnyVal {
     
     inline def setAuthMode(value: AuthMode): Self = StObject.set(x, "authMode", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object VideoColorSpaceInit {
     __obj.asInstanceOf[VideoColorSpaceInit]
   }
   
-  extension [Self <: VideoColorSpaceInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoColorSpaceInit] (val x: Self) extends AnyVal {
     
     inline def setFullRange(value: Boolean): Self = StObject.set(x, "fullRange", value.asInstanceOf[js.Any])
     

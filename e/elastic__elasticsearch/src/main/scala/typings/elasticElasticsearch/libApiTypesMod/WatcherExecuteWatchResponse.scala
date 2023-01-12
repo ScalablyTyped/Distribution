@@ -17,7 +17,8 @@ object WatcherExecuteWatchResponse {
     __obj.asInstanceOf[WatcherExecuteWatchResponse]
   }
   
-  extension [Self <: WatcherExecuteWatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecuteWatchResponse] (val x: Self) extends AnyVal {
     
     inline def setWatch_record(value: WatcherExecuteWatchWatchRecord): Self = StObject.set(x, "watch_record", value.asInstanceOf[js.Any])
     

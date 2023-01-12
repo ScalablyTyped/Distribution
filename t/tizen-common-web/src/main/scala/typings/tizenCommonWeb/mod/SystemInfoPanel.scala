@@ -25,7 +25,8 @@ object SystemInfoPanel {
     __obj.asInstanceOf[SystemInfoPanel]
   }
   
-  extension [Self <: SystemInfoPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoPanel] (val x: Self) extends AnyVal {
     
     inline def setPanelHeight(value: Double): Self = StObject.set(x, "panelHeight", value.asInstanceOf[js.Any])
     

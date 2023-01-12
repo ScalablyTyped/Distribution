@@ -56,7 +56,8 @@ object libPopoverTouchableMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnPopoverDisplayed(value: () => Any): Self = StObject.set(x, "onPopoverDisplayed", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object libPopoverTouchableMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setPopoverAnchor(value: Rect): Self = StObject.set(x, "popoverAnchor", value.asInstanceOf[js.Any])
       

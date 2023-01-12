@@ -28,7 +28,8 @@ object ResolveCustomerResult {
     __obj.asInstanceOf[ResolveCustomerResult]
   }
   
-  extension [Self <: ResolveCustomerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveCustomerResult] (val x: Self) extends AnyVal {
     
     inline def setCustomerAWSAccountId(value: CustomerAWSAccountId): Self = StObject.set(x, "CustomerAWSAccountId", value.asInstanceOf[js.Any])
     

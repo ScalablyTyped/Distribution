@@ -17,7 +17,8 @@ object RemoveCredentialRequest {
     __obj.asInstanceOf[RemoveCredentialRequest]
   }
   
-  extension [Self <: RemoveCredentialRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveCredentialRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     

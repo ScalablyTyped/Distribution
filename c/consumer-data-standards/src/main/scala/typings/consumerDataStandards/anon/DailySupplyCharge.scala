@@ -36,7 +36,8 @@ object DailySupplyCharge {
     __obj.asInstanceOf[DailySupplyCharge]
   }
   
-  extension [Self <: DailySupplyCharge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DailySupplyCharge] (val x: Self) extends AnyVal {
     
     inline def setDailySupplyCharge(value: String): Self = StObject.set(x, "dailySupplyCharge", value.asInstanceOf[js.Any])
     

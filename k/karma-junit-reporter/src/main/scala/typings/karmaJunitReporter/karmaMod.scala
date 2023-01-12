@@ -19,7 +19,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setJunitReporter(value: JUnitReporterConfiguration): Self = StObject.set(x, "junitReporter", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object karmaMod {
       __obj.asInstanceOf[JUnitReporterConfiguration]
     }
     
-    extension [Self <: JUnitReporterConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JUnitReporterConfiguration] (val x: Self) extends AnyVal {
       
       inline def setClassNameFormatter(value: (/* browser */ Any, /* result */ Any) => String): Self = StObject.set(x, "classNameFormatter", js.Any.fromFunction2(value))
       

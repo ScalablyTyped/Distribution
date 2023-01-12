@@ -46,7 +46,8 @@ object SiteTapp {
     __obj.asInstanceOf[SiteTapp]
   }
   
-  extension [Self <: SiteTapp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteTapp] (val x: Self) extends AnyVal {
     
     inline def setCustomUrl(value: String): Self = StObject.set(x, "customUrl", value.asInstanceOf[js.Any])
     

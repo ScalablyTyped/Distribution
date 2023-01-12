@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Locale */ Any
@@ -128,7 +130,8 @@ object anon {
       __obj.asInstanceOf[GroupId]
     }
     
-    extension [Self <: GroupId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupId] (val x: Self) extends AnyVal {
       
       inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
@@ -247,7 +252,8 @@ object anon {
       __obj.asInstanceOf[Time]
     }
     
-    extension [Self <: Time](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
       
       inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       

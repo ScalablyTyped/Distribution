@@ -50,7 +50,8 @@ object IFieldFilterOpEnum {
     __obj.asInstanceOf[IFieldFilterOpEnum]
   }
   
-  extension [Self <: IFieldFilterOpEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldFilterOpEnum] (val x: Self) extends AnyVal {
     
     inline def setARRAY_CONTAINS(value: FieldFilterOp): Self = StObject.set(x, "ARRAY_CONTAINS", value.asInstanceOf[js.Any])
     

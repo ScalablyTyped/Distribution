@@ -16,7 +16,8 @@ object Win32LobAppRule {
     __obj.asInstanceOf[Win32LobAppRule]
   }
   
-  extension [Self <: Win32LobAppRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppRule] (val x: Self) extends AnyVal {
     
     inline def setRuleType(value: Win32LobAppRuleType): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
     

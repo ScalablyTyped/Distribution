@@ -36,7 +36,8 @@ object Annotation {
     __obj.asInstanceOf[Annotation]
   }
   
-  extension [Self <: Annotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: H): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

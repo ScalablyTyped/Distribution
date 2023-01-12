@@ -22,7 +22,8 @@ object GridAutoFlowProps {
     __obj.asInstanceOf[GridAutoFlowProps[ThemeType]]
   }
   
-  extension [Self <: GridAutoFlowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridAutoFlowProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAutoFlowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridAutoFlowProps[ThemeType]) extends AnyVal {
     
     inline def setGridAutoFlow(value: ResponsiveValue[GridAutoFlow, ThemeType]): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     

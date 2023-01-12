@@ -25,7 +25,8 @@ object EventFilter {
     __obj.asInstanceOf[EventFilter]
   }
   
-  extension [Self <: EventFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

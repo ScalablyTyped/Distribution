@@ -21,7 +21,8 @@ object SpatialRecognitionStartedEventArgs {
     __obj.asInstanceOf[SpatialRecognitionStartedEventArgs]
   }
   
-  extension [Self <: SpatialRecognitionStartedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialRecognitionStartedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
     

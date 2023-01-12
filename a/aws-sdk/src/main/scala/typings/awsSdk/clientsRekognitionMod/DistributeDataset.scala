@@ -18,7 +18,8 @@ object DistributeDataset {
     __obj.asInstanceOf[DistributeDataset]
   }
   
-  extension [Self <: DistributeDataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributeDataset] (val x: Self) extends AnyVal {
     
     inline def setArn(value: DatasetArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }

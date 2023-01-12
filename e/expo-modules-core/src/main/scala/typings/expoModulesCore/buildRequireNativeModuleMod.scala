@@ -40,7 +40,8 @@ object buildRequireNativeModuleMod {
       __obj.asInstanceOf[ExpoObject]
     }
     
-    extension [Self <: ExpoObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoObject] (val x: Self) extends AnyVal {
       
       inline def setModules(value: StringDictionary[Any]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       

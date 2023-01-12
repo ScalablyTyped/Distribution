@@ -33,7 +33,8 @@ object ElasticInferenceAcceleratorAssociation {
     __obj.asInstanceOf[ElasticInferenceAcceleratorAssociation]
   }
   
-  extension [Self <: ElasticInferenceAcceleratorAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticInferenceAcceleratorAssociation] (val x: Self) extends AnyVal {
     
     inline def setElasticInferenceAcceleratorArn(value: String): Self = StObject.set(x, "ElasticInferenceAcceleratorArn", value.asInstanceOf[js.Any])
     

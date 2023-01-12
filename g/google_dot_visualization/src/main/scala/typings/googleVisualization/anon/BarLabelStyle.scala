@@ -28,7 +28,8 @@ object BarLabelStyle {
     __obj.asInstanceOf[BarLabelStyle]
   }
   
-  extension [Self <: BarLabelStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarLabelStyle] (val x: Self) extends AnyVal {
     
     inline def setBarLabelStyle(value: LabelStyle): Self = StObject.set(x, "barLabelStyle", value.asInstanceOf[js.Any])
     

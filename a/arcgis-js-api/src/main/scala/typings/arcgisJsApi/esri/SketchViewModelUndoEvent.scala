@@ -33,7 +33,8 @@ object SketchViewModelUndoEvent {
     __obj.asInstanceOf[SketchViewModelUndoEvent]
   }
   
-  extension [Self <: SketchViewModelUndoEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchViewModelUndoEvent] (val x: Self) extends AnyVal {
     
     inline def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     

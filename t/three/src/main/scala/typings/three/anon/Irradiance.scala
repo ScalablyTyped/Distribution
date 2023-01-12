@@ -18,7 +18,8 @@ object Irradiance {
     __obj.asInstanceOf[Irradiance]
   }
   
-  extension [Self <: Irradiance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Irradiance] (val x: Self) extends AnyVal {
     
     inline def setIrradiance(value: default): Self = StObject.set(x, "irradiance", value.asInstanceOf[js.Any])
     

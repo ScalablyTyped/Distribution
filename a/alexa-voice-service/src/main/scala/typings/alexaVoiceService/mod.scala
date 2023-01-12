@@ -185,7 +185,8 @@ object mod {
       __obj.asInstanceOf[AVSParams]
     }
     
-    extension [Self <: AVSParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AVSParams] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object mod {
       __obj.asInstanceOf[TokenResponse]
     }
     
-    extension [Self <: TokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
       
       inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
       

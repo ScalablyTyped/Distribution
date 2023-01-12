@@ -27,7 +27,8 @@ object distTooltipTriangleMod extends Shortcut {
       __obj.asInstanceOf[TriangleProps]
     }
     
-    extension [Self <: TriangleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangleProps] (val x: Self) extends AnyVal {
       
       inline def setIsDown(value: Boolean): Self = StObject.set(x, "isDown", value.asInstanceOf[js.Any])
       

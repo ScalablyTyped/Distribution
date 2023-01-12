@@ -180,7 +180,8 @@ object ClipHeight {
     __obj.asInstanceOf[ClipHeight]
   }
   
-  extension [Self <: ClipHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipHeight] (val x: Self) extends AnyVal {
     
     inline def setAria(value: Boolean): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

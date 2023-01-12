@@ -23,7 +23,8 @@ object DescribePipelineDefinitionForExecutionResponse {
     __obj.asInstanceOf[DescribePipelineDefinitionForExecutionResponse]
   }
   
-  extension [Self <: DescribePipelineDefinitionForExecutionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePipelineDefinitionForExecutionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

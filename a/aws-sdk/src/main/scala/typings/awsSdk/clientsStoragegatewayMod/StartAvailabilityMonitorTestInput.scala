@@ -15,7 +15,8 @@ object StartAvailabilityMonitorTestInput {
     __obj.asInstanceOf[StartAvailabilityMonitorTestInput]
   }
   
-  extension [Self <: StartAvailabilityMonitorTestInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAvailabilityMonitorTestInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }

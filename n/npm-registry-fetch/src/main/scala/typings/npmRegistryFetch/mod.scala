@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def `setAlways-auth`(value: Boolean): Self = StObject.set(x, "always-auth", value.asInstanceOf[js.Any])
       
@@ -514,7 +515,8 @@ object mod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -691,7 +693,8 @@ object mod {
       __obj.asInstanceOf[FetchRetryOptions]
     }
     
-    extension [Self <: FetchRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchRetries(value: Double): Self = StObject.set(x, "fetchRetries", value.asInstanceOf[js.Any])
       

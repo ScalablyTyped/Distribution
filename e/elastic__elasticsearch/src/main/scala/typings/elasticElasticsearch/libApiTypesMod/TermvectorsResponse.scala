@@ -26,7 +26,8 @@ object TermvectorsResponse {
     __obj.asInstanceOf[TermvectorsResponse]
   }
   
-  extension [Self <: TermvectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

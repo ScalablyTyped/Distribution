@@ -56,7 +56,8 @@ object ExposureControl {
     __obj.asInstanceOf[ExposureControl]
   }
   
-  extension [Self <: ExposureControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExposureControl] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DraggableRubric {
     __obj.asInstanceOf[DraggableRubric]
   }
   
-  extension [Self <: DraggableRubric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableRubric] (val x: Self) extends AnyVal {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     

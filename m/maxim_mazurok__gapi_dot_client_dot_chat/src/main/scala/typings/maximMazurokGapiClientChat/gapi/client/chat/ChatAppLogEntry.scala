@@ -22,7 +22,8 @@ object ChatAppLogEntry {
     __obj.asInstanceOf[ChatAppLogEntry]
   }
   
-  extension [Self <: ChatAppLogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatAppLogEntry] (val x: Self) extends AnyVal {
     
     inline def setDeployment(value: String): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Polyfill {
     __obj.asInstanceOf[Polyfill]
   }
   
-  extension [Self <: Polyfill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polyfill] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: PolyfillBlob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     

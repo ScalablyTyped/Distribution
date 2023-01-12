@@ -53,7 +53,8 @@ object libResultStyleMod {
       __obj.asInstanceOf[ResultStyle]
     }
     
-    extension [Self <: ResultStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultStyle] (val x: Self) extends AnyVal {
       
       inline def setButton(value: ViewStyle): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

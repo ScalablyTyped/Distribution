@@ -19,7 +19,8 @@ object AudioContextOptions {
     __obj.asInstanceOf[AudioContextOptions]
   }
   
-  extension [Self <: AudioContextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioContextOptions] (val x: Self) extends AnyVal {
     
     inline def setLatencyHint(value: AudioContextLatencyCategory | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteVocabularyFilterRequest {
     __obj.asInstanceOf[DeleteVocabularyFilterRequest]
   }
   
-  extension [Self <: DeleteVocabularyFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVocabularyFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setVocabularyFilterName(value: VocabularyFilterName): Self = StObject.set(x, "VocabularyFilterName", value.asInstanceOf[js.Any])
   }

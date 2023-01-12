@@ -28,7 +28,8 @@ object discriminatorstringmappin {
     __obj.asInstanceOf[discriminatorstringmappin]
   }
   
-  extension [Self <: discriminatorstringmappin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: discriminatorstringmappin] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: Record[String, SomeJTDSchemaType]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

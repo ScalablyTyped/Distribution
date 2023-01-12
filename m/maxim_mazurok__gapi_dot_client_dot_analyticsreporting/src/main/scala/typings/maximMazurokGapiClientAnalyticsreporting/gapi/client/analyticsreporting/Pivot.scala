@@ -41,7 +41,8 @@ object Pivot {
     __obj.asInstanceOf[Pivot]
   }
   
-  extension [Self <: Pivot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pivot] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilterClauses(value: js.Array[DimensionFilterClause]): Self = StObject.set(x, "dimensionFilterClauses", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  extension [Self <: Image](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     

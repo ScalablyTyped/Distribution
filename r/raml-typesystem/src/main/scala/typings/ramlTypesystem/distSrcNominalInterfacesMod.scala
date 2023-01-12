@@ -60,7 +60,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[IAnnotation]
     }
     
-    extension [Self <: IAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
       
       inline def setParameter(value: String => Any): Self = StObject.set(x, "parameter", js.Any.fromFunction1(value))
       
@@ -185,7 +186,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[IExpandableExample]
     }
     
-    extension [Self <: IExpandableExample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandableExample] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: () => StringDictionary[typings.ramlTypesystem.distSrcTypesystemInterfacesMod.IAnnotation]): Self = StObject.set(x, "annotations", js.Any.fromFunction0(value))
       
@@ -264,7 +266,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[INamedEntity]
     }
     
-    extension [Self <: INamedEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INamedEntity] (val x: Self) extends AnyVal {
       
       inline def setAddAnnotation(value: IAnnotation => Unit): Self = StObject.set(x, "addAnnotation", js.Any.fromFunction1(value))
       
@@ -297,7 +300,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[IPrintDetailsSettings]
     }
     
-    extension [Self <: IPrintDetailsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPrintDetailsSettings] (val x: Self) extends AnyVal {
       
       inline def setHideProperties(value: Boolean): Self = StObject.set(x, "hideProperties", value.asInstanceOf[js.Any])
       
@@ -406,7 +410,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[IProperty]
     }
     
-    extension [Self <: IProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: () => Any): Self = StObject.set(x, "defaultValue", js.Any.fromFunction0(value))
       
@@ -692,7 +697,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[ITyped]
     }
     
-    extension [Self <: ITyped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITyped] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: () => ITypeDefinition): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     }
@@ -744,7 +750,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[IUniverse]
     }
     
-    extension [Self <: IUniverse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUniverse] (val x: Self) extends AnyVal {
       
       inline def setMatched(value: () => StringDictionary[NamedId]): Self = StObject.set(x, "matched", js.Any.fromFunction0(value))
       
@@ -769,7 +776,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[NamedId]
     }
     
-    extension [Self <: NamedId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedId] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -797,7 +805,8 @@ object distSrcNominalInterfacesMod {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setGetMessage(value: () => String): Self = StObject.set(x, "getMessage", js.Any.fromFunction0(value))
       

@@ -33,7 +33,8 @@ object dxGanttStripLine {
     __obj.asInstanceOf[dxGanttStripLine]
   }
   
-  extension [Self <: dxGanttStripLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttStripLine] (val x: Self) extends AnyVal {
     
     inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     

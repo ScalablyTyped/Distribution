@@ -20,7 +20,8 @@ object VisualStudioCodeCredentialOptions {
     __obj.asInstanceOf[VisualStudioCodeCredentialOptions]
   }
   
-  extension [Self <: VisualStudioCodeCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualStudioCodeCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
     

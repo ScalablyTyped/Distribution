@@ -18,7 +18,8 @@ object TaskAgentPoolMaintenanceRetentionPolicy {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceRetentionPolicy]
   }
   
-  extension [Self <: TaskAgentPoolMaintenanceRetentionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolMaintenanceRetentionPolicy] (val x: Self) extends AnyVal {
     
     inline def setNumberOfHistoryRecordsToKeep(value: Double): Self = StObject.set(x, "numberOfHistoryRecordsToKeep", value.asInstanceOf[js.Any])
   }

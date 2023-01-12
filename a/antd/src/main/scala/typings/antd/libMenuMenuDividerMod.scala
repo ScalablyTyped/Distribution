@@ -29,7 +29,8 @@ object libMenuMenuDividerMod extends Shortcut {
       __obj.asInstanceOf[MenuDividerProps]
     }
     
-    extension [Self <: MenuDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerProps] (val x: Self) extends AnyVal {
       
       inline def setDashed(value: Boolean): Self = StObject.set(x, "dashed", value.asInstanceOf[js.Any])
       

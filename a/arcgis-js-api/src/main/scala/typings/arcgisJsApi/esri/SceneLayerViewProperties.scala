@@ -36,7 +36,8 @@ object SceneLayerViewProperties {
     __obj.asInstanceOf[SceneLayerViewProperties]
   }
   
-  extension [Self <: SceneLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

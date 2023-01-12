@@ -23,7 +23,8 @@ object DescribeTrafficMirrorSessionsResult {
     __obj.asInstanceOf[DescribeTrafficMirrorSessionsResult]
   }
   
-  extension [Self <: DescribeTrafficMirrorSessionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrafficMirrorSessionsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

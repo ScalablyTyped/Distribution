@@ -23,7 +23,8 @@ object DeleteFieldLevelEncryptionProfileRequest {
     __obj.asInstanceOf[DeleteFieldLevelEncryptionProfileRequest]
   }
   
-  extension [Self <: DeleteFieldLevelEncryptionProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFieldLevelEncryptionProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

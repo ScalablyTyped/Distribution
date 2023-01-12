@@ -19,7 +19,8 @@ object OmitUnblockPropschildren {
     __obj.asInstanceOf[OmitUnblockPropschildren]
   }
   
-  extension [Self <: OmitUnblockPropschildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitUnblockPropschildren] (val x: Self) extends AnyVal {
     
     inline def setSet(value: SetStateAction[SetBlock] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }

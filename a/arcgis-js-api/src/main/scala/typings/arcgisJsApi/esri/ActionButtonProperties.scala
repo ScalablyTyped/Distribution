@@ -22,7 +22,8 @@ object ActionButtonProperties {
     __obj.asInstanceOf[ActionButtonProperties]
   }
   
-  extension [Self <: ActionButtonProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionButtonProperties] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

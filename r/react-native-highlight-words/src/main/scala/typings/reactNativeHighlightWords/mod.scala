@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[HighlighterProps]
     }
     
-    extension [Self <: HighlighterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlighterProps] (val x: Self) extends AnyVal {
       
       inline def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
       

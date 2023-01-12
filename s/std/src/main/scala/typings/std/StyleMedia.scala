@@ -21,7 +21,8 @@ object StyleMedia {
     __obj.asInstanceOf[StyleMedia]
   }
   
-  extension [Self <: StyleMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleMedia] (val x: Self) extends AnyVal {
     
     inline def setMatchMedium(value: java.lang.String => scala.Boolean): Self = StObject.set(x, "matchMedium", js.Any.fromFunction1(value))
     

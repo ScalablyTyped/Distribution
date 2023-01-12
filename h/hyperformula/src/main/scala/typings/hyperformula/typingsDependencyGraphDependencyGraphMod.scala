@@ -271,7 +271,8 @@ object typingsDependencyGraphDependencyGraphMod {
       __obj.asInstanceOf[ArrayAffectingGraphChangeResult]
     }
     
-    extension [Self <: ArrayAffectingGraphChangeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayAffectingGraphChangeResult] (val x: Self) extends AnyVal {
       
       inline def setAffectedArrays(value: Set[ArrayVertex]): Self = StObject.set(x, "affectedArrays", value.asInstanceOf[js.Any])
     }
@@ -290,7 +291,8 @@ object typingsDependencyGraphDependencyGraphMod {
       __obj.asInstanceOf[EagerChangesGraphChangeResult]
     }
     
-    extension [Self <: EagerChangesGraphChangeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EagerChangesGraphChangeResult] (val x: Self) extends AnyVal {
       
       inline def setContentChanges(value: ContentChanges): Self = StObject.set(x, "contentChanges", value.asInstanceOf[js.Any])
     }

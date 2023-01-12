@@ -20,7 +20,8 @@ object OauthAuthenticatorRequest {
     __obj.asInstanceOf[OauthAuthenticatorRequest]
   }
   
-  extension [Self <: OauthAuthenticatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthAuthenticatorRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Authorization): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
   }

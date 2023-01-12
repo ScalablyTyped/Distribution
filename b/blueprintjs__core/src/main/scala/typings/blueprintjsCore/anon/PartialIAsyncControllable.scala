@@ -23,7 +23,8 @@ object PartialIAsyncControllable {
     __obj.asInstanceOf[PartialIAsyncControllable]
   }
   
-  extension [Self <: PartialIAsyncControllable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIAsyncControllable] (val x: Self) extends AnyVal {
     
     inline def setHasPendingUpdate(value: Boolean): Self = StObject.set(x, "hasPendingUpdate", value.asInstanceOf[js.Any])
     

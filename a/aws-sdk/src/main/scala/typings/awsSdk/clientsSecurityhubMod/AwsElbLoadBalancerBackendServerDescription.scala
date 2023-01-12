@@ -23,7 +23,8 @@ object AwsElbLoadBalancerBackendServerDescription {
     __obj.asInstanceOf[AwsElbLoadBalancerBackendServerDescription]
   }
   
-  extension [Self <: AwsElbLoadBalancerBackendServerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerBackendServerDescription] (val x: Self) extends AnyVal {
     
     inline def setInstancePort(value: Integer): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     

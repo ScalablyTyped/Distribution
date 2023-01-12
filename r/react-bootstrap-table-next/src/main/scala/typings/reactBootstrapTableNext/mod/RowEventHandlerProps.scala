@@ -27,7 +27,8 @@ object RowEventHandlerProps {
     __obj.asInstanceOf[RowEventHandlerProps[T]]
   }
   
-  extension [Self <: RowEventHandlerProps[?], T](x: Self & RowEventHandlerProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowEventHandlerProps[?], T] (val x: Self & RowEventHandlerProps[T]) extends AnyVal {
     
     inline def setOnClick(value: (/* e */ SyntheticEvent[Element, Event], T, /* rowIndex */ Double) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     

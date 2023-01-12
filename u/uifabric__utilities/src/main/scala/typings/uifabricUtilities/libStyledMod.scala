@@ -239,7 +239,8 @@ object libStyledMod {
       __obj.asInstanceOf[ICustomizableProps]
     }
     
-    extension [Self <: ICustomizableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizableProps] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -262,7 +263,8 @@ object libStyledMod {
       __obj.asInstanceOf[IPropsWithStyles[TStyleProps, TStyleSet]]
     }
     
-    extension [Self <: IPropsWithStyles[?, ?], TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */](x: Self & (IPropsWithStyles[TStyleProps, TStyleSet])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropsWithStyles[?, ?], TStyleProps, TStyleSet /* <: IStyleSet[TStyleSet] */] (val x: Self & (IPropsWithStyles[TStyleProps, TStyleSet])) extends AnyVal {
       
       inline def setStyles(value: IStyleFunctionOrObject[TStyleProps, TStyleSet]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

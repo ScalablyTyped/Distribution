@@ -34,7 +34,8 @@ object GoogleApiYouTubeVideoCategoryResource {
     __obj.asInstanceOf[GoogleApiYouTubeVideoCategoryResource]
   }
   
-  extension [Self <: GoogleApiYouTubeVideoCategoryResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubeVideoCategoryResource] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

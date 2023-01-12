@@ -40,7 +40,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[BindingLoggerSettings]
       }
       
-      extension [Self <: BindingLoggerSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BindingLoggerSettings] (val x: Self) extends AnyVal {
         
         inline def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
         
@@ -122,7 +123,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[LogEntry]
       }
       
-      extension [Self <: LogEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
         
         inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -157,7 +159,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[LoggerSettings]
       }
       
-      extension [Self <: LoggerSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoggerSettings] (val x: Self) extends AnyVal {
         
         inline def setRequest(value: RequestLoggerSettings): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
@@ -184,7 +187,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[RequestLoggerSettings]
       }
       
-      extension [Self <: RequestLoggerSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestLoggerSettings] (val x: Self) extends AnyVal {
         
         inline def setBindings(value: BindingLoggerSettings): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
         
@@ -215,7 +219,8 @@ object dtsInterfacesInterfacesMod {
         __obj.asInstanceOf[TargetLoggerSettings]
       }
       
-      extension [Self <: TargetLoggerSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TargetLoggerSettings] (val x: Self) extends AnyVal {
         
         inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
         

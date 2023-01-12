@@ -16,7 +16,8 @@ object ReleaseKeyResult {
     __obj.asInstanceOf[ReleaseKeyResult]
   }
   
-  extension [Self <: ReleaseKeyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseKeyResult] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

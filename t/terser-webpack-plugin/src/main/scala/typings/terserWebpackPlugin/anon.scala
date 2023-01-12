@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Col]
     }
     
-    extension [Self <: Col](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Implementation[T]]
     }
     
-    extension [Self <: Implementation[?], T](x: Self & Implementation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Implementation[?], T] (val x: Self & Implementation[T]) extends AnyVal {
       
       inline def setImplementation(value: MinimizerImplementation[T]): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object BinParam {
     __obj.asInstanceOf[BinParam]
   }
   
-  extension [Self <: BinParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinParam] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
   }

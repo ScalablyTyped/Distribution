@@ -41,7 +41,8 @@ object WorkerPool {
     __obj.asInstanceOf[WorkerPool]
   }
   
-  extension [Self <: WorkerPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
     
     inline def setPush(value: js.Function2[/* worker */ Worker, /* onComplete */ js.Function0[Unit], Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     

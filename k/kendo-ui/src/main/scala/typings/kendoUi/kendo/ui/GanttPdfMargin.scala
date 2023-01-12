@@ -21,7 +21,8 @@ object GanttPdfMargin {
     __obj.asInstanceOf[GanttPdfMargin]
   }
   
-  extension [Self <: GanttPdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttPdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

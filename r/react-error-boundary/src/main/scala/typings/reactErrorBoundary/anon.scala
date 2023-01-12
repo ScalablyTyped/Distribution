@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ComponentStack]
     }
     
-    extension [Self <: ComponentStack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentStack] (val x: Self) extends AnyVal {
       
       inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }

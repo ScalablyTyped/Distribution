@@ -104,7 +104,8 @@ object ClosestFacilitySolveResultProperties {
     __obj.asInstanceOf[ClosestFacilitySolveResultProperties]
   }
   
-  extension [Self <: ClosestFacilitySolveResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosestFacilitySolveResultProperties] (val x: Self) extends AnyVal {
     
     inline def setDirectionLines(value: FeatureSetProperties): Self = StObject.set(x, "directionLines", value.asInstanceOf[js.Any])
     

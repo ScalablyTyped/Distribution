@@ -115,7 +115,8 @@ object PersistenceOptions {
     __obj.asInstanceOf[PersistenceOptions]
   }
   
-  extension [Self <: PersistenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
     
     inline def setAccepts(value: PlainObject[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
     

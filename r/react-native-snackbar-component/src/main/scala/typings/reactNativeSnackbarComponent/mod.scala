@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[SnackbarComponentProps]
     }
     
-    extension [Self <: SnackbarComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarComponentProps] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: String): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

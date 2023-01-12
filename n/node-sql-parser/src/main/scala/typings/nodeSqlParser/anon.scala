@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Algorithm]
     }
     
-    extension [Self <: Algorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Algorithm] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: default | instant | inplace | copy): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Db]
     }
     
-    extension [Self <: Db](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Db] (val x: Self) extends AnyVal {
       
       inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Keyword]
     }
     
-    extension [Self <: Keyword](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keyword] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: `using`): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Lock]
     }
     
-    extension [Self <: Lock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
       
       inline def setKeyword(value: lock): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
@@ -152,7 +156,8 @@ object anon {
       __obj.asInstanceOf[Parentheses]
     }
     
-    extension [Self <: Parentheses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parentheses] (val x: Self) extends AnyVal {
       
       inline def setParentheses(value: Boolean): Self = StObject.set(x, "parentheses", value.asInstanceOf[js.Any])
       

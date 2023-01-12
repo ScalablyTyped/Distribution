@@ -16,7 +16,8 @@ object TextInputScrollEventData {
     __obj.asInstanceOf[TextInputScrollEventData]
   }
   
-  extension [Self <: TextInputScrollEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputScrollEventData] (val x: Self) extends AnyVal {
     
     inline def setContentOffset(value: X): Self = StObject.set(x, "contentOffset", value.asInstanceOf[js.Any])
   }

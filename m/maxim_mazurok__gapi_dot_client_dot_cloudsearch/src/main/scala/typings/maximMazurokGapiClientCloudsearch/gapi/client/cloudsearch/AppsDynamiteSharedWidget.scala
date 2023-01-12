@@ -77,7 +77,8 @@ object AppsDynamiteSharedWidget {
     __obj.asInstanceOf[AppsDynamiteSharedWidget]
   }
   
-  extension [Self <: AppsDynamiteSharedWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedWidget] (val x: Self) extends AnyVal {
     
     inline def setButtonList(value: AppsDynamiteSharedButtonList): Self = StObject.set(x, "buttonList", value.asInstanceOf[js.Any])
     

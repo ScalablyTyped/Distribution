@@ -28,7 +28,8 @@ object AwsEfsAccessPointPosixUserDetails {
     __obj.asInstanceOf[AwsEfsAccessPointPosixUserDetails]
   }
   
-  extension [Self <: AwsEfsAccessPointPosixUserDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEfsAccessPointPosixUserDetails] (val x: Self) extends AnyVal {
     
     inline def setGid(value: NonEmptyString): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     

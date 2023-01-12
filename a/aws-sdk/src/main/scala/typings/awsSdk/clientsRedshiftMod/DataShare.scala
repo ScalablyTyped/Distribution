@@ -38,7 +38,8 @@ object DataShare {
     __obj.asInstanceOf[DataShare]
   }
   
-  extension [Self <: DataShare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataShare] (val x: Self) extends AnyVal {
     
     inline def setAllowPubliclyAccessibleConsumers(value: Boolean): Self = StObject.set(x, "AllowPubliclyAccessibleConsumers", value.asInstanceOf[js.Any])
     

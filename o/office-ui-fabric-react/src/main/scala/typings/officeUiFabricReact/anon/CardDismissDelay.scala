@@ -37,7 +37,8 @@ object CardDismissDelay {
     __obj.asInstanceOf[CardDismissDelay]
   }
   
-  extension [Self <: CardDismissDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardDismissDelay] (val x: Self) extends AnyVal {
     
     inline def setCardDismissDelay(value: Double): Self = StObject.set(x, "cardDismissDelay", value.asInstanceOf[js.Any])
     

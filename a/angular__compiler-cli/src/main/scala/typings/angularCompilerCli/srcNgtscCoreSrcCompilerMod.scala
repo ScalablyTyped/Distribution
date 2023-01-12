@@ -436,7 +436,8 @@ object srcNgtscCoreSrcCompilerMod {
       __obj.asInstanceOf[FreshCompilationTicket_]
     }
     
-    extension [Self <: FreshCompilationTicket_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FreshCompilationTicket_] (val x: Self) extends AnyVal {
       
       inline def setEnableTemplateTypeChecker(value: Boolean): Self = StObject.set(x, "enableTemplateTypeChecker", value.asInstanceOf[js.Any])
       
@@ -480,7 +481,8 @@ object srcNgtscCoreSrcCompilerMod {
       __obj.asInstanceOf[IncrementalResourceCompilationTicket]
     }
     
-    extension [Self <: IncrementalResourceCompilationTicket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrementalResourceCompilationTicket] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: NgCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
@@ -531,7 +533,8 @@ object srcNgtscCoreSrcCompilerMod {
       __obj.asInstanceOf[IncrementalTypeScriptCompilationTicket]
     }
     
-    extension [Self <: IncrementalTypeScriptCompilationTicket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrementalTypeScriptCompilationTicket] (val x: Self) extends AnyVal {
       
       inline def setEnableTemplateTypeChecker(value: Boolean): Self = StObject.set(x, "enableTemplateTypeChecker", value.asInstanceOf[js.Any])
       

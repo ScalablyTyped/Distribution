@@ -26,7 +26,8 @@ object BlockToken {
     __obj.asInstanceOf[BlockToken]
   }
   
-  extension [Self <: BlockToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockToken] (val x: Self) extends AnyVal {
     
     inline def setMode(value: replace | prepend | append): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

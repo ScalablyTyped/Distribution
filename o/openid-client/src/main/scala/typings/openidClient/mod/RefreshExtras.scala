@@ -19,7 +19,8 @@ object RefreshExtras {
     __obj.asInstanceOf[RefreshExtras]
   }
   
-  extension [Self <: RefreshExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

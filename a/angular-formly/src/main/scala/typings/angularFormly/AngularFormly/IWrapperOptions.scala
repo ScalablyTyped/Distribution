@@ -35,7 +35,8 @@ object IWrapperOptions {
     __obj.asInstanceOf[IWrapperOptions]
   }
   
-  extension [Self <: IWrapperOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWrapperOptions] (val x: Self) extends AnyVal {
     
     inline def setApiCheck(value: StringDictionary[js.Function]): Self = StObject.set(x, "apiCheck", value.asInstanceOf[js.Any])
     

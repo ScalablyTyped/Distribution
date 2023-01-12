@@ -67,7 +67,8 @@ object Dotfiles {
     __obj.asInstanceOf[Dotfiles]
   }
   
-  extension [Self <: Dotfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dotfiles] (val x: Self) extends AnyVal {
     
     inline def setDotfiles(value: String): Self = StObject.set(x, "dotfiles", value.asInstanceOf[js.Any])
     

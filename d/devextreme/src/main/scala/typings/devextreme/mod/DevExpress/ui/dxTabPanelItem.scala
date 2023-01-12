@@ -38,7 +38,8 @@ object dxTabPanelItem {
     __obj.asInstanceOf[dxTabPanelItem]
   }
   
-  extension [Self <: dxTabPanelItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTabPanelItem] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IPFSFile {
     __obj.asInstanceOf[IPFSFile]
   }
   
-  extension [Self <: IPFSFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPFSFile] (val x: Self) extends AnyVal {
     
     inline def setContent(value: FileContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

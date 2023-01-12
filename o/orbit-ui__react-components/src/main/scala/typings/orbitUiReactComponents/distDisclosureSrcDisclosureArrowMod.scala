@@ -54,7 +54,8 @@ object distDisclosureSrcDisclosureArrowMod {
       __obj.asInstanceOf[InnerDisclosureArrowProps]
     }
     
-    extension [Self <: InnerDisclosureArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerDisclosureArrowProps] (val x: Self) extends AnyVal {
       
       inline def setForwardedRef(value: ForwardedRef[Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
       

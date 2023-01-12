@@ -97,7 +97,8 @@ object Folder {
     __obj.asInstanceOf[Folder]
   }
   
-  extension [Self <: Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails

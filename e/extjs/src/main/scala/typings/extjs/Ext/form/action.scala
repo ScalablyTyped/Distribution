@@ -84,7 +84,8 @@ object action {
       __obj.asInstanceOf[typings.extjs.Ext.form.action.IAction]
     }
     
-    extension [Self <: typings.extjs.Ext.form.action.IAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.form.action.IAction] (val x: Self) extends AnyVal {
       
       inline def setCLIENT_INVALID(value: String): Self = StObject.set(x, "CLIENT_INVALID", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object action {
       __obj.asInstanceOf[IStandardSubmit]
     }
     
-    extension [Self <: IStandardSubmit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStandardSubmit] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -245,7 +247,8 @@ object action {
       __obj.asInstanceOf[ISubmit]
     }
     
-    extension [Self <: ISubmit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubmit] (val x: Self) extends AnyVal {
       
       inline def setClientValidation(value: Boolean): Self = StObject.set(x, "clientValidation", value.asInstanceOf[js.Any])
       

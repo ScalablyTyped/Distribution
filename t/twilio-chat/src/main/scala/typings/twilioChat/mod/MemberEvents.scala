@@ -23,7 +23,8 @@ object MemberEvents {
     __obj.asInstanceOf[MemberEvents]
   }
   
-  extension [Self <: MemberEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberEvents] (val x: Self) extends AnyVal {
     
     inline def setTypingEnded(value: Member => Unit): Self = StObject.set(x, "typingEnded", js.Any.fromFunction1(value))
     

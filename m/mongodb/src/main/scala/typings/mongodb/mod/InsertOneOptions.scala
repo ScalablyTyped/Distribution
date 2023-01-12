@@ -21,7 +21,8 @@ object InsertOneOptions {
     __obj.asInstanceOf[InsertOneOptions]
   }
   
-  extension [Self <: InsertOneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOneOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     

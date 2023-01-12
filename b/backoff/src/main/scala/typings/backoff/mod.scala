@@ -642,7 +642,8 @@ object mod {
       __obj.asInstanceOf[ExponentialOptions]
     }
     
-    extension [Self <: ExponentialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExponentialOptions] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
@@ -718,7 +719,8 @@ object mod {
       __obj.asInstanceOf[FunctionCallArgs[E, R1, R2, R3]]
     }
     
-    extension [Self <: FunctionCallArgs[?, ?, ?, ?], E, R1, R2, R3](x: Self & (FunctionCallArgs[E, R1, R2, R3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCallArgs[?, ?, ?, ?], E, R1, R2, R3] (val x: Self & (FunctionCallArgs[E, R1, R2, R3])) extends AnyVal {
       
       inline def setAddListener(
         value: (callback, js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]) => FunctionCallArgs[E, R1, R2, R3]
@@ -815,7 +817,8 @@ object mod {
       __obj.asInstanceOf[FunctionCallArgsAny]
     }
     
-    extension [Self <: FunctionCallArgsAny](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCallArgsAny] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (callback, js.Function1[/* results */ js.Array[Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -890,7 +893,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object HitsProps {
     __obj.asInstanceOf[HitsProps[T]]
   }
   
-  extension [Self <: HitsProps[?], T](x: Self & HitsProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitsProps[?], T] (val x: Self & HitsProps[T]) extends AnyVal {
     
     inline def setHitComponent(value: ComponentType[Hit[T]]): Self = StObject.set(x, "hitComponent", value.asInstanceOf[js.Any])
     

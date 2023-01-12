@@ -46,7 +46,8 @@ object HeadroomOptions {
     __obj.asInstanceOf[HeadroomOptions]
   }
   
-  extension [Self <: HeadroomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadroomOptions] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: Bottom): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

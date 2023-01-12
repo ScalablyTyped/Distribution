@@ -20,7 +20,8 @@ object DataProviderAddOperationEventDetail {
     __obj.asInstanceOf[DataProviderAddOperationEventDetail[K, D]]
   }
   
-  extension [Self <: DataProviderAddOperationEventDetail[?, ?], K, D](x: Self & (DataProviderAddOperationEventDetail[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProviderAddOperationEventDetail[?, ?], K, D] (val x: Self & (DataProviderAddOperationEventDetail[K, D])) extends AnyVal {
     
     inline def setAddBeforeKeys(value: js.Array[K]): Self = StObject.set(x, "addBeforeKeys", value.asInstanceOf[js.Any])
     

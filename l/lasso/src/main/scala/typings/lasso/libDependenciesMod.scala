@@ -33,7 +33,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[Bundle]
     }
     
-    extension [Self <: Bundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[DependencyConfig | String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object libDependenciesMod {
       __obj.asInstanceOf[DependencyConfig]
     }
     
-    extension [Self <: DependencyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyConfig] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Crossorigin): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

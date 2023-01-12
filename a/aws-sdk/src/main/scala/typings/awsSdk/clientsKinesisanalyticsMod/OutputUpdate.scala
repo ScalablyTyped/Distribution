@@ -43,7 +43,8 @@ object OutputUpdate {
     __obj.asInstanceOf[OutputUpdate]
   }
   
-  extension [Self <: OutputUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputUpdate] (val x: Self) extends AnyVal {
     
     inline def setDestinationSchemaUpdate(value: DestinationSchema): Self = StObject.set(x, "DestinationSchemaUpdate", value.asInstanceOf[js.Any])
     

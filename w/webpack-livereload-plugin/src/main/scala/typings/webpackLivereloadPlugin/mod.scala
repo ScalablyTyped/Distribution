@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[LiveReloadPlugin]
     }
     
-    extension [Self <: LiveReloadPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveReloadPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppendScriptTag(value: Boolean): Self = StObject.set(x, "appendScriptTag", value.asInstanceOf[js.Any])
       

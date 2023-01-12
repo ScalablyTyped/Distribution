@@ -20,7 +20,8 @@ object UpdateSmsChannelRequest {
     __obj.asInstanceOf[UpdateSmsChannelRequest]
   }
   
-  extension [Self <: UpdateSmsChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSmsChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

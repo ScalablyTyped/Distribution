@@ -23,7 +23,8 @@ object IMediaEncodingProfile {
     __obj.asInstanceOf[IMediaEncodingProfile]
   }
   
-  extension [Self <: IMediaEncodingProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaEncodingProfile] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: AudioEncodingProperties): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

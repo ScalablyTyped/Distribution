@@ -16,7 +16,8 @@ object TargetHyperlink {
     __obj.asInstanceOf[TargetHyperlink]
   }
   
-  extension [Self <: TargetHyperlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetHyperlink] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Hyperlink): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }

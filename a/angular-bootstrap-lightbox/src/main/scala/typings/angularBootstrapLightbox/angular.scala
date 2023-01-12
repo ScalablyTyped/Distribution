@@ -28,7 +28,8 @@ object angular {
           __obj.asInstanceOf[IImageDimensionLimits]
         }
         
-        extension [Self <: IImageDimensionLimits](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IImageDimensionLimits] (val x: Self) extends AnyVal {
           
           inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
           
@@ -65,7 +66,8 @@ object angular {
           __obj.asInstanceOf[IImageDimensionParameter]
         }
         
-        extension [Self <: IImageDimensionParameter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IImageDimensionParameter] (val x: Self) extends AnyVal {
           
           inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
           
@@ -96,7 +98,8 @@ object angular {
           __obj.asInstanceOf[ILightBoxProvider]
         }
         
-        extension [Self <: ILightBoxProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ILightBoxProvider] (val x: Self) extends AnyVal {
           
           inline def setCalculateImageDimensionLimits(value: IImageDimensionParameter => IImageDimensionLimits): Self = StObject.set(x, "calculateImageDimensionLimits", js.Any.fromFunction1(value))
           
@@ -132,7 +135,8 @@ object angular {
           __obj.asInstanceOf[ILightboxImageInfo]
         }
         
-        extension [Self <: ILightboxImageInfo](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ILightboxImageInfo] (val x: Self) extends AnyVal {
           
           inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
           
@@ -163,7 +167,8 @@ object angular {
           __obj.asInstanceOf[IModalDimensions]
         }
         
-        extension [Self <: IModalDimensions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IModalDimensions] (val x: Self) extends AnyVal {
           
           inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
@@ -188,7 +193,8 @@ object angular {
           __obj.asInstanceOf[IModalDimensionsParameter]
         }
         
-        extension [Self <: IModalDimensionsParameter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IModalDimensionsParameter] (val x: Self) extends AnyVal {
           
           inline def setImageDisplayHeight(value: Double): Self = StObject.set(x, "imageDisplayHeight", value.asInstanceOf[js.Any])
           

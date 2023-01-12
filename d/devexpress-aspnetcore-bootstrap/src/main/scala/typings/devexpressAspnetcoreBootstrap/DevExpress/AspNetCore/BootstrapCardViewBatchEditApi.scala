@@ -53,7 +53,8 @@ object BootstrapCardViewBatchEditApi {
     __obj.asInstanceOf[BootstrapCardViewBatchEditApi]
   }
   
-  extension [Self <: BootstrapCardViewBatchEditApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapCardViewBatchEditApi] (val x: Self) extends AnyVal {
     
     inline def setAddNewCard(value: () => Unit): Self = StObject.set(x, "addNewCard", js.Any.fromFunction0(value))
     

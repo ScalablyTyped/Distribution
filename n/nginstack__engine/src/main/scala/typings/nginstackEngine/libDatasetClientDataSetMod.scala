@@ -215,7 +215,8 @@ object libDatasetClientDataSetMod {
       __obj.asInstanceOf[ClientDataSet]
     }
     
-    extension [Self <: ClientDataSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDataSet] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: () => Unit): Self = StObject.set(x, "append", js.Any.fromFunction0(value))
       

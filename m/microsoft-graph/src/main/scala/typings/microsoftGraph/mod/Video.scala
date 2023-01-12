@@ -43,7 +43,8 @@ object Video {
     __obj.asInstanceOf[Video]
   }
   
-  extension [Self <: Video](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Video] (val x: Self) extends AnyVal {
     
     inline def setAudioBitsPerSample(value: NullableOption[Double]): Self = StObject.set(x, "audioBitsPerSample", value.asInstanceOf[js.Any])
     

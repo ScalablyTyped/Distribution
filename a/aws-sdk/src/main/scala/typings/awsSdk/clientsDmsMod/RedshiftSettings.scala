@@ -163,7 +163,8 @@ object RedshiftSettings {
     __obj.asInstanceOf[RedshiftSettings]
   }
   
-  extension [Self <: RedshiftSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftSettings] (val x: Self) extends AnyVal {
     
     inline def setAcceptAnyDate(value: BooleanOptional): Self = StObject.set(x, "AcceptAnyDate", value.asInstanceOf[js.Any])
     

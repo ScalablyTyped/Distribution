@@ -20,7 +20,8 @@ object IRoute {
     __obj.asInstanceOf[IRoute]
   }
   
-  extension [Self <: IRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
     
     inline def setRouteLegs(value: js.Array[IRouteLeg]): Self = StObject.set(x, "routeLegs", value.asInstanceOf[js.Any])
     

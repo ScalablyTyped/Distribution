@@ -1926,7 +1926,8 @@ object mod {
       __obj.asInstanceOf[ElementARIAAttrs]
     }
     
-    extension [Self <: ElementARIAAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementARIAAttrs] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -2894,7 +2895,8 @@ object mod {
       __obj.asInstanceOf[ElementAttrs]
     }
     
-    extension [Self <: ElementAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementAttrs] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -3976,7 +3978,8 @@ object mod {
       __obj.asInstanceOf[ElementBaseAttrs]
     }
     
-    extension [Self <: ElementBaseAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementBaseAttrs] (val x: Self) extends AnyVal {
       
       inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
       
@@ -4516,7 +4519,8 @@ object mod {
       __obj.asInstanceOf[ElementEventAttrs]
     }
     
-    extension [Self <: ElementEventAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementEventAttrs] (val x: Self) extends AnyVal {
       
       inline def setOnabort(value: js.ThisFunction1[/* this */ HTMLElement, /* event */ UIEvent, Any]): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
@@ -5013,7 +5017,8 @@ object mod {
       __obj.asInstanceOf[ElementEventMap]
     }
     
-    extension [Self <: ElementEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementEventMap] (val x: Self) extends AnyVal {
       
       inline def setOnabort(value: UIEvent): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
@@ -5827,7 +5832,8 @@ object mod {
       __obj.asInstanceOf[ElementInlineStyle]
     }
     
-    extension [Self <: ElementInlineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementInlineStyle] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(value: String): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -7198,7 +7204,8 @@ object mod {
       __obj.asInstanceOf[ElementSpecialAttrs]
     }
     
-    extension [Self <: ElementSpecialAttrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementSpecialAttrs] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

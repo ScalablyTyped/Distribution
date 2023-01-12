@@ -43,7 +43,8 @@ object TemplateSendOptions {
     __obj.asInstanceOf[TemplateSendOptions]
   }
   
-  extension [Self <: TemplateSendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateSendOptions] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

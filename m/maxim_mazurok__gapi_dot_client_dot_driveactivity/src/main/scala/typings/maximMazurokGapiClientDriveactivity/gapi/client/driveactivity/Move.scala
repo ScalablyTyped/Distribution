@@ -19,7 +19,8 @@ object Move {
     __obj.asInstanceOf[Move]
   }
   
-  extension [Self <: Move](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
     
     inline def setAddedParents(value: js.Array[TargetReference]): Self = StObject.set(x, "addedParents", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PanelBarEvent {
     __obj.asInstanceOf[PanelBarEvent]
   }
   
-  extension [Self <: PanelBarEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

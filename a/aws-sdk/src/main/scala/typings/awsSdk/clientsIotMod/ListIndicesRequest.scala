@@ -23,7 +23,8 @@ object ListIndicesRequest {
     __obj.asInstanceOf[ListIndicesRequest]
   }
   
-  extension [Self <: ListIndicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIndicesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: QueryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

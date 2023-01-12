@@ -209,7 +209,8 @@ object libComponentsContextualMenuContextualMenuItemWrapperContextualMenuItemWra
       __obj.asInstanceOf[IContextualMenuItemWrapperProps]
     }
     
-    extension [Self <: IContextualMenuItemWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuItemWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: IMenuItemClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

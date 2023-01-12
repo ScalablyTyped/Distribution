@@ -36,7 +36,8 @@ object typesValidationSchemaValidationSchemaMod {
       __obj.asInstanceOf[ValidationSchema]
     }
     
-    extension [Self <: ValidationSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationSchema] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

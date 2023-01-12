@@ -28,7 +28,8 @@ object libSchedulerSpeedMod {
       __obj.asInstanceOf[SpeedActor]
     }
     
-    extension [Self <: SpeedActor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeedActor] (val x: Self) extends AnyVal {
       
       inline def setGetSpeed(value: () => Double): Self = StObject.set(x, "getSpeed", js.Any.fromFunction0(value))
     }

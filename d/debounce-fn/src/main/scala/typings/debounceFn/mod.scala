@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[BeforeOptions]
     }
     
-    extension [Self <: BeforeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOptions] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: `true`): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[NoBeforeNoAfterOptions]
     }
     
-    extension [Self <: NoBeforeNoAfterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoBeforeNoAfterOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: `false`): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: Boolean): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

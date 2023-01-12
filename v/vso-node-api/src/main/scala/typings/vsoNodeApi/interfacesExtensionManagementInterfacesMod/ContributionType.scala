@@ -38,7 +38,8 @@ object ContributionType {
     __obj.asInstanceOf[ContributionType]
   }
   
-  extension [Self <: ContributionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionType] (val x: Self) extends AnyVal {
     
     inline def setIndexed(value: Boolean): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object IWaitForConfig {
     __obj.asInstanceOf[IWaitForConfig]
   }
   
-  extension [Self <: IWaitForConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWaitForConfig] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object TargetInfo {
     __obj.asInstanceOf[TargetInfo]
   }
   
-  extension [Self <: TargetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetInfo] (val x: Self) extends AnyVal {
     
     inline def setAttached(value: Boolean): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
     

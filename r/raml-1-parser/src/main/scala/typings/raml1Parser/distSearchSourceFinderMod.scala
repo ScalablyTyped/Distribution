@@ -41,7 +41,8 @@ object distSearchSourceFinderMod {
       __obj.asInstanceOf[IHighLevelSourceProvider]
     }
     
-    extension [Self <: IHighLevelSourceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighLevelSourceProvider] (val x: Self) extends AnyVal {
       
       inline def setGetSource(value: () => IParseResult): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     }

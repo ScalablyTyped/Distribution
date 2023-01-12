@@ -313,7 +313,8 @@ object sapUiCommonsFormattedTextViewMod {
       __obj.asInstanceOf[FormattedTextViewSettings]
     }
     
-    extension [Self <: FormattedTextViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedTextViewSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleRole(
         value: AccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AccessibleRole * / any */ String) | PropertyBindingInfo

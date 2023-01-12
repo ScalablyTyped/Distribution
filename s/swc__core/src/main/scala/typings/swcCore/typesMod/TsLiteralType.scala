@@ -23,7 +23,8 @@ object TsLiteralType {
     __obj.asInstanceOf[TsLiteralType]
   }
   
-  extension [Self <: TsLiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsLiteralType] (val x: Self) extends AnyVal {
     
     inline def setLiteral(value: TsLiteral): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     

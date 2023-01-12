@@ -23,7 +23,8 @@ object PrefixListAssociation {
     __obj.asInstanceOf[PrefixListAssociation]
   }
   
-  extension [Self <: PrefixListAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixListAssociation] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

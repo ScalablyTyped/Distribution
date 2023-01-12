@@ -20,7 +20,8 @@ object DateInterval {
     __obj.asInstanceOf[DateInterval]
   }
   
-  extension [Self <: DateInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateInterval] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Date): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

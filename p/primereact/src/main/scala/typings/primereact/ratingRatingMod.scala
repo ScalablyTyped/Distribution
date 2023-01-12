@@ -145,7 +145,8 @@ object ratingRatingMod {
       __obj.asInstanceOf[RatingChangeParams]
     }
     
-    extension [Self <: RatingChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object ratingRatingMod {
       __obj.asInstanceOf[RatingChangeTargetOptions]
     }
     
-    extension [Self <: RatingChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -646,7 +648,8 @@ object ratingRatingMod {
       __obj.asInstanceOf[RatingProps]
     }
     
-    extension [Self <: RatingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatingProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

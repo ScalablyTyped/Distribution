@@ -19,7 +19,8 @@ object WebServerConfig {
     __obj.asInstanceOf[WebServerConfig]
   }
   
-  extension [Self <: WebServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerConfig] (val x: Self) extends AnyVal {
     
     inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     

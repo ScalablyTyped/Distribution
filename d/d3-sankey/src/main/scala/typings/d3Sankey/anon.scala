@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[SankeyLink]
     }
     
-    extension [Self <: SankeyLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLink] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object anon {
       __obj.asInstanceOf[SankeyLinkIndex]
     }
     
-    extension [Self <: SankeyLinkIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyLinkIndex] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object anon {
       __obj.asInstanceOf[SankeyNode]
     }
     
-    extension [Self <: SankeyNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyNode] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object anon {
       __obj.asInstanceOf[SankeyNodeDepth]
     }
     
-    extension [Self <: SankeyNodeDepth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyNodeDepth] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

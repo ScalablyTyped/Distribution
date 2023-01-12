@@ -23,7 +23,8 @@ object CodeDestination {
     __obj.asInstanceOf[CodeDestination]
   }
   
-  extension [Self <: CodeDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeDestination] (val x: Self) extends AnyVal {
     
     inline def setCodeCommit(value: CodeCommitCodeDestination): Self = StObject.set(x, "codeCommit", value.asInstanceOf[js.Any])
     

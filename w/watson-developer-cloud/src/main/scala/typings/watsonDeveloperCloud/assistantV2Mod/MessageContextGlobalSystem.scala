@@ -23,7 +23,8 @@ object MessageContextGlobalSystem {
     __obj.asInstanceOf[MessageContextGlobalSystem]
   }
   
-  extension [Self <: MessageContextGlobalSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageContextGlobalSystem] (val x: Self) extends AnyVal {
     
     inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     

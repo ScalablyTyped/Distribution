@@ -28,7 +28,8 @@ object DescribeHubResponse {
     __obj.asInstanceOf[DescribeHubResponse]
   }
   
-  extension [Self <: DescribeHubResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHubResponse] (val x: Self) extends AnyVal {
     
     inline def setAutoEnableControls(value: Boolean): Self = StObject.set(x, "AutoEnableControls", value.asInstanceOf[js.Any])
     

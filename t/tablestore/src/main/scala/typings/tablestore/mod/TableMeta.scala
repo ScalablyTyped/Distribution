@@ -21,7 +21,8 @@ object TableMeta {
     __obj.asInstanceOf[TableMeta]
   }
   
-  extension [Self <: TableMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableMeta] (val x: Self) extends AnyVal {
     
     inline def setDefinedColumn(value: js.Array[Type]): Self = StObject.set(x, "definedColumn", value.asInstanceOf[js.Any])
     

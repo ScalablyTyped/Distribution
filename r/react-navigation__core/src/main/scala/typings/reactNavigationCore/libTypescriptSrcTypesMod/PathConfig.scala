@@ -26,7 +26,8 @@ object PathConfig {
     __obj.asInstanceOf[PathConfig[ParamList]]
   }
   
-  extension [Self <: PathConfig[?], ParamList /* <: js.Object */](x: Self & PathConfig[ParamList]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathConfig[?], ParamList /* <: js.Object */] (val x: Self & PathConfig[ParamList]) extends AnyVal {
     
     inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

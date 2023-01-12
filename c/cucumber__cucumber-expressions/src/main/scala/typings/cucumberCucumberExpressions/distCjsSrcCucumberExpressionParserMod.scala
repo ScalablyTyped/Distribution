@@ -28,7 +28,8 @@ object distCjsSrcCucumberExpressionParserMod {
       __obj.asInstanceOf[CucumberExpressionParser]
     }
     
-    extension [Self <: CucumberExpressionParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CucumberExpressionParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => Node): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     }

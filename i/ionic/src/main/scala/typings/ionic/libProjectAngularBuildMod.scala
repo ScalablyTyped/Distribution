@@ -53,7 +53,8 @@ object libProjectAngularBuildMod {
       __obj.asInstanceOf[AngularBuildRunnerDeps]
     }
     
-    extension [Self <: AngularBuildRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularBuildRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }

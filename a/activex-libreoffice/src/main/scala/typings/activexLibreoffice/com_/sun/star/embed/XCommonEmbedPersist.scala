@@ -55,7 +55,8 @@ object XCommonEmbedPersist {
     __obj.asInstanceOf[XCommonEmbedPersist]
   }
   
-  extension [Self <: XCommonEmbedPersist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCommonEmbedPersist] (val x: Self) extends AnyVal {
     
     inline def setIsReadonly(value: () => Boolean): Self = StObject.set(x, "isReadonly", js.Any.fromFunction0(value))
     

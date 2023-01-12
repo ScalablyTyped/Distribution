@@ -17,7 +17,8 @@ object ApplicationjsonReviewrequester {
     __obj.asInstanceOf[ApplicationjsonReviewrequester]
   }
   
-  extension [Self <: ApplicationjsonReviewrequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonReviewrequester] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Reviewrequester): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -44,7 +44,8 @@ object PricingExpression {
     __obj.asInstanceOf[PricingExpression]
   }
   
-  extension [Self <: PricingExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PricingExpression] (val x: Self) extends AnyVal {
     
     inline def setBaseUnit(value: String): Self = StObject.set(x, "baseUnit", value.asInstanceOf[js.Any])
     

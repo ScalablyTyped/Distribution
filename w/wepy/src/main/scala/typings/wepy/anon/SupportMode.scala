@@ -15,7 +15,8 @@ object SupportMode {
     __obj.asInstanceOf[SupportMode]
   }
   
-  extension [Self <: SupportMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportMode] (val x: Self) extends AnyVal {
     
     inline def setSupportMode(value: js.Array[String]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
     

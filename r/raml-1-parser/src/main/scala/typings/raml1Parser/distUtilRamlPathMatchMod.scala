@@ -30,7 +30,8 @@ object distUtilRamlPathMatchMod {
       __obj.asInstanceOf[MatchResult]
     }
     
-    extension [Self <: MatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distUtilRamlPathMatchMod {
       __obj.asInstanceOf[OptionsObject]
     }
     
-    extension [Self <: OptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsObject] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

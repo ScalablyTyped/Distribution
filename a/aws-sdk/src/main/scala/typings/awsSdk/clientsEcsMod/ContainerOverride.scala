@@ -53,7 +53,8 @@ object ContainerOverride {
     __obj.asInstanceOf[ContainerOverride]
   }
   
-  extension [Self <: ContainerOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerOverride] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

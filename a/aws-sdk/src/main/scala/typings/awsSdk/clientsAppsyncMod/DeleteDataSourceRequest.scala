@@ -23,7 +23,8 @@ object DeleteDataSourceRequest {
     __obj.asInstanceOf[DeleteDataSourceRequest]
   }
   
-  extension [Self <: DeleteDataSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     

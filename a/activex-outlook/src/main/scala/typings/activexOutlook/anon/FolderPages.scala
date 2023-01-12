@@ -18,7 +18,8 @@ object FolderPages {
     __obj.asInstanceOf[FolderPages]
   }
   
-  extension [Self <: FolderPages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderPages] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     

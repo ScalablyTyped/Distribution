@@ -26,7 +26,8 @@ object EnvironmentVariable {
     __obj.asInstanceOf[EnvironmentVariable[T]]
   }
   
-  extension [Self <: EnvironmentVariable[?], T](x: Self & EnvironmentVariable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentVariable[?], T] (val x: Self & EnvironmentVariable[T]) extends AnyVal {
     
     inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

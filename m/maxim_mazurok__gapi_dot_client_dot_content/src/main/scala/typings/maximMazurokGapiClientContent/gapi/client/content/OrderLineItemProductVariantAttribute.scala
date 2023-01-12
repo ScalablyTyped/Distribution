@@ -19,7 +19,8 @@ object OrderLineItemProductVariantAttribute {
     __obj.asInstanceOf[OrderLineItemProductVariantAttribute]
   }
   
-  extension [Self <: OrderLineItemProductVariantAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderLineItemProductVariantAttribute] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

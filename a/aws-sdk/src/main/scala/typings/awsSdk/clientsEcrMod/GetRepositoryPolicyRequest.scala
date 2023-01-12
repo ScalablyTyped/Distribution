@@ -23,7 +23,8 @@ object GetRepositoryPolicyRequest {
     __obj.asInstanceOf[GetRepositoryPolicyRequest]
   }
   
-  extension [Self <: GetRepositoryPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRepositoryPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     

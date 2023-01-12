@@ -18,7 +18,8 @@ object MonitorInstancesResult {
     __obj.asInstanceOf[MonitorInstancesResult]
   }
   
-  extension [Self <: MonitorInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceMonitorings(value: InstanceMonitoringList): Self = StObject.set(x, "InstanceMonitorings", value.asInstanceOf[js.Any])
     

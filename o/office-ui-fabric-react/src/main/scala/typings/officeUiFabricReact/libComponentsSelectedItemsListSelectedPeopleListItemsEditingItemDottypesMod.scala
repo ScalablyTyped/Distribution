@@ -31,7 +31,8 @@ object libComponentsSelectedItemsListSelectedPeopleListItemsEditingItemDottypesM
       __obj.asInstanceOf[IEditingSelectedPeopleItemProps]
     }
     
-    extension [Self <: IEditingSelectedPeopleItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditingSelectedPeopleItemProps] (val x: Self) extends AnyVal {
       
       inline def setFloatingPickerProps(value: IBaseFloatingPickerProps[IPersonaProps]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libComponentsSelectedItemsListSelectedPeopleListItemsEditingItemDottypesM
       __obj.asInstanceOf[IEditingSelectedPeopleItemStyles]
     }
     
-    extension [Self <: IEditingSelectedPeopleItemStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditingSelectedPeopleItemStyles] (val x: Self) extends AnyVal {
       
       inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object Screen {
     __obj.asInstanceOf[Screen]
   }
   
-  extension [Self <: Screen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screen] (val x: Self) extends AnyVal {
     
     inline def setAvailHeight(value: Double): Self = StObject.set(x, "availHeight", value.asInstanceOf[js.Any])
     

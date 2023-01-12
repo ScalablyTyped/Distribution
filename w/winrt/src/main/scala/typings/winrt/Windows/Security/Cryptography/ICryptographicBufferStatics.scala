@@ -48,7 +48,8 @@ object ICryptographicBufferStatics {
     __obj.asInstanceOf[ICryptographicBufferStatics]
   }
   
-  extension [Self <: ICryptographicBufferStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICryptographicBufferStatics] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: (IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     

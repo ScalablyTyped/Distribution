@@ -36,7 +36,8 @@ object Win32LobAppRegistryRule {
     __obj.asInstanceOf[Win32LobAppRegistryRule]
   }
   
-  extension [Self <: Win32LobAppRegistryRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Win32LobAppRegistryRule] (val x: Self) extends AnyVal {
     
     inline def setCheck32BitOn64System(value: Boolean): Self = StObject.set(x, "check32BitOn64System", value.asInstanceOf[js.Any])
     

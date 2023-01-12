@@ -19,7 +19,8 @@ object MimeContent {
     __obj.asInstanceOf[MimeContent]
   }
   
-  extension [Self <: MimeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MimeContent] (val x: Self) extends AnyVal {
     
     inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

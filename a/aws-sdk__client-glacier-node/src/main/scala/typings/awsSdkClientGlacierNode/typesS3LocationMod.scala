@@ -72,7 +72,8 @@ object typesS3LocationMod {
       __obj.asInstanceOf[S3Location]
     }
     
-    extension [Self <: S3Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Location] (val x: Self) extends AnyVal {
       
       inline def setAccessControlList(value: js.Array[Grant] | js.Iterable[Grant]): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object typesS3LocationMod {
       __obj.asInstanceOf[UnmarshalledS3Location]
     }
     
-    extension [Self <: UnmarshalledS3Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledS3Location] (val x: Self) extends AnyVal {
       
       inline def setAccessControlList(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
       

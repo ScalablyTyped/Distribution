@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[PartialIEffects]
     }
     
-    extension [Self <: PartialIEffects](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIEffects] (val x: Self) extends AnyVal {
       
       inline def setElevation16(value: String): Self = StObject.set(x, "elevation16", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[PartialIFontStyles]
     }
     
-    extension [Self <: PartialIFontStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIFontStyles] (val x: Self) extends AnyVal {
       
       inline def setLarge(value: IRawStyle): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
       
@@ -266,7 +268,8 @@ object anon {
       __obj.asInstanceOf[PartialIPalette]
     }
     
-    extension [Self <: PartialIPalette](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIPalette] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       
@@ -686,7 +689,8 @@ object anon {
       __obj.asInstanceOf[PartialISemanticColors]
     }
     
-    extension [Self <: PartialISemanticColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialISemanticColors] (val x: Self) extends AnyVal {
       
       inline def setAccentButtonBackground(value: String): Self = StObject.set(x, "accentButtonBackground", value.asInstanceOf[js.Any])
       
@@ -1122,7 +1126,8 @@ object anon {
       __obj.asInstanceOf[PartialISpacing]
     }
     
-    extension [Self <: PartialISpacing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialISpacing] (val x: Self) extends AnyVal {
       
       inline def setL1(value: String): Self = StObject.set(x, "l1", value.asInstanceOf[js.Any])
       
@@ -1164,7 +1169,8 @@ object anon {
       __obj.asInstanceOf[PinISchemeNamesIScheme]
     }
     
-    extension [Self <: PinISchemeNamesIScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinISchemeNamesIScheme] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: IScheme): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

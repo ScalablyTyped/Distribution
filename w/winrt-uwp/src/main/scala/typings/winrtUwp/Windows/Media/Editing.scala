@@ -115,7 +115,8 @@ object Editing {
       __obj.asInstanceOf[BackgroundAudioTrack]
     }
     
-    extension [Self <: BackgroundAudioTrack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundAudioTrack] (val x: Self) extends AnyVal {
       
       inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object Editing {
       __obj.asInstanceOf[EmbeddedAudioTrack]
     }
     
-    extension [Self <: EmbeddedAudioTrack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbeddedAudioTrack] (val x: Self) extends AnyVal {
       
       inline def setGetAudioEncodingProperties(value: () => AudioEncodingProperties): Self = StObject.set(x, "getAudioEncodingProperties", js.Any.fromFunction0(value))
     }
@@ -225,7 +227,8 @@ object Editing {
       __obj.asInstanceOf[MediaClip]
     }
     
-    extension [Self <: MediaClip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaClip] (val x: Self) extends AnyVal {
       
       inline def setAudioEffectDefinitions(value: IVector[IAudioEffectDefinition]): Self = StObject.set(x, "audioEffectDefinitions", value.asInstanceOf[js.Any])
       
@@ -389,7 +392,8 @@ object Editing {
       __obj.asInstanceOf[MediaOverlay]
     }
     
-    extension [Self <: MediaOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaOverlay] (val x: Self) extends AnyVal {
       
       inline def setAudioEnabled(value: Boolean): Self = StObject.set(x, "audioEnabled", value.asInstanceOf[js.Any])
       
@@ -419,7 +423,8 @@ object Editing {
       __obj.asInstanceOf[MediaOverlayLayer]
     }
     
-    extension [Self <: MediaOverlayLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaOverlayLayer] (val x: Self) extends AnyVal {
       
       inline def setCustomCompositorDefinition(value: IVideoCompositorDefinition): Self = StObject.set(x, "customCompositorDefinition", value.asInstanceOf[js.Any])
       

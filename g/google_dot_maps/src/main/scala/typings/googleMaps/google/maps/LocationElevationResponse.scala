@@ -24,7 +24,8 @@ object LocationElevationResponse {
     __obj.asInstanceOf[LocationElevationResponse]
   }
   
-  extension [Self <: LocationElevationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationElevationResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: js.Array[ElevationResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     

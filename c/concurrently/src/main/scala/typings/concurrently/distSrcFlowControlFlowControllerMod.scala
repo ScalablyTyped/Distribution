@@ -19,7 +19,8 @@ object distSrcFlowControlFlowControllerMod {
       __obj.asInstanceOf[FlowController]
     }
     
-    extension [Self <: FlowController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowController] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: js.Array[Command] => Commands): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
     }

@@ -133,7 +133,8 @@ object IgGridGroupByLocale {
     __obj.asInstanceOf[IgGridGroupByLocale]
   }
   
-  extension [Self <: IgGridGroupByLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupByLocale] (val x: Self) extends AnyVal {
     
     inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
     

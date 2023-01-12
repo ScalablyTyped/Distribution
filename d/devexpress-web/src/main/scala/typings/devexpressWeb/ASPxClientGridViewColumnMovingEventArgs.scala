@@ -49,7 +49,8 @@ object ASPxClientGridViewColumnMovingEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewColumnMovingEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewColumnMovingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewColumnMovingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

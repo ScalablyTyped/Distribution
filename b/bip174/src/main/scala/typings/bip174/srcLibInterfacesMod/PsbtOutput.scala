@@ -17,7 +17,8 @@ object PsbtOutput {
     __obj.asInstanceOf[PsbtOutput]
   }
   
-  extension [Self <: PsbtOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PsbtOutput] (val x: Self) extends AnyVal {
     
     inline def setUnknownKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "unknownKeyVals", value.asInstanceOf[js.Any])
     

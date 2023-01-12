@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsWixStoresMod extends Shortcut 
       __obj.asInstanceOf[WixStoresProps]
     }
     
-    extension [Self <: WixStoresProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixStoresProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

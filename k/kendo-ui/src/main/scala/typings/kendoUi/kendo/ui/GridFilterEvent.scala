@@ -19,7 +19,8 @@ object GridFilterEvent {
     __obj.asInstanceOf[GridFilterEvent]
   }
   
-  extension [Self <: GridFilterEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterEvent] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

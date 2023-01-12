@@ -22,7 +22,8 @@ object ChooseImageArgs {
     __obj.asInstanceOf[ChooseImageArgs]
   }
   
-  extension [Self <: ChooseImageArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseImageArgs] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

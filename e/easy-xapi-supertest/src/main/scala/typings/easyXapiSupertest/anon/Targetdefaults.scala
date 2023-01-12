@@ -17,7 +17,8 @@ object Targetdefaults {
     __obj.asInstanceOf[Targetdefaults]
   }
   
-  extension [Self <: Targetdefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Targetdefaults] (val x: Self) extends AnyVal {
     
     inline def setTarget_defaults(value: Cflags): Self = StObject.set(x, "target_defaults", value.asInstanceOf[js.Any])
     

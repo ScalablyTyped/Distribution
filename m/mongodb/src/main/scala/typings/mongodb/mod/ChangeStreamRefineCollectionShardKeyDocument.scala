@@ -22,7 +22,8 @@ object ChangeStreamRefineCollectionShardKeyDocument {
     __obj.asInstanceOf[ChangeStreamRefineCollectionShardKeyDocument]
   }
   
-  extension [Self <: ChangeStreamRefineCollectionShardKeyDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamRefineCollectionShardKeyDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: refineCollectionShardKey): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

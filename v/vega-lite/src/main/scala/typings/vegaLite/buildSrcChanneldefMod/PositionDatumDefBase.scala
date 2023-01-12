@@ -81,7 +81,8 @@ object PositionDatumDefBase {
     __obj.asInstanceOf[PositionDatumDefBase[F]]
   }
   
-  extension [Self <: PositionDatumDefBase[?], F /* <: Field */](x: Self & PositionDatumDefBase[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionDatumDefBase[?], F /* <: Field */] (val x: Self & PositionDatumDefBase[F]) extends AnyVal {
     
     inline def setBandPosition(value: Double): Self = StObject.set(x, "bandPosition", value.asInstanceOf[js.Any])
     

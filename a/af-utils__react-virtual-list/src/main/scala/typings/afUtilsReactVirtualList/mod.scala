@@ -175,7 +175,8 @@ object mod {
       __obj.asInstanceOf[ChildProps]
     }
     
-    extension [Self <: ChildProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -561,7 +562,8 @@ object mod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

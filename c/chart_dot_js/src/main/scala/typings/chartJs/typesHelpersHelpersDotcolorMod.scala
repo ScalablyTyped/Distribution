@@ -86,7 +86,8 @@ object typesHelpersHelpersDotcolorMod {
       __obj.asInstanceOf[ColorModel]
     }
     
-    extension [Self <: ColorModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorModel] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double => ColorModel): Self = StObject.set(x, "alpha", js.Any.fromFunction1(value))
       

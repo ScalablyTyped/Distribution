@@ -17,7 +17,8 @@ object HostListener {
     __obj.asInstanceOf[HostListener]
   }
   
-  extension [Self <: HostListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostListener] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

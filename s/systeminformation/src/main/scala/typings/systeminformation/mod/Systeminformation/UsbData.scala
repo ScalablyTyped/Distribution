@@ -45,7 +45,8 @@ object UsbData {
     __obj.asInstanceOf[UsbData]
   }
   
-  extension [Self <: UsbData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbData] (val x: Self) extends AnyVal {
     
     inline def setBus(value: Double): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
     

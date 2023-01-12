@@ -73,7 +73,8 @@ object distTypesMod {
       __obj.asInstanceOf[INDArray]
     }
     
-    extension [Self <: INDArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INDArray] (val x: Self) extends AnyVal {
       
       inline def setData(value: TypedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

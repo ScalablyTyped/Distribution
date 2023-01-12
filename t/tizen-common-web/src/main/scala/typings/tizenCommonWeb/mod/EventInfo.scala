@@ -30,7 +30,8 @@ object EventInfo {
     __obj.asInstanceOf[EventInfo]
   }
   
-  extension [Self <: EventInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInfo] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

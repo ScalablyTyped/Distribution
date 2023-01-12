@@ -409,7 +409,8 @@ object mod {
       __obj.asInstanceOf[NotifyMsg]
     }
     
-    extension [Self <: NotifyMsg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyMsg] (val x: Self) extends AnyVal {
       
       inline def setBe_pid(value: Double): Self = StObject.set(x, "be_pid", value.asInstanceOf[js.Any])
       
@@ -467,7 +468,8 @@ object mod {
       __obj.asInstanceOf[ResultError]
     }
     
-    extension [Self <: ResultError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultError] (val x: Self) extends AnyVal {
       
       inline def setConstraintName(value: String): Self = StObject.set(x, "constraintName", value.asInstanceOf[js.Any])
       

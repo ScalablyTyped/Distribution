@@ -67,7 +67,8 @@ object FontConstructorOptions {
     __obj.asInstanceOf[FontConstructorOptions]
   }
   
-  extension [Self <: FontConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAscender(value: Double): Self = StObject.set(x, "ascender", value.asInstanceOf[js.Any])
     

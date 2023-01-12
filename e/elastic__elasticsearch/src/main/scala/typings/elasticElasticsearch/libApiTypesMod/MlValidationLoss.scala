@@ -17,7 +17,8 @@ object MlValidationLoss {
     __obj.asInstanceOf[MlValidationLoss]
   }
   
-  extension [Self <: MlValidationLoss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlValidationLoss] (val x: Self) extends AnyVal {
     
     inline def setFold_values(value: js.Array[String]): Self = StObject.set(x, "fold_values", value.asInstanceOf[js.Any])
     

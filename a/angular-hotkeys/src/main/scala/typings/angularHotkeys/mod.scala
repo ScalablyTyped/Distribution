@@ -67,7 +67,8 @@ object mod {
           __obj.asInstanceOf[typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey]
         }
         
-        extension [Self <: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularHotkeys.mod.angularAugmentingMod.hotkeys.Hotkey] (val x: Self) extends AnyVal {
           
           inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
           

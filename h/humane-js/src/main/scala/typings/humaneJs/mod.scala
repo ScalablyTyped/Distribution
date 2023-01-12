@@ -65,7 +65,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HumaneMessageOptions]
     }
     
-    extension [Self <: HumaneMessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HumaneMessageOptions] (val x: Self) extends AnyVal {
       
       inline def setAddnCls(value: String): Self = StObject.set(x, "addnCls", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HumaneOptions]
     }
     
-    extension [Self <: HumaneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HumaneOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseCls(value: String): Self = StObject.set(x, "baseCls", value.asInstanceOf[js.Any])
       

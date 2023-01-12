@@ -23,7 +23,8 @@ object CardDescriptionItem {
     __obj.asInstanceOf[CardDescriptionItem]
   }
   
-  extension [Self <: CardDescriptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardDescriptionItem] (val x: Self) extends AnyVal {
     
     inline def setFontWeight(value: normal | bold): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

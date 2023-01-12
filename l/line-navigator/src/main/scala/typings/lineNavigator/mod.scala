@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[FindAllResult]
     }
     
-    extension [Self <: FindAllResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllResult] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[FindMatch]
     }
     
-    extension [Self <: FindMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindMatch] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[LineNavigator]
     }
     
-    extension [Self <: LineNavigator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineNavigator] (val x: Self) extends AnyVal {
       
       inline def setFind(value: (js.RegExp, Double, FindCallback) => Unit): Self = StObject.set(x, "find", js.Any.fromFunction3(value))
       
@@ -150,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       

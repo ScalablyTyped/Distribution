@@ -25,7 +25,8 @@ object CachedFileUpdaterTriggerDetails {
     __obj.asInstanceOf[CachedFileUpdaterTriggerDetails]
   }
   
-  extension [Self <: CachedFileUpdaterTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachedFileUpdaterTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setCanRequestUserInput(value: Boolean): Self = StObject.set(x, "canRequestUserInput", value.asInstanceOf[js.Any])
     

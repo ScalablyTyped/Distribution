@@ -30,7 +30,8 @@ object libSrcMockFxClientMod {
       __obj.asInstanceOf[PluginConfiguration]
     }
     
-    extension [Self <: PluginConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHosts(value: js.Array[String]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object typingsModelsEventMod {
         __obj.asInstanceOf[EventData]
       }
       
-      extension [Self <: EventData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
         
         inline def setDate(value: Timestamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
         

@@ -43,7 +43,8 @@ object SuperChatEventSnippet {
     __obj.asInstanceOf[SuperChatEventSnippet]
   }
   
-  extension [Self <: SuperChatEventSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperChatEventSnippet] (val x: Self) extends AnyVal {
     
     inline def setAmountMicros(value: String): Self = StObject.set(x, "amountMicros", value.asInstanceOf[js.Any])
     

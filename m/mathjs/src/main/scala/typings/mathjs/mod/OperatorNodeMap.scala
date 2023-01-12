@@ -99,7 +99,8 @@ object OperatorNodeMap {
     __obj.asInstanceOf[OperatorNodeMap]
   }
   
-  extension [Self <: OperatorNodeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatorNodeMap] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Plussign): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

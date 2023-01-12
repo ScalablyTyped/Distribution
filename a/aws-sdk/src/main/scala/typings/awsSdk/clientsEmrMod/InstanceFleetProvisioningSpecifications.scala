@@ -23,7 +23,8 @@ object InstanceFleetProvisioningSpecifications {
     __obj.asInstanceOf[InstanceFleetProvisioningSpecifications]
   }
   
-  extension [Self <: InstanceFleetProvisioningSpecifications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceFleetProvisioningSpecifications] (val x: Self) extends AnyVal {
     
     inline def setOnDemandSpecification(value: OnDemandProvisioningSpecification): Self = StObject.set(x, "OnDemandSpecification", value.asInstanceOf[js.Any])
     

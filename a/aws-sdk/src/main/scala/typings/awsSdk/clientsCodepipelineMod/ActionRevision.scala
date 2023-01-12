@@ -28,7 +28,8 @@ object ActionRevision {
     __obj.asInstanceOf[ActionRevision]
   }
   
-  extension [Self <: ActionRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionRevision] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: js.Date): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

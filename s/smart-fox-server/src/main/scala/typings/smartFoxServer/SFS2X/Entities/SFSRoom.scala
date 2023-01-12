@@ -152,7 +152,8 @@ object SFSRoom {
     __obj.asInstanceOf[SFSRoom]
   }
   
-  extension [Self <: SFSRoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFSRoom] (val x: Self) extends AnyVal {
     
     inline def setContainsUser(value: SFSUser => Boolean): Self = StObject.set(x, "containsUser", js.Any.fromFunction1(value))
     

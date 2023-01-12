@@ -26,7 +26,8 @@ object FunctionalUtilities {
     __obj.asInstanceOf[FunctionalUtilities]
   }
   
-  extension [Self <: FunctionalUtilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionalUtilities] (val x: Self) extends AnyVal {
     
     inline def setForEach(
       value: (js.Array[VNode], js.Function3[/* vnode */ ChildNode, /* index */ Double, /* array */ js.Array[ChildNode], Unit]) => Unit

@@ -39,7 +39,8 @@ object PlotArearangeOnPointPositionOptions {
     __obj.asInstanceOf[PlotArearangeOnPointPositionOptions]
   }
   
-  extension [Self <: PlotArearangeOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotArearangeOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

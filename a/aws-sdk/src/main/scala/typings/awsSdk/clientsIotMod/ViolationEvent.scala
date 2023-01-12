@@ -63,7 +63,8 @@ object ViolationEvent {
     __obj.asInstanceOf[ViolationEvent]
   }
   
-  extension [Self <: ViolationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolationEvent] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: Behavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object IUtilArray {
     __obj.asInstanceOf[IUtilArray]
   }
   
-  extension [Self <: IUtilArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilArray] (val x: Self) extends AnyVal {
     
     inline def setInvoke(value: (js.Array[Any], String) => js.Array[Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
     

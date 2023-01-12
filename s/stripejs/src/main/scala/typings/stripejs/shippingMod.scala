@@ -81,7 +81,8 @@ object shippingMod {
       __obj.asInstanceOf[ShippingAddress]
     }
     
-    extension [Self <: ShippingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
       
       inline def setAddressLine(value: js.Array[String]): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object shippingMod {
       __obj.asInstanceOf[ShippingOption]
     }
     
-    extension [Self <: ShippingOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShippingOption] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

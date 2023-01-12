@@ -17,7 +17,8 @@ object ITpEventAddResponse {
     __obj.asInstanceOf[ITpEventAddResponse]
   }
   
-  extension [Self <: ITpEventAddResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpEventAddResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

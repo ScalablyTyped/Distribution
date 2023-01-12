@@ -23,7 +23,8 @@ object SaveSynonymsResponse {
     __obj.asInstanceOf[SaveSynonymsResponse]
   }
   
-  extension [Self <: SaveSynonymsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveSynonymsResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
     

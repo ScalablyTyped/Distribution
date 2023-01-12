@@ -27,7 +27,8 @@ object PickImpldefaultTextPartia {
     __obj.asInstanceOf[PickImpldefaultTextPartia]
   }
   
-  extension [Self <: PickImpldefaultTextPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldefaultTextPartia] (val x: Self) extends AnyVal {
     
     inline def setDefaultText(value: String): Self = StObject.set(x, "defaultText", value.asInstanceOf[js.Any])
     

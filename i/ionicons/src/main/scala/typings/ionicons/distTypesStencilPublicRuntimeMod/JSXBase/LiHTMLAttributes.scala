@@ -17,7 +17,8 @@ object LiHTMLAttributes {
     __obj.asInstanceOf[LiHTMLAttributes[T]]
   }
   
-  extension [Self <: LiHTMLAttributes[?], T](x: Self & LiHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiHTMLAttributes[?], T] (val x: Self & LiHTMLAttributes[T]) extends AnyVal {
     
     inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

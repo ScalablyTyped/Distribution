@@ -69,7 +69,8 @@ object GitStatus {
     __obj.asInstanceOf[GitStatus]
   }
   
-  extension [Self <: GitStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitStatus] (val x: Self) extends AnyVal {
     
     inline def setContext(value: GitStatusContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

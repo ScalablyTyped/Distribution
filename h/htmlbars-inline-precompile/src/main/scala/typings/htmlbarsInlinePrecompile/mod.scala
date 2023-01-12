@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[TemplateFactory]
     }
     
-    extension [Self <: TemplateFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateFactory] (val x: Self) extends AnyVal {
       
       inline def set__htmlbars_inline_precompile_template_factory(value: Any): Self = StObject.set(x, "__htmlbars_inline_precompile_template_factory", value.asInstanceOf[js.Any])
     }

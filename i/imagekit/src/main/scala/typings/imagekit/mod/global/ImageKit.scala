@@ -258,7 +258,8 @@ object ImageKit {
       __obj.asInstanceOf[BulkDeleteFilesError]
     }
     
-    extension [Self <: BulkDeleteFilesError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulkDeleteFilesError] (val x: Self) extends AnyVal {
       
       inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object ImageKit {
       __obj.asInstanceOf[BulkDeleteFilesResponse]
     }
     
-    extension [Self <: BulkDeleteFilesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulkDeleteFilesResponse] (val x: Self) extends AnyVal {
       
       inline def setSuccessfullyDeletedFileIds(value: js.Array[String]): Self = StObject.set(x, "successfullyDeletedFileIds", value.asInstanceOf[js.Any])
       
@@ -322,7 +324,8 @@ object ImageKit {
       __obj.asInstanceOf[FileDetailsOptions]
     }
     
-    extension [Self <: FileDetailsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDetailsOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
@@ -414,7 +417,8 @@ object ImageKit {
       __obj.asInstanceOf[FileDetailsResponse]
     }
     
-    extension [Self <: FileDetailsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDetailsResponse] (val x: Self) extends AnyVal {
       
       inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
@@ -518,7 +522,8 @@ object ImageKit {
       __obj.asInstanceOf[FileMetadataResponse]
     }
     
-    extension [Self <: FileMetadataResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileMetadataResponse] (val x: Self) extends AnyVal {
       
       inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
       
@@ -638,7 +643,8 @@ object ImageKit {
       __obj.asInstanceOf[ListFileOptions]
     }
     
-    extension [Self <: ListFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListFileOptions] (val x: Self) extends AnyVal {
       
       inline def setFileType(value: FileType): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
       
@@ -752,7 +758,8 @@ object ImageKit {
       __obj.asInstanceOf[ListFileResponse]
     }
     
-    extension [Self <: ListFileResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListFileResponse] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -803,7 +810,8 @@ object ImageKit {
       __obj.asInstanceOf[PurgeCacheResponse]
     }
     
-    extension [Self <: PurgeCacheResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurgeCacheResponse] (val x: Self) extends AnyVal {
       
       inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     }
@@ -830,7 +838,8 @@ object ImageKit {
       __obj.asInstanceOf[PurgeCacheStatusResponse]
     }
     
-    extension [Self <: PurgeCacheStatusResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PurgeCacheStatusResponse] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Pending | Completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -1053,7 +1062,8 @@ object ImageKit {
       __obj.asInstanceOf[Transformation]
     }
     
-    extension [Self <: Transformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformation] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -1318,7 +1328,8 @@ object ImageKit {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
@@ -1440,7 +1451,8 @@ object ImageKit {
       __obj.asInstanceOf[UploadResponse]
     }
     
-    extension [Self <: UploadResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadResponse] (val x: Self) extends AnyVal {
       
       inline def setCustomCoordinates(value: String): Self = StObject.set(x, "customCoordinates", value.asInstanceOf[js.Any])
       
@@ -1550,7 +1562,8 @@ object ImageKit {
       __obj.asInstanceOf[UrlOptionsBase]
     }
     
-    extension [Self <: UrlOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setExpireSeconds(value: Double): Self = StObject.set(x, "expireSeconds", value.asInstanceOf[js.Any])
       
@@ -1600,7 +1613,8 @@ object ImageKit {
       __obj.asInstanceOf[UrlOptionsPath]
     }
     
-    extension [Self <: UrlOptionsPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlOptionsPath] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -1627,7 +1641,8 @@ object ImageKit {
       __obj.asInstanceOf[UrlOptionsSrc]
     }
     
-    extension [Self <: UrlOptionsSrc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlOptionsSrc] (val x: Self) extends AnyVal {
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     }

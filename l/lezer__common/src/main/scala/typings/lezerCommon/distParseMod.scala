@@ -86,7 +86,8 @@ object distParseMod {
       __obj.asInstanceOf[ChangedRange]
     }
     
-    extension [Self <: ChangedRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedRange] (val x: Self) extends AnyVal {
       
       inline def setFromA(value: Double): Self = StObject.set(x, "fromA", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object distParseMod {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Double => String): Self = StObject.set(x, "chunk", js.Any.fromFunction1(value))
       
@@ -152,7 +154,8 @@ object distParseMod {
       __obj.asInstanceOf[PartialParse]
     }
     
-    extension [Self <: PartialParse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialParse] (val x: Self) extends AnyVal {
       
       inline def setAdvance(value: () => Tree | Null): Self = StObject.set(x, "advance", js.Any.fromFunction0(value))
       

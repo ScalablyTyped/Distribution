@@ -35,7 +35,8 @@ object typesPutRecordsResultEntryMod {
       __obj.asInstanceOf[PutRecordsResultEntry]
     }
     
-    extension [Self <: PutRecordsResultEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRecordsResultEntry] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       

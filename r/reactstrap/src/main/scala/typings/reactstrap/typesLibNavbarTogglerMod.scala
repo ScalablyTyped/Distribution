@@ -35,7 +35,8 @@ object typesLibNavbarTogglerMod {
       __obj.asInstanceOf[NavbarTogglerProps]
     }
     
-    extension [Self <: NavbarTogglerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarTogglerProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

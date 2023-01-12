@@ -17,7 +17,8 @@ object ICurrentRepresentationSwitch {
     __obj.asInstanceOf[ICurrentRepresentationSwitch]
   }
   
-  extension [Self <: ICurrentRepresentationSwitch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICurrentRepresentationSwitch] (val x: Self) extends AnyVal {
     
     inline def setMt(value: Double): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     

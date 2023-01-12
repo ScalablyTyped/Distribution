@@ -42,7 +42,8 @@ object XActiveDataStreamer {
     __obj.asInstanceOf[XActiveDataStreamer]
   }
   
-  extension [Self <: XActiveDataStreamer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActiveDataStreamer] (val x: Self) extends AnyVal {
     
     inline def setGetStream(value: () => XStream): Self = StObject.set(x, "getStream", js.Any.fromFunction0(value))
     

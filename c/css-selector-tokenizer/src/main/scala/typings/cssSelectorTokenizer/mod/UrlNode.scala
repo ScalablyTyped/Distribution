@@ -28,7 +28,8 @@ object UrlNode {
     __obj.asInstanceOf[UrlNode]
   }
   
-  extension [Self <: UrlNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlNode] (val x: Self) extends AnyVal {
     
     inline def setInnerSpacingAfter(value: String): Self = StObject.set(x, "innerSpacingAfter", value.asInstanceOf[js.Any])
     

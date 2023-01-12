@@ -18,7 +18,8 @@ object MultiSelectorAtom {
     __obj.asInstanceOf[MultiSelectorAtom]
   }
   
-  extension [Self <: MultiSelectorAtom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectorAtom] (val x: Self) extends AnyVal {
     
     inline def setSelectors(value: js.Array[SubjectSelector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     

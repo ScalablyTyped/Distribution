@@ -23,7 +23,8 @@ object ReportRow {
     __obj.asInstanceOf[ReportRow]
   }
   
-  extension [Self <: ReportRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportRow] (val x: Self) extends AnyVal {
     
     inline def setDimensionValues(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.admob.gapi.client.admob.ReportRowDimensionValue} */ js.Any

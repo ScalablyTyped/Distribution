@@ -19,7 +19,8 @@ object SliderMinClickEvent {
     __obj.asInstanceOf[SliderMinClickEvent]
   }
   
-  extension [Self <: SliderMinClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderMinClickEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `min-click`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

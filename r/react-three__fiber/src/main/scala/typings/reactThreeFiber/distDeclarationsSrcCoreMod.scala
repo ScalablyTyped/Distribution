@@ -277,7 +277,8 @@ object distDeclarationsSrcCoreMod {
       __obj.asInstanceOf[RenderProps[TCanvas]]
     }
     
-    extension [Self <: RenderProps[?], TCanvas /* <: Element */](x: Self & RenderProps[TCanvas]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps[?], TCanvas /* <: Element */] (val x: Self & RenderProps[TCanvas]) extends AnyVal {
       
       inline def setCamera(
         value: (Camera & Manual) | ((Partial[

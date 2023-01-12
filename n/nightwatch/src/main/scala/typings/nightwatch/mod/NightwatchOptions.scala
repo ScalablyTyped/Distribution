@@ -210,7 +210,8 @@ object NightwatchOptions {
     __obj.asInstanceOf[NightwatchOptions]
   }
   
-  extension [Self <: NightwatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchOptions] (val x: Self) extends AnyVal {
     
     inline def setBackwards_compatibility_mode(value: Boolean): Self = StObject.set(x, "backwards_compatibility_mode", value.asInstanceOf[js.Any])
     

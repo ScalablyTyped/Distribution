@@ -18,7 +18,8 @@ object DescribeValidDBInstanceModificationsMessage {
     __obj.asInstanceOf[DescribeValidDBInstanceModificationsMessage]
   }
   
-  extension [Self <: DescribeValidDBInstanceModificationsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeValidDBInstanceModificationsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
   }

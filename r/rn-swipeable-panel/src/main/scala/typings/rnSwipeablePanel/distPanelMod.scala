@@ -90,7 +90,8 @@ object distPanelMod {
       __obj.asInstanceOf[SwipeablePanelProps]
     }
     
-    extension [Self <: SwipeablePanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeablePanelProps] (val x: Self) extends AnyVal {
       
       inline def setAllowTouchOutside(value: Boolean): Self = StObject.set(x, "allowTouchOutside", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object distPanelMod {
       __obj.asInstanceOf[SwipeablePanelState]
     }
     
-    extension [Self <: SwipeablePanelState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeablePanelState] (val x: Self) extends AnyVal {
       
       inline def setCanScroll(value: Boolean): Self = StObject.set(x, "canScroll", value.asInstanceOf[js.Any])
       

@@ -79,7 +79,8 @@ object HparamSearchSpaces {
     __obj.asInstanceOf[HparamSearchSpaces]
   }
   
-  extension [Self <: HparamSearchSpaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HparamSearchSpaces] (val x: Self) extends AnyVal {
     
     inline def setActivationFn(value: StringHparamSearchSpace): Self = StObject.set(x, "activationFn", value.asInstanceOf[js.Any])
     

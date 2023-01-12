@@ -28,7 +28,8 @@ object DecisionTaskScheduledEventAttributes {
     __obj.asInstanceOf[DecisionTaskScheduledEventAttributes]
   }
   
-  extension [Self <: DecisionTaskScheduledEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionTaskScheduledEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     

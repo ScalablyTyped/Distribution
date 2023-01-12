@@ -35,7 +35,8 @@ object DiagnosticOptions {
     __obj.asInstanceOf[DiagnosticOptions]
   }
   
-  extension [Self <: DiagnosticOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticOptions] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

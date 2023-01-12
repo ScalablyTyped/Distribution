@@ -44,7 +44,8 @@ object dxSlideOutViewOptions {
     __obj.asInstanceOf[dxSlideOutViewOptions]
   }
   
-  extension [Self <: dxSlideOutViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSlideOutViewOptions] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(value: template | (js.Function1[/* contentElement */ DxElement_[HTMLElement], Any])): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
     

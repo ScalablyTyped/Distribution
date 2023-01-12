@@ -31,7 +31,8 @@ object dataModelMod {
       __obj.asInstanceOf[DataModel]
     }
     
-    extension [Self <: DataModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataModel] (val x: Self) extends AnyVal {
       
       inline def setGenerateId(value: () => Double): Self = StObject.set(x, "generateId", js.Any.fromFunction0(value))
       

@@ -20,7 +20,8 @@ object ReportingApiEndpointsChangedForOriginEvent {
     __obj.asInstanceOf[ReportingApiEndpointsChangedForOriginEvent]
   }
   
-  extension [Self <: ReportingApiEndpointsChangedForOriginEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingApiEndpointsChangedForOriginEvent] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: js.Array[ReportingApiEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     

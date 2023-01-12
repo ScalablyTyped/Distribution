@@ -44,7 +44,8 @@ object ServiceOption {
     __obj.asInstanceOf[ServiceOption]
   }
   
-  extension [Self <: ServiceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceOption] (val x: Self) extends AnyVal {
     
     inline def setCategoryValues(value: js.Array[CategoryValue]): Self = StObject.set(x, "categoryValues", value.asInstanceOf[js.Any])
     

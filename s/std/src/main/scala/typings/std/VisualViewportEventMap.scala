@@ -19,7 +19,8 @@ object VisualViewportEventMap {
     __obj.asInstanceOf[VisualViewportEventMap]
   }
   
-  extension [Self <: VisualViewportEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualViewportEventMap] (val x: Self) extends AnyVal {
     
     inline def setResize(value: Event): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     

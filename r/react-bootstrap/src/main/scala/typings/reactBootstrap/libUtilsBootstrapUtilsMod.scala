@@ -49,7 +49,8 @@ object libUtilsBootstrapUtilsMod {
       __obj.asInstanceOf[BSProps]
     }
     
-    extension [Self <: BSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BSProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: Any): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

@@ -205,7 +205,8 @@ object libUtilsScreenManagerMod {
       __obj.asInstanceOf[ScreenManager]
     }
     
-    extension [Self <: ScreenManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenManager] (val x: Self) extends AnyVal {
       
       inline def setBreakLines(value: (String, Double) => js.Array[String]): Self = StObject.set(x, "breakLines", js.Any.fromFunction2(value))
       

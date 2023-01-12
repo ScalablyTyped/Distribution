@@ -17,7 +17,8 @@ object KoLiteCommandOptions {
     __obj.asInstanceOf[KoLiteCommandOptions]
   }
   
-  extension [Self <: KoLiteCommandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KoLiteCommandOptions] (val x: Self) extends AnyVal {
     
     inline def setCanExecute(value: /* isExecuting */ Boolean => Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object InternalLinkAttributes {
     __obj.asInstanceOf[InternalLinkAttributes]
   }
   
-  extension [Self <: InternalLinkAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalLinkAttributes] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object buildSrcCallCredentialsMod {
       __obj.asInstanceOf[CallMetadataOptions]
     }
     
-    extension [Self <: CallMetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallMetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setService_url(value: String): Self = StObject.set(x, "service_url", value.asInstanceOf[js.Any])
     }
@@ -116,7 +117,8 @@ object buildSrcCallCredentialsMod {
       __obj.asInstanceOf[OldOAuth2Client]
     }
     
-    extension [Self <: OldOAuth2Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OldOAuth2Client] (val x: Self) extends AnyVal {
       
       inline def setGetRequestMetadata(
         value: (String, js.Function2[/* err */ js.Error | Null, /* headers */ js.UndefOr[StringDictionary[String]], Unit]) => Unit

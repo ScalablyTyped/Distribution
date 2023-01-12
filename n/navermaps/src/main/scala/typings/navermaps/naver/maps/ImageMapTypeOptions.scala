@@ -40,7 +40,8 @@ object ImageMapTypeOptions {
     __obj.asInstanceOf[ImageMapTypeOptions]
   }
   
-  extension [Self <: ImageMapTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMapTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setDarktheme(value: Boolean): Self = StObject.set(x, "darktheme", value.asInstanceOf[js.Any])
     

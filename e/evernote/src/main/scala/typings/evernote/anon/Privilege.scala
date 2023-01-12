@@ -26,7 +26,8 @@ object Privilege {
     __obj.asInstanceOf[Privilege]
   }
   
-  extension [Self <: Privilege](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privilege] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

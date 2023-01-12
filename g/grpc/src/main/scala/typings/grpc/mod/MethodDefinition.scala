@@ -77,7 +77,8 @@ object MethodDefinition {
     __obj.asInstanceOf[MethodDefinition[RequestType, ResponseType]]
   }
   
-  extension [Self <: MethodDefinition[?, ?], RequestType, ResponseType](x: Self & (MethodDefinition[RequestType, ResponseType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (MethodDefinition[RequestType, ResponseType])) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

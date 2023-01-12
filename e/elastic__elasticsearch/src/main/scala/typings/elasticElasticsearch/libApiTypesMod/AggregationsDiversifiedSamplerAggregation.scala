@@ -25,7 +25,8 @@ object AggregationsDiversifiedSamplerAggregation {
     __obj.asInstanceOf[AggregationsDiversifiedSamplerAggregation]
   }
   
-  extension [Self <: AggregationsDiversifiedSamplerAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsDiversifiedSamplerAggregation] (val x: Self) extends AnyVal {
     
     inline def setExecution_hint(value: AggregationsSamplerAggregationExecutionHint): Self = StObject.set(x, "execution_hint", value.asInstanceOf[js.Any])
     

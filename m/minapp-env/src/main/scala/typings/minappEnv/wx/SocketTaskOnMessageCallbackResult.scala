@@ -17,7 +17,8 @@ object SocketTaskOnMessageCallbackResult {
     __obj.asInstanceOf[SocketTaskOnMessageCallbackResult]
   }
   
-  extension [Self <: SocketTaskOnMessageCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketTaskOnMessageCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

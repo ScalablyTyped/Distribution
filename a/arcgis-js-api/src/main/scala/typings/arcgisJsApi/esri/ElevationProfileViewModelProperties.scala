@@ -107,7 +107,8 @@ object ElevationProfileViewModelProperties {
     __obj.asInstanceOf[ElevationProfileViewModelProperties]
   }
   
-  extension [Self <: ElevationProfileViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setGeodesicDistanceThreshold(value: Double): Self = StObject.set(x, "geodesicDistanceThreshold", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ICropperHelper {
     __obj.asInstanceOf[ICropperHelper]
   }
   
-  extension [Self <: ICropperHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICropperHelper] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: String => Any): Self = StObject.set(x, "configuration", js.Any.fromFunction1(value))
   }

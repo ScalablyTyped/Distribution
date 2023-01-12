@@ -41,7 +41,8 @@ object XRef {
     __obj.asInstanceOf[XRef]
   }
   
-  extension [Self <: XRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRef] (val x: Self) extends AnyVal {
     
     inline def setBaseTypeName(value: String): Self = StObject.set(x, "BaseTypeName", value.asInstanceOf[js.Any])
     

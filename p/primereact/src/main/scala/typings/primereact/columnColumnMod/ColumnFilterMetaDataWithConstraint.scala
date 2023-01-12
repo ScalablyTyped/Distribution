@@ -19,7 +19,8 @@ object ColumnFilterMetaDataWithConstraint {
     __obj.asInstanceOf[ColumnFilterMetaDataWithConstraint]
   }
   
-  extension [Self <: ColumnFilterMetaDataWithConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterMetaDataWithConstraint] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: js.Array[ColumnFilterMetaData]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

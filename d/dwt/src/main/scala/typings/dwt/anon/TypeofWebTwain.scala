@@ -15,7 +15,8 @@ object TypeofWebTwain {
     __obj.asInstanceOf[TypeofWebTwain]
   }
   
-  extension [Self <: TypeofWebTwain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofWebTwain] (val x: Self) extends AnyVal {
     
     inline def setAddon(value: TypeofAddon): Self = StObject.set(x, "Addon", value.asInstanceOf[js.Any])
   }

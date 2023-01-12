@@ -31,7 +31,8 @@ object IBankAccountType {
     __obj.asInstanceOf[IBankAccountType]
   }
   
-  extension [Self <: IBankAccountType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBankAccountType] (val x: Self) extends AnyVal {
     
     inline def setCA(value: CA): Self = StObject.set(x, "CA", value.asInstanceOf[js.Any])
     

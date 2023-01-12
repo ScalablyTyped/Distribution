@@ -33,7 +33,8 @@ object GetFunctionResponse {
     __obj.asInstanceOf[GetFunctionResponse]
   }
   
-  extension [Self <: GetFunctionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: FunctionCodeLocation): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

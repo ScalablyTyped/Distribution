@@ -24,7 +24,8 @@ object SharePointIdentitySet {
     __obj.asInstanceOf[SharePointIdentitySet]
   }
   
-  extension [Self <: SharePointIdentitySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharePointIdentitySet] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: NullableOption[Identity]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

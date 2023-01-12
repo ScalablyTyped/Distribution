@@ -50,7 +50,8 @@ object ABRStrategy {
     __obj.asInstanceOf[ABRStrategy]
   }
   
-  extension [Self <: ABRStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ABRStrategy] (val x: Self) extends AnyVal {
     
     inline def setABRStrategy(value: abrDynamic | abrBola | abrL2A | abrLoLP | abrThroughput): Self = StObject.set(x, "ABRStrategy", value.asInstanceOf[js.Any])
     

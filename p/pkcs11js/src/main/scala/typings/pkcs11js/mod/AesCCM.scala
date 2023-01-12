@@ -25,7 +25,8 @@ object AesCCM {
     __obj.asInstanceOf[AesCCM]
   }
   
-  extension [Self <: AesCCM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesCCM] (val x: Self) extends AnyVal {
     
     inline def setAad(value: Buffer): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
     

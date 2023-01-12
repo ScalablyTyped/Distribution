@@ -27,7 +27,8 @@ object JQRangeSliderDateSteps {
     __obj.asInstanceOf[JQRangeSliderDateSteps]
   }
   
-  extension [Self <: JQRangeSliderDateSteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQRangeSliderDateSteps] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

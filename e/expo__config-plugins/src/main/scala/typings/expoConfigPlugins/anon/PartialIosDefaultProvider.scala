@@ -69,7 +69,8 @@ object PartialIosDefaultProvider {
     __obj.asInstanceOf[PartialIosDefaultProvider]
   }
   
-  extension [Self <: PartialIosDefaultProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIosDefaultProvider] (val x: Self) extends AnyVal {
     
     inline def setAppDelegate(
       value: BaseModProviderMethods[

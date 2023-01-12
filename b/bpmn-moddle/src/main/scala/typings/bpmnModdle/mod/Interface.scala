@@ -28,7 +28,8 @@ object Interface {
     __obj.asInstanceOf[Interface]
   }
   
-  extension [Self <: Interface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
     
     inline def setImplementationRef(value: String): Self = StObject.set(x, "implementationRef", value.asInstanceOf[js.Any])
     

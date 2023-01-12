@@ -723,7 +723,8 @@ object libPicomatchMod {
       __obj.asInstanceOf[PicomatchOptions]
     }
     
-    extension [Self <: PicomatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicomatchOptions] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: Boolean): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -916,7 +917,8 @@ object libPicomatchMod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
@@ -956,7 +958,8 @@ object libPicomatchMod {
       __obj.asInstanceOf[ToRegexOptions]
     }
     
-    extension [Self <: ToRegexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToRegexOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

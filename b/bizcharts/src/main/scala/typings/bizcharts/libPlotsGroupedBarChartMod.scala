@@ -46,7 +46,8 @@ object libPlotsGroupedBarChartMod extends Shortcut {
       __obj.asInstanceOf[GroupedBarOptions]
     }
     
-    extension [Self <: GroupedBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupedBarOptions] (val x: Self) extends AnyVal {
       
       inline def setBarSize(value: Double): Self = StObject.set(x, "barSize", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object SlotMigration {
     __obj.asInstanceOf[SlotMigration]
   }
   
-  extension [Self <: SlotMigration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotMigration] (val x: Self) extends AnyVal {
     
     inline def setProgressPercentage(value: Double): Self = StObject.set(x, "ProgressPercentage", value.asInstanceOf[js.Any])
     

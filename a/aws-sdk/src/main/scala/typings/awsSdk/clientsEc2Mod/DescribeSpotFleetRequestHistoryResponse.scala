@@ -38,7 +38,8 @@ object DescribeSpotFleetRequestHistoryResponse {
     __obj.asInstanceOf[DescribeSpotFleetRequestHistoryResponse]
   }
   
-  extension [Self <: DescribeSpotFleetRequestHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotFleetRequestHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setHistoryRecords(value: HistoryRecords): Self = StObject.set(x, "HistoryRecords", value.asInstanceOf[js.Any])
     

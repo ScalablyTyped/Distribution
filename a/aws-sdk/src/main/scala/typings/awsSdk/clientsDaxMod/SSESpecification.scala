@@ -18,7 +18,8 @@ object SSESpecification {
     __obj.asInstanceOf[SSESpecification]
   }
   
-  extension [Self <: SSESpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSESpecification] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: SSEEnabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
   }

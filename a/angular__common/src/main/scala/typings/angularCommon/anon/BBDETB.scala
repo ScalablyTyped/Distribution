@@ -29,7 +29,8 @@ object BBDETB {
     __obj.asInstanceOf[BBDETB]
   }
   
-  extension [Self <: BBDETB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BBDETB] (val x: Self) extends AnyVal {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     

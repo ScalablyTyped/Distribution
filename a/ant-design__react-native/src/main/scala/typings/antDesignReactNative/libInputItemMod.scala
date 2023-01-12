@@ -421,7 +421,8 @@ object libInputItemMod {
       __obj.asInstanceOf[InputItemProps]
     }
     
-    extension [Self <: InputItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -932,7 +933,8 @@ object libInputItemMod {
       __obj.asInstanceOf[InputItemState]
     }
     
-    extension [Self <: InputItemState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemState] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     }
@@ -1204,7 +1206,8 @@ object libInputItemMod {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

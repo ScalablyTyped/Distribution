@@ -18,7 +18,8 @@ object AggregationsAdjacencyMatrixAggregation {
     __obj.asInstanceOf[AggregationsAdjacencyMatrixAggregation]
   }
   
-  extension [Self <: AggregationsAdjacencyMatrixAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsAdjacencyMatrixAggregation] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Record[String, QueryDslQueryContainer]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

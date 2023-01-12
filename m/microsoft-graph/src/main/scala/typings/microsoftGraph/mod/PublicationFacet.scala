@@ -19,7 +19,8 @@ object PublicationFacet {
     __obj.asInstanceOf[PublicationFacet]
   }
   
-  extension [Self <: PublicationFacet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicationFacet] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: NullableOption[String]): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

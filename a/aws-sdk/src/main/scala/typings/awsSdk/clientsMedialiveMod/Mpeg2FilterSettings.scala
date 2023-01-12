@@ -15,7 +15,8 @@ object Mpeg2FilterSettings {
     __obj.asInstanceOf[Mpeg2FilterSettings]
   }
   
-  extension [Self <: Mpeg2FilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mpeg2FilterSettings] (val x: Self) extends AnyVal {
     
     inline def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     

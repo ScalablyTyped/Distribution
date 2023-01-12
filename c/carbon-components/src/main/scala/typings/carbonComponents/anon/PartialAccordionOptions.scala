@@ -24,7 +24,8 @@ object PartialAccordionOptions {
     __obj.asInstanceOf[PartialAccordionOptions]
   }
   
-  extension [Self <: PartialAccordionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAccordionOptions] (val x: Self) extends AnyVal {
     
     inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
     

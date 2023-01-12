@@ -30,7 +30,8 @@ object Op {
       __obj.asInstanceOf[Add]
     }
     
-    extension [Self <: Add](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Add] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
@@ -49,7 +50,8 @@ object Op {
       __obj.asInstanceOf[AddUnique]
     }
     
-    extension [Self <: AddUnique](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddUnique] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
@@ -66,7 +68,8 @@ object Op {
       __obj.asInstanceOf[BaseOperation]
     }
     
-    extension [Self <: BaseOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOperation] (val x: Self) extends AnyVal {
       
       inline def setObjects(value: () => js.Array[Any]): Self = StObject.set(x, "objects", js.Any.fromFunction0(value))
     }
@@ -85,7 +88,8 @@ object Op {
       __obj.asInstanceOf[Increment]
     }
     
-    extension [Self <: Increment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object Op {
       __obj.asInstanceOf[typings.parse.mod.global.Parse.Op.Relation]
     }
     
-    extension [Self <: typings.parse.mod.global.Parse.Op.Relation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.parse.mod.global.Parse.Op.Relation] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: () => js.Array[Object[Attributes]]): Self = StObject.set(x, "added", js.Any.fromFunction0(value))
       
@@ -137,7 +142,8 @@ object Op {
       __obj.asInstanceOf[Set]
     }
     
-    extension [Self <: Set](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
@@ -156,7 +162,8 @@ object Op {
       __obj.asInstanceOf[Unset]
     }
     
-    extension [Self <: Unset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unset] (val x: Self) extends AnyVal {
       
       inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }

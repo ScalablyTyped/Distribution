@@ -37,7 +37,8 @@ object querystringorderBySearchO {
     __obj.asInstanceOf[querystringorderBySearchO]
   }
   
-  extension [Self <: querystringorderBySearchO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: querystringorderBySearchO] (val x: Self) extends AnyVal {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     

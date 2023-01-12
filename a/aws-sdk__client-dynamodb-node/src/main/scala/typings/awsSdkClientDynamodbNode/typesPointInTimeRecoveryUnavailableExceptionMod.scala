@@ -21,7 +21,8 @@ object typesPointInTimeRecoveryUnavailableExceptionMod {
       __obj.asInstanceOf[PointInTimeRecoveryUnavailableException]
     }
     
-    extension [Self <: PointInTimeRecoveryUnavailableException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointInTimeRecoveryUnavailableException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.PointInTimeRecoveryUnavailableException
@@ -43,7 +44,8 @@ object typesPointInTimeRecoveryUnavailableExceptionMod {
       __obj.asInstanceOf[PointInTimeRecoveryUnavailableExceptionDetails]
     }
     
-    extension [Self <: PointInTimeRecoveryUnavailableExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointInTimeRecoveryUnavailableExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

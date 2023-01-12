@@ -19,7 +19,8 @@ object TeamClassSettings {
     __obj.asInstanceOf[TeamClassSettings]
   }
   
-  extension [Self <: TeamClassSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamClassSettings] (val x: Self) extends AnyVal {
     
     inline def setNotifyGuardiansAboutAssignments(value: NullableOption[Boolean]): Self = StObject.set(x, "notifyGuardiansAboutAssignments", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GroupBase {
     __obj.asInstanceOf[GroupBase[Option]]
   }
   
-  extension [Self <: GroupBase[?], Option](x: Self & GroupBase[Option]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupBase[?], Option] (val x: Self & GroupBase[Option]) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

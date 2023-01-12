@@ -35,7 +35,8 @@ object distProvidersEsriProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setExtent(value: Xmax): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distProvidersEsriProviderMod {
       __obj.asInstanceOf[RequestResult]
     }
     
-    extension [Self <: RequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestResult] (val x: Self) extends AnyVal {
       
       inline def setLocations(value: js.Array[RawResult]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       

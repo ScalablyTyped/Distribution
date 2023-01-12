@@ -27,7 +27,8 @@ object DraggableEvent {
     __obj.asInstanceOf[DraggableEvent]
   }
   
-  extension [Self <: DraggableEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: JQuery | js.Object): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

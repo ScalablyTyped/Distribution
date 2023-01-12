@@ -62,7 +62,8 @@ object shadedReliefCreateRendererParams {
     __obj.asInstanceOf[shadedReliefCreateRendererParams]
   }
   
-  extension [Self <: shadedReliefCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: shadedReliefCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setColorRamp(value: AlgorithmicColorRamp | MultipartColorRamp): Self = StObject.set(x, "colorRamp", value.asInstanceOf[js.Any])
     

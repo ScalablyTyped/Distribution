@@ -31,7 +31,8 @@ object PasswordValidationPolicy {
     __obj.asInstanceOf[PasswordValidationPolicy]
   }
   
-  extension [Self <: PasswordValidationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordValidationPolicy] (val x: Self) extends AnyVal {
     
     inline def setComplexity(value: String): Self = StObject.set(x, "complexity", value.asInstanceOf[js.Any])
     

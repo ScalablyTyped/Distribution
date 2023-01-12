@@ -19,7 +19,8 @@ object TimelineTooltipOption {
     __obj.asInstanceOf[TimelineTooltipOption]
   }
   
-  extension [Self <: TimelineTooltipOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineTooltipOption] (val x: Self) extends AnyVal {
     
     inline def setFollowMouse(value: Boolean): Self = StObject.set(x, "followMouse", value.asInstanceOf[js.Any])
     

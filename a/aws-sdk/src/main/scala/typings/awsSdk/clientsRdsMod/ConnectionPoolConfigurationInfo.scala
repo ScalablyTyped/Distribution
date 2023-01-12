@@ -38,7 +38,8 @@ object ConnectionPoolConfigurationInfo {
     __obj.asInstanceOf[ConnectionPoolConfigurationInfo]
   }
   
-  extension [Self <: ConnectionPoolConfigurationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPoolConfigurationInfo] (val x: Self) extends AnyVal {
     
     inline def setConnectionBorrowTimeout(value: Integer): Self = StObject.set(x, "ConnectionBorrowTimeout", value.asInstanceOf[js.Any])
     

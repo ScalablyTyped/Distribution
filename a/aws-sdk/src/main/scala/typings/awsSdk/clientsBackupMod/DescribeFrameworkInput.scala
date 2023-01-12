@@ -18,7 +18,8 @@ object DescribeFrameworkInput {
     __obj.asInstanceOf[DescribeFrameworkInput]
   }
   
-  extension [Self <: DescribeFrameworkInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFrameworkInput] (val x: Self) extends AnyVal {
     
     inline def setFrameworkName(value: FrameworkName): Self = StObject.set(x, "FrameworkName", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object I2cModes {
     __obj.asInstanceOf[I2cModes]
   }
   
-  extension [Self <: I2cModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I2cModes] (val x: Self) extends AnyVal {
     
     inline def setCONTINUOUS_READ(value: I2C_MODE): Self = StObject.set(x, "CONTINUOUS_READ", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object MixedContentIssueDetails {
     __obj.asInstanceOf[MixedContentIssueDetails]
   }
   
-  extension [Self <: MixedContentIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MixedContentIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: AffectedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

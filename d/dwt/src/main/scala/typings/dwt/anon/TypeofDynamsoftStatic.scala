@@ -37,7 +37,8 @@ object TypeofDynamsoftStatic {
     __obj.asInstanceOf[TypeofDynamsoftStatic]
   }
   
-  extension [Self <: TypeofDynamsoftStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDynamsoftStatic] (val x: Self) extends AnyVal {
     
     inline def setFileUploader(value: FileUploader): Self = StObject.set(x, "FileUploader", value.asInstanceOf[js.Any])
     

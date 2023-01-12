@@ -830,7 +830,8 @@ object process {
       __obj.asInstanceOf[Operator_]
     }
     
-    extension [Self <: Operator_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operator_] (val x: Self) extends AnyVal {
       
       inline def setAddAll(value: EnumValue): Self = StObject.set(x, "addAll", value.asInstanceOf[js.Any])
       
@@ -1149,7 +1150,8 @@ object process {
       __obj.asInstanceOf[Statics_[T]]
     }
     
-    extension [Self <: Statics_[?], T /* <: GraphTraversal */](x: Self & Statics_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statics_[?], T /* <: GraphTraversal */] (val x: Self & Statics_[T]) extends AnyVal {
       
       inline def setAddE(value: /* repeated */ Any => T): Self = StObject.set(x, "addE", js.Any.fromFunction1(value))
       
@@ -1381,7 +1383,8 @@ object process {
       __obj.asInstanceOf[WithOptions_]
     }
     
-    extension [Self <: WithOptions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithOptions_] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

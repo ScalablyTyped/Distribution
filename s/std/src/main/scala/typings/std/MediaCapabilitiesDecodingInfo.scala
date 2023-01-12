@@ -18,7 +18,8 @@ object MediaCapabilitiesDecodingInfo {
     __obj.asInstanceOf[MediaCapabilitiesDecodingInfo]
   }
   
-  extension [Self <: MediaCapabilitiesDecodingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaCapabilitiesDecodingInfo] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: MediaDecodingConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

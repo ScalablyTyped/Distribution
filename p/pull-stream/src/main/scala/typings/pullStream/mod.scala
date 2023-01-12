@@ -195,7 +195,8 @@ object mod {
       __obj.asInstanceOf[DuplexSink[Out]]
     }
     
-    extension [Self <: DuplexSink[?], Out](x: Self & DuplexSink[Out]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexSink[?], Out] (val x: Self & DuplexSink[Out]) extends AnyVal {
       
       inline def setSink(value: /* source */ Source[Out] => Unit): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
     }
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[DuplexSource[In]]
     }
     
-    extension [Self <: DuplexSource[?], In](x: Self & DuplexSource[In]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexSource[?], In] (val x: Self & DuplexSource[In]) extends AnyVal {
       
       inline def setSource(value: (/* endOrError */ Abort, /* cb */ SourceCallback[In]) => Unit): Self = StObject.set(x, "source", js.Any.fromFunction2(value))
     }

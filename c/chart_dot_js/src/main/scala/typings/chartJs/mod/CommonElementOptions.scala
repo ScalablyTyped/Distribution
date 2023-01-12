@@ -20,7 +20,8 @@ object CommonElementOptions {
     __obj.asInstanceOf[CommonElementOptions]
   }
   
-  extension [Self <: CommonElementOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonElementOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

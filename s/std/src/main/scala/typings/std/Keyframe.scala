@@ -26,7 +26,8 @@ object Keyframe {
     __obj.asInstanceOf[Keyframe]
   }
   
-  extension [Self <: Keyframe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Keyframe] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: CompositeOperationOrAuto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
     

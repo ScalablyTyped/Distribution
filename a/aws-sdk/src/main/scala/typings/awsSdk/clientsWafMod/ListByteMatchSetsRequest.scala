@@ -23,7 +23,8 @@ object ListByteMatchSetsRequest {
     __obj.asInstanceOf[ListByteMatchSetsRequest]
   }
   
-  extension [Self <: ListByteMatchSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListByteMatchSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

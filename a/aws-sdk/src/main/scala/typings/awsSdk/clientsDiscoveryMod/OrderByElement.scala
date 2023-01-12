@@ -23,7 +23,8 @@ object OrderByElement {
     __obj.asInstanceOf[OrderByElement]
   }
   
-  extension [Self <: OrderByElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderByElement] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: OrderByElementFieldName): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

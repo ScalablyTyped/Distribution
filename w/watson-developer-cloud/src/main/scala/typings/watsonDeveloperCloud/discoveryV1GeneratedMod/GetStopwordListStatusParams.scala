@@ -24,7 +24,8 @@ object GetStopwordListStatusParams {
     __obj.asInstanceOf[GetStopwordListStatusParams]
   }
   
-  extension [Self <: GetStopwordListStatusParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStopwordListStatusParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

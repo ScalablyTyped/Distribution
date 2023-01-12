@@ -17,7 +17,8 @@ object ProfileUsage {
     __obj.asInstanceOf[ProfileUsage]
   }
   
-  extension [Self <: ProfileUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileUsage] (val x: Self) extends AnyVal {
     
     inline def setLastSyncTime(value: js.Date): Self = StObject.set(x, "lastSyncTime", value.asInstanceOf[js.Any])
     

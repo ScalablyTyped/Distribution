@@ -70,7 +70,8 @@ object typingsLookupSearchStrategyMod {
       __obj.asInstanceOf[SearchStrategy]
     }
     
-    extension [Self <: SearchStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchStrategy] (val x: Self) extends AnyVal {
       
       inline def setAdvancedFind(value: (js.Function1[/* arg */ RawInterpreterValue, Boolean], SimpleRangeValue) => Double): Self = StObject.set(x, "advancedFind", js.Any.fromFunction2(value))
       

@@ -17,7 +17,8 @@ object CardViewColumnCancelEventArgs {
     __obj.asInstanceOf[CardViewColumnCancelEventArgs]
   }
   
-  extension [Self <: CardViewColumnCancelEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewColumnCancelEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: BootstrapCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
   }

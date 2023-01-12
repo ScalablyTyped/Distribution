@@ -20,7 +20,8 @@ object AnimationTimeline {
     __obj.asInstanceOf[AnimationTimeline]
   }
   
-  extension [Self <: AnimationTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationTimeline] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     

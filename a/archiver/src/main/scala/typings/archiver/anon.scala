@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[PartialEntryData]
     }
     
-    extension [Self <: PartialEntryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEntryData] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date | String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Processed]
     }
     
-    extension [Self <: Processed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Processed] (val x: Self) extends AnyVal {
       
       inline def setProcessed(value: Double): Self = StObject.set(x, "processed", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[ProcessedBytes]
     }
     
-    extension [Self <: ProcessedBytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessedBytes] (val x: Self) extends AnyVal {
       
       inline def setProcessedBytes(value: Double): Self = StObject.set(x, "processedBytes", value.asInstanceOf[js.Any])
       

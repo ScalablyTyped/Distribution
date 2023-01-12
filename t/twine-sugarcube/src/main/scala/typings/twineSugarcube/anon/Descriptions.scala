@@ -147,7 +147,8 @@ object Descriptions {
     __obj.asInstanceOf[Descriptions]
   }
   
-  extension [Self <: Descriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptions] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: `true` | StringDictionary[String] | DescriptionHandler): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

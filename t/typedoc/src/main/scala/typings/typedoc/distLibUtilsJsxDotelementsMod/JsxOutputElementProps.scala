@@ -21,7 +21,8 @@ object JsxOutputElementProps {
     __obj.asInstanceOf[JsxOutputElementProps]
   }
   
-  extension [Self <: JsxOutputElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxOutputElementProps] (val x: Self) extends AnyVal {
     
     inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     

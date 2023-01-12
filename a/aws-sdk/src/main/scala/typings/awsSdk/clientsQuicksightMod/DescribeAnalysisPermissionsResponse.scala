@@ -38,7 +38,8 @@ object DescribeAnalysisPermissionsResponse {
     __obj.asInstanceOf[DescribeAnalysisPermissionsResponse]
   }
   
-  extension [Self <: DescribeAnalysisPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAnalysisPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAnalysisArn(value: Arn): Self = StObject.set(x, "AnalysisArn", value.asInstanceOf[js.Any])
     

@@ -267,7 +267,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Characteristic]
     }
     
-    extension [Self <: Characteristic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CharacteristicOptions]
     }
     
-    extension [Self <: CharacteristicOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharacteristicOptions] (val x: Self) extends AnyVal {
       
       inline def setDescriptors(value: js.Array[Descriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
       
@@ -447,7 +449,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Descriptor]
     }
     
-    extension [Self <: Descriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -468,7 +471,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DescriptorOptions]
     }
     
-    extension [Self <: DescriptorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptorOptions] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
@@ -493,7 +497,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PrimaryService]
     }
     
-    extension [Self <: PrimaryService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryService] (val x: Self) extends AnyVal {
       
       inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       
@@ -516,7 +521,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PrimaryServiceOptions]
     }
     
-    extension [Self <: PrimaryServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrimaryServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setCharacteristics(value: js.Array[Characteristic]): Self = StObject.set(x, "characteristics", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SignatureInfo {
     __obj.asInstanceOf[SignatureInfo]
   }
   
-  extension [Self <: SignatureInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureInfo] (val x: Self) extends AnyVal {
     
     inline def setCustomerKmsKeyVersion(value: String): Self = StObject.set(x, "customerKmsKeyVersion", value.asInstanceOf[js.Any])
     

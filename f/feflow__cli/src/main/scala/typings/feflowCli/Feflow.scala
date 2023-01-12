@@ -90,7 +90,8 @@ object Feflow {
       __obj.asInstanceOf[ctx]
     }
     
-    extension [Self <: ctx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ctx] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: _empty): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

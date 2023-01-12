@@ -15,7 +15,8 @@ object ContentApplicationjsonAllowautomerge {
     __obj.asInstanceOf[ContentApplicationjsonAllowautomerge]
   }
   
-  extension [Self <: ContentApplicationjsonAllowautomerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonAllowautomerge] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonAllowautomerge): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

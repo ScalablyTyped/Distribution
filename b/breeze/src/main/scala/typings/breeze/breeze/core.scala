@@ -30,7 +30,8 @@ object core {
       __obj.asInstanceOf[EnumSymbol]
     }
     
-    extension [Self <: EnumSymbol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumSymbol] (val x: Self) extends AnyVal {
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
@@ -81,7 +82,8 @@ object core {
       __obj.asInstanceOf[IEnum]
     }
     
-    extension [Self <: IEnum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEnum] (val x: Self) extends AnyVal {
       
       inline def setContains(value: Any => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       

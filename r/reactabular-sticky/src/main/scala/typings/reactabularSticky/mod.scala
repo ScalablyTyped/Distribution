@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[StickyBodyProps]
     }
     
-    extension [Self <: StickyBodyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyBodyProps] (val x: Self) extends AnyVal {
       
       inline def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[StickyHeaderProps]
     }
     
-    extension [Self <: StickyHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StickyHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setOnScroll(value: /* e */ PartialUIEvent => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
       

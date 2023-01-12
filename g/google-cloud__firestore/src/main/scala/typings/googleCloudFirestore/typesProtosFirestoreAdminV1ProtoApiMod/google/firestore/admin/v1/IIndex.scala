@@ -29,7 +29,8 @@ object IIndex {
     __obj.asInstanceOf[IIndex]
   }
   
-  extension [Self <: IIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIndex] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[IIndexField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

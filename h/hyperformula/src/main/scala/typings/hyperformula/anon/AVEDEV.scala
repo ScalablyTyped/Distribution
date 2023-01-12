@@ -76,7 +76,8 @@ object AVEDEV {
     __obj.asInstanceOf[AVEDEV]
   }
   
-  extension [Self <: AVEDEV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVEDEV] (val x: Self) extends AnyVal {
     
     inline def setAVEDEV(value: MethodParametersRepeatLastArgs): Self = StObject.set(x, "AVEDEV", value.asInstanceOf[js.Any])
     

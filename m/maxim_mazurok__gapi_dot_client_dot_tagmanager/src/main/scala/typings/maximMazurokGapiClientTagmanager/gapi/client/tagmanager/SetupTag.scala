@@ -19,7 +19,8 @@ object SetupTag {
     __obj.asInstanceOf[SetupTag]
   }
   
-  extension [Self <: SetupTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetupTag] (val x: Self) extends AnyVal {
     
     inline def setStopOnSetupFailure(value: Boolean): Self = StObject.set(x, "stopOnSetupFailure", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object TransactionSpec {
     __obj.asInstanceOf[TransactionSpec]
   }
   
-  extension [Self <: TransactionSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionSpec] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Annotation[Any] | js.Array[Annotation[Any]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

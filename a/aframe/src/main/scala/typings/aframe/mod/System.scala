@@ -34,7 +34,8 @@ object System {
     __obj.asInstanceOf[System[T]]
   }
   
-  extension [Self <: System[?], T /* <: js.Object */](x: Self & System[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: System[?], T /* <: js.Object */] (val x: Self & System[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

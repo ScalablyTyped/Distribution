@@ -15,7 +15,8 @@ object RemoveIndices {
     __obj.asInstanceOf[RemoveIndices]
   }
   
-  extension [Self <: RemoveIndices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveIndices] (val x: Self) extends AnyVal {
     
     inline def setRemoveIndices(value: Boolean): Self = StObject.set(x, "removeIndices", value.asInstanceOf[js.Any])
     

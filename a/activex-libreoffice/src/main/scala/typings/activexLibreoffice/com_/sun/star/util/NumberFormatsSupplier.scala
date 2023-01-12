@@ -43,7 +43,8 @@ object NumberFormatsSupplier {
     __obj.asInstanceOf[NumberFormatsSupplier]
   }
   
-  extension [Self <: NumberFormatsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatsSupplier] (val x: Self) extends AnyVal {
     
     inline def setCreateWithDefaultLocale(value: () => Unit): Self = StObject.set(x, "createWithDefaultLocale", js.Any.fromFunction0(value))
     

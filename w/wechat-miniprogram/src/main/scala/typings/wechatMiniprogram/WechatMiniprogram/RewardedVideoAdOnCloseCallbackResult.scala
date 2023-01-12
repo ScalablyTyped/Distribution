@@ -18,7 +18,8 @@ object RewardedVideoAdOnCloseCallbackResult {
     __obj.asInstanceOf[RewardedVideoAdOnCloseCallbackResult]
   }
   
-  extension [Self <: RewardedVideoAdOnCloseCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RewardedVideoAdOnCloseCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setIsEnded(value: Boolean): Self = StObject.set(x, "isEnded", value.asInstanceOf[js.Any])
   }

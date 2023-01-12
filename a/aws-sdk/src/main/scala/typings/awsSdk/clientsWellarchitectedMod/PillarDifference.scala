@@ -27,7 +27,8 @@ object PillarDifference {
     __obj.asInstanceOf[PillarDifference]
   }
   
-  extension [Self <: PillarDifference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PillarDifference] (val x: Self) extends AnyVal {
     
     inline def setDifferenceStatus(value: DifferenceStatus): Self = StObject.set(x, "DifferenceStatus", value.asInstanceOf[js.Any])
     

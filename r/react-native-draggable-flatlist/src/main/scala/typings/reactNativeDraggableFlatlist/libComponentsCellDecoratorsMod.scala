@@ -36,7 +36,8 @@ object libComponentsCellDecoratorsMod {
       __obj.asInstanceOf[OpacityProps]
     }
     
-    extension [Self <: OpacityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpacityProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libComponentsCellDecoratorsMod {
       __obj.asInstanceOf[ScaleProps]
     }
     
-    extension [Self <: ScaleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleProps] (val x: Self) extends AnyVal {
       
       inline def setActiveScale(value: Double): Self = StObject.set(x, "activeScale", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object libComponentsCellDecoratorsMod {
       __obj.asInstanceOf[ShadowProps]
     }
     
-    extension [Self <: ShadowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShadowProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

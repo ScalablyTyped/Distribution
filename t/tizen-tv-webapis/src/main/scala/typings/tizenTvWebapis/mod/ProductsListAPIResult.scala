@@ -29,7 +29,8 @@ object ProductsListAPIResult {
     __obj.asInstanceOf[ProductsListAPIResult]
   }
   
-  extension [Self <: ProductsListAPIResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductsListAPIResult] (val x: Self) extends AnyVal {
     
     inline def setCPResult(value: String): Self = StObject.set(x, "CPResult", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PrimaryAdminChangedEvent {
     __obj.asInstanceOf[PrimaryAdminChangedEvent]
   }
   
-  extension [Self <: PrimaryAdminChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryAdminChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

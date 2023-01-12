@@ -27,7 +27,8 @@ object esComponentsFormFormArrayMod {
       __obj.asInstanceOf[FormArrayField]
     }
     
-    extension [Self <: FormArrayField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormArrayField] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object esComponentsFormFormArrayMod {
       __obj.asInstanceOf[FormArrayProps]
     }
     
-    extension [Self <: FormArrayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormArrayProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Array[FormArrayField], FormArrayOperation) => js.Array[ReactElement]): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

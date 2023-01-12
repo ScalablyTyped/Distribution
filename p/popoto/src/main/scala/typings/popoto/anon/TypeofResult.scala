@@ -92,7 +92,8 @@ object TypeofResult {
     __obj.asInstanceOf[TypeofResult]
   }
   
-  extension [Self <: TypeofResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofResult] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

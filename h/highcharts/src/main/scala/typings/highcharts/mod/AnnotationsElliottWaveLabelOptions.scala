@@ -145,7 +145,8 @@ object AnnotationsElliottWaveLabelOptions {
     __obj.asInstanceOf[AnnotationsElliottWaveLabelOptions]
   }
   
-  extension [Self <: AnnotationsElliottWaveLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsElliottWaveLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

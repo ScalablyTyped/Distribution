@@ -25,7 +25,8 @@ object iconSvgIconMod {
       __obj.asInstanceOf[SvgIcon]
     }
     
-    extension [Self <: SvgIcon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIcon] (val x: Self) extends AnyVal {
       
       inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       

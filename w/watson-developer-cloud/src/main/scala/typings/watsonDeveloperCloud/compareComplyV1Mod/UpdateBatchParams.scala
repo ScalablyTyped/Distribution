@@ -29,7 +29,8 @@ object UpdateBatchParams {
     __obj.asInstanceOf[UpdateBatchParams]
   }
   
-  extension [Self <: UpdateBatchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBatchParams] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

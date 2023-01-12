@@ -16,7 +16,8 @@ object V1Beta1GenerateServiceIdentityResponse {
     __obj.asInstanceOf[V1Beta1GenerateServiceIdentityResponse]
   }
   
-  extension [Self <: V1Beta1GenerateServiceIdentityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V1Beta1GenerateServiceIdentityResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: V1Beta1ServiceIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CommitOptions {
     __obj.asInstanceOf[CommitOptions]
   }
   
-  extension [Self <: CommitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitOptions] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

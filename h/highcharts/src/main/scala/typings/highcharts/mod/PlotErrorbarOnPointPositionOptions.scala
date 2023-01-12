@@ -39,7 +39,8 @@ object PlotErrorbarOnPointPositionOptions {
     __obj.asInstanceOf[PlotErrorbarOnPointPositionOptions]
   }
   
-  extension [Self <: PlotErrorbarOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotErrorbarOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

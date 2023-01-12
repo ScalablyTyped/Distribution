@@ -19,7 +19,8 @@ object SecurityGetUserRequest {
     __obj.asInstanceOf[SecurityGetUserRequest]
   }
   
-  extension [Self <: SecurityGetUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetUserRequest] (val x: Self) extends AnyVal {
     
     inline def setUsername(value: Username | js.Array[Username]): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     

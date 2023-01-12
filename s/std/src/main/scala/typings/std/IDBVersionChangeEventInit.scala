@@ -21,7 +21,8 @@ object IDBVersionChangeEventInit {
     __obj.asInstanceOf[IDBVersionChangeEventInit]
   }
   
-  extension [Self <: IDBVersionChangeEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBVersionChangeEventInit] (val x: Self) extends AnyVal {
     
     inline def setNewVersion(value: Double): Self = StObject.set(x, "newVersion", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CMsgClientLogonResponse {
     __obj.asInstanceOf[CMsgClientLogonResponse]
   }
   
-  extension [Self <: CMsgClientLogonResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMsgClientLogonResponse] (val x: Self) extends AnyVal {
     
     inline def setEresult(value: EResult): Self = StObject.set(x, "eresult", value.asInstanceOf[js.Any])
     

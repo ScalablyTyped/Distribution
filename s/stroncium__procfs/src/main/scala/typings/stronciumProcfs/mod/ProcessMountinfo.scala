@@ -45,7 +45,8 @@ object ProcessMountinfo {
     __obj.asInstanceOf[ProcessMountinfo]
   }
   
-  extension [Self <: ProcessMountinfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessMountinfo] (val x: Self) extends AnyVal {
     
     inline def setDevId(value: Double): Self = StObject.set(x, "devId", value.asInstanceOf[js.Any])
     

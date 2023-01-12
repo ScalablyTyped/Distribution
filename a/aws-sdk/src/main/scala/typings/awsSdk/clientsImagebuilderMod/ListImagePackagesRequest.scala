@@ -28,7 +28,8 @@ object ListImagePackagesRequest {
     __obj.asInstanceOf[ListImagePackagesRequest]
   }
   
-  extension [Self <: ListImagePackagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagePackagesRequest] (val x: Self) extends AnyVal {
     
     inline def setImageBuildVersionArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageBuildVersionArn", value.asInstanceOf[js.Any])
     

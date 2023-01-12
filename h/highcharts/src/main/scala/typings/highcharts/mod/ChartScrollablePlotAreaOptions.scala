@@ -46,7 +46,8 @@ object ChartScrollablePlotAreaOptions {
     __obj.asInstanceOf[ChartScrollablePlotAreaOptions]
   }
   
-  extension [Self <: ChartScrollablePlotAreaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartScrollablePlotAreaOptions] (val x: Self) extends AnyVal {
     
     inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
     

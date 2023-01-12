@@ -26,7 +26,8 @@ object libUtilRelayRuntimeTypesMod {
       __obj.asInstanceOf[CacheConfig]
     }
     
-    extension [Self <: CacheConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheConfig] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libUtilRelayRuntimeTypesMod {
       __obj.asInstanceOf[Disposable]
     }
     
-    extension [Self <: Disposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -126,7 +128,8 @@ object libUtilRelayRuntimeTypesMod {
       __obj.asInstanceOf[OperationType]
     }
     
-    extension [Self <: OperationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationType] (val x: Self) extends AnyVal {
       
       inline def setRawResponse(value: Any): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
       

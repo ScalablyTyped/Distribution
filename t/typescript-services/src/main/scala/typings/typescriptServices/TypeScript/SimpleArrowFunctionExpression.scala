@@ -45,7 +45,8 @@ object SimpleArrowFunctionExpression {
     __obj.asInstanceOf[SimpleArrowFunctionExpression]
   }
   
-  extension [Self <: SimpleArrowFunctionExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleArrowFunctionExpression] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object WorkbookChartFont {
     __obj.asInstanceOf[WorkbookChartFont]
   }
   
-  extension [Self <: WorkbookChartFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartFont] (val x: Self) extends AnyVal {
     
     inline def setBold(value: NullableOption[Boolean]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

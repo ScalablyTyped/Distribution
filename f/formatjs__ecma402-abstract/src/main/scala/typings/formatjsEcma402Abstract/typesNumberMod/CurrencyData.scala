@@ -19,7 +19,8 @@ object CurrencyData {
     __obj.asInstanceOf[CurrencyData]
   }
   
-  extension [Self <: CurrencyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrencyData] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: LDMLPluralRuleMap[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

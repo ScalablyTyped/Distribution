@@ -27,7 +27,8 @@ object IELangDBEvents {
     __obj.asInstanceOf[IELangDBEvents]
   }
   
-  extension [Self <: IELangDBEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangDBEvents] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: JQueryDeferred[Any]): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     

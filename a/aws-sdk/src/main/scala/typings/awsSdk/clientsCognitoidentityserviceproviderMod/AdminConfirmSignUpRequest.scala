@@ -28,7 +28,8 @@ object AdminConfirmSignUpRequest {
     __obj.asInstanceOf[AdminConfirmSignUpRequest]
   }
   
-  extension [Self <: AdminConfirmSignUpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminConfirmSignUpRequest] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     

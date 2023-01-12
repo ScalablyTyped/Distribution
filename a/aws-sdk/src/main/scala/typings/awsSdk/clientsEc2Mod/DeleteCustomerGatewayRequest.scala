@@ -23,7 +23,8 @@ object DeleteCustomerGatewayRequest {
     __obj.asInstanceOf[DeleteCustomerGatewayRequest]
   }
   
-  extension [Self <: DeleteCustomerGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomerGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerGatewayId(value: CustomerGatewayId): Self = StObject.set(x, "CustomerGatewayId", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object NewExtent {
     __obj.asInstanceOf[NewExtent]
   }
   
-  extension [Self <: NewExtent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewExtent] (val x: Self) extends AnyVal {
     
     inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
     

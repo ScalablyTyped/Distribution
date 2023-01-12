@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Behavior]
     }
     
-    extension [Self <: Behavior](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Behavior] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: AUTOMATIC): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[BehaviorMaxSize]
     }
     
-    extension [Self <: BehaviorMaxSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BehaviorMaxSize] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: ATMOST): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[MaxSize]
     }
     
-    extension [Self <: MaxSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxSize] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: EXACTLY | RANGE): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[MinSize]
     }
     
-    extension [Self <: MinSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinSize] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: ATLEAST): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       

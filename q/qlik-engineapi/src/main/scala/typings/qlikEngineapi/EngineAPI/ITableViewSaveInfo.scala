@@ -44,7 +44,8 @@ object ITableViewSaveInfo {
     __obj.asInstanceOf[ITableViewSaveInfo]
   }
   
-  extension [Self <: ITableViewSaveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableViewSaveInfo] (val x: Self) extends AnyVal {
     
     inline def setQBroomPoints(value: js.Array[ITableViewBroomPointSaveInfo]): Self = StObject.set(x, "qBroomPoints", value.asInstanceOf[js.Any])
     

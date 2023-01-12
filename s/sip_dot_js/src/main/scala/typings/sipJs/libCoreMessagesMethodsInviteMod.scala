@@ -71,7 +71,8 @@ object libCoreMessagesMethodsInviteMod {
       __obj.asInstanceOf[OutgoingInviteRequestDelegate]
     }
     
-    extension [Self <: OutgoingInviteRequestDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingInviteRequestDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnAccept(value: /* response */ AckableIncomingResponseWithSession => Unit): Self = StObject.set(x, "onAccept", js.Any.fromFunction1(value))
       
@@ -100,7 +101,8 @@ object libCoreMessagesMethodsInviteMod {
       __obj.asInstanceOf[OutgoingResponseWithSession]
     }
     
-    extension [Self <: OutgoingResponseWithSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingResponseWithSession] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     }

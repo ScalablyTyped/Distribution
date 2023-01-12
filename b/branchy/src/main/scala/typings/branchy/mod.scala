@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ConcurrencyOptions[TFn]]
     }
     
-    extension [Self <: ConcurrencyOptions[?], TFn /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ConcurrencyOptions[TFn]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcurrencyOptions[?], TFn /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & ConcurrencyOptions[TFn]) extends AnyVal {
       
       inline def setPriority(value: /* args */ Parameters[TFn] => Double | js.Promise[Double]): Self = StObject.set(x, "priority", js.Any.fromFunction1(value))
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[Options[TFn]]
     }
     
-    extension [Self <: Options[?], TFn /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & Options[TFn]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], TFn /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & Options[TFn]) extends AnyVal {
       
       inline def setConcurrent(value: ConcurrencyOptions[TFn] | Double | auto | (ConcurrencyContext[TFn, Any])): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
       

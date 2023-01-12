@@ -28,7 +28,8 @@ object ListResourceInventoryRequest {
     __obj.asInstanceOf[ListResourceInventoryRequest]
   }
   
-  extension [Self <: ListResourceInventoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceInventoryRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: InventoryFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

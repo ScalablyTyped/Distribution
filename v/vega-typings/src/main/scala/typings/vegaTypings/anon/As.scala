@@ -60,7 +60,8 @@ object As {
     __obj.asInstanceOf[As]
   }
   
-  extension [Self <: As](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: As] (val x: Self) extends AnyVal {
     
     inline def setAs(value: OrArray[String | OperatorParam]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

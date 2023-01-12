@@ -48,7 +48,8 @@ object DefaultMatch {
     __obj.asInstanceOf[DefaultMatch]
   }
   
-  extension [Self <: DefaultMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultMatch] (val x: Self) extends AnyVal {
     
     inline def setDefault(
       value: (/* response */ RequestLibResponse, /* requestOptions */ RequestLibOptions) => RequestLibResponse

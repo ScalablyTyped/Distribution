@@ -89,7 +89,8 @@ object FlashFrame {
     __obj.asInstanceOf[FlashFrame]
   }
   
-  extension [Self <: FlashFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashFrame] (val x: Self) extends AnyVal {
     
     inline def setActionScript(value: Any): Self = StObject.set(x, "actionScript", value.asInstanceOf[js.Any])
     

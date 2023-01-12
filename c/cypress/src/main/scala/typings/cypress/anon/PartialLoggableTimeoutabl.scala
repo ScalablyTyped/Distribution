@@ -18,7 +18,8 @@ object PartialLoggableTimeoutabl {
     __obj.asInstanceOf[PartialLoggableTimeoutabl]
   }
   
-  extension [Self <: PartialLoggableTimeoutabl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLoggableTimeoutabl] (val x: Self) extends AnyVal {
     
     inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

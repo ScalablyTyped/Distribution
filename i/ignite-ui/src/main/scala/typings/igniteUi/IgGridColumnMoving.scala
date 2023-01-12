@@ -294,7 +294,8 @@ object IgGridColumnMoving {
     __obj.asInstanceOf[IgGridColumnMoving]
   }
   
-  extension [Self <: IgGridColumnMoving](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumnMoving] (val x: Self) extends AnyVal {
     
     inline def setAddMovingDropdown(value: Boolean): Self = StObject.set(x, "addMovingDropdown", value.asInstanceOf[js.Any])
     

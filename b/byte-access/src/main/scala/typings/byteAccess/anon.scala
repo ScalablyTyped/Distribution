@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Double => Double): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

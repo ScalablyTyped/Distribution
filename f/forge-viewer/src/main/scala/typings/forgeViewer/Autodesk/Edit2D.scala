@@ -143,7 +143,8 @@ object Edit2D {
       __obj.asInstanceOf[MeasureTransform]
     }
     
-    extension [Self <: MeasureTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureTransform] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Vector2 => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -302,7 +303,8 @@ object Edit2D {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

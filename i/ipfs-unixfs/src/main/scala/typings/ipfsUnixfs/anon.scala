@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[BlockSizes]
     }
     
-    extension [Self <: BlockSizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockSizes] (val x: Self) extends AnyVal {
       
       inline def setBlockSizes(value: js.Array[Double]): Self = StObject.set(x, "blockSizes", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[FractionalNanoseconds]
     }
     
-    extension [Self <: FractionalNanoseconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FractionalNanoseconds] (val x: Self) extends AnyVal {
       
       inline def setFractionalNanoseconds(value: Double): Self = StObject.set(x, "FractionalNanoseconds", value.asInstanceOf[js.Any])
       

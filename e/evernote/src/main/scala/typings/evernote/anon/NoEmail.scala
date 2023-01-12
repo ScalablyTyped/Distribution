@@ -23,7 +23,8 @@ object NoEmail {
     __obj.asInstanceOf[NoEmail]
   }
   
-  extension [Self <: NoEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoEmail] (val x: Self) extends AnyVal {
     
     inline def setNoEmail(value: Boolean): Self = StObject.set(x, "noEmail", value.asInstanceOf[js.Any])
     

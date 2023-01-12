@@ -28,7 +28,8 @@ object StyleSheetFactoryOptions {
     __obj.asInstanceOf[StyleSheetFactoryOptions]
   }
   
-  extension [Self <: StyleSheetFactoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetFactoryOptions] (val x: Self) extends AnyVal {
     
     inline def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
     

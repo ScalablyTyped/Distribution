@@ -45,7 +45,8 @@ object gapi {
           __obj.asInstanceOf[Activities]
         }
         
-        extension [Self <: Activities](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Activities] (val x: Self) extends AnyVal {
           
           inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           
@@ -115,7 +116,8 @@ object gapi {
           __obj.asInstanceOf[Activity]
         }
         
-        extension [Self <: Activity](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
           
           inline def setActor(value: CallerType): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
           
@@ -190,7 +192,8 @@ object gapi {
           __obj.asInstanceOf[Channel]
         }
         
-        extension [Self <: Channel](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
           
           inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
           
@@ -296,7 +299,8 @@ object gapi {
           __obj.asInstanceOf[NestedParameter]
         }
         
-        extension [Self <: NestedParameter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: NestedParameter] (val x: Self) extends AnyVal {
           
           inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
           
@@ -361,7 +365,8 @@ object gapi {
           __obj.asInstanceOf[UsageReport]
         }
         
-        extension [Self <: UsageReport](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UsageReport] (val x: Self) extends AnyVal {
           
           inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
           
@@ -414,7 +419,8 @@ object gapi {
           __obj.asInstanceOf[UsageReports]
         }
         
-        extension [Self <: UsageReports](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UsageReports] (val x: Self) extends AnyVal {
           
           inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
           

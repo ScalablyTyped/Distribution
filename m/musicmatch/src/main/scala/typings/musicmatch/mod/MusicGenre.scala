@@ -29,7 +29,8 @@ object MusicGenre {
     __obj.asInstanceOf[MusicGenre]
   }
   
-  extension [Self <: MusicGenre](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MusicGenre] (val x: Self) extends AnyVal {
     
     inline def setMusic_genre_id(value: Double): Self = StObject.set(x, "music_genre_id", value.asInstanceOf[js.Any])
     

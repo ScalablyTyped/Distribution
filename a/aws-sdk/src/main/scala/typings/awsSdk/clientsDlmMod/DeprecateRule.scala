@@ -28,7 +28,8 @@ object DeprecateRule {
     __obj.asInstanceOf[DeprecateRule]
   }
   
-  extension [Self <: DeprecateRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecateRule] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Count): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

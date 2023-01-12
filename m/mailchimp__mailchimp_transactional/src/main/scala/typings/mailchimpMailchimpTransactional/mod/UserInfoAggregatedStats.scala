@@ -38,7 +38,8 @@ object UserInfoAggregatedStats {
     __obj.asInstanceOf[UserInfoAggregatedStats]
   }
   
-  extension [Self <: UserInfoAggregatedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInfoAggregatedStats] (val x: Self) extends AnyVal {
     
     inline def setAll_time(value: UserInfoStats): Self = StObject.set(x, "all_time", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RollupDeleteJobRequest {
     __obj.asInstanceOf[RollupDeleteJobRequest]
   }
   
-  extension [Self <: RollupDeleteJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupDeleteJobRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object FlowStart {
     __obj.asInstanceOf[FlowStart]
   }
   
-  extension [Self <: FlowStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowStart] (val x: Self) extends AnyVal {
     
     inline def setNode(
       value: FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration

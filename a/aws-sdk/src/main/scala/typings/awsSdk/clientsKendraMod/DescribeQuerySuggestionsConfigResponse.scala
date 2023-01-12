@@ -58,7 +58,8 @@ object DescribeQuerySuggestionsConfigResponse {
     __obj.asInstanceOf[DescribeQuerySuggestionsConfigResponse]
   }
   
-  extension [Self <: DescribeQuerySuggestionsConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQuerySuggestionsConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setIncludeQueriesWithoutUserInformation(value: ObjectBoolean): Self = StObject.set(x, "IncludeQueriesWithoutUserInformation", value.asInstanceOf[js.Any])
     

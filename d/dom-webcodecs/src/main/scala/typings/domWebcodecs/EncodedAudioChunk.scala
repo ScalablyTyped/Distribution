@@ -29,7 +29,8 @@ object EncodedAudioChunk {
     __obj.asInstanceOf[EncodedAudioChunk]
   }
   
-  extension [Self <: EncodedAudioChunk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedAudioChunk] (val x: Self) extends AnyVal {
     
     inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     

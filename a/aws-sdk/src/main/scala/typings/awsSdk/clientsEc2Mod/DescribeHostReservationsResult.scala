@@ -23,7 +23,8 @@ object DescribeHostReservationsResult {
     __obj.asInstanceOf[DescribeHostReservationsResult]
   }
   
-  extension [Self <: DescribeHostReservationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHostReservationsResult] (val x: Self) extends AnyVal {
     
     inline def setHostReservationSet(value: HostReservationSet): Self = StObject.set(x, "HostReservationSet", value.asInstanceOf[js.Any])
     

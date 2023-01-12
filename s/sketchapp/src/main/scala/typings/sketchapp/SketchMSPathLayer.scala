@@ -56,7 +56,8 @@ object SketchMSPathLayer {
     __obj.asInstanceOf[SketchMSPathLayer]
   }
   
-  extension [Self <: SketchMSPathLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSPathLayer] (val x: Self) extends AnyVal {
     
     inline def setEdited(value: Boolean): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
     

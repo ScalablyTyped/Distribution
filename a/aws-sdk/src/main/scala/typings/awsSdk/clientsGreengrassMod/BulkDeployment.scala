@@ -28,7 +28,8 @@ object BulkDeployment {
     __obj.asInstanceOf[BulkDeployment]
   }
   
-  extension [Self <: BulkDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkDeployment] (val x: Self) extends AnyVal {
     
     inline def setBulkDeploymentArn(value: string): Self = StObject.set(x, "BulkDeploymentArn", value.asInstanceOf[js.Any])
     

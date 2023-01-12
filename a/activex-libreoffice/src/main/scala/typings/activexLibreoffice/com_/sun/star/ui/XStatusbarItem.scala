@@ -83,7 +83,8 @@ object XStatusbarItem {
     __obj.asInstanceOf[XStatusbarItem]
   }
   
-  extension [Self <: XStatusbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStatusbarItem] (val x: Self) extends AnyVal {
     
     inline def setAccessibleName(value: String): Self = StObject.set(x, "AccessibleName", value.asInstanceOf[js.Any])
     

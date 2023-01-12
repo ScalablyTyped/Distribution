@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1ObjectTrackingConfig {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ObjectTrackingConfig]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1ObjectTrackingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1ObjectTrackingConfig] (val x: Self) extends AnyVal {
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

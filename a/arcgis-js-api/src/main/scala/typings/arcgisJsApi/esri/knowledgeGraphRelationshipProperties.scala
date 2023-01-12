@@ -29,7 +29,8 @@ object knowledgeGraphRelationshipProperties {
     __obj.asInstanceOf[knowledgeGraphRelationshipProperties]
   }
   
-  extension [Self <: knowledgeGraphRelationshipProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: knowledgeGraphRelationshipProperties] (val x: Self) extends AnyVal {
     
     inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
     

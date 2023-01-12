@@ -50,7 +50,8 @@ object ASPxClientHtmlEditorInsertLinkCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertLinkCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertLinkCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
     

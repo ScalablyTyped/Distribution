@@ -31,7 +31,8 @@ object DisplayApplianceDocument {
     __obj.asInstanceOf[DisplayApplianceDocument]
   }
   
-  extension [Self <: DisplayApplianceDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayApplianceDocument] (val x: Self) extends AnyVal {
     
     inline def setAttachmentDescription(value: String): Self = StObject.set(x, "attachmentDescription", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object distSrcObjectMod {
       __obj.asInstanceOf[NewObjectOptions]
     }
     
-    extension [Self <: NewObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: `unixfs-dir`): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object distSrcObjectMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setPin(value: Boolean): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object distSrcObjectMod {
       __obj.asInstanceOf[StatResult]
     }
     
-    extension [Self <: StatResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "BlockSize", value.asInstanceOf[js.Any])
       

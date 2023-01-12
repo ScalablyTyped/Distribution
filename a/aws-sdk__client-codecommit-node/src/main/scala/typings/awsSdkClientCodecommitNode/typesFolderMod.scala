@@ -30,7 +30,8 @@ object typesFolderMod {
       __obj.asInstanceOf[Folder]
     }
     
-    extension [Self <: Folder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       

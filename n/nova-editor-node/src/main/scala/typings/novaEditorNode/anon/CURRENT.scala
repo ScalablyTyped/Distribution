@@ -36,7 +36,8 @@ object CURRENT {
     __obj.asInstanceOf[CURRENT]
   }
   
-  extension [Self <: CURRENT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CURRENT] (val x: Self) extends AnyVal {
     
     inline def setCURRENT(value: FileSystemBitField): Self = StObject.set(x, "CURRENT", value.asInstanceOf[js.Any])
     

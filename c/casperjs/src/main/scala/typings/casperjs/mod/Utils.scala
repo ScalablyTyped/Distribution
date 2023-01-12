@@ -92,7 +92,8 @@ object Utils {
     __obj.asInstanceOf[Utils]
   }
   
-  extension [Self <: Utils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
     
     inline def setBetterTypeOf(value: Any => Any): Self = StObject.set(x, "betterTypeOf", js.Any.fromFunction1(value))
     

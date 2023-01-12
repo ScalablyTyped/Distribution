@@ -48,7 +48,8 @@ object expandable {
       __obj.asInstanceOf[IGridExpandableApi[TEntity]]
     }
     
-    extension [Self <: IGridExpandableApi[?], TEntity](x: Self & IGridExpandableApi[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridExpandableApi[?], TEntity] (val x: Self & IGridExpandableApi[TEntity]) extends AnyVal {
       
       inline def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
       
@@ -106,7 +107,8 @@ object expandable {
       __obj.asInstanceOf[typings.uiGrid.mod.expandable.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.expandable.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.expandable.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableExpandable(value: Boolean): Self = StObject.set(x, "enableExpandable", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object expandable {
       __obj.asInstanceOf[typings.uiGrid.mod.expandable.IGridRow]
     }
     
-    extension [Self <: typings.uiGrid.mod.expandable.IGridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.expandable.IGridRow] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       

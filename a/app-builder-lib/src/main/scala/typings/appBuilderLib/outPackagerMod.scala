@@ -169,7 +169,8 @@ object outPackagerMod {
       __obj.asInstanceOf[BuildResult]
     }
     
-    extension [Self <: BuildResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildResult] (val x: Self) extends AnyVal {
       
       inline def setArtifactPaths(value: js.Array[String]): Self = StObject.set(x, "artifactPaths", value.asInstanceOf[js.Any])
       

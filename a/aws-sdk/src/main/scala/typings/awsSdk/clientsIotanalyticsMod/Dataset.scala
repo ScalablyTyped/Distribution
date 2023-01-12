@@ -68,7 +68,8 @@ object Dataset {
     __obj.asInstanceOf[Dataset]
   }
   
-  extension [Self <: Dataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dataset] (val x: Self) extends AnyVal {
     
     inline def setActions(value: DatasetActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

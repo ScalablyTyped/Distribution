@@ -23,7 +23,8 @@ object ASPxClientSplitterPaneEventArgs {
     __obj.asInstanceOf[ASPxClientSplitterPaneEventArgs]
   }
   
-  extension [Self <: ASPxClientSplitterPaneEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSplitterPaneEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPane(value: ASPxClientSplitterPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
   }

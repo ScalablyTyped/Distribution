@@ -646,7 +646,8 @@ object sapUiWebcMainAvatarMod {
       __obj.asInstanceOf[AvatarSettings]
     }
     
-    extension [Self <: AvatarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvatarSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

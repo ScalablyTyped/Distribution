@@ -29,7 +29,8 @@ object grpc {
     __obj.asInstanceOf[grpc]
   }
   
-  extension [Self <: grpc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: grpc] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Grpc_): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

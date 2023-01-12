@@ -78,7 +78,8 @@ object libUtilResponsiveObserveMod {
       __obj.asInstanceOf[BreakpointMap]
     }
     
-    extension [Self <: BreakpointMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointMap] (val x: Self) extends AnyVal {
       
       inline def setLg(value: String): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object libUtilResponsiveObserveMod {
       __obj.asInstanceOf[ScreenMap]
     }
     
-    extension [Self <: ScreenMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenMap] (val x: Self) extends AnyVal {
       
       inline def setLg(value: Boolean): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object libUtilResponsiveObserveMod {
       __obj.asInstanceOf[ScreenSizeMap]
     }
     
-    extension [Self <: ScreenSizeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenSizeMap] (val x: Self) extends AnyVal {
       
       inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object Int64 {
     __obj.asInstanceOf[Int64]
   }
   
-  extension [Self <: Int64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Int64] (val x: Self) extends AnyVal {
     
     inline def setHighOrder(value: Double): Self = StObject.set(x, "highOrder", value.asInstanceOf[js.Any])
     

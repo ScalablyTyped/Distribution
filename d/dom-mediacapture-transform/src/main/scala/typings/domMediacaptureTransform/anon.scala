@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[typings.domMediacaptureTransform.anon.MediaStreamTrackGenerator]
     }
     
-    extension [Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackGenerator] (val x: Self) extends AnyVal {
       
       inline def setKind(value: typings.domMediacaptureTransform.MediaStreamTrackGeneratorKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[typings.domMediacaptureTransform.anon.MediaStreamTrackGeneratorKind]
     }
     
-    extension [Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackGeneratorKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackGeneratorKind] (val x: Self) extends AnyVal {
       
       inline def setKind(value: typings.domMediacaptureTransform.MediaStreamTrackGeneratorKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[typings.domMediacaptureTransform.anon.MediaStreamTrackProcessor]
     }
     
-    extension [Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.domMediacaptureTransform.anon.MediaStreamTrackProcessor] (val x: Self) extends AnyVal {
       
       inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[MediaStreamTrackProcessorMaxBufferSize]
     }
     
-    extension [Self <: MediaStreamTrackProcessorMaxBufferSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaStreamTrackProcessorMaxBufferSize] (val x: Self) extends AnyVal {
       
       inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
       

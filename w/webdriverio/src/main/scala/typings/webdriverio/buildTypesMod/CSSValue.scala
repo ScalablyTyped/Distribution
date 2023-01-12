@@ -22,7 +22,8 @@ object CSSValue {
     __obj.asInstanceOf[CSSValue]
   }
   
-  extension [Self <: CSSValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSValue] (val x: Self) extends AnyVal {
     
     inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     

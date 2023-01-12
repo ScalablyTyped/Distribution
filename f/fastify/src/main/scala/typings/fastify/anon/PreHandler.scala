@@ -71,7 +71,8 @@ object PreHandler {
     __obj.asInstanceOf[PreHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, SchemaCompiler, TypeProvider]]
   }
   
-  extension [Self <: PreHandler[?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig /* <: ContextConfigDefault */, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */](x: Self & (PreHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, SchemaCompiler, TypeProvider])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreHandler[?, ?, ?, ?, ?, ?, ?], RawServer /* <: RawServerBase */, RawRequest /* <: RawRequestDefaultExpression[RawServer] */, RawReply /* <: RawReplyDefaultExpression[RawServer] */, RouteGeneric /* <: RouteGenericInterface */, ContextConfig /* <: ContextConfigDefault */, SchemaCompiler /* <: FastifySchema */, TypeProvider /* <: FastifyTypeProvider */] (val x: Self & (PreHandler[RawServer, RawRequest, RawReply, RouteGeneric, ContextConfig, SchemaCompiler, TypeProvider])) extends AnyVal {
     
     inline def setPreHandler(
       value: (preHandlerHookHandler[

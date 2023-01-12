@@ -66,7 +66,8 @@ object libComponentsDocumentCardDocumentCardTitleDotbaseMod {
       __obj.asInstanceOf[IDocumentCardTitleState]
     }
     
-    extension [Self <: IDocumentCardTitleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardTitleState] (val x: Self) extends AnyVal {
       
       inline def setClientWidth(value: Double): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object TemporalUnit {
     __obj.asInstanceOf[TemporalUnit]
   }
   
-  extension [Self <: TemporalUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporalUnit] (val x: Self) extends AnyVal {
     
     inline def setDateBased(value: Boolean): Self = StObject.set(x, "dateBased", value.asInstanceOf[js.Any])
     

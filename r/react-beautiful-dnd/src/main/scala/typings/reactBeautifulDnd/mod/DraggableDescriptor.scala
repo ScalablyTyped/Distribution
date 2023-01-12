@@ -25,7 +25,8 @@ object DraggableDescriptor {
     __obj.asInstanceOf[DraggableDescriptor]
   }
   
-  extension [Self <: DraggableDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     

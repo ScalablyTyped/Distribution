@@ -84,7 +84,8 @@ object libTypesSolarTimeMod {
       __obj.asInstanceOf[SolarTime]
     }
     
-    extension [Self <: SolarTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SolarTime] (val x: Self) extends AnyVal {
       
       inline def setAfternoon(value: Double => Double): Self = StObject.set(x, "afternoon", js.Any.fromFunction1(value))
       

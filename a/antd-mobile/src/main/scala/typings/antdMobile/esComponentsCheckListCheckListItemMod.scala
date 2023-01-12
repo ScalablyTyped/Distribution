@@ -323,7 +323,8 @@ object esComponentsCheckListCheckListItemMod {
       __obj.asInstanceOf[CheckListItemProps]
     }
     
-    extension [Self <: CheckListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckListItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

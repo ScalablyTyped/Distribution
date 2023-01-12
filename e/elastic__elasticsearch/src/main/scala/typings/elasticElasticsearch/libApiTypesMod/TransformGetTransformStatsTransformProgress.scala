@@ -29,7 +29,8 @@ object TransformGetTransformStatsTransformProgress {
     __obj.asInstanceOf[TransformGetTransformStatsTransformProgress]
   }
   
-  extension [Self <: TransformGetTransformStatsTransformProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformStatsTransformProgress] (val x: Self) extends AnyVal {
     
     inline def setDocs_indexed(value: long): Self = StObject.set(x, "docs_indexed", value.asInstanceOf[js.Any])
     

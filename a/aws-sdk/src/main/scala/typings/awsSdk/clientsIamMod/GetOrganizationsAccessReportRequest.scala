@@ -33,7 +33,8 @@ object GetOrganizationsAccessReportRequest {
     __obj.asInstanceOf[GetOrganizationsAccessReportRequest]
   }
   
-  extension [Self <: GetOrganizationsAccessReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOrganizationsAccessReportRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

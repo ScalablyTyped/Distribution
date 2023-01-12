@@ -111,7 +111,8 @@ object StatusBarItem {
     __obj.asInstanceOf[StatusBarItem]
   }
   
-  extension [Self <: StatusBarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBarItem] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityInformation(value: AccessibilityInformation): Self = StObject.set(x, "accessibilityInformation", value.asInstanceOf[js.Any])
     

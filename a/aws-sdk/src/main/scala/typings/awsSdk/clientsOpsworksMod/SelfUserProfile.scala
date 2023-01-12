@@ -33,7 +33,8 @@ object SelfUserProfile {
     __obj.asInstanceOf[SelfUserProfile]
   }
   
-  extension [Self <: SelfUserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfUserProfile] (val x: Self) extends AnyVal {
     
     inline def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     

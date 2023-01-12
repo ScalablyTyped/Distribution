@@ -33,7 +33,8 @@ object ListSecurityProfilesRequest {
     __obj.asInstanceOf[ListSecurityProfilesRequest]
   }
   
-  extension [Self <: ListSecurityProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSecurityProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: DimensionName): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

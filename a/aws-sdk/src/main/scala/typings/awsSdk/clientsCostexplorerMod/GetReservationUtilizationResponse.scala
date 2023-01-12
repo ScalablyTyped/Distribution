@@ -28,7 +28,8 @@ object GetReservationUtilizationResponse {
     __obj.asInstanceOf[GetReservationUtilizationResponse]
   }
   
-  extension [Self <: GetReservationUtilizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReservationUtilizationResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

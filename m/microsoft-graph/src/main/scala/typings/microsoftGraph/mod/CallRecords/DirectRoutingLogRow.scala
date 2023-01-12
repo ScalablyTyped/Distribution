@@ -80,7 +80,8 @@ object DirectRoutingLogRow {
     __obj.asInstanceOf[DirectRoutingLogRow]
   }
   
-  extension [Self <: DirectRoutingLogRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectRoutingLogRow] (val x: Self) extends AnyVal {
     
     inline def setCallEndSubReason(value: NullableOption[Double]): Self = StObject.set(x, "callEndSubReason", value.asInstanceOf[js.Any])
     

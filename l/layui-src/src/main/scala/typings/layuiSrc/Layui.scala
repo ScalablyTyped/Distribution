@@ -1117,7 +1117,8 @@ object Layui {
       __obj.asInstanceOf[CacheData]
     }
     
-    extension [Self <: CacheData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheData] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -1266,7 +1267,8 @@ object Layui {
       __obj.asInstanceOf[CarouselClass]
     }
     
-    extension [Self <: CarouselClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselClass] (val x: Self) extends AnyVal {
       
       inline def setAddIndex(value: Double => Unit): Self = StObject.set(x, "addIndex", js.Any.fromFunction1(value))
       
@@ -1326,7 +1328,8 @@ object Layui {
       __obj.asInstanceOf[CarouselItem]
     }
     
-    extension [Self <: CarouselItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselItem] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -1426,7 +1429,8 @@ object Layui {
       __obj.asInstanceOf[CarouselOption]
     }
     
-    extension [Self <: CarouselOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselOption] (val x: Self) extends AnyVal {
       
       inline def setAnim(value: default | updown | fade): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
       
@@ -1518,7 +1522,8 @@ object Layui {
       __obj.asInstanceOf[CodeOption]
     }
     
-    extension [Self <: CodeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeOption] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: Boolean): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1580,7 +1585,8 @@ object Layui {
       __obj.asInstanceOf[ColorPicker]
     }
     
-    extension [Self <: ColorPicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPicker] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -1654,7 +1660,8 @@ object Layui {
       __obj.asInstanceOf[ColorPickerOption]
     }
     
-    extension [Self <: ColorPickerOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPickerOption] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -1867,7 +1874,8 @@ object Layui {
       __obj.asInstanceOf[DateOption]
     }
     
-    extension [Self <: DateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateOption] (val x: Self) extends AnyVal {
       
       inline def setBtns(value: js.Array[clear | now | confirm]): Self = StObject.set(x, "btns", value.asInstanceOf[js.Any])
       
@@ -2004,7 +2012,8 @@ object Layui {
       __obj.asInstanceOf[DateParam]
     }
     
-    extension [Self <: DateParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateParam] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -2073,7 +2082,8 @@ object Layui {
       __obj.asInstanceOf[DropDown]
     }
     
-    extension [Self <: DropDown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDown] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -2201,7 +2211,8 @@ object Layui {
       __obj.asInstanceOf[DropDownOption]
     }
     
-    extension [Self <: DropDownOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOption] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -2319,7 +2330,8 @@ object Layui {
       __obj.asInstanceOf[DropDownOptionData]
     }
     
-    extension [Self <: DropDownOptionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOptionData] (val x: Self) extends AnyVal {
       
       inline def setChild(value: js.Array[Any]): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -2430,7 +2442,8 @@ object Layui {
       __obj.asInstanceOf[DropDownOptionForRead]
     }
     
-    extension [Self <: DropDownOptionForRead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOptionForRead] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -2529,7 +2542,8 @@ object Layui {
       __obj.asInstanceOf[DropDownOptionForReload]
     }
     
-    extension [Self <: DropDownOptionForReload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownOptionForReload] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -2656,7 +2670,8 @@ object Layui {
       __obj.asInstanceOf[EditOption]
     }
     
-    extension [Self <: EditOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditOption] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -2837,7 +2852,8 @@ object Layui {
       __obj.asInstanceOf[FlowOption]
     }
     
-    extension [Self <: FlowOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowOption] (val x: Self) extends AnyVal {
       
       inline def setDone(
         value: (/* page */ Double, /* next */ js.Function2[/* html */ String, /* hasMore */ Boolean, Unit]) => Unit
@@ -2957,7 +2973,8 @@ object Layui {
       __obj.asInstanceOf[GlobalConfigOptions]
     }
     
-    extension [Self <: GlobalConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -3916,7 +3933,8 @@ object Layui {
       __obj.asInstanceOf[LayFormData]
     }
     
-    extension [Self <: LayFormData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayFormData] (val x: Self) extends AnyVal {
       
       inline def setElem(value: Any): Self = StObject.set(x, "elem", value.asInstanceOf[js.Any])
       
@@ -4429,7 +4447,8 @@ object Layui {
       __obj.asInstanceOf[LayerConfigOptions]
     }
     
-    extension [Self <: LayerConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: js.Array[String] | String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
@@ -4784,7 +4803,8 @@ object Layui {
       __obj.asInstanceOf[LayerOptions]
     }
     
-    extension [Self <: LayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAnim(value: Double): Self = StObject.set(x, "anim", value.asInstanceOf[js.Any])
       
@@ -5054,7 +5074,8 @@ object Layui {
       __obj.asInstanceOf[LayerPhotosData]
     }
     
-    extension [Self <: LayerPhotosData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerPhotosData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[LayerPhotosDataItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -5105,7 +5126,8 @@ object Layui {
       __obj.asInstanceOf[LayerPhotosDataItem]
     }
     
-    extension [Self <: LayerPhotosDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerPhotosDataItem] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -5156,7 +5178,8 @@ object Layui {
       __obj.asInstanceOf[LayerPhotosOptions]
     }
     
-    extension [Self <: LayerPhotosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerPhotosOptions] (val x: Self) extends AnyVal {
       
       inline def setPhotos(
         value: LayerPhotosData | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JQuery */ Any)
@@ -5228,7 +5251,8 @@ object Layui {
       __obj.asInstanceOf[LayerPromptOptions]
     }
     
-    extension [Self <: LayerPromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerPromptOptions] (val x: Self) extends AnyVal {
       
       inline def setArea(value: js.Array[String]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -5263,7 +5287,8 @@ object Layui {
       __obj.asInstanceOf[LayerTabOptions]
     }
     
-    extension [Self <: LayerTabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerTabOptions] (val x: Self) extends AnyVal {
       
       inline def setTab(value: js.Array[Content]): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
       
@@ -6578,7 +6603,8 @@ object Layui {
       __obj.asInstanceOf[LayuiModuleMap]
     }
     
-    extension [Self <: LayuiModuleMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayuiModuleMap] (val x: Self) extends AnyVal {
       
       inline def setCarousel(value: Carousel): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
       
@@ -6705,7 +6731,8 @@ object Layui {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setCarousel(value: String): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
       
@@ -6843,7 +6870,8 @@ object Layui {
       __obj.asInstanceOf[PageOptions]
     }
     
-    extension [Self <: PageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -6984,7 +7012,8 @@ object Layui {
       __obj.asInstanceOf[PageOptionsForCallback]
     }
     
-    extension [Self <: PageOptionsForCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageOptionsForCallback] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -7112,7 +7141,8 @@ object Layui {
       __obj.asInstanceOf[RateOption]
     }
     
-    extension [Self <: RateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RateOption] (val x: Self) extends AnyVal {
       
       inline def setChoose(value: /* value */ Double => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
       
@@ -7274,7 +7304,8 @@ object Layui {
       __obj.asInstanceOf[SliderOption]
     }
     
-    extension [Self <: SliderOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOption] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* value */ Double | js.Array[Double] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
@@ -7364,7 +7395,8 @@ object Layui {
       __obj.asInstanceOf[TabElement]
     }
     
-    extension [Self <: TabElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabElement] (val x: Self) extends AnyVal {
       
       inline def setBodyElem(
         value: String | HTMLElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JQuery */ Any)
@@ -7400,7 +7432,8 @@ object Layui {
       __obj.asInstanceOf[TabOption]
     }
     
-    extension [Self <: TabOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOption] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -7673,7 +7706,8 @@ object Layui {
       __obj.asInstanceOf[TableColumnOption]
     }
     
-    extension [Self <: TableColumnOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumnOption] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -7784,7 +7818,8 @@ object Layui {
       __obj.asInstanceOf[TableColumnOptionForTemplet]
     }
     
-    extension [Self <: TableColumnOptionForTemplet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumnOptionForTemplet] (val x: Self) extends AnyVal {
       
       inline def setLAY_COL(value: TableColumnOptionForTempletCol): Self = StObject.set(x, "LAY_COL", value.asInstanceOf[js.Any])
       
@@ -7884,7 +7919,8 @@ object Layui {
       __obj.asInstanceOf[TableColumnOptionForTempletCol]
     }
     
-    extension [Self <: TableColumnOptionForTempletCol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumnOptionForTempletCol] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -7972,7 +8008,8 @@ object Layui {
       __obj.asInstanceOf[TableOnCheckbox]
     }
     
-    extension [Self <: TableOnCheckbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnCheckbox] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: `true`): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -8021,7 +8058,8 @@ object Layui {
       __obj.asInstanceOf[TableOnEdit]
     }
     
-    extension [Self <: TableOnEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnEdit] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -8064,7 +8102,8 @@ object Layui {
       __obj.asInstanceOf[TableOnRow]
     }
     
-    extension [Self <: TableOnRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnRow] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -8095,7 +8134,8 @@ object Layui {
       __obj.asInstanceOf[TableOnSort]
     }
     
-    extension [Self <: TableOnSort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnSort] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -8131,7 +8171,8 @@ object Layui {
       __obj.asInstanceOf[TableOnTool]
     }
     
-    extension [Self <: TableOnTool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnTool] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -8163,7 +8204,8 @@ object Layui {
       __obj.asInstanceOf[TableOnToolbar]
     }
     
-    extension [Self <: TableOnToolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOnToolbar] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: TableOption): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -8371,7 +8413,8 @@ object Layui {
       __obj.asInstanceOf[TableOption]
     }
     
-    extension [Self <: TableOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOption] (val x: Self) extends AnyVal {
       
       inline def setAutoSort(value: Boolean): Self = StObject.set(x, "autoSort", value.asInstanceOf[js.Any])
       
@@ -8552,7 +8595,8 @@ object Layui {
       __obj.asInstanceOf[TableRequestRename]
     }
     
-    extension [Self <: TableRequestRename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRequestRename] (val x: Self) extends AnyVal {
       
       inline def setLimitName(value: String): Self = StObject.set(x, "limitName", value.asInstanceOf[js.Any])
       
@@ -8595,7 +8639,8 @@ object Layui {
       __obj.asInstanceOf[TableResponse]
     }
     
-    extension [Self <: TableResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -8652,7 +8697,8 @@ object Layui {
       __obj.asInstanceOf[TableResponseRename]
     }
     
-    extension [Self <: TableResponseRename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableResponseRename] (val x: Self) extends AnyVal {
       
       inline def setCountName(value: String): Self = StObject.set(x, "countName", value.asInstanceOf[js.Any])
       
@@ -8756,7 +8802,8 @@ object Layui {
       __obj.asInstanceOf[Transfer]
     }
     
-    extension [Self <: Transfer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transfer] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -8843,7 +8890,8 @@ object Layui {
       __obj.asInstanceOf[TransferOption]
     }
     
-    extension [Self <: TransferOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferOption] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -8926,7 +8974,8 @@ object Layui {
       __obj.asInstanceOf[TransferRendered]
     }
     
-    extension [Self <: TransferRendered](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferRendered] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -9017,7 +9066,8 @@ object Layui {
       __obj.asInstanceOf[TreeCheckData]
     }
     
-    extension [Self <: TreeCheckData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeCheckData] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -9048,7 +9098,8 @@ object Layui {
       __obj.asInstanceOf[TreeClickData]
     }
     
-    extension [Self <: TreeClickData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeClickData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -9110,7 +9161,8 @@ object Layui {
       __obj.asInstanceOf[TreeData]
     }
     
-    extension [Self <: TreeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeData] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -9171,7 +9223,8 @@ object Layui {
       __obj.asInstanceOf[TreeOperateData]
     }
     
-    extension [Self <: TreeOperateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeOperateData] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -9287,7 +9340,8 @@ object Layui {
       __obj.asInstanceOf[TreeOption]
     }
     
-    extension [Self <: TreeOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeOption] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
@@ -9393,7 +9447,8 @@ object Layui {
       __obj.asInstanceOf[TreeReloaded]
     }
     
-    extension [Self <: TreeReloaded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeReloaded] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: StringDictionary[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -9462,7 +9517,8 @@ object Layui {
       __obj.asInstanceOf[UploadAllDoneArg]
     }
     
-    extension [Self <: UploadAllDoneArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadAllDoneArg] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -9513,7 +9569,8 @@ object Layui {
       __obj.asInstanceOf[UploadCallbackArg]
     }
     
-    extension [Self <: UploadCallbackArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCallbackArg] (val x: Self) extends AnyVal {
       
       inline def setPreview(value: js.Function3[/* index */ String, /* file */ File, /* result */ Any, Unit] => Unit): Self = StObject.set(x, "preview", js.Any.fromFunction1(value))
       
@@ -9694,7 +9751,8 @@ object Layui {
       __obj.asInstanceOf[UploadOption]
     }
     
-    extension [Self <: UploadOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOption] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: images | file | video | audio): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -9944,7 +10002,8 @@ object Layui {
       __obj.asInstanceOf[UploadOptionThis]
     }
     
-    extension [Self <: UploadOptionThis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptionThis] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: images | file | video | audio): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -10063,7 +10122,8 @@ object Layui {
       __obj.asInstanceOf[UrlHash]
     }
     
-    extension [Self <: UrlHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlHash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -10302,7 +10362,8 @@ object Layui {
       __obj.asInstanceOf[UtilBarOption]
     }
     
-    extension [Self <: UtilBarOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UtilBarOption] (val x: Self) extends AnyVal {
       
       inline def setBar1(value: Boolean | String): Self = StObject.set(x, "bar1", value.asInstanceOf[js.Any])
       

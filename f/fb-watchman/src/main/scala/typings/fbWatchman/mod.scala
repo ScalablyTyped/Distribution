@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Capabilities]
     }
     
-    extension [Self <: Capabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: js.Array[Any]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setWatchmanBinaryPath(value: String): Self = StObject.set(x, "watchmanBinaryPath", value.asInstanceOf[js.Any])
       

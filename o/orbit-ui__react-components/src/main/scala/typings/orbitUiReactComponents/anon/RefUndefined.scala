@@ -15,7 +15,8 @@ object RefUndefined {
     __obj.asInstanceOf[RefUndefined]
   }
   
-  extension [Self <: RefUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefUndefined] (val x: Self) extends AnyVal {
     
     inline def setRef(value: Unit): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }

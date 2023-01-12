@@ -23,7 +23,8 @@ object ResourceDownloadOwnerSetting {
     __obj.asInstanceOf[ResourceDownloadOwnerSetting]
   }
   
-  extension [Self <: ResourceDownloadOwnerSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDownloadOwnerSetting] (val x: Self) extends AnyVal {
     
     inline def setGroupOwner(value: string): Self = StObject.set(x, "GroupOwner", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object componentsLayoutPanelMod {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setBodyScroll(value: Boolean): Self = StObject.set(x, "bodyScroll", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object componentsLayoutPanelMod {
       __obj.asInstanceOf[PanelTheme]
     }
     
-    extension [Self <: PanelTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelTheme] (val x: Self) extends AnyVal {
       
       inline def setBodyScroll(value: String): Self = StObject.set(x, "bodyScroll", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object IUpsertOptions {
     __obj.asInstanceOf[IUpsertOptions]
   }
   
-  extension [Self <: IUpsertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpsertOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableAutomaticIdGeneration(value: String): Self = StObject.set(x, "disableAutomaticIdGeneration", value.asInstanceOf[js.Any])
     

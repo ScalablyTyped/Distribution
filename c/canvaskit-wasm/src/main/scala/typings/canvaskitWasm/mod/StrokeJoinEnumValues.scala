@@ -21,7 +21,8 @@ object StrokeJoinEnumValues {
     __obj.asInstanceOf[StrokeJoinEnumValues]
   }
   
-  extension [Self <: StrokeJoinEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeJoinEnumValues] (val x: Self) extends AnyVal {
     
     inline def setBevel(value: StrokeJoin): Self = StObject.set(x, "Bevel", value.asInstanceOf[js.Any])
     

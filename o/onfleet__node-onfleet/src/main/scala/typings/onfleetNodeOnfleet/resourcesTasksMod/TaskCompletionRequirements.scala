@@ -21,7 +21,8 @@ object TaskCompletionRequirements {
     __obj.asInstanceOf[TaskCompletionRequirements]
   }
   
-  extension [Self <: TaskCompletionRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskCompletionRequirements] (val x: Self) extends AnyVal {
     
     inline def setMinimumAge(value: Double): Self = StObject.set(x, "minimumAge", value.asInstanceOf[js.Any])
     

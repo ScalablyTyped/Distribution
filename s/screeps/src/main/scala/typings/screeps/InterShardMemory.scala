@@ -42,7 +42,8 @@ object InterShardMemory {
     __obj.asInstanceOf[InterShardMemory]
   }
   
-  extension [Self <: InterShardMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterShardMemory] (val x: Self) extends AnyVal {
     
     inline def setGetLocal(value: () => String): Self = StObject.set(x, "getLocal", js.Any.fromFunction0(value))
     

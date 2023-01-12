@@ -28,7 +28,8 @@ object ContainerImage {
     __obj.asInstanceOf[ContainerImage]
   }
   
-  extension [Self <: ContainerImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerImage] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

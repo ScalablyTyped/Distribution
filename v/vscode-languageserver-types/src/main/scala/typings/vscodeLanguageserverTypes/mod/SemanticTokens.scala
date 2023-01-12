@@ -32,7 +32,8 @@ object SemanticTokens {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.SemanticTokens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.SemanticTokens */ Boolean]
   
-  extension [Self <: SemanticTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[uinteger]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

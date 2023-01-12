@@ -28,7 +28,8 @@ object XKeyCollector {
     __obj.asInstanceOf[XKeyCollector]
   }
   
-  extension [Self <: XKeyCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XKeyCollector] (val x: Self) extends AnyVal {
     
     inline def setSetKeyId(value: Double => Unit): Self = StObject.set(x, "setKeyId", js.Any.fromFunction1(value))
   }

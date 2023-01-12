@@ -17,7 +17,8 @@ object people {
       __obj.asInstanceOf[BatchGetResponse]
     }
     
-    extension [Self <: BatchGetResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchGetResponse] (val x: Self) extends AnyVal {
       
       inline def setResponses(value: js.Array[PersonResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object people {
       __obj.asInstanceOf[GetBatchGetParameters]
     }
     
-    extension [Self <: GetBatchGetParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBatchGetParameters] (val x: Self) extends AnyVal {
       
       inline def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object people {
       __obj.asInstanceOf[GetParameters]
     }
     
-    extension [Self <: GetParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetParameters] (val x: Self) extends AnyVal {
       
       inline def setPersonFields(value: String): Self = StObject.set(x, "personFields", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object people {
       __obj.asInstanceOf[PersonResponse]
     }
     
-    extension [Self <: PersonResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersonResponse] (val x: Self) extends AnyVal {
       
       inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
       
@@ -117,7 +121,8 @@ object people {
         __obj.asInstanceOf[ListParameters]
       }
       
-      extension [Self <: ListParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListParameters] (val x: Self) extends AnyVal {
         
         inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
@@ -156,7 +161,8 @@ object people {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setConnections(value: js.Array[Person]): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
         

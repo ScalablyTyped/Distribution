@@ -58,7 +58,8 @@ object StreamDescription {
     __obj.asInstanceOf[StreamDescription]
   }
   
-  extension [Self <: StreamDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamDescription] (val x: Self) extends AnyVal {
     
     inline def setCreationRequestDateTime(value: js.Date): Self = StObject.set(x, "CreationRequestDateTime", value.asInstanceOf[js.Any])
     

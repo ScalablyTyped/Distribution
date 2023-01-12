@@ -30,7 +30,8 @@ object gatewayDestMod {
       __obj.asInstanceOf[GatewayDestProps]
     }
     
-    extension [Self <: GatewayDestProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatewayDestProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: String | ComponentType[js.Object]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

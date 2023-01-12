@@ -48,7 +48,8 @@ object HostKeyAttributes {
     __obj.asInstanceOf[HostKeyAttributes]
   }
   
-  extension [Self <: HostKeyAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostKeyAttributes] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SpecConfig {
     __obj.asInstanceOf[SpecConfig]
   }
   
-  extension [Self <: SpecConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxConcurrentLimboResolutions(value: Double): Self = StObject.set(x, "maxConcurrentLimboResolutions", value.asInstanceOf[js.Any])
     

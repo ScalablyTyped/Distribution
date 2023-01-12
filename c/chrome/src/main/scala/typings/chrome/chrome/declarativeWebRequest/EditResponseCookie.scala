@@ -17,7 +17,8 @@ object EditResponseCookie {
     __obj.asInstanceOf[EditResponseCookie]
   }
   
-  extension [Self <: EditResponseCookie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditResponseCookie] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: ResponseCookie): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

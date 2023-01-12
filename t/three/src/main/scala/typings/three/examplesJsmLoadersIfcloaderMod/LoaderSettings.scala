@@ -23,7 +23,8 @@ object LoaderSettings {
     __obj.asInstanceOf[LoaderSettings]
   }
   
-  extension [Self <: LoaderSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderSettings] (val x: Self) extends AnyVal {
     
     inline def setCIRCLE_SEGMENTS_HIGH(value: Double): Self = StObject.set(x, "CIRCLE_SEGMENTS_HIGH", value.asInstanceOf[js.Any])
     

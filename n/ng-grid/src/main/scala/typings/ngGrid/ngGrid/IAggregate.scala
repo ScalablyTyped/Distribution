@@ -65,7 +65,8 @@ object IAggregate {
     __obj.asInstanceOf[IAggregate]
   }
   
-  extension [Self <: IAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAggregate] (val x: Self) extends AnyVal {
     
     inline def setAggChildren(value: js.Array[Any]): Self = StObject.set(x, "aggChildren", value.asInstanceOf[js.Any])
     

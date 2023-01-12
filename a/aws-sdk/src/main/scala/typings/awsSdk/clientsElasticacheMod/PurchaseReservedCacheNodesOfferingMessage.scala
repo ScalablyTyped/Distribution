@@ -33,7 +33,8 @@ object PurchaseReservedCacheNodesOfferingMessage {
     __obj.asInstanceOf[PurchaseReservedCacheNodesOfferingMessage]
   }
   
-  extension [Self <: PurchaseReservedCacheNodesOfferingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedCacheNodesOfferingMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeCount(value: IntegerOptional): Self = StObject.set(x, "CacheNodeCount", value.asInstanceOf[js.Any])
     

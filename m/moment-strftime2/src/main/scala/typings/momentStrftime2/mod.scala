@@ -174,7 +174,8 @@ object mod {
       __obj.asInstanceOf[Modifiers_]
     }
     
-    extension [Self <: Modifiers_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modifiers_] (val x: Self) extends AnyVal {
       
       inline def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
@@ -274,7 +275,8 @@ object mod {
         __obj.asInstanceOf[Moment]
       }
       
-      extension [Self <: Moment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Moment] (val x: Self) extends AnyVal {
         
         inline def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
       }
@@ -295,7 +297,8 @@ object mod {
         __obj.asInstanceOf[Moment]
       }
       
-      extension [Self <: Moment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Moment] (val x: Self) extends AnyVal {
         
         inline def setStrftime(value: String => String): Self = StObject.set(x, "strftime", js.Any.fromFunction1(value))
       }

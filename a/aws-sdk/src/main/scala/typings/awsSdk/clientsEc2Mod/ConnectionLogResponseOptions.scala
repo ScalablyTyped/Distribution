@@ -28,7 +28,8 @@ object ConnectionLogResponseOptions {
     __obj.asInstanceOf[ConnectionLogResponseOptions]
   }
   
-  extension [Self <: ConnectionLogResponseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionLogResponseOptions] (val x: Self) extends AnyVal {
     
     inline def setCloudwatchLogGroup(value: String): Self = StObject.set(x, "CloudwatchLogGroup", value.asInstanceOf[js.Any])
     

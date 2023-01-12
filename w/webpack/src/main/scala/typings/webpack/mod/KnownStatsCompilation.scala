@@ -60,7 +60,8 @@ object KnownStatsCompilation {
     __obj.asInstanceOf[KnownStatsCompilation]
   }
   
-  extension [Self <: KnownStatsCompilation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsCompilation] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[StatsAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

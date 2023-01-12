@@ -36,7 +36,8 @@ object PresetLayoutOptions {
     __obj.asInstanceOf[PresetLayoutOptions]
   }
   
-  extension [Self <: PresetLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setFit(value: Boolean): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
     

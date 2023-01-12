@@ -15,7 +15,8 @@ object ApiRootUrl {
     __obj.asInstanceOf[ApiRootUrl]
   }
   
-  extension [Self <: ApiRootUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiRootUrl] (val x: Self) extends AnyVal {
     
     inline def setApiRootUrl(value: String): Self = StObject.set(x, "apiRootUrl", value.asInstanceOf[js.Any])
   }

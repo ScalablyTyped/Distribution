@@ -16,7 +16,8 @@ object DatasetsPieControllerDatasetOptions {
     __obj.asInstanceOf[DatasetsPieControllerDatasetOptions]
   }
   
-  extension [Self <: DatasetsPieControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetsPieControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setDatasets(value: PieControllerDatasetOptions): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
   }

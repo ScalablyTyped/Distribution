@@ -17,7 +17,8 @@ object RankEvalRankEvalMetricPrecision {
     __obj.asInstanceOf[RankEvalRankEvalMetricPrecision]
   }
   
-  extension [Self <: RankEvalRankEvalMetricPrecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalMetricPrecision] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unlabeled(value: Boolean): Self = StObject.set(x, "ignore_unlabeled", value.asInstanceOf[js.Any])
     

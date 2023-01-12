@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ActionObject]
     }
     
-    extension [Self <: ActionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionObject] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[ContainersStyle]
     }
     
-    extension [Self <: ContainersStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainersStyle] (val x: Self) extends AnyVal {
       
       inline def setBc(value: CSSProperties): Self = StObject.set(x, "bc", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object mod {
       __obj.asInstanceOf[ItemStyle]
     }
     
-    extension [Self <: ItemStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemStyle] (val x: Self) extends AnyVal {
       
       inline def setDefaultStyle(value: CSSProperties): Self = StObject.set(x, "DefaultStyle", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object mod {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionObject): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -287,7 +292,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
@@ -320,7 +326,8 @@ object mod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ItemStyle): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -367,7 +374,8 @@ object mod {
       __obj.asInstanceOf[WrapperStyle]
     }
     
-    extension [Self <: WrapperStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperStyle] (val x: Self) extends AnyVal {
       
       inline def setDefaultStyle(value: CSSProperties): Self = StObject.set(x, "DefaultStyle", value.asInstanceOf[js.Any])
       

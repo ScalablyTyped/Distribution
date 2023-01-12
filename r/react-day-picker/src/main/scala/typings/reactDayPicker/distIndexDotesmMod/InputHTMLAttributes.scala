@@ -31,7 +31,8 @@ object InputHTMLAttributes {
     __obj.asInstanceOf[InputHTMLAttributes]
   }
   
-  extension [Self <: InputHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: FocusEvent[HTMLInputElement, Element] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     

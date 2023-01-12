@@ -23,7 +23,8 @@ object DivLayout {
     __obj.asInstanceOf[DivLayout]
   }
   
-  extension [Self <: DivLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DivLayout] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

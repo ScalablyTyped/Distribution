@@ -30,7 +30,8 @@ object DeepLinkParameters {
     __obj.asInstanceOf[DeepLinkParameters]
   }
   
-  extension [Self <: DeepLinkParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepLinkParameters] (val x: Self) extends AnyVal {
     
     inline def setSubEntityId(value: String): Self = StObject.set(x, "subEntityId", value.asInstanceOf[js.Any])
     

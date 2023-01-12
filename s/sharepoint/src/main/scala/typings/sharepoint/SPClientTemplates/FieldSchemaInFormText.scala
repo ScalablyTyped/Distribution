@@ -34,7 +34,8 @@ object FieldSchemaInFormText {
     __obj.asInstanceOf[FieldSchemaInFormText]
   }
   
-  extension [Self <: FieldSchemaInFormText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemaInFormText] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
   }

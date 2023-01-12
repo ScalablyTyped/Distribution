@@ -49,7 +49,8 @@ object Choice {
     __obj.asInstanceOf[Choice]
   }
   
-  extension [Self <: Choice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
     
     inline def setGetGotoPage(value: () => PageBreakItem): Self = StObject.set(x, "getGotoPage", js.Any.fromFunction0(value))
     

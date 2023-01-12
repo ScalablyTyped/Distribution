@@ -18,7 +18,8 @@ object UpdateObjectAttributesResponse {
     __obj.asInstanceOf[UpdateObjectAttributesResponse]
   }
   
-  extension [Self <: UpdateObjectAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateObjectAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     

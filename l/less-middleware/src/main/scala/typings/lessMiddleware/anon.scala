@@ -86,7 +86,8 @@ object anon {
       __obj.asInstanceOf[CacheFile]
     }
     
-    extension [Self <: CacheFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheFile] (val x: Self) extends AnyVal {
       
       inline def setCacheFile(value: String): Self = StObject.set(x, "cacheFile", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Compress]
     }
     
-    extension [Self <: Compress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compress] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: String | Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(
         value: (/* css */ String, /* req */ Request_[
@@ -273,7 +276,8 @@ object anon {
       __obj.asInstanceOf[ImportPaths]
     }
     
-    extension [Self <: ImportPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportPaths] (val x: Self) extends AnyVal {
       
       inline def setImportPaths(
         value: (/* paths */ js.Array[String], /* req */ Request_[

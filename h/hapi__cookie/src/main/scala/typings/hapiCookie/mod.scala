@@ -75,7 +75,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppendNext(value: Boolean | String): Self = StObject.set(x, "appendNext", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    extension [Self <: ValidateResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
       
       inline def setCredentials(value: AuthCredentials[UserCredentials, AppCredentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PluginSpecificConfiguration]
       }
       
-      extension [Self <: PluginSpecificConfiguration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PluginSpecificConfiguration] (val x: Self) extends AnyVal {
         
         inline def setCookie(value: RedirectTo): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
         
@@ -176,7 +179,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.hapiCookie.mod.hapiHapiAugmentingMod.Request]
       }
       
-      extension [Self <: typings.hapiCookie.mod.hapiHapiAugmentingMod.Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hapiCookie.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
         
         inline def setCookieAuth(value: Clear): Self = StObject.set(x, "cookieAuth", value.asInstanceOf[js.Any])
       }

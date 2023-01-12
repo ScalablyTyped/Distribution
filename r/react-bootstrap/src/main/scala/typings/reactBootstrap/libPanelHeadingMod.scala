@@ -30,7 +30,8 @@ object libPanelHeadingMod {
       __obj.asInstanceOf[PanelHeadingProps]
     }
     
-    extension [Self <: PanelHeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelHeadingProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

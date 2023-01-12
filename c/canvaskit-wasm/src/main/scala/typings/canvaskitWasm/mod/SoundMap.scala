@@ -19,7 +19,8 @@ object SoundMap {
     __obj.asInstanceOf[SoundMap]
   }
   
-  extension [Self <: SoundMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundMap] (val x: Self) extends AnyVal {
     
     inline def setGetPlayer(value: String => AudioPlayer): Self = StObject.set(x, "getPlayer", js.Any.fromFunction1(value))
   }

@@ -28,7 +28,8 @@ object RepositoryBranchInput {
     __obj.asInstanceOf[RepositoryBranchInput]
   }
   
-  extension [Self <: RepositoryBranchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryBranchInput] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: GitBranchName): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

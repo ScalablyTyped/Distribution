@@ -36,7 +36,8 @@ object TypeofpowerSource {
     __obj.asInstanceOf[TypeofpowerSource]
   }
   
-  extension [Self <: TypeofpowerSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofpowerSource] (val x: Self) extends AnyVal {
     
     inline def setGetPowerSourceInfo(value: js.Function1[/* powerSourceInfo */ js.UndefOr[js.Array[PowerSourceInfo]], Unit] => Unit): Self = StObject.set(x, "getPowerSourceInfo", js.Any.fromFunction1(value))
     

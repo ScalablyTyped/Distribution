@@ -438,7 +438,8 @@ object AnimatePropsScrollViewPro {
     __obj.asInstanceOf[AnimatePropsScrollViewPro]
   }
   
-  extension [Self <: AnimatePropsScrollViewPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatePropsScrollViewPro] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: js.Array[AccessibilityActionInfo] | AnimatedNode[js.UndefOr[js.Array[AccessibilityActionInfo]]]

@@ -21,7 +21,8 @@ object LoggingPreferences {
     __obj.asInstanceOf[LoggingPreferences]
   }
   
-  extension [Self <: LoggingPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoggingPreferences] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: LoggingPreferenceType): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

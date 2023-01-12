@@ -43,7 +43,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsUniqueKeyMod extends Short
       __obj.asInstanceOf[IsUniqueKey]
     }
     
-    extension [Self <: IsUniqueKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsUniqueKey] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (String, CurrentKey) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }

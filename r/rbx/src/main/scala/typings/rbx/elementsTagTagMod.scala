@@ -177,7 +177,8 @@ object elementsTagTagMod {
       __obj.asInstanceOf[TagModifierProps]
     }
     
-    extension [Self <: TagModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object elementsTagTagMod {
       __obj.asInstanceOf[TagProps]
     }
     
-    extension [Self <: TagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -459,7 +461,8 @@ object elementsTagTagMod {
       __obj.asInstanceOf[TagVariables]
     }
     
-    extension [Self <: TagVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -476,7 +479,8 @@ object elementsTagTagMod {
       __obj.asInstanceOf[TagVariablesDefaults]
     }
     
-    extension [Self <: TagVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

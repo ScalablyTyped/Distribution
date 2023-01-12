@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[RequestJSON]
     }
     
-    extension [Self <: RequestJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestJSON] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: IncomingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[ResponseJSON]
     }
     
-    extension [Self <: ResponseJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseJSON] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: OutgoingHttpHeaders): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

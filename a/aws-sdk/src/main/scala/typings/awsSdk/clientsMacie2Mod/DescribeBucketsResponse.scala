@@ -23,7 +23,8 @@ object DescribeBucketsResponse {
     __obj.asInstanceOf[DescribeBucketsResponse]
   }
   
-  extension [Self <: DescribeBucketsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBucketsResponse] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: listOfBucketMetadata): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object DistanceOptions {
     __obj.asInstanceOf[DistanceOptions]
   }
   
-  extension [Self <: DistanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceOptions] (val x: Self) extends AnyVal {
     
     inline def setGeoSystem(value: WGS84 | unit_sphere): Self = StObject.set(x, "geoSystem", value.asInstanceOf[js.Any])
     

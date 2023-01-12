@@ -29,7 +29,8 @@ object GeneralJWE {
     __obj.asInstanceOf[GeneralJWE]
   }
   
-  extension [Self <: GeneralJWE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralJWE] (val x: Self) extends AnyVal {
     
     inline def setAad(value: String): Self = StObject.set(x, "aad", value.asInstanceOf[js.Any])
     

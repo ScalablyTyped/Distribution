@@ -22,7 +22,8 @@ object StyleSheet {
     __obj.asInstanceOf[StyleSheet]
   }
   
-  extension [Self <: StyleSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

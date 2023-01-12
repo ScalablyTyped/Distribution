@@ -23,7 +23,8 @@ object DescribeFleetAdvisorSchemaObjectSummaryResponse {
     __obj.asInstanceOf[DescribeFleetAdvisorSchemaObjectSummaryResponse]
   }
   
-  extension [Self <: DescribeFleetAdvisorSchemaObjectSummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetAdvisorSchemaObjectSummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setFleetAdvisorSchemaObjects(value: FleetAdvisorSchemaObjectList): Self = StObject.set(x, "FleetAdvisorSchemaObjects", value.asInstanceOf[js.Any])
     

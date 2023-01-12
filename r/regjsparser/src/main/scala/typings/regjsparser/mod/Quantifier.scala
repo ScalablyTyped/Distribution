@@ -37,7 +37,8 @@ object Quantifier {
     __obj.asInstanceOf[Quantifier[F]]
   }
   
-  extension [Self <: Quantifier[?], F /* <: Features */](x: Self & Quantifier[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quantifier[?], F /* <: Features */] (val x: Self & Quantifier[F]) extends AnyVal {
     
     inline def setBody(value: js.Array[RootNode[F]]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

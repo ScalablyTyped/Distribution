@@ -29,7 +29,8 @@ object PartialTypescriptOptions {
     __obj.asInstanceOf[PartialTypescriptOptions]
   }
   
-  extension [Self <: PartialTypescriptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypescriptOptions] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     

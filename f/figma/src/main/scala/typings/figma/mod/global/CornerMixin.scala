@@ -17,7 +17,8 @@ object CornerMixin {
     __obj.asInstanceOf[CornerMixin]
   }
   
-  extension [Self <: CornerMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CornerMixin] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double | js.Symbol): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

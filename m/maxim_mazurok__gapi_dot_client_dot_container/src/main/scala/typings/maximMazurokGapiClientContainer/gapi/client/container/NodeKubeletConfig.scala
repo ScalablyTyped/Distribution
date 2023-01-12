@@ -39,7 +39,8 @@ object NodeKubeletConfig {
     __obj.asInstanceOf[NodeKubeletConfig]
   }
   
-  extension [Self <: NodeKubeletConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeKubeletConfig] (val x: Self) extends AnyVal {
     
     inline def setCpuCfsQuota(value: Boolean): Self = StObject.set(x, "cpuCfsQuota", value.asInstanceOf[js.Any])
     

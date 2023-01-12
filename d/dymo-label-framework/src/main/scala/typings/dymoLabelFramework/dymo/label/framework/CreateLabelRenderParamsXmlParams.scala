@@ -33,7 +33,8 @@ object CreateLabelRenderParamsXmlParams {
     __obj.asInstanceOf[CreateLabelRenderParamsXmlParams]
   }
   
-  extension [Self <: CreateLabelRenderParamsXmlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelRenderParamsXmlParams] (val x: Self) extends AnyVal {
     
     inline def setFlowDirection(value: FlowDirection): Self = StObject.set(x, "flowDirection", value.asInstanceOf[js.Any])
     

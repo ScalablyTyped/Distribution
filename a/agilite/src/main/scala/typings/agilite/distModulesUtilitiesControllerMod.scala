@@ -37,7 +37,8 @@ object distModulesUtilitiesControllerMod {
       __obj.asInstanceOf[ResponseType]
     }
     
-    extension [Self <: ResponseType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseType] (val x: Self) extends AnyVal {
       
       inline def setARRAY_BUFFER(value: String): Self = StObject.set(x, "ARRAY_BUFFER", value.asInstanceOf[js.Any])
       

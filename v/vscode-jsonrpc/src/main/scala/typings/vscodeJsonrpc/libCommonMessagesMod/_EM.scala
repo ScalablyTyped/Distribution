@@ -17,7 +17,8 @@ object _EM {
     __obj.asInstanceOf[_EM]
   }
   
-  extension [Self <: _EM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _EM] (val x: Self) extends AnyVal {
     
     inline def set_DollarendMarkerDollar_(value: Double): Self = StObject.set(x, "_$endMarker$_", value.asInstanceOf[js.Any])
   }

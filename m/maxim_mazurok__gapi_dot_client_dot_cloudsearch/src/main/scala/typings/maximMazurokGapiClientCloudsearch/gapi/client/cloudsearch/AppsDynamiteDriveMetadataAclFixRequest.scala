@@ -25,7 +25,8 @@ object AppsDynamiteDriveMetadataAclFixRequest {
     __obj.asInstanceOf[AppsDynamiteDriveMetadataAclFixRequest]
   }
   
-  extension [Self <: AppsDynamiteDriveMetadataAclFixRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteDriveMetadataAclFixRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipientEmails(value: js.Array[String]): Self = StObject.set(x, "recipientEmails", value.asInstanceOf[js.Any])
     

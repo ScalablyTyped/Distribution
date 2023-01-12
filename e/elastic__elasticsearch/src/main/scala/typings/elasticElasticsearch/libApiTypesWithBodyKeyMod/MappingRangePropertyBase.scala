@@ -21,7 +21,8 @@ object MappingRangePropertyBase {
     __obj.asInstanceOf[MappingRangePropertyBase]
   }
   
-  extension [Self <: MappingRangePropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingRangePropertyBase] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

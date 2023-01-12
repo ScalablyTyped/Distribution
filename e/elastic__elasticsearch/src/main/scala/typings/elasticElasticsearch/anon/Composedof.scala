@@ -32,7 +32,8 @@ object Composedof {
     __obj.asInstanceOf[Composedof]
   }
   
-  extension [Self <: Composedof](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Composedof] (val x: Self) extends AnyVal {
     
     inline def setComposed_of(value: js.Array[typings.elasticElasticsearch.libApiTypesWithBodyKeyMod.Name]): Self = StObject.set(x, "composed_of", value.asInstanceOf[js.Any])
     

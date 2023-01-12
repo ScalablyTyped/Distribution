@@ -21,7 +21,8 @@ object distTypesMod {
       __obj.asInstanceOf[Delimiter]
     }
     
-    extension [Self <: Delimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distTypesMod {
       __obj.asInstanceOf[KatexData]
     }
     
-    extension [Self <: KatexData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KatexData] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

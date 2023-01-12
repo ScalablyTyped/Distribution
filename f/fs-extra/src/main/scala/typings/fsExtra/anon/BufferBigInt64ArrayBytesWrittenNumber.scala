@@ -18,7 +18,8 @@ object BufferBigInt64ArrayBytesWrittenNumber {
     __obj.asInstanceOf[BufferBigInt64ArrayBytesWrittenNumber]
   }
   
-  extension [Self <: BufferBigInt64ArrayBytesWrittenNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferBigInt64ArrayBytesWrittenNumber] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: BigInt64Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

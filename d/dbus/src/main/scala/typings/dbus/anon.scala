@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Bus]
     }
     
-    extension [Self <: Bus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bus] (val x: Self) extends AnyVal {
       
       inline def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Getter]
     }
     
-    extension [Self <: Getter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Getter] (val x: Self) extends AnyVal {
       
       inline def setGetter(value: js.Function1[/* val */ String, Unit] => Unit): Self = StObject.set(x, "getter", js.Any.fromFunction1(value))
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[In]
     }
     
-    extension [Self <: In](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
       
       inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Types]
     }
     
-    extension [Self <: Types](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       

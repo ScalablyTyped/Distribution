@@ -196,7 +196,8 @@ object ContextMenuParams {
     __obj.asInstanceOf[ContextMenuParams]
   }
   
-  extension [Self <: ContextMenuParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuParams] (val x: Self) extends AnyVal {
     
     inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     

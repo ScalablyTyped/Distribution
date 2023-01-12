@@ -20,7 +20,8 @@ object ConvexOptions {
     __obj.asInstanceOf[ConvexOptions]
   }
   
-  extension [Self <: ConvexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvexOptions] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: js.Array[(js.Tuple2[Double, Double]) | ArrayLike[Double]]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     

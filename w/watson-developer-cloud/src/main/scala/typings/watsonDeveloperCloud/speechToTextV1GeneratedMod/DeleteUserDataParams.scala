@@ -21,7 +21,8 @@ object DeleteUserDataParams {
     __obj.asInstanceOf[DeleteUserDataParams]
   }
   
-  extension [Self <: DeleteUserDataParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserDataParams] (val x: Self) extends AnyVal {
     
     inline def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
     

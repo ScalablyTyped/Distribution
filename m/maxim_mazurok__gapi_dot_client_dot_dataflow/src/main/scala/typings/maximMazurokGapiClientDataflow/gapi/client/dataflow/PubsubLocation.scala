@@ -34,7 +34,8 @@ object PubsubLocation {
     __obj.asInstanceOf[PubsubLocation]
   }
   
-  extension [Self <: PubsubLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubLocation] (val x: Self) extends AnyVal {
     
     inline def setDropLateData(value: Boolean): Self = StObject.set(x, "dropLateData", value.asInstanceOf[js.Any])
     

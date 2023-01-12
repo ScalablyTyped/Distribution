@@ -28,7 +28,8 @@ object ConnectAttachment {
     __obj.asInstanceOf[ConnectAttachment]
   }
   
-  extension [Self <: ConnectAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     

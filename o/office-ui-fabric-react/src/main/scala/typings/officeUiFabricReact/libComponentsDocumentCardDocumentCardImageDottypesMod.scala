@@ -74,7 +74,8 @@ object libComponentsDocumentCardDocumentCardImageDottypesMod {
       __obj.asInstanceOf[IDocumentCardImageProps]
     }
     
-    extension [Self <: IDocumentCardImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardImageProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object libComponentsDocumentCardDocumentCardImageDottypesMod {
       __obj.asInstanceOf[IDocumentCardImageStyles]
     }
     
-    extension [Self <: IDocumentCardImageStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocumentCardImageStyles] (val x: Self) extends AnyVal {
       
       inline def setCenteredIcon(value: IStyle): Self = StObject.set(x, "centeredIcon", value.asInstanceOf[js.Any])
       

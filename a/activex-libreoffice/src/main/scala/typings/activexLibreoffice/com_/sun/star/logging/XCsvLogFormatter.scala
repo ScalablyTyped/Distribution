@@ -60,7 +60,8 @@ object XCsvLogFormatter {
     __obj.asInstanceOf[XCsvLogFormatter]
   }
   
-  extension [Self <: XCsvLogFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCsvLogFormatter] (val x: Self) extends AnyVal {
     
     inline def setColumnnames(value: SafeArray[String]): Self = StObject.set(x, "Columnnames", value.asInstanceOf[js.Any])
     

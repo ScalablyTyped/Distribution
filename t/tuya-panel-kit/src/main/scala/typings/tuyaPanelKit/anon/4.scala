@@ -19,7 +19,8 @@ object `4` {
     __obj.asInstanceOf[`4`[EventName]]
   }
   
-  extension [Self <: `4`[?], EventName /* <: Extract[/* keyof {} */ String, String] */](x: Self & `4`[EventName]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`[?], EventName /* <: Extract[/* keyof {} */ String, String] */] (val x: Self & `4`[EventName]) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

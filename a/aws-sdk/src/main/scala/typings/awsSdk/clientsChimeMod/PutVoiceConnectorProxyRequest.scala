@@ -42,7 +42,8 @@ object PutVoiceConnectorProxyRequest {
     __obj.asInstanceOf[PutVoiceConnectorProxyRequest]
   }
   
-  extension [Self <: PutVoiceConnectorProxyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutVoiceConnectorProxyRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultSessionExpiryMinutes(value: Integer): Self = StObject.set(x, "DefaultSessionExpiryMinutes", value.asInstanceOf[js.Any])
     

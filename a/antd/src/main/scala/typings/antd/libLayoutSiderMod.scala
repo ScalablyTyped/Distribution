@@ -51,7 +51,8 @@ object libLayoutSiderMod extends Shortcut {
       __obj.asInstanceOf[SiderContextProps]
     }
     
-    extension [Self <: SiderContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiderContextProps] (val x: Self) extends AnyVal {
       
       inline def setSiderCollapsed(value: Boolean): Self = StObject.set(x, "siderCollapsed", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libLayoutSiderMod extends Shortcut {
       __obj.asInstanceOf[SiderProps]
     }
     
-    extension [Self <: SiderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiderProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: xs | sm | md | lg | xl | xxl): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object libLayoutSiderMod extends Shortcut {
       __obj.asInstanceOf[SiderState]
     }
     
-    extension [Self <: SiderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiderState] (val x: Self) extends AnyVal {
       
       inline def setBelow(value: Boolean): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AqlLiteral {
     __obj.asInstanceOf[AqlLiteral]
   }
   
-  extension [Self <: AqlLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AqlLiteral] (val x: Self) extends AnyVal {
     
     inline def setToAQL(value: () => String): Self = StObject.set(x, "toAQL", js.Any.fromFunction0(value))
   }

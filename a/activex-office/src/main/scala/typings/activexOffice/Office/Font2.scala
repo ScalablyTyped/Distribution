@@ -127,7 +127,8 @@ object Font2 {
     __obj.asInstanceOf[Font2]
   }
   
-  extension [Self <: Font2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Font2] (val x: Self) extends AnyVal {
     
     inline def setAllcaps(value: MsoTriState): Self = StObject.set(x, "Allcaps", value.asInstanceOf[js.Any])
     

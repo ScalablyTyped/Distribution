@@ -28,7 +28,8 @@ object AddRoleToDBInstanceMessage {
     __obj.asInstanceOf[AddRoleToDBInstanceMessage]
   }
   
-  extension [Self <: AddRoleToDBInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRoleToDBInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     

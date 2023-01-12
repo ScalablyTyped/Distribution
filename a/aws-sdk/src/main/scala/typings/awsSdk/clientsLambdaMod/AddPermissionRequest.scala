@@ -68,7 +68,8 @@ object AddPermissionRequest {
     __obj.asInstanceOf[AddPermissionRequest]
   }
   
-  extension [Self <: AddPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

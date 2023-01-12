@@ -52,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SchemaOptions]
     }
     
-    extension [Self <: SchemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenName(value: String): Self = StObject.set(x, "accessTokenName", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidateReturn]
     }
     
-    extension [Self <: ValidateReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateReturn] (val x: Self) extends AnyVal {
       
       inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
@@ -137,7 +139,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ServerAuth]
       }
       
-      extension [Self <: ServerAuth](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerAuth] (val x: Self) extends AnyVal {
         
         inline def setStrategy(value: (String, `bearer-access-token`, SchemaOptions) => Unit): Self = StObject.set(x, "strategy", js.Any.fromFunction3(value))
       }

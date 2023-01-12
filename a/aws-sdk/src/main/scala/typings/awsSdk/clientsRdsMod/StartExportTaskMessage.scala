@@ -54,7 +54,8 @@ object StartExportTaskMessage {
     __obj.asInstanceOf[StartExportTaskMessage]
   }
   
-  extension [Self <: StartExportTaskMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartExportTaskMessage] (val x: Self) extends AnyVal {
     
     inline def setExportOnly(value: StringList): Self = StObject.set(x, "ExportOnly", value.asInstanceOf[js.Any])
     

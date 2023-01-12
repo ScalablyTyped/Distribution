@@ -32,7 +32,8 @@ object XKeyListener {
     __obj.asInstanceOf[XKeyListener]
   }
   
-  extension [Self <: XKeyListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XKeyListener] (val x: Self) extends AnyVal {
     
     inline def setKeyPressed(value: KeyEvent => Unit): Self = StObject.set(x, "keyPressed", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object IAuthenticationResultIntermediate {
     __obj.asInstanceOf[IAuthenticationResultIntermediate]
   }
   
-  extension [Self <: IAuthenticationResultIntermediate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthenticationResultIntermediate] (val x: Self) extends AnyVal {
     
     inline def setAttemptIdentifier(value: String): Self = StObject.set(x, "AttemptIdentifier", value.asInstanceOf[js.Any])
     

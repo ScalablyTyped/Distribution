@@ -19,7 +19,8 @@ object CreateAssignedTargetingOptionsRequest {
     __obj.asInstanceOf[CreateAssignedTargetingOptionsRequest]
   }
   
-  extension [Self <: CreateAssignedTargetingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssignedTargetingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

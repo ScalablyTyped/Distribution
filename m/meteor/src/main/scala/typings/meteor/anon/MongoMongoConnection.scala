@@ -16,7 +16,8 @@ object MongoMongoConnection {
     __obj.asInstanceOf[MongoMongoConnection]
   }
   
-  extension [Self <: MongoMongoConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MongoMongoConnection] (val x: Self) extends AnyVal {
     
     inline def setMongo(value: MongoConnection): Self = StObject.set(x, "mongo", value.asInstanceOf[js.Any])
   }

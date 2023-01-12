@@ -15,7 +15,8 @@ object WebExtensionManifestApplications {
     __obj.asInstanceOf[WebExtensionManifestApplications]
   }
   
-  extension [Self <: WebExtensionManifestApplications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestApplications] (val x: Self) extends AnyVal {
     
     inline def setGecko(value: FirefoxSpecificProperties): Self = StObject.set(x, "gecko", value.asInstanceOf[js.Any])
     

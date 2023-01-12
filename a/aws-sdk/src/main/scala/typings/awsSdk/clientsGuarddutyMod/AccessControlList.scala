@@ -23,7 +23,8 @@ object AccessControlList {
     __obj.asInstanceOf[AccessControlList]
   }
   
-  extension [Self <: AccessControlList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlList] (val x: Self) extends AnyVal {
     
     inline def setAllowsPublicReadAccess(value: Boolean): Self = StObject.set(x, "AllowsPublicReadAccess", value.asInstanceOf[js.Any])
     

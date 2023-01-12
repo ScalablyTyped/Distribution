@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[ClassNames]
     }
     
-    extension [Self <: ClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object mod {
       __obj.asInstanceOf[ReactTagsProps]
     }
     
-    extension [Self <: ReactTagsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTagsProps] (val x: Self) extends AnyVal {
       
       inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
       
@@ -379,7 +381,8 @@ object mod {
       __obj.asInstanceOf[SuggestionComponentProps]
     }
     
-    extension [Self <: SuggestionComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionComponentProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Tag): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -402,7 +405,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -436,7 +440,8 @@ object mod {
       __obj.asInstanceOf[TagComponentProps]
     }
     
-    extension [Self <: TagComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagComponentProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: ClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

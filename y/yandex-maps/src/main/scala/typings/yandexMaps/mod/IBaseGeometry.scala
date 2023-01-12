@@ -23,7 +23,8 @@ object IBaseGeometry {
     __obj.asInstanceOf[IBaseGeometry]
   }
   
-  extension [Self <: IBaseGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => js.Array[js.Array[Double]] | Null): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
     

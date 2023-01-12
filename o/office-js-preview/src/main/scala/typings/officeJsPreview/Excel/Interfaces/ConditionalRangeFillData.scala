@@ -22,7 +22,8 @@ object ConditionalRangeFillData {
     __obj.asInstanceOf[ConditionalRangeFillData]
   }
   
-  extension [Self <: ConditionalRangeFillData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeFillData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

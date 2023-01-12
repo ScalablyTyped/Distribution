@@ -1390,7 +1390,8 @@ object sapUiWebcFioriShellBarMod {
       __obj.asInstanceOf[ShellBarSettings]
     }
     
-    extension [Self <: ShellBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBarSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityTexts(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "accessibilityTexts", value.asInstanceOf[js.Any])
       

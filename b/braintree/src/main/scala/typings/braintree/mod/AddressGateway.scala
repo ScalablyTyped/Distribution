@@ -26,7 +26,8 @@ object AddressGateway {
     __obj.asInstanceOf[AddressGateway]
   }
   
-  extension [Self <: AddressGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddressGateway] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: AddressCreateRequest => js.Promise[ValidatedResponse[Address]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

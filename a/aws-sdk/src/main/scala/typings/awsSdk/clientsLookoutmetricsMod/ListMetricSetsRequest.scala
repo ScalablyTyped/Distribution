@@ -28,7 +28,8 @@ object ListMetricSetsRequest {
     __obj.asInstanceOf[ListMetricSetsRequest]
   }
   
-  extension [Self <: ListMetricSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
     

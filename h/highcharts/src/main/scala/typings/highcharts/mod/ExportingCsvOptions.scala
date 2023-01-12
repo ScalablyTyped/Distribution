@@ -73,7 +73,8 @@ object ExportingCsvOptions {
     __obj.asInstanceOf[ExportingCsvOptions]
   }
   
-  extension [Self <: ExportingCsvOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingCsvOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

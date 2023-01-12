@@ -18,7 +18,8 @@ object DescribeLocationSmbRequest {
     __obj.asInstanceOf[DescribeLocationSmbRequest]
   }
   
-  extension [Self <: DescribeLocationSmbRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocationSmbRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }

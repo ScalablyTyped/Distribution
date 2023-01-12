@@ -62,7 +62,8 @@ object FeatureLayer {
     __obj.asInstanceOf[FeatureLayer]
   }
   
-  extension [Self <: FeatureLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayer] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
     

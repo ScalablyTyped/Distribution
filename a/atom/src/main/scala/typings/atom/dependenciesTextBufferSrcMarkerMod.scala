@@ -44,7 +44,8 @@ object dependenciesTextBufferSrcMarkerMod {
       __obj.asInstanceOf[CopyMarkerOptions]
     }
     
-    extension [Self <: CopyMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object dependenciesTextBufferSrcMarkerMod {
       __obj.asInstanceOf[MarkerChangedEvent]
     }
     
-    extension [Self <: MarkerChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setHadTail(value: Boolean): Self = StObject.set(x, "hadTail", value.asInstanceOf[js.Any])
       

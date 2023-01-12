@@ -27,7 +27,8 @@ object EarconInstrument {
     __obj.asInstanceOf[EarconInstrument]
   }
   
-  extension [Self <: EarconInstrument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EarconInstrument] (val x: Self) extends AnyVal {
     
     inline def setInstrument(value: String | Instrument): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
     

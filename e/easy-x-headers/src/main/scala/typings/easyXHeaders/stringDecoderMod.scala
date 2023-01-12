@@ -35,7 +35,8 @@ object stringDecoderMod {
       __obj.asInstanceOf[NodeStringDecoder]
     }
     
-    extension [Self <: NodeStringDecoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeStringDecoder] (val x: Self) extends AnyVal {
       
       inline def setDetectIncompleteChar(value: Buffer => Double): Self = StObject.set(x, "detectIncompleteChar", js.Any.fromFunction1(value))
       

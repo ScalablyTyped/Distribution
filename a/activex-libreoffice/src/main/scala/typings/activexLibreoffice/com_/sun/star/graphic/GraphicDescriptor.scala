@@ -108,7 +108,8 @@ object GraphicDescriptor {
     __obj.asInstanceOf[GraphicDescriptor]
   }
   
-  extension [Self <: GraphicDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Boolean): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     

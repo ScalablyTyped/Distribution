@@ -23,7 +23,8 @@ object EnableDelegatedAdminAccountRequest {
     __obj.asInstanceOf[EnableDelegatedAdminAccountRequest]
   }
   
-  extension [Self <: EnableDelegatedAdminAccountRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableDelegatedAdminAccountRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

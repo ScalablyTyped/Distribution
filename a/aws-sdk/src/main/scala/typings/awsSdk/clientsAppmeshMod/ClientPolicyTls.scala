@@ -33,7 +33,8 @@ object ClientPolicyTls {
     __obj.asInstanceOf[ClientPolicyTls]
   }
   
-  extension [Self <: ClientPolicyTls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientPolicyTls] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: ClientTlsCertificate): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

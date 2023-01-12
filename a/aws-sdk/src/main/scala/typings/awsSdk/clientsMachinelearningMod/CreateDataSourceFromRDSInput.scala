@@ -38,7 +38,8 @@ object CreateDataSourceFromRDSInput {
     __obj.asInstanceOf[CreateDataSourceFromRDSInput]
   }
   
-  extension [Self <: CreateDataSourceFromRDSInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSourceFromRDSInput] (val x: Self) extends AnyVal {
     
     inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ArcGISImageServiceCapabilities {
     __obj.asInstanceOf[ArcGISImageServiceCapabilities]
   }
   
-  extension [Self <: ArcGISImageServiceCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISImageServiceCapabilities] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: ArcGISImageServiceCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

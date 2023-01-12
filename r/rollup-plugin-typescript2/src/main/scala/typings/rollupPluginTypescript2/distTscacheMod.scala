@@ -124,7 +124,8 @@ object distTscacheMod {
       __obj.asInstanceOf[ICode]
     }
     
-    extension [Self <: ICode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

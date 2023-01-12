@@ -17,7 +17,8 @@ object AlgCert {
     __obj.asInstanceOf[AlgCert]
   }
   
-  extension [Self <: AlgCert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgCert] (val x: Self) extends AnyVal {
     
     inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     

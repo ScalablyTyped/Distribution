@@ -18,7 +18,8 @@ object CreateItemRelationshipsStorageData {
     __obj.asInstanceOf[CreateItemRelationshipsStorageData]
   }
   
-  extension [Self <: CreateItemRelationshipsStorageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateItemRelationshipsStorageData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

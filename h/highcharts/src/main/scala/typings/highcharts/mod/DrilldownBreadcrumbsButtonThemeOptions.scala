@@ -15,7 +15,8 @@ object DrilldownBreadcrumbsButtonThemeOptions {
     __obj.asInstanceOf[DrilldownBreadcrumbsButtonThemeOptions]
   }
   
-  extension [Self <: DrilldownBreadcrumbsButtonThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownBreadcrumbsButtonThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: DrilldownBreadcrumbsButtonThemeStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

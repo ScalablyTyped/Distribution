@@ -29,7 +29,8 @@ object SAPODataDestinationProperties {
     __obj.asInstanceOf[SAPODataDestinationProperties]
   }
   
-  extension [Self <: SAPODataDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAPODataDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     

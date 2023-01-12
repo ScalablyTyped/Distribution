@@ -81,7 +81,8 @@ object IBuffer {
     __obj.asInstanceOf[IBuffer]
   }
   
-  extension [Self <: IBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBuffer] (val x: Self) extends AnyVal {
     
     inline def setBaseY(value: Double): Self = StObject.set(x, "baseY", value.asInstanceOf[js.Any])
     

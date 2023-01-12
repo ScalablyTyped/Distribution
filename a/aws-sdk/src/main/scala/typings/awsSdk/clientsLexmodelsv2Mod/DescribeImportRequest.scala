@@ -18,7 +18,8 @@ object DescribeImportRequest {
     __obj.asInstanceOf[DescribeImportRequest]
   }
   
-  extension [Self <: DescribeImportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImportRequest] (val x: Self) extends AnyVal {
     
     inline def setImportId(value: Id): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
   }

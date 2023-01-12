@@ -23,7 +23,8 @@ object ReportExportConfig {
     __obj.asInstanceOf[ReportExportConfig]
   }
   
-  extension [Self <: ReportExportConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportExportConfig] (val x: Self) extends AnyVal {
     
     inline def setExportConfigType(value: ReportExportConfigType): Self = StObject.set(x, "exportConfigType", value.asInstanceOf[js.Any])
     

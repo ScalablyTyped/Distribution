@@ -18,7 +18,8 @@ object FileDeleteEvent {
     __obj.asInstanceOf[FileDeleteEvent]
   }
   
-  extension [Self <: FileDeleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDeleteEvent] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[Uri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

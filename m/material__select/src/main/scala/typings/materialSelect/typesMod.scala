@@ -30,7 +30,8 @@ object typesMod {
       __obj.asInstanceOf[MDCSelectEventDetail]
     }
     
-    extension [Self <: MDCSelectEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSelectEventDetail] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object typesMod {
       __obj.asInstanceOf[MDCSelectFoundationMap]
     }
     
-    extension [Self <: MDCSelectFoundationMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCSelectFoundationMap] (val x: Self) extends AnyVal {
       
       inline def setHelperText(value: MDCSelectHelperTextFoundation): Self = StObject.set(x, "helperText", value.asInstanceOf[js.Any])
       

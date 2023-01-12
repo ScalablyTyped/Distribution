@@ -23,7 +23,8 @@ object RetrieveTapeArchiveInput {
     __obj.asInstanceOf[RetrieveTapeArchiveInput]
   }
   
-  extension [Self <: RetrieveTapeArchiveInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveTapeArchiveInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

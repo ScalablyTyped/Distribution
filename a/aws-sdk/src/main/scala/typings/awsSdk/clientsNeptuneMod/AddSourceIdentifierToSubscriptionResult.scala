@@ -15,7 +15,8 @@ object AddSourceIdentifierToSubscriptionResult {
     __obj.asInstanceOf[AddSourceIdentifierToSubscriptionResult]
   }
   
-  extension [Self <: AddSourceIdentifierToSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSourceIdentifierToSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setEventSubscription(value: EventSubscription): Self = StObject.set(x, "EventSubscription", value.asInstanceOf[js.Any])
     

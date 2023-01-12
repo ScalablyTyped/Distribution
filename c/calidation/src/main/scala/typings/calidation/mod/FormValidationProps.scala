@@ -488,7 +488,8 @@ object FormValidationProps {
     __obj.asInstanceOf[FormValidationProps[T]]
   }
   
-  extension [Self <: FormValidationProps[?], T /* <: js.Object */](x: Self & FormValidationProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormValidationProps[?], T /* <: js.Object */] (val x: Self & FormValidationProps[T]) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -321,7 +321,8 @@ object esComponentsErrorBlockCreateErrorBlockMod {
       __obj.asInstanceOf[ErrorBlockProps]
     }
     
-    extension [Self <: ErrorBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBlockProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

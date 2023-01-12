@@ -74,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialFaviconOptions]
     }
     
-    extension [Self <: PartialFaviconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFaviconOptions] (val x: Self) extends AnyVal {
       
       inline def setAppDescription(value: String): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
       

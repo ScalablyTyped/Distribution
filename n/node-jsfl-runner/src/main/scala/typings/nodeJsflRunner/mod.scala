@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[JSFL]
     }
     
-    extension [Self <: JSFL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSFL] (val x: Self) extends AnyVal {
       
       inline def setInit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }

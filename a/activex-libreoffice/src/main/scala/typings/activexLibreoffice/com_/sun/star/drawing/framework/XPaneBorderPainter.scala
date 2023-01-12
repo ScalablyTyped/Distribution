@@ -91,7 +91,8 @@ object XPaneBorderPainter {
     __obj.asInstanceOf[XPaneBorderPainter]
   }
   
-  extension [Self <: XPaneBorderPainter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPaneBorderPainter] (val x: Self) extends AnyVal {
     
     inline def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "addBorder", js.Any.fromFunction3(value))
     

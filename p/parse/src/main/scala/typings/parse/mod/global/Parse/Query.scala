@@ -740,7 +740,8 @@ object Query {
       __obj.asInstanceOf[AggregationOptions]
     }
     
-    extension [Self <: AggregationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -805,7 +806,8 @@ object Query {
       __obj.asInstanceOf[BatchOptions]
     }
     
-    extension [Self <: BatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -879,7 +881,8 @@ object Query {
       __obj.asInstanceOf[FullTextOptions]
     }
     
-    extension [Self <: FullTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullTextOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

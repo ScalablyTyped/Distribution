@@ -34,7 +34,8 @@ object Hooks {
     __obj.asInstanceOf[Hooks]
   }
   
-  extension [Self <: Hooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hooks] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: /* assert */ Assert => Unit | js.Promise[Unit]): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
     

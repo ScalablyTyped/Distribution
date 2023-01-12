@@ -34,7 +34,8 @@ object Upload {
     __obj.asInstanceOf[Upload]
   }
   
-  extension [Self <: Upload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

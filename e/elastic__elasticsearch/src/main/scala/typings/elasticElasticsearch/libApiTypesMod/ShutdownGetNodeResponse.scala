@@ -15,7 +15,8 @@ object ShutdownGetNodeResponse {
     __obj.asInstanceOf[ShutdownGetNodeResponse]
   }
   
-  extension [Self <: ShutdownGetNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownGetNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[ShutdownGetNodeNodeShutdownStatus]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

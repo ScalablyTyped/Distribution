@@ -33,7 +33,8 @@ object activityLog {
       __obj.asInstanceOf[ActivityLogOnExtensionActivityEvent[TCallback]]
     }
     
-    extension [Self <: ActivityLogOnExtensionActivityEvent[?], TCallback](x: Self & ActivityLogOnExtensionActivityEvent[TCallback]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityLogOnExtensionActivityEvent[?], TCallback] (val x: Self & ActivityLogOnExtensionActivityEvent[TCallback]) extends AnyVal {
       
       inline def setAddListener(value: (TCallback, String) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
@@ -74,7 +75,8 @@ object activityLog {
       __obj.asInstanceOf[OnExtensionActivityDetails]
     }
     
-    extension [Self <: OnExtensionActivityDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnExtensionActivityDetails] (val x: Self) extends AnyVal {
       
       inline def setData(value: OnExtensionActivityDetailsData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object activityLog {
       __obj.asInstanceOf[OnExtensionActivityDetailsData]
     }
     
-    extension [Self <: OnExtensionActivityDetailsData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnExtensionActivityDetailsData] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

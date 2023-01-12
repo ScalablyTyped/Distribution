@@ -22,7 +22,8 @@ object SrvDnsRecord {
     __obj.asInstanceOf[SrvDnsRecord]
   }
   
-  extension [Self <: SrvDnsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrvDnsRecord] (val x: Self) extends AnyVal {
     
     inline def setData(value: Name): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

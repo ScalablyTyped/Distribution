@@ -19,7 +19,8 @@ object PivotGridV2CollapseMemberEvent {
     __obj.asInstanceOf[PivotGridV2CollapseMemberEvent]
   }
   
-  extension [Self <: PivotGridV2CollapseMemberEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridV2CollapseMemberEvent] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

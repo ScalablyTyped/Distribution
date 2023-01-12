@@ -86,7 +86,8 @@ object AccountUISettings {
     __obj.asInstanceOf[AccountUISettings]
   }
   
-  extension [Self <: AccountUISettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountUISettings] (val x: Self) extends AnyVal {
     
     inline def setAdminMessage(value: AdminMessage): Self = StObject.set(x, "adminMessage", value.asInstanceOf[js.Any])
     

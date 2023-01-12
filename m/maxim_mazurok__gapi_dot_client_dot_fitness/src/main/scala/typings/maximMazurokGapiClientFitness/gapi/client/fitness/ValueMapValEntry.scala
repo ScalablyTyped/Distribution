@@ -17,7 +17,8 @@ object ValueMapValEntry {
     __obj.asInstanceOf[ValueMapValEntry]
   }
   
-  extension [Self <: ValueMapValEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueMapValEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateDeploymentConfigOutput {
     __obj.asInstanceOf[CreateDeploymentConfigOutput]
   }
   
-  extension [Self <: CreateDeploymentConfigOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentConfigOutput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentConfigId(value: DeploymentConfigId): Self = StObject.set(x, "deploymentConfigId", value.asInstanceOf[js.Any])
     

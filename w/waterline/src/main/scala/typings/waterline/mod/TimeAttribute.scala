@@ -21,7 +21,8 @@ object TimeAttribute {
     __obj.asInstanceOf[TimeAttribute]
   }
   
-  extension [Self <: TimeAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeAttribute] (val x: Self) extends AnyVal {
     
     inline def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

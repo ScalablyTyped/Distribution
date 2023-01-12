@@ -32,7 +32,8 @@ object RewriteResponse {
     __obj.asInstanceOf[RewriteResponse]
   }
   
-  extension [Self <: RewriteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RewriteResponse] (val x: Self) extends AnyVal {
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

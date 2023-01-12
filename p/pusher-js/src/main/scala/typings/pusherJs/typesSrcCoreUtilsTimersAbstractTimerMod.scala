@@ -57,7 +57,8 @@ object typesSrcCoreUtilsTimersAbstractTimerMod {
       __obj.asInstanceOf[Timer]
     }
     
-    extension [Self <: Timer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
       
       inline def setClear(value: /* number */ Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       

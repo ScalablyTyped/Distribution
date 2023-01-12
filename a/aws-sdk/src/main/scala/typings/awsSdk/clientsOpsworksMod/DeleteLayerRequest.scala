@@ -18,7 +18,8 @@ object DeleteLayerRequest {
     __obj.asInstanceOf[DeleteLayerRequest]
   }
   
-  extension [Self <: DeleteLayerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLayerRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
   }

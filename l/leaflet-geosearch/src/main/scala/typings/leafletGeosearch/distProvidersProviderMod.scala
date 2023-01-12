@@ -78,7 +78,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[EndpointArgument]
     }
     
-    extension [Self <: EndpointArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointArgument] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String | (StringDictionary[String | Double | Boolean])): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[LatLng]
     }
     
-    extension [Self <: LatLng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LatLng] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[ParseArgument[TData]]
     }
     
-    extension [Self <: ParseArgument[?], TData](x: Self & ParseArgument[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseArgument[?], TData] (val x: Self & ParseArgument[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -153,7 +156,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[Provider[TRequestResult, TRawResult]]
     }
     
-    extension [Self <: Provider[?, ?], TRequestResult, TRawResult](x: Self & (Provider[TRequestResult, TRawResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider[?, ?], TRequestResult, TRawResult] (val x: Self & (Provider[TRequestResult, TRawResult])) extends AnyVal {
       
       inline def setEndpoint(value: EndpointArgument => String): Self = StObject.set(x, "endpoint", js.Any.fromFunction1(value))
       
@@ -178,7 +182,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[ProviderOptions]
     }
     
-    extension [Self <: ProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setParams(value: ProviderParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[SearchArgument]
     }
     
-    extension [Self <: SearchArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchArgument] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -224,7 +230,8 @@ object distProvidersProviderMod {
       __obj.asInstanceOf[SearchResult[TRawResult]]
     }
     
-    extension [Self <: SearchResult[?], TRawResult](x: Self & SearchResult[TRawResult]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult[?], TRawResult] (val x: Self & SearchResult[TRawResult]) extends AnyVal {
       
       inline def setBounds(value: BoundsTuple): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

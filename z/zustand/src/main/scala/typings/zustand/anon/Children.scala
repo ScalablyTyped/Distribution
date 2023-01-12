@@ -19,7 +19,8 @@ object Children {
     __obj.asInstanceOf[Children[S]]
   }
   
-  extension [Self <: Children[?], S /* <: StoreApi[Any] */](x: Self & Children[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Children[?], S /* <: StoreApi[Any] */] (val x: Self & Children[S]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

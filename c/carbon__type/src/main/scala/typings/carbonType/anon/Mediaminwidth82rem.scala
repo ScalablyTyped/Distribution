@@ -49,7 +49,8 @@ object Mediaminwidth82rem {
     __obj.asInstanceOf[Mediaminwidth82rem]
   }
   
-  extension [Self <: Mediaminwidth82rem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mediaminwidth82rem] (val x: Self) extends AnyVal {
     
     inline def `set@media Leftparenthesismin-widthColon 42remRightparenthesis`(value: LineHeight): Self = StObject.set(x, "@media (min-width: 42rem)", value.asInstanceOf[js.Any])
     

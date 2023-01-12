@@ -417,7 +417,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -459,7 +460,8 @@ object mod {
       __obj.asInstanceOf[Move]
     }
     
-    extension [Self <: Move](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Move] (val x: Self) extends AnyVal {
       
       inline def setCaptured(value: Exclude[PieceType, k]): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
       
@@ -497,7 +499,8 @@ object mod {
       __obj.asInstanceOf[Piece]
     }
     
-    extension [Self <: Piece](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Piece] (val x: Self) extends AnyVal {
       
       inline def setColor(value: PieceColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -567,7 +570,8 @@ object mod {
       __obj.asInstanceOf[ShortMove]
     }
     
-    extension [Self <: ShortMove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortMove] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Square): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

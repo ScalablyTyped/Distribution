@@ -17,7 +17,8 @@ object NotAfter {
     __obj.asInstanceOf[NotAfter]
   }
   
-  extension [Self <: NotAfter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotAfter] (val x: Self) extends AnyVal {
     
     inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     

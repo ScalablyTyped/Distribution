@@ -28,7 +28,8 @@ object OTAUpdateSummary {
     __obj.asInstanceOf[OTAUpdateSummary]
   }
   
-  extension [Self <: OTAUpdateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OTAUpdateSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

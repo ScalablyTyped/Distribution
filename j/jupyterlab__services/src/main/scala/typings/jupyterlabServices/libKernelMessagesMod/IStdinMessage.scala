@@ -46,7 +46,8 @@ object IStdinMessage {
     __obj.asInstanceOf[IStdinMessage[T]]
   }
   
-  extension [Self <: IStdinMessage[?], T /* <: StdinMessageType */](x: Self & IStdinMessage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStdinMessage[?], T /* <: StdinMessageType */] (val x: Self & IStdinMessage[T]) extends AnyVal {
     
     inline def setChannel(value: stdin): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

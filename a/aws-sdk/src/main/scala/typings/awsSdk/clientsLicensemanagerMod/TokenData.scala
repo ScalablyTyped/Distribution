@@ -48,7 +48,8 @@ object TokenData {
     __obj.asInstanceOf[TokenData]
   }
   
-  extension [Self <: TokenData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
     
     inline def setExpirationTime(value: ISO8601DateTime): Self = StObject.set(x, "ExpirationTime", value.asInstanceOf[js.Any])
     

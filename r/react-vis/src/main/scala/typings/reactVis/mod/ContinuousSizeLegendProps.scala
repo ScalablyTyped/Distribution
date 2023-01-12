@@ -33,7 +33,8 @@ object ContinuousSizeLegendProps {
     __obj.asInstanceOf[ContinuousSizeLegendProps]
   }
   
-  extension [Self <: ContinuousSizeLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousSizeLegendProps] (val x: Self) extends AnyVal {
     
     inline def setCirclesTotal(value: Double): Self = StObject.set(x, "circlesTotal", value.asInstanceOf[js.Any])
     

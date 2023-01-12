@@ -19,7 +19,8 @@ object ChartYAxisItemNotesDataItemLabelBorder {
     __obj.asInstanceOf[ChartYAxisItemNotesDataItemLabelBorder]
   }
   
-  extension [Self <: ChartYAxisItemNotesDataItemLabelBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemNotesDataItemLabelBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

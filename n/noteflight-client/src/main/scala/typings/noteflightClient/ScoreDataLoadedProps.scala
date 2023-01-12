@@ -19,7 +19,8 @@ object ScoreDataLoadedProps {
     __obj.asInstanceOf[ScoreDataLoadedProps]
   }
   
-  extension [Self <: ScoreDataLoadedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoreDataLoadedProps] (val x: Self) extends AnyVal {
     
     inline def setScoreId(value: String): Self = StObject.set(x, "scoreId", value.asInstanceOf[js.Any])
   }

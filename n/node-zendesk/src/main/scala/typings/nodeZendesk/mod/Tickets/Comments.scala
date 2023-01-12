@@ -27,7 +27,8 @@ object Comments {
         __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel]
       }
       
-      extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.CommentsUsers.ResponseModel] (val x: Self) extends AnyVal {
         
         inline def setRole(value: Role): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       }
@@ -47,7 +48,8 @@ object Comments {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.ListPayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.ListPayload] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[typings.nodeZendesk.mod.Tickets.Comments.ResponseModel]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -68,7 +70,8 @@ object Comments {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setFlag_options(value: Any): Self = StObject.set(x, "flag_options", value.asInstanceOf[js.Any])
       
@@ -95,7 +98,8 @@ object Comments {
         __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel]
       }
       
-      extension [Self <: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Comments.Organizations.ResponseModel] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }

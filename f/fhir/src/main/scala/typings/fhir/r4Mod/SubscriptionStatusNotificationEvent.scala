@@ -39,7 +39,8 @@ object SubscriptionStatusNotificationEvent {
     __obj.asInstanceOf[SubscriptionStatusNotificationEvent]
   }
   
-  extension [Self <: SubscriptionStatusNotificationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionStatusNotificationEvent] (val x: Self) extends AnyVal {
     
     inline def setAdditionalContext(value: js.Array[Reference]): Self = StObject.set(x, "additionalContext", value.asInstanceOf[js.Any])
     

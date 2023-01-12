@@ -18,7 +18,8 @@ object ExportSnapshotRequest {
     __obj.asInstanceOf[ExportSnapshotRequest]
   }
   
-  extension [Self <: ExportSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceSnapshotName(value: ResourceName): Self = StObject.set(x, "sourceSnapshotName", value.asInstanceOf[js.Any])
   }

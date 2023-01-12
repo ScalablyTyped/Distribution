@@ -36,7 +36,8 @@ object VisualObjectInstance {
     __obj.asInstanceOf[VisualObjectInstance]
   }
   
-  extension [Self <: VisualObjectInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualObjectInstance] (val x: Self) extends AnyVal {
     
     inline def setContainerIdx(value: Double): Self = StObject.set(x, "containerIdx", value.asInstanceOf[js.Any])
     

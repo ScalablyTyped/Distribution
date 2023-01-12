@@ -89,7 +89,8 @@ object TickContext {
     __obj.asInstanceOf[TickContext]
   }
   
-  extension [Self <: TickContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickContext] (val x: Self) extends AnyVal {
     
     inline def setAddTickable(value: Tickable => TickContext): Self = StObject.set(x, "addTickable", js.Any.fromFunction1(value))
     

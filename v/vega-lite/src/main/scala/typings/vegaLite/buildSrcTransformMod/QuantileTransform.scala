@@ -43,7 +43,8 @@ object QuantileTransform {
     __obj.asInstanceOf[QuantileTransform]
   }
   
-  extension [Self <: QuantileTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuantileTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: js.Tuple2[FieldName, FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

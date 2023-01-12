@@ -59,7 +59,8 @@ object ConnectionOptions {
     __obj.asInstanceOf[ConnectionOptions]
   }
   
-  extension [Self <: ConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoEncrypter(value: AutoEncrypter): Self = StObject.set(x, "autoEncrypter", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object GoogleCloudDialogflowCxV3DetectIntentResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3DetectIntentResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3DetectIntentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3DetectIntentResponse] (val x: Self) extends AnyVal {
     
     inline def setAllowCancellation(value: Boolean): Self = StObject.set(x, "allowCancellation", value.asInstanceOf[js.Any])
     

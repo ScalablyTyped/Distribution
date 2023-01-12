@@ -35,7 +35,8 @@ object CIMGeometricEffectJog {
     __obj.asInstanceOf[CIMGeometricEffectJog]
   }
   
-  extension [Self <: CIMGeometricEffectJog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectJog] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object libSettingspanelMod {
       __obj.asInstanceOf[ISettingsPanelProps]
     }
     
-    extension [Self <: ISettingsPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsPanelProps] (val x: Self) extends AnyVal {
       
       inline def setEditorRegistry(value: IFormComponentRegistry): Self = StObject.set(x, "editorRegistry", value.asInstanceOf[js.Any])
       

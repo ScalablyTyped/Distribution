@@ -19,7 +19,8 @@ object libUtilsDiacriticsMod {
       __obj.asInstanceOf[Diacritic]
     }
     
-    extension [Self <: Diacritic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diacritic] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

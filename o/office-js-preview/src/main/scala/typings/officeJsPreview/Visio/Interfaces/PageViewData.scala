@@ -22,7 +22,8 @@ object PageViewData {
     __obj.asInstanceOf[PageViewData]
   }
   
-  extension [Self <: PageViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageViewData] (val x: Self) extends AnyVal {
     
     inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     

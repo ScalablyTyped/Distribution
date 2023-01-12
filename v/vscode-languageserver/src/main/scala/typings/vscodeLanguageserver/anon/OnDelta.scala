@@ -51,7 +51,8 @@ object OnDelta {
     __obj.asInstanceOf[OnDelta]
   }
   
-  extension [Self <: OnDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDelta] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: ServerRequestHandler[SemanticTokensParams, SemanticTokens, SemanticTokensPartialResult, Unit] => Disposable

@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[GetAtlaskitAnalyticsContext]
     }
     
-    extension [Self <: GetAtlaskitAnalyticsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAtlaskitAnalyticsContext] (val x: Self) extends AnyVal {
       
       inline def setGetAtlaskitAnalyticsContext(value: () => js.Array[Any]): Self = StObject.set(x, "getAtlaskitAnalyticsContext", js.Any.fromFunction0(value))
     }
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[GetAtlaskitAnalyticsEventHandlers]
     }
     
-    extension [Self <: GetAtlaskitAnalyticsEventHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAtlaskitAnalyticsEventHandlers] (val x: Self) extends AnyVal {
       
       inline def setGetAtlaskitAnalyticsContext(value: () => Any): Self = StObject.set(x, "getAtlaskitAnalyticsContext", js.Any.fromFunction0(value))
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[OmitAnalyticsErrorBoundar]
     }
     
-    extension [Self <: OmitAnalyticsErrorBoundar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAnalyticsErrorBoundar] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

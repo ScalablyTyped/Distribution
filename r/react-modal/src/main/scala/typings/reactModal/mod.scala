@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[Aria]
     }
     
-    extension [Self <: Aria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aria] (val x: Self) extends AnyVal {
       
       inline def setDescribedby(value: String): Self = StObject.set(x, "describedby", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setAfterOpen(value: String): Self = StObject.set(x, "afterOpen", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object mod {
       __obj.asInstanceOf[OnAfterOpenCallbackOptions]
     }
     
-    extension [Self <: OnAfterOpenCallbackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnAfterOpenCallbackOptions] (val x: Self) extends AnyVal {
       
       inline def setContentEl(value: HTMLDivElement): Self = StObject.set(x, "contentEl", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAppElement(value: HTMLElement | js.Array[HTMLElement] | HTMLCollection | NodeList): Self = StObject.set(x, "appElement", value.asInstanceOf[js.Any])
       
@@ -383,7 +387,8 @@ object mod {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setContent(value: CSSProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object BaseQuery {
     __obj.asInstanceOf[BaseQuery]
   }
   
-  extension [Self <: BaseQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseQuery] (val x: Self) extends AnyVal {
     
     inline def setDocFormat(value: full): Self = StObject.set(x, "docFormat", value.asInstanceOf[js.Any])
     

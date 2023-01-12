@@ -37,7 +37,8 @@ object ImageMapGuideOptions {
     __obj.asInstanceOf[ImageMapGuideOptions]
   }
   
-  extension [Self <: ImageMapGuideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageMapGuideOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayDpi(value: Double): Self = StObject.set(x, "displayDpi", value.asInstanceOf[js.Any])
     

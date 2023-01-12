@@ -20,7 +20,8 @@ object DotNL {
     __obj.asInstanceOf[DotNL]
   }
   
-  extension [Self <: DotNL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotNL] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: default): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

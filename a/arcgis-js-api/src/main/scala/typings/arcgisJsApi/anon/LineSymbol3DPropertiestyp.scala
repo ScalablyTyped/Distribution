@@ -44,7 +44,8 @@ object LineSymbol3DPropertiestyp {
     __obj.asInstanceOf[LineSymbol3DPropertiestyp]
   }
   
-  extension [Self <: LineSymbol3DPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSymbol3DPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

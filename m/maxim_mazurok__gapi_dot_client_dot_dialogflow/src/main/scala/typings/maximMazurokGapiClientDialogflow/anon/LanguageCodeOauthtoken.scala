@@ -61,7 +61,8 @@ object LanguageCodeOauthtoken {
     __obj.asInstanceOf[LanguageCodeOauthtoken]
   }
   
-  extension [Self <: LanguageCodeOauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageCodeOauthtoken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

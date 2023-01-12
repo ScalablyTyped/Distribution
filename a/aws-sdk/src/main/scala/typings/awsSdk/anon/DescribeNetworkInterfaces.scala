@@ -50,7 +50,8 @@ object DescribeNetworkInterfaces {
     __obj.asInstanceOf[DescribeNetworkInterfaces]
   }
   
-  extension [Self <: DescribeNetworkInterfaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInterfaces] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofScrollView {
     __obj.asInstanceOf[TypeofScrollView]
   }
   
-  extension [Self <: TypeofScrollView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofScrollView] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ScrollView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

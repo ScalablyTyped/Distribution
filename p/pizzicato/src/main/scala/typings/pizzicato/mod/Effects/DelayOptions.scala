@@ -33,7 +33,8 @@ object DelayOptions {
     __obj.asInstanceOf[DelayOptions]
   }
   
-  extension [Self <: DelayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayOptions] (val x: Self) extends AnyVal {
     
     inline def setFeedback(value: Double): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     

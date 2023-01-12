@@ -52,7 +52,8 @@ object CanvasPinchEvent {
     __obj.asInstanceOf[CanvasPinchEvent]
   }
   
-  extension [Self <: CanvasPinchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPinchEvent] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

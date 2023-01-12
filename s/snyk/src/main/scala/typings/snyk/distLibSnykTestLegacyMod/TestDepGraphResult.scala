@@ -23,7 +23,8 @@ object TestDepGraphResult {
     __obj.asInstanceOf[TestDepGraphResult]
   }
   
-  extension [Self <: TestDepGraphResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDepGraphResult] (val x: Self) extends AnyVal {
     
     inline def setAffectedPkgs(value: AffectedPackages): Self = StObject.set(x, "affectedPkgs", value.asInstanceOf[js.Any])
     

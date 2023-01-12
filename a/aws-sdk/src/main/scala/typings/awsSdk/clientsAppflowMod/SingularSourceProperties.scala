@@ -19,7 +19,8 @@ object SingularSourceProperties {
     __obj.asInstanceOf[SingularSourceProperties]
   }
   
-  extension [Self <: SingularSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

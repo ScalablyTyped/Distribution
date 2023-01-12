@@ -29,7 +29,8 @@ object QuadStreamResultWithInternals {
     __obj.asInstanceOf[QuadStreamResultWithInternals]
   }
   
-  extension [Self <: QuadStreamResultWithInternals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuadStreamResultWithInternals] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: js.Array[TermName]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

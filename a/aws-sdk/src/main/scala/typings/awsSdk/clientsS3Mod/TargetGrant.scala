@@ -23,7 +23,8 @@ object TargetGrant {
     __obj.asInstanceOf[TargetGrant]
   }
   
-  extension [Self <: TargetGrant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGrant] (val x: Self) extends AnyVal {
     
     inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object ɵPipeDef {
     __obj.asInstanceOf[ɵPipeDef[T]]
   }
   
-  extension [Self <: ɵPipeDef[?], T](x: Self & ɵPipeDef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵPipeDef[?], T] (val x: Self & ɵPipeDef[T]) extends AnyVal {
     
     inline def setFactory(value: FactoryFn[T]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     

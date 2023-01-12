@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsSlideShowVerticalMod extend
       __obj.asInstanceOf[SlideShowVerticalProps]
     }
     
-    extension [Self <: SlideShowVerticalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideShowVerticalProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

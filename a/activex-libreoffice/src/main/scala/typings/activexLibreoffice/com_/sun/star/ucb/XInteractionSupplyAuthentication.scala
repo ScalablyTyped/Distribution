@@ -116,7 +116,8 @@ object XInteractionSupplyAuthentication {
     __obj.asInstanceOf[XInteractionSupplyAuthentication]
   }
   
-  extension [Self <: XInteractionSupplyAuthentication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionSupplyAuthentication] (val x: Self) extends AnyVal {
     
     inline def setCanSetAccount(value: () => Boolean): Self = StObject.set(x, "canSetAccount", js.Any.fromFunction0(value))
     

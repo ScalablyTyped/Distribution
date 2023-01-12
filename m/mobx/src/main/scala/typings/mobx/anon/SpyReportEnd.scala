@@ -25,7 +25,8 @@ object SpyReportEnd {
     __obj.asInstanceOf[SpyReportEnd]
   }
   
-  extension [Self <: SpyReportEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpyReportEnd] (val x: Self) extends AnyVal {
     
     inline def setSpyReportEnd(value: `true`): Self = StObject.set(x, "spyReportEnd", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object UpdateBrokerRequest {
     __obj.asInstanceOf[UpdateBrokerRequest]
   }
   
-  extension [Self <: UpdateBrokerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBrokerRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationStrategy(value: AuthenticationStrategy): Self = StObject.set(x, "AuthenticationStrategy", value.asInstanceOf[js.Any])
     

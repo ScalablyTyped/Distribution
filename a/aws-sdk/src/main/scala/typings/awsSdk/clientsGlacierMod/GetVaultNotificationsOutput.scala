@@ -18,7 +18,8 @@ object GetVaultNotificationsOutput {
     __obj.asInstanceOf[GetVaultNotificationsOutput]
   }
   
-  extension [Self <: GetVaultNotificationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVaultNotificationsOutput] (val x: Self) extends AnyVal {
     
     inline def setVaultNotificationConfig(value: VaultNotificationConfig): Self = StObject.set(x, "vaultNotificationConfig", value.asInstanceOf[js.Any])
     

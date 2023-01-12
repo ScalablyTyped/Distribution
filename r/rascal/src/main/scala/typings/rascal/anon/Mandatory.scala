@@ -17,7 +17,8 @@ object Mandatory {
     __obj.asInstanceOf[Mandatory]
   }
   
-  extension [Self <: Mandatory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mandatory] (val x: Self) extends AnyVal {
     
     inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
     

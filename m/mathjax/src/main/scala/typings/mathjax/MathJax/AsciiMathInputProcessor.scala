@@ -25,7 +25,8 @@ object AsciiMathInputProcessor {
     __obj.asInstanceOf[AsciiMathInputProcessor]
   }
   
-  extension [Self <: AsciiMathInputProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsciiMathInputProcessor] (val x: Self) extends AnyVal {
     
     inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     

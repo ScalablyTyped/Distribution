@@ -41,7 +41,8 @@ object PigJob {
     __obj.asInstanceOf[PigJob]
   }
   
-  extension [Self <: PigJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PigJob] (val x: Self) extends AnyVal {
     
     inline def setContinueOnFailure(value: Boolean): Self = StObject.set(x, "continueOnFailure", value.asInstanceOf[js.Any])
     

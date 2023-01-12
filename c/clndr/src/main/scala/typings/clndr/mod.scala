@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[CalendarDay]
     }
     
-    extension [Self <: CalendarDay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDay] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[CalendarDayProperties]
     }
     
-    extension [Self <: CalendarDayProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDayProperties] (val x: Self) extends AnyVal {
       
       inline def setIsAdjacentMonth(value: Boolean): Self = StObject.set(x, "isAdjacentMonth", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object mod {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setAdjacentMonth(value: String): Self = StObject.set(x, "adjacentMonth", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[ClickEvents]
     }
     
-    extension [Self <: ClickEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvents] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* target */ Target => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       
@@ -497,7 +501,8 @@ object mod {
       __obj.asInstanceOf[ClndrOptions]
     }
     
-    extension [Self <: ClndrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClndrOptions] (val x: Self) extends AnyVal {
       
       inline def setAdjacentDaysChangeMonth(value: Boolean): Self = StObject.set(x, "adjacentDaysChangeMonth", value.asInstanceOf[js.Any])
       
@@ -620,7 +625,8 @@ object mod {
       __obj.asInstanceOf[Constraints]
     }
     
-    extension [Self <: Constraints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constraints] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -661,7 +667,8 @@ object mod {
       __obj.asInstanceOf[LengthOfTime]
     }
     
-    extension [Self <: LengthOfTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LengthOfTime] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -694,7 +701,8 @@ object mod {
       __obj.asInstanceOf[Month]
     }
     
-    extension [Self <: Month](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Month] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[CalendarDay]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -723,7 +731,8 @@ object mod {
       __obj.asInstanceOf[MultiDayEvents]
     }
     
-    extension [Self <: MultiDayEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiDayEvents] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -784,7 +793,8 @@ object mod {
       __obj.asInstanceOf[RenderData]
     }
     
-    extension [Self <: RenderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderData] (val x: Self) extends AnyVal {
       
       inline def setDays(value: js.Array[CalendarDay]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -851,7 +861,8 @@ object mod {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Moment): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -886,7 +897,8 @@ object mod {
       __obj.asInstanceOf[Targets]
     }
     
-    extension [Self <: Targets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Targets] (val x: Self) extends AnyVal {
       
       inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

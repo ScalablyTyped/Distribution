@@ -349,7 +349,8 @@ object libContextMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: IModel */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: IModel */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
         

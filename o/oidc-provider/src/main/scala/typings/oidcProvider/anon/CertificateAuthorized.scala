@@ -36,7 +36,8 @@ object CertificateAuthorized {
     __obj.asInstanceOf[CertificateAuthorized]
   }
   
-  extension [Self <: CertificateAuthorized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateAuthorized] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorized(value: /* ctx */ KoaContextWithOIDC => Boolean): Self = StObject.set(x, "certificateAuthorized", js.Any.fromFunction1(value))
     

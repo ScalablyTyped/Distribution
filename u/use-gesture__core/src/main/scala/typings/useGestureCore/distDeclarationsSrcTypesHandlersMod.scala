@@ -499,7 +499,8 @@ object distDeclarationsSrcTypesHandlersMod {
       __obj.asInstanceOf[AnyHandlerEventTypes]
     }
     
-    extension [Self <: AnyHandlerEventTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyHandlerEventTypes] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: Any): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
       
@@ -2169,7 +2170,8 @@ object distDeclarationsSrcTypesHandlersMod {
       __obj.asInstanceOf[GestureHandlers[HandlerType]]
     }
     
-    extension [Self <: GestureHandlers[?], HandlerType /* <: AnyHandlerEventTypes */](x: Self & GestureHandlers[HandlerType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GestureHandlers[?], HandlerType /* <: AnyHandlerEventTypes */] (val x: Self & GestureHandlers[HandlerType]) extends AnyVal {
       
       inline def setOnAbort(
         value: (/* state */ SharedGestureStateeventunDraggingEventHoveringLockedMetaKeyMovingPinchingPressedScrollingShiftKeyTouchesWheeling, /* args */ Any) => Unit
@@ -3100,7 +3102,8 @@ object distDeclarationsSrcTypesHandlersMod {
       __obj.asInstanceOf[InternalHandlers]
     }
     
-    extension [Self <: InternalHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalHandlers] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: /* state */ (Omit[FullGestureState[drag], event]) & Event[Any] => Any | Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
       
@@ -4126,7 +4129,8 @@ object distDeclarationsSrcTypesHandlersMod {
       __obj.asInstanceOf[NativeHandlers[T]]
     }
     
-    extension [Self <: NativeHandlers[?], T /* <: AnyHandlerEventTypes */](x: Self & NativeHandlers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeHandlers[?], T /* <: AnyHandlerEventTypes */] (val x: Self & NativeHandlers[T]) extends AnyVal {
       
       inline def setOnAbort(
         value: (/* state */ SharedGestureStateeventunDraggingEventHoveringLockedMetaKeyMovingPinchingPressedScrollingShiftKeyTouchesWheeling, /* args */ Any) => Unit
@@ -5489,7 +5493,8 @@ object distDeclarationsSrcTypesHandlersMod {
       __obj.asInstanceOf[UserHandlers[T]]
     }
     
-    extension [Self <: UserHandlers[?], T /* <: AnyHandlerEventTypes */](x: Self & UserHandlers[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserHandlers[?], T /* <: AnyHandlerEventTypes */] (val x: Self & UserHandlers[T]) extends AnyVal {
       
       inline def setOnDrag(value: /* state */ (Omit[FullGestureState[drag], event]) & (Event[check[T, drag]]) => Any | Unit): Self = StObject.set(x, "onDrag", js.Any.fromFunction1(value))
       

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[IsTrusted]
     }
     
-    extension [Self <: IsTrusted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsTrusted] (val x: Self) extends AnyVal {
       
       inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     }

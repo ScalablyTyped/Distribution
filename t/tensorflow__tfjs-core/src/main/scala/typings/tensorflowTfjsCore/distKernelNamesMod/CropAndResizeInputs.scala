@@ -20,7 +20,8 @@ object CropAndResizeInputs {
     __obj.asInstanceOf[CropAndResizeInputs]
   }
   
-  extension [Self <: CropAndResizeInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropAndResizeInputs] (val x: Self) extends AnyVal {
     
     inline def setBoxInd(value: scala.Any): Self = StObject.set(x, "boxInd", value.asInstanceOf[js.Any])
     

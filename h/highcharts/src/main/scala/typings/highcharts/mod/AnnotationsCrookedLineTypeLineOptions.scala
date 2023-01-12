@@ -15,7 +15,8 @@ object AnnotationsCrookedLineTypeLineOptions {
     __obj.asInstanceOf[AnnotationsCrookedLineTypeLineOptions]
   }
   
-  extension [Self <: AnnotationsCrookedLineTypeLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsCrookedLineTypeLineOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

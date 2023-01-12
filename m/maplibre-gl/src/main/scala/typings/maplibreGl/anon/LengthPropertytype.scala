@@ -36,7 +36,8 @@ object LengthPropertytype {
     __obj.asInstanceOf[LengthPropertytype]
   }
   
-  extension [Self <: LengthPropertytype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LengthPropertytype] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

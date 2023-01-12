@@ -23,7 +23,8 @@ object ModifyingQuery {
     __obj.asInstanceOf[ModifyingQuery]
   }
   
-  extension [Self <: ModifyingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyingQuery] (val x: Self) extends AnyVal {
     
     inline def setReturning(value: /* repeated */ Any => Query[Any]): Self = StObject.set(x, "returning", js.Any.fromFunction1(value))
     

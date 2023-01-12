@@ -26,7 +26,8 @@ object CoordinateId {
     __obj.asInstanceOf[CoordinateId]
   }
   
-  extension [Self <: CoordinateId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateId] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: LatLng): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

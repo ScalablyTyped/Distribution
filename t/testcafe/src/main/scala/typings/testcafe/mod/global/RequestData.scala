@@ -47,7 +47,8 @@ object RequestData {
     __obj.asInstanceOf[RequestData]
   }
   
-  extension [Self <: RequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestData] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

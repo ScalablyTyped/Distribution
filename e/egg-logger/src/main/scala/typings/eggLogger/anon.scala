@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CustomLogger]
     }
     
-    extension [Self <: CustomLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLogger] (val x: Self) extends AnyVal {
       
       inline def setCustomLogger(value: EggCustomLoggerOptions): Self = StObject.set(x, "customLogger", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Excludes]
     }
     
-    extension [Self <: Excludes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Excludes] (val x: Self) extends AnyVal {
       
       inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
       

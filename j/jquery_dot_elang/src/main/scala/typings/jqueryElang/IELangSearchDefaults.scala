@@ -52,7 +52,8 @@ object IELangSearchDefaults {
     __obj.asInstanceOf[IELangSearchDefaults]
   }
   
-  extension [Self <: IELangSearchDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangSearchDefaults] (val x: Self) extends AnyVal {
     
     inline def setExpressionsLabel(value: String): Self = StObject.set(x, "expressionsLabel", value.asInstanceOf[js.Any])
     

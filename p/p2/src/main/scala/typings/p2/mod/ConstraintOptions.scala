@@ -17,7 +17,8 @@ object ConstraintOptions {
     __obj.asInstanceOf[ConstraintOptions]
   }
   
-  extension [Self <: ConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setCollideConnected(value: Boolean): Self = StObject.set(x, "collideConnected", value.asInstanceOf[js.Any])
     

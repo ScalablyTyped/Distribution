@@ -16,7 +16,8 @@ object Invitelinks {
     __obj.asInstanceOf[Invitelinks]
   }
   
-  extension [Self <: Invitelinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invitelinks] (val x: Self) extends AnyVal {
     
     inline def setInvite_links(value: js.Array[GroupInviteLinks]): Self = StObject.set(x, "invite_links", value.asInstanceOf[js.Any])
     

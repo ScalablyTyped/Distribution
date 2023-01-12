@@ -34,7 +34,8 @@ object LoadBundleTaskProgress {
     __obj.asInstanceOf[LoadBundleTaskProgress]
   }
   
-  extension [Self <: LoadBundleTaskProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBundleTaskProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesLoaded(value: Double): Self = StObject.set(x, "bytesLoaded", value.asInstanceOf[js.Any])
     

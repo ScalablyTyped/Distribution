@@ -15,7 +15,8 @@ object TypeofNextActionDisplayDetails {
     __obj.asInstanceOf[TypeofNextActionDisplayDetails]
   }
   
-  extension [Self <: TypeofNextActionDisplayDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNextActionDisplayDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayDetails(value: Any): Self = StObject.set(x, "DisplayDetails", value.asInstanceOf[js.Any])
   }

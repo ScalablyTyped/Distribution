@@ -45,7 +45,8 @@ object NumberTypeDeclaration {
     __obj.asInstanceOf[NumberTypeDeclaration]
   }
   
-  extension [Self <: NumberTypeDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberTypeDeclaration] (val x: Self) extends AnyVal {
     
     inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     

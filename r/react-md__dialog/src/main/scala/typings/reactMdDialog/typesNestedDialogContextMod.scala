@@ -31,7 +31,8 @@ object typesNestedDialogContextMod {
       __obj.asInstanceOf[NestedDialogContext]
     }
     
-    extension [Self <: NestedDialogContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedDialogContext] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -54,7 +55,8 @@ object typesNestedDialogContextMod {
       __obj.asInstanceOf[NestedDialogContextProviderProps]
     }
     
-    extension [Self <: NestedDialogContextProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedDialogContextProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object distCliCommandsTestIacLocalExecutionRulesOciRegistryMod {
       __obj.asInstanceOf[GetLayerResponse]
     }
     
-    extension [Self <: GetLayerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetLayerResponse] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object distCliCommandsTestIacLocalExecutionRulesOciRegistryMod {
       __obj.asInstanceOf[GetManifestResponse]
     }
     
-    extension [Self <: GetManifestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetManifestResponse] (val x: Self) extends AnyVal {
       
       inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distCliCommandsTestIacLocalExecutionRulesOciRegistryMod {
       __obj.asInstanceOf[Layer]
     }
     
-    extension [Self <: Layer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
       
       inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     }
@@ -115,7 +118,8 @@ object distCliCommandsTestIacLocalExecutionRulesOciRegistryMod {
       __obj.asInstanceOf[OciRegistry]
     }
     
-    extension [Self <: OciRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OciRegistry] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: (String, String) => js.Promise[GetLayerResponse]): Self = StObject.set(x, "getLayer", js.Any.fromFunction2(value))
       

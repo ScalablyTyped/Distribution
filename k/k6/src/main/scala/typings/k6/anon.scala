@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Blocked]
     }
     
-    extension [Self <: Blocked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocked] (val x: Self) extends AnyVal {
       
       inline def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Fields[RT]]
     }
     
-    extension [Self <: Fields[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & Fields[RT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & Fields[RT]) extends AnyVal {
       
       inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object anon {
       __obj.asInstanceOf[Nextupdate]
     }
     
-    extension [Self <: Nextupdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nextupdate] (val x: Self) extends AnyVal {
       
       inline def setNext_update(value: Double): Self = StObject.set(x, "next_update", value.asInstanceOf[js.Any])
       
@@ -241,7 +246,8 @@ object anon {
       __obj.asInstanceOf[Params[RT]]
     }
     
-    extension [Self <: Params[?], RT /* <: js.UndefOr[ResponseType] */](x: Self & Params[RT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & Params[RT]) extends AnyVal {
       
       inline def setParams(value: RefinedParams[RT]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -275,7 +281,8 @@ object anon {
       __obj.asInstanceOf[Policy]
     }
     
-    extension [Self <: Policy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Policy] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: preferIPv4 | preferIPv6 | onlyIPv4 | onlyIPv6 | any): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -298,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: Replace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       

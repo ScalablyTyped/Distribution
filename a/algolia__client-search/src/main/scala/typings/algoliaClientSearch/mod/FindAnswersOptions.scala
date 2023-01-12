@@ -49,7 +49,8 @@ object FindAnswersOptions {
     __obj.asInstanceOf[FindAnswersOptions]
   }
   
-  extension [Self <: FindAnswersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindAnswersOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributesForPrediction(value: js.Array[String]): Self = StObject.set(x, "attributesForPrediction", value.asInstanceOf[js.Any])
     

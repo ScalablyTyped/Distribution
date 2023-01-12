@@ -15,7 +15,8 @@ object CreateFlowResponse {
     __obj.asInstanceOf[CreateFlowResponse]
   }
   
-  extension [Self <: CreateFlowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFlowResponse] (val x: Self) extends AnyVal {
     
     inline def setFlow(value: Flow): Self = StObject.set(x, "Flow", value.asInstanceOf[js.Any])
     

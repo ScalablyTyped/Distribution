@@ -18,7 +18,8 @@ object EducationCategory {
     __obj.asInstanceOf[EducationCategory]
   }
   
-  extension [Self <: EducationCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationCategory] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

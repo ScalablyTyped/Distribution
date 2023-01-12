@@ -18,7 +18,8 @@ object GridPdfExportEvent {
     __obj.asInstanceOf[GridPdfExportEvent]
   }
   
-  extension [Self <: GridPdfExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPdfExportEvent] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: JQueryPromise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

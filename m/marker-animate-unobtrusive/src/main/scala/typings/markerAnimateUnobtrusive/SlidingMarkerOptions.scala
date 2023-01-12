@@ -34,7 +34,8 @@ object SlidingMarkerOptions {
     __obj.asInstanceOf[SlidingMarkerOptions]
   }
   
-  extension [Self <: SlidingMarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlidingMarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimateFunctionAdapter(
       value: (/* marker */ Marker_, /* destPoint */ LatLng, /* easing */ linear | IEasingType, /* duration */ Double) => Unit

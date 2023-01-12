@@ -60,7 +60,8 @@ object carouselConfig {
     __obj.asInstanceOf[carouselConfig]
   }
   
-  extension [Self <: carouselConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: carouselConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

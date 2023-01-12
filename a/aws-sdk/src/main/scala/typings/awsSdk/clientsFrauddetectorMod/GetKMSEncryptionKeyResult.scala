@@ -18,7 +18,8 @@ object GetKMSEncryptionKeyResult {
     __obj.asInstanceOf[GetKMSEncryptionKeyResult]
   }
   
-  extension [Self <: GetKMSEncryptionKeyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKMSEncryptionKeyResult] (val x: Self) extends AnyVal {
     
     inline def setKmsKey(value: KMSKey): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
     

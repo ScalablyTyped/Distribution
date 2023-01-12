@@ -64,7 +64,8 @@ object dxAccordionOptions {
     __obj.asInstanceOf[dxAccordionOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxAccordionOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxAccordionOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxAccordionOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxAccordionOptions[TItem, TKey])) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

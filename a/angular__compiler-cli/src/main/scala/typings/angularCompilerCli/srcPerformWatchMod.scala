@@ -104,7 +104,8 @@ object srcPerformWatchMod {
       __obj.asInstanceOf[PerformWatchHost]
     }
     
-    extension [Self <: PerformWatchHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformWatchHost] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(value: Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       

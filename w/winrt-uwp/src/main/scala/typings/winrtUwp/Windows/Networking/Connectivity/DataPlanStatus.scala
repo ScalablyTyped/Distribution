@@ -39,7 +39,8 @@ object DataPlanStatus {
     __obj.asInstanceOf[DataPlanStatus]
   }
   
-  extension [Self <: DataPlanStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPlanStatus] (val x: Self) extends AnyVal {
     
     inline def setDataLimitInMegabytes(value: Double): Self = StObject.set(x, "dataLimitInMegabytes", value.asInstanceOf[js.Any])
     

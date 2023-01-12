@@ -28,7 +28,8 @@ object ChannelSectionListResponse {
     __obj.asInstanceOf[ChannelSectionListResponse]
   }
   
-  extension [Self <: ChannelSectionListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSectionListResponse] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

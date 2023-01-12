@@ -31,7 +31,8 @@ object DocumentReferenceRelatesTo {
     __obj.asInstanceOf[DocumentReferenceRelatesTo]
   }
   
-  extension [Self <: DocumentReferenceRelatesTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReferenceRelatesTo] (val x: Self) extends AnyVal {
     
     inline def setCode(value: replaces | transforms | signs | appends): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

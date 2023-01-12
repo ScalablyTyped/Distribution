@@ -51,7 +51,8 @@ object MobileMoneyMpesaRequest {
     __obj.asInstanceOf[MobileMoneyMpesaRequest]
   }
   
-  extension [Self <: MobileMoneyMpesaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileMoneyMpesaRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

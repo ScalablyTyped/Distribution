@@ -35,7 +35,8 @@ object CIMGeometricEffectTaperedPolygon {
     __obj.asInstanceOf[CIMGeometricEffectTaperedPolygon]
   }
   
-  extension [Self <: CIMGeometricEffectTaperedPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectTaperedPolygon] (val x: Self) extends AnyVal {
     
     inline def setFromWidth(value: Double): Self = StObject.set(x, "fromWidth", value.asInstanceOf[js.Any])
     

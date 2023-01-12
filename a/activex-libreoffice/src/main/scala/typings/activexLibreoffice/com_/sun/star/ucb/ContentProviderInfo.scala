@@ -23,7 +23,8 @@ object ContentProviderInfo {
     __obj.asInstanceOf[ContentProviderInfo]
   }
   
-  extension [Self <: ContentProviderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentProviderInfo] (val x: Self) extends AnyVal {
     
     inline def setContentProvider(value: XContentProvider): Self = StObject.set(x, "ContentProvider", value.asInstanceOf[js.Any])
     

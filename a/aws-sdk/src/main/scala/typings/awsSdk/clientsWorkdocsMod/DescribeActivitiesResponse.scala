@@ -23,7 +23,8 @@ object DescribeActivitiesResponse {
     __obj.asInstanceOf[DescribeActivitiesResponse]
   }
   
-  extension [Self <: DescribeActivitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeActivitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: SearchMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object PackageTargetDescriptor {
     __obj.asInstanceOf[PackageTargetDescriptor]
   }
   
-  extension [Self <: PackageTargetDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageTargetDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContext(value: EnvironmentContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

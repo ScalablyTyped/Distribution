@@ -22,7 +22,8 @@ object IsDisabledAtPrepopulation {
     __obj.asInstanceOf[IsDisabledAtPrepopulation]
   }
   
-  extension [Self <: IsDisabledAtPrepopulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDisabledAtPrepopulation] (val x: Self) extends AnyVal {
     
     inline def setIsDisabledAtPrepopulation(value: Boolean): Self = StObject.set(x, "isDisabledAtPrepopulation", value.asInstanceOf[js.Any])
     

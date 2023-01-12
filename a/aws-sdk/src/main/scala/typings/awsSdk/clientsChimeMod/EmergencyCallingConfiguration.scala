@@ -18,7 +18,8 @@ object EmergencyCallingConfiguration {
     __obj.asInstanceOf[EmergencyCallingConfiguration]
   }
   
-  extension [Self <: EmergencyCallingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmergencyCallingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDNIS(value: DNISEmergencyCallingConfigurationList): Self = StObject.set(x, "DNIS", value.asInstanceOf[js.Any])
     

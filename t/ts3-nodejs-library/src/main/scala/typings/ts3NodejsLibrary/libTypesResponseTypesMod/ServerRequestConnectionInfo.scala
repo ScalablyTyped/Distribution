@@ -62,7 +62,8 @@ object ServerRequestConnectionInfo {
     __obj.asInstanceOf[ServerRequestConnectionInfo]
   }
   
-  extension [Self <: ServerRequestConnectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerRequestConnectionInfo] (val x: Self) extends AnyVal {
     
     inline def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
     

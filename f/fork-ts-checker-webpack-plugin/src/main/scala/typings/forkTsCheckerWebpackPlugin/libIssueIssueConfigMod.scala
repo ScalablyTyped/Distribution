@@ -30,7 +30,8 @@ object libIssueIssueConfigMod {
       __obj.asInstanceOf[IssueConfig]
     }
     
-    extension [Self <: IssueConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IssueConfig] (val x: Self) extends AnyVal {
       
       inline def setPredicate(value: /* issue */ Issue => Boolean): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
     }

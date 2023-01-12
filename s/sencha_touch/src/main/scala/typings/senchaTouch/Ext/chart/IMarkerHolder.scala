@@ -24,7 +24,8 @@ object IMarkerHolder {
     __obj.asInstanceOf[IMarkerHolder]
   }
   
-  extension [Self <: IMarkerHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarkerHolder] (val x: Self) extends AnyVal {
     
     inline def setBindMarker(value: (/* name */ js.UndefOr[String], /* marker */ js.UndefOr[IMarkers]) => Unit): Self = StObject.set(x, "bindMarker", js.Any.fromFunction2(value))
     

@@ -62,7 +62,8 @@ object SPHSystem {
     __obj.asInstanceOf[SPHSystem]
   }
   
-  extension [Self <: SPHSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPHSystem] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Particle => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

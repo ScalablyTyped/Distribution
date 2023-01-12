@@ -25,7 +25,8 @@ object AggregationsGeoTileGridAggregation {
     __obj.asInstanceOf[AggregationsGeoTileGridAggregation]
   }
   
-  extension [Self <: AggregationsGeoTileGridAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoTileGridAggregation] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: GeoBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

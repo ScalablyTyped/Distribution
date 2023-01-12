@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Audience]
     }
     
-    extension [Self <: Audience](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[CertificatePath]
     }
     
-    extension [Self <: CertificatePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificatePath] (val x: Self) extends AnyVal {
       
       inline def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }

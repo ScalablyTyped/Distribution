@@ -32,7 +32,8 @@ object OK {
     __obj.asInstanceOf[OK]
   }
   
-  extension [Self <: OK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OK] (val x: Self) extends AnyVal {
     
     inline def setINVALID_REQUEST(value: String): Self = StObject.set(x, "INVALID_REQUEST", value.asInstanceOf[js.Any])
     

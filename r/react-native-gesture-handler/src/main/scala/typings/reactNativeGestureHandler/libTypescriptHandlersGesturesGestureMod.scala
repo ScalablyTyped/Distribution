@@ -219,7 +219,8 @@ object libTypescriptHandlersGesturesGestureMod {
       __obj.asInstanceOf[BaseGestureConfig]
     }
     
-    extension [Self <: BaseGestureConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseGestureConfig] (val x: Self) extends AnyVal {
       
       inline def setCancelsTouchesInView(value: Boolean): Self = StObject.set(x, "cancelsTouchesInView", value.asInstanceOf[js.Any])
       
@@ -312,7 +313,8 @@ object libTypescriptHandlersGesturesGestureMod {
       __obj.asInstanceOf[HandlerCallbacks[EventPayloadT]]
     }
     
-    extension [Self <: HandlerCallbacks[?], EventPayloadT /* <: Record[String, Any] */](x: Self & HandlerCallbacks[EventPayloadT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerCallbacks[?], EventPayloadT /* <: Record[String, Any] */] (val x: Self & HandlerCallbacks[EventPayloadT]) extends AnyVal {
       
       inline def setChangeEventCalculator(
         value: (/* current */ GestureUpdateEvent[Record[String, Any]], /* previous */ js.UndefOr[GestureUpdateEvent[Record[String, Any]]]) => GestureUpdateEvent[Record[String, Any]]

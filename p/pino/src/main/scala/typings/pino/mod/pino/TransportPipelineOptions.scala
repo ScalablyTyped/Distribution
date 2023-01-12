@@ -17,7 +17,8 @@ object TransportPipelineOptions {
     __obj.asInstanceOf[TransportPipelineOptions[TransportOptions]]
   }
   
-  extension [Self <: TransportPipelineOptions[?], TransportOptions](x: Self & TransportPipelineOptions[TransportOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportPipelineOptions[?], TransportOptions] (val x: Self & TransportPipelineOptions[TransportOptions]) extends AnyVal {
     
     inline def setPipeline(value: js.Array[TransportSingleOptions[TransportOptions]]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     

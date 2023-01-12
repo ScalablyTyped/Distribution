@@ -58,7 +58,8 @@ object distTypesJwksRemoteMod {
       __obj.asInstanceOf[RemoteJWKSetOptions]
     }
     
-    extension [Self <: RemoteJWKSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteJWKSetOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

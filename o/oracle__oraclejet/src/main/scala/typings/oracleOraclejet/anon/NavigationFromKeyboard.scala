@@ -21,7 +21,8 @@ object NavigationFromKeyboard {
     __obj.asInstanceOf[NavigationFromKeyboard]
   }
   
-  extension [Self <: NavigationFromKeyboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationFromKeyboard] (val x: Self) extends AnyVal {
     
     inline def setNavigationFromKeyboard(value: String): Self = StObject.set(x, "navigationFromKeyboard", value.asInstanceOf[js.Any])
     

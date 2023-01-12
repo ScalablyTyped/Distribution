@@ -46,7 +46,8 @@ object XResetListener {
     __obj.asInstanceOf[XResetListener]
   }
   
-  extension [Self <: XResetListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResetListener] (val x: Self) extends AnyVal {
     
     inline def setApproveReset(value: EventObject => Boolean): Self = StObject.set(x, "approveReset", js.Any.fromFunction1(value))
     

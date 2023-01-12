@@ -15,7 +15,8 @@ object ClosingBoolean {
     __obj.asInstanceOf[ClosingBoolean]
   }
   
-  extension [Self <: ClosingBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosingBoolean] (val x: Self) extends AnyVal {
     
     inline def setClosing(value: Boolean): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
   }

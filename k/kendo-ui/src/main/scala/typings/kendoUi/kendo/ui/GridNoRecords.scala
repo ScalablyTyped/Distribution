@@ -15,7 +15,8 @@ object GridNoRecords {
     __obj.asInstanceOf[GridNoRecords]
   }
   
-  extension [Self <: GridNoRecords](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridNoRecords] (val x: Self) extends AnyVal {
     
     inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

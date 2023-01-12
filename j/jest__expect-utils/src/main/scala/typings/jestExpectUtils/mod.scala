@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[GetPath_]
     }
     
-    extension [Self <: GetPath_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetPath_] (val x: Self) extends AnyVal {
       
       inline def setEndPropIsDefined(value: Boolean): Self = StObject.set(x, "endPropIsDefined", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object DeviceEnrollmentPlatformRestriction {
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestriction]
   }
   
-  extension [Self <: DeviceEnrollmentPlatformRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceEnrollmentPlatformRestriction] (val x: Self) extends AnyVal {
     
     inline def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
     

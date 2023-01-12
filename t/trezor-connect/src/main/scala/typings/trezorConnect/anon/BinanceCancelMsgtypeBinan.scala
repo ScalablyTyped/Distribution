@@ -27,7 +27,8 @@ object BinanceCancelMsgtypeBinan {
     __obj.asInstanceOf[BinanceCancelMsgtypeBinan]
   }
   
-  extension [Self <: BinanceCancelMsgtypeBinan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceCancelMsgtypeBinan] (val x: Self) extends AnyVal {
     
     inline def setRefid(value: String): Self = StObject.set(x, "refid", value.asInstanceOf[js.Any])
     

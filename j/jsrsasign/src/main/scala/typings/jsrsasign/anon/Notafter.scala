@@ -46,7 +46,8 @@ object Notafter {
     __obj.asInstanceOf[Notafter]
   }
   
-  extension [Self <: Notafter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Notafter] (val x: Self) extends AnyVal {
     
     inline def setExt(value: js.Array[ExtParam]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

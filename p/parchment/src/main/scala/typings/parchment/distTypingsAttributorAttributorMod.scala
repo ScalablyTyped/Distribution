@@ -80,7 +80,8 @@ object distTypingsAttributorAttributorMod {
       __obj.asInstanceOf[Attributor]
     }
     
-    extension [Self <: Attributor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributor] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (HTMLElement, String) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -117,7 +118,8 @@ object distTypingsAttributorAttributorMod {
       __obj.asInstanceOf[AttributorOptions]
     }
     
-    extension [Self <: AttributorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributorOptions] (val x: Self) extends AnyVal {
       
       inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

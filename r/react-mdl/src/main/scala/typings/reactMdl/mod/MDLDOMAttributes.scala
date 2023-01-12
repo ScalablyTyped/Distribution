@@ -182,7 +182,8 @@ object MDLDOMAttributes {
     __obj.asInstanceOf[MDLDOMAttributes[T]]
   }
   
-  extension [Self <: MDLDOMAttributes[?], T](x: Self & MDLDOMAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MDLDOMAttributes[?], T] (val x: Self & MDLDOMAttributes[T]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

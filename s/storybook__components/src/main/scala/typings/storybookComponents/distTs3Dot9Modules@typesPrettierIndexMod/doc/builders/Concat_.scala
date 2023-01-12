@@ -20,7 +20,8 @@ object Concat_ {
     __obj.asInstanceOf[Concat_]
   }
   
-  extension [Self <: Concat_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Concat_] (val x: Self) extends AnyVal {
     
     inline def setParts(value: js.Array[Doc]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     

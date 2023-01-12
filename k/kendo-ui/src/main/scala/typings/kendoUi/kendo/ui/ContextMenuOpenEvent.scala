@@ -25,7 +25,8 @@ object ContextMenuOpenEvent {
     __obj.asInstanceOf[ContextMenuOpenEvent]
   }
   
-  extension [Self <: ContextMenuOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenuOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

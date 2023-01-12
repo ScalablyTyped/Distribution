@@ -48,7 +48,8 @@ object CreateMicrosoftADRequest {
     __obj.asInstanceOf[CreateMicrosoftADRequest]
   }
   
-  extension [Self <: CreateMicrosoftADRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMicrosoftADRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

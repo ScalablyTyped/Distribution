@@ -17,7 +17,8 @@ object StreamLayerViewUpdateRateEvent {
     __obj.asInstanceOf[StreamLayerViewUpdateRateEvent]
   }
   
-  extension [Self <: StreamLayerViewUpdateRateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerViewUpdateRateEvent] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Double): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

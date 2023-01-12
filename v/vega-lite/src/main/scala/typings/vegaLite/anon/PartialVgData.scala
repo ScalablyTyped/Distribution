@@ -27,7 +27,8 @@ object PartialVgData {
     __obj.asInstanceOf[PartialVgData]
   }
   
-  extension [Self <: PartialVgData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVgData] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

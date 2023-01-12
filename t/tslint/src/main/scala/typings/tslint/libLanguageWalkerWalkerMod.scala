@@ -45,7 +45,8 @@ object libLanguageWalkerWalkerMod {
       __obj.asInstanceOf[IWalker]
     }
     
-    extension [Self <: IWalker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWalker] (val x: Self) extends AnyVal {
       
       inline def setGetFailures(value: () => js.Array[RuleFailure]): Self = StObject.set(x, "getFailures", js.Any.fromFunction0(value))
       

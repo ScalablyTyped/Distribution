@@ -17,7 +17,8 @@ object RefinementItem {
     __obj.asInstanceOf[RefinementItem[T]]
   }
   
-  extension [Self <: RefinementItem[?], T](x: Self & RefinementItem[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefinementItem[?], T] (val x: Self & RefinementItem[T]) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

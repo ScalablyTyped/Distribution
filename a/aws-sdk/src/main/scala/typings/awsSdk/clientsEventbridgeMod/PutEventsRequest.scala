@@ -23,7 +23,8 @@ object PutEventsRequest {
     __obj.asInstanceOf[PutEventsRequest]
   }
   
-  extension [Self <: PutEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointId(value: EndpointId): Self = StObject.set(x, "EndpointId", value.asInstanceOf[js.Any])
     

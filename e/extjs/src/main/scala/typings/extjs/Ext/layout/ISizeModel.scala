@@ -62,7 +62,8 @@ object ISizeModel {
     __obj.asInstanceOf[ISizeModel]
   }
   
-  extension [Self <: ISizeModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISizeModel] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

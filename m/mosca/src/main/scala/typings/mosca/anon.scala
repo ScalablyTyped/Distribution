@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CertPath]
     }
     
-    extension [Self <: CertPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertPath] (val x: Self) extends AnyVal {
       
       inline def setCertPath(value: String): Self = StObject.set(x, "certPath", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }

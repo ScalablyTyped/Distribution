@@ -17,7 +17,8 @@ object EmbedOptions {
     __obj.asInstanceOf[EmbedOptions]
   }
   
-  extension [Self <: EmbedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbedOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -573,7 +573,8 @@ object mod {
       __obj.asInstanceOf[CognitoAuthOptions]
     }
     
-    extension [Self <: CognitoAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAdvancedSecurityDataCollectionFlag(value: Boolean): Self = StObject.set(x, "AdvancedSecurityDataCollectionFlag", value.asInstanceOf[js.Any])
       
@@ -643,7 +644,8 @@ object mod {
       __obj.asInstanceOf[CognitoAuthStorage]
     }
     
-    extension [Self <: CognitoAuthStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoAuthStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.UndefOr[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -666,7 +668,8 @@ object mod {
       __obj.asInstanceOf[CognitoAuthUserHandler]
     }
     
-    extension [Self <: CognitoAuthUserHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoAuthUserHandler] (val x: Self) extends AnyVal {
       
       inline def setOnFailure(value: Any => Unit): Self = StObject.set(x, "onFailure", js.Any.fromFunction1(value))
       
@@ -810,7 +813,8 @@ object mod {
       __obj.asInstanceOf[CognitoConstants]
     }
     
-    extension [Self <: CognitoConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoConstants] (val x: Self) extends AnyVal {
       
       inline def setACCESSTOKEN(value: String): Self = StObject.set(x, "ACCESSTOKEN", value.asInstanceOf[js.Any])
       
@@ -932,7 +936,8 @@ object mod {
       __obj.asInstanceOf[CognitoSessionData]
     }
     
-    extension [Self <: CognitoSessionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoSessionData] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: CognitoAccessToken): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
       
@@ -985,7 +990,8 @@ object mod {
       __obj.asInstanceOf[CookieStorageOptions]
     }
     
-    extension [Self <: CookieStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1046,8 @@ object mod {
       __obj.asInstanceOf[XDomainRequest]
     }
     
-    extension [Self <: XDomainRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDomainRequest] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

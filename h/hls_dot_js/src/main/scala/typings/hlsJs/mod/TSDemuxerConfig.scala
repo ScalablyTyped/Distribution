@@ -15,7 +15,8 @@ object TSDemuxerConfig {
     __obj.asInstanceOf[TSDemuxerConfig]
   }
   
-  extension [Self <: TSDemuxerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSDemuxerConfig] (val x: Self) extends AnyVal {
     
     inline def setForceKeyFrameOnDiscontinuity(value: Boolean): Self = StObject.set(x, "forceKeyFrameOnDiscontinuity", value.asInstanceOf[js.Any])
   }

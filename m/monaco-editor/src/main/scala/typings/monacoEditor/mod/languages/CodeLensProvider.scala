@@ -30,7 +30,8 @@ object CodeLensProvider {
     __obj.asInstanceOf[CodeLensProvider]
   }
   
-  extension [Self <: CodeLensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensProvider] (val x: Self) extends AnyVal {
     
     inline def setOnDidChange(
       value: (/* listener */ js.Function1[CodeLensProvider, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable

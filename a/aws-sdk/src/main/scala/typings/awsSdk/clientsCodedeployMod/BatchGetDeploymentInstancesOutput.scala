@@ -23,7 +23,8 @@ object BatchGetDeploymentInstancesOutput {
     __obj.asInstanceOf[BatchGetDeploymentInstancesOutput]
   }
   
-  extension [Self <: BatchGetDeploymentInstancesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDeploymentInstancesOutput] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

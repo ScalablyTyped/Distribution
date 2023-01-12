@@ -83,7 +83,8 @@ object srcUtilitiesPackageManagerMod {
       __obj.asInstanceOf[PackageManagerUtilsContext]
     }
     
-    extension [Self <: PackageManagerUtilsContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageManagerUtilsContext] (val x: Self) extends AnyVal {
       
       inline def setGlobalConfiguration(value: AngularWorkspace): Self = StObject.set(x, "globalConfiguration", value.asInstanceOf[js.Any])
       

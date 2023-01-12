@@ -45,7 +45,8 @@ object ocrIdCardResponse {
     __obj.asInstanceOf[ocrIdCardResponse]
   }
   
-  extension [Self <: ocrIdCardResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ocrIdCardResponse] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

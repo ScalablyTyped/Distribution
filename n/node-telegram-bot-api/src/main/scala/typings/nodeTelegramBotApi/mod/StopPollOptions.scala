@@ -15,7 +15,8 @@ object StopPollOptions {
     __obj.asInstanceOf[StopPollOptions]
   }
   
-  extension [Self <: StopPollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopPollOptions] (val x: Self) extends AnyVal {
     
     inline def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
     

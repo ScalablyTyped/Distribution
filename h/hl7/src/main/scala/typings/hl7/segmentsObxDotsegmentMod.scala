@@ -72,7 +72,8 @@ object segmentsObxDotsegmentMod {
       __obj.asInstanceOf[OBX]
     }
     
-    extension [Self <: OBX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OBX] (val x: Self) extends AnyVal {
       
       inline def setOBXDot1(value: String): Self = StObject.set(x, "OBX.1", value.asInstanceOf[js.Any])
       

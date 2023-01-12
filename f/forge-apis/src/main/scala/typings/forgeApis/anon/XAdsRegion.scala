@@ -15,7 +15,8 @@ object XAdsRegion {
     __obj.asInstanceOf[XAdsRegion]
   }
   
-  extension [Self <: XAdsRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAdsRegion] (val x: Self) extends AnyVal {
     
     inline def setXAdsRegion(value: String): Self = StObject.set(x, "xAdsRegion", value.asInstanceOf[js.Any])
     

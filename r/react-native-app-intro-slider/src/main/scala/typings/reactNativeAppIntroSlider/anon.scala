@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ActiveDotStyle]
     }
     
-    extension [Self <: ActiveDotStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDotStyle] (val x: Self) extends AnyVal {
       
       inline def setActiveDotStyle(value: BackgroundColor): Self = StObject.set(x, "activeDotStyle", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[ActiveIndex]
     }
     
-    extension [Self <: ActiveIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveIndex] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     }
@@ -134,7 +137,8 @@ object anon {
       __obj.asInstanceOf[Dimensions]
     }
     
-    extension [Self <: Dimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     }
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -172,7 +177,8 @@ object anon {
       __obj.asInstanceOf[NativeEvent]
     }
     
-    extension [Self <: NativeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: NativeScrollEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }

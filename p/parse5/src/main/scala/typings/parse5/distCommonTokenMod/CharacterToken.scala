@@ -25,7 +25,8 @@ object CharacterToken {
     __obj.asInstanceOf[CharacterToken]
   }
   
-  extension [Self <: CharacterToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterToken] (val x: Self) extends AnyVal {
     
     inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
     

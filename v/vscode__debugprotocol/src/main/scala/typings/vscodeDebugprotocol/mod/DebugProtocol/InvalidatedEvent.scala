@@ -29,7 +29,8 @@ object InvalidatedEvent {
     __obj.asInstanceOf[InvalidatedEvent]
   }
   
-  extension [Self <: InvalidatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidatedEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Areas): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

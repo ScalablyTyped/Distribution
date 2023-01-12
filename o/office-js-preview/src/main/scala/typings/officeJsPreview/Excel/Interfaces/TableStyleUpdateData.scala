@@ -22,7 +22,8 @@ object TableStyleUpdateData {
     __obj.asInstanceOf[TableStyleUpdateData]
   }
   
-  extension [Self <: TableStyleUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableStyleUpdateData] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

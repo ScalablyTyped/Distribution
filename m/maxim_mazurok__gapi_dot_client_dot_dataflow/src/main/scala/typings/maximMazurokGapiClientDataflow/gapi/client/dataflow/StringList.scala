@@ -16,7 +16,8 @@ object StringList {
     __obj.asInstanceOf[StringList]
   }
   
-  extension [Self <: StringList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringList] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[String]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

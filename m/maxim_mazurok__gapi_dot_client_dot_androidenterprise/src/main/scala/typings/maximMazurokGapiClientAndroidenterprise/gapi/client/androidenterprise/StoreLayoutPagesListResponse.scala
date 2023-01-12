@@ -16,7 +16,8 @@ object StoreLayoutPagesListResponse {
     __obj.asInstanceOf[StoreLayoutPagesListResponse]
   }
   
-  extension [Self <: StoreLayoutPagesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreLayoutPagesListResponse] (val x: Self) extends AnyVal {
     
     inline def setPage(value: js.Array[StorePage]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

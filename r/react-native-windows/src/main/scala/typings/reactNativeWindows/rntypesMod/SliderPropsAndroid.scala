@@ -20,7 +20,8 @@ object SliderPropsAndroid {
     __obj.asInstanceOf[SliderPropsAndroid]
   }
   
-  extension [Self <: SliderPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setThumbTintColor(value: ColorValue): Self = StObject.set(x, "thumbTintColor", value.asInstanceOf[js.Any])
     

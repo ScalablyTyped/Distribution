@@ -30,7 +30,8 @@ object Scale {
     __obj.asInstanceOf[Scale]
   }
   
-  extension [Self <: Scale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
     
     inline def setConverter(value: Converters | typings.oracleOraclejet.ojvalidationBaseMod.Converter[String]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object EventRegistration {
     __obj.asInstanceOf[EventRegistration]
   }
   
-  extension [Self <: EventRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRegistration] (val x: Self) extends AnyVal {
     
     inline def setCreateCancelEvent(value: (js.Error, Path) => CancelEvent | Null): Self = StObject.set(x, "createCancelEvent", js.Any.fromFunction2(value))
     

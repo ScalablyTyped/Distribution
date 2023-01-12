@@ -29,7 +29,8 @@ object Light {
     __obj.asInstanceOf[Light]
   }
   
-  extension [Self <: Light](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Light] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: map | viewport): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

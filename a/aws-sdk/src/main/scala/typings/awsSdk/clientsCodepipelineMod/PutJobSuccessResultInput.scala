@@ -38,7 +38,8 @@ object PutJobSuccessResultInput {
     __obj.asInstanceOf[PutJobSuccessResultInput]
   }
   
-  extension [Self <: PutJobSuccessResultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutJobSuccessResultInput] (val x: Self) extends AnyVal {
     
     inline def setContinuationToken(value: ContinuationToken): Self = StObject.set(x, "continuationToken", value.asInstanceOf[js.Any])
     

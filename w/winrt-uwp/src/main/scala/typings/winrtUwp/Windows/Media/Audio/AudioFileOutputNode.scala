@@ -83,7 +83,8 @@ object AudioFileOutputNode {
     __obj.asInstanceOf[AudioFileOutputNode]
   }
   
-  extension [Self <: AudioFileOutputNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioFileOutputNode] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

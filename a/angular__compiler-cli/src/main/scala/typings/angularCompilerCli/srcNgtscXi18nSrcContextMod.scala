@@ -25,7 +25,8 @@ object srcNgtscXi18nSrcContextMod {
       __obj.asInstanceOf[Xi18nContext]
     }
     
-    extension [Self <: Xi18nContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xi18nContext] (val x: Self) extends AnyVal {
       
       inline def setUpdateFromTemplate(value: (String, String, InterpolationConfig) => Unit): Self = StObject.set(x, "updateFromTemplate", js.Any.fromFunction3(value))
     }

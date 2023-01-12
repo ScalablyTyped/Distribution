@@ -38,7 +38,8 @@ object FileOpenPickerContinuationEventArgs {
     __obj.asInstanceOf[FileOpenPickerContinuationEventArgs]
   }
   
-  extension [Self <: FileOpenPickerContinuationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOpenPickerContinuationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     

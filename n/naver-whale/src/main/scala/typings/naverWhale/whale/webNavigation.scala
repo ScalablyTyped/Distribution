@@ -28,7 +28,8 @@ object webNavigation {
       __obj.asInstanceOf[GetAllFrameDetails]
     }
     
-    extension [Self <: GetAllFrameDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllFrameDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object webNavigation {
       __obj.asInstanceOf[GetAllFrameResultDetails]
     }
     
-    extension [Self <: GetAllFrameResultDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllFrameResultDetails] (val x: Self) extends AnyVal {
       
       inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object webNavigation {
       __obj.asInstanceOf[GetFrameDetails]
     }
     
-    extension [Self <: GetFrameDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFrameDetails] (val x: Self) extends AnyVal {
       
       inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object webNavigation {
       __obj.asInstanceOf[GetFrameResultDetails]
     }
     
-    extension [Self <: GetFrameResultDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFrameResultDetails] (val x: Self) extends AnyVal {
       
       inline def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationCallbackDetails]
     }
     
-    extension [Self <: WebNavigationCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
@@ -167,7 +172,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationEventFilter]
     }
     
-    extension [Self <: WebNavigationEventFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationEventFilter] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -195,7 +201,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationFramedCallbackDetails]
     }
     
-    extension [Self <: WebNavigationFramedCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationFramedCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
@@ -217,7 +224,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationFramedErrorCallbackDetails]
     }
     
-    extension [Self <: WebNavigationFramedErrorCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationFramedErrorCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -251,7 +259,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationParentedCallbackDetails]
     }
     
-    extension [Self <: WebNavigationParentedCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationParentedCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     }
@@ -273,7 +282,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationReplacementCallbackDetails]
     }
     
-    extension [Self <: WebNavigationReplacementCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationReplacementCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
     }
@@ -311,7 +321,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationSourceCallbackDetails]
     }
     
-    extension [Self <: WebNavigationSourceCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationSourceCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
       
@@ -354,7 +365,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
     }
     
-    extension [Self <: WebNavigationTransitionCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationTransitionCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setTransitionQualifiers(value: js.Array[String]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
       
@@ -379,7 +391,8 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationUrlCallbackDetails]
     }
     
-    extension [Self <: WebNavigationUrlCallbackDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebNavigationUrlCallbackDetails] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

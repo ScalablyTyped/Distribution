@@ -16,7 +16,8 @@ object DisposeBrowserContextRequest {
     __obj.asInstanceOf[DisposeBrowserContextRequest]
   }
   
-  extension [Self <: DisposeBrowserContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisposeBrowserContextRequest] (val x: Self) extends AnyVal {
     
     inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
   }

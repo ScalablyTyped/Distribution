@@ -38,7 +38,8 @@ object ASPxClientFinancialIndicatorPoint {
     __obj.asInstanceOf[ASPxClientFinancialIndicatorPoint]
   }
   
-  extension [Self <: ASPxClientFinancialIndicatorPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFinancialIndicatorPoint] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

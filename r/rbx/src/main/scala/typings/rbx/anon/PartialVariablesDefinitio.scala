@@ -38,7 +38,8 @@ object PartialVariablesDefinitio {
     __obj.asInstanceOf[PartialVariablesDefinitio]
   }
   
-  extension [Self <: PartialVariablesDefinitio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVariablesDefinitio] (val x: Self) extends AnyVal {
     
     inline def setBadgeSizes(value: ReadonlyArraystringnumber): Self = StObject.set(x, "badgeSizes", value.asInstanceOf[js.Any])
     

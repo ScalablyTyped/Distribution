@@ -45,7 +45,8 @@ object PhysicsRadialExplosionEventOptions {
     __obj.asInstanceOf[PhysicsRadialExplosionEventOptions]
   }
   
-  extension [Self <: PhysicsRadialExplosionEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsRadialExplosionEventOptions] (val x: Self) extends AnyVal {
     
     inline def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = StObject.set(x, "affectedImpostorsCallback", js.Any.fromFunction1(value))
     

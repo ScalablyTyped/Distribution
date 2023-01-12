@@ -80,7 +80,8 @@ object CommonDirectionsRequest {
     __obj.asInstanceOf[CommonDirectionsRequest[T]]
   }
   
-  extension [Self <: CommonDirectionsRequest[?], T /* <: DirectionsGeometry */](x: Self & CommonDirectionsRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonDirectionsRequest[?], T /* <: DirectionsGeometry */] (val x: Self & CommonDirectionsRequest[T]) extends AnyVal {
     
     inline def setAlternatives(value: Boolean): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

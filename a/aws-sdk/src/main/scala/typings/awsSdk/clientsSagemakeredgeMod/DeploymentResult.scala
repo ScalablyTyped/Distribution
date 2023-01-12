@@ -43,7 +43,8 @@ object DeploymentResult {
     __obj.asInstanceOf[DeploymentResult]
   }
   
-  extension [Self <: DeploymentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentResult] (val x: Self) extends AnyVal {
     
     inline def setDeploymentEndTime(value: js.Date): Self = StObject.set(x, "DeploymentEndTime", value.asInstanceOf[js.Any])
     

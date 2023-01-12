@@ -315,7 +315,8 @@ object RangeNavigator {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -356,7 +357,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object RangeNavigator {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -442,7 +445,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettings]
     }
     
-    extension [Self <: LabelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettings] (val x: Self) extends AnyVal {
       
       inline def setHigherLevel(value: LabelSettingsHigherLevel): Self = StObject.set(x, "higherLevel", value.asInstanceOf[js.Any])
       
@@ -509,7 +513,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsHigherLevel]
     }
     
-    extension [Self <: LabelSettingsHigherLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsHigherLevel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: LabelSettingsHigherLevelBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -568,7 +573,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsHigherLevelBorder]
     }
     
-    extension [Self <: LabelSettingsHigherLevelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsHigherLevelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -604,7 +610,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsHigherLevelGridLineStyle]
     }
     
-    extension [Self <: LabelSettingsHigherLevelGridLineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsHigherLevelGridLineStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -638,7 +645,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsHigherLevelStyle]
     }
     
-    extension [Self <: LabelSettingsHigherLevelStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsHigherLevelStyle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: LabelSettingsHigherLevelStyleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -689,7 +697,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsHigherLevelStyleFont]
     }
     
-    extension [Self <: LabelSettingsHigherLevelStyleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsHigherLevelStyleFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -768,7 +777,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsLowerLevel]
     }
     
-    extension [Self <: LabelSettingsLowerLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsLowerLevel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: LabelSettingsLowerLevelBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -827,7 +837,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsLowerLevelBorder]
     }
     
-    extension [Self <: LabelSettingsLowerLevelBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsLowerLevelBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -863,7 +874,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsLowerLevelGridLineStyle]
     }
     
-    extension [Self <: LabelSettingsLowerLevelGridLineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsLowerLevelGridLineStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -897,7 +909,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsLowerLevelStyle]
     }
     
-    extension [Self <: LabelSettingsLowerLevelStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsLowerLevelStyle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: LabelSettingsLowerLevelStyleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -948,7 +961,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsLowerLevelStyleFont]
     }
     
-    extension [Self <: LabelSettingsLowerLevelStyleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsLowerLevelStyleFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -994,7 +1008,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsStyle]
     }
     
-    extension [Self <: LabelSettingsStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsStyle] (val x: Self) extends AnyVal {
       
       inline def setFont(value: LabelSettingsStyleFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -1045,7 +1060,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LabelSettingsStyleFont]
     }
     
-    extension [Self <: LabelSettingsStyleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelSettingsStyleFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1098,7 +1114,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1143,7 +1160,8 @@ object RangeNavigator {
       __obj.asInstanceOf[LoadedEventArgs]
     }
     
-    extension [Self <: LoadedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1337,7 +1355,8 @@ object RangeNavigator {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.RangeNavigator.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.RangeNavigator.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.RangeNavigator.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowNextValue(value: Boolean): Self = StObject.set(x, "allowNextValue", value.asInstanceOf[js.Any])
       
@@ -1581,7 +1600,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettings]
     }
     
-    extension [Self <: NavigatorStyleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettings] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -1673,7 +1693,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsBorder]
     }
     
-    extension [Self <: NavigatorStyleSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1717,7 +1738,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsHighlightSettings]
     }
     
-    extension [Self <: NavigatorStyleSettingsHighlightSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsHighlightSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: NavigatorStyleSettingsHighlightSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -1756,7 +1778,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsHighlightSettingsBorder]
     }
     
-    extension [Self <: NavigatorStyleSettingsHighlightSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsHighlightSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1787,7 +1810,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsMajorGridLineStyle]
     }
     
-    extension [Self <: NavigatorStyleSettingsMajorGridLineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsMajorGridLineStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1818,7 +1842,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsMinorGridLineStyle]
     }
     
-    extension [Self <: NavigatorStyleSettingsMinorGridLineStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsMinorGridLineStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1858,7 +1883,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsSelectionSettings]
     }
     
-    extension [Self <: NavigatorStyleSettingsSelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsSelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: NavigatorStyleSettingsSelectionSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -1897,7 +1923,8 @@ object RangeNavigator {
       __obj.asInstanceOf[NavigatorStyleSettingsSelectionSettingsBorder]
     }
     
-    extension [Self <: NavigatorStyleSettingsSelectionSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigatorStyleSettingsSelectionSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1934,7 +1961,8 @@ object RangeNavigator {
       __obj.asInstanceOf[RangeChangedEventArgs]
     }
     
-    extension [Self <: RangeChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1973,7 +2001,8 @@ object RangeNavigator {
       __obj.asInstanceOf[RangeSettings]
     }
     
-    extension [Self <: RangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeSettings] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -2010,7 +2039,8 @@ object RangeNavigator {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2063,7 +2093,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ScrollChangedEventArgs]
     }
     
-    extension [Self <: ScrollChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2124,7 +2155,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ScrollEndEventArgs]
     }
     
-    extension [Self <: ScrollEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2171,7 +2203,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ScrollRangeSettings]
     }
     
-    extension [Self <: ScrollRangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRangeSettings] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -2216,7 +2249,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ScrollStartEventArgs]
     }
     
-    extension [Self <: ScrollStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2269,7 +2303,8 @@ object RangeNavigator {
       __obj.asInstanceOf[SelectedRangeEndEventArgs]
     }
     
-    extension [Self <: SelectedRangeEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedRangeEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2308,7 +2343,8 @@ object RangeNavigator {
       __obj.asInstanceOf[SelectedRangeSettings]
     }
     
-    extension [Self <: SelectedRangeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedRangeSettings] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -2345,7 +2381,8 @@ object RangeNavigator {
       __obj.asInstanceOf[SelectedRangeStartEventArgs]
     }
     
-    extension [Self <: SelectedRangeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectedRangeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2404,7 +2441,8 @@ object RangeNavigator {
       __obj.asInstanceOf[Series]
     }
     
-    extension [Self <: Series](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Series] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -2471,7 +2509,8 @@ object RangeNavigator {
       __obj.asInstanceOf[SeriesSetting]
     }
     
-    extension [Self <: SeriesSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesSetting] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -2518,7 +2557,8 @@ object RangeNavigator {
       __obj.asInstanceOf[SizeSettings]
     }
     
-    extension [Self <: SizeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -2563,7 +2603,8 @@ object RangeNavigator {
       __obj.asInstanceOf[TooltipSettings]
     }
     
-    extension [Self <: TooltipSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -2626,7 +2667,8 @@ object RangeNavigator {
       __obj.asInstanceOf[TooltipSettingsFont]
     }
     
-    extension [Self <: TooltipSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2693,7 +2735,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettings]
     }
     
-    extension [Self <: ValueAxisSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettings] (val x: Self) extends AnyVal {
       
       inline def setAxisLine(value: ValueAxisSettingsAxisLine): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
       
@@ -2739,7 +2782,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettingsAxisLine]
     }
     
-    extension [Self <: ValueAxisSettingsAxisLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettingsAxisLine] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: String): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -2761,7 +2805,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettingsFont]
     }
     
-    extension [Self <: ValueAxisSettingsFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettingsFont] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2783,7 +2828,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettingsMajorGridLines]
     }
     
-    extension [Self <: ValueAxisSettingsMajorGridLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettingsMajorGridLines] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -2815,7 +2861,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettingsMajorTickLines]
     }
     
-    extension [Self <: ValueAxisSettingsMajorTickLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettingsMajorTickLines] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -2855,7 +2902,8 @@ object RangeNavigator {
       __obj.asInstanceOf[ValueAxisSettingsRange]
     }
     
-    extension [Self <: ValueAxisSettingsRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxisSettingsRange] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       

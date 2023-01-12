@@ -17,7 +17,8 @@ object Scrollid {
     __obj.asInstanceOf[Scrollid]
   }
   
-  extension [Self <: Scrollid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scrollid] (val x: Self) extends AnyVal {
     
     inline def setScroll_id(value: ScrollIds): Self = StObject.set(x, "scroll_id", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Children[Module]]
     }
     
-    extension [Self <: Children[?], Module](x: Self & Children[Module]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?], Module] (val x: Self & Children[Module]) extends AnyVal {
       
       inline def setChildren(value: /* module */ Module => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Default[Component]]
     }
     
-    extension [Self <: Default[?], Component /* <: ComponentClass[Any, ComponentState] */](x: Self & Default[Component]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default[?], Component /* <: ComponentClass[Any, ComponentState] */] (val x: Self & Default[Component]) extends AnyVal {
       
       inline def setDefault(value: Component): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }

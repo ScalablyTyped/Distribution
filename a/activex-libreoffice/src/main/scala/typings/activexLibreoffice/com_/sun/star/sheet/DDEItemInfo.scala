@@ -26,7 +26,8 @@ object DDEItemInfo {
     __obj.asInstanceOf[DDEItemInfo]
   }
   
-  extension [Self <: DDEItemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DDEItemInfo] (val x: Self) extends AnyVal {
     
     inline def setItem(value: String): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     

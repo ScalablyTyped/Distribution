@@ -18,7 +18,8 @@ object TileStyle {
     __obj.asInstanceOf[TileStyle]
   }
   
-  extension [Self <: TileStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: BorderStyle): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     

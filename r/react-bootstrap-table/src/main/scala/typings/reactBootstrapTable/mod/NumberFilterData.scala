@@ -20,7 +20,8 @@ object NumberFilterData {
     __obj.asInstanceOf[NumberFilterData]
   }
   
-  extension [Self <: NumberFilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFilterData] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

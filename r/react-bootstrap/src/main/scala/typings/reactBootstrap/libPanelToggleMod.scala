@@ -28,7 +28,8 @@ object libPanelToggleMod {
       __obj.asInstanceOf[PanelToggleProps]
     }
     
-    extension [Self <: PanelToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelToggleProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: String): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

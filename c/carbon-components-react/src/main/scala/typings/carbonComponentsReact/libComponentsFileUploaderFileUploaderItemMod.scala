@@ -82,7 +82,8 @@ object libComponentsFileUploaderFileUploaderItemMod extends Shortcut {
       __obj.asInstanceOf[FileUploaderItemProps]
     }
     
-    extension [Self <: FileUploaderItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderItemProps] (val x: Self) extends AnyVal {
       
       inline def setErrorBody(value: NonNullable[ReactNode]): Self = StObject.set(x, "errorBody", value.asInstanceOf[js.Any])
       

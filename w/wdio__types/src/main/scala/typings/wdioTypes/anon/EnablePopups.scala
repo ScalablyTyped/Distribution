@@ -15,7 +15,8 @@ object EnablePopups {
     __obj.asInstanceOf[EnablePopups]
   }
   
-  extension [Self <: EnablePopups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnablePopups] (val x: Self) extends AnyVal {
     
     inline def setEnablePopups(value: Boolean): Self = StObject.set(x, "enablePopups", value.asInstanceOf[js.Any])
     

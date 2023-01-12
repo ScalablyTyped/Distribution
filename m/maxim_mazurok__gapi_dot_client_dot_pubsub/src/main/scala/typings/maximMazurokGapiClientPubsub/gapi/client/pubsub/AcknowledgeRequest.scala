@@ -16,7 +16,8 @@ object AcknowledgeRequest {
     __obj.asInstanceOf[AcknowledgeRequest]
   }
   
-  extension [Self <: AcknowledgeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeRequest] (val x: Self) extends AnyVal {
     
     inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IlmStopRequest {
     __obj.asInstanceOf[IlmStopRequest]
   }
   
-  extension [Self <: IlmStopRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmStopRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

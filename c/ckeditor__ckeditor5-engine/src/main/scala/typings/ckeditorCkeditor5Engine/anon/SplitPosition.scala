@@ -22,7 +22,8 @@ object SplitPosition {
     __obj.asInstanceOf[SplitPosition]
   }
   
-  extension [Self <: SplitPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitPosition] (val x: Self) extends AnyVal {
     
     inline def setBaseVersion(value: Double): Self = StObject.set(x, "baseVersion", value.asInstanceOf[js.Any])
     

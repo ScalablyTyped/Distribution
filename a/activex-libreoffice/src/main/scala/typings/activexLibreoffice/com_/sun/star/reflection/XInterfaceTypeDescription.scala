@@ -85,7 +85,8 @@ object XInterfaceTypeDescription {
     __obj.asInstanceOf[XInterfaceTypeDescription]
   }
   
-  extension [Self <: XInterfaceTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInterfaceTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     

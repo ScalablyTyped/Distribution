@@ -52,7 +52,8 @@ object Execution {
     __obj.asInstanceOf[Execution]
   }
   
-  extension [Self <: Execution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Execution] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TouchTouchstartEvent {
     __obj.asInstanceOf[TouchTouchstartEvent]
   }
   
-  extension [Self <: TouchTouchstartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchTouchstartEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: JQueryEventObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

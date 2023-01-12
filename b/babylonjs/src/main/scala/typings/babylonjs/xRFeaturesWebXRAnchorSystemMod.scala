@@ -164,7 +164,8 @@ object xRFeaturesWebXRAnchorSystemMod {
       __obj.asInstanceOf[IWebXRAnchor]
     }
     
-    extension [Self <: IWebXRAnchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRAnchor] (val x: Self) extends AnyVal {
       
       inline def setAttachedNode(value: TransformNode): Self = StObject.set(x, "attachedNode", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object xRFeaturesWebXRAnchorSystemMod {
       __obj.asInstanceOf[IWebXRAnchorSystemOptions]
     }
     
-    extension [Self <: IWebXRAnchorSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRAnchorSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setDoNotRemoveAnchorsOnSessionEnded(value: Boolean): Self = StObject.set(x, "doNotRemoveAnchorsOnSessionEnded", value.asInstanceOf[js.Any])
       

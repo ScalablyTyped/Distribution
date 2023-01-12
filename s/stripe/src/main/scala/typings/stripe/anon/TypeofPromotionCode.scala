@@ -15,7 +15,8 @@ object TypeofPromotionCode {
     __obj.asInstanceOf[TypeofPromotionCode]
   }
   
-  extension [Self <: TypeofPromotionCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPromotionCode] (val x: Self) extends AnyVal {
     
     inline def setRestrictions(value: Any): Self = StObject.set(x, "Restrictions", value.asInstanceOf[js.Any])
   }

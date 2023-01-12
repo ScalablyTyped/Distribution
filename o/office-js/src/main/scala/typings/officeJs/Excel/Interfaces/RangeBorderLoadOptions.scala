@@ -66,7 +66,8 @@ object RangeBorderLoadOptions {
     __obj.asInstanceOf[RangeBorderLoadOptions]
   }
   
-  extension [Self <: RangeBorderLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeBorderLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

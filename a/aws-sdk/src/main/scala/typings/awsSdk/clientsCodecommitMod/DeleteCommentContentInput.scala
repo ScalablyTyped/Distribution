@@ -18,7 +18,8 @@ object DeleteCommentContentInput {
     __obj.asInstanceOf[DeleteCommentContentInput]
   }
   
-  extension [Self <: DeleteCommentContentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCommentContentInput] (val x: Self) extends AnyVal {
     
     inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
   }

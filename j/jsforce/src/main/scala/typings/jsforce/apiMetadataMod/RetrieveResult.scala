@@ -26,7 +26,8 @@ object RetrieveResult {
     __obj.asInstanceOf[RetrieveResult]
   }
   
-  extension [Self <: RetrieveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveResult] (val x: Self) extends AnyVal {
     
     inline def setFileProperties(value: js.Array[FileProperties]): Self = StObject.set(x, "fileProperties", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Appenders]
     }
     
-    extension [Self <: Appenders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appenders] (val x: Self) extends AnyVal {
       
       inline def setAppenders(value: js.Array[String]): Self = StObject.set(x, "appenders", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: typings.log4js.mod.Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Worker]
     }
     
-    extension [Self <: Worker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Worker] (val x: Self) extends AnyVal {
       
       inline def setWorker(value: Double): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
       

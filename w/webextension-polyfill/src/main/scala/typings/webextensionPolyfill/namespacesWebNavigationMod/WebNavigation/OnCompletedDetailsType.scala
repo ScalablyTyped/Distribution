@@ -31,7 +31,8 @@ object OnCompletedDetailsType {
     __obj.asInstanceOf[OnCompletedDetailsType]
   }
   
-  extension [Self <: OnCompletedDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCompletedDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

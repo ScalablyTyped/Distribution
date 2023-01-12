@@ -23,7 +23,8 @@ object ListPresetsRequest {
     __obj.asInstanceOf[ListPresetsRequest]
   }
   
-  extension [Self <: ListPresetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPresetsRequest] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     

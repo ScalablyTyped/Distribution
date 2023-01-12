@@ -15,7 +15,8 @@ object DiagramConnectionDefaultsHover {
     __obj.asInstanceOf[DiagramConnectionDefaultsHover]
   }
   
-  extension [Self <: DiagramConnectionDefaultsHover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionDefaultsHover] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: DiagramConnectionDefaultsHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

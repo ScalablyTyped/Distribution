@@ -261,7 +261,8 @@ object MapEvents {
     __obj.asInstanceOf[MapEvents]
   }
   
-  extension [Self <: MapEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapEvents] (val x: Self) extends AnyVal {
     
     inline def setOnautopanstart(
       value: NonNullable[

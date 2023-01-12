@@ -20,7 +20,8 @@ object NavigationPopAction {
     __obj.asInstanceOf[NavigationPopAction]
   }
   
-  extension [Self <: NavigationPopAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationPopAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: NavigationSlashPOP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

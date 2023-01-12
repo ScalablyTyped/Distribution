@@ -19,7 +19,8 @@ object DatadogSourceProperties {
     __obj.asInstanceOf[DatadogSourceProperties]
   }
   
-  extension [Self <: DatadogSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatadogSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

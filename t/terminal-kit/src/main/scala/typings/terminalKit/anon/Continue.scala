@@ -21,7 +21,8 @@ object Continue {
     __obj.asInstanceOf[Continue]
   }
   
-  extension [Self <: Continue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Continue] (val x: Self) extends AnyVal {
     
     inline def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     

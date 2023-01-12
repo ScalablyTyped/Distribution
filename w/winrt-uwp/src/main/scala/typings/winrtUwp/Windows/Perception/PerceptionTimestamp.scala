@@ -18,7 +18,8 @@ object PerceptionTimestamp {
     __obj.asInstanceOf[PerceptionTimestamp]
   }
   
-  extension [Self <: PerceptionTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionTimestamp] (val x: Self) extends AnyVal {
     
     inline def setPredictionAmount(value: Any): Self = StObject.set(x, "predictionAmount", value.asInstanceOf[js.Any])
     

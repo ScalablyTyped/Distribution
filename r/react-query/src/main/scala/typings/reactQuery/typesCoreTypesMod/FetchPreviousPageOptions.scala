@@ -19,7 +19,8 @@ object FetchPreviousPageOptions {
     __obj.asInstanceOf[FetchPreviousPageOptions]
   }
   
-  extension [Self <: FetchPreviousPageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPreviousPageOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelRefetch(value: Boolean): Self = StObject.set(x, "cancelRefetch", value.asInstanceOf[js.Any])
     

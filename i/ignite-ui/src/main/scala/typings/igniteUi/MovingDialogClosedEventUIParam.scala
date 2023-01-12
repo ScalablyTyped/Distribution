@@ -18,7 +18,8 @@ object MovingDialogClosedEventUIParam {
     __obj.asInstanceOf[MovingDialogClosedEventUIParam]
   }
   
-  extension [Self <: MovingDialogClosedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MovingDialogClosedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

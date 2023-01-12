@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[DriverOptions]
     }
     
-    extension [Self <: DriverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriverOptions] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String | ia32 | x64): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[FsPaths]
     }
     
-    extension [Self <: FsPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FsPaths] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Dictx): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object mod {
       __obj.asInstanceOf[InstallOpts]
     }
     
-    extension [Self <: InstallOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOpts] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[StartOpts]
     }
     
-    extension [Self <: StartOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOpts] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

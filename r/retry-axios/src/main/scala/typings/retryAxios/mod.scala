@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[RaxConfig]
     }
     
-    extension [Self <: RaxConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaxConfig] (val x: Self) extends AnyVal {
       
       inline def setRaxConfig(value: RetryConfig): Self = StObject.set(x, "raxConfig", value.asInstanceOf[js.Any])
     }
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[RetryConfig]
     }
     
-    extension [Self <: RetryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
       
       inline def setBackoffType(value: linear | static | exponential): Self = StObject.set(x, "backoffType", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
         __obj.asInstanceOf[typings.retryAxios.mod.axiosAugmentingMod.AxiosRequestConfig]
       }
       
-      extension [Self <: typings.retryAxios.mod.axiosAugmentingMod.AxiosRequestConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.retryAxios.mod.axiosAugmentingMod.AxiosRequestConfig] (val x: Self) extends AnyVal {
         
         inline def setRaxConfig(value: RetryConfig): Self = StObject.set(x, "raxConfig", value.asInstanceOf[js.Any])
         

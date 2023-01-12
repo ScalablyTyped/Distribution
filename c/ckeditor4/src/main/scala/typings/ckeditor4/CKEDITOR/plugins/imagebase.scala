@@ -25,7 +25,8 @@ object imagebase {
       __obj.asInstanceOf[imageWidgetDefinition]
     }
     
-    extension [Self <: imageWidgetDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: imageWidgetDefinition] (val x: Self) extends AnyVal {
       
       inline def setFeatures(value: js.Array[String]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object imagebase {
       __obj.asInstanceOf[progressBar]
     }
     
-    extension [Self <: progressBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: progressBar] (val x: Self) extends AnyVal {
       
       inline def setBar(value: element): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     }
@@ -94,7 +96,8 @@ object imagebase {
       __obj.asInstanceOf[progressReporter]
     }
     
-    extension [Self <: progressReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: progressReporter] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: () => Unit): Self = StObject.set(x, "aborted", js.Any.fromFunction0(value))
       

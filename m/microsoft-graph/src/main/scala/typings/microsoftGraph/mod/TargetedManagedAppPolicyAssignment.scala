@@ -18,7 +18,8 @@ object TargetedManagedAppPolicyAssignment {
     __obj.asInstanceOf[TargetedManagedAppPolicyAssignment]
   }
   
-  extension [Self <: TargetedManagedAppPolicyAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedManagedAppPolicyAssignment] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

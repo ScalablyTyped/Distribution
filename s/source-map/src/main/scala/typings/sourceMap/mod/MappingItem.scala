@@ -32,7 +32,8 @@ object MappingItem {
     __obj.asInstanceOf[MappingItem]
   }
   
-  extension [Self <: MappingItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingItem] (val x: Self) extends AnyVal {
     
     inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
     

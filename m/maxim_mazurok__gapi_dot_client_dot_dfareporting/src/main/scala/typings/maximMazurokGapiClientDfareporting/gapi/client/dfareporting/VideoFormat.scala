@@ -28,7 +28,8 @@ object VideoFormat {
     __obj.asInstanceOf[VideoFormat]
   }
   
-  extension [Self <: VideoFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFormat] (val x: Self) extends AnyVal {
     
     inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     

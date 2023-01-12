@@ -19,7 +19,8 @@ object PopupInit {
     __obj.asInstanceOf[PopupInit]
   }
   
-  extension [Self <: PopupInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupInit] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Settings): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

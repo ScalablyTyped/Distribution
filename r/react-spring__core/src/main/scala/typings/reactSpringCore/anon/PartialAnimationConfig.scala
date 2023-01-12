@@ -47,7 +47,8 @@ object PartialAnimationConfig {
     __obj.asInstanceOf[PartialAnimationConfig]
   }
   
-  extension [Self <: PartialAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DictpropName {
     __obj.asInstanceOf[DictpropName]
   }
   
-  extension [Self <: DictpropName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropName] (val x: Self) extends AnyVal {
     
     inline def setFromCollapsible(value: typings.std.Element): Self = StObject.set(x, "fromCollapsible", value.asInstanceOf[js.Any])
     

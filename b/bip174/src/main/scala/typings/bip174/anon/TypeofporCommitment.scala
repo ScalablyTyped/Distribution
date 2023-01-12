@@ -31,7 +31,8 @@ object TypeofporCommitment {
     __obj.asInstanceOf[TypeofporCommitment]
   }
   
-  extension [Self <: TypeofporCommitment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofporCommitment] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

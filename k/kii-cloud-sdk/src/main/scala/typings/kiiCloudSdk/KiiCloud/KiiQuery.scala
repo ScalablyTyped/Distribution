@@ -54,7 +54,8 @@ object KiiQuery {
     __obj.asInstanceOf[KiiQuery]
   }
   
-  extension [Self <: KiiQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiQuery] (val x: Self) extends AnyVal {
     
     inline def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object PeerRoutingConfig {
     __obj.asInstanceOf[PeerRoutingConfig]
   }
   
-  extension [Self <: PeerRoutingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerRoutingConfig] (val x: Self) extends AnyVal {
     
     inline def setRefreshManager(value: RefreshManagerConfig): Self = StObject.set(x, "refreshManager", value.asInstanceOf[js.Any])
   }

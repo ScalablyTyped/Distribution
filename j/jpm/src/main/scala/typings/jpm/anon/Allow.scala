@@ -32,7 +32,8 @@ object Allow {
     __obj.asInstanceOf[Allow]
   }
   
-  extension [Self <: Allow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allow] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Script): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

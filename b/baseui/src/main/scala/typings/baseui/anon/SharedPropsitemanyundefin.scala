@@ -32,7 +32,8 @@ object SharedPropsitemanyundefin {
     __obj.asInstanceOf[SharedPropsitemanyundefin]
   }
   
-  extension [Self <: SharedPropsitemanyundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedPropsitemanyundefin] (val x: Self) extends AnyVal {
     
     inline def set$active(value: Boolean): Self = StObject.set(x, "$active", value.asInstanceOf[js.Any])
     

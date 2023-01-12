@@ -15,7 +15,8 @@ object Mismatch {
     __obj.asInstanceOf[Mismatch]
   }
   
-  extension [Self <: Mismatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mismatch] (val x: Self) extends AnyVal {
     
     inline def setMismatch(value: String): Self = StObject.set(x, "mismatch", value.asInstanceOf[js.Any])
   }

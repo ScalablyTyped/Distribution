@@ -305,7 +305,8 @@ object control {
       __obj.asInstanceOf[FilterControl]
     }
     
-    extension [Self <: FilterControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterControl] (val x: Self) extends AnyVal {
       
       inline def setCreateWithFormat(value: (XWindow, XNumberFormatter, XPropertySet) => Unit): Self = StObject.set(x, "createWithFormat", js.Any.fromFunction3(value))
     }

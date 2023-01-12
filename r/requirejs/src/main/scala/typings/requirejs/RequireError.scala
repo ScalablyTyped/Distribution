@@ -31,7 +31,8 @@ object RequireError {
     __obj.asInstanceOf[RequireError]
   }
   
-  extension [Self <: RequireError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequireError] (val x: Self) extends AnyVal {
     
     inline def setOriginalError(value: js.Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
     

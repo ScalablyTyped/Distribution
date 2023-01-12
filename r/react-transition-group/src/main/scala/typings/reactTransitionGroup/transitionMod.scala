@@ -169,7 +169,8 @@ object transitionMod {
       __obj.asInstanceOf[BaseTransitionProps[RefElement]]
     }
     
-    extension [Self <: BaseTransitionProps[?], RefElement /* <: js.UndefOr[HTMLElement] */](x: Self & BaseTransitionProps[RefElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseTransitionProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & BaseTransitionProps[RefElement]) extends AnyVal {
       
       inline def setChildren(value: TransitionChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -269,7 +270,8 @@ object transitionMod {
       __obj.asInstanceOf[EndListenerProps[Ref]]
     }
     
-    extension [Self <: EndListenerProps[?], Ref /* <: js.UndefOr[HTMLElement] */](x: Self & EndListenerProps[Ref]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndListenerProps[?], Ref /* <: js.UndefOr[HTMLElement] */] (val x: Self & EndListenerProps[Ref]) extends AnyVal {
       
       inline def setAddEndListener(value: EndHandler[Ref]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object transitionMod {
       __obj.asInstanceOf[TimeoutProps[RefElement]]
     }
     
-    extension [Self <: TimeoutProps[?], RefElement /* <: js.UndefOr[HTMLElement] */](x: Self & TimeoutProps[RefElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutProps[?], RefElement /* <: js.UndefOr[HTMLElement] */] (val x: Self & TimeoutProps[RefElement]) extends AnyVal {
       
       inline def setAddEndListener(value: EndHandler[RefElement]): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
       
@@ -410,7 +413,8 @@ object transitionMod {
       __obj.asInstanceOf[TransitionActions]
     }
     
-    extension [Self <: TransitionActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionActions] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

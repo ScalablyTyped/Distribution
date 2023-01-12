@@ -23,7 +23,8 @@ object BlackFrame {
     __obj.asInstanceOf[BlackFrame]
   }
   
-  extension [Self <: BlackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlackFrame] (val x: Self) extends AnyVal {
     
     inline def setMaxPixelThreshold(value: MaxPixelThreshold): Self = StObject.set(x, "MaxPixelThreshold", value.asInstanceOf[js.Any])
     

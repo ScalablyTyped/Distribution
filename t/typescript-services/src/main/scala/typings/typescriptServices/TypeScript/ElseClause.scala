@@ -41,7 +41,8 @@ object ElseClause {
     __obj.asInstanceOf[ElseClause]
   }
   
-  extension [Self <: ElseClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElseClause] (val x: Self) extends AnyVal {
     
     inline def setStatement(value: AST): Self = StObject.set(x, "statement", value.asInstanceOf[js.Any])
     

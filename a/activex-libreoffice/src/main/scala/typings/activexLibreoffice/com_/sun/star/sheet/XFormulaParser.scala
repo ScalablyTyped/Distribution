@@ -26,7 +26,8 @@ object XFormulaParser {
     __obj.asInstanceOf[XFormulaParser]
   }
   
-  extension [Self <: XFormulaParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormulaParser] (val x: Self) extends AnyVal {
     
     inline def setParseFormula(value: (String, CellAddress) => SafeArray[FormulaToken]): Self = StObject.set(x, "parseFormula", js.Any.fromFunction2(value))
     

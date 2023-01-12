@@ -45,7 +45,8 @@ object typesSelectParametersMod {
       __obj.asInstanceOf[SelectParameters]
     }
     
-    extension [Self <: SelectParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectParameters] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object typesSelectParametersMod {
       __obj.asInstanceOf[UnmarshalledSelectParameters]
     }
     
-    extension [Self <: UnmarshalledSelectParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSelectParameters] (val x: Self) extends AnyVal {
       
       inline def setInputSerialization(value: UnmarshalledInputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
       

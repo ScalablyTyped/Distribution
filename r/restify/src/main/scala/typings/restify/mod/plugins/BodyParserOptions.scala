@@ -85,7 +85,8 @@ object BodyParserOptions {
     __obj.asInstanceOf[BodyParserOptions]
   }
   
-  extension [Self <: BodyParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyParserOptions] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

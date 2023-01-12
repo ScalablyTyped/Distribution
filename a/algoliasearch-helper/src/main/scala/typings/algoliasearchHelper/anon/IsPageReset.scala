@@ -21,7 +21,8 @@ object IsPageReset {
     __obj.asInstanceOf[IsPageReset]
   }
   
-  extension [Self <: IsPageReset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPageReset] (val x: Self) extends AnyVal {
     
     inline def setIsPageReset(value: Boolean): Self = StObject.set(x, "isPageReset", value.asInstanceOf[js.Any])
     

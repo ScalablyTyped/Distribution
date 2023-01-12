@@ -36,7 +36,8 @@ object OperationMetadataV1 {
     __obj.asInstanceOf[OperationMetadataV1]
   }
   
-  extension [Self <: OperationMetadataV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationMetadataV1] (val x: Self) extends AnyVal {
     
     inline def setCreateVersionMetadata(value: CreateVersionMetadataV1): Self = StObject.set(x, "createVersionMetadata", value.asInstanceOf[js.Any])
     

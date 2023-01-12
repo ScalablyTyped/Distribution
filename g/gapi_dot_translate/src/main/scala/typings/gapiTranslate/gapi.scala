@@ -28,7 +28,8 @@ object gapi {
           __obj.asInstanceOf[detections]
         }
         
-        extension [Self <: detections](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: detections] (val x: Self) extends AnyVal {
           
           inline def setList(value: Fields => HttpRequest[GoogleApiTranslateDetectionListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -48,7 +49,8 @@ object gapi {
           __obj.asInstanceOf[languages]
         }
         
-        extension [Self <: languages](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: languages] (val x: Self) extends AnyVal {
           
           inline def setList(value: Target => HttpRequest[GoogleApiTranslateLanguageListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -68,7 +70,8 @@ object gapi {
           __obj.asInstanceOf[translations]
         }
         
-        extension [Self <: translations](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: translations] (val x: Self) extends AnyVal {
           
           inline def setList(value: Cid => HttpRequest[GoogleApiTranslateTranslationListResponse]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }

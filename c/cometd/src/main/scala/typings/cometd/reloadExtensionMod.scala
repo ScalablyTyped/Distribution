@@ -71,7 +71,8 @@ object reloadExtensionMod {
       __obj.asInstanceOf[ReloadExtension]
     }
     
-    extension [Self <: ReloadExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReloadExtension] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       

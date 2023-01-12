@@ -33,7 +33,8 @@ object XImplicitIDContainer {
     __obj.asInstanceOf[XImplicitIDContainer]
   }
   
-  extension [Self <: XImplicitIDContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImplicitIDContainer] (val x: Self) extends AnyVal {
     
     inline def setAddWithImplicitID(value: Any => String): Self = StObject.set(x, "addWithImplicitID", js.Any.fromFunction1(value))
     

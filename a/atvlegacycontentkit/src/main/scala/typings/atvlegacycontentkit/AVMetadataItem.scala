@@ -41,7 +41,8 @@ object AVMetadataItem {
     __obj.asInstanceOf[AVMetadataItem]
   }
   
-  extension [Self <: AVMetadataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVMetadataItem] (val x: Self) extends AnyVal {
     
     inline def setDataValue(value: String): Self = StObject.set(x, "dataValue", value.asInstanceOf[js.Any])
     

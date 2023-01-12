@@ -53,7 +53,8 @@ object Boolean {
     __obj.asInstanceOf[Boolean]
   }
   
-  extension [Self <: Boolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
     
     inline def setInspect(value: () => java.lang.String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     

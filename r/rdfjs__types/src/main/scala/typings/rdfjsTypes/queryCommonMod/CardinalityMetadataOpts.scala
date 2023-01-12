@@ -17,7 +17,8 @@ object CardinalityMetadataOpts {
     __obj.asInstanceOf[CardinalityMetadataOpts]
   }
   
-  extension [Self <: CardinalityMetadataOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardinalityMetadataOpts] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: estimate | exact): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
   }

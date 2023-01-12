@@ -73,7 +73,8 @@ object libTypesReanimated2HookUseAnimatedSensorMod {
       __obj.asInstanceOf[AnimatedSensor]
     }
     
-    extension [Self <: AnimatedSensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedSensor] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: SensorConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libTypesReanimated2HookUseAnimatedSensorMod {
       __obj.asInstanceOf[SensorConfig]
     }
     
-    extension [Self <: SensorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SensorConfig] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double | auto): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     }

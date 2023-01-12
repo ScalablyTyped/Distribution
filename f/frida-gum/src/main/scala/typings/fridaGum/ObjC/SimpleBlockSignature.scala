@@ -25,7 +25,8 @@ object SimpleBlockSignature {
     __obj.asInstanceOf[SimpleBlockSignature]
   }
   
-  extension [Self <: SimpleBlockSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleBlockSignature] (val x: Self) extends AnyVal {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     

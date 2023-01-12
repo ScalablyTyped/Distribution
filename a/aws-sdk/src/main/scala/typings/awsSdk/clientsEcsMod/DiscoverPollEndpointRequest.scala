@@ -23,7 +23,8 @@ object DiscoverPollEndpointRequest {
     __obj.asInstanceOf[DiscoverPollEndpointRequest]
   }
   
-  extension [Self <: DiscoverPollEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverPollEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

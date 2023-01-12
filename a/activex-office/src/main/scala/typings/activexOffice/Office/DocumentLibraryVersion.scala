@@ -50,7 +50,8 @@ object DocumentLibraryVersion {
     __obj.asInstanceOf[DocumentLibraryVersion]
   }
   
-  extension [Self <: DocumentLibraryVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLibraryVersion] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IssuerUID {
     __obj.asInstanceOf[IssuerUID]
   }
   
-  extension [Self <: IssuerUID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerUID] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: GeneralNamesSchema): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

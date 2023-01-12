@@ -50,7 +50,8 @@ object AtlasJSONFile {
     __obj.asInstanceOf[AtlasJSONFile]
   }
   
-  extension [Self <: AtlasJSONFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtlasJSONFile] (val x: Self) extends AnyVal {
     
     inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }

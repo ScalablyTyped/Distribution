@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[AddCircleOptions]
     }
     
-    extension [Self <: AddCircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddCircleOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[AddLineOptions]
     }
     
-    extension [Self <: AddLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddLineOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[AddMarkerOptions]
     }
     
-    extension [Self <: AddMarkerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddMarkerOptions] (val x: Self) extends AnyVal {
       
       inline def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object mod {
       __obj.asInstanceOf[AddMultiPolygonOptions]
     }
     
-    extension [Self <: AddMultiPolygonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddMultiPolygonOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object mod {
       __obj.asInstanceOf[AddPolygonOptions]
     }
     
-    extension [Self <: AddPolygonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddPolygonOptions] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -234,7 +239,8 @@ object mod {
       __obj.asInstanceOf[AddTextOptions]
     }
     
-    extension [Self <: AddTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTextOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: TextAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -372,7 +378,8 @@ object mod {
       __obj.asInstanceOf[StaticMapsOptions]
     }
     
-    extension [Self <: StaticMapsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticMapsOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

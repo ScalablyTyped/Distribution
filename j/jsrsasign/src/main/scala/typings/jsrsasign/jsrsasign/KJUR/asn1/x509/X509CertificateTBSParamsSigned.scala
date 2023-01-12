@@ -19,7 +19,8 @@ object X509CertificateTBSParamsSigned {
     __obj.asInstanceOf[X509CertificateTBSParamsSigned]
   }
   
-  extension [Self <: X509CertificateTBSParamsSigned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509CertificateTBSParamsSigned] (val x: Self) extends AnyVal {
     
     inline def setSighex(value: String): Self = StObject.set(x, "sighex", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SessionManagerOutputUrl {
     __obj.asInstanceOf[SessionManagerOutputUrl]
   }
   
-  extension [Self <: SessionManagerOutputUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionManagerOutputUrl] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchOutputUrl(value: SessionManagerCloudWatchOutputUrl): Self = StObject.set(x, "CloudWatchOutputUrl", value.asInstanceOf[js.Any])
     

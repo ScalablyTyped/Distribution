@@ -27,7 +27,8 @@ object Description {
     __obj.asInstanceOf[Description]
   }
   
-  extension [Self <: Description](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: typings.musickitJs.MusicKit.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     

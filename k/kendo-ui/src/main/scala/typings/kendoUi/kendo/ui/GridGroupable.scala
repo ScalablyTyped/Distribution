@@ -23,7 +23,8 @@ object GridGroupable {
     __obj.asInstanceOf[GridGroupable]
   }
   
-  extension [Self <: GridGroupable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGroupable] (val x: Self) extends AnyVal {
     
     inline def setCompare(value: js.Function): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     

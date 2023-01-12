@@ -23,7 +23,8 @@ object ExecFileException {
     __obj.asInstanceOf[ExecFileException]
   }
   
-  extension [Self <: ExecFileException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecFileException] (val x: Self) extends AnyVal {
     
     inline def setErrno(value: Double): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
     

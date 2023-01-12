@@ -19,7 +19,8 @@ object BatchEnableServicesResponse {
     __obj.asInstanceOf[BatchEnableServicesResponse]
   }
   
-  extension [Self <: BatchEnableServicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEnableServicesResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[EnableFailure]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

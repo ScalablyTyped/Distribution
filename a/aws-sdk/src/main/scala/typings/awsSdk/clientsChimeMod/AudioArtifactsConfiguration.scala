@@ -18,7 +18,8 @@ object AudioArtifactsConfiguration {
     __obj.asInstanceOf[AudioArtifactsConfiguration]
   }
   
-  extension [Self <: AudioArtifactsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioArtifactsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMuxType(value: AudioMuxType): Self = StObject.set(x, "MuxType", value.asInstanceOf[js.Any])
   }

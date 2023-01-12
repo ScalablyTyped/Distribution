@@ -19,7 +19,8 @@ object MountResult {
     __obj.asInstanceOf[MountResult]
   }
   
-  extension [Self <: MountResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MountResult] (val x: Self) extends AnyVal {
     
     inline def setFuseAllowOther(value: Boolean): Self = StObject.set(x, "fuseAllowOther", value.asInstanceOf[js.Any])
     

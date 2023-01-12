@@ -17,7 +17,8 @@ object TimestampFormat {
     __obj.asInstanceOf[TimestampFormat]
   }
   
-  extension [Self <: TimestampFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampFormat] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PromiseResponse {
     __obj.asInstanceOf[PromiseResponse]
   }
   
-  extension [Self <: PromiseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Response): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

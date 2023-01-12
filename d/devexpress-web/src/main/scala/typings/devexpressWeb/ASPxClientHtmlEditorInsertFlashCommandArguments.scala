@@ -55,7 +55,8 @@ object ASPxClientHtmlEditorInsertFlashCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertFlashCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertFlashCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertFlashCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setAllowFullscreen(value: Boolean): Self = StObject.set(x, "allowFullscreen", value.asInstanceOf[js.Any])
     

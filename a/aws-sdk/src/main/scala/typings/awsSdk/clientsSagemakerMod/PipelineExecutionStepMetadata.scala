@@ -78,7 +78,8 @@ object PipelineExecutionStepMetadata {
     __obj.asInstanceOf[PipelineExecutionStepMetadata]
   }
   
-  extension [Self <: PipelineExecutionStepMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineExecutionStepMetadata] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: CallbackStepMetadata): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
     

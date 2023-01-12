@@ -143,7 +143,8 @@ object tristatecheckboxTristatecheckboxMod {
       __obj.asInstanceOf[TriStateCheckboxChangeParams]
     }
     
-    extension [Self <: TriStateCheckboxChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriStateCheckboxChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object tristatecheckboxTristatecheckboxMod {
       __obj.asInstanceOf[TriStateCheckboxChangeTargetOptions]
     }
     
-    extension [Self <: TriStateCheckboxChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriStateCheckboxChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -622,7 +624,8 @@ object tristatecheckboxTristatecheckboxMod {
       __obj.asInstanceOf[TriStateCheckboxProps]
     }
     
-    extension [Self <: TriStateCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriStateCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

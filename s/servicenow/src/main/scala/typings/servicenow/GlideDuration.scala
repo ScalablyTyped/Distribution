@@ -47,7 +47,8 @@ object GlideDuration {
     __obj.asInstanceOf[GlideDuration]
   }
   
-  extension [Self <: GlideDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideDuration] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: GlideDuration => GlideDuration): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

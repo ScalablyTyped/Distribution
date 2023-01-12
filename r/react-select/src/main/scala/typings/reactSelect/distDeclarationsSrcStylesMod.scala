@@ -93,7 +93,8 @@ object distDeclarationsSrcStylesMod {
       __obj.asInstanceOf[StylesConfig[Option, IsMulti, Group]]
     }
     
-    extension [Self <: StylesConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (StylesConfig[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (StylesConfig[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(
         value: (/* base */ CSSObjectWithLabel, ClearIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
@@ -294,7 +295,8 @@ object distDeclarationsSrcStylesMod {
       __obj.asInstanceOf[StylesFunctions[Option, IsMulti, Group]]
     }
     
-    extension [Self <: StylesFunctions[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (StylesFunctions[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesFunctions[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (StylesFunctions[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(value: ClearIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
       
@@ -418,7 +420,8 @@ object distDeclarationsSrcStylesMod {
       __obj.asInstanceOf[StylesProps[Option, IsMulti, Group]]
     }
     
-    extension [Self <: StylesProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (StylesProps[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (StylesProps[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(value: ClearIndicatorProps[Option, IsMulti, Group]): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object EnhancedCustomShapeHandle {
     __obj.asInstanceOf[EnhancedCustomShapeHandle]
   }
   
-  extension [Self <: EnhancedCustomShapeHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeHandle] (val x: Self) extends AnyVal {
     
     inline def setMirroredX(value: Boolean): Self = StObject.set(x, "MirroredX", value.asInstanceOf[js.Any])
     

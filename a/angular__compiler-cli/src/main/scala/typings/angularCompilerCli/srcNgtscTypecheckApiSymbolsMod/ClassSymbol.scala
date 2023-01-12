@@ -24,7 +24,8 @@ object ClassSymbol {
     __obj.asInstanceOf[ClassSymbol]
   }
   
-  extension [Self <: ClassSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassSymbol] (val x: Self) extends AnyVal {
     
     inline def setTcbLocation(value: TcbLocation): Self = StObject.set(x, "tcbLocation", value.asInstanceOf[js.Any])
     

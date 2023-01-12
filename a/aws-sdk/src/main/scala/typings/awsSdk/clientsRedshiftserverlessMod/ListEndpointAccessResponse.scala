@@ -23,7 +23,8 @@ object ListEndpointAccessResponse {
     __obj.asInstanceOf[ListEndpointAccessResponse]
   }
   
-  extension [Self <: ListEndpointAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEndpointAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setEndpoints(value: EndpointAccessList): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     

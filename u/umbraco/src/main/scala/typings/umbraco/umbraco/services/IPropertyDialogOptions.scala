@@ -25,7 +25,8 @@ object IPropertyDialogOptions {
     __obj.asInstanceOf[IPropertyDialogOptions]
   }
   
-  extension [Self <: IPropertyDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

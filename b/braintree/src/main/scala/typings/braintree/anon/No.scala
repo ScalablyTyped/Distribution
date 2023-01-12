@@ -21,7 +21,8 @@ object No {
     __obj.asInstanceOf[No]
   }
   
-  extension [Self <: No](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: No] (val x: Self) extends AnyVal {
     
     inline def setNo(value: typings.braintree.braintreeStrings.No): Self = StObject.set(x, "No", value.asInstanceOf[js.Any])
     

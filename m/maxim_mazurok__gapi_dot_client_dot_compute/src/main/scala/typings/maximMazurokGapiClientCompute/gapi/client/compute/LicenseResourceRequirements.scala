@@ -19,7 +19,8 @@ object LicenseResourceRequirements {
     __obj.asInstanceOf[LicenseResourceRequirements]
   }
   
-  extension [Self <: LicenseResourceRequirements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseResourceRequirements] (val x: Self) extends AnyVal {
     
     inline def setMinGuestCpuCount(value: Double): Self = StObject.set(x, "minGuestCpuCount", value.asInstanceOf[js.Any])
     

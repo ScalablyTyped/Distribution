@@ -19,7 +19,8 @@ object ICDNFilePathSpec {
     __obj.asInstanceOf[ICDNFilePathSpec]
   }
   
-  extension [Self <: ICDNFilePathSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICDNFilePathSpec] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

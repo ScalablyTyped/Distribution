@@ -21,7 +21,8 @@ object Buildspec {
     __obj.asInstanceOf[Buildspec]
   }
   
-  extension [Self <: Buildspec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buildspec] (val x: Self) extends AnyVal {
     
     inline def setBuildspec(value: String): Self = StObject.set(x, "buildspec", value.asInstanceOf[js.Any])
     

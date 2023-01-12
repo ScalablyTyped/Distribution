@@ -21,7 +21,8 @@ object LastDays {
     __obj.asInstanceOf[LastDays]
   }
   
-  extension [Self <: LastDays](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastDays] (val x: Self) extends AnyVal {
     
     inline def setLastDays(value: Double): Self = StObject.set(x, "lastDays", value.asInstanceOf[js.Any])
     

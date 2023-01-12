@@ -35,7 +35,8 @@ object ISmsMessageBase {
     __obj.asInstanceOf[ISmsMessageBase]
   }
   
-  extension [Self <: ISmsMessageBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsMessageBase] (val x: Self) extends AnyVal {
     
     inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     

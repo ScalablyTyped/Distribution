@@ -39,7 +39,8 @@ object EnvironmentTextureInfoV1 {
     __obj.asInstanceOf[EnvironmentTextureInfoV1]
   }
   
-  extension [Self <: EnvironmentTextureInfoV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentTextureInfoV1] (val x: Self) extends AnyVal {
     
     inline def setIrradiance(value: Any): Self = StObject.set(x, "irradiance", value.asInstanceOf[js.Any])
     

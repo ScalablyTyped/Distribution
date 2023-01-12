@@ -25,7 +25,8 @@ object RunOptions {
     __obj.asInstanceOf[RunOptions[T]]
   }
   
-  extension [Self <: RunOptions[?], T](x: Self & RunOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunOptions[?], T] (val x: Self & RunOptions[T]) extends AnyVal {
     
     inline def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])
     

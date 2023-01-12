@@ -25,7 +25,8 @@ object Deletable {
     __obj.asInstanceOf[Deletable]
   }
   
-  extension [Self <: Deletable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deletable] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

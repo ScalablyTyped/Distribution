@@ -35,7 +35,8 @@ object BodyB {
     __obj.asInstanceOf[BodyB]
   }
   
-  extension [Self <: BodyB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyB] (val x: Self) extends AnyVal {
     
     inline def setBodyA(value: typings.p2.mod.Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     

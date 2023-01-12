@@ -18,7 +18,8 @@ object InputContext {
     __obj.asInstanceOf[InputContext]
   }
   
-  extension [Self <: InputContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputContext] (val x: Self) extends AnyVal {
     
     inline def setName(value: InputContextName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

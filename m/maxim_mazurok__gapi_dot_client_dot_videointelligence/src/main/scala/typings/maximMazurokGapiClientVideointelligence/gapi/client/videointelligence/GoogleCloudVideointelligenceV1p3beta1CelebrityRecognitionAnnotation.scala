@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p3beta1CelebrityRecognitionAnnotation] (val x: Self) extends AnyVal {
     
     inline def setCelebrityTracks(value: js.Array[GoogleCloudVideointelligenceV1p3beta1CelebrityTrack]): Self = StObject.set(x, "celebrityTracks", value.asInstanceOf[js.Any])
     

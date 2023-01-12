@@ -15,7 +15,8 @@ object GetVoiceTemplateResponse {
     __obj.asInstanceOf[GetVoiceTemplateResponse]
   }
   
-  extension [Self <: GetVoiceTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setVoiceTemplateResponse(value: VoiceTemplateResponse): Self = StObject.set(x, "VoiceTemplateResponse", value.asInstanceOf[js.Any])
   }

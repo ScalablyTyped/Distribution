@@ -115,7 +115,8 @@ object componentsDialogDialogMod {
       __obj.asInstanceOf[DialogProps]
     }
     
-    extension [Self <: DialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[DialogActionProps]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object componentsDialogDialogMod {
       __obj.asInstanceOf[DialogTheme]
     }
     
-    extension [Self <: DialogTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

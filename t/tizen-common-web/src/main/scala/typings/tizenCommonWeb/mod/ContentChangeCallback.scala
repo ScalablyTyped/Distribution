@@ -68,7 +68,8 @@ object ContentChangeCallback {
     __obj.asInstanceOf[ContentChangeCallback]
   }
   
-  extension [Self <: ContentChangeCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentChangeCallback] (val x: Self) extends AnyVal {
     
     inline def setOncontentadded(value: Content_ => Unit): Self = StObject.set(x, "oncontentadded", js.Any.fromFunction1(value))
     

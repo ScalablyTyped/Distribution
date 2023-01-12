@@ -51,7 +51,8 @@ object Tween {
     __obj.asInstanceOf[Tween]
   }
   
-  extension [Self <: Tween](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tween] (val x: Self) extends AnyVal {
     
     inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
     

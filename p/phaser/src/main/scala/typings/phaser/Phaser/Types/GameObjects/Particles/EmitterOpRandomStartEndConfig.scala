@@ -33,7 +33,8 @@ object EmitterOpRandomStartEndConfig {
     __obj.asInstanceOf[EmitterOpRandomStartEndConfig]
   }
   
-  extension [Self <: EmitterOpRandomStartEndConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitterOpRandomStartEndConfig] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

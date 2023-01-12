@@ -18,7 +18,8 @@ object ImageScanningConfiguration {
     __obj.asInstanceOf[ImageScanningConfiguration]
   }
   
-  extension [Self <: ImageScanningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageScanningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setScanOnPush(value: ScanOnPushFlag): Self = StObject.set(x, "scanOnPush", value.asInstanceOf[js.Any])
     

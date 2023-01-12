@@ -53,7 +53,8 @@ object BusinessReportSchedule {
     __obj.asInstanceOf[BusinessReportSchedule]
   }
   
-  extension [Self <: BusinessReportSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BusinessReportSchedule] (val x: Self) extends AnyVal {
     
     inline def setContentRange(value: BusinessReportContentRange): Self = StObject.set(x, "ContentRange", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object After {
     __obj.asInstanceOf[After]
   }
   
-  extension [Self <: After](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
     
     inline def setAmpersandColonafter(value: BackgroundColor): Self = StObject.set(x, "&:after", value.asInstanceOf[js.Any])
     

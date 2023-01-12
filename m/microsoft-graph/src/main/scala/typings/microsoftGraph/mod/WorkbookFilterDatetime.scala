@@ -17,7 +17,8 @@ object WorkbookFilterDatetime {
     __obj.asInstanceOf[WorkbookFilterDatetime]
   }
   
-  extension [Self <: WorkbookFilterDatetime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookFilterDatetime] (val x: Self) extends AnyVal {
     
     inline def setDate(value: NullableOption[String]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

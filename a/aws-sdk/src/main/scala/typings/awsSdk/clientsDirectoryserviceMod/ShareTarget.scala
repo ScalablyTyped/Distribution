@@ -23,7 +23,8 @@ object ShareTarget {
     __obj.asInstanceOf[ShareTarget]
   }
   
-  extension [Self <: ShareTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareTarget] (val x: Self) extends AnyVal {
     
     inline def setId(value: TargetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

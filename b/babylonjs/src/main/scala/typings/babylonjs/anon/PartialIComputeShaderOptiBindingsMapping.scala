@@ -24,7 +24,8 @@ object PartialIComputeShaderOptiBindingsMapping {
     __obj.asInstanceOf[PartialIComputeShaderOptiBindingsMapping]
   }
   
-  extension [Self <: PartialIComputeShaderOptiBindingsMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIComputeShaderOptiBindingsMapping] (val x: Self) extends AnyVal {
     
     inline def setBindingsMapping(value: ComputeBindingMapping): Self = StObject.set(x, "bindingsMapping", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object IObjectTypeColumnMapping {
     __obj.asInstanceOf[IObjectTypeColumnMapping]
   }
   
-  extension [Self <: IObjectTypeColumnMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTypeColumnMapping] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IObjectTypeColumnMapping): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

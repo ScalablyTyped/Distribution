@@ -15,7 +15,8 @@ object Content461 {
     __obj.asInstanceOf[Content461]
   }
   
-  extension [Self <: Content461](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Content461] (val x: Self) extends AnyVal {
     
     inline def setContent(value: `461`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

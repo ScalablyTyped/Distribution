@@ -77,7 +77,8 @@ object MetaVideo {
     __obj.asInstanceOf[MetaVideo]
   }
   
-  extension [Self <: MetaVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaVideo] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

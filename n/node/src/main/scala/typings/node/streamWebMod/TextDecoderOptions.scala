@@ -17,7 +17,8 @@ object TextDecoderOptions {
     __obj.asInstanceOf[TextDecoderOptions]
   }
   
-  extension [Self <: TextDecoderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
     
     inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     

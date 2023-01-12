@@ -58,7 +58,8 @@ object OSNotificationPayload {
     __obj.asInstanceOf[OSNotificationPayload]
   }
   
-  extension [Self <: OSNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setActionButtons(value: js.Array[OSActionButton]): Self = StObject.set(x, "actionButtons", value.asInstanceOf[js.Any])
     

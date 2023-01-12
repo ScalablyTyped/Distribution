@@ -168,7 +168,8 @@ object libVdomMod {
         __obj.asInstanceOf[IModel]
       }
       
-      extension [Self <: IModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
         
         inline def setStateChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "stateChanged", value.asInstanceOf[js.Any])
       }
@@ -226,7 +227,8 @@ object libVdomMod {
       __obj.asInstanceOf[IUseSignalState[SENDER, ARGS]]
     }
     
-    extension [Self <: IUseSignalState[?, ?], SENDER, ARGS](x: Self & (IUseSignalState[SENDER, ARGS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUseSignalState[?, ?], SENDER, ARGS] (val x: Self & (IUseSignalState[SENDER, ARGS])) extends AnyVal {
       
       inline def setValue(value: js.Tuple2[js.UndefOr[SENDER], js.UndefOr[ARGS]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

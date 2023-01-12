@@ -56,7 +56,8 @@ object libChartEchartsMod {
       __obj.asInstanceOf[ECharts]
     }
     
-    extension [Self <: ECharts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECharts] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: () => String): Self = StObject.set(x, "html", js.Any.fromFunction0(value))
       

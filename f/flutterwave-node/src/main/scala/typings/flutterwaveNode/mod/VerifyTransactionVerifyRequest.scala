@@ -15,7 +15,8 @@ object VerifyTransactionVerifyRequest {
     __obj.asInstanceOf[VerifyTransactionVerifyRequest]
   }
   
-  extension [Self <: VerifyTransactionVerifyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyTransactionVerifyRequest] (val x: Self) extends AnyVal {
     
     inline def setTxref(value: String): Self = StObject.set(x, "txref", value.asInstanceOf[js.Any])
   }

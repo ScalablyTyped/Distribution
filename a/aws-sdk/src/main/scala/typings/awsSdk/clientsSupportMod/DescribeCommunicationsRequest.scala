@@ -38,7 +38,8 @@ object DescribeCommunicationsRequest {
     __obj.asInstanceOf[DescribeCommunicationsRequest]
   }
   
-  extension [Self <: DescribeCommunicationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCommunicationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAfterTime(value: AfterTime): Self = StObject.set(x, "afterTime", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ISetPropertiesParamsOfMultipleObjects {
     __obj.asInstanceOf[ISetPropertiesParamsOfMultipleObjects]
   }
   
-  extension [Self <: ISetPropertiesParamsOfMultipleObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISetPropertiesParamsOfMultipleObjects] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, ISetPropertiesParams) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -43,7 +43,8 @@ object CmafImageBasedTrickPlaySettings {
     __obj.asInstanceOf[CmafImageBasedTrickPlaySettings]
   }
   
-  extension [Self <: CmafImageBasedTrickPlaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmafImageBasedTrickPlaySettings] (val x: Self) extends AnyVal {
     
     inline def setIntervalCadence(value: CmafIntervalCadence): Self = StObject.set(x, "IntervalCadence", value.asInstanceOf[js.Any])
     

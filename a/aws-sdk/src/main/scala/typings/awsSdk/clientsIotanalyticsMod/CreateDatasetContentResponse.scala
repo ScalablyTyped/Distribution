@@ -18,7 +18,8 @@ object CreateDatasetContentResponse {
     __obj.asInstanceOf[CreateDatasetContentResponse]
   }
   
-  extension [Self <: CreateDatasetContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDatasetContentResponse] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: DatasetContentVersion): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
     

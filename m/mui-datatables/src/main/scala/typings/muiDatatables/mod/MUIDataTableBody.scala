@@ -54,7 +54,8 @@ object MUIDataTableBody {
     __obj.asInstanceOf[MUIDataTableBody]
   }
   
-  extension [Self <: MUIDataTableBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableBody] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

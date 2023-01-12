@@ -16,7 +16,8 @@ object TeamDriveInfo {
     __obj.asInstanceOf[TeamDriveInfo]
   }
   
-  extension [Self <: TeamDriveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamDriveInfo] (val x: Self) extends AnyVal {
     
     inline def setTeamDriveIds(value: js.Array[String]): Self = StObject.set(x, "teamDriveIds", value.asInstanceOf[js.Any])
     

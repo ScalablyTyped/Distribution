@@ -28,7 +28,8 @@ object RTD {
     __obj.asInstanceOf[RTD]
   }
   
-  extension [Self <: RTD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTD] (val x: Self) extends AnyVal {
     
     inline def setExcelDotRTD_typekey(value: RTD): Self = StObject.set(x, "Excel.RTD_typekey", value.asInstanceOf[js.Any])
     

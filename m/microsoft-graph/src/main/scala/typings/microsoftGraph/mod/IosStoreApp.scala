@@ -27,7 +27,8 @@ object IosStoreApp {
     __obj.asInstanceOf[IosStoreApp]
   }
   
-  extension [Self <: IosStoreApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosStoreApp] (val x: Self) extends AnyVal {
     
     inline def setAppStoreUrl(value: NullableOption[String]): Self = StObject.set(x, "appStoreUrl", value.asInstanceOf[js.Any])
     

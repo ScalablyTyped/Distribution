@@ -58,7 +58,8 @@ object typesRipplesReducerMod {
       __obj.asInstanceOf[CancelAction]
     }
     
-    extension [Self <: CancelAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelAction] (val x: Self) extends AnyVal {
       
       inline def setEase(value: Boolean): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object typesRipplesReducerMod {
       __obj.asInstanceOf[CreateAction[E]]
     }
     
-    extension [Self <: CreateAction[?], E /* <: HTMLElement */](x: Self & CreateAction[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAction[?], E /* <: HTMLElement */] (val x: Self & CreateAction[E]) extends AnyVal {
       
       inline def setDisableSpacebarClick(value: Boolean): Self = StObject.set(x, "disableSpacebarClick", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object typesRipplesReducerMod {
       __obj.asInstanceOf[EnteredAction]
     }
     
-    extension [Self <: EnteredAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnteredAction] (val x: Self) extends AnyVal {
       
       inline def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object typesRipplesReducerMod {
       __obj.asInstanceOf[ReleaseAction[E]]
     }
     
-    extension [Self <: ReleaseAction[?], E /* <: HTMLElement */](x: Self & ReleaseAction[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReleaseAction[?], E /* <: HTMLElement */] (val x: Self & ReleaseAction[E]) extends AnyVal {
       
       inline def setEvent(value: RippleEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object typesRipplesReducerMod {
       __obj.asInstanceOf[RemoveAction]
     }
     
-    extension [Self <: RemoveAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAction] (val x: Self) extends AnyVal {
       
       inline def setRipple(value: RippleState): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       

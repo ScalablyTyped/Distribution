@@ -43,7 +43,8 @@ object ConceptMapGroupElementTargetDependsOn {
     __obj.asInstanceOf[ConceptMapGroupElementTargetDependsOn]
   }
   
-  extension [Self <: ConceptMapGroupElementTargetDependsOn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConceptMapGroupElementTargetDependsOn] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

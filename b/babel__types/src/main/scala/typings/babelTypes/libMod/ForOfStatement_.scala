@@ -36,7 +36,8 @@ object ForOfStatement_ {
     __obj.asInstanceOf[ForOfStatement_]
   }
   
-  extension [Self <: ForOfStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForOfStatement_] (val x: Self) extends AnyVal {
     
     inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
     

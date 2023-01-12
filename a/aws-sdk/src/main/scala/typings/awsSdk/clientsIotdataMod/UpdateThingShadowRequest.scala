@@ -28,7 +28,8 @@ object UpdateThingShadowRequest {
     __obj.asInstanceOf[UpdateThingShadowRequest]
   }
   
-  extension [Self <: UpdateThingShadowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThingShadowRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: JsonDocument): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

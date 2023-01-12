@@ -35,7 +35,8 @@ object ISpawnParticleAttachedEntityParameters {
     __obj.asInstanceOf[ISpawnParticleAttachedEntityParameters]
   }
   
-  extension [Self <: ISpawnParticleAttachedEntityParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpawnParticleAttachedEntityParameters] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: ParticleEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

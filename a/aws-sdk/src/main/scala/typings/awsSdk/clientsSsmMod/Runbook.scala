@@ -58,7 +58,8 @@ object Runbook {
     __obj.asInstanceOf[Runbook]
   }
   
-  extension [Self <: Runbook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runbook] (val x: Self) extends AnyVal {
     
     inline def setDocumentName(value: DocumentARN): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     

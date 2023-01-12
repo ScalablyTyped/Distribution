@@ -356,7 +356,8 @@ object ButtonProps {
     __obj.asInstanceOf[ButtonProps]
   }
   
-  extension [Self <: ButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

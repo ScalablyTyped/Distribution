@@ -22,7 +22,8 @@ object JSXEmptyExpression_ {
     __obj.asInstanceOf[JSXEmptyExpression_]
   }
   
-  extension [Self <: JSXEmptyExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXEmptyExpression_] (val x: Self) extends AnyVal {
     
     inline def setType(value: JSXEmptyExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

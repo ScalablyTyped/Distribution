@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[typings.vizJs.anon.Module]
     }
     
-    extension [Self <: typings.vizJs.anon.Module](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.vizJs.anon.Module] (val x: Self) extends AnyVal {
       
       inline def setModule(value: typings.vizJs.Module): Self = StObject.set(x, "Module", value.asInstanceOf[js.Any])
       

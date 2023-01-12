@@ -17,7 +17,8 @@ object AutoscalingGetAutoscalingPolicyRequest {
     __obj.asInstanceOf[AutoscalingGetAutoscalingPolicyRequest]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

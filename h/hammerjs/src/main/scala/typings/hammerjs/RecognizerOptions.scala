@@ -35,7 +35,8 @@ object RecognizerOptions {
     __obj.asInstanceOf[RecognizerOptions]
   }
   
-  extension [Self <: RecognizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizerOptions] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

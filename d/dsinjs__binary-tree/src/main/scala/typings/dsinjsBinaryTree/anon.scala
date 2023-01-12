@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[BTree]
     }
     
-    extension [Self <: BTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BTree] (val x: Self) extends AnyVal {
       
       inline def setBTree(value: TypeofBTree): Self = StObject.set(x, "BTree", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[BTreeNode]
     }
     
-    extension [Self <: BTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BTreeNode] (val x: Self) extends AnyVal {
       
       inline def setBTreeNode(
         value: Instantiable1[
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Done[T]]
     }
     
-    extension [Self <: Done[?], T](x: Self & Done[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Next[T]]
     }
     
-    extension [Self <: Next[?], T](x: Self & Next[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next[?], T] (val x: Self & Next[T]) extends AnyVal {
       
       inline def setNext(value: () => Done[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
     }

@@ -21,7 +21,8 @@ object typesFileContentRequiredExceptionMod {
       __obj.asInstanceOf[FileContentRequiredException]
     }
     
-    extension [Self <: FileContentRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileContentRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileContentRequiredException

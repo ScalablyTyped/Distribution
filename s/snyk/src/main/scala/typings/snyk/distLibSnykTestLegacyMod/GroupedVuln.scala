@@ -52,7 +52,8 @@ object GroupedVuln {
     __obj.asInstanceOf[GroupedVuln]
   }
   
-  extension [Self <: GroupedVuln](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedVuln] (val x: Self) extends AnyVal {
     
     inline def setFixedIn(value: js.Array[String]): Self = StObject.set(x, "fixedIn", value.asInstanceOf[js.Any])
     

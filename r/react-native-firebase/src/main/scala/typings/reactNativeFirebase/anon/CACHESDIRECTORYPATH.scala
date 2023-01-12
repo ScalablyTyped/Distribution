@@ -41,7 +41,8 @@ object CACHESDIRECTORYPATH {
     __obj.asInstanceOf[CACHESDIRECTORYPATH]
   }
   
-  extension [Self <: CACHESDIRECTORYPATH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CACHESDIRECTORYPATH] (val x: Self) extends AnyVal {
     
     inline def setCACHES_DIRECTORY_PATH(value: String): Self = StObject.set(x, "CACHES_DIRECTORY_PATH", value.asInstanceOf[js.Any])
     

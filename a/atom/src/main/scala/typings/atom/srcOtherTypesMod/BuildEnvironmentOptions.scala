@@ -36,7 +36,8 @@ object BuildEnvironmentOptions {
     __obj.asInstanceOf[BuildEnvironmentOptions]
   }
   
-  extension [Self <: BuildEnvironmentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildEnvironmentOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationDelegate(value: js.Object): Self = StObject.set(x, "applicationDelegate", value.asInstanceOf[js.Any])
     

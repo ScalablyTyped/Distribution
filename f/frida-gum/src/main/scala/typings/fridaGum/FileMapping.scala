@@ -28,7 +28,8 @@ object FileMapping {
     __obj.asInstanceOf[FileMapping]
   }
   
-  extension [Self <: FileMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileMapping] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

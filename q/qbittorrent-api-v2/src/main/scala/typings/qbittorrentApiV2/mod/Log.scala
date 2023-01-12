@@ -22,7 +22,8 @@ object Log {
     __obj.asInstanceOf[Log]
   }
   
-  extension [Self <: Log](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

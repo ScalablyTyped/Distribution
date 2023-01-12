@@ -32,7 +32,8 @@ object typesBreadcrumbMod {
       __obj.asInstanceOf[Breadcrumb]
     }
     
-    extension [Self <: Breadcrumb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

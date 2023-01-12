@@ -53,7 +53,8 @@ object DescribeNetworkInsightsAccessScopeAnalysesRequest {
     __obj.asInstanceOf[DescribeNetworkInsightsAccessScopeAnalysesRequest]
   }
   
-  extension [Self <: DescribeNetworkInsightsAccessScopeAnalysesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInsightsAccessScopeAnalysesRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysisStartTimeBegin(value: js.Date): Self = StObject.set(x, "AnalysisStartTimeBegin", value.asInstanceOf[js.Any])
     

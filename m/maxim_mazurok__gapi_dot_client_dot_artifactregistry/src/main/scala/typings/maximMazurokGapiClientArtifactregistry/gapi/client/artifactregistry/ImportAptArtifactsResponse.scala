@@ -19,7 +19,8 @@ object ImportAptArtifactsResponse {
     __obj.asInstanceOf[ImportAptArtifactsResponse]
   }
   
-  extension [Self <: ImportAptArtifactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAptArtifactsResponse] (val x: Self) extends AnyVal {
     
     inline def setAptArtifacts(value: js.Array[AptArtifact]): Self = StObject.set(x, "aptArtifacts", value.asInstanceOf[js.Any])
     

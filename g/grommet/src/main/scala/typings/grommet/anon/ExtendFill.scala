@@ -33,7 +33,8 @@ object ExtendFill {
     __obj.asInstanceOf[ExtendFill]
   }
   
-  extension [Self <: ExtendFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendFill] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[RefreshToken]
     }
     
-    extension [Self <: RefreshToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshToken] (val x: Self) extends AnyVal {
       
       inline def setRefreshToken(value: String): Self = StObject.set(x, "refreshToken", value.asInstanceOf[js.Any])
     }
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setScope(value: js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -117,7 +121,8 @@ object anon {
       __obj.asInstanceOf[TokenInfoEndpoint]
     }
     
-    extension [Self <: TokenInfoEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenInfoEndpoint] (val x: Self) extends AnyVal {
       
       inline def setTokenInfoEndpoint(value: String): Self = StObject.set(x, "tokenInfoEndpoint", value.asInstanceOf[js.Any])
     }

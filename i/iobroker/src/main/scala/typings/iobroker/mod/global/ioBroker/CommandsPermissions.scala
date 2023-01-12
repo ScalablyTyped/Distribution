@@ -102,7 +102,8 @@ object CommandsPermissions {
     __obj.asInstanceOf[CommandsPermissions]
   }
   
-  extension [Self <: CommandsPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandsPermissions] (val x: Self) extends AnyVal {
     
     inline def setAuthEnabled(value: Permission): Self = StObject.set(x, "authEnabled", value.asInstanceOf[js.Any])
     

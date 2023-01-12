@@ -16,7 +16,8 @@ object ANR {
     __obj.asInstanceOf[ANR]
   }
   
-  extension [Self <: ANR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ANR] (val x: Self) extends AnyVal {
     
     inline def setStackTrace(value: StackTrace): Self = StObject.set(x, "stackTrace", value.asInstanceOf[js.Any])
     

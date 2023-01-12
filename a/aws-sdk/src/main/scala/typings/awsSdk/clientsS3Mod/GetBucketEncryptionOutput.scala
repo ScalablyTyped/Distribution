@@ -15,7 +15,8 @@ object GetBucketEncryptionOutput {
     __obj.asInstanceOf[GetBucketEncryptionOutput]
   }
   
-  extension [Self <: GetBucketEncryptionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketEncryptionOutput] (val x: Self) extends AnyVal {
     
     inline def setServerSideEncryptionConfiguration(value: ServerSideEncryptionConfiguration): Self = StObject.set(x, "ServerSideEncryptionConfiguration", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object icuDotmacroMod {
       __obj.asInstanceOf[PluralSubProps[K, N]]
     }
     
-    extension [Self <: PluralSubProps[?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, undefined, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](x: Self & (PluralSubProps[K, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluralSubProps[?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, undefined, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & (PluralSubProps[K, N])) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object icuDotmacroMod {
       __obj.asInstanceOf[SelectRequiredProps[K, N]]
     }
     
-    extension [Self <: SelectRequiredProps[?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, undefined, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */](x: Self & (SelectRequiredProps[K, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectRequiredProps[?, ?], K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, undefined, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */] (val x: Self & (SelectRequiredProps[K, N])) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       

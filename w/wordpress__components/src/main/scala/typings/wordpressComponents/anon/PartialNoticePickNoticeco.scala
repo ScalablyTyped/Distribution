@@ -28,7 +28,8 @@ object PartialNoticePickNoticeco {
     __obj.asInstanceOf[PartialNoticePickNoticeco]
   }
   
-  extension [Self <: PartialNoticePickNoticeco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNoticePickNoticeco] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[typings.wordpressComponents.noticeMod.Notice.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

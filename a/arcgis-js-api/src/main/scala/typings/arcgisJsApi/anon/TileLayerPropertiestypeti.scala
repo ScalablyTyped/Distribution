@@ -234,7 +234,8 @@ object TileLayerPropertiestypeti {
     __obj.asInstanceOf[TileLayerPropertiestypeti]
   }
   
-  extension [Self <: TileLayerPropertiestypeti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayerPropertiestypeti] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

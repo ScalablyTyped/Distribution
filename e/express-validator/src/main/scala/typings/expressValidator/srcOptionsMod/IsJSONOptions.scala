@@ -15,7 +15,8 @@ object IsJSONOptions {
     __obj.asInstanceOf[IsJSONOptions]
   }
   
-  extension [Self <: IsJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_primitives(value: Boolean): Self = StObject.set(x, "allow_primitives", value.asInstanceOf[js.Any])
     

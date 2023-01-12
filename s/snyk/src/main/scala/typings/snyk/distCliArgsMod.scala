@@ -37,7 +37,8 @@ object distCliArgsMod {
       __obj.asInstanceOf[ArgsOptions]
     }
     
-    extension [Self <: ArgsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgsOptions] (val x: Self) extends AnyVal {
       
       inline def set_doubleDashArgs(value: js.Array[String]): Self = StObject.set(x, "_doubleDashArgs", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distCliArgsMod {
       __obj.asInstanceOf[Args_]
     }
     
-    extension [Self <: Args_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args_] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object distCliArgsMod {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setIgnoreUnknownCA(value: Boolean): Self = StObject.set(x, "ignoreUnknownCA", value.asInstanceOf[js.Any])
     }

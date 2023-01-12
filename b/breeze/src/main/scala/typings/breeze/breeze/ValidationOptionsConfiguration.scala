@@ -21,7 +21,8 @@ object ValidationOptionsConfiguration {
     __obj.asInstanceOf[ValidationOptionsConfiguration]
   }
   
-  extension [Self <: ValidationOptionsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationOptionsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setValidateOnAttach(value: Boolean): Self = StObject.set(x, "validateOnAttach", value.asInstanceOf[js.Any])
     

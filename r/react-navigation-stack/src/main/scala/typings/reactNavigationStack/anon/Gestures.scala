@@ -35,7 +35,8 @@ object Gestures {
     __obj.asInstanceOf[Gestures]
   }
   
-  extension [Self <: Gestures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gestures] (val x: Self) extends AnyVal {
     
     inline def setDescriptors(value: StackDescriptorMap): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     

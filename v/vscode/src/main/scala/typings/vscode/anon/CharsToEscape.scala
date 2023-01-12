@@ -23,7 +23,8 @@ object CharsToEscape {
     __obj.asInstanceOf[CharsToEscape]
   }
   
-  extension [Self <: CharsToEscape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharsToEscape] (val x: Self) extends AnyVal {
     
     inline def setCharsToEscape(value: String): Self = StObject.set(x, "charsToEscape", value.asInstanceOf[js.Any])
     

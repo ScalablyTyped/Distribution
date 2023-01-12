@@ -18,7 +18,8 @@ object GetMasterAccountResponse {
     __obj.asInstanceOf[GetMasterAccountResponse]
   }
   
-  extension [Self <: GetMasterAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMasterAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setMaster(value: Invitation): Self = StObject.set(x, "master", value.asInstanceOf[js.Any])
     

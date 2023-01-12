@@ -15,7 +15,8 @@ object Featuresenabled {
     __obj.asInstanceOf[Featuresenabled]
   }
   
-  extension [Self <: Featuresenabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Featuresenabled] (val x: Self) extends AnyVal {
     
     inline def setFeatures_enabled(value: js.Array[String]): Self = StObject.set(x, "features_enabled", value.asInstanceOf[js.Any])
     

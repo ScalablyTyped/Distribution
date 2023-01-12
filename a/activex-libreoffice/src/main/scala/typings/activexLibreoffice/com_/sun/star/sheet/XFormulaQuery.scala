@@ -48,7 +48,8 @@ object XFormulaQuery {
     __obj.asInstanceOf[XFormulaQuery]
   }
   
-  extension [Self <: XFormulaQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFormulaQuery] (val x: Self) extends AnyVal {
     
     inline def setQueryDependents(value: Boolean => XSheetCellRanges): Self = StObject.set(x, "queryDependents", js.Any.fromFunction1(value))
     

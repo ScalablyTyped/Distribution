@@ -24,7 +24,8 @@ object WindowsUpdateScheduledInstall {
     __obj.asInstanceOf[WindowsUpdateScheduledInstall]
   }
   
-  extension [Self <: WindowsUpdateScheduledInstall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsUpdateScheduledInstall] (val x: Self) extends AnyVal {
     
     inline def setScheduledInstallDay(value: WeeklySchedule): Self = StObject.set(x, "scheduledInstallDay", value.asInstanceOf[js.Any])
     

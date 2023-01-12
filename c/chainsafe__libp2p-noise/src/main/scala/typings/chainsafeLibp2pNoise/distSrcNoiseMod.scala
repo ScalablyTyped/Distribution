@@ -57,7 +57,8 @@ object distSrcNoiseMod {
       __obj.asInstanceOf[NoiseInit]
     }
     
-    extension [Self <: NoiseInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoiseInit] (val x: Self) extends AnyVal {
       
       inline def setCrypto(value: ICryptoInterface): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
       

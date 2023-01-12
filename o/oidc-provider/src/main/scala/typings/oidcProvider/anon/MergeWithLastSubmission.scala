@@ -15,7 +15,8 @@ object MergeWithLastSubmission {
     __obj.asInstanceOf[MergeWithLastSubmission]
   }
   
-  extension [Self <: MergeWithLastSubmission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeWithLastSubmission] (val x: Self) extends AnyVal {
     
     inline def setMergeWithLastSubmission(value: Boolean): Self = StObject.set(x, "mergeWithLastSubmission", value.asInstanceOf[js.Any])
     

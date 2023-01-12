@@ -161,7 +161,8 @@ object typesForbiddenExceptionMod {
       __obj.asInstanceOf[ForbiddenException]
     }
     
-    extension [Self <: ForbiddenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForbiddenException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.ForbiddenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -186,7 +187,8 @@ object typesForbiddenExceptionMod {
       __obj.asInstanceOf[ForbiddenExceptionDetails]
     }
     
-    extension [Self <: ForbiddenExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForbiddenExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

@@ -95,7 +95,8 @@ object ResponseOpenIDProviderConfigMetadata {
     __obj.asInstanceOf[ResponseOpenIDProviderConfigMetadata]
   }
   
-  extension [Self <: ResponseOpenIDProviderConfigMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseOpenIDProviderConfigMetadata] (val x: Self) extends AnyVal {
     
     inline def setClaims_supported(value: js.Array[String]): Self = StObject.set(x, "claims_supported", value.asInstanceOf[js.Any])
     

@@ -169,7 +169,8 @@ object toolbarGroupMod extends Shortcut {
       __obj.asInstanceOf[Control]
     }
     
-    extension [Self <: Control](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Control] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -804,7 +805,8 @@ object toolbarGroupMod extends Shortcut {
       __obj.asInstanceOf[ToolbarGroupProps]
     }
     
-    extension [Self <: ToolbarGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

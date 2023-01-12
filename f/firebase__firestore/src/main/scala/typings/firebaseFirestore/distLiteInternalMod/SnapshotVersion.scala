@@ -34,7 +34,8 @@ object SnapshotVersion {
     __obj.asInstanceOf[SnapshotVersion]
   }
   
-  extension [Self <: SnapshotVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotVersion] (val x: Self) extends AnyVal {
     
     inline def setCompareTo(value: SnapshotVersion => Double): Self = StObject.set(x, "compareTo", js.Any.fromFunction1(value))
     

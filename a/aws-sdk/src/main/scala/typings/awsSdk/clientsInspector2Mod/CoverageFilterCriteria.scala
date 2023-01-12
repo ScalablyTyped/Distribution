@@ -58,7 +58,8 @@ object CoverageFilterCriteria {
     __obj.asInstanceOf[CoverageFilterCriteria]
   }
   
-  extension [Self <: CoverageFilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageFilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: CoverageStringFilterList): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

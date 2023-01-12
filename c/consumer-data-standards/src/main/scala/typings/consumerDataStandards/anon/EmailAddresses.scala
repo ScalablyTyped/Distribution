@@ -83,7 +83,8 @@ object EmailAddresses {
     __obj.asInstanceOf[EmailAddresses]
   }
   
-  extension [Self <: EmailAddresses](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAddresses] (val x: Self) extends AnyVal {
     
     inline def setEmailAddresses(value: js.Array[IsPreferred]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
     

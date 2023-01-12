@@ -71,7 +71,8 @@ object distOperationsOperatorsTypesMod {
       __obj.asInstanceOf[CreateOperatorClassOptions]
     }
     
-    extension [Self <: CreateOperatorClassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOperatorClassOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object distOperationsOperatorsTypesMod {
       __obj.asInstanceOf[CreateOperatorOptions]
     }
     
-    extension [Self <: CreateOperatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOperatorOptions] (val x: Self) extends AnyVal {
       
       inline def setCommutator(value: Name): Self = StObject.set(x, "commutator", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object distOperationsOperatorsTypesMod {
       __obj.asInstanceOf[DropOperatorOptions]
     }
     
-    extension [Self <: DropOperatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropOperatorOptions] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Name): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -235,7 +238,8 @@ object distOperationsOperatorsTypesMod {
       __obj.asInstanceOf[OperatorListDefinition]
     }
     
-    extension [Self <: OperatorListDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperatorListDefinition] (val x: Self) extends AnyVal {
       
       inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

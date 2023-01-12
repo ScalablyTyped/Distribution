@@ -25,7 +25,8 @@ object typesBackupInUseExceptionMod {
       __obj.asInstanceOf[BackupInUseException]
     }
     
-    extension [Self <: BackupInUseException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupInUseException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.BackupInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesBackupInUseExceptionMod {
       __obj.asInstanceOf[BackupInUseExceptionDetails]
     }
     
-    extension [Self <: BackupInUseExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackupInUseExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

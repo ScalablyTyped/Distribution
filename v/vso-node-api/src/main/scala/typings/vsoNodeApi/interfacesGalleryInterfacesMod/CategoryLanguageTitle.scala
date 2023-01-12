@@ -28,7 +28,8 @@ object CategoryLanguageTitle {
     __obj.asInstanceOf[CategoryLanguageTitle]
   }
   
-  extension [Self <: CategoryLanguageTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryLanguageTitle] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

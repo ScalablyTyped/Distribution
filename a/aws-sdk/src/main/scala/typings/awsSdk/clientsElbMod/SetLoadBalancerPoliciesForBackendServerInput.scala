@@ -28,7 +28,8 @@ object SetLoadBalancerPoliciesForBackendServerInput {
     __obj.asInstanceOf[SetLoadBalancerPoliciesForBackendServerInput]
   }
   
-  extension [Self <: SetLoadBalancerPoliciesForBackendServerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLoadBalancerPoliciesForBackendServerInput] (val x: Self) extends AnyVal {
     
     inline def setInstancePort(value: EndPointPort): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     

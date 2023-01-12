@@ -17,7 +17,8 @@ object ViewMode {
     __obj.asInstanceOf[ViewMode]
   }
   
-  extension [Self <: ViewMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewMode] (val x: Self) extends AnyVal {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Tiff]
     }
     
-    extension [Self <: Tiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tiff] (val x: Self) extends AnyVal {
       
       inline def setConstants(value: MIMETIFF): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteWorkteamRequest {
     __obj.asInstanceOf[DeleteWorkteamRequest]
   }
   
-  extension [Self <: DeleteWorkteamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkteamRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkteamName(value: WorkteamName): Self = StObject.set(x, "WorkteamName", value.asInstanceOf[js.Any])
   }

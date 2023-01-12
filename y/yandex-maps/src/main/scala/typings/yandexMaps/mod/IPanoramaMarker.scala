@@ -27,7 +27,8 @@ object IPanoramaMarker {
     __obj.asInstanceOf[IPanoramaMarker]
   }
   
-  extension [Self <: IPanoramaMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaMarker] (val x: Self) extends AnyVal {
     
     inline def setGetIconSet(value: () => js.Promise[IPanoramaMarkerIconSet]): Self = StObject.set(x, "getIconSet", js.Any.fromFunction0(value))
     

@@ -93,7 +93,8 @@ object MapRect {
     __obj.asInstanceOf[MapRect]
   }
   
-  extension [Self <: MapRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapRect] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => MapRect): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

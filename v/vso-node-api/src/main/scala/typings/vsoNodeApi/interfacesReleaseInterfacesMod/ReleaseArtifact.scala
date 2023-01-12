@@ -38,7 +38,8 @@ object ReleaseArtifact {
     __obj.asInstanceOf[ReleaseArtifact]
   }
   
-  extension [Self <: ReleaseArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseArtifact] (val x: Self) extends AnyVal {
     
     inline def setArtifactProvider(value: ArtifactProvider): Self = StObject.set(x, "artifactProvider", value.asInstanceOf[js.Any])
     

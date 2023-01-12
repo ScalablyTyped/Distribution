@@ -20,7 +20,8 @@ object BranchUpdatedEvent {
     __obj.asInstanceOf[BranchUpdatedEvent]
   }
   
-  extension [Self <: BranchUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setIsSourceUpdate(value: Boolean): Self = StObject.set(x, "isSourceUpdate", value.asInstanceOf[js.Any])
   }

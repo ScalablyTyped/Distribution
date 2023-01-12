@@ -52,7 +52,8 @@ object srcPathsPluginMod {
       __obj.asInstanceOf[PathPluginResolverRequest]
     }
     
-    extension [Self <: PathPluginResolverRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathPluginResolverRequest] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Issuer): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object srcPathsPluginMod {
       __obj.asInstanceOf[TypeScriptPathsPluginOptions]
     }
     
-    extension [Self <: TypeScriptPathsPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptPathsPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object Milliseconds {
     __obj.asInstanceOf[Milliseconds]
   }
   
-  extension [Self <: Milliseconds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Milliseconds] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Double => Double): Self = StObject.set(x, "days", js.Any.fromFunction1(value))
     

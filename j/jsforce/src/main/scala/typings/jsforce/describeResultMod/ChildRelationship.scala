@@ -37,7 +37,8 @@ object ChildRelationship {
     __obj.asInstanceOf[ChildRelationship]
   }
   
-  extension [Self <: ChildRelationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildRelationship] (val x: Self) extends AnyVal {
     
     inline def setCascadeDelete(value: Boolean): Self = StObject.set(x, "cascadeDelete", value.asInstanceOf[js.Any])
     

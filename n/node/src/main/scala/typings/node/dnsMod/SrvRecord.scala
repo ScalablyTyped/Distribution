@@ -21,7 +21,8 @@ object SrvRecord {
     __obj.asInstanceOf[SrvRecord]
   }
   
-  extension [Self <: SrvRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrvRecord] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

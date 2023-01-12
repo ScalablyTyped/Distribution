@@ -116,7 +116,8 @@ object fileTools {
       __obj.asInstanceOf[uploadWidgetDefinition]
     }
     
-    extension [Self <: uploadWidgetDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uploadWidgetDefinition] (val x: Self) extends AnyVal {
       
       inline def setAdditionalRequestParameters(value: Any): Self = StObject.set(x, "additionalRequestParameters", value.asInstanceOf[js.Any])
       

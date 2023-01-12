@@ -58,7 +58,8 @@ object StopOver {
     __obj.asInstanceOf[StopOver]
   }
   
-  extension [Self <: StopOver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopOver] (val x: Self) extends AnyVal {
     
     inline def setArrival(value: String): Self = StObject.set(x, "arrival", value.asInstanceOf[js.Any])
     

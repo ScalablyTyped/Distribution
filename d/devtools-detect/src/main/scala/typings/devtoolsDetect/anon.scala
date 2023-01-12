@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[IsOpen]
     }
     
-    extension [Self <: IsOpen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsOpen] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       

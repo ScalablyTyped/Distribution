@@ -26,7 +26,8 @@ object DescriptionNameParse {
     __obj.asInstanceOf[DescriptionNameParse]
   }
   
-  extension [Self <: DescriptionNameParse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescriptionNameParse] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

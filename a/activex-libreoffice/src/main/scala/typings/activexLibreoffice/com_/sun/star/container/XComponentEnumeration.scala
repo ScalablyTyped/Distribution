@@ -31,7 +31,8 @@ object XComponentEnumeration {
     __obj.asInstanceOf[XComponentEnumeration]
   }
   
-  extension [Self <: XComponentEnumeration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComponentEnumeration] (val x: Self) extends AnyVal {
     
     inline def setNextComponent(value: () => XComponent): Self = StObject.set(x, "nextComponent", js.Any.fromFunction0(value))
   }

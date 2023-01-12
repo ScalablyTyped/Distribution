@@ -57,7 +57,8 @@ object FileBrowserProvider {
     __obj.asInstanceOf[FileBrowserProvider]
   }
   
-  extension [Self <: FileBrowserProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileBrowserProvider] (val x: Self) extends AnyVal {
     
     inline def setCloseFileBrowser(value: String => Thenable[FileBrowserCloseResponse]): Self = StObject.set(x, "closeFileBrowser", js.Any.fromFunction1(value))
     

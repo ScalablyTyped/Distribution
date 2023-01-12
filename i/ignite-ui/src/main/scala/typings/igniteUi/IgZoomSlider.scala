@@ -138,7 +138,8 @@ object IgZoomSlider {
     __obj.asInstanceOf[IgZoomSlider]
   }
   
-  extension [Self <: IgZoomSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgZoomSlider] (val x: Self) extends AnyVal {
     
     inline def setActualPixelScalingRatio(value: Double): Self = StObject.set(x, "actualPixelScalingRatio", value.asInstanceOf[js.Any])
     

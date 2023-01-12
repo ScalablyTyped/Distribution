@@ -48,7 +48,8 @@ object Sensor {
     __obj.asInstanceOf[Sensor]
   }
   
-  extension [Self <: Sensor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sensor] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: listOfStrings): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

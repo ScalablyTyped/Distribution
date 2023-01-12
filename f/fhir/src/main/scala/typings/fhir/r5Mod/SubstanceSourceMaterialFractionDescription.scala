@@ -27,7 +27,8 @@ object SubstanceSourceMaterialFractionDescription {
     __obj.asInstanceOf[SubstanceSourceMaterialFractionDescription]
   }
   
-  extension [Self <: SubstanceSourceMaterialFractionDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceSourceMaterialFractionDescription] (val x: Self) extends AnyVal {
     
     inline def setFraction(value: String): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
     

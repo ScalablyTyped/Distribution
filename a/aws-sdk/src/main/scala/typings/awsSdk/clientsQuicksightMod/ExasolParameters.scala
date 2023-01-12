@@ -23,7 +23,8 @@ object ExasolParameters {
     __obj.asInstanceOf[ExasolParameters]
   }
   
-  extension [Self <: ExasolParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExasolParameters] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

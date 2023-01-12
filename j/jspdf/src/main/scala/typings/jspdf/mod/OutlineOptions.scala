@@ -15,7 +15,8 @@ object OutlineOptions {
     __obj.asInstanceOf[OutlineOptions]
   }
   
-  extension [Self <: OutlineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineOptions] (val x: Self) extends AnyVal {
     
     inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
   }

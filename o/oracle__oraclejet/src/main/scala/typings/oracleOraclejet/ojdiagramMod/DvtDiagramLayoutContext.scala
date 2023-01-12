@@ -54,7 +54,8 @@ object DvtDiagramLayoutContext {
     __obj.asInstanceOf[DvtDiagramLayoutContext]
   }
   
-  extension [Self <: DvtDiagramLayoutContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvtDiagramLayoutContext] (val x: Self) extends AnyVal {
     
     inline def setGetCommonContainer(value: (Any, Any) => Any): Self = StObject.set(x, "getCommonContainer", js.Any.fromFunction2(value))
     

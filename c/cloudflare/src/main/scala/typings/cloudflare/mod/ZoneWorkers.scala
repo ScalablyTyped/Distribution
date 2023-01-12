@@ -15,7 +15,8 @@ object ZoneWorkers {
     __obj.asInstanceOf[ZoneWorkers]
   }
   
-  extension [Self <: ZoneWorkers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneWorkers] (val x: Self) extends AnyVal {
     
     inline def setValidate(value: (String, String) => js.Promise[js.Object]): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
   }

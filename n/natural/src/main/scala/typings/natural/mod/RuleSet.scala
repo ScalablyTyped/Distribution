@@ -15,7 +15,8 @@ object RuleSet {
     __obj.asInstanceOf[RuleSet]
   }
   
-  extension [Self <: RuleSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleSet] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[TransformationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

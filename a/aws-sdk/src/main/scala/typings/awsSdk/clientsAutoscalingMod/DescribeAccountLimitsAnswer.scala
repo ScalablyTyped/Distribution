@@ -33,7 +33,8 @@ object DescribeAccountLimitsAnswer {
     __obj.asInstanceOf[DescribeAccountLimitsAnswer]
   }
   
-  extension [Self <: DescribeAccountLimitsAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountLimitsAnswer] (val x: Self) extends AnyVal {
     
     inline def setMaxNumberOfAutoScalingGroups(value: MaxNumberOfAutoScalingGroups): Self = StObject.set(x, "MaxNumberOfAutoScalingGroups", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object libTypesReanimated2HookUtilsMod {
       __obj.asInstanceOf[UseHandlerContext[TContext]]
     }
     
-    extension [Self <: UseHandlerContext[?], TContext /* <: Context */](x: Self & UseHandlerContext[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseHandlerContext[?], TContext /* <: Context */] (val x: Self & UseHandlerContext[TContext]) extends AnyVal {
       
       inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

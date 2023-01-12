@@ -77,7 +77,8 @@ object libPhonePhoneNumberMod {
       __obj.asInstanceOf[PhoneNumber]
     }
     
-    extension [Self <: PhoneNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
       
       inline def setAreaCode(value: Double): Self = StObject.set(x, "areaCode", value.asInstanceOf[js.Any])
       

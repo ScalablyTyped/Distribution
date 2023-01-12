@@ -19,7 +19,8 @@ object ParentFilterItem {
     __obj.asInstanceOf[ParentFilterItem]
   }
   
-  extension [Self <: ParentFilterItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentFilterItem] (val x: Self) extends AnyVal {
     
     inline def setParentFilterItem(value: default): Self = StObject.set(x, "parentFilterItem", value.asInstanceOf[js.Any])
     

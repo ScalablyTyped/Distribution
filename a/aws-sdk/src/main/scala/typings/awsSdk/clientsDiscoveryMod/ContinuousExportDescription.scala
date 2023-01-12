@@ -53,7 +53,8 @@ object ContinuousExportDescription {
     __obj.asInstanceOf[ContinuousExportDescription]
   }
   
-  extension [Self <: ContinuousExportDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousExportDescription] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

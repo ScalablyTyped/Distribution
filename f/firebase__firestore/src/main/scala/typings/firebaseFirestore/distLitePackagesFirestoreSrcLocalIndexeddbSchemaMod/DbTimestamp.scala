@@ -17,7 +17,8 @@ object DbTimestamp {
     __obj.asInstanceOf[DbTimestamp]
   }
   
-  extension [Self <: DbTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbTimestamp] (val x: Self) extends AnyVal {
     
     inline def setNanoseconds(value: Double): Self = StObject.set(x, "nanoseconds", value.asInstanceOf[js.Any])
     

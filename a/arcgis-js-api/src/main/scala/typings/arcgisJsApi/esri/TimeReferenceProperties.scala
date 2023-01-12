@@ -29,7 +29,8 @@ object TimeReferenceProperties {
     __obj.asInstanceOf[TimeReferenceProperties]
   }
   
-  extension [Self <: TimeReferenceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeReferenceProperties] (val x: Self) extends AnyVal {
     
     inline def setRespectsDaylightSaving(value: Boolean): Self = StObject.set(x, "respectsDaylightSaving", value.asInstanceOf[js.Any])
     

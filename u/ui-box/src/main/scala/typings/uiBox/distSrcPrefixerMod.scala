@@ -25,7 +25,8 @@ object distSrcPrefixerMod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       

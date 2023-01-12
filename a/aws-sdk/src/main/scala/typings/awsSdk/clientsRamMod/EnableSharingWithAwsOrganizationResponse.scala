@@ -18,7 +18,8 @@ object EnableSharingWithAwsOrganizationResponse {
     __obj.asInstanceOf[EnableSharingWithAwsOrganizationResponse]
   }
   
-  extension [Self <: EnableSharingWithAwsOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableSharingWithAwsOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     

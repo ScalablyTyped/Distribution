@@ -237,7 +237,8 @@ object WebpackOptionsNormalized {
     __obj.asInstanceOf[WebpackOptionsNormalized]
   }
   
-  extension [Self <: WebpackOptionsNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpackOptionsNormalized] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: `false` | StringDictionary[Any]): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

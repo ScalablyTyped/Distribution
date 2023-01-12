@@ -112,7 +112,8 @@ object TimepickerOptions {
     __obj.asInstanceOf[TimepickerOptions]
   }
   
-  extension [Self <: TimepickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimepickerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

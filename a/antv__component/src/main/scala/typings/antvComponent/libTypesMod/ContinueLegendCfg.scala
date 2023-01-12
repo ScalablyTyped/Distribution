@@ -81,7 +81,8 @@ object ContinueLegendCfg {
     __obj.asInstanceOf[ContinueLegendCfg]
   }
   
-  extension [Self <: ContinueLegendCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueLegendCfg] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

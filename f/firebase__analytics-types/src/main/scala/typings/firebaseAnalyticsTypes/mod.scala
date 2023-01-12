@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[AnalyticsCallOptions]
     }
     
-    extension [Self <: AnalyticsCallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ControlParams]
     }
     
-    extension [Self <: ControlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
       
       inline def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[DynamicConfig]
     }
     
-    extension [Self <: DynamicConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -357,7 +360,8 @@ object mod {
       __obj.asInstanceOf[EventParams]
     }
     
-    extension [Self <: EventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       
@@ -913,7 +917,8 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       
@@ -1034,7 +1039,8 @@ object mod {
       __obj.asInstanceOf[MinimalDynamicConfig]
     }
     
-    extension [Self <: MinimalDynamicConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimalDynamicConfig] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -1059,7 +1065,8 @@ object mod {
       __obj.asInstanceOf[Promotion]
     }
     
-    extension [Self <: Promotion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
       
       inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
       
@@ -1094,7 +1101,8 @@ object mod {
       __obj.asInstanceOf[SettingsOptions]
     }
     
-    extension [Self <: SettingsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsOptions] (val x: Self) extends AnyVal {
       
       inline def setDataLayerName(value: String): Self = StObject.set(x, "dataLayerName", value.asInstanceOf[js.Any])
       
@@ -1121,7 +1129,8 @@ object mod {
       __obj.asInstanceOf[ThrottleMetadata]
     }
     
-    extension [Self <: ThrottleMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleMetadata] (val x: Self) extends AnyVal {
       
       inline def setBackoffCount(value: Double): Self = StObject.set(x, "backoffCount", value.asInstanceOf[js.Any])
       
@@ -1144,7 +1153,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setAnalytics-compat`(value: FirebaseAnalytics): Self = StObject.set(x, "analytics-compat", value.asInstanceOf[js.Any])
       }

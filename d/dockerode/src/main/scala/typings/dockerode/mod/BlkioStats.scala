@@ -38,7 +38,8 @@ object BlkioStats {
     __obj.asInstanceOf[BlkioStats]
   }
   
-  extension [Self <: BlkioStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlkioStats] (val x: Self) extends AnyVal {
     
     inline def setIo_merged_recursive(value: js.Array[BlkioStatEntry]): Self = StObject.set(x, "io_merged_recursive", value.asInstanceOf[js.Any])
     

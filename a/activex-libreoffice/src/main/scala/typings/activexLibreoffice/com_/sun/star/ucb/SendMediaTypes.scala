@@ -21,7 +21,8 @@ object SendMediaTypes {
     __obj.asInstanceOf[SendMediaTypes]
   }
   
-  extension [Self <: SendMediaTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMediaTypes] (val x: Self) extends AnyVal {
     
     inline def setProtocolType(value: String): Self = StObject.set(x, "ProtocolType", value.asInstanceOf[js.Any])
     

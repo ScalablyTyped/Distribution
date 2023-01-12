@@ -35,7 +35,8 @@ object esCollectionMod {
       __obj.asInstanceOf[CollectionProps]
     }
     
-    extension [Self <: CollectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object esCollectionMod {
       __obj.asInstanceOf[ResizeInfo]
     }
     
-    extension [Self <: ResizeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

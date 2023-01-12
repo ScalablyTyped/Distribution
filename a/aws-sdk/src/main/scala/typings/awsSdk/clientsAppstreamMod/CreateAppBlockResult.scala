@@ -18,7 +18,8 @@ object CreateAppBlockResult {
     __obj.asInstanceOf[CreateAppBlockResult]
   }
   
-  extension [Self <: CreateAppBlockResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAppBlockResult] (val x: Self) extends AnyVal {
     
     inline def setAppBlock(value: AppBlock): Self = StObject.set(x, "AppBlock", value.asInstanceOf[js.Any])
     

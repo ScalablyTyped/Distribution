@@ -21,7 +21,8 @@ object XpackUsageSearchableSnapshots {
     __obj.asInstanceOf[XpackUsageSearchableSnapshots]
   }
   
-  extension [Self <: XpackUsageSearchableSnapshots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSearchableSnapshots] (val x: Self) extends AnyVal {
     
     inline def setFull_copy_indices_count(value: integer): Self = StObject.set(x, "full_copy_indices_count", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object TypeofdesktopCapture {
     __obj.asInstanceOf[TypeofdesktopCapture]
   }
   
-  extension [Self <: TypeofdesktopCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdesktopCapture] (val x: Self) extends AnyVal {
     
     inline def setCancelChooseDesktopMedia(value: integer => Unit): Self = StObject.set(x, "cancelChooseDesktopMedia", js.Any.fromFunction1(value))
     

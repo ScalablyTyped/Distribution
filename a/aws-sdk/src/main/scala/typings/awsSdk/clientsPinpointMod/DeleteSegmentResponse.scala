@@ -15,7 +15,8 @@ object DeleteSegmentResponse {
     __obj.asInstanceOf[DeleteSegmentResponse]
   }
   
-  extension [Self <: DeleteSegmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSegmentResponse] (val x: Self) extends AnyVal {
     
     inline def setSegmentResponse(value: SegmentResponse): Self = StObject.set(x, "SegmentResponse", value.asInstanceOf[js.Any])
   }

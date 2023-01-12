@@ -23,7 +23,8 @@ object ListFlowExecutionMessagesResponse {
     __obj.asInstanceOf[ListFlowExecutionMessagesResponse]
   }
   
-  extension [Self <: ListFlowExecutionMessagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFlowExecutionMessagesResponse] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: FlowExecutionMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

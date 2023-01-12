@@ -43,7 +43,8 @@ object ListEntitiesForPolicyRequest {
     __obj.asInstanceOf[ListEntitiesForPolicyRequest]
   }
   
-  extension [Self <: ListEntitiesForPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntitiesForPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityFilter(value: EntityType): Self = StObject.set(x, "EntityFilter", value.asInstanceOf[js.Any])
     

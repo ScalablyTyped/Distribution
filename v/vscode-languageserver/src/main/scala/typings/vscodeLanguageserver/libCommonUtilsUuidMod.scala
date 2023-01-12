@@ -39,7 +39,8 @@ object libCommonUtilsUuidMod {
       __obj.asInstanceOf[UUID]
     }
     
-    extension [Self <: UUID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UUID] (val x: Self) extends AnyVal {
       
       inline def setAsHex(value: () => String): Self = StObject.set(x, "asHex", js.Any.fromFunction0(value))
       

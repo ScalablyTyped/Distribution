@@ -28,7 +28,8 @@ object XGridSelectionListener {
     __obj.asInstanceOf[XGridSelectionListener]
   }
   
-  extension [Self <: XGridSelectionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridSelectionListener] (val x: Self) extends AnyVal {
     
     inline def setSelectionChanged(value: GridSelectionEvent => Unit): Self = StObject.set(x, "selectionChanged", js.Any.fromFunction1(value))
   }

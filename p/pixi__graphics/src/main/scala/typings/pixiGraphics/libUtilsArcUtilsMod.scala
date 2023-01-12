@@ -88,7 +88,8 @@ object libUtilsArcUtilsMod {
       __obj.asInstanceOf[IArcLikeShape]
     }
     
-    extension [Self <: IArcLikeShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArcLikeShape] (val x: Self) extends AnyVal {
       
       inline def setAnticlockwise(value: Boolean): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
       

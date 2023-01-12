@@ -18,7 +18,8 @@ object RelatedItemEventIncludedData {
     __obj.asInstanceOf[RelatedItemEventIncludedData]
   }
   
-  extension [Self <: RelatedItemEventIncludedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedItemEventIncludedData] (val x: Self) extends AnyVal {
     
     inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
   }

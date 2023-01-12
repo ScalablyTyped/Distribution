@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaLinkProposalStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setLinkProposalInitiatingProduct(value: String): Self = StObject.set(x, "linkProposalInitiatingProduct", value.asInstanceOf[js.Any])
     

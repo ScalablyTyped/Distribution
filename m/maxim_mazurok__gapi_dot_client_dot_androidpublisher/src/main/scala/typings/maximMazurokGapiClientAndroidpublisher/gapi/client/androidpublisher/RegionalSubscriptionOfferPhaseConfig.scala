@@ -34,7 +34,8 @@ object RegionalSubscriptionOfferPhaseConfig {
     __obj.asInstanceOf[RegionalSubscriptionOfferPhaseConfig]
   }
   
-  extension [Self <: RegionalSubscriptionOfferPhaseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalSubscriptionOfferPhaseConfig] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteDiscount(value: Money): Self = StObject.set(x, "absoluteDiscount", value.asInstanceOf[js.Any])
     

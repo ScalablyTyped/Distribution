@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ConvertResult]
     }
     
-    extension [Self <: ConvertResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertResult] (val x: Self) extends AnyVal {
       
       inline def setConverted(value: js.Array[Converted]): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Converted]
     }
     
-    extension [Self <: Converted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Converted] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoRemoveTmp(value: Boolean): Self = StObject.set(x, "autoRemoveTmp", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object mod {
       __obj.asInstanceOf[SingleConvertResult]
     }
     
-    extension [Self <: SingleConvertResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleConvertResult] (val x: Self) extends AnyVal {
       
       inline def setConverted(value: Converted): Self = StObject.set(x, "converted", value.asInstanceOf[js.Any])
       
@@ -278,7 +282,8 @@ object mod {
       __obj.asInstanceOf[TiffConverterError]
     }
     
-    extension [Self <: TiffConverterError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TiffConverterError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

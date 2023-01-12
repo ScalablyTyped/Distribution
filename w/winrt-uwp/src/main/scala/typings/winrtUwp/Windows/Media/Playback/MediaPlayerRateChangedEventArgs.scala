@@ -17,7 +17,8 @@ object MediaPlayerRateChangedEventArgs {
     __obj.asInstanceOf[MediaPlayerRateChangedEventArgs]
   }
   
-  extension [Self <: MediaPlayerRateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlayerRateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewRate(value: Double): Self = StObject.set(x, "newRate", value.asInstanceOf[js.Any])
   }

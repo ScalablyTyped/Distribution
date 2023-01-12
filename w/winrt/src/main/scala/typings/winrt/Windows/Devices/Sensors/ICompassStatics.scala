@@ -15,7 +15,8 @@ object ICompassStatics {
     __obj.asInstanceOf[ICompassStatics]
   }
   
-  extension [Self <: ICompassStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICompassStatics] (val x: Self) extends AnyVal {
     
     inline def setGetDefault(value: () => Compass): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }

@@ -26,7 +26,8 @@ object Event {
     __obj.asInstanceOf[Event[Metadata]]
   }
   
-  extension [Self <: Event[?], Metadata](x: Self & Event[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event[?], Metadata] (val x: Self & Event[Metadata]) extends AnyVal {
     
     inline def setAccount_guid(value: String): Self = StObject.set(x, "account_guid", value.asInstanceOf[js.Any])
     

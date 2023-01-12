@@ -30,7 +30,8 @@ object NavigationRedirectError {
     __obj.asInstanceOf[NavigationRedirectError]
   }
   
-  extension [Self <: NavigationRedirectError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationRedirectError] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

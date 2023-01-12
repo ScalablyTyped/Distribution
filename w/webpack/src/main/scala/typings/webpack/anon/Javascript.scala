@@ -16,7 +16,8 @@ object Javascript {
     __obj.asInstanceOf[Javascript]
   }
   
-  extension [Self <: Javascript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Javascript] (val x: Self) extends AnyVal {
     
     inline def setJavascript(value: ModuleTemplate): Self = StObject.set(x, "javascript", value.asInstanceOf[js.Any])
   }

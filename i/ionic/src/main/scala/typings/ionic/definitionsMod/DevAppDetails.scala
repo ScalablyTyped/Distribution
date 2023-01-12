@@ -22,7 +22,8 @@ object DevAppDetails {
     __obj.asInstanceOf[DevAppDetails]
   }
   
-  extension [Self <: DevAppDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevAppDetails] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

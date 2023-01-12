@@ -31,7 +31,8 @@ object IgComboInitialSelectedItem {
     __obj.asInstanceOf[IgComboInitialSelectedItem]
   }
   
-  extension [Self <: IgComboInitialSelectedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgComboInitialSelectedItem] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

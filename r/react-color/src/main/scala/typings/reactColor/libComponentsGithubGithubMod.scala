@@ -44,7 +44,8 @@ object libComponentsGithubGithubMod {
       __obj.asInstanceOf[GithubPickerProps]
     }
     
-    extension [Self <: GithubPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GithubPickerProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libComponentsGithubGithubMod {
       __obj.asInstanceOf[GithubPickerStylesProps]
     }
     
-    extension [Self <: GithubPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GithubPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       

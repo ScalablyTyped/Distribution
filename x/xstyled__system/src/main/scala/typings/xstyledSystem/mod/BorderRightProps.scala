@@ -16,7 +16,8 @@ object BorderRightProps {
     __obj.asInstanceOf[BorderRightProps[TLength]]
   }
   
-  extension [Self <: BorderRightProps[?], TLength](x: Self & BorderRightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderRightProps[?], TLength] (val x: Self & BorderRightProps[TLength]) extends AnyVal {
     
     inline def setBorderRight(value: ResponsiveValue[BorderRight[TLength]]): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     

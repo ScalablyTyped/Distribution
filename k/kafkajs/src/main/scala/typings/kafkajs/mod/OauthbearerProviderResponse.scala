@@ -15,7 +15,8 @@ object OauthbearerProviderResponse {
     __obj.asInstanceOf[OauthbearerProviderResponse]
   }
   
-  extension [Self <: OauthbearerProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthbearerProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

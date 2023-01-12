@@ -27,7 +27,8 @@ object ReadStreamOptions {
     __obj.asInstanceOf[ReadStreamOptions]
   }
   
-  extension [Self <: ReadStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

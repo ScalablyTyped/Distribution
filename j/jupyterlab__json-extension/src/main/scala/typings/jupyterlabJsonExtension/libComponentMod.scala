@@ -46,7 +46,8 @@ object libComponentMod {
       __obj.asInstanceOf[IProps]
     }
     
-    extension [Self <: IProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: NonNullable[JSONValue]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object libComponentMod {
       __obj.asInstanceOf[IState]
     }
     
-    extension [Self <: IState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

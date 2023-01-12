@@ -25,7 +25,8 @@ object AccountAdsLink {
     __obj.asInstanceOf[AccountAdsLink]
   }
   
-  extension [Self <: AccountAdsLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAdsLink] (val x: Self) extends AnyVal {
     
     inline def setAdsId(value: String): Self = StObject.set(x, "adsId", value.asInstanceOf[js.Any])
     

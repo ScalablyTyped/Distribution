@@ -22,7 +22,8 @@ object UnnestSqlTokenType {
     __obj.asInstanceOf[UnnestSqlTokenType]
   }
   
-  extension [Self <: UnnestSqlTokenType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnnestSqlTokenType] (val x: Self) extends AnyVal {
     
     inline def setColumnTypes(value: js.Array[String]): Self = StObject.set(x, "columnTypes", value.asInstanceOf[js.Any])
     

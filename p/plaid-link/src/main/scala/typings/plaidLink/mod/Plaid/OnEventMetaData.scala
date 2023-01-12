@@ -50,7 +50,8 @@ object OnEventMetaData {
     __obj.asInstanceOf[OnEventMetaData]
   }
   
-  extension [Self <: OnEventMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnEventMetaData] (val x: Self) extends AnyVal {
     
     inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     

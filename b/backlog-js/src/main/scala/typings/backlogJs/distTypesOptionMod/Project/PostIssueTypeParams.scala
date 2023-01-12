@@ -17,7 +17,8 @@ object PostIssueTypeParams {
     __obj.asInstanceOf[PostIssueTypeParams]
   }
   
-  extension [Self <: PostIssueTypeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostIssueTypeParams] (val x: Self) extends AnyVal {
     
     inline def setColor(value: IssueTypeColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

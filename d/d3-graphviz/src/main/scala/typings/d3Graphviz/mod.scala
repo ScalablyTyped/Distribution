@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[DotAttributes]
     }
     
-    extension [Self <: DotAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotAttributes] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[EdgeOptions]
     }
     
-    extension [Self <: EdgeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EdgeOptions] (val x: Self) extends AnyVal {
       
       inline def setShortening(value: Double): Self = StObject.set(x, "shortening", value.asInstanceOf[js.Any])
     }
@@ -141,7 +143,8 @@ object mod {
       __obj.asInstanceOf[GraphvizOptions]
     }
     
-    extension [Self <: GraphvizOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphvizOptions] (val x: Self) extends AnyVal {
       
       inline def setConvertEqualSidedPolygons(value: Boolean): Self = StObject.set(x, "convertEqualSidedPolygons", value.asInstanceOf[js.Any])
       

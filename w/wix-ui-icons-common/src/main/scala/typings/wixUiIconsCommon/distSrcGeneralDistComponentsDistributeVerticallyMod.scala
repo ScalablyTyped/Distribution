@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsDistributeVerticallyMod extends Shortcut {
       __obj.asInstanceOf[DistributeVerticallyProps]
     }
     
-    extension [Self <: DistributeVerticallyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributeVerticallyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

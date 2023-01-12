@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1p1beta1TextFrame {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p1beta1TextFrame]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p1beta1TextFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p1beta1TextFrame] (val x: Self) extends AnyVal {
     
     inline def setRotatedBoundingBox(value: GoogleCloudVideointelligenceV1p1beta1NormalizedBoundingPoly): Self = StObject.set(x, "rotatedBoundingBox", value.asInstanceOf[js.Any])
     

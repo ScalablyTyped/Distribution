@@ -38,7 +38,8 @@ object SetPermissionRequest {
     __obj.asInstanceOf[SetPermissionRequest]
   }
   
-  extension [Self <: SetPermissionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPermissionRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowSsh(value: Boolean): Self = StObject.set(x, "AllowSsh", value.asInstanceOf[js.Any])
     

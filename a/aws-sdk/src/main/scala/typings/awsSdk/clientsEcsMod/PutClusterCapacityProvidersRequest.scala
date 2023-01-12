@@ -32,7 +32,8 @@ object PutClusterCapacityProvidersRequest {
     __obj.asInstanceOf[PutClusterCapacityProvidersRequest]
   }
   
-  extension [Self <: PutClusterCapacityProvidersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutClusterCapacityProvidersRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityProviders(value: StringList): Self = StObject.set(x, "capacityProviders", value.asInstanceOf[js.Any])
     

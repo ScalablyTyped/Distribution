@@ -15,7 +15,8 @@ object FrameCaptureCdnSettings {
     __obj.asInstanceOf[FrameCaptureCdnSettings]
   }
   
-  extension [Self <: FrameCaptureCdnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureCdnSettings] (val x: Self) extends AnyVal {
     
     inline def setFrameCaptureS3Settings(value: FrameCaptureS3Settings): Self = StObject.set(x, "FrameCaptureS3Settings", value.asInstanceOf[js.Any])
     

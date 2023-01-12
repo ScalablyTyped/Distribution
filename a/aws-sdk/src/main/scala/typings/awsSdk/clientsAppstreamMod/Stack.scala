@@ -83,7 +83,8 @@ object Stack {
     __obj.asInstanceOf[Stack]
   }
   
-  extension [Self <: Stack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stack] (val x: Self) extends AnyVal {
     
     inline def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     

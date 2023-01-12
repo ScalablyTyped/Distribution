@@ -33,7 +33,8 @@ object GridsterResizable {
     __obj.asInstanceOf[GridsterResizable]
   }
   
-  extension [Self <: GridsterResizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridsterResizable] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: js.Array[String]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object CoAuthors {
     __obj.asInstanceOf[CoAuthors]
   }
   
-  extension [Self <: CoAuthors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoAuthors] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

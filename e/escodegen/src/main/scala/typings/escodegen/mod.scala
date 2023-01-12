@@ -231,7 +231,8 @@ object mod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -357,7 +358,8 @@ object mod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Boolean): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -433,7 +435,8 @@ object mod {
       __obj.asInstanceOf[IndentOptions]
     }
     
-    extension [Self <: IndentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentOptions] (val x: Self) extends AnyVal {
       
       inline def setAdjustMultilineComment(value: Boolean): Self = StObject.set(x, "adjustMultilineComment", value.asInstanceOf[js.Any])
       
@@ -473,7 +476,8 @@ object mod {
       __obj.asInstanceOf[MozillaOptions]
     }
     
-    extension [Self <: MozillaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MozillaOptions] (val x: Self) extends AnyVal {
       
       inline def setComprehensionExpressionStartsWithAssignment(value: Boolean): Self = StObject.set(x, "comprehensionExpressionStartsWithAssignment", value.asInstanceOf[js.Any])
       

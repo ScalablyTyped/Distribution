@@ -23,7 +23,8 @@ object GetBLEDeviceServicesSuccessData {
     __obj.asInstanceOf[GetBLEDeviceServicesSuccessData]
   }
   
-  extension [Self <: GetBLEDeviceServicesSuccessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceServicesSuccessData] (val x: Self) extends AnyVal {
     
     inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     

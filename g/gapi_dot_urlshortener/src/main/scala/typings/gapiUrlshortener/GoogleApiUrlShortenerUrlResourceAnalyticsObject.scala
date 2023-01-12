@@ -50,7 +50,8 @@ object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsObject]
   }
   
-  extension [Self <: GoogleApiUrlShortenerUrlResourceAnalyticsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiUrlShortenerUrlResourceAnalyticsObject] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AssociatePhoneNumbersWithVoiceConnectorGroupResponse {
     __obj.asInstanceOf[AssociatePhoneNumbersWithVoiceConnectorGroupResponse]
   }
   
-  extension [Self <: AssociatePhoneNumbersWithVoiceConnectorGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatePhoneNumbersWithVoiceConnectorGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumberErrors(value: PhoneNumberErrorList): Self = StObject.set(x, "PhoneNumberErrors", value.asInstanceOf[js.Any])
     

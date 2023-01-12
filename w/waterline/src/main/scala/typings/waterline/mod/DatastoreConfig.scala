@@ -16,7 +16,8 @@ object DatastoreConfig {
     __obj.asInstanceOf[DatastoreConfig]
   }
   
-  extension [Self <: DatastoreConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreConfig] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
   }

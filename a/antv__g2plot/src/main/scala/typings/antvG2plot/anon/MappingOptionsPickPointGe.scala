@@ -38,7 +38,8 @@ object MappingOptionsPickPointGe {
     __obj.asInstanceOf[MappingOptionsPickPointGe]
   }
   
-  extension [Self <: MappingOptionsPickPointGe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingOptionsPickPointGe] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorAttr): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

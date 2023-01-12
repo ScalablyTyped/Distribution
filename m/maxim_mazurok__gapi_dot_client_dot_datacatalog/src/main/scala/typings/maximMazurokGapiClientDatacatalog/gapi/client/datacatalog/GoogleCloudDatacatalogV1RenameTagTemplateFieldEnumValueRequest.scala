@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1RenameTagTemplateFieldEnumValueRequest] (val x: Self) extends AnyVal {
     
     inline def setNewEnumValueDisplayName(value: String): Self = StObject.set(x, "newEnumValueDisplayName", value.asInstanceOf[js.Any])
     

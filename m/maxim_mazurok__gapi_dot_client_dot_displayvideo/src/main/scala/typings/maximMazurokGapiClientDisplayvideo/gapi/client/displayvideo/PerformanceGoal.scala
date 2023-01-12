@@ -35,7 +35,8 @@ object PerformanceGoal {
     __obj.asInstanceOf[PerformanceGoal]
   }
   
-  extension [Self <: PerformanceGoal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceGoal] (val x: Self) extends AnyVal {
     
     inline def setPerformanceGoalAmountMicros(value: String): Self = StObject.set(x, "performanceGoalAmountMicros", value.asInstanceOf[js.Any])
     

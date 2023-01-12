@@ -138,7 +138,8 @@ object PartialPrimitives {
     __obj.asInstanceOf[PartialPrimitives]
   }
   
-  extension [Self <: PartialPrimitives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPrimitives] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

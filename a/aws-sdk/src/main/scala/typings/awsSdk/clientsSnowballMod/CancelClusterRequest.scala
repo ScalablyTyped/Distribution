@@ -18,7 +18,8 @@ object CancelClusterRequest {
     __obj.asInstanceOf[CancelClusterRequest]
   }
   
-  extension [Self <: CancelClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object distSrcTypesXAppXAppOttDataMod {
       __obj.asInstanceOf[xAppAccountInfo]
     }
     
-    extension [Self <: xAppAccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppAccountInfo] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distSrcTypesXAppXAppOttDataMod {
       __obj.asInstanceOf[xAppOrigin]
     }
     
-    extension [Self <: xAppOrigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppOrigin] (val x: Self) extends AnyVal {
       
       inline def setData(value: xAppOriginData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object distSrcTypesXAppXAppOttDataMod {
       __obj.asInstanceOf[xAppOriginData]
     }
     
-    extension [Self <: xAppOriginData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppOriginData] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object distSrcTypesXAppXAppOttDataMod {
       __obj.asInstanceOf[xAppOttData]
     }
     
-    extension [Self <: xAppOttData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppOttData] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object distSrcTypesXAppXAppOttDataMod {
       __obj.asInstanceOf[xAppUserDeviceData]
     }
     
-    extension [Self <: xAppUserDeviceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: xAppUserDeviceData] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

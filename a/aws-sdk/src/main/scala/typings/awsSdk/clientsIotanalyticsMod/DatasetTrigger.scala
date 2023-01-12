@@ -23,7 +23,8 @@ object DatasetTrigger {
     __obj.asInstanceOf[DatasetTrigger]
   }
   
-  extension [Self <: DatasetTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetTrigger] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: TriggeringDataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

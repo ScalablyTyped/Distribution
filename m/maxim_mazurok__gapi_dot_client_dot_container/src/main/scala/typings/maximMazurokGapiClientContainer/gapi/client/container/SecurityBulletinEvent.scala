@@ -49,7 +49,8 @@ object SecurityBulletinEvent {
     __obj.asInstanceOf[SecurityBulletinEvent]
   }
   
-  extension [Self <: SecurityBulletinEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityBulletinEvent] (val x: Self) extends AnyVal {
     
     inline def setAffectedSupportedMinors(value: js.Array[String]): Self = StObject.set(x, "affectedSupportedMinors", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeLogGroupsRequest {
     __obj.asInstanceOf[DescribeLogGroupsRequest]
   }
   
-  extension [Self <: DescribeLogGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLogGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: DescribeLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

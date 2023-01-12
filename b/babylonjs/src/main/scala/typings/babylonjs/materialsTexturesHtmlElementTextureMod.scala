@@ -95,7 +95,8 @@ object materialsTexturesHtmlElementTextureMod {
       __obj.asInstanceOf[IHtmlElementTextureOptions]
     }
     
-    extension [Self <: IHtmlElementTextureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHtmlElementTextureOptions] (val x: Self) extends AnyVal {
       
       inline def setEngine(value: Nullable[ThinEngine]): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
       

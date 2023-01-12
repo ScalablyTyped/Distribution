@@ -48,7 +48,8 @@ object DkimAttributes {
     __obj.asInstanceOf[DkimAttributes]
   }
   
-  extension [Self <: DkimAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DkimAttributes] (val x: Self) extends AnyVal {
     
     inline def setCurrentSigningKeyLength(value: DkimSigningKeyLength): Self = StObject.set(x, "CurrentSigningKeyLength", value.asInstanceOf[js.Any])
     

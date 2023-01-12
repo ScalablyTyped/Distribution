@@ -18,7 +18,8 @@ object DescribeTransactionResponse {
     __obj.asInstanceOf[DescribeTransactionResponse]
   }
   
-  extension [Self <: DescribeTransactionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTransactionResponse] (val x: Self) extends AnyVal {
     
     inline def setTransactionDescription(value: TransactionDescription): Self = StObject.set(x, "TransactionDescription", value.asInstanceOf[js.Any])
     

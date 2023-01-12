@@ -29,7 +29,8 @@ object typesReplicaUpdateMod {
       __obj.asInstanceOf[ReplicaUpdate]
     }
     
-    extension [Self <: ReplicaUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaUpdate] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object typesReplicaUpdateMod {
       __obj.asInstanceOf[UnmarshalledReplicaUpdate]
     }
     
-    extension [Self <: UnmarshalledReplicaUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicaUpdate] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: UnmarshalledCreateReplicaAction): Self = StObject.set(x, "Create", value.asInstanceOf[js.Any])
       

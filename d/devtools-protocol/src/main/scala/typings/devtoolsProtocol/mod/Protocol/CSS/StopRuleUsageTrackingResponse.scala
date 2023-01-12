@@ -15,7 +15,8 @@ object StopRuleUsageTrackingResponse {
     __obj.asInstanceOf[StopRuleUsageTrackingResponse]
   }
   
-  extension [Self <: StopRuleUsageTrackingResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRuleUsageTrackingResponse] (val x: Self) extends AnyVal {
     
     inline def setRuleUsage(value: js.Array[RuleUsage]): Self = StObject.set(x, "ruleUsage", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object XActiveDataSink {
     __obj.asInstanceOf[XActiveDataSink]
   }
   
-  extension [Self <: XActiveDataSink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XActiveDataSink] (val x: Self) extends AnyVal {
     
     inline def setGetInputStream(value: () => XInputStream): Self = StObject.set(x, "getInputStream", js.Any.fromFunction0(value))
     

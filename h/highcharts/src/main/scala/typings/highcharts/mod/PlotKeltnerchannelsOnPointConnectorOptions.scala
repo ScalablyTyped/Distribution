@@ -29,7 +29,8 @@ object PlotKeltnerchannelsOnPointConnectorOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

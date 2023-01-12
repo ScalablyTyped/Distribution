@@ -16,7 +16,8 @@ object MqttConfig {
     __obj.asInstanceOf[MqttConfig]
   }
   
-  extension [Self <: MqttConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MqttConfig] (val x: Self) extends AnyVal {
     
     inline def setMqttEnabledState(value: String): Self = StObject.set(x, "mqttEnabledState", value.asInstanceOf[js.Any])
     

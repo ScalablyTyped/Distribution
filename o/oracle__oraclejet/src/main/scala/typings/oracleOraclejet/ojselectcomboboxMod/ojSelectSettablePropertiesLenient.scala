@@ -47,7 +47,8 @@ object ojSelectSettablePropertiesLenient {
     __obj.asInstanceOf[ojSelectSettablePropertiesLenient[V, SV]]
   }
   
-  extension [Self <: ojSelectSettablePropertiesLenient[?, ?], V, SV](x: Self & (ojSelectSettablePropertiesLenient[V, SV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojSelectSettablePropertiesLenient[?, ?], V, SV] (val x: Self & (ojSelectSettablePropertiesLenient[V, SV])) extends AnyVal {
     
     inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

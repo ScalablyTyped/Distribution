@@ -34,7 +34,8 @@ object PlayerScoreResponse {
     __obj.asInstanceOf[PlayerScoreResponse]
   }
   
-  extension [Self <: PlayerScoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerScoreResponse] (val x: Self) extends AnyVal {
     
     inline def setBeatenScoreTimeSpans(value: js.Array[String]): Self = StObject.set(x, "beatenScoreTimeSpans", value.asInstanceOf[js.Any])
     

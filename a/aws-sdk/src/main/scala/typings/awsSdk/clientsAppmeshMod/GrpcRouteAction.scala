@@ -18,7 +18,8 @@ object GrpcRouteAction {
     __obj.asInstanceOf[GrpcRouteAction]
   }
   
-  extension [Self <: GrpcRouteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcRouteAction] (val x: Self) extends AnyVal {
     
     inline def setWeightedTargets(value: WeightedTargets): Self = StObject.set(x, "weightedTargets", value.asInstanceOf[js.Any])
     

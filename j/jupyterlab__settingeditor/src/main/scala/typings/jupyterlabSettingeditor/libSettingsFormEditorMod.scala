@@ -134,7 +134,8 @@ object libSettingsFormEditorMod {
         __obj.asInstanceOf[IProps]
       }
       
-      extension [Self <: IProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
         
         inline def setFilteredValues(value: js.Array[String]): Self = StObject.set(x, "filteredValues", value.asInstanceOf[js.Any])
         
@@ -218,7 +219,8 @@ object libSettingsFormEditorMod {
         __obj.asInstanceOf[IState]
       }
       
-      extension [Self <: IState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
         
         inline def setArrayFieldTemplate(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<ArrayFieldTemplateProps<any>> */ Any

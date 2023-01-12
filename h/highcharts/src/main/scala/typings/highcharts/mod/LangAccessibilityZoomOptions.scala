@@ -19,7 +19,8 @@ object LangAccessibilityZoomOptions {
     __obj.asInstanceOf[LangAccessibilityZoomOptions]
   }
   
-  extension [Self <: LangAccessibilityZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangAccessibilityZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setMapZoomIn(value: String): Self = StObject.set(x, "mapZoomIn", value.asInstanceOf[js.Any])
     

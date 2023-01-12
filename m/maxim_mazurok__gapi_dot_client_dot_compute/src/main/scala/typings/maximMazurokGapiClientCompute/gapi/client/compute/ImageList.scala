@@ -35,7 +35,8 @@ object ImageList {
     __obj.asInstanceOf[ImageList]
   }
   
-  extension [Self <: ImageList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

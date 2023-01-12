@@ -52,7 +52,8 @@ object INxPivotValuePoint {
     __obj.asInstanceOf[INxPivotValuePoint]
   }
   
-  extension [Self <: INxPivotValuePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxPivotValuePoint] (val x: Self) extends AnyVal {
     
     inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     

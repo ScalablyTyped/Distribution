@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[PartialareaHTMLElementSVG]
     }
     
-    extension [Self <: PartialareaHTMLElementSVG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialareaHTMLElementSVG] (val x: Self) extends AnyVal {
       
       inline def setArea(value: HTMLElement | SVGElement | Document): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

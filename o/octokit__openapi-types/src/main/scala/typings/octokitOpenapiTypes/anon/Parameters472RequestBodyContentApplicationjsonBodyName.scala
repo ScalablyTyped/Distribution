@@ -19,7 +19,8 @@ object Parameters472RequestBodyContentApplicationjsonBodyName {
     __obj.asInstanceOf[Parameters472RequestBodyContentApplicationjsonBodyName]
   }
   
-  extension [Self <: Parameters472RequestBodyContentApplicationjsonBodyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parameters472RequestBodyContentApplicationjsonBodyName] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

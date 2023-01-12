@@ -39,7 +39,8 @@ object TezosTransactionOp {
     __obj.asInstanceOf[TezosTransactionOp]
   }
   
-  extension [Self <: TezosTransactionOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosTransactionOp] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

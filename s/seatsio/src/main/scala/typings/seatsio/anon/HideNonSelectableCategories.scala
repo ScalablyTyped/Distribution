@@ -17,7 +17,8 @@ object HideNonSelectableCategories {
     __obj.asInstanceOf[HideNonSelectableCategories]
   }
   
-  extension [Self <: HideNonSelectableCategories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideNonSelectableCategories] (val x: Self) extends AnyVal {
     
     inline def setHideNonSelectableCategories(value: Boolean): Self = StObject.set(x, "hideNonSelectableCategories", value.asInstanceOf[js.Any])
     

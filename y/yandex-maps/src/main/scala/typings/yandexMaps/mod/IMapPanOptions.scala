@@ -21,7 +21,8 @@ object IMapPanOptions {
     __obj.asInstanceOf[IMapPanOptions]
   }
   
-  extension [Self <: IMapPanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapPanOptions] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

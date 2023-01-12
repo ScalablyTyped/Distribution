@@ -17,7 +17,8 @@ object GetScriptLanguagesResponse {
     __obj.asInstanceOf[GetScriptLanguagesResponse]
   }
   
-  extension [Self <: GetScriptLanguagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptLanguagesResponse] (val x: Self) extends AnyVal {
     
     inline def setLanguage_contexts(value: js.Array[GetScriptLanguagesLanguageContext]): Self = StObject.set(x, "language_contexts", value.asInstanceOf[js.Any])
     

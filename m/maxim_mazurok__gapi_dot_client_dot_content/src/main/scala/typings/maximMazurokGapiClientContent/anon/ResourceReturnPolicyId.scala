@@ -57,7 +57,8 @@ object ResourceReturnPolicyId {
     __obj.asInstanceOf[ResourceReturnPolicyId]
   }
   
-  extension [Self <: ResourceReturnPolicyId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceReturnPolicyId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

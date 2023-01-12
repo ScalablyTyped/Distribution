@@ -18,7 +18,8 @@ object LogActionObject {
     __obj.asInstanceOf[LogActionObject[TContext, TEvent]]
   }
   
-  extension [Self <: LogActionObject[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (LogActionObject[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (LogActionObject[TContext, TEvent])) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

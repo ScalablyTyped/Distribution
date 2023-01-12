@@ -20,7 +20,8 @@ object FileSystemDownloadResult {
     __obj.asInstanceOf[FileSystemDownloadResult]
   }
   
-  extension [Self <: FileSystemDownloadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemDownloadResult] (val x: Self) extends AnyVal {
     
     inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     

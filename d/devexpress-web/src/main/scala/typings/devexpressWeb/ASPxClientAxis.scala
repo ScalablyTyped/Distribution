@@ -32,7 +32,8 @@ object ASPxClientAxis {
     __obj.asInstanceOf[ASPxClientAxis]
   }
   
-  extension [Self <: ASPxClientAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAxis] (val x: Self) extends AnyVal {
     
     inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object EchoEffectDefinition {
     __obj.asInstanceOf[EchoEffectDefinition]
   }
   
-  extension [Self <: EchoEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EchoEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

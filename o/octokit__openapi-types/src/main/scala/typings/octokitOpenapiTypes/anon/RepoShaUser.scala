@@ -23,7 +23,8 @@ object RepoShaUser {
     __obj.asInstanceOf[RepoShaUser]
   }
   
-  extension [Self <: RepoShaUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoShaUser] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

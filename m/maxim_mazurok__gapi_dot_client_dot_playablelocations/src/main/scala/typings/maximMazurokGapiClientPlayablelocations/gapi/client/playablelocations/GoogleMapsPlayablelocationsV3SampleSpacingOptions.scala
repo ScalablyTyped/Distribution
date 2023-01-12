@@ -30,7 +30,8 @@ object GoogleMapsPlayablelocationsV3SampleSpacingOptions {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleSpacingOptions]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions] (val x: Self) extends AnyVal {
     
     inline def setMinSpacingMeters(value: Double): Self = StObject.set(x, "minSpacingMeters", value.asInstanceOf[js.Any])
     

@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Mafmt]
     }
     
-    extension [Self <: Mafmt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mafmt] (val x: Self) extends AnyVal {
       
       inline def setInput(value: js.Array[Mafmt | js.Function0[Mafmt]]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

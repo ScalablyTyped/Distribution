@@ -23,7 +23,8 @@ object ForbidClientAccountCreation {
     __obj.asInstanceOf[ForbidClientAccountCreation]
   }
   
-  extension [Self <: ForbidClientAccountCreation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForbidClientAccountCreation] (val x: Self) extends AnyVal {
     
     inline def setForbidClientAccountCreation(value: Boolean): Self = StObject.set(x, "forbidClientAccountCreation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSecurityConfigurationsRequest {
     __obj.asInstanceOf[GetSecurityConfigurationsRequest]
   }
   
-  extension [Self <: GetSecurityConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecurityConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

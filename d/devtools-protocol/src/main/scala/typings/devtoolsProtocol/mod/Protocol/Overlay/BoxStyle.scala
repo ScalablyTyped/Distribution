@@ -24,7 +24,8 @@ object BoxStyle {
     __obj.asInstanceOf[BoxStyle]
   }
   
-  extension [Self <: BoxStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxStyle] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: RGBA): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

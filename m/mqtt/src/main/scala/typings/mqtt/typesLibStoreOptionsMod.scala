@@ -20,7 +20,8 @@ object typesLibStoreOptionsMod {
       __obj.asInstanceOf[IStoreOptions]
     }
     
-    extension [Self <: IStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       

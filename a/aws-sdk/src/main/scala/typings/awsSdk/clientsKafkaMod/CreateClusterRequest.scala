@@ -97,7 +97,8 @@ object CreateClusterRequest {
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
-  extension [Self <: CreateClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setBrokerNodeGroupInfo(value: BrokerNodeGroupInfo): Self = StObject.set(x, "BrokerNodeGroupInfo", value.asInstanceOf[js.Any])
     

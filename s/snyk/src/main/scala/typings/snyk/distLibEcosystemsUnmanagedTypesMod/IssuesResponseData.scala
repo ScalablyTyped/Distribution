@@ -17,7 +17,8 @@ object IssuesResponseData {
     __obj.asInstanceOf[IssuesResponseData]
   }
   
-  extension [Self <: IssuesResponseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuesResponseData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
-    extension [Self <: ARIACHECKEDATTR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIACHECKEDATTR] (val x: Self) extends AnyVal {
       
       inline def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[FOCUSROOTINDEX]
     }
     
-    extension [Self <: FOCUSROOTINDEX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FOCUSROOTINDEX] (val x: Self) extends AnyVal {
       
       inline def setFOCUS_ROOT_INDEX(value: Double): Self = StObject.set(x, "FOCUS_ROOT_INDEX", value.asInstanceOf[js.Any])
     }
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[MENUSELECTEDLISTITEM]
     }
     
-    extension [Self <: MENUSELECTEDLISTITEM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MENUSELECTEDLISTITEM] (val x: Self) extends AnyVal {
       
       inline def setMENU_SELECTED_LIST_ITEM(value: String): Self = StObject.set(x, "MENU_SELECTED_LIST_ITEM", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCMenuAdapter]
     }
     
-    extension [Self <: PartialMDCMenuAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCMenuAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddAttributeToElementAtIndex(value: (/* index */ Double, /* attr */ String, /* value */ String) => Unit): Self = StObject.set(x, "addAttributeToElementAtIndex", js.Any.fromFunction3(value))
       
@@ -210,7 +214,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCMenuDistance]
     }
     
-    extension [Self <: PartialMDCMenuDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCMenuDistance] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

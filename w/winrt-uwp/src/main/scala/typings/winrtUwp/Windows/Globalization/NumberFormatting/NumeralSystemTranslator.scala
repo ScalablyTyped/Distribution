@@ -36,7 +36,8 @@ object NumeralSystemTranslator {
     __obj.asInstanceOf[NumeralSystemTranslator]
   }
   
-  extension [Self <: NumeralSystemTranslator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumeralSystemTranslator] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: IVectorView[String]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

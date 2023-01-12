@@ -33,7 +33,8 @@ object PaginatorJumpToPageInputOptions {
     __obj.asInstanceOf[PaginatorJumpToPageInputOptions]
   }
   
-  extension [Self <: PaginatorJumpToPageInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorJumpToPageInputOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

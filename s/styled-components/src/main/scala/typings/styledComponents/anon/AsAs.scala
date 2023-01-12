@@ -20,7 +20,8 @@ object AsAs {
     __obj.asInstanceOf[AsAs[ActualComponent, R]]
   }
   
-  extension [Self <: AsAs[?, ?], ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */](x: Self & (AsAs[ActualComponent, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsAs[?, ?], ActualComponent /* <: StyledTarget[R] */, R /* <: Runtime */] (val x: Self & (AsAs[ActualComponent, R])) extends AnyVal {
     
     inline def set$as(value: ActualComponent): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
   }

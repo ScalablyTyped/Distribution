@@ -81,7 +81,8 @@ object DetectedIssue {
     __obj.asInstanceOf[DetectedIssue]
   }
   
-  extension [Self <: DetectedIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedIssue] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

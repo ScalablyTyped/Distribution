@@ -30,7 +30,8 @@ object math {
       __obj.asInstanceOf[IPoint]
     }
     
-    extension [Self <: IPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object math {
       __obj.asInstanceOf[ISize]
     }
     
-    extension [Self <: ISize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object math {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setContainsXY(value: (Double, Double) => Boolean): Self = StObject.set(x, "containsXY", js.Any.fromFunction2(value))
       
@@ -223,7 +226,8 @@ object math {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GeocodeResult {
     __obj.asInstanceOf[GeocodeResult]
   }
   
-  extension [Self <: GeocodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodeResult] (val x: Self) extends AnyVal {
     
     inline def setGeocodes(value: js.Array[LngLat]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object DbTargetGlobal {
     __obj.asInstanceOf[DbTargetGlobal]
   }
   
-  extension [Self <: DbTargetGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbTargetGlobal] (val x: Self) extends AnyVal {
     
     inline def setHighestListenSequenceNumber(value: Double): Self = StObject.set(x, "highestListenSequenceNumber", value.asInstanceOf[js.Any])
     

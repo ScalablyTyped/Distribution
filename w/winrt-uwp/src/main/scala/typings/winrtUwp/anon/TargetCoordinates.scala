@@ -19,7 +19,8 @@ object TargetCoordinates {
     __obj.asInstanceOf[TargetCoordinates]
   }
   
-  extension [Self <: TargetCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetCoordinates] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: IPromiseWithIAsyncAction): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     

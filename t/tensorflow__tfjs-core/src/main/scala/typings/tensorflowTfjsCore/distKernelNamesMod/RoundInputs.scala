@@ -16,7 +16,8 @@ object RoundInputs {
     __obj.asInstanceOf[RoundInputs]
   }
   
-  extension [Self <: RoundInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

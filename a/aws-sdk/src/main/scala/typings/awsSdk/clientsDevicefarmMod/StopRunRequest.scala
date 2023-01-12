@@ -18,7 +18,8 @@ object StopRunRequest {
     __obj.asInstanceOf[StopRunRequest]
   }
   
-  extension [Self <: StopRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopRunRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

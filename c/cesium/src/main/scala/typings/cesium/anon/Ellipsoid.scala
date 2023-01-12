@@ -20,7 +20,8 @@ object Ellipsoid {
     __obj.asInstanceOf[Ellipsoid]
   }
   
-  extension [Self <: Ellipsoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ellipsoid] (val x: Self) extends AnyVal {
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     

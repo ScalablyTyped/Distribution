@@ -20,7 +20,8 @@ object AngularDevServerProjectConfig {
     __obj.asInstanceOf[AngularDevServerProjectConfig]
   }
   
-  extension [Self <: AngularDevServerProjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularDevServerProjectConfig] (val x: Self) extends AnyVal {
     
     inline def setBuildOptions(value: Record[String, Any]): Self = StObject.set(x, "buildOptions", value.asInstanceOf[js.Any])
     

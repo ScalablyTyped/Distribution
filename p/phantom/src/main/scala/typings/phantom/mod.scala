@@ -135,7 +135,8 @@ object mod {
       __obj.asInstanceOf[ICookie]
     }
     
-    extension [Self <: ICookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object mod {
       __obj.asInstanceOf[IOpenWebPageSettings]
     }
     
-    extension [Self <: IOpenWebPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenWebPageSettings] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -221,7 +223,8 @@ object mod {
       __obj.asInstanceOf[IPaperSizeOptions]
     }
     
-    extension [Self <: IPaperSizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPaperSizeOptions] (val x: Self) extends AnyVal {
       
       inline def setFooter(value: Contents): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod {
       __obj.asInstanceOf[IPhantomCallback]
     }
     
-    extension [Self <: IPhantomCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhantomCallback] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: callback): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object mod {
       __obj.asInstanceOf[IRequestData]
     }
     
-    extension [Self <: IRequestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestData] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[Name]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -357,7 +362,8 @@ object mod {
       __obj.asInstanceOf[IResponse]
     }
     
-    extension [Self <: IResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
       
       inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object PartialRecordEntryPointFo {
     __obj.asInstanceOf[PartialRecordEntryPointFo]
   }
   
-  extension [Self <: PartialRecordEntryPointFo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordEntryPointFo] (val x: Self) extends AnyVal {
     
     inline def setCommonjs(value: DependencyHost): Self = StObject.set(x, "commonjs", value.asInstanceOf[js.Any])
     

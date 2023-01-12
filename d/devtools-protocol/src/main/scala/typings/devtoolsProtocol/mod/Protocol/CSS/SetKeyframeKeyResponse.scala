@@ -18,7 +18,8 @@ object SetKeyframeKeyResponse {
     __obj.asInstanceOf[SetKeyframeKeyResponse]
   }
   
-  extension [Self <: SetKeyframeKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetKeyframeKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyText(value: Value): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
   }

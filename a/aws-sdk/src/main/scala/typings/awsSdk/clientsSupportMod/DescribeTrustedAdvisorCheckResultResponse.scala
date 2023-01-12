@@ -18,7 +18,8 @@ object DescribeTrustedAdvisorCheckResultResponse {
     __obj.asInstanceOf[DescribeTrustedAdvisorCheckResultResponse]
   }
   
-  extension [Self <: DescribeTrustedAdvisorCheckResultResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrustedAdvisorCheckResultResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: TrustedAdvisorCheckResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

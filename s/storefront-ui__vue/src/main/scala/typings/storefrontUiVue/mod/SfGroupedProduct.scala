@@ -23,7 +23,8 @@ object SfGroupedProduct extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setGlideSettings(value: Options): Self = StObject.set(x, "glideSettings", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object SfGroupedProduct extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object SfGroupedProduct extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setDefaultSettings(value: Options): Self = StObject.set(x, "defaultSettings", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object SfGroupedProduct extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setGlideMount(value: () => Unit): Self = StObject.set(x, "glideMount", js.Any.fromFunction0(value))
     }
@@ -110,7 +114,8 @@ object SfGroupedProduct extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setHasCarousel(value: Boolean): Self = StObject.set(x, "hasCarousel", value.asInstanceOf[js.Any])
       

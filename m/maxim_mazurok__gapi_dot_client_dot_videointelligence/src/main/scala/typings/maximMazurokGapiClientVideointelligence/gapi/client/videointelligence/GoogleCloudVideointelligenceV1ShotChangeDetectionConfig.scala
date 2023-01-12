@@ -16,7 +16,8 @@ object GoogleCloudVideointelligenceV1ShotChangeDetectionConfig {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1ShotChangeDetectionConfig]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1ShotChangeDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

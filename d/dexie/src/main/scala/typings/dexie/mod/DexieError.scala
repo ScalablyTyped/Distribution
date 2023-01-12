@@ -21,7 +21,8 @@ object DexieError {
     __obj.asInstanceOf[DexieError]
   }
   
-  extension [Self <: DexieError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieError] (val x: Self) extends AnyVal {
     
     inline def setInner(value: Any): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     

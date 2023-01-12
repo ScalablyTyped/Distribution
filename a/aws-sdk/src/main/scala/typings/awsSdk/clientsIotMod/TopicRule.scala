@@ -53,7 +53,8 @@ object TopicRule {
     __obj.asInstanceOf[TopicRule]
   }
   
-  extension [Self <: TopicRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicRule] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

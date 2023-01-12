@@ -27,7 +27,8 @@ object LineConnection {
     __obj.asInstanceOf[LineConnection]
   }
   
-  extension [Self <: LineConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineConnection] (val x: Self) extends AnyVal {
     
     inline def setConnectedObjectId(value: String): Self = StObject.set(x, "connectedObjectId", value.asInstanceOf[js.Any])
     

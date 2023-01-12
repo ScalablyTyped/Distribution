@@ -19,7 +19,8 @@ object GoogleCloudDatacatalogV1TableSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1TableSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1TableSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1TableSpec] (val x: Self) extends AnyVal {
     
     inline def setGroupedEntry(value: String): Self = StObject.set(x, "groupedEntry", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object StatelessHost {
     __obj.asInstanceOf[StatelessHost]
   }
   
-  extension [Self <: StatelessHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessHost] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: CallType): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

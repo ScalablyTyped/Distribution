@@ -31,7 +31,8 @@ object LoadedSourcesResponse {
     __obj.asInstanceOf[LoadedSourcesResponse]
   }
   
-  extension [Self <: LoadedSourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadedSourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Sources): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

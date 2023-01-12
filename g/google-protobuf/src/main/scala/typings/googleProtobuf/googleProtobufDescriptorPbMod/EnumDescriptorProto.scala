@@ -129,7 +129,8 @@ object EnumDescriptorProto {
         __obj.asInstanceOf[typings.googleProtobuf.googleProtobufDescriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject]
       }
       
-      extension [Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufDescriptorPbMod.EnumDescriptorProto.EnumReservedRange.AsObject] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -192,7 +193,8 @@ object EnumDescriptorProto {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

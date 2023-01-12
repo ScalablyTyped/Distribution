@@ -262,7 +262,8 @@ object HexoConfig {
     __obj.asInstanceOf[HexoConfig]
   }
   
-  extension [Self <: HexoConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexoConfig] (val x: Self) extends AnyVal {
     
     inline def setArchive_dir(value: String): Self = StObject.set(x, "archive_dir", value.asInstanceOf[js.Any])
     

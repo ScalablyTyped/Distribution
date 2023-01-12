@@ -42,7 +42,8 @@ object XDrillDownDataSupplier {
     __obj.asInstanceOf[XDrillDownDataSupplier]
   }
   
-  extension [Self <: XDrillDownDataSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrillDownDataSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetDrillDownData(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[SafeArray[Any]]): Self = StObject.set(x, "getDrillDownData", js.Any.fromFunction1(value))
   }

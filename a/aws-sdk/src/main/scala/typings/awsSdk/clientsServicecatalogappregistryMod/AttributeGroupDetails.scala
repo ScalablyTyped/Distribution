@@ -28,7 +28,8 @@ object AttributeGroupDetails {
     __obj.asInstanceOf[AttributeGroupDetails]
   }
   
-  extension [Self <: AttributeGroupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeGroupDetails] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AttributeGroupArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

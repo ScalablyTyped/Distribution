@@ -19,7 +19,8 @@ object RepoAssociationBase {
     __obj.asInstanceOf[RepoAssociationBase]
   }
   
-  extension [Self <: RepoAssociationBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoAssociationBase] (val x: Self) extends AnyVal {
     
     inline def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
     

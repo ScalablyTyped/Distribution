@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Codeblock]
     }
     
-    extension [Self <: Codeblock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codeblock] (val x: Self) extends AnyVal {
       
       inline def setCodeblock(value: String): Self = StObject.set(x, "codeblock", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

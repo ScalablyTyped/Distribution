@@ -42,7 +42,8 @@ object RegisterPackageVersionRequest {
     __obj.asInstanceOf[RegisterPackageVersionRequest]
   }
   
-  extension [Self <: RegisterPackageVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterPackageVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setMarkLatest(value: MarkLatestPatch): Self = StObject.set(x, "MarkLatest", value.asInstanceOf[js.Any])
     

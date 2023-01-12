@@ -27,7 +27,8 @@ object typesReactQueryErrorResetBoundaryMod {
       __obj.asInstanceOf[QueryErrorResetBoundaryProps]
     }
     
-    extension [Self <: QueryErrorResetBoundaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryErrorResetBoundaryProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Function1[/* value */ QueryErrorResetBoundaryValue, ReactNode]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object typesReactQueryErrorResetBoundaryMod {
       __obj.asInstanceOf[QueryErrorResetBoundaryValue]
     }
     
-    extension [Self <: QueryErrorResetBoundaryValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryErrorResetBoundaryValue] (val x: Self) extends AnyVal {
       
       inline def setClearReset(value: () => Unit): Self = StObject.set(x, "clearReset", js.Any.fromFunction0(value))
       

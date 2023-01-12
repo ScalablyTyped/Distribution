@@ -51,7 +51,8 @@ object libClassesMapiRequestMod {
       __obj.asInstanceOf[EventEmitter[T]]
     }
     
-    extension [Self <: EventEmitter[?], T](x: Self & EventEmitter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitter[?], T] (val x: Self & EventEmitter[T]) extends AnyVal {
       
       inline def setDownloadProgress(value: ProgressEvent[EventTarget]): Self = StObject.set(x, "downloadProgress", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object libClassesMapiRequestMod {
       __obj.asInstanceOf[MapiRequestOptions]
     }
     
-    extension [Self <: MapiRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapiRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object libClassesMapiRequestMod {
       __obj.asInstanceOf[PageCallbackFunction[T]]
     }
     
-    extension [Self <: PageCallbackFunction[?], T](x: Self & PageCallbackFunction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageCallbackFunction[?], T] (val x: Self & PageCallbackFunction[T]) extends AnyVal {
       
       inline def setError(value: MapiError[T]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

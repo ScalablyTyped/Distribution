@@ -16,7 +16,8 @@ object SitemapsListResponse {
     __obj.asInstanceOf[SitemapsListResponse]
   }
   
-  extension [Self <: SitemapsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SitemapsListResponse] (val x: Self) extends AnyVal {
     
     inline def setSitemap(value: js.Array[WmxSitemap]): Self = StObject.set(x, "sitemap", value.asInstanceOf[js.Any])
     

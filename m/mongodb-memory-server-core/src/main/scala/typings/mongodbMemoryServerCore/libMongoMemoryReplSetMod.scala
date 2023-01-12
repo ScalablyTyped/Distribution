@@ -300,7 +300,8 @@ object libMongoMemoryReplSetMod {
       __obj.asInstanceOf[MongoMemoryReplSetConfigSettings]
     }
     
-    extension [Self <: MongoMemoryReplSetConfigSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryReplSetConfigSettings] (val x: Self) extends AnyVal {
       
       inline def setCatchUpTimeoutMillis(value: Double): Self = StObject.set(x, "catchUpTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -349,7 +350,8 @@ object libMongoMemoryReplSetMod {
       __obj.asInstanceOf[MongoMemoryReplSetOpts]
     }
     
-    extension [Self <: MongoMemoryReplSetOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryReplSetOpts] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -425,7 +427,8 @@ object libMongoMemoryReplSetMod {
       __obj.asInstanceOf[ReplSetOpts]
     }
     
-    extension [Self <: ReplSetOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplSetOpts] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

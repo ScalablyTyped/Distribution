@@ -23,7 +23,8 @@ object FlatRadius {
     __obj.asInstanceOf[FlatRadius]
   }
   
-  extension [Self <: FlatRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatRadius] (val x: Self) extends AnyVal {
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

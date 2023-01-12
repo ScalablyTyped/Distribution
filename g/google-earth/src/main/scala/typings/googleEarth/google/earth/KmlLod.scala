@@ -99,7 +99,8 @@ object KmlLod {
     __obj.asInstanceOf[KmlLod]
   }
   
-  extension [Self <: KmlLod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLod] (val x: Self) extends AnyVal {
     
     inline def setGetMaxFadeExtent(value: () => Double): Self = StObject.set(x, "getMaxFadeExtent", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object CertAltNameEntry {
     __obj.asInstanceOf[CertAltNameEntry]
   }
   
-  extension [Self <: CertAltNameEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertAltNameEntry] (val x: Self) extends AnyVal {
     
     inline def setType(value: ExtAltNameType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

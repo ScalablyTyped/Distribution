@@ -125,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod {
       __obj.asInstanceOf[FormatConfiguration]
     }
     
-    extension [Self <: FormatConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object mod {
       __obj.asInstanceOf[FormatProps]
     }
     
-    extension [Self <: FormatProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatProps] (val x: Self) extends AnyVal {
       
       inline def setActiveAttributes(value: Record[String, String]): Self = StObject.set(x, "activeAttributes", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object mod {
       __obj.asInstanceOf[NamedFormatConfiguration]
     }
     
-    extension [Self <: NamedFormatConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedFormatConfiguration] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -285,7 +289,8 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setActiveFormats(value: js.Array[Format]): Self = StObject.set(x, "activeFormats", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object Qualifier {
     __obj.asInstanceOf[Qualifier]
   }
   
-  extension [Self <: Qualifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Qualifier] (val x: Self) extends AnyVal {
     
     inline def setCpsUri(value: String256): Self = StObject.set(x, "CpsUri", value.asInstanceOf[js.Any])
   }

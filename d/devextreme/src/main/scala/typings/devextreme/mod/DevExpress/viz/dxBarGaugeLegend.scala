@@ -53,7 +53,8 @@ object dxBarGaugeLegend {
     __obj.asInstanceOf[dxBarGaugeLegend]
   }
   
-  extension [Self <: dxBarGaugeLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBarGaugeLegend] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* arg */ Item => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

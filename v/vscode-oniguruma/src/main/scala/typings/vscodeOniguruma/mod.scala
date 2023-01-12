@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[ICommonOptions]
     }
     
-    extension [Self <: ICommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommonOptions] (val x: Self) extends AnyVal {
       
       inline def setPrint(value: /* str */ String => Unit): Self = StObject.set(x, "print", js.Any.fromFunction1(value))
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[IDataOptions]
     }
     
-    extension [Self <: IDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDataOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer | Response): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -145,7 +147,8 @@ object mod {
       __obj.asInstanceOf[IInstantiatorOptions]
     }
     
-    extension [Self <: IInstantiatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInstantiatorOptions] (val x: Self) extends AnyVal {
       
       inline def setInstantiator(
         value: /* importObject */ js.UndefOr[Record[String, Record[String, ImportValue]]] => js.Promise[WebAssemblyInstantiatedSource]
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[IOnigCaptureIndex]
     }
     
-    extension [Self <: IOnigCaptureIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnigCaptureIndex] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object mod {
       __obj.asInstanceOf[IOnigMatch]
     }
     
-    extension [Self <: IOnigMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnigMatch] (val x: Self) extends AnyVal {
       
       inline def setCaptureIndices(value: js.Array[IOnigCaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
       

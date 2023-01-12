@@ -23,7 +23,8 @@ object ListNotebookExecutionsOutput {
     __obj.asInstanceOf[ListNotebookExecutionsOutput]
   }
   
-  extension [Self <: ListNotebookExecutionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotebookExecutionsOutput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

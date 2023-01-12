@@ -18,7 +18,8 @@ object ZMember {
     __obj.asInstanceOf[ZMember]
   }
   
-  extension [Self <: ZMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZMember] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

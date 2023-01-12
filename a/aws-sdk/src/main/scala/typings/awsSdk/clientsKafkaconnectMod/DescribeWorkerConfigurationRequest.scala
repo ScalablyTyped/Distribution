@@ -18,7 +18,8 @@ object DescribeWorkerConfigurationRequest {
     __obj.asInstanceOf[DescribeWorkerConfigurationRequest]
   }
   
-  extension [Self <: DescribeWorkerConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkerConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkerConfigurationArn(value: string): Self = StObject.set(x, "workerConfigurationArn", value.asInstanceOf[js.Any])
   }

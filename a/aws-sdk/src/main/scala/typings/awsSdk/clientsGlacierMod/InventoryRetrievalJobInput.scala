@@ -33,7 +33,8 @@ object InventoryRetrievalJobInput {
     __obj.asInstanceOf[InventoryRetrievalJobInput]
   }
   
-  extension [Self <: InventoryRetrievalJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryRetrievalJobInput] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: String): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     

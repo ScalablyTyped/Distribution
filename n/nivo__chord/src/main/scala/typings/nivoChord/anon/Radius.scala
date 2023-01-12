@@ -34,7 +34,8 @@ object Radius {
     __obj.asInstanceOf[Radius]
   }
   
-  extension [Self <: Radius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radius] (val x: Self) extends AnyVal {
     
     inline def setArcGenerator(value: Any): Self = StObject.set(x, "arcGenerator", value.asInstanceOf[js.Any])
     

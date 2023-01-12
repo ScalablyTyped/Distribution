@@ -72,7 +72,8 @@ object XArrayTypeDescription {
     __obj.asInstanceOf[XArrayTypeDescription]
   }
   
-  extension [Self <: XArrayTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XArrayTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: SafeArray[Double]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

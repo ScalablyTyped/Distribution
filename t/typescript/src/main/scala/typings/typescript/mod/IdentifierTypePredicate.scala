@@ -32,7 +32,8 @@ object IdentifierTypePredicate {
     __obj.asInstanceOf[IdentifierTypePredicate]
   }
   
-  extension [Self <: IdentifierTypePredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifierTypePredicate] (val x: Self) extends AnyVal {
     
     inline def setKind(value: typings.typescript.mod.TypePredicateKind.Identifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

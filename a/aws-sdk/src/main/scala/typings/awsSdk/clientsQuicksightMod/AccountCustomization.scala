@@ -23,7 +23,8 @@ object AccountCustomization {
     __obj.asInstanceOf[AccountCustomization]
   }
   
-  extension [Self <: AccountCustomization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountCustomization] (val x: Self) extends AnyVal {
     
     inline def setDefaultEmailCustomizationTemplate(value: Arn): Self = StObject.set(x, "DefaultEmailCustomizationTemplate", value.asInstanceOf[js.Any])
     

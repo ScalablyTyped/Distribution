@@ -1775,7 +1775,8 @@ object sapUiUnifiedCalendarRowMod {
       __obj.asInstanceOf[CalendarRowSettings]
     }
     
-    extension [Self <: CalendarRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarRowSettings] (val x: Self) extends AnyVal {
       
       inline def setAppointmentHeight(
         value: CalendarAppointmentHeight | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarAppointmentHeight * / any */ String) | PropertyBindingInfo

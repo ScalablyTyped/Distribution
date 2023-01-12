@@ -33,7 +33,8 @@ object FieldHelpProps {
     __obj.asInstanceOf[FieldHelpProps[T, F]]
   }
   
-  extension [Self <: FieldHelpProps[?, ?], T, F](x: Self & (FieldHelpProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldHelpProps[?, ?], T, F] (val x: Self & (FieldHelpProps[T, F])) extends AnyVal {
     
     inline def setHasErrors(value: Boolean): Self = StObject.set(x, "hasErrors", value.asInstanceOf[js.Any])
     

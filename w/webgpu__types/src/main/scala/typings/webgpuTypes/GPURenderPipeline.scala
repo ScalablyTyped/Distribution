@@ -23,7 +23,8 @@ object GPURenderPipeline {
     __obj.asInstanceOf[GPURenderPipeline]
   }
   
-  extension [Self <: GPURenderPipeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPipeline] (val x: Self) extends AnyVal {
     
     inline def set__brand(value: typings.webgpuTypes.webgpuTypesStrings.GPURenderPipeline): Self = StObject.set(x, "__brand", value.asInstanceOf[js.Any])
   }

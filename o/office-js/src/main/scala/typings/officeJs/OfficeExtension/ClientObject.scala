@@ -27,7 +27,8 @@ object ClientObject {
     __obj.asInstanceOf[ClientObject]
   }
   
-  extension [Self <: ClientObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientObject] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ClientRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

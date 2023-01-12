@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsRectangleLargeMod extends Shortcut {
       __obj.asInstanceOf[RectangleLargeProps]
     }
     
-    extension [Self <: RectangleLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectangleLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

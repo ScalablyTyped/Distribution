@@ -18,7 +18,8 @@ object GetSearchSuggestionsResponse {
     __obj.asInstanceOf[GetSearchSuggestionsResponse]
   }
   
-  extension [Self <: GetSearchSuggestionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSearchSuggestionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPropertyNameSuggestions(value: PropertyNameSuggestionList): Self = StObject.set(x, "PropertyNameSuggestions", value.asInstanceOf[js.Any])
     

@@ -179,7 +179,8 @@ object PowerForms {
     __obj.asInstanceOf[PowerForms]
   }
   
-  extension [Self <: PowerForms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerForms] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: String): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

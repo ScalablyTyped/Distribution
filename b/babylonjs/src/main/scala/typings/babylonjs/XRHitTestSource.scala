@@ -15,7 +15,8 @@ object XRHitTestSource {
     __obj.asInstanceOf[XRHitTestSource]
   }
   
-  extension [Self <: XRHitTestSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRHitTestSource] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

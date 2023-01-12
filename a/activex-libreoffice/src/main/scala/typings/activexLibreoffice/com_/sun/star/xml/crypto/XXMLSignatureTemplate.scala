@@ -61,7 +61,8 @@ object XXMLSignatureTemplate {
     __obj.asInstanceOf[XXMLSignatureTemplate]
   }
   
-  extension [Self <: XXMLSignatureTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XXMLSignatureTemplate] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: XUriBinding): Self = StObject.set(x, "Binding", value.asInstanceOf[js.Any])
     

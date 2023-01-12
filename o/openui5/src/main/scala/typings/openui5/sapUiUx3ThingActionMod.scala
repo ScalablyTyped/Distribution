@@ -301,7 +301,8 @@ object sapUiUx3ThingActionMod {
       __obj.asInstanceOf[ThingActionSettings]
     }
     
-    extension [Self <: ThingActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThingActionSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

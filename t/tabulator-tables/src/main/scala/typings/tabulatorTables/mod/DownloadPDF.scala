@@ -30,7 +30,8 @@ object DownloadPDF {
     __obj.asInstanceOf[DownloadPDF]
   }
   
-  extension [Self <: DownloadPDF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadPDF] (val x: Self) extends AnyVal {
     
     inline def setAutoTable(value: js.Object | (js.Function1[/* doc */ Any, Any])): Self = StObject.set(x, "autoTable", value.asInstanceOf[js.Any])
     

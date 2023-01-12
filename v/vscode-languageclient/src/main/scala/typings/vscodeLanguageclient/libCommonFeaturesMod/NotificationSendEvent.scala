@@ -22,7 +22,8 @@ object NotificationSendEvent {
     __obj.asInstanceOf[NotificationSendEvent[E, P]]
   }
   
-  extension [Self <: NotificationSendEvent[?, ?], E, P](x: Self & (NotificationSendEvent[E, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSendEvent[?, ?], E, P] (val x: Self & (NotificationSendEvent[E, P])) extends AnyVal {
     
     inline def setOriginal(value: E): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     

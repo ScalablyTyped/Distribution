@@ -23,7 +23,8 @@ object CommentStatement {
     __obj.asInstanceOf[CommentStatement]
   }
   
-  extension [Self <: CommentStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentStatement] (val x: Self) extends AnyVal {
     
     inline def setStrip(value: StripFlags): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object RankEvalRankEvalMetricExpectedReciprocalRank {
     __obj.asInstanceOf[RankEvalRankEvalMetricExpectedReciprocalRank]
   }
   
-  extension [Self <: RankEvalRankEvalMetricExpectedReciprocalRank](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalMetricExpectedReciprocalRank] (val x: Self) extends AnyVal {
     
     inline def setMaximum_relevance(value: integer): Self = StObject.set(x, "maximum_relevance", value.asInstanceOf[js.Any])
   }

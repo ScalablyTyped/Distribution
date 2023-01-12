@@ -22,7 +22,8 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  extension [Self <: Resources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     inline def setRegions(value: js.Array[String]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     

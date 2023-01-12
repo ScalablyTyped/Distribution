@@ -28,7 +28,8 @@ object SetTimerAction {
     __obj.asInstanceOf[SetTimerAction]
   }
   
-  extension [Self <: SetTimerAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTimerAction] (val x: Self) extends AnyVal {
     
     inline def setDurationExpression(value: VariableValue): Self = StObject.set(x, "durationExpression", value.asInstanceOf[js.Any])
     

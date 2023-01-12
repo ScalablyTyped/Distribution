@@ -38,7 +38,8 @@ object Textures {
       __obj.asInstanceOf[PixelConfig]
     }
     
-    extension [Self <: PixelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixelConfig] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object Textures {
       __obj.asInstanceOf[SpriteSheetConfig]
     }
     
-    extension [Self <: SpriteSheetConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteSheetConfig] (val x: Self) extends AnyVal {
       
       inline def setEndFrame(value: Double): Self = StObject.set(x, "endFrame", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object Textures {
       __obj.asInstanceOf[SpriteSheetFromAtlasConfig]
     }
     
-    extension [Self <: SpriteSheetFromAtlasConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteSheetFromAtlasConfig] (val x: Self) extends AnyVal {
       
       inline def setAtlas(value: String): Self = StObject.set(x, "atlas", value.asInstanceOf[js.Any])
       

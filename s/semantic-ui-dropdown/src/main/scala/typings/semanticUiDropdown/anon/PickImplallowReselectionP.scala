@@ -174,7 +174,8 @@ object PickImplallowReselectionP {
     __obj.asInstanceOf[PickImplallowReselectionP]
   }
   
-  extension [Self <: PickImplallowReselectionP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplallowReselectionP] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

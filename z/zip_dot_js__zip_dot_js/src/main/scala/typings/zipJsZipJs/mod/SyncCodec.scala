@@ -21,7 +21,8 @@ object SyncCodec {
     __obj.asInstanceOf[SyncCodec]
   }
   
-  extension [Self <: SyncCodec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncCodec] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
   }

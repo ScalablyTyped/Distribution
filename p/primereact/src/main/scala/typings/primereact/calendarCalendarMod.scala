@@ -77,7 +77,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarChangeParams]
     }
     
-    extension [Self <: CalendarChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarChangeTargetOptions]
     }
     
-    extension [Self <: CalendarChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarDateTemplateParams]
     }
     
-    extension [Self <: CalendarDateTemplateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDateTemplateParams] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarMonthChangeParams]
     }
     
-    extension [Self <: CalendarMonthChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarMonthChangeParams] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarNavigatorTemplateParams]
     }
     
-    extension [Self <: CalendarNavigatorTemplateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarNavigatorTemplateParams] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -448,7 +453,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarProps]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: CalendarAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
@@ -821,7 +827,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarSelectParams]
     }
     
-    extension [Self <: CalendarSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarSelectParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -844,7 +851,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarViewChangeParams]
     }
     
-    extension [Self <: CalendarViewChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarViewChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -867,7 +875,8 @@ object calendarCalendarMod {
       __obj.asInstanceOf[CalendarVisibleChangeParams]
     }
     
-    extension [Self <: CalendarVisibleChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarVisibleChangeParams] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

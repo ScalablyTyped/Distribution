@@ -42,7 +42,8 @@ object libClassdefInterceptorConfigurationMod {
       __obj.asInstanceOf[InterceptorConfiguration]
     }
     
-    extension [Self <: InterceptorConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptorConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAfterScriptKeys(value: js.Array[Any]): Self = StObject.set(x, "afterScriptKeys", value.asInstanceOf[js.Any])
       

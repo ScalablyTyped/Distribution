@@ -28,7 +28,8 @@ object GetShareInfoRes {
     __obj.asInstanceOf[GetShareInfoRes]
   }
   
-  extension [Self <: GetShareInfoRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetShareInfoRes] (val x: Self) extends AnyVal {
     
     inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     

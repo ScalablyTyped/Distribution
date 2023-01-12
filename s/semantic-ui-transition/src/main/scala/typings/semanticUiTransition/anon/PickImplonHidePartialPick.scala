@@ -64,7 +64,8 @@ object PickImplonHidePartialPick {
     __obj.asInstanceOf[PickImplonHidePartialPick]
   }
   
-  extension [Self <: PickImplonHidePartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplonHidePartialPick] (val x: Self) extends AnyVal {
     
     inline def setAllowRepeats(value: Boolean): Self = StObject.set(x, "allowRepeats", value.asInstanceOf[js.Any])
     

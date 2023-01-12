@@ -33,7 +33,8 @@ object SearchPlaceIndexForPositionRequest {
     __obj.asInstanceOf[SearchPlaceIndexForPositionRequest]
   }
   
-  extension [Self <: SearchPlaceIndexForPositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPlaceIndexForPositionRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: ResourceName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

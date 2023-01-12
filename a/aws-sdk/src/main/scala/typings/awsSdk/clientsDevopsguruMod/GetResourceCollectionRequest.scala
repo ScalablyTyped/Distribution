@@ -23,7 +23,8 @@ object GetResourceCollectionRequest {
     __obj.asInstanceOf[GetResourceCollectionRequest]
   }
   
-  extension [Self <: GetResourceCollectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceCollectionRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: UuidNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

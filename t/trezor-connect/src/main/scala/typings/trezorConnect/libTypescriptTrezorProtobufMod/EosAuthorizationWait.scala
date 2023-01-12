@@ -17,7 +17,8 @@ object EosAuthorizationWait {
     __obj.asInstanceOf[EosAuthorizationWait]
   }
   
-  extension [Self <: EosAuthorizationWait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosAuthorizationWait] (val x: Self) extends AnyVal {
     
     inline def setWait_sec(value: Double): Self = StObject.set(x, "wait_sec", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object AssertDetails {
     __obj.asInstanceOf[AssertDetails]
   }
   
-  extension [Self <: AssertDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertDetails] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

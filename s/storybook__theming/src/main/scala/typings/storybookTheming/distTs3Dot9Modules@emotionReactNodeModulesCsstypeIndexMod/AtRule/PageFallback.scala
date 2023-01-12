@@ -21,7 +21,8 @@ object PageFallback {
     __obj.asInstanceOf[PageFallback[TLength, TTime]]
   }
   
-  extension [Self <: PageFallback[?, ?], TLength, TTime](x: Self & (PageFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageFallback[?, ?], TLength, TTime] (val x: Self & (PageFallback[TLength, TTime])) extends AnyVal {
     
     inline def setBleed(value: Bleed[TLength] | js.Array[NonNullable[js.UndefOr[Bleed[TLength]]]]): Self = StObject.set(x, "bleed", value.asInstanceOf[js.Any])
     

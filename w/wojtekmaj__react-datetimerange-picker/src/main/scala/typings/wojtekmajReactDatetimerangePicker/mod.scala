@@ -154,7 +154,8 @@ object mod {
       __obj.asInstanceOf[DateTimeRangePickerCalendarProps]
     }
     
-    extension [Self <: DateTimeRangePickerCalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeRangePickerCalendarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveStartDate(value: js.Date): Self = StObject.set(x, "activeStartDate", value.asInstanceOf[js.Any])
       
@@ -481,7 +482,8 @@ object mod {
       __obj.asInstanceOf[DateTimeRangePickerProps]
     }
     
-    extension [Self <: DateTimeRangePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeRangePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])
       

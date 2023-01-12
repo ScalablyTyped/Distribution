@@ -21,7 +21,8 @@ object SceneLayerQueryCachedStatisticsOptions {
     __obj.asInstanceOf[SceneLayerQueryCachedStatisticsOptions]
   }
   
-  extension [Self <: SceneLayerQueryCachedStatisticsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerQueryCachedStatisticsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

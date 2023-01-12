@@ -26,7 +26,8 @@ object CustomEvent {
     __obj.asInstanceOf[CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset]]
   }
   
-  extension [Self <: CustomEvent[?, ?, ?, ?], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */](x: Self & (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEvent[?, ?, ?, ?], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     inline def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object MlExplainDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlExplainDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlExplainDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlExplainDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_lazy_start(value: Boolean): Self = StObject.set(x, "allow_lazy_start", value.asInstanceOf[js.Any])
     

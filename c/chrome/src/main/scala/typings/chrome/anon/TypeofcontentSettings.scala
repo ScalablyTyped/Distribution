@@ -66,7 +66,8 @@ object TypeofcontentSettings {
     __obj.asInstanceOf[TypeofcontentSettings]
   }
   
-  extension [Self <: TypeofcontentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofcontentSettings] (val x: Self) extends AnyVal {
     
     inline def setAutomaticDownloads(value: MultipleAutomaticDownloadsContentSetting): Self = StObject.set(x, "automaticDownloads", value.asInstanceOf[js.Any])
     

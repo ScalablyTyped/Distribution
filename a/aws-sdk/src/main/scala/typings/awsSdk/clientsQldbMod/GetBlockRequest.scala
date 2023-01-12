@@ -28,7 +28,8 @@ object GetBlockRequest {
     __obj.asInstanceOf[GetBlockRequest]
   }
   
-  extension [Self <: GetBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockAddress(value: ValueHolder): Self = StObject.set(x, "BlockAddress", value.asInstanceOf[js.Any])
     

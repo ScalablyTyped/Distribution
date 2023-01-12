@@ -22,7 +22,8 @@ object GoogleAppengineV1betaLocationMetadata {
     __obj.asInstanceOf[GoogleAppengineV1betaLocationMetadata]
   }
   
-  extension [Self <: GoogleAppengineV1betaLocationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppengineV1betaLocationMetadata] (val x: Self) extends AnyVal {
     
     inline def setFlexibleEnvironmentAvailable(value: Boolean): Self = StObject.set(x, "flexibleEnvironmentAvailable", value.asInstanceOf[js.Any])
     

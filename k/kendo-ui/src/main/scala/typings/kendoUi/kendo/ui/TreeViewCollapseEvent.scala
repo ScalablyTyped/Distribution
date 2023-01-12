@@ -18,7 +18,8 @@ object TreeViewCollapseEvent {
     __obj.asInstanceOf[TreeViewCollapseEvent]
   }
   
-  extension [Self <: TreeViewCollapseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewCollapseEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: Element): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

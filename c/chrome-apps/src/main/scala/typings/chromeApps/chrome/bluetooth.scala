@@ -49,7 +49,8 @@ object bluetooth {
       __obj.asInstanceOf[AdapterState]
     }
     
-    extension [Self <: AdapterState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdapterState] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object bluetooth {
       __obj.asInstanceOf[BluetoothEvent[T]]
     }
     
-    extension [Self <: BluetoothEvent[?], T](x: Self & BluetoothEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BluetoothEvent[?], T] (val x: Self & BluetoothEvent[T]) extends AnyVal {
       
       inline def setAddListener(value: js.Function1[/* event */ T, Unit] => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     }
@@ -152,7 +154,8 @@ object bluetooth {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object bluetooth {
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    extension [Self <: DeviceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: DeviceFilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       

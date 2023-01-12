@@ -30,7 +30,8 @@ object Pickanyscaleactivex1x2y1y {
     __obj.asInstanceOf[Pickanyscaleactivex1x2y1y]
   }
   
-  extension [Self <: Pickanyscaleactivex1x2y1y](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pickanyscaleactivex1x2y1y] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Any): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

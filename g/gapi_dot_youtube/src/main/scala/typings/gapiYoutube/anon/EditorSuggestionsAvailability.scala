@@ -59,7 +59,8 @@ object EditorSuggestionsAvailability {
     __obj.asInstanceOf[EditorSuggestionsAvailability]
   }
   
-  extension [Self <: EditorSuggestionsAvailability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorSuggestionsAvailability] (val x: Self) extends AnyVal {
     
     inline def setEditorSuggestionsAvailability(value: String): Self = StObject.set(x, "editorSuggestionsAvailability", value.asInstanceOf[js.Any])
     

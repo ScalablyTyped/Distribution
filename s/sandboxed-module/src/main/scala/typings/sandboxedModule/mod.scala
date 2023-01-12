@@ -160,7 +160,8 @@ object mod {
       __obj.asInstanceOf[SandboxOptions]
     }
     
-    extension [Self <: SandboxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SandboxOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobals(value: js.Object): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object mod {
       __obj.asInstanceOf[SandboxedModule]
     }
     
-    extension [Self <: SandboxedModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SandboxedModule] (val x: Self) extends AnyVal {
       
       inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Lookup_]
     }
     
-    extension [Self <: Lookup_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lookup_] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       

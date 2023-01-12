@@ -31,7 +31,8 @@ object InstantiateWorkflowTemplateRequest {
     __obj.asInstanceOf[InstantiateWorkflowTemplateRequest]
   }
   
-  extension [Self <: InstantiateWorkflowTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstantiateWorkflowTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

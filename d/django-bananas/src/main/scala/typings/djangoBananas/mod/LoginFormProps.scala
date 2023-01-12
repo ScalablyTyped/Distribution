@@ -15,7 +15,8 @@ object LoginFormProps {
     __obj.asInstanceOf[LoginFormProps]
   }
   
-  extension [Self <: LoginFormProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginFormProps] (val x: Self) extends AnyVal {
     
     inline def setLogger(value: Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
   }

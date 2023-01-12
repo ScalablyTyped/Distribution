@@ -63,7 +63,8 @@ object IECapabilities {
     __obj.asInstanceOf[IECapabilities]
   }
   
-  extension [Self <: IECapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IECapabilities] (val x: Self) extends AnyVal {
     
     inline def setBrowserAttachTimeout(value: Double): Self = StObject.set(x, "browserAttachTimeout", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object RegisterTargetWithMaintenanceWindowRequest {
     __obj.asInstanceOf[RegisterTargetWithMaintenanceWindowRequest]
   }
   
-  extension [Self <: RegisterTargetWithMaintenanceWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterTargetWithMaintenanceWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

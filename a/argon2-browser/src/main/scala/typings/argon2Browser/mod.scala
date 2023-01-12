@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Argon2BrowserHashOptions]
     }
     
-    extension [Self <: Argon2BrowserHashOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argon2BrowserHashOptions] (val x: Self) extends AnyVal {
       
       inline def setAd(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Argon2BrowserHashResult]
     }
     
-    extension [Self <: Argon2BrowserHashResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argon2BrowserHashResult] (val x: Self) extends AnyVal {
       
       inline def setEncoded(value: String): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Argon2Error]
     }
     
-    extension [Self <: Argon2Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argon2Error] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod {
       __obj.asInstanceOf[Argon2VerifyOptions]
     }
     
-    extension [Self <: Argon2VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argon2VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAd(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ad", value.asInstanceOf[js.Any])
       

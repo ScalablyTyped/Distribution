@@ -18,7 +18,8 @@ object NotebookCell {
     __obj.asInstanceOf[NotebookCell]
   }
   
-  extension [Self <: NotebookCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookCell] (val x: Self) extends AnyVal {
     
     inline def setContents(value: ICellContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

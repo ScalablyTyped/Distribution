@@ -23,7 +23,8 @@ object DescribeAddonVersionsResponse {
     __obj.asInstanceOf[DescribeAddonVersionsResponse]
   }
   
-  extension [Self <: DescribeAddonVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAddonVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAddons(value: Addons): Self = StObject.set(x, "addons", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setActual(value: js.Error): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     }

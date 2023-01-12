@@ -33,7 +33,8 @@ object GetTraceSummariesResult {
     __obj.asInstanceOf[GetTraceSummariesResult]
   }
   
-  extension [Self <: GetTraceSummariesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTraceSummariesResult] (val x: Self) extends AnyVal {
     
     inline def setApproximateTime(value: js.Date): Self = StObject.set(x, "ApproximateTime", value.asInstanceOf[js.Any])
     

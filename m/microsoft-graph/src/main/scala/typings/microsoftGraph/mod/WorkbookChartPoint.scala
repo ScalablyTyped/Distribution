@@ -21,7 +21,8 @@ object WorkbookChartPoint {
     __obj.asInstanceOf[WorkbookChartPoint]
   }
   
-  extension [Self <: WorkbookChartPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartPoint] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: NullableOption[WorkbookChartPointFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

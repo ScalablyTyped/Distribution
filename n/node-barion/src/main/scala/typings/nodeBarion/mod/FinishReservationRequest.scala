@@ -19,7 +19,8 @@ object FinishReservationRequest {
     __obj.asInstanceOf[FinishReservationRequest]
   }
   
-  extension [Self <: FinishReservationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishReservationRequest] (val x: Self) extends AnyVal {
     
     inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
     

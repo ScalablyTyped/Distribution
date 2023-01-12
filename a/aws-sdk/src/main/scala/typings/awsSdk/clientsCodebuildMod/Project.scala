@@ -150,7 +150,8 @@ object Project {
     __obj.asInstanceOf[Project]
   }
   
-  extension [Self <: Project](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

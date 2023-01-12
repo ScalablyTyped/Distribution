@@ -23,7 +23,8 @@ object MouthOpen {
     __obj.asInstanceOf[MouthOpen]
   }
   
-  extension [Self <: MouthOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouthOpen] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

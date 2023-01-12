@@ -42,7 +42,8 @@ object StreamPipeOptions {
     __obj.asInstanceOf[StreamPipeOptions]
   }
   
-  extension [Self <: StreamPipeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamPipeOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventAbort(value: scala.Boolean): Self = StObject.set(x, "preventAbort", value.asInstanceOf[js.Any])
     

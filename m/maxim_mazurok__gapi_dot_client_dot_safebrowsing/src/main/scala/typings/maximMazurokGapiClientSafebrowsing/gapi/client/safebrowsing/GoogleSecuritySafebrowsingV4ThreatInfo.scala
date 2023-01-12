@@ -25,7 +25,8 @@ object GoogleSecuritySafebrowsingV4ThreatInfo {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatInfo]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatInfo] (val x: Self) extends AnyVal {
     
     inline def setPlatformTypes(value: js.Array[String]): Self = StObject.set(x, "platformTypes", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object GoogleCloudMlV1ReplicaConfig {
     __obj.asInstanceOf[GoogleCloudMlV1ReplicaConfig]
   }
   
-  extension [Self <: GoogleCloudMlV1ReplicaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ReplicaConfig] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorConfig(value: GoogleCloudMlV1AcceleratorConfig): Self = StObject.set(x, "acceleratorConfig", value.asInstanceOf[js.Any])
     

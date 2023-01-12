@@ -269,7 +269,8 @@ object libBundledMod {
       __obj.asInstanceOf[BaseNode]
     }
     
-    extension [Self <: BaseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
       
       inline def set_children(value: js.Array[Node]): Self = StObject.set(x, "_children", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object libBundledMod {
       __obj.asInstanceOf[CommandSummary]
     }
     
-    extension [Self <: CommandSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandSummary] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -367,7 +369,8 @@ object libBundledMod {
       __obj.asInstanceOf[NonTextNode]
     }
     
-    extension [Self <: NonTextNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonTextNode] (val x: Self) extends AnyVal {
       
       inline def set_attrs(value: Dictkey): Self = StObject.set(x, "_attrs", value.asInstanceOf[js.Any])
       
@@ -390,7 +393,8 @@ object libBundledMod {
       __obj.asInstanceOf[QualifiedAttribute]
     }
     
-    extension [Self <: QualifiedAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedAttribute] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -413,7 +417,8 @@ object libBundledMod {
       __obj.asInstanceOf[QualifiedName]
     }
     
-    extension [Self <: QualifiedName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QualifiedName] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -451,7 +456,8 @@ object libBundledMod {
       __obj.asInstanceOf[TextNode]
     }
     
-    extension [Self <: TextNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
       
       inline def set_fTextNode(value: `true`): Self = StObject.set(x, "_fTextNode", value.asInstanceOf[js.Any])
       
@@ -546,7 +552,8 @@ object libBundledMod {
       __obj.asInstanceOf[UserOptions]
     }
     
-    extension [Self <: UserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
       

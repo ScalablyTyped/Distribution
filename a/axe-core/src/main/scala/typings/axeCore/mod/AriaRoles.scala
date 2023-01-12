@@ -28,7 +28,8 @@ object AriaRoles {
     __obj.asInstanceOf[AriaRoles]
   }
   
-  extension [Self <: AriaRoles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaRoles] (val x: Self) extends AnyVal {
     
     inline def setAllowedAttrs(value: js.Array[String]): Self = StObject.set(x, "allowedAttrs", value.asInstanceOf[js.Any])
     

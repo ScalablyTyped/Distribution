@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[SemanticReleaseError]
     }
     
-    extension [Self <: SemanticReleaseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticReleaseError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

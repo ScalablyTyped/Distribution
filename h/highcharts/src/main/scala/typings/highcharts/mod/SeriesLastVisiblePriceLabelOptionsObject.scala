@@ -72,7 +72,8 @@ object SeriesLastVisiblePriceLabelOptionsObject {
     __obj.asInstanceOf[SeriesLastVisiblePriceLabelOptionsObject]
   }
   
-  extension [Self <: SeriesLastVisiblePriceLabelOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesLastVisiblePriceLabelOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

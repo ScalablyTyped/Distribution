@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[AbideOptions]
     }
     
-    extension [Self <: AbideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbideOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug_lang(value: String): Self = StObject.set(x, "debug_lang", value.asInstanceOf[js.Any])
       

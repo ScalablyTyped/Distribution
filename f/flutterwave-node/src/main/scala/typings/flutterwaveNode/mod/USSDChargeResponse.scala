@@ -16,7 +16,8 @@ object USSDChargeResponse {
     __obj.asInstanceOf[USSDChargeResponse]
   }
   
-  extension [Self <: USSDChargeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USSDChargeResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Responsemessage): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

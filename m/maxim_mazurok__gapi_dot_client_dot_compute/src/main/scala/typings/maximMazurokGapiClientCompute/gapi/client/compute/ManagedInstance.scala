@@ -49,7 +49,8 @@ object ManagedInstance {
     __obj.asInstanceOf[ManagedInstance]
   }
   
-  extension [Self <: ManagedInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedInstance] (val x: Self) extends AnyVal {
     
     inline def setCurrentAction(value: String): Self = StObject.set(x, "currentAction", value.asInstanceOf[js.Any])
     

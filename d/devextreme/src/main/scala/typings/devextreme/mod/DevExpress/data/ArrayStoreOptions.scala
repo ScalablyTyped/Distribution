@@ -20,7 +20,8 @@ object ArrayStoreOptions {
     __obj.asInstanceOf[ArrayStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: ArrayStoreOptions[?, ?], TItem, TKey](x: Self & (ArrayStoreOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayStoreOptions[?, ?], TItem, TKey] (val x: Self & (ArrayStoreOptions[TItem, TKey])) extends AnyVal {
     
     inline def setData(value: js.Array[TItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

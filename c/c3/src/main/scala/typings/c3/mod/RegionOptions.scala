@@ -67,7 +67,8 @@ object RegionOptions {
     __obj.asInstanceOf[RegionOptions]
   }
   
-  extension [Self <: RegionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: AxisName): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

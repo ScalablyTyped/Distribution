@@ -48,7 +48,8 @@ object AwsEc2NetworkInterfaceAttachment {
     __obj.asInstanceOf[AwsEc2NetworkInterfaceAttachment]
   }
   
-  extension [Self <: AwsEc2NetworkInterfaceAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkInterfaceAttachment] (val x: Self) extends AnyVal {
     
     inline def setAttachTime(value: NonEmptyString): Self = StObject.set(x, "AttachTime", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AgreementFile {
     __obj.asInstanceOf[AgreementFile]
   }
   
-  extension [Self <: AgreementFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgreementFile] (val x: Self) extends AnyVal {
     
     inline def setLocalizations(value: NullableOption[js.Array[AgreementFileLocalization]]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     

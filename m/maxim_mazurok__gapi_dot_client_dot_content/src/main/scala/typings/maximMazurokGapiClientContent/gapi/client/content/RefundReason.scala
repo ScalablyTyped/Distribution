@@ -27,7 +27,8 @@ object RefundReason {
     __obj.asInstanceOf[RefundReason]
   }
   
-  extension [Self <: RefundReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefundReason] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

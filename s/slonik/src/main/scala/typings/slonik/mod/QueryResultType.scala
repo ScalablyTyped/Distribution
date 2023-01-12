@@ -38,7 +38,8 @@ object QueryResultType {
     __obj.asInstanceOf[QueryResultType[T]]
   }
   
-  extension [Self <: QueryResultType[?], T](x: Self & QueryResultType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultType[?], T] (val x: Self & QueryResultType[T]) extends AnyVal {
     
     inline def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

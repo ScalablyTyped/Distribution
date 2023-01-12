@@ -30,7 +30,8 @@ object QueryableString {
     __obj.asInstanceOf[QueryableString]
   }
   
-  extension [Self <: QueryableString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryableString] (val x: Self) extends AnyVal {
     
     inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     

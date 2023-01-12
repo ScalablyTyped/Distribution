@@ -15,7 +15,8 @@ object IRateLimiterQueueOpts {
     __obj.asInstanceOf[IRateLimiterQueueOpts]
   }
   
-  extension [Self <: IRateLimiterQueueOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterQueueOpts] (val x: Self) extends AnyVal {
     
     inline def setMaxQueueSize(value: Double): Self = StObject.set(x, "maxQueueSize", value.asInstanceOf[js.Any])
     

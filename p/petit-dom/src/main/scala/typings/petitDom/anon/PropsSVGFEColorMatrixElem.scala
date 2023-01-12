@@ -662,7 +662,8 @@ object PropsSVGFEColorMatrixElem {
     __obj.asInstanceOf[PropsSVGFEColorMatrixElem]
   }
   
-  extension [Self <: PropsSVGFEColorMatrixElem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEColorMatrixElem] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IViewportLike {
     __obj.asInstanceOf[IViewportLike]
   }
   
-  extension [Self <: IViewportLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewportLike] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: float): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IKEKIdentifier {
     __obj.asInstanceOf[IKEKIdentifier]
   }
   
-  extension [Self <: IKEKIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKEKIdentifier] (val x: Self) extends AnyVal {
     
     inline def setDate(value: GeneralizedTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

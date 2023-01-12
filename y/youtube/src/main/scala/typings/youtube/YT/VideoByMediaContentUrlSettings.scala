@@ -20,7 +20,8 @@ object VideoByMediaContentUrlSettings {
     __obj.asInstanceOf[VideoByMediaContentUrlSettings]
   }
   
-  extension [Self <: VideoByMediaContentUrlSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoByMediaContentUrlSettings] (val x: Self) extends AnyVal {
     
     inline def setMediaContentUrl(value: String): Self = StObject.set(x, "mediaContentUrl", value.asInstanceOf[js.Any])
   }

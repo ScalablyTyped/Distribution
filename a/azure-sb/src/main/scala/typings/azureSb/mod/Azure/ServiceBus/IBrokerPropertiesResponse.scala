@@ -21,7 +21,8 @@ object IBrokerPropertiesResponse {
     __obj.asInstanceOf[IBrokerPropertiesResponse]
   }
   
-  extension [Self <: IBrokerPropertiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBrokerPropertiesResponse] (val x: Self) extends AnyVal {
     
     inline def setDeliveryCount(value: Double): Self = StObject.set(x, "DeliveryCount", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object srcPerformCompileMod {
       __obj.asInstanceOf[ConfigurationHost]
     }
     
-    extension [Self <: ConfigurationHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigurationHost] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: /* file */ PathString => PathString): Self = StObject.set(x, "dirname", js.Any.fromFunction1(value))
       
@@ -139,7 +140,8 @@ object srcPerformCompileMod {
       __obj.asInstanceOf[ParsedConfiguration]
     }
     
-    extension [Self <: ParsedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEmitFlags(value: EmitFlags): Self = StObject.set(x, "emitFlags", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object srcPerformCompileMod {
       __obj.asInstanceOf[PerformCompilationResult]
     }
     
-    extension [Self <: PerformCompilationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformCompilationResult] (val x: Self) extends AnyVal {
       
       inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
       

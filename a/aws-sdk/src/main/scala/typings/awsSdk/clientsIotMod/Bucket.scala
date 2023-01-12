@@ -23,7 +23,8 @@ object Bucket {
     __obj.asInstanceOf[Bucket]
   }
   
-  extension [Self <: Bucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Count): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

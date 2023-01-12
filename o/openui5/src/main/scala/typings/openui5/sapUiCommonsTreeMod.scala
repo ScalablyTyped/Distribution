@@ -766,7 +766,8 @@ object sapUiCommonsTreeMod {
       __obj.asInstanceOf[TreeSettings]
     }
     
-    extension [Self <: TreeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

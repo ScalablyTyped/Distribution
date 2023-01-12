@@ -37,7 +37,8 @@ object Forward {
     __obj.asInstanceOf[Forward]
   }
   
-  extension [Self <: Forward](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Forward] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: ScrollBarAction | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ScrollBarAction * / any */ String)

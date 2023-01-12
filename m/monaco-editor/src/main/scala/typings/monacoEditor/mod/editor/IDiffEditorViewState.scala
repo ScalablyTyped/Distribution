@@ -19,7 +19,8 @@ object IDiffEditorViewState {
     __obj.asInstanceOf[IDiffEditorViewState]
   }
   
-  extension [Self <: IDiffEditorViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffEditorViewState] (val x: Self) extends AnyVal {
     
     inline def setModified(value: ICodeEditorViewState): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     

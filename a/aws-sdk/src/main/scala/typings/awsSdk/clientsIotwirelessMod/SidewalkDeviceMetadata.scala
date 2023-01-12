@@ -33,7 +33,8 @@ object SidewalkDeviceMetadata {
     __obj.asInstanceOf[SidewalkDeviceMetadata]
   }
   
-  extension [Self <: SidewalkDeviceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkDeviceMetadata] (val x: Self) extends AnyVal {
     
     inline def setBatteryLevel(value: BatteryLevel): Self = StObject.set(x, "BatteryLevel", value.asInstanceOf[js.Any])
     

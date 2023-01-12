@@ -28,7 +28,8 @@ object ListModelPackagingJobsRequest {
     __obj.asInstanceOf[ListModelPackagingJobsRequest]
   }
   
-  extension [Self <: ListModelPackagingJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelPackagingJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

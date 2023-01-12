@@ -22,7 +22,8 @@ object EnrichmentOptions {
     __obj.asInstanceOf[EnrichmentOptions]
   }
   
-  extension [Self <: EnrichmentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichmentOptions] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: NluEnrichmentFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

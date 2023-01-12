@@ -98,7 +98,8 @@ object RasterLayer {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: /* zoom */ Zoom => Double): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
       
@@ -149,7 +150,8 @@ object RasterLayer {
       __obj.asInstanceOf[TilePoint]
     }
     
-    extension [Self <: TilePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TilePoint] (val x: Self) extends AnyVal {
       
       inline def setData(value: Row): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

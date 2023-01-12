@@ -104,7 +104,8 @@ object libEsmComponentsSliderHandleMod {
       __obj.asInstanceOf[IHandleState]
     }
     
-    extension [Self <: IHandleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHandleState] (val x: Self) extends AnyVal {
       
       inline def setIsMoving(value: Boolean): Self = StObject.set(x, "isMoving", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object libEsmComponentsSliderHandleMod {
       __obj.asInstanceOf[IInternalHandleProps]
     }
     
-    extension [Self <: IInternalHandleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInternalHandleProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

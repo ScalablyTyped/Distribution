@@ -21,7 +21,8 @@ object SmsFilterRules {
     __obj.asInstanceOf[SmsFilterRules]
   }
   
-  extension [Self <: SmsFilterRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsFilterRules] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: SmsFilterActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

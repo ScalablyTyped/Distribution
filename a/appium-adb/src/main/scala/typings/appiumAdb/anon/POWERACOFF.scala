@@ -19,7 +19,8 @@ object POWERACOFF {
     __obj.asInstanceOf[POWERACOFF]
   }
   
-  extension [Self <: POWERACOFF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: POWERACOFF] (val x: Self) extends AnyVal {
     
     inline def setPOWER_AC_OFF(value: off): Self = StObject.set(x, "POWER_AC_OFF", value.asInstanceOf[js.Any])
     

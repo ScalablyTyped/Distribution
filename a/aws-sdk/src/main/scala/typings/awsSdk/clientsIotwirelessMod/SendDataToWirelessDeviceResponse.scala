@@ -18,7 +18,8 @@ object SendDataToWirelessDeviceResponse {
     __obj.asInstanceOf[SendDataToWirelessDeviceResponse]
   }
   
-  extension [Self <: SendDataToWirelessDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDataToWirelessDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     

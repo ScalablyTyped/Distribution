@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[DecodeOptionscompletetrue]
     }
     
-    extension [Self <: DecodeOptionscompletetrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptionscompletetrue] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[DecodeOptionsjsontrue]
     }
     
-    extension [Self <: DecodeOptionsjsontrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptionsjsontrue] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -73,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[VerifyOptionscompletefals]
     }
     
-    extension [Self <: VerifyOptionscompletefals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptionscompletefals] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object anon {
       __obj.asInstanceOf[VerifyOptionscompletetrue]
     }
     
-    extension [Self <: VerifyOptionscompletetrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptionscompletetrue] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[Algorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object InstanceGroupStateChangeReason {
     __obj.asInstanceOf[InstanceGroupStateChangeReason]
   }
   
-  extension [Self <: InstanceGroupStateChangeReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupStateChangeReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: InstanceGroupStateChangeReasonCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

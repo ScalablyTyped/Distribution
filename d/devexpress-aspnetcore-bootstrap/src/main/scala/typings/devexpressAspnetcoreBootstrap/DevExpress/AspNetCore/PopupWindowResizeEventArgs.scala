@@ -17,7 +17,8 @@ object PopupWindowResizeEventArgs {
     __obj.asInstanceOf[PopupWindowResizeEventArgs]
   }
   
-  extension [Self <: PopupWindowResizeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindowResizeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResizeState(value: Double): Self = StObject.set(x, "resizeState", value.asInstanceOf[js.Any])
   }

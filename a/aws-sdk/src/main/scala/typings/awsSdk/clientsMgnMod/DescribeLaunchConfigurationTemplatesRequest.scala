@@ -28,7 +28,8 @@ object DescribeLaunchConfigurationTemplatesRequest {
     __obj.asInstanceOf[DescribeLaunchConfigurationTemplatesRequest]
   }
   
-  extension [Self <: DescribeLaunchConfigurationTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLaunchConfigurationTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchConfigurationTemplateIDs(value: LaunchConfigurationTemplateIDs): Self = StObject.set(x, "launchConfigurationTemplateIDs", value.asInstanceOf[js.Any])
     

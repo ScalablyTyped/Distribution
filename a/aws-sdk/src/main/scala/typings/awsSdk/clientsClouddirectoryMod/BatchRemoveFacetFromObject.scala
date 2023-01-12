@@ -23,7 +23,8 @@ object BatchRemoveFacetFromObject {
     __obj.asInstanceOf[BatchRemoveFacetFromObject]
   }
   
-  extension [Self <: BatchRemoveFacetFromObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchRemoveFacetFromObject] (val x: Self) extends AnyVal {
     
     inline def setObjectReference(value: ObjectReference): Self = StObject.set(x, "ObjectReference", value.asInstanceOf[js.Any])
     

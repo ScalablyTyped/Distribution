@@ -35,7 +35,8 @@ object typesLibInputGroupTextMod {
       __obj.asInstanceOf[InputGroupTextProps]
     }
     
-    extension [Self <: InputGroupTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputGroupTextProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

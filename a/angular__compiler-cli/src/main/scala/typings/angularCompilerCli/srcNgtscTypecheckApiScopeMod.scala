@@ -49,7 +49,8 @@ object srcNgtscTypecheckApiScopeMod {
       __obj.asInstanceOf[DirectiveInScope]
     }
     
-    extension [Self <: DirectiveInScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectiveInScope] (val x: Self) extends AnyVal {
       
       inline def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object srcNgtscTypecheckApiScopeMod {
       __obj.asInstanceOf[PipeInScope]
     }
     
-    extension [Self <: PipeInScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeInScope] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

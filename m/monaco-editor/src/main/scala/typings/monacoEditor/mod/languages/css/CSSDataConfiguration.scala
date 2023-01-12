@@ -24,7 +24,8 @@ object CSSDataConfiguration {
     __obj.asInstanceOf[CSSDataConfiguration]
   }
   
-  extension [Self <: CSSDataConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSDataConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataProviders(value: StringDictionary[CSSDataV1]): Self = StObject.set(x, "dataProviders", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ShardSummary {
     __obj.asInstanceOf[ShardSummary]
   }
   
-  extension [Self <: ShardSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShardSummary] (val x: Self) extends AnyVal {
     
     inline def setRuns(value: js.Array[scala.Any]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     

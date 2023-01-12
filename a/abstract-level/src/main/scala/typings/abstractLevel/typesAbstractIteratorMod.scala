@@ -213,7 +213,8 @@ object typesAbstractIteratorMod {
       __obj.asInstanceOf[AbstractIteratorOptions[K, V]]
     }
     
-    extension [Self <: AbstractIteratorOptions[?, ?], K, V](x: Self & (AbstractIteratorOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractIteratorOptions[?, ?], K, V] (val x: Self & (AbstractIteratorOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | (PartialEncoding[K, K])): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -250,7 +251,8 @@ object typesAbstractIteratorMod {
       __obj.asInstanceOf[AbstractKeyIteratorOptions[K]]
     }
     
-    extension [Self <: AbstractKeyIteratorOptions[?], K](x: Self & AbstractKeyIteratorOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractKeyIteratorOptions[?], K] (val x: Self & AbstractKeyIteratorOptions[K]) extends AnyVal {
       
       inline def setKeyEncoding(value: String | (PartialEncoding[K, K])): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object typesAbstractIteratorMod {
       __obj.asInstanceOf[AbstractSeekOptions[K]]
     }
     
-    extension [Self <: AbstractSeekOptions[?], K](x: Self & AbstractSeekOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractSeekOptions[?], K] (val x: Self & AbstractSeekOptions[K]) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object typesAbstractIteratorMod {
       __obj.asInstanceOf[AbstractValueIteratorOptions[K, V]]
     }
     
-    extension [Self <: AbstractValueIteratorOptions[?, ?], K, V](x: Self & (AbstractValueIteratorOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractValueIteratorOptions[?, ?], K, V] (val x: Self & (AbstractValueIteratorOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | (PartialEncoding[K, K])): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       

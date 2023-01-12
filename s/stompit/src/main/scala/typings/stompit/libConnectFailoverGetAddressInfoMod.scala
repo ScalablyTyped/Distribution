@@ -36,7 +36,8 @@ object libConnectFailoverGetAddressInfoMod {
       __obj.asInstanceOf[AddressInfo]
     }
     
-    extension [Self <: AddressInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressInfo] (val x: Self) extends AnyVal {
       
       inline def setConnectArgs(value: ConnectOptions): Self = StObject.set(x, "connectArgs", value.asInstanceOf[js.Any])
       

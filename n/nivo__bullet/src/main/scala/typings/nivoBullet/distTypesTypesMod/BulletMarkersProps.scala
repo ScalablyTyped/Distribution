@@ -51,7 +51,8 @@ object BulletMarkersProps {
     __obj.asInstanceOf[BulletMarkersProps]
   }
   
-  extension [Self <: BulletMarkersProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletMarkersProps] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ComponentType[BulletMarkersItemProps]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

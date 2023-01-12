@@ -45,7 +45,8 @@ object DiameterTop {
     __obj.asInstanceOf[DiameterTop]
   }
   
-  extension [Self <: DiameterTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiameterTop] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

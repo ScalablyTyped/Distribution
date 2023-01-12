@@ -18,7 +18,8 @@ object IPointerDeviceStatics {
     __obj.asInstanceOf[IPointerDeviceStatics]
   }
   
-  extension [Self <: IPointerDeviceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerDeviceStatics] (val x: Self) extends AnyVal {
     
     inline def setGetPointerDevice(value: Double => PointerDevice): Self = StObject.set(x, "getPointerDevice", js.Any.fromFunction1(value))
     

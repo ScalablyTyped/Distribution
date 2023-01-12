@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1ImportErrorsConfig {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportErrorsConfig]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] (val x: Self) extends AnyVal {
     
     inline def setGcsPrefix(value: String): Self = StObject.set(x, "gcsPrefix", value.asInstanceOf[js.Any])
     

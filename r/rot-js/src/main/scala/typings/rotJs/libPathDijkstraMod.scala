@@ -47,7 +47,8 @@ object libPathDijkstraMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setPrev(value: Item): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       

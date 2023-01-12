@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyArrayLikenumber]
     }
     
-    extension [Self <: ReadonlyArrayLikenumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyArrayLikenumber] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

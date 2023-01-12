@@ -15,7 +15,8 @@ object LinksArray {
     __obj.asInstanceOf[LinksArray]
   }
   
-  extension [Self <: LinksArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinksArray] (val x: Self) extends AnyVal {
     
     inline def setLinks(value: js.Array[js.Object]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

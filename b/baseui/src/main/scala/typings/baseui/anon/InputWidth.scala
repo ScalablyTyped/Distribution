@@ -15,7 +15,8 @@ object InputWidth {
     __obj.asInstanceOf[InputWidth]
   }
   
-  extension [Self <: InputWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputWidth] (val x: Self) extends AnyVal {
     
     inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
   }

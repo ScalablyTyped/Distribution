@@ -35,7 +35,8 @@ object GoogleTypeTimeOfDay {
     __obj.asInstanceOf[GoogleTypeTimeOfDay]
   }
   
-  extension [Self <: GoogleTypeTimeOfDay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleTypeTimeOfDay] (val x: Self) extends AnyVal {
     
     inline def setHours(value: Double): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
     

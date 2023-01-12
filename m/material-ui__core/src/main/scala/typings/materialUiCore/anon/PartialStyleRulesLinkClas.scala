@@ -41,7 +41,8 @@ object PartialStyleRulesLinkClas {
     __obj.asInstanceOf[PartialStyleRulesLinkClas]
   }
   
-  extension [Self <: PartialStyleRulesLinkClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesLinkClas] (val x: Self) extends AnyVal {
     
     inline def setButton(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

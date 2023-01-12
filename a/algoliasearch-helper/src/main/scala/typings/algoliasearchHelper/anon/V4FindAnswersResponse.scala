@@ -22,7 +22,8 @@ object V4FindAnswersResponse {
     __obj.asInstanceOf[V4FindAnswersResponse[T]]
   }
   
-  extension [Self <: V4FindAnswersResponse[?], T](x: Self & V4FindAnswersResponse[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V4FindAnswersResponse[?], T] (val x: Self & V4FindAnswersResponse[T]) extends AnyVal {
     
     inline def setV3(value: Any): Self = StObject.set(x, "v3", value.asInstanceOf[js.Any])
     

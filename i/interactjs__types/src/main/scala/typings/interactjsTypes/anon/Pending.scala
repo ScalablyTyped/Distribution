@@ -18,7 +18,8 @@ object Pending {
     __obj.asInstanceOf[Pending]
   }
   
-  extension [Self <: Pending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
     
     inline def setPending(value: Point): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     

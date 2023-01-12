@@ -71,7 +71,8 @@ object KmlObject {
     __obj.asInstanceOf[KmlObject]
   }
   
-  extension [Self <: KmlObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlObject] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: KmlObject => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

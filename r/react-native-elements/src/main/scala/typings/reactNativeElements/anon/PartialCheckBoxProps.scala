@@ -176,7 +176,8 @@ object PartialCheckBoxProps {
     __obj.asInstanceOf[PartialCheckBoxProps]
   }
   
-  extension [Self <: PartialCheckBoxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCheckBoxProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

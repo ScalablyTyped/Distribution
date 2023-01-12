@@ -24,7 +24,8 @@ object Responders {
     __obj.asInstanceOf[Responders]
   }
   
-  extension [Self <: Responders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responders] (val x: Self) extends AnyVal {
     
     inline def setOnBeforeCapture(value: /* before */ BeforeCapture => Unit): Self = StObject.set(x, "onBeforeCapture", js.Any.fromFunction1(value))
     

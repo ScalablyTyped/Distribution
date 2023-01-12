@@ -24,7 +24,8 @@ object ISurveyErrorOwner {
     __obj.asInstanceOf[ISurveyErrorOwner]
   }
   
-  extension [Self <: ISurveyErrorOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISurveyErrorOwner] (val x: Self) extends AnyVal {
     
     inline def setGetErrorCustomText(value: (String, SurveyError) => String): Self = StObject.set(x, "getErrorCustomText", js.Any.fromFunction2(value))
   }

@@ -75,7 +75,8 @@ object HTML5AudioFile {
     __obj.asInstanceOf[HTML5AudioFile]
   }
   
-  extension [Self <: HTML5AudioFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTML5AudioFile] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     

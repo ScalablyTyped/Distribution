@@ -68,7 +68,8 @@ object libImagePickerMod {
       __obj.asInstanceOf[ImagePickerProps]
     }
     
-    extension [Self <: ImagePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagePickerProps] (val x: Self) extends AnyVal {
       
       inline def setCameraPickerProps(value: CameraRollPickerProps): Self = StObject.set(x, "cameraPickerProps", value.asInstanceOf[js.Any])
       

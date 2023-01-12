@@ -129,7 +129,8 @@ object libCjsPuppeteerNodeBrowserFetcherMod {
       __obj.asInstanceOf[BrowserFetcherOptions]
     }
     
-    extension [Self <: BrowserFetcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserFetcherOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object libCjsPuppeteerNodeBrowserFetcherMod {
       __obj.asInstanceOf[BrowserFetcherRevisionInfo]
     }
     
-    extension [Self <: BrowserFetcherRevisionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserFetcherRevisionInfo] (val x: Self) extends AnyVal {
       
       inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       

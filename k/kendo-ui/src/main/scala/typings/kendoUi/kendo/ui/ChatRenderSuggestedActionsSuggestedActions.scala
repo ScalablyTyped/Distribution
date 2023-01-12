@@ -17,7 +17,8 @@ object ChatRenderSuggestedActionsSuggestedActions {
     __obj.asInstanceOf[ChatRenderSuggestedActionsSuggestedActions]
   }
   
-  extension [Self <: ChatRenderSuggestedActionsSuggestedActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRenderSuggestedActionsSuggestedActions] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object TaskBoardEditableButton {
     __obj.asInstanceOf[TaskBoardEditableButton]
   }
   
-  extension [Self <: TaskBoardEditableButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardEditableButton] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

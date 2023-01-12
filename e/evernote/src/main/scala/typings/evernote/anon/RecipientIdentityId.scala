@@ -23,7 +23,8 @@ object RecipientIdentityId {
     __obj.asInstanceOf[RecipientIdentityId]
   }
   
-  extension [Self <: RecipientIdentityId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentityId] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

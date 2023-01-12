@@ -87,7 +87,8 @@ object ChartCfg {
     __obj.asInstanceOf[ChartCfg]
   }
   
-  extension [Self <: ChartCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartCfg] (val x: Self) extends AnyVal {
     
     inline def setAppendPadding(value: ViewAppendPadding): Self = StObject.set(x, "appendPadding", value.asInstanceOf[js.Any])
     

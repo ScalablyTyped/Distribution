@@ -181,7 +181,8 @@ object Geofencing {
       __obj.asInstanceOf[Geofence]
     }
     
-    extension [Self <: Geofence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geofence] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -270,7 +271,8 @@ object Geofencing {
       __obj.asInstanceOf[GeofenceStateChangeReport]
     }
     
-    extension [Self <: GeofenceStateChangeReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeofenceStateChangeReport] (val x: Self) extends AnyVal {
       
       inline def setGeofence(value: Geofence): Self = StObject.set(x, "geofence", value.asInstanceOf[js.Any])
       

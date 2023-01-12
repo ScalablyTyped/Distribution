@@ -27,7 +27,8 @@ object EndInstallTypes {
     __obj.asInstanceOf[EndInstallTypes]
   }
   
-  extension [Self <: EndInstallTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndInstallTypes] (val x: Self) extends AnyVal {
     
     inline def setInstallSuccess(value: Boolean): Self = StObject.set(x, "installSuccess", value.asInstanceOf[js.Any])
     

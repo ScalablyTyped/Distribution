@@ -16,7 +16,8 @@ object Push {
     __obj.asInstanceOf[Push[T]]
   }
   
-  extension [Self <: Push[?], T](x: Self & Push[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
     
     inline def setPush(value: /* repeated */ T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
   }

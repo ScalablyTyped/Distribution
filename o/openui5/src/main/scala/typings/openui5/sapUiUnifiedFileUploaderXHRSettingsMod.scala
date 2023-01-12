@@ -174,7 +174,8 @@ object sapUiUnifiedFileUploaderXHRSettingsMod {
       __obj.asInstanceOf[FileUploaderXHRSettingsSettings]
     }
     
-    extension [Self <: FileUploaderXHRSettingsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderXHRSettingsSettings] (val x: Self) extends AnyVal {
       
       inline def setWithCredentials(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       

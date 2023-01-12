@@ -62,7 +62,8 @@ object SharedStatelessProps {
     __obj.asInstanceOf[SharedStatelessProps]
   }
   
-  extension [Self <: SharedStatelessProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStatelessProps] (val x: Self) extends AnyVal {
     
     inline def setActivedescendantId(value: String): Self = StObject.set(x, "activedescendantId", value.asInstanceOf[js.Any])
     

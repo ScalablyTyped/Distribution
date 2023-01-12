@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[parserOptions]
     }
     
-    extension [Self <: parserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parserOptions] (val x: Self) extends AnyVal {
       
       inline def setCdataAsText(value: Boolean): Self = StObject.set(x, "cdataAsText", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[toXmlOptions]
     }
     
-    extension [Self <: toXmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: toXmlOptions] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: /* s */ String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       

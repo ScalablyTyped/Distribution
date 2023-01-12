@@ -17,7 +17,8 @@ object ReadonlyReadonlychildrenR {
     __obj.asInstanceOf[ReadonlyReadonlychildrenR]
   }
   
-  extension [Self <: ReadonlyReadonlychildrenR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyReadonlychildrenR] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

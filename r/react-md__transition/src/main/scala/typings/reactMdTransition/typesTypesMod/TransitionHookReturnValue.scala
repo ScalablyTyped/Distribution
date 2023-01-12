@@ -68,7 +68,8 @@ object TransitionHookReturnValue {
     __obj.asInstanceOf[TransitionHookReturnValue[E]]
   }
   
-  extension [Self <: TransitionHookReturnValue[?], E /* <: HTMLElement */](x: Self & TransitionHookReturnValue[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & TransitionHookReturnValue[E]) extends AnyVal {
     
     inline def setRef(value: /* instance */ E | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     

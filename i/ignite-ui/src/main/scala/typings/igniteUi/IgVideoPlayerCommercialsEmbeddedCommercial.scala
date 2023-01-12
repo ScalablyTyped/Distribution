@@ -43,7 +43,8 @@ object IgVideoPlayerCommercialsEmbeddedCommercial {
     __obj.asInstanceOf[IgVideoPlayerCommercialsEmbeddedCommercial]
   }
   
-  extension [Self <: IgVideoPlayerCommercialsEmbeddedCommercial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerCommercialsEmbeddedCommercial] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

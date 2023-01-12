@@ -69,7 +69,8 @@ object CreateFleetMetricRequest {
     __obj.asInstanceOf[CreateFleetMetricRequest]
   }
   
-  extension [Self <: CreateFleetMetricRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFleetMetricRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationField(value: AggregationField): Self = StObject.set(x, "aggregationField", value.asInstanceOf[js.Any])
     

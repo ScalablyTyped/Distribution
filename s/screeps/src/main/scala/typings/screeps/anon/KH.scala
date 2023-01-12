@@ -19,7 +19,8 @@ object KH {
     __obj.asInstanceOf[KH]
   }
   
-  extension [Self <: KH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KH] (val x: Self) extends AnyVal {
     
     inline def setKH(value: Capacity): Self = StObject.set(x, "KH", value.asInstanceOf[js.Any])
     

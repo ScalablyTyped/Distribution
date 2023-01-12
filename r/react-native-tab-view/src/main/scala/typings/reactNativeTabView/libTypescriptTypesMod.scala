@@ -31,7 +31,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[EventEmitterProps]
     }
     
-    extension [Self <: EventEmitterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitterProps] (val x: Self) extends AnyVal {
       
       inline def setAddEnterListener(value: Listener => js.Function0[Unit]): Self = StObject.set(x, "addEnterListener", js.Any.fromFunction1(value))
     }
@@ -69,7 +71,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[NavigationState[T]]
     }
     
-    extension [Self <: NavigationState[?], T /* <: Route */](x: Self & NavigationState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationState[?], T /* <: Route */] (val x: Self & NavigationState[T]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[PagerProps]
     }
     
-    extension [Self <: PagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
@@ -266,7 +272,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Scene[T]]
     }
     
-    extension [Self <: Scene[?], T /* <: Route */](x: Self & Scene[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene[?], T /* <: Route */] (val x: Self & Scene[T]) extends AnyVal {
       
       inline def setRoute(value: T): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }
@@ -287,7 +294,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[SceneRendererProps]
     }
     
-    extension [Self <: SceneRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneRendererProps] (val x: Self) extends AnyVal {
       
       inline def setJumpTo(value: String => Unit): Self = StObject.set(x, "jumpTo", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object RemoveRequestCookie {
     __obj.asInstanceOf[RemoveRequestCookie]
   }
   
-  extension [Self <: RemoveRequestCookie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveRequestCookie] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

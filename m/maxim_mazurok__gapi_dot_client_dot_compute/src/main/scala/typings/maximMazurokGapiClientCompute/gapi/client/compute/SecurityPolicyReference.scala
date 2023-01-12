@@ -15,7 +15,8 @@ object SecurityPolicyReference {
     __obj.asInstanceOf[SecurityPolicyReference]
   }
   
-  extension [Self <: SecurityPolicyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyReference] (val x: Self) extends AnyVal {
     
     inline def setSecurityPolicy(value: String): Self = StObject.set(x, "securityPolicy", value.asInstanceOf[js.Any])
     

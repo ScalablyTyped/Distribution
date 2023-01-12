@@ -35,7 +35,8 @@ object AuthorizeCoinJoin {
     __obj.asInstanceOf[AuthorizeCoinJoin]
   }
   
-  extension [Self <: AuthorizeCoinJoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeCoinJoin] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

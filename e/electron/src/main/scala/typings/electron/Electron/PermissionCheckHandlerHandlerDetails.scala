@@ -43,7 +43,8 @@ object PermissionCheckHandlerHandlerDetails {
     __obj.asInstanceOf[PermissionCheckHandlerHandlerDetails]
   }
   
-  extension [Self <: PermissionCheckHandlerHandlerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionCheckHandlerHandlerDetails] (val x: Self) extends AnyVal {
     
     inline def setEmbeddingOrigin(value: String): Self = StObject.set(x, "embeddingOrigin", value.asInstanceOf[js.Any])
     

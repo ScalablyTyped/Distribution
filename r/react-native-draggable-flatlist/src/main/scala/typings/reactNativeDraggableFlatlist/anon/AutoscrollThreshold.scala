@@ -29,7 +29,8 @@ object AutoscrollThreshold {
     __obj.asInstanceOf[AutoscrollThreshold]
   }
   
-  extension [Self <: AutoscrollThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscrollThreshold] (val x: Self) extends AnyVal {
     
     inline def setActiveCellSize(value: SharedValue[Double]): Self = StObject.set(x, "activeCellSize", value.asInstanceOf[js.Any])
     

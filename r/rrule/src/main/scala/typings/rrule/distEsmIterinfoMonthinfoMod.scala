@@ -35,7 +35,8 @@ object distEsmIterinfoMonthinfoMod {
       __obj.asInstanceOf[MonthInfo]
     }
     
-    extension [Self <: MonthInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonthInfo] (val x: Self) extends AnyVal {
       
       inline def setLastmonth(value: Double): Self = StObject.set(x, "lastmonth", value.asInstanceOf[js.Any])
       

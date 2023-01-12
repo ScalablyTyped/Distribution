@@ -23,7 +23,8 @@ object IdLabel {
     __obj.asInstanceOf[IdLabel]
   }
   
-  extension [Self <: IdLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdLabel] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

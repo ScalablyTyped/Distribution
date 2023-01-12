@@ -29,7 +29,8 @@ object World {
     __obj.asInstanceOf[World]
   }
   
-  extension [Self <: World](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: World] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetAutoMergingPreviewRequest {
     __obj.asInstanceOf[GetAutoMergingPreviewRequest]
   }
   
-  extension [Self <: GetAutoMergingPreviewRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAutoMergingPreviewRequest] (val x: Self) extends AnyVal {
     
     inline def setConflictResolution(value: ConflictResolution): Self = StObject.set(x, "ConflictResolution", value.asInstanceOf[js.Any])
     

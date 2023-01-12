@@ -25,7 +25,8 @@ object typesChannelsResponseMod {
       __obj.asInstanceOf[ChannelsResponse]
     }
     
-    extension [Self <: ChannelsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelsResponse] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: StringDictionary[ChannelResponse] | (js.Iterable[js.Tuple2[String, ChannelResponse]])): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object typesChannelsResponseMod {
       __obj.asInstanceOf[UnmarshalledChannelsResponse]
     }
     
-    extension [Self <: UnmarshalledChannelsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledChannelsResponse] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: StringDictionary[UnmarshalledChannelResponse]): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
       

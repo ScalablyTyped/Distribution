@@ -28,7 +28,8 @@ object ExchangeConfig {
     __obj.asInstanceOf[ExchangeConfig]
   }
   
-  extension [Self <: ExchangeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeConfig] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object OpenAPI {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object OpenAPI {
       __obj.asInstanceOf[_Document[T]]
     }
     
-    extension [Self <: _Document[?], T /* <: js.Object */](x: Self & _Document[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _Document[?], T /* <: js.Object */] (val x: Self & _Document[T]) extends AnyVal {
       
       inline def setComponents(value: ComponentsObject): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

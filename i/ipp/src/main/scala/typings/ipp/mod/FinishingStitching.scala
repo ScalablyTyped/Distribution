@@ -23,7 +23,8 @@ object FinishingStitching {
     __obj.asInstanceOf[FinishingStitching]
   }
   
-  extension [Self <: FinishingStitching](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingStitching] (val x: Self) extends AnyVal {
     
     inline def `setStitching-angle`(value: Double): Self = StObject.set(x, "stitching-angle", value.asInstanceOf[js.Any])
     

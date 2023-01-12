@@ -75,7 +75,8 @@ object AccessReviewInstance {
     __obj.asInstanceOf[AccessReviewInstance]
   }
   
-  extension [Self <: AccessReviewInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewInstance] (val x: Self) extends AnyVal {
     
     inline def setContactedReviewers(value: NullableOption[js.Array[AccessReviewReviewer]]): Self = StObject.set(x, "contactedReviewers", value.asInstanceOf[js.Any])
     

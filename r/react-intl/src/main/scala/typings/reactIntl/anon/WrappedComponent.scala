@@ -17,7 +17,8 @@ object WrappedComponent {
     __obj.asInstanceOf[WrappedComponent[P, IntlPropName]]
   }
   
-  extension [Self <: WrappedComponent[?, ?], P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */](x: Self & (WrappedComponent[P, IntlPropName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrappedComponent[?, ?], P /* <: WrappedComponentProps[IntlPropName] */, IntlPropName /* <: String */] (val x: Self & (WrappedComponent[P, IntlPropName])) extends AnyVal {
     
     inline def setWrappedComponent(value: ComponentType[P]): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object ModifyClusterIamRolesMessage {
     __obj.asInstanceOf[ModifyClusterIamRolesMessage]
   }
   
-  extension [Self <: ModifyClusterIamRolesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClusterIamRolesMessage] (val x: Self) extends AnyVal {
     
     inline def setAddIamRoles(value: IamRoleArnList): Self = StObject.set(x, "AddIamRoles", value.asInstanceOf[js.Any])
     

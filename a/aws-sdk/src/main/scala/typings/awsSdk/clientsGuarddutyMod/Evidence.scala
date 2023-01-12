@@ -18,7 +18,8 @@ object Evidence {
     __obj.asInstanceOf[Evidence]
   }
   
-  extension [Self <: Evidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evidence] (val x: Self) extends AnyVal {
     
     inline def setThreatIntelligenceDetails(value: ThreatIntelligenceDetails): Self = StObject.set(x, "ThreatIntelligenceDetails", value.asInstanceOf[js.Any])
     

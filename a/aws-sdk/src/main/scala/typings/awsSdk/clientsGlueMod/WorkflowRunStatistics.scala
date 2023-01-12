@@ -53,7 +53,8 @@ object WorkflowRunStatistics {
     __obj.asInstanceOf[WorkflowRunStatistics]
   }
   
-  extension [Self <: WorkflowRunStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowRunStatistics] (val x: Self) extends AnyVal {
     
     inline def setErroredActions(value: IntegerValue): Self = StObject.set(x, "ErroredActions", value.asInstanceOf[js.Any])
     

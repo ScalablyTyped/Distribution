@@ -23,7 +23,8 @@ object IndicesDeleteAliasParams {
     __obj.asInstanceOf[IndicesDeleteAliasParams]
   }
   
-  extension [Self <: IndicesDeleteAliasParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDeleteAliasParams] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

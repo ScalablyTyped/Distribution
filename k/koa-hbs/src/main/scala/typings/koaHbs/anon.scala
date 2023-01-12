@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[TypeofUtils]
     }
     
-    extension [Self <: TypeofUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofUtils] (val x: Self) extends AnyVal {
       
       inline def setBlockParams(value: (js.Array[Any], js.Array[Any]) => js.Array[Any]): Self = StObject.set(x, "blockParams", js.Any.fromFunction2(value))
       

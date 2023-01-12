@@ -100,7 +100,8 @@ object DistanceMatrixRequest {
     __obj.asInstanceOf[DistanceMatrixRequest]
   }
   
-  extension [Self <: DistanceMatrixRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistanceMatrixRequest] (val x: Self) extends AnyVal {
     
     inline def setAvoidFerries(value: Boolean): Self = StObject.set(x, "avoidFerries", value.asInstanceOf[js.Any])
     

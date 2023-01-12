@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[TimecodeObject]
     }
     
-    extension [Self <: TimecodeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimecodeObject] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: Double): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object AudienceGroupAssignedTargetingOptionDetails {
     __obj.asInstanceOf[AudienceGroupAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: AudienceGroupAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudienceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setExcludedFirstAndThirdPartyAudienceGroup(value: FirstAndThirdPartyAudienceGroup): Self = StObject.set(x, "excludedFirstAndThirdPartyAudienceGroup", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object MostDisruptiveAllowedAction {
     __obj.asInstanceOf[MostDisruptiveAllowedAction]
   }
   
-  extension [Self <: MostDisruptiveAllowedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MostDisruptiveAllowedAction] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

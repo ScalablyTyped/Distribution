@@ -79,7 +79,8 @@ object RFC3164 {
       __obj.asInstanceOf[MessageOptions]
     }
     
-    extension [Self <: MessageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       inline def setMsgColor(value: Double): Self = StObject.set(x, "msgColor", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object RFC3164 {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
       

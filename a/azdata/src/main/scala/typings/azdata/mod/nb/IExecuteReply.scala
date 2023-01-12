@@ -20,7 +20,8 @@ object IExecuteReply {
     __obj.asInstanceOf[IExecuteReply]
   }
   
-  extension [Self <: IExecuteReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteReply] (val x: Self) extends AnyVal {
     
     inline def setExecution_count(value: Double): Self = StObject.set(x, "execution_count", value.asInstanceOf[js.Any])
     

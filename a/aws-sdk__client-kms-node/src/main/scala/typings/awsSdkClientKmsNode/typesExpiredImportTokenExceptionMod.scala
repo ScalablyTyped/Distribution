@@ -21,7 +21,8 @@ object typesExpiredImportTokenExceptionMod {
       __obj.asInstanceOf[ExpiredImportTokenException]
     }
     
-    extension [Self <: ExpiredImportTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredImportTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.ExpiredImportTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesExpiredImportTokenExceptionMod {
       __obj.asInstanceOf[ExpiredImportTokenExceptionDetails]
     }
     
-    extension [Self <: ExpiredImportTokenExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpiredImportTokenExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

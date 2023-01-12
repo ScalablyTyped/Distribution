@@ -26,7 +26,8 @@ object ICollection {
     __obj.asInstanceOf[ICollection]
   }
   
-  extension [Self <: ICollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: js.Object => ICollection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

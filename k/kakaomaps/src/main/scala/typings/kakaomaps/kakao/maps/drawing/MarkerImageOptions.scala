@@ -53,7 +53,8 @@ object MarkerImageOptions {
     __obj.asInstanceOf[MarkerImageOptions]
   }
   
-  extension [Self <: MarkerImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: String): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

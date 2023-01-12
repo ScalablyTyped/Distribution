@@ -18,7 +18,8 @@ object ColorKey {
     __obj.asInstanceOf[ColorKey]
   }
   
-  extension [Self <: ColorKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorKey] (val x: Self) extends AnyVal {
     
     inline def setComplex(value: js.Array[FeatureType]): Self = StObject.set(x, "Complex", value.asInstanceOf[js.Any])
     

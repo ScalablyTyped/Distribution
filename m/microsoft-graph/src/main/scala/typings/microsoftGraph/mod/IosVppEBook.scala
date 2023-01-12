@@ -39,7 +39,8 @@ object IosVppEBook {
     __obj.asInstanceOf[IosVppEBook]
   }
   
-  extension [Self <: IosVppEBook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosVppEBook] (val x: Self) extends AnyVal {
     
     inline def setAppleId(value: NullableOption[String]): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
     

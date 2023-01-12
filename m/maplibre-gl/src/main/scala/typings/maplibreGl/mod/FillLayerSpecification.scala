@@ -39,7 +39,8 @@ object FillLayerSpecification {
     __obj.asInstanceOf[FillLayerSpecification]
   }
   
-  extension [Self <: FillLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

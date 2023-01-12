@@ -160,7 +160,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteChangeParams]
     }
     
-    extension [Self <: AutoCompleteChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteChangeTargetOptions]
     }
     
-    extension [Self <: AutoCompleteChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteCompleteMethodParams]
     }
     
-    extension [Self <: AutoCompleteCompleteMethodParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteCompleteMethodParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteDropdownClickParams]
     }
     
-    extension [Self <: AutoCompleteDropdownClickParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteDropdownClickParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -757,7 +761,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteProps]
     }
     
-    extension [Self <: AutoCompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1786,7 +1791,8 @@ object autocompleteAutocompleteMod {
       __obj.asInstanceOf[AutoCompleteSelectParams]
     }
     
-    extension [Self <: AutoCompleteSelectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteSelectParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

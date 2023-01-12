@@ -22,7 +22,8 @@ object TimeEvent {
     __obj.asInstanceOf[TimeEvent]
   }
   
-  extension [Self <: TimeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeEvent] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: Annotation): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

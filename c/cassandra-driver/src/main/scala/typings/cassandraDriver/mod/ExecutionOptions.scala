@@ -86,7 +86,8 @@ object ExecutionOptions {
     __obj.asInstanceOf[ExecutionOptions]
   }
   
-  extension [Self <: ExecutionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionOptions] (val x: Self) extends AnyVal {
     
     inline def setGetCaptureStackTrace(value: () => Boolean): Self = StObject.set(x, "getCaptureStackTrace", js.Any.fromFunction0(value))
     

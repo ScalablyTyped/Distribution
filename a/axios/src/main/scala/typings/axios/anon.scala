@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[FormData]
     }
     
-    extension [Self <: FormData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormData] (val x: Self) extends AnyVal {
       
       inline def setFormData(value: Instantiable1[/* args (repeated) */ Any, js.Object]): Self = StObject.set(x, "FormData", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -116,7 +118,8 @@ object anon {
       __obj.asInstanceOf[HeadersDefaultskeystringA]
     }
     
-    extension [Self <: HeadersDefaultskeystringA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadersDefaultskeystringA] (val x: Self) extends AnyVal {
       
       inline def setCommon(value: RawAxiosRequestHeaders): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object anon {
       __obj.asInstanceOf[OmitAxiosDefaultsanyheade]
     }
     
-    extension [Self <: OmitAxiosDefaultsanyheade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAxiosDefaultsanyheade] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: /* config */ AxiosRequestConfig[Any] => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
@@ -426,7 +430,8 @@ object anon {
       __obj.asInstanceOf[PartialHeadersDefaults]
     }
     
-    extension [Self <: PartialHeadersDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHeadersDefaults] (val x: Self) extends AnyVal {
       
       inline def setCommon(value: RawAxiosRequestHeaders): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
@@ -487,7 +492,8 @@ object anon {
       __obj.asInstanceOf[Password]
     }
     
-    extension [Self <: Password](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -511,7 +517,8 @@ object anon {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: AxiosInterceptorManager[AxiosRequestConfig[Any]]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -530,7 +537,8 @@ object anon {
       __obj.asInstanceOf[Setcookie]
     }
     
-    extension [Self <: Setcookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Setcookie] (val x: Self) extends AnyVal {
       
       inline def `setSet-cookie`(value: js.Array[String]): Self = StObject.set(x, "set-cookie", value.asInstanceOf[js.Any])
       

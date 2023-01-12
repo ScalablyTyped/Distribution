@@ -18,7 +18,8 @@ object CreateSubnetCidrReservationResult {
     __obj.asInstanceOf[CreateSubnetCidrReservationResult]
   }
   
-  extension [Self <: CreateSubnetCidrReservationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSubnetCidrReservationResult] (val x: Self) extends AnyVal {
     
     inline def setSubnetCidrReservation(value: SubnetCidrReservation): Self = StObject.set(x, "SubnetCidrReservation", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object CloudFormationTarget {
     __obj.asInstanceOf[CloudFormationTarget]
   }
   
-  extension [Self <: CloudFormationTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationTarget] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object GetTemplateSummaryOutput {
     __obj.asInstanceOf[GetTemplateSummaryOutput]
   }
   
-  extension [Self <: GetTemplateSummaryOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateSummaryOutput] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

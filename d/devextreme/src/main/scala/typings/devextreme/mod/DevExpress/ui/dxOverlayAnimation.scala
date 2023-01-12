@@ -24,7 +24,8 @@ object dxOverlayAnimation {
     __obj.asInstanceOf[dxOverlayAnimation]
   }
   
-  extension [Self <: dxOverlayAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxOverlayAnimation] (val x: Self) extends AnyVal {
     
     inline def setHide(value: AnimationConfig): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
     

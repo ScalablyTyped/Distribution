@@ -22,7 +22,8 @@ object CampaignCreativeAssociationsListResponse {
     __obj.asInstanceOf[CampaignCreativeAssociationsListResponse]
   }
   
-  extension [Self <: CampaignCreativeAssociationsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignCreativeAssociationsListResponse] (val x: Self) extends AnyVal {
     
     inline def setCampaignCreativeAssociations(value: js.Array[CampaignCreativeAssociation]): Self = StObject.set(x, "campaignCreativeAssociations", value.asInstanceOf[js.Any])
     

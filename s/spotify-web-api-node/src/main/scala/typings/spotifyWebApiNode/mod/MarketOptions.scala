@@ -15,7 +15,8 @@ object MarketOptions {
     __obj.asInstanceOf[MarketOptions]
   }
   
-  extension [Self <: MarketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketOptions] (val x: Self) extends AnyVal {
     
     inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
     

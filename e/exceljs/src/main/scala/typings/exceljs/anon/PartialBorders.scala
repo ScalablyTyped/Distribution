@@ -24,7 +24,8 @@ object PartialBorders {
     __obj.asInstanceOf[PartialBorders]
   }
   
-  extension [Self <: PartialBorders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBorders] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: PartialBorder): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Mixin {
     __obj.asInstanceOf[Mixin[T]]
   }
   
-  extension [Self <: Mixin[?], T](x: Self & Mixin[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mixin[?], T] (val x: Self & Mixin[T]) extends AnyVal {
     
     inline def setMixin(value: MixinToOptionTypes[T]): Self = StObject.set(x, "Mixin", value.asInstanceOf[js.Any])
   }

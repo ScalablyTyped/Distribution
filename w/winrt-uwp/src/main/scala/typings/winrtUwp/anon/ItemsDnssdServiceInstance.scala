@@ -18,7 +18,8 @@ object ItemsDnssdServiceInstance {
     __obj.asInstanceOf[ItemsDnssdServiceInstance]
   }
   
-  extension [Self <: ItemsDnssdServiceInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsDnssdServiceInstance] (val x: Self) extends AnyVal {
     
     inline def setItems(value: DnssdServiceInstance): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

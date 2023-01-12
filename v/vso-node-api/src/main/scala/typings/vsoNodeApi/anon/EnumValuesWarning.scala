@@ -15,7 +15,8 @@ object EnumValuesWarning {
     __obj.asInstanceOf[EnumValuesWarning]
   }
   
-  extension [Self <: EnumValuesWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesWarning] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Warning): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

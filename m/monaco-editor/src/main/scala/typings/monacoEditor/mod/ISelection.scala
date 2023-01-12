@@ -38,7 +38,8 @@ object ISelection {
     __obj.asInstanceOf[ISelection]
   }
   
-  extension [Self <: ISelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelection] (val x: Self) extends AnyVal {
     
     inline def setPositionColumn(value: Double): Self = StObject.set(x, "positionColumn", value.asInstanceOf[js.Any])
     

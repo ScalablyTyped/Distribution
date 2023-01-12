@@ -25,7 +25,8 @@ object ILinkProvider {
     __obj.asInstanceOf[ILinkProvider]
   }
   
-  extension [Self <: ILinkProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILinkProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideLinks(value: (Double, js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]) => Unit): Self = StObject.set(x, "provideLinks", js.Any.fromFunction2(value))
   }

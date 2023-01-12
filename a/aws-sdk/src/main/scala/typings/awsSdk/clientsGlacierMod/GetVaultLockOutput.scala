@@ -33,7 +33,8 @@ object GetVaultLockOutput {
     __obj.asInstanceOf[GetVaultLockOutput]
   }
   
-  extension [Self <: GetVaultLockOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVaultLockOutput] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

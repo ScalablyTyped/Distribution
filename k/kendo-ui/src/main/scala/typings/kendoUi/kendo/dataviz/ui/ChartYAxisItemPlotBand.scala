@@ -21,7 +21,8 @@ object ChartYAxisItemPlotBand {
     __obj.asInstanceOf[ChartYAxisItemPlotBand]
   }
   
-  extension [Self <: ChartYAxisItemPlotBand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemPlotBand] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

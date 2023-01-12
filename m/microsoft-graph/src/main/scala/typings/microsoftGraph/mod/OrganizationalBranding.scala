@@ -18,7 +18,8 @@ object OrganizationalBranding {
     __obj.asInstanceOf[OrganizationalBranding]
   }
   
-  extension [Self <: OrganizationalBranding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationalBranding] (val x: Self) extends AnyVal {
     
     inline def setLocalizations(value: NullableOption[js.Array[OrganizationalBrandingLocalization]]): Self = StObject.set(x, "localizations", value.asInstanceOf[js.Any])
     

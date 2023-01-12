@@ -17,7 +17,8 @@ object SpeechRecognitionQualityDegradingEventArgs {
     __obj.asInstanceOf[SpeechRecognitionQualityDegradingEventArgs]
   }
   
-  extension [Self <: SpeechRecognitionQualityDegradingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionQualityDegradingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setProblem(value: SpeechRecognitionAudioProblem): Self = StObject.set(x, "problem", value.asInstanceOf[js.Any])
   }

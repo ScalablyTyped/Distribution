@@ -30,7 +30,8 @@ object CompositionEvent {
     __obj.asInstanceOf[CompositionEvent]
   }
   
-  extension [Self <: CompositionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionEvent] (val x: Self) extends AnyVal {
     
     inline def setCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

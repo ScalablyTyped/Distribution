@@ -22,7 +22,8 @@ object NewPermissionsEvent {
     __obj.asInstanceOf[NewPermissionsEvent]
   }
   
-  extension [Self <: NewPermissionsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewPermissionsEvent] (val x: Self) extends AnyVal {
     
     inline def setApprovedPermissions(value: js.Array[String]): Self = StObject.set(x, "approvedPermissions", value.asInstanceOf[js.Any])
     

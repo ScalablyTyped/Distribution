@@ -30,7 +30,8 @@ object XAnyCompareFactory {
     __obj.asInstanceOf[XAnyCompareFactory]
   }
   
-  extension [Self <: XAnyCompareFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnyCompareFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateAnyCompareByName(value: String => XAnyCompare): Self = StObject.set(x, "createAnyCompareByName", js.Any.fromFunction1(value))
   }

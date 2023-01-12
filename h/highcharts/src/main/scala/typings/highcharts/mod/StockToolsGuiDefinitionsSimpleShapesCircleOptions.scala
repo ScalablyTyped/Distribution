@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsSimpleShapesCircleOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesCircleOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsSimpleShapesCircleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsSimpleShapesCircleOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

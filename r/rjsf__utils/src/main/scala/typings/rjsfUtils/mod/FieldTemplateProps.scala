@@ -110,7 +110,8 @@ object FieldTemplateProps {
     __obj.asInstanceOf[FieldTemplateProps[T, F]]
   }
   
-  extension [Self <: FieldTemplateProps[?, ?], T, F](x: Self & (FieldTemplateProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTemplateProps[?, ?], T, F] (val x: Self & (FieldTemplateProps[T, F])) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

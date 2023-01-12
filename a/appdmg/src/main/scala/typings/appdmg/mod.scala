@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
       __obj.asInstanceOf[Specification]
     }
     
-    extension [Self <: Specification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Specification] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object mod {
       __obj.asInstanceOf[SpecificationCodeSign]
     }
     
-    extension [Self <: SpecificationCodeSign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificationCodeSign] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -227,7 +231,8 @@ object mod {
       __obj.asInstanceOf[SpecificationContents]
     }
     
-    extension [Self <: SpecificationContents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificationContents] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -262,7 +267,8 @@ object mod {
       __obj.asInstanceOf[SpecificationOptions]
     }
     
-    extension [Self <: SpecificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificationOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -289,7 +295,8 @@ object mod {
       __obj.asInstanceOf[SpecificationWindow]
     }
     
-    extension [Self <: SpecificationWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificationWindow] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: X): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

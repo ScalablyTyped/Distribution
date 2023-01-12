@@ -38,7 +38,8 @@ object DescribeLabelGroupResponse {
     __obj.asInstanceOf[DescribeLabelGroupResponse]
   }
   
-  extension [Self <: DescribeLabelGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLabelGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

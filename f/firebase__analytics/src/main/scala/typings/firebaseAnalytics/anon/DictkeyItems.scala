@@ -23,7 +23,8 @@ object DictkeyItems {
     __obj.asInstanceOf[DictkeyItems]
   }
   
-  extension [Self <: DictkeyItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyItems] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

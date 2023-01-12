@@ -31,7 +31,8 @@ object BingMapsOptions {
     __obj.asInstanceOf[BingMapsOptions]
   }
   
-  extension [Self <: BingMapsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingMapsOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
     

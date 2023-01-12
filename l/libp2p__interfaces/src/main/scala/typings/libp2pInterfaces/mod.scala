@@ -18,7 +18,8 @@ object mod {
       __obj.asInstanceOf[AbortOptions]
     }
     
-    extension [Self <: AbortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object TokenDetails {
     __obj.asInstanceOf[TokenDetails]
   }
   
-  extension [Self <: TokenDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenDetails] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: Any): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     

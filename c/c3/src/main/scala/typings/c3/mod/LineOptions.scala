@@ -23,7 +23,8 @@ object LineOptions {
     __obj.asInstanceOf[LineOptions]
   }
   
-  extension [Self <: LineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectNull(value: Boolean): Self = StObject.set(x, "connectNull", value.asInstanceOf[js.Any])
     

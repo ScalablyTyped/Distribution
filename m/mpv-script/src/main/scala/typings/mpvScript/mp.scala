@@ -31,7 +31,8 @@ object mp {
       __obj.asInstanceOf[AddKeyBindingFlags]
     }
     
-    extension [Self <: AddKeyBindingFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddKeyBindingFlags] (val x: Self) extends AnyVal {
       
       inline def setComplex(value: Boolean): Self = StObject.set(x, "complex", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mp {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: Double): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object mp {
       __obj.asInstanceOf[OSDOverlay]
     }
     
-    extension [Self <: OSDOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OSDOverlay] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object mp {
       __obj.asInstanceOf[OSDSize]
     }
     
-    extension [Self <: OSDSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OSDSize] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       

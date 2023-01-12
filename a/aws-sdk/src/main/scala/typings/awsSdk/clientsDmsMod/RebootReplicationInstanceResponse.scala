@@ -18,7 +18,8 @@ object RebootReplicationInstanceResponse {
     __obj.asInstanceOf[RebootReplicationInstanceResponse]
   }
   
-  extension [Self <: RebootReplicationInstanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootReplicationInstanceResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationInstance(value: ReplicationInstance): Self = StObject.set(x, "ReplicationInstance", value.asInstanceOf[js.Any])
     

@@ -273,7 +273,8 @@ object distNativeAuthMod {
       __obj.asInstanceOf[AwsSigningConfig]
     }
     
-    extension [Self <: AwsSigningConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsSigningConfig] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: AwsSigningAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object distNativeAuthMod {
       __obj.asInstanceOf[CognitoCredentialsProviderConfig]
     }
     
-    extension [Self <: CognitoCredentialsProviderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoCredentialsProviderConfig] (val x: Self) extends AnyVal {
       
       inline def setBootstrap(value: ClientBootstrap): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
       
@@ -407,7 +409,8 @@ object distNativeAuthMod {
       __obj.asInstanceOf[CognitoLoginTokenPair]
     }
     
-    extension [Self <: CognitoLoginTokenPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoLoginTokenPair] (val x: Self) extends AnyVal {
       
       inline def setIdentityProviderName(value: String): Self = StObject.set(x, "identityProviderName", value.asInstanceOf[js.Any])
       

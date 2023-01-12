@@ -43,7 +43,8 @@ object Aggregates {
     __obj.asInstanceOf[Aggregates]
   }
   
-  extension [Self <: Aggregates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aggregates] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: AggregatedDoubleValue): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

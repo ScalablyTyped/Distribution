@@ -15,7 +15,8 @@ object AccentRed {
     __obj.asInstanceOf[AccentRed]
   }
   
-  extension [Self <: AccentRed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccentRed] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: Red): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
   }

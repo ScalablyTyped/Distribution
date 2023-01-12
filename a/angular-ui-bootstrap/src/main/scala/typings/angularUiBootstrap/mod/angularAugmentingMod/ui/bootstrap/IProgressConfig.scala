@@ -27,7 +27,8 @@ object IProgressConfig {
     __obj.asInstanceOf[IProgressConfig]
   }
   
-  extension [Self <: IProgressConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProgressConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

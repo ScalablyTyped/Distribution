@@ -33,7 +33,8 @@ object TimePartitioning {
     __obj.asInstanceOf[TimePartitioning]
   }
   
-  extension [Self <: TimePartitioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimePartitioning] (val x: Self) extends AnyVal {
     
     inline def setExpirationMs(value: String): Self = StObject.set(x, "expirationMs", value.asInstanceOf[js.Any])
     

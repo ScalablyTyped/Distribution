@@ -60,7 +60,8 @@ object RecurrenceEditor {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object RecurrenceEditor {
       __obj.asInstanceOf[typings.ejWebAll.ej.RecurrenceEditor.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.RecurrenceEditor.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.RecurrenceEditor.Model] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* e */ ChangeEventArgs => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       

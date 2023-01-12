@@ -23,7 +23,8 @@ object distCacheInterfaceIcachepluginMod {
       __obj.asInstanceOf[ICachePlugin]
     }
     
-    extension [Self <: ICachePlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICachePlugin] (val x: Self) extends AnyVal {
       
       inline def setAfterCacheAccess(value: TokenCacheContext => js.Promise[Unit]): Self = StObject.set(x, "afterCacheAccess", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object INDLicenseFetchDescriptor {
     __obj.asInstanceOf[INDLicenseFetchDescriptor]
   }
   
-  extension [Self <: INDLicenseFetchDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDLicenseFetchDescriptor] (val x: Self) extends AnyVal {
     
     inline def setContentID(value: Double): Self = StObject.set(x, "contentID", value.asInstanceOf[js.Any])
     

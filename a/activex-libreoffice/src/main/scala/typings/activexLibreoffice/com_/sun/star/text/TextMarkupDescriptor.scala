@@ -34,7 +34,8 @@ object TextMarkupDescriptor {
     __obj.asInstanceOf[TextMarkupDescriptor]
   }
   
-  extension [Self <: TextMarkupDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMarkupDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAIdentifier(value: String): Self = StObject.set(x, "aIdentifier", value.asInstanceOf[js.Any])
     

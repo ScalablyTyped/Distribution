@@ -31,7 +31,8 @@ object TestContext {
     __obj.asInstanceOf[TestContext]
   }
   
-  extension [Self <: TestContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestContext] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

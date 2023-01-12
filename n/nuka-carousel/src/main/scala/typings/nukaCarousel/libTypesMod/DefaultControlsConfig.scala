@@ -45,7 +45,8 @@ object DefaultControlsConfig {
     __obj.asInstanceOf[DefaultControlsConfig]
   }
   
-  extension [Self <: DefaultControlsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultControlsConfig] (val x: Self) extends AnyVal {
     
     inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
     

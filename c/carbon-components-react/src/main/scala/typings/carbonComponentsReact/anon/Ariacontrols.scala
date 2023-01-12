@@ -21,7 +21,8 @@ object Ariacontrols {
     __obj.asInstanceOf[Ariacontrols]
   }
   
-  extension [Self <: Ariacontrols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ariacontrols] (val x: Self) extends AnyVal {
     
     inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
     

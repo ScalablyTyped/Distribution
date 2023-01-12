@@ -19,7 +19,8 @@ object Services {
     __obj.asInstanceOf[Services]
   }
   
-  extension [Self <: Services](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Services] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* obj */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

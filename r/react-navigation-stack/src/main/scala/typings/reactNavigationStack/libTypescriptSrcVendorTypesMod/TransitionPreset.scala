@@ -39,7 +39,8 @@ object TransitionPreset {
     __obj.asInstanceOf[TransitionPreset]
   }
   
-  extension [Self <: TransitionPreset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionPreset] (val x: Self) extends AnyVal {
     
     inline def setCardStyleInterpolator(value: /* props */ StackCardInterpolationProps => StackCardInterpolatedStyle): Self = StObject.set(x, "cardStyleInterpolator", js.Any.fromFunction1(value))
     

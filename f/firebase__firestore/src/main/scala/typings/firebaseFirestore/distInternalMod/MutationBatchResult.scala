@@ -31,7 +31,8 @@ object MutationBatchResult {
     __obj.asInstanceOf[MutationBatchResult]
   }
   
-  extension [Self <: MutationBatchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutationBatchResult] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: MutationBatch): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

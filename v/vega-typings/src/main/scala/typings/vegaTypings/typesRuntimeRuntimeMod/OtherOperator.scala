@@ -33,7 +33,8 @@ object OtherOperator {
     __obj.asInstanceOf[OtherOperator]
   }
   
-  extension [Self <: OtherOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtherOperator] (val x: Self) extends AnyVal {
     
     inline def setType(
       value: Exclude[

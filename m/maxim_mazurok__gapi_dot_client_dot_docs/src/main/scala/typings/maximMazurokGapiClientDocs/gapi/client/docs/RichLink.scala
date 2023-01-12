@@ -39,7 +39,8 @@ object RichLink {
     __obj.asInstanceOf[RichLink]
   }
   
-  extension [Self <: RichLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichLink] (val x: Self) extends AnyVal {
     
     inline def setRichLinkId(value: String): Self = StObject.set(x, "richLinkId", value.asInstanceOf[js.Any])
     

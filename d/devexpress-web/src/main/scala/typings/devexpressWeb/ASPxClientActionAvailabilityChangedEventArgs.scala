@@ -23,7 +23,8 @@ object ASPxClientActionAvailabilityChangedEventArgs {
     __obj.asInstanceOf[ASPxClientActionAvailabilityChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientActionAvailabilityChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientActionAvailabilityChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
   }

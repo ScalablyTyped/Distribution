@@ -32,7 +32,8 @@ object ConditionalScopeBase {
     __obj.asInstanceOf[ConditionalScopeBase]
   }
   
-  extension [Self <: ConditionalScopeBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalScopeBase] (val x: Self) extends AnyVal {
     
     inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     

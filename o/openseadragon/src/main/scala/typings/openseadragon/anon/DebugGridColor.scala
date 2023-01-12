@@ -23,7 +23,8 @@ object DebugGridColor {
     __obj.asInstanceOf[DebugGridColor]
   }
   
-  extension [Self <: DebugGridColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugGridColor] (val x: Self) extends AnyVal {
     
     inline def setDebugGridColor(value: String): Self = StObject.set(x, "debugGridColor", value.asInstanceOf[js.Any])
     

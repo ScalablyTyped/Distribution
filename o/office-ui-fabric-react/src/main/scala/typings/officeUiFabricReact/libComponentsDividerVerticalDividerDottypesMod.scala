@@ -29,7 +29,8 @@ object libComponentsDividerVerticalDividerDottypesMod {
       __obj.asInstanceOf[IVerticalDividerClassNames]
     }
     
-    extension [Self <: IVerticalDividerClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerticalDividerClassNames] (val x: Self) extends AnyVal {
       
       inline def setDivider(value: String): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libComponentsDividerVerticalDividerDottypesMod {
       __obj.asInstanceOf[IVerticalDividerProps]
     }
     
-    extension [Self <: IVerticalDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerticalDividerProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object libComponentsDividerVerticalDividerDottypesMod {
       __obj.asInstanceOf[IVerticalDividerPropsStyles]
     }
     
-    extension [Self <: IVerticalDividerPropsStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerticalDividerPropsStyles] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object libComponentsDividerVerticalDividerDottypesMod {
       __obj.asInstanceOf[IVerticalDividerStyles]
     }
     
-    extension [Self <: IVerticalDividerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVerticalDividerStyles] (val x: Self) extends AnyVal {
       
       inline def setDivider(value: IStyle): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       

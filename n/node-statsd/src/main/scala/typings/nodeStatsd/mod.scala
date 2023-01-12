@@ -591,7 +591,8 @@ object mod {
       __obj.asInstanceOf[StatsDConfig]
     }
     
-    extension [Self <: StatsDConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsDConfig] (val x: Self) extends AnyVal {
       
       inline def setCacheDns(value: Boolean): Self = StObject.set(x, "cacheDns", value.asInstanceOf[js.Any])
       

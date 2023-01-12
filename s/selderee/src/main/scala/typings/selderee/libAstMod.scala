@@ -42,7 +42,8 @@ object libAstMod {
       __obj.asInstanceOf[AttrPresenceNode[V]]
     }
     
-    extension [Self <: AttrPresenceNode[?], V](x: Self & AttrPresenceNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttrPresenceNode[?], V] (val x: Self & AttrPresenceNode[V]) extends AnyVal {
       
       inline def setCont(value: js.Array[DecisionTreeNode[V]]): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object libAstMod {
       __obj.asInstanceOf[AttrValueNode[V]]
     }
     
-    extension [Self <: AttrValueNode[?], V](x: Self & AttrValueNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttrValueNode[?], V] (val x: Self & AttrValueNode[V]) extends AnyVal {
       
       inline def setMatchers(value: js.Array[MatcherNode[V]]): Self = StObject.set(x, "matchers", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object libAstMod {
       __obj.asInstanceOf[MatcherNode[V]]
     }
     
-    extension [Self <: MatcherNode[?], V](x: Self & MatcherNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherNode[?], V] (val x: Self & MatcherNode[V]) extends AnyVal {
       
       inline def setCont(value: js.Array[DecisionTreeNode[V]]): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object libAstMod {
       __obj.asInstanceOf[PopElementNode[V]]
     }
     
-    extension [Self <: PopElementNode[?], V](x: Self & PopElementNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopElementNode[?], V] (val x: Self & PopElementNode[V]) extends AnyVal {
       
       inline def setCont(value: js.Array[DecisionTreeNode[V]]): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object libAstMod {
       __obj.asInstanceOf[PushElementNode[V]]
     }
     
-    extension [Self <: PushElementNode[?], V](x: Self & PushElementNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushElementNode[?], V] (val x: Self & PushElementNode[V]) extends AnyVal {
       
       inline def setCombinator(value: Greaterthansign | Plussign): Self = StObject.set(x, "combinator", value.asInstanceOf[js.Any])
       
@@ -255,7 +260,8 @@ object libAstMod {
       __obj.asInstanceOf[TagNameNode[V]]
     }
     
-    extension [Self <: TagNameNode[?], V](x: Self & TagNameNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagNameNode[?], V] (val x: Self & TagNameNode[V]) extends AnyVal {
       
       inline def setType(value: tagName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -281,7 +287,8 @@ object libAstMod {
       __obj.asInstanceOf[TerminalNode[V]]
     }
     
-    extension [Self <: TerminalNode[?], V](x: Self & TerminalNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalNode[?], V] (val x: Self & TerminalNode[V]) extends AnyVal {
       
       inline def setType(value: terminal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -304,7 +311,8 @@ object libAstMod {
       __obj.asInstanceOf[ValueContainer[V]]
     }
     
-    extension [Self <: ValueContainer[?], V](x: Self & ValueContainer[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueContainer[?], V] (val x: Self & ValueContainer[V]) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -330,7 +338,8 @@ object libAstMod {
       __obj.asInstanceOf[VariantNode[V]]
     }
     
-    extension [Self <: VariantNode[?], V](x: Self & VariantNode[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantNode[?], V] (val x: Self & VariantNode[V]) extends AnyVal {
       
       inline def setCont(value: js.Array[DecisionTreeNode[V]]): Self = StObject.set(x, "cont", value.asInstanceOf[js.Any])
       

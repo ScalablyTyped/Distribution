@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: ElementType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[TypeElementType]
     }
     
-    extension [Self <: TypeElementType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeElementType] (val x: Self) extends AnyVal {
       
       inline def setType(value: typings.domelementtype.mod.ElementType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

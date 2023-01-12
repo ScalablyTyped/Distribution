@@ -336,7 +336,8 @@ object mod {
       __obj.asInstanceOf[hardforkOptions]
     }
     
-    extension [Self <: hardforkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: hardforkOptions] (val x: Self) extends AnyVal {
       
       inline def setOnlyActive(value: Boolean): Self = StObject.set(x, "onlyActive", value.asInstanceOf[js.Any])
       

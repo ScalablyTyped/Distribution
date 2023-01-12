@@ -28,7 +28,8 @@ object Tmpfs {
     __obj.asInstanceOf[Tmpfs]
   }
   
-  extension [Self <: Tmpfs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tmpfs] (val x: Self) extends AnyVal {
     
     inline def setContainerPath(value: String): Self = StObject.set(x, "containerPath", value.asInstanceOf[js.Any])
     

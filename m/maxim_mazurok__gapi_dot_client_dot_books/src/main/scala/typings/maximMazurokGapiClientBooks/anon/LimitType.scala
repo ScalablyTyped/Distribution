@@ -21,7 +21,8 @@ object LimitType {
     __obj.asInstanceOf[LimitType]
   }
   
-  extension [Self <: LimitType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitType] (val x: Self) extends AnyVal {
     
     inline def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
     

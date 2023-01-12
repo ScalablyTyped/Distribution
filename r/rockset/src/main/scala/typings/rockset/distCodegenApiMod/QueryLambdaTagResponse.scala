@@ -20,7 +20,8 @@ object QueryLambdaTagResponse {
     __obj.asInstanceOf[QueryLambdaTagResponse]
   }
   
-  extension [Self <: QueryLambdaTagResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLambdaTagResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: QueryLambdaTag): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

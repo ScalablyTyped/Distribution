@@ -460,7 +460,8 @@ object typesSelectSelectMod {
       __obj.asInstanceOf[FakeSelectAttributes]
     }
     
-    extension [Self <: FakeSelectAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeSelectAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1282,7 +1283,8 @@ object typesSelectSelectMod {
       __obj.asInstanceOf[SelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

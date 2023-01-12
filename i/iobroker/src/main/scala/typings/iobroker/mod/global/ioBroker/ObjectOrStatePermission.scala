@@ -31,7 +31,8 @@ object ObjectOrStatePermission {
     __obj.asInstanceOf[ObjectOrStatePermission]
   }
   
-  extension [Self <: ObjectOrStatePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOrStatePermission] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: list | read | write | create | delete): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

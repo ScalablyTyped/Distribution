@@ -72,7 +72,8 @@ object GIFObject {
     __obj.asInstanceOf[GIFObject]
   }
   
-  extension [Self <: GIFObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GIFObject] (val x: Self) extends AnyVal {
     
     inline def setBitly_url(value: String): Self = StObject.set(x, "bitly_url", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object XEnhancedMouseClickHandler {
     __obj.asInstanceOf[XEnhancedMouseClickHandler]
   }
   
-  extension [Self <: XEnhancedMouseClickHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnhancedMouseClickHandler] (val x: Self) extends AnyVal {
     
     inline def setMousePressed(value: EnhancedMouseEvent => Boolean): Self = StObject.set(x, "mousePressed", js.Any.fromFunction1(value))
     

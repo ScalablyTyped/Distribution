@@ -29,7 +29,8 @@ object AxiosProgressEvent {
     __obj.asInstanceOf[AxiosProgressEvent]
   }
   
-  extension [Self <: AxiosProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxiosProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

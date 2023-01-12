@@ -28,7 +28,8 @@ object StartBeaconDiscoveryOption {
     __obj.asInstanceOf[StartBeaconDiscoveryOption]
   }
   
-  extension [Self <: StartBeaconDiscoveryOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBeaconDiscoveryOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ IBeaconError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

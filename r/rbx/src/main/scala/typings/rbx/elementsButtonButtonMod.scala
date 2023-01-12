@@ -204,7 +204,8 @@ object elementsButtonButtonMod {
       __obj.asInstanceOf[ButtonModifierProps]
     }
     
-    extension [Self <: ButtonModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -354,7 +355,8 @@ object elementsButtonButtonMod {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -548,7 +550,8 @@ object elementsButtonButtonMod {
       __obj.asInstanceOf[ButtonVariables]
     }
     
-    extension [Self <: ButtonVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
@@ -569,7 +572,8 @@ object elementsButtonButtonMod {
       __obj.asInstanceOf[ButtonVariablesDefaults]
     }
     
-    extension [Self <: ButtonVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | normal | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       

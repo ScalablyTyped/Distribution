@@ -48,7 +48,8 @@ object distLibCommandsMod {
       __obj.asInstanceOf[RedisCommand]
     }
     
-    extension [Self <: RedisCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisCommand] (val x: Self) extends AnyVal {
       
       inline def setFIRST_KEY_INDEX(value: Double | (js.Function1[/* repeated */ Any, js.UndefOr[RedisCommandArgument]])): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object distLibCommandsMod {
       __obj.asInstanceOf[RedisExtensions[M, F, S]]
     }
     
-    extension [Self <: RedisExtensions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](x: Self & (RedisExtensions[M, F, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisExtensions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] (val x: Self & (RedisExtensions[M, F, S])) extends AnyVal {
       
       inline def setFunctions(value: F): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object distLibCommandsMod {
       __obj.asInstanceOf[RedisFunction]
     }
     
-    extension [Self <: RedisFunction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisFunction] (val x: Self) extends AnyVal {
       
       inline def setNUMBER_OF_KEYS(value: Double): Self = StObject.set(x, "NUMBER_OF_KEYS", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object Uv {
     __obj.asInstanceOf[Uv]
   }
   
-  extension [Self <: Uv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uv] (val x: Self) extends AnyVal {
     
     inline def setUv(value: Double): Self = StObject.set(x, "uv", value.asInstanceOf[js.Any])
     

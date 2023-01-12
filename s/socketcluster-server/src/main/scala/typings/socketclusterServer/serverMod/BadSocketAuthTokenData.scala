@@ -22,7 +22,8 @@ object BadSocketAuthTokenData {
     __obj.asInstanceOf[BadSocketAuthTokenData]
   }
   
-  extension [Self <: BadSocketAuthTokenData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BadSocketAuthTokenData] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: typings.socketclusterServer.serversocketMod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

@@ -47,7 +47,8 @@ object libIxMod {
       __obj.asInstanceOf[Index_[S, I, A]]
     }
     
-    extension [Self <: Index_[?, ?, ?], S, I, A](x: Self & (Index_[S, I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index_[?, ?, ?], S, I, A] (val x: Self & (Index_[S, I, A])) extends AnyVal {
       
       inline def setIndex(value: I => Optional_[S, A]): Self = StObject.set(x, "index", js.Any.fromFunction1(value))
     }

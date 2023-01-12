@@ -21,7 +21,8 @@ object NonMaxSuppressionV4Attrs {
     __obj.asInstanceOf[NonMaxSuppressionV4Attrs]
   }
   
-  extension [Self <: NonMaxSuppressionV4Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonMaxSuppressionV4Attrs] (val x: Self) extends AnyVal {
     
     inline def setIouThreshold(value: Double): Self = StObject.set(x, "iouThreshold", value.asInstanceOf[js.Any])
     

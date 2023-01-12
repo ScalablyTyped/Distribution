@@ -20,7 +20,8 @@ object CollapseText {
     __obj.asInstanceOf[CollapseText]
   }
   
-  extension [Self <: CollapseText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapseText] (val x: Self) extends AnyVal {
     
     inline def setCollapseText(value: ReactNode): Self = StObject.set(x, "collapseText", value.asInstanceOf[js.Any])
     

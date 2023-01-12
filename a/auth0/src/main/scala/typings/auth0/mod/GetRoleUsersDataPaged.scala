@@ -17,7 +17,8 @@ object GetRoleUsersDataPaged {
     __obj.asInstanceOf[GetRoleUsersDataPaged]
   }
   
-  extension [Self <: GetRoleUsersDataPaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRoleUsersDataPaged] (val x: Self) extends AnyVal {
     
     inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
   }

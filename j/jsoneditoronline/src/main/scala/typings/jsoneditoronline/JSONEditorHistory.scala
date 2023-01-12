@@ -35,7 +35,8 @@ object JSONEditorHistory {
     __obj.asInstanceOf[JSONEditorHistory]
   }
   
-  extension [Self <: JSONEditorHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorHistory] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, js.Object) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

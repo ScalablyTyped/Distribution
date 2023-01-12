@@ -25,7 +25,8 @@ object IStreamWebSocketControl {
     __obj.asInstanceOf[IStreamWebSocketControl]
   }
   
-  extension [Self <: IStreamWebSocketControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamWebSocketControl] (val x: Self) extends AnyVal {
     
     inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
   }

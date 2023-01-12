@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Contentlength]
     }
     
-    extension [Self <: Contentlength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contentlength] (val x: Self) extends AnyVal {
       
       inline def setContent_length(value: String): Self = StObject.set(x, "content_length", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Delimiter]
     }
     
-    extension [Self <: Delimiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delimiter] (val x: Self) extends AnyVal {
       
       inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

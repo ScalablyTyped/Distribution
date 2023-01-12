@@ -20,7 +20,8 @@ object LoadFileError {
     __obj.asInstanceOf[LoadFileError]
   }
   
-  extension [Self <: LoadFileError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadFileError] (val x: Self) extends AnyVal {
     
     inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

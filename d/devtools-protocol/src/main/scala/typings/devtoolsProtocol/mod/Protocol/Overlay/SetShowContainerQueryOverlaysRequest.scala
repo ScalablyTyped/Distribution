@@ -18,7 +18,8 @@ object SetShowContainerQueryOverlaysRequest {
     __obj.asInstanceOf[SetShowContainerQueryOverlaysRequest]
   }
   
-  extension [Self <: SetShowContainerQueryOverlaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowContainerQueryOverlaysRequest] (val x: Self) extends AnyVal {
     
     inline def setContainerQueryHighlightConfigs(value: js.Array[ContainerQueryHighlightConfig]): Self = StObject.set(x, "containerQueryHighlightConfigs", value.asInstanceOf[js.Any])
     

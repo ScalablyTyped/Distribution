@@ -30,7 +30,8 @@ object TypeAcquisition {
     __obj.asInstanceOf[TypeAcquisition]
   }
   
-  extension [Self <: TypeAcquisition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeAcquisition] (val x: Self) extends AnyVal {
     
     inline def setDisableFilenameBasedTypeAcquisition(value: Boolean): Self = StObject.set(x, "disableFilenameBasedTypeAcquisition", value.asInstanceOf[js.Any])
     

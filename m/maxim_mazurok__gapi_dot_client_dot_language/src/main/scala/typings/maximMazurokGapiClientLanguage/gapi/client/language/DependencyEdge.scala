@@ -22,7 +22,8 @@ object DependencyEdge {
     __obj.asInstanceOf[DependencyEdge]
   }
   
-  extension [Self <: DependencyEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyEdge] (val x: Self) extends AnyVal {
     
     inline def setHeadTokenIndex(value: Double): Self = StObject.set(x, "headTokenIndex", value.asInstanceOf[js.Any])
     

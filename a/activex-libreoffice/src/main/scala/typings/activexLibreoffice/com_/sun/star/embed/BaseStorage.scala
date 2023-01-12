@@ -73,7 +73,8 @@ object BaseStorage {
     __obj.asInstanceOf[BaseStorage]
   }
   
-  extension [Self <: BaseStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseStorage] (val x: Self) extends AnyVal {
     
     inline def setOpenMode(value: Double): Self = StObject.set(x, "OpenMode", value.asInstanceOf[js.Any])
     

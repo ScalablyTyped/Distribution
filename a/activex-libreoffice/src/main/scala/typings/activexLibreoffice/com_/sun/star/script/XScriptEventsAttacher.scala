@@ -35,7 +35,8 @@ object XScriptEventsAttacher {
     __obj.asInstanceOf[XScriptEventsAttacher]
   }
   
-  extension [Self <: XScriptEventsAttacher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScriptEventsAttacher] (val x: Self) extends AnyVal {
     
     inline def setAttachEvents(value: (SeqEquiv[XInterface], XScriptListener, Any) => Unit): Self = StObject.set(x, "attachEvents", js.Any.fromFunction3(value))
   }

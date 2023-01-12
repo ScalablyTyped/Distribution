@@ -18,7 +18,8 @@ object DeleteModelResponse {
     __obj.asInstanceOf[DeleteModelResponse]
   }
   
-  extension [Self <: DeleteModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelResponse] (val x: Self) extends AnyVal {
     
     inline def setModelArn(value: ModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     

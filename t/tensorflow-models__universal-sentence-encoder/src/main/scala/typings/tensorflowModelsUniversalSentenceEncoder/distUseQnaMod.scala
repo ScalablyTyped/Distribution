@@ -60,7 +60,8 @@ object distUseQnaMod {
       __obj.asInstanceOf[ModelInput]
     }
     
-    extension [Self <: ModelInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelInput] (val x: Self) extends AnyVal {
       
       inline def setContexts(value: js.Array[String]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distUseQnaMod {
       __obj.asInstanceOf[ModelOutput]
     }
     
-    extension [Self <: ModelOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelOutput] (val x: Self) extends AnyVal {
       
       inline def setQueryEmbedding(value: Tensor[Rank]): Self = StObject.set(x, "queryEmbedding", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object BuildOptions {
     __obj.asInstanceOf[BuildOptions[T]]
   }
   
-  extension [Self <: BuildOptions[?], T /* <: ProjectType */](x: Self & BuildOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildOptions[?], T /* <: ProjectType */] (val x: Self & BuildOptions[T]) extends AnyVal {
     
     inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

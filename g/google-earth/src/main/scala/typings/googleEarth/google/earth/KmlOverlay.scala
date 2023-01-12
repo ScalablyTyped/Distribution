@@ -93,7 +93,8 @@ object KmlOverlay {
     __obj.asInstanceOf[KmlOverlay]
   }
   
-  extension [Self <: KmlOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlOverlay] (val x: Self) extends AnyVal {
     
     inline def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     

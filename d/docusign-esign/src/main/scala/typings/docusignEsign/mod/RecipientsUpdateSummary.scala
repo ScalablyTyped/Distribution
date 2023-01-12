@@ -22,7 +22,8 @@ object RecipientsUpdateSummary {
     __obj.asInstanceOf[RecipientsUpdateSummary]
   }
   
-  extension [Self <: RecipientsUpdateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientsUpdateSummary] (val x: Self) extends AnyVal {
     
     inline def setRecipientUpdateResults(
       value: js.Array[

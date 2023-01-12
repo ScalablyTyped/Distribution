@@ -44,7 +44,8 @@ object libAccordionMod {
       __obj.asInstanceOf[AccordionProps]
     }
     
-    extension [Self <: AccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
       
       inline def setBsSize(value: Sizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
       

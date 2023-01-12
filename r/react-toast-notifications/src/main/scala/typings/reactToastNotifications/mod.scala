@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAppearance(value: AppearanceTypes): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[ToastConsumerContext]
     }
     
-    extension [Self <: ToastConsumerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastConsumerContext] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: (/* content */ ReactNode, /* options */ js.UndefOr[Options], /* callback */ js.UndefOr[js.Function1[/* id */ String, Unit]]) => Unit
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[ToastConsumerProps]
     }
     
-    extension [Self <: ToastConsumerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastConsumerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ToastConsumerContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -198,7 +201,8 @@ object mod {
       __obj.asInstanceOf[ToastContainerProps]
     }
     
-    extension [Self <: ToastContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -269,7 +273,8 @@ object mod {
       __obj.asInstanceOf[ToastProviderProps]
     }
     
-    extension [Self <: ToastProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProviderProps] (val x: Self) extends AnyVal {
       
       inline def setAutoDismiss(value: Boolean | Double): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
       
@@ -336,7 +341,8 @@ object mod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

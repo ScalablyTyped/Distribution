@@ -22,7 +22,8 @@ object MultiStep {
     __obj.asInstanceOf[MultiStep]
   }
   
-  extension [Self <: MultiStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiStep] (val x: Self) extends AnyVal {
     
     inline def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
     

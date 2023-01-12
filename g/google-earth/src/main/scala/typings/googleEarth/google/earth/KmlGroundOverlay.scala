@@ -114,7 +114,8 @@ object KmlGroundOverlay {
     __obj.asInstanceOf[KmlGroundOverlay]
   }
   
-  extension [Self <: KmlGroundOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlGroundOverlay] (val x: Self) extends AnyVal {
     
     inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     

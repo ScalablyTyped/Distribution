@@ -29,7 +29,8 @@ object FormattingOptions {
     __obj.asInstanceOf[FormattingOptions]
   }
   
-  extension [Self <: FormattingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattingOptions] (val x: Self) extends AnyVal {
     
     inline def setInsertSpaces(value: Boolean): Self = StObject.set(x, "insertSpaces", value.asInstanceOf[js.Any])
     

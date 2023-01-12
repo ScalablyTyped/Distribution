@@ -42,7 +42,8 @@ object ExpandedZonedMarker {
     __obj.asInstanceOf[ExpandedZonedMarker]
   }
   
-  extension [Self <: ExpandedZonedMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedZonedMarker] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[Double]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

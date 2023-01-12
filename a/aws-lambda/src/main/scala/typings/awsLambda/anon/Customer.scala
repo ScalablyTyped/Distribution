@@ -15,7 +15,8 @@ object Customer {
     __obj.asInstanceOf[Customer]
   }
   
-  extension [Self <: Customer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
     
     inline def setCustomer(value: Audio): Self = StObject.set(x, "Customer", value.asInstanceOf[js.Any])
   }

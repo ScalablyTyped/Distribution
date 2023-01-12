@@ -778,7 +778,8 @@ object CalendarOptions {
     __obj.asInstanceOf[CalendarOptions]
   }
   
-  extension [Self <: CalendarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
     
     inline def setAllDayClassNames(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @fullcalendar/common.@fullcalendar/common.Identity<@fullcalendar/common.@fullcalendar/common.ClassNamesGenerator<@fullcalendar/common.@fullcalendar/common.AllDayContentArg>> extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any

@@ -46,7 +46,8 @@ object HomeProperties {
     __obj.asInstanceOf[HomeProperties]
   }
   
-  extension [Self <: HomeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HomeProperties] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DisplayDevice {
     __obj.asInstanceOf[DisplayDevice]
   }
   
-  extension [Self <: DisplayDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayDevice] (val x: Self) extends AnyVal {
     
     inline def setEnableDisplay(value: Boolean): Self = StObject.set(x, "enableDisplay", value.asInstanceOf[js.Any])
     

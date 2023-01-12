@@ -45,7 +45,8 @@ object DispatchDescriptor {
     __obj.asInstanceOf[DispatchDescriptor]
   }
   
-  extension [Self <: DispatchDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DispatchDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFeatureURL(value: URL): Self = StObject.set(x, "FeatureURL", value.asInstanceOf[js.Any])
     

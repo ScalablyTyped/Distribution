@@ -40,7 +40,8 @@ object TransactionConfig {
     __obj.asInstanceOf[TransactionConfig]
   }
   
-  extension [Self <: TransactionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionConfig] (val x: Self) extends AnyVal {
     
     inline def setChain(value: String): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

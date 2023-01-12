@@ -635,7 +635,8 @@ object mod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabledDates(value: IndexedDates | Boolean): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
@@ -720,7 +721,8 @@ object mod {
       __obj.asInstanceOf[Icons]
     }
     
-    extension [Self <: Icons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Icons] (val x: Self) extends AnyVal {
       
       inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -799,7 +801,8 @@ object mod {
       __obj.asInstanceOf[KeyBinds]
     }
     
-    extension [Self <: KeyBinds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyBinds] (val x: Self) extends AnyVal {
       
       inline def `setControl down`(value: /* widget */ JQuery | Boolean => Any): Self = StObject.set(x, "control down", js.Any.fromFunction1(value))
       
@@ -1195,7 +1198,8 @@ object mod {
       __obj.asInstanceOf[OptionsBase]
     }
     
-    extension [Self <: OptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAllowInputToggle(value: Boolean): Self = StObject.set(x, "allowInputToggle", value.asInstanceOf[js.Any])
       
@@ -1398,7 +1402,8 @@ object mod {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabledDates(value: js.Array[DateComparable] | Boolean): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
       
@@ -1575,7 +1580,8 @@ object mod {
       __obj.asInstanceOf[Tooltips]
     }
     
-    extension [Self <: Tooltips](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltips] (val x: Self) extends AnyVal {
       
       inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
@@ -1747,7 +1753,8 @@ object mod {
       __obj.asInstanceOf[WidgetPositioning]
     }
     
-    extension [Self <: WidgetPositioning](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetPositioning] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: auto | left | right): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       

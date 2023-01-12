@@ -38,7 +38,8 @@ object PredicateVisitor {
     __obj.asInstanceOf[PredicateVisitor]
   }
   
-  extension [Self <: PredicateVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredicateVisitor] (val x: Self) extends AnyVal {
     
     inline def setAndOrPredicate(value: PredicateContext => String): Self = StObject.set(x, "andOrPredicate", js.Any.fromFunction1(value))
     

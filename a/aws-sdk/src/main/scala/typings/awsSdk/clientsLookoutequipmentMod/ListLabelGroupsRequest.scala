@@ -28,7 +28,8 @@ object ListLabelGroupsRequest {
     __obj.asInstanceOf[ListLabelGroupsRequest]
   }
   
-  extension [Self <: ListLabelGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLabelGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelGroupNameBeginsWith(value: LabelGroupName): Self = StObject.set(x, "LabelGroupNameBeginsWith", value.asInstanceOf[js.Any])
     

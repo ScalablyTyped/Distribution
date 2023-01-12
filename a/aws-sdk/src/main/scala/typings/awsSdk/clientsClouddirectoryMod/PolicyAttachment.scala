@@ -28,7 +28,8 @@ object PolicyAttachment {
     __obj.asInstanceOf[PolicyAttachment]
   }
   
-  extension [Self <: PolicyAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyAttachment] (val x: Self) extends AnyVal {
     
     inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     

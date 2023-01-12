@@ -30,7 +30,8 @@ object SearchCampaignAudience {
     __obj.asInstanceOf[SearchCampaignAudience]
   }
   
-  extension [Self <: SearchCampaignAudience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCampaignAudience] (val x: Self) extends AnyVal {
     
     inline def setBidding(value: () => SearchAudienceBidding): Self = StObject.set(x, "bidding", js.Any.fromFunction0(value))
     

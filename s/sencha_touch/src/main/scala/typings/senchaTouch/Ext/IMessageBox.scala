@@ -140,7 +140,8 @@ object IMessageBox {
     __obj.asInstanceOf[IMessageBox]
   }
   
-  extension [Self <: IMessageBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageBox] (val x: Self) extends AnyVal {
     
     inline def setAlert(
       value: (/* title */ js.UndefOr[java.lang.String], /* message */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => IMessageBox

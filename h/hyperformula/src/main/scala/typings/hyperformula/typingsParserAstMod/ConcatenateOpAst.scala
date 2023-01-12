@@ -20,7 +20,8 @@ object ConcatenateOpAst {
     __obj.asInstanceOf[ConcatenateOpAst]
   }
   
-  extension [Self <: ConcatenateOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcatenateOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: CONCATENATE_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

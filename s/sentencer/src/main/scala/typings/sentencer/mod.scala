@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Sentencer]
     }
     
-    extension [Self <: Sentencer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sentencer] (val x: Self) extends AnyVal {
       
       inline def setActions(value: actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setActions(value: actions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

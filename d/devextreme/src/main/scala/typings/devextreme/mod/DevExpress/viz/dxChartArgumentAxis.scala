@@ -178,7 +178,8 @@ object dxChartArgumentAxis {
     __obj.asInstanceOf[dxChartArgumentAxis]
   }
   
-  extension [Self <: dxChartArgumentAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartArgumentAxis] (val x: Self) extends AnyVal {
     
     inline def setAggregateByCategory(value: Boolean): Self = StObject.set(x, "aggregateByCategory", value.asInstanceOf[js.Any])
     

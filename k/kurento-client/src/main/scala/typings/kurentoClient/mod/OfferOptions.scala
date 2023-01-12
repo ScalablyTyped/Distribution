@@ -17,7 +17,8 @@ object OfferOptions {
     __obj.asInstanceOf[OfferOptions]
   }
   
-  extension [Self <: OfferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfferOptions] (val x: Self) extends AnyVal {
     
     inline def setOfferToReceiveAudio(value: Boolean): Self = StObject.set(x, "offerToReceiveAudio", value.asInstanceOf[js.Any])
     

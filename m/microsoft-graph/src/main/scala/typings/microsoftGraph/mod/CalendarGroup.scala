@@ -30,7 +30,8 @@ object CalendarGroup {
     __obj.asInstanceOf[CalendarGroup]
   }
   
-  extension [Self <: CalendarGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarGroup] (val x: Self) extends AnyVal {
     
     inline def setCalendars(value: NullableOption[js.Array[Calendar]]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     

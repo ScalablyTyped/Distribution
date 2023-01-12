@@ -33,7 +33,8 @@ object ConditionalSplitActivity {
     __obj.asInstanceOf[ConditionalSplitActivity]
   }
   
-  extension [Self <: ConditionalSplitActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalSplitActivity] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

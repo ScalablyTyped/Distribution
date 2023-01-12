@@ -17,7 +17,8 @@ object ICloudConfig {
     __obj.asInstanceOf[ICloudConfig]
   }
   
-  extension [Self <: ICloudConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICloudConfig] (val x: Self) extends AnyVal {
     
     inline def setEnv(value: java.lang.String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     

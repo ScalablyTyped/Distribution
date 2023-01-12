@@ -49,7 +49,8 @@ object IClickRepeater {
     __obj.asInstanceOf[IClickRepeater]
   }
   
-  extension [Self <: IClickRepeater](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClickRepeater] (val x: Self) extends AnyVal {
     
     inline def setAccelerate(value: Boolean): Self = StObject.set(x, "accelerate", value.asInstanceOf[js.Any])
     

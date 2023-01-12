@@ -21,7 +21,8 @@ object KafkaJSErrorMetadata {
     __obj.asInstanceOf[KafkaJSErrorMetadata]
   }
   
-  extension [Self <: KafkaJSErrorMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaJSErrorMetadata] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: PartitionMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

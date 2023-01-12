@@ -285,7 +285,8 @@ object distNodeBackendOverlayFSMod {
       __obj.asInstanceOf[OverlayFSOptions]
     }
     
-    extension [Self <: OverlayFSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayFSOptions] (val x: Self) extends AnyVal {
       
       inline def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       

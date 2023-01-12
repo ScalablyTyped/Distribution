@@ -37,7 +37,8 @@ object componentsWebapiMod {
       __obj.asInstanceOf[WebApi]
     }
     
-    extension [Self <: WebApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebApi] (val x: Self) extends AnyVal {
       
       inline def setGetWebApiKey(value: (String, js.Function2[/* err */ CallbackError, /* key */ String, Any]) => Any): Self = StObject.set(x, "getWebApiKey", js.Any.fromFunction2(value))
       

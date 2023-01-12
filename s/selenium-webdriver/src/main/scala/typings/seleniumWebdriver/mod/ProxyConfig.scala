@@ -31,7 +31,8 @@ object ProxyConfig {
     __obj.asInstanceOf[ProxyConfig]
   }
   
-  extension [Self <: ProxyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
     
     inline def setFtpProxy(value: String): Self = StObject.set(x, "ftpProxy", value.asInstanceOf[js.Any])
     

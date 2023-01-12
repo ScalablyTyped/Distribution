@@ -25,7 +25,8 @@ object Path2DBounds {
     __obj.asInstanceOf[Path2DBounds]
   }
   
-  extension [Self <: Path2DBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Path2DBounds] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

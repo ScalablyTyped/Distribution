@@ -18,7 +18,8 @@ object DeleteTableInput {
     __obj.asInstanceOf[DeleteTableInput]
   }
   
-  extension [Self <: DeleteTableInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTableInput] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

@@ -35,7 +35,8 @@ object TextMetricsLine {
     __obj.asInstanceOf[TextMetricsLine]
   }
   
-  extension [Self <: TextMetricsLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMetricsLine] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

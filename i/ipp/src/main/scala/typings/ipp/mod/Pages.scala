@@ -17,7 +17,8 @@ object Pages {
     __obj.asInstanceOf[Pages]
   }
   
-  extension [Self <: Pages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
     
     inline def `setFull-color`(value: Double): Self = StObject.set(x, "full-color", value.asInstanceOf[js.Any])
     

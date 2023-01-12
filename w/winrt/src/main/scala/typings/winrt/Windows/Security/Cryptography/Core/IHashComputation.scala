@@ -18,7 +18,8 @@ object IHashComputation {
     __obj.asInstanceOf[IHashComputation]
   }
   
-  extension [Self <: IHashComputation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHashComputation] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: IBuffer => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

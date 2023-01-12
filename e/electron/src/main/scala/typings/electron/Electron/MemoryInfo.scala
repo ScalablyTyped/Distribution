@@ -32,7 +32,8 @@ object MemoryInfo {
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  extension [Self <: MemoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
     
     inline def setPeakWorkingSetSize(value: Double): Self = StObject.set(x, "peakWorkingSetSize", value.asInstanceOf[js.Any])
     

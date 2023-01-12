@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[GetTextComment]
     }
     
-    extension [Self <: GetTextComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTextComment] (val x: Self) extends AnyVal {
       
       inline def setExtracted(value: String): Self = StObject.set(x, "extracted", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[GetTextTranslation]
     }
     
-    extension [Self <: GetTextTranslation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTextTranslation] (val x: Self) extends AnyVal {
       
       inline def setComments(value: GetTextComment): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[GetTextTranslations]
     }
     
-    extension [Self <: GetTextTranslations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTextTranslations] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object srcGutterMod {
       __obj.asInstanceOf[Gutter]
     }
     
-    extension [Self <: Gutter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gutter] (val x: Self) extends AnyVal {
       
       inline def setDecorateMarker(value: (DisplayMarker, DecorationOptions) => Decoration): Self = StObject.set(x, "decorateMarker", js.Any.fromFunction2(value))
       
@@ -130,7 +131,8 @@ object srcGutterMod {
       __obj.asInstanceOf[GutterOptions]
     }
     
-    extension [Self <: GutterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GutterOptions] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object srcGutterMod {
       __obj.asInstanceOf[LineData]
     }
     
-    extension [Self <: LineData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineData] (val x: Self) extends AnyVal {
       
       inline def setBufferRow(value: Double): Self = StObject.set(x, "bufferRow", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object srcGutterMod {
       __obj.asInstanceOf[LineDataExtended]
     }
     
-    extension [Self <: LineDataExtended](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineDataExtended] (val x: Self) extends AnyVal {
       
       inline def setFoldable(value: Boolean): Self = StObject.set(x, "foldable", value.asInstanceOf[js.Any])
       

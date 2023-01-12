@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CodecovOptions]
     }
     
-    extension [Self <: CodecovOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecovOptions] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       

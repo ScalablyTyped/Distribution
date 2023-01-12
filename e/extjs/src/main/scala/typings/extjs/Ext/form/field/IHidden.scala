@@ -54,7 +54,8 @@ object IHidden {
     __obj.asInstanceOf[IHidden]
   }
   
-  extension [Self <: IHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHidden] (val x: Self) extends AnyVal {
     
     inline def setClearInvalid(value: () => Unit): Self = StObject.set(x, "clearInvalid", js.Any.fromFunction0(value))
     

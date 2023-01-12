@@ -20,7 +20,8 @@ object AjaxFileKnockout {
       __obj.asInstanceOf[IFileInputWrapper]
     }
     
-    extension [Self <: IFileInputWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileInputWrapper] (val x: Self) extends AnyVal {
       
       inline def setFileSelected(value: () => Boolean): Self = StObject.set(x, "fileSelected", js.Any.fromFunction0(value))
       

@@ -107,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Abs]
     }
     
-    extension [Self <: Abs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abs] (val x: Self) extends AnyVal {
       
       inline def setAbs(value: Boolean): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
       
@@ -306,7 +307,8 @@ object anon {
       __obj.asInstanceOf[WithMembers]
     }
     
-    extension [Self <: WithMembers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithMembers] (val x: Self) extends AnyVal {
       
       inline def setWithMembers(value: Boolean): Self = StObject.set(x, "withMembers", value.asInstanceOf[js.Any])
       

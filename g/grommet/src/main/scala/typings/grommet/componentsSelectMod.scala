@@ -101,7 +101,8 @@ object componentsSelectMod {
       __obj.asInstanceOf[BasicSelectProps]
     }
     
-    extension [Self <: BasicSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicSelectProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
@@ -280,7 +281,8 @@ object componentsSelectMod {
       __obj.asInstanceOf[SelectProps]
     }
     
-    extension [Self <: SelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
       
       inline def setClear(value: Boolean | Position): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

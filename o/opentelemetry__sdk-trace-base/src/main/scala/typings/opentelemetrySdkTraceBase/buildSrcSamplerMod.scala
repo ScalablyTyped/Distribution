@@ -84,7 +84,8 @@ object buildSrcSamplerMod {
       __obj.asInstanceOf[Sampler]
     }
     
-    extension [Self <: Sampler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sampler] (val x: Self) extends AnyVal {
       
       inline def setShouldSample(value: (Context, String, String, SpanKind, SpanAttributes, js.Array[Link]) => SamplingResult): Self = StObject.set(x, "shouldSample", js.Any.fromFunction6(value))
     }
@@ -111,7 +112,8 @@ object buildSrcSamplerMod {
       __obj.asInstanceOf[SamplingResult]
     }
     
-    extension [Self <: SamplingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingResult] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

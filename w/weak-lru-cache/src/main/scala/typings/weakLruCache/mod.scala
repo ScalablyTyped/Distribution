@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[LRFUExpirerOptions]
     }
     
-    extension [Self <: LRFUExpirerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LRFUExpirerOptions] (val x: Self) extends AnyVal {
       
       inline def setCleanupInterval(value: Double): Self = StObject.set(x, "cleanupInterval", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[WeakLRUCacheOptions]
     }
     
-    extension [Self <: WeakLRUCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakLRUCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
       

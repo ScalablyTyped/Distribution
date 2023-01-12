@@ -33,7 +33,8 @@ object BrowserStorage {
       __obj.asInstanceOf[CachedStorage]
     }
     
-    extension [Self <: CachedStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedStorage] (val x: Self) extends AnyVal {
       
       inline def setClead(value: () => Unit): Self = StObject.set(x, "clead", js.Any.fromFunction0(value))
       

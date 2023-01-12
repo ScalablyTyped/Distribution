@@ -37,7 +37,8 @@ object NavigationAnnotationsEventsOptions {
     __obj.asInstanceOf[NavigationAnnotationsEventsOptions]
   }
   
-  extension [Self <: NavigationAnnotationsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

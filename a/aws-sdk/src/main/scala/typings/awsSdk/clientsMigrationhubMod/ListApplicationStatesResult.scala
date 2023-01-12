@@ -23,7 +23,8 @@ object ListApplicationStatesResult {
     __obj.asInstanceOf[ListApplicationStatesResult]
   }
   
-  extension [Self <: ListApplicationStatesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationStatesResult] (val x: Self) extends AnyVal {
     
     inline def setApplicationStateList(value: ApplicationStateList): Self = StObject.set(x, "ApplicationStateList", value.asInstanceOf[js.Any])
     

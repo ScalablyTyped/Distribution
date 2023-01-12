@@ -34,7 +34,8 @@ object GoogleActionsOrdersV3Action {
     __obj.asInstanceOf[GoogleActionsOrdersV3Action]
   }
   
-  extension [Self <: GoogleActionsOrdersV3Action](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3Action] (val x: Self) extends AnyVal {
     
     inline def setActionMetadata(value: GoogleActionsOrdersV3ActionActionMetadata): Self = StObject.set(x, "actionMetadata", value.asInstanceOf[js.Any])
     

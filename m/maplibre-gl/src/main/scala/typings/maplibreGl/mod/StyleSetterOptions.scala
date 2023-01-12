@@ -15,7 +15,8 @@ object StyleSetterOptions {
     __obj.asInstanceOf[StyleSetterOptions]
   }
   
-  extension [Self <: StyleSetterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSetterOptions] (val x: Self) extends AnyVal {
     
     inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteControlPanelRequest {
     __obj.asInstanceOf[DeleteControlPanelRequest]
   }
   
-  extension [Self <: DeleteControlPanelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteControlPanelRequest] (val x: Self) extends AnyVal {
     
     inline def setControlPanelArn(value: string): Self = StObject.set(x, "ControlPanelArn", value.asInstanceOf[js.Any])
   }

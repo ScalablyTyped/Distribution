@@ -24,7 +24,8 @@ object libCommonInlayHintMod {
       __obj.asInstanceOf[InlayHintFeatureShape]
     }
     
-    extension [Self <: InlayHintFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setInlayHint(value: Refresh): Self = StObject.set(x, "inlayHint", value.asInstanceOf[js.Any])
     }

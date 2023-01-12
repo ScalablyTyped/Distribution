@@ -19,7 +19,8 @@ object DeleteByQueryRethrottleRequest {
     __obj.asInstanceOf[DeleteByQueryRethrottleRequest]
   }
   
-  extension [Self <: DeleteByQueryRethrottleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteByQueryRethrottleRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests_per_second(value: float): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     

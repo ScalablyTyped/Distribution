@@ -28,7 +28,8 @@ object DisassociateLinkRequest {
     __obj.asInstanceOf[DisassociateLinkRequest]
   }
   
-  extension [Self <: DisassociateLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

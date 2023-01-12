@@ -130,7 +130,8 @@ object libEsmComponentsButtonAbstractButtonMod {
       __obj.asInstanceOf[IButtonProps[E]]
     }
     
-    extension [Self <: IButtonProps[?], E /* <: HTMLButtonElement | HTMLAnchorElement */](x: Self & IButtonProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonProps[?], E /* <: HTMLButtonElement | HTMLAnchorElement */] (val x: Self & IButtonProps[E]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object libEsmComponentsButtonAbstractButtonMod {
       __obj.asInstanceOf[IButtonState]
     }
     
-    extension [Self <: IButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     }

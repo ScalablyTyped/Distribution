@@ -17,7 +17,8 @@ object AffixOptions {
     __obj.asInstanceOf[AffixOptions]
   }
   
-  extension [Self <: AffixOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffixOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double | CallBack | js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

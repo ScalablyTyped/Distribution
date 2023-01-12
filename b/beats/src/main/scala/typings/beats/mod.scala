@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Bin]
     }
     
-    extension [Self <: Bin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       

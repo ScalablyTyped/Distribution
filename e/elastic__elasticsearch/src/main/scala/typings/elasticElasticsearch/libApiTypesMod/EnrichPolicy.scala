@@ -25,7 +25,8 @@ object EnrichPolicy {
     __obj.asInstanceOf[EnrichPolicy]
   }
   
-  extension [Self <: EnrichPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrichPolicy] (val x: Self) extends AnyVal {
     
     inline def setElasticsearch_version(value: String): Self = StObject.set(x, "elasticsearch_version", value.asInstanceOf[js.Any])
     

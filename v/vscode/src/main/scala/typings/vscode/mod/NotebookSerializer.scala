@@ -35,7 +35,8 @@ object NotebookSerializer {
     __obj.asInstanceOf[NotebookSerializer]
   }
   
-  extension [Self <: NotebookSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookSerializer] (val x: Self) extends AnyVal {
     
     inline def setDeserializeNotebook(value: (js.typedarray.Uint8Array, CancellationToken) => NotebookData | Thenable[NotebookData]): Self = StObject.set(x, "deserializeNotebook", js.Any.fromFunction2(value))
     

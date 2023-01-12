@@ -229,7 +229,8 @@ object IObservable {
     __obj.asInstanceOf[IObservable]
   }
   
-  extension [Self <: IObservable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObservable] (val x: Self) extends AnyVal {
     
     inline def setAddEvents(value: /* eventNames */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
     

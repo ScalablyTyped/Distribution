@@ -33,7 +33,8 @@ object EntitlementUsage {
     __obj.asInstanceOf[EntitlementUsage]
   }
   
-  extension [Self <: EntitlementUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitlementUsage] (val x: Self) extends AnyVal {
     
     inline def setConsumedValue(value: String): Self = StObject.set(x, "ConsumedValue", value.asInstanceOf[js.Any])
     

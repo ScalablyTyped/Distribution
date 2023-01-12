@@ -19,7 +19,8 @@ object ResourceLimits {
     __obj.asInstanceOf[ResourceLimits]
   }
   
-  extension [Self <: ResourceLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceLimits] (val x: Self) extends AnyVal {
     
     inline def setMemoryBytes(value: Double): Self = StObject.set(x, "MemoryBytes", value.asInstanceOf[js.Any])
     

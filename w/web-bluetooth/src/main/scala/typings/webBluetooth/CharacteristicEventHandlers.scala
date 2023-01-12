@@ -16,7 +16,8 @@ object CharacteristicEventHandlers {
     __obj.asInstanceOf[CharacteristicEventHandlers]
   }
   
-  extension [Self <: CharacteristicEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacteristicEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOncharacteristicvaluechanged(value: Event => Any): Self = StObject.set(x, "oncharacteristicvaluechanged", js.Any.fromFunction1(value))
   }

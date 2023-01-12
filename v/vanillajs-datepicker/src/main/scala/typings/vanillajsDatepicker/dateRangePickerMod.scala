@@ -69,7 +69,8 @@ object dateRangePickerMod {
       __obj.asInstanceOf[DateRangePickerOptions]
     }
     
-    extension [Self <: DateRangePickerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowOneSidedRange(value: Boolean): Self = StObject.set(x, "allowOneSidedRange", value.asInstanceOf[js.Any])
       

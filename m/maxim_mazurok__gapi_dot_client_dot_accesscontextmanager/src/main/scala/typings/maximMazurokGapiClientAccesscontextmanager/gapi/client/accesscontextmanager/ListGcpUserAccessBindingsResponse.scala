@@ -19,7 +19,8 @@ object ListGcpUserAccessBindingsResponse {
     __obj.asInstanceOf[ListGcpUserAccessBindingsResponse]
   }
   
-  extension [Self <: ListGcpUserAccessBindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGcpUserAccessBindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setGcpUserAccessBindings(value: js.Array[GcpUserAccessBinding]): Self = StObject.set(x, "gcpUserAccessBindings", value.asInstanceOf[js.Any])
     

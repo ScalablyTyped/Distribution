@@ -119,7 +119,8 @@ object LogEntry {
     __obj.asInstanceOf[LogEntry]
   }
   
-  extension [Self <: LogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
     
     inline def setHttpRequest(value: HttpRequest): Self = StObject.set(x, "httpRequest", value.asInstanceOf[js.Any])
     

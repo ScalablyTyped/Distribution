@@ -28,7 +28,8 @@ object ListAliasesRequest {
     __obj.asInstanceOf[ListAliasesRequest]
   }
   
-  extension [Self <: ListAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

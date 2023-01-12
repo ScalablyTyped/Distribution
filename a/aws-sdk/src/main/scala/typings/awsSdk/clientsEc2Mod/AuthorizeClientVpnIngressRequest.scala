@@ -48,7 +48,8 @@ object AuthorizeClientVpnIngressRequest {
     __obj.asInstanceOf[AuthorizeClientVpnIngressRequest]
   }
   
-  extension [Self <: AuthorizeClientVpnIngressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeClientVpnIngressRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessGroupId(value: String): Self = StObject.set(x, "AccessGroupId", value.asInstanceOf[js.Any])
     

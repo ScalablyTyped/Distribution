@@ -53,7 +53,8 @@ object IgGridGroupByColumnSettingsSummaries {
     __obj.asInstanceOf[IgGridGroupByColumnSettingsSummaries]
   }
   
-  extension [Self <: IgGridGroupByColumnSettingsSummaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupByColumnSettingsSummaries] (val x: Self) extends AnyVal {
     
     inline def setCustomSummary(value: String | js.Function): Self = StObject.set(x, "customSummary", value.asInstanceOf[js.Any])
     

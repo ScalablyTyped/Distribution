@@ -38,7 +38,8 @@ object AwsDynamoDbTableProvisionedThroughput {
     __obj.asInstanceOf[AwsDynamoDbTableProvisionedThroughput]
   }
   
-  extension [Self <: AwsDynamoDbTableProvisionedThroughput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableProvisionedThroughput] (val x: Self) extends AnyVal {
     
     inline def setLastDecreaseDateTime(value: NonEmptyString): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
     

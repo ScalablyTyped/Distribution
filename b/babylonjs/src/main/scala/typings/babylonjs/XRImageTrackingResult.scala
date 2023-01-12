@@ -26,7 +26,8 @@ object XRImageTrackingResult {
     __obj.asInstanceOf[XRImageTrackingResult]
   }
   
-  extension [Self <: XRImageTrackingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRImageTrackingResult] (val x: Self) extends AnyVal {
     
     inline def setImageSpace(value: XRSpace): Self = StObject.set(x, "imageSpace", value.asInstanceOf[js.Any])
     

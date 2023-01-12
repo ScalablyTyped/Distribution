@@ -15,7 +15,8 @@ object EnumValuesCanOptOut {
     __obj.asInstanceOf[EnumValuesCanOptOut]
   }
   
-  extension [Self <: EnumValuesCanOptOut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCanOptOut] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: CanOptOut): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

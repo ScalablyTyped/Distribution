@@ -100,7 +100,8 @@ object AppsDynamiteDriveMetadata {
     __obj.asInstanceOf[AppsDynamiteDriveMetadata]
   }
   
-  extension [Self <: AppsDynamiteDriveMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteDriveMetadata] (val x: Self) extends AnyVal {
     
     inline def setAclFixRequest(value: AppsDynamiteDriveMetadataAclFixRequest): Self = StObject.set(x, "aclFixRequest", value.asInstanceOf[js.Any])
     

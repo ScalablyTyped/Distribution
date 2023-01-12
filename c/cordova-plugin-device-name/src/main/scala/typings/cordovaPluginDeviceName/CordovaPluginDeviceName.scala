@@ -24,7 +24,8 @@ object CordovaPluginDeviceName {
       __obj.asInstanceOf[typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName]
     }
     
-    extension [Self <: typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cordovaPluginDeviceName.CordovaPluginDeviceName.CordovaPluginDeviceName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

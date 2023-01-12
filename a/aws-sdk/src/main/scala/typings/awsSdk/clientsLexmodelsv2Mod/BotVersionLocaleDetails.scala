@@ -18,7 +18,8 @@ object BotVersionLocaleDetails {
     __obj.asInstanceOf[BotVersionLocaleDetails]
   }
   
-  extension [Self <: BotVersionLocaleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotVersionLocaleDetails] (val x: Self) extends AnyVal {
     
     inline def setSourceBotVersion(value: BotVersion): Self = StObject.set(x, "sourceBotVersion", value.asInstanceOf[js.Any])
   }

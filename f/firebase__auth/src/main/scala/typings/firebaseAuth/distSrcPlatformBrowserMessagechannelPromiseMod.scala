@@ -29,7 +29,8 @@ object distSrcPlatformBrowserMessagechannelPromiseMod {
       __obj.asInstanceOf[PromiseFulfilledResult[T]]
     }
     
-    extension [Self <: PromiseFulfilledResult[?], T](x: Self & PromiseFulfilledResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseFulfilledResult[?], T] (val x: Self & PromiseFulfilledResult[T]) extends AnyVal {
       
       inline def setFulfilled(value: `true`): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distSrcPlatformBrowserMessagechannelPromiseMod {
       __obj.asInstanceOf[PromiseRejectedResult]
     }
     
-    extension [Self <: PromiseRejectedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromiseRejectedResult] (val x: Self) extends AnyVal {
       
       inline def setFulfilled(value: `false`): Self = StObject.set(x, "fulfilled", value.asInstanceOf[js.Any])
       

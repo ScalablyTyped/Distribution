@@ -92,7 +92,8 @@ object StrokeAttributes {
     __obj.asInstanceOf[StrokeAttributes]
   }
   
-  extension [Self <: StrokeAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeAttributes] (val x: Self) extends AnyVal {
     
     inline def setDashArray(value: SafeArray[Double]): Self = StObject.set(x, "DashArray", value.asInstanceOf[js.Any])
     

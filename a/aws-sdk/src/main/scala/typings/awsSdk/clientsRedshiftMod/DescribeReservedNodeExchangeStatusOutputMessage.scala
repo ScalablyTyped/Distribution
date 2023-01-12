@@ -23,7 +23,8 @@ object DescribeReservedNodeExchangeStatusOutputMessage {
     __obj.asInstanceOf[DescribeReservedNodeExchangeStatusOutputMessage]
   }
   
-  extension [Self <: DescribeReservedNodeExchangeStatusOutputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedNodeExchangeStatusOutputMessage] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

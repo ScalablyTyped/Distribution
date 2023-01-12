@@ -26,7 +26,8 @@ object libTypesReanimated2HookUseDerivedValueMod {
       __obj.asInstanceOf[DerivedValue[T]]
     }
     
-    extension [Self <: DerivedValue[?], T](x: Self & DerivedValue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DerivedValue[?], T] (val x: Self & DerivedValue[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

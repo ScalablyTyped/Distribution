@@ -30,7 +30,8 @@ object PurchaseItem {
     __obj.asInstanceOf[PurchaseItem]
   }
   
-  extension [Self <: PurchaseItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseItem] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: DIGITAL_GOODS | PHYSICAL_GOODS | DONATION): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

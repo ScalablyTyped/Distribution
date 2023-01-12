@@ -30,7 +30,8 @@ object buildSrcExportSpanExporterMod {
       __obj.asInstanceOf[SpanExporter]
     }
     
-    extension [Self <: SpanExporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanExporter] (val x: Self) extends AnyVal {
       
       inline def setExport(value: (js.Array[ReadableSpan], js.Function1[/* result */ ExportResult, Unit]) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction2(value))
       

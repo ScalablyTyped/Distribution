@@ -52,7 +52,8 @@ object DayAriaLabelFormat {
     __obj.asInstanceOf[DayAriaLabelFormat]
   }
   
-  extension [Self <: DayAriaLabelFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayAriaLabelFormat] (val x: Self) extends AnyVal {
     
     inline def setDayAriaLabelFormat(value: String): Self = StObject.set(x, "dayAriaLabelFormat", value.asInstanceOf[js.Any])
     

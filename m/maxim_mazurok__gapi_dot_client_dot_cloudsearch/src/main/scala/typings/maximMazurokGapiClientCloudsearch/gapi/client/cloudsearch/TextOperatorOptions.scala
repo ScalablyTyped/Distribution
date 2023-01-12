@@ -28,7 +28,8 @@ object TextOperatorOptions {
     __obj.asInstanceOf[TextOperatorOptions]
   }
   
-  extension [Self <: TextOperatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOperatorOptions] (val x: Self) extends AnyVal {
     
     inline def setExactMatchWithOperator(value: Boolean): Self = StObject.set(x, "exactMatchWithOperator", value.asInstanceOf[js.Any])
     

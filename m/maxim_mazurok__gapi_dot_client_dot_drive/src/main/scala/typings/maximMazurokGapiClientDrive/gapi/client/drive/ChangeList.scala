@@ -28,7 +28,8 @@ object ChangeList {
     __obj.asInstanceOf[ChangeList]
   }
   
-  extension [Self <: ChangeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeList] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: js.Array[Change]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

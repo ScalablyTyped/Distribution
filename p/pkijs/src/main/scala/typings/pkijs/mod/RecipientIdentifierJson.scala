@@ -18,7 +18,8 @@ object RecipientIdentifierJson {
     __obj.asInstanceOf[RecipientIdentifierJson]
   }
   
-  extension [Self <: RecipientIdentifierJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientIdentifierJson] (val x: Self) extends AnyVal {
     
     inline def setValue(value: IssuerAndSerialNumberJson | OctetStringJson): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

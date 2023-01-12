@@ -23,7 +23,8 @@ object ServerSummary {
     __obj.asInstanceOf[ServerSummary]
   }
   
-  extension [Self <: ServerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerSummary] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

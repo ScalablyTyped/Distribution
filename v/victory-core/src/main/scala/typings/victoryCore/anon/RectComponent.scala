@@ -22,7 +22,8 @@ object RectComponent {
     __obj.asInstanceOf[RectComponent]
   }
   
-  extension [Self <: RectComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectComponent] (val x: Self) extends AnyVal {
     
     inline def setCircleComponent(value: Element): Self = StObject.set(x, "circleComponent", value.asInstanceOf[js.Any])
     

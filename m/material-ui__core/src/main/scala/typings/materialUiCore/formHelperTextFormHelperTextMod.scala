@@ -73,7 +73,8 @@ object formHelperTextFormHelperTextMod extends Shortcut {
       __obj.asInstanceOf[FormHelperTextTypeMap[P, D]]
     }
     
-    extension [Self <: FormHelperTextTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (FormHelperTextTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormHelperTextTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (FormHelperTextTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: FormHelperTextClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

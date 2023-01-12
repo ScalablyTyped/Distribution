@@ -21,7 +21,8 @@ object WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
     __obj.asInstanceOf[WiFiDirectServiceAutoAcceptSessionConnectedEventArgs]
   }
   
-  extension [Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSession(value: WiFiDirectServiceSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
     

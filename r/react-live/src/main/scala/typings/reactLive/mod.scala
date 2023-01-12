@@ -194,7 +194,8 @@ object mod {
       __obj.asInstanceOf[ContextProps]
     }
     
-    extension [Self <: ContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextProps] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -801,7 +802,8 @@ object mod {
       __obj.asInstanceOf[EditorProps]
     }
     
-    extension [Self <: EditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2539,7 +2541,8 @@ object mod {
       __obj.asInstanceOf[LiveEditorProps]
     }
     
-    extension [Self <: LiveEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -4279,7 +4282,8 @@ object mod {
       __obj.asInstanceOf[LiveProviderProps]
     }
     
-    extension [Self <: LiveProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveProviderProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object FullPageEvent {
     __obj.asInstanceOf[FullPageEvent]
   }
   
-  extension [Self <: FullPageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullPageEvent] (val x: Self) extends AnyVal {
     
     inline def setFullPage(value: Boolean): Self = StObject.set(x, "fullPage", value.asInstanceOf[js.Any])
   }

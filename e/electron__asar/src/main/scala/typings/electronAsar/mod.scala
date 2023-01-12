@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[ArchiveHeader]
     }
     
-    extension [Self <: ArchiveHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArchiveHeader] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: DirectoryRecord): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[CreateOptions]
     }
     
-    extension [Self <: CreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
       
       inline def setDot(value: Boolean): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object mod {
       __obj.asInstanceOf[DirectoryMetadata]
     }
     
-    extension [Self <: DirectoryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryMetadata] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: StringDictionary[EntryMetadata]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     }
@@ -161,7 +164,8 @@ object mod {
       __obj.asInstanceOf[DirectoryRecord]
     }
     
-    extension [Self <: DirectoryRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryRecord] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Record[String, DirectoryRecord | FileRecord]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     }
@@ -178,7 +182,8 @@ object mod {
       __obj.asInstanceOf[EntryMetadata]
     }
     
-    extension [Self <: EntryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryMetadata] (val x: Self) extends AnyVal {
       
       inline def setUnpacked(value: Boolean): Self = StObject.set(x, "unpacked", value.asInstanceOf[js.Any])
     }
@@ -202,7 +207,8 @@ object mod {
       __obj.asInstanceOf[FileMetadata]
     }
     
-    extension [Self <: FileMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileMetadata] (val x: Self) extends AnyVal {
       
       inline def setExecutable(value: `true`): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
       
@@ -235,7 +241,8 @@ object mod {
       __obj.asInstanceOf[FileRecord]
     }
     
-    extension [Self <: FileRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileRecord] (val x: Self) extends AnyVal {
       
       inline def setExecutable(value: Boolean): Self = StObject.set(x, "executable", value.asInstanceOf[js.Any])
       
@@ -279,7 +286,8 @@ object mod {
       __obj.asInstanceOf[LinkMetadata]
     }
     
-    extension [Self <: LinkMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkMetadata] (val x: Self) extends AnyVal {
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     }
@@ -296,7 +304,8 @@ object mod {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setIsPack(value: Boolean): Self = StObject.set(x, "isPack", value.asInstanceOf[js.Any])
     }

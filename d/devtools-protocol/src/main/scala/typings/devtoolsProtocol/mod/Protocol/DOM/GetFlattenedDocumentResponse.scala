@@ -18,7 +18,8 @@ object GetFlattenedDocumentResponse {
     __obj.asInstanceOf[GetFlattenedDocumentResponse]
   }
   
-  extension [Self <: GetFlattenedDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFlattenedDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

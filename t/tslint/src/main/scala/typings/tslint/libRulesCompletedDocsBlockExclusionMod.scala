@@ -32,7 +32,8 @@ object libRulesCompletedDocsBlockExclusionMod {
       __obj.asInstanceOf[IBlockExclusionDescriptor]
     }
     
-    extension [Self <: IBlockExclusionDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBlockExclusionDescriptor] (val x: Self) extends AnyVal {
       
       inline def setVisibilities(value: js.Array[Visibility]): Self = StObject.set(x, "visibilities", value.asInstanceOf[js.Any])
       

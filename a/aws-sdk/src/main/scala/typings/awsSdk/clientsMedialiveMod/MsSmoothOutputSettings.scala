@@ -24,7 +24,8 @@ object MsSmoothOutputSettings {
     __obj.asInstanceOf[MsSmoothOutputSettings]
   }
   
-  extension [Self <: MsSmoothOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsSmoothOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setH265PackagingType(value: MsSmoothH265PackagingType): Self = StObject.set(x, "H265PackagingType", value.asInstanceOf[js.Any])
     

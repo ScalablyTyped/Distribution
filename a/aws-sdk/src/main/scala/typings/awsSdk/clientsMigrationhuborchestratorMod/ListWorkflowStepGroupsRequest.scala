@@ -28,7 +28,8 @@ object ListWorkflowStepGroupsRequest {
     __obj.asInstanceOf[ListWorkflowStepGroupsRequest]
   }
   
-  extension [Self <: ListWorkflowStepGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkflowStepGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

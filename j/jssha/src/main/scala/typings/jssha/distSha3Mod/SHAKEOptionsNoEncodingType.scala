@@ -15,7 +15,8 @@ object SHAKEOptionsNoEncodingType {
     __obj.asInstanceOf[SHAKEOptionsNoEncodingType]
   }
   
-  extension [Self <: SHAKEOptionsNoEncodingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SHAKEOptionsNoEncodingType] (val x: Self) extends AnyVal {
     
     inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object VP8CodecSettings {
     __obj.asInstanceOf[VP8CodecSettings]
   }
   
-  extension [Self <: VP8CodecSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VP8CodecSettings] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: VP8): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

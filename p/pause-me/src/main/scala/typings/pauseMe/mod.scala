@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[PausableTimeout]
     }
     
-    extension [Self <: PausableTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PausableTimeout] (val x: Self) extends AnyVal {
       
       inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
       

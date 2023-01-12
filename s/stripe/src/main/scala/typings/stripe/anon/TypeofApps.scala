@@ -34,7 +34,8 @@ object TypeofApps {
     __obj.asInstanceOf[TypeofApps]
   }
   
-  extension [Self <: TypeofApps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofApps] (val x: Self) extends AnyVal {
     
     inline def setSecret(value: TypeofSecret): Self = StObject.set(x, "Secret", value.asInstanceOf[js.Any])
     

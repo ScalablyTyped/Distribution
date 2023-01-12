@@ -86,7 +86,8 @@ object anon {
       __obj.asInstanceOf[TeenProcessExecOptionsisB]
     }
     
-    extension [Self <: TeenProcessExecOptionsisB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeenProcessExecOptionsisB] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String | URL_): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

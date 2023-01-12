@@ -78,7 +78,8 @@ object SensorStatisticsSummary {
     __obj.asInstanceOf[SensorStatisticsSummary]
   }
   
-  extension [Self <: SensorStatisticsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorStatisticsSummary] (val x: Self) extends AnyVal {
     
     inline def setCategoricalValues(value: CategoricalValues): Self = StObject.set(x, "CategoricalValues", value.asInstanceOf[js.Any])
     

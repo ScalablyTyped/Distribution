@@ -361,7 +361,8 @@ object libSettingregistryMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setConnector(value: IDataConnector[IPlugin, String, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
@@ -620,7 +621,8 @@ object libSettingregistryMod {
         __obj.asInstanceOf[typings.jupyterlabSettingregistry.libSettingregistryMod.Settings.IOptions]
       }
       
-      extension [Self <: typings.jupyterlabSettingregistry.libSettingregistryMod.Settings.IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabSettingregistry.libSettingregistryMod.Settings.IOptions] (val x: Self) extends AnyVal {
         
         inline def setPlugin(value: IPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
         
@@ -686,7 +688,8 @@ object libSettingregistryMod {
         __obj.asInstanceOf[IError]
       }
       
-      extension [Self <: IError](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IError] (val x: Self) extends AnyVal {
         
         inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
         

@@ -28,7 +28,8 @@ object OIDCConfigServerRequest {
     __obj.asInstanceOf[OIDCConfigServerRequest]
   }
   
-  extension [Self <: OIDCConfigServerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIDCConfigServerRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

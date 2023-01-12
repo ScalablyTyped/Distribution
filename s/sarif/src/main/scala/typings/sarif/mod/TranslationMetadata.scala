@@ -48,7 +48,8 @@ object TranslationMetadata {
     __obj.asInstanceOf[TranslationMetadata]
   }
   
-  extension [Self <: TranslationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationMetadata] (val x: Self) extends AnyVal {
     
     inline def setDownloadUri(value: String): Self = StObject.set(x, "downloadUri", value.asInstanceOf[js.Any])
     

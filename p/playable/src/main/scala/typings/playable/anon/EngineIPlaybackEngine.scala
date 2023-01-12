@@ -16,7 +16,8 @@ object EngineIPlaybackEngine {
     __obj.asInstanceOf[EngineIPlaybackEngine]
   }
   
-  extension [Self <: EngineIPlaybackEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineIPlaybackEngine] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
   }

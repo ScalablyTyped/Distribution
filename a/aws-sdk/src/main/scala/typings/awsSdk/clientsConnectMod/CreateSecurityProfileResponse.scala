@@ -23,7 +23,8 @@ object CreateSecurityProfileResponse {
     __obj.asInstanceOf[CreateSecurityProfileResponse]
   }
   
-  extension [Self <: CreateSecurityProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSecurityProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setSecurityProfileArn(value: ARN): Self = StObject.set(x, "SecurityProfileArn", value.asInstanceOf[js.Any])
     

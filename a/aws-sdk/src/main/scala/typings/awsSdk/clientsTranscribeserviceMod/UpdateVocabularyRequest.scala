@@ -33,7 +33,8 @@ object UpdateVocabularyRequest {
     __obj.asInstanceOf[UpdateVocabularyRequest]
   }
   
-  extension [Self <: UpdateVocabularyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVocabularyRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

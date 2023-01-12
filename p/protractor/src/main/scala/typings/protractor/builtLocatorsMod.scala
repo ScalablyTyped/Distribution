@@ -354,7 +354,8 @@ object builtLocatorsMod {
       __obj.asInstanceOf[ProtractorLocator]
     }
     
-    extension [Self <: ProtractorLocator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtractorLocator] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: /* index */ String => Locator): Self = StObject.set(x, "column", js.Any.fromFunction1(value))
       

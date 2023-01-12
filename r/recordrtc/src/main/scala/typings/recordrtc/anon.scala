@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[KinDiskStorageTypeBlob]
     }
     
-    extension [Self <: KinDiskStorageTypeBlob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinDiskStorageTypeBlob] (val x: Self) extends AnyVal {
       
       inline def setAudioBlob(value: Blob): Self = StObject.set(x, "audioBlob", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[OnRecordingStopped]
     }
     
-    extension [Self <: OnRecordingStopped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRecordingStopped] (val x: Self) extends AnyVal {
       
       inline def setOnRecordingStopped(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "onRecordingStopped", js.Any.fromFunction1(value))
     }

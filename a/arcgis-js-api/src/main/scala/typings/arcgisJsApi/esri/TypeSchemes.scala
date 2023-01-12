@@ -46,7 +46,8 @@ object TypeSchemes {
     __obj.asInstanceOf[TypeSchemes]
   }
   
-  extension [Self <: TypeSchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeSchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object WorkItemQueryClause {
     __obj.asInstanceOf[WorkItemQueryClause]
   }
   
-  extension [Self <: WorkItemQueryClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemQueryClause] (val x: Self) extends AnyVal {
     
     inline def setClauses(value: js.Array[WorkItemQueryClause]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     

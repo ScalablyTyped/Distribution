@@ -19,7 +19,8 @@ object AttachmentsToolbarButtonDescriptor {
     __obj.asInstanceOf[AttachmentsToolbarButtonDescriptor]
   }
   
-  extension [Self <: AttachmentsToolbarButtonDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsToolbarButtonDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

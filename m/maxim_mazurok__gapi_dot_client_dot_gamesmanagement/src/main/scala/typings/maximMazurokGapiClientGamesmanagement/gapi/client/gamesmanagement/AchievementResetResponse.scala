@@ -28,7 +28,8 @@ object AchievementResetResponse {
     __obj.asInstanceOf[AchievementResetResponse]
   }
   
-  extension [Self <: AchievementResetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementResetResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: String): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     

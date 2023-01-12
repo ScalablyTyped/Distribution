@@ -63,7 +63,8 @@ object ConflictMetadata {
     __obj.asInstanceOf[ConflictMetadata]
   }
   
-  extension [Self <: ConflictMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConflictMetadata] (val x: Self) extends AnyVal {
     
     inline def setContentConflict(value: IsContentConflict): Self = StObject.set(x, "contentConflict", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object AppsDynamiteReadReceiptsSettingsUpdatedMetadata {
     __obj.asInstanceOf[AppsDynamiteReadReceiptsSettingsUpdatedMetadata]
   }
   
-  extension [Self <: AppsDynamiteReadReceiptsSettingsUpdatedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteReadReceiptsSettingsUpdatedMetadata] (val x: Self) extends AnyVal {
     
     inline def setReadReceiptsEnabled(value: Boolean): Self = StObject.set(x, "readReceiptsEnabled", value.asInstanceOf[js.Any])
     

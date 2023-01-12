@@ -50,7 +50,8 @@ object XPatternField {
     __obj.asInstanceOf[XPatternField]
   }
   
-  extension [Self <: XPatternField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPatternField] (val x: Self) extends AnyVal {
     
     inline def setGetMasks(value: (js.Array[String], js.Array[String]) => Unit): Self = StObject.set(x, "getMasks", js.Any.fromFunction2(value))
     

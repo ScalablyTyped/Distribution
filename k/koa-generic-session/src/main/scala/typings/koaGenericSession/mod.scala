@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: SetOption): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[SessionIdStore[Ctx]]
     }
     
-    extension [Self <: SessionIdStore[?], Ctx](x: Self & SessionIdStore[Ctx]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionIdStore[?], Ctx] (val x: Self & SessionIdStore[Ctx]) extends AnyVal {
       
       inline def setGet(value: () => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[SessionOptions]
     }
     
-    extension [Self <: SessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object mod {
         __obj.asInstanceOf[typings.koaGenericSession.mod.koaAugmentingMod.Context]
       }
       
-      extension [Self <: typings.koaGenericSession.mod.koaAugmentingMod.Context](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.koaGenericSession.mod.koaAugmentingMod.Context] (val x: Self) extends AnyVal {
         
         inline def setRegenerateSession(value: () => js.Promise[Unit]): Self = StObject.set(x, "regenerateSession", js.Any.fromFunction0(value))
         

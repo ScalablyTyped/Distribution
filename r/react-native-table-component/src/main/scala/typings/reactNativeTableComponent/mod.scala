@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[ColProps]
     }
     
-    extension [Self <: ColProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[ColsProps]
     }
     
-    extension [Self <: ColsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColsProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -293,7 +296,8 @@ object mod {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -352,7 +356,8 @@ object mod {
       __obj.asInstanceOf[RowsProps]
     }
     
-    extension [Self <: RowsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowsProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[js.Array[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -407,7 +412,8 @@ object mod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -442,7 +448,8 @@ object mod {
       __obj.asInstanceOf[TableWrapperProps]
     }
     
-    extension [Self <: TableWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       

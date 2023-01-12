@@ -40,7 +40,8 @@ object baseHelpersFloatMod {
       __obj.asInstanceOf[FloatHelpersProps]
     }
     
-    extension [Self <: FloatHelpersProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatHelpersProps] (val x: Self) extends AnyVal {
       
       inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       

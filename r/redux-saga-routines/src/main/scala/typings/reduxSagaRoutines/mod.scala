@@ -548,7 +548,8 @@ object mod {
       __obj.asInstanceOf[ReduxFormPayload[TFormData, TProps]]
     }
     
-    extension [Self <: ReduxFormPayload[?, ?], TFormData, TProps](x: Self & (ReduxFormPayload[TFormData, TProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxFormPayload[?, ?], TFormData, TProps] (val x: Self & (ReduxFormPayload[TFormData, TProps])) extends AnyVal {
       
       inline def setProps(value: TProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       

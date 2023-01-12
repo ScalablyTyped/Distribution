@@ -34,7 +34,8 @@ object ToastTransitionProps {
     __obj.asInstanceOf[ToastTransitionProps]
   }
   
-  extension [Self <: ToastTransitionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastTransitionProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

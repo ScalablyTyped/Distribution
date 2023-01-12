@@ -66,7 +66,8 @@ object PartialTooltipProps {
     __obj.asInstanceOf[PartialTooltipProps]
   }
   
-  extension [Self <: PartialTooltipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTooltipProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

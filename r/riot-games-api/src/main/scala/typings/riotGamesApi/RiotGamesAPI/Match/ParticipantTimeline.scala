@@ -95,7 +95,8 @@ object ParticipantTimeline {
     __obj.asInstanceOf[ParticipantTimeline]
   }
   
-  extension [Self <: ParticipantTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantTimeline] (val x: Self) extends AnyVal {
     
     inline def setAncientGolemAssistsPerMinCounts(value: ParticipantTimelineData): Self = StObject.set(x, "ancientGolemAssistsPerMinCounts", value.asInstanceOf[js.Any])
     

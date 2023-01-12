@@ -18,7 +18,8 @@ object SetSecurityTokenServicePreferencesRequest {
     __obj.asInstanceOf[SetSecurityTokenServicePreferencesRequest]
   }
   
-  extension [Self <: SetSecurityTokenServicePreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSecurityTokenServicePreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalEndpointTokenVersion(value: globalEndpointTokenVersion): Self = StObject.set(x, "GlobalEndpointTokenVersion", value.asInstanceOf[js.Any])
   }

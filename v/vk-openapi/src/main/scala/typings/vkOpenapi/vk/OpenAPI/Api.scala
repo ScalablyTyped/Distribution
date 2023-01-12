@@ -18,7 +18,8 @@ object Api {
       __obj.asInstanceOf[API]
     }
     
-    extension [Self <: API](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: API] (val x: Self) extends AnyVal {
       
       inline def setCall(value: (String, ApiParams, js.Function1[/* response */ Any, Unit]) => Unit): Self = StObject.set(x, "call", js.Any.fromFunction3(value))
     }
@@ -37,7 +38,8 @@ object Api {
       __obj.asInstanceOf[ApiParams]
     }
     
-    extension [Self <: ApiParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiParams] (val x: Self) extends AnyVal {
       
       inline def setV(value: String): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }

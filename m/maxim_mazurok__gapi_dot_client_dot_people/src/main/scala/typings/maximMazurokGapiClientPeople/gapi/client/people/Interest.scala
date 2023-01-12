@@ -19,7 +19,8 @@ object Interest {
     __obj.asInstanceOf[Interest]
   }
   
-  extension [Self <: Interest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interest] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[GulpHtmlPrettifyOptions]
     }
     
-    extension [Self <: GulpHtmlPrettifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpHtmlPrettifyOptions] (val x: Self) extends AnyVal {
       
       inline def setIndent_char(value: String): Self = StObject.set(x, "indent_char", value.asInstanceOf[js.Any])
       

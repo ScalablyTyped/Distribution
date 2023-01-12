@@ -50,7 +50,8 @@ object SpatialInteractionManager {
     __obj.asInstanceOf[SpatialInteractionManager]
   }
   
-  extension [Self <: SpatialInteractionManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialInteractionManager] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object HKPOptions {
     __obj.asInstanceOf[HKPOptions]
   }
   
-  extension [Self <: HKPOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HKPOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     

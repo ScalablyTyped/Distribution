@@ -36,7 +36,8 @@ object ZoomViewModelProperties {
     __obj.asInstanceOf[ZoomViewModelProperties]
   }
   
-  extension [Self <: ZoomViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setCanZoomIn(value: Boolean): Self = StObject.set(x, "canZoomIn", value.asInstanceOf[js.Any])
     

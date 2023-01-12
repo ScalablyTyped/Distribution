@@ -20,7 +20,8 @@ object Markdown {
     __obj.asInstanceOf[Markdown]
   }
   
-  extension [Self <: Markdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Markdown] (val x: Self) extends AnyVal {
     
     inline def setMarkdown(value: Parser[Any]): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     

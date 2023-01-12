@@ -18,7 +18,8 @@ object DictKey {
     __obj.asInstanceOf[DictKey]
   }
   
-  extension [Self <: DictKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictKey] (val x: Self) extends AnyVal {
     
     inline def setServiceToken(value: String): Self = StObject.set(x, "ServiceToken", value.asInstanceOf[js.Any])
   }

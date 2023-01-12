@@ -37,7 +37,8 @@ object Message {
   inline def isResponse(): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ResponseMessage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")().asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ResponseMessage */ Boolean]
   inline def isResponse(message: Message): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ResponseMessage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isResponse")(message.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/messages.ResponseMessage */ Boolean]
   
-  extension [Self <: Message](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
     
     inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
   }

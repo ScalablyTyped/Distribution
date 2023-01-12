@@ -78,7 +78,8 @@ object XInputStream {
     __obj.asInstanceOf[XInputStream]
   }
   
-  extension [Self <: XInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInputStream] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: () => Double): Self = StObject.set(x, "available", js.Any.fromFunction0(value))
     

@@ -32,7 +32,8 @@ object MoveToLocationOption {
     __obj.asInstanceOf[MoveToLocationOption]
   }
   
-  extension [Self <: MoveToLocationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToLocationOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

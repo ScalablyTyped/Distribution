@@ -20,7 +20,8 @@ object QueryResultMetadata {
     __obj.asInstanceOf[QueryResultMetadata]
   }
   
-  extension [Self <: QueryResultMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultMetadata] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

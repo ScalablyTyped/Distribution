@@ -53,7 +53,8 @@ object CELLULAR {
     __obj.asInstanceOf[CELLULAR]
   }
   
-  extension [Self <: CELLULAR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CELLULAR] (val x: Self) extends AnyVal {
     
     inline def setCELLULAR(value: `2`): Self = StObject.set(x, "CELLULAR", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object UIkitFormOptions {
     __obj.asInstanceOf[UIkitFormOptions]
   }
   
-  extension [Self <: UIkitFormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitFormOptions] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: String | Boolean): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object StrokeOpacity {
     __obj.asInstanceOf[StrokeOpacity]
   }
   
-  extension [Self <: StrokeOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeOpacity] (val x: Self) extends AnyVal {
     
     inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     

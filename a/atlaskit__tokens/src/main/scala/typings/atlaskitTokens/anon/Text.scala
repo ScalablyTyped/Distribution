@@ -21,7 +21,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: AccentRed): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

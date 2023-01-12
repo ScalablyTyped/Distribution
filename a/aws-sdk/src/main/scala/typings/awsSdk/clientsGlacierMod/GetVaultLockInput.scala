@@ -23,7 +23,8 @@ object GetVaultLockInput {
     __obj.asInstanceOf[GetVaultLockInput]
   }
   
-  extension [Self <: GetVaultLockInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVaultLockInput] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

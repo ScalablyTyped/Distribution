@@ -28,7 +28,8 @@ object ThirdPartySourceRepository {
     __obj.asInstanceOf[ThirdPartySourceRepository]
   }
   
-  extension [Self <: ThirdPartySourceRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartySourceRepository] (val x: Self) extends AnyVal {
     
     inline def setConnectionArn(value: ConnectionArn): Self = StObject.set(x, "ConnectionArn", value.asInstanceOf[js.Any])
     

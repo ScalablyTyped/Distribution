@@ -17,7 +17,8 @@ object TeleportProps {
     __obj.asInstanceOf[TeleportProps]
   }
   
-  extension [Self <: TeleportProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeleportProps] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

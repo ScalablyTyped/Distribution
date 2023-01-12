@@ -47,7 +47,8 @@ object PlusBluetoothBluetoothcharacteristicProperties {
     __obj.asInstanceOf[PlusBluetoothBluetoothcharacteristicProperties]
   }
   
-  extension [Self <: PlusBluetoothBluetoothcharacteristicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusBluetoothBluetoothcharacteristicProperties] (val x: Self) extends AnyVal {
     
     inline def setIndicate(value: Boolean): Self = StObject.set(x, "indicate", value.asInstanceOf[js.Any])
     

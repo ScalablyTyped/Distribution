@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: typings.algoliaTransporter.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Methods[TMethods, TClient]]
     }
     
-    extension [Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]] */, TClient](x: Self & (Methods[TMethods, TClient])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods[?, ?], TMethods /* <: StringDictionary[js.Function1[/* base */ TClient, js.Function1[/* args */ Any, Any]]] */, TClient] (val x: Self & (Methods[TMethods, TClient])) extends AnyVal {
       
       inline def setMethods(value: TMethods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromiseany]
     }
     
-    extension [Self <: ReadonlyPromiseany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPromiseany] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: () => js.Promise[Any | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
@@ -130,7 +133,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyPromisevoid]
     }
     
-    extension [Self <: ReadonlyPromisevoid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyPromisevoid] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: () => js.Promise[Unit | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
@@ -151,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Transporter]
     }
     
-    extension [Self <: Transporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transporter] (val x: Self) extends AnyVal {
       
       inline def setTransporter(value: typings.algoliaTransporter.mod.Transporter): Self = StObject.set(x, "transporter", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object PostDispatch {
     __obj.asInstanceOf[PostDispatch[TTarget]]
   }
   
-  extension [Self <: PostDispatch[?], TTarget](x: Self & PostDispatch[TTarget]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostDispatch[?], TTarget] (val x: Self & PostDispatch[TTarget]) extends AnyVal {
     
     inline def setPostDispatch(value: Event => Unit): Self = StObject.set(x, "postDispatch", js.Any.fromFunction1(value))
   }

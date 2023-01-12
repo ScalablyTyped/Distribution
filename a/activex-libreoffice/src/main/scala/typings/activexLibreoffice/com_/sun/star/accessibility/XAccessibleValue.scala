@@ -94,7 +94,8 @@ object XAccessibleValue {
     __obj.asInstanceOf[XAccessibleValue]
   }
   
-  extension [Self <: XAccessibleValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleValue] (val x: Self) extends AnyVal {
     
     inline def setCurrentValue(value: Any): Self = StObject.set(x, "CurrentValue", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ArrayCollisionMatrix {
     __obj.asInstanceOf[ArrayCollisionMatrix]
   }
   
-  extension [Self <: ArrayCollisionMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayCollisionMatrix] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (Double, Double) => Double): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     

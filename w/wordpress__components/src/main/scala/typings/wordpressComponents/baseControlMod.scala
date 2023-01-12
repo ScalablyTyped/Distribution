@@ -56,7 +56,8 @@ object baseControlMod {
         __obj.asInstanceOf[ControlProps]
       }
       
-      extension [Self <: ControlProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ControlProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object baseControlMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -121,7 +123,8 @@ object baseControlMod {
         __obj.asInstanceOf[VisualLabelProps]
       }
       
-      extension [Self <: VisualLabelProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: VisualLabelProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object StrategyOnFullOptions {
     __obj.asInstanceOf[StrategyOnFullOptions]
   }
   
-  extension [Self <: StrategyOnFullOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategyOnFullOptions] (val x: Self) extends AnyVal {
     
     inline def setOverwriteOldestData(value: `1`): Self = StObject.set(x, "OverwriteOldestData", value.asInstanceOf[js.Any])
     

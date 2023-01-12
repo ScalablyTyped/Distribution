@@ -31,7 +31,8 @@ object PartialHookData {
     __obj.asInstanceOf[PartialHookData]
   }
   
-  extension [Self <: PartialHookData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialHookData] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

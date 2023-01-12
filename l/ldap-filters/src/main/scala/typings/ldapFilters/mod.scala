@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[Attribute_]
     }
     
-    extension [Self <: Attribute_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute_] (val x: Self) extends AnyVal {
       
       inline def setApprox(value: String => Filter): Self = StObject.set(x, "approx", js.Any.fromFunction1(value))
       

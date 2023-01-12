@@ -37,7 +37,8 @@ object ISkeletonViewerDisplayOptions {
     __obj.asInstanceOf[ISkeletonViewerDisplayOptions]
   }
   
-  extension [Self <: ISkeletonViewerDisplayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISkeletonViewerDisplayOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalAxesSize(value: Double): Self = StObject.set(x, "localAxesSize", value.asInstanceOf[js.Any])
     

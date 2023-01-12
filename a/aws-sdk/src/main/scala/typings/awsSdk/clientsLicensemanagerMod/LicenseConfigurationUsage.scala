@@ -43,7 +43,8 @@ object LicenseConfigurationUsage {
     __obj.asInstanceOf[LicenseConfigurationUsage]
   }
   
-  extension [Self <: LicenseConfigurationUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseConfigurationUsage] (val x: Self) extends AnyVal {
     
     inline def setAssociationTime(value: js.Date): Self = StObject.set(x, "AssociationTime", value.asInstanceOf[js.Any])
     

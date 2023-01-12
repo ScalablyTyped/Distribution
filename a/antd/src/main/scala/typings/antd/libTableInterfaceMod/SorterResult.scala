@@ -21,7 +21,8 @@ object SorterResult {
     __obj.asInstanceOf[SorterResult[RecordType]]
   }
   
-  extension [Self <: SorterResult[?], RecordType](x: Self & SorterResult[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SorterResult[?], RecordType] (val x: Self & SorterResult[RecordType]) extends AnyVal {
     
     inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

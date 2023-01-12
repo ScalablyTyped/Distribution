@@ -33,7 +33,8 @@ object ListAssessmentRunAgentsRequest {
     __obj.asInstanceOf[ListAssessmentRunAgentsRequest]
   }
   
-  extension [Self <: ListAssessmentRunAgentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentRunAgentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentRunArn(value: Arn): Self = StObject.set(x, "assessmentRunArn", value.asInstanceOf[js.Any])
     

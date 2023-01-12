@@ -18,7 +18,8 @@ object ExtensionPackage {
     __obj.asInstanceOf[ExtensionPackage]
   }
   
-  extension [Self <: ExtensionPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionPackage] (val x: Self) extends AnyVal {
     
     inline def setExtensionManifest(value: String): Self = StObject.set(x, "extensionManifest", value.asInstanceOf[js.Any])
   }

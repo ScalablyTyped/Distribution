@@ -29,7 +29,8 @@ object TextHeightBehaviorEnumValues {
     __obj.asInstanceOf[TextHeightBehaviorEnumValues]
   }
   
-  extension [Self <: TextHeightBehaviorEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextHeightBehaviorEnumValues] (val x: Self) extends AnyVal {
     
     inline def setAll(value: TextHeightBehavior): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     

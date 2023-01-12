@@ -88,7 +88,8 @@ object ojrouterMod {
       __obj.asInstanceOf[ModuleConfigType]
     }
     
-    extension [Self <: ModuleConfigType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleConfigType] (val x: Self) extends AnyVal {
       
       inline def setLifecycleListener(value: Attached): Self = StObject.set(x, "lifecycleListener", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object ojrouterMod {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
         
@@ -249,7 +251,8 @@ object ojrouterMod {
       }
     }
     
-    extension [Self <: RouterState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterState] (val x: Self) extends AnyVal {
       
       inline def setCanEnter(value: () => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "canEnter", js.Any.fromFunction0(value))
       

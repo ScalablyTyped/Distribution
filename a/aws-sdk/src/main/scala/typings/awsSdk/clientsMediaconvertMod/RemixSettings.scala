@@ -28,7 +28,8 @@ object RemixSettings {
     __obj.asInstanceOf[RemixSettings]
   }
   
-  extension [Self <: RemixSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemixSettings] (val x: Self) extends AnyVal {
     
     inline def setChannelMapping(value: ChannelMapping): Self = StObject.set(x, "ChannelMapping", value.asInstanceOf[js.Any])
     

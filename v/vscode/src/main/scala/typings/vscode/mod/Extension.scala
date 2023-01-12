@@ -71,7 +71,8 @@ object Extension {
     __obj.asInstanceOf[Extension[T]]
   }
   
-  extension [Self <: Extension[?], T](x: Self & Extension[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extension[?], T] (val x: Self & Extension[T]) extends AnyVal {
     
     inline def setActivate(value: () => Thenable[T]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
     

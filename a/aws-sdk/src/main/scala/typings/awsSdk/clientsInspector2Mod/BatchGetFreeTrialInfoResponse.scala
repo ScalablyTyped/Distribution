@@ -23,7 +23,8 @@ object BatchGetFreeTrialInfoResponse {
     __obj.asInstanceOf[BatchGetFreeTrialInfoResponse]
   }
   
-  extension [Self <: BatchGetFreeTrialInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetFreeTrialInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: FreeTrialAccountInfoList): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

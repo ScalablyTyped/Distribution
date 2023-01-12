@@ -19,7 +19,8 @@ object MergeInfo {
     __obj.asInstanceOf[MergeInfo]
   }
   
-  extension [Self <: MergeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeInfo] (val x: Self) extends AnyVal {
     
     inline def setNewAlertId(value: String): Self = StObject.set(x, "newAlertId", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object IPackage {
     __obj.asInstanceOf[IPackage]
   }
   
-  extension [Self <: IPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPackage] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: IVectorView[Package]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object stretchCreateRendererParams {
     __obj.asInstanceOf[stretchCreateRendererParams]
   }
   
-  extension [Self <: stretchCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: stretchCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setBandId(value: Double): Self = StObject.set(x, "bandId", value.asInstanceOf[js.Any])
     

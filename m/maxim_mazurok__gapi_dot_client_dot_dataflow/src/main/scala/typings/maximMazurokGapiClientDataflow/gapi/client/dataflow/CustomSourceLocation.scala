@@ -16,7 +16,8 @@ object CustomSourceLocation {
     __obj.asInstanceOf[CustomSourceLocation]
   }
   
-  extension [Self <: CustomSourceLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSourceLocation] (val x: Self) extends AnyVal {
     
     inline def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     

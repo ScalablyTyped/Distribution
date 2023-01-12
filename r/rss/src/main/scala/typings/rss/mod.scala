@@ -61,7 +61,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[EnclosureObject]
       }
       
-      extension [Self <: EnclosureObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EnclosureObject] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
@@ -177,7 +178,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[FeedOptions]
       }
       
-      extension [Self <: FeedOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeedOptions] (val x: Self) extends AnyVal {
         
         inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
@@ -324,7 +326,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ItemOptions]
       }
       
-      extension [Self <: ItemOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemOptions] (val x: Self) extends AnyVal {
         
         inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
         
@@ -421,7 +424,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[XmlOptions]
       }
       
-      extension [Self <: XmlOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
         
         inline def setIndent(value: Boolean | String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
         

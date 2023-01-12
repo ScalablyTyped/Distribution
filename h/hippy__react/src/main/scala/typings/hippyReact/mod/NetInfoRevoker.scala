@@ -17,7 +17,8 @@ object NetInfoRevoker {
     __obj.asInstanceOf[NetInfoRevoker]
   }
   
-  extension [Self <: NetInfoRevoker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetInfoRevoker] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

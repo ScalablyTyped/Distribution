@@ -37,7 +37,8 @@ object distTypesDocumentTrackValueMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setREACT_VERSION(value: Double): Self = StObject.set(x, "REACT_VERSION", value.asInstanceOf[js.Any])
         

@@ -41,7 +41,8 @@ object iconOptionsSvgIconSetOptionsMod {
       __obj.asInstanceOf[SvgIconSetOptions]
     }
     
-    extension [Self <: SvgIconSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIconSetOptions] (val x: Self) extends AnyVal {
       
       inline def setCumulative(value: `false`): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
       

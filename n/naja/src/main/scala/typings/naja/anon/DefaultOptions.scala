@@ -15,7 +15,8 @@ object DefaultOptions {
     __obj.asInstanceOf[DefaultOptions]
   }
   
-  extension [Self <: DefaultOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
   }

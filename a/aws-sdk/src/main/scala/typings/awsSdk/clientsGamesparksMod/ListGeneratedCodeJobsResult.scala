@@ -23,7 +23,8 @@ object ListGeneratedCodeJobsResult {
     __obj.asInstanceOf[ListGeneratedCodeJobsResult]
   }
   
-  extension [Self <: ListGeneratedCodeJobsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGeneratedCodeJobsResult] (val x: Self) extends AnyVal {
     
     inline def setGeneratedCodeJobs(value: GeneratedCodeJobDetailsList): Self = StObject.set(x, "GeneratedCodeJobs", value.asInstanceOf[js.Any])
     

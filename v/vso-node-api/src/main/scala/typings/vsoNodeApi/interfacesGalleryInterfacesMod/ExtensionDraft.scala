@@ -48,7 +48,8 @@ object ExtensionDraft {
     __obj.asInstanceOf[ExtensionDraft]
   }
   
-  extension [Self <: ExtensionDraft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionDraft] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[ExtensionDraftAsset]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

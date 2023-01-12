@@ -15,7 +15,8 @@ object IgnoreOwnVariables {
     __obj.asInstanceOf[IgnoreOwnVariables]
   }
   
-  extension [Self <: IgnoreOwnVariables](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreOwnVariables] (val x: Self) extends AnyVal {
     
     inline def setIgnoreOwnVariables(value: Boolean): Self = StObject.set(x, "ignoreOwnVariables", value.asInstanceOf[js.Any])
   }

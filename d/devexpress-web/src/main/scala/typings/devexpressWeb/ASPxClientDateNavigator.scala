@@ -56,7 +56,8 @@ object ASPxClientDateNavigator {
     __obj.asInstanceOf[ASPxClientDateNavigator]
   }
   
-  extension [Self <: ASPxClientDateNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDateNavigator] (val x: Self) extends AnyVal {
     
     inline def setDayCellCustomHighlight(
       value: ASPxClientEvent[

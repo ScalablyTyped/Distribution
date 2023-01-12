@@ -52,7 +52,8 @@ object distEsComponentsCategoryMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setEmojiProps(value: EmojiProps): Self = StObject.set(x, "emojiProps", value.asInstanceOf[js.Any])
       

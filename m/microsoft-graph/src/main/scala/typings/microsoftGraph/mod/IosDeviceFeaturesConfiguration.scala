@@ -33,7 +33,8 @@ object IosDeviceFeaturesConfiguration {
     __obj.asInstanceOf[IosDeviceFeaturesConfiguration]
   }
   
-  extension [Self <: IosDeviceFeaturesConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosDeviceFeaturesConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAssetTagTemplate(value: NullableOption[String]): Self = StObject.set(x, "assetTagTemplate", value.asInstanceOf[js.Any])
     

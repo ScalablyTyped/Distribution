@@ -31,7 +31,8 @@ object MlGetTrainedModelsRequest {
     __obj.asInstanceOf[MlGetTrainedModelsRequest]
   }
   
-  extension [Self <: MlGetTrainedModelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetTrainedModelsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     

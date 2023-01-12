@@ -24,7 +24,8 @@ object WorkbookIcon {
     __obj.asInstanceOf[WorkbookIcon]
   }
   
-  extension [Self <: WorkbookIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookIcon] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

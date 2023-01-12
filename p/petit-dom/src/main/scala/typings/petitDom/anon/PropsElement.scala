@@ -400,7 +400,8 @@ object PropsElement {
     __obj.asInstanceOf[PropsElement]
   }
   
-  extension [Self <: PropsElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsElement] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

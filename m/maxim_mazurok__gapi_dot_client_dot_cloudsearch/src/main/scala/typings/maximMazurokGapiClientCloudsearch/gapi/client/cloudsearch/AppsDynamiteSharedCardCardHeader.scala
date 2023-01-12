@@ -31,7 +31,8 @@ object AppsDynamiteSharedCardCardHeader {
     __obj.asInstanceOf[AppsDynamiteSharedCardCardHeader]
   }
   
-  extension [Self <: AppsDynamiteSharedCardCardHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCardCardHeader] (val x: Self) extends AnyVal {
     
     inline def setImageAltText(value: String): Self = StObject.set(x, "imageAltText", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object distLibCommandsZrangeMod {
       __obj.asInstanceOf[ZRangeOptions]
     }
     
-    extension [Self <: ZRangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZRangeOptions] (val x: Self) extends AnyVal {
       
       inline def setBY(value: SCORE | LEX): Self = StObject.set(x, "BY", value.asInstanceOf[js.Any])
       

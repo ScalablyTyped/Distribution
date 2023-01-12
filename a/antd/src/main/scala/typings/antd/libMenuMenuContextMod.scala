@@ -32,7 +32,8 @@ object libMenuMenuContextMod extends Shortcut {
       __obj.asInstanceOf[MenuContextProps]
     }
     
-    extension [Self <: MenuContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuContextProps] (val x: Self) extends AnyVal {
       
       inline def setAntdMenuTheme(value: MenuTheme): Self = StObject.set(x, "antdMenuTheme", value.asInstanceOf[js.Any])
       

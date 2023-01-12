@@ -15,7 +15,8 @@ object VolumeChangeEvent {
     __obj.asInstanceOf[VolumeChangeEvent]
   }
   
-  extension [Self <: VolumeChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object FromPartitionOptions {
     __obj.asInstanceOf[FromPartitionOptions]
   }
   
-  extension [Self <: FromPartitionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromPartitionOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
   }

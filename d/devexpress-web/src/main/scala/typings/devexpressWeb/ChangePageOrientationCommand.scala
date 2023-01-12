@@ -29,7 +29,8 @@ object ChangePageOrientationCommand {
     __obj.asInstanceOf[ChangePageOrientationCommand]
   }
   
-  extension [Self <: ChangePageOrientationCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangePageOrientationCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: Orientation => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCreateImportedName(value: (/* importName */ String, /* importPath */ String) => String): Self = StObject.set(x, "createImportedName", js.Any.fromFunction2(value))
       

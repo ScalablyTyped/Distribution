@@ -67,7 +67,8 @@ object SupressionSearchParameters {
     __obj.asInstanceOf[SupressionSearchParameters]
   }
   
-  extension [Self <: SupressionSearchParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupressionSearchParameters] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

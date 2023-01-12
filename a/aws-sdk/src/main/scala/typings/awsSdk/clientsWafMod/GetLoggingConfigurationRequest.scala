@@ -18,7 +18,8 @@ object GetLoggingConfigurationRequest {
     __obj.asInstanceOf[GetLoggingConfigurationRequest]
   }
   
-  extension [Self <: GetLoggingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoggingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

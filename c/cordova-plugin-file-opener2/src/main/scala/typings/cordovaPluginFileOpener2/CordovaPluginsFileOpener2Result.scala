@@ -17,7 +17,8 @@ object CordovaPluginsFileOpener2Result {
     __obj.asInstanceOf[CordovaPluginsFileOpener2Result]
   }
   
-  extension [Self <: CordovaPluginsFileOpener2Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CordovaPluginsFileOpener2Result] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

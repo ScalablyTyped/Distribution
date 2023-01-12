@@ -21,7 +21,8 @@ object BlockedByResponseIssueDetails {
     __obj.asInstanceOf[BlockedByResponseIssueDetails]
   }
   
-  extension [Self <: BlockedByResponseIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockedByResponseIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setBlockedFrame(value: AffectedFrame): Self = StObject.set(x, "blockedFrame", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object AppProperties {
     __obj.asInstanceOf[AppProperties]
   }
   
-  extension [Self <: AppProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppProperties] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

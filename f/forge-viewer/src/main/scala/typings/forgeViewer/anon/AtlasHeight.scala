@@ -17,7 +17,8 @@ object AtlasHeight {
     __obj.asInstanceOf[AtlasHeight]
   }
   
-  extension [Self <: AtlasHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtlasHeight] (val x: Self) extends AnyVal {
     
     inline def setAtlasHeight(value: Double): Self = StObject.set(x, "atlasHeight", value.asInstanceOf[js.Any])
     

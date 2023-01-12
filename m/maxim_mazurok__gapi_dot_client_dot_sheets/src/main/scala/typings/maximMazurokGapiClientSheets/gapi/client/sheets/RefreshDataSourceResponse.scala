@@ -16,7 +16,8 @@ object RefreshDataSourceResponse {
     __obj.asInstanceOf[RefreshDataSourceResponse]
   }
   
-  extension [Self <: RefreshDataSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshDataSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setStatuses(value: js.Array[RefreshDataSourceObjectExecutionStatus]): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
     

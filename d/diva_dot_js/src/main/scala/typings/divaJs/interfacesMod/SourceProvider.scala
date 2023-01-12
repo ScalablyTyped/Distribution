@@ -21,7 +21,8 @@ object SourceProvider {
     __obj.asInstanceOf[SourceProvider]
   }
   
-  extension [Self <: SourceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceProvider] (val x: Self) extends AnyVal {
     
     inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     

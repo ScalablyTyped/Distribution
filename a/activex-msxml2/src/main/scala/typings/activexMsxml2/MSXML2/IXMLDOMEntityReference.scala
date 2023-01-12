@@ -153,7 +153,8 @@ object IXMLDOMEntityReference {
     __obj.asInstanceOf[IXMLDOMEntityReference]
   }
   
-  extension [Self <: IXMLDOMEntityReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXMLDOMEntityReference] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

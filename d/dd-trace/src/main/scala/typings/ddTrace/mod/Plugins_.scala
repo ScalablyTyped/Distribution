@@ -213,7 +213,8 @@ object Plugins_ {
     __obj.asInstanceOf[Plugins_]
   }
   
-  extension [Self <: Plugins_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugins_] (val x: Self) extends AnyVal {
     
     inline def setAmqp10(value: amqp10): Self = StObject.set(x, "amqp10", value.asInstanceOf[js.Any])
     

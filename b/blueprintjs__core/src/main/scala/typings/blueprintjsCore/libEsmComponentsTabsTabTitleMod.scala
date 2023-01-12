@@ -67,7 +67,8 @@ object libEsmComponentsTabsTabTitleMod {
       __obj.asInstanceOf[ITabTitleProps]
     }
     
-    extension [Self <: ITabTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabTitleProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: (TabId, MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       

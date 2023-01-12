@@ -84,7 +84,8 @@ object FieldElementProperties {
     __obj.asInstanceOf[FieldElementProperties]
   }
   
-  extension [Self <: FieldElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldElementProperties] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: CodedValueDomainPropertie | RangeDomainPropertiestype): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

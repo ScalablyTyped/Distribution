@@ -21,7 +21,8 @@ object MicrophoneSetDetails {
     __obj.asInstanceOf[MicrophoneSetDetails]
   }
   
-  extension [Self <: MicrophoneSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrophoneSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block | ask): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

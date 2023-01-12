@@ -15,7 +15,8 @@ object PathSshsigningkeyid {
     __obj.asInstanceOf[PathSshsigningkeyid]
   }
   
-  extension [Self <: PathSshsigningkeyid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathSshsigningkeyid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Sshsigningkeyid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ImportApiRequest {
     __obj.asInstanceOf[ImportApiRequest]
   }
   
-  extension [Self <: ImportApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportApiRequest] (val x: Self) extends AnyVal {
     
     inline def setBasepath(value: string): Self = StObject.set(x, "Basepath", value.asInstanceOf[js.Any])
     

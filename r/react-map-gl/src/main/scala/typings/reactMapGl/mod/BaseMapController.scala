@@ -17,7 +17,8 @@ object BaseMapController {
     __obj.asInstanceOf[BaseMapController]
   }
   
-  extension [Self <: BaseMapController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMapController] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

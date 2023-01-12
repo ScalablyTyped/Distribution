@@ -21,7 +21,8 @@ object DevicePixelRatio {
     __obj.asInstanceOf[DevicePixelRatio]
   }
   
-  extension [Self <: DevicePixelRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePixelRatio] (val x: Self) extends AnyVal {
     
     inline def setDevicePixelRatio(value: Double): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
     

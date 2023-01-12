@@ -27,7 +27,8 @@ object Hdr10Settings {
     __obj.asInstanceOf[Hdr10Settings]
   }
   
-  extension [Self <: Hdr10Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hdr10Settings] (val x: Self) extends AnyVal {
     
     inline def setMaxCll(value: integerMin0Max32768): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
     

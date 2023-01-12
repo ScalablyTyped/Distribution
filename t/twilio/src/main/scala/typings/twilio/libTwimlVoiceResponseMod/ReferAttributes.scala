@@ -17,7 +17,8 @@ object ReferAttributes {
     __obj.asInstanceOf[ReferAttributes]
   }
   
-  extension [Self <: ReferAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferAttributes] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

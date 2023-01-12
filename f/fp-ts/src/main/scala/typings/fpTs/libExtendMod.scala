@@ -39,7 +39,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend[W]]
     }
     
-    extension [Self <: Extend[?], W](x: Self & Extend[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend[?], W] (val x: Self & Extend[W]) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ Any, js.Function1[
@@ -76,7 +77,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend1[W]]
     }
     
-    extension [Self <: Extend1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Extend1[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Extend1[W]) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ Any, js.Function1[
@@ -113,7 +115,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend2[W]]
     }
     
-    extension [Self <: Extend2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Extend2[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Extend2[W]) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ Any, js.Function1[
@@ -151,7 +154,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend2C[W, E]]
     }
     
-    extension [Self <: Extend2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Extend2C[W, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Extend2C[W, E])) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ Any, js.Function1[
@@ -188,7 +192,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend3[W]]
     }
     
-    extension [Self <: Extend3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Extend3[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Extend3[W]) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ Any, js.Function1[
@@ -226,7 +231,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend3C[W, E]]
     }
     
-    extension [Self <: Extend3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Extend3C[W, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Extend3C[W, E])) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ Any, js.Function1[
@@ -263,7 +269,8 @@ object libExtendMod {
       __obj.asInstanceOf[Extend4[W]]
     }
     
-    extension [Self <: Extend4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Extend4[W]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Extend4[W]) extends AnyVal {
       
       inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ Any, js.Function1[

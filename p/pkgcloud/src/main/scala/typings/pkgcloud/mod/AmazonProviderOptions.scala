@@ -22,7 +22,8 @@ object AmazonProviderOptions {
     __obj.asInstanceOf[AmazonProviderOptions]
   }
   
-  extension [Self <: AmazonProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

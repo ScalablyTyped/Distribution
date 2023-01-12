@@ -28,7 +28,8 @@ object CustomResponse {
     __obj.asInstanceOf[CustomResponse]
   }
   
-  extension [Self <: CustomResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomResponseBodyKey(value: EntityName): Self = StObject.set(x, "CustomResponseBodyKey", value.asInstanceOf[js.Any])
     

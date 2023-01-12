@@ -73,7 +73,8 @@ object ListColumn {
     __obj.asInstanceOf[ListColumn]
   }
   
-  extension [Self <: ListColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListColumn] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

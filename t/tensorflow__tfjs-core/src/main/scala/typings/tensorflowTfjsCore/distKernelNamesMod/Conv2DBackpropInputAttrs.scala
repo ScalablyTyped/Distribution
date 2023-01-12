@@ -36,7 +36,8 @@ object Conv2DBackpropInputAttrs {
     __obj.asInstanceOf[Conv2DBackpropInputAttrs]
   }
   
-  extension [Self <: Conv2DBackpropInputAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv2DBackpropInputAttrs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: NHWC | NCHW): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

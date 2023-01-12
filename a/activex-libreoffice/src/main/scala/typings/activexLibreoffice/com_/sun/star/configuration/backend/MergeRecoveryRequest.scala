@@ -53,7 +53,8 @@ object MergeRecoveryRequest {
     __obj.asInstanceOf[MergeRecoveryRequest]
   }
   
-  extension [Self <: MergeRecoveryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeRecoveryRequest] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(value: Any): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     

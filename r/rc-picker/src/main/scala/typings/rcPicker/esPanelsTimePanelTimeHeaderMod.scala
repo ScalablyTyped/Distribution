@@ -34,7 +34,8 @@ object esPanelsTimePanelTimeHeaderMod {
       __obj.asInstanceOf[TimeHeaderProps[DateType]]
     }
     
-    extension [Self <: TimeHeaderProps[?], DateType](x: Self & TimeHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeHeaderProps[?], DateType] (val x: Self & TimeHeaderProps[DateType]) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

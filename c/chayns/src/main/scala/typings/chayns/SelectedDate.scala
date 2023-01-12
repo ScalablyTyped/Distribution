@@ -17,7 +17,8 @@ object SelectedDate {
     __obj.asInstanceOf[SelectedDate]
   }
   
-  extension [Self <: SelectedDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedDate] (val x: Self) extends AnyVal {
     
     inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     

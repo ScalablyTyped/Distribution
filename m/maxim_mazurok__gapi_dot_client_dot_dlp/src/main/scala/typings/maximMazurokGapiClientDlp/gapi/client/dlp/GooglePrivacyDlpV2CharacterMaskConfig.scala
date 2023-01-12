@@ -39,7 +39,8 @@ object GooglePrivacyDlpV2CharacterMaskConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2CharacterMaskConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CharacterMaskConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CharacterMaskConfig] (val x: Self) extends AnyVal {
     
     inline def setCharactersToIgnore(value: js.Array[GooglePrivacyDlpV2CharsToIgnore]): Self = StObject.set(x, "charactersToIgnore", value.asInstanceOf[js.Any])
     

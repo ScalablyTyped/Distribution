@@ -33,7 +33,8 @@ object TableColumnFilterProps {
     __obj.asInstanceOf[TableColumnFilterProps[FV, T]]
   }
   
-  extension [Self <: TableColumnFilterProps[?, ?], FV, T /* <: js.Object */](x: Self & (TableColumnFilterProps[FV, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableColumnFilterProps[?, ?], FV, T /* <: js.Object */] (val x: Self & (TableColumnFilterProps[FV, T])) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object SeparatorHeight {
     __obj.asInstanceOf[SeparatorHeight]
   }
   
-  extension [Self <: SeparatorHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeparatorHeight] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: CustomizeTextFormat): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

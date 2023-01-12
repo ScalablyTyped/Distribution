@@ -22,7 +22,8 @@ object WhitelistsListResponse {
     __obj.asInstanceOf[WhitelistsListResponse]
   }
   
-  extension [Self <: WhitelistsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhitelistsListResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

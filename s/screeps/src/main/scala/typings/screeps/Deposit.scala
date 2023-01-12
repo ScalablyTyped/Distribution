@@ -58,7 +58,8 @@ object Deposit {
     __obj.asInstanceOf[Deposit]
   }
   
-  extension [Self <: Deposit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deposit] (val x: Self) extends AnyVal {
     
     inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     

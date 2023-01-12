@@ -21,7 +21,8 @@ object modelsCardsCreatePayloadMod {
       __obj.asInstanceOf[CreateCardPayload]
     }
     
-    extension [Self <: CreateCardPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCardPayload] (val x: Self) extends AnyVal {
       
       inline def setCustomer_id(value: String): Self = StObject.set(x, "customer_id", value.asInstanceOf[js.Any])
       

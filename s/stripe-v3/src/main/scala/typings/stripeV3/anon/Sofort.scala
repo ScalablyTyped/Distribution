@@ -15,7 +15,8 @@ object Sofort {
     __obj.asInstanceOf[Sofort]
   }
   
-  extension [Self <: Sofort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sofort] (val x: Self) extends AnyVal {
     
     inline def setSofort(value: `1`): Self = StObject.set(x, "sofort", value.asInstanceOf[js.Any])
     

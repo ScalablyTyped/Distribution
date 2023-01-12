@@ -15,7 +15,8 @@ object IVerifyVaultJobOutput {
     __obj.asInstanceOf[IVerifyVaultJobOutput]
   }
   
-  extension [Self <: IVerifyVaultJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVerifyVaultJobOutput] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: IStrings): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
   }

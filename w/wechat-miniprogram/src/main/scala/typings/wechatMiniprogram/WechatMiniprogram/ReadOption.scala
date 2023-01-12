@@ -37,7 +37,8 @@ object ReadOption {
     __obj.asInstanceOf[ReadOption]
   }
   
-  extension [Self <: ReadOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadOption] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     

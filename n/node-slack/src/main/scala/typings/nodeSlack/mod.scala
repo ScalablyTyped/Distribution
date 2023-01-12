@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object mod {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     }
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setChannel_id(value: String): Self = StObject.set(x, "channel_id", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object mod {
       __obj.asInstanceOf[TextResponse]
     }
     
-    extension [Self <: TextResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextResponse] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

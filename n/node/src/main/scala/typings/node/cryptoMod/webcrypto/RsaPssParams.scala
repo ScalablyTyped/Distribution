@@ -17,7 +17,8 @@ object RsaPssParams {
     __obj.asInstanceOf[RsaPssParams]
   }
   
-  extension [Self <: RsaPssParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaPssParams] (val x: Self) extends AnyVal {
     
     inline def setSaltLength(value: Double): Self = StObject.set(x, "saltLength", value.asInstanceOf[js.Any])
   }

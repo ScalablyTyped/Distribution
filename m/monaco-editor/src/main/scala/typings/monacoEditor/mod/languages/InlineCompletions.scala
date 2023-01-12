@@ -20,7 +20,8 @@ object InlineCompletions {
     __obj.asInstanceOf[InlineCompletions[TItem]]
   }
   
-  extension [Self <: InlineCompletions[?], TItem /* <: InlineCompletion */](x: Self & InlineCompletions[TItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineCompletions[?], TItem /* <: InlineCompletion */] (val x: Self & InlineCompletions[TItem]) extends AnyVal {
     
     inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TaskOrchestrationPlanReference {
     __obj.asInstanceOf[TaskOrchestrationPlanReference]
   }
   
-  extension [Self <: TaskOrchestrationPlanReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationPlanReference] (val x: Self) extends AnyVal {
     
     inline def setOrchestrationType(value: Double): Self = StObject.set(x, "orchestrationType", value.asInstanceOf[js.Any])
     

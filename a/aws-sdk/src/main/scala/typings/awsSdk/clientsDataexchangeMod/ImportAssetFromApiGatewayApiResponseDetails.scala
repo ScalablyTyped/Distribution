@@ -78,7 +78,8 @@ object ImportAssetFromApiGatewayApiResponseDetails {
     __obj.asInstanceOf[ImportAssetFromApiGatewayApiResponseDetails]
   }
   
-  extension [Self <: ImportAssetFromApiGatewayApiResponseDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAssetFromApiGatewayApiResponseDetails] (val x: Self) extends AnyVal {
     
     inline def setApiDescription(value: ApiDescription): Self = StObject.set(x, "ApiDescription", value.asInstanceOf[js.Any])
     

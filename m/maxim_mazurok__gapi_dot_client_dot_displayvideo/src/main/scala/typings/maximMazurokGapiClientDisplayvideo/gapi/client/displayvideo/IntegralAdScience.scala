@@ -55,7 +55,8 @@ object IntegralAdScience {
     __obj.asInstanceOf[IntegralAdScience]
   }
   
-  extension [Self <: IntegralAdScience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegralAdScience] (val x: Self) extends AnyVal {
     
     inline def setCustomSegmentId(value: js.Array[String]): Self = StObject.set(x, "customSegmentId", value.asInstanceOf[js.Any])
     

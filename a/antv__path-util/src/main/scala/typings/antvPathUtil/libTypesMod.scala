@@ -75,7 +75,8 @@ object libTypesMod {
       __obj.asInstanceOf[ProcessParams]
     }
     
-    extension [Self <: ProcessParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessParams] (val x: Self) extends AnyVal {
       
       inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
       

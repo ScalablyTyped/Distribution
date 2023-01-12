@@ -25,7 +25,8 @@ object ReverseSshConnectivity {
     __obj.asInstanceOf[ReverseSshConnectivity]
   }
   
-  extension [Self <: ReverseSshConnectivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseSshConnectivity] (val x: Self) extends AnyVal {
     
     inline def setVm(value: String): Self = StObject.set(x, "vm", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ElasticInferenceAcceleratorHealth {
     __obj.asInstanceOf[ElasticInferenceAcceleratorHealth]
   }
   
-  extension [Self <: ElasticInferenceAcceleratorHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticInferenceAcceleratorHealth] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AcceleratorHealthStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

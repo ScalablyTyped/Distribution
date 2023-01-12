@@ -188,7 +188,8 @@ object IButton {
     __obj.asInstanceOf[IButton]
   }
   
-  extension [Self <: IButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
     
     inline def setAutoEvent(value: java.lang.String): Self = StObject.set(x, "autoEvent", value.asInstanceOf[js.Any])
     

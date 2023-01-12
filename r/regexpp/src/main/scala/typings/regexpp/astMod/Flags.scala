@@ -48,7 +48,8 @@ object Flags {
     __obj.asInstanceOf[Flags]
   }
   
-  extension [Self <: Flags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
     
     inline def setDotAll(value: Boolean): Self = StObject.set(x, "dotAll", value.asInstanceOf[js.Any])
     

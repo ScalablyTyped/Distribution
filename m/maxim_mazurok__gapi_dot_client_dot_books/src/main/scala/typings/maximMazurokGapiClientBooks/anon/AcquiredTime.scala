@@ -71,7 +71,8 @@ object AcquiredTime {
     __obj.asInstanceOf[AcquiredTime]
   }
   
-  extension [Self <: AcquiredTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcquiredTime] (val x: Self) extends AnyVal {
     
     inline def setAcquiredTime(value: String): Self = StObject.set(x, "acquiredTime", value.asInstanceOf[js.Any])
     

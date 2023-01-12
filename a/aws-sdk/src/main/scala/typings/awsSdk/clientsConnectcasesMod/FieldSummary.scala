@@ -45,7 +45,8 @@ object FieldSummary {
     __obj.asInstanceOf[FieldSummary]
   }
   
-  extension [Self <: FieldSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSummary] (val x: Self) extends AnyVal {
     
     inline def setFieldArn(value: FieldArn): Self = StObject.set(x, "fieldArn", value.asInstanceOf[js.Any])
     

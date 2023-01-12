@@ -26,7 +26,8 @@ object distWebpackCompilerMod {
       __obj.asInstanceOf[WebpackCompiler]
     }
     
-    extension [Self <: WebpackCompiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackCompiler] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

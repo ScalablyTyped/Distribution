@@ -38,7 +38,8 @@ object EnqueuedCommand {
     __obj.asInstanceOf[EnqueuedCommand]
   }
   
-  extension [Self <: EnqueuedCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnqueuedCommand] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

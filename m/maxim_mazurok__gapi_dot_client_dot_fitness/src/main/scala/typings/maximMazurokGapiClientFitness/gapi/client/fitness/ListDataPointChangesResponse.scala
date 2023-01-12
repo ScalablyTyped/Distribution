@@ -25,7 +25,8 @@ object ListDataPointChangesResponse {
     __obj.asInstanceOf[ListDataPointChangesResponse]
   }
   
-  extension [Self <: ListDataPointChangesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataPointChangesResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object CLP {
     __obj.asInstanceOf[CLP]
   }
   
-  extension [Self <: CLP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CLP] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

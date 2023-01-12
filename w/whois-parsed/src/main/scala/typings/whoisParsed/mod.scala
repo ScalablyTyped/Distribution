@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[BasicAuthCredentials]
     }
     
-    extension [Self <: BasicAuthCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicAuthCredentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[HttpProxy]
     }
     
-    extension [Self <: HttpProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpProxy] (val x: Self) extends AnyVal {
       
       inline def setAuthentication(value: BasicAuthCredentials): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object mod {
       __obj.asInstanceOf[WhoIsOptions]
     }
     
-    extension [Self <: WhoIsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhoIsOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: HttpProxy): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object mod {
       __obj.asInstanceOf[WhoIsResult]
     }
     
-    extension [Self <: WhoIsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WhoIsResult] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       

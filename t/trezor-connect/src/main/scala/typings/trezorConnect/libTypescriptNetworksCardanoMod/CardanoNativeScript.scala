@@ -28,7 +28,8 @@ object CardanoNativeScript {
     __obj.asInstanceOf[CardanoNativeScript]
   }
   
-  extension [Self <: CardanoNativeScript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoNativeScript] (val x: Self) extends AnyVal {
     
     inline def setInvalidBefore(value: String): Self = StObject.set(x, "invalidBefore", value.asInstanceOf[js.Any])
     

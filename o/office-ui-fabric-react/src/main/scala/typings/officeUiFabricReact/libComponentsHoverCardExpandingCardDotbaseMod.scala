@@ -60,7 +60,8 @@ object libComponentsHoverCardExpandingCardDotbaseMod {
       __obj.asInstanceOf[IExpandingCardState]
     }
     
-    extension [Self <: IExpandingCardState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExpandingCardState] (val x: Self) extends AnyVal {
       
       inline def setFirstFrameRendered(value: Boolean): Self = StObject.set(x, "firstFrameRendered", value.asInstanceOf[js.Any])
       

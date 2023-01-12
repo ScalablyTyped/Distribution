@@ -18,7 +18,8 @@ object ProfileTime {
     __obj.asInstanceOf[ProfileTime]
   }
   
-  extension [Self <: ProfileTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileTime] (val x: Self) extends AnyVal {
     
     inline def setStart(value: js.Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

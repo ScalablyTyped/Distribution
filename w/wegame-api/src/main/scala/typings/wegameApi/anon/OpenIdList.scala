@@ -28,7 +28,8 @@ object OpenIdList {
     __obj.asInstanceOf[OpenIdList]
   }
   
-  extension [Self <: OpenIdList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenIdList] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

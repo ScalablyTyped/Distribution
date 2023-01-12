@@ -785,7 +785,8 @@ object PlotKeltnerchannelsOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

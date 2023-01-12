@@ -1257,7 +1257,8 @@ object typesSwiperOptionsMod {
       __obj.asInstanceOf[SwiperOptions]
     }
     
-    extension [Self <: SwiperOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwiperOptions] (val x: Self) extends AnyVal {
       
       inline def setA11y(value: A11yOptions): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
       

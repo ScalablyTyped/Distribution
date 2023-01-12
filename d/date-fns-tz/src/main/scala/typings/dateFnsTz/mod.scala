@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[OptionsWithTZ]
     }
     
-    extension [Self <: OptionsWithTZ](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithTZ] (val x: Self) extends AnyVal {
       
       inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
       

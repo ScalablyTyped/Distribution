@@ -16,7 +16,8 @@ object ValidateSchemaRequest {
     __obj.asInstanceOf[ValidateSchemaRequest]
   }
   
-  extension [Self <: ValidateSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: Schema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object QuickInputButton {
     __obj.asInstanceOf[QuickInputButton]
   }
   
-  extension [Self <: QuickInputButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickInputButton] (val x: Self) extends AnyVal {
     
     inline def setIconPath(value: Uri | Dark | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     

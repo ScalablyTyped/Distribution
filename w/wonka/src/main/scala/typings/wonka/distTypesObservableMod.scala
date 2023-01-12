@@ -26,7 +26,8 @@ object distTypesObservableMod {
       __obj.asInstanceOf[Observable[T]]
     }
     
-    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
       
       inline def setSubscribe(value: ObservableObserver[T] => ObservableSubscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -47,7 +48,8 @@ object distTypesObservableMod {
       __obj.asInstanceOf[ObservableObserver[T]]
     }
     
-    extension [Self <: ObservableObserver[?], T](x: Self & ObservableObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObservableObserver[?], T] (val x: Self & ObservableObserver[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -70,7 +72,8 @@ object distTypesObservableMod {
       __obj.asInstanceOf[ObservableSubscription]
     }
     
-    extension [Self <: ObservableSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObservableSubscription] (val x: Self) extends AnyVal {
       
       inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       

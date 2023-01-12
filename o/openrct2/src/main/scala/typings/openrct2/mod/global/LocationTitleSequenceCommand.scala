@@ -23,7 +23,8 @@ object LocationTitleSequenceCommand {
     __obj.asInstanceOf[LocationTitleSequenceCommand]
   }
   
-  extension [Self <: LocationTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setType(value: location): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AntennaDownlinkDemodDecodeConfig {
     __obj.asInstanceOf[AntennaDownlinkDemodDecodeConfig]
   }
   
-  extension [Self <: AntennaDownlinkDemodDecodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AntennaDownlinkDemodDecodeConfig] (val x: Self) extends AnyVal {
     
     inline def setDecodeConfig(value: DecodeConfig): Self = StObject.set(x, "decodeConfig", value.asInstanceOf[js.Any])
     

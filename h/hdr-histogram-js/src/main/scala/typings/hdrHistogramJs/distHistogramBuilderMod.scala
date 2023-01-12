@@ -75,7 +75,8 @@ object distHistogramBuilderMod {
       __obj.asInstanceOf[BuildRequest]
     }
     
-    extension [Self <: BuildRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildRequest] (val x: Self) extends AnyVal {
       
       inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       

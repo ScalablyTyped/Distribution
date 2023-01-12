@@ -38,7 +38,8 @@ object ServiceStatistics {
     __obj.asInstanceOf[ServiceStatistics]
   }
   
-  extension [Self <: ServiceStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceStatistics] (val x: Self) extends AnyVal {
     
     inline def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
     

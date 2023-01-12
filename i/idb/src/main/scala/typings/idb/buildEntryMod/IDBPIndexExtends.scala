@@ -22,7 +22,8 @@ object IDBPIndexExtends {
     __obj.asInstanceOf[IDBPIndexExtends]
   }
   
-  extension [Self <: IDBPIndexExtends](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPIndexExtends] (val x: Self) extends AnyVal {
     
     inline def setKeyPath(value: String | js.Array[String]): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

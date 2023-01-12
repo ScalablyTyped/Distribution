@@ -19,7 +19,8 @@ object BootboxLocaleValues {
     __obj.asInstanceOf[BootboxLocaleValues]
   }
   
-  extension [Self <: BootboxLocaleValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxLocaleValues] (val x: Self) extends AnyVal {
     
     inline def setCANCEL(value: String): Self = StObject.set(x, "CANCEL", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[DigestOptions[T]]
     }
     
-    extension [Self <: DigestOptions[?], T](x: Self & DigestOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestOptions[?], T] (val x: Self & DigestOptions[T]) extends AnyVal {
       
       inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

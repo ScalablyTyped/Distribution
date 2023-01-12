@@ -21,7 +21,8 @@ object MinWidthProps {
     __obj.asInstanceOf[MinWidthProps[ThemeType, TVal]]
   }
   
-  extension [Self <: MinWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (MinWidthProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinWidthProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setMinWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     

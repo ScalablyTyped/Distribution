@@ -249,7 +249,8 @@ object mod {
       __obj.asInstanceOf[Bech32Decoded]
     }
     
-    extension [Self <: Bech32Decoded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bech32Decoded] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -274,7 +275,8 @@ object mod {
       __obj.asInstanceOf[Bech32DecodedWithArray]
     }
     
-    extension [Self <: Bech32DecodedWithArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bech32DecodedWithArray] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -312,7 +314,8 @@ object mod {
       __obj.asInstanceOf[Coder[F, T]]
     }
     
-    extension [Self <: Coder[?, ?], F, T](x: Self & (Coder[F, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coder[?, ?], F, T] (val x: Self & (Coder[F, T])) extends AnyVal {
       
       inline def setDecode(value: T => F): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

@@ -35,7 +35,8 @@ object AllowEditRangeUpdateData {
     __obj.asInstanceOf[AllowEditRangeUpdateData]
   }
   
-  extension [Self <: AllowEditRangeUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowEditRangeUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

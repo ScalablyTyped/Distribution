@@ -18,7 +18,8 @@ object TaskBoardEditColumnEvent {
     __obj.asInstanceOf[TaskBoardEditColumnEvent]
   }
   
-  extension [Self <: TaskBoardEditColumnEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardEditColumnEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Model): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object anyAnyMod {
       __obj.asInstanceOf[Any]
     }
     
-    extension [Self <: Any](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Any => Any): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     }

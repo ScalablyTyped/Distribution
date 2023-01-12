@@ -25,7 +25,8 @@ object MirrorConfig {
     __obj.asInstanceOf[MirrorConfig]
   }
   
-  extension [Self <: MirrorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MirrorConfig] (val x: Self) extends AnyVal {
     
     inline def setDeployKeyId(value: String): Self = StObject.set(x, "deployKeyId", value.asInstanceOf[js.Any])
     

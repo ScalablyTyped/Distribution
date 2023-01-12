@@ -48,7 +48,8 @@ object MemoryReference {
     __obj.asInstanceOf[MemoryReference]
   }
   
-  extension [Self <: MemoryReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryReference] (val x: Self) extends AnyVal {
     
     inline def setIndexedVariables(value: Double): Self = StObject.set(x, "indexedVariables", value.asInstanceOf[js.Any])
     

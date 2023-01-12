@@ -48,7 +48,8 @@ object CellRangeListSource {
     __obj.asInstanceOf[CellRangeListSource]
   }
   
-  extension [Self <: CellRangeListSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellRangeListSource] (val x: Self) extends AnyVal {
     
     inline def setCellRange(value: CellRangeAddress): Self = StObject.set(x, "CellRange", value.asInstanceOf[js.Any])
   }

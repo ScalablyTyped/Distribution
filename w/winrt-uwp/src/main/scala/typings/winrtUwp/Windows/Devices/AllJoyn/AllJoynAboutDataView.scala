@@ -83,7 +83,8 @@ object AllJoynAboutDataView {
     __obj.asInstanceOf[AllJoynAboutDataView]
   }
   
-  extension [Self <: AllJoynAboutDataView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynAboutDataView] (val x: Self) extends AnyVal {
     
     inline def setAjSoftwareVersion(value: String): Self = StObject.set(x, "ajSoftwareVersion", value.asInstanceOf[js.Any])
     

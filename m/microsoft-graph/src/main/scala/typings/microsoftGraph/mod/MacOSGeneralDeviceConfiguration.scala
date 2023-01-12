@@ -54,7 +54,8 @@ object MacOSGeneralDeviceConfiguration {
     __obj.asInstanceOf[MacOSGeneralDeviceConfiguration]
   }
   
-  extension [Self <: MacOSGeneralDeviceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacOSGeneralDeviceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCompliantAppListType(value: AppListType): Self = StObject.set(x, "compliantAppListType", value.asInstanceOf[js.Any])
     

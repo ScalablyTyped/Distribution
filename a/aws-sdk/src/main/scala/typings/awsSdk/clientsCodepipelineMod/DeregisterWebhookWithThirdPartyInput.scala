@@ -18,7 +18,8 @@ object DeregisterWebhookWithThirdPartyInput {
     __obj.asInstanceOf[DeregisterWebhookWithThirdPartyInput]
   }
   
-  extension [Self <: DeregisterWebhookWithThirdPartyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterWebhookWithThirdPartyInput] (val x: Self) extends AnyVal {
     
     inline def setWebhookName(value: WebhookName): Self = StObject.set(x, "webhookName", value.asInstanceOf[js.Any])
     

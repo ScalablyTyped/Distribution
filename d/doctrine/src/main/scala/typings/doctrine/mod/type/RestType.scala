@@ -21,7 +21,8 @@ object RestType {
     __obj.asInstanceOf[RestType]
   }
   
-  extension [Self <: RestType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestType] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

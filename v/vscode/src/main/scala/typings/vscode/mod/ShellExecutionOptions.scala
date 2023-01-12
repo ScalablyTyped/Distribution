@@ -45,7 +45,8 @@ object ShellExecutionOptions {
     __obj.asInstanceOf[ShellExecutionOptions]
   }
   
-  extension [Self <: ShellExecutionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellExecutionOptions] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

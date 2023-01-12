@@ -20,7 +20,8 @@ object Concurrency {
     __obj.asInstanceOf[Concurrency]
   }
   
-  extension [Self <: Concurrency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Concurrency] (val x: Self) extends AnyVal {
     
     inline def setConcurrency(value: StringDictionary[OrgTeamConcurrencyValues]): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     

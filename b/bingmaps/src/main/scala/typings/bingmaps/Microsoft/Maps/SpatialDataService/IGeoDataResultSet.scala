@@ -23,7 +23,8 @@ object IGeoDataResultSet {
     __obj.asInstanceOf[IGeoDataResultSet]
   }
   
-  extension [Self <: IGeoDataResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoDataResultSet] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     

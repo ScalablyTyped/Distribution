@@ -22,7 +22,8 @@ object AlertTrigger {
     __obj.asInstanceOf[AlertTrigger]
   }
   
-  extension [Self <: AlertTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertTrigger] (val x: Self) extends AnyVal {
     
     inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

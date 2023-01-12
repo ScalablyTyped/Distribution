@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CancelCurrentEdit]
     }
     
-    extension [Self <: CancelCurrentEdit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelCurrentEdit] (val x: Self) extends AnyVal {
       
       inline def setCancelCurrentEdit(value: () => Boolean): Self = StObject.set(x, "cancelCurrentEdit", js.Any.fromFunction0(value))
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[ColumnId]
     }
     
-    extension [Self <: ColumnId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnId] (val x: Self) extends AnyVal {
       
       inline def setColumnId(value: String): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[SelectActiveRow]
     }
     
-    extension [Self <: SelectActiveRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectActiveRow] (val x: Self) extends AnyVal {
       
       inline def setSelectActiveRow(value: Boolean): Self = StObject.set(x, "selectActiveRow", value.asInstanceOf[js.Any])
     }

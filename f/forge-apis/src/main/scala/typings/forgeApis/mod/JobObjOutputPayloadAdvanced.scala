@@ -19,7 +19,8 @@ object JobObjOutputPayloadAdvanced {
     __obj.asInstanceOf[JobObjOutputPayloadAdvanced]
   }
   
-  extension [Self <: JobObjOutputPayloadAdvanced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobObjOutputPayloadAdvanced] (val x: Self) extends AnyVal {
     
     inline def setExportFileStructure(value: String): Self = StObject.set(x, "exportFileStructure", value.asInstanceOf[js.Any])
     

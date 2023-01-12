@@ -19,7 +19,8 @@ object SceneParameters {
     __obj.asInstanceOf[SceneParameters]
   }
   
-  extension [Self <: SceneParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneParameters] (val x: Self) extends AnyVal {
     
     inline def setAmmo(value: String): Self = StObject.set(x, "ammo", value.asInstanceOf[js.Any])
     

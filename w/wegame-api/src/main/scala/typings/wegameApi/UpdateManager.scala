@@ -38,7 +38,8 @@ object UpdateManager {
     __obj.asInstanceOf[UpdateManager]
   }
   
-  extension [Self <: UpdateManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateManager] (val x: Self) extends AnyVal {
     
     inline def setApplyUpdate(value: () => Unit): Self = StObject.set(x, "applyUpdate", js.Any.fromFunction0(value))
     

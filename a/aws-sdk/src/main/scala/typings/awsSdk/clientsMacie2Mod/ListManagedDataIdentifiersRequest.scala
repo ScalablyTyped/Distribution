@@ -18,7 +18,8 @@ object ListManagedDataIdentifiersRequest {
     __obj.asInstanceOf[ListManagedDataIdentifiersRequest]
   }
   
-  extension [Self <: ListManagedDataIdentifiersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListManagedDataIdentifiersRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: string): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

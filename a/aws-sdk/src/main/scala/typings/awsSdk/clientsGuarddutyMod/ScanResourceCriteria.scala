@@ -23,7 +23,8 @@ object ScanResourceCriteria {
     __obj.asInstanceOf[ScanResourceCriteria]
   }
   
-  extension [Self <: ScanResourceCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanResourceCriteria] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: ScanCriterion): Self = StObject.set(x, "Exclude", value.asInstanceOf[js.Any])
     

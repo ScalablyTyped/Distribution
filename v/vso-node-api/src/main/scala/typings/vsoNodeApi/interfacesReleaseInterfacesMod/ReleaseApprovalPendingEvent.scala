@@ -56,7 +56,8 @@ object ReleaseApprovalPendingEvent {
     __obj.asInstanceOf[ReleaseApprovalPendingEvent]
   }
   
-  extension [Self <: ReleaseApprovalPendingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseApprovalPendingEvent] (val x: Self) extends AnyVal {
     
     inline def setApproval(value: ReleaseApproval): Self = StObject.set(x, "approval", value.asInstanceOf[js.Any])
     

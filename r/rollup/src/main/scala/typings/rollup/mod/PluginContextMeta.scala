@@ -17,7 +17,8 @@ object PluginContextMeta {
     __obj.asInstanceOf[PluginContextMeta]
   }
   
-  extension [Self <: PluginContextMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginContextMeta] (val x: Self) extends AnyVal {
     
     inline def setRollupVersion(value: String): Self = StObject.set(x, "rollupVersion", value.asInstanceOf[js.Any])
     

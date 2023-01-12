@@ -72,7 +72,8 @@ object MeshMaterialProperties {
     __obj.asInstanceOf[MeshMaterialProperties]
   }
   
-  extension [Self <: MeshMaterialProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshMaterialProperties] (val x: Self) extends AnyVal {
     
     inline def setAlphaCutoff(value: Double): Self = StObject.set(x, "alphaCutoff", value.asInstanceOf[js.Any])
     

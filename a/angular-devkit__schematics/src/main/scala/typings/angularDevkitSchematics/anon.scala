@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Collection[CollectionMetadataT]]
     }
     
-    extension [Self <: Collection[?], CollectionMetadataT /* <: js.Object */](x: Self & Collection[CollectionMetadataT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collection[?], CollectionMetadataT /* <: js.Object */] (val x: Self & Collection[CollectionMetadataT]) extends AnyVal {
       
       inline def setCollection(
         value: typings.angularDevkitSchematics.srcEngineInterfaceMod.CollectionDescription[CollectionMetadataT]
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[CollectionDescription]
     }
     
-    extension [Self <: CollectionDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionDescription] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Extends]
     }
     
-    extension [Self <: Extends](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extends] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: js.Array[String]): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Next[T]]
     }
     
-    extension [Self <: Next[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  next :T | null} */ js.Any */](x: Self & Next[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  next :T | null} */ js.Any */] (val x: Self & Next[T]) extends AnyVal {
       
       inline def setNext(value: T): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[PartialExecutionOptions]
     }
     
-    extension [Self <: PartialExecutionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialExecutionOptions] (val x: Self) extends AnyVal {
       
       inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
@@ -168,7 +173,8 @@ object anon {
       __obj.asInstanceOf[PartialWorkflowExecutionC]
     }
     
-    extension [Self <: PartialWorkflowExecutionC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialWorkflowExecutionC] (val x: Self) extends AnyVal {
       
       inline def setAllowPrivate(value: Boolean): Self = StObject.set(x, "allowPrivate", value.asInstanceOf[js.Any])
       
@@ -214,7 +220,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyFileEntry]
     }
     
-    extension [Self <: ReadonlyFileEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyFileEntry] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -246,7 +253,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyWorkflowExecution]
     }
     
-    extension [Self <: ReadonlyWorkflowExecution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyWorkflowExecution] (val x: Self) extends AnyVal {
       
       inline def setAllowPrivate(value: Boolean): Self = StObject.set(x, "allowPrivate", value.asInstanceOf[js.Any])
       
@@ -286,7 +294,8 @@ object anon {
       __obj.asInstanceOf[SchematicDescription]
     }
     
-    extension [Self <: SchematicDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchematicDescription] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: CollectionDescription): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

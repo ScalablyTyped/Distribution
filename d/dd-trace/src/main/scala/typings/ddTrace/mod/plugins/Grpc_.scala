@@ -26,7 +26,8 @@ object Grpc_ {
     __obj.asInstanceOf[Grpc_]
   }
   
-  extension [Self <: Grpc_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grpc_] (val x: Self) extends AnyVal {
     
     inline def setMetadata(
       value: js.Array[String] | (js.Function1[/* variables */ StringDictionary[Any], StringDictionary[Any]])

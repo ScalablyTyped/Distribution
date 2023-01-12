@@ -19,7 +19,8 @@ object ServiceWorkerRegistration {
     __obj.asInstanceOf[ServiceWorkerRegistration]
   }
   
-  extension [Self <: ServiceWorkerRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceWorkerRegistration] (val x: Self) extends AnyVal {
     
     inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object WebApiProject {
     __obj.asInstanceOf[WebApiProject]
   }
   
-  extension [Self <: WebApiProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApiProject] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

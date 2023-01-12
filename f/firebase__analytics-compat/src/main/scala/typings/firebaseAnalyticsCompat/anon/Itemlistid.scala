@@ -23,7 +23,8 @@ object Itemlistid {
     __obj.asInstanceOf[Itemlistid]
   }
   
-  extension [Self <: Itemlistid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Itemlistid] (val x: Self) extends AnyVal {
     
     inline def setItem_list_id(value: String): Self = StObject.set(x, "item_list_id", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object typesGetShardIteratorInputMod {
       __obj.asInstanceOf[GetShardIteratorInput]
     }
     
-    extension [Self <: GetShardIteratorInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetShardIteratorInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

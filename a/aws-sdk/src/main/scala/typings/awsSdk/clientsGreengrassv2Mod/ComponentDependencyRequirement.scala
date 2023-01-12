@@ -23,7 +23,8 @@ object ComponentDependencyRequirement {
     __obj.asInstanceOf[ComponentDependencyRequirement]
   }
   
-  extension [Self <: ComponentDependencyRequirement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDependencyRequirement] (val x: Self) extends AnyVal {
     
     inline def setDependencyType(value: ComponentDependencyType): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
     

@@ -289,7 +289,8 @@ object sapMGroupHeaderListItemMod {
       __obj.asInstanceOf[GroupHeaderListItemSettings]
     }
     
-    extension [Self <: GroupHeaderListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupHeaderListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setCount(value: String | PropertyBindingInfo): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

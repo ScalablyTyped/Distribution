@@ -101,7 +101,8 @@ object distFirestoreSrcCoreEventManagerMod {
       __obj.asInstanceOf[EventManager]
     }
     
-    extension [Self <: EventManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventManager] (val x: Self) extends AnyVal {
       
       inline def setOnListen(value: /* query */ Query => js.Promise[ViewSnapshot]): Self = StObject.set(x, "onListen", js.Any.fromFunction1(value))
       
@@ -131,7 +132,8 @@ object distFirestoreSrcCoreEventManagerMod {
       __obj.asInstanceOf[ListenOptions]
     }
     
-    extension [Self <: ListenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object distFirestoreSrcCoreEventManagerMod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setError(value: FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -185,7 +188,8 @@ object distFirestoreSrcCoreEventManagerMod {
       __obj.asInstanceOf[QueryListenersInfo]
     }
     
-    extension [Self <: QueryListenersInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryListenersInfo] (val x: Self) extends AnyVal {
       
       inline def setListeners(value: js.Array[QueryListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       

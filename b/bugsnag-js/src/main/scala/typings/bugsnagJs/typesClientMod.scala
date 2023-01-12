@@ -99,7 +99,8 @@ object typesClientMod {
       __obj.asInstanceOf[IConfigSchemaEntry]
     }
     
-    extension [Self <: IConfigSchemaEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfigSchemaEntry] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: () => Any): Self = StObject.set(x, "defaultValue", js.Any.fromFunction0(value))
       
@@ -131,7 +132,8 @@ object typesClientMod {
       __obj.asInstanceOf[ILogger]
     }
     
-    extension [Self <: ILogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -166,7 +168,8 @@ object typesClientMod {
       __obj.asInstanceOf[INotifyOpts]
     }
     
-    extension [Self <: INotifyOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotifyOpts] (val x: Self) extends AnyVal {
       
       inline def setBeforeSend(value: /* report */ typings.bugsnagJs.typesReportMod.default => Boolean | Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
       
@@ -213,7 +216,8 @@ object typesClientMod {
       __obj.asInstanceOf[IPlugin]
     }
     
-    extension [Self <: IPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlugin] (val x: Self) extends AnyVal {
       
       inline def setConfigSchema(value: StringDictionary[IConfigSchemaEntry]): Self = StObject.set(x, "configSchema", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object typesClientMod {
       __obj.asInstanceOf[IReportPayload]
     }
     
-    extension [Self <: IReportPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReportPayload] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object typesClientMod {
       __obj.asInstanceOf[ISession]
     }
     
-    extension [Self <: ISession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -292,7 +298,8 @@ object typesClientMod {
       __obj.asInstanceOf[ISessionDelegate]
     }
     
-    extension [Self <: ISessionDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISessionDelegate] (val x: Self) extends AnyVal {
       
       inline def setStartSession(value: Client => Client): Self = StObject.set(x, "startSession", js.Any.fromFunction1(value))
     }
@@ -317,7 +324,8 @@ object typesClientMod {
       __obj.asInstanceOf[ISessionPayload]
     }
     
-    extension [Self <: ISessionPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISessionPayload] (val x: Self) extends AnyVal {
       
       inline def setApp(value: js.Object): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

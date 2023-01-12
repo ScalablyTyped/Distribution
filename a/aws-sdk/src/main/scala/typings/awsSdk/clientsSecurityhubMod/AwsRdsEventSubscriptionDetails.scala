@@ -63,7 +63,8 @@ object AwsRdsEventSubscriptionDetails {
     __obj.asInstanceOf[AwsRdsEventSubscriptionDetails]
   }
   
-  extension [Self <: AwsRdsEventSubscriptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsEventSubscriptionDetails] (val x: Self) extends AnyVal {
     
     inline def setCustSubscriptionId(value: NonEmptyString): Self = StObject.set(x, "CustSubscriptionId", value.asInstanceOf[js.Any])
     

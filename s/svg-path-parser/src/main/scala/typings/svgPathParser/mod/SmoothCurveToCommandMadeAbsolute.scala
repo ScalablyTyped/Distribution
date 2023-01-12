@@ -40,7 +40,8 @@ object SmoothCurveToCommandMadeAbsolute {
     __obj.asInstanceOf[SmoothCurveToCommandMadeAbsolute]
   }
   
-  extension [Self <: SmoothCurveToCommandMadeAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmoothCurveToCommandMadeAbsolute] (val x: Self) extends AnyVal {
     
     inline def setCode(value: S): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

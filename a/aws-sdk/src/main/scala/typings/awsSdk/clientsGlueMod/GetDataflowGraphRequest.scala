@@ -18,7 +18,8 @@ object GetDataflowGraphRequest {
     __obj.asInstanceOf[GetDataflowGraphRequest]
   }
   
-  extension [Self <: GetDataflowGraphRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataflowGraphRequest] (val x: Self) extends AnyVal {
     
     inline def setPythonScript(value: PythonScript): Self = StObject.set(x, "PythonScript", value.asInstanceOf[js.Any])
     

@@ -176,7 +176,8 @@ object PageHdrFtrInReport {
     __obj.asInstanceOf[PageHdrFtrInReport]
   }
   
-  extension [Self <: PageHdrFtrInReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageHdrFtrInReport] (val x: Self) extends AnyVal {
     
     inline def setAccessDot_PageHdrFtrInReport_typekey(value: PageHdrFtrInReport): Self = StObject.set(x, "Access._PageHdrFtrInReport_typekey", value.asInstanceOf[js.Any])
     

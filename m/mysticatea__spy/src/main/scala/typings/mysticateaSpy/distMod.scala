@@ -90,7 +90,8 @@ object distMod {
         __obj.asInstanceOf[CallInformation[T]]
       }
       
-      extension [Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & CallInformation[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CallInformation[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & CallInformation[T]) extends AnyVal {
         
         inline def setCalls(value: js.Array[Call[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
         
@@ -155,7 +156,8 @@ object distMod {
         __obj.asInstanceOf[ReturnedCall[T]]
       }
       
-      extension [Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ReturnedCall[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReturnedCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & ReturnedCall[T]) extends AnyVal {
         
         inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         
@@ -190,7 +192,8 @@ object distMod {
         __obj.asInstanceOf[ThrownCall[T]]
       }
       
-      extension [Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */](x: Self & ThrownCall[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThrownCall[?], T /* <: js.Function1[/* repeated */ Any, Any] */] (val x: Self & ThrownCall[T]) extends AnyVal {
         
         inline def setArguments(value: Parameters[T]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
         

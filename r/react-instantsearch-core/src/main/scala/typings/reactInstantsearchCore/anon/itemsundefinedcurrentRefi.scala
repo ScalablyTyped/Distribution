@@ -41,7 +41,8 @@ object itemsundefinedcurrentRefi {
     __obj.asInstanceOf[itemsundefinedcurrentRefi]
   }
   
-  extension [Self <: itemsundefinedcurrentRefi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: itemsundefinedcurrentRefi] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

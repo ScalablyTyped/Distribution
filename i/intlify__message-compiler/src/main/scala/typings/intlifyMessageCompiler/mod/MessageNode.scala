@@ -22,7 +22,8 @@ object MessageNode {
     __obj.asInstanceOf[MessageNode]
   }
   
-  extension [Self <: MessageNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageNode] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[MessageElementNode]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

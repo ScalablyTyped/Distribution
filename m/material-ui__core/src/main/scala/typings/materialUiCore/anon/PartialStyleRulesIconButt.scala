@@ -53,7 +53,8 @@ object PartialStyleRulesIconButt {
     __obj.asInstanceOf[PartialStyleRulesIconButt]
   }
   
-  extension [Self <: PartialStyleRulesIconButt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesIconButt] (val x: Self) extends AnyVal {
     
     inline def setColorInherit(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

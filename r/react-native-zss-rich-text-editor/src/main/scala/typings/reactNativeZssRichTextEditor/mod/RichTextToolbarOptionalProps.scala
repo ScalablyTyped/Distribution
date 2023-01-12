@@ -42,7 +42,8 @@ object RichTextToolbarOptionalProps {
     __obj.asInstanceOf[RichTextToolbarOptionalProps]
   }
   
-  extension [Self <: RichTextToolbarOptionalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichTextToolbarOptionalProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[ACTIONS]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

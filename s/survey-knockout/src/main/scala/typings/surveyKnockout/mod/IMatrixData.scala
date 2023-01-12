@@ -17,7 +17,8 @@ object IMatrixData {
     __obj.asInstanceOf[IMatrixData]
   }
   
-  extension [Self <: IMatrixData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMatrixData] (val x: Self) extends AnyVal {
     
     inline def setGetCorrectedRowValue(value: Any => Any): Self = StObject.set(x, "getCorrectedRowValue", js.Any.fromFunction1(value))
     

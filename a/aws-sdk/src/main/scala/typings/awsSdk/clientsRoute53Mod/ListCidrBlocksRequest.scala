@@ -33,7 +33,8 @@ object ListCidrBlocksRequest {
     __obj.asInstanceOf[ListCidrBlocksRequest]
   }
   
-  extension [Self <: ListCidrBlocksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCidrBlocksRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: UUID): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object utilsGetDefaultBandCombinationParams {
     __obj.asInstanceOf[utilsGetDefaultBandCombinationParams]
   }
   
-  extension [Self <: utilsGetDefaultBandCombinationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: utilsGetDefaultBandCombinationParams] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: ImageryLayer | ImageryTileLayer | WCSLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

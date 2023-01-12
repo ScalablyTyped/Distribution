@@ -26,7 +26,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NoScroll]
     }
     
-    extension [Self <: NoScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoScroll] (val x: Self) extends AnyVal {
       
       inline def setOff(value: () => Unit): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
       

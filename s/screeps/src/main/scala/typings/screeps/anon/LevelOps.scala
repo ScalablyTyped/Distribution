@@ -46,7 +46,8 @@ object LevelOps {
     __obj.asInstanceOf[LevelOps]
   }
   
-  extension [Self <: LevelOps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelOps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

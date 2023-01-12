@@ -18,7 +18,8 @@ object UpdateValue {
     __obj.asInstanceOf[UpdateValue]
   }
   
-  extension [Self <: UpdateValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateValue] (val x: Self) extends AnyVal {
     
     inline def setOSUpdateSettings(value: OSUpdateSettings): Self = StObject.set(x, "OSUpdateSettings", value.asInstanceOf[js.Any])
     

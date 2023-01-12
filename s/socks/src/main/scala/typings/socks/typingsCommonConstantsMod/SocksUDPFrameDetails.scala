@@ -20,7 +20,8 @@ object SocksUDPFrameDetails {
     __obj.asInstanceOf[SocksUDPFrameDetails]
   }
   
-  extension [Self <: SocksUDPFrameDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocksUDPFrameDetails] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

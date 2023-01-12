@@ -17,7 +17,8 @@ object StateReturnModelColumns {
     __obj.asInstanceOf[StateReturnModelColumns]
   }
   
-  extension [Self <: StateReturnModelColumns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateReturnModelColumns] (val x: Self) extends AnyVal {
     
     inline def setSearch(value: SearchSettings): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     

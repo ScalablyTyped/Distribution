@@ -104,7 +104,8 @@ object typingsModelsTransactionMod {
         __obj.asInstanceOf[TransactionData]
       }
       
-      extension [Self <: TransactionData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransactionData] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         

@@ -17,7 +17,8 @@ object ScriptingResult {
     __obj.asInstanceOf[ScriptingResult]
   }
   
-  extension [Self <: ScriptingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptingResult] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

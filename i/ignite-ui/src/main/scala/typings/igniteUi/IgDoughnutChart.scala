@@ -130,7 +130,8 @@ object IgDoughnutChart {
     __obj.asInstanceOf[IgDoughnutChart]
   }
   
-  extension [Self <: IgDoughnutChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgDoughnutChart] (val x: Self) extends AnyVal {
     
     inline def setAllowSliceExplosion(value: Boolean): Self = StObject.set(x, "allowSliceExplosion", value.asInstanceOf[js.Any])
     

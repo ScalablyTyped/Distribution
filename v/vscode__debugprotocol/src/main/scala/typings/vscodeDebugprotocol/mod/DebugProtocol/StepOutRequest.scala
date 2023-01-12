@@ -33,7 +33,8 @@ object StepOutRequest {
     __obj.asInstanceOf[StepOutRequest]
   }
   
-  extension [Self <: StepOutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOutRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: StepOutArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

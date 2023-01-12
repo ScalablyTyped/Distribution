@@ -29,7 +29,8 @@ object PlotMacdOnPointConnectorOptions {
     __obj.asInstanceOf[PlotMacdOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotMacdOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMacdOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

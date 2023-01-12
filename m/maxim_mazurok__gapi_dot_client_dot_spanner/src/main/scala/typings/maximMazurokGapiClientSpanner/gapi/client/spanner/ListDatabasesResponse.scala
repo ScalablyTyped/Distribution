@@ -19,7 +19,8 @@ object ListDatabasesResponse {
     __obj.asInstanceOf[ListDatabasesResponse]
   }
   
-  extension [Self <: ListDatabasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatabasesResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabases(value: js.Array[Database]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     

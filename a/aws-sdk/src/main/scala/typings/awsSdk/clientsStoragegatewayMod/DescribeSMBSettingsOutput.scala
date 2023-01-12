@@ -45,7 +45,8 @@ object DescribeSMBSettingsOutput {
     __obj.asInstanceOf[DescribeSMBSettingsOutput]
   }
   
-  extension [Self <: DescribeSMBSettingsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSMBSettingsOutput] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsGitHubMod extends Shortcut {
       __obj.asInstanceOf[GitHubProps]
     }
     
-    extension [Self <: GitHubProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitHubProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

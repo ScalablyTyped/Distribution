@@ -40,7 +40,8 @@ object AddSlideOptions {
     __obj.asInstanceOf[AddSlideOptions]
   }
   
-  extension [Self <: AddSlideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddSlideOptions] (val x: Self) extends AnyVal {
     
     inline def setLayoutId(value: String): Self = StObject.set(x, "layoutId", value.asInstanceOf[js.Any])
     

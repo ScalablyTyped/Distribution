@@ -25,7 +25,8 @@ object DetailedProtocolMethodSpec {
     __obj.asInstanceOf[DetailedProtocolMethodSpec]
   }
   
-  extension [Self <: DetailedProtocolMethodSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedProtocolMethodSpec] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

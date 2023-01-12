@@ -32,7 +32,8 @@ object ThumbarButton {
     __obj.asInstanceOf[ThumbarButton]
   }
   
-  extension [Self <: ThumbarButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbarButton] (val x: Self) extends AnyVal {
     
     inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

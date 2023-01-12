@@ -44,7 +44,8 @@ object InputBoolean {
     __obj.asInstanceOf[InputBoolean]
   }
   
-  extension [Self <: InputBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputBoolean] (val x: Self) extends AnyVal {
     
     inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object LoadNetworkResourceResponse {
     __obj.asInstanceOf[LoadNetworkResourceResponse]
   }
   
-  extension [Self <: LoadNetworkResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadNetworkResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setResource(value: LoadNetworkResourcePageResult): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ProvisionedThroughputDescription {
     __obj.asInstanceOf[ProvisionedThroughputDescription]
   }
   
-  extension [Self <: ProvisionedThroughputDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisionedThroughputDescription] (val x: Self) extends AnyVal {
     
     inline def setLastDecreaseDateTime(value: js.Date): Self = StObject.set(x, "LastDecreaseDateTime", value.asInstanceOf[js.Any])
     

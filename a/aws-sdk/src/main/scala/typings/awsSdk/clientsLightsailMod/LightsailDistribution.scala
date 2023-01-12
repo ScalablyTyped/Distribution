@@ -113,7 +113,8 @@ object LightsailDistribution {
     __obj.asInstanceOf[LightsailDistribution]
   }
   
-  extension [Self <: LightsailDistribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightsailDistribution] (val x: Self) extends AnyVal {
     
     inline def setAbleToUpdateBundle(value: Boolean): Self = StObject.set(x, "ableToUpdateBundle", value.asInstanceOf[js.Any])
     

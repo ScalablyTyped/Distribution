@@ -91,7 +91,8 @@ object Particles {
     __obj.asInstanceOf[Particles]
   }
   
-  extension [Self <: Particles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Particles] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: Canvas => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction1(value))
     

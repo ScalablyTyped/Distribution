@@ -20,7 +20,8 @@ object MedicationKnowledgeRegulatorySchedule {
     __obj.asInstanceOf[MedicationKnowledgeRegulatorySchedule]
   }
   
-  extension [Self <: MedicationKnowledgeRegulatorySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationKnowledgeRegulatorySchedule] (val x: Self) extends AnyVal {
     
     inline def setSchedule(value: CodeableConcept): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }

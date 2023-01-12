@@ -48,7 +48,8 @@ object InterconnectOutageNotification {
     __obj.asInstanceOf[InterconnectOutageNotification]
   }
   
-  extension [Self <: InterconnectOutageNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectOutageNotification] (val x: Self) extends AnyVal {
     
     inline def setAffectedCircuits(value: js.Array[String]): Self = StObject.set(x, "affectedCircuits", value.asInstanceOf[js.Any])
     

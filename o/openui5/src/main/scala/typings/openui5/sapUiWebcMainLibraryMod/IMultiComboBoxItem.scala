@@ -15,7 +15,8 @@ object IMultiComboBoxItem {
     __obj.asInstanceOf[IMultiComboBoxItem]
   }
   
-  extension [Self <: IMultiComboBoxItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiComboBoxItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_IMultiComboBoxItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_IMultiComboBoxItem", value.asInstanceOf[js.Any])
   }

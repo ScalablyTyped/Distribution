@@ -213,7 +213,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionInstanceUpdateOptions]
     }
     
-    extension [Self <: SyncMapPermissionInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
       
@@ -391,7 +392,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionListInstanceEachOptions]
     }
     
-    extension [Self <: SyncMapPermissionListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ SyncMapPermissionInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -440,7 +442,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionListInstanceOptions]
     }
     
-    extension [Self <: SyncMapPermissionListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -474,7 +477,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionListInstancePageOptions]
     }
     
-    extension [Self <: SyncMapPermissionListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -551,7 +555,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionResource]
     }
     
-    extension [Self <: SyncMapPermissionResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -584,7 +589,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       __obj.asInstanceOf[SyncMapPermissionSolution]
     }
     
-    extension [Self <: SyncMapPermissionSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionSolution] (val x: Self) extends AnyVal {
       
       inline def setMapSid(value: String): Self = StObject.set(x, "mapSid", value.asInstanceOf[js.Any])
       

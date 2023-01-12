@@ -19,7 +19,8 @@ object IsEditable {
     __obj.asInstanceOf[IsEditable]
   }
   
-  extension [Self <: IsEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEditable] (val x: Self) extends AnyVal {
     
     inline def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     

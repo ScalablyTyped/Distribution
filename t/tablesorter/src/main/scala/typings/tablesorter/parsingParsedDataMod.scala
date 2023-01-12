@@ -33,7 +33,8 @@ object parsingParsedDataMod {
       __obj.asInstanceOf[ParsedData]
     }
     
-    extension [Self <: ParsedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedData] (val x: Self) extends AnyVal {
       
       inline def set$cells(value: js.Array[JQuery[HTMLElement]]): Self = StObject.set(x, "$cells", value.asInstanceOf[js.Any])
       

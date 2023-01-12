@@ -18,7 +18,8 @@ object SearchReply {
     __obj.asInstanceOf[SearchReply]
   }
   
-  extension [Self <: SearchReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchReply] (val x: Self) extends AnyVal {
     
     inline def setDocuments(value: js.Array[Id]): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
     

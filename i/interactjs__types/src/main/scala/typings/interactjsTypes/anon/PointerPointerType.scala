@@ -21,7 +21,8 @@ object PointerPointerType {
     __obj.asInstanceOf[PointerPointerType]
   }
   
-  extension [Self <: PointerPointerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerPointerType] (val x: Self) extends AnyVal {
     
     inline def setInteraction(value: typings.interactjsTypes.coreInteractionMod.Interaction[gesture]): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     

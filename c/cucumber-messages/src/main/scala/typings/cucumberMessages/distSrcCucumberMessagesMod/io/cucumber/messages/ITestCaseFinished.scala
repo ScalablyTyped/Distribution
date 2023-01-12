@@ -23,7 +23,8 @@ object ITestCaseFinished {
     __obj.asInstanceOf[ITestCaseFinished]
   }
   
-  extension [Self <: ITestCaseFinished](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITestCaseFinished] (val x: Self) extends AnyVal {
     
     inline def setTestCaseStartedId(value: String): Self = StObject.set(x, "testCaseStartedId", value.asInstanceOf[js.Any])
     

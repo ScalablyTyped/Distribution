@@ -19,7 +19,8 @@ object SecurityQueryApiKeysResponse {
     __obj.asInstanceOf[SecurityQueryApiKeysResponse]
   }
   
-  extension [Self <: SecurityQueryApiKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityQueryApiKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setApi_keys(value: js.Array[SecurityApiKey]): Self = StObject.set(x, "api_keys", value.asInstanceOf[js.Any])
     

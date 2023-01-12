@@ -27,7 +27,8 @@ object XMLHttpRequestEventMap {
     __obj.asInstanceOf[XMLHttpRequestEventMap]
   }
   
-  extension [Self <: XMLHttpRequestEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLHttpRequestEventMap] (val x: Self) extends AnyVal {
     
     inline def setReadystatechange(value: Event): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
   }

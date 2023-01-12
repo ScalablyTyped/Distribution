@@ -37,7 +37,8 @@ object ListBoxItem {
     __obj.asInstanceOf[ListBoxItem]
   }
   
-  extension [Self <: ListBoxItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBoxItem] (val x: Self) extends AnyVal {
     
     inline def setChildItems(value: js.Array[String | ListBoxItem]): Self = StObject.set(x, "childItems", value.asInstanceOf[js.Any])
     

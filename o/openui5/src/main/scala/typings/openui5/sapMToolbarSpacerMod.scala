@@ -175,7 +175,8 @@ object sapMToolbarSpacerMod {
       __obj.asInstanceOf[ToolbarSpacerSettings]
     }
     
-    extension [Self <: ToolbarSpacerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSpacerSettings] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

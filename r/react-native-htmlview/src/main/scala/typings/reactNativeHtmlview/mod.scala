@@ -41,7 +41,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HTMLViewNode]
     }
     
-    extension [Self <: HTMLViewNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLViewNode] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: GenericAttribs & SpecificAttribs): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HTMLViewProps]
     }
     
-    extension [Self <: HTMLViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLViewProps] (val x: Self) extends AnyVal {
       
       inline def setAddLineBreaks(value: Boolean): Self = StObject.set(x, "addLineBreaks", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SpecificAttribs]
     }
     
-    extension [Self <: SpecificAttribs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificAttribs] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle | TextStyle | ImageStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

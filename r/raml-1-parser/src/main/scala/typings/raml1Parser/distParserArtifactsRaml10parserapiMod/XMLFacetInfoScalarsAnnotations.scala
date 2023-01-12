@@ -44,7 +44,8 @@ object XMLFacetInfoScalarsAnnotations {
     __obj.asInstanceOf[XMLFacetInfoScalarsAnnotations]
   }
   
-  extension [Self <: XMLFacetInfoScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLFacetInfoScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "attribute", js.Any.fromFunction0(value))
     

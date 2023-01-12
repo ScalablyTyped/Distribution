@@ -63,7 +63,8 @@ object libApplePayMod {
       __obj.asInstanceOf[ApplePayConfig]
     }
     
-    extension [Self <: ApplePayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplePayConfig] (val x: Self) extends AnyVal {
       
       inline def setBraintree(value: ClientAuthorization): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
       

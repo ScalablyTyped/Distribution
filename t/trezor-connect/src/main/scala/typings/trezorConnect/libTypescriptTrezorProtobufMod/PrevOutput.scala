@@ -19,7 +19,8 @@ object PrevOutput {
     __obj.asInstanceOf[PrevOutput]
   }
   
-  extension [Self <: PrevOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrevOutput] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object OIDCUpdateAuthProviderRequest {
     __obj.asInstanceOf[OIDCUpdateAuthProviderRequest]
   }
   
-  extension [Self <: OIDCUpdateAuthProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OIDCUpdateAuthProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

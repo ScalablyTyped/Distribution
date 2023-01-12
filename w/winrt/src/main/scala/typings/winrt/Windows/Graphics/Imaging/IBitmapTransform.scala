@@ -32,7 +32,8 @@ object IBitmapTransform {
     __obj.asInstanceOf[IBitmapTransform]
   }
   
-  extension [Self <: IBitmapTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBitmapTransform] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: BitmapBounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

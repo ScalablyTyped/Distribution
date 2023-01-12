@@ -28,7 +28,8 @@ object BatchAlarmActionErrorEntry {
     __obj.asInstanceOf[BatchAlarmActionErrorEntry]
   }
   
-  extension [Self <: BatchAlarmActionErrorEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAlarmActionErrorEntry] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

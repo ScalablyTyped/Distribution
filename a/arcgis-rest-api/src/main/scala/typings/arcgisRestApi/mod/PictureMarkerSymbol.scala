@@ -33,7 +33,8 @@ object PictureMarkerSymbol {
     __obj.asInstanceOf[PictureMarkerSymbol]
   }
   
-  extension [Self <: PictureMarkerSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureMarkerSymbol] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

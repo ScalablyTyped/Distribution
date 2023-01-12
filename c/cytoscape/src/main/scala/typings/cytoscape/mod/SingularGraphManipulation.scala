@@ -33,7 +33,8 @@ object SingularGraphManipulation {
     __obj.asInstanceOf[SingularGraphManipulation]
   }
   
-  extension [Self <: SingularGraphManipulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularGraphManipulation] (val x: Self) extends AnyVal {
     
     inline def setCy(value: () => Core): Self = StObject.set(x, "cy", js.Any.fromFunction0(value))
     

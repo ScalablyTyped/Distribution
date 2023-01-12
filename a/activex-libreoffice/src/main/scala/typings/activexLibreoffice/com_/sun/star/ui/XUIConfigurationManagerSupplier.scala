@@ -39,7 +39,8 @@ object XUIConfigurationManagerSupplier {
     __obj.asInstanceOf[XUIConfigurationManagerSupplier]
   }
   
-  extension [Self <: XUIConfigurationManagerSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIConfigurationManagerSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetUIConfigurationManager(value: () => XUIConfigurationManager): Self = StObject.set(x, "getUIConfigurationManager", js.Any.fromFunction0(value))
     

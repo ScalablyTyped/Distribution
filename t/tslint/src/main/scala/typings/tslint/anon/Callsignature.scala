@@ -33,7 +33,8 @@ object Callsignature {
     __obj.asInstanceOf[Callsignature]
   }
   
-  extension [Self <: Callsignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Callsignature] (val x: Self) extends AnyVal {
     
     inline def `setCall-signature`(value: String): Self = StObject.set(x, "call-signature", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object distEsUtilsSharedPropsMod {
       __obj.asInstanceOf[CustomIcons]
     }
     
-    extension [Self <: CustomIcons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomIcons] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: RecordCategoryNameReactNo): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     }
@@ -138,7 +139,8 @@ object distEsUtilsSharedPropsMod {
       __obj.asInstanceOf[EmojiProps]
     }
     
-    extension [Self <: EmojiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmojiProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): Self = StObject.set(x, "backgroundImageFn", js.Any.fromFunction2(value))
       
@@ -261,7 +263,8 @@ object distEsUtilsSharedPropsMod {
       __obj.asInstanceOf[I18n]
     }
     
-    extension [Self <: I18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: RecordCategoryNamestring): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object distEsUtilsSharedPropsMod {
       __obj.asInstanceOf[PartialI18n]
     }
     
-    extension [Self <: PartialI18n](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialI18n] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: PartialRecordCategoryName): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -382,7 +386,8 @@ object distEsUtilsSharedPropsMod {
       __obj.asInstanceOf[PickerProps]
     }
     
-    extension [Self <: PickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

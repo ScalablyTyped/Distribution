@@ -159,7 +159,8 @@ object tree {
       __obj.asInstanceOf[typings.extjs.Ext.tree.IPanel]
     }
     
-    extension [Self <: typings.extjs.Ext.tree.IPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tree.IPanel] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -379,7 +380,8 @@ object tree {
       __obj.asInstanceOf[typings.extjs.Ext.tree.ITreePanel]
     }
     
-    extension [Self <: typings.extjs.Ext.tree.ITreePanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.tree.ITreePanel] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -553,7 +555,8 @@ object tree {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -653,7 +656,8 @@ object tree {
       __obj.asInstanceOf[IViewDropZone]
     }
     
-    extension [Self <: IViewDropZone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IViewDropZone] (val x: Self) extends AnyVal {
       
       inline def setAllowContainerDrop(value: Boolean): Self = StObject.set(x, "allowContainerDrop", value.asInstanceOf[js.Any])
       
@@ -750,7 +754,8 @@ object tree {
         __obj.asInstanceOf[ITreeViewDragDrop]
       }
       
-      extension [Self <: ITreeViewDragDrop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITreeViewDragDrop] (val x: Self) extends AnyVal {
         
         inline def setAllowContainerDrops(value: Boolean): Self = StObject.set(x, "allowContainerDrops", value.asInstanceOf[js.Any])
         

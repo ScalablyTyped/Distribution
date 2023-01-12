@@ -20,7 +20,8 @@ object GreaterThanUndefinedLessThanUndefined {
     __obj.asInstanceOf[GreaterThanUndefinedLessThanUndefined]
   }
   
-  extension [Self <: GreaterThanUndefinedLessThanUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreaterThanUndefinedLessThanUndefined] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

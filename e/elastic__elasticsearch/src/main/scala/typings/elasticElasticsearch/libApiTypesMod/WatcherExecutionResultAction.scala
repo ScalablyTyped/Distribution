@@ -36,7 +36,8 @@ object WatcherExecutionResultAction {
     __obj.asInstanceOf[WatcherExecutionResultAction]
   }
   
-  extension [Self <: WatcherExecutionResultAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecutionResultAction] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: WatcherEmailResult): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

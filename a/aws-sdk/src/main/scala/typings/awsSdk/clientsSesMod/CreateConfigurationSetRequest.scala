@@ -18,7 +18,8 @@ object CreateConfigurationSetRequest {
     __obj.asInstanceOf[CreateConfigurationSetRequest]
   }
   
-  extension [Self <: CreateConfigurationSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConfigurationSetRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSet(value: ConfigurationSet): Self = StObject.set(x, "ConfigurationSet", value.asInstanceOf[js.Any])
   }

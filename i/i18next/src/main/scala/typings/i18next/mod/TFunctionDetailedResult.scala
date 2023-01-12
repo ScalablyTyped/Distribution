@@ -38,7 +38,8 @@ object TFunctionDetailedResult {
     __obj.asInstanceOf[TFunctionDetailedResult[T]]
   }
   
-  extension [Self <: TFunctionDetailedResult[?], T](x: Self & TFunctionDetailedResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFunctionDetailedResult[?], T] (val x: Self & TFunctionDetailedResult[T]) extends AnyVal {
     
     inline def setExactUsedKey(value: String): Self = StObject.set(x, "exactUsedKey", value.asInstanceOf[js.Any])
     

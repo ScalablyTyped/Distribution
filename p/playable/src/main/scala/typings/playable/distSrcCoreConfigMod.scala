@@ -73,7 +73,8 @@ object distSrcCoreConfigMod {
       __obj.asInstanceOf[IPlayerConfig]
     }
     
-    extension [Self <: IPlayerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayerConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

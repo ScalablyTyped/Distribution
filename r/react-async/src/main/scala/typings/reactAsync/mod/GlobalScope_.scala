@@ -22,7 +22,8 @@ object GlobalScope_ {
     __obj.asInstanceOf[GlobalScope_]
   }
   
-  extension [Self <: GlobalScope_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalScope_] (val x: Self) extends AnyVal {
     
     inline def setAbortController(
       value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AbortController */ Any

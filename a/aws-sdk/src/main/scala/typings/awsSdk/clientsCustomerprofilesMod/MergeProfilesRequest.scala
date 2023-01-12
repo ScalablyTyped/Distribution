@@ -33,7 +33,8 @@ object MergeProfilesRequest {
     __obj.asInstanceOf[MergeProfilesRequest]
   }
   
-  extension [Self <: MergeProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

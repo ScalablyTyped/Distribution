@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[FullPoint]
     }
     
-    extension [Self <: FullPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullPoint] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[PositionalPoint]
     }
     
-    extension [Self <: PositionalPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionalPoint] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

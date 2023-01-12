@@ -1075,7 +1075,8 @@ object SVGPropsSVGMarkerElementc {
     __obj.asInstanceOf[SVGPropsSVGMarkerElementc]
   }
   
-  extension [Self <: SVGPropsSVGMarkerElementc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPropsSVGMarkerElementc] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

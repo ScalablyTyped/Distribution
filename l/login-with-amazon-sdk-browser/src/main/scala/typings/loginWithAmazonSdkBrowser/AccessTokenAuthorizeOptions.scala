@@ -19,7 +19,8 @@ object AccessTokenAuthorizeOptions {
     __obj.asInstanceOf[AccessTokenAuthorizeOptions]
   }
   
-  extension [Self <: AccessTokenAuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessTokenAuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setResponse_type(value: token): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     

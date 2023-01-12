@@ -23,7 +23,8 @@ object SingleCellClick {
     __obj.asInstanceOf[SingleCellClick]
   }
   
-  extension [Self <: SingleCellClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleCellClick] (val x: Self) extends AnyVal {
     
     inline def setEventInfo(value: DomEvent): Self = StObject.set(x, "eventInfo", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ICoreCursorFactory {
     __obj.asInstanceOf[ICoreCursorFactory]
   }
   
-  extension [Self <: ICoreCursorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreCursorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCursor(value: (CoreCursorType, Double) => CoreCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction2(value))
   }

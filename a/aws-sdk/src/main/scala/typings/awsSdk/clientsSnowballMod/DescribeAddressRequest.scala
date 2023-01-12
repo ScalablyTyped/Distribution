@@ -18,7 +18,8 @@ object DescribeAddressRequest {
     __obj.asInstanceOf[DescribeAddressRequest]
   }
   
-  extension [Self <: DescribeAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setAddressId(value: AddressId): Self = StObject.set(x, "AddressId", value.asInstanceOf[js.Any])
   }

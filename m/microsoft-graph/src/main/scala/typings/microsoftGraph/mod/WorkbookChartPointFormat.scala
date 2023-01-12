@@ -18,7 +18,8 @@ object WorkbookChartPointFormat {
     __obj.asInstanceOf[WorkbookChartPointFormat]
   }
   
-  extension [Self <: WorkbookChartPointFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChartPointFormat] (val x: Self) extends AnyVal {
     
     inline def setFill(value: NullableOption[WorkbookChartFill]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

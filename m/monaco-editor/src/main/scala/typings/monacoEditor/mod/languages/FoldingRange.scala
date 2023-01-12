@@ -31,7 +31,8 @@ object FoldingRange {
     __obj.asInstanceOf[FoldingRange]
   }
   
-  extension [Self <: FoldingRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldingRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

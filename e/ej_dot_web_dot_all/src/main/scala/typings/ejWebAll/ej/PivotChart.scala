@@ -220,7 +220,8 @@ object PivotChart {
       __obj.asInstanceOf[AfterServiceInvokeEventArgs]
     }
     
-    extension [Self <: AfterServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -253,7 +254,8 @@ object PivotChart {
       __obj.asInstanceOf[BeforeExportEventArgs]
     }
     
-    extension [Self <: BeforeExportEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeExportEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -278,7 +280,8 @@ object PivotChart {
       __obj.asInstanceOf[BeforeSeriesRenderEventArgs]
     }
     
-    extension [Self <: BeforeSeriesRenderEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSeriesRenderEventArgs] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object PivotChart {
       __obj.asInstanceOf[BeforeServiceInvokeEventArgs]
     }
     
-    extension [Self <: BeforeServiceInvokeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeServiceInvokeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -337,7 +341,8 @@ object PivotChart {
       __obj.asInstanceOf[CommonSeriesOptions]
     }
     
-    extension [Self <: CommonSeriesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonSeriesOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: ChartTypes | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -399,7 +404,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSource]
     }
     
-    extension [Self <: DataSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
       
       inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
       
@@ -479,7 +485,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceColumn]
     }
     
-    extension [Self <: DataSourceColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
       
       inline def setFieldCaption(value: String): Self = StObject.set(x, "fieldCaption", value.asInstanceOf[js.Any])
       
@@ -522,7 +529,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceColumnsFilterItems]
     }
     
-    extension [Self <: DataSourceColumnsFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceColumnsFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -554,7 +562,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceFilter]
     }
     
-    extension [Self <: DataSourceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFilter] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -585,7 +594,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceFiltersFilterItems]
     }
     
-    extension [Self <: DataSourceFiltersFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceFiltersFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -631,7 +641,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceRow]
     }
     
-    extension [Self <: DataSourceRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceRow] (val x: Self) extends AnyVal {
       
       inline def setFieldCaption(value: String): Self = StObject.set(x, "fieldCaption", value.asInstanceOf[js.Any])
       
@@ -674,7 +685,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceRowsFilterItems]
     }
     
-    extension [Self <: DataSourceRowsFilterItems](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceRowsFilterItems] (val x: Self) extends AnyVal {
       
       inline def setFilterType(value: FilterType | String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
       
@@ -724,7 +736,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceValue]
     }
     
-    extension [Self <: DataSourceValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceValue] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -767,7 +780,8 @@ object PivotChart {
       __obj.asInstanceOf[DataSourceValuesMeasure]
     }
     
-    extension [Self <: DataSourceValuesMeasure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceValuesMeasure] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       
@@ -800,7 +814,8 @@ object PivotChart {
       __obj.asInstanceOf[DrillSuccessEventArgs]
     }
     
-    extension [Self <: DrillSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrillSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setChartObj(value: Any): Self = StObject.set(x, "chartObj", value.asInstanceOf[js.Any])
       
@@ -841,7 +856,8 @@ object PivotChart {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1020,7 +1036,8 @@ object PivotChart {
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotChart.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.PivotChart.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.PivotChart.Model] (val x: Self) extends AnyVal {
       
       inline def setAfterServiceInvoke(value: /* e */ AfterServiceInvokeEventArgs => Unit): Self = StObject.set(x, "afterServiceInvoke", js.Any.fromFunction1(value))
       
@@ -1175,7 +1192,8 @@ object PivotChart {
       __obj.asInstanceOf[RenderCompleteEventArgs]
     }
     
-    extension [Self <: RenderCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1216,7 +1234,8 @@ object PivotChart {
       __obj.asInstanceOf[RenderFailureEventArgs]
     }
     
-    extension [Self <: RenderFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -1249,7 +1268,8 @@ object PivotChart {
       __obj.asInstanceOf[RenderSuccessEventArgs]
     }
     
-    extension [Self <: RenderSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -1286,7 +1306,8 @@ object PivotChart {
       __obj.asInstanceOf[ServiceMethodSettings]
     }
     
-    extension [Self <: ServiceMethodSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceMethodSettings] (val x: Self) extends AnyVal {
       
       inline def setDrillDown(value: String): Self = StObject.set(x, "drillDown", value.asInstanceOf[js.Any])
       
@@ -1319,7 +1340,8 @@ object PivotChart {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -1341,7 +1363,8 @@ object PivotChart {
       __obj.asInstanceOf[Zooming]
     }
     
-    extension [Self <: Zooming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zooming] (val x: Self) extends AnyVal {
       
       inline def setEnableScrollbar(value: Boolean): Self = StObject.set(x, "enableScrollbar", value.asInstanceOf[js.Any])
       

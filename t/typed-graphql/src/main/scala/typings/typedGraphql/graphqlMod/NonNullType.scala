@@ -23,7 +23,8 @@ object NonNullType {
     __obj.asInstanceOf[NonNullType]
   }
   
-  extension [Self <: NonNullType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonNullType] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

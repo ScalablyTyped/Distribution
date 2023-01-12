@@ -18,7 +18,8 @@ object StopTrainingDocumentClassifierRequest {
     __obj.asInstanceOf[StopTrainingDocumentClassifierRequest]
   }
   
-  extension [Self <: StopTrainingDocumentClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTrainingDocumentClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSBatchItemFailure]
     }
     
-    extension [Self <: SQSBatchItemFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSBatchItemFailure] (val x: Self) extends AnyVal {
       
       inline def setItemIdentifier(value: String): Self = StObject.set(x, "itemIdentifier", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSBatchResponse]
     }
     
-    extension [Self <: SQSBatchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSBatchResponse] (val x: Self) extends AnyVal {
       
       inline def setBatchItemFailures(value: js.Array[SQSBatchItemFailure]): Self = StObject.set(x, "batchItemFailures", value.asInstanceOf[js.Any])
       
@@ -55,7 +57,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSEvent]
     }
     
-    extension [Self <: SQSEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSEvent] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[SQSRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSMessageAttribute]
     }
     
-    extension [Self <: SQSMessageAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSMessageAttribute] (val x: Self) extends AnyVal {
       
       inline def setBinaryListValues(value: js.Array[String]): Self = StObject.set(x, "binaryListValues", value.asInstanceOf[js.Any])
       
@@ -159,7 +163,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSRecord]
     }
     
-    extension [Self <: SQSRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSRecord] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: SQSRecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -211,7 +216,8 @@ object triggerSqsMod {
       __obj.asInstanceOf[SQSRecordAttributes]
     }
     
-    extension [Self <: SQSRecordAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSRecordAttributes] (val x: Self) extends AnyVal {
       
       inline def setAWSTraceHeader(value: String): Self = StObject.set(x, "AWSTraceHeader", value.asInstanceOf[js.Any])
       

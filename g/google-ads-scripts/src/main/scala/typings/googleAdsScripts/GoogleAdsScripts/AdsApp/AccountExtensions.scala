@@ -42,7 +42,8 @@ object AccountExtensions {
     __obj.asInstanceOf[AccountExtensions]
   }
   
-  extension [Self <: AccountExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountExtensions] (val x: Self) extends AnyVal {
     
     inline def setCallouts(value: () => AccountCalloutSelector): Self = StObject.set(x, "callouts", js.Any.fromFunction0(value))
     

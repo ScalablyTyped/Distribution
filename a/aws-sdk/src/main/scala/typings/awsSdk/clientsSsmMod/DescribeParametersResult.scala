@@ -23,7 +23,8 @@ object DescribeParametersResult {
     __obj.asInstanceOf[DescribeParametersResult]
   }
   
-  extension [Self <: DescribeParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeParametersResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

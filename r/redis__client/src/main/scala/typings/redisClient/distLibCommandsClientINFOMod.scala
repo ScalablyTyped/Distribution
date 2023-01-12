@@ -93,7 +93,8 @@ object distLibCommandsClientINFOMod {
       __obj.asInstanceOf[ClientInfoReply]
     }
     
-    extension [Self <: ClientInfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientInfoReply] (val x: Self) extends AnyVal {
       
       inline def setAddr(value: String): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
       

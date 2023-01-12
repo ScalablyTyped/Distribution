@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: start | middle | end): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

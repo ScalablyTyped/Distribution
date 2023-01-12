@@ -17,7 +17,8 @@ object TopologyVersion {
     __obj.asInstanceOf[TopologyVersion]
   }
   
-  extension [Self <: TopologyVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologyVersion] (val x: Self) extends AnyVal {
     
     inline def setCounter(value: typings.bson.mod.Long): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object LeaseWorkItemResponse {
     __obj.asInstanceOf[LeaseWorkItemResponse]
   }
   
-  extension [Self <: LeaseWorkItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaseWorkItemResponse] (val x: Self) extends AnyVal {
     
     inline def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

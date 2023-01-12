@@ -212,7 +212,8 @@ object srcDepositMod {
       __obj.asInstanceOf[AutoSubmitState]
     }
     
-    extension [Self <: AutoSubmitState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSubmitState] (val x: Self) extends AnyVal {
       
       inline def setFundingConfirmations(value: js.Promise[RequiredConfirmations]): Self = StObject.set(x, "fundingConfirmations", value.asInstanceOf[js.Any])
       
@@ -368,7 +369,8 @@ object srcDepositMod {
       __obj.asInstanceOf[FundingConfirmations]
     }
     
-    extension [Self <: FundingConfirmations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FundingConfirmations] (val x: Self) extends AnyVal {
       
       inline def setRequiredConfirmations(value: Double): Self = StObject.set(x, "requiredConfirmations", value.asInstanceOf[js.Any])
       

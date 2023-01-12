@@ -469,7 +469,8 @@ object libCommandsMod {
       __obj.asInstanceOf[IFileTypeData]
     }
     
-    extension [Self <: IFileTypeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileTypeData] (val x: Self) extends AnyVal {
       
       inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       

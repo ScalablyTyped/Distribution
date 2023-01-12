@@ -19,7 +19,8 @@ object ServoSweepOpts {
     __obj.asInstanceOf[ServoSweepOpts]
   }
   
-  extension [Self <: ServoSweepOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServoSweepOpts] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

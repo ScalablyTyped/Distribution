@@ -40,7 +40,8 @@ object Protectionurl {
     __obj.asInstanceOf[Protectionurl]
   }
   
-  extension [Self <: Protectionurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protectionurl] (val x: Self) extends AnyVal {
     
     inline def setCommit(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['commit'] */ js.Any

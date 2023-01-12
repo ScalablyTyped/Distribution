@@ -22,7 +22,8 @@ object Bytes {
     __obj.asInstanceOf[Bytes[T, Code, Alg]]
   }
   
-  extension [Self <: Bytes[?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */](x: Self & (Bytes[T, Code, Alg])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bytes[?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */] (val x: Self & (Bytes[T, Code, Alg])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

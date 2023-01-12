@@ -36,7 +36,8 @@ object HydratedNamespaceMetadata {
     __obj.asInstanceOf[HydratedNamespaceMetadata[C, N, M, I, O]]
   }
   
-  extension [Self <: HydratedNamespaceMetadata[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (HydratedNamespaceMetadata[C, N, M, I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HydratedNamespaceMetadata[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (HydratedNamespaceMetadata[C, N, M, I, O])) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

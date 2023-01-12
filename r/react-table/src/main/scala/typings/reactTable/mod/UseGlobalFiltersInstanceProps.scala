@@ -45,7 +45,8 @@ object UseGlobalFiltersInstanceProps {
     __obj.asInstanceOf[UseGlobalFiltersInstanceProps[D]]
   }
   
-  extension [Self <: UseGlobalFiltersInstanceProps[?], D /* <: js.Object */](x: Self & UseGlobalFiltersInstanceProps[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGlobalFiltersInstanceProps[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersInstanceProps[D]) extends AnyVal {
     
     inline def setFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "flatRows", value.asInstanceOf[js.Any])
     

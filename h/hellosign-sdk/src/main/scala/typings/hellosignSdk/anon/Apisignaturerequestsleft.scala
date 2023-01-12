@@ -19,7 +19,8 @@ object Apisignaturerequestsleft {
     __obj.asInstanceOf[Apisignaturerequestsleft]
   }
   
-  extension [Self <: Apisignaturerequestsleft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apisignaturerequestsleft] (val x: Self) extends AnyVal {
     
     inline def setApi_signature_requests_left(value: Double): Self = StObject.set(x, "api_signature_requests_left", value.asInstanceOf[js.Any])
     

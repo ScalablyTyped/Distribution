@@ -18,7 +18,8 @@ object FileCreateEvent {
     __obj.asInstanceOf[FileCreateEvent]
   }
   
-  extension [Self <: FileCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: js.Array[Uri]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ContinuousRendererResultSize {
     __obj.asInstanceOf[ContinuousRendererResultSize]
   }
   
-  extension [Self <: ContinuousRendererResultSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousRendererResultSize] (val x: Self) extends AnyVal {
     
     inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     

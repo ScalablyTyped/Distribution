@@ -21,7 +21,8 @@ object MediaTrackConstraints {
     __obj.asInstanceOf[MediaTrackConstraints]
   }
   
-  extension [Self <: MediaTrackConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrackConstraints] (val x: Self) extends AnyVal {
     
     inline def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
     

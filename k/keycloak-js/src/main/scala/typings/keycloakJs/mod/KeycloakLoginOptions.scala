@@ -79,7 +79,8 @@ object KeycloakLoginOptions {
     __obj.asInstanceOf[KeycloakLoginOptions]
   }
   
-  extension [Self <: KeycloakLoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakLoginOptions] (val x: Self) extends AnyVal {
     
     inline def setAcr(value: Acr): Self = StObject.set(x, "acr", value.asInstanceOf[js.Any])
     

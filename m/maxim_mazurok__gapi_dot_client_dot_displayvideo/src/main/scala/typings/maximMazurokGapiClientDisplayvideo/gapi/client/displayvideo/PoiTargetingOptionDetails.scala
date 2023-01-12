@@ -22,7 +22,8 @@ object PoiTargetingOptionDetails {
     __obj.asInstanceOf[PoiTargetingOptionDetails]
   }
   
-  extension [Self <: PoiTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoiTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

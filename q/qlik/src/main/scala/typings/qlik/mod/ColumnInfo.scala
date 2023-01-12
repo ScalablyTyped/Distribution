@@ -53,7 +53,8 @@ object ColumnInfo {
     __obj.asInstanceOf[ColumnInfo]
   }
   
-  extension [Self <: ColumnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
     
     inline def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EnabledServicePrincipal {
     __obj.asInstanceOf[EnabledServicePrincipal]
   }
   
-  extension [Self <: EnabledServicePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnabledServicePrincipal] (val x: Self) extends AnyVal {
     
     inline def setDateEnabled(value: js.Date): Self = StObject.set(x, "DateEnabled", value.asInstanceOf[js.Any])
     

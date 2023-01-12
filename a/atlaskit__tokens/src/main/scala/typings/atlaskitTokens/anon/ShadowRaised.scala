@@ -15,7 +15,8 @@ object ShadowRaised {
     __obj.asInstanceOf[ShadowRaised]
   }
   
-  extension [Self <: ShadowRaised](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowRaised] (val x: Self) extends AnyVal {
     
     inline def setShadow(value: Raised): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
   }

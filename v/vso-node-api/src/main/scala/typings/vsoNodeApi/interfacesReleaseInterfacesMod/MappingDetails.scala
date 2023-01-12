@@ -17,7 +17,8 @@ object MappingDetails {
     __obj.asInstanceOf[MappingDetails]
   }
   
-  extension [Self <: MappingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDetails] (val x: Self) extends AnyVal {
     
     inline def setMappings(value: StringDictionary[InputValue]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
   }

@@ -42,7 +42,8 @@ object CardAction {
     __obj.asInstanceOf[CardAction]
   }
   
-  extension [Self <: CardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardAction] (val x: Self) extends AnyVal {
     
     inline def setSetAuthorizationAction(value: AuthorizationAction => CardAction): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     

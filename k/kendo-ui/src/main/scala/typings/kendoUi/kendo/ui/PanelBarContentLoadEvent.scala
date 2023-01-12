@@ -20,7 +20,8 @@ object PanelBarContentLoadEvent {
     __obj.asInstanceOf[PanelBarContentLoadEvent]
   }
   
-  extension [Self <: PanelBarContentLoadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanelBarContentLoadEvent] (val x: Self) extends AnyVal {
     
     inline def setContentElement(value: Element): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     

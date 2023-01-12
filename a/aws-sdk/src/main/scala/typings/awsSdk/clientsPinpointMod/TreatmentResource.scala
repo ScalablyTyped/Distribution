@@ -58,7 +58,8 @@ object TreatmentResource {
     __obj.asInstanceOf[TreatmentResource]
   }
   
-  extension [Self <: TreatmentResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreatmentResource] (val x: Self) extends AnyVal {
     
     inline def setCustomDeliveryConfiguration(value: CustomDeliveryConfiguration): Self = StObject.set(x, "CustomDeliveryConfiguration", value.asInstanceOf[js.Any])
     

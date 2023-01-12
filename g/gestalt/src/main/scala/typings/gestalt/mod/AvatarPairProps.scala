@@ -21,7 +21,8 @@ object AvatarPairProps {
     __obj.asInstanceOf[AvatarPairProps]
   }
   
-  extension [Self <: AvatarPairProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvatarPairProps] (val x: Self) extends AnyVal {
     
     inline def setCollaborators(value: js.Array[Name]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     

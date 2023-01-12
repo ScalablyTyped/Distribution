@@ -30,7 +30,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCFormFieldAdapter]
     }
     
-    extension [Self <: MDCFormFieldAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCFormFieldAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateInputRipple(value: () => Unit): Self = StObject.set(x, "activateInputRipple", js.Any.fromFunction0(value))
       

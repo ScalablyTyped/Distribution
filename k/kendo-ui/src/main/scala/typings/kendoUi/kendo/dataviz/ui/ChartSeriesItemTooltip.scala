@@ -29,7 +29,8 @@ object ChartSeriesItemTooltip {
     __obj.asInstanceOf[ChartSeriesItemTooltip]
   }
   
-  extension [Self <: ChartSeriesItemTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemTooltip] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

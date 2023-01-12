@@ -18,7 +18,8 @@ object MetricStreamFilter {
     __obj.asInstanceOf[MetricStreamFilter]
   }
   
-  extension [Self <: MetricStreamFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricStreamFilter] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

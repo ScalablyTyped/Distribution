@@ -161,7 +161,8 @@ object SVGPathElement {
     __obj.asInstanceOf[SVGPathElement]
   }
   
-  extension [Self <: SVGPathElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathElement] (val x: Self) extends AnyVal {
     
     inline def setAnimatedNormalizedPathSegList(value: SVGPathSegList): Self = StObject.set(x, "animatedNormalizedPathSegList", value.asInstanceOf[js.Any])
     

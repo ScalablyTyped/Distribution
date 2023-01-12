@@ -18,7 +18,8 @@ object JsonLogicMin {
     __obj.asInstanceOf[JsonLogicMin[AddOps]]
   }
   
-  extension [Self <: JsonLogicMin[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicMin[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicMin[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicMin[AddOps]) extends AnyVal {
     
     inline def setMin(value: js.Array[RulesLogic[AddOps]]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

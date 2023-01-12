@@ -32,7 +32,8 @@ object TriggerCreateOptions {
     __obj.asInstanceOf[TriggerCreateOptions]
   }
   
-  extension [Self <: TriggerCreateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerCreateOptions] (val x: Self) extends AnyVal {
     
     inline def setDef_module(value: TriggerModule): Self = StObject.set(x, "def_module", value.asInstanceOf[js.Any])
     

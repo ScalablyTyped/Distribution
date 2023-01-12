@@ -34,7 +34,8 @@ object ExternalLinkInfo {
     __obj.asInstanceOf[ExternalLinkInfo]
   }
   
-  extension [Self <: ExternalLinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalLinkInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[TemperatureOptions]
     }
     
-    extension [Self <: TemperatureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemperatureOptions] (val x: Self) extends AnyVal {
       
       inline def setParser(value: decimal | default | hex): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
     }

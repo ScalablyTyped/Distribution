@@ -81,7 +81,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[Api10]
     }
     
-    extension [Self <: Api10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api10] (val x: Self) extends AnyVal {
       
       inline def setBaseUri(value: String): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[DocumentationItem]
     }
     
-    extension [Self <: DocumentationItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentationItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       
@@ -215,7 +218,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[Library]
     }
     
-    extension [Self <: Library](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[LibraryBase10]
     }
     
-    extension [Self <: LibraryBase10](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibraryBase10] (val x: Self) extends AnyVal {
       
       inline def setAnnotationTypes(value: js.Array[TypeDeclaration]): Self = StObject.set(x, "annotationTypes", value.asInstanceOf[js.Any])
       
@@ -319,7 +324,8 @@ object distTypingsNewFormatSpec1Dot0ApiMod {
       __obj.asInstanceOf[Overlay]
     }
     
-    extension [Self <: Overlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
       
       inline def setExtends(value: String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
       

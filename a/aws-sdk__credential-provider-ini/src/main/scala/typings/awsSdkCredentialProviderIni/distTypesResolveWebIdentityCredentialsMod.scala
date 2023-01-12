@@ -32,7 +32,8 @@ object distTypesResolveWebIdentityCredentialsMod {
       __obj.asInstanceOf[WebIdentityProfile]
     }
     
-    extension [Self <: WebIdentityProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebIdentityProfile] (val x: Self) extends AnyVal {
       
       inline def setRole_arn(value: String): Self = StObject.set(x, "role_arn", value.asInstanceOf[js.Any])
       

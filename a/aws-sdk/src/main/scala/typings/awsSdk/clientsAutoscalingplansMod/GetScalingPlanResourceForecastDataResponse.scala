@@ -18,7 +18,8 @@ object GetScalingPlanResourceForecastDataResponse {
     __obj.asInstanceOf[GetScalingPlanResourceForecastDataResponse]
   }
   
-  extension [Self <: GetScalingPlanResourceForecastDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScalingPlanResourceForecastDataResponse] (val x: Self) extends AnyVal {
     
     inline def setDatapoints(value: Datapoints): Self = StObject.set(x, "Datapoints", value.asInstanceOf[js.Any])
     

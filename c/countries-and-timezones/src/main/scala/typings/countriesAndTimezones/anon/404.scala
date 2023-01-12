@@ -20,7 +20,8 @@ object `404` {
     __obj.asInstanceOf[`404`]
   }
   
-  extension [Self <: `404`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `404`] (val x: Self) extends AnyVal {
     
     inline def setC(value: js.Tuple2[PG, AQ]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

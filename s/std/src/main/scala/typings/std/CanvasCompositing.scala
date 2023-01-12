@@ -19,7 +19,8 @@ object CanvasCompositing {
     __obj.asInstanceOf[CanvasCompositing]
   }
   
-  extension [Self <: CanvasCompositing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasCompositing] (val x: Self) extends AnyVal {
     
     inline def setGlobalAlpha(value: Double): Self = StObject.set(x, "globalAlpha", value.asInstanceOf[js.Any])
     

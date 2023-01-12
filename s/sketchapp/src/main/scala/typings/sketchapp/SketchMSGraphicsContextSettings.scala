@@ -20,7 +20,8 @@ object SketchMSGraphicsContextSettings {
     __obj.asInstanceOf[SketchMSGraphicsContextSettings]
   }
   
-  extension [Self <: SketchMSGraphicsContextSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSGraphicsContextSettings] (val x: Self) extends AnyVal {
     
     inline def setBlendMode(value: SketchMSGraphicsContextSettingsBlendMode): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
     

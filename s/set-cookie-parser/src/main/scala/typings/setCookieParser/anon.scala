@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Optionsmapfalseundefined]
     }
     
-    extension [Self <: Optionsmapfalseundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsmapfalseundefined] (val x: Self) extends AnyVal {
       
       inline def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Optionsmaptrue]
     }
     
-    extension [Self <: Optionsmaptrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsmaptrue] (val x: Self) extends AnyVal {
       
       inline def setDecodeValues(value: Boolean): Self = StObject.set(x, "decodeValues", value.asInstanceOf[js.Any])
       

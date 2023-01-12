@@ -23,7 +23,8 @@ object AdminGetUserRequest {
     __obj.asInstanceOf[AdminGetUserRequest]
   }
   
-  extension [Self <: AdminGetUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminGetUserRequest] (val x: Self) extends AnyVal {
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     

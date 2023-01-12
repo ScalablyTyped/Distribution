@@ -23,7 +23,8 @@ object BuildInfo {
     __obj.asInstanceOf[BuildInfo]
   }
   
-  extension [Self <: BuildInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildInfo] (val x: Self) extends AnyVal {
     
     inline def setBitness(value: String): Self = StObject.set(x, "bitness", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AddJobFlowStepsOutput {
     __obj.asInstanceOf[AddJobFlowStepsOutput]
   }
   
-  extension [Self <: AddJobFlowStepsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddJobFlowStepsOutput] (val x: Self) extends AnyVal {
     
     inline def setStepIds(value: StepIdsList): Self = StObject.set(x, "StepIds", value.asInstanceOf[js.Any])
     

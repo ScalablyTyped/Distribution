@@ -17,7 +17,8 @@ object DropdownWidth {
     __obj.asInstanceOf[DropdownWidth]
   }
   
-  extension [Self <: DropdownWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownWidth] (val x: Self) extends AnyVal {
     
     inline def setDropdownWidth(value: Double): Self = StObject.set(x, "dropdownWidth", value.asInstanceOf[js.Any])
     

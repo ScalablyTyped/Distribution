@@ -43,7 +43,8 @@ object dataTableColumnDatetimeMod {
       __obj.asInstanceOf[FilterParameters]
     }
     
-    extension [Self <: FilterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterParameters] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object dataTableColumnDatetimeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFormatString(value: String): Self = StObject.set(x, "formatString", value.asInstanceOf[js.Any])
       

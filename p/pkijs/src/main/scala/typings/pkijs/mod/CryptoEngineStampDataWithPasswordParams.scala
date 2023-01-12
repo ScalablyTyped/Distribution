@@ -29,7 +29,8 @@ object CryptoEngineStampDataWithPasswordParams {
     __obj.asInstanceOf[CryptoEngineStampDataWithPasswordParams]
   }
   
-  extension [Self <: CryptoEngineStampDataWithPasswordParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoEngineStampDataWithPasswordParams] (val x: Self) extends AnyVal {
     
     inline def setContentToStamp(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "contentToStamp", value.asInstanceOf[js.Any])
     

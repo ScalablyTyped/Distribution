@@ -138,7 +138,8 @@ object typesUpdateFunctionConfigurationOutputMod {
       __obj.asInstanceOf[UpdateFunctionConfigurationOutput]
     }
     
-    extension [Self <: UpdateFunctionConfigurationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateFunctionConfigurationOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

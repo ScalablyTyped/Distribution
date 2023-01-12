@@ -44,7 +44,8 @@ object Board {
     __obj.asInstanceOf[Board]
   }
   
-  extension [Self <: Board](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Board] (val x: Self) extends AnyVal {
     
     inline def setAllowedMappings(value: StringDictionary[StringDictionary[js.Array[String]]]): Self = StObject.set(x, "allowedMappings", value.asInstanceOf[js.Any])
     

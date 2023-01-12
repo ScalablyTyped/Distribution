@@ -51,7 +51,8 @@ object typesIncreaseStreamRetentionPeriodInputMod {
       __obj.asInstanceOf[IncreaseStreamRetentionPeriodInput]
     }
     
-    extension [Self <: IncreaseStreamRetentionPeriodInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncreaseStreamRetentionPeriodInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

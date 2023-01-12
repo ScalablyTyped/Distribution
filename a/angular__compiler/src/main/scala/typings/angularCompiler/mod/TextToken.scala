@@ -23,7 +23,8 @@ object TextToken {
     __obj.asInstanceOf[TextToken]
   }
   
-  extension [Self <: TextToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: `5` | `6` | `7`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

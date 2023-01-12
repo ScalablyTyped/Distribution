@@ -22,7 +22,8 @@ object Shrink {
     __obj.asInstanceOf[Shrink]
   }
   
-  extension [Self <: Shrink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shrink] (val x: Self) extends AnyVal {
     
     inline def setShrink(value: Height): Self = StObject.set(x, "shrink", value.asInstanceOf[js.Any])
     

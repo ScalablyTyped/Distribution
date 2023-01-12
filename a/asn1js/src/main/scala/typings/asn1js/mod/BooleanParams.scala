@@ -23,7 +23,8 @@ object BooleanParams {
     __obj.asInstanceOf[BooleanParams]
   }
   
-  extension [Self <: BooleanParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanParams] (val x: Self) extends AnyVal {
     
     inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     

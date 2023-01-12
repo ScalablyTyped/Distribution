@@ -80,7 +80,8 @@ object libTypesLibEventTargetMod {
       __obj.asInstanceOf[EventTarget]
     }
     
-    extension [Self <: EventTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
       
       inline def setAddHandlers(value: (String, String, EventListeners) => Unit): Self = StObject.set(x, "addHandlers", js.Any.fromFunction3(value))
       

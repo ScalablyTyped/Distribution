@@ -29,7 +29,8 @@ object VoiceInstruction {
     __obj.asInstanceOf[VoiceInstruction]
   }
   
-  extension [Self <: VoiceInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceInstruction] (val x: Self) extends AnyVal {
     
     inline def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
     

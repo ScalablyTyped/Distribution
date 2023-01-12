@@ -36,7 +36,8 @@ object WriteableLabelPointCfg {
     __obj.asInstanceOf[WriteableLabelPointCfg]
   }
   
-  extension [Self <: WriteableLabelPointCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteableLabelPointCfg] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

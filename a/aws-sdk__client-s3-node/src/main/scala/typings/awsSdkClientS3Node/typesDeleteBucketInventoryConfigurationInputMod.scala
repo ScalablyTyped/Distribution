@@ -84,7 +84,8 @@ object typesDeleteBucketInventoryConfigurationInputMod {
       __obj.asInstanceOf[DeleteBucketInventoryConfigurationInput]
     }
     
-    extension [Self <: DeleteBucketInventoryConfigurationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteBucketInventoryConfigurationInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

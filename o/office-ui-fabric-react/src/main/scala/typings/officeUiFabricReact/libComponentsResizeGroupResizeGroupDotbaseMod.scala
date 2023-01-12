@@ -99,7 +99,8 @@ object libComponentsResizeGroupResizeGroupDotbaseMod {
       __obj.asInstanceOf[IResizeGroupState]
     }
     
-    extension [Self <: IResizeGroupState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeGroupState] (val x: Self) extends AnyVal {
       
       inline def setDataToMeasure(value: Any): Self = StObject.set(x, "dataToMeasure", value.asInstanceOf[js.Any])
       

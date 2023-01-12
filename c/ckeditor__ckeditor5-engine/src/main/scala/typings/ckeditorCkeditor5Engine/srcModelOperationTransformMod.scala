@@ -37,7 +37,8 @@ object srcModelOperationTransformMod {
       __obj.asInstanceOf[TransformationContext]
     }
     
-    extension [Self <: TransformationContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformationContext] (val x: Self) extends AnyVal {
       
       inline def setAIsStrong(value: Boolean): Self = StObject.set(x, "aIsStrong", value.asInstanceOf[js.Any])
       

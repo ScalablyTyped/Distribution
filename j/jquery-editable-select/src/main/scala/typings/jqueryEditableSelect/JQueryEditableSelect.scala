@@ -47,7 +47,8 @@ object JQueryEditableSelect {
       __obj.asInstanceOf[EditableSelectOptions]
     }
     
-    extension [Self <: EditableSelectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableSelectOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

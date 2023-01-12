@@ -18,7 +18,8 @@ object MetadataRequestedEventOptions {
     __obj.asInstanceOf[MetadataRequestedEventOptions]
   }
   
-  extension [Self <: MetadataRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setThumbnail(value: Boolean): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
   }

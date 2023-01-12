@@ -28,7 +28,8 @@ object BatchAttachObject {
     __obj.asInstanceOf[BatchAttachObject]
   }
   
-  extension [Self <: BatchAttachObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAttachObject] (val x: Self) extends AnyVal {
     
     inline def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
     

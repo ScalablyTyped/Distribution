@@ -28,7 +28,8 @@ object XRowSetChangeBroadcaster {
     __obj.asInstanceOf[XRowSetChangeBroadcaster]
   }
   
-  extension [Self <: XRowSetChangeBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetChangeBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddRowSetChangeListener(value: XRowSetChangeListener => Unit): Self = StObject.set(x, "addRowSetChangeListener", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object NewItemCount {
     __obj.asInstanceOf[NewItemCount]
   }
   
-  extension [Self <: NewItemCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewItemCount] (val x: Self) extends AnyVal {
     
     inline def setNewItemCount(value: Double): Self = StObject.set(x, "newItemCount", value.asInstanceOf[js.Any])
     

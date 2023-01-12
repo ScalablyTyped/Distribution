@@ -17,7 +17,8 @@ object MaxCount {
     __obj.asInstanceOf[MaxCount]
   }
   
-  extension [Self <: MaxCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxCount] (val x: Self) extends AnyVal {
     
     inline def setFetchSize(value: Double): Self = StObject.set(x, "fetchSize", value.asInstanceOf[js.Any])
     

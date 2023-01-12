@@ -43,7 +43,8 @@ object TwitterTimelineWidgetBaseOptions {
     __obj.asInstanceOf[TwitterTimelineWidgetBaseOptions]
   }
   
-  extension [Self <: TwitterTimelineWidgetBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterTimelineWidgetBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

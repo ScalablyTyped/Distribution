@@ -34,7 +34,8 @@ object XMacroExpander {
     __obj.asInstanceOf[XMacroExpander]
   }
   
-  extension [Self <: XMacroExpander](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMacroExpander] (val x: Self) extends AnyVal {
     
     inline def setExpandMacros(value: String => String): Self = StObject.set(x, "expandMacros", js.Any.fromFunction1(value))
   }

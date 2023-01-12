@@ -22,7 +22,8 @@ object SecurityValues {
     __obj.asInstanceOf[SecurityValues]
   }
   
-  extension [Self <: SecurityValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityValues] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

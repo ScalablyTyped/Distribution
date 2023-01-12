@@ -70,7 +70,8 @@ object CreateNetworkProfileRequest {
     __obj.asInstanceOf[CreateNetworkProfileRequest]
   }
   
-  extension [Self <: CreateNetworkProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNetworkProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     

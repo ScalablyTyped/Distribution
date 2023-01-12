@@ -26,7 +26,8 @@ object StyledTextProps {
     __obj.asInstanceOf[StyledTextProps]
   }
   
-  extension [Self <: StyledTextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledTextProps] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: BackgroundColor): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

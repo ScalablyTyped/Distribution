@@ -26,7 +26,8 @@ object ClientSessionRequestOptions {
     __obj.asInstanceOf[ClientSessionRequestOptions]
   }
   
-  extension [Self <: ClientSessionRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSessionRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setEndStream(value: Boolean): Self = StObject.set(x, "endStream", value.asInstanceOf[js.Any])
     

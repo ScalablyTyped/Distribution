@@ -15,7 +15,8 @@ object ICursor {
     __obj.asInstanceOf[ICursor]
   }
   
-  extension [Self <: ICursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICursor] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object PartialValidMetrics {
     __obj.asInstanceOf[PartialValidMetrics]
   }
   
-  extension [Self <: PartialValidMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialValidMetrics] (val x: Self) extends AnyVal {
     
     inline def setBlocked_clients(value: String): Self = StObject.set(x, "blocked_clients", value.asInstanceOf[js.Any])
     

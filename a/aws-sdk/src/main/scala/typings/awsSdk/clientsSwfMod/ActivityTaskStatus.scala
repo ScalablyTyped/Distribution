@@ -18,7 +18,8 @@ object ActivityTaskStatus {
     __obj.asInstanceOf[ActivityTaskStatus]
   }
   
-  extension [Self <: ActivityTaskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTaskStatus] (val x: Self) extends AnyVal {
     
     inline def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object IListIndexesRequest {
     __obj.asInstanceOf[IListIndexesRequest]
   }
   
-  extension [Self <: IListIndexesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListIndexesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

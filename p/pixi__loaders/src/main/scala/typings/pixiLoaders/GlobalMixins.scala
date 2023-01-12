@@ -18,7 +18,8 @@ object GlobalMixins {
       __obj.asInstanceOf[Application]
     }
     
-    extension [Self <: Application](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
       
       inline def setLoader(value: Loader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object GlobalMixins {
       __obj.asInstanceOf[IApplicationOptions]
     }
     
-    extension [Self <: IApplicationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApplicationOptions] (val x: Self) extends AnyVal {
       
       inline def setSharedLoader(value: Boolean): Self = StObject.set(x, "sharedLoader", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object GlobalMixins {
       __obj.asInstanceOf[LoaderResource]
     }
     
-    extension [Self <: LoaderResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderResource] (val x: Self) extends AnyVal {
       
       inline def setTexture(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Texture */ Any

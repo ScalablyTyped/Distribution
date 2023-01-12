@@ -15,7 +15,8 @@ object UserNotice {
     __obj.asInstanceOf[UserNotice]
   }
   
-  extension [Self <: UserNotice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserNotice] (val x: Self) extends AnyVal {
     
     inline def setExptext(value: DisplayText): Self = StObject.set(x, "exptext", value.asInstanceOf[js.Any])
     

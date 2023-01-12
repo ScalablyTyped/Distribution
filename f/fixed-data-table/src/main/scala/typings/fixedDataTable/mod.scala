@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[CellProps]
     }
     
-    extension [Self <: CellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: String | Double): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ColumnGroupProps]
     }
     
-    extension [Self <: ColumnGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -366,7 +368,8 @@ object mod {
       __obj.asInstanceOf[ColumnProps]
     }
     
-    extension [Self <: ColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -637,7 +640,8 @@ object mod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

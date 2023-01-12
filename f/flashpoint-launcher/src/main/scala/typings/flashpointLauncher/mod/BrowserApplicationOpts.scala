@@ -18,7 +18,8 @@ object BrowserApplicationOpts {
     __obj.asInstanceOf[BrowserApplicationOpts]
   }
   
-  extension [Self <: BrowserApplicationOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserApplicationOpts] (val x: Self) extends AnyVal {
     
     inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     

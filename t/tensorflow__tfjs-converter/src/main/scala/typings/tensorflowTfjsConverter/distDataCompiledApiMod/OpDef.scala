@@ -37,7 +37,8 @@ object OpDef {
       __obj.asInstanceOf[IArgDef]
     }
     
-    extension [Self <: IArgDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArgDef] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object OpDef {
       __obj.asInstanceOf[IAttrDef]
     }
     
-    extension [Self <: IAttrDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAttrDef] (val x: Self) extends AnyVal {
       
       inline def setAllowedValues(value: IAttrValue): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object OpDef {
       __obj.asInstanceOf[IOpDeprecation]
     }
     
-    extension [Self <: IOpDeprecation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpDeprecation] (val x: Self) extends AnyVal {
       
       inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
       

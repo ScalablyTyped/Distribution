@@ -33,7 +33,8 @@ object TaskLog {
     __obj.asInstanceOf[TaskLog]
   }
   
-  extension [Self <: TaskLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskLog] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

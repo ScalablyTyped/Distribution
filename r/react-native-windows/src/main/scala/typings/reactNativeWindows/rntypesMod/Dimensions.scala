@@ -58,7 +58,8 @@ object Dimensions {
   @js.native
   val ^ : Dimensions = js.native
   
-  extension [Self <: Dimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (change, js.Function1[/* param0 */ Screen, Unit]) => EmitterSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

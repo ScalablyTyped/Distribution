@@ -135,7 +135,8 @@ object BootstrapClientChartBase {
     __obj.asInstanceOf[BootstrapClientChartBase]
   }
   
-  extension [Self <: BootstrapClientChartBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientChartBase] (val x: Self) extends AnyVal {
     
     inline def setArgumentAxisClick(
       value: ASPxClientEvent[

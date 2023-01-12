@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[ModelInputs]
     }
     
-    extension [Self <: ModelInputs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelInputs] (val x: Self) extends AnyVal {
       
       inline def setColorizer(value: Image): Self = StObject.set(x, "colorizer", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[ModelOutputs]
     }
     
-    extension [Self <: ModelOutputs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelOutputs] (val x: Self) extends AnyVal {
       
       inline def `setTorch-srgan`(value: Id): Self = StObject.set(x, "torch-srgan", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object DeleteApplicationVpcConfigurationRequest {
     __obj.asInstanceOf[DeleteApplicationVpcConfigurationRequest]
   }
   
-  extension [Self <: DeleteApplicationVpcConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationVpcConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

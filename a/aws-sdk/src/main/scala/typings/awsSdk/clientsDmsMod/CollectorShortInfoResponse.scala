@@ -23,7 +23,8 @@ object CollectorShortInfoResponse {
     __obj.asInstanceOf[CollectorShortInfoResponse]
   }
   
-  extension [Self <: CollectorShortInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectorShortInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectorName(value: String): Self = StObject.set(x, "CollectorName", value.asInstanceOf[js.Any])
     

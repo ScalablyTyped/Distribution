@@ -92,7 +92,8 @@ object SeriesConnectorsOptionsObject {
     __obj.asInstanceOf[SeriesConnectorsOptionsObject]
   }
   
-  extension [Self <: SeriesConnectorsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesConnectorsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmMargin(value: Double): Self = StObject.set(x, "algorithmMargin", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object componentsCheckboxCheckboxMod {
       __obj.asInstanceOf[CheckboxOptions]
     }
     
-    extension [Self <: CheckboxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribContainedCheckboxDisabled(value: String): Self = StObject.set(x, "attribContainedCheckboxDisabled", value.asInstanceOf[js.Any])
       

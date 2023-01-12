@@ -23,7 +23,8 @@ object RecommendationRelatedAnomalyResource {
     __obj.asInstanceOf[RecommendationRelatedAnomalyResource]
   }
   
-  extension [Self <: RecommendationRelatedAnomalyResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationRelatedAnomalyResource] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecommendationRelatedAnomalyResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

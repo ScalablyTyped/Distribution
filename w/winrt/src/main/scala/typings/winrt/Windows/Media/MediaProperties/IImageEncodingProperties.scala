@@ -20,7 +20,8 @@ object IImageEncodingProperties {
     __obj.asInstanceOf[IImageEncodingProperties]
   }
   
-  extension [Self <: IImageEncodingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImageEncodingProperties] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

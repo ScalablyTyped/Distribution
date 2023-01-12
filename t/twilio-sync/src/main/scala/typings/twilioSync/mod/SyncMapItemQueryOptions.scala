@@ -38,7 +38,8 @@ object SyncMapItemQueryOptions {
     __obj.asInstanceOf[SyncMapItemQueryOptions]
   }
   
-  extension [Self <: SyncMapItemQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncMapItemQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object babylonjsAbstractSceneAugmentingMod {
       __obj.asInstanceOf[AbstractScene]
     }
     
-    extension [Self <: AbstractScene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
       
       inline def setDisablePrePassRenderer(value: () => Unit): Self = StObject.set(x, "disablePrePassRenderer", js.Any.fromFunction0(value))
       

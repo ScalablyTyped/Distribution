@@ -15,7 +15,8 @@ object SubtleDefaultHovered {
     __obj.asInstanceOf[SubtleDefaultHovered]
   }
   
-  extension [Self <: SubtleDefaultHovered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtleDefaultHovered] (val x: Self) extends AnyVal {
     
     inline def setSubtle(value: DefaultHovered): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

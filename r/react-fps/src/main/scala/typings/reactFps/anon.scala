@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[AvgFps]
     }
     
-    extension [Self <: AvgFps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvgFps] (val x: Self) extends AnyVal {
       
       inline def setAvgFps(value: String): Self = StObject.set(x, "avgFps", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object anon {
       __obj.asInstanceOf[BarStyle]
     }
     
-    extension [Self <: BarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarStyle] (val x: Self) extends AnyVal {
       
       inline def setBarStyle(value: (Any, Any) => BoxSizing): Self = StObject.set(x, "barStyle", js.Any.fromFunction2(value))
       
@@ -191,7 +194,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object anon {
       __obj.asInstanceOf[BoxSizing]
     }
     
-    extension [Self <: BoxSizing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxSizing] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

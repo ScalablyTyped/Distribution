@@ -382,7 +382,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[Analytics]
     }
     
-    extension [Self <: Analytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     }
@@ -403,7 +404,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[AnalyticsCallOptions]
     }
     
-    extension [Self <: AnalyticsCallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsCallOptions] (val x: Self) extends AnyVal {
       
       inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     }
@@ -424,7 +426,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[AnalyticsSettings]
     }
     
-    extension [Self <: AnalyticsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsSettings] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: GtagConfigParams | EventParams): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -463,7 +466,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[ConsentSettings]
     }
     
-    extension [Self <: ConsentSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsentSettings] (val x: Self) extends AnyVal {
       
       inline def setAd_storage(value: ConsentStatusString): Self = StObject.set(x, "ad_storage", value.asInstanceOf[js.Any])
       
@@ -516,7 +520,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[ControlParams]
     }
     
-    extension [Self <: ControlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
       
       inline def setEvent_callback(value: () => Unit): Self = StObject.set(x, "event_callback", js.Any.fromFunction0(value))
       
@@ -721,7 +726,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[EventParams]
     }
     
-    extension [Self <: EventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       
@@ -931,7 +937,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[GtagConfigParams]
     }
     
-    extension [Self <: GtagConfigParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GtagConfigParams] (val x: Self) extends AnyVal {
       
       inline def setAllow_ad_personalization_signals(value: Boolean): Self = StObject.set(x, "allow_ad_personalization_signals", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1047,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       
@@ -1165,7 +1173,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[Promotion]
     }
     
-    extension [Self <: Promotion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
       
       inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
       
@@ -1200,7 +1209,8 @@ object distAnalyticsMod {
       __obj.asInstanceOf[SettingsOptions]
     }
     
-    extension [Self <: SettingsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingsOptions] (val x: Self) extends AnyVal {
       
       inline def setDataLayerName(value: String): Self = StObject.set(x, "dataLayerName", value.asInstanceOf[js.Any])
       

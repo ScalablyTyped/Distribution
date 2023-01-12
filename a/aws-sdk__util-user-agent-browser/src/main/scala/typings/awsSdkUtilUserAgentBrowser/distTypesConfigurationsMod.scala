@@ -19,7 +19,8 @@ object distTypesConfigurationsMod {
       __obj.asInstanceOf[DefaultUserAgentOptions]
     }
     
-    extension [Self <: DefaultUserAgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultUserAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
       

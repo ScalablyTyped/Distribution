@@ -1073,7 +1073,8 @@ object SVGPropsSVGClipPathElemen {
     __obj.asInstanceOf[SVGPropsSVGClipPathElemen]
   }
   
-  extension [Self <: SVGPropsSVGClipPathElemen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPropsSVGClipPathElemen] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

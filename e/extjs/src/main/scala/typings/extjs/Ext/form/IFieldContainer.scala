@@ -258,7 +258,8 @@ object IFieldContainer {
     __obj.asInstanceOf[IFieldContainer]
   }
   
-  extension [Self <: IFieldContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldContainer] (val x: Self) extends AnyVal {
     
     inline def setActiveError(value: String): Self = StObject.set(x, "activeError", value.asInstanceOf[js.Any])
     

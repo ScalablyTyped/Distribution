@@ -58,7 +58,8 @@ object ClusterOptions {
     __obj.asInstanceOf[ClusterOptions]
   }
   
-  extension [Self <: ClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setClusterEdgeProperties(value: EdgeOptions): Self = StObject.set(x, "clusterEdgeProperties", value.asInstanceOf[js.Any])
     

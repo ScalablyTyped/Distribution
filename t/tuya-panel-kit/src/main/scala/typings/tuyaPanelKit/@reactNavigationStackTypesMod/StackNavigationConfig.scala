@@ -30,7 +30,8 @@ object StackNavigationConfig {
     __obj.asInstanceOf[StackNavigationConfig]
   }
   
-  extension [Self <: StackNavigationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackNavigationConfig] (val x: Self) extends AnyVal {
     
     inline def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Descriptor {
     __obj.asInstanceOf[Descriptor]
   }
   
-  extension [Self <: Descriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptor] (val x: Self) extends AnyVal {
     
     inline def setExtends(value: Module): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
     

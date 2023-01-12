@@ -80,7 +80,8 @@ object examplesJsmMiscMd2characterMod {
       __obj.asInstanceOf[MD2PartsConfig]
     }
     
-    extension [Self <: MD2PartsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MD2PartsConfig] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

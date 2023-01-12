@@ -20,7 +20,8 @@ object Nodes {
     __obj.asInstanceOf[Nodes[Datum]]
   }
   
-  extension [Self <: Nodes[?], Datum](x: Self & Nodes[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nodes[?], Datum] (val x: Self & Nodes[Datum]) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

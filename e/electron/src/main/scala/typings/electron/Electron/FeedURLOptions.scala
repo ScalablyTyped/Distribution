@@ -32,7 +32,8 @@ object FeedURLOptions {
     __obj.asInstanceOf[FeedURLOptions]
   }
   
-  extension [Self <: FeedURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeedURLOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

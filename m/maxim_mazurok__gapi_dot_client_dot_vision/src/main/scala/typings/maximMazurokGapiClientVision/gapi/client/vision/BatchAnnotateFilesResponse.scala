@@ -16,7 +16,8 @@ object BatchAnnotateFilesResponse {
     __obj.asInstanceOf[BatchAnnotateFilesResponse]
   }
   
-  extension [Self <: BatchAnnotateFilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: js.Array[AnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     

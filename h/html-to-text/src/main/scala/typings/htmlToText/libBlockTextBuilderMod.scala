@@ -17,7 +17,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[AddInlineOptions]
     }
     
-    extension [Self <: AddInlineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddInlineOptions] (val x: Self) extends AnyVal {
       
       inline def setNoWordTransform(value: Boolean): Self = StObject.set(x, "noWordTransform", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[CloseBlockOptions]
     }
     
-    extension [Self <: CloseBlockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseBlockOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockTransform(value: /* str */ String => String): Self = StObject.set(x, "blockTransform", js.Any.fromFunction1(value))
       
@@ -179,7 +181,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[CloseTableCellOptions]
     }
     
-    extension [Self <: CloseTableCellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseTableCellOptions] (val x: Self) extends AnyVal {
       
       inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[CloseTableOptions]
     }
     
-    extension [Self <: CloseTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseTableOptions] (val x: Self) extends AnyVal {
       
       inline def setColSpacing(value: Double): Self = StObject.set(x, "colSpacing", value.asInstanceOf[js.Any])
       
@@ -243,7 +247,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[OpenBlockOptions]
     }
     
-    extension [Self <: OpenBlockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenBlockOptions] (val x: Self) extends AnyVal {
       
       inline def setIsPre(value: Boolean): Self = StObject.set(x, "isPre", value.asInstanceOf[js.Any])
       
@@ -270,7 +275,8 @@ object libBlockTextBuilderMod {
       __obj.asInstanceOf[OpenTableCellOptions]
     }
     
-    extension [Self <: OpenTableCellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenTableCellOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
       

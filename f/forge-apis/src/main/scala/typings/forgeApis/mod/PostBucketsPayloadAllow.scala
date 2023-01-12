@@ -17,7 +17,8 @@ object PostBucketsPayloadAllow {
     __obj.asInstanceOf[PostBucketsPayloadAllow]
   }
   
-  extension [Self <: PostBucketsPayloadAllow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostBucketsPayloadAllow] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GatewayConfig {
     __obj.asInstanceOf[GatewayConfig]
   }
   
-  extension [Self <: GatewayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayConfig] (val x: Self) extends AnyVal {
     
     inline def setGatewayAuthMethod(value: String): Self = StObject.set(x, "gatewayAuthMethod", value.asInstanceOf[js.Any])
     

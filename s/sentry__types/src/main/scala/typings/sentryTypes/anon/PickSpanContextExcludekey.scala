@@ -35,7 +35,8 @@ object PickSpanContextExcludekey {
     __obj.asInstanceOf[PickSpanContextExcludekey]
   }
   
-  extension [Self <: PickSpanContextExcludekey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSpanContextExcludekey] (val x: Self) extends AnyVal {
     
     inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

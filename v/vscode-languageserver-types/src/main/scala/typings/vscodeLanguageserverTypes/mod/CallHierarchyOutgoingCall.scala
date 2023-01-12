@@ -25,7 +25,8 @@ object CallHierarchyOutgoingCall {
     __obj.asInstanceOf[CallHierarchyOutgoingCall]
   }
   
-  extension [Self <: CallHierarchyOutgoingCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallHierarchyOutgoingCall] (val x: Self) extends AnyVal {
     
     inline def setFromRanges(value: js.Array[Range]): Self = StObject.set(x, "fromRanges", value.asInstanceOf[js.Any])
     

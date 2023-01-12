@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[`0`[Theme]]
     }
     
-    extension [Self <: `0`[?], Theme /* <: ThemeWithPalette */](x: Self & `0`[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], Theme /* <: ThemeWithPalette */] (val x: Self & `0`[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Palette[Theme]]
     }
     
-    extension [Self <: Palette[?], Theme /* <: ThemeWithPalette */](x: Self & Palette[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Palette[?], Theme /* <: ThemeWithPalette */] (val x: Self & Palette[Theme]) extends AnyVal {
       
       inline def setPalette(
         value: /* import warning: importer.ImportType#apply Failed type conversion: keyof Theme['palette'] */ js.Any
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[PaletteTheme[Theme]]
     }
     
-    extension [Self <: PaletteTheme[?], Theme /* <: ThemeWithPalette */](x: Self & PaletteTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaletteTheme[?], Theme /* <: ThemeWithPalette */] (val x: Self & PaletteTheme[Theme]) extends AnyVal {
       
       inline def setPalette(
         value: /* import warning: importer.ImportType#apply Failed type conversion: keyof Theme['palette'] */ js.Any
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[ThemeTheme[Theme]]
     }
     
-    extension [Self <: ThemeTheme[?], Theme /* <: StringDictionary[Any] */](x: Self & ThemeTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeTheme[?], Theme /* <: StringDictionary[Any] */] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Tone[Theme]]
     }
     
-    extension [Self <: Tone[?], Theme /* <: ThemeWithPalette */](x: Self & Tone[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tone[?], Theme /* <: ThemeWithPalette */] (val x: Self & Tone[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

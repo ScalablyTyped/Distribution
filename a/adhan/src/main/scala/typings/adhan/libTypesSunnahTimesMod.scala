@@ -33,7 +33,8 @@ object libTypesSunnahTimesMod {
       __obj.asInstanceOf[SunnahTimes]
     }
     
-    extension [Self <: SunnahTimes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SunnahTimes] (val x: Self) extends AnyVal {
       
       inline def setLastThirdOfTheNight(value: js.Date): Self = StObject.set(x, "lastThirdOfTheNight", value.asInstanceOf[js.Any])
       

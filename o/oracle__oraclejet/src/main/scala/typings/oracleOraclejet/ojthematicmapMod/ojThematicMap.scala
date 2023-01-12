@@ -796,7 +796,8 @@ object ojThematicMap {
       __obj.asInstanceOf[DataContext]
     }
     
-    extension [Self <: DataContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataContext] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -822,7 +823,8 @@ object ojThematicMap {
       __obj.asInstanceOf[NodeContext]
     }
     
-    extension [Self <: NodeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -885,7 +887,8 @@ object ojThematicMap {
       __obj.asInstanceOf[RendererContext[K1, K2, K3, D1, D2, D3]]
     }
     
-    extension [Self <: RendererContext[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3](x: Self & (RendererContext[K1, K2, K3, D1, D2, D3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererContext[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3] (val x: Self & (RendererContext[K1, K2, K3, D1, D2, D3])) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -971,7 +974,8 @@ object ojThematicMap {
       __obj.asInstanceOf[TooltipContext[K1, K2, K3, D1, D2, D3]]
     }
     
-    extension [Self <: TooltipContext[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3](x: Self & (TooltipContext[K1, K2, K3, D1, D2, D3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3] (val x: Self & (TooltipContext[K1, K2, K3, D1, D2, D3])) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

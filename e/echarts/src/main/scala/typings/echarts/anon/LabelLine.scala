@@ -28,7 +28,8 @@ object LabelLine {
     __obj.asInstanceOf[LabelLine]
   }
   
-  extension [Self <: LabelLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelLine] (val x: Self) extends AnyVal {
     
     inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CreateKeyPairRequest {
     __obj.asInstanceOf[CreateKeyPairRequest]
   }
   
-  extension [Self <: CreateKeyPairRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyPairRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyPairName(value: ResourceName): Self = StObject.set(x, "keyPairName", value.asInstanceOf[js.Any])
     

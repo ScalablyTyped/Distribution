@@ -22,7 +22,8 @@ object OriginProps {
     __obj.asInstanceOf[OriginProps[ComponentsType]]
   }
   
-  extension [Self <: OriginProps[?], ComponentsType](x: Self & OriginProps[ComponentsType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginProps[?], ComponentsType] (val x: Self & OriginProps[ComponentsType]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

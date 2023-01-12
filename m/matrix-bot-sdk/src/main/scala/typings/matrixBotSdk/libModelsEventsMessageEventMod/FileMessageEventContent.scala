@@ -30,7 +30,8 @@ object FileMessageEventContent {
     __obj.asInstanceOf[FileMessageEventContent]
   }
   
-  extension [Self <: FileMessageEventContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileMessageEventContent] (val x: Self) extends AnyVal {
     
     inline def setFile(value: EncryptedFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object XIdentifierAccess {
     __obj.asInstanceOf[XIdentifierAccess]
   }
   
-  extension [Self <: XIdentifierAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdentifierAccess] (val x: Self) extends AnyVal {
     
     inline def setGetByIdentifier(value: Double => Any): Self = StObject.set(x, "getByIdentifier", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object SourceStatics {
     __obj.asInstanceOf[SourceStatics]
   }
   
-  extension [Self <: SourceStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceStatics] (val x: Self) extends AnyVal {
     
     inline def setWorkerSourceURL(value: URL): Self = StObject.set(x, "workerSourceURL", value.asInstanceOf[js.Any])
     

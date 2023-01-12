@@ -18,7 +18,8 @@ object PartitionKey {
     __obj.asInstanceOf[PartitionKey]
   }
   
-  extension [Self <: PartitionKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionKey] (val x: Self) extends AnyVal {
     
     inline def setName(value: GenericString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

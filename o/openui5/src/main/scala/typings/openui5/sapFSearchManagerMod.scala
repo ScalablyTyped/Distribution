@@ -748,7 +748,8 @@ object sapFSearchManagerMod {
       __obj.asInstanceOf[SearchManagerSettings]
     }
     
-    extension [Self <: SearchManagerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchManagerSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableSuggestions(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableSuggestions", value.asInstanceOf[js.Any])
       

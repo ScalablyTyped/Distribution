@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Early]
     }
     
-    extension [Self <: Early](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Early] (val x: Self) extends AnyVal {
       
       inline def setEarly(value: Double): Self = StObject.set(x, "early", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[ToleranceEarly]
     }
     
-    extension [Self <: ToleranceEarly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToleranceEarly] (val x: Self) extends AnyVal {
       
       inline def setToleranceEarly(value: Double): Self = StObject.set(x, "toleranceEarly", value.asInstanceOf[js.Any])
       

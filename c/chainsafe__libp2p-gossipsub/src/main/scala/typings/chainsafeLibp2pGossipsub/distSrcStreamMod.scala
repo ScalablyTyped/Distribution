@@ -55,7 +55,8 @@ object distSrcStreamMod {
       __obj.asInstanceOf[OutboundStreamOpts]
     }
     
-    extension [Self <: OutboundStreamOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundStreamOpts] (val x: Self) extends AnyVal {
       
       inline def setMaxBufferSize(value: Double): Self = StObject.set(x, "maxBufferSize", value.asInstanceOf[js.Any])
       

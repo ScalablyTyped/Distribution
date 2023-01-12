@@ -29,7 +29,8 @@ object Mjml2HtmlOptions {
     __obj.asInstanceOf[Mjml2HtmlOptions]
   }
   
-  extension [Self <: Mjml2HtmlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mjml2HtmlOptions] (val x: Self) extends AnyVal {
     
     inline def setBeautify(value: Boolean): Self = StObject.set(x, "beautify", value.asInstanceOf[js.Any])
     

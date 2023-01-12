@@ -48,7 +48,8 @@ object pluploadEvents {
     __obj.asInstanceOf[pluploadEvents]
   }
   
-  extension [Self <: pluploadEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadEvents] (val x: Self) extends AnyVal {
     
     inline def setBeforeUpload(value: (/* uploader */ Uploader, /* file */ Any) => Any): Self = StObject.set(x, "BeforeUpload", js.Any.fromFunction2(value))
     

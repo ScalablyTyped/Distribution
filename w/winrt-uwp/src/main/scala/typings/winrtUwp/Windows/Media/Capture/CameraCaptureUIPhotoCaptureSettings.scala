@@ -36,7 +36,8 @@ object CameraCaptureUIPhotoCaptureSettings {
     __obj.asInstanceOf[CameraCaptureUIPhotoCaptureSettings]
   }
   
-  extension [Self <: CameraCaptureUIPhotoCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraCaptureUIPhotoCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowCropping(value: Boolean): Self = StObject.set(x, "allowCropping", value.asInstanceOf[js.Any])
     

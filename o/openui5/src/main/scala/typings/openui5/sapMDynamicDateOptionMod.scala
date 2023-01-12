@@ -313,7 +313,8 @@ object sapMDynamicDateOptionMod {
       __obj.asInstanceOf[DynamicDateOptionSettings]
     }
     
-    extension [Self <: DynamicDateOptionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDateOptionSettings] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | PropertyBindingInfo): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

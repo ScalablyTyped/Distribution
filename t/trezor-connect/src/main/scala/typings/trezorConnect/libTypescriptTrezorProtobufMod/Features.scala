@@ -96,7 +96,8 @@ object Features {
     __obj.asInstanceOf[Features]
   }
   
-  extension [Self <: Features](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     inline def setAuto_lock_delay_ms(value: Double): Self = StObject.set(x, "auto_lock_delay_ms", value.asInstanceOf[js.Any])
     

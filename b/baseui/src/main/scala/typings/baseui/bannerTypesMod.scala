@@ -29,7 +29,8 @@ object bannerTypesMod {
       __obj.asInstanceOf[ActionContent]
     }
     
-    extension [Self <: ActionContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionContent] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: /* a */ Size => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
@@ -64,7 +65,8 @@ object bannerTypesMod {
       __obj.asInstanceOf[ArtworkContent]
     }
     
-    extension [Self <: ArtworkContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArtworkContent] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Size => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
@@ -107,7 +109,8 @@ object bannerTypesMod {
       __obj.asInstanceOf[BannerOverrides]
     }
     
-    extension [Self <: BannerOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BannerOverrides] (val x: Self) extends AnyVal {
       
       inline def setBelowContent(value: Override[Any]): Self = StObject.set(x, "BelowContent", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object bannerTypesMod {
       __obj.asInstanceOf[BannerProps]
     }
     
-    extension [Self <: BannerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BannerProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ActionContent): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

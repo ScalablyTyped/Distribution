@@ -15,7 +15,8 @@ object IapTunnelResource {
     __obj.asInstanceOf[IapTunnelResource]
   }
   
-  extension [Self <: IapTunnelResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IapTunnelResource] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
   }

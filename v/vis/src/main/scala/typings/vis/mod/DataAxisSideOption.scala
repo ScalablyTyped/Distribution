@@ -19,7 +19,8 @@ object DataAxisSideOption {
     __obj.asInstanceOf[DataAxisSideOption]
   }
   
-  extension [Self <: DataAxisSideOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAxisSideOption] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: () => String): Self = StObject.set(x, "format", js.Any.fromFunction0(value))
     

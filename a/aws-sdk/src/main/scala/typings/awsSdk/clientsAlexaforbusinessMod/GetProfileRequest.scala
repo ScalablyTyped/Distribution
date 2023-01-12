@@ -18,7 +18,8 @@ object GetProfileRequest {
     __obj.asInstanceOf[GetProfileRequest]
   }
   
-  extension [Self <: GetProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setProfileArn(value: Arn): Self = StObject.set(x, "ProfileArn", value.asInstanceOf[js.Any])
     

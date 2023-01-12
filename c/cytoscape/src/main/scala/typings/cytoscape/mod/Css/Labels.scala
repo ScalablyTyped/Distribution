@@ -383,7 +383,8 @@ object Labels {
     __obj.asInstanceOf[Labels[SingularType]]
   }
   
-  extension [Self <: Labels[?], SingularType /* <: NodeSingular | EdgeSingular */](x: Self & Labels[SingularType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Labels[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Labels[SingularType]) extends AnyVal {
     
     inline def setColor(value: PropertyValue[SingularType, Colour]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

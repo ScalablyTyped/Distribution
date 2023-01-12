@@ -68,7 +68,8 @@ object PullRequestEvent {
     __obj.asInstanceOf[PullRequestEvent]
   }
   
-  extension [Self <: PullRequestEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequestEvent] (val x: Self) extends AnyVal {
     
     inline def setActorArn(value: Arn): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
     

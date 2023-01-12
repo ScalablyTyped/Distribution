@@ -73,7 +73,8 @@ object build2ChunkedFileDataMod {
       __obj.asInstanceOf[ChunkedFileData]
     }
     
-    extension [Self <: ChunkedFileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkedFileData] (val x: Self) extends AnyVal {
       
       inline def setAddData(value: (Double, DataType) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction2(value))
       

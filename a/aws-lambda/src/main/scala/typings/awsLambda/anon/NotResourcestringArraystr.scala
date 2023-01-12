@@ -24,7 +24,8 @@ object NotResourcestringArraystr {
     __obj.asInstanceOf[NotResourcestringArraystr]
   }
   
-  extension [Self <: NotResourcestringArraystr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotResourcestringArraystr] (val x: Self) extends AnyVal {
     
     inline def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
     

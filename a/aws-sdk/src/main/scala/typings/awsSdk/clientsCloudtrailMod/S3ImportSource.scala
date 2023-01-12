@@ -28,7 +28,8 @@ object S3ImportSource {
     __obj.asInstanceOf[S3ImportSource]
   }
   
-  extension [Self <: S3ImportSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ImportSource] (val x: Self) extends AnyVal {
     
     inline def setS3BucketAccessRoleArn(value: String): Self = StObject.set(x, "S3BucketAccessRoleArn", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ResourceList {
     __obj.asInstanceOf[ResourceList[T]]
   }
   
-  extension [Self <: ResourceList[?], T /* <: AnonymousResource */](x: Self & ResourceList[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceList[?], T /* <: AnonymousResource */] (val x: Self & ResourceList[T]) extends AnyVal {
     
     inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

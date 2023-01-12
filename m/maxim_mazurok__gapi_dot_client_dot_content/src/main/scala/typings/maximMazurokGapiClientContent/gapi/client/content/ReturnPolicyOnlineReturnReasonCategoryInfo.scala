@@ -22,7 +22,8 @@ object ReturnPolicyOnlineReturnReasonCategoryInfo {
     __obj.asInstanceOf[ReturnPolicyOnlineReturnReasonCategoryInfo]
   }
   
-  extension [Self <: ReturnPolicyOnlineReturnReasonCategoryInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnPolicyOnlineReturnReasonCategoryInfo] (val x: Self) extends AnyVal {
     
     inline def setReturnLabelSource(value: String): Self = StObject.set(x, "returnLabelSource", value.asInstanceOf[js.Any])
     

@@ -331,7 +331,8 @@ object OmitStatusBarsetBackground {
     __obj.asInstanceOf[OmitStatusBarsetBackground]
   }
   
-  extension [Self <: OmitStatusBarsetBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitStatusBarsetBackground] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

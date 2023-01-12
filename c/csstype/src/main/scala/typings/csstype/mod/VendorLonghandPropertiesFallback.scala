@@ -833,7 +833,8 @@ object VendorLonghandPropertiesFallback {
     __obj.asInstanceOf[VendorLonghandPropertiesFallback[TLength, TTime]]
   }
   
-  extension [Self <: VendorLonghandPropertiesFallback[?, ?], TLength, TTime](x: Self & (VendorLonghandPropertiesFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VendorLonghandPropertiesFallback[?, ?], TLength, TTime] (val x: Self & (VendorLonghandPropertiesFallback[TLength, TTime])) extends AnyVal {
     
     inline def setMozAnimationDelay(value: AnimationDelay[TTime] | js.Array[NonNullable[js.UndefOr[AnimationDelay[TTime]]]]): Self = StObject.set(x, "MozAnimationDelay", value.asInstanceOf[js.Any])
     

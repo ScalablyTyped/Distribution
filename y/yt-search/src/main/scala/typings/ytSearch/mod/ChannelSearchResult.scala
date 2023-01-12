@@ -45,7 +45,8 @@ object ChannelSearchResult {
     __obj.asInstanceOf[ChannelSearchResult]
   }
   
-  extension [Self <: ChannelSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSearchResult] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

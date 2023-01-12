@@ -28,7 +28,8 @@ object RepositorySummary {
     __obj.asInstanceOf[RepositorySummary]
   }
   
-  extension [Self <: RepositorySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositorySummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RepositoryArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

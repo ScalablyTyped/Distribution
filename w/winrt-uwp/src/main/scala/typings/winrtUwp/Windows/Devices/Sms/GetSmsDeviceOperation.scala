@@ -53,7 +53,8 @@ object GetSmsDeviceOperation {
     __obj.asInstanceOf[GetSmsDeviceOperation]
   }
   
-  extension [Self <: GetSmsDeviceOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSmsDeviceOperation] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

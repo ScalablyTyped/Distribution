@@ -23,7 +23,8 @@ object PolylineDrawActionDrawCompleteEvent {
     __obj.asInstanceOf[PolylineDrawActionDrawCompleteEvent]
   }
   
-  extension [Self <: PolylineDrawActionDrawCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineDrawActionDrawCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     

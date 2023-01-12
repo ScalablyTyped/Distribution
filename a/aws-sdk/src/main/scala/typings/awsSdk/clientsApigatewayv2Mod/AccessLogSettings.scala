@@ -23,7 +23,8 @@ object AccessLogSettings {
     __obj.asInstanceOf[AccessLogSettings]
   }
   
-  extension [Self <: AccessLogSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLogSettings] (val x: Self) extends AnyVal {
     
     inline def setDestinationArn(value: Arn): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     

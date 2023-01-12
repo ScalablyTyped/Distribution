@@ -23,7 +23,8 @@ object ListCustomRoutingAcceleratorsRequest {
     __obj.asInstanceOf[ListCustomRoutingAcceleratorsRequest]
   }
   
-  extension [Self <: ListCustomRoutingAcceleratorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomRoutingAcceleratorsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

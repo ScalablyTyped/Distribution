@@ -36,7 +36,8 @@ object tsTypesPlainObjectEnsureMod {
       __obj.asInstanceOf[PlainObjectEnsureOptions]
     }
     
-    extension [Self <: PlainObjectEnsureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlainObjectEnsureOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedKeys(value: js.Array[String]): Self = StObject.set(x, "allowedKeys", value.asInstanceOf[js.Any])
       

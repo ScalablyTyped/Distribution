@@ -19,7 +19,8 @@ object ImuDataGapFailureDetails {
     __obj.asInstanceOf[ImuDataGapFailureDetails]
   }
   
-  extension [Self <: ImuDataGapFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImuDataGapFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setGapDuration(value: String): Self = StObject.set(x, "gapDuration", value.asInstanceOf[js.Any])
     

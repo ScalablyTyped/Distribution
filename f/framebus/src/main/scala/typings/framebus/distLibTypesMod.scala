@@ -28,7 +28,8 @@ object distLibTypesMod {
       __obj.asInstanceOf[FramebusPayload]
     }
     
-    extension [Self <: FramebusPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FramebusPayload] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object distLibTypesMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setWindow(value: () => Window): Self = StObject.set(x, "Window", js.Any.fromFunction0(value))
       }

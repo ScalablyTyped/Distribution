@@ -24,7 +24,8 @@ object ReaderRequiredField {
     __obj.asInstanceOf[ReaderRequiredField]
   }
   
-  extension [Self <: ReaderRequiredField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderRequiredField] (val x: Self) extends AnyVal {
     
     inline def setAction(value: RequiredFieldAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

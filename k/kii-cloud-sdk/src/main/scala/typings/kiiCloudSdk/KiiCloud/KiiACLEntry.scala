@@ -77,7 +77,8 @@ object KiiACLEntry {
     __obj.asInstanceOf[KiiACLEntry]
   }
   
-  extension [Self <: KiiACLEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiACLEntry] (val x: Self) extends AnyVal {
     
     inline def setGetAction(value: () => KiiACLAction): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
     

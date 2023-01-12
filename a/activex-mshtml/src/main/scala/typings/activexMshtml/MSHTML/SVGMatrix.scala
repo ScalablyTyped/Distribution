@@ -70,7 +70,8 @@ object SVGMatrix {
     __obj.asInstanceOf[SVGMatrix]
   }
   
-  extension [Self <: SVGMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGMatrix] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteIdentitiesInput {
     __obj.asInstanceOf[DeleteIdentitiesInput]
   }
   
-  extension [Self <: DeleteIdentitiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIdentitiesInput] (val x: Self) extends AnyVal {
     
     inline def setIdentityIdsToDelete(value: js.Array[String]): Self = StObject.set(x, "IdentityIdsToDelete", value.asInstanceOf[js.Any])
     

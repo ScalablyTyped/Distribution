@@ -36,7 +36,8 @@ object ShareToTimelineConfig {
     __obj.asInstanceOf[ShareToTimelineConfig]
   }
   
-  extension [Self <: ShareToTimelineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareToTimelineConfig] (val x: Self) extends AnyVal {
     
     inline def setImgUrl(value: String): Self = StObject.set(x, "imgUrl", value.asInstanceOf[js.Any])
     

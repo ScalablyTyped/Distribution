@@ -85,7 +85,8 @@ object Hotspot {
     __obj.asInstanceOf[Hotspot]
   }
   
-  extension [Self <: Hotspot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hotspot] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EditorExecParams {
     __obj.asInstanceOf[EditorExecParams]
   }
   
-  extension [Self <: EditorExecParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorExecParams] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

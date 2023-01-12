@@ -45,7 +45,8 @@ object ModuleAcceleratorConfiguration {
     __obj.asInstanceOf[ModuleAcceleratorConfiguration]
   }
   
-  extension [Self <: ModuleAcceleratorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleAcceleratorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreateWithModuleIdentifier(value: String => Unit): Self = StObject.set(x, "createWithModuleIdentifier", js.Any.fromFunction1(value))
   }

@@ -22,7 +22,8 @@ object SuggestedTableRowStyle {
     __obj.asInstanceOf[SuggestedTableRowStyle]
   }
   
-  extension [Self <: SuggestedTableRowStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedTableRowStyle] (val x: Self) extends AnyVal {
     
     inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
     

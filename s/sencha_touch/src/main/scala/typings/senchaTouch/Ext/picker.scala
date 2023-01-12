@@ -136,7 +136,8 @@ object picker {
       __obj.asInstanceOf[typings.senchaTouch.Ext.picker.IDate]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.picker.IDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.picker.IDate] (val x: Self) extends AnyVal {
       
       inline def setDayText(value: java.lang.String): Self = StObject.set(x, "dayText", value.asInstanceOf[js.Any])
       
@@ -411,7 +412,8 @@ object picker {
       __obj.asInstanceOf[typings.senchaTouch.Ext.picker.IPicker]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.picker.IPicker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.picker.IPicker] (val x: Self) extends AnyVal {
       
       inline def setActiveCls(value: java.lang.String): Self = StObject.set(x, "activeCls", value.asInstanceOf[js.Any])
       
@@ -658,7 +660,8 @@ object picker {
       __obj.asInstanceOf[ISlot]
     }
     
-    extension [Self <: ISlot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISlot] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: java.lang.String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

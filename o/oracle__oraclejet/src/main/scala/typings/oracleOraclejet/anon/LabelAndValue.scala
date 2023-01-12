@@ -47,7 +47,8 @@ object LabelAndValue {
     __obj.asInstanceOf[LabelAndValue]
   }
   
-  extension [Self <: LabelAndValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelAndValue] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EffectivePatch {
     __obj.asInstanceOf[EffectivePatch]
   }
   
-  extension [Self <: EffectivePatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectivePatch] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: Patch): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
     

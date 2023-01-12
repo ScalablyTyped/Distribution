@@ -19,7 +19,8 @@ object ReadPreferenceFromOptions {
     __obj.asInstanceOf[ReadPreferenceFromOptions]
   }
   
-  extension [Self <: ReadPreferenceFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadPreferenceFromOptions] (val x: Self) extends AnyVal {
     
     inline def setReadPreferenceTags(value: js.Array[TagSet]): Self = StObject.set(x, "readPreferenceTags", value.asInstanceOf[js.Any])
     

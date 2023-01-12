@@ -38,7 +38,8 @@ object IBItemidstringkeystringus {
     __obj.asInstanceOf[IBItemidstringkeystringus]
   }
   
-  extension [Self <: IBItemidstringkeystringus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemidstringkeystringus] (val x: Self) extends AnyVal {
     
     inline def set$(value: ContentMode): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

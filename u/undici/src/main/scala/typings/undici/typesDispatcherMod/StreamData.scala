@@ -18,7 +18,8 @@ object StreamData {
     __obj.asInstanceOf[StreamData]
   }
   
-  extension [Self <: StreamData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamData] (val x: Self) extends AnyVal {
     
     inline def setOpaque(value: Any): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
     

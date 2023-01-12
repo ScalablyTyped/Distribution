@@ -34,7 +34,8 @@ object OpenstackProviderOptions {
     __obj.asInstanceOf[OpenstackProviderOptions]
   }
   
-  extension [Self <: OpenstackProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenstackProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
     

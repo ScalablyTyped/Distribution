@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "multiavatar__multiavatar"
-version := "1.0-dt-20211202Z-9b2b18"
+version := "1.0-dt-20211202Z-0b746c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

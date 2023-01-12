@@ -18,7 +18,8 @@ object DeleteQueryDefinitionRequest {
     __obj.asInstanceOf[DeleteQueryDefinitionRequest]
   }
   
-  extension [Self <: DeleteQueryDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueryDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setQueryDefinitionId(value: QueryId): Self = StObject.set(x, "queryDefinitionId", value.asInstanceOf[js.Any])
   }

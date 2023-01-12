@@ -26,7 +26,8 @@ object elementsSomeJTDSchemaType {
     __obj.asInstanceOf[elementsSomeJTDSchemaType]
   }
   
-  extension [Self <: elementsSomeJTDSchemaType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: elementsSomeJTDSchemaType] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: Record[String, SomeJTDSchemaType]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

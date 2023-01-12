@@ -29,7 +29,8 @@ object componentsDownloadMod {
       __obj.asInstanceOf[DownloadPropTypes]
     }
     
-    extension [Self <: DownloadPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadPropTypes] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

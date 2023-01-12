@@ -32,7 +32,8 @@ object Print3DWorkflowActivatedEventArgs {
     __obj.asInstanceOf[Print3DWorkflowActivatedEventArgs]
   }
   
-  extension [Self <: Print3DWorkflowActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Print3DWorkflowActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

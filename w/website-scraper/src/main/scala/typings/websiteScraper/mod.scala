@@ -53,7 +53,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDefaultFilename(value: String): Self = StObject.set(x, "defaultFilename", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -155,7 +157,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[Resource]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SubDirectory]
     }
     
-    extension [Self <: SubDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubDirectory] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
@@ -233,7 +238,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

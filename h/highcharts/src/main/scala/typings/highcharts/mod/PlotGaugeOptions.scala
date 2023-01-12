@@ -777,7 +777,8 @@ object PlotGaugeOptions {
     __obj.asInstanceOf[PlotGaugeOptions]
   }
   
-  extension [Self <: PlotGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

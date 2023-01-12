@@ -17,7 +17,8 @@ object DoNotRun {
     __obj.asInstanceOf[DoNotRun]
   }
   
-  extension [Self <: DoNotRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoNotRun] (val x: Self) extends AnyVal {
     
     inline def setDoNotRun(value: scala.Double): Self = StObject.set(x, "doNotRun", value.asInstanceOf[js.Any])
     

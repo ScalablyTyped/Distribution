@@ -15,7 +15,8 @@ object GetSharedStorageMetadataResponse {
     __obj.asInstanceOf[GetSharedStorageMetadataResponse]
   }
   
-  extension [Self <: GetSharedStorageMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSharedStorageMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: SharedStorageMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object XNumericalDataSequence {
     __obj.asInstanceOf[XNumericalDataSequence]
   }
   
-  extension [Self <: XNumericalDataSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumericalDataSequence] (val x: Self) extends AnyVal {
     
     inline def setGetNumericalData(value: () => SafeArray[Double]): Self = StObject.set(x, "getNumericalData", js.Any.fromFunction0(value))
     

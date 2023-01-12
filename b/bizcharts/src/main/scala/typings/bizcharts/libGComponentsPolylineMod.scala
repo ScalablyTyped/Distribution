@@ -29,7 +29,8 @@ object libGComponentsPolylineMod extends Shortcut {
       __obj.asInstanceOf[IPolylineProps]
     }
     
-    extension [Self <: IPolylineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPolylineProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Points): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

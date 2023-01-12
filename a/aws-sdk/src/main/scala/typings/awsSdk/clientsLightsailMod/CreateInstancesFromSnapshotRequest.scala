@@ -78,7 +78,8 @@ object CreateInstancesFromSnapshotRequest {
     __obj.asInstanceOf[CreateInstancesFromSnapshotRequest]
   }
   
-  extension [Self <: CreateInstancesFromSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstancesFromSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     

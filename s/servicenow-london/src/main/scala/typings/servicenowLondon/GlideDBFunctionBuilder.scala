@@ -204,7 +204,8 @@ object GlideDBFunctionBuilder {
     __obj.asInstanceOf[GlideDBFunctionBuilder]
   }
   
-  extension [Self <: GlideDBFunctionBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideDBFunctionBuilder] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: () => GlideDBFunctionBuilder): Self = StObject.set(x, "add", js.Any.fromFunction0(value))
     

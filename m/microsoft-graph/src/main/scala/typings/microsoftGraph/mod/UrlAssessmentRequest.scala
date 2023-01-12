@@ -18,7 +18,8 @@ object UrlAssessmentRequest {
     __obj.asInstanceOf[UrlAssessmentRequest]
   }
   
-  extension [Self <: UrlAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

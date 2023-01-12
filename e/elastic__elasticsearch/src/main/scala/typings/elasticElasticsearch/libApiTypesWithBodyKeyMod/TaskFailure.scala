@@ -21,7 +21,8 @@ object TaskFailure {
     __obj.asInstanceOf[TaskFailure]
   }
   
-  extension [Self <: TaskFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskFailure] (val x: Self) extends AnyVal {
     
     inline def setNode_id(value: NodeId): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     

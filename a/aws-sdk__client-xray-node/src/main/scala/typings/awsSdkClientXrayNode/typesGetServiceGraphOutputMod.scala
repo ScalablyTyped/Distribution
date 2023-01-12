@@ -46,7 +46,8 @@ object typesGetServiceGraphOutputMod {
       __obj.asInstanceOf[GetServiceGraphOutput]
     }
     
-    extension [Self <: GetServiceGraphOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetServiceGraphOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

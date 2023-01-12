@@ -17,7 +17,8 @@ object ConstrainStringParameters {
     __obj.asInstanceOf[ConstrainStringParameters]
   }
   
-  extension [Self <: ConstrainStringParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainStringParameters] (val x: Self) extends AnyVal {
     
     inline def setExact(value: String | js.Array[String]): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object DocumentDefinition {
     __obj.asInstanceOf[DocumentDefinition]
   }
   
-  extension [Self <: DocumentDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDefinition] (val x: Self) extends AnyVal {
     
     inline def setAsTemplate(value: Boolean): Self = StObject.set(x, "AsTemplate", value.asInstanceOf[js.Any])
     

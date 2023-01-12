@@ -28,7 +28,8 @@ object ResetInstanceAttributeRequest {
     __obj.asInstanceOf[ResetInstanceAttributeRequest]
   }
   
-  extension [Self <: ResetInstanceAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetInstanceAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: InstanceAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

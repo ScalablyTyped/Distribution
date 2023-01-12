@@ -251,7 +251,8 @@ object distServiceSmarthomeSmarthomeMod {
       __obj.asInstanceOf[SmartHomeApp]
     }
     
-    extension [Self <: SmartHomeApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartHomeApp] (val x: Self) extends AnyVal {
       
       inline def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
       
@@ -332,7 +333,8 @@ object distServiceSmarthomeSmarthomeMod {
       __obj.asInstanceOf[SmartHomeJwt]
     }
     
-    extension [Self <: SmartHomeJwt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartHomeJwt] (val x: Self) extends AnyVal {
       
       inline def setAuth_provider_x509_cert_url(value: String): Self = StObject.set(x, "auth_provider_x509_cert_url", value.asInstanceOf[js.Any])
       
@@ -389,7 +391,8 @@ object distServiceSmarthomeSmarthomeMod {
       __obj.asInstanceOf[SmartHomeOptions]
     }
     
-    extension [Self <: SmartHomeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartHomeOptions] (val x: Self) extends AnyVal {
       
       inline def setJwt(value: SmartHomeJwt): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
       

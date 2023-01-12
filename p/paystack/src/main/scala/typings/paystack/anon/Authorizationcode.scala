@@ -21,7 +21,8 @@ object Authorizationcode {
     __obj.asInstanceOf[Authorizationcode]
   }
   
-  extension [Self <: Authorizationcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authorizationcode] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

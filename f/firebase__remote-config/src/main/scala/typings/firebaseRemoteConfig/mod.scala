@@ -113,7 +113,8 @@ object mod {
       __obj.asInstanceOf[RemoteConfig]
     }
     
-    extension [Self <: RemoteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfig] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object mod {
       __obj.asInstanceOf[RemoteConfigSettings]
     }
     
-    extension [Self <: RemoteConfigSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigSettings] (val x: Self) extends AnyVal {
       
       inline def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
       

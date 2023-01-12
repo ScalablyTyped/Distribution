@@ -260,7 +260,8 @@ object libRestPreviewWirelessSimMod {
       __obj.asInstanceOf[SimInstanceUpdateOptions]
     }
     
-    extension [Self <: SimInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCallbackMethod(value: String): Self = StObject.set(x, "callbackMethod", value.asInstanceOf[js.Any])
       
@@ -500,7 +501,8 @@ object libRestPreviewWirelessSimMod {
       __obj.asInstanceOf[SimListInstanceEachOptions]
     }
     
-    extension [Self <: SimListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ SimInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -584,7 +586,8 @@ object libRestPreviewWirelessSimMod {
       __obj.asInstanceOf[SimListInstanceOptions]
     }
     
-    extension [Self <: SimListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setEId(value: String): Self = StObject.set(x, "eId", value.asInstanceOf[js.Any])
       
@@ -653,7 +656,8 @@ object libRestPreviewWirelessSimMod {
       __obj.asInstanceOf[SimListInstancePageOptions]
     }
     
-    extension [Self <: SimListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setEId(value: String): Self = StObject.set(x, "eId", value.asInstanceOf[js.Any])
       
@@ -806,7 +810,8 @@ object libRestPreviewWirelessSimMod {
       __obj.asInstanceOf[SimResource]
     }
     
-    extension [Self <: SimResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

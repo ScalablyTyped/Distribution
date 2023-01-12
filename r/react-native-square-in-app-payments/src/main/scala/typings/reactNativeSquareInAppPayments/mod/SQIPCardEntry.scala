@@ -96,7 +96,8 @@ object SQIPCardEntry {
       __obj.asInstanceOf[BuyerVerificationDetails]
     }
     
-    extension [Self <: BuyerVerificationDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuyerVerificationDetails] (val x: Self) extends AnyVal {
       
       inline def setCard(value: Card): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object SQIPCardEntry {
       __obj.asInstanceOf[CardEntryConfig]
     }
     
-    extension [Self <: CardEntryConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardEntryConfig] (val x: Self) extends AnyVal {
       
       inline def setAddressLines(value: js.Array[String]): Self = StObject.set(x, "addressLines", value.asInstanceOf[js.Any])
       
@@ -303,7 +305,8 @@ object SQIPCardEntry {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -330,7 +333,8 @@ object SQIPCardEntry {
       __obj.asInstanceOf[RGBAColor]
     }
     
-    extension [Self <: RGBAColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGBAColor] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object SQIPCardEntry {
       __obj.asInstanceOf[ThemeIOS]
     }
     
-    extension [Self <: ThemeIOS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeIOS] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: RGBAColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

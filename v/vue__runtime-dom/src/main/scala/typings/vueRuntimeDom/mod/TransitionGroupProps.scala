@@ -75,7 +75,8 @@ object TransitionGroupProps {
     __obj.asInstanceOf[TransitionGroupProps]
   }
   
-  extension [Self <: TransitionGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionGroupProps] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

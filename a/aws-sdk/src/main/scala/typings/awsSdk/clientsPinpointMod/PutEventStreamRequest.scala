@@ -20,7 +20,8 @@ object PutEventStreamRequest {
     __obj.asInstanceOf[PutEventStreamRequest]
   }
   
-  extension [Self <: PutEventStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEventStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[AttributeValue]
     }
     
-    extension [Self <: AttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[DescribeServicesRequest]
     }
     
-    extension [Self <: DescribeServicesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
       
       inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[DescribeServicesResponse]
     }
     
-    extension [Self <: DescribeServicesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeServicesResponse] (val x: Self) extends AnyVal {
       
       inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
       
@@ -243,7 +248,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[GetAttributeValuesRequest]
     }
     
-    extension [Self <: GetAttributeValuesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAttributeValuesRequest] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
@@ -278,7 +284,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[GetAttributeValuesResponse]
     }
     
-    extension [Self <: GetAttributeValuesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAttributeValuesResponse] (val x: Self) extends AnyVal {
       
       inline def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
       
@@ -326,7 +333,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[GetProductsRequest]
     }
     
-    extension [Self <: GetProductsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProductsRequest] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
@@ -374,7 +382,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[GetProductsResponse]
     }
     
-    extension [Self <: GetProductsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProductsResponse] (val x: Self) extends AnyVal {
       
       inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
@@ -465,7 +474,8 @@ object clientsPricingMod {
       __obj.asInstanceOf[Service]
     }
     
-    extension [Self <: Service](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
       
       inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
       

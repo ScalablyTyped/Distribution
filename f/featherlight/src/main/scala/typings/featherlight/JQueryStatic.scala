@@ -24,7 +24,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setFeatherlight(value: FeatherlightStatic): Self = StObject.set(x, "featherlight", value.asInstanceOf[js.Any])
   }

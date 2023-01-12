@@ -69,7 +69,8 @@ object EpisodeObjectSimplified {
     __obj.asInstanceOf[EpisodeObjectSimplified]
   }
   
-  extension [Self <: EpisodeObjectSimplified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EpisodeObjectSimplified] (val x: Self) extends AnyVal {
     
     inline def setAudio_preview_url(value: String): Self = StObject.set(x, "audio_preview_url", value.asInstanceOf[js.Any])
     

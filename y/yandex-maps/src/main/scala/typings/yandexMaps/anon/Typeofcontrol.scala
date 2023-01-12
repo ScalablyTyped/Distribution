@@ -129,7 +129,8 @@ object Typeofcontrol {
     __obj.asInstanceOf[Typeofcontrol]
   }
   
-  extension [Self <: Typeofcontrol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcontrol] (val x: Self) extends AnyVal {
     
     inline def setButton(value: Instantiable1[/* parameters */ js.UndefOr[IButtonParameters | String], Button]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
     

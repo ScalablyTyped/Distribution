@@ -22,7 +22,8 @@ object DeviceLocationFeedProperties {
     __obj.asInstanceOf[DeviceLocationFeedProperties]
   }
   
-  extension [Self <: DeviceLocationFeedProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceLocationFeedProperties] (val x: Self) extends AnyVal {
     
     inline def setFilterExpression(value: geotriggersInfoExpressionInfoProperties): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
     

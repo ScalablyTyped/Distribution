@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Cipher]
     }
     
-    extension [Self <: Cipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[CipherText]
     }
     
-    extension [Self <: CipherText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherText] (val x: Self) extends AnyVal {
       
       inline def setCipherText(value: String): Self = StObject.set(x, "CipherText", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[DkLen]
     }
     
-    extension [Self <: DkLen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DkLen] (val x: Self) extends AnyVal {
       
       inline def setDkLen(value: Double): Self = StObject.set(x, "DkLen", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Iv]
     }
     
-    extension [Self <: Iv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
       
       inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     }
@@ -150,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Kdf]
     }
     
-    extension [Self <: Kdf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kdf] (val x: Self) extends AnyVal {
       
       inline def setKdf(value: String): Self = StObject.set(x, "Kdf", value.asInstanceOf[js.Any])
       
@@ -190,7 +195,8 @@ object anon {
       __obj.asInstanceOf[PartialV3Params]
     }
     
-    extension [Self <: PartialV3Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialV3Params] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       

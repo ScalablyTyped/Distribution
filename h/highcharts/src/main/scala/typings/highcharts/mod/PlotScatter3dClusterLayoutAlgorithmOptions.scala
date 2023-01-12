@@ -92,7 +92,8 @@ object PlotScatter3dClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotScatter3dClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotScatter3dClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatter3dClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

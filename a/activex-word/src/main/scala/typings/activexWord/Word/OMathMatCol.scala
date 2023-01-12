@@ -40,7 +40,8 @@ object OMathMatCol {
     __obj.asInstanceOf[OMathMatCol]
   }
   
-  extension [Self <: OMathMatCol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathMatCol] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: WdOMathHorizAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

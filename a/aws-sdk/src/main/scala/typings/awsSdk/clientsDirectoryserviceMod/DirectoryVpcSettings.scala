@@ -23,7 +23,8 @@ object DirectoryVpcSettings {
     __obj.asInstanceOf[DirectoryVpcSettings]
   }
   
-  extension [Self <: DirectoryVpcSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryVpcSettings] (val x: Self) extends AnyVal {
     
     inline def setSubnetIds(value: SubnetIds): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     

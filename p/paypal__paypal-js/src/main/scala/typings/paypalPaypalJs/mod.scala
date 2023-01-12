@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[PayPalNamespace]
     }
     
-    extension [Self <: PayPalNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalNamespace] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: /* options */ js.UndefOr[PayPalButtonsComponentOptions] => PayPalButtonsComponent): Self = StObject.set(x, "Buttons", js.Any.fromFunction1(value))
       
@@ -115,7 +116,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setPaypal(value: PayPalNamespace): Self = StObject.set(x, "paypal", value.asInstanceOf[js.Any])
         

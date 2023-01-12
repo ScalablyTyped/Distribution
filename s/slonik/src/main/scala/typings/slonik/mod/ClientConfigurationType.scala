@@ -48,7 +48,8 @@ object ClientConfigurationType {
     __obj.asInstanceOf[ClientConfigurationType]
   }
   
-  extension [Self <: ClientConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setCaptureStackTrace(value: Boolean): Self = StObject.set(x, "captureStackTrace", value.asInstanceOf[js.Any])
     

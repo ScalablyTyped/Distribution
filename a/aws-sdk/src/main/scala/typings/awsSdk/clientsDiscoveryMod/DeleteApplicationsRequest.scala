@@ -18,7 +18,8 @@ object DeleteApplicationsRequest {
     __obj.asInstanceOf[DeleteApplicationsRequest]
   }
   
-  extension [Self <: DeleteApplicationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteApplicationsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationIds(value: ApplicationIdsList): Self = StObject.set(x, "configurationIds", value.asInstanceOf[js.Any])
     

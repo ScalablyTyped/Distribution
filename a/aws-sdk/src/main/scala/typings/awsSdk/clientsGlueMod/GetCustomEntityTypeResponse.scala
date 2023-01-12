@@ -28,7 +28,8 @@ object GetCustomEntityTypeResponse {
     __obj.asInstanceOf[GetCustomEntityTypeResponse]
   }
   
-  extension [Self <: GetCustomEntityTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCustomEntityTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setContextWords(value: ContextWords): Self = StObject.set(x, "ContextWords", value.asInstanceOf[js.Any])
     

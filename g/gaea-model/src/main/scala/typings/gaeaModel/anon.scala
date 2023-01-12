@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[BeforeName]
     }
     
-    extension [Self <: BeforeName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeName] (val x: Self) extends AnyVal {
       
       inline def setBeforeName(value: String): Self = StObject.set(x, "beforeName", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[ComponentInfo]
     }
     
-    extension [Self <: ComponentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentInfo] (val x: Self) extends AnyVal {
       
       inline def setComponentInfo(value: ViewportComponentFullInfo): Self = StObject.set(x, "componentInfo", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[CurrentUnit]
     }
     
-    extension [Self <: CurrentUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentUnit] (val x: Self) extends AnyVal {
       
       inline def setCurrentUnit(value: String): Self = StObject.set(x, "currentUnit", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[MapUniqueKey]
     }
     
-    extension [Self <: MapUniqueKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapUniqueKey] (val x: Self) extends AnyVal {
       
       inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
       
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[NewIndex]
     }
     
-    extension [Self <: NewIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewIndex] (val x: Self) extends AnyVal {
       
       inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
       
@@ -222,7 +228,8 @@ object anon {
       __obj.asInstanceOf[NewValue]
     }
     
-    extension [Self <: NewValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewValue] (val x: Self) extends AnyVal {
       
       inline def setNewValue(value: ComponentProps): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -242,7 +249,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -274,7 +282,8 @@ object anon {
       __obj.asInstanceOf[SourceIndex]
     }
     
-    extension [Self <: SourceIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceIndex] (val x: Self) extends AnyVal {
       
       inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
       
@@ -298,7 +307,8 @@ object anon {
       __obj.asInstanceOf[UniqueKey]
     }
     
-    extension [Self <: UniqueKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UniqueKey] (val x: Self) extends AnyVal {
       
       inline def setUniqueKey(value: String): Self = StObject.set(x, "uniqueKey", value.asInstanceOf[js.Any])
     }

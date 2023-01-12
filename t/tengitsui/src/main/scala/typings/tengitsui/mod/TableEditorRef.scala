@@ -17,7 +17,8 @@ object TableEditorRef {
     __obj.asInstanceOf[TableEditorRef]
   }
   
-  extension [Self <: TableEditorRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableEditorRef] (val x: Self) extends AnyVal {
     
     inline def setGetErrors(value: () => js.Array[Any]): Self = StObject.set(x, "getErrors", js.Any.fromFunction0(value))
     

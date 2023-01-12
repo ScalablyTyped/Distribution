@@ -28,7 +28,8 @@ object AddApplicationReferenceDataSourceResponse {
     __obj.asInstanceOf[AddApplicationReferenceDataSourceResponse]
   }
   
-  extension [Self <: AddApplicationReferenceDataSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApplicationReferenceDataSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

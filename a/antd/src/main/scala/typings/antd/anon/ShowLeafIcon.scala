@@ -18,7 +18,8 @@ object ShowLeafIcon {
     __obj.asInstanceOf[ShowLeafIcon]
   }
   
-  extension [Self <: ShowLeafIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowLeafIcon] (val x: Self) extends AnyVal {
     
     inline def setShowLeafIcon(value: Boolean | TreeLeafIcon): Self = StObject.set(x, "showLeafIcon", value.asInstanceOf[js.Any])
     

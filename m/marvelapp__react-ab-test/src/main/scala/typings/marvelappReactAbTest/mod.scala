@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ExperimentProps]
     }
     
-    extension [Self <: ExperimentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       

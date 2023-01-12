@@ -23,7 +23,8 @@ object typesFileDoesNotExistExceptionMod {
       __obj.asInstanceOf[FileDoesNotExistException]
     }
     
-    extension [Self <: FileDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileDoesNotExistException

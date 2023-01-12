@@ -63,7 +63,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Alpha]
       }
       
-      extension [Self <: Alpha](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
         
         inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       }
@@ -86,7 +87,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HSL]
       }
       
-      extension [Self <: HSL](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
         
         inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
@@ -127,7 +129,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HSV]
       }
       
-      extension [Self <: HSV](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
         
         inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
@@ -152,7 +155,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HSVA]
       }
       
-      extension [Self <: HSVA](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HSVA] (val x: Self) extends AnyVal {
         
         inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       }
@@ -175,7 +179,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PRGB]
       }
       
-      extension [Self <: PRGB](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PRGB] (val x: Self) extends AnyVal {
         
         inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
@@ -216,7 +221,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[RGB]
       }
       
-      extension [Self <: RGB](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
         
         inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
         
@@ -364,7 +370,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -620,7 +627,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MostReadableArgs]
     }
     
-    extension [Self <: MostReadableArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MostReadableArgs] (val x: Self) extends AnyVal {
       
       inline def setIncludeFallbackColors(value: Boolean): Self = StObject.set(x, "includeFallbackColors", value.asInstanceOf[js.Any])
       
@@ -641,7 +649,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WCAG2Options]
     }
     
-    extension [Self <: WCAG2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WCAG2Options] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: AA | AAA): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

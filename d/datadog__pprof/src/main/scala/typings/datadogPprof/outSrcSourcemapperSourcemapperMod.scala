@@ -98,7 +98,8 @@ object outSrcSourcemapperSourcemapperMod {
       __obj.asInstanceOf[GeneratedLocation]
     }
     
-    extension [Self <: GeneratedLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedLocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object outSrcSourcemapperSourcemapperMod {
       __obj.asInstanceOf[MapInfoCompiled]
     }
     
-    extension [Self <: MapInfoCompiled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapInfoCompiled] (val x: Self) extends AnyVal {
       
       inline def setMapConsumer(value: RawSourceMap): Self = StObject.set(x, "mapConsumer", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object outSrcSourcemapperSourcemapperMod {
       __obj.asInstanceOf[SourceLocation]
     }
     
-    extension [Self <: SourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

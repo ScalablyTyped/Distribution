@@ -17,7 +17,8 @@ object Track {
     __obj.asInstanceOf[Track]
   }
   
-  extension [Self <: Track](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
     
     inline def setPositions(value: js.Array[Double]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     

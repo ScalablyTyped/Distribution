@@ -21,7 +21,8 @@ object LineBreakResults {
     __obj.asInstanceOf[LineBreakResults]
   }
   
-  extension [Self <: LineBreakResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBreakResults] (val x: Self) extends AnyVal {
     
     inline def setBreakIndex(value: Double): Self = StObject.set(x, "breakIndex", value.asInstanceOf[js.Any])
     

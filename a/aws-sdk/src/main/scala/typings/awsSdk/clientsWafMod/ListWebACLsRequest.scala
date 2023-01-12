@@ -23,7 +23,8 @@ object ListWebACLsRequest {
     __obj.asInstanceOf[ListWebACLsRequest]
   }
   
-  extension [Self <: ListWebACLsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWebACLsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

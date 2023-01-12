@@ -21,7 +21,8 @@ object Printing3DComponentWithMatrix {
     __obj.asInstanceOf[Printing3DComponentWithMatrix]
   }
   
-  extension [Self <: Printing3DComponentWithMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DComponentWithMatrix] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Printing3DComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

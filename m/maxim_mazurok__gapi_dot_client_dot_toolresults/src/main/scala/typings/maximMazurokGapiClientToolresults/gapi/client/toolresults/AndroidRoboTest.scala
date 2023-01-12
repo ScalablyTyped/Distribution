@@ -28,7 +28,8 @@ object AndroidRoboTest {
     __obj.asInstanceOf[AndroidRoboTest]
   }
   
-  extension [Self <: AndroidRoboTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
     
     inline def setAppInitialActivity(value: String): Self = StObject.set(x, "appInitialActivity", value.asInstanceOf[js.Any])
     

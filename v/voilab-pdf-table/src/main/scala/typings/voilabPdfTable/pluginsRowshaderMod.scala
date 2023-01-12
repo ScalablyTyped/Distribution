@@ -54,7 +54,8 @@ object pluginsRowshaderMod extends Shortcut {
       __obj.asInstanceOf[VoilabPdfTablePluginRowShaderConf]
     }
     
-    extension [Self <: VoilabPdfTablePluginRowShaderConf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoilabPdfTablePluginRowShaderConf] (val x: Self) extends AnyVal {
       
       inline def setOffsetHeader(value: Boolean): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
       

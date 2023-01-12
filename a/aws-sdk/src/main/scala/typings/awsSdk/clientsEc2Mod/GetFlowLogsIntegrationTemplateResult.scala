@@ -18,7 +18,8 @@ object GetFlowLogsIntegrationTemplateResult {
     __obj.asInstanceOf[GetFlowLogsIntegrationTemplateResult]
   }
   
-  extension [Self <: GetFlowLogsIntegrationTemplateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFlowLogsIntegrationTemplateResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

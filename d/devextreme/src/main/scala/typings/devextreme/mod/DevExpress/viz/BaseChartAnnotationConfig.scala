@@ -30,7 +30,8 @@ object BaseChartAnnotationConfig {
     __obj.asInstanceOf[BaseChartAnnotationConfig]
   }
   
-  extension [Self <: BaseChartAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseChartAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Double | js.Date | String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

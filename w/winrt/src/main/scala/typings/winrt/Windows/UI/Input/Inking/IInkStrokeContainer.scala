@@ -64,7 +64,8 @@ object IInkStrokeContainer {
     __obj.asInstanceOf[IInkStrokeContainer]
   }
   
-  extension [Self <: IInkStrokeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInkStrokeContainer] (val x: Self) extends AnyVal {
     
     inline def setAddStroke(value: InkStroke => Unit): Self = StObject.set(x, "addStroke", js.Any.fromFunction1(value))
     

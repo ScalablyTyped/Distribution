@@ -19,7 +19,8 @@ object Exec {
     __obj.asInstanceOf[Exec]
   }
   
-  extension [Self <: Exec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exec] (val x: Self) extends AnyVal {
     
     inline def setExec(value: editor => Boolean): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     

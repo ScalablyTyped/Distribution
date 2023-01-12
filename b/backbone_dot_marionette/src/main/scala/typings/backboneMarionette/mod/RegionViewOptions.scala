@@ -20,7 +20,8 @@ object RegionViewOptions {
     __obj.asInstanceOf[RegionViewOptions]
   }
   
-  extension [Self <: RegionViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionViewOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventDestroy(value: Boolean): Self = StObject.set(x, "preventDestroy", value.asInstanceOf[js.Any])
     

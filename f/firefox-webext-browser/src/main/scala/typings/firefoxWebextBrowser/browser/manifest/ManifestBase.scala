@@ -32,7 +32,8 @@ object ManifestBase {
     __obj.asInstanceOf[ManifestBase]
   }
   
-  extension [Self <: ManifestBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestBase] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: ManifestBaseApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

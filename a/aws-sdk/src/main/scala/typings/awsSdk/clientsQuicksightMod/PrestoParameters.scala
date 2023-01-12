@@ -28,7 +28,8 @@ object PrestoParameters {
     __obj.asInstanceOf[PrestoParameters]
   }
   
-  extension [Self <: PrestoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrestoParameters] (val x: Self) extends AnyVal {
     
     inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     

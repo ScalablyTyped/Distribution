@@ -53,7 +53,8 @@ object PresenceEvent {
     __obj.asInstanceOf[PresenceEvent]
   }
   
-  extension [Self <: PresenceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresenceEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: join | leave | `state-change` | timeout): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

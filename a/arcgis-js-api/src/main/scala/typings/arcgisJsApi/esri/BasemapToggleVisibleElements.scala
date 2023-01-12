@@ -20,7 +20,8 @@ object BasemapToggleVisibleElements {
     __obj.asInstanceOf[BasemapToggleVisibleElements]
   }
   
-  extension [Self <: BasemapToggleVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapToggleVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

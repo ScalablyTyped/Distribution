@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[ConfigObject]
     }
     
-    extension [Self <: ConfigObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigObject] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: Boolean | js.Object): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object EasyWallet {
     __obj.asInstanceOf[EasyWallet]
   }
   
-  extension [Self <: EasyWallet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EasyWallet] (val x: Self) extends AnyVal {
     
     inline def setGetPrime(value: js.Function1[/* result */ BaseResult, Unit] => Unit): Self = StObject.set(x, "getPrime", js.Any.fromFunction1(value))
   }

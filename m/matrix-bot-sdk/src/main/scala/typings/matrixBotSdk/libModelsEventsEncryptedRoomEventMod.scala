@@ -57,7 +57,8 @@ object libModelsEventsEncryptedRoomEventMod {
       __obj.asInstanceOf[EncryptedRoomEventContent]
     }
     
-    extension [Self <: EncryptedRoomEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptedRoomEventContent] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: EncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

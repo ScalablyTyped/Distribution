@@ -36,7 +36,8 @@ object Bounce {
     __obj.asInstanceOf[Bounce]
   }
   
-  extension [Self <: Bounce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
     
     inline def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
     

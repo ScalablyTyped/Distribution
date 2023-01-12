@@ -18,7 +18,8 @@ object StreamModeDetails {
     __obj.asInstanceOf[StreamModeDetails]
   }
   
-  extension [Self <: StreamModeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamModeDetails] (val x: Self) extends AnyVal {
     
     inline def setStreamMode(value: StreamMode): Self = StObject.set(x, "StreamMode", value.asInstanceOf[js.Any])
   }

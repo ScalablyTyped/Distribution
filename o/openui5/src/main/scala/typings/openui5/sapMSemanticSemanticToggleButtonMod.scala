@@ -168,7 +168,8 @@ object sapMSemanticSemanticToggleButtonMod {
       __obj.asInstanceOf[SemanticToggleButtonSettings]
     }
     
-    extension [Self <: SemanticToggleButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticToggleButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setPressed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       

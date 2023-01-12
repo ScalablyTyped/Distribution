@@ -29,7 +29,8 @@ object GlobalSetLabelsRequest {
     __obj.asInstanceOf[GlobalSetLabelsRequest]
   }
   
-  extension [Self <: GlobalSetLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalSetLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     

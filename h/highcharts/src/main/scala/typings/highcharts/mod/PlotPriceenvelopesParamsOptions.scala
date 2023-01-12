@@ -39,7 +39,8 @@ object PlotPriceenvelopesParamsOptions {
     __obj.asInstanceOf[PlotPriceenvelopesParamsOptions]
   }
   
-  extension [Self <: PlotPriceenvelopesParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPriceenvelopesParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setBottomBand(value: Double): Self = StObject.set(x, "bottomBand", value.asInstanceOf[js.Any])
     

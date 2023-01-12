@@ -18,7 +18,8 @@ object CopyProductOutput {
     __obj.asInstanceOf[CopyProductOutput]
   }
   
-  extension [Self <: CopyProductOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyProductOutput] (val x: Self) extends AnyVal {
     
     inline def setCopyProductToken(value: Id): Self = StObject.set(x, "CopyProductToken", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsHorizontalImageBoldMod extends S
       __obj.asInstanceOf[HorizontalImageBoldProps]
     }
     
-    extension [Self <: HorizontalImageBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalImageBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

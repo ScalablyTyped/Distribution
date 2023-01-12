@@ -38,7 +38,8 @@ object SubscribedWorkteam {
     __obj.asInstanceOf[SubscribedWorkteam]
   }
   
-  extension [Self <: SubscribedWorkteam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribedWorkteam] (val x: Self) extends AnyVal {
     
     inline def setListingId(value: String): Self = StObject.set(x, "ListingId", value.asInstanceOf[js.Any])
     

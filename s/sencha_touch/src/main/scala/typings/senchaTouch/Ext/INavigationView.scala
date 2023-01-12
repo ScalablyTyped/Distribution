@@ -81,7 +81,8 @@ object INavigationView {
     __obj.asInstanceOf[INavigationView]
   }
   
-  extension [Self <: INavigationView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavigationView] (val x: Self) extends AnyVal {
     
     inline def setDefaultBackButtonText(value: java.lang.String): Self = StObject.set(x, "defaultBackButtonText", value.asInstanceOf[js.Any])
     

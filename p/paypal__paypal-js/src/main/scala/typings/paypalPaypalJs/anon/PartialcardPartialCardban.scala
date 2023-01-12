@@ -23,7 +23,8 @@ object PartialcardPartialCardban {
     __obj.asInstanceOf[PartialcardPartialCardban]
   }
   
-  extension [Self <: PartialcardPartialCardban](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialcardPartialCardban] (val x: Self) extends AnyVal {
     
     inline def setBalance(value: `0`): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object classBreaks {
     __obj.asInstanceOf[classBreaks]
   }
   
-  extension [Self <: classBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: classBreaks] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: classBreaksCreateRendererParams => js.Promise[RasterClassBreaksResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

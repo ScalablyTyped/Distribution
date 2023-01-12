@@ -23,7 +23,8 @@ object IBridgeIcon {
     __obj.asInstanceOf[IBridgeIcon]
   }
   
-  extension [Self <: IBridgeIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBridgeIcon] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

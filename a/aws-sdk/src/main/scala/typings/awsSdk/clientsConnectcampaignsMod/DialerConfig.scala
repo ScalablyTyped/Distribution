@@ -17,7 +17,8 @@ object DialerConfig {
     __obj.asInstanceOf[DialerConfig]
   }
   
-  extension [Self <: DialerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialerConfig] (val x: Self) extends AnyVal {
     
     inline def setPredictiveDialerConfig(value: PredictiveDialerConfig): Self = StObject.set(x, "predictiveDialerConfig", value.asInstanceOf[js.Any])
     

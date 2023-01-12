@@ -73,7 +73,8 @@ object buildJsonFileErrorMod {
       __obj.asInstanceOf[JsonFileError]
     }
     
-    extension [Self <: JsonFileError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonFileError] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

@@ -792,7 +792,8 @@ object sapMP13nConditionPanelMod {
       __obj.asInstanceOf[P13nConditionPanelSettings]
     }
     
-    extension [Self <: P13nConditionPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nConditionPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowAddIcon(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "alwaysShowAddIcon", value.asInstanceOf[js.Any])
       

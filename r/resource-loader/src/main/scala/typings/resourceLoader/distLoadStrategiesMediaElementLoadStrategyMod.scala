@@ -60,7 +60,8 @@ object distLoadStrategiesMediaElementLoadStrategyMod {
       __obj.asInstanceOf[IMediaElementLoadConfig]
     }
     
-    extension [Self <: IMediaElementLoadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMediaElementLoadConfig] (val x: Self) extends AnyVal {
       
       inline def setLoadElement(value: HTMLMediaElement): Self = StObject.set(x, "loadElement", value.asInstanceOf[js.Any])
       

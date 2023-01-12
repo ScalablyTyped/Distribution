@@ -43,7 +43,8 @@ object QuerySchemaVersionMetadataInput {
     __obj.asInstanceOf[QuerySchemaVersionMetadataInput]
   }
   
-  extension [Self <: QuerySchemaVersionMetadataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuerySchemaVersionMetadataInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: QuerySchemaVersionMetadataMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

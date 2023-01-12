@@ -33,7 +33,8 @@ object AccessibilityValue {
     __obj.asInstanceOf[AccessibilityValue]
   }
   
-  extension [Self <: AccessibilityValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibilityValue] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

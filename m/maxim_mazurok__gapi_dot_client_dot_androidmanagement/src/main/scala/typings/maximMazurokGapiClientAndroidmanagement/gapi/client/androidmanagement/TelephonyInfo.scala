@@ -19,7 +19,8 @@ object TelephonyInfo {
     __obj.asInstanceOf[TelephonyInfo]
   }
   
-  extension [Self <: TelephonyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TelephonyInfo] (val x: Self) extends AnyVal {
     
     inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     

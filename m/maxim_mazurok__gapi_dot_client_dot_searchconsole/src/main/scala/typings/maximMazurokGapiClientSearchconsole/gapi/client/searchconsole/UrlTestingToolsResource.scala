@@ -15,7 +15,8 @@ object UrlTestingToolsResource {
     __obj.asInstanceOf[UrlTestingToolsResource]
   }
   
-  extension [Self <: UrlTestingToolsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlTestingToolsResource] (val x: Self) extends AnyVal {
     
     inline def setMobileFriendlyTest(value: MobileFriendlyTestResource): Self = StObject.set(x, "mobileFriendlyTest", value.asInstanceOf[js.Any])
   }

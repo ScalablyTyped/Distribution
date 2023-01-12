@@ -17,7 +17,8 @@ object InterceptResolutionState {
     __obj.asInstanceOf[InterceptResolutionState]
   }
   
-  extension [Self <: InterceptResolutionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterceptResolutionState] (val x: Self) extends AnyVal {
     
     inline def setAction(value: InterceptResolutionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

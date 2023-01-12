@@ -18,7 +18,8 @@ object ImportClientVpnClientCertificateRevocationListResult {
     __obj.asInstanceOf[ImportClientVpnClientCertificateRevocationListResult]
   }
   
-  extension [Self <: ImportClientVpnClientCertificateRevocationListResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportClientVpnClientCertificateRevocationListResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

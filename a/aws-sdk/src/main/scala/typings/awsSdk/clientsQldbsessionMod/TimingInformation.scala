@@ -18,7 +18,8 @@ object TimingInformation {
     __obj.asInstanceOf[TimingInformation]
   }
   
-  extension [Self <: TimingInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimingInformation] (val x: Self) extends AnyVal {
     
     inline def setProcessingTimeMilliseconds(value: ProcessingTimeMilliseconds): Self = StObject.set(x, "ProcessingTimeMilliseconds", value.asInstanceOf[js.Any])
     

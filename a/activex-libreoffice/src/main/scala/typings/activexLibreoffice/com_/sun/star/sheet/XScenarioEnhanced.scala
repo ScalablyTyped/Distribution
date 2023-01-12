@@ -38,7 +38,8 @@ object XScenarioEnhanced {
     __obj.asInstanceOf[XScenarioEnhanced]
   }
   
-  extension [Self <: XScenarioEnhanced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScenarioEnhanced] (val x: Self) extends AnyVal {
     
     inline def setGetRanges(value: () => SafeArray[CellRangeAddress]): Self = StObject.set(x, "getRanges", js.Any.fromFunction0(value))
     

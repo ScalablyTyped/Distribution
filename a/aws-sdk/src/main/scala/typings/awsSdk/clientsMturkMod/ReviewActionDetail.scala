@@ -53,7 +53,8 @@ object ReviewActionDetail {
     __obj.asInstanceOf[ReviewActionDetail]
   }
   
-  extension [Self <: ReviewActionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewActionDetail] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     

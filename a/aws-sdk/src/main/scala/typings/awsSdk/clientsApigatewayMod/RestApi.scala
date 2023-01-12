@@ -78,7 +78,8 @@ object RestApi {
     __obj.asInstanceOf[RestApi]
   }
   
-  extension [Self <: RestApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestApi] (val x: Self) extends AnyVal {
     
     inline def setApiKeySource(value: ApiKeySourceType): Self = StObject.set(x, "apiKeySource", value.asInstanceOf[js.Any])
     

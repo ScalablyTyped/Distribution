@@ -44,7 +44,8 @@ object PutApprovalResultInput {
     __obj.asInstanceOf[PutApprovalResultInput]
   }
   
-  extension [Self <: PutApprovalResultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutApprovalResultInput] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: ActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

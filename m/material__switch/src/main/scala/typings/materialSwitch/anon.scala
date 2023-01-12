@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ARIACHECKEDATTR]
     }
     
-    extension [Self <: ARIACHECKEDATTR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIACHECKEDATTR] (val x: Self) extends AnyVal {
       
       inline def setARIA_CHECKED_ATTR(value: String): Self = StObject.set(x, "ARIA_CHECKED_ATTR", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[CHECKED]
     }
     
-    extension [Self <: CHECKED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CHECKED] (val x: Self) extends AnyVal {
       
       inline def setCHECKED(value: String): Self = StObject.set(x, "CHECKED", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSwitchAdapter]
     }
     
-    extension [Self <: PartialMDCSwitchAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSwitchAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

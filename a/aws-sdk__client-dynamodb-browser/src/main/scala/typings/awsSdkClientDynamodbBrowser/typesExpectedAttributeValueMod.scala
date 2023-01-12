@@ -52,7 +52,8 @@ object typesExpectedAttributeValueMod {
       __obj.asInstanceOf[ExpectedAttributeValue]
     }
     
-    extension [Self <: ExpectedAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectedAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: js.Array[AttributeValue] | js.Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object typesExpectedAttributeValueMod {
       __obj.asInstanceOf[UnmarshalledExpectedAttributeValue]
     }
     
-    extension [Self <: UnmarshalledExpectedAttributeValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledExpectedAttributeValue] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       

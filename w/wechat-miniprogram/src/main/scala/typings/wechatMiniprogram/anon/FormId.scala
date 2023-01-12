@@ -21,7 +21,8 @@ object FormId {
     __obj.asInstanceOf[FormId]
   }
   
-  extension [Self <: FormId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormId] (val x: Self) extends AnyVal {
     
     inline def setFormId(value: Any): Self = StObject.set(x, "formId", value.asInstanceOf[js.Any])
     

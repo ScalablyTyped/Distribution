@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Dependency]
     }
     
-    extension [Self <: Dependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object mod {
       __obj.asInstanceOf[OutputWriterArgs]
     }
     
-    extension [Self <: OutputWriterArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputWriterArgs] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[Dependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

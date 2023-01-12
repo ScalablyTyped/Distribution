@@ -94,7 +94,8 @@ object propTypes {
       __obj.asInstanceOf[origin]
     }
     
-    extension [Self <: origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: origin] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: horizontal): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object propTypes {
       __obj.asInstanceOf[utils]
     }
     
-    extension [Self <: utils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: utils] (val x: Self) extends AnyVal {
       
       inline def setAddDays(value: (js.Date, Double) => js.Date): Self = StObject.set(x, "addDays", js.Any.fromFunction2(value))
       

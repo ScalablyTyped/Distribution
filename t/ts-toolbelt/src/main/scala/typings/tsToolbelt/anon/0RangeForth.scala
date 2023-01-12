@@ -26,7 +26,8 @@ object `0RangeForth` {
     __obj.asInstanceOf[`0RangeForth`[From, To, L]]
   }
   
-  extension [Self <: `0RangeForth`[?, ?, ?], From /* <: Iteration */, To /* <: Iteration */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0RangeForth`[From, To, L])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0RangeForth`[?, ?, ?], From /* <: Iteration */, To /* <: Iteration */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0RangeForth`[From, To, L])) extends AnyVal {
     
     inline def set0(value: typings.tsToolbelt.outNumberRangeMod.RangeForth[Prev[From], To, Prepend[L, Pos[From]]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

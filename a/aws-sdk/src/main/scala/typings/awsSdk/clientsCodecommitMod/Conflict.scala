@@ -23,7 +23,8 @@ object Conflict {
     __obj.asInstanceOf[Conflict]
   }
   
-  extension [Self <: Conflict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conflict] (val x: Self) extends AnyVal {
     
     inline def setConflictMetadata(value: ConflictMetadata): Self = StObject.set(x, "conflictMetadata", value.asInstanceOf[js.Any])
     

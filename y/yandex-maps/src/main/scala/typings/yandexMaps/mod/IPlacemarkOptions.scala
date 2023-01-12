@@ -78,7 +78,8 @@ object IPlacemarkOptions {
     __obj.asInstanceOf[IPlacemarkOptions]
   }
   
-  extension [Self <: IPlacemarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlacemarkOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

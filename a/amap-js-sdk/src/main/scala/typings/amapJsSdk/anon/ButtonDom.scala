@@ -49,7 +49,8 @@ object ButtonDom {
     __obj.asInstanceOf[ButtonDom]
   }
   
-  extension [Self <: ButtonDom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonDom] (val x: Self) extends AnyVal {
     
     inline def setButtonDom(value: String | HTMLElement): Self = StObject.set(x, "buttonDom", value.asInstanceOf[js.Any])
     

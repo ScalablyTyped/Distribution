@@ -24,7 +24,8 @@ object DisableSticky {
     __obj.asInstanceOf[DisableSticky]
   }
   
-  extension [Self <: DisableSticky](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableSticky] (val x: Self) extends AnyVal {
     
     inline def setColor(value: default | primary | inherit): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

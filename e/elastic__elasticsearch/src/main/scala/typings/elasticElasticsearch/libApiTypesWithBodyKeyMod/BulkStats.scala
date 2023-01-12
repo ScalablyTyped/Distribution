@@ -37,7 +37,8 @@ object BulkStats {
     __obj.asInstanceOf[BulkStats]
   }
   
-  extension [Self <: BulkStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkStats] (val x: Self) extends AnyVal {
     
     inline def setAvg_size(value: ByteSize): Self = StObject.set(x, "avg_size", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Verified {
     __obj.asInstanceOf[Verified]
   }
   
-  extension [Self <: Verified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Verified] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[ResolverOptions]
     }
     
-    extension [Self <: ResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxCache(value: Double): Self = StObject.set(x, "maxCache", value.asInstanceOf[js.Any])
       

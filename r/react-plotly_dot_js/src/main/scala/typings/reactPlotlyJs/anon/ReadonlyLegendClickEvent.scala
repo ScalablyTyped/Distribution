@@ -49,7 +49,8 @@ object ReadonlyLegendClickEvent {
     __obj.asInstanceOf[ReadonlyLegendClickEvent]
   }
   
-  extension [Self <: ReadonlyLegendClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyLegendClickEvent] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.plotlyJs.anon.PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

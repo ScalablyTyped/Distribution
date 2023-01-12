@@ -18,7 +18,8 @@ object SlotDefaultValue {
     __obj.asInstanceOf[SlotDefaultValue]
   }
   
-  extension [Self <: SlotDefaultValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotDefaultValue] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: SlotDefaultValueString): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }

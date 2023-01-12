@@ -23,7 +23,8 @@ object AwsElasticsearchDomainEncryptionAtRestOptions {
     __obj.asInstanceOf[AwsElasticsearchDomainEncryptionAtRestOptions]
   }
   
-  extension [Self <: AwsElasticsearchDomainEncryptionAtRestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainEncryptionAtRestOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

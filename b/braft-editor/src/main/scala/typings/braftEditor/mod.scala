@@ -188,7 +188,8 @@ object mod {
       __obj.asInstanceOf[BraftEditorProps]
     }
     
-    extension [Self <: BraftEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BraftEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAllowInsertLinkText(value: Boolean): Self = StObject.set(x, "allowInsertLinkText", value.asInstanceOf[js.Any])
       
@@ -688,7 +689,8 @@ object mod {
       __obj.asInstanceOf[HooksType]
     }
     
-    extension [Self <: HooksType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HooksType] (val x: Self) extends AnyVal {
       
       inline def `setChange-block-type`(value: /* any */ Any => Any): Self = StObject.set(x, "change-block-type", js.Any.fromFunction1(value))
       
@@ -822,7 +824,8 @@ object mod {
       __obj.asInstanceOf[MediaType]
     }
     
-    extension [Self <: MediaType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: Audio): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       

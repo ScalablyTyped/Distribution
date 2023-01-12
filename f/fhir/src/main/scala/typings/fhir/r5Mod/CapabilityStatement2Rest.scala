@@ -63,7 +63,8 @@ object CapabilityStatement2Rest {
     __obj.asInstanceOf[CapabilityStatement2Rest]
   }
   
-  extension [Self <: CapabilityStatement2Rest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatement2Rest] (val x: Self) extends AnyVal {
     
     inline def setCompartment(value: js.Array[String]): Self = StObject.set(x, "compartment", value.asInstanceOf[js.Any])
     

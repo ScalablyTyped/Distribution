@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework-prompts"
-version := "2.1.10-9a2af5"
+version := "2.1.10-31fbc6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20221107Z-ae4035",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-fec6f6",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20220818Z-91b38e")
+  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20221107Z-52164f",
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "rxjs" % "7.5.7-d48537",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20220818Z-5d5f40")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

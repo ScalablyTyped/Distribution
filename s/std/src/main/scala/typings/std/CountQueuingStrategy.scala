@@ -24,7 +24,8 @@ object CountQueuingStrategy {
     __obj.asInstanceOf[CountQueuingStrategy]
   }
   
-  extension [Self <: CountQueuingStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountQueuingStrategy] (val x: Self) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object VpnGateway {
     __obj.asInstanceOf[VpnGateway]
   }
   
-  extension [Self <: VpnGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnGateway] (val x: Self) extends AnyVal {
     
     inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     

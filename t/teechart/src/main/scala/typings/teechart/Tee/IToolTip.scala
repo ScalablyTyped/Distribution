@@ -56,7 +56,8 @@ object IToolTip {
     __obj.asInstanceOf[IToolTip]
   }
   
-  extension [Self <: IToolTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToolTip] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Double): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

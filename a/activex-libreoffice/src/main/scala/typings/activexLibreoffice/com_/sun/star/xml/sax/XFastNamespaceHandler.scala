@@ -28,7 +28,8 @@ object XFastNamespaceHandler {
     __obj.asInstanceOf[XFastNamespaceHandler]
   }
   
-  extension [Self <: XFastNamespaceHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastNamespaceHandler] (val x: Self) extends AnyVal {
     
     inline def setGetNamespaceURI(value: String => String): Self = StObject.set(x, "getNamespaceURI", js.Any.fromFunction1(value))
     

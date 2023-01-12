@@ -23,7 +23,8 @@ object ExperimentTemplateTargetInputFilter {
     __obj.asInstanceOf[ExperimentTemplateTargetInputFilter]
   }
   
-  extension [Self <: ExperimentTemplateTargetInputFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentTemplateTargetInputFilter] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ExperimentTemplateTargetFilterPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

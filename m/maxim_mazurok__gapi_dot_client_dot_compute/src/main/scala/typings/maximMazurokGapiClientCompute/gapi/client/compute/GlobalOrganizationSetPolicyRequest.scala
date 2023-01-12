@@ -25,7 +25,8 @@ object GlobalOrganizationSetPolicyRequest {
     __obj.asInstanceOf[GlobalOrganizationSetPolicyRequest]
   }
   
-  extension [Self <: GlobalOrganizationSetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalOrganizationSetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ImagesConfig {
     __obj.asInstanceOf[ImagesConfig]
   }
   
-  extension [Self <: ImagesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagesConfig] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

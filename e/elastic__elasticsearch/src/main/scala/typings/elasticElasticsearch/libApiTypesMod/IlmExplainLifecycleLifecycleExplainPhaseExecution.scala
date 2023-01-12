@@ -19,7 +19,8 @@ object IlmExplainLifecycleLifecycleExplainPhaseExecution {
     __obj.asInstanceOf[IlmExplainLifecycleLifecycleExplainPhaseExecution]
   }
   
-  extension [Self <: IlmExplainLifecycleLifecycleExplainPhaseExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmExplainLifecycleLifecycleExplainPhaseExecution] (val x: Self) extends AnyVal {
     
     inline def setModified_date_in_millis(value: EpochTime[UnitMillis]): Self = StObject.set(x, "modified_date_in_millis", value.asInstanceOf[js.Any])
     

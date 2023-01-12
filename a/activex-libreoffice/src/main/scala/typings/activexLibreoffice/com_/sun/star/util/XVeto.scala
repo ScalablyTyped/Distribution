@@ -24,7 +24,8 @@ object XVeto {
     __obj.asInstanceOf[XVeto]
   }
   
-  extension [Self <: XVeto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVeto] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Any): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     

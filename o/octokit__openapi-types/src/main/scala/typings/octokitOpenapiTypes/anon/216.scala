@@ -18,7 +18,8 @@ object `216` {
     __obj.asInstanceOf[`216`]
   }
   
-  extension [Self <: `216`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `216`] (val x: Self) extends AnyVal {
     
     inline def setName(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any

@@ -35,7 +35,8 @@ object FeedbackDesktop {
     __obj.asInstanceOf[FeedbackDesktop]
   }
   
-  extension [Self <: FeedbackDesktop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeedbackDesktop] (val x: Self) extends AnyVal {
     
     inline def setFeedbackDesktop(value: scala.Double): Self = StObject.set(x, "feedbackDesktop", value.asInstanceOf[js.Any])
     

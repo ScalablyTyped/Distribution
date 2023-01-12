@@ -30,7 +30,8 @@ object SecuredApiKeyRestrictions {
     __obj.asInstanceOf[SecuredApiKeyRestrictions]
   }
   
-  extension [Self <: SecuredApiKeyRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuredApiKeyRestrictions] (val x: Self) extends AnyVal {
     
     inline def setRestrictIndices(value: js.Array[String] | String): Self = StObject.set(x, "restrictIndices", value.asInstanceOf[js.Any])
     

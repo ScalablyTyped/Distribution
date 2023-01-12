@@ -20,7 +20,8 @@ object BLEService {
     __obj.asInstanceOf[BLEService]
   }
   
-  extension [Self <: BLEService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BLEService] (val x: Self) extends AnyVal {
     
     inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     

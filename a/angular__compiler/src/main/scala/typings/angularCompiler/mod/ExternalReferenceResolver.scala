@@ -15,7 +15,8 @@ object ExternalReferenceResolver {
     __obj.asInstanceOf[ExternalReferenceResolver]
   }
   
-  extension [Self <: ExternalReferenceResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalReferenceResolver] (val x: Self) extends AnyVal {
     
     inline def setResolveExternalReference(value: ExternalReference => Any): Self = StObject.set(x, "resolveExternalReference", js.Any.fromFunction1(value))
   }

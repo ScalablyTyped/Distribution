@@ -24,7 +24,8 @@ object DeleteAudioParams {
     __obj.asInstanceOf[DeleteAudioParams]
   }
   
-  extension [Self <: DeleteAudioParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAudioParams] (val x: Self) extends AnyVal {
     
     inline def setAudio_name(value: String): Self = StObject.set(x, "audio_name", value.asInstanceOf[js.Any])
     

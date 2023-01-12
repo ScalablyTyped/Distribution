@@ -35,7 +35,8 @@ object XDecryptionResultListener {
     __obj.asInstanceOf[XDecryptionResultListener]
   }
   
-  extension [Self <: XDecryptionResultListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDecryptionResultListener] (val x: Self) extends AnyVal {
     
     inline def setDecrypted(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "decrypted", js.Any.fromFunction2(value))
   }

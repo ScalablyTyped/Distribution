@@ -16,7 +16,8 @@ object GetExtConfigSuccessCallbackResult {
     __obj.asInstanceOf[GetExtConfigSuccessCallbackResult]
   }
   
-  extension [Self <: GetExtConfigSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExtConfigSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setExtConfig(value: js.Object): Self = StObject.set(x, "extConfig", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object ServerMethodConfigurationObject {
     __obj.asInstanceOf[ServerMethodConfigurationObject]
   }
   
-  extension [Self <: ServerMethodConfigurationObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerMethodConfigurationObject] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: ServerMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

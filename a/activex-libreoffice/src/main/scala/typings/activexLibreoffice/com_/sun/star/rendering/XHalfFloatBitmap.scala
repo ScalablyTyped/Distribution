@@ -58,7 +58,8 @@ object XHalfFloatBitmap {
     __obj.asInstanceOf[XHalfFloatBitmap]
   }
   
-  extension [Self <: XHalfFloatBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHalfFloatBitmap] (val x: Self) extends AnyVal {
     
     inline def setSetData(value: (SeqEquiv[Double], FloatingPointBitmapLayout, IntegerRectangle2D) => Unit): Self = StObject.set(x, "setData", js.Any.fromFunction3(value))
     

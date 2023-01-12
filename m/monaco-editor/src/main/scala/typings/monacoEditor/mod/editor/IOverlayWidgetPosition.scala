@@ -18,7 +18,8 @@ object IOverlayWidgetPosition {
     __obj.asInstanceOf[IOverlayWidgetPosition]
   }
   
-  extension [Self <: IOverlayWidgetPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOverlayWidgetPosition] (val x: Self) extends AnyVal {
     
     inline def setPreference(value: OverlayWidgetPositionPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     

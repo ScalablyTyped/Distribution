@@ -29,7 +29,8 @@ object settings {
       __obj.asInstanceOf[Menu]
     }
     
-    extension [Self <: Menu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Menu] (val x: Self) extends AnyVal {
       
       inline def setEdit(value: MenuItem): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object settings {
       __obj.asInstanceOf[MenuItem]
     }
     
-    extension [Self <: MenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
       
       inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

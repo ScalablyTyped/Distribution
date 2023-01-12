@@ -23,7 +23,8 @@ object SendBasicOptions {
     __obj.asInstanceOf[SendBasicOptions]
   }
   
-  extension [Self <: SendBasicOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendBasicOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_sending_without_reply(value: Boolean): Self = StObject.set(x, "allow_sending_without_reply", value.asInstanceOf[js.Any])
     

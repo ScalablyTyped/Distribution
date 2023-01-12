@@ -182,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -276,7 +277,8 @@ object mod {
       __obj.asInstanceOf[TraceryNodeAction]
     }
     
-    extension [Self <: TraceryNodeAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceryNodeAction] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       

@@ -15,7 +15,8 @@ object SmoothScroll {
     __obj.asInstanceOf[SmoothScroll]
   }
   
-  extension [Self <: SmoothScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmoothScroll] (val x: Self) extends AnyVal {
     
     inline def setScrollToLoc(value: (String, Any, js.Function) => Boolean): Self = StObject.set(x, "scrollToLoc", js.Any.fromFunction3(value))
   }

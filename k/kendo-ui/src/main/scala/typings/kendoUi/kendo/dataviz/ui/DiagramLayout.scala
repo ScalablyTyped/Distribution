@@ -45,7 +45,8 @@ object DiagramLayout {
     __obj.asInstanceOf[DiagramLayout]
   }
   
-  extension [Self <: DiagramLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramLayout] (val x: Self) extends AnyVal {
     
     inline def setEndRadialAngle(value: Double): Self = StObject.set(x, "endRadialAngle", value.asInstanceOf[js.Any])
     

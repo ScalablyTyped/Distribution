@@ -20,7 +20,8 @@ object ZoomSettings {
     __obj.asInstanceOf[ZoomSettings]
   }
   
-  extension [Self <: ZoomSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomSettings] (val x: Self) extends AnyVal {
     
     inline def setMode(value: ZoomTransitionMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PreviouslySelectedRows {
     __obj.asInstanceOf[PreviouslySelectedRows]
   }
   
-  extension [Self <: PreviouslySelectedRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviouslySelectedRows] (val x: Self) extends AnyVal {
     
     inline def setPreviouslySelectedRows(value: js.Array[Any]): Self = StObject.set(x, "previouslySelectedRows", value.asInstanceOf[js.Any])
     

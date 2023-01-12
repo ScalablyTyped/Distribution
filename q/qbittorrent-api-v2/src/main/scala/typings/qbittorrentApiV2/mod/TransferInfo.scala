@@ -38,7 +38,8 @@ object TransferInfo {
     __obj.asInstanceOf[TransferInfo]
   }
   
-  extension [Self <: TransferInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
     
     inline def setConnection_status(value: String): Self = StObject.set(x, "connection_status", value.asInstanceOf[js.Any])
     

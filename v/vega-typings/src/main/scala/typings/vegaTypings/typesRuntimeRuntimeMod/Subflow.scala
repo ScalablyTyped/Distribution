@@ -20,7 +20,8 @@ object Subflow {
     __obj.asInstanceOf[Subflow]
   }
   
-  extension [Self <: Subflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subflow] (val x: Self) extends AnyVal {
     
     inline def setOperators(value: js.Array[Operator]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     

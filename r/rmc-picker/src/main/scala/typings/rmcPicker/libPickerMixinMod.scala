@@ -29,7 +29,8 @@ object libPickerMixinMod {
       __obj.asInstanceOf[IItemProps]
     }
     
-    extension [Self <: IItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

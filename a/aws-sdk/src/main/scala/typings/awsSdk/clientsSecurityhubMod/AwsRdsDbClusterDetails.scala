@@ -198,7 +198,8 @@ object AwsRdsDbClusterDetails {
     __obj.asInstanceOf[AwsRdsDbClusterDetails]
   }
   
-  extension [Self <: AwsRdsDbClusterDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbClusterDetails] (val x: Self) extends AnyVal {
     
     inline def setActivityStreamStatus(value: NonEmptyString): Self = StObject.set(x, "ActivityStreamStatus", value.asInstanceOf[js.Any])
     

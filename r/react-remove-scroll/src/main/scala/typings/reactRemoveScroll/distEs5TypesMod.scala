@@ -49,7 +49,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[ChildrenForward]
     }
     
-    extension [Self <: ChildrenForward](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenForward] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[ChildrenNode]
     }
     
-    extension [Self <: ChildrenNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[IRemoveScrollEffectProps]
     }
     
-    extension [Self <: IRemoveScrollEffectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemoveScrollEffectProps] (val x: Self) extends AnyVal {
       
       inline def setAllowPinchZoom(value: Boolean): Self = StObject.set(x, "allowPinchZoom", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[IRemoveScrollSelfProps]
     }
     
-    extension [Self <: IRemoveScrollSelfProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemoveScrollSelfProps] (val x: Self) extends AnyVal {
       
       inline def setAllowPinchZoom(value: Boolean): Self = StObject.set(x, "allowPinchZoom", value.asInstanceOf[js.Any])
       
@@ -273,7 +277,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[RemoveScrollEffectCallbacks]
     }
     
-    extension [Self <: RemoveScrollEffectCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveScrollEffectCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnScrollCapture(value: Any => Unit): Self = StObject.set(x, "onScrollCapture", js.Any.fromFunction1(value))
       
@@ -298,7 +303,8 @@ object distEs5TypesMod {
       __obj.asInstanceOf[WithClassNames]
     }
     
-    extension [Self <: WithClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithClassNames] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: FullWidth): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     }

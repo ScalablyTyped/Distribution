@@ -23,7 +23,8 @@ object CreatePortfolioOutput {
     __obj.asInstanceOf[CreatePortfolioOutput]
   }
   
-  extension [Self <: CreatePortfolioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePortfolioOutput] (val x: Self) extends AnyVal {
     
     inline def setPortfolioDetail(value: PortfolioDetail): Self = StObject.set(x, "PortfolioDetail", value.asInstanceOf[js.Any])
     

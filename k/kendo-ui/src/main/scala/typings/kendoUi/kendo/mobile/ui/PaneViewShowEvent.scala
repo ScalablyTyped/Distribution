@@ -17,7 +17,8 @@ object PaneViewShowEvent {
     __obj.asInstanceOf[PaneViewShowEvent]
   }
   
-  extension [Self <: PaneViewShowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneViewShowEvent] (val x: Self) extends AnyVal {
     
     inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

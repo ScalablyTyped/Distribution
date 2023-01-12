@@ -23,7 +23,8 @@ object DisassociateWebsiteCertificateAuthorityRequest {
     __obj.asInstanceOf[DisassociateWebsiteCertificateAuthorityRequest]
   }
   
-  extension [Self <: DisassociateWebsiteCertificateAuthorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateWebsiteCertificateAuthorityRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     

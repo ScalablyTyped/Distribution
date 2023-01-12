@@ -34,7 +34,8 @@ object Slice {
     __obj.asInstanceOf[Slice]
   }
   
-  extension [Self <: Slice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[Hierarchy]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

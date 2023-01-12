@@ -15,7 +15,8 @@ object ForceSecure {
     __obj.asInstanceOf[ForceSecure]
   }
   
-  extension [Self <: ForceSecure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForceSecure] (val x: Self) extends AnyVal {
     
     inline def setForceSecure(value: Boolean): Self = StObject.set(x, "forceSecure", value.asInstanceOf[js.Any])
     

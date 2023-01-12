@@ -33,7 +33,8 @@ object SymbolicLink {
     __obj.asInstanceOf[SymbolicLink]
   }
   
-  extension [Self <: SymbolicLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolicLink] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: Path): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

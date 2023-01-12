@@ -155,7 +155,8 @@ object sliceMod {
       __obj.asInstanceOf[Slice]
     }
     
-    extension [Self <: Slice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slice] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ResourceDataSyncDestinationDataSharing {
     __obj.asInstanceOf[ResourceDataSyncDestinationDataSharing]
   }
   
-  extension [Self <: ResourceDataSyncDestinationDataSharing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataSyncDestinationDataSharing] (val x: Self) extends AnyVal {
     
     inline def setDestinationDataSharingType(value: ResourceDataSyncDestinationDataSharingType): Self = StObject.set(x, "DestinationDataSharingType", value.asInstanceOf[js.Any])
     

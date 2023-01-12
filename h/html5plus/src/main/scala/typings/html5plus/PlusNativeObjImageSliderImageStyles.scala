@@ -87,7 +87,8 @@ object PlusNativeObjImageSliderImageStyles {
     __obj.asInstanceOf[PlusNativeObjImageSliderImageStyles]
   }
   
-  extension [Self <: PlusNativeObjImageSliderImageStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusNativeObjImageSliderImageStyles] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

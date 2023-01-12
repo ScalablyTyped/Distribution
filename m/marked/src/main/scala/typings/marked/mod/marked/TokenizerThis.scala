@@ -15,7 +15,8 @@ object TokenizerThis {
     __obj.asInstanceOf[TokenizerThis]
   }
   
-  extension [Self <: TokenizerThis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizerThis] (val x: Self) extends AnyVal {
     
     inline def setLexer(value: Lexer_): Self = StObject.set(x, "lexer", value.asInstanceOf[js.Any])
   }

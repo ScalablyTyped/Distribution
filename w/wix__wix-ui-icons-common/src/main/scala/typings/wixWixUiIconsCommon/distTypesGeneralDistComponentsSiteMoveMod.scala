@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsSiteMoveMod extends Shortcut {
       __obj.asInstanceOf[SiteMoveProps]
     }
     
-    extension [Self <: SiteMoveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiteMoveProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

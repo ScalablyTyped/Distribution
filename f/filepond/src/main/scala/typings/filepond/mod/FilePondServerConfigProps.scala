@@ -65,7 +65,8 @@ object FilePondServerConfigProps {
     __obj.asInstanceOf[FilePondServerConfigProps]
   }
   
-  extension [Self <: FilePondServerConfigProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondServerConfigProps] (val x: Self) extends AnyVal {
     
     inline def setChunkForce(value: Boolean): Self = StObject.set(x, "chunkForce", value.asInstanceOf[js.Any])
     

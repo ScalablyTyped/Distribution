@@ -23,7 +23,8 @@ object DeleteJourneyRequest {
     __obj.asInstanceOf[DeleteJourneyRequest]
   }
   
-  extension [Self <: DeleteJourneyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteJourneyRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

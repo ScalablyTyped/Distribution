@@ -48,7 +48,8 @@ object Windows81CompliancePolicy {
     __obj.asInstanceOf[Windows81CompliancePolicy]
   }
   
-  extension [Self <: Windows81CompliancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows81CompliancePolicy] (val x: Self) extends AnyVal {
     
     inline def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
     

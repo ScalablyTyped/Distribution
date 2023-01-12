@@ -24,7 +24,8 @@ object LineRadarConfig {
     __obj.asInstanceOf[LineRadarConfig]
   }
   
-  extension [Self <: LineRadarConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineRadarConfig] (val x: Self) extends AnyVal {
     
     inline def setDrawFilled(value: Boolean): Self = StObject.set(x, "drawFilled", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object FieldsIndex {
     __obj.asInstanceOf[FieldsIndex]
   }
   
-  extension [Self <: FieldsIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsIndex] (val x: Self) extends AnyVal {
     
     inline def setDateFields(value: js.Array[Any | Field]): Self = StObject.set(x, "dateFields", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ListNotificationChannelDescriptorsResponse {
     __obj.asInstanceOf[ListNotificationChannelDescriptorsResponse]
   }
   
-  extension [Self <: ListNotificationChannelDescriptorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotificationChannelDescriptorsResponse] (val x: Self) extends AnyVal {
     
     inline def setChannelDescriptors(value: js.Array[NotificationChannelDescriptor]): Self = StObject.set(x, "channelDescriptors", value.asInstanceOf[js.Any])
     

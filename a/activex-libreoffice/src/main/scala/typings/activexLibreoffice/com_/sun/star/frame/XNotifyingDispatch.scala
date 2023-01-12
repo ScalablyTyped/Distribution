@@ -40,7 +40,8 @@ object XNotifyingDispatch {
     __obj.asInstanceOf[XNotifyingDispatch]
   }
   
-  extension [Self <: XNotifyingDispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNotifyingDispatch] (val x: Self) extends AnyVal {
     
     inline def setDispatchWithNotification(value: (URL, SeqEquiv[PropertyValue], XDispatchResultListener) => Unit): Self = StObject.set(x, "dispatchWithNotification", js.Any.fromFunction3(value))
   }

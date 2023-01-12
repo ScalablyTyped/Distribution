@@ -63,7 +63,8 @@ object AwsApiGatewayV2ApiDetails {
     __obj.asInstanceOf[AwsApiGatewayV2ApiDetails]
   }
   
-  extension [Self <: AwsApiGatewayV2ApiDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiGatewayV2ApiDetails] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: NonEmptyString): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     

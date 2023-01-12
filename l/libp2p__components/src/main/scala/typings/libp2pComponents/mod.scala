@@ -208,7 +208,8 @@ object mod {
       __obj.asInstanceOf[ComponentsInit]
     }
     
-    extension [Self <: ComponentsInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentsInit] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object mod {
       __obj.asInstanceOf[Initializable]
     }
     
-    extension [Self <: Initializable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Initializable] (val x: Self) extends AnyVal {
       
       inline def setInit(value: Components => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }

@@ -29,7 +29,8 @@ object BootboxAlertOptions {
     __obj.asInstanceOf[BootboxAlertOptions]
   }
   
-  extension [Self <: BootboxAlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootboxAlertOptions] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: BootboxAlertButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

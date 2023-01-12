@@ -39,7 +39,8 @@ object SelectMenuOptions {
     __obj.asInstanceOf[SelectMenuOptions]
   }
   
-  extension [Self <: SelectMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     

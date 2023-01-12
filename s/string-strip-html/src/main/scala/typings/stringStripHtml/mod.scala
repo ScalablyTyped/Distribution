@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setEqualsAt(value: Double): Self = StObject.set(x, "equalsAt", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[CbObj]
     }
     
-    extension [Self <: CbObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CbObj] (val x: Self) extends AnyVal {
       
       inline def setDeleteFrom(value: Double): Self = StObject.set(x, "deleteFrom", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setCb(value: /* cbObj */ CbObj => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
@@ -235,7 +238,8 @@ object mod {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setAllTagLocations(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "allTagLocations", value.asInstanceOf[js.Any])
       
@@ -297,7 +301,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[Attribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

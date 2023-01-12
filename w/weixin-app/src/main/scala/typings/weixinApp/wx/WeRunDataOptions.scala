@@ -19,7 +19,8 @@ object WeRunDataOptions {
     __obj.asInstanceOf[WeRunDataOptions]
   }
   
-  extension [Self <: WeRunDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeRunDataOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ EncryptedData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

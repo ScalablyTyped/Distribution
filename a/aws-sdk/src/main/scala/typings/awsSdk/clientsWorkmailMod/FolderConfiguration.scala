@@ -28,7 +28,8 @@ object FolderConfiguration {
     __obj.asInstanceOf[FolderConfiguration]
   }
   
-  extension [Self <: FolderConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAction(value: RetentionAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

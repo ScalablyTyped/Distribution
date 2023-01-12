@@ -20,7 +20,8 @@ object IEnumValueOptions {
     __obj.asInstanceOf[IEnumValueOptions]
   }
   
-  extension [Self <: IEnumValueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnumValueOptions] (val x: Self) extends AnyVal {
     
     inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     

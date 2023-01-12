@@ -17,7 +17,8 @@ object SecurityPolicyAdvancedOptionsConfig {
     __obj.asInstanceOf[SecurityPolicyAdvancedOptionsConfig]
   }
   
-  extension [Self <: SecurityPolicyAdvancedOptionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPolicyAdvancedOptionsConfig] (val x: Self) extends AnyVal {
     
     inline def setJsonParsing(value: String): Self = StObject.set(x, "jsonParsing", value.asInstanceOf[js.Any])
     

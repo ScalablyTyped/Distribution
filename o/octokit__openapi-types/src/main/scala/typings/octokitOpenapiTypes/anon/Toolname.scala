@@ -52,7 +52,8 @@ object Toolname {
     __obj.asInstanceOf[Toolname]
   }
   
-  extension [Self <: Toolname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toolname] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

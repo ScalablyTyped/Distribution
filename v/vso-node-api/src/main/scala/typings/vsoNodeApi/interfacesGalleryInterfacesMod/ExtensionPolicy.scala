@@ -23,7 +23,8 @@ object ExtensionPolicy {
     __obj.asInstanceOf[ExtensionPolicy]
   }
   
-  extension [Self <: ExtensionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionPolicy] (val x: Self) extends AnyVal {
     
     inline def setInstall(value: ExtensionPolicyFlags): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     

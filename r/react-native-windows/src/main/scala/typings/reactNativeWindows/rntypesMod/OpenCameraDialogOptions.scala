@@ -16,7 +16,8 @@ object OpenCameraDialogOptions {
     __obj.asInstanceOf[OpenCameraDialogOptions]
   }
   
-  extension [Self <: OpenCameraDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenCameraDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setVideoMode(value: Boolean): Self = StObject.set(x, "videoMode", value.asInstanceOf[js.Any])
     

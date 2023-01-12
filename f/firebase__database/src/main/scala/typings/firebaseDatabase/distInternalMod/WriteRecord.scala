@@ -28,7 +28,8 @@ object WriteRecord {
     __obj.asInstanceOf[WriteRecord]
   }
   
-  extension [Self <: WriteRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteRecord] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: StringDictionary[Node2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

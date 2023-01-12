@@ -19,7 +19,8 @@ object INewLightsResponse {
     __obj.asInstanceOf[INewLightsResponse]
   }
   
-  extension [Self <: INewLightsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INewLightsResponse] (val x: Self) extends AnyVal {
     
     inline def setLastscan(value: String): Self = StObject.set(x, "lastscan", value.asInstanceOf[js.Any])
   }

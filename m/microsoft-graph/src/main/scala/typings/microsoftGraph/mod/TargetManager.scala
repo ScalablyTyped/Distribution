@@ -18,7 +18,8 @@ object TargetManager {
     __obj.asInstanceOf[TargetManager]
   }
   
-  extension [Self <: TargetManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetManager] (val x: Self) extends AnyVal {
     
     inline def setManagerLevel(value: NullableOption[Double]): Self = StObject.set(x, "managerLevel", value.asInstanceOf[js.Any])
     

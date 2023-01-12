@@ -15,7 +15,8 @@ object TypeModel {
     __obj.asInstanceOf[TypeModel]
   }
   
-  extension [Self <: TypeModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeModel] (val x: Self) extends AnyVal {
     
     inline def setTypeKind(value: TypeKind): Self = StObject.set(x, "typeKind", value.asInstanceOf[js.Any])
   }

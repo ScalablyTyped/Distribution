@@ -15,7 +15,8 @@ object TypeofAba {
     __obj.asInstanceOf[TypeofAba]
   }
   
-  extension [Self <: TypeofAba](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAba] (val x: Self) extends AnyVal {
     
     inline def setStatusDetail(value: Any): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
   }

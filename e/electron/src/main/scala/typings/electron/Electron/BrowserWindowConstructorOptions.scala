@@ -377,7 +377,8 @@ object BrowserWindowConstructorOptions {
     __obj.asInstanceOf[BrowserWindowConstructorOptions]
   }
   
-  extension [Self <: BrowserWindowConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserWindowConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptFirstMouse(value: Boolean): Self = StObject.set(x, "acceptFirstMouse", value.asInstanceOf[js.Any])
     

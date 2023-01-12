@@ -37,7 +37,8 @@ object DayRender {
     __obj.asInstanceOf[DayRender]
   }
   
-  extension [Self <: DayRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayRender] (val x: Self) extends AnyVal {
     
     inline def setActiveModifiers(value: ActiveModifiers): Self = StObject.set(x, "activeModifiers", value.asInstanceOf[js.Any])
     

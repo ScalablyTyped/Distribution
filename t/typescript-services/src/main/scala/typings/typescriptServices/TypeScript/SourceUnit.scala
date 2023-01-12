@@ -47,7 +47,8 @@ object SourceUnit {
     __obj.asInstanceOf[SourceUnit]
   }
   
-  extension [Self <: SourceUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceUnit] (val x: Self) extends AnyVal {
     
     inline def setEndOfFileTokenLeadingComments(value: js.Array[Comment]): Self = StObject.set(x, "endOfFileTokenLeadingComments", value.asInstanceOf[js.Any])
     

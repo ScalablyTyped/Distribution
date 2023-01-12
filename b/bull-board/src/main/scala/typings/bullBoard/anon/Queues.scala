@@ -18,7 +18,8 @@ object Queues {
     __obj.asInstanceOf[Queues]
   }
   
-  extension [Self <: Queues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Queues] (val x: Self) extends AnyVal {
     
     inline def setQueues(value: js.Array[String]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
     

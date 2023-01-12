@@ -56,7 +56,8 @@ object App {
       __obj.asInstanceOf[AppInstance[T]]
     }
     
-    extension [Self <: AppInstance[?], T /* <: IAnyObject */](x: Self & AppInstance[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInstance[?], T /* <: IAnyObject */] (val x: Self & AppInstance[T]) extends AnyVal {
       
       inline def setOnError(value: /* error */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
@@ -97,7 +98,8 @@ object App {
       __obj.asInstanceOf[IGetAppOption]
     }
     
-    extension [Self <: IGetAppOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGetAppOption] (val x: Self) extends AnyVal {
       
       inline def setAllowDefault(value: scala.Boolean): Self = StObject.set(x, "allowDefault", value.asInstanceOf[js.Any])
     }
@@ -114,7 +116,8 @@ object App {
       __obj.asInstanceOf[ILaunchOptions]
     }
     
-    extension [Self <: ILaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Double): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
@@ -214,7 +217,8 @@ object App {
       __obj.asInstanceOf[ILaunchShowOption]
     }
     
-    extension [Self <: ILaunchShowOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILaunchShowOption] (val x: Self) extends AnyVal {
       
       inline def setPath(value: java.lang.String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object App {
       __obj.asInstanceOf[IPageNotFoundOption]
     }
     
-    extension [Self <: IPageNotFoundOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageNotFoundOption] (val x: Self) extends AnyVal {
       
       inline def setIsEntryPage(value: scala.Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
       
@@ -282,7 +287,8 @@ object App {
       __obj.asInstanceOf[IReferrerInfo]
     }
     
-    extension [Self <: IReferrerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReferrerInfo] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: java.lang.String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

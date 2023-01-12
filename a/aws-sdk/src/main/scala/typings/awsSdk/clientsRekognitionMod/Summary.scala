@@ -15,7 +15,8 @@ object Summary {
     __obj.asInstanceOf[Summary]
   }
   
-  extension [Self <: Summary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
     
     inline def setS3Object(value: S3Object): Self = StObject.set(x, "S3Object", value.asInstanceOf[js.Any])
     

@@ -289,7 +289,8 @@ object IgGridPaging {
     __obj.asInstanceOf[IgGridPaging]
   }
   
-  extension [Self <: IgGridPaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridPaging] (val x: Self) extends AnyVal {
     
     inline def setCurrentPageDropDownLeadingLabel(value: String): Self = StObject.set(x, "currentPageDropDownLeadingLabel", value.asInstanceOf[js.Any])
     

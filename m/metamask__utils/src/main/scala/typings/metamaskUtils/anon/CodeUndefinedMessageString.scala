@@ -17,7 +17,8 @@ object CodeUndefinedMessageString {
     __obj.asInstanceOf[CodeUndefinedMessageString]
   }
   
-  extension [Self <: CodeUndefinedMessageString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeUndefinedMessageString] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Unit): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

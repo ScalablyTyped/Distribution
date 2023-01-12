@@ -18,7 +18,8 @@ object PathBezierCommand {
     __obj.asInstanceOf[PathBezierCommand]
   }
   
-  extension [Self <: PathBezierCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathBezierCommand] (val x: Self) extends AnyVal {
     
     inline def setBezier(value: js.Tuple3[VectorOptions, VectorOptions, VectorOptions]): Self = StObject.set(x, "bezier", value.asInstanceOf[js.Any])
   }

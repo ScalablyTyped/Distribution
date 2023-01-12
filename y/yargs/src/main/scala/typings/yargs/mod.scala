@@ -2155,7 +2155,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CommandModule[T, U]]
     }
     
-    extension [Self <: CommandModule[?, ?], T, U](x: Self & (CommandModule[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandModule[?, ?], T, U] (val x: Self & (CommandModule[T, U])) extends AnyVal {
       
       inline def setAliases(value: js.Array[String] | String): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -2343,7 +2344,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -2539,7 +2541,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ParserConfigurationOptions]
     }
     
-    extension [Self <: ParserConfigurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserConfigurationOptions] (val x: Self) extends AnyVal {
       
       inline def `setSort-commands`(value: Boolean): Self = StObject.set(x, "sort-commands", value.asInstanceOf[js.Any])
     }
@@ -2604,7 +2607,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[PositionalOptions]
     }
     
-    extension [Self <: PositionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionalOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String | js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -2720,7 +2724,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequireDirectoryOptions]
     }
     
-    extension [Self <: RequireDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.RegExp | (js.Function1[/* pathToFile */ String, Boolean])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

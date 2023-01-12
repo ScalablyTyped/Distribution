@@ -18,7 +18,8 @@ object ThemedIconPath {
     __obj.asInstanceOf[ThemedIconPath]
   }
   
-  extension [Self <: ThemedIconPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemedIconPath] (val x: Self) extends AnyVal {
     
     inline def setDark(value: String | Uri): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

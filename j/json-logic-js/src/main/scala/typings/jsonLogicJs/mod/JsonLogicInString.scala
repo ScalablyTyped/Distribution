@@ -18,7 +18,8 @@ object JsonLogicInString {
     __obj.asInstanceOf[JsonLogicInString[AddOps]]
   }
   
-  extension [Self <: JsonLogicInString[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicInString[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicInString[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicInString[AddOps]) extends AnyVal {
     
     inline def setInString(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "inString", value.asInstanceOf[js.Any])
   }

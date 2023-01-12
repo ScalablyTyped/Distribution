@@ -261,7 +261,8 @@ object mod {
       __obj.asInstanceOf[DetectedInfo[T, N, O, V]]
     }
     
-    extension [Self <: DetectedInfo[?, ?, ?, ?], T /* <: DetectedInfoType */, N /* <: String */, O, V](x: Self & (DetectedInfo[T, N, O, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedInfo[?, ?, ?, ?], T /* <: DetectedInfoType */, N /* <: String */, O, V] (val x: Self & (DetectedInfo[T, N, O, V])) extends AnyVal {
       
       inline def setName(value: N): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

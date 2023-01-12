@@ -35,7 +35,8 @@ object ITableViewDlgSaveInfo {
     __obj.asInstanceOf[ITableViewDlgSaveInfo]
   }
   
-  extension [Self <: ITableViewDlgSaveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableViewDlgSaveInfo] (val x: Self) extends AnyVal {
     
     inline def setQCtlInfo(value: ITableViewCtlSaveInfo): Self = StObject.set(x, "qCtlInfo", value.asInstanceOf[js.Any])
     

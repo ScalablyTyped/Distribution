@@ -34,7 +34,8 @@ object SubstanceNucleicAcidSubunitSugar {
     __obj.asInstanceOf[SubstanceNucleicAcidSubunitSugar]
   }
   
-  extension [Self <: SubstanceNucleicAcidSubunitSugar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceNucleicAcidSubunitSugar] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

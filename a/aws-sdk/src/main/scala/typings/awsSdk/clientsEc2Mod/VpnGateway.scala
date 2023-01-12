@@ -48,7 +48,8 @@ object VpnGateway {
     __obj.asInstanceOf[VpnGateway]
   }
   
-  extension [Self <: VpnGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnGateway] (val x: Self) extends AnyVal {
     
     inline def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
     

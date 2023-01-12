@@ -21,7 +21,8 @@ object EvenColor {
     __obj.asInstanceOf[EvenColor]
   }
   
-  extension [Self <: EvenColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvenColor] (val x: Self) extends AnyVal {
     
     inline def setEvenColor(value: Property | typings.cesium.mod.Color): Self = StObject.set(x, "evenColor", value.asInstanceOf[js.Any])
     

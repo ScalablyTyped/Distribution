@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ErrorExistsAndShouldBeVisible]
     }
     
-    extension [Self <: ErrorExistsAndShouldBeVisible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorExistsAndShouldBeVisible] (val x: Self) extends AnyVal {
       
       inline def setErrorExistsAndShouldBeVisible(value: Boolean): Self = StObject.set(x, "errorExistsAndShouldBeVisible", value.asInstanceOf[js.Any])
       

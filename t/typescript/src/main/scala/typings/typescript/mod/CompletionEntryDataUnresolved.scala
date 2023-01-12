@@ -19,7 +19,8 @@ object CompletionEntryDataUnresolved {
     __obj.asInstanceOf[CompletionEntryDataUnresolved]
   }
   
-  extension [Self <: CompletionEntryDataUnresolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionEntryDataUnresolved] (val x: Self) extends AnyVal {
     
     inline def setExportMapKey(value: java.lang.String): Self = StObject.set(x, "exportMapKey", value.asInstanceOf[js.Any])
   }

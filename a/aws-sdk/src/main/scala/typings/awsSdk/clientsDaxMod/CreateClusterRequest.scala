@@ -83,7 +83,8 @@ object CreateClusterRequest {
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
-  extension [Self <: CreateClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

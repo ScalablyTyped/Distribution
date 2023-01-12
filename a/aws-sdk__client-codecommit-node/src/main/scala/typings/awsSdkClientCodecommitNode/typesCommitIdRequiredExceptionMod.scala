@@ -31,7 +31,8 @@ object typesCommitIdRequiredExceptionMod {
       __obj.asInstanceOf[CommitIdRequiredException]
     }
     
-    extension [Self <: CommitIdRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitIdRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitIdRequiredException

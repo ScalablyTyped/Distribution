@@ -26,7 +26,8 @@ object distTypesArcLinkLabelsTypesMod {
       __obj.asInstanceOf[ArcLink]
     }
     
-    extension [Self <: ArcLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLink] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: js.Tuple3[Point, Point, Point]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object distTypesArcLinkLabelsTypesMod {
       __obj.asInstanceOf[ArcLinkLabel[Datum]]
     }
     
-    extension [Self <: ArcLinkLabel[?], Datum /* <: DatumWithArcAndColor */](x: Self & ArcLinkLabel[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLinkLabel[?], Datum /* <: DatumWithArcAndColor */] (val x: Self & ArcLinkLabel[Datum]) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object distTypesArcLinkLabelsTypesMod {
       __obj.asInstanceOf[ArcLinkWithDatum[Datum]]
     }
     
-    extension [Self <: ArcLinkWithDatum[?], Datum /* <: DatumWithArc */](x: Self & ArcLinkWithDatum[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcLinkWithDatum[?], Datum /* <: DatumWithArc */] (val x: Self & ArcLinkWithDatum[Datum]) extends AnyVal {
       
       inline def setData(value: Datum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

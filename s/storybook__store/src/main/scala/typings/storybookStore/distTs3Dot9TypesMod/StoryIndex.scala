@@ -27,7 +27,8 @@ object StoryIndex {
     __obj.asInstanceOf[StoryIndex]
   }
   
-  extension [Self <: StoryIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoryIndex] (val x: Self) extends AnyVal {
     
     inline def setStories(
       value: Record[

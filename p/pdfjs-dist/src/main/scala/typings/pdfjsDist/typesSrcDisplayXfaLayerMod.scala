@@ -66,7 +66,8 @@ object typesSrcDisplayXfaLayerMod {
       __obj.asInstanceOf[XfaLayerParameters]
     }
     
-    extension [Self <: XfaLayerParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XfaLayerParameters] (val x: Self) extends AnyVal {
       
       inline def setAnnotationStorage(value: Any): Self = StObject.set(x, "annotationStorage", value.asInstanceOf[js.Any])
       

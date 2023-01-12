@@ -27,7 +27,8 @@ object IBookmarkListDef {
     __obj.asInstanceOf[IBookmarkListDef]
   }
   
-  extension [Self <: IBookmarkListDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBookmarkListDef] (val x: Self) extends AnyVal {
     
     inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

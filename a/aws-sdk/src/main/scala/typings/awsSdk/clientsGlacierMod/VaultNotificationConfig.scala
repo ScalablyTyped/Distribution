@@ -23,7 +23,8 @@ object VaultNotificationConfig {
     __obj.asInstanceOf[VaultNotificationConfig]
   }
   
-  extension [Self <: VaultNotificationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VaultNotificationConfig] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: NotificationEventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object SelectableEvents {
     __obj.asInstanceOf[SelectableEvents]
   }
   
-  extension [Self <: SelectableEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectableEvents] (val x: Self) extends AnyVal {
     
     inline def setSelected(value: (/* event */ JQueryEventObject, /* ui */ Selected) => Unit): Self = StObject.set(x, "selected", js.Any.fromFunction2(value))
     

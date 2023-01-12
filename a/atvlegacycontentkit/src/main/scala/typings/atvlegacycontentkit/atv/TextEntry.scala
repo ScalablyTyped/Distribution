@@ -74,7 +74,8 @@ object TextEntry {
     __obj.asInstanceOf[TextEntry]
   }
   
-  extension [Self <: TextEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEntry] (val x: Self) extends AnyVal {
     
     inline def setDefaultToAppleID(value: Boolean): Self = StObject.set(x, "defaultToAppleID", value.asInstanceOf[js.Any])
     

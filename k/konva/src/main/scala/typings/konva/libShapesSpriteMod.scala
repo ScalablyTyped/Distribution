@@ -89,7 +89,8 @@ object libShapesSpriteMod {
       __obj.asInstanceOf[SpriteConfig]
     }
     
-    extension [Self <: SpriteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpriteConfig] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

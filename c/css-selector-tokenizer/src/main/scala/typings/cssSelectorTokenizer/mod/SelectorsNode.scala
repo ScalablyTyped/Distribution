@@ -22,7 +22,8 @@ object SelectorsNode {
     __obj.asInstanceOf[SelectorsNode]
   }
   
-  extension [Self <: SelectorsNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorsNode] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: js.Array[SelectorNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

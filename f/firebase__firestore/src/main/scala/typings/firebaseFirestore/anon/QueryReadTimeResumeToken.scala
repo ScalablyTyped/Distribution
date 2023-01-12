@@ -20,7 +20,8 @@ object QueryReadTimeResumeToken {
     __obj.asInstanceOf[QueryReadTimeResumeToken]
   }
   
-  extension [Self <: QueryReadTimeResumeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryReadTimeResumeToken] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreQueryMod.Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

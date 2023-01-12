@@ -116,7 +116,8 @@ object WindowOption {
     __obj.asInstanceOf[WindowOption]
   }
   
-  extension [Self <: WindowOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowOption] (val x: Self) extends AnyVal {
     
     inline def setAlways_on_top(value: Boolean): Self = StObject.set(x, "always_on_top", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ResourceQuery {
     __obj.asInstanceOf[ResourceQuery]
   }
   
-  extension [Self <: ResourceQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceQuery] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Query): Self = StObject.set(x, "Query", value.asInstanceOf[js.Any])
     

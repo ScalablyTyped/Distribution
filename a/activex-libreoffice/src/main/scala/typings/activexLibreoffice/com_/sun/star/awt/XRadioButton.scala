@@ -46,7 +46,8 @@ object XRadioButton {
     __obj.asInstanceOf[XRadioButton]
   }
   
-  extension [Self <: XRadioButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRadioButton] (val x: Self) extends AnyVal {
     
     inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     

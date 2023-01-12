@@ -21,7 +21,8 @@ object Done {
     __obj.asInstanceOf[Done]
   }
   
-  extension [Self <: Done](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

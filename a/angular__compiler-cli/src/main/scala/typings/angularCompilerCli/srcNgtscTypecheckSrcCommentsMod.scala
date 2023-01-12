@@ -94,7 +94,8 @@ object srcNgtscTypecheckSrcCommentsMod {
       __obj.asInstanceOf[FindOptions[T]]
     }
     
-    extension [Self <: FindOptions[?], T /* <: Node */](x: Self & FindOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions[?], T /* <: Node */] (val x: Self & FindOptions[T]) extends AnyVal {
       
       inline def setFilter(value: Node => /* is T */ Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

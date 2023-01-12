@@ -22,7 +22,8 @@ object WebCLBuffer {
     __obj.asInstanceOf[WebCLBuffer]
   }
   
-  extension [Self <: WebCLBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLBuffer] (val x: Self) extends AnyVal {
     
     inline def setCreateSubBuffer(value: (MemFlagsBits, Double, Double) => WebCLBuffer): Self = StObject.set(x, "createSubBuffer", js.Any.fromFunction3(value))
   }

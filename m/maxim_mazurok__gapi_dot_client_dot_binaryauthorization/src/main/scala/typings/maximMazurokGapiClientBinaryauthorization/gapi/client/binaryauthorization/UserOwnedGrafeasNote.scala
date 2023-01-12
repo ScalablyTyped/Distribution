@@ -33,7 +33,8 @@ object UserOwnedGrafeasNote {
     __obj.asInstanceOf[UserOwnedGrafeasNote]
   }
   
-  extension [Self <: UserOwnedGrafeasNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserOwnedGrafeasNote] (val x: Self) extends AnyVal {
     
     inline def setDelegationServiceAccountEmail(value: String): Self = StObject.set(x, "delegationServiceAccountEmail", value.asInstanceOf[js.Any])
     

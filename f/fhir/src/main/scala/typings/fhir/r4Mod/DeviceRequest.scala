@@ -194,7 +194,8 @@ object DeviceRequest {
     __obj.asInstanceOf[DeviceRequest]
   }
   
-  extension [Self <: DeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthoredOn(value: String): Self = StObject.set(x, "authoredOn", value.asInstanceOf[js.Any])
     

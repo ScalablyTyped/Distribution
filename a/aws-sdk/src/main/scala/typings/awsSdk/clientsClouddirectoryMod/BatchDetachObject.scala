@@ -28,7 +28,8 @@ object BatchDetachObject {
     __obj.asInstanceOf[BatchDetachObject]
   }
   
-  extension [Self <: BatchDetachObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetachObject] (val x: Self) extends AnyVal {
     
     inline def setBatchReferenceName(value: BatchReferenceName): Self = StObject.set(x, "BatchReferenceName", value.asInstanceOf[js.Any])
     

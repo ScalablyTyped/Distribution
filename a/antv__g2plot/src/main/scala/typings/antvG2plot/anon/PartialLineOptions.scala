@@ -126,7 +126,8 @@ object PartialLineOptions {
     __obj.asInstanceOf[PartialLineOptions]
   }
   
-  extension [Self <: PartialLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLineOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SingleTap {
     __obj.asInstanceOf[SingleTap]
   }
   
-  extension [Self <: SingleTap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleTap] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

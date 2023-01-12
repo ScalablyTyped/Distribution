@@ -19,7 +19,8 @@ object AlwaysInclude {
     __obj.asInstanceOf[AlwaysInclude]
   }
   
-  extension [Self <: AlwaysInclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysInclude] (val x: Self) extends AnyVal {
     
     inline def setAlwaysInclude(value: scala.Double): Self = StObject.set(x, "alwaysInclude", value.asInstanceOf[js.Any])
     

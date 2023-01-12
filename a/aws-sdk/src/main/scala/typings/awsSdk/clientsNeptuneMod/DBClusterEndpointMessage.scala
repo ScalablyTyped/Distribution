@@ -23,7 +23,8 @@ object DBClusterEndpointMessage {
     __obj.asInstanceOf[DBClusterEndpointMessage]
   }
   
-  extension [Self <: DBClusterEndpointMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterEndpointMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterEndpoints(value: DBClusterEndpointList): Self = StObject.set(x, "DBClusterEndpoints", value.asInstanceOf[js.Any])
     

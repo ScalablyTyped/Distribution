@@ -28,7 +28,8 @@ object PlayerExperienceInfo {
     __obj.asInstanceOf[PlayerExperienceInfo]
   }
   
-  extension [Self <: PlayerExperienceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerExperienceInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentExperiencePoints(value: String): Self = StObject.set(x, "currentExperiencePoints", value.asInstanceOf[js.Any])
     

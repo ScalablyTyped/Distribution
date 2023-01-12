@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[BitArray]
     }
     
-    extension [Self <: BitArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitArray] (val x: Self) extends AnyVal {
       
       inline def setBits(value: js.typedarray.Uint32Array): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[BitArrayJSON]
     }
     
-    extension [Self <: BitArrayJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitArrayJSON] (val x: Self) extends AnyVal {
       
       inline def setBits(value: js.Array[Double]): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       

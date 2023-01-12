@@ -28,7 +28,8 @@ object ShortcutProps {
     __obj.asInstanceOf[ShortcutProps]
   }
   
-  extension [Self <: ShortcutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortcutProps] (val x: Self) extends AnyVal {
     
     inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     

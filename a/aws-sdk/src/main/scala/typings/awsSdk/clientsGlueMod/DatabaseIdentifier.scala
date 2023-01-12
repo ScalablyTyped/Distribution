@@ -23,7 +23,8 @@ object DatabaseIdentifier {
     __obj.asInstanceOf[DatabaseIdentifier]
   }
   
-  extension [Self <: DatabaseIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseIdentifier] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

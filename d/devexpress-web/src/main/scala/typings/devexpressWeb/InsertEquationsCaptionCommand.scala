@@ -23,7 +23,8 @@ object InsertEquationsCaptionCommand {
     __obj.asInstanceOf[InsertEquationsCaptionCommand]
   }
   
-  extension [Self <: InsertEquationsCaptionCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertEquationsCaptionCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

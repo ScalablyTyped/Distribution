@@ -26,7 +26,8 @@ object Authenticated {
     __obj.asInstanceOf[Authenticated]
   }
   
-  extension [Self <: Authenticated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authenticated] (val x: Self) extends AnyVal {
     
     inline def setAuthenticated(value: Dictk): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PluginState {
     __obj.asInstanceOf[PluginState]
   }
   
-  extension [Self <: PluginState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginState] (val x: Self) extends AnyVal {
     
     inline def setPluginStatus(value: String): Self = StObject.set(x, "pluginStatus", value.asInstanceOf[js.Any])
     

@@ -194,7 +194,8 @@ object XSchemaHandler {
     __obj.asInstanceOf[XSchemaHandler]
   }
   
-  extension [Self <: XSchemaHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSchemaHandler] (val x: Self) extends AnyVal {
     
     inline def setAddInstance(value: (String, TemplateIdentifier) => Unit): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
     

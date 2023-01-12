@@ -20,7 +20,8 @@ object BuildIncremental {
     __obj.asInstanceOf[BuildIncremental]
   }
   
-  extension [Self <: BuildIncremental](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildIncremental] (val x: Self) extends AnyVal {
     
     inline def setRebuild(value: BuildInvalidate): Self = StObject.set(x, "rebuild", value.asInstanceOf[js.Any])
   }

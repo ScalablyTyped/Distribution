@@ -17,7 +17,8 @@ object PackageTypeMembers {
     __obj.asInstanceOf[PackageTypeMembers]
   }
   
-  extension [Self <: PackageTypeMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageTypeMembers] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

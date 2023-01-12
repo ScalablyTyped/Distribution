@@ -20,7 +20,8 @@ object NavigatorYAxisStackLabelsAnimationOptions {
     __obj.asInstanceOf[NavigatorYAxisStackLabelsAnimationOptions]
   }
   
-  extension [Self <: NavigatorYAxisStackLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisStackLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

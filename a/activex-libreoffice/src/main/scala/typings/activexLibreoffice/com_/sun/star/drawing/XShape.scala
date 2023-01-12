@@ -67,7 +67,8 @@ object XShape {
     __obj.asInstanceOf[XShape]
   }
   
-  extension [Self <: XShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShape] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     

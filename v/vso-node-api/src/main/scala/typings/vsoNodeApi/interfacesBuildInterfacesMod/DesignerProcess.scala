@@ -18,7 +18,8 @@ object DesignerProcess {
     __obj.asInstanceOf[DesignerProcess]
   }
   
-  extension [Self <: DesignerProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesignerProcess] (val x: Self) extends AnyVal {
     
     inline def setPhases(value: js.Array[Phase]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     

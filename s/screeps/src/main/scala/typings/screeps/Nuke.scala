@@ -39,7 +39,8 @@ object Nuke {
     __obj.asInstanceOf[Nuke]
   }
   
-  extension [Self <: Nuke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nuke] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id[Nuke]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object VariablesArguments {
     __obj.asInstanceOf[VariablesArguments]
   }
   
-  extension [Self <: VariablesArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariablesArguments] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

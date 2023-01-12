@@ -29,7 +29,8 @@ object ATVNowPlaying {
     __obj.asInstanceOf[ATVNowPlaying]
   }
   
-  extension [Self <: ATVNowPlaying](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVNowPlaying] (val x: Self) extends AnyVal {
     
     inline def setCurrentAsset(value: js.Function1[/* element */ Element, Unit] => Unit): Self = StObject.set(x, "currentAsset", js.Any.fromFunction1(value))
     

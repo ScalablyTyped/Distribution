@@ -23,7 +23,8 @@ object DeleteFleetErrorItem {
     __obj.asInstanceOf[DeleteFleetErrorItem]
   }
   
-  extension [Self <: DeleteFleetErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFleetErrorItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: DeleteFleetError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

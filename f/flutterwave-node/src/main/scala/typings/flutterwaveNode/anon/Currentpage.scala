@@ -19,7 +19,8 @@ object Currentpage {
     __obj.asInstanceOf[Currentpage]
   }
   
-  extension [Self <: Currentpage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currentpage] (val x: Self) extends AnyVal {
     
     inline def setCurrent_page(value: Double): Self = StObject.set(x, "current_page", value.asInstanceOf[js.Any])
     

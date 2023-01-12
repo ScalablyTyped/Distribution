@@ -50,7 +50,8 @@ object IHashSet {
     __obj.asInstanceOf[IHashSet[TValue]]
   }
   
-  extension [Self <: IHashSet[?], TValue](x: Self & IHashSet[TValue]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHashSet[?], TValue] (val x: Self & IHashSet[TValue]) extends AnyVal {
     
     inline def setAdd(value: TValue => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

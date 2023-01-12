@@ -21,7 +21,8 @@ object TDepth {
     __obj.asInstanceOf[TDepth]
   }
   
-  extension [Self <: TDepth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TDepth] (val x: Self) extends AnyVal {
     
     inline def setCameraFar(value: IUniform[Double]): Self = StObject.set(x, "cameraFar", value.asInstanceOf[js.Any])
     

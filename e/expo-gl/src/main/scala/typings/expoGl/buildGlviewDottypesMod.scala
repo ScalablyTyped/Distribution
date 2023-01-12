@@ -105,7 +105,8 @@ object buildGlviewDottypesMod {
       __obj.asInstanceOf[BaseGLViewProps]
     }
     
-    extension [Self <: BaseGLViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseGLViewProps] (val x: Self) extends AnyVal {
       
       inline def setMsaaSamples(value: Double): Self = StObject.set(x, "msaaSamples", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object buildGlviewDottypesMod {
       __obj.asInstanceOf[GLSnapshot]
     }
     
-    extension [Self <: GLSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLSnapshot] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object buildGlviewDottypesMod {
       __obj.asInstanceOf[SnapshotOptions]
     }
     
-    extension [Self <: SnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Double): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -216,7 +219,8 @@ object buildGlviewDottypesMod {
       __obj.asInstanceOf[SurfaceCreateEvent]
     }
     
-    extension [Self <: SurfaceCreateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SurfaceCreateEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: ExglCtxId): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }

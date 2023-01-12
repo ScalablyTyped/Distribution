@@ -18,7 +18,8 @@ object GetAuthorizationTokenRequest {
     __obj.asInstanceOf[GetAuthorizationTokenRequest]
   }
   
-  extension [Self <: GetAuthorizationTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAuthorizationTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setRegistryIds(value: GetAuthorizationTokenRegistryIdList): Self = StObject.set(x, "registryIds", value.asInstanceOf[js.Any])
     

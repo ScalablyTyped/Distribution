@@ -23,7 +23,8 @@ object AlgorithmStatusDetails {
     __obj.asInstanceOf[AlgorithmStatusDetails]
   }
   
-  extension [Self <: AlgorithmStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setImageScanStatuses(value: AlgorithmStatusItemList): Self = StObject.set(x, "ImageScanStatuses", value.asInstanceOf[js.Any])
     

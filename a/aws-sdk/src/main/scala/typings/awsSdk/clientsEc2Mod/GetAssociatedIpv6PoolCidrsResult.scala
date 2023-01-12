@@ -23,7 +23,8 @@ object GetAssociatedIpv6PoolCidrsResult {
     __obj.asInstanceOf[GetAssociatedIpv6PoolCidrsResult]
   }
   
-  extension [Self <: GetAssociatedIpv6PoolCidrsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssociatedIpv6PoolCidrsResult] (val x: Self) extends AnyVal {
     
     inline def setIpv6CidrAssociations(value: Ipv6CidrAssociationSet): Self = StObject.set(x, "Ipv6CidrAssociations", value.asInstanceOf[js.Any])
     

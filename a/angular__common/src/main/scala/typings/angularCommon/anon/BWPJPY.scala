@@ -19,7 +19,8 @@ object BWPJPY {
     __obj.asInstanceOf[BWPJPY]
   }
   
-  extension [Self <: BWPJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BWPJPY] (val x: Self) extends AnyVal {
     
     inline def setBWP(value: js.Array[String]): Self = StObject.set(x, "BWP", value.asInstanceOf[js.Any])
     

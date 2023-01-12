@@ -23,7 +23,8 @@ object QueryError {
     __obj.asInstanceOf[QueryError]
   }
   
-  extension [Self <: QueryError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: QueryErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

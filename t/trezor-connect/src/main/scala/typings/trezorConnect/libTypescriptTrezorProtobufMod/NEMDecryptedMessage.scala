@@ -15,7 +15,8 @@ object NEMDecryptedMessage {
     __obj.asInstanceOf[NEMDecryptedMessage]
   }
   
-  extension [Self <: NEMDecryptedMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMDecryptedMessage] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }

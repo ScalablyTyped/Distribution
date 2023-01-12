@@ -48,7 +48,8 @@ object typesAssetMod {
       __obj.asInstanceOf[Asset]
     }
     
-    extension [Self <: Asset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Asset] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       

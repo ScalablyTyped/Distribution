@@ -119,7 +119,8 @@ object SketchProperties {
     __obj.asInstanceOf[SketchProperties]
   }
   
-  extension [Self <: SketchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchProperties] (val x: Self) extends AnyVal {
     
     inline def setAvailableCreateTools(value: js.Array[String]): Self = StObject.set(x, "availableCreateTools", value.asInstanceOf[js.Any])
     

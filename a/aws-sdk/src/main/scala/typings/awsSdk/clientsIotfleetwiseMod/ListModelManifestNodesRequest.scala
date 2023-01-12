@@ -28,7 +28,8 @@ object ListModelManifestNodesRequest {
     __obj.asInstanceOf[ListModelManifestNodesRequest]
   }
   
-  extension [Self <: ListModelManifestNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelManifestNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

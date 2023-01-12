@@ -245,7 +245,8 @@ object sapFGridContainerItemLayoutDataMod {
       __obj.asInstanceOf[GridContainerItemLayoutDataSettings]
     }
     
-    extension [Self <: GridContainerItemLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridContainerItemLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

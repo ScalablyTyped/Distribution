@@ -26,7 +26,8 @@ object SimpleModal {
       __obj.asInstanceOf[SimpleModalDialog]
     }
     
-    extension [Self <: SimpleModalDialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleModalDialog] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object SimpleModal {
       __obj.asInstanceOf[SimpleModalOptions]
     }
     
-    extension [Self <: SimpleModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleModalOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

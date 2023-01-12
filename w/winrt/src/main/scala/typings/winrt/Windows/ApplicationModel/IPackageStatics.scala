@@ -15,7 +15,8 @@ object IPackageStatics {
     __obj.asInstanceOf[IPackageStatics]
   }
   
-  extension [Self <: IPackageStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPackageStatics] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Package): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

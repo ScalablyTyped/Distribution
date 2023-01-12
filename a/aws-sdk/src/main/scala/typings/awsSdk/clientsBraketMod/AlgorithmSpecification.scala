@@ -23,7 +23,8 @@ object AlgorithmSpecification {
     __obj.asInstanceOf[AlgorithmSpecification]
   }
   
-  extension [Self <: AlgorithmSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmSpecification] (val x: Self) extends AnyVal {
     
     inline def setContainerImage(value: ContainerImage): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     

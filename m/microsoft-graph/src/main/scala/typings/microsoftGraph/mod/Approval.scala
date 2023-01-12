@@ -18,7 +18,8 @@ object Approval {
     __obj.asInstanceOf[Approval]
   }
   
-  extension [Self <: Approval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Approval] (val x: Self) extends AnyVal {
     
     inline def setStages(value: NullableOption[js.Array[ApprovalStage]]): Self = StObject.set(x, "stages", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTimeSmallMod extends Shortcut {
       __obj.asInstanceOf[TimeSmallProps]
     }
     
-    extension [Self <: TimeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

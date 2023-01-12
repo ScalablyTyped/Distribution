@@ -26,7 +26,8 @@ object ResourceDataWithData {
     __obj.asInstanceOf[ResourceDataWithData]
   }
   
-  extension [Self <: ResourceDataWithData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataWithData] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

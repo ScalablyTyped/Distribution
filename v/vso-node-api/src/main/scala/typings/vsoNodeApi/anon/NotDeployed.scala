@@ -35,7 +35,8 @@ object NotDeployed {
     __obj.asInstanceOf[NotDeployed]
   }
   
-  extension [Self <: NotDeployed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotDeployed] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

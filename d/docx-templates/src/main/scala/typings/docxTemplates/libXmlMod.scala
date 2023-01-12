@@ -27,7 +27,8 @@ object libXmlMod {
       __obj.asInstanceOf[XmlOptions]
     }
     
-    extension [Self <: XmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
       
       inline def setLiteralXmlDelimiter(value: String): Self = StObject.set(x, "literalXmlDelimiter", value.asInstanceOf[js.Any])
     }

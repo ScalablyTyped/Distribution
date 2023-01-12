@@ -31,7 +31,8 @@ object PaperProps {
     __obj.asInstanceOf[PaperProps]
   }
   
-  extension [Self <: PaperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaperProps] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

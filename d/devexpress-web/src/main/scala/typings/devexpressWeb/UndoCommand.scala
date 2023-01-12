@@ -23,7 +23,8 @@ object UndoCommand {
     __obj.asInstanceOf[UndoCommand]
   }
   
-  extension [Self <: UndoCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndoCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

@@ -23,7 +23,8 @@ object TypeofLIST {
     __obj.asInstanceOf[TypeofLIST]
   }
   
-  extension [Self <: TypeofLIST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLIST] (val x: Self) extends AnyVal {
     
     inline def setIS_READ_ONLY(value: /* true */ Boolean): Self = StObject.set(x, "IS_READ_ONLY", value.asInstanceOf[js.Any])
     

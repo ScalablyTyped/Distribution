@@ -40,7 +40,8 @@ object XSynchronousDispatch {
     __obj.asInstanceOf[XSynchronousDispatch]
   }
   
-  extension [Self <: XSynchronousDispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSynchronousDispatch] (val x: Self) extends AnyVal {
     
     inline def setDispatchWithReturnValue(value: (URL, SeqEquiv[PropertyValue]) => Any): Self = StObject.set(x, "dispatchWithReturnValue", js.Any.fromFunction2(value))
   }

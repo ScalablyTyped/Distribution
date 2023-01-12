@@ -29,7 +29,8 @@ object distApiExtrasMod {
       __obj.asInstanceOf[IDependencyTree]
     }
     
-    extension [Self <: IDependencyTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDependencyTree] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[IDependencyTree]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object distApiExtrasMod {
       __obj.asInstanceOf[IObserverTree]
     }
     
-    extension [Self <: IObserverTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserverTree] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

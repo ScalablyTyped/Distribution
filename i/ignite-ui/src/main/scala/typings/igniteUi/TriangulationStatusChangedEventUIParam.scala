@@ -28,7 +28,8 @@ object TriangulationStatusChangedEventUIParam {
     __obj.asInstanceOf[TriangulationStatusChangedEventUIParam]
   }
   
-  extension [Self <: TriangulationStatusChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriangulationStatusChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentStatus(value: Any): Self = StObject.set(x, "currentStatus", value.asInstanceOf[js.Any])
     

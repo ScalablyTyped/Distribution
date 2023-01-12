@@ -23,7 +23,8 @@ object IShareTargetActivatedEventArgs {
     __obj.asInstanceOf[IShareTargetActivatedEventArgs]
   }
   
-  extension [Self <: IShareTargetActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShareTargetActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setShareOperation(value: ShareOperation): Self = StObject.set(x, "shareOperation", value.asInstanceOf[js.Any])
   }

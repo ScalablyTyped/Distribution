@@ -20,7 +20,8 @@ object GetCurrentOptions {
     __obj.asInstanceOf[GetCurrentOptions]
   }
   
-  extension [Self <: GetCurrentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentOptions] (val x: Self) extends AnyVal {
     
     inline def setAddOptionsGetter(value: (String, js.Function0[js.UndefOr[js.Object | Null]]) => js.Function0[Unit]): Self = StObject.set(x, "addOptionsGetter", js.Any.fromFunction2(value))
     

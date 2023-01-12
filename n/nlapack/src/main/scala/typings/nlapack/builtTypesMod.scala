@@ -1728,7 +1728,8 @@ object builtTypesMod {
   }
   object INLapack {
     
-    extension [Self <: INLapack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INLapack] (val x: Self) extends AnyVal {
       
       inline def setDgbcon(
         value: (MatrixNorm, Double, Double, Double, js.typedarray.Float64Array, Double, js.typedarray.Int32Array, Double, js.typedarray.Float64Array) => Double

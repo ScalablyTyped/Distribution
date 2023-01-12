@@ -84,7 +84,8 @@ object anon {
       __obj.asInstanceOf[AngleStep[D]]
     }
     
-    extension [Self <: AngleStep[?], D /* <: Record[String, Any] */](x: Self & AngleStep[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngleStep[?], D /* <: Record[String, Any] */] (val x: Self & AngleStep[D]) extends AnyVal {
       
       inline def setAngleStep(value: Double): Self = StObject.set(x, "angleStep", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Colors[D]]
     }
     
-    extension [Self <: Colors[?], D /* <: Record[String, Any] */](x: Self & Colors[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors[?], D /* <: Record[String, Any] */] (val x: Self & Colors[D]) extends AnyVal {
       
       inline def setColors(value: OrdinalColorScaleConfig[Index]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -277,7 +281,8 @@ object anon {
       __obj.asInstanceOf[EndAngle]
     }
     
-    extension [Self <: EndAngle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndAngle] (val x: Self) extends AnyVal {
       
       inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object anon {
       __obj.asInstanceOf[Fill]
     }
     
-    extension [Self <: Fill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fill] (val x: Self) extends AnyVal {
       
       inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -325,7 +331,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     }
@@ -348,7 +355,8 @@ object anon {
       __obj.asInstanceOf[Id[D]]
     }
     
-    extension [Self <: Id[?], D /* <: Record[String, Any] */](x: Self & Id[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id[?], D /* <: Record[String, Any] */] (val x: Self & Id[D]) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -371,7 +379,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -394,7 +403,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -415,7 +425,8 @@ object anon {
       __obj.asInstanceOf[Scheme]
     }
     
-    extension [Self <: Scheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scheme] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: nivo): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     }

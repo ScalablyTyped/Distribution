@@ -17,7 +17,8 @@ object Pagebackground {
     __obj.asInstanceOf[Pagebackground]
   }
   
-  extension [Self <: Pagebackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagebackground] (val x: Self) extends AnyVal {
     
     inline def setPage_background(value: String): Self = StObject.set(x, "page_background", value.asInstanceOf[js.Any])
     

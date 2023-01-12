@@ -33,7 +33,8 @@ object CreateRealtimeLogConfigRequest {
     __obj.asInstanceOf[CreateRealtimeLogConfigRequest]
   }
   
-  extension [Self <: CreateRealtimeLogConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRealtimeLogConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setEndPoints(value: EndPointList): Self = StObject.set(x, "EndPoints", value.asInstanceOf[js.Any])
     

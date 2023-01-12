@@ -86,7 +86,8 @@ object PathEvents {
     __obj.asInstanceOf[PathEvents]
   }
   
-  extension [Self <: PathEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathEvents] (val x: Self) extends AnyVal {
     
     inline def setOnadd(
       value: NonNullable[

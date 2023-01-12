@@ -23,7 +23,8 @@ object MeetingNotificationConfiguration {
     __obj.asInstanceOf[MeetingNotificationConfiguration]
   }
   
-  extension [Self <: MeetingNotificationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeetingNotificationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSnsTopicArn(value: Arn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     

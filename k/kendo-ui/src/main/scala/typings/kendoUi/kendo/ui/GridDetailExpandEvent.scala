@@ -20,7 +20,8 @@ object GridDetailExpandEvent {
     __obj.asInstanceOf[GridDetailExpandEvent]
   }
   
-  extension [Self <: GridDetailExpandEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridDetailExpandEvent] (val x: Self) extends AnyVal {
     
     inline def setDetailRow(value: JQuery): Self = StObject.set(x, "detailRow", value.asInstanceOf[js.Any])
     

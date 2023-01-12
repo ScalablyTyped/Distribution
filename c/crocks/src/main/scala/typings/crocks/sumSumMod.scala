@@ -38,7 +38,8 @@ object sumSumMod {
       __obj.asInstanceOf[Sum]
     }
     
-    extension [Self <: Sum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sum] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: Sum => Sum): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     }

@@ -38,7 +38,8 @@ object DataIngestionJobSummary {
     __obj.asInstanceOf[DataIngestionJobSummary]
   }
   
-  extension [Self <: DataIngestionJobSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataIngestionJobSummary] (val x: Self) extends AnyVal {
     
     inline def setDatasetArn(value: DatasetArn): Self = StObject.set(x, "DatasetArn", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object global {
           __obj.asInstanceOf[CollectionFetchWithCacheOptions]
         }
         
-        extension [Self <: CollectionFetchWithCacheOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CollectionFetchWithCacheOptions] (val x: Self) extends AnyVal {
           
           inline def setPrefillSuccess(value: /* self */ Any => Unit): Self = StObject.set(x, "prefillSuccess", js.Any.fromFunction1(value))
           
@@ -110,7 +111,8 @@ object global {
           __obj.asInstanceOf[ModelFetchWithCacheOptions]
         }
         
-        extension [Self <: ModelFetchWithCacheOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ModelFetchWithCacheOptions] (val x: Self) extends AnyVal {
           
           inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
           

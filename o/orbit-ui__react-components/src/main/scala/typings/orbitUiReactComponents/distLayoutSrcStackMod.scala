@@ -101,7 +101,8 @@ object distLayoutSrcStackMod {
       __obj.asInstanceOf[InnerStackProps]
     }
     
-    extension [Self <: InnerStackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerStackProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

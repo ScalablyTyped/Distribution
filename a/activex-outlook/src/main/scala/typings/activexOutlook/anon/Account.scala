@@ -15,7 +15,8 @@ object Account {
     __obj.asInstanceOf[Account]
   }
   
-  extension [Self <: Account](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: typings.activexOutlook.Outlook.Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
   }

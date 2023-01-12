@@ -50,7 +50,8 @@ object MediaControllerSubtitles {
     __obj.asInstanceOf[MediaControllerSubtitles]
   }
   
-  extension [Self <: MediaControllerSubtitles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerSubtitles] (val x: Self) extends AnyVal {
     
     inline def setAddChangeRequestListener(value: MediaControllerEnabledChangeRequestCallback => Double): Self = StObject.set(x, "addChangeRequestListener", js.Any.fromFunction1(value))
     

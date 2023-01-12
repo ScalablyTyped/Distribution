@@ -68,7 +68,8 @@ object PendingModifiedValues {
     __obj.asInstanceOf[PendingModifiedValues]
   }
   
-  extension [Self <: PendingModifiedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingModifiedValues] (val x: Self) extends AnyVal {
     
     inline def setAutomatedSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     

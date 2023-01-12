@@ -92,7 +92,8 @@ object DOMMutationEvent {
     __obj.asInstanceOf[DOMMutationEvent]
   }
   
-  extension [Self <: DOMMutationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMutationEvent] (val x: Self) extends AnyVal {
     
     inline def setAttrChange(value: Double): Self = StObject.set(x, "attrChange", value.asInstanceOf[js.Any])
     

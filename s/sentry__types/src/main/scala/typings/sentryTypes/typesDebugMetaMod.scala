@@ -26,7 +26,8 @@ object typesDebugMetaMod {
       __obj.asInstanceOf[DebugImage]
     }
     
-    extension [Self <: DebugImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugImage] (val x: Self) extends AnyVal {
       
       inline def setCode_file(value: String): Self = StObject.set(x, "code_file", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesDebugMetaMod {
       __obj.asInstanceOf[DebugMeta]
     }
     
-    extension [Self <: DebugMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugMeta] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[DebugImage]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       

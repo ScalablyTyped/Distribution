@@ -48,7 +48,8 @@ object libActionCreatorsMod {
       __obj.asInstanceOf[ReduxRouterAction]
     }
     
-    extension [Self <: ReduxRouterAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxRouterAction] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object MultiplexProgramPipelineDetail {
     __obj.asInstanceOf[MultiplexProgramPipelineDetail]
   }
   
-  extension [Self <: MultiplexProgramPipelineDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexProgramPipelineDetail] (val x: Self) extends AnyVal {
     
     inline def setActiveChannelPipeline(value: string): Self = StObject.set(x, "ActiveChannelPipeline", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object meshesSubMeshDotprojectMod {
         __obj.asInstanceOf[SubMesh]
       }
       
-      extension [Self <: SubMesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubMesh] (val x: Self) extends AnyVal {
         
         inline def setProjectToRef(value: (Vector3, js.Array[Vector3], IndicesArray, Vector3) => Double): Self = StObject.set(x, "projectToRef", js.Any.fromFunction4(value))
         

@@ -23,7 +23,8 @@ object DeleteContactRequest {
     __obj.asInstanceOf[DeleteContactRequest]
   }
   
-  extension [Self <: DeleteContactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContactRequest] (val x: Self) extends AnyVal {
     
     inline def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     

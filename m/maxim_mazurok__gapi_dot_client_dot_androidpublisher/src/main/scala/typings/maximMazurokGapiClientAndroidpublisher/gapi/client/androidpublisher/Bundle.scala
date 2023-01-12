@@ -22,7 +22,8 @@ object Bundle {
     __obj.asInstanceOf[Bundle]
   }
   
-  extension [Self <: Bundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
     
     inline def setSha1(value: String): Self = StObject.set(x, "sha1", value.asInstanceOf[js.Any])
     

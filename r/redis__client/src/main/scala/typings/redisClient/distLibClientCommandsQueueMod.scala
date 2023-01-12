@@ -83,7 +83,8 @@ object distLibClientCommandsQueueMod {
       __obj.asInstanceOf[QueueCommandOptions]
     }
     
-    extension [Self <: QueueCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setAsap(value: Boolean): Self = StObject.set(x, "asap", value.asInstanceOf[js.Any])
       

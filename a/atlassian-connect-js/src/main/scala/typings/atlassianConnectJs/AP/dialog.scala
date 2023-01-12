@@ -29,7 +29,8 @@ object dialog {
       __obj.asInstanceOf[Dialog]
     }
     
-    extension [Self <: Dialog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialog] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }
@@ -95,7 +96,8 @@ object dialog {
       __obj.asInstanceOf[DialogButton]
     }
     
-    extension [Self <: DialogButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogButton] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -184,7 +186,8 @@ object dialog {
       __obj.asInstanceOf[DialogOptions]
     }
     
-    extension [Self <: DialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Identifier]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

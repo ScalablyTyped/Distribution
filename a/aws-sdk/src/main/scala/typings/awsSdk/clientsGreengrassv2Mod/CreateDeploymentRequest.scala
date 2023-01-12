@@ -53,7 +53,8 @@ object CreateDeploymentRequest {
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  extension [Self <: CreateDeploymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

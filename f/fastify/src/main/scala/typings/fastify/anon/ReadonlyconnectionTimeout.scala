@@ -53,7 +53,8 @@ object ReadonlyconnectionTimeout {
     __obj.asInstanceOf[ReadonlyconnectionTimeout]
   }
   
-  extension [Self <: ReadonlyconnectionTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyconnectionTimeout] (val x: Self) extends AnyVal {
     
     inline def setAllowUnsafeRegex(value: Boolean): Self = StObject.set(x, "allowUnsafeRegex", value.asInstanceOf[js.Any])
     

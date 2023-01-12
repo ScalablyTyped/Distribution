@@ -62,7 +62,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Dopri]
     }
     
-    extension [Self <: Dopri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dopri] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Vector => Vector | Matrix): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -107,7 +108,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LU]
     }
     
-    extension [Self <: LU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LU] (val x: Self) extends AnyVal {
       
       inline def setL(value: Matrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[LUPP]
     }
     
-    extension [Self <: LUPP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LUPP] (val x: Self) extends AnyVal {
       
       inline def setL(value: SparseMatrix): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       

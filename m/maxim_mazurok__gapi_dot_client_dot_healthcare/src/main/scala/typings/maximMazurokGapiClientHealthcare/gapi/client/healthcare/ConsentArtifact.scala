@@ -42,7 +42,8 @@ object ConsentArtifact {
     __obj.asInstanceOf[ConsentArtifact]
   }
   
-  extension [Self <: ConsentArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentArtifact] (val x: Self) extends AnyVal {
     
     inline def setConsentContentScreenshots(value: js.Array[Image]): Self = StObject.set(x, "consentContentScreenshots", value.asInstanceOf[js.Any])
     

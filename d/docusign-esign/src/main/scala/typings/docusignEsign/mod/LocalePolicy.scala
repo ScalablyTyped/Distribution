@@ -174,7 +174,8 @@ object LocalePolicy {
     __obj.asInstanceOf[LocalePolicy]
   }
   
-  extension [Self <: LocalePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalePolicy] (val x: Self) extends AnyVal {
     
     inline def setAddressFormat(value: String): Self = StObject.set(x, "addressFormat", value.asInstanceOf[js.Any])
     

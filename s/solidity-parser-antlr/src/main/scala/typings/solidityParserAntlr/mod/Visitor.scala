@@ -340,7 +340,8 @@ object Visitor {
     __obj.asInstanceOf[Visitor]
   }
   
-  extension [Self <: Visitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visitor] (val x: Self) extends AnyVal {
     
     inline def setArrayTypeName(value: /* node */ ArrayTypeName => Any): Self = StObject.set(x, "ArrayTypeName", js.Any.fromFunction1(value))
     

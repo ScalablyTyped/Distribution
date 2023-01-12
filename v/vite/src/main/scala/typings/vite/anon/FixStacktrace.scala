@@ -15,7 +15,8 @@ object FixStacktrace {
     __obj.asInstanceOf[FixStacktrace]
   }
   
-  extension [Self <: FixStacktrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixStacktrace] (val x: Self) extends AnyVal {
     
     inline def setFixStacktrace(value: Boolean): Self = StObject.set(x, "fixStacktrace", value.asInstanceOf[js.Any])
     

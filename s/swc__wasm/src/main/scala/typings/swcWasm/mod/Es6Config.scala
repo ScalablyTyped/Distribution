@@ -20,7 +20,8 @@ object Es6Config {
     __obj.asInstanceOf[Es6Config]
   }
   
-  extension [Self <: Es6Config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Es6Config] (val x: Self) extends AnyVal {
     
     inline def setType(value: es6): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

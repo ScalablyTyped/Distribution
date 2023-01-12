@@ -23,7 +23,8 @@ object QueryRelationsEntity {
     __obj.asInstanceOf[QueryRelationsEntity]
   }
   
-  extension [Self <: QueryRelationsEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRelationsEntity] (val x: Self) extends AnyVal {
     
     inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

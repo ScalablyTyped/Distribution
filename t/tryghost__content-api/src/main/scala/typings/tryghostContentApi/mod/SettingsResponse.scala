@@ -17,7 +17,8 @@ object SettingsResponse {
     __obj.asInstanceOf[SettingsResponse]
   }
   
-  extension [Self <: SettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }

@@ -92,7 +92,8 @@ object Core {
     __obj.asInstanceOf[Core]
   }
   
-  extension [Self <: Core](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
     
     inline def `setActive-bg-color`(value: PropertyValueCore[Colour]): Self = StObject.set(x, "active-bg-color", value.asInstanceOf[js.Any])
     

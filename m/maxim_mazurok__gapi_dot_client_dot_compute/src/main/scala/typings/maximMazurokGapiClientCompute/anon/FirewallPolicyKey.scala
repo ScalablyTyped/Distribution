@@ -61,7 +61,8 @@ object FirewallPolicyKey {
     __obj.asInstanceOf[FirewallPolicyKey]
   }
   
-  extension [Self <: FirewallPolicyKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

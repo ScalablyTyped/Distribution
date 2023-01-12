@@ -23,7 +23,8 @@ object FederatedUser {
     __obj.asInstanceOf[FederatedUser]
   }
   
-  extension [Self <: FederatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedUser] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

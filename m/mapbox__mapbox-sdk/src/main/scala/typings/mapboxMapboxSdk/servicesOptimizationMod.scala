@@ -45,7 +45,8 @@ object servicesOptimizationMod {
       __obj.asInstanceOf[Distribution]
     }
     
-    extension [Self <: Distribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
       
       inline def setDropoff(value: Double): Self = StObject.set(x, "dropoff", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object servicesOptimizationMod {
       __obj.asInstanceOf[OptimizationRequest]
     }
     
-    extension [Self <: OptimizationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizationRequest] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[OptimizationAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object servicesOptimizationMod {
       __obj.asInstanceOf[OptimizationService]
     }
     
-    extension [Self <: OptimizationService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizationService] (val x: Self) extends AnyVal {
       
       inline def setGetOptimization(value: OptimizationRequest => MapiRequest[Any]): Self = StObject.set(x, "getOptimization", js.Any.fromFunction1(value))
     }

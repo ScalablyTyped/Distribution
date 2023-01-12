@@ -69,7 +69,8 @@ object XOptimizedStorage {
     __obj.asInstanceOf[XOptimizedStorage]
   }
   
-  extension [Self <: XOptimizedStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XOptimizedStorage] (val x: Self) extends AnyVal {
     
     inline def setAttachToURL(value: (String, Boolean) => Unit): Self = StObject.set(x, "attachToURL", js.Any.fromFunction2(value))
     

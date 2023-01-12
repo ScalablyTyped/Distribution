@@ -22,7 +22,8 @@ object Escaped {
     __obj.asInstanceOf[Escaped]
   }
   
-  extension [Self <: Escaped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Escaped] (val x: Self) extends AnyVal {
     
     inline def setEscaped(value: Boolean): Self = StObject.set(x, "escaped", value.asInstanceOf[js.Any])
     

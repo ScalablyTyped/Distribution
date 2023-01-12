@@ -28,7 +28,8 @@ object CreateVoiceConnectorRequest {
     __obj.asInstanceOf[CreateVoiceConnectorRequest]
   }
   
-  extension [Self <: CreateVoiceConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVoiceConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: VoiceConnectorAwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

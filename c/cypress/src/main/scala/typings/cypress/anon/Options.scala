@@ -29,7 +29,8 @@ object Options {
     __obj.asInstanceOf[Options]
   }
   
-  extension [Self <: Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
     inline def setBundler(value: webpack): Self = StObject.set(x, "bundler", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ArcSeriesPoint {
     __obj.asInstanceOf[ArcSeriesPoint]
   }
   
-  extension [Self <: ArcSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

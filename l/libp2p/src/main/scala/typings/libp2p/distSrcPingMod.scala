@@ -74,7 +74,8 @@ object distSrcPingMod {
       __obj.asInstanceOf[PingServiceComponents]
     }
     
-    extension [Self <: PingServiceComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingServiceComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object distSrcPingMod {
       __obj.asInstanceOf[PingServiceInit]
     }
     
-    extension [Self <: PingServiceInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PingServiceInit] (val x: Self) extends AnyVal {
       
       inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
       

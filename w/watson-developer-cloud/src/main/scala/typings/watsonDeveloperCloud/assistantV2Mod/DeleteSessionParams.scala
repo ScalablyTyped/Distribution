@@ -24,7 +24,8 @@ object DeleteSessionParams {
     __obj.asInstanceOf[DeleteSessionParams]
   }
   
-  extension [Self <: DeleteSessionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSessionParams] (val x: Self) extends AnyVal {
     
     inline def setAssistant_id(value: String): Self = StObject.set(x, "assistant_id", value.asInstanceOf[js.Any])
     

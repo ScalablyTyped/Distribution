@@ -39,7 +39,8 @@ object typesLibPlaceholderButtonMod {
       __obj.asInstanceOf[PlaceholderButtonProps]
     }
     
-    extension [Self <: PlaceholderButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaceholderButtonProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

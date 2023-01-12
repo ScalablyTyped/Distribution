@@ -36,7 +36,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[CustomMarker]
     }
     
-    extension [Self <: CustomMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMarker] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: LngLatLike): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[CustomMarkerOverlay]
     }
     
-    extension [Self <: CustomMarkerOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMarkerOverlay] (val x: Self) extends AnyVal {
       
       inline def setMarker(value: CustomMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[GeoJsonOverlay]
     }
     
-    extension [Self <: GeoJsonOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJsonOverlay] (val x: Self) extends AnyVal {
       
       inline def setGeoJson(value: GeoJSON): Self = StObject.set(x, "geoJson", value.asInstanceOf[js.Any])
     }
@@ -111,7 +114,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[LngLatBoundsLike]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[PathOverlay]
     }
     
-    extension [Self <: PathOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOverlay] (val x: Self) extends AnyVal {
       
       inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -173,7 +178,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[SimpleMarker]
     }
     
-    extension [Self <: SimpleMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleMarker] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -202,7 +208,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[SimpleMarkerOverlay]
     }
     
-    extension [Self <: SimpleMarkerOverlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleMarkerOverlay] (val x: Self) extends AnyVal {
       
       inline def setMarker(value: SimpleMarker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     }
@@ -247,7 +254,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[StaticMapRequest]
     }
     
-    extension [Self <: StaticMapRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticMapRequest] (val x: Self) extends AnyVal {
       
       inline def setAddlayer(value: AnyLayer): Self = StObject.set(x, "addlayer", value.asInstanceOf[js.Any])
       
@@ -316,7 +324,8 @@ object servicesStaticMod {
       __obj.asInstanceOf[StaticMapService]
     }
     
-    extension [Self <: StaticMapService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticMapService] (val x: Self) extends AnyVal {
       
       inline def setGetStaticImage(value: StaticMapRequest => MapiRequest[Any]): Self = StObject.set(x, "getStaticImage", js.Any.fromFunction1(value))
     }

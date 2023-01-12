@@ -44,7 +44,8 @@ object libCompletionMod {
       __obj.asInstanceOf[CompletionFormatterDeps[C, N, M, I, O]]
     }
     
-    extension [Self <: CompletionFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (CompletionFormatterDeps[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CompletionFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       inline def setNamespace(value: N): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }

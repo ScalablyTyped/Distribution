@@ -25,7 +25,8 @@ object CurrentIndex {
     __obj.asInstanceOf[CurrentIndex]
   }
   
-  extension [Self <: CurrentIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentIndex] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object StartMigrationRequest {
     __obj.asInstanceOf[StartMigrationRequest]
   }
   
-  extension [Self <: StartMigrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMigrationRequest] (val x: Self) extends AnyVal {
     
     inline def setMigrationStrategy(value: MigrationStrategy): Self = StObject.set(x, "migrationStrategy", value.asInstanceOf[js.Any])
     

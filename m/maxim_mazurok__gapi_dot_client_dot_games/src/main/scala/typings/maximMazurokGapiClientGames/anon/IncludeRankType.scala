@@ -71,7 +71,8 @@ object IncludeRankType {
     __obj.asInstanceOf[IncludeRankType]
   }
   
-  extension [Self <: IncludeRankType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeRankType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

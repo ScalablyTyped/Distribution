@@ -46,7 +46,8 @@ object SolutionsModule {
     __obj.asInstanceOf[SolutionsModule]
   }
   
-  extension [Self <: SolutionsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionsModule] (val x: Self) extends AnyVal {
     
     inline def setAddSolution(value: (Folder, OlSolutionScope) => Unit): Self = StObject.set(x, "AddSolution", js.Any.fromFunction2(value))
     

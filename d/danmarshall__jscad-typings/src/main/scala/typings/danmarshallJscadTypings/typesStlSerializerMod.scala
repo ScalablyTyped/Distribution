@@ -29,7 +29,8 @@ object typesStlSerializerMod {
       __obj.asInstanceOf[StlSerializerOptions]
     }
     
-    extension [Self <: StlSerializerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StlSerializerOptions] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

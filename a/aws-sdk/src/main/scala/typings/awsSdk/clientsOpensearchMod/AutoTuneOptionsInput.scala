@@ -23,7 +23,8 @@ object AutoTuneOptionsInput {
     __obj.asInstanceOf[AutoTuneOptionsInput]
   }
   
-  extension [Self <: AutoTuneOptionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTuneOptionsInput] (val x: Self) extends AnyVal {
     
     inline def setDesiredState(value: AutoTuneDesiredState): Self = StObject.set(x, "DesiredState", value.asInstanceOf[js.Any])
     

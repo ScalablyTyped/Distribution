@@ -74,7 +74,8 @@ object Boundary {
     __obj.asInstanceOf[Boundary]
   }
   
-  extension [Self <: Boundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Boundary] (val x: Self) extends AnyVal {
     
     inline def setBoundary(value: js.RegExp): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     

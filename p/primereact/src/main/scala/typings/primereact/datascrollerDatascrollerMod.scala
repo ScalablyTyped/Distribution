@@ -126,7 +126,8 @@ object datascrollerDatascrollerMod {
       __obj.asInstanceOf[DataScrollerLazyLoadParams]
     }
     
-    extension [Self <: DataScrollerLazyLoadParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataScrollerLazyLoadParams] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -522,7 +523,8 @@ object datascrollerDatascrollerMod {
       __obj.asInstanceOf[DataScrollerProps]
     }
     
-    extension [Self <: DataScrollerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataScrollerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

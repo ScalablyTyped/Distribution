@@ -15,7 +15,8 @@ object RemoveNonSerializable {
     __obj.asInstanceOf[RemoveNonSerializable]
   }
   
-  extension [Self <: RemoveNonSerializable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveNonSerializable] (val x: Self) extends AnyVal {
     
     inline def setRemoveNonSerializable(value: Boolean): Self = StObject.set(x, "removeNonSerializable", value.asInstanceOf[js.Any])
     

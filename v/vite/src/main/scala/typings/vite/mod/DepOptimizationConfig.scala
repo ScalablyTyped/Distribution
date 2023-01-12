@@ -67,7 +67,8 @@ object DepOptimizationConfig {
     __obj.asInstanceOf[DepOptimizationConfig]
   }
   
-  extension [Self <: DepOptimizationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepOptimizationConfig] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean | typings.vite.viteStrings.build | dev): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

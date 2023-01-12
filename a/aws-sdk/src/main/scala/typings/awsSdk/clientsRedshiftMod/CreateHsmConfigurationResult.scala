@@ -15,7 +15,8 @@ object CreateHsmConfigurationResult {
     __obj.asInstanceOf[CreateHsmConfigurationResult]
   }
   
-  extension [Self <: CreateHsmConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHsmConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setHsmConfiguration(value: HsmConfiguration): Self = StObject.set(x, "HsmConfiguration", value.asInstanceOf[js.Any])
     

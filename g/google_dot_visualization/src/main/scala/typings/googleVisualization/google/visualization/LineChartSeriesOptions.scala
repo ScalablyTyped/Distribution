@@ -37,7 +37,8 @@ object LineChartSeriesOptions {
     __obj.asInstanceOf[LineChartSeriesOptions]
   }
   
-  extension [Self <: LineChartSeriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineChartSeriesOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: ChartAnnotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

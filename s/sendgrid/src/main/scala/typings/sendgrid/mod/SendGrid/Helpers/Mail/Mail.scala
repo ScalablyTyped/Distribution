@@ -119,7 +119,8 @@ object Mail {
     __obj.asInstanceOf[typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail]
   }
   
-  extension [Self <: typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.sendgrid.mod.SendGrid.Helpers.Mail.Mail] (val x: Self) extends AnyVal {
     
     inline def setAddAttachment(value: Attachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
     

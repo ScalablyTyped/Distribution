@@ -17,7 +17,8 @@ object AdWordsReportRowIterator {
     __obj.asInstanceOf[AdWordsReportRowIterator]
   }
   
-  extension [Self <: AdWordsReportRowIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsReportRowIterator] (val x: Self) extends AnyVal {
     
     inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
     

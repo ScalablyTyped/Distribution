@@ -20,7 +20,8 @@ object ContactChangedEventArgs {
     __obj.asInstanceOf[ContactChangedEventArgs]
   }
   
-  extension [Self <: ContactChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => ContactChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }

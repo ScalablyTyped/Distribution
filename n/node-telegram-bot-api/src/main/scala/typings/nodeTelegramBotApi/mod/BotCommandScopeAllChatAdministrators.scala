@@ -19,7 +19,8 @@ object BotCommandScopeAllChatAdministrators {
     __obj.asInstanceOf[BotCommandScopeAllChatAdministrators]
   }
   
-  extension [Self <: BotCommandScopeAllChatAdministrators](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotCommandScopeAllChatAdministrators] (val x: Self) extends AnyVal {
     
     inline def setType(value: all_chat_administrators): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

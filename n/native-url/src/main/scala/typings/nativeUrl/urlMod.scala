@@ -140,7 +140,8 @@ object urlMod {
       __obj.asInstanceOf[URLFormatOptions]
     }
     
-    extension [Self <: URLFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URLFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Boolean): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object urlMod {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object urlMod {
       __obj.asInstanceOf[UrlObject]
     }
     
-    extension [Self <: UrlObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlObject] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -385,7 +388,8 @@ object urlMod {
       __obj.asInstanceOf[UrlWithStringQuery]
     }
     
-    extension [Self <: UrlWithStringQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlWithStringQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       

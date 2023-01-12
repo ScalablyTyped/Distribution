@@ -23,7 +23,8 @@ object ObjectWithIdPagingOptionsId {
     __obj.asInstanceOf[ObjectWithIdPagingOptionsId]
   }
   
-  extension [Self <: ObjectWithIdPagingOptionsId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectWithIdPagingOptionsId] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

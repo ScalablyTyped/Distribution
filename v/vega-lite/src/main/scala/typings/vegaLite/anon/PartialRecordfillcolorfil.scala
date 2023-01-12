@@ -37,7 +37,8 @@ object PartialRecordfillcolorfil {
     __obj.asInstanceOf[PartialRecordfillcolorfil]
   }
   
-  extension [Self <: PartialRecordfillcolorfil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordfillcolorfil] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: LegendComponent): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

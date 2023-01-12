@@ -16,7 +16,8 @@ object OrFiltersForSegment {
     __obj.asInstanceOf[OrFiltersForSegment]
   }
   
-  extension [Self <: OrFiltersForSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrFiltersForSegment] (val x: Self) extends AnyVal {
     
     inline def setSegmentFilterClauses(value: js.Array[SegmentFilterClause]): Self = StObject.set(x, "segmentFilterClauses", value.asInstanceOf[js.Any])
     

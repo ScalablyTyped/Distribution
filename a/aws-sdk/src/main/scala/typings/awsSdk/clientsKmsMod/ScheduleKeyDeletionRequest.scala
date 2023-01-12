@@ -23,7 +23,8 @@ object ScheduleKeyDeletionRequest {
     __obj.asInstanceOf[ScheduleKeyDeletionRequest]
   }
   
-  extension [Self <: ScheduleKeyDeletionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleKeyDeletionRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     

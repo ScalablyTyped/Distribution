@@ -40,7 +40,8 @@ object middlewaresErrorHttpResponseMiddlewareMod {
       __obj.asInstanceOf[ErrorHttpMiddleware]
     }
     
-    extension [Self <: ErrorHttpMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorHttpMiddleware] (val x: Self) extends AnyVal {
       
       inline def setOnError(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.MiddlewareFunction<HttpGatewayEvent, any> */ Any
@@ -63,7 +64,8 @@ object middlewaresErrorHttpResponseMiddlewareMod {
       __obj.asInstanceOf[ErrorHttpMiddlewareOptions]
     }
     
-    extension [Self <: ErrorHttpMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorHttpMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

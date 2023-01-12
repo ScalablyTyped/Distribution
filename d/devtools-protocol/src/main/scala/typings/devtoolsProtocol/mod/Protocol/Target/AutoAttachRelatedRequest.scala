@@ -26,7 +26,8 @@ object AutoAttachRelatedRequest {
     __obj.asInstanceOf[AutoAttachRelatedRequest]
   }
   
-  extension [Self <: AutoAttachRelatedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoAttachRelatedRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: TargetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

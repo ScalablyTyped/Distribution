@@ -55,7 +55,8 @@ object AllJoynCredentialsVerificationRequestedEventArgs {
     __obj.asInstanceOf[AllJoynCredentialsVerificationRequestedEventArgs]
   }
   
-  extension [Self <: AllJoynCredentialsVerificationRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynCredentialsVerificationRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
     

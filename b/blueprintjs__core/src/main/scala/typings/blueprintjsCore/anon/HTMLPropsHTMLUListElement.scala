@@ -842,7 +842,8 @@ object HTMLPropsHTMLUListElement {
     __obj.asInstanceOf[HTMLPropsHTMLUListElement]
   }
   
-  extension [Self <: HTMLPropsHTMLUListElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLPropsHTMLUListElement] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

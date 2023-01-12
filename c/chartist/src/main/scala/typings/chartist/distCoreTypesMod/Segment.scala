@@ -17,7 +17,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setPathCoordinates(value: js.Array[Double]): Self = StObject.set(x, "pathCoordinates", value.asInstanceOf[js.Any])
     

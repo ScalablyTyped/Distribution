@@ -17,7 +17,8 @@ object OESStandardDerivatives {
     __obj.asInstanceOf[OESStandardDerivatives]
   }
   
-  extension [Self <: OESStandardDerivatives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OESStandardDerivatives] (val x: Self) extends AnyVal {
     
     inline def setFRAGMENT_SHADER_DERIVATIVE_HINT_OES(value: GLenum): Self = StObject.set(x, "FRAGMENT_SHADER_DERIVATIVE_HINT_OES", value.asInstanceOf[js.Any])
   }

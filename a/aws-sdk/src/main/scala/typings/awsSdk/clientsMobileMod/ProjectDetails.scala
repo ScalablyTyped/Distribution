@@ -38,7 +38,8 @@ object ProjectDetails {
     __obj.asInstanceOf[ProjectDetails]
   }
   
-  extension [Self <: ProjectDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectDetails] (val x: Self) extends AnyVal {
     
     inline def setConsoleUrl(value: ConsoleUrl): Self = StObject.set(x, "consoleUrl", value.asInstanceOf[js.Any])
     

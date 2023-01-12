@@ -19,7 +19,8 @@ object IUserCategory {
     __obj.asInstanceOf[IUserCategory]
   }
   
-  extension [Self <: IUserCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserCategory] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: OWNER): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
     

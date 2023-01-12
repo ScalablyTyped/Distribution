@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[DropdownContextValue]
     }
     
-    extension [Self <: DropdownContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownContextValue] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     }
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[DropdownDescendant]
     }
     
-    extension [Self <: DropdownDescendant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownDescendant] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[DropdownItemProps]
     }
     
-    extension [Self <: DropdownItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object mod {
       __obj.asInstanceOf[DropdownItemsProps]
     }
     
-    extension [Self <: DropdownItemsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownItemsProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -265,7 +269,8 @@ object mod {
       __obj.asInstanceOf[DropdownPopoverProps]
     }
     
-    extension [Self <: DropdownPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -294,7 +299,8 @@ object mod {
       __obj.asInstanceOf[DropdownProviderProps]
     }
     
-    extension [Self <: DropdownProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* props */ DropdownContextValueisOpe, ReactNode])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -327,7 +333,8 @@ object mod {
       __obj.asInstanceOf[DropdownState]
     }
     
-    extension [Self <: DropdownState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownState] (val x: Self) extends AnyVal {
       
       inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
@@ -352,7 +359,8 @@ object mod {
       __obj.asInstanceOf[DropdownTriggerProps]
     }
     
-    extension [Self <: DropdownTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -399,7 +407,8 @@ object mod {
       __obj.asInstanceOf[InternalDropdownContextValue]
     }
     
-    extension [Self <: InternalDropdownContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalDropdownContextValue] (val x: Self) extends AnyVal {
       
       inline def setDispatch(value: DropdownAction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       

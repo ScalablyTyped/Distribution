@@ -15,7 +15,8 @@ object GeoFenceMaxNumber {
     __obj.asInstanceOf[GeoFenceMaxNumber]
   }
   
-  extension [Self <: GeoFenceMaxNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoFenceMaxNumber] (val x: Self) extends AnyVal {
     
     inline def setGeoFenceMaxNumber(value: Double): Self = StObject.set(x, "geoFenceMaxNumber", value.asInstanceOf[js.Any])
   }

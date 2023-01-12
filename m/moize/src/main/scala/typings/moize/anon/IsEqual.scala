@@ -24,7 +24,8 @@ object IsEqual {
     __obj.asInstanceOf[IsEqual[CombinedOptions]]
   }
   
-  extension [Self <: IsEqual[?], CombinedOptions /* <: Options */](x: Self & IsEqual[CombinedOptions]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEqual[?], CombinedOptions /* <: Options */] (val x: Self & IsEqual[CombinedOptions]) extends AnyVal {
     
     inline def setIsEqual(
       value: /* import warning: importer.ImportType#apply Failed type conversion: CombinedOptions['matchesArg'] */ js.Any

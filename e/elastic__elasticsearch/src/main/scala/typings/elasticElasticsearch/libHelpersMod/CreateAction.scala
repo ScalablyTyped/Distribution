@@ -18,7 +18,8 @@ object CreateAction {
     __obj.asInstanceOf[CreateAction]
   }
   
-  extension [Self <: CreateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAction] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: BulkCreateOperation): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
   }

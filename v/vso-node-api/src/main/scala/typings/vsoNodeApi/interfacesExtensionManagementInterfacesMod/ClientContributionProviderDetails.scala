@@ -34,7 +34,8 @@ object ClientContributionProviderDetails {
     __obj.asInstanceOf[ClientContributionProviderDetails]
   }
   
-  extension [Self <: ClientContributionProviderDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientContributionProviderDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

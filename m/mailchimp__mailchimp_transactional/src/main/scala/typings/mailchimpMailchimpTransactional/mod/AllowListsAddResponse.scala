@@ -19,7 +19,8 @@ object AllowListsAddResponse {
     __obj.asInstanceOf[AllowListsAddResponse]
   }
   
-  extension [Self <: AllowListsAddResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowListsAddResponse] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

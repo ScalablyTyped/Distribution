@@ -19,7 +19,8 @@ object XpackUsageMlInferenceIngestProcessorCount {
     __obj.asInstanceOf[XpackUsageMlInferenceIngestProcessorCount]
   }
   
-  extension [Self <: XpackUsageMlInferenceIngestProcessorCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageMlInferenceIngestProcessorCount] (val x: Self) extends AnyVal {
     
     inline def setMax(value: long): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object Attributes {
     __obj.asInstanceOf[Attributes]
   }
   
-  extension [Self <: Attributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
     
     inline def setAdditionalImageLink(value: js.Array[Image]): Self = StObject.set(x, "additionalImageLink", value.asInstanceOf[js.Any])
     

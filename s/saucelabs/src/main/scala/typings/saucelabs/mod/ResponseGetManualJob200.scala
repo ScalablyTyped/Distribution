@@ -40,7 +40,8 @@ object ResponseGetManualJob200 {
     __obj.asInstanceOf[ResponseGetManualJob200]
   }
   
-  extension [Self <: ResponseGetManualJob200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseGetManualJob200] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

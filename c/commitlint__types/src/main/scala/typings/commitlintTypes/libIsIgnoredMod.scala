@@ -19,7 +19,8 @@ object libIsIgnoredMod {
       __obj.asInstanceOf[IsIgnoredOptions]
     }
     
-    extension [Self <: IsIgnoredOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsIgnoredOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: Boolean): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       

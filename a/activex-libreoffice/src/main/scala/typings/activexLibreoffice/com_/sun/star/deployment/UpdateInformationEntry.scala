@@ -24,7 +24,8 @@ object UpdateInformationEntry {
     __obj.asInstanceOf[UpdateInformationEntry]
   }
   
-  extension [Self <: UpdateInformationEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInformationEntry] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setAsNodes(value: `false`): Self = StObject.set(x, "asNodes", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AsNodes]
     }
     
-    extension [Self <: AsNodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsNodes] (val x: Self) extends AnyVal {
       
       inline def setAsNodes(value: `true`): Self = StObject.set(x, "asNodes", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: AstNodeLocation): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String | Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object WebGLCapabilitiesParameters {
     __obj.asInstanceOf[WebGLCapabilitiesParameters]
   }
   
-  extension [Self <: WebGLCapabilitiesParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLCapabilitiesParameters] (val x: Self) extends AnyVal {
     
     inline def setLogarithmicDepthBuffer(value: Any): Self = StObject.set(x, "logarithmicDepthBuffer", value.asInstanceOf[js.Any])
     

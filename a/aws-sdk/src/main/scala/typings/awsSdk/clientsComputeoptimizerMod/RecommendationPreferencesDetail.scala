@@ -33,7 +33,8 @@ object RecommendationPreferencesDetail {
     __obj.asInstanceOf[RecommendationPreferencesDetail]
   }
   
-  extension [Self <: RecommendationPreferencesDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationPreferencesDetail] (val x: Self) extends AnyVal {
     
     inline def setEnhancedInfrastructureMetrics(value: EnhancedInfrastructureMetrics): Self = StObject.set(x, "enhancedInfrastructureMetrics", value.asInstanceOf[js.Any])
     

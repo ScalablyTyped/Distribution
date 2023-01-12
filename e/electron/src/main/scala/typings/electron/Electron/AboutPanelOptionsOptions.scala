@@ -64,7 +64,8 @@ object AboutPanelOptionsOptions {
     __obj.asInstanceOf[AboutPanelOptionsOptions]
   }
   
-  extension [Self <: AboutPanelOptionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboutPanelOptionsOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

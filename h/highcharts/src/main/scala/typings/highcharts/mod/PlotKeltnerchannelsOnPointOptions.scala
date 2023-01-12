@@ -33,7 +33,8 @@ object PlotKeltnerchannelsOnPointOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsOnPointOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotKeltnerchannelsOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

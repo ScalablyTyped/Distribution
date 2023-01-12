@@ -284,7 +284,8 @@ object SeriesPackedBubbleDataLabelsOptionsObject {
     __obj.asInstanceOf[SeriesPackedBubbleDataLabelsOptionsObject]
   }
   
-  extension [Self <: SeriesPackedBubbleDataLabelsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPackedBubbleDataLabelsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

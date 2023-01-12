@@ -23,7 +23,8 @@ object BootstrapClientMenuItemEventArgs {
     __obj.asInstanceOf[BootstrapClientMenuItemEventArgs]
   }
   
-  extension [Self <: BootstrapClientMenuItemEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientMenuItemEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: BootstrapClientMenuItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

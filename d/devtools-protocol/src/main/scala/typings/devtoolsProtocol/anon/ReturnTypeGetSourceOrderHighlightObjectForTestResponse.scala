@@ -22,7 +22,8 @@ object ReturnTypeGetSourceOrderHighlightObjectForTestResponse {
     __obj.asInstanceOf[ReturnTypeGetSourceOrderHighlightObjectForTestResponse]
   }
   
-  extension [Self <: ReturnTypeGetSourceOrderHighlightObjectForTestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetSourceOrderHighlightObjectForTestResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetSourceOrderHighlightObjectForTestRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

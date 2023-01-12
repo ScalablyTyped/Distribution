@@ -17,7 +17,8 @@ object OnSelectedRowsChangedEventArgs {
     __obj.asInstanceOf[OnSelectedRowsChangedEventArgs[T]]
   }
   
-  extension [Self <: OnSelectedRowsChangedEventArgs[?], T /* <: SlickData */](x: Self & OnSelectedRowsChangedEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSelectedRowsChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnSelectedRowsChangedEventArgs[T]) extends AnyVal {
     
     inline def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object BindGroup {
     __obj.asInstanceOf[BindGroup]
   }
   
-  extension [Self <: BindGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindGroup] (val x: Self) extends AnyVal {
     
     inline def setDefaultUniformBuffer(value: UniformBuffer): Self = StObject.set(x, "defaultUniformBuffer", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object utilUnitMod {
       __obj.asInstanceOf[AngleValue]
     }
     
-    extension [Self <: AngleValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngleValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: angleUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -118,7 +119,8 @@ object utilUnitMod {
       __obj.asInstanceOf[CentimeterValue]
     }
     
-    extension [Self <: CentimeterValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CentimeterValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: centimetersUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -138,7 +140,8 @@ object utilUnitMod {
       __obj.asInstanceOf[DensityValue]
     }
     
-    extension [Self <: DensityValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DensityValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: densityUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -158,7 +161,8 @@ object utilUnitMod {
       __obj.asInstanceOf[DistanceValue]
     }
     
-    extension [Self <: DistanceValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistanceValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: distanceUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -178,7 +182,8 @@ object utilUnitMod {
       __obj.asInstanceOf[InchValue]
     }
     
-    extension [Self <: InchValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InchValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: inchesUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -198,7 +203,8 @@ object utilUnitMod {
       __obj.asInstanceOf[MillimeterValue]
     }
     
-    extension [Self <: MillimeterValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MillimeterValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: millimetersUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -218,7 +224,8 @@ object utilUnitMod {
       __obj.asInstanceOf[PercentValue]
     }
     
-    extension [Self <: PercentValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PercentValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: percentUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -238,7 +245,8 @@ object utilUnitMod {
       __obj.asInstanceOf[PicaValue]
     }
     
-    extension [Self <: PicaValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PicaValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: picasUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -258,7 +266,8 @@ object utilUnitMod {
       __obj.asInstanceOf[PixelValue]
     }
     
-    extension [Self <: PixelValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PixelValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: pixelsUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -278,7 +287,8 @@ object utilUnitMod {
       __obj.asInstanceOf[PointValue]
     }
     
-    extension [Self <: PointValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: pointsUnit): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
     }
@@ -333,7 +343,8 @@ object utilUnitMod {
       __obj.asInstanceOf[UnitValue]
     }
     
-    extension [Self <: UnitValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitValue] (val x: Self) extends AnyVal {
       
       inline def set_unit(value: UnitTypeEnum): Self = StObject.set(x, "_unit", value.asInstanceOf[js.Any])
       

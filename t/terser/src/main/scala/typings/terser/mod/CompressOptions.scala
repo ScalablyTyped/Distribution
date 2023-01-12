@@ -122,7 +122,8 @@ object CompressOptions {
     __obj.asInstanceOf[CompressOptions]
   }
   
-  extension [Self <: CompressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Boolean): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

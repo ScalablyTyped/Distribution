@@ -33,7 +33,8 @@ object TruckDimensions {
     __obj.asInstanceOf[TruckDimensions]
   }
   
-  extension [Self <: TruckDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruckDimensions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: TruckDimensionsHeightDouble): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

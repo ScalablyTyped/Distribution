@@ -34,7 +34,8 @@ object libSrcMockFxTargetsArmReducersDeploymentReducerMod {
       __obj.asInstanceOf[Deployment]
     }
     
-    extension [Self <: Deployment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
       
       inline def setSuccessCommands(value: SuccessCommands): Self = StObject.set(x, "successCommands", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object libSrcMockFxTargetsArmReducersDeploymentReducerMod {
       __obj.asInstanceOf[SuccessCommands]
     }
     
-    extension [Self <: SuccessCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessCommands] (val x: Self) extends AnyVal {
       
       inline def setSuccessfulAttempt(value: Request): Self = StObject.set(x, "successfulAttempt", value.asInstanceOf[js.Any])
       

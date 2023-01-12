@@ -21,7 +21,8 @@ object SetBlackboxedRangesParameterType {
     __obj.asInstanceOf[SetBlackboxedRangesParameterType]
   }
   
-  extension [Self <: SetBlackboxedRangesParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBlackboxedRangesParameterType] (val x: Self) extends AnyVal {
     
     inline def setPositions(value: js.Array[ScriptPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     

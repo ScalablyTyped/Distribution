@@ -23,7 +23,8 @@ object LabelingJobDataSource {
     __obj.asInstanceOf[LabelingJobDataSource]
   }
   
-  extension [Self <: LabelingJobDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobDataSource] (val x: Self) extends AnyVal {
     
     inline def setS3DataSource(value: LabelingJobS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
     

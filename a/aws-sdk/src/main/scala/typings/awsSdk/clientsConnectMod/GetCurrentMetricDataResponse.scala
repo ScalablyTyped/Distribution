@@ -28,7 +28,8 @@ object GetCurrentMetricDataResponse {
     __obj.asInstanceOf[GetCurrentMetricDataResponse]
   }
   
-  extension [Self <: GetCurrentMetricDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCurrentMetricDataResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSnapshotTime(value: js.Date): Self = StObject.set(x, "DataSnapshotTime", value.asInstanceOf[js.Any])
     

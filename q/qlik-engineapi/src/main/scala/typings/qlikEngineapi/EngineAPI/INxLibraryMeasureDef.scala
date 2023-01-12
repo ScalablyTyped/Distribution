@@ -43,7 +43,8 @@ object INxLibraryMeasureDef {
     __obj.asInstanceOf[INxLibraryMeasureDef]
   }
   
-  extension [Self <: INxLibraryMeasureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxLibraryMeasureDef] (val x: Self) extends AnyVal {
     
     inline def setQActiveExpression(value: Double): Self = StObject.set(x, "qActiveExpression", value.asInstanceOf[js.Any])
     

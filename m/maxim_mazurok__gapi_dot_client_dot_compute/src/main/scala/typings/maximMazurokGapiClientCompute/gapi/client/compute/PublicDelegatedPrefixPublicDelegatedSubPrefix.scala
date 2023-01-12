@@ -34,7 +34,8 @@ object PublicDelegatedPrefixPublicDelegatedSubPrefix {
     __obj.asInstanceOf[PublicDelegatedPrefixPublicDelegatedSubPrefix]
   }
   
-  extension [Self <: PublicDelegatedPrefixPublicDelegatedSubPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicDelegatedPrefixPublicDelegatedSubPrefix] (val x: Self) extends AnyVal {
     
     inline def setDelegateeProject(value: String): Self = StObject.set(x, "delegateeProject", value.asInstanceOf[js.Any])
     

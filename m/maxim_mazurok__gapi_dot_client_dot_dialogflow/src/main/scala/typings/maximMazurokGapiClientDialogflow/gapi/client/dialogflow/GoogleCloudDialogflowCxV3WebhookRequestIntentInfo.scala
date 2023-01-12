@@ -30,7 +30,8 @@ object GoogleCloudDialogflowCxV3WebhookRequestIntentInfo {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookRequestIntentInfo]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3WebhookRequestIntentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookRequestIntentInfo] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

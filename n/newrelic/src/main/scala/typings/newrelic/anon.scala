@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CollectPendingData]
     }
     
-    extension [Self <: CollectPendingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectPendingData] (val x: Self) extends AnyVal {
       
       inline def setCollectPendingData(value: Boolean): Self = StObject.set(x, "collectPendingData", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[HasToRemoveScriptWrapper]
     }
     
-    extension [Self <: HasToRemoveScriptWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasToRemoveScriptWrapper] (val x: Self) extends AnyVal {
       
       inline def setHasToRemoveScriptWrapper(value: Boolean): Self = StObject.set(x, "hasToRemoveScriptWrapper", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[ModuleName]
     }
     
-    extension [Self <: ModuleName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleName] (val x: Self) extends AnyVal {
       
       inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
       

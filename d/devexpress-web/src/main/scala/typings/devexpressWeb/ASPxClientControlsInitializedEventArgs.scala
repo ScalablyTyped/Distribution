@@ -23,7 +23,8 @@ object ASPxClientControlsInitializedEventArgs {
     __obj.asInstanceOf[ASPxClientControlsInitializedEventArgs]
   }
   
-  extension [Self <: ASPxClientControlsInitializedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientControlsInitializedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsCallback(value: Boolean): Self = StObject.set(x, "isCallback", value.asInstanceOf[js.Any])
   }

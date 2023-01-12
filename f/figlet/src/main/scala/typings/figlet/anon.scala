@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialDefaults]
     }
     
-    extension [Self <: PartialDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDefaults] (val x: Self) extends AnyVal {
       
       inline def setFont(value: Fonts_): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       

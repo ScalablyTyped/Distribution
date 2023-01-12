@@ -23,7 +23,8 @@ object UpdateConnectivityInfoResponse {
     __obj.asInstanceOf[UpdateConnectivityInfoResponse]
   }
   
-  extension [Self <: UpdateConnectivityInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectivityInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

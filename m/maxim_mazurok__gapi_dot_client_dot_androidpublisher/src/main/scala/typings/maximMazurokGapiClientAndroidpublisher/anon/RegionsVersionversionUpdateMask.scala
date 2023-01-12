@@ -63,7 +63,8 @@ object RegionsVersionversionUpdateMask {
     __obj.asInstanceOf[RegionsVersionversionUpdateMask]
   }
   
-  extension [Self <: RegionsVersionversionUpdateMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionsVersionversionUpdateMask] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

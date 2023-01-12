@@ -53,7 +53,8 @@ object CardLayoutSectionStandardProperties {
     __obj.asInstanceOf[CardLayoutSectionStandardProperties]
   }
   
-  extension [Self <: CardLayoutSectionStandardProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardLayoutSectionStandardProperties] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

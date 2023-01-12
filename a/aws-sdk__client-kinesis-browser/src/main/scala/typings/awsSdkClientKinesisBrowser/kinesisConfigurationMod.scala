@@ -149,7 +149,8 @@ object kinesisConfigurationMod {
       __obj.asInstanceOf[KinesisConfiguration]
     }
     
-    extension [Self <: KinesisConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -296,7 +297,8 @@ object kinesisConfigurationMod {
       __obj.asInstanceOf[KinesisResolvableConfiguration]
     }
     
-    extension [Self <: KinesisResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -428,7 +430,8 @@ object kinesisConfigurationMod {
       __obj.asInstanceOf[KinesisResolvedConfiguration]
     }
     
-    extension [Self <: KinesisResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinesisResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

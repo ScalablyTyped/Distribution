@@ -15,7 +15,8 @@ object IndicesMappingLimitSettingsNestedObjects {
     __obj.asInstanceOf[IndicesMappingLimitSettingsNestedObjects]
   }
   
-  extension [Self <: IndicesMappingLimitSettingsNestedObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesMappingLimitSettingsNestedObjects] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: integer): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object triggerMskMod {
       __obj.asInstanceOf[MSKEvent]
     }
     
-    extension [Self <: MSKEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSKEvent] (val x: Self) extends AnyVal {
       
       inline def setEventSource(value: awsColonkafka): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object triggerMskMod {
       __obj.asInstanceOf[MSKRecord]
     }
     
-    extension [Self <: MSKRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSKRecord] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Array[MSKRecordHeader]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

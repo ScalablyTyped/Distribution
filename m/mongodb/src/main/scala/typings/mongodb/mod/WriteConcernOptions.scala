@@ -16,7 +16,8 @@ object WriteConcernOptions {
     __obj.asInstanceOf[WriteConcernOptions]
   }
   
-  extension [Self <: WriteConcernOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteConcernOptions] (val x: Self) extends AnyVal {
     
     inline def setWriteConcern(value: WriteConcern | WriteConcernSettings): Self = StObject.set(x, "writeConcern", value.asInstanceOf[js.Any])
     

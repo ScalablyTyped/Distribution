@@ -16,7 +16,8 @@ object RelatedResources {
     __obj.asInstanceOf[RelatedResources]
   }
   
-  extension [Self <: RelatedResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedResources] (val x: Self) extends AnyVal {
     
     inline def setRelatedResources(value: js.Array[RelatedResource]): Self = StObject.set(x, "relatedResources", value.asInstanceOf[js.Any])
     

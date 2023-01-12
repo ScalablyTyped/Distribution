@@ -68,7 +68,8 @@ object BufferParametersProperties {
     __obj.asInstanceOf[BufferParametersProperties]
   }
   
-  extension [Self <: BufferParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setBufferSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "bufferSpatialReference", value.asInstanceOf[js.Any])
     

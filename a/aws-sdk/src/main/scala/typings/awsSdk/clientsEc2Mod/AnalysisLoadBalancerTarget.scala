@@ -33,7 +33,8 @@ object AnalysisLoadBalancerTarget {
     __obj.asInstanceOf[AnalysisLoadBalancerTarget]
   }
   
-  extension [Self <: AnalysisLoadBalancerTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLoadBalancerTarget] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: IpAddress): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

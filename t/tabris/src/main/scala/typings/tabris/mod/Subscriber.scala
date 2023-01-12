@@ -17,7 +17,8 @@ object Subscriber {
     __obj.asInstanceOf[Subscriber[T]]
   }
   
-  extension [Self <: Subscriber[?], T](x: Self & Subscriber[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscriber[?], T] (val x: Self & Subscriber[T]) extends AnyVal {
     
     inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
   }

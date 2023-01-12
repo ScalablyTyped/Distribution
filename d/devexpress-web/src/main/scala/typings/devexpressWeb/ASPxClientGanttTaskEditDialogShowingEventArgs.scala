@@ -44,7 +44,8 @@ object ASPxClientGanttTaskEditDialogShowingEventArgs {
     __obj.asInstanceOf[ASPxClientGanttTaskEditDialogShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttTaskEditDialogShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttTaskEditDialogShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHiddenFields(value: js.Array[String]): Self = StObject.set(x, "hiddenFields", value.asInstanceOf[js.Any])
     

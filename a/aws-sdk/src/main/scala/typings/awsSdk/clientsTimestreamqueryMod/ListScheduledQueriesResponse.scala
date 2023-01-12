@@ -23,7 +23,8 @@ object ListScheduledQueriesResponse {
     __obj.asInstanceOf[ListScheduledQueriesResponse]
   }
   
-  extension [Self <: ListScheduledQueriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListScheduledQueriesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextScheduledQueriesResultsToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

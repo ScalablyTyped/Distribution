@@ -23,7 +23,8 @@ object RegisterInstanceEventNotificationAttributesRequest {
     __obj.asInstanceOf[RegisterInstanceEventNotificationAttributesRequest]
   }
   
-  extension [Self <: RegisterInstanceEventNotificationAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterInstanceEventNotificationAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

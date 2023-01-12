@@ -22,7 +22,8 @@ object typesStatsEventMod {
       __obj.asInstanceOf[StatsEvent]
     }
     
-    extension [Self <: StatsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: Stats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesStatsEventMod {
       __obj.asInstanceOf[UnmarshalledStatsEvent]
     }
     
-    extension [Self <: UnmarshalledStatsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledStatsEvent] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: UnmarshalledStats): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
       

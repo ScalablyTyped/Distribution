@@ -45,7 +45,8 @@ object LayoutSizeMixins {
     __obj.asInstanceOf[LayoutSizeMixins]
   }
   
-  extension [Self <: LayoutSizeMixins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutSizeMixins] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | container | Step): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

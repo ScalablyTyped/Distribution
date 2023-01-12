@@ -16,7 +16,8 @@ object GoalSetData {
     __obj.asInstanceOf[GoalSetData]
   }
   
-  extension [Self <: GoalSetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoalSetData] (val x: Self) extends AnyVal {
     
     inline def setGoals(value: js.Array[GoalData]): Self = StObject.set(x, "goals", value.asInstanceOf[js.Any])
     

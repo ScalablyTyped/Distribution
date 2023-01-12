@@ -24,7 +24,8 @@ object ReportWorkItemStatusResponse {
     __obj.asInstanceOf[ReportWorkItemStatusResponse]
   }
   
-  extension [Self <: ReportWorkItemStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportWorkItemStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

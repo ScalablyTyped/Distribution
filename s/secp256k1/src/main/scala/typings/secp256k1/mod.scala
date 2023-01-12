@@ -288,7 +288,8 @@ object mod {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -326,7 +327,8 @@ object mod {
       __obj.asInstanceOf[ecdhOptions]
     }
     
-    extension [Self <: ecdhOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ecdhOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

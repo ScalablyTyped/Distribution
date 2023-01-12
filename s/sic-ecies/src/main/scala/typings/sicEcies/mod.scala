@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Blockcipher]
     }
     
-    extension [Self <: Blockcipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blockcipher] (val x: Self) extends AnyVal {
       
       inline def setDecrypt(value: (Buffer, Buffer) => Buffer): Self = StObject.set(x, "decrypt", js.Any.fromFunction2(value))
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[ECIESOptions]
     }
     
-    extension [Self <: ECIESOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECIESOptions] (val x: Self) extends AnyVal {
       
       inline def setNoKey(value: Boolean): Self = StObject.set(x, "noKey", value.asInstanceOf[js.Any])
       

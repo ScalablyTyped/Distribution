@@ -38,7 +38,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[BindingsResultSupport]
     }
     
-    extension [Self <: BindingsResultSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BindingsResultSupport] (val x: Self) extends AnyVal {
       
       inline def setBindings(value: `true`): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[BooleanResultSupport]
     }
     
-    extension [Self <: BooleanResultSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BooleanResultSupport] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: `true`): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     }
@@ -72,7 +74,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[QuadsResultSupport]
     }
     
-    extension [Self <: QuadsResultSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuadsResultSupport] (val x: Self) extends AnyVal {
       
       inline def setQuads(value: `true`): Self = StObject.set(x, "quads", value.asInstanceOf[js.Any])
     }
@@ -99,7 +102,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[QueryContext]
     }
     
-    extension [Self <: QueryContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryContext] (val x: Self) extends AnyVal {
       
       inline def setQueryTimestamp(value: js.Date): Self = StObject.set(x, "queryTimestamp", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[QueryFormat]
     }
     
-    extension [Self <: QueryFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryFormat] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[QuerySourceContext[SourceType]]
     }
     
-    extension [Self <: QuerySourceContext[?], SourceType](x: Self & QuerySourceContext[SourceType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerySourceContext[?], SourceType] (val x: Self & QuerySourceContext[SourceType]) extends AnyVal {
       
       inline def setSources(value: Array[SourceType]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     }
@@ -188,7 +194,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[QueryStringContext]
     }
     
-    extension [Self <: QueryStringContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryStringContext] (val x: Self) extends AnyVal {
       
       inline def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
       
@@ -243,7 +250,8 @@ object queryQueryableMod {
       __obj.asInstanceOf[VoidResultSupport]
     }
     
-    extension [Self <: VoidResultSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoidResultSupport] (val x: Self) extends AnyVal {
       
       inline def setVoid(value: `true`): Self = StObject.set(x, "void", value.asInstanceOf[js.Any])
     }

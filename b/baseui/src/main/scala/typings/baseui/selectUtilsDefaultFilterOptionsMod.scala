@@ -54,7 +54,8 @@ object selectUtilsDefaultFilterOptionsMod {
       __obj.asInstanceOf[defaultProps]
     }
     
-    extension [Self <: defaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: defaultProps] (val x: Self) extends AnyVal {
       
       inline def setFilterOption(value: (/* option */ Option, /* filterValue */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       

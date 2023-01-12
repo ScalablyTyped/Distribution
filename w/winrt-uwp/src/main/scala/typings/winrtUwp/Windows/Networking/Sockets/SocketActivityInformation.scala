@@ -43,7 +43,8 @@ object SocketActivityInformation {
     __obj.asInstanceOf[SocketActivityInformation]
   }
   
-  extension [Self <: SocketActivityInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketActivityInformation] (val x: Self) extends AnyVal {
     
     inline def setContext(value: SocketActivityContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

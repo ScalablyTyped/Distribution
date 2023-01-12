@@ -21,7 +21,8 @@ object AppsDynamiteSharedMessageIntegrationPayload {
     __obj.asInstanceOf[AppsDynamiteSharedMessageIntegrationPayload]
   }
   
-  extension [Self <: AppsDynamiteSharedMessageIntegrationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedMessageIntegrationPayload] (val x: Self) extends AnyVal {
     
     inline def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     

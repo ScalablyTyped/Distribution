@@ -29,7 +29,8 @@ object Type {
     __obj.asInstanceOf[Type]
   }
   
-  extension [Self <: Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     inline def setDependencyId(value: Double): Self = StObject.set(x, "dependencyId", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libTypescriptElementsUseMod {
       __obj.asInstanceOf[UseProps]
     }
     
-    extension [Self <: UseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

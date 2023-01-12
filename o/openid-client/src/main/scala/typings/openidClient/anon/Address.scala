@@ -51,7 +51,8 @@ object Address {
     __obj.asInstanceOf[Address[ExtendedAddress]]
   }
   
-  extension [Self <: Address[?], ExtendedAddress /* <: js.Object */](x: Self & Address[ExtendedAddress]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Address[?], ExtendedAddress /* <: js.Object */] (val x: Self & Address[ExtendedAddress]) extends AnyVal {
     
     inline def setAddress(value: typings.openidClient.mod.Address[ExtendedAddress]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

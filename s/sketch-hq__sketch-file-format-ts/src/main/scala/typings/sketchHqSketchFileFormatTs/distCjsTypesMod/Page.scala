@@ -108,7 +108,8 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

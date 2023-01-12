@@ -21,7 +21,8 @@ object JPYSOS {
     __obj.asInstanceOf[JPYSOS]
   }
   
-  extension [Self <: JPYSOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYSOS] (val x: Self) extends AnyVal {
     
     inline def setBBD(value: js.Array[String]): Self = StObject.set(x, "BBD", value.asInstanceOf[js.Any])
     

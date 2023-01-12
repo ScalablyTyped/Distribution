@@ -21,7 +21,8 @@ object SharedExcludedPlacement {
     __obj.asInstanceOf[SharedExcludedPlacement]
   }
   
-  extension [Self <: SharedExcludedPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedExcludedPlacement] (val x: Self) extends AnyVal {
     
     inline def setGetExcludedPlacementList(value: () => ExcludedPlacementList): Self = StObject.set(x, "getExcludedPlacementList", js.Any.fromFunction0(value))
     

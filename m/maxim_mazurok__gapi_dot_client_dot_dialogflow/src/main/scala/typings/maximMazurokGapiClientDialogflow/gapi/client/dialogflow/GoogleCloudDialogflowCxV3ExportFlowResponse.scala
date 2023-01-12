@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3ExportFlowResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExportFlowResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExportFlowResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExportFlowResponse] (val x: Self) extends AnyVal {
     
     inline def setFlowContent(value: String): Self = StObject.set(x, "flowContent", value.asInstanceOf[js.Any])
     

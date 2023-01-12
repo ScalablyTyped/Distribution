@@ -56,7 +56,8 @@ object libFormsCheckboxMod extends Shortcut {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

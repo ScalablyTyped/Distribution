@@ -86,7 +86,8 @@ object libShapesImageMod {
       __obj.asInstanceOf[ImageConfig]
     }
     
-    extension [Self <: ImageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
       
       inline def setCrop(value: IRect): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       

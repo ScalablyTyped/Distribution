@@ -15,7 +15,8 @@ object AllowedValues {
     __obj.asInstanceOf[AllowedValues]
   }
   
-  extension [Self <: AllowedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedValues] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

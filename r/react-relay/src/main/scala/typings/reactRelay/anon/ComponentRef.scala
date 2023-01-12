@@ -15,7 +15,8 @@ object ComponentRef {
     __obj.asInstanceOf[ComponentRef]
   }
   
-  extension [Self <: ComponentRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRef] (val x: Self) extends AnyVal {
     
     inline def setComponentRef(value: /* ref */ Any => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object FocusedRadioIndex {
     __obj.asInstanceOf[FocusedRadioIndex]
   }
   
-  extension [Self <: FocusedRadioIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusedRadioIndex] (val x: Self) extends AnyVal {
     
     inline def setFocusedRadioIndex(value: Double): Self = StObject.set(x, "focusedRadioIndex", value.asInstanceOf[js.Any])
     

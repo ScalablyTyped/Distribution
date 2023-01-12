@@ -27,7 +27,8 @@ object AttributionItem {
     __obj.asInstanceOf[AttributionItem]
   }
   
-  extension [Self <: AttributionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributionItem] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

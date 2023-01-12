@@ -33,7 +33,8 @@ object ExternalClaim {
     __obj.asInstanceOf[ExternalClaim]
   }
   
-  extension [Self <: ExternalClaim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalClaim] (val x: Self) extends AnyVal {
     
     inline def setAcquiredTime(value: String): Self = StObject.set(x, "acquiredTime", value.asInstanceOf[js.Any])
     

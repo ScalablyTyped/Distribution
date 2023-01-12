@@ -728,7 +728,8 @@ object ojSparkChart {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -776,7 +777,8 @@ object ojSparkChart {
       __obj.asInstanceOf[ItemContext]
     }
     
-    extension [Self <: ItemContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -823,7 +825,8 @@ object ojSparkChart {
       __obj.asInstanceOf[ReferenceObject]
     }
     
-    extension [Self <: ReferenceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceObject] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -877,7 +880,8 @@ object ojSparkChart {
       __obj.asInstanceOf[TooltipContext]
     }
     
-    extension [Self <: TooltipContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

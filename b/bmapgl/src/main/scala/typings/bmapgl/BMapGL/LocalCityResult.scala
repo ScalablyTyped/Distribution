@@ -19,7 +19,8 @@ object LocalCityResult {
     __obj.asInstanceOf[LocalCityResult]
   }
   
-  extension [Self <: LocalCityResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalCityResult] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

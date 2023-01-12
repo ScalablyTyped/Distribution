@@ -18,7 +18,8 @@ object IAddDocumentOptions {
     __obj.asInstanceOf[IAddDocumentOptions]
   }
   
-  extension [Self <: IAddDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAddDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: IDocumentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

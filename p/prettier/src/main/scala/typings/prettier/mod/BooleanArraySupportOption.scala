@@ -24,7 +24,8 @@ object BooleanArraySupportOption {
     __obj.asInstanceOf[BooleanArraySupportOption]
   }
   
-  extension [Self <: BooleanArraySupportOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanArraySupportOption] (val x: Self) extends AnyVal {
     
     inline def setArray(value: `true`): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

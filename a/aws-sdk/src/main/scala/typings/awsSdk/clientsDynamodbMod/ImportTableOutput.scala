@@ -18,7 +18,8 @@ object ImportTableOutput {
     __obj.asInstanceOf[ImportTableOutput]
   }
   
-  extension [Self <: ImportTableOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportTableOutput] (val x: Self) extends AnyVal {
     
     inline def setImportTableDescription(value: ImportTableDescription): Self = StObject.set(x, "ImportTableDescription", value.asInstanceOf[js.Any])
   }

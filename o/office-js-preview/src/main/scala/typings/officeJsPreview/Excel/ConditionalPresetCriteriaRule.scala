@@ -56,7 +56,8 @@ object ConditionalPresetCriteriaRule {
     __obj.asInstanceOf[ConditionalPresetCriteriaRule]
   }
   
-  extension [Self <: ConditionalPresetCriteriaRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalPresetCriteriaRule] (val x: Self) extends AnyVal {
     
     inline def setCriterion(
       value: ConditionalFormatPresetCriterion | Invalid | Blanks | NonBlanks | Errors | NonErrors | Yesterday | Today | Tomorrow | LastSevenDays | LastWeek | ThisWeek | NextWeek | LastMonth | ThisMonth | NextMonth | AboveAverage | BelowAverage | EqualOrAboveAverage | EqualOrBelowAverage | OneStdDevAboveAverage | OneStdDevBelowAverage | TwoStdDevAboveAverage | TwoStdDevBelowAverage | ThreeStdDevAboveAverage | ThreeStdDevBelowAverage | UniqueValues | DuplicateValues

@@ -19,7 +19,8 @@ object CurState {
     __obj.asInstanceOf[CurState]
   }
   
-  extension [Self <: CurState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurState] (val x: Self) extends AnyVal {
     
     inline def setCurState(value: String): Self = StObject.set(x, "curState", value.asInstanceOf[js.Any])
     

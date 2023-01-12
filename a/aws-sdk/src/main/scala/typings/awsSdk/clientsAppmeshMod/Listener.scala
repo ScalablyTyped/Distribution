@@ -43,7 +43,8 @@ object Listener {
     __obj.asInstanceOf[Listener]
   }
   
-  extension [Self <: Listener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     inline def setConnectionPool(value: VirtualNodeConnectionPool): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
     

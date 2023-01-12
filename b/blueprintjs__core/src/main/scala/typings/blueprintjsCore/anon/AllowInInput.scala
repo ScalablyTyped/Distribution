@@ -29,7 +29,8 @@ object AllowInInput {
     __obj.asInstanceOf[AllowInInput]
   }
   
-  extension [Self <: AllowInInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowInInput] (val x: Self) extends AnyVal {
     
     inline def setAllowInInput(value: Boolean): Self = StObject.set(x, "allowInInput", value.asInstanceOf[js.Any])
     

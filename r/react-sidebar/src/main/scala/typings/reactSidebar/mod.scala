@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[SidebarProps]
     }
     
-    extension [Self <: SidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object mod {
       __obj.asInstanceOf[SidebarStyles]
     }
     
-    extension [Self <: SidebarStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarStyles] (val x: Self) extends AnyVal {
       
       inline def setContent(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

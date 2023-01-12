@@ -1650,7 +1650,6 @@
 | [connect-memcached](./c/connect-memcached) | Memcached session store for Connect | memcached, connection, session, store, cache |
 | [connect-modrewrite](./c/connect-modrewrite) | connect-modrewrite adds modrewrite functionality t | modrewrite |
 | [connect-mongo](./c/connect-mongo) | MongoDB session store for Express and Connect | connect, mongo, mongodb, session, express |
-| [connect-mongodb-session](./c/connect-mongodb-session) | MongoDB session store for connect/express built by | connect, mongo, mongodb, session, express |
 | [connect-pg-simple](./c/connect-pg-simple) | A simple, minimal PostgreSQL session store for Con | - |
 | [connect-redis](./c/connect-redis) | Redis session store for Connect | connect, redis, session, express |
 | [connect-sequence](./c/connect-sequence) | A node.js module to run connect-like middlewares i | node, node.js, connect, middleware, express |
@@ -1953,7 +1952,6 @@
 | [cypress-dotenv](./c/cypress-dotenv) | Cypress plugin that enables compatability with dot | cypress, plugin, dotenv, cypress-plugin, env |
 | [cypress-image-snapshot](./c/cypress-image-snapshot) | Cypress bindings for jest-image-snapshot. | - |
 | [cypress-recurse](./c/cypress-recurse) | A way to re-run Cypress commands until a predicate | cypress, cypress-plugin |
-| [cypress__code-coverage](./c/cypress__code-coverage) | Saves the code coverage collected during Cypress t | cypress, istanbul, cypress-plugin, code, coverage |
 | [cytoscape](./c/cytoscape) | Graph theory (a.k.a. network) library for analysis | graph, graph-theory, network, node, edge, vertex, link, analysis, visualisation, visualization, draw, render, biojs, cytoscape |
 | [cytoscape-avsdf](./c/cytoscape-avsdf) | An implementation of the circular layout algorithm | cytoscape, cytoscape-extension |
 | [cytoscape-canvas](./c/cytoscape-canvas) | A Cytoscape extension to enable drawing over and u | cytoscape, cytoscape.js, cytoscapejs, cytoscape-canvas, canvas, extension |
@@ -2830,7 +2828,6 @@
 | [express-boom](./e/express-boom) | Boom response objects in Express | Hapi, Boom, Express, response |
 | [express-brute](./e/express-brute) | A brute-force protection middleware for express ro | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | [express-brute-memcached](./e/express-brute-memcached) | A memcached store for express-brute | express, brute, memcached, store |
-| [express-brute-mongo](./e/express-brute-mongo) | MongoDB store for express-brute. | - |
 | [express-brute-redis](./e/express-brute-redis) | A Redis store for express-brute | express, brute, redis |
 | [express-bunyan-logger](./e/express-bunyan-logger) | a bunyan logger middleware for express | express, logger, bunyan |
 | [express-busboy](./e/express-busboy) | Busboy for express, mimics the old bodyParser | busboy, express, body-parser |
@@ -4309,7 +4306,6 @@
 | [gremlin](./g/gremlin) | JavaScript Gremlin Language Variant | graph, gremlin, tinkerpop, connection, glv, driver, graphdb |
 | [grid-template-parser](./g/grid-template-parser) | A simple CSS Grid template parser | grid, grid-layout, template, parser |
 | [griddle-react](./g/griddle-react) | A fast and flexible grid component for React | react-component, grid, react, pagination, sort |
-| [gridfs-stream](./g/gridfs-stream) | Writable/Readable Nodejs compatible GridFS streams | mongodb, mongoose, gridfs |
 | [gridstack](./g/gridstack) | TypeScript/JS lib for dashboard layout and creatio | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, Vue, JavaScript |
 | [grommet](./g/grommet) | focus on the essential experience | grommet, grommet.io, grommetux, component, library, design system, framework, react, theme, theming, templates, sticker sheets, design patterns, app templates, atomic design, accessibility, WCAG 2.1, keyboard navigation, screen reader tags, color, type, layout, typography, interaction, ui, user interface, gui, graphical user interface, styled-components |
 | [grommet-icons](./g/grommet-icons) | iconography for grommet apps. | - |
@@ -4639,7 +4635,6 @@
 | [hogan_dot_js](./h/hogan_dot_js) | A mustache compiler. | mustache, template |
 | [hoist-non-react-statics](./h/hoist-non-react-statics) | Copies non-react specific statics from a child com | react |
 | [holderjs](./h/holderjs) | Holder uses SVG to render image placeholders entir | images, placeholders, client-side, canvas, generation, development, svg |
-| [homeworks](./h/homeworks) | Front End framework that supported view binding. | Frontend Framework, Material, IGAWorks, homeworks, framework, PIGNOSE |
 | [honeybadger](./h/honeybadger) | A node.js notifier for honeybadger.io | - |
 | [hooker](./h/hooker) | Monkey-patch (hook) functions for debugging and st | patch, hook, function, debug, aop |
 | [hookrouter](./h/hookrouter) | A hook based router for React | - |
@@ -4862,7 +4857,6 @@
 | [indefinite-observable](./i/indefinite-observable) |   | - |
 | [indent-string](./i/indent-string) | Indent each line in a string | indent, string, pad, align, line, text, each, every |
 | [index-array-by](./i/index-array-by) | A utility function to index arrays by any criteria | index, array, helper |
-| [indy-sdk](./i/indy-sdk) | Native bindings for hyperledger indy | - |
 | [inert](./i/inert) | Static file and directory handlers plugin for hapi | file, directory, handler, hapi, plugin |
 | [ineum](./i/ineum) | - | - |
 | [inferno](./i/inferno) | An extremely fast, React-like JavaScript library f | inferno, performance, framework, interfaces, user interfaces, html, renderToString, server, dom, browser, rollup, vdom |
@@ -5993,7 +5987,6 @@
 | [koa-log4](./k/koa-log4) | log4js-node support Koa-middleware | log4js, Koa, logger |
 | [koa-logger](./k/koa-logger) | Logging middleware for koa | koa, middleware, logger, log |
 | [koa-logger-winston](./k/koa-logger-winston) | Winston logger for Koa | logging, koa, winston, async |
-| [koa-mongo](./k/koa-mongo) | MongoDB middleware for koa, support connection poo | koa, mongo, mongodb |
 | [koa-morgan](./k/koa-morgan) | HTTP request logger middleware for koa | logger, morgan |
 | [koa-mount](./k/koa-mount) | Mounting middleware for koa | koa, middleware, mount, mounting |
 | [koa-multer](./k/koa-multer) | Middleware for handling multipart/form-data for ko | form, post, multipart, form-data, formdata, koa, middleware |
@@ -7202,17 +7195,9 @@
 | [metascraper-youtube](./m/metascraper-youtube) | Metascraper integration with YouTube | metascraper, video, youtube |
 | [meteor](./m/meteor) | Install Meteor | - |
 | [meteor-accounts-phone](./m/meteor-accounts-phone) | - | - |
-| [meteor-astronomy](./m/meteor-astronomy) | - | - |
 | [meteor-collection-hooks](./m/meteor-collection-hooks) | - | - |
-| [meteor-dburles-collection](./m/meteor-dburles-collection-helpers) | - | - |
 | [meteor-jboulhous-dev](./m/meteor-jboulhous-dev) | - | - |
-| [meteor-mdg-validated-meth](./m/meteor-mdg-validated-method) | - | - |
-| [meteor-mdg-validation-err](./m/meteor-mdg-validation-error) | - | - |
 | [meteor-percolate-migratio](./m/meteor-percolate-migrations) | - | - |
-| [meteor-persistent-session](./m/meteor-persistent-session) | - | - |
-| [meteor-prime8consulting-o](./m/meteor-prime8consulting-oauth2) | - | - |
-| [meteor-publish-composite](./m/meteor-publish-composite) | - | - |
-| [meteor-roles](./m/meteor-roles) | - | - |
 | [meteor-sjobs](./m/meteor-sjobs) | - | - |
 | [meteor-synced-cron](./m/meteor-synced-cron) | Since I'm no longer actively developing an app tha | - |
 | [meteor-typings](./m/meteor-typings) | Type definitions for Meteor | - |
@@ -7290,7 +7275,6 @@
 | [microsoftteams](./m/microsoftteams) | - | - |
 | [microtime](./m/microtime) | Get the current time in microseconds | microtime, microseconds, gettimeofday |
 | [midi](./m/midi) | MIDI hardware IO | - |
-| [migrate-mongo](./m/migrate-mongo) | A database migration tool for MongoDB in Node | migrate mongo mongodb migrations database |
 | [milkcocoa](./m/milkcocoa) | milkcocoa client for Node.js. | milkcocoa, realtime |
 | [millisecond](./m/millisecond) | Convert time strings to milliseconds | ms, millisecond, milisecond, mili, milli, second, parse, time, string |
 | [milliseconds](./m/milliseconds) | Insanely lightweight module for converting times t | time, conversion, milliseconds |
@@ -7639,7 +7623,6 @@
 | [ng-grid](./n/ng-grid) | __Contributors:__ | angular, ng-grid, nggrid, grid, angularjs, slickgrid, kogrid |
 | [ng-i18next](./n/ng-i18next) | AngularJS provider, filter and directive for i18ne | - |
 | [ng-notify](./n/ng-notify) | A simple, lightweight module for displaying notifi | AngularJS, App, notify, Provider, notification, alert, notice |
-| [ng-packagr](./n/ng-packagr) | Compile and package Angular libraries in Angular P | apf, angular-package-format, angular, angular-library, angular-components, component-library, typescript, css, scss |
 | [ng-showdown](./n/ng-showdown) | Official Showdown integration with AngularJS | - |
 | [ng-stomp](./n/ng-stomp) | STOMP for AngularJS | AngularJS, STOMP, websocket |
 | [ng-table](./n/ng-table) | Table + AngularJS =================  | - |
@@ -7665,7 +7648,6 @@
 | [ngtoaster](./n/ngtoaster) | - | - |
 | [ngtools__webpack](./n/ngtools__webpack) | Webpack plugin that AoT compiles your Angular comp | angular, Angular CLI, devkit, sdk, Angular DevKit, webpack, plugin, aot |
 | [ngwysiwyg](./n/ngwysiwyg) | - | - |
-| [ngx-infinite-scroll](./n/ngx-infinite-scroll) | - | - |
 | [nhs-number-validator](./n/nhs-number-validator) | Validate NHS numbers in various guises | nhs, validator, validation |
 | [nib](./n/nib) | Stylus mixins and utilities | - |
 | [nice-napi](./n/nice-napi) | nice(2) bindings for Node.js | nice, priority |
@@ -10448,7 +10430,6 @@
 | [safe-regex-test](./s/safe-regex-test) | - | - |
 | [safe-stable-stringify](./s/safe-stable-stringify) | Deterministic and safely JSON.stringify to quickly | stable, stringify, JSON, JSON.stringify, safe, serialize, deterministic, circular, object, predicable, repeatable, fast, bigint |
 | [safe-timers](./s/safe-timers) | Timers with near-infinite duration support | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
-| [safer-buffer](./s/safer-buffer) | Modern Buffer API polyfill without footguns | - |
 | [sails_dot_io_dot_js](./s/sails_dot_io_dot_js) | Javascript SDK for communicating w/ a Sails server | sails, sdk, sails.io.js, socket.io, browser, javascript |
 | [sailthru-client](./s/sailthru-client) | Node.js client for Sailthru API | - |
 | [sales-tax](./s/sales-tax) | International sales tax calculator for Node (offli | sales, tax, salestax, money, billing, invoice, vat, gst, vatmoss |
@@ -10756,7 +10737,6 @@
 | [simmerjs](./s/simmerjs) | A pure Javascript reverse CSS selector engine whic | Simmer, css, css selector, sizzle |
 | [simonwep__selection-js](./s/simonwep__selection-js) | Simple, lightweight and modern library library for | selection, selecting, js-utility, user-selection, ui, user-interface, ui-library |
 | [simperium](./s/simperium) | A simperium client for node.js | - |
-| [simpl-schema](./s/simpl-schema) | A schema validation package that supports direct v | - |
 | [simple-assign](./s/simple-assign) | Simple implementation of Object.assign | - |
 | [simple-cw-node](./s/simple-cw-node) | A simple ChatWork API client for Node.js (UNOFFICI | chatwork, api |
 | [simple-datatables](./s/simple-datatables) | A lightweight, dependency-free JavaScript HTML tab | DataTable, DataTables, table, html table, filter, sort |
@@ -11349,7 +11329,6 @@
 | [swagger-restify-mw](./s/swagger-restify-mw) | Swagger loader and middleware for Restify | swagger, api, apis, restify |
 | [swagger-sails-hook](./s/swagger-sails-hook) | Sails.js hook for Swagger projects | swagger, api, apis, sails |
 | [swagger-schema-official](./s/swagger-schema-official) | Swagger JSON Schema | swagger, schema, api |
-| [swagger-stats](./s/swagger-stats) | API Telemetry and APM. Trace API calls and Monitor | api, observability, telemetry, node, express, koa, hapi, fastify, rest, statistics, monitoring, alerting, swagger, openapi, schema, prometheus, metrics, elasticsearch, kibana, grafana |
 | [swagger-tools](./s/swagger-tools) | Various tools for using and integrating with Swagg | api, connect, middleware, swagger |
 | [swagger-ui](./s/swagger-ui) | - | - |
 | [swagger-ui-dist](./s/swagger-ui-dist) | - | - |
@@ -11510,7 +11489,6 @@
 | [testcafe-reporter-dashboa](./t/testcafe-reporter-dashboard) | Dashboard TestCafe reporter plugin. | testcafe, reporter, plugin |
 | [testcafe-safe-storage](./t/testcafe-safe-storage) | Encrypted storage for secrets | - |
 | [testim__chrome-version](./t/testim__chrome-version) | Finds the version of Chrome that is installed on y | chrome, version |
-| [testing-library__cypress](./t/testing-library__cypress) | Simple and complete custom Cypress commands and ut | testing, cypress, ui, dom, integration, functional, end-to-end, e2e |
 | [testing-library__dom](./t/testing-library__dom) | Simple and complete DOM testing utilities that enc | testing, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |
 | [testing-library__jasmine-](./t/testing-library__jasmine-dom) | Custom Jasmine matchers for testing DOM elements | testing, dom, jasmine, matchers, jsdom |
 | [testing-library__react](./t/testing-library__react) | Simple and complete React DOM testing utilities th | testing, react, ui, dom, jsdom, unit, integration, functional, end-to-end, e2e |

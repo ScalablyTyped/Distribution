@@ -30,7 +30,8 @@ object typesGetKeyRotationStatusOutputMod {
       __obj.asInstanceOf[GetKeyRotationStatusOutput]
     }
     
-    extension [Self <: GetKeyRotationStatusOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetKeyRotationStatusOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

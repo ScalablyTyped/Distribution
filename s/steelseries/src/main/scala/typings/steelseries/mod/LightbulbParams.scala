@@ -19,7 +19,8 @@ object LightbulbParams {
     __obj.asInstanceOf[LightbulbParams]
   }
   
-  extension [Self <: LightbulbParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightbulbParams] (val x: Self) extends AnyVal {
     
     inline def setGlowColor(value: String): Self = StObject.set(x, "glowColor", value.asInstanceOf[js.Any])
     

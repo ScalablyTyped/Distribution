@@ -31,7 +31,8 @@ object libCredentialsRemoteCredentialsMod {
       __obj.asInstanceOf[RemoteCredentialsOptions]
     }
     
-    extension [Self <: RemoteCredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteCredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setHttpOptions(value: Timeout): Self = StObject.set(x, "httpOptions", value.asInstanceOf[js.Any])
       

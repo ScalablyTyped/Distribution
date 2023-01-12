@@ -22,7 +22,8 @@ object FullscreenControlOptions {
     __obj.asInstanceOf[FullscreenControlOptions]
   }
   
-  extension [Self <: FullscreenControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

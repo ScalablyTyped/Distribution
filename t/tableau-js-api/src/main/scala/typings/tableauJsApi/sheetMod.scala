@@ -250,7 +250,8 @@ object sheetMod {
       __obj.asInstanceOf[GetSummaryDataOptions]
     }
     
-    extension [Self <: GetSummaryDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSummaryDataOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreAliases(value: Boolean): Self = StObject.set(x, "ignoreAliases", value.asInstanceOf[js.Any])
       
@@ -273,7 +274,8 @@ object sheetMod {
       __obj.asInstanceOf[GetUnderlyingDataOptions]
     }
     
-    extension [Self <: GetUnderlyingDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetUnderlyingDataOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeAllColumns(value: Boolean): Self = StObject.set(x, "includeAllColumns", value.asInstanceOf[js.Any])
     }

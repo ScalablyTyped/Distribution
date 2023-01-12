@@ -25,7 +25,8 @@ object IGeneralizedTime {
     __obj.asInstanceOf[IGeneralizedTime]
   }
   
-  extension [Self <: IGeneralizedTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeneralizedTime] (val x: Self) extends AnyVal {
     
     inline def setMillisecond(value: Double): Self = StObject.set(x, "millisecond", value.asInstanceOf[js.Any])
   }

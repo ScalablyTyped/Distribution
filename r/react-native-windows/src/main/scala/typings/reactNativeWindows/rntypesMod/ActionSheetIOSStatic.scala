@@ -47,7 +47,8 @@ object ActionSheetIOSStatic {
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }
   
-  extension [Self <: ActionSheetIOSStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetIOSStatic] (val x: Self) extends AnyVal {
     
     inline def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2(value))
     

@@ -103,7 +103,8 @@ object XReportEngine {
     __obj.asInstanceOf[XReportEngine]
   }
   
-  extension [Self <: XReportEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReportEngine] (val x: Self) extends AnyVal {
     
     inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     

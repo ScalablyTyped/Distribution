@@ -53,7 +53,8 @@ object dxDraggable {
       __obj.asInstanceOf[DragEndEvent]
     }
     
-    extension [Self <: DragEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEndEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object dxDraggable {
       __obj.asInstanceOf[DragMoveEvent]
     }
     
-    extension [Self <: DragMoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragMoveEvent] (val x: Self) extends AnyVal {
       
       inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object dxDraggable {
       __obj.asInstanceOf[DragStartEvent]
     }
     
-    extension [Self <: DragStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEvent] (val x: Self) extends AnyVal {
       
       inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object dxDraggable {
       __obj.asInstanceOf[DragTemplateData]
     }
     
-    extension [Self <: DragTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragTemplateData] (val x: Self) extends AnyVal {
       
       inline def setItemData(value: Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       

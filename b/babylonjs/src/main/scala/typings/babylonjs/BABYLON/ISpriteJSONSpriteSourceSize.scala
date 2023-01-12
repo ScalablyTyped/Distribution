@@ -23,7 +23,8 @@ object ISpriteJSONSpriteSourceSize {
     __obj.asInstanceOf[ISpriteJSONSpriteSourceSize]
   }
   
-  extension [Self <: ISpriteJSONSpriteSourceSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpriteJSONSpriteSourceSize] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MerchantAccountUpdateRequest {
     __obj.asInstanceOf[MerchantAccountUpdateRequest]
   }
   
-  extension [Self <: MerchantAccountUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MerchantAccountUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setBusiness(value: MerchantBusinessRequest): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
     

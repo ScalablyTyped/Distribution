@@ -32,7 +32,8 @@ object PeekComponent {
     __obj.asInstanceOf[PeekComponent]
   }
   
-  extension [Self <: PeekComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeekComponent] (val x: Self) extends AnyVal {
     
     inline def setMount(value: () => Unit): Self = StObject.set(x, "mount", js.Any.fromFunction0(value))
     

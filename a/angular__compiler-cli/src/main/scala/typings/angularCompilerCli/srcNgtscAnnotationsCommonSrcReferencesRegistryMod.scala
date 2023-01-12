@@ -37,7 +37,8 @@ object srcNgtscAnnotationsCommonSrcReferencesRegistryMod {
       __obj.asInstanceOf[ReferencesRegistry]
     }
     
-    extension [Self <: ReferencesRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferencesRegistry] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (DeclarationNode, /* repeated */ Reference[DeclarationNode]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     }

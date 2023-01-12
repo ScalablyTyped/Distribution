@@ -20,7 +20,8 @@ object CanvasKitInitOptions {
     __obj.asInstanceOf[CanvasKitInitOptions]
   }
   
-  extension [Self <: CanvasKitInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasKitInitOptions] (val x: Self) extends AnyVal {
     
     inline def setLocateFile(value: String => String): Self = StObject.set(x, "locateFile", js.Any.fromFunction1(value))
   }

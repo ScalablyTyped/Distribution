@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[EventEmitterPropsposition]
     }
     
-    extension [Self <: EventEmitterPropsposition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitterPropsposition] (val x: Self) extends AnyVal {
       
       inline def setAddEnterListener(value: Listener => js.Function0[Unit]): Self = StObject.set(x, "addEnterListener", js.Any.fromFunction1(value))
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Focused[T]]
     }
     
-    extension [Self <: Focused[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */](x: Self & Focused[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Focused[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */] (val x: Self & Focused[T]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -118,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Loading]
     }
     
-    extension [Self <: Loading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loading] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     }
@@ -135,7 +140,8 @@ object anon {
       __obj.asInstanceOf[NavigationState[T]]
     }
     
-    extension [Self <: NavigationState[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */](x: Self & NavigationState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationState[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */] (val x: Self & NavigationState[T]) extends AnyVal {
       
       inline def setNavigationState(value: typings.reactNativeTabView.libTypescriptTypesMod.NavigationState[T]): Self = StObject.set(x, "navigationState", value.asInstanceOf[js.Any])
     }
@@ -155,7 +161,8 @@ object anon {
       __obj.asInstanceOf[PartialLayout]
     }
     
-    extension [Self <: PartialLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLayout] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -178,7 +185,8 @@ object anon {
       __obj.asInstanceOf[Route[T]]
     }
     
-    extension [Self <: Route[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */](x: Self & Route[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route[?], T /* <: typings.reactNativeTabView.libTypescriptTypesMod.Route */] (val x: Self & Route[T]) extends AnyVal {
       
       inline def setRoute(value: T): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     }

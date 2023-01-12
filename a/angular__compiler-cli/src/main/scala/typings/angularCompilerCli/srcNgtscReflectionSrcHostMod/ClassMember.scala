@@ -112,7 +112,8 @@ object ClassMember {
     __obj.asInstanceOf[ClassMember]
   }
   
-  extension [Self <: ClassMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassMember] (val x: Self) extends AnyVal {
     
     inline def setDecorators(value: js.Array[Decorator]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     

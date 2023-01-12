@@ -19,7 +19,8 @@ object Bn_ {
     __obj.asInstanceOf[Bn_]
   }
   
-  extension [Self <: Bn_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bn_] (val x: Self) extends AnyVal {
     
     inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     

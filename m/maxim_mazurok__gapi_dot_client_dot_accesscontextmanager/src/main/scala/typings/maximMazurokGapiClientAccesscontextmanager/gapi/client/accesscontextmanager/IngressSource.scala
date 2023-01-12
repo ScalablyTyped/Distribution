@@ -28,7 +28,8 @@ object IngressSource {
     __obj.asInstanceOf[IngressSource]
   }
   
-  extension [Self <: IngressSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngressSource] (val x: Self) extends AnyVal {
     
     inline def setAccessLevel(value: String): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     

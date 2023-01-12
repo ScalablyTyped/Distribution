@@ -46,7 +46,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IModule]
       }
       
-      extension [Self <: IModule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModule] (val x: Self) extends AnyVal {
         
         inline def setFactory(value: (String, IResourceServiceFactoryFunction[Any]) => IModule): Self = StObject.set(x, "factory", js.Any.fromFunction2(value))
       }
@@ -66,7 +67,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IInjectorService]
         }
         
-        extension [Self <: IInjectorService](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IInjectorService] (val x: Self) extends AnyVal {
           
           inline def setGet(value: $resource => IResourceService): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         }
@@ -121,7 +123,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IActionDescriptor]
         }
         
-        extension [Self <: IActionDescriptor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IActionDescriptor] (val x: Self) extends AnyVal {
           
           inline def setCache(value: Boolean | ICacheObject): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
           
@@ -451,7 +454,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IResourceInterceptor]
         }
         
-        extension [Self <: IResourceInterceptor](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IResourceInterceptor] (val x: Self) extends AnyVal {
           
           inline def setResponse(value: /* response */ IResourceResponse => Any): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
           
@@ -503,7 +507,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IResourceOptions]
         }
         
-        extension [Self <: IResourceOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IResourceOptions] (val x: Self) extends AnyVal {
           
           inline def setCancellable(value: Boolean): Self = StObject.set(x, "cancellable", value.asInstanceOf[js.Any])
           
@@ -536,7 +541,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IResourceResponse]
         }
         
-        extension [Self <: IResourceResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IResourceResponse] (val x: Self) extends AnyVal {
           
           inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
           
@@ -600,7 +606,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IResourceServiceProvider]
         }
         
-        extension [Self <: IResourceServiceProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IResourceServiceProvider] (val x: Self) extends AnyVal {
           
           inline def setDefaults(value: IResourceOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
         }
@@ -626,7 +633,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.angularResource.mod.global.Array[T]]
       }
       
-      extension [Self <: typings.angularResource.mod.global.Array[?], T](x: Self & typings.angularResource.mod.global.Array[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.angularResource.mod.global.Array[?], T] (val x: Self & typings.angularResource.mod.global.Array[T]) extends AnyVal {
         
         inline def set$promise(value: IPromise[typings.angularResource.mod.global.Array[T]]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
         

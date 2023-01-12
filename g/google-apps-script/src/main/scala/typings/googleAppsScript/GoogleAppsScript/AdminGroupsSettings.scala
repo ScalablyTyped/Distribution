@@ -49,7 +49,8 @@ object AdminGroupsSettings {
         __obj.asInstanceOf[GroupsCollection]
       }
       
-      extension [Self <: GroupsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GroupsCollection] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
@@ -64,7 +65,8 @@ object AdminGroupsSettings {
     }
   }
   
-  extension [Self <: AdminGroupsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminGroupsSettings] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: GroupsCollection): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
@@ -206,7 +208,8 @@ object AdminGroupsSettings {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.AdminGroupsSettings.Schema.Groups] (val x: Self) extends AnyVal {
         
         inline def setAllowExternalMembers(value: String): Self = StObject.set(x, "allowExternalMembers", value.asInstanceOf[js.Any])
         

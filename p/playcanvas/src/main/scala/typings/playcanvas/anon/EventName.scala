@@ -23,7 +23,8 @@ object EventName {
     __obj.asInstanceOf[EventName]
   }
   
-  extension [Self <: EventName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

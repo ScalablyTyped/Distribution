@@ -72,7 +72,8 @@ object ModuleUIConfigurationManager {
     __obj.asInstanceOf[ModuleUIConfigurationManager]
   }
   
-  extension [Self <: ModuleUIConfigurationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleUIConfigurationManager] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: (String, String) => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction2(value))
   }

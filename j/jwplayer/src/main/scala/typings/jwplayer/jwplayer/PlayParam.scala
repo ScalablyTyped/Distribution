@@ -21,7 +21,8 @@ object PlayParam {
     __obj.asInstanceOf[PlayParam]
   }
   
-  extension [Self <: PlayParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayParam] (val x: Self) extends AnyVal {
     
     inline def setOldstate(value: buffering | playing): Self = StObject.set(x, "oldstate", value.asInstanceOf[js.Any])
     

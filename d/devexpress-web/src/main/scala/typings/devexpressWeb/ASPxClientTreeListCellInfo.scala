@@ -26,7 +26,8 @@ object ASPxClientTreeListCellInfo {
     __obj.asInstanceOf[ASPxClientTreeListCellInfo]
   }
   
-  extension [Self <: ASPxClientTreeListCellInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListCellInfo] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

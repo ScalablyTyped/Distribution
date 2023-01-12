@@ -200,7 +200,8 @@ object libRestPreviewUnderstandAssistantDialogueMod {
       __obj.asInstanceOf[DialogueResource]
     }
     
-    extension [Self <: DialogueResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogueResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object libRestPreviewUnderstandAssistantDialogueMod {
       __obj.asInstanceOf[DialogueSolution]
     }
     
-    extension [Self <: DialogueSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogueSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

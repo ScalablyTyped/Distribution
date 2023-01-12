@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-countto"
-version := "1.2-dt-20211202Z-ebda38"
+version := "1.2-dt-20211202Z-971a56"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

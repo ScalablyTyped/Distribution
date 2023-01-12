@@ -32,7 +32,8 @@ object Betweenlines {
     __obj.asInstanceOf[Betweenlines]
   }
   
-  extension [Self <: Betweenlines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Betweenlines] (val x: Self) extends AnyVal {
     
     inline def setBetween_lines(value: Boolean): Self = StObject.set(x, "between_lines", value.asInstanceOf[js.Any])
     

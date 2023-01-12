@@ -21,7 +21,8 @@ object IRegisteredUser {
     __obj.asInstanceOf[IRegisteredUser]
   }
   
-  extension [Self <: IRegisteredUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegisteredUser] (val x: Self) extends AnyVal {
     
     inline def setAccessed(value: js.Date): Self = StObject.set(x, "accessed", value.asInstanceOf[js.Any])
     

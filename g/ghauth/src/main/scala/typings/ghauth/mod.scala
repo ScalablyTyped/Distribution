@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthUrl(value: String): Self = StObject.set(x, "authUrl", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[TokenData]
     }
     
-    extension [Self <: TokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenData] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

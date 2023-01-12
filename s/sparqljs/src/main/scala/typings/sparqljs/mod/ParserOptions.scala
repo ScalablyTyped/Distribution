@@ -24,7 +24,8 @@ object ParserOptions {
     __obj.asInstanceOf[ParserOptions]
   }
   
-  extension [Self <: ParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
     

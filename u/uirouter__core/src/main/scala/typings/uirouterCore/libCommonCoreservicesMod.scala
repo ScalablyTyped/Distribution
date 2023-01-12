@@ -37,7 +37,8 @@ object libCommonCoreservicesMod {
       __obj.asInstanceOf[CoreServices]
     }
     
-    extension [Self <: CoreServices](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreServices] (val x: Self) extends AnyVal {
       
       inline def set$injector(value: InjectorLike): Self = StObject.set(x, "$injector", value.asInstanceOf[js.Any])
       

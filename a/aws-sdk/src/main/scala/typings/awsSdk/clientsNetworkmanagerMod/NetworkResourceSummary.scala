@@ -43,7 +43,8 @@ object NetworkResourceSummary {
     __obj.asInstanceOf[NetworkResourceSummary]
   }
   
-  extension [Self <: NetworkResourceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkResourceSummary] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: ConstrainedString): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

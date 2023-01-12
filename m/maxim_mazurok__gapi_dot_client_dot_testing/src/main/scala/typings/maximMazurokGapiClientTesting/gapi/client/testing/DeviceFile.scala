@@ -19,7 +19,8 @@ object DeviceFile {
     __obj.asInstanceOf[DeviceFile]
   }
   
-  extension [Self <: DeviceFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceFile] (val x: Self) extends AnyVal {
     
     inline def setObbFile(value: ObbFile): Self = StObject.set(x, "obbFile", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object WorkerOptions {
     __obj.asInstanceOf[WorkerOptions]
   }
   
-  extension [Self <: WorkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheMethod(value: String): Self = StObject.set(x, "cacheMethod", value.asInstanceOf[js.Any])
     

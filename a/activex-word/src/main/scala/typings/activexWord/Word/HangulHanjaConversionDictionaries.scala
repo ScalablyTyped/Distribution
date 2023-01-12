@@ -49,7 +49,8 @@ object HangulHanjaConversionDictionaries {
     __obj.asInstanceOf[HangulHanjaConversionDictionaries]
   }
   
-  extension [Self <: HangulHanjaConversionDictionaries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HangulHanjaConversionDictionaries] (val x: Self) extends AnyVal {
     
     inline def setActiveCustomDictionary(value: Dictionary): Self = StObject.set(x, "ActiveCustomDictionary", value.asInstanceOf[js.Any])
     

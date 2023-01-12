@@ -33,7 +33,8 @@ object libEsmCommonItemRendererMod {
       __obj.asInstanceOf[ItemModifiers]
     }
     
-    extension [Self <: ItemModifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemModifiers] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object libEsmCommonItemRendererMod {
       __obj.asInstanceOf[ItemRendererProps]
     }
     
-    extension [Self <: ItemRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRendererProps] (val x: Self) extends AnyVal {
       
       inline def setHandleClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClick", js.Any.fromFunction1(value))
       

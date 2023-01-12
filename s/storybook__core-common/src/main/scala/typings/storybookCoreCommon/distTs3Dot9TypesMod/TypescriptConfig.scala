@@ -21,7 +21,8 @@ object TypescriptConfig {
     __obj.asInstanceOf[TypescriptConfig]
   }
   
-  extension [Self <: TypescriptConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypescriptConfig] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     

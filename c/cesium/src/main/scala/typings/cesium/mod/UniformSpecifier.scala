@@ -21,7 +21,8 @@ object UniformSpecifier {
     __obj.asInstanceOf[UniformSpecifier]
   }
   
-  extension [Self <: UniformSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniformSpecifier] (val x: Self) extends AnyVal {
     
     inline def setType(value: UniformType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

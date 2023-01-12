@@ -17,7 +17,8 @@ object NodeJS {
       __obj.asInstanceOf[Process]
     }
     
-    extension [Self <: Process](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     }

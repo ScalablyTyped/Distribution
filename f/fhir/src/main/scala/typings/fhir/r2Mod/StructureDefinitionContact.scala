@@ -27,7 +27,8 @@ object StructureDefinitionContact {
     __obj.asInstanceOf[StructureDefinitionContact]
   }
   
-  extension [Self <: StructureDefinitionContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureDefinitionContact] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

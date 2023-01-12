@@ -141,7 +141,8 @@ object sapUiCoreDndDragAndDropMod {
       __obj.asInstanceOf[DragSession]
     }
     
-    extension [Self <: DragSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragSession] (val x: Self) extends AnyVal {
       
       inline def setGetComplexData(value: String => js.UndefOr[Any]): Self = StObject.set(x, "getComplexData", js.Any.fromFunction1(value))
       

@@ -43,7 +43,8 @@ object ScalingConfigurationInfo {
     __obj.asInstanceOf[ScalingConfigurationInfo]
   }
   
-  extension [Self <: ScalingConfigurationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalingConfigurationInfo] (val x: Self) extends AnyVal {
     
     inline def setAutoPause(value: BooleanOptional): Self = StObject.set(x, "AutoPause", value.asInstanceOf[js.Any])
     

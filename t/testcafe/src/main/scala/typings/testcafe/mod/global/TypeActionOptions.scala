@@ -31,7 +31,8 @@ object TypeActionOptions {
     __obj.asInstanceOf[TypeActionOptions]
   }
   
-  extension [Self <: TypeActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeActionOptions] (val x: Self) extends AnyVal {
     
     inline def setConfidential(value: Boolean): Self = StObject.set(x, "confidential", value.asInstanceOf[js.Any])
     

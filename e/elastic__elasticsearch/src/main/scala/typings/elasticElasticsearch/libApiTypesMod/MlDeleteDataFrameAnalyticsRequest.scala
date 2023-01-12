@@ -21,7 +21,8 @@ object MlDeleteDataFrameAnalyticsRequest {
     __obj.asInstanceOf[MlDeleteDataFrameAnalyticsRequest]
   }
   
-  extension [Self <: MlDeleteDataFrameAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteDataFrameAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

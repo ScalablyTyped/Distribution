@@ -37,7 +37,8 @@ object ProductShelfLife {
     __obj.asInstanceOf[ProductShelfLife]
   }
   
-  extension [Self <: ProductShelfLife](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductShelfLife] (val x: Self) extends AnyVal {
     
     inline def setPeriodDuration(value: Duration): Self = StObject.set(x, "periodDuration", value.asInstanceOf[js.Any])
     

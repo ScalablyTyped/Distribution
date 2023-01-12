@@ -23,7 +23,8 @@ object GetQuerySuggestionsResponse {
     __obj.asInstanceOf[GetQuerySuggestionsResponse]
   }
   
-  extension [Self <: GetQuerySuggestionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQuerySuggestionsResponse] (val x: Self) extends AnyVal {
     
     inline def setQuerySuggestionsId(value: QuerySuggestionsId): Self = StObject.set(x, "QuerySuggestionsId", value.asInstanceOf[js.Any])
     

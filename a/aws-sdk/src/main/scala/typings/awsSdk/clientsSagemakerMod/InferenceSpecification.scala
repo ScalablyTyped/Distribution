@@ -42,7 +42,8 @@ object InferenceSpecification {
     __obj.asInstanceOf[InferenceSpecification]
   }
   
-  extension [Self <: InferenceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceSpecification] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: ModelPackageContainerDefinitionList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     

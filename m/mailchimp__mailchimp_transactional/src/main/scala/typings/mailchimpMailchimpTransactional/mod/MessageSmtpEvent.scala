@@ -23,7 +23,8 @@ object MessageSmtpEvent {
     __obj.asInstanceOf[MessageSmtpEvent]
   }
   
-  extension [Self <: MessageSmtpEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSmtpEvent] (val x: Self) extends AnyVal {
     
     inline def setDiag(value: String): Self = StObject.set(x, "diag", value.asInstanceOf[js.Any])
     

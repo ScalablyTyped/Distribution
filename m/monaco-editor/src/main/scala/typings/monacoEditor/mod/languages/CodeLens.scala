@@ -20,7 +20,8 @@ object CodeLens {
     __obj.asInstanceOf[CodeLens]
   }
   
-  extension [Self <: CodeLens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLens] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

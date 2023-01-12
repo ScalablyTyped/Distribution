@@ -34,7 +34,8 @@ object PrintTemplateExportOptions {
     __obj.asInstanceOf[PrintTemplateExportOptions]
   }
   
-  extension [Self <: PrintTemplateExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTemplateExportOptions] (val x: Self) extends AnyVal {
     
     inline def setDpi(value: Double): Self = StObject.set(x, "dpi", value.asInstanceOf[js.Any])
     

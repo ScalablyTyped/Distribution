@@ -246,7 +246,8 @@ object ChangeLogEntry {
       __obj.asInstanceOf[ISuccessor]
     }
     
-    extension [Self <: ISuccessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuccessor] (val x: Self) extends AnyVal {
       
       inline def setDeletions(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "deletions", value.asInstanceOf[js.Any])
       

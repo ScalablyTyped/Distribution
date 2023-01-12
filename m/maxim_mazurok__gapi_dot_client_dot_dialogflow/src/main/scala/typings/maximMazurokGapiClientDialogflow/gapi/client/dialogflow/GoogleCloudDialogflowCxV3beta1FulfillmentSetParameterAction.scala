@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3beta1FulfillmentSetParameterAction {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1FulfillmentSetParameterAction]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1FulfillmentSetParameterAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1FulfillmentSetParameterAction] (val x: Self) extends AnyVal {
     
     inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     

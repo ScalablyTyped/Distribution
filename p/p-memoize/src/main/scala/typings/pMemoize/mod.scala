@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[CacheStorage[KeyType, ValueType]]
     }
     
-    extension [Self <: CacheStorage[?, ?], KeyType, ValueType](x: Self & (CacheStorage[KeyType, ValueType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheStorage[?, ?], KeyType, ValueType] (val x: Self & (CacheStorage[KeyType, ValueType])) extends AnyVal {
       
       inline def setClear(value: () => Any): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[Options[FunctionToMemoize, CacheKeyType]]
     }
     
-    extension [Self <: Options[?, ?], FunctionToMemoize /* <: AnyAsyncFunction */, CacheKeyType](x: Self & (Options[FunctionToMemoize, CacheKeyType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], FunctionToMemoize /* <: AnyAsyncFunction */, CacheKeyType] (val x: Self & (Options[FunctionToMemoize, CacheKeyType])) extends AnyVal {
       
       inline def setCache(value: (CacheStorage[CacheKeyType, AsyncReturnType[FunctionToMemoize]]) | `false`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

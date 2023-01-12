@@ -23,7 +23,8 @@ object CookedRawString {
     __obj.asInstanceOf[CookedRawString]
   }
   
-  extension [Self <: CookedRawString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookedRawString] (val x: Self) extends AnyVal {
     
     inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
     

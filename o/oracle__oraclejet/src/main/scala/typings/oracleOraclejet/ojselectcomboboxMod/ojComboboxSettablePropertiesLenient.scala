@@ -47,7 +47,8 @@ object ojComboboxSettablePropertiesLenient {
     __obj.asInstanceOf[ojComboboxSettablePropertiesLenient[V, SV, RV]]
   }
   
-  extension [Self <: ojComboboxSettablePropertiesLenient[?, ?, ?], V, SV, RV](x: Self & (ojComboboxSettablePropertiesLenient[V, SV, RV])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojComboboxSettablePropertiesLenient[?, ?, ?], V, SV, RV] (val x: Self & (ojComboboxSettablePropertiesLenient[V, SV, RV])) extends AnyVal {
     
     inline def setDescribedBy(value: String): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

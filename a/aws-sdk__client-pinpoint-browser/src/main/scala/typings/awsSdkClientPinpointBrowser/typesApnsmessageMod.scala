@@ -116,7 +116,8 @@ object typesApnsmessageMod {
       __obj.asInstanceOf[APNSMessage]
     }
     
-    extension [Self <: APNSMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APNSMessage] (val x: Self) extends AnyVal {
       
       inline def setAction(value: OPEN_APP | DEEP_LINK | URL | String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object typesApnsmessageMod {
       __obj.asInstanceOf[UnmarshalledAPNSMessage]
     }
     
-    extension [Self <: UnmarshalledAPNSMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAPNSMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[String]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

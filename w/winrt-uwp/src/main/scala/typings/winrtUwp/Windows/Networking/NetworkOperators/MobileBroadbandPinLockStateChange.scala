@@ -23,7 +23,8 @@ object MobileBroadbandPinLockStateChange {
     __obj.asInstanceOf[MobileBroadbandPinLockStateChange]
   }
   
-  extension [Self <: MobileBroadbandPinLockStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandPinLockStateChange] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

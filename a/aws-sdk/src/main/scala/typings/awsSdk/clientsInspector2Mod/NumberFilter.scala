@@ -23,7 +23,8 @@ object NumberFilter {
     __obj.asInstanceOf[NumberFilter]
   }
   
-  extension [Self <: NumberFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFilter] (val x: Self) extends AnyVal {
     
     inline def setLowerInclusive(value: Double): Self = StObject.set(x, "lowerInclusive", value.asInstanceOf[js.Any])
     

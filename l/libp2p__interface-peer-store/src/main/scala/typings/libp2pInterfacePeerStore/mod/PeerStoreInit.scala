@@ -17,7 +17,8 @@ object PeerStoreInit {
     __obj.asInstanceOf[PeerStoreInit]
   }
   
-  extension [Self <: PeerStoreInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerStoreInit] (val x: Self) extends AnyVal {
     
     inline def setAddressFilter(value: (/* peerId */ PeerId, /* multiaddr */ Multiaddr_) => js.Promise[Boolean]): Self = StObject.set(x, "addressFilter", js.Any.fromFunction2(value))
     

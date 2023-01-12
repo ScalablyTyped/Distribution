@@ -52,7 +52,8 @@ object XSheetAnnotations {
     __obj.asInstanceOf[XSheetAnnotations]
   }
   
-  extension [Self <: XSheetAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetAnnotations] (val x: Self) extends AnyVal {
     
     inline def setInsertNew(value: (CellAddress, String) => Unit): Self = StObject.set(x, "insertNew", js.Any.fromFunction2(value))
     

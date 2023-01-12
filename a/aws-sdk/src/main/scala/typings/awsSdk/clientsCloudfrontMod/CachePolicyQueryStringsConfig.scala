@@ -23,7 +23,8 @@ object CachePolicyQueryStringsConfig {
     __obj.asInstanceOf[CachePolicyQueryStringsConfig]
   }
   
-  extension [Self <: CachePolicyQueryStringsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicyQueryStringsConfig] (val x: Self) extends AnyVal {
     
     inline def setQueryStringBehavior(value: CachePolicyQueryStringBehavior): Self = StObject.set(x, "QueryStringBehavior", value.asInstanceOf[js.Any])
     

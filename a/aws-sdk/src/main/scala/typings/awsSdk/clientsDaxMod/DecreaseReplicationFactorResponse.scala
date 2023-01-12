@@ -18,7 +18,8 @@ object DecreaseReplicationFactorResponse {
     __obj.asInstanceOf[DecreaseReplicationFactorResponse]
   }
   
-  extension [Self <: DecreaseReplicationFactorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecreaseReplicationFactorResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: Cluster): Self = StObject.set(x, "Cluster", value.asInstanceOf[js.Any])
     

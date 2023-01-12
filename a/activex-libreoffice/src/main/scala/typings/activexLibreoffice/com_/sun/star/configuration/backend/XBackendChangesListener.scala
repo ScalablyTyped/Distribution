@@ -34,7 +34,8 @@ object XBackendChangesListener {
     __obj.asInstanceOf[XBackendChangesListener]
   }
   
-  extension [Self <: XBackendChangesListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBackendChangesListener] (val x: Self) extends AnyVal {
     
     inline def setComponentDataChanged(value: ComponentChangeEvent => Unit): Self = StObject.set(x, "componentDataChanged", js.Any.fromFunction1(value))
   }

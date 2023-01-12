@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "vue__server-renderer"
-version := "3.2.45-2024ad"
+version := "3.2.45-73aa87"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-def929",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
-  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-433ea1",
-  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-ccab93",
-  "org.scalablytyped" %%% "vue__shared" % "3.2.45-86009a")
+  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
+  "org.scalablytyped" %%% "vue__reactivity" % "3.2.45-85ea73",
+  "org.scalablytyped" %%% "vue__runtime-core" % "3.2.45-843bf7",
+  "org.scalablytyped" %%% "vue__shared" % "3.2.45-ab0053")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

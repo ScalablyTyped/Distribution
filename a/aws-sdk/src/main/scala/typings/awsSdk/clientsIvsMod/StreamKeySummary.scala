@@ -28,7 +28,8 @@ object StreamKeySummary {
     __obj.asInstanceOf[StreamKeySummary]
   }
   
-  extension [Self <: StreamKeySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamKeySummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: StreamKeyArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

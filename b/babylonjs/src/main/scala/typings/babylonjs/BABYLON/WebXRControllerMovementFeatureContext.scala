@@ -35,7 +35,8 @@ object WebXRControllerMovementFeatureContext {
     __obj.asInstanceOf[WebXRControllerMovementFeatureContext]
   }
   
-  extension [Self <: WebXRControllerMovementFeatureContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRControllerMovementFeatureContext] (val x: Self) extends AnyVal {
     
     inline def setMovementEnabled(value: Boolean): Self = StObject.set(x, "movementEnabled", value.asInstanceOf[js.Any])
     

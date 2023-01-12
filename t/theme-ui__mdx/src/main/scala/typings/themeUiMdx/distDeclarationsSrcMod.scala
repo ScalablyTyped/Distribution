@@ -57,7 +57,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[Aliases]
     }
     
-    extension [Self <: Aliases](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aliases] (val x: Self) extends AnyVal {
       
       inline def setInlineCode(value: code): Self = StObject.set(x, "inlineCode", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[MdxProviderProps]
     }
     
-    extension [Self <: MdxProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object distDeclarationsSrcMod {
       __obj.asInstanceOf[ThemedProps]
     }
     
-    extension [Self <: ThemedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemedProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ Any

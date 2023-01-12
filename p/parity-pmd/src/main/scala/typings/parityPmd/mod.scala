@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[PMDMessage]
     }
     
-    extension [Self <: PMDMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PMDMessage] (val x: Self) extends AnyVal {
       
       inline def setInstrument(value: String): Self = StObject.set(x, "instrument", value.asInstanceOf[js.Any])
       

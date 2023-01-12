@@ -31,7 +31,8 @@ object DisassembleArguments {
     __obj.asInstanceOf[DisassembleArguments]
   }
   
-  extension [Self <: DisassembleArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassembleArguments] (val x: Self) extends AnyVal {
     
     inline def setInstructionCount(value: Double): Self = StObject.set(x, "instructionCount", value.asInstanceOf[js.Any])
     

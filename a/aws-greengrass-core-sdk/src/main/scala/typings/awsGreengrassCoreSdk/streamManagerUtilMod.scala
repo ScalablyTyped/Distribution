@@ -26,7 +26,8 @@ object streamManagerUtilMod {
       __obj.asInstanceOf[FromMap[T]]
     }
     
-    extension [Self <: FromMap[?], T](x: Self & FromMap[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromMap[?], T] (val x: Self & FromMap[T]) extends AnyVal {
       
       inline def setFromMap(value: Any => T): Self = StObject.set(x, "fromMap", js.Any.fromFunction1(value))
     }

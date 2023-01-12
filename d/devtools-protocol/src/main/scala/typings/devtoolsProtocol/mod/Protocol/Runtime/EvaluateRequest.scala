@@ -110,7 +110,8 @@ object EvaluateRequest {
     __obj.asInstanceOf[EvaluateRequest]
   }
   
-  extension [Self <: EvaluateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowUnsafeEvalBlockedByCSP(value: Boolean): Self = StObject.set(x, "allowUnsafeEvalBlockedByCSP", value.asInstanceOf[js.Any])
     

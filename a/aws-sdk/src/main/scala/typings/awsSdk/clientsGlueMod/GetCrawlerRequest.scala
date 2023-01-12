@@ -18,7 +18,8 @@ object GetCrawlerRequest {
     __obj.asInstanceOf[GetCrawlerRequest]
   }
   
-  extension [Self <: GetCrawlerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCrawlerRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

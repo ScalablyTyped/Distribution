@@ -22,7 +22,8 @@ object FleetEngineTripLocationProviderUpdateEvent {
     __obj.asInstanceOf[FleetEngineTripLocationProviderUpdateEvent]
   }
   
-  extension [Self <: FleetEngineTripLocationProviderUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetEngineTripLocationProviderUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setTrip(value: Trip): Self = StObject.set(x, "trip", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MatchesNavSubmenu {
     __obj.asInstanceOf[MatchesNavSubmenu]
   }
   
-  extension [Self <: MatchesNavSubmenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchesNavSubmenu] (val x: Self) extends AnyVal {
     
     inline def setMatchesNavSubmenu(value: typings.std.Element): Self = StObject.set(x, "matchesNavSubmenu", value.asInstanceOf[js.Any])
     

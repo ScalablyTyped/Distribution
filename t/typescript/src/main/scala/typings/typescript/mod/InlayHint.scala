@@ -23,7 +23,8 @@ object InlayHint {
     __obj.asInstanceOf[InlayHint]
   }
   
-  extension [Self <: InlayHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHint] (val x: Self) extends AnyVal {
     
     inline def setKind(value: InlayHintKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

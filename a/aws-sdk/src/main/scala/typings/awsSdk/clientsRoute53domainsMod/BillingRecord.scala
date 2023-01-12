@@ -38,7 +38,8 @@ object BillingRecord {
     __obj.asInstanceOf[BillingRecord]
   }
   
-  extension [Self <: BillingRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingRecord] (val x: Self) extends AnyVal {
     
     inline def setBillDate(value: js.Date): Self = StObject.set(x, "BillDate", value.asInstanceOf[js.Any])
     

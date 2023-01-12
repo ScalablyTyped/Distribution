@@ -33,7 +33,8 @@ object CustomPropertyArray {
     __obj.asInstanceOf[CustomPropertyArray]
   }
   
-  extension [Self <: CustomPropertyArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyArray] (val x: Self) extends AnyVal {
     
     inline def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     

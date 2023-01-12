@@ -18,7 +18,8 @@ object EndpointBatchRequest {
     __obj.asInstanceOf[EndpointBatchRequest]
   }
   
-  extension [Self <: EndpointBatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointBatchRequest] (val x: Self) extends AnyVal {
     
     inline def setItem(value: ListOfEndpointBatchItem): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     

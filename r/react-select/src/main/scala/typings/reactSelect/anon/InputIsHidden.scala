@@ -30,7 +30,8 @@ object InputIsHidden {
     __obj.asInstanceOf[InputIsHidden]
   }
   
-  extension [Self <: InputIsHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputIsHidden] (val x: Self) extends AnyVal {
     
     inline def setAriaSelection(value: typings.reactSelect.distDeclarationsSrcAccessibilityMod.AriaSelection[Any, Boolean]): Self = StObject.set(x, "ariaSelection", value.asInstanceOf[js.Any])
     

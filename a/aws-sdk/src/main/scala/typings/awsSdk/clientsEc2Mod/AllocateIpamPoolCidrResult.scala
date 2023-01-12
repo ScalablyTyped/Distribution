@@ -18,7 +18,8 @@ object AllocateIpamPoolCidrResult {
     __obj.asInstanceOf[AllocateIpamPoolCidrResult]
   }
   
-  extension [Self <: AllocateIpamPoolCidrResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateIpamPoolCidrResult] (val x: Self) extends AnyVal {
     
     inline def setIpamPoolAllocation(value: IpamPoolAllocation): Self = StObject.set(x, "IpamPoolAllocation", value.asInstanceOf[js.Any])
     

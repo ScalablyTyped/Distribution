@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Altitude]
     }
     
-    extension [Self <: Altitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[DefineCommand]
     }
     
-    extension [Self <: DefineCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineCommand] (val x: Self) extends AnyVal {
       
       inline def setDefineCommand(value: (String, String, String) => Unit): Self = StObject.set(x, "defineCommand", js.Any.fromFunction3(value))
     }

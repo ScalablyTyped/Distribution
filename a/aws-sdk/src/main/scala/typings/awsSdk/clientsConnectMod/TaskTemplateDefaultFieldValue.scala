@@ -23,7 +23,8 @@ object TaskTemplateDefaultFieldValue {
     __obj.asInstanceOf[TaskTemplateDefaultFieldValue]
   }
   
-  extension [Self <: TaskTemplateDefaultFieldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskTemplateDefaultFieldValue] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: TaskTemplateFieldValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

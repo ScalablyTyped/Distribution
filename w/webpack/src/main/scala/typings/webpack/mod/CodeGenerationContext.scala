@@ -65,7 +65,8 @@ object CodeGenerationContext {
     __obj.asInstanceOf[CodeGenerationContext]
   }
   
-  extension [Self <: CodeGenerationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenerationContext] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

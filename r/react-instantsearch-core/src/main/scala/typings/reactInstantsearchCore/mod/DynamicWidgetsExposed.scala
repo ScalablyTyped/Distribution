@@ -56,7 +56,8 @@ object DynamicWidgetsExposed {
     __obj.asInstanceOf[DynamicWidgetsExposed]
   }
   
-  extension [Self <: DynamicWidgetsExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicWidgetsExposed] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

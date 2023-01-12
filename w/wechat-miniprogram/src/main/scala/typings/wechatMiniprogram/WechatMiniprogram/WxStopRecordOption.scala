@@ -22,7 +22,8 @@ object WxStopRecordOption {
     __obj.asInstanceOf[WxStopRecordOption]
   }
   
-  extension [Self <: WxStopRecordOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WxStopRecordOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DeleteTrafficMirrorFilterResult {
     __obj.asInstanceOf[DeleteTrafficMirrorFilterResult]
   }
   
-  extension [Self <: DeleteTrafficMirrorFilterResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrafficMirrorFilterResult] (val x: Self) extends AnyVal {
     
     inline def setTrafficMirrorFilterId(value: String): Self = StObject.set(x, "TrafficMirrorFilterId", value.asInstanceOf[js.Any])
     

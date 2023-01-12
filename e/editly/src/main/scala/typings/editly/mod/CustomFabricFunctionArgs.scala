@@ -25,7 +25,8 @@ object CustomFabricFunctionArgs {
     __obj.asInstanceOf[CustomFabricFunctionArgs]
   }
   
-  extension [Self <: CustomFabricFunctionArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFabricFunctionArgs] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

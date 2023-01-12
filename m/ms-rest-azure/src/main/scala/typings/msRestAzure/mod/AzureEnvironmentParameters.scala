@@ -122,7 +122,8 @@ object AzureEnvironmentParameters {
     __obj.asInstanceOf[AzureEnvironmentParameters]
   }
   
-  extension [Self <: AzureEnvironmentParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureEnvironmentParameters] (val x: Self) extends AnyVal {
     
     inline def setActiveDirectoryEndpointUrl(value: String): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
     

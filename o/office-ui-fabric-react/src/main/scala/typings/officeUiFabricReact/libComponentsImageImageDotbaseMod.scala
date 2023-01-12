@@ -64,7 +64,8 @@ object libComponentsImageImageDotbaseMod {
       __obj.asInstanceOf[IImageState]
     }
     
-    extension [Self <: IImageState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IImageState] (val x: Self) extends AnyVal {
       
       inline def setLoadState(value: ImageLoadState): Self = StObject.set(x, "loadState", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object CommuteInfo {
     __obj.asInstanceOf[CommuteInfo]
   }
   
-  extension [Self <: CommuteInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommuteInfo] (val x: Self) extends AnyVal {
     
     inline def setJobLocation(value: Location): Self = StObject.set(x, "jobLocation", value.asInstanceOf[js.Any])
     

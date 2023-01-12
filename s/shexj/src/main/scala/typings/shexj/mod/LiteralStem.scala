@@ -26,7 +26,8 @@ object LiteralStem {
     __obj.asInstanceOf[LiteralStem]
   }
   
-  extension [Self <: LiteralStem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralStem] (val x: Self) extends AnyVal {
     
     inline def setStem(value: STRING): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     

@@ -201,7 +201,8 @@ object libTypesReanimated2CoreMod {
       __obj.asInstanceOf[ReanimatedConsole]
     }
     
-    extension [Self <: ReanimatedConsole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReanimatedConsole] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       

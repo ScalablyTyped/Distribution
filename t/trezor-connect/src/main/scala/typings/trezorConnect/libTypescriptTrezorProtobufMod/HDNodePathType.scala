@@ -17,7 +17,8 @@ object HDNodePathType {
     __obj.asInstanceOf[HDNodePathType]
   }
   
-  extension [Self <: HDNodePathType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HDNodePathType] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object AssociateS3ResourcesResult {
     __obj.asInstanceOf[AssociateS3ResourcesResult]
   }
   
-  extension [Self <: AssociateS3ResourcesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateS3ResourcesResult] (val x: Self) extends AnyVal {
     
     inline def setFailedS3Resources(value: FailedS3Resources): Self = StObject.set(x, "failedS3Resources", value.asInstanceOf[js.Any])
     

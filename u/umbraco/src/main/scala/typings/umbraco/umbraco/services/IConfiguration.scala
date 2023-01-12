@@ -29,7 +29,8 @@ object IConfiguration {
     __obj.asInstanceOf[IConfiguration]
   }
   
-  extension [Self <: IConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: IDimension): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

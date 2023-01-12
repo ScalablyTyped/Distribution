@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[Element[V]]
     }
     
-    extension [Self <: Element[?], V /* <: String | js.typedarray.Uint8Array */](x: Self & Element[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element[?], V /* <: String | js.typedarray.Uint8Array */] (val x: Self & Element[V]) extends AnyVal {
       
       inline def setChildren(value: js.Array[Element[V]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[ElementInput]
     }
     
-    extension [Self <: ElementInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementInput] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ElementInput]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

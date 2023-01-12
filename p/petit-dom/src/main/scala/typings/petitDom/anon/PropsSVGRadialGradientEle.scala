@@ -664,7 +664,8 @@ object PropsSVGRadialGradientEle {
     __obj.asInstanceOf[PropsSVGRadialGradientEle]
   }
   
-  extension [Self <: PropsSVGRadialGradientEle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGRadialGradientEle] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

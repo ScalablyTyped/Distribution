@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ConsiderBuiltins]
     }
     
-    extension [Self <: ConsiderBuiltins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsiderBuiltins] (val x: Self) extends AnyVal {
       
       inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[ConsiderBuiltinsExtensions]
     }
     
-    extension [Self <: ConsiderBuiltinsExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsiderBuiltinsExtensions] (val x: Self) extends AnyVal {
       
       inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

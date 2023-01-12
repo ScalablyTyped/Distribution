@@ -63,7 +63,8 @@ object DomainNameConfiguration {
     __obj.asInstanceOf[DomainNameConfiguration]
   }
   
-  extension [Self <: DomainNameConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainNameConfiguration] (val x: Self) extends AnyVal {
     
     inline def setApiGatewayDomainName(value: string): Self = StObject.set(x, "ApiGatewayDomainName", value.asInstanceOf[js.Any])
     

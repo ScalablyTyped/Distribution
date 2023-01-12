@@ -53,7 +53,8 @@ object typesLibDropdownMenuMod {
       __obj.asInstanceOf[DropdownMenuProps]
     }
     
-    extension [Self <: DropdownMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownMenuProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | HTMLElement | RefObject[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

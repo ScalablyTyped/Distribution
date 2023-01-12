@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[uuid]
     }
     
-    extension [Self <: uuid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uuid] (val x: Self) extends AnyVal {
       
       inline def setEquals_(value: uuid => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       

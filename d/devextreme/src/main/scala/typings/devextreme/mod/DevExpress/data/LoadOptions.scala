@@ -98,7 +98,8 @@ object LoadOptions {
     __obj.asInstanceOf[LoadOptions[T]]
   }
   
-  extension [Self <: LoadOptions[?], T](x: Self & LoadOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOptions[?], T] (val x: Self & LoadOptions[T]) extends AnyVal {
     
     inline def setCustomQueryParams(value: Any): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     

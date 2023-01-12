@@ -23,7 +23,8 @@ object InstanceInformationFilter {
     __obj.asInstanceOf[InstanceInformationFilter]
   }
   
-  extension [Self <: InstanceInformationFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceInformationFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: InstanceInformationFilterKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

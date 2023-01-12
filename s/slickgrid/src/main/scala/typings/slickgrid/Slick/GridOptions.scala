@@ -241,7 +241,8 @@ object GridOptions {
     __obj.asInstanceOf[GridOptions[T]]
   }
   
-  extension [Self <: GridOptions[?], T /* <: SlickData */](x: Self & GridOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOptions[?], T /* <: SlickData */] (val x: Self & GridOptions[T]) extends AnyVal {
     
     inline def setAddNewRowCssClass(value: String): Self = StObject.set(x, "addNewRowCssClass", value.asInstanceOf[js.Any])
     

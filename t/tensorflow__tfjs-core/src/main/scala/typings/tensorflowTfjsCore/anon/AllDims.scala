@@ -19,7 +19,8 @@ object AllDims {
     __obj.asInstanceOf[AllDims]
   }
   
-  extension [Self <: AllDims](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllDims] (val x: Self) extends AnyVal {
     
     inline def setAllDims(value: js.Array[String]): Self = StObject.set(x, "allDims", value.asInstanceOf[js.Any])
     

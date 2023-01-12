@@ -32,7 +32,8 @@ object OpenDocumentOptions {
     __obj.asInstanceOf[OpenDocumentOptions]
   }
   
-  extension [Self <: OpenDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

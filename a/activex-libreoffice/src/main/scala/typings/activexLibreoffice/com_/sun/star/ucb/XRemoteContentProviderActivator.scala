@@ -40,7 +40,8 @@ object XRemoteContentProviderActivator {
     __obj.asInstanceOf[XRemoteContentProviderActivator]
   }
   
-  extension [Self <: XRemoteContentProviderActivator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderActivator] (val x: Self) extends AnyVal {
     
     inline def setActivateRemoteContentProviders(value: () => XContentProviderManager): Self = StObject.set(x, "activateRemoteContentProviders", js.Any.fromFunction0(value))
   }

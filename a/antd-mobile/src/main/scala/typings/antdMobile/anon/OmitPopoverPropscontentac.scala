@@ -204,7 +204,8 @@ object OmitPopoverPropscontentac {
     __obj.asInstanceOf[OmitPopoverPropscontentac]
   }
   
-  extension [Self <: OmitPopoverPropscontentac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPopoverPropscontentac] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[typings.antdMobile.esComponentsPopoverPopoverMenuMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

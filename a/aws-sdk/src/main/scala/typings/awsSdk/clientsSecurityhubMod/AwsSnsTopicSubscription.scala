@@ -23,7 +23,8 @@ object AwsSnsTopicSubscription {
     __obj.asInstanceOf[AwsSnsTopicSubscription]
   }
   
-  extension [Self <: AwsSnsTopicSubscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSnsTopicSubscription] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: NonEmptyString): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

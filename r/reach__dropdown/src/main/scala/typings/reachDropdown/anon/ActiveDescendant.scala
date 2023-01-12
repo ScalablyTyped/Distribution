@@ -17,7 +17,8 @@ object ActiveDescendant {
     __obj.asInstanceOf[ActiveDescendant]
   }
   
-  extension [Self <: ActiveDescendant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveDescendant] (val x: Self) extends AnyVal {
     
     inline def setActiveDescendant(value: String): Self = StObject.set(x, "activeDescendant", value.asInstanceOf[js.Any])
     

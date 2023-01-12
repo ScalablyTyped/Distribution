@@ -28,7 +28,8 @@ object ProtectedAccessSuspendingEventArgs {
     __obj.asInstanceOf[ProtectedAccessSuspendingEventArgs]
   }
   
-  extension [Self <: ProtectedAccessSuspendingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectedAccessSuspendingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

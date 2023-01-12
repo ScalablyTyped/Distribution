@@ -28,7 +28,8 @@ object ChangeMessageVisibilityRequest {
     __obj.asInstanceOf[ChangeMessageVisibilityRequest]
   }
   
-  extension [Self <: ChangeMessageVisibilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeMessageVisibilityRequest] (val x: Self) extends AnyVal {
     
     inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     

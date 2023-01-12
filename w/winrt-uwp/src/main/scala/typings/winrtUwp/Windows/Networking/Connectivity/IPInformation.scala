@@ -20,7 +20,8 @@ object IPInformation {
     __obj.asInstanceOf[IPInformation]
   }
   
-  extension [Self <: IPInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPInformation] (val x: Self) extends AnyVal {
     
     inline def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
     

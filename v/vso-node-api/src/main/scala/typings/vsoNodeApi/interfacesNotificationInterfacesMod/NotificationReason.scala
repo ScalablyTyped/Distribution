@@ -18,7 +18,8 @@ object NotificationReason {
     __obj.asInstanceOf[NotificationReason]
   }
   
-  extension [Self <: NotificationReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationReason] (val x: Self) extends AnyVal {
     
     inline def setNotificationReasonType(value: NotificationReasonType): Self = StObject.set(x, "notificationReasonType", value.asInstanceOf[js.Any])
     

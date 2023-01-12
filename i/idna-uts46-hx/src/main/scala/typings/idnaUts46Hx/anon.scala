@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[IDN]
     }
     
-    extension [Self <: IDN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDN] (val x: Self) extends AnyVal {
       
       inline def setIDN(value: String): Self = StObject.set(x, "IDN", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[IDNPC]
     }
     
-    extension [Self <: IDNPC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDNPC] (val x: Self) extends AnyVal {
       
       inline def setIDN(value: String | js.Array[String]): Self = StObject.set(x, "IDN", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[PC]
     }
     
-    extension [Self <: PC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PC] (val x: Self) extends AnyVal {
       
       inline def setIDN(value: js.Array[String]): Self = StObject.set(x, "IDN", value.asInstanceOf[js.Any])
       
@@ -92,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Transitional]
     }
     
-    extension [Self <: Transitional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transitional] (val x: Self) extends AnyVal {
       
       inline def setTransitional(value: Boolean): Self = StObject.set(x, "transitional", value.asInstanceOf[js.Any])
       
@@ -113,7 +117,8 @@ object anon {
       __obj.asInstanceOf[UseStd3ASCII]
     }
     
-    extension [Self <: UseStd3ASCII](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseStd3ASCII] (val x: Self) extends AnyVal {
       
       inline def setUseStd3ASCII(value: Boolean): Self = StObject.set(x, "useStd3ASCII", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object ContinueUpdateRollbackInput {
     __obj.asInstanceOf[ContinueUpdateRollbackInput]
   }
   
-  extension [Self <: ContinueUpdateRollbackInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueUpdateRollbackInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -148,7 +148,8 @@ object distLibClusterMod {
       __obj.asInstanceOf[RedisClusterClientOptions]
     }
     
-    extension [Self <: RedisClusterClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClusterClientOptions] (val x: Self) extends AnyVal {
       
       inline def setCommandsQueueMaxLength(value: Double): Self = StObject.set(x, "commandsQueueMaxLength", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object distLibClusterMod {
       __obj.asInstanceOf[RedisClusterOptions[M, F, S]]
     }
     
-    extension [Self <: RedisClusterOptions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */](x: Self & (RedisClusterOptions[M, F, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClusterOptions[?, ?, ?], M /* <: RedisModules */, F /* <: RedisFunctions */, S /* <: RedisScripts */] (val x: Self & (RedisClusterOptions[M, F, S])) extends AnyVal {
       
       inline def setDefaults(value: PartialRedisClusterClient): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -14549,7 +14551,8 @@ object distLibClusterMod {
   }
   object WithCommands {
     
-    extension [Self <: WithCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithCommands] (val x: Self) extends AnyVal {
       
       inline def setAPPEND(
         value: /* args */ (Parameters[

@@ -113,7 +113,8 @@ object TraceSummary {
     __obj.asInstanceOf[TraceSummary]
   }
   
-  extension [Self <: TraceSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceSummary] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Annotations): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
     

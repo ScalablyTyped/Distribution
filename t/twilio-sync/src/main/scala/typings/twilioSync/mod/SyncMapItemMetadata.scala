@@ -22,7 +22,8 @@ object SyncMapItemMetadata {
     __obj.asInstanceOf[SyncMapItemMetadata]
   }
   
-  extension [Self <: SyncMapItemMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncMapItemMetadata] (val x: Self) extends AnyVal {
     
     inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     

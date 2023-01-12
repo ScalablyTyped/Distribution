@@ -16,7 +16,8 @@ object HttpConfig {
     __obj.asInstanceOf[HttpConfig]
   }
   
-  extension [Self <: HttpConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpConfig] (val x: Self) extends AnyVal {
     
     inline def setHttpEnabledState(value: String): Self = StObject.set(x, "httpEnabledState", value.asInstanceOf[js.Any])
     

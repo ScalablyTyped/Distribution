@@ -19,7 +19,8 @@ object PanoramaPov {
     __obj.asInstanceOf[PanoramaPov]
   }
   
-  extension [Self <: PanoramaPov](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanoramaPov] (val x: Self) extends AnyVal {
     
     inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object sapUiModelFilterProcessorMod extends Shortcut {
       __obj.asInstanceOf[FilterProcessor]
     }
     
-    extension [Self <: FilterProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterProcessor] (val x: Self) extends AnyVal {
       
       inline def setGroupFilters(
         value: js.Array[typings.openui5.sapUiModelFilterMod.default] => typings.openui5.sapUiModelFilterMod.default

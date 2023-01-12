@@ -37,7 +37,8 @@ object ChooseCityOptions {
     __obj.asInstanceOf[ChooseCityOptions]
   }
   
-  extension [Self <: ChooseCityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseCityOptions] (val x: Self) extends AnyVal {
     
     inline def setCities(value: js.Array[City]): Self = StObject.set(x, "cities", value.asInstanceOf[js.Any])
     

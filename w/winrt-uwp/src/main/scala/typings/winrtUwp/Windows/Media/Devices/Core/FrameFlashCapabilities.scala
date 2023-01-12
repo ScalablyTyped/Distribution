@@ -23,7 +23,8 @@ object FrameFlashCapabilities {
     __obj.asInstanceOf[FrameFlashCapabilities]
   }
   
-  extension [Self <: FrameFlashCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameFlashCapabilities] (val x: Self) extends AnyVal {
     
     inline def setPowerSupported(value: Boolean): Self = StObject.set(x, "powerSupported", value.asInstanceOf[js.Any])
     

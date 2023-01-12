@@ -19,7 +19,8 @@ object Listener {
     __obj.asInstanceOf[Listener]
   }
   
-  extension [Self <: Listener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
     
     inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object AcknowledgeOrderReceiptRequest {
     __obj.asInstanceOf[AcknowledgeOrderReceiptRequest]
   }
   
-  extension [Self <: AcknowledgeOrderReceiptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeOrderReceiptRequest] (val x: Self) extends AnyVal {
     
     inline def setOrderArn(value: Arn): Self = StObject.set(x, "orderArn", value.asInstanceOf[js.Any])
   }

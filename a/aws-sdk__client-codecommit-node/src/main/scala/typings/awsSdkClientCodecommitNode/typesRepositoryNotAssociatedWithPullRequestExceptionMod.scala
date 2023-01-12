@@ -23,7 +23,8 @@ object typesRepositoryNotAssociatedWithPullRequestExceptionMod {
       __obj.asInstanceOf[RepositoryNotAssociatedWithPullRequestException]
     }
     
-    extension [Self <: RepositoryNotAssociatedWithPullRequestException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryNotAssociatedWithPullRequestException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNotAssociatedWithPullRequestException

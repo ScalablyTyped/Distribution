@@ -33,7 +33,8 @@ object AwsCredentials {
     __obj.asInstanceOf[AwsCredentials]
   }
   
-  extension [Self <: AwsCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: AccessKeyId): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

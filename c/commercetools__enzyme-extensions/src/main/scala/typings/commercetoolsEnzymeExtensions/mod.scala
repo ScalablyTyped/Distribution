@@ -44,7 +44,8 @@ object mod {
         __obj.asInstanceOf[UntilOptions]
       }
       
-      extension [Self <: UntilOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UntilOptions] (val x: Self) extends AnyVal {
         
         inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       }

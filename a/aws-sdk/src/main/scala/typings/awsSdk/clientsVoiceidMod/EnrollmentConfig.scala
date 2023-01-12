@@ -23,7 +23,8 @@ object EnrollmentConfig {
     __obj.asInstanceOf[EnrollmentConfig]
   }
   
-  extension [Self <: EnrollmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollmentConfig] (val x: Self) extends AnyVal {
     
     inline def setExistingEnrollmentAction(value: ExistingEnrollmentAction): Self = StObject.set(x, "ExistingEnrollmentAction", value.asInstanceOf[js.Any])
     

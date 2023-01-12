@@ -22,7 +22,8 @@ object ConfigDir {
     __obj.asInstanceOf[ConfigDir]
   }
   
-  extension [Self <: ConfigDir](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigDir] (val x: Self) extends AnyVal {
     
     inline def setConfigDir(value: Path): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object S3RecordingConfig {
     __obj.asInstanceOf[S3RecordingConfig]
   }
   
-  extension [Self <: S3RecordingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3RecordingConfig] (val x: Self) extends AnyVal {
     
     inline def setBucketArn(value: BucketArn): Self = StObject.set(x, "bucketArn", value.asInstanceOf[js.Any])
     

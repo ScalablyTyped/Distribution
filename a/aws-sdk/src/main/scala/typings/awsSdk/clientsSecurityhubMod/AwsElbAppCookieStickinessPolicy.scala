@@ -23,7 +23,8 @@ object AwsElbAppCookieStickinessPolicy {
     __obj.asInstanceOf[AwsElbAppCookieStickinessPolicy]
   }
   
-  extension [Self <: AwsElbAppCookieStickinessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbAppCookieStickinessPolicy] (val x: Self) extends AnyVal {
     
     inline def setCookieName(value: NonEmptyString): Self = StObject.set(x, "CookieName", value.asInstanceOf[js.Any])
     

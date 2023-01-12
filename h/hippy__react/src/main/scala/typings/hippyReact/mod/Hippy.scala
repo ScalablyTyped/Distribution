@@ -22,7 +22,8 @@ object Hippy {
     __obj.asInstanceOf[Hippy]
   }
   
-  extension [Self <: Hippy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hippy] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: HippyReactConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

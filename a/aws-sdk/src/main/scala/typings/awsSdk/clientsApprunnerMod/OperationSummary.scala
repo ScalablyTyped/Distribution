@@ -48,7 +48,8 @@ object OperationSummary {
     __obj.asInstanceOf[OperationSummary]
   }
   
-  extension [Self <: OperationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationSummary] (val x: Self) extends AnyVal {
     
     inline def setEndedAt(value: js.Date): Self = StObject.set(x, "EndedAt", value.asInstanceOf[js.Any])
     

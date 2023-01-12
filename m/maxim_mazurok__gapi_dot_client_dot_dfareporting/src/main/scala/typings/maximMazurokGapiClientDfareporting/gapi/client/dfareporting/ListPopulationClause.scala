@@ -16,7 +16,8 @@ object ListPopulationClause {
     __obj.asInstanceOf[ListPopulationClause]
   }
   
-  extension [Self <: ListPopulationClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPopulationClause] (val x: Self) extends AnyVal {
     
     inline def setTerms(value: js.Array[ListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     

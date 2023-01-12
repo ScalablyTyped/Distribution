@@ -26,7 +26,8 @@ object IWebDriverCookie {
     __obj.asInstanceOf[IWebDriverCookie]
   }
   
-  extension [Self <: IWebDriverCookie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebDriverCookie] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

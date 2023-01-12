@@ -21,7 +21,8 @@ object FindByNameOptions {
     __obj.asInstanceOf[FindByNameOptions]
   }
   
-  extension [Self <: FindByNameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindByNameOptions] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

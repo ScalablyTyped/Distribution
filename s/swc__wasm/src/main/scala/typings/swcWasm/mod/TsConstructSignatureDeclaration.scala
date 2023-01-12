@@ -27,7 +27,8 @@ object TsConstructSignatureDeclaration {
     __obj.asInstanceOf[TsConstructSignatureDeclaration]
   }
   
-  extension [Self <: TsConstructSignatureDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsConstructSignatureDeclaration] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[TsFnParameter]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

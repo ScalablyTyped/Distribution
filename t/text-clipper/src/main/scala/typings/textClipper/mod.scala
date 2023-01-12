@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ClipHtmlOptions]
     }
     
-    extension [Self <: ClipHtmlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipHtmlOptions] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: `true`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[ClipPlainTextOptions]
     }
     
-    extension [Self <: ClipPlainTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipPlainTextOptions] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: `false`): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[CommonClipOptions]
     }
     
-    extension [Self <: CommonClipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonClipOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakWords(value: Boolean): Self = StObject.set(x, "breakWords", value.asInstanceOf[js.Any])
       

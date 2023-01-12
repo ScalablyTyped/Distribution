@@ -274,7 +274,8 @@ object BingMapsImageryProvider {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
       

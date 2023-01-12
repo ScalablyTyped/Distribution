@@ -27,7 +27,8 @@ object INDRegistrationCompletedEventArgs {
     __obj.asInstanceOf[INDRegistrationCompletedEventArgs]
   }
   
-  extension [Self <: INDRegistrationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDRegistrationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResponseCustomData(value: INDCustomData): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ActionList {
     __obj.asInstanceOf[ActionList]
   }
   
-  extension [Self <: ActionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionList] (val x: Self) extends AnyVal {
     
     inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     

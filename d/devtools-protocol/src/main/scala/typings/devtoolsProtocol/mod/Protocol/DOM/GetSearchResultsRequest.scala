@@ -29,7 +29,8 @@ object GetSearchResultsRequest {
     __obj.asInstanceOf[GetSearchResultsRequest]
   }
   
-  extension [Self <: GetSearchResultsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSearchResultsRequest] (val x: Self) extends AnyVal {
     
     inline def setFromIndex(value: integer): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     

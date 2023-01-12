@@ -19,7 +19,8 @@ object StockChartNavigatorHint {
     __obj.asInstanceOf[StockChartNavigatorHint]
   }
   
-  extension [Self <: StockChartNavigatorHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartNavigatorHint] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

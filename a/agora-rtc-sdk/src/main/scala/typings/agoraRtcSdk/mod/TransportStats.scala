@@ -55,7 +55,8 @@ object TransportStats {
     __obj.asInstanceOf[TransportStats]
   }
   
-  extension [Self <: TransportStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportStats] (val x: Self) extends AnyVal {
     
     inline def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
     

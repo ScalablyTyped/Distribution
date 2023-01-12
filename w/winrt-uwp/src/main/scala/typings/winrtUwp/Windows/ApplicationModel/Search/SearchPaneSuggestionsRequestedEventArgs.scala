@@ -31,7 +31,8 @@ object SearchPaneSuggestionsRequestedEventArgs {
     __obj.asInstanceOf[SearchPaneSuggestionsRequestedEventArgs]
   }
   
-  extension [Self <: SearchPaneSuggestionsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPaneSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object RenderBootstrapContext {
     __obj.asInstanceOf[RenderBootstrapContext]
   }
   
-  extension [Self <: RenderBootstrapContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderBootstrapContext] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

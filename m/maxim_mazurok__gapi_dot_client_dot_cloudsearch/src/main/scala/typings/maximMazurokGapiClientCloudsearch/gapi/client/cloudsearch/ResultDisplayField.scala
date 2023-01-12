@@ -22,7 +22,8 @@ object ResultDisplayField {
     __obj.asInstanceOf[ResultDisplayField]
   }
   
-  extension [Self <: ResultDisplayField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultDisplayField] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

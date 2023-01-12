@@ -19,7 +19,8 @@ object UIkitSlidershowElement {
     __obj.asInstanceOf[UIkitSlidershowElement]
   }
   
-  extension [Self <: UIkitSlidershowElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitSlidershowElement] (val x: Self) extends AnyVal {
     
     inline def setShow(value: Double => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     

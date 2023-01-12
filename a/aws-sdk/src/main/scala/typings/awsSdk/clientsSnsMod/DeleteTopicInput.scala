@@ -18,7 +18,8 @@ object DeleteTopicInput {
     __obj.asInstanceOf[DeleteTopicInput]
   }
   
-  extension [Self <: DeleteTopicInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTopicInput] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }

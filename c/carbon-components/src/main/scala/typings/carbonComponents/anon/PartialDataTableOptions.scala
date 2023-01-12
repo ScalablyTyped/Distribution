@@ -80,7 +80,8 @@ object PartialDataTableOptions {
     __obj.asInstanceOf[PartialDataTableOptions]
   }
   
-  extension [Self <: PartialDataTableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDataTableOptions] (val x: Self) extends AnyVal {
     
     inline def setClassActionBarActive(value: String): Self = StObject.set(x, "classActionBarActive", value.asInstanceOf[js.Any])
     

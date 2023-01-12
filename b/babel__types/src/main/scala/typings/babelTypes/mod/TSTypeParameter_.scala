@@ -32,7 +32,8 @@ object TSTypeParameter_ {
     __obj.asInstanceOf[TSTypeParameter_]
   }
   
-  extension [Self <: TSTypeParameter_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeParameter_] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

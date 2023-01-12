@@ -19,7 +19,8 @@ object ViolatingResource {
     __obj.asInstanceOf[ViolatingResource]
   }
   
-  extension [Self <: ViolatingResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolatingResource] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

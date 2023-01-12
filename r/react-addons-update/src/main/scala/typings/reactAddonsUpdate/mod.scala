@@ -49,7 +49,8 @@ object mod {
         __obj.asInstanceOf[UpdateArraySpec]
       }
       
-      extension [Self <: UpdateArraySpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateArraySpec] (val x: Self) extends AnyVal {
         
         inline def set$push(value: js.Array[Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object mod {
         __obj.asInstanceOf[UpdateSpecCommand]
       }
       
-      extension [Self <: UpdateSpecCommand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateSpecCommand] (val x: Self) extends AnyVal {
         
         inline def set$apply(value: /* value */ Any => Any): Self = StObject.set(x, "$apply", js.Any.fromFunction1(value))
         

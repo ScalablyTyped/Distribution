@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Bitmapsreference]
     }
     
-    extension [Self <: Bitmapsreference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bitmapsreference] (val x: Self) extends AnyVal {
       
       inline def setBitmaps_reference(value: String): Self = StObject.set(x, "bitmaps_reference", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Blue]
     }
     
-    extension [Self <: Blue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blue] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: typings.backstopjs.mod.Config | String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object anon {
       __obj.asInstanceOf[ErrorColor]
     }
     
-    extension [Self <: ErrorColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorColor] (val x: Self) extends AnyVal {
       
       inline def setErrorColor(value: Blue): Self = StObject.set(x, "errorColor", value.asInstanceOf[js.Any])
       
@@ -203,7 +208,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

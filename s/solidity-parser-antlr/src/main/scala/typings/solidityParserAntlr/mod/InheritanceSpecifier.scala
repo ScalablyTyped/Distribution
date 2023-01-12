@@ -24,7 +24,8 @@ object InheritanceSpecifier {
     __obj.asInstanceOf[InheritanceSpecifier]
   }
   
-  extension [Self <: InheritanceSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InheritanceSpecifier] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

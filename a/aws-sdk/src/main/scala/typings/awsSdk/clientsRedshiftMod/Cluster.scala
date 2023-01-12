@@ -273,7 +273,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setAllowVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowVersionUpgrade", value.asInstanceOf[js.Any])
     

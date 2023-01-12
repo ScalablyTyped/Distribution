@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ElementsCreateOptionschil]
     }
     
-    extension [Self <: ElementsCreateOptionschil](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementsCreateOptionschil] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object anon {
       __obj.asInstanceOf[childrenReactNodeundefine]
     }
     
-    extension [Self <: childrenReactNodeundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: childrenReactNodeundefine] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object anon {
       __obj.asInstanceOf[childrenReactNodeundefineApiKey]
     }
     
-    extension [Self <: childrenReactNodeundefineApiKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: childrenReactNodeundefineApiKey] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

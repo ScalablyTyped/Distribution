@@ -39,7 +39,8 @@ object EmailMailboxPolicies {
     __obj.asInstanceOf[EmailMailboxPolicies]
   }
   
-  extension [Self <: EmailMailboxPolicies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxPolicies] (val x: Self) extends AnyVal {
     
     inline def setAllowSmimeSoftCertificates(value: Boolean): Self = StObject.set(x, "allowSmimeSoftCertificates", value.asInstanceOf[js.Any])
     

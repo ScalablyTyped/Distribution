@@ -49,7 +49,8 @@ object AuthRequiredEvent {
     __obj.asInstanceOf[AuthRequiredEvent]
   }
   
-  extension [Self <: AuthRequiredEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthRequiredEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     

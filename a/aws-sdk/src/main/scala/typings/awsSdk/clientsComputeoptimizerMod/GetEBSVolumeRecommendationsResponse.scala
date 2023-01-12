@@ -28,7 +28,8 @@ object GetEBSVolumeRecommendationsResponse {
     __obj.asInstanceOf[GetEBSVolumeRecommendationsResponse]
   }
   
-  extension [Self <: GetEBSVolumeRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEBSVolumeRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: GetRecommendationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeDetectMitigationActionsTaskResponse {
     __obj.asInstanceOf[DescribeDetectMitigationActionsTaskResponse]
   }
   
-  extension [Self <: DescribeDetectMitigationActionsTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDetectMitigationActionsTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskSummary(value: DetectMitigationActionsTaskSummary): Self = StObject.set(x, "taskSummary", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object HmacKey {
     __obj.asInstanceOf[HmacKey]
   }
   
-  extension [Self <: HmacKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacKey] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

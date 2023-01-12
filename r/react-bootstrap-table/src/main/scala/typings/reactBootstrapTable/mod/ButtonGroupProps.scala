@@ -39,7 +39,8 @@ object ButtonGroupProps {
     __obj.asInstanceOf[ButtonGroupProps]
   }
   
-  extension [Self <: ButtonGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
     
     inline def setDeleteBtn(value: ReactElement): Self = StObject.set(x, "deleteBtn", value.asInstanceOf[js.Any])
     

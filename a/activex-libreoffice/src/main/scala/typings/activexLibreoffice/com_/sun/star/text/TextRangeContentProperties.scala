@@ -63,7 +63,8 @@ object TextRangeContentProperties {
     __obj.asInstanceOf[TextRangeContentProperties]
   }
   
-  extension [Self <: TextRangeContentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRangeContentProperties] (val x: Self) extends AnyVal {
     
     inline def setCell(value: XCell): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     

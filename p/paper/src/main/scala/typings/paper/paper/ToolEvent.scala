@@ -89,7 +89,8 @@ object ToolEvent {
     __obj.asInstanceOf[ToolEvent]
   }
   
-  extension [Self <: ToolEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolEvent] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

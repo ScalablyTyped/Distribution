@@ -26,7 +26,8 @@ object AbsolutePath {
     __obj.asInstanceOf[AbsolutePath]
   }
   
-  extension [Self <: AbsolutePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbsolutePath] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

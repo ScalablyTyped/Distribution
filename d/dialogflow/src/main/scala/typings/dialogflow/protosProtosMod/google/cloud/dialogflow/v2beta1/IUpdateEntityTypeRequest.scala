@@ -24,7 +24,8 @@ object IUpdateEntityTypeRequest {
     __obj.asInstanceOf[IUpdateEntityTypeRequest]
   }
   
-  extension [Self <: IUpdateEntityTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateEntityTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: IEntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

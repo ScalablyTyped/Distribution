@@ -104,7 +104,8 @@ object srcMod {
       __obj.asInstanceOf[CanvasBarProps]
     }
     
-    extension [Self <: CanvasBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasBarProps] (val x: Self) extends AnyVal {
       
       inline def setAlignment(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryBarAlignmentType */ Any
@@ -183,7 +184,8 @@ object srcMod {
       __obj.asInstanceOf[CanvasContextValue]
     }
     
-    extension [Self <: CanvasContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasContextValue] (val x: Self) extends AnyVal {
       
       inline def setCanvasRef(value: RefObject[HTMLCanvasElement]): Self = StObject.set(x, "canvasRef", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object srcMod {
       __obj.asInstanceOf[CanvasCurveProps]
     }
     
-    extension [Self <: CanvasCurveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasCurveProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StringOrCallback */ Any
@@ -260,7 +263,8 @@ object srcMod {
       __obj.asInstanceOf[CanvasGroupProps]
     }
     
-    extension [Self <: CanvasGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -312,7 +316,8 @@ object srcMod {
       __obj.asInstanceOf[CanvasPointProps]
     }
     
-    extension [Self <: CanvasPointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasPointProps] (val x: Self) extends AnyVal {
       
       inline def setDatum(value: Any): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       

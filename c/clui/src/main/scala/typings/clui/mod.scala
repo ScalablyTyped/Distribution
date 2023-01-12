@@ -163,7 +163,8 @@ object mod {
       __obj.asInstanceOf[LineBufferOptions]
     }
     
-    extension [Self <: LineBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double | console): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

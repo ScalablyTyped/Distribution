@@ -15,7 +15,8 @@ object Refreshtoken {
     __obj.asInstanceOf[Refreshtoken]
   }
   
-  extension [Self <: Refreshtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refreshtoken] (val x: Self) extends AnyVal {
     
     inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object NodesInfoNodeInfoOSCPU {
     __obj.asInstanceOf[NodesInfoNodeInfoOSCPU]
   }
   
-  extension [Self <: NodesInfoNodeInfoOSCPU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoOSCPU] (val x: Self) extends AnyVal {
     
     inline def setCache_size(value: String): Self = StObject.set(x, "cache_size", value.asInstanceOf[js.Any])
     

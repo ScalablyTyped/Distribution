@@ -33,7 +33,8 @@ object Extend {
     __obj.asInstanceOf[Extend]
   }
   
-  extension [Self <: Extend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
     
     inline def setSelectors(value: js.Array[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ReportType {
     __obj.asInstanceOf[ReportType]
   }
   
-  extension [Self <: ReportType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportType] (val x: Self) extends AnyVal {
     
     inline def setDeprecateTime(value: String): Self = StObject.set(x, "deprecateTime", value.asInstanceOf[js.Any])
     

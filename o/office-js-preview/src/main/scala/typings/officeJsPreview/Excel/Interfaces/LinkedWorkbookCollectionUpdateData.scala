@@ -27,7 +27,8 @@ object LinkedWorkbookCollectionUpdateData {
     __obj.asInstanceOf[LinkedWorkbookCollectionUpdateData]
   }
   
-  extension [Self <: LinkedWorkbookCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedWorkbookCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[LinkedWorkbookData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

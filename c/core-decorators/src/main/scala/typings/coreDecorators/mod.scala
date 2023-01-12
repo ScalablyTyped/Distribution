@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[DeprecateOption]
     }
     
-    extension [Self <: DeprecateOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecateOption] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

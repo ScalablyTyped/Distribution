@@ -57,7 +57,8 @@ object libSecurityWssecuritycertMod {
       __obj.asInstanceOf[IWSSecurityCertOptions]
     }
     
-    extension [Self <: IWSSecurityCertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWSSecurityCertOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalReferences(value: js.Array[String]): Self = StObject.set(x, "additionalReferences", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object libSecurityWssecuritycertMod {
       __obj.asInstanceOf[IXmlSignerOptions]
     }
     
-    extension [Self <: IXmlSignerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlSignerOptions] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

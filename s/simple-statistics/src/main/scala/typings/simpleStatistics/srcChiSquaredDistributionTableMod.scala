@@ -225,7 +225,8 @@ object srcChiSquaredDistributionTableMod {
       __obj.asInstanceOf[DistributionTable]
     }
     
-    extension [Self <: DistributionTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributionTable] (val x: Self) extends AnyVal {
       
       inline def set0Dot005(value: Double): Self = StObject.set(x, "0.005", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object TypeofRangeSlider {
     __obj.asInstanceOf[TypeofRangeSlider]
   }
   
-  extension [Self <: TypeofRangeSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRangeSlider] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => RangeSlider): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

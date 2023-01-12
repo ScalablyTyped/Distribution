@@ -43,7 +43,8 @@ object distTypesPieLegendsMod {
       __obj.asInstanceOf[PieLegendsProps[RawDatum]]
     }
     
-    extension [Self <: PieLegendsProps[?], RawDatum](x: Self & PieLegendsProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PieLegendsProps[?], RawDatum] (val x: Self & PieLegendsProps[RawDatum]) extends AnyVal {
       
       inline def setData(value: js.Array[Omit[ComputedDatum[RawDatum], arc]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

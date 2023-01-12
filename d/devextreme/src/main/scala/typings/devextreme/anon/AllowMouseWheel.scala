@@ -50,7 +50,8 @@ object AllowMouseWheel {
     __obj.asInstanceOf[AllowMouseWheel]
   }
   
-  extension [Self <: AllowMouseWheel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowMouseWheel] (val x: Self) extends AnyVal {
     
     inline def setAllowMouseWheel(value: Boolean): Self = StObject.set(x, "allowMouseWheel", value.asInstanceOf[js.Any])
     

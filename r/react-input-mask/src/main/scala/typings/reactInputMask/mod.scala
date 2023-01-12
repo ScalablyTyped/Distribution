@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[BeforeMaskedStateChangeStates]
     }
     
-    extension [Self <: BeforeMaskedStateChangeStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeMaskedStateChangeStates] (val x: Self) extends AnyVal {
       
       inline def setCurrentState(value: InputState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[InputState]
     }
     
-    extension [Self <: InputState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputState] (val x: Self) extends AnyVal {
       
       inline def setSelection(value: Selection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowMask(value: Boolean): Self = StObject.set(x, "alwaysShowMask", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object mod {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

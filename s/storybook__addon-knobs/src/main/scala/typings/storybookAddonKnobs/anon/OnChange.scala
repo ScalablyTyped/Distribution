@@ -22,7 +22,8 @@ object OnChange {
     __obj.asInstanceOf[OnChange]
   }
   
-  extension [Self <: OnChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnChange] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: Validator[KnobControlConfig[String]]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

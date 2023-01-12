@@ -25,7 +25,8 @@ object SuggestionsResponse {
     __obj.asInstanceOf[SuggestionsResponse]
   }
   
-  extension [Self <: SuggestionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
   }

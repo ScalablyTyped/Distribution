@@ -23,7 +23,8 @@ object AdminUserGlobalSignOutRequest {
     __obj.asInstanceOf[AdminUserGlobalSignOutRequest]
   }
   
-  extension [Self <: AdminUserGlobalSignOutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminUserGlobalSignOutRequest] (val x: Self) extends AnyVal {
     
     inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     

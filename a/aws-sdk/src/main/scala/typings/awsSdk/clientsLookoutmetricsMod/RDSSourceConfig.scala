@@ -53,7 +53,8 @@ object RDSSourceConfig {
     __obj.asInstanceOf[RDSSourceConfig]
   }
   
-  extension [Self <: RDSSourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RDSSourceConfig] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: RDSDatabaseIdentifier): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     

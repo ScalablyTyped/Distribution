@@ -17,7 +17,8 @@ object EnvelopedDataEncryptionParams {
     __obj.asInstanceOf[EnvelopedDataEncryptionParams]
   }
   
-  extension [Self <: EnvelopedDataEncryptionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopedDataEncryptionParams] (val x: Self) extends AnyVal {
     
     inline def setKdfAlgorithm(value: String): Self = StObject.set(x, "kdfAlgorithm", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object BrowserBuilderBaseOptions {
     __obj.asInstanceOf[BrowserBuilderBaseOptions]
   }
   
-  extension [Self <: BrowserBuilderBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserBuilderBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: js.Array[js.Object | String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

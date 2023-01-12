@@ -23,7 +23,8 @@ object PutActionRevisionOutput {
     __obj.asInstanceOf[PutActionRevisionOutput]
   }
   
-  extension [Self <: PutActionRevisionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutActionRevisionOutput] (val x: Self) extends AnyVal {
     
     inline def setNewRevision(value: Boolean): Self = StObject.set(x, "newRevision", value.asInstanceOf[js.Any])
     

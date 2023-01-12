@@ -17,7 +17,8 @@ object SubstringDistanceResult {
     __obj.asInstanceOf[SubstringDistanceResult]
   }
   
-  extension [Self <: SubstringDistanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstringDistanceResult] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

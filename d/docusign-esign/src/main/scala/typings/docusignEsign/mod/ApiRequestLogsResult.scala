@@ -18,7 +18,8 @@ object ApiRequestLogsResult {
     __obj.asInstanceOf[ApiRequestLogsResult]
   }
   
-  extension [Self <: ApiRequestLogsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiRequestLogsResult] (val x: Self) extends AnyVal {
     
     inline def setApiRequestLogs(value: js.Array[/* Contains API request log information. */ ApiRequestLog]): Self = StObject.set(x, "apiRequestLogs", value.asInstanceOf[js.Any])
     

@@ -122,7 +122,8 @@ object GraphDefinition {
     __obj.asInstanceOf[GraphDefinition]
   }
   
-  extension [Self <: GraphDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphDefinition] (val x: Self) extends AnyVal {
     
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

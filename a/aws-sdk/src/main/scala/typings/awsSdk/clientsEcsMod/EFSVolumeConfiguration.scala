@@ -38,7 +38,8 @@ object EFSVolumeConfiguration {
     __obj.asInstanceOf[EFSVolumeConfiguration]
   }
   
-  extension [Self <: EFSVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EFSVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationConfig(value: EFSAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object CardLayoutPropertyReference {
     __obj.asInstanceOf[CardLayoutPropertyReference]
   }
   
-  extension [Self <: CardLayoutPropertyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardLayoutPropertyReference] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

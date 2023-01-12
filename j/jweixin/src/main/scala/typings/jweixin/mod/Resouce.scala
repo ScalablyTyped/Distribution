@@ -15,7 +15,8 @@ object Resouce {
     __obj.asInstanceOf[Resouce]
   }
   
-  extension [Self <: Resouce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resouce] (val x: Self) extends AnyVal {
     
     inline def setLocalId(value: String): Self = StObject.set(x, "localId", value.asInstanceOf[js.Any])
   }

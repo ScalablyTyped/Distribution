@@ -120,7 +120,8 @@ object IWebXRControllerPointerSelectionOptions {
     __obj.asInstanceOf[IWebXRControllerPointerSelectionOptions]
   }
   
-  extension [Self <: IWebXRControllerPointerSelectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRControllerPointerSelectionOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomLasterPointerMeshGenerator(value: () => AbstractMesh): Self = StObject.set(x, "customLasterPointerMeshGenerator", js.Any.fromFunction0(value))
     

@@ -433,7 +433,8 @@ object libEsmPuppeteerCommonHttprequestMod {
       __obj.asInstanceOf[ContinueRequestOverrides]
     }
     
-    extension [Self <: ContinueRequestOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinueRequestOverrides] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -514,7 +515,8 @@ object libEsmPuppeteerCommonHttprequestMod {
       __obj.asInstanceOf[InterceptResolutionState]
     }
     
-    extension [Self <: InterceptResolutionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptResolutionState] (val x: Self) extends AnyVal {
       
       inline def setAction(value: InterceptResolutionAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -548,7 +550,8 @@ object libEsmPuppeteerCommonHttprequestMod {
       __obj.asInstanceOf[ResponseForRequest]
     }
     
-    extension [Self <: ResponseForRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseForRequest] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

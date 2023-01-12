@@ -210,7 +210,8 @@ object ContentControlData {
     __obj.asInstanceOf[ContentControlData]
   }
   
-  extension [Self <: ContentControlData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentControlData] (val x: Self) extends AnyVal {
     
     inline def setAppearance(value: ContentControlAppearance | BoundingBox | Tags | Hidden): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     

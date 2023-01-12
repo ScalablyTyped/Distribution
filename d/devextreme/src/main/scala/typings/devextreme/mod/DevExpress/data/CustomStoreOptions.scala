@@ -68,7 +68,8 @@ object CustomStoreOptions {
     __obj.asInstanceOf[CustomStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: CustomStoreOptions[?, ?], TItem, TKey](x: Self & (CustomStoreOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomStoreOptions[?, ?], TItem, TKey] (val x: Self & (CustomStoreOptions[TItem, TKey])) extends AnyVal {
     
     inline def setByKey(value: /* key */ TKey => PromiseLike[TItem]): Self = StObject.set(x, "byKey", js.Any.fromFunction1(value))
     

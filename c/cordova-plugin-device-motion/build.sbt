@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-device-motion"
-version := "2.0.1-fde084"
+version := "2.0.1-4c095f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[SlideRenderProps]
     }
     
-    extension [Self <: SlideRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideRenderProps] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[WithAutoPlay]
     }
     
-    extension [Self <: WithAutoPlay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithAutoPlay] (val x: Self) extends AnyVal {
       
       inline def setOnSwitching(value: (/* index */ Double, /* type */ OnSwitchingCallbackTypeDescriptor) => Unit): Self = StObject.set(x, "onSwitching", js.Any.fromFunction2(value))
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[WithAutoPlayProps]
     }
     
-    extension [Self <: WithAutoPlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithAutoPlayProps] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -130,7 +133,8 @@ object mod {
       __obj.asInstanceOf[WithBindKeyboardProps]
     }
     
-    extension [Self <: WithBindKeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithBindKeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setAxis(
         value: typings.reactSwipeableViewsUtils.reactSwipeableViewsUtilsStrings.x | `x-reverse` | y | `y-reverse`
@@ -157,7 +161,8 @@ object mod {
       __obj.asInstanceOf[WithIndex]
     }
     
-    extension [Self <: WithIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithIndex] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object mod {
       __obj.asInstanceOf[WithVirtualize]
     }
     
-    extension [Self <: WithVirtualize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithVirtualize] (val x: Self) extends AnyVal {
       
       inline def setSlideRenderer(value: SlideRendererCallback => ReactNode): Self = StObject.set(x, "slideRenderer", js.Any.fromFunction1(value))
     }
@@ -211,7 +217,8 @@ object mod {
       __obj.asInstanceOf[WithVirtualizeProps]
     }
     
-    extension [Self <: WithVirtualizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithVirtualizeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

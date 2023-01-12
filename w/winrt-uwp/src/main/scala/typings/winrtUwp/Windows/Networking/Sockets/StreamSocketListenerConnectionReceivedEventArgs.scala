@@ -17,7 +17,8 @@ object StreamSocketListenerConnectionReceivedEventArgs {
     __obj.asInstanceOf[StreamSocketListenerConnectionReceivedEventArgs]
   }
   
-  extension [Self <: StreamSocketListenerConnectionReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamSocketListenerConnectionReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: StreamSocket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

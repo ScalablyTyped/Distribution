@@ -40,7 +40,8 @@ object UnityMessagingIndicator {
     __obj.asInstanceOf[UnityMessagingIndicator]
   }
   
-  extension [Self <: UnityMessagingIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnityMessagingIndicator] (val x: Self) extends AnyVal {
     
     inline def setAddAction(value: (String, js.Function) => Any): Self = StObject.set(x, "addAction", js.Any.fromFunction2(value))
     

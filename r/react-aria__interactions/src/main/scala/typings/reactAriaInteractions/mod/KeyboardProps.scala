@@ -19,7 +19,8 @@ object KeyboardProps {
     __obj.asInstanceOf[KeyboardProps]
   }
   
-  extension [Self <: KeyboardProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

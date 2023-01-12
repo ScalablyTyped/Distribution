@@ -16,7 +16,8 @@ object SpecularMap {
     __obj.asInstanceOf[SpecularMap]
   }
   
-  extension [Self <: SpecularMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecularMap] (val x: Self) extends AnyVal {
     
     inline def setSpecularMap(value: IUniform[Any]): Self = StObject.set(x, "specularMap", value.asInstanceOf[js.Any])
   }

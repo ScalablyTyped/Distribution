@@ -18,7 +18,8 @@ object RegisteredUserQSearchBarEmbeddingConfiguration {
     __obj.asInstanceOf[RegisteredUserQSearchBarEmbeddingConfiguration]
   }
   
-  extension [Self <: RegisteredUserQSearchBarEmbeddingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisteredUserQSearchBarEmbeddingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInitialTopicId(value: RestrictiveResourceId): Self = StObject.set(x, "InitialTopicId", value.asInstanceOf[js.Any])
     

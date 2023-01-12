@@ -23,7 +23,8 @@ object DeleteWorkspaceApiKeyResponse {
     __obj.asInstanceOf[DeleteWorkspaceApiKeyResponse]
   }
   
-  extension [Self <: DeleteWorkspaceApiKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkspaceApiKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyName(value: ApiKeyName): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     

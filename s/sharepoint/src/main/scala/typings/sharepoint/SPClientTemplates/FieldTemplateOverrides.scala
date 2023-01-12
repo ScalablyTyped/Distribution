@@ -25,7 +25,8 @@ object FieldTemplateOverrides {
     __obj.asInstanceOf[FieldTemplateOverrides]
   }
   
-  extension [Self <: FieldTemplateOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTemplateOverrides] (val x: Self) extends AnyVal {
     
     inline def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "DisplayForm", js.Any.fromFunction1(value))
     

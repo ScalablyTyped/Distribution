@@ -48,7 +48,8 @@ object NeptuneSettings {
     __obj.asInstanceOf[NeptuneSettings]
   }
   
-  extension [Self <: NeptuneSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeptuneSettings] (val x: Self) extends AnyVal {
     
     inline def setErrorRetryDuration(value: IntegerOptional): Self = StObject.set(x, "ErrorRetryDuration", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object LexV2Transcription {
     __obj.asInstanceOf[LexV2Transcription]
   }
   
-  extension [Self <: LexV2Transcription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2Transcription] (val x: Self) extends AnyVal {
     
     inline def setResolvedContext(value: IntentString): Self = StObject.set(x, "resolvedContext", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object IngestionInfo {
     __obj.asInstanceOf[IngestionInfo]
   }
   
-  extension [Self <: IngestionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestionInfo] (val x: Self) extends AnyVal {
     
     inline def setBackupIngestionAddress(value: String): Self = StObject.set(x, "backupIngestionAddress", value.asInstanceOf[js.Any])
     

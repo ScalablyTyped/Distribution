@@ -80,7 +80,8 @@ object Behavior {
       __obj.asInstanceOf[Options[TData, TProperty, TMethod, TCustomInstanceProperty]]
     }
     
-    extension [Self <: Options[?, ?, ?, ?], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */](x: Self & (Options[TData, TProperty, TMethod, TCustomInstanceProperty])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?, ?, ?], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */] (val x: Self & (Options[TData, TProperty, TMethod, TCustomInstanceProperty])) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       
@@ -191,7 +192,8 @@ object Behavior {
       __obj.asInstanceOf[OtherOption]
     }
     
-    extension [Self <: OtherOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherOption] (val x: Self) extends AnyVal {
       
       inline def setBehaviors(value: js.Array[BehaviorIdentifier]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object Behavior {
       __obj.asInstanceOf[TrivialOption]
     }
     
-    extension [Self <: TrivialOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrivialOption] (val x: Self) extends AnyVal {
       
       inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
       

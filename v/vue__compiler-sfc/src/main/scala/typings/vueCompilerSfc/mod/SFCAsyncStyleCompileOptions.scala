@@ -21,7 +21,8 @@ object SFCAsyncStyleCompileOptions {
     __obj.asInstanceOf[SFCAsyncStyleCompileOptions]
   }
   
-  extension [Self <: SFCAsyncStyleCompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCAsyncStyleCompileOptions] (val x: Self) extends AnyVal {
     
     inline def setIsAsync(value: Boolean): Self = StObject.set(x, "isAsync", value.asInstanceOf[js.Any])
     

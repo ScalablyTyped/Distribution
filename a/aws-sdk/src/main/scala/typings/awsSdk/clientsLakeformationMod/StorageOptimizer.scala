@@ -38,7 +38,8 @@ object StorageOptimizer {
     __obj.asInstanceOf[StorageOptimizer]
   }
   
-  extension [Self <: StorageOptimizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageOptimizer] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: StorageOptimizerConfig): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     

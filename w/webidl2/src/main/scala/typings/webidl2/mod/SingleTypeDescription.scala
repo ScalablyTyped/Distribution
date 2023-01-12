@@ -34,7 +34,8 @@ object SingleTypeDescription {
     __obj.asInstanceOf[SingleTypeDescription]
   }
   
-  extension [Self <: SingleTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: _empty): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object MidiPitchBendChangeMessage {
     __obj.asInstanceOf[MidiPitchBendChangeMessage]
   }
   
-  extension [Self <: MidiPitchBendChangeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiPitchBendChangeMessage] (val x: Self) extends AnyVal {
     
     inline def setBend(value: Double): Self = StObject.set(x, "bend", value.asInstanceOf[js.Any])
     

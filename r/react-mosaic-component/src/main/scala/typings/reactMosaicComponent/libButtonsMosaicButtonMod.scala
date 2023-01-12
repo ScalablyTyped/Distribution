@@ -39,7 +39,8 @@ object libButtonsMosaicButtonMod {
       __obj.asInstanceOf[MosaicButtonProps]
     }
     
-    extension [Self <: MosaicButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicButtonProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       

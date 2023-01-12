@@ -16,7 +16,8 @@ object ManualRule {
     __obj.asInstanceOf[ManualRule]
   }
   
-  extension [Self <: ManualRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualRule] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[ManualRuleGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

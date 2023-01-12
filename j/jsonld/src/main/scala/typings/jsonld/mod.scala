@@ -109,7 +109,8 @@ object mod {
         __obj.asInstanceOf[Common]
       }
       
-      extension [Self <: Common](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Common] (val x: Self) extends AnyVal {
         
         inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         
@@ -150,7 +151,8 @@ object mod {
         __obj.asInstanceOf[Compact]
       }
       
-      extension [Self <: Compact](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Compact] (val x: Self) extends AnyVal {
         
         inline def setAppropriate(value: Boolean): Self = StObject.set(x, "appropriate", value.asInstanceOf[js.Any])
         
@@ -203,7 +205,8 @@ object mod {
         __obj.asInstanceOf[DocLoader]
       }
       
-      extension [Self <: DocLoader](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocLoader] (val x: Self) extends AnyVal {
         
         inline def setDocumentLoader(
           value: (/* url */ Url, /* callback */ js.Function2[/* err */ js.Error, /* remoteDoc */ RemoteDocument, Unit]) => js.Promise[RemoteDocument]
@@ -225,7 +228,8 @@ object mod {
         __obj.asInstanceOf[ExpMap]
       }
       
-      extension [Self <: ExpMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExpMap] (val x: Self) extends AnyVal {
         
         inline def setExpansionMap(value: /* info */ Any => Any): Self = StObject.set(x, "expansionMap", js.Any.fromFunction1(value))
         
@@ -247,7 +251,8 @@ object mod {
         __obj.asInstanceOf[Expand]
       }
       
-      extension [Self <: Expand](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Expand] (val x: Self) extends AnyVal {
         
         inline def setKeepFreeFloatingNodes(value: Boolean): Self = StObject.set(x, "keepFreeFloatingNodes", value.asInstanceOf[js.Any])
         
@@ -274,7 +279,8 @@ object mod {
         __obj.asInstanceOf[typings.jsonld.mod.Options.Frame]
       }
       
-      extension [Self <: typings.jsonld.mod.Options.Frame](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jsonld.mod.Options.Frame] (val x: Self) extends AnyVal {
         
         inline def setEmbed(value: `@last` | `@always` | `@never` | `@link`): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
         
@@ -311,7 +317,8 @@ object mod {
         __obj.asInstanceOf[FromRdf]
       }
       
-      extension [Self <: FromRdf](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FromRdf] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -354,7 +361,8 @@ object mod {
         __obj.asInstanceOf[Normalize]
       }
       
-      extension [Self <: Normalize](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Normalize] (val x: Self) extends AnyVal {
         
         inline def setAlgorithm(value: URDNA2015 | (/* template literal string: URGNA2012 */ String)): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
         
@@ -399,7 +407,8 @@ object mod {
         __obj.asInstanceOf[ToRdf]
       }
       
-      extension [Self <: ToRdf](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ToRdf] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: MimeNQuad): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         

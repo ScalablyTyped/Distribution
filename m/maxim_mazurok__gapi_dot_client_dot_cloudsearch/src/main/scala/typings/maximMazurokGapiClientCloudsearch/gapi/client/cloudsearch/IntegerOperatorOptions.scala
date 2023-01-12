@@ -35,7 +35,8 @@ object IntegerOperatorOptions {
     __obj.asInstanceOf[IntegerOperatorOptions]
   }
   
-  extension [Self <: IntegerOperatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerOperatorOptions] (val x: Self) extends AnyVal {
     
     inline def setGreaterThanOperatorName(value: String): Self = StObject.set(x, "greaterThanOperatorName", value.asInstanceOf[js.Any])
     

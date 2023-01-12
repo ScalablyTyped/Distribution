@@ -16,7 +16,8 @@ object WebServerNetworkAccessControl {
     __obj.asInstanceOf[WebServerNetworkAccessControl]
   }
   
-  extension [Self <: WebServerNetworkAccessControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebServerNetworkAccessControl] (val x: Self) extends AnyVal {
     
     inline def setAllowedIpRanges(value: js.Array[AllowedIpRange]): Self = StObject.set(x, "allowedIpRanges", value.asInstanceOf[js.Any])
     

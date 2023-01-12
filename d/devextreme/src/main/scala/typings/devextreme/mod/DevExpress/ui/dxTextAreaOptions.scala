@@ -30,7 +30,8 @@ object dxTextAreaOptions {
     __obj.asInstanceOf[dxTextAreaOptions]
   }
   
-  extension [Self <: dxTextAreaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxTextAreaOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoResizeEnabled(value: Boolean): Self = StObject.set(x, "autoResizeEnabled", value.asInstanceOf[js.Any])
     

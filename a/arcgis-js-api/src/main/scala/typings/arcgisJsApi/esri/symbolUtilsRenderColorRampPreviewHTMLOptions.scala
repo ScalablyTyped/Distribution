@@ -47,7 +47,8 @@ object symbolUtilsRenderColorRampPreviewHTMLOptions {
     __obj.asInstanceOf[symbolUtilsRenderColorRampPreviewHTMLOptions]
   }
   
-  extension [Self <: symbolUtilsRenderColorRampPreviewHTMLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbolUtilsRenderColorRampPreviewHTMLOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: horizontal | vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

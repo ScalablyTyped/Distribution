@@ -16,7 +16,8 @@ object QueryBehavior {
     __obj.asInstanceOf[QueryBehavior[TQueryFnData, TError, TData, TQueryKey]]
   }
   
-  extension [Self <: QueryBehavior[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](x: Self & (QueryBehavior[TQueryFnData, TError, TData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryBehavior[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] (val x: Self & (QueryBehavior[TQueryFnData, TError, TData, TQueryKey])) extends AnyVal {
     
     inline def setOnFetch(value: FetchContext[TQueryFnData, TError, TData, TQueryKey] => Unit): Self = StObject.set(x, "onFetch", js.Any.fromFunction1(value))
   }

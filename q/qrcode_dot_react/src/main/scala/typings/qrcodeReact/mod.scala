@@ -56,7 +56,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseQRCodeProps]
     }
     
-    extension [Self <: BaseQRCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseQRCodeProps] (val x: Self) extends AnyVal {
       
       inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CanvasQRCodeProps]
     }
     
-    extension [Self <: CanvasQRCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasQRCodeProps] (val x: Self) extends AnyVal {
       
       inline def setRenderAs(value: canvas): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ImageSettings]
     }
     
-    extension [Self <: ImageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSettings] (val x: Self) extends AnyVal {
       
       inline def setExcavate(value: Boolean): Self = StObject.set(x, "excavate", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SvgQRCodeProps]
     }
     
-    extension [Self <: SvgQRCodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgQRCodeProps] (val x: Self) extends AnyVal {
       
       inline def setRenderAs(value: svg): Self = StObject.set(x, "renderAs", value.asInstanceOf[js.Any])
     }

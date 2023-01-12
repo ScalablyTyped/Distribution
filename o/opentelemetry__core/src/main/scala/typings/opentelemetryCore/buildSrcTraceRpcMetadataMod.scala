@@ -51,7 +51,8 @@ object buildSrcTraceRpcMetadataMod {
       __obj.asInstanceOf[HTTPMetadata]
     }
     
-    extension [Self <: HTTPMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPMetadata] (val x: Self) extends AnyVal {
       
       inline def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       

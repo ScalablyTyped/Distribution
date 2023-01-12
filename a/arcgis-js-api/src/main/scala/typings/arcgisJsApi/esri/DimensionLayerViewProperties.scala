@@ -31,7 +31,8 @@ object DimensionLayerViewProperties {
     __obj.asInstanceOf[DimensionLayerViewProperties]
   }
   
-  extension [Self <: DimensionLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

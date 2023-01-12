@@ -27,7 +27,8 @@ object ImageInfo {
     __obj.asInstanceOf[ImageInfo]
   }
   
-  extension [Self <: ImageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageInfo] (val x: Self) extends AnyVal {
     
     inline def setAddImageQuery(value: NullableOption[Boolean]): Self = StObject.set(x, "addImageQuery", value.asInstanceOf[js.Any])
     

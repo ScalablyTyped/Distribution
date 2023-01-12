@@ -23,7 +23,8 @@ object SearchEntitiesResponse {
     __obj.asInstanceOf[SearchEntitiesResponse]
   }
   
-  extension [Self <: SearchEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setDescriptions(value: EntityDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     

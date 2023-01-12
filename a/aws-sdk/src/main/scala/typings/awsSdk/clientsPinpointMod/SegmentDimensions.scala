@@ -43,7 +43,8 @@ object SegmentDimensions {
     __obj.asInstanceOf[SegmentDimensions]
   }
   
-  extension [Self <: SegmentDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDimensions] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

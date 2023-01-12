@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[BaseCircularMeta]
     }
     
-    extension [Self <: BaseCircularMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCircularMeta] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: /* key */ Any => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[CreateComparatorCreatorOptions[Meta]]
     }
     
-    extension [Self <: CreateComparatorCreatorOptions[?], Meta](x: Self & CreateComparatorCreatorOptions[Meta]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateComparatorCreatorOptions[?], Meta] (val x: Self & CreateComparatorCreatorOptions[Meta]) extends AnyVal {
       
       inline def setAreArraysEqual(value: (Any, Any, /* isEqual */ InternalEqualityComparator[Meta], Meta) => Boolean): Self = StObject.set(x, "areArraysEqual", js.Any.fromFunction4(value))
       

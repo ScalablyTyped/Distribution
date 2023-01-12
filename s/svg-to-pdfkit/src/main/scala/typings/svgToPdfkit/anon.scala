@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[FauxBold]
     }
     
-    extension [Self <: FauxBold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FauxBold] (val x: Self) extends AnyVal {
       
       inline def setFauxBold(value: Boolean): Self = StObject.set(x, "fauxBold", value.asInstanceOf[js.Any])
       

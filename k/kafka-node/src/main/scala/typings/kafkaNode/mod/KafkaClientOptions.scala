@@ -35,7 +35,8 @@ object KafkaClientOptions {
     __obj.asInstanceOf[KafkaClientOptions]
   }
   
-  extension [Self <: KafkaClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
     

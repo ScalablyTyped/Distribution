@@ -36,7 +36,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceCreateEvent]
     }
     
-    extension [Self <: CloudFormationCustomResourceCreateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceCreateEvent] (val x: Self) extends AnyVal {
       
       inline def setRequestType(value: Create): Self = StObject.set(x, "RequestType", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceDeleteEvent]
     }
     
-    extension [Self <: CloudFormationCustomResourceDeleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceDeleteEvent] (val x: Self) extends AnyVal {
       
       inline def setPhysicalResourceId(value: String): Self = StObject.set(x, "PhysicalResourceId", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceEventCommon]
     }
     
-    extension [Self <: CloudFormationCustomResourceEventCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceEventCommon] (val x: Self) extends AnyVal {
       
       inline def setLogicalResourceId(value: String): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceFailedResponse]
     }
     
-    extension [Self <: CloudFormationCustomResourceFailedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceFailedResponse] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
       
@@ -252,7 +256,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceResponseCommon]
     }
     
-    extension [Self <: CloudFormationCustomResourceResponseCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceResponseCommon] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -288,7 +293,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceSuccessResponse]
     }
     
-    extension [Self <: CloudFormationCustomResourceSuccessResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceSuccessResponse] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
       
@@ -326,7 +332,8 @@ object triggerCloudformationCustomResourceMod {
       __obj.asInstanceOf[CloudFormationCustomResourceUpdateEvent]
     }
     
-    extension [Self <: CloudFormationCustomResourceUpdateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudFormationCustomResourceUpdateEvent] (val x: Self) extends AnyVal {
       
       inline def setOldResourceProperties(value: StringDictionary[Any]): Self = StObject.set(x, "OldResourceProperties", value.asInstanceOf[js.Any])
       

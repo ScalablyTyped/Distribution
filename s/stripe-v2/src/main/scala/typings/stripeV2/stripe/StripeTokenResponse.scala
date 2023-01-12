@@ -39,7 +39,8 @@ object StripeTokenResponse {
     __obj.asInstanceOf[StripeTokenResponse]
   }
   
-  extension [Self <: StripeTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setClient_ip(value: String): Self = StObject.set(x, "client_ip", value.asInstanceOf[js.Any])
     

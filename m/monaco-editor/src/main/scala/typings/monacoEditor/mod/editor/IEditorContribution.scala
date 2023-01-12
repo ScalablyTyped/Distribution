@@ -28,7 +28,8 @@ object IEditorContribution {
     __obj.asInstanceOf[IEditorContribution]
   }
   
-  extension [Self <: IEditorContribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorContribution] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

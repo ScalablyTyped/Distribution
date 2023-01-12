@@ -29,7 +29,8 @@ object GPUShaderModule {
     __obj.asInstanceOf[GPUShaderModule]
   }
   
-  extension [Self <: GPUShaderModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUShaderModule] (val x: Self) extends AnyVal {
     
     inline def setCompilationInfo(value: () => js.Promise[GPUCompilationInfo]): Self = StObject.set(x, "compilationInfo", js.Any.fromFunction0(value))
     

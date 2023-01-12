@@ -24,7 +24,8 @@ object TerritoryPattern {
     __obj.asInstanceOf[TerritoryPattern]
   }
   
-  extension [Self <: TerritoryPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerritoryPattern] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object PickImplrequiredPartialPi {
     __obj.asInstanceOf[PickImplrequiredPartialPi]
   }
   
-  extension [Self <: PickImplrequiredPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplrequiredPartialPi] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: js.RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

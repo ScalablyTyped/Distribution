@@ -28,7 +28,8 @@ object ListProvisionedConcurrencyConfigsRequest {
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsRequest]
   }
   
-  extension [Self <: ListProvisionedConcurrencyConfigsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProvisionedConcurrencyConfigsRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[SwipeoutButtonProperties]
     }
     
-    extension [Self <: SwipeoutButtonProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeoutButtonProperties] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
       __obj.asInstanceOf[SwipeoutProperties]
     }
     
-    extension [Self <: SwipeoutProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeoutProperties] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

@@ -123,7 +123,8 @@ object SeriesTreegraphOptions {
     __obj.asInstanceOf[SeriesTreegraphOptions]
   }
   
-  extension [Self <: SeriesTreegraphOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesTreegraphOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDrillToNode(value: Unit): Self = StObject.set(x, "allowDrillToNode", value.asInstanceOf[js.Any])
     

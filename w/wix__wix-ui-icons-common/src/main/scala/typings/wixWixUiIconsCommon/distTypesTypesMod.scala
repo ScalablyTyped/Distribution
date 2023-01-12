@@ -31,7 +31,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[IconMetadata]
     }
     
-    extension [Self <: IconMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconMetadata] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

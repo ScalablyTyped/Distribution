@@ -18,7 +18,8 @@ object ReconciliationOperationMetadata {
     __obj.asInstanceOf[ReconciliationOperationMetadata]
   }
   
-  extension [Self <: ReconciliationOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReconciliationOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeleteResource(value: Boolean): Self = StObject.set(x, "deleteResource", value.asInstanceOf[js.Any])
     

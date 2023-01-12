@@ -45,7 +45,8 @@ object IRegistration {
     __obj.asInstanceOf[IRegistration[TResult, TArgs, TKWArgs, TName]]
   }
   
-  extension [Self <: IRegistration[?, ?, ?, ?], TResult, TArgs, TKWArgs, TName](x: Self & (IRegistration[TResult, TArgs, TKWArgs, TName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegistration[?, ?, ?, ?], TResult, TArgs, TKWArgs, TName] (val x: Self & (IRegistration[TResult, TArgs, TKWArgs, TName])) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

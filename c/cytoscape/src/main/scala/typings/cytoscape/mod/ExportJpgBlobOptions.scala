@@ -23,7 +23,8 @@ object ExportJpgBlobOptions {
     __obj.asInstanceOf[ExportJpgBlobOptions]
   }
   
-  extension [Self <: ExportJpgBlobOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJpgBlobOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

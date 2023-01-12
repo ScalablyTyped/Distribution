@@ -32,7 +32,8 @@ object libAdaptorGeometriesSchemaMod {
       __obj.asInstanceOf[SchemaGeometryOptions]
     }
     
-    extension [Self <: SchemaGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: MappingOptions): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       

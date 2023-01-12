@@ -38,7 +38,8 @@ object OriginationRoute {
     __obj.asInstanceOf[OriginationRoute]
   }
   
-  extension [Self <: OriginationRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginationRoute] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IsValid {
     __obj.asInstanceOf[IsValid]
   }
   
-  extension [Self <: IsValid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsValid] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

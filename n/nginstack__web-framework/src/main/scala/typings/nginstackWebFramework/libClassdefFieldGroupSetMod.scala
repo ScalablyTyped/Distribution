@@ -52,7 +52,8 @@ object libClassdefFieldGroupSetMod {
       __obj.asInstanceOf[FieldGroupSet]
     }
     
-    extension [Self <: FieldGroupSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldGroupSet] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Any => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

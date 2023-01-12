@@ -18,7 +18,8 @@ object CircleLayout {
     __obj.asInstanceOf[CircleLayout]
   }
   
-  extension [Self <: CircleLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleLayout] (val x: Self) extends AnyVal {
     
     inline def `setCircle-sort-key`(value: Double | Expression): Self = StObject.set(x, "circle-sort-key", value.asInstanceOf[js.Any])
     

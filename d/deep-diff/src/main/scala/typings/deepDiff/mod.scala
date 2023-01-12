@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Accumulator[LHS, RHS]]
     }
     
-    extension [Self <: Accumulator[?, ?], LHS, RHS](x: Self & (Accumulator[LHS, RHS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accumulator[?, ?], LHS, RHS] (val x: Self & (Accumulator[LHS, RHS])) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[DiffArray[LHS, RHS]]
     }
     
-    extension [Self <: DiffArray[?, ?], LHS, RHS](x: Self & (DiffArray[LHS, RHS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffArray[?, ?], LHS, RHS] (val x: Self & (DiffArray[LHS, RHS])) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[DiffDeleted[LHS]]
     }
     
-    extension [Self <: DiffDeleted[?], LHS](x: Self & DiffDeleted[LHS]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffDeleted[?], LHS] (val x: Self & DiffDeleted[LHS]) extends AnyVal {
       
       inline def setKind(value: D): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -170,7 +173,8 @@ object mod {
       __obj.asInstanceOf[DiffEdit[LHS, RHS]]
     }
     
-    extension [Self <: DiffEdit[?, ?], LHS, RHS](x: Self & (DiffEdit[LHS, RHS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffEdit[?, ?], LHS, RHS] (val x: Self & (DiffEdit[LHS, RHS])) extends AnyVal {
       
       inline def setKind(value: E): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -203,7 +207,8 @@ object mod {
       __obj.asInstanceOf[DiffNew[RHS]]
     }
     
-    extension [Self <: DiffNew[?], RHS](x: Self & DiffNew[RHS]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffNew[?], RHS] (val x: Self & DiffNew[RHS]) extends AnyVal {
       
       inline def setKind(value: N): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -276,7 +281,8 @@ object mod {
       __obj.asInstanceOf[PreFilterObject[LHS, RHS]]
     }
     
-    extension [Self <: PreFilterObject[?, ?], LHS, RHS](x: Self & (PreFilterObject[LHS, RHS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreFilterObject[?, ?], LHS, RHS] (val x: Self & (PreFilterObject[LHS, RHS])) extends AnyVal {
       
       inline def setNormalize(
         value: (/* currentPath */ Any, /* key */ Any, /* lhs */ LHS, /* rhs */ RHS) => js.UndefOr[js.Tuple2[LHS, RHS]]

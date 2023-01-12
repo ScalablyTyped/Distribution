@@ -15,7 +15,8 @@ object AttributionOptions {
     __obj.asInstanceOf[AttributionOptions]
   }
   
-  extension [Self <: AttributionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributionOptions] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }

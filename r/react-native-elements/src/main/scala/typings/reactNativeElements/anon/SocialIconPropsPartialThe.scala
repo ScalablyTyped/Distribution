@@ -73,7 +73,8 @@ object SocialIconPropsPartialThe {
     __obj.asInstanceOf[SocialIconPropsPartialThe]
   }
   
-  extension [Self <: SocialIconPropsPartialThe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialIconPropsPartialThe] (val x: Self) extends AnyVal {
     
     inline def setActivityIndicatorStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activityIndicatorStyle", value.asInstanceOf[js.Any])
     

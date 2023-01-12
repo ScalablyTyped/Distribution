@@ -31,7 +31,8 @@ object feature {
       __obj.asInstanceOf[IAbstractSummary]
     }
     
-    extension [Self <: IAbstractSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractSummary] (val x: Self) extends AnyVal {
       
       inline def setRemoteRoot(value: String): Self = StObject.set(x, "remoteRoot", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object feature {
       __obj.asInstanceOf[IFeature]
     }
     
-    extension [Self <: IFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFeature] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -157,7 +159,8 @@ object feature {
       __obj.asInstanceOf[IGroupStore]
     }
     
-    extension [Self <: IGroupStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupStore] (val x: Self) extends AnyVal {
       
       inline def setIndexOfTotal(value: /* record */ js.UndefOr[IModel] => Double): Self = StObject.set(x, "indexOfTotal", js.Any.fromFunction1(value))
       
@@ -237,7 +240,8 @@ object feature {
       __obj.asInstanceOf[IGrouping]
     }
     
-    extension [Self <: IGrouping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGrouping] (val x: Self) extends AnyVal {
       
       inline def setCollapse(value: (/* groupName */ js.UndefOr[String], /* focus */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "collapse", js.Any.fromFunction2(value))
       
@@ -339,7 +343,8 @@ object feature {
       __obj.asInstanceOf[IRowBody]
     }
     
-    extension [Self <: IRowBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowBody] (val x: Self) extends AnyVal {
       
       inline def setGetAdditionalData(
         value: (/* data */ js.UndefOr[Any], /* idx */ js.UndefOr[Double], /* record */ js.UndefOr[IModel], /* orig */ js.UndefOr[Any]) => Unit
@@ -374,7 +379,8 @@ object feature {
       __obj.asInstanceOf[ISummary]
     }
     
-    extension [Self <: ISummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISummary] (val x: Self) extends AnyVal {
       
       inline def setDock(value: String): Self = StObject.set(x, "dock", value.asInstanceOf[js.Any])
       

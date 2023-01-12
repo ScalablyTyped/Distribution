@@ -28,7 +28,8 @@ object LocationOptions {
     __obj.asInstanceOf[LocationOptions]
   }
   
-  extension [Self <: LocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableHighAccuracy(value: Boolean): Self = StObject.set(x, "enableHighAccuracy", value.asInstanceOf[js.Any])
     

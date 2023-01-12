@@ -28,7 +28,8 @@ object ListProfilingGroupsRequest {
     __obj.asInstanceOf[ListProfilingGroupsRequest]
   }
   
-  extension [Self <: ListProfilingGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProfilingGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeDescription(value: Boolean): Self = StObject.set(x, "includeDescription", value.asInstanceOf[js.Any])
     

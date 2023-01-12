@@ -64,7 +64,8 @@ object CSSRule {
     __obj.asInstanceOf[CSSRule]
   }
   
-  extension [Self <: CSSRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSRule] (val x: Self) extends AnyVal {
     
     inline def setContainerQueries(value: js.Array[CSSContainerQuery]): Self = StObject.set(x, "containerQueries", value.asInstanceOf[js.Any])
     

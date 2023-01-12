@@ -35,7 +35,8 @@ object LVL {
     __obj.asInstanceOf[LVL]
   }
   
-  extension [Self <: LVL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LVL] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

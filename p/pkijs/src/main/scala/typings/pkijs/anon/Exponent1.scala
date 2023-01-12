@@ -36,7 +36,8 @@ object Exponent1 {
     __obj.asInstanceOf[Exponent1]
   }
   
-  extension [Self <: Exponent1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exponent1] (val x: Self) extends AnyVal {
     
     inline def setCoefficient(value: String): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
     

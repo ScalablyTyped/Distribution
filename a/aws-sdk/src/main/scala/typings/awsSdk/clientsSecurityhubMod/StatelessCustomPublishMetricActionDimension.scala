@@ -18,7 +18,8 @@ object StatelessCustomPublishMetricActionDimension {
     __obj.asInstanceOf[StatelessCustomPublishMetricActionDimension]
   }
   
-  extension [Self <: StatelessCustomPublishMetricActionDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessCustomPublishMetricActionDimension] (val x: Self) extends AnyVal {
     
     inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

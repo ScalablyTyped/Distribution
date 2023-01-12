@@ -28,7 +28,8 @@ object CreateModelPackageGroupInput {
     __obj.asInstanceOf[CreateModelPackageGroupInput]
   }
   
-  extension [Self <: CreateModelPackageGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelPackageGroupInput] (val x: Self) extends AnyVal {
     
     inline def setModelPackageGroupDescription(value: EntityDescription): Self = StObject.set(x, "ModelPackageGroupDescription", value.asInstanceOf[js.Any])
     

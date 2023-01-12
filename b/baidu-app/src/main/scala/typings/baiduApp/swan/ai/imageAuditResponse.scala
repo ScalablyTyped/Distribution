@@ -24,7 +24,8 @@ object imageAuditResponse {
     __obj.asInstanceOf[imageAuditResponse]
   }
   
-  extension [Self <: imageAuditResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: imageAuditResponse] (val x: Self) extends AnyVal {
     
     inline def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     

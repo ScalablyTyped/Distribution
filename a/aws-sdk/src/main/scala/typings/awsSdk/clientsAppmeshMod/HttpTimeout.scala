@@ -23,7 +23,8 @@ object HttpTimeout {
     __obj.asInstanceOf[HttpTimeout]
   }
   
-  extension [Self <: HttpTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpTimeout] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

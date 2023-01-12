@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClassPrefix(value: String): Self = StObject.set(x, "classPrefix", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod {
       __obj.asInstanceOf[PullToRefreshInstance]
     }
     
-    extension [Self <: PullToRefreshInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullToRefreshInstance] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }

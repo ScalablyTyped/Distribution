@@ -146,7 +146,8 @@ object buildAssetMod {
       __obj.asInstanceOf[AssetDescriptor]
     }
     
-    extension [Self <: AssetDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetDescriptor] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object buildAssetMod {
       __obj.asInstanceOf[DownloadPromiseCallbacks]
     }
     
-    extension [Self <: DownloadPromiseCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadPromiseCallbacks] (val x: Self) extends AnyVal {
       
       inline def setReject(value: js.Error => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       

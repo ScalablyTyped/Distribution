@@ -36,7 +36,8 @@ object libBoundedMod {
       __obj.asInstanceOf[Bounded[A]]
     }
     
-    extension [Self <: Bounded[?], A](x: Self & Bounded[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounded[?], A] (val x: Self & Bounded[A]) extends AnyVal {
       
       inline def setBottom(value: A): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

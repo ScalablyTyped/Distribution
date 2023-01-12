@@ -23,7 +23,8 @@ object FeatureFilter_ {
     __obj.asInstanceOf[FeatureFilter_]
   }
   
-  extension [Self <: FeatureFilter_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFilter_] (val x: Self) extends AnyVal {
     
     inline def setFilter(
       value: (/* globalProperties */ GlobalProperties, /* feature */ Feature, /* canonical */ js.UndefOr[CanonicalTileID]) => Boolean

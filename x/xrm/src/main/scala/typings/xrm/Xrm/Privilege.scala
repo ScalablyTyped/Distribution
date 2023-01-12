@@ -31,7 +31,8 @@ object Privilege {
     __obj.asInstanceOf[Privilege]
   }
   
-  extension [Self <: Privilege](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Privilege] (val x: Self) extends AnyVal {
     
     inline def setCanCreate(value: Boolean): Self = StObject.set(x, "canCreate", value.asInstanceOf[js.Any])
     

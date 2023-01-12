@@ -33,7 +33,8 @@ object UpdateFindingsFeedbackRequest {
     __obj.asInstanceOf[UpdateFindingsFeedbackRequest]
   }
   
-  extension [Self <: UpdateFindingsFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFindingsFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     

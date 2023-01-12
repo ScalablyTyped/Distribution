@@ -636,7 +636,8 @@ object sapMQuickViewMod {
       __obj.asInstanceOf[QuickViewSettings]
     }
     
-    extension [Self <: QuickViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       

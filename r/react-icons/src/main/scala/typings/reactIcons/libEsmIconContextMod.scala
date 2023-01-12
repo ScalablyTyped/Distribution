@@ -32,7 +32,8 @@ object libEsmIconContextMod {
     @js.native
     val ^ : Context[IconContext] = js.native
     
-    extension [Self <: IconContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconContext] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: SVGAttributes[SVGElement]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

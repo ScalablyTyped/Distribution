@@ -87,7 +87,8 @@ object OctreeSceneComponent {
     __obj.asInstanceOf[OctreeSceneComponent]
   }
   
-  extension [Self <: OctreeSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OctreeSceneComponent] (val x: Self) extends AnyVal {
     
     inline def setChecksIsEnabled(value: /* true */ Boolean): Self = StObject.set(x, "checksIsEnabled", value.asInstanceOf[js.Any])
     

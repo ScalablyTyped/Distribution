@@ -28,7 +28,8 @@ object Images {
     __obj.asInstanceOf[Images]
   }
   
-  extension [Self <: Images](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[Annotationlevel]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

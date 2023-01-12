@@ -30,7 +30,8 @@ object GraphicsContext {
     __obj.asInstanceOf[GraphicsContext]
   }
   
-  extension [Self <: GraphicsContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsContext] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

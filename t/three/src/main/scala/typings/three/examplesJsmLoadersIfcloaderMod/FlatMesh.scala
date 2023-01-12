@@ -17,7 +17,8 @@ object FlatMesh {
     __obj.asInstanceOf[FlatMesh]
   }
   
-  extension [Self <: FlatMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatMesh] (val x: Self) extends AnyVal {
     
     inline def setExpressID(value: Double): Self = StObject.set(x, "expressID", value.asInstanceOf[js.Any])
     

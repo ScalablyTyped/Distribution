@@ -145,7 +145,8 @@ object xRWebXRInputSourceMod {
       __obj.asInstanceOf[IWebXRControllerOptions]
     }
     
-    extension [Self <: IWebXRControllerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRControllerOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableMotionControllerAnimation(value: Boolean): Self = StObject.set(x, "disableMotionControllerAnimation", value.asInstanceOf[js.Any])
       

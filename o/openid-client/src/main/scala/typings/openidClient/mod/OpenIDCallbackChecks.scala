@@ -19,7 +19,8 @@ object OpenIDCallbackChecks {
     __obj.asInstanceOf[OpenIDCallbackChecks]
   }
   
-  extension [Self <: OpenIDCallbackChecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenIDCallbackChecks] (val x: Self) extends AnyVal {
     
     inline def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
     

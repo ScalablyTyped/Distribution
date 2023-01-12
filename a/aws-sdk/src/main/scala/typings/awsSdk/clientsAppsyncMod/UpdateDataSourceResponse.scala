@@ -18,7 +18,8 @@ object UpdateDataSourceResponse {
     __obj.asInstanceOf[UpdateDataSourceResponse]
   }
   
-  extension [Self <: UpdateDataSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDataSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

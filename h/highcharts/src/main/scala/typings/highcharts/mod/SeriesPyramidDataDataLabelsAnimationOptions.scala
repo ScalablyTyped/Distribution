@@ -20,7 +20,8 @@ object SeriesPyramidDataDataLabelsAnimationOptions {
     __obj.asInstanceOf[SeriesPyramidDataDataLabelsAnimationOptions]
   }
   
-  extension [Self <: SeriesPyramidDataDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPyramidDataDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

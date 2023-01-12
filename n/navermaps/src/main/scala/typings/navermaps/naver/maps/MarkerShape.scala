@@ -21,7 +21,8 @@ object MarkerShape {
     __obj.asInstanceOf[MarkerShape]
   }
   
-  extension [Self <: MarkerShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerShape] (val x: Self) extends AnyVal {
     
     inline def setCoords(value: js.Array[Any]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
     

@@ -91,7 +91,8 @@ object typesBip32Mod {
       __obj.asInstanceOf[Network]
     }
     
-    extension [Self <: Network](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Network] (val x: Self) extends AnyVal {
       
       inline def setBech32(value: String): Self = StObject.set(x, "bech32", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object typesBip32Mod {
       __obj.asInstanceOf[XOnlyPointAddTweakResult]
     }
     
-    extension [Self <: XOnlyPointAddTweakResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XOnlyPointAddTweakResult] (val x: Self) extends AnyVal {
       
       inline def setParity(value: `1` | `0`): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       

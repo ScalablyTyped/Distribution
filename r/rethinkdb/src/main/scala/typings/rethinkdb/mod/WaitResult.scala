@@ -15,7 +15,8 @@ object WaitResult {
     __obj.asInstanceOf[WaitResult]
   }
   
-  extension [Self <: WaitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitResult] (val x: Self) extends AnyVal {
     
     inline def setReady(value: Double): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
   }

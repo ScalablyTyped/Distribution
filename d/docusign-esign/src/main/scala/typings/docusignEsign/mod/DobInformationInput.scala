@@ -31,7 +31,8 @@ object DobInformationInput {
     __obj.asInstanceOf[DobInformationInput]
   }
   
-  extension [Self <: DobInformationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DobInformationInput] (val x: Self) extends AnyVal {
     
     inline def setDateOfBirth(value: String): Self = StObject.set(x, "dateOfBirth", value.asInstanceOf[js.Any])
     

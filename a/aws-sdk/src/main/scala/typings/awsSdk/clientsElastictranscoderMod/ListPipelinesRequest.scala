@@ -23,7 +23,8 @@ object ListPipelinesRequest {
     __obj.asInstanceOf[ListPipelinesRequest]
   }
   
-  extension [Self <: ListPipelinesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPipelinesRequest] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Ascending): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     

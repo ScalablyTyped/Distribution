@@ -92,7 +92,8 @@ object mod {
       __obj.asInstanceOf[App[T]]
     }
     
-    extension [Self <: App[?], T](x: Self & App[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App[?], T] (val x: Self & App[T]) extends AnyVal {
       
       inline def setContext(value: T): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }

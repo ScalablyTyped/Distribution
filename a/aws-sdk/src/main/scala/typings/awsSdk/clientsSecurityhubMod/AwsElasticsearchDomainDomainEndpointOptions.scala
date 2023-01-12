@@ -23,7 +23,8 @@ object AwsElasticsearchDomainDomainEndpointOptions {
     __obj.asInstanceOf[AwsElasticsearchDomainDomainEndpointOptions]
   }
   
-  extension [Self <: AwsElasticsearchDomainDomainEndpointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainDomainEndpointOptions] (val x: Self) extends AnyVal {
     
     inline def setEnforceHTTPS(value: Boolean): Self = StObject.set(x, "EnforceHTTPS", value.asInstanceOf[js.Any])
     

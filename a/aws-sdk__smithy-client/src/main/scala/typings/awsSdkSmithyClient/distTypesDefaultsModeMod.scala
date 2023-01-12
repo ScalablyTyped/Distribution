@@ -51,7 +51,8 @@ object distTypesDefaultsModeMod {
       __obj.asInstanceOf[DefaultsModeConfigs]
     }
     
-    extension [Self <: DefaultsModeConfigs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultsModeConfigs] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       

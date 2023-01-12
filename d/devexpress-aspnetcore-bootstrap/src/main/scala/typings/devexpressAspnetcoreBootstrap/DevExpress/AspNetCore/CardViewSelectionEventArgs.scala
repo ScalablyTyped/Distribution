@@ -30,7 +30,8 @@ object CardViewSelectionEventArgs {
     __obj.asInstanceOf[CardViewSelectionEventArgs]
   }
   
-  extension [Self <: CardViewSelectionEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewSelectionEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
     

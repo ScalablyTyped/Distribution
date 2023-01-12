@@ -31,7 +31,8 @@ object ApiRequestLog {
     __obj.asInstanceOf[ApiRequestLog]
   }
   
-  extension [Self <: ApiRequestLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiRequestLog] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

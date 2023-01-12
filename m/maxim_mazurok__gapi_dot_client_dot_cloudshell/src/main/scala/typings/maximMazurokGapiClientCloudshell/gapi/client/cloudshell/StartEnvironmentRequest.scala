@@ -22,7 +22,8 @@ object StartEnvironmentRequest {
     __obj.asInstanceOf[StartEnvironmentRequest]
   }
   
-  extension [Self <: StartEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

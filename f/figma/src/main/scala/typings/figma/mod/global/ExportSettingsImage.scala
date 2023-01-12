@@ -26,7 +26,8 @@ object ExportSettingsImage {
     __obj.asInstanceOf[ExportSettingsImage]
   }
   
-  extension [Self <: ExportSettingsImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportSettingsImage] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: ExportSettingsConstraints): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

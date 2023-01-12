@@ -18,7 +18,8 @@ object DashboardSourceEntity {
     __obj.asInstanceOf[DashboardSourceEntity]
   }
   
-  extension [Self <: DashboardSourceEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardSourceEntity] (val x: Self) extends AnyVal {
     
     inline def setSourceTemplate(value: DashboardSourceTemplate): Self = StObject.set(x, "SourceTemplate", value.asInstanceOf[js.Any])
     

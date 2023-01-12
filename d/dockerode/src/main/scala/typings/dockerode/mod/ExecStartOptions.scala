@@ -26,7 +26,8 @@ object ExecStartOptions {
     __obj.asInstanceOf[ExecStartOptions]
   }
   
-  extension [Self <: ExecStartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecStartOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

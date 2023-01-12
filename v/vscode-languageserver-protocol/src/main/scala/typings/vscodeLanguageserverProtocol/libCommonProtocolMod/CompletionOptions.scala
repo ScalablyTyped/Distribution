@@ -54,7 +54,8 @@ object CompletionOptions {
     __obj.asInstanceOf[CompletionOptions]
   }
   
-  extension [Self <: CompletionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllCommitCharacters(value: js.Array[String]): Self = StObject.set(x, "allCommitCharacters", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ProcessType {
     __obj.asInstanceOf[ProcessType]
   }
   
-  extension [Self <: ProcessType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessType] (val x: Self) extends AnyVal {
     
     inline def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
   }

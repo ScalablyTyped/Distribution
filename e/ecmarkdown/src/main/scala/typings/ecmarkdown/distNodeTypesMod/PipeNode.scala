@@ -29,7 +29,8 @@ object PipeNode {
     __obj.asInstanceOf[PipeNode]
   }
   
-  extension [Self <: PipeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeNode] (val x: Self) extends AnyVal {
     
     inline def setContents(value: Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

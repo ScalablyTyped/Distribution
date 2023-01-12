@@ -28,7 +28,8 @@ object DisassociateLexBotRequest {
     __obj.asInstanceOf[DisassociateLexBotRequest]
   }
   
-  extension [Self <: DisassociateLexBotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateLexBotRequest] (val x: Self) extends AnyVal {
     
     inline def setBotName(value: BotName): Self = StObject.set(x, "BotName", value.asInstanceOf[js.Any])
     

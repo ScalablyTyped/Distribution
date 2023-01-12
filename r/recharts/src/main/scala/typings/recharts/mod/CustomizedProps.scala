@@ -17,7 +17,8 @@ object CustomizedProps {
     __obj.asInstanceOf[CustomizedProps]
   }
   
-  extension [Self <: CustomizedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizedProps] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ContentRenderer[Any] | ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PortToElm {
     __obj.asInstanceOf[PortToElm[V]]
   }
   
-  extension [Self <: PortToElm[?], V](x: Self & PortToElm[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortToElm[?], V] (val x: Self & PortToElm[V]) extends AnyVal {
     
     inline def setSend(value: V => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
   }

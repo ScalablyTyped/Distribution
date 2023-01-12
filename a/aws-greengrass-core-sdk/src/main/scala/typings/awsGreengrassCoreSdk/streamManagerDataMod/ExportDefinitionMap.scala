@@ -23,7 +23,8 @@ object ExportDefinitionMap {
     __obj.asInstanceOf[ExportDefinitionMap]
   }
   
-  extension [Self <: ExportDefinitionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportDefinitionMap] (val x: Self) extends AnyVal {
     
     inline def setHttp(value: js.Array[HTTPConfigMap]): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AddTagsRequest {
     __obj.asInstanceOf[AddTagsRequest]
   }
   
-  extension [Self <: AddTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: String): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object libEsmHooksHotkeysUseHotkeysMod {
       __obj.asInstanceOf[UseHotkeysOptions]
     }
     
-    extension [Self <: UseHotkeysOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseHotkeysOptions] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libEsmHooksHotkeysUseHotkeysMod {
       __obj.asInstanceOf[UseHotkeysReturnValue]
     }
     
-    extension [Self <: UseHotkeysReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseHotkeysReturnValue] (val x: Self) extends AnyVal {
       
       inline def setHandleKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
       

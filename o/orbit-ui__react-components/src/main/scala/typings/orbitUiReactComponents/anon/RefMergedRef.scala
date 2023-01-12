@@ -17,7 +17,8 @@ object RefMergedRef {
     __obj.asInstanceOf[RefMergedRef]
   }
   
-  extension [Self <: RefMergedRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefMergedRef] (val x: Self) extends AnyVal {
     
     inline def setRef(value: MergedRef[HTMLElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
   }

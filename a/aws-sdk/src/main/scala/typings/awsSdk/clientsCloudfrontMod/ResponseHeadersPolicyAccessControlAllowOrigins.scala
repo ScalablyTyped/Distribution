@@ -23,7 +23,8 @@ object ResponseHeadersPolicyAccessControlAllowOrigins {
     __obj.asInstanceOf[ResponseHeadersPolicyAccessControlAllowOrigins]
   }
   
-  extension [Self <: ResponseHeadersPolicyAccessControlAllowOrigins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyAccessControlAllowOrigins] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AccessControlAllowOriginsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

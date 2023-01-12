@@ -25,7 +25,8 @@ object VideoContentDetailsRegionRestriction {
     __obj.asInstanceOf[VideoContentDetailsRegionRestriction]
   }
   
-  extension [Self <: VideoContentDetailsRegionRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
     
     inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     

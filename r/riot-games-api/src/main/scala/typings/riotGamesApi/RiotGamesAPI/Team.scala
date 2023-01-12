@@ -52,7 +52,8 @@ object Team {
       __obj.asInstanceOf[MatchHistorySummaryDto]
     }
     
-    extension [Self <: MatchHistorySummaryDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchHistorySummaryDto] (val x: Self) extends AnyVal {
       
       inline def setAssists(value: Double): Self = StObject.set(x, "assists", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object Team {
       __obj.asInstanceOf[RosterDto]
     }
     
-    extension [Self <: RosterDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RosterDto] (val x: Self) extends AnyVal {
       
       inline def setMemberList(value: js.Array[TeamMemberInfoDto]): Self = StObject.set(x, "memberList", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object Team {
       __obj.asInstanceOf[TeamDto]
     }
     
-    extension [Self <: TeamDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeamDto] (val x: Self) extends AnyVal {
       
       inline def setCreateDate(value: Double): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object Team {
       __obj.asInstanceOf[TeamMemberInfoDto]
     }
     
-    extension [Self <: TeamMemberInfoDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeamMemberInfoDto] (val x: Self) extends AnyVal {
       
       inline def setInviteDate(value: Double): Self = StObject.set(x, "inviteDate", value.asInstanceOf[js.Any])
       
@@ -235,7 +239,8 @@ object Team {
       __obj.asInstanceOf[TeamStatDetailDto]
     }
     
-    extension [Self <: TeamStatDetailDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TeamStatDetailDto] (val x: Self) extends AnyVal {
       
       inline def setAverageGamesPlayed(value: Double): Self = StObject.set(x, "averageGamesPlayed", value.asInstanceOf[js.Any])
       

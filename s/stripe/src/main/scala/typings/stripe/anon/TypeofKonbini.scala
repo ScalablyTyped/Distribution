@@ -15,7 +15,8 @@ object TypeofKonbini {
     __obj.asInstanceOf[TypeofKonbini]
   }
   
-  extension [Self <: TypeofKonbini](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofKonbini] (val x: Self) extends AnyVal {
     
     inline def setStore(value: Any): Self = StObject.set(x, "Store", value.asInstanceOf[js.Any])
   }

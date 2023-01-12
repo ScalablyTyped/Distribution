@@ -18,7 +18,8 @@ object shastringSudo {
     __obj.asInstanceOf[shastringSudo]
   }
   
-  extension [Self <: shastringSudo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: shastringSudo] (val x: Self) extends AnyVal {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     

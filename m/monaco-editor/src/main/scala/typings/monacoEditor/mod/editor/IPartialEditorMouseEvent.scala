@@ -18,7 +18,8 @@ object IPartialEditorMouseEvent {
     __obj.asInstanceOf[IPartialEditorMouseEvent]
   }
   
-  extension [Self <: IPartialEditorMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPartialEditorMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: IMouseEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

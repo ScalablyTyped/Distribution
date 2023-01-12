@@ -27,7 +27,8 @@ object ResultRetentionSettings {
     __obj.asInstanceOf[ResultRetentionSettings]
   }
   
-  extension [Self <: ResultRetentionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultRetentionSettings] (val x: Self) extends AnyVal {
     
     inline def setAutomatedResultsRetentionDuration(value: Double): Self = StObject.set(x, "automatedResultsRetentionDuration", value.asInstanceOf[js.Any])
     

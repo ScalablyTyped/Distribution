@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AddDecorator]
     }
     
-    extension [Self <: AddDecorator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddDecorator] (val x: Self) extends AnyVal {
       
       inline def setAddDecorator(value: () => scala.Nothing): Self = StObject.set(x, "addDecorator", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Added]
     }
     
-    extension [Self <: Added](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Added] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: Map[String, Record[String, Any]]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[ClientApi]
     }
     
-    extension [Self <: ClientApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApi] (val x: Self) extends AnyVal {
       
       inline def setClientApi(value: AddDecorator): Self = StObject.set(x, "clientApi", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object anon {
       __obj.asInstanceOf[DecorateStory[TFramework]]
     }
     
-    extension [Self <: DecorateStory[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & DecorateStory[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecorateStory[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & DecorateStory[TFramework]) extends AnyVal {
       
       inline def setDecorateStory(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/store.@storybook/store/dist/ts3.9/types.WebProjectAnnotations<TFramework>['applyDecorators'] */ js.Any

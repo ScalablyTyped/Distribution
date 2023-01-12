@@ -18,7 +18,8 @@ object CreateRecipeResponse {
     __obj.asInstanceOf[CreateRecipeResponse]
   }
   
-  extension [Self <: CreateRecipeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecipeResponse] (val x: Self) extends AnyVal {
     
     inline def setName(value: RecipeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

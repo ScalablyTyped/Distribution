@@ -28,7 +28,8 @@ object LaunchTemplateConfiguration {
     __obj.asInstanceOf[LaunchTemplateConfiguration]
   }
   
-  extension [Self <: LaunchTemplateConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

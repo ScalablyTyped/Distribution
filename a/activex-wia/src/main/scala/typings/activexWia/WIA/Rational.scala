@@ -30,7 +30,8 @@ object Rational {
     __obj.asInstanceOf[Rational]
   }
   
-  extension [Self <: Rational](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rational] (val x: Self) extends AnyVal {
     
     inline def setDenominator(value: Double): Self = StObject.set(x, "Denominator", value.asInstanceOf[js.Any])
     

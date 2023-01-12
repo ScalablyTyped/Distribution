@@ -47,7 +47,8 @@ object DescribeClustersMessagewa {
     __obj.asInstanceOf[DescribeClustersMessagewa]
   }
   
-  extension [Self <: DescribeClustersMessagewa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeClustersMessagewa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

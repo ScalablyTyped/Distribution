@@ -123,7 +123,8 @@ object stashMod {
       __obj.asInstanceOf[StashApplyOptions]
     }
     
-    extension [Self <: StashApplyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StashApplyOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckoutOptions(value: CheckoutOptions): Self = StObject.set(x, "checkoutOptions", value.asInstanceOf[js.Any])
       

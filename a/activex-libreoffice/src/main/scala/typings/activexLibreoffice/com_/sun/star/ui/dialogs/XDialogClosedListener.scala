@@ -38,7 +38,8 @@ object XDialogClosedListener {
     __obj.asInstanceOf[XDialogClosedListener]
   }
   
-  extension [Self <: XDialogClosedListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDialogClosedListener] (val x: Self) extends AnyVal {
     
     inline def setDialogClosed(value: DialogClosedEvent => Unit): Self = StObject.set(x, "dialogClosed", js.Any.fromFunction1(value))
   }

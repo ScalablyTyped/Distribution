@@ -18,7 +18,8 @@ object CreatePresignedNotebookInstanceUrlOutput {
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlOutput]
   }
   
-  extension [Self <: CreatePresignedNotebookInstanceUrlOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePresignedNotebookInstanceUrlOutput] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedUrl(value: NotebookInstanceUrl): Self = StObject.set(x, "AuthorizedUrl", value.asInstanceOf[js.Any])
     

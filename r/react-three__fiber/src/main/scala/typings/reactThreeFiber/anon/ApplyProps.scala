@@ -26,7 +26,8 @@ object ApplyProps {
     __obj.asInstanceOf[ApplyProps]
   }
   
-  extension [Self <: ApplyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyProps] (val x: Self) extends AnyVal {
     
     inline def setApplyProps(value: (/* instance */ Instance, /* data */ InstanceProps | DiffSet) => Instance): Self = StObject.set(x, "applyProps", js.Any.fromFunction2(value))
     

@@ -236,7 +236,8 @@ object PresentationAttributes {
     __obj.asInstanceOf[PresentationAttributes[X, Y]]
   }
   
-  extension [Self <: PresentationAttributes[?, ?], X, Y](x: Self & (PresentationAttributes[X, Y])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentationAttributes[?, ?], X, Y] (val x: Self & (PresentationAttributes[X, Y])) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[CreateOrderActions]
     }
     
-    extension [Self <: CreateOrderActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOrderActions] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Create): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[CreateOrderData]
     }
     
-    extension [Self <: CreateOrderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOrderData] (val x: Self) extends AnyVal {
       
       inline def setPaymentSource(value: FUNDING_SOURCE): Self = StObject.set(x, "paymentSource", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[CreateSubscriptionActions]
     }
     
-    extension [Self <: CreateSubscriptionActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSubscriptionActions] (val x: Self) extends AnyVal {
       
       inline def setSubscription(value: `1`): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
@@ -85,7 +88,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnApproveActions]
     }
     
-    extension [Self <: OnApproveActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnApproveActions] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Authorize): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnApproveData]
     }
     
-    extension [Self <: OnApproveData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnApproveData] (val x: Self) extends AnyVal {
       
       inline def setAuthCode(value: String): Self = StObject.set(x, "authCode", value.asInstanceOf[js.Any])
       
@@ -173,7 +178,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnCancelledActions]
     }
     
-    extension [Self <: OnCancelledActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCancelledActions] (val x: Self) extends AnyVal {
       
       inline def setRedirect(value: () => Unit): Self = StObject.set(x, "redirect", js.Any.fromFunction0(value))
     }
@@ -192,7 +198,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnClickActions]
     }
     
-    extension [Self <: OnClickActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnClickActions] (val x: Self) extends AnyVal {
       
       inline def setReject(value: () => js.Promise[Unit]): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
       
@@ -213,7 +220,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnInitActions]
     }
     
-    extension [Self <: OnInitActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnInitActions] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -236,7 +244,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnShippingChangeActions]
     }
     
-    extension [Self <: OnShippingChangeActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnShippingChangeActions] (val x: Self) extends AnyVal {
       
       inline def setOrder(value: Patch): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
@@ -269,7 +278,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[OnShippingChangeData]
     }
     
-    extension [Self <: OnShippingChangeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnShippingChangeData] (val x: Self) extends AnyVal {
       
       inline def setBuyerAccessToken(value: String): Self = StObject.set(x, "buyerAccessToken", value.asInstanceOf[js.Any])
       
@@ -401,7 +411,8 @@ object typesComponentsButtonsMod {
       __obj.asInstanceOf[PayPalButtonsComponentOptions]
     }
     
-    extension [Self <: PayPalButtonsComponentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalButtonsComponentOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateBillingAgreement(value: () => js.Promise[String]): Self = StObject.set(x, "createBillingAgreement", js.Any.fromFunction0(value))
       

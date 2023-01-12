@@ -23,7 +23,8 @@ object GetEnrollmentStatusesForOrganizationResponse {
     __obj.asInstanceOf[GetEnrollmentStatusesForOrganizationResponse]
   }
   
-  extension [Self <: GetEnrollmentStatusesForOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnrollmentStatusesForOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountEnrollmentStatuses(value: AccountEnrollmentStatuses): Self = StObject.set(x, "accountEnrollmentStatuses", value.asInstanceOf[js.Any])
     

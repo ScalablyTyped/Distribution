@@ -46,7 +46,8 @@ object MlInfluencer {
     __obj.asInstanceOf[MlInfluencer]
   }
   
-  extension [Self <: MlInfluencer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfluencer] (val x: Self) extends AnyVal {
     
     inline def setBucket_span(value: DurationValue[UnitSeconds]): Self = StObject.set(x, "bucket_span", value.asInstanceOf[js.Any])
     

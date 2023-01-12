@@ -38,7 +38,8 @@ object TieredAchievementClass {
     __obj.asInstanceOf[TieredAchievementClass[Tier]]
   }
   
-  extension [Self <: TieredAchievementClass[?], Tier /* <: String | Double */](x: Self & TieredAchievementClass[Tier]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TieredAchievementClass[?], Tier /* <: String | Double */] (val x: Self & TieredAchievementClass[Tier]) extends AnyVal {
     
     inline def setBuildingTie(value: GameObject): Self = StObject.set(x, "buildingTie", value.asInstanceOf[js.Any])
     

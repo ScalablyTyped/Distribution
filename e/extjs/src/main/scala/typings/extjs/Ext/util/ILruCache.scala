@@ -57,7 +57,8 @@ object ILruCache {
     __obj.asInstanceOf[ILruCache]
   }
   
-  extension [Self <: ILruCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILruCache] (val x: Self) extends AnyVal {
     
     inline def setClear(value: /* initial */ js.UndefOr[Any] => IHashMap): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     

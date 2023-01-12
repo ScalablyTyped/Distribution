@@ -18,7 +18,8 @@ object AnalyzeIDRequest {
     __obj.asInstanceOf[AnalyzeIDRequest]
   }
   
-  extension [Self <: AnalyzeIDRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeIDRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentPages(value: DocumentPages): Self = StObject.set(x, "DocumentPages", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ComputeLimits {
     __obj.asInstanceOf[ComputeLimits]
   }
   
-  extension [Self <: ComputeLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeLimits] (val x: Self) extends AnyVal {
     
     inline def setMaximumCapacityUnits(value: Integer): Self = StObject.set(x, "MaximumCapacityUnits", value.asInstanceOf[js.Any])
     

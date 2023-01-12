@@ -22,7 +22,8 @@ object LiveChatUserBannedMessageDetails {
     __obj.asInstanceOf[LiveChatUserBannedMessageDetails]
   }
   
-  extension [Self <: LiveChatUserBannedMessageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatUserBannedMessageDetails] (val x: Self) extends AnyVal {
     
     inline def setBanDurationSeconds(value: String): Self = StObject.set(x, "banDurationSeconds", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DescribeMaintenanceWindowExecutionsRequest {
     __obj.asInstanceOf[DescribeMaintenanceWindowExecutionsRequest]
   }
   
-  extension [Self <: DescribeMaintenanceWindowExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMaintenanceWindowExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: MaintenanceWindowFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

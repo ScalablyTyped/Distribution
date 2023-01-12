@@ -28,7 +28,8 @@ object DeleteIndexOutput {
     __obj.asInstanceOf[DeleteIndexOutput]
   }
   
-  extension [Self <: DeleteIndexOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIndexOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SmbMountOptions {
     __obj.asInstanceOf[SmbMountOptions]
   }
   
-  extension [Self <: SmbMountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmbMountOptions] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: SmbVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

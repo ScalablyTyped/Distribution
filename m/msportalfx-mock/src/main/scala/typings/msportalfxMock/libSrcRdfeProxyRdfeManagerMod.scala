@@ -101,7 +101,8 @@ object libSrcRdfeProxyRdfeManagerMod {
         __obj.asInstanceOf[MockData]
       }
       
-      extension [Self <: MockData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockData] (val x: Self) extends AnyVal {
         
         inline def setCertificates(value: StringMap[js.Array[SubscriptionCertificate]]): Self = StObject.set(x, "certificates", value.asInstanceOf[js.Any])
         

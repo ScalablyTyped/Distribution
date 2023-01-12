@@ -18,7 +18,8 @@ object ListSupportedPhoneNumberCountriesResponse {
     __obj.asInstanceOf[ListSupportedPhoneNumberCountriesResponse]
   }
   
-  extension [Self <: ListSupportedPhoneNumberCountriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSupportedPhoneNumberCountriesResponse] (val x: Self) extends AnyVal {
     
     inline def setPhoneNumberCountries(value: PhoneNumberCountriesList): Self = StObject.set(x, "PhoneNumberCountries", value.asInstanceOf[js.Any])
     

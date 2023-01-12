@@ -17,7 +17,8 @@ object Modification {
     __obj.asInstanceOf[Modification]
   }
   
-  extension [Self <: Modification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modification] (val x: Self) extends AnyVal {
     
     inline def setCosignatoryAccount(value: String): Self = StObject.set(x, "cosignatoryAccount", value.asInstanceOf[js.Any])
     

@@ -550,7 +550,8 @@ object stepLabelStepLabelMod {
       __obj.asInstanceOf[StepLabelProps]
     }
     
-    extension [Self <: StepLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

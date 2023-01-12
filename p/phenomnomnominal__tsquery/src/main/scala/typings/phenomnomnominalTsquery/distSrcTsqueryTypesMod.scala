@@ -107,7 +107,8 @@ object distSrcTsqueryTypesMod {
       __obj.asInstanceOf[TSQueryOptions]
     }
     
-    extension [Self <: TSQueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSQueryOptions] (val x: Self) extends AnyVal {
       
       inline def setVisitAllChildren(value: Boolean): Self = StObject.set(x, "visitAllChildren", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object distSrcTsqueryTypesMod {
       __obj.asInstanceOf[TSQueryProperties]
     }
     
-    extension [Self <: TSQueryProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSQueryProperties] (val x: Self) extends AnyVal {
       
       inline def setKindName(value: String): Self = StObject.set(x, "kindName", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object distSrcTsqueryTypesMod {
       __obj.asInstanceOf[TSQuerySelectorNode]
     }
     
-    extension [Self <: TSQuerySelectorNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSQuerySelectorNode] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: TSQuerySelectorNode): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

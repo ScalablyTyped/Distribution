@@ -18,7 +18,8 @@ object StartEntitiesDetectionV2JobResponse {
     __obj.asInstanceOf[StartEntitiesDetectionV2JobResponse]
   }
   
-  extension [Self <: StartEntitiesDetectionV2JobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEntitiesDetectionV2JobResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

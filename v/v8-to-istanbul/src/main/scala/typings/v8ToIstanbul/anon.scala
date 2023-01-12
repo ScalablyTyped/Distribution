@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[OriginalSource]
     }
     
-    extension [Self <: OriginalSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalSource] (val x: Self) extends AnyVal {
       
       inline def setOriginalSource(value: String): Self = StObject.set(x, "originalSource", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Sourcemap]
     }
     
-    extension [Self <: Sourcemap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sourcemap] (val x: Self) extends AnyVal {
       
       inline def setSourcemap(value: SourceMapInput): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     }

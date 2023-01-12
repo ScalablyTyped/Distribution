@@ -19,7 +19,8 @@ object RemoveMembershipsParameters {
     __obj.asInstanceOf[RemoveMembershipsParameters]
   }
   
-  extension [Self <: RemoveMembershipsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveMembershipsParameters] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

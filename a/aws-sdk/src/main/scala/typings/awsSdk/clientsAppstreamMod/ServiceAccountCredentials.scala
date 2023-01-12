@@ -23,7 +23,8 @@ object ServiceAccountCredentials {
     __obj.asInstanceOf[ServiceAccountCredentials]
   }
   
-  extension [Self <: ServiceAccountCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: AccountName): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     

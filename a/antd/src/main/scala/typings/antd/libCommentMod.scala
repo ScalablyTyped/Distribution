@@ -50,7 +50,8 @@ object libCommentMod extends Shortcut {
       __obj.asInstanceOf[CommentProps]
     }
     
-    extension [Self <: CommentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ReactNode]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

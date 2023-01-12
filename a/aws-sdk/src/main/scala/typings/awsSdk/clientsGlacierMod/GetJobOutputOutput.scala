@@ -48,7 +48,8 @@ object GetJobOutputOutput {
     __obj.asInstanceOf[GetJobOutputOutput]
   }
   
-  extension [Self <: GetJobOutputOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobOutputOutput] (val x: Self) extends AnyVal {
     
     inline def setAcceptRanges(value: String): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
     

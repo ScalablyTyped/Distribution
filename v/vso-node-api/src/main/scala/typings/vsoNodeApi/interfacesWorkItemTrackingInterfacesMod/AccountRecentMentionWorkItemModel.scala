@@ -56,7 +56,8 @@ object AccountRecentMentionWorkItemModel {
     __obj.asInstanceOf[AccountRecentMentionWorkItemModel]
   }
   
-  extension [Self <: AccountRecentMentionWorkItemModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRecentMentionWorkItemModel] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: String): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
     

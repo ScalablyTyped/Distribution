@@ -33,7 +33,8 @@ object typingsSheetMod {
       __obj.asInstanceOf[SheetBoundaries]
     }
     
-    extension [Self <: SheetBoundaries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetBoundaries] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Double): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object typingsSheetMod {
       __obj.asInstanceOf[SheetDimensions]
     }
     
-    extension [Self <: SheetDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetDimensions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

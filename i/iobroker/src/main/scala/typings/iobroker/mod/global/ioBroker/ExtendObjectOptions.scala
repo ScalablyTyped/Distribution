@@ -20,7 +20,8 @@ object ExtendObjectOptions {
     __obj.asInstanceOf[ExtendObjectOptions]
   }
   
-  extension [Self <: ExtendObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserve(value: ExtendObjectOptionsPreserve): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
     

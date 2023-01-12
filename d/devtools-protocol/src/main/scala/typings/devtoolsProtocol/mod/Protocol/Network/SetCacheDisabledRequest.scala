@@ -18,7 +18,8 @@ object SetCacheDisabledRequest {
     __obj.asInstanceOf[SetCacheDisabledRequest]
   }
   
-  extension [Self <: SetCacheDisabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetCacheDisabledRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheDisabled(value: Boolean): Self = StObject.set(x, "cacheDisabled", value.asInstanceOf[js.Any])
   }

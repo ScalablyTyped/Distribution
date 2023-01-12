@@ -18,7 +18,8 @@ object DescribeObservationRequest {
     __obj.asInstanceOf[DescribeObservationRequest]
   }
   
-  extension [Self <: DescribeObservationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeObservationRequest] (val x: Self) extends AnyVal {
     
     inline def setObservationId(value: ObservationId): Self = StObject.set(x, "ObservationId", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object RunPipelineRequest {
     __obj.asInstanceOf[RunPipelineRequest]
   }
   
-  extension [Self <: RunPipelineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunPipelineRequest] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

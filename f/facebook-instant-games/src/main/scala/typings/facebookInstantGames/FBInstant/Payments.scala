@@ -73,7 +73,8 @@ object Payments {
     __obj.asInstanceOf[Payments]
   }
   
-  extension [Self <: Payments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Payments] (val x: Self) extends AnyVal {
     
     inline def setConsumePurchaseAsync(value: String => js.Promise[Unit]): Self = StObject.set(x, "consumePurchaseAsync", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object GetRelationalDatabaseBlueprintsResult {
     __obj.asInstanceOf[GetRelationalDatabaseBlueprintsResult]
   }
   
-  extension [Self <: GetRelationalDatabaseBlueprintsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseBlueprintsResult] (val x: Self) extends AnyVal {
     
     inline def setBlueprints(value: RelationalDatabaseBlueprintList): Self = StObject.set(x, "blueprints", value.asInstanceOf[js.Any])
     

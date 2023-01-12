@@ -15,7 +15,8 @@ object TypeofAch {
     __obj.asInstanceOf[TypeofAch]
   }
   
-  extension [Self <: TypeofAch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAch] (val x: Self) extends AnyVal {
     
     inline def setStatusDetail(value: Any): Self = StObject.set(x, "StatusDetail", value.asInstanceOf[js.Any])
   }

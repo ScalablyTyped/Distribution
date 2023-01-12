@@ -23,7 +23,8 @@ object ListGitHubAccountTokenNamesOutput {
     __obj.asInstanceOf[ListGitHubAccountTokenNamesOutput]
   }
   
-  extension [Self <: ListGitHubAccountTokenNamesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGitHubAccountTokenNamesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

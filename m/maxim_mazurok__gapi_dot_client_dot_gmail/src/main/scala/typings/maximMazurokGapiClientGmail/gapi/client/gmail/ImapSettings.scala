@@ -31,7 +31,8 @@ object ImapSettings {
     __obj.asInstanceOf[ImapSettings]
   }
   
-  extension [Self <: ImapSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImapSettings] (val x: Self) extends AnyVal {
     
     inline def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object MessageEvent {
     __obj.asInstanceOf[MessageEvent]
   }
   
-  extension [Self <: MessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
     
     inline def setCompressedSizeBytes(value: String): Self = StObject.set(x, "compressedSizeBytes", value.asInstanceOf[js.Any])
     

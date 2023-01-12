@@ -23,7 +23,8 @@ object CreatePageFieldCommand {
     __obj.asInstanceOf[CreatePageFieldCommand]
   }
   
-  extension [Self <: CreatePageFieldCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePageFieldCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

@@ -162,7 +162,8 @@ object libUtilResolveConfigMod {
       __obj.asInstanceOf[PackageJSON]
     }
     
-    extension [Self <: PackageJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJSON] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

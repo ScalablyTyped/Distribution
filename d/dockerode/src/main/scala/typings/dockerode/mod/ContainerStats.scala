@@ -41,7 +41,8 @@ object ContainerStats {
     __obj.asInstanceOf[ContainerStats]
   }
   
-  extension [Self <: ContainerStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerStats] (val x: Self) extends AnyVal {
     
     inline def setBlkio_stats(value: BlkioStats): Self = StObject.set(x, "blkio_stats", value.asInstanceOf[js.Any])
     

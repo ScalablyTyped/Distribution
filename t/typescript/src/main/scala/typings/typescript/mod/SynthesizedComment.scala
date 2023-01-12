@@ -26,7 +26,8 @@ object SynthesizedComment {
     __obj.asInstanceOf[SynthesizedComment]
   }
   
-  extension [Self <: SynthesizedComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynthesizedComment] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: `-1`): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

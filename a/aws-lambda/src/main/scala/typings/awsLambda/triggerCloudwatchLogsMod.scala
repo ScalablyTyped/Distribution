@@ -36,7 +36,8 @@ object triggerCloudwatchLogsMod {
       __obj.asInstanceOf[CloudWatchLogsDecodedData]
     }
     
-    extension [Self <: CloudWatchLogsDecodedData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudWatchLogsDecodedData] (val x: Self) extends AnyVal {
       
       inline def setLogEvents(value: js.Array[CloudWatchLogsLogEvent]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object triggerCloudwatchLogsMod {
       __obj.asInstanceOf[CloudWatchLogsEvent]
     }
     
-    extension [Self <: CloudWatchLogsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudWatchLogsEvent] (val x: Self) extends AnyVal {
       
       inline def setAwslogs(value: CloudWatchLogsEventData): Self = StObject.set(x, "awslogs", value.asInstanceOf[js.Any])
     }
@@ -84,7 +86,8 @@ object triggerCloudwatchLogsMod {
       __obj.asInstanceOf[CloudWatchLogsEventData]
     }
     
-    extension [Self <: CloudWatchLogsEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudWatchLogsEventData] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -109,7 +112,8 @@ object triggerCloudwatchLogsMod {
       __obj.asInstanceOf[CloudWatchLogsLogEvent]
     }
     
-    extension [Self <: CloudWatchLogsLogEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudWatchLogsLogEvent] (val x: Self) extends AnyVal {
       
       inline def setExtractedFields(value: CloudWatchLogsLogEventExtractedFields): Self = StObject.set(x, "extractedFields", value.asInstanceOf[js.Any])
       

@@ -79,7 +79,8 @@ object XWindow2 {
     __obj.asInstanceOf[XWindow2]
   }
   
-  extension [Self <: XWindow2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindow2] (val x: Self) extends AnyVal {
     
     inline def setGetOutputSize(value: () => Size): Self = StObject.set(x, "getOutputSize", js.Any.fromFunction0(value))
     

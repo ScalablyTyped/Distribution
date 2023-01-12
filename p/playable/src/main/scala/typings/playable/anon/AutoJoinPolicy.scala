@@ -17,7 +17,8 @@ object AutoJoinPolicy {
     __obj.asInstanceOf[AutoJoinPolicy]
   }
   
-  extension [Self <: AutoJoinPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoJoinPolicy] (val x: Self) extends AnyVal {
     
     inline def setAutoJoinPolicy(value: ORIGINSCOPED): Self = StObject.set(x, "AutoJoinPolicy", value.asInstanceOf[js.Any])
     

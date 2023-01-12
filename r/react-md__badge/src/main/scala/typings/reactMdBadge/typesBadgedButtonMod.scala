@@ -787,7 +787,8 @@ object typesBadgedButtonMod {
       __obj.asInstanceOf[BadgedButtonProps]
     }
     
-    extension [Self <: BadgedButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgedButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

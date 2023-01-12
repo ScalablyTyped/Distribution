@@ -61,7 +61,8 @@ object anon {
       __obj.asInstanceOf[ClientConfigmaxAttemptsnu]
     }
     
-    extension [Self <: ClientConfigmaxAttemptsnu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfigmaxAttemptsnu] (val x: Self) extends AnyVal {
       
       inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
       

@@ -75,7 +75,8 @@ object typingsI18nTranslationPackageMod {
       __obj.asInstanceOf[RawTranslationPackage]
     }
     
-    extension [Self <: RawTranslationPackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawTranslationPackage] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: ErrorTranslationSet): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

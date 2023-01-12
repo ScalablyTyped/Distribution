@@ -30,7 +30,8 @@ object KinVariablesbreakpointsto {
     __obj.asInstanceOf[KinVariablesbreakpointsto]
   }
   
-  extension [Self <: KinVariablesbreakpointsto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinVariablesbreakpointsto] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: top | right | bottom | left): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object distLoaderMutatingDotsMod extends Shortcut {
       __obj.asInstanceOf[MutatingDotsProps]
     }
     
-    extension [Self <: MutatingDotsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutatingDotsProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

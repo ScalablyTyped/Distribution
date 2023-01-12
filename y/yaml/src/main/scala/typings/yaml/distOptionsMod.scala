@@ -69,7 +69,8 @@ object distOptionsMod {
       __obj.asInstanceOf[CreateNodeOptions]
     }
     
-    extension [Self <: CreateNodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAliasDuplicateObjects(value: Boolean): Self = StObject.set(x, "aliasDuplicateObjects", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object distOptionsMod {
       __obj.asInstanceOf[DocumentOptions]
     }
     
-    extension [Self <: DocumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: LogLevelId): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
@@ -206,7 +208,8 @@ object distOptionsMod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setIntAsBigInt(value: Boolean): Self = StObject.set(x, "intAsBigInt", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object distOptionsMod {
       __obj.asInstanceOf[SchemaOptions]
     }
     
-    extension [Self <: SchemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaOptions] (val x: Self) extends AnyVal {
       
       inline def setCompat(value: String | Tags): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
       
@@ -388,7 +392,8 @@ object distOptionsMod {
       __obj.asInstanceOf[ToJSOptions]
     }
     
-    extension [Self <: ToJSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToJSOptions] (val x: Self) extends AnyVal {
       
       inline def setMapAsMap(value: Boolean): Self = StObject.set(x, "mapAsMap", value.asInstanceOf[js.Any])
       
@@ -573,7 +578,8 @@ object distOptionsMod {
       __obj.asInstanceOf[ToStringOptions]
     }
     
-    extension [Self <: ToStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToStringOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockQuote(value: Boolean | folded | literal): Self = StObject.set(x, "blockQuote", value.asInstanceOf[js.Any])
       

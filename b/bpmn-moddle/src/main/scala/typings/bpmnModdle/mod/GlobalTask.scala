@@ -26,7 +26,8 @@ object GlobalTask {
     __obj.asInstanceOf[GlobalTask]
   }
   
-  extension [Self <: GlobalTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTask] (val x: Self) extends AnyVal {
     
     inline def setResources(value: ResourceRole): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
   }

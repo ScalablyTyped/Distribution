@@ -16,7 +16,8 @@ object ImportProductSetsRequest {
     __obj.asInstanceOf[ImportProductSetsRequest]
   }
   
-  extension [Self <: ImportProductSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportProductSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setInputConfig(value: ImportProductSetsInputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     

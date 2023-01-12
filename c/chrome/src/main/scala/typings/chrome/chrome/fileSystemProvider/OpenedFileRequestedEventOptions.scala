@@ -18,7 +18,8 @@ object OpenedFileRequestedEventOptions {
     __obj.asInstanceOf[OpenedFileRequestedEventOptions]
   }
   
-  extension [Self <: OpenedFileRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenedFileRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setOpenRequestId(value: Double): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }

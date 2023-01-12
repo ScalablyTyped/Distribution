@@ -23,7 +23,8 @@ object AssociationExecutionTargetsFilter {
     __obj.asInstanceOf[AssociationExecutionTargetsFilter]
   }
   
-  extension [Self <: AssociationExecutionTargetsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationExecutionTargetsFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AssociationExecutionTargetsFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

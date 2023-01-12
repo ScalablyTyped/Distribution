@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: default): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setSelection(value: typings.ckeditorCkeditor5Engine.srcModelSelectionMod.default | DocumentSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       

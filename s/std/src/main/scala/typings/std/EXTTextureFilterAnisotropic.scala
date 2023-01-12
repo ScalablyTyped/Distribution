@@ -20,7 +20,8 @@ object EXTTextureFilterAnisotropic {
     __obj.asInstanceOf[EXTTextureFilterAnisotropic]
   }
   
-  extension [Self <: EXTTextureFilterAnisotropic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXTTextureFilterAnisotropic] (val x: Self) extends AnyVal {
     
     inline def setMAX_TEXTURE_MAX_ANISOTROPY_EXT(value: GLenum): Self = StObject.set(x, "MAX_TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
     

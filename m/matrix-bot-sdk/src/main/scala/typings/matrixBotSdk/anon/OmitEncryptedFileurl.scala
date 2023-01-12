@@ -23,7 +23,8 @@ object OmitEncryptedFileurl {
     __obj.asInstanceOf[OmitEncryptedFileurl]
   }
   
-  extension [Self <: OmitEncryptedFileurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitEncryptedFileurl] (val x: Self) extends AnyVal {
     
     inline def setHashes(value: Sha256): Self = StObject.set(x, "hashes", value.asInstanceOf[js.Any])
     

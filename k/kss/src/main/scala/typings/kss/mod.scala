@@ -175,7 +175,8 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object mod {
       __obj.asInstanceOf[KssOptions]
     }
     
-    extension [Self <: KssOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KssOptions] (val x: Self) extends AnyVal {
       
       inline def setBuilder(value: Any): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -307,7 +310,8 @@ object mod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

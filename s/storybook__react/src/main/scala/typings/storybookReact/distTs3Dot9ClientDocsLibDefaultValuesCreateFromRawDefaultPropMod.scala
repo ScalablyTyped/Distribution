@@ -46,7 +46,8 @@ object distTs3Dot9ClientDocsLibDefaultValuesCreateFromRawDefaultPropMod {
       __obj.asInstanceOf[TypeResolvers]
     }
     
-    extension [Self <: TypeResolvers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeResolvers] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: (/* rawDefaultProp */ Any, /* propDef */ PropDef) => PropDefaultValue): Self = StObject.set(x, "default", js.Any.fromFunction2(value))
       

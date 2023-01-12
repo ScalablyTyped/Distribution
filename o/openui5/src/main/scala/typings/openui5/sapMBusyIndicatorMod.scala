@@ -549,7 +549,8 @@ object sapMBusyIndicatorMod {
       __obj.asInstanceOf[BusyIndicatorSettings]
     }
     
-    extension [Self <: BusyIndicatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BusyIndicatorSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

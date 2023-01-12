@@ -25,7 +25,8 @@ object IGeoJsonReadOptions {
     __obj.asInstanceOf[IGeoJsonReadOptions]
   }
   
-  extension [Self <: IGeoJsonReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoJsonReadOptions] (val x: Self) extends AnyVal {
     
     inline def setJsonpQueryParam(value: String): Self = StObject.set(x, "jsonpQueryParam", value.asInstanceOf[js.Any])
     

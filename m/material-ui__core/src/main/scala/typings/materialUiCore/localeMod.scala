@@ -146,7 +146,8 @@ object localeMod {
       __obj.asInstanceOf[Localization]
     }
     
-    extension [Self <: Localization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Localization] (val x: Self) extends AnyVal {
       
       inline def setProps(value: MuiAlert): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       

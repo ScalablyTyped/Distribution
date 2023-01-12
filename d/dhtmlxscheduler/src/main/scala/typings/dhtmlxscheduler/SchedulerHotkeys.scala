@@ -17,7 +17,8 @@ object SchedulerHotkeys {
     __obj.asInstanceOf[SchedulerHotkeys]
   }
   
-  extension [Self <: SchedulerHotkeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerHotkeys] (val x: Self) extends AnyVal {
     
     inline def setEdit_cancel(value: Double): Self = StObject.set(x, "edit_cancel", value.asInstanceOf[js.Any])
     

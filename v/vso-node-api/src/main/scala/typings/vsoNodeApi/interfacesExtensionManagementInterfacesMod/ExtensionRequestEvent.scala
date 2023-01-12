@@ -52,7 +52,8 @@ object ExtensionRequestEvent {
     __obj.asInstanceOf[ExtensionRequestEvent]
   }
   
-  extension [Self <: ExtensionRequestEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionRequestEvent] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

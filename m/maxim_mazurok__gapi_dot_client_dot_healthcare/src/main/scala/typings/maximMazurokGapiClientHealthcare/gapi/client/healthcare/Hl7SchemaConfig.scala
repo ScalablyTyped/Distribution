@@ -21,7 +21,8 @@ object Hl7SchemaConfig {
     __obj.asInstanceOf[Hl7SchemaConfig]
   }
   
-  extension [Self <: Hl7SchemaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hl7SchemaConfig] (val x: Self) extends AnyVal {
     
     inline def setMessageSchemaConfigs(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.healthcare.gapi.client.healthcare.SchemaGroup} */ js.Any

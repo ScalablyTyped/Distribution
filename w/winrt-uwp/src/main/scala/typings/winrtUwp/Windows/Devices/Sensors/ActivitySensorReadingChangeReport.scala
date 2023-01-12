@@ -17,7 +17,8 @@ object ActivitySensorReadingChangeReport {
     __obj.asInstanceOf[ActivitySensorReadingChangeReport]
   }
   
-  extension [Self <: ActivitySensorReadingChangeReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivitySensorReadingChangeReport] (val x: Self) extends AnyVal {
     
     inline def setReading(value: ActivitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

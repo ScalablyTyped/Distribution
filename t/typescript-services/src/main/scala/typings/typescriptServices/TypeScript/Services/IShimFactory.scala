@@ -17,7 +17,8 @@ object IShimFactory {
     __obj.asInstanceOf[IShimFactory]
   }
   
-  extension [Self <: IShimFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShimFactory] (val x: Self) extends AnyVal {
     
     inline def setRegisterShim(value: IShim => Unit): Self = StObject.set(x, "registerShim", js.Any.fromFunction1(value))
     

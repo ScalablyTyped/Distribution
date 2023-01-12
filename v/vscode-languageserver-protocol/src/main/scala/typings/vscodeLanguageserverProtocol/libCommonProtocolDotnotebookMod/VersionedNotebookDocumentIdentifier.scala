@@ -25,7 +25,8 @@ object VersionedNotebookDocumentIdentifier {
     __obj.asInstanceOf[VersionedNotebookDocumentIdentifier]
   }
   
-  extension [Self <: VersionedNotebookDocumentIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionedNotebookDocumentIdentifier] (val x: Self) extends AnyVal {
     
     inline def setUri(value: URI): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     

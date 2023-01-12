@@ -86,7 +86,8 @@ object CIMSolidStroke {
     __obj.asInstanceOf[CIMSolidStroke]
   }
   
-  extension [Self <: CIMSolidStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSolidStroke] (val x: Self) extends AnyVal {
     
     inline def setCapStyle(value: Butt | Round | Square): Self = StObject.set(x, "capStyle", value.asInstanceOf[js.Any])
     

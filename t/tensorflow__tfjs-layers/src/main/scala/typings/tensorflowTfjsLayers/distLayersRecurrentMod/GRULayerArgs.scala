@@ -40,7 +40,8 @@ object GRULayerArgs {
     __obj.asInstanceOf[GRULayerArgs]
   }
   
-  extension [Self <: GRULayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GRULayerArgs] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: Double): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

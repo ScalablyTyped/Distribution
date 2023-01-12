@@ -41,7 +41,8 @@ object BaseSparklineTooltip {
     __obj.asInstanceOf[BaseSparklineTooltip]
   }
   
-  extension [Self <: BaseSparklineTooltip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSparklineTooltip] (val x: Self) extends AnyVal {
     
     inline def setContentTemplate(
       value: template | (js.Function2[

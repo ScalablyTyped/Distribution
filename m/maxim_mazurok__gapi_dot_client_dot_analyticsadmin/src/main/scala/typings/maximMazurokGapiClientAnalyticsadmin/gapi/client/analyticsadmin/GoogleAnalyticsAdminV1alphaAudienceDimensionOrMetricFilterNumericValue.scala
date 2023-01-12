@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceDimensionOrMetricFilterNumericValue] (val x: Self) extends AnyVal {
     
     inline def setDoubleValue(value: Double): Self = StObject.set(x, "doubleValue", value.asInstanceOf[js.Any])
     

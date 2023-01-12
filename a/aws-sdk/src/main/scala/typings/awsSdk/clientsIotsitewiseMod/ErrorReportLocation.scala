@@ -23,7 +23,8 @@ object ErrorReportLocation {
     __obj.asInstanceOf[ErrorReportLocation]
   }
   
-  extension [Self <: ErrorReportLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorReportLocation] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: Bucket): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

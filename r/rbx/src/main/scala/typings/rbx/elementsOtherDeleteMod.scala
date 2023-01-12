@@ -78,7 +78,8 @@ object elementsOtherDeleteMod {
       __obj.asInstanceOf[DeleteModifierProps]
     }
     
-    extension [Self <: DeleteModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteModifierProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object elementsOtherDeleteMod {
       __obj.asInstanceOf[DeleteProps]
     }
     
-    extension [Self <: DeleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -328,7 +330,8 @@ object elementsOtherDeleteMod {
       __obj.asInstanceOf[DeleteVariables]
     }
     
-    extension [Self <: DeleteVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVariables] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }
@@ -345,7 +348,8 @@ object elementsOtherDeleteMod {
       __obj.asInstanceOf[DeleteVariablesDefaults]
     }
     
-    extension [Self <: DeleteVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setSizes(value: small | medium | large): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object QPathSeparator {
     __obj.asInstanceOf[QPathSeparator]
   }
   
-  extension [Self <: QPathSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QPathSeparator] (val x: Self) extends AnyVal {
     
     inline def setQPathSeparator(value: String): Self = StObject.set(x, "qPathSeparator", value.asInstanceOf[js.Any])
   }

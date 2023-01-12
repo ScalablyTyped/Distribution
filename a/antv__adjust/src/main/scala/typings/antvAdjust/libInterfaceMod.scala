@@ -34,7 +34,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[AdjustCfg]
     }
     
-    extension [Self <: AdjustCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjustCfg] (val x: Self) extends AnyVal {
       
       inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[DodgeCfg]
     }
     
-    extension [Self <: DodgeCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DodgeCfg] (val x: Self) extends AnyVal {
       
       inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object libInterfaceMod {
       __obj.asInstanceOf[StackCfg]
     }
     
-    extension [Self <: StackCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackCfg] (val x: Self) extends AnyVal {
       
       inline def setAdjustNames(value: js.Array[String]): Self = StObject.set(x, "adjustNames", value.asInstanceOf[js.Any])
       

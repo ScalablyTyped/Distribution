@@ -22,7 +22,8 @@ object CombinedAudience {
     __obj.asInstanceOf[CombinedAudience]
   }
   
-  extension [Self <: CombinedAudience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinedAudience] (val x: Self) extends AnyVal {
     
     inline def setCombinedAudienceId(value: String): Self = StObject.set(x, "combinedAudienceId", value.asInstanceOf[js.Any])
     

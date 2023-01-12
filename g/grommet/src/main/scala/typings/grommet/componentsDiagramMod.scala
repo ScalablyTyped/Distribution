@@ -69,7 +69,8 @@ object componentsDiagramMod {
       __obj.asInstanceOf[DiagramProps]
     }
     
-    extension [Self <: DiagramProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagramProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: DiagramAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

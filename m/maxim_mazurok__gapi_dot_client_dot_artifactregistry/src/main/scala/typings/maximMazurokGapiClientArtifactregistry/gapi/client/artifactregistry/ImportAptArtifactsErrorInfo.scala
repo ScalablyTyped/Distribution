@@ -19,7 +19,8 @@ object ImportAptArtifactsErrorInfo {
     __obj.asInstanceOf[ImportAptArtifactsErrorInfo]
   }
   
-  extension [Self <: ImportAptArtifactsErrorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAptArtifactsErrorInfo] (val x: Self) extends AnyVal {
     
     inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

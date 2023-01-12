@@ -18,7 +18,8 @@ object NoManagementPreference {
     __obj.asInstanceOf[NoManagementPreference]
   }
   
-  extension [Self <: NoManagementPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoManagementPreference] (val x: Self) extends AnyVal {
     
     inline def setTargetDestination(value: NoPreferenceTargetDestinations): Self = StObject.set(x, "targetDestination", value.asInstanceOf[js.Any])
     

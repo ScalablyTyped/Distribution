@@ -29,7 +29,8 @@ object Typeofiframes {
     __obj.asInstanceOf[Typeofiframes]
   }
   
-  extension [Self <: Typeofiframes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofiframes] (val x: Self) extends AnyVal {
     
     inline def setCROSS_ORIGIN_IFRAMES_FILTER(value: Iframe => Boolean): Self = StObject.set(x, "CROSS_ORIGIN_IFRAMES_FILTER", js.Any.fromFunction1(value))
     

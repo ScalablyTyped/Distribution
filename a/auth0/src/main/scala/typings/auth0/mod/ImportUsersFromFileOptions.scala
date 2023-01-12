@@ -18,7 +18,8 @@ object ImportUsersFromFileOptions {
     __obj.asInstanceOf[ImportUsersFromFileOptions]
   }
   
-  extension [Self <: ImportUsersFromFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportUsersFromFileOptions] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: String): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }

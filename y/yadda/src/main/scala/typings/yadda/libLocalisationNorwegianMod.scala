@@ -671,7 +671,8 @@ object libLocalisationNorwegianMod extends Shortcut {
       __obj.asInstanceOf[Vocabulary]
     }
     
-    extension [Self <: Vocabulary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vocabulary] (val x: Self) extends AnyVal {
       
       inline def setGitt(value: String): Self = StObject.set(x, "gitt", value.asInstanceOf[js.Any])
       

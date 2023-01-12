@@ -28,7 +28,8 @@ object ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs {
     __obj.asInstanceOf[ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs]
   }
   
-  extension [Self <: ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCardViewBatchEditTemplateCellFocusedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: ASPxClientCardViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

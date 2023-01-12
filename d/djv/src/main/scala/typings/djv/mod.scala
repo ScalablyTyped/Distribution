@@ -52,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DjvConfig]
     }
     
-    extension [Self <: DjvConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DjvConfig] (val x: Self) extends AnyVal {
       
       inline def setErrorHandler(value: () => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction0(value))
       
@@ -101,7 +102,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Resolved]
     }
     
-    extension [Self <: Resolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolved] (val x: Self) extends AnyVal {
       
       inline def setFn(value: /* repeated */ Any => Any): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
       

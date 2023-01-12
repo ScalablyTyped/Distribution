@@ -18,7 +18,8 @@ object BatchGetAccountStatusRequest {
     __obj.asInstanceOf[BatchGetAccountStatusRequest]
   }
   
-  extension [Self <: BatchGetAccountStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAccountStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIdSet): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

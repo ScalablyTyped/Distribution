@@ -31,7 +31,8 @@ object StandardKey {
     __obj.asInstanceOf[StandardKey]
   }
   
-  extension [Self <: StandardKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardKey] (val x: Self) extends AnyVal {
     
     inline def setAlgorithms(value: js.Array[SupportedAlgorithm]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     

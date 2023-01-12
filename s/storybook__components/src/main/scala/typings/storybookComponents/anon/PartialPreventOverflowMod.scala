@@ -41,7 +41,8 @@ object PartialPreventOverflowMod {
     __obj.asInstanceOf[PartialPreventOverflowMod]
   }
   
-  extension [Self <: PartialPreventOverflowMod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPreventOverflowMod] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

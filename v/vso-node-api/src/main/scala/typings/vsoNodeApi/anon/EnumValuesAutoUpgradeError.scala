@@ -15,7 +15,8 @@ object EnumValuesAutoUpgradeError {
     __obj.asInstanceOf[EnumValuesAutoUpgradeError]
   }
   
-  extension [Self <: EnumValuesAutoUpgradeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAutoUpgradeError] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AutoUpgradeError): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

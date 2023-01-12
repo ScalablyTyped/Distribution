@@ -19,7 +19,8 @@ object ProgressTimeseries {
     __obj.asInstanceOf[ProgressTimeseries]
   }
   
-  extension [Self <: ProgressTimeseries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressTimeseries] (val x: Self) extends AnyVal {
     
     inline def setCurrentProgress(value: Double): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     

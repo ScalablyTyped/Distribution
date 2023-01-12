@@ -32,7 +32,8 @@ object LabelFormat {
     __obj.asInstanceOf[LabelFormat]
   }
   
-  extension [Self <: LabelFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelFormat] (val x: Self) extends AnyVal {
     
     inline def setDay(value: TimeFormat): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

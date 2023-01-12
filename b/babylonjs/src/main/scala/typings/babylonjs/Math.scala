@@ -19,7 +19,8 @@ object Math {
     __obj.asInstanceOf[Math]
   }
   
-  extension [Self <: Math](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Math] (val x: Self) extends AnyVal {
     
     inline def setFround(value: Double => Double): Self = StObject.set(x, "fround", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object EmptyUpdate {
     __obj.asInstanceOf[EmptyUpdate]
   }
   
-  extension [Self <: EmptyUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmptyUpdate] (val x: Self) extends AnyVal {
     
     inline def setEmptyUpdate(value: Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
     

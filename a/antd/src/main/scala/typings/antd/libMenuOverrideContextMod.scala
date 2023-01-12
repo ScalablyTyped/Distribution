@@ -30,7 +30,8 @@ object libMenuOverrideContextMod {
       __obj.asInstanceOf[OverrideContextProps]
     }
     
-    extension [Self <: OverrideContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverrideContextProps] (val x: Self) extends AnyVal {
       
       inline def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       

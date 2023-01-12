@@ -252,7 +252,8 @@ object mod {
       __obj.asInstanceOf[GUIParams]
     }
     
-    extension [Self <: GUIParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GUIParams] (val x: Self) extends AnyVal {
       
       inline def setAutoPlace(value: Boolean): Self = StObject.set(x, "autoPlace", value.asInstanceOf[js.Any])
       

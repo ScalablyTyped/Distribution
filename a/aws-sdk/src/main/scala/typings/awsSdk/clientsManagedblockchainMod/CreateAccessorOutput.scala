@@ -23,7 +23,8 @@ object CreateAccessorOutput {
     __obj.asInstanceOf[CreateAccessorOutput]
   }
   
-  extension [Self <: CreateAccessorOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessorOutput] (val x: Self) extends AnyVal {
     
     inline def setAccessorId(value: ResourceIdString): Self = StObject.set(x, "AccessorId", value.asInstanceOf[js.Any])
     

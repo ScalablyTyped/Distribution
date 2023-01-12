@@ -18,7 +18,8 @@ object PartialCommonColors {
     __obj.asInstanceOf[PartialCommonColors]
   }
   
-  extension [Self <: PartialCommonColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCommonColors] (val x: Self) extends AnyVal {
     
     inline def setBlack(value: String): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     

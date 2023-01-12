@@ -53,7 +53,8 @@ object PartialStyleRulesAppBarCl {
     __obj.asInstanceOf[PartialStyleRulesAppBarCl]
   }
   
-  extension [Self <: PartialStyleRulesAppBarCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesAppBarCl] (val x: Self) extends AnyVal {
     
     inline def setColorDefault(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

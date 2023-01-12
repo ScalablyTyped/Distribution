@@ -16,7 +16,8 @@ object Then {
     __obj.asInstanceOf[Then]
   }
   
-  extension [Self <: Then](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Then] (val x: Self) extends AnyVal {
     
     inline def setThen(value: CommandChainThen): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     

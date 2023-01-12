@@ -59,7 +59,8 @@ object libLanguagesUtilsAbstractMod {
       __obj.asInstanceOf[AbstractFormatter]
     }
     
-    extension [Self <: AbstractFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractFormatter] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: Config): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       

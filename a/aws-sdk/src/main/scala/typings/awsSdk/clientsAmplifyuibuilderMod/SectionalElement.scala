@@ -39,7 +39,8 @@ object SectionalElement {
     __obj.asInstanceOf[SectionalElement]
   }
   
-  extension [Self <: SectionalElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionalElement] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Integer): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

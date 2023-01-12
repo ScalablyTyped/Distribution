@@ -15,7 +15,8 @@ object LMPopOptions {
     __obj.asInstanceOf[LMPopOptions]
   }
   
-  extension [Self <: LMPopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LMPopOptions] (val x: Self) extends AnyVal {
     
     inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
     

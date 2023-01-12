@@ -42,7 +42,8 @@ object typecustomcustomFunctiont {
     __obj.asInstanceOf[typecustomcustomFunctiont]
   }
   
-  extension [Self <: typecustomcustomFunctiont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typecustomcustomFunctiont] (val x: Self) extends AnyVal {
     
     inline def setCustomFunction(value: Endpoint => Double): Self = StObject.set(x, "customFunction", js.Any.fromFunction1(value))
     

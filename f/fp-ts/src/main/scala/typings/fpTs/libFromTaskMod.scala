@@ -315,7 +315,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask[F]]
     }
     
-    extension [Self <: FromTask[?], F](x: Self & FromTask[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask[?], F] (val x: Self & FromTask[F]) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -334,7 +335,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask1[F]]
     }
     
-    extension [Self <: FromTask1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & FromTask1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & FromTask1[F]) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -353,7 +355,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask2[F]]
     }
     
-    extension [Self <: FromTask2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & FromTask2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & FromTask2[F]) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -372,7 +375,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask2C[F, E]]
     }
     
-    extension [Self <: FromTask2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (FromTask2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (FromTask2C[F, E])) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -391,7 +395,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask3[F]]
     }
     
-    extension [Self <: FromTask3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & FromTask3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & FromTask3[F]) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -410,7 +415,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask3C[F, E]]
     }
     
-    extension [Self <: FromTask3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (FromTask3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (FromTask3C[F, E])) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }
@@ -429,7 +435,8 @@ object libFromTaskMod {
       __obj.asInstanceOf[FromTask4[F]]
     }
     
-    extension [Self <: FromTask4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & FromTask4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTask4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & FromTask4[F]) extends AnyVal {
       
       inline def setFromTask(value: Task_[Any] => Any): Self = StObject.set(x, "fromTask", js.Any.fromFunction1(value))
     }

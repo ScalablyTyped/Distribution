@@ -42,7 +42,8 @@ object libChannelPoolMod {
       __obj.asInstanceOf[ChannelPool]
     }
     
-    extension [Self <: ChannelPool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelPool] (val x: Self) extends AnyVal {
       
       inline def setChannel(
         value: js.Function2[/* err */ js.Error | Null, /* channel */ typings.stompit.libChannelMod.^, Unit] => Unit
@@ -73,7 +74,8 @@ object libChannelPoolMod {
       __obj.asInstanceOf[ChannelPoolOptions]
     }
     
-    extension [Self <: ChannelPoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelPoolOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelOptions(value: ChannelOptions): Self = StObject.set(x, "channelOptions", value.asInstanceOf[js.Any])
       

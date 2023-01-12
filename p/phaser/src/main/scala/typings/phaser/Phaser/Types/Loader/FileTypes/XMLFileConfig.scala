@@ -34,7 +34,8 @@ object XMLFileConfig {
     __obj.asInstanceOf[XMLFileConfig]
   }
   
-  extension [Self <: XMLFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

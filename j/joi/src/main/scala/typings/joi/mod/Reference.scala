@@ -27,7 +27,8 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  extension [Self <: Reference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

@@ -754,7 +754,8 @@ object distDeclarationsSrcJsxNamespaceMod {
         __obj.asInstanceOf[typings.themeUiCore.distDeclarationsSrcJsxNamespaceMod.ThemeUIJSX.IntrinsicElements]
       }
       
-      extension [Self <: typings.themeUiCore.distDeclarationsSrcJsxNamespaceMod.ThemeUIJSX.IntrinsicElements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.themeUiCore.distDeclarationsSrcJsxNamespaceMod.ThemeUIJSX.IntrinsicElements] (val x: Self) extends AnyVal {
         
         inline def setA(value: (DetailedHTMLProps[AnchorHTMLAttributes[HTMLAnchorElement], HTMLAnchorElement]) & SxProp): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
         

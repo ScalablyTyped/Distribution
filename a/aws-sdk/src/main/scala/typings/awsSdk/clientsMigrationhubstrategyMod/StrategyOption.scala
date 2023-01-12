@@ -33,7 +33,8 @@ object StrategyOption {
     __obj.asInstanceOf[StrategyOption]
   }
   
-  extension [Self <: StrategyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
     
     inline def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
     

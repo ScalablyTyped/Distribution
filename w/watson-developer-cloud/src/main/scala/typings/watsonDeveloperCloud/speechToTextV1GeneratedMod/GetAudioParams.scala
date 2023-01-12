@@ -24,7 +24,8 @@ object GetAudioParams {
     __obj.asInstanceOf[GetAudioParams]
   }
   
-  extension [Self <: GetAudioParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAudioParams] (val x: Self) extends AnyVal {
     
     inline def setAudio_name(value: String): Self = StObject.set(x, "audio_name", value.asInstanceOf[js.Any])
     

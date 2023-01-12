@@ -18,7 +18,8 @@ object UpdateThemeResponse {
     __obj.asInstanceOf[UpdateThemeResponse]
   }
   
-  extension [Self <: UpdateThemeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateThemeResponse] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Theme): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

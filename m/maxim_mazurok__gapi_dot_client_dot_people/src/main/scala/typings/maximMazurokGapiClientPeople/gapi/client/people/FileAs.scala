@@ -19,7 +19,8 @@ object FileAs {
     __obj.asInstanceOf[FileAs]
   }
   
-  extension [Self <: FileAs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAs] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

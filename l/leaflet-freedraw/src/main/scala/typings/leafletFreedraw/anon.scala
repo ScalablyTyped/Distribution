@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[TypeofFreeDraw]
     }
     
-    extension [Self <: TypeofFreeDraw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofFreeDraw] (val x: Self) extends AnyVal {
       
       inline def setALL(value: localAll): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       

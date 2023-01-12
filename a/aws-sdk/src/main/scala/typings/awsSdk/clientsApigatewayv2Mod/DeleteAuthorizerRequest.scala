@@ -23,7 +23,8 @@ object DeleteAuthorizerRequest {
     __obj.asInstanceOf[DeleteAuthorizerRequest]
   }
   
-  extension [Self <: DeleteAuthorizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAuthorizerRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

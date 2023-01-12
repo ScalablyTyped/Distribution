@@ -18,7 +18,8 @@ object DeleteGatewayGroupRequest {
     __obj.asInstanceOf[DeleteGatewayGroupRequest]
   }
   
-  extension [Self <: DeleteGatewayGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGatewayGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGatewayGroupArn(value: Arn): Self = StObject.set(x, "GatewayGroupArn", value.asInstanceOf[js.Any])
   }

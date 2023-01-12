@@ -34,7 +34,8 @@ object IgGridRestSettingsRemove {
     __obj.asInstanceOf[IgGridRestSettingsRemove]
   }
   
-  extension [Self <: IgGridRestSettingsRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridRestSettingsRemove] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     

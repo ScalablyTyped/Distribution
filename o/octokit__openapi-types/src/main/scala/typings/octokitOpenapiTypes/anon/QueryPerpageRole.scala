@@ -17,7 +17,8 @@ object QueryPerpageRole {
     __obj.asInstanceOf[QueryPerpageRole]
   }
   
-  extension [Self <: QueryPerpageRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPerpageRole] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Teamslug): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

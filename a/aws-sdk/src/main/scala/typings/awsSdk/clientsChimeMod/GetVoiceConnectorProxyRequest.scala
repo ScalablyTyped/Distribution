@@ -18,7 +18,8 @@ object GetVoiceConnectorProxyRequest {
     __obj.asInstanceOf[GetVoiceConnectorProxyRequest]
   }
   
-  extension [Self <: GetVoiceConnectorProxyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceConnectorProxyRequest] (val x: Self) extends AnyVal {
     
     inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }

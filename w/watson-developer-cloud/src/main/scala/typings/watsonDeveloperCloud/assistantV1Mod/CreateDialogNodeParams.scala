@@ -80,7 +80,8 @@ object CreateDialogNodeParams {
     __obj.asInstanceOf[CreateDialogNodeParams]
   }
   
-  extension [Self <: CreateDialogNodeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDialogNodeParams] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

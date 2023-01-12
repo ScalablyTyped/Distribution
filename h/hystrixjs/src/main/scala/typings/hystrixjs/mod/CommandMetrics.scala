@@ -53,7 +53,8 @@ object CommandMetrics {
     __obj.asInstanceOf[CommandMetrics]
   }
   
-  extension [Self <: CommandMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandMetrics] (val x: Self) extends AnyVal {
     
     inline def setAddExecutionTime(value: Double => Unit): Self = StObject.set(x, "addExecutionTime", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IFramePositionInSprite]
     }
     
-    extension [Self <: IFramePositionInSprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFramePositionInSprite] (val x: Self) extends AnyVal {
       
       inline def setHorz(value: Double): Self = StObject.set(x, "horz", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IFrameSize]
     }
     
-    extension [Self <: IFrameSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrameSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IFramesData]
     }
     
-    extension [Self <: IFramesData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFramesData] (val x: Self) extends AnyVal {
       
       inline def setFramesCount(value: Double): Self = StObject.set(x, "framesCount", value.asInstanceOf[js.Any])
       
@@ -86,7 +89,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IFramesQuality]
     }
     
-    extension [Self <: IFramesQuality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFramesQuality] (val x: Self) extends AnyVal {
       
       inline def setFrameSize(value: IFrameSize): Self = StObject.set(x, "frameSize", value.asInstanceOf[js.Any])
       
@@ -109,7 +113,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IMaxFramesInSprite]
     }
     
-    extension [Self <: IMaxFramesInSprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMaxFramesInSprite] (val x: Self) extends AnyVal {
       
       inline def setHorz(value: Double): Self = StObject.set(x, "horz", value.asInstanceOf[js.Any])
       
@@ -139,7 +144,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[INormalizedFramesQuality]
     }
     
-    extension [Self <: INormalizedFramesQuality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INormalizedFramesQuality] (val x: Self) extends AnyVal {
       
       inline def setFramePositionInSprite(value: IFramePositionInSprite): Self = StObject.set(x, "framePositionInSprite", value.asInstanceOf[js.Any])
       
@@ -162,7 +168,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IPreviewAPI]
     }
     
-    extension [Self <: IPreviewAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreviewAPI] (val x: Self) extends AnyVal {
       
       inline def setSetFramesMap(value: /* map */ IFramesData => Unit): Self = StObject.set(x, "setFramesMap", js.Any.fromFunction1(value))
       
@@ -189,7 +196,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[IPreviewService]
     }
     
-    extension [Self <: IPreviewService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPreviewService] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -212,7 +220,8 @@ object distSrcModulesUiPreviewServiceTypesMod {
       __obj.asInstanceOf[ITotalFramesInSprite]
     }
     
-    extension [Self <: ITotalFramesInSprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITotalFramesInSprite] (val x: Self) extends AnyVal {
       
       inline def setHorz(value: Double): Self = StObject.set(x, "horz", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object Autoscaler {
     __obj.asInstanceOf[Autoscaler]
   }
   
-  extension [Self <: Autoscaler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autoscaler] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

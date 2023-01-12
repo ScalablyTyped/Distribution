@@ -29,7 +29,8 @@ object distLibCommandsAuthMod {
       __obj.asInstanceOf[AuthOptions]
     }
     
-    extension [Self <: AuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthOptions] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: RedisCommandArgument): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

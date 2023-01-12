@@ -23,7 +23,8 @@ object IsFromContainer {
     __obj.asInstanceOf[IsFromContainer]
   }
   
-  extension [Self <: IsFromContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFromContainer] (val x: Self) extends AnyVal {
     
     inline def setIsFromContainer(value: Boolean): Self = StObject.set(x, "isFromContainer", value.asInstanceOf[js.Any])
     

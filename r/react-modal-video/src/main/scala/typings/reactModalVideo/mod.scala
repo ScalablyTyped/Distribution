@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Aria]
     }
     
-    extension [Self <: Aria](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aria] (val x: Self) extends AnyVal {
       
       inline def setDismissBtnMessage(value: String): Self = StObject.set(x, "dismissBtnMessage", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ClassNames]
     }
     
-    extension [Self <: ClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
       
       inline def setModalVideo(value: String): Self = StObject.set(x, "modalVideo", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object mod {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: custom): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object mod {
       __obj.asInstanceOf[ModalVideoBaseProps]
     }
     
-    extension [Self <: ModalVideoBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalVideoBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFullScreen(value: Boolean): Self = StObject.set(x, "allowFullScreen", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object mod {
       __obj.asInstanceOf[Vendor]
     }
     
-    extension [Self <: Vendor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vendor] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -290,7 +295,8 @@ object mod {
       __obj.asInstanceOf[Vimeo]
     }
     
-    extension [Self <: Vimeo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vimeo] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: vimeo): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -341,7 +347,8 @@ object mod {
       __obj.asInstanceOf[VimeoApi]
     }
     
-    extension [Self <: VimeoApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VimeoApi] (val x: Self) extends AnyVal {
       
       inline def setApi(value: Boolean): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -421,7 +428,8 @@ object mod {
       __obj.asInstanceOf[Youku]
     }
     
-    extension [Self <: Youku](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Youku] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: youku): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -446,7 +454,8 @@ object mod {
       __obj.asInstanceOf[YoukuApi]
     }
     
-    extension [Self <: YoukuApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YoukuApi] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: `1` | `0`): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -477,7 +486,8 @@ object mod {
       __obj.asInstanceOf[Youtube]
     }
     
-    extension [Self <: Youtube](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Youtube] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: youtube): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -544,7 +554,8 @@ object mod {
       __obj.asInstanceOf[YoutubeApi]
     }
     
-    extension [Self <: YoutubeApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YoutubeApi] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: `0` | `1`): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       

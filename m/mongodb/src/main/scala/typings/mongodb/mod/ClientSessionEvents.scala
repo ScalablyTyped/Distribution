@@ -15,7 +15,8 @@ object ClientSessionEvents {
     __obj.asInstanceOf[ClientSessionEvents]
   }
   
-  extension [Self <: ClientSessionEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSessionEvents] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: ClientSession => Unit): Self = StObject.set(x, "ended", js.Any.fromFunction1(value))
   }

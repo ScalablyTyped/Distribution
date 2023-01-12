@@ -106,7 +106,8 @@ object buildIosTargetMod {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[Target]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object TypeofAutocompleteEditor {
     __obj.asInstanceOf[TypeofAutocompleteEditor]
   }
   
-  extension [Self <: TypeofAutocompleteEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAutocompleteEditor] (val x: Self) extends AnyVal {
     
     inline def setSortByRelevance(value: (Any, js.Array[String], Boolean) => js.Array[Double]): Self = StObject.set(x, "sortByRelevance", js.Any.fromFunction3(value))
   }

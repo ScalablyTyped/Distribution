@@ -16,7 +16,8 @@ object Object {
     __obj.asInstanceOf[Object]
   }
   
-  extension [Self <: Object](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
     
     inline def setGetOwnPropertyDescriptors(value: Any => PropertyDescriptorMap): Self = StObject.set(x, "getOwnPropertyDescriptors", js.Any.fromFunction1(value))
   }

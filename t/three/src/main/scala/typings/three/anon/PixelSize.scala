@@ -20,7 +20,8 @@ object PixelSize {
     __obj.asInstanceOf[PixelSize]
   }
   
-  extension [Self <: PixelSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelSize] (val x: Self) extends AnyVal {
     
     inline def setPixelSize(value: IUniform[Any]): Self = StObject.set(x, "pixelSize", value.asInstanceOf[js.Any])
     

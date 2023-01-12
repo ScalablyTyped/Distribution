@@ -527,7 +527,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[FileUploadOpts]
     }
     
-    extension [Self <: FileUploadOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadOpts] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -564,7 +565,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[IntentBackingStore]
     }
     
-    extension [Self <: IntentBackingStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntentBackingStore] (val x: Self) extends AnyVal {
       
       inline def setGetMemberProfile(value: (String, String) => MatrixProfileInfo): Self = StObject.set(x, "getMemberProfile", js.Any.fromFunction2(value))
       
@@ -601,7 +603,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[IntentOpts]
     }
     
-    extension [Self <: IntentOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntentOpts] (val x: Self) extends AnyVal {
       
       inline def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
       
@@ -662,7 +665,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[PowerLevelContent]
     }
     
-    extension [Self <: PowerLevelContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PowerLevelContent] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: StringDictionary[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -699,7 +703,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[RoomCreationOpts]
     }
     
-    extension [Self <: RoomCreationOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomCreationOpts] (val x: Self) extends AnyVal {
       
       inline def setCreateAsClient(value: Boolean): Self = StObject.set(x, "createAsClient", value.asInstanceOf[js.Any])
       
@@ -739,7 +744,8 @@ object libComponentsIntentMod {
       __obj.asInstanceOf[WidgetOpts]
     }
     
-    extension [Self <: WidgetOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetOpts] (val x: Self) extends AnyVal {
       
       inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

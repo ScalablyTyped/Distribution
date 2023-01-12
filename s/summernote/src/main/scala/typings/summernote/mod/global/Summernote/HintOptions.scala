@@ -30,7 +30,8 @@ object HintOptions {
     __obj.asInstanceOf[HintOptions]
   }
   
-  extension [Self <: HintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: /* item */ String => htmlElement | Node): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     

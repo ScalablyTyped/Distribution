@@ -39,7 +39,8 @@ object PriceItemBuilder {
     __obj.asInstanceOf[PriceItemBuilder]
   }
   
-  extension [Self <: PriceItemBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PriceItemBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithAmount(value: Double => PriceItemBuilder): Self = StObject.set(x, "withAmount", js.Any.fromFunction1(value))
     

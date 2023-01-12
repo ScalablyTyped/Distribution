@@ -33,7 +33,8 @@ object typesCreateAsyncStoragePersistorExperimentalMod {
       __obj.asInstanceOf[AsyncStorage]
     }
     
-    extension [Self <: AsyncStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncStorage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => js.Promise[String | Null]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -74,7 +75,8 @@ object typesCreateAsyncStoragePersistorExperimentalMod {
       __obj.asInstanceOf[CreateAsyncStoragePersistorOptions]
     }
     
-    extension [Self <: CreateAsyncStoragePersistorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAsyncStoragePersistorOptions] (val x: Self) extends AnyVal {
       
       inline def setDeserialize(value: /* cachedString */ String => PersistedClient): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       

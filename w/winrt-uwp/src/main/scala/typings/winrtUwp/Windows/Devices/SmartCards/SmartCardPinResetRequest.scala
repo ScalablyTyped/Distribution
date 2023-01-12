@@ -38,7 +38,8 @@ object SmartCardPinResetRequest {
     __obj.asInstanceOf[SmartCardPinResetRequest]
   }
   
-  extension [Self <: SmartCardPinResetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartCardPinResetRequest] (val x: Self) extends AnyVal {
     
     inline def setChallenge(value: IBuffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

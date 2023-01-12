@@ -33,7 +33,8 @@ object SuiteEntry {
     __obj.asInstanceOf[SuiteEntry]
   }
   
-  extension [Self <: SuiteEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuiteEntry] (val x: Self) extends AnyVal {
     
     inline def setChildSuiteId(value: Double): Self = StObject.set(x, "childSuiteId", value.asInstanceOf[js.Any])
     

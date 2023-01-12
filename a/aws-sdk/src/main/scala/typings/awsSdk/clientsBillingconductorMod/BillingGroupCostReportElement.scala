@@ -43,7 +43,8 @@ object BillingGroupCostReportElement {
     __obj.asInstanceOf[BillingGroupCostReportElement]
   }
   
-  extension [Self <: BillingGroupCostReportElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillingGroupCostReportElement] (val x: Self) extends AnyVal {
     
     inline def setAWSCost(value: AWSCost): Self = StObject.set(x, "AWSCost", value.asInstanceOf[js.Any])
     

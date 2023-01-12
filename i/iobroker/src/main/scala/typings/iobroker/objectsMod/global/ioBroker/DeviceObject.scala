@@ -26,7 +26,8 @@ object DeviceObject {
     __obj.asInstanceOf[DeviceObject]
   }
   
-  extension [Self <: DeviceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceObject] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: DeviceCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

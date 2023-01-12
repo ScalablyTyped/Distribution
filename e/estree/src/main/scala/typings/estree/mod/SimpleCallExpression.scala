@@ -23,7 +23,8 @@ object SimpleCallExpression {
     __obj.asInstanceOf[SimpleCallExpression]
   }
   
-  extension [Self <: SimpleCallExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCallExpression] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

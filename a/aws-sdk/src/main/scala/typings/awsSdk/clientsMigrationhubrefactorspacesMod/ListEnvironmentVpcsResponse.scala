@@ -23,7 +23,8 @@ object ListEnvironmentVpcsResponse {
     __obj.asInstanceOf[ListEnvironmentVpcsResponse]
   }
   
-  extension [Self <: ListEnvironmentVpcsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnvironmentVpcsResponse] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentVpcList(value: EnvironmentVpcs): Self = StObject.set(x, "EnvironmentVpcList", value.asInstanceOf[js.Any])
     

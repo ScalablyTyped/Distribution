@@ -22,7 +22,8 @@ object FontFaceSetEventMap {
     __obj.asInstanceOf[FontFaceSetEventMap]
   }
   
-  extension [Self <: FontFaceSetEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontFaceSetEventMap] (val x: Self) extends AnyVal {
     
     inline def setLoading(value: Event): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     

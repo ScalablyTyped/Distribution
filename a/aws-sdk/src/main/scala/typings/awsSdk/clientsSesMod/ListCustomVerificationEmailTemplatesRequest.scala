@@ -23,7 +23,8 @@ object ListCustomVerificationEmailTemplatesRequest {
     __obj.asInstanceOf[ListCustomVerificationEmailTemplatesRequest]
   }
   
-  extension [Self <: ListCustomVerificationEmailTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomVerificationEmailTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

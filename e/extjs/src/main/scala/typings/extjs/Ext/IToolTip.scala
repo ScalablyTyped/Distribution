@@ -57,7 +57,8 @@ object IToolTip {
     __obj.asInstanceOf[IToolTip]
   }
   
-  extension [Self <: IToolTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToolTip] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: java.lang.String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

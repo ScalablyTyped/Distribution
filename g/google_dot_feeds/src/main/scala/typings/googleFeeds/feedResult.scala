@@ -19,7 +19,8 @@ object feedResult {
     __obj.asInstanceOf[feedResult]
   }
   
-  extension [Self <: feedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: feedResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: feedError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

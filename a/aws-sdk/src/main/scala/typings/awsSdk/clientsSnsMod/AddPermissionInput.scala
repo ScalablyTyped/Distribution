@@ -33,7 +33,8 @@ object AddPermissionInput {
     __obj.asInstanceOf[AddPermissionInput]
   }
   
-  extension [Self <: AddPermissionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPermissionInput] (val x: Self) extends AnyVal {
     
     inline def setAWSAccountId(value: DelegatesList): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     

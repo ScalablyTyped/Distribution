@@ -15,7 +15,8 @@ object GetStatusRequest {
     __obj.asInstanceOf[GetStatusRequest]
   }
   
-  extension [Self <: GetStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }

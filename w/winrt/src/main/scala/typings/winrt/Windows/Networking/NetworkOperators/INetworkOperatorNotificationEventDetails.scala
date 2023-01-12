@@ -33,7 +33,8 @@ object INetworkOperatorNotificationEventDetails {
     __obj.asInstanceOf[INetworkOperatorNotificationEventDetails]
   }
   
-  extension [Self <: INetworkOperatorNotificationEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
     
     inline def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     

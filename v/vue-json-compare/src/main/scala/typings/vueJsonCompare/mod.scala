@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[VueJsonCompare]
     }
     
-    extension [Self <: VueJsonCompare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueJsonCompare] (val x: Self) extends AnyVal {
       
       inline def setNewData(value: JsonObject): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ApplicationLoadEventArgs {
     __obj.asInstanceOf[ApplicationLoadEventArgs]
   }
   
-  extension [Self <: ApplicationLoadEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationLoadEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_components(value: () => js.Array[Component]): Self = StObject.set(x, "get_components", js.Any.fromFunction0(value))
     

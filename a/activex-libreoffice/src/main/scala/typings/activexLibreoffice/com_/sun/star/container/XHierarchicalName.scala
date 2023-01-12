@@ -45,7 +45,8 @@ object XHierarchicalName {
     __obj.asInstanceOf[XHierarchicalName]
   }
   
-  extension [Self <: XHierarchicalName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalName] (val x: Self) extends AnyVal {
     
     inline def setComposeHierarchicalName(value: String => String): Self = StObject.set(x, "composeHierarchicalName", js.Any.fromFunction1(value))
     

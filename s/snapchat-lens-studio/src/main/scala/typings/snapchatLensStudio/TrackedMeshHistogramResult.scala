@@ -30,7 +30,8 @@ object TrackedMeshHistogramResult {
     __obj.asInstanceOf[TrackedMeshHistogramResult]
   }
   
-  extension [Self <: TrackedMeshHistogramResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackedMeshHistogramResult] (val x: Self) extends AnyVal {
     
     inline def setAvgNormal(value: vec3): Self = StObject.set(x, "avgNormal", value.asInstanceOf[js.Any])
     

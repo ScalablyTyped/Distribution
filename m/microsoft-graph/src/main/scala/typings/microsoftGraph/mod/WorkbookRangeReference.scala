@@ -15,7 +15,8 @@ object WorkbookRangeReference {
     __obj.asInstanceOf[WorkbookRangeReference]
   }
   
-  extension [Self <: WorkbookRangeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookRangeReference] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NullableOption[String]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

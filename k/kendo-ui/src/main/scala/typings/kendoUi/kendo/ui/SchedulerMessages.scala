@@ -61,7 +61,8 @@ object SchedulerMessages {
     __obj.asInstanceOf[SchedulerMessages]
   }
   
-  extension [Self <: SchedulerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerMessages] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object PredominanceSchemeForPolygonOutline {
     __obj.asInstanceOf[PredominanceSchemeForPolygonOutline]
   }
   
-  extension [Self <: PredominanceSchemeForPolygonOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominanceSchemeForPolygonOutline] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

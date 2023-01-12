@@ -48,7 +48,8 @@ object BindingHandler {
     __obj.asInstanceOf[BindingHandler[T]]
   }
   
-  extension [Self <: BindingHandler[?], T](x: Self & BindingHandler[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingHandler[?], T] (val x: Self & BindingHandler[T]) extends AnyVal {
     
     inline def setAfter(value: js.Array[String]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

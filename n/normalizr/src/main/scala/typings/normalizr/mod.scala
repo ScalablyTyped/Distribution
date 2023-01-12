@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[NormalizedSchema[E, R]]
     }
     
-    extension [Self <: NormalizedSchema[?, ?], E, R](x: Self & (NormalizedSchema[E, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedSchema[?, ?], E, R] (val x: Self & (NormalizedSchema[E, R])) extends AnyVal {
       
       inline def setEntities(value: E): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object mod {
         __obj.asInstanceOf[typings.normalizr.mod.schema.Array[T]]
       }
       
-      extension [Self <: typings.normalizr.mod.schema.Array[?], T](x: Self & typings.normalizr.mod.schema.Array[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.normalizr.mod.schema.Array[?], T] (val x: Self & typings.normalizr.mod.schema.Array[T]) extends AnyVal {
         
         inline def setDefine(value: Schema_[Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
@@ -162,7 +164,8 @@ object mod {
         __obj.asInstanceOf[Entity[T]]
       }
       
-      extension [Self <: Entity[?], T](x: Self & Entity[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Entity[?], T] (val x: Self & Entity[T]) extends AnyVal {
         
         inline def setDefine(value: Schema_[Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
         
@@ -191,7 +194,8 @@ object mod {
         __obj.asInstanceOf[EntityOptions[T]]
       }
       
-      extension [Self <: EntityOptions[?], T](x: Self & EntityOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EntityOptions[?], T] (val x: Self & EntityOptions[T]) extends AnyVal {
         
         inline def setFallbackStrategy(value: (/* key */ String, /* schema */ Entity[T]) => T): Self = StObject.set(x, "fallbackStrategy", js.Any.fromFunction2(value))
         
@@ -230,7 +234,8 @@ object mod {
         __obj.asInstanceOf[Object[T]]
       }
       
-      extension [Self <: Object[?], T](x: Self & Object[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Object[?], T] (val x: Self & Object[T]) extends AnyVal {
         
         inline def setDefine(value: Schema_[Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
@@ -253,7 +258,8 @@ object mod {
         __obj.asInstanceOf[Union[T]]
       }
       
-      extension [Self <: Union[?], T](x: Self & Union[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Union[?], T] (val x: Self & Union[T]) extends AnyVal {
         
         inline def setDefine(value: Schema_[Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }
@@ -272,7 +278,8 @@ object mod {
         __obj.asInstanceOf[Values[T]]
       }
       
-      extension [Self <: Values[?], T](x: Self & Values[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Values[?], T] (val x: Self & Values[T]) extends AnyVal {
         
         inline def setDefine(value: Schema_[Any] => Unit): Self = StObject.set(x, "define", js.Any.fromFunction1(value))
       }

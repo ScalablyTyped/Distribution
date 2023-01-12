@@ -33,7 +33,8 @@ object FirewallSubnetMissingVPCEndpointViolation {
     __obj.asInstanceOf[FirewallSubnetMissingVPCEndpointViolation]
   }
   
-  extension [Self <: FirewallSubnetMissingVPCEndpointViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallSubnetMissingVPCEndpointViolation] (val x: Self) extends AnyVal {
     
     inline def setFirewallSubnetId(value: ResourceId): Self = StObject.set(x, "FirewallSubnetId", value.asInstanceOf[js.Any])
     

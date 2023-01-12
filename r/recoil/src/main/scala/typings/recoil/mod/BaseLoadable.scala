@@ -36,7 +36,8 @@ object BaseLoadable {
     __obj.asInstanceOf[BaseLoadable[T]]
   }
   
-  extension [Self <: BaseLoadable[?], T](x: Self & BaseLoadable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLoadable[?], T] (val x: Self & BaseLoadable[T]) extends AnyVal {
     
     inline def setErrorOrThrow(value: () => Any): Self = StObject.set(x, "errorOrThrow", js.Any.fromFunction0(value))
     

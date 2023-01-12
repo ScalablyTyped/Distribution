@@ -32,7 +32,8 @@ object RTCPeerConnectionConfiguration {
     __obj.asInstanceOf[RTCPeerConnectionConfiguration]
   }
   
-  extension [Self <: RTCPeerConnectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCPeerConnectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBundlePolicy(value: balanced | `max-compat` | `max-bundle`): Self = StObject.set(x, "bundlePolicy", value.asInstanceOf[js.Any])
     

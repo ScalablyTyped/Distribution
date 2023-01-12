@@ -28,7 +28,8 @@ object PutProfileObjectRequest {
     __obj.asInstanceOf[PutProfileObjectRequest]
   }
   
-  extension [Self <: PutProfileObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutProfileObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: name): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

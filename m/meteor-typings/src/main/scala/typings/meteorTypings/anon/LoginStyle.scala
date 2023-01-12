@@ -25,7 +25,8 @@ object LoginStyle {
     __obj.asInstanceOf[LoginStyle]
   }
   
-  extension [Self <: LoginStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginStyle] (val x: Self) extends AnyVal {
     
     inline def setLoginStyle(value: String): Self = StObject.set(x, "loginStyle", value.asInstanceOf[js.Any])
     

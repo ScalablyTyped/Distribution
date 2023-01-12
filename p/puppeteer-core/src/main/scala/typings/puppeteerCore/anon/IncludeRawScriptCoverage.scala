@@ -21,7 +21,8 @@ object IncludeRawScriptCoverage {
     __obj.asInstanceOf[IncludeRawScriptCoverage]
   }
   
-  extension [Self <: IncludeRawScriptCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeRawScriptCoverage] (val x: Self) extends AnyVal {
     
     inline def setIncludeRawScriptCoverage(value: Boolean): Self = StObject.set(x, "includeRawScriptCoverage", value.asInstanceOf[js.Any])
     

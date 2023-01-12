@@ -18,7 +18,8 @@ object RunOnly {
     __obj.asInstanceOf[RunOnly]
   }
   
-  extension [Self <: RunOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunOnly] (val x: Self) extends AnyVal {
     
     inline def setType(value: RunOnlyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

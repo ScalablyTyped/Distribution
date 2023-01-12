@@ -18,7 +18,8 @@ object ClientDBFind {
     __obj.asInstanceOf[ClientDBFind]
   }
   
-  extension [Self <: ClientDBFind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientDBFind] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
   }

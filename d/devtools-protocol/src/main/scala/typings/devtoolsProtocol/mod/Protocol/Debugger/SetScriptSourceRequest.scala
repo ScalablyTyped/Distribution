@@ -36,7 +36,8 @@ object SetScriptSourceRequest {
     __obj.asInstanceOf[SetScriptSourceRequest]
   }
   
-  extension [Self <: SetScriptSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScriptSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowTopFrameEditing(value: Boolean): Self = StObject.set(x, "allowTopFrameEditing", value.asInstanceOf[js.Any])
     

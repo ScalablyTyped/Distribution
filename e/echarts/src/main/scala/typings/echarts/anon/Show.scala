@@ -27,7 +27,8 @@ object Show {
     __obj.asInstanceOf[Show]
   }
   
-  extension [Self <: Show](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
     
     inline def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     

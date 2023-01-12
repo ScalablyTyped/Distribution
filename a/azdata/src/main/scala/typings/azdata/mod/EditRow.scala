@@ -21,7 +21,8 @@ object EditRow {
     __obj.asInstanceOf[EditRow]
   }
   
-  extension [Self <: EditRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditRow] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[DbCellValue]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[IncomingStreamData]
     }
     
-    extension [Self <: IncomingStreamData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingStreamData] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mod {
       __obj.asInstanceOf[StreamHandlerOptions]
     }
     
-    extension [Self <: StreamHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[StreamHandlerRecord]
     }
     
-    extension [Self <: StreamHandlerRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamHandlerRecord] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: /* data */ IncomingStreamData => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Topology]
     }
     
-    extension [Self <: Topology](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Topology] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object mod {
       __obj.asInstanceOf[TopologyInit]
     }
     
-    extension [Self <: TopologyInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopologyInit] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

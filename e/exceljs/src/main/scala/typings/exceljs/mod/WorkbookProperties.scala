@@ -18,7 +18,8 @@ object WorkbookProperties {
     __obj.asInstanceOf[WorkbookProperties]
   }
   
-  extension [Self <: WorkbookProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookProperties] (val x: Self) extends AnyVal {
     
     inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
   }

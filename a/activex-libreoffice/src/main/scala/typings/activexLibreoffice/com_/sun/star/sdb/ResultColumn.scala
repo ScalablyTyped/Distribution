@@ -105,7 +105,8 @@ object ResultColumn {
     __obj.asInstanceOf[ResultColumn]
   }
   
-  extension [Self <: ResultColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultColumn] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

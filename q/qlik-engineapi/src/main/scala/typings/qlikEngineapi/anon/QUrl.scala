@@ -23,7 +23,8 @@ object QUrl {
     __obj.asInstanceOf[QUrl]
   }
   
-  extension [Self <: QUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QUrl] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     

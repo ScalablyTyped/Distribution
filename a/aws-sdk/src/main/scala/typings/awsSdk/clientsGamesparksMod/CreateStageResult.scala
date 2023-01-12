@@ -18,7 +18,8 @@ object CreateStageResult {
     __obj.asInstanceOf[CreateStageResult]
   }
   
-  extension [Self <: CreateStageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStageResult] (val x: Self) extends AnyVal {
     
     inline def setStage(value: StageDetails): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     

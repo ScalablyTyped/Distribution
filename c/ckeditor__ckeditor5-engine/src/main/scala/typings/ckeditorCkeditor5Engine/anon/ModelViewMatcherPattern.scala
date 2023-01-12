@@ -19,7 +19,8 @@ object ModelViewMatcherPattern {
     __obj.asInstanceOf[ModelViewMatcherPattern]
   }
   
-  extension [Self <: ModelViewMatcherPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelViewMatcherPattern] (val x: Self) extends AnyVal {
     
     inline def setModel(value: String | (js.Function1[/* el */ default, String])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

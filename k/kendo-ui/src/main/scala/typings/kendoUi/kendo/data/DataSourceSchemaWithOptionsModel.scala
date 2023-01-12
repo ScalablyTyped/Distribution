@@ -18,7 +18,8 @@ object DataSourceSchemaWithOptionsModel {
     __obj.asInstanceOf[DataSourceSchemaWithOptionsModel]
   }
   
-  extension [Self <: DataSourceSchemaWithOptionsModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSchemaWithOptionsModel] (val x: Self) extends AnyVal {
     
     inline def setModel(value: DataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

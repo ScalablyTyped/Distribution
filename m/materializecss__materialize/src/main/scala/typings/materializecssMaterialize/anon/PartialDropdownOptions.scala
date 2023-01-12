@@ -44,7 +44,8 @@ object PartialDropdownOptions {
     __obj.asInstanceOf[PartialDropdownOptions]
   }
   
-  extension [Self <: PartialDropdownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDropdownOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: left | right): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

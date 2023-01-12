@@ -26,7 +26,8 @@ object SavingsStepKYC {
     __obj.asInstanceOf[SavingsStepKYC]
   }
   
-  extension [Self <: SavingsStepKYC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsStepKYC] (val x: Self) extends AnyVal {
     
     inline def setDocumentUploadType(value: ClientApp | External): Self = StObject.set(x, "documentUploadType", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object esComponentsContextMod extends Shortcut {
       __obj.asInstanceOf[ReactReduxContextValue[SS, A]]
     }
     
-    extension [Self <: ReactReduxContextValue[?, ?], SS, A /* <: Action[Any] */](x: Self & (ReactReduxContextValue[SS, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactReduxContextValue[?, ?], SS, A /* <: Action[Any] */] (val x: Self & (ReactReduxContextValue[SS, A])) extends AnyVal {
       
       inline def setGetServerState(value: () => SS): Self = StObject.set(x, "getServerState", js.Any.fromFunction0(value))
       

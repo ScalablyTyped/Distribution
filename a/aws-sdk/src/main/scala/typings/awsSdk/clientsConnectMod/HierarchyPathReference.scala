@@ -38,7 +38,8 @@ object HierarchyPathReference {
     __obj.asInstanceOf[HierarchyPathReference]
   }
   
-  extension [Self <: HierarchyPathReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchyPathReference] (val x: Self) extends AnyVal {
     
     inline def setLevelFive(value: HierarchyGroupSummaryReference): Self = StObject.set(x, "LevelFive", value.asInstanceOf[js.Any])
     

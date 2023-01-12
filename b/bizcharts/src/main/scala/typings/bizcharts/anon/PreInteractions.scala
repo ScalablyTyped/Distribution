@@ -19,7 +19,8 @@ object PreInteractions {
     __obj.asInstanceOf[PreInteractions]
   }
   
-  extension [Self <: PreInteractions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreInteractions] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: js.Array[Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

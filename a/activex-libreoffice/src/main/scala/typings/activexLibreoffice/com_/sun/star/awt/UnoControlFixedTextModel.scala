@@ -157,7 +157,8 @@ object UnoControlFixedTextModel {
     __obj.asInstanceOf[UnoControlFixedTextModel]
   }
   
-  extension [Self <: UnoControlFixedTextModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlFixedTextModel] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

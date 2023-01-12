@@ -15,7 +15,8 @@ object IndicesIndexingPressure {
     __obj.asInstanceOf[IndicesIndexingPressure]
   }
   
-  extension [Self <: IndicesIndexingPressure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexingPressure] (val x: Self) extends AnyVal {
     
     inline def setMemory(value: IndicesIndexingPressureMemory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
   }

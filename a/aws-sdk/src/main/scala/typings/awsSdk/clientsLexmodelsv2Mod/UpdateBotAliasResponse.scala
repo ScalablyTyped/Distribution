@@ -65,7 +65,8 @@ object UpdateBotAliasResponse {
     __obj.asInstanceOf[UpdateBotAliasResponse]
   }
   
-  extension [Self <: UpdateBotAliasResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBotAliasResponse] (val x: Self) extends AnyVal {
     
     inline def setBotAliasId(value: BotAliasId): Self = StObject.set(x, "botAliasId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Tag {
       __obj.asInstanceOf[Tags]
     }
     
-    extension [Self <: Tags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
       
       inline def setTags(value: Strings): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object Tag {
       __obj.asInstanceOf[TagsWithEmail]
     }
     
-    extension [Self <: TagsWithEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagsWithEmail] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

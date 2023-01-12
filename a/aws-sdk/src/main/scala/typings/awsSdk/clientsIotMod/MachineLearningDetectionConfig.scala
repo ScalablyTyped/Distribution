@@ -18,7 +18,8 @@ object MachineLearningDetectionConfig {
     __obj.asInstanceOf[MachineLearningDetectionConfig]
   }
   
-  extension [Self <: MachineLearningDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineLearningDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setConfidenceLevel(value: ConfidenceLevel): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
   }

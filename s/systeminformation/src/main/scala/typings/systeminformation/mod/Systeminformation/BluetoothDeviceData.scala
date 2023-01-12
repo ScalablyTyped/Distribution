@@ -39,7 +39,8 @@ object BluetoothDeviceData {
     __obj.asInstanceOf[BluetoothDeviceData]
   }
   
-  extension [Self <: BluetoothDeviceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BluetoothDeviceData] (val x: Self) extends AnyVal {
     
     inline def setBatteryPercent(value: Double): Self = StObject.set(x, "batteryPercent", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ShareSingleReturn {
     __obj.asInstanceOf[ShareSingleReturn]
   }
   
-  extension [Self <: ShareSingleReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareSingleReturn] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

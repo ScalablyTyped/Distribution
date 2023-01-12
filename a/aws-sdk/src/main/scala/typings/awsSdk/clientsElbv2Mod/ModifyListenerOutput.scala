@@ -18,7 +18,8 @@ object ModifyListenerOutput {
     __obj.asInstanceOf[ModifyListenerOutput]
   }
   
-  extension [Self <: ModifyListenerOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyListenerOutput] (val x: Self) extends AnyVal {
     
     inline def setListeners(value: Listeners): Self = StObject.set(x, "Listeners", value.asInstanceOf[js.Any])
     

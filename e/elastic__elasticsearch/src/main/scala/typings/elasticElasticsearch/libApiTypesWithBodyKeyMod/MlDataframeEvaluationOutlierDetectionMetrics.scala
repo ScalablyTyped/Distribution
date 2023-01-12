@@ -18,7 +18,8 @@ object MlDataframeEvaluationOutlierDetectionMetrics {
     __obj.asInstanceOf[MlDataframeEvaluationOutlierDetectionMetrics]
   }
   
-  extension [Self <: MlDataframeEvaluationOutlierDetectionMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationOutlierDetectionMetrics] (val x: Self) extends AnyVal {
     
     inline def setConfusion_matrix(value: Record[String, Any]): Self = StObject.set(x, "confusion_matrix", value.asInstanceOf[js.Any])
     

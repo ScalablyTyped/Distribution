@@ -187,7 +187,8 @@ object TestOptions {
     __obj.asInstanceOf[TestOptions]
   }
   
-  extension [Self <: TestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOptions] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: String): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     

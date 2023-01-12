@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2Proximity {
     __obj.asInstanceOf[GooglePrivacyDlpV2Proximity]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Proximity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Proximity] (val x: Self) extends AnyVal {
     
     inline def setWindowAfter(value: Double): Self = StObject.set(x, "windowAfter", value.asInstanceOf[js.Any])
     

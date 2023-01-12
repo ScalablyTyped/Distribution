@@ -35,7 +35,8 @@ object InputQuestionOptions {
     __obj.asInstanceOf[InputQuestionOptions[T]]
   }
   
-  extension [Self <: InputQuestionOptions[?], T /* <: Answers */](x: Self & InputQuestionOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputQuestionOptions[?], T /* <: Answers */] (val x: Self & InputQuestionOptions[T]) extends AnyVal {
     
     inline def setTransformer(value: (/* input */ Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))
     

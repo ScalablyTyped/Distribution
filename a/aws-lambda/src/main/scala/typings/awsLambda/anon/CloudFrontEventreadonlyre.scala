@@ -21,7 +21,8 @@ object CloudFrontEventreadonlyre {
     __obj.asInstanceOf[CloudFrontEventreadonlyre]
   }
   
-  extension [Self <: CloudFrontEventreadonlyre](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFrontEventreadonlyre] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: DistributionDomainName): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

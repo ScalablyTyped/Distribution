@@ -95,7 +95,8 @@ object servicesStylesMod {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object servicesStylesMod {
       __obj.asInstanceOf[StylesService]
     }
     
-    extension [Self <: StylesService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesService] (val x: Self) extends AnyVal {
       
       inline def setCreateStyle(value: OwnerId => MapiRequest[Any]): Self = StObject.set(x, "createStyle", js.Any.fromFunction1(value))
       

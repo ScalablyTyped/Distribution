@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsDropShadowBottomSmallMod extends Shortcut {
       __obj.asInstanceOf[DropShadowBottomSmallProps]
     }
     
-    extension [Self <: DropShadowBottomSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropShadowBottomSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

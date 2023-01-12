@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1SentimentConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SentimentConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1SentimentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SentimentConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableLabelSentimentSelection(value: Boolean): Self = StObject.set(x, "enableLabelSentimentSelection", value.asInstanceOf[js.Any])
     

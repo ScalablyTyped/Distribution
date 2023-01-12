@@ -21,7 +21,8 @@ object CheckboxParams {
     __obj.asInstanceOf[CheckboxParams]
   }
   
-  extension [Self <: CheckboxParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxParams] (val x: Self) extends AnyVal {
     
     inline def setIndeterminateValue(value: String): Self = StObject.set(x, "indeterminateValue", value.asInstanceOf[js.Any])
     

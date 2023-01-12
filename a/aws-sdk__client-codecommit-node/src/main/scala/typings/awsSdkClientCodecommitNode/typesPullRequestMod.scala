@@ -64,7 +64,8 @@ object typesPullRequestMod {
       __obj.asInstanceOf[PullRequest]
     }
     
-    extension [Self <: PullRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullRequest] (val x: Self) extends AnyVal {
       
       inline def setAuthorArn(value: String): Self = StObject.set(x, "authorArn", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object typesPullRequestMod {
       __obj.asInstanceOf[UnmarshalledPullRequest]
     }
     
-    extension [Self <: UnmarshalledPullRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledPullRequest] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       

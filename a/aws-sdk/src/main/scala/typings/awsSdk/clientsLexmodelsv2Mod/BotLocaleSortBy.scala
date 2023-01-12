@@ -23,7 +23,8 @@ object BotLocaleSortBy {
     __obj.asInstanceOf[BotLocaleSortBy]
   }
   
-  extension [Self <: BotLocaleSortBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BotLocaleSortBy] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: BotLocaleSortAttribute): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object MonitoredResourceIdentifier {
     __obj.asInstanceOf[MonitoredResourceIdentifier]
   }
   
-  extension [Self <: MonitoredResourceIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoredResourceIdentifier] (val x: Self) extends AnyVal {
     
     inline def setLastUpdated(value: js.Date): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     

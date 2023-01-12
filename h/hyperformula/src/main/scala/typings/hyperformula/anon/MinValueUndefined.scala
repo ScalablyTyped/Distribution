@@ -22,7 +22,8 @@ object MinValueUndefined {
     __obj.asInstanceOf[MinValueUndefined]
   }
   
-  extension [Self <: MinValueUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinValueUndefined] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

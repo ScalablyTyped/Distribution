@@ -26,7 +26,8 @@ object DatabaseDeleteEvent {
     __obj.asInstanceOf[DatabaseDeleteEvent]
   }
   
-  extension [Self <: DatabaseDeleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseDeleteEvent] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: SafeArray[Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object StartImportTaskResponse {
     __obj.asInstanceOf[StartImportTaskResponse]
   }
   
-  extension [Self <: StartImportTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setTask(value: ImportTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     

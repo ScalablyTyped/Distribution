@@ -19,7 +19,8 @@ object libModelsAccountMod {
       __obj.asInstanceOf[IWhoAmI]
     }
     
-    extension [Self <: IWhoAmI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWhoAmI] (val x: Self) extends AnyVal {
       
       inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
       

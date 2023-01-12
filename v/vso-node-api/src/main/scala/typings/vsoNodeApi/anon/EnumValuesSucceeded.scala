@@ -15,7 +15,8 @@ object EnumValuesSucceeded {
     __obj.asInstanceOf[EnumValuesSucceeded]
   }
   
-  extension [Self <: EnumValuesSucceeded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesSucceeded] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Succeeded): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

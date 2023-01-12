@@ -28,7 +28,8 @@ object CrossDimensionReachReportCompatibleFields {
     __obj.asInstanceOf[CrossDimensionReachReportCompatibleFields]
   }
   
-  extension [Self <: CrossDimensionReachReportCompatibleFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossDimensionReachReportCompatibleFields] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: js.Array[Dimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     

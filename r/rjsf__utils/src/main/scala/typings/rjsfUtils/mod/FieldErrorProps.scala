@@ -33,7 +33,8 @@ object FieldErrorProps {
     __obj.asInstanceOf[FieldErrorProps[T, F]]
   }
   
-  extension [Self <: FieldErrorProps[?, ?], T, F](x: Self & (FieldErrorProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldErrorProps[?, ?], T, F] (val x: Self & (FieldErrorProps[T, F])) extends AnyVal {
     
     inline def setErrorSchema(value: ErrorSchema[T]): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     

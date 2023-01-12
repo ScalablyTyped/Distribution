@@ -20,7 +20,8 @@ object ActionHistoryDetails {
     __obj.asInstanceOf[ActionHistoryDetails]
   }
   
-  extension [Self <: ActionHistoryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionHistoryDetails] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

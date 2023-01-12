@@ -20,7 +20,8 @@ object PlotTreemapClusterStatesHoverOptions {
     __obj.asInstanceOf[PlotTreemapClusterStatesHoverOptions]
   }
   
-  extension [Self <: PlotTreemapClusterStatesHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapClusterStatesHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: ColorType): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

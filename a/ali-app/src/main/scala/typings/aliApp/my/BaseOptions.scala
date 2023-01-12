@@ -22,7 +22,8 @@ object BaseOptions {
     __obj.asInstanceOf[BaseOptions[R, E]]
   }
   
-  extension [Self <: BaseOptions[?, ?], R, E](x: Self & (BaseOptions[R, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseOptions[?, ?], R, E] (val x: Self & (BaseOptions[R, E])) extends AnyVal {
     
     inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

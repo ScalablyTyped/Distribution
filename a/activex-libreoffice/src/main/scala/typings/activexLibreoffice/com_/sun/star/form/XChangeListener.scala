@@ -37,7 +37,8 @@ object XChangeListener {
     __obj.asInstanceOf[XChangeListener]
   }
   
-  extension [Self <: XChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChangeListener] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: EventObject => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
   }

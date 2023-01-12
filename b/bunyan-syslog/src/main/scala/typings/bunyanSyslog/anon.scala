@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`[A, N]]
     }
     
-    extension [Self <: `0`[?, ?], A /* <: js.Array[Any] */, N /* <: Double */](x: Self & (`0`[A, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?], A /* <: js.Array[Any] */, N /* <: Double */] (val x: Self & (`0`[A, N])) extends AnyVal {
       
       inline def set0(value: A): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

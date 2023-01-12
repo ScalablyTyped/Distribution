@@ -314,7 +314,8 @@ object RedlinePortion {
     __obj.asInstanceOf[RedlinePortion]
   }
   
-  extension [Self <: RedlinePortion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedlinePortion] (val x: Self) extends AnyVal {
     
     inline def setIsInHeaderFooter(value: Boolean): Self = StObject.set(x, "IsInHeaderFooter", value.asInstanceOf[js.Any])
     

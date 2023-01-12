@@ -19,7 +19,8 @@ object AutoConfirmUser {
     __obj.asInstanceOf[AutoConfirmUser]
   }
   
-  extension [Self <: AutoConfirmUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoConfirmUser] (val x: Self) extends AnyVal {
     
     inline def setAutoConfirmUser(value: Boolean): Self = StObject.set(x, "autoConfirmUser", value.asInstanceOf[js.Any])
     

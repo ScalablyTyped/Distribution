@@ -21,7 +21,8 @@ object HTMLOptionImage {
     __obj.asInstanceOf[HTMLOptionImage]
   }
   
-  extension [Self <: HTMLOptionImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLOptionImage] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

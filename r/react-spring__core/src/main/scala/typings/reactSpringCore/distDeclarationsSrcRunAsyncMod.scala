@@ -102,7 +102,8 @@ object distDeclarationsSrcRunAsyncMod {
       __obj.asInstanceOf[RunAsyncState[T]]
     }
     
-    extension [Self <: RunAsyncState[?], T /* <: AnimationTarget[Any] */](x: Self & RunAsyncState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunAsyncState[?], T /* <: AnimationTarget[Any] */] (val x: Self & RunAsyncState[T]) extends AnyVal {
       
       inline def setAsyncId(value: Double): Self = StObject.set(x, "asyncId", value.asInstanceOf[js.Any])
       

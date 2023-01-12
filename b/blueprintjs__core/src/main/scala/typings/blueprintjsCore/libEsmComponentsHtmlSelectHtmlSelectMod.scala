@@ -67,7 +67,8 @@ object libEsmComponentsHtmlSelectHtmlSelectMod {
       __obj.asInstanceOf[IHTMLSelectProps]
     }
     
-    extension [Self <: IHTMLSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHTMLSelectProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

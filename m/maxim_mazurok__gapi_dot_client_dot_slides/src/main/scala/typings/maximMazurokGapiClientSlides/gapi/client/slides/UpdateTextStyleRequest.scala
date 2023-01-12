@@ -38,7 +38,8 @@ object UpdateTextStyleRequest {
     __obj.asInstanceOf[UpdateTextStyleRequest]
   }
   
-  extension [Self <: UpdateTextStyleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
     
     inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     

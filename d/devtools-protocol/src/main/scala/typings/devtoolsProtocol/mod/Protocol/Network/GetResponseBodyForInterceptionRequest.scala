@@ -18,7 +18,8 @@ object GetResponseBodyForInterceptionRequest {
     __obj.asInstanceOf[GetResponseBodyForInterceptionRequest]
   }
   
-  extension [Self <: GetResponseBodyForInterceptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponseBodyForInterceptionRequest] (val x: Self) extends AnyVal {
     
     inline def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
   }

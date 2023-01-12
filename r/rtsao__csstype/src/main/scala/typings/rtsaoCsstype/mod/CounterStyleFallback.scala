@@ -33,7 +33,8 @@ object CounterStyleFallback {
     __obj.asInstanceOf[CounterStyleFallback]
   }
   
-  extension [Self <: CounterStyleFallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStyleFallback] (val x: Self) extends AnyVal {
     
     inline def setAdditiveSymbols(value: String | js.Array[String]): Self = StObject.set(x, "additiveSymbols", value.asInstanceOf[js.Any])
     

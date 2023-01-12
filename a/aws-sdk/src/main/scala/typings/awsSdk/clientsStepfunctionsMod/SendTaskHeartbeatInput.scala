@@ -18,7 +18,8 @@ object SendTaskHeartbeatInput {
     __obj.asInstanceOf[SendTaskHeartbeatInput]
   }
   
-  extension [Self <: SendTaskHeartbeatInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendTaskHeartbeatInput] (val x: Self) extends AnyVal {
     
     inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }

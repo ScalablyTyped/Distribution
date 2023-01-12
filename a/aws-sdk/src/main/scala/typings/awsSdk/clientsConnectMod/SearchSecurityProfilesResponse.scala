@@ -28,7 +28,8 @@ object SearchSecurityProfilesResponse {
     __obj.asInstanceOf[SearchSecurityProfilesResponse]
   }
   
-  extension [Self <: SearchSecurityProfilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSecurityProfilesResponse] (val x: Self) extends AnyVal {
     
     inline def setApproximateTotalCount(value: ApproximateTotalCount): Self = StObject.set(x, "ApproximateTotalCount", value.asInstanceOf[js.Any])
     

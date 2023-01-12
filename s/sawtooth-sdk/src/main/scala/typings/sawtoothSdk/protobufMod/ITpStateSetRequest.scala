@@ -19,7 +19,8 @@ object ITpStateSetRequest {
     __obj.asInstanceOf[ITpStateSetRequest]
   }
   
-  extension [Self <: ITpStateSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpStateSetRequest] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: String): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

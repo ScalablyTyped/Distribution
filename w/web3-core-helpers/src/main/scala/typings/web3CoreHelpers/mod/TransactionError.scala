@@ -18,7 +18,8 @@ object TransactionError {
     __obj.asInstanceOf[TransactionError]
   }
   
-  extension [Self <: TransactionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionError] (val x: Self) extends AnyVal {
     
     inline def setReceipt(value: js.Object): Self = StObject.set(x, "receipt", value.asInstanceOf[js.Any])
   }

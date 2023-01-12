@@ -23,7 +23,8 @@ object ImageLocation {
     __obj.asInstanceOf[ImageLocation]
   }
   
-  extension [Self <: ImageLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLocation] (val x: Self) extends AnyVal {
     
     inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

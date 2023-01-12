@@ -479,7 +479,8 @@ object libComponentsUishellHeaderMenuMod {
       __obj.asInstanceOf[HeaderMenuForwardRefProps[RP]]
     }
     
-    extension [Self <: HeaderMenuForwardRefProps[?], RP](x: Self & HeaderMenuForwardRefProps[RP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderMenuForwardRefProps[?], RP] (val x: Self & HeaderMenuForwardRefProps[RP]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1226,7 +1227,8 @@ object libComponentsUishellHeaderMenuMod {
       __obj.asInstanceOf[HeaderMenuProps[RP]]
     }
     
-    extension [Self <: HeaderMenuProps[?], RP](x: Self & HeaderMenuProps[RP]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderMenuProps[?], RP] (val x: Self & HeaderMenuProps[RP]) extends AnyVal {
       
       inline def setFocusRef(value: /* element */ HTMLElement => Unit): Self = StObject.set(x, "focusRef", js.Any.fromFunction1(value))
       

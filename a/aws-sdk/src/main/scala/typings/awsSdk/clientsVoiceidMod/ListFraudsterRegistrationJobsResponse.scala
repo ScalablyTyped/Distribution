@@ -23,7 +23,8 @@ object ListFraudsterRegistrationJobsResponse {
     __obj.asInstanceOf[ListFraudsterRegistrationJobsResponse]
   }
   
-  extension [Self <: ListFraudsterRegistrationJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFraudsterRegistrationJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setJobSummaries(value: FraudsterRegistrationJobSummaries): Self = StObject.set(x, "JobSummaries", value.asInstanceOf[js.Any])
     

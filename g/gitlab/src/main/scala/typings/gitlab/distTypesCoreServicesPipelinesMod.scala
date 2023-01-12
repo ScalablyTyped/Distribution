@@ -90,7 +90,8 @@ object distTypesCoreServicesPipelinesMod {
       __obj.asInstanceOf[PipelineSchema]
     }
     
-    extension [Self <: PipelineSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipelineSchema] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: js.Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       

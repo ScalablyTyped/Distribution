@@ -23,7 +23,8 @@ object SecurityUserIndicesPrivileges {
     __obj.asInstanceOf[SecurityUserIndicesPrivileges]
   }
   
-  extension [Self <: SecurityUserIndicesPrivileges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityUserIndicesPrivileges] (val x: Self) extends AnyVal {
     
     inline def setAllow_restricted_indices(value: Boolean): Self = StObject.set(x, "allow_restricted_indices", value.asInstanceOf[js.Any])
     

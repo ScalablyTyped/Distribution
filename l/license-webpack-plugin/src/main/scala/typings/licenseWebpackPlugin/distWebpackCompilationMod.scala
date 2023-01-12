@@ -56,7 +56,8 @@ object distWebpackCompilationMod {
       __obj.asInstanceOf[WebpackCompilation]
     }
     
-    extension [Self <: WebpackCompilation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackCompilation] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: StringDictionary[Source]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object distWebpackCompilationMod {
       __obj.asInstanceOf[WebpackStatsOptions]
     }
     
-    extension [Self <: WebpackStatsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackStatsOptions] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object IInputPane {
     __obj.asInstanceOf[IInputPane]
   }
   
-  extension [Self <: IInputPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInputPane] (val x: Self) extends AnyVal {
     
     inline def setOccludedRect(value: Rect): Self = StObject.set(x, "occludedRect", value.asInstanceOf[js.Any])
     

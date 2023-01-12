@@ -162,7 +162,8 @@ object ContentResultSet {
     __obj.asInstanceOf[ContentResultSet]
   }
   
-  extension [Self <: ContentResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentResultSet] (val x: Self) extends AnyVal {
     
     inline def setCursorTravelMode(value: Double): Self = StObject.set(x, "CursorTravelMode", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CSSMatrixComponentOptions {
     __obj.asInstanceOf[CSSMatrixComponentOptions]
   }
   
-  extension [Self <: CSSMatrixComponentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMatrixComponentOptions] (val x: Self) extends AnyVal {
     
     inline def setIs2D(value: Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
   }

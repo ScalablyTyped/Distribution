@@ -22,7 +22,8 @@ object BridgeInfo {
     __obj.asInstanceOf[BridgeInfo]
   }
   
-  extension [Self <: BridgeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeInfo] (val x: Self) extends AnyVal {
     
     inline def setChangelog(value: String): Self = StObject.set(x, "changelog", value.asInstanceOf[js.Any])
     

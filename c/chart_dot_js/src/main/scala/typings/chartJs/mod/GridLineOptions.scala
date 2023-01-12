@@ -118,7 +118,8 @@ object GridLineOptions {
     __obj.asInstanceOf[GridLineOptions]
   }
   
-  extension [Self <: GridLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridLineOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

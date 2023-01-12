@@ -19,7 +19,8 @@ object SinonFakeTimersConfig {
     __obj.asInstanceOf[SinonFakeTimersConfig]
   }
   
-  extension [Self <: SinonFakeTimersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SinonFakeTimersConfig] (val x: Self) extends AnyVal {
     
     inline def setNow(value: Double | js.Date): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ShippingSettings {
     __obj.asInstanceOf[ShippingSettings]
   }
   
-  extension [Self <: ShippingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingSettings] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

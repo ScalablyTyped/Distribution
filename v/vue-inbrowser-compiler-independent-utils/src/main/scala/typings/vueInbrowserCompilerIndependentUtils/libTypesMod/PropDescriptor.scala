@@ -32,7 +32,8 @@ object PropDescriptor {
     __obj.asInstanceOf[PropDescriptor]
   }
   
-  extension [Self <: PropDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Value): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

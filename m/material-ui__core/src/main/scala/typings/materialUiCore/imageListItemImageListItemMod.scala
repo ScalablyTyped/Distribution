@@ -61,7 +61,8 @@ object imageListItemImageListItemMod extends Shortcut {
       __obj.asInstanceOf[ImageListItemTypeMap[P, D]]
     }
     
-    extension [Self <: ImageListItemTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ImageListItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageListItemTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ImageListItemTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ImageListItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

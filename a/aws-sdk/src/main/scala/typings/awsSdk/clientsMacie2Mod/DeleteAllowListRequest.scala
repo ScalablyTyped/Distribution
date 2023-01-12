@@ -23,7 +23,8 @@ object DeleteAllowListRequest {
     __obj.asInstanceOf[DeleteAllowListRequest]
   }
   
-  extension [Self <: DeleteAllowListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAllowListRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

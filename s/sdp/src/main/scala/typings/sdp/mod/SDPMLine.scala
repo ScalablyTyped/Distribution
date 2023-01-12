@@ -21,7 +21,8 @@ object SDPMLine {
     __obj.asInstanceOf[SDPMLine]
   }
   
-  extension [Self <: SDPMLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPMLine] (val x: Self) extends AnyVal {
     
     inline def setFmt(value: String): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
     

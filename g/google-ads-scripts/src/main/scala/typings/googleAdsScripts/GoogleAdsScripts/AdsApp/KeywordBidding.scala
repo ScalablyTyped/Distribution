@@ -51,7 +51,8 @@ object KeywordBidding {
     __obj.asInstanceOf[KeywordBidding]
   }
   
-  extension [Self <: KeywordBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordBidding] (val x: Self) extends AnyVal {
     
     inline def setClearCpc(value: () => Unit): Self = StObject.set(x, "clearCpc", js.Any.fromFunction0(value))
     

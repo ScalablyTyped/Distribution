@@ -67,7 +67,8 @@ object ExpandableCalendarProps {
     __obj.asInstanceOf[ExpandableCalendarProps]
   }
   
-  extension [Self <: ExpandableCalendarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandableCalendarProps] (val x: Self) extends AnyVal {
     
     inline def setAllowShadow(value: Boolean): Self = StObject.set(x, "allowShadow", value.asInstanceOf[js.Any])
     

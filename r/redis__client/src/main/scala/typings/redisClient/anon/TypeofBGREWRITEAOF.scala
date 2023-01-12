@@ -19,7 +19,8 @@ object TypeofBGREWRITEAOF {
     __obj.asInstanceOf[TypeofBGREWRITEAOF]
   }
   
-  extension [Self <: TypeofBGREWRITEAOF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBGREWRITEAOF] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

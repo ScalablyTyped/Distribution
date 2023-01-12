@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Child]
     }
     
-    extension [Self <: Child](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Child] (val x: Self) extends AnyVal {
       
       inline def setChild(value: InProgressImportResult | default): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setChild(value: typings.ipfsUnixfsImporter.distSrcDirMod.InProgressImportResult | Dir): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object libFileSearchMod {
       __obj.asInstanceOf[FileSearch]
     }
     
-    extension [Self <: FileSearch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSearch] (val x: Self) extends AnyVal {
       
       inline def setEach(value: js.Function1[/* file */ String, Unit] => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       

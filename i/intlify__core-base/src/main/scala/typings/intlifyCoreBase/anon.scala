@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Datetime]
     }
     
-    extension [Self <: Datetime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datetime] (val x: Self) extends AnyVal {
       
       inline def setDatetime(value: Any): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[DatetimeFormats]
     }
     
-    extension [Self <: DatetimeFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatetimeFormats] (val x: Self) extends AnyVal {
       
       inline def setDatetimeFormats(value: Any): Self = StObject.set(x, "datetimeFormats", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Number[Message]]
     }
     
-    extension [Self <: Number[?], Message](x: Self & Number[Message]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Number[?], Message] (val x: Self & Number[Message]) extends AnyVal {
       
       inline def setDatetime(value: DateTimeFormat): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
       

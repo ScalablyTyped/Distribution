@@ -58,7 +58,8 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  extension [Self <: Encoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
     
     inline def setHtmlAttributeEncode(value: String => String): Self = StObject.set(x, "htmlAttributeEncode", js.Any.fromFunction1(value))
     

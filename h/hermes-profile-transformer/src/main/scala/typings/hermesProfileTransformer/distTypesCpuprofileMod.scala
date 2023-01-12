@@ -38,7 +38,8 @@ object distTypesCpuprofileMod {
       __obj.asInstanceOf[CPUProfileChunk]
     }
     
-    extension [Self <: CPUProfileChunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPUProfileChunk] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object distTypesCpuprofileMod {
       __obj.asInstanceOf[CPUProfileChunkNode]
     }
     
-    extension [Self <: CPUProfileChunkNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPUProfileChunkNode] (val x: Self) extends AnyVal {
       
       inline def setCallFrame(value: Category): Self = StObject.set(x, "callFrame", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distTypesCpuprofileMod {
       __obj.asInstanceOf[CPUProfileChunker]
     }
     
-    extension [Self <: CPUProfileChunker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPUProfileChunker] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[CPUProfileChunkNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       

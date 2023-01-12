@@ -38,7 +38,8 @@ object CreateRobotApplicationRequest {
     __obj.asInstanceOf[CreateRobotApplicationRequest]
   }
   
-  extension [Self <: CreateRobotApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRobotApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     

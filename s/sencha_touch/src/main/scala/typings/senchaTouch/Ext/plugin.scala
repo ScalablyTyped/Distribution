@@ -27,7 +27,8 @@ object plugin {
       __obj.asInstanceOf[IBufferedList]
     }
     
-    extension [Self <: IBufferedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBufferedList] (val x: Self) extends AnyVal {
       
       inline def setGetList(value: () => Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
@@ -89,7 +90,8 @@ object plugin {
       __obj.asInstanceOf[IListPaging]
     }
     
-    extension [Self <: IListPaging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IListPaging] (val x: Self) extends AnyVal {
       
       inline def setAutoPaging(value: Boolean): Self = StObject.set(x, "autoPaging", value.asInstanceOf[js.Any])
       
@@ -329,7 +331,8 @@ object plugin {
       __obj.asInstanceOf[IPullRefresh]
     }
     
-    extension [Self <: IPullRefresh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPullRefresh] (val x: Self) extends AnyVal {
       
       inline def setAutoSnapBack(value: Boolean): Self = StObject.set(x, "autoSnapBack", value.asInstanceOf[js.Any])
       
@@ -536,7 +539,8 @@ object plugin {
       __obj.asInstanceOf[ISortableList]
     }
     
-    extension [Self <: ISortableList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISortableList] (val x: Self) extends AnyVal {
       
       inline def setGetHandleSelector(value: () => java.lang.String): Self = StObject.set(x, "getHandleSelector", js.Any.fromFunction0(value))
       

@@ -18,7 +18,8 @@ object HighAvailabilityConfig {
     __obj.asInstanceOf[HighAvailabilityConfig]
   }
   
-  extension [Self <: HighAvailabilityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighAvailabilityConfig] (val x: Self) extends AnyVal {
     
     inline def setDesiredCapacity(value: CapacityValue): Self = StObject.set(x, "desiredCapacity", value.asInstanceOf[js.Any])
   }

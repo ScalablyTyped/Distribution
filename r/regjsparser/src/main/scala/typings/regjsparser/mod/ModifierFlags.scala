@@ -17,7 +17,8 @@ object ModifierFlags {
     __obj.asInstanceOf[ModifierFlags]
   }
   
-  extension [Self <: ModifierFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifierFlags] (val x: Self) extends AnyVal {
     
     inline def setDisabling(value: String): Self = StObject.set(x, "disabling", value.asInstanceOf[js.Any])
     

@@ -210,7 +210,8 @@ object WriteGetObjectResponseRequest {
     __obj.asInstanceOf[WriteGetObjectResponseRequest]
   }
   
-  extension [Self <: WriteGetObjectResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteGetObjectResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceptRanges(value: AcceptRanges): Self = StObject.set(x, "AcceptRanges", value.asInstanceOf[js.Any])
     

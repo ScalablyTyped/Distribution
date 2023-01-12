@@ -25,7 +25,8 @@ object MemberRelation {
     __obj.asInstanceOf[MemberRelation]
   }
   
-  extension [Self <: MemberRelation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberRelation] (val x: Self) extends AnyVal {
     
     inline def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     

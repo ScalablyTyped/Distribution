@@ -25,7 +25,8 @@ object CreateTopicRequest {
     __obj.asInstanceOf[CreateTopicRequest]
   }
   
-  extension [Self <: CreateTopicRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTopicRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigEntries(value: js.Array[Name]): Self = StObject.set(x, "configEntries", value.asInstanceOf[js.Any])
     

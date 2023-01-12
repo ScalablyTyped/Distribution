@@ -61,7 +61,8 @@ object libAccordionMod {
       __obj.asInstanceOf[AccordionHeader]
     }
     
-    extension [Self <: AccordionHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionHeader] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object libAccordionMod {
       __obj.asInstanceOf[AccordionNativeProps[T]]
     }
     
-    extension [Self <: AccordionNativeProps[?], T](x: Self & AccordionNativeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionNativeProps[?], T] (val x: Self & AccordionNativeProps[T]) extends AnyVal {
       
       inline def setActiveSections(value: js.Array[Double | String]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
       
@@ -296,7 +298,8 @@ object libAccordionMod {
       __obj.asInstanceOf[AccordionPanelProps]
     }
     
-    extension [Self <: AccordionPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionPanelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

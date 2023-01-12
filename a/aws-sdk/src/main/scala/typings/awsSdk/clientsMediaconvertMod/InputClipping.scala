@@ -23,7 +23,8 @@ object InputClipping {
     __obj.asInstanceOf[InputClipping]
   }
   
-  extension [Self <: InputClipping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputClipping] (val x: Self) extends AnyVal {
     
     inline def setEndTimecode(value: stringPattern010920405090509092): Self = StObject.set(x, "EndTimecode", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetResolverConfigRequest {
     __obj.asInstanceOf[GetResolverConfigRequest]
   }
   
-  extension [Self <: GetResolverConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResolverConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

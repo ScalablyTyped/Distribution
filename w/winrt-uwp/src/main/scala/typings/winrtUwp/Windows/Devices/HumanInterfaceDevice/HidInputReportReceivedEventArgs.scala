@@ -17,7 +17,8 @@ object HidInputReportReceivedEventArgs {
     __obj.asInstanceOf[HidInputReportReceivedEventArgs]
   }
   
-  extension [Self <: HidInputReportReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidInputReportReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReport(value: HidInputReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }

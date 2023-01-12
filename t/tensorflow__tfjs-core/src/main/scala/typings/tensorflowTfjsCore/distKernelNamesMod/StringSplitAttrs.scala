@@ -15,7 +15,8 @@ object StringSplitAttrs {
     __obj.asInstanceOf[StringSplitAttrs]
   }
   
-  extension [Self <: StringSplitAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringSplitAttrs] (val x: Self) extends AnyVal {
     
     inline def setSkipEmpty(value: Boolean): Self = StObject.set(x, "skipEmpty", value.asInstanceOf[js.Any])
   }

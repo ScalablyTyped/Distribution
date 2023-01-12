@@ -30,7 +30,8 @@ object libProgressStepsMod extends Shortcut {
       __obj.asInstanceOf[ProgressStepsProps]
     }
     
-    extension [Self <: ProgressStepsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressStepsProps] (val x: Self) extends AnyVal {
       
       inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       

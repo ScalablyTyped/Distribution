@@ -73,7 +73,8 @@ object CommonProps {
     __obj.asInstanceOf[CommonProps[T]]
   }
   
-  extension [Self <: CommonProps[?], T](x: Self & CommonProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonProps[?], T] (val x: Self & CommonProps[T]) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

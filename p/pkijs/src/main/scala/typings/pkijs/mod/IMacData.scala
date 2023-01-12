@@ -20,7 +20,8 @@ object IMacData {
     __obj.asInstanceOf[IMacData]
   }
   
-  extension [Self <: IMacData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacData] (val x: Self) extends AnyVal {
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

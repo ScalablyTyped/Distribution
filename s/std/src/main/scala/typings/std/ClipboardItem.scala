@@ -20,7 +20,8 @@ object ClipboardItem {
     __obj.asInstanceOf[ClipboardItem]
   }
   
-  extension [Self <: ClipboardItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipboardItem] (val x: Self) extends AnyVal {
     
     inline def setGetType(value: java.lang.String => js.Promise[Blob]): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     

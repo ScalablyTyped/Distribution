@@ -52,7 +52,8 @@ object srcComponentsPaginationMod extends Shortcut {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

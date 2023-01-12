@@ -17,7 +17,8 @@ object _empty {
     __obj.asInstanceOf[_empty]
   }
   
-  extension [Self <: _empty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
     
     inline def set_empty(value: DateInput): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
   }

@@ -69,7 +69,8 @@ object PlotSunburstLevelsOptions {
     __obj.asInstanceOf[PlotSunburstLevelsOptions]
   }
   
-  extension [Self <: PlotSunburstLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSunburstLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

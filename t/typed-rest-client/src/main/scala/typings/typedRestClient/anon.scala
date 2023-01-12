@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ArrayFormat]
     }
     
-    extension [Self <: ArrayFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayFormat] (val x: Self) extends AnyVal {
       
       inline def setArrayFormat(value: String): Self = StObject.set(x, "arrayFormat", value.asInstanceOf[js.Any])
       

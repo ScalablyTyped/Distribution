@@ -44,7 +44,8 @@ object PartialImageListItemBarPr {
     __obj.asInstanceOf[PartialImageListItemBarPr]
   }
   
-  extension [Self <: PartialImageListItemBarPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageListItemBarPr] (val x: Self) extends AnyVal {
     
     inline def setActionIcon(value: ReactNode): Self = StObject.set(x, "actionIcon", value.asInstanceOf[js.Any])
     

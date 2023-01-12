@@ -17,7 +17,8 @@ object StoragesSnapshot {
     __obj.asInstanceOf[StoragesSnapshot]
   }
   
-  extension [Self <: StoragesSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoragesSnapshot] (val x: Self) extends AnyVal {
     
     inline def setLocalStorage(value: String): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     

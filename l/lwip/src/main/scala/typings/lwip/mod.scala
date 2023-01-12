@@ -482,7 +482,8 @@ object mod {
       __obj.asInstanceOf[ColorObject]
     }
     
-    extension [Self <: ColorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorObject] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -513,7 +514,8 @@ object mod {
       __obj.asInstanceOf[GifBufferParams]
     }
     
-    extension [Self <: GifBufferParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifBufferParams] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1019,8 @@ object mod {
       __obj.asInstanceOf[JpegBufferParams]
     }
     
-    extension [Self <: JpegBufferParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JpegBufferParams] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
@@ -1040,7 +1043,8 @@ object mod {
       __obj.asInstanceOf[PngBufferParams]
     }
     
-    extension [Self <: PngBufferParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PngBufferParams] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

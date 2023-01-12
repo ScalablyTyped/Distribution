@@ -45,7 +45,8 @@ object distRnSrcPlatformBrowserMessagechannelMod {
       __obj.asInstanceOf[KeyChangedRequest]
     }
     
-    extension [Self <: KeyChangedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyChangedRequest] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object distRnSrcPlatformBrowserMessagechannelMod {
       __obj.asInstanceOf[KeyChangedResponse]
     }
     
-    extension [Self <: KeyChangedResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyChangedResponse] (val x: Self) extends AnyVal {
       
       inline def setKeyProcessed(value: Boolean): Self = StObject.set(x, "keyProcessed", value.asInstanceOf[js.Any])
     }
@@ -105,7 +107,8 @@ object distRnSrcPlatformBrowserMessagechannelMod {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object distRnSrcPlatformBrowserMessagechannelMod {
       __obj.asInstanceOf[ReceiverMessageEvent[T]]
     }
     
-    extension [Self <: ReceiverMessageEvent[?], T /* <: ReceiverResponse */](x: Self & ReceiverMessageEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiverMessageEvent[?], T /* <: ReceiverResponse */] (val x: Self & ReceiverMessageEvent[T]) extends AnyVal {
       
       inline def setResponse(value: ReceiverMessageResponse[T]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
@@ -165,7 +169,8 @@ object distRnSrcPlatformBrowserMessagechannelMod {
       __obj.asInstanceOf[SenderMessageEvent[T]]
     }
     
-    extension [Self <: SenderMessageEvent[?], T /* <: SenderRequest */](x: Self & SenderMessageEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SenderMessageEvent[?], T /* <: SenderRequest */] (val x: Self & SenderMessageEvent[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }

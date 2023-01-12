@@ -23,7 +23,8 @@ object Exclude {
     __obj.asInstanceOf[Exclude]
   }
   
-  extension [Self <: Exclude](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: Buckets): Self = StObject.set(x, "Buckets", value.asInstanceOf[js.Any])
     

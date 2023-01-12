@@ -19,7 +19,8 @@ object ScrollSearchOptions {
     __obj.asInstanceOf[ScrollSearchOptions]
   }
   
-  extension [Self <: ScrollSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setWait_(value: Double): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     

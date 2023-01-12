@@ -58,7 +58,8 @@ object IOCRZone {
     __obj.asInstanceOf[IOCRZone]
   }
   
-  extension [Self <: IOCRZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOCRZone] (val x: Self) extends AnyVal {
     
     inline def setBarcode(value: Boolean): Self = StObject.set(x, "Barcode", value.asInstanceOf[js.Any])
     

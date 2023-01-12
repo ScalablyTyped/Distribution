@@ -19,7 +19,8 @@ object CanvasTextMetrics {
     __obj.asInstanceOf[CanvasTextMetrics]
   }
   
-  extension [Self <: CanvasTextMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasTextMetrics] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotCanvasTextMetrics_typekey(value: CanvasTextMetrics): Self = StObject.set(x, "MSHTML.CanvasTextMetrics_typekey", value.asInstanceOf[js.Any])
     

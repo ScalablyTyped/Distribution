@@ -43,7 +43,8 @@ object ASPxClientHintShowingEventArgs {
     __obj.asInstanceOf[ASPxClientHintShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientHintShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHintShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

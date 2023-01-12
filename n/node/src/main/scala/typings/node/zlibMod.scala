@@ -838,7 +838,8 @@ object zlibMod {
       __obj.asInstanceOf[BrotliOptions]
     }
     
-    extension [Self <: BrotliOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrotliOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -974,7 +975,8 @@ object zlibMod {
       __obj.asInstanceOf[ZlibOptions]
     }
     
-    extension [Self <: ZlibOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZlibOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
@@ -1029,7 +1031,8 @@ object zlibMod {
       __obj.asInstanceOf[ZlibParams]
     }
     
-    extension [Self <: ZlibParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZlibParams] (val x: Self) extends AnyVal {
       
       inline def setParams(value: (Double, Double, js.Function0[Unit]) => Unit): Self = StObject.set(x, "params", js.Any.fromFunction3(value))
     }
@@ -1046,7 +1049,8 @@ object zlibMod {
       __obj.asInstanceOf[ZlibReset]
     }
     
-    extension [Self <: ZlibReset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZlibReset] (val x: Self) extends AnyVal {
       
       inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }

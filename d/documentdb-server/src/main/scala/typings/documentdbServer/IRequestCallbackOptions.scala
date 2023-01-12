@@ -23,7 +23,8 @@ object IRequestCallbackOptions {
     __obj.asInstanceOf[IRequestCallbackOptions]
   }
   
-  extension [Self <: IRequestCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
     

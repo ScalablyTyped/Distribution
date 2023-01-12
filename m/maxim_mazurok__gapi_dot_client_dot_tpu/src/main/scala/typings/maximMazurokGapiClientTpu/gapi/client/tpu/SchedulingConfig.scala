@@ -19,7 +19,8 @@ object SchedulingConfig {
     __obj.asInstanceOf[SchedulingConfig]
   }
   
-  extension [Self <: SchedulingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulingConfig] (val x: Self) extends AnyVal {
     
     inline def setPreemptible(value: Boolean): Self = StObject.set(x, "preemptible", value.asInstanceOf[js.Any])
     

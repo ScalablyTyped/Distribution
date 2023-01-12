@@ -70,7 +70,8 @@ object Timings {
     __obj.asInstanceOf[Timings]
   }
   
-  extension [Self <: Timings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timings] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     

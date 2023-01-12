@@ -18,7 +18,8 @@ object ICustomControlOption {
     __obj.asInstanceOf[ICustomControlOption]
   }
   
-  extension [Self <: ICustomControlOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomControlOption] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

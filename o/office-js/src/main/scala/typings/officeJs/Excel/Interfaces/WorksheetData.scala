@@ -214,7 +214,8 @@ object WorksheetData {
     __obj.asInstanceOf[WorksheetData]
   }
   
-  extension [Self <: WorksheetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetData] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     

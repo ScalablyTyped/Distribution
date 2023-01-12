@@ -18,7 +18,8 @@ object Partialcapacitynumberrand {
     __obj.asInstanceOf[Partialcapacitynumberrand]
   }
   
-  extension [Self <: Partialcapacitynumberrand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialcapacitynumberrand] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

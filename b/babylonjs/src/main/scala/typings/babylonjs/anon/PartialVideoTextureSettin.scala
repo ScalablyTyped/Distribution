@@ -26,7 +26,8 @@ object PartialVideoTextureSettin {
     __obj.asInstanceOf[PartialVideoTextureSettin]
   }
   
-  extension [Self <: PartialVideoTextureSettin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVideoTextureSettin] (val x: Self) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object AttachmentsContentProperties {
     __obj.asInstanceOf[AttachmentsContentProperties]
   }
   
-  extension [Self <: AttachmentsContentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsContentProperties] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

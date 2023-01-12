@@ -18,7 +18,8 @@ object DefaultInit {
     __obj.asInstanceOf[DefaultInit]
   }
   
-  extension [Self <: DefaultInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultInit] (val x: Self) extends AnyVal {
     
     inline def setDefaultInit(value: Bubbles): Self = StObject.set(x, "defaultInit", value.asInstanceOf[js.Any])
     

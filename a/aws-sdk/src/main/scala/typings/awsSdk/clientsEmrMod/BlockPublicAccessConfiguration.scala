@@ -23,7 +23,8 @@ object BlockPublicAccessConfiguration {
     __obj.asInstanceOf[BlockPublicAccessConfiguration]
   }
   
-  extension [Self <: BlockPublicAccessConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockPublicAccessConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBlockPublicSecurityGroupRules(value: Boolean): Self = StObject.set(x, "BlockPublicSecurityGroupRules", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TopHits {
     __obj.asInstanceOf[TopHits]
   }
   
-  extension [Self <: TopHits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopHits] (val x: Self) extends AnyVal {
     
     inline def setHits(value: TopHitsResults): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

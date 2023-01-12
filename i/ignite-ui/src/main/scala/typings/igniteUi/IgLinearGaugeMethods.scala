@@ -107,7 +107,8 @@ object IgLinearGaugeMethods {
     __obj.asInstanceOf[IgLinearGaugeMethods]
   }
   
-  extension [Self <: IgLinearGaugeMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLinearGaugeMethods] (val x: Self) extends AnyVal {
     
     inline def setAddRange(value: js.Object => Unit): Self = StObject.set(x, "addRange", js.Any.fromFunction1(value))
     

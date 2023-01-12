@@ -113,7 +113,8 @@ object PartialStackNavigationOpt {
     __obj.asInstanceOf[PartialStackNavigationOpt]
   }
   
-  extension [Self <: PartialStackNavigationOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStackNavigationOpt] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
     

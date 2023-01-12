@@ -23,7 +23,8 @@ object GetStreamSessionRequest {
     __obj.asInstanceOf[GetStreamSessionRequest]
   }
   
-  extension [Self <: GetStreamSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStreamSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelArn(value: ChannelArn): Self = StObject.set(x, "channelArn", value.asInstanceOf[js.Any])
     

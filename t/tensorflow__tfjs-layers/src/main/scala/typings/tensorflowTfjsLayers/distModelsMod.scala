@@ -139,7 +139,8 @@ object distModelsMod {
       __obj.asInstanceOf[ModelAndWeightsConfig]
     }
     
-    extension [Self <: ModelAndWeightsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelAndWeightsConfig] (val x: Self) extends AnyVal {
       
       inline def setModelTopology(value: PyJsonDict): Self = StObject.set(x, "modelTopology", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object distModelsMod {
       __obj.asInstanceOf[ModelPredictArgs]
     }
     
-    extension [Self <: ModelPredictArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelPredictArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object distModelsMod {
       __obj.asInstanceOf[SequentialArgs]
     }
     
-    extension [Self <: SequentialArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialArgs] (val x: Self) extends AnyVal {
       
       inline def setLayers(value: js.Array[Layer]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       

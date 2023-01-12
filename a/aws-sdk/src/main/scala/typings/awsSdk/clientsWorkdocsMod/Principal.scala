@@ -28,7 +28,8 @@ object Principal {
     __obj.asInstanceOf[Principal]
   }
   
-  extension [Self <: Principal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
     
     inline def setId(value: IdType): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

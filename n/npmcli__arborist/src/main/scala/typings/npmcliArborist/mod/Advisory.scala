@@ -50,7 +50,8 @@ object Advisory {
     __obj.asInstanceOf[Advisory]
   }
   
-  extension [Self <: Advisory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advisory] (val x: Self) extends AnyVal {
     
     inline def setDependency(value: String): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     

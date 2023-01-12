@@ -19,7 +19,8 @@ object LokiObj {
     __obj.asInstanceOf[LokiObj]
   }
   
-  extension [Self <: LokiObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiObj] (val x: Self) extends AnyVal {
     
     inline def set$loki(value: Double): Self = StObject.set(x, "$loki", value.asInstanceOf[js.Any])
     

@@ -93,7 +93,8 @@ object ADMMessage {
     __obj.asInstanceOf[ADMMessage]
   }
   
-  extension [Self <: ADMMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ADMMessage] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

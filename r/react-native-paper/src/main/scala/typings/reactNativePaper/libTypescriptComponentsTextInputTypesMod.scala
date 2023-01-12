@@ -50,7 +50,8 @@ object libTypescriptComponentsTextInputTypesMod {
       __obj.asInstanceOf[InputLabelProps]
     }
     
-    extension [Self <: InputLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputLabelProps] (val x: Self) extends AnyVal {
       
       inline def setLabelBackground(value: Any): Self = StObject.set(x, "labelBackground", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object libTypescriptComponentsTextInputTypesMod {
       __obj.asInstanceOf[LabelBackgroundProps]
     }
     
-    extension [Self <: LabelBackgroundProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelBackgroundProps] (val x: Self) extends AnyVal {
       
       inline def setLabelProps(value: LabelProps): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object libTypescriptComponentsTextInputTypesMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       
@@ -318,7 +321,8 @@ object libTypescriptComponentsTextInputTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setError(value: Value): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -117,7 +117,8 @@ object DataSourceOptions {
     __obj.asInstanceOf[DataSourceOptions[TStoreItem, TMappedItem, TItem, TKey]]
   }
   
-  extension [Self <: DataSourceOptions[?, ?, ?, ?], TStoreItem, TMappedItem, TItem, TKey](x: Self & (DataSourceOptions[TStoreItem, TMappedItem, TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceOptions[?, ?, ?, ?], TStoreItem, TMappedItem, TItem, TKey] (val x: Self & (DataSourceOptions[TStoreItem, TMappedItem, TItem, TKey])) extends AnyVal {
     
     inline def setCustomQueryParams(value: Any): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     

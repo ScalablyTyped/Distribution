@@ -25,7 +25,8 @@ object AppsDynamiteV1ApiCompatV1ActionConfirm {
     __obj.asInstanceOf[AppsDynamiteV1ApiCompatV1ActionConfirm]
   }
   
-  extension [Self <: AppsDynamiteV1ApiCompatV1ActionConfirm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteV1ApiCompatV1ActionConfirm] (val x: Self) extends AnyVal {
     
     inline def setDismiss_text(value: String): Self = StObject.set(x, "dismiss_text", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object KmlFeatureData {
     __obj.asInstanceOf[KmlFeatureData]
   }
   
-  extension [Self <: KmlFeatureData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlFeatureData] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: KmlAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

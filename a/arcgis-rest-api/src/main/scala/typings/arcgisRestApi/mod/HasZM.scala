@@ -17,7 +17,8 @@ object HasZM {
     __obj.asInstanceOf[HasZM]
   }
   
-  extension [Self <: HasZM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasZM] (val x: Self) extends AnyVal {
     
     inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
     

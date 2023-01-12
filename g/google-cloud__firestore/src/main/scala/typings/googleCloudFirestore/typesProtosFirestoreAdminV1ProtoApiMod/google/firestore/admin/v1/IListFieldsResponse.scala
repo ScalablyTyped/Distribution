@@ -20,7 +20,8 @@ object IListFieldsResponse {
     __obj.asInstanceOf[IListFieldsResponse]
   }
   
-  extension [Self <: IListFieldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListFieldsResponse] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[IField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

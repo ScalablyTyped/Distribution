@@ -28,7 +28,8 @@ object CreateMapResponse {
     __obj.asInstanceOf[CreateMapResponse]
   }
   
-  extension [Self <: CreateMapResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMapResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

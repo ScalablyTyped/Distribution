@@ -29,7 +29,8 @@ object LogScale {
     __obj.asInstanceOf[LogScale]
   }
   
-  extension [Self <: LogScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogScale] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Double | SignalRef): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

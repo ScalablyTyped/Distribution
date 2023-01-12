@@ -81,7 +81,8 @@ object XBackend {
     __obj.asInstanceOf[XBackend]
   }
   
-  extension [Self <: XBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBackend] (val x: Self) extends AnyVal {
     
     inline def setGetOwnUpdateHandler(value: String => XUpdateHandler): Self = StObject.set(x, "getOwnUpdateHandler", js.Any.fromFunction1(value))
     

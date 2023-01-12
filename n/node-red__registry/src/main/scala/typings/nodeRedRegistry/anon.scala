@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Credentials[TCreds, TSets]]
     }
     
-    extension [Self <: Credentials[?, ?], TCreds /* <: js.Object */, TSets](x: Self & (Credentials[TCreds, TSets])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials[?, ?], TCreds /* <: js.Object */, TSets] (val x: Self & (Credentials[TCreds, TSets])) extends AnyVal {
       
       inline def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       

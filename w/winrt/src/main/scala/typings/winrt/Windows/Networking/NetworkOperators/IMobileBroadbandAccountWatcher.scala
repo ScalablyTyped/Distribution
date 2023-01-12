@@ -38,7 +38,8 @@ object IMobileBroadbandAccountWatcher {
     __obj.asInstanceOf[IMobileBroadbandAccountWatcher]
   }
   
-  extension [Self <: IMobileBroadbandAccountWatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMobileBroadbandAccountWatcher] (val x: Self) extends AnyVal {
     
     inline def setOnaccountadded(value: Any): Self = StObject.set(x, "onaccountadded", value.asInstanceOf[js.Any])
     

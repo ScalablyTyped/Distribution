@@ -18,7 +18,8 @@ object FormSubmitEvent {
     __obj.asInstanceOf[FormSubmitEvent]
   }
   
-  extension [Self <: FormSubmitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormSubmitEvent] (val x: Self) extends AnyVal {
     
     inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

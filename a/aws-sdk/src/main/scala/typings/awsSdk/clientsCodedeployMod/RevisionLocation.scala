@@ -38,7 +38,8 @@ object RevisionLocation {
     __obj.asInstanceOf[RevisionLocation]
   }
   
-  extension [Self <: RevisionLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionLocation] (val x: Self) extends AnyVal {
     
     inline def setAppSpecContent(value: AppSpecContent): Self = StObject.set(x, "appSpecContent", value.asInstanceOf[js.Any])
     

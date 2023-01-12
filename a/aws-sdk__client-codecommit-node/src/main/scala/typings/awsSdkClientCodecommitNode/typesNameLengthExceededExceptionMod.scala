@@ -23,7 +23,8 @@ object typesNameLengthExceededExceptionMod {
       __obj.asInstanceOf[NameLengthExceededException]
     }
     
-    extension [Self <: NameLengthExceededException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameLengthExceededException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NameLengthExceededException

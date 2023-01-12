@@ -31,7 +31,8 @@ object ANDROID {
     __obj.asInstanceOf[ANDROID]
   }
   
-  extension [Self <: ANDROID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ANDROID] (val x: Self) extends AnyVal {
     
     inline def setANDROID(value: android_): Self = StObject.set(x, "ANDROID", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object LimitedBySize {
     __obj.asInstanceOf[LimitedBySize[K, V]]
   }
   
-  extension [Self <: LimitedBySize[?, ?], K, V](x: Self & (LimitedBySize[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitedBySize[?, ?], K, V] (val x: Self & (LimitedBySize[K, V])) extends AnyVal {
     
     inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

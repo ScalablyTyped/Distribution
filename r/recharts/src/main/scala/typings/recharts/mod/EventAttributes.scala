@@ -37,7 +37,8 @@ object EventAttributes {
     __obj.asInstanceOf[EventAttributes]
   }
   
-  extension [Self <: EventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAttributes] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: RechartsFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     

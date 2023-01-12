@@ -154,7 +154,8 @@ object distEsmNlpMod {
       __obj.asInstanceOf[Nlp]
     }
     
-    extension [Self <: Nlp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nlp] (val x: Self) extends AnyVal {
       
       inline def setFromText(value: (/* text */ String, /* language */ js.UndefOr[Language]) => RRule): Self = StObject.set(x, "fromText", js.Any.fromFunction2(value))
       

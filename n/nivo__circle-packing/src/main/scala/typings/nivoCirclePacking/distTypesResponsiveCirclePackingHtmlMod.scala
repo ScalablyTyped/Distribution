@@ -112,7 +112,8 @@ object distTypesResponsiveCirclePackingHtmlMod {
       __obj.asInstanceOf[ResponsiveCirclePackingHtmlProps[RawDatum]]
     }
     
-    extension [Self <: ResponsiveCirclePackingHtmlProps[?], RawDatum](x: Self & ResponsiveCirclePackingHtmlProps[RawDatum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveCirclePackingHtmlProps[?], RawDatum] (val x: Self & ResponsiveCirclePackingHtmlProps[RawDatum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Destroy[State, Instance]]
     }
     
-    extension [Self <: Destroy[?, ?], State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */](x: Self & (Destroy[State, Instance])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destroy[?, ?], State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */] (val x: Self & (Destroy[State, Instance])) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

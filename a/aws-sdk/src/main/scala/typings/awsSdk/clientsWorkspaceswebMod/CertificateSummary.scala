@@ -38,7 +38,8 @@ object CertificateSummary {
     __obj.asInstanceOf[CertificateSummary]
   }
   
-  extension [Self <: CertificateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateSummary] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: CertificatePrincipal): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

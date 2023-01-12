@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[EntryObjectModePredicate]
     }
     
-    extension [Self <: EntryObjectModePredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryObjectModePredicate] (val x: Self) extends AnyVal {
       
       inline def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     }
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[EntryStatsPredicate]
     }
     
-    extension [Self <: EntryStatsPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryStatsPredicate] (val x: Self) extends AnyVal {
       
       inline def setStats(value: `true`): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }

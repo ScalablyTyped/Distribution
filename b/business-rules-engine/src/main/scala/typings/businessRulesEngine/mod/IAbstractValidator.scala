@@ -38,7 +38,8 @@ object IAbstractValidator {
     __obj.asInstanceOf[IAbstractValidator[T]]
   }
   
-  extension [Self <: IAbstractValidator[?], T](x: Self & IAbstractValidator[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractValidator[?], T] (val x: Self & IAbstractValidator[T]) extends AnyVal {
     
     inline def setCreateAbstractListRule(value: String => IAbstractValidationRule[Any]): Self = StObject.set(x, "CreateAbstractListRule", js.Any.fromFunction1(value))
     

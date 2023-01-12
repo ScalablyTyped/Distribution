@@ -168,7 +168,8 @@ object sapMQuickViewCardMod {
       __obj.asInstanceOf[QuickViewCardSettings]
     }
     
-    extension [Self <: QuickViewCardSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewCardSettings] (val x: Self) extends AnyVal {
       
       inline def setShowVerticalScrollBar(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "showVerticalScrollBar", value.asInstanceOf[js.Any])
       

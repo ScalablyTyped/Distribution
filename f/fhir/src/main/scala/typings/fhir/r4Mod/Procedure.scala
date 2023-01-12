@@ -203,7 +203,8 @@ object Procedure {
     __obj.asInstanceOf[Procedure]
   }
   
-  extension [Self <: Procedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
     
     inline def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
     

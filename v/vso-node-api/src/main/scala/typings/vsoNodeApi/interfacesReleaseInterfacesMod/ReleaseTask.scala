@@ -59,7 +59,8 @@ object ReleaseTask {
     __obj.asInstanceOf[ReleaseTask]
   }
   
-  extension [Self <: ReleaseTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseTask] (val x: Self) extends AnyVal {
     
     inline def setAgentName(value: String): Self = StObject.set(x, "agentName", value.asInstanceOf[js.Any])
     

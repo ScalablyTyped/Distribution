@@ -43,7 +43,8 @@ object TStylingRange {
     __obj.asInstanceOf[TStylingRange]
   }
   
-  extension [Self <: TStylingRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TStylingRange] (val x: Self) extends AnyVal {
     
     inline def set__brand__(value: typings.angularCore.angularCoreStrings.TStylingRange): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }

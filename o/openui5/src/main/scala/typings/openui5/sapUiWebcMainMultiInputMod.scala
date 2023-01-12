@@ -1763,7 +1763,8 @@ object sapUiWebcMainMultiInputMod {
       __obj.asInstanceOf[MultiInputSettings]
     }
     
-    extension [Self <: MultiInputSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiInputSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

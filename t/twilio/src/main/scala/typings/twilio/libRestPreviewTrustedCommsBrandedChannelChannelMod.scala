@@ -135,7 +135,8 @@ object libRestPreviewTrustedCommsBrandedChannelChannelMod {
       __obj.asInstanceOf[ChannelListInstanceCreateOptions]
     }
     
-    extension [Self <: ChannelListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setPhoneNumberSid(value: String): Self = StObject.set(x, "phoneNumberSid", value.asInstanceOf[js.Any])
     }
@@ -198,7 +199,8 @@ object libRestPreviewTrustedCommsBrandedChannelChannelMod {
       __obj.asInstanceOf[ChannelResource]
     }
     
-    extension [Self <: ChannelResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object libRestPreviewTrustedCommsBrandedChannelChannelMod {
       __obj.asInstanceOf[ChannelSolution]
     }
     
-    extension [Self <: ChannelSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelSolution] (val x: Self) extends AnyVal {
       
       inline def setBrandedChannelSid(value: String): Self = StObject.set(x, "brandedChannelSid", value.asInstanceOf[js.Any])
       

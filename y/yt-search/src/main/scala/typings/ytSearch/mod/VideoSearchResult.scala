@@ -54,7 +54,8 @@ object VideoSearchResult {
     __obj.asInstanceOf[VideoSearchResult]
   }
   
-  extension [Self <: VideoSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSearchResult] (val x: Self) extends AnyVal {
     
     inline def setAgo(value: String): Self = StObject.set(x, "ago", value.asInstanceOf[js.Any])
     

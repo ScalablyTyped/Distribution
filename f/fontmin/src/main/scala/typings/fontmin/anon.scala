@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[AjdustToEmBox]
     }
     
-    extension [Self <: AjdustToEmBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjdustToEmBox] (val x: Self) extends AnyVal {
       
       inline def setAjdustToEmBox(value: Boolean): Self = StObject.set(x, "ajdustToEmBox", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Contents]
     }
     
-    extension [Self <: Contents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
       
       inline def set_contents(value: Readable): Self = StObject.set(x, "_contents", value.asInstanceOf[js.Any])
     }
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[FontFamily]
     }
     
-    extension [Self <: FontFamily](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontFamily] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object distFromRatioMod {
       __obj.asInstanceOf[RatioInput]
     }
     
-    extension [Self <: RatioInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatioInput] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double | String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

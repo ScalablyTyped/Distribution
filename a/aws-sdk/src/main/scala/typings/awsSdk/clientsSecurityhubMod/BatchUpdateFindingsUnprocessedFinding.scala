@@ -32,7 +32,8 @@ object BatchUpdateFindingsUnprocessedFinding {
     __obj.asInstanceOf[BatchUpdateFindingsUnprocessedFinding]
   }
   
-  extension [Self <: BatchUpdateFindingsUnprocessedFinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateFindingsUnprocessedFinding] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

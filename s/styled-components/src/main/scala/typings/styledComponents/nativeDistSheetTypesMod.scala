@@ -66,7 +66,8 @@ object nativeDistSheetTypesMod {
       __obj.asInstanceOf[SheetOptions]
     }
     
-    extension [Self <: SheetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetOptions] (val x: Self) extends AnyVal {
       
       inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object nativeDistSheetTypesMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setDeleteRule(value: Double => Unit): Self = StObject.set(x, "deleteRule", js.Any.fromFunction1(value))
       

@@ -17,7 +17,8 @@ object ViewFocusEvent {
     __obj.asInstanceOf[ViewFocusEvent]
   }
   
-  extension [Self <: ViewFocusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewFocusEvent] (val x: Self) extends AnyVal {
     
     inline def setNative(value: Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     

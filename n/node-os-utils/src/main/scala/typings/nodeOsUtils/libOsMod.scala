@@ -66,7 +66,8 @@ object libOsMod {
       __obj.asInstanceOf[Os]
     }
     
-    extension [Self <: Os](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Os] (val x: Self) extends AnyVal {
       
       inline def setArch(value: () => String): Self = StObject.set(x, "arch", js.Any.fromFunction0(value))
       

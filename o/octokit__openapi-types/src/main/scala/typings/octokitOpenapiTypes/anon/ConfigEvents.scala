@@ -33,7 +33,8 @@ object ConfigEvents {
     __obj.asInstanceOf[ConfigEvents]
   }
   
-  extension [Self <: ConfigEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigEvents] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

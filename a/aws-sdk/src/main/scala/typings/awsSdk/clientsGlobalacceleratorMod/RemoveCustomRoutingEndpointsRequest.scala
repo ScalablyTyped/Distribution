@@ -23,7 +23,8 @@ object RemoveCustomRoutingEndpointsRequest {
     __obj.asInstanceOf[RemoveCustomRoutingEndpointsRequest]
   }
   
-  extension [Self <: RemoveCustomRoutingEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveCustomRoutingEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointGroupArn(value: GenericString): Self = StObject.set(x, "EndpointGroupArn", value.asInstanceOf[js.Any])
     

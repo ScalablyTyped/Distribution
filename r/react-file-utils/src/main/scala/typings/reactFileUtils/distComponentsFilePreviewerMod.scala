@@ -35,7 +35,8 @@ object distComponentsFilePreviewerMod {
       __obj.asInstanceOf[FilePreviewerProps]
     }
     
-    extension [Self <: FilePreviewerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePreviewerProps] (val x: Self) extends AnyVal {
       
       inline def setFileIconProps(value: FileIconProps): Self = StObject.set(x, "fileIconProps", value.asInstanceOf[js.Any])
       

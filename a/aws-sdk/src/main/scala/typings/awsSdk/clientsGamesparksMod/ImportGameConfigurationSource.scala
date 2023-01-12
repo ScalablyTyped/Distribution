@@ -18,7 +18,8 @@ object ImportGameConfigurationSource {
     __obj.asInstanceOf[ImportGameConfigurationSource]
   }
   
-  extension [Self <: ImportGameConfigurationSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportGameConfigurationSource] (val x: Self) extends AnyVal {
     
     inline def setFile(value: RawGameConfigurationData): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
   }

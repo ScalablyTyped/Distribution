@@ -40,7 +40,8 @@ object MjmlImageProps {
     __obj.asInstanceOf[MjmlImageProps]
   }
   
-  extension [Self <: MjmlImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlImageProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

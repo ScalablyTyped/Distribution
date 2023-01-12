@@ -68,7 +68,8 @@ object libMod {
       __obj.asInstanceOf[CandleProps]
     }
     
-    extension [Self <: CandleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CandleProps] (val x: Self) extends AnyVal {
       
       inline def setCandleRatio(value: Double): Self = StObject.set(x, "candleRatio", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object libMod {
       __obj.asInstanceOf[VictoryCandlestickProps]
     }
     
-    extension [Self <: VictoryCandlestickProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryCandlestickProps] (val x: Self) extends AnyVal {
       
       inline def setCandleColors(value: Negative): Self = StObject.set(x, "candleColors", value.asInstanceOf[js.Any])
       
@@ -394,7 +396,8 @@ object libMod {
       __obj.asInstanceOf[VictoryCandlestickStyleInterface]
     }
     
-    extension [Self <: VictoryCandlestickStyleInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryCandlestickStyleInterface] (val x: Self) extends AnyVal {
       
       inline def setClose(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VictoryStyleObject */ Any

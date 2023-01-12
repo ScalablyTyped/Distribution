@@ -65,7 +65,8 @@ object distDdResizableMod {
       __obj.asInstanceOf[DDResizableOpt]
     }
     
-    extension [Self <: DDResizableOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDResizableOpt] (val x: Self) extends AnyVal {
       
       inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
       

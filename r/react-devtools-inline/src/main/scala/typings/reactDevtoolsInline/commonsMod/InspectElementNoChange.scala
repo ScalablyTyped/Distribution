@@ -23,7 +23,8 @@ object InspectElementNoChange {
     __obj.asInstanceOf[InspectElementNoChange]
   }
   
-  extension [Self <: InspectElementNoChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectElementNoChange] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

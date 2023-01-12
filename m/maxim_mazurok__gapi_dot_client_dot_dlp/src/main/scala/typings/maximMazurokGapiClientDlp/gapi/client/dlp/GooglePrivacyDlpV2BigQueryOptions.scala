@@ -42,7 +42,8 @@ object GooglePrivacyDlpV2BigQueryOptions {
     __obj.asInstanceOf[GooglePrivacyDlpV2BigQueryOptions]
   }
   
-  extension [Self <: GooglePrivacyDlpV2BigQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2BigQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludedFields(value: js.Array[GooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "excludedFields", value.asInstanceOf[js.Any])
     

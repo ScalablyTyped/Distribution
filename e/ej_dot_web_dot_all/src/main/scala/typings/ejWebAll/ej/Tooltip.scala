@@ -214,7 +214,8 @@ object Tooltip {
       __obj.asInstanceOf[typings.ejWebAll.ej.Tooltip.Animation]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Tooltip.Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Tooltip.Animation] (val x: Self) extends AnyVal {
       
       inline def setEffect(value: effect | String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object Tooltip {
       __obj.asInstanceOf[BeforeCloseEventArgs]
     }
     
-    extension [Self <: BeforeCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -296,7 +298,8 @@ object Tooltip {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -341,7 +344,8 @@ object Tooltip {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -386,7 +390,8 @@ object Tooltip {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -427,7 +432,8 @@ object Tooltip {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -464,7 +470,8 @@ object Tooltip {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -505,7 +512,8 @@ object Tooltip {
       __obj.asInstanceOf[HoverEventArgs]
     }
     
-    extension [Self <: HoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -672,7 +680,8 @@ object Tooltip {
       __obj.asInstanceOf[typings.ejWebAll.ej.Tooltip.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Tooltip.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Tooltip.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
       
@@ -821,7 +830,8 @@ object Tooltip {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -858,7 +868,8 @@ object Tooltip {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setStem(value: PositionStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
       
@@ -889,7 +900,8 @@ object Tooltip {
       __obj.asInstanceOf[PositionStem]
     }
     
-    extension [Self <: PositionStem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionStem] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: String): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -920,7 +932,8 @@ object Tooltip {
       __obj.asInstanceOf[PositionTarget]
     }
     
-    extension [Self <: PositionTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionTarget] (val x: Self) extends AnyVal {
       
       inline def setHorizontal(value: String | Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
       
@@ -949,7 +962,8 @@ object Tooltip {
       __obj.asInstanceOf[Tip]
     }
     
-    extension [Self <: Tip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: TipAdjust): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -980,7 +994,8 @@ object Tooltip {
       __obj.asInstanceOf[TipAdjust]
     }
     
-    extension [Self <: TipAdjust](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TipAdjust] (val x: Self) extends AnyVal {
       
       inline def setXValue(value: Double): Self = StObject.set(x, "xValue", value.asInstanceOf[js.Any])
       
@@ -1011,7 +1026,8 @@ object Tooltip {
       __obj.asInstanceOf[TipSize]
     }
     
-    extension [Self <: TipSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TipSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1048,7 +1064,8 @@ object Tooltip {
       __obj.asInstanceOf[TrackingEventArgs]
     }
     
-    extension [Self <: TrackingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[HashtagConfig]
     }
     
-    extension [Self <: HashtagConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashtagConfig] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object XDispatchProvider {
     __obj.asInstanceOf[XDispatchProvider]
   }
   
-  extension [Self <: XDispatchProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchProvider] (val x: Self) extends AnyVal {
     
     inline def setQueryDispatch(value: (URL, String, Double) => XDispatch): Self = StObject.set(x, "queryDispatch", js.Any.fromFunction3(value))
     

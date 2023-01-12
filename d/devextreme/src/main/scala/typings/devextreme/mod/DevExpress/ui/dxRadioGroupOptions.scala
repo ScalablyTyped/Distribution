@@ -65,7 +65,8 @@ object dxRadioGroupOptions {
     __obj.asInstanceOf[dxRadioGroupOptions]
   }
   
-  extension [Self <: dxRadioGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxRadioGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSourceLike[CollectionWidgetItem | Any, Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

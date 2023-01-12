@@ -56,7 +56,8 @@ object distCjsSrcCucumberExpressionGeneratorMod {
       __obj.asInstanceOf[CucumberExpressionGenerator]
     }
     
-    extension [Self <: CucumberExpressionGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CucumberExpressionGenerator] (val x: Self) extends AnyVal {
       
       inline def setCreateParameterTypeMatchers(value: Any): Self = StObject.set(x, "createParameterTypeMatchers", value.asInstanceOf[js.Any])
       

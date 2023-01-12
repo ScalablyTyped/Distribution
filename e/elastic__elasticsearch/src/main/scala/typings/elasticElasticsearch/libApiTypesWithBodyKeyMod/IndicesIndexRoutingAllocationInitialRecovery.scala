@@ -15,7 +15,8 @@ object IndicesIndexRoutingAllocationInitialRecovery {
     __obj.asInstanceOf[IndicesIndexRoutingAllocationInitialRecovery]
   }
   
-  extension [Self <: IndicesIndexRoutingAllocationInitialRecovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesIndexRoutingAllocationInitialRecovery] (val x: Self) extends AnyVal {
     
     inline def set_id(value: Id): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     

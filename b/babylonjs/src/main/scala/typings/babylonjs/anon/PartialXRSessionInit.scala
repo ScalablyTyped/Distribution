@@ -24,7 +24,8 @@ object PartialXRSessionInit {
     __obj.asInstanceOf[PartialXRSessionInit]
   }
   
-  extension [Self <: PartialXRSessionInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialXRSessionInit] (val x: Self) extends AnyVal {
     
     inline def setDomOverlay(value: XRDOMOverlayInit): Self = StObject.set(x, "domOverlay", value.asInstanceOf[js.Any])
     

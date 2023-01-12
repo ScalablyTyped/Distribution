@@ -20,7 +20,8 @@ object RenameFailCallbackResult {
     __obj.asInstanceOf[RenameFailCallbackResult]
   }
   
-  extension [Self <: RenameFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object ConnectConnectInfoType {
     __obj.asInstanceOf[ConnectConnectInfoType]
   }
   
-  extension [Self <: ConnectConnectInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectConnectInfoType] (val x: Self) extends AnyVal {
     
     inline def setIncludeTlsChannelId(value: Boolean): Self = StObject.set(x, "includeTlsChannelId", value.asInstanceOf[js.Any])
     

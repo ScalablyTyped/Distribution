@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBlankReplacement(value: (/* content */ String, /* node */ Node, /* options */ Options) => String): Self = StObject.set(x, "blankReplacement", js.Any.fromFunction3(value))
       
@@ -148,7 +149,8 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object mod {
       __obj.asInstanceOf[Rules]
     }
     
-    extension [Self <: Rules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Filter, Rule) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

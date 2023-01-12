@@ -23,7 +23,8 @@ object NetworkPathComponentDetails {
     __obj.asInstanceOf[NetworkPathComponentDetails]
   }
   
-  extension [Self <: NetworkPathComponentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkPathComponentDetails] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: StringList): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

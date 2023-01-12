@@ -97,7 +97,8 @@ object menuStyledComponentsMod {
       __obj.asInstanceOf[StyledProps]
     }
     
-    extension [Self <: StyledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledProps] (val x: Self) extends AnyVal {
       
       inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       

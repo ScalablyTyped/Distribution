@@ -16,7 +16,8 @@ object RegexValidation {
     __obj.asInstanceOf[RegexValidation]
   }
   
-  extension [Self <: RegexValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexValidation] (val x: Self) extends AnyVal {
     
     inline def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     

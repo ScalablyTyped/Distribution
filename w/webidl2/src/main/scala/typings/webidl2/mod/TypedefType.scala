@@ -30,7 +30,8 @@ object TypedefType {
     __obj.asInstanceOf[TypedefType]
   }
   
-  extension [Self <: TypedefType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedefType] (val x: Self) extends AnyVal {
     
     inline def setIdlType(value: IDLTypeDescription): Self = StObject.set(x, "idlType", value.asInstanceOf[js.Any])
     

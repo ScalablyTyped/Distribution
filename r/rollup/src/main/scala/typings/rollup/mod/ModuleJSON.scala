@@ -43,7 +43,8 @@ object ModuleJSON {
     __obj.asInstanceOf[ModuleJSON]
   }
   
-  extension [Self <: ModuleJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleJSON] (val x: Self) extends AnyVal {
     
     inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

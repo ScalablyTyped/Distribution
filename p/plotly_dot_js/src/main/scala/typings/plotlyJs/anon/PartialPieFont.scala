@@ -22,7 +22,8 @@ object PartialPieFont {
     __obj.asInstanceOf[PartialPieFont]
   }
   
-  extension [Self <: PartialPieFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPieFont] (val x: Self) extends AnyVal {
     
     inline def setColor(value: PieColor | PieColors): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

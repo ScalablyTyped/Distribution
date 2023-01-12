@@ -26,7 +26,8 @@ object OnAndEmit {
     __obj.asInstanceOf[OnAndEmit[T, T2]]
   }
   
-  extension [Self <: OnAndEmit[?, ?], T, T2](x: Self & (OnAndEmit[T, T2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAndEmit[?, ?], T, T2] (val x: Self & (OnAndEmit[T, T2])) extends AnyVal {
     
     inline def setEmit(value: (/* eventType */ String, /* value */ js.UndefOr[T2]) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     

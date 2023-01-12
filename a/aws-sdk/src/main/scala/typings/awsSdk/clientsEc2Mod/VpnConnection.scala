@@ -88,7 +88,8 @@ object VpnConnection {
     __obj.asInstanceOf[VpnConnection]
   }
   
-  extension [Self <: VpnConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnConnection] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

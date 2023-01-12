@@ -188,7 +188,8 @@ object distCommonjsCollectionsMenuMenuMod {
       __obj.asInstanceOf[StrictMenuProps]
     }
     
-    extension [Self <: StrictMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictMenuProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double | String): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

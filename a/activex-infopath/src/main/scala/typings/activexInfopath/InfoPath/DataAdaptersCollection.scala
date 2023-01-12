@@ -21,7 +21,8 @@ object DataAdaptersCollection {
     __obj.asInstanceOf[DataAdaptersCollection]
   }
   
-  extension [Self <: DataAdaptersCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAdaptersCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

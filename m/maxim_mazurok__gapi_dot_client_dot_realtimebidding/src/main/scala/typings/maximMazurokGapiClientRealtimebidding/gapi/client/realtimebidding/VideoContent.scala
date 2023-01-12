@@ -22,7 +22,8 @@ object VideoContent {
     __obj.asInstanceOf[VideoContent]
   }
   
-  extension [Self <: VideoContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoContent] (val x: Self) extends AnyVal {
     
     inline def setVideoMetadata(value: VideoMetadata): Self = StObject.set(x, "videoMetadata", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[typeinlogTypeConsolaLogOb]
     }
     
-    extension [Self <: typeinlogTypeConsolaLogOb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeinlogTypeConsolaLogOb] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: ConsolaLogObject): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

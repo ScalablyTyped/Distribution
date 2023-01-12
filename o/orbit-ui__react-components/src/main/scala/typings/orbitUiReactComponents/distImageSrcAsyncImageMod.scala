@@ -43,7 +43,8 @@ object distImageSrcAsyncImageMod {
       __obj.asInstanceOf[InnerAsyncImageProps]
     }
     
-    extension [Self <: InnerAsyncImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerAsyncImageProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

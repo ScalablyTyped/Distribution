@@ -23,7 +23,8 @@ object MUIDataTableResize {
     __obj.asInstanceOf[MUIDataTableResize]
   }
   
-  extension [Self <: MUIDataTableResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableResize] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

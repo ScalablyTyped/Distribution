@@ -50,7 +50,8 @@ object XDropTargetDragContext {
     __obj.asInstanceOf[XDropTargetDragContext]
   }
   
-  extension [Self <: XDropTargetDragContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDropTargetDragContext] (val x: Self) extends AnyVal {
     
     inline def setAcceptDrag(value: Double => Unit): Self = StObject.set(x, "acceptDrag", js.Any.fromFunction1(value))
     

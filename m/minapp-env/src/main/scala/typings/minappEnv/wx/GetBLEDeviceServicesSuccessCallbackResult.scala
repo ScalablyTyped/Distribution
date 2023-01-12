@@ -16,7 +16,8 @@ object GetBLEDeviceServicesSuccessCallbackResult {
     __obj.asInstanceOf[GetBLEDeviceServicesSuccessCallbackResult]
   }
   
-  extension [Self <: GetBLEDeviceServicesSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceServicesSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setServices(value: BLEService): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
   }

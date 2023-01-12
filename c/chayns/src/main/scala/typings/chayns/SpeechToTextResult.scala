@@ -18,7 +18,8 @@ object SpeechToTextResult {
     __obj.asInstanceOf[SpeechToTextResult]
   }
   
-  extension [Self <: SpeechToTextResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechToTextResult] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

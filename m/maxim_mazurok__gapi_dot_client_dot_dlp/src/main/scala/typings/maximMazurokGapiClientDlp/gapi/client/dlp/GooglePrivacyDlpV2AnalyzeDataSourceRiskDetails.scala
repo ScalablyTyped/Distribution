@@ -40,7 +40,8 @@ object GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails {
     __obj.asInstanceOf[GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails]
   }
   
-  extension [Self <: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2AnalyzeDataSourceRiskDetails] (val x: Self) extends AnyVal {
     
     inline def setCategoricalStatsResult(value: GooglePrivacyDlpV2CategoricalStatsResult): Self = StObject.set(x, "categoricalStatsResult", value.asInstanceOf[js.Any])
     

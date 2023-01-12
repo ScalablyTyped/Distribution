@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ParseExternalKey]
     }
     
-    extension [Self <: ParseExternalKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseExternalKey] (val x: Self) extends AnyVal {
       
       inline def setParseExternalKey(value: Boolean): Self = StObject.set(x, "parseExternalKey", value.asInstanceOf[js.Any])
     }

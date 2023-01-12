@@ -43,7 +43,8 @@ object AcknowledgeAbuseAlt {
     __obj.asInstanceOf[AcknowledgeAbuseAlt]
   }
   
-  extension [Self <: AcknowledgeAbuseAlt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcknowledgeAbuseAlt] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgeAbuse(value: Boolean): Self = StObject.set(x, "acknowledgeAbuse", value.asInstanceOf[js.Any])
     

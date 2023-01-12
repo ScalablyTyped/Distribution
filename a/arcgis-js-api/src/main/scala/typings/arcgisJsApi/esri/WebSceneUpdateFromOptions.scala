@@ -41,7 +41,8 @@ object WebSceneUpdateFromOptions {
     __obj.asInstanceOf[WebSceneUpdateFromOptions]
   }
   
-  extension [Self <: WebSceneUpdateFromOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSceneUpdateFromOptions] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentExcluded(value: Boolean): Self = StObject.set(x, "environmentExcluded", value.asInstanceOf[js.Any])
     

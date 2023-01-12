@@ -21,7 +21,8 @@ object UsersFollowedArtistsResponse {
     __obj.asInstanceOf[UsersFollowedArtistsResponse]
   }
   
-  extension [Self <: UsersFollowedArtistsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersFollowedArtistsResponse] (val x: Self) extends AnyVal {
     
     inline def setArtists(value: CursorBasedPagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
   }

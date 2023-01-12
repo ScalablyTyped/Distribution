@@ -63,7 +63,8 @@ object TransitGatewayAttachment {
     __obj.asInstanceOf[TransitGatewayAttachment]
   }
   
-  extension [Self <: TransitGatewayAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayAttachment] (val x: Self) extends AnyVal {
     
     inline def setAssociation(value: TransitGatewayAttachmentAssociation): Self = StObject.set(x, "Association", value.asInstanceOf[js.Any])
     

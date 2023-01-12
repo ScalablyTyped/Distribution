@@ -28,7 +28,8 @@ object MediaBookmarks {
     __obj.asInstanceOf[MediaBookmarks]
   }
   
-  extension [Self <: MediaBookmarks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBookmarks] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, String) => MediaBookmark): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

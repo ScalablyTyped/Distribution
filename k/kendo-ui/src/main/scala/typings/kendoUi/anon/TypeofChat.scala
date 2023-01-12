@@ -20,7 +20,8 @@ object TypeofChat {
     __obj.asInstanceOf[TypeofChat]
   }
   
-  extension [Self <: TypeofChat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofChat] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Chat): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

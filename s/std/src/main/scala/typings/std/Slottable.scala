@@ -16,7 +16,8 @@ object Slottable {
     __obj.asInstanceOf[Slottable]
   }
   
-  extension [Self <: Slottable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slottable] (val x: Self) extends AnyVal {
     
     inline def setAssignedSlot(value: HTMLSlotElement): Self = StObject.set(x, "assignedSlot", value.asInstanceOf[js.Any])
     

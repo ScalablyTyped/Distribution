@@ -131,7 +131,8 @@ object CellSpanningLayout {
     __obj.asInstanceOf[CellSpanningLayout]
   }
   
-  extension [Self <: CellSpanningLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellSpanningLayout] (val x: Self) extends AnyVal {
     
     inline def setDragLeave(value: () => Unit): Self = StObject.set(x, "dragLeave", js.Any.fromFunction0(value))
     

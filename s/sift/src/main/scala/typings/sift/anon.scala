@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsCompare]
     }
     
-    extension [Self <: PartialOptionsCompare](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsCompare] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (/* a */ Any, /* b */ Any) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       

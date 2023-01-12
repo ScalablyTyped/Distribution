@@ -19,7 +19,8 @@ object WorkbookFunctionResult {
     __obj.asInstanceOf[WorkbookFunctionResult]
   }
   
-  extension [Self <: WorkbookFunctionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookFunctionResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ClickLocation {
     __obj.asInstanceOf[ClickLocation]
   }
   
-  extension [Self <: ClickLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickLocation] (val x: Self) extends AnyVal {
     
     inline def setClickLocation(value: LinkClickLocation): Self = StObject.set(x, "ClickLocation", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object GoogleDevtoolsRemotebuildbotCommandEvents {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotCommandEvents]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildbotCommandEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildbotCommandEvents] (val x: Self) extends AnyVal {
     
     inline def setCmUsage(value: String): Self = StObject.set(x, "cmUsage", value.asInstanceOf[js.Any])
     

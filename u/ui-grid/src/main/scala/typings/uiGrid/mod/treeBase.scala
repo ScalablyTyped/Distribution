@@ -97,7 +97,8 @@ object treeBase {
       __obj.asInstanceOf[typings.uiGrid.mod.treeBase.IColumnDef[TEntity]]
     }
     
-    extension [Self <: typings.uiGrid.mod.treeBase.IColumnDef[?], TEntity](x: Self & typings.uiGrid.mod.treeBase.IColumnDef[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.treeBase.IColumnDef[?], TEntity] (val x: Self & typings.uiGrid.mod.treeBase.IColumnDef[TEntity]) extends AnyVal {
       
       inline def setCustomTreeAggregationFinalizerFn(value: /* aggregation */ IGridTreeBaseAggregationObject => Unit): Self = StObject.set(x, "customTreeAggregationFinalizerFn", js.Any.fromFunction1(value))
       
@@ -187,7 +188,8 @@ object treeBase {
       __obj.asInstanceOf[typings.uiGrid.mod.treeBase.IGridOptions[TEntity]]
     }
     
-    extension [Self <: typings.uiGrid.mod.treeBase.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.treeBase.IGridOptions[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.treeBase.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.treeBase.IGridOptions[TEntity]) extends AnyVal {
       
       inline def setShowTreeExpandNoChildren(value: Boolean): Self = StObject.set(x, "showTreeExpandNoChildren", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object treeBase {
       __obj.asInstanceOf[IGridTreeBaseAggregationObject]
     }
     
-    extension [Self <: IGridTreeBaseAggregationObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridTreeBaseAggregationObject] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -328,7 +331,8 @@ object treeBase {
       __obj.asInstanceOf[IGridTreeBaseApi[TEntity]]
     }
     
-    extension [Self <: IGridTreeBaseApi[?], TEntity](x: Self & IGridTreeBaseApi[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridTreeBaseApi[?], TEntity] (val x: Self & IGridTreeBaseApi[TEntity]) extends AnyVal {
       
       inline def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
       
@@ -379,7 +383,8 @@ object treeBase {
       __obj.asInstanceOf[ITreeState]
     }
     
-    extension [Self <: ITreeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeState] (val x: Self) extends AnyVal {
       
       inline def setExpandedState(value: StringDictionary[String]): Self = StObject.set(x, "expandedState", value.asInstanceOf[js.Any])
     }
@@ -404,7 +409,8 @@ object treeBase {
       __obj.asInstanceOf[IUiGridTreeBaseConstants]
     }
     
-    extension [Self <: IUiGridTreeBaseConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridTreeBaseConstants] (val x: Self) extends AnyVal {
       
       inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }

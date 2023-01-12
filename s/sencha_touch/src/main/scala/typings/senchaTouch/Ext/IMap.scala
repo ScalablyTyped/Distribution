@@ -98,7 +98,8 @@ object IMap {
     __obj.asInstanceOf[IMap]
   }
   
-  extension [Self <: IMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMap] (val x: Self) extends AnyVal {
     
     inline def setGeo(value: IGeolocation): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     

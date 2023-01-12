@@ -186,7 +186,8 @@ object DashboardPdfExportOptions {
     __obj.asInstanceOf[DashboardPdfExportOptions]
   }
   
-  extension [Self <: DashboardPdfExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardPdfExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFitPageCount(value: Double): Self = StObject.set(x, "AutoFitPageCount", value.asInstanceOf[js.Any])
     

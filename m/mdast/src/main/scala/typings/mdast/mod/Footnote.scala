@@ -23,7 +23,8 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  extension [Self <: Footnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

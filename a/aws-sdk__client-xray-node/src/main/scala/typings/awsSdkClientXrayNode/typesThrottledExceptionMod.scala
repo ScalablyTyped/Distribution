@@ -47,7 +47,8 @@ object typesThrottledExceptionMod {
       __obj.asInstanceOf[ThrottledException]
     }
     
-    extension [Self <: ThrottledException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottledException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.ThrottledException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object typesThrottledExceptionMod {
       __obj.asInstanceOf[ThrottledExceptionDetails]
     }
     
-    extension [Self <: ThrottledExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottledExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

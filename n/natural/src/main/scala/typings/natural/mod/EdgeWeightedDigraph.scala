@@ -19,7 +19,8 @@ object EdgeWeightedDigraph {
     __obj.asInstanceOf[EdgeWeightedDigraph]
   }
   
-  extension [Self <: EdgeWeightedDigraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeWeightedDigraph] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

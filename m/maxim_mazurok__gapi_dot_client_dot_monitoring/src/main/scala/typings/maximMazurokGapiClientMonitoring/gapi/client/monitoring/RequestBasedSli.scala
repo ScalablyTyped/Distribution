@@ -22,7 +22,8 @@ object RequestBasedSli {
     __obj.asInstanceOf[RequestBasedSli]
   }
   
-  extension [Self <: RequestBasedSli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBasedSli] (val x: Self) extends AnyVal {
     
     inline def setDistributionCut(value: DistributionCut): Self = StObject.set(x, "distributionCut", value.asInstanceOf[js.Any])
     

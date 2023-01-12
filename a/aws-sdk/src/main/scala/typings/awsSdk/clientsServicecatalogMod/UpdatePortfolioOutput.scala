@@ -23,7 +23,8 @@ object UpdatePortfolioOutput {
     __obj.asInstanceOf[UpdatePortfolioOutput]
   }
   
-  extension [Self <: UpdatePortfolioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePortfolioOutput] (val x: Self) extends AnyVal {
     
     inline def setPortfolioDetail(value: PortfolioDetail): Self = StObject.set(x, "PortfolioDetail", value.asInstanceOf[js.Any])
     

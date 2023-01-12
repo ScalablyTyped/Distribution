@@ -15,7 +15,8 @@ object StorybookLogoProps {
     __obj.asInstanceOf[StorybookLogoProps]
   }
   
-  extension [Self <: StorybookLogoProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorybookLogoProps] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
   }

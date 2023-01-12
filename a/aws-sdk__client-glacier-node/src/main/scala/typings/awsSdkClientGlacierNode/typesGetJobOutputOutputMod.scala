@@ -57,7 +57,8 @@ object typesGetJobOutputOutputMod {
       __obj.asInstanceOf[GetJobOutputOutput[StreamType]]
     }
     
-    extension [Self <: GetJobOutputOutput[?], StreamType](x: Self & GetJobOutputOutput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetJobOutputOutput[?], StreamType] (val x: Self & GetJobOutputOutput[StreamType]) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

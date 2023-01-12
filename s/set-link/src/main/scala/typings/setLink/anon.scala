@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Attach]
     }
     
-    extension [Self <: Attach](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attach] (val x: Self) extends AnyVal {
       
       inline def setAttach(value: Response_[Any, Record[String, Any]] => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     }

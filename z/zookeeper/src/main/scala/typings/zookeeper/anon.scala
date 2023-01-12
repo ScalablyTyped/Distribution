@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -258,7 +259,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedZookeeperC]
     }
     
-    extension [Self <: TypeofimportedZookeeperC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedZookeeperC] (val x: Self) extends AnyVal {
       
       inline def setOn_closed(value: String): Self = StObject.set(x, "on_closed", value.asInstanceOf[js.Any])
       

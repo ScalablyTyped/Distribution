@@ -18,7 +18,8 @@ object DeleteCustomRoutingAcceleratorRequest {
     __obj.asInstanceOf[DeleteCustomRoutingAcceleratorRequest]
   }
   
-  extension [Self <: DeleteCustomRoutingAcceleratorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCustomRoutingAcceleratorRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object CreateSchedulingPolicyRequest {
     __obj.asInstanceOf[CreateSchedulingPolicyRequest]
   }
   
-  extension [Self <: CreateSchedulingPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSchedulingPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setFairsharePolicy(value: FairsharePolicy): Self = StObject.set(x, "fairsharePolicy", value.asInstanceOf[js.Any])
     

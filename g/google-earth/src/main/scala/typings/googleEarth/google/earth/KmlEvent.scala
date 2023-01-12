@@ -61,7 +61,8 @@ object KmlEvent {
     __obj.asInstanceOf[KmlEvent]
   }
   
-  extension [Self <: KmlEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlEvent] (val x: Self) extends AnyVal {
     
     inline def setGetBubbles(value: () => Boolean): Self = StObject.set(x, "getBubbles", js.Any.fromFunction0(value))
     

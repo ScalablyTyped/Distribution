@@ -28,7 +28,8 @@ object TrainLanguageModelParams {
     __obj.asInstanceOf[TrainLanguageModelParams]
   }
   
-  extension [Self <: TrainLanguageModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrainLanguageModelParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

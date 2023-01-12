@@ -23,7 +23,8 @@ object IWalls {
     __obj.asInstanceOf[IWalls]
   }
   
-  extension [Self <: IWalls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWalls] (val x: Self) extends AnyVal {
     
     inline def setBack(value: IWall): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
     

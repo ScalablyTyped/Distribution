@@ -25,7 +25,8 @@ object `467` {
     __obj.asInstanceOf[`467`]
   }
   
-  extension [Self <: `467`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `467`] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

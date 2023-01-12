@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[MorphReplaceProps]
     }
     
-    extension [Self <: MorphReplaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphReplaceProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object mod {
       __obj.asInstanceOf[MorphTransitionProps]
     }
     
-    extension [Self <: MorphTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MorphTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: From): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

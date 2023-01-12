@@ -64,7 +64,8 @@ object libTypesMod {
       __obj.asInstanceOf[IMarkProps]
     }
     
-    extension [Self <: IMarkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarkProps] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libTypesMod {
       __obj.asInstanceOf[IProps]
     }
     
-    extension [Self <: IProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
       
       inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object libTypesMod {
       __obj.asInstanceOf[IRenderMarkParams]
     }
     
-    extension [Self <: IRenderMarkParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderMarkParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object libTypesMod {
       __obj.asInstanceOf[IRenderThumbParams]
     }
     
-    extension [Self <: IRenderThumbParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderThumbParams] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object libTypesMod {
       __obj.asInstanceOf[IRenderTrackParams]
     }
     
-    extension [Self <: IRenderTrackParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderTrackParams] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -288,7 +293,8 @@ object libTypesMod {
       __obj.asInstanceOf[IThumbProps]
     }
     
-    extension [Self <: IThumbProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThumbProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-valuemax`(value: Double): Self = StObject.set(x, "aria-valuemax", value.asInstanceOf[js.Any])
       
@@ -337,7 +343,8 @@ object libTypesMod {
       __obj.asInstanceOf[ITrackBackground]
     }
     
-    extension [Self <: ITrackBackground](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITrackBackground] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -383,7 +390,8 @@ object libTypesMod {
       __obj.asInstanceOf[ITrackProps]
     }
     
-    extension [Self <: ITrackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITrackProps] (val x: Self) extends AnyVal {
       
       inline def setOnMouseDown(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       

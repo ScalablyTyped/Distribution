@@ -18,7 +18,8 @@ object ListCuratedEnvironmentImagesOutput {
     __obj.asInstanceOf[ListCuratedEnvironmentImagesOutput]
   }
   
-  extension [Self <: ListCuratedEnvironmentImagesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCuratedEnvironmentImagesOutput] (val x: Self) extends AnyVal {
     
     inline def setPlatforms(value: EnvironmentPlatforms): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     

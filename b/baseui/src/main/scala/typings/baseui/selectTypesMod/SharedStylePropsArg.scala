@@ -70,7 +70,8 @@ object SharedStylePropsArg {
     __obj.asInstanceOf[SharedStylePropsArg]
   }
   
-  extension [Self <: SharedStylePropsArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
     
     inline def set$clearable(value: Boolean): Self = StObject.set(x, "$clearable", value.asInstanceOf[js.Any])
     

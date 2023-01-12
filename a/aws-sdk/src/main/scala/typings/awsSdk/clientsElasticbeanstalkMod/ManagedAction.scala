@@ -38,7 +38,8 @@ object ManagedAction {
     __obj.asInstanceOf[ManagedAction]
   }
   
-  extension [Self <: ManagedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAction] (val x: Self) extends AnyVal {
     
     inline def setActionDescription(value: String): Self = StObject.set(x, "ActionDescription", value.asInstanceOf[js.Any])
     

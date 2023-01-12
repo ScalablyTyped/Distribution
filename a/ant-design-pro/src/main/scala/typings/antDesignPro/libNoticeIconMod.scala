@@ -66,7 +66,8 @@ object libNoticeIconMod {
       __obj.asInstanceOf[NoticeIconProps]
     }
     
-    extension [Self <: NoticeIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoticeIconProps] (val x: Self) extends AnyVal {
       
       inline def setBell(value: ReactNode): Self = StObject.set(x, "bell", value.asInstanceOf[js.Any])
       

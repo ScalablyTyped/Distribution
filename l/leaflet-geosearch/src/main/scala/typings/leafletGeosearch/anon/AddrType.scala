@@ -17,7 +17,8 @@ object AddrType {
     __obj.asInstanceOf[AddrType]
   }
   
-  extension [Self <: AddrType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddrType] (val x: Self) extends AnyVal {
     
     inline def setAddr_Type(value: String): Self = StObject.set(x, "Addr_Type", value.asInstanceOf[js.Any])
     

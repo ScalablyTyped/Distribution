@@ -41,7 +41,8 @@ object ObjectTypeAnnotation_ {
     __obj.asInstanceOf[ObjectTypeAnnotation_]
   }
   
-  extension [Self <: ObjectTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setCallProperties(value: js.Array[ObjectTypeCallProperty_]): Self = StObject.set(x, "callProperties", value.asInstanceOf[js.Any])
     

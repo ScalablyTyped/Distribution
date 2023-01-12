@@ -62,7 +62,8 @@ object libFooterMod {
       __obj.asInstanceOf[FooterProps[RecordType]]
     }
     
-    extension [Self <: FooterProps[?], RecordType](x: Self & FooterProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FooterProps[?], RecordType] (val x: Self & FooterProps[RecordType]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

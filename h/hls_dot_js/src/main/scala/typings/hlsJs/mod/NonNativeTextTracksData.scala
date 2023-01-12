@@ -15,7 +15,8 @@ object NonNativeTextTracksData {
     __obj.asInstanceOf[NonNativeTextTracksData]
   }
   
-  extension [Self <: NonNativeTextTracksData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonNativeTextTracksData] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: js.Array[NonNativeTextTrack]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

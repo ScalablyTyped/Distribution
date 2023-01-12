@@ -33,7 +33,8 @@ object GetSessionResponse {
     __obj.asInstanceOf[GetSessionResponse]
   }
   
-  extension [Self <: GetSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setInterpretations(value: Interpretations): Self = StObject.set(x, "interpretations", value.asInstanceOf[js.Any])
     

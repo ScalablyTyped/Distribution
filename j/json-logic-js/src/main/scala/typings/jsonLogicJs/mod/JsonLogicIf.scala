@@ -19,7 +19,8 @@ object JsonLogicIf {
     __obj.asInstanceOf[JsonLogicIf]
   }
   
-  extension [Self <: JsonLogicIf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicIf] (val x: Self) extends AnyVal {
     
     inline def setIf(value: AnyArrayOfOddLengthMin3): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     

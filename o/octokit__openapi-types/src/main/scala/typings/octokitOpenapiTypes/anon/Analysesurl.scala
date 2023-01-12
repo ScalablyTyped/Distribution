@@ -31,7 +31,8 @@ object Analysesurl {
     __obj.asInstanceOf[Analysesurl]
   }
   
-  extension [Self <: Analysesurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Analysesurl] (val x: Self) extends AnyVal {
     
     inline def setAnalyses_url(value: String): Self = StObject.set(x, "analyses_url", value.asInstanceOf[js.Any])
     

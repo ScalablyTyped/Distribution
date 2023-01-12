@@ -30,7 +30,8 @@ object distTypesMod {
       __obj.asInstanceOf[BootstrapNode]
     }
     
-    extension [Self <: BootstrapNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapNode] (val x: Self) extends AnyVal {
       
       inline def setChainId(value: Double): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object distTypesMod {
       __obj.asInstanceOf[Chain]
     }
     
-    extension [Self <: Chain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chain] (val x: Self) extends AnyVal {
       
       inline def setBootstrapNodes(value: js.Array[BootstrapNode]): Self = StObject.set(x, "bootstrapNodes", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object distTypesMod {
       __obj.asInstanceOf[GenesisBlock]
     }
     
-    extension [Self <: GenesisBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenesisBlock] (val x: Self) extends AnyVal {
       
       inline def setDifficulty(value: Double): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object distTypesMod {
       __obj.asInstanceOf[Hardfork]
     }
     
-    extension [Self <: Hardfork](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hardfork] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Double): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object distTypesMod {
       __obj.asInstanceOf[chainsType]
     }
     
-    extension [Self <: chainsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: chainsType] (val x: Self) extends AnyVal {
       
       inline def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     }
@@ -223,7 +228,8 @@ object distTypesMod {
       __obj.asInstanceOf[genesisStatesType]
     }
     
-    extension [Self <: genesisStatesType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: genesisStatesType] (val x: Self) extends AnyVal {
       
       inline def setNames(value: StringDictionary[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     }

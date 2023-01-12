@@ -23,7 +23,8 @@ object PerceptionDepthFrameArrivedEventArgs {
     __obj.asInstanceOf[PerceptionDepthFrameArrivedEventArgs]
   }
   
-  extension [Self <: PerceptionDepthFrameArrivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionDepthFrameArrivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     

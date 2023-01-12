@@ -464,7 +464,8 @@ object ViewPropscolorstringundef {
     __obj.asInstanceOf[ViewPropscolorstringundef]
   }
   
-  extension [Self <: ViewPropscolorstringundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropscolorstringundef] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object ddpMod {
         __obj.asInstanceOf[DDPStatic]
       }
       
-      extension [Self <: DDPStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DDPStatic] (val x: Self) extends AnyVal {
         
         inline def setApply(value: (String, /* repeated */ Any) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
         
@@ -93,7 +94,8 @@ object ddpMod {
         __obj.asInstanceOf[DDPStatus]
       }
       
-      extension [Self <: DDPStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DDPStatus] (val x: Self) extends AnyVal {
         
         inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
         
@@ -189,7 +191,8 @@ object ddpMod {
         __obj.asInstanceOf[MethodInvocationOptions]
       }
       
-      extension [Self <: MethodInvocationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MethodInvocationOptions] (val x: Self) extends AnyVal {
         
         inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
         

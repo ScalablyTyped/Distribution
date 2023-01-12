@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ComponentType]
     }
     
-    extension [Self <: ComponentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentType] (val x: Self) extends AnyVal {
       
       inline def set__docgenInfo(value: Any): Self = StObject.set(x, "__docgenInfo", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDOC_GEN_COLLECTION_NAME(value: String): Self = StObject.set(x, "DOC_GEN_COLLECTION_NAME", value.asInstanceOf[js.Any])
       

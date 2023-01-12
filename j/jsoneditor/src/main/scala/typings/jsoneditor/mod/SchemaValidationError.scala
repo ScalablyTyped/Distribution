@@ -26,7 +26,8 @@ object SchemaValidationError {
     __obj.asInstanceOf[SchemaValidationError]
   }
   
-  extension [Self <: SchemaValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaValidationError] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorObject[String, Record[String, Any], Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

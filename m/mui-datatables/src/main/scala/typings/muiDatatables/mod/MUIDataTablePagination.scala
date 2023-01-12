@@ -31,7 +31,8 @@ object MUIDataTablePagination {
     __obj.asInstanceOf[MUIDataTablePagination]
   }
   
-  extension [Self <: MUIDataTablePagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTablePagination] (val x: Self) extends AnyVal {
     
     inline def setChangeRowsPerPage(value: Any => Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     

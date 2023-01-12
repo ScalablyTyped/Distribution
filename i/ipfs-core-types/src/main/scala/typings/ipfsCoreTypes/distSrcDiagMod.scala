@@ -49,7 +49,8 @@ object distSrcDiagMod {
       __obj.asInstanceOf[CmdsResult]
     }
     
-    extension [Self <: CmdsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CmdsResult] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

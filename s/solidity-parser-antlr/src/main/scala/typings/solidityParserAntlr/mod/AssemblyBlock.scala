@@ -23,7 +23,8 @@ object AssemblyBlock {
     __obj.asInstanceOf[AssemblyBlock]
   }
   
-  extension [Self <: AssemblyBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssemblyBlock] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: js.Array[AssemblyItem]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ClearAll]
     }
     
-    extension [Self <: ClearAll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearAll] (val x: Self) extends AnyVal {
       
       inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
       

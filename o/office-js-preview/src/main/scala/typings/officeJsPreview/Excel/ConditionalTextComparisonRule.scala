@@ -43,7 +43,8 @@ object ConditionalTextComparisonRule {
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }
   
-  extension [Self <: ConditionalTextComparisonRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalTextComparisonRule] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

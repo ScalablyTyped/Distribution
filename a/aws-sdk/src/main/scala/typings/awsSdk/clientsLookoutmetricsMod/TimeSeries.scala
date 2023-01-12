@@ -32,7 +32,8 @@ object TimeSeries {
     __obj.asInstanceOf[TimeSeries]
   }
   
-  extension [Self <: TimeSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeries] (val x: Self) extends AnyVal {
     
     inline def setDimensionList(value: DimensionNameValueList): Self = StObject.set(x, "DimensionList", value.asInstanceOf[js.Any])
     

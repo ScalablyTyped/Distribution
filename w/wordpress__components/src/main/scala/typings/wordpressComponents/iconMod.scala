@@ -55,7 +55,8 @@ object iconMod {
         __obj.asInstanceOf[BaseProps[P]]
       }
       
-      extension [Self <: BaseProps[?], P](x: Self & BaseProps[P]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps[?], P] (val x: Self & BaseProps[P]) extends AnyVal {
         
         inline def setIcon(value: IconType[P]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         

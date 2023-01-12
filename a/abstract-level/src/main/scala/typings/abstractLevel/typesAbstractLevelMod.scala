@@ -345,7 +345,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractBatchDelOperation[TDatabase, K]]
     }
     
-    extension [Self <: AbstractBatchDelOperation[?, ?], TDatabase, K](x: Self & (AbstractBatchDelOperation[TDatabase, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractBatchDelOperation[?, ?], TDatabase, K] (val x: Self & (AbstractBatchDelOperation[TDatabase, K])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractBatchOptions[K, V]]
     }
     
-    extension [Self <: AbstractBatchOptions[?, ?], K, V](x: Self & (AbstractBatchOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractBatchOptions[?, ?], K, V] (val x: Self & (AbstractBatchOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -455,7 +457,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractBatchPutOperation[TDatabase, K, V]]
     }
     
-    extension [Self <: AbstractBatchPutOperation[?, ?, ?], TDatabase, K, V](x: Self & (AbstractBatchPutOperation[TDatabase, K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractBatchPutOperation[?, ?, ?], TDatabase, K, V] (val x: Self & (AbstractBatchPutOperation[TDatabase, K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -493,7 +496,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractClearOptions[K]]
     }
     
-    extension [Self <: AbstractClearOptions[?], K](x: Self & AbstractClearOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractClearOptions[?], K] (val x: Self & AbstractClearOptions[K]) extends AnyVal {
       
       inline def setKeyEncoding(value: String | (PartialEncoding[K, K])): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -527,7 +531,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractDatabaseOptions[K, V]]
     }
     
-    extension [Self <: AbstractDatabaseOptions[?, ?], K, V](x: Self & (AbstractDatabaseOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractDatabaseOptions[?, ?], K, V] (val x: Self & (AbstractDatabaseOptions[K, V])) extends AnyVal {
       
       inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
@@ -561,7 +566,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractDelOptions[K]]
     }
     
-    extension [Self <: AbstractDelOptions[?], K](x: Self & AbstractDelOptions[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractDelOptions[?], K] (val x: Self & AbstractDelOptions[K]) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -588,7 +594,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractGetManyOptions[K, V]]
     }
     
-    extension [Self <: AbstractGetManyOptions[?, ?], K, V](x: Self & (AbstractGetManyOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractGetManyOptions[?, ?], K, V] (val x: Self & (AbstractGetManyOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -619,7 +626,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractGetOptions[K, V]]
     }
     
-    extension [Self <: AbstractGetOptions[?, ?], K, V](x: Self & (AbstractGetOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractGetOptions[?, ?], K, V] (val x: Self & (AbstractGetOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       
@@ -662,7 +670,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractOpenOptions]
     }
     
-    extension [Self <: AbstractOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateIfMissing(value: Boolean): Self = StObject.set(x, "createIfMissing", value.asInstanceOf[js.Any])
       
@@ -697,7 +706,8 @@ object typesAbstractLevelMod {
       __obj.asInstanceOf[AbstractPutOptions[K, V]]
     }
     
-    extension [Self <: AbstractPutOptions[?, ?], K, V](x: Self & (AbstractPutOptions[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractPutOptions[?, ?], K, V] (val x: Self & (AbstractPutOptions[K, V])) extends AnyVal {
       
       inline def setKeyEncoding(value: String | PartialEncoder[K]): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       

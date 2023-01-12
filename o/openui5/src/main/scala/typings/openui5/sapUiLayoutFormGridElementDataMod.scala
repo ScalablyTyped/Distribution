@@ -232,7 +232,8 @@ object sapUiLayoutFormGridElementDataMod {
       __obj.asInstanceOf[GridElementDataSettings]
     }
     
-    extension [Self <: GridElementDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridElementDataSettings] (val x: Self) extends AnyVal {
       
       inline def setHCells(
         value: GridElementCells | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

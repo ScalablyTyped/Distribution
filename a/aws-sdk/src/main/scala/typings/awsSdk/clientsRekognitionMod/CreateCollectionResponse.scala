@@ -28,7 +28,8 @@ object CreateCollectionResponse {
     __obj.asInstanceOf[CreateCollectionResponse]
   }
   
-  extension [Self <: CreateCollectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCollectionResponse] (val x: Self) extends AnyVal {
     
     inline def setCollectionArn(value: String): Self = StObject.set(x, "CollectionArn", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Url {
     __obj.asInstanceOf[Url[T]]
   }
   
-  extension [Self <: Url[?], T](x: Self & Url[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Url[?], T] (val x: Self & Url[T]) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

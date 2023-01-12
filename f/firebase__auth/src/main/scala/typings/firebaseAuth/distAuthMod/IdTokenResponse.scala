@@ -42,7 +42,8 @@ object IdTokenResponse {
     __obj.asInstanceOf[IdTokenResponse]
   }
   
-  extension [Self <: IdTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

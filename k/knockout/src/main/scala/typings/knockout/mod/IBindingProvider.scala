@@ -27,7 +27,8 @@ object IBindingProvider {
     __obj.asInstanceOf[IBindingProvider]
   }
   
-  extension [Self <: IBindingProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBindingProvider] (val x: Self) extends AnyVal {
     
     inline def setGetBindingAccessors(value: (Node, BindingContext[Any]) => BindingAccessors): Self = StObject.set(x, "getBindingAccessors", js.Any.fromFunction2(value))
     

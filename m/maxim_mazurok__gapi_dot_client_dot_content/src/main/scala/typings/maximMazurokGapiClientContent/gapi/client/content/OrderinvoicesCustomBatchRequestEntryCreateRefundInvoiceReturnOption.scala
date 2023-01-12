@@ -23,7 +23,8 @@ object OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption {
     __obj.asInstanceOf[OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption]
   }
   
-  extension [Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderinvoicesCustomBatchRequestEntryCreateRefundInvoiceReturnOption] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

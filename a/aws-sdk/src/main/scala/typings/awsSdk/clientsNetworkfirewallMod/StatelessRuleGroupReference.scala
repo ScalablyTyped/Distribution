@@ -23,7 +23,8 @@ object StatelessRuleGroupReference {
     __obj.asInstanceOf[StatelessRuleGroupReference]
   }
   
-  extension [Self <: StatelessRuleGroupReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessRuleGroupReference] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

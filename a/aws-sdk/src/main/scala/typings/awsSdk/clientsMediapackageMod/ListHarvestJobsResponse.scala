@@ -23,7 +23,8 @@ object ListHarvestJobsResponse {
     __obj.asInstanceOf[ListHarvestJobsResponse]
   }
   
-  extension [Self <: ListHarvestJobsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHarvestJobsResponse] (val x: Self) extends AnyVal {
     
     inline def setHarvestJobs(value: listOfHarvestJob): Self = StObject.set(x, "HarvestJobs", value.asInstanceOf[js.Any])
     

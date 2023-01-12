@@ -21,7 +21,8 @@ object TokenizeResultError {
     __obj.asInstanceOf[TokenizeResultError]
   }
   
-  extension [Self <: TokenizeResultError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizeResultError] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     

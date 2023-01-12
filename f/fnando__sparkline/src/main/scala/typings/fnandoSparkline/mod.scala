@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[SparklineOptions[TEntry]]
     }
     
-    extension [Self <: SparklineOptions[?], TEntry](x: Self & SparklineOptions[TEntry]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklineOptions[?], TEntry] (val x: Self & SparklineOptions[TEntry]) extends AnyVal {
       
       inline def setCursorwidth(value: Double): Self = StObject.set(x, "cursorwidth", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[SparklineOptionsFetch[TEntry]]
     }
     
-    extension [Self <: SparklineOptionsFetch[?], TEntry](x: Self & SparklineOptionsFetch[TEntry]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklineOptionsFetch[?], TEntry] (val x: Self & SparklineOptionsFetch[TEntry]) extends AnyVal {
       
       inline def setFetch(value: TEntry => Double): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }

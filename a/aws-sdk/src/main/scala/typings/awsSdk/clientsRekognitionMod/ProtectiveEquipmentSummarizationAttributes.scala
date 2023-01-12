@@ -23,7 +23,8 @@ object ProtectiveEquipmentSummarizationAttributes {
     __obj.asInstanceOf[ProtectiveEquipmentSummarizationAttributes]
   }
   
-  extension [Self <: ProtectiveEquipmentSummarizationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectiveEquipmentSummarizationAttributes] (val x: Self) extends AnyVal {
     
     inline def setMinConfidence(value: Percent): Self = StObject.set(x, "MinConfidence", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetAssetPropertyAggregatesResponse {
     __obj.asInstanceOf[GetAssetPropertyAggregatesResponse]
   }
   
-  extension [Self <: GetAssetPropertyAggregatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssetPropertyAggregatesResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregatedValues(value: AggregatedValues): Self = StObject.set(x, "aggregatedValues", value.asInstanceOf[js.Any])
     

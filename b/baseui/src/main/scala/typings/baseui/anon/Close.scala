@@ -21,7 +21,8 @@ object Close {
     __obj.asInstanceOf[Close[Value, FilterParams]]
   }
   
-  extension [Self <: Close[?, ?], Value, FilterParams](x: Self & (Close[Value, FilterParams])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Close[?, ?], Value, FilterParams] (val x: Self & (Close[Value, FilterParams])) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

@@ -32,7 +32,8 @@ object PositionProps {
     __obj.asInstanceOf[PositionProps[ThemeType]]
   }
   
-  extension [Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PositionProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PositionProps[ThemeType]) extends AnyVal {
     
     inline def setPosition(value: ResponsiveValue[Position, ThemeType]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

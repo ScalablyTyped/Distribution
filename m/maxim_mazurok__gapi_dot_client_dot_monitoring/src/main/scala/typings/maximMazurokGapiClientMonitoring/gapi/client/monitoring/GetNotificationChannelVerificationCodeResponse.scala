@@ -25,7 +25,8 @@ object GetNotificationChannelVerificationCodeResponse {
     __obj.asInstanceOf[GetNotificationChannelVerificationCodeResponse]
   }
   
-  extension [Self <: GetNotificationChannelVerificationCodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationChannelVerificationCodeResponse] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

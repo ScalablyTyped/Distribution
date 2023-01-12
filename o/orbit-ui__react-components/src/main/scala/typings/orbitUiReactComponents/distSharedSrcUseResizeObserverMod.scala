@@ -30,7 +30,8 @@ object distSharedSrcUseResizeObserverMod {
       __obj.asInstanceOf[UseResizeObserverOptions]
     }
     
-    extension [Self <: UseResizeObserverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseResizeObserverOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

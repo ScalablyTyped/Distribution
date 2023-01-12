@@ -37,7 +37,8 @@ object XSerialNumberAdapter {
     __obj.asInstanceOf[XSerialNumberAdapter]
   }
   
-  extension [Self <: XSerialNumberAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSerialNumberAdapter] (val x: Self) extends AnyVal {
     
     inline def setToSequence(value: String => SafeArray[Double]): Self = StObject.set(x, "toSequence", js.Any.fromFunction1(value))
     

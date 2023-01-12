@@ -52,7 +52,8 @@ object libGridColMod extends Shortcut {
       __obj.asInstanceOf[ColProps]
     }
     
-    extension [Self <: ColProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
       
       inline def setFlex(value: FlexType): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object libGridColMod extends Shortcut {
       __obj.asInstanceOf[ColSize]
     }
     
-    extension [Self <: ColSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColSize] (val x: Self) extends AnyVal {
       
       inline def setFlex(value: FlexType): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       

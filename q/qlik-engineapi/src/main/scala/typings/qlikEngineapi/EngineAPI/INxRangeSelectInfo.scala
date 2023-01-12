@@ -24,7 +24,8 @@ object INxRangeSelectInfo {
     __obj.asInstanceOf[INxRangeSelectInfo]
   }
   
-  extension [Self <: INxRangeSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxRangeSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setQMeasureIx(value: Double): Self = StObject.set(x, "qMeasureIx", value.asInstanceOf[js.Any])
   }

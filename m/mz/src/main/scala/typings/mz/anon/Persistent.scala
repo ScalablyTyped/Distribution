@@ -20,7 +20,8 @@ object Persistent {
     __obj.asInstanceOf[Persistent]
   }
   
-  extension [Self <: Persistent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

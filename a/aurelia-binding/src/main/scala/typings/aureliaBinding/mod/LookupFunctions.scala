@@ -17,7 +17,8 @@ object LookupFunctions {
     __obj.asInstanceOf[LookupFunctions]
   }
   
-  extension [Self <: LookupFunctions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupFunctions] (val x: Self) extends AnyVal {
     
     inline def setBindingBehaviors(value: String => Any): Self = StObject.set(x, "bindingBehaviors", js.Any.fromFunction1(value))
     

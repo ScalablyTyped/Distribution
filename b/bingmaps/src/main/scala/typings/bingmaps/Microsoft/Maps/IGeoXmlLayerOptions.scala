@@ -30,7 +30,8 @@ object IGeoXmlLayerOptions {
     __obj.asInstanceOf[IGeoXmlLayerOptions]
   }
   
-  extension [Self <: IGeoXmlLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateMapView(value: Boolean): Self = StObject.set(x, "autoUpdateMapView", value.asInstanceOf[js.Any])
     

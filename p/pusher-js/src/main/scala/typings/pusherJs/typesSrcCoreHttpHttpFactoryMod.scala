@@ -42,7 +42,8 @@ object typesSrcCoreHttpHttpFactoryMod {
       __obj.asInstanceOf[HTTPFactory]
     }
     
-    extension [Self <: HTTPFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPFactory] (val x: Self) extends AnyVal {
       
       inline def setCreatePollingSocket(value: String => default): Self = StObject.set(x, "createPollingSocket", js.Any.fromFunction1(value))
       

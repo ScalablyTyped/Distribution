@@ -141,7 +141,8 @@ object libEsmInteractionsReorderableMod {
       __obj.asInstanceOf[IReorderableProps]
     }
     
-    extension [Self <: IReorderableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IReorderableProps] (val x: Self) extends AnyVal {
       
       inline def setOnFocusedCell(value: FocusedCellCoordinates => Unit): Self = StObject.set(x, "onFocusedCell", js.Any.fromFunction1(value))
       

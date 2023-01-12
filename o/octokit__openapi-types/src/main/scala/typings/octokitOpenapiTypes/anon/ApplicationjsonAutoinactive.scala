@@ -17,7 +17,8 @@ object ApplicationjsonAutoinactive {
     __obj.asInstanceOf[ApplicationjsonAutoinactive]
   }
   
-  extension [Self <: ApplicationjsonAutoinactive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAutoinactive] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Autoinactive): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

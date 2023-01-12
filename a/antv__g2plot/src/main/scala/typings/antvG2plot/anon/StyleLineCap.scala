@@ -15,7 +15,8 @@ object StyleLineCap {
     __obj.asInstanceOf[StyleLineCap]
   }
   
-  extension [Self <: StyleLineCap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleLineCap] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: LineCap): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

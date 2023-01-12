@@ -18,7 +18,8 @@ object Brief {
     __obj.asInstanceOf[Brief]
   }
   
-  extension [Self <: Brief](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Brief] (val x: Self) extends AnyVal {
     
     inline def setBrief(value: ReactNode): Self = StObject.set(x, "brief", value.asInstanceOf[js.Any])
     

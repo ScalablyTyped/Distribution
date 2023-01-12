@@ -70,7 +70,8 @@ object classesCmarketsearchresultMod {
       __obj.asInstanceOf[CMarketSearchResult]
     }
     
-    extension [Self <: CMarketSearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMarketSearchResult] (val x: Self) extends AnyVal {
       
       inline def setAppid(value: appid): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
       

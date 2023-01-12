@@ -19,7 +19,8 @@ object DOMParser {
     __obj.asInstanceOf[DOMParser]
   }
   
-  extension [Self <: DOMParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMParser] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotDOMParser_typekey(value: DOMParser): Self = StObject.set(x, "MSHTML.DOMParser_typekey", value.asInstanceOf[js.Any])
     

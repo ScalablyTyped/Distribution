@@ -40,7 +40,8 @@ object libWindowProviderMod {
       __obj.asInstanceOf[WindowProviderProps]
     }
     
-    extension [Self <: WindowProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowProviderProps] (val x: Self) extends AnyVal {
       
       inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       

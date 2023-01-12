@@ -18,7 +18,8 @@ object ManagedDeviceMobileAppConfigurationAssignment {
     __obj.asInstanceOf[ManagedDeviceMobileAppConfigurationAssignment]
   }
   
-  extension [Self <: ManagedDeviceMobileAppConfigurationAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedDeviceMobileAppConfigurationAssignment] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

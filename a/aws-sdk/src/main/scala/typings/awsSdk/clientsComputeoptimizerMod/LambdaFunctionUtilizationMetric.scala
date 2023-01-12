@@ -28,7 +28,8 @@ object LambdaFunctionUtilizationMetric {
     __obj.asInstanceOf[LambdaFunctionUtilizationMetric]
   }
   
-  extension [Self <: LambdaFunctionUtilizationMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionUtilizationMetric] (val x: Self) extends AnyVal {
     
     inline def setName(value: LambdaFunctionMetricName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

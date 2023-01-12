@@ -23,7 +23,8 @@ object operation {
       __obj.asInstanceOf[GeometryGraphOperation]
     }
     
-    extension [Self <: GeometryGraphOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeometryGraphOperation] (val x: Self) extends AnyVal {
       
       inline def setGetArgGeometry(value: Double => Geometry): Self = StObject.set(x, "getArgGeometry", js.Any.fromFunction1(value))
       
@@ -87,7 +88,8 @@ object operation {
         __obj.asInstanceOf[BufferOp]
       }
       
-      extension [Self <: BufferOp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BufferOp] (val x: Self) extends AnyVal {
         
         inline def setBufferFixedPrecision(value: PrecisionModel => Unit): Self = StObject.set(x, "bufferFixedPrecision", js.Any.fromFunction1(value))
         
@@ -229,7 +231,8 @@ object operation {
         __obj.asInstanceOf[BufferParameters]
       }
       
-      extension [Self <: BufferParameters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BufferParameters] (val x: Self) extends AnyVal {
         
         inline def setBufferDistanceError(value: Double => Double): Self = StObject.set(x, "bufferDistanceError", js.Any.fromFunction1(value))
         
@@ -296,7 +299,8 @@ object operation {
         __obj.asInstanceOf[DistanceOp]
       }
       
-      extension [Self <: DistanceOp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DistanceOp] (val x: Self) extends AnyVal {
         
         inline def setDistance(value: () => Double): Self = StObject.set(x, "distance", js.Any.fromFunction0(value))
         
@@ -343,7 +347,8 @@ object operation {
         __obj.asInstanceOf[GeometryLocation]
       }
       
-      extension [Self <: GeometryLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeometryLocation] (val x: Self) extends AnyVal {
         
         inline def setGetCoordinate(value: () => Coordinate): Self = StObject.set(x, "getCoordinate", js.Any.fromFunction0(value))
         
@@ -375,7 +380,8 @@ object operation {
         __obj.asInstanceOf[RelateOp]
       }
       
-      extension [Self <: RelateOp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RelateOp] (val x: Self) extends AnyVal {
         
         inline def setGetIntersectionMatrix(value: () => IntersectionMatrix): Self = StObject.set(x, "getIntersectionMatrix", js.Any.fromFunction0(value))
       }

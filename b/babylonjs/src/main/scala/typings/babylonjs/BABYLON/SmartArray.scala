@@ -77,7 +77,8 @@ object SmartArray {
     __obj.asInstanceOf[SmartArray[T]]
   }
   
-  extension [Self <: SmartArray[?], T](x: Self & SmartArray[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartArray[?], T] (val x: Self & SmartArray[T]) extends AnyVal {
     
     inline def setConcat(value: Any => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
     

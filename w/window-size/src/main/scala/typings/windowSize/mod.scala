@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[TtySizeOptions]
     }
     
-    extension [Self <: TtySizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TtySizeOptions] (val x: Self) extends AnyVal {
       
       inline def setTty(value: GetWindowSize): Self = StObject.set(x, "tty", value.asInstanceOf[js.Any])
       

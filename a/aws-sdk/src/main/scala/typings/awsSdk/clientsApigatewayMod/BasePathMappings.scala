@@ -20,7 +20,8 @@ object BasePathMappings {
     __obj.asInstanceOf[BasePathMappings]
   }
   
-  extension [Self <: BasePathMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePathMappings] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ListOfBasePathMapping): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

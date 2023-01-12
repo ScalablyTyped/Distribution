@@ -26,7 +26,8 @@ object distAuthorityCloudInstanceDiscoveryResponseMod {
       __obj.asInstanceOf[CloudInstanceDiscoveryResponse]
     }
     
-    extension [Self <: CloudInstanceDiscoveryResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudInstanceDiscoveryResponse] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: js.Array[CloudDiscoveryMetadata]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       

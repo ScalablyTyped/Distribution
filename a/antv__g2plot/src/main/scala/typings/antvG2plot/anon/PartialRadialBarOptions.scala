@@ -125,7 +125,8 @@ object PartialRadialBarOptions {
     __obj.asInstanceOf[PartialRadialBarOptions]
   }
   
-  extension [Self <: PartialRadialBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRadialBarOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

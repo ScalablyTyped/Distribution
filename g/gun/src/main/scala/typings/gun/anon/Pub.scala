@@ -17,7 +17,8 @@ object Pub {
     __obj.asInstanceOf[Pub]
   }
   
-  extension [Self <: Pub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pub] (val x: Self) extends AnyVal {
     
     inline def setOk(value: typings.gun.gunInts.`0`): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     

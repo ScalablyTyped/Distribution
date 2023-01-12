@@ -22,7 +22,8 @@ object ReportedParallelism {
     __obj.asInstanceOf[ReportedParallelism]
   }
   
-  extension [Self <: ReportedParallelism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportedParallelism] (val x: Self) extends AnyVal {
     
     inline def setIsInfinite(value: Boolean): Self = StObject.set(x, "isInfinite", value.asInstanceOf[js.Any])
     

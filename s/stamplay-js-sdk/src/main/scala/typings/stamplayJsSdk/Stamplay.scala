@@ -45,7 +45,8 @@ object Stamplay {
       __obj.asInstanceOf[StamplayObject]
     }
     
-    extension [Self <: StamplayObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StamplayObject] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Any): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
       

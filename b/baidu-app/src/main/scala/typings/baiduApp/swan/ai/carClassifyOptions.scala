@@ -32,7 +32,8 @@ object carClassifyOptions {
     __obj.asInstanceOf[carClassifyOptions]
   }
   
-  extension [Self <: carClassifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: carClassifyOptions] (val x: Self) extends AnyVal {
     
     inline def setColor_result(value: String): Self = StObject.set(x, "color_result", value.asInstanceOf[js.Any])
     

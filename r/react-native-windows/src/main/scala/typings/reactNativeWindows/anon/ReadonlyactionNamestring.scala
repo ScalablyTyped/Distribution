@@ -16,7 +16,8 @@ object ReadonlyactionNamestring {
     __obj.asInstanceOf[ReadonlyactionNamestring]
   }
   
-  extension [Self <: ReadonlyactionNamestring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyactionNamestring] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }

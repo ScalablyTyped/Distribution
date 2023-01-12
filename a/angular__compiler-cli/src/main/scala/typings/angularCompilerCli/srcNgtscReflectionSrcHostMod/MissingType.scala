@@ -18,7 +18,8 @@ object MissingType {
     __obj.asInstanceOf[MissingType]
   }
   
-  extension [Self <: MissingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissingType] (val x: Self) extends AnyVal {
     
     inline def setKind(value: `0`): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

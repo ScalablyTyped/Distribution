@@ -46,7 +46,8 @@ object Cycleexecutions {
     __obj.asInstanceOf[Cycleexecutions]
   }
   
-  extension [Self <: Cycleexecutions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cycleexecutions] (val x: Self) extends AnyVal {
     
     inline def setCycle_executions(value: js.Array[Amountpayablepercycle]): Self = StObject.set(x, "cycle_executions", value.asInstanceOf[js.Any])
     

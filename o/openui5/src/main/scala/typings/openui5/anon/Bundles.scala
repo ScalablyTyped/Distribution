@@ -140,7 +140,8 @@ object Bundles {
     __obj.asInstanceOf[Bundles]
   }
   
-  extension [Self <: Bundles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bundles] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: Boolean): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

@@ -117,7 +117,8 @@ object PreviewView {
     __obj.asInstanceOf[PreviewView]
   }
   
-  extension [Self <: PreviewView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewView] (val x: Self) extends AnyVal {
     
     inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }

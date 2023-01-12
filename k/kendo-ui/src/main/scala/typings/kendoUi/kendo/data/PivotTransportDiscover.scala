@@ -25,7 +25,8 @@ object PivotTransportDiscover {
     __obj.asInstanceOf[PivotTransportDiscover]
   }
   
-  extension [Self <: PivotTransportDiscover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransportDiscover] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UnmappedAttribute {
     __obj.asInstanceOf[UnmappedAttribute]
   }
   
-  extension [Self <: UnmappedAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnmappedAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: Attribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

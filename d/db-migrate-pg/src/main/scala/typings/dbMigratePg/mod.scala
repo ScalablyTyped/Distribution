@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[ColumnConstraint]
     }
     
-    extension [Self <: ColumnConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConstraint] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: String): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[ColumnConstraintOptions]
     }
     
-    extension [Self <: ColumnConstraintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnConstraintOptions] (val x: Self) extends AnyVal {
       
       inline def setEmitPrimaryKey(value: Boolean): Self = StObject.set(x, "emitPrimaryKey", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object mod {
       __obj.asInstanceOf[CreateSequenceOptions]
     }
     
-    extension [Self <: CreateSequenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateSequenceOptions] (val x: Self) extends AnyVal {
       
       inline def setTemp(value: Boolean): Self = StObject.set(x, "temp", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object mod {
       __obj.asInstanceOf[DropDatabaseOptions]
     }
     
-    extension [Self <: DropDatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setIfExists(value: Boolean): Self = StObject.set(x, "ifExists", value.asInstanceOf[js.Any])
       
@@ -152,7 +156,8 @@ object mod {
       __obj.asInstanceOf[DropSequenceOptions]
     }
     
-    extension [Self <: DropSequenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropSequenceOptions] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object mod {
       __obj.asInstanceOf[SwitchDatabaseOptions]
     }
     
-    extension [Self <: SwitchDatabaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchDatabaseOptions] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

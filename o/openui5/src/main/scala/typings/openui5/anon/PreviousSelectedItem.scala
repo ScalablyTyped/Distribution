@@ -24,7 +24,8 @@ object PreviousSelectedItem {
     __obj.asInstanceOf[PreviousSelectedItem]
   }
   
-  extension [Self <: PreviousSelectedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousSelectedItem] (val x: Self) extends AnyVal {
     
     inline def setPreviousSelectedItem(value: default): Self = StObject.set(x, "previousSelectedItem", value.asInstanceOf[js.Any])
     

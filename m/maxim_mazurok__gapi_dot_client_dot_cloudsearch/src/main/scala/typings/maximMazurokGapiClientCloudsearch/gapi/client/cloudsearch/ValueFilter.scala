@@ -23,7 +23,8 @@ object ValueFilter {
     __obj.asInstanceOf[ValueFilter]
   }
   
-  extension [Self <: ValueFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueFilter] (val x: Self) extends AnyVal {
     
     inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     

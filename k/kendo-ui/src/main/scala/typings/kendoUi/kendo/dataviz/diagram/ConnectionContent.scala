@@ -29,7 +29,8 @@ object ConnectionContent {
     __obj.asInstanceOf[ConnectionContent]
   }
   
-  extension [Self <: ConnectionContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionContent] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

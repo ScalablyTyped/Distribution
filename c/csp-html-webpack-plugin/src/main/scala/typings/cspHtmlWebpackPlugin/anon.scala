@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[AdditionalOptionspolicyPo]
     }
     
-    extension [Self <: AdditionalOptionspolicyPo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalOptionspolicyPo] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

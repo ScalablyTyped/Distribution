@@ -20,7 +20,8 @@ object SeriesArearangeDataDataLabelsAnimationOptions {
     __obj.asInstanceOf[SeriesArearangeDataDataLabelsAnimationOptions]
   }
   
-  extension [Self <: SeriesArearangeDataDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesArearangeDataDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

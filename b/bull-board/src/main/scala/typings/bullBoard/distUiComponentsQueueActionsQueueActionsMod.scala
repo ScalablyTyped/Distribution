@@ -31,7 +31,8 @@ object distUiComponentsQueueActionsQueueActionsMod {
       __obj.asInstanceOf[QueueActionProps]
     }
     
-    extension [Self <: QueueActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueActionProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: QueueActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

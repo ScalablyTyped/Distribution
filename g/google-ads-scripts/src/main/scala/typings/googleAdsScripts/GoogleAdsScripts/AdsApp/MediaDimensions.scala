@@ -31,7 +31,8 @@ object MediaDimensions {
     __obj.asInstanceOf[MediaDimensions]
   }
   
-  extension [Self <: MediaDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaDimensions] (val x: Self) extends AnyVal {
     
     inline def setGetFullDimensions(value: () => Dimensions): Self = StObject.set(x, "getFullDimensions", js.Any.fromFunction0(value))
     

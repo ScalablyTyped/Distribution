@@ -18,7 +18,8 @@ object PartialNote {
     __obj.asInstanceOf[PartialNote]
   }
   
-  extension [Self <: PartialNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNote] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: PartialLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

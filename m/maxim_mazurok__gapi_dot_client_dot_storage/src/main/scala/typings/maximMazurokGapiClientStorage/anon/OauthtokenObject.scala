@@ -53,7 +53,8 @@ object OauthtokenObject {
     __obj.asInstanceOf[OauthtokenObject]
   }
   
-  extension [Self <: OauthtokenObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenObject] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

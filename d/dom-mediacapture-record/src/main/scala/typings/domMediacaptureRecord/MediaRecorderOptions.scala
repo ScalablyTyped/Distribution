@@ -23,7 +23,8 @@ object MediaRecorderOptions {
     __obj.asInstanceOf[MediaRecorderOptions]
   }
   
-  extension [Self <: MediaRecorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRecorderOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioBitrateMode(value: BitrateMode): Self = StObject.set(x, "audioBitrateMode", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object SecurityAuthenticateResponse {
     __obj.asInstanceOf[SecurityAuthenticateResponse]
   }
   
-  extension [Self <: SecurityAuthenticateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityAuthenticateResponse] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: SecurityApiKey): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DamerauLevenshteinDistanceOptions {
     __obj.asInstanceOf[DamerauLevenshteinDistanceOptions]
   }
   
-  extension [Self <: DamerauLevenshteinDistanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DamerauLevenshteinDistanceOptions] (val x: Self) extends AnyVal {
     
     inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
     

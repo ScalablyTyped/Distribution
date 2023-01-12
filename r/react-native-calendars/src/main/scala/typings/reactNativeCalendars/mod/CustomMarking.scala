@@ -17,7 +17,8 @@ object CustomMarking {
     __obj.asInstanceOf[CustomMarking]
   }
   
-  extension [Self <: CustomMarking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMarking] (val x: Self) extends AnyVal {
     
     inline def setCustomStyles(value: MarkedDateCustomStyles): Self = StObject.set(x, "customStyles", value.asInstanceOf[js.Any])
   }

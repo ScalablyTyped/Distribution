@@ -19,7 +19,8 @@ object ValueCount {
     __obj.asInstanceOf[ValueCount]
   }
   
-  extension [Self <: ValueCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

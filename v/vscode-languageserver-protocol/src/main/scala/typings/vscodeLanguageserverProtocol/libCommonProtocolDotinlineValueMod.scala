@@ -74,7 +74,8 @@ object libCommonProtocolDotinlineValueMod {
       __obj.asInstanceOf[InlineValueClientCapabilities]
     }
     
-    extension [Self <: InlineValueClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object libCommonProtocolDotinlineValueMod {
       __obj.asInstanceOf[InlineValueParams]
     }
     
-    extension [Self <: InlineValueParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueParams] (val x: Self) extends AnyVal {
       
       inline def setContext(value: InlineValueContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libCommonProtocolDotinlineValueMod {
       __obj.asInstanceOf[InlineValueWorkspaceClientCapabilities]
     }
     
-    extension [Self <: InlineValueWorkspaceClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueWorkspaceClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setRefreshSupport(value: Boolean): Self = StObject.set(x, "refreshSupport", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object SDPDtlsParameters {
     __obj.asInstanceOf[SDPDtlsParameters]
   }
   
-  extension [Self <: SDPDtlsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPDtlsParameters] (val x: Self) extends AnyVal {
     
     inline def setFingerprints(value: js.Array[SDPFingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     

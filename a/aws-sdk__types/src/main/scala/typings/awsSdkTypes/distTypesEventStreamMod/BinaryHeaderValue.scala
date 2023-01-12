@@ -21,7 +21,8 @@ object BinaryHeaderValue {
     __obj.asInstanceOf[BinaryHeaderValue]
   }
   
-  extension [Self <: BinaryHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

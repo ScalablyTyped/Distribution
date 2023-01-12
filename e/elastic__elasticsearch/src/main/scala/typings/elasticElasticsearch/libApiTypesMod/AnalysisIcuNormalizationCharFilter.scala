@@ -24,7 +24,8 @@ object AnalysisIcuNormalizationCharFilter {
     __obj.asInstanceOf[AnalysisIcuNormalizationCharFilter]
   }
   
-  extension [Self <: AnalysisIcuNormalizationCharFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuNormalizationCharFilter] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AnalysisIcuNormalizationMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object GoogleAnalytics {
     __obj.asInstanceOf[GoogleAnalytics]
   }
   
-  extension [Self <: GoogleAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalytics] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

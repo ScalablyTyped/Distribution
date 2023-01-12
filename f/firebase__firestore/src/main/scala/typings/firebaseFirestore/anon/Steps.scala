@@ -19,7 +19,8 @@ object Steps {
     __obj.asInstanceOf[Steps]
   }
   
-  extension [Self <: Steps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SpecConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

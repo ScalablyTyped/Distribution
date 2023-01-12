@@ -100,7 +100,8 @@ object SplitPaneMethods {
     __obj.asInstanceOf[SplitPaneMethods]
   }
   
-  extension [Self <: SplitPaneMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitPaneMethods] (val x: Self) extends AnyVal {
     
     inline def setAddSplitter(value: (Double, Node, Boolean) => Unit): Self = StObject.set(x, "addSplitter", js.Any.fromFunction3(value))
     

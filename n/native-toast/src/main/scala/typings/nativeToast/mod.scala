@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Toast]
     }
     
-    extension [Self <: Toast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[ToastOptions]
     }
     
-    extension [Self <: ToastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastOptions] (val x: Self) extends AnyVal {
       
       inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
       

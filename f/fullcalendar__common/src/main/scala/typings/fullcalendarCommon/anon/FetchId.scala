@@ -30,7 +30,8 @@ object FetchId {
     __obj.asInstanceOf[FetchId]
   }
   
-  extension [Self <: FetchId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchId] (val x: Self) extends AnyVal {
     
     inline def setFetchId(value: String): Self = StObject.set(x, "fetchId", value.asInstanceOf[js.Any])
     

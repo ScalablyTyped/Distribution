@@ -62,7 +62,8 @@ object distSrcMod {
       __obj.asInstanceOf[Drag]
     }
     
-    extension [Self <: Drag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drag] (val x: Self) extends AnyVal {
       
       inline def setItemKey(value: String): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object distSrcMod {
       __obj.asInstanceOf[Props[I, C, T]]
     }
     
-    extension [Self <: Props[?, ?, ?], I, C, T](x: Self & (Props[I, C, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?, ?], I, C, T] (val x: Self & (Props[I, C, T])) extends AnyVal {
       
       inline def setAutoScrollMaxSpeed(value: Double): Self = StObject.set(x, "autoScrollMaxSpeed", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object distSrcMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
@@ -285,7 +288,8 @@ object distSrcMod {
       __obj.asInstanceOf[TemplateProps[I, C]]
     }
     
-    extension [Self <: TemplateProps[?, ?], I, C](x: Self & (TemplateProps[I, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateProps[?, ?], I, C] (val x: Self & (TemplateProps[I, C])) extends AnyVal {
       
       inline def setAnySelected(value: Double): Self = StObject.set(x, "anySelected", value.asInstanceOf[js.Any])
       

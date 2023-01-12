@@ -192,7 +192,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: LogLevelDesc): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
       __obj.asInstanceOf[NotificationOptions]
     }
     
-    extension [Self <: NotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setErsUrl(value: String): Self = StObject.set(x, "ersUrl", value.asInstanceOf[js.Any])
       
@@ -258,7 +260,8 @@ object mod {
       __obj.asInstanceOf[PushNotification]
     }
     
-    extension [Self <: PushNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushNotification] (val x: Self) extends AnyVal {
       
       inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       

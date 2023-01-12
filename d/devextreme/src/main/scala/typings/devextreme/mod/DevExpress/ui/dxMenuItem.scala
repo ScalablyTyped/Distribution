@@ -22,7 +22,8 @@ object dxMenuItem {
     __obj.asInstanceOf[dxMenuItem]
   }
   
-  extension [Self <: dxMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxMenuItem] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Item]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CreateKeySigningKeyResponse {
     __obj.asInstanceOf[CreateKeySigningKeyResponse]
   }
   
-  extension [Self <: CreateKeySigningKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeySigningKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
     

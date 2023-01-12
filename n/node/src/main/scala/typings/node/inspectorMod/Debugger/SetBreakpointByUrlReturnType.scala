@@ -23,7 +23,8 @@ object SetBreakpointByUrlReturnType {
     __obj.asInstanceOf[SetBreakpointByUrlReturnType]
   }
   
-  extension [Self <: SetBreakpointByUrlReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBreakpointByUrlReturnType] (val x: Self) extends AnyVal {
     
     inline def setBreakpointId(value: BreakpointId): Self = StObject.set(x, "breakpointId", value.asInstanceOf[js.Any])
     

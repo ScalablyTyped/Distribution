@@ -29,7 +29,8 @@ object CustomStrategyReference {
     __obj.asInstanceOf[CustomStrategyReference]
   }
   
-  extension [Self <: CustomStrategyReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomStrategyReference] (val x: Self) extends AnyVal {
     
     inline def setStrategy(value: /* args */ Any => ElementReference | js.Array[ElementReference]): Self = StObject.set(x, "strategy", js.Any.fromFunction1(value))
     

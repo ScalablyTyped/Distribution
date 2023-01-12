@@ -18,7 +18,8 @@ object CreateRecordingConfigurationResponse {
     __obj.asInstanceOf[CreateRecordingConfigurationResponse]
   }
   
-  extension [Self <: CreateRecordingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRecordingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRecordingConfiguration(value: RecordingConfiguration): Self = StObject.set(x, "recordingConfiguration", value.asInstanceOf[js.Any])
     

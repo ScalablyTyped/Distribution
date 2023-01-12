@@ -21,7 +21,8 @@ object MediaPlaybackItemError {
     __obj.asInstanceOf[MediaPlaybackItemError]
   }
   
-  extension [Self <: MediaPlaybackItemError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlaybackItemError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: MediaPlaybackItemErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

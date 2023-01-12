@@ -479,7 +479,8 @@ object sapMInputBaseRendererMod extends Shortcut {
       __obj.asInstanceOf[InputBaseRenderer]
     }
     
-    extension [Self <: InputBaseRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputBaseRenderer] (val x: Self) extends AnyVal {
       
       inline def setAddControlWidth(
         value: (typings.openui5.sapUiCoreRenderManagerMod.default, typings.openui5.sapMInputBaseMod.default) => Unit

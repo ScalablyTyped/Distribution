@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[RandomPasswordCharactersSet]
     }
     
-    extension [Self <: RandomPasswordCharactersSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomPasswordCharactersSet] (val x: Self) extends AnyVal {
       
       inline def setCharacters(value: String): Self = StObject.set(x, "characters", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[RandomPasswordOptions]
     }
     
-    extension [Self <: RandomPasswordOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomPasswordOptions] (val x: Self) extends AnyVal {
       
       inline def setAvoidAmbiguous(value: Boolean): Self = StObject.set(x, "avoidAmbiguous", value.asInstanceOf[js.Any])
       

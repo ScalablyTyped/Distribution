@@ -29,7 +29,8 @@ object XInteractionAuthFallback {
     __obj.asInstanceOf[XInteractionAuthFallback]
   }
   
-  extension [Self <: XInteractionAuthFallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionAuthFallback] (val x: Self) extends AnyVal {
     
     inline def setSetCode(value: String => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
   }

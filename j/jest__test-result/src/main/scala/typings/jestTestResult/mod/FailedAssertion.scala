@@ -31,7 +31,8 @@ object FailedAssertion {
     __obj.asInstanceOf[FailedAssertion]
   }
   
-  extension [Self <: FailedAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedAssertion] (val x: Self) extends AnyVal {
     
     inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
     

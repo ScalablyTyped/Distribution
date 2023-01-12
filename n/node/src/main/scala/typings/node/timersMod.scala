@@ -112,7 +112,8 @@ object timersMod {
           __obj.asInstanceOf[Immediate]
         }
         
-        extension [Self <: Immediate](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Immediate] (val x: Self) extends AnyVal {
           
           inline def setHasRef(value: () => Boolean): Self = StObject.set(x, "hasRef", js.Any.fromFunction0(value))
           
@@ -180,7 +181,8 @@ object timersMod {
       __obj.asInstanceOf[TimerOptions]
     }
     
-    extension [Self <: TimerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimerOptions] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

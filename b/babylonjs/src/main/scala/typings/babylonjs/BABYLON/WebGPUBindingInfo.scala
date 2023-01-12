@@ -17,7 +17,8 @@ object WebGPUBindingInfo {
     __obj.asInstanceOf[WebGPUBindingInfo]
   }
   
-  extension [Self <: WebGPUBindingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUBindingInfo] (val x: Self) extends AnyVal {
     
     inline def setBindingIndex(value: Double): Self = StObject.set(x, "bindingIndex", value.asInstanceOf[js.Any])
     

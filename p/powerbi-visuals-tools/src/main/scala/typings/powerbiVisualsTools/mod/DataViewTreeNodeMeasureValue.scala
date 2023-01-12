@@ -18,7 +18,8 @@ object DataViewTreeNodeMeasureValue {
     __obj.asInstanceOf[DataViewTreeNodeMeasureValue]
   }
   
-  extension [Self <: DataViewTreeNodeMeasureValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTreeNodeMeasureValue] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: PrimitiveValue): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     

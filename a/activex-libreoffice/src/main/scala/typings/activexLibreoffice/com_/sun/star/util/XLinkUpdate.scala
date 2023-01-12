@@ -21,7 +21,8 @@ object XLinkUpdate {
     __obj.asInstanceOf[XLinkUpdate]
   }
   
-  extension [Self <: XLinkUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinkUpdate] (val x: Self) extends AnyVal {
     
     inline def setUpdateLinks(value: () => Unit): Self = StObject.set(x, "updateLinks", js.Any.fromFunction0(value))
   }

@@ -22,7 +22,8 @@ object LensReviewReport {
     __obj.asInstanceOf[LensReviewReport]
   }
   
-  extension [Self <: LensReviewReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LensReviewReport] (val x: Self) extends AnyVal {
     
     inline def setBase64String(value: Base64String): Self = StObject.set(x, "Base64String", value.asInstanceOf[js.Any])
     

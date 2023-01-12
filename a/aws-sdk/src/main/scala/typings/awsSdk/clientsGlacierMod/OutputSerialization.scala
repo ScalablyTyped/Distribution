@@ -18,7 +18,8 @@ object OutputSerialization {
     __obj.asInstanceOf[OutputSerialization]
   }
   
-  extension [Self <: OutputSerialization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputSerialization] (val x: Self) extends AnyVal {
     
     inline def setCsv(value: CSVOutput): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
     

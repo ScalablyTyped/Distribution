@@ -23,7 +23,8 @@ object PackageVersionOrigin {
     __obj.asInstanceOf[PackageVersionOrigin]
   }
   
-  extension [Self <: PackageVersionOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageVersionOrigin] (val x: Self) extends AnyVal {
     
     inline def setDomainEntryPoint(value: DomainEntryPoint): Self = StObject.set(x, "domainEntryPoint", value.asInstanceOf[js.Any])
     

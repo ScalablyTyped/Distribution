@@ -19,7 +19,8 @@ object RecipientMergeVar {
     __obj.asInstanceOf[RecipientMergeVar]
   }
   
-  extension [Self <: RecipientMergeVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientMergeVar] (val x: Self) extends AnyVal {
     
     inline def setRcpt(value: String): Self = StObject.set(x, "rcpt", value.asInstanceOf[js.Any])
     

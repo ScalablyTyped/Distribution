@@ -18,7 +18,8 @@ object NodegroupHealth {
     __obj.asInstanceOf[NodegroupHealth]
   }
   
-  extension [Self <: NodegroupHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodegroupHealth] (val x: Self) extends AnyVal {
     
     inline def setIssues(value: IssueList): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     

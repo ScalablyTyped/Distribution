@@ -15,7 +15,8 @@ object CapSQL {
     __obj.asInstanceOf[CapSQL]
   }
   
-  extension [Self <: CapSQL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapSQL] (val x: Self) extends AnyVal {
     
     inline def setCapSQL(value: Boolean): Self = StObject.set(x, "capSQL", value.asInstanceOf[js.Any])
     

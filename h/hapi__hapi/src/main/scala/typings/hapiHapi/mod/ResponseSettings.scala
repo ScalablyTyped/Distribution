@@ -38,7 +38,8 @@ object ResponseSettings {
     __obj.asInstanceOf[ResponseSettings]
   }
   
-  extension [Self <: ResponseSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseSettings] (val x: Self) extends AnyVal {
     
     inline def setPassThrough(value: Boolean): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
     

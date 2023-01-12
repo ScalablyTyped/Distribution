@@ -49,7 +49,8 @@ object balloontoolbar {
       __obj.asInstanceOf[contextDefinition]
     }
     
-    extension [Self <: contextDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: contextDefinition] (val x: Self) extends AnyVal {
       
       inline def setCssSelector(value: String): Self = StObject.set(x, "cssSelector", value.asInstanceOf[js.Any])
       

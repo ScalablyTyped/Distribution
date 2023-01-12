@@ -44,7 +44,8 @@ object FlashSoundItem {
     __obj.asInstanceOf[FlashSoundItem]
   }
   
-  extension [Self <: FlashSoundItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashSoundItem] (val x: Self) extends AnyVal {
     
     inline def setBitRate(value: String): Self = StObject.set(x, "bitRate", value.asInstanceOf[js.Any])
     

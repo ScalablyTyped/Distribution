@@ -221,7 +221,8 @@ object DialogProps {
     __obj.asInstanceOf[DialogProps]
   }
   
-  extension [Self <: DialogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     inline def setConfirmAccessibilityLabel(value: String): Self = StObject.set(x, "confirmAccessibilityLabel", value.asInstanceOf[js.Any])
     

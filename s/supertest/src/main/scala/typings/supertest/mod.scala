@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

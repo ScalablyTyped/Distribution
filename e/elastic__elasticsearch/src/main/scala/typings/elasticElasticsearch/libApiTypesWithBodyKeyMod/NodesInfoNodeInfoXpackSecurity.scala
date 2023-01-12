@@ -21,7 +21,8 @@ object NodesInfoNodeInfoXpackSecurity {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackSecurity]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackSecurity] (val x: Self) extends AnyVal {
     
     inline def setAuthc(value: NodesInfoNodeInfoXpackSecurityAuthc): Self = StObject.set(x, "authc", value.asInstanceOf[js.Any])
     

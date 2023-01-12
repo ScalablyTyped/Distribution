@@ -45,7 +45,8 @@ object TestRunnerParams {
     __obj.asInstanceOf[TestRunnerParams]
   }
   
-  extension [Self <: TestRunnerParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRunnerParams] (val x: Self) extends AnyVal {
     
     inline def setBuildAtomEnvironment(value: BuildEnvironmentOptions => AtomEnvironment): Self = StObject.set(x, "buildAtomEnvironment", js.Any.fromFunction1(value))
     

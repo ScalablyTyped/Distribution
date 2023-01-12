@@ -19,7 +19,8 @@ object distTypesInternalOperatorMod {
       __obj.asInstanceOf[Operator[T, R]]
     }
     
-    extension [Self <: Operator[?, ?], T, R](x: Self & (Operator[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operator[?, ?], T, R] (val x: Self & (Operator[T, R])) extends AnyVal {
       
       inline def setCall(value: (Subscriber[R], Any) => TeardownLogic): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }

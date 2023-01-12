@@ -238,7 +238,8 @@ object api {
         __obj.asInstanceOf[ComponentConfig]
       }
       
-      extension [Self <: ComponentConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComponentConfig] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: ComponentDefaultConfig): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -321,7 +322,8 @@ object api {
         __obj.asInstanceOf[ComponentDefaultConfig]
       }
       
-      extension [Self <: ComponentDefaultConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComponentDefaultConfig] (val x: Self) extends AnyVal {
         
         inline def setCollated(value: Boolean): Self = StObject.set(x, "collated", value.asInstanceOf[js.Any])
         
@@ -500,7 +502,8 @@ object api {
         __obj.asInstanceOf[DocConfig]
       }
       
-      extension [Self <: DocConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocConfig] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: DocDefaultConfig): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -591,7 +594,8 @@ object api {
         __obj.asInstanceOf[DocDefaultConfig]
       }
       
-      extension [Self <: DocDefaultConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocDefaultConfig] (val x: Self) extends AnyVal {
         
         inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
         
@@ -630,7 +634,8 @@ object api {
         __obj.asInstanceOf[DocMarkdownConfig]
       }
       
-      extension [Self <: DocMarkdownConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocMarkdownConfig] (val x: Self) extends AnyVal {
         
         inline def setBreaks(value: Boolean): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
         
@@ -901,7 +906,8 @@ object api {
         __obj.asInstanceOf[typings.frctlFractal.mod.fractal.api.files.File]
       }
       
-      extension [Self <: typings.frctlFractal.mod.fractal.api.files.File](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.frctlFractal.mod.fractal.api.files.File] (val x: Self) extends AnyVal {
         
         inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
         

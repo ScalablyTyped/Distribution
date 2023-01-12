@@ -70,7 +70,8 @@ object buildVnodeMod {
       __obj.asInstanceOf[VNodeData]
     }
     
-    extension [Self <: VNodeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNodeData] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object buildVnodeMod {
       __obj.asInstanceOf[VNode_]
     }
     
-    extension [Self <: VNode_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode_] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[VNode_ | String]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

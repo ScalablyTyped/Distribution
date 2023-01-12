@@ -18,7 +18,8 @@ object AdditionalResultAttributeValue {
     __obj.asInstanceOf[AdditionalResultAttributeValue]
   }
   
-  extension [Self <: AdditionalResultAttributeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalResultAttributeValue] (val x: Self) extends AnyVal {
     
     inline def setTextWithHighlightsValue(value: TextWithHighlights): Self = StObject.set(x, "TextWithHighlightsValue", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object XStringRepresentation {
     __obj.asInstanceOf[XStringRepresentation]
   }
   
-  extension [Self <: XStringRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringRepresentation] (val x: Self) extends AnyVal {
     
     inline def setConvertToControlValue(value: Any => String): Self = StObject.set(x, "convertToControlValue", js.Any.fromFunction1(value))
     

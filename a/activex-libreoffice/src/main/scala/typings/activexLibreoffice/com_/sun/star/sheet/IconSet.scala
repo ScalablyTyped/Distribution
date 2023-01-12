@@ -36,7 +36,8 @@ object IconSet {
     __obj.asInstanceOf[IconSet]
   }
   
-  extension [Self <: IconSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSet] (val x: Self) extends AnyVal {
     
     inline def setIconSetEntries(value: SafeArray[XIconSetEntry]): Self = StObject.set(x, "IconSetEntries", value.asInstanceOf[js.Any])
     

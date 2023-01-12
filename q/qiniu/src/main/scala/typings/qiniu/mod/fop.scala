@@ -72,7 +72,8 @@ object fop {
       __obj.asInstanceOf[PfopOptions]
     }
     
-    extension [Self <: PfopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PfopOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       

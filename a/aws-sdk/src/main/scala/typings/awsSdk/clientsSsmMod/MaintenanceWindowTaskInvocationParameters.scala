@@ -33,7 +33,8 @@ object MaintenanceWindowTaskInvocationParameters {
     __obj.asInstanceOf[MaintenanceWindowTaskInvocationParameters]
   }
   
-  extension [Self <: MaintenanceWindowTaskInvocationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowTaskInvocationParameters] (val x: Self) extends AnyVal {
     
     inline def setAutomation(value: MaintenanceWindowAutomationParameters): Self = StObject.set(x, "Automation", value.asInstanceOf[js.Any])
     

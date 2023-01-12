@@ -21,7 +21,8 @@ object TreeListSaveEvent {
     __obj.asInstanceOf[TreeListSaveEvent]
   }
   
-  extension [Self <: TreeListSaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListSaveEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

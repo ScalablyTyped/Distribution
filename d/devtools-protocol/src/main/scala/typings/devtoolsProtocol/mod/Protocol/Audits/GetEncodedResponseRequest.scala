@@ -37,7 +37,8 @@ object GetEncodedResponseRequest {
     __obj.asInstanceOf[GetEncodedResponseRequest]
   }
   
-  extension [Self <: GetEncodedResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEncodedResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: webp | jpeg | png): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

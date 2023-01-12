@@ -18,7 +18,8 @@ object ReadonlyRequiredIEditorPa {
     __obj.asInstanceOf[ReadonlyRequiredIEditorPa]
   }
   
-  extension [Self <: ReadonlyRequiredIEditorPa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIEditorPa] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

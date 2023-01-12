@@ -20,7 +20,8 @@ object dxLinearGaugeScaleLabel {
     __obj.asInstanceOf[dxLinearGaugeScaleLabel]
   }
   
-  extension [Self <: dxLinearGaugeScaleLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLinearGaugeScaleLabel] (val x: Self) extends AnyVal {
     
     inline def setIndentFromTick(value: Double): Self = StObject.set(x, "indentFromTick", value.asInstanceOf[js.Any])
     

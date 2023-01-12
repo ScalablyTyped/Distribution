@@ -33,7 +33,8 @@ object ArchiveRuleSummary {
     __obj.asInstanceOf[ArchiveRuleSummary]
   }
   
-  extension [Self <: ArchiveRuleSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveRuleSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

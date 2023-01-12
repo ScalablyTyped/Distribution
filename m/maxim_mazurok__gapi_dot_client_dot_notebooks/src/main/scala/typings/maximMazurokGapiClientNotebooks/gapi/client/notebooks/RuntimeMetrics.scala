@@ -18,7 +18,8 @@ object RuntimeMetrics {
     __obj.asInstanceOf[RuntimeMetrics]
   }
   
-  extension [Self <: RuntimeMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeMetrics] (val x: Self) extends AnyVal {
     
     inline def setSystemMetrics(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

@@ -16,7 +16,8 @@ object GetWifiListOptions {
     __obj.asInstanceOf[GetWifiListOptions]
   }
   
-  extension [Self <: GetWifiListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWifiListOptions] (val x: Self) extends AnyVal {
     
     inline def setWifiList(value: js.Array[WiFi]): Self = StObject.set(x, "wifiList", value.asInstanceOf[js.Any])
     

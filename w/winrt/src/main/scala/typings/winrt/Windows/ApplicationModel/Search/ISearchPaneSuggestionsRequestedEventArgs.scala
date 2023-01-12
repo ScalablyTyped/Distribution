@@ -22,7 +22,8 @@ object ISearchPaneSuggestionsRequestedEventArgs {
     __obj.asInstanceOf[ISearchPaneSuggestionsRequestedEventArgs]
   }
   
-  extension [Self <: ISearchPaneSuggestionsRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneSuggestionsRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: SearchPaneSuggestionsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

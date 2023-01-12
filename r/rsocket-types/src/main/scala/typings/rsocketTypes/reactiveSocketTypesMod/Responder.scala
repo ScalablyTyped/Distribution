@@ -51,7 +51,8 @@ object Responder {
     __obj.asInstanceOf[Responder[D, M]]
   }
   
-  extension [Self <: Responder[?, ?], D, M](x: Self & (Responder[D, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responder[?, ?], D, M] (val x: Self & (Responder[D, M])) extends AnyVal {
     
     inline def setFireAndForget(value: Payload[D, M] => Unit): Self = StObject.set(x, "fireAndForget", js.Any.fromFunction1(value))
     

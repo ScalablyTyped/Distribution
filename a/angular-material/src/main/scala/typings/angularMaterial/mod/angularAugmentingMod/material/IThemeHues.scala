@@ -21,7 +21,8 @@ object IThemeHues {
     __obj.asInstanceOf[IThemeHues]
   }
   
-  extension [Self <: IThemeHues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThemeHues] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

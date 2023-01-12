@@ -155,7 +155,8 @@ object SymbolKeepAspect {
     __obj.asInstanceOf[SymbolKeepAspect]
   }
   
-  extension [Self <: SymbolKeepAspect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolKeepAspect] (val x: Self) extends AnyVal {
     
     inline def setItemStyle(value: BorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     

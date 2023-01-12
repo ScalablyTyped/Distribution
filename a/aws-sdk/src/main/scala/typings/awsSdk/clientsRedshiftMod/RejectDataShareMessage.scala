@@ -18,7 +18,8 @@ object RejectDataShareMessage {
     __obj.asInstanceOf[RejectDataShareMessage]
   }
   
-  extension [Self <: RejectDataShareMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectDataShareMessage] (val x: Self) extends AnyVal {
     
     inline def setDataShareArn(value: String): Self = StObject.set(x, "DataShareArn", value.asInstanceOf[js.Any])
   }

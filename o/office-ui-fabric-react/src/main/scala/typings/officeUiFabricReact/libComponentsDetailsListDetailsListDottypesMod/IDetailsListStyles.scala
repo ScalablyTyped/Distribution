@@ -22,7 +22,8 @@ object IDetailsListStyles {
     __obj.asInstanceOf[IDetailsListStyles]
   }
   
-  extension [Self <: IDetailsListStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetailsListStyles] (val x: Self) extends AnyVal {
     
     inline def setContentWrapper(value: IStyle): Self = StObject.set(x, "contentWrapper", value.asInstanceOf[js.Any])
     

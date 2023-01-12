@@ -38,7 +38,8 @@ object DescribeCarrierGatewaysRequest {
     __obj.asInstanceOf[DescribeCarrierGatewaysRequest]
   }
   
-  extension [Self <: DescribeCarrierGatewaysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCarrierGatewaysRequest] (val x: Self) extends AnyVal {
     
     inline def setCarrierGatewayIds(value: CarrierGatewayIdSet): Self = StObject.set(x, "CarrierGatewayIds", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetRealtimeLogConfigResult {
     __obj.asInstanceOf[GetRealtimeLogConfigResult]
   }
   
-  extension [Self <: GetRealtimeLogConfigResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRealtimeLogConfigResult] (val x: Self) extends AnyVal {
     
     inline def setRealtimeLogConfig(value: RealtimeLogConfig): Self = StObject.set(x, "RealtimeLogConfig", value.asInstanceOf[js.Any])
     

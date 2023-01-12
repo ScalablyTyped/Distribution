@@ -43,7 +43,8 @@ object UpdateFileSystemWindowsConfiguration {
     __obj.asInstanceOf[UpdateFileSystemWindowsConfiguration]
   }
   
-  extension [Self <: UpdateFileSystemWindowsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFileSystemWindowsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuditLogConfiguration(value: WindowsAuditLogCreateConfiguration): Self = StObject.set(x, "AuditLogConfiguration", value.asInstanceOf[js.Any])
     

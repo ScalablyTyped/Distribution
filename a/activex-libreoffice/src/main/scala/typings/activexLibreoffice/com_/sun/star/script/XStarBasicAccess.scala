@@ -59,7 +59,8 @@ object XStarBasicAccess {
     __obj.asInstanceOf[XStarBasicAccess]
   }
   
-  extension [Self <: XStarBasicAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStarBasicAccess] (val x: Self) extends AnyVal {
     
     inline def setAddDialog(value: (String, String, SeqEquiv[Double]) => Unit): Self = StObject.set(x, "addDialog", js.Any.fromFunction3(value))
     

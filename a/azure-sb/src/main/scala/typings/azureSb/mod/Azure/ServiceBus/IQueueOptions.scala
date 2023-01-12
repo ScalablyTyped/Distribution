@@ -33,7 +33,8 @@ object IQueueOptions {
     __obj.asInstanceOf[IQueueOptions]
   }
   
-  extension [Self <: IQueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueueOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoDeleteOnIdle(value: String): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
     

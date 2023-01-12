@@ -19,7 +19,8 @@ object MotionSensorOptions {
     __obj.asInstanceOf[MotionSensorOptions]
   }
   
-  extension [Self <: MotionSensorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionSensorOptions] (val x: Self) extends AnyVal {
     
     inline def setReferenceFrame(value: device | screen): Self = StObject.set(x, "referenceFrame", value.asInstanceOf[js.Any])
     

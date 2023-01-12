@@ -23,7 +23,8 @@ object AssociateConfigurationItemsToApplicationRequest {
     __obj.asInstanceOf[AssociateConfigurationItemsToApplicationRequest]
   }
   
-  extension [Self <: AssociateConfigurationItemsToApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateConfigurationItemsToApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationConfigurationId(value: ApplicationId): Self = StObject.set(x, "applicationConfigurationId", value.asInstanceOf[js.Any])
     

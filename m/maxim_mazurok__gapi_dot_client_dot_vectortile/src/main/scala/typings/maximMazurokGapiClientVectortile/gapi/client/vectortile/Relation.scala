@@ -19,7 +19,8 @@ object Relation {
     __obj.asInstanceOf[Relation]
   }
   
-  extension [Self <: Relation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relation] (val x: Self) extends AnyVal {
     
     inline def setRelatedFeatureIndex(value: Double): Self = StObject.set(x, "relatedFeatureIndex", value.asInstanceOf[js.Any])
     

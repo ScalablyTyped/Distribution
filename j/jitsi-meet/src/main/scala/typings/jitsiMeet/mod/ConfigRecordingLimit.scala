@@ -19,7 +19,8 @@ object ConfigRecordingLimit {
     __obj.asInstanceOf[ConfigRecordingLimit]
   }
   
-  extension [Self <: ConfigRecordingLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigRecordingLimit] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     

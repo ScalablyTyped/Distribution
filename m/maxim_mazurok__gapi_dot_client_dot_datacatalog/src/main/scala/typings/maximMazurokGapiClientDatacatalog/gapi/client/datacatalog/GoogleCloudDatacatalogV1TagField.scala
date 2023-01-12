@@ -43,7 +43,8 @@ object GoogleCloudDatacatalogV1TagField {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1TagField]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1TagField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1TagField] (val x: Self) extends AnyVal {
     
     inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     

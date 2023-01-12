@@ -22,7 +22,8 @@ object Len {
     __obj.asInstanceOf[Len]
   }
   
-  extension [Self <: Len](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Len] (val x: Self) extends AnyVal {
     
     inline def setLen(value: ValidateMessage): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     

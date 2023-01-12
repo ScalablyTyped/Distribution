@@ -32,7 +32,8 @@ object V3Any {
     __obj.asInstanceOf[V3Any[T]]
   }
   
-  extension [Self <: V3Any[?], T](x: Self & V3Any[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V3Any[?], T] (val x: Self & V3Any[T]) extends AnyVal {
     
     inline def setV3(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlgoliaSearch.MultiResponse<T> */ Any

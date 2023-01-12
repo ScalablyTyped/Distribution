@@ -64,7 +64,8 @@ object panelConfig {
     __obj.asInstanceOf[panelConfig]
   }
   
-  extension [Self <: panelConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: panelConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

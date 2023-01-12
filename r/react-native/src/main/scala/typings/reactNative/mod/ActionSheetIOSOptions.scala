@@ -35,7 +35,8 @@ object ActionSheetIOSOptions {
     __obj.asInstanceOf[ActionSheetIOSOptions]
   }
   
-  extension [Self <: ActionSheetIOSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetIOSOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

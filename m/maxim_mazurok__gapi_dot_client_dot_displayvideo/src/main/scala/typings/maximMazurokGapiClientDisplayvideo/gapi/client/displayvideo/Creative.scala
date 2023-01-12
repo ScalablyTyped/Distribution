@@ -251,7 +251,8 @@ object Creative {
     __obj.asInstanceOf[Creative]
   }
   
-  extension [Self <: Creative](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Creative] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDimensions(value: js.Array[Dimensions]): Self = StObject.set(x, "additionalDimensions", value.asInstanceOf[js.Any])
     

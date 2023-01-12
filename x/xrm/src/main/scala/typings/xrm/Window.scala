@@ -19,7 +19,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setGetGlobalContext(value: () => GlobalContext): Self = StObject.set(x, "GetGlobalContext", js.Any.fromFunction0(value))
     

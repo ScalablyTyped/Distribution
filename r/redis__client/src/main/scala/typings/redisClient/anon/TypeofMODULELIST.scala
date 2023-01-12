@@ -17,7 +17,8 @@ object TypeofMODULELIST {
     __obj.asInstanceOf[TypeofMODULELIST]
   }
   
-  extension [Self <: TypeofMODULELIST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMODULELIST] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

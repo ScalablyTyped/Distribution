@@ -409,7 +409,8 @@ object Typeofspine {
     __obj.asInstanceOf[Typeofspine]
   }
   
-  extension [Self <: Typeofspine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofspine] (val x: Self) extends AnyVal {
     
     inline def setAnimation(
       value: Instantiable3[

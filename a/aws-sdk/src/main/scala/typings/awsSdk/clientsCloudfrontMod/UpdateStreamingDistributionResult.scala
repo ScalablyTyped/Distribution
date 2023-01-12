@@ -23,7 +23,8 @@ object UpdateStreamingDistributionResult {
     __obj.asInstanceOf[UpdateStreamingDistributionResult]
   }
   
-  extension [Self <: UpdateStreamingDistributionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStreamingDistributionResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

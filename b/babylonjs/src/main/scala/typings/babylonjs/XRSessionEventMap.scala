@@ -50,7 +50,8 @@ object XRSessionEventMap {
     __obj.asInstanceOf[XRSessionEventMap]
   }
   
-  extension [Self <: XRSessionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSessionEventMap] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: XRSessionEvent): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

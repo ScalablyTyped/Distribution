@@ -40,7 +40,8 @@ object ScorecardChartSpec {
     __obj.asInstanceOf[ScorecardChartSpec]
   }
   
-  extension [Self <: ScorecardChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScorecardChartSpec] (val x: Self) extends AnyVal {
     
     inline def setAggregateType(value: String): Self = StObject.set(x, "aggregateType", value.asInstanceOf[js.Any])
     

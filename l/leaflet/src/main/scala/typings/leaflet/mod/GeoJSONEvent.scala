@@ -35,7 +35,8 @@ object GeoJSONEvent {
     __obj.asInstanceOf[GeoJSONEvent]
   }
   
-  extension [Self <: GeoJSONEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONEvent] (val x: Self) extends AnyVal {
     
     inline def setGeometryType(value: String): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     

@@ -417,7 +417,8 @@ object ContentImage {
     __obj.asInstanceOf[ContentImage]
   }
   
-  extension [Self <: ContentImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentImage] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

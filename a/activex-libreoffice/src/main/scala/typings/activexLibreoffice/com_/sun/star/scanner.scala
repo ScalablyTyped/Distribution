@@ -65,7 +65,8 @@ object scanner {
       __obj.asInstanceOf[ScannerContext]
     }
     
-    extension [Self <: ScannerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScannerContext] (val x: Self) extends AnyVal {
       
       inline def setInternalData(value: Double): Self = StObject.set(x, "InternalData", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object scanner {
       __obj.asInstanceOf[ScannerException]
     }
     
-    extension [Self <: ScannerException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScannerException] (val x: Self) extends AnyVal {
       
       inline def setError(value: ScanError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     }
@@ -139,7 +141,8 @@ object scanner {
       __obj.asInstanceOf[XScannerManager]
     }
     
-    extension [Self <: XScannerManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScannerManager] (val x: Self) extends AnyVal {
       
       inline def setAvailableScanners(value: SafeArray[ScannerContext]): Self = StObject.set(x, "AvailableScanners", value.asInstanceOf[js.Any])
       
@@ -187,7 +190,8 @@ object scanner {
       __obj.asInstanceOf[XScannerManager2]
     }
     
-    extension [Self <: XScannerManager2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XScannerManager2] (val x: Self) extends AnyVal {
       
       inline def setConfigureScannerAndScan(value: (js.Array[ScannerContext], XEventListener) => Boolean): Self = StObject.set(x, "configureScannerAndScan", js.Any.fromFunction2(value))
     }

@@ -42,7 +42,8 @@ object InsertNewView {
     __obj.asInstanceOf[InsertNewView]
   }
   
-  extension [Self <: InsertNewView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertNewView] (val x: Self) extends AnyVal {
     
     inline def setInsertNewView(value: () => Unit): Self = StObject.set(x, "insertNewView", js.Any.fromFunction0(value))
     

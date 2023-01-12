@@ -47,7 +47,8 @@ object RealtimeData {
     __obj.asInstanceOf[RealtimeData]
   }
   
-  extension [Self <: RealtimeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeData] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     

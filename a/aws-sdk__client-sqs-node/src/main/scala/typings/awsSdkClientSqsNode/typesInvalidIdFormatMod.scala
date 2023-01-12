@@ -21,7 +21,8 @@ object typesInvalidIdFormatMod {
       __obj.asInstanceOf[InvalidIdFormat]
     }
     
-    extension [Self <: InvalidIdFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidIdFormat] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.InvalidIdFormat): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

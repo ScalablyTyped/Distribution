@@ -21,7 +21,8 @@ object defaultOptions {
     __obj.asInstanceOf[defaultOptions]
   }
   
-  extension [Self <: defaultOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: defaultOptions] (val x: Self) extends AnyVal {
     
     inline def setAddEffect(value: (String, js.Function0[Any]) => Any): Self = StObject.set(x, "addEffect", js.Any.fromFunction2(value))
     

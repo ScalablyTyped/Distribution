@@ -24,7 +24,8 @@ object RoleOptions {
     __obj.asInstanceOf[RoleOptions]
   }
   
-  extension [Self <: RoleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserveUrl(value: Boolean): Self = StObject.set(x, "preserveUrl", value.asInstanceOf[js.Any])
     

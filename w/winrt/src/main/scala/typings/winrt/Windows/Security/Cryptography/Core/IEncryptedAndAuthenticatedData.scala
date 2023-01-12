@@ -18,7 +18,8 @@ object IEncryptedAndAuthenticatedData {
     __obj.asInstanceOf[IEncryptedAndAuthenticatedData]
   }
   
-  extension [Self <: IEncryptedAndAuthenticatedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEncryptedAndAuthenticatedData] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationTag(value: IBuffer): Self = StObject.set(x, "authenticationTag", value.asInstanceOf[js.Any])
     

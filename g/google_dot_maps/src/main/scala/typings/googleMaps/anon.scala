@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[DefaultLayoutMode]
     }
     
-    extension [Self <: DefaultLayoutMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLayoutMode] (val x: Self) extends AnyVal {
       
       inline def setDefaultLayoutMode(value: PlaceChooserLayoutMode): Self = StObject.set(x, "defaultLayoutMode", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[DefaultPosition]
     }
     
-    extension [Self <: DefaultPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPosition] (val x: Self) extends AnyVal {
       
       inline def setDefaultLayoutMode(value: PlaceDetailsLayoutMode): Self = StObject.set(x, "defaultLayoutMode", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[IsHighlighted]
     }
     
-    extension [Self <: IsHighlighted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsHighlighted] (val x: Self) extends AnyVal {
       
       inline def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
       

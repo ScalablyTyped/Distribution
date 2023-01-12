@@ -79,7 +79,8 @@ object IInspectorOptions {
     __obj.asInstanceOf[IInspectorOptions]
   }
   
-  extension [Self <: IInspectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInspectorOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalNodes(value: js.Array[IExplorerAdditionalNode]): Self = StObject.set(x, "additionalNodes", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object TransposeOptions {
     __obj.asInstanceOf[TransposeOptions]
   }
   
-  extension [Self <: TransposeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransposeOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternateKey(value: Boolean): Self = StObject.set(x, "alternateKey", value.asInstanceOf[js.Any])
     

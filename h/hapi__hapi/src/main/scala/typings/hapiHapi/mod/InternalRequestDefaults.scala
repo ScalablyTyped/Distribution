@@ -56,7 +56,8 @@ object InternalRequestDefaults {
     __obj.asInstanceOf[InternalRequestDefaults]
   }
   
-  extension [Self <: InternalRequestDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalRequestDefaults] (val x: Self) extends AnyVal {
     
     inline def setAuthApi(value: ServerAuthSchemeObjectApi): Self = StObject.set(x, "AuthApi", value.asInstanceOf[js.Any])
     

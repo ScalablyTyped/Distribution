@@ -46,7 +46,8 @@ object WorkerFarmOptions {
     __obj.asInstanceOf[WorkerFarmOptions]
   }
   
-  extension [Self <: WorkerFarmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerFarmOptions] (val x: Self) extends AnyVal {
     
     inline def setComputeWorkerKey(value: (/* method */ String, /* repeated */ Any) => String | Null): Self = StObject.set(x, "computeWorkerKey", js.Any.fromFunction2(value))
     

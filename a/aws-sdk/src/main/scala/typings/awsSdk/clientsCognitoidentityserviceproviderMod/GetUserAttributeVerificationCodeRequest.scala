@@ -28,7 +28,8 @@ object GetUserAttributeVerificationCodeRequest {
     __obj.asInstanceOf[GetUserAttributeVerificationCodeRequest]
   }
   
-  extension [Self <: GetUserAttributeVerificationCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserAttributeVerificationCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: TokenModelType): Self = StObject.set(x, "AccessToken", value.asInstanceOf[js.Any])
     

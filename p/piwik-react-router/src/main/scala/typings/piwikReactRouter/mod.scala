@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[PiwikReactRouter]
     }
     
-    extension [Self <: PiwikReactRouter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikReactRouter] (val x: Self) extends AnyVal {
       
       inline def setConnectToHistory(
         value: (PiwikReactRouterHistory, js.Function1[/* history */ PiwikReactRouterHistory, Unit]) => PiwikReactRouterHistory
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[PiwikReactRouterHistory]
     }
     
-    extension [Self <: PiwikReactRouterHistory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikReactRouterHistory] (val x: Self) extends AnyVal {
       
       inline def setListen(value: /* location */ String => Unit): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
@@ -118,7 +120,8 @@ object mod {
       __obj.asInstanceOf[PiwikReactRouterOptions]
     }
     
-    extension [Self <: PiwikReactRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikReactRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setClientTrackerName(value: String): Self = StObject.set(x, "clientTrackerName", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object mod {
       __obj.asInstanceOf[PiwikReactRouterTrack]
     }
     
-    extension [Self <: PiwikReactRouterTrack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikReactRouterTrack] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object mod {
       __obj.asInstanceOf[PiwikReactRouterTrackErrorEvent]
     }
     
-    extension [Self <: PiwikReactRouterTrackErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiwikReactRouterTrackErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

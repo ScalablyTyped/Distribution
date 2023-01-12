@@ -35,7 +35,8 @@ object AppsDynamiteUserId {
     __obj.asInstanceOf[AppsDynamiteUserId]
   }
   
-  extension [Self <: AppsDynamiteUserId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteUserId] (val x: Self) extends AnyVal {
     
     inline def setActingUserId(value: String): Self = StObject.set(x, "actingUserId", value.asInstanceOf[js.Any])
     

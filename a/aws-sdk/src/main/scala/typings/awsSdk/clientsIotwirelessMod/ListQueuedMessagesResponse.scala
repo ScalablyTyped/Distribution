@@ -23,7 +23,8 @@ object ListQueuedMessagesResponse {
     __obj.asInstanceOf[ListQueuedMessagesResponse]
   }
   
-  extension [Self <: ListQueuedMessagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueuedMessagesResponse] (val x: Self) extends AnyVal {
     
     inline def setDownlinkQueueMessagesList(value: DownlinkQueueMessagesList): Self = StObject.set(x, "DownlinkQueueMessagesList", value.asInstanceOf[js.Any])
     

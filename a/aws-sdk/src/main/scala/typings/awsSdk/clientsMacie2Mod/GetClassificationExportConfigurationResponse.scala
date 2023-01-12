@@ -18,7 +18,8 @@ object GetClassificationExportConfigurationResponse {
     __obj.asInstanceOf[GetClassificationExportConfigurationResponse]
   }
   
-  extension [Self <: GetClassificationExportConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClassificationExportConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ClassificationExportConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

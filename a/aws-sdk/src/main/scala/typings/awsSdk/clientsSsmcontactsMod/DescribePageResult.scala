@@ -80,7 +80,8 @@ object DescribePageResult {
     __obj.asInstanceOf[DescribePageResult]
   }
   
-  extension [Self <: DescribePageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePageResult] (val x: Self) extends AnyVal {
     
     inline def setContactArn(value: SsmContactsArn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate {
     __obj.asInstanceOf[EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate]
   }
   
-  extension [Self <: EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditInventorySourceReadWriteAccessorsRequestAdvertisersUpdate] (val x: Self) extends AnyVal {
     
     inline def setAddedAdvertisers(value: js.Array[String]): Self = StObject.set(x, "addedAdvertisers", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object DealTerms {
     __obj.asInstanceOf[DealTerms]
   }
   
-  extension [Self <: DealTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DealTerms] (val x: Self) extends AnyVal {
     
     inline def setBrandingType(value: String): Self = StObject.set(x, "brandingType", value.asInstanceOf[js.Any])
     

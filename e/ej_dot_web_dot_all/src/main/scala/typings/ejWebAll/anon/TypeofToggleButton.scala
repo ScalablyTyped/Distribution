@@ -20,7 +20,8 @@ object TypeofToggleButton {
     __obj.asInstanceOf[TypeofToggleButton]
   }
   
-  extension [Self <: TypeofToggleButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofToggleButton] (val x: Self) extends AnyVal {
     
     inline def setFn(value: ToggleButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

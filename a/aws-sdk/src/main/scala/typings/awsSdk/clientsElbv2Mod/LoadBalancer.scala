@@ -78,7 +78,8 @@ object LoadBalancer {
     __obj.asInstanceOf[LoadBalancer]
   }
   
-  extension [Self <: LoadBalancer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancer] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZones): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

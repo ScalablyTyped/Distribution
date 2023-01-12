@@ -24,7 +24,8 @@ object Partialpositionvec3vec2fo {
     __obj.asInstanceOf[Partialpositionvec3vec2fo]
   }
   
-  extension [Self <: Partialpositionvec3vec2fo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialpositionvec3vec2fo] (val x: Self) extends AnyVal {
     
     inline def setFocalPoint(value: vec3 | vec2): Self = StObject.set(x, "focalPoint", value.asInstanceOf[js.Any])
     

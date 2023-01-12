@@ -17,7 +17,8 @@ object ViewLayerviewCreateEvent {
     __obj.asInstanceOf[ViewLayerviewCreateEvent]
   }
   
-  extension [Self <: ViewLayerviewCreateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewLayerviewCreateEvent] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

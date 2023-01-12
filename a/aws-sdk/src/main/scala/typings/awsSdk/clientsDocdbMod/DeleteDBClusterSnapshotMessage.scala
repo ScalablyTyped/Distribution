@@ -18,7 +18,8 @@ object DeleteDBClusterSnapshotMessage {
     __obj.asInstanceOf[DeleteDBClusterSnapshotMessage]
   }
   
-  extension [Self <: DeleteDBClusterSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDBClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setDBClusterSnapshotIdentifier(value: String): Self = StObject.set(x, "DBClusterSnapshotIdentifier", value.asInstanceOf[js.Any])
   }

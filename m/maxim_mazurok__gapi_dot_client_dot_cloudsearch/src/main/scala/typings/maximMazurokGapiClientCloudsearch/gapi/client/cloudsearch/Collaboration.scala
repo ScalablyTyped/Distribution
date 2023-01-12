@@ -22,7 +22,8 @@ object Collaboration {
     __obj.asInstanceOf[Collaboration]
   }
   
-  extension [Self <: Collaboration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collaboration] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: String): Self = StObject.set(x, "attachmentId", value.asInstanceOf[js.Any])
     

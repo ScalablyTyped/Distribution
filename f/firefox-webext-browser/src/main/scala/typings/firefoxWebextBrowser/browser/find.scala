@@ -38,7 +38,8 @@ object find {
       __obj.asInstanceOf[FindParams]
     }
     
-    extension [Self <: FindParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindParams] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object find {
       __obj.asInstanceOf[HighlightResultsParams]
     }
     
-    extension [Self <: HighlightResultsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightResultsParams] (val x: Self) extends AnyVal {
       
       inline def setNoScroll(value: Boolean): Self = StObject.set(x, "noScroll", value.asInstanceOf[js.Any])
       

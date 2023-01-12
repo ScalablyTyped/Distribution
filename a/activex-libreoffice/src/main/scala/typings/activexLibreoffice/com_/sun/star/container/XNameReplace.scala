@@ -36,7 +36,8 @@ object XNameReplace {
     __obj.asInstanceOf[XNameReplace]
   }
   
-  extension [Self <: XNameReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNameReplace] (val x: Self) extends AnyVal {
     
     inline def setReplaceByName(value: (String, Any) => Unit): Self = StObject.set(x, "replaceByName", js.Any.fromFunction2(value))
   }

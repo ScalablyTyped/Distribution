@@ -15,7 +15,8 @@ object OutputLenNumber {
     __obj.asInstanceOf[OutputLenNumber]
   }
   
-  extension [Self <: OutputLenNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputLenNumber] (val x: Self) extends AnyVal {
     
     inline def setOutputLen(value: Double): Self = StObject.set(x, "outputLen", value.asInstanceOf[js.Any])
   }

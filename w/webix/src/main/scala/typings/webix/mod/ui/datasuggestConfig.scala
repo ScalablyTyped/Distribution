@@ -104,7 +104,8 @@ object datasuggestConfig {
     __obj.asInstanceOf[datasuggestConfig]
   }
   
-  extension [Self <: datasuggestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: datasuggestConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object GeometryBufferRendererSceneComponent {
     __obj.asInstanceOf[GeometryBufferRendererSceneComponent]
   }
   
-  extension [Self <: GeometryBufferRendererSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryBufferRendererSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_gatherRenderTargets(value: Any): Self = StObject.set(x, "_gatherRenderTargets", value.asInstanceOf[js.Any])
   }

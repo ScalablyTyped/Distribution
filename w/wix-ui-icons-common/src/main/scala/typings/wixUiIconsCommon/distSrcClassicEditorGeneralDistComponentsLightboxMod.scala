@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsLightboxMod extends Shortcut {
       __obj.asInstanceOf[LightboxProps]
     }
     
-    extension [Self <: LightboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightboxProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

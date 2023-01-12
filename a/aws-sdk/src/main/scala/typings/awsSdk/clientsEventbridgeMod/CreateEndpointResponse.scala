@@ -48,7 +48,8 @@ object CreateEndpointResponse {
     __obj.asInstanceOf[CreateEndpointResponse]
   }
   
-  extension [Self <: CreateEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: EndpointArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

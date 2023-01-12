@@ -18,7 +18,8 @@ object SuperAgentError {
     __obj.asInstanceOf[SuperAgentError]
   }
   
-  extension [Self <: SuperAgentError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuperAgentError] (val x: Self) extends AnyVal {
     
     inline def setResponse(value: typings.superagent.mod.Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

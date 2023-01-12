@@ -24,7 +24,8 @@ object HighlightMatch {
     __obj.asInstanceOf[HighlightMatch]
   }
   
-  extension [Self <: HighlightMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightMatch] (val x: Self) extends AnyVal {
     
     inline def setFullyHighlighted(value: Boolean): Self = StObject.set(x, "fullyHighlighted", value.asInstanceOf[js.Any])
     

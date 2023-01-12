@@ -28,7 +28,8 @@ object RemoveAttributesActivity {
     __obj.asInstanceOf[RemoveAttributesActivity]
   }
   
-  extension [Self <: RemoveAttributesActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAttributesActivity] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeNames): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

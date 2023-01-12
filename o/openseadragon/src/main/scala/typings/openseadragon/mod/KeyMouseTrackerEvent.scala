@@ -38,7 +38,8 @@ object KeyMouseTrackerEvent {
     __obj.asInstanceOf[KeyMouseTrackerEvent]
   }
   
-  extension [Self <: KeyMouseTrackerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyMouseTrackerEvent] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: Boolean): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

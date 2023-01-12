@@ -20,7 +20,8 @@ object OAuthIdentity {
     __obj.asInstanceOf[OAuthIdentity]
   }
   
-  extension [Self <: OAuthIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthIdentity] (val x: Self) extends AnyVal {
     
     inline def setBitbucket_cloud(value: OAuthIdentityDetails): Self = StObject.set(x, "bitbucket_cloud", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object XUndoAction {
     __obj.asInstanceOf[XUndoAction]
   }
   
-  extension [Self <: XUndoAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUndoAction] (val x: Self) extends AnyVal {
     
     inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
     

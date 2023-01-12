@@ -494,7 +494,8 @@ object typingsUndoRedoMod {
       __obj.asInstanceOf[UndoEntry]
     }
     
-    extension [Self <: UndoEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoEntry] (val x: Self) extends AnyVal {
       
       inline def setDoRedo(value: UndoRedo => Unit): Self = StObject.set(x, "doRedo", js.Any.fromFunction1(value))
       

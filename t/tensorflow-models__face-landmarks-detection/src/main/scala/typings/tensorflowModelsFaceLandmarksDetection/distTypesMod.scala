@@ -38,7 +38,8 @@ object distTypesMod {
       __obj.asInstanceOf[EstimationConfig]
     }
     
-    extension [Self <: EstimationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EstimationConfig] (val x: Self) extends AnyVal {
       
       inline def setFlipHorizontal(value: Boolean): Self = StObject.set(x, "flipHorizontal", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distTypesMod {
       __obj.asInstanceOf[Face]
     }
     
-    extension [Self <: Face](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
       
       inline def setBox(value: BoundingBox): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object distTypesMod {
       __obj.asInstanceOf[ModelConfig]
     }
     
-    extension [Self <: ModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxFaces(value: Double): Self = StObject.set(x, "maxFaces", value.asInstanceOf[js.Any])
       

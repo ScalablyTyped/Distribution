@@ -17,7 +17,8 @@ object ReceiverDisplayStatus {
     __obj.asInstanceOf[ReceiverDisplayStatus]
   }
   
-  extension [Self <: ReceiverDisplayStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiverDisplayStatus] (val x: Self) extends AnyVal {
     
     inline def setAppImages(value: js.Array[Image]): Self = StObject.set(x, "appImages", value.asInstanceOf[js.Any])
     

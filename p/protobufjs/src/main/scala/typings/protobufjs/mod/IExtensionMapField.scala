@@ -20,7 +20,8 @@ object IExtensionMapField {
     __obj.asInstanceOf[IExtensionMapField]
   }
   
-  extension [Self <: IExtensionMapField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExtensionMapField] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
   }

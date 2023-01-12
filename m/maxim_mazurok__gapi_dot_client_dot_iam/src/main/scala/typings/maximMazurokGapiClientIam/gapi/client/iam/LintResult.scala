@@ -35,7 +35,8 @@ object LintResult {
     __obj.asInstanceOf[LintResult]
   }
   
-  extension [Self <: LintResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
     
     inline def setDebugMessage(value: String): Self = StObject.set(x, "debugMessage", value.asInstanceOf[js.Any])
     

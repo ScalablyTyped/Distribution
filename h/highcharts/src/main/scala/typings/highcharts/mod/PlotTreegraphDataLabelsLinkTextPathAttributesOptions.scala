@@ -15,7 +15,8 @@ object PlotTreegraphDataLabelsLinkTextPathAttributesOptions {
     __obj.asInstanceOf[PlotTreegraphDataLabelsLinkTextPathAttributesOptions]
   }
   
-  extension [Self <: PlotTreegraphDataLabelsLinkTextPathAttributesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphDataLabelsLinkTextPathAttributesOptions] (val x: Self) extends AnyVal {
     
     inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
     

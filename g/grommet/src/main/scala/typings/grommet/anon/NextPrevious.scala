@@ -19,7 +19,8 @@ object NextPrevious {
     __obj.asInstanceOf[NextPrevious]
   }
   
-  extension [Self <: NextPrevious](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextPrevious] (val x: Self) extends AnyVal {
     
     inline def setNext(value: Any): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

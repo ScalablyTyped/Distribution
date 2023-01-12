@@ -101,7 +101,8 @@ object buildSrcResourceStreamMod {
       __obj.asInstanceOf[ResourceEvents[T]]
     }
     
-    extension [Self <: ResourceEvents[?], T](x: Self & ResourceEvents[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceEvents[?], T] (val x: Self & ResourceEvents[T]) extends AnyVal {
       
       inline def setAddListener(value: (data, js.Function1[/* data */ T, Unit]) => ResourceEvents[T]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

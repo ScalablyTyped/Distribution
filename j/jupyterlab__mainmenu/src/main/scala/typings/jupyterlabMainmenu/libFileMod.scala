@@ -100,7 +100,8 @@ object libFileMod {
         __obj.asInstanceOf[ICloseAndCleaner[T]]
       }
       
-      extension [Self <: ICloseAndCleaner[?], T /* <: Widget */](x: Self & ICloseAndCleaner[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICloseAndCleaner[?], T /* <: Widget */] (val x: Self & ICloseAndCleaner[T]) extends AnyVal {
         
         inline def setCloseAndCleanup(value: T => js.Promise[Unit]): Self = StObject.set(x, "closeAndCleanup", js.Any.fromFunction1(value))
         
@@ -137,7 +138,8 @@ object libFileMod {
         __obj.asInstanceOf[IConsoleCreator[T]]
       }
       
-      extension [Self <: IConsoleCreator[?], T /* <: Widget */](x: Self & IConsoleCreator[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IConsoleCreator[?], T /* <: Widget */] (val x: Self & IConsoleCreator[T]) extends AnyVal {
         
         inline def setCreateConsole(value: T => js.Promise[Unit]): Self = StObject.set(x, "createConsole", js.Any.fromFunction1(value))
         

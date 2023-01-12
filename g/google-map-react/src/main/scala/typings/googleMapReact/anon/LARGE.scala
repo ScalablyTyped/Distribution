@@ -21,7 +21,8 @@ object LARGE {
     __obj.asInstanceOf[LARGE]
   }
   
-  extension [Self <: LARGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LARGE] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT(value: Double): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object SlicerData {
     __obj.asInstanceOf[SlicerData]
   }
   
-  extension [Self <: SlicerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerData] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

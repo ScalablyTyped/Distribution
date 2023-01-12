@@ -96,7 +96,8 @@ object FieldValueQueryBuilder {
     __obj.asInstanceOf[FieldValueQueryBuilder[T]]
   }
   
-  extension [Self <: FieldValueQueryBuilder[?], T](x: Self & FieldValueQueryBuilder[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValueQueryBuilder[?], T] (val x: Self & FieldValueQueryBuilder[T]) extends AnyVal {
     
     inline def setAscii(value: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "ascii", js.Any.fromFunction1(value))
     

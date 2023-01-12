@@ -40,7 +40,8 @@ object SortSpec {
     __obj.asInstanceOf[SortSpec]
   }
   
-  extension [Self <: SortSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortSpec] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

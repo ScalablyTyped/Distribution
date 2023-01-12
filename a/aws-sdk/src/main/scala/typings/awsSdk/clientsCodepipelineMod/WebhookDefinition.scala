@@ -50,7 +50,8 @@ object WebhookDefinition {
     __obj.asInstanceOf[WebhookDefinition]
   }
   
-  extension [Self <: WebhookDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookDefinition] (val x: Self) extends AnyVal {
     
     inline def setAuthentication(value: WebhookAuthenticationType): Self = StObject.set(x, "authentication", value.asInstanceOf[js.Any])
     

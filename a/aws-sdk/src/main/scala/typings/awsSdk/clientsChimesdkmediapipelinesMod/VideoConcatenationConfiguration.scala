@@ -18,7 +18,8 @@ object VideoConcatenationConfiguration {
     __obj.asInstanceOf[VideoConcatenationConfiguration]
   }
   
-  extension [Self <: VideoConcatenationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoConcatenationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setState(value: ArtifactsConcatenationState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
   }

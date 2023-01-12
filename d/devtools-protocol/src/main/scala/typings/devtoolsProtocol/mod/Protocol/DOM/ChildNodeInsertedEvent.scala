@@ -28,7 +28,8 @@ object ChildNodeInsertedEvent {
     __obj.asInstanceOf[ChildNodeInsertedEvent]
   }
   
-  extension [Self <: ChildNodeInsertedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildNodeInsertedEvent] (val x: Self) extends AnyVal {
     
     inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object messagesClientMod {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object messagesClientMod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object messagesClientMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object messagesClientMod {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object CreateSvmActiveDirectoryConfiguration {
     __obj.asInstanceOf[CreateSvmActiveDirectoryConfiguration]
   }
   
-  extension [Self <: CreateSvmActiveDirectoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSvmActiveDirectoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNetBiosName(value: NetBiosAlias): Self = StObject.set(x, "NetBiosName", value.asInstanceOf[js.Any])
     

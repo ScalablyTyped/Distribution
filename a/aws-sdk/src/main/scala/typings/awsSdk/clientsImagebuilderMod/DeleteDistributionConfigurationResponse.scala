@@ -23,7 +23,8 @@ object DeleteDistributionConfigurationResponse {
     __obj.asInstanceOf[DeleteDistributionConfigurationResponse]
   }
   
-  extension [Self <: DeleteDistributionConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDistributionConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setDistributionConfigurationArn(value: DistributionConfigurationArn): Self = StObject.set(x, "distributionConfigurationArn", value.asInstanceOf[js.Any])
     

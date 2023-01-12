@@ -23,7 +23,8 @@ object GetObjectMetadataInput {
     __obj.asInstanceOf[GetObjectMetadataInput]
   }
   
-  extension [Self <: GetObjectMetadataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectMetadataInput] (val x: Self) extends AnyVal {
     
     inline def setObjectToken(value: String): Self = StObject.set(x, "ObjectToken", value.asInstanceOf[js.Any])
     

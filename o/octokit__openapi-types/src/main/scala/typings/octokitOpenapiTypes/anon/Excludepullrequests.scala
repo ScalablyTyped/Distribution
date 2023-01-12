@@ -18,7 +18,8 @@ object Excludepullrequests {
     __obj.asInstanceOf[Excludepullrequests]
   }
   
-  extension [Self <: Excludepullrequests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Excludepullrequests] (val x: Self) extends AnyVal {
     
     inline def setExclude_pull_requests(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['exclude-pull-requests'] */ js.Any

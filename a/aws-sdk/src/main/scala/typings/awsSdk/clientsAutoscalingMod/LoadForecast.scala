@@ -32,7 +32,8 @@ object LoadForecast {
     __obj.asInstanceOf[LoadForecast]
   }
   
-  extension [Self <: LoadForecast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadForecast] (val x: Self) extends AnyVal {
     
     inline def setMetricSpecification(value: PredictiveScalingMetricSpecification): Self = StObject.set(x, "MetricSpecification", value.asInstanceOf[js.Any])
     

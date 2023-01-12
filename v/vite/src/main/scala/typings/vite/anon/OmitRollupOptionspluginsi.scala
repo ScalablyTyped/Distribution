@@ -67,7 +67,8 @@ object OmitRollupOptionspluginsi {
     __obj.asInstanceOf[OmitRollupOptionspluginsi]
   }
   
-  extension [Self <: OmitRollupOptionspluginsi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRollupOptionspluginsi] (val x: Self) extends AnyVal {
     
     inline def setAcorn(value: Record[String, Any]): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     

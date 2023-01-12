@@ -17,7 +17,8 @@ object ExtendedConfigCacheEntry {
     __obj.asInstanceOf[ExtendedConfigCacheEntry]
   }
   
-  extension [Self <: ExtendedConfigCacheEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedConfigCacheEntry] (val x: Self) extends AnyVal {
     
     inline def setExtendedConfig(value: ParsedTsconfig): Self = StObject.set(x, "extendedConfig", value.asInstanceOf[js.Any])
     

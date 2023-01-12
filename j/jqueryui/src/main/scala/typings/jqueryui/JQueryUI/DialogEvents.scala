@@ -36,7 +36,8 @@ object DialogEvents {
     __obj.asInstanceOf[DialogEvents]
   }
   
-  extension [Self <: DialogEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogEvents] (val x: Self) extends AnyVal {
     
     inline def setBeforeClose(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2(value))
     

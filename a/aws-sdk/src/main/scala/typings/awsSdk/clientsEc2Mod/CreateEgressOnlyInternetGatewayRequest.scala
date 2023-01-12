@@ -33,7 +33,8 @@ object CreateEgressOnlyInternetGatewayRequest {
     __obj.asInstanceOf[CreateEgressOnlyInternetGatewayRequest]
   }
   
-  extension [Self <: CreateEgressOnlyInternetGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEgressOnlyInternetGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

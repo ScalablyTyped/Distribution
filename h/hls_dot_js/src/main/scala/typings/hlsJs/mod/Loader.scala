@@ -40,7 +40,8 @@ object Loader {
     __obj.asInstanceOf[Loader[T]]
   }
   
-  extension [Self <: Loader[?], T /* <: LoaderContext */](x: Self & Loader[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loader[?], T /* <: LoaderContext */] (val x: Self & Loader[T]) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

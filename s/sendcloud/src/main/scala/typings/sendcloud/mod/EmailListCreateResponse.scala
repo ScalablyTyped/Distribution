@@ -19,7 +19,8 @@ object EmailListCreateResponse {
     __obj.asInstanceOf[EmailListCreateResponse]
   }
   
-  extension [Self <: EmailListCreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailListCreateResponse] (val x: Self) extends AnyVal {
     
     inline def setList(value: Createdat): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

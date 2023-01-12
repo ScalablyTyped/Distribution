@@ -67,7 +67,8 @@ object DateTimePickerOptions {
     __obj.asInstanceOf[DateTimePickerOptions]
   }
   
-  extension [Self <: DateTimePickerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimePickerOptions] (val x: Self) extends AnyVal {
     
     inline def setARIATemplate(value: String): Self = StObject.set(x, "ARIATemplate", value.asInstanceOf[js.Any])
     

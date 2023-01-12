@@ -57,7 +57,8 @@ object CurrentLoadData {
     __obj.asInstanceOf[CurrentLoadData]
   }
   
-  extension [Self <: CurrentLoadData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentLoadData] (val x: Self) extends AnyVal {
     
     inline def setAvgLoad(value: Double): Self = StObject.set(x, "avgLoad", value.asInstanceOf[js.Any])
     

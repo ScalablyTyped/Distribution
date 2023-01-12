@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setWithFileTypes(value: `true`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[EncodingBufferEncoding]
     }
     
-    extension [Self <: EncodingBufferEncoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingBufferEncoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[EncodingFlag]
     }
     
-    extension [Self <: EncodingFlag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingFlag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -110,7 +114,8 @@ object anon {
       __obj.asInstanceOf[EncodingWithFileTypes]
     }
     
-    extension [Self <: EncodingWithFileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingWithFileTypes] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -137,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Flag]
     }
     
-    extension [Self <: Flag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -173,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -202,7 +209,8 @@ object anon {
       __obj.asInstanceOf[Recursive]
     }
     
-    extension [Self <: Recursive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recursive] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
@@ -226,7 +234,8 @@ object anon {
       __obj.asInstanceOf[StatSyncOptionsthrowIfNoE]
     }
     
-    extension [Self <: StatSyncOptionsthrowIfNoE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatSyncOptionsthrowIfNoE] (val x: Self) extends AnyVal {
       
       inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
       
@@ -250,7 +259,8 @@ object anon {
       __obj.asInstanceOf[StatSyncOptionsthrowIfNoEThrowIfNoEntry]
     }
     
-    extension [Self <: StatSyncOptionsthrowIfNoEThrowIfNoEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatSyncOptionsthrowIfNoEThrowIfNoEntry] (val x: Self) extends AnyVal {
       
       inline def setThrowIfNoEntry(value: Boolean): Self = StObject.set(x, "throwIfNoEntry", value.asInstanceOf[js.Any])
       
@@ -271,7 +281,8 @@ object anon {
       __obj.asInstanceOf[WithFileTypes]
     }
     
-    extension [Self <: WithFileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithFileTypes] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

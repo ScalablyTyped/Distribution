@@ -21,7 +21,8 @@ object EmailConversationReader {
     __obj.asInstanceOf[EmailConversationReader]
   }
   
-  extension [Self <: EmailConversationReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailConversationReader] (val x: Self) extends AnyVal {
     
     inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[EmailConversationBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }

@@ -49,7 +49,8 @@ object ASPxClientFABActionItemBase {
     __obj.asInstanceOf[ASPxClientFABActionItemBase]
   }
   
-  extension [Self <: ASPxClientFABActionItemBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFABActionItemBase] (val x: Self) extends AnyVal {
     
     inline def setGetActionName(value: () => String): Self = StObject.set(x, "GetActionName", js.Any.fromFunction0(value))
     

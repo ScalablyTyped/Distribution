@@ -36,7 +36,8 @@ object StartAdvertisingObject {
     __obj.asInstanceOf[StartAdvertisingObject]
   }
   
-  extension [Self <: StartAdvertisingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAdvertisingObject] (val x: Self) extends AnyVal {
     
     inline def setAdvertiseRequest(value: AdvertiseReqObj): Self = StObject.set(x, "advertiseRequest", value.asInstanceOf[js.Any])
     

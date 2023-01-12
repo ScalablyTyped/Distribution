@@ -21,7 +21,8 @@ object `404` {
     __obj.asInstanceOf[`404`[TState]]
   }
   
-  extension [Self <: `404`[?], TState](x: Self & `404`[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `404`[?], TState] (val x: Self & `404`[TState]) extends AnyVal {
     
     inline def setEnter(value: (/* node */ NodeType[TSUnionType], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
     

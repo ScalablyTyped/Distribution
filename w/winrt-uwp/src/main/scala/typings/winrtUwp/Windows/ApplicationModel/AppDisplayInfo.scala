@@ -29,7 +29,8 @@ object AppDisplayInfo {
     __obj.asInstanceOf[AppDisplayInfo]
   }
   
-  extension [Self <: AppDisplayInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppDisplayInfo] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

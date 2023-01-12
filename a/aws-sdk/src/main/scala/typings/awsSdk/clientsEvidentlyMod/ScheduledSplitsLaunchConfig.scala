@@ -18,7 +18,8 @@ object ScheduledSplitsLaunchConfig {
     __obj.asInstanceOf[ScheduledSplitsLaunchConfig]
   }
   
-  extension [Self <: ScheduledSplitsLaunchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledSplitsLaunchConfig] (val x: Self) extends AnyVal {
     
     inline def setSteps(value: ScheduledSplitConfigList): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     

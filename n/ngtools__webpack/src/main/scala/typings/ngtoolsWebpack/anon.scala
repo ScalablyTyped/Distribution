@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[CompilerHost]
     }
     
-    extension [Self <: CompilerHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerHost] (val x: Self) extends AnyVal {
       
       inline def setCompilerHost(value: typings.typescript.mod.CompilerHost): Self = StObject.set(x, "compilerHost", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[DirectTemplateLoading]
     }
     
-    extension [Self <: DirectTemplateLoading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectTemplateLoading] (val x: Self) extends AnyVal {
       
       inline def setDirectTemplateLoading(value: Boolean): Self = StObject.set(x, "directTemplateLoading", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[EmitClassMetadata]
     }
     
-    extension [Self <: EmitClassMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitClassMetadata] (val x: Self) extends AnyVal {
       
       inline def setEmitClassMetadata(value: Boolean): Self = StObject.set(x, "emitClassMetadata", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[InlineStyleFileExtension]
     }
     
-    extension [Self <: InlineStyleFileExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineStyleFileExtension] (val x: Self) extends AnyVal {
       
       inline def setInlineStyleFileExtension(value: String): Self = StObject.set(x, "inlineStyleFileExtension", value.asInstanceOf[js.Any])
       
@@ -173,7 +178,8 @@ object anon {
       __obj.asInstanceOf[IsDirectory]
     }
     
-    extension [Self <: IsDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDirectory] (val x: Self) extends AnyVal {
       
       inline def setIsDirectory(value: () => Boolean): Self = StObject.set(x, "isDirectory", js.Any.fromFunction0(value))
       
@@ -196,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Issuer]
     }
     
-    extension [Self <: Issuer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issuer] (val x: Self) extends AnyVal {
       
       inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
@@ -232,7 +239,8 @@ object anon {
       __obj.asInstanceOf[PartialAngularWebpackPlug]
     }
     
-    extension [Self <: PartialAngularWebpackPlug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAngularWebpackPlug] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
@@ -285,7 +293,8 @@ object anon {
       __obj.asInstanceOf[TypeofGLOBALDEFSFORTER]
     }
     
-    extension [Self <: TypeofGLOBALDEFSFORTER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofGLOBALDEFSFORTER] (val x: Self) extends AnyVal {
       
       inline def setNgDevMode(value: Boolean): Self = StObject.set(x, "ngDevMode", value.asInstanceOf[js.Any])
       
@@ -308,7 +317,8 @@ object anon {
       __obj.asInstanceOf[TypeofGLOBALDEFSFORTERNgDevMode]
     }
     
-    extension [Self <: TypeofGLOBALDEFSFORTERNgDevMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofGLOBALDEFSFORTERNgDevMode] (val x: Self) extends AnyVal {
       
       inline def setNgDevMode(value: Boolean): Self = StObject.set(x, "ngDevMode", value.asInstanceOf[js.Any])
       
@@ -335,7 +345,8 @@ object anon {
       __obj.asInstanceOf[TypeofLogicalProjectPath]
     }
     
-    extension [Self <: TypeofLogicalProjectPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofLogicalProjectPath] (val x: Self) extends AnyVal {
       
       inline def setRelativePathBetween(value: (LogicalProjectPath, LogicalProjectPath) => PathSegment): Self = StObject.set(x, "relativePathBetween", js.Any.fromFunction2(value))
     }

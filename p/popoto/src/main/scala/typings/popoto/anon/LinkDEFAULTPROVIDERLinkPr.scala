@@ -75,7 +75,8 @@ object LinkDEFAULTPROVIDERLinkPr {
     __obj.asInstanceOf[LinkDEFAULTPROVIDERLinkPr]
   }
   
-  extension [Self <: LinkDEFAULTPROVIDERLinkPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkDEFAULTPROVIDERLinkPr] (val x: Self) extends AnyVal {
     
     inline def setDEFAULT_PROVIDER(value: Link): Self = StObject.set(x, "DEFAULT_PROVIDER", value.asInstanceOf[js.Any])
     

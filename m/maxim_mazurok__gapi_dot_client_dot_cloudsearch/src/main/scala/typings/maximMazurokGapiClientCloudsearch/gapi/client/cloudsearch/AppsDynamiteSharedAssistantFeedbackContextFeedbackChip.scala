@@ -19,7 +19,8 @@ object AppsDynamiteSharedAssistantFeedbackContextFeedbackChip {
     __obj.asInstanceOf[AppsDynamiteSharedAssistantFeedbackContextFeedbackChip]
   }
   
-  extension [Self <: AppsDynamiteSharedAssistantFeedbackContextFeedbackChip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAssistantFeedbackContextFeedbackChip] (val x: Self) extends AnyVal {
     
     inline def setFeedbackChipType(value: String): Self = StObject.set(x, "feedbackChipType", value.asInstanceOf[js.Any])
     

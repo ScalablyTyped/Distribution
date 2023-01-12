@@ -23,7 +23,8 @@ object ActionSheetOptions {
     __obj.asInstanceOf[ActionSheetOptions]
   }
   
-  extension [Self <: ActionSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setClose(value: /* e */ ActionSheetEvent => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object ApplicationMetadataEventData {
     __obj.asInstanceOf[ApplicationMetadataEventData]
   }
   
-  extension [Self <: ApplicationMetadataEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationMetadataEventData] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ApplicationMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

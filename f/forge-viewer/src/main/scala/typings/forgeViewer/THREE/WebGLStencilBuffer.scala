@@ -35,7 +35,8 @@ object WebGLStencilBuffer {
     __obj.asInstanceOf[WebGLStencilBuffer]
   }
   
-  extension [Self <: WebGLStencilBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLStencilBuffer] (val x: Self) extends AnyVal {
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

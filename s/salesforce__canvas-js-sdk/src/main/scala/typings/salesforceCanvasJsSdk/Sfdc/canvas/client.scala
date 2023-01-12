@@ -31,7 +31,8 @@ object client {
       __obj.asInstanceOf[AjaxSettings]
     }
     
-    extension [Self <: AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object client {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object client {
       __obj.asInstanceOf[EventSubscription]
     }
     
-    extension [Self <: EventSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSubscription] (val x: Self) extends AnyVal {
       
       inline def setOnData(value: Any => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
     }
@@ -115,7 +118,8 @@ object client {
       __obj.asInstanceOf[EventSubscriptionRef]
     }
     
-    extension [Self <: EventSubscriptionRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSubscriptionRef] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -134,7 +138,8 @@ object client {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeights(value: SizeHeights): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object client {
       __obj.asInstanceOf[SizeHeights]
     }
     
-    extension [Self <: SizeHeights](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeHeights] (val x: Self) extends AnyVal {
       
       inline def setContentHeight(value: Double): Self = StObject.set(x, "contentHeight", value.asInstanceOf[js.Any])
       
@@ -182,7 +188,8 @@ object client {
       __obj.asInstanceOf[SizeWidths]
     }
     
-    extension [Self <: SizeWidths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeWidths] (val x: Self) extends AnyVal {
       
       inline def setContentWidth(value: Double): Self = StObject.set(x, "contentWidth", value.asInstanceOf[js.Any])
       
@@ -208,7 +215,8 @@ object client {
       __obj.asInstanceOf[StreamSubscription]
     }
     
-    extension [Self <: StreamSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSubscription] (val x: Self) extends AnyVal {
       
       inline def setOnComplete(value: Any => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
@@ -227,7 +235,8 @@ object client {
       __obj.asInstanceOf[StreamSubscriptionParams]
     }
     
-    extension [Self <: StreamSubscriptionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSubscriptionParams] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     }
@@ -248,7 +257,8 @@ object client {
       __obj.asInstanceOf[StreamSubscriptionRef]
     }
     
-    extension [Self <: StreamSubscriptionRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamSubscriptionRef] (val x: Self) extends AnyVal {
       
       inline def setName(value: sfdcDotstreamingapi): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -294,7 +304,8 @@ object client {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
       

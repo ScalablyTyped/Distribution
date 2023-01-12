@@ -321,7 +321,8 @@ object sapMInstanceManagerMod extends Shortcut {
       __obj.asInstanceOf[InstanceManager]
     }
     
-    extension [Self <: InstanceManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceManager] (val x: Self) extends AnyVal {
       
       inline def setAddDialogInstance(value: typings.openui5.sapUiCoreControlMod.default => InstanceManager): Self = StObject.set(x, "addDialogInstance", js.Any.fromFunction1(value))
       

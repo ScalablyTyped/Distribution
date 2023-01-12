@@ -28,7 +28,8 @@ object VpcEndpoint {
     __obj.asInstanceOf[VpcEndpoint]
   }
   
-  extension [Self <: VpcEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcEndpoint] (val x: Self) extends AnyVal {
     
     inline def setNetworkInterfaces(value: NetworkInterfaceList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
     

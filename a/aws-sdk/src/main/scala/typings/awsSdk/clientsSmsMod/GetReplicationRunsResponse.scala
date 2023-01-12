@@ -28,7 +28,8 @@ object GetReplicationRunsResponse {
     __obj.asInstanceOf[GetReplicationRunsResponse]
   }
   
-  extension [Self <: GetReplicationRunsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReplicationRunsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

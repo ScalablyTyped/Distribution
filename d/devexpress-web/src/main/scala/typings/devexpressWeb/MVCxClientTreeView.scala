@@ -56,7 +56,8 @@ object MVCxClientTreeView {
     __obj.asInstanceOf[MVCxClientTreeView]
   }
   
-  extension [Self <: MVCxClientTreeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientTreeView] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientTreeView]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
   }

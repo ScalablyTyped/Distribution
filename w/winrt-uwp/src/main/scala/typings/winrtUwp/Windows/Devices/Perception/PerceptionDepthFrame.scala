@@ -21,7 +21,8 @@ object PerceptionDepthFrame {
     __obj.asInstanceOf[PerceptionDepthFrame]
   }
   
-  extension [Self <: PerceptionDepthFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionDepthFrame] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

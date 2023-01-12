@@ -39,7 +39,8 @@ object MessageHeaderDestination {
     __obj.asInstanceOf[MessageHeaderDestination]
   }
   
-  extension [Self <: MessageHeaderDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageHeaderDestination] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

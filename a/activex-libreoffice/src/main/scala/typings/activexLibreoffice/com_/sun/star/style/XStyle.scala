@@ -45,7 +45,8 @@ object XStyle {
     __obj.asInstanceOf[XStyle]
   }
   
-  extension [Self <: XStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyle] (val x: Self) extends AnyVal {
     
     inline def setGetParentStyle(value: () => String): Self = StObject.set(x, "getParentStyle", js.Any.fromFunction0(value))
     

@@ -45,7 +45,8 @@ object esDrawerPanelMod {
       __obj.asInstanceOf[DrawerPanelProps]
     }
     
-    extension [Self <: DrawerPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerPanelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object esDrawerPanelMod {
       __obj.asInstanceOf[DrawerPanelRef]
     }
     
-    extension [Self <: DrawerPanelRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerPanelRef] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }

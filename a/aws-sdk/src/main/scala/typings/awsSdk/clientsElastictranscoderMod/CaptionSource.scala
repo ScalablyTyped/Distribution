@@ -38,7 +38,8 @@ object CaptionSource {
     __obj.asInstanceOf[CaptionSource]
   }
   
-  extension [Self <: CaptionSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionSource] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

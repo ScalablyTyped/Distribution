@@ -18,7 +18,8 @@ object CancelTaskExecutionRequest {
     __obj.asInstanceOf[CancelTaskExecutionRequest]
   }
   
-  extension [Self <: CancelTaskExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTaskExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskExecutionArn(value: TaskExecutionArn): Self = StObject.set(x, "TaskExecutionArn", value.asInstanceOf[js.Any])
   }

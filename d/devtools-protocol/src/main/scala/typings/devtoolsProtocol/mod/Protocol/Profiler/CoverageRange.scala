@@ -29,7 +29,8 @@ object CoverageRange {
     __obj.asInstanceOf[CoverageRange]
   }
   
-  extension [Self <: CoverageRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageRange] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

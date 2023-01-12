@@ -38,7 +38,8 @@ object ListEntitiesForPolicyResponse {
     __obj.asInstanceOf[ListEntitiesForPolicyResponse]
   }
   
-  extension [Self <: ListEntitiesForPolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntitiesForPolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

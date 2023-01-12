@@ -28,7 +28,8 @@ object UnprocessedPreparedStatementName {
     __obj.asInstanceOf[UnprocessedPreparedStatementName]
   }
   
-  extension [Self <: UnprocessedPreparedStatementName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedPreparedStatementName] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

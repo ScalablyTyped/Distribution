@@ -56,7 +56,8 @@ object TravisEnv {
     __obj.asInstanceOf[TravisEnv]
   }
   
-  extension [Self <: TravisEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TravisEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object KeyVaultKey {
     __obj.asInstanceOf[KeyVaultKey]
   }
   
-  extension [Self <: KeyVaultKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyVaultKey] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

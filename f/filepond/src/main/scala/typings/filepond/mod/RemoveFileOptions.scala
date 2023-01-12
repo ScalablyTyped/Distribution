@@ -17,7 +17,8 @@ object RemoveFileOptions {
     __obj.asInstanceOf[RemoveFileOptions]
   }
   
-  extension [Self <: RemoveFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveFileOptions] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     

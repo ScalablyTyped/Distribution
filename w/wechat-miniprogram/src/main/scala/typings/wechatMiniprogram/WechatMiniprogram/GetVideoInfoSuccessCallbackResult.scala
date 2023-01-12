@@ -68,7 +68,8 @@ object GetVideoInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetVideoInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetVideoInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVideoInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

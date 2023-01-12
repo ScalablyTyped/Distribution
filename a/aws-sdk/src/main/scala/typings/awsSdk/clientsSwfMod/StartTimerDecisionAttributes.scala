@@ -28,7 +28,8 @@ object StartTimerDecisionAttributes {
     __obj.asInstanceOf[StartTimerDecisionAttributes]
   }
   
-  extension [Self <: StartTimerDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTimerDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[LoadOptions]
     }
     
-    extension [Self <: LoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[ReadyOptions]
     }
     
-    extension [Self <: ReadyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadyOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

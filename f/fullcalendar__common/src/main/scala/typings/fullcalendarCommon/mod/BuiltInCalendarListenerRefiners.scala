@@ -110,7 +110,8 @@ object BuiltInCalendarListenerRefiners {
     __obj.asInstanceOf[BuiltInCalendarListenerRefiners]
   }
   
-  extension [Self <: BuiltInCalendarListenerRefiners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltInCalendarListenerRefiners] (val x: Self) extends AnyVal {
     
     inline def setDatesSet(value: js.Function1[/* arg */ DatesSetArg, Unit] => js.Function1[/* arg */ DatesSetArg, Unit]): Self = StObject.set(x, "datesSet", js.Any.fromFunction1(value))
     

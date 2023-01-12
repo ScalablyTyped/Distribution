@@ -149,7 +149,8 @@ object cognitoIdentityConfigurationMod {
       __obj.asInstanceOf[CognitoIdentityConfiguration]
     }
     
-    extension [Self <: CognitoIdentityConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoIdentityConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -296,7 +297,8 @@ object cognitoIdentityConfigurationMod {
       __obj.asInstanceOf[CognitoIdentityResolvableConfiguration]
     }
     
-    extension [Self <: CognitoIdentityResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoIdentityResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -428,7 +430,8 @@ object cognitoIdentityConfigurationMod {
       __obj.asInstanceOf[CognitoIdentityResolvedConfiguration]
     }
     
-    extension [Self <: CognitoIdentityResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CognitoIdentityResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

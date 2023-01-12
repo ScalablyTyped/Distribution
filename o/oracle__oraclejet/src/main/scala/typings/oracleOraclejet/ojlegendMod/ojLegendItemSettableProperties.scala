@@ -92,7 +92,8 @@ object ojLegendItemSettableProperties {
     __obj.asInstanceOf[ojLegendItemSettableProperties]
   }
   
-  extension [Self <: ojLegendItemSettableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojLegendItemSettableProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

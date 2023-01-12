@@ -23,7 +23,8 @@ object AccessControlPolicy {
     __obj.asInstanceOf[AccessControlPolicy]
   }
   
-  extension [Self <: AccessControlPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessControlPolicy] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: Grants): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     

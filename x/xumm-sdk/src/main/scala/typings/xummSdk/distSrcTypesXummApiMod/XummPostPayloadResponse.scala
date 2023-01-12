@@ -23,7 +23,8 @@ object XummPostPayloadResponse {
     __obj.asInstanceOf[XummPostPayloadResponse]
   }
   
-  extension [Self <: XummPostPayloadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummPostPayloadResponse] (val x: Self) extends AnyVal {
     
     inline def setNext(value: Always): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

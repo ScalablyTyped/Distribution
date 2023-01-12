@@ -20,7 +20,8 @@ object TypeofPager {
     __obj.asInstanceOf[TypeofPager]
   }
   
-  extension [Self <: TypeofPager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPager] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Pager): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

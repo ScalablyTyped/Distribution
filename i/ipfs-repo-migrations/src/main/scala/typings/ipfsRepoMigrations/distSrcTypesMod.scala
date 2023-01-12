@@ -27,7 +27,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Backends]
     }
     
-    extension [Self <: Backends](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backends] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Blockstore): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[LockCloser]
     }
     
-    extension [Self <: LockCloser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockCloser] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
@@ -80,7 +82,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Migration]
     }
     
-    extension [Self <: Migration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MigrationOptions]
     }
     
-    extension [Self <: MigrationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreLock(value: Boolean): Self = StObject.set(x, "ignoreLock", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[RepoLock]
     }
     
-    extension [Self <: RepoLock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepoLock] (val x: Self) extends AnyVal {
       
       inline def setLock(value: String => js.Promise[LockCloser]): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
       
@@ -211,7 +216,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[RepoOptions]
     }
     
-    extension [Self <: RepoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepoOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoMigrate(value: Boolean): Self = StObject.set(x, "autoMigrate", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object GetNetworkTypeCallbackValue {
     __obj.asInstanceOf[GetNetworkTypeCallbackValue]
   }
   
-  extension [Self <: GetNetworkTypeCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNetworkTypeCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setNetworkAvailable(value: Boolean): Self = StObject.set(x, "networkAvailable", value.asInstanceOf[js.Any])
     

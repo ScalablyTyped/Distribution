@@ -193,7 +193,8 @@ object IServerValidationManager {
     __obj.asInstanceOf[IServerValidationManager]
   }
   
-  extension [Self <: IServerValidationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerValidationManager] (val x: Self) extends AnyVal {
     
     inline def setAddFieldError(value: (String, String) => Unit): Self = StObject.set(x, "addFieldError", js.Any.fromFunction2(value))
     

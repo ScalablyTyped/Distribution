@@ -38,7 +38,8 @@ object JsMinifyOptions {
     __obj.asInstanceOf[JsMinifyOptions]
   }
   
-  extension [Self <: JsMinifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsMinifyOptions] (val x: Self) extends AnyVal {
     
     inline def setCompress(value: TerserCompressOptions | Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
     

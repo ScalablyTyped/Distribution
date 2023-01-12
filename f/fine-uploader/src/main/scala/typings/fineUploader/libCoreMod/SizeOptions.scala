@@ -28,7 +28,8 @@ object SizeOptions {
     __obj.asInstanceOf[SizeOptions]
   }
   
-  extension [Self <: SizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     

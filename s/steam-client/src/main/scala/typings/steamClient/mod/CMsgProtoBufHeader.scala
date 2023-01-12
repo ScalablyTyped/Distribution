@@ -55,7 +55,8 @@ object CMsgProtoBufHeader {
     __obj.asInstanceOf[CMsgProtoBufHeader]
   }
   
-  extension [Self <: CMsgProtoBufHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMsgProtoBufHeader] (val x: Self) extends AnyVal {
     
     inline def setAdmin_spoofing_user(value: Boolean): Self = StObject.set(x, "admin_spoofing_user", value.asInstanceOf[js.Any])
     

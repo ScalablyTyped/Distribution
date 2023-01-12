@@ -17,7 +17,8 @@ object BatchToSpaceNDAttrs {
     __obj.asInstanceOf[BatchToSpaceNDAttrs]
   }
   
-  extension [Self <: BatchToSpaceNDAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchToSpaceNDAttrs] (val x: Self) extends AnyVal {
     
     inline def setBlockShape(value: js.Array[Double]): Self = StObject.set(x, "blockShape", value.asInstanceOf[js.Any])
     

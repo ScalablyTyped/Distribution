@@ -21,7 +21,8 @@ object MappingDoubleNumberProperty {
     __obj.asInstanceOf[MappingDoubleNumberProperty]
   }
   
-  extension [Self <: MappingDoubleNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDoubleNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: double): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

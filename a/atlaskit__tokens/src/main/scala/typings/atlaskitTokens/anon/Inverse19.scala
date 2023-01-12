@@ -15,7 +15,8 @@ object Inverse19 {
     __obj.asInstanceOf[Inverse19[BaseToken]]
   }
   
-  extension [Self <: Inverse19[?], BaseToken](x: Self & Inverse19[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inverse19[?], BaseToken] (val x: Self & Inverse19[BaseToken]) extends AnyVal {
     
     inline def setInverse(value: `19`[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
   }

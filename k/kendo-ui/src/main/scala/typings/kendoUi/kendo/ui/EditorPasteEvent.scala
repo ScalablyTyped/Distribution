@@ -17,7 +17,8 @@ object EditorPasteEvent {
     __obj.asInstanceOf[EditorPasteEvent]
   }
   
-  extension [Self <: EditorPasteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPasteEvent] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: Any): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

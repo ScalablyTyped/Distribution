@@ -76,7 +76,8 @@ object OpenDBCallbacks {
     __obj.asInstanceOf[OpenDBCallbacks[DBTypes]]
   }
   
-  extension [Self <: OpenDBCallbacks[?], DBTypes /* <: DBSchema | Any */](x: Self & OpenDBCallbacks[DBTypes]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDBCallbacks[?], DBTypes /* <: DBSchema | Any */] (val x: Self & OpenDBCallbacks[DBTypes]) extends AnyVal {
     
     inline def setBlocked(
       value: (/* currentVersion */ Double, /* blockedVersion */ Double | Null, /* event */ IDBVersionChangeEvent) => Unit

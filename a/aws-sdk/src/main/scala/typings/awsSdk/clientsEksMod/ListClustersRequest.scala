@@ -28,7 +28,8 @@ object ListClustersRequest {
     __obj.asInstanceOf[ListClustersRequest]
   }
   
-  extension [Self <: ListClustersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListClustersRequest] (val x: Self) extends AnyVal {
     
     inline def setInclude(value: IncludeClustersList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object TaskSpecBase {
     __obj.asInstanceOf[TaskSpecBase]
   }
   
-  extension [Self <: TaskSpecBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskSpecBase] (val x: Self) extends AnyVal {
     
     inline def setForceUpdate(value: Double): Self = StObject.set(x, "ForceUpdate", value.asInstanceOf[js.Any])
     

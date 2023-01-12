@@ -18,7 +18,8 @@ object DeleteByteMatchSetResponse {
     __obj.asInstanceOf[DeleteByteMatchSetResponse]
   }
   
-  extension [Self <: DeleteByteMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteByteMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

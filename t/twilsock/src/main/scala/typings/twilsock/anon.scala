@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Backoffpolicy]
     }
     
-    extension [Self <: Backoffpolicy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backoffpolicy] (val x: Self) extends AnyVal {
       
       inline def setBackoff_policy(value: Reconnectmaxms): Self = StObject.set(x, "backoff_policy", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Capabilities]
     }
     
-    extension [Self <: Capabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object anon {
       __obj.asInstanceOf[ErrorCode]
     }
     
-    extension [Self <: ErrorCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[ErsUrl]
     }
     
-    extension [Self <: ErsUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErsUrl] (val x: Self) extends AnyVal {
       
       inline def setErsUrl(value: String): Self = StObject.set(x, "ersUrl", value.asInstanceOf[js.Any])
       
@@ -226,7 +231,8 @@ object anon {
       __obj.asInstanceOf[PartialClientOptionsType]
     }
     
-    extension [Self <: PartialClientOptionsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialClientOptionsType] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: TwilsockChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -340,7 +346,8 @@ object anon {
       __obj.asInstanceOf[PartialHeader]
     }
     
-    extension [Self <: PartialHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHeader] (val x: Self) extends AnyVal {
       
       inline def setActive_grant(value: String): Self = StObject.set(x, "active_grant", value.asInstanceOf[js.Any])
       
@@ -435,7 +442,8 @@ object anon {
       __obj.asInstanceOf[Reconnectmaxms]
     }
     
-    extension [Self <: Reconnectmaxms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reconnectmaxms] (val x: Self) extends AnyVal {
       
       inline def setReconnect_max_ms(value: Double): Self = StObject.set(x, "reconnect_max_ms", value.asInstanceOf[js.Any])
       
@@ -456,7 +464,8 @@ object anon {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -475,7 +484,8 @@ object anon {
       __obj.asInstanceOf[Uri]
     }
     
-    extension [Self <: Uri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

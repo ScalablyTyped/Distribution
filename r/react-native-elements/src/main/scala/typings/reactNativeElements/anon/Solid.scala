@@ -17,7 +17,8 @@ object Solid {
     __obj.asInstanceOf[Solid]
   }
   
-  extension [Self <: Solid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Solid] (val x: Self) extends AnyVal {
     
     inline def setBrand(value: Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     

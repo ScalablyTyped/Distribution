@@ -23,7 +23,8 @@ object IsMACAddressOptions {
     __obj.asInstanceOf[IsMACAddressOptions]
   }
   
-  extension [Self <: IsMACAddressOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMACAddressOptions] (val x: Self) extends AnyVal {
     
     inline def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
     

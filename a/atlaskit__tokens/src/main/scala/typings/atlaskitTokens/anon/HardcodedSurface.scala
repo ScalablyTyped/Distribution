@@ -17,7 +17,8 @@ object HardcodedSurface {
     __obj.asInstanceOf[HardcodedSurface]
   }
   
-  extension [Self <: HardcodedSurface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HardcodedSurface] (val x: Self) extends AnyVal {
     
     inline def setHardcodedSurface(value: light | dark): Self = StObject.set(x, "hardcodedSurface", value.asInstanceOf[js.Any])
     

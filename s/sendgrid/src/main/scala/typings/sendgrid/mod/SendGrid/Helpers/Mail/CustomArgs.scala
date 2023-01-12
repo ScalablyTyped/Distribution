@@ -17,7 +17,8 @@ object CustomArgs {
     __obj.asInstanceOf[CustomArgs]
   }
   
-  extension [Self <: CustomArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomArgs] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

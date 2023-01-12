@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Comments]
     }
     
-    extension [Self <: Comments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comments] (val x: Self) extends AnyVal {
       
       inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Pragmas]
     }
     
-    extension [Self <: Pragmas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pragmas] (val x: Self) extends AnyVal {
       
       inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

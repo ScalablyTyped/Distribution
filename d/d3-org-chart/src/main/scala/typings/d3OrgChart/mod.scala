@@ -392,7 +392,8 @@ object mod {
       __obj.asInstanceOf[LayoutBinding[Datum]]
     }
     
-    extension [Self <: LayoutBinding[?], Datum](x: Self & LayoutBinding[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutBinding[?], Datum] (val x: Self & LayoutBinding[Datum]) extends AnyVal {
       
       inline def setButtonX(value: HierarchyNode[Datum] => Double): Self = StObject.set(x, "buttonX", js.Any.fromFunction1(value))
       
@@ -461,7 +462,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -548,7 +550,8 @@ object mod {
       __obj.asInstanceOf[State[Datum]]
     }
     
-    extension [Self <: State[?], Datum](x: Self & State[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State[?], Datum] (val x: Self & State[Datum]) extends AnyVal {
       
       inline def setBackgroundColor(value: none): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[LayzrOptions]
     }
     
-    extension [Self <: LayzrOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayzrOptions] (val x: Self) extends AnyVal {
       
       inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
       

@@ -159,7 +159,8 @@ object EducationUser {
     __obj.asInstanceOf[EducationUser]
   }
   
-  extension [Self <: EducationUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EducationUser] (val x: Self) extends AnyVal {
     
     inline def setAccountEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "accountEnabled", value.asInstanceOf[js.Any])
     

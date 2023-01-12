@@ -23,7 +23,8 @@ object ConsistencyPolicy {
     __obj.asInstanceOf[ConsistencyPolicy]
   }
   
-  extension [Self <: ConsistencyPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsistencyPolicy] (val x: Self) extends AnyVal {
     
     inline def setDefaultConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "defaultConsistencyLevel", value.asInstanceOf[js.Any])
     

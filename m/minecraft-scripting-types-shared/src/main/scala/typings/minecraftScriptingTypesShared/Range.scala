@@ -17,7 +17,8 @@ object Range {
     __obj.asInstanceOf[Range]
   }
   
-  extension [Self <: Range](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
     
     inline def setRange_max(value: Double): Self = StObject.set(x, "range_max", value.asInstanceOf[js.Any])
     

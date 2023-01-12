@@ -18,7 +18,8 @@ object GetContactAttributesResponse {
     __obj.asInstanceOf[GetContactAttributesResponse]
   }
   
-  extension [Self <: GetContactAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContactAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

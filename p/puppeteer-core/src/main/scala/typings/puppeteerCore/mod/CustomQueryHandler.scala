@@ -24,7 +24,8 @@ object CustomQueryHandler {
     __obj.asInstanceOf[CustomQueryHandler]
   }
   
-  extension [Self <: CustomQueryHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomQueryHandler] (val x: Self) extends AnyVal {
     
     inline def setQueryAll(value: (/* node */ Node, /* selector */ String) => js.Array[Node]): Self = StObject.set(x, "queryAll", js.Any.fromFunction2(value))
     

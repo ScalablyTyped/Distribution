@@ -22,7 +22,8 @@ object FragmentRefs {
     __obj.asInstanceOf[FragmentRefs]
   }
   
-  extension [Self <: FragmentRefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentRefs] (val x: Self) extends AnyVal {
     
     inline def set$data(value: Any): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
     

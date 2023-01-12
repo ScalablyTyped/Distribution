@@ -24,7 +24,8 @@ object AnalysisDelimitedPayloadTokenFilter {
     __obj.asInstanceOf[AnalysisDelimitedPayloadTokenFilter]
   }
   
-  extension [Self <: AnalysisDelimitedPayloadTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisDelimitedPayloadTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

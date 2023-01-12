@@ -15,7 +15,8 @@ object ContentApplicationjsonRecentfolders {
     __obj.asInstanceOf[ContentApplicationjsonRecentfolders]
   }
   
-  extension [Self <: ContentApplicationjsonRecentfolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonRecentfolders] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonRecentfolders): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

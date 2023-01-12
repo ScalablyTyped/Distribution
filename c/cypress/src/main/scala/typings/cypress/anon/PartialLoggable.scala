@@ -16,7 +16,8 @@ object PartialLoggable {
     __obj.asInstanceOf[PartialLoggable]
   }
   
-  extension [Self <: PartialLoggable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLoggable] (val x: Self) extends AnyVal {
     
     inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

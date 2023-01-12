@@ -273,7 +273,8 @@ object PlotWaterfallDataLabelsOptions {
     __obj.asInstanceOf[PlotWaterfallDataLabelsOptions]
   }
   
-  extension [Self <: PlotWaterfallDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWaterfallDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteExtensionAssociationRequest {
     __obj.asInstanceOf[DeleteExtensionAssociationRequest]
   }
   
-  extension [Self <: DeleteExtensionAssociationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteExtensionAssociationRequest] (val x: Self) extends AnyVal {
     
     inline def setExtensionAssociationId(value: Id): Self = StObject.set(x, "ExtensionAssociationId", value.asInstanceOf[js.Any])
   }

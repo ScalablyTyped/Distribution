@@ -36,7 +36,8 @@ object instanceID {
       __obj.asInstanceOf[DeleteTokenParams]
     }
     
-    extension [Self <: DeleteTokenParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteTokenParams] (val x: Self) extends AnyVal {
       
       inline def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object instanceID {
       __obj.asInstanceOf[TokenParams]
     }
     
-    extension [Self <: TokenParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenParams] (val x: Self) extends AnyVal {
       
       inline def setAuthorizedEntity(value: String): Self = StObject.set(x, "authorizedEntity", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object FailedToLoad {
     __obj.asInstanceOf[FailedToLoad]
   }
   
-  extension [Self <: FailedToLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedToLoad] (val x: Self) extends AnyVal {
     
     inline def setFailedToLoad(value: String): Self = StObject.set(x, "failedToLoad", value.asInstanceOf[js.Any])
     

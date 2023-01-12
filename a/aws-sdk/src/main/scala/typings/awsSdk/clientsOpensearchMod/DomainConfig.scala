@@ -88,7 +88,8 @@ object DomainConfig {
     __obj.asInstanceOf[DomainConfig]
   }
   
-  extension [Self <: DomainConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicies(value: AccessPoliciesStatus): Self = StObject.set(x, "AccessPolicies", value.asInstanceOf[js.Any])
     

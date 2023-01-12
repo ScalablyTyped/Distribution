@@ -21,7 +21,8 @@ object MlPutFilterRequest {
     __obj.asInstanceOf[MlPutFilterRequest]
   }
   
-  extension [Self <: MlPutFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Items): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

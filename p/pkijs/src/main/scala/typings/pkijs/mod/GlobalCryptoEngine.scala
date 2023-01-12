@@ -17,7 +17,8 @@ object GlobalCryptoEngine {
     __obj.asInstanceOf[GlobalCryptoEngine]
   }
   
-  extension [Self <: GlobalCryptoEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalCryptoEngine] (val x: Self) extends AnyVal {
     
     inline def setCrypto(value: ICryptoEngine): Self = StObject.set(x, "crypto", value.asInstanceOf[js.Any])
     

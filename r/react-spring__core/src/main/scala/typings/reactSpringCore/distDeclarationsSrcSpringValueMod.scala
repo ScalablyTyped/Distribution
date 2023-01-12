@@ -242,7 +242,8 @@ object distDeclarationsSrcSpringValueMod {
       __obj.asInstanceOf[DefaultSpringProps[T]]
     }
     
-    extension [Self <: DefaultSpringProps[?], T](x: Self & DefaultSpringProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSpringProps[?], T] (val x: Self & DefaultSpringProps[T]) extends AnyVal {
       
       inline def setCancel(value: MatchProp[T]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object dxAutocompleteOptions {
     __obj.asInstanceOf[dxAutocompleteOptions]
   }
   
-  extension [Self <: dxAutocompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxAutocompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setDropDownOptions(value: Properties): Self = StObject.set(x, "dropDownOptions", value.asInstanceOf[js.Any])
     

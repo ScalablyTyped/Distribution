@@ -422,7 +422,8 @@ object sapUiWebcFioriSideNavigationItemMod {
       __obj.asInstanceOf[SideNavigationItemSettings]
     }
     
-    extension [Self <: SideNavigationItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigationItemSettings] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       

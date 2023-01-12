@@ -162,7 +162,8 @@ object dxLookupOptions {
     __obj.asInstanceOf[dxLookupOptions]
   }
   
-  extension [Self <: dxLookupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLookupOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyButtonText(value: String): Self = StObject.set(x, "applyButtonText", value.asInstanceOf[js.Any])
     

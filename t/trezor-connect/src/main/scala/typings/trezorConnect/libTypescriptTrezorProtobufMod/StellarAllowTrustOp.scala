@@ -23,7 +23,8 @@ object StellarAllowTrustOp {
     __obj.asInstanceOf[StellarAllowTrustOp]
   }
   
-  extension [Self <: StellarAllowTrustOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarAllowTrustOp] (val x: Self) extends AnyVal {
     
     inline def setAsset_code(value: String): Self = StObject.set(x, "asset_code", value.asInstanceOf[js.Any])
     

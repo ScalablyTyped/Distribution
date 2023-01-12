@@ -29,7 +29,8 @@ object libUseKBarMod {
       __obj.asInstanceOf[BaseKBarReturnType]
     }
     
-    extension [Self <: BaseKBarReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseKBarReturnType] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: KBarOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

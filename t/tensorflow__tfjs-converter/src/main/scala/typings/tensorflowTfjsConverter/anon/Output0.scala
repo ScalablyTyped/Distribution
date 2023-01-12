@@ -15,7 +15,8 @@ object Output0 {
     __obj.asInstanceOf[Output0]
   }
   
-  extension [Self <: Output0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Output0] (val x: Self) extends AnyVal {
     
     inline def setOutput_0(value: TensorShape): Self = StObject.set(x, "output_0", value.asInstanceOf[js.Any])
   }

@@ -35,7 +35,8 @@ object MathObject {
     __obj.asInstanceOf[MathObject]
   }
   
-  extension [Self <: MathObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathObject] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: IXMLDOMNodeList => Any): Self = StObject.set(x, "Avg", js.Any.fromFunction1(value))
     

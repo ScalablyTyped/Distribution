@@ -41,7 +41,8 @@ object SimplifiedAsyncStartEvent {
     __obj.asInstanceOf[SimplifiedAsyncStartEvent]
   }
   
-  extension [Self <: SimplifiedAsyncStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplifiedAsyncStartEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Record[String, Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

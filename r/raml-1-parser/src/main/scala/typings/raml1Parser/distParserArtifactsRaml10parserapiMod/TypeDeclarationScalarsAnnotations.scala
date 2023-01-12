@@ -75,7 +75,8 @@ object TypeDeclarationScalarsAnnotations {
     __obj.asInstanceOf[TypeDeclarationScalarsAnnotations]
   }
   
-  extension [Self <: TypeDeclarationScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeDeclarationScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: () => js.Array[js.Array[AnnotationRef]]): Self = StObject.set(x, "allowedTargets", js.Any.fromFunction0(value))
     

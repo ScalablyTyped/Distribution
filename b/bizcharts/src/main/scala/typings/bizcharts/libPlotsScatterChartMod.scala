@@ -38,7 +38,8 @@ object libPlotsScatterChartMod extends Shortcut {
       __obj.asInstanceOf[ScatterOptions]
     }
     
-    extension [Self <: ScatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScatterOptions] (val x: Self) extends AnyVal {
       
       inline def setPointSize(value: SizeAttr): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libPlotsScatterChartMod extends Shortcut {
       __obj.asInstanceOf[TrendLineAPIOptions]
     }
     
-    extension [Self <: TrendLineAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrendLineAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setConfidenceStyle(value: StyleAttr): Self = StObject.set(x, "confidenceStyle", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[AutoDetect]
     }
     
-    extension [Self <: AutoDetect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDetect] (val x: Self) extends AnyVal {
       
       inline def setAutoDetect(value: Boolean): Self = StObject.set(x, "autoDetect", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Dictindex]
     }
     
-    extension [Self <: Dictindex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
       
       inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     }
@@ -115,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object anon {
       __obj.asInstanceOf[Segments]
     }
     
-    extension [Self <: Segments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Segments] (val x: Self) extends AnyVal {
       
       inline def setSegments(value: StringDictionary[String | js.RegExp]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
@@ -186,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

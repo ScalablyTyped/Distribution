@@ -25,7 +25,8 @@ object AjaxSettings {
     __obj.asInstanceOf[AjaxSettings]
   }
   
-  extension [Self <: AjaxSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxSettings] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

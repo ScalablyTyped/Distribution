@@ -82,7 +82,8 @@ object screenBufferHDMod {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object screenBufferHDMod {
       __obj.asInstanceOf[BlendFn]
     }
     
-    extension [Self <: BlendFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlendFn] (val x: Self) extends AnyVal {
       
       inline def setHardLight(value: (/* src */ Double, /* dst */ Double) => Double): Self = StObject.set(x, "hardLight", js.Any.fromFunction2(value))
       
@@ -235,7 +237,8 @@ object screenBufferHDMod {
       __obj.asInstanceOf[Blending]
     }
     
-    extension [Self <: Blending](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blending] (val x: Self) extends AnyVal {
       
       inline def setBlendSrcFgWithDstBg(value: Boolean): Self = StObject.set(x, "blendSrcFgWithDstBg", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object ArtifactsDownloadInput {
     __obj.asInstanceOf[ArtifactsDownloadInput]
   }
   
-  extension [Self <: ArtifactsDownloadInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactsDownloadInput] (val x: Self) extends AnyVal {
     
     inline def setDownloadInputs(value: js.Array[ArtifactDownloadInputBase]): Self = StObject.set(x, "downloadInputs", value.asInstanceOf[js.Any])
     

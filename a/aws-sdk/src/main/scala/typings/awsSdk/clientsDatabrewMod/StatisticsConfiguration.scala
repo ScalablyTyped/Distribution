@@ -23,7 +23,8 @@ object StatisticsConfiguration {
     __obj.asInstanceOf[StatisticsConfiguration]
   }
   
-  extension [Self <: StatisticsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatisticsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIncludedStatistics(value: StatisticList): Self = StObject.set(x, "IncludedStatistics", value.asInstanceOf[js.Any])
     

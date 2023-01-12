@@ -27,7 +27,8 @@ object BreakpointLocationsRequest {
     __obj.asInstanceOf[BreakpointLocationsRequest]
   }
   
-  extension [Self <: BreakpointLocationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointLocationsRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: BreakpointLocationsArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

@@ -215,7 +215,8 @@ object CurveProps {
     __obj.asInstanceOf[CurveProps]
   }
   
-  extension [Self <: CurveProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurveProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

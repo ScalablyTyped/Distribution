@@ -43,7 +43,8 @@ object AnimationPlaybackEvent {
     __obj.asInstanceOf[AnimationPlaybackEvent]
   }
   
-  extension [Self <: AnimationPlaybackEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationPlaybackEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object UniformBinder {
     __obj.asInstanceOf[UniformBinder]
   }
   
-  extension [Self <: UniformBinder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniformBinder] (val x: Self) extends AnyVal {
     
     inline def setGetBinding(value: (Context, WebGLUniformLocation, String) => PartialUniformany): Self = StObject.set(x, "getBinding", js.Any.fromFunction3(value))
     

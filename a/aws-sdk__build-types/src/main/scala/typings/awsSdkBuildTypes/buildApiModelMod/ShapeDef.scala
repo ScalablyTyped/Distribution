@@ -22,7 +22,8 @@ object ShapeDef {
     __obj.asInstanceOf[ShapeDef]
   }
   
-  extension [Self <: ShapeDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeDef] (val x: Self) extends AnyVal {
     
     inline def setDeprecated(value: scala.Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     

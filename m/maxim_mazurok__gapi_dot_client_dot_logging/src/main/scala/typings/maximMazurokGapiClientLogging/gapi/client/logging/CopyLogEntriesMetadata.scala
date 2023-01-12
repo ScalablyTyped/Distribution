@@ -37,7 +37,8 @@ object CopyLogEntriesMetadata {
     __obj.asInstanceOf[CopyLogEntriesMetadata]
   }
   
-  extension [Self <: CopyLogEntriesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyLogEntriesMetadata] (val x: Self) extends AnyVal {
     
     inline def setCancellationRequested(value: Boolean): Self = StObject.set(x, "cancellationRequested", value.asInstanceOf[js.Any])
     

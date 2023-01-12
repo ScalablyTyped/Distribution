@@ -23,7 +23,8 @@ object SnapshotCreateParams {
     __obj.asInstanceOf[SnapshotCreateParams]
   }
   
-  extension [Self <: SnapshotCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCreateParams] (val x: Self) extends AnyVal {
     
     inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     

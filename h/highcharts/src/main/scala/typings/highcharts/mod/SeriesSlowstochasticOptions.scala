@@ -77,7 +77,8 @@ object SeriesSlowstochasticOptions {
     __obj.asInstanceOf[SeriesSlowstochasticOptions]
   }
   
-  extension [Self <: SeriesSlowstochasticOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSlowstochasticOptions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

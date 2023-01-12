@@ -67,7 +67,8 @@ object XUIConfigurationPersistence {
     __obj.asInstanceOf[XUIConfigurationPersistence]
   }
   
-  extension [Self <: XUIConfigurationPersistence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIConfigurationPersistence] (val x: Self) extends AnyVal {
     
     inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     

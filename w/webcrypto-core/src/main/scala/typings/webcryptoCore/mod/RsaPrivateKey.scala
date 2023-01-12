@@ -43,7 +43,8 @@ object RsaPrivateKey {
     __obj.asInstanceOf[RsaPrivateKey]
   }
   
-  extension [Self <: RsaPrivateKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaPrivateKey] (val x: Self) extends AnyVal {
     
     inline def setCoefficient(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "coefficient", value.asInstanceOf[js.Any])
     

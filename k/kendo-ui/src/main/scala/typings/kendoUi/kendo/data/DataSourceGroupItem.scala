@@ -23,7 +23,8 @@ object DataSourceGroupItem {
     __obj.asInstanceOf[DataSourceGroupItem]
   }
   
-  extension [Self <: DataSourceGroupItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceGroupItem] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object ChartYAxisItem {
     __obj.asInstanceOf[ChartYAxisItem]
   }
   
-  extension [Self <: ChartYAxisItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItem] (val x: Self) extends AnyVal {
     
     inline def setAxisCrossingValue(value: Any | js.Date): Self = StObject.set(x, "axisCrossingValue", value.asInstanceOf[js.Any])
     

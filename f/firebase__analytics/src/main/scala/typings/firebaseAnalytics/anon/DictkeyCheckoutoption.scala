@@ -29,7 +29,8 @@ object DictkeyCheckoutoption {
     __obj.asInstanceOf[DictkeyCheckoutoption]
   }
   
-  extension [Self <: DictkeyCheckoutoption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkeyCheckoutoption] (val x: Self) extends AnyVal {
     
     inline def setCheckout_option(value: String): Self = StObject.set(x, "checkout_option", value.asInstanceOf[js.Any])
     

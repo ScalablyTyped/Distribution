@@ -73,7 +73,8 @@ object ASPxClientRecurrenceTypeEdit {
     __obj.asInstanceOf[ASPxClientRecurrenceTypeEdit]
   }
   
-  extension [Self <: ASPxClientRecurrenceTypeEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRecurrenceTypeEdit] (val x: Self) extends AnyVal {
     
     inline def setGetRecurrenceType(value: () => ASPxClientRecurrenceType): Self = StObject.set(x, "GetRecurrenceType", js.Any.fromFunction0(value))
     

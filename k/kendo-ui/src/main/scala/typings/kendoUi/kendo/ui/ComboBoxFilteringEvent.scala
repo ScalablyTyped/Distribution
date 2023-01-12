@@ -17,7 +17,8 @@ object ComboBoxFilteringEvent {
     __obj.asInstanceOf[ComboBoxFilteringEvent]
   }
   
-  extension [Self <: ComboBoxFilteringEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComboBoxFilteringEvent] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

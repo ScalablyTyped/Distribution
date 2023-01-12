@@ -101,7 +101,8 @@ object CUP {
     __obj.asInstanceOf[CUP]
   }
   
-  extension [Self <: CUP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CUP] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

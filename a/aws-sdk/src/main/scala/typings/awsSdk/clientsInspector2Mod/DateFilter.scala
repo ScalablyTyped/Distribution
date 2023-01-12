@@ -23,7 +23,8 @@ object DateFilter {
     __obj.asInstanceOf[DateFilter]
   }
   
-  extension [Self <: DateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateFilter] (val x: Self) extends AnyVal {
     
     inline def setEndInclusive(value: js.Date): Self = StObject.set(x, "endInclusive", value.asInstanceOf[js.Any])
     

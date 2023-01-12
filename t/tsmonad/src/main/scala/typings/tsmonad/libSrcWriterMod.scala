@@ -69,7 +69,8 @@ object libSrcWriterMod {
       __obj.asInstanceOf[WriterPatterns[S, T, U]]
     }
     
-    extension [Self <: WriterPatterns[?, ?, ?], S, T, U](x: Self & (WriterPatterns[S, T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriterPatterns[?, ?, ?], S, T, U] (val x: Self & (WriterPatterns[S, T, U])) extends AnyVal {
       
       inline def setWriter(value: (js.Array[S], T) => U): Self = StObject.set(x, "writer", js.Any.fromFunction2(value))
     }

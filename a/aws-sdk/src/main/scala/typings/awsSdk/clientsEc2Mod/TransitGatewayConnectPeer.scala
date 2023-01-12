@@ -43,7 +43,8 @@ object TransitGatewayConnectPeer {
     __obj.asInstanceOf[TransitGatewayConnectPeer]
   }
   
-  extension [Self <: TransitGatewayConnectPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayConnectPeer] (val x: Self) extends AnyVal {
     
     inline def setConnectPeerConfiguration(value: TransitGatewayConnectPeerConfiguration): Self = StObject.set(x, "ConnectPeerConfiguration", value.asInstanceOf[js.Any])
     

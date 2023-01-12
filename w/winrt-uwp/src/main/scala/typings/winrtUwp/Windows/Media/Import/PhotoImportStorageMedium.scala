@@ -47,7 +47,8 @@ object PhotoImportStorageMedium {
     __obj.asInstanceOf[PhotoImportStorageMedium]
   }
   
-  extension [Self <: PhotoImportStorageMedium](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportStorageMedium] (val x: Self) extends AnyVal {
     
     inline def setAvailableSpaceInBytes(value: Double): Self = StObject.set(x, "availableSpaceInBytes", value.asInstanceOf[js.Any])
     

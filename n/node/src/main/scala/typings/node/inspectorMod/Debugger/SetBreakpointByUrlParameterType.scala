@@ -43,7 +43,8 @@ object SetBreakpointByUrlParameterType {
     __obj.asInstanceOf[SetBreakpointByUrlParameterType]
   }
   
-  extension [Self <: SetBreakpointByUrlParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBreakpointByUrlParameterType] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

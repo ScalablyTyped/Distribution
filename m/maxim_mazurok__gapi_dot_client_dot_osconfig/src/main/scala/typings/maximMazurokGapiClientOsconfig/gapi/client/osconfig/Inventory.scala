@@ -30,7 +30,8 @@ object Inventory {
     __obj.asInstanceOf[Inventory]
   }
   
-  extension [Self <: Inventory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inventory] (val x: Self) extends AnyVal {
     
     inline def setItems(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.osconfig.gapi.client.osconfig.InventoryItem} */ js.Any

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[FirebaseAuthTokenData]
     }
     
-    extension [Self <: FirebaseAuthTokenData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAuthTokenData] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setAuth-internal`(value: FirebaseAuthInternal): Self = StObject.set(x, "auth-internal", value.asInstanceOf[js.Any])
       }

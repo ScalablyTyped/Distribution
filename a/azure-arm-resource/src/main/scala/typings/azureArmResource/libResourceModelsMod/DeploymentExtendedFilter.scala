@@ -18,7 +18,8 @@ object DeploymentExtendedFilter {
     __obj.asInstanceOf[DeploymentExtendedFilter]
   }
   
-  extension [Self <: DeploymentExtendedFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentExtendedFilter] (val x: Self) extends AnyVal {
     
     inline def setProvisioningState(value: String): Self = StObject.set(x, "provisioningState", value.asInstanceOf[js.Any])
     

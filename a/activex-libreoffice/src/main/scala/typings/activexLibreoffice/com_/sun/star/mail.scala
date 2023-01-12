@@ -42,7 +42,8 @@ object mail {
       __obj.asInstanceOf[MailAttachment]
     }
     
-    extension [Self <: MailAttachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailAttachment] (val x: Self) extends AnyVal {
       
       inline def setData(value: XTransferable): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mail {
       __obj.asInstanceOf[MailMessage]
     }
     
-    extension [Self <: MailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailMessage] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (String, String, String, XTransferable) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
       
@@ -209,7 +211,8 @@ object mail {
       __obj.asInstanceOf[SendMailMessageFailedException]
     }
     
-    extension [Self <: SendMailMessageFailedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMailMessageFailedException] (val x: Self) extends AnyVal {
       
       inline def setInvalidAddresses(value: SafeArray[String]): Self = StObject.set(x, "InvalidAddresses", value.asInstanceOf[js.Any])
       
@@ -267,7 +270,8 @@ object mail {
       __obj.asInstanceOf[XAuthenticator]
     }
     
-    extension [Self <: XAuthenticator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XAuthenticator] (val x: Self) extends AnyVal {
       
       inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
       
@@ -316,7 +320,8 @@ object mail {
       __obj.asInstanceOf[XConnectionListener]
     }
     
-    extension [Self <: XConnectionListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XConnectionListener] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: EventObject => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
       
@@ -445,7 +450,8 @@ object mail {
       __obj.asInstanceOf[XMailMessage]
     }
     
-    extension [Self <: XMailMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMailMessage] (val x: Self) extends AnyVal {
       
       inline def setAddAttachment(value: MailAttachment => Unit): Self = StObject.set(x, "addAttachment", js.Any.fromFunction1(value))
       
@@ -603,7 +609,8 @@ object mail {
       __obj.asInstanceOf[XMailService]
     }
     
-    extension [Self <: XMailService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMailService] (val x: Self) extends AnyVal {
       
       inline def setAddConnectionListener(value: XConnectionListener => Unit): Self = StObject.set(x, "addConnectionListener", js.Any.fromFunction1(value))
       
@@ -654,7 +661,8 @@ object mail {
       __obj.asInstanceOf[XMailServiceProvider]
     }
     
-    extension [Self <: XMailServiceProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMailServiceProvider] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: MailServiceType => XMailService): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -706,7 +714,8 @@ object mail {
       __obj.asInstanceOf[XSmtpService]
     }
     
-    extension [Self <: XSmtpService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XSmtpService] (val x: Self) extends AnyVal {
       
       inline def setSendMailMessage(value: XMailMessage => Unit): Self = StObject.set(x, "sendMailMessage", js.Any.fromFunction1(value))
     }

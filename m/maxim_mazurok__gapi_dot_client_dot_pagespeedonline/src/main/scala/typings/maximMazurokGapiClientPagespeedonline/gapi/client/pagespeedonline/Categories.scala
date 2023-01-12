@@ -28,7 +28,8 @@ object Categories {
     __obj.asInstanceOf[Categories]
   }
   
-  extension [Self <: Categories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: LighthouseCategoryV5): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

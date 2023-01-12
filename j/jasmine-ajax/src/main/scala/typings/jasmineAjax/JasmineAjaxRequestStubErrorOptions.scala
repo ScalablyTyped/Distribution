@@ -17,7 +17,8 @@ object JasmineAjaxRequestStubErrorOptions {
     __obj.asInstanceOf[JasmineAjaxRequestStubErrorOptions]
   }
   
-  extension [Self <: JasmineAjaxRequestStubErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineAjaxRequestStubErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

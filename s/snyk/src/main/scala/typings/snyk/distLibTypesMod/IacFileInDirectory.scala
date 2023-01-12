@@ -23,7 +23,8 @@ object IacFileInDirectory {
     __obj.asInstanceOf[IacFileInDirectory]
   }
   
-  extension [Self <: IacFileInDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacFileInDirectory] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     

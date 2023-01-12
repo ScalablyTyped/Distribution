@@ -121,7 +121,8 @@ object application {
       __obj.asInstanceOf[CopyTableRowEvent]
     }
     
-    extension [Self <: CopyTableRowEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyTableRowEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object application {
       __obj.asInstanceOf[CopyTableWizard]
     }
     
-    extension [Self <: CopyTableWizard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyTableWizard] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (XPropertySet, XPropertySet) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
@@ -354,7 +356,8 @@ object application {
       __obj.asInstanceOf[MacroMigrationWizard]
     }
     
-    extension [Self <: MacroMigrationWizard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacroMigrationWizard] (val x: Self) extends AnyVal {
       
       inline def setCreateWithDocument(value: XOfficeDatabaseDocument => Unit): Self = StObject.set(x, "createWithDocument", js.Any.fromFunction1(value))
     }
@@ -403,7 +406,8 @@ object application {
       __obj.asInstanceOf[NamedDatabaseObject]
     }
     
-    extension [Self <: NamedDatabaseObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedDatabaseObject] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -458,7 +462,8 @@ object application {
       __obj.asInstanceOf[XCopyTableListener]
     }
     
-    extension [Self <: XCopyTableListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCopyTableListener] (val x: Self) extends AnyVal {
       
       inline def setCopiedRow(value: CopyTableRowEvent => Unit): Self = StObject.set(x, "copiedRow", js.Any.fromFunction1(value))
       
@@ -558,7 +563,8 @@ object application {
       __obj.asInstanceOf[XCopyTableWizard]
     }
     
-    extension [Self <: XCopyTableWizard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XCopyTableWizard] (val x: Self) extends AnyVal {
       
       inline def setAddCopyTableListener(value: XCopyTableListener => Unit): Self = StObject.set(x, "addCopyTableListener", js.Any.fromFunction1(value))
       
@@ -728,7 +734,8 @@ object application {
       __obj.asInstanceOf[XDatabaseDocumentUI]
     }
     
-    extension [Self <: XDatabaseDocumentUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XDatabaseDocumentUI] (val x: Self) extends AnyVal {
       
       inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
       
@@ -794,7 +801,8 @@ object application {
       __obj.asInstanceOf[XTableUIProvider]
     }
     
-    extension [Self <: XTableUIProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XTableUIProvider] (val x: Self) extends AnyVal {
       
       inline def setGetTableEditor(value: (XDatabaseDocumentUI, String) => XInterface): Self = StObject.set(x, "getTableEditor", js.Any.fromFunction2(value))
       

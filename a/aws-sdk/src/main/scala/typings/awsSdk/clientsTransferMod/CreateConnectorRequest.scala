@@ -38,7 +38,8 @@ object CreateConnectorRequest {
     __obj.asInstanceOf[CreateConnectorRequest]
   }
   
-  extension [Self <: CreateConnectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectorRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: Role): Self = StObject.set(x, "AccessRole", value.asInstanceOf[js.Any])
     

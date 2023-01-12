@@ -46,7 +46,8 @@ object RuntimeSoftwareConfig {
     __obj.asInstanceOf[RuntimeSoftwareConfig]
   }
   
-  extension [Self <: RuntimeSoftwareConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeSoftwareConfig] (val x: Self) extends AnyVal {
     
     inline def setCustomGpuDriverPath(value: String): Self = StObject.set(x, "customGpuDriverPath", value.asInstanceOf[js.Any])
     

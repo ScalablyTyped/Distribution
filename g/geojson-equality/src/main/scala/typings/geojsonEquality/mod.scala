@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[GeojsonEquality]
     }
     
-    extension [Self <: GeojsonEquality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeojsonEquality] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: (GeoJsonObject, GeoJsonObject) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
     }

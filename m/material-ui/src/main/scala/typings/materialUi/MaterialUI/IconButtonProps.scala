@@ -68,7 +68,8 @@ object IconButtonProps {
     __obj.asInstanceOf[IconButtonProps]
   }
   
-  extension [Self <: IconButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
     
     inline def setCenterRipple(value: Boolean): Self = StObject.set(x, "centerRipple", value.asInstanceOf[js.Any])
     

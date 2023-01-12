@@ -18,7 +18,8 @@ object READ {
     __obj.asInstanceOf[READ]
   }
   
-  extension [Self <: READ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: READ] (val x: Self) extends AnyVal {
     
     inline def setREAD(value: typings.chromeApps.chromeAppsStrings.READ): Self = StObject.set(x, "READ", value.asInstanceOf[js.Any])
     

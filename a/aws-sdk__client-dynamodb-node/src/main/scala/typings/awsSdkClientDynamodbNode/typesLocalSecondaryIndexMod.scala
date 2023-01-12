@@ -38,7 +38,8 @@ object typesLocalSecondaryIndexMod {
       __obj.asInstanceOf[LocalSecondaryIndex]
     }
     
-    extension [Self <: LocalSecondaryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalSecondaryIndex] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object typesLocalSecondaryIndexMod {
       __obj.asInstanceOf[UnmarshalledLocalSecondaryIndex]
     }
     
-    extension [Self <: UnmarshalledLocalSecondaryIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledLocalSecondaryIndex] (val x: Self) extends AnyVal {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       

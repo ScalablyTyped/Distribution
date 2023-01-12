@@ -20,7 +20,8 @@ object BatchEnableServicesRequest {
     __obj.asInstanceOf[BatchEnableServicesRequest]
   }
   
-  extension [Self <: BatchEnableServicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchEnableServicesRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceIds(value: js.Array[String]): Self = StObject.set(x, "serviceIds", value.asInstanceOf[js.Any])
     

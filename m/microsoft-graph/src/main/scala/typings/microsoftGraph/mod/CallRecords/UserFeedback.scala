@@ -29,7 +29,8 @@ object UserFeedback {
     __obj.asInstanceOf[UserFeedback]
   }
   
-  extension [Self <: UserFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserFeedback] (val x: Self) extends AnyVal {
     
     inline def setRating(value: UserFeedbackRating): Self = StObject.set(x, "rating", value.asInstanceOf[js.Any])
     

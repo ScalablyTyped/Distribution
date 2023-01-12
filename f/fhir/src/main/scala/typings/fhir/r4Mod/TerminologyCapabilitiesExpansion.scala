@@ -48,7 +48,8 @@ object TerminologyCapabilitiesExpansion {
     __obj.asInstanceOf[TerminologyCapabilitiesExpansion]
   }
   
-  extension [Self <: TerminologyCapabilitiesExpansion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesExpansion] (val x: Self) extends AnyVal {
     
     inline def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
     

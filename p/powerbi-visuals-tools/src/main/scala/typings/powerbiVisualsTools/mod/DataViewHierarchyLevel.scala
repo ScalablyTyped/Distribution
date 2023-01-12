@@ -19,7 +19,8 @@ object DataViewHierarchyLevel {
     __obj.asInstanceOf[DataViewHierarchyLevel]
   }
   
-  extension [Self <: DataViewHierarchyLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewHierarchyLevel] (val x: Self) extends AnyVal {
     
     inline def setSources(value: js.Array[DataViewMetadataColumn]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     

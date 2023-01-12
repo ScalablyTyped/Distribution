@@ -30,7 +30,8 @@ object ContainerStartedEvent {
     __obj.asInstanceOf[ContainerStartedEvent]
   }
   
-  extension [Self <: ContainerStartedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerStartedEvent] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

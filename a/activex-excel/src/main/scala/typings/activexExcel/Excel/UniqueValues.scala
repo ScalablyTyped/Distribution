@@ -79,7 +79,8 @@ object UniqueValues {
     __obj.asInstanceOf[UniqueValues]
   }
   
-  extension [Self <: UniqueValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValues] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

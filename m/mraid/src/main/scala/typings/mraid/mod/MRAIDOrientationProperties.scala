@@ -18,7 +18,8 @@ object MRAIDOrientationProperties {
     __obj.asInstanceOf[MRAIDOrientationProperties]
   }
   
-  extension [Self <: MRAIDOrientationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRAIDOrientationProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowOrientationChange(value: Boolean): Self = StObject.set(x, "allowOrientationChange", value.asInstanceOf[js.Any])
     

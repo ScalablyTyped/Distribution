@@ -17,7 +17,8 @@ object Palette {
     __obj.asInstanceOf[Palette[PaletteValues]]
   }
   
-  extension [Self <: Palette[?], PaletteValues /* <: String */](x: Self & Palette[PaletteValues]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Palette[?], PaletteValues /* <: String */] (val x: Self & Palette[PaletteValues]) extends AnyVal {
     
     inline def setPalette(value: Record[PaletteValues, PaletteToken]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object ListApprovedOriginsRequest {
     __obj.asInstanceOf[ListApprovedOriginsRequest]
   }
   
-  extension [Self <: ListApprovedOriginsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApprovedOriginsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

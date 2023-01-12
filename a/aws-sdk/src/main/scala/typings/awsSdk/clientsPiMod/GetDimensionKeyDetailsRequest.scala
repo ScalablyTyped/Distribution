@@ -43,7 +43,8 @@ object GetDimensionKeyDetailsRequest {
     __obj.asInstanceOf[GetDimensionKeyDetailsRequest]
   }
   
-  extension [Self <: GetDimensionKeyDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDimensionKeyDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: RequestString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

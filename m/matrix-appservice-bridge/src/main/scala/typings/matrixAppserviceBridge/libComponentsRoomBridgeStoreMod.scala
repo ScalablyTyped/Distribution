@@ -284,7 +284,8 @@ object libComponentsRoomBridgeStoreMod {
       __obj.asInstanceOf[RoomStoreEntryDoc]
     }
     
-    extension [Self <: RoomStoreEntryDoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomStoreEntryDoc] (val x: Self) extends AnyVal {
       
       inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

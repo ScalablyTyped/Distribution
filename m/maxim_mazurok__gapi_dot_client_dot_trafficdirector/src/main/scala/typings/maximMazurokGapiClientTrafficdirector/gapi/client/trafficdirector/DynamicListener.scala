@@ -34,7 +34,8 @@ object DynamicListener {
     __obj.asInstanceOf[DynamicListener]
   }
   
-  extension [Self <: DynamicListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicListener] (val x: Self) extends AnyVal {
     
     inline def setActiveState(value: DynamicListenerState): Self = StObject.set(x, "activeState", value.asInstanceOf[js.Any])
     

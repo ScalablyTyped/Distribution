@@ -23,7 +23,8 @@ object HLSTimestampRange {
     __obj.asInstanceOf[HLSTimestampRange]
   }
   
-  extension [Self <: HLSTimestampRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLSTimestampRange] (val x: Self) extends AnyVal {
     
     inline def setEndTimestamp(value: js.Date): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ModelConfiguration {
     __obj.asInstanceOf[ModelConfiguration]
   }
   
-  extension [Self <: ModelConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentParameters(value: EnvironmentParameters): Self = StObject.set(x, "EnvironmentParameters", value.asInstanceOf[js.Any])
     

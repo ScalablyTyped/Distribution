@@ -23,7 +23,8 @@ object PropertyLatestValue {
     __obj.asInstanceOf[PropertyLatestValue]
   }
   
-  extension [Self <: PropertyLatestValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyLatestValue] (val x: Self) extends AnyVal {
     
     inline def setPropertyReference(value: EntityPropertyReference): Self = StObject.set(x, "propertyReference", value.asInstanceOf[js.Any])
     

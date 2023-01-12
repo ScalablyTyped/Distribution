@@ -20,7 +20,8 @@ object DocumentTriggerBuilder {
     __obj.asInstanceOf[DocumentTriggerBuilder]
   }
   
-  extension [Self <: DocumentTriggerBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTriggerBuilder] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Trigger): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     

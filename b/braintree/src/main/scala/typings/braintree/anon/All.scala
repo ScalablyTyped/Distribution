@@ -66,7 +66,8 @@ object All {
     __obj.asInstanceOf[All]
   }
   
-  extension [Self <: All](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
     
     inline def setAll(
       value: () => js.Array[

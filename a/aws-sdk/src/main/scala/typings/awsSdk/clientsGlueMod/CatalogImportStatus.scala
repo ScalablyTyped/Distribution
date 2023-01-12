@@ -28,7 +28,8 @@ object CatalogImportStatus {
     __obj.asInstanceOf[CatalogImportStatus]
   }
   
-  extension [Self <: CatalogImportStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogImportStatus] (val x: Self) extends AnyVal {
     
     inline def setImportCompleted(value: Boolean): Self = StObject.set(x, "ImportCompleted", value.asInstanceOf[js.Any])
     

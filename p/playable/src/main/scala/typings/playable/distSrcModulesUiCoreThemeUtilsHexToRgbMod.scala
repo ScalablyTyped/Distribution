@@ -27,7 +27,8 @@ object distSrcModulesUiCoreThemeUtilsHexToRgbMod {
       __obj.asInstanceOf[IRGB]
     }
     
-    extension [Self <: IRGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

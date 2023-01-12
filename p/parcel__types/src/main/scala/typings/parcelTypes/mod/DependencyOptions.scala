@@ -84,7 +84,8 @@ object DependencyOptions {
     __obj.asInstanceOf[DependencyOptions]
   }
   
-  extension [Self <: DependencyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyOptions] (val x: Self) extends AnyVal {
     
     inline def setBundleBehavior(value: BundleBehavior): Self = StObject.set(x, "bundleBehavior", value.asInstanceOf[js.Any])
     

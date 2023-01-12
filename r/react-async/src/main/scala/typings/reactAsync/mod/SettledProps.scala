@@ -18,7 +18,8 @@ object SettledProps {
     __obj.asInstanceOf[SettledProps[T]]
   }
   
-  extension [Self <: SettledProps[?], T](x: Self & SettledProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettledProps[?], T] (val x: Self & SettledProps[T]) extends AnyVal {
     
     inline def setChildren(value: SettledChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

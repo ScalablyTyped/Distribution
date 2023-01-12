@@ -37,7 +37,8 @@ object IEvent {
     __obj.asInstanceOf[IEvent[E]]
   }
   
-  extension [Self <: IEvent[?], E /* <: Event */](x: Self & IEvent[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEvent[?], E /* <: Event */] (val x: Self & IEvent[E]) extends AnyVal {
     
     inline def setAbsolutePointer(value: Point): Self = StObject.set(x, "absolutePointer", value.asInstanceOf[js.Any])
     

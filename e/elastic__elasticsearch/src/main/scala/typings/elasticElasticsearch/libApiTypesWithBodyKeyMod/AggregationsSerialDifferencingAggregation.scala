@@ -17,7 +17,8 @@ object AggregationsSerialDifferencingAggregation {
     __obj.asInstanceOf[AggregationsSerialDifferencingAggregation]
   }
   
-  extension [Self <: AggregationsSerialDifferencingAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSerialDifferencingAggregation] (val x: Self) extends AnyVal {
     
     inline def setLag(value: integer): Self = StObject.set(x, "lag", value.asInstanceOf[js.Any])
     

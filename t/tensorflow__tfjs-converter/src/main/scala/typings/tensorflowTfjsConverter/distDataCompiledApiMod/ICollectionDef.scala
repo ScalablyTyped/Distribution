@@ -33,7 +33,8 @@ object ICollectionDef {
     __obj.asInstanceOf[ICollectionDef]
   }
   
-  extension [Self <: ICollectionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollectionDef] (val x: Self) extends AnyVal {
     
     inline def setAnyList(value: IAnyList): Self = StObject.set(x, "anyList", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Endpoint {
     __obj.asInstanceOf[Endpoint]
   }
   
-  extension [Self <: Endpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
     
     inline def setAllowCors(value: Boolean): Self = StObject.set(x, "allowCors", value.asInstanceOf[js.Any])
     

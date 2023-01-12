@@ -32,7 +32,8 @@ object v5Mod extends Shortcut {
       __obj.asInstanceOf[v5Static]
     }
     
-    extension [Self <: v5Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: v5Static] (val x: Self) extends AnyVal {
       
       inline def setDNS(value: String): Self = StObject.set(x, "DNS", value.asInstanceOf[js.Any])
       

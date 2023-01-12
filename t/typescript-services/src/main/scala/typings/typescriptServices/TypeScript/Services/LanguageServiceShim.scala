@@ -60,7 +60,8 @@ object LanguageServiceShim {
     __obj.asInstanceOf[LanguageServiceShim]
   }
   
-  extension [Self <: LanguageServiceShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageServiceShim] (val x: Self) extends AnyVal {
     
     inline def setForwardJSONCall(value: (String, js.Function0[Any]) => String): Self = StObject.set(x, "forwardJSONCall", js.Any.fromFunction2(value))
     

@@ -58,7 +58,8 @@ object AssessmentControl {
     __obj.asInstanceOf[AssessmentControl]
   }
   
-  extension [Self <: AssessmentControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentControl] (val x: Self) extends AnyVal {
     
     inline def setAssessmentReportEvidenceCount(value: Integer): Self = StObject.set(x, "assessmentReportEvidenceCount", value.asInstanceOf[js.Any])
     

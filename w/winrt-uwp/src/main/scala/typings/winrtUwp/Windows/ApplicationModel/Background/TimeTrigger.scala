@@ -20,7 +20,8 @@ object TimeTrigger {
     __obj.asInstanceOf[TimeTrigger]
   }
   
-  extension [Self <: TimeTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeTrigger] (val x: Self) extends AnyVal {
     
     inline def setFreshnessTime(value: Double): Self = StObject.set(x, "freshnessTime", value.asInstanceOf[js.Any])
     

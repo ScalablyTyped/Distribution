@@ -56,7 +56,8 @@ object IShellPaneContainer {
     __obj.asInstanceOf[IShellPaneContainer]
   }
   
-  extension [Self <: IShellPaneContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellPaneContainer] (val x: Self) extends AnyVal {
     
     inline def setAddTab(value: (String, String, String) => IShellPaneTab): Self = StObject.set(x, "AddTab", js.Any.fromFunction3(value))
     

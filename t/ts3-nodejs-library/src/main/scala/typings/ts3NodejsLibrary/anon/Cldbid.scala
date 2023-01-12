@@ -15,7 +15,8 @@ object Cldbid {
     __obj.asInstanceOf[Cldbid]
   }
   
-  extension [Self <: Cldbid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cldbid] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
   }

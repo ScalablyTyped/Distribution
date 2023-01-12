@@ -25,7 +25,8 @@ object UserCredentialInternal {
     __obj.asInstanceOf[UserCredentialInternal]
   }
   
-  extension [Self <: UserCredentialInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserCredentialInternal] (val x: Self) extends AnyVal {
     
     inline def setUser(value: UserInternal): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }

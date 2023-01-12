@@ -20,7 +20,8 @@ object typesSrcCoreTransportsTransportConnectionOptionsMod {
       __obj.asInstanceOf[TransportConnectionOptions]
     }
     
-    extension [Self <: TransportConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setActivityTimeout(value: Double): Self = StObject.set(x, "activityTimeout", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object TeamIterationAttributes {
     __obj.asInstanceOf[TeamIterationAttributes]
   }
   
-  extension [Self <: TeamIterationAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamIterationAttributes] (val x: Self) extends AnyVal {
     
     inline def setFinishDate(value: js.Date): Self = StObject.set(x, "finishDate", value.asInstanceOf[js.Any])
     

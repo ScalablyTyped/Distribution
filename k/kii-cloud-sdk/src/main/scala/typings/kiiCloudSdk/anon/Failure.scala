@@ -19,7 +19,8 @@ object Failure {
     __obj.asInstanceOf[Failure]
   }
   
-  extension [Self <: Failure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: (KiiACL, String) => Any): Self = StObject.set(x, "failure", js.Any.fromFunction2(value))
     

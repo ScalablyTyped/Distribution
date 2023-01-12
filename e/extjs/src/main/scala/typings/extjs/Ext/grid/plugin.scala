@@ -66,7 +66,8 @@ object plugin {
       __obj.asInstanceOf[IBufferedRenderer]
     }
     
-    extension [Self <: IBufferedRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBufferedRenderer] (val x: Self) extends AnyVal {
       
       inline def setInit(value: /* grid */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
@@ -138,7 +139,8 @@ object plugin {
       __obj.asInstanceOf[ICellEditing]
     }
     
-    extension [Self <: ICellEditing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICellEditing] (val x: Self) extends AnyVal {
       
       inline def setStartEdit(value: (/* record */ js.UndefOr[Any], /* columnHeader */ js.UndefOr[Any]) => Boolean): Self = StObject.set(x, "startEdit", js.Any.fromFunction2(value))
       
@@ -188,7 +190,8 @@ object plugin {
       __obj.asInstanceOf[IDragDrop]
     }
     
-    extension [Self <: IDragDrop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDrop] (val x: Self) extends AnyVal {
       
       inline def setContainerScroll(value: Any): Self = StObject.set(x, "containerScroll", value.asInstanceOf[js.Any])
       
@@ -412,7 +415,8 @@ object plugin {
       __obj.asInstanceOf[IEditing]
     }
     
-    extension [Self <: IEditing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditing] (val x: Self) extends AnyVal {
       
       inline def setAddEvents(value: js.UndefOr[Any] => Unit): Self = StObject.set(x, "addEvents", js.Any.fromFunction1(value))
       
@@ -553,7 +557,8 @@ object plugin {
       __obj.asInstanceOf[IHeaderReorderer]
     }
     
-    extension [Self <: IHeaderReorderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderReorderer] (val x: Self) extends AnyVal {
       
       inline def setInit(value: /* headerCt */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
@@ -591,7 +596,8 @@ object plugin {
       __obj.asInstanceOf[IHeaderResizer]
     }
     
-    extension [Self <: IHeaderResizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderResizer] (val x: Self) extends AnyVal {
       
       inline def setDynamic(value: Boolean): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
       
@@ -641,7 +647,8 @@ object plugin {
       __obj.asInstanceOf[IRowEditing]
     }
     
-    extension [Self <: IRowEditing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowEditing] (val x: Self) extends AnyVal {
       
       inline def setAutoCancel(value: Boolean): Self = StObject.set(x, "autoCancel", value.asInstanceOf[js.Any])
       
@@ -687,7 +694,8 @@ object plugin {
       __obj.asInstanceOf[IRowExpander]
     }
     
-    extension [Self <: IRowExpander](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowExpander] (val x: Self) extends AnyVal {
       
       inline def setExpandOnDblClick(value: Boolean): Self = StObject.set(x, "expandOnDblClick", value.asInstanceOf[js.Any])
       

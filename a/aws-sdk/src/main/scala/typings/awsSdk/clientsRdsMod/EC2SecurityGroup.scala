@@ -33,7 +33,8 @@ object EC2SecurityGroup {
     __obj.asInstanceOf[EC2SecurityGroup]
   }
   
-  extension [Self <: EC2SecurityGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2SecurityGroup] (val x: Self) extends AnyVal {
     
     inline def setEC2SecurityGroupId(value: String): Self = StObject.set(x, "EC2SecurityGroupId", value.asInstanceOf[js.Any])
     

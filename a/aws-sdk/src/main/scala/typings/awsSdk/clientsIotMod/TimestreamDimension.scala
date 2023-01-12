@@ -23,7 +23,8 @@ object TimestreamDimension {
     __obj.asInstanceOf[TimestreamDimension]
   }
   
-  extension [Self <: TimestreamDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestreamDimension] (val x: Self) extends AnyVal {
     
     inline def setName(value: TimestreamDimensionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

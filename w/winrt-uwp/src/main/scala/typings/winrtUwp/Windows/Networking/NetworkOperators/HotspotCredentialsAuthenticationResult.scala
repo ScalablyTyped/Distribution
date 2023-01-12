@@ -33,7 +33,8 @@ object HotspotCredentialsAuthenticationResult {
     __obj.asInstanceOf[HotspotCredentialsAuthenticationResult]
   }
   
-  extension [Self <: HotspotCredentialsAuthenticationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotspotCredentialsAuthenticationResult] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationReplyXml(value: XmlDocument): Self = StObject.set(x, "authenticationReplyXml", value.asInstanceOf[js.Any])
     

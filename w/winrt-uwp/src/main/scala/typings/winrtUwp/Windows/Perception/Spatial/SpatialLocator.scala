@@ -46,7 +46,8 @@ object SpatialLocator {
     __obj.asInstanceOf[SpatialLocator]
   }
   
-  extension [Self <: SpatialLocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialLocator] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
     

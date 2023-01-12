@@ -22,7 +22,8 @@ object ListGlossariesResponse {
     __obj.asInstanceOf[ListGlossariesResponse]
   }
   
-  extension [Self <: ListGlossariesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGlossariesResponse] (val x: Self) extends AnyVal {
     
     inline def setGlossaries(value: js.Array[Glossary]): Self = StObject.set(x, "glossaries", value.asInstanceOf[js.Any])
     

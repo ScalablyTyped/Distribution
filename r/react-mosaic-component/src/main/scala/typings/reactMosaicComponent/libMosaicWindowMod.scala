@@ -114,7 +114,8 @@ object libMosaicWindowMod {
       __obj.asInstanceOf[InternalDragSourceProps]
     }
     
-    extension [Self <: InternalDragSourceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalDragSourceProps] (val x: Self) extends AnyVal {
       
       inline def setConnectDragPreview(
         value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[DragPreviewOptions]) => ReactElement | Null
@@ -144,7 +145,8 @@ object libMosaicWindowMod {
       __obj.asInstanceOf[InternalDropTargetProps]
     }
     
-    extension [Self <: InternalDropTargetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalDropTargetProps] (val x: Self) extends AnyVal {
       
       inline def setConnectDropTarget(
         value: (/* elementOrNode */ ConnectableElement, /* options */ js.UndefOr[Any]) => ReactElement | Null
@@ -189,7 +191,8 @@ object libMosaicWindowMod {
       __obj.asInstanceOf[InternalMosaicWindowState]
     }
     
-    extension [Self <: InternalMosaicWindowState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalMosaicWindowState] (val x: Self) extends AnyVal {
       
       inline def setAdditionalControlsOpen(value: Boolean): Self = StObject.set(x, "additionalControlsOpen", value.asInstanceOf[js.Any])
     }
@@ -234,7 +237,8 @@ object libMosaicWindowMod {
       __obj.asInstanceOf[MosaicWindowProps[T]]
     }
     
-    extension [Self <: MosaicWindowProps[?], T /* <: MosaicKey */](x: Self & MosaicWindowProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicWindowProps[?], T /* <: MosaicKey */] (val x: Self & MosaicWindowProps[T]) extends AnyVal {
       
       inline def setAdditionalControlButtonText(value: String): Self = StObject.set(x, "additionalControlButtonText", value.asInstanceOf[js.Any])
       

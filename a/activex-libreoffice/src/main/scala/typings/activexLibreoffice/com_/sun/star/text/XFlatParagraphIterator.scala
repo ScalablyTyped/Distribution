@@ -85,7 +85,8 @@ object XFlatParagraphIterator {
     __obj.asInstanceOf[XFlatParagraphIterator]
   }
   
-  extension [Self <: XFlatParagraphIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFlatParagraphIterator] (val x: Self) extends AnyVal {
     
     inline def setFirstPara(value: XFlatParagraph): Self = StObject.set(x, "FirstPara", value.asInstanceOf[js.Any])
     

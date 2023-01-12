@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[DataList]
     }
     
-    extension [Self <: DataList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataList] (val x: Self) extends AnyVal {
       
       inline def setDataList(value: js.Array[js.typedarray.Uint8Array]): Self = StObject.set(x, "dataList", value.asInstanceOf[js.Any])
       

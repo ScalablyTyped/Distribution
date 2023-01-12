@@ -44,7 +44,8 @@ object distSrcCorePlayerFactoryMod {
       __obj.asInstanceOf[IPlayerInstance]
     }
     
-    extension [Self <: IPlayerInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlayerInstance] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     }

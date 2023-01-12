@@ -28,7 +28,8 @@ object GetEC2InstanceRecommendationsResponse {
     __obj.asInstanceOf[GetEC2InstanceRecommendationsResponse]
   }
   
-  extension [Self <: GetEC2InstanceRecommendationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEC2InstanceRecommendationsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: GetRecommendationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

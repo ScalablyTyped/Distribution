@@ -23,7 +23,8 @@ object ASPxClientErrorEventArgs {
     __obj.asInstanceOf[ASPxClientErrorEventArgs]
   }
   
-  extension [Self <: ASPxClientErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
   }

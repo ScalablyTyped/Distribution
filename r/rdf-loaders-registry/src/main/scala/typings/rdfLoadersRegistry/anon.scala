@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[LoaderRegistry]
     }
     
-    extension [Self <: LoaderRegistry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderRegistry] (val x: Self) extends AnyVal {
       
       inline def setLoaderRegistry(value: typings.rdfLoadersRegistry.mod.LoaderRegistry): Self = StObject.set(x, "loaderRegistry", value.asInstanceOf[js.Any])
     }

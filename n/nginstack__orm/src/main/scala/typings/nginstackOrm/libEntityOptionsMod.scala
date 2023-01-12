@@ -52,7 +52,8 @@ object libEntityOptionsMod {
       __obj.asInstanceOf[EntityOptions]
     }
     
-    extension [Self <: EntityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntityOptions] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       

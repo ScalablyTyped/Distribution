@@ -67,7 +67,8 @@ object distTypesJsonSchemaMod {
       __obj.asInstanceOf[NumberKeywords]
     }
     
-    extension [Self <: NumberKeywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberKeywords] (val x: Self) extends AnyVal {
       
       inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object distTypesJsonSchemaMod {
       __obj.asInstanceOf[StringKeywords]
     }
     
-    extension [Self <: StringKeywords](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringKeywords] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

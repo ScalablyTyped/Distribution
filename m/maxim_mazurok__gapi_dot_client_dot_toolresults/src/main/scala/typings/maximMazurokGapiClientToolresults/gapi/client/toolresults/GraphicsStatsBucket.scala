@@ -19,7 +19,8 @@ object GraphicsStatsBucket {
     __obj.asInstanceOf[GraphicsStatsBucket]
   }
   
-  extension [Self <: GraphicsStatsBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicsStatsBucket] (val x: Self) extends AnyVal {
     
     inline def setFrameCount(value: String): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     

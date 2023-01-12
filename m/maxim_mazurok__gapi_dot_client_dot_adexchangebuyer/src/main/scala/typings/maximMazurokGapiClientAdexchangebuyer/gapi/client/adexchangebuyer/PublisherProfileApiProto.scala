@@ -86,7 +86,8 @@ object PublisherProfileApiProto {
     __obj.asInstanceOf[PublisherProfileApiProto]
   }
   
-  extension [Self <: PublisherProfileApiProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherProfileApiProto] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

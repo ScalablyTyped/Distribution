@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[EntryInfo]
     }
     
-    extension [Self <: EntryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryInfo] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ReaddirpOptions]
     }
     
-    extension [Self <: ReaddirpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaddirpOptions] (val x: Self) extends AnyVal {
       
       inline def setAlwaysStat(value: Boolean): Self = StObject.set(x, "alwaysStat", value.asInstanceOf[js.Any])
       

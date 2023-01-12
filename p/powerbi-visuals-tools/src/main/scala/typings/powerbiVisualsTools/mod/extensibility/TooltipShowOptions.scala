@@ -24,7 +24,8 @@ object TooltipShowOptions {
     __obj.asInstanceOf[TooltipShowOptions]
   }
   
-  extension [Self <: TooltipShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipShowOptions] (val x: Self) extends AnyVal {
     
     inline def setDataItems(value: js.Array[VisualTooltipDataItem]): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     

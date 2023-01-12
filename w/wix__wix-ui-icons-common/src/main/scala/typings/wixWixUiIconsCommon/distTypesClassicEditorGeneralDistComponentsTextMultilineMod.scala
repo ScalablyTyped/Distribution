@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsTextMultilineMod extends Short
       __obj.asInstanceOf[TextMultilineProps]
     }
     
-    extension [Self <: TextMultilineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMultilineProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

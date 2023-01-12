@@ -17,7 +17,8 @@ object BuiltIn {
     __obj.asInstanceOf[BuiltIn]
   }
   
-  extension [Self <: BuiltIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltIn] (val x: Self) extends AnyVal {
     
     inline def setBuiltIn(value: scala.Double): Self = StObject.set(x, "builtIn", value.asInstanceOf[js.Any])
     

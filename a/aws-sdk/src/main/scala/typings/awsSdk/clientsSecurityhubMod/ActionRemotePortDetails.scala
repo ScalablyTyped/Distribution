@@ -23,7 +23,8 @@ object ActionRemotePortDetails {
     __obj.asInstanceOf[ActionRemotePortDetails]
   }
   
-  extension [Self <: ActionRemotePortDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionRemotePortDetails] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     

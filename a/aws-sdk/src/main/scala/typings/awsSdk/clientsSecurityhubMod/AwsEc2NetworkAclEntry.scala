@@ -53,7 +53,8 @@ object AwsEc2NetworkAclEntry {
     __obj.asInstanceOf[AwsEc2NetworkAclEntry]
   }
   
-  extension [Self <: AwsEc2NetworkAclEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2NetworkAclEntry] (val x: Self) extends AnyVal {
     
     inline def setCidrBlock(value: NonEmptyString): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GoogleMapsPlayablelocationsV3SamplePlayableLocationList {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationList]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationList] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[GoogleMapsPlayablelocationsV3SamplePlayableLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

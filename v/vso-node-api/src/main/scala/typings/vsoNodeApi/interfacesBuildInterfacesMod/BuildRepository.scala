@@ -67,7 +67,8 @@ object BuildRepository {
     __obj.asInstanceOf[BuildRepository]
   }
   
-  extension [Self <: BuildRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildRepository] (val x: Self) extends AnyVal {
     
     inline def setCheckoutSubmodules(value: Boolean): Self = StObject.set(x, "checkoutSubmodules", value.asInstanceOf[js.Any])
     

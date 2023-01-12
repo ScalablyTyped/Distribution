@@ -18,7 +18,8 @@ object CreatePartnerEventSourceResponse {
     __obj.asInstanceOf[CreatePartnerEventSourceResponse]
   }
   
-  extension [Self <: CreatePartnerEventSourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePartnerEventSourceResponse] (val x: Self) extends AnyVal {
     
     inline def setEventSourceArn(value: String): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     

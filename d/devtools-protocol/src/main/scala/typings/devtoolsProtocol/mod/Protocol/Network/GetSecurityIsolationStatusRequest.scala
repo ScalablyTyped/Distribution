@@ -19,7 +19,8 @@ object GetSecurityIsolationStatusRequest {
     __obj.asInstanceOf[GetSecurityIsolationStatusRequest]
   }
   
-  extension [Self <: GetSecurityIsolationStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecurityIsolationStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

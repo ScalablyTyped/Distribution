@@ -27,7 +27,8 @@ object IMagellanOptions {
     __obj.asInstanceOf[IMagellanOptions]
   }
   
-  extension [Self <: IMagellanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMagellanOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

@@ -301,7 +301,8 @@ object typesRuntimeInternalDevMod {
       __obj.asInstanceOf[ComponentConstructorOptions[Props]]
     }
     
-    extension [Self <: ComponentConstructorOptions[?], Props /* <: Record[String, Any] */](x: Self & ComponentConstructorOptions[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentConstructorOptions[?], Props /* <: Record[String, Any] */] (val x: Self & ComponentConstructorOptions[Props]) extends AnyVal {
       
       inline def setAnchor(value: Element): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

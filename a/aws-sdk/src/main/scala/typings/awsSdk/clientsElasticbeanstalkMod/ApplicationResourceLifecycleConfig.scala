@@ -23,7 +23,8 @@ object ApplicationResourceLifecycleConfig {
     __obj.asInstanceOf[ApplicationResourceLifecycleConfig]
   }
   
-  extension [Self <: ApplicationResourceLifecycleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationResourceLifecycleConfig] (val x: Self) extends AnyVal {
     
     inline def setServiceRole(value: String): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     

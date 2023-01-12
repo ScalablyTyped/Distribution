@@ -19,7 +19,8 @@ object ChatRenderAttachmentsSender {
     __obj.asInstanceOf[ChatRenderAttachmentsSender]
   }
   
-  extension [Self <: ChatRenderAttachmentsSender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRenderAttachmentsSender] (val x: Self) extends AnyVal {
     
     inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     

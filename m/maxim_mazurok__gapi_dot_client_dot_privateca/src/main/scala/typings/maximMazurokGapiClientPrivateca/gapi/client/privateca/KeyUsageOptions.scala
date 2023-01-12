@@ -40,7 +40,8 @@ object KeyUsageOptions {
     __obj.asInstanceOf[KeyUsageOptions]
   }
   
-  extension [Self <: KeyUsageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyUsageOptions] (val x: Self) extends AnyVal {
     
     inline def setCertSign(value: Boolean): Self = StObject.set(x, "certSign", value.asInstanceOf[js.Any])
     

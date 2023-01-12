@@ -29,7 +29,8 @@ object PersonMetadata {
     __obj.asInstanceOf[PersonMetadata]
   }
   
-  extension [Self <: PersonMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     

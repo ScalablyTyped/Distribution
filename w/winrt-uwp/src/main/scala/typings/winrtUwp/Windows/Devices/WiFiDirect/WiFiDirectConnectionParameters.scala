@@ -28,7 +28,8 @@ object WiFiDirectConnectionParameters {
     __obj.asInstanceOf[WiFiDirectConnectionParameters]
   }
   
-  extension [Self <: WiFiDirectConnectionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WiFiDirectConnectionParameters] (val x: Self) extends AnyVal {
     
     inline def setGroupOwnerIntent(value: Double): Self = StObject.set(x, "groupOwnerIntent", value.asInstanceOf[js.Any])
     

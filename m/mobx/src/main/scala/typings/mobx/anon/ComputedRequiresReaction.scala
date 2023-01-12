@@ -41,7 +41,8 @@ object ComputedRequiresReaction {
     __obj.asInstanceOf[ComputedRequiresReaction]
   }
   
-  extension [Self <: ComputedRequiresReaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedRequiresReaction] (val x: Self) extends AnyVal {
     
     inline def setComputedRequiresReaction(value: Boolean): Self = StObject.set(x, "computedRequiresReaction", value.asInstanceOf[js.Any])
     

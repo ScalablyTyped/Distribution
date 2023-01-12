@@ -45,7 +45,8 @@ object HandlerExecutionContext {
     __obj.asInstanceOf[HandlerExecutionContext]
   }
   
-  extension [Self <: HandlerExecutionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlerExecutionContext] (val x: Self) extends AnyVal {
     
     inline def setAuthSchemes(value: js.Array[AuthScheme]): Self = StObject.set(x, "authSchemes", value.asInstanceOf[js.Any])
     

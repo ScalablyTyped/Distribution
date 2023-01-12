@@ -21,7 +21,8 @@ object CapabilitiesProvider {
     __obj.asInstanceOf[CapabilitiesProvider]
   }
   
-  extension [Self <: CapabilitiesProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilitiesProvider] (val x: Self) extends AnyVal {
     
     inline def setGetServerCapabilities(value: DataProtocolClientCapabilities => Thenable[DataProtocolServerCapabilities]): Self = StObject.set(x, "getServerCapabilities", js.Any.fromFunction1(value))
   }

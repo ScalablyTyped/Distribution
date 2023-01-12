@@ -23,7 +23,8 @@ object IndicesFlushSyncedParams {
     __obj.asInstanceOf[IndicesFlushSyncedParams]
   }
   
-  extension [Self <: IndicesFlushSyncedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFlushSyncedParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

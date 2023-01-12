@@ -33,7 +33,8 @@ object StepInput {
     __obj.asInstanceOf[StepInput]
   }
   
-  extension [Self <: StepInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepInput] (val x: Self) extends AnyVal {
     
     inline def setIntegerValue(value: Integer): Self = StObject.set(x, "integerValue", value.asInstanceOf[js.Any])
     

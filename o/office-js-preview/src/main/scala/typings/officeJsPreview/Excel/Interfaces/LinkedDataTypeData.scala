@@ -83,7 +83,8 @@ object LinkedDataTypeData {
     __obj.asInstanceOf[LinkedDataTypeData]
   }
   
-  extension [Self <: LinkedDataTypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedDataTypeData] (val x: Self) extends AnyVal {
     
     inline def setDataProvider(value: String): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     

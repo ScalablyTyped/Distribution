@@ -63,7 +63,8 @@ object CategoryId {
     __obj.asInstanceOf[CategoryId]
   }
   
-  extension [Self <: CategoryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryId] (val x: Self) extends AnyVal {
     
     inline def setCategoryId(value: String): Self = StObject.set(x, "categoryId", value.asInstanceOf[js.Any])
     

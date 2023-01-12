@@ -41,7 +41,8 @@ object mod {
         __obj.asInstanceOf[StorageProvider]
       }
       
-      extension [Self <: StorageProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StorageProvider] (val x: Self) extends AnyVal {
         
         inline def setGet(value: String => Any | Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         

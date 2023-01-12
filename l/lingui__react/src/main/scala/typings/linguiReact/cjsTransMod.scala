@@ -44,7 +44,8 @@ object cjsTransMod {
       __obj.asInstanceOf[TransProps]
     }
     
-    extension [Self <: TransProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object cjsTransMod {
       __obj.asInstanceOf[TransRenderProps]
     }
     
-    extension [Self <: TransRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransRenderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

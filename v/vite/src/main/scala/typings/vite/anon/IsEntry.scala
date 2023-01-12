@@ -21,7 +21,8 @@ object IsEntry {
     __obj.asInstanceOf[IsEntry]
   }
   
-  extension [Self <: IsEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsEntry] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: CustomPluginOptions): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

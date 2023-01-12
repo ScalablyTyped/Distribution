@@ -31,7 +31,8 @@ object ProviderEvent {
     __obj.asInstanceOf[ProviderEvent]
   }
   
-  extension [Self <: ProviderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProviderEvent] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: PeerId): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

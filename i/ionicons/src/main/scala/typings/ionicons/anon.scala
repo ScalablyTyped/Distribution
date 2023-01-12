@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Ael]
     }
     
-    extension [Self <: Ael](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ael] (val x: Self) extends AnyVal {
       
       inline def setAel(value: (/* el */ Any, /* eventName */ String, /* listener */ Any, /* options */ Any) => Unit): Self = StObject.set(x, "ael", js.Any.fromFunction4(value))
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[PickHTMLElementdir]
     }
     
-    extension [Self <: PickHTMLElementdir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickHTMLElementdir] (val x: Self) extends AnyVal {
       
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     }

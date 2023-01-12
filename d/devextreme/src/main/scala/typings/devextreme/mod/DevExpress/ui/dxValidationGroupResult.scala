@@ -43,7 +43,8 @@ object dxValidationGroupResult {
     __obj.asInstanceOf[dxValidationGroupResult]
   }
   
-  extension [Self <: dxValidationGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxValidationGroupResult] (val x: Self) extends AnyVal {
     
     inline def setBrokenRules(
       value: js.Array[

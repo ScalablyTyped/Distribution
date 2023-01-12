@@ -29,7 +29,8 @@ object AboveNormal {
     __obj.asInstanceOf[AboveNormal]
   }
   
-  extension [Self <: AboveNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboveNormal] (val x: Self) extends AnyVal {
     
     inline def setAboveNormal(value: scala.Double): Self = StObject.set(x, "aboveNormal", value.asInstanceOf[js.Any])
     

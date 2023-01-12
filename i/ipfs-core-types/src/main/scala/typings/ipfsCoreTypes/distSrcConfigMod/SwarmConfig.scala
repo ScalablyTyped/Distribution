@@ -17,7 +17,8 @@ object SwarmConfig {
     __obj.asInstanceOf[SwarmConfig]
   }
   
-  extension [Self <: SwarmConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwarmConfig] (val x: Self) extends AnyVal {
     
     inline def setConnMgr(value: ConnMgrConfig): Self = StObject.set(x, "ConnMgr", value.asInstanceOf[js.Any])
     

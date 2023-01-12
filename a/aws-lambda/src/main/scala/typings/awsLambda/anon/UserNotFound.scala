@@ -20,7 +20,8 @@ object UserNotFound {
     __obj.asInstanceOf[UserNotFound]
   }
   
-  extension [Self <: UserNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserNotFound] (val x: Self) extends AnyVal {
     
     inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object libFunctionsFunctionsApiMod {
       __obj.asInstanceOf[AbsoluteDelivery]
     }
     
-    extension [Self <: AbsoluteDelivery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsoluteDelivery] (val x: Self) extends AnyVal {
       
       inline def setScheduleTime(value: js.Date): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object libFunctionsFunctionsApiMod {
       __obj.asInstanceOf[DelayDelivery]
     }
     
-    extension [Self <: DelayDelivery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayDelivery] (val x: Self) extends AnyVal {
       
       inline def setScheduleDelaySeconds(value: Double): Self = StObject.set(x, "scheduleDelaySeconds", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object libFunctionsFunctionsApiMod {
       __obj.asInstanceOf[TaskOptionsExperimental]
     }
     
-    extension [Self <: TaskOptionsExperimental](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptionsExperimental] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

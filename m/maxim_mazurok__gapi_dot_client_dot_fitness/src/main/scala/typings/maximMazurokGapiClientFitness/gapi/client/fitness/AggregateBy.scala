@@ -27,7 +27,8 @@ object AggregateBy {
     __obj.asInstanceOf[AggregateBy]
   }
   
-  extension [Self <: AggregateBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateBy] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: String): Self = StObject.set(x, "dataSourceId", value.asInstanceOf[js.Any])
     

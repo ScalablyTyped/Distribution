@@ -73,7 +73,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SVGInlineProps]
     }
     
-    extension [Self <: SVGInlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGInlineProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityDesc(value: String): Self = StObject.set(x, "accessibilityDesc", value.asInstanceOf[js.Any])
       

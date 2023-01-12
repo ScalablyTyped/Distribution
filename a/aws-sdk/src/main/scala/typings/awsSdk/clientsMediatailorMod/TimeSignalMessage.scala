@@ -18,7 +18,8 @@ object TimeSignalMessage {
     __obj.asInstanceOf[TimeSignalMessage]
   }
   
-  extension [Self <: TimeSignalMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSignalMessage] (val x: Self) extends AnyVal {
     
     inline def setSegmentationDescriptors(value: SegmentationDescriptorList): Self = StObject.set(x, "SegmentationDescriptors", value.asInstanceOf[js.Any])
     

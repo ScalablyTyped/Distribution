@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deinterleave"
-version := "1.0-dt-20221114Z-78a21c"
+version := "1.0-dt-20221114Z-40ba55"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

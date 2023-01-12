@@ -33,7 +33,8 @@ object IDisplayData {
     __obj.asInstanceOf[IDisplayData]
   }
   
-  extension [Self <: IDisplayData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisplayData] (val x: Self) extends AnyVal {
     
     inline def setData(value: IMimeBundle): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

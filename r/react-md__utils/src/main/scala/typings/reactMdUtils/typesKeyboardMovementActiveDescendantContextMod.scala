@@ -33,7 +33,8 @@ object typesKeyboardMovementActiveDescendantContextMod {
       __obj.asInstanceOf[ActiveDescendantContext]
     }
     
-    extension [Self <: ActiveDescendantContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDescendantContext] (val x: Self) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       

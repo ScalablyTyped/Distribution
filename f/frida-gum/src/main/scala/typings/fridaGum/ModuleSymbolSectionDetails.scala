@@ -23,7 +23,8 @@ object ModuleSymbolSectionDetails {
     __obj.asInstanceOf[ModuleSymbolSectionDetails]
   }
   
-  extension [Self <: ModuleSymbolSectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSymbolSectionDetails] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

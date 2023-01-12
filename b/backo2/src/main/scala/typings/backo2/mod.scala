@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[Backoff]
     }
     
-    extension [Self <: Backoff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Backoff] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[BackoffOptions]
     }
     
-    extension [Self <: BackoffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackoffOptions] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object PlusIoRelativeURL {
     __obj.asInstanceOf[PlusIoRelativeURL]
   }
   
-  extension [Self <: PlusIoRelativeURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusIoRelativeURL] (val x: Self) extends AnyVal {
     
     inline def set_doc(value: String): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
     

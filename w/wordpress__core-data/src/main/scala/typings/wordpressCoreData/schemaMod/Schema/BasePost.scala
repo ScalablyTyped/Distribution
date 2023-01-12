@@ -102,7 +102,8 @@ object BasePost {
     __obj.asInstanceOf[BasePost[T]]
   }
   
-  extension [Self <: BasePost[?], T /* <: Context */](x: Self & BasePost[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePost[?], T /* <: Context */] (val x: Self & BasePost[T]) extends AnyVal {
     
     inline def setAuthor(value: Double): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object IsLegacyPlugin {
     __obj.asInstanceOf[IsLegacyPlugin]
   }
   
-  extension [Self <: IsLegacyPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLegacyPlugin] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: (/* config */ ExpoConfig, ResolverError & Any) => ExpoConfig): Self = StObject.set(x, "fallback", js.Any.fromFunction2(value))
     

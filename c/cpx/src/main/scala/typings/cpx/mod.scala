@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[AsyncOptions]
     }
     
-    extension [Self <: AsyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncOptions] (val x: Self) extends AnyVal {
       
       inline def setTransform(value: /* filepath */ String => js.Array[Transform]): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[SyncOptions]
     }
     
-    extension [Self <: SyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialCopy(value: Boolean): Self = StObject.set(x, "initialCopy", value.asInstanceOf[js.Any])
       

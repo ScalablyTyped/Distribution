@@ -28,7 +28,8 @@ object Taint {
     __obj.asInstanceOf[Taint]
   }
   
-  extension [Self <: Taint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Taint] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: TaintEffect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

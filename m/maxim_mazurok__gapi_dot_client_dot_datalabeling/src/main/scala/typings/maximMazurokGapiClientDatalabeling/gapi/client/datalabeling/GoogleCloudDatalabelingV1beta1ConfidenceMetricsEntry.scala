@@ -47,7 +47,8 @@ object GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ConfidenceMetricsEntry] (val x: Self) extends AnyVal {
     
     inline def setConfidenceThreshold(value: Double): Self = StObject.set(x, "confidenceThreshold", value.asInstanceOf[js.Any])
     

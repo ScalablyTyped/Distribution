@@ -38,7 +38,8 @@ object DocumentClassifierSummary {
     __obj.asInstanceOf[DocumentClassifierSummary]
   }
   
-  extension [Self <: DocumentClassifierSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentClassifierSummary] (val x: Self) extends AnyVal {
     
     inline def setDocumentClassifierName(value: ComprehendArnName): Self = StObject.set(x, "DocumentClassifierName", value.asInstanceOf[js.Any])
     

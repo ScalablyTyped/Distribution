@@ -135,7 +135,8 @@ object sapUiTestMatchersAggregationFilledMod {
       __obj.asInstanceOf[AggregationFilledSettings]
     }
     
-    extension [Self <: AggregationFilledSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationFilledSettings] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

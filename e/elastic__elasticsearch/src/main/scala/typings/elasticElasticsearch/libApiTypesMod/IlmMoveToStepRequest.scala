@@ -21,7 +21,8 @@ object IlmMoveToStepRequest {
     __obj.asInstanceOf[IlmMoveToStepRequest]
   }
   
-  extension [Self <: IlmMoveToStepRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmMoveToStepRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrent_step(value: IlmMoveToStepStepKey): Self = StObject.set(x, "current_step", value.asInstanceOf[js.Any])
     

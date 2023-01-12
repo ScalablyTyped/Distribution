@@ -17,7 +17,8 @@ object Viewport {
     __obj.asInstanceOf[Viewport]
   }
   
-  extension [Self <: Viewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
     
     inline def setPostscale(value: Matrix): Self = StObject.set(x, "postscale", value.asInstanceOf[js.Any])
     

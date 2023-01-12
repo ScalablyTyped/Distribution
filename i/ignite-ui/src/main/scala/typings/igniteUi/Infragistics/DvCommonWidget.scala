@@ -15,7 +15,8 @@ object DvCommonWidget {
     __obj.asInstanceOf[DvCommonWidget]
   }
   
-  extension [Self <: DvCommonWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DvCommonWidget] (val x: Self) extends AnyVal {
     
     inline def setOption(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
   }

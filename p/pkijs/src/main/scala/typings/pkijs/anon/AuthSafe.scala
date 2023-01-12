@@ -21,7 +21,8 @@ object AuthSafe {
     __obj.asInstanceOf[AuthSafe]
   }
   
-  extension [Self <: AuthSafe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthSafe] (val x: Self) extends AnyVal {
     
     inline def setAuthSafe(value: ContentInfoSchema): Self = StObject.set(x, "authSafe", value.asInstanceOf[js.Any])
     

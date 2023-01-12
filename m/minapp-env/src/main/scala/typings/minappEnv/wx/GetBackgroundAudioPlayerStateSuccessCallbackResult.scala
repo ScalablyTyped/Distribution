@@ -42,7 +42,8 @@ object GetBackgroundAudioPlayerStateSuccessCallbackResult {
     __obj.asInstanceOf[GetBackgroundAudioPlayerStateSuccessCallbackResult]
   }
   
-  extension [Self <: GetBackgroundAudioPlayerStateSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackgroundAudioPlayerStateSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object BatchGetItemInput {
     __obj.asInstanceOf[BatchGetItemInput]
   }
   
-  extension [Self <: BatchGetItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetItemInput] (val x: Self) extends AnyVal {
     
     inline def setRequestItems(value: BatchGetRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
     

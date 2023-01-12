@@ -818,7 +818,8 @@ object Sheets {
           __obj.asInstanceOf[DeveloperMetadataCollection]
         }
         
-        extension [Self <: DeveloperMetadataCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DeveloperMetadataCollection] (val x: Self) extends AnyVal {
           
           inline def setGet(value: (String, Double) => DeveloperMetadata): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
           
@@ -839,7 +840,8 @@ object Sheets {
           __obj.asInstanceOf[SheetsCollection]
         }
         
-        extension [Self <: SheetsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SheetsCollection] (val x: Self) extends AnyVal {
           
           inline def setCopyTo(value: (CopySheetToAnotherSpreadsheetRequest, String, Double) => SheetProperties): Self = StObject.set(x, "copyTo", js.Any.fromFunction3(value))
         }
@@ -1025,7 +1027,8 @@ object Sheets {
     }
   }
   
-  extension [Self <: Sheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheets] (val x: Self) extends AnyVal {
     
     inline def setNewAddBandingRequest(value: () => AddBandingRequest): Self = StObject.set(x, "newAddBandingRequest", js.Any.fromFunction0(value))
     
@@ -1349,7 +1352,8 @@ object Sheets {
         __obj.asInstanceOf[AddBandingRequest]
       }
       
-      extension [Self <: AddBandingRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddBandingRequest] (val x: Self) extends AnyVal {
         
         inline def setBandedRange(value: BandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
         
@@ -1368,7 +1372,8 @@ object Sheets {
         __obj.asInstanceOf[AddBandingResponse]
       }
       
-      extension [Self <: AddBandingResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddBandingResponse] (val x: Self) extends AnyVal {
         
         inline def setBandedRange(value: BandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
         
@@ -1387,7 +1392,8 @@ object Sheets {
         __obj.asInstanceOf[AddChartRequest]
       }
       
-      extension [Self <: AddChartRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddChartRequest] (val x: Self) extends AnyVal {
         
         inline def setChart(value: EmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
         
@@ -1406,7 +1412,8 @@ object Sheets {
         __obj.asInstanceOf[AddChartResponse]
       }
       
-      extension [Self <: AddChartResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddChartResponse] (val x: Self) extends AnyVal {
         
         inline def setChart(value: EmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
         
@@ -1427,7 +1434,8 @@ object Sheets {
         __obj.asInstanceOf[AddConditionalFormatRuleRequest]
       }
       
-      extension [Self <: AddConditionalFormatRuleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -1450,7 +1458,8 @@ object Sheets {
         __obj.asInstanceOf[AddDimensionGroupRequest]
       }
       
-      extension [Self <: AddDimensionGroupRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddDimensionGroupRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -1469,7 +1478,8 @@ object Sheets {
         __obj.asInstanceOf[AddDimensionGroupResponse]
       }
       
-      extension [Self <: AddDimensionGroupResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddDimensionGroupResponse] (val x: Self) extends AnyVal {
         
         inline def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
         
@@ -1490,7 +1500,8 @@ object Sheets {
         __obj.asInstanceOf[AddFilterViewRequest]
       }
       
-      extension [Self <: AddFilterViewRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddFilterViewRequest] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
@@ -1509,7 +1520,8 @@ object Sheets {
         __obj.asInstanceOf[AddFilterViewResponse]
       }
       
-      extension [Self <: AddFilterViewResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddFilterViewResponse] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
@@ -1528,7 +1540,8 @@ object Sheets {
         __obj.asInstanceOf[AddNamedRangeRequest]
       }
       
-      extension [Self <: AddNamedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddNamedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setNamedRange(value: NamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
         
@@ -1547,7 +1560,8 @@ object Sheets {
         __obj.asInstanceOf[AddNamedRangeResponse]
       }
       
-      extension [Self <: AddNamedRangeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddNamedRangeResponse] (val x: Self) extends AnyVal {
         
         inline def setNamedRange(value: NamedRange): Self = StObject.set(x, "namedRange", value.asInstanceOf[js.Any])
         
@@ -1566,7 +1580,8 @@ object Sheets {
         __obj.asInstanceOf[AddProtectedRangeRequest]
       }
       
-      extension [Self <: AddProtectedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddProtectedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
         
@@ -1585,7 +1600,8 @@ object Sheets {
         __obj.asInstanceOf[AddProtectedRangeResponse]
       }
       
-      extension [Self <: AddProtectedRangeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddProtectedRangeResponse] (val x: Self) extends AnyVal {
         
         inline def setProtectedRange(value: ProtectedRange): Self = StObject.set(x, "protectedRange", value.asInstanceOf[js.Any])
         
@@ -1604,7 +1620,8 @@ object Sheets {
         __obj.asInstanceOf[AddSheetRequest]
       }
       
-      extension [Self <: AddSheetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddSheetRequest] (val x: Self) extends AnyVal {
         
         inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -1623,7 +1640,8 @@ object Sheets {
         __obj.asInstanceOf[AddSheetResponse]
       }
       
-      extension [Self <: AddSheetResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddSheetResponse] (val x: Self) extends AnyVal {
         
         inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -1646,7 +1664,8 @@ object Sheets {
         __obj.asInstanceOf[AppendCellsRequest]
       }
       
-      extension [Self <: AppendCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppendCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -1679,7 +1698,8 @@ object Sheets {
         __obj.asInstanceOf[AppendDimensionRequest]
       }
       
-      extension [Self <: AppendDimensionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppendDimensionRequest] (val x: Self) extends AnyVal {
         
         inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
         
@@ -1710,7 +1730,8 @@ object Sheets {
         __obj.asInstanceOf[AppendValuesResponse]
       }
       
-      extension [Self <: AppendValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppendValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -1741,7 +1762,8 @@ object Sheets {
         __obj.asInstanceOf[AutoFillRequest]
       }
       
-      extension [Self <: AutoFillRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AutoFillRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -1768,7 +1790,8 @@ object Sheets {
         __obj.asInstanceOf[AutoResizeDimensionsRequest]
       }
       
-      extension [Self <: AutoResizeDimensionsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AutoResizeDimensionsRequest] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: DimensionRange): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
         
@@ -1793,7 +1816,8 @@ object Sheets {
         __obj.asInstanceOf[BandedRange]
       }
       
-      extension [Self <: BandedRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BandedRange] (val x: Self) extends AnyVal {
         
         inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
         
@@ -1830,7 +1854,8 @@ object Sheets {
         __obj.asInstanceOf[BandingProperties]
       }
       
-      extension [Self <: BandingProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BandingProperties] (val x: Self) extends AnyVal {
         
         inline def setFirstBandColor(value: Color): Self = StObject.set(x, "firstBandColor", value.asInstanceOf[js.Any])
         
@@ -1867,7 +1892,8 @@ object Sheets {
         __obj.asInstanceOf[BasicChartAxis]
       }
       
-      extension [Self <: BasicChartAxis](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicChartAxis] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -1900,7 +1926,8 @@ object Sheets {
         __obj.asInstanceOf[BasicChartDomain]
       }
       
-      extension [Self <: BasicChartDomain](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicChartDomain] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -1931,7 +1958,8 @@ object Sheets {
         __obj.asInstanceOf[BasicChartSeries]
       }
       
-      extension [Self <: BasicChartSeries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicChartSeries] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1986,7 +2014,8 @@ object Sheets {
         __obj.asInstanceOf[BasicChartSpec]
       }
       
-      extension [Self <: BasicChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicChartSpec] (val x: Self) extends AnyVal {
         
         inline def setAxis(value: js.Array[BasicChartAxis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
         
@@ -2055,7 +2084,8 @@ object Sheets {
         __obj.asInstanceOf[BasicFilter]
       }
       
-      extension [Self <: BasicFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BasicFilter] (val x: Self) extends AnyVal {
         
         inline def setCriteria(value: js.Object): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
         
@@ -2084,7 +2114,8 @@ object Sheets {
         __obj.asInstanceOf[BatchClearValuesByDataFilterRequest]
       }
       
-      extension [Self <: BatchClearValuesByDataFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchClearValuesByDataFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -2107,7 +2138,8 @@ object Sheets {
         __obj.asInstanceOf[BatchClearValuesByDataFilterResponse]
       }
       
-      extension [Self <: BatchClearValuesByDataFilterResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchClearValuesByDataFilterResponse] (val x: Self) extends AnyVal {
         
         inline def setClearedRanges(value: js.Array[String]): Self = StObject.set(x, "clearedRanges", value.asInstanceOf[js.Any])
         
@@ -2132,7 +2164,8 @@ object Sheets {
         __obj.asInstanceOf[BatchClearValuesRequest]
       }
       
-      extension [Self <: BatchClearValuesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchClearValuesRequest] (val x: Self) extends AnyVal {
         
         inline def setRanges(value: js.Array[String]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
         
@@ -2155,7 +2188,8 @@ object Sheets {
         __obj.asInstanceOf[BatchClearValuesResponse]
       }
       
-      extension [Self <: BatchClearValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchClearValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setClearedRanges(value: js.Array[String]): Self = StObject.set(x, "clearedRanges", value.asInstanceOf[js.Any])
         
@@ -2186,7 +2220,8 @@ object Sheets {
         __obj.asInstanceOf[BatchGetValuesByDataFilterRequest]
       }
       
-      extension [Self <: BatchGetValuesByDataFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchGetValuesByDataFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -2221,7 +2256,8 @@ object Sheets {
         __obj.asInstanceOf[BatchGetValuesByDataFilterResponse]
       }
       
-      extension [Self <: BatchGetValuesByDataFilterResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchGetValuesByDataFilterResponse] (val x: Self) extends AnyVal {
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -2248,7 +2284,8 @@ object Sheets {
         __obj.asInstanceOf[BatchGetValuesResponse]
       }
       
-      extension [Self <: BatchGetValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchGetValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -2279,7 +2316,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateSpreadsheetRequest]
       }
       
-      extension [Self <: BatchUpdateSpreadsheetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateSpreadsheetRequest] (val x: Self) extends AnyVal {
         
         inline def setIncludeSpreadsheetInResponse(value: Boolean): Self = StObject.set(x, "includeSpreadsheetInResponse", value.asInstanceOf[js.Any])
         
@@ -2318,7 +2356,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateSpreadsheetResponse]
       }
       
-      extension [Self <: BatchUpdateSpreadsheetResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateSpreadsheetResponse] (val x: Self) extends AnyVal {
         
         inline def setReplies(value: js.Array[Response]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
         
@@ -2355,7 +2394,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateValuesByDataFilterRequest]
       }
       
-      extension [Self <: BatchUpdateValuesByDataFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateValuesByDataFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Array[DataFilterValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -2402,7 +2442,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateValuesByDataFilterResponse]
       }
       
-      extension [Self <: BatchUpdateValuesByDataFilterResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
         
         inline def setResponses(value: js.Array[UpdateValuesByDataFilterResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
         
@@ -2451,7 +2492,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateValuesRequest]
       }
       
-      extension [Self <: BatchUpdateValuesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateValuesRequest] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Array[ValueRange]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -2498,7 +2540,8 @@ object Sheets {
         __obj.asInstanceOf[BatchUpdateValuesResponse]
       }
       
-      extension [Self <: BatchUpdateValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setResponses(value: js.Array[UpdateValuesResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
         
@@ -2541,7 +2584,8 @@ object Sheets {
         __obj.asInstanceOf[BooleanCondition]
       }
       
-      extension [Self <: BooleanCondition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BooleanCondition] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -2568,7 +2612,8 @@ object Sheets {
         __obj.asInstanceOf[BooleanRule]
       }
       
-      extension [Self <: BooleanRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BooleanRule] (val x: Self) extends AnyVal {
         
         inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
         
@@ -2595,7 +2640,8 @@ object Sheets {
         __obj.asInstanceOf[Border]
       }
       
-      extension [Self <: Border](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -2628,7 +2674,8 @@ object Sheets {
         __obj.asInstanceOf[Borders]
       }
       
-      extension [Self <: Borders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Borders] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Border): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -2679,7 +2726,8 @@ object Sheets {
         __obj.asInstanceOf[BubbleChartSpec]
       }
       
-      extension [Self <: BubbleChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BubbleChartSpec] (val x: Self) extends AnyVal {
         
         inline def setBubbleBorderColor(value: Color): Self = StObject.set(x, "bubbleBorderColor", value.asInstanceOf[js.Any])
         
@@ -2740,7 +2788,8 @@ object Sheets {
         __obj.asInstanceOf[CandlestickChartSpec]
       }
       
-      extension [Self <: CandlestickChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CandlestickChartSpec] (val x: Self) extends AnyVal {
         
         inline def setData(value: js.Array[CandlestickData]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -2771,7 +2820,8 @@ object Sheets {
         __obj.asInstanceOf[CandlestickData]
       }
       
-      extension [Self <: CandlestickData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CandlestickData] (val x: Self) extends AnyVal {
         
         inline def setCloseSeries(value: CandlestickSeries): Self = StObject.set(x, "closeSeries", value.asInstanceOf[js.Any])
         
@@ -2804,7 +2854,8 @@ object Sheets {
         __obj.asInstanceOf[CandlestickDomain]
       }
       
-      extension [Self <: CandlestickDomain](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CandlestickDomain] (val x: Self) extends AnyVal {
         
         inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -2827,7 +2878,8 @@ object Sheets {
         __obj.asInstanceOf[CandlestickSeries]
       }
       
-      extension [Self <: CandlestickSeries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CandlestickSeries] (val x: Self) extends AnyVal {
         
         inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -2864,7 +2916,8 @@ object Sheets {
         __obj.asInstanceOf[CellData]
       }
       
-      extension [Self <: CellData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellData] (val x: Self) extends AnyVal {
         
         inline def setDataValidation(value: DataValidationRule): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
         
@@ -2941,7 +2994,8 @@ object Sheets {
         __obj.asInstanceOf[CellFormat]
       }
       
-      extension [Self <: CellFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CellFormat] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -3000,7 +3054,8 @@ object Sheets {
         __obj.asInstanceOf[ChartData]
       }
       
-      extension [Self <: ChartData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
         
         inline def setSourceRange(value: ChartSourceRange): Self = StObject.set(x, "sourceRange", value.asInstanceOf[js.Any])
         
@@ -3019,7 +3074,8 @@ object Sheets {
         __obj.asInstanceOf[ChartSourceRange]
       }
       
-      extension [Self <: ChartSourceRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartSourceRange] (val x: Self) extends AnyVal {
         
         inline def setSources(value: js.Array[GridRange]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
         
@@ -3076,7 +3132,8 @@ object Sheets {
         __obj.asInstanceOf[ChartSpec]
       }
       
-      extension [Self <: ChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChartSpec] (val x: Self) extends AnyVal {
         
         inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
         
@@ -3167,7 +3224,8 @@ object Sheets {
         __obj.asInstanceOf[ClearBasicFilterRequest]
       }
       
-      extension [Self <: ClearBasicFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClearBasicFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
         
@@ -3188,7 +3246,8 @@ object Sheets {
         __obj.asInstanceOf[ClearValuesResponse]
       }
       
-      extension [Self <: ClearValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ClearValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setClearedRange(value: String): Self = StObject.set(x, "clearedRange", value.asInstanceOf[js.Any])
         
@@ -3217,7 +3276,8 @@ object Sheets {
         __obj.asInstanceOf[Color]
       }
       
-      extension [Self <: Color](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
         
         inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
         
@@ -3250,7 +3310,8 @@ object Sheets {
         __obj.asInstanceOf[ConditionValue]
       }
       
-      extension [Self <: ConditionValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConditionValue] (val x: Self) extends AnyVal {
         
         inline def setRelativeDate(value: String): Self = StObject.set(x, "relativeDate", value.asInstanceOf[js.Any])
         
@@ -3277,7 +3338,8 @@ object Sheets {
         __obj.asInstanceOf[ConditionalFormatRule]
       }
       
-      extension [Self <: ConditionalFormatRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConditionalFormatRule] (val x: Self) extends AnyVal {
         
         inline def setBooleanRule(value: BooleanRule): Self = StObject.set(x, "booleanRule", value.asInstanceOf[js.Any])
         
@@ -3312,7 +3374,8 @@ object Sheets {
         __obj.asInstanceOf[CopyPasteRequest]
       }
       
-      extension [Self <: CopyPasteRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CopyPasteRequest] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: GridRange): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
@@ -3343,7 +3406,8 @@ object Sheets {
         __obj.asInstanceOf[CopySheetToAnotherSpreadsheetRequest]
       }
       
-      extension [Self <: CopySheetToAnotherSpreadsheetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CopySheetToAnotherSpreadsheetRequest] (val x: Self) extends AnyVal {
         
         inline def setDestinationSpreadsheetId(value: String): Self = StObject.set(x, "destinationSpreadsheetId", value.asInstanceOf[js.Any])
         
@@ -3362,7 +3426,8 @@ object Sheets {
         __obj.asInstanceOf[CreateDeveloperMetadataRequest]
       }
       
-      extension [Self <: CreateDeveloperMetadataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDeveloperMetadataRequest] (val x: Self) extends AnyVal {
         
         inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -3381,7 +3446,8 @@ object Sheets {
         __obj.asInstanceOf[CreateDeveloperMetadataResponse]
       }
       
-      extension [Self <: CreateDeveloperMetadataResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
         
         inline def setDeveloperMetadata(value: DeveloperMetadata): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -3404,7 +3470,8 @@ object Sheets {
         __obj.asInstanceOf[CutPasteRequest]
       }
       
-      extension [Self <: CutPasteRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CutPasteRequest] (val x: Self) extends AnyVal {
         
         inline def setDestination(value: GridCoordinate): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
         
@@ -3435,7 +3502,8 @@ object Sheets {
         __obj.asInstanceOf[DataFilter]
       }
       
-      extension [Self <: DataFilter](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataFilter] (val x: Self) extends AnyVal {
         
         inline def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
         
@@ -3466,7 +3534,8 @@ object Sheets {
         __obj.asInstanceOf[DataFilterValueRange]
       }
       
-      extension [Self <: DataFilterValueRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataFilterValueRange] (val x: Self) extends AnyVal {
         
         inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
         
@@ -3501,7 +3570,8 @@ object Sheets {
         __obj.asInstanceOf[DataValidationRule]
       }
       
-      extension [Self <: DataValidationRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataValidationRule] (val x: Self) extends AnyVal {
         
         inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
         
@@ -3532,7 +3602,8 @@ object Sheets {
         __obj.asInstanceOf[DateTimeRule]
       }
       
-      extension [Self <: DateTimeRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DateTimeRule] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -3551,7 +3622,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteBandingRequest]
       }
       
-      extension [Self <: DeleteBandingRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteBandingRequest] (val x: Self) extends AnyVal {
         
         inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
         
@@ -3572,7 +3644,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteConditionalFormatRuleRequest]
       }
       
-      extension [Self <: DeleteConditionalFormatRuleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -3595,7 +3668,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteConditionalFormatRuleResponse]
       }
       
-      extension [Self <: DeleteConditionalFormatRuleResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
         
         inline def setRule(value: ConditionalFormatRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
         
@@ -3614,7 +3688,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteDeveloperMetadataRequest]
       }
       
-      extension [Self <: DeleteDeveloperMetadataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteDeveloperMetadataRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
         
@@ -3633,7 +3708,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteDeveloperMetadataResponse]
       }
       
-      extension [Self <: DeleteDeveloperMetadataResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteDeveloperMetadataResponse] (val x: Self) extends AnyVal {
         
         inline def setDeletedDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "deletedDeveloperMetadata", value.asInstanceOf[js.Any])
         
@@ -3654,7 +3730,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteDimensionGroupRequest]
       }
       
-      extension [Self <: DeleteDimensionGroupRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteDimensionGroupRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -3673,7 +3750,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteDimensionGroupResponse]
       }
       
-      extension [Self <: DeleteDimensionGroupResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteDimensionGroupResponse] (val x: Self) extends AnyVal {
         
         inline def setDimensionGroups(value: js.Array[DimensionGroup]): Self = StObject.set(x, "dimensionGroups", value.asInstanceOf[js.Any])
         
@@ -3694,7 +3772,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteDimensionRequest]
       }
       
-      extension [Self <: DeleteDimensionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteDimensionRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -3713,7 +3792,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteEmbeddedObjectRequest]
       }
       
-      extension [Self <: DeleteEmbeddedObjectRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteEmbeddedObjectRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: Double): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -3732,7 +3812,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteFilterViewRequest]
       }
       
-      extension [Self <: DeleteFilterViewRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteFilterViewRequest] (val x: Self) extends AnyVal {
         
         inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
         
@@ -3751,7 +3832,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteNamedRangeRequest]
       }
       
-      extension [Self <: DeleteNamedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteNamedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
         
@@ -3770,7 +3852,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteProtectedRangeRequest]
       }
       
-      extension [Self <: DeleteProtectedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteProtectedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
         
@@ -3791,7 +3874,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteRangeRequest]
       }
       
-      extension [Self <: DeleteRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -3814,7 +3898,8 @@ object Sheets {
         __obj.asInstanceOf[DeleteSheetRequest]
       }
       
-      extension [Self <: DeleteSheetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteSheetRequest] (val x: Self) extends AnyVal {
         
         inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
         
@@ -3841,7 +3926,8 @@ object Sheets {
         __obj.asInstanceOf[DeveloperMetadata]
       }
       
-      extension [Self <: DeveloperMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeveloperMetadata] (val x: Self) extends AnyVal {
         
         inline def setLocation(value: DeveloperMetadataLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
@@ -3882,7 +3968,8 @@ object Sheets {
         __obj.asInstanceOf[DeveloperMetadataLocation]
       }
       
-      extension [Self <: DeveloperMetadataLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
         
         inline def setDimensionRange(value: DimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
         
@@ -3925,7 +4012,8 @@ object Sheets {
         __obj.asInstanceOf[DeveloperMetadataLookup]
       }
       
-      extension [Self <: DeveloperMetadataLookup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeveloperMetadataLookup] (val x: Self) extends AnyVal {
         
         inline def setLocationMatchingStrategy(value: String): Self = StObject.set(x, "locationMatchingStrategy", value.asInstanceOf[js.Any])
         
@@ -3972,7 +4060,8 @@ object Sheets {
         __obj.asInstanceOf[DimensionGroup]
       }
       
-      extension [Self <: DimensionGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionGroup] (val x: Self) extends AnyVal {
         
         inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
@@ -4005,7 +4094,8 @@ object Sheets {
         __obj.asInstanceOf[DimensionProperties]
       }
       
-      extension [Self <: DimensionProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionProperties] (val x: Self) extends AnyVal {
         
         inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -4044,7 +4134,8 @@ object Sheets {
         __obj.asInstanceOf[DimensionRange]
       }
       
-      extension [Self <: DimensionRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DimensionRange] (val x: Self) extends AnyVal {
         
         inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
         
@@ -4075,7 +4166,8 @@ object Sheets {
         __obj.asInstanceOf[DuplicateFilterViewRequest]
       }
       
-      extension [Self <: DuplicateFilterViewRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateFilterViewRequest] (val x: Self) extends AnyVal {
         
         inline def setFilterId(value: Double): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
         
@@ -4094,7 +4186,8 @@ object Sheets {
         __obj.asInstanceOf[DuplicateFilterViewResponse]
       }
       
-      extension [Self <: DuplicateFilterViewResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateFilterViewResponse] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: FilterView): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
@@ -4119,7 +4212,8 @@ object Sheets {
         __obj.asInstanceOf[DuplicateSheetRequest]
       }
       
-      extension [Self <: DuplicateSheetRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateSheetRequest] (val x: Self) extends AnyVal {
         
         inline def setInsertSheetIndex(value: Double): Self = StObject.set(x, "insertSheetIndex", value.asInstanceOf[js.Any])
         
@@ -4150,7 +4244,8 @@ object Sheets {
         __obj.asInstanceOf[DuplicateSheetResponse]
       }
       
-      extension [Self <: DuplicateSheetResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DuplicateSheetResponse] (val x: Self) extends AnyVal {
         
         inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
         
@@ -4173,7 +4268,8 @@ object Sheets {
         __obj.asInstanceOf[Editors]
       }
       
-      extension [Self <: Editors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Editors] (val x: Self) extends AnyVal {
         
         inline def setDomainUsersCanEdit(value: Boolean): Self = StObject.set(x, "domainUsersCanEdit", value.asInstanceOf[js.Any])
         
@@ -4208,7 +4304,8 @@ object Sheets {
         __obj.asInstanceOf[EmbeddedChart]
       }
       
-      extension [Self <: EmbeddedChart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedChart] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -4239,7 +4336,8 @@ object Sheets {
         __obj.asInstanceOf[EmbeddedObjectPosition]
       }
       
-      extension [Self <: EmbeddedObjectPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedObjectPosition] (val x: Self) extends AnyVal {
         
         inline def setNewSheet(value: Boolean): Self = StObject.set(x, "newSheet", value.asInstanceOf[js.Any])
         
@@ -4268,7 +4366,8 @@ object Sheets {
         __obj.asInstanceOf[ErrorValue]
       }
       
-      extension [Self <: ErrorValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorValue] (val x: Self) extends AnyVal {
         
         inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
@@ -4299,7 +4398,8 @@ object Sheets {
         __obj.asInstanceOf[ExtendedValue]
       }
       
-      extension [Self <: ExtendedValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtendedValue] (val x: Self) extends AnyVal {
         
         inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
         
@@ -4336,7 +4436,8 @@ object Sheets {
         __obj.asInstanceOf[FilterCriteria]
       }
       
-      extension [Self <: FilterCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterCriteria] (val x: Self) extends AnyVal {
         
         inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
         
@@ -4371,7 +4472,8 @@ object Sheets {
         __obj.asInstanceOf[FilterView]
       }
       
-      extension [Self <: FilterView](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FilterView] (val x: Self) extends AnyVal {
         
         inline def setCriteria(value: js.Object): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
         
@@ -4428,7 +4530,8 @@ object Sheets {
         __obj.asInstanceOf[FindReplaceRequest]
       }
       
-      extension [Self <: FindReplaceRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindReplaceRequest] (val x: Self) extends AnyVal {
         
         inline def setAllSheets(value: Boolean): Self = StObject.set(x, "allSheets", value.asInstanceOf[js.Any])
         
@@ -4487,7 +4590,8 @@ object Sheets {
         __obj.asInstanceOf[FindReplaceResponse]
       }
       
-      extension [Self <: FindReplaceResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindReplaceResponse] (val x: Self) extends AnyVal {
         
         inline def setFormulasChanged(value: Double): Self = StObject.set(x, "formulasChanged", value.asInstanceOf[js.Any])
         
@@ -4524,7 +4628,8 @@ object Sheets {
         __obj.asInstanceOf[GetSpreadsheetByDataFilterRequest]
       }
       
-      extension [Self <: GetSpreadsheetByDataFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetSpreadsheetByDataFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -4553,7 +4658,8 @@ object Sheets {
         __obj.asInstanceOf[GradientRule]
       }
       
-      extension [Self <: GradientRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GradientRule] (val x: Self) extends AnyVal {
         
         inline def setMaxpoint(value: InterpolationPoint): Self = StObject.set(x, "maxpoint", value.asInstanceOf[js.Any])
         
@@ -4584,7 +4690,8 @@ object Sheets {
         __obj.asInstanceOf[GridCoordinate]
       }
       
-      extension [Self <: GridCoordinate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GridCoordinate] (val x: Self) extends AnyVal {
         
         inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
         
@@ -4619,7 +4726,8 @@ object Sheets {
         __obj.asInstanceOf[GridData]
       }
       
-      extension [Self <: GridData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GridData] (val x: Self) extends AnyVal {
         
         inline def setColumnMetadata(value: js.Array[DimensionProperties]): Self = StObject.set(x, "columnMetadata", value.asInstanceOf[js.Any])
         
@@ -4672,7 +4780,8 @@ object Sheets {
         __obj.asInstanceOf[GridProperties]
       }
       
-      extension [Self <: GridProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GridProperties] (val x: Self) extends AnyVal {
         
         inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
         
@@ -4723,7 +4832,8 @@ object Sheets {
         __obj.asInstanceOf[GridRange]
       }
       
-      extension [Self <: GridRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GridRange] (val x: Self) extends AnyVal {
         
         inline def setEndColumnIndex(value: Double): Self = StObject.set(x, "endColumnIndex", value.asInstanceOf[js.Any])
         
@@ -4766,7 +4876,8 @@ object Sheets {
         __obj.asInstanceOf[HistogramChartSpec]
       }
       
-      extension [Self <: HistogramChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistogramChartSpec] (val x: Self) extends AnyVal {
         
         inline def setBucketSize(value: Double): Self = StObject.set(x, "bucketSize", value.asInstanceOf[js.Any])
         
@@ -4807,7 +4918,8 @@ object Sheets {
         __obj.asInstanceOf[HistogramRule]
       }
       
-      extension [Self <: HistogramRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistogramRule] (val x: Self) extends AnyVal {
         
         inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
@@ -4836,7 +4948,8 @@ object Sheets {
         __obj.asInstanceOf[HistogramSeries]
       }
       
-      extension [Self <: HistogramSeries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HistogramSeries] (val x: Self) extends AnyVal {
         
         inline def setBarColor(value: Color): Self = StObject.set(x, "barColor", value.asInstanceOf[js.Any])
         
@@ -4861,7 +4974,8 @@ object Sheets {
         __obj.asInstanceOf[InsertDimensionRequest]
       }
       
-      extension [Self <: InsertDimensionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertDimensionRequest] (val x: Self) extends AnyVal {
         
         inline def setInheritFromBefore(value: Boolean): Self = StObject.set(x, "inheritFromBefore", value.asInstanceOf[js.Any])
         
@@ -4886,7 +5000,8 @@ object Sheets {
         __obj.asInstanceOf[InsertRangeRequest]
       }
       
-      extension [Self <: InsertRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -4913,7 +5028,8 @@ object Sheets {
         __obj.asInstanceOf[InterpolationPoint]
       }
       
-      extension [Self <: InterpolationPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InterpolationPoint] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -4942,7 +5058,8 @@ object Sheets {
         __obj.asInstanceOf[IterativeCalculationSettings]
       }
       
-      extension [Self <: IterativeCalculationSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IterativeCalculationSettings] (val x: Self) extends AnyVal {
         
         inline def setConvergenceThreshold(value: Double): Self = StObject.set(x, "convergenceThreshold", value.asInstanceOf[js.Any])
         
@@ -4967,7 +5084,8 @@ object Sheets {
         __obj.asInstanceOf[LineStyle]
       }
       
-      extension [Self <: LineStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
@@ -4990,7 +5108,8 @@ object Sheets {
         __obj.asInstanceOf[ManualRule]
       }
       
-      extension [Self <: ManualRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ManualRule] (val x: Self) extends AnyVal {
         
         inline def setGroups(value: js.Array[ManualRuleGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
         
@@ -5013,7 +5132,8 @@ object Sheets {
         __obj.asInstanceOf[ManualRuleGroup]
       }
       
-      extension [Self <: ManualRuleGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ManualRuleGroup] (val x: Self) extends AnyVal {
         
         inline def setGroupName(value: ExtendedValue): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
         
@@ -5040,7 +5160,8 @@ object Sheets {
         __obj.asInstanceOf[MatchedDeveloperMetadata]
       }
       
-      extension [Self <: MatchedDeveloperMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MatchedDeveloperMetadata] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -5067,7 +5188,8 @@ object Sheets {
         __obj.asInstanceOf[MatchedValueRange]
       }
       
-      extension [Self <: MatchedValueRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MatchedValueRange] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -5094,7 +5216,8 @@ object Sheets {
         __obj.asInstanceOf[MergeCellsRequest]
       }
       
-      extension [Self <: MergeCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MergeCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
         
@@ -5119,7 +5242,8 @@ object Sheets {
         __obj.asInstanceOf[MoveDimensionRequest]
       }
       
-      extension [Self <: MoveDimensionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoveDimensionRequest] (val x: Self) extends AnyVal {
         
         inline def setDestinationIndex(value: Double): Self = StObject.set(x, "destinationIndex", value.asInstanceOf[js.Any])
         
@@ -5146,7 +5270,8 @@ object Sheets {
         __obj.asInstanceOf[NamedRange]
       }
       
-      extension [Self <: NamedRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -5175,7 +5300,8 @@ object Sheets {
         __obj.asInstanceOf[NumberFormat]
       }
       
-      extension [Self <: NumberFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberFormat] (val x: Self) extends AnyVal {
         
         inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
         
@@ -5208,7 +5334,8 @@ object Sheets {
         __obj.asInstanceOf[OrgChartSpec]
       }
       
-      extension [Self <: OrgChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OrgChartSpec] (val x: Self) extends AnyVal {
         
         inline def setLabels(value: ChartData): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
@@ -5255,7 +5382,8 @@ object Sheets {
         __obj.asInstanceOf[OverlayPosition]
       }
       
-      extension [Self <: OverlayPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverlayPosition] (val x: Self) extends AnyVal {
         
         inline def setAnchorCell(value: GridCoordinate): Self = StObject.set(x, "anchorCell", value.asInstanceOf[js.Any])
         
@@ -5296,7 +5424,8 @@ object Sheets {
         __obj.asInstanceOf[Padding]
       }
       
-      extension [Self <: Padding](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -5335,7 +5464,8 @@ object Sheets {
         __obj.asInstanceOf[PasteDataRequest]
       }
       
-      extension [Self <: PasteDataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PasteDataRequest] (val x: Self) extends AnyVal {
         
         inline def setCoordinate(value: GridCoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
         
@@ -5378,7 +5508,8 @@ object Sheets {
         __obj.asInstanceOf[PieChartSpec]
       }
       
-      extension [Self <: PieChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PieChartSpec] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: ChartData): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -5413,7 +5544,8 @@ object Sheets {
         __obj.asInstanceOf[PivotFilterCriteria]
       }
       
-      extension [Self <: PivotFilterCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotFilterCriteria] (val x: Self) extends AnyVal {
         
         inline def setVisibleValues(value: js.Array[String]): Self = StObject.set(x, "visibleValues", value.asInstanceOf[js.Any])
         
@@ -5448,7 +5580,8 @@ object Sheets {
         __obj.asInstanceOf[PivotGroup]
       }
       
-      extension [Self <: PivotGroup](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotGroup] (val x: Self) extends AnyVal {
         
         inline def setGroupRule(value: PivotGroupRule): Self = StObject.set(x, "groupRule", value.asInstanceOf[js.Any])
         
@@ -5501,7 +5634,8 @@ object Sheets {
         __obj.asInstanceOf[PivotGroupRule]
       }
       
-      extension [Self <: PivotGroupRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotGroupRule] (val x: Self) extends AnyVal {
         
         inline def setDateTimeRule(value: DateTimeRule): Self = StObject.set(x, "dateTimeRule", value.asInstanceOf[js.Any])
         
@@ -5530,7 +5664,8 @@ object Sheets {
         __obj.asInstanceOf[PivotGroupSortValueBucket]
       }
       
-      extension [Self <: PivotGroupSortValueBucket](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotGroupSortValueBucket] (val x: Self) extends AnyVal {
         
         inline def setBuckets(value: js.Array[ExtendedValue]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
         
@@ -5557,7 +5692,8 @@ object Sheets {
         __obj.asInstanceOf[PivotGroupValueMetadata]
       }
       
-      extension [Self <: PivotGroupValueMetadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotGroupValueMetadata] (val x: Self) extends AnyVal {
         
         inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
         
@@ -5590,7 +5726,8 @@ object Sheets {
         __obj.asInstanceOf[PivotTable]
       }
       
-      extension [Self <: PivotTable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotTable] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: js.Array[PivotGroup]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -5643,7 +5780,8 @@ object Sheets {
         __obj.asInstanceOf[PivotValue]
       }
       
-      extension [Self <: PivotValue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PivotValue] (val x: Self) extends AnyVal {
         
         inline def setCalculatedDisplayType(value: String): Self = StObject.set(x, "calculatedDisplayType", value.asInstanceOf[js.Any])
         
@@ -5692,7 +5830,8 @@ object Sheets {
         __obj.asInstanceOf[ProtectedRange]
       }
       
-      extension [Self <: ProtectedRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProtectedRange] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -5741,7 +5880,8 @@ object Sheets {
         __obj.asInstanceOf[RandomizeRangeRequest]
       }
       
-      extension [Self <: RandomizeRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RandomizeRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -5764,7 +5904,8 @@ object Sheets {
         __obj.asInstanceOf[RepeatCellRequest]
       }
       
-      extension [Self <: RepeatCellRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RepeatCellRequest] (val x: Self) extends AnyVal {
         
         inline def setCell(value: CellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
         
@@ -5901,7 +6042,8 @@ object Sheets {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setAddBanding(value: AddBandingRequest): Self = StObject.set(x, "addBanding", value.asInstanceOf[js.Any])
         
@@ -6172,7 +6314,8 @@ object Sheets {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setAddBanding(value: AddBandingResponse): Self = StObject.set(x, "addBanding", value.asInstanceOf[js.Any])
         
@@ -6255,7 +6398,8 @@ object Sheets {
         __obj.asInstanceOf[RowData]
       }
       
-      extension [Self <: RowData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RowData] (val x: Self) extends AnyVal {
         
         inline def setValues(value: js.Array[CellData]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
         
@@ -6276,7 +6420,8 @@ object Sheets {
         __obj.asInstanceOf[SearchDeveloperMetadataRequest]
       }
       
-      extension [Self <: SearchDeveloperMetadataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchDeveloperMetadataRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -6297,7 +6442,8 @@ object Sheets {
         __obj.asInstanceOf[SearchDeveloperMetadataResponse]
       }
       
-      extension [Self <: SearchDeveloperMetadataResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchDeveloperMetadataResponse] (val x: Self) extends AnyVal {
         
         inline def setMatchedDeveloperMetadata(value: js.Array[MatchedDeveloperMetadata]): Self = StObject.set(x, "matchedDeveloperMetadata", value.asInstanceOf[js.Any])
         
@@ -6318,7 +6464,8 @@ object Sheets {
         __obj.asInstanceOf[SetBasicFilterRequest]
       }
       
-      extension [Self <: SetBasicFilterRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetBasicFilterRequest] (val x: Self) extends AnyVal {
         
         inline def setFilter(value: BasicFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
@@ -6339,7 +6486,8 @@ object Sheets {
         __obj.asInstanceOf[SetDataValidationRequest]
       }
       
-      extension [Self <: SetDataValidationRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SetDataValidationRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -6384,7 +6532,8 @@ object Sheets {
         __obj.asInstanceOf[Sheet]
       }
       
-      extension [Self <: Sheet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
         
         inline def setBandedRanges(value: js.Array[BandedRange]): Self = StObject.set(x, "bandedRanges", value.asInstanceOf[js.Any])
         
@@ -6481,7 +6630,8 @@ object Sheets {
         __obj.asInstanceOf[SheetProperties]
       }
       
-      extension [Self <: SheetProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SheetProperties] (val x: Self) extends AnyVal {
         
         inline def setGridProperties(value: GridProperties): Self = StObject.set(x, "gridProperties", value.asInstanceOf[js.Any])
         
@@ -6530,7 +6680,8 @@ object Sheets {
         __obj.asInstanceOf[SortRangeRequest]
       }
       
-      extension [Self <: SortRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -6557,7 +6708,8 @@ object Sheets {
         __obj.asInstanceOf[SortSpec]
       }
       
-      extension [Self <: SortSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortSpec] (val x: Self) extends AnyVal {
         
         inline def setDimensionIndex(value: Double): Self = StObject.set(x, "dimensionIndex", value.asInstanceOf[js.Any])
         
@@ -6584,7 +6736,8 @@ object Sheets {
         __obj.asInstanceOf[SourceAndDestination]
       }
       
-      extension [Self <: SourceAndDestination](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SourceAndDestination] (val x: Self) extends AnyVal {
         
         inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
         
@@ -6621,7 +6774,8 @@ object Sheets {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Sheets.Schema.Spreadsheet] (val x: Self) extends AnyVal {
         
         inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -6676,7 +6830,8 @@ object Sheets {
         __obj.asInstanceOf[SpreadsheetProperties]
       }
       
-      extension [Self <: SpreadsheetProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SpreadsheetProperties] (val x: Self) extends AnyVal {
         
         inline def setAutoRecalc(value: String): Self = StObject.set(x, "autoRecalc", value.asInstanceOf[js.Any])
         
@@ -6727,7 +6882,8 @@ object Sheets {
         __obj.asInstanceOf[TextFormat]
       }
       
-      extension [Self <: TextFormat](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextFormat] (val x: Self) extends AnyVal {
         
         inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
         
@@ -6772,7 +6928,8 @@ object Sheets {
         __obj.asInstanceOf[TextFormatRun]
       }
       
-      extension [Self <: TextFormatRun](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextFormatRun] (val x: Self) extends AnyVal {
         
         inline def setFormat(value: TextFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
         
@@ -6795,7 +6952,8 @@ object Sheets {
         __obj.asInstanceOf[TextPosition]
       }
       
-      extension [Self <: TextPosition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextPosition] (val x: Self) extends AnyVal {
         
         inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
         
@@ -6816,7 +6974,8 @@ object Sheets {
         __obj.asInstanceOf[TextRotation]
       }
       
-      extension [Self <: TextRotation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextRotation] (val x: Self) extends AnyVal {
         
         inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
@@ -6843,7 +7002,8 @@ object Sheets {
         __obj.asInstanceOf[TextToColumnsRequest]
       }
       
-      extension [Self <: TextToColumnsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextToColumnsRequest] (val x: Self) extends AnyVal {
         
         inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
         
@@ -6876,7 +7036,8 @@ object Sheets {
         __obj.asInstanceOf[TreemapChartColorScale]
       }
       
-      extension [Self <: TreemapChartColorScale](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TreemapChartColorScale] (val x: Self) extends AnyVal {
         
         inline def setMaxValueColor(value: Color): Self = StObject.set(x, "maxValueColor", value.asInstanceOf[js.Any])
         
@@ -6929,7 +7090,8 @@ object Sheets {
         __obj.asInstanceOf[TreemapChartSpec]
       }
       
-      extension [Self <: TreemapChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TreemapChartSpec] (val x: Self) extends AnyVal {
         
         inline def setColorData(value: ChartData): Self = StObject.set(x, "colorData", value.asInstanceOf[js.Any])
         
@@ -6992,7 +7154,8 @@ object Sheets {
         __obj.asInstanceOf[UnmergeCellsRequest]
       }
       
-      extension [Self <: UnmergeCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnmergeCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: GridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -7013,7 +7176,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateBandingRequest]
       }
       
-      extension [Self <: UpdateBandingRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateBandingRequest] (val x: Self) extends AnyVal {
         
         inline def setBandedRange(value: BandedRange): Self = StObject.set(x, "bandedRange", value.asInstanceOf[js.Any])
         
@@ -7048,7 +7212,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateBordersRequest]
       }
       
-      extension [Self <: UpdateBordersRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateBordersRequest] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Border): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -7097,7 +7262,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateCellsRequest]
       }
       
-      extension [Self <: UpdateCellsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateCellsRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7132,7 +7298,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateChartSpecRequest]
       }
       
-      extension [Self <: UpdateChartSpecRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateChartSpecRequest] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -7161,7 +7328,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateConditionalFormatRuleRequest]
       }
       
-      extension [Self <: UpdateConditionalFormatRuleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateConditionalFormatRuleRequest] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -7198,7 +7366,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateConditionalFormatRuleResponse]
       }
       
-      extension [Self <: UpdateConditionalFormatRuleResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateConditionalFormatRuleResponse] (val x: Self) extends AnyVal {
         
         inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
         
@@ -7233,7 +7402,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateDeveloperMetadataRequest]
       }
       
-      extension [Self <: UpdateDeveloperMetadataRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDeveloperMetadataRequest] (val x: Self) extends AnyVal {
         
         inline def setDataFilters(value: js.Array[DataFilter]): Self = StObject.set(x, "dataFilters", value.asInstanceOf[js.Any])
         
@@ -7262,7 +7432,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateDeveloperMetadataResponse]
       }
       
-      extension [Self <: UpdateDeveloperMetadataResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
         
         inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
         
@@ -7285,7 +7456,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateDimensionGroupRequest]
       }
       
-      extension [Self <: UpdateDimensionGroupRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDimensionGroupRequest] (val x: Self) extends AnyVal {
         
         inline def setDimensionGroup(value: DimensionGroup): Self = StObject.set(x, "dimensionGroup", value.asInstanceOf[js.Any])
         
@@ -7312,7 +7484,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateDimensionPropertiesRequest]
       }
       
-      extension [Self <: UpdateDimensionPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDimensionPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7343,7 +7516,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateEmbeddedObjectPositionRequest]
       }
       
-      extension [Self <: UpdateEmbeddedObjectPositionRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateEmbeddedObjectPositionRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7370,7 +7544,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateEmbeddedObjectPositionResponse]
       }
       
-      extension [Self <: UpdateEmbeddedObjectPositionResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateEmbeddedObjectPositionResponse] (val x: Self) extends AnyVal {
         
         inline def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
@@ -7391,7 +7566,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateFilterViewRequest]
       }
       
-      extension [Self <: UpdateFilterViewRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateFilterViewRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7416,7 +7592,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateNamedRangeRequest]
       }
       
-      extension [Self <: UpdateNamedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateNamedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7441,7 +7618,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateProtectedRangeRequest]
       }
       
-      extension [Self <: UpdateProtectedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateProtectedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7466,7 +7644,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateSheetPropertiesRequest]
       }
       
-      extension [Self <: UpdateSheetPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateSheetPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7491,7 +7670,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateSpreadsheetPropertiesRequest]
       }
       
-      extension [Self <: UpdateSpreadsheetPropertiesRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateSpreadsheetPropertiesRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -7524,7 +7704,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateValuesByDataFilterResponse]
       }
       
-      extension [Self <: UpdateValuesByDataFilterResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
         
         inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
         
@@ -7573,7 +7754,8 @@ object Sheets {
         __obj.asInstanceOf[UpdateValuesResponse]
       }
       
-      extension [Self <: UpdateValuesResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateValuesResponse] (val x: Self) extends AnyVal {
         
         inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
         
@@ -7616,7 +7798,8 @@ object Sheets {
         __obj.asInstanceOf[ValueRange]
       }
       
-      extension [Self <: ValueRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValueRange] (val x: Self) extends AnyVal {
         
         inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
         
@@ -7647,7 +7830,8 @@ object Sheets {
         __obj.asInstanceOf[WaterfallChartColumnStyle]
       }
       
-      extension [Self <: WaterfallChartColumnStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaterfallChartColumnStyle] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -7674,7 +7858,8 @@ object Sheets {
         __obj.asInstanceOf[WaterfallChartCustomSubtotal]
       }
       
-      extension [Self <: WaterfallChartCustomSubtotal](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaterfallChartCustomSubtotal] (val x: Self) extends AnyVal {
         
         inline def setDataIsSubtotal(value: Boolean): Self = StObject.set(x, "dataIsSubtotal", value.asInstanceOf[js.Any])
         
@@ -7703,7 +7888,8 @@ object Sheets {
         __obj.asInstanceOf[WaterfallChartDomain]
       }
       
-      extension [Self <: WaterfallChartDomain](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaterfallChartDomain] (val x: Self) extends AnyVal {
         
         inline def setData(value: ChartData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -7736,7 +7922,8 @@ object Sheets {
         __obj.asInstanceOf[WaterfallChartSeries]
       }
       
-      extension [Self <: WaterfallChartSeries](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaterfallChartSeries] (val x: Self) extends AnyVal {
         
         inline def setCustomSubtotals(value: js.Array[WaterfallChartCustomSubtotal]): Self = StObject.set(x, "customSubtotals", value.asInstanceOf[js.Any])
         
@@ -7787,7 +7974,8 @@ object Sheets {
         __obj.asInstanceOf[WaterfallChartSpec]
       }
       
-      extension [Self <: WaterfallChartSpec](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaterfallChartSpec] (val x: Self) extends AnyVal {
         
         inline def setConnectorLineStyle(value: LineStyle): Self = StObject.set(x, "connectorLineStyle", value.asInstanceOf[js.Any])
         

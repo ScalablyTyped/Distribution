@@ -139,7 +139,8 @@ object backboneMod {
         __obj.asInstanceOf[IRelation]
       }
       
-      extension [Self <: IRelation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRelation] (val x: Self) extends AnyVal {
         
         inline def setCollectionType(value: String | Instantiable0[Collection[Any]]): Self = StObject.set(x, "collectionType", value.asInstanceOf[js.Any])
         

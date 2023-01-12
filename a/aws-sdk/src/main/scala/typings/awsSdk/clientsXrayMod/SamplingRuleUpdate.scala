@@ -73,7 +73,8 @@ object SamplingRuleUpdate {
     __obj.asInstanceOf[SamplingRuleUpdate]
   }
   
-  extension [Self <: SamplingRuleUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamplingRuleUpdate] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributeMap): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

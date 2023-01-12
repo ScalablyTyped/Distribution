@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[FieldDef]
     }
     
-    extension [Self <: FieldDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldDef] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: Codec[Any]): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
@@ -305,7 +306,8 @@ object mod {
       __obj.asInstanceOf[Writer_]
     }
     
-    extension [Self <: Writer_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Writer_] (val x: Self) extends AnyVal {
       
       inline def setBool(value: Boolean => Writer_): Self = StObject.set(x, "bool", js.Any.fromFunction1(value))
       

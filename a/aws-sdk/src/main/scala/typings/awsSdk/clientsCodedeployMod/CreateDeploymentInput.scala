@@ -68,7 +68,8 @@ object CreateDeploymentInput {
     __obj.asInstanceOf[CreateDeploymentInput]
   }
   
-  extension [Self <: CreateDeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

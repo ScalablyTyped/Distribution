@@ -87,7 +87,8 @@ object componentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredList]
     }
     
-    extension [Self <: StructuredList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredList] (val x: Self) extends AnyVal {
       
       inline def set_direction(value: Event => Double): Self = StObject.set(x, "_direction", js.Any.fromFunction1(value))
       
@@ -127,7 +128,8 @@ object componentsStructuredListStructuredListMod {
       __obj.asInstanceOf[StructuredListOptions]
     }
     
-    extension [Self <: StructuredListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredListOptions] (val x: Self) extends AnyVal {
       
       inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
       

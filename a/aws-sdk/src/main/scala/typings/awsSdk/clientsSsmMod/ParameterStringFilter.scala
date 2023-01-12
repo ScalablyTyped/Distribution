@@ -28,7 +28,8 @@ object ParameterStringFilter {
     __obj.asInstanceOf[ParameterStringFilter]
   }
   
-  extension [Self <: ParameterStringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterStringFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ParameterStringFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AdaptiveMediaSourceDownloadResult {
     __obj.asInstanceOf[AdaptiveMediaSourceDownloadResult]
   }
   
-  extension [Self <: AdaptiveMediaSourceDownloadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourceDownloadResult] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

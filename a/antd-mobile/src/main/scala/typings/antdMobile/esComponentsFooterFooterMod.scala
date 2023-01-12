@@ -68,7 +68,8 @@ object esComponentsFooterFooterMod {
       __obj.asInstanceOf[ChipItem]
     }
     
-    extension [Self <: ChipItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipItem] (val x: Self) extends AnyVal {
       
       inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -342,7 +343,8 @@ object esComponentsFooterFooterMod {
       __obj.asInstanceOf[FooterProps]
     }
     
-    extension [Self <: FooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FooterProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -593,7 +595,8 @@ object esComponentsFooterFooterMod {
       __obj.asInstanceOf[LinkItem]
     }
     
-    extension [Self <: LinkItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkItem] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       

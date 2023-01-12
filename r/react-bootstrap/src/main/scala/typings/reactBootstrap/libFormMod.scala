@@ -35,7 +35,8 @@ object libFormMod {
       __obj.asInstanceOf[FormProps]
     }
     
-    extension [Self <: FormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

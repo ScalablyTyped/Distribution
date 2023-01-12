@@ -18,7 +18,8 @@ object ToolsProps {
     __obj.asInstanceOf[ToolsProps]
   }
   
-  extension [Self <: ToolsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolsProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode | js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

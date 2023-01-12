@@ -53,7 +53,8 @@ object ModalBaseProps {
     __obj.asInstanceOf[ModalBaseProps]
   }
   
-  extension [Self <: ModalBaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalBaseProps] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

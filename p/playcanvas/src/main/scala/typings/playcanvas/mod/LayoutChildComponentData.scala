@@ -15,7 +15,8 @@ object LayoutChildComponentData {
     __obj.asInstanceOf[LayoutChildComponentData]
   }
   
-  extension [Self <: LayoutChildComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutChildComponentData] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

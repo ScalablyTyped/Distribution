@@ -34,7 +34,8 @@ object distSrcRpcHandlersAddProviderMod {
       __obj.asInstanceOf[AddProviderHandlerInit]
     }
     
-    extension [Self <: AddProviderHandlerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddProviderHandlerInit] (val x: Self) extends AnyVal {
       
       inline def setProviders(value: Providers): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     }

@@ -105,7 +105,8 @@ object Chai {
       __obj.asInstanceOf[Assertion]
     }
     
-    extension [Self <: Assertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
       
       inline def setBeen(value: Been): Self = StObject.set(x, "been", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object Chai {
       __obj.asInstanceOf[ChaiStatic]
     }
     
-    extension [Self <: ChaiStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
       
       inline def setSpy(value: Spy): Self = StObject.set(x, "spy", value.asInstanceOf[js.Any])
     }
@@ -181,7 +183,8 @@ object Chai {
       __obj.asInstanceOf[LanguageChains]
     }
     
-    extension [Self <: LanguageChains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
       
       inline def setOn(value: Assertion): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }

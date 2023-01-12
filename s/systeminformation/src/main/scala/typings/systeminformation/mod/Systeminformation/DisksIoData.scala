@@ -47,7 +47,8 @@ object DisksIoData {
     __obj.asInstanceOf[DisksIoData]
   }
   
-  extension [Self <: DisksIoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisksIoData] (val x: Self) extends AnyVal {
     
     inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     

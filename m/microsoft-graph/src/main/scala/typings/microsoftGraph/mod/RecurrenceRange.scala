@@ -35,7 +35,8 @@ object RecurrenceRange {
     __obj.asInstanceOf[RecurrenceRange]
   }
   
-  extension [Self <: RecurrenceRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurrenceRange] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: NullableOption[String]): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

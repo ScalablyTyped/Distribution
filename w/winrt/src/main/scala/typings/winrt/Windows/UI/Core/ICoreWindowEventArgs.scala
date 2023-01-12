@@ -15,7 +15,8 @@ object ICoreWindowEventArgs {
     __obj.asInstanceOf[ICoreWindowEventArgs]
   }
   
-  extension [Self <: ICoreWindowEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreWindowEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }

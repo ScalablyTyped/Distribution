@@ -28,7 +28,8 @@ object SecurityKey {
     __obj.asInstanceOf[SecurityKey]
   }
   
-  extension [Self <: SecurityKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityKey] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: AssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

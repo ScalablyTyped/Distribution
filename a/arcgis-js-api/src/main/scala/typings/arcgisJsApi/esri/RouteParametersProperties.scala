@@ -438,7 +438,8 @@ object RouteParametersProperties {
     __obj.asInstanceOf[RouteParametersProperties]
   }
   
-  extension [Self <: RouteParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setAccumulateAttributes(
       value: js.Array[

@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[CSSBeautifyOptions]
     }
     
-    extension [Self <: CSSBeautifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSBeautifyOptions] (val x: Self) extends AnyVal {
       
       inline def setNewline_between_rules(value: Boolean): Self = StObject.set(x, "newline_between_rules", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[CoreBeautifyOptions]
     }
     
-    extension [Self <: CoreBeautifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreBeautifyOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[HTMLBeautifyOptions]
     }
     
-    extension [Self <: HTMLBeautifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLBeautifyOptions] (val x: Self) extends AnyVal {
       
       inline def setContent_unformatted(value: js.Array[String]): Self = StObject.set(x, "content_unformatted", value.asInstanceOf[js.Any])
       
@@ -323,7 +326,8 @@ object mod {
       __obj.asInstanceOf[JSBeautifyOptions]
     }
     
-    extension [Self <: JSBeautifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSBeautifyOptions] (val x: Self) extends AnyVal {
       
       inline def setBrace_style(value: collapse | expand | `end-expand` | none | `preserve-inline`): Self = StObject.set(x, "brace_style", value.asInstanceOf[js.Any])
       

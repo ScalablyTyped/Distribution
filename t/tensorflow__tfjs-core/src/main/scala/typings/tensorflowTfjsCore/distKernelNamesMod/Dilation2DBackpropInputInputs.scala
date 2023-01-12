@@ -20,7 +20,8 @@ object Dilation2DBackpropInputInputs {
     __obj.asInstanceOf[Dilation2DBackpropInputInputs]
   }
   
-  extension [Self <: Dilation2DBackpropInputInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dilation2DBackpropInputInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

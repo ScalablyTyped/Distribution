@@ -81,7 +81,8 @@ object libJwtTaskrouterTaskRouterCapabilityMod {
       __obj.asInstanceOf[PolicyOptions]
     }
     
-    extension [Self <: PolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object libJwtTaskrouterTaskRouterCapabilityMod {
       __obj.asInstanceOf[PolicyPayload]
     }
     
-    extension [Self <: PolicyPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyPayload] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: Boolean): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object libJwtTaskrouterTaskRouterCapabilityMod {
       __obj.asInstanceOf[TaskRouterCapability]
     }
     
-    extension [Self <: TaskRouterCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskRouterCapability] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object libJwtTaskrouterTaskRouterCapabilityMod {
       __obj.asInstanceOf[TaskRouterCapabilityOptions]
     }
     
-    extension [Self <: TaskRouterCapabilityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskRouterCapabilityOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountSid(value: String): Self = StObject.set(x, "accountSid", value.asInstanceOf[js.Any])
       

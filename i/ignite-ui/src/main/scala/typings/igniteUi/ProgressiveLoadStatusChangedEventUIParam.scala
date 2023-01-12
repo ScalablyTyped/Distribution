@@ -28,7 +28,8 @@ object ProgressiveLoadStatusChangedEventUIParam {
     __obj.asInstanceOf[ProgressiveLoadStatusChangedEventUIParam]
   }
   
-  extension [Self <: ProgressiveLoadStatusChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressiveLoadStatusChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

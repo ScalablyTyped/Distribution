@@ -15,7 +15,8 @@ object IKeyboardCapabilities {
     __obj.asInstanceOf[IKeyboardCapabilities]
   }
   
-  extension [Self <: IKeyboardCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyboardCapabilities] (val x: Self) extends AnyVal {
     
     inline def setKeyboardPresent(value: Double): Self = StObject.set(x, "keyboardPresent", value.asInstanceOf[js.Any])
   }

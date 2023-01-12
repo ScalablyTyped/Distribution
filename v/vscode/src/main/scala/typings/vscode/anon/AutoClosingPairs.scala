@@ -15,7 +15,8 @@ object AutoClosingPairs {
     __obj.asInstanceOf[AutoClosingPairs]
   }
   
-  extension [Self <: AutoClosingPairs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoClosingPairs] (val x: Self) extends AnyVal {
     
     inline def setAutoClosingPairs(value: js.Array[NotIn]): Self = StObject.set(x, "autoClosingPairs", value.asInstanceOf[js.Any])
     

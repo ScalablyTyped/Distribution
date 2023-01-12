@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3AgentValidationResult {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3AgentValidationResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3AgentValidationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3AgentValidationResult] (val x: Self) extends AnyVal {
     
     inline def setFlowValidationResults(value: js.Array[GoogleCloudDialogflowCxV3FlowValidationResult]): Self = StObject.set(x, "flowValidationResults", value.asInstanceOf[js.Any])
     

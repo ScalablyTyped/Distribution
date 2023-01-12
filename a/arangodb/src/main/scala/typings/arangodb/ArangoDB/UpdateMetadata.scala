@@ -17,7 +17,8 @@ object UpdateMetadata {
     __obj.asInstanceOf[UpdateMetadata]
   }
   
-  extension [Self <: UpdateMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMetadata] (val x: Self) extends AnyVal {
     
     inline def set_oldRev(value: String): Self = StObject.set(x, "_oldRev", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object DisabledIsFocusVisible {
     __obj.asInstanceOf[DisabledIsFocusVisible]
   }
   
-  extension [Self <: DisabledIsFocusVisible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisabledIsFocusVisible] (val x: Self) extends AnyVal {
     
     inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
     

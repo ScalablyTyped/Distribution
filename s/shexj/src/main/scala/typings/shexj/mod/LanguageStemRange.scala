@@ -31,7 +31,8 @@ object LanguageStemRange {
     __obj.asInstanceOf[LanguageStemRange]
   }
   
-  extension [Self <: LanguageStemRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageStemRange] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[LANGTAG | LanguageStem]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object SauceLabsVisualCapabilities {
     __obj.asInstanceOf[SauceLabsVisualCapabilities]
   }
   
-  extension [Self <: SauceLabsVisualCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SauceLabsVisualCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAlwaysAcceptBaseBranch(value: Boolean): Self = StObject.set(x, "alwaysAcceptBaseBranch", value.asInstanceOf[js.Any])
     

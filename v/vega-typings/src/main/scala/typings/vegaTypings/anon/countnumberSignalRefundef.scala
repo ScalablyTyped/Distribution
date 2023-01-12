@@ -42,7 +42,8 @@ object countnumberSignalRefundef {
     __obj.asInstanceOf[countnumberSignalRefundef]
   }
   
-  extension [Self <: countnumberSignalRefundef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: countnumberSignalRefundef] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Double | SignalRef): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

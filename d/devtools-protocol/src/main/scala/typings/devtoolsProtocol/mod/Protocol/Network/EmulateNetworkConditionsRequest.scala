@@ -38,7 +38,8 @@ object EmulateNetworkConditionsRequest {
     __obj.asInstanceOf[EmulateNetworkConditionsRequest]
   }
   
-  extension [Self <: EmulateNetworkConditionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmulateNetworkConditionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionType(value: ConnectionType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
     

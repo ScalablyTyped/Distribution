@@ -40,7 +40,8 @@ object ShippingAddressParameters {
     __obj.asInstanceOf[ShippingAddressParameters]
   }
   
-  extension [Self <: ShippingAddressParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingAddressParameters] (val x: Self) extends AnyVal {
     
     inline def setAllowedCountryCodes(value: js.Array[String]): Self = StObject.set(x, "allowedCountryCodes", value.asInstanceOf[js.Any])
     

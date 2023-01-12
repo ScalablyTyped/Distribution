@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Sink[TSink, RSink, TSource]]
     }
     
-    extension [Self <: Sink[?, ?, ?], TSink, RSink, TSource](x: Self & (Sink[TSink, RSink, TSource])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sink[?, ?, ?], TSink, RSink, TSource] (val x: Self & (Sink[TSink, RSink, TSource])) extends AnyVal {
       
       inline def setSink(value: /* source */ Source[TSink] => RSink): Self = StObject.set(x, "sink", js.Any.fromFunction1(value))
       

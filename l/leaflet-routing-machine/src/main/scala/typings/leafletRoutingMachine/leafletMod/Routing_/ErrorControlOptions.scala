@@ -17,7 +17,8 @@ object ErrorControlOptions {
     __obj.asInstanceOf[ErrorControlOptions]
   }
   
-  extension [Self <: ErrorControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorControlOptions] (val x: Self) extends AnyVal {
     
     inline def setFormatMessage(value: /* error */ IError => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     

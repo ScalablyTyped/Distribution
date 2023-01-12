@@ -38,7 +38,8 @@ object BankAchievementClass {
     __obj.asInstanceOf[BankAchievementClass]
   }
   
-  extension [Self <: BankAchievementClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankAchievementClass] (val x: Self) extends AnyVal {
     
     inline def setTreshold(value: Double): Self = StObject.set(x, "treshold", value.asInstanceOf[js.Any])
   }

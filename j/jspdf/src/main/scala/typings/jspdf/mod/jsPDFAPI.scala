@@ -15,7 +15,8 @@ object jsPDFAPI {
     __obj.asInstanceOf[jsPDFAPI]
   }
   
-  extension [Self <: jsPDFAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jsPDFAPI] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

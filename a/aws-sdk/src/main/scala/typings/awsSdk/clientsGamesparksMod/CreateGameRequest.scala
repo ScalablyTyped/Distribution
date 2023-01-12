@@ -33,7 +33,8 @@ object CreateGameRequest {
     __obj.asInstanceOf[CreateGameRequest]
   }
   
-  extension [Self <: CreateGameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGameRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

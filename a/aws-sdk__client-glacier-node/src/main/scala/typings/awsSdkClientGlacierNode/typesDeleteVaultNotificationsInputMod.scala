@@ -51,7 +51,8 @@ object typesDeleteVaultNotificationsInputMod {
       __obj.asInstanceOf[DeleteVaultNotificationsInput]
     }
     
-    extension [Self <: DeleteVaultNotificationsInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteVaultNotificationsInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

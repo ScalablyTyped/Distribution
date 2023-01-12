@@ -68,7 +68,8 @@ object CloudWatchLogsLogStream {
     __obj.asInstanceOf[CloudWatchLogsLogStream]
   }
   
-  extension [Self <: CloudWatchLogsLogStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchLogsLogStream] (val x: Self) extends AnyVal {
     
     inline def setBatchCount(value: Integer): Self = StObject.set(x, "BatchCount", value.asInstanceOf[js.Any])
     

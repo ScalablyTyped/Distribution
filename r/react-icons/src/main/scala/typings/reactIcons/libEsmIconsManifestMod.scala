@@ -29,7 +29,8 @@ object libEsmIconsManifestMod {
       __obj.asInstanceOf[IconManifest]
     }
     
-    extension [Self <: IconManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconManifest] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

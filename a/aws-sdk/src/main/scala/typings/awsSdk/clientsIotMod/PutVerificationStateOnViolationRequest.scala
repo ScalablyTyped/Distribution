@@ -28,7 +28,8 @@ object PutVerificationStateOnViolationRequest {
     __obj.asInstanceOf[PutVerificationStateOnViolationRequest]
   }
   
-  extension [Self <: PutVerificationStateOnViolationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutVerificationStateOnViolationRequest] (val x: Self) extends AnyVal {
     
     inline def setVerificationState(value: VerificationState): Self = StObject.set(x, "verificationState", value.asInstanceOf[js.Any])
     

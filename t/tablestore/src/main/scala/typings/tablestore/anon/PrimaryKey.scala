@@ -24,7 +24,8 @@ object PrimaryKey {
     __obj.asInstanceOf[PrimaryKey]
   }
   
-  extension [Self <: PrimaryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryKey] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: typings.tablestore.mod.Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object ResourceUserIp {
     __obj.asInstanceOf[ResourceUserIp]
   }
   
-  extension [Self <: ResourceUserIp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUserIp] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

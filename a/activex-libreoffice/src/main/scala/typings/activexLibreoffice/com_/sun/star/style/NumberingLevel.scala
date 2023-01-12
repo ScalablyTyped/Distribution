@@ -58,7 +58,8 @@ object NumberingLevel {
     __obj.asInstanceOf[NumberingLevel]
   }
   
-  extension [Self <: NumberingLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberingLevel] (val x: Self) extends AnyVal {
     
     inline def setBulletFontName(value: String): Self = StObject.set(x, "BulletFontName", value.asInstanceOf[js.Any])
     

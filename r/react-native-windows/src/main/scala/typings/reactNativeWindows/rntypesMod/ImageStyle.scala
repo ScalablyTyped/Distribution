@@ -46,7 +46,8 @@ object ImageStyle {
     __obj.asInstanceOf[ImageStyle]
   }
   
-  extension [Self <: ImageStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageStyle] (val x: Self) extends AnyVal {
     
     inline def setBackfaceVisibility(value: visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
     

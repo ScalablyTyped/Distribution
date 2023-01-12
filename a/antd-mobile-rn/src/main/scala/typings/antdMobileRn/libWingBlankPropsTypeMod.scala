@@ -20,7 +20,8 @@ object libWingBlankPropsTypeMod {
       __obj.asInstanceOf[WingBlankPropsType]
     }
     
-    extension [Self <: WingBlankPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WingBlankPropsType] (val x: Self) extends AnyVal {
       
       inline def setSize(value: sm | md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object ConnectFailureResults {
     __obj.asInstanceOf[ConnectFailureResults]
   }
   
-  extension [Self <: ConnectFailureResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectFailureResults] (val x: Self) extends AnyVal {
     
     inline def setRetryQueue(
       value: js.Array[

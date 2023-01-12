@@ -28,7 +28,8 @@ object SelectorSwitchChoice {
     __obj.asInstanceOf[SelectorSwitchChoice]
   }
   
-  extension [Self <: SelectorSwitchChoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectorSwitchChoice] (val x: Self) extends AnyVal {
     
     inline def setDiv(value: Boolean): Self = StObject.set(x, "div", value.asInstanceOf[js.Any])
     

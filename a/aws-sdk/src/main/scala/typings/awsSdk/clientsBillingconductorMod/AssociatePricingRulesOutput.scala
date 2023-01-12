@@ -18,7 +18,8 @@ object AssociatePricingRulesOutput {
     __obj.asInstanceOf[AssociatePricingRulesOutput]
   }
   
-  extension [Self <: AssociatePricingRulesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatePricingRulesOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: PricingPlanArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

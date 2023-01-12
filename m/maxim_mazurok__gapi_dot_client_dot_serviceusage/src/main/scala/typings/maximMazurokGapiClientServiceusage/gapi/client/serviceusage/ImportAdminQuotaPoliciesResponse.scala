@@ -16,7 +16,8 @@ object ImportAdminQuotaPoliciesResponse {
     __obj.asInstanceOf[ImportAdminQuotaPoliciesResponse]
   }
   
-  extension [Self <: ImportAdminQuotaPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAdminQuotaPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: js.Array[AdminQuotaPolicy]): Self = StObject.set(x, "policies", value.asInstanceOf[js.Any])
     

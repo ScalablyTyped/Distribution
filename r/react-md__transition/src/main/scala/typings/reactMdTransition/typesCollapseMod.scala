@@ -78,7 +78,8 @@ object typesCollapseMod {
       __obj.asInstanceOf[CollapseProps[E]]
     }
     
-    extension [Self <: CollapseProps[?], E /* <: HTMLElement */](x: Self & CollapseProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps[?], E /* <: HTMLElement */] (val x: Self & CollapseProps[E]) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

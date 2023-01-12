@@ -24,7 +24,8 @@ object PositionKeywordNode {
     __obj.asInstanceOf[PositionKeywordNode]
   }
   
-  extension [Self <: PositionKeywordNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionKeywordNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: `position-keyword`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

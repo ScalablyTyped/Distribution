@@ -42,7 +42,8 @@ object Typeofutf8 {
     __obj.asInstanceOf[Typeofutf8]
   }
   
-  extension [Self <: Typeofutf8](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofutf8] (val x: Self) extends AnyVal {
     
     inline def setLength(value: String => Double): Self = StObject.set(x, "length", js.Any.fromFunction1(value))
     

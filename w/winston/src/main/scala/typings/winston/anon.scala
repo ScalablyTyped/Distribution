@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Bearer]
     }
     
-    extension [Self <: Bearer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bearer] (val x: Self) extends AnyVal {
       
       inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setColors(value: CliConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[ColorsLevels]
     }
     
-    extension [Self <: ColorsLevels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorsLevels] (val x: Self) extends AnyVal {
       
       inline def setColors(value: SyslogConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Levels]
     }
     
-    extension [Self <: Levels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Levels] (val x: Self) extends AnyVal {
       
       inline def setColors(value: NpmConfigSetColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

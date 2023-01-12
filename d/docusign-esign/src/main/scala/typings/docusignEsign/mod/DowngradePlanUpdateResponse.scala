@@ -33,7 +33,8 @@ object DowngradePlanUpdateResponse {
     __obj.asInstanceOf[DowngradePlanUpdateResponse]
   }
   
-  extension [Self <: DowngradePlanUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DowngradePlanUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountPaymentMethod(value: String): Self = StObject.set(x, "accountPaymentMethod", value.asInstanceOf[js.Any])
     

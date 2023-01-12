@@ -69,7 +69,8 @@ object buildTypesSchemaMod {
       __obj.asInstanceOf[IAsnSchema]
     }
     
-    extension [Self <: IAsnSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsnSchema] (val x: Self) extends AnyVal {
       
       inline def setItemType(value: AsnPropTypes | IEmptyConstructor[Any]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object buildTypesSchemaMod {
       __obj.asInstanceOf[IAsnSchemaItem]
     }
     
-    extension [Self <: IAsnSchemaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsnSchemaItem] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Double): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

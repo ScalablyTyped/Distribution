@@ -18,7 +18,8 @@ object InferRxNormRequest {
     __obj.asInstanceOf[InferRxNormRequest]
   }
   
-  extension [Self <: InferRxNormRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferRxNormRequest] (val x: Self) extends AnyVal {
     
     inline def setText(value: OntologyLinkingBoundedLengthString): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }

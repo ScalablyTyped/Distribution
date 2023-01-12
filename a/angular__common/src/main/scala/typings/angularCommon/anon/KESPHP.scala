@@ -35,7 +35,8 @@ object KESPHP {
     __obj.asInstanceOf[KESPHP]
   }
   
-  extension [Self <: KESPHP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KESPHP] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateResolverDnssecConfigResponse {
     __obj.asInstanceOf[UpdateResolverDnssecConfigResponse]
   }
   
-  extension [Self <: UpdateResolverDnssecConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResolverDnssecConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverDNSSECConfig(value: ResolverDnssecConfig): Self = StObject.set(x, "ResolverDNSSECConfig", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TypeofPaymentLink {
     __obj.asInstanceOf[TypeofPaymentLink]
   }
   
-  extension [Self <: TypeofPaymentLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPaymentLink] (val x: Self) extends AnyVal {
     
     inline def setAfterCompletion(value: Any): Self = StObject.set(x, "AfterCompletion", value.asInstanceOf[js.Any])
     

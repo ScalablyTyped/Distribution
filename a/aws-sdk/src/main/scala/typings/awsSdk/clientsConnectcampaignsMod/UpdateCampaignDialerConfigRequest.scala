@@ -17,7 +17,8 @@ object UpdateCampaignDialerConfigRequest {
     __obj.asInstanceOf[UpdateCampaignDialerConfigRequest]
   }
   
-  extension [Self <: UpdateCampaignDialerConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCampaignDialerConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setDialerConfig(value: DialerConfig): Self = StObject.set(x, "dialerConfig", value.asInstanceOf[js.Any])
     

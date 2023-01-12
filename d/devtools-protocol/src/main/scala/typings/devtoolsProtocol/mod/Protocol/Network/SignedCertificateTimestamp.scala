@@ -63,7 +63,8 @@ object SignedCertificateTimestamp {
     __obj.asInstanceOf[SignedCertificateTimestamp]
   }
   
-  extension [Self <: SignedCertificateTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedCertificateTimestamp] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

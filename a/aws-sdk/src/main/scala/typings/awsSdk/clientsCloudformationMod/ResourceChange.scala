@@ -58,7 +58,8 @@ object ResourceChange {
     __obj.asInstanceOf[ResourceChange]
   }
   
-  extension [Self <: ResourceChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceChange] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

@@ -256,7 +256,8 @@ object libWidgettrackerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       }
@@ -371,7 +372,8 @@ object libWidgettrackerMod {
       __obj.asInstanceOf[IWidgetTracker[T]]
     }
     
-    extension [Self <: IWidgetTracker[?], T /* <: Widget */](x: Self & IWidgetTracker[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWidgetTracker[?], T /* <: Widget */] (val x: Self & IWidgetTracker[T]) extends AnyVal {
       
       inline def setCurrentChanged(value: ISignal[IWidgetTracker[T], T | Null]): Self = StObject.set(x, "currentChanged", value.asInstanceOf[js.Any])
       

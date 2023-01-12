@@ -83,7 +83,8 @@ object ServiceEndpoint {
     __obj.asInstanceOf[ServiceEndpoint]
   }
   
-  extension [Self <: ServiceEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpoint] (val x: Self) extends AnyVal {
     
     inline def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
     

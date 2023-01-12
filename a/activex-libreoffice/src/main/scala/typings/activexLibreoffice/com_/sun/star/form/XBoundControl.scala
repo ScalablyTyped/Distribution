@@ -43,7 +43,8 @@ object XBoundControl {
     __obj.asInstanceOf[XBoundControl]
   }
   
-  extension [Self <: XBoundControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBoundControl] (val x: Self) extends AnyVal {
     
     inline def setGetLock(value: () => Boolean): Self = StObject.set(x, "getLock", js.Any.fromFunction0(value))
     

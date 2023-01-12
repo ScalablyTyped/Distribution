@@ -28,7 +28,8 @@ object LocalSecondaryIndexInfo {
     __obj.asInstanceOf[LocalSecondaryIndexInfo]
   }
   
-  extension [Self <: LocalSecondaryIndexInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalSecondaryIndexInfo] (val x: Self) extends AnyVal {
     
     inline def setIndexName(value: IndexName): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     

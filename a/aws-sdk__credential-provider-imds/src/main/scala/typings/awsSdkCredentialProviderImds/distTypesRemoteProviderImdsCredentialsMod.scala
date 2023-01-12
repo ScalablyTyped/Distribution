@@ -32,7 +32,8 @@ object distTypesRemoteProviderImdsCredentialsMod {
       __obj.asInstanceOf[ImdsCredentials]
     }
     
-    extension [Self <: ImdsCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImdsCredentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
       

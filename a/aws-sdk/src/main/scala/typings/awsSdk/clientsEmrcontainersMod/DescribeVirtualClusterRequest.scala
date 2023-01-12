@@ -18,7 +18,8 @@ object DescribeVirtualClusterRequest {
     __obj.asInstanceOf[DescribeVirtualClusterRequest]
   }
   
-  extension [Self <: DescribeVirtualClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVirtualClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: ResourceIdString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object DidSaveNotebookDocumentParams {
     __obj.asInstanceOf[DidSaveNotebookDocumentParams]
   }
   
-  extension [Self <: DidSaveNotebookDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidSaveNotebookDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setNotebookDocument(value: NotebookDocumentIdentifier): Self = StObject.set(x, "notebookDocument", value.asInstanceOf[js.Any])
   }

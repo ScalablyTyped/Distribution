@@ -15,7 +15,8 @@ object ContentApplicationjsonGithubownedallowed {
     __obj.asInstanceOf[ContentApplicationjsonGithubownedallowed]
   }
   
-  extension [Self <: ContentApplicationjsonGithubownedallowed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonGithubownedallowed] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonGithubownedallowed): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

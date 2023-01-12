@@ -56,7 +56,8 @@ object textAreaMod {
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAutoResizeConfig(value: InitialRows): Self = StObject.set(x, "autoResizeConfig", value.asInstanceOf[js.Any])
       

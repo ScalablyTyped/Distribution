@@ -15,7 +15,8 @@ object UserInfoParams {
     __obj.asInstanceOf[UserInfoParams]
   }
   
-  extension [Self <: UserInfoParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserInfoParams] (val x: Self) extends AnyVal {
     
     inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }

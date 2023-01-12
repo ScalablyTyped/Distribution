@@ -31,7 +31,8 @@ object buildUtilsCommonCodeModMod {
       __obj.asInstanceOf[CodeBlock]
     }
     
-    extension [Self <: CodeBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeBlock] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

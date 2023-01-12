@@ -18,7 +18,8 @@ object HyperParameterTuningJobStrategyConfig {
     __obj.asInstanceOf[HyperParameterTuningJobStrategyConfig]
   }
   
-  extension [Self <: HyperParameterTuningJobStrategyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterTuningJobStrategyConfig] (val x: Self) extends AnyVal {
     
     inline def setHyperbandStrategyConfig(value: HyperbandStrategyConfig): Self = StObject.set(x, "HyperbandStrategyConfig", value.asInstanceOf[js.Any])
     

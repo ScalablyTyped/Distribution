@@ -66,7 +66,8 @@ object build2Mp4tagcontentsMod {
       __obj.asInstanceOf[MP4TagContents]
     }
     
-    extension [Self <: MP4TagContents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MP4TagContents] (val x: Self) extends AnyVal {
       
       inline def setToArray(value: () => ByteArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
       

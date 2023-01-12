@@ -30,7 +30,8 @@ object MessagesSendTemplateRequest {
     __obj.asInstanceOf[MessagesSendTemplateRequest]
   }
   
-  extension [Self <: MessagesSendTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSendTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplate_content(value: js.Array[TemplateContent]): Self = StObject.set(x, "template_content", value.asInstanceOf[js.Any])
     

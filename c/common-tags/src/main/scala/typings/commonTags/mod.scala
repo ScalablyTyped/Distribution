@@ -196,7 +196,8 @@ object mod {
       __obj.asInstanceOf[TemplateTransformer[TCtx]]
     }
     
-    extension [Self <: TemplateTransformer[?], TCtx](x: Self & TemplateTransformer[TCtx]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateTransformer[?], TCtx] (val x: Self & TemplateTransformer[TCtx]) extends AnyVal {
       
       inline def setGetInitialContext(value: () => TCtx): Self = StObject.set(x, "getInitialContext", js.Any.fromFunction0(value))
       

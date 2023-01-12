@@ -33,7 +33,8 @@ object distNodeSrcApiAccountManagementEmailAndPasswordMod {
       __obj.asInstanceOf[ApplyActionCodeRequest]
     }
     
-    extension [Self <: ApplyActionCodeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyActionCodeRequest] (val x: Self) extends AnyVal {
       
       inline def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distNodeSrcApiAccountManagementEmailAndPasswordMod {
       __obj.asInstanceOf[ResetPasswordRequest]
     }
     
-    extension [Self <: ResetPasswordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetPasswordRequest] (val x: Self) extends AnyVal {
       
       inline def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object distNodeSrcApiAccountManagementEmailAndPasswordMod {
       __obj.asInstanceOf[ResetPasswordResponse]
     }
     
-    extension [Self <: ResetPasswordResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResetPasswordResponse] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object distNodeSrcApiAccountManagementEmailAndPasswordMod {
       __obj.asInstanceOf[UpdateEmailPasswordRequest]
     }
     
-    extension [Self <: UpdateEmailPasswordRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateEmailPasswordRequest] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

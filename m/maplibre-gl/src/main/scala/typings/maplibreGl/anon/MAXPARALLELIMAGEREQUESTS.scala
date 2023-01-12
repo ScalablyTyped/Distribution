@@ -18,7 +18,8 @@ object MAXPARALLELIMAGEREQUESTS {
     __obj.asInstanceOf[MAXPARALLELIMAGEREQUESTS]
   }
   
-  extension [Self <: MAXPARALLELIMAGEREQUESTS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MAXPARALLELIMAGEREQUESTS] (val x: Self) extends AnyVal {
     
     inline def setMAX_PARALLEL_IMAGE_REQUESTS(value: Double): Self = StObject.set(x, "MAX_PARALLEL_IMAGE_REQUESTS", value.asInstanceOf[js.Any])
     

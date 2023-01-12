@@ -16,7 +16,8 @@ object ReplicationReplicaLinkUpInfo {
     __obj.asInstanceOf[ReplicationReplicaLinkUpInfo]
   }
   
-  extension [Self <: ReplicationReplicaLinkUpInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationReplicaLinkUpInfo] (val x: Self) extends AnyVal {
     
     inline def setMaster_link_status(value: UP): Self = StObject.set(x, "master_link_status", value.asInstanceOf[js.Any])
   }

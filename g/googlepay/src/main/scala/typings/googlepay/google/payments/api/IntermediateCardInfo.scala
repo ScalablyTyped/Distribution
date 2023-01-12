@@ -31,7 +31,8 @@ object IntermediateCardInfo {
     __obj.asInstanceOf[IntermediateCardInfo]
   }
   
-  extension [Self <: IntermediateCardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntermediateCardInfo] (val x: Self) extends AnyVal {
     
     inline def setCardNetwork(value: CardNetwork): Self = StObject.set(x, "cardNetwork", value.asInstanceOf[js.Any])
   }

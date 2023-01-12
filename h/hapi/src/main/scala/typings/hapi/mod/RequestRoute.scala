@@ -42,7 +42,8 @@ object RequestRoute {
     __obj.asInstanceOf[RequestRoute]
   }
   
-  extension [Self <: RequestRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestRoute] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Access): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

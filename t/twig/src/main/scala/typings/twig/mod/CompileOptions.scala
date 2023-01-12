@@ -18,7 +18,8 @@ object CompileOptions {
     __obj.asInstanceOf[CompileOptions]
   }
   
-  extension [Self <: CompileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

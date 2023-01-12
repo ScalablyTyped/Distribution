@@ -17,7 +17,8 @@ object AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata {
     __obj.asInstanceOf[AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata]
   }
   
-  extension [Self <: AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteRoomUpdatedMetadataGroupDetailsUpdatedMetadata] (val x: Self) extends AnyVal {
     
     inline def setNewGroupDetails(value: AppsDynamiteSharedGroupDetails): Self = StObject.set(x, "newGroupDetails", value.asInstanceOf[js.Any])
     

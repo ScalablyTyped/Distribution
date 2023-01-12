@@ -22,7 +22,8 @@ object ManipulationDelta {
     __obj.asInstanceOf[ManipulationDelta]
   }
   
-  extension [Self <: ManipulationDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManipulationDelta] (val x: Self) extends AnyVal {
     
     inline def setExpansion(value: Double): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
     

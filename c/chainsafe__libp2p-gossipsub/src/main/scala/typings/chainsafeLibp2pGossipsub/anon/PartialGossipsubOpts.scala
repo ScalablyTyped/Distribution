@@ -120,7 +120,8 @@ object PartialGossipsubOpts {
     __obj.asInstanceOf[PartialGossipsubOpts]
   }
   
-  extension [Self <: PartialGossipsubOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGossipsubOpts] (val x: Self) extends AnyVal {
     
     inline def setAllowPublishToZeroPeers(value: Boolean): Self = StObject.set(x, "allowPublishToZeroPeers", value.asInstanceOf[js.Any])
     

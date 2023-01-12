@@ -15,7 +15,8 @@ object WorkerErrorReportedEvent {
     __obj.asInstanceOf[WorkerErrorReportedEvent]
   }
   
-  extension [Self <: WorkerErrorReportedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerErrorReportedEvent] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: ServiceWorkerErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
   }

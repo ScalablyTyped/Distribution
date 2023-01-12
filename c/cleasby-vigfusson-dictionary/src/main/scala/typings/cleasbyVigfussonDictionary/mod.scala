@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[DictionaryEntry]
     }
     
-    extension [Self <: DictionaryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictionaryEntry] (val x: Self) extends AnyVal {
       
       inline def setDefinitions(value: js.Array[String]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       

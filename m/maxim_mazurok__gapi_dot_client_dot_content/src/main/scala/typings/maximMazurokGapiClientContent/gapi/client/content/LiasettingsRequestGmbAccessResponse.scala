@@ -16,7 +16,8 @@ object LiasettingsRequestGmbAccessResponse {
     __obj.asInstanceOf[LiasettingsRequestGmbAccessResponse]
   }
   
-  extension [Self <: LiasettingsRequestGmbAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiasettingsRequestGmbAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

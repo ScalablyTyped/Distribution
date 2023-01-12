@@ -28,7 +28,8 @@ object UpdateContactGroupRequest {
     __obj.asInstanceOf[UpdateContactGroupRequest]
   }
   
-  extension [Self <: UpdateContactGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateContactGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
     

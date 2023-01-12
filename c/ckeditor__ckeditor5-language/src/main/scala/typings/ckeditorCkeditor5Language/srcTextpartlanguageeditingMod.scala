@@ -42,7 +42,8 @@ object srcTextpartlanguageeditingMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setTextPartLanguageEditing(value: TextPartLanguageEditing): Self = StObject.set(x, "TextPartLanguageEditing", value.asInstanceOf[js.Any])
       }

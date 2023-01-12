@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Anchor]
     }
     
-    extension [Self <: Anchor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: RelativePosition): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[ChangedParentTypes]
     }
     
-    extension [Self <: ChangedParentTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedParentTypes] (val x: Self) extends AnyVal {
       
       inline def setChangedParentTypes(value: Any): Self = StObject.set(x, "changedParentTypes", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[StackItem]
     }
     
-    extension [Self <: StackItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackItem] (val x: Self) extends AnyVal {
       
       inline def setStackItem(value: Any): Self = StObject.set(x, "stackItem", value.asInstanceOf[js.Any])
     }
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[YUndoManager]
     }
     
-    extension [Self <: YUndoManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YUndoManager] (val x: Self) extends AnyVal {
       
       inline def setYUndoManager(value: UndoManager): Self = StObject.set(x, "yUndoManager", value.asInstanceOf[js.Any])
       

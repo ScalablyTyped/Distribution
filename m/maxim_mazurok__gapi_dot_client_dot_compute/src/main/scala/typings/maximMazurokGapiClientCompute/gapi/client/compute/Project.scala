@@ -58,7 +58,8 @@ object Project {
     __obj.asInstanceOf[Project]
   }
   
-  extension [Self <: Project](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
     
     inline def setCommonInstanceMetadata(value: Metadata): Self = StObject.set(x, "commonInstanceMetadata", value.asInstanceOf[js.Any])
     

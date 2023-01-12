@@ -16,7 +16,8 @@ object FocusOptions {
     __obj.asInstanceOf[FocusOptions]
   }
   
-  extension [Self <: FocusOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventScroll(value: scala.Boolean): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     

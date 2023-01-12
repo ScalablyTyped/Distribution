@@ -38,7 +38,8 @@ object DirectKafkaSource {
     __obj.asInstanceOf[DirectKafkaSource]
   }
   
-  extension [Self <: DirectKafkaSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectKafkaSource] (val x: Self) extends AnyVal {
     
     inline def setDataPreviewOptions(value: StreamingDataPreviewOptions): Self = StObject.set(x, "DataPreviewOptions", value.asInstanceOf[js.Any])
     

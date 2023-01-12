@@ -20,7 +20,8 @@ object ICollection {
     __obj.asInstanceOf[ICollection[K, T]]
   }
   
-  extension [Self <: ICollection[?, ?], K, T](x: Self & (ICollection[K, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollection[?, ?], K, T] (val x: Self & (ICollection[K, T])) extends AnyVal {
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

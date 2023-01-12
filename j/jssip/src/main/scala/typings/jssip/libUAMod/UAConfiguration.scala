@@ -61,7 +61,8 @@ object UAConfiguration {
     __obj.asInstanceOf[UAConfiguration]
   }
   
-  extension [Self <: UAConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UAConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAuthorization_jwt(value: String): Self = StObject.set(x, "authorization_jwt", value.asInstanceOf[js.Any])
     

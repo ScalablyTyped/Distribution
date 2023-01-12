@@ -30,7 +30,8 @@ object AllowsOverdamping {
     __obj.asInstanceOf[AllowsOverdamping]
   }
   
-  extension [Self <: AllowsOverdamping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowsOverdamping] (val x: Self) extends AnyVal {
     
     inline def setAllowsOverdamping(value: Boolean): Self = StObject.set(x, "allowsOverdamping", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EfsFileSystemConfiguration {
     __obj.asInstanceOf[EfsFileSystemConfiguration]
   }
   
-  extension [Self <: EfsFileSystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EfsFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFileSystemPolicy(value: EfsFileSystemPolicy): Self = StObject.set(x, "fileSystemPolicy", value.asInstanceOf[js.Any])
     

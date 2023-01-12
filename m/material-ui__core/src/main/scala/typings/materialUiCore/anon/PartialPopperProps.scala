@@ -480,7 +480,8 @@ object PartialPopperProps {
     __obj.asInstanceOf[PartialPopperProps]
   }
   
-  extension [Self <: PartialPopperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPopperProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

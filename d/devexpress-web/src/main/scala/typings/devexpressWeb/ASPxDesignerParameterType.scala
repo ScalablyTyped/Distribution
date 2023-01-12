@@ -29,7 +29,8 @@ object ASPxDesignerParameterType {
     __obj.asInstanceOf[ASPxDesignerParameterType]
   }
   
-  extension [Self <: ASPxDesignerParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerParameterType] (val x: Self) extends AnyVal {
     
     inline def setDefaultVal(value: Any): Self = StObject.set(x, "defaultVal", value.asInstanceOf[js.Any])
     

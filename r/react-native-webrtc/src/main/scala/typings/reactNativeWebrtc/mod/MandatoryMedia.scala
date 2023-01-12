@@ -19,7 +19,8 @@ object MandatoryMedia {
     __obj.asInstanceOf[MandatoryMedia]
   }
   
-  extension [Self <: MandatoryMedia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MandatoryMedia] (val x: Self) extends AnyVal {
     
     inline def setMinFrameRate(value: Double): Self = StObject.set(x, "minFrameRate", value.asInstanceOf[js.Any])
     

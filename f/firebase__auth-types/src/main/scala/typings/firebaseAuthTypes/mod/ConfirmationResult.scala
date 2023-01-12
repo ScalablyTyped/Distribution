@@ -17,7 +17,8 @@ object ConfirmationResult {
     __obj.asInstanceOf[ConfirmationResult]
   }
   
-  extension [Self <: ConfirmationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmationResult] (val x: Self) extends AnyVal {
     
     inline def setConfirm(value: String => js.Promise[UserCredential]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     

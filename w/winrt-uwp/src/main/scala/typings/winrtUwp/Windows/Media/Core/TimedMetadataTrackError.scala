@@ -21,7 +21,8 @@ object TimedMetadataTrackError {
     __obj.asInstanceOf[TimedMetadataTrackError]
   }
   
-  extension [Self <: TimedMetadataTrackError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedMetadataTrackError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: TimedMetadataTrackErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

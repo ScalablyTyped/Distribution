@@ -32,7 +32,8 @@ object ZoomAnimEvent {
     __obj.asInstanceOf[ZoomAnimEvent]
   }
   
-  extension [Self <: ZoomAnimEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomAnimEvent] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: LatLng_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object UniqueValueGroupProperties {
     __obj.asInstanceOf[UniqueValueGroupProperties]
   }
   
-  extension [Self <: UniqueValueGroupProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValueGroupProperties] (val x: Self) extends AnyVal {
     
     inline def setClasses(value: js.Array[UniqueValueClassProperties]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ApiDefinition {
     __obj.asInstanceOf[ApiDefinition]
   }
   
-  extension [Self <: ApiDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiDefinition] (val x: Self) extends AnyVal {
     
     inline def setAuthorize(value: Boolean): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
     

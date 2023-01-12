@@ -151,7 +151,8 @@ object NodeDef {
     __obj.asInstanceOf[NodeDef[TProps, TCreds, TInstProps]]
   }
   
-  extension [Self <: NodeDef[?, ?, ?], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */](x: Self & (NodeDef[TProps, TCreds, TInstProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeDef[?, ?, ?], TProps /* <: NodeProperties */, TCreds, TInstProps /* <: TProps */] (val x: Self & (NodeDef[TProps, TCreds, TInstProps])) extends AnyVal {
     
     inline def setAlign(value: left | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object IntegrateServices {
     __obj.asInstanceOf[IntegrateServices]
   }
   
-  extension [Self <: IntegrateServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegrateServices] (val x: Self) extends AnyVal {
     
     inline def setAthenaIntegrations(value: AthenaIntegrationsSet): Self = StObject.set(x, "AthenaIntegrations", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CoverageStringFilter {
     __obj.asInstanceOf[CoverageStringFilter]
   }
   
-  extension [Self <: CoverageStringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageStringFilter] (val x: Self) extends AnyVal {
     
     inline def setComparison(value: CoverageStringComparison): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
     

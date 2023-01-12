@@ -77,7 +77,8 @@ object distCacheTokenCacheMod {
       __obj.asInstanceOf[LoadTokenOptions]
     }
     
-    extension [Self <: LoadTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setClientInfo(value: String): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
       

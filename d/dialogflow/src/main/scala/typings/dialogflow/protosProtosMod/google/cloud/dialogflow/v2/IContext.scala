@@ -24,7 +24,8 @@ object IContext {
     __obj.asInstanceOf[IContext]
   }
   
-  extension [Self <: IContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
     
     inline def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
     

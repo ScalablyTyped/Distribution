@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsZoomOutBoldMod extends Shortcu
       __obj.asInstanceOf[ZoomOutBoldProps]
     }
     
-    extension [Self <: ZoomOutBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomOutBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

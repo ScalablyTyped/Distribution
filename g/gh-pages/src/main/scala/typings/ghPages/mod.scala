@@ -125,7 +125,8 @@ object mod {
       __obj.asInstanceOf[Defaults_]
     }
     
-    extension [Self <: Defaults_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defaults_] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: `false`): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -244,7 +245,8 @@ object mod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       

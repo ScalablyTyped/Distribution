@@ -28,7 +28,8 @@ object PlayerObject {
     __obj.asInstanceOf[PlayerObject]
   }
   
-  extension [Self <: PlayerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerObject] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

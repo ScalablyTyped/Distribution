@@ -21,7 +21,8 @@ object IlmGetLifecycleRequest {
     __obj.asInstanceOf[IlmGetLifecycleRequest]
   }
   
-  extension [Self <: IlmGetLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmGetLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

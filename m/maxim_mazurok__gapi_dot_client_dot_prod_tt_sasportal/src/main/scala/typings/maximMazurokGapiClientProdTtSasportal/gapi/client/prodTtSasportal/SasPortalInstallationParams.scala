@@ -82,7 +82,8 @@ object SasPortalInstallationParams {
     __obj.asInstanceOf[SasPortalInstallationParams]
   }
   
-  extension [Self <: SasPortalInstallationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalInstallationParams] (val x: Self) extends AnyVal {
     
     inline def setAntennaAzimuth(value: Double): Self = StObject.set(x, "antennaAzimuth", value.asInstanceOf[js.Any])
     

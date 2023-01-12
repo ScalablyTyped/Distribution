@@ -21,7 +21,8 @@ object TextMapCodecOptions {
     __obj.asInstanceOf[TextMapCodecOptions]
   }
   
-  extension [Self <: TextMapCodecOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextMapCodecOptions] (val x: Self) extends AnyVal {
     
     inline def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
     

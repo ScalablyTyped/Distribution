@@ -21,7 +21,8 @@ object IdentifyParams {
     __obj.asInstanceOf[IdentifyParams]
   }
   
-  extension [Self <: IdentifyParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifyParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

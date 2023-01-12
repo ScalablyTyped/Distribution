@@ -15,7 +15,8 @@ object ChartZoomableMousewheel {
     __obj.asInstanceOf[ChartZoomableMousewheel]
   }
   
-  extension [Self <: ChartZoomableMousewheel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartZoomableMousewheel] (val x: Self) extends AnyVal {
     
     inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GetWirelessGatewayTaskResponse {
     __obj.asInstanceOf[GetWirelessGatewayTaskResponse]
   }
   
-  extension [Self <: GetWirelessGatewayTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWirelessGatewayTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setLastUplinkReceivedAt(value: ISODateTimeString): Self = StObject.set(x, "LastUplinkReceivedAt", value.asInstanceOf[js.Any])
     

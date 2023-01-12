@@ -28,7 +28,8 @@ object CreateCampaignRequest {
     __obj.asInstanceOf[CreateCampaignRequest]
   }
   
-  extension [Self <: CreateCampaignRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCampaignRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectInstanceId(value: InstanceId): Self = StObject.set(x, "connectInstanceId", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object ParagraphData {
     __obj.asInstanceOf[ParagraphData]
   }
   
-  extension [Self <: ParagraphData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

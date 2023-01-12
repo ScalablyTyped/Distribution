@@ -23,7 +23,8 @@ object DirtyFlagResult {
     __obj.asInstanceOf[DirtyFlagResult]
   }
   
-  extension [Self <: DirtyFlagResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirtyFlagResult] (val x: Self) extends AnyVal {
     
     inline def setForceDirty(value: () => Unit): Self = StObject.set(x, "forceDirty", js.Any.fromFunction0(value))
     

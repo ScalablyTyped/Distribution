@@ -23,7 +23,8 @@ object DescribeQueryRequest {
     __obj.asInstanceOf[DescribeQueryRequest]
   }
   
-  extension [Self <: DescribeQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setEventDataStore(value: EventDataStoreArn): Self = StObject.set(x, "EventDataStore", value.asInstanceOf[js.Any])
     

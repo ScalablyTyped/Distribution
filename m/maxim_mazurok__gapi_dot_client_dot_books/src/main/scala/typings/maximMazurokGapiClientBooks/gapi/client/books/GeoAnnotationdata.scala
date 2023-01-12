@@ -40,7 +40,8 @@ object GeoAnnotationdata {
     __obj.asInstanceOf[GeoAnnotationdata]
   }
   
-  extension [Self <: GeoAnnotationdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoAnnotationdata] (val x: Self) extends AnyVal {
     
     inline def setAnnotationType(value: String): Self = StObject.set(x, "annotationType", value.asInstanceOf[js.Any])
     

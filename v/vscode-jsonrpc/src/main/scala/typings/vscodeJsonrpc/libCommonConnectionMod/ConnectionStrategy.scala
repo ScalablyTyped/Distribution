@@ -29,7 +29,8 @@ object ConnectionStrategy {
   
   inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean]
   
-  extension [Self <: ConnectionStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionStrategy] (val x: Self) extends AnyVal {
     
     inline def setCancelUndispatched(
       value: (/* message */ Message, /* next */ js.Function1[/* message */ Message, js.UndefOr[ResponseMessage]]) => js.UndefOr[ResponseMessage]

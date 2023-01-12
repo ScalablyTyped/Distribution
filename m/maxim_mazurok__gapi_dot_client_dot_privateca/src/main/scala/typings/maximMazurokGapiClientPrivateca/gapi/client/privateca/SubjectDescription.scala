@@ -34,7 +34,8 @@ object SubjectDescription {
     __obj.asInstanceOf[SubjectDescription]
   }
   
-  extension [Self <: SubjectDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectDescription] (val x: Self) extends AnyVal {
     
     inline def setHexSerialNumber(value: String): Self = StObject.set(x, "hexSerialNumber", value.asInstanceOf[js.Any])
     

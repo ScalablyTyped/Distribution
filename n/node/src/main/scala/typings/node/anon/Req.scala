@@ -19,7 +19,8 @@ object Req {
     __obj.asInstanceOf[Req[Request]]
   }
   
-  extension [Self <: Req[?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */](x: Self & Req[Request]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Req[?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */] (val x: Self & Req[Request]) extends AnyVal {
     
     inline def setReq(value: InstanceType[Request]): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
   }

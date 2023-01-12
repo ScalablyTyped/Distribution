@@ -25,7 +25,8 @@ object TaskBoardCardMenuItem {
     __obj.asInstanceOf[TaskBoardCardMenuItem]
   }
   
-  extension [Self <: TaskBoardCardMenuItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardCardMenuItem] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

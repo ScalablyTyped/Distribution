@@ -21,7 +21,8 @@ object Approvals {
     __obj.asInstanceOf[Approvals]
   }
   
-  extension [Self <: Approvals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Approvals] (val x: Self) extends AnyVal {
     
     inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

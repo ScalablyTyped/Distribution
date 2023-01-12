@@ -28,7 +28,8 @@ object ListBuiltInSlotTypesResponse {
     __obj.asInstanceOf[ListBuiltInSlotTypesResponse]
   }
   
-  extension [Self <: ListBuiltInSlotTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuiltInSlotTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setBuiltInSlotTypeSummaries(value: BuiltInSlotTypeSummaryList): Self = StObject.set(x, "builtInSlotTypeSummaries", value.asInstanceOf[js.Any])
     

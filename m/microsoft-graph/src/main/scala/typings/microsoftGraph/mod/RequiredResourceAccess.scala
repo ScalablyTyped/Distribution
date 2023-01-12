@@ -22,7 +22,8 @@ object RequiredResourceAccess {
     __obj.asInstanceOf[RequiredResourceAccess]
   }
   
-  extension [Self <: RequiredResourceAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredResourceAccess] (val x: Self) extends AnyVal {
     
     inline def setResourceAccess(value: js.Array[ResourceAccess]): Self = StObject.set(x, "resourceAccess", value.asInstanceOf[js.Any])
     

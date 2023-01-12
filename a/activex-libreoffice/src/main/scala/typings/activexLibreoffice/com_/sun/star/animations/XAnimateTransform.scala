@@ -72,7 +72,8 @@ object XAnimateTransform {
     __obj.asInstanceOf[XAnimateTransform]
   }
   
-  extension [Self <: XAnimateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAnimateTransform] (val x: Self) extends AnyVal {
     
     inline def setTransformType(value: Double): Self = StObject.set(x, "TransformType", value.asInstanceOf[js.Any])
   }

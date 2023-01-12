@@ -104,7 +104,8 @@ object checkboxMod {
       __obj.asInstanceOf[CheckboxButtonProps]
     }
     
-    extension [Self <: CheckboxButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object checkboxMod {
       __obj.asInstanceOf[CheckboxGroupProps]
     }
     
-    extension [Self <: CheckboxGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Element] | Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object checkboxMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

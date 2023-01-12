@@ -28,7 +28,8 @@ object OpticalImageStabilizationControl {
     __obj.asInstanceOf[OpticalImageStabilizationControl]
   }
   
-  extension [Self <: OpticalImageStabilizationControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpticalImageStabilizationControl] (val x: Self) extends AnyVal {
     
     inline def setMode(value: OpticalImageStabilizationMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

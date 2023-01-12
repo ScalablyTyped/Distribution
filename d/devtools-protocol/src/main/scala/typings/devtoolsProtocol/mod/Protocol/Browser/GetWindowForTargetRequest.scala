@@ -19,7 +19,8 @@ object GetWindowForTargetRequest {
     __obj.asInstanceOf[GetWindowForTargetRequest]
   }
   
-  extension [Self <: GetWindowForTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWindowForTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setTargetId(value: TargetID): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
     

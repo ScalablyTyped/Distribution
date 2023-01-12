@@ -151,7 +151,8 @@ object splitterSplitterMod {
       __obj.asInstanceOf[SplitterPanelProps]
     }
     
-    extension [Self <: SplitterPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterPanelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -549,7 +550,8 @@ object splitterSplitterMod {
       __obj.asInstanceOf[SplitterProps]
     }
     
-    extension [Self <: SplitterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1296,7 +1298,8 @@ object splitterSplitterMod {
       __obj.asInstanceOf[SplitterResizeEndParams]
     }
     
-    extension [Self <: SplitterResizeEndParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitterResizeEndParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

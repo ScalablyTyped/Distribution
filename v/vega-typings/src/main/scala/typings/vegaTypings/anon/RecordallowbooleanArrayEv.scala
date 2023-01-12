@@ -20,7 +20,8 @@ object RecordallowbooleanArrayEv {
     __obj.asInstanceOf[RecordallowbooleanArrayEv]
   }
   
-  extension [Self <: RecordallowbooleanArrayEv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordallowbooleanArrayEv] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: Boolean | js.Array[EventType]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

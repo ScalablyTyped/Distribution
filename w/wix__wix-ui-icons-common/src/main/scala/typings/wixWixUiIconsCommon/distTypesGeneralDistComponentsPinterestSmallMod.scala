@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsPinterestSmallMod extends Shortcut {
       __obj.asInstanceOf[PinterestSmallProps]
     }
     
-    extension [Self <: PinterestSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinterestSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeOrganizationConfigurationRequest {
     __obj.asInstanceOf[DescribeOrganizationConfigurationRequest]
   }
   
-  extension [Self <: DescribeOrganizationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOrganizationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }

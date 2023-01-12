@@ -28,7 +28,8 @@ object ModifyInstanceCreditSpecificationRequest {
     __obj.asInstanceOf[ModifyInstanceCreditSpecificationRequest]
   }
   
-  extension [Self <: ModifyInstanceCreditSpecificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceCreditSpecificationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ResponseHeaderType {
     __obj.asInstanceOf[ResponseHeaderType]
   }
   
-  extension [Self <: ResponseHeaderType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeaderType] (val x: Self) extends AnyVal {
     
     inline def `setCache-control`(value: String): Self = StObject.set(x, "cache-control", value.asInstanceOf[js.Any])
     

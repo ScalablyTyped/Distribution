@@ -53,7 +53,8 @@ object libPathAstarMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       

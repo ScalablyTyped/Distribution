@@ -17,7 +17,8 @@ object NarrowPhase {
     __obj.asInstanceOf[NarrowPhase]
   }
   
-  extension [Self <: NarrowPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NarrowPhase] (val x: Self) extends AnyVal {
     
     inline def setContactPointPool(value: js.Array[Pool]): Self = StObject.set(x, "contactPointPool", value.asInstanceOf[js.Any])
     

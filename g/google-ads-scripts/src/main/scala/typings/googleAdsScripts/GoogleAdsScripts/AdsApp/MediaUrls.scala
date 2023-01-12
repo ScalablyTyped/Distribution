@@ -31,7 +31,8 @@ object MediaUrls {
     __obj.asInstanceOf[MediaUrls]
   }
   
-  extension [Self <: MediaUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaUrls] (val x: Self) extends AnyVal {
     
     inline def setGetFullUrl(value: () => String): Self = StObject.set(x, "getFullUrl", js.Any.fromFunction0(value))
     

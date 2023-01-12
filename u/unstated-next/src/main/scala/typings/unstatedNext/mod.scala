@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Container[Value, State]]
     }
     
-    extension [Self <: Container[?, ?], Value, State](x: Self & (Container[Value, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Container[?, ?], Value, State] (val x: Self & (Container[Value, State])) extends AnyVal {
       
       inline def setProvider(value: ComponentType[ContainerProviderProps[State]]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ContainerProviderProps[State]]
     }
     
-    extension [Self <: ContainerProviderProps[?], State](x: Self & ContainerProviderProps[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerProviderProps[?], State] (val x: Self & ContainerProviderProps[State]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

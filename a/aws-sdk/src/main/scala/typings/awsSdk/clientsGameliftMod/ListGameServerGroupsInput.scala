@@ -23,7 +23,8 @@ object ListGameServerGroupsInput {
     __obj.asInstanceOf[ListGameServerGroupsInput]
   }
   
-  extension [Self <: ListGameServerGroupsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGameServerGroupsInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PositiveInteger): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

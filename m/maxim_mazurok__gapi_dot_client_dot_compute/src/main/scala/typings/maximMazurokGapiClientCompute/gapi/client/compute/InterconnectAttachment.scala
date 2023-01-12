@@ -154,7 +154,8 @@ object InterconnectAttachment {
     __obj.asInstanceOf[InterconnectAttachment]
   }
   
-  extension [Self <: InterconnectAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectAttachment] (val x: Self) extends AnyVal {
     
     inline def setAdminEnabled(value: Boolean): Self = StObject.set(x, "adminEnabled", value.asInstanceOf[js.Any])
     

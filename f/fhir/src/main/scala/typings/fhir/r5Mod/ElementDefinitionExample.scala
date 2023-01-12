@@ -319,7 +319,8 @@ object ElementDefinitionExample {
     __obj.asInstanceOf[ElementDefinitionExample]
   }
   
-  extension [Self <: ElementDefinitionExample](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDefinitionExample] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

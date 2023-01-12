@@ -17,7 +17,8 @@ object RenderSearchTemplateParams {
     __obj.asInstanceOf[RenderSearchTemplateParams]
   }
   
-  extension [Self <: RenderSearchTemplateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSearchTemplateParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -64,7 +64,8 @@ object distMouseMod {
       __obj.asInstanceOf[IEvent]
     }
     
-    extension [Self <: IEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEvent] (val x: Self) extends AnyVal {
       
       inline def setRun(value: IEventTarget => Unit): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
       
@@ -89,7 +90,8 @@ object distMouseMod {
       __obj.asInstanceOf[IEventTarget]
     }
     
-    extension [Self <: IEventTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventTarget] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       

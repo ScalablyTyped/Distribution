@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setDuration_in_seconds(value: Double): Self = StObject.set(x, "duration_in_seconds", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[LogMap]
     }
     
-    extension [Self <: LogMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogMap] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

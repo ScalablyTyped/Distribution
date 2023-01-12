@@ -17,7 +17,8 @@ object QueueNode {
     __obj.asInstanceOf[QueueNode[T]]
   }
   
-  extension [Self <: QueueNode[?], T](x: Self & QueueNode[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueNode[?], T] (val x: Self & QueueNode[T]) extends AnyVal {
     
     inline def setNext(value: QueueNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

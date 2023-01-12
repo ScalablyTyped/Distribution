@@ -22,7 +22,8 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   
-  extension [Self <: Token](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

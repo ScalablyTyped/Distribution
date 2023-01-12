@@ -22,7 +22,8 @@ object ProductsListResponse {
     __obj.asInstanceOf[ProductsListResponse]
   }
   
-  extension [Self <: ProductsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductsListResponse] (val x: Self) extends AnyVal {
     
     inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     

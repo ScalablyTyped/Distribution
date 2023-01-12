@@ -18,7 +18,8 @@ object IpsCancelWarmupRequest {
     __obj.asInstanceOf[IpsCancelWarmupRequest]
   }
   
-  extension [Self <: IpsCancelWarmupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsCancelWarmupRequest] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
   }

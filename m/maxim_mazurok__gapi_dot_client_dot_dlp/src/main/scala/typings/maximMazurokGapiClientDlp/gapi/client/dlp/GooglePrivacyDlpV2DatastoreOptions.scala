@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DatastoreOptions {
     __obj.asInstanceOf[GooglePrivacyDlpV2DatastoreOptions]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DatastoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DatastoreOptions] (val x: Self) extends AnyVal {
     
     inline def setKind(value: GooglePrivacyDlpV2KindExpression): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

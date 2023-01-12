@@ -16,7 +16,8 @@ object GoogleCloudMlV1XraiAttribution {
     __obj.asInstanceOf[GoogleCloudMlV1XraiAttribution]
   }
   
-  extension [Self <: GoogleCloudMlV1XraiAttribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1XraiAttribution] (val x: Self) extends AnyVal {
     
     inline def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
     

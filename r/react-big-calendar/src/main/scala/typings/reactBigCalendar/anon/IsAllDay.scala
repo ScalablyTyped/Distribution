@@ -22,7 +22,8 @@ object IsAllDay {
     __obj.asInstanceOf[IsAllDay[TEvent]]
   }
   
-  extension [Self <: IsAllDay[?], TEvent /* <: js.Object */](x: Self & IsAllDay[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsAllDay[?], TEvent /* <: js.Object */] (val x: Self & IsAllDay[TEvent]) extends AnyVal {
     
     inline def setEnd(value: stringOrDate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

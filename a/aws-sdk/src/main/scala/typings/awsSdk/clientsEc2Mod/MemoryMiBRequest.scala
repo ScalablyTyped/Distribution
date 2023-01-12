@@ -23,7 +23,8 @@ object MemoryMiBRequest {
     __obj.asInstanceOf[MemoryMiBRequest]
   }
   
-  extension [Self <: MemoryMiBRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryMiBRequest] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

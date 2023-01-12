@@ -18,7 +18,8 @@ object CompositeSlotTypeSetting {
     __obj.asInstanceOf[CompositeSlotTypeSetting]
   }
   
-  extension [Self <: CompositeSlotTypeSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeSlotTypeSetting] (val x: Self) extends AnyVal {
     
     inline def setSubSlots(value: SubSlotTypeList): Self = StObject.set(x, "subSlots", value.asInstanceOf[js.Any])
     

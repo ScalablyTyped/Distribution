@@ -46,7 +46,8 @@ object DocumentVisibility {
     __obj.asInstanceOf[DocumentVisibility]
   }
   
-  extension [Self <: DocumentVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentVisibility] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
     

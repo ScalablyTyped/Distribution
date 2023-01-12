@@ -38,7 +38,8 @@ object CalendarOptionsData {
     __obj.asInstanceOf[CalendarOptionsData]
   }
   
-  extension [Self <: CalendarOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarOptionsData] (val x: Self) extends AnyVal {
     
     inline def setAvailableRawLocales(value: Any): Self = StObject.set(x, "availableRawLocales", value.asInstanceOf[js.Any])
     

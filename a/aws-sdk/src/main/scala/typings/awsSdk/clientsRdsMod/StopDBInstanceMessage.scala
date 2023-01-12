@@ -23,7 +23,8 @@ object StopDBInstanceMessage {
     __obj.asInstanceOf[StopDBInstanceMessage]
   }
   
-  extension [Self <: StopDBInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDBInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
     

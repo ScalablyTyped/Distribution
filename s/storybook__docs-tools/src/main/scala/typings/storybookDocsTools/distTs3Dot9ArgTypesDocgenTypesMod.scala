@@ -66,7 +66,8 @@ object distTs3Dot9ArgTypesDocgenTypesMod {
       __obj.asInstanceOf[DocgenFlowType]
     }
     
-    extension [Self <: DocgenFlowType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenFlowType] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object distTs3Dot9ArgTypesDocgenTypesMod {
       __obj.asInstanceOf[DocgenInfo]
     }
     
-    extension [Self <: DocgenInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenInfo] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: DocgenPropDefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object distTs3Dot9ArgTypesDocgenTypesMod {
       __obj.asInstanceOf[DocgenPropDefaultValue]
     }
     
-    extension [Self <: DocgenPropDefaultValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenPropDefaultValue] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object distTs3Dot9ArgTypesDocgenTypesMod {
       __obj.asInstanceOf[DocgenPropType]
     }
     
-    extension [Self <: DocgenPropType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenPropType] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object distTs3Dot9ArgTypesDocgenTypesMod {
       __obj.asInstanceOf[DocgenType]
     }
     
-    extension [Self <: DocgenType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenType] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

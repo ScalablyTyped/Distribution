@@ -15,7 +15,8 @@ object ICalendarDate {
     __obj.asInstanceOf[ICalendarDate]
   }
   
-  extension [Self <: ICalendarDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICalendarDate] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_ICalendarDate(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_ICalendarDate", value.asInstanceOf[js.Any])
   }

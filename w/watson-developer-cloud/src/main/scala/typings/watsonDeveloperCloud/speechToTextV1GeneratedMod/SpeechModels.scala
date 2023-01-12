@@ -17,7 +17,8 @@ object SpeechModels {
     __obj.asInstanceOf[SpeechModels]
   }
   
-  extension [Self <: SpeechModels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechModels] (val x: Self) extends AnyVal {
     
     inline def setModels(value: js.Array[SpeechModel]): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     

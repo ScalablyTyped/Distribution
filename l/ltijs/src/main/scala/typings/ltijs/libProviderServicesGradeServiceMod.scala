@@ -25,7 +25,8 @@ object libProviderServicesGradeServiceMod {
       __obj.asInstanceOf[GradeFilters]
     }
     
-    extension [Self <: GradeFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GradeFilters] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libProviderServicesGradeServiceMod {
       __obj.asInstanceOf[PublishedGrade]
     }
     
-    extension [Self <: PublishedGrade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishedGrade] (val x: Self) extends AnyVal {
       
       inline def setActivityProgress(value: String): Self = StObject.set(x, "activityProgress", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object libProviderServicesGradeServiceMod {
       __obj.asInstanceOf[RetrievedGrade]
     }
     
-    extension [Self <: RetrievedGrade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetrievedGrade] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

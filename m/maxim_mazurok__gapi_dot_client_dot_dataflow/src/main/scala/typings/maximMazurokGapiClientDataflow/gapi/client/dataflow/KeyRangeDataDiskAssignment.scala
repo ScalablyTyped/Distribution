@@ -25,7 +25,8 @@ object KeyRangeDataDiskAssignment {
     __obj.asInstanceOf[KeyRangeDataDiskAssignment]
   }
   
-  extension [Self <: KeyRangeDataDiskAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRangeDataDiskAssignment] (val x: Self) extends AnyVal {
     
     inline def setDataDisk(value: String): Self = StObject.set(x, "dataDisk", value.asInstanceOf[js.Any])
     

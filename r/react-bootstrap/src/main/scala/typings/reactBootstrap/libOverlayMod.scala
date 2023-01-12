@@ -56,7 +56,8 @@ object libOverlayMod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

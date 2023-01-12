@@ -645,7 +645,8 @@ object libComponentsPopoverMod {
       __obj.asInstanceOf[PopoverBaseIsolatedProps]
     }
     
-    extension [Self <: PopoverBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(
         value: top | `top-left` | `top-right` | bottom | `bottom-left` | `bottom-right` | left | `left-bottom` | `left-top` | right | `right-bottom` | `right-top`
@@ -688,7 +689,8 @@ object libComponentsPopoverMod {
       __obj.asInstanceOf[PopoverBaseProps]
     }
     
-    extension [Self <: PopoverBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1013,7 +1015,8 @@ object libComponentsPopoverMod {
       __obj.asInstanceOf[PopoverDefaultProps]
     }
     
-    extension [Self <: PopoverDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

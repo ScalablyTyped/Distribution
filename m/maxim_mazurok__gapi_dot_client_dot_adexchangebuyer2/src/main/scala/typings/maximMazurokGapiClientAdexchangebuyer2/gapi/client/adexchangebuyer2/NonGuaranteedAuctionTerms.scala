@@ -19,7 +19,8 @@ object NonGuaranteedAuctionTerms {
     __obj.asInstanceOf[NonGuaranteedAuctionTerms]
   }
   
-  extension [Self <: NonGuaranteedAuctionTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonGuaranteedAuctionTerms] (val x: Self) extends AnyVal {
     
     inline def setAutoOptimizePrivateAuction(value: Boolean): Self = StObject.set(x, "autoOptimizePrivateAuction", value.asInstanceOf[js.Any])
     

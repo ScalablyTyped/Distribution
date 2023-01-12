@@ -19,7 +19,8 @@ object EsSpecCompliant {
     __obj.asInstanceOf[EsSpecCompliant]
   }
   
-  extension [Self <: EsSpecCompliant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsSpecCompliant] (val x: Self) extends AnyVal {
     
     inline def setEsSpecCompliant(value: Boolean): Self = StObject.set(x, "esSpecCompliant", value.asInstanceOf[js.Any])
     

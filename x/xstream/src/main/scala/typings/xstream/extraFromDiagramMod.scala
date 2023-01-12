@@ -58,7 +58,8 @@ object extraFromDiagramMod {
       __obj.asInstanceOf[FromDiagramOptions]
     }
     
-    extension [Self <: FromDiagramOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromDiagramOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorValue(value: Any): Self = StObject.set(x, "errorValue", value.asInstanceOf[js.Any])
       

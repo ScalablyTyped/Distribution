@@ -70,7 +70,8 @@ object BuildingFieldStatistics {
     __obj.asInstanceOf[BuildingFieldStatistics]
   }
   
-  extension [Self <: BuildingFieldStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingFieldStatistics] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

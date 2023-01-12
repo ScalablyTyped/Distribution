@@ -66,7 +66,8 @@ object ASPxClientTimer {
     __obj.asInstanceOf[ASPxClientTimer]
   }
   
-  extension [Self <: ASPxClientTimer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTimer] (val x: Self) extends AnyVal {
     
     inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     

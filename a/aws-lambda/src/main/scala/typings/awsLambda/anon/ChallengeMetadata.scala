@@ -24,7 +24,8 @@ object ChallengeMetadata {
     __obj.asInstanceOf[ChallengeMetadata]
   }
   
-  extension [Self <: ChallengeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeMetadata] (val x: Self) extends AnyVal {
     
     inline def setChallengeMetadata(value: String): Self = StObject.set(x, "challengeMetadata", value.asInstanceOf[js.Any])
     

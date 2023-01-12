@@ -22,7 +22,8 @@ object Body {
     __obj.asInstanceOf[Body[T]]
   }
   
-  extension [Self <: Body[?], T /* <: FhirResource */](x: Self & Body[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Body[?], T /* <: FhirResource */] (val x: Self & Body[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

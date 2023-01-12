@@ -59,7 +59,8 @@ object distSrcDefaultsMod {
       __obj.asInstanceOf[FirebaseDefaults]
     }
     
-    extension [Self <: FirebaseDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseDefaults] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

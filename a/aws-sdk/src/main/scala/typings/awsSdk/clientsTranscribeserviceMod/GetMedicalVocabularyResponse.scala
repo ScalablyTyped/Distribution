@@ -43,7 +43,8 @@ object GetMedicalVocabularyResponse {
     __obj.asInstanceOf[GetMedicalVocabularyResponse]
   }
   
-  extension [Self <: GetMedicalVocabularyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMedicalVocabularyResponse] (val x: Self) extends AnyVal {
     
     inline def setDownloadUri(value: Uri): Self = StObject.set(x, "DownloadUri", value.asInstanceOf[js.Any])
     

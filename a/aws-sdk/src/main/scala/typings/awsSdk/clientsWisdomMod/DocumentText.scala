@@ -23,7 +23,8 @@ object DocumentText {
     __obj.asInstanceOf[DocumentText]
   }
   
-  extension [Self <: DocumentText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentText] (val x: Self) extends AnyVal {
     
     inline def setHighlights(value: Highlights): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     

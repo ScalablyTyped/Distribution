@@ -97,7 +97,8 @@ object distSrcModulesUiCoreThemeThemeServiceMod {
       __obj.asInstanceOf[ThemeService]
     }
     
-    extension [Self <: ThemeService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeService] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Any => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

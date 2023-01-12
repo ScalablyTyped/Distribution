@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[PhoneticOptions]
     }
     
-    extension [Self <: PhoneticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneticOptions] (val x: Self) extends AnyVal {
       
       inline def setCapFirst(value: Boolean): Self = StObject.set(x, "capFirst", value.asInstanceOf[js.Any])
       

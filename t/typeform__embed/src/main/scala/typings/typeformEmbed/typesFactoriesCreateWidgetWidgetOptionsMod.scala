@@ -55,7 +55,8 @@ object typesFactoriesCreateWidgetWidgetOptionsMod {
       __obj.asInstanceOf[WidgetOptions]
     }
     
-    extension [Self <: WidgetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

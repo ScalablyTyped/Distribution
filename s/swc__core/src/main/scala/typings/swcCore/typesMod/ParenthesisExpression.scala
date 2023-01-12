@@ -22,7 +22,8 @@ object ParenthesisExpression {
     __obj.asInstanceOf[ParenthesisExpression]
   }
   
-  extension [Self <: ParenthesisExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParenthesisExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofFixedAmount {
     __obj.asInstanceOf[TypeofFixedAmount]
   }
   
-  extension [Self <: TypeofFixedAmount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFixedAmount] (val x: Self) extends AnyVal {
     
     inline def setCurrencyOptions(value: Any): Self = StObject.set(x, "CurrencyOptions", value.asInstanceOf[js.Any])
   }

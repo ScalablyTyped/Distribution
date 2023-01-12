@@ -64,7 +64,8 @@ object TimedTextStyle {
     __obj.asInstanceOf[TimedTextStyle]
   }
   
-  extension [Self <: TimedTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextStyle] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

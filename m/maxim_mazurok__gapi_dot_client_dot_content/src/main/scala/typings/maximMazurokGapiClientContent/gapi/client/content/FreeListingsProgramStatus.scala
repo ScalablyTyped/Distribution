@@ -19,7 +19,8 @@ object FreeListingsProgramStatus {
     __obj.asInstanceOf[FreeListingsProgramStatus]
   }
   
-  extension [Self <: FreeListingsProgramStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeListingsProgramStatus] (val x: Self) extends AnyVal {
     
     inline def setGlobalState(value: String): Self = StObject.set(x, "globalState", value.asInstanceOf[js.Any])
     

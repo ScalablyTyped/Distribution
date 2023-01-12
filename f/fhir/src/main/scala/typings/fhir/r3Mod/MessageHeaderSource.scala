@@ -48,7 +48,8 @@ object MessageHeaderSource {
     __obj.asInstanceOf[MessageHeaderSource]
   }
   
-  extension [Self <: MessageHeaderSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageHeaderSource] (val x: Self) extends AnyVal {
     
     inline def setContact(value: ContactPoint): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     

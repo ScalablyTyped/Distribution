@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[CommitGroup[T]]
     }
     
-    extension [Self <: CommitGroup[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & CommitGroup[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitGroup[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & CommitGroup[T]) extends AnyVal {
       
       inline def setCommits(value: js.Array[TransformedCommit[T]]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
@@ -204,7 +206,8 @@ object mod {
         __obj.asInstanceOf[ExtraContext[T]]
       }
       
-      extension [Self <: ExtraContext[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & ExtraContext[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExtraContext[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & ExtraContext[T]) extends AnyVal {
         
         inline def setCommitGroups(value: js.Array[CommitGroup[T]]): Self = StObject.set(x, "commitGroups", value.asInstanceOf[js.Any])
         
@@ -231,7 +234,8 @@ object mod {
       __obj.asInstanceOf[NoteGroup]
     }
     
-    extension [Self <: NoteGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoteGroup] (val x: Self) extends AnyVal {
       
       inline def setCommits(value: js.Array[Note]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
@@ -461,7 +465,8 @@ object mod {
     }
     type GenerateOn[TContext /* <: Context */, TCommit /* <: Commit[String | Double | js.Symbol] */] = js.Function | String | js.Object
     
-    extension [Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](x: Self & (Options[TCommit, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */] (val x: Self & (Options[TCommit, TContext])) extends AnyVal {
       
       inline def setCommitGroupsSort(value: Sort[CommitGroup[TCommit]]): Self = StObject.set(x, "commitGroupsSort", value.asInstanceOf[js.Any])
       

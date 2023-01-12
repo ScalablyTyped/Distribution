@@ -22,7 +22,8 @@ object BatchUpdatePresentationResponse {
     __obj.asInstanceOf[BatchUpdatePresentationResponse]
   }
   
-  extension [Self <: BatchUpdatePresentationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdatePresentationResponse] (val x: Self) extends AnyVal {
     
     inline def setPresentationId(value: String): Self = StObject.set(x, "presentationId", value.asInstanceOf[js.Any])
     

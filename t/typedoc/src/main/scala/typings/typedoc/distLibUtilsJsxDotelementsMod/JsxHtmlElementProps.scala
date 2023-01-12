@@ -17,7 +17,8 @@ object JsxHtmlElementProps {
     __obj.asInstanceOf[JsxHtmlElementProps]
   }
   
-  extension [Self <: JsxHtmlElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxHtmlElementProps] (val x: Self) extends AnyVal {
     
     inline def setXmlns(value: String): Self = StObject.set(x, "xmlns", value.asInstanceOf[js.Any])
     

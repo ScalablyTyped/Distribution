@@ -44,7 +44,8 @@ object GravityEnum {
     __obj.asInstanceOf[GravityEnum]
   }
   
-  extension [Self <: GravityEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GravityEnum] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Double): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

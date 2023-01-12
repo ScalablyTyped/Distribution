@@ -110,7 +110,8 @@ object DestinationKmsKeyName {
     __obj.asInstanceOf[DestinationKmsKeyName]
   }
   
-  extension [Self <: DestinationKmsKeyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationKmsKeyName] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

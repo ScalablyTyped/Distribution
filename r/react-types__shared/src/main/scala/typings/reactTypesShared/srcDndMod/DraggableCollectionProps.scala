@@ -34,7 +34,8 @@ object DraggableCollectionProps {
     __obj.asInstanceOf[DraggableCollectionProps]
   }
   
-  extension [Self <: DraggableCollectionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableCollectionProps] (val x: Self) extends AnyVal {
     
     inline def setGetAllowedDropOperations(value: () => js.Array[DropOperation]): Self = StObject.set(x, "getAllowedDropOperations", js.Any.fromFunction0(value))
     

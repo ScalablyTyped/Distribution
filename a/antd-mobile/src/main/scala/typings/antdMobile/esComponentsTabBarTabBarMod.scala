@@ -317,7 +317,8 @@ object esComponentsTabBarTabBarMod {
       __obj.asInstanceOf[TabBarItemProps]
     }
     
-    extension [Self <: TabBarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -803,7 +804,8 @@ object esComponentsTabBarTabBarMod {
       __obj.asInstanceOf[TabBarProps]
     }
     
-    extension [Self <: TabBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

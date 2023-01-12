@@ -46,7 +46,8 @@ object Ident {
     __obj.asInstanceOf[Ident]
   }
   
-  extension [Self <: Ident](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ident] (val x: Self) extends AnyVal {
     
     inline def setIsEmpty(value: scala.Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
     

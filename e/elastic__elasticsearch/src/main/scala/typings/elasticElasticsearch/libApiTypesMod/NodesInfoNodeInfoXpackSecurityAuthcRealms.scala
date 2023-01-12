@@ -20,7 +20,8 @@ object NodesInfoNodeInfoXpackSecurityAuthcRealms {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackSecurityAuthcRealms]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackSecurityAuthcRealms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackSecurityAuthcRealms] (val x: Self) extends AnyVal {
     
     inline def setFile(value: Record[String, NodesInfoNodeInfoXpackSecurityAuthcRealmsStatus]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

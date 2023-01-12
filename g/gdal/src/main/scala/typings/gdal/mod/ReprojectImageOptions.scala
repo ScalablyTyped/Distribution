@@ -45,7 +45,8 @@ object ReprojectImageOptions {
     __obj.asInstanceOf[ReprojectImageOptions]
   }
   
-  extension [Self <: ReprojectImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReprojectImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCutline(value: Geometry): Self = StObject.set(x, "cutline", value.asInstanceOf[js.Any])
     

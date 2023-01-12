@@ -19,7 +19,8 @@ object IBasicProperties {
     __obj.asInstanceOf[IBasicProperties]
   }
   
-  extension [Self <: IBasicProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBasicProperties] (val x: Self) extends AnyVal {
     
     inline def setDateModified(value: js.Date): Self = StObject.set(x, "dateModified", value.asInstanceOf[js.Any])
     

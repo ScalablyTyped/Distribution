@@ -22,7 +22,8 @@ object PublisherProfileMobileApplication {
     __obj.asInstanceOf[PublisherProfileMobileApplication]
   }
   
-  extension [Self <: PublisherProfileMobileApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublisherProfileMobileApplication] (val x: Self) extends AnyVal {
     
     inline def setAppStore(value: String): Self = StObject.set(x, "appStore", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ForcedXMLVersion {
     __obj.asInstanceOf[ForcedXMLVersion]
   }
   
-  extension [Self <: ForcedXMLVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForcedXMLVersion] (val x: Self) extends AnyVal {
     
     inline def setDefaultXMLVersion(value: Exclude[js.UndefOr[`1Dot0` | `1Dot1`], Unit]): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
     

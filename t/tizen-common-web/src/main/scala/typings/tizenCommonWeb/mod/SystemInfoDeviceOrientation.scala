@@ -27,7 +27,8 @@ object SystemInfoDeviceOrientation {
     __obj.asInstanceOf[SystemInfoDeviceOrientation]
   }
   
-  extension [Self <: SystemInfoDeviceOrientation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoDeviceOrientation] (val x: Self) extends AnyVal {
     
     inline def setIsAutoRotation(value: Boolean): Self = StObject.set(x, "isAutoRotation", value.asInstanceOf[js.Any])
     

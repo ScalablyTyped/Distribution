@@ -18,7 +18,8 @@ object CombinatorRaws {
     __obj.asInstanceOf[CombinatorRaws]
   }
   
-  extension [Self <: CombinatorRaws](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinatorRaws] (val x: Self) extends AnyVal {
     
     inline def setSpaces(value: After): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
     

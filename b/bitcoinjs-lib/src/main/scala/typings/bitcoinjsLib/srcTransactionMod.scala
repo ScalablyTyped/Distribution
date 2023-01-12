@@ -166,7 +166,8 @@ object srcTransactionMod {
       __obj.asInstanceOf[Input]
     }
     
-    extension [Self <: Input](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object srcTransactionMod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setScript(value: Buffer): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       

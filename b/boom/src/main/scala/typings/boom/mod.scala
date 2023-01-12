@@ -504,7 +504,8 @@ object mod {
       __obj.asInstanceOf[Boom[Data]]
     }
     
-    extension [Self <: Boom[?], Data](x: Self & Boom[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boom[?], Data] (val x: Self & Boom[Data]) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -555,7 +556,8 @@ object mod {
       __obj.asInstanceOf[Options[Data]]
     }
     
-    extension [Self <: Options[?], Data](x: Self & Options[Data]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Data] (val x: Self & Options[Data]) extends AnyVal {
       
       inline def setCtor(value: Any): Self = StObject.set(x, "ctor", value.asInstanceOf[js.Any])
       
@@ -609,7 +611,8 @@ object mod {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -643,7 +646,8 @@ object mod {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

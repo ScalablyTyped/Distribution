@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Double): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Clamp]
     }
     
-    extension [Self <: Clamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clamp] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object anon {
       __obj.asInstanceOf[PartialDivergingOptions]
     }
     
-    extension [Self <: PartialDivergingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDivergingOptions] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object anon {
       __obj.asInstanceOf[PartialSequentialOptions]
     }
     
-    extension [Self <: PartialSequentialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSequentialOptions] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       

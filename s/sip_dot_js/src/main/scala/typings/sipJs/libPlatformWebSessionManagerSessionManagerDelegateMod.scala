@@ -105,7 +105,8 @@ object libPlatformWebSessionManagerSessionManagerDelegateMod {
       __obj.asInstanceOf[SessionManagerDelegate]
     }
     
-    extension [Self <: SessionManagerDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionManagerDelegate] (val x: Self) extends AnyVal {
       
       inline def setOnCallAnswered(value: /* session */ Session => Unit): Self = StObject.set(x, "onCallAnswered", js.Any.fromFunction1(value))
       

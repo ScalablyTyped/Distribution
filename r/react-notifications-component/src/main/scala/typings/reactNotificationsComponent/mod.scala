@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[DismissOptions]
     }
     
-    extension [Self <: DismissOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DismissOptions] (val x: Self) extends AnyVal {
       
       inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object mod {
       __obj.asInstanceOf[ReactNotificationOptions]
     }
     
-    extension [Self <: ReactNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(value: js.Array[String]): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
@@ -252,7 +254,8 @@ object mod {
       __obj.asInstanceOf[ReactNotificationProps]
     }
     
-    extension [Self <: ReactNotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNotificationProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -295,7 +298,8 @@ object mod {
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    extension [Self <: TransitionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

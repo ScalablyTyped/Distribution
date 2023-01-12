@@ -16,7 +16,8 @@ object DeleteProtectedRangeRequest {
     __obj.asInstanceOf[DeleteProtectedRangeRequest]
   }
   
-  extension [Self <: DeleteProtectedRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProtectedRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setProtectedRangeId(value: Double): Self = StObject.set(x, "protectedRangeId", value.asInstanceOf[js.Any])
     

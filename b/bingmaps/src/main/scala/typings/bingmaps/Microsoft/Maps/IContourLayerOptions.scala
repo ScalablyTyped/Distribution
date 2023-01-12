@@ -28,7 +28,8 @@ object IContourLayerOptions {
     __obj.asInstanceOf[IContourLayerOptions]
   }
   
-  extension [Self <: IContourLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContourLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setColorCallback(value: /* contourValue */ Double | String => String | Color): Self = StObject.set(x, "colorCallback", js.Any.fromFunction1(value))
     

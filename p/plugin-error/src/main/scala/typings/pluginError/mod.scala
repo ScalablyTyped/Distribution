@@ -143,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SimplePluginError]
     }
     
-    extension [Self <: SimplePluginError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimplePluginError] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object distTypesFromSSOMod {
       __obj.asInstanceOf[FromSSOInit]
     }
     
-    extension [Self <: FromSSOInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromSSOInit] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: SSOClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       

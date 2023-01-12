@@ -34,7 +34,8 @@ object BigQueryConfig {
     __obj.asInstanceOf[BigQueryConfig]
   }
   
-  extension [Self <: BigQueryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryConfig] (val x: Self) extends AnyVal {
     
     inline def setDropUnknownFields(value: Boolean): Self = StObject.set(x, "dropUnknownFields", value.asInstanceOf[js.Any])
     

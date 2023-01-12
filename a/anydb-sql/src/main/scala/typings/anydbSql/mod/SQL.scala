@@ -16,7 +16,8 @@ object SQL {
     __obj.asInstanceOf[SQL]
   }
   
-  extension [Self <: SQL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQL] (val x: Self) extends AnyVal {
     
     inline def setFunctions(value: LOWER): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
   }

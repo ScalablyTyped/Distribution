@@ -21,7 +21,8 @@ object TRCloseToken {
     __obj.asInstanceOf[TRCloseToken]
   }
   
-  extension [Self <: TRCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TRCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: tr_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

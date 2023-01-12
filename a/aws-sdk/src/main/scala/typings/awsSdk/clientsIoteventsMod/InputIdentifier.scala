@@ -23,7 +23,8 @@ object InputIdentifier {
     __obj.asInstanceOf[InputIdentifier]
   }
   
-  extension [Self <: InputIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputIdentifier] (val x: Self) extends AnyVal {
     
     inline def setIotEventsInputIdentifier(value: IotEventsInputIdentifier): Self = StObject.set(x, "iotEventsInputIdentifier", value.asInstanceOf[js.Any])
     

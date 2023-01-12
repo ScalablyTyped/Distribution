@@ -36,7 +36,8 @@ object distCollectionSrcUseCollectionSearchMod {
       __obj.asInstanceOf[UseCollectionSearchOptions]
     }
     
-    extension [Self <: UseCollectionSearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCollectionSearchOptions] (val x: Self) extends AnyVal {
       
       inline def setOnSearch(value: (/* event */ SyntheticEvent[Element, Event], /* query */ String) => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction2(value))
       

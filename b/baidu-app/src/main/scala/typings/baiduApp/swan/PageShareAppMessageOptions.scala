@@ -23,7 +23,8 @@ object PageShareAppMessageOptions {
     __obj.asInstanceOf[PageShareAppMessageOptions]
   }
   
-  extension [Self <: PageShareAppMessageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageShareAppMessageOptions] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: button | menu): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

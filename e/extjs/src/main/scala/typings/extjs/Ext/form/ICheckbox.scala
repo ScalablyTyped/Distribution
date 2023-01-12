@@ -109,7 +109,8 @@ object ICheckbox {
     __obj.asInstanceOf[ICheckbox]
   }
   
-  extension [Self <: ICheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
     
     inline def setAfterBoxLabelTextTpl(value: Any): Self = StObject.set(x, "afterBoxLabelTextTpl", value.asInstanceOf[js.Any])
     

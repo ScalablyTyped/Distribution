@@ -22,7 +22,8 @@ object LocationPuckOverrides {
     __obj.asInstanceOf[LocationPuckOverrides]
   }
   
-  extension [Self <: LocationPuckOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPuckOverrides] (val x: Self) extends AnyVal {
     
     inline def setConsumerLocationPuckCore(value: Override[Any]): Self = StObject.set(x, "ConsumerLocationPuckCore", value.asInstanceOf[js.Any])
     

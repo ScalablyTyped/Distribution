@@ -61,7 +61,8 @@ object dxRangeSlider {
       __obj.asInstanceOf[ValueChangedEvent]
     }
     
-    extension [Self <: ValueChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

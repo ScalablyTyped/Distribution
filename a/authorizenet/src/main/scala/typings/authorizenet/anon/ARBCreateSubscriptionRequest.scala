@@ -15,7 +15,8 @@ object ARBCreateSubscriptionRequest {
     __obj.asInstanceOf[ARBCreateSubscriptionRequest]
   }
   
-  extension [Self <: ARBCreateSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARBCreateSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setARBCreateSubscriptionRequest(value: typings.authorizenet.mod.APIContracts.ARBCreateSubscriptionRequest): Self = StObject.set(x, "ARBCreateSubscriptionRequest", value.asInstanceOf[js.Any])
   }

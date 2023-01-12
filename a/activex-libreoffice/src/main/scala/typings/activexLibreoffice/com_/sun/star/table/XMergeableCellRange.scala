@@ -43,7 +43,8 @@ object XMergeableCellRange {
     __obj.asInstanceOf[XMergeableCellRange]
   }
   
-  extension [Self <: XMergeableCellRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMergeableCellRange] (val x: Self) extends AnyVal {
     
     inline def setIsMergeable(value: () => Boolean): Self = StObject.set(x, "isMergeable", js.Any.fromFunction0(value))
     

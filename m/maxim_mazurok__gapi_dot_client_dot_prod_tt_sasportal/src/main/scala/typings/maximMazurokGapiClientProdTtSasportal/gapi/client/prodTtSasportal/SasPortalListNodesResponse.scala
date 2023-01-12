@@ -19,7 +19,8 @@ object SasPortalListNodesResponse {
     __obj.asInstanceOf[SasPortalListNodesResponse]
   }
   
-  extension [Self <: SasPortalListNodesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalListNodesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

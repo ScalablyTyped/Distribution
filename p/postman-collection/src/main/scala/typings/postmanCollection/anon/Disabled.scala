@@ -17,7 +17,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled[TDefinition]]
   }
   
-  extension [Self <: Disabled[?], TDefinition /* <: js.Object */](x: Self & Disabled[TDefinition]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled[?], TDefinition /* <: js.Object */] (val x: Self & Disabled[TDefinition]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

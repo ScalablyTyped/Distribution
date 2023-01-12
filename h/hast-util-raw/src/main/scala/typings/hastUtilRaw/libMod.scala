@@ -65,7 +65,8 @@ object libMod {
       __obj.asInstanceOf[HiddenLocationTracker]
     }
     
-    extension [Self <: HiddenLocationTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenLocationTracker] (val x: Self) extends AnyVal {
       
       inline def setCtLoc(value: P5Location): Self = StObject.set(x, "ctLoc", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object libMod {
       __obj.asInstanceOf[HiddenPosTracker]
     }
     
-    extension [Self <: HiddenPosTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenPosTracker] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libMod {
       __obj.asInstanceOf[HiddenPreprocessor]
     }
     
-    extension [Self <: HiddenPreprocessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenPreprocessor] (val x: Self) extends AnyVal {
       
       inline def setEndOfChunkHit(value: Boolean): Self = StObject.set(x, "endOfChunkHit", value.asInstanceOf[js.Any])
       
@@ -245,7 +248,8 @@ object libMod {
       __obj.asInstanceOf[HiddenTokenizer]
     }
     
-    extension [Self <: HiddenTokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HiddenTokenizer] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -313,7 +317,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPassThrough(value: js.Array[String]): Self = StObject.set(x, "passThrough", value.asInstanceOf[js.Any])
       
@@ -946,7 +951,8 @@ object libMod {
       __obj.asInstanceOf[P5Element]
     }
     
-    extension [Self <: P5Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P5Element] (val x: Self) extends AnyVal {
       
       inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
       
@@ -1583,7 +1589,8 @@ object libMod {
       __obj.asInstanceOf[P5Location]
     }
     
-    extension [Self <: P5Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P5Location] (val x: Self) extends AnyVal {
       
       inline def setAncestorOrigins(value: DOMStringList): Self = StObject.set(x, "ancestorOrigins", value.asInstanceOf[js.Any])
       
@@ -1648,7 +1655,8 @@ object libMod {
       __obj.asInstanceOf[Stitch]
     }
     
-    extension [Self <: Stitch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stitch] (val x: Self) extends AnyVal {
       
       inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

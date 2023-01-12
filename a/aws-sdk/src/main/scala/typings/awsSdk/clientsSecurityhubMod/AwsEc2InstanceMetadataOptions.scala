@@ -38,7 +38,8 @@ object AwsEc2InstanceMetadataOptions {
     __obj.asInstanceOf[AwsEc2InstanceMetadataOptions]
   }
   
-  extension [Self <: AwsEc2InstanceMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2InstanceMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setHttpEndpoint(value: NonEmptyString): Self = StObject.set(x, "HttpEndpoint", value.asInstanceOf[js.Any])
     

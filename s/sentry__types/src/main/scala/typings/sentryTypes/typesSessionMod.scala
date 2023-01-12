@@ -26,7 +26,8 @@ object typesSessionMod {
       __obj.asInstanceOf[AggregationCounts]
     }
     
-    extension [Self <: AggregationCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationCounts] (val x: Self) extends AnyVal {
       
       inline def setCrashed(value: Double): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object typesSessionMod {
       __obj.asInstanceOf[RequestSession]
     }
     
-    extension [Self <: RequestSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestSession] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: RequestSessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object typesSessionMod {
       __obj.asInstanceOf[SerializedSession]
     }
     
-    extension [Self <: SerializedSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializedSession] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Ipaddress): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object typesSessionMod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
@@ -258,7 +262,8 @@ object typesSessionMod {
       __obj.asInstanceOf[SessionAggregates]
     }
     
-    extension [Self <: SessionAggregates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionAggregates] (val x: Self) extends AnyVal {
       
       inline def setAggregates(value: js.Array[AggregationCounts]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object typesSessionMod {
       __obj.asInstanceOf[SessionContext]
     }
     
-    extension [Self <: SessionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionContext] (val x: Self) extends AnyVal {
       
       inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
@@ -397,7 +403,8 @@ object typesSessionMod {
       __obj.asInstanceOf[SessionFlusherLike]
     }
     
-    extension [Self <: SessionFlusherLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionFlusherLike] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

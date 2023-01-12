@@ -33,7 +33,8 @@ object ResizeMode {
     __obj.asInstanceOf[ResizeMode]
   }
   
-  extension [Self <: ResizeMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeMode] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

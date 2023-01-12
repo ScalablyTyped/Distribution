@@ -30,7 +30,8 @@ object EffectStyle {
     __obj.asInstanceOf[EffectStyle]
   }
   
-  extension [Self <: EffectStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectStyle] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

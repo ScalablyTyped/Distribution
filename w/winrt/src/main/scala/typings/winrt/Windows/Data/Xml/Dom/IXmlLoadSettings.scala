@@ -29,7 +29,8 @@ object IXmlLoadSettings {
     __obj.asInstanceOf[IXmlLoadSettings]
   }
   
-  extension [Self <: IXmlLoadSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlLoadSettings] (val x: Self) extends AnyVal {
     
     inline def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
     

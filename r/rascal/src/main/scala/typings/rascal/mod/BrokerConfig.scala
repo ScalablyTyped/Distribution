@@ -28,7 +28,8 @@ object BrokerConfig {
     __obj.asInstanceOf[BrokerConfig]
   }
   
-  extension [Self <: BrokerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: VhostConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

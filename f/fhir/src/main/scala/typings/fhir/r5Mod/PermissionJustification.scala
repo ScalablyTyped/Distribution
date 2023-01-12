@@ -25,7 +25,8 @@ object PermissionJustification {
     __obj.asInstanceOf[PermissionJustification]
   }
   
-  extension [Self <: PermissionJustification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionJustification] (val x: Self) extends AnyVal {
     
     inline def setEvidence(value: js.Array[Reference]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     

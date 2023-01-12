@@ -28,7 +28,8 @@ object PacketMirroringFilter {
     __obj.asInstanceOf[PacketMirroringFilter]
   }
   
-  extension [Self <: PacketMirroringFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroringFilter] (val x: Self) extends AnyVal {
     
     inline def setCidrRanges(value: js.Array[String]): Self = StObject.set(x, "cidrRanges", value.asInstanceOf[js.Any])
     

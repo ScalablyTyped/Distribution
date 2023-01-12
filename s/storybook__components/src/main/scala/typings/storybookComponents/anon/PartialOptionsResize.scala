@@ -18,7 +18,8 @@ object PartialOptionsResize {
     __obj.asInstanceOf[PartialOptionsResize]
   }
   
-  extension [Self <: PartialOptionsResize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsResize] (val x: Self) extends AnyVal {
     
     inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object LocalStorageClass {
     __obj.asInstanceOf[LocalStorageClass]
   }
   
-  extension [Self <: LocalStorageClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalStorageClass] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

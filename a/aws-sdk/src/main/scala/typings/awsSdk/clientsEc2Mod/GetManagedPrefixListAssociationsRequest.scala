@@ -33,7 +33,8 @@ object GetManagedPrefixListAssociationsRequest {
     __obj.asInstanceOf[GetManagedPrefixListAssociationsRequest]
   }
   
-  extension [Self <: GetManagedPrefixListAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetManagedPrefixListAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

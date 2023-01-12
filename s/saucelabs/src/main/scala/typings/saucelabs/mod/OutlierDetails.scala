@@ -22,7 +22,8 @@ object OutlierDetails {
     __obj.asInstanceOf[OutlierDetails]
   }
   
-  extension [Self <: OutlierDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlierDetails] (val x: Self) extends AnyVal {
     
     inline def setReason(value: baseline | new_regime): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

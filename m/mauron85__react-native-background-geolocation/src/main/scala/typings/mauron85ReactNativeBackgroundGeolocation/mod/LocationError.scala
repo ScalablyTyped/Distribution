@@ -26,7 +26,8 @@ object LocationError {
     __obj.asInstanceOf[LocationError]
   }
   
-  extension [Self <: LocationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: LocationErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

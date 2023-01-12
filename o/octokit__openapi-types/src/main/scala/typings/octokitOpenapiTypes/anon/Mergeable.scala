@@ -250,7 +250,8 @@ object Mergeable {
     __obj.asInstanceOf[Mergeable]
   }
   
-  extension [Self <: Mergeable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mergeable] (val x: Self) extends AnyVal {
     
     inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object DocumentPasswordRequest {
     __obj.asInstanceOf[DocumentPasswordRequest]
   }
   
-  extension [Self <: DocumentPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

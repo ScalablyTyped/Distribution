@@ -15,7 +15,8 @@ object IGeneralNames {
     __obj.asInstanceOf[IGeneralNames]
   }
   
-  extension [Self <: IGeneralNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeneralNames] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[GeneralName]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

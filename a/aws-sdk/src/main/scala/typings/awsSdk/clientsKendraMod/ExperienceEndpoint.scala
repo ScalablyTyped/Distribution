@@ -23,7 +23,8 @@ object ExperienceEndpoint {
     __obj.asInstanceOf[ExperienceEndpoint]
   }
   
-  extension [Self <: ExperienceEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperienceEndpoint] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

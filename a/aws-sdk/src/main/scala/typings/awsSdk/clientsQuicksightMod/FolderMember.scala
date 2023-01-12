@@ -23,7 +23,8 @@ object FolderMember {
     __obj.asInstanceOf[FolderMember]
   }
   
-  extension [Self <: FolderMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderMember] (val x: Self) extends AnyVal {
     
     inline def setMemberId(value: RestrictiveResourceId): Self = StObject.set(x, "MemberId", value.asInstanceOf[js.Any])
     

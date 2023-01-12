@@ -231,7 +231,8 @@ object mod {
       __obj.asInstanceOf[SnekfetchOptions]
     }
     
-    extension [Self <: SnekfetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnekfetchOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -290,7 +291,8 @@ object mod {
       __obj.asInstanceOf[SnekfetchResponse]
     }
     
-    extension [Self <: SnekfetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnekfetchResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.Object | Buffer): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DeleteOTAUpdateRequest {
     __obj.asInstanceOf[DeleteOTAUpdateRequest]
   }
   
-  extension [Self <: DeleteOTAUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOTAUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteStream(value: DeleteStream): Self = StObject.set(x, "deleteStream", value.asInstanceOf[js.Any])
     

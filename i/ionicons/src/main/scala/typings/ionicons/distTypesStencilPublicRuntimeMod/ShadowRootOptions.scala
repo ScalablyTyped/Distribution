@@ -20,7 +20,8 @@ object ShadowRootOptions {
     __obj.asInstanceOf[ShadowRootOptions]
   }
   
-  extension [Self <: ShadowRootOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowRootOptions] (val x: Self) extends AnyVal {
     
     inline def setDelegatesFocus(value: Boolean): Self = StObject.set(x, "delegatesFocus", value.asInstanceOf[js.Any])
     

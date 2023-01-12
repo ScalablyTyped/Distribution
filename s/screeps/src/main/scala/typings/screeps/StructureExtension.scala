@@ -56,7 +56,8 @@ object StructureExtension {
     __obj.asInstanceOf[StructureExtension]
   }
   
-  extension [Self <: StructureExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureExtension] (val x: Self) extends AnyVal {
     
     inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     

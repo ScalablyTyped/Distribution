@@ -46,7 +46,8 @@ object IShellMessage {
     __obj.asInstanceOf[IShellMessage[T]]
   }
   
-  extension [Self <: IShellMessage[?], T /* <: ShellMessageType */](x: Self & IShellMessage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellMessage[?], T /* <: ShellMessageType */] (val x: Self & IShellMessage[T]) extends AnyVal {
     
     inline def setChannel(value: shell): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

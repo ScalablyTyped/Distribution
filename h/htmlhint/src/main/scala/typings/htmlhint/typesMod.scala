@@ -86,7 +86,8 @@ object typesMod {
       __obj.asInstanceOf[Hint]
     }
     
-    extension [Self <: Hint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hint] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object typesMod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object typesMod {
       __obj.asInstanceOf[Ruleset]
     }
     
-    extension [Self <: Ruleset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ruleset] (val x: Self) extends AnyVal {
       
       inline def `setAlt-require`(value: Boolean): Self = StObject.set(x, "alt-require", value.asInstanceOf[js.Any])
       

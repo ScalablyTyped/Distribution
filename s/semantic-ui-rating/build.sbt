@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-rating"
-version := "2.2-dt-20220624Z-72b0ac"
+version := "2.2-dt-20220624Z-8a1532"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

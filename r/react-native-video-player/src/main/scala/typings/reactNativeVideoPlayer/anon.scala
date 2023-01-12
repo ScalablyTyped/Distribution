@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ControlButton]
     }
     
-    extension [Self <: ControlButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlButton] (val x: Self) extends AnyVal {
       
       inline def setControlButton(value: StyleProp[ViewStyle]): Self = StObject.set(x, "controlButton", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object anon {
       __obj.asInstanceOf[MainVer]
     }
     
-    extension [Self <: MainVer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MainVer] (val x: Self) extends AnyVal {
       
       inline def setMainVer(value: Double): Self = StObject.set(x, "mainVer", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object BasicViewFactory {
     __obj.asInstanceOf[BasicViewFactory]
   }
   
-  extension [Self <: BasicViewFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicViewFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -28,7 +28,8 @@ object ExecutionParameter {
     __obj.asInstanceOf[ExecutionParameter]
   }
   
-  extension [Self <: ExecutionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionParameter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValues(value: ExecutionParameterValueList): Self = StObject.set(x, "DefaultValues", value.asInstanceOf[js.Any])
     

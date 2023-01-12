@@ -21,7 +21,8 @@ object Mobile {
     __obj.asInstanceOf[Mobile]
   }
   
-  extension [Self <: Mobile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     

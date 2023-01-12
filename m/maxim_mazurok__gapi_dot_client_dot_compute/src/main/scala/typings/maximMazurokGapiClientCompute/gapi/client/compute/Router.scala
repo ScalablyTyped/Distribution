@@ -59,7 +59,8 @@ object Router {
     __obj.asInstanceOf[Router]
   }
   
-  extension [Self <: Router](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
     
     inline def setBgp(value: RouterBgp): Self = StObject.set(x, "bgp", value.asInstanceOf[js.Any])
     

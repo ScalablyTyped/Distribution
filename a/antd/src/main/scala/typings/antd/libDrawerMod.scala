@@ -67,7 +67,8 @@ object libDrawerMod {
       __obj.asInstanceOf[DrawerProps]
     }
     
-    extension [Self <: DrawerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerProps] (val x: Self) extends AnyVal {
       
       inline def setAfterVisibleChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "afterVisibleChange", js.Any.fromFunction1(value))
       
@@ -130,7 +131,8 @@ object libDrawerMod {
       __obj.asInstanceOf[PushState]
     }
     
-    extension [Self <: PushState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushState] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: String | Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     }

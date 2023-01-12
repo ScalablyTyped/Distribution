@@ -25,7 +25,8 @@ object PrivateKeyInput {
     __obj.asInstanceOf[PrivateKeyInput]
   }
   
-  extension [Self <: PrivateKeyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyInput] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: KeyFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

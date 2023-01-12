@@ -24,7 +24,8 @@ object IParameterizedQuery {
     __obj.asInstanceOf[IParameterizedQuery]
   }
   
-  extension [Self <: IParameterizedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParameterizedQuery] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[BlurParams]
     }
     
-    extension [Self <: BlurParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlurParams] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[CrossfadeParams]
     }
     
-    extension [Self <: CrossfadeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossfadeParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[DrawParams]
     }
     
-    extension [Self <: DrawParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[FadeParams]
     }
     
-    extension [Self <: FadeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -225,7 +229,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[FlyParams]
     }
     
-    extension [Self <: FlyParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlyParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -272,7 +277,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[ScaleParams]
     }
     
-    extension [Self <: ScaleParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -311,7 +317,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[SlideParams]
     }
     
-    extension [Self <: SlideParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideParams] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -346,7 +353,8 @@ object typesRuntimeTransitionMod {
       __obj.asInstanceOf[TransitionConfig]
     }
     
-    extension [Self <: TransitionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionConfig] (val x: Self) extends AnyVal {
       
       inline def setCss(value: (/* t */ Double, /* u */ Double) => String): Self = StObject.set(x, "css", js.Any.fromFunction2(value))
       

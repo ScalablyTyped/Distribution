@@ -20,7 +20,8 @@ object R3DeclareInjectorFacade {
     __obj.asInstanceOf[R3DeclareInjectorFacade]
   }
   
-  extension [Self <: R3DeclareInjectorFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareInjectorFacade] (val x: Self) extends AnyVal {
     
     inline def setImports(value: js.Array[OpaqueValue]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object InputValuesQuery {
     __obj.asInstanceOf[InputValuesQuery]
   }
   
-  extension [Self <: InputValuesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputValuesQuery] (val x: Self) extends AnyVal {
     
     inline def setCurrentValues(value: StringDictionary[String]): Self = StObject.set(x, "currentValues", value.asInstanceOf[js.Any])
     

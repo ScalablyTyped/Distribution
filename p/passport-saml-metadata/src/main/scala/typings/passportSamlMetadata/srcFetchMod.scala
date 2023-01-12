@@ -29,7 +29,8 @@ object srcFetchMod {
       __obj.asInstanceOf[FetchAxiosConfig]
     }
     
-    extension [Self <: FetchAxiosConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchAxiosConfig] (val x: Self) extends AnyVal {
       
       inline def setBackupStore(value: Map[String, String]): Self = StObject.set(x, "backupStore", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object srcFetchMod {
       __obj.asInstanceOf[FetchConfig]
     }
     
-    extension [Self <: FetchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchConfig] (val x: Self) extends AnyVal {
       
       inline def setBackupStore(value: Map[String, String]): Self = StObject.set(x, "backupStore", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object libModalPropsTypeMod {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setOnPress(value: () => Unit | js.Promise[Any]): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
@@ -79,7 +80,8 @@ object libModalPropsTypeMod {
       __obj.asInstanceOf[ModalPropsType[T]]
     }
     
-    extension [Self <: ModalPropsType[?], T](x: Self & ModalPropsType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalPropsType[?], T] (val x: Self & ModalPropsType[T]) extends AnyVal {
       
       inline def setAnimateAppear(value: Boolean): Self = StObject.set(x, "animateAppear", value.asInstanceOf[js.Any])
       

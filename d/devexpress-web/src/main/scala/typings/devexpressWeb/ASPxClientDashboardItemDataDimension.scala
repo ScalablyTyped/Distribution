@@ -54,7 +54,8 @@ object ASPxClientDashboardItemDataDimension {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimension]
   }
   
-  extension [Self <: ASPxClientDashboardItemDataDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDataDimension] (val x: Self) extends AnyVal {
     
     inline def setDataMember(value: String): Self = StObject.set(x, "DataMember", value.asInstanceOf[js.Any])
     

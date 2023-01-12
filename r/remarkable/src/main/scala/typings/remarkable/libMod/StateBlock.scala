@@ -86,7 +86,8 @@ object StateBlock {
     __obj.asInstanceOf[StateBlock]
   }
   
-  extension [Self <: StateBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateBlock] (val x: Self) extends AnyVal {
     
     inline def setBMarks(value: js.Array[Double]): Self = StObject.set(x, "bMarks", value.asInstanceOf[js.Any])
     

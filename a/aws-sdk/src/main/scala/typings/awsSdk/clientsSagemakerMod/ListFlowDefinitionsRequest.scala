@@ -38,7 +38,8 @@ object ListFlowDefinitionsRequest {
     __obj.asInstanceOf[ListFlowDefinitionsRequest]
   }
   
-  extension [Self <: ListFlowDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFlowDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object Flight {
       __obj.asInstanceOf[AdviceStatic]
     }
     
-    extension [Self <: AdviceStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdviceStatic] (val x: Self) extends AnyVal {
       
       inline def setWithAdvice(value: () => js.Function): Self = StObject.set(x, "withAdvice", js.Any.fromFunction0(value))
     }
@@ -271,7 +272,8 @@ object Flight {
       __obj.asInstanceOf[ComposeStatic]
     }
     
-    extension [Self <: ComposeStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeStatic] (val x: Self) extends AnyVal {
       
       inline def setMixin(value: (js.Object, js.Array[js.Function]) => Unit): Self = StObject.set(x, "mixin", js.Any.fromFunction2(value))
     }
@@ -288,7 +290,8 @@ object Flight {
       __obj.asInstanceOf[DebugStatic]
     }
     
-    extension [Self <: DebugStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugStatic] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: LogAll): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
@@ -305,7 +308,8 @@ object Flight {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     }
@@ -330,7 +334,8 @@ object Flight {
       __obj.asInstanceOf[FlightStatic]
     }
     
-    extension [Self <: FlightStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlightStatic] (val x: Self) extends AnyVal {
       
       inline def setAdvice(value: AdviceStatic): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
       

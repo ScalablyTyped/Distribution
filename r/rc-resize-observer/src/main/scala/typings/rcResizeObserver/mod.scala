@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ResizeObserverProps]
     }
     
-    extension [Self <: ResizeObserverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeObserverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | (js.Function1[/* ref */ RefObject[Any], ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[SizeInfo]
     }
     
-    extension [Self <: SizeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeInfo] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object ICycleButton {
     __obj.asInstanceOf[ICycleButton]
   }
   
-  extension [Self <: ICycleButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICycleButton] (val x: Self) extends AnyVal {
     
     inline def setChangeHandler(value: Any): Self = StObject.set(x, "changeHandler", value.asInstanceOf[js.Any])
     

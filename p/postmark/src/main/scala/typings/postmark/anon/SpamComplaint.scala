@@ -17,7 +17,8 @@ object SpamComplaint {
     __obj.asInstanceOf[SpamComplaint]
   }
   
-  extension [Self <: SpamComplaint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpamComplaint] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     

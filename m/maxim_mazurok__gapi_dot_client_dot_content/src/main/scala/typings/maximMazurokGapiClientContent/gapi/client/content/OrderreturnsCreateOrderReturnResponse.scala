@@ -22,7 +22,8 @@ object OrderreturnsCreateOrderReturnResponse {
     __obj.asInstanceOf[OrderreturnsCreateOrderReturnResponse]
   }
   
-  extension [Self <: OrderreturnsCreateOrderReturnResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsCreateOrderReturnResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionStatus(value: String): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     

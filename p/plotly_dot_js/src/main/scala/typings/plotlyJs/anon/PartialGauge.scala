@@ -36,7 +36,8 @@ object PartialGauge {
     __obj.asInstanceOf[PartialGauge]
   }
   
-  extension [Self <: PartialGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGauge] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Partial[Axis]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

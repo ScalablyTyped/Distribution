@@ -33,7 +33,8 @@ object ListThemeAliasesResponse {
     __obj.asInstanceOf[ListThemeAliasesResponse]
   }
   
-  extension [Self <: ListThemeAliasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThemeAliasesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetSendStatisticsResponse {
     __obj.asInstanceOf[GetSendStatisticsResponse]
   }
   
-  extension [Self <: GetSendStatisticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSendStatisticsResponse] (val x: Self) extends AnyVal {
     
     inline def setSendDataPoints(value: SendDataPointList): Self = StObject.set(x, "SendDataPoints", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object SimulatePrincipalPolicyRequest {
     __obj.asInstanceOf[SimulatePrincipalPolicyRequest]
   }
   
-  extension [Self <: SimulatePrincipalPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimulatePrincipalPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setActionNames(value: ActionNameListType): Self = StObject.set(x, "ActionNames", value.asInstanceOf[js.Any])
     

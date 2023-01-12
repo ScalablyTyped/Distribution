@@ -43,7 +43,8 @@ object libPlotsDonutChartMod extends Shortcut {
       __obj.asInstanceOf[DonutOptions]
     }
     
-    extension [Self <: DonutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DonutOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: LabelAPIOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

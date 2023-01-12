@@ -23,7 +23,8 @@ object UnscopedEmitHelper {
     __obj.asInstanceOf[UnscopedEmitHelper]
   }
   
-  extension [Self <: UnscopedEmitHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnscopedEmitHelper] (val x: Self) extends AnyVal {
     
     inline def setScoped(value: `false`): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     

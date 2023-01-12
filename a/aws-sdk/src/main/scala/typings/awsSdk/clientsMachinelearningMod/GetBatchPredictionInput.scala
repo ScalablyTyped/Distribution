@@ -18,7 +18,8 @@ object GetBatchPredictionInput {
     __obj.asInstanceOf[GetBatchPredictionInput]
   }
   
-  extension [Self <: GetBatchPredictionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatchPredictionInput] (val x: Self) extends AnyVal {
     
     inline def setBatchPredictionId(value: EntityId): Self = StObject.set(x, "BatchPredictionId", value.asInstanceOf[js.Any])
   }

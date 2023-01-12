@@ -45,7 +45,8 @@ object libWingBlankIndexDotnativeMod {
       __obj.asInstanceOf[WingBlankProps]
     }
     
-    extension [Self <: WingBlankProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WingBlankProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

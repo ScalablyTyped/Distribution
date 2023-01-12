@@ -29,7 +29,8 @@ object ASPxClientCrosshairIndicatorLegendElement {
     __obj.asInstanceOf[ASPxClientCrosshairIndicatorLegendElement]
   }
   
-  extension [Self <: ASPxClientCrosshairIndicatorLegendElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairIndicatorLegendElement] (val x: Self) extends AnyVal {
     
     inline def setIndicator(value: ASPxClientIndicator): Self = StObject.set(x, "Indicator", value.asInstanceOf[js.Any])
   }

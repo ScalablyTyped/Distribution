@@ -37,7 +37,8 @@ object AuthorizationException {
     __obj.asInstanceOf[AuthorizationException]
   }
   
-  extension [Self <: AuthorizationException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationException] (val x: Self) extends AnyVal {
     
     inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     

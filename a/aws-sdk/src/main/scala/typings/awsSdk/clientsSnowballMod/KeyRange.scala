@@ -23,7 +23,8 @@ object KeyRange {
     __obj.asInstanceOf[KeyRange]
   }
   
-  extension [Self <: KeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     inline def setBeginMarker(value: String): Self = StObject.set(x, "BeginMarker", value.asInstanceOf[js.Any])
     

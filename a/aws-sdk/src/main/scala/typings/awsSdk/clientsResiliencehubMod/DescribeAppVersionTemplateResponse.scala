@@ -28,7 +28,8 @@ object DescribeAppVersionTemplateResponse {
     __obj.asInstanceOf[DescribeAppVersionTemplateResponse]
   }
   
-  extension [Self <: DescribeAppVersionTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppVersionTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

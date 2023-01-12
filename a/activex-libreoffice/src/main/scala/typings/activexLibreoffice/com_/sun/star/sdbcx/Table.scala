@@ -82,7 +82,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

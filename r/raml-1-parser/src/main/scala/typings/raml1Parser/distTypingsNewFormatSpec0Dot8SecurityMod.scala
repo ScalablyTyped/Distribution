@@ -54,7 +54,8 @@ object distTypingsNewFormatSpec0Dot8SecurityMod {
       __obj.asInstanceOf[AbstractSecurityScheme08]
     }
     
-    extension [Self <: AbstractSecurityScheme08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractSecurityScheme08] (val x: Self) extends AnyVal {
       
       inline def setDescribedBy(value: SecuritySchemePart08): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object distTypingsNewFormatSpec0Dot8SecurityMod {
       __obj.asInstanceOf[OAuth1SecurityScheme08]
     }
     
-    extension [Self <: OAuth1SecurityScheme08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth1SecurityScheme08] (val x: Self) extends AnyVal {
       
       inline def setSettings(value: TokenCredentialsUri): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
@@ -116,7 +118,8 @@ object distTypingsNewFormatSpec0Dot8SecurityMod {
       __obj.asInstanceOf[OAuth2SecurityScheme08]
     }
     
-    extension [Self <: OAuth2SecurityScheme08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuth2SecurityScheme08] (val x: Self) extends AnyVal {
       
       inline def setSettings(value: Scopes): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
@@ -138,7 +141,8 @@ object distTypingsNewFormatSpec0Dot8SecurityMod {
       __obj.asInstanceOf[SecuritySchemePart08]
     }
     
-    extension [Self <: SecuritySchemePart08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SecuritySchemePart08] (val x: Self) extends AnyVal {
       
       inline def setIs(value: js.Array[TemplateReference]): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object FrameCaptureSettings {
     __obj.asInstanceOf[FrameCaptureSettings]
   }
   
-  extension [Self <: FrameCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setCaptureInterval(value: integerMin1Max3600000): Self = StObject.set(x, "CaptureInterval", value.asInstanceOf[js.Any])
     

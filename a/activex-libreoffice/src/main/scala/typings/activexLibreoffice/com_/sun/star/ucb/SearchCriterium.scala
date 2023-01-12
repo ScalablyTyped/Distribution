@@ -18,7 +18,8 @@ object SearchCriterium {
     __obj.asInstanceOf[SearchCriterium]
   }
   
-  extension [Self <: SearchCriterium](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCriterium] (val x: Self) extends AnyVal {
     
     inline def setTerms(value: SafeArray[RuleTerm]): Self = StObject.set(x, "Terms", value.asInstanceOf[js.Any])
   }

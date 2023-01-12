@@ -44,7 +44,8 @@ object KeyOauthtokenPrettyPrint {
     __obj.asInstanceOf[KeyOauthtokenPrettyPrint]
   }
   
-  extension [Self <: KeyOauthtokenPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOauthtokenPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

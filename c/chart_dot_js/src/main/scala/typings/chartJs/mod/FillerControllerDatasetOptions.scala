@@ -18,7 +18,8 @@ object FillerControllerDatasetOptions {
     __obj.asInstanceOf[FillerControllerDatasetOptions]
   }
   
-  extension [Self <: FillerControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillerControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: FillTarget | ComplexFillTarget): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
   }

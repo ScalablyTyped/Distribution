@@ -22,7 +22,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply] (val x: Self) extends AnyVal {
     
     inline def setPostbackData(value: String): Self = StObject.set(x, "postbackData", value.asInstanceOf[js.Any])
     

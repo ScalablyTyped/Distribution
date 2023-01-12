@@ -57,7 +57,8 @@ object distTypesEventSelectionMod {
       __obj.asInstanceOf[SelectionRange]
     }
     
-    extension [Self <: SelectionRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

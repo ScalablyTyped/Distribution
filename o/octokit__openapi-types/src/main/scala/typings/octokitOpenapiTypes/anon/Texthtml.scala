@@ -17,7 +17,8 @@ object Texthtml {
     __obj.asInstanceOf[Texthtml]
   }
   
-  extension [Self <: Texthtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Texthtml] (val x: Self) extends AnyVal {
     
     inline def setTextSlashhtml(value: String): Self = StObject.set(x, "text/html", value.asInstanceOf[js.Any])
   }

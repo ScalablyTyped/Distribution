@@ -18,7 +18,8 @@ object EcSignaturePoint {
     __obj.asInstanceOf[EcSignaturePoint]
   }
   
-  extension [Self <: EcSignaturePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcSignaturePoint] (val x: Self) extends AnyVal {
     
     inline def setR(value: BufferSource): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     

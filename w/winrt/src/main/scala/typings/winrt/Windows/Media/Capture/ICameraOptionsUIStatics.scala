@@ -15,7 +15,8 @@ object ICameraOptionsUIStatics {
     __obj.asInstanceOf[ICameraOptionsUIStatics]
   }
   
-  extension [Self <: ICameraOptionsUIStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICameraOptionsUIStatics] (val x: Self) extends AnyVal {
     
     inline def setShow(value: MediaCapture => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
   }

@@ -33,7 +33,8 @@ object CampaignInAppMessage {
     __obj.asInstanceOf[CampaignInAppMessage]
   }
   
-  extension [Self <: CampaignInAppMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignInAppMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

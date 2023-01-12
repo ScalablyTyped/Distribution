@@ -60,7 +60,8 @@ object AcConnections {
     __obj.asInstanceOf[AcConnections]
   }
   
-  extension [Self <: AcConnections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcConnections] (val x: Self) extends AnyVal {
     
     inline def setAcConnections(value: js.Array[CommissioningDate]): Self = StObject.set(x, "acConnections", value.asInstanceOf[js.Any])
     

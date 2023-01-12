@@ -15,7 +15,8 @@ object IsPhantom {
     __obj.asInstanceOf[IsPhantom]
   }
   
-  extension [Self <: IsPhantom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPhantom] (val x: Self) extends AnyVal {
     
     inline def setIsPhantom(value: Boolean): Self = StObject.set(x, "isPhantom", value.asInstanceOf[js.Any])
     

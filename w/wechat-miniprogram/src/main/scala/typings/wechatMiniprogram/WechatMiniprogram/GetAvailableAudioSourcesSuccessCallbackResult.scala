@@ -41,7 +41,8 @@ object GetAvailableAudioSourcesSuccessCallbackResult {
     __obj.asInstanceOf[GetAvailableAudioSourcesSuccessCallbackResult]
   }
   
-  extension [Self <: GetAvailableAudioSourcesSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAvailableAudioSourcesSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setAudioSources(
       value: js.Array[

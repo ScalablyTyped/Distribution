@@ -88,7 +88,8 @@ object AdditionalText {
     __obj.asInstanceOf[AdditionalText]
   }
   
-  extension [Self <: AdditionalText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalText] (val x: Self) extends AnyVal {
     
     inline def setAdditionalText(value: String): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
     

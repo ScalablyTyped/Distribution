@@ -53,7 +53,8 @@ object ConfirmSignUpRequest {
     __obj.asInstanceOf[ConfirmSignUpRequest]
   }
   
-  extension [Self <: ConfirmSignUpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmSignUpRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsMetadata(value: AnalyticsMetadataType): Self = StObject.set(x, "AnalyticsMetadata", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ListHoldsResponse {
     __obj.asInstanceOf[ListHoldsResponse]
   }
   
-  extension [Self <: ListHoldsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHoldsResponse] (val x: Self) extends AnyVal {
     
     inline def setHolds(value: js.Array[Hold]): Self = StObject.set(x, "holds", value.asInstanceOf[js.Any])
     

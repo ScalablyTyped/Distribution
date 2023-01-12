@@ -33,7 +33,8 @@ object ResolverConfig {
     __obj.asInstanceOf[ResolverConfig]
   }
   
-  extension [Self <: ResolverConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverConfig] (val x: Self) extends AnyVal {
     
     inline def setAutodefinedReverse(value: ResolverAutodefinedReverseStatus): Self = StObject.set(x, "AutodefinedReverse", value.asInstanceOf[js.Any])
     

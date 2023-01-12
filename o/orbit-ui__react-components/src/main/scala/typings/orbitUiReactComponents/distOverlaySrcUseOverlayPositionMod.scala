@@ -39,7 +39,8 @@ object distOverlaySrcUseOverlayPositionMod {
       __obj.asInstanceOf[UseOverlayPositionOptions]
     }
     
-    extension [Self <: UseOverlayPositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseOverlayPositionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowFlip(value: Boolean): Self = StObject.set(x, "allowFlip", value.asInstanceOf[js.Any])
       

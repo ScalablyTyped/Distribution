@@ -55,7 +55,8 @@ object middlewareMod {
       __obj.asInstanceOf[APIGateway]
     }
     
-    extension [Self <: APIGateway](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGateway] (val x: Self) extends AnyVal {
       
       inline def setContext(value: NonFunctionProperties[Context]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object middlewareMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDeleteHeaders(value: Boolean): Self = StObject.set(x, "deleteHeaders", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object middlewareMod {
         __obj.asInstanceOf[IncomingMessage]
       }
       
-      extension [Self <: IncomingMessage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
         
         inline def setApiGateway(value: APIGateway): Self = StObject.set(x, "apiGateway", value.asInstanceOf[js.Any])
         

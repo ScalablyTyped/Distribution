@@ -28,7 +28,8 @@ object SigningProfileRevocationRecord {
     __obj.asInstanceOf[SigningProfileRevocationRecord]
   }
   
-  extension [Self <: SigningProfileRevocationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningProfileRevocationRecord] (val x: Self) extends AnyVal {
     
     inline def setRevocationEffectiveFrom(value: js.Date): Self = StObject.set(x, "revocationEffectiveFrom", value.asInstanceOf[js.Any])
     

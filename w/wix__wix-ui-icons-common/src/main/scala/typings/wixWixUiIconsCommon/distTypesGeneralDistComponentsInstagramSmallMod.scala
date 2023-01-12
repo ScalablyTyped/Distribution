@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsInstagramSmallMod extends Shortcut {
       __obj.asInstanceOf[InstagramSmallProps]
     }
     
-    extension [Self <: InstagramSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstagramSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

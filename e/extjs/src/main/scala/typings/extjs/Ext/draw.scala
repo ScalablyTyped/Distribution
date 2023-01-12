@@ -79,7 +79,8 @@ object draw {
       __obj.asInstanceOf[IColor]
     }
     
-    extension [Self <: IColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
       
       inline def setGetBlue(value: () => Double): Self = StObject.set(x, "getBlue", js.Any.fromFunction0(value))
       
@@ -152,7 +153,8 @@ object draw {
       __obj.asInstanceOf[typings.extjs.Ext.draw.IComponent]
     }
     
-    extension [Self <: typings.extjs.Ext.draw.IComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.draw.IComponent] (val x: Self) extends AnyVal {
       
       inline def setAutoSize(value: Boolean): Self = StObject.set(x, "autoSize", value.asInstanceOf[js.Any])
       
@@ -785,7 +787,8 @@ object draw {
       __obj.asInstanceOf[ICompositeSprite]
     }
     
-    extension [Self <: ICompositeSprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompositeSprite] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (js.UndefOr[Any], js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -1311,7 +1314,8 @@ object draw {
       __obj.asInstanceOf[ISprite]
     }
     
-    extension [Self <: ISprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISprite] (val x: Self) extends AnyVal {
       
       inline def setAddCls(value: /* className */ js.UndefOr[Any] => ISprite): Self = StObject.set(x, "addCls", js.Any.fromFunction1(value))
       
@@ -1493,7 +1497,8 @@ object draw {
       __obj.asInstanceOf[ISpriteDD]
     }
     
-    extension [Self <: ISpriteDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteDD] (val x: Self) extends AnyVal {
       
       inline def setGetDragEl(value: /* e */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "getDragEl", js.Any.fromFunction1(value))
       
@@ -1601,7 +1606,8 @@ object draw {
       __obj.asInstanceOf[ISurface]
     }
     
-    extension [Self <: ISurface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISurface] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* args */ js.UndefOr[Any] => Any): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -1695,7 +1701,8 @@ object draw {
       __obj.asInstanceOf[IText]
     }
     
-    extension [Self <: IText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IText] (val x: Self) extends AnyVal {
       
       inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
       
@@ -1775,7 +1782,8 @@ object draw {
         __obj.asInstanceOf[ISvg]
       }
       
-      extension [Self <: ISvg](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISvg] (val x: Self) extends AnyVal {
         
         inline def setApplyZIndex(value: /* sprite */ js.UndefOr[ISprite] => Unit): Self = StObject.set(x, "applyZIndex", js.Any.fromFunction1(value))
         
@@ -1826,7 +1834,8 @@ object draw {
         __obj.asInstanceOf[IVml]
       }
       
-      extension [Self <: IVml](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IVml] (val x: Self) extends AnyVal {
         
         inline def setSetSize(value: (/* width */ js.UndefOr[Any], /* height */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
         

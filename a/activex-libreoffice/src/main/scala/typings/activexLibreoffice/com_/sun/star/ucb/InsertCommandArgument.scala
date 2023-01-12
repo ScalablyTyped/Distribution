@@ -32,7 +32,8 @@ object InsertCommandArgument {
     __obj.asInstanceOf[InsertCommandArgument]
   }
   
-  extension [Self <: InsertCommandArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertCommandArgument] (val x: Self) extends AnyVal {
     
     inline def setData(value: XInputStream): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

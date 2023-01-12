@@ -28,7 +28,8 @@ object AppsDynamiteMembershipChangedMetadata {
     __obj.asInstanceOf[AppsDynamiteMembershipChangedMetadata]
   }
   
-  extension [Self <: AppsDynamiteMembershipChangedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteMembershipChangedMetadata] (val x: Self) extends AnyVal {
     
     inline def setAffectedMemberProfiles(value: js.Array[AppsDynamiteFrontendMember]): Self = StObject.set(x, "affectedMemberProfiles", value.asInstanceOf[js.Any])
     

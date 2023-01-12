@@ -18,7 +18,8 @@ object AwsElbLoadBalancerCrossZoneLoadBalancing {
     __obj.asInstanceOf[AwsElbLoadBalancerCrossZoneLoadBalancing]
   }
   
-  extension [Self <: AwsElbLoadBalancerCrossZoneLoadBalancing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerCrossZoneLoadBalancing] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

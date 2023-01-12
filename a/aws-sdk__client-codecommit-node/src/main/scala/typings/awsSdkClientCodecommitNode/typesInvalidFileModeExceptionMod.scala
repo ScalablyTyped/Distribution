@@ -21,7 +21,8 @@ object typesInvalidFileModeExceptionMod {
       __obj.asInstanceOf[InvalidFileModeException]
     }
     
-    extension [Self <: InvalidFileModeException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidFileModeException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFileModeException

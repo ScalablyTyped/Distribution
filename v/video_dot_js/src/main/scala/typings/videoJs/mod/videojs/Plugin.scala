@@ -95,7 +95,8 @@ object Plugin {
       __obj.asInstanceOf[PluginEventHash]
     }
     
-    extension [Self <: PluginEventHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginEventHash] (val x: Self) extends AnyVal {
       
       inline def setInstance(value: Plugin): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       

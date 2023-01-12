@@ -211,7 +211,8 @@ object mod {
       __obj.asInstanceOf[I18nextProviderProps]
     }
     
-    extension [Self <: I18nextProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nextProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod {
       __obj.asInstanceOf[ReportNamespaces]
     }
     
-    extension [Self <: ReportNamespaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportNamespaces] (val x: Self) extends AnyVal {
       
       inline def setAddUsedNamespaces(value: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] => Unit): Self = StObject.set(x, "addUsedNamespaces", js.Any.fromFunction1(value))
       
@@ -287,7 +289,8 @@ object mod {
       __obj.asInstanceOf[TranslationProps[N, TKPrefix]]
     }
     
-    extension [Self <: TranslationProps[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](x: Self & (TranslationProps[N, TKPrefix])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslationProps[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */] (val x: Self & (TranslationProps[N, TKPrefix])) extends AnyVal {
       
       inline def setChildren(value: (TFunction[N, TKPrefix], Lng, Boolean) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
@@ -332,7 +335,8 @@ object mod {
       __obj.asInstanceOf[UseTranslationOptions[TKPrefix]]
     }
     
-    extension [Self <: UseTranslationOptions[?], TKPrefix](x: Self & UseTranslationOptions[TKPrefix]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseTranslationOptions[?], TKPrefix] (val x: Self & UseTranslationOptions[TKPrefix]) extends AnyVal {
       
       inline def setBindI18n(value: String | `false`): Self = StObject.set(x, "bindI18n", value.asInstanceOf[js.Any])
       
@@ -371,7 +375,8 @@ object mod {
       __obj.asInstanceOf[WithTranslationProps]
     }
     
-    extension [Self <: WithTranslationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithTranslationProps] (val x: Self) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object mod {
       __obj.asInstanceOf[WithTranslation_[N, TKPrefix]]
     }
     
-    extension [Self <: WithTranslation_[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](x: Self & (WithTranslation_[N, TKPrefix])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithTranslation_[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */] (val x: Self & (WithTranslation_[N, TKPrefix])) extends AnyVal {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -422,7 +428,8 @@ object mod {
         __obj.asInstanceOf[typings.reactI18next.mod.i18nextAugmentingMod.i18n]
       }
       
-      extension [Self <: typings.reactI18next.mod.i18nextAugmentingMod.i18n](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.reactI18next.mod.i18nextAugmentingMod.i18n] (val x: Self) extends AnyVal {
         
         inline def setReportNamespaces(value: ReportNamespaces): Self = StObject.set(x, "reportNamespaces", value.asInstanceOf[js.Any])
       }
@@ -443,7 +450,8 @@ object mod {
         __obj.asInstanceOf[HTMLAttributes[T]]
       }
       
-      extension [Self <: HTMLAttributes[?], T](x: Self & HTMLAttributes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
         inline def setChildren(value: ReactI18NextChild | js.Iterable[ReactI18NextChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

@@ -64,7 +64,8 @@ object typesCardHeaderMod {
       __obj.asInstanceOf[CardHeaderProps]
     }
     
-    extension [Self <: CardHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAfterChildren(value: ReactNode): Self = StObject.set(x, "afterChildren", value.asInstanceOf[js.Any])
       

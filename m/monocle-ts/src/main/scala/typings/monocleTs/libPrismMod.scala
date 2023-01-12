@@ -276,7 +276,8 @@ object libPrismMod {
       __obj.asInstanceOf[Prism_[S, A]]
     }
     
-    extension [Self <: Prism_[?, ?], S, A](x: Self & (Prism_[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prism_[?, ?], S, A] (val x: Self & (Prism_[S, A])) extends AnyVal {
       
       inline def setGetOption(value: S => Option_[A]): Self = StObject.set(x, "getOption", js.Any.fromFunction1(value))
       

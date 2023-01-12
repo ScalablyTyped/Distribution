@@ -59,7 +59,8 @@ object MediaAudioPlayer {
     __obj.asInstanceOf[MediaAudioPlayer]
   }
   
-  extension [Self <: MediaAudioPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaAudioPlayer] (val x: Self) extends AnyVal {
     
     inline def setAddAudioSource(value: VideoDecoder => js.Promise[Any]): Self = StObject.set(x, "addAudioSource", js.Any.fromFunction1(value))
     

@@ -17,7 +17,8 @@ object GetMeteorData {
     __obj.asInstanceOf[GetMeteorData[TOwnProps, TDataProps]]
   }
   
-  extension [Self <: GetMeteorData[?, ?], TOwnProps, TDataProps](x: Self & (GetMeteorData[TOwnProps, TDataProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMeteorData[?, ?], TOwnProps, TDataProps] (val x: Self & (GetMeteorData[TOwnProps, TDataProps])) extends AnyVal {
     
     inline def setGetMeteorData(value: TOwnProps => TDataProps): Self = StObject.set(x, "getMeteorData", js.Any.fromFunction1(value))
     

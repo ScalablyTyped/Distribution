@@ -24,7 +24,8 @@ object MlPostDataRequest {
     __obj.asInstanceOf[MlPostDataRequest[TData]]
   }
   
-  extension [Self <: MlPostDataRequest[?], TData](x: Self & MlPostDataRequest[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPostDataRequest[?], TData] (val x: Self & MlPostDataRequest[TData]) extends AnyVal {
     
     inline def setBody(value: js.Array[TData]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

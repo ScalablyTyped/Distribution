@@ -268,7 +268,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[Call]
     }
     
-    extension [Self <: Call](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Call] (val x: Self) extends AnyVal {
       
       inline def setCancelWithStatus(value: (Status, String) => Unit): Self = StObject.set(x, "cancelWithStatus", js.Any.fromFunction2(value))
       
@@ -311,7 +312,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[CallStreamOptions]
     }
     
-    extension [Self <: CallStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: Deadline): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -352,7 +354,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[FullListener]
     }
     
-    extension [Self <: FullListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullListener] (val x: Self) extends AnyVal {
       
       inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
       
@@ -383,7 +386,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[InterceptingListener]
     }
     
-    extension [Self <: InterceptingListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterceptingListener] (val x: Self) extends AnyVal {
       
       inline def setOnReceiveMessage(value: Any => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction1(value))
       
@@ -409,7 +413,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setOnReceiveMessage(value: (/* message */ Any, /* next */ js.Function1[/* message */ Any, Unit]) => Unit): Self = StObject.set(x, "onReceiveMessage", js.Any.fromFunction2(value))
       
@@ -440,7 +445,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[MessageContext]
     }
     
-    extension [Self <: MessageContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageContext] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* error */ js.UndefOr[js.Error | Null] => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -478,7 +484,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[PartialCallStreamOptions]
     }
     
-    extension [Self <: PartialCallStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCallStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setDeadline(value: Deadline): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
@@ -516,7 +523,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[PartialStatusObject]
     }
     
-    extension [Self <: PartialStatusObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStatusObject] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -549,7 +557,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[StatusObject]
     }
     
-    extension [Self <: StatusObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusObject] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -589,7 +598,8 @@ object buildSrcCallStreamMod {
       __obj.asInstanceOf[WriteObject]
     }
     
-    extension [Self <: WriteObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteObject] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

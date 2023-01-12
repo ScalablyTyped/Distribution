@@ -63,7 +63,8 @@ object Event {
     __obj.asInstanceOf[Event]
   }
   
-  extension [Self <: Event](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
     
     inline def setAppPackageName(value: string): Self = StObject.set(x, "AppPackageName", value.asInstanceOf[js.Any])
     

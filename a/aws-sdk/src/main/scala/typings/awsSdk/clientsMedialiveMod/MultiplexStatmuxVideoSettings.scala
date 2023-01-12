@@ -28,7 +28,8 @@ object MultiplexStatmuxVideoSettings {
     __obj.asInstanceOf[MultiplexStatmuxVideoSettings]
   }
   
-  extension [Self <: MultiplexStatmuxVideoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiplexStatmuxVideoSettings] (val x: Self) extends AnyVal {
     
     inline def setMaximumBitrate(value: integerMin100000Max100000000): Self = StObject.set(x, "MaximumBitrate", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object AppBarProps {
     __obj.asInstanceOf[AppBarProps]
   }
   
-  extension [Self <: AppBarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppBarProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

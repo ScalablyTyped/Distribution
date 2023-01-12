@@ -77,7 +77,8 @@ object PartialStyleRulesDialogCl {
     __obj.asInstanceOf[PartialStyleRulesDialogCl]
   }
   
-  extension [Self <: PartialStyleRulesDialogCl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesDialogCl] (val x: Self) extends AnyVal {
     
     inline def setContainer(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

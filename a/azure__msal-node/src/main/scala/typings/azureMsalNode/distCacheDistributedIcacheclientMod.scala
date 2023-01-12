@@ -32,7 +32,8 @@ object distCacheDistributedIcacheclientMod {
       __obj.asInstanceOf[ICacheClient]
     }
     
-    extension [Self <: ICacheClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICacheClient] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => js.Promise[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

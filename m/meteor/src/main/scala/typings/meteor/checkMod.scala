@@ -121,7 +121,8 @@ object checkMod {
         __obj.asInstanceOf[Matcher[T]]
       }
       
-      extension [Self <: Matcher[?], T](x: Self & Matcher[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Matcher[?], T] (val x: Self & Matcher[T]) extends AnyVal {
         
         inline def set_meteorCheckMatcherBrand(value: Unit): Self = StObject.set(x, "_meteorCheckMatcherBrand", value.asInstanceOf[js.Any])
       }

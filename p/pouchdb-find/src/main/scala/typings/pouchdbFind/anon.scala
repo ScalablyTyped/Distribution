@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Ddoc]
     }
     
-    extension [Self <: Ddoc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ddoc] (val x: Self) extends AnyVal {
       
       inline def setDdoc(value: String): Self = StObject.set(x, "ddoc", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Sha1AsBytesOptions]
     }
     
-    extension [Self <: Sha1AsBytesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sha1AsBytesOptions] (val x: Self) extends AnyVal {
       
       inline def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Sha1AsStringOptions]
     }
     
-    extension [Self <: Sha1AsStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sha1AsStringOptions] (val x: Self) extends AnyVal {
       
       inline def setAsBytes(value: `false`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object PartialClassesSketchPicke {
     __obj.asInstanceOf[PartialClassesSketchPicke]
   }
   
-  extension [Self <: PartialClassesSketchPicke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesSketchPicke] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialSketchPickerStyles): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

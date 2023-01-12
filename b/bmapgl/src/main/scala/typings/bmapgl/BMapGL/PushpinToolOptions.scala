@@ -19,7 +19,8 @@ object PushpinToolOptions {
     __obj.asInstanceOf[PushpinToolOptions]
   }
   
-  extension [Self <: PushpinToolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushpinToolOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

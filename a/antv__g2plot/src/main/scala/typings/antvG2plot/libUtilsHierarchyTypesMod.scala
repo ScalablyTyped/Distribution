@@ -56,7 +56,8 @@ object libUtilsHierarchyTypesMod {
       __obj.asInstanceOf[HierarchyOption]
     }
     
-    extension [Self <: HierarchyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchyOption] (val x: Self) extends AnyVal {
       
       inline def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

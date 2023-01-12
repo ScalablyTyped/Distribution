@@ -821,7 +821,8 @@ object anon {
       __obj.asInstanceOf[TypeofEditorOptions]
     }
     
-    extension [Self <: TypeofEditorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofEditorOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptSuggestionOnCommitCharacter(value: IEditorOption[acceptSuggestionOnCommitCharacter, Boolean]): Self = StObject.set(x, "acceptSuggestionOnCommitCharacter", value.asInstanceOf[js.Any])
       
@@ -1108,7 +1109,8 @@ object anon {
       __obj.asInstanceOf[TypeofEditorType]
     }
     
-    extension [Self <: TypeofEditorType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofEditorType] (val x: Self) extends AnyVal {
       
       inline def setICodeEditor(value: String): Self = StObject.set(x, "ICodeEditor", value.asInstanceOf[js.Any])
       
@@ -1442,7 +1444,8 @@ object anon {
       __obj.asInstanceOf[Typeofcss]
     }
     
-    extension [Self <: Typeofcss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofcss] (val x: Self) extends AnyVal {
       
       inline def setCssDefaults(value: LanguageServiceDefaults): Self = StObject.set(x, "cssDefaults", value.asInstanceOf[js.Any])
       
@@ -1589,7 +1592,8 @@ object anon {
       __obj.asInstanceOf[Typeofjson]
     }
     
-    extension [Self <: Typeofjson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofjson] (val x: Self) extends AnyVal {
       
       inline def setJsonDefaults(value: typings.monacoEditor.mod.languages.json.LanguageServiceDefaults): Self = StObject.set(x, "jsonDefaults", value.asInstanceOf[js.Any])
     }
@@ -1737,7 +1741,8 @@ object anon {
       __obj.asInstanceOf[TypeofmonacoEditor]
     }
     
-    extension [Self <: TypeofmonacoEditor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofmonacoEditor] (val x: Self) extends AnyVal {
       
       inline def setCancellationTokenSource(value: Instantiable0[CancellationTokenSource]): Self = StObject.set(x, "CancellationTokenSource", value.asInstanceOf[js.Any])
       
@@ -1788,7 +1793,8 @@ object anon {
       __obj.asInstanceOf[Typeoftypescript]
     }
     
-    extension [Self <: Typeoftypescript](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeoftypescript] (val x: Self) extends AnyVal {
       
       inline def setGetJavaScriptWorker(value: () => js.Promise[js.Function1[/* repeated */ Uri, js.Promise[TypeScriptWorker]]]): Self = StObject.set(x, "getJavaScriptWorker", js.Any.fromFunction0(value))
       

@@ -247,7 +247,8 @@ object mod {
       __obj.asInstanceOf[StatFVS]
     }
     
-    extension [Self <: StatFVS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatFVS] (val x: Self) extends AnyVal {
       
       inline def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
       

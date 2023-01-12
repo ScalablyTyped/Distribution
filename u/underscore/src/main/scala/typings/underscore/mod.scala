@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Cancelable]
     }
     
-    extension [Self <: Cancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -1746,7 +1747,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[typings.underscore.mod.List[T]]
     }
     
-    extension [Self <: typings.underscore.mod.List[?], T](x: Self & typings.underscore.mod.List[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.underscore.mod.List[?], T] (val x: Self & typings.underscore.mod.List[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -1855,7 +1857,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TemplateSettings]
     }
     
-    extension [Self <: TemplateSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateSettings] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: js.RegExp): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       
@@ -1897,7 +1900,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThrottleSettings]
     }
     
-    extension [Self <: ThrottleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleSettings] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       

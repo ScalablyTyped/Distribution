@@ -19,7 +19,8 @@ object ReturnTypeGetCurrentTimeResponse {
     __obj.asInstanceOf[ReturnTypeGetCurrentTimeResponse]
   }
   
-  extension [Self <: ReturnTypeGetCurrentTimeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetCurrentTimeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetCurrentTimeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

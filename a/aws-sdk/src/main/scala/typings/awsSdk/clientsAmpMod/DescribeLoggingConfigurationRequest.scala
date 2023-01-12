@@ -18,7 +18,8 @@ object DescribeLoggingConfigurationRequest {
     __obj.asInstanceOf[DescribeLoggingConfigurationRequest]
   }
   
-  extension [Self <: DescribeLoggingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoggingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

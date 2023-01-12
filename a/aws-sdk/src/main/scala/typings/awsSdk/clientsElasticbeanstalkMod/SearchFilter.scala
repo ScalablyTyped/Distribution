@@ -28,7 +28,8 @@ object SearchFilter {
     __obj.asInstanceOf[SearchFilter]
   }
   
-  extension [Self <: SearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFilter] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: SearchFilterAttribute): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

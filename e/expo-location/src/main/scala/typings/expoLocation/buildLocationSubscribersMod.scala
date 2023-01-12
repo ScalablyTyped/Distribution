@@ -36,7 +36,8 @@ object buildLocationSubscribersMod {
       __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: EventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
       
       inline def setWatchId(value: Double): Self = StObject.set(x, "watchId", value.asInstanceOf[js.Any])
     }
@@ -82,7 +83,8 @@ object buildLocationSubscribersMod {
       __obj.asInstanceOf[Subscriber[CallbackType]]
     }
     
-    extension [Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */](x: Self & Subscriber[CallbackType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscriber[?], CallbackType /* <: LocationCallback | LocationHeadingCallback */] (val x: Self & Subscriber[CallbackType]) extends AnyVal {
       
       inline def setCallbacks(value: Any): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

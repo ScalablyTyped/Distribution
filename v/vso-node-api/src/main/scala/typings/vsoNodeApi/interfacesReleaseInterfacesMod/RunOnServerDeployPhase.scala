@@ -23,7 +23,8 @@ object RunOnServerDeployPhase {
     __obj.asInstanceOf[RunOnServerDeployPhase]
   }
   
-  extension [Self <: RunOnServerDeployPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunOnServerDeployPhase] (val x: Self) extends AnyVal {
     
     inline def setDeploymentInput(value: ServerDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
   }

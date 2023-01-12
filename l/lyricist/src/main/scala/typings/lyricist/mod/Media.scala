@@ -22,7 +22,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  extension [Self <: Media](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

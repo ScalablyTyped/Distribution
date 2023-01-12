@@ -166,7 +166,8 @@ object distSrcKeychainMod {
       __obj.asInstanceOf[DekOptions]
     }
     
-    extension [Self <: DekOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DekOptions] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object distSrcKeychainMod {
       __obj.asInstanceOf[KeyChainComponents]
     }
     
-    extension [Self <: KeyChainComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyChainComponents] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object distSrcKeychainMod {
       __obj.asInstanceOf[KeyChainInit]
     }
     
-    extension [Self <: KeyChainInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyChainInit] (val x: Self) extends AnyVal {
       
       inline def setDek(value: DekOptions): Self = StObject.set(x, "dek", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object distSrcKeychainMod {
       __obj.asInstanceOf[KeyInfo]
     }
     
-    extension [Self <: KeyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

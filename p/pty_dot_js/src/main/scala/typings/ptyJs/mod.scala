@@ -225,7 +225,8 @@ object mod {
       __obj.asInstanceOf[TerminalOptions]
     }
     
-    extension [Self <: TerminalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object CreateBrowserContextRequest {
     __obj.asInstanceOf[CreateBrowserContextRequest]
   }
   
-  extension [Self <: CreateBrowserContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBrowserContextRequest] (val x: Self) extends AnyVal {
     
     inline def setDisposeOnDetach(value: Boolean): Self = StObject.set(x, "disposeOnDetach", value.asInstanceOf[js.Any])
     

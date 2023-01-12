@@ -1666,7 +1666,8 @@ object sapMGenericTileMod {
       __obj.asInstanceOf[GenericTileSettings]
     }
     
-    extension [Self <: GenericTileSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericTileSettings] (val x: Self) extends AnyVal {
       
       inline def setActionButtons(
         value: js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

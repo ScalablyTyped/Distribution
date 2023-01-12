@@ -38,7 +38,8 @@ object ServerTempPasswordEntry {
     __obj.asInstanceOf[ServerTempPasswordEntry]
   }
   
-  extension [Self <: ServerTempPasswordEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerTempPasswordEntry] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

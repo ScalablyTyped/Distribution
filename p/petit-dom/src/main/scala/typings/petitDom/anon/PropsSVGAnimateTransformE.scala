@@ -653,7 +653,8 @@ object PropsSVGAnimateTransformE {
     __obj.asInstanceOf[PropsSVGAnimateTransformE]
   }
   
-  extension [Self <: PropsSVGAnimateTransformE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGAnimateTransformE] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PullHookChangeEvent {
     __obj.asInstanceOf[PullHookChangeEvent]
   }
   
-  extension [Self <: PullHookChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullHookChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setState(value: initial | preaction | action): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

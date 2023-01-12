@@ -20,7 +20,8 @@ object AlgorithmIdentifierParameters {
     __obj.asInstanceOf[AlgorithmIdentifierParameters]
   }
   
-  extension [Self <: AlgorithmIdentifierParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmIdentifierParameters] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmId(value: String): Self = StObject.set(x, "algorithmId", value.asInstanceOf[js.Any])
     

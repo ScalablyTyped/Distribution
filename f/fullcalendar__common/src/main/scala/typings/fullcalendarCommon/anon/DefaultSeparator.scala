@@ -21,7 +21,8 @@ object DefaultSeparator {
     __obj.asInstanceOf[DefaultSeparator]
   }
   
-  extension [Self <: DefaultSeparator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultSeparator] (val x: Self) extends AnyVal {
     
     inline def setDefaultSeparator(value: String): Self = StObject.set(x, "defaultSeparator", value.asInstanceOf[js.Any])
     

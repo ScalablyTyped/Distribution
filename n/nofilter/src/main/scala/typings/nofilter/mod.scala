@@ -747,7 +747,8 @@ object mod {
       __obj.asInstanceOf[NoFilterOptions]
     }
     
-    extension [Self <: NoFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       

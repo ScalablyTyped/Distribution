@@ -23,7 +23,8 @@ object FilteredEventUIParam {
     __obj.asInstanceOf[FilteredEventUIParam]
   }
   
-  extension [Self <: FilteredEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setElements(value: Any): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

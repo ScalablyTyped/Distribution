@@ -166,7 +166,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[GetOptions]
     }
     
-    extension [Self <: GetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalResolve(value: Boolean): Self = StObject.set(x, "localResolve", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[GetResult]
     }
     
-    extension [Self <: GetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResult] (val x: Self) extends AnyVal {
       
       inline def setRemainderPath(value: String): Self = StObject.set(x, "remainderPath", value.asInstanceOf[js.Any])
       
@@ -224,7 +226,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[ImportOptions]
     }
     
-    extension [Self <: ImportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportOptions] (val x: Self) extends AnyVal {
       
       inline def setPinRoots(value: Boolean): Self = StObject.set(x, "pinRoots", value.asInstanceOf[js.Any])
       
@@ -246,7 +249,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[ImportResult]
     }
     
-    extension [Self <: ImportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportResult] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: ImportRootStatus): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -271,7 +275,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[ImportRootStatus]
     }
     
-    extension [Self <: ImportRootStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportRootStatus] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -323,7 +328,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
       
@@ -368,7 +374,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    extension [Self <: ResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -395,7 +402,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[ResolveResult]
     }
     
-    extension [Self <: ResolveResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -421,7 +429,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[RmOptions]
     }
     
-    extension [Self <: RmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -451,7 +460,8 @@ object distSrcDagMod {
       __obj.asInstanceOf[TreeOptions]
     }
     
-    extension [Self <: TreeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeOptions] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

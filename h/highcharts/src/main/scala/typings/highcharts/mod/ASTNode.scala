@@ -21,7 +21,8 @@ object ASTNode {
     __obj.asInstanceOf[ASTNode]
   }
   
-  extension [Self <: ASTNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

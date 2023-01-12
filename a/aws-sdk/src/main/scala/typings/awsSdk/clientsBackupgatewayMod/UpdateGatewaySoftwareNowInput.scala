@@ -18,7 +18,8 @@ object UpdateGatewaySoftwareNowInput {
     __obj.asInstanceOf[UpdateGatewaySoftwareNowInput]
   }
   
-  extension [Self <: UpdateGatewaySoftwareNowInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGatewaySoftwareNowInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayArn(value: GatewayArn): Self = StObject.set(x, "GatewayArn", value.asInstanceOf[js.Any])
   }

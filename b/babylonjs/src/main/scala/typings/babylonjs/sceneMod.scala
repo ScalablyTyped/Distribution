@@ -5658,7 +5658,8 @@ object sceneMod {
       __obj.asInstanceOf[IDisposable]
     }
     
-    extension [Self <: IDisposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDisposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -5694,7 +5695,8 @@ object sceneMod {
       __obj.asInstanceOf[SceneOptions]
     }
     
-    extension [Self <: SceneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
       
       inline def setUseClonedMeshMap(value: Boolean): Self = StObject.set(x, "useClonedMeshMap", value.asInstanceOf[js.Any])
       
@@ -5916,7 +5918,8 @@ object sceneMod {
         __obj.asInstanceOf[typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene]
       }
       
-      extension [Self <: typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.sceneMod.babylonjsSceneAugmentingMod.Scene] (val x: Self) extends AnyVal {
         
         inline def setGetBoneByID(value: String => Nullable[Bone]): Self = StObject.set(x, "getBoneByID", js.Any.fromFunction1(value))
         

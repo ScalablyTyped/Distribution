@@ -78,7 +78,8 @@ object toastTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToastOverrides]
     }
     
-    extension [Self <: ToastOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastOverrides] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Override[Any]): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToastPrivateState]
     }
     
-    extension [Self <: ToastPrivateState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastPrivateState] (val x: Self) extends AnyVal {
       
       inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToastProps]
     }
     
-    extension [Self <: ToastProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -311,7 +315,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToastPropsShape]
     }
     
-    extension [Self <: ToastPropsShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastPropsShape] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -384,7 +389,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToasterContainerState]
     }
     
-    extension [Self <: ToasterContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToasterContainerState] (val x: Self) extends AnyVal {
       
       inline def setIsMounted(value: Boolean): Self = StObject.set(x, "isMounted", value.asInstanceOf[js.Any])
       
@@ -411,7 +417,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToasterOverrides]
     }
     
-    extension [Self <: ToasterOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToasterOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -472,7 +479,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToasterProps]
     }
     
-    extension [Self <: ToasterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToasterProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -508,7 +516,8 @@ object toastTypesMod {
       __obj.asInstanceOf[ToasterSharedStylePropsArg]
     }
     
-    extension [Self <: ToasterSharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToasterSharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$placement(value: PlacementType): Self = StObject.set(x, "$placement", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object CreateTransitGatewayVpcAttachmentResult {
     __obj.asInstanceOf[CreateTransitGatewayVpcAttachmentResult]
   }
   
-  extension [Self <: CreateTransitGatewayVpcAttachmentResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTransitGatewayVpcAttachmentResult] (val x: Self) extends AnyVal {
     
     inline def setTransitGatewayVpcAttachment(value: TransitGatewayVpcAttachment): Self = StObject.set(x, "TransitGatewayVpcAttachment", value.asInstanceOf[js.Any])
     

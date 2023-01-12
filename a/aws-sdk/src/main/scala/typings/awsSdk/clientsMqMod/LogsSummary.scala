@@ -38,7 +38,8 @@ object LogsSummary {
     __obj.asInstanceOf[LogsSummary]
   }
   
-  extension [Self <: LogsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogsSummary] (val x: Self) extends AnyVal {
     
     inline def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
     

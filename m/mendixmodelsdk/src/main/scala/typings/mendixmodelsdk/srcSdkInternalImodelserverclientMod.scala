@@ -280,7 +280,8 @@ object srcSdkInternalImodelserverclientMod {
       __obj.asInstanceOf[ISendDeltasResult]
     }
     
-    extension [Self <: ISendDeltasResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISendDeltasResult] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       

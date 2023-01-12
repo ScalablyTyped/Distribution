@@ -23,7 +23,8 @@ object TimeSeriesDataPoint {
     __obj.asInstanceOf[TimeSeriesDataPoint]
   }
   
-  extension [Self <: TimeSeriesDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesDataPoint] (val x: Self) extends AnyVal {
     
     inline def setTime(value: Timestamp): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Graph {
     __obj.asInstanceOf[Graph]
   }
   
-  extension [Self <: Graph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
     
     inline def setGrid(value: js.Array[js.Array[GridNode]]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     

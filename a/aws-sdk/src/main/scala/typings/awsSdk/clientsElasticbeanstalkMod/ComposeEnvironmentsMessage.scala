@@ -28,7 +28,8 @@ object ComposeEnvironmentsMessage {
     __obj.asInstanceOf[ComposeEnvironmentsMessage]
   }
   
-  extension [Self <: ComposeEnvironmentsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComposeEnvironmentsMessage] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

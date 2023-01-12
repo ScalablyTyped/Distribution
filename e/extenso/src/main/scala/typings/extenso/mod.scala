@@ -43,7 +43,8 @@ object mod {
         __obj.asInstanceOf[BaseOptions]
       }
       
-      extension [Self <: BaseOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
         
         inline def setLocale(value: br | pt): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         
@@ -75,7 +76,8 @@ object mod {
         __obj.asInstanceOf[CurrencyModeOptions]
       }
       
-      extension [Self <: CurrencyModeOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CurrencyModeOptions] (val x: Self) extends AnyVal {
         
         inline def setCurrency(value: Type): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -101,7 +103,8 @@ object mod {
         __obj.asInstanceOf[NumberModeOptions]
       }
       
-      extension [Self <: NumberModeOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NumberModeOptions] (val x: Self) extends AnyVal {
         
         inline def setMode(value: number): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         

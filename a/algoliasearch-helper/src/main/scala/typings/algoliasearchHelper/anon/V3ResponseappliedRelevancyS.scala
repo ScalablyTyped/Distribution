@@ -31,7 +31,8 @@ object V3ResponseappliedRelevancyS {
     __obj.asInstanceOf[V3ResponseappliedRelevancyS[T]]
   }
   
-  extension [Self <: V3ResponseappliedRelevancyS[?], T](x: Self & V3ResponseappliedRelevancyS[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V3ResponseappliedRelevancyS[?], T] (val x: Self & V3ResponseappliedRelevancyS[T]) extends AnyVal {
     
     inline def setV3(value: ResponseappliedRelevancyS): Self = StObject.set(x, "v3", value.asInstanceOf[js.Any])
     

@@ -110,7 +110,8 @@ object NavigationAPI {
       __obj.asInstanceOf[INavigation]
     }
     
-    extension [Self <: INavigation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavigation] (val x: Self) extends AnyVal {
       
       inline def setAnalysis(value: analysis_): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
       
@@ -212,7 +213,8 @@ object NavigationAPI {
       __obj.asInstanceOf[NavigationResult]
     }
     
-    extension [Self <: NavigationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: NavigationErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

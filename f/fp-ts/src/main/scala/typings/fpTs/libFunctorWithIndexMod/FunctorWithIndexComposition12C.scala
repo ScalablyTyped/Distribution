@@ -24,7 +24,8 @@ object FunctorWithIndexComposition12C {
     __obj.asInstanceOf[FunctorWithIndexComposition12C[F, FI, G, GI, E]]
   }
   
-  extension [Self <: FunctorWithIndexComposition12C[?, ?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GI, E](x: Self & (FunctorWithIndexComposition12C[F, FI, G, GI, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctorWithIndexComposition12C[?, ?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, GI, E] (val x: Self & (FunctorWithIndexComposition12C[F, FI, G, GI, E])) extends AnyVal {
     
     inline def setMapWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any, js.Function2[/* i */ js.Tuple2[FI, GI], Any, Any]) => Any

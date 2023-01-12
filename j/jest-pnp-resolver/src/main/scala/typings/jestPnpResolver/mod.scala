@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[JestResolverOptions]
     }
     
-    extension [Self <: JestResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       

@@ -166,7 +166,8 @@ object CurveLocation {
     __obj.asInstanceOf[CurveLocation]
   }
   
-  extension [Self <: CurveLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurveLocation] (val x: Self) extends AnyVal {
     
     inline def setCurvature(value: Double): Self = StObject.set(x, "curvature", value.asInstanceOf[js.Any])
     

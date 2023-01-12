@@ -23,7 +23,8 @@ object ASPxClientDiagramBeforeChangeShapeTextEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramBeforeChangeShapeTextEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramBeforeChangeShapeTextEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramBeforeChangeShapeTextEventArgs] (val x: Self) extends AnyVal {
     
     inline def setShape(value: DiagramShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
   }

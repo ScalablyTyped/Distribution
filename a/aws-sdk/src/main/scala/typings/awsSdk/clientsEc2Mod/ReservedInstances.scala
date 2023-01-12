@@ -103,7 +103,8 @@ object ReservedInstances {
     __obj.asInstanceOf[ReservedInstances]
   }
   
-  extension [Self <: ReservedInstances](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedInstances] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

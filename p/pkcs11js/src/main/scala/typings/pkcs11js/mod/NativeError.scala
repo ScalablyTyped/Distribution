@@ -30,7 +30,8 @@ object NativeError {
     __obj.asInstanceOf[NativeError]
   }
   
-  extension [Self <: NativeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeError] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

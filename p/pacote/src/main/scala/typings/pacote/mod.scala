@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[AbbreviatedManifest]
     }
     
-    extension [Self <: AbbreviatedManifest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbbreviatedManifest] (val x: Self) extends AnyVal {
       
       inline def setBin(value: Record[String, String]): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[AbbreviatedPackument]
     }
     
-    extension [Self <: AbbreviatedPackument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbbreviatedPackument] (val x: Self) extends AnyVal {
       
       inline def `setDist-tags`(value: Latest & (Record[String, String])): Self = StObject.set(x, "dist-tags", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object mod {
       __obj.asInstanceOf[CommonMetadata]
     }
     
-    extension [Self <: CommonMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonMetadata] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object mod {
       __obj.asInstanceOf[FetchResult]
     }
     
-    extension [Self <: FetchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResult] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -342,7 +346,8 @@ object mod {
       __obj.asInstanceOf[ManifestResult]
     }
     
-    extension [Self <: ManifestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestResult] (val x: Self) extends AnyVal {
       
       inline def set_from(value: String): Self = StObject.set(x, "_from", value.asInstanceOf[js.Any])
       
@@ -428,7 +433,8 @@ object mod {
       __obj.asInstanceOf[Manifest_]
     }
     
-    extension [Self <: Manifest_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Manifest_] (val x: Self) extends AnyVal {
       
       inline def setBin(value: Record[String, String]): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -779,7 +785,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -942,7 +949,8 @@ object mod {
       __obj.asInstanceOf[PackageDist]
     }
     
-    extension [Self <: PackageDist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageDist] (val x: Self) extends AnyVal {
       
       inline def setFileCount(value: Double): Self = StObject.set(x, "fileCount", value.asInstanceOf[js.Any])
       
@@ -982,7 +990,8 @@ object mod {
       __obj.asInstanceOf[PackumentResult]
     }
     
-    extension [Self <: PackumentResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackumentResult] (val x: Self) extends AnyVal {
       
       inline def set_contentLength(value: Double): Self = StObject.set(x, "_contentLength", value.asInstanceOf[js.Any])
     }
@@ -1026,7 +1035,8 @@ object mod {
       __obj.asInstanceOf[Packument_]
     }
     
-    extension [Self <: Packument_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packument_] (val x: Self) extends AnyVal {
       
       inline def `setDist-tags`(value: Latest & (Record[String, String])): Self = StObject.set(x, "dist-tags", value.asInstanceOf[js.Any])
       
@@ -1136,7 +1146,8 @@ object mod {
       __obj.asInstanceOf[PacoteOptions]
     }
     
-    extension [Self <: PacoteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PacoteOptions] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: js.Date): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -1213,7 +1224,8 @@ object mod {
       __obj.asInstanceOf[Person]
     }
     
-    extension [Self <: Person](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Person] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

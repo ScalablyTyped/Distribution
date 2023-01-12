@@ -44,7 +44,8 @@ object packageJsonMod {
       __obj.asInstanceOf[FundingWay]
     }
     
-    extension [Self <: FundingWay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FundingWay] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object packageJsonMod {
       __obj.asInstanceOf[PackageExportsEntryObject]
     }
     
-    extension [Self <: PackageExportsEntryObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageExportsEntryObject] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: PackageExportsEntry | PackageExportsFallback): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -378,7 +380,8 @@ object packageJsonMod {
       __obj.asInstanceOf[PackageJSON2]
     }
     
-    extension [Self <: PackageJSON2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageJSON2] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Person): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

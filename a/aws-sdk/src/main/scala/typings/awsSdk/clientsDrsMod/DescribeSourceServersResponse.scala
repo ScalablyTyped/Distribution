@@ -23,7 +23,8 @@ object DescribeSourceServersResponse {
     __obj.asInstanceOf[DescribeSourceServersResponse]
   }
   
-  extension [Self <: DescribeSourceServersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSourceServersResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: SourceServersList): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

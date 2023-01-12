@@ -19,7 +19,8 @@ object NodesClusterStateQueue {
     __obj.asInstanceOf[NodesClusterStateQueue]
   }
   
-  extension [Self <: NodesClusterStateQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClusterStateQueue] (val x: Self) extends AnyVal {
     
     inline def setCommitted(value: long): Self = StObject.set(x, "committed", value.asInstanceOf[js.Any])
     

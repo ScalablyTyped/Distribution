@@ -28,7 +28,8 @@ object IMask {
     __obj.asInstanceOf[IMask]
   }
   
-  extension [Self <: IMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMask] (val x: Self) extends AnyVal {
     
     inline def setGetTransparent(value: () => Boolean): Self = StObject.set(x, "getTransparent", js.Any.fromFunction0(value))
     

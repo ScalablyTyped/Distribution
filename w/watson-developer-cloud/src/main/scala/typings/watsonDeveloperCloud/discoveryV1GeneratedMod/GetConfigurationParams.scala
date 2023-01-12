@@ -24,7 +24,8 @@ object GetConfigurationParams {
     __obj.asInstanceOf[GetConfigurationParams]
   }
   
-  extension [Self <: GetConfigurationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetConfigurationParams] (val x: Self) extends AnyVal {
     
     inline def setConfiguration_id(value: String): Self = StObject.set(x, "configuration_id", value.asInstanceOf[js.Any])
     

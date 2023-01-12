@@ -18,7 +18,8 @@ object CollStatsOptions {
     __obj.asInstanceOf[CollStatsOptions]
   }
   
-  extension [Self <: CollStatsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollStatsOptions] (val x: Self) extends AnyVal {
     
     inline def setScale(value: scala.Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

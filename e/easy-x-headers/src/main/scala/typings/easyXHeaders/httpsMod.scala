@@ -59,7 +59,8 @@ object httpsMod {
       __obj.asInstanceOf[Agent]
     }
     
-    extension [Self <: Agent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
       
       inline def setMaxSockets(value: Double): Self = StObject.set(x, "maxSockets", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object httpsMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -207,7 +209,8 @@ object httpsMod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setCa(value: Any): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       

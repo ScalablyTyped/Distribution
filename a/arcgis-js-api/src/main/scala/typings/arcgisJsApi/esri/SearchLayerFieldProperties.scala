@@ -49,7 +49,8 @@ object SearchLayerFieldProperties {
     __obj.asInstanceOf[SearchLayerFieldProperties]
   }
   
-  extension [Self <: SearchLayerFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchLayerFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ProgressEventUIParam {
     __obj.asInstanceOf[ProgressEventUIParam]
   }
   
-  extension [Self <: ProgressEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     

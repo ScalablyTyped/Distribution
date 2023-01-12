@@ -25,7 +25,8 @@ object HoldingEventArgs {
     __obj.asInstanceOf[HoldingEventArgs]
   }
   
-  extension [Self <: HoldingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHoldingState(value: HoldingState): Self = StObject.set(x, "holdingState", value.asInstanceOf[js.Any])
     

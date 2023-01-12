@@ -33,7 +33,8 @@ object DescribeHostReservationsRequest {
     __obj.asInstanceOf[DescribeHostReservationsRequest]
   }
   
-  extension [Self <: DescribeHostReservationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHostReservationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterList): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

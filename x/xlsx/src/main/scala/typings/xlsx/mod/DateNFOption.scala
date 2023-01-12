@@ -16,7 +16,8 @@ object DateNFOption {
     __obj.asInstanceOf[DateNFOption]
   }
   
-  extension [Self <: DateNFOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateNFOption] (val x: Self) extends AnyVal {
     
     inline def setDateNF(value: NumberFormat): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
     

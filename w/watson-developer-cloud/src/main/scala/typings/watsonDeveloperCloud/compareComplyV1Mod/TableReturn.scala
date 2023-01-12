@@ -26,7 +26,8 @@ object TableReturn {
     __obj.asInstanceOf[TableReturn]
   }
   
-  extension [Self <: TableReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableReturn] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: DocInfo): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

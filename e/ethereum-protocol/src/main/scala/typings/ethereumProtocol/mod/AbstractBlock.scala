@@ -62,7 +62,8 @@ object AbstractBlock {
     __obj.asInstanceOf[AbstractBlock]
   }
   
-  extension [Self <: AbstractBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractBlock] (val x: Self) extends AnyVal {
     
     inline def setDifficulty(value: default): Self = StObject.set(x, "difficulty", value.asInstanceOf[js.Any])
     

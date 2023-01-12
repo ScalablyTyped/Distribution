@@ -19,7 +19,8 @@ object PassphraseAck {
     __obj.asInstanceOf[PassphraseAck]
   }
   
-  extension [Self <: PassphraseAck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassphraseAck] (val x: Self) extends AnyVal {
     
     inline def setOn_device(value: Boolean): Self = StObject.set(x, "on_device", value.asInstanceOf[js.Any])
     

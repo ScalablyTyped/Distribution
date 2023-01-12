@@ -33,7 +33,8 @@ object ReturnNullIfMissing {
     __obj.asInstanceOf[ReturnNullIfMissing]
   }
   
-  extension [Self <: ReturnNullIfMissing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnNullIfMissing] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

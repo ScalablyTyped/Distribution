@@ -59,7 +59,8 @@ object HistoryId {
     __obj.asInstanceOf[HistoryId]
   }
   
-  extension [Self <: HistoryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

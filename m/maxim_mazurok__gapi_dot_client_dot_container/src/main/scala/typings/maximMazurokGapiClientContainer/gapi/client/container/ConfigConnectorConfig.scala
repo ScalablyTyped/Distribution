@@ -16,7 +16,8 @@ object ConfigConnectorConfig {
     __obj.asInstanceOf[ConfigConnectorConfig]
   }
   
-  extension [Self <: ConfigConnectorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigConnectorConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

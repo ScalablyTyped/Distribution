@@ -17,7 +17,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setShare(value: /* shareData */ SocialSharingW3CData => js.Promise[SocialSharingResult]): Self = StObject.set(x, "share", js.Any.fromFunction1(value))
   }

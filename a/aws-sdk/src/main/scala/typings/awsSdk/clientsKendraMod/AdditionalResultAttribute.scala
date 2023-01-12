@@ -28,7 +28,8 @@ object AdditionalResultAttribute {
     __obj.asInstanceOf[AdditionalResultAttribute]
   }
   
-  extension [Self <: AdditionalResultAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalResultAttribute] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

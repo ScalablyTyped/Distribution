@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[BaseHttpResponse]
     }
     
-    extension [Self <: BaseHttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHttpResponse] (val x: Self) extends AnyVal {
       
       inline def setGetHeader(value: String => js.UndefOr[String]): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Bundle[InputData]]
     }
     
-    extension [Self <: Bundle[?], InputData](x: Self & Bundle[InputData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bundle[?], InputData] (val x: Self & Bundle[InputData]) extends AnyVal {
       
       inline def setAuthData(value: StringDictionary[String]): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
       
@@ -259,7 +261,8 @@ object mod {
       __obj.asInstanceOf[HttpRequestOptions]
     }
     
-    extension [Self <: HttpRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -354,7 +357,8 @@ object mod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -395,7 +399,8 @@ object mod {
       __obj.asInstanceOf[RawHttpResponse]
     }
     
-    extension [Self <: RawHttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawHttpResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

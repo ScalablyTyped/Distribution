@@ -16,7 +16,8 @@ object QueryExecutionOptions {
     __obj.asInstanceOf[QueryExecutionOptions]
   }
   
-  extension [Self <: QueryExecutionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecutionOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }

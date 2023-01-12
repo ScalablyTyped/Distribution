@@ -56,7 +56,8 @@ object libIndexDotiosMod {
       __obj.asInstanceOf[PropsType]
     }
     
-    extension [Self <: PropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
       
       inline def setDownStyle(value: Any): Self = StObject.set(x, "downStyle", value.asInstanceOf[js.Any])
       

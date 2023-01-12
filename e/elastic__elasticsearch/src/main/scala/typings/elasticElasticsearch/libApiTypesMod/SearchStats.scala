@@ -63,7 +63,8 @@ object SearchStats {
     __obj.asInstanceOf[SearchStats]
   }
   
-  extension [Self <: SearchStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchStats] (val x: Self) extends AnyVal {
     
     inline def setFetch_current(value: long): Self = StObject.set(x, "fetch_current", value.asInstanceOf[js.Any])
     

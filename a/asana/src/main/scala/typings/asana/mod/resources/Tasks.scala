@@ -544,7 +544,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[AddProjectParams]
     }
     
-    extension [Self <: AddProjectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddProjectParams] (val x: Self) extends AnyVal {
       
       inline def setInsertAfter(value: Double): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
       
@@ -575,7 +576,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[CommentParams]
     }
     
-    extension [Self <: CommentParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentParams] (val x: Self) extends AnyVal {
       
       inline def setHtml_text(value: String): Self = StObject.set(x, "html_text", value.asInstanceOf[js.Any])
       
@@ -645,7 +647,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[CreateParams]
     }
     
-    extension [Self <: CreateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateParams] (val x: Self) extends AnyVal {
       
       inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
       
@@ -770,7 +773,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[FindAllParams]
     }
     
-    extension [Self <: FindAllParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindAllParams] (val x: Self) extends AnyVal {
       
       inline def setAssignee(value: Double): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
       
@@ -809,7 +813,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[FollowersParams]
     }
     
-    extension [Self <: FollowersParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FollowersParams] (val x: Self) extends AnyVal {
       
       inline def setFollowers(value: js.Array[Double | String]): Self = StObject.set(x, "followers", value.asInstanceOf[js.Any])
       
@@ -828,7 +833,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[RemoveProjectParams]
     }
     
-    extension [Self <: RemoveProjectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveProjectParams] (val x: Self) extends AnyVal {
       
       inline def setProject(value: String | Double): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }
@@ -845,7 +851,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[TagParams]
     }
     
-    extension [Self <: TagParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagParams] (val x: Self) extends AnyVal {
       
       inline def setTag(value: String | Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
@@ -964,7 +971,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[typings.asana.mod.resources.Tasks.Type]
     }
     
-    extension [Self <: typings.asana.mod.resources.Tasks.Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.asana.mod.resources.Tasks.Type] (val x: Self) extends AnyVal {
       
       inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
       
@@ -1116,7 +1124,8 @@ object Tasks extends Shortcut {
       __obj.asInstanceOf[UpdateParams]
     }
     
-    extension [Self <: UpdateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateParams] (val x: Self) extends AnyVal {
       
       inline def setApproval_status(value: String): Self = StObject.set(x, "approval_status", value.asInstanceOf[js.Any])
       

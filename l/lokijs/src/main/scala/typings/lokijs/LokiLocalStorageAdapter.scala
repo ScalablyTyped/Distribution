@@ -47,7 +47,8 @@ object LokiLocalStorageAdapter {
     __obj.asInstanceOf[LokiLocalStorageAdapter]
   }
   
-  extension [Self <: LokiLocalStorageAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LokiLocalStorageAdapter] (val x: Self) extends AnyVal {
     
     inline def setDeleteDatabase(value: (String, js.Function1[/* err */ js.UndefOr[js.Error | Null], Unit]) => Unit): Self = StObject.set(x, "deleteDatabase", js.Any.fromFunction2(value))
     

@@ -20,7 +20,8 @@ object CollectionUsage {
     __obj.asInstanceOf[CollectionUsage]
   }
   
-  extension [Self <: CollectionUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionUsage] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

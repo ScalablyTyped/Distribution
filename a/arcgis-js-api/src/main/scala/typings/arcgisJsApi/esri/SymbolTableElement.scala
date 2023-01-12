@@ -44,7 +44,8 @@ object SymbolTableElement {
     __obj.asInstanceOf[SymbolTableElement]
   }
   
-  extension [Self <: SymbolTableElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolTableElement] (val x: Self) extends AnyVal {
     
     inline def setInfos(value: js.Array[SymbolTableElementType]): Self = StObject.set(x, "infos", value.asInstanceOf[js.Any])
     

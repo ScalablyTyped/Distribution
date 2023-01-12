@@ -23,7 +23,8 @@ object Relationship {
     __obj.asInstanceOf[Relationship]
   }
   
-  extension [Self <: Relationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: ConstrainedString): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     

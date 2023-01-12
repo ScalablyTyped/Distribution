@@ -23,7 +23,8 @@ object StartTextDetectionFilters {
     __obj.asInstanceOf[StartTextDetectionFilters]
   }
   
-  extension [Self <: StartTextDetectionFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTextDetectionFilters] (val x: Self) extends AnyVal {
     
     inline def setRegionsOfInterest(value: RegionsOfInterest): Self = StObject.set(x, "RegionsOfInterest", value.asInstanceOf[js.Any])
     

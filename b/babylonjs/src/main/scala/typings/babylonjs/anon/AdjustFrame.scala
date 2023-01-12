@@ -45,7 +45,8 @@ object AdjustFrame {
     __obj.asInstanceOf[AdjustFrame]
   }
   
-  extension [Self <: AdjustFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustFrame] (val x: Self) extends AnyVal {
     
     inline def setAdjustFrame(value: Boolean): Self = StObject.set(x, "adjustFrame", value.asInstanceOf[js.Any])
     

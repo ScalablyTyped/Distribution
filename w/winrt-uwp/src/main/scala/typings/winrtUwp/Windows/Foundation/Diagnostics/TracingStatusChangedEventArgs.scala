@@ -20,7 +20,8 @@ object TracingStatusChangedEventArgs {
     __obj.asInstanceOf[TracingStatusChangedEventArgs]
   }
   
-  extension [Self <: TracingStatusChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracingStatusChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

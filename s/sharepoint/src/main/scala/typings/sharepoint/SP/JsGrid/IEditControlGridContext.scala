@@ -31,7 +31,8 @@ object IEditControlGridContext {
     __obj.asInstanceOf[IEditControlGridContext]
   }
   
-  extension [Self <: IEditControlGridContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditControlGridContext] (val x: Self) extends AnyVal {
     
     inline def setOnActivateActor(value: () => Unit): Self = StObject.set(x, "OnActivateActor", js.Any.fromFunction0(value))
     

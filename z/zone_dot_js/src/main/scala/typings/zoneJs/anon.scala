@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ADDEVENTLISTENERSTR]
     }
     
-    extension [Self <: ADDEVENTLISTENERSTR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ADDEVENTLISTENERSTR] (val x: Self) extends AnyVal {
       
       inline def setADD_EVENT_LISTENER_STR(value: String): Self = StObject.set(x, "ADD_EVENT_LISTENER_STR", value.asInstanceOf[js.Any])
       

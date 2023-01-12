@@ -23,7 +23,8 @@ object Word {
     __obj.asInstanceOf[Word]
   }
   
-  extension [Self <: Word](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
     
     inline def setPart_of_speech(value: String): Self = StObject.set(x, "part_of_speech", value.asInstanceOf[js.Any])
     

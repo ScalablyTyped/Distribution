@@ -42,7 +42,8 @@ object IKg {
     __obj.asInstanceOf[IKg]
   }
   
-  extension [Self <: IKg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKg] (val x: Self) extends AnyVal {
     
     inline def setAggregateTemplate(value: () => String): Self = StObject.set(x, "aggregateTemplate", js.Any.fromFunction0(value))
     

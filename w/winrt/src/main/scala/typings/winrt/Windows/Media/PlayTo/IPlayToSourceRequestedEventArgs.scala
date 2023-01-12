@@ -15,7 +15,8 @@ object IPlayToSourceRequestedEventArgs {
     __obj.asInstanceOf[IPlayToSourceRequestedEventArgs]
   }
   
-  extension [Self <: IPlayToSourceRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToSourceRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSourceRequest(value: PlayToSourceRequest): Self = StObject.set(x, "sourceRequest", value.asInstanceOf[js.Any])
   }

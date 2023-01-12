@@ -62,7 +62,8 @@ object OLESimpleStorage {
     __obj.asInstanceOf[OLESimpleStorage]
   }
   
-  extension [Self <: OLESimpleStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OLESimpleStorage] (val x: Self) extends AnyVal {
     
     inline def setCreateFromInputStream(value: (XInputStream, Boolean) => Unit): Self = StObject.set(x, "createFromInputStream", js.Any.fromFunction2(value))
     

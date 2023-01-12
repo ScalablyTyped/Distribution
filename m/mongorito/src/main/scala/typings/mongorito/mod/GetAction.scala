@@ -21,7 +21,8 @@ object GetAction {
     __obj.asInstanceOf[GetAction]
   }
   
-  extension [Self <: GetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAction] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

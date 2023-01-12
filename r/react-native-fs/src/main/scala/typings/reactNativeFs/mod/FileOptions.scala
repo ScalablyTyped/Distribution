@@ -15,7 +15,8 @@ object FileOptions {
     __obj.asInstanceOf[FileOptions]
   }
   
-  extension [Self <: FileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
     
     inline def setNSFileProtectionKey(value: String): Self = StObject.set(x, "NSFileProtectionKey", value.asInstanceOf[js.Any])
     

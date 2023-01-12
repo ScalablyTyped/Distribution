@@ -37,7 +37,8 @@ object ChartEvent {
     __obj.asInstanceOf[ChartEvent]
   }
   
-  extension [Self <: ChartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartEvent] (val x: Self) extends AnyVal {
     
     inline def setNative(value: Event): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     

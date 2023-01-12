@@ -100,7 +100,8 @@ object IPlayToReceiver {
     __obj.asInstanceOf[IPlayToReceiver]
   }
   
-  extension [Self <: IPlayToReceiver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToReceiver] (val x: Self) extends AnyVal {
     
     inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     

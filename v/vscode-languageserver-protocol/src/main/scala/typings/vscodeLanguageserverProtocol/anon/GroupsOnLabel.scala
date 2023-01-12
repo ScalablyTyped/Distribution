@@ -20,7 +20,8 @@ object GroupsOnLabel {
     __obj.asInstanceOf[GroupsOnLabel]
   }
   
-  extension [Self <: GroupsOnLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupsOnLabel] (val x: Self) extends AnyVal {
     
     inline def setGroupsOnLabel(value: Boolean): Self = StObject.set(x, "groupsOnLabel", value.asInstanceOf[js.Any])
     

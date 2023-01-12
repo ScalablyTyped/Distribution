@@ -25,7 +25,8 @@ object StreamAttributes {
     __obj.asInstanceOf[StreamAttributes]
   }
   
-  extension [Self <: StreamAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamAttributes] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

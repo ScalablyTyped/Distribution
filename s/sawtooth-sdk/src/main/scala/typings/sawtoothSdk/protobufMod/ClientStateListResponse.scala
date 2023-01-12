@@ -318,7 +318,8 @@ object ClientStateListResponse {
       __obj.asInstanceOf[IEntry]
     }
     
-    extension [Self <: IEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntry] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

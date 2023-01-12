@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[IterableOptions]
     }
     
-    extension [Self <: IterableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterableOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[connectionString]
     }
     
-    extension [Self <: connectionString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: connectionString] (val x: Self) extends AnyVal {
       
       inline def setConnectionLimit(value: Double): Self = StObject.set(x, "connectionLimit", value.asInstanceOf[js.Any])
       

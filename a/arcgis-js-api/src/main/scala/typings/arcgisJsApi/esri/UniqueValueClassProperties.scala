@@ -34,7 +34,8 @@ object UniqueValueClassProperties {
     __obj.asInstanceOf[UniqueValueClassProperties]
   }
   
-  extension [Self <: UniqueValueClassProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValueClassProperties] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

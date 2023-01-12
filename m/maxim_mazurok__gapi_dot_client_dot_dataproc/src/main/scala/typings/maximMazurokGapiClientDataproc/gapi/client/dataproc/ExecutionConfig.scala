@@ -28,7 +28,8 @@ object ExecutionConfig {
     __obj.asInstanceOf[ExecutionConfig]
   }
   
-  extension [Self <: ExecutionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKey(value: String): Self = StObject.set(x, "kmsKey", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RtmCall {
     __obj.asInstanceOf[RtmCall[T]]
   }
   
-  extension [Self <: RtmCall[?], T](x: Self & RtmCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RtmCall[?], T] (val x: Self & RtmCall[T]) extends AnyVal {
     
     inline def setMessage(value: T): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

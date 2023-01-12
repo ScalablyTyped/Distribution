@@ -17,7 +17,8 @@ object NewFolder {
     __obj.asInstanceOf[NewFolder]
   }
   
-  extension [Self <: NewFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewFolder] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

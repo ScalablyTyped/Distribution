@@ -23,7 +23,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setFaxComExDotFaxDocument(value: FaxDocument): Self = StObject.set(x, "FaxComEx.FaxDocument", value.asInstanceOf[js.Any])
     

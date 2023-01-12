@@ -26,7 +26,8 @@ object TableProps {
     __obj.asInstanceOf[TableProps]
   }
   
-  extension [Self <: TableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

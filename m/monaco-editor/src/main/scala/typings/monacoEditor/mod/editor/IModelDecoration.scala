@@ -34,7 +34,8 @@ object IModelDecoration {
     __obj.asInstanceOf[IModelDecoration]
   }
   
-  extension [Self <: IModelDecoration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDecoration] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

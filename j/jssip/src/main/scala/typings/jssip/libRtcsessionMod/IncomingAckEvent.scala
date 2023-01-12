@@ -19,7 +19,8 @@ object IncomingAckEvent {
     __obj.asInstanceOf[IncomingAckEvent]
   }
   
-  extension [Self <: IncomingAckEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingAckEvent] (val x: Self) extends AnyVal {
     
     inline def setAck(value: IncomingRequest): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     

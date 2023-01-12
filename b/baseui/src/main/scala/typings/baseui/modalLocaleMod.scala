@@ -29,7 +29,8 @@ object modalLocaleMod {
       __obj.asInstanceOf[ModalLocale]
     }
     
-    extension [Self <: ModalLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalLocale] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     }

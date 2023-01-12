@@ -22,7 +22,8 @@ object promises {
       __obj.asInstanceOf[IDeferred[T]]
     }
     
-    extension [Self <: IDeferred[?], T](x: Self & IDeferred[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDeferred[?], T] (val x: Self & IDeferred[T]) extends AnyVal {
       
       inline def setPromise(value: js.Promise[T]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

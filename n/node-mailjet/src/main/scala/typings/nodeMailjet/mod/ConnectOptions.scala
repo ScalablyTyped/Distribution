@@ -23,7 +23,8 @@ object ConnectOptions {
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  extension [Self <: ConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setPerform_api_call(value: Boolean): Self = StObject.set(x, "perform_api_call", value.asInstanceOf[js.Any])
     

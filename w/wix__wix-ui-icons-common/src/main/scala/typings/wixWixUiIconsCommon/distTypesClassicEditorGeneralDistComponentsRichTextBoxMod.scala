@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsRichTextBoxMod extends Shortcu
       __obj.asInstanceOf[RichTextBoxProps]
     }
     
-    extension [Self <: RichTextBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RichTextBoxProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

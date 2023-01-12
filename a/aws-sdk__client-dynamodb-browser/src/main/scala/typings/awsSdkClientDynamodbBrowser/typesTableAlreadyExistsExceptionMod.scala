@@ -23,7 +23,8 @@ object typesTableAlreadyExistsExceptionMod {
       __obj.asInstanceOf[TableAlreadyExistsException]
     }
     
-    extension [Self <: TableAlreadyExistsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableAlreadyExistsException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.TableAlreadyExistsException
@@ -45,7 +46,8 @@ object typesTableAlreadyExistsExceptionMod {
       __obj.asInstanceOf[TableAlreadyExistsExceptionDetails]
     }
     
-    extension [Self <: TableAlreadyExistsExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableAlreadyExistsExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

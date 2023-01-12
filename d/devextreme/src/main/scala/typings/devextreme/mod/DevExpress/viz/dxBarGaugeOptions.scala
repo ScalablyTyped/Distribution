@@ -114,7 +114,8 @@ object dxBarGaugeOptions {
     __obj.asInstanceOf[dxBarGaugeOptions]
   }
   
-  extension [Self <: dxBarGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxBarGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

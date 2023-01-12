@@ -68,7 +68,8 @@ object Ec2InstanceAttributes {
     __obj.asInstanceOf[Ec2InstanceAttributes]
   }
   
-  extension [Self <: Ec2InstanceAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2InstanceAttributes] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMasterSecurityGroups(value: StringList): Self = StObject.set(x, "AdditionalMasterSecurityGroups", value.asInstanceOf[js.Any])
     

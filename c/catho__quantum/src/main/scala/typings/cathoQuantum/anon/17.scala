@@ -15,7 +15,8 @@ object `17` {
     __obj.asInstanceOf[`17`]
   }
   
-  extension [Self <: `17`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `17`] (val x: Self) extends AnyVal {
     
     inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     

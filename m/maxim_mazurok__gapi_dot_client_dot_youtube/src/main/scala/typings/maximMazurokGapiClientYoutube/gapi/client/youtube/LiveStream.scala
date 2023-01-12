@@ -34,7 +34,8 @@ object LiveStream {
     __obj.asInstanceOf[LiveStream]
   }
   
-  extension [Self <: LiveStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveStream] (val x: Self) extends AnyVal {
     
     inline def setCdn(value: CdnSettings): Self = StObject.set(x, "cdn", value.asInstanceOf[js.Any])
     

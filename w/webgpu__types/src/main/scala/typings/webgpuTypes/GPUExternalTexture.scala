@@ -29,7 +29,8 @@ object GPUExternalTexture {
     __obj.asInstanceOf[GPUExternalTexture]
   }
   
-  extension [Self <: GPUExternalTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUExternalTexture] (val x: Self) extends AnyVal {
     
     inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     

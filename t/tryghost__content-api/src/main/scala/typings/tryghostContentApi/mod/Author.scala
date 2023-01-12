@@ -38,7 +38,8 @@ object Author {
     __obj.asInstanceOf[Author]
   }
   
-  extension [Self <: Author](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Author] (val x: Self) extends AnyVal {
     
     inline def setBio(value: Nullable[String]): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object InputFormatOptions {
     __obj.asInstanceOf[InputFormatOptions]
   }
   
-  extension [Self <: InputFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setCsv(value: CsvOptions): Self = StObject.set(x, "Csv", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object OrganizationKubernetesAuditLogsConfiguration {
     __obj.asInstanceOf[OrganizationKubernetesAuditLogsConfiguration]
   }
   
-  extension [Self <: OrganizationKubernetesAuditLogsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationKubernetesAuditLogsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoEnable(value: Boolean): Self = StObject.set(x, "AutoEnable", value.asInstanceOf[js.Any])
   }

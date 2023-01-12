@@ -20,7 +20,8 @@ object ReplaceOne {
     __obj.asInstanceOf[ReplaceOne[TSchema]]
   }
   
-  extension [Self <: ReplaceOne[?], TSchema /* <: Document */](x: Self & ReplaceOne[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceOne[?], TSchema /* <: Document */] (val x: Self & ReplaceOne[TSchema]) extends AnyVal {
     
     inline def setReplaceOne(value: ReplaceOneModel[TSchema]): Self = StObject.set(x, "replaceOne", value.asInstanceOf[js.Any])
   }

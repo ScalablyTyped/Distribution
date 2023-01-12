@@ -18,7 +18,8 @@ object FinalizeDeviceClaimResponse {
     __obj.asInstanceOf[FinalizeDeviceClaimResponse]
   }
   
-  extension [Self <: FinalizeDeviceClaimResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalizeDeviceClaimResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: string): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

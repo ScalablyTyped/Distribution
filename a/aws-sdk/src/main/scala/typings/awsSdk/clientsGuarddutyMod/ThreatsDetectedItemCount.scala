@@ -18,7 +18,8 @@ object ThreatsDetectedItemCount {
     __obj.asInstanceOf[ThreatsDetectedItemCount]
   }
   
-  extension [Self <: ThreatsDetectedItemCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreatsDetectedItemCount] (val x: Self) extends AnyVal {
     
     inline def setFiles(value: Integer): Self = StObject.set(x, "Files", value.asInstanceOf[js.Any])
     

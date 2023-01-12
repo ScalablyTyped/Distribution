@@ -15,7 +15,8 @@ object COUNTBLANK {
     __obj.asInstanceOf[COUNTBLANK]
   }
   
-  extension [Self <: COUNTBLANK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COUNTBLANK] (val x: Self) extends AnyVal {
     
     inline def setCOUNTBLANK(value: ExpandRanges): Self = StObject.set(x, "COUNTBLANK", value.asInstanceOf[js.Any])
   }

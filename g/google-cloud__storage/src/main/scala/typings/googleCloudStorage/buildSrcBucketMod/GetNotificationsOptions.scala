@@ -15,7 +15,8 @@ object GetNotificationsOptions {
     __obj.asInstanceOf[GetNotificationsOptions]
   }
   
-  extension [Self <: GetNotificationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationsOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

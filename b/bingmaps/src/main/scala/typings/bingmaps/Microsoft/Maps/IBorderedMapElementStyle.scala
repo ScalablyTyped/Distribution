@@ -30,7 +30,8 @@ object IBorderedMapElementStyle {
     __obj.asInstanceOf[IBorderedMapElementStyle]
   }
   
-  extension [Self <: IBorderedMapElementStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBorderedMapElementStyle] (val x: Self) extends AnyVal {
     
     inline def setBorderOutlineColor(value: String): Self = StObject.set(x, "borderOutlineColor", value.asInstanceOf[js.Any])
     

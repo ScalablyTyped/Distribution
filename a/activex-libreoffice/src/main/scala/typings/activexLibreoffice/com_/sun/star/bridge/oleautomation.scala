@@ -66,7 +66,8 @@ object oleautomation {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
@@ -94,7 +95,8 @@ object oleautomation {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
@@ -128,7 +130,8 @@ object oleautomation {
       __obj.asInstanceOf[Decimal]
     }
     
-    extension [Self <: Decimal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
       
       inline def setHighValue(value: Double): Self = StObject.set(x, "HighValue", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object oleautomation {
       __obj.asInstanceOf[NamedArgument]
     }
     
-    extension [Self <: NamedArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedArgument] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object oleautomation {
       __obj.asInstanceOf[PropertyPutArgument]
     }
     
-    extension [Self <: PropertyPutArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyPutArgument] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
@@ -237,7 +242,8 @@ object oleautomation {
       __obj.asInstanceOf[SCode]
     }
     
-    extension [Self <: SCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCode] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }

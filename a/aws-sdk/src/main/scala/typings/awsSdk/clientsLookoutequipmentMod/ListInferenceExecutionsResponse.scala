@@ -23,7 +23,8 @@ object ListInferenceExecutionsResponse {
     __obj.asInstanceOf[ListInferenceExecutionsResponse]
   }
   
-  extension [Self <: ListInferenceExecutionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInferenceExecutionsResponse] (val x: Self) extends AnyVal {
     
     inline def setInferenceExecutionSummaries(value: InferenceExecutionSummaries): Self = StObject.set(x, "InferenceExecutionSummaries", value.asInstanceOf[js.Any])
     

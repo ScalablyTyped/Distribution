@@ -19,7 +19,8 @@ object IClientEventsSubscribeRequest {
     __obj.asInstanceOf[IClientEventsSubscribeRequest]
   }
   
-  extension [Self <: IClientEventsSubscribeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEventsSubscribeRequest] (val x: Self) extends AnyVal {
     
     inline def setLastKnownBlockIds(value: js.Array[String]): Self = StObject.set(x, "lastKnownBlockIds", value.asInstanceOf[js.Any])
     

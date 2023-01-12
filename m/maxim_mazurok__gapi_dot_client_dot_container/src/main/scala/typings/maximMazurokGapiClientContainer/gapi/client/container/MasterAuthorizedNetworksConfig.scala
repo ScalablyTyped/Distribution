@@ -19,7 +19,8 @@ object MasterAuthorizedNetworksConfig {
     __obj.asInstanceOf[MasterAuthorizedNetworksConfig]
   }
   
-  extension [Self <: MasterAuthorizedNetworksConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasterAuthorizedNetworksConfig] (val x: Self) extends AnyVal {
     
     inline def setCidrBlocks(value: js.Array[CidrBlock]): Self = StObject.set(x, "cidrBlocks", value.asInstanceOf[js.Any])
     

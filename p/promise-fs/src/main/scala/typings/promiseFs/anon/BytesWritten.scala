@@ -18,7 +18,8 @@ object BytesWritten {
     __obj.asInstanceOf[BytesWritten[TBuffer]]
   }
   
-  extension [Self <: BytesWritten[?], TBuffer /* <: ArrayBufferView */](x: Self & BytesWritten[TBuffer]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesWritten[?], TBuffer /* <: ArrayBufferView */] (val x: Self & BytesWritten[TBuffer]) extends AnyVal {
     
     inline def setBuffer(value: TBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

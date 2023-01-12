@@ -850,7 +850,8 @@ object ComponentColorTokens {
     __obj.asInstanceOf[ComponentColorTokens]
   }
   
-  extension [Self <: ComponentColorTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentColorTokens] (val x: Self) extends AnyVal {
     
     inline def setBannerActionHighInfo(value: String): Self = StObject.set(x, "bannerActionHighInfo", value.asInstanceOf[js.Any])
     

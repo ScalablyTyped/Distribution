@@ -48,7 +48,8 @@ object Webhook {
     __obj.asInstanceOf[Webhook]
   }
   
-  extension [Self <: Webhook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
     
     inline def setBranchFilter(value: String): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     

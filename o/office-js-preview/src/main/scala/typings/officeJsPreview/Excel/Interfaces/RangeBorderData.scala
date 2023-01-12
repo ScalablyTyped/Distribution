@@ -82,7 +82,8 @@ object RangeBorderData {
     __obj.asInstanceOf[RangeBorderData]
   }
   
-  extension [Self <: RangeBorderData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeBorderData] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

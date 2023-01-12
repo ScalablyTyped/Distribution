@@ -26,7 +26,8 @@ object WEBGLColorBufferFloat {
     __obj.asInstanceOf[WEBGLColorBufferFloat]
   }
   
-  extension [Self <: WEBGLColorBufferFloat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WEBGLColorBufferFloat] (val x: Self) extends AnyVal {
     
     inline def setFRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT(value: GLenum): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT", value.asInstanceOf[js.Any])
     

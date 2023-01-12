@@ -22,7 +22,8 @@ object DoubleVerifyVideoViewability {
     __obj.asInstanceOf[DoubleVerifyVideoViewability]
   }
   
-  extension [Self <: DoubleVerifyVideoViewability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleVerifyVideoViewability] (val x: Self) extends AnyVal {
     
     inline def setPlayerImpressionRate(value: String): Self = StObject.set(x, "playerImpressionRate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CustomPropertyCheckbox {
     __obj.asInstanceOf[CustomPropertyCheckbox]
   }
   
-  extension [Self <: CustomPropertyCheckbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyCheckbox] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

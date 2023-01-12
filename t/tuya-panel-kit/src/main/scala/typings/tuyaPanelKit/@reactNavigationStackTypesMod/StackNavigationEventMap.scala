@@ -46,7 +46,8 @@ object StackNavigationEventMap {
     __obj.asInstanceOf[StackNavigationEventMap]
   }
   
-  extension [Self <: StackNavigationEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackNavigationEventMap] (val x: Self) extends AnyVal {
     
     inline def setGestureCancel(value: Data): Self = StObject.set(x, "gestureCancel", value.asInstanceOf[js.Any])
     

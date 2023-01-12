@@ -20,7 +20,8 @@ object GetParametersPathCommitsha {
     __obj.asInstanceOf[GetParametersPathCommitsha]
   }
   
-  extension [Self <: GetParametersPathCommitsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersPathCommitsha] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersPathCommitsha): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object AudioNode {
     __obj.asInstanceOf[AudioNode]
   }
   
-  extension [Self <: AudioNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioNode] (val x: Self) extends AnyVal {
     
     inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     

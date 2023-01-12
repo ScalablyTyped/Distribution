@@ -28,7 +28,8 @@ object ConnectNulls {
     __obj.asInstanceOf[ConnectNulls]
   }
   
-  extension [Self <: ConnectNulls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectNulls] (val x: Self) extends AnyVal {
     
     inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
     

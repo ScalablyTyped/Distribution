@@ -139,7 +139,8 @@ object BaseWidgetAnnotationConfig {
     __obj.asInstanceOf[BaseWidgetAnnotationConfig]
   }
   
-  extension [Self <: BaseWidgetAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWidgetAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowDragging(value: Boolean): Self = StObject.set(x, "allowDragging", value.asInstanceOf[js.Any])
     

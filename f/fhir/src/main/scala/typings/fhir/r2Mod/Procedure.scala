@@ -149,7 +149,8 @@ object Procedure {
     __obj.asInstanceOf[Procedure]
   }
   
-  extension [Self <: Procedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
     
     inline def setBodySite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     

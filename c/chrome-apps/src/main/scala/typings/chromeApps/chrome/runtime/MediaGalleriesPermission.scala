@@ -19,7 +19,8 @@ object MediaGalleriesPermission {
     __obj.asInstanceOf[MediaGalleriesPermission]
   }
   
-  extension [Self <: MediaGalleriesPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaGalleriesPermission] (val x: Self) extends AnyVal {
     
     inline def setMediaGalleries(value: js.Array[read_ | allAutoDetected]): Self = StObject.set(x, "mediaGalleries", value.asInstanceOf[js.Any])
     

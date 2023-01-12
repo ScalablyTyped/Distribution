@@ -21,7 +21,8 @@ object MapDataDto {
     __obj.asInstanceOf[MapDataDto]
   }
   
-  extension [Self <: MapDataDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDataDto] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[StringDictionary[MapDetailsDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SecretReference {
     __obj.asInstanceOf[SecretReference]
   }
   
-  extension [Self <: SecretReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretReference] (val x: Self) extends AnyVal {
     
     inline def setFile(value: GID): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     

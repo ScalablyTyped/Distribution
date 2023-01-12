@@ -18,7 +18,8 @@ object DeleteResponse {
     __obj.asInstanceOf[DeleteResponse]
   }
   
-  extension [Self <: DeleteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskID(value: Double): Self = StObject.set(x, "taskID", value.asInstanceOf[js.Any])
   }

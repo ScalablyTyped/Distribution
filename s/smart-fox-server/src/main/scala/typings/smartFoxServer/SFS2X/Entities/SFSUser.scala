@@ -145,7 +145,8 @@ object SFSUser {
     __obj.asInstanceOf[SFSUser]
   }
   
-  extension [Self <: SFSUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFSUser] (val x: Self) extends AnyVal {
     
     inline def setAoiEntryPoint(value: Vec3D): Self = StObject.set(x, "aoiEntryPoint", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Avg]
     }
     
-    extension [Self <: Avg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avg] (val x: Self) extends AnyVal {
       
       inline def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     }
@@ -77,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Min]
     }
     
-    extension [Self <: Min](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Min] (val x: Self) extends AnyVal {
       
       inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
@@ -96,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Stdev]
     }
     
-    extension [Self <: Stdev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stdev] (val x: Self) extends AnyVal {
       
       inline def setStdev(value: String): Self = StObject.set(x, "stdev", value.asInstanceOf[js.Any])
     }
@@ -115,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Sum]
     }
     
-    extension [Self <: Sum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sum] (val x: Self) extends AnyVal {
       
       inline def setSum(value: String): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
     }
@@ -135,7 +141,8 @@ object anon {
       __obj.asInstanceOf[Var]
     }
     
-    extension [Self <: Var](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Var] (val x: Self) extends AnyVal {
       
       inline def setVar(value: String): Self = StObject.set(x, "var", value.asInstanceOf[js.Any])
     }

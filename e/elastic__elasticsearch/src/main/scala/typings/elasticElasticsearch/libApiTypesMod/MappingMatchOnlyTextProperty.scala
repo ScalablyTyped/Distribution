@@ -26,7 +26,8 @@ object MappingMatchOnlyTextProperty {
     __obj.asInstanceOf[MappingMatchOnlyTextProperty]
   }
   
-  extension [Self <: MappingMatchOnlyTextProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingMatchOnlyTextProperty] (val x: Self) extends AnyVal {
     
     inline def setCopy_to(value: Fields): Self = StObject.set(x, "copy_to", value.asInstanceOf[js.Any])
     

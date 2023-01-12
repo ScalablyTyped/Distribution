@@ -365,7 +365,8 @@ object sapFProductSwitchMod {
       __obj.asInstanceOf[ProductSwitchSettings]
     }
     
-    extension [Self <: ProductSwitchSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitchSettings] (val x: Self) extends AnyVal {
       
       inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       

@@ -28,7 +28,8 @@ object ConnectionInvokeOptions {
     __obj.asInstanceOf[ConnectionInvokeOptions]
   }
   
-  extension [Self <: ConnectionInvokeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionInvokeOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

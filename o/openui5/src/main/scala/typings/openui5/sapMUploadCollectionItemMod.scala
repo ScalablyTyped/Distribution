@@ -1324,7 +1324,8 @@ object sapMUploadCollectionItemMod {
       __obj.asInstanceOf[UploadCollectionItemSettings]
     }
     
-    extension [Self <: UploadCollectionItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollectionItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelForPicture(value: String | PropertyBindingInfo): Self = StObject.set(x, "ariaLabelForPicture", value.asInstanceOf[js.Any])
       

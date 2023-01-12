@@ -18,7 +18,8 @@ object FindPlaceFromTextResponse {
     __obj.asInstanceOf[FindPlaceFromTextResponse]
   }
   
-  extension [Self <: FindPlaceFromTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindPlaceFromTextResponse] (val x: Self) extends AnyVal {
     
     inline def setCandidates(value: js.Array[PartialPlaceSearchResult]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SqlAlias {
     __obj.asInstanceOf[SqlAlias]
   }
   
-  extension [Self <: SqlAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlAlias] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: EnclosedInStringPropertyWithQuote): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

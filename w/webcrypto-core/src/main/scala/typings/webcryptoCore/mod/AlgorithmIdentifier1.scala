@@ -17,7 +17,8 @@ object AlgorithmIdentifier1 {
     __obj.asInstanceOf[AlgorithmIdentifier1]
   }
   
-  extension [Self <: AlgorithmIdentifier1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmIdentifier1] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListAWSServiceAccessForOrganizationResponse {
     __obj.asInstanceOf[ListAWSServiceAccessForOrganizationResponse]
   }
   
-  extension [Self <: ListAWSServiceAccessForOrganizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAWSServiceAccessForOrganizationResponse] (val x: Self) extends AnyVal {
     
     inline def setEnabledServicePrincipals(value: EnabledServicePrincipals): Self = StObject.set(x, "EnabledServicePrincipals", value.asInstanceOf[js.Any])
     

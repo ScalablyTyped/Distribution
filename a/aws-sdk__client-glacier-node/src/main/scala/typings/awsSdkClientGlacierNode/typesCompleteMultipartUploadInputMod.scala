@@ -66,7 +66,8 @@ object typesCompleteMultipartUploadInputMod {
       __obj.asInstanceOf[CompleteMultipartUploadInput]
     }
     
-    extension [Self <: CompleteMultipartUploadInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteMultipartUploadInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object distTypesShapesMod {
       __obj.asInstanceOf[RetryableTrait]
     }
     
-    extension [Self <: RetryableTrait](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryableTrait] (val x: Self) extends AnyVal {
       
       inline def setThrottling(value: Boolean): Self = StObject.set(x, "throttling", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object distTypesShapesMod {
       __obj.asInstanceOf[SdkError]
     }
     
-    extension [Self <: SdkError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SdkError] (val x: Self) extends AnyVal {
       
       inline def set$fault(value: client | server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object distTypesShapesMod {
       __obj.asInstanceOf[SmithyException]
     }
     
-    extension [Self <: SmithyException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmithyException] (val x: Self) extends AnyVal {
       
       inline def set$fault(value: client | server): Self = StObject.set(x, "$fault", value.asInstanceOf[js.Any])
       

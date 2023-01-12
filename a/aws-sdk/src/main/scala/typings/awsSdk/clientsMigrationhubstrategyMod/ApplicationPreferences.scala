@@ -18,7 +18,8 @@ object ApplicationPreferences {
     __obj.asInstanceOf[ApplicationPreferences]
   }
   
-  extension [Self <: ApplicationPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationPreferences] (val x: Self) extends AnyVal {
     
     inline def setManagementPreference(value: ManagementPreference): Self = StObject.set(x, "managementPreference", value.asInstanceOf[js.Any])
     

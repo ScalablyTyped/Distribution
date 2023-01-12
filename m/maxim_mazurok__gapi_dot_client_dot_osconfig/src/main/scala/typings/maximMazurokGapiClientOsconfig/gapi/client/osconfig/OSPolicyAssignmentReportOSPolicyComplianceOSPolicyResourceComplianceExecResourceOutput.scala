@@ -16,7 +16,8 @@ object OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecR
     __obj.asInstanceOf[OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput]
   }
   
-  extension [Self <: OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentReportOSPolicyComplianceOSPolicyResourceComplianceExecResourceOutput] (val x: Self) extends AnyVal {
     
     inline def setEnforcementOutput(value: String): Self = StObject.set(x, "enforcementOutput", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object Color_ {
     __obj.asInstanceOf[Color_]
   }
   
-  extension [Self <: Color_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Color_] (val x: Self) extends AnyVal {
     
     inline def setAncillary(value: String): Self = StObject.set(x, "ancillary", value.asInstanceOf[js.Any])
     

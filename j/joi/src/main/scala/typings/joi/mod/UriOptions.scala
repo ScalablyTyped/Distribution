@@ -46,7 +46,8 @@ object UriOptions {
     __obj.asInstanceOf[UriOptions]
   }
   
-  extension [Self <: UriOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowQuerySquareBrackets(value: Boolean): Self = StObject.set(x, "allowQuerySquareBrackets", value.asInstanceOf[js.Any])
     

@@ -501,7 +501,8 @@ object tieredmenuTieredmenuMod {
       __obj.asInstanceOf[TieredMenuProps]
     }
     
-    extension [Self <: TieredMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TieredMenuProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

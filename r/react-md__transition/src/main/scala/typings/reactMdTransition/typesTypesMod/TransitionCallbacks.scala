@@ -61,7 +61,8 @@ object TransitionCallbacks {
     __obj.asInstanceOf[TransitionCallbacks]
   }
   
-  extension [Self <: TransitionCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     

@@ -22,7 +22,8 @@ object IEquippableComponent {
     __obj.asInstanceOf[IEquippableComponent]
   }
   
-  extension [Self <: IEquippableComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEquippableComponent] (val x: Self) extends AnyVal {
     
     inline def setSlots(value: js.Array[Accepteditems]): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     

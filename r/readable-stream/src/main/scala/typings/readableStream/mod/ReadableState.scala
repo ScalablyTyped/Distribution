@@ -76,7 +76,8 @@ object ReadableState {
     __obj.asInstanceOf[ReadableState]
   }
   
-  extension [Self <: ReadableState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableState] (val x: Self) extends AnyVal {
     
     inline def setAwaitDrain(value: Double): Self = StObject.set(x, "awaitDrain", value.asInstanceOf[js.Any])
     

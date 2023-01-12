@@ -23,7 +23,8 @@ object buildKeyOperationMod {
       __obj.asInstanceOf[KeyOperation]
     }
     
-    extension [Self <: KeyOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyOperation] (val x: Self) extends AnyVal {
       
       inline def setOncomplete(value: Event => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
       

@@ -50,7 +50,8 @@ object ApiApplication {
     __obj.asInstanceOf[ApiApplication]
   }
   
-  extension [Self <: ApiApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiApplication] (val x: Self) extends AnyVal {
     
     inline def setAcceptMappedClaims(value: NullableOption[Boolean]): Self = StObject.set(x, "acceptMappedClaims", value.asInstanceOf[js.Any])
     

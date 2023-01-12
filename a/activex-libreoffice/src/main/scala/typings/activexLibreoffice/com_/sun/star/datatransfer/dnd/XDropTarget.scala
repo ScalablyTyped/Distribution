@@ -85,7 +85,8 @@ object XDropTarget {
     __obj.asInstanceOf[XDropTarget]
   }
   
-  extension [Self <: XDropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDropTarget] (val x: Self) extends AnyVal {
     
     inline def setAddDropTargetListener(value: XDropTargetListener => Unit): Self = StObject.set(x, "addDropTargetListener", js.Any.fromFunction1(value))
     

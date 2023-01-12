@@ -16,7 +16,8 @@ object PickanycanvasElement {
     __obj.asInstanceOf[PickanycanvasElement]
   }
   
-  extension [Self <: PickanycanvasElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickanycanvasElement] (val x: Self) extends AnyVal {
     
     inline def setCanvasElement(value: Any): Self = StObject.set(x, "canvasElement", value.asInstanceOf[js.Any])
     

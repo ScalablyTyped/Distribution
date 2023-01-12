@@ -55,7 +55,8 @@ object DaylightVisibleElements {
     __obj.asInstanceOf[DaylightVisibleElements]
   }
   
-  extension [Self <: DaylightVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DaylightVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setDatePicker(value: Boolean): Self = StObject.set(x, "datePicker", value.asInstanceOf[js.Any])
     

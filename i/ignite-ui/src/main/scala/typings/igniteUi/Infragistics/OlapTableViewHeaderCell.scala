@@ -74,7 +74,8 @@ object OlapTableViewHeaderCell {
     __obj.asInstanceOf[OlapTableViewHeaderCell]
   }
   
-  extension [Self <: OlapTableViewHeaderCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapTableViewHeaderCell] (val x: Self) extends AnyVal {
     
     inline def setAxisName(value: () => String): Self = StObject.set(x, "axisName", js.Any.fromFunction0(value))
     

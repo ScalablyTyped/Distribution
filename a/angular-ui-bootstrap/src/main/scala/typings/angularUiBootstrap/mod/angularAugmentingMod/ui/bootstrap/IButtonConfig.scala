@@ -23,7 +23,8 @@ object IButtonConfig {
     __obj.asInstanceOf[IButtonConfig]
   }
   
-  extension [Self <: IButtonConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IButtonConfig] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object RemoveThingFromThingGroupRequest {
     __obj.asInstanceOf[RemoveThingFromThingGroupRequest]
   }
   
-  extension [Self <: RemoveThingFromThingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveThingFromThingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setThingArn(value: ThingArn): Self = StObject.set(x, "thingArn", value.asInstanceOf[js.Any])
     

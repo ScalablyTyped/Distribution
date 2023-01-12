@@ -20,7 +20,8 @@ object distSrcMainMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setCUCUMBER_MESSAGES(value: js.Array[Envelope]): Self = StObject.set(x, "CUCUMBER_MESSAGES", value.asInstanceOf[js.Any])
         

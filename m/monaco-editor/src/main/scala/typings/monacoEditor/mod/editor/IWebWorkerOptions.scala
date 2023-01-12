@@ -40,7 +40,8 @@ object IWebWorkerOptions {
     __obj.asInstanceOf[IWebWorkerOptions]
   }
   
-  extension [Self <: IWebWorkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebWorkerOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateData(value: Any): Self = StObject.set(x, "createData", value.asInstanceOf[js.Any])
     

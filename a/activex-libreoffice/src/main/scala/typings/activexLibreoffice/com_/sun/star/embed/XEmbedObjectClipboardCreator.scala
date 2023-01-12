@@ -45,7 +45,8 @@ object XEmbedObjectClipboardCreator {
     __obj.asInstanceOf[XEmbedObjectClipboardCreator]
   }
   
-  extension [Self <: XEmbedObjectClipboardCreator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbedObjectClipboardCreator] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceInitFromClipboard(value: (XStorage, String, SeqEquiv[PropertyValue]) => InsertedObjectInfo): Self = StObject.set(x, "createInstanceInitFromClipboard", js.Any.fromFunction3(value))
   }

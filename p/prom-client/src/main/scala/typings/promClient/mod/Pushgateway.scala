@@ -59,7 +59,8 @@ object Pushgateway {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setGroupings(value: StringDictionary[String]): Self = StObject.set(x, "groupings", value.asInstanceOf[js.Any])
       

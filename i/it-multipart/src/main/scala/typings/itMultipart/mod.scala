@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Part]
     }
     
-    extension [Self <: Part](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Part] (val x: Self) extends AnyVal {
       
       inline def setBody(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

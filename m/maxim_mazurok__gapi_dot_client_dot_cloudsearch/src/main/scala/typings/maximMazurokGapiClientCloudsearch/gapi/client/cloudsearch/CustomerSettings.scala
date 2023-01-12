@@ -19,7 +19,8 @@ object CustomerSettings {
     __obj.asInstanceOf[CustomerSettings]
   }
   
-  extension [Self <: CustomerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerSettings] (val x: Self) extends AnyVal {
     
     inline def setAuditLoggingSettings(value: AuditLoggingSettings): Self = StObject.set(x, "auditLoggingSettings", value.asInstanceOf[js.Any])
     

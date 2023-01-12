@@ -47,7 +47,8 @@ object distSrcAdvertiseMod {
       __obj.asInstanceOf[Advert]
     }
     
-    extension [Self <: Advert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Advert] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: () => js.Promise[Any]): Self = StObject.set(x, "details", js.Any.fromFunction0(value))
       

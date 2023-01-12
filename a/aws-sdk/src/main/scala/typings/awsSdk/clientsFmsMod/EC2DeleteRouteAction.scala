@@ -38,7 +38,8 @@ object EC2DeleteRouteAction {
     __obj.asInstanceOf[EC2DeleteRouteAction]
   }
   
-  extension [Self <: EC2DeleteRouteAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2DeleteRouteAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: LengthBoundedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

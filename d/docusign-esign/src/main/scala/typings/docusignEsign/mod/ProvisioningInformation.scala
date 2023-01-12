@@ -33,7 +33,8 @@ object ProvisioningInformation {
     __obj.asInstanceOf[ProvisioningInformation]
   }
   
-  extension [Self <: ProvisioningInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningInformation] (val x: Self) extends AnyVal {
     
     inline def setDefaultConnectionId(value: String): Self = StObject.set(x, "defaultConnectionId", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object HyperlinkLoadOptions {
     __obj.asInstanceOf[HyperlinkLoadOptions]
   }
   
-  extension [Self <: HyperlinkLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperlinkLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartReportCreationInput {
     __obj.asInstanceOf[StartReportCreationInput]
   }
   
-  extension [Self <: StartReportCreationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartReportCreationInput] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
   }

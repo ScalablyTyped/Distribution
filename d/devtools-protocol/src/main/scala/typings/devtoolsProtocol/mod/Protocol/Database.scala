@@ -17,7 +17,8 @@ object Database {
       __obj.asInstanceOf[AddDatabaseEvent]
     }
     
-    extension [Self <: AddDatabaseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddDatabaseEvent] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: typings.devtoolsProtocol.mod.Protocol.Database.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object Database {
       __obj.asInstanceOf[typings.devtoolsProtocol.mod.Protocol.Database.Database]
     }
     
-    extension [Self <: typings.devtoolsProtocol.mod.Protocol.Database.Database](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.devtoolsProtocol.mod.Protocol.Database.Database] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object Database {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setCode(value: integer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object Database {
       __obj.asInstanceOf[ExecuteSQLRequest]
     }
     
-    extension [Self <: ExecuteSQLRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteSQLRequest] (val x: Self) extends AnyVal {
       
       inline def setDatabaseId(value: DatabaseId): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object Database {
       __obj.asInstanceOf[ExecuteSQLResponse]
     }
     
-    extension [Self <: ExecuteSQLResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteSQLResponse] (val x: Self) extends AnyVal {
       
       inline def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object Database {
       __obj.asInstanceOf[GetDatabaseTableNamesRequest]
     }
     
-    extension [Self <: GetDatabaseTableNamesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDatabaseTableNamesRequest] (val x: Self) extends AnyVal {
       
       inline def setDatabaseId(value: DatabaseId): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     }
@@ -177,7 +183,8 @@ object Database {
       __obj.asInstanceOf[GetDatabaseTableNamesResponse]
     }
     
-    extension [Self <: GetDatabaseTableNamesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDatabaseTableNamesResponse] (val x: Self) extends AnyVal {
       
       inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
       

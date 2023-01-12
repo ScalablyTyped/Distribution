@@ -18,7 +18,8 @@ object GetInvitationsCountResponse {
     __obj.asInstanceOf[GetInvitationsCountResponse]
   }
   
-  extension [Self <: GetInvitationsCountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInvitationsCountResponse] (val x: Self) extends AnyVal {
     
     inline def setInvitationsCount(value: long): Self = StObject.set(x, "invitationsCount", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MetricsAndOperator {
     __obj.asInstanceOf[MetricsAndOperator]
   }
   
-  extension [Self <: MetricsAndOperator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsAndOperator] (val x: Self) extends AnyVal {
     
     inline def setAccessPointArn(value: AccessPointArn): Self = StObject.set(x, "AccessPointArn", value.asInstanceOf[js.Any])
     

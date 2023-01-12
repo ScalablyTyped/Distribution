@@ -26,7 +26,8 @@ object Certainty {
     __obj.asInstanceOf[Certainty]
   }
   
-  extension [Self <: Certainty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Certainty] (val x: Self) extends AnyVal {
     
     inline def setCertainty(value: String): Self = StObject.set(x, "certainty", value.asInstanceOf[js.Any])
     

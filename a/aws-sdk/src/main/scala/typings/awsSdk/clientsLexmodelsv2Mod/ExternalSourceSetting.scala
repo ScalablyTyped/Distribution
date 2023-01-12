@@ -18,7 +18,8 @@ object ExternalSourceSetting {
     __obj.asInstanceOf[ExternalSourceSetting]
   }
   
-  extension [Self <: ExternalSourceSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalSourceSetting] (val x: Self) extends AnyVal {
     
     inline def setGrammarSlotTypeSetting(value: GrammarSlotTypeSetting): Self = StObject.set(x, "grammarSlotTypeSetting", value.asInstanceOf[js.Any])
     

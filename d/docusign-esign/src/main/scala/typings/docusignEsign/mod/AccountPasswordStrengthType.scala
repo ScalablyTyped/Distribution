@@ -18,7 +18,8 @@ object AccountPasswordStrengthType {
     __obj.asInstanceOf[AccountPasswordStrengthType]
   }
   
-  extension [Self <: AccountPasswordStrengthType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountPasswordStrengthType] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[AccountPasswordStrengthTypeOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

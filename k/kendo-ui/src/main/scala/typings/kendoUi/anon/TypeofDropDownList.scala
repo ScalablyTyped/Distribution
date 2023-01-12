@@ -20,7 +20,8 @@ object TypeofDropDownList {
     __obj.asInstanceOf[TypeofDropDownList]
   }
   
-  extension [Self <: TypeofDropDownList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDropDownList] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => DropDownList): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object PolicyBinding {
     __obj.asInstanceOf[PolicyBinding]
   }
   
-  extension [Self <: PolicyBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyBinding] (val x: Self) extends AnyVal {
     
     inline def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     

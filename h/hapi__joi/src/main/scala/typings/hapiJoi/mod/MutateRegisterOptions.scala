@@ -17,7 +17,8 @@ object MutateRegisterOptions {
     __obj.asInstanceOf[MutateRegisterOptions]
   }
   
-  extension [Self <: MutateRegisterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutateRegisterOptions] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

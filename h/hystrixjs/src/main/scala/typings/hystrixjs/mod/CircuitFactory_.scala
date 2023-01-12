@@ -23,7 +23,8 @@ object CircuitFactory_ {
     __obj.asInstanceOf[CircuitFactory_]
   }
   
-  extension [Self <: CircuitFactory_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircuitFactory_] (val x: Self) extends AnyVal {
     
     inline def setGetCache(value: () => js.Array[CircuitBreaker]): Self = StObject.set(x, "getCache", js.Any.fromFunction0(value))
     

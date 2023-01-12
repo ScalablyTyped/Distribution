@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaAccessMetric {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccessMetric]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccessMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccessMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

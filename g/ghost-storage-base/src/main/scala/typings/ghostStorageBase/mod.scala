@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mod {
       __obj.asInstanceOf[ReadOptions]
     }
     
-    extension [Self <: ReadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptions] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

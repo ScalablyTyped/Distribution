@@ -22,7 +22,8 @@ object PartialOpenBluetoothAdapt {
     __obj.asInstanceOf[PartialOpenBluetoothAdapt]
   }
   
-  extension [Self <: PartialOpenBluetoothAdapt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOpenBluetoothAdapt] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

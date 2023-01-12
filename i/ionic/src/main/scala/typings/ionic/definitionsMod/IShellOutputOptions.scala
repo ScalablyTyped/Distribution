@@ -21,7 +21,8 @@ object IShellOutputOptions {
     __obj.asInstanceOf[IShellOutputOptions]
   }
   
-  extension [Self <: IShellOutputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellOutputOptions] (val x: Self) extends AnyVal {
     
     inline def setFatalOnError(value: Boolean): Self = StObject.set(x, "fatalOnError", value.asInstanceOf[js.Any])
     

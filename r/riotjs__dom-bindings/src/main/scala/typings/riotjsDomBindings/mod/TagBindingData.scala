@@ -26,7 +26,8 @@ object TagBindingData {
     __obj.asInstanceOf[TagBindingData[Scope]]
   }
   
-  extension [Self <: TagBindingData[?], Scope](x: Self & TagBindingData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagBindingData[?], Scope] (val x: Self & TagBindingData[Scope]) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeExpressionData[Scope]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

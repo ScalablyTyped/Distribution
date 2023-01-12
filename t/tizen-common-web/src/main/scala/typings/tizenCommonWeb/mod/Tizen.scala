@@ -681,7 +681,8 @@ object Tizen {
     __obj.asInstanceOf[Tizen]
   }
   
-  extension [Self <: Tizen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tizen] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: AccountManager): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

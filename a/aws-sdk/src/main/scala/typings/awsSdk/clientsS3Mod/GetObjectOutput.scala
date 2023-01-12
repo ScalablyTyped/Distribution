@@ -190,7 +190,8 @@ object GetObjectOutput {
     __obj.asInstanceOf[GetObjectOutput]
   }
   
-  extension [Self <: GetObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setAcceptRanges(value: AcceptRanges): Self = StObject.set(x, "AcceptRanges", value.asInstanceOf[js.Any])
     

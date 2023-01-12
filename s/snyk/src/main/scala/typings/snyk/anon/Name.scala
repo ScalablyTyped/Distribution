@@ -24,7 +24,8 @@ object Name {
     __obj.asInstanceOf[Name]
   }
   
-  extension [Self <: Name](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

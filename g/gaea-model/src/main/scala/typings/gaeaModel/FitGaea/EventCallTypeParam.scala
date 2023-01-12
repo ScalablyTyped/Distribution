@@ -19,7 +19,8 @@ object EventCallTypeParam {
     __obj.asInstanceOf[EventCallTypeParam]
   }
   
-  extension [Self <: EventCallTypeParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCallTypeParam] (val x: Self) extends AnyVal {
     
     inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     

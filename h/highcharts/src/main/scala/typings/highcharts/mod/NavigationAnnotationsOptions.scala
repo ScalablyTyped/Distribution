@@ -108,7 +108,8 @@ object NavigationAnnotationsOptions {
     __obj.asInstanceOf[NavigationAnnotationsOptions]
   }
   
-  extension [Self <: NavigationAnnotationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationAnnotationsOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | NavigationAnnotationsAnimationOptions | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

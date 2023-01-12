@@ -53,7 +53,8 @@ object CreateUsageLimitMessage {
     __obj.asInstanceOf[CreateUsageLimitMessage]
   }
   
-  extension [Self <: CreateUsageLimitMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUsageLimitMessage] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Long): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

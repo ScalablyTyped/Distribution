@@ -35,7 +35,8 @@ object ContextHeadersObserveParamsReportProgressResponseType {
     __obj.asInstanceOf[ContextHeadersObserveParamsReportProgressResponseType]
   }
   
-  extension [Self <: ContextHeadersObserveParamsReportProgressResponseType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextHeadersObserveParamsReportProgressResponseType] (val x: Self) extends AnyVal {
     
     inline def setContext(value: HttpContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

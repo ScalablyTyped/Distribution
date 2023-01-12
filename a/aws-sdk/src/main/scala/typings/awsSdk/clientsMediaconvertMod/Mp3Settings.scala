@@ -38,7 +38,8 @@ object Mp3Settings {
     __obj.asInstanceOf[Mp3Settings]
   }
   
-  extension [Self <: Mp3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mp3Settings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: integerMin16000Max320000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DisablePointerEvents {
     __obj.asInstanceOf[DisablePointerEvents]
   }
   
-  extension [Self <: DisablePointerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisablePointerEvents] (val x: Self) extends AnyVal {
     
     inline def setDisablePointerEvents(value: Boolean): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object CreateTriggerRequest {
     __obj.asInstanceOf[CreateTriggerRequest]
   }
   
-  extension [Self <: CreateTriggerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTriggerRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

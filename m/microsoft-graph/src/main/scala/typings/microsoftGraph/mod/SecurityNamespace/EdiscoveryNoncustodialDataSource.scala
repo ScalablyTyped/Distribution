@@ -22,7 +22,8 @@ object EdiscoveryNoncustodialDataSource {
     __obj.asInstanceOf[EdiscoveryNoncustodialDataSource]
   }
   
-  extension [Self <: EdiscoveryNoncustodialDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdiscoveryNoncustodialDataSource] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: NullableOption[DataSource]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

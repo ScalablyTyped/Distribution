@@ -65,7 +65,8 @@ object IHttpProviderDefaults {
     __obj.asInstanceOf[IHttpProviderDefaults]
   }
   
-  extension [Self <: IHttpProviderDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHttpProviderDefaults] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

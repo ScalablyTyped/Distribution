@@ -22,7 +22,8 @@ object BiEngineStatistics {
     __obj.asInstanceOf[BiEngineStatistics]
   }
   
-  extension [Self <: BiEngineStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiEngineStatistics] (val x: Self) extends AnyVal {
     
     inline def setBiEngineMode(value: String): Self = StObject.set(x, "biEngineMode", value.asInstanceOf[js.Any])
     

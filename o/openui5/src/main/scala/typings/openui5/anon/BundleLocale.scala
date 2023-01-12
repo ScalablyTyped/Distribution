@@ -32,7 +32,8 @@ object BundleLocale {
     __obj.asInstanceOf[BundleLocale]
   }
   
-  extension [Self <: BundleLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleLocale] (val x: Self) extends AnyVal {
     
     inline def setBundleLocale(value: String): Self = StObject.set(x, "bundleLocale", value.asInstanceOf[js.Any])
     

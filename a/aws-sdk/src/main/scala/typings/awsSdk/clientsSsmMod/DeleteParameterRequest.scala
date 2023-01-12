@@ -18,7 +18,8 @@ object DeleteParameterRequest {
     __obj.asInstanceOf[DeleteParameterRequest]
   }
   
-  extension [Self <: DeleteParameterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParameterRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: PSParameterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

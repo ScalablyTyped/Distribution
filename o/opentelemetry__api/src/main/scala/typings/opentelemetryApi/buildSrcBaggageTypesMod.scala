@@ -61,7 +61,8 @@ object buildSrcBaggageTypesMod {
       __obj.asInstanceOf[Baggage]
     }
     
-    extension [Self <: Baggage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Baggage] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Baggage): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -95,7 +96,8 @@ object buildSrcBaggageTypesMod {
       __obj.asInstanceOf[BaggageEntry]
     }
     
-    extension [Self <: BaggageEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaggageEntry] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: BaggageEntryMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object buildSrcBaggageTypesMod {
       __obj.asInstanceOf[BaggageEntryMetadata]
     }
     
-    extension [Self <: BaggageEntryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaggageEntryMetadata] (val x: Self) extends AnyVal {
       
       inline def set__TYPE__(value: js.Symbol): Self = StObject.set(x, "__TYPE__", value.asInstanceOf[js.Any])
     }

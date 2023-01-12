@@ -273,7 +273,8 @@ object areasSettingsMod {
       __obj.asInstanceOf[AreasSettings]
     }
     
-    extension [Self <: AreasSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreasSettings] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

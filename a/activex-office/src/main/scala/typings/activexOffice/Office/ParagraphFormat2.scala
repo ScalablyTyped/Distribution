@@ -84,7 +84,8 @@ object ParagraphFormat2 {
     __obj.asInstanceOf[ParagraphFormat2]
   }
   
-  extension [Self <: ParagraphFormat2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphFormat2] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: MsoParagraphAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

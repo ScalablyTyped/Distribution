@@ -31,7 +31,8 @@ object PartialGroupCommon {
     __obj.asInstanceOf[PartialGroupCommon]
   }
   
-  extension [Self <: PartialGroupCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGroupCommon] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: OmitPermissionSetusergrou): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EosTxActionRequest {
     __obj.asInstanceOf[EosTxActionRequest]
   }
   
-  extension [Self <: EosTxActionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosTxActionRequest] (val x: Self) extends AnyVal {
     
     inline def setData_size(value: Double): Self = StObject.set(x, "data_size", value.asInstanceOf[js.Any])
     

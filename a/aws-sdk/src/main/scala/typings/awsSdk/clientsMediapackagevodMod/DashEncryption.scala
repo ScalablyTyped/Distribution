@@ -15,7 +15,8 @@ object DashEncryption {
     __obj.asInstanceOf[DashEncryption]
   }
   
-  extension [Self <: DashEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashEncryption] (val x: Self) extends AnyVal {
     
     inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }

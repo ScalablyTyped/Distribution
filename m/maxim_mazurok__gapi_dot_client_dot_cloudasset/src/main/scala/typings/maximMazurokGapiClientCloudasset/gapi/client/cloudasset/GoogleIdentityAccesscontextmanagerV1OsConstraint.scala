@@ -25,7 +25,8 @@ object GoogleIdentityAccesscontextmanagerV1OsConstraint {
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1OsConstraint]
   }
   
-  extension [Self <: GoogleIdentityAccesscontextmanagerV1OsConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1OsConstraint] (val x: Self) extends AnyVal {
     
     inline def setMinimumVersion(value: String): Self = StObject.set(x, "minimumVersion", value.asInstanceOf[js.Any])
     

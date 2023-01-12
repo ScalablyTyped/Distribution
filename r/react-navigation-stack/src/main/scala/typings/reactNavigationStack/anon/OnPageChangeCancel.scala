@@ -23,7 +23,8 @@ object OnPageChangeCancel {
     __obj.asInstanceOf[OnPageChangeCancel]
   }
   
-  extension [Self <: OnPageChangeCancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPageChangeCancel] (val x: Self) extends AnyVal {
     
     inline def setOnPageChangeCancel(value: () => Unit): Self = StObject.set(x, "onPageChangeCancel", js.Any.fromFunction0(value))
     

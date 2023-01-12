@@ -23,7 +23,8 @@ object ASPxClientVerticalGridBatchEditConfirmShowingEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditConfirmShowingEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridBatchEditConfirmShowingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridBatchEditConfirmShowingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
   }

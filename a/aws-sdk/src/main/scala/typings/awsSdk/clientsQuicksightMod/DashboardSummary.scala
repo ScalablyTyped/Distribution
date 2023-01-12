@@ -48,7 +48,8 @@ object DashboardSummary {
     __obj.asInstanceOf[DashboardSummary]
   }
   
-  extension [Self <: DashboardSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

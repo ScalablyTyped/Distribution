@@ -34,7 +34,8 @@ object TabTie {
     __obj.asInstanceOf[TabTie]
   }
   
-  extension [Self <: TabTie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabTie] (val x: Self) extends AnyVal {
     
     inline def setCreateHammeron(value: Firstindices => TabTie): Self = StObject.set(x, "createHammeron", js.Any.fromFunction1(value))
     

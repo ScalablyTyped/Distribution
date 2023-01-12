@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[AfterInjection]
     }
     
-    extension [Self <: AfterInjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterInjection] (val x: Self) extends AnyVal {
       
       inline def setAfterInjection(value: () => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction0(value))
       
@@ -108,7 +109,8 @@ object anon {
       __obj.asInstanceOf[BeforeInjection]
     }
     
-    extension [Self <: BeforeInjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeInjection] (val x: Self) extends AnyVal {
       
       inline def setAfterInjection(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[HasError]
     }
     
-    extension [Self <: HasError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       

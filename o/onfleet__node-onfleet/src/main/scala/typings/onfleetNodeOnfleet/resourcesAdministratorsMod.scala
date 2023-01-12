@@ -63,7 +63,8 @@ object resourcesAdministratorsMod {
       __obj.asInstanceOf[Admin]
     }
     
-    extension [Self <: Admin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Admin] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: CreateAdminProps => js.Promise[OnfleetAdmin]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -100,7 +101,8 @@ object resourcesAdministratorsMod {
       __obj.asInstanceOf[CreateAdminProps]
     }
     
-    extension [Self <: CreateAdminProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAdminProps] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object resourcesAdministratorsMod {
       __obj.asInstanceOf[OnfleetAdmin]
     }
     
-    extension [Self <: OnfleetAdmin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnfleetAdmin] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object resourcesAdministratorsMod {
       __obj.asInstanceOf[UpdateAdminProps]
     }
     
-    extension [Self <: UpdateAdminProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAdminProps] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

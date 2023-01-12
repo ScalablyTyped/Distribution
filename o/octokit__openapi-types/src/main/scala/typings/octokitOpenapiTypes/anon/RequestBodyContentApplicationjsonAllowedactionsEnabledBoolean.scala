@@ -17,7 +17,8 @@ object RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowedactionsEnabledBoolean] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `472`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

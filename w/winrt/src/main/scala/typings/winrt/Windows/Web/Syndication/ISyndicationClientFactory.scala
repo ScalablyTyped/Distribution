@@ -16,7 +16,8 @@ object ISyndicationClientFactory {
     __obj.asInstanceOf[ISyndicationClientFactory]
   }
   
-  extension [Self <: ISyndicationClientFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationClientFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSyndicationClient(value: PasswordCredential => SyndicationClient): Self = StObject.set(x, "createSyndicationClient", js.Any.fromFunction1(value))
   }

@@ -106,7 +106,8 @@ object libFactoriesSetterMod {
       __obj.asInstanceOf[SetterFactoryProps[V, A, C, P, TD]]
     }
     
-    extension [Self <: SetterFactoryProps[?, ?, ?, ?, ?], V, A, C, P, TD](x: Self & (SetterFactoryProps[V, A, C, P, TD])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetterFactoryProps[?, ?, ?, ?, ?], V, A, C, P, TD] (val x: Self & (SetterFactoryProps[V, A, C, P, TD])) extends AnyVal {
       
       inline def setAddActionDelay(value: (/* delay */ Double, A) => A): Self = StObject.set(x, "addActionDelay", js.Any.fromFunction2(value))
       

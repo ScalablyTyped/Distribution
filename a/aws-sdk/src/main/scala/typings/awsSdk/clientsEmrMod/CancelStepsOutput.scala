@@ -18,7 +18,8 @@ object CancelStepsOutput {
     __obj.asInstanceOf[CancelStepsOutput]
   }
   
-  extension [Self <: CancelStepsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelStepsOutput] (val x: Self) extends AnyVal {
     
     inline def setCancelStepsInfoList(value: CancelStepsInfoList): Self = StObject.set(x, "CancelStepsInfoList", value.asInstanceOf[js.Any])
     

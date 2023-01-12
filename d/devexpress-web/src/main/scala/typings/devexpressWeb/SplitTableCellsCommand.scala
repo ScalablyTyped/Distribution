@@ -29,7 +29,8 @@ object SplitTableCellsCommand {
     __obj.asInstanceOf[SplitTableCellsCommand]
   }
   
-  extension [Self <: SplitTableCellsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitTableCellsCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (Double, Double, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
     

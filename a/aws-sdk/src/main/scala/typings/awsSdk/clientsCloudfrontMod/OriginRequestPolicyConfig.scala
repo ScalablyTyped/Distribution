@@ -43,7 +43,8 @@ object OriginRequestPolicyConfig {
     __obj.asInstanceOf[OriginRequestPolicyConfig]
   }
   
-  extension [Self <: OriginRequestPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRequestPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

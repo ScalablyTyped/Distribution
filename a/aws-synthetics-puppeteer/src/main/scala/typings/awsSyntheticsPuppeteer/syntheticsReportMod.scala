@@ -453,7 +453,8 @@ object syntheticsReportMod {
       __obj.asInstanceOf[CanaryStepResult]
     }
     
-    extension [Self <: CanaryStepResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanaryStepResult] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Any): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       

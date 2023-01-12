@@ -20,7 +20,8 @@ object ListItemProps {
     __obj.asInstanceOf[ListItemProps]
   }
   
-  extension [Self <: ListItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
     
     inline def setThreeLine(value: Boolean): Self = StObject.set(x, "threeLine", value.asInstanceOf[js.Any])
     

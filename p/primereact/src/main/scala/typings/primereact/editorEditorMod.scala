@@ -568,7 +568,8 @@ object editorEditorMod {
       __obj.asInstanceOf[EditorProps]
     }
     
-    extension [Self <: EditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1455,7 +1456,8 @@ object editorEditorMod {
       __obj.asInstanceOf[EditorSelectionChangeParams]
     }
     
-    extension [Self <: EditorSelectionChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorSelectionChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOldRange(value: Any): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
       
@@ -1482,7 +1484,8 @@ object editorEditorMod {
       __obj.asInstanceOf[EditorTextChangeParams]
     }
     
-    extension [Self <: EditorTextChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorTextChangeParams] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

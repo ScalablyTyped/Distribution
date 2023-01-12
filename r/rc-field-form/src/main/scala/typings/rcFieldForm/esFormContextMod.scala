@@ -36,7 +36,8 @@ object esFormContextMod extends Shortcut {
       __obj.asInstanceOf[FormChangeInfo]
     }
     
-    extension [Self <: FormChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setChangedFields(value: js.Array[FieldData]): Self = StObject.set(x, "changedFields", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object esFormContextMod extends Shortcut {
       __obj.asInstanceOf[FormContextProps]
     }
     
-    extension [Self <: FormContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
       
       inline def setRegisterForm(value: (String, FormInstance[Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
       
@@ -95,7 +97,8 @@ object esFormContextMod extends Shortcut {
       __obj.asInstanceOf[FormFinishInfo]
     }
     
-    extension [Self <: FormFinishInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormFinishInfo] (val x: Self) extends AnyVal {
       
       inline def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object esFormContextMod extends Shortcut {
       __obj.asInstanceOf[FormProviderProps]
     }
     
-    extension [Self <: FormProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object DataRequirementDateFilter {
     __obj.asInstanceOf[DataRequirementDateFilter]
   }
   
-  extension [Self <: DataRequirementDateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRequirementDateFilter] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

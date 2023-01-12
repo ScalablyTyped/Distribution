@@ -19,7 +19,8 @@ object SecuritySamlCompleteLogoutRequest {
     __obj.asInstanceOf[SecuritySamlCompleteLogoutRequest]
   }
   
-  extension [Self <: SecuritySamlCompleteLogoutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlCompleteLogoutRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Querystring): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

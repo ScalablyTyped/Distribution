@@ -53,7 +53,8 @@ object LowLagMediaRecording {
     __obj.asInstanceOf[LowLagMediaRecording]
   }
   
-  extension [Self <: LowLagMediaRecording](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LowLagMediaRecording] (val x: Self) extends AnyVal {
     
     inline def setFinishAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "finishAsync", js.Any.fromFunction0(value))
     

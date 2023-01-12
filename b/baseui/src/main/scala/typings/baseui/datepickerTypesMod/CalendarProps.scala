@@ -119,7 +119,8 @@ object CalendarProps {
     __obj.asInstanceOf[CalendarProps[T]]
   }
   
-  extension [Self <: CalendarProps[?], T](x: Self & CalendarProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarProps[?], T] (val x: Self & CalendarProps[T]) extends AnyVal {
     
     inline def setAdapter(value: DateIOAdapter[T]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

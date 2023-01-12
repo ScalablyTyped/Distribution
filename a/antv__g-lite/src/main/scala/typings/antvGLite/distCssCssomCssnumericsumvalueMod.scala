@@ -23,7 +23,8 @@ object distCssCssomCssnumericsumvalueMod {
       __obj.asInstanceOf[Term]
     }
     
-    extension [Self <: Term](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Term] (val x: Self) extends AnyVal {
       
       inline def setUnits(value: UnitMap): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       

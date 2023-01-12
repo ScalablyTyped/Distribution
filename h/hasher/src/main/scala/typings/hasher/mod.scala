@@ -180,7 +180,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HasherStatic]
       }
       
-      extension [Self <: HasherStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HasherStatic] (val x: Self) extends AnyVal {
         
         inline def setAppendHash(value: String): Self = StObject.set(x, "appendHash", value.asInstanceOf[js.Any])
         

@@ -28,7 +28,8 @@ object ListInstanceProfileTagsRequest {
     __obj.asInstanceOf[ListInstanceProfileTagsRequest]
   }
   
-  extension [Self <: ListInstanceProfileTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstanceProfileTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceProfileName(value: instanceProfileNameType): Self = StObject.set(x, "InstanceProfileName", value.asInstanceOf[js.Any])
     

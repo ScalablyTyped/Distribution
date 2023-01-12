@@ -48,7 +48,8 @@ object ListApplicationRevisionsInput {
     __obj.asInstanceOf[ListApplicationRevisionsInput]
   }
   
-  extension [Self <: ListApplicationRevisionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationRevisionsInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

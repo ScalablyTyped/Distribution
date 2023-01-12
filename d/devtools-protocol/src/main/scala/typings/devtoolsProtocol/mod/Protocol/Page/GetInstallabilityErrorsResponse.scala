@@ -15,7 +15,8 @@ object GetInstallabilityErrorsResponse {
     __obj.asInstanceOf[GetInstallabilityErrorsResponse]
   }
   
-  extension [Self <: GetInstallabilityErrorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstallabilityErrorsResponse] (val x: Self) extends AnyVal {
     
     inline def setInstallabilityErrors(value: js.Array[InstallabilityError]): Self = StObject.set(x, "installabilityErrors", value.asInstanceOf[js.Any])
     

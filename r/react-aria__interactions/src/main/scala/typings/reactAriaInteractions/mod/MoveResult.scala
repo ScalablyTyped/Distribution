@@ -18,7 +18,8 @@ object MoveResult {
     __obj.asInstanceOf[MoveResult]
   }
   
-  extension [Self <: MoveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveResult] (val x: Self) extends AnyVal {
     
     inline def setMoveProps(value: DOMAttributes[FocusableElement]): Self = StObject.set(x, "moveProps", value.asInstanceOf[js.Any])
   }

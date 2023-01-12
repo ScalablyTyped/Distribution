@@ -21,7 +21,8 @@ object DefaultHoveredPressed {
     __obj.asInstanceOf[DefaultHoveredPressed[BaseToken]]
   }
   
-  extension [Self <: DefaultHoveredPressed[?], BaseToken](x: Self & DefaultHoveredPressed[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultHoveredPressed[?], BaseToken] (val x: Self & DefaultHoveredPressed[BaseToken]) extends AnyVal {
     
     inline def setHovered(value: PaintToken[BaseToken]): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
     

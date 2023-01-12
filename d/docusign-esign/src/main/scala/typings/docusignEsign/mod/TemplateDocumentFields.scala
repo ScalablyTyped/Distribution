@@ -29,7 +29,8 @@ object TemplateDocumentFields {
     __obj.asInstanceOf[TemplateDocumentFields]
   }
   
-  extension [Self <: TemplateDocumentFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateDocumentFields] (val x: Self) extends AnyVal {
     
     inline def setDocumentFields(
       value: js.Array[

@@ -31,7 +31,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[CacheDidUpdateCallbackParam]
     }
     
-    extension [Self <: CacheDidUpdateCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheDidUpdateCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[CacheKeyWillBeUsedCallbackParam]
     }
     
-    extension [Self <: CacheKeyWillBeUsedCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheKeyWillBeUsedCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[CacheWillUpdateCallbackParamParam]
     }
     
-    extension [Self <: CacheWillUpdateCallbackParamParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheWillUpdateCallbackParamParam] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ Any
@@ -133,7 +136,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[CachedResponseWillBeUsedCallbackParam]
     }
     
-    extension [Self <: CachedResponseWillBeUsedCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CachedResponseWillBeUsedCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[FetchDidFailCallbackParam]
     }
     
-    extension [Self <: FetchDidFailCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchDidFailCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[FetchDidSucceedCallbackParam]
     }
     
-    extension [Self <: FetchDidSucceedCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchDidSucceedCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -228,7 +234,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[RequestWillFetchCallbackParam]
     }
     
-    extension [Self <: RequestWillFetchCallbackParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestWillFetchCallbackParam] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
@@ -257,7 +264,8 @@ object typesWorkboxPluginMod {
       __obj.asInstanceOf[WorkboxPlugin]
     }
     
-    extension [Self <: WorkboxPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxPlugin] (val x: Self) extends AnyVal {
       
       inline def setCacheDidUpdate(value: /* param */ CacheDidUpdateCallbackParam => js.Promise[Unit]): Self = StObject.set(x, "cacheDidUpdate", js.Any.fromFunction1(value))
       

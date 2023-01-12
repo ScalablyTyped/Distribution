@@ -17,7 +17,8 @@ object UploadPauseEvent {
     __obj.asInstanceOf[UploadPauseEvent]
   }
   
-  extension [Self <: UploadPauseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadPauseEvent] (val x: Self) extends AnyVal {
     
     inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

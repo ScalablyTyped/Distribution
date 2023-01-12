@@ -25,7 +25,8 @@ object PartialStyleRulesFormGrou {
     __obj.asInstanceOf[PartialStyleRulesFormGrou]
   }
   
-  extension [Self <: PartialStyleRulesFormGrou](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesFormGrou] (val x: Self) extends AnyVal {
     
     inline def setRoot(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

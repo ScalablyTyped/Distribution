@@ -181,7 +181,8 @@ object IgZoombar {
     __obj.asInstanceOf[IgZoombar]
   }
   
-  extension [Self <: IgZoombar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgZoombar] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: String | js.Object): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Sessions {
     __obj.asInstanceOf[Sessions]
   }
   
-  extension [Self <: Sessions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sessions] (val x: Self) extends AnyVal {
     
     inline def setSessions(value: js.Array[Connections]): Self = StObject.set(x, "sessions", value.asInstanceOf[js.Any])
     

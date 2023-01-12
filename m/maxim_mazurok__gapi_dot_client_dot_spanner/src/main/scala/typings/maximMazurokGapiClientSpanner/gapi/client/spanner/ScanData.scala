@@ -22,7 +22,8 @@ object ScanData {
     __obj.asInstanceOf[ScanData]
   }
   
-  extension [Self <: ScanData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanData] (val x: Self) extends AnyVal {
     
     inline def setData(value: VisualizationData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

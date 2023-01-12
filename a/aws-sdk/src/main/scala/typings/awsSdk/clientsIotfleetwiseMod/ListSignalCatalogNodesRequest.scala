@@ -28,7 +28,8 @@ object ListSignalCatalogNodesRequest {
     __obj.asInstanceOf[ListSignalCatalogNodesRequest]
   }
   
-  extension [Self <: ListSignalCatalogNodesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSignalCatalogNodesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

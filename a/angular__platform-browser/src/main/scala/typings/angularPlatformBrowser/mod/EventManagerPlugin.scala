@@ -30,7 +30,8 @@ object EventManagerPlugin {
     __obj.asInstanceOf[EventManagerPlugin]
   }
   
-  extension [Self <: EventManagerPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventManagerPlugin] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (HTMLElement, String, js.Function) => js.Function): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     

@@ -23,7 +23,8 @@ object DescribeDataSharesForProducerResult {
     __obj.asInstanceOf[DescribeDataSharesForProducerResult]
   }
   
-  extension [Self <: DescribeDataSharesForProducerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSharesForProducerResult] (val x: Self) extends AnyVal {
     
     inline def setDataShares(value: DataShareList): Self = StObject.set(x, "DataShares", value.asInstanceOf[js.Any])
     

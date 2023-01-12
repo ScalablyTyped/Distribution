@@ -17,7 +17,8 @@ object RawChunkGroupOptions {
     __obj.asInstanceOf[RawChunkGroupOptions]
   }
   
-  extension [Self <: RawChunkGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawChunkGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setPrefetchOrder(value: Double): Self = StObject.set(x, "prefetchOrder", value.asInstanceOf[js.Any])
     

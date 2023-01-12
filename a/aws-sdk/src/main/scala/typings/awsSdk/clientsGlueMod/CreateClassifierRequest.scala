@@ -33,7 +33,8 @@ object CreateClassifierRequest {
     __obj.asInstanceOf[CreateClassifierRequest]
   }
   
-  extension [Self <: CreateClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setCsvClassifier(value: CreateCsvClassifierRequest): Self = StObject.set(x, "CsvClassifier", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object FrameContext {
     __obj.asInstanceOf[FrameContext]
   }
   
-  extension [Self <: FrameContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameContext] (val x: Self) extends AnyVal {
     
     inline def setFrameContext(value: SerialContextObject): Self = StObject.set(x, "frameContext", value.asInstanceOf[js.Any])
     

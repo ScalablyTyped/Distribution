@@ -19,7 +19,8 @@ object TargetingValueSize {
     __obj.asInstanceOf[TargetingValueSize]
   }
   
-  extension [Self <: TargetingValueSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingValueSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

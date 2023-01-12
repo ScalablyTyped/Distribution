@@ -90,7 +90,8 @@ object ReferralInformation {
     __obj.asInstanceOf[ReferralInformation]
   }
   
-  extension [Self <: ReferralInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferralInformation] (val x: Self) extends AnyVal {
     
     inline def setAdvertisementId(value: String): Self = StObject.set(x, "advertisementId", value.asInstanceOf[js.Any])
     

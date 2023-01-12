@@ -63,7 +63,8 @@ object DidCreateWindowDetails {
     __obj.asInstanceOf[DidCreateWindowDetails]
   }
   
-  extension [Self <: DidCreateWindowDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidCreateWindowDetails] (val x: Self) extends AnyVal {
     
     inline def setDisposition(value: default | `foreground-tab` | `background-tab` | `new-window` | `save-to-disk` | other): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MlTextEmbeddingInferenceOptions {
     __obj.asInstanceOf[MlTextEmbeddingInferenceOptions]
   }
   
-  extension [Self <: MlTextEmbeddingInferenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTextEmbeddingInferenceOptions] (val x: Self) extends AnyVal {
     
     inline def setResults_field(value: String): Self = StObject.set(x, "results_field", value.asInstanceOf[js.Any])
     

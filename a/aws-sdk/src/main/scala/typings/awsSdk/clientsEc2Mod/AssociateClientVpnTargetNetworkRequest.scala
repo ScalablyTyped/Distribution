@@ -33,7 +33,8 @@ object AssociateClientVpnTargetNetworkRequest {
     __obj.asInstanceOf[AssociateClientVpnTargetNetworkRequest]
   }
   
-  extension [Self <: AssociateClientVpnTargetNetworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateClientVpnTargetNetworkRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

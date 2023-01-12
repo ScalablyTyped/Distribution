@@ -26,7 +26,8 @@ object Requirecodeownerreviews {
     __obj.asInstanceOf[Requirecodeownerreviews]
   }
   
-  extension [Self <: Requirecodeownerreviews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requirecodeownerreviews] (val x: Self) extends AnyVal {
     
     inline def setBypass_pull_request_allowances(value: AppsTeamsUsers): Self = StObject.set(x, "bypass_pull_request_allowances", value.asInstanceOf[js.Any])
     

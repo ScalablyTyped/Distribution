@@ -26,7 +26,8 @@ object XEmbeddedObjectResolver {
     __obj.asInstanceOf[XEmbeddedObjectResolver]
   }
   
-  extension [Self <: XEmbeddedObjectResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbeddedObjectResolver] (val x: Self) extends AnyVal {
     
     inline def setResolveEmbeddedObjectURL(value: String => String): Self = StObject.set(x, "resolveEmbeddedObjectURL", js.Any.fromFunction1(value))
   }

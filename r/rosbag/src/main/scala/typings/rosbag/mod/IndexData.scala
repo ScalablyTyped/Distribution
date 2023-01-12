@@ -35,7 +35,8 @@ object IndexData {
     __obj.asInstanceOf[IndexData]
   }
   
-  extension [Self <: IndexData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexData] (val x: Self) extends AnyVal {
     
     inline def setConn(value: Double): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
     

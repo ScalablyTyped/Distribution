@@ -43,7 +43,8 @@ object AmiDistributionConfiguration {
     __obj.asInstanceOf[AmiDistributionConfiguration]
   }
   
-  extension [Self <: AmiDistributionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmiDistributionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAmiTags(value: TagMap): Self = StObject.set(x, "amiTags", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object CellCallbacks {
     __obj.asInstanceOf[CellCallbacks]
   }
   
-  extension [Self <: CellCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellCallbacks] (val x: Self) extends AnyVal {
     
     inline def setCellClick(value: (/* e */ UIEvent, /* cell */ CellComponent) => Unit): Self = StObject.set(x, "cellClick", js.Any.fromFunction2(value))
     

@@ -18,7 +18,8 @@ object Placeholder {
     __obj.asInstanceOf[Placeholder]
   }
   
-  extension [Self <: Placeholder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
     
     inline def setPlaceholder(value: js.Array[IBItemidstringplaceholder]): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object LaunchTemplateEbsBlockDeviceRequest {
     __obj.asInstanceOf[LaunchTemplateEbsBlockDeviceRequest]
   }
   
-  extension [Self <: LaunchTemplateEbsBlockDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateEbsBlockDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setDeleteOnTermination(value: Boolean): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     

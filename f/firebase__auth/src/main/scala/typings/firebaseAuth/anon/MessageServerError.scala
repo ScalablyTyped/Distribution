@@ -20,7 +20,8 @@ object MessageServerError {
     __obj.asInstanceOf[MessageServerError]
   }
   
-  extension [Self <: MessageServerError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageServerError] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

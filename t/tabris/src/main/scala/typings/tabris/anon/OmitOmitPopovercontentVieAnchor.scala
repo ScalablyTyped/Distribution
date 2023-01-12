@@ -332,7 +332,8 @@ object OmitOmitPopovercontentVieAnchor {
     __obj.asInstanceOf[OmitOmitPopovercontentVieAnchor]
   }
   
-  extension [Self <: OmitOmitPopovercontentVieAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitOmitPopovercontentVieAnchor] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

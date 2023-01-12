@@ -43,7 +43,8 @@ object Snapshot {
     __obj.asInstanceOf[Snapshot]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

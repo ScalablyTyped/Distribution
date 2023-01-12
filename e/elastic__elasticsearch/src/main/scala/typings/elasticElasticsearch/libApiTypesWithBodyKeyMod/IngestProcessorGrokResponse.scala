@@ -16,7 +16,8 @@ object IngestProcessorGrokResponse {
     __obj.asInstanceOf[IngestProcessorGrokResponse]
   }
   
-  extension [Self <: IngestProcessorGrokResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestProcessorGrokResponse] (val x: Self) extends AnyVal {
     
     inline def setPatterns(value: Record[String, String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object RequestServiceQuotaIncreaseResponse {
     __obj.asInstanceOf[RequestServiceQuotaIncreaseResponse]
   }
   
-  extension [Self <: RequestServiceQuotaIncreaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestServiceQuotaIncreaseResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestedQuota(value: RequestedServiceQuotaChange): Self = StObject.set(x, "RequestedQuota", value.asInstanceOf[js.Any])
     

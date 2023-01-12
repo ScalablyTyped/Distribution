@@ -21,7 +21,8 @@ object ScrollIntoViewOptions {
     __obj.asInstanceOf[ScrollIntoViewOptions]
   }
   
-  extension [Self <: ScrollIntoViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollIntoViewOptions] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: ScrollLogicalPosition): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

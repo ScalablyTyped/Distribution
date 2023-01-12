@@ -17,7 +17,8 @@ object ShakeLen {
     __obj.asInstanceOf[ShakeLen]
   }
   
-  extension [Self <: ShakeLen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShakeLen] (val x: Self) extends AnyVal {
     
     inline def setOutputLen(value: Double): Self = StObject.set(x, "outputLen", value.asInstanceOf[js.Any])
     

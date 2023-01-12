@@ -23,7 +23,8 @@ object ModifyTargetGroupAttributesInput {
     __obj.asInstanceOf[ModifyTargetGroupAttributesInput]
   }
   
-  extension [Self <: ModifyTargetGroupAttributesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTargetGroupAttributesInput] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TargetGroupAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

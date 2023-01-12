@@ -45,7 +45,8 @@ object CastExpression {
     __obj.asInstanceOf[CastExpression]
   }
   
-  extension [Self <: CastExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CastExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

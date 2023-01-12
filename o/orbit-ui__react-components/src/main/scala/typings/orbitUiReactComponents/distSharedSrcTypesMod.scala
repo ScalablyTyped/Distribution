@@ -39,7 +39,8 @@ object distSharedSrcTypesMod {
       __obj.asInstanceOf[AriaLabelingProps]
     }
     
-    extension [Self <: AriaLabelingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaLabelingProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distSharedSrcTypesMod {
       __obj.asInstanceOf[DomProps]
     }
     
-    extension [Self <: DomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomProps] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object distSharedSrcTypesMod {
       __obj.asInstanceOf[InteractionStatesProps]
     }
     
-    extension [Self <: InteractionStatesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionStatesProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

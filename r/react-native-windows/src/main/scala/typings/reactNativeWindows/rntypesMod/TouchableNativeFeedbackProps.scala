@@ -34,7 +34,8 @@ object TouchableNativeFeedbackProps {
     __obj.asInstanceOf[TouchableNativeFeedbackProps]
   }
   
-  extension [Self <: TouchableNativeFeedbackProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableNativeFeedbackProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

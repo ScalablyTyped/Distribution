@@ -19,7 +19,8 @@ object GoogleCloudHealthcareV1FhirGcsDestination {
     __obj.asInstanceOf[GoogleCloudHealthcareV1FhirGcsDestination]
   }
   
-  extension [Self <: GoogleCloudHealthcareV1FhirGcsDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudHealthcareV1FhirGcsDestination] (val x: Self) extends AnyVal {
     
     inline def setUriPrefix(value: String): Self = StObject.set(x, "uriPrefix", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object libVictoryUtilEventsMod {
       __obj.asInstanceOf[ComponentEvent]
     }
     
-    extension [Self <: ComponentEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentEvent] (val x: Self) extends AnyVal {
       
       inline def setEventHandlers(value: ComponentEventHandlers): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libVictoryUtilEventsMod {
       __obj.asInstanceOf[ComponentWithEvents]
     }
     
-    extension [Self <: ComponentWithEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentWithEvents] (val x: Self) extends AnyVal {
       
       inline def setSetState(value: Any): Self = StObject.set(x, "setState", value.asInstanceOf[js.Any])
       

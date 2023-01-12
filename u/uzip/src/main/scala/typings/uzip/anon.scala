@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Csize]
     }
     
-    extension [Self <: Csize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Csize] (val x: Self) extends AnyVal {
       
       inline def setCsize(value: Double): Self = StObject.set(x, "csize", value.asInstanceOf[js.Any])
       

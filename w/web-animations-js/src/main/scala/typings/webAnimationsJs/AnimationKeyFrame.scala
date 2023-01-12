@@ -21,7 +21,8 @@ object AnimationKeyFrame {
     __obj.asInstanceOf[AnimationKeyFrame]
   }
   
-  extension [Self <: AnimationKeyFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationKeyFrame] (val x: Self) extends AnyVal {
     
     inline def setEasing(value: String | js.Array[String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     

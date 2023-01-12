@@ -23,7 +23,8 @@ object SourceData {
     __obj.asInstanceOf[SourceData]
   }
   
-  extension [Self <: SourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceData] (val x: Self) extends AnyVal {
     
     inline def setAcmPcaArn(value: String): Self = StObject.set(x, "acmPcaArn", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object DescribeVpcPeeringConnect {
     __obj.asInstanceOf[DescribeVpcPeeringConnect]
   }
   
-  extension [Self <: DescribeVpcPeeringConnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVpcPeeringConnect] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

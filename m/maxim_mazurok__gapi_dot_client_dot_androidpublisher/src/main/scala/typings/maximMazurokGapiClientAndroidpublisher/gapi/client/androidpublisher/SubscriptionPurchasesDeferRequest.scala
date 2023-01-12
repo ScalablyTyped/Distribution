@@ -16,7 +16,8 @@ object SubscriptionPurchasesDeferRequest {
     __obj.asInstanceOf[SubscriptionPurchasesDeferRequest]
   }
   
-  extension [Self <: SubscriptionPurchasesDeferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionPurchasesDeferRequest] (val x: Self) extends AnyVal {
     
     inline def setDeferralInfo(value: SubscriptionDeferralInfo): Self = StObject.set(x, "deferralInfo", value.asInstanceOf[js.Any])
     

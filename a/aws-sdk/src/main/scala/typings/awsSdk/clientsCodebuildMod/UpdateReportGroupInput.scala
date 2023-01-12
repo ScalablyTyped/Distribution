@@ -28,7 +28,8 @@ object UpdateReportGroupInput {
     __obj.asInstanceOf[UpdateReportGroupInput]
   }
   
-  extension [Self <: UpdateReportGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReportGroupInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

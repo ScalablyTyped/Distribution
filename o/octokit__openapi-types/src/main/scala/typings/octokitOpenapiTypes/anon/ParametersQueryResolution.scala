@@ -17,7 +17,8 @@ object ParametersQueryResolution {
     __obj.asInstanceOf[ParametersQueryResolution]
   }
   
-  extension [Self <: ParametersQueryResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryResolution] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryResolution): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

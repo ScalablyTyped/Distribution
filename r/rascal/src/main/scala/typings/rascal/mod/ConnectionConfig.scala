@@ -19,7 +19,8 @@ object ConnectionConfig {
     __obj.asInstanceOf[ConnectionConfig]
   }
   
-  extension [Self <: ConnectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
     
     inline def setManagement(value: ConnectionAttributes): Self = StObject.set(x, "management", value.asInstanceOf[js.Any])
     

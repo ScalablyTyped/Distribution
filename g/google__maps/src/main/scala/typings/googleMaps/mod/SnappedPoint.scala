@@ -30,7 +30,8 @@ object SnappedPoint {
     __obj.asInstanceOf[SnappedPoint]
   }
   
-  extension [Self <: SnappedPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnappedPoint] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: LatLngLiteralVerbose): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

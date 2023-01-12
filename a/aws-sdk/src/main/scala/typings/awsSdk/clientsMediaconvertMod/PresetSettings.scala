@@ -33,7 +33,8 @@ object PresetSettings {
     __obj.asInstanceOf[PresetSettings]
   }
   
-  extension [Self <: PresetSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioDescriptions(value: listOfAudioDescription): Self = StObject.set(x, "AudioDescriptions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[BaseRequest]
     }
     
-    extension [Self <: BaseRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseRequest] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[ExpressRequest]
     }
     
-    extension [Self <: ExpressRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressRequest] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[KoaRequest]
     }
     
-    extension [Self <: KoaRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KoaRequest] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[NextjsRequest]
     }
     
-    extension [Self <: NextjsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextjsRequest] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
@@ -188,7 +192,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[NodeRequest]
     }
     
-    extension [Self <: NodeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeRequest] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -222,7 +227,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[PolymorphicEvent]
     }
     
-    extension [Self <: PolymorphicEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolymorphicEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -253,7 +259,8 @@ object typesPolymorphicsMod {
       __obj.asInstanceOf[PolymorphicRequest]
     }
     
-    extension [Self <: PolymorphicRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolymorphicRequest] (val x: Self) extends AnyVal {
       
       inline def setCookies(value: StringDictionary[String]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       

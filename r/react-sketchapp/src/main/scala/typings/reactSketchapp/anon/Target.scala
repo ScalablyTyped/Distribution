@@ -24,7 +24,8 @@ object Target {
     __obj.asInstanceOf[Target]
   }
   
-  extension [Self <: Target](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
     
     inline def setAnimationType(value: none | slideFromRight | slideFromLeft | slideFromBottom | slideFromTop): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
     

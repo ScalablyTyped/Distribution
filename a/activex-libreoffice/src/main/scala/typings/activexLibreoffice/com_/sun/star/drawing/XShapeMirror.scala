@@ -33,7 +33,8 @@ object XShapeMirror {
     __obj.asInstanceOf[XShapeMirror]
   }
   
-  extension [Self <: XShapeMirror](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeMirror] (val x: Self) extends AnyVal {
     
     inline def setMirror(value: (js.Array[XShapes], MirrorAxis) => Unit): Self = StObject.set(x, "mirror", js.Any.fromFunction2(value))
     

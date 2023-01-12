@@ -95,7 +95,8 @@ object CoverageEligibilityResponseInsuranceItem {
     __obj.asInstanceOf[CoverageEligibilityResponseInsuranceItem]
   }
   
-  extension [Self <: CoverageEligibilityResponseInsuranceItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageEligibilityResponseInsuranceItem] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationRequired(value: Boolean): Self = StObject.set(x, "authorizationRequired", value.asInstanceOf[js.Any])
     

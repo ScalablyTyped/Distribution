@@ -137,7 +137,8 @@ object mod {
         __obj.asInstanceOf[MasonryLayoutProps]
       }
       
-      extension [Self <: MasonryLayoutProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MasonryLayoutProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -225,7 +226,8 @@ object mod {
         __obj.asInstanceOf[MasonryLayoutSizes]
       }
       
-      extension [Self <: MasonryLayoutSizes](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MasonryLayoutSizes] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         

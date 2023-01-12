@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[ConfigItem]
     }
     
-    extension [Self <: ConfigItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigItem] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean | (js.Function1[/* repeated */ Any, Boolean])): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Resolver]
     }
     
-    extension [Self <: Resolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
       
       inline def setResolve(value: String => js.UndefOr[Double | String | Boolean | js.Date | Null]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }

@@ -79,7 +79,8 @@ object esComponentsImageUploaderImageUploaderMod {
       __obj.asInstanceOf[ImageUploadItem]
     }
     
-    extension [Self <: ImageUploadItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUploadItem] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -398,7 +399,8 @@ object esComponentsImageUploaderImageUploaderMod {
       __obj.asInstanceOf[ImageUploaderProps]
     }
     
-    extension [Self <: ImageUploaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageUploaderProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -713,7 +715,8 @@ object esComponentsImageUploaderImageUploaderMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -756,7 +759,8 @@ object esComponentsImageUploaderImageUploaderMod {
       __obj.asInstanceOf[UploadTask]
     }
     
-    extension [Self <: UploadTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadTask] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

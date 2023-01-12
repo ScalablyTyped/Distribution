@@ -28,7 +28,8 @@ object ASPxClientCustomizeParameterEditorsEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeParameterEditorsEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeParameterEditorsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeParameterEditorsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

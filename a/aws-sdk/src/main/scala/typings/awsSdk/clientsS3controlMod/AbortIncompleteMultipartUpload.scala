@@ -18,7 +18,8 @@ object AbortIncompleteMultipartUpload {
     __obj.asInstanceOf[AbortIncompleteMultipartUpload]
   }
   
-  extension [Self <: AbortIncompleteMultipartUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortIncompleteMultipartUpload] (val x: Self) extends AnyVal {
     
     inline def setDaysAfterInitiation(value: DaysAfterInitiation): Self = StObject.set(x, "DaysAfterInitiation", value.asInstanceOf[js.Any])
     

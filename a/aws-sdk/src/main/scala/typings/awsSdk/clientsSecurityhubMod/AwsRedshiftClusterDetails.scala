@@ -233,7 +233,8 @@ object AwsRedshiftClusterDetails {
     __obj.asInstanceOf[AwsRedshiftClusterDetails]
   }
   
-  extension [Self <: AwsRedshiftClusterDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterDetails] (val x: Self) extends AnyVal {
     
     inline def setAllowVersionUpgrade(value: Boolean): Self = StObject.set(x, "AllowVersionUpgrade", value.asInstanceOf[js.Any])
     

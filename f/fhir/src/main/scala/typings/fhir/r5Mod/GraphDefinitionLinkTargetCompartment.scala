@@ -60,7 +60,8 @@ object GraphDefinitionLinkTargetCompartment {
     __obj.asInstanceOf[GraphDefinitionLinkTargetCompartment]
   }
   
-  extension [Self <: GraphDefinitionLinkTargetCompartment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphDefinitionLinkTargetCompartment] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: typings.fhir.fhirStrings.Patient | typings.fhir.fhirStrings.Encounter | typings.fhir.fhirStrings.RelatedPerson | typings.fhir.fhirStrings.Practitioner | typings.fhir.fhirStrings.Device

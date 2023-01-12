@@ -17,7 +17,8 @@ object ResponseCost {
     __obj.asInstanceOf[ResponseCost]
   }
   
-  extension [Self <: ResponseCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseCost] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "Currency", value.asInstanceOf[js.Any])
     

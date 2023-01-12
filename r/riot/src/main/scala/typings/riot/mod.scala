@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[AutobindObjectMethods[Object, This]]
     }
     
-    extension [Self <: AutobindObjectMethods[?, ?], Object, This](x: Self & (AutobindObjectMethods[Object, This])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutobindObjectMethods[?, ?], Object, This] (val x: Self & (AutobindObjectMethods[Object, This])) extends AnyVal {
       
       inline def setConstructor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Function extends (args : any): any ? (this : This, args : std.Parameters<std.Function>): std.ReturnType<std.Function> : std.Function */ js.Any
@@ -262,7 +263,8 @@ object mod {
       __obj.asInstanceOf[RiotComponentWrapper[Component]]
     }
     
-    extension [Self <: RiotComponentWrapper[?], Component](x: Self & RiotComponentWrapper[Component]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RiotComponentWrapper[?], Component] (val x: Self & RiotComponentWrapper[Component]) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

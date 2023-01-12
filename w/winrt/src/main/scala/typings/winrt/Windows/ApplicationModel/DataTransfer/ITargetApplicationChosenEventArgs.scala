@@ -15,7 +15,8 @@ object ITargetApplicationChosenEventArgs {
     __obj.asInstanceOf[ITargetApplicationChosenEventArgs]
   }
   
-  extension [Self <: ITargetApplicationChosenEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITargetApplicationChosenEventArgs] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
   }

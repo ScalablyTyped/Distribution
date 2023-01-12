@@ -20,7 +20,8 @@ object IMediaEncodingProperties {
     __obj.asInstanceOf[IMediaEncodingProperties]
   }
   
-  extension [Self <: IMediaEncodingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMediaEncodingProperties] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: MediaPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

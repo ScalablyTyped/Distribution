@@ -23,7 +23,8 @@ object DisassociateTransitGatewayConnectPeerRequest {
     __obj.asInstanceOf[DisassociateTransitGatewayConnectPeerRequest]
   }
   
-  extension [Self <: DisassociateTransitGatewayConnectPeerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTransitGatewayConnectPeerRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     

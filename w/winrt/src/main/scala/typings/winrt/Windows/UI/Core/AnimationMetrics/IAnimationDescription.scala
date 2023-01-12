@@ -30,7 +30,8 @@ object IAnimationDescription {
     __obj.asInstanceOf[IAnimationDescription]
   }
   
-  extension [Self <: IAnimationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimationDescription] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: IVectorView[IPropertyAnimation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

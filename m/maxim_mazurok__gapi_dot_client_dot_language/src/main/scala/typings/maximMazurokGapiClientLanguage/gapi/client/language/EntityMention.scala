@@ -25,7 +25,8 @@ object EntityMention {
     __obj.asInstanceOf[EntityMention]
   }
   
-  extension [Self <: EntityMention](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityMention] (val x: Self) extends AnyVal {
     
     inline def setSentiment(value: Sentiment): Self = StObject.set(x, "sentiment", value.asInstanceOf[js.Any])
     

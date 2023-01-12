@@ -25,7 +25,8 @@ object CloudRun {
     __obj.asInstanceOf[CloudRun]
   }
   
-  extension [Self <: CloudRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudRun] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

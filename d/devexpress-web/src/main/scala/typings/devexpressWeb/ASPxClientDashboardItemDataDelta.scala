@@ -36,7 +36,8 @@ object ASPxClientDashboardItemDataDelta {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDelta]
   }
   
-  extension [Self <: ASPxClientDashboardItemDataDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDataDelta] (val x: Self) extends AnyVal {
     
     inline def setActualMeasureId(value: String): Self = StObject.set(x, "ActualMeasureId", value.asInstanceOf[js.Any])
     

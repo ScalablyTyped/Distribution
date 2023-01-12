@@ -19,7 +19,8 @@ object Guide {
     __obj.asInstanceOf[Guide]
   }
   
-  extension [Self <: Guide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: X | Y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

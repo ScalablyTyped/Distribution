@@ -17,7 +17,8 @@ object EventEmitterRevoker {
     __obj.asInstanceOf[EventEmitterRevoker]
   }
   
-  extension [Self <: EventEmitterRevoker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventEmitterRevoker] (val x: Self) extends AnyVal {
     
     inline def setBindListener(value: HippyEventListener): Self = StObject.set(x, "bindListener", value.asInstanceOf[js.Any])
     

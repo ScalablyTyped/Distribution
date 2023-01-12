@@ -142,7 +142,8 @@ object libEsmCellEditableCellMod {
       __obj.asInstanceOf[IEditableCellProps]
     }
     
-    extension [Self <: IEditableCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableCellProps] (val x: Self) extends AnyVal {
       
       inline def setEditableTextProps(value: EditableTextProps): Self = StObject.set(x, "editableTextProps", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object libEsmCellEditableCellMod {
       __obj.asInstanceOf[IEditableCellState]
     }
     
-    extension [Self <: IEditableCellState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditableCellState] (val x: Self) extends AnyVal {
       
       inline def setDirtyValue(value: String): Self = StObject.set(x, "dirtyValue", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object LayoutDimensionOptions {
     __obj.asInstanceOf[LayoutDimensionOptions]
   }
   
-  extension [Self <: LayoutDimensionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutDimensionOptions] (val x: Self) extends AnyVal {
     
     inline def setNodeDimensionsIncludeLabels(value: Boolean): Self = StObject.set(x, "nodeDimensionsIncludeLabels", value.asInstanceOf[js.Any])
   }

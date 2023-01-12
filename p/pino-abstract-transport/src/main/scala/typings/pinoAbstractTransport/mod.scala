@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[BuildOptions]
     }
     
-    extension [Self <: BuildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
       
       inline def setClose(value: (/* err */ js.Error, /* cb */ js.Function) => Unit | js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[EnablePipelining]
     }
     
-    extension [Self <: EnablePipelining](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnablePipelining] (val x: Self) extends AnyVal {
       
       inline def setEnablePipelining(value: `true`): Self = StObject.set(x, "enablePipelining", value.asInstanceOf[js.Any])
     }
@@ -143,7 +145,8 @@ object mod {
       __obj.asInstanceOf[OnUnknown]
     }
     
-    extension [Self <: OnUnknown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnUnknown] (val x: Self) extends AnyVal {
       
       inline def setOn(value: (unknown, js.Function2[/* line */ String, /* error */ Any, Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     }

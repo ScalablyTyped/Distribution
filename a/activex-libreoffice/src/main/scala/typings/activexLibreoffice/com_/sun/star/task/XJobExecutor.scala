@@ -35,7 +35,8 @@ object XJobExecutor {
     __obj.asInstanceOf[XJobExecutor]
   }
   
-  extension [Self <: XJobExecutor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XJobExecutor] (val x: Self) extends AnyVal {
     
     inline def setTrigger(value: String => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction1(value))
   }

@@ -20,7 +20,8 @@ object Modals {
     __obj.asInstanceOf[Modals]
   }
   
-  extension [Self <: Modals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modals] (val x: Self) extends AnyVal {
     
     inline def setIsOverflowing(value: Boolean): Self = StObject.set(x, "isOverflowing", value.asInstanceOf[js.Any])
     

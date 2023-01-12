@@ -28,7 +28,8 @@ object EdgeSingularData {
     __obj.asInstanceOf[EdgeSingularData]
   }
   
-  extension [Self <: EdgeSingularData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeSingularData] (val x: Self) extends AnyVal {
     
     inline def setIsLoop(value: () => Boolean): Self = StObject.set(x, "isLoop", js.Any.fromFunction0(value))
     

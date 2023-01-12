@@ -17,7 +17,8 @@ object AllJoynServiceInfoRemovedEventArgs {
     __obj.asInstanceOf[AllJoynServiceInfoRemovedEventArgs]
   }
   
-  extension [Self <: AllJoynServiceInfoRemovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllJoynServiceInfoRemovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object HashFormat {
     __obj.asInstanceOf[HashFormat]
   }
   
-  extension [Self <: HashFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashFormat] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

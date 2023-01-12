@@ -861,7 +861,8 @@ object libMapViewMod {
       __obj.asInstanceOf[MapViewProps]
     }
     
-    extension [Self <: MapViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapViewProps] (val x: Self) extends AnyVal {
       
       inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
       
@@ -1413,7 +1414,8 @@ object libMapViewMod {
       __obj.asInstanceOf[ModifiedProps]
     }
     
-    extension [Self <: ModifiedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifiedProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -2245,7 +2247,8 @@ object libMapViewMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -2808,7 +2811,8 @@ object libMapViewMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
     }

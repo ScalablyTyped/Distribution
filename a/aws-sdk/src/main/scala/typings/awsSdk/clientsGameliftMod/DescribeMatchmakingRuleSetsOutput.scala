@@ -23,7 +23,8 @@ object DescribeMatchmakingRuleSetsOutput {
     __obj.asInstanceOf[DescribeMatchmakingRuleSetsOutput]
   }
   
-  extension [Self <: DescribeMatchmakingRuleSetsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMatchmakingRuleSetsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

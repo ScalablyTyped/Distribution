@@ -18,7 +18,8 @@ object GetOnPremisesInstanceOutput {
     __obj.asInstanceOf[GetOnPremisesInstanceOutput]
   }
   
-  extension [Self <: GetOnPremisesInstanceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOnPremisesInstanceOutput] (val x: Self) extends AnyVal {
     
     inline def setInstanceInfo(value: InstanceInfo): Self = StObject.set(x, "instanceInfo", value.asInstanceOf[js.Any])
     

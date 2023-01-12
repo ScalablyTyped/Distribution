@@ -38,7 +38,8 @@ object MappingKeywordProperty {
     __obj.asInstanceOf[MappingKeywordProperty]
   }
   
-  extension [Self <: MappingKeywordProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingKeywordProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

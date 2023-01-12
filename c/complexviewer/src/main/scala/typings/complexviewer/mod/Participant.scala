@@ -60,7 +60,8 @@ object Participant {
     __obj.asInstanceOf[Participant]
   }
   
-  extension [Self <: Participant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
     
     inline def setAnnotationSets(value: Map[String, Set[Annotation]]): Self = StObject.set(x, "annotationSets", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object GroupLevel {
     __obj.asInstanceOf[GroupLevel]
   }
   
-  extension [Self <: GroupLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupLevel] (val x: Self) extends AnyVal {
     
     inline def setAccessDotGroupLevel_typekey(value: GroupLevel): Self = StObject.set(x, "Access.GroupLevel_typekey", value.asInstanceOf[js.Any])
     

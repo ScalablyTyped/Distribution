@@ -49,7 +49,8 @@ object multiSamlStrategyMod {
       __obj.asInstanceOf[MultiSamlConfig]
     }
     
-    extension [Self <: MultiSamlConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSamlConfig] (val x: Self) extends AnyVal {
       
       inline def setGetSamlOptions(
         value: (Request_[

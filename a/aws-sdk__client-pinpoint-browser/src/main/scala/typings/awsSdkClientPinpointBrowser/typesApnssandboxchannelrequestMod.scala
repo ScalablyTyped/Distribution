@@ -55,7 +55,8 @@ object typesApnssandboxchannelrequestMod {
       __obj.asInstanceOf[APNSSandboxChannelRequest]
     }
     
-    extension [Self <: APNSSandboxChannelRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APNSSandboxChannelRequest] (val x: Self) extends AnyVal {
       
       inline def setBundleId(value: String): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
       

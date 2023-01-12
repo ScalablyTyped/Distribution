@@ -65,7 +65,8 @@ object componentsFormMod {
       __obj.asInstanceOf[FormExtendedEvent[R, T]]
     }
     
-    extension [Self <: FormExtendedEvent[?, ?], R, T](x: Self & (FormExtendedEvent[R, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormExtendedEvent[?, ?], R, T] (val x: Self & (FormExtendedEvent[R, T])) extends AnyVal {
       
       inline def setTouched(value: Record[String, Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object componentsFormMod {
       __obj.asInstanceOf[FormProps[T]]
     }
     
-    extension [Self <: FormProps[?], T](x: Self & FormProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps[?], T] (val x: Self & FormProps[T]) extends AnyVal {
       
       inline def setErrors(value: js.Object): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

@@ -226,7 +226,8 @@ object sapUiCoreVariantLayoutDataMod {
       __obj.asInstanceOf[VariantLayoutDataSettings]
     }
     
-    extension [Self <: VariantLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariantLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setMultipleLayoutData(
         value: js.Array[typings.openui5.sapUiCoreLayoutDataMod.default] | typings.openui5.sapUiCoreLayoutDataMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -18,7 +18,8 @@ object VirtualInterfaces {
     __obj.asInstanceOf[VirtualInterfaces]
   }
   
-  extension [Self <: VirtualInterfaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualInterfaces] (val x: Self) extends AnyVal {
     
     inline def setVirtualInterfaces(value: VirtualInterfaceList): Self = StObject.set(x, "virtualInterfaces", value.asInstanceOf[js.Any])
     

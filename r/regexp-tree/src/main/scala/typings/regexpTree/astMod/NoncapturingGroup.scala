@@ -22,7 +22,8 @@ object NoncapturingGroup {
     __obj.asInstanceOf[NoncapturingGroup]
   }
   
-  extension [Self <: NoncapturingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoncapturingGroup] (val x: Self) extends AnyVal {
     
     inline def setCapturing(value: `false`): Self = StObject.set(x, "capturing", value.asInstanceOf[js.Any])
     

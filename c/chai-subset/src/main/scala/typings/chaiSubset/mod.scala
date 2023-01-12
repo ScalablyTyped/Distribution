@@ -39,7 +39,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[Assertion]
         }
         
-        extension [Self <: Assertion](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Assertion] (val x: Self) extends AnyVal {
           
           inline def setContainSubset(value: Any => Assertion): Self = StObject.set(x, "containSubset", js.Any.fromFunction1(value))
         }

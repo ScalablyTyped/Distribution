@@ -15,7 +15,8 @@ object TypeofReceivedCreditListP {
     __obj.asInstanceOf[TypeofReceivedCreditListP]
   }
   
-  extension [Self <: TypeofReceivedCreditListP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofReceivedCreditListP] (val x: Self) extends AnyVal {
     
     inline def setLinkedFlows(value: Any): Self = StObject.set(x, "LinkedFlows", value.asInstanceOf[js.Any])
   }

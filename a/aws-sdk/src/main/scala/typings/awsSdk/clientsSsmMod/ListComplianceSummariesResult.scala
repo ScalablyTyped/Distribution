@@ -23,7 +23,8 @@ object ListComplianceSummariesResult {
     __obj.asInstanceOf[ListComplianceSummariesResult]
   }
   
-  extension [Self <: ListComplianceSummariesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComplianceSummariesResult] (val x: Self) extends AnyVal {
     
     inline def setComplianceSummaryItems(value: ComplianceSummaryItemList): Self = StObject.set(x, "ComplianceSummaryItems", value.asInstanceOf[js.Any])
     

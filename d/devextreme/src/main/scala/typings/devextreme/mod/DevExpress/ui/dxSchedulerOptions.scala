@@ -432,7 +432,8 @@ object dxSchedulerOptions {
     __obj.asInstanceOf[dxSchedulerOptions]
   }
   
-  extension [Self <: dxSchedulerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSchedulerOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptivityEnabled(value: Boolean): Self = StObject.set(x, "adaptivityEnabled", value.asInstanceOf[js.Any])
     

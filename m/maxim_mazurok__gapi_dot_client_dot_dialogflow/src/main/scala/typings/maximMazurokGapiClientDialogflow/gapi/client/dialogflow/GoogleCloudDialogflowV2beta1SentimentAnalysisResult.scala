@@ -16,7 +16,8 @@ object GoogleCloudDialogflowV2beta1SentimentAnalysisResult {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1SentimentAnalysisResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1SentimentAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1SentimentAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setQueryTextSentiment(value: GoogleCloudDialogflowV2beta1Sentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
     

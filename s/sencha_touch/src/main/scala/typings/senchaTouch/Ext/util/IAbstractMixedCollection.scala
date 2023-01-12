@@ -283,7 +283,8 @@ object IAbstractMixedCollection {
     __obj.asInstanceOf[IAbstractMixedCollection]
   }
   
-  extension [Self <: IAbstractMixedCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractMixedCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (/* key */ js.UndefOr[String], /* obj */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

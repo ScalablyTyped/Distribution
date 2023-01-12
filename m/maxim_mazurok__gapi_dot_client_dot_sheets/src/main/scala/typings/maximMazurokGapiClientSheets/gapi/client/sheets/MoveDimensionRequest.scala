@@ -24,7 +24,8 @@ object MoveDimensionRequest {
     __obj.asInstanceOf[MoveDimensionRequest]
   }
   
-  extension [Self <: MoveDimensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveDimensionRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationIndex(value: Double): Self = StObject.set(x, "destinationIndex", value.asInstanceOf[js.Any])
     

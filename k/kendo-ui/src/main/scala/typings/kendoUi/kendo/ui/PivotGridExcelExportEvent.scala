@@ -19,7 +19,8 @@ object PivotGridExcelExportEvent {
     __obj.asInstanceOf[PivotGridExcelExportEvent]
   }
   
-  extension [Self <: PivotGridExcelExportEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridExcelExportEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TestPlansWithSelection {
     __obj.asInstanceOf[TestPlansWithSelection]
   }
   
-  extension [Self <: TestPlansWithSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPlansWithSelection] (val x: Self) extends AnyVal {
     
     inline def setLastSelectedPlan(value: Double): Self = StObject.set(x, "lastSelectedPlan", value.asInstanceOf[js.Any])
     

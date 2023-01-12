@@ -78,7 +78,8 @@ object ModifyVpcEndpointRequest {
     __obj.asInstanceOf[ModifyVpcEndpointRequest]
   }
   
-  extension [Self <: ModifyVpcEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setAddRouteTableIds(value: VpcEndpointRouteTableIdList): Self = StObject.set(x, "AddRouteTableIds", value.asInstanceOf[js.Any])
     

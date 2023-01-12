@@ -17,7 +17,8 @@ object CaseValues {
     __obj.asInstanceOf[CaseValues]
   }
   
-  extension [Self <: CaseValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaseValues] (val x: Self) extends AnyVal {
     
     inline def setExpected(value: Boolean): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
     

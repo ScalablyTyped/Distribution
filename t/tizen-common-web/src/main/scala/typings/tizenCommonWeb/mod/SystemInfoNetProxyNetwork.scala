@@ -20,7 +20,8 @@ object SystemInfoNetProxyNetwork {
     __obj.asInstanceOf[SystemInfoNetProxyNetwork]
   }
   
-  extension [Self <: SystemInfoNetProxyNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoNetProxyNetwork] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

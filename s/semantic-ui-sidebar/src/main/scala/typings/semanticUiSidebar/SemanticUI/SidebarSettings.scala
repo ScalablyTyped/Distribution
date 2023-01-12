@@ -217,7 +217,8 @@ object SidebarSettings {
       __obj.asInstanceOf[Impl]
     }
     
-    extension [Self <: Impl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object Conditions {
     __obj.asInstanceOf[Conditions]
   }
   
-  extension [Self <: Conditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: ProcessCloseCondition | js.Array[ProcessCloseCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

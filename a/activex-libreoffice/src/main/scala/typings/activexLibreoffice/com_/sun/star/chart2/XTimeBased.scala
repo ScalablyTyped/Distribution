@@ -35,7 +35,8 @@ object XTimeBased {
     __obj.asInstanceOf[XTimeBased]
   }
   
-  extension [Self <: XTimeBased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTimeBased] (val x: Self) extends AnyVal {
     
     inline def setSetRange(value: (Double, Double) => Unit): Self = StObject.set(x, "setRange", js.Any.fromFunction2(value))
     

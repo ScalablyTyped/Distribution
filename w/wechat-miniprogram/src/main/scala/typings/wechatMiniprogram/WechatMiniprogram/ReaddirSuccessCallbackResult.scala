@@ -18,7 +18,8 @@ object ReaddirSuccessCallbackResult {
     __obj.asInstanceOf[ReaddirSuccessCallbackResult]
   }
   
-  extension [Self <: ReaddirSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaddirSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

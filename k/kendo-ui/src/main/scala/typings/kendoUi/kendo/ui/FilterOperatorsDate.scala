@@ -30,7 +30,8 @@ object FilterOperatorsDate {
     __obj.asInstanceOf[FilterOperatorsDate]
   }
   
-  extension [Self <: FilterOperatorsDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOperatorsDate] (val x: Self) extends AnyVal {
     
     inline def setEq_(value: String): Self = StObject.set(x, "eq", value.asInstanceOf[js.Any])
     

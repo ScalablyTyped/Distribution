@@ -19,7 +19,8 @@ object IPayInExecutionType {
     __obj.asInstanceOf[IPayInExecutionType]
   }
   
-  extension [Self <: IPayInExecutionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPayInExecutionType] (val x: Self) extends AnyVal {
     
     inline def setDirect(value: DIRECT): Self = StObject.set(x, "Direct", value.asInstanceOf[js.Any])
     

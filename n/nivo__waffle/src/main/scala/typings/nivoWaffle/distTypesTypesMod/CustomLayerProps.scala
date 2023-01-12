@@ -15,7 +15,8 @@ object CustomLayerProps {
     __obj.asInstanceOf[CustomLayerProps[RawDatum]]
   }
   
-  extension [Self <: CustomLayerProps[?], RawDatum /* <: Datum */](x: Self & CustomLayerProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLayerProps[?], RawDatum /* <: Datum */] (val x: Self & CustomLayerProps[RawDatum]) extends AnyVal {
     
     inline def setYay(value: RawDatum): Self = StObject.set(x, "yay", value.asInstanceOf[js.Any])
     

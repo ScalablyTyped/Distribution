@@ -33,7 +33,8 @@ object ISearchTermResult {
     __obj.asInstanceOf[ISearchTermResult]
   }
   
-  extension [Self <: ISearchTermResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchTermResult] (val x: Self) extends AnyVal {
     
     inline def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
     

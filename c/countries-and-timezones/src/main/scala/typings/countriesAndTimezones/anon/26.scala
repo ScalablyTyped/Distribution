@@ -26,7 +26,8 @@ object `26` {
     __obj.asInstanceOf[`26`]
   }
   
-  extension [Self <: `26`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `26`] (val x: Self) extends AnyVal {
     
     inline def setC(
       value: js.Tuple8[MZ, BI, BW, typings.countriesAndTimezones.countriesAndTimezonesStrings.CD, MW, RW, ZM, ZW]

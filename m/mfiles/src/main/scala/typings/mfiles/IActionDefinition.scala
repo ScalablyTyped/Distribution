@@ -27,7 +27,8 @@ object IActionDefinition {
     __obj.asInstanceOf[IActionDefinition]
   }
   
-  extension [Self <: IActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setActionCreateSeparateAssignment(value: IActionCreateAssignment): Self = StObject.set(x, "ActionCreateSeparateAssignment", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetRelationalDatabaseBundlesResult {
     __obj.asInstanceOf[GetRelationalDatabaseBundlesResult]
   }
   
-  extension [Self <: GetRelationalDatabaseBundlesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseBundlesResult] (val x: Self) extends AnyVal {
     
     inline def setBundles(value: RelationalDatabaseBundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     

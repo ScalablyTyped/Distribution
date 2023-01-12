@@ -56,7 +56,8 @@ object libPlotsStockTypesMod {
       __obj.asInstanceOf[StockOptions]
     }
     
-    extension [Self <: StockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StockOptions] (val x: Self) extends AnyVal {
       
       inline def setFallingFill(value: String): Self = StObject.set(x, "fallingFill", value.asInstanceOf[js.Any])
       

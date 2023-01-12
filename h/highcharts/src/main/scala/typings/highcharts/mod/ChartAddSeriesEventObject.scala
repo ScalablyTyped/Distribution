@@ -35,7 +35,8 @@ object ChartAddSeriesEventObject {
     __obj.asInstanceOf[ChartAddSeriesEventObject]
   }
   
-  extension [Self <: ChartAddSeriesEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAddSeriesEventObject] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: SeriesOptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

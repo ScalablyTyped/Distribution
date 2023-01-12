@@ -59,7 +59,8 @@ object UIkitUploadOptions {
     __obj.asInstanceOf[UIkitUploadOptions]
   }
   
-  extension [Self <: UIkitUploadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitUploadOptions] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: js.Object): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

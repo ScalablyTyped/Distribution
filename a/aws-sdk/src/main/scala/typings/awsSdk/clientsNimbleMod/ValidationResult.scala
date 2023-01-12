@@ -39,7 +39,8 @@ object ValidationResult {
     __obj.asInstanceOf[ValidationResult]
   }
   
-  extension [Self <: ValidationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
     
     inline def setState(value: LaunchProfileValidationState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

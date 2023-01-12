@@ -18,7 +18,8 @@ object GetStorageLensConfigurationTaggingResult {
     __obj.asInstanceOf[GetStorageLensConfigurationTaggingResult]
   }
   
-  extension [Self <: GetStorageLensConfigurationTaggingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageLensConfigurationTaggingResult] (val x: Self) extends AnyVal {
     
     inline def setTags(value: StorageLensTags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

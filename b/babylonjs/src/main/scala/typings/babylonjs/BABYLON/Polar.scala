@@ -236,7 +236,8 @@ object Polar {
     __obj.asInstanceOf[Polar]
   }
   
-  extension [Self <: Polar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polar] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Polar => Polar): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

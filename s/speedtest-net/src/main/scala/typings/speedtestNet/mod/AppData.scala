@@ -33,7 +33,8 @@ object AppData {
     __obj.asInstanceOf[AppData]
   }
   
-  extension [Self <: AppData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppData] (val x: Self) extends AnyVal {
     
     inline def setIspName(value: String): Self = StObject.set(x, "ispName", value.asInstanceOf[js.Any])
     

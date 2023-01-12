@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3TextInput {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3TextInput]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3TextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3TextInput] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

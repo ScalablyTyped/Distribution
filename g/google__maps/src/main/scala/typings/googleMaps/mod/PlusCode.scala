@@ -19,7 +19,8 @@ object PlusCode {
     __obj.asInstanceOf[PlusCode]
   }
   
-  extension [Self <: PlusCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusCode] (val x: Self) extends AnyVal {
     
     inline def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
     

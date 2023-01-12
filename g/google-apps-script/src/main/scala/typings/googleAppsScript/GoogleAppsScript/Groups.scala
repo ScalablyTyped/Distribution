@@ -112,7 +112,8 @@ object Groups {
       __obj.asInstanceOf[GroupsApp]
     }
     
-    extension [Self <: GroupsApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupsApp] (val x: Self) extends AnyVal {
       
       inline def setGetGroupByEmail(value: String => Group): Self = StObject.set(x, "getGroupByEmail", js.Any.fromFunction1(value))
       

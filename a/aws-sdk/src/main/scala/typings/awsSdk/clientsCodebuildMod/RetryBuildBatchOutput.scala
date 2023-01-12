@@ -15,7 +15,8 @@ object RetryBuildBatchOutput {
     __obj.asInstanceOf[RetryBuildBatchOutput]
   }
   
-  extension [Self <: RetryBuildBatchOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryBuildBatchOutput] (val x: Self) extends AnyVal {
     
     inline def setBuildBatch(value: BuildBatch): Self = StObject.set(x, "buildBatch", value.asInstanceOf[js.Any])
     

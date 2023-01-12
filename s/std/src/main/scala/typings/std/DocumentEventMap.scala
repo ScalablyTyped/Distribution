@@ -144,7 +144,8 @@ object DocumentEventMap {
     __obj.asInstanceOf[DocumentEventMap]
   }
   
-  extension [Self <: DocumentEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentEventMap] (val x: Self) extends AnyVal {
     
     inline def setDOMContentLoaded(value: Event): Self = StObject.set(x, "DOMContentLoaded", value.asInstanceOf[js.Any])
     

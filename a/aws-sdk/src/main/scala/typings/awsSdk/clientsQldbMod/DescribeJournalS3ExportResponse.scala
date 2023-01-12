@@ -18,7 +18,8 @@ object DescribeJournalS3ExportResponse {
     __obj.asInstanceOf[DescribeJournalS3ExportResponse]
   }
   
-  extension [Self <: DescribeJournalS3ExportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeJournalS3ExportResponse] (val x: Self) extends AnyVal {
     
     inline def setExportDescription(value: JournalS3ExportDescription): Self = StObject.set(x, "ExportDescription", value.asInstanceOf[js.Any])
   }

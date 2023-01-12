@@ -41,7 +41,8 @@ object libAdaptorGeometriesLineMod {
       __obj.asInstanceOf[LineGeometryOptions]
     }
     
-    extension [Self <: LineGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
       

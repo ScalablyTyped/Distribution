@@ -29,7 +29,8 @@ object AreYouSureOptions {
     __obj.asInstanceOf[AreYouSureOptions]
   }
   
-  extension [Self <: AreYouSureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreYouSureOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: js.Function): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

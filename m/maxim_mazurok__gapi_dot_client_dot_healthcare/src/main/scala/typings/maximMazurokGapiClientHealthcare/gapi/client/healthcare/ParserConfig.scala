@@ -28,7 +28,8 @@ object ParserConfig {
     __obj.asInstanceOf[ParserConfig]
   }
   
-  extension [Self <: ParserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParserConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowNullHeader(value: Boolean): Self = StObject.set(x, "allowNullHeader", value.asInstanceOf[js.Any])
     

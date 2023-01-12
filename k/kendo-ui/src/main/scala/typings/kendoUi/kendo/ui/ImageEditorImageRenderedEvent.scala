@@ -22,7 +22,8 @@ object ImageEditorImageRenderedEvent {
     __obj.asInstanceOf[ImageEditorImageRenderedEvent]
   }
   
-  extension [Self <: ImageEditorImageRenderedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorImageRenderedEvent] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: HTMLElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

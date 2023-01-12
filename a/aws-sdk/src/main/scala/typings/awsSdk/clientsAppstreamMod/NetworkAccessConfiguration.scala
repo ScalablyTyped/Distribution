@@ -23,7 +23,8 @@ object NetworkAccessConfiguration {
     __obj.asInstanceOf[NetworkAccessConfiguration]
   }
   
-  extension [Self <: NetworkAccessConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAccessConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEniId(value: String): Self = StObject.set(x, "EniId", value.asInstanceOf[js.Any])
     

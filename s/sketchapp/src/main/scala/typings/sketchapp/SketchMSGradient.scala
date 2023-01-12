@@ -36,7 +36,8 @@ object SketchMSGradient {
     __obj.asInstanceOf[SketchMSGradient]
   }
   
-  extension [Self <: SketchMSGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSGradient] (val x: Self) extends AnyVal {
     
     inline def setElipseLength(value: Double): Self = StObject.set(x, "elipseLength", value.asInstanceOf[js.Any])
     

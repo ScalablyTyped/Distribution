@@ -20,7 +20,8 @@ object ContextOptions {
     __obj.asInstanceOf[ContextOptions]
   }
   
-  extension [Self <: ContextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
     
     inline def setBidirectional(value: Boolean): Self = StObject.set(x, "bidirectional", value.asInstanceOf[js.Any])
     

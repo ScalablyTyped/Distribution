@@ -19,7 +19,8 @@ object SmartHomeV1SyncName {
     __obj.asInstanceOf[SmartHomeV1SyncName]
   }
   
-  extension [Self <: SmartHomeV1SyncName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1SyncName] (val x: Self) extends AnyVal {
     
     inline def setDefaultNames(value: js.Array[String]): Self = StObject.set(x, "defaultNames", value.asInstanceOf[js.Any])
     

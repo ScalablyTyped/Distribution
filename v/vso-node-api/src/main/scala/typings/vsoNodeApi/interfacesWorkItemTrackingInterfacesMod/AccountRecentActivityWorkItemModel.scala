@@ -74,7 +74,8 @@ object AccountRecentActivityWorkItemModel {
     __obj.asInstanceOf[AccountRecentActivityWorkItemModel]
   }
   
-  extension [Self <: AccountRecentActivityWorkItemModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRecentActivityWorkItemModel] (val x: Self) extends AnyVal {
     
     inline def setActivityDate(value: js.Date): Self = StObject.set(x, "activityDate", value.asInstanceOf[js.Any])
     

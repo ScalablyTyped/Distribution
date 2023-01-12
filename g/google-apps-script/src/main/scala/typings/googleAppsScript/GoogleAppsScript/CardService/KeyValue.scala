@@ -76,7 +76,8 @@ object KeyValue {
     __obj.asInstanceOf[KeyValue]
   }
   
-  extension [Self <: KeyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyValue] (val x: Self) extends AnyVal {
     
     inline def setSetAuthorizationAction(value: AuthorizationAction => KeyValue): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
     

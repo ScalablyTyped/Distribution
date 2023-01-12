@@ -31,7 +31,8 @@ object IAnimatedTileLayerOptions {
     __obj.asInstanceOf[IAnimatedTileLayerOptions]
   }
   
-  extension [Self <: IAnimatedTileLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimatedTileLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     

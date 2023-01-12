@@ -96,7 +96,8 @@ object DescribeNodeResponse {
     __obj.asInstanceOf[DescribeNodeResponse]
   }
   
-  extension [Self <: DescribeNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setAssetName(value: NodeAssetName): Self = StObject.set(x, "AssetName", value.asInstanceOf[js.Any])
     

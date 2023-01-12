@@ -85,7 +85,8 @@ object ITheme {
     __obj.asInstanceOf[ITheme]
   }
   
-  extension [Self <: ITheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITheme] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

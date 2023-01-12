@@ -104,7 +104,8 @@ object NotificationLegacyProps {
     __obj.asInstanceOf[NotificationLegacyProps]
   }
   
-  extension [Self <: NotificationLegacyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationLegacyProps] (val x: Self) extends AnyVal {
     
     inline def setAutoCloseTime(value: Double): Self = StObject.set(x, "autoCloseTime", value.asInstanceOf[js.Any])
     

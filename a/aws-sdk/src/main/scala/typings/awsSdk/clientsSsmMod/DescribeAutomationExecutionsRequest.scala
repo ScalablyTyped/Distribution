@@ -28,7 +28,8 @@ object DescribeAutomationExecutionsRequest {
     __obj.asInstanceOf[DescribeAutomationExecutionsRequest]
   }
   
-  extension [Self <: DescribeAutomationExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAutomationExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: AutomationExecutionFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

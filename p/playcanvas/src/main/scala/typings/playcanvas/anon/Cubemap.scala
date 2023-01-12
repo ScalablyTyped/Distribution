@@ -23,7 +23,8 @@ object Cubemap {
     __obj.asInstanceOf[Cubemap]
   }
   
-  extension [Self <: Cubemap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cubemap] (val x: Self) extends AnyVal {
     
     inline def setCubemap(value: Boolean): Self = StObject.set(x, "cubemap", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object DescribeImageReplicationStatusResponse {
     __obj.asInstanceOf[DescribeImageReplicationStatusResponse]
   }
   
-  extension [Self <: DescribeImageReplicationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageReplicationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     

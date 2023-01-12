@@ -25,7 +25,8 @@ object sql {
     __obj.asInstanceOf[sql]
   }
   
-  extension [Self <: sql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sql] (val x: Self) extends AnyVal {
     
     inline def setParseWhereClause(value: (String, FieldsIndex) => js.Promise[WhereClause]): Self = StObject.set(x, "parseWhereClause", js.Any.fromFunction2(value))
   }

@@ -17,7 +17,8 @@ object LicensePostAcknowledgement {
     __obj.asInstanceOf[LicensePostAcknowledgement]
   }
   
-  extension [Self <: LicensePostAcknowledgement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicensePostAcknowledgement] (val x: Self) extends AnyVal {
     
     inline def setLicense(value: js.Array[String]): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     

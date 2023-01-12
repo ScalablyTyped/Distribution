@@ -23,7 +23,8 @@ object AwsKinesisStreamStreamEncryptionDetails {
     __obj.asInstanceOf[AwsKinesisStreamStreamEncryptionDetails]
   }
   
-  extension [Self <: AwsKinesisStreamStreamEncryptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsKinesisStreamStreamEncryptionDetails] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: NonEmptyString): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     

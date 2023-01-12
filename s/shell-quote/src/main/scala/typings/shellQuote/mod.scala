@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: String): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
       

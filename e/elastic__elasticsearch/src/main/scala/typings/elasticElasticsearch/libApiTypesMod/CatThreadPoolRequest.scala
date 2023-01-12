@@ -19,7 +19,8 @@ object CatThreadPoolRequest {
     __obj.asInstanceOf[CatThreadPoolRequest]
   }
   
-  extension [Self <: CatThreadPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatThreadPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setThread_pool_patterns(value: Names): Self = StObject.set(x, "thread_pool_patterns", value.asInstanceOf[js.Any])
     

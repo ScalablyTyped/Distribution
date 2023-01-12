@@ -17,7 +17,8 @@ object AppearingElementAnimation {
     __obj.asInstanceOf[AppearingElementAnimation]
   }
   
-  extension [Self <: AppearingElementAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppearingElementAnimation] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
   }

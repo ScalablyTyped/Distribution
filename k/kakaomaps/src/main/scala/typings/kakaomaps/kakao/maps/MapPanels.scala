@@ -16,7 +16,8 @@ object MapPanels {
     __obj.asInstanceOf[MapPanels]
   }
   
-  extension [Self <: MapPanels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapPanels] (val x: Self) extends AnyVal {
     
     inline def setOverlayLayer(value: HTMLElement): Self = StObject.set(x, "overlayLayer", value.asInstanceOf[js.Any])
   }

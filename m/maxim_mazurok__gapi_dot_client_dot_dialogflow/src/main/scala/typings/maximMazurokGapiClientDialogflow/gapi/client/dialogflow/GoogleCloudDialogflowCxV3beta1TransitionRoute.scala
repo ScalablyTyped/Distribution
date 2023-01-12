@@ -40,7 +40,8 @@ object GoogleCloudDialogflowCxV3beta1TransitionRoute {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1TransitionRoute]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1TransitionRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1TransitionRoute] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

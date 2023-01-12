@@ -28,7 +28,8 @@ object AssetGeneratorDataUrlOptions {
     __obj.asInstanceOf[AssetGeneratorDataUrlOptions]
   }
   
-  extension [Self <: AssetGeneratorDataUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetGeneratorDataUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: `false` | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

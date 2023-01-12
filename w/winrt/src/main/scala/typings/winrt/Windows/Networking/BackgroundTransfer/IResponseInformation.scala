@@ -23,7 +23,8 @@ object IResponseInformation {
     __obj.asInstanceOf[IResponseInformation]
   }
   
-  extension [Self <: IResponseInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponseInformation] (val x: Self) extends AnyVal {
     
     inline def setActualUri(value: Uri): Self = StObject.set(x, "actualUri", value.asInstanceOf[js.Any])
     

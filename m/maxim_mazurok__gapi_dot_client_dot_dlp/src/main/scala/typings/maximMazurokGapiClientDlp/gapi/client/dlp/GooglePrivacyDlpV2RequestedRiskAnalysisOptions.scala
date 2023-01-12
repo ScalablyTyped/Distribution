@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2RequestedRiskAnalysisOptions {
     __obj.asInstanceOf[GooglePrivacyDlpV2RequestedRiskAnalysisOptions]
   }
   
-  extension [Self <: GooglePrivacyDlpV2RequestedRiskAnalysisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2RequestedRiskAnalysisOptions] (val x: Self) extends AnyVal {
     
     inline def setJobConfig(value: GooglePrivacyDlpV2RiskAnalysisJobConfig): Self = StObject.set(x, "jobConfig", value.asInstanceOf[js.Any])
     

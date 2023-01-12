@@ -15,7 +15,8 @@ object Reloaded {
     __obj.asInstanceOf[Reloaded]
   }
   
-  extension [Self <: Reloaded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reloaded] (val x: Self) extends AnyVal {
     
     inline def setReloaded(value: Boolean): Self = StObject.set(x, "reloaded", value.asInstanceOf[js.Any])
   }

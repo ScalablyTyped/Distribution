@@ -43,7 +43,8 @@ object DiscoverInstancesRequest {
     __obj.asInstanceOf[DiscoverInstancesRequest]
   }
   
-  extension [Self <: DiscoverInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscoverInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setHealthStatus(value: HealthStatusFilter): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IndexRouteProps {
     __obj.asInstanceOf[IndexRouteProps]
   }
   
-  extension [Self <: IndexRouteProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexRouteProps] (val x: Self) extends AnyVal {
     
     inline def setElement(value: ReactElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

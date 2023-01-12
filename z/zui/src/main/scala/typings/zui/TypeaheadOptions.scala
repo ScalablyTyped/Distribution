@@ -27,7 +27,8 @@ object TypeaheadOptions {
     __obj.asInstanceOf[TypeaheadOptions]
   }
   
-  extension [Self <: TypeaheadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadOptions] (val x: Self) extends AnyVal {
     
     inline def setHighlighter(value: /* item */ Any => String): Self = StObject.set(x, "highlighter", js.Any.fromFunction1(value))
     

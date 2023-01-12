@@ -29,7 +29,8 @@ object Client {
     __obj.asInstanceOf[Client]
   }
   
-  extension [Self <: Client](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
     
     inline def setAccessTokenLifetime(value: Double): Self = StObject.set(x, "accessTokenLifetime", value.asInstanceOf[js.Any])
     

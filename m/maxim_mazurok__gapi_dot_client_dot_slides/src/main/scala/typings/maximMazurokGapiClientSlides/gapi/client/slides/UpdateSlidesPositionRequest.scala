@@ -22,7 +22,8 @@ object UpdateSlidesPositionRequest {
     __obj.asInstanceOf[UpdateSlidesPositionRequest]
   }
   
-  extension [Self <: UpdateSlidesPositionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSlidesPositionRequest] (val x: Self) extends AnyVal {
     
     inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     

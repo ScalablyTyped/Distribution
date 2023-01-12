@@ -55,7 +55,8 @@ object distLibCommanderMod {
       __obj.asInstanceOf[AttachCommandsConfig[C]]
     }
     
-    extension [Self <: AttachCommandsConfig[?], C /* <: RedisCommand */](x: Self & AttachCommandsConfig[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachCommandsConfig[?], C /* <: RedisCommand */] (val x: Self & AttachCommandsConfig[C]) extends AnyVal {
       
       inline def setBaseClass(value: Instantiable[Any]): Self = StObject.set(x, "BaseClass", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object distLibCommanderMod {
       __obj.asInstanceOf[AttachExtensionsConfig[T]]
     }
     
-    extension [Self <: AttachExtensionsConfig[?], T /* <: Instantiable[Any] */](x: Self & AttachExtensionsConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachExtensionsConfig[?], T /* <: Instantiable[Any] */] (val x: Self & AttachExtensionsConfig[T]) extends AnyVal {
       
       inline def setBaseClass(value: T): Self = StObject.set(x, "BaseClass", value.asInstanceOf[js.Any])
       

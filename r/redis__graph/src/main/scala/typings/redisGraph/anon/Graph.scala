@@ -15,7 +15,8 @@ object Graph {
     __obj.asInstanceOf[Graph]
   }
   
-  extension [Self <: Graph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: Query): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object PositionNormalTextureVertex {
     __obj.asInstanceOf[PositionNormalTextureVertex]
   }
   
-  extension [Self <: PositionNormalTextureVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionNormalTextureVertex] (val x: Self) extends AnyVal {
     
     inline def setNormal(value: Vector3): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     

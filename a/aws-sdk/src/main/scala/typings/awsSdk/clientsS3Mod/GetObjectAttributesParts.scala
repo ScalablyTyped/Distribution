@@ -43,7 +43,8 @@ object GetObjectAttributesParts {
     __obj.asInstanceOf[GetObjectAttributesParts]
   }
   
-  extension [Self <: GetObjectAttributesParts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectAttributesParts] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object OnThemeChangeCallbackResult {
     __obj.asInstanceOf[OnThemeChangeCallbackResult]
   }
   
-  extension [Self <: OnThemeChangeCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnThemeChangeCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setTheme(value: dark | light): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
   }

@@ -323,7 +323,8 @@ object SealSign {
     __obj.asInstanceOf[SealSign]
   }
   
-  extension [Self <: SealSign](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SealSign] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

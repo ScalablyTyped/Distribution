@@ -28,7 +28,8 @@ object ActiveArcOpacity {
     __obj.asInstanceOf[ActiveArcOpacity]
   }
   
-  extension [Self <: ActiveArcOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveArcOpacity] (val x: Self) extends AnyVal {
     
     inline def setActiveArcOpacity(value: Double): Self = StObject.set(x, "activeArcOpacity", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DescribeSessionsRequest {
     __obj.asInstanceOf[DescribeSessionsRequest]
   }
   
-  extension [Self <: DescribeSessionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSessionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ChartDataValue {
     __obj.asInstanceOf[ChartDataValue]
   }
   
-  extension [Self <: ChartDataValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataValue] (val x: Self) extends AnyVal {
     
     inline def setHighError(value: Double): Self = StObject.set(x, "HighError", value.asInstanceOf[js.Any])
     

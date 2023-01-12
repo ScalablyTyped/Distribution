@@ -24,7 +24,8 @@ object SubSlotValueElicitationSetting {
     __obj.asInstanceOf[SubSlotValueElicitationSetting]
   }
   
-  extension [Self <: SubSlotValueElicitationSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubSlotValueElicitationSetting] (val x: Self) extends AnyVal {
     
     inline def setDefaultValueSpecification(value: SlotDefaultValueSpecification): Self = StObject.set(x, "defaultValueSpecification", value.asInstanceOf[js.Any])
     

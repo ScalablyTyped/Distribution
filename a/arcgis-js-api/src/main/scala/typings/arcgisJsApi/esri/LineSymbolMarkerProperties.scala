@@ -47,7 +47,8 @@ object LineSymbolMarkerProperties {
     __obj.asInstanceOf[LineSymbolMarkerProperties]
   }
   
-  extension [Self <: LineSymbolMarkerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSymbolMarkerProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CanceledFailed {
     __obj.asInstanceOf[CanceledFailed]
   }
   
-  extension [Self <: CanceledFailed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanceledFailed] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     

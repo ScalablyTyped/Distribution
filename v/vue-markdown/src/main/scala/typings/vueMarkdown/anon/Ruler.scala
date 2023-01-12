@@ -32,7 +32,8 @@ object Ruler {
     __obj.asInstanceOf[Ruler]
   }
   
-  extension [Self <: Ruler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ruler] (val x: Self) extends AnyVal {
     
     inline def setParse(value: scala.Any): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     

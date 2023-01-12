@@ -15,7 +15,8 @@ object Stop {
     __obj.asInstanceOf[Stop]
   }
   
-  extension [Self <: Stop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
     
     inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }

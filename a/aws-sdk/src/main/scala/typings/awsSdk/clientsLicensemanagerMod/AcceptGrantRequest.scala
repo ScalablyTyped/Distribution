@@ -18,7 +18,8 @@ object AcceptGrantRequest {
     __obj.asInstanceOf[AcceptGrantRequest]
   }
   
-  extension [Self <: AcceptGrantRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptGrantRequest] (val x: Self) extends AnyVal {
     
     inline def setGrantArn(value: Arn): Self = StObject.set(x, "GrantArn", value.asInstanceOf[js.Any])
   }

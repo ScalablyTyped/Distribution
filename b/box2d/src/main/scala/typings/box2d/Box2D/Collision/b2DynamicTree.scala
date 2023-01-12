@@ -87,7 +87,8 @@ object b2DynamicTree {
     __obj.asInstanceOf[b2DynamicTree]
   }
   
-  extension [Self <: b2DynamicTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2DynamicTree] (val x: Self) extends AnyVal {
     
     inline def setCreateProxy(value: (b2AABB, Any) => b2DynamicTreeNode): Self = StObject.set(x, "CreateProxy", js.Any.fromFunction2(value))
     

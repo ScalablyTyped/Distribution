@@ -18,7 +18,8 @@ object DeleteKeyPairResult {
     __obj.asInstanceOf[DeleteKeyPairResult]
   }
   
-  extension [Self <: DeleteKeyPairResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKeyPairResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

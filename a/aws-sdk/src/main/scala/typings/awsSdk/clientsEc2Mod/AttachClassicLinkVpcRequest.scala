@@ -33,7 +33,8 @@ object AttachClassicLinkVpcRequest {
     __obj.asInstanceOf[AttachClassicLinkVpcRequest]
   }
   
-  extension [Self <: AttachClassicLinkVpcRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachClassicLinkVpcRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

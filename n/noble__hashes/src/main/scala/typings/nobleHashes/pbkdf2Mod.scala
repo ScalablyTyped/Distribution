@@ -31,7 +31,8 @@ object pbkdf2Mod {
       __obj.asInstanceOf[Pbkdf2Opt]
     }
     
-    extension [Self <: Pbkdf2Opt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pbkdf2Opt] (val x: Self) extends AnyVal {
       
       inline def setAsyncTick(value: Double): Self = StObject.set(x, "asyncTick", value.asInstanceOf[js.Any])
       

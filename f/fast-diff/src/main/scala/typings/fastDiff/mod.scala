@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[CursorInfo]
     }
     
-    extension [Self <: CursorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorInfo] (val x: Self) extends AnyVal {
       
       inline def setNewRange(value: Index): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
       

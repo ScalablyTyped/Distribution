@@ -24,7 +24,8 @@ object GeneratorOptions {
     __obj.asInstanceOf[GeneratorOptions]
   }
   
-  extension [Self <: GeneratorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratorOptions] (val x: Self) extends AnyVal {
     
     inline def setAllPrefixes(value: Boolean): Self = StObject.set(x, "allPrefixes", value.asInstanceOf[js.Any])
     

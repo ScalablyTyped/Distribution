@@ -19,7 +19,8 @@ object UriFileInput {
     __obj.asInstanceOf[UriFileInput]
   }
   
-  extension [Self <: UriFileInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UriFileInput] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     

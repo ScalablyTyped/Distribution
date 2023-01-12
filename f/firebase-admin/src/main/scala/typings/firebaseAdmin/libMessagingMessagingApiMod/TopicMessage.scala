@@ -18,7 +18,8 @@ object TopicMessage {
     __obj.asInstanceOf[TopicMessage]
   }
   
-  extension [Self <: TopicMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicMessage] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }

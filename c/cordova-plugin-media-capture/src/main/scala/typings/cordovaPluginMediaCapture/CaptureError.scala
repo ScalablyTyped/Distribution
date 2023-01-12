@@ -31,7 +31,8 @@ object CaptureError {
     __obj.asInstanceOf[CaptureError]
   }
   
-  extension [Self <: CaptureError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptureError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

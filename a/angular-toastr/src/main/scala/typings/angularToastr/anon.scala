@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Progressbar]
     }
     
-    extension [Self <: Progressbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progressbar] (val x: Self) extends AnyVal {
       
       inline def setProgressbar(value: String): Self = StObject.set(x, "progressbar", value.asInstanceOf[js.Any])
       

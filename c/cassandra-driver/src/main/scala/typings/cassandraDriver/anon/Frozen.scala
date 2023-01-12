@@ -17,7 +17,8 @@ object Frozen {
     __obj.asInstanceOf[Frozen]
   }
   
-  extension [Self <: Frozen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Frozen] (val x: Self) extends AnyVal {
     
     inline def setFrozen(value: Boolean): Self = StObject.set(x, "frozen", value.asInstanceOf[js.Any])
     

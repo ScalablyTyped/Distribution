@@ -19,7 +19,8 @@ object BridgeId {
     __obj.asInstanceOf[BridgeId]
   }
   
-  extension [Self <: BridgeId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgeId] (val x: Self) extends AnyVal {
     
     inline def setBridgeId(value: String): Self = StObject.set(x, "bridgeId", value.asInstanceOf[js.Any])
     

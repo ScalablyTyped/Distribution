@@ -79,7 +79,8 @@ object GetImagesInput {
     __obj.asInstanceOf[GetImagesInput]
   }
   
-  extension [Self <: GetImagesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImagesInput] (val x: Self) extends AnyVal {
     
     inline def setEndTimestamp(value: js.Date): Self = StObject.set(x, "EndTimestamp", value.asInstanceOf[js.Any])
     

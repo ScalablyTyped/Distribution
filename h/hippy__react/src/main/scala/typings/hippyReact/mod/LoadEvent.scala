@@ -15,7 +15,8 @@ object LoadEvent {
     __obj.asInstanceOf[LoadEvent]
   }
   
-  extension [Self <: LoadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadEvent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

@@ -87,7 +87,8 @@ object distComponentsPanelMod {
       __obj.asInstanceOf[KnobPanelOptions]
     }
     
-    extension [Self <: KnobPanelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobPanelOptions] (val x: Self) extends AnyVal {
       
       inline def setTimestamps(value: Boolean): Self = StObject.set(x, "timestamps", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distComponentsPanelMod {
       __obj.asInstanceOf[KnobPanelProps]
     }
     
-    extension [Self <: KnobPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobPanelProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object distComponentsPanelMod {
       __obj.asInstanceOf[KnobPanelState]
     }
     
-    extension [Self <: KnobPanelState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnobPanelState] (val x: Self) extends AnyVal {
       
       inline def setKnobs(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     }

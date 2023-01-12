@@ -23,7 +23,8 @@ object DeleteKeySigningKeyRequest {
     __obj.asInstanceOf[DeleteKeySigningKeyRequest]
   }
   
-  extension [Self <: DeleteKeySigningKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteKeySigningKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

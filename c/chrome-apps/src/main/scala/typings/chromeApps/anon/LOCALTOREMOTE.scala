@@ -19,7 +19,8 @@ object LOCALTOREMOTE {
     __obj.asInstanceOf[LOCALTOREMOTE]
   }
   
-  extension [Self <: LOCALTOREMOTE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LOCALTOREMOTE] (val x: Self) extends AnyVal {
     
     inline def setLOCAL_TO_REMOTE(value: local_to_remote_): Self = StObject.set(x, "LOCAL_TO_REMOTE", value.asInstanceOf[js.Any])
     

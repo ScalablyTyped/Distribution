@@ -18,7 +18,8 @@ object DocumentRangeFormattingClientCapabilities {
     __obj.asInstanceOf[DocumentRangeFormattingClientCapabilities]
   }
   
-  extension [Self <: DocumentRangeFormattingClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRangeFormattingClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

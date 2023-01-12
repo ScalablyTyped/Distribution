@@ -47,7 +47,8 @@ object babylonjsCamerasCameraAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.legacyLegacyMod.babylonjsCamerasCameraAugmentingMod.Camera]
     }
     
-    extension [Self <: typings.babylonjs.legacyLegacyMod.babylonjsCamerasCameraAugmentingMod.Camera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.legacyLegacyMod.babylonjsCamerasCameraAugmentingMod.Camera] (val x: Self) extends AnyVal {
       
       inline def set_multiviewTexture(value: Nullable[typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTexture]): Self = StObject.set(x, "_multiviewTexture", value.asInstanceOf[js.Any])
       

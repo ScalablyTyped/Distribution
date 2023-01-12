@@ -16,7 +16,8 @@ object GoogleFirestoreAdminV1ExportDocumentsResponse {
     __obj.asInstanceOf[GoogleFirestoreAdminV1ExportDocumentsResponse]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1ExportDocumentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1ExportDocumentsResponse] (val x: Self) extends AnyVal {
     
     inline def setOutputUriPrefix(value: String): Self = StObject.set(x, "outputUriPrefix", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ElevationProfileLineQueryProperties {
     __obj.asInstanceOf[ElevationProfileLineQueryProperties]
   }
   
-  extension [Self <: ElevationProfileLineQueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationProfileLineQueryProperties] (val x: Self) extends AnyVal {
     
     inline def setSource(value: ElevationProfileLineQuerySource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

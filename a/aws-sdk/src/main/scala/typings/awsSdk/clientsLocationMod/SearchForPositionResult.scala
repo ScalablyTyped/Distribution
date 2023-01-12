@@ -28,7 +28,8 @@ object SearchForPositionResult {
     __obj.asInstanceOf[SearchForPositionResult]
   }
   
-  extension [Self <: SearchForPositionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchForPositionResult] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: SearchForPositionResultDistanceDouble): Self = StObject.set(x, "Distance", value.asInstanceOf[js.Any])
     

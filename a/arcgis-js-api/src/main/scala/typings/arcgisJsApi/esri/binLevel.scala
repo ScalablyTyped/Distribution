@@ -25,7 +25,8 @@ object binLevel {
     __obj.asInstanceOf[binLevel]
   }
   
-  extension [Self <: binLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: binLevel] (val x: Self) extends AnyVal {
     
     inline def setBinLevel(value: binLevelBinLevelParams => js.Promise[Double]): Self = StObject.set(x, "binLevel", js.Any.fromFunction1(value))
   }

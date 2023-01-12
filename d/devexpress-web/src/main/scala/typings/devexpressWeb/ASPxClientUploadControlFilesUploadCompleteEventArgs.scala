@@ -28,7 +28,8 @@ object ASPxClientUploadControlFilesUploadCompleteEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlFilesUploadCompleteEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlFilesUploadCompleteEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlFilesUploadCompleteEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCallbackData(value: String): Self = StObject.set(x, "callbackData", value.asInstanceOf[js.Any])
     

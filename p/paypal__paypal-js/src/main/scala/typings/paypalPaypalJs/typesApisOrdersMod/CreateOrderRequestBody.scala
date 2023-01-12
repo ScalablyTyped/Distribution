@@ -21,7 +21,8 @@ object CreateOrderRequestBody {
     __obj.asInstanceOf[CreateOrderRequestBody]
   }
   
-  extension [Self <: CreateOrderRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOrderRequestBody] (val x: Self) extends AnyVal {
     
     inline def setApplication_context(value: OrderApplicationContext): Self = StObject.set(x, "application_context", value.asInstanceOf[js.Any])
     

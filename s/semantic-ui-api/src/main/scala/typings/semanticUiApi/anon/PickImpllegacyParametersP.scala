@@ -43,7 +43,8 @@ object PickImpllegacyParametersP {
     __obj.asInstanceOf[PickImpllegacyParametersP]
   }
   
-  extension [Self <: PickImpllegacyParametersP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpllegacyParametersP] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

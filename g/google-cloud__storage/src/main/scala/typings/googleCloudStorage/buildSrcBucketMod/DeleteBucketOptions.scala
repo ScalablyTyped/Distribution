@@ -17,7 +17,8 @@ object DeleteBucketOptions {
     __obj.asInstanceOf[DeleteBucketOptions]
   }
   
-  extension [Self <: DeleteBucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBucketOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreNotFound(value: Boolean): Self = StObject.set(x, "ignoreNotFound", value.asInstanceOf[js.Any])
     

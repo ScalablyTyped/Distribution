@@ -79,7 +79,8 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
       __obj.asInstanceOf[AbstractMesh]
     }
     
-    extension [Self <: AbstractMesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractMesh] (val x: Self) extends AnyVal {
       
       inline def setForceRenderingWhenOccluded(value: Boolean): Self = StObject.set(x, "forceRenderingWhenOccluded", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object AccountClaims {
     __obj.asInstanceOf[AccountClaims]
   }
   
-  extension [Self <: AccountClaims](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountClaims] (val x: Self) extends AnyVal {
     
     inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
   }

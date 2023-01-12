@@ -130,7 +130,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RestlerOptions]
     }
     
-    extension [Self <: RestlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestlerOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RestlerResult]
     }
     
-    extension [Self <: RestlerResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestlerResult] (val x: Self) extends AnyVal {
       
       inline def setOn(
         value: (String, js.Function2[

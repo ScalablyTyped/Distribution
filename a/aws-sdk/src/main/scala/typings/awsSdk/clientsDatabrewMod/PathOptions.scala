@@ -28,7 +28,8 @@ object PathOptions {
     __obj.asInstanceOf[PathOptions]
   }
   
-  extension [Self <: PathOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
     
     inline def setFilesLimit(value: FilesLimit): Self = StObject.set(x, "FilesLimit", value.asInstanceOf[js.Any])
     

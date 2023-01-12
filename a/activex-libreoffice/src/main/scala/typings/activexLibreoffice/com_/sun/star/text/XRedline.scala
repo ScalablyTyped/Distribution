@@ -21,7 +21,8 @@ object XRedline {
     __obj.asInstanceOf[XRedline]
   }
   
-  extension [Self <: XRedline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRedline] (val x: Self) extends AnyVal {
     
     inline def setMakeRedline(value: (String, PropertyValues) => Unit): Self = StObject.set(x, "makeRedline", js.Any.fromFunction2(value))
   }

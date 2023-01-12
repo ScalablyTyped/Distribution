@@ -18,7 +18,8 @@ object RTCCertificate {
     __obj.asInstanceOf[RTCCertificate]
   }
   
-  extension [Self <: RTCCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCCertificate] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
     

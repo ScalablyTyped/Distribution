@@ -20,7 +20,8 @@ object LineStyle {
     __obj.asInstanceOf[LineStyle]
   }
   
-  extension [Self <: LineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineStyle] (val x: Self) extends AnyVal {
     
     inline def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     

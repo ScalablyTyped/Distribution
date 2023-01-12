@@ -24,7 +24,8 @@ object GlobalProperties {
     __obj.asInstanceOf[GlobalProperties]
   }
   
-  extension [Self <: GlobalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalProperties] (val x: Self) extends AnyVal {
     
     inline def setAccumulated(value: Value): Self = StObject.set(x, "accumulated", value.asInstanceOf[js.Any])
     

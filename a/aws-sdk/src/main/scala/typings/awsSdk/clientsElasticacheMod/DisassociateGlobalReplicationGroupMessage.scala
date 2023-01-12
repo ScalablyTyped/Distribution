@@ -28,7 +28,8 @@ object DisassociateGlobalReplicationGroupMessage {
     __obj.asInstanceOf[DisassociateGlobalReplicationGroupMessage]
   }
   
-  extension [Self <: DisassociateGlobalReplicationGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
     

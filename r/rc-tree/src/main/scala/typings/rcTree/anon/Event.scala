@@ -32,7 +32,8 @@ object Event {
     __obj.asInstanceOf[Event[TreeDataType]]
   }
   
-  extension [Self <: Event[?], TreeDataType /* <: BasicDataNode */](x: Self & Event[TreeDataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Event[?], TreeDataType /* <: BasicDataNode */] (val x: Self & Event[TreeDataType]) extends AnyVal {
     
     inline def setEvent(value: select): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

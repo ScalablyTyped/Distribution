@@ -43,7 +43,8 @@ object List {
     __obj.asInstanceOf[typings.sharepoint.CUI.List[T]]
   }
   
-  extension [Self <: typings.sharepoint.CUI.List[?], T](x: Self & typings.sharepoint.CUI.List[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.sharepoint.CUI.List[?], T] (val x: Self & typings.sharepoint.CUI.List[T]) extends AnyVal {
     
     inline def setAdd(value: T => scala.Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

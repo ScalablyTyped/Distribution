@@ -71,7 +71,8 @@ object Group {
       __obj.asInstanceOf[GroupConfig]
     }
     
-    extension [Self <: GroupConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupConfig] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -354,7 +355,8 @@ object Group {
       __obj.asInstanceOf[GroupCreateConfig]
     }
     
-    extension [Self <: GroupCreateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupCreateConfig] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

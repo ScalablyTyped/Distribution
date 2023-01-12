@@ -27,7 +27,8 @@ object PickImplelementSizePartia {
     __obj.asInstanceOf[PickImplelementSizePartia]
   }
   
-  extension [Self <: PickImplelementSizePartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplelementSizePartia] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

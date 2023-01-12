@@ -18,7 +18,8 @@ object `248` {
     __obj.asInstanceOf[`248`]
   }
   
-  extension [Self <: `248`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `248`] (val x: Self) extends AnyVal {
     
     inline def setSince(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since-user'] */ js.Any

@@ -19,7 +19,8 @@ object ConditionalMergeTagRule {
     __obj.asInstanceOf[ConditionalMergeTagRule]
   }
   
-  extension [Self <: ConditionalMergeTagRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalMergeTagRule] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

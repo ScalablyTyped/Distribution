@@ -34,7 +34,8 @@ object LoRaWANGateway {
     __obj.asInstanceOf[LoRaWANGateway]
   }
   
-  extension [Self <: LoRaWANGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANGateway] (val x: Self) extends AnyVal {
     
     inline def setBeaconing(value: Beaconing): Self = StObject.set(x, "Beaconing", value.asInstanceOf[js.Any])
     

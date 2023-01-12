@@ -19,7 +19,8 @@ object SetRuleSelectorRequest {
     __obj.asInstanceOf[SetRuleSelectorRequest]
   }
   
-  extension [Self <: SetRuleSelectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRuleSelectorRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

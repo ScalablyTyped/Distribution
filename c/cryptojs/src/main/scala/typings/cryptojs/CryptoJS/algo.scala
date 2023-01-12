@@ -80,7 +80,8 @@ object algo {
       __obj.asInstanceOf[AlgoStatic]
     }
     
-    extension [Self <: AlgoStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlgoStatic] (val x: Self) extends AnyVal {
       
       inline def setAES(value: AES): Self = StObject.set(x, "AES", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object algo {
       __obj.asInstanceOf[IEvpKDFCfg]
     }
     
-    extension [Self <: IEvpKDFCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEvpKDFCfg] (val x: Self) extends AnyVal {
       
       inline def setHasher(value: Hasher): Self = StObject.set(x, "hasher", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object algo {
       __obj.asInstanceOf[ISHA3Cfg]
     }
     
-    extension [Self <: ISHA3Cfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISHA3Cfg] (val x: Self) extends AnyVal {
       
       inline def setOutputLength(value: Double): Self = StObject.set(x, "outputLength", value.asInstanceOf[js.Any])
       

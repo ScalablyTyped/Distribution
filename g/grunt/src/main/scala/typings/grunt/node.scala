@@ -28,7 +28,8 @@ object node {
       __obj.asInstanceOf[NodePackage]
     }
     
-    extension [Self <: NodePackage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodePackage] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

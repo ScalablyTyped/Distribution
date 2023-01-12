@@ -48,7 +48,8 @@ object ConfigTypeData {
     __obj.asInstanceOf[ConfigTypeData]
   }
   
-  extension [Self <: ConfigTypeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigTypeData] (val x: Self) extends AnyVal {
     
     inline def setAntennaDownlinkConfig(value: AntennaDownlinkConfig): Self = StObject.set(x, "antennaDownlinkConfig", value.asInstanceOf[js.Any])
     

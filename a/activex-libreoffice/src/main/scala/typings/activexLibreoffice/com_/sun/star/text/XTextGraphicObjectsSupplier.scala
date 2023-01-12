@@ -31,7 +31,8 @@ object XTextGraphicObjectsSupplier {
     __obj.asInstanceOf[XTextGraphicObjectsSupplier]
   }
   
-  extension [Self <: XTextGraphicObjectsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextGraphicObjectsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetGraphicObjects(value: () => XNameAccess): Self = StObject.set(x, "getGraphicObjects", js.Any.fromFunction0(value))
     

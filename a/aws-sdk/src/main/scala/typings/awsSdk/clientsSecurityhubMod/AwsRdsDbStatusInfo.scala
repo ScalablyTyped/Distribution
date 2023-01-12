@@ -33,7 +33,8 @@ object AwsRdsDbStatusInfo {
     __obj.asInstanceOf[AwsRdsDbStatusInfo]
   }
   
-  extension [Self <: AwsRdsDbStatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbStatusInfo] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NonEmptyString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object AppRegistry {
     __obj.asInstanceOf[AppRegistry]
   }
   
-  extension [Self <: AppRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRegistry] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: (String, AppRegistryOptions, HTMLElement) => Unit): Self = StObject.set(x, "register", js.Any.fromFunction3(value))
     

@@ -86,7 +86,8 @@ object SignedTransaction {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setRawTxnBytes(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "rawTxnBytes", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object inquirer {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setLine(value: String): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
@@ -76,7 +77,8 @@ object inquirer {
         __obj.asInstanceOf[FailedPromptStateData]
       }
       
-      extension [Self <: FailedPromptStateData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FailedPromptStateData] (val x: Self) extends AnyVal {
         
         inline def setIsValid(value: `false` | String): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       }
@@ -107,7 +109,8 @@ object inquirer {
         __obj.asInstanceOf[PromptBase]
       }
       
-      extension [Self <: PromptBase](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromptBase] (val x: Self) extends AnyVal {
         
         inline def setRun(value: () => js.Promise[Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
         
@@ -165,7 +168,8 @@ object inquirer {
         __obj.asInstanceOf[PromptEventPipes[T]]
       }
       
-      extension [Self <: PromptEventPipes[?], T](x: Self & PromptEventPipes[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromptEventPipes[?], T] (val x: Self & PromptEventPipes[T]) extends AnyVal {
         
         inline def setError(value: Observable_[FailedPromptStateData]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -203,7 +207,8 @@ object inquirer {
         __obj.asInstanceOf[PromptStateData]
       }
       
-      extension [Self <: PromptStateData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PromptStateData] (val x: Self) extends AnyVal {
         
         inline def setIsValid(value: String | Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       }
@@ -237,7 +242,8 @@ object inquirer {
         __obj.asInstanceOf[SuccessfulPromptStateData[T]]
       }
       
-      extension [Self <: SuccessfulPromptStateData[?], T](x: Self & SuccessfulPromptStateData[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuccessfulPromptStateData[?], T] (val x: Self & SuccessfulPromptStateData[T]) extends AnyVal {
         
         inline def setIsValid(value: `true`): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
         
@@ -325,7 +331,8 @@ object inquirer {
         __obj.asInstanceOf[BottomBarOptions]
       }
       
-      extension [Self <: BottomBarOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BottomBarOptions] (val x: Self) extends AnyVal {
         
         inline def setBottomBar(value: String): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
         
@@ -355,7 +362,8 @@ object inquirer {
         __obj.asInstanceOf[FetchedAnswer]
       }
       
-      extension [Self <: FetchedAnswer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FetchedAnswer] (val x: Self) extends AnyVal {
         
         inline def setAnswer(value: Any): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
         

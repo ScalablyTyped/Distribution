@@ -48,7 +48,8 @@ object Workspace {
     __obj.asInstanceOf[Workspace]
   }
   
-  extension [Self <: Workspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
     
     inline def setCollection_count(value: Double): Self = StObject.set(x, "collection_count", value.asInstanceOf[js.Any])
     

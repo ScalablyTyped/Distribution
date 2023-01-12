@@ -26,7 +26,8 @@ object libSrcParserCreateParserMod {
       __obj.asInstanceOf[Parser]
     }
     
-    extension [Self <: Parser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (String, ParamTypes) => js.Array[StatementNode]): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     }

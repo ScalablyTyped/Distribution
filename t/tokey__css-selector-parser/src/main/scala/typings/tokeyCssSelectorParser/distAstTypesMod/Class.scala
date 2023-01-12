@@ -24,7 +24,8 @@ object Class {
     __obj.asInstanceOf[Class]
   }
   
-  extension [Self <: Class](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
     
     inline def setDotComments(value: SelectorNodes): Self = StObject.set(x, "dotComments", value.asInstanceOf[js.Any])
     

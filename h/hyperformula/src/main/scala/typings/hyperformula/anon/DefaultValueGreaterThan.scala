@@ -22,7 +22,8 @@ object DefaultValueGreaterThan {
     __obj.asInstanceOf[DefaultValueGreaterThan]
   }
   
-  extension [Self <: DefaultValueGreaterThan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValueGreaterThan] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

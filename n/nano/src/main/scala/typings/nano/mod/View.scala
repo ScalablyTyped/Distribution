@@ -17,7 +17,8 @@ object View {
     __obj.asInstanceOf[View[D]]
   }
   
-  extension [Self <: View[?], D](x: Self & View[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: View[?], D] (val x: Self & View[D]) extends AnyVal {
     
     inline def setMap(value: String | DocumentInfer[D]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SetScopeTextResponse {
     __obj.asInstanceOf[SetScopeTextResponse]
   }
   
-  extension [Self <: SetScopeTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScopeTextResponse] (val x: Self) extends AnyVal {
     
     inline def setScope(value: CSSScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
   }

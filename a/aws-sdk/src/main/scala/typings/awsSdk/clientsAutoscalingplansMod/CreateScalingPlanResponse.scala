@@ -18,7 +18,8 @@ object CreateScalingPlanResponse {
     __obj.asInstanceOf[CreateScalingPlanResponse]
   }
   
-  extension [Self <: CreateScalingPlanResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScalingPlanResponse] (val x: Self) extends AnyVal {
     
     inline def setScalingPlanVersion(value: ScalingPlanVersion): Self = StObject.set(x, "ScalingPlanVersion", value.asInstanceOf[js.Any])
   }

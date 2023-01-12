@@ -24,7 +24,8 @@ object ResolveFilterTransform {
     __obj.asInstanceOf[ResolveFilterTransform]
   }
   
-  extension [Self <: ResolveFilterTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveFilterTransform] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: SignalRef): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

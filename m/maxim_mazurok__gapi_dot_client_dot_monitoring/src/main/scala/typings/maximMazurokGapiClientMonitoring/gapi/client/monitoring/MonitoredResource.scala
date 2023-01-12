@@ -28,7 +28,8 @@ object MonitoredResource {
     __obj.asInstanceOf[MonitoredResource]
   }
   
-  extension [Self <: MonitoredResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoredResource] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

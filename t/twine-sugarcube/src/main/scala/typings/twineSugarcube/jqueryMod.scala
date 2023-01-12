@@ -44,7 +44,8 @@ object jqueryMod {
           __obj.asInstanceOf[PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        extension [Self <: PassageNavigationEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PassageNavigationEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageNavigationEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           inline def setPassage(value: Passage): Self = StObject.set(x, "passage", value.asInstanceOf[js.Any])
         }
@@ -82,7 +83,8 @@ object jqueryMod {
           __obj.asInstanceOf[PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        extension [Self <: PassageRenderingEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PassageRenderingEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           inline def setContent(value: HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         }
@@ -123,7 +125,8 @@ object jqueryMod {
           __obj.asInstanceOf[TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget]]
         }
         
-        extension [Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TypeToTriggeredEventMap[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (TypeToTriggeredEventMap[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
           
           inline def setColonpassagedisplay(value: PassageRenderingEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]): Self = StObject.set(x, ":passagedisplay", value.asInstanceOf[js.Any])
           

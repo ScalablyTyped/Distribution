@@ -110,7 +110,8 @@ object EventInput {
     __obj.asInstanceOf[EventInput]
   }
   
-  extension [Self <: EventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventInput] (val x: Self) extends AnyVal {
     
     inline def setAllDay(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : infer RawType): infer RefinedType ? any extends RawType ? RefinedType : RawType : never */ js.Any

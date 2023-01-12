@@ -21,7 +21,8 @@ object CloudFront {
     __obj.asInstanceOf[CloudFront]
   }
   
-  extension [Self <: CloudFront](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFront] (val x: Self) extends AnyVal {
     
     inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     

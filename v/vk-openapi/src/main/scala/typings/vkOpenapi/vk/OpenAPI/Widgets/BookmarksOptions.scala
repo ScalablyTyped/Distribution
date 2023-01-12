@@ -22,7 +22,8 @@ object BookmarksOptions {
     __obj.asInstanceOf[BookmarksOptions]
   }
   
-  extension [Self <: BookmarksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarksOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

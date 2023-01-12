@@ -36,7 +36,8 @@ object UnixConnectOptions {
     __obj.asInstanceOf[UnixConnectOptions]
   }
   
-  extension [Self <: UnixConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

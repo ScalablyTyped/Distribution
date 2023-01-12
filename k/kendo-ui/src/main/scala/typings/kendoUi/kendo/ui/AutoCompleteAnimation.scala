@@ -17,7 +17,8 @@ object AutoCompleteAnimation {
     __obj.asInstanceOf[AutoCompleteAnimation]
   }
   
-  extension [Self <: AutoCompleteAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: AutoCompleteAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

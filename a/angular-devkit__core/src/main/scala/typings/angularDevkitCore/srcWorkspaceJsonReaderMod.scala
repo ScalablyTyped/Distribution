@@ -28,7 +28,8 @@ object srcWorkspaceJsonReaderMod {
       __obj.asInstanceOf[JsonWorkspaceOptions]
     }
     
-    extension [Self <: JsonWorkspaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonWorkspaceOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowedProjectExtensions(value: js.Array[String]): Self = StObject.set(x, "allowedProjectExtensions", value.asInstanceOf[js.Any])
       

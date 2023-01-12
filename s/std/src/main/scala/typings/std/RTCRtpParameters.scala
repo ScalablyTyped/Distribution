@@ -26,7 +26,8 @@ object RTCRtpParameters {
     __obj.asInstanceOf[RTCRtpParameters]
   }
   
-  extension [Self <: RTCRtpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpParameters] (val x: Self) extends AnyVal {
     
     inline def setCodecs(value: js.Array[RTCRtpCodecParameters]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
     

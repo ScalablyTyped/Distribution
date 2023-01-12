@@ -44,7 +44,8 @@ object libEnMod {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setApostrophe(value: Boolean): Self = StObject.set(x, "apostrophe", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object typesAliasListEntryMod {
       __obj.asInstanceOf[AliasListEntry]
     }
     
-    extension [Self <: AliasListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasListEntry] (val x: Self) extends AnyVal {
       
       inline def setAliasArn(value: String): Self = StObject.set(x, "AliasArn", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object StatelessCustomActionDefinition {
     __obj.asInstanceOf[StatelessCustomActionDefinition]
   }
   
-  extension [Self <: StatelessCustomActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessCustomActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setPublishMetricAction(value: StatelessCustomPublishMetricAction): Self = StObject.set(x, "PublishMetricAction", value.asInstanceOf[js.Any])
     

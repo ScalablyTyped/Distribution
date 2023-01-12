@@ -15,7 +15,8 @@ object Localpart {
     __obj.asInstanceOf[Localpart]
   }
   
-  extension [Self <: Localpart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Localpart] (val x: Self) extends AnyVal {
     
     inline def setLocalpart(value: String): Self = StObject.set(x, "localpart", value.asInstanceOf[js.Any])
   }

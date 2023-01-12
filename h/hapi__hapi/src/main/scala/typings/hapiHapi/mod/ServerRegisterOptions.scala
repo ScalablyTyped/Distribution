@@ -25,7 +25,8 @@ object ServerRegisterOptions {
     __obj.asInstanceOf[ServerRegisterOptions]
   }
   
-  extension [Self <: ServerRegisterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerRegisterOptions] (val x: Self) extends AnyVal {
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object UnsetAction {
     __obj.asInstanceOf[UnsetAction]
   }
   
-  extension [Self <: UnsetAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsetAction] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: String | js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

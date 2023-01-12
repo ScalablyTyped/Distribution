@@ -29,7 +29,8 @@ object ClonesCount {
     __obj.asInstanceOf[ClonesCount]
   }
   
-  extension [Self <: ClonesCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClonesCount] (val x: Self) extends AnyVal {
     
     inline def setClones(
       value: js.Array[

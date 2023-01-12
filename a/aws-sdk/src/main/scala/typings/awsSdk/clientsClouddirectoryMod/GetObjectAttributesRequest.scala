@@ -43,7 +43,8 @@ object GetObjectAttributesRequest {
     __obj.asInstanceOf[GetObjectAttributesRequest]
   }
   
-  extension [Self <: GetObjectAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object OrganizationConnection {
     __obj.asInstanceOf[OrganizationConnection]
   }
   
-  extension [Self <: OrganizationConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationConnection] (val x: Self) extends AnyVal {
     
     inline def setAssign_membership_on_login(value: Boolean): Self = StObject.set(x, "assign_membership_on_login", value.asInstanceOf[js.Any])
     

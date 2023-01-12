@@ -81,7 +81,8 @@ object typesCheckoutCaptureResponseMod {
       __obj.asInstanceOf[CheckoutCaptureResponse]
     }
     
-    extension [Self <: CheckoutCaptureResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutCaptureResponse] (val x: Self) extends AnyVal {
       
       inline def setCart_id(value: String): Self = StObject.set(x, "cart_id", value.asInstanceOf[js.Any])
       

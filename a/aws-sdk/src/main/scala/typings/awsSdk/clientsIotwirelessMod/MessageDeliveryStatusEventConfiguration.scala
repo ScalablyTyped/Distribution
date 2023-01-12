@@ -20,7 +20,8 @@ object MessageDeliveryStatusEventConfiguration {
     __obj.asInstanceOf[MessageDeliveryStatusEventConfiguration]
   }
   
-  extension [Self <: MessageDeliveryStatusEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDeliveryStatusEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSidewalk(value: SidewalkEventNotificationConfigurations): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
     

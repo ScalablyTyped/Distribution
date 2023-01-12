@@ -17,7 +17,8 @@ object MapHTMLAttributes {
     __obj.asInstanceOf[MapHTMLAttributes[T]]
   }
   
-  extension [Self <: MapHTMLAttributes[?], T](x: Self & MapHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapHTMLAttributes[?], T] (val x: Self & MapHTMLAttributes[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

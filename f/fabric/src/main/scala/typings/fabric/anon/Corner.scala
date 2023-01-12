@@ -24,7 +24,8 @@ object Corner {
     __obj.asInstanceOf[Corner]
   }
   
-  extension [Self <: Corner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
     
     inline def setCorner(value: String): Self = StObject.set(x, "corner", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object EmitterOpCustomUpdateConfig {
     __obj.asInstanceOf[EmitterOpCustomUpdateConfig]
   }
   
-  extension [Self <: EmitterOpCustomUpdateConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitterOpCustomUpdateConfig] (val x: Self) extends AnyVal {
     
     inline def setOnEmit(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "onEmit", js.Any.fromFunction3(value))
     

@@ -31,7 +31,8 @@ object reactiveStreamTypesMod {
       __obj.asInstanceOf[ISubject[T]]
     }
     
-    extension [Self <: ISubject[?], T](x: Self & ISubject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubject[?], T] (val x: Self & ISubject[T]) extends AnyVal {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
@@ -63,7 +64,8 @@ object reactiveStreamTypesMod {
       __obj.asInstanceOf[ISubscriber[T]]
     }
     
-    extension [Self <: ISubscriber[?], T](x: Self & ISubscriber[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscriber[?], T] (val x: Self & ISubscriber[T]) extends AnyVal {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
@@ -88,7 +90,8 @@ object reactiveStreamTypesMod {
       __obj.asInstanceOf[ISubscription]
     }
     
-    extension [Self <: ISubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

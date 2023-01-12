@@ -56,7 +56,8 @@ object typesEndpointDemographicMod {
       __obj.asInstanceOf[EndpointDemographic]
     }
     
-    extension [Self <: EndpointDemographic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointDemographic] (val x: Self) extends AnyVal {
       
       inline def setAppVersion(value: String): Self = StObject.set(x, "AppVersion", value.asInstanceOf[js.Any])
       

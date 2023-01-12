@@ -39,7 +39,8 @@ object MlGetMemoryStatsMemMlStats {
     __obj.asInstanceOf[MlGetMemoryStatsMemMlStats]
   }
   
-  extension [Self <: MlGetMemoryStatsMemMlStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetMemoryStatsMemMlStats] (val x: Self) extends AnyVal {
     
     inline def setAnomaly_detectors(value: ByteSize): Self = StObject.set(x, "anomaly_detectors", value.asInstanceOf[js.Any])
     

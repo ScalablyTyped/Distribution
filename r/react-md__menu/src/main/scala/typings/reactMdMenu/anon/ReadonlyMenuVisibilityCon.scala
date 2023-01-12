@@ -20,7 +20,8 @@ object ReadonlyMenuVisibilityCon {
     __obj.asInstanceOf[ReadonlyMenuVisibilityCon]
   }
   
-  extension [Self <: ReadonlyMenuVisibilityCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyMenuVisibilityCon] (val x: Self) extends AnyVal {
     
     inline def setSetVisible(value: SetStateAction[Boolean] => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
     

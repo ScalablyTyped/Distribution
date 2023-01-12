@@ -38,7 +38,8 @@ object Volume {
     __obj.asInstanceOf[Volume]
   }
   
-  extension [Self <: Volume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     inline def setDockerVolumeConfiguration(value: DockerVolumeConfiguration): Self = StObject.set(x, "dockerVolumeConfiguration", value.asInstanceOf[js.Any])
     

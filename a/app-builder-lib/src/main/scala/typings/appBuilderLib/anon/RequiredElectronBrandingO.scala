@@ -18,7 +18,8 @@ object RequiredElectronBrandingO {
     __obj.asInstanceOf[RequiredElectronBrandingO]
   }
   
-  extension [Self <: RequiredElectronBrandingO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredElectronBrandingO] (val x: Self) extends AnyVal {
     
     inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     

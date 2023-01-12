@@ -16,7 +16,8 @@ object AggregationResult {
     __obj.asInstanceOf[AggregationResult]
   }
   
-  extension [Self <: AggregationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationResult] (val x: Self) extends AnyVal {
     
     inline def setAggregateFields(value: ApiClientObjectMap[Value]): Self = StObject.set(x, "aggregateFields", value.asInstanceOf[js.Any])
     

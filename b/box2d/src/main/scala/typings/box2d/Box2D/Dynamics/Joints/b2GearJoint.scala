@@ -43,7 +43,8 @@ object b2GearJoint {
     __obj.asInstanceOf[b2GearJoint]
   }
   
-  extension [Self <: b2GearJoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2GearJoint] (val x: Self) extends AnyVal {
     
     inline def setGetRatio(value: () => Double): Self = StObject.set(x, "GetRatio", js.Any.fromFunction0(value))
     

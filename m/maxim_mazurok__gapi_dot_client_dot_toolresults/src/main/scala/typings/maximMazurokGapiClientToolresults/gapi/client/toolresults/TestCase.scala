@@ -43,7 +43,8 @@ object TestCase {
     __obj.asInstanceOf[TestCase]
   }
   
-  extension [Self <: TestCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCase] (val x: Self) extends AnyVal {
     
     inline def setElapsedTime(value: Duration): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     

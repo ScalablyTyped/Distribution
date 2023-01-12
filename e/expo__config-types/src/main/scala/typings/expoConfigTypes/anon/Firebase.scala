@@ -18,7 +18,8 @@ object Firebase {
     __obj.asInstanceOf[Firebase]
   }
   
-  extension [Self <: Firebase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firebase] (val x: Self) extends AnyVal {
     
     inline def setFirebase(value: AppId): Self = StObject.set(x, "firebase", value.asInstanceOf[js.Any])
     

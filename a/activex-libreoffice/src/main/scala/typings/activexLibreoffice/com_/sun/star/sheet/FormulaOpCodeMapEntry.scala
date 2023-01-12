@@ -20,7 +20,8 @@ object FormulaOpCodeMapEntry {
     __obj.asInstanceOf[FormulaOpCodeMapEntry]
   }
   
-  extension [Self <: FormulaOpCodeMapEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormulaOpCodeMapEntry] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RemoveTargetedPublishersRequest {
     __obj.asInstanceOf[RemoveTargetedPublishersRequest]
   }
   
-  extension [Self <: RemoveTargetedPublishersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTargetedPublishersRequest] (val x: Self) extends AnyVal {
     
     inline def setPublisherIds(value: js.Array[String]): Self = StObject.set(x, "publisherIds", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object jsonUtils {
     __obj.asInstanceOf[jsonUtils]
   }
   
-  extension [Self <: jsonUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: jsonUtils] (val x: Self) extends AnyVal {
     
     inline def setFromJSON(value: Any => Geometry_): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object ProtectiveEquipmentPerson {
     __obj.asInstanceOf[ProtectiveEquipmentPerson]
   }
   
-  extension [Self <: ProtectiveEquipmentPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectiveEquipmentPerson] (val x: Self) extends AnyVal {
     
     inline def setBodyParts(value: BodyParts): Self = StObject.set(x, "BodyParts", value.asInstanceOf[js.Any])
     

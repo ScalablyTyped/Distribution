@@ -673,7 +673,8 @@ object distEs5GridstackMod {
       __obj.asInstanceOf[CellPosition]
     }
     
-    extension [Self <: CellPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPosition] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -733,7 +734,8 @@ object distEs5GridstackMod {
       __obj.asInstanceOf[MousePosition]
     }
     
-    extension [Self <: MousePosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousePosition] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

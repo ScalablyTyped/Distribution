@@ -160,7 +160,8 @@ object ASPxClientChartPrintOptions {
     __obj.asInstanceOf[ASPxClientChartPrintOptions]
   }
   
-  extension [Self <: ASPxClientChartPrintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientChartPrintOptions] (val x: Self) extends AnyVal {
     
     inline def setGetCustomPaperHeight(value: () => Double): Self = StObject.set(x, "GetCustomPaperHeight", js.Any.fromFunction0(value))
     

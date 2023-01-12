@@ -34,7 +34,8 @@ object IMultiRouteParams {
     __obj.asInstanceOf[IMultiRouteParams]
   }
   
-  extension [Self <: IMultiRouteParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMultiRouteParams] (val x: Self) extends AnyVal {
     
     inline def setAvoidTrafficJams(value: Boolean): Self = StObject.set(x, "avoidTrafficJams", value.asInstanceOf[js.Any])
     

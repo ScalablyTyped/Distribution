@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-device-orientation"
-version := "2.0.1-56b388"
+version := "2.0.1-a4ad0c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

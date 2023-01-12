@@ -69,7 +69,8 @@ object MeshCreatePlaneParams {
     __obj.asInstanceOf[MeshCreatePlaneParams]
   }
   
-  extension [Self <: MeshCreatePlaneParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshCreatePlaneParams] (val x: Self) extends AnyVal {
     
     inline def setFacing(value: east | west | north | south | up | down): Self = StObject.set(x, "facing", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Dirgaph]
     }
     
-    extension [Self <: Dirgaph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dirgaph] (val x: Self) extends AnyVal {
       
       inline def setDirgaph(value: DirectedGraph): Self = StObject.set(x, "dirgaph", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[E]
     }
     
-    extension [Self <: E](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: E] (val x: Self) extends AnyVal {
       
       inline def setE(value: Edge): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[G]
     }
     
-    extension [Self <: G](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: G] (val x: Self) extends AnyVal {
       
       inline def setG(value: DirectedGraph): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
@@ -103,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setResult(value: DirectedGraph): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }

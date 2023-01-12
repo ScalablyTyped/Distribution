@@ -26,7 +26,8 @@ object MessageOutputDebug {
     __obj.asInstanceOf[MessageOutputDebug]
   }
   
-  extension [Self <: MessageOutputDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageOutputDebug] (val x: Self) extends AnyVal {
     
     inline def setBranch_exited(value: Boolean): Self = StObject.set(x, "branch_exited", value.asInstanceOf[js.Any])
     

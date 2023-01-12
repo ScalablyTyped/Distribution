@@ -22,7 +22,8 @@ object FoggyWeatherProperties {
     __obj.asInstanceOf[FoggyWeatherProperties]
   }
   
-  extension [Self <: FoggyWeatherProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoggyWeatherProperties] (val x: Self) extends AnyVal {
     
     inline def setFogStrength(value: Double): Self = StObject.set(x, "fogStrength", value.asInstanceOf[js.Any])
     

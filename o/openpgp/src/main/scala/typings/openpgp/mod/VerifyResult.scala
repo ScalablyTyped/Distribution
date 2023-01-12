@@ -21,7 +21,8 @@ object VerifyResult {
     __obj.asInstanceOf[VerifyResult]
   }
   
-  extension [Self <: VerifyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array

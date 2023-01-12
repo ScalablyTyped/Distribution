@@ -75,7 +75,8 @@ object SortDescriptor {
     __obj.asInstanceOf[SortDescriptor]
   }
   
-  extension [Self <: SortDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCollatorAlgorithm(value: String): Self = StObject.set(x, "CollatorAlgorithm", value.asInstanceOf[js.Any])
     

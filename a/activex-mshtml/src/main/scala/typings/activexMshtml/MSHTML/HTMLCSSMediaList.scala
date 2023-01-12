@@ -34,7 +34,8 @@ object HTMLCSSMediaList {
     __obj.asInstanceOf[HTMLCSSMediaList]
   }
   
-  extension [Self <: HTMLCSSMediaList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCSSMediaList] (val x: Self) extends AnyVal {
     
     inline def setAppendMedium(value: String => Unit): Self = StObject.set(x, "appendMedium", js.Any.fromFunction1(value))
     

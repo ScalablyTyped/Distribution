@@ -204,7 +204,8 @@ object typingsParserLexerConfigMod {
       __obj.asInstanceOf[ILexerConfig]
     }
     
-    extension [Self <: ILexerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILexerConfig] (val x: Self) extends AnyVal {
       
       inline def setAllTokens(value: js.Array[TokenType]): Self = StObject.set(x, "allTokens", value.asInstanceOf[js.Any])
       

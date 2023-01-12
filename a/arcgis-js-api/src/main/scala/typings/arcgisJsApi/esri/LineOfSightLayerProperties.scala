@@ -36,7 +36,8 @@ object LineOfSightLayerProperties {
     __obj.asInstanceOf[LineOfSightLayerProperties]
   }
   
-  extension [Self <: LineOfSightLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOfSightLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setAnalysis(value: LineOfSightAnalysisProperties): Self = StObject.set(x, "analysis", value.asInstanceOf[js.Any])
     

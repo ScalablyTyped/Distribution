@@ -23,7 +23,8 @@ object DescribeAnomalyResponse {
     __obj.asInstanceOf[DescribeAnomalyResponse]
   }
   
-  extension [Self <: DescribeAnomalyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAnomalyResponse] (val x: Self) extends AnyVal {
     
     inline def setProactiveAnomaly(value: ProactiveAnomaly): Self = StObject.set(x, "ProactiveAnomaly", value.asInstanceOf[js.Any])
     

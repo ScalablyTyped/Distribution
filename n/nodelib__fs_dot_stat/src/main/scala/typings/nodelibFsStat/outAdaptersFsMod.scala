@@ -52,7 +52,8 @@ object outAdaptersFsMod {
       __obj.asInstanceOf[FileSystemAdapter]
     }
     
-    extension [Self <: FileSystemAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemAdapter] (val x: Self) extends AnyVal {
       
       inline def setLstat(
         value: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit

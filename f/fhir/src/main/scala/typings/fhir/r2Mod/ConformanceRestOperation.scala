@@ -27,7 +27,8 @@ object ConformanceRestOperation {
     __obj.asInstanceOf[ConformanceRestOperation]
   }
   
-  extension [Self <: ConformanceRestOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceRestOperation] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Reference): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

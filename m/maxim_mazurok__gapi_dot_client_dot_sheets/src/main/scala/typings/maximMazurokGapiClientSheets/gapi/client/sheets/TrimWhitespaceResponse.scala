@@ -16,7 +16,8 @@ object TrimWhitespaceResponse {
     __obj.asInstanceOf[TrimWhitespaceResponse]
   }
   
-  extension [Self <: TrimWhitespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrimWhitespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setCellsChangedCount(value: Double): Self = StObject.set(x, "cellsChangedCount", value.asInstanceOf[js.Any])
     

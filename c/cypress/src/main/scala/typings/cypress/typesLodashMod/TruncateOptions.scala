@@ -28,7 +28,8 @@ object TruncateOptions {
     __obj.asInstanceOf[TruncateOptions]
   }
   
-  extension [Self <: TruncateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncateOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

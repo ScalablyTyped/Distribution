@@ -20,7 +20,8 @@ object Lock {
     __obj.asInstanceOf[Lock]
   }
   
-  extension [Self <: Lock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lock] (val x: Self) extends AnyVal {
     
     inline def setMode(value: LockMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object APIConfig {
     __obj.asInstanceOf[APIConfig]
   }
   
-  extension [Self <: APIConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIConfig] (val x: Self) extends AnyVal {
     
     inline def setHTTPHeaders(value: Record[String, js.Array[String]]): Self = StObject.set(x, "HTTPHeaders", value.asInstanceOf[js.Any])
     

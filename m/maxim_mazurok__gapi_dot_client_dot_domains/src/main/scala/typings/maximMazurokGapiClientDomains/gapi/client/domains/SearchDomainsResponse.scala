@@ -16,7 +16,8 @@ object SearchDomainsResponse {
     __obj.asInstanceOf[SearchDomainsResponse]
   }
   
-  extension [Self <: SearchDomainsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDomainsResponse] (val x: Self) extends AnyVal {
     
     inline def setRegisterParameters(value: js.Array[RegisterParameters]): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
     

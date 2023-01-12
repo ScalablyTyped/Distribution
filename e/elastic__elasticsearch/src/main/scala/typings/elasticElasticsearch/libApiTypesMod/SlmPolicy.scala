@@ -23,7 +23,8 @@ object SlmPolicy {
     __obj.asInstanceOf[SlmPolicy]
   }
   
-  extension [Self <: SlmPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmPolicy] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SlmConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

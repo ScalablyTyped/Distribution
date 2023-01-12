@@ -15,7 +15,8 @@ object QDiscriminator {
     __obj.asInstanceOf[QDiscriminator]
   }
   
-  extension [Self <: QDiscriminator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QDiscriminator] (val x: Self) extends AnyVal {
     
     inline def setQDiscriminator(value: String): Self = StObject.set(x, "qDiscriminator", value.asInstanceOf[js.Any])
   }

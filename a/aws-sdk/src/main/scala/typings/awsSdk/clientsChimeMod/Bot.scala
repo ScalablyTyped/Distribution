@@ -58,7 +58,8 @@ object Bot {
     __obj.asInstanceOf[Bot]
   }
   
-  extension [Self <: Bot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bot] (val x: Self) extends AnyVal {
     
     inline def setBotEmail(value: SensitiveString): Self = StObject.set(x, "BotEmail", value.asInstanceOf[js.Any])
     

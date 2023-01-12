@@ -20,7 +20,8 @@ object FileSystemEndpoint {
     __obj.asInstanceOf[FileSystemEndpoint]
   }
   
-  extension [Self <: FileSystemEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemEndpoint] (val x: Self) extends AnyVal {
     
     inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     

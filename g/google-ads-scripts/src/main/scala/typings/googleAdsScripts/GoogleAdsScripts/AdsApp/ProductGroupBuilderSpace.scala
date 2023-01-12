@@ -47,7 +47,8 @@ object ProductGroupBuilderSpace {
     __obj.asInstanceOf[ProductGroupBuilderSpace]
   }
   
-  extension [Self <: ProductGroupBuilderSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductGroupBuilderSpace] (val x: Self) extends AnyVal {
     
     inline def setBrandBuilder(value: () => ProductBrandBuilder): Self = StObject.set(x, "brandBuilder", js.Any.fromFunction0(value))
     

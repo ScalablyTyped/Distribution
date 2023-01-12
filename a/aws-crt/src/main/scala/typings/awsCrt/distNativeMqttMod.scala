@@ -638,7 +638,8 @@ object distNativeMqttMod {
       __obj.asInstanceOf[MqttConnectionConfig]
     }
     
-    extension [Self <: MqttConnectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MqttConnectionConfig] (val x: Self) extends AnyVal {
       
       inline def setClean_session(value: Boolean): Self = StObject.set(x, "clean_session", value.asInstanceOf[js.Any])
       

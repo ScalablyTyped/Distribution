@@ -59,7 +59,8 @@ object XCellCursor {
     __obj.asInstanceOf[XCellCursor]
   }
   
-  extension [Self <: XCellCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEnd(value: () => Unit): Self = StObject.set(x, "gotoEnd", js.Any.fromFunction0(value))
     

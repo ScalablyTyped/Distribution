@@ -24,7 +24,8 @@ object InitialResponseSetting {
     __obj.asInstanceOf[InitialResponseSetting]
   }
   
-  extension [Self <: InitialResponseSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitialResponseSetting] (val x: Self) extends AnyVal {
     
     inline def setCodeHook(value: DialogCodeHookInvocationSetting): Self = StObject.set(x, "codeHook", value.asInstanceOf[js.Any])
     

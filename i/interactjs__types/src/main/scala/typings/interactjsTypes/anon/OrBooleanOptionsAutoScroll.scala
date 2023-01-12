@@ -84,7 +84,8 @@ object OrBooleanOptionsAutoScroll {
     __obj.asInstanceOf[OrBooleanOptionsAutoScroll]
   }
   
-  extension [Self <: OrBooleanOptionsAutoScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrBooleanOptionsAutoScroll] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any | Boolean): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

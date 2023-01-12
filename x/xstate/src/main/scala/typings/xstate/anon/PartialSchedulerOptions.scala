@@ -16,7 +16,8 @@ object PartialSchedulerOptions {
     __obj.asInstanceOf[PartialSchedulerOptions]
   }
   
-  extension [Self <: PartialSchedulerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSchedulerOptions] (val x: Self) extends AnyVal {
     
     inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     

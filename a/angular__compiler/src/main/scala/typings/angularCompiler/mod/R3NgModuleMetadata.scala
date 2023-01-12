@@ -97,7 +97,8 @@ object R3NgModuleMetadata {
     __obj.asInstanceOf[R3NgModuleMetadata]
   }
   
-  extension [Self <: R3NgModuleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3NgModuleMetadata] (val x: Self) extends AnyVal {
     
     inline def setAdjacentType(value: Expression): Self = StObject.set(x, "adjacentType", value.asInstanceOf[js.Any])
     

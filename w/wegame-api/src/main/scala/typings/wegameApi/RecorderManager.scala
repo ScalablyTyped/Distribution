@@ -81,7 +81,8 @@ object RecorderManager {
     __obj.asInstanceOf[RecorderManager]
   }
   
-  extension [Self <: RecorderManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecorderManager] (val x: Self) extends AnyVal {
     
     inline def setOnError(value: js.Function1[/* res */ ErrMsg, Unit] => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     

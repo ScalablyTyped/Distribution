@@ -137,7 +137,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[AddAllOptions]
     }
     
-    extension [Self <: AddAllOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddAllOptions] (val x: Self) extends AnyVal {
       
       inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[AddInputWithOptions]
     }
     
-    extension [Self <: AddInputWithOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddInputWithOptions] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[AddOptions]
     }
     
-    extension [Self <: AddOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
       
       inline def setLock(value: Boolean): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[LsOptions]
     }
     
-    extension [Self <: LsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LsOptions] (val x: Self) extends AnyVal {
       
       inline def setPaths(
         value: (CID[Any, Double, Double, Version]) | (js.Array[(CID[Any, Double, Double, Version]) | String]) | String
@@ -291,7 +295,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[LsResult]
     }
     
-    extension [Self <: LsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LsResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -354,7 +359,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[RmAllInput]
     }
     
-    extension [Self <: RmAllInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmAllInput] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -383,7 +389,8 @@ object distSrcPinMod {
       __obj.asInstanceOf[RmOptions]
     }
     
-    extension [Self <: RmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmOptions] (val x: Self) extends AnyVal {
       
       inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       

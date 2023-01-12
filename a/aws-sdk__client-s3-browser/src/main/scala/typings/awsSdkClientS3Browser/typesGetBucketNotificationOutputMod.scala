@@ -39,7 +39,8 @@ object typesGetBucketNotificationOutputMod {
       __obj.asInstanceOf[GetBucketNotificationOutput]
     }
     
-    extension [Self <: GetBucketNotificationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketNotificationOutput] (val x: Self) extends AnyVal {
       
       inline def setCloudFunctionConfiguration(value: UnmarshalledCloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
       

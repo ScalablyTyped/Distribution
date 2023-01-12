@@ -34,7 +34,8 @@ object SuspenseEvent {
     __obj.asInstanceOf[SuspenseEvent]
   }
   
-  extension [Self <: SuspenseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspenseEvent] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

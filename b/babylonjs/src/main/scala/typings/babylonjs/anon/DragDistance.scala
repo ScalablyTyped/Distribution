@@ -30,7 +30,8 @@ object DragDistance {
     __obj.asInstanceOf[DragDistance]
   }
   
-  extension [Self <: DragDistance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragDistance] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Vector3): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

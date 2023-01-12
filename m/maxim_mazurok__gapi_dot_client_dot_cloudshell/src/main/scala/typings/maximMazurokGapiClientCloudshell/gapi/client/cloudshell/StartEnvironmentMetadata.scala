@@ -16,7 +16,8 @@ object StartEnvironmentMetadata {
     __obj.asInstanceOf[StartEnvironmentMetadata]
   }
   
-  extension [Self <: StartEnvironmentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartEnvironmentMetadata] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

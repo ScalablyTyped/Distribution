@@ -27,7 +27,8 @@ object RelationshipSchemeForPointColorsForClassBreaks {
     __obj.asInstanceOf[RelationshipSchemeForPointColorsForClassBreaks]
   }
   
-  extension [Self <: RelationshipSchemeForPointColorsForClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemeForPointColorsForClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

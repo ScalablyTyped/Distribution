@@ -39,7 +39,8 @@ object distCommandsTopKReserveMod {
       __obj.asInstanceOf[ReserveOptions]
     }
     
-    extension [Self <: ReserveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReserveOptions] (val x: Self) extends AnyVal {
       
       inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       

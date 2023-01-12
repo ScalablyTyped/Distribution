@@ -18,7 +18,8 @@ object DescribeProtectionGroupResponse {
     __obj.asInstanceOf[DescribeProtectionGroupResponse]
   }
   
-  extension [Self <: DescribeProtectionGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProtectionGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setProtectionGroup(value: ProtectionGroup): Self = StObject.set(x, "ProtectionGroup", value.asInstanceOf[js.Any])
   }

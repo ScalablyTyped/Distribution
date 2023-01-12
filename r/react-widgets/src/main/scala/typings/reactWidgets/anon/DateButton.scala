@@ -15,7 +15,8 @@ object DateButton {
     __obj.asInstanceOf[DateButton]
   }
   
-  extension [Self <: DateButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateButton] (val x: Self) extends AnyVal {
     
     inline def setDateButton(value: String): Self = StObject.set(x, "dateButton", value.asInstanceOf[js.Any])
     

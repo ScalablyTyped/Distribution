@@ -66,7 +66,8 @@ object DebugSessionOptions {
     __obj.asInstanceOf[DebugSessionOptions]
   }
   
-  extension [Self <: DebugSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

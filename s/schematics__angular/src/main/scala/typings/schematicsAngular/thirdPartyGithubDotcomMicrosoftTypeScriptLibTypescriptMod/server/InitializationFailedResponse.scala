@@ -22,7 +22,8 @@ object InitializationFailedResponse {
     __obj.asInstanceOf[InitializationFailedResponse]
   }
   
-  extension [Self <: InitializationFailedResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationFailedResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: EventInitializationFailed): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

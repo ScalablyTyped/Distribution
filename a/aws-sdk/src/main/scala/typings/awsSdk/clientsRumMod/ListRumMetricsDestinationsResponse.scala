@@ -23,7 +23,8 @@ object ListRumMetricsDestinationsResponse {
     __obj.asInstanceOf[ListRumMetricsDestinationsResponse]
   }
   
-  extension [Self <: ListRumMetricsDestinationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRumMetricsDestinationsResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinations(value: MetricDestinationSummaryList): Self = StObject.set(x, "Destinations", value.asInstanceOf[js.Any])
     

@@ -193,7 +193,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
@@ -226,7 +227,8 @@ object mod {
       __obj.asInstanceOf[TimeoutSpec]
     }
     
-    extension [Self <: TimeoutSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutSpec] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: Double): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
       
@@ -290,7 +292,8 @@ object mod {
       __obj.asInstanceOf[ToFileOptions]
     }
     
-    extension [Self <: ToFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToFileOptions] (val x: Self) extends AnyVal {
       
       inline def setOnProgress(value: /* progress */ Progress => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
@@ -505,7 +508,8 @@ object mod {
       __obj.asInstanceOf[TransferOptions]
     }
     
-    extension [Self <: TransferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
@@ -742,7 +746,8 @@ object mod {
       __obj.asInstanceOf[WithUrl]
     }
     
-    extension [Self <: WithUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithUrl] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

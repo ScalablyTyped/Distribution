@@ -23,7 +23,8 @@ object DeleteEdgeDeploymentStageRequest {
     __obj.asInstanceOf[DeleteEdgeDeploymentStageRequest]
   }
   
-  extension [Self <: DeleteEdgeDeploymentStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEdgeDeploymentStageRequest] (val x: Self) extends AnyVal {
     
     inline def setEdgeDeploymentPlanName(value: EntityName): Self = StObject.set(x, "EdgeDeploymentPlanName", value.asInstanceOf[js.Any])
     

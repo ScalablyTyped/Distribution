@@ -31,7 +31,8 @@ object ShoppingCampaignBidding {
     __obj.asInstanceOf[ShoppingCampaignBidding]
   }
   
-  extension [Self <: ShoppingCampaignBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingCampaignBidding] (val x: Self) extends AnyVal {
     
     inline def setGetStrategy(value: () => BiddingStrategy): Self = StObject.set(x, "getStrategy", js.Any.fromFunction0(value))
     

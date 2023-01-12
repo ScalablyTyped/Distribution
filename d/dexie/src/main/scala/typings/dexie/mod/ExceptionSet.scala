@@ -96,7 +96,8 @@ object ExceptionSet {
     __obj.asInstanceOf[ExceptionSet]
   }
   
-  extension [Self <: ExceptionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionSet] (val x: Self) extends AnyVal {
     
     inline def setAbortError(value: DexieErrorConstructor): Self = StObject.set(x, "AbortError", value.asInstanceOf[js.Any])
     

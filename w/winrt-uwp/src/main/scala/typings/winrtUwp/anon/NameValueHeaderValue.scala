@@ -18,7 +18,8 @@ object NameValueHeaderValue {
     __obj.asInstanceOf[NameValueHeaderValue]
   }
   
-  extension [Self <: NameValueHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameValueHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setNameValueHeaderValue(value: HttpNameValueHeaderValue): Self = StObject.set(x, "nameValueHeaderValue", value.asInstanceOf[js.Any])
     

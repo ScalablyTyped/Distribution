@@ -65,7 +65,8 @@ object JQueryDotDotDot {
       __obj.asInstanceOf[IDotDotDotOptions]
     }
     
-    extension [Self <: IDotDotDotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDotDotDotOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String | JQuery): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object JQueryDotDotDot {
       __obj.asInstanceOf[IDotDotDotOptionsLastCharacter]
     }
     
-    extension [Self <: IDotDotDotOptionsLastCharacter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDotDotDotOptionsLastCharacter] (val x: Self) extends AnyVal {
       
       inline def setNoEllipsis(value: js.Array[String]): Self = StObject.set(x, "noEllipsis", value.asInstanceOf[js.Any])
       

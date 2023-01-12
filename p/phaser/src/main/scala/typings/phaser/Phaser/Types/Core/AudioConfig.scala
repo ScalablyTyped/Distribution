@@ -32,7 +32,8 @@ object AudioConfig {
     __obj.asInstanceOf[AudioConfig]
   }
   
-  extension [Self <: AudioConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioConfig] (val x: Self) extends AnyVal {
     
     inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object DatabaseSetNumber {
     __obj.asInstanceOf[DatabaseSetNumber]
   }
   
-  extension [Self <: DatabaseSetNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseSetNumber] (val x: Self) extends AnyVal {
     
     inline def setDataBaseName(value: String): Self = StObject.set(x, "DataBaseName", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object ParseContext {
     __obj.asInstanceOf[ParseContext]
   }
   
-  extension [Self <: ParseContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseContext] (val x: Self) extends AnyVal {
     
     inline def setConstructs(value: FullNormalizedExtension): Self = StObject.set(x, "constructs", value.asInstanceOf[js.Any])
     

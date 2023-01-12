@@ -20,7 +20,8 @@ object SceneLayerApplyEditsEdits {
     __obj.asInstanceOf[SceneLayerApplyEditsEdits]
   }
   
-  extension [Self <: SceneLayerApplyEditsEdits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerApplyEditsEdits] (val x: Self) extends AnyVal {
     
     inline def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
     

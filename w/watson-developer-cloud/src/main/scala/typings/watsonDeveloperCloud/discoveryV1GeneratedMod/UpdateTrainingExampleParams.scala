@@ -36,7 +36,8 @@ object UpdateTrainingExampleParams {
     __obj.asInstanceOf[UpdateTrainingExampleParams]
   }
   
-  extension [Self <: UpdateTrainingExampleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTrainingExampleParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

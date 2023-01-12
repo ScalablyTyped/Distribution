@@ -19,7 +19,8 @@ object StellarAddress {
     __obj.asInstanceOf[StellarAddress]
   }
   
-  extension [Self <: StellarAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object TypeofNodeFilter {
     __obj.asInstanceOf[TypeofNodeFilter]
   }
   
-  extension [Self <: TypeofNodeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNodeFilter] (val x: Self) extends AnyVal {
     
     inline def setFILTER_ACCEPT(value: Double): Self = StObject.set(x, "FILTER_ACCEPT", value.asInstanceOf[js.Any])
     

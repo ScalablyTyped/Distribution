@@ -75,7 +75,8 @@ object libSessionMod {
       __obj.asInstanceOf[SessionDeps]
     }
     
-    extension [Self <: SessionDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

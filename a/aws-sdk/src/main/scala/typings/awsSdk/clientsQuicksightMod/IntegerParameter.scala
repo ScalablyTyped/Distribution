@@ -23,7 +23,8 @@ object IntegerParameter {
     __obj.asInstanceOf[IntegerParameter]
   }
   
-  extension [Self <: IntegerParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

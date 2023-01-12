@@ -38,7 +38,8 @@ object UpdateStateMachineInput {
     __obj.asInstanceOf[UpdateStateMachineInput]
   }
   
-  extension [Self <: UpdateStateMachineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStateMachineInput] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

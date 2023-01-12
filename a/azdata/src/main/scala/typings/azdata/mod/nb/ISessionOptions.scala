@@ -38,7 +38,8 @@ object ISessionOptions {
     __obj.asInstanceOf[ISessionOptions]
   }
   
-  extension [Self <: ISessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISessionOptions] (val x: Self) extends AnyVal {
     
     inline def setKernelId(value: String): Self = StObject.set(x, "kernelId", value.asInstanceOf[js.Any])
     

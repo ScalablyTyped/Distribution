@@ -26,7 +26,8 @@ object PartialIEffectLayerOptionAlphaBlendingMode {
     __obj.asInstanceOf[PartialIEffectLayerOptionAlphaBlendingMode]
   }
   
-  extension [Self <: PartialIEffectLayerOptionAlphaBlendingMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIEffectLayerOptionAlphaBlendingMode] (val x: Self) extends AnyVal {
     
     inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
     

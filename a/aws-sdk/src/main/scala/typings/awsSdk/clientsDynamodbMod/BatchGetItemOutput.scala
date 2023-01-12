@@ -28,7 +28,8 @@ object BatchGetItemOutput {
     __obj.asInstanceOf[BatchGetItemOutput]
   }
   
-  extension [Self <: BatchGetItemOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetItemOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     

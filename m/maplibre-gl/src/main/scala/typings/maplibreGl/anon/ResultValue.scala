@@ -20,7 +20,8 @@ object ResultValue {
     __obj.asInstanceOf[ResultValue[E]]
   }
   
-  extension [Self <: ResultValue[?], E](x: Self & ResultValue[E]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultValue[?], E] (val x: Self & ResultValue[E]) extends AnyVal {
     
     inline def setResult(value: error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

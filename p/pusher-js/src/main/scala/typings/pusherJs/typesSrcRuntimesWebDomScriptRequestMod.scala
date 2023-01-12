@@ -49,7 +49,8 @@ object typesSrcRuntimesWebDomScriptRequestMod {
       __obj.asInstanceOf[ScriptRequest]
     }
     
-    extension [Self <: ScriptRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptRequest] (val x: Self) extends AnyVal {
       
       inline def setCleanup(value: () => Unit): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
       

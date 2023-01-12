@@ -51,7 +51,8 @@ object XLocaleData4 {
     __obj.asInstanceOf[XLocaleData4]
   }
   
-  extension [Self <: XLocaleData4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLocaleData4] (val x: Self) extends AnyVal {
     
     inline def setGetDateAcceptancePatterns(value: Locale => SafeArray[String]): Self = StObject.set(x, "getDateAcceptancePatterns", js.Any.fromFunction1(value))
   }

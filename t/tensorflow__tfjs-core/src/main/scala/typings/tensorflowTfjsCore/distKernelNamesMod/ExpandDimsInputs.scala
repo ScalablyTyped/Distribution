@@ -16,7 +16,8 @@ object ExpandDimsInputs {
     __obj.asInstanceOf[ExpandDimsInputs]
   }
   
-  extension [Self <: ExpandDimsInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandDimsInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

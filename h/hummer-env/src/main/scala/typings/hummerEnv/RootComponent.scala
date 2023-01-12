@@ -41,7 +41,8 @@ object RootComponent {
     __obj.asInstanceOf[RootComponent[T]]
   }
   
-  extension [Self <: RootComponent[?], T](x: Self & RootComponent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootComponent[?], T] (val x: Self & RootComponent[T]) extends AnyVal {
     
     inline def setOnAppear(value: () => T): Self = StObject.set(x, "onAppear", js.Any.fromFunction0(value))
     

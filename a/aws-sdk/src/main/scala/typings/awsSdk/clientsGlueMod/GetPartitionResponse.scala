@@ -18,7 +18,8 @@ object GetPartitionResponse {
     __obj.asInstanceOf[GetPartitionResponse]
   }
   
-  extension [Self <: GetPartitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPartitionResponse] (val x: Self) extends AnyVal {
     
     inline def setPartition(value: Partition): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
     

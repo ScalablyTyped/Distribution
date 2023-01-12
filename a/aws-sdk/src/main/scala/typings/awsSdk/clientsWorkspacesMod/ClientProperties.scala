@@ -23,7 +23,8 @@ object ClientProperties {
     __obj.asInstanceOf[ClientProperties]
   }
   
-  extension [Self <: ClientProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientProperties] (val x: Self) extends AnyVal {
     
     inline def setLogUploadEnabled(value: LogUploadEnum): Self = StObject.set(x, "LogUploadEnabled", value.asInstanceOf[js.Any])
     

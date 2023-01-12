@@ -23,7 +23,8 @@ object PolicyOption {
     __obj.asInstanceOf[PolicyOption]
   }
   
-  extension [Self <: PolicyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyOption] (val x: Self) extends AnyVal {
     
     inline def setNetworkFirewallPolicy(value: NetworkFirewallPolicy): Self = StObject.set(x, "NetworkFirewallPolicy", value.asInstanceOf[js.Any])
     

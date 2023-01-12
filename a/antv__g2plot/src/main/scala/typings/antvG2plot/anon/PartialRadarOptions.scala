@@ -117,7 +117,8 @@ object PartialRadarOptions {
     __obj.asInstanceOf[PartialRadarOptions]
   }
   
-  extension [Self <: PartialRadarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRadarOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

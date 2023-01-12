@@ -34,7 +34,8 @@ object TreeListFilterableOperatorsString {
     __obj.asInstanceOf[TreeListFilterableOperatorsString]
   }
   
-  extension [Self <: TreeListFilterableOperatorsString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListFilterableOperatorsString] (val x: Self) extends AnyVal {
     
     inline def setContains(value: String): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

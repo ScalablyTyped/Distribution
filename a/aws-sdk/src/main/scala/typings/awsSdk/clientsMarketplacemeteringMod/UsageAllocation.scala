@@ -23,7 +23,8 @@ object UsageAllocation {
     __obj.asInstanceOf[UsageAllocation]
   }
   
-  extension [Self <: UsageAllocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageAllocation] (val x: Self) extends AnyVal {
     
     inline def setAllocatedUsageQuantity(value: AllocatedUsageQuantity): Self = StObject.set(x, "AllocatedUsageQuantity", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object libComponentsListBoxListBoxMenuItemMod extends Shortcut {
       __obj.asInstanceOf[ListBoxMenuItemForwardedRef]
     }
     
-    extension [Self <: ListBoxMenuItemForwardedRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxMenuItemForwardedRef] (val x: Self) extends AnyVal {
       
       inline def setMenuItemOptionRef(value: Ref[HTMLDivElement]): Self = StObject.set(x, "menuItemOptionRef", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object libComponentsListBoxListBoxMenuItemMod extends Shortcut {
       __obj.asInstanceOf[ListBoxMenuItemProps]
     }
     
-    extension [Self <: ListBoxMenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListBoxMenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object WebRequestEventArgs {
     __obj.asInstanceOf[WebRequestEventArgs]
   }
   
-  extension [Self <: WebRequestEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_webRequest(value: () => WebRequest): Self = StObject.set(x, "get_webRequest", js.Any.fromFunction0(value))
   }

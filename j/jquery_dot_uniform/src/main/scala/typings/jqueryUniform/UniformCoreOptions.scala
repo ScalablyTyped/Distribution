@@ -67,7 +67,8 @@ object UniformCoreOptions {
     __obj.asInstanceOf[UniformCoreOptions]
   }
   
-  extension [Self <: UniformCoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniformCoreOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

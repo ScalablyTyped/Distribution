@@ -19,7 +19,8 @@ object ItemStructuredData {
     __obj.asInstanceOf[ItemStructuredData]
   }
   
-  extension [Self <: ItemStructuredData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemStructuredData] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object PipeableFoldable2C {
     __obj.asInstanceOf[PipeableFoldable2C[F, E]]
   }
   
-  extension [Self <: PipeableFoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (PipeableFoldable2C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (PipeableFoldable2C[F, E])) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function1[

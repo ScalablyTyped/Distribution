@@ -17,7 +17,8 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  extension [Self <: Category](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

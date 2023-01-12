@@ -35,7 +35,8 @@ object CandleStickDatasetConfig {
     __obj.asInstanceOf[CandleStickDatasetConfig]
   }
   
-  extension [Self <: CandleStickDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandleStickDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setBarSpace(value: Double): Self = StObject.set(x, "barSpace", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object typesCreateIdentityPoolInputMod {
       __obj.asInstanceOf[CreateIdentityPoolInput]
     }
     
-    extension [Self <: CreateIdentityPoolInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateIdentityPoolInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

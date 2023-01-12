@@ -15,7 +15,8 @@ object `1` {
     __obj.asInstanceOf[`1`]
   }
   
-  extension [Self <: `1`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
     inline def setCan_insert_everywhere(value: Boolean): Self = StObject.set(x, "can_insert_everywhere", value.asInstanceOf[js.Any])
     

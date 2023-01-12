@@ -25,7 +25,8 @@ object SpecWriteFailure {
     __obj.asInstanceOf[SpecWriteFailure]
   }
   
-  extension [Self <: SpecWriteFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWriteFailure] (val x: Self) extends AnyVal {
     
     inline def setError(value: SpecError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

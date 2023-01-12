@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsGoogleMod extends Shortcut {
       __obj.asInstanceOf[GoogleProps]
     }
     
-    extension [Self <: GoogleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

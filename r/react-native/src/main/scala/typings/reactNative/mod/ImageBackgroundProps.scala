@@ -24,7 +24,8 @@ object ImageBackgroundProps {
     __obj.asInstanceOf[ImageBackgroundProps]
   }
   
-  extension [Self <: ImageBackgroundProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBackgroundProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

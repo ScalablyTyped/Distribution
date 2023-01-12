@@ -18,7 +18,8 @@ object GetSizeConstraintSetRequest {
     __obj.asInstanceOf[GetSizeConstraintSetRequest]
   }
   
-  extension [Self <: GetSizeConstraintSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSizeConstraintSetRequest] (val x: Self) extends AnyVal {
     
     inline def setSizeConstraintSetId(value: ResourceId): Self = StObject.set(x, "SizeConstraintSetId", value.asInstanceOf[js.Any])
   }

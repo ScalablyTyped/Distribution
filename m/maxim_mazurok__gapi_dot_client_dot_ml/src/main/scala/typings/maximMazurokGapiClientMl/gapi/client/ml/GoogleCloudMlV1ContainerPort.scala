@@ -16,7 +16,8 @@ object GoogleCloudMlV1ContainerPort {
     __obj.asInstanceOf[GoogleCloudMlV1ContainerPort]
   }
   
-  extension [Self <: GoogleCloudMlV1ContainerPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ContainerPort] (val x: Self) extends AnyVal {
     
     inline def setContainerPort(value: Double): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     

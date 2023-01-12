@@ -170,7 +170,8 @@ object lightsLightConstantsMod {
       __obj.asInstanceOf[ISortableLight]
     }
     
-    extension [Self <: ISortableLight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISortableLight] (val x: Self) extends AnyVal {
       
       inline def setRenderPriority(value: Double): Self = StObject.set(x, "renderPriority", value.asInstanceOf[js.Any])
       

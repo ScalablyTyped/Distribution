@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsMultiRowMod extends Shortcut {
       __obj.asInstanceOf[MultiRowProps]
     }
     
-    extension [Self <: MultiRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiRowProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

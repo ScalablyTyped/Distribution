@@ -33,7 +33,8 @@ object ParameterSuppressionCustomizationDefinition {
     __obj.asInstanceOf[ParameterSuppressionCustomizationDefinition]
   }
   
-  extension [Self <: ParameterSuppressionCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterSuppressionCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: input | output): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

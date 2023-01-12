@@ -46,7 +46,8 @@ object IStaticContentListItem {
     __obj.asInstanceOf[IStaticContentListItem]
   }
   
-  extension [Self <: IStaticContentListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticContentListItem] (val x: Self) extends AnyVal {
     
     inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
     

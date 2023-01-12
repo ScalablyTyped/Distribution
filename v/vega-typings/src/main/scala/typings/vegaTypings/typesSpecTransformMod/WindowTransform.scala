@@ -38,7 +38,8 @@ object WindowTransform {
     __obj.asInstanceOf[WindowTransform]
   }
   
-  extension [Self <: WindowTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (js.Array[String | SignalRef | Null]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

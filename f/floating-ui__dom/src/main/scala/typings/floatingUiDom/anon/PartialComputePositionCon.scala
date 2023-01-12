@@ -27,7 +27,8 @@ object PartialComputePositionCon {
     __obj.asInstanceOf[PartialComputePositionCon]
   }
   
-  extension [Self <: PartialComputePositionCon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialComputePositionCon] (val x: Self) extends AnyVal {
     
     inline def setMiddleware(value: js.Array[js.UndefOr[Middleware | Null | `false`]]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
     

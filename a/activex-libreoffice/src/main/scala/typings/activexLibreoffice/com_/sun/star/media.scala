@@ -47,7 +47,8 @@ object media {
       __obj.asInstanceOf[XFrameGrabber]
     }
     
-    extension [Self <: XFrameGrabber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFrameGrabber] (val x: Self) extends AnyVal {
       
       inline def setGrabFrame(value: Double => XGraphic): Self = StObject.set(x, "grabFrame", js.Any.fromFunction1(value))
     }
@@ -69,7 +70,8 @@ object media {
       __obj.asInstanceOf[XManager]
     }
     
-    extension [Self <: XManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XManager] (val x: Self) extends AnyVal {
       
       inline def setCreatePlayer(value: String => XPlayer): Self = StObject.set(x, "createPlayer", js.Any.fromFunction1(value))
     }
@@ -210,7 +212,8 @@ object media {
       __obj.asInstanceOf[XPlayer]
     }
     
-    extension [Self <: XPlayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPlayer] (val x: Self) extends AnyVal {
       
       inline def setCreateFrameGrabber(value: () => XFrameGrabber): Self = StObject.set(x, "createFrameGrabber", js.Any.fromFunction0(value))
       
@@ -312,7 +315,8 @@ object media {
       __obj.asInstanceOf[XPlayerWindow]
     }
     
-    extension [Self <: XPlayerWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPlayerWindow] (val x: Self) extends AnyVal {
       
       inline def setGetZoomLevel(value: () => ZoomLevel): Self = StObject.set(x, "getZoomLevel", js.Any.fromFunction0(value))
       

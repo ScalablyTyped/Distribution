@@ -38,7 +38,8 @@ object CreateNotificationSubscriptionRequest {
     __obj.asInstanceOf[CreateNotificationSubscriptionRequest]
   }
   
-  extension [Self <: CreateNotificationSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNotificationSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: SubscriptionEndPointType): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     

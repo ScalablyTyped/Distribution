@@ -18,7 +18,8 @@ object UpdateVirtualServiceOutput {
     __obj.asInstanceOf[UpdateVirtualServiceOutput]
   }
   
-  extension [Self <: UpdateVirtualServiceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVirtualServiceOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualService(value: VirtualServiceData): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object IndentToken {
     __obj.asInstanceOf[IndentToken]
   }
   
-  extension [Self <: IndentToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndentToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

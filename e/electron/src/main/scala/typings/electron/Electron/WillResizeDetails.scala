@@ -26,7 +26,8 @@ object WillResizeDetails {
     __obj.asInstanceOf[WillResizeDetails]
   }
   
-  extension [Self <: WillResizeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WillResizeDetails] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: bottom | left | right | `top-left` | `top-right` | `bottom-left` | `bottom-right`): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
   }

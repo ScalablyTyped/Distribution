@@ -32,7 +32,8 @@ object TaskAgentQueue {
     __obj.asInstanceOf[TaskAgentQueue]
   }
   
-  extension [Self <: TaskAgentQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentQueue] (val x: Self) extends AnyVal {
     
     inline def setGroupScopeId(value: String): Self = StObject.set(x, "groupScopeId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[GlobBaseResult]
     }
     
-    extension [Self <: GlobBaseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobBaseResult] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

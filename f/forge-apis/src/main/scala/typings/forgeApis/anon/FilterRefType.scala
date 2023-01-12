@@ -23,7 +23,8 @@ object FilterRefType {
     __obj.asInstanceOf[FilterRefType]
   }
   
-  extension [Self <: FilterRefType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterRefType] (val x: Self) extends AnyVal {
     
     inline def setFilterDirection(value: String): Self = StObject.set(x, "filterDirection", value.asInstanceOf[js.Any])
     

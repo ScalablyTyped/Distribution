@@ -63,7 +63,8 @@ object IlmExplainLifecycleLifecycleExplainManaged {
     __obj.asInstanceOf[IlmExplainLifecycleLifecycleExplainManaged]
   }
   
-  extension [Self <: IlmExplainLifecycleLifecycleExplainManaged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmExplainLifecycleLifecycleExplainManaged] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Name): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

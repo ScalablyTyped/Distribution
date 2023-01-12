@@ -21,7 +21,8 @@ object StellarInflationOperation {
     __obj.asInstanceOf[StellarInflationOperation]
   }
   
-  extension [Self <: StellarInflationOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarInflationOperation] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

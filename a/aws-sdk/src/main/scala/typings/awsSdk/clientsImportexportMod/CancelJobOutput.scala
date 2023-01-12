@@ -15,7 +15,8 @@ object CancelJobOutput {
     __obj.asInstanceOf[CancelJobOutput]
   }
   
-  extension [Self <: CancelJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelJobOutput] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     

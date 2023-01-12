@@ -21,7 +21,8 @@ object ScoreData {
     __obj.asInstanceOf[ScoreData]
   }
   
-  extension [Self <: ScoreData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScoreData] (val x: Self) extends AnyVal {
     
     inline def setStaves(value: js.Array[Staff]): Self = StObject.set(x, "staves", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DomIcon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOnAttach(value: (/* el */ Element, /* icon */ DomIcon, /* marker */ DomMarker) => Unit): Self = StObject.set(x, "onAttach", js.Any.fromFunction3(value))
       

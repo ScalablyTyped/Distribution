@@ -22,7 +22,8 @@ object AutocompleteOptions {
     __obj.asInstanceOf[AutocompleteOptions]
   }
   
-  extension [Self <: AutocompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutocompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String | HTMLElement): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

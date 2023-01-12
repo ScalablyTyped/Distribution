@@ -21,7 +21,8 @@ object ArrayOptions {
     __obj.asInstanceOf[ArrayOptions]
   }
   
-  extension [Self <: ArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
     

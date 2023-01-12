@@ -37,7 +37,8 @@ object SAFileTransfer {
     __obj.asInstanceOf[SAFileTransfer]
   }
   
-  extension [Self <: SAFileTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAFileTransfer] (val x: Self) extends AnyVal {
     
     inline def setCancelFile(value: String => Unit): Self = StObject.set(x, "cancelFile", js.Any.fromFunction1(value))
     

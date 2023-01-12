@@ -27,7 +27,8 @@ object distTypesStoriesComponentsIconsExampleIconsExampleMod extends Shortcut {
       __obj.asInstanceOf[IconsExampleProps]
     }
     
-    extension [Self <: IconsExampleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconsExampleProps] (val x: Self) extends AnyVal {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

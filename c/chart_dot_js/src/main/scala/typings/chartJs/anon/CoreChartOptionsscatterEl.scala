@@ -241,7 +241,8 @@ object CoreChartOptionsscatterEl {
     __obj.asInstanceOf[CoreChartOptionsscatterEl]
   }
   
-  extension [Self <: CoreChartOptionsscatterEl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionsscatterEl] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecscatteronPro): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

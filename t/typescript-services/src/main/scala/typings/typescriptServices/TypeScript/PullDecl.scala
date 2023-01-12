@@ -149,7 +149,8 @@ object PullDecl {
     __obj.asInstanceOf[PullDecl]
   }
   
-  extension [Self <: PullDecl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullDecl] (val x: Self) extends AnyVal {
     
     inline def setAddChildDecl(value: PullDecl => Unit): Self = StObject.set(x, "addChildDecl", js.Any.fromFunction1(value))
     

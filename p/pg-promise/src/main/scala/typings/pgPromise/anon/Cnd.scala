@@ -18,7 +18,8 @@ object Cnd {
     __obj.asInstanceOf[Cnd[Ext]]
   }
   
-  extension [Self <: Cnd[?], Ext](x: Self & Cnd[Ext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cnd[?], Ext] (val x: Self & Cnd[Ext]) extends AnyVal {
     
     inline def setCnd(value: Boolean | (js.Function1[/* t */ ITask[Ext] & Ext, Boolean])): Self = StObject.set(x, "cnd", value.asInstanceOf[js.Any])
     

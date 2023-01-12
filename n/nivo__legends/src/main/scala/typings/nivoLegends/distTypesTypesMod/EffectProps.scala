@@ -22,7 +22,8 @@ object EffectProps {
     __obj.asInstanceOf[EffectProps]
   }
   
-  extension [Self <: EffectProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EffectProps] (val x: Self) extends AnyVal {
     
     inline def setOn(value: hover): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     

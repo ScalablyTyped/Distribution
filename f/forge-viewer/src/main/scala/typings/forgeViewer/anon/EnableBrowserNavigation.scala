@@ -23,7 +23,8 @@ object EnableBrowserNavigation {
     __obj.asInstanceOf[EnableBrowserNavigation]
   }
   
-  extension [Self <: EnableBrowserNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableBrowserNavigation] (val x: Self) extends AnyVal {
     
     inline def setEnableBrowserNavigation(value: Boolean): Self = StObject.set(x, "enableBrowserNavigation", value.asInstanceOf[js.Any])
     

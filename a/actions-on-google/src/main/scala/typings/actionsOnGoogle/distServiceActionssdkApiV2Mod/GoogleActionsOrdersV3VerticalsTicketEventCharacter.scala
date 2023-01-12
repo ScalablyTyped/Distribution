@@ -28,7 +28,8 @@ object GoogleActionsOrdersV3VerticalsTicketEventCharacter {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsTicketEventCharacter]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsTicketEventCharacter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsTicketEventCharacter] (val x: Self) extends AnyVal {
     
     inline def setImage(value: GoogleActionsV2UiElementsImage): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

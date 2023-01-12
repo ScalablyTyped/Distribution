@@ -26,7 +26,8 @@ object InteractOutsideProps {
     __obj.asInstanceOf[InteractOutsideProps]
   }
   
-  extension [Self <: InteractOutsideProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractOutsideProps] (val x: Self) extends AnyVal {
     
     inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
     

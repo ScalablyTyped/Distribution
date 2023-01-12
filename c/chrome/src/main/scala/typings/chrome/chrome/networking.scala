@@ -47,7 +47,8 @@ object networking {
         __obj.asInstanceOf[NetworkInfo]
       }
       
-      extension [Self <: NetworkInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NetworkInfo] (val x: Self) extends AnyVal {
         
         inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
         

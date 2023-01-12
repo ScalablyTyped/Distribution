@@ -33,7 +33,8 @@ object RestErrorOptions {
     __obj.asInstanceOf[RestErrorOptions]
   }
   
-  extension [Self <: RestErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

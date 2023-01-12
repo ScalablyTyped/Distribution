@@ -23,7 +23,8 @@ object RTCStats {
     __obj.asInstanceOf[RTCStats]
   }
   
-  extension [Self <: RTCStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCStats] (val x: Self) extends AnyVal {
     
     inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object VirtualCardsListRequest {
     __obj.asInstanceOf[VirtualCardsListRequest]
   }
   
-  extension [Self <: VirtualCardsListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCardsListRequest] (val x: Self) extends AnyVal {
     
     inline def setPage(value: String): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

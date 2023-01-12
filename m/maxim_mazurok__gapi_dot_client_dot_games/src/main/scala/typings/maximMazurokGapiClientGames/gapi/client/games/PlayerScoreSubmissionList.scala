@@ -19,7 +19,8 @@ object PlayerScoreSubmissionList {
     __obj.asInstanceOf[PlayerScoreSubmissionList]
   }
   
-  extension [Self <: PlayerScoreSubmissionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerScoreSubmissionList] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

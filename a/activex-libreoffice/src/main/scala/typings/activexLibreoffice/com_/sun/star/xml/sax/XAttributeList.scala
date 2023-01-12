@@ -58,7 +58,8 @@ object XAttributeList {
     __obj.asInstanceOf[XAttributeList]
   }
   
-  extension [Self <: XAttributeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAttributeList] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

@@ -40,7 +40,8 @@ object typesUtilsMod {
       __obj.asInstanceOf[CollapseSizing]
     }
     
-    extension [Self <: CollapseSizing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseSizing] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesUtilsMod {
       __obj.asInstanceOf[IsWithinViewportOptions]
     }
     
-    extension [Self <: IsWithinViewportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsWithinViewportOptions] (val x: Self) extends AnyVal {
       
       inline def setFixedElement(value: HTMLElement): Self = StObject.set(x, "fixedElement", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object typesUtilsMod {
       __obj.asInstanceOf[TransitionClassNamesOptions]
     }
     
-    extension [Self <: TransitionClassNamesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionClassNamesOptions] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     }
@@ -124,7 +127,8 @@ object typesUtilsMod {
       __obj.asInstanceOf[TransitionTimeoutOptions]
     }
     
-    extension [Self <: TransitionTimeoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionTimeoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Boolean): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       

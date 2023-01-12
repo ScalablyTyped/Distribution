@@ -19,7 +19,8 @@ object AchievementResetAllResponse {
     __obj.asInstanceOf[AchievementResetAllResponse]
   }
   
-  extension [Self <: AchievementResetAllResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchievementResetAllResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

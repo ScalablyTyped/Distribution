@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyThemeProviderProp]
     }
     
-    extension [Self <: ReadonlyThemeProviderProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyThemeProviderProp] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: js.Function): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       

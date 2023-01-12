@@ -16,7 +16,8 @@ object CropHintsAnnotation {
     __obj.asInstanceOf[CropHintsAnnotation]
   }
   
-  extension [Self <: CropHintsAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CropHintsAnnotation] (val x: Self) extends AnyVal {
     
     inline def setCropHints(value: js.Array[CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
     

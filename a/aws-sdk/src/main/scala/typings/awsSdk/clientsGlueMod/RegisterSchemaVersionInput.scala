@@ -23,7 +23,8 @@ object RegisterSchemaVersionInput {
     __obj.asInstanceOf[RegisterSchemaVersionInput]
   }
   
-  extension [Self <: RegisterSchemaVersionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterSchemaVersionInput] (val x: Self) extends AnyVal {
     
     inline def setSchemaDefinition(value: SchemaDefinitionString): Self = StObject.set(x, "SchemaDefinition", value.asInstanceOf[js.Any])
     

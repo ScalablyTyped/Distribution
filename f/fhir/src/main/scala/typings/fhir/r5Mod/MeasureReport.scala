@@ -115,7 +115,8 @@ object MeasureReport {
     __obj.asInstanceOf[MeasureReport]
   }
   
-  extension [Self <: MeasureReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReport] (val x: Self) extends AnyVal {
     
     inline def setDataUpdateType(value: incremental | snapshot): Self = StObject.set(x, "dataUpdateType", value.asInstanceOf[js.Any])
     

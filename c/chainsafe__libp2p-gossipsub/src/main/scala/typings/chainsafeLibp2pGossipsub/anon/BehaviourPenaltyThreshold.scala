@@ -23,7 +23,8 @@ object BehaviourPenaltyThreshold {
     __obj.asInstanceOf[BehaviourPenaltyThreshold]
   }
   
-  extension [Self <: BehaviourPenaltyThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BehaviourPenaltyThreshold] (val x: Self) extends AnyVal {
     
     inline def setBehaviourPenaltyThreshold(value: Double): Self = StObject.set(x, "behaviourPenaltyThreshold", value.asInstanceOf[js.Any])
     

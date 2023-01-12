@@ -17,7 +17,8 @@ object ReadableResult {
     __obj.asInstanceOf[ReadableResult]
   }
   
-  extension [Self <: ReadableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableResult] (val x: Self) extends AnyVal {
     
     inline def setReadableResult(value: String): Self = StObject.set(x, "readableResult", value.asInstanceOf[js.Any])
     

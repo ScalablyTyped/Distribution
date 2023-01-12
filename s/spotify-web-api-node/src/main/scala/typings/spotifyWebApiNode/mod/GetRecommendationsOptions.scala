@@ -106,7 +106,8 @@ object GetRecommendationsOptions {
     __obj.asInstanceOf[GetRecommendationsOptions]
   }
   
-  extension [Self <: GetRecommendationsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationsOptions] (val x: Self) extends AnyVal {
     
     inline def setMax_acousticness(value: Double): Self = StObject.set(x, "max_acousticness", value.asInstanceOf[js.Any])
     

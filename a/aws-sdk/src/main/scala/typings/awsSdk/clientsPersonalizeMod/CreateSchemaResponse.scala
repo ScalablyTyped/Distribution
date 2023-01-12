@@ -18,7 +18,8 @@ object CreateSchemaResponse {
     __obj.asInstanceOf[CreateSchemaResponse]
   }
   
-  extension [Self <: CreateSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: Arn): Self = StObject.set(x, "schemaArn", value.asInstanceOf[js.Any])
     

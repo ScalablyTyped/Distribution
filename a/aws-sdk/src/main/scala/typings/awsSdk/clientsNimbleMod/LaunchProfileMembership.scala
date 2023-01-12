@@ -33,7 +33,8 @@ object LaunchProfileMembership {
     __obj.asInstanceOf[LaunchProfileMembership]
   }
   
-  extension [Self <: LaunchProfileMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchProfileMembership] (val x: Self) extends AnyVal {
     
     inline def setIdentityStoreId(value: String): Self = StObject.set(x, "identityStoreId", value.asInstanceOf[js.Any])
     

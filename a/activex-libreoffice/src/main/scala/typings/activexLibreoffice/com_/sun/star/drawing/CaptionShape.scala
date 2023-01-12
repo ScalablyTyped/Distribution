@@ -195,7 +195,8 @@ object CaptionShape {
     __obj.asInstanceOf[CaptionShape]
   }
   
-  extension [Self <: CaptionShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionShape] (val x: Self) extends AnyVal {
     
     inline def setCaptionAngle(value: Double): Self = StObject.set(x, "CaptionAngle", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object libCommonShallowUntilTargetMod {
       __obj.asInstanceOf[IShallowRendererProps]
     }
     
-    extension [Self <: IShallowRendererProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShallowRendererProps] (val x: Self) extends AnyVal {
       
       inline def setDisableLifecycleMethods(value: Boolean): Self = StObject.set(x, "disableLifecycleMethods", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object libCommonShallowUntilTargetMod {
       __obj.asInstanceOf[IShallowUntilTarget]
     }
     
-    extension [Self <: IShallowUntilTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShallowUntilTarget] (val x: Self) extends AnyVal {
       
       inline def setMaxTries(value: Double): Self = StObject.set(x, "maxTries", value.asInstanceOf[js.Any])
       

@@ -156,7 +156,8 @@ object segmentsObrDotsegmentMod {
       __obj.asInstanceOf[OBR]
     }
     
-    extension [Self <: OBR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OBR] (val x: Self) extends AnyVal {
       
       inline def setOBRDot1(value: String): Self = StObject.set(x, "OBR.1", value.asInstanceOf[js.Any])
       

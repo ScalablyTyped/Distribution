@@ -20,7 +20,8 @@ object IKeyEventArgs {
     __obj.asInstanceOf[IKeyEventArgs]
   }
   
-  extension [Self <: IKeyEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKeyStatus(value: CorePhysicalKeyStatus): Self = StObject.set(x, "keyStatus", value.asInstanceOf[js.Any])
     

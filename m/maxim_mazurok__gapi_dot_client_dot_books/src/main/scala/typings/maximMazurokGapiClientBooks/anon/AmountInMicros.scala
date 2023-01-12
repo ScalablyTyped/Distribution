@@ -21,7 +21,8 @@ object AmountInMicros {
     __obj.asInstanceOf[AmountInMicros]
   }
   
-  extension [Self <: AmountInMicros](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmountInMicros] (val x: Self) extends AnyVal {
     
     inline def setAmountInMicros(value: Double): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
     

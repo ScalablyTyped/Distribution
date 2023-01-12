@@ -104,7 +104,8 @@ object XSSFilters {
     __obj.asInstanceOf[XSSFilters]
   }
   
-  extension [Self <: XSSFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSSFilters] (val x: Self) extends AnyVal {
     
     inline def setInDoubleQuotedAttr(value: String => String): Self = StObject.set(x, "inDoubleQuotedAttr", js.Any.fromFunction1(value))
     

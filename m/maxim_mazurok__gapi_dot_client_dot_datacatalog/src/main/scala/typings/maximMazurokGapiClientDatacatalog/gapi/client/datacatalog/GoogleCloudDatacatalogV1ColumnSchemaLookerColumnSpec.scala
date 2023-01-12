@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ColumnSchemaLookerColumnSpec] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

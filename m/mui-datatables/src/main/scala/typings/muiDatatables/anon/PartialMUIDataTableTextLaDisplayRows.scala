@@ -24,7 +24,8 @@ object PartialMUIDataTableTextLaDisplayRows {
     __obj.asInstanceOf[PartialMUIDataTableTextLaDisplayRows]
   }
   
-  extension [Self <: PartialMUIDataTableTextLaDisplayRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMUIDataTableTextLaDisplayRows] (val x: Self) extends AnyVal {
     
     inline def setDisplayRows(value: String): Self = StObject.set(x, "displayRows", value.asInstanceOf[js.Any])
     

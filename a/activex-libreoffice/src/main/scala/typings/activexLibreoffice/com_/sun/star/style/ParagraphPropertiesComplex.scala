@@ -17,7 +17,8 @@ object ParagraphPropertiesComplex {
     __obj.asInstanceOf[ParagraphPropertiesComplex]
   }
   
-  extension [Self <: ParagraphPropertiesComplex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphPropertiesComplex] (val x: Self) extends AnyVal {
     
     inline def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }

@@ -51,7 +51,8 @@ object PointParticleEmitter {
     __obj.asInstanceOf[PointParticleEmitter]
   }
   
-  extension [Self <: PointParticleEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointParticleEmitter] (val x: Self) extends AnyVal {
     
     inline def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
     

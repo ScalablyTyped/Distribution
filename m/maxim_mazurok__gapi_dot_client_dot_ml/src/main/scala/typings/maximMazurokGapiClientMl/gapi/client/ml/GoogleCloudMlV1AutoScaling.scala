@@ -33,7 +33,8 @@ object GoogleCloudMlV1AutoScaling {
     __obj.asInstanceOf[GoogleCloudMlV1AutoScaling]
   }
   
-  extension [Self <: GoogleCloudMlV1AutoScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1AutoScaling] (val x: Self) extends AnyVal {
     
     inline def setMaxNodes(value: Double): Self = StObject.set(x, "maxNodes", value.asInstanceOf[js.Any])
     

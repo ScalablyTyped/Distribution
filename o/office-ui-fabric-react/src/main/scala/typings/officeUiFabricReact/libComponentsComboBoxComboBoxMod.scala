@@ -495,7 +495,8 @@ object libComponentsComboBoxComboBoxMod {
       __obj.asInstanceOf[IComboBoxState]
     }
     
-    extension [Self <: IComboBoxState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComboBoxState] (val x: Self) extends AnyVal {
       
       inline def setCurrentOptions(value: js.Array[IComboBoxOption]): Self = StObject.set(x, "currentOptions", value.asInstanceOf[js.Any])
       

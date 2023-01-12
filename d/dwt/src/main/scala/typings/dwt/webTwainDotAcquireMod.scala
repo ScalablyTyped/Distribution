@@ -44,7 +44,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[Capabilities]
     }
     
-    extension [Self <: Capabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: js.Array[CapabilitySetup]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[CapabilityDetails]
     }
     
-    extension [Self <: CapabilityDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapabilityDetails] (val x: Self) extends AnyVal {
       
       inline def setCapability(value: ValueAndLabel): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
       
@@ -177,7 +179,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[CapabilitySetup]
     }
     
-    extension [Self <: CapabilitySetup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CapabilitySetup] (val x: Self) extends AnyVal {
       
       inline def setCapability(value: EnumDWTCap | Double): Self = StObject.set(x, "capability", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[DeviceConfiguration]
     }
     
-    extension [Self <: DeviceConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceConfiguration] (val x: Self) extends AnyVal {
       
       inline def setExtendedImageInfoQueryLevel(value: Double): Self = StObject.set(x, "extendedImageInfoQueryLevel", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[ScanSetup]
     }
     
-    extension [Self <: ScanSetup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanSetup] (val x: Self) extends AnyVal {
       
       inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
@@ -467,7 +472,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[SourceDetails]
     }
     
-    extension [Self <: SourceDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceDetails] (val x: Self) extends AnyVal {
       
       inline def setDeviceInfo(value: Any): Self = StObject.set(x, "DeviceInfo", value.asInstanceOf[js.Any])
       
@@ -530,7 +536,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setBScanCompleted(value: Boolean): Self = StObject.set(x, "bScanCompleted", value.asInstanceOf[js.Any])
       
@@ -561,7 +568,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[TiffTag]
     }
     
-    extension [Self <: TiffTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TiffTag] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -596,7 +604,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[ValueAndLabel]
     }
     
-    extension [Self <: ValueAndLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAndLabel] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -623,7 +632,8 @@ object webTwainDotAcquireMod {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: Double): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
       

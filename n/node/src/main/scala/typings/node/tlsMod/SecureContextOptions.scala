@@ -192,7 +192,8 @@ object SecureContextOptions {
     __obj.asInstanceOf[SecureContextOptions]
   }
   
-  extension [Self <: SecureContextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureContextOptions] (val x: Self) extends AnyVal {
     
     inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object ScreenModeDelegate {
     __obj.asInstanceOf[ScreenModeDelegate]
   }
   
-  extension [Self <: ScreenModeDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenModeDelegate] (val x: Self) extends AnyVal {
     
     inline def setDoScreenModeChange(value: (ScreenMode, ScreenMode) => Unit): Self = StObject.set(x, "doScreenModeChange", js.Any.fromFunction2(value))
     

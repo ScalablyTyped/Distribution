@@ -22,7 +22,8 @@ object eventMod {
       __obj.asInstanceOf[EmailIdId]
     }
     
-    extension [Self <: EmailIdId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailIdId] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object eventMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object eventMod {
       __obj.asInstanceOf[IntercomUserIdId]
     }
     
-    extension [Self <: IntercomUserIdId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntercomUserIdId] (val x: Self) extends AnyVal {
       
       inline def setIntercom_user_id(value: String): Self = StObject.set(x, "intercom_user_id", value.asInstanceOf[js.Any])
     }
@@ -141,7 +144,8 @@ object eventMod {
       __obj.asInstanceOf[typings.intercomClient.eventMod.List]
     }
     
-    extension [Self <: typings.intercomClient.eventMod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.intercomClient.eventMod.List] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[Event]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object eventMod {
       __obj.asInstanceOf[UserIdId]
     }
     
-    extension [Self <: UserIdId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserIdId] (val x: Self) extends AnyVal {
       
       inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }

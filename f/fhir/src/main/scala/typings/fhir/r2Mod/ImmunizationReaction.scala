@@ -34,7 +34,8 @@ object ImmunizationReaction {
     __obj.asInstanceOf[ImmunizationReaction]
   }
   
-  extension [Self <: ImmunizationReaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunizationReaction] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object WatchOptionsBase {
     __obj.asInstanceOf[WatchOptionsBase]
   }
   
-  extension [Self <: WatchOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setFlush(value: pre | post | sync): Self = StObject.set(x, "flush", value.asInstanceOf[js.Any])
     

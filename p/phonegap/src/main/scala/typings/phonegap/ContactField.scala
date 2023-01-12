@@ -20,7 +20,8 @@ object ContactField {
     __obj.asInstanceOf[ContactField]
   }
   
-  extension [Self <: ContactField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactField] (val x: Self) extends AnyVal {
     
     inline def setPref(value: Boolean): Self = StObject.set(x, "pref", value.asInstanceOf[js.Any])
     

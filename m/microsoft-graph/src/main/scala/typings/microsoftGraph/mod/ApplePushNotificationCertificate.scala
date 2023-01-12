@@ -33,7 +33,8 @@ object ApplePushNotificationCertificate {
     __obj.asInstanceOf[ApplePushNotificationCertificate]
   }
   
-  extension [Self <: ApplePushNotificationCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePushNotificationCertificate] (val x: Self) extends AnyVal {
     
     inline def setAppleIdentifier(value: NullableOption[String]): Self = StObject.set(x, "appleIdentifier", value.asInstanceOf[js.Any])
     

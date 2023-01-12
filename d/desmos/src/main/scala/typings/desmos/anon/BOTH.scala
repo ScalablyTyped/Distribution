@@ -21,7 +21,8 @@ object BOTH {
     __obj.asInstanceOf[BOTH]
   }
   
-  extension [Self <: BOTH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BOTH] (val x: Self) extends AnyVal {
     
     inline def setBOTH(value: typings.desmos.desmosStrings.BOTH): Self = StObject.set(x, "BOTH", value.asInstanceOf[js.Any])
     

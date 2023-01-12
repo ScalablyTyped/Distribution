@@ -33,7 +33,8 @@ object gcm {
       __obj.asInstanceOf[GcmError]
     }
     
-    extension [Self <: GcmError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GcmError] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: js.Object): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object gcm {
       __obj.asInstanceOf[IncomingMessage]
     }
     
-    extension [Self <: IncomingMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
       
       inline def setCollapseKey(value: String): Self = StObject.set(x, "collapseKey", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object gcm {
       __obj.asInstanceOf[OutgoingMessage]
     }
     
-    extension [Self <: OutgoingMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingMessage] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

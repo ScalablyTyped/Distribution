@@ -96,7 +96,8 @@ object mod {
         __obj.asInstanceOf[WorkerGlobalScope]
       }
       
-      extension [Self <: WorkerGlobalScope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WorkerGlobalScope] (val x: Self) extends AnyVal {
         
         inline def setListeners(value: Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
         
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Snapshot]
     }
     
-    extension [Self <: Snapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
       
       inline def setCaches(value: Caches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       

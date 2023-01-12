@@ -63,7 +63,8 @@ object typesUploadArchiveInputMod {
       __obj.asInstanceOf[UploadArchiveInput[StreamType]]
     }
     
-    extension [Self <: UploadArchiveInput[?], StreamType](x: Self & UploadArchiveInput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadArchiveInput[?], StreamType] (val x: Self & UploadArchiveInput[StreamType]) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

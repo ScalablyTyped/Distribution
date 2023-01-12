@@ -17,7 +17,8 @@ object Is {
     __obj.asInstanceOf[Is[T]]
   }
   
-  extension [Self <: Is[?], T](x: Self & Is[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Is[?], T] (val x: Self & Is[T]) extends AnyVal {
     
     inline def setIs(value: T => Unit): Self = StObject.set(x, "is", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object ClassNameRenderer {
     __obj.asInstanceOf[ClassNameRenderer[K, D]]
   }
   
-  extension [Self <: ClassNameRenderer[?, ?], K, D](x: Self & (ClassNameRenderer[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassNameRenderer[?, ?], K, D] (val x: Self & (ClassNameRenderer[K, D])) extends AnyVal {
     
     inline def setClassName(value: (js.Function1[/* context */ LabelContext[K, D], String | Unit | Null]) | String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

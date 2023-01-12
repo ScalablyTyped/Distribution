@@ -15,7 +15,8 @@ object INotificationAction {
     __obj.asInstanceOf[INotificationAction]
   }
   
-  extension [Self <: INotificationAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotificationAction] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_fiori_INotificationAction(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_fiori_INotificationAction", value.asInstanceOf[js.Any])
   }

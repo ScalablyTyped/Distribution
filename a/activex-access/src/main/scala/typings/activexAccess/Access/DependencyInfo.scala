@@ -55,7 +55,8 @@ object DependencyInfo {
     __obj.asInstanceOf[DependencyInfo]
   }
   
-  extension [Self <: DependencyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependencyInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessDotDependencyInfo_typekey(value: DependencyInfo): Self = StObject.set(x, "Access.DependencyInfo_typekey", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object libAsAsyncMod {
       __obj.asInstanceOf[IAsAsyncOptions[TProps]]
     }
     
-    extension [Self <: IAsAsyncOptions[?], TProps](x: Self & IAsAsyncOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsAsyncOptions[?], TProps] (val x: Self & IAsAsyncOptions[TProps]) extends AnyVal {
       
       inline def setLoad(value: () => js.Promise[ElementType[TProps]]): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
       

@@ -29,7 +29,8 @@ object EnumBooleanBody_ {
     __obj.asInstanceOf[EnumBooleanBody_]
   }
   
-  extension [Self <: EnumBooleanBody_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumBooleanBody_] (val x: Self) extends AnyVal {
     
     inline def setExplicitType(value: Boolean): Self = StObject.set(x, "explicitType", value.asInstanceOf[js.Any])
     

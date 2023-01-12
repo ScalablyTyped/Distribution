@@ -22,7 +22,8 @@ object EmulatorConfig {
     __obj.asInstanceOf[EmulatorConfig]
   }
   
-  extension [Self <: EmulatorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmulatorConfig] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

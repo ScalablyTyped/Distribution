@@ -23,7 +23,8 @@ object DeleteFileSystemLustreResponse {
     __obj.asInstanceOf[DeleteFileSystemLustreResponse]
   }
   
-  extension [Self <: DeleteFileSystemLustreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemLustreResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupId(value: BackupId): Self = StObject.set(x, "FinalBackupId", value.asInstanceOf[js.Any])
     

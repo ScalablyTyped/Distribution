@@ -77,7 +77,8 @@ object libComponentsMarqueeSelectionMarqueeSelectionDottypesMod {
       __obj.asInstanceOf[IMarqueeSelectionProps]
     }
     
-    extension [Self <: IMarqueeSelectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarqueeSelectionProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IMarqueeSelection]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libComponentsMarqueeSelectionMarqueeSelectionDottypesMod {
       __obj.asInstanceOf[IMarqueeSelectionStyleProps]
     }
     
-    extension [Self <: IMarqueeSelectionStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarqueeSelectionStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object libComponentsMarqueeSelectionMarqueeSelectionDottypesMod {
       __obj.asInstanceOf[IMarqueeSelectionStyles]
     }
     
-    extension [Self <: IMarqueeSelectionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarqueeSelectionStyles] (val x: Self) extends AnyVal {
       
       inline def setBox(value: IStyle): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
       

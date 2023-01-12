@@ -16,7 +16,8 @@ object ChainOf {
     __obj.asInstanceOf[ChainOf]
   }
   
-  extension [Self <: ChainOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainOf] (val x: Self) extends AnyVal {
     
     inline def setChainOf(value: js.Array[Validator]): Self = StObject.set(x, "chainOf", value.asInstanceOf[js.Any])
     

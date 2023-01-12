@@ -83,7 +83,8 @@ object DescribeSlotResponse {
     __obj.asInstanceOf[DescribeSlotResponse]
   }
   
-  extension [Self <: DescribeSlotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSlotResponse] (val x: Self) extends AnyVal {
     
     inline def setBotId(value: Id): Self = StObject.set(x, "botId", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object AggregatedResultWithoutCoverage {
     __obj.asInstanceOf[AggregatedResultWithoutCoverage]
   }
   
-  extension [Self <: AggregatedResultWithoutCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResultWithoutCoverage] (val x: Self) extends AnyVal {
     
     inline def setNumFailedTestSuites(value: Double): Self = StObject.set(x, "numFailedTestSuites", value.asInstanceOf[js.Any])
     

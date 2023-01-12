@@ -20,7 +20,8 @@ object TestMetricFilterRequest {
     __obj.asInstanceOf[TestMetricFilterRequest]
   }
   
-  extension [Self <: TestMetricFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestMetricFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setFilterPattern(value: FilterPattern): Self = StObject.set(x, "filterPattern", value.asInstanceOf[js.Any])
     

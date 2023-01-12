@@ -839,7 +839,8 @@ object PartialPickOmitHTMLPropsH {
     __obj.asInstanceOf[PartialPickOmitHTMLPropsH]
   }
   
-  extension [Self <: PartialPickOmitHTMLPropsH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickOmitHTMLPropsH] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

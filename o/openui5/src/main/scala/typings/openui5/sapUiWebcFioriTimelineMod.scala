@@ -371,7 +371,8 @@ object sapUiWebcFioriTimelineMod {
       __obj.asInstanceOf[TimelineSettings]
     }
     
-    extension [Self <: TimelineSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

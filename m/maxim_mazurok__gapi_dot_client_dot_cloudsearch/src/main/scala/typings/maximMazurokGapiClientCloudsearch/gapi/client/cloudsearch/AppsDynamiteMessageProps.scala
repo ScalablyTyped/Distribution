@@ -15,7 +15,8 @@ object AppsDynamiteMessageProps {
     __obj.asInstanceOf[AppsDynamiteMessageProps]
   }
   
-  extension [Self <: AppsDynamiteMessageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteMessageProps] (val x: Self) extends AnyVal {
     
     inline def setBabelProps(value: AppsDynamiteBabelMessageProps): Self = StObject.set(x, "babelProps", value.asInstanceOf[js.Any])
     

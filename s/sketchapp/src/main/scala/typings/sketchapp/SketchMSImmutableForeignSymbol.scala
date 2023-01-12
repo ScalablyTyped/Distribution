@@ -32,7 +32,8 @@ object SketchMSImmutableForeignSymbol {
     __obj.asInstanceOf[SketchMSImmutableForeignSymbol]
   }
   
-  extension [Self <: SketchMSImmutableForeignSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSImmutableForeignSymbol] (val x: Self) extends AnyVal {
     
     inline def setLibraryID(value: String): Self = StObject.set(x, "libraryID", value.asInstanceOf[js.Any])
     

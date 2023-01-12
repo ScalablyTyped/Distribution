@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Cancel[T, U, V]]
     }
     
-    extension [Self <: Cancel[?, ?, ?], T, U, V /* <: String */](x: Self & (Cancel[T, U, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancel[?, ?, ?], T, U, V /* <: String */] (val x: Self & (Cancel[T, U, V])) extends AnyVal {
       
       inline def setCancel(value: State[T, U, V] => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[PartialFrequency]
     }
     
-    extension [Self <: PartialFrequency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFrequency] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: Boolean | Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       

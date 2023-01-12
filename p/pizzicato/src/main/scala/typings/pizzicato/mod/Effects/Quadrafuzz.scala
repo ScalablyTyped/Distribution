@@ -66,7 +66,8 @@ object Quadrafuzz {
   def midLowGain: Double = js.native
   inline def midLowGain_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("midLowGain")(x.asInstanceOf[js.Any])
   
-  extension [Self <: Quadrafuzz](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Quadrafuzz] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => Quadrafuzz): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

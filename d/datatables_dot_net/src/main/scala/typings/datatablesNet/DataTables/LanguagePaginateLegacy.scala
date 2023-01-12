@@ -21,7 +21,8 @@ object LanguagePaginateLegacy {
     __obj.asInstanceOf[LanguagePaginateLegacy]
   }
   
-  extension [Self <: LanguagePaginateLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguagePaginateLegacy] (val x: Self) extends AnyVal {
     
     inline def setSFirst(value: String): Self = StObject.set(x, "sFirst", value.asInstanceOf[js.Any])
     

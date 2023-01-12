@@ -282,7 +282,8 @@ object ojInputDate {
       __obj.asInstanceOf[DayFormatterInput]
     }
     
-    extension [Self <: DayFormatterInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DayFormatterInput] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -308,7 +309,8 @@ object ojInputDate {
       __obj.asInstanceOf[DayFormatterOutput]
     }
     
-    extension [Self <: DayFormatterOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DayFormatterOutput] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

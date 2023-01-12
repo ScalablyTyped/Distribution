@@ -23,7 +23,8 @@ object SearchResourcesTagCriterion {
     __obj.asInstanceOf[SearchResourcesTagCriterion]
   }
   
-  extension [Self <: SearchResourcesTagCriterion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesTagCriterion] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: SearchResourcesComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

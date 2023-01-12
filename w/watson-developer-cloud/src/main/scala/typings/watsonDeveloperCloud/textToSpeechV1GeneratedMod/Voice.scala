@@ -46,7 +46,8 @@ object Voice {
     __obj.asInstanceOf[Voice]
   }
   
-  extension [Self <: Voice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Voice] (val x: Self) extends AnyVal {
     
     inline def setCustomizable(value: Boolean): Self = StObject.set(x, "customizable", value.asInstanceOf[js.Any])
     

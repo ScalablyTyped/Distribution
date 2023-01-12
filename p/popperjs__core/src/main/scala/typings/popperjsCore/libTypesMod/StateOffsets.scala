@@ -17,7 +17,8 @@ object StateOffsets {
     __obj.asInstanceOf[StateOffsets]
   }
   
-  extension [Self <: StateOffsets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateOffsets] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: Offsets): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
     

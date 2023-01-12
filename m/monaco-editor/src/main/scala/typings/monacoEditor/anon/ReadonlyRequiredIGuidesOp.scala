@@ -32,7 +32,8 @@ object ReadonlyRequiredIGuidesOp {
     __obj.asInstanceOf[ReadonlyRequiredIGuidesOp]
   }
   
-  extension [Self <: ReadonlyRequiredIGuidesOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyRequiredIGuidesOp] (val x: Self) extends AnyVal {
     
     inline def setBracketPairs(value: Boolean | active): Self = StObject.set(x, "bracketPairs", value.asInstanceOf[js.Any])
     

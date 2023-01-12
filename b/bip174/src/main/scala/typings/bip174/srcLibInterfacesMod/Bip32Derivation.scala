@@ -20,7 +20,8 @@ object Bip32Derivation {
     __obj.asInstanceOf[Bip32Derivation]
   }
   
-  extension [Self <: Bip32Derivation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bip32Derivation] (val x: Self) extends AnyVal {
     
     inline def setMasterFingerprint(value: Buffer): Self = StObject.set(x, "masterFingerprint", value.asInstanceOf[js.Any])
     

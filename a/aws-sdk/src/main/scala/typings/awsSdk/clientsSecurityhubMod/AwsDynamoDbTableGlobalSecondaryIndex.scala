@@ -58,7 +58,8 @@ object AwsDynamoDbTableGlobalSecondaryIndex {
     __obj.asInstanceOf[AwsDynamoDbTableGlobalSecondaryIndex]
   }
   
-  extension [Self <: AwsDynamoDbTableGlobalSecondaryIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsDynamoDbTableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
     
     inline def setBackfilling(value: Boolean): Self = StObject.set(x, "Backfilling", value.asInstanceOf[js.Any])
     

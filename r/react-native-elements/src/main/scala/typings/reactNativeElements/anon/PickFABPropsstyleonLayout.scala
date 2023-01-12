@@ -189,7 +189,8 @@ object PickFABPropsstyleonLayout {
     __obj.asInstanceOf[PickFABPropsstyleonLayout]
   }
   
-  extension [Self <: PickFABPropsstyleonLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickFABPropsstyleonLayout] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Readonlyvalueboolean {
     __obj.asInstanceOf[Readonlyvalueboolean]
   }
   
-  extension [Self <: Readonlyvalueboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyvalueboolean] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

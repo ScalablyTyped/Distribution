@@ -22,7 +22,8 @@ object GetResizeProps {
     __obj.asInstanceOf[GetResizeProps]
   }
   
-  extension [Self <: GetResizeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResizeProps] (val x: Self) extends AnyVal {
     
     inline def setLeftClassName(value: String): Self = StObject.set(x, "leftClassName", value.asInstanceOf[js.Any])
     

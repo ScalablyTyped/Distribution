@@ -33,7 +33,8 @@ object DescribePublicIpv4PoolsRequest {
     __obj.asInstanceOf[DescribePublicIpv4PoolsRequest]
   }
   
-  extension [Self <: DescribePublicIpv4PoolsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePublicIpv4PoolsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

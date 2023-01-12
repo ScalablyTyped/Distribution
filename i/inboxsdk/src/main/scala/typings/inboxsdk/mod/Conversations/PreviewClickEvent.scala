@@ -17,7 +17,8 @@ object PreviewClickEvent {
     __obj.asInstanceOf[PreviewClickEvent]
   }
   
-  extension [Self <: PreviewClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewClickEvent] (val x: Self) extends AnyVal {
     
     inline def setAttachmentCardView(value: AttachmentCardView): Self = StObject.set(x, "attachmentCardView", value.asInstanceOf[js.Any])
     

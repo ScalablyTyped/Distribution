@@ -29,7 +29,8 @@ object CalloutActionMenu {
     __obj.asInstanceOf[CalloutActionMenu]
   }
   
-  extension [Self <: CalloutActionMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalloutActionMenu] (val x: Self) extends AnyVal {
     
     inline def setAddAction(value: CalloutAction => Unit): Self = StObject.set(x, "addAction", js.Any.fromFunction1(value))
     

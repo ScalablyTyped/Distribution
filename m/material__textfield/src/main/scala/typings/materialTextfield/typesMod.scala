@@ -32,7 +32,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTextFieldFoundationMap]
     }
     
-    extension [Self <: MDCTextFieldFoundationMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldFoundationMap] (val x: Self) extends AnyVal {
       
       inline def setCharacterCounter(value: MDCTextFieldCharacterCounterFoundation): Self = StObject.set(x, "characterCounter", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTextFieldNativeInputElement]
     }
     
-    extension [Self <: MDCTextFieldNativeInputElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTextFieldNativeInputElement] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

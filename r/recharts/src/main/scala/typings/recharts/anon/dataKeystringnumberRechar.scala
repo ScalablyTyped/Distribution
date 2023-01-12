@@ -48,7 +48,8 @@ object dataKeystringnumberRechar {
     __obj.asInstanceOf[dataKeystringnumberRechar]
   }
   
-  extension [Self <: dataKeystringnumberRechar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dataKeystringnumberRechar] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

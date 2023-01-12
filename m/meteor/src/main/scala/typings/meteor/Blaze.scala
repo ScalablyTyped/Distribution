@@ -90,7 +90,8 @@ object Blaze {
       __obj.asInstanceOf[Template[D, T]]
     }
     
-    extension [Self <: Template[?, ?], D, T](x: Self & (Template[D, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template[?, ?], D, T] (val x: Self & (Template[D, T])) extends AnyVal {
       
       inline def set$(value: JQueryStatic): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object Blaze {
       __obj.asInstanceOf[TemplateInstance[D]]
     }
     
-    extension [Self <: TemplateInstance[?], D](x: Self & TemplateInstance[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateInstance[?], D] (val x: Self & TemplateInstance[D]) extends AnyVal {
       
       inline def set$(value: String => JQuery[Any]): Self = StObject.set(x, "$", js.Any.fromFunction1(value))
       
@@ -262,7 +264,8 @@ object Blaze {
       __obj.asInstanceOf[View]
     }
     
-    extension [Self <: View](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: View] (val x: Self) extends AnyVal {
       
       inline def setAutorun(value: js.Function1[/* computation */ Computation, Unit] => Computation): Self = StObject.set(x, "autorun", js.Any.fromFunction1(value))
       

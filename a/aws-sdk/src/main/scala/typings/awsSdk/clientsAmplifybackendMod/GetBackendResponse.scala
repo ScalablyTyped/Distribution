@@ -48,7 +48,8 @@ object GetBackendResponse {
     __obj.asInstanceOf[GetBackendResponse]
   }
   
-  extension [Self <: GetBackendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackendResponse] (val x: Self) extends AnyVal {
     
     inline def setAmplifyFeatureFlags(value: string): Self = StObject.set(x, "AmplifyFeatureFlags", value.asInstanceOf[js.Any])
     

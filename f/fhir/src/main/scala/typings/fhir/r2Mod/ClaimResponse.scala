@@ -160,7 +160,8 @@ object ClaimResponse {
     __obj.asInstanceOf[ClaimResponse]
   }
   
-  extension [Self <: ClaimResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponse] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: js.Array[ClaimResponseAddItem]): Self = StObject.set(x, "addItem", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object toasty {
       __obj.asInstanceOf[IGlobalConfig]
     }
     
-    extension [Self <: IGlobalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlobalConfig] (val x: Self) extends AnyVal {
       
       inline def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object toasty {
       __obj.asInstanceOf[IToastyConfig]
     }
     
-    extension [Self <: IToastyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastyConfig] (val x: Self) extends AnyVal {
       
       inline def setClickToClose(value: Boolean): Self = StObject.set(x, "clickToClose", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object toasty {
       __obj.asInstanceOf[IToastyConfigProvider]
     }
     
-    extension [Self <: IToastyConfigProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToastyConfigProvider] (val x: Self) extends AnyVal {
       
       inline def set$get(value: () => IGlobalConfig): Self = StObject.set(x, "$get", js.Any.fromFunction0(value))
       

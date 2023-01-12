@@ -33,7 +33,8 @@ object UpdateArtifactRequest {
     __obj.asInstanceOf[UpdateArtifactRequest]
   }
   
-  extension [Self <: UpdateArtifactRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateArtifactRequest] (val x: Self) extends AnyVal {
     
     inline def setArtifactArn(value: ArtifactArn): Self = StObject.set(x, "ArtifactArn", value.asInstanceOf[js.Any])
     

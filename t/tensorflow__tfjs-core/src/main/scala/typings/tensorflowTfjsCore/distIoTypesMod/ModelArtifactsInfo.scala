@@ -53,7 +53,8 @@ object ModelArtifactsInfo {
     __obj.asInstanceOf[ModelArtifactsInfo]
   }
   
-  extension [Self <: ModelArtifactsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelArtifactsInfo] (val x: Self) extends AnyVal {
     
     inline def setDateSaved(value: js.Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
     

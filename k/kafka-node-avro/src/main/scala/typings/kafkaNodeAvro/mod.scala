@@ -24,7 +24,8 @@ object mod {
       __obj.asInstanceOf[Kafka]
     }
     
-    extension [Self <: Kafka](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kafka] (val x: Self) extends AnyVal {
       
       inline def setSend(value: SendOptions => js.Promise[js.Object]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     }
@@ -42,7 +43,8 @@ object mod {
       __obj.asInstanceOf[KafkaSettings]
     }
     
-    extension [Self <: KafkaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KafkaSettings] (val x: Self) extends AnyVal {
       
       inline def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
     }
@@ -60,7 +62,8 @@ object mod {
       __obj.asInstanceOf[SchemaSettings]
     }
     
-    extension [Self <: SchemaSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaSettings] (val x: Self) extends AnyVal {
       
       inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     }
@@ -87,7 +90,8 @@ object mod {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setKafka(value: KafkaSettings): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object AutoLevels {
     __obj.asInstanceOf[AutoLevels]
   }
   
-  extension [Self <: AutoLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoLevels] (val x: Self) extends AnyVal {
     
     inline def setAutoLevels(value: Boolean): Self = StObject.set(x, "autoLevels", value.asInstanceOf[js.Any])
     

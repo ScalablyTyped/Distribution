@@ -21,7 +21,8 @@ object ChargeResponseMessage {
     __obj.asInstanceOf[ChargeResponseMessage]
   }
   
-  extension [Self <: ChargeResponseMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeResponseMessage] (val x: Self) extends AnyVal {
     
     inline def setChargeResponseMessage(value: String): Self = StObject.set(x, "chargeResponseMessage", value.asInstanceOf[js.Any])
     

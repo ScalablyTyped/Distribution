@@ -21,7 +21,8 @@ object Snippets {
     __obj.asInstanceOf[Snippets]
   }
   
-  extension [Self <: Snippets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snippets] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: typings.naja.distNajaMod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

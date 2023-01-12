@@ -23,7 +23,8 @@ object Page {
     __obj.asInstanceOf[Page]
   }
   
-  extension [Self <: Page](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
     
     inline def setPage(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any

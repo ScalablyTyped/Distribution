@@ -116,7 +116,8 @@ object ProcessRequest {
     __obj.asInstanceOf[ProcessRequest]
   }
   
-  extension [Self <: ProcessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: cancel | poll | reprocess | status): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object TargetData {
     __obj.asInstanceOf[TargetData]
   }
   
-  extension [Self <: TargetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetData] (val x: Self) extends AnyVal {
     
     inline def setLastLimboFreeSnapshotVersion(value: SnapshotVersion): Self = StObject.set(x, "lastLimboFreeSnapshotVersion", value.asInstanceOf[js.Any])
     

@@ -77,7 +77,8 @@ object AssigningCategoryMarkerStyleEventUIParam {
     __obj.asInstanceOf[AssigningCategoryMarkerStyleEventUIParam]
   }
   
-  extension [Self <: AssigningCategoryMarkerStyleEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssigningCategoryMarkerStyleEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

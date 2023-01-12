@@ -63,7 +63,8 @@ object urlParserMod {
       __obj.asInstanceOf[UrlParserResult]
     }
     
-    extension [Self <: UrlParserResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlParserResult] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object SwitchButton {
     __obj.asInstanceOf[SwitchButton]
   }
   
-  extension [Self <: SwitchButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchButton] (val x: Self) extends AnyVal {
     
     inline def setDark(value: SwitchButtonTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

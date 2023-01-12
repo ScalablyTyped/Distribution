@@ -30,7 +30,8 @@ object IPathCircle {
     __obj.asInstanceOf[IPathCircle]
   }
   
-  extension [Self <: IPathCircle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathCircle] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }

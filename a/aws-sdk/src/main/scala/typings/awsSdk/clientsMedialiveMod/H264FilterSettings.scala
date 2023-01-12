@@ -15,7 +15,8 @@ object H264FilterSettings {
     __obj.asInstanceOf[H264FilterSettings]
   }
   
-  extension [Self <: H264FilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: H264FilterSettings] (val x: Self) extends AnyVal {
     
     inline def setTemporalFilterSettings(value: TemporalFilterSettings): Self = StObject.set(x, "TemporalFilterSettings", value.asInstanceOf[js.Any])
     

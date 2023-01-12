@@ -32,7 +32,8 @@ object distTs3Dot9UtilsNormalizeStoriesMod {
       __obj.asInstanceOf[NormalizeOptions]
     }
     
-    extension [Self <: NormalizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigDir(value: String): Self = StObject.set(x, "configDir", value.asInstanceOf[js.Any])
       

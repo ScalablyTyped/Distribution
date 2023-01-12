@@ -17,7 +17,8 @@ object MaxSizeReplaceHasWithBlock {
     __obj.asInstanceOf[MaxSizeReplaceHasWithBlock]
   }
   
-  extension [Self <: MaxSizeReplaceHasWithBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxSizeReplaceHasWithBlock] (val x: Self) extends AnyVal {
     
     inline def setMaxSizeReplaceHasWithBlock(value: Double): Self = StObject.set(x, "maxSizeReplaceHasWithBlock", value.asInstanceOf[js.Any])
     

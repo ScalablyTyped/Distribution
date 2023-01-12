@@ -19,7 +19,8 @@ object XcodeVersion {
     __obj.asInstanceOf[XcodeVersion]
   }
   
-  extension [Self <: XcodeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XcodeVersion] (val x: Self) extends AnyVal {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

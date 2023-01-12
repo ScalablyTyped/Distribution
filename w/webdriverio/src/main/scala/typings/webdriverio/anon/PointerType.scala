@@ -18,7 +18,8 @@ object PointerType {
     __obj.asInstanceOf[PointerType]
   }
   
-  extension [Self <: PointerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerType] (val x: Self) extends AnyVal {
     
     inline def setPointerType(value: mouse | pen | touch): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
   }

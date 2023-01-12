@@ -23,7 +23,8 @@ object Increment {
     __obj.asInstanceOf[Increment]
   }
   
-  extension [Self <: Increment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Increment] (val x: Self) extends AnyVal {
     
     inline def setAllowUserKeys(value: Boolean): Self = StObject.set(x, "allowUserKeys", value.asInstanceOf[js.Any])
     

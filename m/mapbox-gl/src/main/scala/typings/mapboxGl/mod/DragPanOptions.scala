@@ -21,7 +21,8 @@ object DragPanOptions {
     __obj.asInstanceOf[DragPanOptions]
   }
   
-  extension [Self <: DragPanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragPanOptions] (val x: Self) extends AnyVal {
     
     inline def setDeceleration(value: Double): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
     

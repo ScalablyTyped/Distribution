@@ -142,7 +142,8 @@ object distSrcTransportMod {
       __obj.asInstanceOf[SignalServerServerEvents]
     }
     
-    extension [Self <: SignalServerServerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalServerServerEvents] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: CustomEvent[Connection]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object distSrcTransportMod {
       __obj.asInstanceOf[WebRTCStarComponents]
     }
     
-    extension [Self <: WebRTCStarComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCStarComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
@@ -188,7 +190,8 @@ object distSrcTransportMod {
       __obj.asInstanceOf[WebRTCStarDialOptions]
     }
     
-    extension [Self <: WebRTCStarDialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCStarDialOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelOptions(value: WebRTCInitiatorInit): Self = StObject.set(x, "channelOptions", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object distSrcTransportMod {
       __obj.asInstanceOf[WebRTCStarInit]
     }
     
-    extension [Self <: WebRTCStarInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCStarInit] (val x: Self) extends AnyVal {
       
       inline def setWrtc(value: WRTC): Self = StObject.set(x, "wrtc", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object distSrcTransportMod {
       __obj.asInstanceOf[WebRTCStarListenerOptions]
     }
     
-    extension [Self <: WebRTCStarListenerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCStarListenerOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelOptions(value: WebRTCReceiverInit): Self = StObject.set(x, "channelOptions", value.asInstanceOf[js.Any])
       

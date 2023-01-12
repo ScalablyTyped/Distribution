@@ -17,7 +17,8 @@ object TestFailureDetails {
     __obj.asInstanceOf[TestFailureDetails]
   }
   
-  extension [Self <: TestFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

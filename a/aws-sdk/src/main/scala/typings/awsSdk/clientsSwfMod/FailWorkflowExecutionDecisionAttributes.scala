@@ -23,7 +23,8 @@ object FailWorkflowExecutionDecisionAttributes {
     __obj.asInstanceOf[FailWorkflowExecutionDecisionAttributes]
   }
   
-  extension [Self <: FailWorkflowExecutionDecisionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailWorkflowExecutionDecisionAttributes] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

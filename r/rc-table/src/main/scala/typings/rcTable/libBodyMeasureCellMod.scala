@@ -27,7 +27,8 @@ object libBodyMeasureCellMod {
       __obj.asInstanceOf[MeasureCellProps]
     }
     
-    extension [Self <: MeasureCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeasureCellProps] (val x: Self) extends AnyVal {
       
       inline def setColumnKey(value: Key): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
       

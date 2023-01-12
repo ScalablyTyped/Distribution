@@ -69,7 +69,8 @@ object MenuDataItemisUrlboolean {
     __obj.asInstanceOf[MenuDataItemisUrlboolean]
   }
   
-  extension [Self <: MenuDataItemisUrlboolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuDataItemisUrlboolean] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

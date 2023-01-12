@@ -22,7 +22,8 @@ object TriggerNameSmsRecipientResponseMissed {
     __obj.asInstanceOf[TriggerNameSmsRecipientResponseMissed]
   }
   
-  extension [Self <: TriggerNameSmsRecipientResponseMissed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerNameSmsRecipientResponseMissed] (val x: Self) extends AnyVal {
     
     inline def setTriggerId(value: `14`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     

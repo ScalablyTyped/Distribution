@@ -19,7 +19,8 @@ object QueryDslGeoPolygonQueryKeys {
     __obj.asInstanceOf[QueryDslGeoPolygonQueryKeys]
   }
   
-  extension [Self <: QueryDslGeoPolygonQueryKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslGeoPolygonQueryKeys] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unmapped(value: Boolean): Self = StObject.set(x, "ignore_unmapped", value.asInstanceOf[js.Any])
     

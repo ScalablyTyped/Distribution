@@ -48,7 +48,8 @@ object libInteractionGrammarInteractionMod {
       __obj.asInstanceOf[ActionObject]
     }
     
-    extension [Self <: ActionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: IAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libInteractionGrammarInteractionMod {
       __obj.asInstanceOf[DebounceOption]
     }
     
-    extension [Self <: DebounceOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebounceOption] (val x: Self) extends AnyVal {
       
       inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
@@ -188,7 +190,8 @@ object libInteractionGrammarInteractionMod {
       __obj.asInstanceOf[InteractionStep]
     }
     
-    extension [Self <: InteractionStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionStep] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String | js.Array[String] | ActionCallback): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object libInteractionGrammarInteractionMod {
       __obj.asInstanceOf[InteractionSteps]
     }
     
-    extension [Self <: InteractionSteps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionSteps] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Array[InteractionStep]): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -326,7 +330,8 @@ object libInteractionGrammarInteractionMod {
       __obj.asInstanceOf[ThrottleOption]
     }
     
-    extension [Self <: ThrottleOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleOption] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       

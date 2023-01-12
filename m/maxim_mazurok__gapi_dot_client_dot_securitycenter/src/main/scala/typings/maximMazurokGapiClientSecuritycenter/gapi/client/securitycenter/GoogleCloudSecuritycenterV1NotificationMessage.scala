@@ -22,7 +22,8 @@ object GoogleCloudSecuritycenterV1NotificationMessage {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1NotificationMessage]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1NotificationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1NotificationMessage] (val x: Self) extends AnyVal {
     
     inline def setFinding(value: Finding): Self = StObject.set(x, "finding", value.asInstanceOf[js.Any])
     

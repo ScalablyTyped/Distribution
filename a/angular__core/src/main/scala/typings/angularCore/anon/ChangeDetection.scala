@@ -310,7 +310,8 @@ object ChangeDetection {
     __obj.asInstanceOf[ChangeDetection[T]]
   }
   
-  extension [Self <: ChangeDetection[?], T](x: Self & ChangeDetection[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeDetection[?], T] (val x: Self & ChangeDetection[T]) extends AnyVal {
     
     inline def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     

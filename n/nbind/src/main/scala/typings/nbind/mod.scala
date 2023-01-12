@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[DefaultExportType]
     }
     
-    extension [Self <: DefaultExportType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultExportType] (val x: Self) extends AnyVal {
       
       inline def setCcall(
         value: (/* name */ String, /* returnType */ js.UndefOr[String], /* argTypes */ js.UndefOr[js.Array[String]], /* args */ js.UndefOr[js.Array[Any]]) => Any
@@ -148,7 +149,8 @@ object mod {
       __obj.asInstanceOf[FindModuleSpec]
     }
     
-    extension [Self <: FindModuleSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindModuleSpec] (val x: Self) extends AnyVal {
       
       inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object mod {
       __obj.asInstanceOf[ModuleSpec]
     }
     
-    extension [Self <: ModuleSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleSpec] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

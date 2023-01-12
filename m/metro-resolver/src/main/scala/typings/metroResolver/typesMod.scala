@@ -33,7 +33,8 @@ object typesMod {
       __obj.asInstanceOf[FileAndDirCandidates]
     }
     
-    extension [Self <: FileAndDirCandidates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileAndDirCandidates] (val x: Self) extends AnyVal {
       
       inline def setDir(value: FileCandidates): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object typesMod {
       __obj.asInstanceOf[FileContext]
     }
     
-    extension [Self <: FileContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileContext] (val x: Self) extends AnyVal {
       
       inline def setDoesFileExist(value: String => Boolean): Self = StObject.set(x, "doesFileExist", js.Any.fromFunction1(value))
       
@@ -145,7 +147,8 @@ object typesMod {
       __obj.asInstanceOf[FileOrDirContext]
     }
     
-    extension [Self <: FileOrDirContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOrDirContext] (val x: Self) extends AnyVal {
       
       inline def setGetPackageMainPath(value: String => String): Self = StObject.set(x, "getPackageMainPath", js.Any.fromFunction1(value))
     }
@@ -208,7 +211,8 @@ object typesMod {
       __obj.asInstanceOf[HasteContext]
     }
     
-    extension [Self <: HasteContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasteContext] (val x: Self) extends AnyVal {
       
       inline def setResolveHasteModule(value: String => js.UndefOr[String]): Self = StObject.set(x, "resolveHasteModule", js.Any.fromFunction1(value))
       
@@ -245,7 +249,8 @@ object typesMod {
       __obj.asInstanceOf[ModulePathContext]
     }
     
-    extension [Self <: ModulePathContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModulePathContext] (val x: Self) extends AnyVal {
       
       inline def setOriginModulePath(value: String): Self = StObject.set(x, "originModulePath", value.asInstanceOf[js.Any])
     }
@@ -308,7 +313,8 @@ object typesMod {
       __obj.asInstanceOf[ResolutionContext]
     }
     
-    extension [Self <: ResolutionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolutionContext] (val x: Self) extends AnyVal {
       
       inline def setAllowHaste(value: Boolean): Self = StObject.set(x, "allowHaste", value.asInstanceOf[js.Any])
       

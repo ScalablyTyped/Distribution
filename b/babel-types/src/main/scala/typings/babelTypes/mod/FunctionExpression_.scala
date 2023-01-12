@@ -49,7 +49,8 @@ object FunctionExpression_ {
     __obj.asInstanceOf[FunctionExpression_]
   }
   
-  extension [Self <: FunctionExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionExpression_] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

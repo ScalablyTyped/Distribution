@@ -24,7 +24,8 @@ object WithShareTicket {
     __obj.asInstanceOf[WithShareTicket]
   }
   
-  extension [Self <: WithShareTicket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithShareTicket] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -18,7 +18,8 @@ object UpdateTestGridProjectResult {
     __obj.asInstanceOf[UpdateTestGridProjectResult]
   }
   
-  extension [Self <: UpdateTestGridProjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTestGridProjectResult] (val x: Self) extends AnyVal {
     
     inline def setTestGridProject(value: TestGridProject): Self = StObject.set(x, "testGridProject", value.asInstanceOf[js.Any])
     

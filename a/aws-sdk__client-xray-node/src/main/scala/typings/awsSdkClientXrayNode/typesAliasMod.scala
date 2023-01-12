@@ -30,7 +30,8 @@ object typesAliasMod {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object typesAliasMod {
       __obj.asInstanceOf[UnmarshalledAlias]
     }
     
-    extension [Self <: UnmarshalledAlias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAlias] (val x: Self) extends AnyVal {
       
       inline def setNames(value: js.Array[String]): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
       

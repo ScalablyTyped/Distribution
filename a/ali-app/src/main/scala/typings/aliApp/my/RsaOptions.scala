@@ -35,7 +35,8 @@ object RsaOptions {
     __obj.asInstanceOf[RsaOptions]
   }
   
-  extension [Self <: RsaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

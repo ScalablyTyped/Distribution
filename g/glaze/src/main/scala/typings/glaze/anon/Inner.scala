@@ -25,7 +25,8 @@ object Inner {
     __obj.asInstanceOf[Inner]
   }
   
-  extension [Self <: Inner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inner] (val x: Self) extends AnyVal {
     
     inline def setInner(value: /* inset 0 2px 4px 0 rgba(0,0,0,.06) */ String): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     

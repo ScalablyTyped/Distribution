@@ -57,7 +57,8 @@ object Editor {
       __obj.asInstanceOf[ValueChangedInfo]
     }
     
-    extension [Self <: ValueChangedInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueChangedInfo] (val x: Self) extends AnyVal {
       
       inline def setPreviousValue(value: Any): Self = StObject.set(x, "previousValue", value.asInstanceOf[js.Any])
       

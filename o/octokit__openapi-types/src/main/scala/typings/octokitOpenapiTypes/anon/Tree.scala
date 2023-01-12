@@ -42,7 +42,8 @@ object Tree {
     __obj.asInstanceOf[Tree]
   }
   
-  extension [Self <: Tree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tree] (val x: Self) extends AnyVal {
     
     inline def setAuthor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-git-user'] */ js.Any

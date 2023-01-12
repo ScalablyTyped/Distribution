@@ -21,7 +21,8 @@ object TreeTablePageParams {
     __obj.asInstanceOf[TreeTablePageParams]
   }
   
-  extension [Self <: TreeTablePageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeTablePageParams] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

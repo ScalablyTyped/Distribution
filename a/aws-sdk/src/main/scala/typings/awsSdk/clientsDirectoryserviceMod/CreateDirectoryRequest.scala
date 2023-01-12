@@ -48,7 +48,8 @@ object CreateDirectoryRequest {
     __obj.asInstanceOf[CreateDirectoryRequest]
   }
   
-  extension [Self <: CreateDirectoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDirectoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

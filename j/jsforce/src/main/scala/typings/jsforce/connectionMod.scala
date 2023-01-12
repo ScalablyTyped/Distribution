@@ -668,7 +668,8 @@ object connectionMod {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -761,7 +762,8 @@ object connectionMod {
       __obj.asInstanceOf[ExecuteAnonymousResult]
     }
     
-    extension [Self <: ExecuteAnonymousResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteAnonymousResult] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -875,7 +877,8 @@ object connectionMod {
       __obj.asInstanceOf[IdentityInfo]
     }
     
-    extension [Self <: IdentityInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityInfo] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -974,7 +977,8 @@ object connectionMod {
       __obj.asInstanceOf[PartialOAuth2Options]
     }
     
-    extension [Self <: PartialOAuth2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOAuth2Options] (val x: Self) extends AnyVal {
       
       inline def setAuthzServiceUrl(value: String): Self = StObject.set(x, "authzServiceUrl", value.asInstanceOf[js.Any])
       
@@ -1019,7 +1023,8 @@ object connectionMod {
       __obj.asInstanceOf[RequestInfo]
     }
     
-    extension [Self <: RequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -1054,7 +1059,8 @@ object connectionMod {
       __obj.asInstanceOf[RestApiOptions]
     }
     
-    extension [Self <: RestApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestApiOptions] (val x: Self) extends AnyVal {
       
       inline def setAllOrNone(value: Boolean): Self = StObject.set(x, "allOrNone", value.asInstanceOf[js.Any])
       
@@ -1081,7 +1087,8 @@ object connectionMod {
       __obj.asInstanceOf[SearchResult[T]]
     }
     
-    extension [Self <: SearchResult[?], T](x: Self & SearchResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResult[?], T] (val x: Self & SearchResult[T]) extends AnyVal {
       
       inline def setSearchRecords(value: js.Array[Record[T]]): Self = StObject.set(x, "searchRecords", value.asInstanceOf[js.Any])
       
@@ -1104,7 +1111,8 @@ object connectionMod {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

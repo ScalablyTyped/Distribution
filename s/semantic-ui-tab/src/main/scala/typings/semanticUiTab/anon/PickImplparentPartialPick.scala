@@ -21,7 +21,8 @@ object PickImplparentPartialPick {
     __obj.asInstanceOf[PickImplparentPartialPick]
   }
   
-  extension [Self <: PickImplparentPartialPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplparentPartialPick] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

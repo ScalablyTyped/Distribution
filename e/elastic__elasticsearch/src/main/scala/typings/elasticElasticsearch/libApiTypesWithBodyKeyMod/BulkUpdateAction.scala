@@ -27,7 +27,8 @@ object BulkUpdateAction {
     __obj.asInstanceOf[BulkUpdateAction[TDocument, TPartialDocument]]
   }
   
-  extension [Self <: BulkUpdateAction[?, ?], TDocument, TPartialDocument](x: Self & (BulkUpdateAction[TDocument, TPartialDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkUpdateAction[?, ?], TDocument, TPartialDocument] (val x: Self & (BulkUpdateAction[TDocument, TPartialDocument])) extends AnyVal {
     
     inline def setDetect_noop(value: Boolean): Self = StObject.set(x, "detect_noop", value.asInstanceOf[js.Any])
     

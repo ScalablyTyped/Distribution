@@ -78,7 +78,8 @@ object ReservedNode {
     __obj.asInstanceOf[ReservedNode]
   }
   
-  extension [Self <: ReservedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedNode] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

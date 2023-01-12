@@ -33,7 +33,8 @@ object distTypesHeatMapCellAnnotationsMod {
       __obj.asInstanceOf[HeatMapCellAnnotationsProps[Datum]]
     }
     
-    extension [Self <: HeatMapCellAnnotationsProps[?], Datum /* <: HeatMapDatum */](x: Self & HeatMapCellAnnotationsProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatMapCellAnnotationsProps[?], Datum /* <: HeatMapDatum */] (val x: Self & HeatMapCellAnnotationsProps[Datum]) extends AnyVal {
       
       inline def setAnnotations(value: NonNullable[js.Array[AnnotationMatcher[ComputedCell[Datum]]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

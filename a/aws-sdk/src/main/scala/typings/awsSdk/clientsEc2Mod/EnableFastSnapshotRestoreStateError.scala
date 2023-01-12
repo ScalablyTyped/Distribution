@@ -23,7 +23,8 @@ object EnableFastSnapshotRestoreStateError {
     __obj.asInstanceOf[EnableFastSnapshotRestoreStateError]
   }
   
-  extension [Self <: EnableFastSnapshotRestoreStateError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableFastSnapshotRestoreStateError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

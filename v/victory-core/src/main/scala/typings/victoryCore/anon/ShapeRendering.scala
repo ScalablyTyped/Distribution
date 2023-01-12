@@ -22,7 +22,8 @@ object ShapeRendering {
     __obj.asInstanceOf[ShapeRendering]
   }
   
-  extension [Self <: ShapeRendering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeRendering] (val x: Self) extends AnyVal {
     
     inline def setGroupComponent(value: Element): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     

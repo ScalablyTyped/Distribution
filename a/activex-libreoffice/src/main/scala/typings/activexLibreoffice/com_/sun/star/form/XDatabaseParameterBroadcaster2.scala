@@ -47,7 +47,8 @@ object XDatabaseParameterBroadcaster2 {
     __obj.asInstanceOf[XDatabaseParameterBroadcaster2]
   }
   
-  extension [Self <: XDatabaseParameterBroadcaster2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseParameterBroadcaster2] (val x: Self) extends AnyVal {
     
     inline def setAddDatabaseParameterListener(value: XDatabaseParameterListener => Unit): Self = StObject.set(x, "addDatabaseParameterListener", js.Any.fromFunction1(value))
     

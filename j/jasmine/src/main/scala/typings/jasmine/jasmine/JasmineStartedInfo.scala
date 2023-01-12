@@ -17,7 +17,8 @@ object JasmineStartedInfo {
     __obj.asInstanceOf[JasmineStartedInfo]
   }
   
-  extension [Self <: JasmineStartedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineStartedInfo] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

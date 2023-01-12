@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsSearchMod extends Shortcut {
       __obj.asInstanceOf[SearchProps]
     }
     
-    extension [Self <: SearchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

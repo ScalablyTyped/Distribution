@@ -266,7 +266,8 @@ object ojThematicMapEventMap {
     __obj.asInstanceOf[ojThematicMapEventMap[K1, K2, K3, D1, D2, D3]]
   }
   
-  extension [Self <: ojThematicMapEventMap[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3](x: Self & (ojThematicMapEventMap[K1, K2, K3, D1, D2, D3])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojThematicMapEventMap[?, ?, ?, ?, ?, ?], K1, K2, K3, D1, D2, D3] (val x: Self & (ojThematicMapEventMap[K1, K2, K3, D1, D2, D3])) extends AnyVal {
     
     inline def setAnimationDurationChanged(value: JetElementCustomEvent[Double]): Self = StObject.set(x, "animationDurationChanged", value.asInstanceOf[js.Any])
     

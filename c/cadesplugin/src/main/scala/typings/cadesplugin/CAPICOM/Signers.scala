@@ -17,7 +17,8 @@ object Signers {
     __obj.asInstanceOf[Signers]
   }
   
-  extension [Self <: Signers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Signers] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

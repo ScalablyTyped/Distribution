@@ -15,7 +15,8 @@ object AndAgainAndAgain {
     __obj.asInstanceOf[AndAgainAndAgain]
   }
   
-  extension [Self <: AndAgainAndAgain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndAgainAndAgain] (val x: Self) extends AnyVal {
     
     inline def setAndAgain(value: AndAgain): Self = StObject.set(x, "andAgain", value.asInstanceOf[js.Any])
   }

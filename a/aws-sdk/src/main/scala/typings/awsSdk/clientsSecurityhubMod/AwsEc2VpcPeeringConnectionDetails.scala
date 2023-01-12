@@ -38,7 +38,8 @@ object AwsEc2VpcPeeringConnectionDetails {
     __obj.asInstanceOf[AwsEc2VpcPeeringConnectionDetails]
   }
   
-  extension [Self <: AwsEc2VpcPeeringConnectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpcPeeringConnectionDetails] (val x: Self) extends AnyVal {
     
     inline def setAccepterVpcInfo(value: AwsEc2VpcPeeringConnectionVpcInfoDetails): Self = StObject.set(x, "AccepterVpcInfo", value.asInstanceOf[js.Any])
     

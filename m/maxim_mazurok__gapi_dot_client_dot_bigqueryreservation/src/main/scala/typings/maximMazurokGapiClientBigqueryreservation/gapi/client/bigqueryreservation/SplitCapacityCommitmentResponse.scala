@@ -19,7 +19,8 @@ object SplitCapacityCommitmentResponse {
     __obj.asInstanceOf[SplitCapacityCommitmentResponse]
   }
   
-  extension [Self <: SplitCapacityCommitmentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitCapacityCommitmentResponse] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: CapacityCommitment): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

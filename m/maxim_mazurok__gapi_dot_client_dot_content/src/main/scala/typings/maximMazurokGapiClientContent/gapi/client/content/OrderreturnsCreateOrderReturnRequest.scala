@@ -25,7 +25,8 @@ object OrderreturnsCreateOrderReturnRequest {
     __obj.asInstanceOf[OrderreturnsCreateOrderReturnRequest]
   }
   
-  extension [Self <: OrderreturnsCreateOrderReturnRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsCreateOrderReturnRequest] (val x: Self) extends AnyVal {
     
     inline def setLineItems(value: js.Array[OrderreturnsLineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     

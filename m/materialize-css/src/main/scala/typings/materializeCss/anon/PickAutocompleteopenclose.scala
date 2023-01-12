@@ -26,7 +26,8 @@ object PickAutocompleteopenclose {
     __obj.asInstanceOf[PickAutocompleteopenclose]
   }
   
-  extension [Self <: PickAutocompleteopenclose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickAutocompleteopenclose] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

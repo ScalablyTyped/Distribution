@@ -38,7 +38,8 @@ object Combinator_ {
     __obj.asInstanceOf[Combinator_]
   }
   
-  extension [Self <: Combinator_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Combinator_] (val x: Self) extends AnyVal {
     
     inline def setRaws(value: CombinatorRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
     

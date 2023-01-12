@@ -19,7 +19,8 @@ object SyncEventType {
     __obj.asInstanceOf[SyncEventType]
   }
   
-  extension [Self <: SyncEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncEventType] (val x: Self) extends AnyVal {
     
     inline def setSyncEventType(value: MsoSyncEventType): Self = StObject.set(x, "SyncEventType", value.asInstanceOf[js.Any])
     

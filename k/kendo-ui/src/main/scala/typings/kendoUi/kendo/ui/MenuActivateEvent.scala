@@ -18,7 +18,8 @@ object MenuActivateEvent {
     __obj.asInstanceOf[MenuActivateEvent]
   }
   
-  extension [Self <: MenuActivateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuActivateEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

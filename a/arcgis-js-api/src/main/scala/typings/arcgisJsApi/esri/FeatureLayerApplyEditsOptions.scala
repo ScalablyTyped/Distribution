@@ -50,7 +50,8 @@ object FeatureLayerApplyEditsOptions {
     __obj.asInstanceOf[FeatureLayerApplyEditsOptions]
   }
   
-  extension [Self <: FeatureLayerApplyEditsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerApplyEditsOptions] (val x: Self) extends AnyVal {
     
     inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ObjectExplorerProviderBase {
     __obj.asInstanceOf[ObjectExplorerProviderBase]
   }
   
-  extension [Self <: ObjectExplorerProviderBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectExplorerProviderBase] (val x: Self) extends AnyVal {
     
     inline def setExpandNode(value: ExpandNodeInfo => Thenable[Boolean]): Self = StObject.set(x, "expandNode", js.Any.fromFunction1(value))
     

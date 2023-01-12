@@ -37,7 +37,8 @@ object XFrameActionListener {
     __obj.asInstanceOf[XFrameActionListener]
   }
   
-  extension [Self <: XFrameActionListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFrameActionListener] (val x: Self) extends AnyVal {
     
     inline def setFrameAction(value: FrameActionEvent => Unit): Self = StObject.set(x, "frameAction", js.Any.fromFunction1(value))
   }

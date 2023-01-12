@@ -22,7 +22,8 @@ object KeyUsage {
     __obj.asInstanceOf[KeyUsage]
   }
   
-  extension [Self <: KeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyUsage] (val x: Self) extends AnyVal {
     
     inline def setBaseKeyUsage(value: KeyUsageOptions): Self = StObject.set(x, "baseKeyUsage", value.asInstanceOf[js.Any])
     

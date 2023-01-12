@@ -20,7 +20,8 @@ object PreventedRoutes {
     __obj.asInstanceOf[PreventedRoutes]
   }
   
-  extension [Self <: PreventedRoutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreventedRoutes] (val x: Self) extends AnyVal {
     
     inline def setPreventedRoutes(value: typings.reactNavigationCore.libTypescriptSrcPreventRemoveContextMod.PreventedRoutes): Self = StObject.set(x, "preventedRoutes", value.asInstanceOf[js.Any])
     

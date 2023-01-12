@@ -22,7 +22,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setTimeago(value: TimeagoStatic): Self = StObject.set(x, "timeago", value.asInstanceOf[js.Any])
   }

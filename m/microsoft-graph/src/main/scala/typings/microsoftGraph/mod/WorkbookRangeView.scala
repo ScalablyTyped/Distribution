@@ -63,7 +63,8 @@ object WorkbookRangeView {
     __obj.asInstanceOf[WorkbookRangeView]
   }
   
-  extension [Self <: WorkbookRangeView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookRangeView] (val x: Self) extends AnyVal {
     
     inline def setCellAddresses(value: NullableOption[Any]): Self = StObject.set(x, "cellAddresses", value.asInstanceOf[js.Any])
     

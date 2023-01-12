@@ -110,7 +110,8 @@ object ASPxClientCrosshairOptions {
     __obj.asInstanceOf[ASPxClientCrosshairOptions]
   }
   
-  extension [Self <: ASPxClientCrosshairOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairOptions] (val x: Self) extends AnyVal {
     
     inline def setArgumentLineColor(value: String): Self = StObject.set(x, "argumentLineColor", value.asInstanceOf[js.Any])
     

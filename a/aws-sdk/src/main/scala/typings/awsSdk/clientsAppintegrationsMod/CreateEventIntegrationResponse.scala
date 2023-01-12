@@ -18,7 +18,8 @@ object CreateEventIntegrationResponse {
     __obj.asInstanceOf[CreateEventIntegrationResponse]
   }
   
-  extension [Self <: CreateEventIntegrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventIntegrationResponse] (val x: Self) extends AnyVal {
     
     inline def setEventIntegrationArn(value: Arn): Self = StObject.set(x, "EventIntegrationArn", value.asInstanceOf[js.Any])
     

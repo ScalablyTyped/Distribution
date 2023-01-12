@@ -101,7 +101,8 @@ object libViewViewSystemMod {
       __obj.asInstanceOf[ViewOptions]
     }
     
-    extension [Self <: ViewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDensity(value: Boolean): Self = StObject.set(x, "autoDensity", value.asInstanceOf[js.Any])
       

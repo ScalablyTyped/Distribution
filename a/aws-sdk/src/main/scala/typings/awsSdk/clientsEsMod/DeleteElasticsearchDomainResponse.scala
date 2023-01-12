@@ -18,7 +18,8 @@ object DeleteElasticsearchDomainResponse {
     __obj.asInstanceOf[DeleteElasticsearchDomainResponse]
   }
   
-  extension [Self <: DeleteElasticsearchDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteElasticsearchDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setDomainStatus(value: ElasticsearchDomainStatus): Self = StObject.set(x, "DomainStatus", value.asInstanceOf[js.Any])
     

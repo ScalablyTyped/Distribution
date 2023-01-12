@@ -20,7 +20,8 @@ object FileLoaderOptions {
     __obj.asInstanceOf[FileLoaderOptions]
   }
   
-  extension [Self <: FileLoaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileLoaderOptions] (val x: Self) extends AnyVal {
     
     inline def setIds(value: String): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

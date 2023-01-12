@@ -93,7 +93,8 @@ object distLibSnykTestIacTestResultMod {
       __obj.asInstanceOf[AnnotatedIacIssue]
     }
     
-    extension [Self <: AnnotatedIacIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotatedIacIssue] (val x: Self) extends AnyVal {
       
       inline def setCloudConfigPath(value: js.Array[String]): Self = StObject.set(x, "cloudConfigPath", value.asInstanceOf[js.Any])
       
@@ -207,7 +208,8 @@ object distLibSnykTestIacTestResultMod {
       __obj.asInstanceOf[IacTestError]
     }
     
-    extension [Self <: IacTestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IacTestError] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object distLibSnykTestIacTestResultMod {
       __obj.asInstanceOf[IacTestResponse]
     }
     
-    extension [Self <: IacTestResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IacTestResponse] (val x: Self) extends AnyVal {
       
       inline def setDisplayTargetFile(value: String): Self = StObject.set(x, "displayTargetFile", value.asInstanceOf[js.Any])
       
@@ -339,7 +342,8 @@ object distLibSnykTestIacTestResultMod {
       __obj.asInstanceOf[MappedAnnotatedIacIssue]
     }
     
-    extension [Self <: MappedAnnotatedIacIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappedAnnotatedIacIssue] (val x: Self) extends AnyVal {
       
       inline def setCompliance(value: js.Array[js.Array[String]]): Self = StObject.set(x, "compliance", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object distServiceActionssdkConversationResponseRichMod {
       __obj.asInstanceOf[RichResponseOptions]
     }
     
-    extension [Self <: RichResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RichResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[RichResponseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

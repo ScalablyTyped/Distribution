@@ -46,7 +46,8 @@ object ArchiveFileEntryOptions {
     __obj.asInstanceOf[ArchiveFileEntryOptions]
   }
   
-  extension [Self <: ArchiveFileEntryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveFileEntryOptions] (val x: Self) extends AnyVal {
     
     inline def setCompressionLevel(value: ArchiveCompressionLevel): Self = StObject.set(x, "compressionLevel", value.asInstanceOf[js.Any])
     

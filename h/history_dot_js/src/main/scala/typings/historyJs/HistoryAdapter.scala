@@ -23,7 +23,8 @@ object HistoryAdapter {
     __obj.asInstanceOf[HistoryAdapter]
   }
   
-  extension [Self <: HistoryAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryAdapter] (val x: Self) extends AnyVal {
     
     inline def setBind(value: (Any, String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
     

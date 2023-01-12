@@ -38,7 +38,8 @@ object Cspnonce {
     __obj.asInstanceOf[Cspnonce]
   }
   
-  extension [Self <: Cspnonce](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cspnonce] (val x: Self) extends AnyVal {
     
     inline def `setCsp-nonce`(value: String): Self = StObject.set(x, "csp-nonce", value.asInstanceOf[js.Any])
     

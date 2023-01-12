@@ -826,7 +826,8 @@ object mod {
       __obj.asInstanceOf[BufferedIteratorOptions]
     }
     
-    extension [Self <: BufferedIteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferedIteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoStart(value: Boolean): Self = StObject.set(x, "autoStart", value.asInstanceOf[js.Any])
       
@@ -860,7 +861,8 @@ object mod {
       __obj.asInstanceOf[MultiTransformOptions[S, D]]
     }
     
-    extension [Self <: MultiTransformOptions[?, ?], S, D](x: Self & (MultiTransformOptions[S, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiTransformOptions[?, ?], S, D] (val x: Self & (MultiTransformOptions[S, D])) extends AnyVal {
       
       inline def setMultiTransform(value: /* item */ S => AsyncIterator[D]): Self = StObject.set(x, "multiTransform", js.Any.fromFunction1(value))
       
@@ -881,7 +883,8 @@ object mod {
       __obj.asInstanceOf[SourcedIteratorOptions]
     }
     
-    extension [Self <: SourcedIteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourcedIteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setDestroySource(value: Boolean): Self = StObject.set(x, "destroySource", value.asInstanceOf[js.Any])
       
@@ -905,7 +908,8 @@ object mod {
       __obj.asInstanceOf[TransformIteratorOptions[S]]
     }
     
-    extension [Self <: TransformIteratorOptions[?], S](x: Self & TransformIteratorOptions[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformIteratorOptions[?], S] (val x: Self & TransformIteratorOptions[S]) extends AnyVal {
       
       inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
@@ -951,7 +955,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions[S, D]]
     }
     
-    extension [Self <: TransformOptions[?, ?], S, D](x: Self & (TransformOptions[S, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions[?, ?], S, D] (val x: Self & (TransformOptions[S, D])) extends AnyVal {
       
       inline def setAppend(value: AsyncIteratorOrArray[D]): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

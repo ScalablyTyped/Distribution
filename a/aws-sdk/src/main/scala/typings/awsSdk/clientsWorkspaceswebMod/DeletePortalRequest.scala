@@ -18,7 +18,8 @@ object DeletePortalRequest {
     __obj.asInstanceOf[DeletePortalRequest]
   }
   
-  extension [Self <: DeletePortalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePortalRequest] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
   }

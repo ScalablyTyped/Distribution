@@ -15,7 +15,8 @@ object MIJson {
     __obj.asInstanceOf[MIJson]
   }
   
-  extension [Self <: MIJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MIJson] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Participant]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

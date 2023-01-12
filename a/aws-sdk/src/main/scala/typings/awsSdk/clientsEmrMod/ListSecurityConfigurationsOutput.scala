@@ -23,7 +23,8 @@ object ListSecurityConfigurationsOutput {
     __obj.asInstanceOf[ListSecurityConfigurationsOutput]
   }
   
-  extension [Self <: ListSecurityConfigurationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSecurityConfigurationsOutput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

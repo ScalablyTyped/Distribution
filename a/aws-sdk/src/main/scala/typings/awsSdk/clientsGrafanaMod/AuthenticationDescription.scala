@@ -28,7 +28,8 @@ object AuthenticationDescription {
     __obj.asInstanceOf[AuthenticationDescription]
   }
   
-  extension [Self <: AuthenticationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationDescription] (val x: Self) extends AnyVal {
     
     inline def setAwsSso(value: AwsSsoAuthentication): Self = StObject.set(x, "awsSso", value.asInstanceOf[js.Any])
     

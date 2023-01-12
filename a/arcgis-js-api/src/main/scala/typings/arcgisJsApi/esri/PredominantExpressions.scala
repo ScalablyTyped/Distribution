@@ -38,7 +38,8 @@ object PredominantExpressions {
     __obj.asInstanceOf[PredominantExpressions]
   }
   
-  extension [Self <: PredominantExpressions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominantExpressions] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: OpacityExpressionInfo): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

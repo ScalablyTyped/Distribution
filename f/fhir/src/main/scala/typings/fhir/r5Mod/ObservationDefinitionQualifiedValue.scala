@@ -96,7 +96,8 @@ object ObservationDefinitionQualifiedValue {
     __obj.asInstanceOf[ObservationDefinitionQualifiedValue]
   }
   
-  extension [Self <: ObservationDefinitionQualifiedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationDefinitionQualifiedValue] (val x: Self) extends AnyVal {
     
     inline def setAbnormalCodedValueSet(value: String): Self = StObject.set(x, "abnormalCodedValueSet", value.asInstanceOf[js.Any])
     

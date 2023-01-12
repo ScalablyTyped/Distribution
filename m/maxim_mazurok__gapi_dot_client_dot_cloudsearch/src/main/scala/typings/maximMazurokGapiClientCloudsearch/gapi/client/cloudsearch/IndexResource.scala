@@ -15,7 +15,8 @@ object IndexResource {
     __obj.asInstanceOf[IndexResource]
   }
   
-  extension [Self <: IndexResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexResource] (val x: Self) extends AnyVal {
     
     inline def setDatasources(value: DatasourcesResource): Self = StObject.set(x, "datasources", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object InsertCommandArgument2 {
     __obj.asInstanceOf[InsertCommandArgument2]
   }
   
-  extension [Self <: InsertCommandArgument2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertCommandArgument2] (val x: Self) extends AnyVal {
     
     inline def setDocumentId(value: String): Self = StObject.set(x, "DocumentId", value.asInstanceOf[js.Any])
     

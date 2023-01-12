@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[SonicBoomOpts]
     }
     
-    extension [Self <: SonicBoomOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SonicBoomOpts] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object GetPackageVersionAssetRequest {
     __obj.asInstanceOf[GetPackageVersionAssetRequest]
   }
   
-  extension [Self <: GetPackageVersionAssetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPackageVersionAssetRequest] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: AssetName): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

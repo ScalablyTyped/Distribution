@@ -27,7 +27,8 @@ object typesDeleteMod {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setObjects(value: js.Array[ObjectIdentifier] | js.Iterable[ObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object typesDeleteMod {
       __obj.asInstanceOf[UnmarshalledDelete]
     }
     
-    extension [Self <: UnmarshalledDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDelete] (val x: Self) extends AnyVal {
       
       inline def setObjects(value: js.Array[UnmarshalledObjectIdentifier]): Self = StObject.set(x, "Objects", value.asInstanceOf[js.Any])
       

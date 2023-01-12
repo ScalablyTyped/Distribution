@@ -162,7 +162,8 @@ object distTypesObservableobjectMod {
       __obj.asInstanceOf[IIsObservableObject]
     }
     
-    extension [Self <: IIsObservableObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIsObservableObject] (val x: Self) extends AnyVal {
       
       inline def set$mobx(value: ObservableObjectAdministration): Self = StObject.set(x, "$mobx", value.asInstanceOf[js.Any])
     }

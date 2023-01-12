@@ -38,7 +38,8 @@ object IGeoXmlDataSet {
     __obj.asInstanceOf[IGeoXmlDataSet]
   }
   
-  extension [Self <: IGeoXmlDataSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlDataSet] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: js.Array[Layer | GroundOverlay]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

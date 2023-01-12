@@ -71,7 +71,8 @@ object ackExtensionMod {
       __obj.asInstanceOf[AckExtension]
     }
     
-    extension [Self <: AckExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AckExtension] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       

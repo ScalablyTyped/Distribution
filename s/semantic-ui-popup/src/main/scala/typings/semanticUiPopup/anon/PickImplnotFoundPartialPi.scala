@@ -27,7 +27,8 @@ object PickImplnotFoundPartialPi {
     __obj.asInstanceOf[PickImplnotFoundPartialPi]
   }
   
-  extension [Self <: PickImplnotFoundPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnotFoundPartialPi] (val x: Self) extends AnyVal {
     
     inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
     

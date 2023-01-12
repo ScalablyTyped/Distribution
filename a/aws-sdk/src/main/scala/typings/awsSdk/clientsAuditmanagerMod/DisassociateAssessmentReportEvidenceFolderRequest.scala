@@ -23,7 +23,8 @@ object DisassociateAssessmentReportEvidenceFolderRequest {
     __obj.asInstanceOf[DisassociateAssessmentReportEvidenceFolderRequest]
   }
   
-  extension [Self <: DisassociateAssessmentReportEvidenceFolderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAssessmentReportEvidenceFolderRequest] (val x: Self) extends AnyVal {
     
     inline def setAssessmentId(value: UUID): Self = StObject.set(x, "assessmentId", value.asInstanceOf[js.Any])
     

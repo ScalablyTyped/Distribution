@@ -163,7 +163,8 @@ object buildMultiremoteMod {
       __obj.asInstanceOf[MultiRemote]
     }
     
-    extension [Self <: MultiRemote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiRemote] (val x: Self) extends AnyVal {
       
       inline def setAddInstance(
         value: (String, Any) => js.Promise[
@@ -218,7 +219,8 @@ object buildMultiremoteMod {
       __obj.asInstanceOf[MultiRemoteElement]
     }
     
-    extension [Self <: MultiRemoteElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiRemoteElement] (val x: Self) extends AnyVal {
       
       inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       

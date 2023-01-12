@@ -44,7 +44,8 @@ object GoogleApiUrlShortenerUrlResource {
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResource]
   }
   
-  extension [Self <: GoogleApiUrlShortenerUrlResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiUrlShortenerUrlResource] (val x: Self) extends AnyVal {
     
     inline def setAnalytics(value: AllTime): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     

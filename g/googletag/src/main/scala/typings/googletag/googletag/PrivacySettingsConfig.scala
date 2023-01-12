@@ -69,7 +69,8 @@ object PrivacySettingsConfig {
     __obj.asInstanceOf[PrivacySettingsConfig]
   }
   
-  extension [Self <: PrivacySettingsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivacySettingsConfig] (val x: Self) extends AnyVal {
     
     inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
     

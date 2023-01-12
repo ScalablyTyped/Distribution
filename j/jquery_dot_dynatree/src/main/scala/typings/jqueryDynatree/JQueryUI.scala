@@ -17,7 +17,8 @@ object JQueryUI {
       __obj.asInstanceOf[UI]
     }
     
-    extension [Self <: UI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UI] (val x: Self) extends AnyVal {
       
       inline def setDynatree(value: DynatreeNamespace): Self = StObject.set(x, "dynatree", value.asInstanceOf[js.Any])
     }

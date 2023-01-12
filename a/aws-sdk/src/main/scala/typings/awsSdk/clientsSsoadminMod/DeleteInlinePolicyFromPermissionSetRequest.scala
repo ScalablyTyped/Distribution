@@ -23,7 +23,8 @@ object DeleteInlinePolicyFromPermissionSetRequest {
     __obj.asInstanceOf[DeleteInlinePolicyFromPermissionSetRequest]
   }
   
-  extension [Self <: DeleteInlinePolicyFromPermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInlinePolicyFromPermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

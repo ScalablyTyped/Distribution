@@ -393,7 +393,8 @@ object QTip2 {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -449,7 +450,8 @@ object QTip2 {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: (/* event */ Event, /* api */ Api) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
       
@@ -517,7 +519,8 @@ object QTip2 {
       __obj.asInstanceOf[Hide]
     }
     
-    extension [Self <: Hide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -574,7 +577,8 @@ object QTip2 {
       __obj.asInstanceOf[Modal]
     }
     
-    extension [Self <: Modal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Boolean): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
@@ -798,7 +802,8 @@ object QTip2 {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: PositionAdjust): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       
@@ -858,7 +863,8 @@ object QTip2 {
       __obj.asInstanceOf[PositionAdjust]
     }
     
-    extension [Self <: PositionAdjust](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionAdjust] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -920,7 +926,8 @@ object QTip2 {
       __obj.asInstanceOf[QTipOptions]
     }
     
-    extension [Self <: QTipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QTipOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Text | Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -996,7 +1003,8 @@ object QTip2 {
       __obj.asInstanceOf[Show]
     }
     
-    extension [Self <: Show](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -1054,7 +1062,8 @@ object QTip2 {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: String | Boolean): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -1107,7 +1116,8 @@ object QTip2 {
       __obj.asInstanceOf[Tip]
     }
     
-    extension [Self <: Tip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: Double | Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       

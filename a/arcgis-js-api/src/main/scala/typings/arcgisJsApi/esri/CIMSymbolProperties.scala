@@ -22,7 +22,8 @@ object CIMSymbolProperties {
     __obj.asInstanceOf[CIMSymbolProperties]
   }
   
-  extension [Self <: CIMSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setData(value: CIMSymbolReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

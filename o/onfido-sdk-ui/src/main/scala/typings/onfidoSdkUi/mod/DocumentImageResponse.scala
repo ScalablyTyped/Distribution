@@ -37,7 +37,8 @@ object DocumentImageResponse {
     __obj.asInstanceOf[DocumentImageResponse]
   }
   
-  extension [Self <: DocumentImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentImageResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicant_id(value: String): Self = StObject.set(x, "applicant_id", value.asInstanceOf[js.Any])
     

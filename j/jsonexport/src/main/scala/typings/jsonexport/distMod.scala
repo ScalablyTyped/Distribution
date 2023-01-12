@@ -94,7 +94,8 @@ object distMod {
       __obj.asInstanceOf[UserHandlers]
     }
     
-    extension [Self <: UserHandlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserHandlers] (val x: Self) extends AnyVal {
       
       inline def setFillTopRow(value: Boolean): Self = StObject.set(x, "fillTopRow", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object distMod {
       __obj.asInstanceOf[UserOptions]
     }
     
-    extension [Self <: UserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserOptions] (val x: Self) extends AnyVal {
       
       inline def setArrayPathString(value: String): Self = StObject.set(x, "arrayPathString", value.asInstanceOf[js.Any])
       

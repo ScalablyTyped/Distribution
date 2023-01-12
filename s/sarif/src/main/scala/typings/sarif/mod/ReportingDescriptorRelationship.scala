@@ -34,7 +34,8 @@ object ReportingDescriptorRelationship {
     __obj.asInstanceOf[ReportingDescriptorRelationship]
   }
   
-  extension [Self <: ReportingDescriptorRelationship](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingDescriptorRelationship] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Message): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

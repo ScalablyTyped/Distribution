@@ -24,7 +24,8 @@ object SVGMask {
     __obj.asInstanceOf[SVGMask]
   }
   
-  extension [Self <: SVGMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGMask] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SVGBaseAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object CreateFieldLevelEncryptionConfigRequest {
     __obj.asInstanceOf[CreateFieldLevelEncryptionConfigRequest]
   }
   
-  extension [Self <: CreateFieldLevelEncryptionConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFieldLevelEncryptionConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setFieldLevelEncryptionConfig(value: FieldLevelEncryptionConfig): Self = StObject.set(x, "FieldLevelEncryptionConfig", value.asInstanceOf[js.Any])
   }

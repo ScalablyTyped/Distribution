@@ -26,7 +26,8 @@ object PlotIkhSenkouSpanOptions {
     __obj.asInstanceOf[PlotIkhSenkouSpanOptions]
   }
   
-  extension [Self <: PlotIkhSenkouSpanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhSenkouSpanOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

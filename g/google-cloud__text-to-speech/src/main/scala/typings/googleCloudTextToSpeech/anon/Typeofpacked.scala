@@ -53,7 +53,8 @@ object Typeofpacked {
     __obj.asInstanceOf[Typeofpacked]
   }
   
-  extension [Self <: Typeofpacked](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofpacked] (val x: Self) extends AnyVal {
     
     inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

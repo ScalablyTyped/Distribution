@@ -45,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setArray(value: js.typedarray.Uint32Array): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ChannelOptions]
     }
     
-    extension [Self <: ChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelOptions] (val x: Self) extends AnyVal {
       
       inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: js.Array[ChannelOptions]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       

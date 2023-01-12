@@ -51,7 +51,8 @@ object InsertSlideOptions {
     __obj.asInstanceOf[InsertSlideOptions]
   }
   
-  extension [Self <: InsertSlideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertSlideOptions] (val x: Self) extends AnyVal {
     
     inline def setFormatting(value: InsertSlideFormatting | KeepSourceFormatting | UseDestinationTheme): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     

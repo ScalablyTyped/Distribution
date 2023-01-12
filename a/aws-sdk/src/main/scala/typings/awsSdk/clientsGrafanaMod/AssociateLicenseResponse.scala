@@ -18,7 +18,8 @@ object AssociateLicenseResponse {
     __obj.asInstanceOf[AssociateLicenseResponse]
   }
   
-  extension [Self <: AssociateLicenseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateLicenseResponse] (val x: Self) extends AnyVal {
     
     inline def setWorkspace(value: WorkspaceDescription): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
   }

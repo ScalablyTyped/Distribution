@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: Arrayable[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[lazybooleanundefinedOptio]
     }
     
-    extension [Self <: lazybooleanundefinedOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: lazybooleanundefinedOptio] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: Dict[typings.mri.mod.Arrayable[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[lazytrueOptions]
     }
     
-    extension [Self <: lazytrueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: lazytrueOptions] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: Dict[typings.mri.mod.Arrayable[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object MessageSocket {
     __obj.asInstanceOf[MessageSocket]
   }
   
-  extension [Self <: MessageSocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageSocket] (val x: Self) extends AnyVal {
     
     inline def setMessageSocket(value: typings.expoDevServer.buildMetroDevServerMod.MessageSocket): Self = StObject.set(x, "messageSocket", value.asInstanceOf[js.Any])
     

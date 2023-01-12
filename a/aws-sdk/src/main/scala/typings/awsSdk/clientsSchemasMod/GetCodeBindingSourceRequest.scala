@@ -33,7 +33,8 @@ object GetCodeBindingSourceRequest {
     __obj.asInstanceOf[GetCodeBindingSourceRequest]
   }
   
-  extension [Self <: GetCodeBindingSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCodeBindingSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: string): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     

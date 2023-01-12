@@ -39,7 +39,8 @@ object RbacApplication {
     __obj.asInstanceOf[RbacApplication]
   }
   
-  extension [Self <: RbacApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RbacApplication] (val x: Self) extends AnyVal {
     
     inline def setRoleAssignmentScheduleInstances(value: NullableOption[js.Array[UnifiedRoleAssignmentScheduleInstance]]): Self = StObject.set(x, "roleAssignmentScheduleInstances", value.asInstanceOf[js.Any])
     

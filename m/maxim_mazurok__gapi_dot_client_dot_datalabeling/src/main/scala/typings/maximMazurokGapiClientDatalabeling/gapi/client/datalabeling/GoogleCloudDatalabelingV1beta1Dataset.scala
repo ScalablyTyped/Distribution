@@ -37,7 +37,8 @@ object GoogleCloudDatalabelingV1beta1Dataset {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Dataset]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1Dataset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Dataset] (val x: Self) extends AnyVal {
     
     inline def setBlockingResources(value: js.Array[String]): Self = StObject.set(x, "blockingResources", value.asInstanceOf[js.Any])
     

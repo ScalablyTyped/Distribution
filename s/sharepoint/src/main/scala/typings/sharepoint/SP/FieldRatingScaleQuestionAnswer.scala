@@ -33,7 +33,8 @@ object FieldRatingScaleQuestionAnswer {
     __obj.asInstanceOf[FieldRatingScaleQuestionAnswer]
   }
   
-  extension [Self <: FieldRatingScaleQuestionAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldRatingScaleQuestionAnswer] (val x: Self) extends AnyVal {
     
     inline def setGet_answer(value: () => Double): Self = StObject.set(x, "get_answer", js.Any.fromFunction0(value))
     

@@ -80,7 +80,8 @@ object FunctionAccess {
     __obj.asInstanceOf[FunctionAccess]
   }
   
-  extension [Self <: FunctionAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionAccess] (val x: Self) extends AnyVal {
     
     inline def setIsArrayFunction(value: Boolean): Self = StObject.set(x, "IsArrayFunction", value.asInstanceOf[js.Any])
   }

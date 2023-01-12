@@ -46,7 +46,8 @@ object CIMSymbolLayerBase {
     __obj.asInstanceOf[CIMSymbolLayerBase]
   }
   
-  extension [Self <: CIMSymbolLayerBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSymbolLayerBase] (val x: Self) extends AnyVal {
     
     inline def setColorLocked(value: Boolean): Self = StObject.set(x, "colorLocked", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartQueryPlanningResponse {
     __obj.asInstanceOf[StartQueryPlanningResponse]
   }
   
-  extension [Self <: StartQueryPlanningResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartQueryPlanningResponse] (val x: Self) extends AnyVal {
     
     inline def setQueryId(value: QueryIdString): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
   }

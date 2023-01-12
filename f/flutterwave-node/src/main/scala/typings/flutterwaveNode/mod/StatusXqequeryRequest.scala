@@ -21,7 +21,8 @@ object StatusXqequeryRequest {
     __obj.asInstanceOf[StatusXqequeryRequest]
   }
   
-  extension [Self <: StatusXqequeryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusXqequeryRequest] (val x: Self) extends AnyVal {
     
     inline def setFlwref(value: String): Self = StObject.set(x, "flwref", value.asInstanceOf[js.Any])
     

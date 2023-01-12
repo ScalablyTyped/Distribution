@@ -45,7 +45,8 @@ object MKTextFieldProperties {
     __obj.asInstanceOf[MKTextFieldProperties]
   }
   
-  extension [Self <: MKTextFieldProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKTextFieldProperties] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInputProps(value: TextInputProps): Self = StObject.set(x, "additionalInputProps", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object CreateVirtualMFADeviceRequest {
     __obj.asInstanceOf[CreateVirtualMFADeviceRequest]
   }
   
-  extension [Self <: CreateVirtualMFADeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualMFADeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     

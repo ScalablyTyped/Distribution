@@ -16,7 +16,8 @@ object ProcessAssetsAdditionalOptions {
     __obj.asInstanceOf[ProcessAssetsAdditionalOptions]
   }
   
-  extension [Self <: ProcessAssetsAdditionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessAssetsAdditionalOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAssets(value: `true` | js.Function): Self = StObject.set(x, "additionalAssets", value.asInstanceOf[js.Any])
     

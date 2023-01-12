@@ -61,7 +61,8 @@ object XAxisEventsOptions {
     __obj.asInstanceOf[XAxisEventsOptions]
   }
   
-  extension [Self <: XAxisEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
     

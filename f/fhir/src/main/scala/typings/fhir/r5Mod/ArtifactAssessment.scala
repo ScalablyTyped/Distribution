@@ -121,7 +121,8 @@ object ArtifactAssessment {
     __obj.asInstanceOf[ArtifactAssessment]
   }
   
-  extension [Self <: ArtifactAssessment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactAssessment] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

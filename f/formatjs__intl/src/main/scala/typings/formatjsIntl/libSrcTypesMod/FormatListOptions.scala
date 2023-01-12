@@ -24,7 +24,8 @@ object FormatListOptions {
     __obj.asInstanceOf[FormatListOptions]
   }
   
-  extension [Self <: FormatListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatListOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: long | short | narrow): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

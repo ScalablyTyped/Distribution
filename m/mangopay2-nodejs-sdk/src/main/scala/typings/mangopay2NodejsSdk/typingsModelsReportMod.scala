@@ -155,7 +155,8 @@ object typingsModelsReportMod {
         __obj.asInstanceOf[CreateReport]
       }
       
-      extension [Self <: CreateReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateReport] (val x: Self) extends AnyVal {
         
         inline def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
         
@@ -272,7 +273,8 @@ object typingsModelsReportMod {
     }
     object Filters {
       
-      extension [Self <: Filters](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
         
         inline def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
         
@@ -392,7 +394,8 @@ object typingsModelsReportMod {
         __obj.asInstanceOf[ReportData]
       }
       
-      extension [Self <: ReportData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportData] (val x: Self) extends AnyVal {
         
         inline def setCallbackURL(value: String): Self = StObject.set(x, "CallbackURL", value.asInstanceOf[js.Any])
         

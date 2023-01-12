@@ -18,7 +18,8 @@ object GetCardinalityResponse {
     __obj.asInstanceOf[GetCardinalityResponse]
   }
   
-  extension [Self <: GetCardinalityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCardinalityResponse] (val x: Self) extends AnyVal {
     
     inline def setCardinality(value: Count): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     

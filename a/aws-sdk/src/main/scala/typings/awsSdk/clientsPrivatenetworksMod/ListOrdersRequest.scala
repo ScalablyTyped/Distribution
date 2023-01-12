@@ -33,7 +33,8 @@ object ListOrdersRequest {
     __obj.asInstanceOf[ListOrdersRequest]
   }
   
-  extension [Self <: ListOrdersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOrdersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: OrderFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

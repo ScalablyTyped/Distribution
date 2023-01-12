@@ -91,7 +91,8 @@ object libSliderListMod {
       __obj.asInstanceOf[SliderListProps]
     }
     
-    extension [Self <: SliderListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderListProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: zoom | fade): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object BackgroundRepeatProps {
     __obj.asInstanceOf[BackgroundRepeatProps[ThemeType]]
   }
   
-  extension [Self <: BackgroundRepeatProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & BackgroundRepeatProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundRepeatProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & BackgroundRepeatProps[ThemeType]) extends AnyVal {
     
     inline def setBackgroundRepeat(value: ResponsiveValue[BackgroundRepeat, ThemeType]): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
     

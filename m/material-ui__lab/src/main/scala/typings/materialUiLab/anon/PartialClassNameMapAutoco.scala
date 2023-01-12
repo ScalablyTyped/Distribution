@@ -56,7 +56,8 @@ object PartialClassNameMapAutoco {
     __obj.asInstanceOf[PartialClassNameMapAutoco]
   }
   
-  extension [Self <: PartialClassNameMapAutoco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapAutoco] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: String): Self = StObject.set(x, "clearIndicator", value.asInstanceOf[js.Any])
     

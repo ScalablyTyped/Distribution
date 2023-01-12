@@ -48,7 +48,8 @@ object DescribeGameSessionDetailsInput {
     __obj.asInstanceOf[DescribeGameSessionDetailsInput]
   }
   
-  extension [Self <: DescribeGameSessionDetailsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGameSessionDetailsInput] (val x: Self) extends AnyVal {
     
     inline def setAliasId(value: AliasIdOrArn): Self = StObject.set(x, "AliasId", value.asInstanceOf[js.Any])
     

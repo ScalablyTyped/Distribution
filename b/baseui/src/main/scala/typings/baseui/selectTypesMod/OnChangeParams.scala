@@ -20,7 +20,8 @@ object OnChangeParams {
     __obj.asInstanceOf[OnChangeParams]
   }
   
-  extension [Self <: OnChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnChangeParams] (val x: Self) extends AnyVal {
     
     inline def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     

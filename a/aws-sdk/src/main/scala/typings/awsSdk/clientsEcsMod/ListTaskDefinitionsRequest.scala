@@ -38,7 +38,8 @@ object ListTaskDefinitionsRequest {
     __obj.asInstanceOf[ListTaskDefinitionsRequest]
   }
   
-  extension [Self <: ListTaskDefinitionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTaskDefinitionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFamilyPrefix(value: String): Self = StObject.set(x, "familyPrefix", value.asInstanceOf[js.Any])
     

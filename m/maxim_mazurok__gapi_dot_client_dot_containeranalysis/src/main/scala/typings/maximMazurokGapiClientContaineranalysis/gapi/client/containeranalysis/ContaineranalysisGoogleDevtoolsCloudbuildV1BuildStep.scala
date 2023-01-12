@@ -74,7 +74,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuildStep {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuildStep]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildStep] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

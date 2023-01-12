@@ -17,7 +17,8 @@ object DialogAnimationOpen {
     __obj.asInstanceOf[DialogAnimationOpen]
   }
   
-  extension [Self <: DialogAnimationOpen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogAnimationOpen] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

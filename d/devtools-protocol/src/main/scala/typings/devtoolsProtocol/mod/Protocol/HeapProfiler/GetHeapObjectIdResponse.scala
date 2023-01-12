@@ -18,7 +18,8 @@ object GetHeapObjectIdResponse {
     __obj.asInstanceOf[GetHeapObjectIdResponse]
   }
   
-  extension [Self <: GetHeapObjectIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHeapObjectIdResponse] (val x: Self) extends AnyVal {
     
     inline def setHeapSnapshotObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapSnapshotObjectId", value.asInstanceOf[js.Any])
   }

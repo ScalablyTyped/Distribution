@@ -21,7 +21,8 @@ object SimpleIdentifierMangler {
     __obj.asInstanceOf[SimpleIdentifierMangler]
   }
   
-  extension [Self <: SimpleIdentifierMangler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleIdentifierMangler] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Double => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

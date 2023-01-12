@@ -33,7 +33,8 @@ object IntentClosingSetting {
     __obj.asInstanceOf[IntentClosingSetting]
   }
   
-  extension [Self <: IntentClosingSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentClosingSetting] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Rectangle {
     __obj.asInstanceOf[Rectangle]
   }
   
-  extension [Self <: Rectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DictionarySettings {
     __obj.asInstanceOf[DictionarySettings]
   }
   
-  extension [Self <: DictionarySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionarySettings] (val x: Self) extends AnyVal {
     
     inline def setDisableStandardEntries(value: RequireAtLeastOne[RecordDictionaryNameRecor]): Self = StObject.set(x, "disableStandardEntries", value.asInstanceOf[js.Any])
   }

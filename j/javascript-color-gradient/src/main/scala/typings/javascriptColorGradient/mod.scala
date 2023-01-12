@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Gradient]
     }
     
-    extension [Self <: Gradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
       
       inline def setGetColor(value: Double => String): Self = StObject.set(x, "getColor", js.Any.fromFunction1(value))
       

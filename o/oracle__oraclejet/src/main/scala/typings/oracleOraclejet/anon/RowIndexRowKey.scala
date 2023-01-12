@@ -19,7 +19,8 @@ object RowIndexRowKey {
     __obj.asInstanceOf[RowIndexRowKey[K]]
   }
   
-  extension [Self <: RowIndexRowKey[?], K](x: Self & RowIndexRowKey[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowIndexRowKey[?], K] (val x: Self & RowIndexRowKey[K]) extends AnyVal {
     
     inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     

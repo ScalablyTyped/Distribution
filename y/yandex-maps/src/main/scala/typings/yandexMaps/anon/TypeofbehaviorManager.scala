@@ -30,7 +30,8 @@ object TypeofbehaviorManager {
     __obj.asInstanceOf[TypeofbehaviorManager]
   }
   
-  extension [Self <: TypeofbehaviorManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofbehaviorManager] (val x: Self) extends AnyVal {
     
     inline def setManager(
       value: Instantiable3[

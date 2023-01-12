@@ -128,7 +128,8 @@ object libPlotsColumnTypesMod {
       __obj.asInstanceOf[ColumnOptions]
     }
     
-    extension [Self <: ColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setBrush(value: BrushCfg): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object libPlotsColumnTypesMod {
       __obj.asInstanceOf[PartialIntervalGeometryOptions]
     }
     
-    extension [Self <: PartialIntervalGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIntervalGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setDodgePadding(value: Double): Self = StObject.set(x, "dodgePadding", value.asInstanceOf[js.Any])
       

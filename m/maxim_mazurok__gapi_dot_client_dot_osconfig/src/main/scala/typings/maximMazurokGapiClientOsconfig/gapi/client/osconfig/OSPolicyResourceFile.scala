@@ -28,7 +28,8 @@ object OSPolicyResourceFile {
     __obj.asInstanceOf[OSPolicyResourceFile]
   }
   
-  extension [Self <: OSPolicyResourceFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourceFile] (val x: Self) extends AnyVal {
     
     inline def setAllowInsecure(value: Boolean): Self = StObject.set(x, "allowInsecure", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object WebXRDefaultExperience {
     __obj.asInstanceOf[WebXRDefaultExperience]
   }
   
-  extension [Self <: WebXRDefaultExperience](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRDefaultExperience] (val x: Self) extends AnyVal {
     
     inline def setBaseExperience(value: WebXRExperienceHelper): Self = StObject.set(x, "baseExperience", value.asInstanceOf[js.Any])
     

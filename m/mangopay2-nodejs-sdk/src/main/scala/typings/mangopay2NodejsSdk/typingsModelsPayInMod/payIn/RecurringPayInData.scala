@@ -116,7 +116,8 @@ object RecurringPayInData {
     __obj.asInstanceOf[RecurringPayInData]
   }
   
-  extension [Self <: RecurringPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecurringPayInData] (val x: Self) extends AnyVal {
     
     inline def setApplied3DSVersion(value: `3DSVersion`): Self = StObject.set(x, "Applied3DSVersion", value.asInstanceOf[js.Any])
     

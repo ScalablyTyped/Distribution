@@ -53,7 +53,8 @@ object FlexContainerHighlightConfig {
     __obj.asInstanceOf[FlexContainerHighlightConfig]
   }
   
-  extension [Self <: FlexContainerHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexContainerHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setColumnGapSpace(value: BoxStyle): Self = StObject.set(x, "columnGapSpace", value.asInstanceOf[js.Any])
     

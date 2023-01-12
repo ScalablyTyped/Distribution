@@ -15,7 +15,8 @@ object EnumValuesIgnoreConstraints {
     __obj.asInstanceOf[EnumValuesIgnoreConstraints]
   }
   
-  extension [Self <: EnumValuesIgnoreConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIgnoreConstraints] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IgnoreConstraints): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

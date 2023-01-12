@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[HOC]
     }
     
-    extension [Self <: HOC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HOC] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Object): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       

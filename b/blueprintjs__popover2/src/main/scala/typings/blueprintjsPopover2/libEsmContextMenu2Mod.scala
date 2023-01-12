@@ -131,7 +131,8 @@ object libEsmContextMenu2Mod {
       __obj.asInstanceOf[ContextMenu2ChildrenProps]
     }
     
-    extension [Self <: ContextMenu2ChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenu2ChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object libEsmContextMenu2Mod {
       __obj.asInstanceOf[ContextMenu2ContentProps]
     }
     
-    extension [Self <: ContextMenu2ContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenu2ContentProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
@@ -595,7 +597,8 @@ object libEsmContextMenu2Mod {
       __obj.asInstanceOf[ContextMenu2Props]
     }
     
-    extension [Self <: ContextMenu2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenu2Props] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1354,7 +1357,8 @@ object libEsmContextMenu2Mod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

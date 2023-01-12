@@ -21,7 +21,8 @@ object AllIndirectionsResponse {
     __obj.asInstanceOf[AllIndirectionsResponse]
   }
   
-  extension [Self <: AllIndirectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllIndirectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[Indirection]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

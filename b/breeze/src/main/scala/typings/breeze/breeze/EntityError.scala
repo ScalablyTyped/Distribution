@@ -29,7 +29,8 @@ object EntityError {
     __obj.asInstanceOf[EntityError]
   }
   
-  extension [Self <: EntityError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityError] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

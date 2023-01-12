@@ -77,7 +77,8 @@ object typesDevtoolsDevtoolsMod {
       __obj.asInstanceOf[DevtoolsOptions]
     }
     
-    extension [Self <: DevtoolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevtoolsOptions] (val x: Self) extends AnyVal {
       
       inline def setCloseButtonProps(value: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): Self = StObject.set(x, "closeButtonProps", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object typesDevtoolsDevtoolsMod {
       __obj.asInstanceOf[DevtoolsPanelOptions]
     }
     
-    extension [Self <: DevtoolsPanelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevtoolsPanelOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

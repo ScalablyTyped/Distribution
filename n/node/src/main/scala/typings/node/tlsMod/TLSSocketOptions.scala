@@ -40,7 +40,8 @@ object TLSSocketOptions {
     __obj.asInstanceOf[TLSSocketOptions]
   }
   
-  extension [Self <: TLSSocketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TLSSocketOptions] (val x: Self) extends AnyVal {
     
     inline def setIsServer(value: Boolean): Self = StObject.set(x, "isServer", value.asInstanceOf[js.Any])
     

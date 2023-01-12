@@ -430,7 +430,8 @@ object mod {
       __obj.asInstanceOf[EnvironmentPair]
     }
     
-    extension [Self <: EnvironmentPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentPair] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -451,7 +452,8 @@ object mod {
       __obj.asInstanceOf[EventLogConfig]
     }
     
-    extension [Self <: EventLogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventLogConfig] (val x: Self) extends AnyVal {
       
       inline def setEventLog(value: String): Self = StObject.set(x, "eventLog", value.asInstanceOf[js.Any])
       
@@ -583,7 +585,8 @@ object mod {
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    extension [Self <: ServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       
@@ -664,7 +667,8 @@ object mod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -722,7 +726,8 @@ object mod {
       __obj.asInstanceOf[WinswConfig]
     }
     
-    extension [Self <: WinswConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WinswConfig] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: String | js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

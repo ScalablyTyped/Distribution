@@ -21,7 +21,8 @@ object JsonAttribute {
     __obj.asInstanceOf[JsonAttribute]
   }
   
-  extension [Self <: JsonAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonAttribute] (val x: Self) extends AnyVal {
     
     inline def setType(value: json): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

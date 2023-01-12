@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[DefaultChecks]
     }
     
-    extension [Self <: DefaultChecks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultChecks] (val x: Self) extends AnyVal {
       
       inline def setAdverb(value: Boolean): Self = StObject.set(x, "adverb", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setChecks(value: CustomChecks): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[Problem]
     }
     
-    extension [Self <: Problem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Problem] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DecisionTaskStartedEventAttributes {
     __obj.asInstanceOf[DecisionTaskStartedEventAttributes]
   }
   
-  extension [Self <: DecisionTaskStartedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecisionTaskStartedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

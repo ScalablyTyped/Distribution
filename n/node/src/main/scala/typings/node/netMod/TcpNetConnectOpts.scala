@@ -19,7 +19,8 @@ object TcpNetConnectOpts {
     __obj.asInstanceOf[TcpNetConnectOpts]
   }
   
-  extension [Self <: TcpNetConnectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpNetConnectOpts] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

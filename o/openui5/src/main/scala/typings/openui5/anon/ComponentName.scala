@@ -50,7 +50,8 @@ object ComponentName {
     __obj.asInstanceOf[ComponentName]
   }
   
-  extension [Self <: ComponentName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentName] (val x: Self) extends AnyVal {
     
     inline def setActiveTerminologies(value: js.Array[String]): Self = StObject.set(x, "activeTerminologies", value.asInstanceOf[js.Any])
     

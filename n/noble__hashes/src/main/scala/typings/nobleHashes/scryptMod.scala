@@ -38,7 +38,8 @@ object scryptMod {
       __obj.asInstanceOf[ScryptOpts]
     }
     
-    extension [Self <: ScryptOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScryptOpts] (val x: Self) extends AnyVal {
       
       inline def setAsyncTick(value: Double): Self = StObject.set(x, "asyncTick", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object distTypesHooksUsePatchedPropsMod {
       __obj.asInstanceOf[PatchedPropsHook]
     }
     
-    extension [Self <: PatchedPropsHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchedPropsHook] (val x: Self) extends AnyVal {
       
       inline def setPatchedEventProps(value: CreateEventMap): Self = StObject.set(x, "patchedEventProps", value.asInstanceOf[js.Any])
     }

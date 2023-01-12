@@ -25,7 +25,8 @@ object libMetricsContextsMod {
       __obj.asInstanceOf[FunctionCallContext]
     }
     
-    extension [Self <: FunctionCallContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCallContext] (val x: Self) extends AnyVal {
       
       inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object libMetricsContextsMod {
       __obj.asInstanceOf[IMetricContext]
     }
     
-    extension [Self <: IMetricContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMetricContext] (val x: Self) extends AnyVal {
       
       inline def setUniqueId(value: String): Self = StObject.set(x, "uniqueId", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object libMetricsContextsMod {
       __obj.asInstanceOf[IdentityClientCallContext]
     }
     
-    extension [Self <: IdentityClientCallContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityClientCallContext] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -87,7 +90,8 @@ object libMetricsContextsMod {
       __obj.asInstanceOf[IntentCallContext]
     }
     
-    extension [Self <: IntentCallContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntentCallContext] (val x: Self) extends AnyVal {
       
       inline def setIntent(value: Intent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     }
@@ -109,7 +113,8 @@ object libMetricsContextsMod {
       __obj.asInstanceOf[MatrixClientCallContext]
     }
     
-    extension [Self <: MatrixClientCallContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixClientCallContext] (val x: Self) extends AnyVal {
       
       inline def setClient(value: MatrixClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }

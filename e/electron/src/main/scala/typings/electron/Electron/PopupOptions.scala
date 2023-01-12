@@ -43,7 +43,8 @@ object PopupOptions {
     __obj.asInstanceOf[PopupOptions]
   }
   
-  extension [Self <: PopupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

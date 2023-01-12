@@ -28,7 +28,8 @@ object SAMLProviderListEntry {
     __obj.asInstanceOf[SAMLProviderListEntry]
   }
   
-  extension [Self <: SAMLProviderListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAMLProviderListEntry] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

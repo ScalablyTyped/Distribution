@@ -100,7 +100,8 @@ object buildSrcStackMod {
       __obj.asInstanceOf[StackProperties]
     }
     
-    extension [Self <: StackProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackProperties] (val x: Self) extends AnyVal {
       
       inline def setFieldChannel(value: typings.vegaLite.vegaLiteStrings.x | y | theta | radius): Self = StObject.set(x, "fieldChannel", value.asInstanceOf[js.Any])
       

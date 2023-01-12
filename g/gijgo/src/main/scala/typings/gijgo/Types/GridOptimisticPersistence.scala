@@ -17,7 +17,8 @@ object GridOptimisticPersistence {
     __obj.asInstanceOf[GridOptimisticPersistence]
   }
   
-  extension [Self <: GridOptimisticPersistence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOptimisticPersistence] (val x: Self) extends AnyVal {
     
     inline def setLocalStorage(value: js.Array[String]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     

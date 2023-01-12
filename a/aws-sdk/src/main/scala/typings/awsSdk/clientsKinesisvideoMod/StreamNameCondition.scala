@@ -23,7 +23,8 @@ object StreamNameCondition {
     __obj.asInstanceOf[StreamNameCondition]
   }
   
-  extension [Self <: StreamNameCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamNameCondition] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

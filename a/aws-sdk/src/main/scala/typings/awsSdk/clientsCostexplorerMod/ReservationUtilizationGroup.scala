@@ -33,7 +33,8 @@ object ReservationUtilizationGroup {
     __obj.asInstanceOf[ReservationUtilizationGroup]
   }
   
-  extension [Self <: ReservationUtilizationGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationUtilizationGroup] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

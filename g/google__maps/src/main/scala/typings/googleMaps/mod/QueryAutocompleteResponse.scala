@@ -29,7 +29,8 @@ object QueryAutocompleteResponse {
     __obj.asInstanceOf[QueryAutocompleteResponse]
   }
   
-  extension [Self <: QueryAutocompleteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAutocompleteResponse] (val x: Self) extends AnyVal {
     
     inline def setError_message(value: String): Self = StObject.set(x, "error_message", value.asInstanceOf[js.Any])
     

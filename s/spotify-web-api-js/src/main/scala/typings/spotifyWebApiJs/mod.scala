@@ -132,7 +132,8 @@ object mod {
         __obj.asInstanceOf[ErrorObject]
       }
       
-      extension [Self <: ErrorObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
         
         inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         

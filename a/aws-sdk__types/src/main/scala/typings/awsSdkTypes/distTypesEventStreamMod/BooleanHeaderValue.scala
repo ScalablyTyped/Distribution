@@ -21,7 +21,8 @@ object BooleanHeaderValue {
     __obj.asInstanceOf[BooleanHeaderValue]
   }
   
-  extension [Self <: BooleanHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

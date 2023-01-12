@@ -43,7 +43,8 @@ object ContainerServicePower {
     __obj.asInstanceOf[ContainerServicePower]
   }
   
-  extension [Self <: ContainerServicePower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServicePower] (val x: Self) extends AnyVal {
     
     inline def setCpuCount(value: float): Self = StObject.set(x, "cpuCount", value.asInstanceOf[js.Any])
     

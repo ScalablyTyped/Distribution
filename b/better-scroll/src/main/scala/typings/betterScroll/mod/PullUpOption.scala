@@ -15,7 +15,8 @@ object PullUpOption {
     __obj.asInstanceOf[PullUpOption]
   }
   
-  extension [Self <: PullUpOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullUpOption] (val x: Self) extends AnyVal {
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
   }

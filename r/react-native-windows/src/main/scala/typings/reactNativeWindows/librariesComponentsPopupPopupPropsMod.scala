@@ -43,7 +43,8 @@ object librariesComponentsPopupPopupPropsMod {
       __obj.asInstanceOf[IPopupProps]
     }
     
-    extension [Self <: IPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

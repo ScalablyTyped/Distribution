@@ -54,7 +54,8 @@ object XTextViewCursor {
     __obj.asInstanceOf[XTextViewCursor]
   }
   
-  extension [Self <: XTextViewCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextViewCursor] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     

@@ -530,7 +530,8 @@ object sapMNotificationListGroupMod {
       __obj.asInstanceOf[NotificationListGroupSettings]
     }
     
-    extension [Self <: NotificationListGroupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationListGroupSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoPriority(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autoPriority", value.asInstanceOf[js.Any])
       

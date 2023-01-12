@@ -26,7 +26,8 @@ object distTs3Dot9ModulesReleaseNotesMod {
       __obj.asInstanceOf[ReleaseNotes]
     }
     
-    extension [Self <: ReleaseNotes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReleaseNotes] (val x: Self) extends AnyVal {
       
       inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distTs3Dot9ModulesReleaseNotesMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setReleaseNotesVersion(value: () => String): Self = StObject.set(x, "releaseNotesVersion", js.Any.fromFunction0(value))
       
@@ -82,7 +84,8 @@ object distTs3Dot9ModulesReleaseNotesMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setReleaseNotesViewed(value: js.Array[String]): Self = StObject.set(x, "releaseNotesViewed", value.asInstanceOf[js.Any])
       

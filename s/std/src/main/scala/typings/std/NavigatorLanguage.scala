@@ -19,7 +19,8 @@ object NavigatorLanguage {
     __obj.asInstanceOf[NavigatorLanguage]
   }
   
-  extension [Self <: NavigatorLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorLanguage] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: java.lang.String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

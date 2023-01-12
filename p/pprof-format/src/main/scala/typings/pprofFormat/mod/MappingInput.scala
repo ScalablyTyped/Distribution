@@ -33,7 +33,8 @@ object MappingInput {
     __obj.asInstanceOf[MappingInput]
   }
   
-  extension [Self <: MappingInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingInput] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: Numeric): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     

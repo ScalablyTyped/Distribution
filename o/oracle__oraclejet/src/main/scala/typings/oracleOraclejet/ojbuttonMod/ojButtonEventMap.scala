@@ -158,7 +158,8 @@ object ojButtonEventMap {
     __obj.asInstanceOf[ojButtonEventMap[SP]]
   }
   
-  extension [Self <: ojButtonEventMap[?], SP /* <: ojButtonSettableProperties */](x: Self & ojButtonEventMap[SP]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojButtonEventMap[?], SP /* <: ojButtonSettableProperties */] (val x: Self & ojButtonEventMap[SP]) extends AnyVal {
     
     inline def setChromingChanged(value: JetElementCustomEvent[full | half | outlined]): Self = StObject.set(x, "chromingChanged", value.asInstanceOf[js.Any])
     

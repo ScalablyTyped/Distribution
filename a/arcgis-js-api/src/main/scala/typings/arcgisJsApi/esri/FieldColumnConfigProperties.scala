@@ -70,7 +70,8 @@ object FieldColumnConfigProperties {
     __obj.asInstanceOf[FieldColumnConfigProperties]
   }
   
-  extension [Self <: FieldColumnConfigProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldColumnConfigProperties] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc_ | desc_): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DEK {
     __obj.asInstanceOf[DEK]
   }
   
-  extension [Self <: DEK](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DEK] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

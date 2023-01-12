@@ -25,7 +25,8 @@ object NumericOptions {
     __obj.asInstanceOf[NumericOptions]
   }
   
-  extension [Self <: NumericOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericOptions] (val x: Self) extends AnyVal {
     
     inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     

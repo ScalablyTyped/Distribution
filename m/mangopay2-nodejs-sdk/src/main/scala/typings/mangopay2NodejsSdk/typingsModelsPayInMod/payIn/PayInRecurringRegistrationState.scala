@@ -27,7 +27,8 @@ object PayInRecurringRegistrationState {
     __obj.asInstanceOf[PayInRecurringRegistrationState]
   }
   
-  extension [Self <: PayInRecurringRegistrationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayInRecurringRegistrationState] (val x: Self) extends AnyVal {
     
     inline def setCumulatedDebitedAmount(value: MoneyData): Self = StObject.set(x, "CumulatedDebitedAmount", value.asInstanceOf[js.Any])
     

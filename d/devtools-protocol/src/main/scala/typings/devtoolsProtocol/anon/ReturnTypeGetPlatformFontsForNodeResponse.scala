@@ -19,7 +19,8 @@ object ReturnTypeGetPlatformFontsForNodeResponse {
     __obj.asInstanceOf[ReturnTypeGetPlatformFontsForNodeResponse]
   }
   
-  extension [Self <: ReturnTypeGetPlatformFontsForNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetPlatformFontsForNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetPlatformFontsForNodeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

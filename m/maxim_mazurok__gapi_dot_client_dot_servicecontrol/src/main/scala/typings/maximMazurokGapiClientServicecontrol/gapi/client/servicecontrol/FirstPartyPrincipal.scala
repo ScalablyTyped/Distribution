@@ -21,7 +21,8 @@ object FirstPartyPrincipal {
     __obj.asInstanceOf[FirstPartyPrincipal]
   }
   
-  extension [Self <: FirstPartyPrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstPartyPrincipal] (val x: Self) extends AnyVal {
     
     inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     

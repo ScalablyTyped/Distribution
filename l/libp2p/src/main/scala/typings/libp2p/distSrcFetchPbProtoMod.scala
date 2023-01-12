@@ -31,7 +31,8 @@ object distSrcFetchPbProtoMod {
     
     inline def encode(obj: FetchRequest): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: FetchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     }
@@ -91,7 +92,8 @@ object distSrcFetchPbProtoMod {
     
     inline def encode(obj: FetchResponse): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

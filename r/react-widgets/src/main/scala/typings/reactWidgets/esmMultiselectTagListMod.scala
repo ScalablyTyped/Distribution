@@ -61,7 +61,8 @@ object esmMultiselectTagListMod {
       __obj.asInstanceOf[MultiselectTagListProps[TDataItem]]
     }
     
-    extension [Self <: MultiselectTagListProps[?], TDataItem](x: Self & MultiselectTagListProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiselectTagListProps[?], TDataItem] (val x: Self & MultiselectTagListProps[TDataItem]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object PageinfoTransfers {
     __obj.asInstanceOf[PageinfoTransfers]
   }
   
-  extension [Self <: PageinfoTransfers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageinfoTransfers] (val x: Self) extends AnyVal {
     
     inline def setPage_info(value: Currentpage): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MenuItemParameters {
     __obj.asInstanceOf[MenuItemParameters]
   }
   
-  extension [Self <: MenuItemParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemParameters] (val x: Self) extends AnyVal {
     
     inline def setEngineId(value: String): Self = StObject.set(x, "engineId", value.asInstanceOf[js.Any])
     

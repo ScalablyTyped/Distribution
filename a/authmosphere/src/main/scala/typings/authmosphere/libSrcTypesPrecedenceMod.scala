@@ -58,7 +58,8 @@ object libSrcTypesPrecedenceMod {
       __obj.asInstanceOf[PrecedenceOptions]
     }
     
-    extension [Self <: PrecedenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrecedenceOptions] (val x: Self) extends AnyVal {
       
       inline def setPrecedenceFunction(
         value: (/* req */ Request_[

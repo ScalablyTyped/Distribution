@@ -44,7 +44,8 @@ object ModuleSettings {
     __obj.asInstanceOf[ModuleSettings]
   }
   
-  extension [Self <: ModuleSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleSettings] (val x: Self) extends AnyVal {
     
     inline def setGenerator(value: StringDictionary[Any]): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     

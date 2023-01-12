@@ -26,7 +26,8 @@ object PostParametersQueryToken {
     __obj.asInstanceOf[PostParametersQueryToken]
   }
   
-  extension [Self <: PostParametersQueryToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostParametersQueryToken] (val x: Self) extends AnyVal {
     
     inline def setPost(value: ParametersQueryToken): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

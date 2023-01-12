@@ -17,7 +17,8 @@ object MediaSize {
     __obj.asInstanceOf[MediaSize]
   }
   
-  extension [Self <: MediaSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaSize] (val x: Self) extends AnyVal {
     
     inline def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     

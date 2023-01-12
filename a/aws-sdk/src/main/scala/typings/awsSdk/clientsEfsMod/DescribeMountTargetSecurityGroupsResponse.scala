@@ -18,7 +18,8 @@ object DescribeMountTargetSecurityGroupsResponse {
     __obj.asInstanceOf[DescribeMountTargetSecurityGroupsResponse]
   }
   
-  extension [Self <: DescribeMountTargetSecurityGroupsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMountTargetSecurityGroupsResponse] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     

@@ -200,7 +200,8 @@ object buildSrcAuthBaseexternalclientMod {
       __obj.asInstanceOf[BaseExternalAccountClientOptions]
     }
     
-    extension [Self <: BaseExternalAccountClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseExternalAccountClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -256,7 +257,8 @@ object buildSrcAuthBaseexternalclientMod {
       __obj.asInstanceOf[CredentialsWithResponse]
     }
     
-    extension [Self <: CredentialsWithResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialsWithResponse] (val x: Self) extends AnyVal {
       
       inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
       
@@ -279,7 +281,8 @@ object buildSrcAuthBaseexternalclientMod {
       __obj.asInstanceOf[IamGenerateAccessTokenResponse]
     }
     
-    extension [Self <: IamGenerateAccessTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IamGenerateAccessTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -314,7 +317,8 @@ object buildSrcAuthBaseexternalclientMod {
       __obj.asInstanceOf[ProjectInfo]
     }
     
-    extension [Self <: ProjectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectInfo] (val x: Self) extends AnyVal {
       
       inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
       

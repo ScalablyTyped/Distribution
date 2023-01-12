@@ -239,7 +239,8 @@ object ToastrOptions {
     __obj.asInstanceOf[ToastrOptions]
   }
   
-  extension [Self <: ToastrOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastrOptions] (val x: Self) extends AnyVal {
     
     inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     

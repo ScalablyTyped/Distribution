@@ -51,7 +51,8 @@ object libMosaicZeroStateMod {
       __obj.asInstanceOf[MosaicZeroStateProps[T]]
     }
     
-    extension [Self <: MosaicZeroStateProps[?], T /* <: MosaicKey */](x: Self & MosaicZeroStateProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicZeroStateProps[?], T /* <: MosaicKey */] (val x: Self & MosaicZeroStateProps[T]) extends AnyVal {
       
       inline def setCreateNode(value: CreateNode[T]): Self = StObject.set(x, "createNode", value.asInstanceOf[js.Any])
       

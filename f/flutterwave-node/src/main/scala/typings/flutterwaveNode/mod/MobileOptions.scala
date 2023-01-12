@@ -18,7 +18,8 @@ object MobileOptions {
     __obj.asInstanceOf[MobileOptions]
   }
   
-  extension [Self <: MobileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileOptions] (val x: Self) extends AnyVal {
     
     inline def setChargeUssd(
       value: MobileOptionsChargeUssdRequest => js.Promise[AxiosResponse[MobileOptionsChargeUssdResponse, Any]]

@@ -26,7 +26,8 @@ object distSelectorParserMod {
       __obj.asInstanceOf[ParseConfig]
     }
     
-    extension [Self <: ParseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseConfig] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }

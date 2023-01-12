@@ -19,7 +19,8 @@ object GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata {
     __obj.asInstanceOf[GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata]
   }
   
-  extension [Self <: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemoteworkersV1test2DirectoryMetadata] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: GoogleDevtoolsRemoteworkersV1test2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

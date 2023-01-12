@@ -38,7 +38,8 @@ object PipelineContext {
     __obj.asInstanceOf[PipelineContext]
   }
   
-  extension [Self <: PipelineContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineContext] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionContext): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object RoutingProfileQueueConfigSummary {
     __obj.asInstanceOf[RoutingProfileQueueConfigSummary]
   }
   
-  extension [Self <: RoutingProfileQueueConfigSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutingProfileQueueConfigSummary] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     

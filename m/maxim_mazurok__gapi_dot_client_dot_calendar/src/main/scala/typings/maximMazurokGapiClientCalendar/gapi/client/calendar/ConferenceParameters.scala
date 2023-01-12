@@ -16,7 +16,8 @@ object ConferenceParameters {
     __obj.asInstanceOf[ConferenceParameters]
   }
   
-  extension [Self <: ConferenceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceParameters] (val x: Self) extends AnyVal {
     
     inline def setAddOnParameters(value: ConferenceParametersAddOnParameters): Self = StObject.set(x, "addOnParameters", value.asInstanceOf[js.Any])
     

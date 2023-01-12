@@ -17,7 +17,8 @@ object XAbortChannel {
     __obj.asInstanceOf[XAbortChannel]
   }
   
-  extension [Self <: XAbortChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAbortChannel] (val x: Self) extends AnyVal {
     
     inline def setSendAbort(value: () => Unit): Self = StObject.set(x, "sendAbort", js.Any.fromFunction0(value))
   }

@@ -34,7 +34,8 @@ object Includeallbranches {
     __obj.asInstanceOf[Includeallbranches]
   }
   
-  extension [Self <: Includeallbranches](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Includeallbranches] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

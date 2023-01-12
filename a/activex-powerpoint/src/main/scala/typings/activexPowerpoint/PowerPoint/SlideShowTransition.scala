@@ -53,7 +53,8 @@ object SlideShowTransition {
     __obj.asInstanceOf[SlideShowTransition]
   }
   
-  extension [Self <: SlideShowTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideShowTransition] (val x: Self) extends AnyVal {
     
     inline def setAdvanceOnClick(value: MsoTriState): Self = StObject.set(x, "AdvanceOnClick", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object WebBrowserCompleteAuthSessionOptions {
     __obj.asInstanceOf[WebBrowserCompleteAuthSessionOptions]
   }
   
-  extension [Self <: WebBrowserCompleteAuthSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebBrowserCompleteAuthSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setSkipRedirectCheck(value: Boolean): Self = StObject.set(x, "skipRedirectCheck", value.asInstanceOf[js.Any])
     

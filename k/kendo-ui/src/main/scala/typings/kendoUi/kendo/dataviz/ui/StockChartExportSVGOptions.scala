@@ -15,7 +15,8 @@ object StockChartExportSVGOptions {
     __obj.asInstanceOf[StockChartExportSVGOptions]
   }
   
-  extension [Self <: StockChartExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object libRenderersMod {
       __obj.asInstanceOf[RendererWithSyntax]
     }
     
-    extension [Self <: RendererWithSyntax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererWithSyntax] (val x: Self) extends AnyVal {
       
       inline def setSyntax(value: Comment): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object libRenderersMod {
       __obj.asInstanceOf[RendererWithoutSyntax]
     }
     
-    extension [Self <: RendererWithoutSyntax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererWithoutSyntax] (val x: Self) extends AnyVal {
       
       inline def setCodeFrame(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof identity */ Any): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object libRenderersMod {
       __obj.asInstanceOf[Renderers]
     }
     
-    extension [Self <: Renderers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderers] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: RendererWithSyntax): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

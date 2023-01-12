@@ -38,7 +38,8 @@ object IntArrayOptions {
     __obj.asInstanceOf[IntArrayOptions]
   }
   
-  extension [Self <: IntArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Long): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

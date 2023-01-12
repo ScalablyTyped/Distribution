@@ -56,7 +56,8 @@ object GetUserInfoOptions {
     __obj.asInstanceOf[GetUserInfoOptions]
   }
   
-  extension [Self <: GetUserInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUserInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

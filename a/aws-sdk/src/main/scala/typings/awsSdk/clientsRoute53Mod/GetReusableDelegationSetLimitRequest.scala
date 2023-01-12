@@ -23,7 +23,8 @@ object GetReusableDelegationSetLimitRequest {
     __obj.asInstanceOf[GetReusableDelegationSetLimitRequest]
   }
   
-  extension [Self <: GetReusableDelegationSetLimitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReusableDelegationSetLimitRequest] (val x: Self) extends AnyVal {
     
     inline def setDelegationSetId(value: ResourceId): Self = StObject.set(x, "DelegationSetId", value.asInstanceOf[js.Any])
     

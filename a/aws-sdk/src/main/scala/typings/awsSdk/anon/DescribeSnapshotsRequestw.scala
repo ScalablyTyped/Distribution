@@ -62,7 +62,8 @@ object DescribeSnapshotsRequestw {
     __obj.asInstanceOf[DescribeSnapshotsRequestw]
   }
   
-  extension [Self <: DescribeSnapshotsRequestw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSnapshotsRequestw] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

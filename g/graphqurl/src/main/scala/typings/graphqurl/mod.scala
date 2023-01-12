@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setOnGraphQLComplete(value: () => Unit): Self = StObject.set(x, "onGraphQLComplete", js.Any.fromFunction0(value))
       

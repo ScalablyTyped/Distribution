@@ -65,7 +65,8 @@ object libCommonInlayHintMod {
       __obj.asInstanceOf[InlayHintsMiddleware]
     }
     
-    extension [Self <: InlayHintsMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintsMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideInlayHints(
         value: js.ThisFunction4[
@@ -107,7 +108,8 @@ object libCommonInlayHintMod {
       __obj.asInstanceOf[InlayHintsProviderShape]
     }
     
-    extension [Self <: InlayHintsProviderShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlayHintsProviderShape] (val x: Self) extends AnyVal {
       
       inline def setOnDidChangeInlayHints(value: EventEmitter[Unit]): Self = StObject.set(x, "onDidChangeInlayHints", value.asInstanceOf[js.Any])
       

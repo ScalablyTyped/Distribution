@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsHistoryMod extends Shortcut
       __obj.asInstanceOf[HistoryProps]
     }
     
-    extension [Self <: HistoryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

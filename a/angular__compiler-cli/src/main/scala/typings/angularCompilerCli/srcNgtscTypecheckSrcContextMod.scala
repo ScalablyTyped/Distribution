@@ -155,7 +155,8 @@ object srcNgtscTypecheckSrcContextMod {
       __obj.asInstanceOf[PendingFileTypeCheckingData]
     }
     
-    extension [Self <: PendingFileTypeCheckingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingFileTypeCheckingData] (val x: Self) extends AnyVal {
       
       inline def setHasInlines(value: Boolean): Self = StObject.set(x, "hasInlines", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object srcNgtscTypecheckSrcContextMod {
       __obj.asInstanceOf[PendingShimData]
     }
     
-    extension [Self <: PendingShimData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingShimData] (val x: Self) extends AnyVal {
       
       inline def setDomSchemaChecker(value: DomSchemaChecker): Self = StObject.set(x, "domSchemaChecker", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object srcNgtscTypecheckSrcContextMod {
       __obj.asInstanceOf[ShimTypeCheckingData]
     }
     
-    extension [Self <: ShimTypeCheckingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShimTypeCheckingData] (val x: Self) extends AnyVal {
       
       inline def setGenesisDiagnostics(value: js.Array[TemplateDiagnostic]): Self = StObject.set(x, "genesisDiagnostics", value.asInstanceOf[js.Any])
       
@@ -291,7 +294,8 @@ object srcNgtscTypecheckSrcContextMod {
       __obj.asInstanceOf[TemplateData]
     }
     
-    extension [Self <: TemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateData] (val x: Self) extends AnyVal {
       
       inline def setBoundTarget(value: BoundTarget[TypeCheckableDirectiveMeta]): Self = StObject.set(x, "boundTarget", value.asInstanceOf[js.Any])
       
@@ -344,7 +348,8 @@ object srcNgtscTypecheckSrcContextMod {
       __obj.asInstanceOf[TypeCheckingHost]
     }
     
-    extension [Self <: TypeCheckingHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeCheckingHost] (val x: Self) extends AnyVal {
       
       inline def setGetSourceManager(value: AbsoluteFsPath => TemplateSourceManager): Self = StObject.set(x, "getSourceManager", js.Any.fromFunction1(value))
       

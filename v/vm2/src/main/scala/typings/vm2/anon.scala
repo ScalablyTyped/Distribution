@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[ColumnOffset]
     }
     
-    extension [Self <: ColumnOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOffset] (val x: Self) extends AnyVal {
       
       inline def setColumnOffset(value: Double): Self = StObject.set(x, "columnOffset", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Compiler]
     }
     
-    extension [Self <: Compiler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
       
       inline def setColumnOffset(value: Double): Self = StObject.set(x, "columnOffset", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Filename]
     }
     
-    extension [Self <: Filename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filename] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Modules]
     }
     
-    extension [Self <: Modules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
       
       inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[Strict]
     }
     
-    extension [Self <: Strict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

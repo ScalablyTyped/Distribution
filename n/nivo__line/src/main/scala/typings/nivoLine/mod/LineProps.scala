@@ -129,7 +129,8 @@ object LineProps {
     __obj.asInstanceOf[LineProps]
   }
   
-  extension [Self <: LineProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineProps] (val x: Self) extends AnyVal {
     
     inline def setAreaBaselineValue(value: DatumValue): Self = StObject.set(x, "areaBaselineValue", value.asInstanceOf[js.Any])
     

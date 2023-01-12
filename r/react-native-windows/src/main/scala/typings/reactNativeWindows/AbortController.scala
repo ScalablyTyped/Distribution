@@ -23,7 +23,8 @@ object AbortController {
     __obj.asInstanceOf[AbortController]
   }
   
-  extension [Self <: AbortController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortController] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

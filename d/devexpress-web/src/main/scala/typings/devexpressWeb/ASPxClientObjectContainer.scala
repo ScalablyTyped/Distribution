@@ -169,7 +169,8 @@ object ASPxClientObjectContainer {
     __obj.asInstanceOf[ASPxClientObjectContainer]
   }
   
-  extension [Self <: ASPxClientObjectContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientObjectContainer] (val x: Self) extends AnyVal {
     
     inline def setBack(value: () => Unit): Self = StObject.set(x, "Back", js.Any.fromFunction0(value))
     

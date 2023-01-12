@@ -30,7 +30,8 @@ object CreateInstanceRequest {
     __obj.asInstanceOf[CreateInstanceRequest]
   }
   
-  extension [Self <: CreateInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setClusters(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.Cluster} */ js.Any

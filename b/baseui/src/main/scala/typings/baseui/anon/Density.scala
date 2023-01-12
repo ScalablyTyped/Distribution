@@ -120,7 +120,8 @@ object Density {
     __obj.asInstanceOf[Density[T]]
   }
   
-  extension [Self <: Density[?], T](x: Self & Density[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Density[?], T] (val x: Self & Density[T]) extends AnyVal {
     
     inline def set$date(value: T): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object AddOptions {
     __obj.asInstanceOf[AddOptions]
   }
   
-  extension [Self <: AddOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
     
     inline def setBlockWriteConcurrency(value: Double): Self = StObject.set(x, "blockWriteConcurrency", value.asInstanceOf[js.Any])
     

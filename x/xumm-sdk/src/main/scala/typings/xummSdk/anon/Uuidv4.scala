@@ -15,7 +15,8 @@ object Uuidv4 {
     __obj.asInstanceOf[Uuidv4]
   }
   
-  extension [Self <: Uuidv4](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Uuidv4] (val x: Self) extends AnyVal {
     
     inline def setUuidv4(value: String): Self = StObject.set(x, "uuidv4", value.asInstanceOf[js.Any])
   }

@@ -76,7 +76,8 @@ object FeatureReductionBinningProperties {
     __obj.asInstanceOf[FeatureReductionBinningProperties]
   }
   
-  extension [Self <: FeatureReductionBinningProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureReductionBinningProperties] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[AggregateFieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

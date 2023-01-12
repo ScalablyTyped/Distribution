@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[BrowserWithLanguageTextOptions]
     }
     
-    extension [Self <: BrowserWithLanguageTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserWithLanguageTextOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: TextConfig | String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object mod {
       __obj.asInstanceOf[DetectedBrowser]
     }
     
-    extension [Self <: DetectedBrowser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectedBrowser] (val x: Self) extends AnyVal {
       
       inline def setAge_years(value: Double): Self = StObject.set(x, "age_years", value.asInstanceOf[js.Any])
       
@@ -609,7 +611,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApi(value: Double): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -957,7 +960,8 @@ object mod {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    extension [Self <: ParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setAddmargin(value: Boolean): Self = StObject.set(x, "addmargin", value.asInstanceOf[js.Any])
       
@@ -1245,7 +1249,8 @@ object mod {
       __obj.asInstanceOf[RequiredBrowsers]
     }
     
-    extension [Self <: RequiredBrowsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBrowsers] (val x: Self) extends AnyVal {
       
       inline def setA(value: String | Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -1322,7 +1327,8 @@ object mod {
       __obj.asInstanceOf[TextConfig]
     }
     
-    extension [Self <: TextConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextConfig] (val x: Self) extends AnyVal {
       
       inline def setBignore(value: String): Self = StObject.set(x, "bignore", value.asInstanceOf[js.Any])
       

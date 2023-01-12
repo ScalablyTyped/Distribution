@@ -18,7 +18,8 @@ object VisibleSubSections {
     __obj.asInstanceOf[VisibleSubSections]
   }
   
-  extension [Self <: VisibleSubSections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleSubSections] (val x: Self) extends AnyVal {
     
     inline def setVisibleSubSections(value: js.Object): Self = StObject.set(x, "visibleSubSections", value.asInstanceOf[js.Any])
     

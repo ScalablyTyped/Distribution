@@ -20,7 +20,8 @@ object TSTypeQuery {
   @js.native
   def apply(exprName: TSEntityName): TSTypeQuery = js.native
   
-  extension [Self <: TSTypeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeQuery] (val x: Self) extends AnyVal {
     
     inline def setExprName(value: TSEntityName): Self = StObject.set(x, "exprName", value.asInstanceOf[js.Any])
     

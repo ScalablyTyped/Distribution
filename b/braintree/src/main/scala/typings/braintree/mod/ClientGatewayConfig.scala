@@ -19,7 +19,8 @@ object ClientGatewayConfig {
     __obj.asInstanceOf[ClientGatewayConfig]
   }
   
-  extension [Self <: ClientGatewayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientGatewayConfig] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

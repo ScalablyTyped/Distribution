@@ -28,7 +28,8 @@ object IDataBinMetrics {
     __obj.asInstanceOf[IDataBinMetrics]
   }
   
-  extension [Self <: IDataBinMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataBinMetrics] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: Double): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
     

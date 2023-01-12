@@ -159,7 +159,8 @@ object Autoload {
     __obj.asInstanceOf[Autoload]
   }
   
-  extension [Self <: Autoload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autoload] (val x: Self) extends AnyVal {
     
     inline def setAutoload(value: Boolean | prompt | js.Function0[Boolean]): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     

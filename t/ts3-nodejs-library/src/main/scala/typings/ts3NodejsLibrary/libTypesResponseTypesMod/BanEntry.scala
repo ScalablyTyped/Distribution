@@ -56,7 +56,8 @@ object BanEntry {
     __obj.asInstanceOf[BanEntry]
   }
   
-  extension [Self <: BanEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BanEntry] (val x: Self) extends AnyVal {
     
     inline def setBanid(value: String): Self = StObject.set(x, "banid", value.asInstanceOf[js.Any])
     

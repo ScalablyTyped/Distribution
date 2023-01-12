@@ -22,7 +22,8 @@ object AudioProps {
     __obj.asInstanceOf[AudioProps]
   }
   
-  extension [Self <: AudioProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioProps] (val x: Self) extends AnyVal {
     
     inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
     

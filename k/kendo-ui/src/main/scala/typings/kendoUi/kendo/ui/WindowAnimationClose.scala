@@ -19,7 +19,8 @@ object WindowAnimationClose {
     __obj.asInstanceOf[WindowAnimationClose]
   }
   
-  extension [Self <: WindowAnimationClose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowAnimationClose] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

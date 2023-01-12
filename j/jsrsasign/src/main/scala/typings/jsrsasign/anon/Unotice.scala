@@ -19,7 +19,8 @@ object Unotice {
     __obj.asInstanceOf[Unotice]
   }
   
-  extension [Self <: Unotice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unotice] (val x: Self) extends AnyVal {
     
     inline def setUnotice(value: UserNotice): Self = StObject.set(x, "unotice", value.asInstanceOf[js.Any])
   }

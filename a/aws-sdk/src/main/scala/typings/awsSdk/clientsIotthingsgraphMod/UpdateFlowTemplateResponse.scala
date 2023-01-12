@@ -18,7 +18,8 @@ object UpdateFlowTemplateResponse {
     __obj.asInstanceOf[UpdateFlowTemplateResponse]
   }
   
-  extension [Self <: UpdateFlowTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFlowTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setSummary(value: FlowTemplateSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object builtUtilsCommanderMod {
       __obj.asInstanceOf[CommanderOptions]
     }
     
-    extension [Self <: CommanderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommanderOptions] (val x: Self) extends AnyVal {
       
       inline def setKeyPrefix(value: String): Self = StObject.set(x, "keyPrefix", value.asInstanceOf[js.Any])
       

@@ -756,7 +756,8 @@ object sapMShellMod {
       __obj.asInstanceOf[ShellSettings]
     }
     
-    extension [Self <: ShellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellSettings] (val x: Self) extends AnyVal {
       
       inline def setApp(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

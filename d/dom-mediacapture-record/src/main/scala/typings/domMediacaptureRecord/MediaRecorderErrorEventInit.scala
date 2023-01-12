@@ -19,7 +19,8 @@ object MediaRecorderErrorEventInit {
     __obj.asInstanceOf[MediaRecorderErrorEventInit]
   }
   
-  extension [Self <: MediaRecorderErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRecorderErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: DOMException): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

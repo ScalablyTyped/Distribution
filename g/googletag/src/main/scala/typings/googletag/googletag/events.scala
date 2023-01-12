@@ -34,7 +34,8 @@ object events {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object events {
       __obj.asInstanceOf[EventTypeMap]
     }
     
-    extension [Self <: EventTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTypeMap] (val x: Self) extends AnyVal {
       
       inline def setImpressionViewable(value: ImpressionViewableEvent): Self = StObject.set(x, "impressionViewable", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object events {
       __obj.asInstanceOf[RewardedSlotGrantedEvent]
     }
     
-    extension [Self <: RewardedSlotGrantedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RewardedSlotGrantedEvent] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: RewardedPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
@@ -271,7 +274,8 @@ object events {
       __obj.asInstanceOf[RewardedSlotReadyEvent]
     }
     
-    extension [Self <: RewardedSlotReadyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RewardedSlotReadyEvent] (val x: Self) extends AnyVal {
       
       inline def setMakeRewardedVisible(value: () => Unit): Self = StObject.set(x, "makeRewardedVisible", js.Any.fromFunction0(value))
     }
@@ -389,7 +393,8 @@ object events {
       __obj.asInstanceOf[SlotRenderEndedEvent]
     }
     
-    extension [Self <: SlotRenderEndedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotRenderEndedEvent] (val x: Self) extends AnyVal {
       
       inline def setAdvertiserId(value: Double): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
       
@@ -518,7 +523,8 @@ object events {
       __obj.asInstanceOf[SlotVisibilityChangedEvent]
     }
     
-    extension [Self <: SlotVisibilityChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotVisibilityChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setInViewPercentage(value: Double): Self = StObject.set(x, "inViewPercentage", value.asInstanceOf[js.Any])
     }

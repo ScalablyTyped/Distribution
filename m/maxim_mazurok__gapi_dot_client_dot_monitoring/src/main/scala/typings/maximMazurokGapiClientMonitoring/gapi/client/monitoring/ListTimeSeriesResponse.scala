@@ -31,7 +31,8 @@ object ListTimeSeriesResponse {
     __obj.asInstanceOf[ListTimeSeriesResponse]
   }
   
-  extension [Self <: ListTimeSeriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTimeSeriesResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionErrors(value: js.Array[Status]): Self = StObject.set(x, "executionErrors", value.asInstanceOf[js.Any])
     

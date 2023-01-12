@@ -20,7 +20,8 @@ object ElementDataDefinition {
     __obj.asInstanceOf[ElementDataDefinition]
   }
   
-  extension [Self <: ElementDataDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementDataDefinition] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object TimePicker {
       __obj.asInstanceOf[BeforeChangeEventArgs]
     }
     
-    extension [Self <: BeforeChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object TimePicker {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object TimePicker {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object TimePicker {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -259,7 +263,8 @@ object TimePicker {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -292,7 +297,8 @@ object TimePicker {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -333,7 +339,8 @@ object TimePicker {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -378,7 +385,8 @@ object TimePicker {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -581,7 +589,8 @@ object TimePicker {
       __obj.asInstanceOf[typings.ejWebAll.ej.TimePicker.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.TimePicker.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.TimePicker.Model] (val x: Self) extends AnyVal {
       
       inline def setBeforeChange(value: /* e */ BeforeChangeEventArgs => Unit): Self = StObject.set(x, "beforeChange", js.Any.fromFunction1(value))
       
@@ -754,7 +763,8 @@ object TimePicker {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -795,7 +805,8 @@ object TimePicker {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       

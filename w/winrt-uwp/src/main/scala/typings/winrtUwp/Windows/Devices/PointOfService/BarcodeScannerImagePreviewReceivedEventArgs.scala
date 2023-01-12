@@ -18,7 +18,8 @@ object BarcodeScannerImagePreviewReceivedEventArgs {
     __obj.asInstanceOf[BarcodeScannerImagePreviewReceivedEventArgs]
   }
   
-  extension [Self <: BarcodeScannerImagePreviewReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerImagePreviewReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: IRandomAccessStreamWithContentType): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
   }

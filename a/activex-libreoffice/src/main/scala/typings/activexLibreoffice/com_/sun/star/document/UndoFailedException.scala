@@ -26,7 +26,8 @@ object UndoFailedException {
     __obj.asInstanceOf[UndoFailedException]
   }
   
-  extension [Self <: UndoFailedException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndoFailedException] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DescribeHoursOfOperationRequest {
     __obj.asInstanceOf[DescribeHoursOfOperationRequest]
   }
   
-  extension [Self <: DescribeHoursOfOperationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHoursOfOperationRequest] (val x: Self) extends AnyVal {
     
     inline def setHoursOfOperationId(value: HoursOfOperationId): Self = StObject.set(x, "HoursOfOperationId", value.asInstanceOf[js.Any])
     

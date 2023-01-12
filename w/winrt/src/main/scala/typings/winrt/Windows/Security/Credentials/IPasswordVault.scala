@@ -33,7 +33,8 @@ object IPasswordVault {
     __obj.asInstanceOf[IPasswordVault]
   }
   
-  extension [Self <: IPasswordVault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPasswordVault] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: PasswordCredential => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

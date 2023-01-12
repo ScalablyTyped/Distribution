@@ -133,7 +133,8 @@ object webglBufferMod {
       __obj.asInstanceOf[WebGLArrayBuffer]
     }
     
-    extension [Self <: WebGLArrayBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLArrayBuffer] (val x: Self) extends AnyVal {
       
       inline def setFromArray(value: js.Array[Double] => Unit): Self = StObject.set(x, "fromArray", js.Any.fromFunction1(value))
       

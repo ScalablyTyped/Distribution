@@ -15,7 +15,8 @@ object BackendServiceReference {
     __obj.asInstanceOf[BackendServiceReference]
   }
   
-  extension [Self <: BackendServiceReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceReference] (val x: Self) extends AnyVal {
     
     inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     

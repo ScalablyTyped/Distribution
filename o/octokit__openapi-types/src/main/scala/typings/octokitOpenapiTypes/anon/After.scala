@@ -58,7 +58,8 @@ object After {
     __obj.asInstanceOf[After]
   }
   
-  extension [Self <: After](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: After] (val x: Self) extends AnyVal {
     
     inline def setAfter(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['pagination-after'] */ js.Any

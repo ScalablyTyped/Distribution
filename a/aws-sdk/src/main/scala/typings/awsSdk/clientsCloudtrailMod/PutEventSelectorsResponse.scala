@@ -28,7 +28,8 @@ object PutEventSelectorsResponse {
     __obj.asInstanceOf[PutEventSelectorsResponse]
   }
   
-  extension [Self <: PutEventSelectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutEventSelectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setAdvancedEventSelectors(value: AdvancedEventSelectors): Self = StObject.set(x, "AdvancedEventSelectors", value.asInstanceOf[js.Any])
     

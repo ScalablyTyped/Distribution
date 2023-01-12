@@ -23,7 +23,8 @@ object DeprecateWorkflowTypeInput {
     __obj.asInstanceOf[DeprecateWorkflowTypeInput]
   }
   
-  extension [Self <: DeprecateWorkflowTypeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecateWorkflowTypeInput] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

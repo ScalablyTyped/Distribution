@@ -55,7 +55,8 @@ object HTMLElement {
     __obj.asInstanceOf[HTMLElement]
   }
   
-  extension [Self <: HTMLElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
     
     inline def setExitPointerLock(value: () => Unit): Self = StObject.set(x, "exitPointerLock", js.Any.fromFunction0(value))
     

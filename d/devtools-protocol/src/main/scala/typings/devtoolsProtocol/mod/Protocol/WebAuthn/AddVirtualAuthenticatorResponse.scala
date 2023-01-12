@@ -15,7 +15,8 @@ object AddVirtualAuthenticatorResponse {
     __obj.asInstanceOf[AddVirtualAuthenticatorResponse]
   }
   
-  extension [Self <: AddVirtualAuthenticatorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddVirtualAuthenticatorResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
   }

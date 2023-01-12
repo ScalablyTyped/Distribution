@@ -38,7 +38,8 @@ object leafletMod {
         __obj.asInstanceOf[DeepZoomOptions]
       }
       
-      extension [Self <: DeepZoomOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeepZoomOptions] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         

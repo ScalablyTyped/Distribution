@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsPhoneFilledMod extends Shortcut {
       __obj.asInstanceOf[PhoneFilledProps]
     }
     
-    extension [Self <: PhoneFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

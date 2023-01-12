@@ -30,7 +30,8 @@ object FilterOptions {
     __obj.asInstanceOf[FilterOptions]
   }
   
-  extension [Self <: FilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterDate(value: Timestamp): Self = StObject.set(x, "AfterDate", value.asInstanceOf[js.Any])
     

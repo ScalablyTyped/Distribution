@@ -19,7 +19,8 @@ object DisplayMediaStreamOptions {
     __obj.asInstanceOf[DisplayMediaStreamOptions]
   }
   
-  extension [Self <: DisplayMediaStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayMediaStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: scala.Boolean | MediaTrackConstraints): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

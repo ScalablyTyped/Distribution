@@ -36,7 +36,8 @@ object pluginsMinifyMod extends Shortcut {
       __obj.asInstanceOf[MinificationOptions]
     }
     
-    extension [Self <: MinificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaHex(value: Boolean): Self = StObject.set(x, "alphaHex", value.asInstanceOf[js.Any])
       

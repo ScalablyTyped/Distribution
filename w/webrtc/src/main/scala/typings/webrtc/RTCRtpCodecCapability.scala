@@ -16,7 +16,8 @@ object RTCRtpCodecCapability {
     __obj.asInstanceOf[RTCRtpCodecCapability]
   }
   
-  extension [Self <: RTCRtpCodecCapability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpCodecCapability] (val x: Self) extends AnyVal {
     
     inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
   }

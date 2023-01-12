@@ -86,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Gid]
     }
     
-    extension [Self <: Gid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gid] (val x: Self) extends AnyVal {
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object anon {
       __obj.asInstanceOf[ReadOptionsencodingstring]
     }
     
-    extension [Self <: ReadOptionsencodingstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadOptionsencodingstring] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

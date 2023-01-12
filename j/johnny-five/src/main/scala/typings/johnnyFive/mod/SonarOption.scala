@@ -21,7 +21,8 @@ object SonarOption {
     __obj.asInstanceOf[SonarOption]
   }
   
-  extension [Self <: SonarOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SonarOption] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

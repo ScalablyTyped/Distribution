@@ -26,7 +26,8 @@ object DateWithTimezone {
     __obj.asInstanceOf[DateWithTimezone]
   }
   
-  extension [Self <: DateWithTimezone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateWithTimezone] (val x: Self) extends AnyVal {
     
     inline def setDateInTZ(value: Date): Self = StObject.set(x, "DateInTZ", value.asInstanceOf[js.Any])
     

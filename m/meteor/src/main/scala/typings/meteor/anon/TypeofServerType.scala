@@ -43,7 +43,8 @@ object TypeofServerType {
     __obj.asInstanceOf[TypeofServerType]
   }
   
-  extension [Self <: TypeofServerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofServerType] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancer(value: LoadBalancer): Self = StObject.set(x, "LoadBalancer", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,8 @@ object srcNgtscImportsSrcReferencesMod {
       __obj.asInstanceOf[OwningModule]
     }
     
-    extension [Self <: OwningModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OwningModule] (val x: Self) extends AnyVal {
       
       inline def setResolutionContext(value: String): Self = StObject.set(x, "resolutionContext", value.asInstanceOf[js.Any])
       

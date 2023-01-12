@@ -43,7 +43,8 @@ object TestSuiteOverview {
     __obj.asInstanceOf[TestSuiteOverview]
   }
   
-  extension [Self <: TestSuiteOverview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSuiteOverview] (val x: Self) extends AnyVal {
     
     inline def setElapsedTime(value: Duration): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     

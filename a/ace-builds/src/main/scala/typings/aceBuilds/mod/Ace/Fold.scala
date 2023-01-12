@@ -40,7 +40,8 @@ object Fold {
     __obj.asInstanceOf[Fold]
   }
   
-  extension [Self <: Fold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fold] (val x: Self) extends AnyVal {
     
     inline def setAddSubFold(value: Fold => Fold): Self = StObject.set(x, "addSubFold", js.Any.fromFunction1(value))
     

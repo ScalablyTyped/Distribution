@@ -15,7 +15,8 @@ object TargetIdPayload {
     __obj.asInstanceOf[TargetIdPayload]
   }
   
-  extension [Self <: TargetIdPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetIdPayload] (val x: Self) extends AnyVal {
     
     inline def setTargetId(value: Identifier): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }

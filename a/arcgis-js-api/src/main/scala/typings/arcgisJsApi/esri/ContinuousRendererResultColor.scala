@@ -27,7 +27,8 @@ object ContinuousRendererResultColor {
     __obj.asInstanceOf[ContinuousRendererResultColor]
   }
   
-  extension [Self <: ContinuousRendererResultColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousRendererResultColor] (val x: Self) extends AnyVal {
     
     inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     

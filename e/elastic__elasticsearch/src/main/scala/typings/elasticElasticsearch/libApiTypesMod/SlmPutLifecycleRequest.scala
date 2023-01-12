@@ -31,7 +31,8 @@ object SlmPutLifecycleRequest {
     __obj.asInstanceOf[SlmPutLifecycleRequest]
   }
   
-  extension [Self <: SlmPutLifecycleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlmPutLifecycleRequest] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: SlmConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

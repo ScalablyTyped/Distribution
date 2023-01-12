@@ -25,7 +25,8 @@ object ContentCreationException {
     __obj.asInstanceOf[ContentCreationException]
   }
   
-  extension [Self <: ContentCreationException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentCreationException] (val x: Self) extends AnyVal {
     
     inline def setEError(value: ContentCreationError): Self = StObject.set(x, "eError", value.asInstanceOf[js.Any])
   }

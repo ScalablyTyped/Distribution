@@ -241,7 +241,8 @@ object mod {
       __obj.asInstanceOf[CursorOptions]
     }
     
-    extension [Self <: CursorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
       

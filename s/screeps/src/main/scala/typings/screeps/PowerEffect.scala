@@ -38,7 +38,8 @@ object PowerEffect {
     __obj.asInstanceOf[PowerEffect]
   }
   
-  extension [Self <: PowerEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowerEffect] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: PowerConstant): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

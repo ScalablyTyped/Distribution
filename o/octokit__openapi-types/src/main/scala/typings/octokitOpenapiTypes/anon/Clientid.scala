@@ -18,7 +18,8 @@ object Clientid {
     __obj.asInstanceOf[Clientid]
   }
   
-  extension [Self <: Clientid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clientid] (val x: Self) extends AnyVal {
     
     inline def setClient_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['client-id'] */ js.Any

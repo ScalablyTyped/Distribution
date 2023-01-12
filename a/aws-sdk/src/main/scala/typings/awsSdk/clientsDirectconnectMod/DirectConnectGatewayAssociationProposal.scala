@@ -48,7 +48,8 @@ object DirectConnectGatewayAssociationProposal {
     __obj.asInstanceOf[DirectConnectGatewayAssociationProposal]
   }
   
-  extension [Self <: DirectConnectGatewayAssociationProposal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectConnectGatewayAssociationProposal] (val x: Self) extends AnyVal {
     
     inline def setAssociatedGateway(value: AssociatedGateway): Self = StObject.set(x, "associatedGateway", value.asInstanceOf[js.Any])
     

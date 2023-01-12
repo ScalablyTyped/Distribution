@@ -19,7 +19,8 @@ object RtcError {
     __obj.asInstanceOf[RtcError]
   }
   
-  extension [Self <: RtcError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RtcError] (val x: Self) extends AnyVal {
     
     inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
   }

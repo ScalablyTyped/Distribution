@@ -169,7 +169,8 @@ object sapUiWebcMainCalendarDateMod {
       __obj.asInstanceOf[CalendarDateSettings]
     }
     
-    extension [Self <: CalendarDateSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDateSettings] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String | PropertyBindingInfo): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

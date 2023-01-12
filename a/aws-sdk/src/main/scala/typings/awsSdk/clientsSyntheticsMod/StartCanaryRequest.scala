@@ -18,7 +18,8 @@ object StartCanaryRequest {
     __obj.asInstanceOf[StartCanaryRequest]
   }
   
-  extension [Self <: StartCanaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartCanaryRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: CanaryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

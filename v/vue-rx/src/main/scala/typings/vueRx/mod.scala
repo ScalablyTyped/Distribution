@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[WatchObservable[T]]
     }
     
-    extension [Self <: WatchObservable[?], T](x: Self & WatchObservable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchObservable[?], T] (val x: Self & WatchObservable[T]) extends AnyVal {
       
       inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object mod {
         __obj.asInstanceOf[ComponentOptions[V]]
       }
       
-      extension [Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](x: Self & ComponentOptions[V]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ComponentOptions[?], V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */] (val x: Self & ComponentOptions[V]) extends AnyVal {
         
         inline def setDomStreams(value: js.Array[String]): Self = StObject.set(x, "domStreams", value.asInstanceOf[js.Any])
         

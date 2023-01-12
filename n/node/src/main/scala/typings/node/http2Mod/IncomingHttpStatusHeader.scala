@@ -16,7 +16,8 @@ object IncomingHttpStatusHeader {
     __obj.asInstanceOf[IncomingHttpStatusHeader]
   }
   
-  extension [Self <: IncomingHttpStatusHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingHttpStatusHeader] (val x: Self) extends AnyVal {
     
     inline def setColonstatus(value: Double): Self = StObject.set(x, ":status", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object IInfoboxEventArgs {
     __obj.asInstanceOf[IInfoboxEventArgs]
   }
   
-  extension [Self <: IInfoboxEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInfoboxEventArgs] (val x: Self) extends AnyVal {
     
     inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     

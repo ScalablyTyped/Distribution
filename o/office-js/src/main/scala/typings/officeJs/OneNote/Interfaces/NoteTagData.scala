@@ -62,7 +62,8 @@ object NoteTagData {
     __obj.asInstanceOf[NoteTagData]
   }
   
-  extension [Self <: NoteTagData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteTagData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

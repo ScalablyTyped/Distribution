@@ -24,7 +24,8 @@ object ResourceUtilizationReport {
     __obj.asInstanceOf[ResourceUtilizationReport]
   }
   
-  extension [Self <: ResourceUtilizationReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUtilizationReport] (val x: Self) extends AnyVal {
     
     inline def setContainers(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.dataflow.gapi.client.dataflow.ResourceUtilizationReport} */ js.Any

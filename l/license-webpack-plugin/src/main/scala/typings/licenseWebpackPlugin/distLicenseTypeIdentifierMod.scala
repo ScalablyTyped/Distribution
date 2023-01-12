@@ -19,7 +19,8 @@ object distLicenseTypeIdentifierMod {
       __obj.asInstanceOf[LicenseTypeIdentifier]
     }
     
-    extension [Self <: LicenseTypeIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseTypeIdentifier] (val x: Self) extends AnyVal {
       
       inline def setFindLicenseIdentifier(value: (WebpackCompilation, String, PackageJson) => String | Null): Self = StObject.set(x, "findLicenseIdentifier", js.Any.fromFunction3(value))
     }

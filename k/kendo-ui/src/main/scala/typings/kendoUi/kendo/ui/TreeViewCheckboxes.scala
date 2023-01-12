@@ -19,7 +19,8 @@ object TreeViewCheckboxes {
     __obj.asInstanceOf[TreeViewCheckboxes]
   }
   
-  extension [Self <: TreeViewCheckboxes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewCheckboxes] (val x: Self) extends AnyVal {
     
     inline def setCheckChildren(value: Boolean): Self = StObject.set(x, "checkChildren", value.asInstanceOf[js.Any])
     

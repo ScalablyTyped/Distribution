@@ -106,7 +106,8 @@ object XScrollBar {
     __obj.asInstanceOf[XScrollBar]
   }
   
-  extension [Self <: XScrollBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScrollBar] (val x: Self) extends AnyVal {
     
     inline def setAddAdjustmentListener(value: XAdjustmentListener => Unit): Self = StObject.set(x, "addAdjustmentListener", js.Any.fromFunction1(value))
     

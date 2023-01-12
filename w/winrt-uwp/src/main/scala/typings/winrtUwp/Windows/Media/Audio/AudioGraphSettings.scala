@@ -43,7 +43,8 @@ object AudioGraphSettings {
     __obj.asInstanceOf[AudioGraphSettings]
   }
   
-  extension [Self <: AudioGraphSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioGraphSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioRenderCategory(value: AudioRenderCategory): Self = StObject.set(x, "audioRenderCategory", value.asInstanceOf[js.Any])
     

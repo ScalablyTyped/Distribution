@@ -37,7 +37,8 @@ object PrintRanges {
     __obj.asInstanceOf[PrintRanges]
   }
   
-  extension [Self <: PrintRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintRanges] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, Double) => PrintRange): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

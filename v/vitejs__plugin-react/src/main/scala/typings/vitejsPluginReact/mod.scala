@@ -145,7 +145,8 @@ object mod {
       __obj.asInstanceOf[BabelOptions]
     }
     
-    extension [Self <: BabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BabelOptions] (val x: Self) extends AnyVal {
       
       inline def setAssumptions(value: StringDictionary[Boolean]): Self = StObject.set(x, "assumptions", value.asInstanceOf[js.Any])
       
@@ -453,7 +454,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBabel(value: BabelOptions | (js.Function2[/* id */ String, /* options */ Ssr, BabelOptions])): Self = StObject.set(x, "babel", value.asInstanceOf[js.Any])
       
@@ -515,7 +517,8 @@ object mod {
       __obj.asInstanceOf[ReactBabelHookContext]
     }
     
-    extension [Self <: ReactBabelHookContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactBabelHookContext] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -550,7 +553,8 @@ object mod {
       __obj.asInstanceOf[ReactBabelOptions]
     }
     
-    extension [Self <: ReactBabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactBabelOptions] (val x: Self) extends AnyVal {
       
       inline def setOverrides(value: Extract[js.UndefOr[js.Array[TransformOptions]], js.Array[Any]]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
@@ -592,7 +596,8 @@ object mod {
         __obj.asInstanceOf[Plugin]
       }
       
-      extension [Self <: Plugin](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
         
         inline def setApi(value: ReactBabel): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
         

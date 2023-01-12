@@ -58,7 +58,8 @@ object WindowRectChangedEventUIParam {
     __obj.asInstanceOf[WindowRectChangedEventUIParam]
   }
   
-  extension [Self <: WindowRectChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowRectChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

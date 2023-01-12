@@ -16,7 +16,8 @@ object Genericsearchterm {
     __obj.asInstanceOf[Genericsearchterm]
   }
   
-  extension [Self <: Genericsearchterm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Genericsearchterm] (val x: Self) extends AnyVal {
     
     inline def setGeneric_search_term(value: String): Self = StObject.set(x, "generic_search_term", value.asInstanceOf[js.Any])
   }

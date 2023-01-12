@@ -33,7 +33,8 @@ object SmartMappingPrimaryHandleSliderViewModelProperties {
     __obj.asInstanceOf[SmartMappingPrimaryHandleSliderViewModelProperties]
   }
   
-  extension [Self <: SmartMappingPrimaryHandleSliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingPrimaryHandleSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setHandlesSyncedToPrimary(value: Boolean): Self = StObject.set(x, "handlesSyncedToPrimary", value.asInstanceOf[js.Any])
     

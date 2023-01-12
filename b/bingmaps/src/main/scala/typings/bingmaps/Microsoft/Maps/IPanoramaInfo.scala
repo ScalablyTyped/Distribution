@@ -16,7 +16,8 @@ object IPanoramaInfo {
     __obj.asInstanceOf[IPanoramaInfo]
   }
   
-  extension [Self <: IPanoramaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaInfo] (val x: Self) extends AnyVal {
     
     inline def setCd(value: String): Self = StObject.set(x, "cd", value.asInstanceOf[js.Any])
     

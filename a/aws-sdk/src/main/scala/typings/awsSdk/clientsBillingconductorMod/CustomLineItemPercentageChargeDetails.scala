@@ -23,7 +23,8 @@ object CustomLineItemPercentageChargeDetails {
     __obj.asInstanceOf[CustomLineItemPercentageChargeDetails]
   }
   
-  extension [Self <: CustomLineItemPercentageChargeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLineItemPercentageChargeDetails] (val x: Self) extends AnyVal {
     
     inline def setAssociatedValues(value: CustomLineItemAssociationsList): Self = StObject.set(x, "AssociatedValues", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object EnergyServicePointListResponse {
     __obj.asInstanceOf[EnergyServicePointListResponse]
   }
   
-  extension [Self <: EnergyServicePointListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyServicePointListResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: DictkServicePoints): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

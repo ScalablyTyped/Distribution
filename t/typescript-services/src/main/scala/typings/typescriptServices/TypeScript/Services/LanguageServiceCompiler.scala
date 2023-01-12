@@ -108,7 +108,8 @@ object LanguageServiceCompiler {
     __obj.asInstanceOf[LanguageServiceCompiler]
   }
   
-  extension [Self <: LanguageServiceCompiler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageServiceCompiler] (val x: Self) extends AnyVal {
     
     inline def setCanEmitDeclarations(value: String => Boolean): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
     

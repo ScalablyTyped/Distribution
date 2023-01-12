@@ -51,7 +51,8 @@ object libAppCoreMod {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object libAppCoreMod {
       __obj.asInstanceOf[AppOptions]
     }
     
-    extension [Self <: AppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
       
       inline def setCredential(value: Credential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libAppCoreMod {
       __obj.asInstanceOf[FirebaseArrayIndexError]
     }
     
-    extension [Self <: FirebaseArrayIndexError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseArrayIndexError] (val x: Self) extends AnyVal {
       
       inline def setError(value: FirebaseError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object libAppCoreMod {
       __obj.asInstanceOf[FirebaseError]
     }
     
-    extension [Self <: FirebaseError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

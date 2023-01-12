@@ -18,7 +18,8 @@ object CaptchaAction {
     __obj.asInstanceOf[CaptchaAction]
   }
   
-  extension [Self <: CaptchaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaAction] (val x: Self) extends AnyVal {
     
     inline def setCustomRequestHandling(value: CustomRequestHandling): Self = StObject.set(x, "CustomRequestHandling", value.asInstanceOf[js.Any])
     

@@ -221,7 +221,8 @@ object IComboBox {
     __obj.asInstanceOf[IComboBox]
   }
   
-  extension [Self <: IComboBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IComboBox] (val x: Self) extends AnyVal {
     
     inline def setAfterQuery(value: /* queryPlan */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterQuery", js.Any.fromFunction1(value))
     

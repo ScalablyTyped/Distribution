@@ -47,7 +47,8 @@ object ItemListEvent {
     __obj.asInstanceOf[ItemListEvent]
   }
   
-  extension [Self <: ItemListEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemListEvent] (val x: Self) extends AnyVal {
     
     inline def setItemImageURL(value: Optional[String]): Self = StObject.set(x, "ItemImageURL", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object StopActionObject {
     __obj.asInstanceOf[StopActionObject]
   }
   
-  extension [Self <: StopActionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopActionObject] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: Id): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

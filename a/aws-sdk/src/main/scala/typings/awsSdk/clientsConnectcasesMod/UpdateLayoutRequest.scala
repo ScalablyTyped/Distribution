@@ -33,7 +33,8 @@ object UpdateLayoutRequest {
     __obj.asInstanceOf[UpdateLayoutRequest]
   }
   
-  extension [Self <: UpdateLayoutRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLayoutRequest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: LayoutContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

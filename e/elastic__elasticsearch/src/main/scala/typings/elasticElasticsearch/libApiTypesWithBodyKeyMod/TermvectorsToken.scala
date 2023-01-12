@@ -21,7 +21,8 @@ object TermvectorsToken {
     __obj.asInstanceOf[TermvectorsToken]
   }
   
-  extension [Self <: TermvectorsToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsToken] (val x: Self) extends AnyVal {
     
     inline def setEnd_offset(value: integer): Self = StObject.set(x, "end_offset", value.asInstanceOf[js.Any])
     

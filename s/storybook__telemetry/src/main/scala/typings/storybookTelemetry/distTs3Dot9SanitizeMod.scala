@@ -33,7 +33,8 @@ object distTs3Dot9SanitizeMod {
       __obj.asInstanceOf[IErrorWithStdErrAndStdOut]
     }
     
-    extension [Self <: IErrorWithStdErrAndStdOut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IErrorWithStdErrAndStdOut] (val x: Self) extends AnyVal {
       
       inline def setStderr(value: Buffer | String): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object HostInfo {
     __obj.asInstanceOf[HostInfo]
   }
   
-  extension [Self <: HostInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostInfo] (val x: Self) extends AnyVal {
     
     inline def setConnectionBandwidthReceivedLastMinuteTotal(value: Double): Self = StObject.set(x, "connectionBandwidthReceivedLastMinuteTotal", value.asInstanceOf[js.Any])
     

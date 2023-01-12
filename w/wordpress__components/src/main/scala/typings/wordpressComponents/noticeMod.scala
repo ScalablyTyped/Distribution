@@ -65,7 +65,8 @@ object noticeMod {
         __obj.asInstanceOf[BaseAction]
       }
       
-      extension [Self <: BaseAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseAction] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -93,7 +94,8 @@ object noticeMod {
         __obj.asInstanceOf[ButtonAction]
       }
       
-      extension [Self <: ButtonAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ButtonAction] (val x: Self) extends AnyVal {
         
         inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       }
@@ -133,7 +135,8 @@ object noticeMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
         
@@ -177,7 +180,8 @@ object noticeMod {
         __obj.asInstanceOf[URLAction]
       }
       
-      extension [Self <: URLAction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: URLAction] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }

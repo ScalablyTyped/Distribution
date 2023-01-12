@@ -24,7 +24,8 @@ object RuntimeConfig {
     __obj.asInstanceOf[RuntimeConfig]
   }
   
-  extension [Self <: RuntimeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeConfig] (val x: Self) extends AnyVal {
     
     inline def setContainerImage(value: String): Self = StObject.set(x, "containerImage", value.asInstanceOf[js.Any])
     

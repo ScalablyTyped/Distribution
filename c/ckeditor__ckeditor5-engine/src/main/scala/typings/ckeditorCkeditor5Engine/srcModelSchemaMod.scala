@@ -57,7 +57,8 @@ object srcModelSchemaMod {
       __obj.asInstanceOf[AttributeProperties]
     }
     
-    extension [Self <: AttributeProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeProperties] (val x: Self) extends AnyVal {
       
       inline def setCopyOnEnter(value: Boolean): Self = StObject.set(x, "copyOnEnter", value.asInstanceOf[js.Any])
       
@@ -202,7 +203,8 @@ object srcModelSchemaMod {
       __obj.asInstanceOf[SchemaCompiledItemDefinition]
     }
     
-    extension [Self <: SchemaCompiledItemDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaCompiledItemDefinition] (val x: Self) extends AnyVal {
       
       inline def setAllowAttributes(value: js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object srcModelSchemaMod {
       __obj.asInstanceOf[SchemaContextItem]
     }
     
-    extension [Self <: SchemaContextItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaContextItem] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: String => Boolean | String | Double): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
@@ -303,7 +306,8 @@ object srcModelSchemaMod {
       __obj.asInstanceOf[SchemaItemDefinition]
     }
     
-    extension [Self <: SchemaItemDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaItemDefinition] (val x: Self) extends AnyVal {
       
       inline def setAllowAttributes(value: String | js.Array[String]): Self = StObject.set(x, "allowAttributes", value.asInstanceOf[js.Any])
       

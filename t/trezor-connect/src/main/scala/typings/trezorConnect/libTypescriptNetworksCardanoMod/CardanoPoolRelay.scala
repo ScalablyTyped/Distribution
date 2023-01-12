@@ -24,7 +24,8 @@ object CardanoPoolRelay {
     __obj.asInstanceOf[CardanoPoolRelay]
   }
   
-  extension [Self <: CardanoPoolRelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoPoolRelay] (val x: Self) extends AnyVal {
     
     inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     

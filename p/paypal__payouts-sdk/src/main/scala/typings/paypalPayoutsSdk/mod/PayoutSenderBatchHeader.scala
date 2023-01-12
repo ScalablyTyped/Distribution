@@ -21,7 +21,8 @@ object PayoutSenderBatchHeader {
     __obj.asInstanceOf[PayoutSenderBatchHeader]
   }
   
-  extension [Self <: PayoutSenderBatchHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayoutSenderBatchHeader] (val x: Self) extends AnyVal {
     
     inline def setEmail_message(value: String): Self = StObject.set(x, "email_message", value.asInstanceOf[js.Any])
     

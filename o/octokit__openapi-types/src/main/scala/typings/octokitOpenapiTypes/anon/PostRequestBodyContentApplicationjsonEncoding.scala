@@ -15,7 +15,8 @@ object PostRequestBodyContentApplicationjsonEncoding {
     __obj.asInstanceOf[PostRequestBodyContentApplicationjsonEncoding]
   }
   
-  extension [Self <: PostRequestBodyContentApplicationjsonEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostRequestBodyContentApplicationjsonEncoding] (val x: Self) extends AnyVal {
     
     inline def setPost(value: RequestBodyContentApplicationjsonEncoding): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }

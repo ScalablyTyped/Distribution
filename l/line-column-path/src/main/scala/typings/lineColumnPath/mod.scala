@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[PathDescriptor]
     }
     
-    extension [Self <: PathDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathDescriptor] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[StringifyOptions]
     }
     
-    extension [Self <: StringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

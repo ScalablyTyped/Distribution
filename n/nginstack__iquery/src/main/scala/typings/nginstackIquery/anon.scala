@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[CompleteColumnsNames]
     }
     
-    extension [Self <: CompleteColumnsNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteColumnsNames] (val x: Self) extends AnyVal {
       
       inline def setCompleteColumnsNames(value: js.Array[Any]): Self = StObject.set(x, "completeColumnsNames", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[DisableGetChildren]
     }
     
-    extension [Self <: DisableGetChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableGetChildren] (val x: Self) extends AnyVal {
       
       inline def setDisableGetChildren(value: Boolean): Self = StObject.set(x, "disableGetChildren", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Field]
     }
     
-    extension [Self <: Field](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
       
       inline def setDisableGetChildren(value: Boolean): Self = StObject.set(x, "disableGetChildren", value.asInstanceOf[js.Any])
       

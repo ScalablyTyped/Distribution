@@ -23,7 +23,8 @@ object UpdateJsonClassifierRequest {
     __obj.asInstanceOf[UpdateJsonClassifierRequest]
   }
   
-  extension [Self <: UpdateJsonClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJsonClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object InlineQueryResultCachedSticker {
     __obj.asInstanceOf[InlineQueryResultCachedSticker]
   }
   
-  extension [Self <: InlineQueryResultCachedSticker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultCachedSticker] (val x: Self) extends AnyVal {
     
     inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
     

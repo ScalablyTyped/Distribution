@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[FocusWithinOpts]
     }
     
-    extension [Self <: FocusWithinOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusWithinOpts] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: Boolean): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       

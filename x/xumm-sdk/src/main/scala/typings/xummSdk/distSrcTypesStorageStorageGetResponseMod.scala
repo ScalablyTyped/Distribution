@@ -22,7 +22,8 @@ object distSrcTypesStorageStorageGetResponseMod {
       __obj.asInstanceOf[StorageGetResponse]
     }
     
-    extension [Self <: StorageGetResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageGetResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: AnyJson): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

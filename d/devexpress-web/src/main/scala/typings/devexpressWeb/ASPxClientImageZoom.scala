@@ -51,7 +51,8 @@ object ASPxClientImageZoom {
     __obj.asInstanceOf[ASPxClientImageZoom]
   }
   
-  extension [Self <: ASPxClientImageZoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientImageZoom] (val x: Self) extends AnyVal {
     
     inline def setSetImageProperties(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "SetImageProperties", js.Any.fromFunction5(value))
   }

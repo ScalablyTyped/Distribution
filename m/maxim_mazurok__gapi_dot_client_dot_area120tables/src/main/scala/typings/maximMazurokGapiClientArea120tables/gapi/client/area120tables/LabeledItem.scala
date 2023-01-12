@@ -19,7 +19,8 @@ object LabeledItem {
     __obj.asInstanceOf[LabeledItem]
   }
   
-  extension [Self <: LabeledItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabeledItem] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ResourceUtilization {
     __obj.asInstanceOf[ResourceUtilization]
   }
   
-  extension [Self <: ResourceUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUtilization] (val x: Self) extends AnyVal {
     
     inline def setEC2ResourceUtilization(value: EC2ResourceUtilization): Self = StObject.set(x, "EC2ResourceUtilization", value.asInstanceOf[js.Any])
     

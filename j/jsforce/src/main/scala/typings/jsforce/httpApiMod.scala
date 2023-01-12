@@ -21,7 +21,8 @@ object httpApiMod {
       __obj.asInstanceOf[HttpApiOptions]
     }
     
-    extension [Self <: HttpApiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpApiOptions] (val x: Self) extends AnyVal {
       
       inline def setNoContentResponse(value: js.Object): Self = StObject.set(x, "noContentResponse", value.asInstanceOf[js.Any])
       

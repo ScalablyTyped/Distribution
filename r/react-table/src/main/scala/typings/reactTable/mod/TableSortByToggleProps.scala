@@ -23,7 +23,8 @@ object TableSortByToggleProps {
     __obj.asInstanceOf[TableSortByToggleProps]
   }
   
-  extension [Self <: TableSortByToggleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableSortByToggleProps] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

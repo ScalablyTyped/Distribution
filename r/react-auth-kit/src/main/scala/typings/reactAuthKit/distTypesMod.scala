@@ -29,7 +29,8 @@ object distTypesMod {
       __obj.asInstanceOf[AuthContextInterface]
     }
     
-    extension [Self <: AuthContextInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthContextInterface] (val x: Self) extends AnyVal {
       
       inline def setAuthState(value: AuthKitStateInterface): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distTypesMod {
       __obj.asInstanceOf[AuthKitStateInterface]
     }
     
-    extension [Self <: AuthKitStateInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthKitStateInterface] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: ExpiresAt): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distTypesMod {
       __obj.asInstanceOf[AuthProviderProps]
     }
     
-    extension [Self <: AuthProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthProviderProps] (val x: Self) extends AnyVal {
       
       inline def setAuthName(value: String): Self = StObject.set(x, "authName", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object distTypesMod {
       __obj.asInstanceOf[RefreshTokenCallbackResponse]
     }
     
-    extension [Self <: RefreshTokenCallbackResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshTokenCallbackResponse] (val x: Self) extends AnyVal {
       
       inline def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object distTypesMod {
       __obj.asInstanceOf[createRefreshParamInterface]
     }
     
-    extension [Self <: createRefreshParamInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: createRefreshParamInterface] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object distTypesMod {
       __obj.asInstanceOf[signInFunctionParams]
     }
     
-    extension [Self <: signInFunctionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: signInFunctionParams] (val x: Self) extends AnyVal {
       
       inline def setAuthState(value: AuthStateUserObject): Self = StObject.set(x, "authState", value.asInstanceOf[js.Any])
       

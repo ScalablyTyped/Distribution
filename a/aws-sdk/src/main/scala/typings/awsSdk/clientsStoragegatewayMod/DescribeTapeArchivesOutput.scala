@@ -23,7 +23,8 @@ object DescribeTapeArchivesOutput {
     __obj.asInstanceOf[DescribeTapeArchivesOutput]
   }
   
-  extension [Self <: DescribeTapeArchivesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTapeArchivesOutput] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

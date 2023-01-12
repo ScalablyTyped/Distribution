@@ -238,7 +238,8 @@ object leafletMod {
       __obj.asInstanceOf[LeafletEventHandlerFnMap]
     }
     
-    extension [Self <: LeafletEventHandlerFnMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeafletEventHandlerFnMap] (val x: Self) extends AnyVal {
       
       inline def setAnimationend(value: /* event */ LeafletEvent => Unit): Self = StObject.set(x, "animationend", js.Any.fromFunction1(value))
       
@@ -387,7 +388,8 @@ object leafletMod {
       __obj.asInstanceOf[MarkerClusterGroupOptions]
     }
     
-    extension [Self <: MarkerClusterGroupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClusterGroupOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -509,7 +511,8 @@ object leafletMod {
       __obj.asInstanceOf[MarkerClusterSpiderfyEvent]
     }
     
-    extension [Self <: MarkerClusterSpiderfyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerClusterSpiderfyEvent] (val x: Self) extends AnyVal {
       
       inline def setCluster(value: MarkerCluster): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       

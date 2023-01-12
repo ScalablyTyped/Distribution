@@ -16,7 +16,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setFileMaker(value: PerformScript): Self = StObject.set(x, "FileMaker", value.asInstanceOf[js.Any])
     

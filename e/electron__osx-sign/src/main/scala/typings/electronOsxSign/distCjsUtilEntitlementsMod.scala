@@ -29,7 +29,8 @@ object distCjsUtilEntitlementsMod {
       __obj.asInstanceOf[ComputedOptions]
     }
     
-    extension [Self <: ComputedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Identity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       

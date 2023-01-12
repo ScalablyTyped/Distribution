@@ -58,7 +58,8 @@ object libPickerAbstractPickerMod {
       __obj.asInstanceOf[AbstractPickerProps]
     }
     
-    extension [Self <: AbstractPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractPickerProps] (val x: Self) extends AnyVal {
       
       inline def setPickerPrefixCls(value: String): Self = StObject.set(x, "pickerPrefixCls", value.asInstanceOf[js.Any])
       

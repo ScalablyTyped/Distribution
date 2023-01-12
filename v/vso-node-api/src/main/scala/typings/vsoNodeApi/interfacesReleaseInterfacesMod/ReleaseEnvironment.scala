@@ -215,7 +215,8 @@ object ReleaseEnvironment {
     __obj.asInstanceOf[ReleaseEnvironment]
   }
   
-  extension [Self <: ReleaseEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseEnvironment] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[ReleaseCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

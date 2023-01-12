@@ -338,7 +338,8 @@ object momentTimezoneUtilsMod {
         __obj.asInstanceOf[PackedZoneBundle]
       }
       
-      extension [Self <: PackedZoneBundle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PackedZoneBundle] (val x: Self) extends AnyVal {
         
         inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         
@@ -374,7 +375,8 @@ object momentTimezoneUtilsMod {
         __obj.asInstanceOf[UnpackedZone]
       }
       
-      extension [Self <: UnpackedZone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnpackedZone] (val x: Self) extends AnyVal {
         
         inline def setAbbrs(value: js.Array[String]): Self = StObject.set(x, "abbrs", value.asInstanceOf[js.Any])
         
@@ -408,7 +410,8 @@ object momentTimezoneUtilsMod {
         __obj.asInstanceOf[UnpackedZoneBundle]
       }
       
-      extension [Self <: UnpackedZoneBundle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UnpackedZoneBundle] (val x: Self) extends AnyVal {
         
         inline def setLinks(value: js.Array[String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
         

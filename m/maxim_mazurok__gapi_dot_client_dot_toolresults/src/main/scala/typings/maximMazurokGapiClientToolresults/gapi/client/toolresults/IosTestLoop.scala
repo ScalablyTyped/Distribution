@@ -16,7 +16,8 @@ object IosTestLoop {
     __obj.asInstanceOf[IosTestLoop]
   }
   
-  extension [Self <: IosTestLoop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosTestLoop] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: String): Self = StObject.set(x, "bundleId", value.asInstanceOf[js.Any])
     

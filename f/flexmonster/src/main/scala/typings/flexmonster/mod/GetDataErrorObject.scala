@@ -19,7 +19,8 @@ object GetDataErrorObject {
     __obj.asInstanceOf[GetDataErrorObject]
   }
   
-  extension [Self <: GetDataErrorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataErrorObject] (val x: Self) extends AnyVal {
     
     inline def setDataHeight(value: Double): Self = StObject.set(x, "dataHeight", value.asInstanceOf[js.Any])
     

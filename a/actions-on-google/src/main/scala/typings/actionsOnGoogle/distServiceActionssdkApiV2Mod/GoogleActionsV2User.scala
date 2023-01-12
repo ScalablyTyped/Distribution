@@ -75,7 +75,8 @@ object GoogleActionsV2User {
     __obj.asInstanceOf[GoogleActionsV2User]
   }
   
-  extension [Self <: GoogleActionsV2User](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2User] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

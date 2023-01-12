@@ -18,7 +18,8 @@ object DeleteSuggesterResponse {
     __obj.asInstanceOf[DeleteSuggesterResponse]
   }
   
-  extension [Self <: DeleteSuggesterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSuggesterResponse] (val x: Self) extends AnyVal {
     
     inline def setSuggester(value: SuggesterStatus): Self = StObject.set(x, "Suggester", value.asInstanceOf[js.Any])
   }

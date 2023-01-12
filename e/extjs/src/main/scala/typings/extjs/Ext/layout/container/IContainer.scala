@@ -97,7 +97,8 @@ object IContainer {
     __obj.asInstanceOf[IContainer]
   }
   
-  extension [Self <: IContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
     
     inline def setAddChildEls(value: () => Unit): Self = StObject.set(x, "addChildEls", js.Any.fromFunction0(value))
     

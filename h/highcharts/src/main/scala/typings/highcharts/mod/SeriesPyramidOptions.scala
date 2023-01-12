@@ -98,7 +98,8 @@ object SeriesPyramidOptions {
     __obj.asInstanceOf[SeriesPyramidOptions]
   }
   
-  extension [Self <: SeriesPyramidOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPyramidOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

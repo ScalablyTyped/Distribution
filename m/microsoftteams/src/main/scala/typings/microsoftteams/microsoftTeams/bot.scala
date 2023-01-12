@@ -44,7 +44,8 @@ object bot {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setCard(value: Any): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object bot {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object bot {
       __obj.asInstanceOf[AuthQueryRequest]
     }
     
-    extension [Self <: AuthQueryRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthQueryRequest] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -111,7 +114,8 @@ object bot {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object bot {
       __obj.asInstanceOf[QueryRequest]
     }
     
-    extension [Self <: QueryRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
       
       inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
       
@@ -167,7 +172,8 @@ object bot {
       __obj.asInstanceOf[QueryResponse]
     }
     
-    extension [Self <: QueryResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Results | Auth): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -190,7 +196,8 @@ object bot {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

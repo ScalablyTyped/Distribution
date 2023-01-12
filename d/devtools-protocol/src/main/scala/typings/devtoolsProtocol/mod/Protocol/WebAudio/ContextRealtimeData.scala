@@ -40,7 +40,8 @@ object ContextRealtimeData {
     __obj.asInstanceOf[ContextRealtimeData]
   }
   
-  extension [Self <: ContextRealtimeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextRealtimeData] (val x: Self) extends AnyVal {
     
     inline def setCallbackIntervalMean(value: Double): Self = StObject.set(x, "callbackIntervalMean", value.asInstanceOf[js.Any])
     

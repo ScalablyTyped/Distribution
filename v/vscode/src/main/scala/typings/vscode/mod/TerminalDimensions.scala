@@ -23,7 +23,8 @@ object TerminalDimensions {
     __obj.asInstanceOf[TerminalDimensions]
   }
   
-  extension [Self <: TerminalDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalDimensions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

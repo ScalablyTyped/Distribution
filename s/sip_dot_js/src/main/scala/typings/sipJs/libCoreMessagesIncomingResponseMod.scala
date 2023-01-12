@@ -19,7 +19,8 @@ object libCoreMessagesIncomingResponseMod {
       __obj.asInstanceOf[IncomingResponse]
     }
     
-    extension [Self <: IncomingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: IncomingResponseMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3FulfillIntentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3FulfillIntentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3FulfillIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3FulfillIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setMatch(value: GoogleCloudDialogflowCxV3Match): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
     

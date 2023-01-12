@@ -21,7 +21,8 @@ object ClientInfo {
     __obj.asInstanceOf[ClientInfo]
   }
   
-  extension [Self <: ClientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientInfo] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: js.Array[Any]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[Match[P]]
     }
     
-    extension [Self <: Match[?], P](x: Self & Match[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match[?], P] (val x: Self & Match[P]) extends AnyVal {
       
       inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object mod {
       __obj.asInstanceOf[NavLinkProps]
     }
     
-    extension [Self <: NavLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavLinkProps] (val x: Self) extends AnyVal {
       
       inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       

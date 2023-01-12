@@ -43,7 +43,8 @@ object LoRaWANDeviceMetadata {
     __obj.asInstanceOf[LoRaWANDeviceMetadata]
   }
   
-  extension [Self <: LoRaWANDeviceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANDeviceMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataRate(value: Integer): Self = StObject.set(x, "DataRate", value.asInstanceOf[js.Any])
     

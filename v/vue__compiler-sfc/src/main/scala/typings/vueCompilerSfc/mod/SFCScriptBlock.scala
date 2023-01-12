@@ -35,7 +35,8 @@ object SFCScriptBlock {
     __obj.asInstanceOf[SFCScriptBlock]
   }
   
-  extension [Self <: SFCScriptBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCScriptBlock] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: BindingMetadata): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

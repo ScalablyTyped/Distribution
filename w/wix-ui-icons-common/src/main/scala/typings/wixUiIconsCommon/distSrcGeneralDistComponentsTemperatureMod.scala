@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsTemperatureMod extends Shortcut {
       __obj.asInstanceOf[TemperatureProps]
     }
     
-    extension [Self <: TemperatureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemperatureProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

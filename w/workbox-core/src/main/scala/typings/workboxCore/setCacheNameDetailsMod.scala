@@ -32,7 +32,8 @@ object setCacheNameDetailsMod {
       __obj.asInstanceOf[CacheNameDetails]
     }
     
-    extension [Self <: CacheNameDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheNameDetails] (val x: Self) extends AnyVal {
       
       inline def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
       

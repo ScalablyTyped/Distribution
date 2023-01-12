@@ -30,7 +30,8 @@ object ModelViewEditorOptions {
     __obj.asInstanceOf[ModelViewEditorOptions]
   }
   
-  extension [Self <: ModelViewEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelViewEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

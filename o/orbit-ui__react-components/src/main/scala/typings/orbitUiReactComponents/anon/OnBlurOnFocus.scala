@@ -17,7 +17,8 @@ object OnBlurOnFocus {
     __obj.asInstanceOf[OnBlurOnFocus]
   }
   
-  extension [Self <: OnBlurOnFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBlurOnFocus] (val x: Self) extends AnyVal {
     
     inline def setOnBlur(value: Unit): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
     

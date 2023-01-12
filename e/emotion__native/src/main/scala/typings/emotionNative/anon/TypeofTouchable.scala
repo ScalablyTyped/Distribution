@@ -19,7 +19,8 @@ object TypeofTouchable {
     __obj.asInstanceOf[TypeofTouchable]
   }
   
-  extension [Self <: TypeofTouchable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTouchable] (val x: Self) extends AnyVal {
     
     inline def setRenderDebugView(value: Color => ReactElement | Null): Self = StObject.set(x, "renderDebugView", js.Any.fromFunction1(value))
     

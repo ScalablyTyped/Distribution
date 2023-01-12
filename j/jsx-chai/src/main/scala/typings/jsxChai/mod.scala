@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsxChaiStatic]
     }
     
-    extension [Self <: JsxChaiStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsxChaiStatic] (val x: Self) extends AnyVal {
       
       inline def setJsxChai(value: (/* chai */ ChaiStatic, /* utils */ ChaiUtils) => Unit): Self = StObject.set(x, "jsxChai", js.Any.fromFunction2(value))
     }

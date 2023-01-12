@@ -43,7 +43,8 @@ object OpsAggregator {
     __obj.asInstanceOf[OpsAggregator]
   }
   
-  extension [Self <: OpsAggregator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsAggregator] (val x: Self) extends AnyVal {
     
     inline def setAggregatorType(value: OpsAggregatorType): Self = StObject.set(x, "AggregatorType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdatePipelineResponse {
     __obj.asInstanceOf[UpdatePipelineResponse]
   }
   
-  extension [Self <: UpdatePipelineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePipelineResponse] (val x: Self) extends AnyVal {
     
     inline def setPipeline(value: Pipeline): Self = StObject.set(x, "Pipeline", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StopDeploymentOutput {
     __obj.asInstanceOf[StopDeploymentOutput]
   }
   
-  extension [Self <: StopDeploymentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDeploymentOutput] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: StopStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

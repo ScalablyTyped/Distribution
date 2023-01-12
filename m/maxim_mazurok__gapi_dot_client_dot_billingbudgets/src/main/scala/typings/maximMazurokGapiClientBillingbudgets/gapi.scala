@@ -28,7 +28,8 @@ object gapi {
           __obj.asInstanceOf[BillingAccountsResource]
         }
         
-        extension [Self <: BillingAccountsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: BillingAccountsResource] (val x: Self) extends AnyVal {
           
           inline def setBudgets(value: BudgetsResource): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
         }
@@ -103,7 +104,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1Budget]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1Budget](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1Budget] (val x: Self) extends AnyVal {
           
           inline def setAmount(value: GoogleCloudBillingBudgetsV1BudgetAmount): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
           
@@ -158,7 +160,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1BudgetAmount]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1BudgetAmount](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1BudgetAmount] (val x: Self) extends AnyVal {
           
           inline def setLastPeriodAmount(value: Any): Self = StObject.set(x, "lastPeriodAmount", value.asInstanceOf[js.Any])
           
@@ -185,7 +188,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1CustomPeriod]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1CustomPeriod](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1CustomPeriod] (val x: Self) extends AnyVal {
           
           inline def setEndDate(value: GoogleTypeDate): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
           
@@ -252,7 +256,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1Filter]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1Filter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1Filter] (val x: Self) extends AnyVal {
           
           inline def setCalendarPeriod(value: String): Self = StObject.set(x, "calendarPeriod", value.asInstanceOf[js.Any])
           
@@ -316,7 +321,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1ListBudgetsResponse]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1ListBudgetsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1ListBudgetsResponse] (val x: Self) extends AnyVal {
           
           inline def setBudgets(value: js.Array[GoogleCloudBillingBudgetsV1Budget]): Self = StObject.set(x, "budgets", value.asInstanceOf[js.Any])
           
@@ -375,7 +381,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1NotificationsRule]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1NotificationsRule](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1NotificationsRule] (val x: Self) extends AnyVal {
           
           inline def setDisableDefaultIamRecipients(value: Boolean): Self = StObject.set(x, "disableDefaultIamRecipients", value.asInstanceOf[js.Any])
           
@@ -412,7 +419,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudBillingBudgetsV1ThresholdRule]
         }
         
-        extension [Self <: GoogleCloudBillingBudgetsV1ThresholdRule](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudBillingBudgetsV1ThresholdRule] (val x: Self) extends AnyVal {
           
           inline def setSpendBasis(value: String): Self = StObject.set(x, "spendBasis", value.asInstanceOf[js.Any])
           
@@ -445,7 +453,8 @@ object gapi {
           __obj.asInstanceOf[GoogleTypeDate]
         }
         
-        extension [Self <: GoogleTypeDate](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleTypeDate] (val x: Self) extends AnyVal {
           
           inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
           
@@ -483,7 +492,8 @@ object gapi {
           __obj.asInstanceOf[GoogleTypeMoney]
         }
         
-        extension [Self <: GoogleTypeMoney](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleTypeMoney] (val x: Self) extends AnyVal {
           
           inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           

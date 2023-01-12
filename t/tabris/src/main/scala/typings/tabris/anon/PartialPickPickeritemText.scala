@@ -16,7 +16,8 @@ object PartialPickPickeritemText {
     __obj.asInstanceOf[PartialPickPickeritemText]
   }
   
-  extension [Self <: PartialPickPickeritemText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPickPickeritemText] (val x: Self) extends AnyVal {
     
     inline def setItemText(value: /* index */ Double => String): Self = StObject.set(x, "itemText", js.Any.fromFunction1(value))
     

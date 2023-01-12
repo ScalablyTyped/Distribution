@@ -25,7 +25,8 @@ object XRWebGLLayerInit {
     __obj.asInstanceOf[XRWebGLLayerInit]
   }
   
-  extension [Self <: XRWebGLLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRWebGLLayerInit] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

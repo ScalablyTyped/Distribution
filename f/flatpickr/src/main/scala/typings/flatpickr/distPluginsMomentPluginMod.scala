@@ -24,7 +24,8 @@ object distPluginsMomentPluginMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setMoment(value: js.Function): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
     }

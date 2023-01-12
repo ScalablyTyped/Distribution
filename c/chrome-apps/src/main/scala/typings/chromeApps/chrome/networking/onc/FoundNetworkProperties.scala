@@ -28,7 +28,8 @@ object FoundNetworkProperties {
     __obj.asInstanceOf[FoundNetworkProperties]
   }
   
-  extension [Self <: FoundNetworkProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoundNetworkProperties] (val x: Self) extends AnyVal {
     
     inline def setLongName(value: String): Self = StObject.set(x, "LongName", value.asInstanceOf[js.Any])
     

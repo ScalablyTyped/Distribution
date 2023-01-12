@@ -19,7 +19,8 @@ object IlmGetLifecycleLifecycle {
     __obj.asInstanceOf[IlmGetLifecycleLifecycle]
   }
   
-  extension [Self <: IlmGetLifecycleLifecycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmGetLifecycleLifecycle] (val x: Self) extends AnyVal {
     
     inline def setModified_date(value: DateTime): Self = StObject.set(x, "modified_date", value.asInstanceOf[js.Any])
     

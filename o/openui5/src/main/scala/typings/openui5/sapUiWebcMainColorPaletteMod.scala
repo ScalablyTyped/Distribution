@@ -325,7 +325,8 @@ object sapUiWebcMainColorPaletteMod {
       __obj.asInstanceOf[ColorPaletteSettings]
     }
     
-    extension [Self <: ColorPaletteSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPaletteSettings] (val x: Self) extends AnyVal {
       
       inline def setColors(
         value: js.Array[IColorPaletteItem] | IColorPaletteItem | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

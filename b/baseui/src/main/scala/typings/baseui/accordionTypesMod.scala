@@ -40,7 +40,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[AccordionOverrides]
     }
     
-    extension [Self <: AccordionOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[AccordionProps]
     }
     
-    extension [Self <: AccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
@@ -159,7 +161,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[AccordionState]
     }
     
-    extension [Self <: AccordionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionState] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: js.Array[Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[PanelOverrides]
     }
     
-    extension [Self <: PanelOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -232,7 +236,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[PanelProps]
     }
     
-    extension [Self <: PanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelProps] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
       
@@ -251,7 +256,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[PanelState]
     }
     
-    extension [Self <: PanelState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelState] (val x: Self) extends AnyVal {
       
       inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     }
@@ -314,7 +320,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[SharedPanelProps]
     }
     
-    extension [Self <: SharedPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedPanelProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
@@ -380,7 +387,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[SharedStatefulPanelContainerProps]
     }
     
-    extension [Self <: SharedStatefulPanelContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStatefulPanelContainerProps] (val x: Self) extends AnyVal {
       
       inline def setInitialState(value: PanelState): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       
@@ -422,7 +430,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    extension [Self <: SharedStylePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
       
       inline def set$color(value: String): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
       
@@ -470,7 +479,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[StatefulPanelContainerProps]
     }
     
-    extension [Self <: StatefulPanelContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPanelContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: OmitPanelPropschildren => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -526,7 +536,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[StatefulPanelProps]
     }
     
-    extension [Self <: StatefulPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulPanelProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
       
@@ -612,7 +623,8 @@ object accordionTypesMod {
       __obj.asInstanceOf[StatelessAccordionProps]
     }
     
-    extension [Self <: StatelessAccordionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatelessAccordionProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       

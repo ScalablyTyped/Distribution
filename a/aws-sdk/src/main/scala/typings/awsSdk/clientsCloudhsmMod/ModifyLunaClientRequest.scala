@@ -23,7 +23,8 @@ object ModifyLunaClientRequest {
     __obj.asInstanceOf[ModifyLunaClientRequest]
   }
   
-  extension [Self <: ModifyLunaClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyLunaClientRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: Certificate): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
     

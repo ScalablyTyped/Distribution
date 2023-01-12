@@ -33,7 +33,8 @@ object NormalizationOperation {
     __obj.asInstanceOf[NormalizationOperation]
   }
   
-  extension [Self <: NormalizationOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationOperation] (val x: Self) extends AnyVal {
     
     inline def setArgumentDefinitions(value: js.Array[NormalizationLocalArgumentDefinition]): Self = StObject.set(x, "argumentDefinitions", value.asInstanceOf[js.Any])
     

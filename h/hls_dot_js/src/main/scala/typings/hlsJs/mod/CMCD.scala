@@ -225,7 +225,8 @@ object CMCD {
     __obj.asInstanceOf[CMCD]
   }
   
-  extension [Self <: CMCD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CMCD] (val x: Self) extends AnyVal {
     
     inline def setBl(value: Double): Self = StObject.set(x, "bl", value.asInstanceOf[js.Any])
     

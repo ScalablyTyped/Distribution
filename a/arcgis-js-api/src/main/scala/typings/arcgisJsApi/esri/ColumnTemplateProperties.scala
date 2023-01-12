@@ -31,7 +31,8 @@ object ColumnTemplateProperties {
     __obj.asInstanceOf[ColumnTemplateProperties]
   }
   
-  extension [Self <: ColumnTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

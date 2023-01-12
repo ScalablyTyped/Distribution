@@ -78,7 +78,8 @@ object ColumnDefinitionProps {
     __obj.asInstanceOf[ColumnDefinitionProps]
   }
   
-  extension [Self <: ColumnDefinitionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDefinitionProps] (val x: Self) extends AnyVal {
     
     inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     

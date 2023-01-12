@@ -51,7 +51,8 @@ object UploadTaskSnapshot {
     __obj.asInstanceOf[UploadTaskSnapshot]
   }
   
-  extension [Self <: UploadTaskSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadTaskSnapshot] (val x: Self) extends AnyVal {
     
     inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
     

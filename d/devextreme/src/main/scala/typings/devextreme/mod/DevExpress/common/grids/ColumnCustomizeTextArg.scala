@@ -21,7 +21,8 @@ object ColumnCustomizeTextArg {
     __obj.asInstanceOf[ColumnCustomizeTextArg]
   }
   
-  extension [Self <: ColumnCustomizeTextArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnCustomizeTextArg] (val x: Self) extends AnyVal {
     
     inline def setGroupInterval(value: String | Double): Self = StObject.set(x, "groupInterval", value.asInstanceOf[js.Any])
     

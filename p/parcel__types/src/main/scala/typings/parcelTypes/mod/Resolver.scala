@@ -15,7 +15,8 @@ object Resolver {
     __obj.asInstanceOf[Resolver]
   }
   
-  extension [Self <: Resolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
     
     inline def setResolve(value: typings.parcelTypes.anon.Dependency => Async[js.UndefOr[ResolveResult | Null]]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
   }

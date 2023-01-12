@@ -43,7 +43,8 @@ object DescribeAccountCustomizationResponse {
     __obj.asInstanceOf[DescribeAccountCustomizationResponse]
   }
   
-  extension [Self <: DescribeAccountCustomizationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountCustomizationResponse] (val x: Self) extends AnyVal {
     
     inline def setAccountCustomization(value: AccountCustomization): Self = StObject.set(x, "AccountCustomization", value.asInstanceOf[js.Any])
     

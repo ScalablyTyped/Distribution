@@ -86,7 +86,8 @@ object HttpMultipartContent {
     __obj.asInstanceOf[HttpMultipartContent]
   }
   
-  extension [Self <: HttpMultipartContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpMultipartContent] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IHttpContent => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

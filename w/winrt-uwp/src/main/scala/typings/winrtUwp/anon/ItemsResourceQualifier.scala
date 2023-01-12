@@ -18,7 +18,8 @@ object ItemsResourceQualifier {
     __obj.asInstanceOf[ItemsResourceQualifier]
   }
   
-  extension [Self <: ItemsResourceQualifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsResourceQualifier] (val x: Self) extends AnyVal {
     
     inline def setItems(value: ResourceQualifier): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

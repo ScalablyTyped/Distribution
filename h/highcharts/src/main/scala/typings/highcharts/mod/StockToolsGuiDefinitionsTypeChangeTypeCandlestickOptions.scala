@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsTypeChangeTypeCandlestickOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

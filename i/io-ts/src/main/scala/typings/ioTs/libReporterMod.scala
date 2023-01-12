@@ -18,7 +18,8 @@ object libReporterMod {
       __obj.asInstanceOf[Reporter[A]]
     }
     
-    extension [Self <: Reporter[?], A](x: Self & Reporter[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter[?], A] (val x: Self & Reporter[A]) extends AnyVal {
       
       inline def setReport(value: Validation[Any] => A): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
     }

@@ -23,7 +23,8 @@ object ScalePromptOptions {
     __obj.asInstanceOf[ScalePromptOptions]
   }
   
-  extension [Self <: ScalePromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScalePromptOptions] (val x: Self) extends AnyVal {
     
     inline def setMargin(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     

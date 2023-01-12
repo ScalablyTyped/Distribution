@@ -37,7 +37,8 @@ object ClearColor {
     __obj.asInstanceOf[ClearColor]
   }
   
-  extension [Self <: ClearColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearColor] (val x: Self) extends AnyVal {
     
     inline def setClearColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "clearColor", value.asInstanceOf[js.Any])
     

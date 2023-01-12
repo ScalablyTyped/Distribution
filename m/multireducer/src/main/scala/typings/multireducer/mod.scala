@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ActionObject]
     }
     
-    extension [Self <: ActionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionObject] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: MetaObject): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }

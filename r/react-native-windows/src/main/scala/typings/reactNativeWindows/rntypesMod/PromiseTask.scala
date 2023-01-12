@@ -17,7 +17,8 @@ object PromiseTask {
     __obj.asInstanceOf[PromiseTask]
   }
   
-  extension [Self <: PromiseTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseTask] (val x: Self) extends AnyVal {
     
     inline def setGen(value: () => js.Promise[Any]): Self = StObject.set(x, "gen", js.Any.fromFunction0(value))
     

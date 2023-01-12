@@ -43,7 +43,8 @@ object IndexFacesRequest {
     __obj.asInstanceOf[IndexFacesRequest]
   }
   
-  extension [Self <: IndexFacesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexFacesRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: CollectionId): Self = StObject.set(x, "CollectionId", value.asInstanceOf[js.Any])
     

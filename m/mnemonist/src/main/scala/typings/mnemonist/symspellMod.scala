@@ -67,7 +67,8 @@ object symspellMod {
       __obj.asInstanceOf[SymSpell]
     }
     
-    extension [Self <: SymSpell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymSpell] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: String => SymSpell): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -94,7 +95,8 @@ object symspellMod {
       __obj.asInstanceOf[SymSpellMatch]
     }
     
-    extension [Self <: SymSpellMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymSpellMatch] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object symspellMod {
       __obj.asInstanceOf[SymSpellOptions]
     }
     
-    extension [Self <: SymSpellOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymSpellOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
       

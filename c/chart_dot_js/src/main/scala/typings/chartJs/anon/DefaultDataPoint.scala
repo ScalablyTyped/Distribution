@@ -37,7 +37,8 @@ object DefaultDataPoint {
     __obj.asInstanceOf[DefaultDataPoint]
   }
   
-  extension [Self <: DefaultDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDataPoint] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: ScatterControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

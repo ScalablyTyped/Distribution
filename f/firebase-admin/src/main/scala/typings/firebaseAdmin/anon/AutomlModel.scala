@@ -15,7 +15,8 @@ object AutomlModel {
     __obj.asInstanceOf[AutomlModel]
   }
   
-  extension [Self <: AutomlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomlModel] (val x: Self) extends AnyVal {
     
     inline def setAutomlModel(value: String): Self = StObject.set(x, "automlModel", value.asInstanceOf[js.Any])
   }

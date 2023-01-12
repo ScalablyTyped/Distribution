@@ -31,7 +31,8 @@ object DatafeedstatusesCustomBatchRequestEntry {
     __obj.asInstanceOf[DatafeedstatusesCustomBatchRequestEntry]
   }
   
-  extension [Self <: DatafeedstatusesCustomBatchRequestEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedstatusesCustomBatchRequestEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

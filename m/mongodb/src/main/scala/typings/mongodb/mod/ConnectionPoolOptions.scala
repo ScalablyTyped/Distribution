@@ -39,7 +39,8 @@ object ConnectionPoolOptions {
     __obj.asInstanceOf[ConnectionPoolOptions]
   }
   
-  extension [Self <: ConnectionPoolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPoolOptions] (val x: Self) extends AnyVal {
     
     inline def setLoadBalanced(value: Boolean): Self = StObject.set(x, "loadBalanced", value.asInstanceOf[js.Any])
     

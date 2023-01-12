@@ -84,7 +84,8 @@ object LineItem {
     __obj.asInstanceOf[LineItem]
   }
   
-  extension [Self <: LineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItem] (val x: Self) extends AnyVal {
     
     inline def setCompareAtPrice(value: String): Self = StObject.set(x, "compareAtPrice", value.asInstanceOf[js.Any])
     

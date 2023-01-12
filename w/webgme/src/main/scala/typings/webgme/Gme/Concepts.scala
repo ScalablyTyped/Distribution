@@ -19,7 +19,8 @@ object Concepts {
       __obj.asInstanceOf[ComposeChain]
     }
     
-    extension [Self <: ComposeChain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeChain] (val x: Self) extends AnyVal {
       
       inline def setObjId(value: String): Self = StObject.set(x, "objId", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object Concepts {
       __obj.asInstanceOf[ConnectionCollectionPair]
     }
     
-    extension [Self <: ConnectionCollectionPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionCollectionPair] (val x: Self) extends AnyVal {
       
       inline def setDestinations(value: js.Array[ComposeChain]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object Concepts {
       __obj.asInstanceOf[ConnectionStyle]
     }
     
-    extension [Self <: ConnectionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStyle] (val x: Self) extends AnyVal {
       
       inline def setEndArrow(value: String): Self = StObject.set(x, "endArrow", value.asInstanceOf[js.Any])
       

@@ -225,7 +225,8 @@ object mod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setDownloadBandwidthTotal(value: Double): Self = StObject.set(x, "downloadBandwidthTotal", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object mod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setChunkSizeIncrement(value: Double): Self = StObject.set(x, "chunkSizeIncrement", value.asInstanceOf[js.Any])
       
@@ -313,7 +315,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
@@ -338,7 +341,8 @@ object mod {
       __obj.asInstanceOf[LinkOptions]
     }
     
-    extension [Self <: LinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -365,7 +369,8 @@ object mod {
       __obj.asInstanceOf[MakeDirectoryOptions]
     }
     
-    extension [Self <: MakeDirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeDirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object mod {
       __obj.asInstanceOf[StorageOptions]
     }
     
-    extension [Self <: StorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
       
@@ -437,7 +443,8 @@ object mod {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

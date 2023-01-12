@@ -21,7 +21,8 @@ object libTypesRelationDataMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Double): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object libTypesRelationDataMod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object libTypesRelationDataMod {
       __obj.asInstanceOf[NodeLinkData]
     }
     
-    extension [Self <: NodeLinkData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLinkData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[Link]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       

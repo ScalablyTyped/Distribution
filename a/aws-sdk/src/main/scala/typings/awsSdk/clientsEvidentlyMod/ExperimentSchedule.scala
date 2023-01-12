@@ -18,7 +18,8 @@ object ExperimentSchedule {
     __obj.asInstanceOf[ExperimentSchedule]
   }
   
-  extension [Self <: ExperimentSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentSchedule] (val x: Self) extends AnyVal {
     
     inline def setAnalysisCompleteTime(value: js.Date): Self = StObject.set(x, "analysisCompleteTime", value.asInstanceOf[js.Any])
     

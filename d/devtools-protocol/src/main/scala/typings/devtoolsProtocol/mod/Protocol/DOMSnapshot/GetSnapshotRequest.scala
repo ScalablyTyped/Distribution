@@ -33,7 +33,8 @@ object GetSnapshotRequest {
     __obj.asInstanceOf[GetSnapshotRequest]
   }
   
-  extension [Self <: GetSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setComputedStyleWhitelist(value: js.Array[String]): Self = StObject.set(x, "computedStyleWhitelist", value.asInstanceOf[js.Any])
     

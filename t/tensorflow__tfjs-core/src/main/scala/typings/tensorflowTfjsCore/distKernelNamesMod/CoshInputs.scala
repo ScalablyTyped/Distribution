@@ -16,7 +16,8 @@ object CoshInputs {
     __obj.asInstanceOf[CoshInputs]
   }
   
-  extension [Self <: CoshInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoshInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

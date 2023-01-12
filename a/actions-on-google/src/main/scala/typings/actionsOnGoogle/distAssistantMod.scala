@@ -59,7 +59,8 @@ object distAssistantMod {
       __obj.asInstanceOf[AppOptions]
     }
     
-    extension [Self <: AppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distAssistantMod {
       __obj.asInstanceOf[BaseApp]
     }
     
-    extension [Self <: BaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseApp] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object distAssistantMod {
       __obj.asInstanceOf[ServiceBaseApp]
     }
     
-    extension [Self <: ServiceBaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceBaseApp] (val x: Self) extends AnyVal {
       
       inline def setHandler(
         value: (/* body */ JsonObject, /* headers */ Headers, /* metadata */ js.UndefOr[BuiltinFrameworkMetadata]) => js.Promise[StandardResponse]

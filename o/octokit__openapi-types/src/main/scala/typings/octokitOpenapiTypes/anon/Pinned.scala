@@ -31,7 +31,8 @@ object Pinned {
     __obj.asInstanceOf[Pinned]
   }
   
-  extension [Self <: Pinned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pinned] (val x: Self) extends AnyVal {
     
     inline def setDirection(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any

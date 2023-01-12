@@ -21,7 +21,8 @@ object ColorsComponents {
     __obj.asInstanceOf[ColorsComponents]
   }
   
-  extension [Self <: ColorsComponents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorsComponents] (val x: Self) extends AnyVal {
     
     inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     

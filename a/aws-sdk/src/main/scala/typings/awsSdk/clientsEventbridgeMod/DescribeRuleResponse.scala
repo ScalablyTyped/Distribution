@@ -63,7 +63,8 @@ object DescribeRuleResponse {
     __obj.asInstanceOf[DescribeRuleResponse]
   }
   
-  extension [Self <: DescribeRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: RuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

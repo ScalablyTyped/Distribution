@@ -22,7 +22,8 @@ object ImportMeta {
     __obj.asInstanceOf[ImportMeta]
   }
   
-  extension [Self <: ImportMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportMeta] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

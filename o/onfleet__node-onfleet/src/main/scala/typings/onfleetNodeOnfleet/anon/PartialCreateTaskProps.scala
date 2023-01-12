@@ -59,7 +59,8 @@ object PartialCreateTaskProps {
     __obj.asInstanceOf[PartialCreateTaskProps]
   }
   
-  extension [Self <: PartialCreateTaskProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreateTaskProps] (val x: Self) extends AnyVal {
     
     inline def setAutoAssign(value: TaskAutoAssign): Self = StObject.set(x, "autoAssign", value.asInstanceOf[js.Any])
     

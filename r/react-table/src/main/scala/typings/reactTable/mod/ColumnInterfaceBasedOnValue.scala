@@ -15,7 +15,8 @@ object ColumnInterfaceBasedOnValue {
     __obj.asInstanceOf[ColumnInterfaceBasedOnValue[D, V]]
   }
   
-  extension [Self <: ColumnInterfaceBasedOnValue[?, ?], D /* <: js.Object */, V](x: Self & (ColumnInterfaceBasedOnValue[D, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnInterfaceBasedOnValue[?, ?], D /* <: js.Object */, V] (val x: Self & (ColumnInterfaceBasedOnValue[D, V])) extends AnyVal {
     
     inline def setCell(value: Renderer[CellProps[D, V]]): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
     

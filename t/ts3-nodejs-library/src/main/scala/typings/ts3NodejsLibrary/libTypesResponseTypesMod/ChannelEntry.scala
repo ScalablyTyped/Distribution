@@ -83,7 +83,8 @@ object ChannelEntry {
     __obj.asInstanceOf[ChannelEntry]
   }
   
-  extension [Self <: ChannelEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelEntry] (val x: Self) extends AnyVal {
     
     inline def setChannelBannerGfxUrl(value: String): Self = StObject.set(x, "channelBannerGfxUrl", value.asInstanceOf[js.Any])
     

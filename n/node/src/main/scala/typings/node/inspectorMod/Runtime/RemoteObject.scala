@@ -63,7 +63,8 @@ object RemoteObject {
     __obj.asInstanceOf[RemoteObject]
   }
   
-  extension [Self <: RemoteObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteObject] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SmartHomeV1ExecuteRequestExecution {
     __obj.asInstanceOf[SmartHomeV1ExecuteRequestExecution]
   }
   
-  extension [Self <: SmartHomeV1ExecuteRequestExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1ExecuteRequestExecution] (val x: Self) extends AnyVal {
     
     inline def setChallenge(value: Ack): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

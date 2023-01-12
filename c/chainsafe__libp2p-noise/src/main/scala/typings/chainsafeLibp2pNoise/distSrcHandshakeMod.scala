@@ -22,7 +22,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[CipherState]
     }
     
-    extension [Self <: CipherState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CipherState] (val x: Self) extends AnyVal {
       
       inline def setK(value: js.typedarray.Uint8Array): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[HandshakeState]
     }
     
-    extension [Self <: HandshakeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandshakeState] (val x: Self) extends AnyVal {
       
       inline def setE(value: KeyPair): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[INoisePayload]
     }
     
-    extension [Self <: INoisePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INoisePayload] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[MessageBuffer]
     }
     
-    extension [Self <: MessageBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageBuffer] (val x: Self) extends AnyVal {
       
       inline def setCiphertext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[NoiseSession]
     }
     
-    extension [Self <: NoiseSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoiseSession] (val x: Self) extends AnyVal {
       
       inline def setCs1(value: CipherState): Self = StObject.set(x, "cs1", value.asInstanceOf[js.Any])
       
@@ -191,7 +196,8 @@ object distSrcHandshakeMod {
       __obj.asInstanceOf[SymmetricState]
     }
     
-    extension [Self <: SymmetricState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymmetricState] (val x: Self) extends AnyVal {
       
       inline def setCk(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ck", value.asInstanceOf[js.Any])
       

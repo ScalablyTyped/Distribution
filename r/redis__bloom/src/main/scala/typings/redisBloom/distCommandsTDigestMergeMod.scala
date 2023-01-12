@@ -38,7 +38,8 @@ object distCommandsTDigestMergeMod {
       __obj.asInstanceOf[MergeOptions]
     }
     
-    extension [Self <: MergeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeOptions] (val x: Self) extends AnyVal {
       
       inline def setOVERRIDE(value: Boolean): Self = StObject.set(x, "OVERRIDE", value.asInstanceOf[js.Any])
       

@@ -118,7 +118,8 @@ object Lag {
     __obj.asInstanceOf[Lag]
   }
   
-  extension [Self <: Lag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lag] (val x: Self) extends AnyVal {
     
     inline def setAllowsHostedConnections(value: BooleanFlag): Self = StObject.set(x, "allowsHostedConnections", value.asInstanceOf[js.Any])
     

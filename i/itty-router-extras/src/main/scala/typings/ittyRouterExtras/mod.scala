@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[ErrorBody]
     }
     
-    extension [Self <: ErrorBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBody] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[StatusBody]
     }
     
-    extension [Self <: StatusBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBody] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

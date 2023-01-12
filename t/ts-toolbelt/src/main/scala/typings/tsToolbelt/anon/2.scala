@@ -19,7 +19,8 @@ object `2` {
     __obj.asInstanceOf[`2`]
   }
   
-  extension [Self <: `2`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
     
     inline def set0(value: typings.tsToolbelt.tsToolbeltInts.`1`): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

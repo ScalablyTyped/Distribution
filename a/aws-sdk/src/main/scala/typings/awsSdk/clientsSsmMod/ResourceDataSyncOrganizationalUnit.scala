@@ -18,7 +18,8 @@ object ResourceDataSyncOrganizationalUnit {
     __obj.asInstanceOf[ResourceDataSyncOrganizationalUnit]
   }
   
-  extension [Self <: ResourceDataSyncOrganizationalUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataSyncOrganizationalUnit] (val x: Self) extends AnyVal {
     
     inline def setOrganizationalUnitId(value: ResourceDataSyncOrganizationalUnitId): Self = StObject.set(x, "OrganizationalUnitId", value.asInstanceOf[js.Any])
     

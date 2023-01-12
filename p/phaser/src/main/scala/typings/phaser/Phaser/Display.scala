@@ -58,7 +58,8 @@ object Display {
       __obj.asInstanceOf[BaseShader]
     }
     
-    extension [Self <: BaseShader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseShader] (val x: Self) extends AnyVal {
       
       inline def setFragmentSrc(value: String): Self = StObject.set(x, "fragmentSrc", value.asInstanceOf[js.Any])
       

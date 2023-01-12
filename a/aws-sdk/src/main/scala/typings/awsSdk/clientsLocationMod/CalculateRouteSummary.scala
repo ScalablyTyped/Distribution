@@ -44,7 +44,8 @@ object CalculateRouteSummary {
     __obj.asInstanceOf[CalculateRouteSummary]
   }
   
-  extension [Self <: CalculateRouteSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculateRouteSummary] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: String): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     

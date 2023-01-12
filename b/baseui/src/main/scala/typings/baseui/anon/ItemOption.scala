@@ -15,7 +15,8 @@ object ItemOption {
     __obj.asInstanceOf[ItemOption]
   }
   
-  extension [Self <: ItemOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemOption] (val x: Self) extends AnyVal {
     
     inline def setItem(value: typings.baseui.selectTypesMod.Option): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object Saml {
     __obj.asInstanceOf[Saml]
   }
   
-  extension [Self <: Saml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Saml] (val x: Self) extends AnyVal {
     
     inline def setIdpMetadataXml(value: String): Self = StObject.set(x, "idpMetadataXml", value.asInstanceOf[js.Any])
     

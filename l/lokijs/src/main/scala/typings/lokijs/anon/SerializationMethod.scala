@@ -17,7 +17,8 @@ object SerializationMethod {
     __obj.asInstanceOf[SerializationMethod]
   }
   
-  extension [Self <: SerializationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializationMethod] (val x: Self) extends AnyVal {
     
     inline def setSerializationMethod(value: normal | pretty): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     

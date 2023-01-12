@@ -23,7 +23,8 @@ object Position {
     __obj.asInstanceOf[Position]
   }
   
-  extension [Self <: Position](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: typings.vexflow.Vex.Flow.TextBracket.Positions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

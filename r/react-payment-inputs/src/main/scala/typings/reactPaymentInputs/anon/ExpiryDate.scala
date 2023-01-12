@@ -17,7 +17,8 @@ object ExpiryDate {
     __obj.asInstanceOf[ExpiryDate]
   }
   
-  extension [Self <: ExpiryDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpiryDate] (val x: Self) extends AnyVal {
     
     inline def setErrorMessages(value: typings.reactPaymentInputs.mod.ErrorMessages): Self = StObject.set(x, "errorMessages", value.asInstanceOf[js.Any])
     

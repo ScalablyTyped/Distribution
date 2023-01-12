@@ -31,7 +31,8 @@ object RSAPrivateKeyJson {
     __obj.asInstanceOf[RSAPrivateKeyJson]
   }
   
-  extension [Self <: RSAPrivateKeyJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAPrivateKeyJson] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

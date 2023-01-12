@@ -15,7 +15,8 @@ object MssEncryption {
     __obj.asInstanceOf[MssEncryption]
   }
   
-  extension [Self <: MssEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MssEncryption] (val x: Self) extends AnyVal {
     
     inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
   }

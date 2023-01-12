@@ -55,7 +55,8 @@ object dxDropDownButton {
       __obj.asInstanceOf[ButtonClickEvent]
     }
     
-    extension [Self <: ButtonClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonClickEvent] (val x: Self) extends AnyVal {
       
       inline def setSelectedItem(value: Any): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object dxDropDownButton {
       __obj.asInstanceOf[ItemClickEvent]
     }
     
-    extension [Self <: ItemClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemClickEvent] (val x: Self) extends AnyVal {
       
       inline def setItemData(value: Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object dxDropDownButton {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       

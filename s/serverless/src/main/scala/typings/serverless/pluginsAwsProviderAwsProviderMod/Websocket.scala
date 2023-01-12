@@ -19,7 +19,8 @@ object Websocket {
     __obj.asInstanceOf[Websocket]
   }
   
-  extension [Self <: Websocket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Websocket] (val x: Self) extends AnyVal {
     
     inline def setAuthorizer(value: WebsocketAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     

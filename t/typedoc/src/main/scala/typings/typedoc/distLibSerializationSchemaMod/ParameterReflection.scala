@@ -40,7 +40,8 @@ object ParameterReflection {
     __obj.asInstanceOf[ParameterReflection]
   }
   
-  extension [Self <: ParameterReflection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterReflection] (val x: Self) extends AnyVal {
     
     inline def setComment(value: ToSerialized[js.UndefOr[typings.typedoc.distLibModelsCommentsCommentMod.Comment]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

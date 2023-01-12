@@ -23,7 +23,8 @@ object InstanceMonitoring {
     __obj.asInstanceOf[InstanceMonitoring]
   }
   
-  extension [Self <: InstanceMonitoring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMonitoring] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

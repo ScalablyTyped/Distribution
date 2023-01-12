@@ -34,7 +34,8 @@ object FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations {
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesQuerySupportedSpatialStatisticAggregations] (val x: Self) extends AnyVal {
     
     inline def setCentroid(value: Boolean): Self = StObject.set(x, "centroid", value.asInstanceOf[js.Any])
     

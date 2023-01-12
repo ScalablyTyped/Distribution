@@ -18,7 +18,8 @@ object DSSEAttestationOccurrence {
     __obj.asInstanceOf[DSSEAttestationOccurrence]
   }
   
-  extension [Self <: DSSEAttestationOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSSEAttestationOccurrence] (val x: Self) extends AnyVal {
     
     inline def setEnvelope(value: Envelope): Self = StObject.set(x, "envelope", value.asInstanceOf[js.Any])
     

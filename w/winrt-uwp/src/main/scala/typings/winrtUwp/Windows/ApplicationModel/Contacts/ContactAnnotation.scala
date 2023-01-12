@@ -44,7 +44,8 @@ object ContactAnnotation {
     __obj.asInstanceOf[ContactAnnotation]
   }
   
-  extension [Self <: ContactAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAnnotationListId(value: String): Self = StObject.set(x, "annotationListId", value.asInstanceOf[js.Any])
     

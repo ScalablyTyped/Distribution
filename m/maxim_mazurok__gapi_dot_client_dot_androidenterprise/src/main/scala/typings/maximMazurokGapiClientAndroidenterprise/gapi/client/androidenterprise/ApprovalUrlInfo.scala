@@ -16,7 +16,8 @@ object ApprovalUrlInfo {
     __obj.asInstanceOf[ApprovalUrlInfo]
   }
   
-  extension [Self <: ApprovalUrlInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalUrlInfo] (val x: Self) extends AnyVal {
     
     inline def setApprovalUrl(value: String): Self = StObject.set(x, "approvalUrl", value.asInstanceOf[js.Any])
     

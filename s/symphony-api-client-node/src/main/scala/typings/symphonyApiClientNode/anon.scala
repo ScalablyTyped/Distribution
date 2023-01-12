@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[StreamTypes]
     }
     
-    extension [Self <: StreamTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamTypes] (val x: Self) extends AnyVal {
       
       inline def setStreamTypes(value: js.Array[StreamType]): Self = StObject.set(x, "streamTypes", value.asInstanceOf[js.Any])
       

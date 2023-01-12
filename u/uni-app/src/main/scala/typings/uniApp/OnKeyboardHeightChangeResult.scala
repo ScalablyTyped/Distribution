@@ -18,7 +18,8 @@ object OnKeyboardHeightChangeResult {
     __obj.asInstanceOf[OnKeyboardHeightChangeResult]
   }
   
-  extension [Self <: OnKeyboardHeightChangeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnKeyboardHeightChangeResult] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

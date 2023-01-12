@@ -23,7 +23,8 @@ object MonthChangedEventUIParam {
     __obj.asInstanceOf[MonthChangedEventUIParam]
   }
   
-  extension [Self <: MonthChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setNewSelectedDate(value: Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
     

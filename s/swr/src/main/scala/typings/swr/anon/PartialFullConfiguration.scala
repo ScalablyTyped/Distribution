@@ -91,7 +91,8 @@ object PartialFullConfiguration {
     __obj.asInstanceOf[PartialFullConfiguration]
   }
   
-  extension [Self <: PartialFullConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFullConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Cache[Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

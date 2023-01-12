@@ -268,7 +268,8 @@ object Explanation {
     __obj.asInstanceOf[Explanation]
   }
   
-  extension [Self <: Explanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explanation] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: AnalysisComponent): Self = StObject.set(x, "Acl", value.asInstanceOf[js.Any])
     

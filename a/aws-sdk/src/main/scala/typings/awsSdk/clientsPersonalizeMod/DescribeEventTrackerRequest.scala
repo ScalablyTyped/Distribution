@@ -18,7 +18,8 @@ object DescribeEventTrackerRequest {
     __obj.asInstanceOf[DescribeEventTrackerRequest]
   }
   
-  extension [Self <: DescribeEventTrackerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEventTrackerRequest] (val x: Self) extends AnyVal {
     
     inline def setEventTrackerArn(value: Arn): Self = StObject.set(x, "eventTrackerArn", value.asInstanceOf[js.Any])
   }

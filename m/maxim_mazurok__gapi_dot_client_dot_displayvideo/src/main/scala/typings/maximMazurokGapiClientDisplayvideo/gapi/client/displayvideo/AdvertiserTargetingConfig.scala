@@ -16,7 +16,8 @@ object AdvertiserTargetingConfig {
     __obj.asInstanceOf[AdvertiserTargetingConfig]
   }
   
-  extension [Self <: AdvertiserTargetingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserTargetingConfig] (val x: Self) extends AnyVal {
     
     inline def setExemptTvFromViewabilityTargeting(value: Boolean): Self = StObject.set(x, "exemptTvFromViewabilityTargeting", value.asInstanceOf[js.Any])
     

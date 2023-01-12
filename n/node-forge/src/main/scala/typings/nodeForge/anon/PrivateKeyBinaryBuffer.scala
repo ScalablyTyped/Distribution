@@ -16,7 +16,8 @@ object PrivateKeyBinaryBuffer {
     __obj.asInstanceOf[PrivateKeyBinaryBuffer]
   }
   
-  extension [Self <: PrivateKeyBinaryBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyBinaryBuffer] (val x: Self) extends AnyVal {
     
     inline def setPrivateKey(value: BinaryBuffer): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
   }

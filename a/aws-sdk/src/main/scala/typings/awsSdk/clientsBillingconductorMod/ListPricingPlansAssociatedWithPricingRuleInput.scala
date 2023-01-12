@@ -33,7 +33,8 @@ object ListPricingPlansAssociatedWithPricingRuleInput {
     __obj.asInstanceOf[ListPricingPlansAssociatedWithPricingRuleInput]
   }
   
-  extension [Self <: ListPricingPlansAssociatedWithPricingRuleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPricingPlansAssociatedWithPricingRuleInput] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "BillingPeriod", value.asInstanceOf[js.Any])
     

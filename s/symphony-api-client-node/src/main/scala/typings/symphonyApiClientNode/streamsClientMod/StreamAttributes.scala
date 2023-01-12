@@ -15,7 +15,8 @@ object StreamAttributes {
     __obj.asInstanceOf[StreamAttributes]
   }
   
-  extension [Self <: StreamAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamAttributes] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[Double]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

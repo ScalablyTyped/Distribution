@@ -30,7 +30,8 @@ object distTsStoriesHeaderMod {
       __obj.asInstanceOf[HeaderProps]
     }
     
-    extension [Self <: HeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderProps] (val x: Self) extends AnyVal {
       
       inline def setOnCreateAccount(value: () => Unit): Self = StObject.set(x, "onCreateAccount", js.Any.fromFunction0(value))
       
@@ -55,7 +56,8 @@ object distTsStoriesHeaderMod {
       __obj.asInstanceOf[User]
     }
     
-    extension [Self <: User](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: User] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

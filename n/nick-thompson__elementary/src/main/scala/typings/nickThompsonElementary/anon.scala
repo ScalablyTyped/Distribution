@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Dictother]
     }
     
-    extension [Self <: Dictother](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictother] (val x: Self) extends AnyVal {
       
       inline def setConst(value: ConstProps): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object anon {
       __obj.asInstanceOf[keyininSizedChildrenArray]
     }
     
-    extension [Self <: keyininSizedChildrenArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: keyininSizedChildrenArray] (val x: Self) extends AnyVal {
       
       inline def setAbs(value: SizedChildrenArray[`1`]): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
       
@@ -359,7 +361,8 @@ object anon {
       __obj.asInstanceOf[pathneverundefineddataFlo]
     }
     
-    extension [Self <: pathneverundefineddataFlo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pathneverundefineddataFlo] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -398,7 +401,8 @@ object anon {
       __obj.asInstanceOf[pathstringundefineddatane]
     }
     
-    extension [Self <: pathstringundefineddatane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pathstringundefineddatane] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

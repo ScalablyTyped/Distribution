@@ -23,7 +23,8 @@ object IndexCapacity {
     __obj.asInstanceOf[IndexCapacity]
   }
   
-  extension [Self <: IndexCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexCapacity] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: CollectionUsage): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
     

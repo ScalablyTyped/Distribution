@@ -29,7 +29,8 @@ object TrackCountryAvailability {
     __obj.asInstanceOf[TrackCountryAvailability]
   }
   
-  extension [Self <: TrackCountryAvailability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackCountryAvailability] (val x: Self) extends AnyVal {
     
     inline def setCountries(value: js.Array[TrackTargetedCountry]): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
     

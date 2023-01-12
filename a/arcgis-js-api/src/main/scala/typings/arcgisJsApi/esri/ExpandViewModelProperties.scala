@@ -47,7 +47,8 @@ object ExpandViewModelProperties {
     __obj.asInstanceOf[ExpandViewModelProperties]
   }
   
-  extension [Self <: ExpandViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
     

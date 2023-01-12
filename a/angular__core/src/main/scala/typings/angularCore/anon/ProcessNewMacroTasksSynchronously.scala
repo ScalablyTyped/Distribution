@@ -15,7 +15,8 @@ object ProcessNewMacroTasksSynchronously {
     __obj.asInstanceOf[ProcessNewMacroTasksSynchronously]
   }
   
-  extension [Self <: ProcessNewMacroTasksSynchronously](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessNewMacroTasksSynchronously] (val x: Self) extends AnyVal {
     
     inline def setProcessNewMacroTasksSynchronously(value: Boolean): Self = StObject.set(x, "processNewMacroTasksSynchronously", value.asInstanceOf[js.Any])
   }

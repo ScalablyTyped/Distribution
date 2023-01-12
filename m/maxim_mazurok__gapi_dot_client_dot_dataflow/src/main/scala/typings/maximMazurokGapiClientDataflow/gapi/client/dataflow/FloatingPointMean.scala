@@ -19,7 +19,8 @@ object FloatingPointMean {
     __obj.asInstanceOf[FloatingPointMean]
   }
   
-  extension [Self <: FloatingPointMean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingPointMean] (val x: Self) extends AnyVal {
     
     inline def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

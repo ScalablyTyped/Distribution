@@ -23,7 +23,8 @@ object MigrateWorkspaceResult {
     __obj.asInstanceOf[MigrateWorkspaceResult]
   }
   
-  extension [Self <: MigrateWorkspaceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrateWorkspaceResult] (val x: Self) extends AnyVal {
     
     inline def setSourceWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "SourceWorkspaceId", value.asInstanceOf[js.Any])
     

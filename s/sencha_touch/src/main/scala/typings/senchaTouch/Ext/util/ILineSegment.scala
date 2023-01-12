@@ -28,7 +28,8 @@ object ILineSegment {
     __obj.asInstanceOf[ILineSegment]
   }
   
-  extension [Self <: ILineSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILineSegment] (val x: Self) extends AnyVal {
     
     inline def setIntersects(value: /* lineSegment */ js.UndefOr[ILineSegment] => IPoint): Self = StObject.set(x, "intersects", js.Any.fromFunction1(value))
     

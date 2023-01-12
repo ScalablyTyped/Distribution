@@ -19,7 +19,8 @@ object AppsDynamiteDataLossPreventionMetadata {
     __obj.asInstanceOf[AppsDynamiteDataLossPreventionMetadata]
   }
   
-  extension [Self <: AppsDynamiteDataLossPreventionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteDataLossPreventionMetadata] (val x: Self) extends AnyVal {
     
     inline def setDlpScanSummary(value: AppsDynamiteBackendDlpScanSummary): Self = StObject.set(x, "dlpScanSummary", value.asInstanceOf[js.Any])
     

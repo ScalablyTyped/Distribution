@@ -23,7 +23,8 @@ object ConfigInfo {
     __obj.asInstanceOf[ConfigInfo]
   }
   
-  extension [Self <: ConfigInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

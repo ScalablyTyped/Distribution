@@ -54,7 +54,8 @@ object ResponseHeadersPolicyCorsConfig {
     __obj.asInstanceOf[ResponseHeadersPolicyCorsConfig]
   }
   
-  extension [Self <: ResponseHeadersPolicyCorsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyCorsConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessControlAllowCredentials(value: Boolean): Self = StObject.set(x, "AccessControlAllowCredentials", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object JobDescriptionAttributes {
     __obj.asInstanceOf[JobDescriptionAttributes]
   }
   
-  extension [Self <: JobDescriptionAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDescriptionAttributes] (val x: Self) extends AnyVal {
     
     inline def `setCurrent-page-order`(value: PageOrder): Self = StObject.set(x, "current-page-order", value.asInstanceOf[js.Any])
     

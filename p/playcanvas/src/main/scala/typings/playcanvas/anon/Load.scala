@@ -17,7 +17,8 @@ object Load {
     __obj.asInstanceOf[Load]
   }
   
-  extension [Self <: Load](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: String): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     

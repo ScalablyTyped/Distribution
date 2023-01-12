@@ -17,7 +17,8 @@ object RRSetRoutingPolicyWrrPolicy {
     __obj.asInstanceOf[RRSetRoutingPolicyWrrPolicy]
   }
   
-  extension [Self <: RRSetRoutingPolicyWrrPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RRSetRoutingPolicyWrrPolicy] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[RRSetRoutingPolicyWrrPolicyWrrPolicyItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

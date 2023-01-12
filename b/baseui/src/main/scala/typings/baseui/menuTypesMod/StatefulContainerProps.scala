@@ -82,7 +82,8 @@ object StatefulContainerProps {
     __obj.asInstanceOf[StatefulContainerProps]
   }
   
-  extension [Self <: StatefulContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
     
     inline def setAddMenuToNesting(value: /* ref */ `14` => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
     

@@ -174,7 +174,8 @@ object PickImplcontextPartialPic {
     __obj.asInstanceOf[PickImplcontextPartialPic]
   }
   
-  extension [Self <: PickImplcontextPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplcontextPartialPic] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

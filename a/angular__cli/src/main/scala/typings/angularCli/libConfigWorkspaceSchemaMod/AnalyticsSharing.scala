@@ -23,7 +23,8 @@ object AnalyticsSharing {
     __obj.asInstanceOf[AnalyticsSharing]
   }
   
-  extension [Self <: AnalyticsSharing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsSharing] (val x: Self) extends AnyVal {
     
     inline def setTracking(value: String): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     

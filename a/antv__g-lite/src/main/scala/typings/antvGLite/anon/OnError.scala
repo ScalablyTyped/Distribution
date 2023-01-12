@@ -19,7 +19,8 @@ object OnError {
     __obj.asInstanceOf[OnError]
   }
   
-  extension [Self <: OnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnError] (val x: Self) extends AnyVal {
     
     inline def setOnDone(value: Any): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     

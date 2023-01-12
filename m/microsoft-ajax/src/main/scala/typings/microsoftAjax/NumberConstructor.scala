@@ -23,7 +23,8 @@ object NumberConstructor {
     __obj.asInstanceOf[NumberConstructor]
   }
   
-  extension [Self <: NumberConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
     
     inline def setParseInvariant(value: java.lang.String => Double): Self = StObject.set(x, "parseInvariant", js.Any.fromFunction1(value))
     

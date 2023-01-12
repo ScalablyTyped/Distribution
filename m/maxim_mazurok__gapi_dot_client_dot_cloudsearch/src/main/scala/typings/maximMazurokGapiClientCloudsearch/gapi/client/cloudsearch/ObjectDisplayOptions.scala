@@ -26,7 +26,8 @@ object ObjectDisplayOptions {
     __obj.asInstanceOf[ObjectDisplayOptions]
   }
   
-  extension [Self <: ObjectDisplayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectDisplayOptions] (val x: Self) extends AnyVal {
     
     inline def setMetalines(value: js.Array[Metaline]): Self = StObject.set(x, "metalines", value.asInstanceOf[js.Any])
     

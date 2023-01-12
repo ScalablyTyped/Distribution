@@ -19,7 +19,8 @@ object PaintStyleEnumValues {
     __obj.asInstanceOf[PaintStyleEnumValues]
   }
   
-  extension [Self <: PaintStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaintStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setFill(value: PaintStyle): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     

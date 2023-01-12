@@ -21,7 +21,8 @@ object OptionalType {
     __obj.asInstanceOf[OptionalType]
   }
   
-  extension [Self <: OptionalType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalType] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Type_): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

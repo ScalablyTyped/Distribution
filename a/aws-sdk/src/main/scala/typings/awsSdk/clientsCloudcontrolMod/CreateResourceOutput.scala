@@ -18,7 +18,8 @@ object CreateResourceOutput {
     __obj.asInstanceOf[CreateResourceOutput]
   }
   
-  extension [Self <: CreateResourceOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResourceOutput] (val x: Self) extends AnyVal {
     
     inline def setProgressEvent(value: ProgressEvent): Self = StObject.set(x, "ProgressEvent", value.asInstanceOf[js.Any])
     

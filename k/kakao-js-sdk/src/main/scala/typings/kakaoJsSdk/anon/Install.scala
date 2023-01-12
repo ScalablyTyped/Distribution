@@ -21,7 +21,8 @@ object Install {
     __obj.asInstanceOf[Install]
   }
   
-  extension [Self <: Install](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Install] (val x: Self) extends AnyVal {
     
     inline def setInstall(value: Boolean): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
     

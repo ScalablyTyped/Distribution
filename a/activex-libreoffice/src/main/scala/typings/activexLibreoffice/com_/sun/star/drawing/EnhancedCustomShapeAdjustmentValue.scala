@@ -23,7 +23,8 @@ object EnhancedCustomShapeAdjustmentValue {
     __obj.asInstanceOf[EnhancedCustomShapeAdjustmentValue]
   }
   
-  extension [Self <: EnhancedCustomShapeAdjustmentValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeAdjustmentValue] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

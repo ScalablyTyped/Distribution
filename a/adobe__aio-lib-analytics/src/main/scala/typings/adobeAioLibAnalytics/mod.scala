@@ -91,7 +91,8 @@ object mod {
       __obj.asInstanceOf[Report]
     }
     
-    extension [Self <: Report](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
       inline def setBody(value: LastPage): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }

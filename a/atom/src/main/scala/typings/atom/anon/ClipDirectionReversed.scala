@@ -20,7 +20,8 @@ object ClipDirectionReversed {
     __obj.asInstanceOf[ClipDirectionReversed]
   }
   
-  extension [Self <: ClipDirectionReversed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipDirectionReversed] (val x: Self) extends AnyVal {
     
     inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StopMigrationWorkflowRequest {
     __obj.asInstanceOf[StopMigrationWorkflowRequest]
   }
   
-  extension [Self <: StopMigrationWorkflowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopMigrationWorkflowRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: MigrationWorkflowId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

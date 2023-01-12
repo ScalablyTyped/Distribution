@@ -18,7 +18,8 @@ object LambdaInvokeOperation {
     __obj.asInstanceOf[LambdaInvokeOperation]
   }
   
-  extension [Self <: LambdaInvokeOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaInvokeOperation] (val x: Self) extends AnyVal {
     
     inline def setFunctionArn(value: FunctionArnString): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     

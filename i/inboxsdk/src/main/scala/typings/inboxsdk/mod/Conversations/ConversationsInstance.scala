@@ -26,7 +26,8 @@ object ConversationsInstance {
     __obj.asInstanceOf[ConversationsInstance]
   }
   
-  extension [Self <: ConversationsInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversationsInstance] (val x: Self) extends AnyVal {
     
     inline def setRegisterFileAttachmentCardViewHandler(value: js.Function1[/* attachmentCardView */ AttachmentCardView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerFileAttachmentCardViewHandler", js.Any.fromFunction1(value))
     

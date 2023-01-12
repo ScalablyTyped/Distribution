@@ -87,7 +87,8 @@ object InternalRuntimeAPI {
     __obj.asInstanceOf[InternalRuntimeAPI]
   }
   
-  extension [Self <: InternalRuntimeAPI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalRuntimeAPI] (val x: Self) extends AnyVal {
     
     inline def setAdminApi(value: js.Object): Self = StObject.set(x, "adminApi", value.asInstanceOf[js.Any])
     

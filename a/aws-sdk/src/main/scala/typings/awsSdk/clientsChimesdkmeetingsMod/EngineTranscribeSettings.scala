@@ -83,7 +83,8 @@ object EngineTranscribeSettings {
     __obj.asInstanceOf[EngineTranscribeSettings]
   }
   
-  extension [Self <: EngineTranscribeSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EngineTranscribeSettings] (val x: Self) extends AnyVal {
     
     inline def setContentIdentificationType(value: TranscribeContentIdentificationType): Self = StObject.set(x, "ContentIdentificationType", value.asInstanceOf[js.Any])
     

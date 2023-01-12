@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ResolveContext]
     }
     
-    extension [Self <: ResolveContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveContext] (val x: Self) extends AnyVal {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
     }
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[Route[R, C]]
     }
     
-    extension [Self <: Route[?, ?], R, C /* <: RouterContext */](x: Self & (Route[R, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route[?, ?], R, C /* <: RouterContext */] (val x: Self & (Route[R, C])) extends AnyVal {
       
       inline def setAction(value: (/* context */ RouteContext[R, C], /* params */ RouteParams) => RouteResult[R]): Self = StObject.set(x, "action", js.Any.fromFunction2(value))
       
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[RouteError]
     }
     
-    extension [Self <: RouteError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteError] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object mod {
       __obj.asInstanceOf[RouteMatch[R, C]]
     }
     
-    extension [Self <: RouteMatch[?, ?], R, C /* <: RouterContext */](x: Self & (RouteMatch[R, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteMatch[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouteMatch[R, C])) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
@@ -272,7 +276,8 @@ object mod {
       __obj.asInstanceOf[RouterOptions[R, C]]
     }
     
-    extension [Self <: RouterOptions[?, ?], R, C /* <: RouterContext */](x: Self & (RouterOptions[R, C])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterOptions[?, ?], R, C /* <: RouterContext */] (val x: Self & (RouterOptions[R, C])) extends AnyVal {
       
       inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object IFunctionDefLibrary {
     __obj.asInstanceOf[IFunctionDefLibrary]
   }
   
-  extension [Self <: IFunctionDefLibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFunctionDefLibrary] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: js.Array[IFunctionDef]): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

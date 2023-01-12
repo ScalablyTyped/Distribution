@@ -19,7 +19,8 @@ object DataSourceRefreshMonthlySchedule {
     __obj.asInstanceOf[DataSourceRefreshMonthlySchedule]
   }
   
-  extension [Self <: DataSourceRefreshMonthlySchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceRefreshMonthlySchedule] (val x: Self) extends AnyVal {
     
     inline def setDaysOfMonth(value: js.Array[Double]): Self = StObject.set(x, "daysOfMonth", value.asInstanceOf[js.Any])
     

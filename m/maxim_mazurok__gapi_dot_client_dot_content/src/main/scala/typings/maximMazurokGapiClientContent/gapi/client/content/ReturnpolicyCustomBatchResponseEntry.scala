@@ -25,7 +25,8 @@ object ReturnpolicyCustomBatchResponseEntry {
     __obj.asInstanceOf[ReturnpolicyCustomBatchResponseEntry]
   }
   
-  extension [Self <: ReturnpolicyCustomBatchResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnpolicyCustomBatchResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

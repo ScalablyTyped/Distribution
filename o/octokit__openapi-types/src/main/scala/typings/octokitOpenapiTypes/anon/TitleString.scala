@@ -15,7 +15,8 @@ object TitleString {
     __obj.asInstanceOf[TitleString]
   }
   
-  extension [Self <: TitleString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleString] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }

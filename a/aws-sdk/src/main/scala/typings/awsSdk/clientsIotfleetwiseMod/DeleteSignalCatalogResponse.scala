@@ -23,7 +23,8 @@ object DeleteSignalCatalogResponse {
     __obj.asInstanceOf[DeleteSignalCatalogResponse]
   }
   
-  extension [Self <: DeleteSignalCatalogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSignalCatalogResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

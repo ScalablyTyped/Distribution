@@ -18,7 +18,8 @@ object OSPolicyAssignmentLabelSet {
     __obj.asInstanceOf[OSPolicyAssignmentLabelSet]
   }
   
-  extension [Self <: OSPolicyAssignmentLabelSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentLabelSet] (val x: Self) extends AnyVal {
     
     inline def setLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

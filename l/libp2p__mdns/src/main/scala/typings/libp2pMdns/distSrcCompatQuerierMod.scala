@@ -63,7 +63,8 @@ object distSrcCompatQuerierMod {
       __obj.asInstanceOf[Handle]
     }
     
-    extension [Self <: Handle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handle] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => js.Promise[Unit]): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
@@ -80,7 +81,8 @@ object distSrcCompatQuerierMod {
       __obj.asInstanceOf[QuerierComponents]
     }
     
-    extension [Self <: QuerierComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerierComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object distSrcCompatQuerierMod {
       __obj.asInstanceOf[QuerierInit]
     }
     
-    extension [Self <: QuerierInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuerierInit] (val x: Self) extends AnyVal {
       
       inline def setQueryInterval(value: Double): Self = StObject.set(x, "queryInterval", value.asInstanceOf[js.Any])
       

@@ -68,7 +68,8 @@ object builtConnectorsStandaloneConnectorMod {
       __obj.asInstanceOf[StandaloneConnectionOptions]
     }
     
-    extension [Self <: StandaloneConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandaloneConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
       

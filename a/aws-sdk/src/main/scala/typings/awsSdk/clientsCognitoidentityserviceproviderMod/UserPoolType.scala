@@ -178,7 +178,8 @@ object UserPoolType {
     __obj.asInstanceOf[UserPoolType]
   }
   
-  extension [Self <: UserPoolType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPoolType] (val x: Self) extends AnyVal {
     
     inline def setAccountRecoverySetting(value: AccountRecoverySettingType): Self = StObject.set(x, "AccountRecoverySetting", value.asInstanceOf[js.Any])
     

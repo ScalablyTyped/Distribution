@@ -186,7 +186,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[BaseFileUploadStats]
     }
     
-    extension [Self <: BaseFileUploadStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFileUploadStats] (val x: Self) extends AnyVal {
       
       inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -222,7 +223,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[CompletedFileUploadStats]
     }
     
-    extension [Self <: CompletedFileUploadStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletedFileUploadStats] (val x: Self) extends AnyVal {
       
       inline def setResult(value: FileReaderResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -265,7 +267,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[FileUploadHandlers[E]]
     }
     
-    extension [Self <: FileUploadHandlers[?], E /* <: HTMLElement */](x: Self & FileUploadHandlers[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploadHandlers[?], E /* <: HTMLElement */] (val x: Self & FileUploadHandlers[E]) extends AnyVal {
       
       inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
@@ -381,7 +384,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[FileValidationOptions]
     }
     
-    extension [Self <: FileValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -459,7 +463,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[FilesValidationOptions]
     }
     
-    extension [Self <: FilesValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -512,7 +517,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[ProcessingFileUploadStats]
     }
     
-    extension [Self <: ProcessingFileUploadStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessingFileUploadStats] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: pending | uploading): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -537,7 +543,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[SplitFileUploads]
     }
     
-    extension [Self <: SplitFileUploads](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitFileUploads] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: js.Array[CompletedFileUploadStats]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -577,7 +584,8 @@ object typesFileInputUtilsMod {
       __obj.asInstanceOf[ValidatedFilesResult[CustomError]]
     }
     
-    extension [Self <: ValidatedFilesResult[?], CustomError](x: Self & ValidatedFilesResult[CustomError]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedFilesResult[?], CustomError] (val x: Self & ValidatedFilesResult[CustomError]) extends AnyVal {
       
       inline def setErrors(value: js.Array[FileValidationError[CustomError]]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

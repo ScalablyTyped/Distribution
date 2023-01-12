@@ -81,7 +81,8 @@ object typesEncryptionKeyDisabledExceptionMod {
       __obj.asInstanceOf[EncryptionKeyDisabledException]
     }
     
-    extension [Self <: EncryptionKeyDisabledException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptionKeyDisabledException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException

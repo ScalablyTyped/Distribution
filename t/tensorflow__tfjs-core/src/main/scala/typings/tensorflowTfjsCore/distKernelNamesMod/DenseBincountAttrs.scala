@@ -17,7 +17,8 @@ object DenseBincountAttrs {
     __obj.asInstanceOf[DenseBincountAttrs]
   }
   
-  extension [Self <: DenseBincountAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DenseBincountAttrs] (val x: Self) extends AnyVal {
     
     inline def setBinaryOutput(value: Boolean): Self = StObject.set(x, "binaryOutput", value.asInstanceOf[js.Any])
     

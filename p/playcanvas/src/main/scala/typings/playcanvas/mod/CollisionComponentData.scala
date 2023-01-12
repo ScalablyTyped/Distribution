@@ -51,7 +51,8 @@ object CollisionComponentData {
     __obj.asInstanceOf[CollisionComponentData]
   }
   
-  extension [Self <: CollisionComponentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollisionComponentData] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: Any): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

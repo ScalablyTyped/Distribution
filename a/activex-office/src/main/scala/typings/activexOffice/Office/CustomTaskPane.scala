@@ -49,7 +49,8 @@ object CustomTaskPane {
     __obj.asInstanceOf[CustomTaskPane]
   }
   
-  extension [Self <: CustomTaskPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTaskPane] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

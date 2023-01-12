@@ -17,7 +17,8 @@ object DimensionMap {
     __obj.asInstanceOf[DimensionMap]
   }
   
-  extension [Self <: DimensionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionMap] (val x: Self) extends AnyVal {
     
     inline def setDraggables(value: DraggableDimensionMap): Self = StObject.set(x, "draggables", value.asInstanceOf[js.Any])
     

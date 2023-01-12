@@ -38,7 +38,8 @@ object GetOptions {
     __obj.asInstanceOf[GetOptions[S, Ps]]
   }
   
-  extension [Self <: GetOptions[?, ?], S, Ps](x: Self & (GetOptions[S, Ps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOptions[?, ?], S, Ps] (val x: Self & (GetOptions[S, Ps])) extends AnyVal {
     
     inline def setClearStorage(value: () => Unit): Self = StObject.set(x, "clearStorage", js.Any.fromFunction0(value))
     

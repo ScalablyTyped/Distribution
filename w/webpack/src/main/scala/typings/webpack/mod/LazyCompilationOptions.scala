@@ -42,7 +42,8 @@ object LazyCompilationOptions {
     __obj.asInstanceOf[LazyCompilationOptions]
   }
   
-  extension [Self <: LazyCompilationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LazyCompilationOptions] (val x: Self) extends AnyVal {
     
     inline def setBackend(
       value: (js.Function2[

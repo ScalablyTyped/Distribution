@@ -15,7 +15,8 @@ object SpatialAnchorRawCoordinateSystemAdjustedEventArgs {
     __obj.asInstanceOf[SpatialAnchorRawCoordinateSystemAdjustedEventArgs]
   }
   
-  extension [Self <: SpatialAnchorRawCoordinateSystemAdjustedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialAnchorRawCoordinateSystemAdjustedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setOldRawCoordinateSystemToNewRawCoordinateSystemTransform(value: Any): Self = StObject.set(x, "oldRawCoordinateSystemToNewRawCoordinateSystemTransform", value.asInstanceOf[js.Any])
   }

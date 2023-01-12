@@ -30,7 +30,8 @@ object buildSrcFileCompareHandlerLinesCompareCompareLinesResultMod {
       __obj.asInstanceOf[CompareLinesResult]
     }
     
-    extension [Self <: CompareLinesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompareLinesResult] (val x: Self) extends AnyVal {
       
       inline def setIsEqual(value: Boolean): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
       

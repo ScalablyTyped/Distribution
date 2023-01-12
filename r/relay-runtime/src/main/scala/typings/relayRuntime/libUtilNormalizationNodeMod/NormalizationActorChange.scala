@@ -20,7 +20,8 @@ object NormalizationActorChange {
     __obj.asInstanceOf[NormalizationActorChange]
   }
   
-  extension [Self <: NormalizationActorChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationActorChange] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

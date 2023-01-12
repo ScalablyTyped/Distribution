@@ -43,7 +43,8 @@ object GetCostAndUsageWithResourcesRequest {
     __obj.asInstanceOf[GetCostAndUsageWithResourcesRequest]
   }
   
-  extension [Self <: GetCostAndUsageWithResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCostAndUsageWithResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

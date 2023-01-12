@@ -47,7 +47,8 @@ object ResourceDataSyncS3Destination {
     __obj.asInstanceOf[ResourceDataSyncS3Destination]
   }
   
-  extension [Self <: ResourceDataSyncS3Destination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataSyncS3Destination] (val x: Self) extends AnyVal {
     
     inline def setAWSKMSKeyARN(value: ResourceDataSyncAWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
     

@@ -147,7 +147,8 @@ object DocumentReference {
     __obj.asInstanceOf[DocumentReference]
   }
   
-  extension [Self <: DocumentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReference] (val x: Self) extends AnyVal {
     
     inline def setAttester(value: js.Array[DocumentReferenceAttester]): Self = StObject.set(x, "attester", value.asInstanceOf[js.Any])
     

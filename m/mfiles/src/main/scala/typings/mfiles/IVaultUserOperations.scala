@@ -44,7 +44,8 @@ object IVaultUserOperations {
     __obj.asInstanceOf[IVaultUserOperations]
   }
   
-  extension [Self <: IVaultUserOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultUserOperations] (val x: Self) extends AnyVal {
     
     inline def setAddOrUndeleteUserAccount(value: IUserAccount => IUserAccount): Self = StObject.set(x, "AddOrUndeleteUserAccount", js.Any.fromFunction1(value))
     

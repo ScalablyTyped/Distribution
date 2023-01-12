@@ -26,7 +26,8 @@ object IsSvg {
     __obj.asInstanceOf[IsSvg]
   }
   
-  extension [Self <: IsSvg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSvg] (val x: Self) extends AnyVal {
     
     inline def setIsSvg(value: Boolean): Self = StObject.set(x, "isSvg", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CaptionRenderedEvent {
     __obj.asInstanceOf[CaptionRenderedEvent]
   }
   
-  extension [Self <: CaptionRenderedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionRenderedEvent] (val x: Self) extends AnyVal {
     
     inline def setCaptionDiv(value: HTMLDivElement): Self = StObject.set(x, "captionDiv", value.asInstanceOf[js.Any])
     

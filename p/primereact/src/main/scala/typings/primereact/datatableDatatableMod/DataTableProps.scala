@@ -801,7 +801,8 @@ object DataTableProps {
     __obj.asInstanceOf[DataTableProps]
   }
   
-  extension [Self <: DataTableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

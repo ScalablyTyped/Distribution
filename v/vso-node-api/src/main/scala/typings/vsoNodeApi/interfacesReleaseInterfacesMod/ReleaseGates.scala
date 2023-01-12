@@ -35,7 +35,8 @@ object ReleaseGates {
     __obj.asInstanceOf[ReleaseGates]
   }
   
-  extension [Self <: ReleaseGates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseGates] (val x: Self) extends AnyVal {
     
     inline def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     

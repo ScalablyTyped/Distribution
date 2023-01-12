@@ -29,7 +29,8 @@ object Direct {
     __obj.asInstanceOf[Direct]
   }
   
-  extension [Self <: Direct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Direct] (val x: Self) extends AnyVal {
     
     inline def setDirect(value: scala.Double): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
     

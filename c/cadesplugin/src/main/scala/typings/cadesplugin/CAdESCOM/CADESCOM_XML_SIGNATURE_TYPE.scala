@@ -22,7 +22,8 @@ object CADESCOM_XML_SIGNATURE_TYPE {
     __obj.asInstanceOf[CADESCOM_XML_SIGNATURE_TYPE]
   }
   
-  extension [Self <: CADESCOM_XML_SIGNATURE_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_XML_SIGNATURE_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_XML_SIGNATURE_TYPE_ENVELOPED(value: `0`): Self = StObject.set(x, "CADESCOM_XML_SIGNATURE_TYPE_ENVELOPED", value.asInstanceOf[js.Any])
     

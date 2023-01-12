@@ -30,7 +30,8 @@ object Arch {
     __obj.asInstanceOf[Arch]
   }
   
-  extension [Self <: Arch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arch] (val x: Self) extends AnyVal {
     
     inline def setArch(value: webDotbrowser | webDotbrowserDotlegacy | webDotcordova): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object esSubMenuPopupTriggerMod {
       __obj.asInstanceOf[PopupTriggerProps]
     }
     
-    extension [Self <: PopupTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

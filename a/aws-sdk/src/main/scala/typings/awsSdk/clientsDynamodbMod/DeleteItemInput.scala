@@ -60,7 +60,8 @@ object DeleteItemInput {
     __obj.asInstanceOf[DeleteItemInput]
   }
   
-  extension [Self <: DeleteItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteItemInput] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
     

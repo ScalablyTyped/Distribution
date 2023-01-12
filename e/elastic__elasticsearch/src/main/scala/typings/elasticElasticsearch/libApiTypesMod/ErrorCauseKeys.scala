@@ -26,7 +26,8 @@ object ErrorCauseKeys {
     __obj.asInstanceOf[ErrorCauseKeys]
   }
   
-  extension [Self <: ErrorCauseKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorCauseKeys] (val x: Self) extends AnyVal {
     
     inline def setCaused_by(value: ErrorCause): Self = StObject.set(x, "caused_by", value.asInstanceOf[js.Any])
     

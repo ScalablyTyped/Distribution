@@ -72,7 +72,8 @@ object InferenceRecommendationsJob {
     __obj.asInstanceOf[InferenceRecommendationsJob]
   }
   
-  extension [Self <: InferenceRecommendationsJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceRecommendationsJob] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: js.Date): Self = StObject.set(x, "CompletionTime", value.asInstanceOf[js.Any])
     

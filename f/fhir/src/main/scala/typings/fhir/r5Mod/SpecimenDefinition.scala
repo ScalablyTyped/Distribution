@@ -183,7 +183,8 @@ object SpecimenDefinition {
     __obj.asInstanceOf[SpecimenDefinition]
   }
   
-  extension [Self <: SpecimenDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenDefinition] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

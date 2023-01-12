@@ -38,7 +38,8 @@ object RecoveryPoint {
     __obj.asInstanceOf[RecoveryPoint]
   }
   
-  extension [Self <: RecoveryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryPoint] (val x: Self) extends AnyVal {
     
     inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TorchControl {
     __obj.asInstanceOf[TorchControl]
   }
   
-  extension [Self <: TorchControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TorchControl] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

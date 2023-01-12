@@ -94,7 +94,8 @@ object RadialBargraphParams {
     __obj.asInstanceOf[RadialBargraphParams]
   }
   
-  extension [Self <: RadialBargraphParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialBargraphParams] (val x: Self) extends AnyVal {
     
     inline def setAlarmSound(value: String): Self = StObject.set(x, "alarmSound", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[AccelerateEndpoint]
     }
     
-    extension [Self <: AccelerateEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccelerateEndpoint] (val x: Self) extends AnyVal {
       
       inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[AccesspointName]
     }
     
-    extension [Self <: AccesspointName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccesspointName] (val x: Self) extends AnyVal {
       
       inline def setAccesspointName(value: String): Self = StObject.set(x, "accesspointName", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object anon {
       __obj.asInstanceOf[AllowFipsRegion]
     }
     
-    extension [Self <: AllowFipsRegion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowFipsRegion] (val x: Self) extends AnyVal {
       
       inline def setAllowFipsRegion(value: Boolean): Self = StObject.set(x, "allowFipsRegion", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[ClientPartition]
     }
     
-    extension [Self <: ClientPartition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientPartition] (val x: Self) extends AnyVal {
       
       inline def setClientPartition(value: String): Self = StObject.set(x, "clientPartition", value.asInstanceOf[js.Any])
     }
@@ -129,7 +133,8 @@ object anon {
       __obj.asInstanceOf[DualstackEndpoint]
     }
     
-    extension [Self <: DualstackEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DualstackEndpoint] (val x: Self) extends AnyVal {
       
       inline def setAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "accelerateEndpoint", value.asInstanceOf[js.Any])
       
@@ -156,7 +161,8 @@ object anon {
       __obj.asInstanceOf[TlsCompatible]
     }
     
-    extension [Self <: TlsCompatible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TlsCompatible] (val x: Self) extends AnyVal {
       
       inline def setTlsCompatible(value: Boolean): Self = StObject.set(x, "tlsCompatible", value.asInstanceOf[js.Any])
       

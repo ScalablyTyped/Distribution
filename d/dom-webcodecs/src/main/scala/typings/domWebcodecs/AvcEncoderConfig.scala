@@ -15,7 +15,8 @@ object AvcEncoderConfig {
     __obj.asInstanceOf[AvcEncoderConfig]
   }
   
-  extension [Self <: AvcEncoderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvcEncoderConfig] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: AvcBitstreamFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

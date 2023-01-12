@@ -17,7 +17,8 @@ object WebViewContext {
     __obj.asInstanceOf[WebViewContext]
   }
   
-  extension [Self <: WebViewContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebViewContext] (val x: Self) extends AnyVal {
     
     inline def setPostMessage(value: Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
   }

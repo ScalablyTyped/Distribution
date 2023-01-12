@@ -38,7 +38,8 @@ object Insight {
     __obj.asInstanceOf[Insight]
   }
   
-  extension [Self <: Insight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Insight] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

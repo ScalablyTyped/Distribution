@@ -23,7 +23,8 @@ object ListQuickConnectsResponse {
     __obj.asInstanceOf[ListQuickConnectsResponse]
   }
   
-  extension [Self <: ListQuickConnectsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQuickConnectsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object PackageDependency {
     __obj.asInstanceOf[PackageDependency]
   }
   
-  extension [Self <: PackageDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageDependency] (val x: Self) extends AnyVal {
     
     inline def setDependencyType(value: String): Self = StObject.set(x, "dependencyType", value.asInstanceOf[js.Any])
     

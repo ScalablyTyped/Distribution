@@ -112,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object mod {
           __obj.asInstanceOf[ProcessEnv]
         }
         
-        extension [Self <: ProcessEnv](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProcessEnv] (val x: Self) extends AnyVal {
           
           inline def setAUTOPREFIXER_GRID(value: GridValue): Self = StObject.set(x, "AUTOPREFIXER_GRID", value.asInstanceOf[js.Any])
           

@@ -22,7 +22,8 @@ object ArmWriterOptions {
     __obj.asInstanceOf[ArmWriterOptions]
   }
   
-  extension [Self <: ArmWriterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmWriterOptions] (val x: Self) extends AnyVal {
     
     inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object WKTOptions {
     __obj.asInstanceOf[WKTOptions]
   }
   
-  extension [Self <: WKTOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WKTOptions] (val x: Self) extends AnyVal {
     
     inline def setSplitCollection(value: Boolean): Self = StObject.set(x, "splitCollection", value.asInstanceOf[js.Any])
     

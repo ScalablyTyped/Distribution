@@ -17,7 +17,8 @@ object JsxTimeElementProps {
     __obj.asInstanceOf[JsxTimeElementProps]
   }
   
-  extension [Self <: JsxTimeElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxTimeElementProps] (val x: Self) extends AnyVal {
     
     inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     

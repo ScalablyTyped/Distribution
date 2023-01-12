@@ -48,7 +48,8 @@ object GetModelManifestResponse {
     __obj.asInstanceOf[GetModelManifestResponse]
   }
   
-  extension [Self <: GetModelManifestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetModelManifestResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

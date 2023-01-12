@@ -21,7 +21,8 @@ object TypesetProps {
     __obj.asInstanceOf[TypesetProps]
   }
   
-  extension [Self <: TypesetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypesetProps] (val x: Self) extends AnyVal {
     
     inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     

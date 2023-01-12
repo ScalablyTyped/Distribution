@@ -38,7 +38,8 @@ object ExperimentTemplateSummary {
     __obj.asInstanceOf[ExperimentTemplateSummary]
   }
   
-  extension [Self <: ExperimentTemplateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentTemplateSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

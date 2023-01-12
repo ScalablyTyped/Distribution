@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setGetAttribute(value: (String, Boolean) => XmlAttribute): Self = StObject.set(x, "getAttribute", js.Any.fromFunction2(value))
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[ParserParameters]
     }
     
-    extension [Self <: ParserParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserParameters] (val x: Self) extends AnyVal {
       
       inline def setLowercaseTagnames(value: Boolean): Self = StObject.set(x, "lowercaseTagnames", value.asInstanceOf[js.Any])
       
@@ -196,7 +199,8 @@ object mod {
       __obj.asInstanceOf[XmlAttribute]
     }
     
-    extension [Self <: XmlAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlAttribute] (val x: Self) extends AnyVal {
       
       inline def setNs(value: String): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     }
@@ -241,7 +245,8 @@ object mod {
       __obj.asInstanceOf[XmlParser]
     }
     
-    extension [Self <: XmlParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlParser] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

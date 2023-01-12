@@ -17,7 +17,8 @@ object BufferFloat64Array {
     __obj.asInstanceOf[BufferFloat64Array]
   }
   
-  extension [Self <: BufferFloat64Array](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferFloat64Array] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: js.typedarray.Float64Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

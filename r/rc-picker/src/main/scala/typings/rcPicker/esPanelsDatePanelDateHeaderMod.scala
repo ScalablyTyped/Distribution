@@ -57,7 +57,8 @@ object esPanelsDatePanelDateHeaderMod {
       __obj.asInstanceOf[DateHeaderProps[DateType]]
     }
     
-    extension [Self <: DateHeaderProps[?], DateType](x: Self & DateHeaderProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateHeaderProps[?], DateType] (val x: Self & DateHeaderProps[DateType]) extends AnyVal {
       
       inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       

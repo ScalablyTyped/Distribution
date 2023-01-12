@@ -27,7 +27,8 @@ object namespacesDevtoolsMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setInspectedWindow(
           value: typings.webextensionPolyfill.namespacesDevtoolsInspectedWindowMod.DevtoolsInspectedWindow.Static

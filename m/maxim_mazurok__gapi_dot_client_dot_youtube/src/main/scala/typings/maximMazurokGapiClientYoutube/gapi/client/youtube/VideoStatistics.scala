@@ -28,7 +28,8 @@ object VideoStatistics {
     __obj.asInstanceOf[VideoStatistics]
   }
   
-  extension [Self <: VideoStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStatistics] (val x: Self) extends AnyVal {
     
     inline def setCommentCount(value: String): Self = StObject.set(x, "commentCount", value.asInstanceOf[js.Any])
     

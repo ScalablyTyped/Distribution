@@ -28,7 +28,8 @@ object ProfilerConfig {
     __obj.asInstanceOf[ProfilerConfig]
   }
   
-  extension [Self <: ProfilerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerConfig] (val x: Self) extends AnyVal {
     
     inline def setProfilingIntervalInMilliseconds(value: ProfilingIntervalInMilliseconds): Self = StObject.set(x, "ProfilingIntervalInMilliseconds", value.asInstanceOf[js.Any])
     

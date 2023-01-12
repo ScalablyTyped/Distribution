@@ -78,7 +78,8 @@ object libStartMod {
       __obj.asInstanceOf[BaseAppSchema]
     }
     
-    extension [Self <: BaseAppSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseAppSchema] (val x: Self) extends AnyVal {
       
       inline def setAppflowId(value: String): Self = StObject.set(x, "appflowId", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object libStartMod {
       __obj.asInstanceOf[ClonedAppSchema]
     }
     
-    extension [Self <: ClonedAppSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClonedAppSchema] (val x: Self) extends AnyVal {
       
       inline def setCloned(value: `true`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
       
@@ -139,7 +141,8 @@ object libStartMod {
       __obj.asInstanceOf[NewAppSchema]
     }
     
-    extension [Self <: NewAppSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewAppSchema] (val x: Self) extends AnyVal {
       
       inline def setCloned(value: `false`): Self = StObject.set(x, "cloned", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object libStartMod {
       __obj.asInstanceOf[SupportedFramework]
     }
     
-    extension [Self <: SupportedFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SupportedFramework] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

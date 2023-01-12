@@ -22,7 +22,8 @@ object IncomingMessageEvent {
     __obj.asInstanceOf[IncomingMessageEvent]
   }
   
-  extension [Self <: IncomingMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

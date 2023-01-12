@@ -31,7 +31,8 @@ object densify {
       __obj.asInstanceOf[Densifier]
     }
     
-    extension [Self <: Densifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Densifier] (val x: Self) extends AnyVal {
       
       inline def setGetResultGeometry(value: () => Geometry): Self = StObject.set(x, "getResultGeometry", js.Any.fromFunction0(value))
       

@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[RollupJsonOptions]
     }
     
-    extension [Self <: RollupJsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollupJsonOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

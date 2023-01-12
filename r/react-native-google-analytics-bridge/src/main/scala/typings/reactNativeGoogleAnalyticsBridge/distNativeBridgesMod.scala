@@ -93,7 +93,8 @@ object distNativeBridgesMod {
       __obj.asInstanceOf[IGoogleAnalyticsBridge]
     }
     
-    extension [Self <: IGoogleAnalyticsBridge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGoogleAnalyticsBridge] (val x: Self) extends AnyVal {
       
       inline def setAllowIDFA(value: (String, Boolean) => Unit): Self = StObject.set(x, "allowIDFA", js.Any.fromFunction2(value))
       
@@ -144,7 +145,8 @@ object distNativeBridgesMod {
       __obj.asInstanceOf[IGoogleAnalyticsSettings]
     }
     
-    extension [Self <: IGoogleAnalyticsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGoogleAnalyticsSettings] (val x: Self) extends AnyVal {
       
       inline def setSetDispatchInterval(value: Any => Unit): Self = StObject.set(x, "setDispatchInterval", js.Any.fromFunction1(value))
       

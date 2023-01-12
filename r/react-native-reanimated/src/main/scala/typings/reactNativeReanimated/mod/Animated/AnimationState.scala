@@ -19,7 +19,8 @@ object AnimationState {
     __obj.asInstanceOf[AnimationState]
   }
   
-  extension [Self <: AnimationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
     
     inline def setFinished(value: AnimatedValue[Double]): Self = StObject.set(x, "finished", value.asInstanceOf[js.Any])
     

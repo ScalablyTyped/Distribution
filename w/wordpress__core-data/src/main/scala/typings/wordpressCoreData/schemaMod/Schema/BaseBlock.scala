@@ -63,7 +63,8 @@ object BaseBlock {
     __obj.asInstanceOf[BaseBlock[T]]
   }
   
-  extension [Self <: BaseBlock[?], T /* <: Context */](x: Self & BaseBlock[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBlock[?], T /* <: Context */] (val x: Self & BaseBlock[T]) extends AnyVal {
     
     inline def setContent(
       value: Raw & (/* import warning: importer.ImportType#apply Failed type conversion: T extends 'edit' ? {  block_version :number} : {} */ js.Any)

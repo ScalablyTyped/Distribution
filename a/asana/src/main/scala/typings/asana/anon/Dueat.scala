@@ -19,7 +19,8 @@ object Dueat {
     __obj.asInstanceOf[Dueat]
   }
   
-  extension [Self <: Dueat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dueat] (val x: Self) extends AnyVal {
     
     inline def setDue_at(value: String): Self = StObject.set(x, "due_at", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Distribution]
     }
     
-    extension [Self <: Distribution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distribution] (val x: Self) extends AnyVal {
       
       inline def setGetCov(value: () => js.Array[js.Array[Double]]): Self = StObject.set(x, "getCov", js.Any.fromFunction0(value))
       

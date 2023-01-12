@@ -36,7 +36,8 @@ object dxChartValueAxisConstantLines {
     __obj.asInstanceOf[dxChartValueAxisConstantLines]
   }
   
-  extension [Self <: dxChartValueAxisConstantLines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartValueAxisConstantLines] (val x: Self) extends AnyVal {
     
     inline def setDisplayBehindSeries(value: Boolean): Self = StObject.set(x, "displayBehindSeries", value.asInstanceOf[js.Any])
     

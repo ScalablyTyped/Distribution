@@ -28,7 +28,8 @@ object MetricQuery {
     __obj.asInstanceOf[MetricQuery]
   }
   
-  extension [Self <: MetricQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricQuery] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: MetricQueryFilterMap): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

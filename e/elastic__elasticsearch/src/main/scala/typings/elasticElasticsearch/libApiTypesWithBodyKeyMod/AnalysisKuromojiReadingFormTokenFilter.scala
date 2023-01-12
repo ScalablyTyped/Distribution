@@ -22,7 +22,8 @@ object AnalysisKuromojiReadingFormTokenFilter {
     __obj.asInstanceOf[AnalysisKuromojiReadingFormTokenFilter]
   }
   
-  extension [Self <: AnalysisKuromojiReadingFormTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiReadingFormTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setType(value: kuromoji_readingform): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

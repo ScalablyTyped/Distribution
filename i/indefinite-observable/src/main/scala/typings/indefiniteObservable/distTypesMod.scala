@@ -23,7 +23,8 @@ object distTypesMod {
       __obj.asInstanceOf[Observable[T]]
     }
     
-    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
       
       inline def setSubscribe(value: ObserverOrNext[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -42,7 +43,8 @@ object distTypesMod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
@@ -63,7 +65,8 @@ object distTypesMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

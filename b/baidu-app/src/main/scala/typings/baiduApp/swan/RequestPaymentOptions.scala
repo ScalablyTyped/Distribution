@@ -38,7 +38,8 @@ object RequestPaymentOptions {
     __obj.asInstanceOf[RequestPaymentOptions]
   }
   
-  extension [Self <: RequestPaymentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPaymentOptions] (val x: Self) extends AnyVal {
     
     inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object TranslationAnimation {
     __obj.asInstanceOf[TranslationAnimation]
   }
   
-  extension [Self <: TranslationAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationAnimation] (val x: Self) extends AnyVal {
     
     inline def setControl1(value: Point): Self = StObject.set(x, "control1", value.asInstanceOf[js.Any])
     

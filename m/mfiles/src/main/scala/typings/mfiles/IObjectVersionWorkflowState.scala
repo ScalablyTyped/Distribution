@@ -19,7 +19,8 @@ object IObjectVersionWorkflowState {
     __obj.asInstanceOf[IObjectVersionWorkflowState]
   }
   
-  extension [Self <: IObjectVersionWorkflowState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectVersionWorkflowState] (val x: Self) extends AnyVal {
     
     inline def setState(value: IPropertyValue): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

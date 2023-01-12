@@ -23,7 +23,8 @@ object BaselineEbsBandwidthMbps {
     __obj.asInstanceOf[BaselineEbsBandwidthMbps]
   }
   
-  extension [Self <: BaselineEbsBandwidthMbps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineEbsBandwidthMbps] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Integer): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     

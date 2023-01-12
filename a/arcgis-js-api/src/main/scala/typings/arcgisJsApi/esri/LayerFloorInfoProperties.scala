@@ -20,7 +20,8 @@ object LayerFloorInfoProperties {
     __obj.asInstanceOf[LayerFloorInfoProperties]
   }
   
-  extension [Self <: LayerFloorInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerFloorInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setFloorField(value: String): Self = StObject.set(x, "floorField", value.asInstanceOf[js.Any])
     

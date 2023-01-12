@@ -18,7 +18,8 @@ object CreateObservabilityConfigurationResponse {
     __obj.asInstanceOf[CreateObservabilityConfigurationResponse]
   }
   
-  extension [Self <: CreateObservabilityConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateObservabilityConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setObservabilityConfiguration(value: ObservabilityConfiguration): Self = StObject.set(x, "ObservabilityConfiguration", value.asInstanceOf[js.Any])
   }

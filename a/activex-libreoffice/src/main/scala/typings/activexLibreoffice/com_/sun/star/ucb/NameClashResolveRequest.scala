@@ -50,7 +50,8 @@ object NameClashResolveRequest {
     __obj.asInstanceOf[NameClashResolveRequest]
   }
   
-  extension [Self <: NameClashResolveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameClashResolveRequest] (val x: Self) extends AnyVal {
     
     inline def setClashingName(value: String): Self = StObject.set(x, "ClashingName", value.asInstanceOf[js.Any])
     

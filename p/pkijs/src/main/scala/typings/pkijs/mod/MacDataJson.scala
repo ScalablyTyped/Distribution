@@ -20,7 +20,8 @@ object MacDataJson {
     __obj.asInstanceOf[MacDataJson]
   }
   
-  extension [Self <: MacDataJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacDataJson] (val x: Self) extends AnyVal {
     
     inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

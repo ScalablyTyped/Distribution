@@ -22,7 +22,8 @@ object RETURNALL {
     __obj.asInstanceOf[RETURNALL]
   }
   
-  extension [Self <: RETURNALL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RETURNALL] (val x: Self) extends AnyVal {
     
     inline def setRETURN_ALL(value: `1`): Self = StObject.set(x, "RETURN_ALL", value.asInstanceOf[js.Any])
     

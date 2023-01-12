@@ -33,7 +33,8 @@ object ScheduledInstancesBlockDeviceMapping {
     __obj.asInstanceOf[ScheduledInstancesBlockDeviceMapping]
   }
   
-  extension [Self <: ScheduledInstancesBlockDeviceMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledInstancesBlockDeviceMapping] (val x: Self) extends AnyVal {
     
     inline def setDeviceName(value: String): Self = StObject.set(x, "DeviceName", value.asInstanceOf[js.Any])
     

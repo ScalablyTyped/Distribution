@@ -24,7 +24,8 @@ object LivePusherContextSnapshotSuccessCallbackResult {
     __obj.asInstanceOf[LivePusherContextSnapshotSuccessCallbackResult]
   }
   
-  extension [Self <: LivePusherContextSnapshotSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePusherContextSnapshotSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

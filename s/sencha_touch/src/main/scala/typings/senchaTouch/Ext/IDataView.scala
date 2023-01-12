@@ -490,7 +490,8 @@ object IDataView {
     __obj.asInstanceOf[IDataView]
   }
   
-  extension [Self <: IDataView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataView] (val x: Self) extends AnyVal {
     
     inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
     

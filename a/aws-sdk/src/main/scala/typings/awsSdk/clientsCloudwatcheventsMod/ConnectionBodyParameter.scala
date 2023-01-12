@@ -28,7 +28,8 @@ object ConnectionBodyParameter {
     __obj.asInstanceOf[ConnectionBodyParameter]
   }
   
-  extension [Self <: ConnectionBodyParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionBodyParameter] (val x: Self) extends AnyVal {
     
     inline def setIsValueSecret(value: Boolean): Self = StObject.set(x, "IsValueSecret", value.asInstanceOf[js.Any])
     

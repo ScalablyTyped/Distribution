@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qrcode-terminal"
-version := "0.12-dt-20211202Z-011370"
+version := "0.12-dt-20211202Z-ba51c2"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

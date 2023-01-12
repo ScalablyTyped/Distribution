@@ -19,7 +19,8 @@ object BackButtonEvent {
     __obj.asInstanceOf[BackButtonEvent]
   }
   
-  extension [Self <: BackButtonEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackButtonEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

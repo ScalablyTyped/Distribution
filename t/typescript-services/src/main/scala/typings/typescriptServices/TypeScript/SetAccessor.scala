@@ -48,7 +48,8 @@ object SetAccessor {
     __obj.asInstanceOf[SetAccessor]
   }
   
-  extension [Self <: SetAccessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAccessor] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

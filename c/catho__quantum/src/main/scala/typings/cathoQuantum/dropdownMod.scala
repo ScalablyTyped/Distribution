@@ -64,7 +64,8 @@ object dropdownMod {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       

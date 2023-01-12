@@ -20,7 +20,8 @@ object WeatherViewModelProperties {
     __obj.asInstanceOf[WeatherViewModelProperties]
   }
   
-  extension [Self <: WeatherViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeatherViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

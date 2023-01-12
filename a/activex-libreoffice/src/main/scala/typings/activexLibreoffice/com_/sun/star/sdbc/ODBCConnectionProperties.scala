@@ -63,7 +63,8 @@ object ODBCConnectionProperties {
     __obj.asInstanceOf[ODBCConnectionProperties]
   }
   
-  extension [Self <: ODBCConnectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ODBCConnectionProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoRetrievingStatement(value: String): Self = StObject.set(x, "AutoRetrievingStatement", value.asInstanceOf[js.Any])
     

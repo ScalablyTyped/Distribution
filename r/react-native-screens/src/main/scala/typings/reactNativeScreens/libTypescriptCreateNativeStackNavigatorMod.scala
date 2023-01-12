@@ -75,7 +75,8 @@ object libTypescriptCreateNativeStackNavigatorMod {
       __obj.asInstanceOf[BackButtonProps]
     }
     
-    extension [Self <: BackButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackButtonProps] (val x: Self) extends AnyVal {
       
       inline def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object libTypescriptCreateNativeStackNavigatorMod {
       __obj.asInstanceOf[NativeStackNavigationConfig]
     }
     
-    extension [Self <: NativeStackNavigationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeStackNavigationConfig] (val x: Self) extends AnyVal {
       
       inline def setHeaderMode(value: none): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object libTypescriptCreateNativeStackNavigatorMod {
       __obj.asInstanceOf[NativeStackNavigationOptions]
     }
     
-    extension [Self <: NativeStackNavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeStackNavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setBackButtonTitle(value: String): Self = StObject.set(x, "backButtonTitle", value.asInstanceOf[js.Any])
       
@@ -280,7 +283,8 @@ object libTypescriptCreateNativeStackNavigatorMod {
       __obj.asInstanceOf[StackNavigatorOptions]
     }
     
-    extension [Self <: StackNavigatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackNavigatorOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimationEnabled(value: Boolean): Self = StObject.set(x, "animationEnabled", value.asInstanceOf[js.Any])
       

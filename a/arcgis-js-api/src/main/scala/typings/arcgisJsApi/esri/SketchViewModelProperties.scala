@@ -113,7 +113,8 @@ object SketchViewModelProperties {
     __obj.asInstanceOf[SketchViewModelProperties]
   }
   
-  extension [Self <: SketchViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveFillSymbol(value: SimpleFillSymbolProperties): Self = StObject.set(x, "activeFillSymbol", value.asInstanceOf[js.Any])
     

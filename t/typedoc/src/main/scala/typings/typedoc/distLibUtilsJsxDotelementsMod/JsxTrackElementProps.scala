@@ -30,7 +30,8 @@ object JsxTrackElementProps {
     __obj.asInstanceOf[JsxTrackElementProps]
   }
   
-  extension [Self <: JsxTrackElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxTrackElementProps] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

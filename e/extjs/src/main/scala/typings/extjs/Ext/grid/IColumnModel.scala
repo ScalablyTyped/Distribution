@@ -43,7 +43,8 @@ object IColumnModel {
     __obj.asInstanceOf[IColumnModel]
   }
   
-  extension [Self <: IColumnModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnModel] (val x: Self) extends AnyVal {
     
     inline def setGetHeaderAtIndex(value: /* index */ js.UndefOr[Double] => typings.extjs.Ext.grid.column.IColumn): Self = StObject.set(x, "getHeaderAtIndex", js.Any.fromFunction1(value))
     

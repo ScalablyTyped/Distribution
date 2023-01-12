@@ -17,7 +17,8 @@ object AppsDynamiteSharedOriginAppSuggestion {
     __obj.asInstanceOf[AppsDynamiteSharedOriginAppSuggestion]
   }
   
-  extension [Self <: AppsDynamiteSharedOriginAppSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOriginAppSuggestion] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppsDynamiteAppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

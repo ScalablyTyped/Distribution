@@ -58,7 +58,8 @@ object ActivateGatewayInput {
     __obj.asInstanceOf[ActivateGatewayInput]
   }
   
-  extension [Self <: ActivateGatewayInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateGatewayInput] (val x: Self) extends AnyVal {
     
     inline def setActivationKey(value: ActivationKey): Self = StObject.set(x, "ActivationKey", value.asInstanceOf[js.Any])
     

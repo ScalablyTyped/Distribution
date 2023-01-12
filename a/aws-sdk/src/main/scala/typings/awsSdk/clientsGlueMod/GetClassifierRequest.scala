@@ -18,7 +18,8 @@ object GetClassifierRequest {
     __obj.asInstanceOf[GetClassifierRequest]
   }
   
-  extension [Self <: GetClassifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClassifierRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

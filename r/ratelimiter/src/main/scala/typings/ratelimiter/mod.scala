@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Limiter]
     }
     
-    extension [Self <: Limiter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limiter] (val x: Self) extends AnyVal {
       
       inline def setGet(value: js.Function2[/* err */ Any, /* info */ LimiterInfo, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[LimiterInfo]
     }
     
-    extension [Self <: LimiterInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimiterInfo] (val x: Self) extends AnyVal {
       
       inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[LimiterOption]
     }
     
-    extension [Self <: LimiterOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimiterOption] (val x: Self) extends AnyVal {
       
       inline def setDb(value: RedisClient): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object mod {
       __obj.asInstanceOf[RedisClient]
     }
     
-    extension [Self <: RedisClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisClient] (val x: Self) extends AnyVal {
       
       inline def setMulti(value: js.Array[js.Array[Any]] => Exec): Self = StObject.set(x, "multi", js.Any.fromFunction1(value))
     }

@@ -21,7 +21,8 @@ object IMessageWebSocketMessageReceivedEventArgs {
     __obj.asInstanceOf[IMessageWebSocketMessageReceivedEventArgs]
   }
   
-  extension [Self <: IMessageWebSocketMessageReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageWebSocketMessageReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGetDataReader(value: () => DataReader): Self = StObject.set(x, "getDataReader", js.Any.fromFunction0(value))
     

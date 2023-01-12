@@ -23,7 +23,8 @@ object FilteringEventUIParam {
     __obj.asInstanceOf[FilteringEventUIParam]
   }
   
-  extension [Self <: FilteringEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteringEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Any): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

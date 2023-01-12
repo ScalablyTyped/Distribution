@@ -33,7 +33,8 @@ object FrameCaptureSettings {
     __obj.asInstanceOf[FrameCaptureSettings]
   }
   
-  extension [Self <: FrameCaptureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameCaptureSettings] (val x: Self) extends AnyVal {
     
     inline def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     

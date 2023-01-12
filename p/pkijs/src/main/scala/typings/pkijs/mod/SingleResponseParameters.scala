@@ -26,7 +26,8 @@ object SingleResponseParameters {
     __obj.asInstanceOf[SingleResponseParameters]
   }
   
-  extension [Self <: SingleResponseParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleResponseParameters] (val x: Self) extends AnyVal {
     
     inline def setCertID(value: CertID): Self = StObject.set(x, "certID", value.asInstanceOf[js.Any])
     

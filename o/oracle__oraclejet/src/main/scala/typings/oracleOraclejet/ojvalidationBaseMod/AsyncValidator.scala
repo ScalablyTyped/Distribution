@@ -17,7 +17,8 @@ object AsyncValidator {
     __obj.asInstanceOf[AsyncValidator[V]]
   }
   
-  extension [Self <: AsyncValidator[?], V](x: Self & AsyncValidator[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncValidator[?], V] (val x: Self & AsyncValidator[V]) extends AnyVal {
     
     inline def setHint(value: js.Promise[String | Null]): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

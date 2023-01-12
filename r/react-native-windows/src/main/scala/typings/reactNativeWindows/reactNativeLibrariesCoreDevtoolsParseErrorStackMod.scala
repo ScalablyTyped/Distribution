@@ -26,7 +26,8 @@ object reactNativeLibrariesCoreDevtoolsParseErrorStackMod {
       __obj.asInstanceOf[ExtendedError]
     }
     
-    extension [Self <: ExtendedError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedError] (val x: Self) extends AnyVal {
       
       inline def setFramesToPop(value: Double): Self = StObject.set(x, "framesToPop", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object reactNativeLibrariesCoreDevtoolsParseErrorStackMod {
       __obj.asInstanceOf[StackFrame]
     }
     
-    extension [Self <: StackFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

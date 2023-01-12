@@ -23,7 +23,8 @@ object DescribeQueueRequest {
     __obj.asInstanceOf[DescribeQueueRequest]
   }
   
-  extension [Self <: DescribeQueueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeQueueRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

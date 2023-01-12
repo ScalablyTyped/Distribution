@@ -41,7 +41,8 @@ object GetChannelsLiveInfoSuccessCallbackResult {
     __obj.asInstanceOf[GetChannelsLiveInfoSuccessCallbackResult]
   }
   
-  extension [Self <: GetChannelsLiveInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChannelsLiveInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

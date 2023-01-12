@@ -19,7 +19,8 @@ object TypeofACLLOGRESET {
     __obj.asInstanceOf[TypeofACLLOGRESET]
   }
   
-  extension [Self <: TypeofACLLOGRESET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofACLLOGRESET] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

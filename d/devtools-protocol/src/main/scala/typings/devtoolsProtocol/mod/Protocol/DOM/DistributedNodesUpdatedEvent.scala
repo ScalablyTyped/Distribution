@@ -23,7 +23,8 @@ object DistributedNodesUpdatedEvent {
     __obj.asInstanceOf[DistributedNodesUpdatedEvent]
   }
   
-  extension [Self <: DistributedNodesUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributedNodesUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setDistributedNodes(value: js.Array[BackendNode]): Self = StObject.set(x, "distributedNodes", value.asInstanceOf[js.Any])
     

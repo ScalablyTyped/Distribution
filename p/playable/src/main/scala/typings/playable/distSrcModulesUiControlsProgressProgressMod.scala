@@ -405,7 +405,8 @@ object distSrcModulesUiControlsProgressProgressMod {
       __obj.asInstanceOf[ProgressControl]
     }
     
-    extension [Self <: ProgressControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressControl] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

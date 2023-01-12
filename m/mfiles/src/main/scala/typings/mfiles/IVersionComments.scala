@@ -17,7 +17,8 @@ object IVersionComments {
     __obj.asInstanceOf[IVersionComments]
   }
   
-  extension [Self <: IVersionComments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVersionComments] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FieldOption {
     __obj.asInstanceOf[FieldOption]
   }
   
-  extension [Self <: FieldOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldOption] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -149,7 +149,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSliderAdapter]
     }
     
-    extension [Self <: PartialMDCSliderAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSliderAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -336,7 +337,8 @@ object anon {
       __obj.asInstanceOf[SkipInitialUIUpdate]
     }
     
-    extension [Self <: SkipInitialUIUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipInitialUIUpdate] (val x: Self) extends AnyVal {
       
       inline def setSkipInitialUIUpdate(value: Boolean): Self = StObject.set(x, "skipInitialUIUpdate", value.asInstanceOf[js.Any])
       
@@ -355,7 +357,8 @@ object anon {
       __obj.asInstanceOf[SkipUpdateUI]
     }
     
-    extension [Self <: SkipUpdateUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipUpdateUI] (val x: Self) extends AnyVal {
       
       inline def setSkipUpdateUI(value: Boolean): Self = StObject.set(x, "skipUpdateUI", value.asInstanceOf[js.Any])
       

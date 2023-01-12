@@ -26,7 +26,8 @@ object SimpleScrollGridState {
     __obj.asInstanceOf[SimpleScrollGridState]
   }
   
-  extension [Self <: SimpleScrollGridState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleScrollGridState] (val x: Self) extends AnyVal {
     
     inline def setForceYScrollbars(value: Boolean): Self = StObject.set(x, "forceYScrollbars", value.asInstanceOf[js.Any])
     

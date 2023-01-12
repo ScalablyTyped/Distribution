@@ -23,7 +23,8 @@ object VolumeMount {
     __obj.asInstanceOf[VolumeMount]
   }
   
-  extension [Self <: VolumeMount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeMount] (val x: Self) extends AnyVal {
     
     inline def setMountPath(value: String): Self = StObject.set(x, "MountPath", value.asInstanceOf[js.Any])
     

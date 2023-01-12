@@ -24,7 +24,8 @@ object PartialUniformany {
     __obj.asInstanceOf[PartialUniformany]
   }
   
-  extension [Self <: PartialUniformany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUniformany] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

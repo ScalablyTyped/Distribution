@@ -31,7 +31,8 @@ object ReturnVar {
     __obj.asInstanceOf[ReturnVar]
   }
   
-  extension [Self <: ReturnVar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnVar] (val x: Self) extends AnyVal {
     
     inline def setAccessDotReturnVar_typekey(value: ReturnVar): Self = StObject.set(x, "Access.ReturnVar_typekey", value.asInstanceOf[js.Any])
     

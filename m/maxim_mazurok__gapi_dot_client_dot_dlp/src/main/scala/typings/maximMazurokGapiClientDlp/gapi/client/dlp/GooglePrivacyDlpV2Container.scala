@@ -43,7 +43,8 @@ object GooglePrivacyDlpV2Container {
     __obj.asInstanceOf[GooglePrivacyDlpV2Container]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Container](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Container] (val x: Self) extends AnyVal {
     
     inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
     

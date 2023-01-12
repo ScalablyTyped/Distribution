@@ -28,7 +28,8 @@ object ReadonlyPromiseSynonym {
     __obj.asInstanceOf[ReadonlyPromiseSynonym]
   }
   
-  extension [Self <: ReadonlyPromiseSynonym](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseSynonym] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[Synonym | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

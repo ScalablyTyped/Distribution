@@ -32,7 +32,8 @@ object HttpQueryParameterMatch {
     __obj.asInstanceOf[HttpQueryParameterMatch]
   }
   
-  extension [Self <: HttpQueryParameterMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpQueryParameterMatch] (val x: Self) extends AnyVal {
     
     inline def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     

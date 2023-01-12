@@ -51,7 +51,8 @@ object config {
     __obj.asInstanceOf[config]
   }
   
-  extension [Self <: config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: config] (val x: Self) extends AnyVal {
     
     inline def setArrayRowMode(value: Boolean): Self = StObject.set(x, "arrayRowMode", value.asInstanceOf[js.Any])
     

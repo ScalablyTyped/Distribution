@@ -18,7 +18,8 @@ object ApplicationTriggerDetails {
     __obj.asInstanceOf[ApplicationTriggerDetails]
   }
   
-  extension [Self <: ApplicationTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

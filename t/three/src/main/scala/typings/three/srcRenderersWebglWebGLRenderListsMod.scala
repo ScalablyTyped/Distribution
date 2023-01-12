@@ -140,7 +140,8 @@ object srcRenderersWebglWebGLRenderListsMod {
       __obj.asInstanceOf[RenderItem]
     }
     
-    extension [Self <: RenderItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderItem] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: BufferGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       

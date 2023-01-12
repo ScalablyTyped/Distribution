@@ -21,7 +21,8 @@ object ResizePanelOptions {
     __obj.asInstanceOf[ResizePanelOptions]
   }
   
-  extension [Self <: ResizePanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizePanelOptions] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

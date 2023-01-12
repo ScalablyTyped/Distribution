@@ -53,7 +53,8 @@ object PutSessionRequest {
     __obj.asInstanceOf[PutSessionRequest]
   }
   
-  extension [Self <: PutSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

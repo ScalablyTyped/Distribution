@@ -1759,7 +1759,8 @@ object typingsCssPropertiesMod {
       __obj.asInstanceOf[CSSPropertiesComplete]
     }
     
-    extension [Self <: CSSPropertiesComplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiesComplete] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: CSSWideKeyword | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch
@@ -3146,7 +3147,8 @@ object typingsCssPropertiesMod {
       __obj.asInstanceOf[CSSPropertiesPseudo]
     }
     
-    extension [Self <: CSSPropertiesPseudo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiesPseudo] (val x: Self) extends AnyVal {
       
       inline def setColonColonafter(value: CSSProperties): Self = StObject.set(x, "::after", value.asInstanceOf[js.Any])
       

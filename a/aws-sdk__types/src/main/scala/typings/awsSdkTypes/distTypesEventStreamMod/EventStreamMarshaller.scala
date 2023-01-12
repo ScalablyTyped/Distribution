@@ -26,7 +26,8 @@ object EventStreamMarshaller {
     __obj.asInstanceOf[EventStreamMarshaller[StreamType]]
   }
   
-  extension [Self <: EventStreamMarshaller[?], StreamType](x: Self & EventStreamMarshaller[StreamType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStreamMarshaller[?], StreamType] (val x: Self & EventStreamMarshaller[StreamType]) extends AnyVal {
     
     inline def setDeserialize(
       value: (StreamType, /* deserializer */ js.Function1[/* input */ Record[String, Message], js.Promise[Any]]) => AsyncIterable[Any]

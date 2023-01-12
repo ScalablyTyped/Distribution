@@ -83,7 +83,8 @@ object PointCloudLayerProperties {
     __obj.asInstanceOf[PointCloudLayerProperties]
   }
   
-  extension [Self <: PointCloudLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setElevationInfo(value: PointCloudLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     

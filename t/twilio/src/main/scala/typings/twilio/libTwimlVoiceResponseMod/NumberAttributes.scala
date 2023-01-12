@@ -41,7 +41,8 @@ object NumberAttributes {
     __obj.asInstanceOf[NumberAttributes]
   }
   
-  extension [Self <: NumberAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberAttributes] (val x: Self) extends AnyVal {
     
     inline def setAmdStatusCallback(value: String): Self = StObject.set(x, "amdStatusCallback", value.asInstanceOf[js.Any])
     

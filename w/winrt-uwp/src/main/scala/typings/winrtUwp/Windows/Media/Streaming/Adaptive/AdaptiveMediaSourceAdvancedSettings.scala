@@ -21,7 +21,8 @@ object AdaptiveMediaSourceAdvancedSettings {
     __obj.asInstanceOf[AdaptiveMediaSourceAdvancedSettings]
   }
   
-  extension [Self <: AdaptiveMediaSourceAdvancedSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourceAdvancedSettings] (val x: Self) extends AnyVal {
     
     inline def setAllSegmentsIndependent(value: Any): Self = StObject.set(x, "allSegmentsIndependent", value.asInstanceOf[js.Any])
     

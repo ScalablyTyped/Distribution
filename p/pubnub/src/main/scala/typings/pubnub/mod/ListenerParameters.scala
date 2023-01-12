@@ -30,7 +30,8 @@ object ListenerParameters {
     __obj.asInstanceOf[ListenerParameters]
   }
   
-  extension [Self <: ListenerParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerParameters] (val x: Self) extends AnyVal {
     
     inline def setFile(value: /* fileEvent */ FileEvent => Unit): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
     

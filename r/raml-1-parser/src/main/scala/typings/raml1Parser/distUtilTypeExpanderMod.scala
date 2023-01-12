@@ -415,7 +415,8 @@ object distUtilTypeExpanderMod {
       __obj.asInstanceOf[BranchingData]
     }
     
-    extension [Self <: BranchingData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchingData] (val x: Self) extends AnyVal {
       
       inline def setBranchingOption(value: Double => Double): Self = StObject.set(x, "branchingOption", js.Any.fromFunction1(value))
       
@@ -449,7 +450,8 @@ object distUtilTypeExpanderMod {
       __obj.asInstanceOf[Entry]
     }
     
-    extension [Self <: Entry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: (GeneralTypeEntry, BranchingData) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
     }
@@ -492,7 +494,8 @@ object distUtilTypeExpanderMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIsAnnotationType(value: Boolean): Self = StObject.set(x, "isAnnotationType", value.asInstanceOf[js.Any])
       
@@ -602,7 +605,8 @@ object distUtilTypeExpanderMod {
       __obj.asInstanceOf[TypeEntry]
     }
     
-    extension [Self <: TypeEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeEntry] (val x: Self) extends AnyVal {
       
       inline def setAddSuperType(value: TypeEntry => Unit): Self = StObject.set(x, "addSuperType", js.Any.fromFunction1(value))
       
@@ -679,7 +683,8 @@ object distUtilTypeExpanderMod {
       __obj.asInstanceOf[TypeMap]
     }
     
-    extension [Self <: TypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeMap] (val x: Self) extends AnyVal {
       
       inline def setAddProperty(value: (String, String, Entry) => Any): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
       

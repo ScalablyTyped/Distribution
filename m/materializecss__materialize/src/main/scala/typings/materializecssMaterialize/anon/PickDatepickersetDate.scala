@@ -29,7 +29,8 @@ object PickDatepickersetDate {
     __obj.asInstanceOf[PickDatepickersetDate]
   }
   
-  extension [Self <: PickDatepickersetDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickDatepickersetDate] (val x: Self) extends AnyVal {
     
     inline def setSetDate(
       value: (/* date */ js.UndefOr[js.Date | String], /* preventOnSelect */ js.UndefOr[Boolean]) => Unit

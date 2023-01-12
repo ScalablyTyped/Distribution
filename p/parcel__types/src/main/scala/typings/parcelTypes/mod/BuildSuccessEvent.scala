@@ -34,7 +34,8 @@ object BuildSuccessEvent {
     __obj.asInstanceOf[BuildSuccessEvent]
   }
   
-  extension [Self <: BuildSuccessEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildSuccessEvent] (val x: Self) extends AnyVal {
     
     inline def setBuildTime(value: Double): Self = StObject.set(x, "buildTime", value.asInstanceOf[js.Any])
     

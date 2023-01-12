@@ -25,7 +25,8 @@ object PolicyTopicEntry {
     __obj.asInstanceOf[PolicyTopicEntry]
   }
   
-  extension [Self <: PolicyTopicEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyTopicEntry] (val x: Self) extends AnyVal {
     
     inline def setEvidences(value: js.Array[PolicyTopicEvidence]): Self = StObject.set(x, "evidences", value.asInstanceOf[js.Any])
     

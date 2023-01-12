@@ -42,7 +42,8 @@ object SyncCarddavAccountOptions {
     __obj.asInstanceOf[SyncCarddavAccountOptions]
   }
   
-  extension [Self <: SyncCarddavAccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncCarddavAccountOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

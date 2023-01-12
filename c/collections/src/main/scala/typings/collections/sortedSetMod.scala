@@ -401,7 +401,8 @@ object sortedSetMod extends Shortcut {
         __obj.asInstanceOf[AbstractSet]
       }
       
-      extension [Self <: AbstractSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractSet] (val x: Self) extends AnyVal {
         
         inline def setAddBeforeOwnPropertyChangeListener(value: /* repeated */ Any => Any): Self = StObject.set(x, "addBeforeOwnPropertyChangeListener", js.Any.fromFunction1(value))
         
@@ -518,7 +519,8 @@ object sortedSetMod extends Shortcut {
         __obj.asInstanceOf[typings.collections.sortedSetMod.internal.Iterator[T]]
       }
       
-      extension [Self <: typings.collections.sortedSetMod.internal.Iterator[?], T](x: Self & typings.collections.sortedSetMod.internal.Iterator[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.collections.sortedSetMod.internal.Iterator[?], T] (val x: Self & typings.collections.sortedSetMod.internal.Iterator[T]) extends AnyVal {
         
         inline def setNext(value: () => Done[T]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       }

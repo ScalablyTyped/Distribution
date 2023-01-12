@@ -31,7 +31,8 @@ object SqlGetAsyncStatusResponse {
     __obj.asInstanceOf[SqlGetAsyncStatusResponse]
   }
   
-  extension [Self <: SqlGetAsyncStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlGetAsyncStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setCompletion_status(value: uint): Self = StObject.set(x, "completion_status", value.asInstanceOf[js.Any])
     

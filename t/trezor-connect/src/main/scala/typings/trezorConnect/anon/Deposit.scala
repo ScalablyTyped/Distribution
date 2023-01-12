@@ -23,7 +23,8 @@ object Deposit {
     __obj.asInstanceOf[Deposit]
   }
   
-  extension [Self <: Deposit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deposit] (val x: Self) extends AnyVal {
     
     inline def setDeposit(value: String): Self = StObject.set(x, "deposit", value.asInstanceOf[js.Any])
     

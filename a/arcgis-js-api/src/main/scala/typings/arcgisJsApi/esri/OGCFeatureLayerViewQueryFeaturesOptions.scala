@@ -21,7 +21,8 @@ object OGCFeatureLayerViewQueryFeaturesOptions {
     __obj.asInstanceOf[OGCFeatureLayerViewQueryFeaturesOptions]
   }
   
-  extension [Self <: OGCFeatureLayerViewQueryFeaturesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerViewQueryFeaturesOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

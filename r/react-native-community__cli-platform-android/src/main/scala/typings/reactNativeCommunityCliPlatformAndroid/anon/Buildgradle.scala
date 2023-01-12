@@ -19,7 +19,8 @@ object Buildgradle {
     __obj.asInstanceOf[Buildgradle]
   }
   
-  extension [Self <: Buildgradle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Buildgradle] (val x: Self) extends AnyVal {
     
     inline def setBuildDotgradle(value: Any): Self = StObject.set(x, "build.gradle", value.asInstanceOf[js.Any])
     

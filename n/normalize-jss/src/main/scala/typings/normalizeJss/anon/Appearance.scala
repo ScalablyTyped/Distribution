@@ -17,7 +17,8 @@ object Appearance {
     __obj.asInstanceOf[Appearance]
   }
   
-  extension [Self <: Appearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
     
     inline def setAppearance(value: String): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     

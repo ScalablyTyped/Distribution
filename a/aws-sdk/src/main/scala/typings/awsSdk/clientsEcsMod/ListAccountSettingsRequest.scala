@@ -43,7 +43,8 @@ object ListAccountSettingsRequest {
     __obj.asInstanceOf[ListAccountSettingsRequest]
   }
   
-  extension [Self <: ListAccountSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setEffectiveSettings(value: Boolean): Self = StObject.set(x, "effectiveSettings", value.asInstanceOf[js.Any])
     

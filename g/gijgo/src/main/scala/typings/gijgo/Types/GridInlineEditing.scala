@@ -17,7 +17,8 @@ object GridInlineEditing {
     __obj.asInstanceOf[GridInlineEditing]
   }
   
-  extension [Self <: GridInlineEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridInlineEditing] (val x: Self) extends AnyVal {
     
     inline def setManagementColumn(value: Boolean): Self = StObject.set(x, "managementColumn", value.asInstanceOf[js.Any])
     

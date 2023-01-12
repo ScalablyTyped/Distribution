@@ -38,7 +38,8 @@ object ExperiencesSummary {
     __obj.asInstanceOf[ExperiencesSummary]
   }
   
-  extension [Self <: ExperiencesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperiencesSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

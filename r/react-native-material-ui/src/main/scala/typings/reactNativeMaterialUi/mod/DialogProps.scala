@@ -21,7 +21,8 @@ object DialogProps {
     __obj.asInstanceOf[DialogProps]
   }
   
-  extension [Self <: DialogProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

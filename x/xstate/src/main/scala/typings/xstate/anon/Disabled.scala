@@ -27,7 +27,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled[TTypesMeta, TAction, TEvent, TServiceMap]]
   }
   
-  extension [Self <: Disabled[?, ?, ?, ?], TTypesMeta /* <: TypegenConstraint */, TAction /* <: BaseActionObject */, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */](x: Self & (Disabled[TTypesMeta, TAction, TEvent, TServiceMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled[?, ?, ?, ?], TTypesMeta /* <: TypegenConstraint */, TAction /* <: BaseActionObject */, TEvent /* <: EventObject */, TServiceMap /* <: ServiceMap */] (val x: Self & (Disabled[TTypesMeta, TAction, TEvent, TServiceMap])) extends AnyVal {
     
     inline def setDisabled(
       value: TypegenDisabled & AllImplementationsProvided & AllowAllEvents & (IndexedEvents[TAction, TEvent])

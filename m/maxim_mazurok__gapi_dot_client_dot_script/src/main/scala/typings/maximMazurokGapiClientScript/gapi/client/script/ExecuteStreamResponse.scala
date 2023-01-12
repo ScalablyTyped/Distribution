@@ -16,7 +16,8 @@ object ExecuteStreamResponse {
     __obj.asInstanceOf[ExecuteStreamResponse]
   }
   
-  extension [Self <: ExecuteStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: ScriptExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

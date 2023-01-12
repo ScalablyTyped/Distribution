@@ -20,7 +20,8 @@ object ICreateIndexRequest {
     __obj.asInstanceOf[ICreateIndexRequest]
   }
   
-  extension [Self <: ICreateIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IIndex): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

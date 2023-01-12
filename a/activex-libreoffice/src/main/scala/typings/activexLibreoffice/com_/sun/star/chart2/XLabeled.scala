@@ -53,7 +53,8 @@ object XLabeled {
     __obj.asInstanceOf[XLabeled]
   }
   
-  extension [Self <: XLabeled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLabeled] (val x: Self) extends AnyVal {
     
     inline def setGetLabel(value: () => XTitle): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     

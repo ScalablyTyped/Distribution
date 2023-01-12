@@ -23,7 +23,8 @@ object Select {
     __obj.asInstanceOf[Select]
   }
   
-  extension [Self <: Select](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
     
     inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     

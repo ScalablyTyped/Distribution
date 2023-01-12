@@ -17,7 +17,8 @@ object PublicKey {
     __obj.asInstanceOf[PublicKey]
   }
   
-  extension [Self <: PublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
     
     inline def setPublicKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     

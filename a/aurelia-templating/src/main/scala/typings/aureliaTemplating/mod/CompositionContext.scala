@@ -81,7 +81,8 @@ object CompositionContext {
     __obj.asInstanceOf[CompositionContext]
   }
   
-  extension [Self <: CompositionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionContext] (val x: Self) extends AnyVal {
     
     inline def setBindingContext(value: Any): Self = StObject.set(x, "bindingContext", value.asInstanceOf[js.Any])
     

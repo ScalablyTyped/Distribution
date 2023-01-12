@@ -33,7 +33,8 @@ object AccountProviderMetadata {
     __obj.asInstanceOf[AccountProviderMetadata]
   }
   
-  extension [Self <: AccountProviderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountProviderMetadata] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

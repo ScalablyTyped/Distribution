@@ -95,7 +95,8 @@ object distColorsMod {
       __obj.asInstanceOf[Colors]
     }
     
-    extension [Self <: Colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
       
       inline def setAncillary(value: ColorFunction): Self = StObject.set(x, "ancillary", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object distColorsMod {
       __obj.asInstanceOf[LoggerColors]
     }
     
-    extension [Self <: LoggerColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerColors] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: ColorFunction): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       

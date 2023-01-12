@@ -292,7 +292,8 @@ object mod {
       __obj.asInstanceOf[Optional[T]]
     }
     
-    extension [Self <: Optional[?], T](x: Self & Optional[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional[?], T] (val x: Self & Optional[T]) extends AnyVal {
       
       inline def setFilter(value: js.Function1[/* value */ T, Boolean] => Optional[T]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

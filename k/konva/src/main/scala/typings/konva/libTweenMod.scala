@@ -124,7 +124,8 @@ object libTweenMod {
       __obj.asInstanceOf[TweenConfig]
     }
     
-    extension [Self <: TweenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenConfig] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object libTweenMod {
       __obj.asInstanceOf[TweenEngine]
     }
     
-    extension [Self <: TweenEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TweenEngine] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       

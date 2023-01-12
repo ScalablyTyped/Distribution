@@ -17,7 +17,8 @@ object AttachmentCancel {
     __obj.asInstanceOf[AttachmentCancel]
   }
   
-  extension [Self <: AttachmentCancel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentCancel] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: typings.activexOutlook.Outlook.Attachment): Self = StObject.set(x, "Attachment", value.asInstanceOf[js.Any])
     

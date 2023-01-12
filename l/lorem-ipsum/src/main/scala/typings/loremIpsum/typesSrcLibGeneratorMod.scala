@@ -55,7 +55,8 @@ object typesSrcLibGeneratorMod {
       __obj.asInstanceOf[IBounds]
     }
     
-    extension [Self <: IBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBounds] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object typesSrcLibGeneratorMod {
       __obj.asInstanceOf[IGeneratorOptions]
     }
     
-    extension [Self <: IGeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
       
@@ -119,7 +121,8 @@ object typesSrcLibGeneratorMod {
       __obj.asInstanceOf[IMath]
     }
     
-    extension [Self <: IMath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMath] (val x: Self) extends AnyVal {
       
       inline def setSeedrandom(value: ISeedRandom): Self = StObject.set(x, "seedrandom", value.asInstanceOf[js.Any])
     }

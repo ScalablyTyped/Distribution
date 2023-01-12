@@ -31,7 +31,8 @@ object WebApplication {
     __obj.asInstanceOf[WebApplication]
   }
   
-  extension [Self <: WebApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApplication] (val x: Self) extends AnyVal {
     
     inline def setHomePageUrl(value: NullableOption[String]): Self = StObject.set(x, "homePageUrl", value.asInstanceOf[js.Any])
     

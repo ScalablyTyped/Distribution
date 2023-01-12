@@ -20,7 +20,8 @@ object ReadTempFileStreamResult {
     __obj.asInstanceOf[ReadTempFileStreamResult]
   }
   
-  extension [Self <: ReadTempFileStreamResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadTempFileStreamResult] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

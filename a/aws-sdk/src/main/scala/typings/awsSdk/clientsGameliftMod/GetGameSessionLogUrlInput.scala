@@ -18,7 +18,8 @@ object GetGameSessionLogUrlInput {
     __obj.asInstanceOf[GetGameSessionLogUrlInput]
   }
   
-  extension [Self <: GetGameSessionLogUrlInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGameSessionLogUrlInput] (val x: Self) extends AnyVal {
     
     inline def setGameSessionId(value: ArnStringModel): Self = StObject.set(x, "GameSessionId", value.asInstanceOf[js.Any])
   }

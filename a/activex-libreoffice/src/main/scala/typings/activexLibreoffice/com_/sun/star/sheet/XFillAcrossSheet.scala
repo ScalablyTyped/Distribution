@@ -26,7 +26,8 @@ object XFillAcrossSheet {
     __obj.asInstanceOf[XFillAcrossSheet]
   }
   
-  extension [Self <: XFillAcrossSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFillAcrossSheet] (val x: Self) extends AnyVal {
     
     inline def setFillAcrossSheets(value: Double => Unit): Self = StObject.set(x, "fillAcrossSheets", js.Any.fromFunction1(value))
   }

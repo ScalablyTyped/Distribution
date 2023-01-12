@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setColor(value: FillSolidColorTypeDescriptor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[ColorPatternKind]
     }
     
-    extension [Self <: ColorPatternKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorPatternKind] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[EndColor]
     }
     
-    extension [Self <: EndColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndColor] (val x: Self) extends AnyVal {
       
       inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
       
@@ -108,7 +112,8 @@ object anon {
       __obj.asInstanceOf[PatternKind]
     }
     
-    extension [Self <: PatternKind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatternKind] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -133,7 +138,8 @@ object anon {
       __obj.asInstanceOf[StartColor]
     }
     
-    extension [Self <: StartColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartColor] (val x: Self) extends AnyVal {
       
       inline def setEndColor(value: Boolean): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
       

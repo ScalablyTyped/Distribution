@@ -24,7 +24,8 @@ object `0RangeBack` {
     __obj.asInstanceOf[`0RangeBack`[From, To, L]]
   }
   
-  extension [Self <: `0RangeBack`[?, ?, ?], From /* <: Iteration */, To /* <: Iteration */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0RangeBack`[From, To, L])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0RangeBack`[?, ?, ?], From /* <: Iteration */, To /* <: Iteration */, L /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0RangeBack`[From, To, L])) extends AnyVal {
     
     inline def set0(value: RangeBack[Next[From], To, Prepend[L, Pos[From]]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

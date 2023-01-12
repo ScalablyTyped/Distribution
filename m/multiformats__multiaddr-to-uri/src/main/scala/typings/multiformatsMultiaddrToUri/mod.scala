@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[MultiaddrToUriOpts]
     }
     
-    extension [Self <: MultiaddrToUriOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiaddrToUriOpts] (val x: Self) extends AnyVal {
       
       inline def setAssumeHttp(value: Boolean): Self = StObject.set(x, "assumeHttp", value.asInstanceOf[js.Any])
       

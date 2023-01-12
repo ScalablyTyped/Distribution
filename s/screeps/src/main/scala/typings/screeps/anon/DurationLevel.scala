@@ -53,7 +53,8 @@ object DurationLevel {
     __obj.asInstanceOf[DurationLevel]
   }
   
-  extension [Self <: DurationLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationLevel] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

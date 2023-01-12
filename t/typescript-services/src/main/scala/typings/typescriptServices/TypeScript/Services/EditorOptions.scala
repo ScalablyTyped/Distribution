@@ -21,7 +21,8 @@ object EditorOptions {
     __obj.asInstanceOf[EditorOptions]
   }
   
-  extension [Self <: EditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
     
     inline def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setRecurly(value: Recurly): Self = StObject.set(x, "recurly", value.asInstanceOf[js.Any])
       }

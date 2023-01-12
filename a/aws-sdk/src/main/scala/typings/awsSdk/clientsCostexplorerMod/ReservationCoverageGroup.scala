@@ -23,7 +23,8 @@ object ReservationCoverageGroup {
     __obj.asInstanceOf[ReservationCoverageGroup]
   }
   
-  extension [Self <: ReservationCoverageGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationCoverageGroup] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[HandlerProtocol]
     }
     
-    extension [Self <: HandlerProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerProtocol] (val x: Self) extends AnyVal {
       
       inline def setHandlerProtocol(value: String): Self = StObject.set(x, "handlerProtocol", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: HttpResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object GroupsToOverride {
     __obj.asInstanceOf[GroupsToOverride]
   }
   
-  extension [Self <: GroupsToOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupsToOverride] (val x: Self) extends AnyVal {
     
     inline def setGroupsToOverride(value: js.Array[String]): Self = StObject.set(x, "groupsToOverride", value.asInstanceOf[js.Any])
     

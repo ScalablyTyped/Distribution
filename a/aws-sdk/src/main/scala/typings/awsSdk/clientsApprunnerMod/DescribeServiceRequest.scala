@@ -18,7 +18,8 @@ object DescribeServiceRequest {
     __obj.asInstanceOf[DescribeServiceRequest]
   }
   
-  extension [Self <: DescribeServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceArn(value: AppRunnerResourceArn): Self = StObject.set(x, "ServiceArn", value.asInstanceOf[js.Any])
   }

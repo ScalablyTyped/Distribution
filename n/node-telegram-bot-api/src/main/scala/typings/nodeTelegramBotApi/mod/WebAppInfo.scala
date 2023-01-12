@@ -15,7 +15,8 @@ object WebAppInfo {
     __obj.asInstanceOf[WebAppInfo]
   }
   
-  extension [Self <: WebAppInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppInfo] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

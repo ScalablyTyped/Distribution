@@ -22,7 +22,8 @@ object HttpResponse {
     __obj.asInstanceOf[HttpResponse[R]]
   }
   
-  extension [Self <: HttpResponse[?], R](x: Self & HttpResponse[R]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpResponse[?], R] (val x: Self & HttpResponse[R]) extends AnyVal {
     
     inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

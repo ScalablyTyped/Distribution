@@ -16,7 +16,8 @@ object MessageHandler {
     __obj.asInstanceOf[MessageHandler[T]]
   }
   
-  extension [Self <: MessageHandler[?], T /* <: IMessage */](x: Self & MessageHandler[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageHandler[?], T /* <: IMessage */] (val x: Self & MessageHandler[T]) extends AnyVal {
     
     inline def setHandle(value: T => Unit | Thenable[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
   }

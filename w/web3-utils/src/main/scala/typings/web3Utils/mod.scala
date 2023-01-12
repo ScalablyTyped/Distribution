@@ -182,7 +182,8 @@ object mod {
       __obj.asInstanceOf[AbiInput]
     }
     
-    extension [Self <: AbiInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiInput] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[AbiInput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -232,7 +233,8 @@ object mod {
       __obj.asInstanceOf[AbiItem]
     }
     
-    extension [Self <: AbiItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiItem] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -292,7 +294,8 @@ object mod {
       __obj.asInstanceOf[AbiOutput]
     }
     
-    extension [Self <: AbiOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbiOutput] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: js.Array[AbiOutput]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -539,7 +542,8 @@ object mod {
       __obj.asInstanceOf[Units]
     }
     
-    extension [Self <: Units](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Units] (val x: Self) extends AnyVal {
       
       inline def setBabbage(value: String): Self = StObject.set(x, "babbage", value.asInstanceOf[js.Any])
       

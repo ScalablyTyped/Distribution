@@ -39,7 +39,8 @@ object distOperationsExtensionsTypesMod {
       __obj.asInstanceOf[CreateExtensionOptions]
     }
     
-    extension [Self <: CreateExtensionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateExtensionOptions] (val x: Self) extends AnyVal {
       
       inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       

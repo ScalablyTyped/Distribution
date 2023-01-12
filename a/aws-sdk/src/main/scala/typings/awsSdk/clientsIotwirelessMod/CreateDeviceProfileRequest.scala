@@ -33,7 +33,8 @@ object CreateDeviceProfileRequest {
     __obj.asInstanceOf[CreateDeviceProfileRequest]
   }
   
-  extension [Self <: CreateDeviceProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDeviceProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

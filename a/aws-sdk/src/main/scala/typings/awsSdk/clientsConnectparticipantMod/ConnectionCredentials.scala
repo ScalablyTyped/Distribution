@@ -23,7 +23,8 @@ object ConnectionCredentials {
     __obj.asInstanceOf[ConnectionCredentials]
   }
   
-  extension [Self <: ConnectionCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionCredentials] (val x: Self) extends AnyVal {
     
     inline def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
     

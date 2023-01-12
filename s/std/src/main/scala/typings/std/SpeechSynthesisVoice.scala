@@ -35,7 +35,8 @@ object SpeechSynthesisVoice {
     __obj.asInstanceOf[SpeechSynthesisVoice]
   }
   
-  extension [Self <: SpeechSynthesisVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechSynthesisVoice] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: scala.Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

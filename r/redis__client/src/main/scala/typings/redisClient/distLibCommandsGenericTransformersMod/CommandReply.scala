@@ -36,7 +36,8 @@ object CommandReply {
     __obj.asInstanceOf[CommandReply]
   }
   
-  extension [Self <: CommandReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandReply] (val x: Self) extends AnyVal {
     
     inline def setArity(value: Double): Self = StObject.set(x, "arity", value.asInstanceOf[js.Any])
     

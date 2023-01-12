@@ -24,7 +24,8 @@ object Url {
     __obj.asInstanceOf[Url[V]]
   }
   
-  extension [Self <: Url[?], V](x: Self & Url[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Url[?], V] (val x: Self & Url[V]) extends AnyVal {
     
     inline def setBody(value: V): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

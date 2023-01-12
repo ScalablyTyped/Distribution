@@ -43,7 +43,8 @@ object CreateSavingsPlanRequest {
     __obj.asInstanceOf[CreateSavingsPlanRequest]
   }
   
-  extension [Self <: CreateSavingsPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSavingsPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

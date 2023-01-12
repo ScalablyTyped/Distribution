@@ -20,7 +20,8 @@ object ConnectedDevicesOptionsve {
     __obj.asInstanceOf[ConnectedDevicesOptionsve]
   }
   
-  extension [Self <: ConnectedDevicesOptionsve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedDevicesOptionsve] (val x: Self) extends AnyVal {
     
     inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     

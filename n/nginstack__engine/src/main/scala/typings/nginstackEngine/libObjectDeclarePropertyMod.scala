@@ -27,7 +27,8 @@ object libObjectDeclarePropertyMod {
       __obj.asInstanceOf[PropertyDescriptor]
     }
     
-    extension [Self <: PropertyDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object SlackSourceProperties {
     __obj.asInstanceOf[SlackSourceProperties]
   }
   
-  extension [Self <: SlackSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

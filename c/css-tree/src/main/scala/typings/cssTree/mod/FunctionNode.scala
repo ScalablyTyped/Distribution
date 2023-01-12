@@ -25,7 +25,8 @@ object FunctionNode {
     __obj.asInstanceOf[FunctionNode]
   }
   
-  extension [Self <: FunctionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

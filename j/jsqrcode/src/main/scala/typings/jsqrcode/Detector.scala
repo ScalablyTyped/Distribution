@@ -69,7 +69,8 @@ object Detector {
     __obj.asInstanceOf[Detector]
   }
   
-  extension [Self <: Detector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detector] (val x: Self) extends AnyVal {
     
     inline def setCalculateModuleSize(value: (AlignmentPattern, AlignmentPattern, AlignmentPattern) => Double): Self = StObject.set(x, "calculateModuleSize", js.Any.fromFunction3(value))
     

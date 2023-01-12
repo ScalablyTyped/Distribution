@@ -15,7 +15,8 @@ object ZwiebackSessionProto {
     __obj.asInstanceOf[ZwiebackSessionProto]
   }
   
-  extension [Self <: ZwiebackSessionProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZwiebackSessionProto] (val x: Self) extends AnyVal {
     
     inline def setZwiebackSessionId(value: String): Self = StObject.set(x, "zwiebackSessionId", value.asInstanceOf[js.Any])
     

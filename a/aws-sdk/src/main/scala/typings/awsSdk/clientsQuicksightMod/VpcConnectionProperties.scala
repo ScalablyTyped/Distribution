@@ -18,7 +18,8 @@ object VpcConnectionProperties {
     __obj.asInstanceOf[VpcConnectionProperties]
   }
   
-  extension [Self <: VpcConnectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcConnectionProperties] (val x: Self) extends AnyVal {
     
     inline def setVpcConnectionArn(value: Arn): Self = StObject.set(x, "VpcConnectionArn", value.asInstanceOf[js.Any])
   }

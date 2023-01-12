@@ -35,7 +35,8 @@ object Codeofconductfile {
     __obj.asInstanceOf[Codeofconductfile]
   }
   
-  extension [Self <: Codeofconductfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codeofconductfile] (val x: Self) extends AnyVal {
     
     inline def setCode_of_conduct(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-code-of-conduct-simple'] */ js.Any

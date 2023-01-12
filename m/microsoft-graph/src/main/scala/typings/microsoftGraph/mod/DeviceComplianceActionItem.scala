@@ -30,7 +30,8 @@ object DeviceComplianceActionItem {
     __obj.asInstanceOf[DeviceComplianceActionItem]
   }
   
-  extension [Self <: DeviceComplianceActionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceComplianceActionItem] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: DeviceComplianceActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

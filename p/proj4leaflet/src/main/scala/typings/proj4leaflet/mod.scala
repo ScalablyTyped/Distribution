@@ -117,7 +117,8 @@ object mod {
           __obj.asInstanceOf[ProjCRSOptions]
         }
         
-        extension [Self <: ProjCRSOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProjCRSOptions] (val x: Self) extends AnyVal {
           
           inline def setBounds(value: Bounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
           
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[Proj4GeoJSONFeature]
     }
     
-    extension [Self <: Proj4GeoJSONFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Proj4GeoJSONFeature] (val x: Self) extends AnyVal {
       
       inline def setCrs(value: Properties): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       

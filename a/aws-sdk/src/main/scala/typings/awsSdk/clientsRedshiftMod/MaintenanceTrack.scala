@@ -28,7 +28,8 @@ object MaintenanceTrack {
     __obj.asInstanceOf[MaintenanceTrack]
   }
   
-  extension [Self <: MaintenanceTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceTrack] (val x: Self) extends AnyVal {
     
     inline def setDatabaseVersion(value: String): Self = StObject.set(x, "DatabaseVersion", value.asInstanceOf[js.Any])
     

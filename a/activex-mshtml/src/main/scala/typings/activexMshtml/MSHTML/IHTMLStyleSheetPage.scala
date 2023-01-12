@@ -21,7 +21,8 @@ object IHTMLStyleSheetPage {
     __obj.asInstanceOf[IHTMLStyleSheetPage]
   }
   
-  extension [Self <: IHTMLStyleSheetPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLStyleSheetPage] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLStyleSheetPage_typekey(value: IHTMLStyleSheetPage): Self = StObject.set(x, "MSHTML.IHTMLStyleSheetPage_typekey", value.asInstanceOf[js.Any])
     

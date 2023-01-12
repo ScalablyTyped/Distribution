@@ -25,7 +25,8 @@ object AdministrationRegion {
     __obj.asInstanceOf[AdministrationRegion]
   }
   
-  extension [Self <: AdministrationRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdministrationRegion] (val x: Self) extends AnyVal {
     
     inline def setElectionAdministrationBody(value: AdministrativeBody): Self = StObject.set(x, "electionAdministrationBody", value.asInstanceOf[js.Any])
     

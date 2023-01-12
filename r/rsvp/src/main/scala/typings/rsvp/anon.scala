@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: `9`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`8`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`7`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -80,7 +83,8 @@ object anon {
       __obj.asInstanceOf[`3`]
     }
     
-    extension [Self <: `3`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`6`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -97,7 +101,8 @@ object anon {
       __obj.asInstanceOf[`4`]
     }
     
-    extension [Self <: `4`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -114,7 +119,8 @@ object anon {
       __obj.asInstanceOf[`5`]
     }
     
-    extension [Self <: `5`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -131,7 +137,8 @@ object anon {
       __obj.asInstanceOf[`6`]
     }
     
-    extension [Self <: `6`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -148,7 +155,8 @@ object anon {
       __obj.asInstanceOf[`7`]
     }
     
-    extension [Self <: `7`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `7`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -165,7 +173,8 @@ object anon {
       __obj.asInstanceOf[`8`]
     }
     
-    extension [Self <: `8`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `8`] (val x: Self) extends AnyVal {
       
       inline def setLength(value: typings.rsvp.rsvpInts.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -182,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: `10`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

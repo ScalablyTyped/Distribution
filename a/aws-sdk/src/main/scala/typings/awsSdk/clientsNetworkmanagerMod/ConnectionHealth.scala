@@ -28,7 +28,8 @@ object ConnectionHealth {
     __obj.asInstanceOf[ConnectionHealth]
   }
   
-  extension [Self <: ConnectionHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionHealth] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: ConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

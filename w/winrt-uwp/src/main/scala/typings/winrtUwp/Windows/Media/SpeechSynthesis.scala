@@ -129,7 +129,8 @@ object SpeechSynthesis {
       __obj.asInstanceOf[SpeechSynthesisStream]
     }
     
-    extension [Self <: SpeechSynthesisStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeechSynthesisStream] (val x: Self) extends AnyVal {
       
       inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object SpeechSynthesis {
       __obj.asInstanceOf[SpeechSynthesizer]
     }
     
-    extension [Self <: SpeechSynthesizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeechSynthesizer] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -235,7 +237,8 @@ object SpeechSynthesis {
       __obj.asInstanceOf[VoiceInformation]
     }
     
-    extension [Self <: VoiceInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoiceInformation] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

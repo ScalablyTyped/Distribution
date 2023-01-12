@@ -233,7 +233,8 @@ object DocumentInitParameters {
     __obj.asInstanceOf[DocumentInitParameters]
   }
   
-  extension [Self <: DocumentInitParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentInitParameters] (val x: Self) extends AnyVal {
     
     inline def setCMapPacked(value: Boolean): Self = StObject.set(x, "cMapPacked", value.asInstanceOf[js.Any])
     

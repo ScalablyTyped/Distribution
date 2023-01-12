@@ -27,7 +27,8 @@ object distSrcModulesUiControlsPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureControl]
     }
     
-    extension [Self <: IPictureInPictureControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureControl] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -50,7 +51,8 @@ object distSrcModulesUiControlsPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureViewCallbacks]
     }
     
-    extension [Self <: IPictureInPictureViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnButtonClick(value: () => Unit): Self = StObject.set(x, "onButtonClick", js.Any.fromFunction0(value))
     }
@@ -78,7 +80,8 @@ object distSrcModulesUiControlsPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureViewConfig]
     }
     
-    extension [Self <: IPictureInPictureViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: IPictureInPictureViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -115,7 +118,8 @@ object distSrcModulesUiControlsPictureInPictureTypesMod {
       __obj.asInstanceOf[IPictureInPictureViewStyles]
     }
     
-    extension [Self <: IPictureInPictureViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPictureInPictureViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

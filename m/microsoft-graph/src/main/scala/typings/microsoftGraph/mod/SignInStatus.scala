@@ -28,7 +28,8 @@ object SignInStatus {
     __obj.asInstanceOf[SignInStatus]
   }
   
-  extension [Self <: SignInStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignInStatus] (val x: Self) extends AnyVal {
     
     inline def setAdditionalDetails(value: NullableOption[String]): Self = StObject.set(x, "additionalDetails", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Map {
     __obj.asInstanceOf[Map]
   }
   
-  extension [Self <: Map](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
     
     inline def setFlattened(value: scala.Boolean): Self = StObject.set(x, "flattened", value.asInstanceOf[js.Any])
     

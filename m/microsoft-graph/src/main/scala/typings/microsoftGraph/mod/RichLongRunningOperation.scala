@@ -27,7 +27,8 @@ object RichLongRunningOperation {
     __obj.asInstanceOf[RichLongRunningOperation]
   }
   
-  extension [Self <: RichLongRunningOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichLongRunningOperation] (val x: Self) extends AnyVal {
     
     inline def setError(value: NullableOption[PublicError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

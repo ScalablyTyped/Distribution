@@ -48,7 +48,8 @@ object GetResponsePlanOutput {
     __obj.asInstanceOf[GetResponsePlanOutput]
   }
   
-  extension [Self <: GetResponsePlanOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResponsePlanOutput] (val x: Self) extends AnyVal {
     
     inline def setActions(value: ActionsList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

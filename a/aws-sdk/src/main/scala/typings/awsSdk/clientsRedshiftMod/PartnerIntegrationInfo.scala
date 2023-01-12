@@ -43,7 +43,8 @@ object PartnerIntegrationInfo {
     __obj.asInstanceOf[PartnerIntegrationInfo]
   }
   
-  extension [Self <: PartnerIntegrationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerIntegrationInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object libSettingsMod {
       __obj.asInstanceOf[IRenderOptions]
     }
     
-    extension [Self <: IRenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
       
       inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object libSettingsMod {
       __obj.asInstanceOf[ISettings]
     }
     
-    extension [Self <: ISettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
       
       inline def setADAPTER(value: IAdapter): Self = StObject.set(x, "ADAPTER", value.asInstanceOf[js.Any])
       

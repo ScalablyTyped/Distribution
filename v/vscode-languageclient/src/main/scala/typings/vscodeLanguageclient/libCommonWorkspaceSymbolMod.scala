@@ -66,7 +66,8 @@ object libCommonWorkspaceSymbolMod {
       __obj.asInstanceOf[WorkspaceSymbolMiddleware]
     }
     
-    extension [Self <: WorkspaceSymbolMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceSymbolMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideWorkspaceSymbols(
         value: js.ThisFunction3[

@@ -22,7 +22,8 @@ object ConditionalRecipientRuleCondition {
     __obj.asInstanceOf[ConditionalRecipientRuleCondition]
   }
   
-  extension [Self <: ConditionalRecipientRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRecipientRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[ConditionalRecipientRuleFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

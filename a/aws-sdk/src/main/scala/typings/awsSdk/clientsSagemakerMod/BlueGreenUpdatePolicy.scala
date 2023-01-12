@@ -28,7 +28,8 @@ object BlueGreenUpdatePolicy {
     __obj.asInstanceOf[BlueGreenUpdatePolicy]
   }
   
-  extension [Self <: BlueGreenUpdatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlueGreenUpdatePolicy] (val x: Self) extends AnyVal {
     
     inline def setMaximumExecutionTimeoutInSeconds(value: MaximumExecutionTimeoutInSeconds): Self = StObject.set(x, "MaximumExecutionTimeoutInSeconds", value.asInstanceOf[js.Any])
     

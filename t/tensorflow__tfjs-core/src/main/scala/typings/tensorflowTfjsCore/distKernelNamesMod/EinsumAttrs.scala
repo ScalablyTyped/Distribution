@@ -15,7 +15,8 @@ object EinsumAttrs {
     __obj.asInstanceOf[EinsumAttrs]
   }
   
-  extension [Self <: EinsumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EinsumAttrs] (val x: Self) extends AnyVal {
     
     inline def setEquation(value: String): Self = StObject.set(x, "equation", value.asInstanceOf[js.Any])
   }

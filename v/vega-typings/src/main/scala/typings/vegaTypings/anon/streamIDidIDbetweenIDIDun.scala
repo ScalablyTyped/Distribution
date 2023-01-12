@@ -46,7 +46,8 @@ object streamIDidIDbetweenIDIDun {
     __obj.asInstanceOf[streamIDidIDbetweenIDIDun]
   }
   
-  extension [Self <: streamIDidIDbetweenIDIDun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: streamIDidIDbetweenIDIDun] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: js.Tuple2[ID, ID]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
     

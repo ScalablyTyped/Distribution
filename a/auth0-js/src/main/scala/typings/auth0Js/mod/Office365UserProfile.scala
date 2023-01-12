@@ -31,7 +31,8 @@ object Office365UserProfile {
     __obj.asInstanceOf[Office365UserProfile]
   }
   
-  extension [Self <: Office365UserProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Office365UserProfile] (val x: Self) extends AnyVal {
     
     inline def setTenantid(value: String): Self = StObject.set(x, "tenantid", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object RasterClassBreaksResult {
     __obj.asInstanceOf[RasterClassBreaksResult]
   }
   
-  extension [Self <: RasterClassBreaksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterClassBreaksResult] (val x: Self) extends AnyVal {
     
     inline def setClassBreaksResult(value: ClassBreaksResult): Self = StObject.set(x, "classBreaksResult", value.asInstanceOf[js.Any])
     

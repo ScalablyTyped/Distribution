@@ -23,7 +23,8 @@ object DrawCreateDrawOptions {
     __obj.asInstanceOf[DrawCreateDrawOptions]
   }
   
-  extension [Self <: DrawCreateDrawOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawCreateDrawOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: hybrid | freehand | click): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CompositeOperationChangeTiledImageEvent {
     __obj.asInstanceOf[CompositeOperationChangeTiledImageEvent]
   }
   
-  extension [Self <: CompositeOperationChangeTiledImageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeOperationChangeTiledImageEvent] (val x: Self) extends AnyVal {
     
     inline def setCompositeOperationChange(value: String): Self = StObject.set(x, "compositeOperationChange", value.asInstanceOf[js.Any])
   }

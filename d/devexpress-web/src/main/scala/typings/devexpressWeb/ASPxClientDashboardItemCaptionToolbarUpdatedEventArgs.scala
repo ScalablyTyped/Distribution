@@ -28,7 +28,8 @@ object ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs {
     __obj.asInstanceOf[ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs]
   }
   
-  extension [Self <: ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItemName(value: String): Self = StObject.set(x, "ItemName", value.asInstanceOf[js.Any])
     

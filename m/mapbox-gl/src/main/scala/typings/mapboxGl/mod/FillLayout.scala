@@ -18,7 +18,8 @@ object FillLayout {
     __obj.asInstanceOf[FillLayout]
   }
   
-  extension [Self <: FillLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillLayout] (val x: Self) extends AnyVal {
     
     inline def `setFill-sort-key`(value: Double | Expression): Self = StObject.set(x, "fill-sort-key", value.asInstanceOf[js.Any])
     

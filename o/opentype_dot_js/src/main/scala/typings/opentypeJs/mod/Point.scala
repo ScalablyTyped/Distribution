@@ -15,7 +15,8 @@ object Point {
     __obj.asInstanceOf[Point]
   }
   
-  extension [Self <: Point](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
     
     inline def setLastPointOfContour(value: Boolean): Self = StObject.set(x, "lastPointOfContour", value.asInstanceOf[js.Any])
     

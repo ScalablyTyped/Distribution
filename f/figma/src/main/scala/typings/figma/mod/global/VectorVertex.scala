@@ -25,7 +25,8 @@ object VectorVertex {
     __obj.asInstanceOf[VectorVertex]
   }
   
-  extension [Self <: VectorVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorVertex] (val x: Self) extends AnyVal {
     
     inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     

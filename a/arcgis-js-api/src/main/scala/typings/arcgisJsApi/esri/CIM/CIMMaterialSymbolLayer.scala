@@ -32,7 +32,8 @@ object CIMMaterialSymbolLayer {
     __obj.asInstanceOf[CIMMaterialSymbolLayer]
   }
   
-  extension [Self <: CIMMaterialSymbolLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMaterialSymbolLayer] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

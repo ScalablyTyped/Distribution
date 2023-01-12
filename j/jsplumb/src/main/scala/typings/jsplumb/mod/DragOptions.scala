@@ -25,7 +25,8 @@ object DragOptions {
     __obj.asInstanceOf[DragOptions]
   }
   
-  extension [Self <: DragOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragOptions] (val x: Self) extends AnyVal {
     
     inline def setContainment(value: String): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
     

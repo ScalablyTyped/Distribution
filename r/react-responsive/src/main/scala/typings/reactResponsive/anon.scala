@@ -109,7 +109,8 @@ object anon {
       __obj.asInstanceOf[PartialMediaQueryAllQuery]
     }
     
-    extension [Self <: PartialMediaQueryAllQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMediaQueryAllQuery] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -389,7 +390,8 @@ object anon {
       __obj.asInstanceOf[PartialMediaQueryAllQueryAll]
     }
     
-    extension [Self <: PartialMediaQueryAllQueryAll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMediaQueryAllQueryAll] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -609,7 +611,8 @@ object anon {
       __obj.asInstanceOf[PartialMediaQueryMatchers]
     }
     
-    extension [Self <: PartialMediaQueryMatchers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMediaQueryMatchers] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

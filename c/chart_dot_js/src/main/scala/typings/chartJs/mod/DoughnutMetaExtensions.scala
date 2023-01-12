@@ -15,7 +15,8 @@ object DoughnutMetaExtensions {
     __obj.asInstanceOf[DoughnutMetaExtensions]
   }
   
-  extension [Self <: DoughnutMetaExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoughnutMetaExtensions] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object AudioPidSelection {
     __obj.asInstanceOf[AudioPidSelection]
   }
   
-  extension [Self <: AudioPidSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioPidSelection] (val x: Self) extends AnyVal {
     
     inline def setPid(value: integerMin0Max8191): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
   }

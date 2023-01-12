@@ -46,7 +46,8 @@ object CoinsFetchHistoryData {
     __obj.asInstanceOf[CoinsFetchHistoryData]
   }
   
-  extension [Self <: CoinsFetchHistoryData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsFetchHistoryData] (val x: Self) extends AnyVal {
     
     inline def setCommunity_data(value: Facebooklikes): Self = StObject.set(x, "community_data", value.asInstanceOf[js.Any])
     

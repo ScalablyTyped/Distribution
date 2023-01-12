@@ -23,7 +23,8 @@ object ShareDetails {
     __obj.asInstanceOf[ShareDetails]
   }
   
-  extension [Self <: ShareDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareDetails] (val x: Self) extends AnyVal {
     
     inline def setShareErrors(value: ShareErrors): Self = StObject.set(x, "ShareErrors", value.asInstanceOf[js.Any])
     

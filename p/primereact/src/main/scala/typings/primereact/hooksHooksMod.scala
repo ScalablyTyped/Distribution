@@ -70,7 +70,8 @@ object hooksHooksMod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setListener(value: /* event */ Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
@@ -115,7 +116,8 @@ object hooksHooksMod {
       __obj.asInstanceOf[OverlayEventOptions]
     }
     
-    extension [Self <: OverlayEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayEventOptions] (val x: Self) extends AnyVal {
       
       inline def setListener(value: (/* event */ Event, /* type */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction2(value))
       
@@ -154,7 +156,8 @@ object hooksHooksMod {
       __obj.asInstanceOf[ResizeEventOptions]
     }
     
-    extension [Self <: ResizeEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEventOptions] (val x: Self) extends AnyVal {
       
       inline def setListener(value: /* event */ Event => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       

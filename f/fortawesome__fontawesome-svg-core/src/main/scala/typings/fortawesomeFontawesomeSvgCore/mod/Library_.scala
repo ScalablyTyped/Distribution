@@ -17,7 +17,8 @@ object Library_ {
     __obj.asInstanceOf[Library_]
   }
   
-  extension [Self <: Library_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Library_] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* repeated */ IconDefinitionOrPack => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object Protected {
     __obj.asInstanceOf[Protected]
   }
   
-  extension [Self <: Protected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protected] (val x: Self) extends AnyVal {
     
     inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
   }

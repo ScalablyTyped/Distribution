@@ -23,7 +23,8 @@ object AssociateResourceResponseElement {
     __obj.asInstanceOf[AssociateResourceResponseElement]
   }
   
-  extension [Self <: AssociateResourceResponseElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateResourceResponseElement] (val x: Self) extends AnyVal {
     
     inline def setArn(value: CustomLineItemAssociationElement): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

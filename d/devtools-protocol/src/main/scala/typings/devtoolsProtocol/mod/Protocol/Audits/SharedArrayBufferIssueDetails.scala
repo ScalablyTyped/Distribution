@@ -20,7 +20,8 @@ object SharedArrayBufferIssueDetails {
     __obj.asInstanceOf[SharedArrayBufferIssueDetails]
   }
   
-  extension [Self <: SharedArrayBufferIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedArrayBufferIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setIsWarning(value: Boolean): Self = StObject.set(x, "isWarning", value.asInstanceOf[js.Any])
     

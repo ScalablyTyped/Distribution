@@ -23,7 +23,8 @@ object GroupDefinition {
     __obj.asInstanceOf[GroupDefinition]
   }
   
-  extension [Self <: GroupDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupDefinition] (val x: Self) extends AnyVal {
     
     inline def setKey(value: GroupDefinitionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

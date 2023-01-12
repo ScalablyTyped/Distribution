@@ -28,7 +28,8 @@ object Captions {
     __obj.asInstanceOf[Captions]
   }
   
-  extension [Self <: Captions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Captions] (val x: Self) extends AnyVal {
     
     inline def setCaptionFormats(value: CaptionFormats): Self = StObject.set(x, "CaptionFormats", value.asInstanceOf[js.Any])
     

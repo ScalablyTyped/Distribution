@@ -23,7 +23,8 @@ object ShareAttributes {
     __obj.asInstanceOf[ShareAttributes]
   }
   
-  extension [Self <: ShareAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareAttributes] (val x: Self) extends AnyVal {
     
     inline def setShareIdentifier(value: String): Self = StObject.set(x, "shareIdentifier", value.asInstanceOf[js.Any])
     

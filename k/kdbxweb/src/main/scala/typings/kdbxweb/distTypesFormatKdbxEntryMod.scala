@@ -151,7 +151,8 @@ object distTypesFormatKdbxEntryMod {
       __obj.asInstanceOf[KdbxAutoTypeItem]
     }
     
-    extension [Self <: KdbxAutoTypeItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxAutoTypeItem] (val x: Self) extends AnyVal {
       
       inline def setKeystrokeSequence(value: String): Self = StObject.set(x, "keystrokeSequence", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object distTypesFormatKdbxEntryMod {
       __obj.asInstanceOf[KdbxEntryAutoType]
     }
     
-    extension [Self <: KdbxEntryAutoType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxEntryAutoType] (val x: Self) extends AnyVal {
       
       inline def setDefaultSequence(value: String): Self = StObject.set(x, "defaultSequence", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object distTypesFormatKdbxEntryMod {
       __obj.asInstanceOf[KdbxEntryEditState]
     }
     
-    extension [Self <: KdbxEntryEditState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxEntryEditState] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: js.Array[Double]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       

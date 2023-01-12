@@ -226,7 +226,8 @@ object sapUiCoreUtilExportRowMod {
       __obj.asInstanceOf[ExportRowSettings]
     }
     
-    extension [Self <: ExportRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportRowSettings] (val x: Self) extends AnyVal {
       
       inline def setCells(
         value: js.Array[typings.openui5.sapUiCoreUtilExportCellMod.default] | typings.openui5.sapUiCoreUtilExportCellMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -18,7 +18,8 @@ object DescribeCustomRoutingAcceleratorResponse {
     __obj.asInstanceOf[DescribeCustomRoutingAcceleratorResponse]
   }
   
-  extension [Self <: DescribeCustomRoutingAcceleratorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomRoutingAcceleratorResponse] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: CustomRoutingAccelerator): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

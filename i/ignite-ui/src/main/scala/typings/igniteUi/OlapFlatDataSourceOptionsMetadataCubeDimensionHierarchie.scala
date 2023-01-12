@@ -43,7 +43,8 @@ object OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie {
     __obj.asInstanceOf[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie]
   }
   
-  extension [Self <: OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

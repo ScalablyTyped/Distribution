@@ -58,7 +58,8 @@ object XavcHdProfileSettings {
     __obj.asInstanceOf[XavcHdProfileSettings]
   }
   
-  extension [Self <: XavcHdProfileSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XavcHdProfileSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrateClass(value: XavcHdProfileBitrateClass): Self = StObject.set(x, "BitrateClass", value.asInstanceOf[js.Any])
     

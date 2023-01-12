@@ -125,7 +125,8 @@ object PartialColorBarBgcolor {
     __obj.asInstanceOf[PartialColorBarBgcolor]
   }
   
-  extension [Self <: PartialColorBarBgcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialColorBarBgcolor] (val x: Self) extends AnyVal {
     
     inline def setBgcolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     

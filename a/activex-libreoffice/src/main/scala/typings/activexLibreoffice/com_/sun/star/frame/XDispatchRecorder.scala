@@ -86,7 +86,8 @@ object XDispatchRecorder {
     __obj.asInstanceOf[XDispatchRecorder]
   }
   
-  extension [Self <: XDispatchRecorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDispatchRecorder] (val x: Self) extends AnyVal {
     
     inline def setEndRecording(value: () => Unit): Self = StObject.set(x, "endRecording", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object ASPxClientAxisTitle {
     __obj.asInstanceOf[ASPxClientAxisTitle]
   }
   
-  extension [Self <: ASPxClientAxisTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAxisTitle] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

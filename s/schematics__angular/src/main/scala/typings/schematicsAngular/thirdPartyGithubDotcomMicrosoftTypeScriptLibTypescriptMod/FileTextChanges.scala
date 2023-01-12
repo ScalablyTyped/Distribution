@@ -19,7 +19,8 @@ object FileTextChanges {
     __obj.asInstanceOf[FileTextChanges]
   }
   
-  extension [Self <: FileTextChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTextChanges] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

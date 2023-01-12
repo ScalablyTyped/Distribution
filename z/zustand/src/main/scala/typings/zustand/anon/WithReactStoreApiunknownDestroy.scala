@@ -33,7 +33,8 @@ object WithReactStoreApiunknownDestroy {
     __obj.asInstanceOf[WithReactStoreApiunknownDestroy]
   }
   
-  extension [Self <: WithReactStoreApiunknownDestroy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WithReactStoreApiunknownDestroy] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

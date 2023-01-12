@@ -104,7 +104,8 @@ object YAxisProps {
     __obj.asInstanceOf[YAxisProps]
   }
   
-  extension [Self <: YAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAllowDataOverflow(value: Boolean): Self = StObject.set(x, "allowDataOverflow", value.asInstanceOf[js.Any])
     

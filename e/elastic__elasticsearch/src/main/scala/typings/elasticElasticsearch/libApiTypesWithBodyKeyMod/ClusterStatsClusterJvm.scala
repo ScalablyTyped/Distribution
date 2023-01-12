@@ -26,7 +26,8 @@ object ClusterStatsClusterJvm {
     __obj.asInstanceOf[ClusterStatsClusterJvm]
   }
   
-  extension [Self <: ClusterStatsClusterJvm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterJvm] (val x: Self) extends AnyVal {
     
     inline def setMax_uptime_in_millis(value: DurationValue[UnitMillis]): Self = StObject.set(x, "max_uptime_in_millis", value.asInstanceOf[js.Any])
     

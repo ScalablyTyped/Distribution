@@ -38,7 +38,8 @@ object RecognizeTextResponse {
     __obj.asInstanceOf[RecognizeTextResponse]
   }
   
-  extension [Self <: RecognizeTextResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeTextResponse] (val x: Self) extends AnyVal {
     
     inline def setInterpretations(value: Interpretations): Self = StObject.set(x, "interpretations", value.asInstanceOf[js.Any])
     

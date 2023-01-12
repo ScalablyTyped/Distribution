@@ -63,7 +63,8 @@ object InstancePortInfo {
     __obj.asInstanceOf[InstancePortInfo]
   }
   
-  extension [Self <: InstancePortInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancePortInfo] (val x: Self) extends AnyVal {
     
     inline def setAccessDirection(value: AccessDirection): Self = StObject.set(x, "accessDirection", value.asInstanceOf[js.Any])
     

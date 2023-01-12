@@ -57,7 +57,8 @@ object buildRaygunDotbatchMod {
       __obj.asInstanceOf[BatchState]
     }
     
-    extension [Self <: BatchState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchState] (val x: Self) extends AnyVal {
       
       inline def setMessageSizeInBytes(value: Double): Self = StObject.set(x, "messageSizeInBytes", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object buildRaygunDotbatchMod {
       __obj.asInstanceOf[MessageAndCallback]
     }
     
-    extension [Self <: MessageAndCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageAndCallback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Callback[IncomingMessage]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object buildRaygunDotbatchMod {
       __obj.asInstanceOf[PreparedBatch]
     }
     
-    extension [Self <: PreparedBatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreparedBatch] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: js.Array[Callback[IncomingMessage] | Null]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object WorkUnitRange {
     __obj.asInstanceOf[WorkUnitRange]
   }
   
-  extension [Self <: WorkUnitRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkUnitRange] (val x: Self) extends AnyVal {
     
     inline def setWorkUnitIdMax(value: WorkUnitIdLong): Self = StObject.set(x, "WorkUnitIdMax", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object BarGroupProps {
     __obj.asInstanceOf[BarGroupProps]
   }
   
-  extension [Self <: BarGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarGroupProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

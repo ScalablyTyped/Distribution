@@ -44,7 +44,8 @@ object distTabTabViewMod extends Shortcut {
       __obj.asInstanceOf[TabViewProps]
     }
     
-    extension [Self <: TabViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabViewProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationConfig(value: OmitSpringAnimationConfig): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
       

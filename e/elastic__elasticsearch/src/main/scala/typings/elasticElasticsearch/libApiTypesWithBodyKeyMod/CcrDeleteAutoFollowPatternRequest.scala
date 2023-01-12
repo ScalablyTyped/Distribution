@@ -17,7 +17,8 @@ object CcrDeleteAutoFollowPatternRequest {
     __obj.asInstanceOf[CcrDeleteAutoFollowPatternRequest]
   }
   
-  extension [Self <: CcrDeleteAutoFollowPatternRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrDeleteAutoFollowPatternRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

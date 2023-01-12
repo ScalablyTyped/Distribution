@@ -25,7 +25,8 @@ object ReactionidRepo {
     __obj.asInstanceOf[ReactionidRepo]
   }
   
-  extension [Self <: ReactionidRepo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactionidRepo] (val x: Self) extends AnyVal {
     
     inline def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     

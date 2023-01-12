@@ -23,7 +23,8 @@ object AuditLogRoot {
     __obj.asInstanceOf[AuditLogRoot]
   }
   
-  extension [Self <: AuditLogRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditLogRoot] (val x: Self) extends AnyVal {
     
     inline def setDirectoryAudits(value: NullableOption[js.Array[DirectoryAudit]]): Self = StObject.set(x, "directoryAudits", value.asInstanceOf[js.Any])
     

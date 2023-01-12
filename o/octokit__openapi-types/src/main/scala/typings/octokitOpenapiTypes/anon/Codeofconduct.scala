@@ -27,7 +27,8 @@ object Codeofconduct {
     __obj.asInstanceOf[Codeofconduct]
   }
   
-  extension [Self <: Codeofconduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codeofconduct] (val x: Self) extends AnyVal {
     
     inline def setCode_of_conduct(value: HtmlurlKey): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
     

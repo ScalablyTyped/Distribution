@@ -37,7 +37,8 @@ object XSEInitializer {
     __obj.asInstanceOf[XSEInitializer]
   }
   
-  extension [Self <: XSEInitializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSEInitializer] (val x: Self) extends AnyVal {
     
     inline def setCreateSecurityContext(value: String => XXMLSecurityContext): Self = StObject.set(x, "createSecurityContext", js.Any.fromFunction1(value))
     

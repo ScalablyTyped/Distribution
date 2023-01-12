@@ -25,7 +25,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setParallelOptions(value: ParallelOptions): Self = StObject.set(x, "parallelOptions", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object karmaMod {
       __obj.asInstanceOf[ParallelOptions]
     }
     
-    extension [Self <: ParallelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallelOptions] (val x: Self) extends AnyVal {
       
       inline def setAggregatedReporterTest(value: (js.Function1[/* reporter */ js.Object, Boolean]) | js.RegExp): Self = StObject.set(x, "aggregatedReporterTest", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object karmaMod {
       __obj.asInstanceOf[ShardStrategOptions]
     }
     
-    extension [Self <: ShardStrategOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShardStrategOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

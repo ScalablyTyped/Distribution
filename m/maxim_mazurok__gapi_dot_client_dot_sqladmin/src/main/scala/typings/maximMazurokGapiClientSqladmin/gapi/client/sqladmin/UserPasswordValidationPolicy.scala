@@ -28,7 +28,8 @@ object UserPasswordValidationPolicy {
     __obj.asInstanceOf[UserPasswordValidationPolicy]
   }
   
-  extension [Self <: UserPasswordValidationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPasswordValidationPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowedFailedAttempts(value: Double): Self = StObject.set(x, "allowedFailedAttempts", value.asInstanceOf[js.Any])
     

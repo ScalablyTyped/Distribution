@@ -49,7 +49,8 @@ object StructureInvaderCore {
     __obj.asInstanceOf[StructureInvaderCore]
   }
   
-  extension [Self <: StructureInvaderCore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureInvaderCore] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

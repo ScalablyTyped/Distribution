@@ -36,7 +36,8 @@ object Allowedextensions {
     __obj.asInstanceOf[Allowedextensions]
   }
   
-  extension [Self <: Allowedextensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowedextensions] (val x: Self) extends AnyVal {
     
     inline def setAllowed_extensions(value: js.Array[ExtensionID]): Self = StObject.set(x, "allowed_extensions", value.asInstanceOf[js.Any])
     

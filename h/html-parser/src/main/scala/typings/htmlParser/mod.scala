@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[CallbacksOption]
     }
     
-    extension [Self <: CallbacksOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbacksOption] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: (/* name */ String, /* value */ Any) => Unit): Self = StObject.set(x, "attribute", js.Any.fromFunction2(value))
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[RegExpOptions]
     }
     
-    extension [Self <: RegExpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: js.RegExp): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[RemovalCallback]
     }
     
-    extension [Self <: RemovalCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovalCallback] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Callback | js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

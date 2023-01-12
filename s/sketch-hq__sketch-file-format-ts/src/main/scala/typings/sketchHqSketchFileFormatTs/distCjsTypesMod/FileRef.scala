@@ -25,7 +25,8 @@ object FileRef {
     __obj.asInstanceOf[FileRef]
   }
   
-  extension [Self <: FileRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileRef] (val x: Self) extends AnyVal {
     
     inline def set_class(value: MSJSONFileReference): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
     

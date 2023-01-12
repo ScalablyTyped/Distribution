@@ -35,7 +35,8 @@ object TextColumn {
     __obj.asInstanceOf[TextColumn]
   }
   
-  extension [Self <: TextColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextColumn] (val x: Self) extends AnyVal {
     
     inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
     

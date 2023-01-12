@@ -54,7 +54,8 @@ object libOidcOpenIdClientMod {
       __obj.asInstanceOf[AuthorizationRequestOptions]
     }
     
-    extension [Self <: AuthorizationRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object libOidcOpenIdClientMod {
       __obj.asInstanceOf[OpenIdClientConstructorOptions]
     }
     
-    extension [Self <: OpenIdClientConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenIdClientConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
       

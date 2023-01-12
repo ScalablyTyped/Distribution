@@ -19,7 +19,8 @@ object Assigned {
     __obj.asInstanceOf[Assigned]
   }
   
-  extension [Self <: Assigned](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assigned] (val x: Self) extends AnyVal {
     
     inline def setActive(value: scala.Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

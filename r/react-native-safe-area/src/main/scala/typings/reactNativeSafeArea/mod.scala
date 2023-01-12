@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[EventPayload]
     }
     
-    extension [Self <: EventPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventPayload] (val x: Self) extends AnyVal {
       
       inline def setSafeAreaInsets(value: SafeAreaInsets): Self = StObject.set(x, "safeAreaInsets", value.asInstanceOf[js.Any])
     }
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[SafeAreaInsets]
     }
     
-    extension [Self <: SafeAreaInsets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeAreaInsets] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object DoubleArrayOptions {
     __obj.asInstanceOf[DoubleArrayOptions]
   }
   
-  extension [Self <: DoubleArrayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoubleArrayOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Double): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ReportedRuntimeContextState {
     __obj.asInstanceOf[ReportedRuntimeContextState]
   }
   
-  extension [Self <: ReportedRuntimeContextState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportedRuntimeContextState] (val x: Self) extends AnyVal {
     
     inline def setDesiredState(value: DesiredState): Self = StObject.set(x, "DesiredState", value.asInstanceOf[js.Any])
     

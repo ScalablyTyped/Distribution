@@ -33,7 +33,8 @@ object ShowActionSheetOption {
     __obj.asInstanceOf[ShowActionSheetOption]
   }
   
-  extension [Self <: ShowActionSheetOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowActionSheetOption] (val x: Self) extends AnyVal {
     
     inline def setAlertText(value: String): Self = StObject.set(x, "alertText", value.asInstanceOf[js.Any])
     

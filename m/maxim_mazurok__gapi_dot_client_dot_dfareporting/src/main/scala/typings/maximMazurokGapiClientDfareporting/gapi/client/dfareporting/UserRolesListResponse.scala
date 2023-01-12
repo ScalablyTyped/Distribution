@@ -22,7 +22,8 @@ object UserRolesListResponse {
     __obj.asInstanceOf[UserRolesListResponse]
   }
   
-  extension [Self <: UserRolesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRolesListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

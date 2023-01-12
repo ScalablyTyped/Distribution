@@ -32,7 +32,8 @@ object IInkStrokeBuilder {
     __obj.asInstanceOf[IInkStrokeBuilder]
   }
   
-  extension [Self <: IInkStrokeBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInkStrokeBuilder] (val x: Self) extends AnyVal {
     
     inline def setAppendToStroke(value: PointerPoint => PointerPoint): Self = StObject.set(x, "appendToStroke", js.Any.fromFunction1(value))
     

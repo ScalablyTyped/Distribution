@@ -15,7 +15,8 @@ object ProductsListData {
     __obj.asInstanceOf[ProductsListData]
   }
   
-  extension [Self <: ProductsListData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductsListData] (val x: Self) extends AnyVal {
     
     inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
   }

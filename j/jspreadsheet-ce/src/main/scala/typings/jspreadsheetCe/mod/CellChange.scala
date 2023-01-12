@@ -25,7 +25,8 @@ object CellChange {
     __obj.asInstanceOf[CellChange]
   }
   
-  extension [Self <: CellChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellChange] (val x: Self) extends AnyVal {
     
     inline def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

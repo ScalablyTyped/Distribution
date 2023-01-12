@@ -15,7 +15,8 @@ object Inspector {
     __obj.asInstanceOf[Inspector]
   }
   
-  extension [Self <: Inspector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
     
     inline def setInspector(value: typings.activexOutlook.Outlook.Inspector): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
   }

@@ -100,7 +100,8 @@ object streamsMod {
       __obj.asInstanceOf[ByteLengthQueuingStrategy]
     }
     
-    extension [Self <: ByteLengthQueuingStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteLengthQueuingStrategy] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object streamsMod {
       __obj.asInstanceOf[CountQueuingStrategy]
     }
     
-    extension [Self <: CountQueuingStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountQueuingStrategy] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object streamsMod {
       __obj.asInstanceOf[TransformStream[I, O]]
     }
     
-    extension [Self <: TransformStream[?, ?], I, O](x: Self & (TransformStream[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformStream[?, ?], I, O] (val x: Self & (TransformStream[I, O])) extends AnyVal {
       
       inline def setReadable(value: ReadableStream[O]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
@@ -186,7 +189,8 @@ object streamsMod {
       __obj.asInstanceOf[Transformer[I, O]]
     }
     
-    extension [Self <: Transformer[?, ?], I, O](x: Self & (Transformer[I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transformer[?, ?], I, O] (val x: Self & (Transformer[I, O])) extends AnyVal {
       
       inline def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | js.Promise[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       

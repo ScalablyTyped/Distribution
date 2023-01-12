@@ -16,7 +16,8 @@ object GoogleCloudVisionV1p3beta1CropHintsAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1CropHintsAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1CropHintsAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1CropHintsAnnotation] (val x: Self) extends AnyVal {
     
     inline def setCropHints(value: js.Array[GoogleCloudVisionV1p3beta1CropHint]): Self = StObject.set(x, "cropHints", value.asInstanceOf[js.Any])
     

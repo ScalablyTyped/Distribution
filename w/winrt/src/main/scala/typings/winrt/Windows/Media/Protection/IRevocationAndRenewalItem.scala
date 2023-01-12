@@ -29,7 +29,8 @@ object IRevocationAndRenewalItem {
     __obj.asInstanceOf[IRevocationAndRenewalItem]
   }
   
-  extension [Self <: IRevocationAndRenewalItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRevocationAndRenewalItem] (val x: Self) extends AnyVal {
     
     inline def setHeaderHash(value: String): Self = StObject.set(x, "headerHash", value.asInstanceOf[js.Any])
     

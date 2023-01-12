@@ -39,7 +39,8 @@ object dxChartSeriesTypesCommonSeriesSelectionStyle {
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesSelectionStyle]
   }
   
-  extension [Self <: dxChartSeriesTypesCommonSeriesSelectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCommonSeriesSelectionStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: dxChartSeriesTypesCommonSeriesSelectionStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

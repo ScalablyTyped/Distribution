@@ -45,7 +45,8 @@ object buildLinePartMod {
       __obj.asInstanceOf[LinePartProps]
     }
     
-    extension [Self <: LinePartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinePartProps] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: /* text */ String => ReactNode): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

@@ -17,7 +17,8 @@ object EditCreateRowResult {
     __obj.asInstanceOf[EditCreateRowResult]
   }
   
-  extension [Self <: EditCreateRowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditCreateRowResult] (val x: Self) extends AnyVal {
     
     inline def setDefaultValues(value: js.Array[String]): Self = StObject.set(x, "defaultValues", value.asInstanceOf[js.Any])
     

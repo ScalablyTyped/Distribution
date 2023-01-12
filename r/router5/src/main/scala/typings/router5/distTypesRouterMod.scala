@@ -56,7 +56,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDecoders(value: Record[String, Any]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Listener]
     }
     
-    extension [Self <: Listener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Any => js.Object): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
@@ -144,7 +146,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowNotFound(value: Boolean): Self = StObject.set(x, "allowNotFound", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
       
@@ -288,7 +292,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Route[Dependencies]]
     }
     
-    extension [Self <: Route[?], Dependencies /* <: DefaultDependencies */](x: Self & Route[Dependencies]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route[?], Dependencies /* <: DefaultDependencies */] (val x: Self & Route[Dependencies]) extends AnyVal {
       
       inline def setCanActivate(
         value: (/* router */ Router[DefaultDependencies], /* dependencies */ js.UndefOr[Dependencies]) => ActivationFn
@@ -492,7 +497,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[SubscribeState]
     }
     
-    extension [Self <: SubscribeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeState] (val x: Self) extends AnyVal {
       
       inline def setPreviousRoute(value: State): Self = StObject.set(x, "previousRoute", value.asInstanceOf[js.Any])
       
@@ -513,7 +519,8 @@ object distTypesRouterMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

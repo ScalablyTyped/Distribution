@@ -30,7 +30,8 @@ object RowHeaderState {
     __obj.asInstanceOf[RowHeaderState]
   }
   
-  extension [Self <: RowHeaderState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowHeaderState] (val x: Self) extends AnyVal {
     
     inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     

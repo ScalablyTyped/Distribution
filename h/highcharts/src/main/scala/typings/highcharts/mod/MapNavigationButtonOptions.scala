@@ -63,7 +63,8 @@ object MapNavigationButtonOptions {
     __obj.asInstanceOf[MapNavigationButtonOptions]
   }
   
-  extension [Self <: MapNavigationButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapNavigationButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

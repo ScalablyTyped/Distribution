@@ -74,7 +74,8 @@ object libBindingsHttpEmitterBinaryMod {
       __obj.asInstanceOf[BinaryHTTPEmitter]
     }
     
-    extension [Self <: BinaryHTTPEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryHTTPEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (UrlURL, js.Object) => js.Promise[Any]): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       

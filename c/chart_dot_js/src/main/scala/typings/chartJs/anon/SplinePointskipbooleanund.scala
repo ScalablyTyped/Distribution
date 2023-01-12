@@ -20,7 +20,8 @@ object SplinePointskipbooleanund {
     __obj.asInstanceOf[SplinePointskipbooleanund]
   }
   
-  extension [Self <: SplinePointskipbooleanund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplinePointskipbooleanund] (val x: Self) extends AnyVal {
     
     inline def setSkip(value: Boolean): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     

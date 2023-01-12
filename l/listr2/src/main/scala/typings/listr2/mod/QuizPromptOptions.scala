@@ -21,7 +21,8 @@ object QuizPromptOptions {
     __obj.asInstanceOf[QuizPromptOptions]
   }
   
-  extension [Self <: QuizPromptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuizPromptOptions] (val x: Self) extends AnyVal {
     
     inline def setCorrectChoice(value: Double): Self = StObject.set(x, "correctChoice", value.asInstanceOf[js.Any])
   }

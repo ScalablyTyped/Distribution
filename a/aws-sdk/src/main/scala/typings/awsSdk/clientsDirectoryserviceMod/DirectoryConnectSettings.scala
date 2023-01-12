@@ -33,7 +33,8 @@ object DirectoryConnectSettings {
     __obj.asInstanceOf[DirectoryConnectSettings]
   }
   
-  extension [Self <: DirectoryConnectSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryConnectSettings] (val x: Self) extends AnyVal {
     
     inline def setCustomerDnsIps(value: DnsIpAddrs): Self = StObject.set(x, "CustomerDnsIps", value.asInstanceOf[js.Any])
     

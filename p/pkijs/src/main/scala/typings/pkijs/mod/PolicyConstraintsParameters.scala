@@ -20,7 +20,8 @@ object PolicyConstraintsParameters {
     __obj.asInstanceOf[PolicyConstraintsParameters]
   }
   
-  extension [Self <: PolicyConstraintsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyConstraintsParameters] (val x: Self) extends AnyVal {
     
     inline def setInhibitPolicyMapping(value: Double): Self = StObject.set(x, "inhibitPolicyMapping", value.asInstanceOf[js.Any])
     

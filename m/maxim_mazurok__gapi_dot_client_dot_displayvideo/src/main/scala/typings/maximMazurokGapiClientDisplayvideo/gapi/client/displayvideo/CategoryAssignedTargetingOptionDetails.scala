@@ -22,7 +22,8 @@ object CategoryAssignedTargetingOptionDetails {
     __obj.asInstanceOf[CategoryAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: CategoryAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

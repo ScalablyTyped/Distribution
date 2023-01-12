@@ -23,7 +23,8 @@ object AttributeInput {
     __obj.asInstanceOf[AttributeInput]
   }
   
-  extension [Self <: AttributeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeInput] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

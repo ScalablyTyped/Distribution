@@ -23,7 +23,8 @@ object ASPxClientGanttDependencyInsertingEventArgs {
     __obj.asInstanceOf[ASPxClientGanttDependencyInsertingEventArgs]
   }
   
-  extension [Self <: ASPxClientGanttDependencyInsertingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGanttDependencyInsertingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }

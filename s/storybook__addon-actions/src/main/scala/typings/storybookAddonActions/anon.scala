@@ -109,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: () => Unit): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
@@ -132,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -662,7 +664,8 @@ object anon {
       __obj.asInstanceOf[PickDetailedHTMLPropsHTML]
     }
     
-    extension [Self <: PickDetailedHTMLPropsHTML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDetailedHTMLPropsHTML] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object GenerateSideWallUV {
     __obj.asInstanceOf[GenerateSideWallUV]
   }
   
-  extension [Self <: GenerateSideWallUV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSideWallUV] (val x: Self) extends AnyVal {
     
     inline def setGenerateSideWallUV(value: (typings.forgeViewer.THREE.Geometry, Double, Double, Double, Double) => js.Array[Vector2]): Self = StObject.set(x, "generateSideWallUV", js.Any.fromFunction5(value))
     

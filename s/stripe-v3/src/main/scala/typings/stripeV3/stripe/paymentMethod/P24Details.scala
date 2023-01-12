@@ -17,7 +17,8 @@ object P24Details {
     __obj.asInstanceOf[P24Details]
   }
   
-  extension [Self <: P24Details](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P24Details] (val x: Self) extends AnyVal {
     
     inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

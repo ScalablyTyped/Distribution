@@ -54,7 +54,8 @@ object AudioLayer {
     __obj.asInstanceOf[AudioLayer]
   }
   
-  extension [Self <: AudioLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioLayer] (val x: Self) extends AnyVal {
     
     inline def setCutFrom(value: Double): Self = StObject.set(x, "cutFrom", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PickTableContainerPropsst {
     __obj.asInstanceOf[PickTableContainerPropsst]
   }
   
-  extension [Self <: PickTableContainerPropsst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTableContainerPropsst] (val x: Self) extends AnyVal {
     
     inline def setStickyHeader(value: Boolean): Self = StObject.set(x, "stickyHeader", value.asInstanceOf[js.Any])
     

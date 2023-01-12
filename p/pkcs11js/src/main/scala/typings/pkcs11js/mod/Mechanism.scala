@@ -27,7 +27,8 @@ object Mechanism {
     __obj.asInstanceOf[Mechanism]
   }
   
-  extension [Self <: Mechanism](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mechanism] (val x: Self) extends AnyVal {
     
     inline def setMechanism(value: Double): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
     

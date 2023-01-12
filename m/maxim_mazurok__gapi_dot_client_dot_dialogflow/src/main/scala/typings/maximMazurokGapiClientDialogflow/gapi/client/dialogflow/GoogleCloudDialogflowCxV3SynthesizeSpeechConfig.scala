@@ -39,7 +39,8 @@ object GoogleCloudDialogflowCxV3SynthesizeSpeechConfig {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SynthesizeSpeechConfig]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SynthesizeSpeechConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SynthesizeSpeechConfig] (val x: Self) extends AnyVal {
     
     inline def setEffectsProfileId(value: js.Array[String]): Self = StObject.set(x, "effectsProfileId", value.asInstanceOf[js.Any])
     

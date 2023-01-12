@@ -21,7 +21,8 @@ object ChartYAxisItemLabelsMargin {
     __obj.asInstanceOf[ChartYAxisItemLabelsMargin]
   }
   
-  extension [Self <: ChartYAxisItemLabelsMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartYAxisItemLabelsMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

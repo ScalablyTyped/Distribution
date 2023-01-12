@@ -15,7 +15,8 @@ object EnumValuesAboveNormal {
     __obj.asInstanceOf[EnumValuesAboveNormal]
   }
   
-  extension [Self <: EnumValuesAboveNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAboveNormal] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AboveNormal): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

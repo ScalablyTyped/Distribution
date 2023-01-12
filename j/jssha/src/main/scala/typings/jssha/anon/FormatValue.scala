@@ -25,7 +25,8 @@ object FormatValue {
     __obj.asInstanceOf[FormatValue]
   }
   
-  extension [Self <: FormatValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatValue] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: UINT8ARRAY): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

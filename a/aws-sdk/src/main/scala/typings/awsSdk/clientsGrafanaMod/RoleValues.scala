@@ -23,7 +23,8 @@ object RoleValues {
     __obj.asInstanceOf[RoleValues]
   }
   
-  extension [Self <: RoleValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleValues] (val x: Self) extends AnyVal {
     
     inline def setAdmin(value: RoleValueList): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     

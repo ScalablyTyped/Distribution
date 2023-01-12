@@ -223,7 +223,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Point => Point): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

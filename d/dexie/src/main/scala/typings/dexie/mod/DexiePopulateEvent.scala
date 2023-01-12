@@ -23,7 +23,8 @@ object DexiePopulateEvent {
     __obj.asInstanceOf[DexiePopulateEvent]
   }
   
-  extension [Self <: DexiePopulateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexiePopulateEvent] (val x: Self) extends AnyVal {
     
     inline def setFire(value: Transaction => Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     

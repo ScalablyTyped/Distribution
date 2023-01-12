@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[DetailedResult]
     }
     
-    extension [Self <: DetailedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedResult] (val x: Self) extends AnyVal {
       
       inline def setScore(value: Score): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Maintainer]
     }
     
-    extension [Self <: Maintainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maintainer] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Score]
     }
     
-    extension [Self <: Score](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Maintenance): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
       
@@ -215,7 +219,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
       

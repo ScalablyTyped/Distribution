@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[EncryptOptions]
     }
     
-    extension [Self <: EncryptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
       
       inline def setIv(value: BinaryLike): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       

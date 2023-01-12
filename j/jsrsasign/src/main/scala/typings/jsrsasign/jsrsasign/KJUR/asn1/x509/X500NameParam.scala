@@ -19,7 +19,8 @@ object X500NameParam {
     __obj.asInstanceOf[X500NameParam]
   }
   
-  extension [Self <: X500NameParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X500NameParam] (val x: Self) extends AnyVal {
     
     inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     

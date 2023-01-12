@@ -31,7 +31,8 @@ object MlDatafeedTimingStats {
     __obj.asInstanceOf[MlDatafeedTimingStats]
   }
   
-  extension [Self <: MlDatafeedTimingStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDatafeedTimingStats] (val x: Self) extends AnyVal {
     
     inline def setAverage_search_time_per_bucket_ms(value: DurationValue[UnitFloatMillis]): Self = StObject.set(x, "average_search_time_per_bucket_ms", value.asInstanceOf[js.Any])
     

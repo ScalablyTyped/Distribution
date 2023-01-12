@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T /* <: PromiseLike[Unit] */](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T /* <: PromiseLike[Unit] */] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setFs(value: Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

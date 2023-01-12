@@ -21,7 +21,8 @@ object BucketPart {
     __obj.asInstanceOf[BucketPart]
   }
   
-  extension [Self <: BucketPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketPart] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: TileLayerParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

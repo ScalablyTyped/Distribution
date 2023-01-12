@@ -58,7 +58,8 @@ object Lock {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Lock.Lock]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.Lock.Lock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Lock.Lock] (val x: Self) extends AnyVal {
       
       inline def setHasLock(value: () => Boolean): Self = StObject.set(x, "hasLock", js.Any.fromFunction0(value))
       
@@ -93,7 +94,8 @@ object Lock {
       __obj.asInstanceOf[LockService]
     }
     
-    extension [Self <: LockService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockService] (val x: Self) extends AnyVal {
       
       inline def setGetDocumentLock(value: () => typings.googleAppsScript.GoogleAppsScript.Lock.Lock): Self = StObject.set(x, "getDocumentLock", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object AdErrorParam {
     __obj.asInstanceOf[AdErrorParam]
   }
   
-  extension [Self <: AdErrorParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdErrorParam] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ArtifactResult {
     __obj.asInstanceOf[ArtifactResult]
   }
   
-  extension [Self <: ArtifactResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactResult] (val x: Self) extends AnyVal {
     
     inline def setFileHash(value: js.Array[FileHashes]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     

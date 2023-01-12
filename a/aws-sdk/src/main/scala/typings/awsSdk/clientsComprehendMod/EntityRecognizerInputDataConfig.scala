@@ -43,7 +43,8 @@ object EntityRecognizerInputDataConfig {
     __obj.asInstanceOf[EntityRecognizerInputDataConfig]
   }
   
-  extension [Self <: EntityRecognizerInputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerInputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: EntityRecognizerAnnotations): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
     

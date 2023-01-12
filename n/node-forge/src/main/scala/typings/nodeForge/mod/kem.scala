@@ -100,7 +100,8 @@ object kem {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setPrng(value: typings.nodeForge.mod.kem.rsa.random): Self = StObject.set(x, "prng", value.asInstanceOf[js.Any])
         
@@ -137,7 +138,8 @@ object kem {
         __obj.asInstanceOf[typings.nodeForge.mod.kem.rsa.kem]
       }
       
-      extension [Self <: typings.nodeForge.mod.kem.rsa.kem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.nodeForge.mod.kem.rsa.kem] (val x: Self) extends AnyVal {
         
         inline def setDecrypt(value: (PrivateKey, String, Double) => String): Self = StObject.set(x, "decrypt", js.Any.fromFunction3(value))
         
@@ -156,7 +158,8 @@ object kem {
         __obj.asInstanceOf[typings.nodeForge.mod.kem.rsa.random]
       }
       
-      extension [Self <: typings.nodeForge.mod.kem.rsa.random](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.nodeForge.mod.kem.rsa.random] (val x: Self) extends AnyVal {
         
         inline def setGetBytesSync(value: Double => Bytes): Self = StObject.set(x, "getBytesSync", js.Any.fromFunction1(value))
       }
@@ -182,7 +185,8 @@ object kem {
       __obj.asInstanceOf[EncryptResult]
     }
     
-    extension [Self <: EncryptResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncryptResult] (val x: Self) extends AnyVal {
       
       inline def setEncapsulation(value: String): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object kem {
       __obj.asInstanceOf[KDF]
     }
     
-    extension [Self <: KDF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KDF] (val x: Self) extends AnyVal {
       
       inline def setGenerate(value: (String, Double) => String): Self = StObject.set(x, "generate", js.Any.fromFunction2(value))
     }

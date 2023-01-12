@@ -19,7 +19,8 @@ object ArrayLimit {
     __obj.asInstanceOf[ArrayLimit]
   }
   
-  extension [Self <: ArrayLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayLimit] (val x: Self) extends AnyVal {
     
     inline def setArrayLimit(value: Double): Self = StObject.set(x, "arrayLimit", value.asInstanceOf[js.Any])
     

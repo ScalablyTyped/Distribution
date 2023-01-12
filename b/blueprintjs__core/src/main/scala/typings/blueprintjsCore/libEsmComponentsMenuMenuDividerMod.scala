@@ -50,7 +50,8 @@ object libEsmComponentsMenuMenuDividerMod {
       __obj.asInstanceOf[IMenuDividerProps]
     }
     
-    extension [Self <: IMenuDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuDividerProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

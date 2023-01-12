@@ -70,7 +70,8 @@ object XView {
     __obj.asInstanceOf[XView]
   }
   
-  extension [Self <: XView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XView] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

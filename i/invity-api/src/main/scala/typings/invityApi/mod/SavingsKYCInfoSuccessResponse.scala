@@ -20,7 +20,8 @@ object SavingsKYCInfoSuccessResponse {
     __obj.asInstanceOf[SavingsKYCInfoSuccessResponse]
   }
   
-  extension [Self <: SavingsKYCInfoSuccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsKYCInfoSuccessResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentTypes(value: js.Array[SavingsTradeUserKYCStartDocumentType]): Self = StObject.set(x, "documentTypes", value.asInstanceOf[js.Any])
     

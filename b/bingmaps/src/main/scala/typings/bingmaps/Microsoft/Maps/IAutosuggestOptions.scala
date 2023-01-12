@@ -55,7 +55,8 @@ object IAutosuggestOptions {
     __obj.asInstanceOf[IAutosuggestOptions]
   }
   
-  extension [Self <: IAutosuggestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutosuggestOptions] (val x: Self) extends AnyVal {
     
     inline def setAddressSuggestions(value: Boolean): Self = StObject.set(x, "addressSuggestions", value.asInstanceOf[js.Any])
     

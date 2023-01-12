@@ -18,7 +18,8 @@ object WebExtensionLangpackManifestBrowserSpecificSettings {
     __obj.asInstanceOf[WebExtensionLangpackManifestBrowserSpecificSettings]
   }
   
-  extension [Self <: WebExtensionLangpackManifestBrowserSpecificSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionLangpackManifestBrowserSpecificSettings] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: StringDictionary[Any]): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

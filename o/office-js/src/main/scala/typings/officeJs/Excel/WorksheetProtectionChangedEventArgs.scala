@@ -86,7 +86,8 @@ object WorksheetProtectionChangedEventArgs {
     __obj.asInstanceOf[WorksheetProtectionChangedEventArgs]
   }
   
-  extension [Self <: WorksheetProtectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetProtectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAllowEditRangesChanged(value: Boolean): Self = StObject.set(x, "allowEditRangesChanged", value.asInstanceOf[js.Any])
     

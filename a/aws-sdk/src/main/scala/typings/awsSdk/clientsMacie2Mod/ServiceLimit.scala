@@ -28,7 +28,8 @@ object ServiceLimit {
     __obj.asInstanceOf[ServiceLimit]
   }
   
-  extension [Self <: ServiceLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceLimit] (val x: Self) extends AnyVal {
     
     inline def setIsServiceLimited(value: boolean): Self = StObject.set(x, "isServiceLimited", value.asInstanceOf[js.Any])
     

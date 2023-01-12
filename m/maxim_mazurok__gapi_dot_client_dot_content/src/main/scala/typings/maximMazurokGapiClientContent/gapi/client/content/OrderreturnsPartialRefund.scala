@@ -19,7 +19,8 @@ object OrderreturnsPartialRefund {
     __obj.asInstanceOf[OrderreturnsPartialRefund]
   }
   
-  extension [Self <: OrderreturnsPartialRefund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsPartialRefund] (val x: Self) extends AnyVal {
     
     inline def setPriceAmount(value: Price): Self = StObject.set(x, "priceAmount", value.asInstanceOf[js.Any])
     

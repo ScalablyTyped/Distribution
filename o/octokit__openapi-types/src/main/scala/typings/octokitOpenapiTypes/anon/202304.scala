@@ -38,7 +38,8 @@ object `202304` {
     __obj.asInstanceOf[`202304`]
   }
   
-  extension [Self <: `202304`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `202304`] (val x: Self) extends AnyVal {
     
     inline def set202(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['accepted'] */ js.Any

@@ -27,7 +27,8 @@ object RollupDateHistogramGrouping {
     __obj.asInstanceOf[RollupDateHistogramGrouping]
   }
   
-  extension [Self <: RollupDateHistogramGrouping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupDateHistogramGrouping] (val x: Self) extends AnyVal {
     
     inline def setCalendar_interval(value: Duration): Self = StObject.set(x, "calendar_interval", value.asInstanceOf[js.Any])
     

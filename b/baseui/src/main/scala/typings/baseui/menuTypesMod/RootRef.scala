@@ -16,7 +16,8 @@ object RootRef {
     __obj.asInstanceOf[RootRef]
   }
   
-  extension [Self <: RootRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootRef] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: HTMLElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

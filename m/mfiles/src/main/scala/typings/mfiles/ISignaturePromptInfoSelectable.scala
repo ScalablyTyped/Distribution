@@ -17,7 +17,8 @@ object ISignaturePromptInfoSelectable {
     __obj.asInstanceOf[ISignaturePromptInfoSelectable]
   }
   
-  extension [Self <: ISignaturePromptInfoSelectable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignaturePromptInfoSelectable] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISignaturePromptInfoSelectable): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

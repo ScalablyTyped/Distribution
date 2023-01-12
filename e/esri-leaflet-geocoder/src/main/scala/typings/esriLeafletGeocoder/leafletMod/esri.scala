@@ -790,7 +790,8 @@ object esri {
         __obj.asInstanceOf[ArcgisOnlineProviderOptions]
       }
       
-      extension [Self <: ArcgisOnlineProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ArcgisOnlineProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setCategories(value: String | js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
         
@@ -827,7 +828,8 @@ object esri {
         __obj.asInstanceOf[BaseProviderOptions]
       }
       
-      extension [Self <: BaseProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
         
@@ -868,7 +870,8 @@ object esri {
         __obj.asInstanceOf[FeatureLayerProviderOptions]
       }
       
-      extension [Self <: FeatureLayerProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureLayerProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setBufferRadius(value: Double): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
         
@@ -900,7 +903,8 @@ object esri {
         __obj.asInstanceOf[GeocodeServiceOptions]
       }
       
-      extension [Self <: GeocodeServiceOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeocodeServiceOptions] (val x: Self) extends AnyVal {
         
         inline def setSupportsSuggest(value: Boolean): Self = StObject.set(x, "supportsSuggest", value.asInstanceOf[js.Any])
         
@@ -921,7 +925,8 @@ object esri {
         __obj.asInstanceOf[GeocodeServiceProviderOptions]
       }
       
-      extension [Self <: GeocodeServiceProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeocodeServiceProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
@@ -975,7 +980,8 @@ object esri {
         __obj.asInstanceOf[GeosearchObject]
       }
       
-      extension [Self <: GeosearchObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeosearchObject] (val x: Self) extends AnyVal {
         
         inline def setAllowMultipleResults(value: Boolean): Self = StObject.set(x, "allowMultipleResults", value.asInstanceOf[js.Any])
         
@@ -1064,7 +1070,8 @@ object esri {
         __obj.asInstanceOf[MapServiceProviderOptions]
       }
       
-      extension [Self <: MapServiceProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MapServiceProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setBufferRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "bufferRadius", value.asInstanceOf[js.Any])
         
@@ -1105,7 +1112,8 @@ object esri {
         __obj.asInstanceOf[ResultObject]
       }
       
-      extension [Self <: ResultObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
         
         inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
@@ -1146,7 +1154,8 @@ object esri {
         __obj.asInstanceOf[Results]
       }
       
-      extension [Self <: Results](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
         
         inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         

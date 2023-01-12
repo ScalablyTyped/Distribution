@@ -147,7 +147,8 @@ object AllergyIntolerance {
     __obj.asInstanceOf[AllergyIntolerance]
   }
   
-  extension [Self <: AllergyIntolerance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllergyIntolerance] (val x: Self) extends AnyVal {
     
     inline def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
     

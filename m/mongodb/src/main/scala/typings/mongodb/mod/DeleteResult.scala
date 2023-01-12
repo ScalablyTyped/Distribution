@@ -19,7 +19,8 @@ object DeleteResult {
     __obj.asInstanceOf[DeleteResult]
   }
   
-  extension [Self <: DeleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResult] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object TcpipForwardingConfig {
     __obj.asInstanceOf[TcpipForwardingConfig]
   }
   
-  extension [Self <: TcpipForwardingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpipForwardingConfig] (val x: Self) extends AnyVal {
     
     inline def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
     

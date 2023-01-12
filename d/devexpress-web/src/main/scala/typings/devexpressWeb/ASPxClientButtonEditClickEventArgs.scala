@@ -23,7 +23,8 @@ object ASPxClientButtonEditClickEventArgs {
     __obj.asInstanceOf[ASPxClientButtonEditClickEventArgs]
   }
   
-  extension [Self <: ASPxClientButtonEditClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientButtonEditClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
   }

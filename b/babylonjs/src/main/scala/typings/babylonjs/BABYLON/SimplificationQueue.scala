@@ -46,7 +46,8 @@ object SimplificationQueue {
     __obj.asInstanceOf[SimplificationQueue]
   }
   
-  extension [Self <: SimplificationQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplificationQueue] (val x: Self) extends AnyVal {
     
     inline def setAddTask(value: ISimplificationTask => Unit): Self = StObject.set(x, "addTask", js.Any.fromFunction1(value))
     

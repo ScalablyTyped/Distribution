@@ -35,7 +35,8 @@ object UpdateMaintenanceStartTimeInput {
     __obj.asInstanceOf[UpdateMaintenanceStartTimeInput]
   }
   
-  extension [Self <: UpdateMaintenanceStartTimeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: DayOfMonth): Self = StObject.set(x, "DayOfMonth", value.asInstanceOf[js.Any])
     

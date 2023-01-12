@@ -1300,7 +1300,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ActionBeginEventArgs]
     }
     
-    extension [Self <: ActionBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAfterFormat(value: Any): Self = StObject.set(x, "afterFormat", value.asInstanceOf[js.Any])
       
@@ -1379,7 +1380,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ActionCompleteEventArgs]
     }
     
-    extension [Self <: ActionCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1450,7 +1452,8 @@ object Spreadsheet {
       __obj.asInstanceOf[AutoFillBeginEventArgs]
     }
     
-    extension [Self <: AutoFillBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFillBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1531,7 +1534,8 @@ object Spreadsheet {
       __obj.asInstanceOf[AutoFillCompleteEventArgs]
     }
     
-    extension [Self <: AutoFillCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFillCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1596,7 +1600,8 @@ object Spreadsheet {
       __obj.asInstanceOf[AutoFillObject]
     }
     
-    extension [Self <: AutoFillObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFillObject] (val x: Self) extends AnyVal {
       
       inline def setDataRange(value: String): Self = StObject.set(x, "dataRange", value.asInstanceOf[js.Any])
       
@@ -1635,7 +1640,8 @@ object Spreadsheet {
       __obj.asInstanceOf[AutoFillSettings]
     }
     
-    extension [Self <: AutoFillSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoFillSettings] (val x: Self) extends AnyVal {
       
       inline def setFillType(value: AutoFillOptions | String): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
       
@@ -1668,7 +1674,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BackstageOptions]
     }
     
-    extension [Self <: BackstageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackstageOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -1705,7 +1712,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeBatchSaveEventArgs]
     }
     
-    extension [Self <: BeforeBatchSaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeBatchSaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchChanges(value: Any): Self = StObject.set(x, "batchChanges", value.asInstanceOf[js.Any])
       
@@ -1754,7 +1762,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeCellFormatEventArgs]
     }
     
-    extension [Self <: BeforeCellFormatEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCellFormatEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1813,7 +1822,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeCellSelectEventArgs]
     }
     
-    extension [Self <: BeforeCellSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCellSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1882,7 +1892,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeDropEventArgs]
     }
     
-    extension [Self <: BeforeDropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeDropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1955,7 +1966,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeEditCommentEventArgs]
     }
     
-    extension [Self <: BeforeEditCommentEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeEditCommentEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2012,7 +2024,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2065,7 +2078,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BeforePanelOpenEventArgs]
     }
     
-    extension [Self <: BeforePanelOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforePanelOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActivationPanel(value: Any): Self = StObject.set(x, "activationPanel", value.asInstanceOf[js.Any])
       
@@ -2114,7 +2128,8 @@ object Spreadsheet {
       __obj.asInstanceOf[BorderOptions]
     }
     
-    extension [Self <: BorderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -2159,7 +2174,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CFormatOptions]
     }
     
-    extension [Self <: CFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -2234,7 +2250,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellClickEventArgs]
     }
     
-    extension [Self <: CellClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2315,7 +2332,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellEditEventArgs]
     }
     
-    extension [Self <: CellEditEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellEditEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2384,7 +2402,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellFormattingEventArgs]
     }
     
-    extension [Self <: CellFormattingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellFormattingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCell(value: Double): Self = StObject.set(x, "Cell", value.asInstanceOf[js.Any])
       
@@ -2441,7 +2460,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellHoverEventArgs]
     }
     
-    extension [Self <: CellHoverEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellHoverEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2478,7 +2498,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellIndex]
     }
     
-    extension [Self <: CellIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellIndex] (val x: Self) extends AnyVal {
       
       inline def setColIndex(value: Double): Self = StObject.set(x, "colIndex", value.asInstanceOf[js.Any])
       
@@ -2543,7 +2564,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellSaveEventArgs]
     }
     
-    extension [Self <: CellSaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2624,7 +2646,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellSelectedEventArgs]
     }
     
-    extension [Self <: CellSelectedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellSelectedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2695,7 +2718,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CellTypeSettings]
     }
     
-    extension [Self <: CellTypeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellTypeSettings] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -2752,7 +2776,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ChartOptions]
     }
     
-    extension [Self <: ChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
       
       inline def setEnable3D(value: Boolean): Self = StObject.set(x, "enable3D", value.asInstanceOf[js.Any])
       
@@ -2787,7 +2812,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ChartSettings]
     }
     
-    extension [Self <: ChartSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -2816,7 +2842,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ColorOptions]
     }
     
-    extension [Self <: ColorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -2877,7 +2904,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ContextMenuClickEventArgs]
     }
     
-    extension [Self <: ContextMenuClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2942,7 +2970,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ContextualTabOptions]
     }
     
-    extension [Self <: ContextualTabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextualTabOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -2975,7 +3004,8 @@ object Spreadsheet {
       __obj.asInstanceOf[CustomStyleOptions]
     }
     
-    extension [Self <: CustomStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setNumFormat(value: Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
       
@@ -3008,7 +3038,8 @@ object Spreadsheet {
       __obj.asInstanceOf[DataOptions]
     }
     
-    extension [Self <: DataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -3061,7 +3092,8 @@ object Spreadsheet {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3118,7 +3150,8 @@ object Spreadsheet {
       __obj.asInstanceOf[DragShapeEventArgs]
     }
     
-    extension [Self <: DragShapeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragShapeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3175,7 +3208,8 @@ object Spreadsheet {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3244,7 +3278,8 @@ object Spreadsheet {
       __obj.asInstanceOf[DropEventArgs]
     }
     
-    extension [Self <: DropEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3305,7 +3340,8 @@ object Spreadsheet {
       __obj.asInstanceOf[EditRangeBeginEventArgs]
     }
     
-    extension [Self <: EditRangeBeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditRangeBeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3358,7 +3394,8 @@ object Spreadsheet {
       __obj.asInstanceOf[EditRangeCompleteEventArgs]
     }
     
-    extension [Self <: EditRangeCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditRangeCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3422,7 +3459,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ExportSettings]
     }
     
-    extension [Self <: ExportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowExporting(value: Boolean): Self = StObject.set(x, "allowExporting", value.asInstanceOf[js.Any])
       
@@ -3483,7 +3521,8 @@ object Spreadsheet {
       __obj.asInstanceOf[FontOptions]
     }
     
-    extension [Self <: FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -3540,7 +3579,8 @@ object Spreadsheet {
       __obj.asInstanceOf[FormatObjectOptions]
     }
     
-    extension [Self <: FormatObjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatObjectOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimalPlaces(value: String): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       
@@ -3589,7 +3629,8 @@ object Spreadsheet {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -3633,7 +3674,8 @@ object Spreadsheet {
       __obj.asInstanceOf[FormatSettings]
     }
     
-    extension [Self <: FormatSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowCellBorder(value: Boolean): Self = StObject.set(x, "allowCellBorder", value.asInstanceOf[js.Any])
       
@@ -3675,7 +3717,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ImportSettings]
     }
     
-    extension [Self <: ImportSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportSettings] (val x: Self) extends AnyVal {
       
       inline def setImportMapper(value: String): Self = StObject.set(x, "importMapper", value.asInstanceOf[js.Any])
       
@@ -3724,7 +3767,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ImportingOptions]
     }
     
-    extension [Self <: ImportingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportingOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -3789,7 +3833,8 @@ object Spreadsheet {
       __obj.asInstanceOf[KeyDownEventArgs]
     }
     
-    extension [Self <: KeyDownEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDownEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3866,7 +3911,8 @@ object Spreadsheet {
       __obj.asInstanceOf[KeyUpEventArgs]
     }
     
-    extension [Self <: KeyUpEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyUpEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -3923,7 +3969,8 @@ object Spreadsheet {
       __obj.asInstanceOf[LinkOptions]
     }
     
-    extension [Self <: LinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkOptions] (val x: Self) extends AnyVal {
       
       inline def setCellAddress(value: String): Self = StObject.set(x, "cellAddress", value.asInstanceOf[js.Any])
       
@@ -3960,7 +4007,8 @@ object Spreadsheet {
       __obj.asInstanceOf[LoadCompleteEventArgs]
     }
     
-    extension [Self <: LoadCompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadCompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4001,7 +4049,8 @@ object Spreadsheet {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4062,7 +4111,8 @@ object Spreadsheet {
       __obj.asInstanceOf[MenuClickEventArgs]
     }
     
-    extension [Self <: MenuClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4123,7 +4173,8 @@ object Spreadsheet {
       __obj.asInstanceOf[MenuItemOptions]
     }
     
-    extension [Self <: MenuItemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -4621,7 +4672,8 @@ object Spreadsheet {
       __obj.asInstanceOf[typings.ejWebAll.ej.Spreadsheet.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Spreadsheet.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Spreadsheet.Model] (val x: Self) extends AnyVal {
       
       inline def setActionBegin(value: /* e */ ActionBeginEventArgs => Unit): Self = StObject.set(x, "actionBegin", js.Any.fromFunction1(value))
       
@@ -5056,7 +5108,8 @@ object Spreadsheet {
       __obj.asInstanceOf[NameManager]
     }
     
-    extension [Self <: NameManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameManager] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -5085,7 +5138,8 @@ object Spreadsheet {
       __obj.asInstanceOf[NumberFormatOptions]
     }
     
-    extension [Self <: NumberFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setNumFormat(value: Any): Self = StObject.set(x, "NumFormat", value.asInstanceOf[js.Any])
       
@@ -5122,7 +5176,8 @@ object Spreadsheet {
       __obj.asInstanceOf[OnImportEventArgs]
     }
     
-    extension [Self <: OnImportEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnImportEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5175,7 +5230,8 @@ object Spreadsheet {
       __obj.asInstanceOf[OpenFailureEventArgs]
     }
     
-    extension [Self <: OpenFailureEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenFailureEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5240,7 +5296,8 @@ object Spreadsheet {
       __obj.asInstanceOf[PagerClickEventArgs]
     }
     
-    extension [Self <: PagerClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveSheet(value: Double): Self = StObject.set(x, "activeSheet", value.asInstanceOf[js.Any])
       
@@ -5296,7 +5353,8 @@ object Spreadsheet {
       __obj.asInstanceOf[PictureSettings]
     }
     
-    extension [Self <: PictureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PictureSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowPictures(value: Boolean): Self = StObject.set(x, "allowPictures", value.asInstanceOf[js.Any])
       
@@ -5337,7 +5395,8 @@ object Spreadsheet {
       __obj.asInstanceOf[PivotOptions]
     }
     
-    extension [Self <: PivotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PivotOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -5381,7 +5440,8 @@ object Spreadsheet {
       __obj.asInstanceOf[PrintSettings]
     }
     
-    extension [Self <: PrintSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowPageSetup(value: Boolean): Self = StObject.set(x, "allowPageSetup", value.asInstanceOf[js.Any])
       
@@ -5418,7 +5478,8 @@ object Spreadsheet {
       __obj.asInstanceOf[RangeOptions]
     }
     
-    extension [Self <: RangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeOptions] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -5483,7 +5544,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ResizeEndEventArgs]
     }
     
-    extension [Self <: ResizeEndEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeEndEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5560,7 +5622,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ResizeStartEventArgs]
     }
     
-    extension [Self <: ResizeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5629,7 +5692,8 @@ object Spreadsheet {
       __obj.asInstanceOf[RibbonClickEventArgs]
     }
     
-    extension [Self <: RibbonClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5678,7 +5742,8 @@ object Spreadsheet {
       __obj.asInstanceOf[RibbonSettings]
     }
     
-    extension [Self <: RibbonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonSettings] (val x: Self) extends AnyVal {
       
       inline def setApplicationTab(value: RibbonSettingsApplicationTab): Self = StObject.set(x, "applicationTab", value.asInstanceOf[js.Any])
       
@@ -5704,7 +5769,8 @@ object Spreadsheet {
       __obj.asInstanceOf[RibbonSettingsApplicationTab]
     }
     
-    extension [Self <: RibbonSettingsApplicationTab](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonSettingsApplicationTab] (val x: Self) extends AnyVal {
       
       inline def setMenuSettings(value: RibbonSettingsApplicationTabMenuSettings): Self = StObject.set(x, "menuSettings", value.asInstanceOf[js.Any])
       
@@ -5735,7 +5801,8 @@ object Spreadsheet {
       __obj.asInstanceOf[RibbonSettingsApplicationTabMenuSettings]
     }
     
-    extension [Self <: RibbonSettingsApplicationTabMenuSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RibbonSettingsApplicationTabMenuSettings] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -5794,7 +5861,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ScrollSettings]
     }
     
-    extension [Self <: ScrollSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowScrolling(value: Boolean): Self = StObject.set(x, "allowScrolling", value.asInstanceOf[js.Any])
       
@@ -5859,7 +5927,8 @@ object Spreadsheet {
       __obj.asInstanceOf[ScrollStopEventArgs]
     }
     
-    extension [Self <: ScrollStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5920,7 +5989,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SelectionSettings]
     }
     
-    extension [Self <: SelectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionSettings] (val x: Self) extends AnyVal {
       
       inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
       
@@ -6067,7 +6137,8 @@ object Spreadsheet {
       __obj.asInstanceOf[Sheet]
     }
     
-    extension [Self <: Sheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: js.Array[SheetsBorder]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -6200,7 +6271,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsBorder]
     }
     
-    extension [Self <: SheetsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -6242,7 +6314,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsCFormatRule]
     }
     
-    extension [Self <: SheetsCFormatRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsCFormatRule] (val x: Self) extends AnyVal {
       
       inline def setAction(value: CFormatRule | String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -6302,7 +6375,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRangeSetting]
     }
     
-    extension [Self <: SheetsRangeSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRangeSetting] (val x: Self) extends AnyVal {
       
       inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
@@ -6354,7 +6428,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRow]
     }
     
-    extension [Self <: SheetsRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRow] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[SheetsRowsCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
@@ -6415,7 +6490,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRowsCell]
     }
     
-    extension [Self <: SheetsRowsCell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRowsCell] (val x: Self) extends AnyVal {
       
       inline def setComment(value: SheetsRowsCellsComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -6465,7 +6541,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRowsCellsComment]
     }
     
-    extension [Self <: SheetsRowsCellsComment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRowsCellsComment] (val x: Self) extends AnyVal {
       
       inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
@@ -6504,7 +6581,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRowsCellsFormat]
     }
     
-    extension [Self <: SheetsRowsCellsFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRowsCellsFormat] (val x: Self) extends AnyVal {
       
       inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       
@@ -6546,7 +6624,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRowsCellsHyperlink]
     }
     
-    extension [Self <: SheetsRowsCellsHyperlink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRowsCellsHyperlink] (val x: Self) extends AnyVal {
       
       inline def setCellAddr(value: String): Self = StObject.set(x, "cellAddr", value.asInstanceOf[js.Any])
       
@@ -6583,7 +6662,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SheetsRowsCellsStyle]
     }
     
-    extension [Self <: SheetsRowsCellsStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SheetsRowsCellsStyle] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -6624,7 +6704,8 @@ object Spreadsheet {
       __obj.asInstanceOf[SparklineOptions]
     }
     
-    extension [Self <: SparklineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklineOptions] (val x: Self) extends AnyVal {
       
       inline def setHighPointColor(value: String): Self = StObject.set(x, "highPointColor", value.asInstanceOf[js.Any])
       
@@ -6685,7 +6766,8 @@ object Spreadsheet {
       __obj.asInstanceOf[TabClickEventArgs]
     }
     
-    extension [Self <: TabClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -6746,7 +6828,8 @@ object Spreadsheet {
       __obj.asInstanceOf[TabOptions]
     }
     
-    extension [Self <: TabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabOptions] (val x: Self) extends AnyVal {
       
       inline def setAlignType(value: HTMLElement): Self = StObject.set(x, "alignType", value.asInstanceOf[js.Any])
       
@@ -6807,7 +6890,8 @@ object Spreadsheet {
       __obj.asInstanceOf[TabSelectEventArgs]
     }
     
-    extension [Self <: TabSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: Any): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -6860,7 +6944,8 @@ object Spreadsheet {
       __obj.asInstanceOf[TableIDOptions]
     }
     
-    extension [Self <: TableIDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableIDOptions] (val x: Self) extends AnyVal {
       
       inline def setSheetIdx(value: Double): Self = StObject.set(x, "sheetIdx", value.asInstanceOf[js.Any])
       
@@ -6893,7 +6978,8 @@ object Spreadsheet {
       __obj.asInstanceOf[TableOptions]
     }
     
-    extension [Self <: TableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatName(value: String): Self = StObject.set(x, "formatName", value.asInstanceOf[js.Any])
       
@@ -6930,7 +7016,8 @@ object Spreadsheet {
       __obj.asInstanceOf[UndoRedoOptions]
     }
     
-    extension [Self <: UndoRedoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UndoRedoOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -7038,7 +7125,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLCMenu]
     }
     
-    extension [Self <: XLCMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLCMenu] (val x: Self) extends AnyVal {
       
       inline def setAddItem(value: (ContextMenuType, js.Array[Any], String, Double) => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction4(value))
       
@@ -7163,7 +7251,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLClipboard]
     }
     
-    extension [Self <: XLClipboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLClipboard] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: () => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
@@ -7279,7 +7368,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLDragFill]
     }
     
-    extension [Self <: XLDragFill](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLDragFill] (val x: Self) extends AnyVal {
       
       inline def setAutoFill(value: AutoFillObject => Unit): Self = StObject.set(x, "autoFill", js.Any.fromFunction1(value))
       
@@ -7391,7 +7481,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLExport]
     }
     
-    extension [Self <: XLExport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLExport] (val x: Self) extends AnyVal {
       
       inline def setExport(value: (String, ExportType) => Unit): Self = StObject.set(x, "export", js.Any.fromFunction2(value))
       
@@ -7611,7 +7702,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLFreeze]
     }
     
-    extension [Self <: XLFreeze](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLFreeze] (val x: Self) extends AnyVal {
       
       inline def setFreezeColumns(value: Double => Unit): Self = StObject.set(x, "freezeColumns", js.Any.fromFunction1(value))
       
@@ -7670,7 +7762,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLPivot]
     }
     
-    extension [Self <: XLPivot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLPivot] (val x: Self) extends AnyVal {
       
       inline def setClearPivotFieldList(value: String => Unit): Self = StObject.set(x, "clearPivotFieldList", js.Any.fromFunction1(value))
       
@@ -7701,7 +7794,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLPrint]
     }
     
-    extension [Self <: XLPrint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLPrint] (val x: Self) extends AnyVal {
       
       inline def setPrintSelection(value: () => Unit): Self = StObject.set(x, "printSelection", js.Any.fromFunction0(value))
       
@@ -7763,7 +7857,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLResize]
     }
     
-    extension [Self <: XLResize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLResize] (val x: Self) extends AnyVal {
       
       inline def setFitHeight(value: js.Array[Any] => Unit): Self = StObject.set(x, "fitHeight", js.Any.fromFunction1(value))
       
@@ -7908,7 +8003,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLScroll]
     }
     
-    extension [Self <: XLScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLScroll] (val x: Self) extends AnyVal {
       
       inline def setScrollToCell(value: String => Unit): Self = StObject.set(x, "scrollToCell", js.Any.fromFunction1(value))
     }
@@ -7944,7 +8040,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLSearch]
     }
     
-    extension [Self <: XLSearch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLSearch] (val x: Self) extends AnyVal {
       
       inline def setReplaceAllByBook(value: (String, String, Boolean, Boolean) => Unit): Self = StObject.set(x, "replaceAllByBook", js.Any.fromFunction4(value))
       
@@ -8031,7 +8128,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLShape]
     }
     
-    extension [Self <: XLShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLShape] (val x: Self) extends AnyVal {
       
       inline def setSetPicture(value: (String, String, Double, Double, Double, Double) => String): Self = StObject.set(x, "setPicture", js.Any.fromFunction6(value))
     }
@@ -8103,7 +8201,8 @@ object Spreadsheet {
       __obj.asInstanceOf[XLSparkline]
     }
     
-    extension [Self <: XLSparkline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XLSparkline] (val x: Self) extends AnyVal {
       
       inline def setChangePointColor(value: (String, Any, Double) => Unit): Self = StObject.set(x, "changePointColor", js.Any.fromFunction3(value))
       

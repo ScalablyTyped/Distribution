@@ -21,7 +21,8 @@ object WhitelistsAddRequest {
     __obj.asInstanceOf[WhitelistsAddRequest]
   }
   
-  extension [Self <: WhitelistsAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhitelistsAddRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

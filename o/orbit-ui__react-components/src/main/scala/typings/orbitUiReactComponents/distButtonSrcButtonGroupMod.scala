@@ -81,7 +81,8 @@ object distButtonSrcButtonGroupMod {
       __obj.asInstanceOf[InnerButtonGroupProps]
     }
     
-    extension [Self <: InnerButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

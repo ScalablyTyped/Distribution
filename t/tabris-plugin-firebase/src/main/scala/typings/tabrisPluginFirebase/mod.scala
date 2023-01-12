@@ -93,7 +93,8 @@ object mod {
         @js.native
         val ^ : MessagingEvents = js.native
         
-        extension [Self <: MessagingEvents](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: MessagingEvents] (val x: Self) extends AnyVal {
           
           inline def setInstanceIdChanged(
             value: /* event */ PropertyChangedEvent[typings.tabrisPluginFirebase.mod.global.firebase.Messaging, String] => Unit
@@ -129,7 +130,8 @@ object mod {
           __obj.asInstanceOf[AnalyticsProperties]
         }
         
-        extension [Self <: AnalyticsProperties](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AnalyticsProperties] (val x: Self) extends AnyVal {
           
           inline def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
           
@@ -162,7 +164,8 @@ object mod {
             __obj.asInstanceOf[typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics]
           }
           
-          extension [Self <: typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: typings.tabrisPluginFirebase.mod.global.firebase.PropertyMixins.Analytics] (val x: Self) extends AnyVal {
             
             inline def setAnalyticsCollectionEnabled(value: Boolean): Self = StObject.set(x, "analyticsCollectionEnabled", value.asInstanceOf[js.Any])
             

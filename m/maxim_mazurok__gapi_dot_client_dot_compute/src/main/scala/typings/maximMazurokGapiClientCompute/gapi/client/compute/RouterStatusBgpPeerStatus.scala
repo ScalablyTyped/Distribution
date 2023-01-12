@@ -43,7 +43,8 @@ object RouterStatusBgpPeerStatus {
     __obj.asInstanceOf[RouterStatusBgpPeerStatus]
   }
   
-  extension [Self <: RouterStatusBgpPeerStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterStatusBgpPeerStatus] (val x: Self) extends AnyVal {
     
     inline def setAdvertisedRoutes(value: js.Array[Route]): Self = StObject.set(x, "advertisedRoutes", value.asInstanceOf[js.Any])
     

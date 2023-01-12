@@ -24,7 +24,8 @@ object IVaultNamedValueStorageOperations {
     __obj.asInstanceOf[IVaultNamedValueStorageOperations]
   }
   
-  extension [Self <: IVaultNamedValueStorageOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultNamedValueStorageOperations] (val x: Self) extends AnyVal {
     
     inline def setGetNamedValues(value: (MFNamedValueType, String) => INamedValues): Self = StObject.set(x, "GetNamedValues", js.Any.fromFunction2(value))
     

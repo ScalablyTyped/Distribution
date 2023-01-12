@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Animation]
     }
     
-    extension [Self <: Animation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Mediaprefersreducedmotionreduce]
     }
     
-    extension [Self <: Mediaprefersreducedmotionreduce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mediaprefersreducedmotionreduce] (val x: Self) extends AnyVal {
       
       inline def `set@media Leftparenthesisprefers-reduced-motionColon reduceRightparenthesis`(value: Animation): Self = StObject.set(x, "@media (prefers-reduced-motion: reduce)", value.asInstanceOf[js.Any])
     }
@@ -114,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: typings.react.mod.Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -135,7 +140,8 @@ object anon {
       __obj.asInstanceOf[RefCallbackRef]
     }
     
-    extension [Self <: RefCallbackRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefCallbackRef] (val x: Self) extends AnyVal {
       
       inline def setRef(value: /* instance */ Element => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
@@ -177,7 +183,8 @@ object anon {
       __obj.asInstanceOf[ResizingHeightOptschildre]
     }
     
-    extension [Self <: ResizingHeightOptschildre](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizingHeightOptschildre] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: RefCallbackRef => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

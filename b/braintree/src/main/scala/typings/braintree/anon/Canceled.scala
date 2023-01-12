@@ -28,7 +28,8 @@ object Canceled {
     __obj.asInstanceOf[Canceled]
   }
   
-  extension [Self <: Canceled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Canceled] (val x: Self) extends AnyVal {
     
     inline def setActive(value: typings.braintree.braintreeStrings.Active): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

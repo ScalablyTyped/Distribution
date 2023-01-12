@@ -95,7 +95,8 @@ object distProfilerMod {
       __obj.asInstanceOf[KernelProfile]
     }
     
-    extension [Self <: KernelProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KernelProfile] (val x: Self) extends AnyVal {
       
       inline def setExtraInfo(value: js.Promise[String]): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
       

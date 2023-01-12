@@ -23,7 +23,8 @@ object TypedLinkFacetAttributeUpdate {
     __obj.asInstanceOf[TypedLinkFacetAttributeUpdate]
   }
   
-  extension [Self <: TypedLinkFacetAttributeUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkFacetAttributeUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

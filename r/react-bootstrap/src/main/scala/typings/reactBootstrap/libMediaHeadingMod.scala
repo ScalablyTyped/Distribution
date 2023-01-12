@@ -29,7 +29,8 @@ object libMediaHeadingMod {
       __obj.asInstanceOf[MediaHeadingProps]
     }
     
-    extension [Self <: MediaHeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaHeadingProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

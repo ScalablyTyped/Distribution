@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Inherit]
     }
     
-    extension [Self <: Inherit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Inherit] (val x: Self) extends AnyVal {
       
       inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
       

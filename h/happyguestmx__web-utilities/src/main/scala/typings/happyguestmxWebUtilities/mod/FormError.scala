@@ -17,7 +17,8 @@ object FormError {
     __obj.asInstanceOf[FormError]
   }
   
-  extension [Self <: FormError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormError] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[Fields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }

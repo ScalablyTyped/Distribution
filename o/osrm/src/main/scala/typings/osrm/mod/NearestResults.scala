@@ -15,7 +15,8 @@ object NearestResults {
     __obj.asInstanceOf[NearestResults]
   }
   
-  extension [Self <: NearestResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestResults] (val x: Self) extends AnyVal {
     
     inline def setWaypoints(value: js.Array[Waypoint]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     

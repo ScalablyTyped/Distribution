@@ -70,7 +70,8 @@ object TSDeclareMethod_ {
     __obj.asInstanceOf[TSDeclareMethod_]
   }
   
-  extension [Self <: TSDeclareMethod_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSDeclareMethod_] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

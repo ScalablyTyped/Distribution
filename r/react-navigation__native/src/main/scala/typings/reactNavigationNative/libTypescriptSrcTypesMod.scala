@@ -32,7 +32,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[DocumentTitleOptions]
     }
     
-    extension [Self <: DocumentTitleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentTitleOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[LinkingOptions[ParamList]]
     }
     
-    extension [Self <: LinkingOptions[?], ParamList /* <: js.Object */](x: Self & LinkingOptions[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkingOptions[?], ParamList /* <: js.Object */] (val x: Self & LinkingOptions[ParamList]) extends AnyVal {
       
       inline def setConfig(value: InitialRouteName[ParamList]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[ServerContainerRef]
     }
     
-    extension [Self <: ServerContainerRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerContainerRef] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentOptions(value: () => js.UndefOr[Record[String, Any]]): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
     }
@@ -245,7 +248,8 @@ object libTypescriptSrcTypesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object ModifyInstanceEventWindowRequest {
     __obj.asInstanceOf[ModifyInstanceEventWindowRequest]
   }
   
-  extension [Self <: ModifyInstanceEventWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceEventWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setCronExpression(value: InstanceEventWindowCronExpression): Self = StObject.set(x, "CronExpression", value.asInstanceOf[js.Any])
     

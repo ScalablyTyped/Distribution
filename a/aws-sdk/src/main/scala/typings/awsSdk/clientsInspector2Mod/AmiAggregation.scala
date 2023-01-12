@@ -28,7 +28,8 @@ object AmiAggregation {
     __obj.asInstanceOf[AmiAggregation]
   }
   
-  extension [Self <: AmiAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmiAggregation] (val x: Self) extends AnyVal {
     
     inline def setAmis(value: StringFilterList): Self = StObject.set(x, "amis", value.asInstanceOf[js.Any])
     

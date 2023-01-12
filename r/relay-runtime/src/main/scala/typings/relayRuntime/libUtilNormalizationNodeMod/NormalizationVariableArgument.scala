@@ -24,7 +24,8 @@ object NormalizationVariableArgument {
     __obj.asInstanceOf[NormalizationVariableArgument]
   }
   
-  extension [Self <: NormalizationVariableArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationVariableArgument] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

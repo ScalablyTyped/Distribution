@@ -265,7 +265,8 @@ object Typeofwebgl {
     __obj.asInstanceOf[Typeofwebgl]
   }
   
-  extension [Self <: Typeofwebgl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofwebgl] (val x: Self) extends AnyVal {
     
     inline def setAssetManager(
       value: Instantiable2[

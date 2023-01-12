@@ -17,7 +17,8 @@ object UIkitMarginOptions {
     __obj.asInstanceOf[UIkitMarginOptions]
   }
   
-  extension [Self <: UIkitMarginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitMarginOptions] (val x: Self) extends AnyVal {
     
     inline def `setFirst-column`(value: String): Self = StObject.set(x, "first-column", value.asInstanceOf[js.Any])
     

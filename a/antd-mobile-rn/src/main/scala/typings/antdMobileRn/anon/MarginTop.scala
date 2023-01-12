@@ -19,7 +19,8 @@ object MarginTop {
     __obj.asInstanceOf[MarginTop]
   }
   
-  extension [Self <: MarginTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginTop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

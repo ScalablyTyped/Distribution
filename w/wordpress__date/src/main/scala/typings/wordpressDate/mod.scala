@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[DateSettings]
     }
     
-    extension [Self <: DateSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateSettings] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: Date): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       

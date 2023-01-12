@@ -18,7 +18,8 @@ object ModelPackagingOutputDetails {
     __obj.asInstanceOf[ModelPackagingOutputDetails]
   }
   
-  extension [Self <: ModelPackagingOutputDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackagingOutputDetails] (val x: Self) extends AnyVal {
     
     inline def setGreengrass(value: GreengrassOutputDetails): Self = StObject.set(x, "Greengrass", value.asInstanceOf[js.Any])
     

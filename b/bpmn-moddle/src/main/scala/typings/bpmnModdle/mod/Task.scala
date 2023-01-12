@@ -44,7 +44,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setIncomingConversationLinks(value: js.Array[ConversationLink]): Self = StObject.set(x, "incomingConversationLinks", value.asInstanceOf[js.Any])
     

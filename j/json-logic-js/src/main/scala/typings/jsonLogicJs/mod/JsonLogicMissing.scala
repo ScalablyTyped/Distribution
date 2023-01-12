@@ -18,7 +18,8 @@ object JsonLogicMissing {
     __obj.asInstanceOf[JsonLogicMissing[AddOps]]
   }
   
-  extension [Self <: JsonLogicMissing[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicMissing[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicMissing[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicMissing[AddOps]) extends AnyVal {
     
     inline def setMissing(value: RulesLogic[AddOps] | js.Array[Any]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
     

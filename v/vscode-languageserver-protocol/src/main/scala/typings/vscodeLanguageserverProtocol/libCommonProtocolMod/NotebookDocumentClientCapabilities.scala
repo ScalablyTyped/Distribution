@@ -21,7 +21,8 @@ object NotebookDocumentClientCapabilities {
     __obj.asInstanceOf[NotebookDocumentClientCapabilities]
   }
   
-  extension [Self <: NotebookDocumentClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setSynchronization(value: NotebookDocumentSyncClientCapabilities): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
   }

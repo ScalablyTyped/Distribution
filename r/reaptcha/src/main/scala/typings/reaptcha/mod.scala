@@ -178,7 +178,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* renderProps */ RenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -290,7 +291,8 @@ object mod {
       __obj.asInstanceOf[RecaptchaBaseConfig]
     }
     
-    extension [Self <: RecaptchaBaseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecaptchaBaseConfig] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object mod {
       __obj.asInstanceOf[RecaptchaConfig]
     }
     
-    extension [Self <: RecaptchaConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecaptchaConfig] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* response */ String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -377,7 +380,8 @@ object mod {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => js.Promise[Unit]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -412,7 +416,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setInstanceId(value: Double): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
@@ -441,7 +446,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setGrecaptcha(value: Grecaptcha): Self = StObject.set(x, "grecaptcha", value.asInstanceOf[js.Any])
         

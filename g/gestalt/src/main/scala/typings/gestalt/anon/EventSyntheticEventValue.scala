@@ -18,7 +18,8 @@ object EventSyntheticEventValue {
     __obj.asInstanceOf[EventSyntheticEventValue]
   }
   
-  extension [Self <: EventSyntheticEventValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSyntheticEventValue] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

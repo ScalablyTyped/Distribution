@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -64,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[NameVersion]
     }
     
-    extension [Self <: NameVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameVersion] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Secret]
     }
     
-    extension [Self <: Secret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
@@ -127,7 +132,8 @@ object anon {
       __obj.asInstanceOf[StartsWith]
     }
     
-    extension [Self <: StartsWith](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartsWith] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -158,7 +164,8 @@ object anon {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CredstashContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object typesListDeadLetterSourceQueuesInputMod {
       __obj.asInstanceOf[ListDeadLetterSourceQueuesInput]
     }
     
-    extension [Self <: ListDeadLetterSourceQueuesInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListDeadLetterSourceQueuesInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

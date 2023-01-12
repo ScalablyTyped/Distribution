@@ -22,7 +22,8 @@ object IGraphDef {
     __obj.asInstanceOf[IGraphDef]
   }
   
-  extension [Self <: IGraphDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGraphDef] (val x: Self) extends AnyVal {
     
     inline def setLibrary(value: IFunctionDefLibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     

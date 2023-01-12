@@ -19,7 +19,8 @@ object IResolvedFile {
     __obj.asInstanceOf[IResolvedFile]
   }
   
-  extension [Self <: IResolvedFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResolvedFile] (val x: Self) extends AnyVal {
     
     inline def setImportedFiles(value: js.Array[String]): Self = StObject.set(x, "importedFiles", value.asInstanceOf[js.Any])
     

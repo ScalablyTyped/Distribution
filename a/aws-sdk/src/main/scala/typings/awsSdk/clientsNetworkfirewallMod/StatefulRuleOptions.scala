@@ -18,7 +18,8 @@ object StatefulRuleOptions {
     __obj.asInstanceOf[StatefulRuleOptions]
   }
   
-  extension [Self <: StatefulRuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulRuleOptions] (val x: Self) extends AnyVal {
     
     inline def setRuleOrder(value: RuleOrder): Self = StObject.set(x, "RuleOrder", value.asInstanceOf[js.Any])
     

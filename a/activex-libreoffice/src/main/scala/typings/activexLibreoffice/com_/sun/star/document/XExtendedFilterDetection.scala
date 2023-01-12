@@ -44,7 +44,8 @@ object XExtendedFilterDetection {
     __obj.asInstanceOf[XExtendedFilterDetection]
   }
   
-  extension [Self <: XExtendedFilterDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedFilterDetection] (val x: Self) extends AnyVal {
     
     inline def setDetect(value: js.Array[SeqEquiv[PropertyValue]] => String): Self = StObject.set(x, "detect", js.Any.fromFunction1(value))
   }

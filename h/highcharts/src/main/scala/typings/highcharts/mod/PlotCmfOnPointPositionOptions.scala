@@ -39,7 +39,8 @@ object PlotCmfOnPointPositionOptions {
     __obj.asInstanceOf[PlotCmfOnPointPositionOptions]
   }
   
-  extension [Self <: PlotCmfOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotCmfOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

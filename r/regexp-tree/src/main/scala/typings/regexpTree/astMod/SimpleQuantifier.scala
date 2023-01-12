@@ -24,7 +24,8 @@ object SimpleQuantifier {
     __obj.asInstanceOf[SimpleQuantifier]
   }
   
-  extension [Self <: SimpleQuantifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleQuantifier] (val x: Self) extends AnyVal {
     
     inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
     

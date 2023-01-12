@@ -23,7 +23,8 @@ object DividerColor {
     __obj.asInstanceOf[DividerColor]
   }
   
-  extension [Self <: DividerColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DividerColor] (val x: Self) extends AnyVal {
     
     inline def setDividerColor(value: String): Self = StObject.set(x, "dividerColor", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object typesSendMessageBatchResultEntryMod {
       __obj.asInstanceOf[SendMessageBatchResultEntry]
     }
     
-    extension [Self <: SendMessageBatchResultEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageBatchResultEntry] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       

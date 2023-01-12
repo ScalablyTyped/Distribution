@@ -55,7 +55,8 @@ object libComponentsIconIconMod {
       __obj.asInstanceOf[IconData]
     }
     
-    extension [Self <: IconData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconData] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object libComponentsIconIconMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object AgreementAcceptance {
     __obj.asInstanceOf[AgreementAcceptance]
   }
   
-  extension [Self <: AgreementAcceptance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgreementAcceptance] (val x: Self) extends AnyVal {
     
     inline def setAgreementFileId(value: NullableOption[String]): Self = StObject.set(x, "agreementFileId", value.asInstanceOf[js.Any])
     

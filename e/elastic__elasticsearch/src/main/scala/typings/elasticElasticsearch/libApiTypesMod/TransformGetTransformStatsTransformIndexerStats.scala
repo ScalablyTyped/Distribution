@@ -63,7 +63,8 @@ object TransformGetTransformStatsTransformIndexerStats {
     __obj.asInstanceOf[TransformGetTransformStatsTransformIndexerStats]
   }
   
-  extension [Self <: TransformGetTransformStatsTransformIndexerStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformGetTransformStatsTransformIndexerStats] (val x: Self) extends AnyVal {
     
     inline def setDelete_time_in_ms(value: EpochTime[UnitMillis]): Self = StObject.set(x, "delete_time_in_ms", value.asInstanceOf[js.Any])
     

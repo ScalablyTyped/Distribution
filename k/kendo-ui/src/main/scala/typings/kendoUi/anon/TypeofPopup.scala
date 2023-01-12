@@ -23,7 +23,8 @@ object TypeofPopup {
     __obj.asInstanceOf[TypeofPopup]
   }
   
-  extension [Self <: TypeofPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPopup] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Popup): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

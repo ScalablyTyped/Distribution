@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Bin]
     }
     
-    extension [Self <: Bin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object mod {
       __obj.asInstanceOf[PackResult[T]]
     }
     
-    extension [Self <: PackResult[?], T](x: Self & PackResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackResult[?], T] (val x: Self & PackResult[T]) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -112,7 +115,8 @@ object mod {
       __obj.asInstanceOf[PackedItem[T]]
     }
     
-    extension [Self <: PackedItem[?], T](x: Self & PackedItem[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackedItem[?], T] (val x: Self & PackedItem[T]) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

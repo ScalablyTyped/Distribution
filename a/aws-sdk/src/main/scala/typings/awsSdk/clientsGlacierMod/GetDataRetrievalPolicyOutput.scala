@@ -18,7 +18,8 @@ object GetDataRetrievalPolicyOutput {
     __obj.asInstanceOf[GetDataRetrievalPolicyOutput]
   }
   
-  extension [Self <: GetDataRetrievalPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataRetrievalPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setPolicy(value: DataRetrievalPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     

@@ -208,7 +208,8 @@ object M2tsSettings {
     __obj.asInstanceOf[M2tsSettings]
   }
   
-  extension [Self <: M2tsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: M2tsSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioBufferModel(value: M2tsAudioBufferModel): Self = StObject.set(x, "AudioBufferModel", value.asInstanceOf[js.Any])
     

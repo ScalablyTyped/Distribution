@@ -34,7 +34,8 @@ object GoogleCloudRedisV1OperationMetadata {
     __obj.asInstanceOf[GoogleCloudRedisV1OperationMetadata]
   }
   
-  extension [Self <: GoogleCloudRedisV1OperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRedisV1OperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

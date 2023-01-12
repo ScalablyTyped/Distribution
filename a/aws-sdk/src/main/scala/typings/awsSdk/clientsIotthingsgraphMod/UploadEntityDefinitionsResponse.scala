@@ -18,7 +18,8 @@ object UploadEntityDefinitionsResponse {
     __obj.asInstanceOf[UploadEntityDefinitionsResponse]
   }
   
-  extension [Self <: UploadEntityDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadEntityDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
   }

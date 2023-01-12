@@ -20,7 +20,8 @@ object PathProperties {
     __obj.asInstanceOf[PathProperties]
   }
   
-  extension [Self <: PathProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathProperties] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[GraphObjectProperties]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

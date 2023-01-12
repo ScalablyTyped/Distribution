@@ -20,7 +20,8 @@ object GoogleMapsPlayablelocationsV3SampleAreaFilter {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleAreaFilter]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleAreaFilter] (val x: Self) extends AnyVal {
     
     inline def setS2CellId(value: String): Self = StObject.set(x, "s2CellId", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IdInfoObject {
     __obj.asInstanceOf[IdInfoObject]
   }
   
-  extension [Self <: IdInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdInfoObject] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

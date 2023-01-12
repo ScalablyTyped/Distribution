@@ -24,7 +24,8 @@ object distDeclarationsSrcSvgMod {
       __obj.asInstanceOf[SVGProps]
     }
     
-    extension [Self <: SVGProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

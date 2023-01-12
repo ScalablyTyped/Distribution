@@ -20,7 +20,8 @@ object MapCircleStyle {
     __obj.asInstanceOf[MapCircleStyle]
   }
   
-  extension [Self <: MapCircleStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapCircleStyle] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

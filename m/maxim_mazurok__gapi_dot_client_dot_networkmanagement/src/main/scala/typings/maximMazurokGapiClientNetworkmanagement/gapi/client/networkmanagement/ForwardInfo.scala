@@ -19,7 +19,8 @@ object ForwardInfo {
     __obj.asInstanceOf[ForwardInfo]
   }
   
-  extension [Self <: ForwardInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardInfo] (val x: Self) extends AnyVal {
     
     inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     

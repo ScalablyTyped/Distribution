@@ -43,7 +43,8 @@ object DeploymentConfigInfo {
     __obj.asInstanceOf[DeploymentConfigInfo]
   }
   
-  extension [Self <: DeploymentConfigInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentConfigInfo] (val x: Self) extends AnyVal {
     
     inline def setComputePlatform(value: ComputePlatform): Self = StObject.set(x, "computePlatform", value.asInstanceOf[js.Any])
     

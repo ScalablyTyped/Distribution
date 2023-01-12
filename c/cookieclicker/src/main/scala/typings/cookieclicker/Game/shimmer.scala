@@ -53,7 +53,8 @@ object shimmer {
     __obj.asInstanceOf[shimmer[N, C]]
   }
   
-  extension [Self <: shimmer[?, ?], N /* <: String */, C /* <: js.Object */](x: Self & (shimmer[N, C])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: shimmer[?, ?], N /* <: String */, C /* <: js.Object */] (val x: Self & (shimmer[N, C])) extends AnyVal {
     
     inline def setDie(value: () => Unit): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
     

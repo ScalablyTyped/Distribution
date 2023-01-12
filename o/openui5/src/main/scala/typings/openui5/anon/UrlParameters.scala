@@ -70,7 +70,8 @@ object UrlParameters {
     __obj.asInstanceOf[UrlParameters]
   }
   
-  extension [Self <: UrlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlParameters] (val x: Self) extends AnyVal {
     
     inline def setBatchGroupId(value: String): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     

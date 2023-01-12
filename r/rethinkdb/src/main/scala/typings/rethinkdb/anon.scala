@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[UseOutdated]
     }
     
-    extension [Self <: UseOutdated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseOutdated] (val x: Self) extends AnyVal {
       
       inline def setUseOutdated(value: Boolean): Self = StObject.set(x, "useOutdated", value.asInstanceOf[js.Any])
     }

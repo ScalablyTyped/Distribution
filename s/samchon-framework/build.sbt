@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "samchon-framework"
-version := "2.1.4-84eb4d"
+version := "2.1.4-158d8b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ecol" % "1.1.1-0cdbc3",
-  "org.scalablytyped" %%% "samchon" % "2.1.4-21b631",
-  "org.scalablytyped" %%% "std" % "4.9-5f989f",
+  "org.scalablytyped" %%% "ecol" % "1.1.1-ca7d0e",
+  "org.scalablytyped" %%% "samchon" % "2.1.4-ca096d",
+  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
   "org.scalablytyped" %%% "sxml" % "1.0.4-7bcf5b",
   "org.scalablytyped" %%% "url-variables" % "1.0.3-bed333")
 publishArtifact in packageDoc := false

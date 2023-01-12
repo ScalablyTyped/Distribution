@@ -128,7 +128,8 @@ object StepExecution {
     __obj.asInstanceOf[StepExecution]
   }
   
-  extension [Self <: StepExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepExecution] (val x: Self) extends AnyVal {
     
     inline def setAction(value: AutomationActionName): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

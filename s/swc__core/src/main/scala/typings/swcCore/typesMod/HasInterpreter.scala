@@ -18,7 +18,8 @@ object HasInterpreter {
     __obj.asInstanceOf[HasInterpreter]
   }
   
-  extension [Self <: HasInterpreter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasInterpreter] (val x: Self) extends AnyVal {
     
     inline def setInterpreter(value: String): Self = StObject.set(x, "interpreter", value.asInstanceOf[js.Any])
   }

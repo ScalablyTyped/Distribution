@@ -60,7 +60,8 @@ object Tier {
     __obj.asInstanceOf[Tier]
   }
   
-  extension [Self <: Tier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tier] (val x: Self) extends AnyVal {
     
     inline def setAchievUnlock(value: Double): Self = StObject.set(x, "achievUnlock", value.asInstanceOf[js.Any])
     

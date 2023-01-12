@@ -21,7 +21,8 @@ object DataPoint {
     __obj.asInstanceOf[DataPoint]
   }
   
-  extension [Self <: DataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPoint] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

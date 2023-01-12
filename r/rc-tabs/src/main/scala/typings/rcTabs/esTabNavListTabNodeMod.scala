@@ -73,7 +73,8 @@ object esTabNavListTabNodeMod extends Shortcut {
       __obj.asInstanceOf[TabNodeProps]
     }
     
-    extension [Self <: TabNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabNodeProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

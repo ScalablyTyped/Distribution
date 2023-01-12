@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[OnComplexSelector]
     }
     
-    extension [Self <: OnComplexSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnComplexSelector] (val x: Self) extends AnyVal {
       
       inline def setOnComplexSelector(value: warning): Self = StObject.set(x, "onComplexSelector", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[SpecificityMatchingName]
     }
     
-    extension [Self <: SpecificityMatchingName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecificityMatchingName] (val x: Self) extends AnyVal {
       
       inline def setSpecificityMatchingName(value: String): Self = StObject.set(x, "specificityMatchingName", value.asInstanceOf[js.Any])
     }

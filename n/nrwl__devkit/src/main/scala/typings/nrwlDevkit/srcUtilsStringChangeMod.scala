@@ -80,7 +80,8 @@ object srcUtilsStringChangeMod {
       __obj.asInstanceOf[StringDeletion]
     }
     
-    extension [Self <: StringDeletion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringDeletion] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object srcUtilsStringChangeMod {
       __obj.asInstanceOf[StringInsertion]
     }
     
-    extension [Self <: StringInsertion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringInsertion] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

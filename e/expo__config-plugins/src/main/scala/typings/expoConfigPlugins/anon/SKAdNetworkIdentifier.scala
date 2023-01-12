@@ -15,7 +15,8 @@ object SKAdNetworkIdentifier {
     __obj.asInstanceOf[SKAdNetworkIdentifier]
   }
   
-  extension [Self <: SKAdNetworkIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKAdNetworkIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSKAdNetworkIdentifier(value: String): Self = StObject.set(x, "SKAdNetworkIdentifier", value.asInstanceOf[js.Any])
   }

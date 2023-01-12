@@ -18,7 +18,8 @@ object TrackIndexedDBForOriginRequest {
     __obj.asInstanceOf[TrackIndexedDBForOriginRequest]
   }
   
-  extension [Self <: TrackIndexedDBForOriginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackIndexedDBForOriginRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

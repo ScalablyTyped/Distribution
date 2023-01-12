@@ -23,7 +23,8 @@ object DeleteBackendEnvironmentRequest {
     __obj.asInstanceOf[DeleteBackendEnvironmentRequest]
   }
   
-  extension [Self <: DeleteBackendEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBackendEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

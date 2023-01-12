@@ -21,7 +21,8 @@ object SortOptionsKeys {
     __obj.asInstanceOf[SortOptionsKeys]
   }
   
-  extension [Self <: SortOptionsKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortOptionsKeys] (val x: Self) extends AnyVal {
     
     inline def set_doc(value: ScoreSort): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object AllocationSpecificSKUAllocationReservedInstanceProperties {
     __obj.asInstanceOf[AllocationSpecificSKUAllocationReservedInstanceProperties]
   }
   
-  extension [Self <: AllocationSpecificSKUAllocationReservedInstanceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocationSpecificSKUAllocationReservedInstanceProperties] (val x: Self) extends AnyVal {
     
     inline def setGuestAccelerators(value: js.Array[AcceleratorConfig]): Self = StObject.set(x, "guestAccelerators", value.asInstanceOf[js.Any])
     

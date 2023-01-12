@@ -26,7 +26,8 @@ object ClusterStatsIndicesVersions {
     __obj.asInstanceOf[ClusterStatsIndicesVersions]
   }
   
-  extension [Self <: ClusterStatsIndicesVersions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsIndicesVersions] (val x: Self) extends AnyVal {
     
     inline def setIndex_count(value: integer): Self = StObject.set(x, "index_count", value.asInstanceOf[js.Any])
     

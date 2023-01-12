@@ -34,7 +34,8 @@ object PlusMapsMapType {
     __obj.asInstanceOf[PlusMapsMapType]
   }
   
-  extension [Self <: PlusMapsMapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsMapType] (val x: Self) extends AnyVal {
     
     inline def setMAPTYPE_NORMAL(value: Double): Self = StObject.set(x, "MAPTYPE_NORMAL", value.asInstanceOf[js.Any])
     

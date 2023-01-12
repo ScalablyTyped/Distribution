@@ -26,7 +26,8 @@ object typesModulesParallaxMod {
       __obj.asInstanceOf[ParallaxOptions]
     }
     
-    extension [Self <: ParallaxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallaxOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

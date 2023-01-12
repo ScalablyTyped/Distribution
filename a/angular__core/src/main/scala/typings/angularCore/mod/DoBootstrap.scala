@@ -15,7 +15,8 @@ object DoBootstrap {
     __obj.asInstanceOf[DoBootstrap]
   }
   
-  extension [Self <: DoBootstrap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoBootstrap] (val x: Self) extends AnyVal {
     
     inline def setNgDoBootstrap(value: ApplicationRef => Unit): Self = StObject.set(x, "ngDoBootstrap", js.Any.fromFunction1(value))
   }

@@ -27,7 +27,8 @@ object distTypesOnStageReactionsDistComponentsSadMod extends Shortcut {
       __obj.asInstanceOf[SadProps]
     }
     
-    extension [Self <: SadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SadProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

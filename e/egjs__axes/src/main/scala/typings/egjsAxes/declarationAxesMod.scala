@@ -210,7 +210,8 @@ object declarationAxesMod {
       __obj.asInstanceOf[AxesOption]
     }
     
-    extension [Self <: AxesOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxesOption] (val x: Self) extends AnyVal {
       
       inline def setDeceleration(value: Double): Self = StObject.set(x, "deceleration", value.asInstanceOf[js.Any])
       

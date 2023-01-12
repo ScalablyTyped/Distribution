@@ -15,7 +15,8 @@ object UpdateInputSecurityGroupResponse {
     __obj.asInstanceOf[UpdateInputSecurityGroupResponse]
   }
   
-  extension [Self <: UpdateInputSecurityGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInputSecurityGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroup(value: InputSecurityGroup): Self = StObject.set(x, "SecurityGroup", value.asInstanceOf[js.Any])
     

@@ -114,7 +114,8 @@ object mod {
         __obj.asInstanceOf[DeviceInfo]
       }
       
-      extension [Self <: DeviceInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
         
         inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
@@ -205,7 +206,8 @@ object mod {
         __obj.asInstanceOf[Response[T]]
       }
       
-      extension [Self <: Response[?], T](x: Self & Response[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response[?], T] (val x: Self & Response[T]) extends AnyVal {
         
         inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -244,7 +246,8 @@ object mod {
         __obj.asInstanceOf[SlotInfo]
       }
       
-      extension [Self <: SlotInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SlotInfo] (val x: Self) extends AnyVal {
         
         inline def `setRecording time`(value: String): Self = StObject.set(x, "recording time", value.asInstanceOf[js.Any])
         
@@ -301,7 +304,8 @@ object mod {
         __obj.asInstanceOf[TransportInfo]
       }
       
-      extension [Self <: TransportInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TransportInfo] (val x: Self) extends AnyVal {
         
         inline def `setClip id`(value: String): Self = StObject.set(x, "clip id", value.asInstanceOf[js.Any])
         

@@ -27,7 +27,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.Circle]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.Circle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.Circle] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: () => Circle_[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
     }
@@ -44,7 +45,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.CircleMarker]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.CircleMarker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.CircleMarker] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: () => CircleMarker_[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
     }
@@ -61,7 +63,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.GeoJSON]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.GeoJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.GeoJSON] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: () => GeoJSON__[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
     }
@@ -78,7 +81,8 @@ object LeafletContext {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     }
@@ -97,7 +101,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.Marker]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.Marker] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: () => Marker_[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
       
@@ -116,7 +121,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.Polygon]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.Polygon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.Polygon] (val x: Self) extends AnyVal {
       
       inline def setGetPolygon(value: () => Polygon_[Any]): Self = StObject.set(x, "getPolygon", js.Any.fromFunction0(value))
     }
@@ -133,7 +139,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.Polyline]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.Polyline](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.Polyline] (val x: Self) extends AnyVal {
       
       inline def setGetPolyline(value: () => Polyline_[LineString | MultiLineString, Any]): Self = StObject.set(x, "getPolyline", js.Any.fromFunction0(value))
     }
@@ -150,7 +157,8 @@ object LeafletContext {
       __obj.asInstanceOf[typings.svelteLeafletjs.mod.LeafletContext.Rectangle]
     }
     
-    extension [Self <: typings.svelteLeafletjs.mod.LeafletContext.Rectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.svelteLeafletjs.mod.LeafletContext.Rectangle] (val x: Self) extends AnyVal {
       
       inline def setGetLayer(value: () => Rectangle_[Any]): Self = StObject.set(x, "getLayer", js.Any.fromFunction0(value))
     }

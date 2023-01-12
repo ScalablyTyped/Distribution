@@ -21,7 +21,8 @@ object DeselectAll {
     __obj.asInstanceOf[DeselectAll]
   }
   
-  extension [Self <: DeselectAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeselectAll] (val x: Self) extends AnyVal {
     
     inline def setDeselectAll(value: String): Self = StObject.set(x, "deselectAll", value.asInstanceOf[js.Any])
     

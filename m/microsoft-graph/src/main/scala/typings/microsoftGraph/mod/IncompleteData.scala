@@ -19,7 +19,8 @@ object IncompleteData {
     __obj.asInstanceOf[IncompleteData]
   }
   
-  extension [Self <: IncompleteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncompleteData] (val x: Self) extends AnyVal {
     
     inline def setMissingDataBeforeDateTime(value: NullableOption[String]): Self = StObject.set(x, "missingDataBeforeDateTime", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object distSrcGetConfigMod {
       __obj.asInstanceOf[AppFields]
     }
     
-    extension [Self <: AppFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppFields] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distSrcGetConfigMod {
       __obj.asInstanceOf[RetryData]
     }
     
-    extension [Self <: RetryData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryData] (val x: Self) extends AnyVal {
       
       inline def setDeleteThrottleMetadata(value: String => Unit): Self = StObject.set(x, "deleteThrottleMetadata", js.Any.fromFunction1(value))
       

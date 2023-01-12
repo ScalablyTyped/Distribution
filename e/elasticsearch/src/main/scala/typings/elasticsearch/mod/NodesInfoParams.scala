@@ -25,7 +25,8 @@ object NodesInfoParams {
     __obj.asInstanceOf[NodesInfoParams]
   }
   
-  extension [Self <: NodesInfoParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoParams] (val x: Self) extends AnyVal {
     
     inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object DistributionUpdate {
     __obj.asInstanceOf[DistributionUpdate]
   }
   
-  extension [Self <: DistributionUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionUpdate] (val x: Self) extends AnyVal {
     
     inline def setCount(value: SplitInt64): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

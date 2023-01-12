@@ -22,7 +22,8 @@ object PartialhiddenPartialsymbo {
     __obj.asInstanceOf[PartialhiddenPartialsymbo]
   }
   
-  extension [Self <: PartialhiddenPartialsymbo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialhiddenPartialsymbo] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: PartialsymbolPartialfills): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ActionExecutionFilter {
     __obj.asInstanceOf[ActionExecutionFilter]
   }
   
-  extension [Self <: ActionExecutionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionExecutionFilter] (val x: Self) extends AnyVal {
     
     inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     

@@ -414,7 +414,8 @@ object mod {
       __obj.asInstanceOf[BrowserRouterProps]
     }
     
-    extension [Self <: BrowserRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -469,7 +470,8 @@ object mod {
       __obj.asInstanceOf[FormProps]
     }
     
-    extension [Self <: FormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: FormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -504,7 +506,8 @@ object mod {
       __obj.asInstanceOf[HashRouterProps]
     }
     
-    extension [Self <: HashRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -535,7 +538,8 @@ object mod {
       __obj.asInstanceOf[HistoryRouterProps]
     }
     
-    extension [Self <: HistoryRouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryRouterProps] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -939,7 +943,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2095,7 +2100,8 @@ object mod {
       __obj.asInstanceOf[NavLinkProps]
     }
     
-    extension [Self <: NavLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2884,7 +2890,8 @@ object mod {
       __obj.asInstanceOf[ScrollRestorationProps]
     }
     
-    extension [Self <: ScrollRestorationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollRestorationProps] (val x: Self) extends AnyVal {
       
       inline def setGetKey(value: (/* location */ Location, /* matches */ js.Array[UseMatchesMatch]) => String | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
       

@@ -170,7 +170,8 @@ object QueryObserverOptions {
     __obj.asInstanceOf[QueryObserverOptions[TQueryFnData, TError, TData, TQueryData, TQueryKey]]
   }
   
-  extension [Self <: QueryObserverOptions[?, ?, ?, ?, ?], TQueryFnData, TError, TData, TQueryData, TQueryKey /* <: QueryKey */](x: Self & (QueryObserverOptions[TQueryFnData, TError, TData, TQueryData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryObserverOptions[?, ?, ?, ?, ?], TQueryFnData, TError, TData, TQueryData, TQueryKey /* <: QueryKey */] (val x: Self & (QueryObserverOptions[TQueryFnData, TError, TData, TQueryData, TQueryKey])) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

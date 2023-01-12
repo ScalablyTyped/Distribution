@@ -47,7 +47,8 @@ object ColorSliderProperties {
     __obj.asInstanceOf[ColorSliderProperties]
   }
   
-  extension [Self <: ColorSliderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSliderProperties] (val x: Self) extends AnyVal {
     
     inline def setHandlesSyncedToPrimary(value: Boolean): Self = StObject.set(x, "handlesSyncedToPrimary", value.asInstanceOf[js.Any])
     

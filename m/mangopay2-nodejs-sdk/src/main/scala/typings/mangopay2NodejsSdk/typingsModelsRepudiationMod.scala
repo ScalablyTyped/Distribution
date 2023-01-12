@@ -66,7 +66,8 @@ object typingsModelsRepudiationMod {
         __obj.asInstanceOf[RepudiationData]
       }
       
-      extension [Self <: RepudiationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RepudiationData] (val x: Self) extends AnyVal {
         
         inline def setInitialTransactionId(value: String): Self = StObject.set(x, "InitialTransactionId", value.asInstanceOf[js.Any])
         

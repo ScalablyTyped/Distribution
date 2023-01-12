@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[ShipitLocal]
     }
     
-    extension [Self <: ShipitLocal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShipitLocal] (val x: Self) extends AnyVal {
       
       inline def setChild(value: ChildProcess): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Task_]
     }
     
-    extension [Self <: Task_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task_] (val x: Self) extends AnyVal {
       
       inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       

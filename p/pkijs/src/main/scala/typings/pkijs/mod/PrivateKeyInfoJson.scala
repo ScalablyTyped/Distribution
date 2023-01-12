@@ -24,7 +24,8 @@ object PrivateKeyInfoJson {
     __obj.asInstanceOf[PrivateKeyInfoJson]
   }
   
-  extension [Self <: PrivateKeyInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyInfoJson] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

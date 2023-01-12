@@ -29,7 +29,8 @@ object IListenResponse {
     __obj.asInstanceOf[IListenResponse]
   }
   
-  extension [Self <: IListenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListenResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentChange(value: IDocumentChange): Self = StObject.set(x, "documentChange", value.asInstanceOf[js.Any])
     

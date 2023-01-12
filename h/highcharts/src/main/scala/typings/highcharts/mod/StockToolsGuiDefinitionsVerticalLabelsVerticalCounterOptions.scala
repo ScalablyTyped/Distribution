@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsVerticalLabelsVerticalCounterOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

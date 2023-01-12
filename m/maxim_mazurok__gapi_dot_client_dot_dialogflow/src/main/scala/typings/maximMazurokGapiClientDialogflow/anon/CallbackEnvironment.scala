@@ -50,7 +50,8 @@ object CallbackEnvironment {
     __obj.asInstanceOf[CallbackEnvironment]
   }
   
-  extension [Self <: CallbackEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackEnvironment] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

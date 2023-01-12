@@ -47,7 +47,8 @@ object ConditionalExpression {
     __obj.asInstanceOf[ConditionalExpression]
   }
   
-  extension [Self <: ConditionalExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: AST): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

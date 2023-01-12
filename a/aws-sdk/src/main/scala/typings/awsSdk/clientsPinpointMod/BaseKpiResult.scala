@@ -18,7 +18,8 @@ object BaseKpiResult {
     __obj.asInstanceOf[BaseKpiResult]
   }
   
-  extension [Self <: BaseKpiResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseKpiResult] (val x: Self) extends AnyVal {
     
     inline def setRows(value: ListOfResultRow): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetIncidentRecordOutput {
     __obj.asInstanceOf[GetIncidentRecordOutput]
   }
   
-  extension [Self <: GetIncidentRecordOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIncidentRecordOutput] (val x: Self) extends AnyVal {
     
     inline def setIncidentRecord(value: IncidentRecord): Self = StObject.set(x, "incidentRecord", value.asInstanceOf[js.Any])
   }

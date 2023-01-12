@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[MapThemrProps[P]]
     }
     
-    extension [Self <: MapThemrProps[?], P](x: Self & MapThemrProps[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapThemrProps[?], P] (val x: Self & MapThemrProps[P]) extends AnyVal {
       
       inline def setMapThemrProps(value: (P, /* theme */ TReactCSSThemrTheme) => P & Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: TReactCSSThemrTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

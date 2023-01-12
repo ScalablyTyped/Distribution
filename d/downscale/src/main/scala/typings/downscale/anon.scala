@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[DownscaleOptionsreturnBlo]
     }
     
-    extension [Self <: DownscaleOptionsreturnBlo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownscaleOptionsreturnBlo] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[DownscaleOptionsreturnBloImageType]
     }
     
-    extension [Self <: DownscaleOptionsreturnBloImageType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownscaleOptionsreturnBloImageType] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object anon {
       __obj.asInstanceOf[DownscaleOptionsreturnCan]
     }
     
-    extension [Self <: DownscaleOptionsreturnCan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownscaleOptionsreturnCan] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: String): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       

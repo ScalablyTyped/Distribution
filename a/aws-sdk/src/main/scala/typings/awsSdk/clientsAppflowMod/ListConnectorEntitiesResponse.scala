@@ -18,7 +18,8 @@ object ListConnectorEntitiesResponse {
     __obj.asInstanceOf[ListConnectorEntitiesResponse]
   }
   
-  extension [Self <: ListConnectorEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectorEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectorEntityMap(value: ConnectorEntityMap): Self = StObject.set(x, "connectorEntityMap", value.asInstanceOf[js.Any])
   }

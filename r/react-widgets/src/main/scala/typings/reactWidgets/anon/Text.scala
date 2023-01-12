@@ -20,7 +20,8 @@ object Text {
     __obj.asInstanceOf[Text[TDataItem]]
   }
   
-  extension [Self <: Text[?], TDataItem](x: Self & Text[TDataItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text[?], TDataItem] (val x: Self & Text[TDataItem]) extends AnyVal {
     
     inline def setDataKey(value: Value): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     

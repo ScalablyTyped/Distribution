@@ -23,7 +23,8 @@ object SignedExchangeReceivedEvent {
     __obj.asInstanceOf[SignedExchangeReceivedEvent]
   }
   
-  extension [Self <: SignedExchangeReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedExchangeReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: SignedExchangeInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

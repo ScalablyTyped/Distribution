@@ -43,7 +43,8 @@ object Packet {
     __obj.asInstanceOf[Packet]
   }
   
-  extension [Self <: Packet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
     
     inline def setAdditionals(value: js.Array[Answer]): Self = StObject.set(x, "additionals", value.asInstanceOf[js.Any])
     

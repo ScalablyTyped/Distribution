@@ -27,7 +27,8 @@ object BaseProps {
     __obj.asInstanceOf[BaseProps]
   }
   
-  extension [Self <: BaseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

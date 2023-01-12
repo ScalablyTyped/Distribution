@@ -105,7 +105,8 @@ object typesReactTypesMod {
       __obj.asInstanceOf[UseMutationOptions[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: UseMutationOptions[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (UseMutationOptions[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseMutationOptions[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (UseMutationOptions[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setMeta(value: MutationMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

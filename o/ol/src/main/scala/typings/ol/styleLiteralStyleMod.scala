@@ -59,7 +59,8 @@ object styleLiteralStyleMod {
       __obj.asInstanceOf[LiteralStyle]
     }
     
-    extension [Self <: LiteralStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralStyle] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: ExpressionValue): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object styleLiteralStyleMod {
       __obj.asInstanceOf[LiteralSymbolStyle]
     }
     
-    extension [Self <: LiteralSymbolStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralSymbolStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color | js.Array[ExpressionValue] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

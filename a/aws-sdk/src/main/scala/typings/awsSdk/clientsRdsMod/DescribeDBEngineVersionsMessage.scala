@@ -63,7 +63,8 @@ object DescribeDBEngineVersionsMessage {
     __obj.asInstanceOf[DescribeDBEngineVersionsMessage]
   }
   
-  extension [Self <: DescribeDBEngineVersionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDBEngineVersionsMessage] (val x: Self) extends AnyVal {
     
     inline def setDBParameterGroupFamily(value: String): Self = StObject.set(x, "DBParameterGroupFamily", value.asInstanceOf[js.Any])
     

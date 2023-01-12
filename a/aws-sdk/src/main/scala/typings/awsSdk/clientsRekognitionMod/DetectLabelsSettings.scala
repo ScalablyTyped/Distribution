@@ -23,7 +23,8 @@ object DetectLabelsSettings {
     __obj.asInstanceOf[DetectLabelsSettings]
   }
   
-  extension [Self <: DetectLabelsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsSettings] (val x: Self) extends AnyVal {
     
     inline def setGeneralLabels(value: GeneralLabelsSettings): Self = StObject.set(x, "GeneralLabels", value.asInstanceOf[js.Any])
     

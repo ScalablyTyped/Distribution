@@ -17,7 +17,8 @@ object TypeofSourceUpdateParams {
     __obj.asInstanceOf[TypeofSourceUpdateParams]
   }
   
-  extension [Self <: TypeofSourceUpdateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSourceUpdateParams] (val x: Self) extends AnyVal {
     
     inline def setMandate(value: TypeofMandateAcceptance): Self = StObject.set(x, "Mandate", value.asInstanceOf[js.Any])
     

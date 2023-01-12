@@ -32,7 +32,8 @@ object TypedLinkFacet {
     __obj.asInstanceOf[TypedLinkFacet]
   }
   
-  extension [Self <: TypedLinkFacet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkFacet] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

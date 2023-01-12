@@ -28,7 +28,8 @@ object libPlatformWebSessionDescriptionHandlerSessionDescriptionHandlerConfigura
       __obj.asInstanceOf[SessionDescriptionHandlerConfiguration]
     }
     
-    extension [Self <: SessionDescriptionHandlerConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionDescriptionHandlerConfiguration] (val x: Self) extends AnyVal {
       
       inline def setIceGatheringTimeout(value: Double): Self = StObject.set(x, "iceGatheringTimeout", value.asInstanceOf[js.Any])
       

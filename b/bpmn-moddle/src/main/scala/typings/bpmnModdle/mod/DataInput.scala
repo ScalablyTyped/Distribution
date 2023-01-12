@@ -37,7 +37,8 @@ object DataInput {
     __obj.asInstanceOf[DataInput]
   }
   
-  extension [Self <: DataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataInput] (val x: Self) extends AnyVal {
     
     inline def setInputSetRef(value: InputSet): Self = StObject.set(x, "inputSetRef", value.asInstanceOf[js.Any])
     

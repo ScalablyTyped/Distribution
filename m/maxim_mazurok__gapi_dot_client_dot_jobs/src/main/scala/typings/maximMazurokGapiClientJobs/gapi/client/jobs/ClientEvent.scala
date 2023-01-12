@@ -28,7 +28,8 @@ object ClientEvent {
     __obj.asInstanceOf[ClientEvent]
   }
   
-  extension [Self <: ClientEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientEvent] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

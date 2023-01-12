@@ -780,7 +780,8 @@ object sapMTextMod {
       __obj.asInstanceOf[TextSettings]
     }
     
-    extension [Self <: TextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextSettings] (val x: Self) extends AnyVal {
       
       inline def setEmptyIndicatorMode(
         value: EmptyIndicatorMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EmptyIndicatorMode * / any */ String) | PropertyBindingInfo

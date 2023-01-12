@@ -66,7 +66,8 @@ object DubDelay {
   def time: Double = js.native
   inline def time_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
   
-  extension [Self <: DubDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DubDelay] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: AudioNode => DubDelay): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

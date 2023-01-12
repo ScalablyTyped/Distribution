@@ -17,7 +17,8 @@ object INewScrollPosition {
     __obj.asInstanceOf[INewScrollPosition]
   }
   
-  extension [Self <: INewScrollPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INewScrollPosition] (val x: Self) extends AnyVal {
     
     inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     

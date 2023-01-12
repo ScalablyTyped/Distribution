@@ -47,7 +47,8 @@ object distHelpersMod {
       __obj.asInstanceOf[CompilationAsset]
     }
     
-    extension [Self <: CompilationAsset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilationAsset] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[Any]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distHelpersMod {
       __obj.asInstanceOf[CompilationAssetInfo]
     }
     
-    extension [Self <: CompilationAssetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilationAssetInfo] (val x: Self) extends AnyVal {
       
       inline def setSourceFilename(value: String): Self = StObject.set(x, "sourceFilename", value.asInstanceOf[js.Any])
     }
@@ -108,7 +110,8 @@ object distHelpersMod {
       __obj.asInstanceOf[FileDescriptor]
     }
     
-    extension [Self <: FileDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       

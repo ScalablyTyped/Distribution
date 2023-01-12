@@ -51,7 +51,8 @@ object CellValuePropertyMetadataExclusions {
     __obj.asInstanceOf[CellValuePropertyMetadataExclusions]
   }
   
-  extension [Self <: CellValuePropertyMetadataExclusions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValuePropertyMetadataExclusions] (val x: Self) extends AnyVal {
     
     inline def setAutoComplete(value: Boolean): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     

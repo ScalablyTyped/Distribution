@@ -20,7 +20,8 @@ object RoomList {
     __obj.asInstanceOf[RoomList]
   }
   
-  extension [Self <: RoomList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomList] (val x: Self) extends AnyVal {
     
     inline def setEmailAddress(value: NullableOption[String]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     

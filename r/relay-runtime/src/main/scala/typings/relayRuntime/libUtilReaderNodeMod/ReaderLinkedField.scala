@@ -33,7 +33,8 @@ object ReaderLinkedField {
     __obj.asInstanceOf[ReaderLinkedField]
   }
   
-  extension [Self <: ReaderLinkedField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderLinkedField] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

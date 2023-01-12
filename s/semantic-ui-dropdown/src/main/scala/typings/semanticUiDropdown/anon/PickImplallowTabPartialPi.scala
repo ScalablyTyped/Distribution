@@ -174,7 +174,8 @@ object PickImplallowTabPartialPi {
     __obj.asInstanceOf[PickImplallowTabPartialPi]
   }
   
-  extension [Self <: PickImplallowTabPartialPi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplallowTabPartialPi] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

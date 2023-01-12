@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AbortSignal]
     }
     
-    extension [Self <: AbortSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[FireProgress[TState]]
     }
     
-    extension [Self <: FireProgress[?], TState](x: Self & FireProgress[TState]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FireProgress[?], TState] (val x: Self & FireProgress[TState]) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       

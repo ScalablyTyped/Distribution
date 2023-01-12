@@ -3126,7 +3126,8 @@ object srcGenBaseModelMod {
       __obj.asInstanceOf[ConcreteModelElements]
     }
     
-    extension [Self <: ConcreteModelElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteModelElements] (val x: Self) extends AnyVal {
       
       inline def setAppServices$AppServiceAction(value: AppServiceAction): Self = StObject.set(x, "AppServices$AppServiceAction", value.asInstanceOf[js.Any])
       

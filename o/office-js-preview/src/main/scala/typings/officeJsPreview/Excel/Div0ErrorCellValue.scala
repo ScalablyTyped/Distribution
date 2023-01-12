@@ -61,7 +61,8 @@ object Div0ErrorCellValue {
     __obj.asInstanceOf[Div0ErrorCellValue]
   }
   
-  extension [Self <: Div0ErrorCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Div0ErrorCellValue] (val x: Self) extends AnyVal {
     
     inline def setBasicType(value: error | Error): Self = StObject.set(x, "basicType", value.asInstanceOf[js.Any])
     

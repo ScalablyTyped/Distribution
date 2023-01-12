@@ -31,7 +31,8 @@ object XGluePointsSupplier {
     __obj.asInstanceOf[XGluePointsSupplier]
   }
   
-  extension [Self <: XGluePointsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGluePointsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetGluePoints(value: () => XIndexContainer): Self = StObject.set(x, "getGluePoints", js.Any.fromFunction0(value))
     

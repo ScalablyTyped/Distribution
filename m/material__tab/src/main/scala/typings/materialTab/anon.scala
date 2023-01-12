@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[ACTIVE]
     }
     
-    extension [Self <: ACTIVE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACTIVE] (val x: Self) extends AnyVal {
       
       inline def setACTIVE(value: String): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ARIASELECTED]
     }
     
-    extension [Self <: ARIASELECTED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIASELECTED] (val x: Self) extends AnyVal {
       
       inline def setARIA_SELECTED(value: String): Self = StObject.set(x, "ARIA_SELECTED", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTabAdapter]
     }
     
-    extension [Self <: PartialMDCTabAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTabAdapter] (val x: Self) extends AnyVal {
       
       inline def setActivateIndicator(value: /* previousIndicatorClientRect */ js.UndefOr[DOMRect] => Unit): Self = StObject.set(x, "activateIndicator", js.Any.fromFunction1(value))
       

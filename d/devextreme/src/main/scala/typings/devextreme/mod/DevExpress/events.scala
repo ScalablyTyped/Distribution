@@ -22,7 +22,8 @@ object events {
       __obj.asInstanceOf[Cancelable]
     }
     
-    extension [Self <: Cancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object events {
       __obj.asInstanceOf[ChangedOptionInfo]
     }
     
-    extension [Self <: ChangedOptionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangedOptionInfo] (val x: Self) extends AnyVal {
       
       inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object events {
       __obj.asInstanceOf[EventInfo[TComponent]]
     }
     
-    extension [Self <: EventInfo[?], TComponent](x: Self & EventInfo[TComponent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventInfo[?], TComponent] (val x: Self & EventInfo[TComponent]) extends AnyVal {
       
       inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object events {
       __obj.asInstanceOf[EventObject]
     }
     
-    extension [Self <: EventObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventObject] (val x: Self) extends AnyVal {
       
       inline def setCurrentTarget(value: Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object events {
       __obj.asInstanceOf[EventType]
     }
     
-    extension [Self <: EventType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -230,7 +235,8 @@ object events {
       __obj.asInstanceOf[InitializedEventInfo[TComponent]]
     }
     
-    extension [Self <: InitializedEventInfo[?], TComponent](x: Self & InitializedEventInfo[TComponent]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitializedEventInfo[?], TComponent] (val x: Self & InitializedEventInfo[TComponent]) extends AnyVal {
       
       inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -257,7 +263,8 @@ object events {
       __obj.asInstanceOf[ItemInfo[TItemData]]
     }
     
-    extension [Self <: ItemInfo[?], TItemData](x: Self & ItemInfo[TItemData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemInfo[?], TItemData] (val x: Self & ItemInfo[TItemData]) extends AnyVal {
       
       inline def setItemData(value: TItemData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -286,7 +293,8 @@ object events {
       __obj.asInstanceOf[NativeEventInfo[TComponent, TNativeEvent]]
     }
     
-    extension [Self <: NativeEventInfo[?, ?], TComponent, TNativeEvent](x: Self & (NativeEventInfo[TComponent, TNativeEvent])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEventInfo[?, ?], TComponent, TNativeEvent] (val x: Self & (NativeEventInfo[TComponent, TNativeEvent])) extends AnyVal {
       
       inline def setComponent(value: TComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

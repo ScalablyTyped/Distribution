@@ -75,7 +75,8 @@ object libDocumentMod {
       __obj.asInstanceOf[DocumentProps]
     }
     
-    extension [Self <: DocumentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentProps] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[typings.postcss.libRootMod.default]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       

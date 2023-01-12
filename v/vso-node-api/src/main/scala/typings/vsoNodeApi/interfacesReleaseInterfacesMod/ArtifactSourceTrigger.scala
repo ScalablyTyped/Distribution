@@ -26,7 +26,8 @@ object ArtifactSourceTrigger {
     __obj.asInstanceOf[ArtifactSourceTrigger]
   }
   
-  extension [Self <: ArtifactSourceTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactSourceTrigger] (val x: Self) extends AnyVal {
     
     inline def setArtifactAlias(value: String): Self = StObject.set(x, "artifactAlias", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DiskGb {
     __obj.asInstanceOf[DiskGb]
   }
   
-  extension [Self <: DiskGb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskGb] (val x: Self) extends AnyVal {
     
     inline def setDiskGb(value: Double): Self = StObject.set(x, "diskGb", value.asInstanceOf[js.Any])
     

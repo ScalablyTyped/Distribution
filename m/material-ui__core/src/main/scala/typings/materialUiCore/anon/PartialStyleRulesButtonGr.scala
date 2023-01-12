@@ -113,7 +113,8 @@ object PartialStyleRulesButtonGr {
     __obj.asInstanceOf[PartialStyleRulesButtonGr]
   }
   
-  extension [Self <: PartialStyleRulesButtonGr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesButtonGr] (val x: Self) extends AnyVal {
     
     inline def setContained(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

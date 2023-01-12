@@ -15,7 +15,8 @@ object IConditionRunner {
     __obj.asInstanceOf[IConditionRunner]
   }
   
-  extension [Self <: IConditionRunner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConditionRunner] (val x: Self) extends AnyVal {
     
     inline def setRunCondition(value: (Any, Any) => Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
   }

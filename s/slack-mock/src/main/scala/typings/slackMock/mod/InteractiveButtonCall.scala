@@ -31,7 +31,8 @@ object InteractiveButtonCall {
     __obj.asInstanceOf[InteractiveButtonCall[T]]
   }
   
-  extension [Self <: InteractiveButtonCall[?], T](x: Self & InteractiveButtonCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveButtonCall[?], T] (val x: Self & InteractiveButtonCall[T]) extends AnyVal {
     
     inline def setHeaders(value: InteractiveButtonHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

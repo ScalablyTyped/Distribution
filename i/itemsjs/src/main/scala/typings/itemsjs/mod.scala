@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Aggregation]
     }
     
-    extension [Self <: Aggregation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
       
       inline def setConjunction(value: Boolean): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[AggregationOptions[A]]
     }
     
-    extension [Self <: AggregationOptions[?], A /* <: String */](x: Self & AggregationOptions[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregationOptions[?], A /* <: String */] (val x: Self & AggregationOptions[A]) extends AnyVal {
       
       inline def setConjunction(value: Boolean): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
@@ -134,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Bucket[I]]
     }
     
-    extension [Self <: Bucket[?], I /* <: js.Object */](x: Self & Bucket[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket[?], I /* <: js.Object */] (val x: Self & Bucket[I]) extends AnyVal {
       
       inline def setDoc_count(value: Double): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Configuration[I, S, A]]
     }
     
-    extension [Self <: Configuration[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */](x: Self & (Configuration[I, S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */] (val x: Self & (Configuration[I, S, A])) extends AnyVal {
       
       inline def setAggregations(value: Record[A, Aggregation]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
       
@@ -238,7 +242,8 @@ object mod {
       __obj.asInstanceOf[Pagination]
     }
     
-    extension [Self <: Pagination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -265,7 +270,8 @@ object mod {
       __obj.asInstanceOf[SearchAggregation[I, A]]
     }
     
-    extension [Self <: SearchAggregation[?, ?], I /* <: js.Object */, A /* <: String */](x: Self & (SearchAggregation[I, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchAggregation[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (SearchAggregation[I, A])) extends AnyVal {
       
       inline def setBuckets(value: Buckets[I]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
@@ -313,7 +319,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions[I, S, A]]
     }
     
-    extension [Self <: SearchOptions[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */](x: Self & (SearchOptions[I, S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions[?, ?, ?], I /* <: js.Object */, S /* <: String */, A /* <: String */] (val x: Self & (SearchOptions[I, S, A])) extends AnyVal {
       
       inline def setFilter(value: /* item */ I => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -373,7 +380,8 @@ object mod {
       __obj.asInstanceOf[SimilarOptions[I]]
     }
     
-    extension [Self <: SimilarOptions[?], I /* <: js.Object */](x: Self & SimilarOptions[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimilarOptions[?], I /* <: js.Object */] (val x: Self & SimilarOptions[I]) extends AnyVal {
       
       inline def setField(value: /* keyof I */ String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -404,7 +412,8 @@ object mod {
       __obj.asInstanceOf[Sorting[I]]
     }
     
-    extension [Self <: Sorting[?], I /* <: js.Object */](x: Self & Sorting[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sorting[?], I /* <: js.Object */] (val x: Self & Sorting[I]) extends AnyVal {
       
       inline def setField(value: (/* keyof I */ String) | (js.Array[/* keyof I */ String])): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       

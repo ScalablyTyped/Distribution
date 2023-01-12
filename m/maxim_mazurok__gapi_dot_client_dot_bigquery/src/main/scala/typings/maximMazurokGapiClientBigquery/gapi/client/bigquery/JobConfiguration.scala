@@ -46,7 +46,8 @@ object JobConfiguration {
     __obj.asInstanceOf[JobConfiguration]
   }
   
-  extension [Self <: JobConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: JobConfigurationTableCopy): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IosHomeScreenPage {
     __obj.asInstanceOf[IosHomeScreenPage]
   }
   
-  extension [Self <: IosHomeScreenPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosHomeScreenPage] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

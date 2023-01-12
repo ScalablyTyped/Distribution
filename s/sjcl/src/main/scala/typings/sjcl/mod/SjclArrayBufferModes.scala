@@ -15,7 +15,8 @@ object SjclArrayBufferModes {
     __obj.asInstanceOf[SjclArrayBufferModes]
   }
   
-  extension [Self <: SjclArrayBufferModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclArrayBufferModes] (val x: Self) extends AnyVal {
     
     inline def setCcm(value: SjclArrayBufferCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
   }

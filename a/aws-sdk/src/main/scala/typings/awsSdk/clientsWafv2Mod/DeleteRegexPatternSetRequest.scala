@@ -33,7 +33,8 @@ object DeleteRegexPatternSetRequest {
     __obj.asInstanceOf[DeleteRegexPatternSetRequest]
   }
   
-  extension [Self <: DeleteRegexPatternSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRegexPatternSetRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

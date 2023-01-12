@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[CurrentGitBranchOptionsObject]
     }
     
-    extension [Self <: CurrentGitBranchOptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentGitBranchOptionsObject] (val x: Self) extends AnyVal {
       
       inline def setAltPath(value: String): Self = StObject.set(x, "altPath", value.asInstanceOf[js.Any])
       

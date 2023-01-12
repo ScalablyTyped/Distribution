@@ -18,7 +18,8 @@ object MergeCommand {
     __obj.asInstanceOf[MergeCommand]
   }
   
-  extension [Self <: MergeCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeCommand] (val x: Self) extends AnyVal {
     
     inline def set$merge(value: js.Object): Self = StObject.set(x, "$merge", value.asInstanceOf[js.Any])
   }

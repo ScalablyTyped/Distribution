@@ -16,7 +16,8 @@ object GetScreenBrightnessSuccessCallbackOption {
     __obj.asInstanceOf[GetScreenBrightnessSuccessCallbackOption]
   }
   
-  extension [Self <: GetScreenBrightnessSuccessCallbackOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScreenBrightnessSuccessCallbackOption] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

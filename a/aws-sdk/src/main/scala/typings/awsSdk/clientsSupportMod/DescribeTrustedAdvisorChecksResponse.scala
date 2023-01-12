@@ -18,7 +18,8 @@ object DescribeTrustedAdvisorChecksResponse {
     __obj.asInstanceOf[DescribeTrustedAdvisorChecksResponse]
   }
   
-  extension [Self <: DescribeTrustedAdvisorChecksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTrustedAdvisorChecksResponse] (val x: Self) extends AnyVal {
     
     inline def setChecks(value: TrustedAdvisorCheckList): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
     

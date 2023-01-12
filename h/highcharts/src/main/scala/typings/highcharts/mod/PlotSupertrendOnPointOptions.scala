@@ -33,7 +33,8 @@ object PlotSupertrendOnPointOptions {
     __obj.asInstanceOf[PlotSupertrendOnPointOptions]
   }
   
-  extension [Self <: PlotSupertrendOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotSupertrendOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

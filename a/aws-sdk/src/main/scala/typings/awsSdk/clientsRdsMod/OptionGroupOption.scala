@@ -93,7 +93,8 @@ object OptionGroupOption {
     __obj.asInstanceOf[OptionGroupOption]
   }
   
-  extension [Self <: OptionGroupOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionGroupOption] (val x: Self) extends AnyVal {
     
     inline def setDefaultPort(value: IntegerOptional): Self = StObject.set(x, "DefaultPort", value.asInstanceOf[js.Any])
     

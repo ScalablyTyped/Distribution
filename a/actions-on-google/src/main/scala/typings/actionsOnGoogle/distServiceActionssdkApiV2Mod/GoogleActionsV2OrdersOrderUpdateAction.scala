@@ -23,7 +23,8 @@ object GoogleActionsV2OrdersOrderUpdateAction {
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderUpdateAction]
   }
   
-  extension [Self <: GoogleActionsV2OrdersOrderUpdateAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersOrderUpdateAction] (val x: Self) extends AnyVal {
     
     inline def setButton(value: GoogleActionsV2UiElementsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

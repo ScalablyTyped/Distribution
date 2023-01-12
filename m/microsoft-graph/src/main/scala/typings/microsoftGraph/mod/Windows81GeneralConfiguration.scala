@@ -120,7 +120,8 @@ object Windows81GeneralConfiguration {
     __obj.asInstanceOf[Windows81GeneralConfiguration]
   }
   
-  extension [Self <: Windows81GeneralConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows81GeneralConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountsBlockAddingNonMicrosoftAccountEmail(value: Boolean): Self = StObject.set(x, "accountsBlockAddingNonMicrosoftAccountEmail", value.asInstanceOf[js.Any])
     

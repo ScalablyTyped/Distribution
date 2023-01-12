@@ -23,7 +23,8 @@ object SummarizedAttackVector {
     __obj.asInstanceOf[SummarizedAttackVector]
   }
   
-  extension [Self <: SummarizedAttackVector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummarizedAttackVector] (val x: Self) extends AnyVal {
     
     inline def setVectorCounters(value: SummarizedCounterList): Self = StObject.set(x, "VectorCounters", value.asInstanceOf[js.Any])
     

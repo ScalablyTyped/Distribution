@@ -89,7 +89,8 @@ object ChartPointsCollectionLoadOptions {
     __obj.asInstanceOf[ChartPointsCollectionLoadOptions]
   }
   
-  extension [Self <: ChartPointsCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartPointsCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

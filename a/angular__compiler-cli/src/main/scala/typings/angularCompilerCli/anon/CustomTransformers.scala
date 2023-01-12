@@ -49,7 +49,8 @@ object CustomTransformers {
     __obj.asInstanceOf[CustomTransformers]
   }
   
-  extension [Self <: CustomTransformers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTransformers] (val x: Self) extends AnyVal {
     
     inline def setCustomTransformers(value: typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
     

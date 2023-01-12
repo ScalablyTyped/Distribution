@@ -22,7 +22,8 @@ object mod {
       __obj.asInstanceOf[DotNode[State, Transitions]]
     }
     
-    extension [Self <: DotNode[?, ?], State, Transitions](x: Self & (DotNode[State, Transitions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotNode[?, ?], State, Transitions] (val x: Self & (DotNode[State, Transitions])) extends AnyVal {
       
       inline def setFrom(value: State): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object mod {
       __obj.asInstanceOf[DotNodeStringified]
     }
     
-    extension [Self <: DotNodeStringified](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotNodeStringified] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object IntelligentTieringConfiguration {
     __obj.asInstanceOf[IntelligentTieringConfiguration]
   }
   
-  extension [Self <: IntelligentTieringConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntelligentTieringConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: IntelligentTieringFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

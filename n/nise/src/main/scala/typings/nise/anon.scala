@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Abort]
     }
     
-    extension [Self <: Abort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: js.Array[Any]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[PartialFakeServerOptions]
     }
     
-    extension [Self <: PartialFakeServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFakeServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
       

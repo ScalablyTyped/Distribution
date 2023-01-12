@@ -16,7 +16,8 @@ object RoughnessMap {
     __obj.asInstanceOf[RoughnessMap]
   }
   
-  extension [Self <: RoughnessMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoughnessMap] (val x: Self) extends AnyVal {
     
     inline def setRoughnessMap(value: IUniform[Any]): Self = StObject.set(x, "roughnessMap", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object PreferencesOptions {
     __obj.asInstanceOf[PreferencesOptions]
   }
   
-  extension [Self <: PreferencesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferencesOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalStorage(value: Boolean): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
     

@@ -1056,7 +1056,8 @@ object sapMLinkMod {
       __obj.asInstanceOf[LinkSettings]
     }
     
-    extension [Self <: LinkSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleRole(
         value: LinkAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LinkAccessibleRole * / any */ String) | PropertyBindingInfo

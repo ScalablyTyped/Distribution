@@ -17,7 +17,8 @@ object BinanceTransferMsg {
     __obj.asInstanceOf[BinanceTransferMsg]
   }
   
-  extension [Self <: BinanceTransferMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceTransferMsg] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[BinanceInputOutput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

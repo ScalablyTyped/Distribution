@@ -18,7 +18,8 @@ object StartObjectOutput {
     __obj.asInstanceOf[StartObjectOutput]
   }
   
-  extension [Self <: StartObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setUploadId(value: String): Self = StObject.set(x, "UploadId", value.asInstanceOf[js.Any])
   }

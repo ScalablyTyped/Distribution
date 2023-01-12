@@ -47,7 +47,8 @@ object ASPxAppointmentType {
     __obj.asInstanceOf[ASPxAppointmentType]
   }
   
-  extension [Self <: ASPxAppointmentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxAppointmentType] (val x: Self) extends AnyVal {
     
     inline def setChangedOccurrence(value: String): Self = StObject.set(x, "ChangedOccurrence", value.asInstanceOf[js.Any])
     

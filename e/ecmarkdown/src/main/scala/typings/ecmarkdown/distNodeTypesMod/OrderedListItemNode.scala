@@ -27,7 +27,8 @@ object OrderedListItemNode {
     __obj.asInstanceOf[OrderedListItemNode]
   }
   
-  extension [Self <: OrderedListItemNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderedListItemNode] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: js.Array[Key]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

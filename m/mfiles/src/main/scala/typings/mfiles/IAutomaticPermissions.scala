@@ -35,7 +35,8 @@ object IAutomaticPermissions {
     __obj.asInstanceOf[IAutomaticPermissions]
   }
   
-  extension [Self <: IAutomaticPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutomaticPermissions] (val x: Self) extends AnyVal {
     
     inline def setCanDeactivate(value: Boolean): Self = StObject.set(x, "CanDeactivate", value.asInstanceOf[js.Any])
     

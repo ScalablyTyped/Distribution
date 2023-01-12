@@ -55,7 +55,8 @@ object PickCalendarDayShapedaySi {
     __obj.asInstanceOf[PickCalendarDayShapedaySi]
   }
   
-  extension [Self <: PickCalendarDayShapedaySi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCalendarDayShapedaySi] (val x: Self) extends AnyVal {
     
     inline def setDaySize(value: Double): Self = StObject.set(x, "daySize", value.asInstanceOf[js.Any])
     

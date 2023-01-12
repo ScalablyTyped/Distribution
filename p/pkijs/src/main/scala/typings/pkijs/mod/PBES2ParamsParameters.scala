@@ -20,7 +20,8 @@ object PBES2ParamsParameters {
     __obj.asInstanceOf[PBES2ParamsParameters]
   }
   
-  extension [Self <: PBES2ParamsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBES2ParamsParameters] (val x: Self) extends AnyVal {
     
     inline def setEncryptionScheme(value: AlgorithmIdentifier): Self = StObject.set(x, "encryptionScheme", value.asInstanceOf[js.Any])
     

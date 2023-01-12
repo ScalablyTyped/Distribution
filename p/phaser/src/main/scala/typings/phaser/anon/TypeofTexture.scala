@@ -21,7 +21,8 @@ object TypeofTexture {
     __obj.asInstanceOf[TypeofTexture]
   }
   
-  extension [Self <: TypeofTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTexture] (val x: Self) extends AnyVal {
     
     inline def setFilterFromString(value: String => TextureFilter): Self = StObject.set(x, "filterFromString", js.Any.fromFunction1(value))
     

@@ -16,7 +16,8 @@ object ChannelSectionLocalization {
     __obj.asInstanceOf[ChannelSectionLocalization]
   }
   
-  extension [Self <: ChannelSectionLocalization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSectionLocalization] (val x: Self) extends AnyVal {
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object typesLibDropdownToggleMod {
       __obj.asInstanceOf[DropdownToggleProps]
     }
     
-    extension [Self <: DropdownToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownToggleProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-haspopup`(value: Boolean): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
       

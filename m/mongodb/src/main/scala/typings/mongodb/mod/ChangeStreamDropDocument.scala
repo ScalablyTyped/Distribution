@@ -24,7 +24,8 @@ object ChangeStreamDropDocument {
     __obj.asInstanceOf[ChangeStreamDropDocument]
   }
   
-  extension [Self <: ChangeStreamDropDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamDropDocument] (val x: Self) extends AnyVal {
     
     inline def setNs(value: ChangeStreamNameSpace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
     

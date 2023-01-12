@@ -78,7 +78,8 @@ object CreateEnvironmentInput {
     __obj.asInstanceOf[CreateEnvironmentInput]
   }
   
-  extension [Self <: CreateEnvironmentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentInput] (val x: Self) extends AnyVal {
     
     inline def setCodebuildRoleArn(value: RoleArn): Self = StObject.set(x, "codebuildRoleArn", value.asInstanceOf[js.Any])
     

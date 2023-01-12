@@ -183,7 +183,8 @@ object distLibModelsReflectionsDeclarationMod {
       __obj.asInstanceOf[DeclarationHierarchy]
     }
     
-    extension [Self <: DeclarationHierarchy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationHierarchy] (val x: Self) extends AnyVal {
       
       inline def setIsTarget(value: Boolean): Self = StObject.set(x, "isTarget", value.asInstanceOf[js.Any])
       

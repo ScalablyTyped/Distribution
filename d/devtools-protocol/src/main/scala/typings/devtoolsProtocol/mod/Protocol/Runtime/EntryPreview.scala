@@ -23,7 +23,8 @@ object EntryPreview {
     __obj.asInstanceOf[EntryPreview]
   }
   
-  extension [Self <: EntryPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryPreview] (val x: Self) extends AnyVal {
     
     inline def setKey(value: ObjectPreview): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

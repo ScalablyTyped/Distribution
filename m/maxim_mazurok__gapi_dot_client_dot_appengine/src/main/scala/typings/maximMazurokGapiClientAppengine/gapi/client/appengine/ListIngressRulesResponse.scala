@@ -19,7 +19,8 @@ object ListIngressRulesResponse {
     __obj.asInstanceOf[ListIngressRulesResponse]
   }
   
-  extension [Self <: ListIngressRulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIngressRulesResponse] (val x: Self) extends AnyVal {
     
     inline def setIngressRules(value: js.Array[FirewallRule]): Self = StObject.set(x, "ingressRules", value.asInstanceOf[js.Any])
     

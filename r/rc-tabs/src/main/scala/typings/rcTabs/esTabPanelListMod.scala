@@ -34,7 +34,8 @@ object esTabPanelListMod {
       __obj.asInstanceOf[TabPanelListProps]
     }
     
-    extension [Self <: TabPanelListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelListProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

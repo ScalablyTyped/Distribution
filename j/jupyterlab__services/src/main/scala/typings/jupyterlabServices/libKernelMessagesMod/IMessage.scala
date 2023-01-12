@@ -73,7 +73,8 @@ object IMessage {
     __obj.asInstanceOf[IMessage[MSGTYPE]]
   }
   
-  extension [Self <: IMessage[?], MSGTYPE /* <: MessageType */](x: Self & IMessage[MSGTYPE]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessage[?], MSGTYPE /* <: MessageType */] (val x: Self & IMessage[MSGTYPE]) extends AnyVal {
     
     inline def setBuffers(value: js.Array[js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
     

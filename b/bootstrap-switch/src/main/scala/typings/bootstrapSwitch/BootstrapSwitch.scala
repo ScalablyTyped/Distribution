@@ -64,7 +64,8 @@ object BootstrapSwitch {
       __obj.asInstanceOf[BootstrapSwitchOptions]
     }
     
-    extension [Self <: BootstrapSwitchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BootstrapSwitchOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

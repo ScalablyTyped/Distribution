@@ -33,7 +33,8 @@ object XShapeDescriptor {
     __obj.asInstanceOf[XShapeDescriptor]
   }
   
-  extension [Self <: XShapeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGetShapeType(value: () => String): Self = StObject.set(x, "getShapeType", js.Any.fromFunction0(value))
     

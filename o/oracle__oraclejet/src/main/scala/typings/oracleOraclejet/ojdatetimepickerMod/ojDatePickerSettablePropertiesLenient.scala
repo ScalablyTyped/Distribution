@@ -97,7 +97,8 @@ object ojDatePickerSettablePropertiesLenient {
     __obj.asInstanceOf[ojDatePickerSettablePropertiesLenient]
   }
   
-  extension [Self <: ojDatePickerSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojDatePickerSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setAsyncValidators(value: js.Array[AsyncValidator[String]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

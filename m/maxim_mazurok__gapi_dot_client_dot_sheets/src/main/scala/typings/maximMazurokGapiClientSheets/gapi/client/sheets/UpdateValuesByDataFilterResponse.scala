@@ -31,7 +31,8 @@ object UpdateValuesByDataFilterResponse {
     __obj.asInstanceOf[UpdateValuesByDataFilterResponse]
   }
   
-  extension [Self <: UpdateValuesByDataFilterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateValuesByDataFilterResponse] (val x: Self) extends AnyVal {
     
     inline def setDataFilter(value: DataFilter): Self = StObject.set(x, "dataFilter", value.asInstanceOf[js.Any])
     

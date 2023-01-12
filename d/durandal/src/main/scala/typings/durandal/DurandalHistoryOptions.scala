@@ -46,7 +46,8 @@ object DurandalHistoryOptions {
     __obj.asInstanceOf[DurandalHistoryOptions]
   }
   
-  extension [Self <: DurandalHistoryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurandalHistoryOptions] (val x: Self) extends AnyVal {
     
     inline def setHashChange(value: Boolean): Self = StObject.set(x, "hashChange", value.asInstanceOf[js.Any])
     

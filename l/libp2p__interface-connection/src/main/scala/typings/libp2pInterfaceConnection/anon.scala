@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[TypeofStatus]
     }
     
-    extension [Self <: TypeofStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofStatus] (val x: Self) extends AnyVal {
       
       inline def setCLOSED(value: /* "CLOSED" */ String): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
       

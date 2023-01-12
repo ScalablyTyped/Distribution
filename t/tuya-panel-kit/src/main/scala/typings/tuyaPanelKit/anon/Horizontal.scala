@@ -23,7 +23,8 @@ object Horizontal {
     __obj.asInstanceOf[Horizontal]
   }
   
-  extension [Self <: Horizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Horizontal] (val x: Self) extends AnyVal {
     
     inline def setHorizontal(value: Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Phone {
     __obj.asInstanceOf[Phone]
   }
   
-  extension [Self <: Phone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

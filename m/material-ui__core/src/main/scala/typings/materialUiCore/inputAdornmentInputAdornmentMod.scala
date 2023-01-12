@@ -70,7 +70,8 @@ object inputAdornmentInputAdornmentMod extends Shortcut {
       __obj.asInstanceOf[InputAdornmentTypeMap[P, D]]
     }
     
-    extension [Self <: InputAdornmentTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (InputAdornmentTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputAdornmentTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (InputAdornmentTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: InputAdornmentClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

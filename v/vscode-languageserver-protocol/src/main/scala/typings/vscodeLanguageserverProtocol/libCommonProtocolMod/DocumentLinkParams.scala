@@ -22,7 +22,8 @@ object DocumentLinkParams {
     __obj.asInstanceOf[DocumentLinkParams]
   }
   
-  extension [Self <: DocumentLinkParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentLinkParams] (val x: Self) extends AnyVal {
     
     inline def setTextDocument(value: TextDocumentIdentifier): Self = StObject.set(x, "textDocument", value.asInstanceOf[js.Any])
   }

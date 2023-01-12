@@ -48,7 +48,8 @@ object StatResult {
     __obj.asInstanceOf[StatResult]
   }
   
-  extension [Self <: StatResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
     
     inline def setCtime(value: Double): Self = StObject.set(x, "ctime", value.asInstanceOf[js.Any])
     

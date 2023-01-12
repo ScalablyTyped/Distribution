@@ -38,7 +38,8 @@ object UpdateFunctionEventInvokeConfigRequest {
     __obj.asInstanceOf[UpdateFunctionEventInvokeConfigRequest]
   }
   
-  extension [Self <: UpdateFunctionEventInvokeConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFunctionEventInvokeConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "DestinationConfig", value.asInstanceOf[js.Any])
     

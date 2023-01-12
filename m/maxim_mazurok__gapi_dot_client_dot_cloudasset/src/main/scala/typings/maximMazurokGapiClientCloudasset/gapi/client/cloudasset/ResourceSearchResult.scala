@@ -171,7 +171,8 @@ object ResourceSearchResult {
     __obj.asInstanceOf[ResourceSearchResult]
   }
   
-  extension [Self <: ResourceSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSearchResult] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAttributes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

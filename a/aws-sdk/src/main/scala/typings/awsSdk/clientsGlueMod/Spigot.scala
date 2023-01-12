@@ -38,7 +38,8 @@ object Spigot {
     __obj.asInstanceOf[Spigot]
   }
   
-  extension [Self <: Spigot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spigot] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: OneInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

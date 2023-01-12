@@ -25,7 +25,8 @@ object SVG {
     __obj.asInstanceOf[SVG]
   }
   
-  extension [Self <: SVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVG] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: DictrenderType): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object srcSdkInternalGetAuthInfoMod {
       __obj.asInstanceOf[IBasicAuthInfo]
     }
     
-    extension [Self <: IBasicAuthInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasicAuthInfo] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: basic): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object srcSdkInternalGetAuthInfoMod {
       __obj.asInstanceOf[IPATAuthInfo]
     }
     
-    extension [Self <: IPATAuthInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPATAuthInfo] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: pat): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object esHooksUseCacheTokenMod {
       __obj.asInstanceOf[Option[DerivativeToken]]
     }
     
-    extension [Self <: Option[?], DerivativeToken](x: Self & Option[DerivativeToken]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option[?], DerivativeToken] (val x: Self & Option[DerivativeToken]) extends AnyVal {
       
       inline def setFormatToken(value: /* mergedToken */ Any => DerivativeToken): Self = StObject.set(x, "formatToken", js.Any.fromFunction1(value))
       

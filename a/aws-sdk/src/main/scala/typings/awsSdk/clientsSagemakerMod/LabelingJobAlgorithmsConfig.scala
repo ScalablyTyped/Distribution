@@ -28,7 +28,8 @@ object LabelingJobAlgorithmsConfig {
     __obj.asInstanceOf[LabelingJobAlgorithmsConfig]
   }
   
-  extension [Self <: LabelingJobAlgorithmsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobAlgorithmsConfig] (val x: Self) extends AnyVal {
     
     inline def setInitialActiveLearningModelArn(value: ModelArn): Self = StObject.set(x, "InitialActiveLearningModelArn", value.asInstanceOf[js.Any])
     

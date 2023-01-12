@@ -28,7 +28,8 @@ object UnlabelParameterVersionRequest {
     __obj.asInstanceOf[UnlabelParameterVersionRequest]
   }
   
-  extension [Self <: UnlabelParameterVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlabelParameterVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: ParameterLabelList): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     

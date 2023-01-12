@@ -23,7 +23,8 @@ object DeleteResourcePolicyResponse {
     __obj.asInstanceOf[DeleteResourcePolicyResponse]
   }
   
-  extension [Self <: DeleteResourcePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setARN(value: SecretARNType): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

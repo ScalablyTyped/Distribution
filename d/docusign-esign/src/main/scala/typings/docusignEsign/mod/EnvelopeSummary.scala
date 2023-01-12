@@ -54,7 +54,8 @@ object EnvelopeSummary {
     __obj.asInstanceOf[EnvelopeSummary]
   }
   
-  extension [Self <: EnvelopeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeSummary] (val x: Self) extends AnyVal {
     
     inline def setBulkEnvelopeStatus(value: BulkEnvelopeStatus): Self = StObject.set(x, "bulkEnvelopeStatus", value.asInstanceOf[js.Any])
     

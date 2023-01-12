@@ -17,7 +17,8 @@ object IGeoObjectFeature {
     __obj.asInstanceOf[IGeoObjectFeature]
   }
   
-  extension [Self <: IGeoObjectFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoObjectFeature] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: IGeometry | IGeometryJson): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

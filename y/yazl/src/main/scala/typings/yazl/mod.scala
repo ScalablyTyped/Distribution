@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[DirectoryOptions]
     }
     
-    extension [Self <: DirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[DosDateTime]
     }
     
-    extension [Self <: DosDateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DosDateTime] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object mod {
       __obj.asInstanceOf[EndOptions]
     }
     
-    extension [Self <: EndOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndOptions] (val x: Self) extends AnyVal {
       
       inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
     }
@@ -113,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -138,7 +142,8 @@ object mod {
       __obj.asInstanceOf[ReadStreamOptions]
     }
     
-    extension [Self <: ReadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

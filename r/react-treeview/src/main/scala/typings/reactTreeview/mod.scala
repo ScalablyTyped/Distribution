@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[TreeProps]
     }
     
-    extension [Self <: TreeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeProps] (val x: Self) extends AnyVal {
       
       inline def setChildrenClassName(value: String): Self = StObject.set(x, "childrenClassName", value.asInstanceOf[js.Any])
       

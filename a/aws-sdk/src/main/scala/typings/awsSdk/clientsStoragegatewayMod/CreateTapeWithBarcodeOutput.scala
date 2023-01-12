@@ -18,7 +18,8 @@ object CreateTapeWithBarcodeOutput {
     __obj.asInstanceOf[CreateTapeWithBarcodeOutput]
   }
   
-  extension [Self <: CreateTapeWithBarcodeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTapeWithBarcodeOutput] (val x: Self) extends AnyVal {
     
     inline def setTapeARN(value: TapeARN): Self = StObject.set(x, "TapeARN", value.asInstanceOf[js.Any])
     

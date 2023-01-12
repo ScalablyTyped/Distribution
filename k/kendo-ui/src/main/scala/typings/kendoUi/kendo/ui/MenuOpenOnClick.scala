@@ -17,7 +17,8 @@ object MenuOpenOnClick {
     __obj.asInstanceOf[MenuOpenOnClick]
   }
   
-  extension [Self <: MenuOpenOnClick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuOpenOnClick] (val x: Self) extends AnyVal {
     
     inline def setRootMenuItems(value: Boolean): Self = StObject.set(x, "rootMenuItems", value.asInstanceOf[js.Any])
     

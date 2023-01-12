@@ -22,7 +22,8 @@ object distThemesTypesMod {
       __obj.asInstanceOf[NotificationButtonState]
     }
     
-    extension [Self <: NotificationButtonState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationButtonState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distThemesTypesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: (Position, Boolean) => CSSProperties): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       

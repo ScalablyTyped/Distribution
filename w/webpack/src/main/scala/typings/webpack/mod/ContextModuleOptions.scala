@@ -56,7 +56,8 @@ object ContextModuleOptions {
     __obj.asInstanceOf[ContextModuleOptions]
   }
   
-  extension [Self <: ContextModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setAddon(value: String): Self = StObject.set(x, "addon", value.asInstanceOf[js.Any])
     

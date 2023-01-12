@@ -28,7 +28,8 @@ object DeleteRelationalDatabaseRequest {
     __obj.asInstanceOf[DeleteRelationalDatabaseRequest]
   }
   
-  extension [Self <: DeleteRelationalDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRelationalDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setFinalRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "finalRelationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     

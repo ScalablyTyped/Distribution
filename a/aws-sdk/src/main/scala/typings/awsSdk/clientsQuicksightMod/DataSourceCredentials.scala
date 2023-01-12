@@ -28,7 +28,8 @@ object DataSourceCredentials {
     __obj.asInstanceOf[DataSourceCredentials]
   }
   
-  extension [Self <: DataSourceCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceCredentials] (val x: Self) extends AnyVal {
     
     inline def setCopySourceArn(value: CopySourceArn): Self = StObject.set(x, "CopySourceArn", value.asInstanceOf[js.Any])
     

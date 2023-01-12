@@ -36,7 +36,8 @@ object GPUTextureUsage {
     __obj.asInstanceOf[GPUTextureUsage]
   }
   
-  extension [Self <: GPUTextureUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUTextureUsage] (val x: Self) extends AnyVal {
     
     inline def setCOPY_DST(value: GPUFlagsConstant): Self = StObject.set(x, "COPY_DST", value.asInstanceOf[js.Any])
     

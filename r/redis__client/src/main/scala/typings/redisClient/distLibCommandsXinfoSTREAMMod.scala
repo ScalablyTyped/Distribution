@@ -54,7 +54,8 @@ object distLibCommandsXinfoSTREAMMod {
       __obj.asInstanceOf[XInfoStreamReply]
     }
     
-    extension [Self <: XInfoStreamReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XInfoStreamReply] (val x: Self) extends AnyVal {
       
       inline def setFirstEntry(value: StreamMessageReply): Self = StObject.set(x, "firstEntry", value.asInstanceOf[js.Any])
       

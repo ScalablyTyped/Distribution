@@ -29,7 +29,8 @@ object EcosystemMonitorResult {
     __obj.asInstanceOf[EcosystemMonitorResult]
   }
   
-  extension [Self <: EcosystemMonitorResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcosystemMonitorResult] (val x: Self) extends AnyVal {
     
     inline def setScanResult(value: ScanResult): Self = StObject.set(x, "scanResult", value.asInstanceOf[js.Any])
   }

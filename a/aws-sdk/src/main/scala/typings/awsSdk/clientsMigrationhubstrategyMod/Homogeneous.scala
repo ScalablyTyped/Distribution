@@ -18,7 +18,8 @@ object Homogeneous {
     __obj.asInstanceOf[Homogeneous]
   }
   
-  extension [Self <: Homogeneous](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Homogeneous] (val x: Self) extends AnyVal {
     
     inline def setTargetDatabaseEngine(value: HomogeneousTargetDatabaseEngines): Self = StObject.set(x, "targetDatabaseEngine", value.asInstanceOf[js.Any])
     

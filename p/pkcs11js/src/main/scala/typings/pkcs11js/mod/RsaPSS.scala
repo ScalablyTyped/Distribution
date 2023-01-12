@@ -22,7 +22,8 @@ object RsaPSS {
     __obj.asInstanceOf[RsaPSS]
   }
   
-  extension [Self <: RsaPSS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RsaPSS] (val x: Self) extends AnyVal {
     
     inline def setHashAlg(value: Double): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object RawParserOptionItem {
     __obj.asInstanceOf[RawParserOptionItem]
   }
   
-  extension [Self <: RawParserOptionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawParserOptionItem] (val x: Self) extends AnyVal {
     
     inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
     

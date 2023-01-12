@@ -24,7 +24,8 @@ object LexV2SessionState {
     __obj.asInstanceOf[LexV2SessionState]
   }
   
-  extension [Self <: LexV2SessionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2SessionState] (val x: Self) extends AnyVal {
     
     inline def setActiveContexts(value: js.Array[LexV2ActiveContext]): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     

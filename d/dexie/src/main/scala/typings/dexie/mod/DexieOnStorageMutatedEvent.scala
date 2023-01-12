@@ -23,7 +23,8 @@ object DexieOnStorageMutatedEvent {
     __obj.asInstanceOf[DexieOnStorageMutatedEvent]
   }
   
-  extension [Self <: DexieOnStorageMutatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieOnStorageMutatedEvent] (val x: Self) extends AnyVal {
     
     inline def setFire(value: ObservabilitySet => Any): Self = StObject.set(x, "fire", js.Any.fromFunction1(value))
     

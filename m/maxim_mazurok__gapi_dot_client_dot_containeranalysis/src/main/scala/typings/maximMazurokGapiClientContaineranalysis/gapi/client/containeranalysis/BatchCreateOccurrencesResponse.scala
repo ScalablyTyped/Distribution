@@ -16,7 +16,8 @@ object BatchCreateOccurrencesResponse {
     __obj.asInstanceOf[BatchCreateOccurrencesResponse]
   }
   
-  extension [Self <: BatchCreateOccurrencesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreateOccurrencesResponse] (val x: Self) extends AnyVal {
     
     inline def setOccurrences(value: js.Array[Occurrence]): Self = StObject.set(x, "occurrences", value.asInstanceOf[js.Any])
     

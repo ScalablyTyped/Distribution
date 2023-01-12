@@ -30,7 +30,8 @@ object ProfileOverrides {
     __obj.asInstanceOf[ProfileOverrides]
   }
   
-  extension [Self <: ProfileOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileOverrides] (val x: Self) extends AnyVal {
     
     inline def setList(value: Override[Any]): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
     

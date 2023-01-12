@@ -64,7 +64,8 @@ object BaseWidget {
       __obj.asInstanceOf[ExportInfo]
     }
     
-    extension [Self <: ExportInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportInfo] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object BaseWidget {
       __obj.asInstanceOf[FileSavingEventInfo[T]]
     }
     
-    extension [Self <: FileSavingEventInfo[?], T](x: Self & FileSavingEventInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSavingEventInfo[?], T] (val x: Self & FileSavingEventInfo[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object BaseWidget {
       __obj.asInstanceOf[IncidentInfo]
     }
     
-    extension [Self <: IncidentInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncidentInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

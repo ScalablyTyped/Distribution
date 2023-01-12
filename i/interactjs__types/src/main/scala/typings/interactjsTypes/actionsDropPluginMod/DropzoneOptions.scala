@@ -42,7 +42,8 @@ object DropzoneOptions {
     __obj.asInstanceOf[DropzoneOptions]
   }
   
-  extension [Self <: DropzoneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropzoneOptions] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String | Element | (js.Function1[/* param0 */ DraggableElementElement, Boolean])): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

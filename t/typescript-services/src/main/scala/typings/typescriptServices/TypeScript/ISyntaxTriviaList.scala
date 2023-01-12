@@ -47,7 +47,8 @@ object ISyntaxTriviaList {
     __obj.asInstanceOf[ISyntaxTriviaList]
   }
   
-  extension [Self <: ISyntaxTriviaList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyntaxTriviaList] (val x: Self) extends AnyVal {
     
     inline def setCollectTextElements(value: js.Array[String] => Unit): Self = StObject.set(x, "collectTextElements", js.Any.fromFunction1(value))
     

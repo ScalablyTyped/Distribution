@@ -29,7 +29,8 @@ object List {
     __obj.asInstanceOf[typings.mdast.mod.List]
   }
   
-  extension [Self <: typings.mdast.mod.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.mdast.mod.List] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ListContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

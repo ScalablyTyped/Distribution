@@ -222,7 +222,8 @@ object errorMod {
       __obj.asInstanceOf[ParserError]
     }
     
-    extension [Self <: ParserError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserError] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ErrorKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

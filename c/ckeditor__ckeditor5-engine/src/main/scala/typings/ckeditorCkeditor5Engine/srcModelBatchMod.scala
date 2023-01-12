@@ -115,7 +115,8 @@ object srcModelBatchMod {
       __obj.asInstanceOf[Batch]
     }
     
-    extension [Self <: Batch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
       
       inline def setAddOperation(value: Operation => Operation): Self = StObject.set(x, "addOperation", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object StartInferenceSchedulerRequest {
     __obj.asInstanceOf[StartInferenceSchedulerRequest]
   }
   
-  extension [Self <: StartInferenceSchedulerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInferenceSchedulerRequest] (val x: Self) extends AnyVal {
     
     inline def setInferenceSchedulerName(value: InferenceSchedulerIdentifier): Self = StObject.set(x, "InferenceSchedulerName", value.asInstanceOf[js.Any])
   }

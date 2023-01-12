@@ -27,7 +27,8 @@ object ChangeTabsCommand {
     __obj.asInstanceOf[ChangeTabsCommand]
   }
   
-  extension [Self <: ChangeTabsCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTabsCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TabsSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

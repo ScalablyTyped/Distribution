@@ -79,7 +79,8 @@ object servicesLoggerServiceMod {
       __obj.asInstanceOf[LoggerMessage]
     }
     
-    extension [Self <: LoggerMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerMessage] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: LoggerMeta): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object servicesLoggerServiceMod {
       __obj.asInstanceOf[LoggerServiceParams]
     }
     
-    extension [Self <: LoggerServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerServiceParams] (val x: Self) extends AnyVal {
       
       inline def setDefaultMeta(value: LoggerMeta): Self = StObject.set(x, "defaultMeta", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object servicesLoggerServiceMod {
       __obj.asInstanceOf[LoggerTransport]
     }
     
-    extension [Self <: LoggerTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerTransport] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: GetCreatedAt): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object servicesLoggerServiceMod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

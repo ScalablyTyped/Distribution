@@ -597,7 +597,8 @@ object ZoneGlobalConfigurations {
     __obj.asInstanceOf[ZoneGlobalConfigurations]
   }
   
-  extension [Self <: ZoneGlobalConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneGlobalConfigurations] (val x: Self) extends AnyVal {
     
     inline def set__Zone_disable_EventEmitter(value: Boolean): Self = StObject.set(x, "__Zone_disable_EventEmitter", value.asInstanceOf[js.Any])
     

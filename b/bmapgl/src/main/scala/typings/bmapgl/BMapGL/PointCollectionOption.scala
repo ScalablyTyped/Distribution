@@ -19,7 +19,8 @@ object PointCollectionOption {
     __obj.asInstanceOf[PointCollectionOption]
   }
   
-  extension [Self <: PointCollectionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCollectionOption] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

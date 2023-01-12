@@ -28,7 +28,8 @@ object InstanceResizePolicy {
     __obj.asInstanceOf[InstanceResizePolicy]
   }
   
-  extension [Self <: InstanceResizePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceResizePolicy] (val x: Self) extends AnyVal {
     
     inline def setInstanceTerminationTimeout(value: Integer): Self = StObject.set(x, "InstanceTerminationTimeout", value.asInstanceOf[js.Any])
     

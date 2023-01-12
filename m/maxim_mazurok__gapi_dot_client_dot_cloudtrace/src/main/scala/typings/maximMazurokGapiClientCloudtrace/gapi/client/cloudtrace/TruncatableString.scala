@@ -23,7 +23,8 @@ object TruncatableString {
     __obj.asInstanceOf[TruncatableString]
   }
   
-  extension [Self <: TruncatableString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TruncatableString] (val x: Self) extends AnyVal {
     
     inline def setTruncatedByteCount(value: Double): Self = StObject.set(x, "truncatedByteCount", value.asInstanceOf[js.Any])
     

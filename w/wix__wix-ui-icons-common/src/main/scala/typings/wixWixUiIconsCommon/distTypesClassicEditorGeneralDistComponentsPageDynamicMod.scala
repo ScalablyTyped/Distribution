@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsPageDynamicMod extends Shortcu
       __obj.asInstanceOf[PageDynamicProps]
     }
     
-    extension [Self <: PageDynamicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageDynamicProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

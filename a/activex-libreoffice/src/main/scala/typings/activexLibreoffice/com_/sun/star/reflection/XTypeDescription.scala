@@ -66,7 +66,8 @@ object XTypeDescription {
     __obj.asInstanceOf[XTypeDescription]
   }
   
-  extension [Self <: XTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     

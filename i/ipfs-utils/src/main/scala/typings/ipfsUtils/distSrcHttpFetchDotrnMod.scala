@@ -106,7 +106,8 @@ object distSrcHttpFetchDotrnMod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DescribeSpotFleetInstancesResponse {
     __obj.asInstanceOf[DescribeSpotFleetInstancesResponse]
   }
   
-  extension [Self <: DescribeSpotFleetInstancesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSpotFleetInstancesResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveInstances(value: ActiveInstanceSet): Self = StObject.set(x, "ActiveInstances", value.asInstanceOf[js.Any])
     

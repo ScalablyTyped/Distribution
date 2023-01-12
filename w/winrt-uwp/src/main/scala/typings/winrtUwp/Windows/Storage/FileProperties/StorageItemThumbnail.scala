@@ -118,7 +118,8 @@ object StorageItemThumbnail {
     __obj.asInstanceOf[StorageItemThumbnail]
   }
   
-  extension [Self <: StorageItemThumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageItemThumbnail] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CascadeConfiguration {
     __obj.asInstanceOf[CascadeConfiguration]
   }
   
-  extension [Self <: CascadeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CascadeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAssign(value: CascadeType): Self = StObject.set(x, "Assign", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DbConfig {
     __obj.asInstanceOf[DbConfig]
   }
   
-  extension [Self <: DbConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbConfig] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object ReadonlysortElementsHookM {
     __obj.asInstanceOf[ReadonlysortElementsHookM]
   }
   
-  extension [Self <: ReadonlysortElementsHookM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlysortElementsHookM] (val x: Self) extends AnyVal {
     
     inline def setGetItemName(
       value: HookMap[

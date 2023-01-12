@@ -28,7 +28,8 @@ object ISearchFieldDictionary {
     __obj.asInstanceOf[ISearchFieldDictionary]
   }
   
-  extension [Self <: ISearchFieldDictionary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchFieldDictionary] (val x: Self) extends AnyVal {
     
     inline def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     

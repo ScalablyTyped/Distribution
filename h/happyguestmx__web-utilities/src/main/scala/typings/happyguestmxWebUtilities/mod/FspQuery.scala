@@ -25,7 +25,8 @@ object FspQuery {
     __obj.asInstanceOf[FspQuery]
   }
   
-  extension [Self <: FspQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FspQuery] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

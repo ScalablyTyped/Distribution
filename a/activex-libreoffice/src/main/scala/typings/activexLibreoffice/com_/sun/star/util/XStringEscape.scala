@@ -44,7 +44,8 @@ object XStringEscape {
     __obj.asInstanceOf[XStringEscape]
   }
   
-  extension [Self <: XStringEscape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringEscape] (val x: Self) extends AnyVal {
     
     inline def setEscapeString(value: String => String): Self = StObject.set(x, "escapeString", js.Any.fromFunction1(value))
     

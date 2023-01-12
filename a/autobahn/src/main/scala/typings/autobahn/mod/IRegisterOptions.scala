@@ -22,7 +22,8 @@ object IRegisterOptions {
     __obj.asInstanceOf[IRegisterOptions]
   }
   
-  extension [Self <: IRegisterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRegisterOptions] (val x: Self) extends AnyVal {
     
     inline def setDisclose_caller(value: Boolean): Self = StObject.set(x, "disclose_caller", value.asInstanceOf[js.Any])
     

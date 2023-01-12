@@ -32,7 +32,8 @@ object buildLaunchRegisterRootComponentMod {
       __obj.asInstanceOf[InitialProps]
     }
     
-    extension [Self <: InitialProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialProps] (val x: Self) extends AnyVal {
       
       inline def setExp(value: Dictkey): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
       

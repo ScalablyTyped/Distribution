@@ -22,7 +22,8 @@ object OrderLineItemAdjustment {
     __obj.asInstanceOf[OrderLineItemAdjustment]
   }
   
-  extension [Self <: OrderLineItemAdjustment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderLineItemAdjustment] (val x: Self) extends AnyVal {
     
     inline def setPriceAdjustment(value: Price): Self = StObject.set(x, "priceAdjustment", value.asInstanceOf[js.Any])
     

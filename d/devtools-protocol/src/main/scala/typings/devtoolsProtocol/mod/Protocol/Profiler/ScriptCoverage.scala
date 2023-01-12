@@ -29,7 +29,8 @@ object ScriptCoverage {
     __obj.asInstanceOf[ScriptCoverage]
   }
   
-  extension [Self <: ScriptCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptCoverage] (val x: Self) extends AnyVal {
     
     inline def setFunctions(value: js.Array[FunctionCoverage]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     

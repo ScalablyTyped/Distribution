@@ -21,7 +21,8 @@ object AchCreditTransferDetails {
     __obj.asInstanceOf[AchCreditTransferDetails]
   }
   
-  extension [Self <: AchCreditTransferDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AchCreditTransferDetails] (val x: Self) extends AnyVal {
     
     inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
     

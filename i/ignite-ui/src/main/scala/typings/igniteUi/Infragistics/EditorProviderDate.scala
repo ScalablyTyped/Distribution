@@ -52,7 +52,8 @@ object EditorProviderDate {
     __obj.asInstanceOf[EditorProviderDate]
   }
   
-  extension [Self <: EditorProviderDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderDate] (val x: Self) extends AnyVal {
     
     inline def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction7(value))
     

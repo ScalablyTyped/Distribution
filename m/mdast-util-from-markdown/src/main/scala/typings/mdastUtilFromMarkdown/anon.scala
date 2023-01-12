@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[CanContainEols]
     }
     
-    extension [Self <: CanContainEols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanContainEols] (val x: Self) extends AnyVal {
       
       inline def setCanContainEols(value: js.Array[String]): Self = StObject.set(x, "canContainEols", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Enter]
     }
     
-    extension [Self <: Enter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enter] (val x: Self) extends AnyVal {
       
       inline def setCanContainEols(value: js.Array[String]): Self = StObject.set(x, "canContainEols", value.asInstanceOf[js.Any])
       
@@ -176,7 +178,8 @@ object anon {
       __obj.asInstanceOf[OmitCompileContextsliceSe]
     }
     
-    extension [Self <: OmitCompileContextsliceSe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitCompileContextsliceSe] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.ThisFunction0[/* this */ CompileContext, Unit]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -318,7 +321,8 @@ object anon {
       __obj.asInstanceOf[OmitCompileContextsliceSeBuffer]
     }
     
-    extension [Self <: OmitCompileContextsliceSeBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitCompileContextsliceSeBuffer] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: js.ThisFunction0[/* this */ typings.mdastUtilFromMarkdown.libMod.CompileContext, Unit]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -403,7 +407,8 @@ object anon {
       __obj.asInstanceOf[PartialCompileDataFields]
     }
     
-    extension [Self <: PartialCompileDataFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCompileDataFields] (val x: Self) extends AnyVal {
       
       inline def setAtHardBreak(value: Boolean): Self = StObject.set(x, "atHardBreak", value.asInstanceOf[js.Any])
       

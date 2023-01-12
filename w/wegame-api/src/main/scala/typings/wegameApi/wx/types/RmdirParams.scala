@@ -24,7 +24,8 @@ object RmdirParams {
     __obj.asInstanceOf[RmdirParams]
   }
   
-  extension [Self <: RmdirParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RmdirParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

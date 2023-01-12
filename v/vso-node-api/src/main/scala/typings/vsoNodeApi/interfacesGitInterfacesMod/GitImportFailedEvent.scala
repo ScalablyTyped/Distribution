@@ -17,7 +17,8 @@ object GitImportFailedEvent {
     __obj.asInstanceOf[GitImportFailedEvent]
   }
   
-  extension [Self <: GitImportFailedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitImportFailedEvent] (val x: Self) extends AnyVal {
     
     inline def setSourceRepositoryName(value: String): Self = StObject.set(x, "sourceRepositoryName", value.asInstanceOf[js.Any])
     

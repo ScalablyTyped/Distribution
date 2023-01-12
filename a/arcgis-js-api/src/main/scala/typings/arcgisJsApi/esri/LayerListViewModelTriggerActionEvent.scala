@@ -17,7 +17,8 @@ object LayerListViewModelTriggerActionEvent {
     __obj.asInstanceOf[LayerListViewModelTriggerActionEvent]
   }
   
-  extension [Self <: LayerListViewModelTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerListViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

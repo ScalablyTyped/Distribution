@@ -52,7 +52,8 @@ object RangeSelector {
     __obj.asInstanceOf[RangeSelector]
   }
   
-  extension [Self <: RangeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelector] (val x: Self) extends AnyVal {
     
     inline def setActivecolor(value: String): Self = StObject.set(x, "activecolor", value.asInstanceOf[js.Any])
     

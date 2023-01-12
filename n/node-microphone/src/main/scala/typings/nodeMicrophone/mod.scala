@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Microphone]
     }
     
-    extension [Self <: Microphone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Microphone] (val x: Self) extends AnyVal {
       
       inline def setStartRecording(value: () => WriteStream): Self = StObject.set(x, "startRecording", js.Any.fromFunction0(value))
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[MicrophoneOptions]
     }
     
-    extension [Self <: MicrophoneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicrophoneOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalParameters(value: Any): Self = StObject.set(x, "additionalParameters", value.asInstanceOf[js.Any])
       

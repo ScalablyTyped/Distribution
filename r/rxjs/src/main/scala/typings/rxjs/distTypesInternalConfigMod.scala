@@ -89,7 +89,8 @@ object distTypesInternalConfigMod {
       __obj.asInstanceOf[GlobalConfig]
     }
     
-    extension [Self <: GlobalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalConfig] (val x: Self) extends AnyVal {
       
       inline def setOnStoppedNotification(value: (/* notification */ ObservableNotification[Any], /* subscriber */ Subscriber[Any]) => Unit): Self = StObject.set(x, "onStoppedNotification", js.Any.fromFunction2(value))
       

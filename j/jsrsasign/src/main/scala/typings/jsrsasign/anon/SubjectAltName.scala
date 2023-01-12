@@ -16,7 +16,8 @@ object SubjectAltName {
     __obj.asInstanceOf[SubjectAltName]
   }
   
-  extension [Self <: SubjectAltName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectAltName] (val x: Self) extends AnyVal {
     
     inline def setSubjectAltName(value: ArrayParam[Dns]): Self = StObject.set(x, "subjectAltName", value.asInstanceOf[js.Any])
   }

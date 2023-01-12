@@ -20,7 +20,8 @@ object WebMapSaveOptions {
     __obj.asInstanceOf[WebMapSaveOptions]
   }
   
-  extension [Self <: WebMapSaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapSaveOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     

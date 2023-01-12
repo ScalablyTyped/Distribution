@@ -19,7 +19,8 @@ object RequestBodyContentApplicationjsonColumnid {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonColumnid]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonColumnid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonColumnid] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathCardid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

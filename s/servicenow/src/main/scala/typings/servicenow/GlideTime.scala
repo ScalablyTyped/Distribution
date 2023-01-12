@@ -35,7 +35,8 @@ object GlideTime {
     __obj.asInstanceOf[GlideTime]
   }
   
-  extension [Self <: GlideTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlideTime] (val x: Self) extends AnyVal {
     
     inline def setGetByFormat(value: String => String): Self = StObject.set(x, "getByFormat", js.Any.fromFunction1(value))
     

@@ -15,7 +15,8 @@ object GetBucketMetadataOptions {
     __obj.asInstanceOf[GetBucketMetadataOptions]
   }
   
-  extension [Self <: GetBucketMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

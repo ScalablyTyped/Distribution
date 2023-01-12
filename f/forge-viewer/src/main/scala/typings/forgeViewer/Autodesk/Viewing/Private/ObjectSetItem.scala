@@ -29,7 +29,8 @@ object ObjectSetItem {
     __obj.asInstanceOf[ObjectSetItem]
   }
   
-  extension [Self <: ObjectSetItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectSetItem] (val x: Self) extends AnyVal {
     
     inline def setExplodeScale(value: Double): Self = StObject.set(x, "explodeScale", value.asInstanceOf[js.Any])
     

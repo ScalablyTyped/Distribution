@@ -65,7 +65,8 @@ object ChartFontUpdateData {
     __obj.asInstanceOf[ChartFontUpdateData]
   }
   
-  extension [Self <: ChartFontUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartFontUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object LocaleMatcher {
     __obj.asInstanceOf[LocaleMatcher]
   }
   
-  extension [Self <: LocaleMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleMatcher] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String | js.Array[String]): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

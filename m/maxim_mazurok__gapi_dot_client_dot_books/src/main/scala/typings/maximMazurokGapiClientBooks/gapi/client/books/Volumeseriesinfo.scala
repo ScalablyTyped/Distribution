@@ -25,7 +25,8 @@ object Volumeseriesinfo {
     __obj.asInstanceOf[Volumeseriesinfo]
   }
   
-  extension [Self <: Volumeseriesinfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volumeseriesinfo] (val x: Self) extends AnyVal {
     
     inline def setBookDisplayNumber(value: String): Self = StObject.set(x, "bookDisplayNumber", value.asInstanceOf[js.Any])
     

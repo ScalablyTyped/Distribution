@@ -18,7 +18,8 @@ object DescribeModelInput {
     __obj.asInstanceOf[DescribeModelInput]
   }
   
-  extension [Self <: DescribeModelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeModelInput] (val x: Self) extends AnyVal {
     
     inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
   }

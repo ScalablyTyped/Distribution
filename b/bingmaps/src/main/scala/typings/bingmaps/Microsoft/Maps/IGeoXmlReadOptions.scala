@@ -48,7 +48,8 @@ object IGeoXmlReadOptions {
     __obj.asInstanceOf[IGeoXmlReadOptions]
   }
   
-  extension [Self <: IGeoXmlReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoXmlReadOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowKmlScreenOverlays(value: Boolean): Self = StObject.set(x, "allowKmlScreenOverlays", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CreateReplicationGroupResult {
     __obj.asInstanceOf[CreateReplicationGroupResult]
   }
   
-  extension [Self <: CreateReplicationGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReplicationGroupResult] (val x: Self) extends AnyVal {
     
     inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object VgScaleDataRefWithSort {
     __obj.asInstanceOf[VgScaleDataRefWithSort]
   }
   
-  extension [Self <: VgScaleDataRefWithSort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgScaleDataRefWithSort] (val x: Self) extends AnyVal {
     
     inline def setSort(value: SortField): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

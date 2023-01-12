@@ -67,7 +67,8 @@ object distServicesRenderingContextMod {
     @js.native
     val ^ : DefinedToken = js.native
     
-    extension [Self <: RenderingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingContext] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

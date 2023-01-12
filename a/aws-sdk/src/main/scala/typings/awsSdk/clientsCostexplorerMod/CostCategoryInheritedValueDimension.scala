@@ -23,7 +23,8 @@ object CostCategoryInheritedValueDimension {
     __obj.asInstanceOf[CostCategoryInheritedValueDimension]
   }
   
-  extension [Self <: CostCategoryInheritedValueDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostCategoryInheritedValueDimension] (val x: Self) extends AnyVal {
     
     inline def setDimensionKey(value: GenericString): Self = StObject.set(x, "DimensionKey", value.asInstanceOf[js.Any])
     

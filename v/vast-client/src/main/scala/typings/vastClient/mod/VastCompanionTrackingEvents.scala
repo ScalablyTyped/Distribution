@@ -18,7 +18,8 @@ object VastCompanionTrackingEvents {
     __obj.asInstanceOf[VastCompanionTrackingEvents]
   }
   
-  extension [Self <: VastCompanionTrackingEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastCompanionTrackingEvents] (val x: Self) extends AnyVal {
     
     inline def setCreativeView(value: js.Array[String]): Self = StObject.set(x, "creativeView", value.asInstanceOf[js.Any])
     

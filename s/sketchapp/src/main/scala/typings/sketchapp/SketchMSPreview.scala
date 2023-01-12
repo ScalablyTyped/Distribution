@@ -19,7 +19,8 @@ object SketchMSPreview {
     __obj.asInstanceOf[SketchMSPreview]
   }
   
-  extension [Self <: SketchMSPreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSPreview] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

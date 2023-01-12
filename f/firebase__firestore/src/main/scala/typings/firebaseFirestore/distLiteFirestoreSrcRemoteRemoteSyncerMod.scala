@@ -72,7 +72,8 @@ object distLiteFirestoreSrcRemoteRemoteSyncerMod {
       __obj.asInstanceOf[RemoteSyncer]
     }
     
-    extension [Self <: RemoteSyncer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteSyncer] (val x: Self) extends AnyVal {
       
       inline def setApplyRemoteEvent(value: /* remoteEvent */ RemoteEvent => js.Promise[Unit]): Self = StObject.set(x, "applyRemoteEvent", js.Any.fromFunction1(value))
       

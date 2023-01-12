@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Coverage]
     }
     
-    extension [Self <: Coverage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: CoverageStats): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[CoverageOptions]
     }
     
-    extension [Self <: CoverageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageOptions] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[CoverageStats]
     }
     
-    extension [Self <: CoverageStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageStats] (val x: Self) extends AnyVal {
       
       inline def setCovered(value: Double): Self = StObject.set(x, "covered", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCodeGenerationOptions(value: js.Object): Self = StObject.set(x, "codeGenerationOptions", value.asInstanceOf[js.Any])
       
@@ -207,7 +211,8 @@ object mod {
       __obj.asInstanceOf[ReportOptions]
     }
     
-    extension [Self <: ReportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
@@ -242,7 +247,8 @@ object mod {
       __obj.asInstanceOf[ThresholdOptions]
     }
     
-    extension [Self <: ThresholdOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThresholdOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       

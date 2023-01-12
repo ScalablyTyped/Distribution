@@ -58,7 +58,8 @@ object CreateCustomDataIdentifierRequest {
     __obj.asInstanceOf[CreateCustomDataIdentifierRequest]
   }
   
-  extension [Self <: CreateCustomDataIdentifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

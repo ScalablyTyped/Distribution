@@ -25,7 +25,8 @@ object ToolTip {
     __obj.asInstanceOf[ToolTip]
   }
   
-  extension [Self <: ToolTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolTip] (val x: Self) extends AnyVal {
     
     inline def setDelayClear(value: Double): Self = StObject.set(x, "delayClear", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FileExtensionsValidatingEventUIParam {
     __obj.asInstanceOf[FileExtensionsValidatingEventUIParam]
   }
   
-  extension [Self <: FileExtensionsValidatingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileExtensionsValidatingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFileExtension(value: String): Self = StObject.set(x, "fileExtension", value.asInstanceOf[js.Any])
     

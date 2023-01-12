@@ -662,7 +662,8 @@ object OmitVideospeedpositiondur {
     __obj.asInstanceOf[OmitVideospeedpositiondur]
   }
   
-  extension [Self <: OmitVideospeedpositiondur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitVideospeedpositiondur] (val x: Self) extends AnyVal {
     
     inline def set$getProperty(value: /* name */ String => Any): Self = StObject.set(x, "$getProperty", js.Any.fromFunction1(value))
     

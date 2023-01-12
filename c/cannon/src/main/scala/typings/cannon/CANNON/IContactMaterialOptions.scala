@@ -25,7 +25,8 @@ object IContactMaterialOptions {
     __obj.asInstanceOf[IContactMaterialOptions]
   }
   
-  extension [Self <: IContactMaterialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContactMaterialOptions] (val x: Self) extends AnyVal {
     
     inline def setContactEquationRelaxation(value: Double): Self = StObject.set(x, "contactEquationRelaxation", value.asInstanceOf[js.Any])
     

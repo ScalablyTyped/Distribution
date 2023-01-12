@@ -19,7 +19,8 @@ object SingleRowResult {
     __obj.asInstanceOf[SingleRowResult]
   }
   
-  extension [Self <: SingleRowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleRowResult] (val x: Self) extends AnyVal {
     
     inline def setConsumed(value: Consumed): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
     

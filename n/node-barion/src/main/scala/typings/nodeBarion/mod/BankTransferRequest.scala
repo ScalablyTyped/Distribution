@@ -38,7 +38,8 @@ object BankTransferRequest {
     __obj.asInstanceOf[BankTransferRequest]
   }
   
-  extension [Self <: BankTransferRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankTransferRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
     

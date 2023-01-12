@@ -65,7 +65,8 @@ object EnablePhysics {
     __obj.asInstanceOf[EnablePhysics]
   }
   
-  extension [Self <: EnablePhysics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnablePhysics] (val x: Self) extends AnyVal {
     
     inline def setEnablePhysics(value: Boolean): Self = StObject.set(x, "enablePhysics", value.asInstanceOf[js.Any])
     

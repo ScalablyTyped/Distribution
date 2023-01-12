@@ -32,7 +32,8 @@ object StructuralTypeDescriptor {
     __obj.asInstanceOf[StructuralTypeDescriptor]
   }
   
-  extension [Self <: StructuralTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuralTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDataBars(value: js.Object): Self = StObject.set(x, "dataBars", value.asInstanceOf[js.Any])
     

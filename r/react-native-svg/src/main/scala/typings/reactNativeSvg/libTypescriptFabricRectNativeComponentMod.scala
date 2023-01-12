@@ -37,7 +37,8 @@ object libTypescriptFabricRectNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[ColorStruct]
     }
     
-    extension [Self <: ColorStruct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorStruct] (val x: Self) extends AnyVal {
       
       inline def setBrushRef(value: String): Self = StObject.set(x, "brushRef", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libTypescriptFabricRectNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object libTypescriptFabricRectNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgNodeCommonProps]
     }
     
-    extension [Self <: SvgNodeCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgNodeCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object libTypescriptFabricRectNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgRenderableCommonProps]
     }
     
-    extension [Self <: SvgRenderableCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgRenderableCommonProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: ColorStruct): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

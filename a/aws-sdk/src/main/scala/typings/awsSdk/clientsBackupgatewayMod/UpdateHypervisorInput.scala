@@ -38,7 +38,8 @@ object UpdateHypervisorInput {
     __obj.asInstanceOf[UpdateHypervisorInput]
   }
   
-  extension [Self <: UpdateHypervisorInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHypervisorInput] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

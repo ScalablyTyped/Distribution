@@ -48,7 +48,8 @@ object SearchProfilesRequest {
     __obj.asInstanceOf[SearchProfilesRequest]
   }
   
-  extension [Self <: SearchProfilesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProfilesRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalSearchKeys(value: additionalSearchKeysList): Self = StObject.set(x, "AdditionalSearchKeys", value.asInstanceOf[js.Any])
     

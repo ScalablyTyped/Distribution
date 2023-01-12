@@ -18,7 +18,8 @@ object CreateFileCacheResponse {
     __obj.asInstanceOf[CreateFileCacheResponse]
   }
   
-  extension [Self <: CreateFileCacheResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileCacheResponse] (val x: Self) extends AnyVal {
     
     inline def setFileCache(value: FileCacheCreating): Self = StObject.set(x, "FileCache", value.asInstanceOf[js.Any])
     

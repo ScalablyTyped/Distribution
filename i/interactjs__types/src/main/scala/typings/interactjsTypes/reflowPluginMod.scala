@@ -42,7 +42,8 @@ object reflowPluginMod {
         __obj.asInstanceOf[PhaseMap]
       }
       
-      extension [Self <: PhaseMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PhaseMap] (val x: Self) extends AnyVal {
         
         inline def setReflow(value: `true`): Self = StObject.set(x, "reflow", value.asInstanceOf[js.Any])
         
@@ -84,7 +85,8 @@ object reflowPluginMod {
         __obj.asInstanceOf[Interaction]
       }
       
-      extension [Self <: Interaction](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
         
         inline def set_reflowPromise(value: js.Promise[Unit]): Self = StObject.set(x, "_reflowPromise", value.asInstanceOf[js.Any])
         
@@ -121,7 +123,8 @@ object reflowPluginMod {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def `setInteractionsColonaction-reflow`(value: DoAnyPhaseArg): Self = StObject.set(x, "interactions:action-reflow", value.asInstanceOf[js.Any])
         

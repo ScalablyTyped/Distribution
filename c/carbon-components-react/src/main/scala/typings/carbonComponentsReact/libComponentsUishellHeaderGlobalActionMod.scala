@@ -525,7 +525,8 @@ object libComponentsUishellHeaderGlobalActionMod extends Shortcut {
       __obj.asInstanceOf[HeaderGlobalActionProps]
     }
     
-    extension [Self <: HeaderGlobalActionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderGlobalActionProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -257,7 +257,8 @@ object ojrefresherMod {
       __obj.asInstanceOf[ojRefresherEventMap]
     }
     
-    extension [Self <: ojRefresherEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRefresherEventMap] (val x: Self) extends AnyVal {
       
       inline def setRefreshContentChanged(value: JetElementCustomEvent[js.Function0[js.Promise[Any]]]): Self = StObject.set(x, "refreshContentChanged", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,8 @@ object ojrefresherMod {
       __obj.asInstanceOf[ojRefresherSettableProperties]
     }
     
-    extension [Self <: ojRefresherSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRefresherSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setRefreshContent(value: () => js.Promise[Any]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
       
@@ -322,7 +324,8 @@ object ojrefresherMod {
       __obj.asInstanceOf[ojRefresherSettablePropertiesLenient]
     }
     
-    extension [Self <: ojRefresherSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojRefresherSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setRefreshContent(value: () => js.Promise[Any]): Self = StObject.set(x, "refreshContent", js.Any.fromFunction0(value))
       

@@ -17,7 +17,8 @@ object TerminateThreadsArguments {
     __obj.asInstanceOf[TerminateThreadsArguments]
   }
   
-  extension [Self <: TerminateThreadsArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminateThreadsArguments] (val x: Self) extends AnyVal {
     
     inline def setThreadIds(value: js.Array[Double]): Self = StObject.set(x, "threadIds", value.asInstanceOf[js.Any])
     

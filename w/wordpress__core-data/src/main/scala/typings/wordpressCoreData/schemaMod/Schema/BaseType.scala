@@ -52,7 +52,8 @@ object BaseType {
     __obj.asInstanceOf[BaseType[T]]
   }
   
-  extension [Self <: BaseType[?], T /* <: Context */](x: Self & BaseType[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseType[?], T /* <: Context */] (val x: Self & BaseType[T]) extends AnyVal {
     
     inline def setCapabilities(value: Createposts): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

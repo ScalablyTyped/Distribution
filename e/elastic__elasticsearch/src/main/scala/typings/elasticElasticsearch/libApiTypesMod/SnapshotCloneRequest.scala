@@ -27,7 +27,8 @@ object SnapshotCloneRequest {
     __obj.asInstanceOf[SnapshotCloneRequest]
   }
   
-  extension [Self <: SnapshotCloneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCloneRequest] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: String): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetRecommendationsRequest {
     __obj.asInstanceOf[GetRecommendationsRequest]
   }
   
-  extension [Self <: GetRecommendationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRecommendationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssistantId(value: UuidOrArn): Self = StObject.set(x, "assistantId", value.asInstanceOf[js.Any])
     

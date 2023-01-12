@@ -31,7 +31,8 @@ object ApplePayError {
     __obj.asInstanceOf[ApplePayError]
   }
   
-  extension [Self <: ApplePayError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePayError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ApplePayErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

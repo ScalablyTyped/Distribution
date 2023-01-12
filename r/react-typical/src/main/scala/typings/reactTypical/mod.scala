@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[ReactTypicalProps]
     }
     
-    extension [Self <: ReactTypicalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTypicalProps] (val x: Self) extends AnyVal {
       
       inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       

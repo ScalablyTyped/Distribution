@@ -26,7 +26,8 @@ object desktopCapture {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setCanRequestAudioTrack(value: Boolean): Self = StObject.set(x, "canRequestAudioTrack", value.asInstanceOf[js.Any])
     }

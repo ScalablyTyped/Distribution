@@ -100,7 +100,8 @@ object libMailMailMessageHeaderMod {
       __obj.asInstanceOf[MailMessageHeader]
     }
     
-    extension [Self <: MailMessageHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MailMessageHeader] (val x: Self) extends AnyVal {
       
       inline def setCc(value: js.Array[Any]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       

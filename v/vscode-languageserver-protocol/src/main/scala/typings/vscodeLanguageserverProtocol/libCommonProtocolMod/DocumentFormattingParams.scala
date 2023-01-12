@@ -27,7 +27,8 @@ object DocumentFormattingParams {
     __obj.asInstanceOf[DocumentFormattingParams]
   }
   
-  extension [Self <: DocumentFormattingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFormattingParams] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: FormattingOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

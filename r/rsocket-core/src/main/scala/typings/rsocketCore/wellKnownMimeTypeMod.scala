@@ -281,7 +281,8 @@ object wellKnownMimeTypeMod {
       __obj.asInstanceOf[WellKnownMimeType]
     }
     
-    extension [Self <: WellKnownMimeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WellKnownMimeType] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: Double): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

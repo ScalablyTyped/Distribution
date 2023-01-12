@@ -22,7 +22,8 @@ object UserDefined {
     __obj.asInstanceOf[UserDefined]
   }
   
-  extension [Self <: UserDefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefined] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

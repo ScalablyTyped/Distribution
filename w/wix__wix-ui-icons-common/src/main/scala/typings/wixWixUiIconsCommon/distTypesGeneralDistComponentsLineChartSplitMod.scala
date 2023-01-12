@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsLineChartSplitMod extends Shortcut {
       __obj.asInstanceOf[LineChartSplitProps]
     }
     
-    extension [Self <: LineChartSplitProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineChartSplitProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

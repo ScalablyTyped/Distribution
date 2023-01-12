@@ -36,7 +36,8 @@ object IErrorData {
     __obj.asInstanceOf[IErrorData]
   }
   
-  extension [Self <: IErrorData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IErrorData] (val x: Self) extends AnyVal {
     
     inline def setQErrorDataCode(value: ErrorDataCodeType): Self = StObject.set(x, "qErrorDataCode", value.asInstanceOf[js.Any])
     

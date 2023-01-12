@@ -29,7 +29,8 @@ object EnrolledService {
     __obj.asInstanceOf[EnrolledService]
   }
   
-  extension [Self <: EnrolledService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrolledService] (val x: Self) extends AnyVal {
     
     inline def setCloudProduct(value: String): Self = StObject.set(x, "cloudProduct", value.asInstanceOf[js.Any])
     

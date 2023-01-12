@@ -58,7 +58,8 @@ object HeightModelInfoProperties {
     __obj.asInstanceOf[HeightModelInfoProperties]
   }
   
-  extension [Self <: HeightModelInfoProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeightModelInfoProperties] (val x: Self) extends AnyVal {
     
     inline def setHeightModel(value: `gravity-related-height` | ellipsoidal): Self = StObject.set(x, "heightModel", value.asInstanceOf[js.Any])
     

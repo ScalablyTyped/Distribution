@@ -18,7 +18,8 @@ object SendEmailResponse {
     __obj.asInstanceOf[SendEmailResponse]
   }
   
-  extension [Self <: SendEmailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEmailResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
   }

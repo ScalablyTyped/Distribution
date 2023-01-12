@@ -19,7 +19,8 @@ object RollupGetRollupIndexCapsRollupJobSummaryField {
     __obj.asInstanceOf[RollupGetRollupIndexCapsRollupJobSummaryField]
   }
   
-  extension [Self <: RollupGetRollupIndexCapsRollupJobSummaryField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetRollupIndexCapsRollupJobSummaryField] (val x: Self) extends AnyVal {
     
     inline def setAgg(value: String): Self = StObject.set(x, "agg", value.asInstanceOf[js.Any])
     

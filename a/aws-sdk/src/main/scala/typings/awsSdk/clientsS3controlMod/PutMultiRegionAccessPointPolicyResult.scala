@@ -18,7 +18,8 @@ object PutMultiRegionAccessPointPolicyResult {
     __obj.asInstanceOf[PutMultiRegionAccessPointPolicyResult]
   }
   
-  extension [Self <: PutMultiRegionAccessPointPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutMultiRegionAccessPointPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setRequestTokenARN(value: AsyncRequestTokenARN): Self = StObject.set(x, "RequestTokenARN", value.asInstanceOf[js.Any])
     

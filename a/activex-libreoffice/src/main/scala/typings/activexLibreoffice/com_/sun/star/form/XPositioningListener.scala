@@ -34,7 +34,8 @@ object XPositioningListener {
     __obj.asInstanceOf[XPositioningListener]
   }
   
-  extension [Self <: XPositioningListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPositioningListener] (val x: Self) extends AnyVal {
     
     inline def setPositioned(value: EventObject => Unit): Self = StObject.set(x, "positioned", js.Any.fromFunction1(value))
   }

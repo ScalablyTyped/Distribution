@@ -18,7 +18,8 @@ object CustomVocabularyEntryId {
     __obj.asInstanceOf[CustomVocabularyEntryId]
   }
   
-  extension [Self <: CustomVocabularyEntryId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomVocabularyEntryId] (val x: Self) extends AnyVal {
     
     inline def setItemId(value: ItemId): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
   }

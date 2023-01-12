@@ -23,7 +23,8 @@ object BatchDeleteRumMetricDefinitionsResponse {
     __obj.asInstanceOf[BatchDeleteRumMetricDefinitionsResponse]
   }
   
-  extension [Self <: BatchDeleteRumMetricDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteRumMetricDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchDeleteRumMetricDefinitionsErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object IriStemRange {
     __obj.asInstanceOf[IriStemRange]
   }
   
-  extension [Self <: IriStemRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IriStemRange] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[IRIREF | IriStem]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

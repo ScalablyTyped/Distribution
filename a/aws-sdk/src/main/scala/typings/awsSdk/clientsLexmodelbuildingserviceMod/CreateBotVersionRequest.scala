@@ -23,7 +23,8 @@ object CreateBotVersionRequest {
     __obj.asInstanceOf[CreateBotVersionRequest]
   }
   
-  extension [Self <: CreateBotVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBotVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

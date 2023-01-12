@@ -18,7 +18,8 @@ object MediaTypeHeaderValue {
     __obj.asInstanceOf[MediaTypeHeaderValue]
   }
   
-  extension [Self <: MediaTypeHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTypeHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setMediaTypeHeaderValue(value: HttpMediaTypeHeaderValue): Self = StObject.set(x, "mediaTypeHeaderValue", value.asInstanceOf[js.Any])
     

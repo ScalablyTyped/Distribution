@@ -16,7 +16,8 @@ object XRSceneObject {
     __obj.asInstanceOf[XRSceneObject]
   }
   
-  extension [Self <: XRSceneObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRSceneObject] (val x: Self) extends AnyVal {
     
     inline def setType(value: XRSceneObjectType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -51,7 +51,8 @@ object GalleryAlbum {
     __obj.asInstanceOf[GalleryAlbum]
   }
   
-  extension [Self <: GalleryAlbum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GalleryAlbum] (val x: Self) extends AnyVal {
     
     inline def setCover(value: String): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     

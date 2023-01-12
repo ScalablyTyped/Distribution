@@ -41,7 +41,8 @@ object GanttPdf {
     __obj.asInstanceOf[GanttPdf]
   }
   
-  extension [Self <: GanttPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttPdf] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Auth0Constructor {
     __obj.asInstanceOf[Auth0Constructor]
   }
   
-  extension [Self <: Auth0Constructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0Constructor] (val x: Self) extends AnyVal {
     
     inline def setAssetsUrl(value: String): Self = StObject.set(x, "assetsUrl", value.asInstanceOf[js.Any])
     

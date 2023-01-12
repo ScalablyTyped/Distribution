@@ -35,7 +35,8 @@ object BottomHeight {
     __obj.asInstanceOf[BottomHeight]
   }
   
-  extension [Self <: BottomHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomHeight] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Intervalcount {
     __obj.asInstanceOf[Intervalcount]
   }
   
-  extension [Self <: Intervalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intervalcount] (val x: Self) extends AnyVal {
     
     inline def setInterval_count(value: Double): Self = StObject.set(x, "interval_count", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Certificate]
     }
     
-    extension [Self <: Certificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
       
       inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setPublicExponent(value: String): Self = StObject.set(x, "publicExponent", value.asInstanceOf[js.Any])
       

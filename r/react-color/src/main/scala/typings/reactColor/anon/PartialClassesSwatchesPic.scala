@@ -16,7 +16,8 @@ object PartialClassesSwatchesPic {
     __obj.asInstanceOf[PartialClassesSwatchesPic]
   }
   
-  extension [Self <: PartialClassesSwatchesPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesSwatchesPic] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialSwatchesPickerStyl): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

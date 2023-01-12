@@ -28,7 +28,8 @@ object DeregisterTargetFromMaintenanceWindowRequest {
     __obj.asInstanceOf[DeregisterTargetFromMaintenanceWindowRequest]
   }
   
-  extension [Self <: DeregisterTargetFromMaintenanceWindowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeregisterTargetFromMaintenanceWindowRequest] (val x: Self) extends AnyVal {
     
     inline def setSafe(value: Boolean): Self = StObject.set(x, "Safe", value.asInstanceOf[js.Any])
     

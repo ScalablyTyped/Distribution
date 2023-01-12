@@ -33,7 +33,8 @@ object DescribeAddressTransfersRequest {
     __obj.asInstanceOf[DescribeAddressTransfersRequest]
   }
   
-  extension [Self <: DescribeAddressTransfersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAddressTransfersRequest] (val x: Self) extends AnyVal {
     
     inline def setAllocationIds(value: AllocationIdList): Self = StObject.set(x, "AllocationIds", value.asInstanceOf[js.Any])
     

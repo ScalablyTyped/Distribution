@@ -29,7 +29,8 @@ object RequestPattern {
     __obj.asInstanceOf[RequestPattern]
   }
   
-  extension [Self <: RequestPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestPattern] (val x: Self) extends AnyVal {
     
     inline def setInterceptionStage(value: InterceptionStage): Self = StObject.set(x, "interceptionStage", value.asInstanceOf[js.Any])
     

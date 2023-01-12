@@ -17,7 +17,8 @@ object ParametersQueryPackagetype {
     __obj.asInstanceOf[ParametersQueryPackagetype]
   }
   
-  extension [Self <: ParametersQueryPackagetype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryPackagetype] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryPackagetype): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

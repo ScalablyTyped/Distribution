@@ -37,7 +37,8 @@ object LoopEdges {
     __obj.asInstanceOf[LoopEdges]
   }
   
-  extension [Self <: LoopEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoopEdges] (val x: Self) extends AnyVal {
     
     inline def `setLoop-direction`(value: PropertyValueEdge[String]): Self = StObject.set(x, "loop-direction", value.asInstanceOf[js.Any])
     

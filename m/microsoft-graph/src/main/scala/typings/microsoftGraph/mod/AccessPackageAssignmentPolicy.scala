@@ -71,7 +71,8 @@ object AccessPackageAssignmentPolicy {
     __obj.asInstanceOf[AccessPackageAssignmentPolicy]
   }
   
-  extension [Self <: AccessPackageAssignmentPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPackageAssignmentPolicy] (val x: Self) extends AnyVal {
     
     inline def setAccessPackage(value: NullableOption[AccessPackage]): Self = StObject.set(x, "accessPackage", value.asInstanceOf[js.Any])
     

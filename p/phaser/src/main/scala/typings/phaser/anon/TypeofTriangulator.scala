@@ -22,7 +22,8 @@ object TypeofTriangulator {
     __obj.asInstanceOf[TypeofTriangulator]
   }
   
-  extension [Self <: TypeofTriangulator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTriangulator] (val x: Self) extends AnyVal {
     
     inline def setIsConcave(value: Any): Self = StObject.set(x, "isConcave", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object IViewZone {
     __obj.asInstanceOf[IViewZone]
   }
   
-  extension [Self <: IViewZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewZone] (val x: Self) extends AnyVal {
     
     inline def setAfterColumn(value: Double): Self = StObject.set(x, "afterColumn", value.asInstanceOf[js.Any])
     

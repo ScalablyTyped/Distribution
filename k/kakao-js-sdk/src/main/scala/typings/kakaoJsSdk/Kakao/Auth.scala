@@ -37,7 +37,8 @@ object Auth {
       __obj.asInstanceOf[AuthError]
     }
     
-    extension [Self <: AuthError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthError] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object Auth {
       __obj.asInstanceOf[AuthStatusObject]
     }
     
-    extension [Self <: AuthStatusObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthStatusObject] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: connected | not_connected): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object Auth {
       __obj.asInstanceOf[AuthSuccessObject]
     }
     
-    extension [Self <: AuthSuccessObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthSuccessObject] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       

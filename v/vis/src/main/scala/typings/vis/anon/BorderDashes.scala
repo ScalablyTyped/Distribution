@@ -27,7 +27,8 @@ object BorderDashes {
     __obj.asInstanceOf[BorderDashes]
   }
   
-  extension [Self <: BorderDashes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderDashes] (val x: Self) extends AnyVal {
     
     inline def setBorderDashes(value: Boolean | js.Array[Double]): Self = StObject.set(x, "borderDashes", value.asInstanceOf[js.Any])
     

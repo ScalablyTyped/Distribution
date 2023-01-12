@@ -23,7 +23,8 @@ object SearchResourcesCriteria {
     __obj.asInstanceOf[SearchResourcesCriteria]
   }
   
-  extension [Self <: SearchResourcesCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesCriteria] (val x: Self) extends AnyVal {
     
     inline def setSimpleCriterion(value: SearchResourcesSimpleCriterion): Self = StObject.set(x, "simpleCriterion", value.asInstanceOf[js.Any])
     

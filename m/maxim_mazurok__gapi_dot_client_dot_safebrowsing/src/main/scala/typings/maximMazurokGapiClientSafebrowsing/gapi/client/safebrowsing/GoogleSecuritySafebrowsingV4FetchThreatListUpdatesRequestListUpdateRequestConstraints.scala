@@ -37,7 +37,8 @@ object GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateReques
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints] (val x: Self) extends AnyVal {
     
     inline def setDeviceLocation(value: String): Self = StObject.set(x, "deviceLocation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListFrameworksOutput {
     __obj.asInstanceOf[ListFrameworksOutput]
   }
   
-  extension [Self <: ListFrameworksOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFrameworksOutput] (val x: Self) extends AnyVal {
     
     inline def setFrameworks(value: FrameworkList): Self = StObject.set(x, "Frameworks", value.asInstanceOf[js.Any])
     

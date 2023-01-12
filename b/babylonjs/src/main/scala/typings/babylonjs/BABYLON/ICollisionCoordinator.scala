@@ -41,7 +41,8 @@ object ICollisionCoordinator {
     __obj.asInstanceOf[ICollisionCoordinator]
   }
   
-  extension [Self <: ICollisionCoordinator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollisionCoordinator] (val x: Self) extends AnyVal {
     
     inline def setCreateCollider(value: () => Collider): Self = StObject.set(x, "createCollider", js.Any.fromFunction0(value))
     

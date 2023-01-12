@@ -23,7 +23,8 @@ object OAuth2ImplicitSecurity {
     __obj.asInstanceOf[OAuth2ImplicitSecurity]
   }
   
-  extension [Self <: OAuth2ImplicitSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2ImplicitSecurity] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     

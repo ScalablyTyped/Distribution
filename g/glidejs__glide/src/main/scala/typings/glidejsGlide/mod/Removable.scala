@@ -15,7 +15,8 @@ object Removable {
     __obj.asInstanceOf[Removable]
   }
   
-  extension [Self <: Removable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Removable] (val x: Self) extends AnyVal {
     
     inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }

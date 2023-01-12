@@ -21,7 +21,8 @@ object CustomArchiveLayoutOptions {
     __obj.asInstanceOf[CustomArchiveLayoutOptions]
   }
   
-  extension [Self <: CustomArchiveLayoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomArchiveLayoutOptions] (val x: Self) extends AnyVal {
     
     inline def setStylesheet(value: String): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     

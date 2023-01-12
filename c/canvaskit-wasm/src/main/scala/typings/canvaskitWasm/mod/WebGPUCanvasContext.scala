@@ -27,7 +27,8 @@ object WebGPUCanvasContext {
     __obj.asInstanceOf[WebGPUCanvasContext]
   }
   
-  extension [Self <: WebGPUCanvasContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUCanvasContext] (val x: Self) extends AnyVal {
     
     inline def setRequestAnimationFrame(value: js.Function1[/* _ */ Canvas, Unit] => Unit): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
   }

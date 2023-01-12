@@ -41,7 +41,8 @@ object SharedEditorParams {
     __obj.asInstanceOf[SharedEditorParams]
   }
   
-  extension [Self <: SharedEditorParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedEditorParams] (val x: Self) extends AnyVal {
     
     inline def setElementAttributes(value: JSONRecord): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object TestReturnValue {
     __obj.asInstanceOf[TestReturnValue]
   }
   
-  extension [Self <: TestReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReturnValue] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: js.Array[IacFileInDirectory]): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

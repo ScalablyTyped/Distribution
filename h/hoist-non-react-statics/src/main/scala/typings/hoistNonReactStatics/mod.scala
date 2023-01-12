@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[FORWARD_REF_STATICS]
     }
     
-    extension [Self <: FORWARD_REF_STATICS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FORWARD_REF_STATICS] (val x: Self) extends AnyVal {
       
       inline def setDefaultProps(value: `true`): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[KNOWN_STATICS]
     }
     
-    extension [Self <: KNOWN_STATICS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KNOWN_STATICS] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: `true`): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object mod {
       __obj.asInstanceOf[MEMO_STATICS]
     }
     
-    extension [Self <: MEMO_STATICS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MEMO_STATICS] (val x: Self) extends AnyVal {
       
       inline def setCompare(value: `true`): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
       
@@ -169,7 +172,8 @@ object mod {
       __obj.asInstanceOf[REACT_STATICS]
     }
     
-    extension [Self <: REACT_STATICS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: REACT_STATICS] (val x: Self) extends AnyVal {
       
       inline def setChildContextTypes(value: `true`): Self = StObject.set(x, "childContextTypes", value.asInstanceOf[js.Any])
       

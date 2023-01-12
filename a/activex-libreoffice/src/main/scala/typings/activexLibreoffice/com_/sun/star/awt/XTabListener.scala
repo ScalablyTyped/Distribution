@@ -56,7 +56,8 @@ object XTabListener {
     __obj.asInstanceOf[XTabListener]
   }
   
-  extension [Self <: XTabListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTabListener] (val x: Self) extends AnyVal {
     
     inline def setActivated(value: Double => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction1(value))
     

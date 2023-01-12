@@ -47,7 +47,8 @@ object XSAXEventKeeperStatusChangeListener {
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeListener]
   }
   
-  extension [Self <: XSAXEventKeeperStatusChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSAXEventKeeperStatusChangeListener] (val x: Self) extends AnyVal {
     
     inline def setBlockingStatusChanged(value: Boolean => Unit): Self = StObject.set(x, "blockingStatusChanged", js.Any.fromFunction1(value))
     

@@ -31,7 +31,8 @@ object Thumbnail {
     __obj.asInstanceOf[Thumbnail]
   }
   
-  extension [Self <: Thumbnail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

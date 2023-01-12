@@ -38,7 +38,8 @@ object DockerVolumeConfiguration {
     __obj.asInstanceOf[DockerVolumeConfiguration]
   }
   
-  extension [Self <: DockerVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoprovision(value: BoxedBoolean): Self = StObject.set(x, "autoprovision", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IacOutputMeta {
     __obj.asInstanceOf[IacOutputMeta]
   }
   
-  extension [Self <: IacOutputMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IacOutputMeta] (val x: Self) extends AnyVal {
     
     inline def setGitRemoteUrl(value: String): Self = StObject.set(x, "gitRemoteUrl", value.asInstanceOf[js.Any])
     

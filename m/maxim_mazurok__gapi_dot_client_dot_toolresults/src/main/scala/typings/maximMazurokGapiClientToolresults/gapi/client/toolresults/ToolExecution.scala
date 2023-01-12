@@ -38,7 +38,8 @@ object ToolExecution {
     __obj.asInstanceOf[ToolExecution]
   }
   
-  extension [Self <: ToolExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolExecution] (val x: Self) extends AnyVal {
     
     inline def setCommandLineArguments(value: js.Array[String]): Self = StObject.set(x, "commandLineArguments", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FolderSearchFilter {
     __obj.asInstanceOf[FolderSearchFilter]
   }
   
-  extension [Self <: FolderSearchFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderSearchFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: FolderFilterAttribute): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

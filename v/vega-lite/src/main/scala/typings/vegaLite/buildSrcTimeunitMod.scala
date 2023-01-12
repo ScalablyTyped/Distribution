@@ -500,7 +500,8 @@ object buildSrcTimeunitMod {
       __obj.asInstanceOf[TimeFormatConfig]
     }
     
-    extension [Self <: TimeFormatConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeFormatConfig] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -637,7 +638,8 @@ object buildSrcTimeunitMod {
       __obj.asInstanceOf[TimeUnitParams]
     }
     
-    extension [Self <: TimeUnitParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeUnitParams] (val x: Self) extends AnyVal {
       
       inline def setMaxbins(value: Double): Self = StObject.set(x, "maxbins", value.asInstanceOf[js.Any])
       

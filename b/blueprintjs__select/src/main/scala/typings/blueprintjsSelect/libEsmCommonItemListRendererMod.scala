@@ -92,7 +92,8 @@ object libEsmCommonItemListRendererMod {
       __obj.asInstanceOf[ItemListRendererProps[T]]
     }
     
-    extension [Self <: ItemListRendererProps[?], T](x: Self & ItemListRendererProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemListRendererProps[?], T] (val x: Self & ItemListRendererProps[T]) extends AnyVal {
       
       inline def setActiveItem(value: T | CreateNewItem): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object EventWrapperProps {
     __obj.asInstanceOf[EventWrapperProps[TEvent]]
   }
   
-  extension [Self <: EventWrapperProps[?], TEvent /* <: js.Object */](x: Self & EventWrapperProps[TEvent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventWrapperProps[?], TEvent /* <: js.Object */] (val x: Self & EventWrapperProps[TEvent]) extends AnyVal {
     
     inline def setAccessors(value: Start[TEvent]): Self = StObject.set(x, "accessors", value.asInstanceOf[js.Any])
     

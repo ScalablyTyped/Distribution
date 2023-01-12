@@ -41,7 +41,8 @@ object Fonts {
       __obj.asInstanceOf[LanguageFont]
     }
     
-    extension [Self <: LanguageFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageFont] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object Fonts {
       __obj.asInstanceOf[LanguageFontGroup]
     }
     
-    extension [Self <: LanguageFontGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageFontGroup] (val x: Self) extends AnyVal {
       
       inline def setDocumentAlternate1Font(value: LanguageFont): Self = StObject.set(x, "documentAlternate1Font", value.asInstanceOf[js.Any])
       

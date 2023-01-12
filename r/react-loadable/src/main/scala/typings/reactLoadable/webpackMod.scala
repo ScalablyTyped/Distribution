@@ -37,7 +37,8 @@ object webpackMod {
       __obj.asInstanceOf[Bundle]
     }
     
-    extension [Self <: Bundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bundle] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object webpackMod {
       __obj.asInstanceOf[ReactLoadablePluginOptions]
     }
     
-    extension [Self <: ReactLoadablePluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactLoadablePluginOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }

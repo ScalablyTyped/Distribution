@@ -15,7 +15,8 @@ object HeapItem {
     __obj.asInstanceOf[HeapItem]
   }
   
-  extension [Self <: HeapItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeapItem] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
   }

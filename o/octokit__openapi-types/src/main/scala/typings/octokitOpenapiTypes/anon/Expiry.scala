@@ -25,7 +25,8 @@ object Expiry {
     __obj.asInstanceOf[Expiry]
   }
   
-  extension [Self <: Expiry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expiry] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: one_day | three_days | one_week | one_month | six_months): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

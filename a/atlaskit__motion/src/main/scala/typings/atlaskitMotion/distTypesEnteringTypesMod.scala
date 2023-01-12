@@ -84,7 +84,8 @@ object distTypesEnteringTypesMod {
       __obj.asInstanceOf[MotionProps[TProps]]
     }
     
-    extension [Self <: MotionProps[?], TProps /* <: js.Object */](x: Self & MotionProps[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionProps[?], TProps /* <: js.Object */] (val x: Self & MotionProps[TProps]) extends AnyVal {
       
       inline def setChildren(value: (TProps, Transition) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

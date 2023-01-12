@@ -30,7 +30,8 @@ object LineOptions {
     __obj.asInstanceOf[LineOptions]
   }
   
-  extension [Self <: LineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOptions] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

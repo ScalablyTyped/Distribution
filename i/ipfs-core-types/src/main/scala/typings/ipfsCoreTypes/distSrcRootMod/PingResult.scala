@@ -19,7 +19,8 @@ object PingResult {
     __obj.asInstanceOf[PingResult]
   }
   
-  extension [Self <: PingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PingResult] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object AnimationBehavior {
     __obj.asInstanceOf[AnimationBehavior]
   }
   
-  extension [Self <: AnimationBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationBehavior] (val x: Self) extends AnyVal {
     
     inline def setAccumulate(value: MsoAnimAccumulate): Self = StObject.set(x, "Accumulate", value.asInstanceOf[js.Any])
     

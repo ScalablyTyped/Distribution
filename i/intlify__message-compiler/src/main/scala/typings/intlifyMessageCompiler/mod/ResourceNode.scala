@@ -24,7 +24,8 @@ object ResourceNode {
     __obj.asInstanceOf[ResourceNode]
   }
   
-  extension [Self <: ResourceNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceNode] (val x: Self) extends AnyVal {
     
     inline def setBody(value: MessageNode | PluralNode): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

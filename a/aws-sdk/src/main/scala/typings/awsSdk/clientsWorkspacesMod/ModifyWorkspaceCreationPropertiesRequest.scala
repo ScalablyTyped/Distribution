@@ -23,7 +23,8 @@ object ModifyWorkspaceCreationPropertiesRequest {
     __obj.asInstanceOf[ModifyWorkspaceCreationPropertiesRequest]
   }
   
-  extension [Self <: ModifyWorkspaceCreationPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyWorkspaceCreationPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: DirectoryId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

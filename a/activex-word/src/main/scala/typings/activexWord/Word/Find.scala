@@ -221,7 +221,8 @@ object Find {
     __obj.asInstanceOf[Find[TParent]]
   }
   
-  extension [Self <: Find[?], TParent](x: Self & Find[TParent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Find[?], TParent] (val x: Self & Find[TParent]) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

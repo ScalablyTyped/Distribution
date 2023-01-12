@@ -18,7 +18,8 @@ object VizResizeEvent {
     __obj.asInstanceOf[VizResizeEvent]
   }
   
-  extension [Self <: VizResizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VizResizeEvent] (val x: Self) extends AnyVal {
     
     inline def setGetVizSize(value: () => Size): Self = StObject.set(x, "getVizSize", js.Any.fromFunction0(value))
   }

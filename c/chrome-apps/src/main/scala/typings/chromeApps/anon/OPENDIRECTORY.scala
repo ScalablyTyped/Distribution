@@ -25,7 +25,8 @@ object OPENDIRECTORY {
     __obj.asInstanceOf[OPENDIRECTORY]
   }
   
-  extension [Self <: OPENDIRECTORY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OPENDIRECTORY] (val x: Self) extends AnyVal {
     
     inline def setOPEN_DIRECTORY(value: openDirectory): Self = StObject.set(x, "OPEN_DIRECTORY", value.asInstanceOf[js.Any])
     

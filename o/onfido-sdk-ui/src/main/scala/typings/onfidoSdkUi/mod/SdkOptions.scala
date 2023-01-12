@@ -64,7 +64,8 @@ object SdkOptions {
     __obj.asInstanceOf[SdkOptions]
   }
   
-  extension [Self <: SdkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdkOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFocusOnInitialScreenTitle(value: Boolean): Self = StObject.set(x, "autoFocusOnInitialScreenTitle", value.asInstanceOf[js.Any])
     

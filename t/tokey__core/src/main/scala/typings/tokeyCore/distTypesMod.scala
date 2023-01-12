@@ -51,7 +51,8 @@ object distTypesMod {
       __obj.asInstanceOf[Token[Type]]
     }
     
-    extension [Self <: Token[?], Type](x: Self & Token[Type]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token[?], Type] (val x: Self & Token[Type]) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object distTypesMod {
       __obj.asInstanceOf[TokenGroup[GroupType, Type]]
     }
     
-    extension [Self <: TokenGroup[?, ?], GroupType, Type](x: Self & (TokenGroup[GroupType, Type])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenGroup[?, ?], GroupType, Type] (val x: Self & (TokenGroup[GroupType, Type])) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

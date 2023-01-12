@@ -15,7 +15,8 @@ object WebExtensionManifestUserScripts {
     __obj.asInstanceOf[WebExtensionManifestUserScripts]
   }
   
-  extension [Self <: WebExtensionManifestUserScripts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestUserScripts] (val x: Self) extends AnyVal {
     
     inline def setApi_script(value: ExtensionURL): Self = StObject.set(x, "api_script", value.asInstanceOf[js.Any])
     

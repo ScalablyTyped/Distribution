@@ -67,7 +67,8 @@ object StatefulMenuProps {
     __obj.asInstanceOf[StatefulMenuProps]
   }
   
-  extension [Self <: StatefulMenuProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulMenuProps] (val x: Self) extends AnyVal {
     
     inline def setAddMenuToNesting(value: /* ref */ `14` => Unit): Self = StObject.set(x, "addMenuToNesting", js.Any.fromFunction1(value))
     

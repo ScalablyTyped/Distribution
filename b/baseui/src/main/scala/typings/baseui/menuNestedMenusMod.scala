@@ -33,7 +33,8 @@ object menuNestedMenusMod {
       __obj.asInstanceOf[NestedMenuProps]
     }
     
-    extension [Self <: NestedMenuProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedMenuProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object menuNestedMenusMod {
       __obj.asInstanceOf[NestedMenuState]
     }
     
-    extension [Self <: NestedMenuState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedMenuState] (val x: Self) extends AnyVal {
       
       inline def setMenus(value: js.Array[NestedMenuRef]): Self = StObject.set(x, "menus", value.asInstanceOf[js.Any])
       

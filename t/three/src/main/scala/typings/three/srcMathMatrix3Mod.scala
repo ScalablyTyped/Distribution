@@ -215,7 +215,8 @@ object srcMathMatrix3Mod {
       __obj.asInstanceOf[Matrix]
     }
     
-    extension [Self <: Matrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: Matrix => Matrix): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
       

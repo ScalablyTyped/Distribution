@@ -15,7 +15,8 @@ object DeleteFuotaTaskRequest {
     __obj.asInstanceOf[DeleteFuotaTaskRequest]
   }
   
-  extension [Self <: DeleteFuotaTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFuotaTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: FuotaTaskId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

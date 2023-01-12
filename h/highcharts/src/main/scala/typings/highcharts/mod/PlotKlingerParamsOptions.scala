@@ -48,7 +48,8 @@ object PlotKlingerParamsOptions {
     __obj.asInstanceOf[PlotKlingerParamsOptions]
   }
   
-  extension [Self <: PlotKlingerParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKlingerParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setFastAvgPeriod(value: Double): Self = StObject.set(x, "fastAvgPeriod", value.asInstanceOf[js.Any])
     

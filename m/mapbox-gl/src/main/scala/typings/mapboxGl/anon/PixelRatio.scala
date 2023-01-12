@@ -17,7 +17,8 @@ object PixelRatio {
     __obj.asInstanceOf[PixelRatio]
   }
   
-  extension [Self <: PixelRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelRatio] (val x: Self) extends AnyVal {
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     

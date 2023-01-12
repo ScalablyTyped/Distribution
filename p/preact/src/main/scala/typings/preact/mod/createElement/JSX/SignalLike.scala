@@ -19,7 +19,8 @@ object SignalLike {
     __obj.asInstanceOf[SignalLike[T]]
   }
   
-  extension [Self <: SignalLike[?], T](x: Self & SignalLike[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalLike[?], T] (val x: Self & SignalLike[T]) extends AnyVal {
     
     inline def setPeek(value: () => T): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object Retries {
     __obj.asInstanceOf[Retries]
   }
   
-  extension [Self <: Retries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Retries] (val x: Self) extends AnyVal {
     
     inline def setBulk(value: long): Self = StObject.set(x, "bulk", value.asInstanceOf[js.Any])
     

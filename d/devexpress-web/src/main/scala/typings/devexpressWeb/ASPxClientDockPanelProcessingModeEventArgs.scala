@@ -23,7 +23,8 @@ object ASPxClientDockPanelProcessingModeEventArgs {
     __obj.asInstanceOf[ASPxClientDockPanelProcessingModeEventArgs]
   }
   
-  extension [Self <: ASPxClientDockPanelProcessingModeEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDockPanelProcessingModeEventArgs] (val x: Self) extends AnyVal {
     
     inline def setZone(value: ASPxClientDockZone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }

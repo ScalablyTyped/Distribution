@@ -116,7 +116,8 @@ object grammarMod {
       __obj.asInstanceOf[Grammar]
     }
     
-    extension [Self <: Grammar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grammar] (val x: Self) extends AnyVal {
       
       inline def setElements(value: StringDictionary[Element]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       

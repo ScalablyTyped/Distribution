@@ -16,7 +16,8 @@ object SVGURIReference {
     __obj.asInstanceOf[SVGURIReference]
   }
   
-  extension [Self <: SVGURIReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGURIReference] (val x: Self) extends AnyVal {
     
     inline def setHref(value: SVGAnimatedString): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }

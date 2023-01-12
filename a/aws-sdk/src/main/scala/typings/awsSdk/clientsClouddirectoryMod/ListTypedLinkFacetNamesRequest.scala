@@ -28,7 +28,8 @@ object ListTypedLinkFacetNamesRequest {
     __obj.asInstanceOf[ListTypedLinkFacetNamesRequest]
   }
   
-  extension [Self <: ListTypedLinkFacetNamesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTypedLinkFacetNamesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

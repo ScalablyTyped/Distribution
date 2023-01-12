@@ -15,7 +15,8 @@ object SecurityPutUserResponse {
     __obj.asInstanceOf[SecurityPutUserResponse]
   }
   
-  extension [Self <: SecurityPutUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityPutUserResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: Boolean): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
   }

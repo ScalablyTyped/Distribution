@@ -138,7 +138,8 @@ object IJQuerySlimScrollOptions {
     __obj.asInstanceOf[IJQuerySlimScrollOptions]
   }
   
-  extension [Self <: IJQuerySlimScrollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IJQuerySlimScrollOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowPageScroll(value: Boolean): Self = StObject.set(x, "allowPageScroll", value.asInstanceOf[js.Any])
     

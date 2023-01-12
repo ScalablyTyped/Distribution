@@ -51,7 +51,8 @@ object libCoreDialogsDialogStateMod {
       __obj.asInstanceOf[DialogState]
     }
     
-    extension [Self <: DialogState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogState] (val x: Self) extends AnyVal {
       
       inline def setCallId(value: String): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object ListCustomClassesResponse {
     __obj.asInstanceOf[ListCustomClassesResponse]
   }
   
-  extension [Self <: ListCustomClassesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomClassesResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomClasses(value: js.Array[CustomClass]): Self = StObject.set(x, "customClasses", value.asInstanceOf[js.Any])
     

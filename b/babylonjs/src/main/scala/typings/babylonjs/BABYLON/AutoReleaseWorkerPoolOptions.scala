@@ -18,7 +18,8 @@ object AutoReleaseWorkerPoolOptions {
     __obj.asInstanceOf[AutoReleaseWorkerPoolOptions]
   }
   
-  extension [Self <: AutoReleaseWorkerPoolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoReleaseWorkerPoolOptions] (val x: Self) extends AnyVal {
     
     inline def setIdleTimeElapsedBeforeRelease(value: Double): Self = StObject.set(x, "idleTimeElapsedBeforeRelease", value.asInstanceOf[js.Any])
   }

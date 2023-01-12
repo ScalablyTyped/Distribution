@@ -19,7 +19,8 @@ object IDOMParser {
     __obj.asInstanceOf[IDOMParser]
   }
   
-  extension [Self <: IDOMParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOMParser] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIDOMParser_typekey(value: IDOMParser): Self = StObject.set(x, "MSHTML.IDOMParser_typekey", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object IUriToLinesMapping {
     __obj.asInstanceOf[IUriToLinesMapping]
   }
   
-  extension [Self <: IUriToLinesMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUriToLinesMapping] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SecurityGroupRuleUpdate {
     __obj.asInstanceOf[SecurityGroupRuleUpdate]
   }
   
-  extension [Self <: SecurityGroupRuleUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupRuleUpdate] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupRule(value: SecurityGroupRuleRequest): Self = StObject.set(x, "SecurityGroupRule", value.asInstanceOf[js.Any])
     

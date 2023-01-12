@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ClusterConfig]
     }
     
-    extension [Self <: ClusterConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterConfig] (val x: Self) extends AnyVal {
       
       inline def setClusterConfig(value: ClusterOptions): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       

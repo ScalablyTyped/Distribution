@@ -17,7 +17,8 @@ object UniqueOptions {
     __obj.asInstanceOf[UniqueOptions[T]]
   }
   
-  extension [Self <: UniqueOptions[?], T](x: Self & UniqueOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueOptions[?], T] (val x: Self & UniqueOptions[T]) extends AnyVal {
     
     inline def setComparator(value: (/* array */ js.Array[T], /* value */ T) => Boolean): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
     

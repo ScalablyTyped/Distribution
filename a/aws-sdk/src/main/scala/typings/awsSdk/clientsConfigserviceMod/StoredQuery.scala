@@ -38,7 +38,8 @@ object StoredQuery {
     __obj.asInstanceOf[StoredQuery]
   }
   
-  extension [Self <: StoredQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoredQuery] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: QueryDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

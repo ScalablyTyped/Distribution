@@ -24,7 +24,8 @@ object MinOpacity {
     __obj.asInstanceOf[MinOpacity]
   }
   
-  extension [Self <: MinOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinOpacity] (val x: Self) extends AnyVal {
     
     inline def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
     

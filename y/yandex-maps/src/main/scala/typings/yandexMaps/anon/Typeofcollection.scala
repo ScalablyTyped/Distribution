@@ -17,7 +17,8 @@ object Typeofcollection {
     __obj.asInstanceOf[Typeofcollection]
   }
   
-  extension [Self <: Typeofcollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofcollection] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Instantiable1[/* options */ js.UndefOr[js.Object], Item]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }

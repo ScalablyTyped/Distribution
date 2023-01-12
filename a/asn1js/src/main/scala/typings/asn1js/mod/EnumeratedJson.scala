@@ -47,7 +47,8 @@ object EnumeratedJson {
     __obj.asInstanceOf[EnumeratedJson]
   }
   
-  extension [Self <: EnumeratedJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumeratedJson] (val x: Self) extends AnyVal {
     
     inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
     

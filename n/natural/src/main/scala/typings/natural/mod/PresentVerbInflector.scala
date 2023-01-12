@@ -17,7 +17,8 @@ object PresentVerbInflector {
     __obj.asInstanceOf[PresentVerbInflector]
   }
   
-  extension [Self <: PresentVerbInflector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentVerbInflector] (val x: Self) extends AnyVal {
     
     inline def setPluralize(value: String => String): Self = StObject.set(x, "pluralize", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object DeleteLexiconInput {
     __obj.asInstanceOf[DeleteLexiconInput]
   }
   
-  extension [Self <: DeleteLexiconInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLexiconInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: LexiconName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

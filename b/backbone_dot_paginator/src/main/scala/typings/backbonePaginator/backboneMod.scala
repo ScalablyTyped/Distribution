@@ -112,7 +112,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableInitialOptions]
     }
     
-    extension [Self <: PageableInitialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableInitialOptions] (val x: Self) extends AnyVal {
       
       inline def setComparator(value: /* repeated */ Any => Double): Self = StObject.set(x, "comparator", js.Any.fromFunction1(value))
       
@@ -143,7 +144,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableParseLinksOptions]
     }
     
-    extension [Self <: PageableParseLinksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableParseLinksOptions] (val x: Self) extends AnyVal {
       
       inline def setXhr(value: JQueryXHR): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableQueryParams]
     }
     
-    extension [Self <: PageableQueryParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableQueryParams] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: String): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableSetSortingOptions[TModel]]
     }
     
-    extension [Self <: PageableSetSortingOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */](x: Self & PageableSetSortingOptions[TModel]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableSetSortingOptions[?], TModel /* <: Model[Any, ModelSetOptions, Any] */] (val x: Self & PageableSetSortingOptions[TModel]) extends AnyVal {
       
       inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableState]
     }
     
-    extension [Self <: PageableState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableState] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       
@@ -311,7 +316,8 @@ object backboneMod {
       __obj.asInstanceOf[PageableSwitchModeOptions]
     }
     
-    extension [Self <: PageableSwitchModeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageableSwitchModeOptions] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       

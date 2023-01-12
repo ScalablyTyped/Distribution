@@ -23,7 +23,8 @@ object Sumcount {
     __obj.asInstanceOf[Sumcount]
   }
   
-  extension [Self <: Sumcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sumcount] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

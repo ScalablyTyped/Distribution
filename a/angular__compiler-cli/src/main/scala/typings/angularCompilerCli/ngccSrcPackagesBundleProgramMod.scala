@@ -72,7 +72,8 @@ object ngccSrcPackagesBundleProgramMod {
       __obj.asInstanceOf[BundleProgram]
     }
     
-    extension [Self <: BundleProgram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleProgram] (val x: Self) extends AnyVal {
       
       inline def setFile(value: SourceFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

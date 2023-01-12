@@ -120,7 +120,8 @@ object distResourceMod {
       __obj.asInstanceOf[IResourceOptions]
     }
     
-    extension [Self <: IResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       

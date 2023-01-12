@@ -22,7 +22,8 @@ object UpdateOrganization {
     __obj.asInstanceOf[UpdateOrganization]
   }
   
-  extension [Self <: UpdateOrganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOrganization] (val x: Self) extends AnyVal {
     
     inline def setBranding(value: Colors): Self = StObject.set(x, "branding", value.asInstanceOf[js.Any])
     

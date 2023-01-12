@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object anon {
       __obj.asInstanceOf[CmdName]
     }
     
-    extension [Self <: CmdName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CmdName] (val x: Self) extends AnyVal {
       
       inline def setCmdName(value: String): Self = StObject.set(x, "cmdName", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object anon {
       __obj.asInstanceOf[ContentType]
     }
     
-    extension [Self <: ContentType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentType] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
@@ -207,7 +210,8 @@ object anon {
       __obj.asInstanceOf[ContentTypes]
     }
     
-    extension [Self <: ContentTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTypes] (val x: Self) extends AnyVal {
       
       inline def setContentTypes(value: NonTextNode): Self = StObject.set(x, "contentTypes", value.asInstanceOf[js.Any])
       
@@ -232,7 +236,8 @@ object anon {
       __obj.asInstanceOf[Ctx]
     }
     
-    extension [Self <: Ctx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ctx] (val x: Self) extends AnyVal {
       
       inline def setCtx(value: js.Object): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
@@ -257,7 +262,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
       
@@ -288,7 +294,8 @@ object anon {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -319,7 +326,8 @@ object anon {
       __obj.asInstanceOf[Htmls]
     }
     
-    extension [Self <: Htmls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Htmls] (val x: Self) extends AnyVal {
       
       inline def setHtmls(value: typings.docxTemplates.libTypesMod.Htmls): Self = StObject.set(x, "htmls", value.asInstanceOf[js.Any])
       
@@ -346,7 +354,8 @@ object anon {
       __obj.asInstanceOf[ModifiedSandbox]
     }
     
-    extension [Self <: ModifiedSandbox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModifiedSandbox] (val x: Self) extends AnyVal {
       
       inline def setModifiedSandbox(value: js.Object): Self = StObject.set(x, "modifiedSandbox", value.asInstanceOf[js.Any])
       
@@ -371,7 +380,8 @@ object anon {
       __obj.asInstanceOf[Wp]
     }
     
-    extension [Self <: Wp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wp] (val x: Self) extends AnyVal {
       
       inline def setWColonp(value: BufferStatus): Self = StObject.set(x, "w:p", value.asInstanceOf[js.Any])
       

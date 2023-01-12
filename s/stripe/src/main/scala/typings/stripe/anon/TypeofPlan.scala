@@ -15,7 +15,8 @@ object TypeofPlan {
     __obj.asInstanceOf[TypeofPlan]
   }
   
-  extension [Self <: TypeofPlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPlan] (val x: Self) extends AnyVal {
     
     inline def setTransformUsage(value: Any): Self = StObject.set(x, "TransformUsage", value.asInstanceOf[js.Any])
   }

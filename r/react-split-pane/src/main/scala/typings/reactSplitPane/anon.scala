@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[PartialSplitPaneState]
     }
     
-    extension [Self <: PartialSplitPaneState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSplitPaneState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

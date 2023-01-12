@@ -54,7 +54,8 @@ object AutoscalingPolicy {
     __obj.asInstanceOf[AutoscalingPolicy]
   }
   
-  extension [Self <: AutoscalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setCoolDownPeriodSec(value: Double): Self = StObject.set(x, "coolDownPeriodSec", value.asInstanceOf[js.Any])
     

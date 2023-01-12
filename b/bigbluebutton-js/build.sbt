@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bigbluebutton-js"
-version := "0.2-dt-20220312Z-c04d5b"
+version := "0.2-dt-20220312Z-019aea"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

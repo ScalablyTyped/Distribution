@@ -47,7 +47,8 @@ object ClientOptionsType {
     __obj.asInstanceOf[ClientOptionsType]
   }
   
-  extension [Self <: ClientOptionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientOptionsType] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: TwilsockChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

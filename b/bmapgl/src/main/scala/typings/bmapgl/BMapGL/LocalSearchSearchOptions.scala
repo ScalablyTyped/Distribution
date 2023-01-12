@@ -17,7 +17,8 @@ object LocalSearchSearchOptions {
     __obj.asInstanceOf[LocalSearchSearchOptions]
   }
   
-  extension [Self <: LocalSearchSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalSearchSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     

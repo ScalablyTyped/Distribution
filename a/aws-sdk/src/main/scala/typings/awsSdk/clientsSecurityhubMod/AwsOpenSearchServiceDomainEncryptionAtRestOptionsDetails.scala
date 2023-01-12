@@ -23,7 +23,8 @@ object AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object QueryItem {
     __obj.asInstanceOf[QueryItem]
   }
   
-  extension [Self <: QueryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryItem] (val x: Self) extends AnyVal {
     
     inline def setIsSynthetic(value: Boolean): Self = StObject.set(x, "isSynthetic", value.asInstanceOf[js.Any])
     

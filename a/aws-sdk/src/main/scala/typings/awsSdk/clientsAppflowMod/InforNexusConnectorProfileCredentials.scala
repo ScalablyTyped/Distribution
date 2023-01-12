@@ -33,7 +33,8 @@ object InforNexusConnectorProfileCredentials {
     __obj.asInstanceOf[InforNexusConnectorProfileCredentials]
   }
   
-  extension [Self <: InforNexusConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InforNexusConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessKeyId(value: AccessKeyId): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
     

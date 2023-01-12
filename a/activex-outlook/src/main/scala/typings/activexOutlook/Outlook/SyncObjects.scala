@@ -40,7 +40,8 @@ object SyncObjects {
     __obj.asInstanceOf[SyncObjects]
   }
   
-  extension [Self <: SyncObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncObjects] (val x: Self) extends AnyVal {
     
     inline def setAppFolders(value: SyncObject): Self = StObject.set(x, "AppFolders", value.asInstanceOf[js.Any])
     

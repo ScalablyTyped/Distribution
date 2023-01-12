@@ -44,7 +44,8 @@ object XDataSource {
     __obj.asInstanceOf[XDataSource]
   }
   
-  extension [Self <: XDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSource] (val x: Self) extends AnyVal {
     
     inline def setDataSequences(value: SafeArray[XLabeledDataSequence]): Self = StObject.set(x, "DataSequences", value.asInstanceOf[js.Any])
     

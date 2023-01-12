@@ -27,7 +27,8 @@ object BaseLayerViewGL2DScreenPoint {
     __obj.asInstanceOf[BaseLayerViewGL2DScreenPoint]
   }
   
-  extension [Self <: BaseLayerViewGL2DScreenPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayerViewGL2DScreenPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

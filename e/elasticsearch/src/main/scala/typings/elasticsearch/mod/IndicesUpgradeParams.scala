@@ -25,7 +25,8 @@ object IndicesUpgradeParams {
     __obj.asInstanceOf[IndicesUpgradeParams]
   }
   
-  extension [Self <: IndicesUpgradeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesUpgradeParams] (val x: Self) extends AnyVal {
     
     inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object GroupObjectsRequest {
     __obj.asInstanceOf[GroupObjectsRequest]
   }
   
-  extension [Self <: GroupObjectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupObjectsRequest] (val x: Self) extends AnyVal {
     
     inline def setChildrenObjectIds(value: js.Array[String]): Self = StObject.set(x, "childrenObjectIds", value.asInstanceOf[js.Any])
     

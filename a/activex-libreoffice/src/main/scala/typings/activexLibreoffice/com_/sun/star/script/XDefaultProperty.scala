@@ -55,7 +55,8 @@ object XDefaultProperty {
     __obj.asInstanceOf[XDefaultProperty]
   }
   
-  extension [Self <: XDefaultProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDefaultProperty] (val x: Self) extends AnyVal {
     
     inline def setDefaultPropertyName(value: String): Self = StObject.set(x, "DefaultPropertyName", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DebugSymbols {
     __obj.asInstanceOf[DebugSymbols]
   }
   
-  extension [Self <: DebugSymbols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSymbols] (val x: Self) extends AnyVal {
     
     inline def setExternalURL(value: String): Self = StObject.set(x, "externalURL", value.asInstanceOf[js.Any])
     

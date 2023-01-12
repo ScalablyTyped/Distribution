@@ -176,7 +176,8 @@ object sapMToggleButtonMod {
       __obj.asInstanceOf[ToggleButtonSettings]
     }
     
-    extension [Self <: ToggleButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setPressed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       

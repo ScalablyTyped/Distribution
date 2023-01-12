@@ -97,7 +97,8 @@ object SpaceProps {
     __obj.asInstanceOf[SpaceProps[ThemeType, TVal]]
   }
   
-  extension [Self <: SpaceProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (SpaceProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpaceProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (SpaceProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setM(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     

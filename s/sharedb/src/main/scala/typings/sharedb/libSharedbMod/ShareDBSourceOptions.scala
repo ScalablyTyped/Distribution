@@ -15,7 +15,8 @@ object ShareDBSourceOptions {
     __obj.asInstanceOf[ShareDBSourceOptions]
   }
   
-  extension [Self <: ShareDBSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareDBSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

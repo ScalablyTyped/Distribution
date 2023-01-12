@@ -29,7 +29,8 @@ object typesKeyUnavailableExceptionMod {
       __obj.asInstanceOf[KeyUnavailableException]
     }
     
-    extension [Self <: KeyUnavailableException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyUnavailableException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KeyUnavailableException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object typesKeyUnavailableExceptionMod {
       __obj.asInstanceOf[KeyUnavailableExceptionDetails]
     }
     
-    extension [Self <: KeyUnavailableExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyUnavailableExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

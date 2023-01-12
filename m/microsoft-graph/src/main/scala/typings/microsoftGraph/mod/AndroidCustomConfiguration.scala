@@ -18,7 +18,8 @@ object AndroidCustomConfiguration {
     __obj.asInstanceOf[AndroidCustomConfiguration]
   }
   
-  extension [Self <: AndroidCustomConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidCustomConfiguration] (val x: Self) extends AnyVal {
     
     inline def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object `0` {
     __obj.asInstanceOf[`0`[TData, TLabel]]
   }
   
-  extension [Self <: `0`[?, ?], TData, TLabel](x: Self & (`0`[TData, TLabel])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0`[?, ?], TData, TLabel] (val x: Self & (`0`[TData, TLabel])) extends AnyVal {
     
     inline def setRef(value: ForwardedRef[ChartJSOrUndefined[line, TData, TLabel]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     

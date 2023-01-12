@@ -69,7 +69,8 @@ object libMessageMod {
       __obj.asInstanceOf[ArgsProps]
     }
     
-    extension [Self <: ArgsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgsProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object libMessageMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       

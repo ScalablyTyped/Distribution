@@ -57,7 +57,8 @@ object CreateRoomOptions {
     __obj.asInstanceOf[CreateRoomOptions]
   }
   
-  extension [Self <: CreateRoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoomOptions] (val x: Self) extends AnyVal {
     
     inline def setInitial_state(value: js.Array[StateEvent]): Self = StObject.set(x, "initial_state", value.asInstanceOf[js.Any])
     

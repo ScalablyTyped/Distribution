@@ -48,7 +48,8 @@ object typesHelpersHelpersDotrtlMod {
       __obj.asInstanceOf[RTLAdapter]
     }
     
-    extension [Self <: RTLAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTLAdapter] (val x: Self) extends AnyVal {
       
       inline def setLeftForLtr(value: (Double, Double) => Double): Self = StObject.set(x, "leftForLtr", js.Any.fromFunction2(value))
       

@@ -18,7 +18,8 @@ object CoreDefinitionVersion {
     __obj.asInstanceOf[CoreDefinitionVersion]
   }
   
-  extension [Self <: CoreDefinitionVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreDefinitionVersion] (val x: Self) extends AnyVal {
     
     inline def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object DiagnosticOrder {
     __obj.asInstanceOf[DiagnosticOrder]
   }
   
-  extension [Self <: DiagnosticOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticOrder] (val x: Self) extends AnyVal {
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     

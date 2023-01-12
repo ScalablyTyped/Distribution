@@ -39,7 +39,8 @@ object ICreateTopicIfNotExistsOptions {
     __obj.asInstanceOf[ICreateTopicIfNotExistsOptions]
   }
   
-  extension [Self <: ICreateTopicIfNotExistsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateTopicIfNotExistsOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableDeadLetteringOnFilterEvaluationExceptions(value: Boolean): Self = StObject.set(x, "EnableDeadLetteringOnFilterEvaluationExceptions", value.asInstanceOf[js.Any])
     

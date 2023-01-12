@@ -25,7 +25,8 @@ object ClientHelper {
     __obj.asInstanceOf[ClientHelper]
   }
   
-  extension [Self <: ClientHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientHelper] (val x: Self) extends AnyVal {
     
     inline def setAuthentication(value: () => AbstractHandshake): Self = StObject.set(x, "authentication", js.Any.fromFunction0(value))
     

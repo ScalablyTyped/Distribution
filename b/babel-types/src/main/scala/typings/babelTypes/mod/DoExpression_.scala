@@ -23,7 +23,8 @@ object DoExpression_ {
     __obj.asInstanceOf[DoExpression_]
   }
   
-  extension [Self <: DoExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoExpression_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

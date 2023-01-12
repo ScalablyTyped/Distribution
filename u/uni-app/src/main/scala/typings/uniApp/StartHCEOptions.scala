@@ -33,7 +33,8 @@ object StartHCEOptions {
     __obj.asInstanceOf[StartHCEOptions]
   }
   
-  extension [Self <: StartHCEOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartHCEOptions] (val x: Self) extends AnyVal {
     
     inline def setAid_list(value: js.Array[Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
     

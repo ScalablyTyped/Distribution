@@ -61,7 +61,8 @@ object KlassOptions {
     __obj.asInstanceOf[KlassOptions]
   }
   
-  extension [Self <: KlassOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KlassOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

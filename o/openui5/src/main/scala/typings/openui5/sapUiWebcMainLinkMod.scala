@@ -686,7 +686,8 @@ object sapUiWebcMainLinkMod {
       __obj.asInstanceOf[LinkSettings]
     }
     
-    extension [Self <: LinkSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityAttributes(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "accessibilityAttributes", value.asInstanceOf[js.Any])
       

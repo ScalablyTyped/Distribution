@@ -25,7 +25,8 @@ object InsurancePlanPlanSpecificCost {
     __obj.asInstanceOf[InsurancePlanPlanSpecificCost]
   }
   
-  extension [Self <: InsurancePlanPlanSpecificCost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsurancePlanPlanSpecificCost] (val x: Self) extends AnyVal {
     
     inline def setBenefit(value: js.Array[InsurancePlanPlanSpecificCostBenefit]): Self = StObject.set(x, "benefit", value.asInstanceOf[js.Any])
     

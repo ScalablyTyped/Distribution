@@ -76,7 +76,8 @@ object TextStreamReader {
     __obj.asInstanceOf[TextStreamReader]
   }
   
-  extension [Self <: TextStreamReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStreamReader] (val x: Self) extends AnyVal {
     
     inline def setAtEndOfLine(value: scala.Boolean): Self = StObject.set(x, "AtEndOfLine", value.asInstanceOf[js.Any])
     

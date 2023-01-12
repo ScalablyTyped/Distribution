@@ -20,7 +20,8 @@ object AppMemoryUsageLimitChangingEventArgs {
     __obj.asInstanceOf[AppMemoryUsageLimitChangingEventArgs]
   }
   
-  extension [Self <: AppMemoryUsageLimitChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMemoryUsageLimitChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNewLimit(value: Double): Self = StObject.set(x, "newLimit", value.asInstanceOf[js.Any])
     

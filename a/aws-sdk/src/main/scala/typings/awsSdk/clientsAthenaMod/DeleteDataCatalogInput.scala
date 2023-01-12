@@ -18,7 +18,8 @@ object DeleteDataCatalogInput {
     __obj.asInstanceOf[DeleteDataCatalogInput]
   }
   
-  extension [Self <: DeleteDataCatalogInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDataCatalogInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: CatalogNameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

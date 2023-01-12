@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[RemoteConfig]
     }
     
-    extension [Self <: RemoteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfig] (val x: Self) extends AnyVal {
       
       inline def setMinimumLevelAccepted(value: SeqLogLevel): Self = StObject.set(x, "MinimumLevelAccepted", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[SeqEvent]
     }
     
-    extension [Self <: SeqEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqEvent] (val x: Self) extends AnyVal {
       
       inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[SeqLoggerConfig]
     }
     
-    extension [Self <: SeqLoggerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqLoggerConfig] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

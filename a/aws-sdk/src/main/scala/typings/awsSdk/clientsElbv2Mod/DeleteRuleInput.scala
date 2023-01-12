@@ -18,7 +18,8 @@ object DeleteRuleInput {
     __obj.asInstanceOf[DeleteRuleInput]
   }
   
-  extension [Self <: DeleteRuleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRuleInput] (val x: Self) extends AnyVal {
     
     inline def setRuleArn(value: RuleArn): Self = StObject.set(x, "RuleArn", value.asInstanceOf[js.Any])
   }

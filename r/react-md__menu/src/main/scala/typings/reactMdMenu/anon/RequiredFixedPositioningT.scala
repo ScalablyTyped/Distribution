@@ -29,7 +29,8 @@ object RequiredFixedPositioningT {
     __obj.asInstanceOf[RequiredFixedPositioningT]
   }
   
-  extension [Self <: RequiredFixedPositioningT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredFixedPositioningT] (val x: Self) extends AnyVal {
     
     inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
     

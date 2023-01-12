@@ -51,7 +51,8 @@ object WorkbookRangeFormat {
     __obj.asInstanceOf[WorkbookRangeFormat]
   }
   
-  extension [Self <: WorkbookRangeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookRangeFormat] (val x: Self) extends AnyVal {
     
     inline def setBorders(value: NullableOption[js.Array[WorkbookRangeBorder]]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     

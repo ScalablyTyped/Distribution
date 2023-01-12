@@ -53,7 +53,8 @@ object DelegatedAdministrator {
     __obj.asInstanceOf[DelegatedAdministrator]
   }
   
-  extension [Self <: DelegatedAdministrator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegatedAdministrator] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AccountArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

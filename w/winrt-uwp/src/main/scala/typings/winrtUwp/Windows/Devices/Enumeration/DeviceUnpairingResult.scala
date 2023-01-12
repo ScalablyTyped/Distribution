@@ -17,7 +17,8 @@ object DeviceUnpairingResult {
     __obj.asInstanceOf[DeviceUnpairingResult]
   }
   
-  extension [Self <: DeviceUnpairingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceUnpairingResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: DeviceUnpairingResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

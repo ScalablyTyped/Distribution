@@ -43,7 +43,8 @@ object ExcludedPlacement {
     __obj.asInstanceOf[ExcludedPlacement]
   }
   
-  extension [Self <: ExcludedPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedPlacement] (val x: Self) extends AnyVal {
     
     inline def setGetAdGroup(value: () => AdGroup): Self = StObject.set(x, "getAdGroup", js.Any.fromFunction0(value))
     

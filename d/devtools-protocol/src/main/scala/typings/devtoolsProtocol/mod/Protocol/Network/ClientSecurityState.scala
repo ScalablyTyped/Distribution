@@ -23,7 +23,8 @@ object ClientSecurityState {
     __obj.asInstanceOf[ClientSecurityState]
   }
   
-  extension [Self <: ClientSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSecurityState] (val x: Self) extends AnyVal {
     
     inline def setInitiatorIPAddressSpace(value: IPAddressSpace): Self = StObject.set(x, "initiatorIPAddressSpace", value.asInstanceOf[js.Any])
     

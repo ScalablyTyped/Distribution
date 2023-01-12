@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[CarouselWithChildren]
     }
     
-    extension [Self <: CarouselWithChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselWithChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[CarouselWithImages]
     }
     
-    extension [Self <: CarouselWithImages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselWithImages] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -239,7 +239,8 @@ object GeometryDom {
       __obj.asInstanceOf[DOMPointReadOnly]
     }
     
-    extension [Self <: DOMPointReadOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMPointReadOnly] (val x: Self) extends AnyVal {
       
       inline def setMatrixTransform(value: DOMMatrixReadOnly => DOMPoint): Self = StObject.set(x, "matrixTransform", js.Any.fromFunction1(value))
       
@@ -287,7 +288,8 @@ object GeometryDom {
       __obj.asInstanceOf[DOMQuad]
     }
     
-    extension [Self <: DOMQuad](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMQuad] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: DOMRectReadOnly): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -342,7 +344,8 @@ object GeometryDom {
       __obj.asInstanceOf[typings.geometryDom.GeometryDom.DOMRectList]
     }
     
-    extension [Self <: typings.geometryDom.GeometryDom.DOMRectList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.geometryDom.GeometryDom.DOMRectList] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => DOMRect): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
@@ -408,7 +411,8 @@ object GeometryDom {
       __obj.asInstanceOf[DOMRectReadOnly]
     }
     
-    extension [Self <: DOMRectReadOnly](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMRectReadOnly] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

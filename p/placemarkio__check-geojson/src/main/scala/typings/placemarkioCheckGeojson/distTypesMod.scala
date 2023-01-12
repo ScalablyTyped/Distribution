@@ -55,7 +55,8 @@ object distTypesMod {
       __obj.asInstanceOf[Ctx]
     }
     
-    extension [Self <: Ctx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ctx] (val x: Self) extends AnyVal {
       
       inline def setIssues(value: js.Array[HintIssue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distTypesMod {
       __obj.asInstanceOf[HintIssue]
     }
     
-    extension [Self <: HintIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HintIssue] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

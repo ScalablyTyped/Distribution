@@ -27,7 +27,8 @@ object UploadProgress {
     __obj.asInstanceOf[UploadProgress]
   }
   
-  extension [Self <: UploadProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesPerSec(value: Double): Self = StObject.set(x, "bytesPerSec", value.asInstanceOf[js.Any])
     

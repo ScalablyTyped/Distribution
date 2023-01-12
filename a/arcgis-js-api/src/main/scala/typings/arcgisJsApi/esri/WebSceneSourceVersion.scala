@@ -27,7 +27,8 @@ object WebSceneSourceVersion {
     __obj.asInstanceOf[WebSceneSourceVersion]
   }
   
-  extension [Self <: WebSceneSourceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebSceneSourceVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

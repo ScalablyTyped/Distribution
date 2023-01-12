@@ -34,7 +34,8 @@ object BootstrapTableRef {
     __obj.asInstanceOf[BootstrapTableRef[T]]
   }
   
-  extension [Self <: BootstrapTableRef[?], T /* <: js.Object */](x: Self & BootstrapTableRef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapTableRef[?], T /* <: js.Object */] (val x: Self & BootstrapTableRef[T]) extends AnyVal {
     
     inline def setCellEditContext(value: StartEditing): Self = StObject.set(x, "cellEditContext", value.asInstanceOf[js.Any])
     

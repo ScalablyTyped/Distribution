@@ -54,7 +54,8 @@ object FilterPivotHierarchyData {
     __obj.asInstanceOf[FilterPivotHierarchyData]
   }
   
-  extension [Self <: FilterPivotHierarchyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterPivotHierarchyData] (val x: Self) extends AnyVal {
     
     inline def setEnableMultipleFilterItems(value: Boolean): Self = StObject.set(x, "enableMultipleFilterItems", value.asInstanceOf[js.Any])
     

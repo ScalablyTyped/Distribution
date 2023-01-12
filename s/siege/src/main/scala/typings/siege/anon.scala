@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[C2mem]
     }
     
-    extension [Self <: C2mem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: C2mem] (val x: Self) extends AnyVal {
       
       inline def setC2mem(value: String): Self = StObject.set(x, "c2mem", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: typings.siege.mod.Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

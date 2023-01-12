@@ -65,7 +65,8 @@ object GoogleCloudVisionV1p2beta1FaceAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1FaceAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p2beta1FaceAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p2beta1FaceAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAngerLikelihood(value: String): Self = StObject.set(x, "angerLikelihood", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UnindexedFace {
     __obj.asInstanceOf[UnindexedFace]
   }
   
-  extension [Self <: UnindexedFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnindexedFace] (val x: Self) extends AnyVal {
     
     inline def setFaceDetail(value: FaceDetail): Self = StObject.set(x, "FaceDetail", value.asInstanceOf[js.Any])
     

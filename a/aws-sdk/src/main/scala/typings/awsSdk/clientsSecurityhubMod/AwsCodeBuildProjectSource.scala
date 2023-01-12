@@ -33,7 +33,8 @@ object AwsCodeBuildProjectSource {
     __obj.asInstanceOf[AwsCodeBuildProjectSource]
   }
   
-  extension [Self <: AwsCodeBuildProjectSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectSource] (val x: Self) extends AnyVal {
     
     inline def setGitCloneDepth(value: Integer): Self = StObject.set(x, "GitCloneDepth", value.asInstanceOf[js.Any])
     

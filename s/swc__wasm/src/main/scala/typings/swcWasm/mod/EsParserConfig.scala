@@ -98,7 +98,8 @@ object EsParserConfig {
     __obj.asInstanceOf[EsParserConfig]
   }
   
-  extension [Self <: EsParserConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EsParserConfig] (val x: Self) extends AnyVal {
     
     inline def setClassPrivateProperty(value: Boolean): Self = StObject.set(x, "classPrivateProperty", value.asInstanceOf[js.Any])
     

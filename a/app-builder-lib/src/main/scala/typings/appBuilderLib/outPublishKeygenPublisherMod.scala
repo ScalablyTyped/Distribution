@@ -67,7 +67,8 @@ object outPublishKeygenPublisherMod {
       __obj.asInstanceOf[KeygenArtifact]
     }
     
-    extension [Self <: KeygenArtifact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeygenArtifact] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Arch): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object outPublishKeygenPublisherMod {
       __obj.asInstanceOf[KeygenError]
     }
     
-    extension [Self <: KeygenError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeygenError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object outPublishKeygenPublisherMod {
       __obj.asInstanceOf[KeygenRelease]
     }
     
-    extension [Self <: KeygenRelease](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeygenRelease] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Channel): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

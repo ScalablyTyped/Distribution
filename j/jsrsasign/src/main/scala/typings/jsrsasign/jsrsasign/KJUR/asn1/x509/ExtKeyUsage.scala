@@ -49,7 +49,8 @@ object ExtKeyUsage {
     __obj.asInstanceOf[ExtKeyUsage]
   }
   
-  extension [Self <: ExtKeyUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtKeyUsage] (val x: Self) extends AnyVal {
     
     inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     

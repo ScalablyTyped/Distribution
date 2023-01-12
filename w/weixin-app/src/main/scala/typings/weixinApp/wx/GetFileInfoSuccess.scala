@@ -22,7 +22,8 @@ object GetFileInfoSuccess {
     __obj.asInstanceOf[GetFileInfoSuccess]
   }
   
-  extension [Self <: GetFileInfoSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileInfoSuccess] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

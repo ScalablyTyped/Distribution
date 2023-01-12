@@ -25,7 +25,8 @@ object SfTabs extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object SfTabs extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setOpenChild(value: () => Unit): Self = StObject.set(x, "openChild", js.Any.fromFunction0(value))
       
@@ -71,7 +73,8 @@ object SfTabs extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOpenTab(value: Double): Self = StObject.set(x, "openTab", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsExitFullScreenMod extends Shortcut {
       __obj.asInstanceOf[ExitFullScreenProps]
     }
     
-    extension [Self <: ExitFullScreenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExitFullScreenProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

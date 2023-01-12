@@ -19,7 +19,8 @@ object MultiSelectEvent {
     __obj.asInstanceOf[MultiSelectEvent]
   }
   
-  extension [Self <: MultiSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

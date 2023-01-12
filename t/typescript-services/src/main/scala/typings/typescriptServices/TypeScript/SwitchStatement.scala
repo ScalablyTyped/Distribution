@@ -47,7 +47,8 @@ object SwitchStatement {
     __obj.asInstanceOf[SwitchStatement]
   }
   
-  extension [Self <: SwitchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchStatement] (val x: Self) extends AnyVal {
     
     inline def setCloseParenToken(value: ASTSpan): Self = StObject.set(x, "closeParenToken", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseResult]
     }
     
-    extension [Self <: BaseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
       
       inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ErrorVar]
     }
     
-    extension [Self <: ErrorVar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorVar] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[JsonSchema]
     }
     
-    extension [Self <: JsonSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonSchema] (val x: Self) extends AnyVal {
       
       inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MultiResult]
     }
     
-    extension [Self <: MultiResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -204,7 +208,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SingleResult]
     }
     
-    extension [Self <: SingleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -303,7 +308,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

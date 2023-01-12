@@ -17,7 +17,8 @@ object TransformLatest {
     __obj.asInstanceOf[TransformLatest]
   }
   
-  extension [Self <: TransformLatest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformLatest] (val x: Self) extends AnyVal {
     
     inline def setSort(value: Field): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     

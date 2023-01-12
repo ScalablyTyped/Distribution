@@ -56,7 +56,8 @@ object typesCompleteVaultLockInputMod {
       __obj.asInstanceOf[CompleteVaultLockInput]
     }
     
-    extension [Self <: CompleteVaultLockInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteVaultLockInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

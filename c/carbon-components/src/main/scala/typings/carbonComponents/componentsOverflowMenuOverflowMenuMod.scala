@@ -81,7 +81,8 @@ object componentsOverflowMenuOverflowMenuMod {
       __obj.asInstanceOf[OverflowMenu]
     }
     
-    extension [Self <: OverflowMenu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowMenu] (val x: Self) extends AnyVal {
       
       inline def setChangeState(value: (String, js.Object, js.Function0[Unit]) => Unit): Self = StObject.set(x, "changeState", js.Any.fromFunction3(value))
       
@@ -150,7 +151,8 @@ object componentsOverflowMenuOverflowMenuMod {
       __obj.asInstanceOf[OverflowMenuOptions]
     }
     
-    extension [Self <: OverflowMenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowMenuOptions] (val x: Self) extends AnyVal {
       
       inline def setClassMenuFlip(value: String): Self = StObject.set(x, "classMenuFlip", value.asInstanceOf[js.Any])
       

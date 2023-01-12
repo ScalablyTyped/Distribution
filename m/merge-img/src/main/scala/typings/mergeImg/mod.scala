@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ImageDescriptor]
     }
     
-    extension [Self <: ImageDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDescriptor] (val x: Self) extends AnyVal {
       
       inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[MarginOptions]
     }
     
-    extension [Self <: MarginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarginOptions] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | center | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

@@ -161,7 +161,8 @@ object distSrcDecisionEngineReqQueueMod {
       __obj.asInstanceOf[PeerTasks]
     }
     
-    extension [Self <: PeerTasks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerTasks] (val x: Self) extends AnyVal {
       
       inline def setIsIdle(value: () => Boolean): Self = StObject.set(x, "isIdle", js.Any.fromFunction0(value))
       
@@ -202,7 +203,8 @@ object distSrcDecisionEngineReqQueueMod {
       __obj.asInstanceOf[PendingTask]
     }
     
-    extension [Self <: PendingTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PendingTask] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -282,7 +284,8 @@ object distSrcDecisionEngineReqQueueMod {
       __obj.asInstanceOf[PopTaskResult]
     }
     
-    extension [Self <: PopTaskResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopTaskResult] (val x: Self) extends AnyVal {
       
       inline def setPeerId(value: typings.libp2pInterfacePeerId.mod.PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       

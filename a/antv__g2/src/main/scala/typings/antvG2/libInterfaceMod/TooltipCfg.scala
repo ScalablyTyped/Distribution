@@ -136,7 +136,8 @@ object TooltipCfg {
     __obj.asInstanceOf[TooltipCfg]
   }
   
-  extension [Self <: TooltipCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipCfg] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

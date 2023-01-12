@@ -20,7 +20,8 @@ object RawJSONOptions {
     __obj.asInstanceOf[RawJSONOptions]
   }
   
-  extension [Self <: RawJSONOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawJSONOptions] (val x: Self) extends AnyVal {
     
     inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     

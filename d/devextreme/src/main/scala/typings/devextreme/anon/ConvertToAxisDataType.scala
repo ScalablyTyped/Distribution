@@ -28,7 +28,8 @@ object ConvertToAxisDataType {
     __obj.asInstanceOf[ConvertToAxisDataType]
   }
   
-  extension [Self <: ConvertToAxisDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertToAxisDataType] (val x: Self) extends AnyVal {
     
     inline def setCheckTypeForAllData(value: Boolean): Self = StObject.set(x, "checkTypeForAllData", value.asInstanceOf[js.Any])
     

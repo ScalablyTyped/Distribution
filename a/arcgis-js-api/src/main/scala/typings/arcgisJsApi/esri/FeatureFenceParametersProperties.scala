@@ -40,7 +40,8 @@ object FeatureFenceParametersProperties {
     __obj.asInstanceOf[FeatureFenceParametersProperties]
   }
   
-  extension [Self <: FeatureFenceParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFenceParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setBufferDistance(value: Double): Self = StObject.set(x, "bufferDistance", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetDistributionLatestCacheResetResult {
     __obj.asInstanceOf[GetDistributionLatestCacheResetResult]
   }
   
-  extension [Self <: GetDistributionLatestCacheResetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionLatestCacheResetResult] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

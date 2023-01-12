@@ -39,7 +39,8 @@ object PinHeadProps {
     __obj.asInstanceOf[PinHeadProps]
   }
   
-  extension [Self <: PinHeadProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinHeadProps] (val x: Self) extends AnyVal {
     
     inline def setAnchorType(value: FloatingMarkerAnchorType): Self = StObject.set(x, "anchorType", value.asInstanceOf[js.Any])
     

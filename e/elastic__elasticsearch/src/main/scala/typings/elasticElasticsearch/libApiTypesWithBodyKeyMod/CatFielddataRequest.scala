@@ -19,7 +19,8 @@ object CatFielddataRequest {
     __obj.asInstanceOf[CatFielddataRequest]
   }
   
-  extension [Self <: CatFielddataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatFielddataRequest] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Bytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

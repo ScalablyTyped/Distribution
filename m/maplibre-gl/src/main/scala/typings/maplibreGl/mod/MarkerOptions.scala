@@ -34,7 +34,8 @@ object MarkerOptions {
     __obj.asInstanceOf[MarkerOptions]
   }
   
-  extension [Self <: MarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: PositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

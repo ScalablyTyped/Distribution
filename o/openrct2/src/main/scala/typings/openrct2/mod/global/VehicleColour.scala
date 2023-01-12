@@ -19,7 +19,8 @@ object VehicleColour {
     __obj.asInstanceOf[VehicleColour]
   }
   
-  extension [Self <: VehicleColour](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VehicleColour] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Double): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

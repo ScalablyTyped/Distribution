@@ -23,7 +23,8 @@ object ListVpcEndpointAccessRequest {
     __obj.asInstanceOf[ListVpcEndpointAccessRequest]
   }
   
-  extension [Self <: ListVpcEndpointAccessRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVpcEndpointAccessRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

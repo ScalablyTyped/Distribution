@@ -299,7 +299,8 @@ object distBackendWebglMod {
       __obj.asInstanceOf[CPUTimerQuery]
     }
     
-    extension [Self <: CPUTimerQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CPUTimerQuery] (val x: Self) extends AnyVal {
       
       inline def setEndMs(value: Double): Self = StObject.set(x, "endMs", value.asInstanceOf[js.Any])
       
@@ -322,7 +323,8 @@ object distBackendWebglMod {
       __obj.asInstanceOf[KernelInfo]
     }
     
-    extension [Self <: KernelInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KernelInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -361,7 +363,8 @@ object distBackendWebglMod {
       __obj.asInstanceOf[WebGLMemoryInfo]
     }
     
-    extension [Self <: WebGLMemoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLMemoryInfo] (val x: Self) extends AnyVal {
       
       inline def setNumBytesInGPU(value: Double): Self = StObject.set(x, "numBytesInGPU", value.asInstanceOf[js.Any])
       
@@ -388,7 +391,8 @@ object distBackendWebglMod {
       __obj.asInstanceOf[WebGLTimingInfo]
     }
     
-    extension [Self <: WebGLTimingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLTimingInfo] (val x: Self) extends AnyVal {
       
       inline def setDownloadWaitMs(value: Double): Self = StObject.set(x, "downloadWaitMs", value.asInstanceOf[js.Any])
       

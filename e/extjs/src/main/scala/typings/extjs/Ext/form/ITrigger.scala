@@ -69,7 +69,8 @@ object ITrigger {
     __obj.asInstanceOf[ITrigger]
   }
   
-  extension [Self <: ITrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITrigger] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

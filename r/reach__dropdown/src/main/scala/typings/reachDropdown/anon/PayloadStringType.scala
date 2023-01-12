@@ -22,7 +22,8 @@ object PayloadStringType {
     __obj.asInstanceOf[PayloadStringType]
   }
   
-  extension [Self <: PayloadStringType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayloadStringType] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

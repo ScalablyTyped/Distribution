@@ -39,7 +39,8 @@ object BuildBazelRemoteExecutionV2ExecuteResponse {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecuteResponse]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2ExecuteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecuteResponse] (val x: Self) extends AnyVal {
     
     inline def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
     

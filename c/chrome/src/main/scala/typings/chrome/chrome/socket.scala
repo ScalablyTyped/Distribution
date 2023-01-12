@@ -22,7 +22,8 @@ object socket {
       __obj.asInstanceOf[AcceptInfo]
     }
     
-    extension [Self <: AcceptInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptInfo] (val x: Self) extends AnyVal {
       
       inline def setResultCode(value: Double): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object socket {
       __obj.asInstanceOf[CreateInfo]
     }
     
-    extension [Self <: CreateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateInfo] (val x: Self) extends AnyVal {
       
       inline def setSocketId(value: Double): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
@@ -62,7 +64,8 @@ object socket {
       __obj.asInstanceOf[NetworkInterface]
     }
     
-    extension [Self <: NetworkInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object socket {
       __obj.asInstanceOf[ReadInfo]
     }
     
-    extension [Self <: ReadInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -108,7 +112,8 @@ object socket {
       __obj.asInstanceOf[RecvFromInfo]
     }
     
-    extension [Self <: RecvFromInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecvFromInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -141,7 +146,8 @@ object socket {
       __obj.asInstanceOf[SocketInfo]
     }
     
-    extension [Self <: SocketInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object socket {
       __obj.asInstanceOf[WriteInfo]
     }
     
-    extension [Self <: WriteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WriteInfo] (val x: Self) extends AnyVal {
       
       inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     }

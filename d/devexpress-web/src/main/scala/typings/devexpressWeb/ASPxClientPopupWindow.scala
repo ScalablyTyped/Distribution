@@ -113,7 +113,8 @@ object ASPxClientPopupWindow {
     __obj.asInstanceOf[ASPxClientPopupWindow]
   }
   
-  extension [Self <: ASPxClientPopupWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientPopupWindow] (val x: Self) extends AnyVal {
     
     inline def setGetFooterImageUrl(value: () => String): Self = StObject.set(x, "GetFooterImageUrl", js.Any.fromFunction0(value))
     

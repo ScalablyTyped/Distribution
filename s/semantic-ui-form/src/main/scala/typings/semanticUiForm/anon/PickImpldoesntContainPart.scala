@@ -69,7 +69,8 @@ object PickImpldoesntContainPart {
     __obj.asInstanceOf[PickImpldoesntContainPart]
   }
   
-  extension [Self <: PickImpldoesntContainPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldoesntContainPart] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

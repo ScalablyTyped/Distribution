@@ -38,7 +38,8 @@ object AccountSettings {
     __obj.asInstanceOf[AccountSettings]
   }
   
-  extension [Self <: AccountSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountSettings] (val x: Self) extends AnyVal {
     
     inline def setAccountName(value: String): Self = StObject.set(x, "AccountName", value.asInstanceOf[js.Any])
     

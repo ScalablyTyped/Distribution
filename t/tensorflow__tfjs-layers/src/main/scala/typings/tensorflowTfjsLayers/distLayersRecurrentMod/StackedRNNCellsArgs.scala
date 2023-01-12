@@ -21,7 +21,8 @@ object StackedRNNCellsArgs {
     __obj.asInstanceOf[StackedRNNCellsArgs]
   }
   
-  extension [Self <: StackedRNNCellsArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackedRNNCellsArgs] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[RNNCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

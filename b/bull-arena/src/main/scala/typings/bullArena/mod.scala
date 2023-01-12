@@ -95,7 +95,8 @@ object mod {
         __obj.asInstanceOf[MiddlewareListenOptions]
       }
       
-      extension [Self <: MiddlewareListenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MiddlewareListenOptions] (val x: Self) extends AnyVal {
         
         inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
         
@@ -136,7 +137,8 @@ object mod {
         __obj.asInstanceOf[MiddlewareOptions]
       }
       
-      extension [Self <: MiddlewareOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
         
         inline def setBee(value: QueueConstructor): Self = StObject.set(x, "Bee", value.asInstanceOf[js.Any])
         
@@ -175,7 +177,8 @@ object mod {
         __obj.asInstanceOf[PortHostConnectionOptions]
       }
       
-      extension [Self <: PortHostConnectionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PortHostConnectionOptions] (val x: Self) extends AnyVal {
         
         inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
         
@@ -208,7 +211,8 @@ object mod {
         __obj.asInstanceOf[Queue]
       }
       
-      extension [Self <: Queue](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Queue] (val x: Self) extends AnyVal {
         
         inline def setGetJob(value: String => js.Promise[Any]): Self = StObject.set(x, "getJob", js.Any.fromFunction1(value))
       }
@@ -237,7 +241,8 @@ object mod {
         __obj.asInstanceOf[QueueOptions]
       }
       
-      extension [Self <: QueueOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
         
         inline def setHostId(value: String): Self = StObject.set(x, "hostId", value.asInstanceOf[js.Any])
         
@@ -270,7 +275,8 @@ object mod {
         __obj.asInstanceOf[RedisClientConnectionOptions]
       }
       
-      extension [Self <: RedisClientConnectionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RedisClientConnectionOptions] (val x: Self) extends AnyVal {
         
         inline def setRedis(
           value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClientOpts */ Any) | Redis
@@ -291,7 +297,8 @@ object mod {
         __obj.asInstanceOf[RedisUrlConnectionOptions]
       }
       
-      extension [Self <: RedisUrlConnectionOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RedisUrlConnectionOptions] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }

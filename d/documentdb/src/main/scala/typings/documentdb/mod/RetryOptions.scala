@@ -22,7 +22,8 @@ object RetryOptions {
     __obj.asInstanceOf[RetryOptions]
   }
   
-  extension [Self <: RetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
     
     inline def setFixedRetryIntervalInMilliseconds(value: Double): Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", value.asInstanceOf[js.Any])
     

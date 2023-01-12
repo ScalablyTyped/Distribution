@@ -415,7 +415,8 @@ object mod {
       __obj.asInstanceOf[Compat[T]]
     }
     
-    extension [Self <: Compat[?], T](x: Self & Compat[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compat[?], T] (val x: Self & Compat[T]) extends AnyVal {
       
       inline def set_delegate(value: T): Self = StObject.set(x, "_delegate", value.asInstanceOf[js.Any])
     }
@@ -440,7 +441,8 @@ object mod {
       __obj.asInstanceOf[DecodedToken]
     }
     
-    extension [Self <: DecodedToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedToken] (val x: Self) extends AnyVal {
       
       inline def setClaims(value: Claims): Self = StObject.set(x, "claims", value.asInstanceOf[js.Any])
       
@@ -517,7 +519,8 @@ object mod {
       __obj.asInstanceOf[FirebaseDefaults]
     }
     
-    extension [Self <: FirebaseDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseDefaults] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, String]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -587,7 +590,8 @@ object mod {
       __obj.asInstanceOf[FirebaseIdToken]
     }
     
-    extension [Self <: FirebaseIdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseIdToken] (val x: Self) extends AnyVal {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       
@@ -693,7 +697,8 @@ object mod {
       __obj.asInstanceOf[Observable[T]]
     }
     
-    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
       
       inline def setSubscribe(value: Subscribe[T]): Self = StObject.set(x, "subscribe", value.asInstanceOf[js.Any])
     }
@@ -720,7 +725,8 @@ object mod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -746,7 +752,8 @@ object mod {
       __obj.asInstanceOf[PartialObserver[T]]
     }
     
-    extension [Self <: PartialObserver[?], T](x: Self & PartialObserver[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialObserver[?], T] (val x: Self & PartialObserver[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       

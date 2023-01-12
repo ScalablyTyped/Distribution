@@ -20,7 +20,8 @@ object IconOptions {
     __obj.asInstanceOf[IconOptions]
   }
   
-  extension [Self <: IconOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
     
     inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     

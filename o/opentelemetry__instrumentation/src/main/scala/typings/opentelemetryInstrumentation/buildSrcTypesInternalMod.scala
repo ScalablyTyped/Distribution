@@ -27,7 +27,8 @@ object buildSrcTypesInternalMod {
       __obj.asInstanceOf[AutoLoaderOptions]
     }
     
-    extension [Self <: AutoLoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setInstrumentations(value: js.Array[InstrumentationOption]): Self = StObject.set(x, "instrumentations", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object buildSrcTypesInternalMod {
       __obj.asInstanceOf[AutoLoaderResult]
     }
     
-    extension [Self <: AutoLoaderResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLoaderResult] (val x: Self) extends AnyVal {
       
       inline def setInstrumentations(value: js.Array[Instrumentation]): Self = StObject.set(x, "instrumentations", value.asInstanceOf[js.Any])
       

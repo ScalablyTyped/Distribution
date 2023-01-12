@@ -48,7 +48,8 @@ object ListHostedZonesByNameResponse {
     __obj.asInstanceOf[ListHostedZonesByNameResponse]
   }
   
-  extension [Self <: ListHostedZonesByNameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHostedZonesByNameResponse] (val x: Self) extends AnyVal {
     
     inline def setDNSName(value: DNSName): Self = StObject.set(x, "DNSName", value.asInstanceOf[js.Any])
     

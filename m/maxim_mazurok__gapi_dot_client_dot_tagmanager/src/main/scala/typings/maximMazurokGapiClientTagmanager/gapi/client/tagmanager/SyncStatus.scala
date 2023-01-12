@@ -19,7 +19,8 @@ object SyncStatus {
     __obj.asInstanceOf[SyncStatus]
   }
   
-  extension [Self <: SyncStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncStatus] (val x: Self) extends AnyVal {
     
     inline def setMergeConflict(value: Boolean): Self = StObject.set(x, "mergeConflict", value.asInstanceOf[js.Any])
     

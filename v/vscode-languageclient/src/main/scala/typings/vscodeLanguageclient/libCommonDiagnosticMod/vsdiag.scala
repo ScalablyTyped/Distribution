@@ -96,7 +96,8 @@ object vsdiag {
       __obj.asInstanceOf[FullDocumentDiagnosticReport]
     }
     
-    extension [Self <: FullDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Diagnostic]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object vsdiag {
       __obj.asInstanceOf[PreviousResultId]
     }
     
-    extension [Self <: PreviousResultId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousResultId] (val x: Self) extends AnyVal {
       
       inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
@@ -147,7 +149,8 @@ object vsdiag {
       __obj.asInstanceOf[RelatedFullDocumentDiagnosticReport]
     }
     
-    extension [Self <: RelatedFullDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelatedFullDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setRelatedDocuments(value: StringDictionary[FullDocumentDiagnosticReport | UnchangedDocumentDiagnosticReport]): Self = StObject.set(x, "relatedDocuments", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object vsdiag {
       __obj.asInstanceOf[RelatedUnchangedDocumentDiagnosticReport]
     }
     
-    extension [Self <: RelatedUnchangedDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelatedUnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setRelatedDocuments(value: StringDictionary[FullDocumentDiagnosticReport | UnchangedDocumentDiagnosticReport]): Self = StObject.set(x, "relatedDocuments", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object vsdiag {
       __obj.asInstanceOf[UnchangedDocumentDiagnosticReport]
     }
     
-    extension [Self <: UnchangedDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setKind(value: unChanged): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -213,7 +218,8 @@ object vsdiag {
       __obj.asInstanceOf[WorkspaceDiagnosticReport]
     }
     
-    extension [Self <: WorkspaceDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[WorkspaceDocumentDiagnosticReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -232,7 +238,8 @@ object vsdiag {
       __obj.asInstanceOf[WorkspaceDiagnosticReportPartialResult]
     }
     
-    extension [Self <: WorkspaceDiagnosticReportPartialResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceDiagnosticReportPartialResult] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[WorkspaceDocumentDiagnosticReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -274,7 +281,8 @@ object vsdiag {
       __obj.asInstanceOf[WorkspaceFullDocumentDiagnosticReport]
     }
     
-    extension [Self <: WorkspaceFullDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceFullDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
@@ -300,7 +308,8 @@ object vsdiag {
       __obj.asInstanceOf[WorkspaceUnchangedDocumentDiagnosticReport]
     }
     
-    extension [Self <: WorkspaceUnchangedDocumentDiagnosticReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceUnchangedDocumentDiagnosticReport] (val x: Self) extends AnyVal {
       
       inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       

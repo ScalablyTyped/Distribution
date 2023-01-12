@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[ReactListProps]
     }
     
-    extension [Self <: ReactListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactListProps] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.reactList.reactListStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

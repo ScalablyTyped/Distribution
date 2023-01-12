@@ -28,7 +28,8 @@ object TimerCanceledEventAttributes {
     __obj.asInstanceOf[TimerCanceledEventAttributes]
   }
   
-  extension [Self <: TimerCanceledEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimerCanceledEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     

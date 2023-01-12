@@ -19,7 +19,8 @@ object Trigger {
     __obj.asInstanceOf[Trigger]
   }
   
-  extension [Self <: Trigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

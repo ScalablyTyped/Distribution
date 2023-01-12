@@ -34,7 +34,8 @@ object AutoRenewingBasePlanType {
     __obj.asInstanceOf[AutoRenewingBasePlanType]
   }
   
-  extension [Self <: AutoRenewingBasePlanType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRenewingBasePlanType] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriodDuration(value: String): Self = StObject.set(x, "billingPeriodDuration", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object sizeAgeRendererResult {
     __obj.asInstanceOf[sizeAgeRendererResult]
   }
   
-  extension [Self <: sizeAgeRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeAgeRendererResult] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object NumAmbientSamples {
     __obj.asInstanceOf[NumAmbientSamples]
   }
   
-  extension [Self <: NumAmbientSamples](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumAmbientSamples] (val x: Self) extends AnyVal {
     
     inline def setNumAmbientSamples(value: Double): Self = StObject.set(x, "numAmbientSamples", value.asInstanceOf[js.Any])
     

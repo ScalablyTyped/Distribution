@@ -21,7 +21,8 @@ object PrinterCreateOperation {
     __obj.asInstanceOf[PrinterCreateOperation]
   }
   
-  extension [Self <: PrinterCreateOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrinterCreateOperation] (val x: Self) extends AnyVal {
     
     inline def setCertificate(value: NullableOption[String]): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     

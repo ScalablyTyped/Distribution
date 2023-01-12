@@ -33,7 +33,8 @@ object GetLifecyclePolicyResponse {
     __obj.asInstanceOf[GetLifecyclePolicyResponse]
   }
   
-  extension [Self <: GetLifecyclePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLifecyclePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setLastEvaluatedAt(value: js.Date): Self = StObject.set(x, "lastEvaluatedAt", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Back]
     }
     
-    extension [Self <: Back](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
       
       inline def setBack(value: In): Self = StObject.set(x, "Back", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Bernstein]
     }
     
-    extension [Self <: Bernstein](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bernstein] (val x: Self) extends AnyVal {
       
       inline def setBernstein(value: (Double, Double) => Double): Self = StObject.set(x, "Bernstein", js.Any.fromFunction2(value))
       
@@ -131,7 +133,8 @@ object anon {
       __obj.asInstanceOf[Bezier]
     }
     
-    extension [Self <: Bezier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bezier] (val x: Self) extends AnyVal {
       
       inline def setBezier(value: (js.Array[Double], Double) => Double): Self = StObject.set(x, "Bezier", js.Any.fromFunction2(value))
       
@@ -158,7 +161,8 @@ object anon {
       __obj.asInstanceOf[In]
     }
     
-    extension [Self <: In](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
       
       inline def setIn(value: Double => Double): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
       
@@ -179,7 +183,8 @@ object anon {
       __obj.asInstanceOf[None]
     }
     
-    extension [Self <: None](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: None] (val x: Self) extends AnyVal {
       
       inline def setNone(value: Double => Double): Self = StObject.set(x, "None", js.Any.fromFunction1(value))
     }
@@ -200,7 +205,8 @@ object anon {
       __obj.asInstanceOf[TypeofSequence]
     }
     
-    extension [Self <: TypeofSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSequence] (val x: Self) extends AnyVal {
       
       inline def setNextId(value: () => Double): Self = StObject.set(x, "nextId", js.Any.fromFunction0(value))
       

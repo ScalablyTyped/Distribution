@@ -46,7 +46,8 @@ object libComponentsCommonEditableInputMod {
       __obj.asInstanceOf[EditableInputProps]
     }
     
-    extension [Self <: EditableInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableInputProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libComponentsCommonEditableInputMod {
       __obj.asInstanceOf[EditableInputStyles]
     }
     
-    extension [Self <: EditableInputStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableInputStyles] (val x: Self) extends AnyVal {
       
       inline def setInput(value: CSSProperties): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       

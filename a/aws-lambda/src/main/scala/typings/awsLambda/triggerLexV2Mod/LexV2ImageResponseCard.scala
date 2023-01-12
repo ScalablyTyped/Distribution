@@ -21,7 +21,8 @@ object LexV2ImageResponseCard {
     __obj.asInstanceOf[LexV2ImageResponseCard]
   }
   
-  extension [Self <: LexV2ImageResponseCard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexV2ImageResponseCard] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[LexV2ImageResponseCardButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

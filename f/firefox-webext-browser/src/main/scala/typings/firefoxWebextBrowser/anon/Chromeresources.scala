@@ -18,7 +18,8 @@ object Chromeresources {
     __obj.asInstanceOf[Chromeresources]
   }
   
-  extension [Self <: Chromeresources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chromeresources] (val x: Self) extends AnyVal {
     
     inline def setChrome_resources(value: UndefinedChromeResources): Self = StObject.set(x, "chrome_resources", value.asInstanceOf[js.Any])
     

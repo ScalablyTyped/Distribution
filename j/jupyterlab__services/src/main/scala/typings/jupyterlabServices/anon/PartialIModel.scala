@@ -40,7 +40,8 @@ object PartialIModel {
     __obj.asInstanceOf[PartialIModel]
   }
   
-  extension [Self <: PartialIModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIModel] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: Double): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object distEsmMod {
       __obj.asInstanceOf[MakeUniversalOpts]
     }
     
-    extension [Self <: MakeUniversalOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MakeUniversalOpts] (val x: Self) extends AnyVal {
       
       inline def setArm64AppPath(value: String): Self = StObject.set(x, "arm64AppPath", value.asInstanceOf[js.Any])
       

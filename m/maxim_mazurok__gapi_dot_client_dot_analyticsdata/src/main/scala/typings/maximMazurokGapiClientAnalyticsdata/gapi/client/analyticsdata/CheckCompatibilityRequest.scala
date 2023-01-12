@@ -28,7 +28,8 @@ object CheckCompatibilityRequest {
     __obj.asInstanceOf[CheckCompatibilityRequest]
   }
   
-  extension [Self <: CheckCompatibilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckCompatibilityRequest] (val x: Self) extends AnyVal {
     
     inline def setCompatibilityFilter(value: String): Self = StObject.set(x, "compatibilityFilter", value.asInstanceOf[js.Any])
     

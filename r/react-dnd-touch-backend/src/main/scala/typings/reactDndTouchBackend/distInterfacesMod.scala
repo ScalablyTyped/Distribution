@@ -59,7 +59,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[AngleRange]
     }
     
-    extension [Self <: AngleRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngleRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[EventName]
     }
     
-    extension [Self <: EventName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventName] (val x: Self) extends AnyVal {
       
       inline def setContextmenu(value: contextmenu): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[TouchBackendContext]
     }
     
-    extension [Self <: TouchBackendContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchBackendContext] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object distInterfacesMod {
       __obj.asInstanceOf[TouchBackendOptions]
     }
     
-    extension [Self <: TouchBackendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchBackendOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

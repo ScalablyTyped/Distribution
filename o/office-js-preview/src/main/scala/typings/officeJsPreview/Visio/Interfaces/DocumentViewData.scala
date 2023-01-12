@@ -54,7 +54,8 @@ object DocumentViewData {
     __obj.asInstanceOf[DocumentViewData]
   }
   
-  extension [Self <: DocumentViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentViewData] (val x: Self) extends AnyVal {
     
     inline def setDisableHyperlinks(value: Boolean): Self = StObject.set(x, "disableHyperlinks", value.asInstanceOf[js.Any])
     

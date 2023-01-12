@@ -27,7 +27,8 @@ object MessageStack {
     __obj.asInstanceOf[MessageStack]
   }
   
-  extension [Self <: MessageStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageStack] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Struct_[Double, Null]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

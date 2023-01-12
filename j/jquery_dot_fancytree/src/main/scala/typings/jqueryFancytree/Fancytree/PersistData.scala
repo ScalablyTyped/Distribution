@@ -21,7 +21,8 @@ object PersistData {
     __obj.asInstanceOf[PersistData]
   }
   
-  extension [Self <: PersistData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistData] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

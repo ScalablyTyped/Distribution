@@ -23,7 +23,8 @@ object NodeFrameworkAttributes {
     __obj.asInstanceOf[NodeFrameworkAttributes]
   }
   
-  extension [Self <: NodeFrameworkAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeFrameworkAttributes] (val x: Self) extends AnyVal {
     
     inline def setEthereum(value: NodeEthereumAttributes): Self = StObject.set(x, "Ethereum", value.asInstanceOf[js.Any])
     

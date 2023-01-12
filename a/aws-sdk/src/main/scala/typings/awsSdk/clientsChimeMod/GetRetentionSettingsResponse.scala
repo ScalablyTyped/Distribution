@@ -23,7 +23,8 @@ object GetRetentionSettingsResponse {
     __obj.asInstanceOf[GetRetentionSettingsResponse]
   }
   
-  extension [Self <: GetRetentionSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRetentionSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setInitiateDeletionTimestamp(value: js.Date): Self = StObject.set(x, "InitiateDeletionTimestamp", value.asInstanceOf[js.Any])
     

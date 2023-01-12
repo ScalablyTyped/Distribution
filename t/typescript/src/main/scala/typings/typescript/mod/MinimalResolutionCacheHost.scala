@@ -23,7 +23,8 @@ object MinimalResolutionCacheHost {
     __obj.asInstanceOf[MinimalResolutionCacheHost]
   }
   
-  extension [Self <: MinimalResolutionCacheHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimalResolutionCacheHost] (val x: Self) extends AnyVal {
     
     inline def setGetCompilationSettings(value: () => CompilerOptions): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     

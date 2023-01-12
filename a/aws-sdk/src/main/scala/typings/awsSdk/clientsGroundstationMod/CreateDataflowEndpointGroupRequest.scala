@@ -23,7 +23,8 @@ object CreateDataflowEndpointGroupRequest {
     __obj.asInstanceOf[CreateDataflowEndpointGroupRequest]
   }
   
-  extension [Self <: CreateDataflowEndpointGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataflowEndpointGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setEndpointDetails(value: EndpointDetailsList): Self = StObject.set(x, "endpointDetails", value.asInstanceOf[js.Any])
     

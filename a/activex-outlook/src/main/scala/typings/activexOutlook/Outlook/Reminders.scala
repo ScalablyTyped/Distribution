@@ -40,7 +40,8 @@ object Reminders {
     __obj.asInstanceOf[Reminders]
   }
   
-  extension [Self <: Reminders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reminders] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

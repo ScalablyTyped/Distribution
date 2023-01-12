@@ -19,7 +19,8 @@ object InstanceGroupManagerStatusVersionTarget {
     __obj.asInstanceOf[InstanceGroupManagerStatusVersionTarget]
   }
   
-  extension [Self <: InstanceGroupManagerStatusVersionTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerStatusVersionTarget] (val x: Self) extends AnyVal {
     
     inline def setIsReached(value: Boolean): Self = StObject.set(x, "isReached", value.asInstanceOf[js.Any])
     

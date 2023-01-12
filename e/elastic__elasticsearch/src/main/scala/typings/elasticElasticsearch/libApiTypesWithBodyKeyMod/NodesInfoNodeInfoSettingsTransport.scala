@@ -21,7 +21,8 @@ object NodesInfoNodeInfoSettingsTransport {
     __obj.asInstanceOf[NodesInfoNodeInfoSettingsTransport]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettingsTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettingsTransport] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: NodesInfoNodeInfoSettingsTransportFeatures): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

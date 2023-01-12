@@ -83,7 +83,8 @@ object GLSLFile {
     __obj.asInstanceOf[GLSLFile]
   }
   
-  extension [Self <: GLSLFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GLSLFile] (val x: Self) extends AnyVal {
     
     inline def setGetShaderName(value: js.Array[String] => String): Self = StObject.set(x, "getShaderName", js.Any.fromFunction1(value))
     

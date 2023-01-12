@@ -46,7 +46,8 @@ object RequestMetadata {
     __obj.asInstanceOf[RequestMetadata]
   }
   
-  extension [Self <: RequestMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestMetadata] (val x: Self) extends AnyVal {
     
     inline def setCallerIp(value: String): Self = StObject.set(x, "callerIp", value.asInstanceOf[js.Any])
     

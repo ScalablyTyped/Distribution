@@ -17,7 +17,8 @@ object OffscreenCanvas {
     __obj.asInstanceOf[OffscreenCanvas]
   }
   
-  extension [Self <: OffscreenCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffscreenCanvas] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: webgpu => GPUCanvasContext | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
   }

@@ -19,7 +19,8 @@ object AckInfo {
     __obj.asInstanceOf[AckInfo]
   }
   
-  extension [Self <: AckInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AckInfo] (val x: Self) extends AnyVal {
     
     inline def setUnackedDeviceCount(value: Double): Self = StObject.set(x, "unackedDeviceCount", value.asInstanceOf[js.Any])
     

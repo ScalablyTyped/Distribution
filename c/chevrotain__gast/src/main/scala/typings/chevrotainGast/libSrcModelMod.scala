@@ -224,7 +224,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[ISerializedBasic]
     }
     
-    extension [Self <: ISerializedBasic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedBasic] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -303,7 +304,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[ISerializedGastRule]
     }
     
-    extension [Self <: ISerializedGastRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedGastRule] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -335,7 +337,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[ISerializedNonTerminal]
     }
     
-    extension [Self <: ISerializedNonTerminal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedNonTerminal] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -375,7 +378,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[ISerializedTerminal]
     }
     
-    extension [Self <: ISerializedTerminal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedTerminal] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -421,7 +425,8 @@ object libSrcModelMod {
       __obj.asInstanceOf[ISerializedTerminalWithSeparator]
     }
     
-    extension [Self <: ISerializedTerminalWithSeparator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializedTerminalWithSeparator] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object ScrollOptions {
     __obj.asInstanceOf[ScrollOptions]
   }
   
-  extension [Self <: ScrollOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

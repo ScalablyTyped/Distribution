@@ -23,7 +23,8 @@ object IoTJobRateIncreaseCriteria {
     __obj.asInstanceOf[IoTJobRateIncreaseCriteria]
   }
   
-  extension [Self <: IoTJobRateIncreaseCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IoTJobRateIncreaseCriteria] (val x: Self) extends AnyVal {
     
     inline def setNumberOfNotifiedThings(value: IoTJobNumberOfThings): Self = StObject.set(x, "numberOfNotifiedThings", value.asInstanceOf[js.Any])
     

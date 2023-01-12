@@ -55,7 +55,8 @@ object mod {
     @js.native
     val ^ : Context[IntlContext] = js.native
     
-    extension [Self <: IntlContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlContext] (val x: Self) extends AnyVal {
       
       inline def setIntl(value: Mark): Self = StObject.set(x, "intl", value.asInstanceOf[js.Any])
     }
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[IntlProviderProps]
     }
     
-    extension [Self <: IntlProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntlProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object mod {
       __obj.asInstanceOf[LocalizerProps]
     }
     
-    extension [Self <: LocalizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object mod {
       __obj.asInstanceOf[TextProps]
     }
     
-    extension [Self <: TextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object XAsyncOutputMonitor {
     __obj.asInstanceOf[XAsyncOutputMonitor]
   }
   
-  extension [Self <: XAsyncOutputMonitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAsyncOutputMonitor] (val x: Self) extends AnyVal {
     
     inline def setWaitForCompletion(value: () => Unit): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction0(value))
   }

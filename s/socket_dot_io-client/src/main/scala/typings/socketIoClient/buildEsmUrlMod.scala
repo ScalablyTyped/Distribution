@@ -85,7 +85,8 @@ object buildEsmUrlMod {
       __obj.asInstanceOf[ParsedUrl]
     }
     
-    extension [Self <: ParsedUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedUrl] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

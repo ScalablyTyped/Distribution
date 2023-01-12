@@ -18,7 +18,8 @@ object InputFormatConfiguration {
     __obj.asInstanceOf[InputFormatConfiguration]
   }
   
-  extension [Self <: InputFormatConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFormatConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDeserializer(value: Deserializer): Self = StObject.set(x, "Deserializer", value.asInstanceOf[js.Any])
     

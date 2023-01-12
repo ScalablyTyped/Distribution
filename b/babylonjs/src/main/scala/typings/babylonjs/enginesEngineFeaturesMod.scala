@@ -112,7 +112,8 @@ object enginesEngineFeaturesMod {
       __obj.asInstanceOf[EngineFeatures]
     }
     
-    extension [Self <: EngineFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngineFeatures] (val x: Self) extends AnyVal {
       
       inline def setAllowTexturePrefiltering(value: Boolean): Self = StObject.set(x, "allowTexturePrefiltering", value.asInstanceOf[js.Any])
       

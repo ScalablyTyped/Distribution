@@ -51,7 +51,8 @@ object MeshTextureProperties {
     __obj.asInstanceOf[MeshTextureProperties]
   }
   
-  extension [Self <: MeshTextureProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshTextureProperties] (val x: Self) extends AnyVal {
     
     inline def setData(value: HTMLImageElement | HTMLCanvasElement | Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

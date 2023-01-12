@@ -16,7 +16,8 @@ object TriggerChars {
     __obj.asInstanceOf[TriggerChars]
   }
   
-  extension [Self <: TriggerChars](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriggerChars] (val x: Self) extends AnyVal {
     
     inline def setTriggerChars(value: Charset): Self = StObject.set(x, "triggerChars", value.asInstanceOf[js.Any])
     

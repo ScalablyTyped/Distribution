@@ -42,7 +42,8 @@ object IFolderPicker {
     __obj.asInstanceOf[IFolderPicker]
   }
   
-  extension [Self <: IFolderPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderPicker] (val x: Self) extends AnyVal {
     
     inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     

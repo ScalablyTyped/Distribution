@@ -27,7 +27,8 @@ object EnvChannelRequest {
     __obj.asInstanceOf[EnvChannelRequest]
   }
   
-  extension [Self <: EnvChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object AttrsClipByValueAttrs {
     __obj.asInstanceOf[AttrsClipByValueAttrs]
   }
   
-  extension [Self <: AttrsClipByValueAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsClipByValueAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ClipByValueAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

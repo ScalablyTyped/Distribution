@@ -23,7 +23,8 @@ object EvaluateReturnType {
     __obj.asInstanceOf[EvaluateReturnType]
   }
   
-  extension [Self <: EvaluateReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateReturnType] (val x: Self) extends AnyVal {
     
     inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object SilverlightControl {
     __obj.asInstanceOf[SilverlightControl]
   }
   
-  extension [Self <: SilverlightControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SilverlightControl] (val x: Self) extends AnyVal {
     
     inline def setGetData(value: () => String): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     

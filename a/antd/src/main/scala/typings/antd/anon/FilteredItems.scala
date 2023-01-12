@@ -19,7 +19,8 @@ object FilteredItems {
     __obj.asInstanceOf[FilteredItems[RecordType]]
   }
   
-  extension [Self <: FilteredItems[?], RecordType /* <: KeyWiseTransferItem */](x: Self & FilteredItems[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredItems[?], RecordType /* <: KeyWiseTransferItem */] (val x: Self & FilteredItems[RecordType]) extends AnyVal {
     
     inline def setFilteredItems(value: js.Array[RecordType]): Self = StObject.set(x, "filteredItems", value.asInstanceOf[js.Any])
     

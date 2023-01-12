@@ -112,7 +112,8 @@ object FileSystem {
     __obj.asInstanceOf[FileSystem]
   }
   
-  extension [Self <: FileSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
     
     inline def setAdministrativeActions(value: AdministrativeActions): Self = StObject.set(x, "AdministrativeActions", value.asInstanceOf[js.Any])
     

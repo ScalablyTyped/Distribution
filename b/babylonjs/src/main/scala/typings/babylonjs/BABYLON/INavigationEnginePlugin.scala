@@ -217,7 +217,8 @@ object INavigationEnginePlugin {
     __obj.asInstanceOf[INavigationEnginePlugin]
   }
   
-  extension [Self <: INavigationEnginePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INavigationEnginePlugin] (val x: Self) extends AnyVal {
     
     inline def setAddBoxObstacle(value: (Vector3, Vector3, Double) => IObstacle): Self = StObject.set(x, "addBoxObstacle", js.Any.fromFunction3(value))
     

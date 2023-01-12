@@ -42,7 +42,8 @@ object StructLog {
     __obj.asInstanceOf[StructLog]
   }
   
-  extension [Self <: StructLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructLog] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

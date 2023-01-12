@@ -27,7 +27,8 @@ object LimiterEffectDefinition {
     __obj.asInstanceOf[LimiterEffectDefinition]
   }
   
-  extension [Self <: LimiterEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimiterEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

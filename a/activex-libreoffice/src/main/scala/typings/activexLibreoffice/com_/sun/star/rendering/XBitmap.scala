@@ -69,7 +69,8 @@ object XBitmap {
     __obj.asInstanceOf[XBitmap]
   }
   
-  extension [Self <: XBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
     
     inline def setGetScaledBitmap(value: (RealSize2D, Boolean) => XBitmap): Self = StObject.set(x, "getScaledBitmap", js.Any.fromFunction2(value))
     

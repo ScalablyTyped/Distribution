@@ -95,7 +95,8 @@ object XExtendedIndexEntrySupplier {
     __obj.asInstanceOf[XExtendedIndexEntrySupplier]
   }
   
-  extension [Self <: XExtendedIndexEntrySupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExtendedIndexEntrySupplier] (val x: Self) extends AnyVal {
     
     inline def setCompareIndexEntry(value: (String, String, Locale, String, String, Locale) => Double): Self = StObject.set(x, "compareIndexEntry", js.Any.fromFunction6(value))
     

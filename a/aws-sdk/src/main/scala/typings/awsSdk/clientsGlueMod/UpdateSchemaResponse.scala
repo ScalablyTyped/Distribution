@@ -28,7 +28,8 @@ object UpdateSchemaResponse {
     __obj.asInstanceOf[UpdateSchemaResponse]
   }
   
-  extension [Self <: UpdateSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     

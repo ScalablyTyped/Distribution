@@ -19,7 +19,8 @@ object Commendation {
     __obj.asInstanceOf[Commendation]
   }
   
-  extension [Self <: Commendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commendation] (val x: Self) extends AnyVal {
     
     inline def setCmd_friendly(value: Double): Self = StObject.set(x, "cmd_friendly", value.asInstanceOf[js.Any])
     

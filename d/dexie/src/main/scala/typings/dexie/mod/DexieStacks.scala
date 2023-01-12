@@ -15,7 +15,8 @@ object DexieStacks {
     __obj.asInstanceOf[DexieStacks]
   }
   
-  extension [Self <: DexieStacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DexieStacks] (val x: Self) extends AnyVal {
     
     inline def setDbcore(value: DBCore): Self = StObject.set(x, "dbcore", value.asInstanceOf[js.Any])
   }

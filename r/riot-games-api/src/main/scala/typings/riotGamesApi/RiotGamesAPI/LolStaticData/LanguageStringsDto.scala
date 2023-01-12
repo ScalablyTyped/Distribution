@@ -21,7 +21,8 @@ object LanguageStringsDto {
     __obj.asInstanceOf[LanguageStringsDto]
   }
   
-  extension [Self <: LanguageStringsDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageStringsDto] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

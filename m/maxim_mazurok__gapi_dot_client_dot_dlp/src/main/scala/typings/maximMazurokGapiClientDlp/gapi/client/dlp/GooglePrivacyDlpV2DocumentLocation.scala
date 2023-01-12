@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2DocumentLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2DocumentLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DocumentLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DocumentLocation] (val x: Self) extends AnyVal {
     
     inline def setFileOffset(value: String): Self = StObject.set(x, "fileOffset", value.asInstanceOf[js.Any])
     

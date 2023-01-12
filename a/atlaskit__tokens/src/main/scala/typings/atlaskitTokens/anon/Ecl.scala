@@ -38,7 +38,8 @@ object Ecl {
     __obj.asInstanceOf[Ecl[BaseToken]]
   }
   
-  extension [Self <: Ecl[?], BaseToken](x: Self & Ecl[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ecl[?], BaseToken] (val x: Self & Ecl[BaseToken]) extends AnyVal {
     
     inline def setCcc(value: Content[BaseToken]): Self = StObject.set(x, "ccc", value.asInstanceOf[js.Any])
     

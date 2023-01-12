@@ -36,7 +36,8 @@ object IPrintTask {
     __obj.asInstanceOf[IPrintTask]
   }
   
-  extension [Self <: IPrintTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTask] (val x: Self) extends AnyVal {
     
     inline def setOncompleted(value: Any): Self = StObject.set(x, "oncompleted", value.asInstanceOf[js.Any])
     

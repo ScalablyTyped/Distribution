@@ -23,7 +23,8 @@ object RStudioServerProAppSettings {
     __obj.asInstanceOf[RStudioServerProAppSettings]
   }
   
-  extension [Self <: RStudioServerProAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RStudioServerProAppSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessStatus(value: RStudioServerProAccessStatus): Self = StObject.set(x, "AccessStatus", value.asInstanceOf[js.Any])
     

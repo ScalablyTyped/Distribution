@@ -74,7 +74,8 @@ object namespacesStorageMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setLocal(value: LocalStorageArea): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
         
@@ -257,7 +258,8 @@ object namespacesStorageMod {
         __obj.asInstanceOf[StorageChange]
       }
       
-      extension [Self <: StorageChange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StorageChange] (val x: Self) extends AnyVal {
         
         inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
         

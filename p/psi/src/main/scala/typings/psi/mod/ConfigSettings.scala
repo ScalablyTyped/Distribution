@@ -19,7 +19,8 @@ object ConfigSettings {
     __obj.asInstanceOf[ConfigSettings]
   }
   
-  extension [Self <: ConfigSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigSettings] (val x: Self) extends AnyVal {
     
     inline def setEmulatedFormFactor(value: String): Self = StObject.set(x, "emulatedFormFactor", value.asInstanceOf[js.Any])
     

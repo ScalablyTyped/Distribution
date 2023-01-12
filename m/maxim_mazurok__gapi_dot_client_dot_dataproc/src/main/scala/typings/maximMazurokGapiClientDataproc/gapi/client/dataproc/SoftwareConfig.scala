@@ -32,7 +32,8 @@ object SoftwareConfig {
     __obj.asInstanceOf[SoftwareConfig]
   }
   
-  extension [Self <: SoftwareConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareConfig] (val x: Self) extends AnyVal {
     
     inline def setImageVersion(value: String): Self = StObject.set(x, "imageVersion", value.asInstanceOf[js.Any])
     

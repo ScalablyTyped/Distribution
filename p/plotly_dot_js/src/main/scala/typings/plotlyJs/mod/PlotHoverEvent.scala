@@ -20,7 +20,8 @@ object PlotHoverEvent {
     __obj.asInstanceOf[PlotHoverEvent]
   }
   
-  extension [Self <: PlotHoverEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHoverEvent] (val x: Self) extends AnyVal {
     
     inline def setXvals(value: js.Array[Datum]): Self = StObject.set(x, "xvals", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CssSupportsAST {
     __obj.asInstanceOf[CssSupportsAST]
   }
   
-  extension [Self <: CssSupportsAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssSupportsAST] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[CssAtRuleAST]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

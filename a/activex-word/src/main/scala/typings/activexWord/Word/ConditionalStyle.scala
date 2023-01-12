@@ -52,7 +52,8 @@ object ConditionalStyle {
     __obj.asInstanceOf[ConditionalStyle]
   }
   
-  extension [Self <: ConditionalStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalStyle] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

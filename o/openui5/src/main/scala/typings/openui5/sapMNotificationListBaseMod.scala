@@ -582,7 +582,8 @@ object sapMNotificationListBaseMod {
       __obj.asInstanceOf[NotificationListBaseSettings]
     }
     
-    extension [Self <: NotificationListBaseSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationListBaseSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthorName(value: String | PropertyBindingInfo): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
       

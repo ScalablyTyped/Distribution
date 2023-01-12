@@ -18,7 +18,8 @@ object DatadogConnectorProfileProperties {
     __obj.asInstanceOf[DatadogConnectorProfileProperties]
   }
   
-  extension [Self <: DatadogConnectorProfileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatadogConnectorProfileProperties] (val x: Self) extends AnyVal {
     
     inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }

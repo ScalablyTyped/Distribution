@@ -28,7 +28,8 @@ object DescribeVirtualServiceInput {
     __obj.asInstanceOf[DescribeVirtualServiceInput]
   }
   
-  extension [Self <: DescribeVirtualServiceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVirtualServiceInput] (val x: Self) extends AnyVal {
     
     inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object WindowEvent {
     __obj.asInstanceOf[WindowEvent]
   }
   
-  extension [Self <: WindowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowEvent] (val x: Self) extends AnyVal {
     
     inline def setBottomInset(value: Double): Self = StObject.set(x, "BottomInset", value.asInstanceOf[js.Any])
     

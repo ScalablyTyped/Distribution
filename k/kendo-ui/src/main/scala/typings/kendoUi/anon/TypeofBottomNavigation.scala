@@ -20,7 +20,8 @@ object TypeofBottomNavigation {
     __obj.asInstanceOf[TypeofBottomNavigation]
   }
   
-  extension [Self <: TypeofBottomNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBottomNavigation] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => BottomNavigation): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

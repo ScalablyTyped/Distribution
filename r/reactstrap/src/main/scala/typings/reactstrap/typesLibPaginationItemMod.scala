@@ -39,7 +39,8 @@ object typesLibPaginationItemMod {
       __obj.asInstanceOf[PaginationItemProps]
     }
     
-    extension [Self <: PaginationItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

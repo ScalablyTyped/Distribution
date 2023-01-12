@@ -41,7 +41,8 @@ object EntityStateSymbol {
     __obj.asInstanceOf[EntityStateSymbol]
   }
   
-  extension [Self <: EntityStateSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityStateSymbol] (val x: Self) extends AnyVal {
     
     inline def setIsAdded(value: () => Boolean): Self = StObject.set(x, "isAdded", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object ZGButton {
     __obj.asInstanceOf[ZGButton]
   }
   
-  extension [Self <: ZGButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZGButton] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

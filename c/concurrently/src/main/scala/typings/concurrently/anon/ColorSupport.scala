@@ -45,7 +45,8 @@ object ColorSupport {
     __obj.asInstanceOf[ColorSupport]
   }
   
-  extension [Self <: ColorSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSupport] (val x: Self) extends AnyVal {
     
     inline def setColorSupport(value: Pickanylevel | `false`): Self = StObject.set(x, "colorSupport", value.asInstanceOf[js.Any])
     

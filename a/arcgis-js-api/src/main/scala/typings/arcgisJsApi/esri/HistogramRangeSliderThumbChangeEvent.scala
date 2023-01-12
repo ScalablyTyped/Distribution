@@ -23,7 +23,8 @@ object HistogramRangeSliderThumbChangeEvent {
     __obj.asInstanceOf[HistogramRangeSliderThumbChangeEvent]
   }
   
-  extension [Self <: HistogramRangeSliderThumbChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistogramRangeSliderThumbChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object RestrictionEvaluation {
     __obj.asInstanceOf[RestrictionEvaluation]
   }
   
-  extension [Self <: RestrictionEvaluation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictionEvaluation] (val x: Self) extends AnyVal {
     
     inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

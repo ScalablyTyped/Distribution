@@ -41,7 +41,8 @@ object Formatters {
     __obj.asInstanceOf[Formatters]
   }
   
-  extension [Self <: Formatters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatters] (val x: Self) extends AnyVal {
     
     inline def setFormatCaption(value: (/* date */ js.Date, /* options */ js.UndefOr[Locale]) => ReactNode): Self = StObject.set(x, "formatCaption", js.Any.fromFunction2(value))
     

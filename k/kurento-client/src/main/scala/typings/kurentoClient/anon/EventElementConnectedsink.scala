@@ -45,7 +45,8 @@ object EventElementConnectedsink {
     __obj.asInstanceOf[EventElementConnectedsink]
   }
   
-  extension [Self <: EventElementConnectedsink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventElementConnectedsink] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

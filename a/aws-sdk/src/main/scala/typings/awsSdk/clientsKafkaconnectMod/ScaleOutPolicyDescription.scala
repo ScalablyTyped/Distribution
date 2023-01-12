@@ -18,7 +18,8 @@ object ScaleOutPolicyDescription {
     __obj.asInstanceOf[ScaleOutPolicyDescription]
   }
   
-  extension [Self <: ScaleOutPolicyDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleOutPolicyDescription] (val x: Self) extends AnyVal {
     
     inline def setCpuUtilizationPercentage(value: integer): Self = StObject.set(x, "cpuUtilizationPercentage", value.asInstanceOf[js.Any])
     

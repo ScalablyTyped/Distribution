@@ -32,7 +32,8 @@ object KeyAgreeRecipientInfoParameters {
     __obj.asInstanceOf[KeyAgreeRecipientInfoParameters]
   }
   
-  extension [Self <: KeyAgreeRecipientInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyAgreeRecipientInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setKeyEncryptionAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "keyEncryptionAlgorithm", value.asInstanceOf[js.Any])
     

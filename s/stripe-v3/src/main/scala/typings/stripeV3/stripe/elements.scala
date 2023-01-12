@@ -74,7 +74,8 @@ object elements {
       __obj.asInstanceOf[ElementChangeResponse]
     }
     
-    extension [Self <: ElementChangeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementChangeResponse] (val x: Self) extends AnyVal {
       
       inline def setBankName(value: String): Self = StObject.set(x, "bankName", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object elements {
       __obj.asInstanceOf[ElementOptions]
     }
     
-    extension [Self <: ElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementOptions] (val x: Self) extends AnyVal {
       
       inline def setFonts(value: js.Array[Font]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object elements {
       __obj.asInstanceOf[ElementsCreateOptions]
     }
     
-    extension [Self <: ElementsCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementsCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setFonts(value: js.Array[Font]): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object elements {
       __obj.asInstanceOf[ElementsOptions]
     }
     
-    extension [Self <: ElementsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementsOptions] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Base): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object elements {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setCssSrc(value: String): Self = StObject.set(x, "cssSrc", value.asInstanceOf[js.Any])
       
@@ -322,7 +327,8 @@ object elements {
       __obj.asInstanceOf[PaymentRequestButtonStyleOptions]
     }
     
-    extension [Self <: PaymentRequestButtonStyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentRequestButtonStyleOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -366,7 +372,8 @@ object elements {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def `setColon-webkit-autofill`(value: StyleOptions): Self = StObject.set(x, ":-webkit-autofill", value.asInstanceOf[js.Any])
       
@@ -437,7 +444,8 @@ object elements {
       __obj.asInstanceOf[StyleOptions]
     }
     
-    extension [Self <: StyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

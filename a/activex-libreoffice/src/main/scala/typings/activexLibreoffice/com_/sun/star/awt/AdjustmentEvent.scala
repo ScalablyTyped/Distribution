@@ -24,7 +24,8 @@ object AdjustmentEvent {
     __obj.asInstanceOf[AdjustmentEvent]
   }
   
-  extension [Self <: AdjustmentEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustmentEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: AdjustmentType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

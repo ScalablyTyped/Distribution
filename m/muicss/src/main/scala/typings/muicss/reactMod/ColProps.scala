@@ -37,7 +37,8 @@ object ColProps {
     __obj.asInstanceOf[ColProps]
   }
   
-  extension [Self <: ColProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
     
     inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     

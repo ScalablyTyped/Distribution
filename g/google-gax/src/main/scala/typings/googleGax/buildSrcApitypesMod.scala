@@ -61,7 +61,8 @@ object buildSrcApitypesMod {
       __obj.asInstanceOf[GRPCCallResult]
     }
     
-    extension [Self <: GRPCCallResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRPCCallResult] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }

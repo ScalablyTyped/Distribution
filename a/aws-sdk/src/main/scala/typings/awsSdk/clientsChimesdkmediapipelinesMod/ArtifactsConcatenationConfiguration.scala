@@ -56,7 +56,8 @@ object ArtifactsConcatenationConfiguration {
     __obj.asInstanceOf[ArtifactsConcatenationConfiguration]
   }
   
-  extension [Self <: ArtifactsConcatenationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactsConcatenationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: AudioConcatenationConfiguration): Self = StObject.set(x, "Audio", value.asInstanceOf[js.Any])
     

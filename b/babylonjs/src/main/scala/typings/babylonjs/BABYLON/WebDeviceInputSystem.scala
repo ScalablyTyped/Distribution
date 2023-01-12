@@ -208,7 +208,8 @@ object WebDeviceInputSystem {
     __obj.asInstanceOf[WebDeviceInputSystem]
   }
   
-  extension [Self <: WebDeviceInputSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebDeviceInputSystem] (val x: Self) extends AnyVal {
     
     inline def set_activeTouchIds(value: Any): Self = StObject.set(x, "_activeTouchIds", value.asInstanceOf[js.Any])
     

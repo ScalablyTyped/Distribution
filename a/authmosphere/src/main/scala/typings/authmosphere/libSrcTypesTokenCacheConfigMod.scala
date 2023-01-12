@@ -18,7 +18,8 @@ object libSrcTypesTokenCacheConfigMod {
       __obj.asInstanceOf[CacheConfig]
     }
     
-    extension [Self <: CacheConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheConfig] (val x: Self) extends AnyVal {
       
       inline def setPercentageLeft(value: Double): Self = StObject.set(x, "percentageLeft", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object libSrcTypesTokenCacheConfigMod {
       __obj.asInstanceOf[TokenCacheOptions]
     }
     
-    extension [Self <: TokenCacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenCacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
       

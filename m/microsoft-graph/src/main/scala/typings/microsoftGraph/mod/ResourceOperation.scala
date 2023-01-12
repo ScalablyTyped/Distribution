@@ -30,7 +30,8 @@ object ResourceOperation {
     __obj.asInstanceOf[ResourceOperation]
   }
   
-  extension [Self <: ResourceOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceOperation] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: NullableOption[String]): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

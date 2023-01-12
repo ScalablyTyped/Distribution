@@ -18,7 +18,8 @@ object GetAssessmentFrameworkResponse {
     __obj.asInstanceOf[GetAssessmentFrameworkResponse]
   }
   
-  extension [Self <: GetAssessmentFrameworkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssessmentFrameworkResponse] (val x: Self) extends AnyVal {
     
     inline def setFramework(value: Framework): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
     

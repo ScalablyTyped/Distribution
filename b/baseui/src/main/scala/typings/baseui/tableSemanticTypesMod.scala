@@ -32,7 +32,8 @@ object tableSemanticTypesMod {
       __obj.asInstanceOf[BuilderOverrides]
     }
     
-    extension [Self <: BuilderOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuilderOverrides] (val x: Self) extends AnyVal {
       
       inline def setSortAscIcon(value: Override[Any]): Self = StObject.set(x, "SortAscIcon", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object tableSemanticTypesMod {
       __obj.asInstanceOf[ColumnOverrides]
     }
     
-    extension [Self <: ColumnOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOverrides] (val x: Self) extends AnyVal {
       
       inline def setSortAscIcon(value: Override[Any]): Self = StObject.set(x, "SortAscIcon", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object tableSemanticTypesMod {
       __obj.asInstanceOf[TableBuilderProps[RowT]]
     }
     
-    extension [Self <: TableBuilderProps[?], RowT](x: Self & TableBuilderProps[RowT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableBuilderProps[?], RowT] (val x: Self & TableBuilderProps[RowT]) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object tableSemanticTypesMod {
       __obj.asInstanceOf[TableOverrides]
     }
     
-    extension [Self <: TableOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableOverrides] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: Override[Any]): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
@@ -352,7 +356,8 @@ object tableSemanticTypesMod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ReactNode]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

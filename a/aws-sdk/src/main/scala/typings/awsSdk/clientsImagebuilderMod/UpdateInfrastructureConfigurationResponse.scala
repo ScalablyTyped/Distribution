@@ -28,7 +28,8 @@ object UpdateInfrastructureConfigurationResponse {
     __obj.asInstanceOf[UpdateInfrastructureConfigurationResponse]
   }
   
-  extension [Self <: UpdateInfrastructureConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInfrastructureConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

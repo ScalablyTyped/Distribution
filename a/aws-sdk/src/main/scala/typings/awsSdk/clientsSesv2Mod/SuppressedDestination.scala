@@ -33,7 +33,8 @@ object SuppressedDestination {
     __obj.asInstanceOf[SuppressedDestination]
   }
   
-  extension [Self <: SuppressedDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuppressedDestination] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: SuppressedDestinationAttributes): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

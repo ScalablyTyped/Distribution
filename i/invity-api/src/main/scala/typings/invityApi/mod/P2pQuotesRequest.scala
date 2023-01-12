@@ -21,7 +21,8 @@ object P2pQuotesRequest {
     __obj.asInstanceOf[P2pQuotesRequest]
   }
   
-  extension [Self <: P2pQuotesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pQuotesRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

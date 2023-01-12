@@ -57,7 +57,8 @@ object CreateProxySessionRequest {
     __obj.asInstanceOf[CreateProxySessionRequest]
   }
   
-  extension [Self <: CreateProxySessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProxySessionRequest] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: CapabilityList): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
     

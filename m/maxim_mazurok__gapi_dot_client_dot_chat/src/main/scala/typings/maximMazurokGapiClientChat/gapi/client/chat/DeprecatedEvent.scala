@@ -62,7 +62,8 @@ object DeprecatedEvent {
     __obj.asInstanceOf[DeprecatedEvent]
   }
   
-  extension [Self <: DeprecatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: FormAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

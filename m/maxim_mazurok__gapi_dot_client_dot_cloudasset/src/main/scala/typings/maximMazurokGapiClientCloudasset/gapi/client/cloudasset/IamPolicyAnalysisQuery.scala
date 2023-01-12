@@ -36,7 +36,8 @@ object IamPolicyAnalysisQuery {
     __obj.asInstanceOf[IamPolicyAnalysisQuery]
   }
   
-  extension [Self <: IamPolicyAnalysisQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicyAnalysisQuery] (val x: Self) extends AnyVal {
     
     inline def setAccessSelector(value: AccessSelector): Self = StObject.set(x, "accessSelector", value.asInstanceOf[js.Any])
     

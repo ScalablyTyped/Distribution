@@ -25,7 +25,8 @@ object StoreSchemaJson {
     __obj.asInstanceOf[StoreSchemaJson]
   }
   
-  extension [Self <: StoreSchemaJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreSchemaJson] (val x: Self) extends AnyVal {
     
     inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     

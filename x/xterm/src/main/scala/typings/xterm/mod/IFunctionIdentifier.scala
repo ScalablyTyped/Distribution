@@ -32,7 +32,8 @@ object IFunctionIdentifier {
     __obj.asInstanceOf[IFunctionIdentifier]
   }
   
-  extension [Self <: IFunctionIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFunctionIdentifier] (val x: Self) extends AnyVal {
     
     inline def setFinal(value: String): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
     

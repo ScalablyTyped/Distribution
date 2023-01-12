@@ -40,7 +40,8 @@ object ExportLambdaFunctionRecommendationsRequest {
     __obj.asInstanceOf[ExportLambdaFunctionRecommendationsRequest]
   }
   
-  extension [Self <: ExportLambdaFunctionRecommendationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportLambdaFunctionRecommendationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: AccountIds): Self = StObject.set(x, "accountIds", value.asInstanceOf[js.Any])
     

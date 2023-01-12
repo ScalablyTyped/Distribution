@@ -25,7 +25,8 @@ object typesEnvironmentErrorMod {
       __obj.asInstanceOf[EnvironmentError]
     }
     
-    extension [Self <: EnvironmentError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvironmentError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       

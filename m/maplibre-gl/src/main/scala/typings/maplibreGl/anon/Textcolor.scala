@@ -21,7 +21,8 @@ object Textcolor {
     __obj.asInstanceOf[Textcolor]
   }
   
-  extension [Self <: Textcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Textcolor] (val x: Self) extends AnyVal {
     
     inline def `setFont-scale`(value: Double | Any): Self = StObject.set(x, "font-scale", value.asInstanceOf[js.Any])
     

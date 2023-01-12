@@ -18,7 +18,8 @@ object AutoRollbackConfig {
     __obj.asInstanceOf[AutoRollbackConfig]
   }
   
-  extension [Self <: AutoRollbackConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoRollbackConfig] (val x: Self) extends AnyVal {
     
     inline def setAlarms(value: AlarmList): Self = StObject.set(x, "Alarms", value.asInstanceOf[js.Any])
     

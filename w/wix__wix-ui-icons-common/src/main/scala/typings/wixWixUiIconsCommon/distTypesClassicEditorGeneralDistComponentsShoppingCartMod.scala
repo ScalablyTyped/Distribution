@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsShoppingCartMod extends Shortc
       __obj.asInstanceOf[ShoppingCartProps]
     }
     
-    extension [Self <: ShoppingCartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShoppingCartProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

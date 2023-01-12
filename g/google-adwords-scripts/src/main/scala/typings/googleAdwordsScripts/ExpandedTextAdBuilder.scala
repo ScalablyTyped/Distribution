@@ -36,7 +36,8 @@ object ExpandedTextAdBuilder {
     __obj.asInstanceOf[ExpandedTextAdBuilder[ExpandedTextAd]]
   }
   
-  extension [Self <: ExpandedTextAdBuilder[?], ExpandedTextAd](x: Self & ExpandedTextAdBuilder[ExpandedTextAd]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedTextAdBuilder[?], ExpandedTextAd] (val x: Self & ExpandedTextAdBuilder[ExpandedTextAd]) extends AnyVal {
     
     inline def setWithDescription(value: String => ExpandedTextAdBuilder[ExpandedTextAd]): Self = StObject.set(x, "withDescription", js.Any.fromFunction1(value))
     

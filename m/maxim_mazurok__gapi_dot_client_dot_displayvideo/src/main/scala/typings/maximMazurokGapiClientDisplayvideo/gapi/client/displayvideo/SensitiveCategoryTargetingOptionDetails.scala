@@ -16,7 +16,8 @@ object SensitiveCategoryTargetingOptionDetails {
     __obj.asInstanceOf[SensitiveCategoryTargetingOptionDetails]
   }
   
-  extension [Self <: SensitiveCategoryTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensitiveCategoryTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setSensitiveCategory(value: String): Self = StObject.set(x, "sensitiveCategory", value.asInstanceOf[js.Any])
     

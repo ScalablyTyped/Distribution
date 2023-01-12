@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Clientemail]
     }
     
-    extension [Self <: Clientemail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clientemail] (val x: Self) extends AnyVal {
       
       inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -68,7 +70,8 @@ object anon {
       __obj.asInstanceOf[InitialOpsPerSecond]
     }
     
-    extension [Self <: InitialOpsPerSecond](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialOpsPerSecond] (val x: Self) extends AnyVal {
       
       inline def setInitialOpsPerSecond(value: Double): Self = StObject.set(x, "initialOpsPerSecond", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Merge]
     }
     
-    extension [Self <: Merge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Merge] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: Boolean): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
@@ -114,7 +118,8 @@ object anon {
       __obj.asInstanceOf[MergeFields]
     }
     
-    extension [Self <: MergeFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeFields] (val x: Self) extends AnyVal {
       
       inline def setMergeFields(value: js.Array[String | FieldPath]): Self = StObject.set(x, "mergeFields", value.asInstanceOf[js.Any])
       

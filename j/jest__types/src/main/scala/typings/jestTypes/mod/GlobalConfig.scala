@@ -179,7 +179,8 @@ object GlobalConfig {
     __obj.asInstanceOf[GlobalConfig]
   }
   
-  extension [Self <: GlobalConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalConfig] (val x: Self) extends AnyVal {
     
     inline def setBail(value: Double): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     

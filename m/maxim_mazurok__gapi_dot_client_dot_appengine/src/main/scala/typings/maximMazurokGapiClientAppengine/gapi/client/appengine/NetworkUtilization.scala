@@ -25,7 +25,8 @@ object NetworkUtilization {
     __obj.asInstanceOf[NetworkUtilization]
   }
   
-  extension [Self <: NetworkUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkUtilization] (val x: Self) extends AnyVal {
     
     inline def setTargetReceivedBytesPerSecond(value: Double): Self = StObject.set(x, "targetReceivedBytesPerSecond", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[BreadcrumbsItemProps]
     }
     
-    extension [Self <: BreadcrumbsItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[BreadcrumbsProps]
     }
     
-    extension [Self <: BreadcrumbsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | Element | js.Object): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object mod {
       __obj.asInstanceOf[BreadcrumbsProviderProps]
     }
     
-    extension [Self <: BreadcrumbsProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

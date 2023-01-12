@@ -33,7 +33,8 @@ object PlotSlowstochasticOnPointOptions {
     __obj.asInstanceOf[PlotSlowstochasticOnPointOptions]
   }
   
-  extension [Self <: PlotSlowstochasticOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSlowstochasticOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotSlowstochasticOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

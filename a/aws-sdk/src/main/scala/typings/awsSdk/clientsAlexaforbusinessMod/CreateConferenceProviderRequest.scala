@@ -52,7 +52,8 @@ object CreateConferenceProviderRequest {
     __obj.asInstanceOf[CreateConferenceProviderRequest]
   }
   
-  extension [Self <: CreateConferenceProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConferenceProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

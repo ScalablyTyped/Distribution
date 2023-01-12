@@ -31,7 +31,8 @@ object CADESCOM_ENCRYPTION_ALGORITHM {
     __obj.asInstanceOf[CADESCOM_ENCRYPTION_ALGORITHM]
   }
   
-  extension [Self <: CADESCOM_ENCRYPTION_ALGORITHM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADESCOM_ENCRYPTION_ALGORITHM] (val x: Self) extends AnyVal {
     
     inline def setCADESCOM_ENCRYPTION_ALGORITHM_3DES(value: `3`): Self = StObject.set(x, "CADESCOM_ENCRYPTION_ALGORITHM_3DES", value.asInstanceOf[js.Any])
     

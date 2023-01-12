@@ -61,7 +61,8 @@ object DescriptionAnnotation {
     __obj.asInstanceOf[DescriptionAnnotation]
   }
   
-  extension [Self <: DescriptionAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescriptionAnnotation] (val x: Self) extends AnyVal {
     
     inline def setAnnotatable(value: Apipath): Self = StObject.set(x, "annotatable", value.asInstanceOf[js.Any])
     

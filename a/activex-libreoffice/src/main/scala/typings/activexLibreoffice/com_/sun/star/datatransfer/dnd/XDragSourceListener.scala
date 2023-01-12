@@ -67,7 +67,8 @@ object XDragSourceListener {
     __obj.asInstanceOf[XDragSourceListener]
   }
   
-  extension [Self <: XDragSourceListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDragSourceListener] (val x: Self) extends AnyVal {
     
     inline def setDragDropEnd(value: DragSourceDropEvent => Unit): Self = StObject.set(x, "dragDropEnd", js.Any.fromFunction1(value))
     

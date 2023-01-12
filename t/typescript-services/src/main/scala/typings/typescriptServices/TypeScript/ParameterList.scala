@@ -42,7 +42,8 @@ object ParameterList {
     __obj.asInstanceOf[ParameterList]
   }
   
-  extension [Self <: ParameterList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterList] (val x: Self) extends AnyVal {
     
     inline def setOpenParenTrailingComments(value: js.Array[Comment]): Self = StObject.set(x, "openParenTrailingComments", value.asInstanceOf[js.Any])
     

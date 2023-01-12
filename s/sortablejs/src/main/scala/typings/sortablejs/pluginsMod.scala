@@ -76,7 +76,8 @@ object pluginsMod {
       __obj.asInstanceOf[AutoScrollOptions]
     }
     
-    extension [Self <: AutoScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setBubbleScroll(value: Boolean): Self = StObject.set(x, "bubbleScroll", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object pluginsMod {
       __obj.asInstanceOf[MultiDragOptions]
     }
     
-    extension [Self <: MultiDragOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiDragOptions] (val x: Self) extends AnyVal {
       
       inline def setMultiDrag(value: Boolean): Self = StObject.set(x, "multiDrag", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object pluginsMod {
       __obj.asInstanceOf[OnSpillOptions]
     }
     
-    extension [Self <: OnSpillOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSpillOptions] (val x: Self) extends AnyVal {
       
       inline def setOnSpill(value: /* evt */ SortableEvent => Unit): Self = StObject.set(x, "onSpill", js.Any.fromFunction1(value))
       
@@ -229,7 +232,8 @@ object pluginsMod {
       __obj.asInstanceOf[SwapOptions]
     }
     
-    extension [Self <: SwapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwapOptions] (val x: Self) extends AnyVal {
       
       inline def setSwap(value: Boolean): Self = StObject.set(x, "swap", value.asInstanceOf[js.Any])
       

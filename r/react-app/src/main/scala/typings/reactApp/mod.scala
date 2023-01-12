@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[ChildProps]
     }
     
-    extension [Self <: ChildProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Any => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[CreateAppObject]
     }
     
-    extension [Self <: CreateAppObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateAppObject] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: typings.std.Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object mod {
       __obj.asInstanceOf[LayoutProps]
     }
     
-    extension [Self <: LayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
@@ -138,7 +141,8 @@ object mod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object mod {
       __obj.asInstanceOf[RouteProps]
     }
     
-    extension [Self <: RouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ChildProps]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

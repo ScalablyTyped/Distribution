@@ -39,7 +39,8 @@ object WebXRRenderTarget {
     __obj.asInstanceOf[WebXRRenderTarget]
   }
   
-  extension [Self <: WebXRRenderTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRRenderTarget] (val x: Self) extends AnyVal {
     
     inline def setCanvasContext(value: WebGLRenderingContext): Self = StObject.set(x, "canvasContext", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object libCounterCounterMod {
       __obj.asInstanceOf[CounterProps]
     }
     
-    extension [Self <: CounterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CounterProps] (val x: Self) extends AnyVal {
       
       inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       

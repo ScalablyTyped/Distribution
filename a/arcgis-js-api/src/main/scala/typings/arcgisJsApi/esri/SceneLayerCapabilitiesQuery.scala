@@ -174,7 +174,8 @@ object SceneLayerCapabilitiesQuery {
     __obj.asInstanceOf[SceneLayerCapabilitiesQuery]
   }
   
-  extension [Self <: SceneLayerCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setMaxRecordCount(value: Double): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     

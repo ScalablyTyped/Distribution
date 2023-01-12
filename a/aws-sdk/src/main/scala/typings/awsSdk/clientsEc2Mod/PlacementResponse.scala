@@ -18,7 +18,8 @@ object PlacementResponse {
     __obj.asInstanceOf[PlacementResponse]
   }
   
-  extension [Self <: PlacementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: PlacementGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

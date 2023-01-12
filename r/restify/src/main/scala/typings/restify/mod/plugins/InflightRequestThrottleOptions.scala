@@ -20,7 +20,8 @@ object InflightRequestThrottleOptions {
     __obj.asInstanceOf[InflightRequestThrottleOptions]
   }
   
-  extension [Self <: InflightRequestThrottleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InflightRequestThrottleOptions] (val x: Self) extends AnyVal {
     
     inline def setErr(value: Any): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     

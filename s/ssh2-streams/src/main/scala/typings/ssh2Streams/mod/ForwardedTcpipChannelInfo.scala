@@ -27,7 +27,8 @@ object ForwardedTcpipChannelInfo {
     __obj.asInstanceOf[ForwardedTcpipChannelInfo]
   }
   
-  extension [Self <: ForwardedTcpipChannelInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedTcpipChannelInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: TcpipChannelData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

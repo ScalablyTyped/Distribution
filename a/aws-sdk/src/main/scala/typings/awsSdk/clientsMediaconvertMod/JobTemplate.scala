@@ -78,7 +78,8 @@ object JobTemplate {
     __obj.asInstanceOf[JobTemplate]
   }
   
-  extension [Self <: JobTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplate] (val x: Self) extends AnyVal {
     
     inline def setAccelerationSettings(value: AccelerationSettings): Self = StObject.set(x, "AccelerationSettings", value.asInstanceOf[js.Any])
     

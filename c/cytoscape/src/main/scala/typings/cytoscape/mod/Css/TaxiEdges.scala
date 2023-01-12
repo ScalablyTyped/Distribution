@@ -78,7 +78,8 @@ object TaxiEdges {
     __obj.asInstanceOf[TaxiEdges]
   }
   
-  extension [Self <: TaxiEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaxiEdges] (val x: Self) extends AnyVal {
     
     inline def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     

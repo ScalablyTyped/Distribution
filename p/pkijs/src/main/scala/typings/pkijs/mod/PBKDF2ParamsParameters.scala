@@ -24,7 +24,8 @@ object PBKDF2ParamsParameters {
     __obj.asInstanceOf[PBKDF2ParamsParameters]
   }
   
-  extension [Self <: PBKDF2ParamsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBKDF2ParamsParameters] (val x: Self) extends AnyVal {
     
     inline def setIterationCount(value: Double): Self = StObject.set(x, "iterationCount", value.asInstanceOf[js.Any])
     

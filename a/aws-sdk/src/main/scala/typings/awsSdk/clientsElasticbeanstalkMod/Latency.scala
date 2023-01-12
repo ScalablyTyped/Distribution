@@ -53,7 +53,8 @@ object Latency {
     __obj.asInstanceOf[Latency]
   }
   
-  extension [Self <: Latency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Latency] (val x: Self) extends AnyVal {
     
     inline def setP10(value: NullableDouble): Self = StObject.set(x, "P10", value.asInstanceOf[js.Any])
     

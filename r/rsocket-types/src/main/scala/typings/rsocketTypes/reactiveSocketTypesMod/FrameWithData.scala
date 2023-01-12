@@ -17,7 +17,8 @@ object FrameWithData {
     __obj.asInstanceOf[FrameWithData]
   }
   
-  extension [Self <: FrameWithData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameWithData] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

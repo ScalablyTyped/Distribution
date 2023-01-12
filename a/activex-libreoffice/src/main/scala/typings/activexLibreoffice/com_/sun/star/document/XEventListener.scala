@@ -35,7 +35,8 @@ object XEventListener {
     __obj.asInstanceOf[XEventListener]
   }
   
-  extension [Self <: XEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEventListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyEvent(value: EventObject => Unit): Self = StObject.set(x, "notifyEvent", js.Any.fromFunction1(value))
   }

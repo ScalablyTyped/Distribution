@@ -36,7 +36,8 @@ object PartialTypeAction {
     __obj.asInstanceOf[PartialTypeAction]
   }
   
-  extension [Self <: PartialTypeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTypeAction] (val x: Self) extends AnyVal {
     
     inline def setActivatedOpacity(value: Double): Self = StObject.set(x, "activatedOpacity", value.asInstanceOf[js.Any])
     

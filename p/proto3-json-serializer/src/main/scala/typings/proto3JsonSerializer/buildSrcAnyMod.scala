@@ -36,7 +36,8 @@ object buildSrcAnyMod {
       __obj.asInstanceOf[Any]
     }
     
-    extension [Self <: Any](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
       
       inline def setType_url(value: String): Self = StObject.set(x, "type_url", value.asInstanceOf[js.Any])
       

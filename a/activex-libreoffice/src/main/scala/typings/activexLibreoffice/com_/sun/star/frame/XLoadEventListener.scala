@@ -41,7 +41,8 @@ object XLoadEventListener {
     __obj.asInstanceOf[XLoadEventListener]
   }
   
-  extension [Self <: XLoadEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLoadEventListener] (val x: Self) extends AnyVal {
     
     inline def setLoadCancelled(value: XFrameLoader => Unit): Self = StObject.set(x, "loadCancelled", js.Any.fromFunction1(value))
     

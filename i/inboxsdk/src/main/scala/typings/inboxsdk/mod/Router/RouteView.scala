@@ -31,7 +31,8 @@ object RouteView {
     __obj.asInstanceOf[RouteView]
   }
   
-  extension [Self <: RouteView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteView] (val x: Self) extends AnyVal {
     
     inline def setDestroyed(value: Boolean): Self = StObject.set(x, "destroyed", value.asInstanceOf[js.Any])
     

@@ -508,7 +508,8 @@ object mod {
       __obj.asInstanceOf[FSWatcher]
     }
     
-    extension [Self <: FSWatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FSWatcher] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
@@ -527,7 +528,8 @@ object mod {
       __obj.asInstanceOf[OpenOptions]
     }
     
-    extension [Self <: OpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

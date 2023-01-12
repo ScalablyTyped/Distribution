@@ -30,7 +30,8 @@ object IndicesSegmentsParams {
     __obj.asInstanceOf[IndicesSegmentsParams]
   }
   
-  extension [Self <: IndicesSegmentsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

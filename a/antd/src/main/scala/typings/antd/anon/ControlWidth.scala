@@ -19,7 +19,8 @@ object ControlWidth {
     __obj.asInstanceOf[ControlWidth]
   }
   
-  extension [Self <: ControlWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlWidth] (val x: Self) extends AnyVal {
     
     inline def setControlWidth(value: Double): Self = StObject.set(x, "controlWidth", value.asInstanceOf[js.Any])
     

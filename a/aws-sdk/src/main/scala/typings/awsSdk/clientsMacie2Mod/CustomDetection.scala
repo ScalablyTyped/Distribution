@@ -33,7 +33,8 @@ object CustomDetection {
     __obj.asInstanceOf[CustomDetection]
   }
   
-  extension [Self <: CustomDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDetection] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

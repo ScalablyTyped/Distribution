@@ -23,7 +23,8 @@ object ConnectionAliasPermission {
     __obj.asInstanceOf[ConnectionAliasPermission]
   }
   
-  extension [Self <: ConnectionAliasPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionAliasPermission] (val x: Self) extends AnyVal {
     
     inline def setAllowAssociation(value: BooleanObject): Self = StObject.set(x, "AllowAssociation", value.asInstanceOf[js.Any])
     

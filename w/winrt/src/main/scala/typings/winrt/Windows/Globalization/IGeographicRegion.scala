@@ -36,7 +36,8 @@ object IGeographicRegion {
     __obj.asInstanceOf[IGeographicRegion]
   }
   
-  extension [Self <: IGeographicRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeographicRegion] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

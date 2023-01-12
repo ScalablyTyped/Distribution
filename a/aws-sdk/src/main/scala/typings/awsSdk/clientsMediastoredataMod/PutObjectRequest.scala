@@ -43,7 +43,8 @@ object PutObjectRequest {
     __obj.asInstanceOf[PutObjectRequest]
   }
   
-  extension [Self <: PutObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

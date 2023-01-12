@@ -20,7 +20,8 @@ object Paramsworkspacestringunde {
     __obj.asInstanceOf[Paramsworkspacestringunde]
   }
   
-  extension [Self <: Paramsworkspacestringunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paramsworkspacestringunde] (val x: Self) extends AnyVal {
     
     inline def setOpt_expand(value: String): Self = StObject.set(x, "opt_expand", value.asInstanceOf[js.Any])
     

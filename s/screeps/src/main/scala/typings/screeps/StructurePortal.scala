@@ -45,7 +45,8 @@ object StructurePortal {
     __obj.asInstanceOf[StructurePortal]
   }
   
-  extension [Self <: StructurePortal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructurePortal] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: RoomPosition | typings.screeps.anon.Shard): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

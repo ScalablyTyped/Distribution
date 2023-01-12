@@ -28,7 +28,8 @@ object AuditMitigationActionsTaskMetadata {
     __obj.asInstanceOf[AuditMitigationActionsTaskMetadata]
   }
   
-  extension [Self <: AuditMitigationActionsTaskMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditMitigationActionsTaskMetadata] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

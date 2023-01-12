@@ -32,7 +32,8 @@ object Internal {
       __obj.asInstanceOf[DiffTracker]
     }
     
-    extension [Self <: DiffTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffTracker] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       
@@ -60,7 +61,8 @@ object Internal {
       __obj.asInstanceOf[PropertyUpdate]
     }
     
-    extension [Self <: PropertyUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyUpdate] (val x: Self) extends AnyVal {
       
       inline def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
     }

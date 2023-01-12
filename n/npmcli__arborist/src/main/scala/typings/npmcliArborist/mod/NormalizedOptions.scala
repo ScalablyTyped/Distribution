@@ -42,7 +42,8 @@ object NormalizedOptions {
     __obj.asInstanceOf[NormalizedOptions]
   }
   
-  extension [Self <: NormalizedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

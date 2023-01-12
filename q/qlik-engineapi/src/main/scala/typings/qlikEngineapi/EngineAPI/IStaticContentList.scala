@@ -18,7 +18,8 @@ object IStaticContentList {
     __obj.asInstanceOf[IStaticContentList]
   }
   
-  extension [Self <: IStaticContentList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticContentList] (val x: Self) extends AnyVal {
     
     inline def setQItems(value: IStaticContentListItem): Self = StObject.set(x, "qItems", value.asInstanceOf[js.Any])
   }

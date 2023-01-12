@@ -56,7 +56,8 @@ object IObjectFile {
     __obj.asInstanceOf[IObjectFile]
   }
   
-  extension [Self <: IObjectFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectFile] (val x: Self) extends AnyVal {
     
     inline def setChangeTimeUtc(value: js.Date): Self = StObject.set(x, "ChangeTimeUtc", value.asInstanceOf[js.Any])
     

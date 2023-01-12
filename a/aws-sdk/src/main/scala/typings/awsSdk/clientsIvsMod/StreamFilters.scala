@@ -18,7 +18,8 @@ object StreamFilters {
     __obj.asInstanceOf[StreamFilters]
   }
   
-  extension [Self <: StreamFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamFilters] (val x: Self) extends AnyVal {
     
     inline def setHealth(value: StreamHealth): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
     

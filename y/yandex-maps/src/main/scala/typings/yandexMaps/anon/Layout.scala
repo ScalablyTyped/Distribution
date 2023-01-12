@@ -29,7 +29,8 @@ object Layout {
     __obj.asInstanceOf[Layout]
   }
   
-  extension [Self <: Layout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: String | IClassConstructor[ISelectableControlLayout]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

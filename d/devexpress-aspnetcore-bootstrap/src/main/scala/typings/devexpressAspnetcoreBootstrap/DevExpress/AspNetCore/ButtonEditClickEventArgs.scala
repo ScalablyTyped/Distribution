@@ -17,7 +17,8 @@ object ButtonEditClickEventArgs {
     __obj.asInstanceOf[ButtonEditClickEventArgs]
   }
   
-  extension [Self <: ButtonEditClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonEditClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonIndex(value: Double): Self = StObject.set(x, "buttonIndex", value.asInstanceOf[js.Any])
   }

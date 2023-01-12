@@ -23,7 +23,8 @@ object ForGenericStatement {
     __obj.asInstanceOf[ForGenericStatement]
   }
   
-  extension [Self <: ForGenericStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForGenericStatement] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

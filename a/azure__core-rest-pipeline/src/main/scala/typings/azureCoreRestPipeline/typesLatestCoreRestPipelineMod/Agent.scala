@@ -38,7 +38,8 @@ object Agent {
     __obj.asInstanceOf[Agent]
   }
   
-  extension [Self <: Agent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

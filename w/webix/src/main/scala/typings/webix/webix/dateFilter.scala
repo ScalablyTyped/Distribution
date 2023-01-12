@@ -38,7 +38,8 @@ object dateFilter {
     __obj.asInstanceOf[dateFilter]
   }
   
-  extension [Self <: dateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dateFilter] (val x: Self) extends AnyVal {
     
     inline def setBetween(value: (Any, Any) => Boolean): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
     

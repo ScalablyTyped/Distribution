@@ -29,7 +29,8 @@ object SyntheticDecorator {
     __obj.asInstanceOf[SyntheticDecorator]
   }
   
-  extension [Self <: SyntheticDecorator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntheticDecorator] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Null): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

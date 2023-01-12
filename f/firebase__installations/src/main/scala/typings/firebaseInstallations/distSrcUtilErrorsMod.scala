@@ -73,7 +73,8 @@ object distSrcUtilErrorsMod {
       __obj.asInstanceOf[ServerErrorData]
     }
     
-    extension [Self <: ServerErrorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerErrorData] (val x: Self) extends AnyVal {
       
       inline def setServerCode(value: Double): Self = StObject.set(x, "serverCode", value.asInstanceOf[js.Any])
       

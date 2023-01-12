@@ -19,7 +19,8 @@ object SetLocaleOverrideRequest {
     __obj.asInstanceOf[SetLocaleOverrideRequest]
   }
   
-  extension [Self <: SetLocaleOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLocaleOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     

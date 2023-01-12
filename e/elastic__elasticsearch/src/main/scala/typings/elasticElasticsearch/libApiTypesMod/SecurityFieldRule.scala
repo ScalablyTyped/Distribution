@@ -23,7 +23,8 @@ object SecurityFieldRule {
     __obj.asInstanceOf[SecurityFieldRule]
   }
   
-  extension [Self <: SecurityFieldRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityFieldRule] (val x: Self) extends AnyVal {
     
     inline def setDn(value: Names): Self = StObject.set(x, "dn", value.asInstanceOf[js.Any])
     

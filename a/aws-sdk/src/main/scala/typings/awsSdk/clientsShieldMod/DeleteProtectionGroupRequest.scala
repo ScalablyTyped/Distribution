@@ -18,7 +18,8 @@ object DeleteProtectionGroupRequest {
     __obj.asInstanceOf[DeleteProtectionGroupRequest]
   }
   
-  extension [Self <: DeleteProtectionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProtectionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
   }

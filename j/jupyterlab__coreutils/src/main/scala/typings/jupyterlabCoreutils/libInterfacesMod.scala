@@ -30,7 +30,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IChangedArgs[T, OldT, U]]
     }
     
-    extension [Self <: IChangedArgs[?, ?, ?], T, OldT, U /* <: String */](x: Self & (IChangedArgs[T, OldT, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChangedArgs[?, ?, ?], T, OldT, U /* <: String */] (val x: Self & (IChangedArgs[T, OldT, U])) extends AnyVal {
       
       inline def setName(value: U): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

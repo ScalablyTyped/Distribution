@@ -28,7 +28,8 @@ object SignResult {
     __obj.asInstanceOf[SignResult]
   }
   
-  extension [Self <: SignResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignResult] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: SignatureAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

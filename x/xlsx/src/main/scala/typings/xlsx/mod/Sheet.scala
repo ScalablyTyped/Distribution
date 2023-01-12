@@ -32,7 +32,8 @@ object Sheet {
     __obj.asInstanceOf[Sheet]
   }
   
-  extension [Self <: Sheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
     
     inline def setExclamationmarkmargins(value: MarginInfo): Self = StObject.set(x, "!margins", value.asInstanceOf[js.Any])
     

@@ -169,7 +169,8 @@ object typingsModelsCardPreauthorizationMod {
         __obj.asInstanceOf[CardPreAuthorizationData]
       }
       
-      extension [Self <: CardPreAuthorizationData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CardPreAuthorizationData] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -258,7 +259,8 @@ object typingsModelsCardPreauthorizationMod {
         __obj.asInstanceOf[CreateCardPreAuthorization]
       }
       
-      extension [Self <: CreateCardPreAuthorization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateCardPreAuthorization] (val x: Self) extends AnyVal {
         
         inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
         
@@ -349,7 +351,8 @@ object typingsModelsCardPreauthorizationMod {
         __obj.asInstanceOf[UpdateCardPreAuthorization]
       }
       
-      extension [Self <: UpdateCardPreAuthorization](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateCardPreAuthorization] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
         

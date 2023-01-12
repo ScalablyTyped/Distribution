@@ -37,7 +37,8 @@ object AnnotationRef {
     __obj.asInstanceOf[AnnotationRef]
   }
   
-  extension [Self <: AnnotationRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationRef] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: () => TypeDeclaration): Self = StObject.set(x, "annotation", js.Any.fromFunction0(value))
   }

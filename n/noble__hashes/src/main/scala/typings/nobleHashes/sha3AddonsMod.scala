@@ -280,7 +280,8 @@ object sha3AddonsMod {
       __obj.asInstanceOf[KangarooOpts]
     }
     
-    extension [Self <: KangarooOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KangarooOpts] (val x: Self) extends AnyVal {
       
       inline def setDkLen(value: Double): Self = StObject.set(x, "dkLen", value.asInstanceOf[js.Any])
       
@@ -353,7 +354,8 @@ object sha3AddonsMod {
       __obj.asInstanceOf[ParallelOpts]
     }
     
-    extension [Self <: ParallelOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParallelOpts] (val x: Self) extends AnyVal {
       
       inline def setBlockLen(value: Double): Self = StObject.set(x, "blockLen", value.asInstanceOf[js.Any])
       
@@ -382,7 +384,8 @@ object sha3AddonsMod {
       __obj.asInstanceOf[cShakeOpts]
     }
     
-    extension [Self <: cShakeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: cShakeOpts] (val x: Self) extends AnyVal {
       
       inline def setNISTfn(value: Input): Self = StObject.set(x, "NISTfn", value.asInstanceOf[js.Any])
       

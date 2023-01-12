@@ -58,7 +58,8 @@ object DirectMessageConfiguration {
     __obj.asInstanceOf[DirectMessageConfiguration]
   }
   
-  extension [Self <: DirectMessageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectMessageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setADMMessage(value: ADMMessage): Self = StObject.set(x, "ADMMessage", value.asInstanceOf[js.Any])
     

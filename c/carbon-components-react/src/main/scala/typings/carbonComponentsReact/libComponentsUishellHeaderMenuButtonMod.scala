@@ -500,7 +500,8 @@ object libComponentsUishellHeaderMenuButtonMod extends Shortcut {
       __obj.asInstanceOf[HeaderMenuButtonProps]
     }
     
-    extension [Self <: HeaderMenuButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderMenuButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

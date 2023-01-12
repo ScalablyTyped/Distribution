@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[LanguageNegotiationOptions]
     }
     
-    extension [Self <: LanguageNegotiationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageNegotiationOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       

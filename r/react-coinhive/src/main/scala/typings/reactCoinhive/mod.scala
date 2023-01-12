@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[CoinHiveProps]
     }
     
-    extension [Self <: CoinHiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoinHiveProps] (val x: Self) extends AnyVal {
       
       inline def setAutoThreads(value: Boolean): Self = StObject.set(x, "autoThreads", value.asInstanceOf[js.Any])
       

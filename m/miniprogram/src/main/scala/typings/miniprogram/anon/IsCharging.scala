@@ -17,7 +17,8 @@ object IsCharging {
     __obj.asInstanceOf[IsCharging]
   }
   
-  extension [Self <: IsCharging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsCharging] (val x: Self) extends AnyVal {
     
     inline def setIsCharging(value: Boolean): Self = StObject.set(x, "isCharging", value.asInstanceOf[js.Any])
     

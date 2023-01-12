@@ -21,7 +21,8 @@ object MediaQueryListEventInit {
     __obj.asInstanceOf[MediaQueryListEventInit]
   }
   
-  extension [Self <: MediaQueryListEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryListEventInit] (val x: Self) extends AnyVal {
     
     inline def setMatches(value: scala.Boolean): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     

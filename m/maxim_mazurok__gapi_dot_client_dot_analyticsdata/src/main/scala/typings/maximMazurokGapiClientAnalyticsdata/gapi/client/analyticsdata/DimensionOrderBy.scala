@@ -19,7 +19,8 @@ object DimensionOrderBy {
     __obj.asInstanceOf[DimensionOrderBy]
   }
   
-  extension [Self <: DimensionOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionOrderBy] (val x: Self) extends AnyVal {
     
     inline def setDimensionName(value: String): Self = StObject.set(x, "dimensionName", value.asInstanceOf[js.Any])
     

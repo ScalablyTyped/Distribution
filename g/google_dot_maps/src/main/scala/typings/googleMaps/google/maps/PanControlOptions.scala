@@ -22,7 +22,8 @@ object PanControlOptions {
     __obj.asInstanceOf[PanControlOptions]
   }
   
-  extension [Self <: PanControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanControlOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

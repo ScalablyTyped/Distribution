@@ -27,7 +27,8 @@ object DocumentCapture {
     __obj.asInstanceOf[DocumentCapture]
   }
   
-  extension [Self <: DocumentCapture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentCapture] (val x: Self) extends AnyVal {
     
     inline def setMax_total_retries(value: Double): Self = StObject.set(x, "max_total_retries", value.asInstanceOf[js.Any])
     

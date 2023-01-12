@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[AuthenticationOptions]
     }
     
-    extension [Self <: AuthenticationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationOptions] (val x: Self) extends AnyVal {
       
       inline def setAdminDn(value: String): Self = StObject.set(x, "adminDn", value.asInstanceOf[js.Any])
       

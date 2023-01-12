@@ -30,7 +30,8 @@ object ChoosePhoneContactOptions {
     __obj.asInstanceOf[ChoosePhoneContactOptions]
   }
   
-  extension [Self <: ChoosePhoneContactOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoosePhoneContactOptions] (val x: Self) extends AnyVal {
     
     inline def setFail(value: /* error */ `10` | `11` => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     

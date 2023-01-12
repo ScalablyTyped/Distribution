@@ -17,7 +17,8 @@ object ng {
       __obj.asInstanceOf[IAngularStatic]
     }
     
-    extension [Self <: IAngularStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAngularStatic] (val x: Self) extends AnyVal {
       
       inline def setScenario(value: Any): Self = StObject.set(x, "scenario", value.asInstanceOf[js.Any])
     }

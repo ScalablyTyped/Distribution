@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ConsumedPoints]
     }
     
-    extension [Self <: ConsumedPoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumedPoints] (val x: Self) extends AnyVal {
       
       inline def setConsumedPoints(value: Double): Self = StObject.set(x, "consumedPoints", value.asInstanceOf[js.Any])
       

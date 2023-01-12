@@ -22,7 +22,8 @@ object ConfigureManagementSettingsRequest {
     __obj.asInstanceOf[ConfigureManagementSettingsRequest]
   }
   
-  extension [Self <: ConfigureManagementSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureManagementSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setManagementSettings(value: ManagementSettings): Self = StObject.set(x, "managementSettings", value.asInstanceOf[js.Any])
     

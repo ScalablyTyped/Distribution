@@ -79,7 +79,8 @@ object SketchMSLayer {
     __obj.asInstanceOf[SketchMSLayer]
   }
   
-  extension [Self <: SketchMSLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSLayer] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: SketchMSLayerBooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

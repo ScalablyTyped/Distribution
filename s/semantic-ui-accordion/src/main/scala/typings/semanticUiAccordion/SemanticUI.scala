@@ -76,7 +76,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
           
@@ -130,13 +131,15 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
       
-      extension [Self <: ErrorSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
@@ -153,7 +156,8 @@ object SemanticUI {
           __obj.asInstanceOf[typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param]
         }
         
-        extension [Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.semanticUiAccordion.SemanticUI.Accordion.ErrorSettings.Param] (val x: Self) extends AnyVal {
           
           inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
@@ -191,7 +195,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setAccordion(value: String): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
           
@@ -406,7 +411,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAnimateChildren(value: Boolean): Self = StObject.set(x, "animateChildren", value.asInstanceOf[js.Any])
         

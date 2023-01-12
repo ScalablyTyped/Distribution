@@ -15,7 +15,8 @@ object EnumValuesAndroidStudio {
     __obj.asInstanceOf[EnumValuesAndroidStudio]
   }
   
-  extension [Self <: EnumValuesAndroidStudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesAndroidStudio] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: AndroidStudio): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

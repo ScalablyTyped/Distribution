@@ -18,7 +18,8 @@ object AnnotationConsolidationConfig {
     __obj.asInstanceOf[AnnotationConsolidationConfig]
   }
   
-  extension [Self <: AnnotationConsolidationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationConsolidationConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotationConsolidationLambdaArn(value: LambdaFunctionArn): Self = StObject.set(x, "AnnotationConsolidationLambdaArn", value.asInstanceOf[js.Any])
   }

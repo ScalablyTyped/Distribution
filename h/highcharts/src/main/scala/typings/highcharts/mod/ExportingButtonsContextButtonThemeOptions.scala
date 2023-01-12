@@ -29,7 +29,8 @@ object ExportingButtonsContextButtonThemeOptions {
     __obj.asInstanceOf[ExportingButtonsContextButtonThemeOptions]
   }
   
-  extension [Self <: ExportingButtonsContextButtonThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportingButtonsContextButtonThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ValueSetScope {
     __obj.asInstanceOf[ValueSetScope]
   }
   
-  extension [Self <: ValueSetScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSetScope] (val x: Self) extends AnyVal {
     
     inline def setExclusionCriteria(value: String): Self = StObject.set(x, "exclusionCriteria", value.asInstanceOf[js.Any])
     

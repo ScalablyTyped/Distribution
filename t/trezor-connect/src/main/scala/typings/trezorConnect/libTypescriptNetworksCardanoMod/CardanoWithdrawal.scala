@@ -21,7 +21,8 @@ object CardanoWithdrawal {
     __obj.asInstanceOf[CardanoWithdrawal]
   }
   
-  extension [Self <: CardanoWithdrawal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoWithdrawal] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

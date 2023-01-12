@@ -139,7 +139,8 @@ object chipChipMod extends Shortcut {
       __obj.asInstanceOf[ChipTypeMap[P, D]]
     }
     
-    extension [Self <: ChipTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ChipTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ChipTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: ChipClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object SchedulerEnterprise {
     __obj.asInstanceOf[SchedulerEnterprise]
   }
   
-  extension [Self <: SchedulerEnterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerEnterprise] (val x: Self) extends AnyVal {
     
     inline def setGetSchedulerInstance(value: () => SchedulerStatic): Self = StObject.set(x, "getSchedulerInstance", js.Any.fromFunction0(value))
   }

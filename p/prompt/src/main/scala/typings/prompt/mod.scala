@@ -101,7 +101,8 @@ object mod {
       __obj.asInstanceOf[History_]
     }
     
-    extension [Self <: History_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History_] (val x: Self) extends AnyVal {
       
       inline def setProperty(value: RevalidatorSchema | String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod {
       __obj.asInstanceOf[RevalidatorSchema]
     }
     
-    extension [Self <: RevalidatorSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RevalidatorSchema] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -308,7 +310,8 @@ object mod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     }
@@ -339,7 +342,8 @@ object mod {
       __obj.asInstanceOf[StartOptions]
     }
     
-    extension [Self <: StartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       

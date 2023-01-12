@@ -33,7 +33,8 @@ object DirectiveNode {
     __obj.asInstanceOf[DirectiveNode]
   }
   
-  extension [Self <: DirectiveNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveNode] (val x: Self) extends AnyVal {
     
     inline def setArg(value: ExpressionNode): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setScriptingDotSigner(value: Signer): Self = StObject.set(x, "Scripting.Signer", value.asInstanceOf[js.Any])
     

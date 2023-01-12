@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Coercer]
     }
     
-    extension [Self <: Coercer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coercer] (val x: Self) extends AnyVal {
       
       inline def setCoercer(value: Instantiable1[/* args */ OpenAPIRequestCoercerArgs, IOpenAPIRequestCoercer]): Self = StObject.set(x, "coercer", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object anon {
       __obj.asInstanceOf[DefaultSetter]
     }
     
-    extension [Self <: DefaultSetter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultSetter] (val x: Self) extends AnyVal {
       
       inline def setCoercer(value: IOpenAPIRequestCoercer): Self = StObject.set(x, "coercer", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Enum]
     }
     
-    extension [Self <: Enum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       

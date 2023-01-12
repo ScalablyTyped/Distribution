@@ -17,7 +17,8 @@ object TilingScheme {
     __obj.asInstanceOf[TilingScheme]
   }
   
-  extension [Self <: TilingScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TilingScheme] (val x: Self) extends AnyVal {
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     

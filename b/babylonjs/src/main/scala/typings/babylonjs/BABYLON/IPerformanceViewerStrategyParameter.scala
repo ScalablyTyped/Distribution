@@ -36,7 +36,8 @@ object IPerformanceViewerStrategyParameter {
     __obj.asInstanceOf[IPerformanceViewerStrategyParameter]
   }
   
-  extension [Self <: IPerformanceViewerStrategyParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPerformanceViewerStrategyParameter] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

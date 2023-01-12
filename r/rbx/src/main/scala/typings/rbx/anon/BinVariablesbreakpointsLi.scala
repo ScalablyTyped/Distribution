@@ -28,7 +28,8 @@ object BinVariablesbreakpointsLi {
     __obj.asInstanceOf[BinVariablesbreakpointsLi]
   }
   
-  extension [Self <: BinVariablesbreakpointsLi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinVariablesbreakpointsLi] (val x: Self) extends AnyVal {
     
     inline def setDesktop(value: ResponsiveBreakpointProps): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     

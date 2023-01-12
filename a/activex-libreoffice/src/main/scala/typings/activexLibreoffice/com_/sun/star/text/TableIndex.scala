@@ -80,7 +80,8 @@ object TableIndex {
     __obj.asInstanceOf[TableIndex]
   }
   
-  extension [Self <: TableIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableIndex] (val x: Self) extends AnyVal {
     
     inline def setCreateFromLabels(value: Boolean): Self = StObject.set(x, "CreateFromLabels", value.asInstanceOf[js.Any])
     

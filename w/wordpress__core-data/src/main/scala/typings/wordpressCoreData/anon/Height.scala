@@ -24,7 +24,8 @@ object Height {
     __obj.asInstanceOf[Height]
   }
   
-  extension [Self <: Height](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
     
     inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

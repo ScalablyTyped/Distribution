@@ -20,7 +20,8 @@ object UploadMetadata {
     __obj.asInstanceOf[UploadMetadata]
   }
   
-  extension [Self <: UploadMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadMetadata] (val x: Self) extends AnyVal {
     
     inline def setMd5Hash(value: String): Self = StObject.set(x, "md5Hash", value.asInstanceOf[js.Any])
     

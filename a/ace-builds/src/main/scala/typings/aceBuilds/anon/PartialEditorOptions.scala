@@ -140,7 +140,8 @@ object PartialEditorOptions {
     __obj.asInstanceOf[PartialEditorOptions]
   }
   
-  extension [Self <: PartialEditorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEditorOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimatedScroll(value: Boolean): Self = StObject.set(x, "animatedScroll", value.asInstanceOf[js.Any])
     

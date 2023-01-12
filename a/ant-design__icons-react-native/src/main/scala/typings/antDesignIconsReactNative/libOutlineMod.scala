@@ -2377,7 +2377,8 @@ object libOutlineMod {
       __obj.asInstanceOf[IconOutlineProps]
     }
     
-    extension [Self <: IconOutlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOutlineProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

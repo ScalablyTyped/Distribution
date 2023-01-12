@@ -19,7 +19,8 @@ object UpdateByQueryRethrottleRequest {
     __obj.asInstanceOf[UpdateByQueryRethrottleRequest]
   }
   
-  extension [Self <: UpdateByQueryRethrottleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByQueryRethrottleRequest] (val x: Self) extends AnyVal {
     
     inline def setRequests_per_second(value: float): Self = StObject.set(x, "requests_per_second", value.asInstanceOf[js.Any])
     

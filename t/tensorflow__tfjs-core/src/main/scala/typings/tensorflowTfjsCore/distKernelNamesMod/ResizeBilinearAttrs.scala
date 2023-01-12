@@ -19,7 +19,8 @@ object ResizeBilinearAttrs {
     __obj.asInstanceOf[ResizeBilinearAttrs]
   }
   
-  extension [Self <: ResizeBilinearAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeBilinearAttrs] (val x: Self) extends AnyVal {
     
     inline def setAlignCorners(value: Boolean): Self = StObject.set(x, "alignCorners", value.asInstanceOf[js.Any])
     

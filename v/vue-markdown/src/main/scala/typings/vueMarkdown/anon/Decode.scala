@@ -21,7 +21,8 @@ object Decode {
     __obj.asInstanceOf[Decode]
   }
   
-  extension [Self <: Decode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Decode] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: scala.Any): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
     

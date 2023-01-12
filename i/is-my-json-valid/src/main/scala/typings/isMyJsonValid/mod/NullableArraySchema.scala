@@ -20,7 +20,8 @@ object NullableArraySchema {
     __obj.asInstanceOf[NullableArraySchema[ItemSchema]]
   }
   
-  extension [Self <: NullableArraySchema[?], ItemSchema /* <: AnySchema */](x: Self & NullableArraySchema[ItemSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableArraySchema[?], ItemSchema /* <: AnySchema */] (val x: Self & NullableArraySchema[ItemSchema]) extends AnyVal {
     
     inline def setItems(value: ItemSchema): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

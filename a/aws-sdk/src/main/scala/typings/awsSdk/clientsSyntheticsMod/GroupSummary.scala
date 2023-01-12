@@ -28,7 +28,8 @@ object GroupSummary {
     __obj.asInstanceOf[GroupSummary]
   }
   
-  extension [Self <: GroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: GroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

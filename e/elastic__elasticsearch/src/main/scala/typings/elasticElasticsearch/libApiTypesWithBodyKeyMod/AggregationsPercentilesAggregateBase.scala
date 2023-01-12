@@ -17,7 +17,8 @@ object AggregationsPercentilesAggregateBase {
     __obj.asInstanceOf[AggregationsPercentilesAggregateBase]
   }
   
-  extension [Self <: AggregationsPercentilesAggregateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsPercentilesAggregateBase] (val x: Self) extends AnyVal {
     
     inline def setValues(value: AggregationsPercentiles): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

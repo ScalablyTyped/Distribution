@@ -28,7 +28,8 @@ object BasicSeriesDataPointStyleOverride {
     __obj.asInstanceOf[BasicSeriesDataPointStyleOverride]
   }
   
-  extension [Self <: BasicSeriesDataPointStyleOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicSeriesDataPointStyleOverride] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object S3ObjectACLUpdatedNotificationEvent {
     __obj.asInstanceOf[S3ObjectACLUpdatedNotificationEvent]
   }
   
-  extension [Self <: S3ObjectACLUpdatedNotificationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectACLUpdatedNotificationEvent] (val x: Self) extends AnyVal {
     
     inline def setSource(value: awsDots3): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

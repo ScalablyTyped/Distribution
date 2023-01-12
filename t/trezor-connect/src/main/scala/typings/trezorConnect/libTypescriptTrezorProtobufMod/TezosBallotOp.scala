@@ -21,7 +21,8 @@ object TezosBallotOp {
     __obj.asInstanceOf[TezosBallotOp]
   }
   
-  extension [Self <: TezosBallotOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosBallotOp] (val x: Self) extends AnyVal {
     
     inline def setBallot(value: TezosBallotType): Self = StObject.set(x, "ballot", value.asInstanceOf[js.Any])
     

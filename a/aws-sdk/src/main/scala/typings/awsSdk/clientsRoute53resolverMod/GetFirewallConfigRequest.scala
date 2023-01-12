@@ -18,7 +18,8 @@ object GetFirewallConfigRequest {
     __obj.asInstanceOf[GetFirewallConfigRequest]
   }
   
-  extension [Self <: GetFirewallConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFirewallConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

@@ -435,7 +435,8 @@ object ResolvedConfigOptions {
     __obj.asInstanceOf[ResolvedConfigOptions[ComponentDevServerOpts]]
   }
   
-  extension [Self <: ResolvedConfigOptions[?], ComponentDevServerOpts](x: Self & ResolvedConfigOptions[ComponentDevServerOpts]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedConfigOptions[?], ComponentDevServerOpts] (val x: Self & ResolvedConfigOptions[ComponentDevServerOpts]) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

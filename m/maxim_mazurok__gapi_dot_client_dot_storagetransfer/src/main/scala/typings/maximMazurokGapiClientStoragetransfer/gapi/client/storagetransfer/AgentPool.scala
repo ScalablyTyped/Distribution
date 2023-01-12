@@ -25,7 +25,8 @@ object AgentPool {
     __obj.asInstanceOf[AgentPool]
   }
   
-  extension [Self <: AgentPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentPool] (val x: Self) extends AnyVal {
     
     inline def setBandwidthLimit(value: BandwidthLimit): Self = StObject.set(x, "bandwidthLimit", value.asInstanceOf[js.Any])
     

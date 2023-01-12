@@ -17,7 +17,8 @@ object Typeofsha512 {
     __obj.asInstanceOf[Typeofsha512]
   }
   
-  extension [Self <: Typeofsha512](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofsha512] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: Any): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     

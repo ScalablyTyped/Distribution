@@ -52,7 +52,8 @@ object distGlslVersionMod {
       __obj.asInstanceOf[GLSL]
     }
     
-    extension [Self <: GLSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLSL] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       

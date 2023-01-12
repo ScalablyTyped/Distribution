@@ -33,7 +33,8 @@ object ComplianceViolator {
     __obj.asInstanceOf[ComplianceViolator]
   }
   
-  extension [Self <: ComplianceViolator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceViolator] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: ComplianceViolatorMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

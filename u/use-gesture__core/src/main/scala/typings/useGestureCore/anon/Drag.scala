@@ -26,7 +26,8 @@ object Drag {
     __obj.asInstanceOf[Drag]
   }
   
-  extension [Self <: Drag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Drag] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: EventStore): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

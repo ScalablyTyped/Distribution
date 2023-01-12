@@ -36,7 +36,8 @@ object Widgets {
       __obj.asInstanceOf[DrawerOptions]
     }
     
-    extension [Self <: DrawerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerOptions] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object Widgets {
       __obj.asInstanceOf[ModalButtonDescriptor]
     }
     
-    extension [Self <: ModalButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object Widgets {
       __obj.asInstanceOf[ModalOptions]
     }
     
-    extension [Self <: ModalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[ModalButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object Widgets {
       __obj.asInstanceOf[ModalView]
     }
     
-    extension [Self <: ModalView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalView] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -209,7 +213,8 @@ object Widgets {
       __obj.asInstanceOf[MoleButtonDescriptor]
     }
     
-    extension [Self <: MoleButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoleButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object Widgets {
       __obj.asInstanceOf[MoleOptions]
     }
     
-    extension [Self <: MoleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoleOptions] (val x: Self) extends AnyVal {
       
       inline def setChrome(value: Boolean): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
       
@@ -306,7 +312,8 @@ object Widgets {
       __obj.asInstanceOf[MoleView]
     }
     
-    extension [Self <: MoleView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoleView] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -341,7 +348,8 @@ object Widgets {
       __obj.asInstanceOf[WidgetsInstance]
     }
     
-    extension [Self <: WidgetsInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetsInstance] (val x: Self) extends AnyVal {
       
       inline def setShowDrawerView(value: DrawerOptions => DrawerView): Self = StObject.set(x, "showDrawerView", js.Any.fromFunction1(value))
       

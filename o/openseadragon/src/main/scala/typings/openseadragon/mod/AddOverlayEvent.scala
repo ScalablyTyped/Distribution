@@ -22,7 +22,8 @@ object AddOverlayEvent {
     __obj.asInstanceOf[AddOverlayEvent]
   }
   
-  extension [Self <: AddOverlayEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOverlayEvent] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

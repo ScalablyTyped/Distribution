@@ -519,7 +519,8 @@ object FormMessagePropsPartialFo {
     __obj.asInstanceOf[FormMessagePropsPartialFo]
   }
   
-  extension [Self <: FormMessagePropsPartialFo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormMessagePropsPartialFo] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

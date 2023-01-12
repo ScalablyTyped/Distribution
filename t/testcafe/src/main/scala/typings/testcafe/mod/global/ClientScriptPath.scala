@@ -18,7 +18,8 @@ object ClientScriptPath {
     __obj.asInstanceOf[ClientScriptPath]
   }
   
-  extension [Self <: ClientScriptPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientScriptPath] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

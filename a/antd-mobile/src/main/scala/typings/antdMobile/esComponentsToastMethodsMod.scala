@@ -40,7 +40,8 @@ object esComponentsToastMethodsMod {
       __obj.asInstanceOf[ToastHandler]
     }
     
-    extension [Self <: ToastHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastHandler] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }
@@ -76,7 +77,8 @@ object esComponentsToastMethodsMod {
       __obj.asInstanceOf[ToastShowProps]
     }
     
-    extension [Self <: ToastShowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastShowProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

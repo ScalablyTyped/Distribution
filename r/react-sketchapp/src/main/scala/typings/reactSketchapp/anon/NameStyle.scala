@@ -19,7 +19,8 @@ object NameStyle {
     __obj.asInstanceOf[NameStyle]
   }
   
-  extension [Self <: NameStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameStyle] (val x: Self) extends AnyVal {
     
     inline def setName(value: Requireable[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object OperationDefinition {
     __obj.asInstanceOf[OperationDefinition]
   }
   
-  extension [Self <: OperationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDefinition] (val x: Self) extends AnyVal {
     
     inline def setDirectives(value: js.Array[Directive]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     

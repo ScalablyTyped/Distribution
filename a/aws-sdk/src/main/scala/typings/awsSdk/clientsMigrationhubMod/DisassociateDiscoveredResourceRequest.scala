@@ -37,7 +37,8 @@ object DisassociateDiscoveredResourceRequest {
     __obj.asInstanceOf[DisassociateDiscoveredResourceRequest]
   }
   
-  extension [Self <: DisassociateDiscoveredResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateDiscoveredResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     

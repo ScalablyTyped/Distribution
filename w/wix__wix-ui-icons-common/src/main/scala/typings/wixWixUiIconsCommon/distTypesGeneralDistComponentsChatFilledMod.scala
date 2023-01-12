@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsChatFilledMod extends Shortcut {
       __obj.asInstanceOf[ChatFilledProps]
     }
     
-    extension [Self <: ChatFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object AllThreadsStopped {
     __obj.asInstanceOf[AllThreadsStopped]
   }
   
-  extension [Self <: AllThreadsStopped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllThreadsStopped] (val x: Self) extends AnyVal {
     
     inline def setAllThreadsStopped(value: Boolean): Self = StObject.set(x, "allThreadsStopped", value.asInstanceOf[js.Any])
     

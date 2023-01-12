@@ -41,7 +41,8 @@ object KRWPHP {
     __obj.asInstanceOf[KRWPHP]
   }
   
-  extension [Self <: KRWPHP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KRWPHP] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DetachFromIndexResponse {
     __obj.asInstanceOf[DetachFromIndexResponse]
   }
   
-  extension [Self <: DetachFromIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachFromIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setDetachedObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "DetachedObjectIdentifier", value.asInstanceOf[js.Any])
     

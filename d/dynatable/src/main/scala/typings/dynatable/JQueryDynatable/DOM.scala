@@ -20,7 +20,8 @@ object DOM {
     __obj.asInstanceOf[DOM]
   }
   
-  extension [Self <: DOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOM] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }

@@ -19,7 +19,8 @@ object CreateWorkerOption {
     __obj.asInstanceOf[CreateWorkerOption]
   }
   
-  extension [Self <: CreateWorkerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkerOption] (val x: Self) extends AnyVal {
     
     inline def setUseExperimentalWorker(value: Boolean): Self = StObject.set(x, "useExperimentalWorker", value.asInstanceOf[js.Any])
     

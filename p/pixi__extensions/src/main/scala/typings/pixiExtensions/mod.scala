@@ -177,7 +177,8 @@ object mod {
       __obj.asInstanceOf[ExtensionFormat]
     }
     
-    extension [Self <: ExtensionFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionFormat] (val x: Self) extends AnyVal {
       
       inline def setType(value: js.Array[ExtensionType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object mod {
       __obj.asInstanceOf[ExtensionFormatLoose]
     }
     
-    extension [Self <: ExtensionFormatLoose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionFormatLoose] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object mod {
       __obj.asInstanceOf[ExtensionMetadataDetails]
     }
     
-    extension [Self <: ExtensionMetadataDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensionMetadataDetails] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

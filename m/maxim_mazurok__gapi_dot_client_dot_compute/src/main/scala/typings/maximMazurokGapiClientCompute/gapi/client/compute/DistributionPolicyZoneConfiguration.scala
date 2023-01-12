@@ -16,7 +16,8 @@ object DistributionPolicyZoneConfiguration {
     __obj.asInstanceOf[DistributionPolicyZoneConfiguration]
   }
   
-  extension [Self <: DistributionPolicyZoneConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPolicyZoneConfiguration] (val x: Self) extends AnyVal {
     
     inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IHitResultContinuousEventData {
     __obj.asInstanceOf[IHitResultContinuousEventData]
   }
   
-  extension [Self <: IHitResultContinuousEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHitResultContinuousEventData] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: IEntity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

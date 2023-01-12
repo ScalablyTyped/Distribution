@@ -59,7 +59,8 @@ object modulesButtonMod {
       __obj.asInstanceOf[ButtonRenderer]
     }
     
-    extension [Self <: ButtonRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonRenderer] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (AccessToken, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }

@@ -191,7 +191,8 @@ object anon {
       __obj.asInstanceOf[Accesstoken]
     }
     
-    extension [Self <: Accesstoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
       
       inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
       
@@ -393,7 +394,8 @@ object anon {
       __obj.asInstanceOf[ByteSize]
     }
     
-    extension [Self <: ByteSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteSize] (val x: Self) extends AnyVal {
       
       inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
       
@@ -440,7 +442,8 @@ object anon {
       __obj.asInstanceOf[CorrectedQuery]
     }
     
-    extension [Self <: CorrectedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorrectedQuery] (val x: Self) extends AnyVal {
       
       inline def setCorrectedQuery(value: String): Self = StObject.set(x, "correctedQuery", value.asInstanceOf[js.Any])
       
@@ -622,7 +625,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -788,7 +792,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -825,7 +830,8 @@ object anon {
       __obj.asInstanceOf[FormattedSearchTime]
     }
     
-    extension [Self <: FormattedSearchTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedSearchTime] (val x: Self) extends AnyVal {
       
       inline def setFormattedSearchTime(value: String): Self = StObject.set(x, "formattedSearchTime", value.asInstanceOf[js.Any])
       
@@ -863,7 +869,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -900,7 +907,8 @@ object anon {
       __obj.asInstanceOf[HtmlTitle]
     }
     
-    extension [Self <: HtmlTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlTitle] (val x: Self) extends AnyVal {
       
       inline def setHtmlTitle(value: String): Self = StObject.set(x, "htmlTitle", value.asInstanceOf[js.Any])
       
@@ -938,7 +946,8 @@ object anon {
       __obj.asInstanceOf[NextPage]
     }
     
-    extension [Self <: NextPage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NextPage] (val x: Self) extends AnyVal {
       
       inline def setNextPage(value: js.Array[Count]): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
       
@@ -975,7 +984,8 @@ object anon {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       

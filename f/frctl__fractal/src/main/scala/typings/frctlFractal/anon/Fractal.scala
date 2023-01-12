@@ -16,7 +16,8 @@ object Fractal {
     __obj.asInstanceOf[Fractal]
   }
   
-  extension [Self <: Fractal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fractal] (val x: Self) extends AnyVal {
     
     inline def setFractal(value: Fractal_): Self = StObject.set(x, "fractal", value.asInstanceOf[js.Any])
   }

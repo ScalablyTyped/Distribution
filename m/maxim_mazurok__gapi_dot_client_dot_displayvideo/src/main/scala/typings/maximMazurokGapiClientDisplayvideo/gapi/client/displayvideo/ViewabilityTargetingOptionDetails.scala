@@ -16,7 +16,8 @@ object ViewabilityTargetingOptionDetails {
     __obj.asInstanceOf[ViewabilityTargetingOptionDetails]
   }
   
-  extension [Self <: ViewabilityTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewabilityTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
     

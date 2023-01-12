@@ -18,7 +18,8 @@ object distClientModelsWebhooksWebhooksMod {
       __obj.asInstanceOf[Webhooks]
     }
     
-    extension [Self <: Webhooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Webhooks] (val x: Self) extends AnyVal {
       
       inline def setWebhooks(value: js.Array[Webhook]): Self = StObject.set(x, "Webhooks", value.asInstanceOf[js.Any])
       

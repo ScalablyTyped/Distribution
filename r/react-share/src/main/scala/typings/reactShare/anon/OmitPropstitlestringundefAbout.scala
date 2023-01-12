@@ -508,7 +508,8 @@ object OmitPropstitlestringundefAbout {
     __obj.asInstanceOf[OmitPropstitlestringundefAbout]
   }
   
-  extension [Self <: OmitPropstitlestringundefAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropstitlestringundefAbout] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ScanDetections {
     __obj.asInstanceOf[ScanDetections]
   }
   
-  extension [Self <: ScanDetections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanDetections] (val x: Self) extends AnyVal {
     
     inline def setHighestSeverityThreatDetails(value: HighestSeverityThreatDetails): Self = StObject.set(x, "HighestSeverityThreatDetails", value.asInstanceOf[js.Any])
     

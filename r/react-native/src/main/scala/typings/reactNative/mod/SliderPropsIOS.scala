@@ -39,7 +39,8 @@ object SliderPropsIOS {
     __obj.asInstanceOf[SliderPropsIOS]
   }
   
-  extension [Self <: SliderPropsIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderPropsIOS] (val x: Self) extends AnyVal {
     
     inline def setMaximumTrackImage(value: ImageURISource): Self = StObject.set(x, "maximumTrackImage", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object KeyParam {
     __obj.asInstanceOf[KeyParam]
   }
   
-  extension [Self <: KeyParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyParam] (val x: Self) extends AnyVal {
     
     inline def set$flat(value: Boolean): Self = StObject.set(x, "$flat", value.asInstanceOf[js.Any])
     

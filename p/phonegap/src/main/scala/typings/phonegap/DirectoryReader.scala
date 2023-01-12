@@ -20,7 +20,8 @@ object DirectoryReader {
     __obj.asInstanceOf[DirectoryReader]
   }
   
-  extension [Self <: DirectoryReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryReader] (val x: Self) extends AnyVal {
     
     inline def setReadEntries(
       value: (js.Function1[/* entries */ FileSystemEntry, Unit], js.Function1[/* error */ FileError, Unit]) => Unit

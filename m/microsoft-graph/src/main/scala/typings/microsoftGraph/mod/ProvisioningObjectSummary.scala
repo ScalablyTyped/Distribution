@@ -69,7 +69,8 @@ object ProvisioningObjectSummary {
     __obj.asInstanceOf[ProvisioningObjectSummary]
   }
   
-  extension [Self <: ProvisioningObjectSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningObjectSummary] (val x: Self) extends AnyVal {
     
     inline def setActivityDateTime(value: String): Self = StObject.set(x, "activityDateTime", value.asInstanceOf[js.Any])
     

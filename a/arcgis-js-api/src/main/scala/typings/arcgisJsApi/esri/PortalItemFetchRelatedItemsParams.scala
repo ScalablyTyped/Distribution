@@ -29,7 +29,8 @@ object PortalItemFetchRelatedItemsParams {
     __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
   }
   
-  extension [Self <: PortalItemFetchRelatedItemsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemFetchRelatedItemsParams] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: forward | reverse): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

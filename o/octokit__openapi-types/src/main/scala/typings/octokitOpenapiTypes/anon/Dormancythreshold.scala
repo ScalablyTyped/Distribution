@@ -17,7 +17,8 @@ object Dormancythreshold {
     __obj.asInstanceOf[Dormancythreshold]
   }
   
-  extension [Self <: Dormancythreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dormancythreshold] (val x: Self) extends AnyVal {
     
     inline def setDormancy_threshold(value: String): Self = StObject.set(x, "dormancy_threshold", value.asInstanceOf[js.Any])
     

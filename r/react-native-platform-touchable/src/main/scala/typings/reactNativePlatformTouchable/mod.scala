@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[PlatformTouchableProps]
     }
     
-    extension [Self <: PlatformTouchableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformTouchableProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[BasicStrategyOptions[req]]
     }
     
-    extension [Self <: BasicStrategyOptions[?], req /* <: Boolean */](x: Self & BasicStrategyOptions[req]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicStrategyOptions[?], req /* <: Boolean */] (val x: Self & BasicStrategyOptions[req]) extends AnyVal {
       
       inline def setPassReqToCallback(value: req): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[DigestStrategyOptions]
     }
     
-    extension [Self <: DigestStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object mod {
       __obj.asInstanceOf[DigestValidateOptions]
     }
     
-    extension [Self <: DigestValidateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DigestValidateOptions] (val x: Self) extends AnyVal {
       
       inline def setCnonce(value: String): Self = StObject.set(x, "cnonce", value.asInstanceOf[js.Any])
       

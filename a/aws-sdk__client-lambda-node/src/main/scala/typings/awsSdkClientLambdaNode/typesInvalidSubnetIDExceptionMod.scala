@@ -21,7 +21,8 @@ object typesInvalidSubnetIDExceptionMod {
       __obj.asInstanceOf[InvalidSubnetIDException]
     }
     
-    extension [Self <: InvalidSubnetIDException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSubnetIDException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidSubnetIDException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object typesInvalidSubnetIDExceptionMod {
       __obj.asInstanceOf[InvalidSubnetIDExceptionDetails]
     }
     
-    extension [Self <: InvalidSubnetIDExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidSubnetIDExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

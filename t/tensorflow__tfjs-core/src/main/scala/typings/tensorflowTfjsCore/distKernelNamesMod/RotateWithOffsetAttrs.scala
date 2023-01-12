@@ -23,7 +23,8 @@ object RotateWithOffsetAttrs {
     __obj.asInstanceOf[RotateWithOffsetAttrs]
   }
   
-  extension [Self <: RotateWithOffsetAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateWithOffsetAttrs] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

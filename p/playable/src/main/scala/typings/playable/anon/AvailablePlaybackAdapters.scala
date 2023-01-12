@@ -26,7 +26,8 @@ object AvailablePlaybackAdapters {
     __obj.asInstanceOf[AvailablePlaybackAdapters]
   }
   
-  extension [Self <: AvailablePlaybackAdapters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailablePlaybackAdapters] (val x: Self) extends AnyVal {
     
     inline def setAvailablePlaybackAdapters(value: js.Array[IPlaybackAdapterClass]): Self = StObject.set(x, "availablePlaybackAdapters", value.asInstanceOf[js.Any])
     

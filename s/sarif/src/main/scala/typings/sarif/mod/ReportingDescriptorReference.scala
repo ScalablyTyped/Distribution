@@ -39,7 +39,8 @@ object ReportingDescriptorReference {
     __obj.asInstanceOf[ReportingDescriptorReference]
   }
   
-  extension [Self <: ReportingDescriptorReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportingDescriptorReference] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

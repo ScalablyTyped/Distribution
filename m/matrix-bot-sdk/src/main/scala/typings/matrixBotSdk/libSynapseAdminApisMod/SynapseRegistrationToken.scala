@@ -23,7 +23,8 @@ object SynapseRegistrationToken {
     __obj.asInstanceOf[SynapseRegistrationToken]
   }
   
-  extension [Self <: SynapseRegistrationToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseRegistrationToken] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

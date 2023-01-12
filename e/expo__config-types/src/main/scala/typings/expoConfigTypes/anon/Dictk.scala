@@ -21,7 +21,8 @@ object Dictk {
     __obj.asInstanceOf[Dictk]
   }
   
-  extension [Self <: Dictk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
     
     inline def setPluginHistory(value: StringDictionary[Any]): Self = StObject.set(x, "pluginHistory", value.asInstanceOf[js.Any])
     

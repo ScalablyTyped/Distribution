@@ -17,7 +17,8 @@ object ReleaseUpdatedEvent {
     __obj.asInstanceOf[ReleaseUpdatedEvent]
   }
   
-  extension [Self <: ReleaseUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setRelease(value: Release): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }

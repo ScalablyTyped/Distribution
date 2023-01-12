@@ -23,7 +23,8 @@ object EnterExitAnimationOptions {
     __obj.asInstanceOf[EnterExitAnimationOptions]
   }
   
-  extension [Self <: EnterExitAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterExitAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setEnter(value: ViewAnimationOptions): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

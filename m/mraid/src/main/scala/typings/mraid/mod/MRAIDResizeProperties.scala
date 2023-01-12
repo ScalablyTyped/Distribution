@@ -24,7 +24,8 @@ object MRAIDResizeProperties {
     __obj.asInstanceOf[MRAIDResizeProperties]
   }
   
-  extension [Self <: MRAIDResizeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MRAIDResizeProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowOffscreen(value: Boolean): Self = StObject.set(x, "allowOffscreen", value.asInstanceOf[js.Any])
     

@@ -176,7 +176,8 @@ object IMapOptions {
     __obj.asInstanceOf[IMapOptions]
   }
   
-  extension [Self <: IMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHidingLabelsOfRoad(value: Boolean): Self = StObject.set(x, "allowHidingLabelsOfRoad", value.asInstanceOf[js.Any])
     

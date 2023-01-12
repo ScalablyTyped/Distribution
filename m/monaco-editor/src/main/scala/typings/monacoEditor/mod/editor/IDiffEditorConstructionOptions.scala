@@ -43,7 +43,8 @@ object IDiffEditorConstructionOptions {
     __obj.asInstanceOf[IDiffEditorConstructionOptions]
   }
   
-  extension [Self <: IDiffEditorConstructionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffEditorConstructionOptions] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: IDimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

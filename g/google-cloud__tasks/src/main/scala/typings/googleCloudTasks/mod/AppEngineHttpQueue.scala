@@ -15,7 +15,8 @@ object AppEngineHttpQueue {
     __obj.asInstanceOf[AppEngineHttpQueue]
   }
   
-  extension [Self <: AppEngineHttpQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppEngineHttpQueue] (val x: Self) extends AnyVal {
     
     inline def setAppEngineRoutingOverride(value: AppEngineRouting): Self = StObject.set(x, "appEngineRoutingOverride", value.asInstanceOf[js.Any])
   }

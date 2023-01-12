@@ -40,7 +40,8 @@ object CanvasPolyline {
     __obj.asInstanceOf[CanvasPolyline]
   }
   
-  extension [Self <: CanvasPolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPolyline] (val x: Self) extends AnyVal {
     
     inline def setClosePath(value: Boolean): Self = StObject.set(x, "closePath", value.asInstanceOf[js.Any])
     

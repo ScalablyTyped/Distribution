@@ -500,7 +500,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyConvertOptions]
     }
     
-    extension [Self <: ReadonlyConvertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyConvertOptions] (val x: Self) extends AnyVal {
       
       inline def `set-adaptive-blur`(value: String): Self = StObject.set(x, "-adaptive-blur", value.asInstanceOf[js.Any])
       

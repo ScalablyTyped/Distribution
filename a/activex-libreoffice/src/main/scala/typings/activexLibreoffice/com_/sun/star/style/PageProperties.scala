@@ -444,7 +444,8 @@ object PageProperties {
     __obj.asInstanceOf[PageProperties]
   }
   
-  extension [Self <: PageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageProperties] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

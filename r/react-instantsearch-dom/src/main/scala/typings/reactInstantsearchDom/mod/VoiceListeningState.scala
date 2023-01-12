@@ -31,7 +31,8 @@ object VoiceListeningState {
     __obj.asInstanceOf[VoiceListeningState]
   }
   
-  extension [Self <: VoiceListeningState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceListeningState] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(
       value: `no-speech` | aborted | `audio-capture` | network | `not-allowed` | `service-not-allowed` | `bad-grammar` | `language-not-supported`

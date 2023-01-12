@@ -46,7 +46,8 @@ object VideoFileDetails {
     __obj.asInstanceOf[VideoFileDetails]
   }
   
-  extension [Self <: VideoFileDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFileDetails] (val x: Self) extends AnyVal {
     
     inline def setAudioStreams(value: js.Array[VideoFileDetailsAudioStream]): Self = StObject.set(x, "audioStreams", value.asInstanceOf[js.Any])
     

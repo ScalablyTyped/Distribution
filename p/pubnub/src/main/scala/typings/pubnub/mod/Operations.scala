@@ -122,7 +122,8 @@ object Operations {
     __obj.asInstanceOf[Operations]
   }
   
-  extension [Self <: Operations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Operations] (val x: Self) extends AnyVal {
     
     inline def setPNAccessManagerAudit(value: String): Self = StObject.set(x, "PNAccessManagerAudit", value.asInstanceOf[js.Any])
     

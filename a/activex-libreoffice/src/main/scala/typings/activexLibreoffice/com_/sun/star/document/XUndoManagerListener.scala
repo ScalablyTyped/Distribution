@@ -123,7 +123,8 @@ object XUndoManagerListener {
     __obj.asInstanceOf[XUndoManagerListener]
   }
   
-  extension [Self <: XUndoManagerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUndoManagerListener] (val x: Self) extends AnyVal {
     
     inline def setActionRedone(value: UndoManagerEvent => Unit): Self = StObject.set(x, "actionRedone", js.Any.fromFunction1(value))
     

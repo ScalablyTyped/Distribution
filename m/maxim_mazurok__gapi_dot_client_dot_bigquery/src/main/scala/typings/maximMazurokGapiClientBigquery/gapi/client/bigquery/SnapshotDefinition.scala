@@ -19,7 +19,8 @@ object SnapshotDefinition {
     __obj.asInstanceOf[SnapshotDefinition]
   }
   
-  extension [Self <: SnapshotDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotDefinition] (val x: Self) extends AnyVal {
     
     inline def setBaseTableReference(value: TableReference): Self = StObject.set(x, "baseTableReference", value.asInstanceOf[js.Any])
     

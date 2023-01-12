@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`[T]]
     }
     
-    extension [Self <: `0`[?], T /* <: js.Array[String] */](x: Self & `0`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], T /* <: js.Array[String] */] (val x: Self & `0`[T]) extends AnyVal {
       
       inline def setWorkspaces(value: T): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[`1`[T]]
     }
     
-    extension [Self <: `1`[?], T /* <: js.Array[String] */](x: Self & `1`[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?], T /* <: js.Array[String] */] (val x: Self & `1`[T]) extends AnyVal {
       
       inline def setWorkspaces(value: Packages[T]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Done]
     }
     
-    extension [Self <: Done](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -80,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Packages[T]]
     }
     
-    extension [Self <: Packages[?], T /* <: js.Array[String] */](x: Self & Packages[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packages[?], T /* <: js.Array[String] */] (val x: Self & Packages[T]) extends AnyVal {
       
       inline def setPackages(value: T): Self = StObject.set(x, "packages", value.asInstanceOf[js.Any])
     }
@@ -97,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Workspaces]
     }
     
-    extension [Self <: Workspaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Workspaces] (val x: Self) extends AnyVal {
       
       inline def setWorkspaces(value: Any): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
       

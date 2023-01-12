@@ -20,7 +20,8 @@ object GenericOpt {
     __obj.asInstanceOf[GenericOpt[T]]
   }
   
-  extension [Self <: GenericOpt[?], T /* <: OptCodeType */](x: Self & GenericOpt[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericOpt[?], T /* <: OptCodeType */] (val x: Self & GenericOpt[T]) extends AnyVal {
     
     inline def setCode(value: OptCode[T]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

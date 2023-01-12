@@ -17,7 +17,8 @@ object PhononEventObject {
     __obj.asInstanceOf[PhononEventObject]
   }
   
-  extension [Self <: PhononEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononEventObject] (val x: Self) extends AnyVal {
     
     inline def setAnimationEnd(value: String): Self = StObject.set(x, "animationEnd", value.asInstanceOf[js.Any])
     

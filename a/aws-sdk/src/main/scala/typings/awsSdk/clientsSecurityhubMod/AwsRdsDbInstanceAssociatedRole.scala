@@ -28,7 +28,8 @@ object AwsRdsDbInstanceAssociatedRole {
     __obj.asInstanceOf[AwsRdsDbInstanceAssociatedRole]
   }
   
-  extension [Self <: AwsRdsDbInstanceAssociatedRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbInstanceAssociatedRole] (val x: Self) extends AnyVal {
     
     inline def setFeatureName(value: NonEmptyString): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     

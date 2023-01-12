@@ -23,7 +23,8 @@ object NodegroupResources {
     __obj.asInstanceOf[NodegroupResources]
   }
   
-  extension [Self <: NodegroupResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodegroupResources] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroups(value: AutoScalingGroupList): Self = StObject.set(x, "autoScalingGroups", value.asInstanceOf[js.Any])
     

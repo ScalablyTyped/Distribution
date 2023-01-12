@@ -29,7 +29,8 @@ object distTypesMod {
       __obj.asInstanceOf[EmitterType]
     }
     
-    extension [Self <: EmitterType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitterType] (val x: Self) extends AnyVal {
       
       inline def setTrigger(value: (String, js.Object) => Unit): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
     }
@@ -46,7 +47,8 @@ object distTypesMod {
       __obj.asInstanceOf[IframeApiType]
     }
     
-    extension [Self <: IframeApiType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IframeApiType] (val x: Self) extends AnyVal {
       
       inline def setPlayer(value: Instantiable): Self = StObject.set(x, "Player", value.asInstanceOf[js.Any])
     }
@@ -73,7 +75,8 @@ object distTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: eventTypeinEventTypeevent): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       

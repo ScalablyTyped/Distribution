@@ -32,7 +32,8 @@ object mod {
         __obj.asInstanceOf[DefaultProps[T]]
       }
       
-      extension [Self <: DefaultProps[?], T](x: Self & DefaultProps[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultProps[?], T] (val x: Self & DefaultProps[T]) extends AnyVal {
         
         inline def setCompareValues(value: (T, T) => Boolean): Self = StObject.set(x, "compareValues", js.Any.fromFunction2(value))
       }
@@ -56,7 +57,8 @@ object mod {
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T](x: Self & Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], T] (val x: Self & Props[T]) extends AnyVal {
         
         inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         
@@ -97,7 +99,8 @@ object mod {
         __obj.asInstanceOf[DefaultProps]
       }
       
-      extension [Self <: DefaultProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
         
         inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       }
@@ -119,7 +122,8 @@ object mod {
         __obj.asInstanceOf[typings.reactBroadcast.mod.Subscriber.Props[T]]
       }
       
-      extension [Self <: typings.reactBroadcast.mod.Subscriber.Props[?], T](x: Self & typings.reactBroadcast.mod.Subscriber.Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.reactBroadcast.mod.Subscriber.Props[?], T] (val x: Self & typings.reactBroadcast.mod.Subscriber.Props[T]) extends AnyVal {
         
         inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
         

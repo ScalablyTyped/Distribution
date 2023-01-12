@@ -28,7 +28,8 @@ object LedgerSummary {
     __obj.asInstanceOf[LedgerSummary]
   }
   
-  extension [Self <: LedgerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LedgerSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

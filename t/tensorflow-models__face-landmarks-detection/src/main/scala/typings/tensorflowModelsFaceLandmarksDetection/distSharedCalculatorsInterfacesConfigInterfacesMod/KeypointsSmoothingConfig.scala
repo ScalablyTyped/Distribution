@@ -17,7 +17,8 @@ object KeypointsSmoothingConfig {
     __obj.asInstanceOf[KeypointsSmoothingConfig]
   }
   
-  extension [Self <: KeypointsSmoothingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeypointsSmoothingConfig] (val x: Self) extends AnyVal {
     
     inline def setOneEuroFilter(value: OneEuroFilterConfig): Self = StObject.set(x, "oneEuroFilter", value.asInstanceOf[js.Any])
     

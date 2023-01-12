@@ -15,7 +15,8 @@ object IWebUINavigatedDeferral {
     __obj.asInstanceOf[IWebUINavigatedDeferral]
   }
   
-  extension [Self <: IWebUINavigatedDeferral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebUINavigatedDeferral] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }

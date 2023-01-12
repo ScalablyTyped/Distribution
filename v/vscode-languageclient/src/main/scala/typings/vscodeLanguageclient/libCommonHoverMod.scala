@@ -54,7 +54,8 @@ object libCommonHoverMod {
       __obj.asInstanceOf[HoverMiddleware]
     }
     
-    extension [Self <: HoverMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideHover(
         value: js.ThisFunction4[

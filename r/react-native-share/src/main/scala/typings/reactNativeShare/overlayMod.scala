@@ -39,7 +39,8 @@ object overlayMod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object overlayMod {
       __obj.asInstanceOf[OverlayState]
     }
     
-    extension [Self <: OverlayState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayState] (val x: Self) extends AnyVal {
       
       inline def setFadeAnim(value: Value): Self = StObject.set(x, "fadeAnim", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object SliderProps {
     __obj.asInstanceOf[SliderProps]
   }
   
-  extension [Self <: SliderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: typings.materialUi.materialUiStrings.x | `x-reverse` | y | `y-reverse`): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

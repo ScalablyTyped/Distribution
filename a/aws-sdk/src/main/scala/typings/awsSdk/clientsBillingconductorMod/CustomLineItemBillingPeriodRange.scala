@@ -23,7 +23,8 @@ object CustomLineItemBillingPeriodRange {
     __obj.asInstanceOf[CustomLineItemBillingPeriodRange]
   }
   
-  extension [Self <: CustomLineItemBillingPeriodRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLineItemBillingPeriodRange] (val x: Self) extends AnyVal {
     
     inline def setExclusiveEndBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "ExclusiveEndBillingPeriod", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FlowDefinitionOutputConfig {
     __obj.asInstanceOf[FlowDefinitionOutputConfig]
   }
   
-  extension [Self <: FlowDefinitionOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowDefinitionOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

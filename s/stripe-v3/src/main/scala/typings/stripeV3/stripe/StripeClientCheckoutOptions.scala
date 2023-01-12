@@ -27,7 +27,8 @@ object StripeClientCheckoutOptions {
     __obj.asInstanceOf[StripeClientCheckoutOptions]
   }
   
-  extension [Self <: StripeClientCheckoutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeClientCheckoutOptions] (val x: Self) extends AnyVal {
     
     inline def setBillingAddressCollection(value: billingAddressCollectionType): Self = StObject.set(x, "billingAddressCollection", value.asInstanceOf[js.Any])
     

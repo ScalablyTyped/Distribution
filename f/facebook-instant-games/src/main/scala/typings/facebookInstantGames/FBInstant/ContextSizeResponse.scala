@@ -22,7 +22,8 @@ object ContextSizeResponse {
     __obj.asInstanceOf[ContextSizeResponse]
   }
   
-  extension [Self <: ContextSizeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextSizeResponse] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: Boolean): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object pluploadQueueProgress {
     __obj.asInstanceOf[pluploadQueueProgress]
   }
   
-  extension [Self <: pluploadQueueProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: pluploadQueueProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesPerSec(value: Double): Self = StObject.set(x, "bytesPerSec", value.asInstanceOf[js.Any])
     

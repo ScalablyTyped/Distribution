@@ -110,7 +110,8 @@ object wasiMod {
       __obj.asInstanceOf[WASIOptions]
     }
     
-    extension [Self <: WASIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WASIOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

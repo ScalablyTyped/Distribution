@@ -58,7 +58,8 @@ object SourceServer {
     __obj.asInstanceOf[SourceServer]
   }
   
-  extension [Self <: SourceServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceServer] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

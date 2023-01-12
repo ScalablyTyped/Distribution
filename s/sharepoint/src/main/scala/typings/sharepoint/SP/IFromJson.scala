@@ -17,7 +17,8 @@ object IFromJson {
     __obj.asInstanceOf[IFromJson]
   }
   
-  extension [Self <: IFromJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFromJson] (val x: Self) extends AnyVal {
     
     inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
     

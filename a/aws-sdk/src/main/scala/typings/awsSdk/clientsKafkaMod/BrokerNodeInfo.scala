@@ -55,7 +55,8 @@ object BrokerNodeInfo {
     __obj.asInstanceOf[BrokerNodeInfo]
   }
   
-  extension [Self <: BrokerNodeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerNodeInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachedENIId(value: string): Self = StObject.set(x, "AttachedENIId", value.asInstanceOf[js.Any])
     

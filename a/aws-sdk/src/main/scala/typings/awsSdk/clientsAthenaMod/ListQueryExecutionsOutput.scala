@@ -23,7 +23,8 @@ object ListQueryExecutionsOutput {
     __obj.asInstanceOf[ListQueryExecutionsOutput]
   }
   
-  extension [Self <: ListQueryExecutionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueryExecutionsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

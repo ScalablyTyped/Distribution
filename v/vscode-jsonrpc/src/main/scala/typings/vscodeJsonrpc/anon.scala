@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Create]
     }
     
-    extension [Self <: Create](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: MessageBufferEncoding => MessageBuffer): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Decoder]
     }
     
-    extension [Self <: Decoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoder] (val x: Self) extends AnyVal {
       
       inline def setDecoder(value: ContentTypeDecoder): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[SetImmediate]
     }
     
-    extension [Self <: SetImmediate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetImmediate] (val x: Self) extends AnyVal {
       
       inline def setSetImmediate(value: (js.Function1[/* repeated */ Any, Unit], /* repeated */ Any) => Disposable): Self = StObject.set(x, "setImmediate", js.Any.fromFunction2(value))
       

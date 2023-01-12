@@ -55,7 +55,8 @@ object libCommonImplementationMod {
       __obj.asInstanceOf[ImplementationMiddleware]
     }
     
-    extension [Self <: ImplementationMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImplementationMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideImplementation(
         value: js.ThisFunction4[

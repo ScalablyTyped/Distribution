@@ -27,7 +27,8 @@ object TSImportEqualsDeclaration {
   @js.native
   def apply(id: Identifier_, moduleReference: TSExternalModuleReference): TSImportEqualsDeclaration = js.native
   
-  extension [Self <: TSImportEqualsDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSImportEqualsDeclaration] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

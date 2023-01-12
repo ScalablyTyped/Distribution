@@ -19,7 +19,8 @@ object WatcherEmailAttachmentContainer {
     __obj.asInstanceOf[WatcherEmailAttachmentContainer]
   }
   
-  extension [Self <: WatcherEmailAttachmentContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherEmailAttachmentContainer] (val x: Self) extends AnyVal {
     
     inline def setData(value: WatcherDataEmailAttachment): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListConnectorsRequest {
     __obj.asInstanceOf[ListConnectorsRequest]
   }
   
-  extension [Self <: ListConnectorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectorsRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorNamePrefix(value: string): Self = StObject.set(x, "connectorNamePrefix", value.asInstanceOf[js.Any])
     

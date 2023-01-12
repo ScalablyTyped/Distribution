@@ -137,7 +137,8 @@ object Component {
     __obj.asInstanceOf[Component]
   }
   
-  extension [Self <: Component](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     inline def setAddChild(value: Component => scala.Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
     

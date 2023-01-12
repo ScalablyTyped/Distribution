@@ -16,7 +16,8 @@ object FinalizeDefaultLocationRequest {
     __obj.asInstanceOf[FinalizeDefaultLocationRequest]
   }
   
-  extension [Self <: FinalizeDefaultLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalizeDefaultLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     

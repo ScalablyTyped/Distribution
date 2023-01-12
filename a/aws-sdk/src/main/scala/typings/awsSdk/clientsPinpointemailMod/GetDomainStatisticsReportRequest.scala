@@ -28,7 +28,8 @@ object GetDomainStatisticsReportRequest {
     __obj.asInstanceOf[GetDomainStatisticsReportRequest]
   }
   
-  extension [Self <: GetDomainStatisticsReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainStatisticsReportRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: Identity): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

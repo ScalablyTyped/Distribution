@@ -26,7 +26,8 @@ object Partialpositionnumbernumb {
     __obj.asInstanceOf[Partialpositionnumbernumb]
   }
   
-  extension [Self <: Partialpositionnumbernumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialpositionnumbernumb] (val x: Self) extends AnyVal {
     
     inline def setFocalPoint(
       value: (js.Tuple3[Double, Double, Double]) | js.typedarray.Float32Array | (js.Tuple2[Double, Double])

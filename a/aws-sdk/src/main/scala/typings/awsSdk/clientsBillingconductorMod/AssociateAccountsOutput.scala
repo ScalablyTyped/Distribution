@@ -18,7 +18,8 @@ object AssociateAccountsOutput {
     __obj.asInstanceOf[AssociateAccountsOutput]
   }
   
-  extension [Self <: AssociateAccountsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateAccountsOutput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: BillingGroupArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

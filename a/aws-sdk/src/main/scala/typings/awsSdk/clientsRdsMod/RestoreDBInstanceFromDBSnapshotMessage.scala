@@ -180,7 +180,8 @@ object RestoreDBInstanceFromDBSnapshotMessage {
     __obj.asInstanceOf[RestoreDBInstanceFromDBSnapshotMessage]
   }
   
-  extension [Self <: RestoreDBInstanceFromDBSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBInstanceFromDBSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     

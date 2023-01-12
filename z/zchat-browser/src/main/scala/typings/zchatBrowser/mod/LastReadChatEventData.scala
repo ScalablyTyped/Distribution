@@ -23,7 +23,8 @@ object LastReadChatEventData {
     __obj.asInstanceOf[LastReadChatEventData]
   }
   
-  extension [Self <: LastReadChatEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastReadChatEventData] (val x: Self) extends AnyVal {
     
     inline def setNick(value: String): Self = StObject.set(x, "nick", value.asInstanceOf[js.Any])
     

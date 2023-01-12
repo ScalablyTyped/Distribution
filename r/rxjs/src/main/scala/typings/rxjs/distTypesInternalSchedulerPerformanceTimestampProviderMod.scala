@@ -24,7 +24,8 @@ object distTypesInternalSchedulerPerformanceTimestampProviderMod {
       __obj.asInstanceOf[PerformanceTimestampProvider_]
     }
     
-    extension [Self <: PerformanceTimestampProvider_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformanceTimestampProvider_] (val x: Self) extends AnyVal {
       
       inline def setDelegate(value: TimestampProvider): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       

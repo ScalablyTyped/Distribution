@@ -125,7 +125,8 @@ object componentIconDotdirectiveMod {
       __obj.asInstanceOf[RenderMeta]
     }
     
-    extension [Self <: RenderMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderMeta] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       

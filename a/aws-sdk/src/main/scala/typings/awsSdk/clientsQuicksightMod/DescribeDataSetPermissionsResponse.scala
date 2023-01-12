@@ -38,7 +38,8 @@ object DescribeDataSetPermissionsResponse {
     __obj.asInstanceOf[DescribeDataSetPermissionsResponse]
   }
   
-  extension [Self <: DescribeDataSetPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataSetPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataSetArn(value: Arn): Self = StObject.set(x, "DataSetArn", value.asInstanceOf[js.Any])
     

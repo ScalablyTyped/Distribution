@@ -442,7 +442,8 @@ object v8Mod {
       __obj.asInstanceOf[HeapCodeStatistics]
     }
     
-    extension [Self <: HeapCodeStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapCodeStatistics] (val x: Self) extends AnyVal {
       
       inline def setBytecode_and_metadata_size(value: Double): Self = StObject.set(x, "bytecode_and_metadata_size", value.asInstanceOf[js.Any])
       
@@ -495,7 +496,8 @@ object v8Mod {
       __obj.asInstanceOf[HeapInfo]
     }
     
-    extension [Self <: HeapInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapInfo] (val x: Self) extends AnyVal {
       
       inline def setDoes_zap_garbage(value: DoesZapCodeSpaceFlag): Self = StObject.set(x, "does_zap_garbage", value.asInstanceOf[js.Any])
       
@@ -546,7 +548,8 @@ object v8Mod {
       __obj.asInstanceOf[HeapSpaceInfo]
     }
     
-    extension [Self <: HeapSpaceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeapSpaceInfo] (val x: Self) extends AnyVal {
       
       inline def setPhysical_space_size(value: Double): Self = StObject.set(x, "physical_space_size", value.asInstanceOf[js.Any])
       

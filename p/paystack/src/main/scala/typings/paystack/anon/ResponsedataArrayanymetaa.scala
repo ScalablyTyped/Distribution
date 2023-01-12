@@ -25,7 +25,8 @@ object ResponsedataArrayanymetaa {
     __obj.asInstanceOf[ResponsedataArrayanymetaa]
   }
   
-  extension [Self <: ResponsedataArrayanymetaa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsedataArrayanymetaa] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

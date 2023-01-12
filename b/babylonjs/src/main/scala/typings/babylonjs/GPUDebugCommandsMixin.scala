@@ -19,7 +19,8 @@ object GPUDebugCommandsMixin {
     __obj.asInstanceOf[GPUDebugCommandsMixin]
   }
   
-  extension [Self <: GPUDebugCommandsMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUDebugCommandsMixin] (val x: Self) extends AnyVal {
     
     inline def setInsertDebugMarker(value: String => Unit): Self = StObject.set(x, "insertDebugMarker", js.Any.fromFunction1(value))
     

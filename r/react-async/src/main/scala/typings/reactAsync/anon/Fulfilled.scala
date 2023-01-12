@@ -41,7 +41,8 @@ object Fulfilled {
     __obj.asInstanceOf[Fulfilled]
   }
   
-  extension [Self <: Fulfilled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fulfilled] (val x: Self) extends AnyVal {
     
     inline def setFulfilled(value: FulfilledProps[Any] => Element): Self = StObject.set(x, "Fulfilled", js.Any.fromFunction1(value))
     

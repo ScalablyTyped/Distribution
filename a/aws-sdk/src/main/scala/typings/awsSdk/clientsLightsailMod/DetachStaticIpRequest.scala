@@ -18,7 +18,8 @@ object DetachStaticIpRequest {
     __obj.asInstanceOf[DetachStaticIpRequest]
   }
   
-  extension [Self <: DetachStaticIpRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachStaticIpRequest] (val x: Self) extends AnyVal {
     
     inline def setStaticIpName(value: ResourceName): Self = StObject.set(x, "staticIpName", value.asInstanceOf[js.Any])
   }

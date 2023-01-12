@@ -19,7 +19,8 @@ object ButtonsApiExportDataReturn {
     __obj.asInstanceOf[ButtonsApiExportDataReturn]
   }
   
-  extension [Self <: ButtonsApiExportDataReturn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonsApiExportDataReturn] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[String]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

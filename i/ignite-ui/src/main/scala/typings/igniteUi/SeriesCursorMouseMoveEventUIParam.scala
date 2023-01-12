@@ -48,7 +48,8 @@ object SeriesCursorMouseMoveEventUIParam {
     __obj.asInstanceOf[SeriesCursorMouseMoveEventUIParam]
   }
   
-  extension [Self <: SeriesCursorMouseMoveEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesCursorMouseMoveEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setActualItemBrush(value: Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
     

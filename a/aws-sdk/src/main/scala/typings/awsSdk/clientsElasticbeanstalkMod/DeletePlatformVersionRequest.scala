@@ -18,7 +18,8 @@ object DeletePlatformVersionRequest {
     __obj.asInstanceOf[DeletePlatformVersionRequest]
   }
   
-  extension [Self <: DeletePlatformVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePlatformVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatformArn(value: PlatformArn): Self = StObject.set(x, "PlatformArn", value.asInstanceOf[js.Any])
     

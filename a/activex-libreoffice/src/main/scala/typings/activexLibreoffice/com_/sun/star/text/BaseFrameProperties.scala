@@ -374,7 +374,8 @@ object BaseFrameProperties {
     __obj.asInstanceOf[BaseFrameProperties]
   }
   
-  extension [Self <: BaseFrameProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFrameProperties] (val x: Self) extends AnyVal {
     
     inline def setAnchorFrame(value: XTextFrame): Self = StObject.set(x, "AnchorFrame", value.asInstanceOf[js.Any])
     

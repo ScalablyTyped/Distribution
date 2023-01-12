@@ -41,7 +41,8 @@ object srcNgtscIncrementalApiMod {
       __obj.asInstanceOf[DependencyTracker[T]]
     }
     
-    extension [Self <: DependencyTracker[?], T /* <: FileName */](x: Self & DependencyTracker[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyTracker[?], T /* <: FileName */] (val x: Self & DependencyTracker[T]) extends AnyVal {
       
       inline def setAddDependency(value: (T, T) => Unit): Self = StObject.set(x, "addDependency", js.Any.fromFunction2(value))
       
@@ -80,7 +81,8 @@ object srcNgtscIncrementalApiMod {
       __obj.asInstanceOf[IncrementalBuild[AnalysisT, FileTypeCheckDataT]]
     }
     
-    extension [Self <: IncrementalBuild[?, ?], AnalysisT, FileTypeCheckDataT](x: Self & (IncrementalBuild[AnalysisT, FileTypeCheckDataT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncrementalBuild[?, ?], AnalysisT, FileTypeCheckDataT] (val x: Self & (IncrementalBuild[AnalysisT, FileTypeCheckDataT])) extends AnyVal {
       
       inline def setPriorAnalysisFor(value: SourceFile => js.Array[AnalysisT] | Null): Self = StObject.set(x, "priorAnalysisFor", js.Any.fromFunction1(value))
       

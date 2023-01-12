@@ -20,7 +20,8 @@ object XummCustomMeta {
     __obj.asInstanceOf[XummCustomMeta]
   }
   
-  extension [Self <: XummCustomMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummCustomMeta] (val x: Self) extends AnyVal {
     
     inline def setBlob(value: Record[String, Any]): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[DiscoveryConstructorOptions]
     }
     
-    extension [Self <: DiscoveryConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscoveryConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[DiscoveryEvents]
     }
     
-    extension [Self <: DiscoveryEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscoveryEvents] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: (String, Any, ReasonType) => Unit): Self = StObject.set(x, "available", js.Any.fromFunction3(value))
       

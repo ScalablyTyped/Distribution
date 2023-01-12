@@ -75,7 +75,8 @@ object PageContentData {
     __obj.asInstanceOf[PageContentData]
   }
   
-  extension [Self <: PageContentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageContentData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object HttpParameters {
     __obj.asInstanceOf[HttpParameters]
   }
   
-  extension [Self <: HttpParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpParameters] (val x: Self) extends AnyVal {
     
     inline def setHeaderParameters(value: HeaderParametersMap): Self = StObject.set(x, "HeaderParameters", value.asInstanceOf[js.Any])
     

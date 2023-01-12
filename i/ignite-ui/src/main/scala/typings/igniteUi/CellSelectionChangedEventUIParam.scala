@@ -28,7 +28,8 @@ object CellSelectionChangedEventUIParam {
     __obj.asInstanceOf[CellSelectionChangedEventUIParam]
   }
   
-  extension [Self <: CellSelectionChangedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCell(value: Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

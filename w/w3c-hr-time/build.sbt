@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-hr-time"
-version := "1.0-dt-20211202Z-5687e3"
+version := "1.0-dt-20211202Z-173368"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

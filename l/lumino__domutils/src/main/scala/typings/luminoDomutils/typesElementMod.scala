@@ -135,7 +135,8 @@ object typesElementMod {
         __obj.asInstanceOf[IBoxSizing]
       }
       
-      extension [Self <: IBoxSizing](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IBoxSizing] (val x: Self) extends AnyVal {
         
         inline def setBorderBottom(value: Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
         
@@ -191,7 +192,8 @@ object typesElementMod {
         __obj.asInstanceOf[ISizeLimits]
       }
       
-      extension [Self <: ISizeLimits](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISizeLimits] (val x: Self) extends AnyVal {
         
         inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
         

@@ -21,7 +21,8 @@ object IndicesSlowlogTresholdLevels {
     __obj.asInstanceOf[IndicesSlowlogTresholdLevels]
   }
   
-  extension [Self <: IndicesSlowlogTresholdLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSlowlogTresholdLevels] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Duration): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

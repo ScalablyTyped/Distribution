@@ -25,7 +25,8 @@ object distTypesInternalLastValueFromMod {
       __obj.asInstanceOf[LastValueFromConfig[T]]
     }
     
-    extension [Self <: LastValueFromConfig[?], T](x: Self & LastValueFromConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LastValueFromConfig[?], T] (val x: Self & LastValueFromConfig[T]) extends AnyVal {
       
       inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     }

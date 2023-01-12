@@ -43,7 +43,8 @@ object libUtilActionButtonMod extends Shortcut {
       __obj.asInstanceOf[ActionButtonProps]
     }
     
-    extension [Self <: ActionButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActionFn(value: /* repeated */ Any => Any | PromiseLike[Any]): Self = StObject.set(x, "actionFn", js.Any.fromFunction1(value))
       

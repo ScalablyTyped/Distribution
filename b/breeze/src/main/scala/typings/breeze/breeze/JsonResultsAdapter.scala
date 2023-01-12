@@ -32,7 +32,8 @@ object JsonResultsAdapter {
     __obj.asInstanceOf[JsonResultsAdapter]
   }
   
-  extension [Self <: JsonResultsAdapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonResultsAdapter] (val x: Self) extends AnyVal {
     
     inline def setExtractDeletedKeys(value: js.Object => js.Array[DeletedEntityKey]): Self = StObject.set(x, "extractDeletedKeys", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object ForwardedValues {
     __obj.asInstanceOf[ForwardedValues]
   }
   
-  extension [Self <: ForwardedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedValues] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: CookiePreference): Self = StObject.set(x, "Cookies", value.asInstanceOf[js.Any])
     

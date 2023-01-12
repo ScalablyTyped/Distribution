@@ -16,7 +16,8 @@ object SegmentInfo {
     __obj.asInstanceOf[SegmentInfo]
   }
   
-  extension [Self <: SegmentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentInfo] (val x: Self) extends AnyVal {
     
     inline def setRoadInfo(value: RoadInfo): Self = StObject.set(x, "roadInfo", value.asInstanceOf[js.Any])
     

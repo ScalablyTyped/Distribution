@@ -30,7 +30,8 @@ object EventContext {
     __obj.asInstanceOf[EventContext]
   }
   
-  extension [Self <: EventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventContext] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

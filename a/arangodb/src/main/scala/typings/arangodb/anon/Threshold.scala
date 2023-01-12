@@ -20,7 +20,8 @@ object Threshold {
     __obj.asInstanceOf[Threshold]
   }
   
-  extension [Self <: Threshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
     
     inline def setSegmentThreshold(value: Double): Self = StObject.set(x, "segmentThreshold", value.asInstanceOf[js.Any])
     

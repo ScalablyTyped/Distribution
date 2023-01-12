@@ -19,7 +19,8 @@ object EventFilter {
     __obj.asInstanceOf[EventFilter]
   }
   
-  extension [Self <: EventFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilter(value: PathReportDimensionValue): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     

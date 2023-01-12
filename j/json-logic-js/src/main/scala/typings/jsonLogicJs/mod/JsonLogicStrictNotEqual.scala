@@ -20,7 +20,8 @@ object JsonLogicStrictNotEqual {
     __obj.asInstanceOf[JsonLogicStrictNotEqual]
   }
   
-  extension [Self <: JsonLogicStrictNotEqual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicStrictNotEqual] (val x: Self) extends AnyVal {
     
     inline def setExclamationmarkEqualssignEqualssign(value: js.Tuple2[Any, Any]): Self = StObject.set(x, "!==", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object LoginOptions {
     __obj.asInstanceOf[LoginOptions]
   }
   
-  extension [Self <: LoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
     
     inline def setReceiveCalls(value: Boolean): Self = StObject.set(x, "receiveCalls", value.asInstanceOf[js.Any])
     

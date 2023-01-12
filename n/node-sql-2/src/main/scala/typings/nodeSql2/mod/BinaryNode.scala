@@ -17,7 +17,8 @@ object BinaryNode {
     __obj.asInstanceOf[BinaryNode]
   }
   
-  extension [Self <: BinaryNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinaryNode] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: BinaryNode => BinaryNode): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     

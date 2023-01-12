@@ -18,7 +18,8 @@ object GetEulaResponse {
     __obj.asInstanceOf[GetEulaResponse]
   }
   
-  extension [Self <: GetEulaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEulaResponse] (val x: Self) extends AnyVal {
     
     inline def setEula(value: Eula): Self = StObject.set(x, "eula", value.asInstanceOf[js.Any])
     

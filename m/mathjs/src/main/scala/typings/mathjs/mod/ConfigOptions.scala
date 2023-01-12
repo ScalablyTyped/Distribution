@@ -29,7 +29,8 @@ object ConfigOptions {
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  extension [Self <: ConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
     

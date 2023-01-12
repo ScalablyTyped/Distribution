@@ -33,7 +33,8 @@ object ScrolledEventUIParam {
     __obj.asInstanceOf[ScrolledEventUIParam]
   }
   
-  extension [Self <: ScrolledEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrolledEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setBigIncrement(value: Double): Self = StObject.set(x, "bigIncrement", value.asInstanceOf[js.Any])
     

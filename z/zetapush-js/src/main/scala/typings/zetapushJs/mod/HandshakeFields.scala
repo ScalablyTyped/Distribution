@@ -15,7 +15,8 @@ object HandshakeFields {
     __obj.asInstanceOf[HandshakeFields]
   }
   
-  extension [Self <: HandshakeFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandshakeFields] (val x: Self) extends AnyVal {
     
     inline def setExt(value: Any): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
   }

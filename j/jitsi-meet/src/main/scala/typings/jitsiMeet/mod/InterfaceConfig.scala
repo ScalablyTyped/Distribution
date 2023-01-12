@@ -193,7 +193,8 @@ object InterfaceConfig {
     __obj.asInstanceOf[InterfaceConfig]
   }
   
-  extension [Self <: InterfaceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceConfig] (val x: Self) extends AnyVal {
     
     inline def setANDROID_APP_PACKAGE(value: String): Self = StObject.set(x, "ANDROID_APP_PACKAGE", value.asInstanceOf[js.Any])
     

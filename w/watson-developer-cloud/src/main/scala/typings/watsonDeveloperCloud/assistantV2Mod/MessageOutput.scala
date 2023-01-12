@@ -32,7 +32,8 @@ object MessageOutput {
     __obj.asInstanceOf[MessageOutput]
   }
   
-  extension [Self <: MessageOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageOutput] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[DialogNodeAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object distCompilerMod {
         __obj.asInstanceOf[SFCDescriptor]
       }
       
-      extension [Self <: SFCDescriptor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SFCDescriptor] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       }

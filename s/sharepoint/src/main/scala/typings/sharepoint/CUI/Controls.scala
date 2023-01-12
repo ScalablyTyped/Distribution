@@ -78,7 +78,8 @@ object Controls {
       __obj.asInstanceOf[Button]
     }
     
-    extension [Self <: Button](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
       
       inline def setCreateComponentForDisplayModeInternal(value: String => Any): Self = StObject.set(x, "createComponentForDisplayModeInternal", js.Any.fromFunction1(value))
       
@@ -159,7 +160,8 @@ object Controls {
       __obj.asInstanceOf[DropDownCommandProperties]
     }
     
-    extension [Self <: DropDownCommandProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropDownCommandProperties] (val x: Self) extends AnyVal {
       
       inline def setSelectedItemId(value: String): Self = StObject.set(x, "SelectedItemId", value.asInstanceOf[js.Any])
       

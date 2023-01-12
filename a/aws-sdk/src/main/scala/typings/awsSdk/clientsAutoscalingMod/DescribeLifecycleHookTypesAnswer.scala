@@ -18,7 +18,8 @@ object DescribeLifecycleHookTypesAnswer {
     __obj.asInstanceOf[DescribeLifecycleHookTypesAnswer]
   }
   
-  extension [Self <: DescribeLifecycleHookTypesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLifecycleHookTypesAnswer] (val x: Self) extends AnyVal {
     
     inline def setLifecycleHookTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "LifecycleHookTypes", value.asInstanceOf[js.Any])
     

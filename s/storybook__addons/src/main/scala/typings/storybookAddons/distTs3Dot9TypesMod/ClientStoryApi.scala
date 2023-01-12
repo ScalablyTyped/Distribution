@@ -27,7 +27,8 @@ object ClientStoryApi {
     __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
   }
   
-  extension [Self <: ClientStoryApi[?], StoryFnReturnType](x: Self & ClientStoryApi[StoryFnReturnType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
     
     inline def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
     

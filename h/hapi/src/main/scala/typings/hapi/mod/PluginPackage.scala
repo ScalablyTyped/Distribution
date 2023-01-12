@@ -18,7 +18,8 @@ object PluginPackage {
     __obj.asInstanceOf[PluginPackage]
   }
   
-  extension [Self <: PluginPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginPackage] (val x: Self) extends AnyVal {
     
     inline def setPkg(value: Any): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
   }

@@ -58,7 +58,8 @@ object Precinct {
     __obj.asInstanceOf[Precinct]
   }
   
-  extension [Self <: Precinct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Precinct] (val x: Self) extends AnyVal {
     
     inline def setAdministrationRegionId(value: String): Self = StObject.set(x, "administrationRegionId", value.asInstanceOf[js.Any])
     

@@ -138,7 +138,8 @@ object distImageImageMod extends Shortcut {
       __obj.asInstanceOf[ImageProps]
     }
     
-    extension [Self <: ImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
       
       inline def setChildrenContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "childrenContainerStyle", value.asInstanceOf[js.Any])
       
@@ -204,7 +205,8 @@ object distImageImageMod extends Shortcut {
       __obj.asInstanceOf[ImageState]
     }
     
-    extension [Self <: ImageState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageState] (val x: Self) extends AnyVal {
       
       inline def setPlaceholderOpacity(value: Value): Self = StObject.set(x, "placeholderOpacity", value.asInstanceOf[js.Any])
     }

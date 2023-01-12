@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[End[Type]]
     }
     
-    extension [Self <: End[?], Type /* <: String */](x: Self & End[Type]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End[?], Type /* <: String */] (val x: Self & End[Type]) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Start[T, Tokens]]
     }
     
-    extension [Self <: Start[?, ?], T /* <: String */, Tokens /* <: js.Array[Token[Any]] */](x: Self & (Start[T, Tokens])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Start[?, ?], T /* <: String */, Tokens /* <: js.Array[Token[Any]] */] (val x: Self & (Start[T, Tokens])) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

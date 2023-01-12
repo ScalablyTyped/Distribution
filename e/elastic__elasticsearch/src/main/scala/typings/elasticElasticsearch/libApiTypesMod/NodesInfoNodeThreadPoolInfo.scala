@@ -26,7 +26,8 @@ object NodesInfoNodeThreadPoolInfo {
     __obj.asInstanceOf[NodesInfoNodeThreadPoolInfo]
   }
   
-  extension [Self <: NodesInfoNodeThreadPoolInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeThreadPoolInfo] (val x: Self) extends AnyVal {
     
     inline def setCore(value: integer): Self = StObject.set(x, "core", value.asInstanceOf[js.Any])
     

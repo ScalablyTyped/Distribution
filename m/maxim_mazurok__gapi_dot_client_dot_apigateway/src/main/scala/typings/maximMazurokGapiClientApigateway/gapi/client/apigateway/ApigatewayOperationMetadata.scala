@@ -40,7 +40,8 @@ object ApigatewayOperationMetadata {
     __obj.asInstanceOf[ApigatewayOperationMetadata]
   }
   
-  extension [Self <: ApigatewayOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

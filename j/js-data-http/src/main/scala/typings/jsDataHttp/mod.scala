@@ -213,7 +213,8 @@ object mod {
       __obj.asInstanceOf[IActionOpts]
     }
     
-    extension [Self <: IActionOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionOpts] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object mod {
       __obj.asInstanceOf[IBaseAdapter]
     }
     
-    extension [Self <: IBaseAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseAdapter] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -287,7 +289,8 @@ object mod {
       __obj.asInstanceOf[IBaseHttpAdapter]
     }
     
-    extension [Self <: IBaseHttpAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseHttpAdapter] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

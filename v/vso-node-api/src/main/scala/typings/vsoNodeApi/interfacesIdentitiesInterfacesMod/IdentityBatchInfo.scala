@@ -29,7 +29,8 @@ object IdentityBatchInfo {
     __obj.asInstanceOf[IdentityBatchInfo]
   }
   
-  extension [Self <: IdentityBatchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityBatchInfo] (val x: Self) extends AnyVal {
     
     inline def setDescriptors(value: js.Array[IdentityDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     

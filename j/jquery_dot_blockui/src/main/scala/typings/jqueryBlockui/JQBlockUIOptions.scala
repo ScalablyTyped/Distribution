@@ -107,7 +107,8 @@ object JQBlockUIOptions {
     __obj.asInstanceOf[JQBlockUIOptions]
   }
   
-  extension [Self <: JQBlockUIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQBlockUIOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowBodyStretch(value: Boolean): Self = StObject.set(x, "allowBodyStretch", value.asInstanceOf[js.Any])
     

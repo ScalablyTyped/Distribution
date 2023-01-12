@@ -38,7 +38,8 @@ object Descriptors {
     __obj.asInstanceOf[Descriptors]
   }
   
-  extension [Self <: Descriptors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Descriptors] (val x: Self) extends AnyVal {
     
     inline def setClosingRouteKeys(value: js.Array[String]): Self = StObject.set(x, "closingRouteKeys", value.asInstanceOf[js.Any])
     

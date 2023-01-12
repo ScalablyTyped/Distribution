@@ -35,7 +35,8 @@ object gapi {
           __obj.asInstanceOf[ApiDataRow]
         }
         
-        extension [Self <: ApiDataRow](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ApiDataRow] (val x: Self) extends AnyVal {
           
           inline def setClicks(value: Double): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
           
@@ -76,7 +77,8 @@ object gapi {
           __obj.asInstanceOf[ApiDimensionFilter]
         }
         
-        extension [Self <: ApiDimensionFilter](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ApiDimensionFilter] (val x: Self) extends AnyVal {
           
           inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
           
@@ -105,7 +107,8 @@ object gapi {
           __obj.asInstanceOf[ApiDimensionFilterGroup]
         }
         
-        extension [Self <: ApiDimensionFilterGroup](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ApiDimensionFilterGroup] (val x: Self) extends AnyVal {
           
           inline def setFilters(value: js.Array[ApiDimensionFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
           
@@ -167,7 +170,8 @@ object gapi {
           __obj.asInstanceOf[SearchAnalyticsQueryRequest]
         }
         
-        extension [Self <: SearchAnalyticsQueryRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SearchAnalyticsQueryRequest] (val x: Self) extends AnyVal {
           
           inline def setAggregationType(value: String): Self = StObject.set(x, "aggregationType", value.asInstanceOf[js.Any])
           
@@ -222,7 +226,8 @@ object gapi {
           __obj.asInstanceOf[SearchAnalyticsQueryResponse]
         }
         
-        extension [Self <: SearchAnalyticsQueryResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
           
           inline def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
           
@@ -261,7 +266,8 @@ object gapi {
           __obj.asInstanceOf[SitemapsListResponse]
         }
         
-        extension [Self <: SitemapsListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SitemapsListResponse] (val x: Self) extends AnyVal {
           
           inline def setSitemap(value: js.Array[WmxSitemap]): Self = StObject.set(x, "sitemap", value.asInstanceOf[js.Any])
           
@@ -303,7 +309,8 @@ object gapi {
           __obj.asInstanceOf[SitesListResponse]
         }
         
-        extension [Self <: SitesListResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SitesListResponse] (val x: Self) extends AnyVal {
           
           inline def setSiteEntry(value: js.Array[WmxSite]): Self = StObject.set(x, "siteEntry", value.asInstanceOf[js.Any])
           
@@ -348,7 +355,8 @@ object gapi {
           __obj.asInstanceOf[WmxSite]
         }
         
-        extension [Self <: WmxSite](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WmxSite] (val x: Self) extends AnyVal {
           
           inline def setPermissionLevel(value: String): Self = StObject.set(x, "permissionLevel", value.asInstanceOf[js.Any])
           
@@ -396,7 +404,8 @@ object gapi {
           __obj.asInstanceOf[WmxSitemap]
         }
         
-        extension [Self <: WmxSitemap](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WmxSitemap] (val x: Self) extends AnyVal {
           
           inline def setContents(value: js.Array[WmxSitemapContent]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
           
@@ -456,7 +465,8 @@ object gapi {
           __obj.asInstanceOf[WmxSitemapContent]
         }
         
-        extension [Self <: WmxSitemapContent](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WmxSitemapContent] (val x: Self) extends AnyVal {
           
           inline def setIndexed(value: String): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
           

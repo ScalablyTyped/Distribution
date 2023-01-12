@@ -25,7 +25,8 @@ object MlGetCalendarsRequest {
     __obj.asInstanceOf[MlGetCalendarsRequest]
   }
   
-  extension [Self <: MlGetCalendarsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetCalendarsRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Page): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

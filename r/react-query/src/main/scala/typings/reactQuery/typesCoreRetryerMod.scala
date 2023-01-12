@@ -63,7 +63,8 @@ object typesCoreRetryerMod {
       __obj.asInstanceOf[Cancelable]
     }
     
-    extension [Self <: Cancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cancelable] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -102,7 +103,8 @@ object typesCoreRetryerMod {
       __obj.asInstanceOf[RetryerConfig[TData, TError]]
     }
     
-    extension [Self <: RetryerConfig[?, ?], TData, TError](x: Self & (RetryerConfig[TData, TError])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryerConfig[?, ?], TData, TError] (val x: Self & (RetryerConfig[TData, TError])) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

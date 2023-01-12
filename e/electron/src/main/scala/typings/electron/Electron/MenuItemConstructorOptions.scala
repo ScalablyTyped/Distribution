@@ -194,7 +194,8 @@ object MenuItemConstructorOptions {
     __obj.asInstanceOf[MenuItemConstructorOptions]
   }
   
-  extension [Self <: MenuItemConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: Accelerator): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
     

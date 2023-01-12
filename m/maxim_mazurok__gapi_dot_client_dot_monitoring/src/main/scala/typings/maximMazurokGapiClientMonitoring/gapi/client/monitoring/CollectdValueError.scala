@@ -19,7 +19,8 @@ object CollectdValueError {
     __obj.asInstanceOf[CollectdValueError]
   }
   
-  extension [Self <: CollectdValueError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectdValueError] (val x: Self) extends AnyVal {
     
     inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

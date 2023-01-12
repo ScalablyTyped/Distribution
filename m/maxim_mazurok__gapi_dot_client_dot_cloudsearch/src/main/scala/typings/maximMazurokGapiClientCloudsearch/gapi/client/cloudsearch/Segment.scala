@@ -38,7 +38,8 @@ object Segment {
     __obj.asInstanceOf[Segment]
   }
   
-  extension [Self <: Segment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Segment] (val x: Self) extends AnyVal {
     
     inline def setFormatting(value: Formatting): Self = StObject.set(x, "formatting", value.asInstanceOf[js.Any])
     

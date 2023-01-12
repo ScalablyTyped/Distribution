@@ -26,7 +26,8 @@ object BaseConfig {
     __obj.asInstanceOf[BaseConfig]
   }
   
-  extension [Self <: BaseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseConfig] (val x: Self) extends AnyVal {
     
     inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
     

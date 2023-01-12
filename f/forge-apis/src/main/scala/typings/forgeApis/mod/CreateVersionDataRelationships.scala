@@ -17,7 +17,8 @@ object CreateVersionDataRelationships {
     __obj.asInstanceOf[CreateVersionDataRelationships]
   }
   
-  extension [Self <: CreateVersionDataRelationships](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVersionDataRelationships] (val x: Self) extends AnyVal {
     
     inline def setItem(value: CreateVersionDataRelationshipsItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

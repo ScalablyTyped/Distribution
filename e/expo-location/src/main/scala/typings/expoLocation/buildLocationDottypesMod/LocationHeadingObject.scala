@@ -31,7 +31,8 @@ object LocationHeadingObject {
     __obj.asInstanceOf[LocationHeadingObject]
   }
   
-  extension [Self <: LocationHeadingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationHeadingObject] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

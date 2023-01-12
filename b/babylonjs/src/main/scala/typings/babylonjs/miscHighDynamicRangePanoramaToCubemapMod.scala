@@ -141,7 +141,8 @@ object miscHighDynamicRangePanoramaToCubemapMod {
       __obj.asInstanceOf[CubeMapInfo]
     }
     
-    extension [Self <: CubeMapInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CubeMapInfo] (val x: Self) extends AnyVal {
       
       inline def setBack(value: Nullable[js.typedarray.ArrayBufferView]): Self = StObject.set(x, "back", value.asInstanceOf[js.Any])
       

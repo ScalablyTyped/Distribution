@@ -15,7 +15,8 @@ object HandleFocusOutside {
     __obj.asInstanceOf[HandleFocusOutside]
   }
   
-  extension [Self <: HandleFocusOutside](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandleFocusOutside] (val x: Self) extends AnyVal {
     
     inline def setHandleFocusOutside(value: () => Unit): Self = StObject.set(x, "handleFocusOutside", js.Any.fromFunction0(value))
   }

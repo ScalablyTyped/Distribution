@@ -93,7 +93,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[AugmentedNotificationOptions]
         }
         
-        extension [Self <: AugmentedNotificationOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AugmentedNotificationOptions] (val x: Self) extends AnyVal {
           
           inline def setOnClick(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
           
@@ -133,7 +134,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IDesktopNotificationOptions]
         }
         
-        extension [Self <: IDesktopNotificationOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IDesktopNotificationOptions] (val x: Self) extends AnyVal {
           
           inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
           
@@ -164,7 +166,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IDesktopNotificationProvider]
         }
         
-        extension [Self <: IDesktopNotificationProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IDesktopNotificationProvider] (val x: Self) extends AnyVal {
           
           inline def setConfig(value: IDesktopNotificationOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
         }

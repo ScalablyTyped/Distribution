@@ -98,7 +98,8 @@ object typingsGraphBuilderMod {
       __obj.asInstanceOf[GraphBuilderStrategy]
     }
     
-    extension [Self <: GraphBuilderStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphBuilderStrategy] (val x: Self) extends AnyVal {
       
       inline def setRun(value: Sheets => Dependencies): Self = StObject.set(x, "run", js.Any.fromFunction1(value))
     }

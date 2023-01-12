@@ -16,7 +16,8 @@ object GetInitialProps {
     __obj.asInstanceOf[GetInitialProps[C, IP]]
   }
   
-  extension [Self <: GetInitialProps[?, ?], C /* <: BaseContext */, IP](x: Self & (GetInitialProps[C, IP])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInitialProps[?, ?], C /* <: BaseContext */, IP] (val x: Self & (GetInitialProps[C, IP])) extends AnyVal {
     
     inline def setGetInitialProps(value: /* context */ C => IP | js.Promise[IP]): Self = StObject.set(x, "getInitialProps", js.Any.fromFunction1(value))
     

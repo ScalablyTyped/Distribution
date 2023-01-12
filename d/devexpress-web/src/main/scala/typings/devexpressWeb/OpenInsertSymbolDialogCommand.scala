@@ -23,7 +23,8 @@ object OpenInsertSymbolDialogCommand {
     __obj.asInstanceOf[OpenInsertSymbolDialogCommand]
   }
   
-  extension [Self <: OpenInsertSymbolDialogCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenInsertSymbolDialogCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

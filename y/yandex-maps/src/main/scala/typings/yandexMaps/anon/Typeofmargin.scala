@@ -24,7 +24,8 @@ object Typeofmargin {
     __obj.asInstanceOf[Typeofmargin]
   }
   
-  extension [Self <: Typeofmargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofmargin] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Instantiable1[/* screenArea */ js.Object, Accessor]): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AttackSummary {
     __obj.asInstanceOf[AttackSummary]
   }
   
-  extension [Self <: AttackSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackSummary] (val x: Self) extends AnyVal {
     
     inline def setAttackId(value: String): Self = StObject.set(x, "AttackId", value.asInstanceOf[js.Any])
     

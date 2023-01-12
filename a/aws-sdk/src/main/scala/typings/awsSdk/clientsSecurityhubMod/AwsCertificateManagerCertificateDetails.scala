@@ -128,7 +128,8 @@ object AwsCertificateManagerCertificateDetails {
     __obj.asInstanceOf[AwsCertificateManagerCertificateDetails]
   }
   
-  extension [Self <: AwsCertificateManagerCertificateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCertificateManagerCertificateDetails] (val x: Self) extends AnyVal {
     
     inline def setCertificateAuthorityArn(value: NonEmptyString): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object LoopableListQuestionOptionsBase {
     __obj.asInstanceOf[LoopableListQuestionOptionsBase[T, TChoiceMap]]
   }
   
-  extension [Self <: LoopableListQuestionOptionsBase[?, ?], T /* <: Answers */, TChoiceMap](x: Self & (LoopableListQuestionOptionsBase[T, TChoiceMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoopableListQuestionOptionsBase[?, ?], T /* <: Answers */, TChoiceMap] (val x: Self & (LoopableListQuestionOptionsBase[T, TChoiceMap])) extends AnyVal {
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

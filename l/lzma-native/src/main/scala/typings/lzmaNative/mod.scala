@@ -175,7 +175,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       
@@ -214,7 +215,8 @@ object mod {
       __obj.asInstanceOf[LzmaOptions]
     }
     
-    extension [Self <: LzmaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LzmaOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -321,7 +323,8 @@ object mod {
       __obj.asInstanceOf[StreamInfo]
     }
     
-    extension [Self <: StreamInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamInfo] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Double): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

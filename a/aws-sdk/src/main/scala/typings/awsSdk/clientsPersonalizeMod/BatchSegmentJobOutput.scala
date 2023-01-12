@@ -15,7 +15,8 @@ object BatchSegmentJobOutput {
     __obj.asInstanceOf[BatchSegmentJobOutput]
   }
   
-  extension [Self <: BatchSegmentJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSegmentJobOutput] (val x: Self) extends AnyVal {
     
     inline def setS3DataDestination(value: S3DataConfig): Self = StObject.set(x, "s3DataDestination", value.asInstanceOf[js.Any])
   }

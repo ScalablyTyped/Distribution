@@ -23,7 +23,8 @@ object DescribeEffectiveInstanceAssociationsResult {
     __obj.asInstanceOf[DescribeEffectiveInstanceAssociationsResult]
   }
   
-  extension [Self <: DescribeEffectiveInstanceAssociationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEffectiveInstanceAssociationsResult] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: InstanceAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

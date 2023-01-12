@@ -20,7 +20,8 @@ object TracingPolicyOptions {
     __obj.asInstanceOf[TracingPolicyOptions]
   }
   
-  extension [Self <: TracingPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracingPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setUserAgentPrefix(value: String): Self = StObject.set(x, "userAgentPrefix", value.asInstanceOf[js.Any])
     

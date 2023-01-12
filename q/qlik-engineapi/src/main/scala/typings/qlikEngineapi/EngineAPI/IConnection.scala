@@ -98,7 +98,8 @@ object IConnection {
     __obj.asInstanceOf[IConnection]
   }
   
-  extension [Self <: IConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
     
     inline def setQConnectionString(value: String): Self = StObject.set(x, "qConnectionString", value.asInstanceOf[js.Any])
     

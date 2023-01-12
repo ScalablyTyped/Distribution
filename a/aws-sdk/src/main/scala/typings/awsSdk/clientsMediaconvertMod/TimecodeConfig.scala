@@ -33,7 +33,8 @@ object TimecodeConfig {
     __obj.asInstanceOf[TimecodeConfig]
   }
   
-  extension [Self <: TimecodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: stringPattern010920405090509092): Self = StObject.set(x, "Anchor", value.asInstanceOf[js.Any])
     

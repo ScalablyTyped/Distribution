@@ -30,7 +30,8 @@ object ConstructorAbi {
     __obj.asInstanceOf[ConstructorAbi]
   }
   
-  extension [Self <: ConstructorAbi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorAbi] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

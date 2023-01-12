@@ -18,7 +18,8 @@ object StopTrackingHeapObjectsParameterType {
     __obj.asInstanceOf[StopTrackingHeapObjectsParameterType]
   }
   
-  extension [Self <: StopTrackingHeapObjectsParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTrackingHeapObjectsParameterType] (val x: Self) extends AnyVal {
     
     inline def setReportProgress(value: Boolean): Self = StObject.set(x, "reportProgress", value.asInstanceOf[js.Any])
     

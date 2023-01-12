@@ -602,7 +602,8 @@ object Plugin {
     __obj.asInstanceOf[Plugin[TType, O]]
   }
   
-  extension [Self <: Plugin[?, ?], TType /* <: ChartType */, O](x: Self & (Plugin[TType, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugin[?, ?], TType /* <: ChartType */, O] (val x: Self & (Plugin[TType, O])) extends AnyVal {
     
     inline def setAfterBuildTicks(
       value: (/* chart */ Chart[ChartType, DefaultDataPoint[ChartType], Any], /* args */ typings.chartJs.anon.Scale, /* options */ O) => Unit

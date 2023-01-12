@@ -18,7 +18,8 @@ object AvailBlanking {
     __obj.asInstanceOf[AvailBlanking]
   }
   
-  extension [Self <: AvailBlanking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvailBlanking] (val x: Self) extends AnyVal {
     
     inline def setAvailBlankingImage(value: stringMin14PatternS3BmpBMPPngPNGHttpsBmpBMPPngPNG): Self = StObject.set(x, "AvailBlankingImage", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object WebGLUniformLocation {
     __obj.asInstanceOf[WebGLUniformLocation]
   }
   
-  extension [Self <: WebGLUniformLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLUniformLocation] (val x: Self) extends AnyVal {
     
     inline def set__WebGLUniformLocation(value: Unit): Self = StObject.set(x, "__WebGLUniformLocation", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object ISignaturePromptInfoMetadataBased {
     __obj.asInstanceOf[ISignaturePromptInfoMetadataBased]
   }
   
-  extension [Self <: ISignaturePromptInfoMetadataBased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignaturePromptInfoMetadataBased] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ISignaturePromptInfoMetadataBased): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

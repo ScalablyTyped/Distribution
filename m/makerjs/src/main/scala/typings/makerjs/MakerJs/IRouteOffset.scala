@@ -24,7 +24,8 @@ object IRouteOffset {
     __obj.asInstanceOf[IRouteOffset]
   }
   
-  extension [Self <: IRouteOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRouteOffset] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

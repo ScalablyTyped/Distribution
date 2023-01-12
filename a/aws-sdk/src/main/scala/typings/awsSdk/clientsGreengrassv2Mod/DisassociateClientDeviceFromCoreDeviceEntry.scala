@@ -18,7 +18,8 @@ object DisassociateClientDeviceFromCoreDeviceEntry {
     __obj.asInstanceOf[DisassociateClientDeviceFromCoreDeviceEntry]
   }
   
-  extension [Self <: DisassociateClientDeviceFromCoreDeviceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateClientDeviceFromCoreDeviceEntry] (val x: Self) extends AnyVal {
     
     inline def setThingName(value: IoTThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }

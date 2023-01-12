@@ -61,7 +61,8 @@ object handlersEntityCircleMod {
       __obj.asInstanceOf[CircleEntityData]
     }
     
-    extension [Self <: CircleEntityData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleEntityData] (val x: Self) extends AnyVal {
       
       inline def set$INSUNITS(value: UnitTypes): Self = StObject.set(x, "$INSUNITS", value.asInstanceOf[js.Any])
       

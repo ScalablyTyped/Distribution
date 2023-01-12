@@ -119,7 +119,8 @@ object examplesJsmLoadersSvgloaderMod {
       __obj.asInstanceOf[SVGResult]
     }
     
-    extension [Self <: SVGResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGResult] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: js.Array[SVGResultPaths]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object examplesJsmLoadersSvgloaderMod {
       __obj.asInstanceOf[StrokeStyle]
     }
     
-    extension [Self <: StrokeStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrokeStyle] (val x: Self) extends AnyVal {
       
       inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
       

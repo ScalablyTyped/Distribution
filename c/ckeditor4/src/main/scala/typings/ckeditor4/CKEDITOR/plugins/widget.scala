@@ -142,7 +142,8 @@ object widget {
       __obj.asInstanceOf[definition]
     }
     
-    extension [Self <: definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: definition] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -274,7 +275,8 @@ object widget {
         __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.plugins.widget.nestedEditable.definition]
       }
       
-      extension [Self <: typings.ckeditor4.CKEDITOR.plugins.widget.nestedEditable.definition](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.plugins.widget.nestedEditable.definition] (val x: Self) extends AnyVal {
         
         inline def setAllowedContent(value: allowedContentRules): Self = StObject.set(x, "allowedContent", value.asInstanceOf[js.Any])
         
@@ -376,7 +378,8 @@ object widget {
       __obj.asInstanceOf[widgetselection]
     }
     
-    extension [Self <: widgetselection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: widgetselection] (val x: Self) extends AnyVal {
       
       inline def setAddFillers(value: editable => Boolean): Self = StObject.set(x, "addFillers", js.Any.fromFunction1(value))
       

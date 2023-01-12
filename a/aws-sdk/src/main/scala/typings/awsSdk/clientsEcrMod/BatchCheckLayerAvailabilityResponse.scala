@@ -23,7 +23,8 @@ object BatchCheckLayerAvailabilityResponse {
     __obj.asInstanceOf[BatchCheckLayerAvailabilityResponse]
   }
   
-  extension [Self <: BatchCheckLayerAvailabilityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCheckLayerAvailabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: LayerFailureList): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DragZoomOptions {
     __obj.asInstanceOf[DragZoomOptions]
   }
   
-  extension [Self <: DragZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

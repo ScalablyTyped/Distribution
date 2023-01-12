@@ -59,7 +59,8 @@ object SlicerItemCollectionLoadOptions {
     __obj.asInstanceOf[SlicerItemCollectionLoadOptions]
   }
   
-  extension [Self <: SlicerItemCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlicerItemCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

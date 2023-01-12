@@ -72,7 +72,8 @@ object anon {
       __obj.asInstanceOf[PartialOdataConfig]
     }
     
-    extension [Self <: PartialOdataConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOdataConfig] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: OdataBatchConfig): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       

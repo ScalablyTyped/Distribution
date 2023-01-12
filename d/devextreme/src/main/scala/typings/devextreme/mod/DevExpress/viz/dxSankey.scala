@@ -88,7 +88,8 @@ object dxSankey {
       __obj.asInstanceOf[LinkClickEvent]
     }
     
-    extension [Self <: LinkClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkClickEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: dxSankeyLink): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -107,7 +108,8 @@ object dxSankey {
       __obj.asInstanceOf[LinkHoverEvent]
     }
     
-    extension [Self <: LinkHoverEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkHoverEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: dxSankeyLink): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -126,7 +128,8 @@ object dxSankey {
       __obj.asInstanceOf[NodeClickEvent]
     }
     
-    extension [Self <: NodeClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeClickEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: dxSankeyNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -145,7 +148,8 @@ object dxSankey {
       __obj.asInstanceOf[NodeHoverEvent]
     }
     
-    extension [Self <: NodeHoverEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeHoverEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: dxSankeyNode): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

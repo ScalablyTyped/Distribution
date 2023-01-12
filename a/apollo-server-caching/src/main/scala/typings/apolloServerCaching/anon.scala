@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[MaxSize[V]]
     }
     
-    extension [Self <: MaxSize[?], V](x: Self & MaxSize[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxSize[?], V] (val x: Self & MaxSize[V]) extends AnyVal {
       
       inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Ttl]
     }
     
-    extension [Self <: Ttl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ttl] (val x: Self) extends AnyVal {
       
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       

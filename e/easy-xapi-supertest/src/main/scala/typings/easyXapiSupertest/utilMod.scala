@@ -59,7 +59,8 @@ object utilMod {
       __obj.asInstanceOf[InspectOptions]
     }
     
-    extension [Self <: InspectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       

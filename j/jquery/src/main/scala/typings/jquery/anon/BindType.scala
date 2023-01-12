@@ -22,7 +22,8 @@ object BindType {
     __obj.asInstanceOf[BindType]
   }
   
-  extension [Self <: BindType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindType] (val x: Self) extends AnyVal {
     
     inline def setBindType(value: String): Self = StObject.set(x, "bindType", value.asInstanceOf[js.Any])
   }

@@ -203,7 +203,8 @@ object sapMUploadCollectionParameterMod {
       __obj.asInstanceOf[UploadCollectionParameterSettings]
     }
     
-    extension [Self <: UploadCollectionParameterSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadCollectionParameterSettings] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | PropertyBindingInfo): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object TeamworkActivityTopic {
     __obj.asInstanceOf[TeamworkActivityTopic]
   }
   
-  extension [Self <: TeamworkActivityTopic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamworkActivityTopic] (val x: Self) extends AnyVal {
     
     inline def setSource(value: NullableOption[TeamworkActivityTopicSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

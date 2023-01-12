@@ -15,7 +15,8 @@ object TxAckPrevMeta {
     __obj.asInstanceOf[TxAckPrevMeta]
   }
   
-  extension [Self <: TxAckPrevMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TxAckPrevMeta] (val x: Self) extends AnyVal {
     
     inline def setTx(value: PrevTx): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
   }

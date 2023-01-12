@@ -22,7 +22,8 @@ object typesEndpointsResponseMod {
       __obj.asInstanceOf[EndpointsResponse]
     }
     
-    extension [Self <: EndpointsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[EndpointResponse] | js.Iterable[EndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object typesEndpointsResponseMod {
       __obj.asInstanceOf[UnmarshalledEndpointsResponse]
     }
     
-    extension [Self <: UnmarshalledEndpointsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledEndpointResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object GeoPathTransform {
     __obj.asInstanceOf[GeoPathTransform]
   }
   
-  extension [Self <: GeoPathTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoPathTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

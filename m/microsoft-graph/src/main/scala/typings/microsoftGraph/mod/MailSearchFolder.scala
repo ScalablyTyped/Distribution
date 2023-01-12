@@ -31,7 +31,8 @@ object MailSearchFolder {
     __obj.asInstanceOf[MailSearchFolder]
   }
   
-  extension [Self <: MailSearchFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailSearchFolder] (val x: Self) extends AnyVal {
     
     inline def setFilterQuery(value: NullableOption[String]): Self = StObject.set(x, "filterQuery", value.asInstanceOf[js.Any])
     

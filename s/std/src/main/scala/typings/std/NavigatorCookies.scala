@@ -16,7 +16,8 @@ object NavigatorCookies {
     __obj.asInstanceOf[NavigatorCookies]
   }
   
-  extension [Self <: NavigatorCookies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorCookies] (val x: Self) extends AnyVal {
     
     inline def setCookieEnabled(value: scala.Boolean): Self = StObject.set(x, "cookieEnabled", value.asInstanceOf[js.Any])
   }

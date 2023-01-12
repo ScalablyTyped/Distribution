@@ -44,7 +44,8 @@ object TransferInfo {
     __obj.asInstanceOf[TransferInfo]
   }
   
-  extension [Self <: TransferInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
     
     inline def setMoveData(value: Boolean): Self = StObject.set(x, "MoveData", value.asInstanceOf[js.Any])
     

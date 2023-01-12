@@ -37,7 +37,8 @@ object AccessibleReorderAfterItem {
     __obj.asInstanceOf[AccessibleReorderAfterItem]
   }
   
-  extension [Self <: AccessibleReorderAfterItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessibleReorderAfterItem] (val x: Self) extends AnyVal {
     
     inline def setAccessibleReorderAfterItem(value: String): Self = StObject.set(x, "accessibleReorderAfterItem", value.asInstanceOf[js.Any])
     

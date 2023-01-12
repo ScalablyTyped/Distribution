@@ -17,7 +17,8 @@ object IModalStackedMapKeyValuePair {
     __obj.asInstanceOf[IModalStackedMapKeyValuePair]
   }
   
-  extension [Self <: IModalStackedMapKeyValuePair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModalStackedMapKeyValuePair] (val x: Self) extends AnyVal {
     
     inline def setKey(value: IModalInstanceService): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

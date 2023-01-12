@@ -17,7 +17,8 @@ object ChainOptions {
     __obj.asInstanceOf[ChainOptions]
   }
   
-  extension [Self <: ChainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainOptions] (val x: Self) extends AnyVal {
     
     inline def setOnceNext(value: Boolean): Self = StObject.set(x, "onceNext", value.asInstanceOf[js.Any])
     

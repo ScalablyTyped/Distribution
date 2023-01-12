@@ -113,7 +113,8 @@ object OutlineView {
     __obj.asInstanceOf[OutlineView]
   }
   
-  extension [Self <: OutlineView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlineView] (val x: Self) extends AnyVal {
     
     inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }

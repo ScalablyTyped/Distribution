@@ -19,7 +19,8 @@ object appCompatMod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: () => FirebaseDatabase): Self = StObject.set(x, "database", js.Any.fromFunction0(value))
       
@@ -38,7 +39,8 @@ object appCompatMod {
       __obj.asInstanceOf[FirebaseNamespace]
     }
     
-    extension [Self <: FirebaseNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseNamespace] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       

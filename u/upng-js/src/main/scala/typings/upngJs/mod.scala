@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setCtype(value: Double): Self = StObject.set(x, "ctype", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object mod {
       __obj.asInstanceOf[ImageFrame]
     }
     
-    extension [Self <: ImageFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageFrame] (val x: Self) extends AnyVal {
       
       inline def setBlend(value: Double): Self = StObject.set(x, "blend", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object mod {
       __obj.asInstanceOf[ImageFrameRect]
     }
     
-    extension [Self <: ImageFrameRect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageFrameRect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object mod {
       __obj.asInstanceOf[ImageTabACTL]
     }
     
-    extension [Self <: ImageTabACTL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTabACTL] (val x: Self) extends AnyVal {
       
       inline def setNum_frames(value: Double): Self = StObject.set(x, "num_frames", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object mod {
       __obj.asInstanceOf[ImageTabs]
     }
     
-    extension [Self <: ImageTabs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageTabs] (val x: Self) extends AnyVal {
       
       inline def setAcTL(value: ImageTabACTL): Self = StObject.set(x, "acTL", value.asInstanceOf[js.Any])
       
@@ -284,7 +289,8 @@ object mod {
       __obj.asInstanceOf[QuantizeResult]
     }
     
-    extension [Self <: QuantizeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuantizeResult] (val x: Self) extends AnyVal {
       
       inline def setAbuf(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "abuf", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object INDCustomData {
     __obj.asInstanceOf[INDCustomData]
   }
   
-  extension [Self <: INDCustomData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDCustomData] (val x: Self) extends AnyVal {
     
     inline def setCustomData(value: Double): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     

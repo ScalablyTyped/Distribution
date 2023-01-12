@@ -155,7 +155,8 @@ object mod {
       __obj.asInstanceOf[CoffeeOpt[T]]
     }
     
-    extension [Self <: CoffeeOpt[?], T](x: Self & CoffeeOpt[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoffeeOpt[?], T] (val x: Self & CoffeeOpt[T]) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object mod {
       __obj.asInstanceOf[RuleOpt]
     }
     
-    extension [Self <: RuleOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleOpt] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

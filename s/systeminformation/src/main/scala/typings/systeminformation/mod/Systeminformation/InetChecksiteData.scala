@@ -21,7 +21,8 @@ object InetChecksiteData {
     __obj.asInstanceOf[InetChecksiteData]
   }
   
-  extension [Self <: InetChecksiteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InetChecksiteData] (val x: Self) extends AnyVal {
     
     inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     

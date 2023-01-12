@@ -84,7 +84,8 @@ object Stroke {
          with Type
   }
   
-  extension [Self <: Stroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Stroke] (val x: Self) extends AnyVal {
     
     inline def setAddEndNote(value: Note => Stroke): Self = StObject.set(x, "addEndNote", js.Any.fromFunction1(value))
   }

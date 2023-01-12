@@ -38,7 +38,8 @@ object EmitterOpEaseConfig {
     __obj.asInstanceOf[EmitterOpEaseConfig]
   }
   
-  extension [Self <: EmitterOpEaseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitterOpEaseConfig] (val x: Self) extends AnyVal {
     
     inline def setEase(value: String | js.Function): Self = StObject.set(x, "ease", value.asInstanceOf[js.Any])
     

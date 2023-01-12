@@ -19,7 +19,8 @@ object ProductSigningCertificate {
     __obj.asInstanceOf[ProductSigningCertificate]
   }
   
-  extension [Self <: ProductSigningCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductSigningCertificate] (val x: Self) extends AnyVal {
     
     inline def setCertificateHashSha1(value: String): Self = StObject.set(x, "certificateHashSha1", value.asInstanceOf[js.Any])
     

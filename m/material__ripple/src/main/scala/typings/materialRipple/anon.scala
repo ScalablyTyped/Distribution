@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[BGFOCUSED]
     }
     
-    extension [Self <: BGFOCUSED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BGFOCUSED] (val x: Self) extends AnyVal {
       
       inline def setBG_FOCUSED(value: String): Self = StObject.set(x, "BG_FOCUSED", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[DEACTIVATIONTIMEOUTMS]
     }
     
-    extension [Self <: DEACTIVATIONTIMEOUTMS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEACTIVATIONTIMEOUTMS] (val x: Self) extends AnyVal {
       
       inline def setDEACTIVATION_TIMEOUT_MS(value: Double): Self = StObject.set(x, "DEACTIVATION_TIMEOUT_MS", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCRippleAdapter]
     }
     
-    extension [Self <: PartialMDCRippleAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCRippleAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -236,7 +239,8 @@ object anon {
       __obj.asInstanceOf[VARFGSCALE]
     }
     
-    extension [Self <: VARFGSCALE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VARFGSCALE] (val x: Self) extends AnyVal {
       
       inline def setVAR_FG_SCALE(value: String): Self = StObject.set(x, "VAR_FG_SCALE", value.asInstanceOf[js.Any])
       

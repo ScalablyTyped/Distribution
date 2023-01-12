@@ -48,7 +48,8 @@ object JSTreeStaticDefaultsState {
     __obj.asInstanceOf[JSTreeStaticDefaultsState]
   }
   
-  extension [Self <: JSTreeStaticDefaultsState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsState] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

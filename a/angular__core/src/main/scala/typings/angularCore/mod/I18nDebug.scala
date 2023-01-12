@@ -22,7 +22,8 @@ object I18nDebug {
     __obj.asInstanceOf[I18nDebug]
   }
   
-  extension [Self <: I18nDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nDebug] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: js.Array[String]): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

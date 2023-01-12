@@ -22,7 +22,8 @@ object OptionsPlotOptionsRingProgressOp {
     __obj.asInstanceOf[OptionsPlotOptionsRingProgressOp]
   }
   
-  extension [Self <: OptionsPlotOptionsRingProgressOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPlotOptionsRingProgressOp] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PlotOptionsRingProgressOp): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

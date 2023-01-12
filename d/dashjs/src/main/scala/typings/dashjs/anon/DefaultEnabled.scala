@@ -15,7 +15,8 @@ object DefaultEnabled {
     __obj.asInstanceOf[DefaultEnabled]
   }
   
-  extension [Self <: DefaultEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultEnabled] (val x: Self) extends AnyVal {
     
     inline def setDefaultEnabled(value: Boolean): Self = StObject.set(x, "defaultEnabled", value.asInstanceOf[js.Any])
     

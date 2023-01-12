@@ -340,7 +340,8 @@ object sapUiCommonsMenuBarMod {
       __obj.asInstanceOf[MenuBarSettings]
     }
     
-    extension [Self <: MenuBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuBarSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: MenuBarDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MenuBarDesign * / any */ String) | PropertyBindingInfo

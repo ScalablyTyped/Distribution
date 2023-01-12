@@ -51,7 +51,8 @@ object sapUiTestGherkinOpa5TestHarnessMod extends Shortcut {
       __obj.asInstanceOf[opa5TestHarness]
     }
     
-    extension [Self <: opa5TestHarness](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: opa5TestHarness] (val x: Self) extends AnyVal {
       
       inline def setTest(value: FeaturePath => Unit): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
     }

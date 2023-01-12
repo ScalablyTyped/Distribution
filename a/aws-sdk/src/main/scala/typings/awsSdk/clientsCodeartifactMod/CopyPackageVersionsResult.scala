@@ -23,7 +23,8 @@ object CopyPackageVersionsResult {
     __obj.asInstanceOf[CopyPackageVersionsResult]
   }
   
-  extension [Self <: CopyPackageVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyPackageVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setFailedVersions(value: PackageVersionErrorMap): Self = StObject.set(x, "failedVersions", value.asInstanceOf[js.Any])
     

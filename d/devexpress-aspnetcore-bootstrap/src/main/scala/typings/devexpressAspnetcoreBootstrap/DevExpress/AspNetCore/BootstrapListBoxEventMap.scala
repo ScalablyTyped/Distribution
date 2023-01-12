@@ -51,7 +51,8 @@ object BootstrapListBoxEventMap {
     __obj.asInstanceOf[BootstrapListBoxEventMap]
   }
   
-  extension [Self <: BootstrapListBoxEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapListBoxEventMap] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
     

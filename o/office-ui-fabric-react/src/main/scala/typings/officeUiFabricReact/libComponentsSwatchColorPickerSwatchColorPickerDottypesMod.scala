@@ -187,7 +187,8 @@ object libComponentsSwatchColorPickerSwatchColorPickerDottypesMod {
       __obj.asInstanceOf[ISwatchColorPickerProps]
     }
     
-    extension [Self <: ISwatchColorPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwatchColorPickerProps] (val x: Self) extends AnyVal {
       
       inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
       
@@ -327,7 +328,8 @@ object libComponentsSwatchColorPickerSwatchColorPickerDottypesMod {
       __obj.asInstanceOf[ISwatchColorPickerStyleProps]
     }
     
-    extension [Self <: ISwatchColorPickerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwatchColorPickerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCellMargin(value: Double): Self = StObject.set(x, "cellMargin", value.asInstanceOf[js.Any])
       
@@ -365,7 +367,8 @@ object libComponentsSwatchColorPickerSwatchColorPickerDottypesMod {
       __obj.asInstanceOf[ISwatchColorPickerStyles]
     }
     
-    extension [Self <: ISwatchColorPickerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISwatchColorPickerStyles] (val x: Self) extends AnyVal {
       
       inline def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
       

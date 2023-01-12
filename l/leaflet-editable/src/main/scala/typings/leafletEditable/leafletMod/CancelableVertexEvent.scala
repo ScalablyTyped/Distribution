@@ -33,7 +33,8 @@ object CancelableVertexEvent {
     __obj.asInstanceOf[CancelableVertexEvent]
   }
   
-  extension [Self <: CancelableVertexEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelableVertexEvent] (val x: Self) extends AnyVal {
     
     inline def setVertex(value: VertexMarker): Self = StObject.set(x, "vertex", value.asInstanceOf[js.Any])
   }

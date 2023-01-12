@@ -16,7 +16,8 @@ object ReqSuperAgentRequest {
     __obj.asInstanceOf[ReqSuperAgentRequest]
   }
   
-  extension [Self <: ReqSuperAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReqSuperAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setReq(value: SuperAgentRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
   }

@@ -51,7 +51,8 @@ object CanvasLineElement {
     __obj.asInstanceOf[CanvasLineElement]
   }
   
-  extension [Self <: CanvasLineElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasLineElement] (val x: Self) extends AnyVal {
     
     inline def setDash(value: Dash): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
     

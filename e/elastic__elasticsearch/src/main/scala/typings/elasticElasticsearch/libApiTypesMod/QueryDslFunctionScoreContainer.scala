@@ -29,7 +29,8 @@ object QueryDslFunctionScoreContainer {
     __obj.asInstanceOf[QueryDslFunctionScoreContainer]
   }
   
-  extension [Self <: QueryDslFunctionScoreContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslFunctionScoreContainer] (val x: Self) extends AnyVal {
     
     inline def setExp(value: QueryDslDecayFunction): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     

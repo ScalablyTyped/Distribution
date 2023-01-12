@@ -23,7 +23,8 @@ object ArchiveFindingsRequest {
     __obj.asInstanceOf[ArchiveFindingsRequest]
   }
   
-  extension [Self <: ArchiveFindingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveFindingsRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

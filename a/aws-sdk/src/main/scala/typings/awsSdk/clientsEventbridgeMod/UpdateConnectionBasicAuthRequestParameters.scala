@@ -23,7 +23,8 @@ object UpdateConnectionBasicAuthRequestParameters {
     __obj.asInstanceOf[UpdateConnectionBasicAuthRequestParameters]
   }
   
-  extension [Self <: UpdateConnectionBasicAuthRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnectionBasicAuthRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: AuthHeaderParameters): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     

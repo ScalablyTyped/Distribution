@@ -23,7 +23,8 @@ object BatchReadException {
     __obj.asInstanceOf[BatchReadException]
   }
   
-  extension [Self <: BatchReadException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchReadException] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ExceptionMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

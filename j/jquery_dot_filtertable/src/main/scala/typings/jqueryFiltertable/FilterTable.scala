@@ -145,7 +145,8 @@ object FilterTable {
       __obj.asInstanceOf[FilterTableOptions]
     }
     
-    extension [Self <: FilterTableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterTableOptions] (val x: Self) extends AnyVal {
       
       inline def setAutofocus(value: Boolean): Self = StObject.set(x, "autofocus", value.asInstanceOf[js.Any])
       

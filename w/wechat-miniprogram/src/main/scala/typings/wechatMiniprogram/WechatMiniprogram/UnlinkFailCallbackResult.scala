@@ -22,7 +22,8 @@ object UnlinkFailCallbackResult {
     __obj.asInstanceOf[UnlinkFailCallbackResult]
   }
   
-  extension [Self <: UnlinkFailCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlinkFailCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ContinuePropagation]
     }
     
-    extension [Self <: ContinuePropagation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinuePropagation] (val x: Self) extends AnyVal {
       
       inline def setContinuePropagation(value: () => Unit): Self = StObject.set(x, "continuePropagation", js.Any.fromFunction0(value))
       

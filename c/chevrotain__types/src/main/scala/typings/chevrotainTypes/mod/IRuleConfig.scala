@@ -24,7 +24,8 @@ object IRuleConfig {
     __obj.asInstanceOf[IRuleConfig[T]]
   }
   
-  extension [Self <: IRuleConfig[?], T](x: Self & IRuleConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRuleConfig[?], T] (val x: Self & IRuleConfig[T]) extends AnyVal {
     
     inline def setRecoveryValueFunc(value: () => T): Self = StObject.set(x, "recoveryValueFunc", js.Any.fromFunction0(value))
     

@@ -49,7 +49,8 @@ object libImagePickerImageRollMod {
       __obj.asInstanceOf[ImageRollProps]
     }
     
-    extension [Self <: ImageRollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageRollProps] (val x: Self) extends AnyVal {
       
       inline def setCameraPickerProps(value: CameraRollPickerProps): Self = StObject.set(x, "cameraPickerProps", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libImagePickerImageRollMod {
       __obj.asInstanceOf[ImageRollTexts]
     }
     
-    extension [Self <: ImageRollTexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageRollTexts] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: ReactNode): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       

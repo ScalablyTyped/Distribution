@@ -19,7 +19,8 @@ object AnimatedItem {
     __obj.asInstanceOf[AnimatedItem[ItemT]]
   }
   
-  extension [Self <: AnimatedItem[?], ItemT](x: Self & AnimatedItem[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedItem[?], ItemT] (val x: Self & AnimatedItem[ItemT]) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

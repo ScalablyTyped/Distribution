@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[KeyboardProps]
     }
     
-    extension [Self <: KeyboardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardProps] (val x: Self) extends AnyVal {
       
       inline def setCallbackParent(
         value: (/* event */ js.UndefOr[String | Event], /* keyboard */ js.UndefOr[Element], /* el */ js.UndefOr[Element]) => Unit
@@ -90,7 +91,8 @@ object mod {
       __obj.asInstanceOf[KeyboardState]
     }
     
-    extension [Self <: KeyboardState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardState] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object mod {
       __obj.asInstanceOf[ReactKeyboardOptions]
     }
     
-    extension [Self <: ReactKeyboardOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactKeyboardOptions] (val x: Self) extends AnyVal {
       
       inline def setAccepted(value: Unit): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     }

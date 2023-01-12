@@ -173,7 +173,8 @@ object TopFeaturesQueryProperties {
     __obj.asInstanceOf[TopFeaturesQueryProperties]
   }
   
-  extension [Self <: TopFeaturesQueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopFeaturesQueryProperties] (val x: Self) extends AnyVal {
     
     inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
     

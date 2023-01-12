@@ -19,7 +19,8 @@ object Image {
     __obj.asInstanceOf[Image]
   }
   
-  extension [Self <: Image](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
     
     inline def setGetBytesAsync(value: () => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "getBytesAsync", js.Any.fromFunction0(value))
     

@@ -79,7 +79,8 @@ object srcNgtscAnnotationsCommonSrcApiMod {
       __obj.asInstanceOf[ResourceLoader]
     }
     
-    extension [Self <: ResourceLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLoader] (val x: Self) extends AnyVal {
       
       inline def setCanPreload(value: Boolean): Self = StObject.set(x, "canPreload", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object srcNgtscAnnotationsCommonSrcApiMod {
       __obj.asInstanceOf[ResourceLoaderContext]
     }
     
-    extension [Self <: ResourceLoaderContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLoaderContext] (val x: Self) extends AnyVal {
       
       inline def setContainingFile(value: String): Self = StObject.set(x, "containingFile", value.asInstanceOf[js.Any])
       

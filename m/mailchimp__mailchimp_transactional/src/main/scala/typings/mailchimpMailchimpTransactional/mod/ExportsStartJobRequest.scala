@@ -18,7 +18,8 @@ object ExportsStartJobRequest {
     __obj.asInstanceOf[ExportsStartJobRequest]
   }
   
-  extension [Self <: ExportsStartJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportsStartJobRequest] (val x: Self) extends AnyVal {
     
     inline def setNotify_email(value: String): Self = StObject.set(x, "notify_email", value.asInstanceOf[js.Any])
     

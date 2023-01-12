@@ -113,7 +113,8 @@ object libInternalTypestyleMod {
       __obj.asInstanceOf[StylesTarget]
     }
     
-    extension [Self <: StylesTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StylesTarget] (val x: Self) extends AnyVal {
       
       inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       

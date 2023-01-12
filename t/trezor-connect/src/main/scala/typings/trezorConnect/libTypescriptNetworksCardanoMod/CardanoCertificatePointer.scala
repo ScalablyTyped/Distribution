@@ -19,7 +19,8 @@ object CardanoCertificatePointer {
     __obj.asInstanceOf[CardanoCertificatePointer]
   }
   
-  extension [Self <: CardanoCertificatePointer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoCertificatePointer] (val x: Self) extends AnyVal {
     
     inline def setBlockIndex(value: Double): Self = StObject.set(x, "blockIndex", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object ParametersQueryPerpageVisibletorepository {
     __obj.asInstanceOf[ParametersQueryPerpageVisibletorepository]
   }
   
-  extension [Self <: ParametersQueryPerpageVisibletorepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryPerpageVisibletorepository] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryPerpageVisibletorepository): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

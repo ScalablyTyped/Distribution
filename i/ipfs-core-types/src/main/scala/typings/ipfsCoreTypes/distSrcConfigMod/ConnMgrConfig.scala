@@ -17,7 +17,8 @@ object ConnMgrConfig {
     __obj.asInstanceOf[ConnMgrConfig]
   }
   
-  extension [Self <: ConnMgrConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnMgrConfig] (val x: Self) extends AnyVal {
     
     inline def setHighWater(value: Double): Self = StObject.set(x, "HighWater", value.asInstanceOf[js.Any])
     

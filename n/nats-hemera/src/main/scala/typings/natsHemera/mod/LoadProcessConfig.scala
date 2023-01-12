@@ -15,7 +15,8 @@ object LoadProcessConfig {
     __obj.asInstanceOf[LoadProcessConfig]
   }
   
-  extension [Self <: LoadProcessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadProcessConfig] (val x: Self) extends AnyVal {
     
     inline def setSampleInterval(value: Double): Self = StObject.set(x, "sampleInterval", value.asInstanceOf[js.Any])
     

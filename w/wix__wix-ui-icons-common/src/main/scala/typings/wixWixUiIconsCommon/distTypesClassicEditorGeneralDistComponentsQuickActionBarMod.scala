@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsQuickActionBarMod extends Shor
       __obj.asInstanceOf[QuickActionBarProps]
     }
     
-    extension [Self <: QuickActionBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickActionBarProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CancelKeyDeletionRequest {
     __obj.asInstanceOf[CancelKeyDeletionRequest]
   }
   
-  extension [Self <: CancelKeyDeletionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelKeyDeletionRequest] (val x: Self) extends AnyVal {
     
     inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }

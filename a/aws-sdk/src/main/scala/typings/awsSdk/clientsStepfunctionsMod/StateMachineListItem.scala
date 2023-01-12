@@ -34,7 +34,8 @@ object StateMachineListItem {
     __obj.asInstanceOf[StateMachineListItem]
   }
   
-  extension [Self <: StateMachineListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateMachineListItem] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

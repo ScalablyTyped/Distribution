@@ -41,7 +41,8 @@ object RadialGaugeScale {
     __obj.asInstanceOf[RadialGaugeScale]
   }
   
-  extension [Self <: RadialGaugeScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeScale] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PeriodSwitchEvent {
     __obj.asInstanceOf[PeriodSwitchEvent]
   }
   
-  extension [Self <: PeriodSwitchEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeriodSwitchEvent] (val x: Self) extends AnyVal {
     
     inline def setFromStreamInfo(value: StreamInfo): Self = StObject.set(x, "fromStreamInfo", value.asInstanceOf[js.Any])
     

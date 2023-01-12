@@ -23,7 +23,8 @@ object BuiltinIntentMetadata {
     __obj.asInstanceOf[BuiltinIntentMetadata]
   }
   
-  extension [Self <: BuiltinIntentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltinIntentMetadata] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     

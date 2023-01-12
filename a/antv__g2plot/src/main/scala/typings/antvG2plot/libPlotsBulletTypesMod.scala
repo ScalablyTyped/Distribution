@@ -49,7 +49,8 @@ object libPlotsBulletTypesMod {
       __obj.asInstanceOf[BulletAttr[T]]
     }
     
-    extension [Self <: BulletAttr[?], T](x: Self & BulletAttr[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulletAttr[?], T] (val x: Self & BulletAttr[T]) extends AnyVal {
       
       inline def setMeasure(value: T): Self = StObject.set(x, "measure", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object libPlotsBulletTypesMod {
       __obj.asInstanceOf[BulletOptions]
     }
     
-    extension [Self <: BulletOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BulletOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

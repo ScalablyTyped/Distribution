@@ -15,7 +15,8 @@ object JQuerySupport {
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  extension [Self <: JQuerySupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
     
     inline def setTouchOverflow(value: Any): Self = StObject.set(x, "touchOverflow", value.asInstanceOf[js.Any])
   }

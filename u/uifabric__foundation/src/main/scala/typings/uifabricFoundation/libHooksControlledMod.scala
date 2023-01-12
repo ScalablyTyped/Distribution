@@ -72,7 +72,8 @@ object libHooksControlledMod {
       __obj.asInstanceOf[IControlledStateOptions[TProps, TProp, TDefaultProp]]
     }
     
-    extension [Self <: IControlledStateOptions[?, ?, ?], TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */](x: Self & (IControlledStateOptions[TProps, TProp, TDefaultProp])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IControlledStateOptions[?, ?, ?], TProps, TProp /* <: /* keyof TProps */ String */, TDefaultProp /* <: /* keyof TProps */ String */] (val x: Self & (IControlledStateOptions[TProps, TProp, TDefaultProp])) extends AnyVal {
       
       inline def setDefaultPropName(value: TDefaultProp): Self = StObject.set(x, "defaultPropName", value.asInstanceOf[js.Any])
       

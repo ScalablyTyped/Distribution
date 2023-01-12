@@ -15,7 +15,8 @@ object PlotTilemapStatesHoverHaloAttributesOptions {
     __obj.asInstanceOf[PlotTilemapStatesHoverHaloAttributesOptions]
   }
   
-  extension [Self <: PlotTilemapStatesHoverHaloAttributesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTilemapStatesHoverHaloAttributesOptions] (val x: Self) extends AnyVal {
     
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     

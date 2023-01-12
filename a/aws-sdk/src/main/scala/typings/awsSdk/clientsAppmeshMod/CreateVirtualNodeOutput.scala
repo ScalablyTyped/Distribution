@@ -18,7 +18,8 @@ object CreateVirtualNodeOutput {
     __obj.asInstanceOf[CreateVirtualNodeOutput]
   }
   
-  extension [Self <: CreateVirtualNodeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualNodeOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualNode(value: VirtualNodeData): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
   }

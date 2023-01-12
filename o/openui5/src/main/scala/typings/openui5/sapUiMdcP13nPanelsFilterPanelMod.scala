@@ -217,7 +217,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       __obj.asInstanceOf[FilterItem]
     }
     
-    extension [Self <: FilterItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterItem] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       __obj.asInstanceOf[FilterPanel]
     }
     
-    extension [Self <: FilterPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPanel] (val x: Self) extends AnyVal {
       
       inline def setGetItemFactory(value: () => js.Function): Self = StObject.set(x, "getItemFactory", js.Any.fromFunction0(value))
       
@@ -321,7 +323,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       __obj.asInstanceOf[FilterPanelSettings]
     }
     
-    extension [Self <: FilterPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setItemFactory(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "itemFactory", value.asInstanceOf[js.Any])
       

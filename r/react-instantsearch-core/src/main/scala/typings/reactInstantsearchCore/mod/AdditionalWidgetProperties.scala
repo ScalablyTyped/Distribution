@@ -16,7 +16,8 @@ object AdditionalWidgetProperties {
     __obj.asInstanceOf[AdditionalWidgetProperties]
   }
   
-  extension [Self <: AdditionalWidgetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalWidgetProperties] (val x: Self) extends AnyVal {
     
     inline def setDollarDollarwidgetType(value: String): Self = StObject.set(x, "$$widgetType", value.asInstanceOf[js.Any])
     

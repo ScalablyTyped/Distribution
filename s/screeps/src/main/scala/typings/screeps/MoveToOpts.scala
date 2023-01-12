@@ -40,7 +40,8 @@ object MoveToOpts {
     __obj.asInstanceOf[MoveToOpts]
   }
   
-  extension [Self <: MoveToOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveToOpts] (val x: Self) extends AnyVal {
     
     inline def setNoPathFinding(value: Boolean): Self = StObject.set(x, "noPathFinding", value.asInstanceOf[js.Any])
     

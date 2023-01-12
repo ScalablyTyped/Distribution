@@ -44,7 +44,8 @@ object MemberAccessExpression {
     __obj.asInstanceOf[MemberAccessExpression]
   }
   
-  extension [Self <: MemberAccessExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberAccessExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ForcePseudoStateRequest {
     __obj.asInstanceOf[ForcePseudoStateRequest]
   }
   
-  extension [Self <: ForcePseudoStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForcePseudoStateRequest] (val x: Self) extends AnyVal {
     
     inline def setForcedPseudoClasses(value: js.Array[String]): Self = StObject.set(x, "forcedPseudoClasses", value.asInstanceOf[js.Any])
     

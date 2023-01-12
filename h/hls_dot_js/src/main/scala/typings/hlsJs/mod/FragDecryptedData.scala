@@ -20,7 +20,8 @@ object FragDecryptedData {
     __obj.asInstanceOf[FragDecryptedData]
   }
   
-  extension [Self <: FragDecryptedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragDecryptedData] (val x: Self) extends AnyVal {
     
     inline def setFrag(value: Fragment): Self = StObject.set(x, "frag", value.asInstanceOf[js.Any])
     

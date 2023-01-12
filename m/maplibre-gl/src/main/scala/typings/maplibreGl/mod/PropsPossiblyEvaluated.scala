@@ -23,7 +23,8 @@ object PropsPossiblyEvaluated {
     __obj.asInstanceOf[PropsPossiblyEvaluated]
   }
   
-  extension [Self <: PropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: map | viewport): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

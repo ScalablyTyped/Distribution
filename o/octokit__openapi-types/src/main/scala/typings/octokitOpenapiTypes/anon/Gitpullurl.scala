@@ -68,7 +68,8 @@ object Gitpullurl {
     __obj.asInstanceOf[Gitpullurl]
   }
   
-  extension [Self <: Gitpullurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gitpullurl] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Double): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

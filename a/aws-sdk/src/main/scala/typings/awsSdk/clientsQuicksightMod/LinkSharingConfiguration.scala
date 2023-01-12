@@ -18,7 +18,8 @@ object LinkSharingConfiguration {
     __obj.asInstanceOf[LinkSharingConfiguration]
   }
   
-  extension [Self <: LinkSharingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkSharingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPermissions(value: ResourcePermissionList): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
     

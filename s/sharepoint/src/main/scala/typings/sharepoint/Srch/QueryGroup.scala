@@ -26,7 +26,8 @@ object QueryGroup {
     __obj.asInstanceOf[QueryGroup]
   }
   
-  extension [Self <: QueryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryGroup] (val x: Self) extends AnyVal {
     
     inline def setDataProvider(value: DataProvider): Self = StObject.set(x, "dataProvider", value.asInstanceOf[js.Any])
     

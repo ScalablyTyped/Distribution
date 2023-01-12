@@ -68,7 +68,8 @@ object libOverlayTriggerMod {
       __obj.asInstanceOf[OverlayTriggerProps]
     }
     
-    extension [Self <: OverlayTriggerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayTriggerProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object distInspectorsRegexInspectorMod {
       __obj.asInstanceOf[RegexInspector]
     }
     
-    extension [Self <: RegexInspector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegexInspector] (val x: Self) extends AnyVal {
       
       inline def setGetParameterNames(value: Any): Self = StObject.set(x, "getParameterNames", value.asInstanceOf[js.Any])
     }

@@ -203,7 +203,8 @@ object GetSystemInfoResult {
     __obj.asInstanceOf[GetSystemInfoResult]
   }
   
-  extension [Self <: GetSystemInfoResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemInfoResult] (val x: Self) extends AnyVal {
     
     inline def setAlbumAuthorized(value: Boolean): Self = StObject.set(x, "albumAuthorized", value.asInstanceOf[js.Any])
     

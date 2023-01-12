@@ -17,7 +17,8 @@ object RealtimeReleaseEvent {
     __obj.asInstanceOf[RealtimeReleaseEvent]
   }
   
-  extension [Self <: RealtimeReleaseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealtimeReleaseEvent] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

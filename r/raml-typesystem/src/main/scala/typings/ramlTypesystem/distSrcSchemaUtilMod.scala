@@ -182,7 +182,8 @@ object distSrcSchemaUtilMod {
       __obj.asInstanceOf[IContentProvider]
     }
     
-    extension [Self <: IContentProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContentProvider] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String => String): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
@@ -231,7 +232,8 @@ object distSrcSchemaUtilMod {
       __obj.asInstanceOf[IExtendedContentProvider]
     }
     
-    extension [Self <: IExtendedContentProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExtendedContentProvider] (val x: Self) extends AnyVal {
       
       inline def setIsWebPath(value: String => Boolean): Self = StObject.set(x, "isWebPath", js.Any.fromFunction1(value))
       
@@ -265,7 +267,8 @@ object distSrcSchemaUtilMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
       
@@ -292,7 +295,8 @@ object distSrcSchemaUtilMod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

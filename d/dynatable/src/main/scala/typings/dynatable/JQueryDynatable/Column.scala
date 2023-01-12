@@ -76,7 +76,8 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  extension [Self <: Column](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
     
     inline def setAttributeReader(value: (Element, Any) => String): Self = StObject.set(x, "attributeReader", js.Any.fromFunction2(value))
     

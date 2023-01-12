@@ -20,7 +20,8 @@ object SummaryType {
     __obj.asInstanceOf[SummaryType]
   }
   
-  extension [Self <: SummaryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummaryType] (val x: Self) extends AnyVal {
     
     inline def setSummaryType(value: sum | avg | min | max | count): Self = StObject.set(x, "summaryType", value.asInstanceOf[js.Any])
     

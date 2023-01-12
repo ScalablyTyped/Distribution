@@ -98,7 +98,8 @@ object Core {
       __obj.asInstanceOf[WebProviderError]
     }
     
-    extension [Self <: WebProviderError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebProviderError] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object Core {
       __obj.asInstanceOf[WebTokenRequest]
     }
     
-    extension [Self <: WebTokenRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebTokenRequest] (val x: Self) extends AnyVal {
       
       inline def setAppProperties(value: Any): Self = StObject.set(x, "appProperties", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object Core {
       __obj.asInstanceOf[WebTokenRequestResult]
     }
     
-    extension [Self <: WebTokenRequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebTokenRequestResult] (val x: Self) extends AnyVal {
       
       inline def setInvalidateCacheAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "invalidateCacheAsync", js.Any.fromFunction0(value))
       
@@ -228,7 +231,8 @@ object Core {
       __obj.asInstanceOf[WebTokenResponse]
     }
     
-    extension [Self <: WebTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: IMap[String, String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object GlobalXpub {
     __obj.asInstanceOf[GlobalXpub]
   }
   
-  extension [Self <: GlobalXpub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalXpub] (val x: Self) extends AnyVal {
     
     inline def setExtendedPubkey(value: Buffer): Self = StObject.set(x, "extendedPubkey", value.asInstanceOf[js.Any])
     

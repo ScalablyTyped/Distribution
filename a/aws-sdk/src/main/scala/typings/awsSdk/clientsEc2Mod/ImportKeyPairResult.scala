@@ -33,7 +33,8 @@ object ImportKeyPairResult {
     __obj.asInstanceOf[ImportKeyPairResult]
   }
   
-  extension [Self <: ImportKeyPairResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportKeyPairResult] (val x: Self) extends AnyVal {
     
     inline def setKeyFingerprint(value: String): Self = StObject.set(x, "KeyFingerprint", value.asInstanceOf[js.Any])
     

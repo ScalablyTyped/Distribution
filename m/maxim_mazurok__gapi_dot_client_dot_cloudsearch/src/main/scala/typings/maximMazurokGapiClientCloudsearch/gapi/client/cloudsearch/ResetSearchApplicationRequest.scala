@@ -16,7 +16,8 @@ object ResetSearchApplicationRequest {
     __obj.asInstanceOf[ResetSearchApplicationRequest]
   }
   
-  extension [Self <: ResetSearchApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetSearchApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     

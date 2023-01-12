@@ -15,7 +15,8 @@ object OptOutOfModalBackdrop {
     __obj.asInstanceOf[OptOutOfModalBackdrop]
   }
   
-  extension [Self <: OptOutOfModalBackdrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptOutOfModalBackdrop] (val x: Self) extends AnyVal {
     
     inline def setOptOutOfModalBackdrop(value: Boolean): Self = StObject.set(x, "optOutOfModalBackdrop", value.asInstanceOf[js.Any])
   }

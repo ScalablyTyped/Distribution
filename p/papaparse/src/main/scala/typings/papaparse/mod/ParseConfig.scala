@@ -142,7 +142,8 @@ object ParseConfig {
     __obj.asInstanceOf[ParseConfig[T, TInput]]
   }
   
-  extension [Self <: ParseConfig[?, ?], T, TInput](x: Self & (ParseConfig[T, TInput])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseConfig[?, ?], T, TInput] (val x: Self & (ParseConfig[T, TInput])) extends AnyVal {
     
     inline def setBeforeFirstChunk(value: /* chunk */ String => String | Unit): Self = StObject.set(x, "beforeFirstChunk", js.Any.fromFunction1(value))
     

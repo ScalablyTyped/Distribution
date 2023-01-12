@@ -50,7 +50,8 @@ object Default {
     __obj.asInstanceOf[Default[O, O1]]
   }
   
-  extension [Self <: Default[?, ?], O /* <: js.Object */, O1 /* <: js.Object */](x: Self & (Default[O, O1])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Default[?, ?], O /* <: js.Object */, O1 /* <: js.Object */] (val x: Self & (Default[O, O1])) extends AnyVal {
     
     inline def `setContains-Greaterthansign`(value: ExcludeMatch[O, O1, `contains-Greaterthansign`]): Self = StObject.set(x, "contains->", value.asInstanceOf[js.Any])
     

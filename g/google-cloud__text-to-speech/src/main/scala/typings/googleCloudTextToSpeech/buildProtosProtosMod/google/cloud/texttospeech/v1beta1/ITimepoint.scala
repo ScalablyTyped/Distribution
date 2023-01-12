@@ -20,7 +20,8 @@ object ITimepoint {
     __obj.asInstanceOf[ITimepoint]
   }
   
-  extension [Self <: ITimepoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimepoint] (val x: Self) extends AnyVal {
     
     inline def setMarkName(value: String): Self = StObject.set(x, "markName", value.asInstanceOf[js.Any])
     

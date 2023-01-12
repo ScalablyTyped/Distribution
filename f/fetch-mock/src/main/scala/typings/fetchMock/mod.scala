@@ -564,7 +564,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptions]
     }
     
-    extension [Self <: MockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -638,7 +639,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptionsMethodDelete]
     }
     
-    extension [Self <: MockOptionsMethodDelete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptionsMethodDelete] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: DELETE): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -660,7 +662,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptionsMethodGet]
     }
     
-    extension [Self <: MockOptionsMethodGet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptionsMethodGet] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -682,7 +685,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptionsMethodHead]
     }
     
-    extension [Self <: MockOptionsMethodHead](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptionsMethodHead] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: HEAD): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -704,7 +708,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptionsMethodPost]
     }
     
-    extension [Self <: MockOptionsMethodPost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptionsMethodPost] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -726,7 +731,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockOptionsMethodPut]
     }
     
-    extension [Self <: MockOptionsMethodPut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockOptionsMethodPut] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -793,7 +799,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MockResponseObject]
     }
     
-    extension [Self <: MockResponseObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockResponseObject] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String | js.Object): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

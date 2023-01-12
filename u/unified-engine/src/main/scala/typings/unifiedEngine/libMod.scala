@@ -53,7 +53,8 @@ object libMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setFileSet(value: typings.unifiedEngine.libFileSetMod.FileSet): Self = StObject.set(x, "fileSet", value.asInstanceOf[js.Any])
       
@@ -280,7 +281,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlwaysStringify(value: Boolean): Self = StObject.set(x, "alwaysStringify", value.asInstanceOf[js.Any])
       
@@ -546,7 +548,8 @@ object libMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAlwaysStringify(value: Boolean): Self = StObject.set(x, "alwaysStringify", value.asInstanceOf[js.Any])
       
@@ -738,7 +741,8 @@ object libMod {
       __obj.asInstanceOf[VFileReporterFields]
     }
     
-    extension [Self <: VFileReporterFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VFileReporterFields] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

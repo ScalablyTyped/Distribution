@@ -50,7 +50,8 @@ object Player {
     __obj.asInstanceOf[Player]
   }
   
-  extension [Self <: Player](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
     
     inline def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
     

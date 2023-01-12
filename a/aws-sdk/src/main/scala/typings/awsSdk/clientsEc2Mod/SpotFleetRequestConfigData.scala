@@ -143,7 +143,8 @@ object SpotFleetRequestConfigData {
     __obj.asInstanceOf[SpotFleetRequestConfigData]
   }
   
-  extension [Self <: SpotFleetRequestConfigData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpotFleetRequestConfigData] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: AllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

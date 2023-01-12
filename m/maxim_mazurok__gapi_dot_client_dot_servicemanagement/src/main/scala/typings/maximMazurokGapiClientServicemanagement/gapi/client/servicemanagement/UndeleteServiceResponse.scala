@@ -16,7 +16,8 @@ object UndeleteServiceResponse {
     __obj.asInstanceOf[UndeleteServiceResponse]
   }
   
-  extension [Self <: UndeleteServiceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndeleteServiceResponse] (val x: Self) extends AnyVal {
     
     inline def setService(value: ManagedService): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

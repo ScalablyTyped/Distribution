@@ -20,7 +20,8 @@ object RQISetSingleDocumentOptio {
     __obj.asInstanceOf[RQISetSingleDocumentOptio]
   }
   
-  extension [Self <: RQISetSingleDocumentOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQISetSingleDocumentOptio] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

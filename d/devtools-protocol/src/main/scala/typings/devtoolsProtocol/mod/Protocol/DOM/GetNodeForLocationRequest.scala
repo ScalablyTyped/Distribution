@@ -34,7 +34,8 @@ object GetNodeForLocationRequest {
     __obj.asInstanceOf[GetNodeForLocationRequest]
   }
   
-  extension [Self <: GetNodeForLocationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodeForLocationRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnorePointerEventsNone(value: Boolean): Self = StObject.set(x, "ignorePointerEventsNone", value.asInstanceOf[js.Any])
     

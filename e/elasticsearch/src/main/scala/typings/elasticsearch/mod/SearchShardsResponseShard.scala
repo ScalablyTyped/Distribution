@@ -36,7 +36,8 @@ object SearchShardsResponseShard {
     __obj.asInstanceOf[SearchShardsResponseShard]
   }
   
-  extension [Self <: SearchShardsResponseShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchShardsResponseShard] (val x: Self) extends AnyVal {
     
     inline def setAllocation_id(value: Id): Self = StObject.set(x, "allocation_id", value.asInstanceOf[js.Any])
     

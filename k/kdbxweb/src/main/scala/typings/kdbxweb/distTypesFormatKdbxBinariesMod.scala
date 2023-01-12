@@ -76,7 +76,8 @@ object distTypesFormatKdbxBinariesMod {
       __obj.asInstanceOf[KdbxBinaryRef]
     }
     
-    extension [Self <: KdbxBinaryRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxBinaryRef] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
@@ -95,7 +96,8 @@ object distTypesFormatKdbxBinariesMod {
       __obj.asInstanceOf[KdbxBinaryRefWithValue]
     }
     
-    extension [Self <: KdbxBinaryRefWithValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxBinaryRefWithValue] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object distTypesFormatKdbxBinariesMod {
       __obj.asInstanceOf[KdbxBinaryWithHash]
     }
     
-    extension [Self <: KdbxBinaryWithHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxBinaryWithHash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

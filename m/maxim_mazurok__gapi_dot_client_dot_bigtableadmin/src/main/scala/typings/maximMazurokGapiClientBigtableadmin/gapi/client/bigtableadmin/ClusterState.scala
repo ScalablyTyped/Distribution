@@ -22,7 +22,8 @@ object ClusterState {
     __obj.asInstanceOf[ClusterState]
   }
   
-  extension [Self <: ClusterState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterState] (val x: Self) extends AnyVal {
     
     inline def setEncryptionInfo(value: js.Array[EncryptionInfo]): Self = StObject.set(x, "encryptionInfo", value.asInstanceOf[js.Any])
     

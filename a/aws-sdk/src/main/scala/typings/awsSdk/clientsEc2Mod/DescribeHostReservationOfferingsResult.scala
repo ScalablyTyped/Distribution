@@ -23,7 +23,8 @@ object DescribeHostReservationOfferingsResult {
     __obj.asInstanceOf[DescribeHostReservationOfferingsResult]
   }
   
-  extension [Self <: DescribeHostReservationOfferingsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHostReservationOfferingsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

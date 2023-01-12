@@ -82,7 +82,8 @@ object distTypesMod {
       __obj.asInstanceOf[ICustomizeOptions]
     }
     
-    extension [Self <: ICustomizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizeOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomizeArray(value: (/* a */ Any, /* b */ Any, /* key */ Key) => Any): Self = StObject.set(x, "customizeArray", js.Any.fromFunction3(value))
       

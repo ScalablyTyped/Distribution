@@ -21,7 +21,8 @@ object MemeMetadata {
     __obj.asInstanceOf[MemeMetadata]
   }
   
-  extension [Self <: MemeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemeMetadata] (val x: Self) extends AnyVal {
     
     inline def setBg_image(value: String): Self = StObject.set(x, "bg_image", value.asInstanceOf[js.Any])
     

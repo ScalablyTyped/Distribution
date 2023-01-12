@@ -53,7 +53,8 @@ object PreloadedQuery {
     __obj.asInstanceOf[PreloadedQuery[TQuery, TEnvironmentProviderOptions]]
   }
   
-  extension [Self <: PreloadedQuery[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions](x: Self & (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadedQuery[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions] (val x: Self & (PreloadedQuery[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

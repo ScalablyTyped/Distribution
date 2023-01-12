@@ -136,7 +136,8 @@ object OmitRedisOptionsporthostp {
     __obj.asInstanceOf[OmitRedisOptionsporthostp]
   }
   
-  extension [Self <: OmitRedisOptionsporthostp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRedisOptionsporthostp] (val x: Self) extends AnyVal {
     
     inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AwsBackupBackupVaultDetails {
     __obj.asInstanceOf[AwsBackupBackupVaultDetails]
   }
   
-  extension [Self <: AwsBackupBackupVaultDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsBackupBackupVaultDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessPolicy(value: NonEmptyString): Self = StObject.set(x, "AccessPolicy", value.asInstanceOf[js.Any])
     

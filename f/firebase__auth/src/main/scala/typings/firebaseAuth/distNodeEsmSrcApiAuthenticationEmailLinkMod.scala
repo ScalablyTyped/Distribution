@@ -29,7 +29,8 @@ object distNodeEsmSrcApiAuthenticationEmailLinkMod {
       __obj.asInstanceOf[SignInWithEmailLinkForLinkingRequest]
     }
     
-    extension [Self <: SignInWithEmailLinkForLinkingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithEmailLinkForLinkingRequest] (val x: Self) extends AnyVal {
       
       inline def setIdToken(value: String): Self = StObject.set(x, "idToken", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object distNodeEsmSrcApiAuthenticationEmailLinkMod {
       __obj.asInstanceOf[SignInWithEmailLinkRequest]
     }
     
-    extension [Self <: SignInWithEmailLinkRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithEmailLinkRequest] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object distNodeEsmSrcApiAuthenticationEmailLinkMod {
       __obj.asInstanceOf[SignInWithEmailLinkResponse]
     }
     
-    extension [Self <: SignInWithEmailLinkResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignInWithEmailLinkResponse] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

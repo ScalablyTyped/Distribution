@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Optionsjoinstring]
     }
     
-    extension [Self <: Optionsjoinstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsjoinstring] (val x: Self) extends AnyVal {
       
       inline def setExactly(value: Double): Self = StObject.set(x, "exactly", value.asInstanceOf[js.Any])
       

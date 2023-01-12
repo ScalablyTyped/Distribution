@@ -23,7 +23,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SwagStatic]
     }
     
-    extension [Self <: SwagStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwagStatic] (val x: Self) extends AnyVal {
       
       inline def setRegisterHelpers(value: TypeofHandlebars => Unit): Self = StObject.set(x, "registerHelpers", js.Any.fromFunction1(value))
     }

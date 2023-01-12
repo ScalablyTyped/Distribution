@@ -35,7 +35,8 @@ object IgZoomSliderMethods {
     __obj.asInstanceOf[IgZoomSliderMethods]
   }
   
-  extension [Self <: IgZoomSliderMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgZoomSliderMethods] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

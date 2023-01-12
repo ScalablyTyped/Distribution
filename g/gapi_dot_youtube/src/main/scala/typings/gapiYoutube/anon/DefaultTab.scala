@@ -80,7 +80,8 @@ object DefaultTab {
     __obj.asInstanceOf[DefaultTab]
   }
   
-  extension [Self <: DefaultTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultTab] (val x: Self) extends AnyVal {
     
     inline def setDefaultTab(value: String): Self = StObject.set(x, "defaultTab", value.asInstanceOf[js.Any])
     

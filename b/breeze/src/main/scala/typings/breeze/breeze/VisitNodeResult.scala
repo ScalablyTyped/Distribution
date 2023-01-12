@@ -26,7 +26,8 @@ object VisitNodeResult {
     __obj.asInstanceOf[VisitNodeResult]
   }
   
-  extension [Self <: VisitNodeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisitNodeResult] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

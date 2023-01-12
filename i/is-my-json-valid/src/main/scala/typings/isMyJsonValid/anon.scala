@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[`0`[Properties1, Required1, Properties2, Required2, Properties3, Required3]]
     }
     
-    extension [Self <: `0`[?, ?, ?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */, Properties3 /* <: Record[String, AnySchema] */, Required3 /* <: StringKeys[Properties3] */](x: Self & (`0`[Properties1, Required1, Properties2, Required2, Properties3, Required3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?, ?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */, Properties3 /* <: Record[String, AnySchema] */, Required3 /* <: StringKeys[Properties3] */] (val x: Self & (`0`[Properties1, Required1, Properties2, Required2, Properties3, Required3])) extends AnyVal {
       
       inline def setOneOf(
         value: js.Tuple3[
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[`1`[Properties1, Required1, Properties2, Required2, Properties3, Required3, Properties4, Required4]]
     }
     
-    extension [Self <: `1`[?, ?, ?, ?, ?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */, Properties3 /* <: Record[String, AnySchema] */, Required3 /* <: StringKeys[Properties3] */, Properties4 /* <: Record[String, AnySchema] */, Required4 /* <: StringKeys[Properties4] */](x: Self & (`1`[Properties1, Required1, Properties2, Required2, Properties3, Required3, Properties4, Required4])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`[?, ?, ?, ?, ?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */, Properties3 /* <: Record[String, AnySchema] */, Required3 /* <: StringKeys[Properties3] */, Properties4 /* <: Record[String, AnySchema] */, Required4 /* <: StringKeys[Properties4] */] (val x: Self & (`1`[Properties1, Required1, Properties2, Required2, Properties3, Required3, Properties4, Required4])) extends AnyVal {
       
       inline def setOneOf(
         value: js.Tuple4[
@@ -90,7 +92,8 @@ object anon {
       __obj.asInstanceOf[`2`[Schema1, Schema2]]
     }
     
-    extension [Self <: `2`[?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */](x: Self & (`2`[Schema1, Schema2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`[?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */] (val x: Self & (`2`[Schema1, Schema2])) extends AnyVal {
       
       inline def setOneOf(value: js.Tuple2[Schema1, Schema2]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     }
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[`3`[Schema1, Schema2, Schema3]]
     }
     
-    extension [Self <: `3`[?, ?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */, Schema3 /* <: AnySchema */](x: Self & (`3`[Schema1, Schema2, Schema3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`[?, ?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */, Schema3 /* <: AnySchema */] (val x: Self & (`3`[Schema1, Schema2, Schema3])) extends AnyVal {
       
       inline def setOneOf(value: js.Tuple3[Schema1, Schema2, Schema3]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     }
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[`4`[Schema1, Schema2, Schema3, Schema4]]
     }
     
-    extension [Self <: `4`[?, ?, ?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */, Schema3 /* <: AnySchema */, Schema4 /* <: AnySchema */](x: Self & (`4`[Schema1, Schema2, Schema3, Schema4])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `4`[?, ?, ?, ?], Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */, Schema3 /* <: AnySchema */, Schema4 /* <: AnySchema */] (val x: Self & (`4`[Schema1, Schema2, Schema3, Schema4])) extends AnyVal {
       
       inline def setOneOf(value: js.Tuple4[Schema1, Schema2, Schema3, Schema4]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     }
@@ -141,7 +146,8 @@ object anon {
       __obj.asInstanceOf[OneOf[Properties1, Required1, Properties2, Required2]]
     }
     
-    extension [Self <: OneOf[?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */](x: Self & (OneOf[Properties1, Required1, Properties2, Required2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OneOf[?, ?, ?, ?], Properties1 /* <: Record[String, AnySchema] */, Required1 /* <: StringKeys[Properties1] */, Properties2 /* <: Record[String, AnySchema] */, Required2 /* <: StringKeys[Properties2] */] (val x: Self & (OneOf[Properties1, Required1, Properties2, Required2])) extends AnyVal {
       
       inline def setOneOf(value: js.Tuple2[ObjectSchema[Properties1, Required1], ObjectSchema[Properties2, Required2]]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     }

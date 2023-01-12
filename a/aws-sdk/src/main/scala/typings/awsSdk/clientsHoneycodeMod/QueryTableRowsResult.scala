@@ -33,7 +33,8 @@ object QueryTableRowsResult {
     __obj.asInstanceOf[QueryTableRowsResult]
   }
   
-  extension [Self <: QueryTableRowsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTableRowsResult] (val x: Self) extends AnyVal {
     
     inline def setColumnIds(value: ResourceIds): Self = StObject.set(x, "columnIds", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object RuleAction {
     __obj.asInstanceOf[RuleAction]
   }
   
-  extension [Self <: RuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

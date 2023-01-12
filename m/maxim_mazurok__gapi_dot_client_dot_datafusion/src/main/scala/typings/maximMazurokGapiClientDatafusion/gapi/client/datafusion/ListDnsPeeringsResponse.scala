@@ -19,7 +19,8 @@ object ListDnsPeeringsResponse {
     __obj.asInstanceOf[ListDnsPeeringsResponse]
   }
   
-  extension [Self <: ListDnsPeeringsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDnsPeeringsResponse] (val x: Self) extends AnyVal {
     
     inline def setDnsPeerings(value: js.Array[DnsPeering]): Self = StObject.set(x, "dnsPeerings", value.asInstanceOf[js.Any])
     

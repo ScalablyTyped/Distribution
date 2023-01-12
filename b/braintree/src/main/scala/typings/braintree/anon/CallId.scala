@@ -81,7 +81,8 @@ object CallId {
     __obj.asInstanceOf[CallId]
   }
   
-  extension [Self <: CallId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallId] (val x: Self) extends AnyVal {
     
     inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

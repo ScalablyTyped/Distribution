@@ -17,7 +17,8 @@ object NodesInfoNodeInfoXpackSecurityAuthc {
     __obj.asInstanceOf[NodesInfoNodeInfoXpackSecurityAuthc]
   }
   
-  extension [Self <: NodesInfoNodeInfoXpackSecurityAuthc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoXpackSecurityAuthc] (val x: Self) extends AnyVal {
     
     inline def setRealms(value: NodesInfoNodeInfoXpackSecurityAuthcRealms): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     

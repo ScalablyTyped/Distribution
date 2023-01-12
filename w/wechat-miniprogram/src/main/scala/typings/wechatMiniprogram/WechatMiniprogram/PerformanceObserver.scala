@@ -34,7 +34,8 @@ object PerformanceObserver {
     __obj.asInstanceOf[PerformanceObserver]
   }
   
-  extension [Self <: PerformanceObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceObserver] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     

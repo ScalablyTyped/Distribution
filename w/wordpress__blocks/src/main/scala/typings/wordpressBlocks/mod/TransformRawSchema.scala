@@ -240,7 +240,8 @@ object TransformRawSchema {
     __obj.asInstanceOf[TransformRawSchema]
   }
   
-  extension [Self <: TransformRawSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformRawSchema] (val x: Self) extends AnyVal {
     
     inline def setA(value: Attributes): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

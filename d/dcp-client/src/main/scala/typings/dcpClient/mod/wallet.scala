@@ -62,7 +62,8 @@ object wallet {
       __obj.asInstanceOf[Wallet]
     }
     
-    extension [Self <: Wallet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wallet] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (Keystore, String) => js.Promise[Double]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       

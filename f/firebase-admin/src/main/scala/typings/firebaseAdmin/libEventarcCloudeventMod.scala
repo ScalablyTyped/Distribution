@@ -78,7 +78,8 @@ object libEventarcCloudeventMod {
       __obj.asInstanceOf[CloudEvent]
     }
     
-    extension [Self <: CloudEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

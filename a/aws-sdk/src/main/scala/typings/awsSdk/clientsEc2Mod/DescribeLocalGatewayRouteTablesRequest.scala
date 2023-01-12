@@ -38,7 +38,8 @@ object DescribeLocalGatewayRouteTablesRequest {
     __obj.asInstanceOf[DescribeLocalGatewayRouteTablesRequest]
   }
   
-  extension [Self <: DescribeLocalGatewayRouteTablesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocalGatewayRouteTablesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

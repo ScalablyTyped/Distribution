@@ -17,7 +17,8 @@ object BarometerReadingChangedEventArgs {
     __obj.asInstanceOf[BarometerReadingChangedEventArgs]
   }
   
-  extension [Self <: BarometerReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: BarometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

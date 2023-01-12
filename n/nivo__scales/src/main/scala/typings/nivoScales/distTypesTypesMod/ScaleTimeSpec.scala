@@ -32,7 +32,8 @@ object ScaleTimeSpec {
     __obj.asInstanceOf[ScaleTimeSpec]
   }
   
-  extension [Self <: ScaleTimeSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleTimeSpec] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: native | String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

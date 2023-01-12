@@ -132,7 +132,8 @@ object carouselCarouselMod {
       __obj.asInstanceOf[CarouselPageChangeParams]
     }
     
-    extension [Self <: CarouselPageChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselPageChangeParams] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
@@ -538,7 +539,8 @@ object carouselCarouselMod {
       __obj.asInstanceOf[CarouselProps]
     }
     
-    extension [Self <: CarouselProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1343,7 +1345,8 @@ object carouselCarouselMod {
       __obj.asInstanceOf[CarouselResponsiveOptions]
     }
     
-    extension [Self <: CarouselResponsiveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselResponsiveOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       

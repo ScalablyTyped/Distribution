@@ -15,7 +15,8 @@ object DescribeMaintenanceStartTimeInput {
     __obj.asInstanceOf[DescribeMaintenanceStartTimeInput]
   }
   
-  extension [Self <: DescribeMaintenanceStartTimeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMaintenanceStartTimeInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
   }

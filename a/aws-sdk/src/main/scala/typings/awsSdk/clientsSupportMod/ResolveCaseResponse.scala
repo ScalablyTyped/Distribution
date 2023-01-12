@@ -23,7 +23,8 @@ object ResolveCaseResponse {
     __obj.asInstanceOf[ResolveCaseResponse]
   }
   
-  extension [Self <: ResolveCaseResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveCaseResponse] (val x: Self) extends AnyVal {
     
     inline def setFinalCaseStatus(value: CaseStatus): Self = StObject.set(x, "finalCaseStatus", value.asInstanceOf[js.Any])
     

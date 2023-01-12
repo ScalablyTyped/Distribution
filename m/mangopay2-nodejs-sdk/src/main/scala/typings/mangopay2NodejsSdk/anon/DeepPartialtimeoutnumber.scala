@@ -17,7 +17,8 @@ object DeepPartialtimeoutnumber {
     __obj.asInstanceOf[DeepPartialtimeoutnumber]
   }
   
-  extension [Self <: DeepPartialtimeoutnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeepPartialtimeoutnumber] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: DeepPartial[Double]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

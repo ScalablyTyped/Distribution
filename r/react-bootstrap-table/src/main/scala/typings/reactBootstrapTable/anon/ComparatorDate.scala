@@ -18,7 +18,8 @@ object ComparatorDate {
     __obj.asInstanceOf[ComparatorDate]
   }
   
-  extension [Self <: ComparatorDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComparatorDate] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: CSSProperties): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

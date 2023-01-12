@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[IBaseKoaProxiesOptions]
     }
     
-    extension [Self <: IBaseKoaProxiesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseKoaProxiesOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

@@ -83,7 +83,8 @@ object BatchReadOperation {
     __obj.asInstanceOf[BatchReadOperation]
   }
   
-  extension [Self <: BatchReadOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchReadOperation] (val x: Self) extends AnyVal {
     
     inline def setGetLinkAttributes(value: BatchGetLinkAttributes): Self = StObject.set(x, "GetLinkAttributes", value.asInstanceOf[js.Any])
     

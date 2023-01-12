@@ -16,7 +16,8 @@ object ComputedAnnotationInstructions {
     __obj.asInstanceOf[ComputedAnnotationInstructions]
   }
   
-  extension [Self <: ComputedAnnotationInstructions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedAnnotationInstructions] (val x: Self) extends AnyVal {
     
     inline def setComputed(value: AnnotationInstructions): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
   }

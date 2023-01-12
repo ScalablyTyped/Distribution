@@ -17,7 +17,8 @@ object SenderBatchHeader {
     __obj.asInstanceOf[SenderBatchHeader]
   }
   
-  extension [Self <: SenderBatchHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderBatchHeader] (val x: Self) extends AnyVal {
     
     inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     

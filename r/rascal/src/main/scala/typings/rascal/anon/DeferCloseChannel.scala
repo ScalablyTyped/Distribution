@@ -23,7 +23,8 @@ object DeferCloseChannel {
     __obj.asInstanceOf[DeferCloseChannel]
   }
   
-  extension [Self <: DeferCloseChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeferCloseChannel] (val x: Self) extends AnyVal {
     
     inline def setDeferCloseChannel(value: Double): Self = StObject.set(x, "deferCloseChannel", value.asInstanceOf[js.Any])
     

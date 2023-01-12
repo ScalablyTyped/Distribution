@@ -25,7 +25,8 @@ object CanvasContextMenuEvent {
     __obj.asInstanceOf[CanvasContextMenuEvent]
   }
   
-  extension [Self <: CanvasContextMenuEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasContextMenuEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
   }

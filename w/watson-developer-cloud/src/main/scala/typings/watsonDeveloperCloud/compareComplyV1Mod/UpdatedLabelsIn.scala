@@ -20,7 +20,8 @@ object UpdatedLabelsIn {
     __obj.asInstanceOf[UpdatedLabelsIn]
   }
   
-  extension [Self <: UpdatedLabelsIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatedLabelsIn] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[Category]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

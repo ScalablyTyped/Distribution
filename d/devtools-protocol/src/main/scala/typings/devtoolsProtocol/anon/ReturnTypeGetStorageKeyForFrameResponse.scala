@@ -19,7 +19,8 @@ object ReturnTypeGetStorageKeyForFrameResponse {
     __obj.asInstanceOf[ReturnTypeGetStorageKeyForFrameResponse]
   }
   
-  extension [Self <: ReturnTypeGetStorageKeyForFrameResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetStorageKeyForFrameResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetStorageKeyForFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

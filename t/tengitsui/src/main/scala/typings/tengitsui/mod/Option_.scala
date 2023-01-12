@@ -35,7 +35,8 @@ object Option_ {
     __obj.asInstanceOf[Option_]
   }
   
-  extension [Self <: Option_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Option_] (val x: Self) extends AnyVal {
     
     inline def set$exclusive(value: Boolean): Self = StObject.set(x, "$exclusive", value.asInstanceOf[js.Any])
     

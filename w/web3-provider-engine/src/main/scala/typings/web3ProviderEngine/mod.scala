@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[Web3ProviderEngineOptions]
     }
     
-    extension [Self <: Web3ProviderEngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Web3ProviderEngineOptions] (val x: Self) extends AnyVal {
       
       inline def setBlockTracker(value: Any): Self = StObject.set(x, "blockTracker", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1RenameTagTemplateFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setNewTagTemplateFieldId(value: String): Self = StObject.set(x, "newTagTemplateFieldId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RequiredBoolean {
     __obj.asInstanceOf[RequiredBoolean]
   }
   
-  extension [Self <: RequiredBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredBoolean] (val x: Self) extends AnyVal {
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

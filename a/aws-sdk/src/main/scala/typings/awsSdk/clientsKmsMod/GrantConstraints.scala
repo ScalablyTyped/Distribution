@@ -23,7 +23,8 @@ object GrantConstraints {
     __obj.asInstanceOf[GrantConstraints]
   }
   
-  extension [Self <: GrantConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantConstraints] (val x: Self) extends AnyVal {
     
     inline def setEncryptionContextEquals(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContextEquals", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object XDocumentInsertable {
     __obj.asInstanceOf[XDocumentInsertable]
   }
   
-  extension [Self <: XDocumentInsertable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentInsertable] (val x: Self) extends AnyVal {
     
     inline def setInsertDocumentFromURL(value: (String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "insertDocumentFromURL", js.Any.fromFunction2(value))
   }

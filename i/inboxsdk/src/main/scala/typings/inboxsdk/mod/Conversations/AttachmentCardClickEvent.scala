@@ -15,7 +15,8 @@ object AttachmentCardClickEvent {
     __obj.asInstanceOf[AttachmentCardClickEvent]
   }
   
-  extension [Self <: AttachmentCardClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentCardClickEvent] (val x: Self) extends AnyVal {
     
     inline def setGetDownloadURL(value: () => js.Promise[String]): Self = StObject.set(x, "getDownloadURL", js.Any.fromFunction0(value))
   }

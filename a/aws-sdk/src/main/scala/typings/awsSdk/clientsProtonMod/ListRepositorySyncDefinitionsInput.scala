@@ -33,7 +33,8 @@ object ListRepositorySyncDefinitionsInput {
     __obj.asInstanceOf[ListRepositorySyncDefinitionsInput]
   }
   
-  extension [Self <: ListRepositorySyncDefinitionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRepositorySyncDefinitionsInput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: EmptyNextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object ExternalConnection {
     __obj.asInstanceOf[ExternalConnection]
   }
   
-  extension [Self <: ExternalConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalConnection] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: NullableOption[Configuration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

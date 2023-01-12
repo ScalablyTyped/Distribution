@@ -20,7 +20,8 @@ object ServeBeforeHookInput {
     __obj.asInstanceOf[ServeBeforeHookInput]
   }
   
-  extension [Self <: ServeBeforeHookInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServeBeforeHookInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: serveColonbefore): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

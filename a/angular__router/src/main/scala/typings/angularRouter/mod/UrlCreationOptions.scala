@@ -106,7 +106,8 @@ object UrlCreationOptions {
     __obj.asInstanceOf[UrlCreationOptions]
   }
   
-  extension [Self <: UrlCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

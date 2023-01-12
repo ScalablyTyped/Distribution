@@ -56,7 +56,8 @@ object PartialSlideProps {
     __obj.asInstanceOf[PartialSlideProps]
   }
   
-  extension [Self <: PartialSlideProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSlideProps] (val x: Self) extends AnyVal {
     
     inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
     

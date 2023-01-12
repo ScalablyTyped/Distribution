@@ -22,7 +22,8 @@ object typesServerSideEncryptionRuleMod {
       __obj.asInstanceOf[ServerSideEncryptionRule]
     }
     
-    extension [Self <: ServerSideEncryptionRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerSideEncryptionRule] (val x: Self) extends AnyVal {
       
       inline def setApplyServerSideEncryptionByDefault(value: ServerSideEncryptionByDefault): Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesServerSideEncryptionRuleMod {
       __obj.asInstanceOf[UnmarshalledServerSideEncryptionRule]
     }
     
-    extension [Self <: UnmarshalledServerSideEncryptionRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledServerSideEncryptionRule] (val x: Self) extends AnyVal {
       
       inline def setApplyServerSideEncryptionByDefault(value: UnmarshalledServerSideEncryptionByDefault): Self = StObject.set(x, "ApplyServerSideEncryptionByDefault", value.asInstanceOf[js.Any])
       

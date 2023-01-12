@@ -34,7 +34,8 @@ object SoundFormat {
     __obj.asInstanceOf[SoundFormat]
   }
   
-  extension [Self <: SoundFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundFormat] (val x: Self) extends AnyVal {
     
     inline def setExport(value: String => PpSoundFormatType): Self = StObject.set(x, "Export", js.Any.fromFunction1(value))
     

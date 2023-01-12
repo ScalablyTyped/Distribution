@@ -57,7 +57,8 @@ object dxSelectBox {
       __obj.asInstanceOf[CustomItemCreatingInfo]
     }
     
-    extension [Self <: CustomItemCreatingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomItemCreatingInfo] (val x: Self) extends AnyVal {
       
       inline def setCustomItem(value: String | Any | PromiseLike[Any]): Self = StObject.set(x, "customItem", value.asInstanceOf[js.Any])
       

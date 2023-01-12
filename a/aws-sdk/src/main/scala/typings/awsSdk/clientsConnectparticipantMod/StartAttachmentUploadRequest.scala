@@ -44,7 +44,8 @@ object StartAttachmentUploadRequest {
     __obj.asInstanceOf[StartAttachmentUploadRequest]
   }
   
-  extension [Self <: StartAttachmentUploadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAttachmentUploadRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentName(value: AttachmentName): Self = StObject.set(x, "AttachmentName", value.asInstanceOf[js.Any])
     

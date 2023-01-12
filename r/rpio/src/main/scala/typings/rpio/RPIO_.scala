@@ -105,7 +105,8 @@ object RPIO_ {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClose_on_exit(value: Boolean): Self = StObject.set(x, "close_on_exit", value.asInstanceOf[js.Any])
       

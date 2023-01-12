@@ -34,7 +34,8 @@ object SourceMongoDb {
     __obj.asInstanceOf[SourceMongoDb]
   }
   
-  extension [Self <: SourceMongoDb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMongoDb] (val x: Self) extends AnyVal {
     
     inline def setCollection_name(value: String): Self = StObject.set(x, "collection_name", value.asInstanceOf[js.Any])
     

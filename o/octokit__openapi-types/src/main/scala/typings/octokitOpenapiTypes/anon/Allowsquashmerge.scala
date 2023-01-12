@@ -525,7 +525,8 @@ object Allowsquashmerge {
     __obj.asInstanceOf[Allowsquashmerge]
   }
   
-  extension [Self <: Allowsquashmerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Allowsquashmerge] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListImagesInRecycleBinResult {
     __obj.asInstanceOf[ListImagesInRecycleBinResult]
   }
   
-  extension [Self <: ListImagesInRecycleBinResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImagesInRecycleBinResult] (val x: Self) extends AnyVal {
     
     inline def setImages(value: ImageRecycleBinInfoList): Self = StObject.set(x, "Images", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object librariesAppThemeAppThemeTypesMod {
     @js.native
     val ^ : AppTheme = js.native
     
-    extension [Self <: AppTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppTheme] (val x: Self) extends AnyVal {
       
       inline def setAddListener(
         value: (highContrastChanged, js.Function1[/* nativeEvent */ IHighContrastChangedEvent, Unit]) => EmitterSubscription
@@ -61,7 +62,8 @@ object librariesAppThemeAppThemeTypesMod {
       __obj.asInstanceOf[IHighContrastChangedEvent]
     }
     
-    extension [Self <: IHighContrastChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighContrastChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setHighContrastColors(value: IHighContrastColors): Self = StObject.set(x, "highContrastColors", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object librariesAppThemeAppThemeTypesMod {
       __obj.asInstanceOf[IHighContrastColors]
     }
     
-    extension [Self <: IHighContrastColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHighContrastColors] (val x: Self) extends AnyVal {
       
       inline def setButtonFaceColor(value: String): Self = StObject.set(x, "ButtonFaceColor", value.asInstanceOf[js.Any])
       

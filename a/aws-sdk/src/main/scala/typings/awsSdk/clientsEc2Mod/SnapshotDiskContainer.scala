@@ -33,7 +33,8 @@ object SnapshotDiskContainer {
     __obj.asInstanceOf[SnapshotDiskContainer]
   }
   
-  extension [Self <: SnapshotDiskContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotDiskContainer] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

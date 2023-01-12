@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[TokenOptions]
     }
     
-    extension [Self <: TokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
       
       inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object NextWasmDisassemblyChunkRequest {
     __obj.asInstanceOf[NextWasmDisassemblyChunkRequest]
   }
   
-  extension [Self <: NextWasmDisassemblyChunkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextWasmDisassemblyChunkRequest] (val x: Self) extends AnyVal {
     
     inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
   }

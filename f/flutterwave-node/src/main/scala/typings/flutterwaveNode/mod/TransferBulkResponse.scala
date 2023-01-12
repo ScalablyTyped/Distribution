@@ -18,7 +18,8 @@ object TransferBulkResponse {
     __obj.asInstanceOf[TransferBulkResponse]
   }
   
-  extension [Self <: TransferBulkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferBulkResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Approver): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

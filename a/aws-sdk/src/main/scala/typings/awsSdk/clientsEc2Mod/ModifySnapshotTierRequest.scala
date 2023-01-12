@@ -28,7 +28,8 @@ object ModifySnapshotTierRequest {
     __obj.asInstanceOf[ModifySnapshotTierRequest]
   }
   
-  extension [Self <: ModifySnapshotTierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySnapshotTierRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

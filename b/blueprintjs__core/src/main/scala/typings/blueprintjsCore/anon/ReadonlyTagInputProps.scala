@@ -81,7 +81,8 @@ object ReadonlyTagInputProps {
     __obj.asInstanceOf[ReadonlyTagInputProps]
   }
   
-  extension [Self <: ReadonlyTagInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyTagInputProps] (val x: Self) extends AnyVal {
     
     inline def setAddOnBlur(value: Boolean): Self = StObject.set(x, "addOnBlur", value.asInstanceOf[js.Any])
     

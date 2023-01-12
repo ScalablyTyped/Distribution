@@ -35,7 +35,8 @@ object Translations {
     __obj.asInstanceOf[Translations]
   }
   
-  extension [Self <: Translations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Translations] (val x: Self) extends AnyVal {
     
     inline def setCz(value: String): Self = StObject.set(x, "cz", value.asInstanceOf[js.Any])
     

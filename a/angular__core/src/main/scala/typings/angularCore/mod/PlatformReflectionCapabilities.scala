@@ -39,7 +39,8 @@ object PlatformReflectionCapabilities {
     __obj.asInstanceOf[PlatformReflectionCapabilities]
   }
   
-  extension [Self <: PlatformReflectionCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformReflectionCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: Type[Any] => js.Array[Any]): Self = StObject.set(x, "annotations", js.Any.fromFunction1(value))
     

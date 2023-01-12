@@ -16,7 +16,8 @@ object SearchOptionalArguments {
     __obj.asInstanceOf[SearchOptionalArguments]
   }
   
-  extension [Self <: SearchOptionalArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptionalArguments] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

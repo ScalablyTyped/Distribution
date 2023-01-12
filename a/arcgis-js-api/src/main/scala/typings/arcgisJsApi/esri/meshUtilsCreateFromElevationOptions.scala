@@ -30,7 +30,8 @@ object meshUtilsCreateFromElevationOptions {
     __obj.asInstanceOf[meshUtilsCreateFromElevationOptions]
   }
   
-  extension [Self <: meshUtilsCreateFromElevationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: meshUtilsCreateFromElevationOptions] (val x: Self) extends AnyVal {
     
     inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     

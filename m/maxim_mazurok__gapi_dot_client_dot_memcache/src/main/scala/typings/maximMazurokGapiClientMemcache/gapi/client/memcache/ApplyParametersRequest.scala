@@ -22,7 +22,8 @@ object ApplyParametersRequest {
     __obj.asInstanceOf[ApplyParametersRequest]
   }
   
-  extension [Self <: ApplyParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setApplyAll(value: Boolean): Self = StObject.set(x, "applyAll", value.asInstanceOf[js.Any])
     

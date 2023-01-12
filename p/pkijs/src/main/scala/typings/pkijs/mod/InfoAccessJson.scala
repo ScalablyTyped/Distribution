@@ -15,7 +15,8 @@ object InfoAccessJson {
     __obj.asInstanceOf[InfoAccessJson]
   }
   
-  extension [Self <: InfoAccessJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoAccessJson] (val x: Self) extends AnyVal {
     
     inline def setAccessDescriptions(value: js.Array[AccessDescriptionJson]): Self = StObject.set(x, "accessDescriptions", value.asInstanceOf[js.Any])
     

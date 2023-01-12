@@ -41,7 +41,8 @@ object relationshipUpdateRendererParamsField2 {
     __obj.asInstanceOf[relationshipUpdateRendererParamsField2]
   }
   
-  extension [Self <: relationshipUpdateRendererParamsField2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipUpdateRendererParamsField2] (val x: Self) extends AnyVal {
     
     inline def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     

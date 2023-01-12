@@ -26,7 +26,8 @@ object UsersQueueResponse {
     __obj.asInstanceOf[UsersQueueResponse]
   }
   
-  extension [Self <: UsersQueueResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsersQueueResponse] (val x: Self) extends AnyVal {
     
     inline def setCurrently_playing(value: TrackObjectFull | EpisodeObjectFull): Self = StObject.set(x, "currently_playing", value.asInstanceOf[js.Any])
     

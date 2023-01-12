@@ -18,7 +18,8 @@ object DescribeDeliveryChannelStatusResponse {
     __obj.asInstanceOf[DescribeDeliveryChannelStatusResponse]
   }
   
-  extension [Self <: DescribeDeliveryChannelStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDeliveryChannelStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setDeliveryChannelsStatus(value: DeliveryChannelStatusList): Self = StObject.set(x, "DeliveryChannelsStatus", value.asInstanceOf[js.Any])
     

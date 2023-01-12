@@ -62,7 +62,8 @@ object AdjustsFontSizeToFit {
     __obj.asInstanceOf[AdjustsFontSizeToFit]
   }
   
-  extension [Self <: AdjustsFontSizeToFit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustsFontSizeToFit] (val x: Self) extends AnyVal {
     
     inline def setAdjustsFontSizeToFit(value: IBBoolean): Self = StObject.set(x, "adjustsFontSizeToFit", value.asInstanceOf[js.Any])
     

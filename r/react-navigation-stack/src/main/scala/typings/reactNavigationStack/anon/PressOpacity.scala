@@ -15,7 +15,8 @@ object PressOpacity {
     __obj.asInstanceOf[PressOpacity]
   }
   
-  extension [Self <: PressOpacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressOpacity] (val x: Self) extends AnyVal {
     
     inline def setPressOpacity(value: Double): Self = StObject.set(x, "pressOpacity", value.asInstanceOf[js.Any])
   }

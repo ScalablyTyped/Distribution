@@ -23,7 +23,8 @@ object DescribeLocalGatewayVirtualInterfacesResult {
     __obj.asInstanceOf[DescribeLocalGatewayVirtualInterfacesResult]
   }
   
-  extension [Self <: DescribeLocalGatewayVirtualInterfacesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLocalGatewayVirtualInterfacesResult] (val x: Self) extends AnyVal {
     
     inline def setLocalGatewayVirtualInterfaces(value: LocalGatewayVirtualInterfaceSet): Self = StObject.set(x, "LocalGatewayVirtualInterfaces", value.asInstanceOf[js.Any])
     

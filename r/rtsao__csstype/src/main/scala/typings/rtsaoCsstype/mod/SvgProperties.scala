@@ -133,7 +133,8 @@ object SvgProperties {
     __obj.asInstanceOf[SvgProperties[TLength]]
   }
   
-  extension [Self <: SvgProperties[?], TLength](x: Self & SvgProperties[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgProperties[?], TLength] (val x: Self & SvgProperties[TLength]) extends AnyVal {
     
     inline def setAlignmentBaseline(value: AlignmentBaselineProperty): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EnableDirectoryRequest {
     __obj.asInstanceOf[EnableDirectoryRequest]
   }
   
-  extension [Self <: EnableDirectoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableDirectoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
   }

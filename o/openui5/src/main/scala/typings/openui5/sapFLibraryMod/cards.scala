@@ -89,7 +89,8 @@ object cards {
       __obj.asInstanceOf[IHeader]
     }
     
-    extension [Self <: IHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeader] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_f_cards_IHeader(value: Boolean): Self = StObject.set(x, "__implements__sap_f_cards_IHeader", value.asInstanceOf[js.Any])
     }

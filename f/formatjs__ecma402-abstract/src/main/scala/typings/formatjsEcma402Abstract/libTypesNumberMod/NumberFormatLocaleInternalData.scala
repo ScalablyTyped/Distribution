@@ -27,7 +27,8 @@ object NumberFormatLocaleInternalData {
     __obj.asInstanceOf[NumberFormatLocaleInternalData]
   }
   
-  extension [Self <: NumberFormatLocaleInternalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberFormatLocaleInternalData] (val x: Self) extends AnyVal {
     
     inline def setCurrencies(value: Record[String, CurrencyData]): Self = StObject.set(x, "currencies", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object XErrorHandler {
     __obj.asInstanceOf[XErrorHandler]
   }
   
-  extension [Self <: XErrorHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XErrorHandler] (val x: Self) extends AnyVal {
     
     inline def setError(value: Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

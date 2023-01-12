@@ -18,7 +18,8 @@ object GetMetricWidgetImageOutput {
     __obj.asInstanceOf[GetMetricWidgetImageOutput]
   }
   
-  extension [Self <: GetMetricWidgetImageOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetricWidgetImageOutput] (val x: Self) extends AnyVal {
     
     inline def setMetricWidgetImage(value: MetricWidgetImage): Self = StObject.set(x, "MetricWidgetImage", value.asInstanceOf[js.Any])
     

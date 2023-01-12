@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Concrete]
     }
     
-    extension [Self <: Concrete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Concrete] (val x: Self) extends AnyVal {
       
       inline def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Flow]
     }
     
-    extension [Self <: Flow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
       
       inline def setFlow(value: NumberDictionary[Concrete]): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     }

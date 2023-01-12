@@ -29,7 +29,8 @@ object TextUserDefinedAttributesSupplier {
     __obj.asInstanceOf[TextUserDefinedAttributesSupplier]
   }
   
-  extension [Self <: TextUserDefinedAttributesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextUserDefinedAttributesSupplier] (val x: Self) extends AnyVal {
     
     inline def setTextUserDefinedAttributes(value: XNameContainer): Self = StObject.set(x, "TextUserDefinedAttributes", value.asInstanceOf[js.Any])
   }

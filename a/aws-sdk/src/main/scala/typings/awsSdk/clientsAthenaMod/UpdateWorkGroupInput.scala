@@ -33,7 +33,8 @@ object UpdateWorkGroupInput {
     __obj.asInstanceOf[UpdateWorkGroupInput]
   }
   
-  extension [Self <: UpdateWorkGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkGroupInput] (val x: Self) extends AnyVal {
     
     inline def setConfigurationUpdates(value: WorkGroupConfigurationUpdates): Self = StObject.set(x, "ConfigurationUpdates", value.asInstanceOf[js.Any])
     

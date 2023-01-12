@@ -28,7 +28,8 @@ object CommitDiffSourceCodeType {
     __obj.asInstanceOf[CommitDiffSourceCodeType]
   }
   
-  extension [Self <: CommitDiffSourceCodeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitDiffSourceCodeType] (val x: Self) extends AnyVal {
     
     inline def setDestinationCommit(value: CommitId): Self = StObject.set(x, "DestinationCommit", value.asInstanceOf[js.Any])
     

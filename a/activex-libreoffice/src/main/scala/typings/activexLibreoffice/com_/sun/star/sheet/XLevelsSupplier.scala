@@ -41,7 +41,8 @@ object XLevelsSupplier {
     __obj.asInstanceOf[XLevelsSupplier]
   }
   
-  extension [Self <: XLevelsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLevelsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetLevels(value: () => XNameAccess): Self = StObject.set(x, "getLevels", js.Any.fromFunction0(value))
     

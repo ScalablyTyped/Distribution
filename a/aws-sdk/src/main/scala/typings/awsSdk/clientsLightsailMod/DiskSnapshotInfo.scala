@@ -18,7 +18,8 @@ object DiskSnapshotInfo {
     __obj.asInstanceOf[DiskSnapshotInfo]
   }
   
-  extension [Self <: DiskSnapshotInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskSnapshotInfo] (val x: Self) extends AnyVal {
     
     inline def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     

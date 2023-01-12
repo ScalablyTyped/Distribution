@@ -450,7 +450,8 @@ object mod {
       __obj.asInstanceOf[Data[TToken, TOptions]]
     }
     
-    extension [Self <: Data[?, ?], TToken, TOptions](x: Self & (Data[TToken, TOptions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data[?, ?], TToken, TOptions] (val x: Self & (Data[TToken, TOptions])) extends AnyVal {
       
       inline def setOptions(value: TOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -479,7 +480,8 @@ object mod {
       __obj.asInstanceOf[Match_[TValue]]
     }
     
-    extension [Self <: Match_[?], TValue](x: Self & Match_[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Match_[?], TValue] (val x: Self & Match_[TValue]) extends AnyVal {
       
       inline def setMatched(value: `true`): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
       
@@ -504,7 +506,8 @@ object mod {
       __obj.asInstanceOf[NonMatch]
     }
     
-    extension [Self <: NonMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NonMatch] (val x: Self) extends AnyVal {
       
       inline def setMatched(value: `false`): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     }

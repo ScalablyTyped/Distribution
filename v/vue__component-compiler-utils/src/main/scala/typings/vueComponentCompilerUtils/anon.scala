@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PostTransformNode]
     }
     
-    extension [Self <: PostTransformNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostTransformNode] (val x: Self) extends AnyVal {
       
       inline def setPostTransformNode(value: ASTNode => Unit): Self = StObject.set(x, "postTransformNode", js.Any.fromFunction1(value))
     }

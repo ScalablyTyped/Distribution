@@ -28,7 +28,8 @@ object srcNgtscTypecheckApiContextMod {
       __obj.asInstanceOf[ProgramTypeCheckAdapter]
     }
     
-    extension [Self <: ProgramTypeCheckAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgramTypeCheckAdapter] (val x: Self) extends AnyVal {
       
       inline def setTypeCheck(value: (SourceFile, TypeCheckContext) => Unit): Self = StObject.set(x, "typeCheck", js.Any.fromFunction2(value))
     }

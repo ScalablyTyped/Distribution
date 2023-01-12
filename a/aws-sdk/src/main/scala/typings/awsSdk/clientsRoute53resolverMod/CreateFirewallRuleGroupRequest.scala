@@ -28,7 +28,8 @@ object CreateFirewallRuleGroupRequest {
     __obj.asInstanceOf[CreateFirewallRuleGroupRequest]
   }
   
-  extension [Self <: CreateFirewallRuleGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFirewallRuleGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     

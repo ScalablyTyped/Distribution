@@ -22,7 +22,8 @@ object TimeEvents {
     __obj.asInstanceOf[TimeEvents]
   }
   
-  extension [Self <: TimeEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeEvents] (val x: Self) extends AnyVal {
     
     inline def setDroppedAnnotationsCount(value: Double): Self = StObject.set(x, "droppedAnnotationsCount", value.asInstanceOf[js.Any])
     

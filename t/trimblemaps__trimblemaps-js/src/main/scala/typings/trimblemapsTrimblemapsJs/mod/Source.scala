@@ -23,7 +23,8 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  extension [Self <: Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     inline def setType(value: vector | raster | `raster-dem` | geojson | image_ | video | canvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

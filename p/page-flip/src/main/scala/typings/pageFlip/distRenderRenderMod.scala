@@ -248,7 +248,8 @@ object distRenderRenderMod {
       __obj.asInstanceOf[AnimationProcess]
     }
     
-    extension [Self <: AnimationProcess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationProcess] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -302,7 +303,8 @@ object distRenderRenderMod {
       __obj.asInstanceOf[Shadow]
     }
     
-    extension [Self <: Shadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shadow] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

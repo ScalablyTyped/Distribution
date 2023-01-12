@@ -36,7 +36,8 @@ object ActivationCardProps {
     __obj.asInstanceOf[ActivationCardProps]
   }
   
-  extension [Self <: ActivationCardProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivationCardProps] (val x: Self) extends AnyVal {
     
     inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     

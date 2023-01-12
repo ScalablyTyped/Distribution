@@ -49,7 +49,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CollapsedFieldProps]
     }
     
-    extension [Self <: CollapsedFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsedFieldProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[InteractionProps]
     }
     
-    extension [Self <: InteractionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionProps] (val x: Self) extends AnyVal {
       
       inline def setExisting_src(value: js.Object): Self = StObject.set(x, "existing_src", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OnCopyProps]
     }
     
-    extension [Self <: OnCopyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCopyProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OnSelectProps]
     }
     
-    extension [Self <: OnSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnSelectProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -387,7 +391,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactJsonViewProps]
     }
     
-    extension [Self <: ReactJsonViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactJsonViewProps] (val x: Self) extends AnyVal {
       
       inline def setCollapseStringsAfterLength(value: Double | `false`): Self = StObject.set(x, "collapseStringsAfterLength", value.asInstanceOf[js.Any])
       
@@ -666,7 +671,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThemeObject]
     }
     
-    extension [Self <: ThemeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeObject] (val x: Self) extends AnyVal {
       
       inline def setBase00(value: String): Self = StObject.set(x, "base00", value.asInstanceOf[js.Any])
       

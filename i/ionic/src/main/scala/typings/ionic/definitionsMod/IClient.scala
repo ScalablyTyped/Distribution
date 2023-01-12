@@ -28,7 +28,8 @@ object IClient {
     __obj.asInstanceOf[IClient]
   }
   
-  extension [Self <: IClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClient] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

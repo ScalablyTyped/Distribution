@@ -21,7 +21,8 @@ object GetCenterLocationOptions {
     __obj.asInstanceOf[GetCenterLocationOptions]
   }
   
-  extension [Self <: GetCenterLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCenterLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ Latitude => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

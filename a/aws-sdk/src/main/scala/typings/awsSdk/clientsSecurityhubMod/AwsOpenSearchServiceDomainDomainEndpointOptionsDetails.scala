@@ -38,7 +38,8 @@ object AwsOpenSearchServiceDomainDomainEndpointOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainDomainEndpointOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainDomainEndpointOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainDomainEndpointOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setCustomEndpoint(value: NonEmptyString): Self = StObject.set(x, "CustomEndpoint", value.asInstanceOf[js.Any])
     

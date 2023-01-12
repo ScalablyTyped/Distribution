@@ -22,7 +22,8 @@ object RangeFilterOptions {
     __obj.asInstanceOf[RangeFilterOptions]
   }
   
-  extension [Self <: RangeFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double | js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

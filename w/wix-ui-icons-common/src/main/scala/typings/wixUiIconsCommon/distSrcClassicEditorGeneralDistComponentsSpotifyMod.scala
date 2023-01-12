@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsSpotifyMod extends Shortcut {
       __obj.asInstanceOf[SpotifyProps]
     }
     
-    extension [Self <: SpotifyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpotifyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

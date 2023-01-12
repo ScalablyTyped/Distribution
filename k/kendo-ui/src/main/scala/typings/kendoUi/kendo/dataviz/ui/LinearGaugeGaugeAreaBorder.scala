@@ -19,7 +19,8 @@ object LinearGaugeGaugeAreaBorder {
     __obj.asInstanceOf[LinearGaugeGaugeAreaBorder]
   }
   
-  extension [Self <: LinearGaugeGaugeAreaBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGaugeGaugeAreaBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

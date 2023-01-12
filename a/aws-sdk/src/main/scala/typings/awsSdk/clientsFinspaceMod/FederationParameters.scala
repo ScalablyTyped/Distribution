@@ -43,7 +43,8 @@ object FederationParameters {
     __obj.asInstanceOf[FederationParameters]
   }
   
-  extension [Self <: FederationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederationParameters] (val x: Self) extends AnyVal {
     
     inline def setApplicationCallBackURL(value: url): Self = StObject.set(x, "applicationCallBackURL", value.asInstanceOf[js.Any])
     

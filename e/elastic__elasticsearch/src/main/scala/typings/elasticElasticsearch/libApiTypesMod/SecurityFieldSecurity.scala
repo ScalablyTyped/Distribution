@@ -17,7 +17,8 @@ object SecurityFieldSecurity {
     __obj.asInstanceOf[SecurityFieldSecurity]
   }
   
-  extension [Self <: SecurityFieldSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityFieldSecurity] (val x: Self) extends AnyVal {
     
     inline def setExcept(value: Fields): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
     

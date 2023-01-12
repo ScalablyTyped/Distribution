@@ -25,7 +25,8 @@ object spritesIspritesMod {
       __obj.asInstanceOf[ISpriteJSONAtlas]
     }
     
-    extension [Self <: ISpriteJSONAtlas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteJSONAtlas] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: js.Array[ISpriteJSONSprite]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object spritesIspritesMod {
       __obj.asInstanceOf[ISpriteJSONSprite]
     }
     
-    extension [Self <: ISpriteJSONSprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteJSONSprite] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object spritesIspritesMod {
       __obj.asInstanceOf[ISpriteJSONSpriteFrameData]
     }
     
-    extension [Self <: ISpriteJSONSpriteFrameData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteJSONSpriteFrameData] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -159,7 +162,8 @@ object spritesIspritesMod {
       __obj.asInstanceOf[ISpriteJSONSpriteSourceSize]
     }
     
-    extension [Self <: ISpriteJSONSpriteSourceSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteJSONSpriteSourceSize] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       

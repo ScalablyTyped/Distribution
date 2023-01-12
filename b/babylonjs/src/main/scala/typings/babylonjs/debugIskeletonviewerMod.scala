@@ -38,7 +38,8 @@ object debugIskeletonviewerMod {
       __obj.asInstanceOf[IBoneWeightShaderOptions]
     }
     
-    extension [Self <: IBoneWeightShaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBoneWeightShaderOptions] (val x: Self) extends AnyVal {
       
       inline def setColorBase(value: Color3): Self = StObject.set(x, "colorBase", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object debugIskeletonviewerMod {
       __obj.asInstanceOf[ISkeletonMapShaderColorMapKnot]
     }
     
-    extension [Self <: ISkeletonMapShaderColorMapKnot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISkeletonMapShaderColorMapKnot] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color3): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object debugIskeletonviewerMod {
       __obj.asInstanceOf[ISkeletonMapShaderOptions]
     }
     
-    extension [Self <: ISkeletonMapShaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISkeletonMapShaderOptions] (val x: Self) extends AnyVal {
       
       inline def setColorMap(value: js.Array[ISkeletonMapShaderColorMapKnot]): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object debugIskeletonviewerMod {
       __obj.asInstanceOf[ISkeletonViewerDisplayOptions]
     }
     
-    extension [Self <: ISkeletonViewerDisplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISkeletonViewerDisplayOptions] (val x: Self) extends AnyVal {
       
       inline def setLocalAxesSize(value: Double): Self = StObject.set(x, "localAxesSize", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object debugIskeletonviewerMod {
       __obj.asInstanceOf[ISkeletonViewerOptions]
     }
     
-    extension [Self <: ISkeletonViewerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISkeletonViewerOptions] (val x: Self) extends AnyVal {
       
       inline def setComputeBonesUsingShaders(value: Boolean): Self = StObject.set(x, "computeBonesUsingShaders", value.asInstanceOf[js.Any])
       

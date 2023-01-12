@@ -34,7 +34,8 @@ object TileMatrixSetProperties {
     __obj.asInstanceOf[TileMatrixSetProperties]
   }
   
-  extension [Self <: TileMatrixSetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileMatrixSetProperties] (val x: Self) extends AnyVal {
     
     inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
     

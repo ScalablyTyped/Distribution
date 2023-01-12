@@ -72,7 +72,8 @@ object AnimationConfig {
     __obj.asInstanceOf[AnimationConfig]
   }
   
-  extension [Self <: AnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: (/* $element */ DxElement_[HTMLElement], /* config */ AnimationConfig) => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
     

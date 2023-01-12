@@ -18,7 +18,8 @@ object UpdateVpcIngressConnectionResponse {
     __obj.asInstanceOf[UpdateVpcIngressConnectionResponse]
   }
   
-  extension [Self <: UpdateVpcIngressConnectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateVpcIngressConnectionResponse] (val x: Self) extends AnyVal {
     
     inline def setVpcIngressConnection(value: VpcIngressConnection): Self = StObject.set(x, "VpcIngressConnection", value.asInstanceOf[js.Any])
   }

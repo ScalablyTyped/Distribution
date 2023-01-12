@@ -26,7 +26,8 @@ object ManifestServiceAttributes {
     __obj.asInstanceOf[ManifestServiceAttributes]
   }
   
-  extension [Self <: ManifestServiceAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestServiceAttributes] (val x: Self) extends AnyVal {
     
     inline def setAndroidColonenabled(value: StringBoolean): Self = StObject.set(x, "android:enabled", value.asInstanceOf[js.Any])
     

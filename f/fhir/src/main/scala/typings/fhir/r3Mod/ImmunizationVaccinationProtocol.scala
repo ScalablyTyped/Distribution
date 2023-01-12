@@ -59,7 +59,8 @@ object ImmunizationVaccinationProtocol {
     __obj.asInstanceOf[ImmunizationVaccinationProtocol]
   }
   
-  extension [Self <: ImmunizationVaccinationProtocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImmunizationVaccinationProtocol] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: Reference): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

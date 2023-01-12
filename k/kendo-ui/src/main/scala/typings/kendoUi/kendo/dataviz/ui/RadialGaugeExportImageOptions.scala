@@ -17,7 +17,8 @@ object RadialGaugeExportImageOptions {
     __obj.asInstanceOf[RadialGaugeExportImageOptions]
   }
   
-  extension [Self <: RadialGaugeExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialGaugeExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

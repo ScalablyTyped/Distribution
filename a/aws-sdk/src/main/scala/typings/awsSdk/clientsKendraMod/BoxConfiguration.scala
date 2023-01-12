@@ -78,7 +78,8 @@ object BoxConfiguration {
     __obj.asInstanceOf[BoxConfiguration]
   }
   
-  extension [Self <: BoxConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCommentFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "CommentFieldMappings", value.asInstanceOf[js.Any])
     

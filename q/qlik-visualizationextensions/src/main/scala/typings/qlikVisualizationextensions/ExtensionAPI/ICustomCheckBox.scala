@@ -21,7 +21,8 @@ object ICustomCheckBox {
     __obj.asInstanceOf[ICustomCheckBox]
   }
   
-  extension [Self <: ICustomCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomCheckBox] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: checkbox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

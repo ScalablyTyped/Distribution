@@ -41,7 +41,8 @@ object XMLDocument2 {
     __obj.asInstanceOf[XMLDocument2]
   }
   
-  extension [Self <: XMLDocument2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLDocument2] (val x: Self) extends AnyVal {
     
     inline def setCreateElement(value: String => XMLNode): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
     

@@ -431,7 +431,8 @@ object dom {
       __obj.asInstanceOf[RangeUtils]
     }
     
-    extension [Self <: RangeUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeUtils] (val x: Self) extends AnyVal {
       
       inline def setCompareRanges(value: (Range, Range) => Boolean): Self = StObject.set(x, "compareRanges", js.Any.fromFunction2(value))
       

@@ -38,7 +38,8 @@ object UiSchema {
     __obj.asInstanceOf[UiSchema]
   }
   
-  extension [Self <: UiSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiSchema] (val x: Self) extends AnyVal {
     
     inline def setUiColonArrayFieldTemplate(value: FunctionComponent[ArrayFieldTemplateProps[Any]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
     

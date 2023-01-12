@@ -139,7 +139,8 @@ object esComponentsHeaderMod {
       __obj.asInstanceOf[HeaderViewProps]
     }
     
-    extension [Self <: HeaderViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderViewProps] (val x: Self) extends AnyVal {
       
       inline def setActionsRender(value: WithFalse[js.Function1[HeaderViewProps, js.Array[ReactNode]]]): Self = StObject.set(x, "actionsRender", value.asInstanceOf[js.Any])
       

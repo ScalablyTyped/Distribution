@@ -23,7 +23,8 @@ object ContainerServiceStateDetail {
     __obj.asInstanceOf[ContainerServiceStateDetail]
   }
   
-  extension [Self <: ContainerServiceStateDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerServiceStateDetail] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ContainerServiceStateDetailCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

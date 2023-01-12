@@ -22,7 +22,8 @@ object HashAlgorithm {
     __obj.asInstanceOf[HashAlgorithm]
   }
   
-  extension [Self <: HashAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setAcls(value: js.Array[ACL]): Self = StObject.set(x, "acls", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ASPxClientReportDesignerCustomizeToolboxEventArgs {
     __obj.asInstanceOf[ASPxClientReportDesignerCustomizeToolboxEventArgs]
   }
   
-  extension [Self <: ASPxClientReportDesignerCustomizeToolboxEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientReportDesignerCustomizeToolboxEventArgs] (val x: Self) extends AnyVal {
     
     inline def setControlsFactory(value: ASPxDesignerControlsFactory): Self = StObject.set(x, "ControlsFactory", value.asInstanceOf[js.Any])
   }

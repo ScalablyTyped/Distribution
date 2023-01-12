@@ -15,7 +15,8 @@ object EnumValuesCaseSensitive {
     __obj.asInstanceOf[EnumValuesCaseSensitive]
   }
   
-  extension [Self <: EnumValuesCaseSensitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCaseSensitive] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: CaseSensitive): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

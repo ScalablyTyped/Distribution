@@ -39,7 +39,8 @@ object DataLoadEventContext {
     __obj.asInstanceOf[DataLoadEventContext]
   }
   
-  extension [Self <: DataLoadEventContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataLoadEventContext] (val x: Self) extends AnyVal {
     
     inline def setGetEventArgs(value: () => DataLoadEventArguments): Self = StObject.set(x, "getEventArgs", js.Any.fromFunction0(value))
   }

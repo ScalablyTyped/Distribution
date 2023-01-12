@@ -15,7 +15,8 @@ object RootPrefixCls {
     __obj.asInstanceOf[RootPrefixCls]
   }
   
-  extension [Self <: RootPrefixCls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootPrefixCls] (val x: Self) extends AnyVal {
     
     inline def setRootPrefixCls(value: String): Self = StObject.set(x, "rootPrefixCls", value.asInstanceOf[js.Any])
   }

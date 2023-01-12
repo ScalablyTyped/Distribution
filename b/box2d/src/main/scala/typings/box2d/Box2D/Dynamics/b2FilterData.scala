@@ -34,7 +34,8 @@ object b2FilterData {
     __obj.asInstanceOf[b2FilterData]
   }
   
-  extension [Self <: b2FilterData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2FilterData] (val x: Self) extends AnyVal {
     
     inline def setCategoryBits(value: Double): Self = StObject.set(x, "categoryBits", value.asInstanceOf[js.Any])
     

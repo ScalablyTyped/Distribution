@@ -33,7 +33,8 @@ object SaveOptions {
     __obj.asInstanceOf[SaveOptions]
   }
   
-  extension [Self <: SaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowConcurrentSaves(value: Boolean): Self = StObject.set(x, "allowConcurrentSaves", value.asInstanceOf[js.Any])
     

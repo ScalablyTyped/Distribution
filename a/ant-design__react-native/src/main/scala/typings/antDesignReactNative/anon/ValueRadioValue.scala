@@ -16,7 +16,8 @@ object ValueRadioValue {
     __obj.asInstanceOf[ValueRadioValue]
   }
   
-  extension [Self <: ValueRadioValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueRadioValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: RadioValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object ModuleDeclaration {
     __obj.asInstanceOf[ModuleDeclaration]
   }
   
-  extension [Self <: ModuleDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleDeclaration] (val x: Self) extends AnyVal {
     
     inline def setEndingToken(value: ASTSpan): Self = StObject.set(x, "endingToken", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object XStyleLoader2 {
     __obj.asInstanceOf[XStyleLoader2]
   }
   
-  extension [Self <: XStyleLoader2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStyleLoader2] (val x: Self) extends AnyVal {
     
     inline def setLoadStylesFromDocument(value: (XComponent, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadStylesFromDocument", js.Any.fromFunction2(value))
   }

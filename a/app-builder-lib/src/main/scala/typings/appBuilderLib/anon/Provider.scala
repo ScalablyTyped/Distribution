@@ -27,7 +27,8 @@ object Provider {
     __obj.asInstanceOf[Provider]
   }
   
-  extension [Self <: Provider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: PublishProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

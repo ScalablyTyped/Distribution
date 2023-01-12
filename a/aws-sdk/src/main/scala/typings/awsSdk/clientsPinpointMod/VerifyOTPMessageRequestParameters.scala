@@ -28,7 +28,8 @@ object VerifyOTPMessageRequestParameters {
     __obj.asInstanceOf[VerifyOTPMessageRequestParameters]
   }
   
-  extension [Self <: VerifyOTPMessageRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyOTPMessageRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setDestinationIdentity(value: string): Self = StObject.set(x, "DestinationIdentity", value.asInstanceOf[js.Any])
     

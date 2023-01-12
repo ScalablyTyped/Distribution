@@ -16,7 +16,8 @@ object Response {
     __obj.asInstanceOf[Response[D, E]]
   }
   
-  extension [Self <: Response[?, ?], D, E](x: Self & (Response[D, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Response[?, ?], D, E] (val x: Self & (Response[D, E])) extends AnyVal {
     
     inline def set$response(value: typings.awsSdk.libResponseMod.Response[D, E]): Self = StObject.set(x, "$response", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object ReturnTypeRequestCacheNamesResponse {
     __obj.asInstanceOf[ReturnTypeRequestCacheNamesResponse]
   }
   
-  extension [Self <: ReturnTypeRequestCacheNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeRequestCacheNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[RequestCacheNamesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

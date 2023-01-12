@@ -28,7 +28,8 @@ object CreateAttendeeRequest {
     __obj.asInstanceOf[CreateAttendeeRequest]
   }
   
-  extension [Self <: CreateAttendeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAttendeeRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalUserId(value: ExternalUserIdType): Self = StObject.set(x, "ExternalUserId", value.asInstanceOf[js.Any])
     

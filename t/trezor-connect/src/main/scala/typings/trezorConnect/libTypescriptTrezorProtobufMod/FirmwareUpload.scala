@@ -18,7 +18,8 @@ object FirmwareUpload {
     __obj.asInstanceOf[FirmwareUpload]
   }
   
-  extension [Self <: FirmwareUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirmwareUpload] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

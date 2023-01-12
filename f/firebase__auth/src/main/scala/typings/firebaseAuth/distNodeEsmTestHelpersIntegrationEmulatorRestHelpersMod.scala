@@ -37,7 +37,8 @@ object distNodeEsmTestHelpersIntegrationEmulatorRestHelpersMod {
       __obj.asInstanceOf[OobCodeSession]
     }
     
-    extension [Self <: OobCodeSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OobCodeSession] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distNodeEsmTestHelpersIntegrationEmulatorRestHelpersMod {
       __obj.asInstanceOf[VerificationSession]
     }
     
-    extension [Self <: VerificationSession](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerificationSession] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

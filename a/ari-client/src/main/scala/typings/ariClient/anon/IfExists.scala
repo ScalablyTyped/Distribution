@@ -29,7 +29,8 @@ object IfExists {
     __obj.asInstanceOf[IfExists]
   }
   
-  extension [Self <: IfExists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfExists] (val x: Self) extends AnyVal {
     
     inline def setBeep(value: Boolean): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
     

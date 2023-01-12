@@ -31,7 +31,8 @@ object SideNavigationNestedGroup {
     __obj.asInstanceOf[SideNavigationNestedGroup]
   }
   
-  extension [Self <: SideNavigationNestedGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationNestedGroup] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListStepsInput {
     __obj.asInstanceOf[ListStepsInput]
   }
   
-  extension [Self <: ListStepsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStepsInput] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

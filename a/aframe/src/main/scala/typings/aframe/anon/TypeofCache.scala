@@ -38,7 +38,8 @@ object TypeofCache {
     __obj.asInstanceOf[TypeofCache]
   }
   
-  extension [Self <: TypeofCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCache] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

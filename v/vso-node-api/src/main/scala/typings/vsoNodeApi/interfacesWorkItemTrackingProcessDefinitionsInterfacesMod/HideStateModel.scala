@@ -15,7 +15,8 @@ object HideStateModel {
     __obj.asInstanceOf[HideStateModel]
   }
   
-  extension [Self <: HideStateModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideStateModel] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
   }

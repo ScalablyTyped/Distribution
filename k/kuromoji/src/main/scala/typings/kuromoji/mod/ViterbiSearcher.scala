@@ -26,7 +26,8 @@ object ViterbiSearcher {
     __obj.asInstanceOf[ViterbiSearcher]
   }
   
-  extension [Self <: ViterbiSearcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViterbiSearcher] (val x: Self) extends AnyVal {
     
     inline def setBackward(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "backward", js.Any.fromFunction1(value))
     

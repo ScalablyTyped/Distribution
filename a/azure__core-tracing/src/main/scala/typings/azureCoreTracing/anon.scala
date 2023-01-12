@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[OmitTracingSpanend]
     }
     
-    extension [Self <: OmitTracingSpanend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitTracingSpanend] (val x: Self) extends AnyVal {
       
       inline def setIsRecording(value: () => Boolean): Self = StObject.set(x, "isRecording", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Span]
     }
     
-    extension [Self <: Span](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Span] (val x: Self) extends AnyVal {
       
       inline def setSpan(value: TracingSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[TracingContext]
     }
     
-    extension [Self <: TracingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingContext] (val x: Self) extends AnyVal {
       
       inline def setTracingContext(value: typings.azureCoreTracing.mod.TracingContext): Self = StObject.set(x, "tracingContext", value.asInstanceOf[js.Any])
     }
@@ -103,7 +106,8 @@ object anon {
       __obj.asInstanceOf[TracingOptions]
     }
     
-    extension [Self <: TracingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingOptions] (val x: Self) extends AnyVal {
       
       inline def setTracingOptions(value: OperationTracingOptions): Self = StObject.set(x, "tracingOptions", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[TracingOptionsTracingContext]
     }
     
-    extension [Self <: TracingOptionsTracingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingOptionsTracingContext] (val x: Self) extends AnyVal {
       
       inline def setTracingOptions(value: TracingContext): Self = StObject.set(x, "tracingOptions", value.asInstanceOf[js.Any])
     }
@@ -141,7 +146,8 @@ object anon {
       __obj.asInstanceOf[UpdatedOptions[Options]]
     }
     
-    extension [Self <: UpdatedOptions[?], Options /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  tracingOptions :@azure/core-tracing.@azure/core-tracing.OperationTracingOptions | undefined} */ js.Any */](x: Self & UpdatedOptions[Options]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatedOptions[?], Options /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  tracingOptions :@azure/core-tracing.@azure/core-tracing.OperationTracingOptions | undefined} */ js.Any */] (val x: Self & UpdatedOptions[Options]) extends AnyVal {
       
       inline def setSpan(value: TracingSpan): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       

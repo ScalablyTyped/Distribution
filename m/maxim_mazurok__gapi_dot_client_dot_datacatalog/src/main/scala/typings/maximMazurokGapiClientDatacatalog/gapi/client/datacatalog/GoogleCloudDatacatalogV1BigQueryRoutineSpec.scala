@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1BigQueryRoutineSpec {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1BigQueryRoutineSpec]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1BigQueryRoutineSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1BigQueryRoutineSpec] (val x: Self) extends AnyVal {
     
     inline def setImportedLibraries(value: js.Array[String]): Self = StObject.set(x, "importedLibraries", value.asInstanceOf[js.Any])
     

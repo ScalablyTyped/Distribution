@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[PartialI18nSettings]
     }
     
-    extension [Self <: PartialI18nSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialI18nSettings] (val x: Self) extends AnyVal {
       
       inline def setAmPm(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPm", value.asInstanceOf[js.Any])
       

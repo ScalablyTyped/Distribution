@@ -22,7 +22,8 @@ object EncodingHmacKey {
     __obj.asInstanceOf[EncodingHmacKey]
   }
   
-  extension [Self <: EncodingHmacKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodingHmacKey] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

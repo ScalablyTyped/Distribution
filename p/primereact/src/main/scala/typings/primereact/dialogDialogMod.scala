@@ -62,7 +62,8 @@ object dialogDialogMod {
       __obj.asInstanceOf[DialogMaximizeParams]
     }
     
-    extension [Self <: DialogMaximizeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogMaximizeParams] (val x: Self) extends AnyVal {
       
       inline def setMaximized(value: Boolean): Self = StObject.set(x, "maximized", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object dialogDialogMod {
       __obj.asInstanceOf[DialogProps]
     }
     
-    extension [Self <: DialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: DialogAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

@@ -161,7 +161,8 @@ object UnoControlSpinButtonModel {
     __obj.asInstanceOf[UnoControlSpinButtonModel]
   }
   
-  extension [Self <: UnoControlSpinButtonModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnoControlSpinButtonModel] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

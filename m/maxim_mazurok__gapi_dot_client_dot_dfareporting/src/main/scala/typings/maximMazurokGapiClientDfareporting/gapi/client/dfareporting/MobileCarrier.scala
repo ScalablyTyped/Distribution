@@ -28,7 +28,8 @@ object MobileCarrier {
     __obj.asInstanceOf[MobileCarrier]
   }
   
-  extension [Self <: MobileCarrier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileCarrier] (val x: Self) extends AnyVal {
     
     inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     

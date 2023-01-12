@@ -30,7 +30,8 @@ object libComponentsContextMenuUseContextMenuMod {
       __obj.asInstanceOf[UseContextMenuResult]
     }
     
-    extension [Self <: UseContextMenuResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseContextMenuResult] (val x: Self) extends AnyVal {
       
       inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       

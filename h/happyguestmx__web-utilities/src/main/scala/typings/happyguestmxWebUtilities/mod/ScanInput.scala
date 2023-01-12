@@ -47,7 +47,8 @@ object ScanInput {
     __obj.asInstanceOf[ScanInput]
   }
   
-  extension [Self <: ScanInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanInput] (val x: Self) extends AnyVal {
     
     inline def setAttributesToGet(value: js.Array[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     

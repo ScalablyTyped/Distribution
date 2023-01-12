@@ -23,7 +23,8 @@ object ReplicationRunStageDetails {
     __obj.asInstanceOf[ReplicationRunStageDetails]
   }
   
-  extension [Self <: ReplicationRunStageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationRunStageDetails] (val x: Self) extends AnyVal {
     
     inline def setStage(value: ReplicationRunStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     

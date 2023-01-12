@@ -47,7 +47,8 @@ object SketchMSDocument {
     __obj.asInstanceOf[SketchMSDocument]
   }
   
-  extension [Self <: SketchMSDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSDocument] (val x: Self) extends AnyVal {
     
     inline def setAssets(value: SketchMSDocumentAssets): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     

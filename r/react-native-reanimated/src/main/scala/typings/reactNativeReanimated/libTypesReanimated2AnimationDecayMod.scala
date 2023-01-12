@@ -49,7 +49,8 @@ object libTypesReanimated2AnimationDecayMod {
       __obj.asInstanceOf[DecayAnimation]
     }
     
-    extension [Self <: DecayAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecayAnimation] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: AnimatableValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object libTypesReanimated2AnimationDecayMod {
       __obj.asInstanceOf[DecayConfig]
     }
     
-    extension [Self <: DecayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecayConfig] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: js.Array[Double]): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       

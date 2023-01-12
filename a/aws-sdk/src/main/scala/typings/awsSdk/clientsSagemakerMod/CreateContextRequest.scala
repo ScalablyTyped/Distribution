@@ -43,7 +43,8 @@ object CreateContextRequest {
     __obj.asInstanceOf[CreateContextRequest]
   }
   
-  extension [Self <: CreateContextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContextRequest] (val x: Self) extends AnyVal {
     
     inline def setContextName(value: ExperimentEntityName): Self = StObject.set(x, "ContextName", value.asInstanceOf[js.Any])
     

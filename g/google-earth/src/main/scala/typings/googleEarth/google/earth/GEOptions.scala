@@ -215,7 +215,8 @@ object GEOptions {
     __obj.asInstanceOf[GEOptions]
   }
   
-  extension [Self <: GEOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEOptions] (val x: Self) extends AnyVal {
     
     inline def setGetAtmosphereVisibility(value: () => Boolean): Self = StObject.set(x, "getAtmosphereVisibility", js.Any.fromFunction0(value))
     

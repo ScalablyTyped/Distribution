@@ -30,7 +30,8 @@ object googletag {
       __obj.asInstanceOf[CommandArray]
     }
     
-    extension [Self <: CommandArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandArray] (val x: Self) extends AnyVal {
       
       inline def setPush(value: js.Function0[Unit] => Double): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
@@ -114,7 +115,8 @@ object googletag {
       __obj.asInstanceOf[LazyLoadOptionsConfig]
     }
     
-    extension [Self <: LazyLoadOptionsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LazyLoadOptionsConfig] (val x: Self) extends AnyVal {
       
       inline def setFetchMarginPercent(value: Double): Self = StObject.set(x, "fetchMarginPercent", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object googletag {
       __obj.asInstanceOf[PrivacySettingsConfig]
     }
     
-    extension [Self <: PrivacySettingsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivacySettingsConfig] (val x: Self) extends AnyVal {
       
       inline def setChildDirectedTreatment(value: Boolean): Self = StObject.set(x, "childDirectedTreatment", value.asInstanceOf[js.Any])
       
@@ -316,7 +319,8 @@ object googletag {
       __obj.asInstanceOf[ResponseInformation]
     }
     
-    extension [Self <: ResponseInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseInformation] (val x: Self) extends AnyVal {
       
       inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
       
@@ -353,7 +357,8 @@ object googletag {
       __obj.asInstanceOf[SafeFrameConfig]
     }
     
-    extension [Self <: SafeFrameConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeFrameConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowOverlayExpansion(value: Boolean): Self = StObject.set(x, "allowOverlayExpansion", value.asInstanceOf[js.Any])
       
@@ -428,7 +433,8 @@ object googletag {
       __obj.asInstanceOf[SizeMappingBuilder]
     }
     
-    extension [Self <: SizeMappingBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeMappingBuilder] (val x: Self) extends AnyVal {
       
       inline def setAddSize(value: (SingleSizeArray, GeneralSize) => SizeMappingBuilder): Self = StObject.set(x, "addSize", js.Any.fromFunction2(value))
       
@@ -498,7 +504,8 @@ object googletag {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
         
@@ -539,7 +546,8 @@ object googletag {
         __obj.asInstanceOf[SlotRenderEndedEvent]
       }
       
-      extension [Self <: SlotRenderEndedEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SlotRenderEndedEvent] (val x: Self) extends AnyVal {
         
         inline def setAdvertiserId(value: Double): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
         
@@ -592,7 +600,8 @@ object googletag {
         __obj.asInstanceOf[SlotVisibilityChangedEvent]
       }
       
-      extension [Self <: SlotVisibilityChangedEvent](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SlotVisibilityChangedEvent] (val x: Self) extends AnyVal {
         
         inline def setInViewPercentage(value: Double): Self = StObject.set(x, "inViewPercentage", value.asInstanceOf[js.Any])
       }

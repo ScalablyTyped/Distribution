@@ -28,7 +28,8 @@ object GeometryFilter {
     __obj.asInstanceOf[GeometryFilter]
   }
   
-  extension [Self <: GeometryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryFilter] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: Geometry_): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

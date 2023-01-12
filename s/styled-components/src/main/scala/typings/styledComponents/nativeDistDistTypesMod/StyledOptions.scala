@@ -23,7 +23,8 @@ object StyledOptions {
     __obj.asInstanceOf[StyledOptions[Props]]
   }
   
-  extension [Self <: StyledOptions[?], Props](x: Self & StyledOptions[Props]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledOptions[?], Props] (val x: Self & StyledOptions[Props]) extends AnyVal {
     
     inline def setAttrs(value: js.Array[Attrs[Props]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

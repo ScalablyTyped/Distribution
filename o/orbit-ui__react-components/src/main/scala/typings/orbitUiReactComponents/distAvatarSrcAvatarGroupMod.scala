@@ -61,7 +61,8 @@ object distAvatarSrcAvatarGroupMod {
       __obj.asInstanceOf[InnerAvatarGroupProps]
     }
     
-    extension [Self <: InnerAvatarGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerAvatarGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

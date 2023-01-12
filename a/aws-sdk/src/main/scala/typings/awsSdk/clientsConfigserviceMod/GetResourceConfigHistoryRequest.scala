@@ -48,7 +48,8 @@ object GetResourceConfigHistoryRequest {
     __obj.asInstanceOf[GetResourceConfigHistoryRequest]
   }
   
-  extension [Self <: GetResourceConfigHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceConfigHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setChronologicalOrder(value: ChronologicalOrder): Self = StObject.set(x, "chronologicalOrder", value.asInstanceOf[js.Any])
     

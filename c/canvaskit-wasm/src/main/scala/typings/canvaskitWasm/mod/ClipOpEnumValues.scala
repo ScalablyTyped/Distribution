@@ -19,7 +19,8 @@ object ClipOpEnumValues {
     __obj.asInstanceOf[ClipOpEnumValues]
   }
   
-  extension [Self <: ClipOpEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipOpEnumValues] (val x: Self) extends AnyVal {
     
     inline def setDifference(value: ClipOp): Self = StObject.set(x, "Difference", value.asInstanceOf[js.Any])
     

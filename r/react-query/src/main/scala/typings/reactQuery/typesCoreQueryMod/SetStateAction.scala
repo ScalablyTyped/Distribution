@@ -23,7 +23,8 @@ object SetStateAction {
     __obj.asInstanceOf[SetStateAction[TData, TError]]
   }
   
-  extension [Self <: SetStateAction[?, ?], TData, TError](x: Self & (SetStateAction[TData, TError])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStateAction[?, ?], TData, TError] (val x: Self & (SetStateAction[TData, TError])) extends AnyVal {
     
     inline def setSetStateOptions(value: SetStateOptions): Self = StObject.set(x, "setStateOptions", value.asInstanceOf[js.Any])
     

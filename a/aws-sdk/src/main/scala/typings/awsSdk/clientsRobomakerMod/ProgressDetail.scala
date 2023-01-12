@@ -33,7 +33,8 @@ object ProgressDetail {
     __obj.asInstanceOf[ProgressDetail]
   }
   
-  extension [Self <: ProgressDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressDetail] (val x: Self) extends AnyVal {
     
     inline def setCurrentProgress(value: RobotDeploymentStep): Self = StObject.set(x, "currentProgress", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object BackgroundElevation {
     __obj.asInstanceOf[BackgroundElevation]
   }
   
-  extension [Self <: BackgroundElevation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundElevation] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

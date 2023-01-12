@@ -18,7 +18,8 @@ object GetAppReplicationConfigurationResponse {
     __obj.asInstanceOf[GetAppReplicationConfigurationResponse]
   }
   
-  extension [Self <: GetAppReplicationConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppReplicationConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setServerGroupReplicationConfigurations(value: ServerGroupReplicationConfigurations): Self = StObject.set(x, "serverGroupReplicationConfigurations", value.asInstanceOf[js.Any])
     

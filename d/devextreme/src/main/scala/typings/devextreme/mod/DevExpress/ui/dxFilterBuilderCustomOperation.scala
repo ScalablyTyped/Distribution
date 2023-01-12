@@ -69,7 +69,8 @@ object dxFilterBuilderCustomOperation {
     __obj.asInstanceOf[dxFilterBuilderCustomOperation]
   }
   
-  extension [Self <: dxFilterBuilderCustomOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFilterBuilderCustomOperation] (val x: Self) extends AnyVal {
     
     inline def setCalculateFilterExpression(value: (/* filterValue */ Any, /* field */ Field) => String | js.Array[Any] | js.Function): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction2(value))
     

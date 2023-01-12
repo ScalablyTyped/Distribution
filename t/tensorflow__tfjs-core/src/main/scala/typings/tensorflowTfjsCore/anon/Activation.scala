@@ -53,7 +53,8 @@ object Activation {
     __obj.asInstanceOf[Activation[T]]
   }
   
-  extension [Self <: Activation[?], T /* <: Tensor3D | Tensor4D */](x: Self & Activation[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activation[?], T /* <: Tensor3D | Tensor4D */] (val x: Self & Activation[T]) extends AnyVal {
     
     inline def setActivation(value: typings.tensorflowTfjsCore.distOpsFusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

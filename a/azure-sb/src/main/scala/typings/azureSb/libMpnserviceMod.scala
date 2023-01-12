@@ -49,7 +49,8 @@ object libMpnserviceMod {
       __obj.asInstanceOf[FlipTileTemplate]
     }
     
-    extension [Self <: FlipTileTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipTileTemplate] (val x: Self) extends AnyVal {
       
       inline def setSmallBackgroundImage(value: String): Self = StObject.set(x, "smallBackgroundImage", value.asInstanceOf[js.Any])
       
@@ -373,7 +374,8 @@ object libMpnserviceMod {
       __obj.asInstanceOf[TileTemplate]
     }
     
-    extension [Self <: TileTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileTemplate] (val x: Self) extends AnyVal {
       
       inline def setBackBackgroundImage(value: String): Self = StObject.set(x, "backBackgroundImage", value.asInstanceOf[js.Any])
       
@@ -408,7 +410,8 @@ object libMpnserviceMod {
       __obj.asInstanceOf[ToastTemplate]
     }
     
-    extension [Self <: ToastTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastTemplate] (val x: Self) extends AnyVal {
       
       inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Closest]
     }
     
-    extension [Self <: Closest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Closest] (val x: Self) extends AnyVal {
       
       inline def setClosest(value: Boolean): Self = StObject.set(x, "closest", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Diagonal]
     }
     
-    extension [Self <: Diagonal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diagonal] (val x: Self) extends AnyVal {
       
       inline def setDiagonal(value: Boolean): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object Qk {
     __obj.asInstanceOf[Qk]
   }
   
-  extension [Self <: Qk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Qk] (val x: Self) extends AnyVal {
     
     inline def setQk(value: js.Array[ISourceKeyRecord]): Self = StObject.set(x, "qk", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[LogUpdateMethods]
     }
     
-    extension [Self <: LogUpdateMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogUpdateMethods] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -111,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setShowCursor(value: Boolean): Self = StObject.set(x, "showCursor", value.asInstanceOf[js.Any])
       

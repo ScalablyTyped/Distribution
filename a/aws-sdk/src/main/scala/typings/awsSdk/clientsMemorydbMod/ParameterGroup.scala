@@ -33,7 +33,8 @@ object ParameterGroup {
     __obj.asInstanceOf[ParameterGroup]
   }
   
-  extension [Self <: ParameterGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterGroup] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

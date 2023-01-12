@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Imported]
     }
     
-    extension [Self <: Imported](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imported] (val x: Self) extends AnyVal {
       
       inline def setImported(value: Boolean): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     }
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Mimetype]
     }
     
-    extension [Self <: Mimetype](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
       
       inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       

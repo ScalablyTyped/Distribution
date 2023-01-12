@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[typings.googleAdwordsScripts.anon.Address]
     }
     
-    extension [Self <: typings.googleAdwordsScripts.anon.Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAdwordsScripts.anon.Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: AddressObject): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

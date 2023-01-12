@@ -122,7 +122,8 @@ object PlacesService {
     __obj.asInstanceOf[PlacesService]
   }
   
-  extension [Self <: PlacesService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacesService] (val x: Self) extends AnyVal {
     
     inline def setFindPlaceFromPhoneNumber(
       value: (FindPlaceFromPhoneNumberRequest, js.Function2[/* a */ js.Array[PlaceResult] | Null, /* b */ PlacesServiceStatus, Unit]) => Unit

@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Parse]
     }
     
-    extension [Self <: Parse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
       
       inline def setParse(value: /* query */ String => Record[String, js.UndefOr[String]]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Protocol]
     }
     
-    extension [Self <: Protocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

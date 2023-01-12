@@ -16,7 +16,8 @@ object QueryAccessibleDataResponse {
     __obj.asInstanceOf[QueryAccessibleDataResponse]
   }
   
-  extension [Self <: QueryAccessibleDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAccessibleDataResponse] (val x: Self) extends AnyVal {
     
     inline def setGcsUris(value: js.Array[String]): Self = StObject.set(x, "gcsUris", value.asInstanceOf[js.Any])
     

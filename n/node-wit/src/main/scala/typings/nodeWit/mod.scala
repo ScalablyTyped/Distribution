@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[MessageResponse]
     }
     
-    extension [Self <: MessageResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageResponse] (val x: Self) extends AnyVal {
       
       inline def setEntities(value: Any): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[MessageResponseEntity]
     }
     
-    extension [Self <: MessageResponseEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageResponseEntity] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object mod {
       __obj.asInstanceOf[WitContext]
     }
     
-    extension [Self <: WitContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitContext] (val x: Self) extends AnyVal {
       
       inline def setEntities(value: js.Array[WitEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[WitEntity]
     }
     
-    extension [Self <: WitEntity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitEntity] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object mod {
       __obj.asInstanceOf[WitEntityValue]
     }
     
-    extension [Self <: WitEntityValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitEntityValue] (val x: Self) extends AnyVal {
       
       inline def setExpressions(value: js.Array[String]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object mod {
       __obj.asInstanceOf[WitIntent]
     }
     
-    extension [Self <: WitIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitIntent] (val x: Self) extends AnyVal {
       
       inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
       
@@ -249,7 +255,8 @@ object mod {
       __obj.asInstanceOf[WitOption]
     }
     
-    extension [Self <: WitOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitOption] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -280,7 +287,8 @@ object mod {
       __obj.asInstanceOf[WitRequest]
     }
     
-    extension [Self <: WitRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitRequest] (val x: Self) extends AnyVal {
       
       inline def setContext(value: WitContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -315,7 +323,8 @@ object mod {
       __obj.asInstanceOf[WitResponse]
     }
     
-    extension [Self <: WitResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WitResponse] (val x: Self) extends AnyVal {
       
       inline def setQuickReplies(value: Any): Self = StObject.set(x, "quickReplies", value.asInstanceOf[js.Any])
       

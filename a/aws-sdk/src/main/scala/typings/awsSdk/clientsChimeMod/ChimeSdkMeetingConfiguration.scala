@@ -23,7 +23,8 @@ object ChimeSdkMeetingConfiguration {
     __obj.asInstanceOf[ChimeSdkMeetingConfiguration]
   }
   
-  extension [Self <: ChimeSdkMeetingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChimeSdkMeetingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setArtifactsConfiguration(value: ArtifactsConfiguration): Self = StObject.set(x, "ArtifactsConfiguration", value.asInstanceOf[js.Any])
     

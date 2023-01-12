@@ -637,7 +637,8 @@ object PropsSVGFEDistantLightEle {
     __obj.asInstanceOf[PropsSVGFEDistantLightEle]
   }
   
-  extension [Self <: PropsSVGFEDistantLightEle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEDistantLightEle] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

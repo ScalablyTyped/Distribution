@@ -18,7 +18,8 @@ object RequestUploadCredentialsInput {
     __obj.asInstanceOf[RequestUploadCredentialsInput]
   }
   
-  extension [Self <: RequestUploadCredentialsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestUploadCredentialsInput] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: BuildIdOrArn): Self = StObject.set(x, "BuildId", value.asInstanceOf[js.Any])
   }

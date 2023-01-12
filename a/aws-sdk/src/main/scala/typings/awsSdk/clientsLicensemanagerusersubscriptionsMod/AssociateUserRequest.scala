@@ -33,7 +33,8 @@ object AssociateUserRequest {
     __obj.asInstanceOf[AssociateUserRequest]
   }
   
-  extension [Self <: AssociateUserRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateUserRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

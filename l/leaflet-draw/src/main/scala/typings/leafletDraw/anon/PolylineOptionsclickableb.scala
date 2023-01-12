@@ -60,7 +60,8 @@ object PolylineOptionsclickableb {
     __obj.asInstanceOf[PolylineOptionsclickableb]
   }
   
-  extension [Self <: PolylineOptionsclickableb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolylineOptionsclickableb] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

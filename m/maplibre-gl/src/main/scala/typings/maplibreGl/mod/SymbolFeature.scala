@@ -45,7 +45,8 @@ object SymbolFeature {
     __obj.asInstanceOf[SymbolFeature]
   }
   
-  extension [Self <: SymbolFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolFeature] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: js.Array[js.Array[^]]): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

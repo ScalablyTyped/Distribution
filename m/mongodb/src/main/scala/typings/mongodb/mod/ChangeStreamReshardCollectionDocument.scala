@@ -22,7 +22,8 @@ object ChangeStreamReshardCollectionDocument {
     __obj.asInstanceOf[ChangeStreamReshardCollectionDocument]
   }
   
-  extension [Self <: ChangeStreamReshardCollectionDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamReshardCollectionDocument] (val x: Self) extends AnyVal {
     
     inline def setOperationType(value: reshardCollection): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }

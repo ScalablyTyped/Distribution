@@ -32,7 +32,8 @@ object CSSMathProduct {
     __obj.asInstanceOf[CSSMathProduct]
   }
   
-  extension [Self <: CSSMathProduct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMathProduct] (val x: Self) extends AnyVal {
     
     inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }

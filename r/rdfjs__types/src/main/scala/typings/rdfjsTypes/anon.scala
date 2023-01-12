@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Direction[T]]
     }
     
-    extension [Self <: Direction[?], T /* <: QuadTermName | Variable */](x: Self & Direction[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Direction[?], T /* <: QuadTermName | Variable */] (val x: Self & Direction[T]) extends AnyVal {
       
       inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Variables]
     }
     
-    extension [Self <: Variables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variables] (val x: Self) extends AnyVal {
       
       inline def setVariables(value: js.Array[Variable]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       

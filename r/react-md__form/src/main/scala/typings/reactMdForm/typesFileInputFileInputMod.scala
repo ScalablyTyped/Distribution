@@ -572,7 +572,8 @@ object typesFileInputFileInputMod {
       __obj.asInstanceOf[FileInputProps]
     }
     
-    extension [Self <: FileInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1822,7 +1823,8 @@ object typesFileInputFileInputMod {
       __obj.asInstanceOf[InputAttributes]
     }
     
-    extension [Self <: InputAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

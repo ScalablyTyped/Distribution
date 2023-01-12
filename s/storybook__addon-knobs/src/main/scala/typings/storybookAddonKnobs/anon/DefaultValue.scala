@@ -39,7 +39,8 @@ object DefaultValue {
     __obj.asInstanceOf[DefaultValue]
   }
   
-  extension [Self <: DefaultValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* knob */ ButtonTypeKnob => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

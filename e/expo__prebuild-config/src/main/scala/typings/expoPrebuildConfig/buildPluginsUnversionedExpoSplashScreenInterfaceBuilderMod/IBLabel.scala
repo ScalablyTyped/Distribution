@@ -33,7 +33,8 @@ object IBLabel {
     __obj.asInstanceOf[IBLabel]
   }
   
-  extension [Self <: IBLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBLabel] (val x: Self) extends AnyVal {
     
     inline def set$(value: AdjustsFontSizeToFit): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
     

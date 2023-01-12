@@ -169,7 +169,8 @@ object distSrcModulesUiControlsDownloadDownloadMod {
       __obj.asInstanceOf[DownloadButton]
     }
     
-    extension [Self <: DownloadButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadButton] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

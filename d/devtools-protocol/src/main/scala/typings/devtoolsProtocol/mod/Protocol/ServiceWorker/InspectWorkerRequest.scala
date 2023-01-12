@@ -15,7 +15,8 @@ object InspectWorkerRequest {
     __obj.asInstanceOf[InspectWorkerRequest]
   }
   
-  extension [Self <: InspectWorkerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectWorkerRequest] (val x: Self) extends AnyVal {
     
     inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }

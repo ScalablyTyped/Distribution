@@ -29,7 +29,8 @@ object TeamTalk {
     __obj.asInstanceOf[TeamTalk]
   }
   
-  extension [Self <: TeamTalk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamTalk] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object UpdateSceneRequest {
     __obj.asInstanceOf[UpdateSceneRequest]
   }
   
-  extension [Self <: UpdateSceneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSceneRequest] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: SceneCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

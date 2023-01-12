@@ -35,7 +35,8 @@ object SwitchOptions {
     __obj.asInstanceOf[SwitchOptions]
   }
   
-  extension [Self <: SwitchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ SwitchChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

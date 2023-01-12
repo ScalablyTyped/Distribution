@@ -18,7 +18,8 @@ object HumanLoopActivationConditionsConfig {
     __obj.asInstanceOf[HumanLoopActivationConditionsConfig]
   }
   
-  extension [Self <: HumanLoopActivationConditionsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HumanLoopActivationConditionsConfig] (val x: Self) extends AnyVal {
     
     inline def setHumanLoopActivationConditions(value: HumanLoopActivationConditions): Self = StObject.set(x, "HumanLoopActivationConditions", value.asInstanceOf[js.Any])
   }

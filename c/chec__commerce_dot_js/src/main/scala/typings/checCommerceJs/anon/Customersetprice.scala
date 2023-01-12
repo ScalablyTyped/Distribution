@@ -15,7 +15,8 @@ object Customersetprice {
     __obj.asInstanceOf[Customersetprice]
   }
   
-  extension [Self <: Customersetprice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Customersetprice] (val x: Self) extends AnyVal {
     
     inline def setCustomer_set_price(value: String): Self = StObject.set(x, "customer_set_price", value.asInstanceOf[js.Any])
   }

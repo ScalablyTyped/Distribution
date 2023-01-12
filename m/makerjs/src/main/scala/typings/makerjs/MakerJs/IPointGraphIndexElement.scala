@@ -41,7 +41,8 @@ object IPointGraphIndexElement {
     __obj.asInstanceOf[IPointGraphIndexElement]
   }
   
-  extension [Self <: IPointGraphIndexElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointGraphIndexElement] (val x: Self) extends AnyVal {
     
     inline def setKdId(value: Double): Self = StObject.set(x, "kdId", value.asInstanceOf[js.Any])
     

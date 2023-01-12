@@ -19,7 +19,8 @@ object AddChartRequest {
     __obj.asInstanceOf[AddChartRequest]
   }
   
-  extension [Self <: AddChartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddChartRequest] (val x: Self) extends AnyVal {
     
     inline def setChart(value: EmbeddedChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

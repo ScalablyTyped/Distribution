@@ -20,7 +20,8 @@ object IResourceReference {
     __obj.asInstanceOf[IResourceReference]
   }
   
-  extension [Self <: IResourceReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResourceReference] (val x: Self) extends AnyVal {
     
     inline def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
     

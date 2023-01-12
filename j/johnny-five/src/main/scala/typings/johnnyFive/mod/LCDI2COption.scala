@@ -19,7 +19,8 @@ object LCDI2COption {
     __obj.asInstanceOf[LCDI2COption]
   }
   
-  extension [Self <: LCDI2COption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LCDI2COption] (val x: Self) extends AnyVal {
     
     inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
     

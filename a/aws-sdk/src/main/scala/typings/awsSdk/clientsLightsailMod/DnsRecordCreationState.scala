@@ -23,7 +23,8 @@ object DnsRecordCreationState {
     __obj.asInstanceOf[DnsRecordCreationState]
   }
   
-  extension [Self <: DnsRecordCreationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsRecordCreationState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: DnsRecordCreationStateCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GrpcRouteMatch {
     __obj.asInstanceOf[GrpcRouteMatch]
   }
   
-  extension [Self <: GrpcRouteMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcRouteMatch] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: GrpcRouteMetadataList): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

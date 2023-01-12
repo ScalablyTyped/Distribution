@@ -38,7 +38,8 @@ object ListTableMetadataInput {
     __obj.asInstanceOf[ListTableMetadataInput]
   }
   
-  extension [Self <: ListTableMetadataInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTableMetadataInput] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: CatalogNameString): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

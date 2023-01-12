@@ -470,7 +470,8 @@ object sapTntSideNavigationMod {
       __obj.asInstanceOf[SideNavigationSettings]
     }
     
-    extension [Self <: SideNavigationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavigationSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String | PropertyBindingInfo): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

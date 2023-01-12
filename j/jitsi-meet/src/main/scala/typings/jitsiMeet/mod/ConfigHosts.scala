@@ -25,7 +25,8 @@ object ConfigHosts {
     __obj.asInstanceOf[ConfigHosts]
   }
   
-  extension [Self <: ConfigHosts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigHosts] (val x: Self) extends AnyVal {
     
     inline def setAnonymousdomain(value: String): Self = StObject.set(x, "anonymousdomain", value.asInstanceOf[js.Any])
     

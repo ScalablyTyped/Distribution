@@ -18,7 +18,8 @@ object DescribeInstanceTypeLimitsResponse {
     __obj.asInstanceOf[DescribeInstanceTypeLimitsResponse]
   }
   
-  extension [Self <: DescribeInstanceTypeLimitsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceTypeLimitsResponse] (val x: Self) extends AnyVal {
     
     inline def setLimitsByRole(value: LimitsByRole): Self = StObject.set(x, "LimitsByRole", value.asInstanceOf[js.Any])
     

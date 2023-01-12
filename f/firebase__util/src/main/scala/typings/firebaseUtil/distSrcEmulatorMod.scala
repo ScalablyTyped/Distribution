@@ -84,7 +84,8 @@ object distSrcEmulatorMod {
       __obj.asInstanceOf[FirebaseIdToken]
     }
     
-    extension [Self <: FirebaseIdToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseIdToken] (val x: Self) extends AnyVal {
       
       inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
       

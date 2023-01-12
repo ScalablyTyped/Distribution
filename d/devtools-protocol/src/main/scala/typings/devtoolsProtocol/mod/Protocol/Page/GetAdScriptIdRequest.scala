@@ -15,7 +15,8 @@ object GetAdScriptIdRequest {
     __obj.asInstanceOf[GetAdScriptIdRequest]
   }
   
-  extension [Self <: GetAdScriptIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAdScriptIdRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

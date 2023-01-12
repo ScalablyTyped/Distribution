@@ -41,7 +41,8 @@ object FieldMappingV2 {
     __obj.asInstanceOf[FieldMappingV2]
   }
   
-  extension [Self <: FieldMappingV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldMappingV2] (val x: Self) extends AnyVal {
     
     inline def setInput_fields(value: js.Array[InputField]): Self = StObject.set(x, "input_fields", value.asInstanceOf[js.Any])
     

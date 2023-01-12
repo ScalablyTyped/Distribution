@@ -19,7 +19,8 @@ object GetMessageActionsResponse {
     __obj.asInstanceOf[GetMessageActionsResponse]
   }
   
-  extension [Self <: GetMessageActionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMessageActionsResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[MessageAction]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object TextDocumentShowOptions {
     __obj.asInstanceOf[TextDocumentShowOptions]
   }
   
-  extension [Self <: TextDocumentShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentShowOptions] (val x: Self) extends AnyVal {
     
     inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     

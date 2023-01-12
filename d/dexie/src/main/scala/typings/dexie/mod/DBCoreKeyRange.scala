@@ -24,7 +24,8 @@ object DBCoreKeyRange {
     __obj.asInstanceOf[DBCoreKeyRange]
   }
   
-  extension [Self <: DBCoreKeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreKeyRange] (val x: Self) extends AnyVal {
     
     inline def setLower(value: Any): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
     

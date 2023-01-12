@@ -83,7 +83,8 @@ object libComponentsColorPickerColorRectangleColorRectangleDotbaseMod {
       __obj.asInstanceOf[IColorRectangleState]
     }
     
-    extension [Self <: IColorRectangleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColorRectangleState] (val x: Self) extends AnyVal {
       
       inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }

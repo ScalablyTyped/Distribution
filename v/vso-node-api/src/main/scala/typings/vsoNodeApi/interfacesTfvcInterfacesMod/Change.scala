@@ -44,7 +44,8 @@ object Change {
     __obj.asInstanceOf[Change[T]]
   }
   
-  extension [Self <: Change[?], T](x: Self & Change[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Change[?], T] (val x: Self & Change[T]) extends AnyVal {
     
     inline def setChangeType(value: VersionControlChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1ArtifactsArtifactObjects] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

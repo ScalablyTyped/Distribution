@@ -40,7 +40,8 @@ object Documentation {
     __obj.asInstanceOf[Documentation]
   }
   
-  extension [Self <: Documentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Documentation] (val x: Self) extends AnyVal {
     
     inline def setDocumentationRootUrl(value: String): Self = StObject.set(x, "documentationRootUrl", value.asInstanceOf[js.Any])
     

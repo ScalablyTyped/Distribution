@@ -35,7 +35,8 @@ object ISurveyTriggerOwner {
     __obj.asInstanceOf[ISurveyTriggerOwner]
   }
   
-  extension [Self <: ISurveyTriggerOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISurveyTriggerOwner] (val x: Self) extends AnyVal {
     
     inline def setCanBeCompleted(value: () => Unit): Self = StObject.set(x, "canBeCompleted", js.Any.fromFunction0(value))
     

@@ -45,7 +45,8 @@ object PropertySignature {
     __obj.asInstanceOf[PropertySignature]
   }
   
-  extension [Self <: PropertySignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertySignature] (val x: Self) extends AnyVal {
     
     inline def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     

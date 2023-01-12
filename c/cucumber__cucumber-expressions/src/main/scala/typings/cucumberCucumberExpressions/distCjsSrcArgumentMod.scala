@@ -73,7 +73,8 @@ object distCjsSrcArgumentMod {
       __obj.asInstanceOf[Argument]
     }
     
-    extension [Self <: Argument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Argument] (val x: Self) extends AnyVal {
       
       inline def setGetParameterType(value: () => typings.cucumberCucumberExpressions.distCjsSrcParameterTypeMod.default[Any]): Self = StObject.set(x, "getParameterType", js.Any.fromFunction0(value))
       

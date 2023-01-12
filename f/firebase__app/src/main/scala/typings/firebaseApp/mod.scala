@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[FirebaseApp]
     }
     
-    extension [Self <: FirebaseApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseApp] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[FirebaseAppSettings]
     }
     
-    extension [Self <: FirebaseAppSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAppSettings] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object mod {
       __obj.asInstanceOf[FirebaseOptions]
     }
     
-    extension [Self <: FirebaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object PerformanceInsightsMetricsDetail {
     __obj.asInstanceOf[PerformanceInsightsMetricsDetail]
   }
   
-  extension [Self <: PerformanceInsightsMetricsDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsMetricsDetail] (val x: Self) extends AnyVal {
     
     inline def setMetricDisplayName(value: PerformanceInsightsMetricDisplayName): Self = StObject.set(x, "MetricDisplayName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object EmitDistinctChangesOnly {
     __obj.asInstanceOf[EmitDistinctChangesOnly]
   }
   
-  extension [Self <: EmitDistinctChangesOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitDistinctChangesOnly] (val x: Self) extends AnyVal {
     
     inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     

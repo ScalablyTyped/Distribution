@@ -21,7 +21,8 @@ object MobileBroadbandUiccAppsResult {
     __obj.asInstanceOf[MobileBroadbandUiccAppsResult]
   }
   
-  extension [Self <: MobileBroadbandUiccAppsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandUiccAppsResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: MobileBroadbandUiccAppOperationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -305,7 +305,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpFormatterDeps[C, N, M, I, O]]
     }
     
-    extension [Self <: CommandHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (CommandHelpFormatterDeps[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       inline def setColors(value: typings.ionicCliFramework.libColorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -361,7 +362,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchema]
     }
     
-    extension [Self <: CommandHelpSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchema] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -439,7 +441,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchemaFootnoteLink]
     }
     
-    extension [Self <: CommandHelpSchemaFootnoteLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchemaFootnoteLink] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -471,7 +474,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchemaFootnoteText]
     }
     
-    extension [Self <: CommandHelpSchemaFootnoteText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchemaFootnoteText] (val x: Self) extends AnyVal {
       
       inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -496,7 +500,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchemaInput]
     }
     
-    extension [Self <: CommandHelpSchemaInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchemaInput] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -537,7 +542,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchemaOption]
     }
     
-    extension [Self <: CommandHelpSchemaOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchemaOption] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -576,7 +582,8 @@ object libHelpMod {
       __obj.asInstanceOf[NamespaceHelpFormatterDeps[C, N, M, I, O]]
     }
     
-    extension [Self <: NamespaceHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (NamespaceHelpFormatterDeps[C, N, M, I, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceHelpFormatterDeps[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (NamespaceHelpFormatterDeps[C, N, M, I, O])) extends AnyVal {
       
       inline def setColors(value: typings.ionicCliFramework.libColorsMod.Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -616,7 +623,8 @@ object libHelpMod {
       __obj.asInstanceOf[NamespaceHelpSchema]
     }
     
-    extension [Self <: NamespaceHelpSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceHelpSchema] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

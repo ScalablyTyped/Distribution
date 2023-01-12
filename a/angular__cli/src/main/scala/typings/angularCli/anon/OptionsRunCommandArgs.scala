@@ -16,7 +16,8 @@ object OptionsRunCommandArgs {
     __obj.asInstanceOf[OptionsRunCommandArgs]
   }
   
-  extension [Self <: OptionsRunCommandArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsRunCommandArgs] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

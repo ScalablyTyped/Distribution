@@ -96,7 +96,8 @@ object dxMap {
       __obj.asInstanceOf[MarkerAddedEvent]
     }
     
-    extension [Self <: MarkerAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object dxMap {
       __obj.asInstanceOf[MarkerRemovedEvent]
     }
     
-    extension [Self <: MarkerRemovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerRemovedEvent] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object dxMap {
       __obj.asInstanceOf[ReadyEvent]
     }
     
-    extension [Self <: ReadyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadyEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalMap(value: Any): Self = StObject.set(x, "originalMap", value.asInstanceOf[js.Any])
     }
@@ -173,7 +176,8 @@ object dxMap {
       __obj.asInstanceOf[RouteAddedEvent]
     }
     
-    extension [Self <: RouteAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -206,7 +210,8 @@ object dxMap {
       __obj.asInstanceOf[RouteRemovedEvent]
     }
     
-    extension [Self <: RouteRemovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteRemovedEvent] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

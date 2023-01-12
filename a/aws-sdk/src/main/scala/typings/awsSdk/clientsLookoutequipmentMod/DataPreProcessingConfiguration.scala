@@ -18,7 +18,8 @@ object DataPreProcessingConfiguration {
     __obj.asInstanceOf[DataPreProcessingConfiguration]
   }
   
-  extension [Self <: DataPreProcessingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPreProcessingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setTargetSamplingRate(value: TargetSamplingRate): Self = StObject.set(x, "TargetSamplingRate", value.asInstanceOf[js.Any])
     

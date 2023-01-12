@@ -19,7 +19,8 @@ object SizeRange {
     __obj.asInstanceOf[SizeRange]
   }
   
-  extension [Self <: SizeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeRange] (val x: Self) extends AnyVal {
     
     inline def setMaximumSize(value: NullableOption[Double]): Self = StObject.set(x, "maximumSize", value.asInstanceOf[js.Any])
     

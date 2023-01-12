@@ -23,7 +23,8 @@ object PeerLog {
     __obj.asInstanceOf[PeerLog]
   }
   
-  extension [Self <: PeerLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerLog] (val x: Self) extends AnyVal {
     
     inline def setBlocked(value: Boolean): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     

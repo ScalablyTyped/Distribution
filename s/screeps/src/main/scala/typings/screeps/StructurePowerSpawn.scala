@@ -75,7 +75,8 @@ object StructurePowerSpawn {
     __obj.asInstanceOf[StructurePowerSpawn]
   }
   
-  extension [Self <: StructurePowerSpawn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructurePowerSpawn] (val x: Self) extends AnyVal {
     
     inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     

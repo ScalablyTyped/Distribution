@@ -112,7 +112,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[BoundLegendProps]
     }
     
-    extension [Self <: BoundLegendProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundLegendProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: LegendAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[GridLabelProps]
     }
     
-    extension [Self <: GridLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLabelProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: start | middle | end): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -273,7 +275,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[PointData]
     }
     
-    extension [Self <: PointData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointData] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -304,7 +307,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[PointProps]
     }
     
-    extension [Self <: PointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: PointData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -429,7 +433,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarCommonProps[D]]
     }
     
-    extension [Self <: RadarCommonProps[?], D /* <: Record[String, Any] */](x: Self & RadarCommonProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarCommonProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarCommonProps[D]) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -553,7 +558,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarCustomLayerProps[D]]
     }
     
-    extension [Self <: RadarCustomLayerProps[?], D /* <: Record[String, Any] */](x: Self & RadarCustomLayerProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarCustomLayerProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarCustomLayerProps[D]) extends AnyVal {
       
       inline def setAngleStep(value: Double): Self = StObject.set(x, "angleStep", value.asInstanceOf[js.Any])
       
@@ -594,7 +600,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarDataProps[D]]
     }
     
-    extension [Self <: RadarDataProps[?], D /* <: Record[String, Any] */](x: Self & RadarDataProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarDataProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarDataProps[D]) extends AnyVal {
       
       inline def setData(value: js.Array[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -650,7 +657,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarSliceTooltipDatum]
     }
     
-    extension [Self <: RadarSliceTooltipDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSliceTooltipDatum] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -675,7 +683,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarSliceTooltipProps]
     }
     
-    extension [Self <: RadarSliceTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSliceTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[RadarSliceTooltipDatum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -700,7 +709,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarSvgFillMatcherDatum[D]]
     }
     
-    extension [Self <: RadarSvgFillMatcherDatum[?], D /* <: Record[String, Any] */](x: Self & RadarSvgFillMatcherDatum[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSvgFillMatcherDatum[?], D /* <: Record[String, Any] */] (val x: Self & RadarSvgFillMatcherDatum[D]) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -816,7 +826,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[RadarSvgProps[D]]
     }
     
-    extension [Self <: RadarSvgProps[?], D /* <: Record[String, Any] */](x: Self & RadarSvgProps[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadarSvgProps[?], D /* <: Record[String, Any] */] (val x: Self & RadarSvgProps[D]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

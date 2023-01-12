@@ -27,7 +27,8 @@ object TickConfig {
     __obj.asInstanceOf[TickConfig[ES]]
   }
   
-  extension [Self <: TickConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & TickConfig[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TickConfig[ES]) extends AnyVal {
     
     inline def setBandSize(value: Double): Self = StObject.set(x, "bandSize", value.asInstanceOf[js.Any])
     

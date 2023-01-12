@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[DataMimeType[D, M]]
     }
     
-    extension [Self <: DataMimeType[?, ?], D, M](x: Self & (DataMimeType[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataMimeType[?, ?], D, M] (val x: Self & (DataMimeType[D, M])) extends AnyVal {
       
       inline def setDataMimeType(value: String): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[ErrorsourceErrorSource]
     }
     
-    extension [Self <: ErrorsourceErrorSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorsourceErrorSource] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[PartialISubscriberFrame]
     }
     
-    extension [Self <: PartialISubscriberFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialISubscriberFrame] (val x: Self) extends AnyVal {
       
       inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       

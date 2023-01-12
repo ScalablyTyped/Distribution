@@ -33,7 +33,8 @@ object RootCause {
     __obj.asInstanceOf[RootCause]
   }
   
-  extension [Self <: RootCause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootCause] (val x: Self) extends AnyVal {
     
     inline def setLinkedAccount(value: GenericString): Self = StObject.set(x, "LinkedAccount", value.asInstanceOf[js.Any])
     

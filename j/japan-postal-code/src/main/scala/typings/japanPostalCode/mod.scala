@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[AddressData]
     }
     
-    extension [Self <: AddressData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressData] (val x: Self) extends AnyVal {
       
       inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

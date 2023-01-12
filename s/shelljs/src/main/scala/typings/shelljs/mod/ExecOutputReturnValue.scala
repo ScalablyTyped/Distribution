@@ -22,7 +22,8 @@ object ExecOutputReturnValue {
     __obj.asInstanceOf[ExecOutputReturnValue]
   }
   
-  extension [Self <: ExecOutputReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecOutputReturnValue] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

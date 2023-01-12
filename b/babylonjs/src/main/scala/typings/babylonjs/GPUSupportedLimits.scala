@@ -92,7 +92,8 @@ object GPUSupportedLimits {
     __obj.asInstanceOf[GPUSupportedLimits]
   }
   
-  extension [Self <: GPUSupportedLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUSupportedLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxBindGroups(value: GPUSize32): Self = StObject.set(x, "maxBindGroups", value.asInstanceOf[js.Any])
     

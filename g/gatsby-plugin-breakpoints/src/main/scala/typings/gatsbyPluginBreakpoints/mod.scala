@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[BreakpointConfig]
     }
     
-    extension [Self <: BreakpointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointConfig] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: BreakpointOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[BreakpointOptions]
     }
     
-    extension [Self <: BreakpointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointOptions] (val x: Self) extends AnyVal {
       
       inline def setQueries(value: QueriesObject): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object mod {
       __obj.asInstanceOf[BreakpointProps]
     }
     
-    extension [Self <: BreakpointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: BreakpointsObject): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     }
@@ -100,7 +103,8 @@ object mod {
       __obj.asInstanceOf[BreakpointProviderProps]
     }
     
-    extension [Self <: BreakpointProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreakpointProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

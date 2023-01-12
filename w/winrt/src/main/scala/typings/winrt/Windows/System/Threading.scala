@@ -59,7 +59,8 @@ object Threading {
         __obj.asInstanceOf[IPreallocatedWorkItem]
       }
       
-      extension [Self <: IPreallocatedWorkItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPreallocatedWorkItem] (val x: Self) extends AnyVal {
         
         inline def setRunAsync(value: () => IAsyncAction): Self = StObject.set(x, "runAsync", js.Any.fromFunction0(value))
       }
@@ -84,7 +85,8 @@ object Threading {
         __obj.asInstanceOf[IPreallocatedWorkItemFactory]
       }
       
-      extension [Self <: IPreallocatedWorkItemFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IPreallocatedWorkItemFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateWorkItem(value: WorkItemHandler => PreallocatedWorkItem): Self = StObject.set(x, "createWorkItem", js.Any.fromFunction1(value))
         
@@ -107,7 +109,8 @@ object Threading {
         __obj.asInstanceOf[ISignalNotifier]
       }
       
-      extension [Self <: ISignalNotifier](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISignalNotifier] (val x: Self) extends AnyVal {
         
         inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
         
@@ -173,7 +176,8 @@ object Threading {
       __obj.asInstanceOf[IThreadPoolTimer]
     }
     
-    extension [Self <: IThreadPoolTimer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThreadPoolTimer] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

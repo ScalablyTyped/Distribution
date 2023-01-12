@@ -128,7 +128,8 @@ object mod {
       __obj.asInstanceOf[ChangesOptions]
     }
     
-    extension [Self <: ChangesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangesOptions] (val x: Self) extends AnyVal {
       
       inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     }
@@ -167,7 +168,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String | Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[ReactTimeagoProps[T]]
     }
     
-    extension [Self <: ReactTimeagoProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */](x: Self & ReactTimeagoProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTimeagoProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] (val x: Self & ReactTimeagoProps[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

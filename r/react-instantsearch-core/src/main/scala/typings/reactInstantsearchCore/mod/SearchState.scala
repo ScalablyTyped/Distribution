@@ -44,7 +44,8 @@ object SearchState {
     __obj.asInstanceOf[SearchState]
   }
   
-  extension [Self <: SearchState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchState] (val x: Self) extends AnyVal {
     
     inline def setConfigure(value: Dictkey): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
     

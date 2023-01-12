@@ -45,7 +45,8 @@ object IndicesSegmentsSegment {
     __obj.asInstanceOf[IndicesSegmentsSegment]
   }
   
-  extension [Self <: IndicesSegmentsSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSegmentsSegment] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

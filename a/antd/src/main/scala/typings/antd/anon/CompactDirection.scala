@@ -22,7 +22,8 @@ object CompactDirection {
     __obj.asInstanceOf[CompactDirection]
   }
   
-  extension [Self <: CompactDirection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactDirection] (val x: Self) extends AnyVal {
     
     inline def setCompactDirection(value: horizontal | vertical): Self = StObject.set(x, "compactDirection", value.asInstanceOf[js.Any])
     

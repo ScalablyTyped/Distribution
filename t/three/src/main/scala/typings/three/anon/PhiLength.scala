@@ -22,7 +22,8 @@ object PhiLength {
     __obj.asInstanceOf[PhiLength]
   }
   
-  extension [Self <: PhiLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhiLength] (val x: Self) extends AnyVal {
     
     inline def setPhiLength(value: Double): Self = StObject.set(x, "phiLength", value.asInstanceOf[js.Any])
     

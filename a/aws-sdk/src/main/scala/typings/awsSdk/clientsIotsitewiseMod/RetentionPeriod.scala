@@ -23,7 +23,8 @@ object RetentionPeriod {
     __obj.asInstanceOf[RetentionPeriod]
   }
   
-  extension [Self <: RetentionPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetentionPeriod] (val x: Self) extends AnyVal {
     
     inline def setNumberOfDays(value: NumberOfDays): Self = StObject.set(x, "numberOfDays", value.asInstanceOf[js.Any])
     

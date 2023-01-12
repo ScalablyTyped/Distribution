@@ -18,7 +18,8 @@ object EnableEbsEncryptionByDefaultResult {
     __obj.asInstanceOf[EnableEbsEncryptionByDefaultResult]
   }
   
-  extension [Self <: EnableEbsEncryptionByDefaultResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableEbsEncryptionByDefaultResult] (val x: Self) extends AnyVal {
     
     inline def setEbsEncryptionByDefault(value: Boolean): Self = StObject.set(x, "EbsEncryptionByDefault", value.asInstanceOf[js.Any])
     

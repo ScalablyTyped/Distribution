@@ -106,7 +106,8 @@ object EventRefined {
     __obj.asInstanceOf[EventRefined]
   }
   
-  extension [Self <: EventRefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventRefined] (val x: Self) extends AnyVal {
     
     inline def setAllDay(
       value: /* import warning: importer.ImportType#apply Failed type conversion: std.BooleanConstructor extends (input : any): infer RefinedType ? RefinedType : never */ js.Any

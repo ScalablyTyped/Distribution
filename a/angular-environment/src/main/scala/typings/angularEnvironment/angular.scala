@@ -28,7 +28,8 @@ object angular {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setDomains(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
         
@@ -67,7 +68,8 @@ object angular {
         __obj.asInstanceOf[Service]
       }
       
-      extension [Self <: Service](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
         
         inline def setGet(value: () => String): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
         
@@ -105,7 +107,8 @@ object angular {
         __obj.asInstanceOf[ServiceProvider]
       }
       
-      extension [Self <: ServiceProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServiceProvider] (val x: Self) extends AnyVal {
         
         inline def setCheck(value: () => Unit): Self = StObject.set(x, "check", js.Any.fromFunction0(value))
         

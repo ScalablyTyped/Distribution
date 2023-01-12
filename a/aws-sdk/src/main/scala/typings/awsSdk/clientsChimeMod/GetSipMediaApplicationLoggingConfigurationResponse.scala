@@ -18,7 +18,8 @@ object GetSipMediaApplicationLoggingConfigurationResponse {
     __obj.asInstanceOf[GetSipMediaApplicationLoggingConfigurationResponse]
   }
   
-  extension [Self <: GetSipMediaApplicationLoggingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSipMediaApplicationLoggingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setSipMediaApplicationLoggingConfiguration(value: SipMediaApplicationLoggingConfiguration): Self = StObject.set(x, "SipMediaApplicationLoggingConfiguration", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object BingMapsLayerLayerviewDestroyEvent {
     __obj.asInstanceOf[BingMapsLayerLayerviewDestroyEvent]
   }
   
-  extension [Self <: BingMapsLayerLayerviewDestroyEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingMapsLayerLayerviewDestroyEvent] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

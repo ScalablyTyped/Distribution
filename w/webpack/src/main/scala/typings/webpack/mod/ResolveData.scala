@@ -53,7 +53,8 @@ object ResolveData {
     __obj.asInstanceOf[ResolveData]
   }
   
-  extension [Self <: ResolveData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveData] (val x: Self) extends AnyVal {
     
     inline def setAssertions(value: Record[String, Any]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     

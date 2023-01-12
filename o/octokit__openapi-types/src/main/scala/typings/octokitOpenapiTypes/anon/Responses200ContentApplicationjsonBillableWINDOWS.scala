@@ -17,7 +17,8 @@ object Responses200ContentApplicationjsonBillableWINDOWS {
     __obj.asInstanceOf[Responses200ContentApplicationjsonBillableWINDOWS]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonBillableWINDOWS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonBillableWINDOWS] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathRepoWorkflowid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

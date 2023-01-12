@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[BitswapMessage]
     }
     
-    extension [Self <: BitswapMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BitswapMessage] (val x: Self) extends AnyVal {
       
       inline def setBitswapMessage(value: Instantiable1[/* full */ Boolean, typings.ipfsBitswap.distSrcMessageMod.BitswapMessage]): Self = StObject.set(x, "BitswapMessage", value.asInstanceOf[js.Any])
     }

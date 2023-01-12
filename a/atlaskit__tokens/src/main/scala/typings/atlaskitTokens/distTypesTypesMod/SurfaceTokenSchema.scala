@@ -16,7 +16,8 @@ object SurfaceTokenSchema {
     __obj.asInstanceOf[SurfaceTokenSchema[BaseToken]]
   }
   
-  extension [Self <: SurfaceTokenSchema[?], BaseToken](x: Self & SurfaceTokenSchema[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceTokenSchema[?], BaseToken] (val x: Self & SurfaceTokenSchema[BaseToken]) extends AnyVal {
     
     inline def setElevation(value: SurfaceDefaultOverlay[BaseToken]): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
   }

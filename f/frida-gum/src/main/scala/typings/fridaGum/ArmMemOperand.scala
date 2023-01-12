@@ -23,7 +23,8 @@ object ArmMemOperand {
     __obj.asInstanceOf[ArmMemOperand]
   }
   
-  extension [Self <: ArmMemOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArmMemOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ConvertedFile]
     }
     
-    extension [Self <: ConvertedFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertedFile] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Converter]
     }
     
-    extension [Self <: Converter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Converter] (val x: Self) extends AnyVal {
       
       inline def setConvertPDF(value: String => js.Promise[js.Array[ConvertedFile]]): Self = StObject.set(x, "convertPDF", js.Any.fromFunction1(value))
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

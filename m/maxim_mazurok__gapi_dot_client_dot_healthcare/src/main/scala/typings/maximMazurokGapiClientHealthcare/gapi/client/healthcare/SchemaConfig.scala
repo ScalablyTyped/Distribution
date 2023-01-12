@@ -23,7 +23,8 @@ object SchemaConfig {
     __obj.asInstanceOf[SchemaConfig]
   }
   
-  extension [Self <: SchemaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaConfig] (val x: Self) extends AnyVal {
     
     inline def setRecursiveStructureDepth(value: String): Self = StObject.set(x, "recursiveStructureDepth", value.asInstanceOf[js.Any])
     

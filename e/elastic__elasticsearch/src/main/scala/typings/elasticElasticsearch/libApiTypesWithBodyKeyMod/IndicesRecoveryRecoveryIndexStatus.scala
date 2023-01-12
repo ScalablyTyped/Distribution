@@ -37,7 +37,8 @@ object IndicesRecoveryRecoveryIndexStatus {
     __obj.asInstanceOf[IndicesRecoveryRecoveryIndexStatus]
   }
   
-  extension [Self <: IndicesRecoveryRecoveryIndexStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryRecoveryIndexStatus] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: IndicesRecoveryRecoveryBytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object NullCheckBoxList {
     __obj.asInstanceOf[NullCheckBoxList]
   }
   
-  extension [Self <: NullCheckBoxList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullCheckBoxList] (val x: Self) extends AnyVal {
     
     inline def setIsEmpty(value: BoxedBoolean): Self = StObject.set(x, "IsEmpty", value.asInstanceOf[js.Any])
     

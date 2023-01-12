@@ -88,7 +88,8 @@ object ISVGRenderOptions {
     __obj.asInstanceOf[ISVGRenderOptions]
   }
   
-  extension [Self <: ISVGRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
     

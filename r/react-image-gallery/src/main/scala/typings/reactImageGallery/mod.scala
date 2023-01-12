@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[ReactImageGalleryItem]
     }
     
-    extension [Self <: ReactImageGalleryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactImageGalleryItem] (val x: Self) extends AnyVal {
       
       inline def setBulletClass(value: String): Self = StObject.set(x, "bulletClass", value.asInstanceOf[js.Any])
       
@@ -335,7 +336,8 @@ object mod {
       __obj.asInstanceOf[ReactImageGalleryProps]
     }
     
-    extension [Self <: ReactImageGalleryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactImageGalleryProps] (val x: Self) extends AnyVal {
       
       inline def setAdditionalClass(value: String): Self = StObject.set(x, "additionalClass", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object CirrusEnv {
     __obj.asInstanceOf[CirrusEnv]
   }
   
-  extension [Self <: CirrusEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CirrusEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

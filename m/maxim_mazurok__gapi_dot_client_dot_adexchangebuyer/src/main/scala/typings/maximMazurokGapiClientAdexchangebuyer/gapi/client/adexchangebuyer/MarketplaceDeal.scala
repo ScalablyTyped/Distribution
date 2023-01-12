@@ -91,7 +91,8 @@ object MarketplaceDeal {
     __obj.asInstanceOf[MarketplaceDeal]
   }
   
-  extension [Self <: MarketplaceDeal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketplaceDeal] (val x: Self) extends AnyVal {
     
     inline def setBuyerPrivateData(value: PrivateData): Self = StObject.set(x, "buyerPrivateData", value.asInstanceOf[js.Any])
     

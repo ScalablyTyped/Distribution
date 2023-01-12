@@ -27,7 +27,8 @@ object BinarySelectorAtom {
     __obj.asInstanceOf[BinarySelectorAtom]
   }
   
-  extension [Self <: BinarySelectorAtom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinarySelectorAtom] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: SubjectSelector): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

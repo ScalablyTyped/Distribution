@@ -43,7 +43,8 @@ object MetricValue {
     __obj.asInstanceOf[MetricValue]
   }
   
-  extension [Self <: MetricValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricValue] (val x: Self) extends AnyVal {
     
     inline def setCidrs(value: Cidrs): Self = StObject.set(x, "cidrs", value.asInstanceOf[js.Any])
     

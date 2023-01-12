@@ -28,7 +28,8 @@ object ClearingOptions {
     __obj.asInstanceOf[ClearingOptions]
   }
   
-  extension [Self <: ClearingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearingOptions] (val x: Self) extends AnyVal {
     
     inline def setClose_selectors(value: String): Self = StObject.set(x, "close_selectors", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PropertiesVisibilities {
     __obj.asInstanceOf[PropertiesVisibilities]
   }
   
-  extension [Self <: PropertiesVisibilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertiesVisibilities] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: Visibilities): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

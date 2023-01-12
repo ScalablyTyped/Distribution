@@ -15,7 +15,8 @@ object PathThreadidNumber {
     __obj.asInstanceOf[PathThreadidNumber]
   }
   
-  extension [Self <: PathThreadidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathThreadidNumber] (val x: Self) extends AnyVal {
     
     inline def setPath(value: ThreadidNumber): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

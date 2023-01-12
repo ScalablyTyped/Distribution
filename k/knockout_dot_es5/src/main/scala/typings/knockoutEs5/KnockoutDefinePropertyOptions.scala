@@ -17,7 +17,8 @@ object KnockoutDefinePropertyOptions {
     __obj.asInstanceOf[KnockoutDefinePropertyOptions]
   }
   
-  extension [Self <: KnockoutDefinePropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutDefinePropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setGet(value: () => Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

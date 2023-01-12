@@ -28,7 +28,8 @@ object DataSourceObjectReference {
     __obj.asInstanceOf[DataSourceObjectReference]
   }
   
-  extension [Self <: DataSourceObjectReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceObjectReference] (val x: Self) extends AnyVal {
     
     inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     

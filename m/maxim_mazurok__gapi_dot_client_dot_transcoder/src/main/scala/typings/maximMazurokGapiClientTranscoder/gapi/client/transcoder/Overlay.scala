@@ -19,7 +19,8 @@ object Overlay {
     __obj.asInstanceOf[Overlay]
   }
   
-  extension [Self <: Overlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overlay] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

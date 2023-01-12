@@ -21,7 +21,8 @@ object FrameNavigatedEvent {
     __obj.asInstanceOf[FrameNavigatedEvent]
   }
   
-  extension [Self <: FrameNavigatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameNavigatedEvent] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

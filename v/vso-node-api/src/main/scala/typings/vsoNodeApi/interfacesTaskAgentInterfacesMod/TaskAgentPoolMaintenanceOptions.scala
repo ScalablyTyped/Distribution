@@ -18,7 +18,8 @@ object TaskAgentPoolMaintenanceOptions {
     __obj.asInstanceOf[TaskAgentPoolMaintenanceOptions]
   }
   
-  extension [Self <: TaskAgentPoolMaintenanceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPoolMaintenanceOptions] (val x: Self) extends AnyVal {
     
     inline def setWorkingDirectoryExpirationInDays(value: Double): Self = StObject.set(x, "workingDirectoryExpirationInDays", value.asInstanceOf[js.Any])
   }

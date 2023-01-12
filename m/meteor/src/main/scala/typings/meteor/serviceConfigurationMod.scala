@@ -40,7 +40,8 @@ object serviceConfigurationMod {
       __obj.asInstanceOf[typings.meteor.serviceConfigurationMod.Configuration]
     }
     
-    extension [Self <: typings.meteor.serviceConfigurationMod.Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.meteor.serviceConfigurationMod.Configuration] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

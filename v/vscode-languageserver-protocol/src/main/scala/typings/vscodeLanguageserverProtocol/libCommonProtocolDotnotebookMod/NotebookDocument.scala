@@ -53,7 +53,8 @@ object NotebookDocument {
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.NotebookDocument */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.notebook.NotebookDocument */ Boolean]
   
-  extension [Self <: NotebookDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocument] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

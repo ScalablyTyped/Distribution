@@ -50,7 +50,8 @@ object Net {
     __obj.asInstanceOf[Net]
   }
   
-  extension [Self <: Net](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Net] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Receive): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

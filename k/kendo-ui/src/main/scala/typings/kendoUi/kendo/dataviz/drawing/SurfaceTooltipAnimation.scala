@@ -17,7 +17,8 @@ object SurfaceTooltipAnimation {
     __obj.asInstanceOf[SurfaceTooltipAnimation]
   }
   
-  extension [Self <: SurfaceTooltipAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurfaceTooltipAnimation] (val x: Self) extends AnyVal {
     
     inline def setClose(value: SurfaceTooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

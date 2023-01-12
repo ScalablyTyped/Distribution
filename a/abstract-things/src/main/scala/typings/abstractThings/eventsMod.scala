@@ -58,7 +58,8 @@ object eventsMod {
       __obj.asInstanceOf[EventEmitterOptions]
     }
     
-    extension [Self <: EventEmitterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitterOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: EventEmitterContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     }
@@ -79,7 +80,8 @@ object eventsMod {
       __obj.asInstanceOf[Stoppable]
     }
     
-    extension [Self <: Stoppable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stoppable] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }

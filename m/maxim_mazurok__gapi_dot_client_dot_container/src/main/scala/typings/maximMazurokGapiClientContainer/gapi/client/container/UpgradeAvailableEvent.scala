@@ -25,7 +25,8 @@ object UpgradeAvailableEvent {
     __obj.asInstanceOf[UpgradeAvailableEvent]
   }
   
-  extension [Self <: UpgradeAvailableEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeAvailableEvent] (val x: Self) extends AnyVal {
     
     inline def setReleaseChannel(value: ReleaseChannel): Self = StObject.set(x, "releaseChannel", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object GanttMessages {
     __obj.asInstanceOf[GanttMessages]
   }
   
-  extension [Self <: GanttMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttMessages] (val x: Self) extends AnyVal {
     
     inline def setActions(value: GanttMessagesActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -371,7 +371,8 @@ object valueAxesSettingsMod {
       __obj.asInstanceOf[ValueAxesSettings]
     }
     
-    extension [Self <: ValueAxesSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueAxesSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoGridCount(value: Boolean): Self = StObject.set(x, "autoGridCount", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object TypeoffileBrowserHandler {
     __obj.asInstanceOf[TypeoffileBrowserHandler]
   }
   
-  extension [Self <: TypeoffileBrowserHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoffileBrowserHandler] (val x: Self) extends AnyVal {
     
     inline def setOnExecute(value: FileBrowserHandlerExecuteEvent): Self = StObject.set(x, "onExecute", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ScriptableCartesianScaleContext {
     __obj.asInstanceOf[ScriptableCartesianScaleContext]
   }
   
-  extension [Self <: ScriptableCartesianScaleContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptableCartesianScaleContext] (val x: Self) extends AnyVal {
     
     inline def setScale(value: linear | logarithmic | category | time | timeseries): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

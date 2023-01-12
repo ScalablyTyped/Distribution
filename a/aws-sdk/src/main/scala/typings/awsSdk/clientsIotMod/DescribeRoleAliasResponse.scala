@@ -18,7 +18,8 @@ object DescribeRoleAliasResponse {
     __obj.asInstanceOf[DescribeRoleAliasResponse]
   }
   
-  extension [Self <: DescribeRoleAliasResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRoleAliasResponse] (val x: Self) extends AnyVal {
     
     inline def setRoleAliasDescription(value: RoleAliasDescription): Self = StObject.set(x, "roleAliasDescription", value.asInstanceOf[js.Any])
     

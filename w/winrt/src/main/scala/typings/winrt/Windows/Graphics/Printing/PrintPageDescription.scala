@@ -23,7 +23,8 @@ object PrintPageDescription {
     __obj.asInstanceOf[PrintPageDescription]
   }
   
-  extension [Self <: PrintPageDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintPageDescription] (val x: Self) extends AnyVal {
     
     inline def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     

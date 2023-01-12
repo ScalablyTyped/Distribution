@@ -17,7 +17,8 @@ object OldMessages {
     __obj.asInstanceOf[OldMessages]
   }
   
-  extension [Self <: OldMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldMessages] (val x: Self) extends AnyVal {
     
     inline def setNewMessages(value: Double): Self = StObject.set(x, "newMessages", value.asInstanceOf[js.Any])
     

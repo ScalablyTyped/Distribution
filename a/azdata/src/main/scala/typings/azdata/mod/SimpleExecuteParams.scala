@@ -17,7 +17,8 @@ object SimpleExecuteParams {
     __obj.asInstanceOf[SimpleExecuteParams]
   }
   
-  extension [Self <: SimpleExecuteParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleExecuteParams] (val x: Self) extends AnyVal {
     
     inline def setOwnerUri(value: String): Self = StObject.set(x, "ownerUri", value.asInstanceOf[js.Any])
     

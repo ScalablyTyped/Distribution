@@ -24,7 +24,8 @@ object BaseBuildOptions {
     __obj.asInstanceOf[BaseBuildOptions]
   }
   
-  extension [Self <: BaseBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBuildOptions] (val x: Self) extends AnyVal {
     
     inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
     

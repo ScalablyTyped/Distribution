@@ -4925,7 +4925,8 @@ object sap {
       __obj.asInstanceOf[IUI5DefineDependencyNames]
     }
     
-    extension [Self <: IUI5DefineDependencyNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUI5DefineDependencyNames] (val x: Self) extends AnyVal {
       
       inline def setJqueryDotsapDotact(value: Unit): Self = StObject.set(x, "jquery.sap.act", value.asInstanceOf[js.Any])
       

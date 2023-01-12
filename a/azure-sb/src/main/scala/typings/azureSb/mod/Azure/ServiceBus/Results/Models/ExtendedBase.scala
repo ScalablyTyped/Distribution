@@ -64,7 +64,8 @@ object ExtendedBase {
     __obj.asInstanceOf[ExtendedBase]
   }
   
-  extension [Self <: ExtendedBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedBase] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationRules(value: String): Self = StObject.set(x, "AuthorizationRules", value.asInstanceOf[js.Any])
     

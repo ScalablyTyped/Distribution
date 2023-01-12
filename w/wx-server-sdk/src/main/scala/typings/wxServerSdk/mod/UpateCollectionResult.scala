@@ -16,7 +16,8 @@ object UpateCollectionResult {
     __obj.asInstanceOf[UpateCollectionResult]
   }
   
-  extension [Self <: UpateCollectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpateCollectionResult] (val x: Self) extends AnyVal {
     
     inline def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

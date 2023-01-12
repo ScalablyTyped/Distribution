@@ -32,7 +32,8 @@ object buildSrcHttp2Mod {
       __obj.asInstanceOf[SessionData]
     }
     
-    extension [Self <: SessionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
       
       inline def setSession(value: ClientHttp2Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       

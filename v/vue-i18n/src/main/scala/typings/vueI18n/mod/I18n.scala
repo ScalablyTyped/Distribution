@@ -61,7 +61,8 @@ object I18n {
     __obj.asInstanceOf[I18n[Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy]]
   }
   
-  extension [Self <: I18n[?, ?, ?, ?, ?], Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy](x: Self & (I18n[Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18n[?, ?, ?, ?, ?], Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy] (val x: Self & (I18n[Messages, DateTimeFormats, NumberFormats, OptionLocale, Legacy])) extends AnyVal {
     
     inline def setAllowComposition(value: Boolean): Self = StObject.set(x, "allowComposition", value.asInstanceOf[js.Any])
     

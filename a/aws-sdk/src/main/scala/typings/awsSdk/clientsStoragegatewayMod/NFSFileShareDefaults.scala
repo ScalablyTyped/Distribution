@@ -33,7 +33,8 @@ object NFSFileShareDefaults {
     __obj.asInstanceOf[NFSFileShareDefaults]
   }
   
-  extension [Self <: NFSFileShareDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NFSFileShareDefaults] (val x: Self) extends AnyVal {
     
     inline def setDirectoryMode(value: PermissionMode): Self = StObject.set(x, "DirectoryMode", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setMap(value: SourceMapOptions): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

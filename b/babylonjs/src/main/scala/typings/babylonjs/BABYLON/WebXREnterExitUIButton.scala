@@ -36,7 +36,8 @@ object WebXREnterExitUIButton {
     __obj.asInstanceOf[WebXREnterExitUIButton]
   }
   
-  extension [Self <: WebXREnterExitUIButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXREnterExitUIButton] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[CheckNativeRunDeps]
     }
     
-    extension [Self <: CheckNativeRunDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckNativeRunDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     }
@@ -66,7 +67,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[NativeDeviceTarget]
     }
     
-    extension [Self <: NativeDeviceTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeDeviceTarget] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[NativeRunSchema]
     }
     
-    extension [Self <: NativeRunSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeRunSchema] (val x: Self) extends AnyVal {
       
       inline def setForwardedPorts(value: js.Array[String | Double]): Self = StObject.set(x, "forwardedPorts", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[NativeTargetPlatform]
     }
     
-    extension [Self <: NativeTargetPlatform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeTargetPlatform] (val x: Self) extends AnyVal {
       
       inline def setDevices(value: js.Array[NativeDeviceTarget]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[NativeVirtualDeviceTarget]
     }
     
-    extension [Self <: NativeVirtualDeviceTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeVirtualDeviceTarget] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -176,7 +181,8 @@ object libNativeRunMod {
       __obj.asInstanceOf[RunNativeRunDeps]
     }
     
-    extension [Self <: RunNativeRunDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunNativeRunDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

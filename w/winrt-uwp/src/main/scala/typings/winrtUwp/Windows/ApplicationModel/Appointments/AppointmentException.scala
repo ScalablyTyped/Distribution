@@ -24,7 +24,8 @@ object AppointmentException {
     __obj.asInstanceOf[AppointmentException]
   }
   
-  extension [Self <: AppointmentException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentException] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: Appointment): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

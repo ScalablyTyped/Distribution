@@ -33,7 +33,8 @@ object AngularWebWorkerOptionsSchema {
     __obj.asInstanceOf[AngularWebWorkerOptionsSchema]
   }
   
-  extension [Self <: AngularWebWorkerOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularWebWorkerOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object KmlPolyStyle {
     __obj.asInstanceOf[KmlPolyStyle]
   }
   
-  extension [Self <: KmlPolyStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlPolyStyle] (val x: Self) extends AnyVal {
     
     inline def setGetFill(value: () => Boolean): Self = StObject.set(x, "getFill", js.Any.fromFunction0(value))
     

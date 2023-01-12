@@ -50,7 +50,8 @@ object ISpriteJSONSprite {
     __obj.asInstanceOf[ISpriteJSONSprite]
   }
   
-  extension [Self <: ISpriteJSONSprite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpriteJSONSprite] (val x: Self) extends AnyVal {
     
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     

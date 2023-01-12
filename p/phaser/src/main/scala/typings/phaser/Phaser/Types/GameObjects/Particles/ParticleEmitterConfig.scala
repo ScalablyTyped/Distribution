@@ -291,7 +291,8 @@ object ParticleEmitterConfig {
     __obj.asInstanceOf[ParticleEmitterConfig]
   }
   
-  extension [Self <: ParticleEmitterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterConfig] (val x: Self) extends AnyVal {
     
     inline def setAccelerationX(value: EmitterOpOnEmitType): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
     

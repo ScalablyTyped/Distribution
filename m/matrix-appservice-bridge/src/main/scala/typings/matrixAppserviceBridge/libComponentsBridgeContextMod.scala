@@ -57,7 +57,8 @@ object libComponentsBridgeContextMod {
       __obj.asInstanceOf[BridgeContextRoom]
     }
     
-    extension [Self <: BridgeContextRoom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeContextRoom] (val x: Self) extends AnyVal {
       
       inline def setMatrix(value: MatrixRoom): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object libComponentsBridgeContextMod {
       __obj.asInstanceOf[BridgeContextSenders]
     }
     
-    extension [Self <: BridgeContextSenders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeContextSenders] (val x: Self) extends AnyVal {
       
       inline def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object libComponentsBridgeContextMod {
       __obj.asInstanceOf[BridgeContextTargets]
     }
     
-    extension [Self <: BridgeContextTargets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BridgeContextTargets] (val x: Self) extends AnyVal {
       
       inline def setMatrix(value: MatrixUser): Self = StObject.set(x, "matrix", value.asInstanceOf[js.Any])
       

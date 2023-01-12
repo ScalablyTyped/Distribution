@@ -34,7 +34,8 @@ object PartialNormalizedExtensio {
     __obj.asInstanceOf[PartialNormalizedExtensio]
   }
   
-  extension [Self <: PartialNormalizedExtensio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNormalizedExtensio] (val x: Self) extends AnyVal {
     
     inline def setAttentionMarkers(value: `3`): Self = StObject.set(x, "attentionMarkers", value.asInstanceOf[js.Any])
     

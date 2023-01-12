@@ -18,7 +18,8 @@ object ReleaseIpamPoolAllocationResult {
     __obj.asInstanceOf[ReleaseIpamPoolAllocationResult]
   }
   
-  extension [Self <: ReleaseIpamPoolAllocationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseIpamPoolAllocationResult] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
     

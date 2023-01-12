@@ -179,7 +179,8 @@ object sapMActionListItemMod {
       __obj.asInstanceOf[ActionListItemSettings]
     }
     
-    extension [Self <: ActionListItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionListItemSettings] (val x: Self) extends AnyVal {
       
       inline def setText(value: String | PropertyBindingInfo): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

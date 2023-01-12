@@ -18,7 +18,8 @@ object DescribeMapRequest {
     __obj.asInstanceOf[DescribeMapRequest]
   }
   
-  extension [Self <: DescribeMapRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMapRequest] (val x: Self) extends AnyVal {
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object CIDRSummary {
     __obj.asInstanceOf[CIDRSummary]
   }
   
-  extension [Self <: CIDRSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIDRSummary] (val x: Self) extends AnyVal {
     
     inline def setAvailableCIDRCount(value: CIDRCount): Self = StObject.set(x, "AvailableCIDRCount", value.asInstanceOf[js.Any])
     

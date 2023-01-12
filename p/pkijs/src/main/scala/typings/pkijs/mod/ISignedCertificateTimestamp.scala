@@ -35,7 +35,8 @@ object ISignedCertificateTimestamp {
     __obj.asInstanceOf[ISignedCertificateTimestamp]
   }
   
-  extension [Self <: ISignedCertificateTimestamp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignedCertificateTimestamp] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     

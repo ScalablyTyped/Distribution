@@ -19,7 +19,8 @@ object RetryPolicy {
     __obj.asInstanceOf[RetryPolicy]
   }
   
-  extension [Self <: RetryPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaximumBackoff(value: String): Self = StObject.set(x, "maximumBackoff", value.asInstanceOf[js.Any])
     

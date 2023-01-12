@@ -685,7 +685,8 @@ object PropsSVGFEBlendElementcon {
     __obj.asInstanceOf[PropsSVGFEBlendElementcon]
   }
   
-  extension [Self <: PropsSVGFEBlendElementcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsSVGFEBlendElementcon] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

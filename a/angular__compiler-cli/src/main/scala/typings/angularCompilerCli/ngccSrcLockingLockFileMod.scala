@@ -44,7 +44,8 @@ object ngccSrcLockingLockFileMod {
       __obj.asInstanceOf[LockFile]
     }
     
-    extension [Self <: LockFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockFile] (val x: Self) extends AnyVal {
       
       inline def setPath(value: AbsoluteFsPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

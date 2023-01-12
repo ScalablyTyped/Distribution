@@ -22,7 +22,8 @@ object ReactiveWatchOptions {
     __obj.asInstanceOf[ReactiveWatchOptions]
   }
   
-  extension [Self <: ReactiveWatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveWatchOptions] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: (/* newValue */ Any, /* oldValue */ Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
     

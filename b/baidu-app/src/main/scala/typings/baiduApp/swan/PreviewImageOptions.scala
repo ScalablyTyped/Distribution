@@ -21,7 +21,8 @@ object PreviewImageOptions {
     __obj.asInstanceOf[PreviewImageOptions]
   }
   
-  extension [Self <: PreviewImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviewImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

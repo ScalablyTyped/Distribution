@@ -43,7 +43,8 @@ object GoogleCloudDatalabelingV1beta1AnnotationValue {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationValue]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationValue] (val x: Self) extends AnyVal {
     
     inline def setImageBoundingPolyAnnotation(value: GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation): Self = StObject.set(x, "imageBoundingPolyAnnotation", value.asInstanceOf[js.Any])
     

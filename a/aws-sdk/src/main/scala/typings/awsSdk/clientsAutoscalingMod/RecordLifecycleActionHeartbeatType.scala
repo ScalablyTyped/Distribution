@@ -33,7 +33,8 @@ object RecordLifecycleActionHeartbeatType {
     __obj.asInstanceOf[RecordLifecycleActionHeartbeatType]
   }
   
-  extension [Self <: RecordLifecycleActionHeartbeatType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordLifecycleActionHeartbeatType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

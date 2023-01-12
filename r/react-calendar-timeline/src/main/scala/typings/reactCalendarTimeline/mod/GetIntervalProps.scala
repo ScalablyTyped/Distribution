@@ -24,7 +24,8 @@ object GetIntervalProps {
     __obj.asInstanceOf[GetIntervalProps]
   }
   
-  extension [Self <: GetIntervalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntervalProps] (val x: Self) extends AnyVal {
     
     inline def setInterval(value: Interval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     

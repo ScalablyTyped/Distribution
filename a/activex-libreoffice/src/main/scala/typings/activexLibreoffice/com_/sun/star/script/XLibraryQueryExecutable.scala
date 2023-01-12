@@ -24,7 +24,8 @@ object XLibraryQueryExecutable {
     __obj.asInstanceOf[XLibraryQueryExecutable]
   }
   
-  extension [Self <: XLibraryQueryExecutable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLibraryQueryExecutable] (val x: Self) extends AnyVal {
     
     inline def setHasExecutableCode(value: String => Boolean): Self = StObject.set(x, "HasExecutableCode", js.Any.fromFunction1(value))
   }

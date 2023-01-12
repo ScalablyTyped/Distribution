@@ -37,7 +37,8 @@ object XRegressionCurve {
     __obj.asInstanceOf[XRegressionCurve]
   }
   
-  extension [Self <: XRegressionCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRegressionCurve] (val x: Self) extends AnyVal {
     
     inline def setCalculator(value: XRegressionCurveCalculator): Self = StObject.set(x, "Calculator", value.asInstanceOf[js.Any])
     

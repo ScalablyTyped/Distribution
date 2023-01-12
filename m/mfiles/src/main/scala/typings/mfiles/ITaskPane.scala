@@ -41,7 +41,8 @@ object ITaskPane {
     __obj.asInstanceOf[ITaskPane]
   }
   
-  extension [Self <: ITaskPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITaskPane] (val x: Self) extends AnyVal {
     
     inline def setAddCustomCommandToGroup(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "AddCustomCommandToGroup", js.Any.fromFunction3(value))
     

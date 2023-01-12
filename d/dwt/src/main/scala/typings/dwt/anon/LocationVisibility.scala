@@ -17,7 +17,8 @@ object LocationVisibility {
     __obj.asInstanceOf[LocationVisibility]
   }
   
-  extension [Self <: LocationVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationVisibility] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

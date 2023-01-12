@@ -28,7 +28,8 @@ object DnsServiceDiscovery {
     __obj.asInstanceOf[DnsServiceDiscovery]
   }
   
-  extension [Self <: DnsServiceDiscovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsServiceDiscovery] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: Hostname): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

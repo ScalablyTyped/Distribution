@@ -23,7 +23,8 @@ object ListMigrationWorkflowsResponse {
     __obj.asInstanceOf[ListMigrationWorkflowsResponse]
   }
   
-  extension [Self <: ListMigrationWorkflowsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMigrationWorkflowsResponse] (val x: Self) extends AnyVal {
     
     inline def setMigrationWorkflowSummary(value: MigrationWorkflowSummaryList): Self = StObject.set(x, "migrationWorkflowSummary", value.asInstanceOf[js.Any])
     

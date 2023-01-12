@@ -31,7 +31,8 @@ object XViewSettingsSupplier {
     __obj.asInstanceOf[XViewSettingsSupplier]
   }
   
-  extension [Self <: XViewSettingsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewSettingsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetViewSettings(value: () => XPropertySet): Self = StObject.set(x, "getViewSettings", js.Any.fromFunction0(value))
     

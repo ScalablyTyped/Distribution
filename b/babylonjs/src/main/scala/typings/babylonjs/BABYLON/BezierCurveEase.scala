@@ -37,7 +37,8 @@ object BezierCurveEase {
     __obj.asInstanceOf[BezierCurveEase]
   }
   
-  extension [Self <: BezierCurveEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BezierCurveEase] (val x: Self) extends AnyVal {
     
     inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
     

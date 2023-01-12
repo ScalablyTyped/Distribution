@@ -18,7 +18,8 @@ object TimestampForCollection {
     __obj.asInstanceOf[TimestampForCollection]
   }
   
-  extension [Self <: TimestampForCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestampForCollection] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     

@@ -171,7 +171,8 @@ object typesGetObjectOutputMod {
       __obj.asInstanceOf[GetObjectOutput[StreamType]]
     }
     
-    extension [Self <: GetObjectOutput[?], StreamType](x: Self & GetObjectOutput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetObjectOutput[?], StreamType] (val x: Self & GetObjectOutput[StreamType]) extends AnyVal {
       
       inline def setAcceptRanges(value: String): Self = StObject.set(x, "AcceptRanges", value.asInstanceOf[js.Any])
       

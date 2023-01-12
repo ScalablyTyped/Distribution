@@ -109,7 +109,8 @@ object buildSrcChannelCredentialsMod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
       

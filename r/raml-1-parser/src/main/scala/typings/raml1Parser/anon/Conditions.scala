@@ -22,7 +22,8 @@ object Conditions {
     __obj.asInstanceOf[Conditions]
   }
   
-  extension [Self <: Conditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conditions] (val x: Self) extends AnyVal {
     
     inline def set$action(value: java.lang.String): Self = StObject.set(x, "$action", value.asInstanceOf[js.Any])
     

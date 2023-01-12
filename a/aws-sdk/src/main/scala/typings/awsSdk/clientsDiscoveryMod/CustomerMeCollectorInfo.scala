@@ -56,7 +56,8 @@ object CustomerMeCollectorInfo {
     __obj.asInstanceOf[CustomerMeCollectorInfo]
   }
   
-  extension [Self <: CustomerMeCollectorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerMeCollectorInfo] (val x: Self) extends AnyVal {
     
     inline def setActiveMeCollectors(value: Integer): Self = StObject.set(x, "activeMeCollectors", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PDFViewerMessagesErrorMessages {
     __obj.asInstanceOf[PDFViewerMessagesErrorMessages]
   }
   
-  extension [Self <: PDFViewerMessagesErrorMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerMessagesErrorMessages] (val x: Self) extends AnyVal {
     
     inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     

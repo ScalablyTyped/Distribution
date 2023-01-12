@@ -64,7 +64,8 @@ object ResultTable {
     __obj.asInstanceOf[ResultTable]
   }
   
-  extension [Self <: ResultTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultTable] (val x: Self) extends AnyVal {
     
     inline def setGet_groupTemplateId(value: () => String): Self = StObject.set(x, "get_groupTemplateId", js.Any.fromFunction0(value))
     

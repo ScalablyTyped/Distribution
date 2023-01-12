@@ -30,7 +30,8 @@ object PrivateKeyInfoParameters {
     __obj.asInstanceOf[PrivateKeyInfoParameters]
   }
   
-  extension [Self <: PrivateKeyInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateKeyInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[Attribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

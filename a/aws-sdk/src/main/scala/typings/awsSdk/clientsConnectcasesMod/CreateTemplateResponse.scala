@@ -23,7 +23,8 @@ object CreateTemplateResponse {
     __obj.asInstanceOf[CreateTemplateResponse]
   }
   
-  extension [Self <: CreateTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setTemplateArn(value: TemplateArn): Self = StObject.set(x, "templateArn", value.asInstanceOf[js.Any])
     

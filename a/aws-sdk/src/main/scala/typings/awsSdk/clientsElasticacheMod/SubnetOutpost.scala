@@ -18,7 +18,8 @@ object SubnetOutpost {
     __obj.asInstanceOf[SubnetOutpost]
   }
   
-  extension [Self <: SubnetOutpost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetOutpost] (val x: Self) extends AnyVal {
     
     inline def setSubnetOutpostArn(value: String): Self = StObject.set(x, "SubnetOutpostArn", value.asInstanceOf[js.Any])
     

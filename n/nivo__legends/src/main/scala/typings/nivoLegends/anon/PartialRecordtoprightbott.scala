@@ -22,7 +22,8 @@ object PartialRecordtoprightbott {
     __obj.asInstanceOf[PartialRecordtoprightbott]
   }
   
-  extension [Self <: PartialRecordtoprightbott](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordtoprightbott] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TypeofSessionCreateParamsAccountHolder {
     __obj.asInstanceOf[TypeofSessionCreateParamsAccountHolder]
   }
   
-  extension [Self <: TypeofSessionCreateParamsAccountHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSessionCreateParamsAccountHolder] (val x: Self) extends AnyVal {
     
     inline def setAccountHolder(value: Any): Self = StObject.set(x, "AccountHolder", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object AwsOpenSearchServiceDomainLogPublishingOptionsDetails {
     __obj.asInstanceOf[AwsOpenSearchServiceDomainLogPublishingOptionsDetails]
   }
   
-  extension [Self <: AwsOpenSearchServiceDomainLogPublishingOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsOpenSearchServiceDomainLogPublishingOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setAuditLogs(value: AwsOpenSearchServiceDomainLogPublishingOption): Self = StObject.set(x, "AuditLogs", value.asInstanceOf[js.Any])
     

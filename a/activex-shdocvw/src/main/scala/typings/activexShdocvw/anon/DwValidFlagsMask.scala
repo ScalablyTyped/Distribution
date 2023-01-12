@@ -17,7 +17,8 @@ object DwValidFlagsMask {
     __obj.asInstanceOf[DwValidFlagsMask]
   }
   
-  extension [Self <: DwValidFlagsMask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DwValidFlagsMask] (val x: Self) extends AnyVal {
     
     inline def setDwValidFlagsMask(value: Double): Self = StObject.set(x, "dwValidFlagsMask", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Input {
     __obj.asInstanceOf[Input]
   }
   
-  extension [Self <: Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
     
     inline def setInput(value: () => Unit): Self = StObject.set(x, "input", js.Any.fromFunction0(value))
     

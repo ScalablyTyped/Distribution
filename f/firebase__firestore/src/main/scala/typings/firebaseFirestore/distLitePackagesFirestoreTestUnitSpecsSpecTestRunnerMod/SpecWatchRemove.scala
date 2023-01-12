@@ -18,7 +18,8 @@ object SpecWatchRemove {
     __obj.asInstanceOf[SpecWatchRemove]
   }
   
-  extension [Self <: SpecWatchRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecWatchRemove] (val x: Self) extends AnyVal {
     
     inline def setCause(value: SpecError): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

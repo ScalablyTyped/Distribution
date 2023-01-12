@@ -28,7 +28,8 @@ object ListPlatformVersionsRequest {
     __obj.asInstanceOf[ListPlatformVersionsRequest]
   }
   
-  extension [Self <: ListPlatformVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPlatformVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: PlatformFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

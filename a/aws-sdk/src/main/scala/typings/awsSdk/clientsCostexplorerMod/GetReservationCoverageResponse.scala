@@ -28,7 +28,8 @@ object GetReservationCoverageResponse {
     __obj.asInstanceOf[GetReservationCoverageResponse]
   }
   
-  extension [Self <: GetReservationCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReservationCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setCoveragesByTime(value: CoveragesByTime): Self = StObject.set(x, "CoveragesByTime", value.asInstanceOf[js.Any])
     

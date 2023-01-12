@@ -38,7 +38,8 @@ object Input {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object Input {
         __obj.asInstanceOf[Pad]
       }
       
-      extension [Self <: Pad](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Pad] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -132,7 +134,8 @@ object Input {
       __obj.asInstanceOf[InputConfiguration]
     }
     
-    extension [Self <: InputConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAlphaTolerance(value: Double): Self = StObject.set(x, "alphaTolerance", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object Input {
       __obj.asInstanceOf[InputPluginContainer]
     }
     
-    extension [Self <: InputPluginContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputPluginContainer] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -345,7 +349,8 @@ object Input {
       __obj.asInstanceOf[InteractiveObject]
     }
     
-    extension [Self <: InteractiveObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractiveObject] (val x: Self) extends AnyVal {
       
       inline def setAlwaysEnabled(value: Boolean): Self = StObject.set(x, "alwaysEnabled", value.asInstanceOf[js.Any])
       
@@ -432,7 +437,8 @@ object Input {
         __obj.asInstanceOf[CursorKeys]
       }
       
-      extension [Self <: CursorKeys](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CursorKeys] (val x: Self) extends AnyVal {
         
         inline def setDown(value: Key): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
         
@@ -477,7 +483,8 @@ object Input {
         __obj.asInstanceOf[KeyComboConfig]
       }
       
-      extension [Self <: KeyComboConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KeyComboConfig] (val x: Self) extends AnyVal {
         
         inline def setDeleteOnMatch(value: Boolean): Self = StObject.set(x, "deleteOnMatch", value.asInstanceOf[js.Any])
         

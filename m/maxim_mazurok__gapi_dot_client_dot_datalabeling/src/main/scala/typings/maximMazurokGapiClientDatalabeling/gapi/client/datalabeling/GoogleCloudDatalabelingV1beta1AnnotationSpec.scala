@@ -26,7 +26,8 @@ object GoogleCloudDatalabelingV1beta1AnnotationSpec {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1AnnotationSpec]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1AnnotationSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1AnnotationSpec] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

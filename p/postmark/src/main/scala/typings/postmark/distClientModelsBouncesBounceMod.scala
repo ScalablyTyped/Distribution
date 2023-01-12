@@ -71,7 +71,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[Bounce]
     }
     
-    extension [Self <: Bounce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
       
       inline def setBouncedAt(value: String): Self = StObject.set(x, "BouncedAt", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[BounceActivationResponse]
     }
     
-    extension [Self <: BounceActivationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceActivationResponse] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Bounce): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[BounceDump]
     }
     
-    extension [Self <: BounceDump](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceDump] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     }
@@ -170,7 +173,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[BounceMetric]
     }
     
-    extension [Self <: BounceMetric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BounceMetric] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
       
@@ -195,7 +199,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[Bounces]
     }
     
-    extension [Self <: Bounces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounces] (val x: Self) extends AnyVal {
       
       inline def setBounces(value: js.Array[Bounce]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       
@@ -218,7 +223,8 @@ object distClientModelsBouncesBounceMod {
       __obj.asInstanceOf[DeliveryStatistics]
     }
     
-    extension [Self <: DeliveryStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeliveryStatistics] (val x: Self) extends AnyVal {
       
       inline def setBounces(value: js.Array[BounceMetric]): Self = StObject.set(x, "Bounces", value.asInstanceOf[js.Any])
       

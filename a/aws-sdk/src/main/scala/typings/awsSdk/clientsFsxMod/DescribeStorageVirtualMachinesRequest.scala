@@ -27,7 +27,8 @@ object DescribeStorageVirtualMachinesRequest {
     __obj.asInstanceOf[DescribeStorageVirtualMachinesRequest]
   }
   
-  extension [Self <: DescribeStorageVirtualMachinesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStorageVirtualMachinesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: StorageVirtualMachineFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object libPopoverPropsTypeMod {
       __obj.asInstanceOf[PopoverPropsType]
     }
     
-    extension [Self <: PopoverPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverPropsType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

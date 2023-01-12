@@ -20,7 +20,8 @@ object DevicePairingResult {
     __obj.asInstanceOf[DevicePairingResult]
   }
   
-  extension [Self <: DevicePairingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DevicePairingResult] (val x: Self) extends AnyVal {
     
     inline def setProtectionLevelUsed(value: DevicePairingProtectionLevel): Self = StObject.set(x, "protectionLevelUsed", value.asInstanceOf[js.Any])
     

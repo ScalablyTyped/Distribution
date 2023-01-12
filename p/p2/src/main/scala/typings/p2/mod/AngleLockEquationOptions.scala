@@ -17,7 +17,8 @@ object AngleLockEquationOptions {
     __obj.asInstanceOf[AngleLockEquationOptions]
   }
   
-  extension [Self <: AngleLockEquationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngleLockEquationOptions] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

@@ -129,7 +129,8 @@ object PartialStyleRulesPaperCla {
     __obj.asInstanceOf[PartialStyleRulesPaperCla]
   }
   
-  extension [Self <: PartialStyleRulesPaperCla](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesPaperCla] (val x: Self) extends AnyVal {
     
     inline def setElevation0(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

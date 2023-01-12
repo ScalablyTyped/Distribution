@@ -355,7 +355,8 @@ object DOMAttributes {
     __obj.asInstanceOf[DOMAttributes]
   }
   
-  extension [Self <: DOMAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMAttributes] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

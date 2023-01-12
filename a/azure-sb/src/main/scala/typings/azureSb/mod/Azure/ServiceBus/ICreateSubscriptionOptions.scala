@@ -29,7 +29,8 @@ object ICreateSubscriptionOptions {
     __obj.asInstanceOf[ICreateSubscriptionOptions]
   }
   
-  extension [Self <: ICreateSubscriptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICreateSubscriptionOptions] (val x: Self) extends AnyVal {
     
     inline def setDefaultMessageTimeToLive(value: String): Self = StObject.set(x, "DefaultMessageTimeToLive", value.asInstanceOf[js.Any])
     

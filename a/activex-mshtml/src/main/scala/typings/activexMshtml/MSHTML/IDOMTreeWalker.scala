@@ -55,7 +55,8 @@ object IDOMTreeWalker {
     __obj.asInstanceOf[IDOMTreeWalker]
   }
   
-  extension [Self <: IDOMTreeWalker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOMTreeWalker] (val x: Self) extends AnyVal {
     
     inline def setCurrentNode(value: Any): Self = StObject.set(x, "currentNode", value.asInstanceOf[js.Any])
     

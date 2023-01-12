@@ -48,7 +48,8 @@ object ExampleScenarioProcess {
     __obj.asInstanceOf[ExampleScenarioProcess]
   }
   
-  extension [Self <: ExampleScenarioProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExampleScenarioProcess] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

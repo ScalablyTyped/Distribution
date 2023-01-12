@@ -535,7 +535,8 @@ object ReadonlyICheckboxProps {
     __obj.asInstanceOf[ReadonlyICheckboxProps]
   }
   
-  extension [Self <: ReadonlyICheckboxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyICheckboxProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

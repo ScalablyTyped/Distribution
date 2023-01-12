@@ -28,7 +28,8 @@ object ServerGroupLaunchConfiguration {
     __obj.asInstanceOf[ServerGroupLaunchConfiguration]
   }
   
-  extension [Self <: ServerGroupLaunchConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupLaunchConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLaunchOrder(value: LaunchOrder): Self = StObject.set(x, "launchOrder", value.asInstanceOf[js.Any])
     

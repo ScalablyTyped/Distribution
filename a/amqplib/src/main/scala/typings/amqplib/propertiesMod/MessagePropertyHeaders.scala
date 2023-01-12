@@ -24,7 +24,8 @@ object MessagePropertyHeaders {
     __obj.asInstanceOf[MessagePropertyHeaders]
   }
   
-  extension [Self <: MessagePropertyHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagePropertyHeaders] (val x: Self) extends AnyVal {
     
     inline def `setX-death`(value: js.Array[XDeath]): Self = StObject.set(x, "x-death", value.asInstanceOf[js.Any])
     

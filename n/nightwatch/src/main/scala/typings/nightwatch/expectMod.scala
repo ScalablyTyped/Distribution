@@ -159,7 +159,8 @@ object expectMod {
       __obj.asInstanceOf[ExpectAssertions[T]]
     }
     
-    extension [Self <: ExpectAssertions[?], T](x: Self & ExpectAssertions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectAssertions[?], T] (val x: Self & ExpectAssertions[T]) extends AnyVal {
       
       inline def setAfter(value: Double => Awaitable[T, NightwatchExpectResult]): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
@@ -400,7 +401,8 @@ object expectMod {
       __obj.asInstanceOf[ExpectElements]
     }
     
-    extension [Self <: ExpectElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectElements] (val x: Self) extends AnyVal {
       
       inline def setCount(value: ExpectElements): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     }
@@ -481,7 +483,8 @@ object expectMod {
       __obj.asInstanceOf[ExpectLanguageChains[T]]
     }
     
-    extension [Self <: ExpectLanguageChains[?], T](x: Self & ExpectLanguageChains[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpectLanguageChains[?], T] (val x: Self & ExpectLanguageChains[T]) extends AnyVal {
       
       inline def setAnd(value: T): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
@@ -654,7 +657,8 @@ object expectMod {
       __obj.asInstanceOf[NightwatchExpectResult]
     }
     
-    extension [Self <: NightwatchExpectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NightwatchExpectResult] (val x: Self) extends AnyVal {
       
       inline def setReturned(value: `1`): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
       

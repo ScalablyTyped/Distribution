@@ -38,7 +38,8 @@ object StepOptionsMap {
     __obj.asInstanceOf[StepOptionsMap]
   }
   
-  extension [Self <: StepOptionsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionsMap] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: StepOptionAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object RegisterContainerImageRequest {
     __obj.asInstanceOf[RegisterContainerImageRequest]
   }
   
-  extension [Self <: RegisterContainerImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterContainerImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

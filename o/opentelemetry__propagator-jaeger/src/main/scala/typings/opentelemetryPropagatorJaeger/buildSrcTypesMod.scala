@@ -19,7 +19,8 @@ object buildSrcTypesMod {
       __obj.asInstanceOf[JaegerPropagatorConfig]
     }
     
-    extension [Self <: JaegerPropagatorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JaegerPropagatorConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomBaggageHeaderPrefix(value: String): Self = StObject.set(x, "customBaggageHeaderPrefix", value.asInstanceOf[js.Any])
       

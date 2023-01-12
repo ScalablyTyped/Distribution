@@ -16,7 +16,8 @@ object DuplicateSheetResponse {
     __obj.asInstanceOf[DuplicateSheetResponse]
   }
   
-  extension [Self <: DuplicateSheetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateSheetResponse] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: SheetProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

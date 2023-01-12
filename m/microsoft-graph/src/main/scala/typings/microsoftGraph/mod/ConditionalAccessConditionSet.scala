@@ -54,7 +54,8 @@ object ConditionalAccessConditionSet {
     __obj.asInstanceOf[ConditionalAccessConditionSet]
   }
   
-  extension [Self <: ConditionalAccessConditionSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessConditionSet] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: NullableOption[ConditionalAccessApplications]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

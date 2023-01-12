@@ -19,7 +19,8 @@ object DataSourceColumn {
     __obj.asInstanceOf[DataSourceColumn]
   }
   
-  extension [Self <: DataSourceColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceColumn] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     

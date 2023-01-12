@@ -20,7 +20,8 @@ object ParkMessageDesc {
     __obj.asInstanceOf[ParkMessageDesc]
   }
   
-  extension [Self <: ParkMessageDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParkMessageDesc] (val x: Self) extends AnyVal {
     
     inline def setSubject(value: Double): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object XpackUsageWatcherWatchTriggerSchedule {
     __obj.asInstanceOf[XpackUsageWatcherWatchTriggerSchedule]
   }
   
-  extension [Self <: XpackUsageWatcherWatchTriggerSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageWatcherWatchTriggerSchedule] (val x: Self) extends AnyVal {
     
     inline def setCron(value: XpackUsageCounter): Self = StObject.set(x, "cron", value.asInstanceOf[js.Any])
     

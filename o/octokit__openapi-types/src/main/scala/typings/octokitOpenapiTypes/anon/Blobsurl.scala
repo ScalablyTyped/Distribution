@@ -338,7 +338,8 @@ object Blobsurl {
     __obj.asInstanceOf[Blobsurl]
   }
   
-  extension [Self <: Blobsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blobsurl] (val x: Self) extends AnyVal {
     
     inline def setAllow_forking(value: Boolean): Self = StObject.set(x, "allow_forking", value.asInstanceOf[js.Any])
     

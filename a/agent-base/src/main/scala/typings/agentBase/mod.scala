@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object mod {
       __obj.asInstanceOf[AgentRequestOptions]
     }
     
-    extension [Self <: AgentRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -233,7 +235,8 @@ object mod {
       __obj.asInstanceOf[HttpRequestOptions]
     }
     
-    extension [Self <: HttpRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: typings.node.httpMod.Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -434,7 +437,8 @@ object mod {
       __obj.asInstanceOf[HttpsRequestOptions]
     }
     
-    extension [Self <: HttpsRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: typings.node.httpMod.Agent | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

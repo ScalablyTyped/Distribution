@@ -20,7 +20,8 @@ object TitleOptions {
     __obj.asInstanceOf[TitleOptions]
   }
   
-  extension [Self <: TitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleOptions] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: Culture): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object KubernetesApiCallAction {
     __obj.asInstanceOf[KubernetesApiCallAction]
   }
   
-  extension [Self <: KubernetesApiCallAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesApiCallAction] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: String): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

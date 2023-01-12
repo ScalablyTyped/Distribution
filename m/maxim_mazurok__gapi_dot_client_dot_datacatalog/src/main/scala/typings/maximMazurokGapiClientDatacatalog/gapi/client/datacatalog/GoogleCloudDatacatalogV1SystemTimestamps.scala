@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1SystemTimestamps {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1SystemTimestamps]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1SystemTimestamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1SystemTimestamps] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

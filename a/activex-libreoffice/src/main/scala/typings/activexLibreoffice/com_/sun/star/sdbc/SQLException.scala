@@ -36,7 +36,8 @@ object SQLException {
     __obj.asInstanceOf[SQLException]
   }
   
-  extension [Self <: SQLException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SQLException] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

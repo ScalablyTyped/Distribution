@@ -55,7 +55,8 @@ object CreativeAssetMetadata {
     __obj.asInstanceOf[CreativeAssetMetadata]
   }
   
-  extension [Self <: CreativeAssetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeAssetMetadata] (val x: Self) extends AnyVal {
     
     inline def setAssetIdentifier(value: CreativeAssetId): Self = StObject.set(x, "assetIdentifier", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[ITestGroup]
     }
     
-    extension [Self <: ITestGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITestGroup] (val x: Self) extends AnyVal {
       
       inline def setSetUp(value: /* callback */ ICallbackFunction => Unit): Self = StObject.set(x, "setUp", js.Any.fromFunction1(value))
       

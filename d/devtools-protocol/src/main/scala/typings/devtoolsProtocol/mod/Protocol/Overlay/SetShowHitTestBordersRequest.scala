@@ -18,7 +18,8 @@ object SetShowHitTestBordersRequest {
     __obj.asInstanceOf[SetShowHitTestBordersRequest]
   }
   
-  extension [Self <: SetShowHitTestBordersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowHitTestBordersRequest] (val x: Self) extends AnyVal {
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }

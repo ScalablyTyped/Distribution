@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOnTick(value: js.ThisFunction1[/* this */ Spinner, /* msg */ String, Unit]): Self = StObject.set(x, "onTick", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object CopySnapshotRequest {
     __obj.asInstanceOf[CopySnapshotRequest]
   }
   
-  extension [Self <: CopySnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopySnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

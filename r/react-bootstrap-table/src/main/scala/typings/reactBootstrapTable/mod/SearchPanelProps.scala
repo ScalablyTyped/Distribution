@@ -51,7 +51,8 @@ object SearchPanelProps {
     __obj.asInstanceOf[SearchPanelProps]
   }
   
-  extension [Self <: SearchPanelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPanelProps] (val x: Self) extends AnyVal {
     
     inline def setClearBtn(value: ReactElement): Self = StObject.set(x, "clearBtn", value.asInstanceOf[js.Any])
     

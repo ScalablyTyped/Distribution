@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1UsageStats {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1UsageStats]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1UsageStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1UsageStats] (val x: Self) extends AnyVal {
     
     inline def setTotalCancellations(value: Double): Self = StObject.set(x, "totalCancellations", value.asInstanceOf[js.Any])
     

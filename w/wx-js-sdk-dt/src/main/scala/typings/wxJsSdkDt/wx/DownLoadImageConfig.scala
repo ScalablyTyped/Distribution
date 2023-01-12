@@ -29,7 +29,8 @@ object DownLoadImageConfig {
     __obj.asInstanceOf[DownLoadImageConfig]
   }
   
-  extension [Self <: DownLoadImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownLoadImageConfig] (val x: Self) extends AnyVal {
     
     inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     

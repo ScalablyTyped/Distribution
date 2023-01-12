@@ -63,7 +63,8 @@ object anon {
       __obj.asInstanceOf[A1]
     }
     
-    extension [Self <: A1](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: A1] (val x: Self) extends AnyVal {
       
       inline def setA1(value: Double): Self = StObject.set(x, "a1", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object anon {
       __obj.asInstanceOf[ControlPoint]
     }
     
-    extension [Self <: ControlPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlPoint] (val x: Self) extends AnyVal {
       
       inline def setControlPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object anon {
       __obj.asInstanceOf[CreateCanvas]
     }
     
-    extension [Self <: CreateCanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCanvas] (val x: Self) extends AnyVal {
       
       inline def setCreateCanvas(value: (Double, Double) => OffscreenCanvas): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
       
@@ -195,7 +198,8 @@ object anon {
       __obj.asInstanceOf[CreateImage]
     }
     
-    extension [Self <: CreateImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateImage] (val x: Self) extends AnyVal {
       
       inline def setCreateCanvas(value: (Double, Double) => Any): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
       
@@ -226,7 +230,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object anon {
       __obj.asInstanceOf[CurrentPoint]
     }
     
-    extension [Self <: CurrentPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentPoint] (val x: Self) extends AnyVal {
       
       inline def setControlPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
       
@@ -287,7 +293,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -310,7 +317,8 @@ object anon {
       __obj.asInstanceOf[P0]
     }
     
-    extension [Self <: P0](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P0] (val x: Self) extends AnyVal {
       
       inline def setP0(value: ICachedPoint): Self = StObject.set(x, "p0", value.asInstanceOf[js.Any])
       
@@ -336,7 +344,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordArabicFormGl]
     }
     
-    extension [Self <: PartialRecordArabicFormGl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordArabicFormGl] (val x: Self) extends AnyVal {
       
       inline def setInitial(value: GlyphElement): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
@@ -367,7 +376,8 @@ object anon {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setPoint(value: typings.canvg.distPointMod.Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     }

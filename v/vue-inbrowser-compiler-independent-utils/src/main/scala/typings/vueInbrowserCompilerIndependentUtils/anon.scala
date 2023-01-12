@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Func]
     }
     
-    extension [Self <: Func](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Func] (val x: Self) extends AnyVal {
       
       inline def setFunc(value: Boolean): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setFunc(value: Boolean): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
       

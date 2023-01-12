@@ -16,7 +16,8 @@ object DatePropertyOptions {
     __obj.asInstanceOf[DatePropertyOptions]
   }
   
-  extension [Self <: DatePropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorOptions(value: DateOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object FilteredBidCreativeRow {
     __obj.asInstanceOf[FilteredBidCreativeRow]
   }
   
-  extension [Self <: FilteredBidCreativeRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteredBidCreativeRow] (val x: Self) extends AnyVal {
     
     inline def setBidCount(value: MetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ASPxClientStandardDeviation {
     __obj.asInstanceOf[ASPxClientStandardDeviation]
   }
   
-  extension [Self <: ASPxClientStandardDeviation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientStandardDeviation] (val x: Self) extends AnyVal {
     
     inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     

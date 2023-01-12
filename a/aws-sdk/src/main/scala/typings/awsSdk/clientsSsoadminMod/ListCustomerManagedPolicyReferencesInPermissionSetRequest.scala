@@ -33,7 +33,8 @@ object ListCustomerManagedPolicyReferencesInPermissionSetRequest {
     __obj.asInstanceOf[ListCustomerManagedPolicyReferencesInPermissionSetRequest]
   }
   
-  extension [Self <: ListCustomerManagedPolicyReferencesInPermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomerManagedPolicyReferencesInPermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

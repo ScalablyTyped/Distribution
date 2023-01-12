@@ -29,7 +29,8 @@ object EntitiesOptions {
     __obj.asInstanceOf[EntitiesOptions]
   }
   
-  extension [Self <: EntitiesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntitiesOptions] (val x: Self) extends AnyVal {
     
     inline def setEmotion(value: Boolean): Self = StObject.set(x, "emotion", value.asInstanceOf[js.Any])
     

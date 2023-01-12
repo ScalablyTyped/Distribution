@@ -256,7 +256,8 @@ object CellRange {
     __obj.asInstanceOf[CellRange]
   }
   
-  extension [Self <: CellRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellRange] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

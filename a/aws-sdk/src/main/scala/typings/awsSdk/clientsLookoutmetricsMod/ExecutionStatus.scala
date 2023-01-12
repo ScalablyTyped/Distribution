@@ -28,7 +28,8 @@ object ExecutionStatus {
     __obj.asInstanceOf[ExecutionStatus]
   }
   
-  extension [Self <: ExecutionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStatus] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: AnomalyDetectionTaskStatusMessage): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PutJobFailureResultInput {
     __obj.asInstanceOf[PutJobFailureResultInput]
   }
   
-  extension [Self <: PutJobFailureResultInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutJobFailureResultInput] (val x: Self) extends AnyVal {
     
     inline def setFailureDetails(value: FailureDetails): Self = StObject.set(x, "failureDetails", value.asInstanceOf[js.Any])
     

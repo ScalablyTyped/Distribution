@@ -75,7 +75,8 @@ object distClientModelsMessagesInboundMessageMod {
       __obj.asInstanceOf[InboundMessage]
     }
     
-    extension [Self <: InboundMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundMessage] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object distClientModelsMessagesInboundMessageMod {
       __obj.asInstanceOf[InboundMessageDetails]
     }
     
-    extension [Self <: InboundMessageDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundMessageDetails] (val x: Self) extends AnyVal {
       
       inline def setBlockedReason(value: String): Self = StObject.set(x, "BlockedReason", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object distClientModelsMessagesInboundMessageMod {
       __obj.asInstanceOf[InboundMessages]
     }
     
-    extension [Self <: InboundMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundMessages] (val x: Self) extends AnyVal {
       
       inline def setInboundMessages(value: js.Array[InboundMessage]): Self = StObject.set(x, "InboundMessages", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object distClientModelsMessagesInboundMessageMod {
       __obj.asInstanceOf[InboundRecipient]
     }
     
-    extension [Self <: InboundRecipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundRecipient] (val x: Self) extends AnyVal {
       
       inline def setMailboxHash(value: String): Self = StObject.set(x, "MailboxHash", value.asInstanceOf[js.Any])
     }

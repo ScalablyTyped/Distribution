@@ -19,7 +19,8 @@ object SdfConfig {
     __obj.asInstanceOf[SdfConfig]
   }
   
-  extension [Self <: SdfConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SdfConfig] (val x: Self) extends AnyVal {
     
     inline def setAdminEmail(value: String): Self = StObject.set(x, "adminEmail", value.asInstanceOf[js.Any])
     

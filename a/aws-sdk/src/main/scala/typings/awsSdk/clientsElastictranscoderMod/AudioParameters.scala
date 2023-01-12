@@ -43,7 +43,8 @@ object AudioParameters {
     __obj.asInstanceOf[AudioParameters]
   }
   
-  extension [Self <: AudioParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioParameters] (val x: Self) extends AnyVal {
     
     inline def setAudioPackingMode(value: AudioPackingMode): Self = StObject.set(x, "AudioPackingMode", value.asInstanceOf[js.Any])
     

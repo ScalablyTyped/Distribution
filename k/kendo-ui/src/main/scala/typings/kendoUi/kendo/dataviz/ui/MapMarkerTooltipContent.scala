@@ -15,7 +15,8 @@ object MapMarkerTooltipContent {
     __obj.asInstanceOf[MapMarkerTooltipContent]
   }
   
-  extension [Self <: MapMarkerTooltipContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapMarkerTooltipContent] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

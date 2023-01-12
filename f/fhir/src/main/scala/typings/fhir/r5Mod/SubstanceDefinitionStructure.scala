@@ -59,7 +59,8 @@ object SubstanceDefinitionStructure {
     __obj.asInstanceOf[SubstanceDefinitionStructure]
   }
   
-  extension [Self <: SubstanceDefinitionStructure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionStructure] (val x: Self) extends AnyVal {
     
     inline def setMolecularFormula(value: String): Self = StObject.set(x, "molecularFormula", value.asInstanceOf[js.Any])
     

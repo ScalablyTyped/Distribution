@@ -19,7 +19,8 @@ object Acceptstlschannelid {
     __obj.asInstanceOf[Acceptstlschannelid]
   }
   
-  extension [Self <: Acceptstlschannelid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acceptstlschannelid] (val x: Self) extends AnyVal {
     
     inline def setAccepts_tls_channel_id(value: Boolean): Self = StObject.set(x, "accepts_tls_channel_id", value.asInstanceOf[js.Any])
     

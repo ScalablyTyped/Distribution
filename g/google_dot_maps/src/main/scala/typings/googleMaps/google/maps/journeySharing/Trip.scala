@@ -92,7 +92,8 @@ object Trip {
     __obj.asInstanceOf[Trip]
   }
   
-  extension [Self <: Trip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trip] (val x: Self) extends AnyVal {
     
     inline def setActualDropOffLocation(value: LatLngLiteral): Self = StObject.set(x, "actualDropOffLocation", value.asInstanceOf[js.Any])
     

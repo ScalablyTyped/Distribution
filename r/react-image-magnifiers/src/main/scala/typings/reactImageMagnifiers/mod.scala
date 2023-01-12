@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object mod {
       __obj.asInstanceOf[GlassMagnifierProps]
     }
     
-    extension [Self <: GlassMagnifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlassMagnifierProps] (val x: Self) extends AnyVal {
       
       inline def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[MagnifierContainerProps]
     }
     
-    extension [Self <: MagnifierContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagnifierContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoInPlace(value: Boolean): Self = StObject.set(x, "autoInPlace", value.asInstanceOf[js.Any])
       
@@ -312,7 +315,8 @@ object mod {
       __obj.asInstanceOf[MagnifierPreviewProps]
     }
     
-    extension [Self <: MagnifierPreviewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagnifierPreviewProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -407,7 +411,8 @@ object mod {
       __obj.asInstanceOf[MagnifierProps]
     }
     
-    extension [Self <: MagnifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagnifierProps] (val x: Self) extends AnyVal {
       
       inline def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
       
@@ -452,7 +457,8 @@ object mod {
       __obj.asInstanceOf[MagnifierZoomProps]
     }
     
-    extension [Self <: MagnifierZoomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagnifierZoomProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -527,7 +533,8 @@ object mod {
       __obj.asInstanceOf[PictureInPictureMagnifierProps]
     }
     
-    extension [Self <: PictureInPictureMagnifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PictureInPictureMagnifierProps] (val x: Self) extends AnyVal {
       
       inline def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
       
@@ -632,7 +639,8 @@ object mod {
       __obj.asInstanceOf[SideBySideMagnifierProps]
     }
     
-    extension [Self <: SideBySideMagnifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideBySideMagnifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysInPlace(value: Boolean): Self = StObject.set(x, "alwaysInPlace", value.asInstanceOf[js.Any])
       

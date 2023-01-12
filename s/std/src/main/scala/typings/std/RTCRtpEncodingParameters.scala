@@ -33,7 +33,8 @@ object RTCRtpEncodingParameters {
     __obj.asInstanceOf[RTCRtpEncodingParameters]
   }
   
-  extension [Self <: RTCRtpEncodingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpEncodingParameters] (val x: Self) extends AnyVal {
     
     inline def setActive(value: scala.Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

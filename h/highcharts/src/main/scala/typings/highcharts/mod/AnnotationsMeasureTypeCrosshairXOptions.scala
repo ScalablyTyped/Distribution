@@ -35,7 +35,8 @@ object AnnotationsMeasureTypeCrosshairXOptions {
     __obj.asInstanceOf[AnnotationsMeasureTypeCrosshairXOptions]
   }
   
-  extension [Self <: AnnotationsMeasureTypeCrosshairXOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsMeasureTypeCrosshairXOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

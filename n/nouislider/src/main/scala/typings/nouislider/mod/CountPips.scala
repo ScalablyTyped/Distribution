@@ -24,7 +24,8 @@ object CountPips {
     __obj.asInstanceOf[CountPips]
   }
   
-  extension [Self <: CountPips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountPips] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Count): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

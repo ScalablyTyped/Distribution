@@ -20,7 +20,8 @@ object TypeofSplitView {
     __obj.asInstanceOf[TypeofSplitView]
   }
   
-  extension [Self <: TypeofSplitView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSplitView] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => SplitView): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

@@ -30,7 +30,8 @@ object ReadMemoryResponse {
     __obj.asInstanceOf[ReadMemoryResponse]
   }
   
-  extension [Self <: ReadMemoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadMemoryResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Address): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

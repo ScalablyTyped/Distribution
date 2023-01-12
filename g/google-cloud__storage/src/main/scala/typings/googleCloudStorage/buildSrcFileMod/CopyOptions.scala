@@ -35,7 +35,8 @@ object CopyOptions {
     __obj.asInstanceOf[CopyOptions]
   }
   
-  extension [Self <: CopyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: String): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
     

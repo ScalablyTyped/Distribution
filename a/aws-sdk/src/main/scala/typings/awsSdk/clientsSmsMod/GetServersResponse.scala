@@ -33,7 +33,8 @@ object GetServersResponse {
     __obj.asInstanceOf[GetServersResponse]
   }
   
-  extension [Self <: GetServersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServersResponse] (val x: Self) extends AnyVal {
     
     inline def setLastModifiedOn(value: js.Date): Self = StObject.set(x, "lastModifiedOn", value.asInstanceOf[js.Any])
     

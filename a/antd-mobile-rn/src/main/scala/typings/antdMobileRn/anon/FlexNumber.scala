@@ -15,7 +15,8 @@ object FlexNumber {
     __obj.asInstanceOf[FlexNumber]
   }
   
-  extension [Self <: FlexNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexNumber] (val x: Self) extends AnyVal {
     
     inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
   }

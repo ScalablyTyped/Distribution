@@ -90,7 +90,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AVIMetadata]
     }
     
-    extension [Self <: AVIMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AVIMetadata] (val x: Self) extends AnyVal {
       
       inline def setIARL(value: String): Self = StObject.set(x, "IARL", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FLVMetadata]
     }
     
-    extension [Self <: FLVMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FLVMetadata] (val x: Self) extends AnyVal {
       
       inline def setAudiocodecid(value: String): Self = StObject.set(x, "audiocodecid", value.asInstanceOf[js.Any])
       
@@ -325,7 +328,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FrameToJPGSettings]
     }
     
-    extension [Self <: FrameToJPGSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameToJPGSettings] (val x: Self) extends AnyVal {
       
       inline def setDuration_time(value: String | Double): Self = StObject.set(x, "duration_time", value.asInstanceOf[js.Any])
       
@@ -431,7 +435,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StandardVideoMetadata]
     }
     
-    extension [Self <: StandardVideoMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardVideoMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       
@@ -813,7 +818,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WMVMetadata]
     }
     
-    extension [Self <: WMVMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WMVMetadata] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -857,7 +863,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WatermarkSettings]
     }
     
-    extension [Self <: WatermarkSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatermarkSettings] (val x: Self) extends AnyVal {
       
       inline def setMargin_east(value: Double): Self = StObject.set(x, "margin_east", value.asInstanceOf[js.Any])
       

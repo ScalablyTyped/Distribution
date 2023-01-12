@@ -23,7 +23,8 @@ object HttpInterceptor {
     __obj.asInstanceOf[HttpInterceptor]
   }
   
-  extension [Self <: HttpInterceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpInterceptor] (val x: Self) extends AnyVal {
     
     inline def setIntercept(value: (HttpRequest[Any], HttpHandler) => Observable_[HttpEvent[Any]]): Self = StObject.set(x, "intercept", js.Any.fromFunction2(value))
   }

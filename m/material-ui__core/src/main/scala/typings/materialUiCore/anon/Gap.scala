@@ -48,7 +48,8 @@ object Gap {
     __obj.asInstanceOf[Gap]
   }
   
-  extension [Self <: Gap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gap] (val x: Self) extends AnyVal {
     
     inline def setCellHeight(value: Double | auto): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
     

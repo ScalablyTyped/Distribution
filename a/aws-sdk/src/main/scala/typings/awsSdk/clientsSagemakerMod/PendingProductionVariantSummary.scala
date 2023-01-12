@@ -68,7 +68,8 @@ object PendingProductionVariantSummary {
     __obj.asInstanceOf[PendingProductionVariantSummary]
   }
   
-  extension [Self <: PendingProductionVariantSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingProductionVariantSummary] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorType(value: ProductionVariantAcceleratorType): Self = StObject.set(x, "AcceleratorType", value.asInstanceOf[js.Any])
     

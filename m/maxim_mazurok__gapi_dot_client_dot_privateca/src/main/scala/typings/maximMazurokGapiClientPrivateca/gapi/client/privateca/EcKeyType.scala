@@ -16,7 +16,8 @@ object EcKeyType {
     __obj.asInstanceOf[EcKeyType]
   }
   
-  extension [Self <: EcKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcKeyType] (val x: Self) extends AnyVal {
     
     inline def setSignatureAlgorithm(value: String): Self = StObject.set(x, "signatureAlgorithm", value.asInstanceOf[js.Any])
     

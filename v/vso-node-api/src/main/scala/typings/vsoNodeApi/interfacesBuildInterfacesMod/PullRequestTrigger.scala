@@ -19,7 +19,8 @@ object PullRequestTrigger {
     __obj.asInstanceOf[PullRequestTrigger]
   }
   
-  extension [Self <: PullRequestTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequestTrigger] (val x: Self) extends AnyVal {
     
     inline def setBranchFilters(value: js.Array[String]): Self = StObject.set(x, "branchFilters", value.asInstanceOf[js.Any])
     

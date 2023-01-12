@@ -17,7 +17,8 @@ object PullDownOption {
     __obj.asInstanceOf[PullDownOption]
   }
   
-  extension [Self <: PullDownOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullDownOption] (val x: Self) extends AnyVal {
     
     inline def setStop(value: Double): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     

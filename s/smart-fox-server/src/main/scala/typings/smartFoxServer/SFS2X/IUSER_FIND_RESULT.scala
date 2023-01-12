@@ -16,7 +16,8 @@ object IUSER_FIND_RESULT {
     __obj.asInstanceOf[IUSER_FIND_RESULT]
   }
   
-  extension [Self <: IUSER_FIND_RESULT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUSER_FIND_RESULT] (val x: Self) extends AnyVal {
     
     inline def setUsers(value: js.Array[SFSUser]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     

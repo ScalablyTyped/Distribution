@@ -49,7 +49,8 @@ object listenToCollectionOptions {
     __obj.asInstanceOf[listenToCollectionOptions]
   }
   
-  extension [Self <: listenToCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: listenToCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object WantListItem {
     __obj.asInstanceOf[WantListItem]
   }
   
-  extension [Self <: WantListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WantListItem] (val x: Self) extends AnyVal {
     
     inline def setSlash(value: String): Self = StObject.set(x, "/", value.asInstanceOf[js.Any])
   }

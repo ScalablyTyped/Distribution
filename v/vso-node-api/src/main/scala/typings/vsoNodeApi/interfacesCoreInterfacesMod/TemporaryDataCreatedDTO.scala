@@ -28,7 +28,8 @@ object TemporaryDataCreatedDTO {
     __obj.asInstanceOf[TemporaryDataCreatedDTO]
   }
   
-  extension [Self <: TemporaryDataCreatedDTO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporaryDataCreatedDTO] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
     

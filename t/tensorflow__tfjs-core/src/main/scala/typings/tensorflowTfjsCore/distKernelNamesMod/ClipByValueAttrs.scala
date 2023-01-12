@@ -17,7 +17,8 @@ object ClipByValueAttrs {
     __obj.asInstanceOf[ClipByValueAttrs]
   }
   
-  extension [Self <: ClipByValueAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClipByValueAttrs] (val x: Self) extends AnyVal {
     
     inline def setClipValueMax(value: Double): Self = StObject.set(x, "clipValueMax", value.asInstanceOf[js.Any])
     

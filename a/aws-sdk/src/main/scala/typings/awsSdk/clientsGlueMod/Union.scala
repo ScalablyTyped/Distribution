@@ -28,7 +28,8 @@ object Union {
     __obj.asInstanceOf[Union]
   }
   
-  extension [Self <: Union](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Union] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: TwoInputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

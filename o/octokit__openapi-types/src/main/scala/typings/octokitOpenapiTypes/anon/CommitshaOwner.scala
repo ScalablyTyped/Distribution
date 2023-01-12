@@ -22,7 +22,8 @@ object CommitshaOwner {
     __obj.asInstanceOf[CommitshaOwner]
   }
   
-  extension [Self <: CommitshaOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitshaOwner] (val x: Self) extends AnyVal {
     
     inline def setCommit_sha(value: String): Self = StObject.set(x, "commit_sha", value.asInstanceOf[js.Any])
     

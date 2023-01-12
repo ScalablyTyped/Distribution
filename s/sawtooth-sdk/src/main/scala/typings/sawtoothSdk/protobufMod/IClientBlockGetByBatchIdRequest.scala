@@ -16,7 +16,8 @@ object IClientBlockGetByBatchIdRequest {
     __obj.asInstanceOf[IClientBlockGetByBatchIdRequest]
   }
   
-  extension [Self <: IClientBlockGetByBatchIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBlockGetByBatchIdRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

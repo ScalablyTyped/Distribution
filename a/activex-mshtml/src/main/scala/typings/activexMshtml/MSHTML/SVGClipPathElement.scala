@@ -79,7 +79,8 @@ object SVGClipPathElement {
     __obj.asInstanceOf[SVGClipPathElement]
   }
   
-  extension [Self <: SVGClipPathElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGClipPathElement] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: SVGAnimatedString): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

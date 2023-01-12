@@ -17,7 +17,8 @@ object SignerRole {
     __obj.asInstanceOf[SignerRole]
   }
   
-  extension [Self <: SignerRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignerRole] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object RouteLocationNormalizedLoaded {
     __obj.asInstanceOf[RouteLocationNormalizedLoaded]
   }
   
-  extension [Self <: RouteLocationNormalizedLoaded](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLocationNormalizedLoaded] (val x: Self) extends AnyVal {
     
     inline def setMatched(value: js.Array[RouteLocationMatched]): Self = StObject.set(x, "matched", value.asInstanceOf[js.Any])
     

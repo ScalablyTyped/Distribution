@@ -23,7 +23,8 @@ object DescribeRiskConfigurationRequest {
     __obj.asInstanceOf[DescribeRiskConfigurationRequest]
   }
   
-  extension [Self <: DescribeRiskConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRiskConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: ClientIdType): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     

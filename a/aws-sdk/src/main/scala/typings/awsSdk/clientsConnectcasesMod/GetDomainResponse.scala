@@ -49,7 +49,8 @@ object GetDomainResponse {
     __obj.asInstanceOf[GetDomainResponse]
   }
   
-  extension [Self <: GetDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     

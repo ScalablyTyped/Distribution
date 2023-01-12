@@ -22,7 +22,8 @@ object IBlock {
     __obj.asInstanceOf[IBlock]
   }
   
-  extension [Self <: IBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBlock] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: js.Array[IBatch]): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object BoostDebugOptions {
     __obj.asInstanceOf[BoostDebugOptions]
   }
   
-  extension [Self <: BoostDebugOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoostDebugOptions] (val x: Self) extends AnyVal {
     
     inline def setShowSkipSummary(value: Boolean): Self = StObject.set(x, "showSkipSummary", value.asInstanceOf[js.Any])
     

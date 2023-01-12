@@ -57,7 +57,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[ILocatable]
     }
     
-    extension [Self <: ILocatable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocatable] (val x: Self) extends AnyVal {
       
       inline def set$vscodeTextmateLocation(value: ILocation): Self = StObject.set(x, "$vscodeTextmateLocation", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[ILocation]
     }
     
-    extension [Self <: ILocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILocation] (val x: Self) extends AnyVal {
       
       inline def setChar(value: Double): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IOnigCaptureIndex]
     }
     
-    extension [Self <: IOnigCaptureIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnigCaptureIndex] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IOnigLib]
     }
     
-    extension [Self <: IOnigLib](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnigLib] (val x: Self) extends AnyVal {
       
       inline def setCreateOnigScanner(value: js.Array[String] => OnigScanner): Self = StObject.set(x, "createOnigScanner", js.Any.fromFunction1(value))
       
@@ -149,7 +153,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IOnigMatch]
     }
     
-    extension [Self <: IOnigMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOnigMatch] (val x: Self) extends AnyVal {
       
       inline def setCaptureIndices(value: js.Array[IOnigCaptureIndex]): Self = StObject.set(x, "captureIndices", value.asInstanceOf[js.Any])
       
@@ -200,7 +205,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IRawGrammar]
     }
     
-    extension [Self <: IRawGrammar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawGrammar] (val x: Self) extends AnyVal {
       
       inline def setFileTypes(value: js.Array[String]): Self = StObject.set(x, "fileTypes", value.asInstanceOf[js.Any])
       
@@ -263,7 +269,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IRawRepositoryMap]
     }
     
-    extension [Self <: IRawRepositoryMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawRepositoryMap] (val x: Self) extends AnyVal {
       
       inline def set$base(value: IRawRule): Self = StObject.set(x, "$base", value.asInstanceOf[js.Any])
       
@@ -312,7 +319,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[IRawRule]
     }
     
-    extension [Self <: IRawRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawRule] (val x: Self) extends AnyVal {
       
       inline def setApplyEndPatternLast(value: Boolean): Self = StObject.set(x, "applyEndPatternLast", value.asInstanceOf[js.Any])
       
@@ -400,7 +408,8 @@ object releaseTypesMod {
       __obj.asInstanceOf[OnigString]
     }
     
-    extension [Self <: OnigString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnigString] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

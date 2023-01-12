@@ -69,7 +69,8 @@ object FirestoreSettings {
     __obj.asInstanceOf[FirestoreSettings]
   }
   
-  extension [Self <: FirestoreSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirestoreSettings] (val x: Self) extends AnyVal {
     
     inline def setCacheSizeBytes(value: Double): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
     

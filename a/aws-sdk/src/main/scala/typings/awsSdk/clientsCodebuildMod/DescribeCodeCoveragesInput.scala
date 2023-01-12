@@ -48,7 +48,8 @@ object DescribeCodeCoveragesInput {
     __obj.asInstanceOf[DescribeCodeCoveragesInput]
   }
   
-  extension [Self <: DescribeCodeCoveragesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCodeCoveragesInput] (val x: Self) extends AnyVal {
     
     inline def setMaxLineCoveragePercentage(value: Percentage): Self = StObject.set(x, "maxLineCoveragePercentage", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object googleProtobufCompilerPluginPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setCompilerVersion(value: typings.googleProtobuf.googleProtobufCompilerPluginPbMod.Version.AsObject): Self = StObject.set(x, "compilerVersion", value.asInstanceOf[js.Any])
         
@@ -259,7 +260,8 @@ object googleProtobufCompilerPluginPbMod {
           __obj.asInstanceOf[typings.googleProtobuf.googleProtobufCompilerPluginPbMod.CodeGeneratorResponse.File.AsObject]
         }
         
-        extension [Self <: typings.googleProtobuf.googleProtobufCompilerPluginPbMod.CodeGeneratorResponse.File.AsObject](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.googleProtobuf.googleProtobufCompilerPluginPbMod.CodeGeneratorResponse.File.AsObject] (val x: Self) extends AnyVal {
           
           inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
           
@@ -316,7 +318,8 @@ object googleProtobufCompilerPluginPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -418,7 +421,8 @@ object googleProtobufCompilerPluginPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
         

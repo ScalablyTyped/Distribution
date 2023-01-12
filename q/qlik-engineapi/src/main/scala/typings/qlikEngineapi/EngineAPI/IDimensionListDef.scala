@@ -27,7 +27,8 @@ object IDimensionListDef {
     __obj.asInstanceOf[IDimensionListDef]
   }
   
-  extension [Self <: IDimensionListDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDimensionListDef] (val x: Self) extends AnyVal {
     
     inline def setQData(value: Any): Self = StObject.set(x, "qData", value.asInstanceOf[js.Any])
     

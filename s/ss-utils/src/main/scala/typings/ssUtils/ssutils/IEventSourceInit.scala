@@ -15,7 +15,8 @@ object IEventSourceInit {
     __obj.asInstanceOf[IEventSourceInit]
   }
   
-  extension [Self <: IEventSourceInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventSourceInit] (val x: Self) extends AnyVal {
     
     inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     

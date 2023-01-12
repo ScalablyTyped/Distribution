@@ -54,7 +54,8 @@ object OnlineComponentProvider {
     __obj.asInstanceOf[OnlineComponentProvider]
   }
   
-  extension [Self <: OnlineComponentProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlineComponentProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateDatastore(value: ComponentConfiguration => Datastore): Self = StObject.set(x, "createDatastore", js.Any.fromFunction1(value))
     

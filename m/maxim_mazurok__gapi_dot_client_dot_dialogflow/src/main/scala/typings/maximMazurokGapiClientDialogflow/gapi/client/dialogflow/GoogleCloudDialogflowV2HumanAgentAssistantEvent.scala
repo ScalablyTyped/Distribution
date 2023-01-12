@@ -22,7 +22,8 @@ object GoogleCloudDialogflowV2HumanAgentAssistantEvent {
     __obj.asInstanceOf[GoogleCloudDialogflowV2HumanAgentAssistantEvent]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2HumanAgentAssistantEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2HumanAgentAssistantEvent] (val x: Self) extends AnyVal {
     
     inline def setConversation(value: String): Self = StObject.set(x, "conversation", value.asInstanceOf[js.Any])
     

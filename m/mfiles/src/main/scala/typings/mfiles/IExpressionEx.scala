@@ -45,7 +45,8 @@ object IExpressionEx {
     __obj.asInstanceOf[IExpressionEx]
   }
   
-  extension [Self <: IExpressionEx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpressionEx] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IExpressionEx): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

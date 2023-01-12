@@ -253,7 +253,8 @@ object buildSrcPartialResultStreamMod {
       __obj.asInstanceOf[RowOptions]
     }
     
-    extension [Self <: RowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowOptions] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       

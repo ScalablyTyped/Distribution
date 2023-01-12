@@ -38,7 +38,8 @@ object Headroom {
     __obj.asInstanceOf[Headroom]
   }
   
-  extension [Self <: Headroom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Headroom] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

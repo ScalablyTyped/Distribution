@@ -34,7 +34,8 @@ object LiveBroadcastStatus {
     __obj.asInstanceOf[LiveBroadcastStatus]
   }
   
-  extension [Self <: LiveBroadcastStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveBroadcastStatus] (val x: Self) extends AnyVal {
     
     inline def setLifeCycleStatus(value: String): Self = StObject.set(x, "lifeCycleStatus", value.asInstanceOf[js.Any])
     

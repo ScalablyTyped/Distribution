@@ -16,7 +16,8 @@ object Glimmer {
     __obj.asInstanceOf[Glimmer]
   }
   
-  extension [Self <: Glimmer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Glimmer] (val x: Self) extends AnyVal {
     
     inline def setGlimmer(value: Parser[Any]): Self = StObject.set(x, "glimmer", value.asInstanceOf[js.Any])
   }

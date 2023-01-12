@@ -15,7 +15,8 @@ object VuePlugin {
     __obj.asInstanceOf[VuePlugin]
   }
   
-  extension [Self <: VuePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VuePlugin] (val x: Self) extends AnyVal {
     
     inline def setInstall(value: Any => Unit): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
   }

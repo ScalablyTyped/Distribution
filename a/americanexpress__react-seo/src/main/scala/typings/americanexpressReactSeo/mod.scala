@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Audio]
     }
     
-    extension [Self <: Audio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audio] (val x: Self) extends AnyVal {
       
       inline def setSecureUrl(value: String): Self = StObject.set(x, "secureUrl", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Media]
     }
     
-    extension [Self <: Media](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object mod {
       __obj.asInstanceOf[OpenGraph]
     }
     
-    extension [Self <: OpenGraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenGraph] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object mod {
       __obj.asInstanceOf[SEOProps]
     }
     
-    extension [Self <: SEOProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SEOProps] (val x: Self) extends AnyVal {
       
       inline def setCanonical(value: String): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
       
@@ -261,7 +265,8 @@ object mod {
       __obj.asInstanceOf[TwitterApp]
     }
     
-    extension [Self <: TwitterApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterApp] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object mod {
       __obj.asInstanceOf[TwitterCard]
     }
     
-    extension [Self <: TwitterCard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterCard] (val x: Self) extends AnyVal {
       
       inline def setApp(value: TwitterApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -369,7 +375,8 @@ object mod {
       __obj.asInstanceOf[TwitterDevice]
     }
     
-    extension [Self <: TwitterDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterDevice] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -396,7 +403,8 @@ object mod {
       __obj.asInstanceOf[TwitterImage]
     }
     
-    extension [Self <: TwitterImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterImage] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -419,7 +427,8 @@ object mod {
       __obj.asInstanceOf[TwitterPlayer]
     }
     
-    extension [Self <: TwitterPlayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwitterPlayer] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

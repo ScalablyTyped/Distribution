@@ -20,7 +20,8 @@ object ReceiveConfirmation {
     __obj.asInstanceOf[ReceiveConfirmation]
   }
   
-  extension [Self <: ReceiveConfirmation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveConfirmation] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Boolean): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

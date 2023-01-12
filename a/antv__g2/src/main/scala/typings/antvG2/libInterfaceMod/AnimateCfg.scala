@@ -43,7 +43,8 @@ object AnimateCfg {
     __obj.asInstanceOf[AnimateCfg]
   }
   
-  extension [Self <: AnimateCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimateCfg] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

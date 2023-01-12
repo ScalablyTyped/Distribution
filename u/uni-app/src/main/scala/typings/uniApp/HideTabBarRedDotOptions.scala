@@ -33,7 +33,8 @@ object HideTabBarRedDotOptions {
     __obj.asInstanceOf[HideTabBarRedDotOptions]
   }
   
-  extension [Self <: HideTabBarRedDotOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideTabBarRedDotOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

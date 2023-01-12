@@ -44,7 +44,8 @@ object SingleColumnMenuOptions {
     __obj.asInstanceOf[SingleColumnMenuOptions]
   }
   
-  extension [Self <: SingleColumnMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleColumnMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     

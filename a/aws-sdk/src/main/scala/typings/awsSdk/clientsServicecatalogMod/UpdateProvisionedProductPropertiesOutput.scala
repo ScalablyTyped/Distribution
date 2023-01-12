@@ -33,7 +33,8 @@ object UpdateProvisionedProductPropertiesOutput {
     __obj.asInstanceOf[UpdateProvisionedProductPropertiesOutput]
   }
   
-  extension [Self <: UpdateProvisionedProductPropertiesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProvisionedProductPropertiesOutput] (val x: Self) extends AnyVal {
     
     inline def setProvisionedProductId(value: Id): Self = StObject.set(x, "ProvisionedProductId", value.asInstanceOf[js.Any])
     

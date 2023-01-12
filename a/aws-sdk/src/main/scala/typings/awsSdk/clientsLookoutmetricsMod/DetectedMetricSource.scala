@@ -18,7 +18,8 @@ object DetectedMetricSource {
     __obj.asInstanceOf[DetectedMetricSource]
   }
   
-  extension [Self <: DetectedMetricSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedMetricSource] (val x: Self) extends AnyVal {
     
     inline def setS3SourceConfig(value: DetectedS3SourceConfig): Self = StObject.set(x, "S3SourceConfig", value.asInstanceOf[js.Any])
     

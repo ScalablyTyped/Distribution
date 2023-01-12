@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2MetadataLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2MetadataLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2MetadataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2MetadataLocation] (val x: Self) extends AnyVal {
     
     inline def setStorageLabel(value: GooglePrivacyDlpV2StorageMetadataLabel): Self = StObject.set(x, "storageLabel", value.asInstanceOf[js.Any])
     

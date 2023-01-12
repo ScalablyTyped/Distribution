@@ -41,7 +41,8 @@ object StreamLayerPurgeOptions {
     __obj.asInstanceOf[StreamLayerPurgeOptions]
   }
   
-  extension [Self <: StreamLayerPurgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerPurgeOptions] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

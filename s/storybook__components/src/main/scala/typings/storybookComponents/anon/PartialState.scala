@@ -45,7 +45,8 @@ object PartialState {
     __obj.asInstanceOf[PartialState]
   }
   
-  extension [Self <: PartialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

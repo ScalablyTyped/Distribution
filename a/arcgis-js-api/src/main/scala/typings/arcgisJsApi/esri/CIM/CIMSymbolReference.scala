@@ -61,7 +61,8 @@ object CIMSymbolReference {
     __obj.asInstanceOf[CIMSymbolReference]
   }
   
-  extension [Self <: CIMSymbolReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMSymbolReference] (val x: Self) extends AnyVal {
     
     inline def setMaxDistance(value: Double): Self = StObject.set(x, "maxDistance", value.asInstanceOf[js.Any])
     

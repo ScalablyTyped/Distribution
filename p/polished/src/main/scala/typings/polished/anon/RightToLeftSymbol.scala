@@ -29,7 +29,8 @@ object RightToLeftSymbol {
     __obj.asInstanceOf[RightToLeftSymbol]
   }
   
-  extension [Self <: RightToLeftSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightToLeftSymbol] (val x: Self) extends AnyVal {
     
     inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     

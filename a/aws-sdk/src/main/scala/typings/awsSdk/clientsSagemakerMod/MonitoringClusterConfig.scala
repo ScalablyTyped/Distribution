@@ -37,7 +37,8 @@ object MonitoringClusterConfig {
     __obj.asInstanceOf[MonitoringClusterConfig]
   }
   
-  extension [Self <: MonitoringClusterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringClusterConfig] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: ProcessingInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

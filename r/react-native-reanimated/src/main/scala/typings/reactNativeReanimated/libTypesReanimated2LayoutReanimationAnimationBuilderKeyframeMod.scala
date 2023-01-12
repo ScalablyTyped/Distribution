@@ -56,7 +56,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderKeyframeMod {
       __obj.asInstanceOf[KeyframePoint]
     }
     
-    extension [Self <: KeyframePoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframePoint] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libTypesReanimated2LayoutReanimationAnimationBuilderKeyframeMod {
       __obj.asInstanceOf[ParsedKeyframesDefinition]
     }
     
-    extension [Self <: ParsedKeyframesDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedKeyframesDefinition] (val x: Self) extends AnyVal {
       
       inline def setInitialValues(value: StyleProps): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object IgTreeGridPagingLocale {
     __obj.asInstanceOf[IgTreeGridPagingLocale]
   }
   
-  extension [Self <: IgTreeGridPagingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridPagingLocale] (val x: Self) extends AnyVal {
     
     inline def setContextRowLoadingText(value: String): Self = StObject.set(x, "contextRowLoadingText", value.asInstanceOf[js.Any])
     

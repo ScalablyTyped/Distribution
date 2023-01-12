@@ -33,7 +33,8 @@ object ManagedWebGLRenderingContext {
     __obj.asInstanceOf[ManagedWebGLRenderingContext]
   }
   
-  extension [Self <: ManagedWebGLRenderingContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedWebGLRenderingContext] (val x: Self) extends AnyVal {
     
     inline def setAddRestorable(value: Restorable => Unit): Self = StObject.set(x, "addRestorable", js.Any.fromFunction1(value))
     

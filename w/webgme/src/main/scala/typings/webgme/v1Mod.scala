@@ -68,7 +68,8 @@ object v1Mod {
       __obj.asInstanceOf[JsonNode]
     }
     
-    extension [Self <: JsonNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonNode] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object v1Mod {
       __obj.asInstanceOf[JsonObj]
     }
     
-    extension [Self <: JsonObj](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonObj] (val x: Self) extends AnyVal {
       
       inline def setBases(value: Any): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
       

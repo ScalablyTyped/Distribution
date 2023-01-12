@@ -22,7 +22,8 @@ object JoinVoIPChatSuccessCallbackResult {
     __obj.asInstanceOf[JoinVoIPChatSuccessCallbackResult]
   }
   
-  extension [Self <: JoinVoIPChatSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinVoIPChatSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

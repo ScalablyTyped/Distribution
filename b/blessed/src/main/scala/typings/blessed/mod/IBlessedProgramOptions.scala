@@ -37,7 +37,8 @@ object IBlessedProgramOptions {
     __obj.asInstanceOf[IBlessedProgramOptions]
   }
   
-  extension [Self <: IBlessedProgramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBlessedProgramOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

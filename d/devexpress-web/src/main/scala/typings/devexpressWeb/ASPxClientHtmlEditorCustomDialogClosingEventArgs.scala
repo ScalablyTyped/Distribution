@@ -23,7 +23,8 @@ object ASPxClientHtmlEditorCustomDialogClosingEventArgs {
     __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogClosingEventArgs]
   }
   
-  extension [Self <: ASPxClientHtmlEditorCustomDialogClosingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorCustomDialogClosingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object UpdateConnection {
     __obj.asInstanceOf[UpdateConnection]
   }
   
-  extension [Self <: UpdateConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateConnection] (val x: Self) extends AnyVal {
     
     inline def setEnabled_clients(value: js.Array[String]): Self = StObject.set(x, "enabled_clients", value.asInstanceOf[js.Any])
     

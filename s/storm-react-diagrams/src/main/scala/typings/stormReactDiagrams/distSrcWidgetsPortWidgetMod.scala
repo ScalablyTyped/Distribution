@@ -30,7 +30,8 @@ object distSrcWidgetsPortWidgetMod {
       __obj.asInstanceOf[PortProps]
     }
     
-    extension [Self <: PortProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distSrcWidgetsPortWidgetMod {
       __obj.asInstanceOf[PortState]
     }
     
-    extension [Self <: PortState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortState] (val x: Self) extends AnyVal {
       
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }

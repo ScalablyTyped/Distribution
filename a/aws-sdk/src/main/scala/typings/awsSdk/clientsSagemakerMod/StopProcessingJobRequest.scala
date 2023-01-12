@@ -18,7 +18,8 @@ object StopProcessingJobRequest {
     __obj.asInstanceOf[StopProcessingJobRequest]
   }
   
-  extension [Self <: StopProcessingJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopProcessingJobRequest] (val x: Self) extends AnyVal {
     
     inline def setProcessingJobName(value: ProcessingJobName): Self = StObject.set(x, "ProcessingJobName", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object TileLayoutResizeEvent {
     __obj.asInstanceOf[TileLayoutResizeEvent]
   }
   
-  extension [Self <: TileLayoutResizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileLayoutResizeEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

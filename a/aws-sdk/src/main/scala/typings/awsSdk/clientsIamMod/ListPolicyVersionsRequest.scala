@@ -28,7 +28,8 @@ object ListPolicyVersionsRequest {
     __obj.asInstanceOf[ListPolicyVersionsRequest]
   }
   
-  extension [Self <: ListPolicyVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: markerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

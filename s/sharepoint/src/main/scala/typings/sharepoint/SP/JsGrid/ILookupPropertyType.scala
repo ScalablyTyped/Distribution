@@ -41,7 +41,8 @@ object ILookupPropertyType {
     __obj.asInstanceOf[ILookupPropertyType]
   }
   
-  extension [Self <: ILookupPropertyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookupPropertyType] (val x: Self) extends AnyVal {
     
     inline def setDataToLocalized(value: Any => String): Self = StObject.set(x, "DataToLocalized", js.Any.fromFunction1(value))
     

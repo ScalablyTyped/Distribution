@@ -19,7 +19,8 @@ object Editurl {
     __obj.asInstanceOf[Editurl]
   }
   
-  extension [Self <: Editurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Editurl] (val x: Self) extends AnyVal {
     
     inline def setEdit_url(value: String): Self = StObject.set(x, "edit_url", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object ShowModalOptions {
     __obj.asInstanceOf[ShowModalOptions]
   }
   
-  extension [Self <: ShowModalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowModalOptions] (val x: Self) extends AnyVal {
     
     inline def setCancelColor(value: String): Self = StObject.set(x, "cancelColor", value.asInstanceOf[js.Any])
     

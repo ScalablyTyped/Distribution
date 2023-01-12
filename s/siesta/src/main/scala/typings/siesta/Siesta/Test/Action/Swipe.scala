@@ -23,7 +23,8 @@ object Swipe {
     __obj.asInstanceOf[Swipe]
   }
   
-  extension [Self <: Swipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Swipe] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

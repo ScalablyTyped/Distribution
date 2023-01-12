@@ -2182,7 +2182,8 @@ object sapUiUx3ShellMod {
       __obj.asInstanceOf[ShellSettings]
     }
     
-    extension [Self <: ShellSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowOverlayHeaderAccess(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "allowOverlayHeaderAccess", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object CreateResolverRuleRequest {
     __obj.asInstanceOf[CreateResolverRuleRequest]
   }
   
-  extension [Self <: CreateResolverRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateResolverRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatorRequestId(value: CreatorRequestId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object RadioCardDescription {
     __obj.asInstanceOf[RadioCardDescription]
   }
   
-  extension [Self <: RadioCardDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioCardDescription] (val x: Self) extends AnyVal {
     
     inline def setDisplayLinkCodicon(value: Boolean): Self = StObject.set(x, "displayLinkCodicon", value.asInstanceOf[js.Any])
     

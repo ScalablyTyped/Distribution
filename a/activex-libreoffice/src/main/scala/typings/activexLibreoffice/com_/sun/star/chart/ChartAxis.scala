@@ -298,7 +298,8 @@ object ChartAxis {
     __obj.asInstanceOf[ChartAxis]
   }
   
-  extension [Self <: ChartAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxis] (val x: Self) extends AnyVal {
     
     inline def setArrangeOrder(value: ChartAxisArrangeOrderType): Self = StObject.set(x, "ArrangeOrder", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ChargeOptions {
     __obj.asInstanceOf[ChargeOptions]
   }
   
-  extension [Self <: ChargeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizeOnly(value: Boolean): Self = StObject.set(x, "authorizeOnly", value.asInstanceOf[js.Any])
     

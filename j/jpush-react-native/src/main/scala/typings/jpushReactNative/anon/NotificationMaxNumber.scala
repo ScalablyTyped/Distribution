@@ -15,7 +15,8 @@ object NotificationMaxNumber {
     __obj.asInstanceOf[NotificationMaxNumber]
   }
   
-  extension [Self <: NotificationMaxNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationMaxNumber] (val x: Self) extends AnyVal {
     
     inline def setNotificationMaxNumber(value: Double): Self = StObject.set(x, "notificationMaxNumber", value.asInstanceOf[js.Any])
   }

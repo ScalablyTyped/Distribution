@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[CommonImageType]
     }
     
-    extension [Self <: CommonImageType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonImageType] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[LargeImageType]
     }
     
-    extension [Self <: LargeImageType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LargeImageType] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object mod {
       __obj.asInstanceOf[ReactImageMagnifyProps]
     }
     
-    extension [Self <: ReactImageMagnifyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactImageMagnifyProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -410,7 +413,8 @@ object mod {
       __obj.asInstanceOf[SmallImageType]
     }
     
-    extension [Self <: SmallImageType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmallImageType] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

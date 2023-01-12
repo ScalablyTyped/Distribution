@@ -16,7 +16,8 @@ object ReadWrite {
     __obj.asInstanceOf[ReadWrite]
   }
   
-  extension [Self <: ReadWrite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadWrite] (val x: Self) extends AnyVal {
     
     inline def setRetryTransaction(value: String): Self = StObject.set(x, "retryTransaction", value.asInstanceOf[js.Any])
     

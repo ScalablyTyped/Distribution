@@ -16,7 +16,8 @@ object Platform {
   @js.native
   val ^ : Platform = js.native
   
-  extension [Self <: Platform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Platform] (val x: Self) extends AnyVal {
     
     inline def setOS(value: ios | android): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
   }

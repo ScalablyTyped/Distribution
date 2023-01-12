@@ -46,7 +46,8 @@ object AndroidRoboTest {
     __obj.asInstanceOf[AndroidRoboTest]
   }
   
-  extension [Self <: AndroidRoboTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidRoboTest] (val x: Self) extends AnyVal {
     
     inline def setAppApk(value: FileReference): Self = StObject.set(x, "appApk", value.asInstanceOf[js.Any])
     

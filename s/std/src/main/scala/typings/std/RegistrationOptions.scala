@@ -22,7 +22,8 @@ object RegistrationOptions {
     __obj.asInstanceOf[RegistrationOptions]
   }
   
-  extension [Self <: RegistrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationOptions] (val x: Self) extends AnyVal {
     
     inline def setScope(value: java.lang.String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     

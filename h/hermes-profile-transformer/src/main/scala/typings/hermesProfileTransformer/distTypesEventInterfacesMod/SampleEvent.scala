@@ -20,7 +20,8 @@ object SampleEvent {
     __obj.asInstanceOf[SampleEvent]
   }
   
-  extension [Self <: SampleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampleEvent] (val x: Self) extends AnyVal {
     
     inline def setPh(value: SAMPLE_EVENTS): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }

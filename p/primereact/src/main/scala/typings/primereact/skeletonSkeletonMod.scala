@@ -497,7 +497,8 @@ object skeletonSkeletonMod {
       __obj.asInstanceOf[SkeletonProps]
     }
     
-    extension [Self <: SkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

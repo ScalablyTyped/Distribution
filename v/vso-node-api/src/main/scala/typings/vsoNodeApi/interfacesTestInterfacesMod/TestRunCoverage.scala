@@ -21,7 +21,8 @@ object TestRunCoverage {
     __obj.asInstanceOf[TestRunCoverage]
   }
   
-  extension [Self <: TestRunCoverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRunCoverage] (val x: Self) extends AnyVal {
     
     inline def setLastError(value: String): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
     

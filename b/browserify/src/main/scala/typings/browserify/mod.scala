@@ -197,7 +197,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CustomOptions]
     }
     
-    extension [Self <: CustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setBasedir(value: String): Self = StObject.set(x, "basedir", value.asInstanceOf[js.Any])
       
@@ -337,7 +339,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBuiltins(value: js.Array[String] | StringDictionary[String] | Boolean): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
       

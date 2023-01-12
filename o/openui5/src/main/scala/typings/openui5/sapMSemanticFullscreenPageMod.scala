@@ -769,7 +769,8 @@ object sapMSemanticFullscreenPageMod {
       __obj.asInstanceOf[FullscreenPageSettings]
     }
     
-    extension [Self <: FullscreenPageSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullscreenPageSettings] (val x: Self) extends AnyVal {
       
       inline def setAddAction(value: typings.openui5.sapMSemanticAddActionMod.default): Self = StObject.set(x, "addAction", value.asInstanceOf[js.Any])
       

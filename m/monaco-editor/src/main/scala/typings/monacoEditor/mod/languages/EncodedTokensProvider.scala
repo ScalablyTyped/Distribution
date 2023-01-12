@@ -28,7 +28,8 @@ object EncodedTokensProvider {
     __obj.asInstanceOf[EncodedTokensProvider]
   }
   
-  extension [Self <: EncodedTokensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedTokensProvider] (val x: Self) extends AnyVal {
     
     inline def setGetInitialState(value: () => IState): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
     

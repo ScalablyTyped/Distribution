@@ -97,7 +97,8 @@ object CatalogEntry {
     __obj.asInstanceOf[CatalogEntry]
   }
   
-  extension [Self <: CatalogEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogEntry] (val x: Self) extends AnyVal {
     
     inline def setAdditionalCharacteristic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "additionalCharacteristic", value.asInstanceOf[js.Any])
     

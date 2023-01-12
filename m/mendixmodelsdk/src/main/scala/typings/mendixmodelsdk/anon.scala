@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Action[T]]
     }
     
-    extension [Self <: Action[?], T](x: Self & Action[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       inline def setAction(value: () => T): Self = StObject.set(x, "action", js.Any.fromFunction0(value))
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Copy]
     }
     
-    extension [Self <: Copy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: Element[IAbstractModel]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[EventId]
     }
     
-    extension [Self <: EventId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventId] (val x: Self) extends AnyVal {
       
       inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[ToRawChangeValue[P]]
     }
     
-    extension [Self <: ToRawChangeValue[?], P](x: Self & ToRawChangeValue[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToRawChangeValue[?], P] (val x: Self & ToRawChangeValue[P]) extends AnyVal {
       
       inline def setToRawChangeValue(value: P => Any): Self = StObject.set(x, "toRawChangeValue", js.Any.fromFunction1(value))
     }

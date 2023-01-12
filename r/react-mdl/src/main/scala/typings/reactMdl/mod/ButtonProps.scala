@@ -24,7 +24,8 @@ object ButtonProps {
     __obj.asInstanceOf[ButtonProps]
   }
   
-  extension [Self <: ButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
     
     inline def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
     

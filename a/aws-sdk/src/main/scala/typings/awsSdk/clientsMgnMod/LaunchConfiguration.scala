@@ -60,7 +60,8 @@ object LaunchConfiguration {
     __obj.asInstanceOf[LaunchConfiguration]
   }
   
-  extension [Self <: LaunchConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBootMode(value: BootMode): Self = StObject.set(x, "bootMode", value.asInstanceOf[js.Any])
     

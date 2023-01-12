@@ -40,7 +40,8 @@ object MoveOrCopyRuleAction {
     __obj.asInstanceOf[MoveOrCopyRuleAction]
   }
   
-  extension [Self <: MoveOrCopyRuleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveOrCopyRuleAction] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     

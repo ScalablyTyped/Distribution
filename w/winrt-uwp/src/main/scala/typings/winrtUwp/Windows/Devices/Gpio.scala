@@ -258,7 +258,8 @@ object Gpio {
       __obj.asInstanceOf[GpioPinValueChangedEventArgs]
     }
     
-    extension [Self <: GpioPinValueChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GpioPinValueChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: GpioPinEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     }
@@ -278,7 +279,8 @@ object Gpio {
         __obj.asInstanceOf[GpioPinProviderValueChangedEventArgs]
       }
       
-      extension [Self <: GpioPinProviderValueChangedEventArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GpioPinProviderValueChangedEventArgs] (val x: Self) extends AnyVal {
         
         inline def setEdge(value: Any): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       }
@@ -296,7 +298,8 @@ object Gpio {
         __obj.asInstanceOf[IGpioProvider]
       }
       
-      extension [Self <: IGpioProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IGpioProvider] (val x: Self) extends AnyVal {
         
         inline def setGetControllers(value: Any): Self = StObject.set(x, "getControllers", value.asInstanceOf[js.Any])
       }

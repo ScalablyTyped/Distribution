@@ -19,7 +19,8 @@ object SqlServerUserDetails {
     __obj.asInstanceOf[SqlServerUserDetails]
   }
   
-  extension [Self <: SqlServerUserDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlServerUserDetails] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

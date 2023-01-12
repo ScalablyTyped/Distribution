@@ -21,7 +21,8 @@ object AndroidManifestxmlCom {
     __obj.asInstanceOf[AndroidManifestxmlCom]
   }
   
-  extension [Self <: AndroidManifestxmlCom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidManifestxmlCom] (val x: Self) extends AnyVal {
     
     inline def setAndroidManifestDotxml(value: Any): Self = StObject.set(x, "AndroidManifest.xml", value.asInstanceOf[js.Any])
     

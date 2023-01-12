@@ -19,7 +19,8 @@ object MapTypeStyle {
     __obj.asInstanceOf[MapTypeStyle]
   }
   
-  extension [Self <: MapTypeStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapTypeStyle] (val x: Self) extends AnyVal {
     
     inline def setElementType(value: String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
     

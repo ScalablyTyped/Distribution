@@ -23,7 +23,8 @@ object LinearGradientLikeObject {
     __obj.asInstanceOf[LinearGradientLikeObject]
   }
   
-  extension [Self <: LinearGradientLikeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearGradientLikeObject] (val x: Self) extends AnyVal {
     
     inline def setColorStops(value: js.Array[ColorValue | (js.Tuple2[ColorValue, PercentValue])]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     

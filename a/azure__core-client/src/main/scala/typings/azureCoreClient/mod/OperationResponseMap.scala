@@ -28,7 +28,8 @@ object OperationResponseMap {
     __obj.asInstanceOf[OperationResponseMap]
   }
   
-  extension [Self <: OperationResponseMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationResponseMap] (val x: Self) extends AnyVal {
     
     inline def setBodyMapper(value: Mapper): Self = StObject.set(x, "bodyMapper", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object libCommonInlineValueMod {
       __obj.asInstanceOf[InlineValueMiddleware]
     }
     
-    extension [Self <: InlineValueMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideInlineValues(
         value: js.ThisFunction5[
@@ -88,7 +89,8 @@ object libCommonInlineValueMod {
       __obj.asInstanceOf[InlineValueProviderShape]
     }
     
-    extension [Self <: InlineValueProviderShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineValueProviderShape] (val x: Self) extends AnyVal {
       
       inline def setOnDidChangeInlineValues(value: EventEmitter[Unit]): Self = StObject.set(x, "onDidChangeInlineValues", value.asInstanceOf[js.Any])
       

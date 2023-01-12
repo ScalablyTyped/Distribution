@@ -15,7 +15,8 @@ object URIF {
     __obj.asInstanceOf[URIF[F]]
   }
   
-  extension [Self <: URIF[?], F](x: Self & URIF[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URIF[?], F] (val x: Self & URIF[F]) extends AnyVal {
     
     inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }

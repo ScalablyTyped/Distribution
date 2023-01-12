@@ -66,7 +66,8 @@ object CreateManagedEndpointRequest {
     __obj.asInstanceOf[CreateManagedEndpointRequest]
   }
   
-  extension [Self <: CreateManagedEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateManagedEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateArn(value: ACMCertArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
     

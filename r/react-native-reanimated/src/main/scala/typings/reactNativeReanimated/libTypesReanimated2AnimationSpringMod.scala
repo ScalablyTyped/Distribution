@@ -69,7 +69,8 @@ object libTypesReanimated2AnimationSpringMod {
       __obj.asInstanceOf[InnerSpringAnimation]
     }
     
-    extension [Self <: InnerSpringAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerSpringAnimation] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* finished */ js.UndefOr[Boolean], /* current */ js.UndefOr[AnimatableValue]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -144,7 +145,8 @@ object libTypesReanimated2AnimationSpringMod {
       __obj.asInstanceOf[SpringAnimation]
     }
     
-    extension [Self <: SpringAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringAnimation] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: AnimatableValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object libTypesReanimated2AnimationSpringMod {
       __obj.asInstanceOf[SpringConfig]
     }
     
-    extension [Self <: SpringConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringConfig] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       

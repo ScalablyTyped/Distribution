@@ -23,7 +23,8 @@ object DiskIopsConfiguration {
     __obj.asInstanceOf[DiskIopsConfiguration]
   }
   
-  extension [Self <: DiskIopsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskIopsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIops(value: Iops): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     

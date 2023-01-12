@@ -45,7 +45,8 @@ object srcComponentsButtonMod extends Shortcut {
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    extension [Self <: ButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object srcComponentsButtonMod extends Shortcut {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def setColor(
         value: Color | ghost | `black-bis` | `black-ter` | `white-bis` | `white-ter` | `grey-darker` | `grey-dark` | `grey-light` | `grey-lighter`

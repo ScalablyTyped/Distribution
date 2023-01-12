@@ -48,7 +48,8 @@ object libEsmPuppeteerCommonBidiBrowserMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCloseCallback(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "closeCallback", js.Any.fromFunction0(value))
       

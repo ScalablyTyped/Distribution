@@ -38,7 +38,8 @@ object DeliveryPreferencesEditable {
     __obj.asInstanceOf[DeliveryPreferencesEditable]
   }
   
-  extension [Self <: DeliveryPreferencesEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryPreferencesEditable] (val x: Self) extends AnyVal {
     
     inline def setDeliveryPreferencesEditable(value: scala.Double): Self = StObject.set(x, "deliveryPreferencesEditable", value.asInstanceOf[js.Any])
     

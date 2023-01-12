@@ -36,7 +36,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: js.Array[center | left | right | Null]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

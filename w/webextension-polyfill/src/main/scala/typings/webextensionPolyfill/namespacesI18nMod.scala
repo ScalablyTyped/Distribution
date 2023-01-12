@@ -30,7 +30,8 @@ object namespacesI18nMod {
         __obj.asInstanceOf[DetectLanguageCallbackResultType]
       }
       
-      extension [Self <: DetectLanguageCallbackResultType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DetectLanguageCallbackResultType] (val x: Self) extends AnyVal {
         
         inline def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
         
@@ -59,7 +60,8 @@ object namespacesI18nMod {
         __obj.asInstanceOf[DetectLanguageCallbackResultTypeLanguagesItemType]
       }
       
-      extension [Self <: DetectLanguageCallbackResultTypeLanguagesItemType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DetectLanguageCallbackResultTypeLanguagesItemType] (val x: Self) extends AnyVal {
         
         inline def setLanguage(value: LanguageCode): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
         

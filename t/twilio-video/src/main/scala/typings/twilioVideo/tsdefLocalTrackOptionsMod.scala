@@ -26,7 +26,8 @@ object tsdefLocalTrackOptionsMod {
       __obj.asInstanceOf[LocalTrackOptions]
     }
     
-    extension [Self <: LocalTrackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalTrackOptions] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: LogLevel | LogLevels): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object DIFFUSETEXTURE {
     __obj.asInstanceOf[DIFFUSETEXTURE]
   }
   
-  extension [Self <: DIFFUSETEXTURE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DIFFUSETEXTURE] (val x: Self) extends AnyVal {
     
     inline def setDEPTH_PACKING(value: Double): Self = StObject.set(x, "DEPTH_PACKING", value.asInstanceOf[js.Any])
     

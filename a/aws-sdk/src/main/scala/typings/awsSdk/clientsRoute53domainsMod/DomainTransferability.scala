@@ -15,7 +15,8 @@ object DomainTransferability {
     __obj.asInstanceOf[DomainTransferability]
   }
   
-  extension [Self <: DomainTransferability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainTransferability] (val x: Self) extends AnyVal {
     
     inline def setTransferable(value: Transferable): Self = StObject.set(x, "Transferable", value.asInstanceOf[js.Any])
     

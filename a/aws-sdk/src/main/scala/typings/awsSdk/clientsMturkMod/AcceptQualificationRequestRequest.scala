@@ -23,7 +23,8 @@ object AcceptQualificationRequestRequest {
     __obj.asInstanceOf[AcceptQualificationRequestRequest]
   }
   
-  extension [Self <: AcceptQualificationRequestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptQualificationRequestRequest] (val x: Self) extends AnyVal {
     
     inline def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
     

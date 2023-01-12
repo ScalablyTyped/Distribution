@@ -23,7 +23,8 @@ object DescribeHsmRequest {
     __obj.asInstanceOf[DescribeHsmRequest]
   }
   
-  extension [Self <: DescribeHsmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHsmRequest] (val x: Self) extends AnyVal {
     
     inline def setHsmArn(value: HsmArn): Self = StObject.set(x, "HsmArn", value.asInstanceOf[js.Any])
     

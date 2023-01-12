@@ -18,7 +18,8 @@ object BatchAcknowledgeAlarmRequest {
     __obj.asInstanceOf[BatchAcknowledgeAlarmRequest]
   }
   
-  extension [Self <: BatchAcknowledgeAlarmRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAcknowledgeAlarmRequest] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgeActionRequests(value: AcknowledgeAlarmActionRequests): Self = StObject.set(x, "acknowledgeActionRequests", value.asInstanceOf[js.Any])
     

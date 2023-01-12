@@ -16,7 +16,8 @@ object PDocument {
     __obj.asInstanceOf[PDocument]
   }
   
-  extension [Self <: PDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDocument] (val x: Self) extends AnyVal {
     
     inline def setPDocument(value: _XDocument): Self = StObject.set(x, "pDocument", value.asInstanceOf[js.Any])
   }

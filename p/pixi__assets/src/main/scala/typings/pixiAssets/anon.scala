@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String | js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Parsers]
     }
     
-    extension [Self <: Parsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parsers] (val x: Self) extends AnyVal {
       
       inline def setParsers(value: js.Array[LoaderParser[Any, Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
@@ -108,7 +111,8 @@ object anon {
       __obj.asInstanceOf[PartialFormatDetectionPar]
     }
     
-    extension [Self <: PartialFormatDetectionPar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFormatDetectionPar] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* formats */ js.Array[String] => js.Promise[js.Array[String]]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -146,7 +150,8 @@ object anon {
       __obj.asInstanceOf[PartialResolveURLParser]
     }
     
-    extension [Self <: PartialResolveURLParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialResolveURLParser] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -189,7 +194,8 @@ object anon {
       __obj.asInstanceOf[PreferOrders]
     }
     
-    extension [Self <: PreferOrders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferOrders] (val x: Self) extends AnyVal {
       
       inline def setPreferOrders(value: js.Array[PreferOrder]): Self = StObject.set(x, "preferOrders", value.asInstanceOf[js.Any])
       

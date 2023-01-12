@@ -21,7 +21,8 @@ object PanInsideOptions {
     __obj.asInstanceOf[PanInsideOptions]
   }
   
-  extension [Self <: PanInsideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PanInsideOptions] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: PointExpression): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

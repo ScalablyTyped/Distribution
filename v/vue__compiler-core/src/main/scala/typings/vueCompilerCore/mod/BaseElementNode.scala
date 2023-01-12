@@ -40,7 +40,8 @@ object BaseElementNode {
     __obj.asInstanceOf[BaseElementNode]
   }
   
-  extension [Self <: BaseElementNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseElementNode] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[TemplateChildNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object UpdateExperimentTemplateRequest {
     __obj.asInstanceOf[UpdateExperimentTemplateRequest]
   }
   
-  extension [Self <: UpdateExperimentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExperimentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setActions(value: UpdateExperimentTemplateActionInputMap): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

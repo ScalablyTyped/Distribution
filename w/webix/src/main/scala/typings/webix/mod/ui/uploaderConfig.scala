@@ -97,7 +97,8 @@ object uploaderConfig {
     __obj.asInstanceOf[uploaderConfig]
   }
   
-  extension [Self <: uploaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: uploaderConfig] (val x: Self) extends AnyVal {
     
     inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     

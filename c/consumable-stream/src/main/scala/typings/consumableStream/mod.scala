@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Consumer[T]]
     }
     
-    extension [Self <: Consumer[?], T](x: Self & Consumer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumer[?], T] (val x: Self & Consumer[T]) extends AnyVal {
       
       inline def setNext(value: () => js.Promise[IteratorResult[T, Any]]): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       

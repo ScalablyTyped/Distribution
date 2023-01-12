@@ -64,7 +64,8 @@ object vendorEndpointCacheMod {
       __obj.asInstanceOf[EndpointIdentifier]
     }
     
-    extension [Self <: EndpointIdentifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointIdentifier] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

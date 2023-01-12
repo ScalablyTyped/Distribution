@@ -76,7 +76,8 @@ object typesSliderSliderMod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setThumbLabel(value: String): Self = StObject.set(x, "thumbLabel", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object AdminGetUserResponse {
     __obj.asInstanceOf[AdminGetUserResponse]
   }
   
-  extension [Self <: AdminGetUserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminGetUserResponse] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

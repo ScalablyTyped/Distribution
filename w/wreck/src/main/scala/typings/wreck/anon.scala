@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Http]
     }
     
-    extension [Self <: Http](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: Agent): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Req]
     }
     
-    extension [Self <: Req](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
       
       inline def setReq(value: ClientRequest): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object anon {
       __obj.asInstanceOf[RequestOptionspayloadanyu]
     }
     
-    extension [Self <: RequestOptionspayloadanyu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptionspayloadanyu] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Http | `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

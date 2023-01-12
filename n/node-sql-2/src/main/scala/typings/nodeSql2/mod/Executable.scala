@@ -15,7 +15,8 @@ object Executable {
     __obj.asInstanceOf[Executable]
   }
   
-  extension [Self <: Executable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Executable] (val x: Self) extends AnyVal {
     
     inline def setToQuery(value: () => QueryLike): Self = StObject.set(x, "toQuery", js.Any.fromFunction0(value))
   }

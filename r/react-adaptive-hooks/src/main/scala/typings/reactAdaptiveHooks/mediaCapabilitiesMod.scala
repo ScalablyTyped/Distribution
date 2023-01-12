@@ -34,7 +34,8 @@ object mediaCapabilitiesMod {
       __obj.asInstanceOf[AudioMediaConfiguration]
     }
     
-    extension [Self <: AudioMediaConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioMediaConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object mediaCapabilitiesMod {
       __obj.asInstanceOf[MediaConfigurationInfo]
     }
     
-    extension [Self <: MediaConfigurationInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaConfigurationInfo] (val x: Self) extends AnyVal {
       
       inline def setPowerEfficient(value: Boolean): Self = StObject.set(x, "powerEfficient", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object mediaCapabilitiesMod {
       __obj.asInstanceOf[VideoMediaConfiguration]
     }
     
-    extension [Self <: VideoMediaConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoMediaConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       

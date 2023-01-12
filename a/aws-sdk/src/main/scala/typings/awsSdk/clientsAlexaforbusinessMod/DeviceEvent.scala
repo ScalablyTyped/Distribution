@@ -28,7 +28,8 @@ object DeviceEvent {
     __obj.asInstanceOf[DeviceEvent]
   }
   
-  extension [Self <: DeviceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceEvent] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     

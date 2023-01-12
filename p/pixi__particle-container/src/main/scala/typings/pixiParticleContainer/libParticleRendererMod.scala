@@ -175,7 +175,8 @@ object libParticleRendererMod {
       __obj.asInstanceOf[IParticleRendererProperty]
     }
     
-    extension [Self <: IParticleRendererProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParticleRendererProperty] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       

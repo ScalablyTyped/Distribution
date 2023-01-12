@@ -17,7 +17,8 @@ object DownloadProgressData {
     __obj.asInstanceOf[DownloadProgressData]
   }
   
-  extension [Self <: DownloadProgressData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProgressData] (val x: Self) extends AnyVal {
     
     inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
     

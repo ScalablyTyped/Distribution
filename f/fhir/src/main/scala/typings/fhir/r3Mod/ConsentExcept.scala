@@ -70,7 +70,8 @@ object ConsentExcept {
     __obj.asInstanceOf[ConsentExcept]
   }
   
-  extension [Self <: ConsentExcept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentExcept] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

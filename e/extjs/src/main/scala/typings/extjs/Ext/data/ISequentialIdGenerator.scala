@@ -21,7 +21,8 @@ object ISequentialIdGenerator {
     __obj.asInstanceOf[ISequentialIdGenerator]
   }
   
-  extension [Self <: ISequentialIdGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISequentialIdGenerator] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

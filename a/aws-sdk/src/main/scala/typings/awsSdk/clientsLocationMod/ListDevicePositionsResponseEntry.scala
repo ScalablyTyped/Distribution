@@ -38,7 +38,8 @@ object ListDevicePositionsResponseEntry {
     __obj.asInstanceOf[ListDevicePositionsResponseEntry]
   }
   
-  extension [Self <: ListDevicePositionsResponseEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDevicePositionsResponseEntry] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: PositionalAccuracy): Self = StObject.set(x, "Accuracy", value.asInstanceOf[js.Any])
     

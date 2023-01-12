@@ -32,7 +32,8 @@ object ScheduleAction {
     __obj.asInstanceOf[ScheduleAction]
   }
   
-  extension [Self <: ScheduleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleAction] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: string): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     

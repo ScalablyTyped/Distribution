@@ -38,7 +38,8 @@ object OutboundCrossClusterSearchConnection {
     __obj.asInstanceOf[OutboundCrossClusterSearchConnection]
   }
   
-  extension [Self <: OutboundCrossClusterSearchConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutboundCrossClusterSearchConnection] (val x: Self) extends AnyVal {
     
     inline def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
     

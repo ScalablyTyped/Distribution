@@ -65,7 +65,8 @@ object PointProperties {
     __obj.asInstanceOf[PointProperties]
   }
   
-  extension [Self <: PointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointProperties] (val x: Self) extends AnyVal {
     
     inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     

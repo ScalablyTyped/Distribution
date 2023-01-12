@@ -24,7 +24,8 @@ object ParametersArrayReturnNumberTypeNumberType {
     __obj.asInstanceOf[ParametersArrayReturnNumberTypeNumberType]
   }
   
-  extension [Self <: ParametersArrayReturnNumberTypeNumberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersArrayReturnNumberTypeNumberType] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

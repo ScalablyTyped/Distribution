@@ -28,7 +28,8 @@ object GetQueryResultsInput {
     __obj.asInstanceOf[GetQueryResultsInput]
   }
   
-  extension [Self <: GetQueryResultsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetQueryResultsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxQueryResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object FlattenInstruction {
     __obj.asInstanceOf[FlattenInstruction]
   }
   
-  extension [Self <: FlattenInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenInstruction] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: js.Array[InstructionInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

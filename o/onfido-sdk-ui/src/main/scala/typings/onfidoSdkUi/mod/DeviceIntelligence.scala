@@ -15,7 +15,8 @@ object DeviceIntelligence {
     __obj.asInstanceOf[DeviceIntelligence]
   }
   
-  extension [Self <: DeviceIntelligence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceIntelligence] (val x: Self) extends AnyVal {
     
     inline def setPassive_signals(value: PassiveSignals): Self = StObject.set(x, "passive_signals", value.asInstanceOf[js.Any])
   }

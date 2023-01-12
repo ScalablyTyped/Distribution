@@ -71,7 +71,8 @@ object mod {
       __obj.asInstanceOf[CodeError]
     }
     
-    extension [Self <: CodeError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeError] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[Flags[T]]
     }
     
-    extension [Self <: Flags[?], T](x: Self & Flags[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flags[?], T] (val x: Self & Flags[T]) extends AnyVal {
       
       inline def setNot(value: AssertionChain[T]): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object mod {
       __obj.asInstanceOf[Grammar[T]]
     }
     
-    extension [Self <: Grammar[?], T](x: Self & Grammar[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grammar[?], T] (val x: Self & Grammar[T]) extends AnyVal {
       
       inline def setA(value: AssertionChain[T]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -226,7 +229,8 @@ object mod {
       __obj.asInstanceOf[Settings_]
     }
     
-    extension [Self <: Settings_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
       
       inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
       

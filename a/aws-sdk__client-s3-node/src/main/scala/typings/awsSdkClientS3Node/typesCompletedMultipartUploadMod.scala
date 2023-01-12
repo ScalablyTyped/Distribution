@@ -22,7 +22,8 @@ object typesCompletedMultipartUploadMod {
       __obj.asInstanceOf[CompletedMultipartUpload]
     }
     
-    extension [Self <: CompletedMultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletedMultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[CompletedPart] | js.Iterable[CompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object typesCompletedMultipartUploadMod {
       __obj.asInstanceOf[UnmarshalledCompletedMultipartUpload]
     }
     
-    extension [Self <: UnmarshalledCompletedMultipartUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCompletedMultipartUpload] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[UnmarshalledCompletedPart]): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       

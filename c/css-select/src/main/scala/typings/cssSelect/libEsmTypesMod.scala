@@ -124,7 +124,8 @@ object libEsmTypesMod {
       __obj.asInstanceOf[Adapter[Node, ElementNode]]
     }
     
-    extension [Self <: Adapter[?, ?], Node, ElementNode /* <: Node */](x: Self & (Adapter[Node, ElementNode])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adapter[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Adapter[Node, ElementNode])) extends AnyVal {
       
       inline def setEquals_(value: (/* a */ Node, /* b */ Node) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
@@ -204,7 +205,8 @@ object libEsmTypesMod {
       __obj.asInstanceOf[InternalOptions[Node, ElementNode]]
     }
     
-    extension [Self <: InternalOptions[?, ?], Node, ElementNode /* <: Node */](x: Self & (InternalOptions[Node, ElementNode])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (InternalOptions[Node, ElementNode])) extends AnyVal {
       
       inline def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object libEsmTypesMod {
       __obj.asInstanceOf[Options[Node, ElementNode]]
     }
     
-    extension [Self <: Options[?, ?], Node, ElementNode /* <: Node */](x: Self & (Options[Node, ElementNode])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], Node, ElementNode /* <: Node */] (val x: Self & (Options[Node, ElementNode])) extends AnyVal {
       
       inline def setAdapter(value: Adapter[Node, ElementNode]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

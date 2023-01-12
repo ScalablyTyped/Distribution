@@ -23,7 +23,8 @@ object SearchContentResponse {
     __obj.asInstanceOf[SearchContentResponse]
   }
   
-  extension [Self <: SearchContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchContentResponse] (val x: Self) extends AnyVal {
     
     inline def setContentSummaries(value: ContentSummaryList): Self = StObject.set(x, "contentSummaries", value.asInstanceOf[js.Any])
     

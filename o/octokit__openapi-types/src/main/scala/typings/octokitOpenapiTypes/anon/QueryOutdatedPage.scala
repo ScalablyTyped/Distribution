@@ -15,7 +15,8 @@ object QueryOutdatedPage {
     __obj.asInstanceOf[QueryOutdatedPage]
   }
   
-  extension [Self <: QueryOutdatedPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOutdatedPage] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: OutdatedPage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

@@ -251,7 +251,8 @@ object sapMViewSettingsCustomItemMod {
       __obj.asInstanceOf[ViewSettingsCustomItemSettings]
     }
     
-    extension [Self <: ViewSettingsCustomItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewSettingsCustomItemSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomControl(value: typings.openui5.sapUiCoreControlMod.default): Self = StObject.set(x, "customControl", value.asInstanceOf[js.Any])
       

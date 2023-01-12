@@ -60,7 +60,8 @@ object Hyperlink {
     __obj.asInstanceOf[Hyperlink]
   }
   
-  extension [Self <: Hyperlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hyperlink] (val x: Self) extends AnyVal {
     
     inline def setAddToFavorites(value: () => Unit): Self = StObject.set(x, "AddToFavorites", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object ExtendLicenseConsumptionResponse {
     __obj.asInstanceOf[ExtendLicenseConsumptionResponse]
   }
   
-  extension [Self <: ExtendLicenseConsumptionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendLicenseConsumptionResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: ISO8601DateTime): Self = StObject.set(x, "Expiration", value.asInstanceOf[js.Any])
     

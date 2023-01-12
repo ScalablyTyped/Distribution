@@ -27,7 +27,8 @@ object typesInvalidCommitExceptionMod {
       __obj.asInstanceOf[InvalidCommitException]
     }
     
-    extension [Self <: InvalidCommitException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidCommitException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

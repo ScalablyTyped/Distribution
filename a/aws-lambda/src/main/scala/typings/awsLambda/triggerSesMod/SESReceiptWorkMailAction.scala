@@ -21,7 +21,8 @@ object SESReceiptWorkMailAction {
     __obj.asInstanceOf[SESReceiptWorkMailAction]
   }
   
-  extension [Self <: SESReceiptWorkMailAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SESReceiptWorkMailAction] (val x: Self) extends AnyVal {
     
     inline def setOrganizationArn(value: String): Self = StObject.set(x, "organizationArn", value.asInstanceOf[js.Any])
     

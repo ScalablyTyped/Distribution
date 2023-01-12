@@ -72,7 +72,8 @@ object TableFieldSchema {
     __obj.asInstanceOf[TableFieldSchema]
   }
   
-  extension [Self <: TableFieldSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableFieldSchema] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: Names): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

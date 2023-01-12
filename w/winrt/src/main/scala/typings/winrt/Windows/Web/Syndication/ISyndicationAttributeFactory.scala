@@ -15,7 +15,8 @@ object ISyndicationAttributeFactory {
     __obj.asInstanceOf[ISyndicationAttributeFactory]
   }
   
-  extension [Self <: ISyndicationAttributeFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationAttributeFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateSyndicationAttribute(value: (String, String, String) => SyndicationAttribute): Self = StObject.set(x, "createSyndicationAttribute", js.Any.fromFunction3(value))
   }

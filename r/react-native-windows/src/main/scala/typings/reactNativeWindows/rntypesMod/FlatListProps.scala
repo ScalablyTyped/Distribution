@@ -78,7 +78,8 @@ object FlatListProps {
     __obj.asInstanceOf[FlatListProps[ItemT]]
   }
   
-  extension [Self <: FlatListProps[?], ItemT](x: Self & FlatListProps[ItemT]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlatListProps[?], ItemT] (val x: Self & FlatListProps[ItemT]) extends AnyVal {
     
     inline def setColumnWrapperStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "columnWrapperStyle", value.asInstanceOf[js.Any])
     

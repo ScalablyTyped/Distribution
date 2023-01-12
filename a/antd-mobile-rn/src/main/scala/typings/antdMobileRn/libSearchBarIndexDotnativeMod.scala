@@ -78,7 +78,8 @@ object libSearchBarIndexDotnativeMod {
       __obj.asInstanceOf[SearchBarNativeProps]
     }
     
-    extension [Self <: SearchBarNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarNativeProps] (val x: Self) extends AnyVal {
       
       inline def setOnChangeText(value: /* text */ String => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
       

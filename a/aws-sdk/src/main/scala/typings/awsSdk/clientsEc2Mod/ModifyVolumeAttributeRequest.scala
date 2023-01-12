@@ -28,7 +28,8 @@ object ModifyVolumeAttributeRequest {
     __obj.asInstanceOf[ModifyVolumeAttributeRequest]
   }
   
-  extension [Self <: ModifyVolumeAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVolumeAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoEnableIO(value: AttributeBooleanValue): Self = StObject.set(x, "AutoEnableIO", value.asInstanceOf[js.Any])
     

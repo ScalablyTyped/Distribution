@@ -16,7 +16,8 @@ object CreateBuiltInVariableResponse {
     __obj.asInstanceOf[CreateBuiltInVariableResponse]
   }
   
-  extension [Self <: CreateBuiltInVariableResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBuiltInVariableResponse] (val x: Self) extends AnyVal {
     
     inline def setBuiltInVariable(value: js.Array[BuiltInVariable]): Self = StObject.set(x, "builtInVariable", value.asInstanceOf[js.Any])
     

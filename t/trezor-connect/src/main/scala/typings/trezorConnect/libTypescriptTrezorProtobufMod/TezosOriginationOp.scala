@@ -43,7 +43,8 @@ object TezosOriginationOp {
     __obj.asInstanceOf[TezosOriginationOp]
   }
   
-  extension [Self <: TezosOriginationOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosOriginationOp] (val x: Self) extends AnyVal {
     
     inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object dynamoDBMod {
       __obj.asInstanceOf[BinarySet]
     }
     
-    extension [Self <: BinarySet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinarySet] (val x: Self) extends AnyVal {
       
       inline def setType(value: Binary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object dynamoDBMod {
       __obj.asInstanceOf[GetItemInput]
     }
     
-    extension [Self <: GetItemInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetItemInput] (val x: Self) extends AnyVal {
       
       inline def setAttributesToGet(value: js.Array[String]): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object dynamoDBMod {
       __obj.asInstanceOf[NumberSet]
     }
     
-    extension [Self <: NumberSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberSet] (val x: Self) extends AnyVal {
       
       inline def setType(value: Number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object dynamoDBMod {
       __obj.asInstanceOf[Projection]
     }
     
-    extension [Self <: Projection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
       
       inline def setNonKeyAttributes(value: js.Array[String]): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object dynamoDBMod {
       __obj.asInstanceOf[StringSet]
     }
     
-    extension [Self <: StringSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringSet] (val x: Self) extends AnyVal {
       
       inline def setType(value: typings.dynamodb.dynamodbStrings.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

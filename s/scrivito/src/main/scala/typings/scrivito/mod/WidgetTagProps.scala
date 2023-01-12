@@ -20,7 +20,8 @@ object WidgetTagProps {
     __obj.asInstanceOf[WidgetTagProps]
   }
   
-  extension [Self <: WidgetTagProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetTagProps] (val x: Self) extends AnyVal {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

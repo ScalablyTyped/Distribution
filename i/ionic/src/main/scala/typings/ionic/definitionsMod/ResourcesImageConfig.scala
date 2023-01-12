@@ -25,7 +25,8 @@ object ResourcesImageConfig {
     __obj.asInstanceOf[ResourcesImageConfig]
   }
   
-  extension [Self <: ResourcesImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcesImageConfig] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: String): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

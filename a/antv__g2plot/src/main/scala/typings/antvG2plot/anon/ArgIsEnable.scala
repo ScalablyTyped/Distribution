@@ -21,7 +21,8 @@ object ArgIsEnable {
     __obj.asInstanceOf[ArgIsEnable]
   }
   
-  extension [Self <: ArgIsEnable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgIsEnable] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Array[String]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

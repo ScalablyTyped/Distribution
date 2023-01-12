@@ -18,7 +18,8 @@ object RequestProgress {
     __obj.asInstanceOf[RequestProgress]
   }
   
-  extension [Self <: RequestProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestProgress] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: EnableRequestProgress): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

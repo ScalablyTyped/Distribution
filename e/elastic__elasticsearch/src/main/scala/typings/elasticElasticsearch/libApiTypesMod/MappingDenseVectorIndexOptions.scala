@@ -20,7 +20,8 @@ object MappingDenseVectorIndexOptions {
     __obj.asInstanceOf[MappingDenseVectorIndexOptions]
   }
   
-  extension [Self <: MappingDenseVectorIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDenseVectorIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setEf_construction(value: integer): Self = StObject.set(x, "ef_construction", value.asInstanceOf[js.Any])
     

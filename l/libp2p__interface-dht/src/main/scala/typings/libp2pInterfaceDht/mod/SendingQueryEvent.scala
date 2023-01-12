@@ -33,7 +33,8 @@ object SendingQueryEvent {
     __obj.asInstanceOf[SendingQueryEvent]
   }
   
-  extension [Self <: SendingQueryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendingQueryEvent] (val x: Self) extends AnyVal {
     
     inline def setMessageName(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageType * / any */ String

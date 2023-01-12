@@ -19,7 +19,8 @@ object ColorPickerEvent {
     __obj.asInstanceOf[ColorPickerEvent]
   }
   
-  extension [Self <: ColorPickerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPickerEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

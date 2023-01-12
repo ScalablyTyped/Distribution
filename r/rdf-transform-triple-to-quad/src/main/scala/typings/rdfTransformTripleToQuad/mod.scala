@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[TripleToQuadTransformOptions]
     }
     
-    extension [Self <: TripleToQuadTransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TripleToQuadTransformOptions] (val x: Self) extends AnyVal {
       
       inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
     }

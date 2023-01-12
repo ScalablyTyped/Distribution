@@ -23,7 +23,8 @@ object DeactivateMFADeviceRequest {
     __obj.asInstanceOf[DeactivateMFADeviceRequest]
   }
   
-  extension [Self <: DeactivateMFADeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeactivateMFADeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setSerialNumber(value: serialNumberType): Self = StObject.set(x, "SerialNumber", value.asInstanceOf[js.Any])
     

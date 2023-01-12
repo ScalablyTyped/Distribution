@@ -36,7 +36,8 @@ object distComponentsSortableMod {
       __obj.asInstanceOf[Sortable]
     }
     
-    extension [Self <: Sortable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sortable] (val x: Self) extends AnyVal {
       
       inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       

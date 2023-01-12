@@ -31,7 +31,8 @@ object RenderBitmap {
     __obj.asInstanceOf[RenderBitmap]
   }
   
-  extension [Self <: RenderBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderBitmap] (val x: Self) extends AnyVal {
     
     inline def setRenderBitmap(
       value: (/* img */ HTMLElement, /* context */ CanvasRenderingContext2D, /* contextSize */ Double, /* bleed */ Double) => Unit

@@ -19,7 +19,8 @@ object SummaryProcess {
     __obj.asInstanceOf[SummaryProcess]
   }
   
-  extension [Self <: SummaryProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SummaryProcess] (val x: Self) extends AnyVal {
     
     inline def setSummaryProcess(value: String): Self = StObject.set(x, "summaryProcess", value.asInstanceOf[js.Any])
     

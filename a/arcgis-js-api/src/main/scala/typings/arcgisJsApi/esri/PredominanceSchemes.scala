@@ -46,7 +46,8 @@ object PredominanceSchemes {
     __obj.asInstanceOf[PredominanceSchemes]
   }
   
-  extension [Self <: PredominanceSchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominanceSchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

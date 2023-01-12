@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[NaturalDragAnimationType]
     }
     
-    extension [Self <: NaturalDragAnimationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NaturalDragAnimationType] (val x: Self) extends AnyVal {
       
       inline def setAnimationRotationFade(value: Double): Self = StObject.set(x, "animationRotationFade", value.asInstanceOf[js.Any])
       

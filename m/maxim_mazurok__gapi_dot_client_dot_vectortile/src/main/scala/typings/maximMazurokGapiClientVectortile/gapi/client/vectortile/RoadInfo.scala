@@ -16,7 +16,8 @@ object RoadInfo {
     __obj.asInstanceOf[RoadInfo]
   }
   
-  extension [Self <: RoadInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoadInfo] (val x: Self) extends AnyVal {
     
     inline def setIsPrivate(value: Boolean): Self = StObject.set(x, "isPrivate", value.asInstanceOf[js.Any])
     

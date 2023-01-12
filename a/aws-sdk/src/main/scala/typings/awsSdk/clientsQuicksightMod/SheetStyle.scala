@@ -23,7 +23,8 @@ object SheetStyle {
     __obj.asInstanceOf[SheetStyle]
   }
   
-  extension [Self <: SheetStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetStyle] (val x: Self) extends AnyVal {
     
     inline def setTile(value: TileStyle): Self = StObject.set(x, "Tile", value.asInstanceOf[js.Any])
     

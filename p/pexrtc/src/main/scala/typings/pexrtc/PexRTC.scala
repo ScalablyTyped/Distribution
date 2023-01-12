@@ -619,7 +619,8 @@ object PexRTC {
       __obj.asInstanceOf[AudioStatistics]
     }
     
-    extension [Self <: AudioStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioStatistics] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: String): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
@@ -680,7 +681,8 @@ object PexRTC {
       __obj.asInstanceOf[ChatMessage]
     }
     
-    extension [Self <: ChatMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChatMessage] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -737,7 +739,8 @@ object PexRTC {
       __obj.asInstanceOf[GuestParticipant]
     }
     
-    extension [Self <: GuestParticipant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuestParticipant] (val x: Self) extends AnyVal {
       
       inline def setRole(value: guest_): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
@@ -788,7 +791,8 @@ object PexRTC {
       __obj.asInstanceOf[HostParticipant]
     }
     
-    extension [Self <: HostParticipant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostParticipant] (val x: Self) extends AnyVal {
       
       inline def setRole(value: chair): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     }
@@ -807,7 +811,8 @@ object PexRTC {
       __obj.asInstanceOf[LayoutResponse]
     }
     
-    extension [Self <: LayoutResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayoutResponse] (val x: Self) extends AnyVal {
       
       inline def setParticipants(value: js.Array[String]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
       
@@ -944,7 +949,8 @@ object PexRTC {
       __obj.asInstanceOf[Participant]
     }
     
-    extension [Self <: Participant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Participant] (val x: Self) extends AnyVal {
       
       inline def setApi_url(value: String): Self = StObject.set(x, "api_url", value.asInstanceOf[js.Any])
       
@@ -1089,7 +1095,8 @@ object PexRTC {
       __obj.asInstanceOf[Statistics]
     }
     
-    extension [Self <: Statistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statistics] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: Audio): Self = StObject.set(x, "incoming", value.asInstanceOf[js.Any])
       
@@ -1125,7 +1132,8 @@ object PexRTC {
       __obj.asInstanceOf[VideoStatistics]
     }
     
-    extension [Self <: VideoStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoStatistics] (val x: Self) extends AnyVal {
       
       inline def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
       

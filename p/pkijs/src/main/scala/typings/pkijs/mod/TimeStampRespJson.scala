@@ -17,7 +17,8 @@ object TimeStampRespJson {
     __obj.asInstanceOf[TimeStampRespJson]
   }
   
-  extension [Self <: TimeStampRespJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeStampRespJson] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: PKIStatusInfoJson): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

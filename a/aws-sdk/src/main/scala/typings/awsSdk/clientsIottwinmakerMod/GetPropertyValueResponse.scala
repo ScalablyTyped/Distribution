@@ -18,7 +18,8 @@ object GetPropertyValueResponse {
     __obj.asInstanceOf[GetPropertyValueResponse]
   }
   
-  extension [Self <: GetPropertyValueResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertyValueResponse] (val x: Self) extends AnyVal {
     
     inline def setPropertyValues(value: PropertyLatestValueMap): Self = StObject.set(x, "propertyValues", value.asInstanceOf[js.Any])
   }

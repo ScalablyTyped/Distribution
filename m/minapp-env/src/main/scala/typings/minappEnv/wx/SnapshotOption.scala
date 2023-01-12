@@ -22,7 +22,8 @@ object SnapshotOption {
     __obj.asInstanceOf[SnapshotOption]
   }
   
-  extension [Self <: SnapshotOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

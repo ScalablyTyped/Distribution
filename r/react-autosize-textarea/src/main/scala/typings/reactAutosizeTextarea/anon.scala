@@ -843,7 +843,8 @@ object anon {
       __obj.asInstanceOf[PickHTMLPropsHTMLTextArea]
     }
     
-    extension [Self <: PickHTMLPropsHTMLTextArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickHTMLPropsHTMLTextArea] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

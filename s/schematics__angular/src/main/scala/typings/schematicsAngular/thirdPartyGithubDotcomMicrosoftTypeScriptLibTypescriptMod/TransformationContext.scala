@@ -74,7 +74,8 @@ object TransformationContext {
     __obj.asInstanceOf[TransformationContext]
   }
   
-  extension [Self <: TransformationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformationContext] (val x: Self) extends AnyVal {
     
     inline def setEnableEmitNotification(value: SyntaxKind => Unit): Self = StObject.set(x, "enableEmitNotification", js.Any.fromFunction1(value))
     

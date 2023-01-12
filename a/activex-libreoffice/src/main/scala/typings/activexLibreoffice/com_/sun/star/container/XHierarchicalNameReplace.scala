@@ -27,7 +27,8 @@ object XHierarchicalNameReplace {
     __obj.asInstanceOf[XHierarchicalNameReplace]
   }
   
-  extension [Self <: XHierarchicalNameReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XHierarchicalNameReplace] (val x: Self) extends AnyVal {
     
     inline def setReplaceByHierarchicalName(value: (String, Any) => Unit): Self = StObject.set(x, "replaceByHierarchicalName", js.Any.fromFunction2(value))
   }

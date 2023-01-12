@@ -64,7 +64,8 @@ object ParkMessage {
     __obj.asInstanceOf[ParkMessage]
   }
   
-  extension [Self <: ParkMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParkMessage] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

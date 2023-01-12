@@ -25,7 +25,8 @@ object LongRunningRecognizeMetadata {
     __obj.asInstanceOf[LongRunningRecognizeMetadata]
   }
   
-  extension [Self <: LongRunningRecognizeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRunningRecognizeMetadata] (val x: Self) extends AnyVal {
     
     inline def setLastUpdateTime(value: String): Self = StObject.set(x, "lastUpdateTime", value.asInstanceOf[js.Any])
     

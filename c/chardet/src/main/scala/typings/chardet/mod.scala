@@ -52,7 +52,8 @@ object mod {
       __obj.asInstanceOf[FullOptions]
     }
     
-    extension [Self <: FullOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullOptions] (val x: Self) extends AnyVal {
       
       inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
       

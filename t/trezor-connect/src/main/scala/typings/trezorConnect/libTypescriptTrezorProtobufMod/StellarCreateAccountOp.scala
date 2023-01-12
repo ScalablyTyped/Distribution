@@ -19,7 +19,8 @@ object StellarCreateAccountOp {
     __obj.asInstanceOf[StellarCreateAccountOp]
   }
   
-  extension [Self <: StellarCreateAccountOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarCreateAccountOp] (val x: Self) extends AnyVal {
     
     inline def setNew_account(value: String): Self = StObject.set(x, "new_account", value.asInstanceOf[js.Any])
     

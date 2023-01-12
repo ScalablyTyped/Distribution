@@ -232,7 +232,8 @@ object sapMSuggestionItemMod {
       __obj.asInstanceOf[SuggestionItemSettings]
     }
     
-    extension [Self <: SuggestionItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuggestionItemSettings] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String | PropertyBindingInfo): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

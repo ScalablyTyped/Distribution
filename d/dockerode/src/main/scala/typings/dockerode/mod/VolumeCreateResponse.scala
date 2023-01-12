@@ -41,7 +41,8 @@ object VolumeCreateResponse {
     __obj.asInstanceOf[VolumeCreateResponse]
   }
   
-  extension [Self <: VolumeCreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeCreateResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

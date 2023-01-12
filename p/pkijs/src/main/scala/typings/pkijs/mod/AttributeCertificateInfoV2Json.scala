@@ -41,7 +41,8 @@ object AttributeCertificateInfoV2Json {
     __obj.asInstanceOf[AttributeCertificateInfoV2Json]
   }
   
-  extension [Self <: AttributeCertificateInfoV2Json](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeCertificateInfoV2Json] (val x: Self) extends AnyVal {
     
     inline def setAttrCertValidityPeriod(value: AttCertValidityPeriodJson): Self = StObject.set(x, "attrCertValidityPeriod", value.asInstanceOf[js.Any])
     

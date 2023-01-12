@@ -23,7 +23,8 @@ object JobScopeTerm {
     __obj.asInstanceOf[JobScopeTerm]
   }
   
-  extension [Self <: JobScopeTerm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobScopeTerm] (val x: Self) extends AnyVal {
     
     inline def setSimpleScopeTerm(value: SimpleScopeTerm): Self = StObject.set(x, "simpleScopeTerm", value.asInstanceOf[js.Any])
     

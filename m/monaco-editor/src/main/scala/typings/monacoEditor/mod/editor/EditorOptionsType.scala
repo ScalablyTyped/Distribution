@@ -710,7 +710,8 @@ object EditorOptionsType {
     __obj.asInstanceOf[EditorOptionsType]
   }
   
-  extension [Self <: EditorOptionsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorOptionsType] (val x: Self) extends AnyVal {
     
     inline def setAcceptSuggestionOnCommitCharacter(value: IEditorOption[acceptSuggestionOnCommitCharacter, Boolean]): Self = StObject.set(x, "acceptSuggestionOnCommitCharacter", value.asInstanceOf[js.Any])
     

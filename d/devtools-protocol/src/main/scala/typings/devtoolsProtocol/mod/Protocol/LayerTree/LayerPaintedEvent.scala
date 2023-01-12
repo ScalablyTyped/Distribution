@@ -24,7 +24,8 @@ object LayerPaintedEvent {
     __obj.asInstanceOf[LayerPaintedEvent]
   }
   
-  extension [Self <: LayerPaintedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerPaintedEvent] (val x: Self) extends AnyVal {
     
     inline def setClip(value: Rect): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

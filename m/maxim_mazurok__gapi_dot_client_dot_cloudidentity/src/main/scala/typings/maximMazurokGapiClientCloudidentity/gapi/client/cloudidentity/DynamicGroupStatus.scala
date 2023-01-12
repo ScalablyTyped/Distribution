@@ -22,7 +22,8 @@ object DynamicGroupStatus {
     __obj.asInstanceOf[DynamicGroupStatus]
   }
   
-  extension [Self <: DynamicGroupStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicGroupStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

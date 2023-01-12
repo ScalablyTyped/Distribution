@@ -76,7 +76,8 @@ object ContactAnnotationList {
     __obj.asInstanceOf[ContactAnnotationList]
   }
   
-  extension [Self <: ContactAnnotationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactAnnotationList] (val x: Self) extends AnyVal {
     
     inline def setDeleteAnnotationAsync(value: ContactAnnotation => IPromiseWithIAsyncAction): Self = StObject.set(x, "deleteAnnotationAsync", js.Any.fromFunction1(value))
     

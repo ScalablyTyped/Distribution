@@ -371,7 +371,8 @@ object libKleisliMod {
       __obj.asInstanceOf[Kleisli[M, I, E, A]]
     }
     
-    extension [Self <: Kleisli[?, ?, ?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I, E, A](x: Self & (Kleisli[M, I, E, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Kleisli[?, ?, ?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I, E, A] (val x: Self & (Kleisli[M, I, E, A])) extends AnyVal {
       
       inline def setDecode(value: I => Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }

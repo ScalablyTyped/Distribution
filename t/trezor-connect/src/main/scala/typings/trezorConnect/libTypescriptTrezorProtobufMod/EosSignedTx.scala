@@ -15,7 +15,8 @@ object EosSignedTx {
     __obj.asInstanceOf[EosSignedTx]
   }
   
-  extension [Self <: EosSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosSignedTx] (val x: Self) extends AnyVal {
     
     inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }

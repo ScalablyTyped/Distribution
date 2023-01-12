@@ -17,7 +17,8 @@ object IWindowActivatedEventArgs {
     __obj.asInstanceOf[IWindowActivatedEventArgs]
   }
   
-  extension [Self <: IWindowActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindowActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setWindowActivationState(value: CoreWindowActivationState): Self = StObject.set(x, "windowActivationState", value.asInstanceOf[js.Any])
   }

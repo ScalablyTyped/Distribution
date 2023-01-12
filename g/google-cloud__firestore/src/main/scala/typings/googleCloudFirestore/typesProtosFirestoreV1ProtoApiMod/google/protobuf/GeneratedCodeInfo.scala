@@ -134,7 +134,8 @@ object GeneratedCodeInfo {
       __obj.asInstanceOf[IAnnotation]
     }
     
-    extension [Self <: IAnnotation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: Double): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       

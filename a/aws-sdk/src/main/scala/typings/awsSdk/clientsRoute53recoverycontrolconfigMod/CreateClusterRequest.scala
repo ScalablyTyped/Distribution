@@ -28,7 +28,8 @@ object CreateClusterRequest {
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
-  extension [Self <: CreateClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: stringMin1Max64PatternS): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

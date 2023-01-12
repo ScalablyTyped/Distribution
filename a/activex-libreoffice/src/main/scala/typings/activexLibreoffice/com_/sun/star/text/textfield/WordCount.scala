@@ -57,7 +57,8 @@ object WordCount {
     __obj.asInstanceOf[WordCount]
   }
   
-  extension [Self <: WordCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

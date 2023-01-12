@@ -83,7 +83,8 @@ object Field {
     __obj.asInstanceOf[Field]
   }
   
-  extension [Self <: Field](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
     
     inline def setCodeInterval(value: Interval): Self = StObject.set(x, "codeInterval", value.asInstanceOf[js.Any])
     

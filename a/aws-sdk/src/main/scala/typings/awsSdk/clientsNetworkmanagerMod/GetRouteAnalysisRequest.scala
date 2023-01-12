@@ -23,7 +23,8 @@ object GetRouteAnalysisRequest {
     __obj.asInstanceOf[GetRouteAnalysisRequest]
   }
   
-  extension [Self <: GetRouteAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRouteAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setGlobalNetworkId(value: GlobalNetworkId): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     

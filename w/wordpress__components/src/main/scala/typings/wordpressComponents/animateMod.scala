@@ -48,7 +48,8 @@ object animateMod {
         __obj.asInstanceOf[AppearProps]
       }
       
-      extension [Self <: AppearProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AppearProps] (val x: Self) extends AnyVal {
         
         inline def setOptions(value: Origin): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
@@ -72,7 +73,8 @@ object animateMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: ClassName => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
         
@@ -96,7 +98,8 @@ object animateMod {
         __obj.asInstanceOf[LoadingProps]
       }
       
-      extension [Self <: LoadingProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LoadingProps] (val x: Self) extends AnyVal {
         
         inline def setType(value: loading): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -147,7 +150,8 @@ object animateMod {
         __obj.asInstanceOf[SlideInProps]
       }
       
-      extension [Self <: SlideInProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SlideInProps] (val x: Self) extends AnyVal {
         
         inline def setOptions(value: `0`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         

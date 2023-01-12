@@ -27,7 +27,8 @@ object CoreTextSelectionRequest {
     __obj.asInstanceOf[CoreTextSelectionRequest]
   }
   
-  extension [Self <: CoreTextSelectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextSelectionRequest] (val x: Self) extends AnyVal {
     
     inline def setGetDeferral(value: () => Deferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     

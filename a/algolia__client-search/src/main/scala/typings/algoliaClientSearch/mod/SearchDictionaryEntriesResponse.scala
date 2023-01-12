@@ -36,7 +36,8 @@ object SearchDictionaryEntriesResponse {
     __obj.asInstanceOf[SearchDictionaryEntriesResponse]
   }
   
-  extension [Self <: SearchDictionaryEntriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDictionaryEntriesResponse] (val x: Self) extends AnyVal {
     
     inline def setHits(value: js.Array[DictionaryEntry]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

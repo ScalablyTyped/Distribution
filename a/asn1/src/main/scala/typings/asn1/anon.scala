@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[GrowthFactor]
     }
     
-    extension [Self <: GrowthFactor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GrowthFactor] (val x: Self) extends AnyVal {
       
       inline def setGrowthFactor(value: Double): Self = StObject.set(x, "growthFactor", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object UpdateSchemaResponse {
     __obj.asInstanceOf[UpdateSchemaResponse]
   }
   
-  extension [Self <: UpdateSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

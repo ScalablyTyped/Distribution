@@ -41,7 +41,8 @@ object Typeofsockets {
     __obj.asInstanceOf[Typeofsockets]
   }
   
-  extension [Self <: Typeofsockets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofsockets] (val x: Self) extends AnyVal {
     
     inline def setTcp(value: Typeoftcp): Self = StObject.set(x, "tcp", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Nested {
     __obj.asInstanceOf[Nested]
   }
   
-  extension [Self <: Nested](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nested] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

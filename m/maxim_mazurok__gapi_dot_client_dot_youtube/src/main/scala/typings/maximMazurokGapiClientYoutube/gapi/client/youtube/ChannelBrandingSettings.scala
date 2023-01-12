@@ -25,7 +25,8 @@ object ChannelBrandingSettings {
     __obj.asInstanceOf[ChannelBrandingSettings]
   }
   
-  extension [Self <: ChannelBrandingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelBrandingSettings] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: ChannelSettings): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

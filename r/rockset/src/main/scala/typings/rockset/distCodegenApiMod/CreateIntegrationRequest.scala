@@ -83,7 +83,8 @@ object CreateIntegrationRequest {
     __obj.asInstanceOf[CreateIntegrationRequest]
   }
   
-  extension [Self <: CreateIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object CandidateTemplate {
     __obj.asInstanceOf[CandidateTemplate]
   }
   
-  extension [Self <: CandidateTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandidateTemplate] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
     

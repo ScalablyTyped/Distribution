@@ -22,7 +22,8 @@ object InventoryVersionedPackage {
     __obj.asInstanceOf[InventoryVersionedPackage]
   }
   
-  extension [Self <: InventoryVersionedPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryVersionedPackage] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

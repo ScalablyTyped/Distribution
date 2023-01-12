@@ -27,7 +27,8 @@ object OscillatorOptions {
     __obj.asInstanceOf[OscillatorOptions]
   }
   
-  extension [Self <: OscillatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OscillatorOptions] (val x: Self) extends AnyVal {
     
     inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
     

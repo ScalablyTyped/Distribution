@@ -46,7 +46,8 @@ object GoogleCloudMlV1StudyConfigParameterSpec {
     __obj.asInstanceOf[GoogleCloudMlV1StudyConfigParameterSpec]
   }
   
-  extension [Self <: GoogleCloudMlV1StudyConfigParameterSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1StudyConfigParameterSpec] (val x: Self) extends AnyVal {
     
     inline def setCategoricalValueSpec(value: GoogleCloudMlV1StudyConfigParameterSpecCategoricalValueSpec): Self = StObject.set(x, "categoricalValueSpec", value.asInstanceOf[js.Any])
     

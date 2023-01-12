@@ -98,7 +98,8 @@ object mod {
     @js.native
     val ^ : DataTypes = js.native
     
-    extension [Self <: DataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypes] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: `0x41`): Self = StObject.set(x, "Counter", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
     @js.native
     val ^ : Errors = js.native
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationError(value: `16`): Self = StObject.set(x, "AuthorizationError", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object mod {
     @js.native
     val ^ : PduTypes = js.native
     
-    extension [Self <: PduTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PduTypes] (val x: Self) extends AnyVal {
       
       inline def setGetNextRequestPDU(value: `0x01`): Self = StObject.set(x, "GetNextRequestPDU", value.asInstanceOf[js.Any])
       
@@ -438,7 +441,8 @@ object mod {
     @js.native
     val ^ : Versions = js.native
     
-    extension [Self <: Versions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
       
       inline def setSNMPv1(value: `0`): Self = StObject.set(x, "SNMPv1", value.asInstanceOf[js.Any])
       
@@ -501,7 +505,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCommunity(value: String): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
       
@@ -543,7 +548,8 @@ object mod {
       __obj.asInstanceOf[PDU]
     }
     
-    extension [Self <: PDU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PDU] (val x: Self) extends AnyVal {
       
       inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -574,7 +580,8 @@ object mod {
       __obj.asInstanceOf[Packet]
     }
     
-    extension [Self <: Packet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Packet] (val x: Self) extends AnyVal {
       
       inline def setCommunity(value: String): Self = StObject.set(x, "community", value.asInstanceOf[js.Any])
       
@@ -603,7 +610,8 @@ object mod {
       __obj.asInstanceOf[ResponseInfo]
     }
     
-    extension [Self <: ResponseInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseInfo] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -646,7 +654,8 @@ object mod {
       __obj.asInstanceOf[SessionOptions]
     }
     
-    extension [Self <: SessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
       
       inline def setBindPort(value: Double): Self = StObject.set(x, "bindPort", value.asInstanceOf[js.Any])
       
@@ -716,7 +725,8 @@ object mod {
       __obj.asInstanceOf[VarBind]
     }
     
-    extension [Self <: VarBind](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VarBind] (val x: Self) extends AnyVal {
       
       inline def setOid(value: js.Array[Double]): Self = StObject.set(x, "oid", value.asInstanceOf[js.Any])
       

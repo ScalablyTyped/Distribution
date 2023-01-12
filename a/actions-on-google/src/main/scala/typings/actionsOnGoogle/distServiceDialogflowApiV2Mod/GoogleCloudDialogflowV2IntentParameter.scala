@@ -29,7 +29,8 @@ object GoogleCloudDialogflowV2IntentParameter {
     __obj.asInstanceOf[GoogleCloudDialogflowV2IntentParameter]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2IntentParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2IntentParameter] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

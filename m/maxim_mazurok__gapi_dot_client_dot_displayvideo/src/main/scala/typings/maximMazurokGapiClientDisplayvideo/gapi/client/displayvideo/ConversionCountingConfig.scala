@@ -25,7 +25,8 @@ object ConversionCountingConfig {
     __obj.asInstanceOf[ConversionCountingConfig]
   }
   
-  extension [Self <: ConversionCountingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConversionCountingConfig] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivityConfigs(value: js.Array[TrackingFloodlightActivityConfig]): Self = StObject.set(x, "floodlightActivityConfigs", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object distCommonjsModulesRatingRatingIconMod extends Shortcut {
       __obj.asInstanceOf[StrictRatingIconProps]
     }
     
-    extension [Self <: StrictRatingIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictRatingIconProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

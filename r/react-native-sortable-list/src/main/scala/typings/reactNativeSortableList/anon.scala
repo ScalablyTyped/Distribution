@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Animated]
     }
     
-    extension [Self <: Animated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Key[K]]
     }
     
-    extension [Self <: Key[?], K](x: Self & Key[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key[?], K] (val x: Self & Key[K]) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       

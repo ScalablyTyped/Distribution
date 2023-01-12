@@ -46,7 +46,8 @@ object ASPxClientHint {
     __obj.asInstanceOf[ASPxClientHint]
   }
   
-  extension [Self <: ASPxClientHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHint] (val x: Self) extends AnyVal {
     
     inline def setHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = StObject.set(x, "Hiding", value.asInstanceOf[js.Any])
     

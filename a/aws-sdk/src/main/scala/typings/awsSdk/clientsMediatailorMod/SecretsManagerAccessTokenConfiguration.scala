@@ -28,7 +28,8 @@ object SecretsManagerAccessTokenConfiguration {
     __obj.asInstanceOf[SecretsManagerAccessTokenConfiguration]
   }
   
-  extension [Self <: SecretsManagerAccessTokenConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretsManagerAccessTokenConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHeaderName(value: _String): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DJListUpdate {
     __obj.asInstanceOf[DJListUpdate]
   }
   
-  extension [Self <: DJListUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DJListUpdate] (val x: Self) extends AnyVal {
     
     inline def setDjs(value: js.Array[DJ]): Self = StObject.set(x, "djs", value.asInstanceOf[js.Any])
     

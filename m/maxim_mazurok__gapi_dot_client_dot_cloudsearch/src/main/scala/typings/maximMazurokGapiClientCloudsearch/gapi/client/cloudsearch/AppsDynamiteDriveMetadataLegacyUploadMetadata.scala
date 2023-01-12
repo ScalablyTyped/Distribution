@@ -22,7 +22,8 @@ object AppsDynamiteDriveMetadataLegacyUploadMetadata {
     __obj.asInstanceOf[AppsDynamiteDriveMetadataLegacyUploadMetadata]
   }
   
-  extension [Self <: AppsDynamiteDriveMetadataLegacyUploadMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteDriveMetadataLegacyUploadMetadata] (val x: Self) extends AnyVal {
     
     inline def setLegacyUniqueId(value: String): Self = StObject.set(x, "legacyUniqueId", value.asInstanceOf[js.Any])
     

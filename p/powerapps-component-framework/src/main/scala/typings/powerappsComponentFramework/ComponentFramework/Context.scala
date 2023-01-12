@@ -53,7 +53,8 @@ object Context {
     __obj.asInstanceOf[Context[TInputs]]
   }
   
-  extension [Self <: Context[?], TInputs](x: Self & Context[TInputs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Context[?], TInputs] (val x: Self & Context[TInputs]) extends AnyVal {
     
     inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

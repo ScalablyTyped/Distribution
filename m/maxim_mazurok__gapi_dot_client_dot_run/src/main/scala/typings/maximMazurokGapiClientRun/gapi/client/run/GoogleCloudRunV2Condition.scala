@@ -40,7 +40,8 @@ object GoogleCloudRunV2Condition {
     __obj.asInstanceOf[GoogleCloudRunV2Condition]
   }
   
-  extension [Self <: GoogleCloudRunV2Condition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRunV2Condition] (val x: Self) extends AnyVal {
     
     inline def setExecutionReason(value: String): Self = StObject.set(x, "executionReason", value.asInstanceOf[js.Any])
     

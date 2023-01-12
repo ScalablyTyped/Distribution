@@ -20,7 +20,8 @@ object TypeofPivotContainer {
     __obj.asInstanceOf[TypeofPivotContainer]
   }
   
-  extension [Self <: TypeofPivotContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotContainer] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => PivotContainer): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

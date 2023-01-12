@@ -24,7 +24,8 @@ object RandomZoneSource {
     __obj.asInstanceOf[RandomZoneSource]
   }
   
-  extension [Self <: RandomZoneSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomZoneSource] (val x: Self) extends AnyVal {
     
     inline def setGetRandomPoint(value: /* point */ Vector2Like => Unit): Self = StObject.set(x, "getRandomPoint", js.Any.fromFunction1(value))
   }

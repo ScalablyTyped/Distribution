@@ -2811,7 +2811,8 @@ object mod {
       __obj.asInstanceOf[HtmlOrSvgElementTagNameMap]
     }
     
-    extension [Self <: HtmlOrSvgElementTagNameMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlOrSvgElementTagNameMap] (val x: Self) extends AnyVal {
       
       inline def setA(value: HTMLAnchorElement): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -3172,7 +3173,8 @@ object mod {
       __obj.asInstanceOf[VNode[TTagName]]
     }
     
-    extension [Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */](x: Self & VNode[TTagName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode[?], TTagName /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 170, starting with typings.superfine.superfineStrings.a, typings.superfine.superfineStrings.abbr, typings.superfine.superfineStrings.address */ Any */] (val x: Self & VNode[TTagName]) extends AnyVal {
       
       inline def setName(value: TTagName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -3709,7 +3711,8 @@ object mod {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        extension [Self <: IntrinsicElements](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           inline def setA(value: Props[a]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
           

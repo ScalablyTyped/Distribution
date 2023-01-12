@@ -1287,7 +1287,8 @@ object sapUiUnifiedCalendarHeaderMod {
       __obj.asInstanceOf[HeaderSettings]
     }
     
-    extension [Self <: HeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalTextButton0(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalTextButton0", value.asInstanceOf[js.Any])
       

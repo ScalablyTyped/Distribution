@@ -38,7 +38,8 @@ object GetInventorySchemaRequest {
     __obj.asInstanceOf[GetInventorySchemaRequest]
   }
   
-  extension [Self <: GetInventorySchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInventorySchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregator(value: AggregatorSchemaOnly): Self = StObject.set(x, "Aggregator", value.asInstanceOf[js.Any])
     

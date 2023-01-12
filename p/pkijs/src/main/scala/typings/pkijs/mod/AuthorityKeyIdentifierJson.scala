@@ -21,7 +21,8 @@ object AuthorityKeyIdentifierJson {
     __obj.asInstanceOf[AuthorityKeyIdentifierJson]
   }
   
-  extension [Self <: AuthorityKeyIdentifierJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorityKeyIdentifierJson] (val x: Self) extends AnyVal {
     
     inline def setAuthorityCertIssuer(value: js.Array[GeneralNameJson]): Self = StObject.set(x, "authorityCertIssuer", value.asInstanceOf[js.Any])
     

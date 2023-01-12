@@ -30,7 +30,8 @@ object Attemptnumber {
     __obj.asInstanceOf[Attemptnumber]
   }
   
-  extension [Self <: Attemptnumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attemptnumber] (val x: Self) extends AnyVal {
     
     inline def setAttempt_number(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['attempt-number'] */ js.Any

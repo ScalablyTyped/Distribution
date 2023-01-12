@@ -23,7 +23,8 @@ object GetScheduleInput {
     __obj.asInstanceOf[GetScheduleInput]
   }
   
-  extension [Self <: GetScheduleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScheduleInput] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: ScheduleGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

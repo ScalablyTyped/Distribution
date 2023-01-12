@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ChunkName]
     }
     
-    extension [Self <: ChunkName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkName] (val x: Self) extends AnyVal {
       
       inline def setChunkName(value: String): Self = StObject.set(x, "chunkName", value.asInstanceOf[js.Any])
       

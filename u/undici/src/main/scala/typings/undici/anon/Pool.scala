@@ -16,7 +16,8 @@ object Pool {
     __obj.asInstanceOf[Pool]
   }
   
-  extension [Self <: Pool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pool] (val x: Self) extends AnyVal {
     
     inline def setPool(value: js.Array[DispatchInterceptor]): Self = StObject.set(x, "Pool", value.asInstanceOf[js.Any])
     

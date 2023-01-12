@@ -59,7 +59,8 @@ object AddAdd {
     __obj.asInstanceOf[AddAdd]
   }
   
-  extension [Self <: AddAdd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddAdd] (val x: Self) extends AnyVal {
     
     inline def setAddAdd(value: scala.Double): Self = StObject.set(x, "addAdd", value.asInstanceOf[js.Any])
     

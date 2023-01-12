@@ -28,7 +28,8 @@ object AuditTaskMetadata {
     __obj.asInstanceOf[AuditTaskMetadata]
   }
   
-  extension [Self <: AuditTaskMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditTaskMetadata] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

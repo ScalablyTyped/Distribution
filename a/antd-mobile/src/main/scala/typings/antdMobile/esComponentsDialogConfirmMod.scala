@@ -220,7 +220,8 @@ object esComponentsDialogConfirmMod {
       __obj.asInstanceOf[DialogConfirmProps]
     }
     
-    extension [Self <: DialogConfirmProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogConfirmProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

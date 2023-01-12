@@ -34,7 +34,8 @@ object CodeActionProvider {
     __obj.asInstanceOf[CodeActionProvider]
   }
   
-  extension [Self <: CodeActionProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeActionProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideCodeActions(value: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]): Self = StObject.set(x, "provideCodeActions", js.Any.fromFunction4(value))
     

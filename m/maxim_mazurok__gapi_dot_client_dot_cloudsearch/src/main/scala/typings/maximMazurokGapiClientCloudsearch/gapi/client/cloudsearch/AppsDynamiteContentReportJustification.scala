@@ -16,7 +16,8 @@ object AppsDynamiteContentReportJustification {
     __obj.asInstanceOf[AppsDynamiteContentReportJustification]
   }
   
-  extension [Self <: AppsDynamiteContentReportJustification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteContentReportJustification] (val x: Self) extends AnyVal {
     
     inline def setUserJustification(value: String): Self = StObject.set(x, "userJustification", value.asInstanceOf[js.Any])
     

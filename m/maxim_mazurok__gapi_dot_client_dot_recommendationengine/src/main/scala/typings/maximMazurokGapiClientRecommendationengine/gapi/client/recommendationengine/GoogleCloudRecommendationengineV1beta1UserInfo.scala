@@ -45,7 +45,8 @@ object GoogleCloudRecommendationengineV1beta1UserInfo {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1UserInfo]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1UserInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1UserInfo] (val x: Self) extends AnyVal {
     
     inline def setDirectUserRequest(value: Boolean): Self = StObject.set(x, "directUserRequest", value.asInstanceOf[js.Any])
     

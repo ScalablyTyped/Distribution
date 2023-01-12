@@ -26,7 +26,8 @@ object ActiveCellSize {
     __obj.asInstanceOf[ActiveCellSize]
   }
   
-  extension [Self <: ActiveCellSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveCellSize] (val x: Self) extends AnyVal {
     
     inline def setActiveCellSize(value: Node): Self = StObject.set(x, "activeCellSize", value.asInstanceOf[js.Any])
     

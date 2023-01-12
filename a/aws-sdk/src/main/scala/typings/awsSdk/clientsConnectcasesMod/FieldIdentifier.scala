@@ -18,7 +18,8 @@ object FieldIdentifier {
     __obj.asInstanceOf[FieldIdentifier]
   }
   
-  extension [Self <: FieldIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldIdentifier] (val x: Self) extends AnyVal {
     
     inline def setId(value: FieldId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

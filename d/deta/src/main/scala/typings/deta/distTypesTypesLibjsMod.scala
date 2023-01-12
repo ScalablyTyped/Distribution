@@ -18,7 +18,8 @@ object distTypesTypesLibjsMod {
       __obj.asInstanceOf[DetaLib]
     }
     
-    extension [Self <: DetaLib](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetaLib] (val x: Self) extends AnyVal {
       
       inline def setLib(value: Cron): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     }

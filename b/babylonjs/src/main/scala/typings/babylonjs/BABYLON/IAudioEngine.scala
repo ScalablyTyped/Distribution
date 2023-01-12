@@ -117,7 +117,8 @@ object IAudioEngine {
     __obj.asInstanceOf[IAudioEngine]
   }
   
-  extension [Self <: IAudioEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAudioEngine] (val x: Self) extends AnyVal {
     
     inline def setAudioContext(value: Nullable[AudioContext]): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
     

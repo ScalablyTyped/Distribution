@@ -166,7 +166,8 @@ object distParserAstDotcoreReferencePatcherMod {
       __obj.asInstanceOf[EscapeData]
     }
     
-    extension [Self <: EscapeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EscapeData] (val x: Self) extends AnyVal {
       
       inline def setResultingString(value: String): Self = StObject.set(x, "resultingString", value.asInstanceOf[js.Any])
       

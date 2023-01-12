@@ -28,7 +28,8 @@ object CoverageMapFilter {
     __obj.asInstanceOf[CoverageMapFilter]
   }
   
-  extension [Self <: CoverageMapFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageMapFilter] (val x: Self) extends AnyVal {
     
     inline def setComparison(value: CoverageMapComparison): Self = StObject.set(x, "comparison", value.asInstanceOf[js.Any])
     

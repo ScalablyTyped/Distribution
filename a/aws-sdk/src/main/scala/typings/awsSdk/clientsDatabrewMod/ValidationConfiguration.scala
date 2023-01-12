@@ -23,7 +23,8 @@ object ValidationConfiguration {
     __obj.asInstanceOf[ValidationConfiguration]
   }
   
-  extension [Self <: ValidationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRulesetArn(value: Arn): Self = StObject.set(x, "RulesetArn", value.asInstanceOf[js.Any])
     

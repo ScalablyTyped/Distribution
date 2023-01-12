@@ -18,7 +18,8 @@ object CreateMonitoringSubscriptionResult {
     __obj.asInstanceOf[CreateMonitoringSubscriptionResult]
   }
   
-  extension [Self <: CreateMonitoringSubscriptionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMonitoringSubscriptionResult] (val x: Self) extends AnyVal {
     
     inline def setMonitoringSubscription(value: MonitoringSubscription): Self = StObject.set(x, "MonitoringSubscription", value.asInstanceOf[js.Any])
     

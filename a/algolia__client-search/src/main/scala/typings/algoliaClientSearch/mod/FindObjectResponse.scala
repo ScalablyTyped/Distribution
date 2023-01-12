@@ -29,7 +29,8 @@ object FindObjectResponse {
     __obj.asInstanceOf[FindObjectResponse[TObject]]
   }
   
-  extension [Self <: FindObjectResponse[?], TObject](x: Self & FindObjectResponse[TObject]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindObjectResponse[?], TObject] (val x: Self & FindObjectResponse[TObject]) extends AnyVal {
     
     inline def setObject(value: TObject & ObjectWithObjectID): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

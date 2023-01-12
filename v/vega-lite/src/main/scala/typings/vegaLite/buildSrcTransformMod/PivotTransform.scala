@@ -45,7 +45,8 @@ object PivotTransform {
     __obj.asInstanceOf[PivotTransform]
   }
   
-  extension [Self <: PivotTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTransform] (val x: Self) extends AnyVal {
     
     inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     

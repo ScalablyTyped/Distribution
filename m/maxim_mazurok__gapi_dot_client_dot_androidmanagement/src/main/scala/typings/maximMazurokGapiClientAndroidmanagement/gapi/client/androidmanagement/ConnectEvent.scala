@@ -22,7 +22,8 @@ object ConnectEvent {
     __obj.asInstanceOf[ConnectEvent]
   }
   
-  extension [Self <: ConnectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectEvent] (val x: Self) extends AnyVal {
     
     inline def setDestinationIpAddress(value: String): Self = StObject.set(x, "destinationIpAddress", value.asInstanceOf[js.Any])
     

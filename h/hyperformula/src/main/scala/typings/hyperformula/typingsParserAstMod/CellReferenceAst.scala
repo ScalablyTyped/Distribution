@@ -23,7 +23,8 @@ object CellReferenceAst {
     __obj.asInstanceOf[CellReferenceAst]
   }
   
-  extension [Self <: CellReferenceAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellReferenceAst] (val x: Self) extends AnyVal {
     
     inline def setReference(value: CellAddress): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FaxLoggingOptions {
     __obj.asInstanceOf[FaxLoggingOptions]
   }
   
-  extension [Self <: FaxLoggingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxLoggingOptions] (val x: Self) extends AnyVal {
     
     inline def setActivityLogging(value: FaxActivityLogging): Self = StObject.set(x, "ActivityLogging", value.asInstanceOf[js.Any])
     

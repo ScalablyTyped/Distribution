@@ -19,7 +19,8 @@ object BSONRegExpExtendedLegacy {
     __obj.asInstanceOf[BSONRegExpExtendedLegacy]
   }
   
-  extension [Self <: BSONRegExpExtendedLegacy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BSONRegExpExtendedLegacy] (val x: Self) extends AnyVal {
     
     inline def set$options(value: String): Self = StObject.set(x, "$options", value.asInstanceOf[js.Any])
     

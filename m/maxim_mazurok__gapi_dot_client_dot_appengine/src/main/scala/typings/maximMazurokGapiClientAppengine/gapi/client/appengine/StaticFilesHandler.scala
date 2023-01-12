@@ -39,7 +39,8 @@ object StaticFilesHandler {
     __obj.asInstanceOf[StaticFilesHandler]
   }
   
-  extension [Self <: StaticFilesHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticFilesHandler] (val x: Self) extends AnyVal {
     
     inline def setApplicationReadable(value: Boolean): Self = StObject.set(x, "applicationReadable", value.asInstanceOf[js.Any])
     

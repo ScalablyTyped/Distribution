@@ -17,7 +17,8 @@ object ILoginAccounts {
     __obj.asInstanceOf[ILoginAccounts]
   }
   
-  extension [Self <: ILoginAccounts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoginAccounts] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

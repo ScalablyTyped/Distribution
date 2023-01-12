@@ -224,7 +224,8 @@ object examplesJsmLoadersMtlloaderMod {
       __obj.asInstanceOf[MaterialCreatorOptions]
     }
     
-    extension [Self <: MaterialCreatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialCreatorOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreZeroRGBs(value: Boolean): Self = StObject.set(x, "ignoreZeroRGBs", value.asInstanceOf[js.Any])
       
@@ -283,7 +284,8 @@ object examplesJsmLoadersMtlloaderMod {
       __obj.asInstanceOf[MaterialInfo]
     }
     
-    extension [Self <: MaterialInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialInfo] (val x: Self) extends AnyVal {
       
       inline def setBump(value: String): Self = StObject.set(x, "bump", value.asInstanceOf[js.Any])
       
@@ -360,7 +362,8 @@ object examplesJsmLoadersMtlloaderMod {
       __obj.asInstanceOf[TexParams]
     }
     
-    extension [Self <: TexParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TexParams] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Vector2): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

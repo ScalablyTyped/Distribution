@@ -88,7 +88,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[CalculatedMenuPlacementAndHeight]
     }
     
-    extension [Self <: CalculatedMenuPlacementAndHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalculatedMenuPlacementAndHeight] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[ChildrenProps]
     }
     
-    extension [Self <: ChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setPlacerProps(value: PlacerProps): Self = StObject.set(x, "placerProps", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[MenuPlacementProps]
     }
     
-    extension [Self <: MenuPlacementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuPlacementProps] (val x: Self) extends AnyVal {
       
       inline def setMaxMenuHeight(value: Double): Self = StObject.set(x, "maxMenuHeight", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[PlacementArgs]
     }
     
-    extension [Self <: PlacementArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlacementArgs] (val x: Self) extends AnyVal {
       
       inline def setControlHeight(value: Double): Self = StObject.set(x, "controlHeight", value.asInstanceOf[js.Any])
       
@@ -308,7 +312,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[PlacerProps]
     }
     
-    extension [Self <: PlacerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlacerProps] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -331,7 +336,8 @@ object distDeclarationsSrcComponentsMenuMod {
       __obj.asInstanceOf[PortalStyleArgs]
     }
     
-    extension [Self <: PortalStyleArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalStyleArgs] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

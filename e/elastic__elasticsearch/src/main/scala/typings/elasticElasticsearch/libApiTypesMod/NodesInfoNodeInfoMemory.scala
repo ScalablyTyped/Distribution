@@ -17,7 +17,8 @@ object NodesInfoNodeInfoMemory {
     __obj.asInstanceOf[NodesInfoNodeInfoMemory]
   }
   
-  extension [Self <: NodesInfoNodeInfoMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoMemory] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

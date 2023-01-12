@@ -19,7 +19,8 @@ object TableCellData {
     __obj.asInstanceOf[TableCellData]
   }
   
-  extension [Self <: TableCellData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellData] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

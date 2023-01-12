@@ -98,7 +98,8 @@ object libEngineEngineMod {
       __obj.asInstanceOf[VersionInfo]
     }
     
-    extension [Self <: VersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
       
       inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
       

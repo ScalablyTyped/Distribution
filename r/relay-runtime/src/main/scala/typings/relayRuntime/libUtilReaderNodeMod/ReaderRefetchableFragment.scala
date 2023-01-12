@@ -27,7 +27,8 @@ object ReaderRefetchableFragment {
     __obj.asInstanceOf[ReaderRefetchableFragment]
   }
   
-  extension [Self <: ReaderRefetchableFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderRefetchableFragment] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: Refetch): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
   }

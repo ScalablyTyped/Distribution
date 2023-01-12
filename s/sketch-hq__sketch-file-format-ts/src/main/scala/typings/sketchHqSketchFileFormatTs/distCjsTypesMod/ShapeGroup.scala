@@ -101,7 +101,8 @@ object ShapeGroup {
     __obj.asInstanceOf[ShapeGroup]
   }
   
-  extension [Self <: ShapeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeGroup] (val x: Self) extends AnyVal {
     
     inline def setBooleanOperation(value: BooleanOperation): Self = StObject.set(x, "booleanOperation", value.asInstanceOf[js.Any])
     

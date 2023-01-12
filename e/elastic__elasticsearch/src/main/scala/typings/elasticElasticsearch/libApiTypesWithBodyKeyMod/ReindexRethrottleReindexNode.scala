@@ -25,7 +25,8 @@ object ReindexRethrottleReindexNode {
     __obj.asInstanceOf[ReindexRethrottleReindexNode]
   }
   
-  extension [Self <: ReindexRethrottleReindexNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexRethrottleReindexNode] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: Record[TaskId, ReindexRethrottleReindexTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
   }

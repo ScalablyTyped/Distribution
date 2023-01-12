@@ -20,7 +20,8 @@ object UserEvents {
     __obj.asInstanceOf[UserEvents]
   }
   
-  extension [Self <: UserEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserEvents] (val x: Self) extends AnyVal {
     
     inline def setUpdated(value: UpdateReasons => Unit): Self = StObject.set(x, "updated", js.Any.fromFunction1(value))
     

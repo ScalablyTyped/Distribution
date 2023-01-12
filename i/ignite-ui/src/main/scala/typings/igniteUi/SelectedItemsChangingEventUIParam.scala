@@ -28,7 +28,8 @@ object SelectedItemsChangingEventUIParam {
     __obj.asInstanceOf[SelectedItemsChangingEventUIParam]
   }
   
-  extension [Self <: SelectedItemsChangingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedItemsChangingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Any): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

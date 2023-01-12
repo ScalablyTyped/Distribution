@@ -18,7 +18,8 @@ object DescribeProfilingGroupResponse {
     __obj.asInstanceOf[DescribeProfilingGroupResponse]
   }
   
-  extension [Self <: DescribeProfilingGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProfilingGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setProfilingGroup(value: ProfilingGroupDescription): Self = StObject.set(x, "profilingGroup", value.asInstanceOf[js.Any])
   }

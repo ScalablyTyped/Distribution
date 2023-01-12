@@ -21,7 +21,8 @@ object IDatabaseOwner {
     __obj.asInstanceOf[IDatabaseOwner]
   }
   
-  extension [Self <: IDatabaseOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatabaseOwner] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }

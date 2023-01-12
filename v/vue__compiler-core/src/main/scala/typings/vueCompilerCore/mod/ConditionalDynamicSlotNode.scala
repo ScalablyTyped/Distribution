@@ -28,7 +28,8 @@ object ConditionalDynamicSlotNode {
     __obj.asInstanceOf[ConditionalDynamicSlotNode]
   }
   
-  extension [Self <: ConditionalDynamicSlotNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalDynamicSlotNode] (val x: Self) extends AnyVal {
     
     inline def setAlternate(value: DynamicSlotNode | SimpleExpressionNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object libUiJsHighlightDotjsHelpersMod {
       __obj.asInstanceOf[NodeEvent]
     }
     
-    extension [Self <: NodeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: start | stop): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       

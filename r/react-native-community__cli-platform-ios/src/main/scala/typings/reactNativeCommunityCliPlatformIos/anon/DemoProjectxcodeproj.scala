@@ -19,7 +19,8 @@ object DemoProjectxcodeproj {
     __obj.asInstanceOf[DemoProjectxcodeproj]
   }
   
-  extension [Self <: DemoProjectxcodeproj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DemoProjectxcodeproj] (val x: Self) extends AnyVal {
     
     inline def setDemoProjectDotxcodeproj(value: Projectpbxproj): Self = StObject.set(x, "demoProject.xcodeproj", value.asInstanceOf[js.Any])
     

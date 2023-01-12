@@ -16,7 +16,8 @@ object Gap {
     __obj.asInstanceOf[Gap]
   }
   
-  extension [Self <: Gap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gap] (val x: Self) extends AnyVal {
     
     inline def setGap(value: ThicknessType): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     

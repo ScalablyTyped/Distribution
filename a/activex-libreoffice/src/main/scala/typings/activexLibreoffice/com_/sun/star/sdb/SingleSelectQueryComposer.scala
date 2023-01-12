@@ -196,7 +196,8 @@ object SingleSelectQueryComposer {
     __obj.asInstanceOf[SingleSelectQueryComposer]
   }
   
-  extension [Self <: SingleSelectQueryComposer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleSelectQueryComposer] (val x: Self) extends AnyVal {
     
     inline def setAppendFilterByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction3(value))
     

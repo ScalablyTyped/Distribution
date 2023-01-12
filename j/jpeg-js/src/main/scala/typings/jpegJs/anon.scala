@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[BufferRetcommentsArraystr]
     }
     
-    extension [Self <: BufferRetcommentsArraystr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferRetcommentsArraystr] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[ColorTransform]
     }
     
-    extension [Self <: ColorTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorTransform] (val x: Self) extends AnyVal {
       
       inline def setColorTransform(value: Boolean): Self = StObject.set(x, "colorTransform", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[FormatAsRGBA]
     }
     
-    extension [Self <: FormatAsRGBA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatAsRGBA] (val x: Self) extends AnyVal {
       
       inline def setColorTransform(value: Boolean): Self = StObject.set(x, "colorTransform", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object anon {
       __obj.asInstanceOf[RawImageDataBufferLikecom]
     }
     
-    extension [Self <: RawImageDataBufferLikecom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawImageDataBufferLikecom] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -192,7 +196,8 @@ object anon {
       __obj.asInstanceOf[UintArrRetcommentsArrayst]
     }
     
-    extension [Self <: UintArrRetcommentsArrayst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UintArrRetcommentsArrayst] (val x: Self) extends AnyVal {
       
       inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       

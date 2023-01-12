@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[ByteLength]
     }
     
-    extension [Self <: ByteLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteLength] (val x: Self) extends AnyVal {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Resize]
     }
     
-    extension [Self <: Resize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resize] (val x: Self) extends AnyVal {
       
       inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Roots]
     }
     
-    extension [Self <: Roots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Roots] (val x: Self) extends AnyVal {
       
       inline def setRoots(value: js.Array[typings.ipldCar.distSrcBufferWriterMod.CID]): Self = StObject.set(x, "roots", value.asInstanceOf[js.Any])
       

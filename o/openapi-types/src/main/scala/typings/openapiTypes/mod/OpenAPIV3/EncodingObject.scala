@@ -24,7 +24,8 @@ object EncodingObject {
     __obj.asInstanceOf[EncodingObject]
   }
   
-  extension [Self <: EncodingObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodingObject] (val x: Self) extends AnyVal {
     
     inline def setAllowReserved(value: Boolean): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
     

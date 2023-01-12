@@ -19,7 +19,8 @@ object ColorHidden {
     __obj.asInstanceOf[ColorHidden]
   }
   
-  extension [Self <: ColorHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorHidden] (val x: Self) extends AnyVal {
     
     inline def set$color(value: typings.baseui.badgeTypesMod.Color): Self = StObject.set(x, "$color", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SubIncrement {
     __obj.asInstanceOf[SubIncrement]
   }
   
-  extension [Self <: SubIncrement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubIncrement] (val x: Self) extends AnyVal {
     
     inline def setIntervalCount(value: Any): Self = StObject.set(x, "IntervalCount", value.asInstanceOf[js.Any])
     

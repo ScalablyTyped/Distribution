@@ -18,7 +18,8 @@ object MediaProtectionPMPServer {
     __obj.asInstanceOf[MediaProtectionPMPServer]
   }
   
-  extension [Self <: MediaProtectionPMPServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaProtectionPMPServer] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object RangeValueObject {
     __obj.asInstanceOf[RangeValueObject]
   }
   
-  extension [Self <: RangeValueObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeValueObject] (val x: Self) extends AnyVal {
     
     inline def setGTE(value: String | Double): Self = StObject.set(x, "GTE", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PlaybackGrantPayload {
     __obj.asInstanceOf[PlaybackGrantPayload]
   }
   
-  extension [Self <: PlaybackGrantPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackGrantPayload] (val x: Self) extends AnyVal {
     
     inline def setGrant(value: js.Object): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
     

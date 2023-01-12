@@ -31,7 +31,8 @@ object TSIndexSignature__ {
     __obj.asInstanceOf[TSIndexSignature__]
   }
   
-  extension [Self <: TSIndexSignature__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSIndexSignature__] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

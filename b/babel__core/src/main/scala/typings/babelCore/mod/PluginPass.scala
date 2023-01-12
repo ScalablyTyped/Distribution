@@ -37,7 +37,8 @@ object PluginPass {
     __obj.asInstanceOf[PluginPass]
   }
   
-  extension [Self <: PluginPass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginPass] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

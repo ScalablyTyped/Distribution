@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setClassicTrim(value: Boolean): Self = StObject.set(x, "classicTrim", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[Res]
     }
     
-    extension [Self <: Res](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Res] (val x: Self) extends AnyVal {
       
       inline def setRanges(value: Ranges): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
       

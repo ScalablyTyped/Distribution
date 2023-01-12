@@ -27,7 +27,8 @@ object typesKmsoptinrequiredMod {
       __obj.asInstanceOf[KMSOptInRequired]
     }
     
-    extension [Self <: KMSOptInRequired](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSOptInRequired] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSOptInRequired): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object typesKmsoptinrequiredMod {
       __obj.asInstanceOf[KMSOptInRequiredDetails]
     }
     
-    extension [Self <: KMSOptInRequiredDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSOptInRequiredDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object BandwidthRateLimitInterval {
     __obj.asInstanceOf[BandwidthRateLimitInterval]
   }
   
-  extension [Self <: BandwidthRateLimitInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BandwidthRateLimitInterval] (val x: Self) extends AnyVal {
     
     inline def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     

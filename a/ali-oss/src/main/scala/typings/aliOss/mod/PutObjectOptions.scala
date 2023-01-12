@@ -26,7 +26,8 @@ object PutObjectOptions {
     __obj.asInstanceOf[PutObjectOptions]
   }
   
-  extension [Self <: PutObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

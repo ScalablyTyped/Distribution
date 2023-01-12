@@ -23,7 +23,8 @@ object PickImplembedPartialPickI {
     __obj.asInstanceOf[PickImplembedPartialPickI]
   }
   
-  extension [Self <: PickImplembedPartialPickI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplembedPartialPickI] (val x: Self) extends AnyVal {
     
     inline def setEmbed(value: String): Self = StObject.set(x, "embed", value.asInstanceOf[js.Any])
     

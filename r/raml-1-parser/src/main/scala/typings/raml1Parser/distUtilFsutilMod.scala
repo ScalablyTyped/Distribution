@@ -70,7 +70,8 @@ object distUtilFsutilMod {
       __obj.asInstanceOf[CopyOptions]
     }
     
-    extension [Self <: CopyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyOptions] (val x: Self) extends AnyVal {
       
       inline def setContentPatternReplacements(value: PatternReplacementSet): Self = StObject.set(x, "contentPatternReplacements", value.asInstanceOf[js.Any])
       

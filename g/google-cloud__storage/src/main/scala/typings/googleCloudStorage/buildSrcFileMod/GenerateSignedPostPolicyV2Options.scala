@@ -29,7 +29,8 @@ object GenerateSignedPostPolicyV2Options {
     __obj.asInstanceOf[GenerateSignedPostPolicyV2Options]
   }
   
-  extension [Self <: GenerateSignedPostPolicyV2Options](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateSignedPostPolicyV2Options] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

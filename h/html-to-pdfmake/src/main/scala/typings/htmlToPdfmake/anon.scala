@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[PartialdefaultStylesStyle]
     }
     
-    extension [Self <: PartialdefaultStylesStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialdefaultStylesStyle] (val x: Self) extends AnyVal {
       
       inline def setDefaultStyles(value: StyleDictionary): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
       

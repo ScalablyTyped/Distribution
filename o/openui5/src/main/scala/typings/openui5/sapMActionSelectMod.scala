@@ -187,7 +187,8 @@ object sapMActionSelectMod {
       __obj.asInstanceOf[ActionSelectSettings]
     }
     
-    extension [Self <: ActionSelectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSelectSettings] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[typings.openui5.sapMButtonMod.default | String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

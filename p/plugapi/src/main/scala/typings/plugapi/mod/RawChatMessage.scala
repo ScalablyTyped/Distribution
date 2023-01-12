@@ -23,7 +23,8 @@ object RawChatMessage {
     __obj.asInstanceOf[RawChatMessage]
   }
   
-  extension [Self <: RawChatMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawChatMessage] (val x: Self) extends AnyVal {
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

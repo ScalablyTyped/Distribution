@@ -69,7 +69,8 @@ object libDatabaseDbbackupMod {
       __obj.asInstanceOf[DBBackup]
     }
     
-    extension [Self <: DBBackup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBBackup] (val x: Self) extends AnyVal {
       
       inline def setBackup(value: String => Unit): Self = StObject.set(x, "backup", js.Any.fromFunction1(value))
       
@@ -94,7 +95,8 @@ object libDatabaseDbbackupMod {
       __obj.asInstanceOf[RestoreResult]
     }
     
-    extension [Self <: RestoreResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoreResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object libDatabaseDbbackupMod {
       __obj.asInstanceOf[RestoredTable]
     }
     
-    extension [Self <: RestoredTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestoredTable] (val x: Self) extends AnyVal {
       
       inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       

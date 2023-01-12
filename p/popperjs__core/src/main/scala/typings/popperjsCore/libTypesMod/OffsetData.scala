@@ -44,7 +44,8 @@ object OffsetData {
     __obj.asInstanceOf[OffsetData]
   }
   
-  extension [Self <: OffsetData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetData] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Offsets): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Weight {
     __obj.asInstanceOf[Weight]
   }
   
-  extension [Self <: Weight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Weight] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

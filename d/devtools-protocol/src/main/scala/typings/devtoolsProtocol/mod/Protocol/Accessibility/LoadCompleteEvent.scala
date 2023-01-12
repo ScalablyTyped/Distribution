@@ -18,7 +18,8 @@ object LoadCompleteEvent {
     __obj.asInstanceOf[LoadCompleteEvent]
   }
   
-  extension [Self <: LoadCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: AXNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

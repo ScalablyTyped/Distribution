@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String => Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -80,7 +81,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: RequestError | js.Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Plugins]
     }
     
-    extension [Self <: Plugins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[RequiredEndpointDefaults]
     }
     
-    extension [Self <: RequiredEndpointDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredEndpointDefaults] (val x: Self) extends AnyVal {
       
       inline def setBaseUrl(value: Url): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       

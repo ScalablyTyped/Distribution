@@ -34,7 +34,8 @@ object Dn {
     __obj.asInstanceOf[Dn]
   }
   
-  extension [Self <: Dn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dn] (val x: Self) extends AnyVal {
     
     inline def set_methodName(value: Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Animations]
     }
     
-    extension [Self <: Animations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animations] (val x: Self) extends AnyVal {
       
       inline def setEndEnter(value: String): Self = StObject.set(x, "endEnter", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[CustomTabsOptions]
     }
     
-    extension [Self <: CustomTabsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTabsOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimations(value: Animations): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       

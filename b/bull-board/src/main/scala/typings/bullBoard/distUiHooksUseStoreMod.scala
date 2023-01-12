@@ -29,7 +29,8 @@ object distUiHooksUseStoreMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setData(value: GetQueues): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object distUiHooksUseStoreMod {
       __obj.asInstanceOf[Store]
     }
     
-    extension [Self <: Store](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
       
       inline def setActions(value: QueueActions): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

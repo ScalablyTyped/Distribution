@@ -77,7 +77,8 @@ object ISession {
     __obj.asInstanceOf[ISession]
   }
   
-  extension [Self <: ISession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISession] (val x: Self) extends AnyVal {
     
     inline def setCanChangeKernels(value: Boolean): Self = StObject.set(x, "canChangeKernels", value.asInstanceOf[js.Any])
     

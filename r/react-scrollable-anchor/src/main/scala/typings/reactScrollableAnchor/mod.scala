@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[ConfigureAnchorsOptions]
     }
     
-    extension [Self <: ConfigureAnchorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureAnchorsOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepLastAnchorHash(value: Boolean): Self = StObject.set(x, "keepLastAnchorHash", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ScrollableAnchorProps]
     }
     
-    extension [Self <: ScrollableAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollableAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

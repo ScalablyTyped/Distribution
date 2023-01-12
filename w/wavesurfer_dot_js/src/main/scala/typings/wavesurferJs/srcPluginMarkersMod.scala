@@ -42,7 +42,8 @@ object srcPluginMarkersMod {
       __obj.asInstanceOf[Marker]
     }
     
-    extension [Self <: Marker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object srcPluginMarkersMod {
       __obj.asInstanceOf[MarkerParams]
     }
     
-    extension [Self <: MarkerParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerParams] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object srcPluginMarkersMod {
       __obj.asInstanceOf[MarkersPluginParams]
     }
     
-    extension [Self <: MarkersPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkersPluginParams] (val x: Self) extends AnyVal {
       
       inline def setMarkers(value: js.Array[MarkerParams]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object srcPluginMarkersMod {
         __obj.asInstanceOf[WaveSurfer]
       }
       
-      extension [Self <: WaveSurfer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaveSurfer] (val x: Self) extends AnyVal {
         
         inline def setAddMarker(value: MarkerParams => Marker): Self = StObject.set(x, "addMarker", js.Any.fromFunction1(value))
         

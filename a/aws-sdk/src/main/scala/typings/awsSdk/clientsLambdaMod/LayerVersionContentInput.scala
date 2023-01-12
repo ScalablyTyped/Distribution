@@ -33,7 +33,8 @@ object LayerVersionContentInput {
     __obj.asInstanceOf[LayerVersionContentInput]
   }
   
-  extension [Self <: LayerVersionContentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerVersionContentInput] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     

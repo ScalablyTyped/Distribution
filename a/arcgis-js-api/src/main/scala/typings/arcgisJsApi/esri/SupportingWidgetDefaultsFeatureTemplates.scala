@@ -22,7 +22,8 @@ object SupportingWidgetDefaultsFeatureTemplates {
     __obj.asInstanceOf[SupportingWidgetDefaultsFeatureTemplates]
   }
   
-  extension [Self <: SupportingWidgetDefaultsFeatureTemplates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportingWidgetDefaultsFeatureTemplates] (val x: Self) extends AnyVal {
     
     inline def setGroupBy(value: String | GroupByFunction): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
     

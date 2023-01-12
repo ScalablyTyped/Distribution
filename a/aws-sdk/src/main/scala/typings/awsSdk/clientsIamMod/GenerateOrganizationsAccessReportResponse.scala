@@ -18,7 +18,8 @@ object GenerateOrganizationsAccessReportResponse {
     __obj.asInstanceOf[GenerateOrganizationsAccessReportResponse]
   }
   
-  extension [Self <: GenerateOrganizationsAccessReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateOrganizationsAccessReportResponse] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: jobIDType): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

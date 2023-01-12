@@ -31,7 +31,8 @@ object BundleEntrySearch {
     __obj.asInstanceOf[BundleEntrySearch]
   }
   
-  extension [Self <: BundleEntrySearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleEntrySearch] (val x: Self) extends AnyVal {
     
     inline def setMode(value: `match` | include | outcome): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

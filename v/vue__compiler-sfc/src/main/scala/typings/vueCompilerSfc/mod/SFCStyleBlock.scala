@@ -27,7 +27,8 @@ object SFCStyleBlock {
     __obj.asInstanceOf[SFCStyleBlock]
   }
   
-  extension [Self <: SFCStyleBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCStyleBlock] (val x: Self) extends AnyVal {
     
     inline def setModule(value: String | Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     

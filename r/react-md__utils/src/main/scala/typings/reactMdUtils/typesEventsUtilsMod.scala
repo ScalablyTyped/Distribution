@@ -58,7 +58,8 @@ object typesEventsUtilsMod {
       __obj.asInstanceOf[DelegatableEvent]
     }
     
-    extension [Self <: DelegatableEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelegatableEvent] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: DelegatedEventHandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesEventsUtilsMod {
       __obj.asInstanceOf[DelegatedEventHandler]
     }
     
-    extension [Self <: DelegatedEventHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelegatedEventHandler] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: EventListener => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

@@ -33,7 +33,8 @@ object FastRestoreRule {
     __obj.asInstanceOf[FastRestoreRule]
   }
   
-  extension [Self <: FastRestoreRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastRestoreRule] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

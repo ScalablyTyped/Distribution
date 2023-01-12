@@ -21,7 +21,8 @@ object PivotGridExcel {
     __obj.asInstanceOf[PivotGridExcel]
   }
   
-  extension [Self <: PivotGridExcel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotGridExcel] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

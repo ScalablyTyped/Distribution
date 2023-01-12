@@ -50,7 +50,8 @@ object typesLoopMod {
       __obj.asInstanceOf[LoopOptions]
     }
     
-    extension [Self <: LoopOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoopOptions] (val x: Self) extends AnyVal {
       
       inline def setIncrement(value: Boolean): Self = StObject.set(x, "increment", value.asInstanceOf[js.Any])
       

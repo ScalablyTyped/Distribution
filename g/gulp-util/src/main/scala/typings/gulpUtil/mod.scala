@@ -211,7 +211,8 @@ object mod {
       __obj.asInstanceOf[PluginErrorOptions]
     }
     
-    extension [Self <: PluginErrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginErrorOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

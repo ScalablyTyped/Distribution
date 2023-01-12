@@ -19,7 +19,8 @@ object GPUMultisampleState {
     __obj.asInstanceOf[GPUMultisampleState]
   }
   
-  extension [Self <: GPUMultisampleState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUMultisampleState] (val x: Self) extends AnyVal {
     
     inline def setAlphaToCoverageEnabled(value: Boolean): Self = StObject.set(x, "alphaToCoverageEnabled", value.asInstanceOf[js.Any])
     

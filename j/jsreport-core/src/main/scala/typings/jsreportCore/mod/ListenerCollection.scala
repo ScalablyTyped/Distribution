@@ -30,7 +30,8 @@ object ListenerCollection {
     __obj.asInstanceOf[ListenerCollection]
   }
   
-  extension [Self <: ListenerCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenerCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(
       value: (String, js.Function3[

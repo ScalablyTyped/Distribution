@@ -34,7 +34,8 @@ object IgHierarchicalGridColumnLayout {
     __obj.asInstanceOf[IgHierarchicalGridColumnLayout]
   }
   
-  extension [Self <: IgHierarchicalGridColumnLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHierarchicalGridColumnLayout] (val x: Self) extends AnyVal {
     
     inline def setForeignKey(value: String): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     

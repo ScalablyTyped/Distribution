@@ -15,7 +15,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setId(value: typings.persona.Persona.Persona): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

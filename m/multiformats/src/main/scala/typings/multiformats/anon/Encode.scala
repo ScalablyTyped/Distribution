@@ -20,7 +20,8 @@ object Encode {
     __obj.asInstanceOf[Encode[Name, Code]]
   }
   
-  extension [Self <: Encode[?, ?], Name /* <: String */, Code /* <: Double */](x: Self & (Encode[Name, Code])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encode[?, ?], Name /* <: String */, Code /* <: Double */] (val x: Self & (Encode[Name, Code])) extends AnyVal {
     
     inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

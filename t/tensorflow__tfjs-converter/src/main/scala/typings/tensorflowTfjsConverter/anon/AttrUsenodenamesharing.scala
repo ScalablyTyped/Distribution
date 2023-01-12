@@ -21,7 +21,8 @@ object AttrUsenodenamesharing {
     __obj.asInstanceOf[AttrUsenodenamesharing]
   }
   
-  extension [Self <: AttrUsenodenamesharing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrUsenodenamesharing] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: Usenodenamesharing): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

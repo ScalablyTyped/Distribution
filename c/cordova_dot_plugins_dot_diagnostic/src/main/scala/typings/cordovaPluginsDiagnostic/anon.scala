@@ -172,7 +172,8 @@ object anon {
       __obj.asInstanceOf[ACCEPTHANDOVER]
     }
     
-    extension [Self <: ACCEPTHANDOVER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACCEPTHANDOVER] (val x: Self) extends AnyVal {
       
       inline def setACCEPT_HANDOVER(value: ACCEPT_HANDOVER): Self = StObject.set(x, "ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object anon {
       __obj.asInstanceOf[ALERT]
     }
     
-    extension [Self <: ALERT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALERT] (val x: Self) extends AnyVal {
       
       inline def setALERT(value: alert): Self = StObject.set(x, "ALERT", value.asInstanceOf[js.Any])
       
@@ -294,7 +296,8 @@ object anon {
       __obj.asInstanceOf[ALWAYS]
     }
     
-    extension [Self <: ALWAYS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALWAYS] (val x: Self) extends AnyVal {
       
       inline def setALWAYS(value: always): Self = StObject.set(x, "ALWAYS", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object anon {
       __obj.asInstanceOf[ARMv6]
     }
     
-    extension [Self <: ARMv6](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARMv6] (val x: Self) extends AnyVal {
       
       inline def setARMv6(value: typings.cordovaPluginsDiagnostic.cordovaPluginsDiagnosticStrings.ARMv6): Self = StObject.set(x, "ARMv6", value.asInstanceOf[js.Any])
       
@@ -364,7 +368,8 @@ object anon {
       __obj.asInstanceOf[ApiLevel]
     }
     
-    extension [Self <: ApiLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiLevel] (val x: Self) extends AnyVal {
       
       inline def setApiLevel(value: Double): Self = StObject.set(x, "apiLevel", value.asInstanceOf[js.Any])
       
@@ -391,7 +396,8 @@ object anon {
       __obj.asInstanceOf[BATTERYSAVING]
     }
     
-    extension [Self <: BATTERYSAVING](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BATTERYSAVING] (val x: Self) extends AnyVal {
       
       inline def setBATTERY_SAVING(value: battery_saving): Self = StObject.set(x, "BATTERY_SAVING", value.asInstanceOf[js.Any])
       
@@ -435,7 +441,8 @@ object anon {
       __obj.asInstanceOf[DENIEDALWAYS]
     }
     
-    extension [Self <: DENIEDALWAYS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DENIEDALWAYS] (val x: Self) extends AnyVal {
       
       inline def setDENIED_ALWAYS(value: denied_always_ | DENIED_ALWAYS): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
       
@@ -468,7 +475,8 @@ object anon {
       __obj.asInstanceOf[FULL]
     }
     
-    extension [Self <: FULL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FULL] (val x: Self) extends AnyVal {
       
       inline def setFULL(value: full): Self = StObject.set(x, "FULL", value.asInstanceOf[js.Any])
       
@@ -499,7 +507,8 @@ object anon {
       __obj.asInstanceOf[GRANTED]
     }
     
-    extension [Self <: GRANTED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GRANTED] (val x: Self) extends AnyVal {
       
       inline def setDENIED_ALWAYS(value: denied_always_): Self = StObject.set(x, "DENIED_ALWAYS", value.asInstanceOf[js.Any])
       
@@ -539,7 +548,8 @@ object anon {
       __obj.asInstanceOf[MinApiLevel]
     }
     
-    extension [Self <: MinApiLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinApiLevel] (val x: Self) extends AnyVal {
       
       inline def setMinApiLevel(value: Double): Self = StObject.set(x, "minApiLevel", value.asInstanceOf[js.Any])
       
@@ -579,7 +589,8 @@ object anon {
       __obj.asInstanceOf[POWEREDOFF]
     }
     
-    extension [Self <: POWEREDOFF](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: POWEREDOFF] (val x: Self) extends AnyVal {
       
       inline def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
       
@@ -618,7 +629,8 @@ object anon {
       __obj.asInstanceOf[POWEREDON]
     }
     
-    extension [Self <: POWEREDON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: POWEREDON] (val x: Self) extends AnyVal {
       
       inline def setPOWERED_OFF(value: powered_off): Self = StObject.set(x, "POWERED_OFF", value.asInstanceOf[js.Any])
       
@@ -643,7 +655,8 @@ object anon {
       __obj.asInstanceOf[String]
     }
     
-    extension [Self <: String](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
       
       inline def setString(value: Boolean): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }

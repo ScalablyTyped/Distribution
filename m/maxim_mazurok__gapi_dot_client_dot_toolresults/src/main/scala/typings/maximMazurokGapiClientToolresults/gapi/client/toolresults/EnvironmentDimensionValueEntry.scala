@@ -17,7 +17,8 @@ object EnvironmentDimensionValueEntry {
     __obj.asInstanceOf[EnvironmentDimensionValueEntry]
   }
   
-  extension [Self <: EnvironmentDimensionValueEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentDimensionValueEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

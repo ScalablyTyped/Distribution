@@ -23,7 +23,8 @@ object LastReportGenerationExecutionError {
     __obj.asInstanceOf[LastReportGenerationExecutionError]
   }
   
-  extension [Self <: LastReportGenerationExecutionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastReportGenerationExecutionError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: UsageReportExecutionErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

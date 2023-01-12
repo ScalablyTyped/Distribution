@@ -15,7 +15,8 @@ object SecuritySamlLogoutResponse {
     __obj.asInstanceOf[SecuritySamlLogoutResponse]
   }
   
-  extension [Self <: SecuritySamlLogoutResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlLogoutResponse] (val x: Self) extends AnyVal {
     
     inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
   }

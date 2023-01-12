@@ -22,7 +22,8 @@ object ClientSessionOptions {
     __obj.asInstanceOf[ClientSessionOptions]
   }
   
-  extension [Self <: ClientSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setCausalConsistency(value: Boolean): Self = StObject.set(x, "causalConsistency", value.asInstanceOf[js.Any])
     

@@ -212,7 +212,8 @@ object Player {
     __obj.asInstanceOf[Player]
   }
   
-  extension [Self <: Player](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function0[Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

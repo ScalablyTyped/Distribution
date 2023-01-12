@@ -43,7 +43,8 @@ object CreateStreamingImageRequest {
     __obj.asInstanceOf[CreateStreamingImageRequest]
   }
   
-  extension [Self <: CreateStreamingImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingImageRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

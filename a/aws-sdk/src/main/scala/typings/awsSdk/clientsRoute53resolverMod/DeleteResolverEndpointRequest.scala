@@ -18,7 +18,8 @@ object DeleteResolverEndpointRequest {
     __obj.asInstanceOf[DeleteResolverEndpointRequest]
   }
   
-  extension [Self <: DeleteResolverEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteResolverEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setResolverEndpointId(value: ResourceId): Self = StObject.set(x, "ResolverEndpointId", value.asInstanceOf[js.Any])
   }

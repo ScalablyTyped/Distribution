@@ -18,7 +18,8 @@ object PerformanceInsightsReferenceMetric {
     __obj.asInstanceOf[PerformanceInsightsReferenceMetric]
   }
   
-  extension [Self <: PerformanceInsightsReferenceMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceInsightsReferenceMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricQuery(value: PerformanceInsightsMetricQuery): Self = StObject.set(x, "MetricQuery", value.asInstanceOf[js.Any])
     

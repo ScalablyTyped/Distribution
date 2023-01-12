@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Actions]
     }
     
-    extension [Self <: Actions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: HTMLDivElement): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object anon {
       __obj.asInstanceOf[Ariaactivedescendant]
     }
     
-    extension [Self <: Ariaactivedescendant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ariaactivedescendant] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Ariaactivedescendant): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object anon {
       __obj.asInstanceOf[AttributesClass]
     }
     
-    extension [Self <: AttributesClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributesClass] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Class): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     }
@@ -220,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Blur]
     }
     
-    extension [Self <: Blur](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blur] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -252,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Class]
     }
     
-    extension [Self <: Class](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Class] (val x: Self) extends AnyVal {
       
       inline def setClass(value: `vs__open-indicator`): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       
@@ -290,7 +296,8 @@ object anon {
       __obj.asInstanceOf[ListSlotScopedeselectVueS]
     }
     
-    extension [Self <: ListSlotScopedeselectVueS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListSlotScopedeselectVueS] (val x: Self) extends AnyVal {
       
       inline def setDeselect(value: /* option */ VueSelectOption => Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction1(value))
       
@@ -315,7 +322,8 @@ object anon {
       __obj.asInstanceOf[Loading]
     }
     
-    extension [Self <: Loading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loading] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     }
@@ -338,7 +346,8 @@ object anon {
       __obj.asInstanceOf[RecordChildComponentNamea]
     }
     
-    extension [Self <: RecordChildComponentNamea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordChildComponentNamea] (val x: Self) extends AnyVal {
       
       inline def setDeselect(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any
@@ -403,7 +412,8 @@ object anon {
       __obj.asInstanceOf[RecordChildComponentNameaDeselect]
     }
     
-    extension [Self <: RecordChildComponentNameaDeselect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordChildComponentNameaDeselect] (val x: Self) extends AnyVal {
       
       inline def setDeselect(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any) | (ComponentOptions[
@@ -445,7 +455,8 @@ object anon {
       __obj.asInstanceOf[Refs]
     }
     
-    extension [Self <: Refs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Refs] (val x: Self) extends AnyVal {
       
       inline def set$refs(value: Actions): Self = StObject.set(x, "$refs", value.asInstanceOf[js.Any])
     }
@@ -466,7 +477,8 @@ object anon {
       __obj.asInstanceOf[Search]
     }
     
-    extension [Self <: Search](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       

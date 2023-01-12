@@ -16,7 +16,8 @@ object ShortAnswerSubmission {
     __obj.asInstanceOf[ShortAnswerSubmission]
   }
   
-  extension [Self <: ShortAnswerSubmission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShortAnswerSubmission] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: String): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     

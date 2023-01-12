@@ -23,7 +23,8 @@ object UpdateNetworkResourceMetadataResponse {
     __obj.asInstanceOf[UpdateNetworkResourceMetadataResponse]
   }
   
-  extension [Self <: UpdateNetworkResourceMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateNetworkResourceMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: NetworkResourceMetadataMap): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

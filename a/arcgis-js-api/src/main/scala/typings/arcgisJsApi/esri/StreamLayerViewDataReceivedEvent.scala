@@ -17,7 +17,8 @@ object StreamLayerViewDataReceivedEvent {
     __obj.asInstanceOf[StreamLayerViewDataReceivedEvent]
   }
   
-  extension [Self <: StreamLayerViewDataReceivedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLayerViewDataReceivedEvent] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object FaceTextureProvider {
     __obj.asInstanceOf[FaceTextureProvider]
   }
   
-  extension [Self <: FaceTextureProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceTextureProvider] (val x: Self) extends AnyVal {
     
     inline def setInputTexture(value: Texture): Self = StObject.set(x, "inputTexture", value.asInstanceOf[js.Any])
     

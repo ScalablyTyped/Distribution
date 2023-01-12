@@ -35,7 +35,8 @@ object VM {
     __obj.asInstanceOf[VM]
   }
   
-  extension [Self <: VM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VM] (val x: Self) extends AnyVal {
     
     inline def setGetEnv(value: () => Env): Self = StObject.set(x, "getEnv", js.Any.fromFunction0(value))
     

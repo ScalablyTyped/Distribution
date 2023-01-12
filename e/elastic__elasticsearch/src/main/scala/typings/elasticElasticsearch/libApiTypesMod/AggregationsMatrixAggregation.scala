@@ -20,7 +20,8 @@ object AggregationsMatrixAggregation {
     __obj.asInstanceOf[AggregationsMatrixAggregation]
   }
   
-  extension [Self <: AggregationsMatrixAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMatrixAggregation] (val x: Self) extends AnyVal {
     
     inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

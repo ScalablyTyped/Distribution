@@ -26,7 +26,8 @@ object BYNPHP {
     __obj.asInstanceOf[BYNPHP]
   }
   
-  extension [Self <: BYNPHP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BYNPHP] (val x: Self) extends AnyVal {
     
     inline def setBYN(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BYN", value.asInstanceOf[js.Any])
     

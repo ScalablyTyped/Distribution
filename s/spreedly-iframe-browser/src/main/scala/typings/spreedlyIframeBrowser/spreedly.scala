@@ -28,7 +28,8 @@ object spreedly {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setCvvEl(value: String): Self = StObject.set(x, "cvvEl", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object spreedly {
       __obj.asInstanceOf[SetRecacheOptions]
     }
     
-    extension [Self <: SetRecacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetRecacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCard_type(value: SpreedlyCardType): Self = StObject.set(x, "card_type", value.asInstanceOf[js.Any])
       
@@ -131,7 +133,8 @@ object spreedly {
       __obj.asInstanceOf[SpreedlyConsoleError]
     }
     
-    extension [Self <: SpreedlyConsoleError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpreedlyConsoleError] (val x: Self) extends AnyVal {
       
       inline def setCol(value: String): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object spreedly {
       __obj.asInstanceOf[SpreedlyError]
     }
     
-    extension [Self <: SpreedlyError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpreedlyError] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -237,7 +241,8 @@ object spreedly {
       __obj.asInstanceOf[SpreedlyFieldEventInputProperties]
     }
     
-    extension [Self <: SpreedlyFieldEventInputProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpreedlyFieldEventInputProperties] (val x: Self) extends AnyVal {
       
       inline def setActiveElement(value: SpreedlyField): Self = StObject.set(x, "activeElement", value.asInstanceOf[js.Any])
       
@@ -428,7 +433,8 @@ object spreedly {
       __obj.asInstanceOf[SpreedlyPaymentMethod]
     }
     
-    extension [Self <: SpreedlyPaymentMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpreedlyPaymentMethod] (val x: Self) extends AnyVal {
       
       inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
@@ -611,7 +617,8 @@ object spreedly {
       __obj.asInstanceOf[TokenizeCreditCardAdditionalFields]
     }
     
-    extension [Self <: TokenizeCreditCardAdditionalFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeCreditCardAdditionalFields] (val x: Self) extends AnyVal {
       
       inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
@@ -706,7 +713,8 @@ object spreedly {
       __obj.asInstanceOf[TokenizeCreditCardAdditionalFieldsFirstLastNames]
     }
     
-    extension [Self <: TokenizeCreditCardAdditionalFieldsFirstLastNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeCreditCardAdditionalFieldsFirstLastNames] (val x: Self) extends AnyVal {
       
       inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
       
@@ -727,7 +735,8 @@ object spreedly {
       __obj.asInstanceOf[TokenizeCreditCardAdditionalFieldsFullName]
     }
     
-    extension [Self <: TokenizeCreditCardAdditionalFieldsFullName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizeCreditCardAdditionalFieldsFullName] (val x: Self) extends AnyVal {
       
       inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     }

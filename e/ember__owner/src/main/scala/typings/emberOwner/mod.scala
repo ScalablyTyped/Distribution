@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[RegisterOptions]
     }
     
-    extension [Self <: RegisterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
       
       inline def setInstantiate(value: Boolean): Self = StObject.set(x, "instantiate", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[Resolver]
     }
     
-    extension [Self <: Resolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
       
       inline def setKnownForType(value: /* type */ String => KnownForTypeResult[String]): Self = StObject.set(x, "knownForType", js.Any.fromFunction1(value))
       

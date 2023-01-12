@@ -15,7 +15,8 @@ object NameK {
     __obj.asInstanceOf[NameK[K]]
   }
   
-  extension [Self <: NameK[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 67, starting with typings.typedoc.typedocStrings.searchCategoryBoosts, typings.typedoc.typedocStrings.version, typings.typedoc.typedocStrings.out */ Any */](x: Self & NameK[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameK[?], K /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 67, starting with typings.typedoc.typedocStrings.searchCategoryBoosts, typings.typedoc.typedocStrings.version, typings.typedoc.typedocStrings.out */ Any */] (val x: Self & NameK[K]) extends AnyVal {
     
     inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

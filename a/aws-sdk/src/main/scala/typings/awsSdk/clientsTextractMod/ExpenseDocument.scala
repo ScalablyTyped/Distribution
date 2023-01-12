@@ -33,7 +33,8 @@ object ExpenseDocument {
     __obj.asInstanceOf[ExpenseDocument]
   }
   
-  extension [Self <: ExpenseDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpenseDocument] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object KiiMqttEndpoint {
     __obj.asInstanceOf[KiiMqttEndpoint]
   }
   
-  extension [Self <: KiiMqttEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiMqttEndpoint] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

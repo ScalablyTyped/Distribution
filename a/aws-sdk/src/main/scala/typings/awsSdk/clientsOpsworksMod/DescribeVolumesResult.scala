@@ -18,7 +18,8 @@ object DescribeVolumesResult {
     __obj.asInstanceOf[DescribeVolumesResult]
   }
   
-  extension [Self <: DescribeVolumesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVolumesResult] (val x: Self) extends AnyVal {
     
     inline def setVolumes(value: Volumes): Self = StObject.set(x, "Volumes", value.asInstanceOf[js.Any])
     

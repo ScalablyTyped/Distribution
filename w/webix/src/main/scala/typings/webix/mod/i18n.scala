@@ -122,7 +122,8 @@ object i18n {
   @js.native
   val ^ : typings.webix.webix.i18n = js.native
   
-  extension [Self <: i18n](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: i18n] (val x: Self) extends AnyVal {
     
     inline def setAm(value: js.Array[String]): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
     

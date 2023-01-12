@@ -19,7 +19,8 @@ object SelectionDef {
     __obj.asInstanceOf[SelectionDef]
   }
   
-  extension [Self <: SelectionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionDef] (val x: Self) extends AnyVal {
     
     inline def setIds(value: js.Array[Double]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     

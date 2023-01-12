@@ -20,7 +20,8 @@ object SupportedFeatures {
     __obj.asInstanceOf[SupportedFeatures]
   }
   
-  extension [Self <: SupportedFeatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedFeatures] (val x: Self) extends AnyVal {
     
     inline def setCustom_pronunciation(value: Boolean): Self = StObject.set(x, "custom_pronunciation", value.asInstanceOf[js.Any])
     

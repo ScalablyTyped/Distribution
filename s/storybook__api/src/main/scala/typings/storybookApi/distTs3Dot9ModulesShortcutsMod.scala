@@ -76,7 +76,8 @@ object distTs3Dot9ModulesShortcutsMod {
       __obj.asInstanceOf[AddonShortcut]
     }
     
-    extension [Self <: AddonShortcut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddonShortcut] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* repeated */ Any => Any): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
@@ -175,7 +176,8 @@ object distTs3Dot9ModulesShortcutsMod {
       __obj.asInstanceOf[Shortcuts]
     }
     
-    extension [Self <: Shortcuts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shortcuts] (val x: Self) extends AnyVal {
       
       inline def setAboutPage(value: KeyCollection): Self = StObject.set(x, "aboutPage", value.asInstanceOf[js.Any])
       
@@ -297,7 +299,8 @@ object distTs3Dot9ModulesShortcutsMod {
       __obj.asInstanceOf[SubAPI]
     }
     
-    extension [Self <: SubAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubAPI] (val x: Self) extends AnyVal {
       
       inline def setGetAddonsShortcutDefaults(value: () => AddonShortcutDefaults): Self = StObject.set(x, "getAddonsShortcutDefaults", js.Any.fromFunction0(value))
       
@@ -336,7 +339,8 @@ object distTs3Dot9ModulesShortcutsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setShortcuts(value: Shortcuts): Self = StObject.set(x, "shortcuts", value.asInstanceOf[js.Any])
     }

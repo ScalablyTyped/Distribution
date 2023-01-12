@@ -68,7 +68,8 @@ object AwsFunction {
     __obj.asInstanceOf[AwsFunction]
   }
   
-  extension [Self <: AwsFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsFunction] (val x: Self) extends AnyVal {
     
     inline def setAwsKmsKeyArn(value: String): Self = StObject.set(x, "awsKmsKeyArn", value.asInstanceOf[js.Any])
     

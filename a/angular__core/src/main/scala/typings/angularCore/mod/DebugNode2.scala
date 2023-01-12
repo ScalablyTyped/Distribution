@@ -73,7 +73,8 @@ object DebugNode2 {
     __obj.asInstanceOf[DebugNode2]
   }
   
-  extension [Self <: DebugNode2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugNode2] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[DebugNode2]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

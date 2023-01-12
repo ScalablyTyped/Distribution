@@ -25,7 +25,8 @@ object RoomTerrain {
     __obj.asInstanceOf[RoomTerrain]
   }
   
-  extension [Self <: RoomTerrain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomTerrain] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (Double, Double) => `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
   }

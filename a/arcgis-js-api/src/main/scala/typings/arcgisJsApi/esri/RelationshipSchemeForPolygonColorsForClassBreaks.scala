@@ -27,7 +27,8 @@ object RelationshipSchemeForPolygonColorsForClassBreaks {
     __obj.asInstanceOf[RelationshipSchemeForPolygonColorsForClassBreaks]
   }
   
-  extension [Self <: RelationshipSchemeForPolygonColorsForClassBreaks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemeForPolygonColorsForClassBreaks] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[js.Array[Color_]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

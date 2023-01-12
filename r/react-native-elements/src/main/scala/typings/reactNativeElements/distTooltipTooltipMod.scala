@@ -238,7 +238,8 @@ object distTooltipTooltipMod extends Shortcut {
       __obj.asInstanceOf[TooltipState]
     }
     
-    extension [Self <: TooltipState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipState] (val x: Self) extends AnyVal {
       
       inline def setElementHeight(value: Double): Self = StObject.set(x, "elementHeight", value.asInstanceOf[js.Any])
       

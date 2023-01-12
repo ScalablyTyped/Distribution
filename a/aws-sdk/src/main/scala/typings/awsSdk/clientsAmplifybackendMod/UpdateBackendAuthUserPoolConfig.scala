@@ -38,7 +38,8 @@ object UpdateBackendAuthUserPoolConfig {
     __obj.asInstanceOf[UpdateBackendAuthUserPoolConfig]
   }
   
-  extension [Self <: UpdateBackendAuthUserPoolConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBackendAuthUserPoolConfig] (val x: Self) extends AnyVal {
     
     inline def setForgotPassword(value: UpdateBackendAuthForgotPasswordConfig): Self = StObject.set(x, "ForgotPassword", value.asInstanceOf[js.Any])
     

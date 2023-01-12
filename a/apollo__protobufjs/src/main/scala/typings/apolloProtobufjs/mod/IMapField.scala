@@ -19,7 +19,8 @@ object IMapField {
     __obj.asInstanceOf[IMapField]
   }
   
-  extension [Self <: IMapField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapField] (val x: Self) extends AnyVal {
     
     inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
   }

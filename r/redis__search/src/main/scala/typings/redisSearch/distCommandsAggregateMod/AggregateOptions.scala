@@ -25,7 +25,8 @@ object AggregateOptions {
     __obj.asInstanceOf[AggregateOptions]
   }
   
-  extension [Self <: AggregateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateOptions] (val x: Self) extends AnyVal {
     
     inline def setDIALECT(value: Double): Self = StObject.set(x, "DIALECT", value.asInstanceOf[js.Any])
     

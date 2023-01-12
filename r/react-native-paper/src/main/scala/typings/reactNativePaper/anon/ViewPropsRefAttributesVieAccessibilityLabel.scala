@@ -469,7 +469,8 @@ object ViewPropsRefAttributesVieAccessibilityLabel {
     __obj.asInstanceOf[ViewPropsRefAttributesVieAccessibilityLabel]
   }
   
-  extension [Self <: ViewPropsRefAttributesVieAccessibilityLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropsRefAttributesVieAccessibilityLabel] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

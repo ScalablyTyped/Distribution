@@ -33,7 +33,8 @@ object UpdateParallelDataRequest {
     __obj.asInstanceOf[UpdateParallelDataRequest]
   }
   
-  extension [Self <: UpdateParallelDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateParallelDataRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

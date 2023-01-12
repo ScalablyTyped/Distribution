@@ -85,7 +85,8 @@ object AboveAverage {
     __obj.asInstanceOf[AboveAverage]
   }
   
-  extension [Self <: AboveAverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboveAverage] (val x: Self) extends AnyVal {
     
     inline def setAboveBelow(value: XlAboveBelow): Self = StObject.set(x, "AboveBelow", value.asInstanceOf[js.Any])
     

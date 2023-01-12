@@ -62,7 +62,8 @@ object IGenericDerivedFields {
     __obj.asInstanceOf[IGenericDerivedFields]
   }
   
-  extension [Self <: IGenericDerivedFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericDerivedFields] (val x: Self) extends AnyVal {
     
     inline def setGetDerivedField(value: String => js.Promise[Any]): Self = StObject.set(x, "getDerivedField", js.Any.fromFunction1(value))
     

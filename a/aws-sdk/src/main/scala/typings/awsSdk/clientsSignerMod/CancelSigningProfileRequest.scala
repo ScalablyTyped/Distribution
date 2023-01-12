@@ -18,7 +18,8 @@ object CancelSigningProfileRequest {
     __obj.asInstanceOf[CancelSigningProfileRequest]
   }
   
-  extension [Self <: CancelSigningProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSigningProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
   }

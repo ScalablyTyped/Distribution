@@ -17,7 +17,8 @@ object S3Rule {
     __obj.asInstanceOf[S3Rule]
   }
   
-  extension [Self <: S3Rule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Rule] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

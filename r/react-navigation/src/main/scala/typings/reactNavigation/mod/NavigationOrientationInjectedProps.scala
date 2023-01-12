@@ -15,7 +15,8 @@ object NavigationOrientationInjectedProps {
     __obj.asInstanceOf[NavigationOrientationInjectedProps]
   }
   
-  extension [Self <: NavigationOrientationInjectedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationOrientationInjectedProps] (val x: Self) extends AnyVal {
     
     inline def setIsLandscape(value: Boolean): Self = StObject.set(x, "isLandscape", value.asInstanceOf[js.Any])
   }

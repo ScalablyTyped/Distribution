@@ -17,7 +17,8 @@ object PersistedArgs {
     __obj.asInstanceOf[PersistedArgs]
   }
   
-  extension [Self <: PersistedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistedArgs] (val x: Self) extends AnyVal {
     
     inline def setPersistedArgs(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any

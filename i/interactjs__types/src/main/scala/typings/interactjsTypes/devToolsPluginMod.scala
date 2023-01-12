@@ -59,7 +59,8 @@ object devToolsPluginMod extends Shortcut {
       __obj.asInstanceOf[Check]
     }
     
-    extension [Self <: Check](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
       
       inline def setGetInfo(value: Interaction[ActionName] => js.Array[Any]): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
       
@@ -84,7 +85,8 @@ object devToolsPluginMod extends Shortcut {
       __obj.asInstanceOf[DevToolsOptions]
     }
     
-    extension [Self <: DevToolsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevToolsOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnore(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CheckName * / any ]:? boolean} */ js.Any
@@ -111,7 +113,8 @@ object devToolsPluginMod extends Shortcut {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* repeated */ Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -149,7 +152,8 @@ object devToolsPluginMod extends Shortcut {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setDevTools(value: OptionMethod[DevToolsOptions]): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
       }
@@ -170,7 +174,8 @@ object devToolsPluginMod extends Shortcut {
         __obj.asInstanceOf[BaseDefaults]
       }
       
-      extension [Self <: BaseDefaults](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseDefaults] (val x: Self) extends AnyVal {
         
         inline def setDevTools(value: DevToolsOptions): Self = StObject.set(x, "devTools", value.asInstanceOf[js.Any])
         
@@ -193,7 +198,8 @@ object devToolsPluginMod extends Shortcut {
         __obj.asInstanceOf[Scope]
       }
       
-      extension [Self <: Scope](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
         
         inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       }

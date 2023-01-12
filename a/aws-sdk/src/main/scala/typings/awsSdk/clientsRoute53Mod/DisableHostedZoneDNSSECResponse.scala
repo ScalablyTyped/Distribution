@@ -15,7 +15,8 @@ object DisableHostedZoneDNSSECResponse {
     __obj.asInstanceOf[DisableHostedZoneDNSSECResponse]
   }
   
-  extension [Self <: DisableHostedZoneDNSSECResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableHostedZoneDNSSECResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeInfo(value: ChangeInfo): Self = StObject.set(x, "ChangeInfo", value.asInstanceOf[js.Any])
   }

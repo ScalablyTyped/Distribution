@@ -355,7 +355,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[BaseCascaderProps[OptionType]]
     }
     
-    extension [Self <: BaseCascaderProps[?], OptionType /* <: BaseOptionType */](x: Self & BaseCascaderProps[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCascaderProps[?], OptionType /* <: BaseOptionType */] (val x: Self & BaseCascaderProps[OptionType]) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -864,7 +865,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[BaseOptionType]
     }
     
-    extension [Self <: BaseOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptionType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -904,7 +906,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[CascaderRef]
     }
     
-    extension [Self <: CascaderRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
@@ -929,7 +932,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[DefaultOptionType]
     }
     
-    extension [Self <: DefaultOptionType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptionType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[DefaultOptionType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -964,7 +968,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[FieldNames]
     }
     
-    extension [Self <: FieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldNames] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1005,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[InternalFieldNames]
     }
     
-    extension [Self <: InternalFieldNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalFieldNames] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -1029,7 +1035,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[MultipleCascaderProps[OptionType]]
     }
     
-    extension [Self <: MultipleCascaderProps[?], OptionType /* <: BaseOptionType */](x: Self & MultipleCascaderProps[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleCascaderProps[?], OptionType /* <: BaseOptionType */] (val x: Self & MultipleCascaderProps[OptionType]) extends AnyVal {
       
       inline def setCheckable(value: `true` | ReactNode): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       
@@ -1095,7 +1102,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[ShowSearchType[OptionType]]
     }
     
-    extension [Self <: ShowSearchType[?], OptionType /* <: BaseOptionType */](x: Self & ShowSearchType[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowSearchType[?], OptionType /* <: BaseOptionType */] (val x: Self & ShowSearchType[OptionType]) extends AnyVal {
       
       inline def setFilter(
         value: (/* inputValue */ String, /* options */ js.Array[OptionType], /* fieldNames */ FieldNames) => Boolean
@@ -1142,7 +1150,8 @@ object esCascaderMod extends Shortcut {
       __obj.asInstanceOf[SingleCascaderProps[OptionType]]
     }
     
-    extension [Self <: SingleCascaderProps[?], OptionType /* <: BaseOptionType */](x: Self & SingleCascaderProps[OptionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleCascaderProps[?], OptionType /* <: BaseOptionType */] (val x: Self & SingleCascaderProps[OptionType]) extends AnyVal {
       
       inline def setCheckable(value: `false`): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       

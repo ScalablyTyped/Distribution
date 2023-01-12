@@ -53,7 +53,8 @@ object PartialIWebXRControllerPo {
     __obj.asInstanceOf[PartialIWebXRControllerPo]
   }
   
-  extension [Self <: PartialIWebXRControllerPo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialIWebXRControllerPo] (val x: Self) extends AnyVal {
     
     inline def setCustomLasterPointerMeshGenerator(value: () => AbstractMesh): Self = StObject.set(x, "customLasterPointerMeshGenerator", js.Any.fromFunction0(value))
     

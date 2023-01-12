@@ -41,7 +41,8 @@ object AdGroupDevices {
     __obj.asInstanceOf[AdGroupDevices]
   }
   
-  extension [Self <: AdGroupDevices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdGroupDevices] (val x: Self) extends AnyVal {
     
     inline def setClearDesktopBidModifier(value: () => Unit): Self = StObject.set(x, "clearDesktopBidModifier", js.Any.fromFunction0(value))
     

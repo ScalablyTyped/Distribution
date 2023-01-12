@@ -84,7 +84,8 @@ object typesCoreMutationCacheMod {
       __obj.asInstanceOf[MutationCacheConfig]
     }
     
-    extension [Self <: MutationCacheConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationCacheConfig] (val x: Self) extends AnyVal {
       
       inline def setOnError(
         value: (/* error */ Any, /* variables */ Any, /* context */ Any, /* mutation */ Mutation[Any, Any, Any, Any]) => Unit

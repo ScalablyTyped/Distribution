@@ -29,7 +29,8 @@ object SpecialChar {
     __obj.asInstanceOf[SpecialChar]
   }
   
-  extension [Self <: SpecialChar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecialChar] (val x: Self) extends AnyVal {
     
     inline def setCodePoint(value: Double): Self = StObject.set(x, "codePoint", value.asInstanceOf[js.Any])
     

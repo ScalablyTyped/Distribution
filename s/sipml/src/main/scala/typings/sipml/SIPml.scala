@@ -42,7 +42,8 @@ object SIPml {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object SIPml {
       __obj.asInstanceOf[EventTarget[EventSubscriptionType, EventType]]
     }
     
-    extension [Self <: EventTarget[?, ?], EventSubscriptionType /* <: String */, EventType /* <: Event */](x: Self & (EventTarget[EventSubscriptionType, EventType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventTarget[?, ?], EventSubscriptionType /* <: String */, EventType /* <: Event */] (val x: Self & (EventTarget[EventSubscriptionType, EventType])) extends AnyVal {
       
       inline def setAddEventListener(value: (EventSubscriptionType, js.Function1[/* e */ EventType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -197,7 +199,8 @@ object SIPml {
         __obj.asInstanceOf[Configuration]
       }
       
-      extension [Self <: Configuration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
         
         inline def setAudio_remote(value: HTMLElement): Self = StObject.set(x, "audio_remote", value.asInstanceOf[js.Any])
         
@@ -270,7 +273,8 @@ object SIPml {
         __obj.asInstanceOf[typings.sipml.SIPml.Session.Event]
       }
       
-      extension [Self <: typings.sipml.SIPml.Session.Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.sipml.SIPml.Session.Event] (val x: Self) extends AnyVal {
         
         inline def setGetTransferDestinationFriendlyName(value: () => String): Self = StObject.set(x, "getTransferDestinationFriendlyName", js.Any.fromFunction0(value))
         
@@ -425,7 +429,8 @@ object SIPml {
         __obj.asInstanceOf[typings.sipml.SIPml.Stack.Configuration]
       }
       
-      extension [Self <: typings.sipml.SIPml.Stack.Configuration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.sipml.SIPml.Stack.Configuration] (val x: Self) extends AnyVal {
         
         inline def setBandwidth(value: Audio): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
         
@@ -519,7 +524,8 @@ object SIPml {
         __obj.asInstanceOf[typings.sipml.SIPml.Stack.Event]
       }
       
-      extension [Self <: typings.sipml.SIPml.Stack.Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.sipml.SIPml.Stack.Event] (val x: Self) extends AnyVal {
         
         inline def setNewSession(value: Session): Self = StObject.set(x, "newSession", value.asInstanceOf[js.Any])
       }

@@ -25,7 +25,8 @@ object RTCRtpContributingSource {
     __obj.asInstanceOf[RTCRtpContributingSource]
   }
   
-  extension [Self <: RTCRtpContributingSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpContributingSource] (val x: Self) extends AnyVal {
     
     inline def setAudioLevel(value: Double): Self = StObject.set(x, "audioLevel", value.asInstanceOf[js.Any])
     

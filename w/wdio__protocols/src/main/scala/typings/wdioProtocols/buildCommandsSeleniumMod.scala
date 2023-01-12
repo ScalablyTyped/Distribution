@@ -95,7 +95,8 @@ object buildCommandsSeleniumMod {
       __obj.asInstanceOf[SeleniumCommands]
     }
     
-    extension [Self <: SeleniumCommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeleniumCommands] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String => String): Self = StObject.set(x, "file", js.Any.fromFunction1(value))
       

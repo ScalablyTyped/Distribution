@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Fn]
     }
     
-    extension [Self <: Fn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
       
       inline def setFn(value: Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialCLICKTOVIEWACTIONS]
     }
     
-    extension [Self <: PartialCLICKTOVIEWACTIONS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCLICKTOVIEWACTIONS] (val x: Self) extends AnyVal {
       
       inline def setCLICK_TO_VIEW_ACTIONS(value: String): Self = StObject.set(x, "CLICK_TO_VIEW_ACTIONS", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Png]
     }
     
-    extension [Self <: Png](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Png] (val x: Self) extends AnyVal {
       
       inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object anon {
       __obj.asInstanceOf[Svg]
     }
     
-    extension [Self <: Svg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
       
       inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
       
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[TypeofexpressionInterpret]
     }
     
-    extension [Self <: TypeofexpressionInterpret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofexpressionInterpret] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: (Any, Any) => Any): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       

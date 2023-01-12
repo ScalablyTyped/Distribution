@@ -18,7 +18,8 @@ object EnvironmentPropertyUpdates {
     __obj.asInstanceOf[EnvironmentPropertyUpdates]
   }
   
-  extension [Self <: EnvironmentPropertyUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentPropertyUpdates] (val x: Self) extends AnyVal {
     
     inline def setPropertyGroups(value: PropertyGroups): Self = StObject.set(x, "PropertyGroups", value.asInstanceOf[js.Any])
     

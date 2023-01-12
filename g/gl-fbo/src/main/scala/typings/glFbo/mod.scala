@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[FrameBuffer]
     }
     
-    extension [Self <: FrameBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameBuffer] (val x: Self) extends AnyVal {
       
       inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[FrameBufferOptions]
     }
     
-    extension [Self <: FrameBufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameBufferOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

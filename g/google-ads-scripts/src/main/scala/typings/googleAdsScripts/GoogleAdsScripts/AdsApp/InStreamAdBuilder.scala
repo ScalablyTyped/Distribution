@@ -56,7 +56,8 @@ object InStreamAdBuilder {
     __obj.asInstanceOf[InStreamAdBuilder]
   }
   
-  extension [Self <: InStreamAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InStreamAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithActionHeadline(value: String => InStreamAdBuilder): Self = StObject.set(x, "withActionHeadline", js.Any.fromFunction1(value))
     

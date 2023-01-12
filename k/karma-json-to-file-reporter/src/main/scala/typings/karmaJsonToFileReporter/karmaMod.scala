@@ -21,7 +21,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setJsonToFileReporter(value: JsonToFileReporterOptions): Self = StObject.set(x, "jsonToFileReporter", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object karmaMod {
       __obj.asInstanceOf[JsonToFileReporterOptions]
     }
     
-    extension [Self <: JsonToFileReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonToFileReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

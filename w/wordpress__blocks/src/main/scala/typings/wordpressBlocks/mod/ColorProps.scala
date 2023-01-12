@@ -53,7 +53,8 @@ object ColorProps {
     __obj.asInstanceOf[ColorProps]
   }
   
-  extension [Self <: ColorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

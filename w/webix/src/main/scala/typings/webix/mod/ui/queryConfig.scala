@@ -61,7 +61,8 @@ object queryConfig {
     __obj.asInstanceOf[queryConfig]
   }
   
-  extension [Self <: queryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: queryConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

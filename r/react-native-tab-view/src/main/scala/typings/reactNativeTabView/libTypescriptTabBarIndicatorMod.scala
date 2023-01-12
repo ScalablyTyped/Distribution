@@ -50,7 +50,8 @@ object libTypescriptTabBarIndicatorMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
       

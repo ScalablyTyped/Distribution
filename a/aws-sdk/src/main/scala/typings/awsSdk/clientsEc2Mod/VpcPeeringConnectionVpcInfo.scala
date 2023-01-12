@@ -48,7 +48,8 @@ object VpcPeeringConnectionVpcInfo {
     __obj.asInstanceOf[VpcPeeringConnectionVpcInfo]
   }
   
-  extension [Self <: VpcPeeringConnectionVpcInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcPeeringConnectionVpcInfo] (val x: Self) extends AnyVal {
     
     inline def setCidrBlock(value: String): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     

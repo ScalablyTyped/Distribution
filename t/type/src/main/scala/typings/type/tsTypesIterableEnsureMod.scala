@@ -38,7 +38,8 @@ object tsTypesIterableEnsureMod {
       __obj.asInstanceOf[IterableEnsureOptions]
     }
     
-    extension [Self <: IterableEnsureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IterableEnsureOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowString(value: Boolean): Self = StObject.set(x, "allowString", value.asInstanceOf[js.Any])
       

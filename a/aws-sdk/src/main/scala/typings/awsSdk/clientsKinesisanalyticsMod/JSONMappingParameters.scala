@@ -18,7 +18,8 @@ object JSONMappingParameters {
     __obj.asInstanceOf[JSONMappingParameters]
   }
   
-  extension [Self <: JSONMappingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONMappingParameters] (val x: Self) extends AnyVal {
     
     inline def setRecordRowPath(value: RecordRowPath): Self = StObject.set(x, "RecordRowPath", value.asInstanceOf[js.Any])
   }

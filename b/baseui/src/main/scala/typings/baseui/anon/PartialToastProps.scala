@@ -53,7 +53,8 @@ object PartialToastProps {
     __obj.asInstanceOf[PartialToastProps]
   }
   
-  extension [Self <: PartialToastProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialToastProps] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

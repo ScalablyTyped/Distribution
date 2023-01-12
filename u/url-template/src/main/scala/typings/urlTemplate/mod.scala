@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Template]
     }
     
-    extension [Self <: Template](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
       
       inline def setExpand(
         value: Record[

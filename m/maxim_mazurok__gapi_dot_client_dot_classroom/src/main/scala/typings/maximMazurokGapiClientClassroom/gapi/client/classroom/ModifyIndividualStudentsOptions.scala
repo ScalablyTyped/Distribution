@@ -19,7 +19,8 @@ object ModifyIndividualStudentsOptions {
     __obj.asInstanceOf[ModifyIndividualStudentsOptions]
   }
   
-  extension [Self <: ModifyIndividualStudentsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyIndividualStudentsOptions] (val x: Self) extends AnyVal {
     
     inline def setAddStudentIds(value: js.Array[String]): Self = StObject.set(x, "addStudentIds", value.asInstanceOf[js.Any])
     

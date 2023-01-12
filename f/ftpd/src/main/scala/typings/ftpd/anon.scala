@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[BufferSize]
     }
     
-    extension [Self <: BufferSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferSize] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[EncodingFlag]
     }
     
-    extension [Self <: EncodingFlag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingFlag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Flag]
     }
     
-    extension [Self <: Flag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flag] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -168,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

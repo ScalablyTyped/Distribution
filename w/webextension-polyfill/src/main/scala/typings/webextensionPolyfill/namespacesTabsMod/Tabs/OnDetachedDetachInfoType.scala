@@ -17,7 +17,8 @@ object OnDetachedDetachInfoType {
     __obj.asInstanceOf[OnDetachedDetachInfoType]
   }
   
-  extension [Self <: OnDetachedDetachInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDetachedDetachInfoType] (val x: Self) extends AnyVal {
     
     inline def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
     

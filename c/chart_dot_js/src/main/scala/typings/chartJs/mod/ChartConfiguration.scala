@@ -23,7 +23,8 @@ object ChartConfiguration {
     __obj.asInstanceOf[ChartConfiguration[TType, TData, TLabel]]
   }
   
-  extension [Self <: ChartConfiguration[?, ?, ?], TType /* <: ChartType */, TData, TLabel](x: Self & (ChartConfiguration[TType, TData, TLabel])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartConfiguration[?, ?, ?], TType /* <: ChartType */, TData, TLabel] (val x: Self & (ChartConfiguration[TType, TData, TLabel])) extends AnyVal {
     
     inline def setData(value: ChartData[TType, TData, TLabel]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

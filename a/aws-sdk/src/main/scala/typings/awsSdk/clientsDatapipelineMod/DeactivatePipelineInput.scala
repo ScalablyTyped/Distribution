@@ -23,7 +23,8 @@ object DeactivatePipelineInput {
     __obj.asInstanceOf[DeactivatePipelineInput]
   }
   
-  extension [Self <: DeactivatePipelineInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeactivatePipelineInput] (val x: Self) extends AnyVal {
     
     inline def setCancelActive(value: cancelActive): Self = StObject.set(x, "cancelActive", value.asInstanceOf[js.Any])
     

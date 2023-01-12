@@ -15,7 +15,8 @@ object Words {
     __obj.asInstanceOf[Words]
   }
   
-  extension [Self <: Words](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Words] (val x: Self) extends AnyVal {
     
     inline def setWords(value: String): Self = StObject.set(x, "words", value.asInstanceOf[js.Any])
   }

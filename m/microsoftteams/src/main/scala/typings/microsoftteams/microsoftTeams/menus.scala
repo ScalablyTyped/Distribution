@@ -51,7 +51,8 @@ object menus {
       __obj.asInstanceOf[ActionMenuParameters]
     }
     
-    extension [Self <: ActionMenuParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionMenuParameters] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[MenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object menus {
       __obj.asInstanceOf[MenuItem]
     }
     
-    extension [Self <: MenuItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItem] (val x: Self) extends AnyVal {
       
       inline def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object menus {
       __obj.asInstanceOf[ViewConfiguration]
     }
     
-    extension [Self <: ViewConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewConfiguration] (val x: Self) extends AnyVal {
       
       inline def setContentDescription(value: String): Self = StObject.set(x, "contentDescription", value.asInstanceOf[js.Any])
       
@@ -203,7 +206,8 @@ object menus {
       __obj.asInstanceOf[ViewData]
     }
     
-    extension [Self <: ViewData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewData] (val x: Self) extends AnyVal {
       
       inline def setListItems(value: js.Array[MenuItem]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
       

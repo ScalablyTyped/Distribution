@@ -58,7 +58,8 @@ object ContactMethod {
     __obj.asInstanceOf[ContactMethod]
   }
   
-  extension [Self <: ContactMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactMethod] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

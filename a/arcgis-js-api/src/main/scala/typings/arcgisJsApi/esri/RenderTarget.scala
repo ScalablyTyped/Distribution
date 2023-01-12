@@ -27,7 +27,8 @@ object RenderTarget {
     __obj.asInstanceOf[RenderTarget]
   }
   
-  extension [Self <: RenderTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderTarget] (val x: Self) extends AnyVal {
     
     inline def setFramebuffer(value: Any): Self = StObject.set(x, "framebuffer", value.asInstanceOf[js.Any])
     

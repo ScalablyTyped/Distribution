@@ -261,7 +261,8 @@ object animationsAnimatableMod {
         __obj.asInstanceOf[Bone]
       }
       
-      extension [Self <: Bone](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Bone] (val x: Self) extends AnyVal {
         
         inline def setCopyAnimationRange(value: (Bone, String, Double, Boolean, Nullable[Vector3]) => Boolean): Self = StObject.set(x, "copyAnimationRange", js.Any.fromFunction5(value))
       }

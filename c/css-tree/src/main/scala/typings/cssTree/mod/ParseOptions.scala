@@ -39,7 +39,8 @@ object ParseOptions {
     __obj.asInstanceOf[ParseOptions]
   }
   
-  extension [Self <: ParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
     
     inline def setAtrule(value: String): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
     

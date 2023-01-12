@@ -71,7 +71,8 @@ object typesHelpersHelpersDotcanvasMod {
       __obj.asInstanceOf[DrawPointOptions]
     }
     
-    extension [Self <: DrawPointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawPointOptions] (val x: Self) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object typesHelpersHelpersDotcanvasMod {
       __obj.asInstanceOf[RenderTextOpts]
     }
     
-    extension [Self <: RenderTextOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTextOpts] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

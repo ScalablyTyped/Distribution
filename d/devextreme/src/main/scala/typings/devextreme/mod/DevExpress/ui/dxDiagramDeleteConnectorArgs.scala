@@ -18,7 +18,8 @@ object dxDiagramDeleteConnectorArgs {
     __obj.asInstanceOf[dxDiagramDeleteConnectorArgs]
   }
   
-  extension [Self <: dxDiagramDeleteConnectorArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramDeleteConnectorArgs] (val x: Self) extends AnyVal {
     
     inline def setConnector(value: dxDiagramConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     

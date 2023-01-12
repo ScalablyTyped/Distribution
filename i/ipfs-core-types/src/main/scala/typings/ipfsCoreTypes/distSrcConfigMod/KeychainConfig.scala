@@ -15,7 +15,8 @@ object KeychainConfig {
     __obj.asInstanceOf[KeychainConfig]
   }
   
-  extension [Self <: KeychainConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeychainConfig] (val x: Self) extends AnyVal {
     
     inline def setDEK(value: DEK): Self = StObject.set(x, "DEK", value.asInstanceOf[js.Any])
     

@@ -294,7 +294,8 @@ object utilsUtilsMod {
       __obj.asInstanceOf[IconOptions[ParentProps]]
     }
     
-    extension [Self <: IconOptions[?], ParentProps](x: Self & IconOptions[ParentProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOptions[?], ParentProps] (val x: Self & IconOptions[ParentProps]) extends AnyVal {
       
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

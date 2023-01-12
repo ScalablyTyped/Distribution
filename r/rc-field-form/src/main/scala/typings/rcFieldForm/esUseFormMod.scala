@@ -195,7 +195,8 @@ object esUseFormMod {
       __obj.asInstanceOf[UpdateAction]
     }
     
-    extension [Self <: UpdateAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAction] (val x: Self) extends AnyVal {
       
       inline def setNamePath(value: InternalNamePath): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object esUseFormMod {
       __obj.asInstanceOf[ValidateAction]
     }
     
-    extension [Self <: ValidateAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidateAction] (val x: Self) extends AnyVal {
       
       inline def setNamePath(value: InternalNamePath): Self = StObject.set(x, "namePath", value.asInstanceOf[js.Any])
       

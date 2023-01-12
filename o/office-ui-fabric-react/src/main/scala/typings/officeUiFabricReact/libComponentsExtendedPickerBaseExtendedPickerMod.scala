@@ -116,7 +116,8 @@ object libComponentsExtendedPickerBaseExtendedPickerMod {
       __obj.asInstanceOf[IBaseExtendedPickerState[T]]
     }
     
-    extension [Self <: IBaseExtendedPickerState[?], T](x: Self & IBaseExtendedPickerState[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseExtendedPickerState[?], T] (val x: Self & IBaseExtendedPickerState[T]) extends AnyVal {
       
       inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
       

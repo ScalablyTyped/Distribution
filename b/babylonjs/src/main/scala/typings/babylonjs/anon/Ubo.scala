@@ -19,7 +19,8 @@ object Ubo {
     __obj.asInstanceOf[Ubo]
   }
   
-  extension [Self <: Ubo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ubo] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

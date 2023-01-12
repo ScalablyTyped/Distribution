@@ -283,7 +283,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NodeRedApp]
     }
     
-    extension [Self <: NodeRedApp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeRedApp] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

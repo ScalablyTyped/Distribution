@@ -90,7 +90,8 @@ object PivotPager {
       __obj.asInstanceOf[typings.ejWebAll.ej.PivotPager.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.PivotPager.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.PivotPager.Model] (val x: Self) extends AnyVal {
       
       inline def setCategoricalCurrentPage(value: Double): Self = StObject.set(x, "categoricalCurrentPage", value.asInstanceOf[js.Any])
       

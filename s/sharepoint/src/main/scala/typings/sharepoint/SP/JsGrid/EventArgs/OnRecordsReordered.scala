@@ -21,7 +21,8 @@ object OnRecordsReordered {
     __obj.asInstanceOf[OnRecordsReordered]
   }
   
-  extension [Self <: OnRecordsReordered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRecordsReordered] (val x: Self) extends AnyVal {
     
     inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
     

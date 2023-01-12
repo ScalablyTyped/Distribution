@@ -68,7 +68,8 @@ object ProtoCMsgClientLicenseListLicense {
     __obj.asInstanceOf[ProtoCMsgClientLicenseListLicense]
   }
   
-  extension [Self <: ProtoCMsgClientLicenseListLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtoCMsgClientLicenseListLicense] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

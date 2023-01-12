@@ -30,7 +30,8 @@ object QueryFilter {
     __obj.asInstanceOf[QueryFilter]
   }
   
-  extension [Self <: QueryFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFilter] (val x: Self) extends AnyVal {
     
     inline def setField(value: String | `@`): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

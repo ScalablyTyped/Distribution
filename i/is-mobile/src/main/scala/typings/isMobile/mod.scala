@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[HttpRequestInterfaceMock]
     }
     
-    extension [Self <: HttpRequestInterfaceMock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestInterfaceMock] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: HttpRequestHeadersInterfaceMock): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[IsMobileOptions]
     }
     
-    extension [Self <: IsMobileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsMobileOptions] (val x: Self) extends AnyVal {
       
       inline def setFeatureDetect(value: Boolean): Self = StObject.set(x, "featureDetect", value.asInstanceOf[js.Any])
       

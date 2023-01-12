@@ -17,7 +17,8 @@ object RangeObject {
     __obj.asInstanceOf[RangeObject]
   }
   
-  extension [Self <: RangeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeObject] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: MarkerObject): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

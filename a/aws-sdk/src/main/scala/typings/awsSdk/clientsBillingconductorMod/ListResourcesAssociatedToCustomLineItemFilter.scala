@@ -18,7 +18,8 @@ object ListResourcesAssociatedToCustomLineItemFilter {
     __obj.asInstanceOf[ListResourcesAssociatedToCustomLineItemFilter]
   }
   
-  extension [Self <: ListResourcesAssociatedToCustomLineItemFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourcesAssociatedToCustomLineItemFilter] (val x: Self) extends AnyVal {
     
     inline def setRelationship(value: CustomLineItemRelationship): Self = StObject.set(x, "Relationship", value.asInstanceOf[js.Any])
     

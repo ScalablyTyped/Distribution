@@ -19,7 +19,8 @@ object FbtEnumProps {
     __obj.asInstanceOf[FbtEnumProps]
   }
   
-  extension [Self <: FbtEnumProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtEnumProps] (val x: Self) extends AnyVal {
     
     inline def `setEnum-range`(value: js.Array[String] | StringDictionary[String]): Self = StObject.set(x, "enum-range", value.asInstanceOf[js.Any])
     

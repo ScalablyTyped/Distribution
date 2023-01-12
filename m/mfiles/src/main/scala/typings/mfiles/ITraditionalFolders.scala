@@ -17,7 +17,8 @@ object ITraditionalFolders {
     __obj.asInstanceOf[ITraditionalFolders]
   }
   
-  extension [Self <: ITraditionalFolders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITraditionalFolders] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

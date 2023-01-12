@@ -25,7 +25,8 @@ object RevisionList {
     __obj.asInstanceOf[RevisionList]
   }
   
-  extension [Self <: RevisionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionList] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PlannerGroup {
     __obj.asInstanceOf[PlannerGroup]
   }
   
-  extension [Self <: PlannerGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerGroup] (val x: Self) extends AnyVal {
     
     inline def setPlans(value: NullableOption[js.Array[PlannerPlan]]): Self = StObject.set(x, "plans", value.asInstanceOf[js.Any])
     

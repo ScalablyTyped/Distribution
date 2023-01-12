@@ -26,7 +26,8 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceInfo]
     }
     
-    extension [Self <: SpatialSurfaceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSurfaceInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceMesh]
     }
     
-    extension [Self <: SpatialSurfaceMesh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSurfaceMesh] (val x: Self) extends AnyVal {
       
       inline def setCoordinateSystem(value: Any): Self = StObject.set(x, "coordinateSystem", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceMeshBuffer]
     }
     
-    extension [Self <: SpatialSurfaceMeshBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSurfaceMeshBuffer] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceMeshOptions]
     }
     
-    extension [Self <: SpatialSurfaceMeshOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSurfaceMeshOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeVertexNormals(value: Any): Self = StObject.set(x, "includeVertexNormals", value.asInstanceOf[js.Any])
       
@@ -191,7 +195,8 @@ object Surfaces {
       __obj.asInstanceOf[SpatialSurfaceObserver]
     }
     
-    extension [Self <: SpatialSurfaceObserver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpatialSurfaceObserver] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: Any): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
       

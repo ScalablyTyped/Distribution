@@ -1196,7 +1196,8 @@ object mod {
       __obj.asInstanceOf[QuaternionLike]
     }
     
-    extension [Self <: QuaternionLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuaternionLike] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -1247,7 +1248,8 @@ object mod {
       __obj.asInstanceOf[Vector3Like]
     }
     
-    extension [Self <: Vector3Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector3Like] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

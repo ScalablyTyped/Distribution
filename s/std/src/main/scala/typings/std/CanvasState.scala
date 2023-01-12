@@ -19,7 +19,8 @@ object CanvasState {
     __obj.asInstanceOf[CanvasState]
   }
   
-  extension [Self <: CanvasState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasState] (val x: Self) extends AnyVal {
     
     inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     

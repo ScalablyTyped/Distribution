@@ -25,7 +25,8 @@ object UpdateApplicationMaintenanceConfigurationResponse {
     __obj.asInstanceOf[UpdateApplicationMaintenanceConfigurationResponse]
   }
   
-  extension [Self <: UpdateApplicationMaintenanceConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationMaintenanceConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     

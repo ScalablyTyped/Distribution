@@ -34,7 +34,8 @@ object AggregatedGeometryProperties {
     __obj.asInstanceOf[AggregatedGeometryProperties]
   }
   
-  extension [Self <: AggregatedGeometryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedGeometryProperties] (val x: Self) extends AnyVal {
     
     inline def setLine(value: PolylineProperties): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

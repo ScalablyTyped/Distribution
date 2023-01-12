@@ -28,7 +28,8 @@ object JSXOpeningElement {
     __obj.asInstanceOf[JSXOpeningElement]
   }
   
-  extension [Self <: JSXOpeningElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXOpeningElement] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[JSXAttributeOrSpread]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

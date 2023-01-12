@@ -29,7 +29,8 @@ object memory {
       __obj.asInstanceOf[MemoryInfo]
     }
     
-    extension [Self <: MemoryInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
       
       inline def setAvailableCapacity(value: Double): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
       

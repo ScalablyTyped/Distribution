@@ -49,7 +49,8 @@ object JobConfigurationExtract {
     __obj.asInstanceOf[JobConfigurationExtract]
   }
   
-  extension [Self <: JobConfigurationExtract](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfigurationExtract] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

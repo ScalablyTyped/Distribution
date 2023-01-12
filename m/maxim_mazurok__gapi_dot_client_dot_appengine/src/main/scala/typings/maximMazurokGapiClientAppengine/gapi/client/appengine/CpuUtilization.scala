@@ -19,7 +19,8 @@ object CpuUtilization {
     __obj.asInstanceOf[CpuUtilization]
   }
   
-  extension [Self <: CpuUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuUtilization] (val x: Self) extends AnyVal {
     
     inline def setAggregationWindowLength(value: String): Self = StObject.set(x, "aggregationWindowLength", value.asInstanceOf[js.Any])
     

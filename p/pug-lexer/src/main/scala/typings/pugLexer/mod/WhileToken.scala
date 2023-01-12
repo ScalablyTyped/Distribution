@@ -21,7 +21,8 @@ object WhileToken {
     __obj.asInstanceOf[WhileToken]
   }
   
-  extension [Self <: WhileToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhileToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

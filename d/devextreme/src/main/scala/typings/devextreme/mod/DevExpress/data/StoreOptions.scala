@@ -80,7 +80,8 @@ object StoreOptions {
     __obj.asInstanceOf[StoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: StoreOptions[?, ?], TItem, TKey](x: Self & (StoreOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreOptions[?, ?], TItem, TKey] (val x: Self & (StoreOptions[TItem, TKey])) extends AnyVal {
     
     inline def setErrorHandler(value: js.Function): Self = StObject.set(x, "errorHandler", value.asInstanceOf[js.Any])
     

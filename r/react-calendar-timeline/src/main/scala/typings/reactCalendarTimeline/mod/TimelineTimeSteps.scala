@@ -25,7 +25,8 @@ object TimelineTimeSteps {
     __obj.asInstanceOf[TimelineTimeSteps]
   }
   
-  extension [Self <: TimelineTimeSteps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineTimeSteps] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

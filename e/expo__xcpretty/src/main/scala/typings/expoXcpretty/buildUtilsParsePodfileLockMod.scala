@@ -37,7 +37,8 @@ object buildUtilsParsePodfileLockMod {
       __obj.asInstanceOf[ExternalSource]
     }
     
-    extension [Self <: ExternalSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalSource] (val x: Self) extends AnyVal {
       
       inline def setColonpath(value: String): Self = StObject.set(x, ":path", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object buildUtilsParsePodfileLockMod {
       __obj.asInstanceOf[PodDependency]
     }
     
-    extension [Self <: PodDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PodDependency] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: js.Array[PodDependency]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object buildUtilsParsePodfileLockMod {
       __obj.asInstanceOf[PodfileLock]
     }
     
-    extension [Self <: PodfileLock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PodfileLock] (val x: Self) extends AnyVal {
       
       inline def setCocoapods(value: String): Self = StObject.set(x, "cocoapods", value.asInstanceOf[js.Any])
       

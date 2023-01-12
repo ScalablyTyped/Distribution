@@ -23,7 +23,8 @@ object BatchGetAssetPropertyValueHistoryErrorInfo {
     __obj.asInstanceOf[BatchGetAssetPropertyValueHistoryErrorInfo]
   }
   
-  extension [Self <: BatchGetAssetPropertyValueHistoryErrorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyValueHistoryErrorInfo] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: BatchGetAssetPropertyValueHistoryErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object DebugOnly {
     __obj.asInstanceOf[DebugOnly]
   }
   
-  extension [Self <: DebugOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugOnly] (val x: Self) extends AnyVal {
     
     inline def setDebugOnly(value: Boolean): Self = StObject.set(x, "debugOnly", value.asInstanceOf[js.Any])
     

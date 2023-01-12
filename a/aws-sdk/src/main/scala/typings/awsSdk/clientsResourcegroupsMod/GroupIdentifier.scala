@@ -23,7 +23,8 @@ object GroupIdentifier {
     __obj.asInstanceOf[GroupIdentifier]
   }
   
-  extension [Self <: GroupIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupIdentifier] (val x: Self) extends AnyVal {
     
     inline def setGroupArn(value: GroupArn): Self = StObject.set(x, "GroupArn", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Overflows {
     __obj.asInstanceOf[Overflows]
   }
   
-  extension [Self <: Overflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Overflows] (val x: Self) extends AnyVal {
     
     inline def setOverflows(value: js.Array[Double]): Self = StObject.set(x, "overflows", value.asInstanceOf[js.Any])
     

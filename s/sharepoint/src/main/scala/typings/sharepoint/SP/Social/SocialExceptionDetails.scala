@@ -41,7 +41,8 @@ object SocialExceptionDetails {
     __obj.asInstanceOf[SocialExceptionDetails]
   }
   
-  extension [Self <: SocialExceptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialExceptionDetails] (val x: Self) extends AnyVal {
     
     inline def setGet_internalErrorCode(value: () => Double): Self = StObject.set(x, "get_internalErrorCode", js.Any.fromFunction0(value))
     

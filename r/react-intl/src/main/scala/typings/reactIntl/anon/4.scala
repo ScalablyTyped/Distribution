@@ -24,7 +24,8 @@ object `4` {
     __obj.asInstanceOf[`4`[Name]]
   }
   
-  extension [Self <: `4`[?], Name /* <: formatDate | formatTime */](x: Self & `4`[Name]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `4`[?], Name /* <: formatDate | formatTime */] (val x: Self & `4`[Name]) extends AnyVal {
     
     inline def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object ViewKeyUpEvent {
     __obj.asInstanceOf[ViewKeyUpEvent]
   }
   
-  extension [Self <: ViewKeyUpEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewKeyUpEvent] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

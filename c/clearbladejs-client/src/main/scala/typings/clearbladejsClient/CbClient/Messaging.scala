@@ -63,7 +63,8 @@ object Messaging {
     __obj.asInstanceOf[Messaging]
   }
   
-  extension [Self <: Messaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Messaging] (val x: Self) extends AnyVal {
     
     inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
     

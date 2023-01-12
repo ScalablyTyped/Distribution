@@ -36,7 +36,8 @@ object ClientRequest {
     __obj.asInstanceOf[ClientRequest]
   }
   
-  extension [Self <: ClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRequest] (val x: Self) extends AnyVal {
     
     inline def setAdd_requestFailed(value: js.Function2[/* sender */ Any, /* args */ ClientRequestFailedEventArgs, Unit] => Unit): Self = StObject.set(x, "add_requestFailed", js.Any.fromFunction1(value))
     

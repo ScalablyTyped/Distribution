@@ -35,7 +35,8 @@ object CatPluginsPluginsRecord {
     __obj.asInstanceOf[CatPluginsPluginsRecord]
   }
   
-  extension [Self <: CatPluginsPluginsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatPluginsPluginsRecord] (val x: Self) extends AnyVal {
     
     inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     

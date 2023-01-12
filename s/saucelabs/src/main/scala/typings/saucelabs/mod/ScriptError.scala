@@ -22,7 +22,8 @@ object ScriptError {
     __obj.asInstanceOf[ScriptError]
   }
   
-  extension [Self <: ScriptError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptError] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: StringDictionary[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

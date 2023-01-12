@@ -21,7 +21,8 @@ object FeatureReductionSelectionProperties {
     __obj.asInstanceOf[FeatureReductionSelectionProperties]
   }
   
-  extension [Self <: FeatureReductionSelectionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureReductionSelectionProperties] (val x: Self) extends AnyVal {
     
     inline def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

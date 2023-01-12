@@ -16,7 +16,8 @@ object PickTeamname {
     __obj.asInstanceOf[PickTeamname]
   }
   
-  extension [Self <: PickTeamname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickTeamname] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

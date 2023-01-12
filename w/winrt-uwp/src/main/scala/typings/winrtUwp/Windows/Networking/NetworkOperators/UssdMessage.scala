@@ -37,7 +37,8 @@ object UssdMessage {
     __obj.asInstanceOf[UssdMessage]
   }
   
-  extension [Self <: UssdMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UssdMessage] (val x: Self) extends AnyVal {
     
     inline def setDataCodingScheme(value: Double): Self = StObject.set(x, "dataCodingScheme", value.asInstanceOf[js.Any])
     

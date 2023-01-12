@@ -19,7 +19,8 @@ object Restitution {
     __obj.asInstanceOf[Restitution]
   }
   
-  extension [Self <: Restitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Restitution] (val x: Self) extends AnyVal {
     
     inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SourceConfig {
     __obj.asInstanceOf[SourceConfig]
   }
   
-  extension [Self <: SourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceConfig] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

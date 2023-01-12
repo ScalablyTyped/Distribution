@@ -22,7 +22,8 @@ object AppsDynamiteSharedOpenLinkAppUri {
     __obj.asInstanceOf[AppsDynamiteSharedOpenLinkAppUri]
   }
   
-  extension [Self <: AppsDynamiteSharedOpenLinkAppUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOpenLinkAppUri] (val x: Self) extends AnyVal {
     
     inline def setAndroidIntent(value: AppsDynamiteSharedOpenLinkAppUriIntent): Self = StObject.set(x, "androidIntent", value.asInstanceOf[js.Any])
     

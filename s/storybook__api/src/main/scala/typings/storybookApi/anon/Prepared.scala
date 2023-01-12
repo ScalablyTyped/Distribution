@@ -17,7 +17,8 @@ object Prepared {
     __obj.asInstanceOf[Prepared]
   }
   
-  extension [Self <: Prepared](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prepared] (val x: Self) extends AnyVal {
     
     inline def setPrepared(value: Boolean): Self = StObject.set(x, "prepared", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object CreateSystemInstanceRequest {
     __obj.asInstanceOf[CreateSystemInstanceRequest]
   }
   
-  extension [Self <: CreateSystemInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSystemInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: DefinitionDocument): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

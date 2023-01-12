@@ -40,7 +40,8 @@ object FaxIncomingMessageIterator {
     __obj.asInstanceOf[FaxIncomingMessageIterator]
   }
   
-  extension [Self <: FaxIncomingMessageIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxIncomingMessageIterator] (val x: Self) extends AnyVal {
     
     inline def setAtEOF(value: Boolean): Self = StObject.set(x, "AtEOF", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object CacheSettings {
     __obj.asInstanceOf[CacheSettings]
   }
   
-  extension [Self <: CacheSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowedHTTPMethods(value: NonEmptyString): Self = StObject.set(x, "allowedHTTPMethods", value.asInstanceOf[js.Any])
     

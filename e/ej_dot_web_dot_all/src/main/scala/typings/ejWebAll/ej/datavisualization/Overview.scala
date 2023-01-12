@@ -42,7 +42,8 @@ object Overview {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Overview.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Overview.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Overview.Model] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

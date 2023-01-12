@@ -29,7 +29,8 @@ object ExternalItem {
     __obj.asInstanceOf[ExternalItem]
   }
   
-  extension [Self <: ExternalItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalItem] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: NullableOption[js.Array[Acl]]): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

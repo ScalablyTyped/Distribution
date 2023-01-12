@@ -78,7 +78,8 @@ object RecordActionNamekeyofInte {
     __obj.asInstanceOf[RecordActionNamekeyofInte]
   }
   
-  extension [Self <: RecordActionNamekeyofInte](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordActionNamekeyofInte] (val x: Self) extends AnyVal {
     
     inline def setDrag(
       value: options | _actions | target | events | _context | _win | _doc | _scopeEvents | constructor | setOnEvents | updatePerActionListeners | setPerAction | getRect | rectChecker | _backCompatOption | origin | deltaSource | context | inContext | testIgnoreAllow | testAllow | testIgnore | fire | _onOff | on | off | set | unset | preventDefault | checkAndPreventDefault | draggable | dropzone | dropCheck | gesturable | resizable | getAction | styleCursor | actionChecker | ignoreFrom | allowFrom | devTools | pointerEvents | __backCompatOption | reflow | global | types | propagationStopped | immediatePropagationStopped

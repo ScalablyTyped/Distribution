@@ -19,7 +19,8 @@ object ShapeConnectorDefaultsHoverStroke {
     __obj.asInstanceOf[ShapeConnectorDefaultsHoverStroke]
   }
   
-  extension [Self <: ShapeConnectorDefaultsHoverStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeConnectorDefaultsHoverStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

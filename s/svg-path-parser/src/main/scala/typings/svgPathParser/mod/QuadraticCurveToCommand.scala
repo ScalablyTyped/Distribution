@@ -33,7 +33,8 @@ object QuadraticCurveToCommand {
     __obj.asInstanceOf[QuadraticCurveToCommand]
   }
   
-  extension [Self <: QuadraticCurveToCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuadraticCurveToCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: q_ | Q): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

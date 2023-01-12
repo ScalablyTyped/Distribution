@@ -82,7 +82,8 @@ object BackendEvents {
     __obj.asInstanceOf[BackendEvents]
   }
   
-  extension [Self <: BackendEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendEvents] (val x: Self) extends AnyVal {
     
     inline def setBackendVersion(value: js.Array[String]): Self = StObject.set(x, "backendVersion", value.asInstanceOf[js.Any])
     

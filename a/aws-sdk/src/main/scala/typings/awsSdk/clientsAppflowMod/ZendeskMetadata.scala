@@ -18,7 +18,8 @@ object ZendeskMetadata {
     __obj.asInstanceOf[ZendeskMetadata]
   }
   
-  extension [Self <: ZendeskMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZendeskMetadata] (val x: Self) extends AnyVal {
     
     inline def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     

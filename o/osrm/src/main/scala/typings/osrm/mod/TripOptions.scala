@@ -81,7 +81,8 @@ object TripOptions {
     __obj.asInstanceOf[TripOptions]
   }
   
-  extension [Self <: TripOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TripOptions] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(value: (js.Array[duration | nodes | distance | weight | datasources | speed]) | Boolean): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CreateFooterRequest {
     __obj.asInstanceOf[CreateFooterRequest]
   }
   
-  extension [Self <: CreateFooterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFooterRequest] (val x: Self) extends AnyVal {
     
     inline def setSectionBreakLocation(value: Location): Self = StObject.set(x, "sectionBreakLocation", value.asInstanceOf[js.Any])
     

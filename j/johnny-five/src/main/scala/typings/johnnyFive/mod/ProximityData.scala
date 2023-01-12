@@ -17,7 +17,8 @@ object ProximityData {
     __obj.asInstanceOf[ProximityData]
   }
   
-  extension [Self <: ProximityData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityData] (val x: Self) extends AnyVal {
     
     inline def setCm(value: Double): Self = StObject.set(x, "cm", value.asInstanceOf[js.Any])
     

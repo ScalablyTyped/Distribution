@@ -23,7 +23,8 @@ object distTs3Dot9ClientPreviewTypes60Mod {
       __obj.asInstanceOf[PreactFramework]
     }
     
-    extension [Self <: PreactFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreactFramework] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: AnyComponent[Any, Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

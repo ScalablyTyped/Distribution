@@ -28,7 +28,8 @@ object StopModelRequest {
     __obj.asInstanceOf[StopModelRequest]
   }
   
-  extension [Self <: StopModelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopModelRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

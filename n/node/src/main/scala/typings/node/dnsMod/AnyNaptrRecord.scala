@@ -27,7 +27,8 @@ object AnyNaptrRecord {
     __obj.asInstanceOf[AnyNaptrRecord]
   }
   
-  extension [Self <: AnyNaptrRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyNaptrRecord] (val x: Self) extends AnyVal {
     
     inline def setType(value: NAPTR): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

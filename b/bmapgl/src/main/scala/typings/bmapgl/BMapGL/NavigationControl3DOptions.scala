@@ -17,7 +17,8 @@ object NavigationControl3DOptions {
     __obj.asInstanceOf[NavigationControl3DOptions]
   }
   
-  extension [Self <: NavigationControl3DOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationControl3DOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

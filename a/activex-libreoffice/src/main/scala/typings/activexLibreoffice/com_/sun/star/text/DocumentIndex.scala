@@ -111,7 +111,8 @@ object DocumentIndex {
     __obj.asInstanceOf[DocumentIndex]
   }
   
-  extension [Self <: DocumentIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentIndex] (val x: Self) extends AnyVal {
     
     inline def setDocumentIndexMarks(value: SafeArray[XDocumentIndexMark]): Self = StObject.set(x, "DocumentIndexMarks", value.asInstanceOf[js.Any])
     

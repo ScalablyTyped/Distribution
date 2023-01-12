@@ -19,7 +19,8 @@ object ChartExportImageOptions {
     __obj.asInstanceOf[ChartExportImageOptions]
   }
   
-  extension [Self <: ChartExportImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartExportImageOptions] (val x: Self) extends AnyVal {
     
     inline def setCors(value: String): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

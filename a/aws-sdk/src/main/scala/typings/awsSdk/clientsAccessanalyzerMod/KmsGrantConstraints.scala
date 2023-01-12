@@ -23,7 +23,8 @@ object KmsGrantConstraints {
     __obj.asInstanceOf[KmsGrantConstraints]
   }
   
-  extension [Self <: KmsGrantConstraints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmsGrantConstraints] (val x: Self) extends AnyVal {
     
     inline def setEncryptionContextEquals(value: KmsConstraintsMap): Self = StObject.set(x, "encryptionContextEquals", value.asInstanceOf[js.Any])
     

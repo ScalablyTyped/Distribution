@@ -84,7 +84,8 @@ object ImagingStudySeries {
     __obj.asInstanceOf[ImagingStudySeries]
   }
   
-  extension [Self <: ImagingStudySeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingStudySeries] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: ONLINE | OFFLINE | NEARLINE | UNAVAILABLE): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

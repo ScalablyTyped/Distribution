@@ -31,7 +31,8 @@ object ButtonGroupItem {
     __obj.asInstanceOf[ButtonGroupItem]
   }
   
-  extension [Self <: ButtonGroupItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonGroupItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

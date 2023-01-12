@@ -17,7 +17,8 @@ object CursorMarkerProps {
     __obj.asInstanceOf[CursorMarkerProps]
   }
   
-  extension [Self <: CursorMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

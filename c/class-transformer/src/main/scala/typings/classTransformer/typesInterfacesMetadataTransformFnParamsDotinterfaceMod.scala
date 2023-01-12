@@ -28,7 +28,8 @@ object typesInterfacesMetadataTransformFnParamsDotinterfaceMod {
       __obj.asInstanceOf[TransformFnParams]
     }
     
-    extension [Self <: TransformFnParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformFnParams] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

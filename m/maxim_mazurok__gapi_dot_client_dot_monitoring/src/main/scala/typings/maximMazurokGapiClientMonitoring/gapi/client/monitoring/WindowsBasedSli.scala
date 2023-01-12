@@ -28,7 +28,8 @@ object WindowsBasedSli {
     __obj.asInstanceOf[WindowsBasedSli]
   }
   
-  extension [Self <: WindowsBasedSli](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsBasedSli] (val x: Self) extends AnyVal {
     
     inline def setGoodBadMetricFilter(value: String): Self = StObject.set(x, "goodBadMetricFilter", value.asInstanceOf[js.Any])
     

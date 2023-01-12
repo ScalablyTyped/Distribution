@@ -49,7 +49,8 @@ object BaseNodeMixin {
     __obj.asInstanceOf[BaseNodeMixin]
   }
   
-  extension [Self <: BaseNodeMixin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseNodeMixin] (val x: Self) extends AnyVal {
     
     inline def setGetPluginData(value: String => String): Self = StObject.set(x, "getPluginData", js.Any.fromFunction1(value))
     

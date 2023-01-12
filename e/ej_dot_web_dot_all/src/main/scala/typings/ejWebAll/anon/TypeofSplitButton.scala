@@ -20,7 +20,8 @@ object TypeofSplitButton {
     __obj.asInstanceOf[TypeofSplitButton]
   }
   
-  extension [Self <: TypeofSplitButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSplitButton] (val x: Self) extends AnyVal {
     
     inline def setFn(value: SplitButton): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

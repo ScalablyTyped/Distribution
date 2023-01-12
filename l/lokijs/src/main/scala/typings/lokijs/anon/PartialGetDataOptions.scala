@@ -27,7 +27,8 @@ object PartialGetDataOptions {
     __obj.asInstanceOf[PartialGetDataOptions]
   }
   
-  extension [Self <: PartialGetDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialGetDataOptions] (val x: Self) extends AnyVal {
     
     inline def setForceCloneMethod(
       value: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`

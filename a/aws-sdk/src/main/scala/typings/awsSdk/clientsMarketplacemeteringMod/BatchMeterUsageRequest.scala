@@ -23,7 +23,8 @@ object BatchMeterUsageRequest {
     __obj.asInstanceOf[BatchMeterUsageRequest]
   }
   
-  extension [Self <: BatchMeterUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchMeterUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setProductCode(value: ProductCode): Self = StObject.set(x, "ProductCode", value.asInstanceOf[js.Any])
     

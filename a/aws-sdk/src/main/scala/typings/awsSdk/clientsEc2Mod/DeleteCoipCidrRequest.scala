@@ -28,7 +28,8 @@ object DeleteCoipCidrRequest {
     __obj.asInstanceOf[DeleteCoipCidrRequest]
   }
   
-  extension [Self <: DeleteCoipCidrRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCoipCidrRequest] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     

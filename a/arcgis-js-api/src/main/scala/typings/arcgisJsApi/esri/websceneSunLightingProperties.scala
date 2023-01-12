@@ -40,7 +40,8 @@ object websceneSunLightingProperties {
     __obj.asInstanceOf[websceneSunLightingProperties]
   }
   
-  extension [Self <: websceneSunLightingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: websceneSunLightingProperties] (val x: Self) extends AnyVal {
     
     inline def setDate(value: DateProperties): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

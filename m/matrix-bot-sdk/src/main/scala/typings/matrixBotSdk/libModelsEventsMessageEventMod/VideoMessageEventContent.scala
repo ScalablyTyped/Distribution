@@ -21,7 +21,8 @@ object VideoMessageEventContent {
     __obj.asInstanceOf[VideoMessageEventContent]
   }
   
-  extension [Self <: VideoMessageEventContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMessageEventContent] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: VideoFileInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     

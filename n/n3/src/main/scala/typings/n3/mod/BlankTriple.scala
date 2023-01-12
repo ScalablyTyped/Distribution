@@ -21,7 +21,8 @@ object BlankTriple {
     __obj.asInstanceOf[BlankTriple[Q]]
   }
   
-  extension [Self <: BlankTriple[?], Q /* <: typings.rdfjsTypes.dataModelMod.BaseQuad */](x: Self & BlankTriple[Q]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlankTriple[?], Q /* <: typings.rdfjsTypes.dataModelMod.BaseQuad */] (val x: Self & BlankTriple[Q]) extends AnyVal {
     
     inline def setObject(value: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

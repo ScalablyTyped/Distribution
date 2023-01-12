@@ -31,7 +31,8 @@ object RelatedContact {
     __obj.asInstanceOf[RelatedContact]
   }
   
-  extension [Self <: RelatedContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedContact] (val x: Self) extends AnyVal {
     
     inline def setAccessConsent(value: NullableOption[Boolean]): Self = StObject.set(x, "accessConsent", value.asInstanceOf[js.Any])
     

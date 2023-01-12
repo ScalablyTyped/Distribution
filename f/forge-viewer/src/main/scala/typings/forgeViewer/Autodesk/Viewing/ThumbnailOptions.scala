@@ -23,7 +23,8 @@ object ThumbnailOptions {
     __obj.asInstanceOf[ThumbnailOptions]
   }
   
-  extension [Self <: ThumbnailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailOptions] (val x: Self) extends AnyVal {
     
     inline def setAcmsession(value: String): Self = StObject.set(x, "acmsession", value.asInstanceOf[js.Any])
     

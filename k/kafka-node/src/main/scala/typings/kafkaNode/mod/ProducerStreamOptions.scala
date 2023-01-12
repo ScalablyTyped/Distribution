@@ -19,7 +19,8 @@ object ProducerStreamOptions {
     __obj.asInstanceOf[ProducerStreamOptions]
   }
   
-  extension [Self <: ProducerStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

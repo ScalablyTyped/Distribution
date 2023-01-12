@@ -61,7 +61,8 @@ object StructureMapGroup {
     __obj.asInstanceOf[StructureMapGroup]
   }
   
-  extension [Self <: StructureMapGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMapGroup] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

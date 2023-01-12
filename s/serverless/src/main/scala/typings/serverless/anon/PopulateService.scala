@@ -15,7 +15,8 @@ object PopulateService {
     __obj.asInstanceOf[PopulateService]
   }
   
-  extension [Self <: PopulateService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopulateService] (val x: Self) extends AnyVal {
     
     inline def setPopulateService(value: () => js.Promise[Any]): Self = StObject.set(x, "populateService", js.Any.fromFunction0(value))
   }

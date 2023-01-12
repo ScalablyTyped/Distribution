@@ -39,7 +39,8 @@ object clientsMarketplaceentitlementserviceMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object clientsMarketplaceentitlementserviceMod {
       __obj.asInstanceOf[Entitlement]
     }
     
-    extension [Self <: Entitlement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entitlement] (val x: Self) extends AnyVal {
       
       inline def setCustomerIdentifier(value: NonEmptyString): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object clientsMarketplaceentitlementserviceMod {
       __obj.asInstanceOf[EntitlementValue]
     }
     
-    extension [Self <: EntitlementValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntitlementValue] (val x: Self) extends AnyVal {
       
       inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "BooleanValue", value.asInstanceOf[js.Any])
       
@@ -205,7 +208,8 @@ object clientsMarketplaceentitlementserviceMod {
       __obj.asInstanceOf[GetEntitlementsRequest]
     }
     
-    extension [Self <: GetEntitlementsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEntitlementsRequest] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: GetEntitlementFilters): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object clientsMarketplaceentitlementserviceMod {
       __obj.asInstanceOf[GetEntitlementsResult]
     }
     
-    extension [Self <: GetEntitlementsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEntitlementsResult] (val x: Self) extends AnyVal {
       
       inline def setEntitlements(value: EntitlementList): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
       

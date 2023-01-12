@@ -23,7 +23,8 @@ object IpGeoLocation {
     __obj.asInstanceOf[IpGeoLocation]
   }
   
-  extension [Self <: IpGeoLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpGeoLocation] (val x: Self) extends AnyVal {
     
     inline def setLat(value: double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
     

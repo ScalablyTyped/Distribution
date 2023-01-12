@@ -18,7 +18,8 @@ object `lib@TestsDataExternalPropsComponentPropsMod` {
       __obj.asInstanceOf[ExternalOptionalComponentProps]
     }
     
-    extension [Self <: ExternalOptionalComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalOptionalComponentProps] (val x: Self) extends AnyVal {
       
       inline def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object `lib@TestsDataExternalPropsComponentPropsMod` {
       __obj.asInstanceOf[ExternalPropsComponentProps]
     }
     
-    extension [Self <: ExternalPropsComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternalPropsComponentProps] (val x: Self) extends AnyVal {
       
       inline def setProp1(value: String): Self = StObject.set(x, "prop1", value.asInstanceOf[js.Any])
     }

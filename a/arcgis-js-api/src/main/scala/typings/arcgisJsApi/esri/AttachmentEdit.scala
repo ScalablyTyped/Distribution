@@ -27,7 +27,8 @@ object AttachmentEdit {
     __obj.asInstanceOf[AttachmentEdit]
   }
   
-  extension [Self <: AttachmentEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentEdit] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: AttachmentEditAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

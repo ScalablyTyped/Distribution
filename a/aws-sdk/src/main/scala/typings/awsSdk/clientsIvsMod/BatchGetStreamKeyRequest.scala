@@ -18,7 +18,8 @@ object BatchGetStreamKeyRequest {
     __obj.asInstanceOf[BatchGetStreamKeyRequest]
   }
   
-  extension [Self <: BatchGetStreamKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetStreamKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setArns(value: StreamKeyArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     

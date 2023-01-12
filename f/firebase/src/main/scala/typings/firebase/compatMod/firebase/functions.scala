@@ -112,7 +112,8 @@ object functions {
       __obj.asInstanceOf[HttpsCallableOptions]
     }
     
-    extension [Self <: HttpsCallableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsCallableOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object functions {
       __obj.asInstanceOf[HttpsCallableResult]
     }
     
-    extension [Self <: HttpsCallableResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsCallableResult] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -159,7 +161,8 @@ object functions {
       __obj.asInstanceOf[HttpsError]
     }
     
-    extension [Self <: HttpsError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: FunctionsErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

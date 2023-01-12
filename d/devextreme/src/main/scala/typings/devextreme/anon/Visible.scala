@@ -24,7 +24,8 @@ object Visible {
     __obj.asInstanceOf[Visible]
   }
   
-  extension [Self <: Visible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: js.Array[DiagramCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

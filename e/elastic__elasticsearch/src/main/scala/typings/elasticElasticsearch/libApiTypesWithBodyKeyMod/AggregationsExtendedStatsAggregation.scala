@@ -17,7 +17,8 @@ object AggregationsExtendedStatsAggregation {
     __obj.asInstanceOf[AggregationsExtendedStatsAggregation]
   }
   
-  extension [Self <: AggregationsExtendedStatsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsExtendedStatsAggregation] (val x: Self) extends AnyVal {
     
     inline def setSigma(value: double): Self = StObject.set(x, "sigma", value.asInstanceOf[js.Any])
     

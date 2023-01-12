@@ -331,7 +331,8 @@ object sapMOverflowToolbarLayoutDataMod {
       __obj.asInstanceOf[OverflowToolbarLayoutDataSettings]
     }
     
-    extension [Self <: OverflowToolbarLayoutDataSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverflowToolbarLayoutDataSettings] (val x: Self) extends AnyVal {
       
       inline def setCloseOverflowOnInteraction(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "closeOverflowOnInteraction", value.asInstanceOf[js.Any])
       

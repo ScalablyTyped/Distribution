@@ -25,7 +25,8 @@ object ChildShard {
     __obj.asInstanceOf[ChildShard]
   }
   
-  extension [Self <: ChildShard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildShard] (val x: Self) extends AnyVal {
     
     inline def setHashKeyRange(value: HashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
     

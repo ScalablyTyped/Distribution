@@ -18,7 +18,8 @@ object AwsCloudFrontDistributionCacheBehaviors {
     __obj.asInstanceOf[AwsCloudFrontDistributionCacheBehaviors]
   }
   
-  extension [Self <: AwsCloudFrontDistributionCacheBehaviors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFrontDistributionCacheBehaviors] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AwsCloudFrontDistributionCacheBehaviorsItemList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

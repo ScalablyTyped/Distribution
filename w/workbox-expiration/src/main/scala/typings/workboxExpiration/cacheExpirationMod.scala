@@ -34,7 +34,8 @@ object cacheExpirationMod {
       __obj.asInstanceOf[CacheExpirationConfig]
     }
     
-    extension [Self <: CacheExpirationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheExpirationConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       

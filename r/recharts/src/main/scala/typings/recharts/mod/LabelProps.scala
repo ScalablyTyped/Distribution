@@ -188,7 +188,8 @@ object LabelProps {
     __obj.asInstanceOf[LabelProps]
   }
   
-  extension [Self <: LabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object RateLimits {
     __obj.asInstanceOf[RateLimits]
   }
   
-  extension [Self <: RateLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateLimits] (val x: Self) extends AnyVal {
     
     inline def setMaxBurstSize(value: Double): Self = StObject.set(x, "maxBurstSize", value.asInstanceOf[js.Any])
     

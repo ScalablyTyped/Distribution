@@ -106,7 +106,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentChangeEvent]
     }
     
-    extension [Self <: NotebookDocumentChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setCells(value: Added): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookSyncFeatureShape]
     }
     
-    extension [Self <: NotebookSyncFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookSyncFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setSynchronization(value: OnDidChangeNotebookDocument): Self = StObject.set(x, "synchronization", value.asInstanceOf[js.Any])
     }

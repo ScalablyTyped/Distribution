@@ -97,7 +97,8 @@ object ConnectorProfileCredentials {
     __obj.asInstanceOf[ConnectorProfileCredentials]
   }
   
-  extension [Self <: ConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setAmplitude(value: AmplitudeConnectorProfileCredentials): Self = StObject.set(x, "Amplitude", value.asInstanceOf[js.Any])
     

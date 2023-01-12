@@ -28,7 +28,8 @@ object SfModal extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => Data): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -51,7 +52,8 @@ object SfModal extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object SfModal extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setCheckPersistence(value: () => Unit): Self = StObject.set(x, "checkPersistence", js.Any.fromFunction0(value))
       
@@ -128,7 +131,8 @@ object SfModal extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setCross(value: Boolean): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
       

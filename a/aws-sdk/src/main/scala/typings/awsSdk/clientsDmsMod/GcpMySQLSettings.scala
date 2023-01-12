@@ -83,7 +83,8 @@ object GcpMySQLSettings {
     __obj.asInstanceOf[GcpMySQLSettings]
   }
   
-  extension [Self <: GcpMySQLSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcpMySQLSettings] (val x: Self) extends AnyVal {
     
     inline def setAfterConnectScript(value: String): Self = StObject.set(x, "AfterConnectScript", value.asInstanceOf[js.Any])
     

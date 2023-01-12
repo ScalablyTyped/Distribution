@@ -27,7 +27,8 @@ object RepeatLastArgsReturnNumberType {
     __obj.asInstanceOf[RepeatLastArgsReturnNumberType]
   }
   
-  extension [Self <: RepeatLastArgsReturnNumberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatLastArgsReturnNumberType] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

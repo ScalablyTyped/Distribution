@@ -15,7 +15,8 @@ object ChildContextProvider {
     __obj.asInstanceOf[ChildContextProvider[CC]]
   }
   
-  extension [Self <: ChildContextProvider[?], CC](x: Self & ChildContextProvider[CC]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildContextProvider[?], CC] (val x: Self & ChildContextProvider[CC]) extends AnyVal {
     
     inline def setGetChildContext(value: () => CC): Self = StObject.set(x, "getChildContext", js.Any.fromFunction0(value))
   }

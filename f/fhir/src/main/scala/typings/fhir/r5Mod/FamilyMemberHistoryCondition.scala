@@ -59,7 +59,8 @@ object FamilyMemberHistoryCondition {
     __obj.asInstanceOf[FamilyMemberHistoryCondition]
   }
   
-  extension [Self <: FamilyMemberHistoryCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FamilyMemberHistoryCondition] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

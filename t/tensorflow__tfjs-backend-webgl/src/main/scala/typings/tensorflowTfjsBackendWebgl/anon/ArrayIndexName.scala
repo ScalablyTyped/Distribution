@@ -21,7 +21,8 @@ object ArrayIndexName {
     __obj.asInstanceOf[ArrayIndexName]
   }
   
-  extension [Self <: ArrayIndexName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayIndexName] (val x: Self) extends AnyVal {
     
     inline def setArrayIndex(value: Double): Self = StObject.set(x, "arrayIndex", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CharsetOptions {
     __obj.asInstanceOf[CharsetOptions]
   }
   
-  extension [Self <: CharsetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharsetOptions] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: String => js.Array[String]): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     

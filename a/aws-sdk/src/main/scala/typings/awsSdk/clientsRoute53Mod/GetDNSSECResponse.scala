@@ -23,7 +23,8 @@ object GetDNSSECResponse {
     __obj.asInstanceOf[GetDNSSECResponse]
   }
   
-  extension [Self <: GetDNSSECResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDNSSECResponse] (val x: Self) extends AnyVal {
     
     inline def setKeySigningKeys(value: KeySigningKeys): Self = StObject.set(x, "KeySigningKeys", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object IfcModel {
     __obj.asInstanceOf[IfcModel]
   }
   
-  extension [Self <: IfcModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfcModel] (val x: Self) extends AnyVal {
     
     inline def setItems(value: GeometriesByMaterials): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

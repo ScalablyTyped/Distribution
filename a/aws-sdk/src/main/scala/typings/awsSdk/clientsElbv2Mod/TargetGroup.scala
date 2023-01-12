@@ -103,7 +103,8 @@ object TargetGroup {
     __obj.asInstanceOf[TargetGroup]
   }
   
-  extension [Self <: TargetGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroup] (val x: Self) extends AnyVal {
     
     inline def setHealthCheckEnabled(value: HealthCheckEnabled): Self = StObject.set(x, "HealthCheckEnabled", value.asInstanceOf[js.Any])
     

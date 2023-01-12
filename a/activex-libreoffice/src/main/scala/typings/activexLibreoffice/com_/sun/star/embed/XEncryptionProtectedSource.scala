@@ -37,7 +37,8 @@ object XEncryptionProtectedSource {
     __obj.asInstanceOf[XEncryptionProtectedSource]
   }
   
-  extension [Self <: XEncryptionProtectedSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEncryptionProtectedSource] (val x: Self) extends AnyVal {
     
     inline def setRemoveEncryption(value: () => Unit): Self = StObject.set(x, "removeEncryption", js.Any.fromFunction0(value))
     

@@ -19,7 +19,8 @@ object DomainCallEvidence {
     __obj.asInstanceOf[DomainCallEvidence]
   }
   
-  extension [Self <: DomainCallEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainCallEvidence] (val x: Self) extends AnyVal {
     
     inline def setTopHttpCallDomains(value: js.Array[DomainCalls]): Self = StObject.set(x, "topHttpCallDomains", value.asInstanceOf[js.Any])
     

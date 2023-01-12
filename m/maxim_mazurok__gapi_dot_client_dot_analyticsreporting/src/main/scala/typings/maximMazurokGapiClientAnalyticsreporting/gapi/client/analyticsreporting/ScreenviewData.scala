@@ -25,7 +25,8 @@ object ScreenviewData {
     __obj.asInstanceOf[ScreenviewData]
   }
   
-  extension [Self <: ScreenviewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenviewData] (val x: Self) extends AnyVal {
     
     inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     

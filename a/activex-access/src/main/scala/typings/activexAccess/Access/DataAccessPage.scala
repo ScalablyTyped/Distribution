@@ -77,7 +77,8 @@ object DataAccessPage {
     __obj.asInstanceOf[DataAccessPage]
   }
   
-  extension [Self <: DataAccessPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAccessPage] (val x: Self) extends AnyVal {
     
     inline def setAccessDotDataAccessPage_typekey(value: DataAccessPage): Self = StObject.set(x, "Access.DataAccessPage_typekey", value.asInstanceOf[js.Any])
     

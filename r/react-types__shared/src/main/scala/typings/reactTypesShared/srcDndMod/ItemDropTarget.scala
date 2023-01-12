@@ -27,7 +27,8 @@ object ItemDropTarget {
     __obj.asInstanceOf[ItemDropTarget]
   }
   
-  extension [Self <: ItemDropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDropTarget] (val x: Self) extends AnyVal {
     
     inline def setDropPosition(value: DropPosition): Self = StObject.set(x, "dropPosition", value.asInstanceOf[js.Any])
     

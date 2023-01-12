@@ -37,7 +37,8 @@ object typesToggleToggleContainerMod {
       __obj.asInstanceOf[ToggleContainerProps]
     }
     
-    extension [Self <: ToggleContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToggleContainerProps] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       

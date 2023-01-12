@@ -17,7 +17,8 @@ object SecurityClearCachedRolesRequest {
     __obj.asInstanceOf[SecurityClearCachedRolesRequest]
   }
   
-  extension [Self <: SecurityClearCachedRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearCachedRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Names): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

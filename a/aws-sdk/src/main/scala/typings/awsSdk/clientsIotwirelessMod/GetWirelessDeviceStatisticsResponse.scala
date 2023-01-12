@@ -33,7 +33,8 @@ object GetWirelessDeviceStatisticsResponse {
     __obj.asInstanceOf[GetWirelessDeviceStatisticsResponse]
   }
   
-  extension [Self <: GetWirelessDeviceStatisticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWirelessDeviceStatisticsResponse] (val x: Self) extends AnyVal {
     
     inline def setLastUplinkReceivedAt(value: ISODateTimeString): Self = StObject.set(x, "LastUplinkReceivedAt", value.asInstanceOf[js.Any])
     

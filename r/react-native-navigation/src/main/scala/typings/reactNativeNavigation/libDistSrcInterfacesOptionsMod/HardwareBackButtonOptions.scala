@@ -35,7 +35,8 @@ object HardwareBackButtonOptions {
     __obj.asInstanceOf[HardwareBackButtonOptions]
   }
   
-  extension [Self <: HardwareBackButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HardwareBackButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setBottomTabsOnPress(value: exit | first | previous): Self = StObject.set(x, "bottomTabsOnPress", value.asInstanceOf[js.Any])
     

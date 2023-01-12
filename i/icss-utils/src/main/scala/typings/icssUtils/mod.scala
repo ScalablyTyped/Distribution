@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[ExtractedICSS]
     }
     
-    extension [Self <: ExtractedICSS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractedICSS] (val x: Self) extends AnyVal {
       
       inline def setIcssExports(value: CSSExports): Self = StObject.set(x, "icssExports", value.asInstanceOf[js.Any])
       

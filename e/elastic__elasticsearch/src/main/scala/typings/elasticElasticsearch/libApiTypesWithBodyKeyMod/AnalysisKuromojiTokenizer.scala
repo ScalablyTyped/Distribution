@@ -34,7 +34,8 @@ object AnalysisKuromojiTokenizer {
     __obj.asInstanceOf[AnalysisKuromojiTokenizer]
   }
   
-  extension [Self <: AnalysisKuromojiTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiTokenizer] (val x: Self) extends AnyVal {
     
     inline def setDiscard_compound_token(value: Boolean): Self = StObject.set(x, "discard_compound_token", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object RcsEndUserMessage {
     __obj.asInstanceOf[RcsEndUserMessage]
   }
   
-  extension [Self <: RcsEndUserMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RcsEndUserMessage] (val x: Self) extends AnyVal {
     
     inline def setActions(value: IVectorView[RcsEndUserMessageAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

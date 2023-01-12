@@ -28,7 +28,8 @@ object SearchInsightsResponse {
     __obj.asInstanceOf[SearchInsightsResponse]
   }
   
-  extension [Self <: SearchInsightsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchInsightsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: UuidNextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

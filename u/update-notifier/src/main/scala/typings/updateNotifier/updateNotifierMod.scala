@@ -45,7 +45,8 @@ object updateNotifierMod {
       __obj.asInstanceOf[NotifyOptions]
     }
     
-    extension [Self <: NotifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifyOptions] (val x: Self) extends AnyVal {
       
       inline def setBoxenOptions(value: Options): Self = StObject.set(x, "boxenOptions", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object updateNotifierMod {
       __obj.asInstanceOf[Package]
     }
     
-    extension [Self <: Package](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Package] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object updateNotifierMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setDistTag(value: String): Self = StObject.set(x, "distTag", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object updateNotifierMod {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    extension [Self <: UpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

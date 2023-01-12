@@ -19,7 +19,8 @@ object Cut {
     __obj.asInstanceOf[Cut]
   }
   
-  extension [Self <: Cut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cut] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: CollectionReturnValue): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

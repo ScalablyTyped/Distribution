@@ -35,7 +35,8 @@ object IDomAccessProvider {
     __obj.asInstanceOf[IDomAccessProvider]
   }
   
-  extension [Self <: IDomAccessProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDomAccessProvider] (val x: Self) extends AnyVal {
     
     inline def setChangeUserSelect(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IAugmentedJQuery */ Any, String) => Unit

@@ -3172,7 +3172,8 @@ object propertyinkeyofCSSPropert {
     __obj.asInstanceOf[propertyinkeyofCSSPropert]
   }
   
-  extension [Self <: propertyinkeyofCSSPropert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: propertyinkeyofCSSPropert] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(
       value: (/* import warning: importer.ImportType#apply Failed type conversion: keyof this['scales'] */ js.Any) | Tokens[scales]

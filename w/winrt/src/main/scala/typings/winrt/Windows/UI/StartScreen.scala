@@ -132,7 +132,8 @@ object StartScreen {
       __obj.asInstanceOf[ISecondaryTileFactory]
     }
     
-    extension [Self <: ISecondaryTileFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISecondaryTileFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateTile(value: (String, String, String, String, TileOptions, Uri) => SecondaryTile): Self = StObject.set(x, "createTile", js.Any.fromFunction6(value))
       

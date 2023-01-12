@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Created]
     }
     
-    extension [Self <: Created](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Directory]
     }
     
-    extension [Self <: Directory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Latest]
     }
     
-    extension [Self <: Latest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latest] (val x: Self) extends AnyVal {
       
       inline def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     }
@@ -604,7 +608,8 @@ object anon {
       __obj.asInstanceOf[OptionsfullMetadatatrue]
     }
     
-    extension [Self <: OptionsfullMetadatatrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsfullMetadatatrue] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -1325,7 +1330,8 @@ object anon {
       __obj.asInstanceOf[beforeDateOptions]
     }
     
-    extension [Self <: beforeDateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: beforeDateOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -2042,7 +2048,8 @@ object anon {
       __obj.asInstanceOf[fullMetadatatrueOptions]
     }
     
-    extension [Self <: fullMetadatatrueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fullMetadatatrueOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object RichPresence {
     __obj.asInstanceOf[RichPresence]
   }
   
-  extension [Self <: RichPresence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RichPresence] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: String): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

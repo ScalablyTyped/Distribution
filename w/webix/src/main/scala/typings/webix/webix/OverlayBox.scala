@@ -17,7 +17,8 @@ object OverlayBox {
     __obj.asInstanceOf[OverlayBox]
   }
   
-  extension [Self <: OverlayBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayBox] (val x: Self) extends AnyVal {
     
     inline def setHideOverlay(value: () => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction0(value))
     

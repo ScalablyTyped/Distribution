@@ -43,7 +43,8 @@ object examplesJsmRenderersWebglNodesSlotNodeMod {
       __obj.asInstanceOf[SlotNodeParameters[TNode]]
     }
     
-    extension [Self <: SlotNodeParameters[?], TNode /* <: typings.three.examplesJsmNodesCoreNodeMod.default */](x: Self & SlotNodeParameters[TNode]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlotNodeParameters[?], TNode /* <: typings.three.examplesJsmNodesCoreNodeMod.default */] (val x: Self & SlotNodeParameters[TNode]) extends AnyVal {
       
       inline def setNode(value: TNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

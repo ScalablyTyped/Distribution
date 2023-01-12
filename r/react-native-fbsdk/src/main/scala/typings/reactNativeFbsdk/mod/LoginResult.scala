@@ -21,7 +21,8 @@ object LoginResult {
     __obj.asInstanceOf[LoginResult]
   }
   
-  extension [Self <: LoginResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginResult] (val x: Self) extends AnyVal {
     
     inline def setDeclinedPermissions(value: js.Array[Permissions]): Self = StObject.set(x, "declinedPermissions", value.asInstanceOf[js.Any])
     

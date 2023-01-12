@@ -19,7 +19,8 @@ object HouseholdIncomeAssignedTargetingOptionDetails {
     __obj.asInstanceOf[HouseholdIncomeAssignedTargetingOptionDetails]
   }
   
-  extension [Self <: HouseholdIncomeAssignedTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HouseholdIncomeAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setHouseholdIncome(value: String): Self = StObject.set(x, "householdIncome", value.asInstanceOf[js.Any])
     

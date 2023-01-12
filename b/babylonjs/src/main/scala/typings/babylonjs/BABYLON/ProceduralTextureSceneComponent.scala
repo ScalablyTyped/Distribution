@@ -24,7 +24,8 @@ object ProceduralTextureSceneComponent {
     __obj.asInstanceOf[ProceduralTextureSceneComponent]
   }
   
-  extension [Self <: ProceduralTextureSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProceduralTextureSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_beforeClear(value: Any): Self = StObject.set(x, "_beforeClear", value.asInstanceOf[js.Any])
   }

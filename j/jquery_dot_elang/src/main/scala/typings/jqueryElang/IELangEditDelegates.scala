@@ -45,7 +45,8 @@ object IELangEditDelegates {
     __obj.asInstanceOf[IELangEditDelegates]
   }
   
-  extension [Self <: IELangEditDelegates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IELangEditDelegates] (val x: Self) extends AnyVal {
     
     inline def setBtnAddClickHandler(value: js.Function): Self = StObject.set(x, "btnAddClickHandler", value.asInstanceOf[js.Any])
     

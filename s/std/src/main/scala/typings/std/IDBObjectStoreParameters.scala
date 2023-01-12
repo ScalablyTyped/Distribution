@@ -19,7 +19,8 @@ object IDBObjectStoreParameters {
     __obj.asInstanceOf[IDBObjectStoreParameters]
   }
   
-  extension [Self <: IDBObjectStoreParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBObjectStoreParameters] (val x: Self) extends AnyVal {
     
     inline def setAutoIncrement(value: scala.Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     

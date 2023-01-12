@@ -27,7 +27,8 @@ object typesAutoScalingPolicyDescriptionMod {
       __obj.asInstanceOf[AutoScalingPolicyDescription]
     }
     
-    extension [Self <: AutoScalingPolicyDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
       
       inline def setPolicyName(value: String): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object typesAutoScalingPolicyDescriptionMod {
       __obj.asInstanceOf[UnmarshalledAutoScalingPolicyDescription]
     }
     
-    extension [Self <: UnmarshalledAutoScalingPolicyDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAutoScalingPolicyDescription] (val x: Self) extends AnyVal {
       
       inline def setTargetTrackingScalingPolicyConfiguration(value: UnmarshalledAutoScalingTargetTrackingScalingPolicyConfigurationDescription): Self = StObject.set(x, "TargetTrackingScalingPolicyConfiguration", value.asInstanceOf[js.Any])
       

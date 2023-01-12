@@ -56,7 +56,8 @@ object DefaultLocale {
     __obj.asInstanceOf[DefaultLocale[T]]
   }
   
-  extension [Self <: DefaultLocale[?], T](x: Self & DefaultLocale[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultLocale[?], T] (val x: Self & DefaultLocale[T]) extends AnyVal {
     
     inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object IPubrecPacket {
     __obj.asInstanceOf[IPubrecPacket]
   }
   
-  extension [Self <: IPubrecPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPubrecPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: pubrec): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object ChatMessageTransportConfiguration {
     __obj.asInstanceOf[ChatMessageTransportConfiguration]
   }
   
-  extension [Self <: ChatMessageTransportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessageTransportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExtendedProperties(value: IMapView[String, Any]): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     

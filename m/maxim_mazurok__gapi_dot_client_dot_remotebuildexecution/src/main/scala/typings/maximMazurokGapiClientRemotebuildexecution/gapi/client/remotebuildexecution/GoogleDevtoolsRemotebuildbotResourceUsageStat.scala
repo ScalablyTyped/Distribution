@@ -17,7 +17,8 @@ object GoogleDevtoolsRemotebuildbotResourceUsageStat {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildbotResourceUsageStat]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildbotResourceUsageStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildbotResourceUsageStat] (val x: Self) extends AnyVal {
     
     inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

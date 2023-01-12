@@ -23,7 +23,8 @@ object MigrateWorkspaceRequest {
     __obj.asInstanceOf[MigrateWorkspaceRequest]
   }
   
-  extension [Self <: MigrateWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrateWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setBundleId(value: BundleId): Self = StObject.set(x, "BundleId", value.asInstanceOf[js.Any])
     

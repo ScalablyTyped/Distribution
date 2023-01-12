@@ -546,7 +546,8 @@ object anon {
       __obj.asInstanceOf[CurrentValue]
     }
     
-    extension [Self <: CurrentValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentValue] (val x: Self) extends AnyVal {
       
       inline def setCurrentValue(value: Any): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
     }
@@ -567,7 +568,8 @@ object anon {
       __obj.asInstanceOf[DefaultValue]
     }
     
-    extension [Self <: DefaultValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -590,7 +592,8 @@ object anon {
       __obj.asInstanceOf[DefaultValueId]
     }
     
-    extension [Self <: DefaultValueId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultValueId] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -11873,7 +11876,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -11892,7 +11896,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -11929,7 +11934,8 @@ object anon {
       __obj.asInstanceOf[PartialHook]
     }
     
-    extension [Self <: PartialHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHook] (val x: Self) extends AnyVal {
       
       inline def set$setState(value: /* setter */ Any => Any): Self = StObject.set(x, "$setState", js.Any.fromFunction1(value))
       
@@ -11997,7 +12003,8 @@ object anon {
       __obj.asInstanceOf[RenderProps]
     }
     
-    extension [Self <: RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
       
       inline def setRenderFn(value: Any): Self = StObject.set(x, "renderFn", value.asInstanceOf[js.Any])
       

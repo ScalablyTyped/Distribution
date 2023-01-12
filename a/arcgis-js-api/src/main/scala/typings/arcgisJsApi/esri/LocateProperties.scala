@@ -91,7 +91,8 @@ object LocateProperties {
     __obj.asInstanceOf[LocateProperties]
   }
   
-  extension [Self <: LocateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocateProperties] (val x: Self) extends AnyVal {
     
     inline def setGeolocationOptions(value: Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     

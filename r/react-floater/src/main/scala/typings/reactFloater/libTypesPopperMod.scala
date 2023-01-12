@@ -46,7 +46,8 @@ object libTypesPopperMod {
       __obj.asInstanceOf[PopperModifiers]
     }
     
-    extension [Self <: PopperModifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperModifiers] (val x: Self) extends AnyVal {
       
       inline def setApplyStyles(value: PartialApplyStylesModifie): Self = StObject.set(x, "applyStyles", value.asInstanceOf[js.Any])
       

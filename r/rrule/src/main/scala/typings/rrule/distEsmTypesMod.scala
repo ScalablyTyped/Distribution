@@ -128,7 +128,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setByeaster(value: Double): Self = StObject.set(x, "byeaster", value.asInstanceOf[js.Any])
       
@@ -288,7 +289,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[ParsedOptions]
     }
     
-    extension [Self <: ParsedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOptions] (val x: Self) extends AnyVal {
       
       inline def setByhour(value: js.Array[Double]): Self = StObject.set(x, "byhour", value.asInstanceOf[js.Any])
       
@@ -366,7 +368,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[QueryMethods]
     }
     
-    extension [Self <: QueryMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryMethods] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: (js.Date, Boolean) => js.Date): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
       

@@ -383,7 +383,8 @@ object Docs {
     }
   }
   
-  extension [Self <: Docs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Docs] (val x: Self) extends AnyVal {
     
     inline def setDocuments(value: DocumentsCollection): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
@@ -543,7 +544,8 @@ object Docs {
         __obj.asInstanceOf[AutoText]
       }
       
-      extension [Self <: AutoText](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AutoText] (val x: Self) extends AnyVal {
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
@@ -582,7 +584,8 @@ object Docs {
         __obj.asInstanceOf[Background]
       }
       
-      extension [Self <: Background](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
         
         inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -601,7 +604,8 @@ object Docs {
         __obj.asInstanceOf[BackgroundSuggestionState]
       }
       
-      extension [Self <: BackgroundSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BackgroundSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
@@ -622,7 +626,8 @@ object Docs {
         __obj.asInstanceOf[BatchUpdateDocumentRequest]
       }
       
-      extension [Self <: BatchUpdateDocumentRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateDocumentRequest] (val x: Self) extends AnyVal {
         
         inline def setRequests(value: js.Array[Request]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
         
@@ -651,7 +656,8 @@ object Docs {
         __obj.asInstanceOf[BatchUpdateDocumentResponse]
       }
       
-      extension [Self <: BatchUpdateDocumentResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BatchUpdateDocumentResponse] (val x: Self) extends AnyVal {
         
         inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
         
@@ -680,7 +686,8 @@ object Docs {
         __obj.asInstanceOf[Body]
       }
       
-      extension [Self <: Body](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -705,7 +712,8 @@ object Docs {
         __obj.asInstanceOf[Bullet]
       }
       
-      extension [Self <: Bullet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Bullet] (val x: Self) extends AnyVal {
         
         inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
@@ -736,7 +744,8 @@ object Docs {
         __obj.asInstanceOf[BulletSuggestionState]
       }
       
-      extension [Self <: BulletSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BulletSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setListIdSuggested(value: Boolean): Self = StObject.set(x, "listIdSuggested", value.asInstanceOf[js.Any])
         
@@ -763,7 +772,8 @@ object Docs {
         __obj.asInstanceOf[Color]
       }
       
-      extension [Self <: Color](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
         
         inline def setRgbColor(value: RgbColor): Self = StObject.set(x, "rgbColor", value.asInstanceOf[js.Any])
         
@@ -788,7 +798,8 @@ object Docs {
         __obj.asInstanceOf[ColumnBreak]
       }
       
-      extension [Self <: ColumnBreak](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ColumnBreak] (val x: Self) extends AnyVal {
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
@@ -825,7 +836,8 @@ object Docs {
         __obj.asInstanceOf[CreateNamedRangeRequest]
       }
       
-      extension [Self <: CreateNamedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateNamedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -848,7 +860,8 @@ object Docs {
         __obj.asInstanceOf[CreateNamedRangeResponse]
       }
       
-      extension [Self <: CreateNamedRangeResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateNamedRangeResponse] (val x: Self) extends AnyVal {
         
         inline def setNamedRangeId(value: String): Self = StObject.set(x, "namedRangeId", value.asInstanceOf[js.Any])
         
@@ -869,7 +882,8 @@ object Docs {
         __obj.asInstanceOf[CreateParagraphBulletsRequest]
       }
       
-      extension [Self <: CreateParagraphBulletsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateParagraphBulletsRequest] (val x: Self) extends AnyVal {
         
         inline def setBulletPreset(value: String): Self = StObject.set(x, "bulletPreset", value.asInstanceOf[js.Any])
         
@@ -900,7 +914,8 @@ object Docs {
         __obj.asInstanceOf[CropProperties]
       }
       
-      extension [Self <: CropProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
         
         inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
@@ -943,7 +958,8 @@ object Docs {
         __obj.asInstanceOf[CropPropertiesSuggestionState]
       }
       
-      extension [Self <: CropPropertiesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CropPropertiesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
         
@@ -978,7 +994,8 @@ object Docs {
         __obj.asInstanceOf[DeleteContentRangeRequest]
       }
       
-      extension [Self <: DeleteContentRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteContentRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -999,7 +1016,8 @@ object Docs {
         __obj.asInstanceOf[DeleteNamedRangeRequest]
       }
       
-      extension [Self <: DeleteNamedRangeRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteNamedRangeRequest] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -1022,7 +1040,8 @@ object Docs {
         __obj.asInstanceOf[DeleteParagraphBulletsRequest]
       }
       
-      extension [Self <: DeleteParagraphBulletsRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
         
         inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
         
@@ -1041,7 +1060,8 @@ object Docs {
         __obj.asInstanceOf[DeletePositionedObjectRequest]
       }
       
-      extension [Self <: DeletePositionedObjectRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeletePositionedObjectRequest] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -1060,7 +1080,8 @@ object Docs {
         __obj.asInstanceOf[DeleteTableColumnRequest]
       }
       
-      extension [Self <: DeleteTableColumnRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteTableColumnRequest] (val x: Self) extends AnyVal {
         
         inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
         
@@ -1079,7 +1100,8 @@ object Docs {
         __obj.asInstanceOf[DeleteTableRowRequest]
       }
       
-      extension [Self <: DeleteTableRowRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DeleteTableRowRequest] (val x: Self) extends AnyVal {
         
         inline def setTableCellLocation(value: TableCellLocation): Self = StObject.set(x, "tableCellLocation", value.asInstanceOf[js.Any])
         
@@ -1100,7 +1122,8 @@ object Docs {
         __obj.asInstanceOf[Dimension]
       }
       
-      extension [Self <: Dimension](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
         
         inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
         
@@ -1153,7 +1176,8 @@ object Docs {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.Document] (val x: Self) extends AnyVal {
         
         inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -1260,7 +1284,8 @@ object Docs {
         __obj.asInstanceOf[DocumentStyle]
       }
       
-      extension [Self <: DocumentStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocumentStyle] (val x: Self) extends AnyVal {
         
         inline def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
@@ -1363,7 +1388,8 @@ object Docs {
         __obj.asInstanceOf[DocumentStyleSuggestionState]
       }
       
-      extension [Self <: DocumentStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DocumentStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBackgroundSuggestionState(value: BackgroundSuggestionState): Self = StObject.set(x, "backgroundSuggestionState", value.asInstanceOf[js.Any])
         
@@ -1458,7 +1484,8 @@ object Docs {
         __obj.asInstanceOf[EmbeddedObject]
       }
       
-      extension [Self <: EmbeddedObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedObject] (val x: Self) extends AnyVal {
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
@@ -1523,7 +1550,8 @@ object Docs {
         __obj.asInstanceOf[EmbeddedObjectBorder]
       }
       
-      extension [Self <: EmbeddedObjectBorder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedObjectBorder] (val x: Self) extends AnyVal {
         
         inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -1560,7 +1588,8 @@ object Docs {
         __obj.asInstanceOf[EmbeddedObjectBorderSuggestionState]
       }
       
-      extension [Self <: EmbeddedObjectBorderSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedObjectBorderSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setColorSuggested(value: Boolean): Self = StObject.set(x, "colorSuggested", value.asInstanceOf[js.Any])
         
@@ -1611,7 +1640,8 @@ object Docs {
         __obj.asInstanceOf[EmbeddedObjectSuggestionState]
       }
       
-      extension [Self <: EmbeddedObjectSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EmbeddedObjectSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setDescriptionSuggested(value: Boolean): Self = StObject.set(x, "descriptionSuggested", value.asInstanceOf[js.Any])
         
@@ -1670,7 +1700,8 @@ object Docs {
         __obj.asInstanceOf[EndOfSegmentLocation]
       }
       
-      extension [Self <: EndOfSegmentLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EndOfSegmentLocation] (val x: Self) extends AnyVal {
         
         inline def setSegmentId(value: String): Self = StObject.set(x, "segmentId", value.asInstanceOf[js.Any])
         
@@ -1691,7 +1722,8 @@ object Docs {
         __obj.asInstanceOf[Equation]
       }
       
-      extension [Self <: Equation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Equation] (val x: Self) extends AnyVal {
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
@@ -1720,7 +1752,8 @@ object Docs {
         __obj.asInstanceOf[Footer]
       }
       
-      extension [Self <: Footer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -1747,7 +1780,8 @@ object Docs {
         __obj.asInstanceOf[Footnote]
       }
       
-      extension [Self <: Footnote](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -1782,7 +1816,8 @@ object Docs {
         __obj.asInstanceOf[FootnoteReference]
       }
       
-      extension [Self <: FootnoteReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FootnoteReference] (val x: Self) extends AnyVal {
         
         inline def setFootnoteId(value: String): Self = StObject.set(x, "footnoteId", value.asInstanceOf[js.Any])
         
@@ -1827,7 +1862,8 @@ object Docs {
         __obj.asInstanceOf[Header]
       }
       
-      extension [Self <: Header](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -1858,7 +1894,8 @@ object Docs {
         __obj.asInstanceOf[HorizontalRule]
       }
       
-      extension [Self <: HorizontalRule](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HorizontalRule] (val x: Self) extends AnyVal {
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
@@ -1905,7 +1942,8 @@ object Docs {
         __obj.asInstanceOf[ImageProperties]
       }
       
-      extension [Self <: ImageProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
         
         inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
         
@@ -1960,7 +1998,8 @@ object Docs {
         __obj.asInstanceOf[ImagePropertiesSuggestionState]
       }
       
-      extension [Self <: ImagePropertiesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ImagePropertiesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setAngleSuggested(value: Boolean): Self = StObject.set(x, "angleSuggested", value.asInstanceOf[js.Any])
         
@@ -2011,7 +2050,8 @@ object Docs {
         __obj.asInstanceOf[InlineObject]
       }
       
-      extension [Self <: InlineObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InlineObject] (val x: Self) extends AnyVal {
         
         inline def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
         
@@ -2056,7 +2096,8 @@ object Docs {
         __obj.asInstanceOf[InlineObjectElement]
       }
       
-      extension [Self <: InlineObjectElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InlineObjectElement] (val x: Self) extends AnyVal {
         
         inline def setInlineObjectId(value: String): Self = StObject.set(x, "inlineObjectId", value.asInstanceOf[js.Any])
         
@@ -2095,7 +2136,8 @@ object Docs {
         __obj.asInstanceOf[InlineObjectProperties]
       }
       
-      extension [Self <: InlineObjectProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InlineObjectProperties] (val x: Self) extends AnyVal {
         
         inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
         
@@ -2114,7 +2156,8 @@ object Docs {
         __obj.asInstanceOf[InlineObjectPropertiesSuggestionState]
       }
       
-      extension [Self <: InlineObjectPropertiesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InlineObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
         
@@ -2139,7 +2182,8 @@ object Docs {
         __obj.asInstanceOf[InsertInlineImageRequest]
       }
       
-      extension [Self <: InsertInlineImageRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertInlineImageRequest] (val x: Self) extends AnyVal {
         
         inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
@@ -2170,7 +2214,8 @@ object Docs {
         __obj.asInstanceOf[InsertInlineImageResponse]
       }
       
-      extension [Self <: InsertInlineImageResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertInlineImageResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -2189,7 +2234,8 @@ object Docs {
         __obj.asInstanceOf[InsertInlineSheetsChartResponse]
       }
       
-      extension [Self <: InsertInlineSheetsChartResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertInlineSheetsChartResponse] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -2210,7 +2256,8 @@ object Docs {
         __obj.asInstanceOf[InsertPageBreakRequest]
       }
       
-      extension [Self <: InsertPageBreakRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertPageBreakRequest] (val x: Self) extends AnyVal {
         
         inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
@@ -2239,7 +2286,8 @@ object Docs {
         __obj.asInstanceOf[InsertTableRequest]
       }
       
-      extension [Self <: InsertTableRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTableRequest] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -2272,7 +2320,8 @@ object Docs {
         __obj.asInstanceOf[InsertTableRowRequest]
       }
       
-      extension [Self <: InsertTableRowRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTableRowRequest] (val x: Self) extends AnyVal {
         
         inline def setInsertBelow(value: Boolean): Self = StObject.set(x, "insertBelow", value.asInstanceOf[js.Any])
         
@@ -2299,7 +2348,8 @@ object Docs {
         __obj.asInstanceOf[InsertTextRequest]
       }
       
-      extension [Self <: InsertTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InsertTextRequest] (val x: Self) extends AnyVal {
         
         inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
         
@@ -2330,7 +2380,8 @@ object Docs {
         __obj.asInstanceOf[Link]
       }
       
-      extension [Self <: Link](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
         
         inline def setBookmarkId(value: String): Self = StObject.set(x, "bookmarkId", value.asInstanceOf[js.Any])
         
@@ -2357,7 +2408,8 @@ object Docs {
         __obj.asInstanceOf[LinkedContentReference]
       }
       
-      extension [Self <: LinkedContentReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkedContentReference] (val x: Self) extends AnyVal {
         
         inline def setSheetsChartReference(value: SheetsChartReference): Self = StObject.set(x, "sheetsChartReference", value.asInstanceOf[js.Any])
         
@@ -2376,7 +2428,8 @@ object Docs {
         __obj.asInstanceOf[LinkedContentReferenceSuggestionState]
       }
       
-      extension [Self <: LinkedContentReferenceSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LinkedContentReferenceSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setSheetsChartReferenceSuggestionState(value: SheetsChartReferenceSuggestionState): Self = StObject.set(x, "sheetsChartReferenceSuggestionState", value.asInstanceOf[js.Any])
         
@@ -2401,7 +2454,8 @@ object Docs {
         __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List]
       }
       
-      extension [Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Docs.Schema.List] (val x: Self) extends AnyVal {
         
         inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
         
@@ -2434,7 +2488,8 @@ object Docs {
         __obj.asInstanceOf[ListProperties]
       }
       
-      extension [Self <: ListProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListProperties] (val x: Self) extends AnyVal {
         
         inline def setNestingLevels(value: js.Array[NestingLevel]): Self = StObject.set(x, "nestingLevels", value.asInstanceOf[js.Any])
         
@@ -2455,7 +2510,8 @@ object Docs {
         __obj.asInstanceOf[ListPropertiesSuggestionState]
       }
       
-      extension [Self <: ListPropertiesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ListPropertiesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setNestingLevelsSuggestionStates(value: js.Array[NestingLevelSuggestionState]): Self = StObject.set(x, "nestingLevelsSuggestionStates", value.asInstanceOf[js.Any])
         
@@ -2478,7 +2534,8 @@ object Docs {
         __obj.asInstanceOf[Location]
       }
       
-      extension [Self <: Location](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -2505,7 +2562,8 @@ object Docs {
         __obj.asInstanceOf[NamedRange]
       }
       
-      extension [Self <: NamedRange](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedRange] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -2536,7 +2594,8 @@ object Docs {
         __obj.asInstanceOf[NamedRanges]
       }
       
-      extension [Self <: NamedRanges](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedRanges] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -2565,7 +2624,8 @@ object Docs {
         __obj.asInstanceOf[NamedStyle]
       }
       
-      extension [Self <: NamedStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedStyle] (val x: Self) extends AnyVal {
         
         inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
         
@@ -2596,7 +2656,8 @@ object Docs {
         __obj.asInstanceOf[NamedStyleSuggestionState]
       }
       
-      extension [Self <: NamedStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
         
@@ -2623,7 +2684,8 @@ object Docs {
         __obj.asInstanceOf[NamedStyles]
       }
       
-      extension [Self <: NamedStyles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedStyles] (val x: Self) extends AnyVal {
         
         inline def setStyles(value: js.Array[NamedStyle]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
         
@@ -2644,7 +2706,8 @@ object Docs {
         __obj.asInstanceOf[NamedStylesSuggestionState]
       }
       
-      extension [Self <: NamedStylesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NamedStylesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setStylesSuggestionStates(value: js.Array[NamedStyleSuggestionState]): Self = StObject.set(x, "stylesSuggestionStates", value.asInstanceOf[js.Any])
         
@@ -2679,7 +2742,8 @@ object Docs {
         __obj.asInstanceOf[NestingLevel]
       }
       
-      extension [Self <: NestingLevel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NestingLevel] (val x: Self) extends AnyVal {
         
         inline def setBulletAlignment(value: String): Self = StObject.set(x, "bulletAlignment", value.asInstanceOf[js.Any])
         
@@ -2740,7 +2804,8 @@ object Docs {
         __obj.asInstanceOf[NestingLevelSuggestionState]
       }
       
-      extension [Self <: NestingLevelSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NestingLevelSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBulletAlignmentSuggested(value: Boolean): Self = StObject.set(x, "bulletAlignmentSuggested", value.asInstanceOf[js.Any])
         
@@ -2787,7 +2852,8 @@ object Docs {
         __obj.asInstanceOf[ObjectReferences]
       }
       
-      extension [Self <: ObjectReferences](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObjectReferences] (val x: Self) extends AnyVal {
         
         inline def setObjectIds(value: js.Array[String]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
         
@@ -2808,7 +2874,8 @@ object Docs {
         __obj.asInstanceOf[OptionalColor]
       }
       
-      extension [Self <: OptionalColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OptionalColor] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -2833,7 +2900,8 @@ object Docs {
         __obj.asInstanceOf[PageBreak]
       }
       
-      extension [Self <: PageBreak](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PageBreak] (val x: Self) extends AnyVal {
         
         inline def setSuggestedDeletionIds(value: js.Array[String]): Self = StObject.set(x, "suggestedDeletionIds", value.asInstanceOf[js.Any])
         
@@ -2880,7 +2948,8 @@ object Docs {
         __obj.asInstanceOf[Paragraph]
       }
       
-      extension [Self <: Paragraph](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
         
         inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
@@ -2933,7 +3002,8 @@ object Docs {
         __obj.asInstanceOf[ParagraphBorder]
       }
       
-      extension [Self <: ParagraphBorder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParagraphBorder] (val x: Self) extends AnyVal {
         
         inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -2982,7 +3052,8 @@ object Docs {
         __obj.asInstanceOf[ParagraphElement]
       }
       
-      extension [Self <: ParagraphElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParagraphElement] (val x: Self) extends AnyVal {
         
         inline def setAutoText(value: AutoText): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
         
@@ -3077,7 +3148,8 @@ object Docs {
         __obj.asInstanceOf[ParagraphStyle]
       }
       
-      extension [Self <: ParagraphStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -3216,7 +3288,8 @@ object Docs {
         __obj.asInstanceOf[ParagraphStyleSuggestionState]
       }
       
-      extension [Self <: ParagraphStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParagraphStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setAlignmentSuggested(value: Boolean): Self = StObject.set(x, "alignmentSuggested", value.asInstanceOf[js.Any])
         
@@ -3319,7 +3392,8 @@ object Docs {
         __obj.asInstanceOf[PositionedObject]
       }
       
-      extension [Self <: PositionedObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionedObject] (val x: Self) extends AnyVal {
         
         inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
         
@@ -3360,7 +3434,8 @@ object Docs {
         __obj.asInstanceOf[PositionedObjectPositioning]
       }
       
-      extension [Self <: PositionedObjectPositioning](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionedObjectPositioning] (val x: Self) extends AnyVal {
         
         inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
         
@@ -3391,7 +3466,8 @@ object Docs {
         __obj.asInstanceOf[PositionedObjectPositioningSuggestionState]
       }
       
-      extension [Self <: PositionedObjectPositioningSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionedObjectPositioningSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setLayoutSuggested(value: Boolean): Self = StObject.set(x, "layoutSuggested", value.asInstanceOf[js.Any])
         
@@ -3420,7 +3496,8 @@ object Docs {
         __obj.asInstanceOf[PositionedObjectProperties]
       }
       
-      extension [Self <: PositionedObjectProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionedObjectProperties] (val x: Self) extends AnyVal {
         
         inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
         
@@ -3445,7 +3522,8 @@ object Docs {
         __obj.asInstanceOf[PositionedObjectPropertiesSuggestionState]
       }
       
-      extension [Self <: PositionedObjectPropertiesSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionedObjectPropertiesSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setEmbeddedObjectSuggestionState(value: EmbeddedObjectSuggestionState): Self = StObject.set(x, "embeddedObjectSuggestionState", value.asInstanceOf[js.Any])
         
@@ -3472,7 +3550,8 @@ object Docs {
         __obj.asInstanceOf[Range]
       }
       
-      extension [Self <: Range](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
         
         inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -3501,7 +3580,8 @@ object Docs {
         __obj.asInstanceOf[ReplaceAllTextRequest]
       }
       
-      extension [Self <: ReplaceAllTextRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
         
         inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
         
@@ -3524,7 +3604,8 @@ object Docs {
         __obj.asInstanceOf[ReplaceAllTextResponse]
       }
       
-      extension [Self <: ReplaceAllTextResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReplaceAllTextResponse] (val x: Self) extends AnyVal {
         
         inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
         
@@ -3573,7 +3654,8 @@ object Docs {
         __obj.asInstanceOf[Request]
       }
       
-      extension [Self <: Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
         
         inline def setCreateNamedRange(value: CreateNamedRangeRequest): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
         
@@ -3658,7 +3740,8 @@ object Docs {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setCreateNamedRange(value: CreateNamedRangeResponse): Self = StObject.set(x, "createNamedRange", value.asInstanceOf[js.Any])
         
@@ -3693,7 +3776,8 @@ object Docs {
         __obj.asInstanceOf[RgbColor]
       }
       
-      extension [Self <: RgbColor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RgbColor] (val x: Self) extends AnyVal {
         
         inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
@@ -3724,7 +3808,8 @@ object Docs {
         __obj.asInstanceOf[SectionBreak]
       }
       
-      extension [Self <: SectionBreak](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SectionBreak] (val x: Self) extends AnyVal {
         
         inline def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
         
@@ -3757,7 +3842,8 @@ object Docs {
         __obj.asInstanceOf[SectionColumnProperties]
       }
       
-      extension [Self <: SectionColumnProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SectionColumnProperties] (val x: Self) extends AnyVal {
         
         inline def setPaddingEnd(value: Dimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
         
@@ -3784,7 +3870,8 @@ object Docs {
         __obj.asInstanceOf[SectionStyle]
       }
       
-      extension [Self <: SectionStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SectionStyle] (val x: Self) extends AnyVal {
         
         inline def setColumnProperties(value: js.Array[SectionColumnProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
         
@@ -3813,7 +3900,8 @@ object Docs {
         __obj.asInstanceOf[Shading]
       }
       
-      extension [Self <: Shading](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shading] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -3832,7 +3920,8 @@ object Docs {
         __obj.asInstanceOf[ShadingSuggestionState]
       }
       
-      extension [Self <: ShadingSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ShadingSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
@@ -3853,7 +3942,8 @@ object Docs {
         __obj.asInstanceOf[SheetsChartReference]
       }
       
-      extension [Self <: SheetsChartReference](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SheetsChartReference] (val x: Self) extends AnyVal {
         
         inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
         
@@ -3878,7 +3968,8 @@ object Docs {
         __obj.asInstanceOf[SheetsChartReferenceSuggestionState]
       }
       
-      extension [Self <: SheetsChartReferenceSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
         
@@ -3903,7 +3994,8 @@ object Docs {
         __obj.asInstanceOf[Size]
       }
       
-      extension [Self <: Size](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Dimension): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -3928,7 +4020,8 @@ object Docs {
         __obj.asInstanceOf[SizeSuggestionState]
       }
       
-      extension [Self <: SizeSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SizeSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
         
@@ -3961,7 +4054,8 @@ object Docs {
         __obj.asInstanceOf[StructuralElement]
       }
       
-      extension [Self <: StructuralElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StructuralElement] (val x: Self) extends AnyVal {
         
         inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -4002,7 +4096,8 @@ object Docs {
         __obj.asInstanceOf[SubstringMatchCriteria]
       }
       
-      extension [Self <: SubstringMatchCriteria](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubstringMatchCriteria] (val x: Self) extends AnyVal {
         
         inline def setMatchCase(value: Boolean): Self = StObject.set(x, "matchCase", value.asInstanceOf[js.Any])
         
@@ -4027,7 +4122,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedBullet]
       }
       
-      extension [Self <: SuggestedBullet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedBullet] (val x: Self) extends AnyVal {
         
         inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
         
@@ -4052,7 +4148,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedDocumentStyle]
       }
       
-      extension [Self <: SuggestedDocumentStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
         
         inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
         
@@ -4077,7 +4174,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedInlineObjectProperties]
       }
       
-      extension [Self <: SuggestedInlineObjectProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedInlineObjectProperties] (val x: Self) extends AnyVal {
         
         inline def setInlineObjectProperties(value: InlineObjectProperties): Self = StObject.set(x, "inlineObjectProperties", value.asInstanceOf[js.Any])
         
@@ -4102,7 +4200,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedListProperties]
       }
       
-      extension [Self <: SuggestedListProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedListProperties] (val x: Self) extends AnyVal {
         
         inline def setListProperties(value: ListProperties): Self = StObject.set(x, "listProperties", value.asInstanceOf[js.Any])
         
@@ -4127,7 +4226,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedNamedStyles]
       }
       
-      extension [Self <: SuggestedNamedStyles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedNamedStyles] (val x: Self) extends AnyVal {
         
         inline def setNamedStyles(value: NamedStyles): Self = StObject.set(x, "namedStyles", value.asInstanceOf[js.Any])
         
@@ -4152,7 +4252,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedParagraphStyle]
       }
       
-      extension [Self <: SuggestedParagraphStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedParagraphStyle] (val x: Self) extends AnyVal {
         
         inline def setParagraphStyle(value: ParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
         
@@ -4177,7 +4278,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedPositionedObjectProperties]
       }
       
-      extension [Self <: SuggestedPositionedObjectProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedPositionedObjectProperties] (val x: Self) extends AnyVal {
         
         inline def setPositionedObjectProperties(value: PositionedObjectProperties): Self = StObject.set(x, "positionedObjectProperties", value.asInstanceOf[js.Any])
         
@@ -4202,7 +4304,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedTableCellStyle]
       }
       
-      extension [Self <: SuggestedTableCellStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedTableCellStyle] (val x: Self) extends AnyVal {
         
         inline def setTableCellStyle(value: TableCellStyle): Self = StObject.set(x, "tableCellStyle", value.asInstanceOf[js.Any])
         
@@ -4227,7 +4330,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedTableRowStyle]
       }
       
-      extension [Self <: SuggestedTableRowStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedTableRowStyle] (val x: Self) extends AnyVal {
         
         inline def setTableRowStyle(value: TableRowStyle): Self = StObject.set(x, "tableRowStyle", value.asInstanceOf[js.Any])
         
@@ -4252,7 +4356,8 @@ object Docs {
         __obj.asInstanceOf[SuggestedTextStyle]
       }
       
-      extension [Self <: SuggestedTextStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SuggestedTextStyle] (val x: Self) extends AnyVal {
         
         inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
         
@@ -4277,7 +4382,8 @@ object Docs {
         __obj.asInstanceOf[TabStop]
       }
       
-      extension [Self <: TabStop](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TabStop] (val x: Self) extends AnyVal {
         
         inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
         
@@ -4310,7 +4416,8 @@ object Docs {
         __obj.asInstanceOf[Table]
       }
       
-      extension [Self <: Table](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
         
         inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
         
@@ -4367,7 +4474,8 @@ object Docs {
         __obj.asInstanceOf[TableCell]
       }
       
-      extension [Self <: TableCell](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCell] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4420,7 +4528,8 @@ object Docs {
         __obj.asInstanceOf[TableCellBorder]
       }
       
-      extension [Self <: TableCellBorder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellBorder] (val x: Self) extends AnyVal {
         
         inline def setColor(value: OptionalColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -4451,7 +4560,8 @@ object Docs {
         __obj.asInstanceOf[TableCellLocation]
       }
       
-      extension [Self <: TableCellLocation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellLocation] (val x: Self) extends AnyVal {
         
         inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
         
@@ -4500,7 +4610,8 @@ object Docs {
         __obj.asInstanceOf[TableCellStyle]
       }
       
-      extension [Self <: TableCellStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellStyle] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -4585,7 +4696,8 @@ object Docs {
         __obj.asInstanceOf[TableCellStyleSuggestionState]
       }
       
-      extension [Self <: TableCellStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableCellStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
@@ -4650,7 +4762,8 @@ object Docs {
         __obj.asInstanceOf[TableColumnProperties]
       }
       
-      extension [Self <: TableColumnProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableColumnProperties] (val x: Self) extends AnyVal {
         
         inline def setWidth(value: Dimension): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
@@ -4677,7 +4790,8 @@ object Docs {
         __obj.asInstanceOf[TableOfContents]
       }
       
-      extension [Self <: TableOfContents](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableOfContents] (val x: Self) extends AnyVal {
         
         inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4722,7 +4836,8 @@ object Docs {
         __obj.asInstanceOf[TableRow]
       }
       
-      extension [Self <: TableRow](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
         
         inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
         
@@ -4771,7 +4886,8 @@ object Docs {
         __obj.asInstanceOf[TableRowStyle]
       }
       
-      extension [Self <: TableRowStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRowStyle] (val x: Self) extends AnyVal {
         
         inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
         
@@ -4790,7 +4906,8 @@ object Docs {
         __obj.asInstanceOf[TableRowStyleSuggestionState]
       }
       
-      extension [Self <: TableRowStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableRowStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setMinRowHeightSuggested(value: Boolean): Self = StObject.set(x, "minRowHeightSuggested", value.asInstanceOf[js.Any])
         
@@ -4809,7 +4926,8 @@ object Docs {
         __obj.asInstanceOf[TableStyle]
       }
       
-      extension [Self <: TableStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
         
         inline def setTableColumnProperties(value: js.Array[TableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
         
@@ -4838,7 +4956,8 @@ object Docs {
         __obj.asInstanceOf[TextRun]
       }
       
-      extension [Self <: TextRun](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextRun] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
@@ -4897,7 +5016,8 @@ object Docs {
         __obj.asInstanceOf[TextStyle]
       }
       
-      extension [Self <: TextStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColor(value: OptionalColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
         
@@ -4976,7 +5096,8 @@ object Docs {
         __obj.asInstanceOf[TextStyleSuggestionState]
       }
       
-      extension [Self <: TextStyleSuggestionState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TextStyleSuggestionState] (val x: Self) extends AnyVal {
         
         inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
         
@@ -5039,7 +5160,8 @@ object Docs {
         __obj.asInstanceOf[UpdateParagraphStyleRequest]
       }
       
-      extension [Self <: UpdateParagraphStyleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateParagraphStyleRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -5070,7 +5192,8 @@ object Docs {
         __obj.asInstanceOf[UpdateTextStyleRequest]
       }
       
-      extension [Self <: UpdateTextStyleRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
         
         inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
@@ -5099,7 +5222,8 @@ object Docs {
         __obj.asInstanceOf[WeightedFontFamily]
       }
       
-      extension [Self <: WeightedFontFamily](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WeightedFontFamily] (val x: Self) extends AnyVal {
         
         inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
         
@@ -5124,7 +5248,8 @@ object Docs {
         __obj.asInstanceOf[WriteControl]
       }
       
-      extension [Self <: WriteControl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WriteControl] (val x: Self) extends AnyVal {
         
         inline def setRequiredRevisionId(value: String): Self = StObject.set(x, "requiredRevisionId", value.asInstanceOf[js.Any])
         

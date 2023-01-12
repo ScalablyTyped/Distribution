@@ -147,7 +147,8 @@ object libConfigProviderMod {
       __obj.asInstanceOf[ConfigProviderProps]
     }
     
-    extension [Self <: ConfigProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigProviderProps] (val x: Self) extends AnyVal {
       
       inline def setAutoInsertSpaceInButton(value: Boolean): Self = StObject.set(x, "autoInsertSpaceInButton", value.asInstanceOf[js.Any])
       

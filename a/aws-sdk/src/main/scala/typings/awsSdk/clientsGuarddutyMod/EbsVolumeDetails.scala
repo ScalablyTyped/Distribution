@@ -23,7 +23,8 @@ object EbsVolumeDetails {
     __obj.asInstanceOf[EbsVolumeDetails]
   }
   
-  extension [Self <: EbsVolumeDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsVolumeDetails] (val x: Self) extends AnyVal {
     
     inline def setScannedVolumeDetails(value: VolumeDetails): Self = StObject.set(x, "ScannedVolumeDetails", value.asInstanceOf[js.Any])
     

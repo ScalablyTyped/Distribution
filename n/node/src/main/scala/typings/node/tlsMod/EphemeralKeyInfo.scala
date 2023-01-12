@@ -29,7 +29,8 @@ object EphemeralKeyInfo {
     __obj.asInstanceOf[EphemeralKeyInfo]
   }
   
-  extension [Self <: EphemeralKeyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EphemeralKeyInfo] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

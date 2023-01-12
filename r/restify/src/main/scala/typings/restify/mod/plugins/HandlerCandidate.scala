@@ -23,7 +23,8 @@ object HandlerCandidate {
     __obj.asInstanceOf[HandlerCandidate]
   }
   
-  extension [Self <: HandlerCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HandlerCandidate] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: String | js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

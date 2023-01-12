@@ -57,7 +57,8 @@ object LargePayload {
     __obj.asInstanceOf[LargePayload]
   }
   
-  extension [Self <: LargePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LargePayload] (val x: Self) extends AnyVal {
     
     inline def setHighPriority(value: Dictk): Self = StObject.set(x, "highPriority", value.asInstanceOf[js.Any])
     

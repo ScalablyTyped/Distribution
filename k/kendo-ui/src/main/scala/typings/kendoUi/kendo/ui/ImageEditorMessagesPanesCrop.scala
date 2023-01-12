@@ -25,7 +25,8 @@ object ImageEditorMessagesPanesCrop {
     __obj.asInstanceOf[ImageEditorMessagesPanesCrop]
   }
   
-  extension [Self <: ImageEditorMessagesPanesCrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEditorMessagesPanesCrop] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

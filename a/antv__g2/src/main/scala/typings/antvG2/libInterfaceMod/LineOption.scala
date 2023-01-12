@@ -21,7 +21,8 @@ object LineOption {
     __obj.asInstanceOf[LineOption]
   }
   
-  extension [Self <: LineOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineOption] (val x: Self) extends AnyVal {
     
     inline def setText(value: LineAnnotationTextCfg): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

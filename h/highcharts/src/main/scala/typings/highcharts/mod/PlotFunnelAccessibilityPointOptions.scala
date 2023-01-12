@@ -80,7 +80,8 @@ object PlotFunnelAccessibilityPointOptions {
     __obj.asInstanceOf[PlotFunnelAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotFunnelAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnelAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

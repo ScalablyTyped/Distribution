@@ -34,7 +34,8 @@ object ChannelServices {
     __obj.asInstanceOf[ChannelServices]
   }
   
-  extension [Self <: ChannelServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelServices] (val x: Self) extends AnyVal {
     
     inline def setCommandExecutor(value: CommandExecutor): Self = StObject.set(x, "commandExecutor", value.asInstanceOf[js.Any])
     

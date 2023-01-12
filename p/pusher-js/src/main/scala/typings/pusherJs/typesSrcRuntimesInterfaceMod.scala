@@ -98,7 +98,8 @@ object typesSrcRuntimesInterfaceMod {
       __obj.asInstanceOf[Runtime]
     }
     
-    extension [Self <: Runtime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Runtime] (val x: Self) extends AnyVal {
       
       inline def setAddUnloadListener(value: js.Function => Unit): Self = StObject.set(x, "addUnloadListener", js.Any.fromFunction1(value))
       

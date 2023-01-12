@@ -17,7 +17,8 @@ object RestrictedSignIn {
     __obj.asInstanceOf[RestrictedSignIn]
   }
   
-  extension [Self <: RestrictedSignIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictedSignIn] (val x: Self) extends AnyVal {
     
     inline def setTargetTenantId(value: NullableOption[String]): Self = StObject.set(x, "targetTenantId", value.asInstanceOf[js.Any])
     

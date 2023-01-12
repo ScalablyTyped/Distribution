@@ -47,7 +47,8 @@ object ApplicationTemplate {
     __obj.asInstanceOf[ApplicationTemplate]
   }
   
-  extension [Self <: ApplicationTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationTemplate] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

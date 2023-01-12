@@ -17,7 +17,8 @@ object UIkitLeaderOptions {
     __obj.asInstanceOf[UIkitLeaderOptions]
   }
   
-  extension [Self <: UIkitLeaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitLeaderOptions] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

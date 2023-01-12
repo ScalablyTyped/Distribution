@@ -50,7 +50,8 @@ object NodesInfoNodeInfoSettings {
     __obj.asInstanceOf[NodesInfoNodeInfoSettings]
   }
   
-  extension [Self <: NodesInfoNodeInfoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoSettings] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NodesInfoNodeInfoAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

@@ -175,7 +175,8 @@ object gaugeBandMod {
       __obj.asInstanceOf[GaugeBand]
     }
     
-    extension [Self <: GaugeBand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GaugeBand] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

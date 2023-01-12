@@ -20,7 +20,8 @@ object TypeofSignature {
     __obj.asInstanceOf[TypeofSignature]
   }
   
-  extension [Self <: TypeofSignature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSignature] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Signature): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypefloat32]
     }
     
-    extension [Self <: Optionsdtypefloat32](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypefloat32] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -92,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypefloat64undefi]
     }
     
-    extension [Self <: Optionsdtypefloat64undefi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypefloat64undefi] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -148,7 +150,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeint16]
     }
     
-    extension [Self <: Optionsdtypeint16](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeint16] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -204,7 +207,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeint32]
     }
     
-    extension [Self <: Optionsdtypeint32](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeint32] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -260,7 +264,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeint8]
     }
     
-    extension [Self <: Optionsdtypeint8](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeint8] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -316,7 +321,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeuint16]
     }
     
-    extension [Self <: Optionsdtypeuint16](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeuint16] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -372,7 +378,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeuint32]
     }
     
-    extension [Self <: Optionsdtypeuint32](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeuint32] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -428,7 +435,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeuint8]
     }
     
-    extension [Self <: Optionsdtypeuint8](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeuint8] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -484,7 +492,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeuint8clamped]
     }
     
-    extension [Self <: Optionsdtypeuint8clamped](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeuint8clamped] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       
@@ -540,7 +549,8 @@ object anon {
       __obj.asInstanceOf[Optionsdtypeundefined]
     }
     
-    extension [Self <: Optionsdtypeundefined](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsdtypeundefined] (val x: Self) extends AnyVal {
       
       inline def setAccessor(value: (/* d */ Data, /* i */ Double) => Any): Self = StObject.set(x, "accessor", js.Any.fromFunction2(value))
       

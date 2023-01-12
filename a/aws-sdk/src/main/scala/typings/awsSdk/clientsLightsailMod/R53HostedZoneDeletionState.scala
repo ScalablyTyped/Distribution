@@ -23,7 +23,8 @@ object R53HostedZoneDeletionState {
     __obj.asInstanceOf[R53HostedZoneDeletionState]
   }
   
-  extension [Self <: R53HostedZoneDeletionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R53HostedZoneDeletionState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: R53HostedZoneDeletionStateCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

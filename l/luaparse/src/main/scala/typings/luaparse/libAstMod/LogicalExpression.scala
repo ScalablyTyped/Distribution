@@ -25,7 +25,8 @@ object LogicalExpression {
     __obj.asInstanceOf[LogicalExpression]
   }
   
-  extension [Self <: LogicalExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogicalExpression] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

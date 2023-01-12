@@ -187,7 +187,8 @@ object AutoScalingGroup {
     __obj.asInstanceOf[AutoScalingGroup]
   }
   
-  extension [Self <: AutoScalingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingGroup] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupARN(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupARN", value.asInstanceOf[js.Any])
     

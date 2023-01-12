@@ -23,7 +23,8 @@ object Chromeos {
     __obj.asInstanceOf[Chromeos]
   }
   
-  extension [Self <: Chromeos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chromeos] (val x: Self) extends AnyVal {
     
     inline def setChromeos(value: String): Self = StObject.set(x, "chromeos", value.asInstanceOf[js.Any])
     

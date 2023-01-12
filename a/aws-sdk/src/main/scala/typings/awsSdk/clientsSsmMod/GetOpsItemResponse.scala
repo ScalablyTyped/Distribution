@@ -18,7 +18,8 @@ object GetOpsItemResponse {
     __obj.asInstanceOf[GetOpsItemResponse]
   }
   
-  extension [Self <: GetOpsItemResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsItemResponse] (val x: Self) extends AnyVal {
     
     inline def setOpsItem(value: OpsItem): Self = StObject.set(x, "OpsItem", value.asInstanceOf[js.Any])
     

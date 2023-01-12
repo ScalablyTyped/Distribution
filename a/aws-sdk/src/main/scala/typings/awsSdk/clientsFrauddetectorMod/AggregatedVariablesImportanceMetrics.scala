@@ -18,7 +18,8 @@ object AggregatedVariablesImportanceMetrics {
     __obj.asInstanceOf[AggregatedVariablesImportanceMetrics]
   }
   
-  extension [Self <: AggregatedVariablesImportanceMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedVariablesImportanceMetrics] (val x: Self) extends AnyVal {
     
     inline def setLogOddsMetrics(value: ListOfAggregatedLogOddsMetrics): Self = StObject.set(x, "logOddsMetrics", value.asInstanceOf[js.Any])
     

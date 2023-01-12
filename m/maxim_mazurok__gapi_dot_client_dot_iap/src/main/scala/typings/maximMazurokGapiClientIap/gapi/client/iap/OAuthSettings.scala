@@ -20,7 +20,8 @@ object OAuthSettings {
     __obj.asInstanceOf[OAuthSettings]
   }
   
-  extension [Self <: OAuthSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthSettings] (val x: Self) extends AnyVal {
     
     inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
     

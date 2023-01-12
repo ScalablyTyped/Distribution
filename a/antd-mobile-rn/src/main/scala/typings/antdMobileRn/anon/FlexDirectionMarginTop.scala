@@ -17,7 +17,8 @@ object FlexDirectionMarginTop {
     __obj.asInstanceOf[FlexDirectionMarginTop]
   }
   
-  extension [Self <: FlexDirectionMarginTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexDirectionMarginTop] (val x: Self) extends AnyVal {
     
     inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     

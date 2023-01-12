@@ -19,7 +19,8 @@ object TextBaselineEnumValues {
     __obj.asInstanceOf[TextBaselineEnumValues]
   }
   
-  extension [Self <: TextBaselineEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBaselineEnumValues] (val x: Self) extends AnyVal {
     
     inline def setAlphabetic(value: TextBaseline): Self = StObject.set(x, "Alphabetic", value.asInstanceOf[js.Any])
     

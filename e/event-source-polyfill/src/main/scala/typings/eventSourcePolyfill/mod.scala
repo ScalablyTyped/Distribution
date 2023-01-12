@@ -158,7 +158,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[EventListenerObject]
     }
     
-    extension [Self <: EventListenerObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListenerObject] (val x: Self) extends AnyVal {
       
       inline def setHandleEvent(value: Event => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
@@ -215,7 +217,8 @@ object mod {
       __obj.asInstanceOf[EventSourceEventMap]
     }
     
-    extension [Self <: EventSourceEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSourceEventMap] (val x: Self) extends AnyVal {
       
       inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -244,7 +247,8 @@ object mod {
       __obj.asInstanceOf[EventSourcePolyfillInit]
     }
     
-    extension [Self <: EventSourcePolyfillInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventSourcePolyfillInit] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -284,7 +288,8 @@ object mod {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

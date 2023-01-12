@@ -23,7 +23,8 @@ object ListAccountAssociationsOutput {
     __obj.asInstanceOf[ListAccountAssociationsOutput]
   }
   
-  extension [Self <: ListAccountAssociationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountAssociationsOutput] (val x: Self) extends AnyVal {
     
     inline def setLinkedAccounts(value: AccountAssociationsList): Self = StObject.set(x, "LinkedAccounts", value.asInstanceOf[js.Any])
     

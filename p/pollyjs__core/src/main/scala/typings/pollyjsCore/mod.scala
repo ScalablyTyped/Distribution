@@ -351,7 +351,8 @@ object mod {
       __obj.asInstanceOf[Interceptor]
     }
     
-    extension [Self <: Interceptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interceptor] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -373,7 +374,8 @@ object mod {
       __obj.asInstanceOf[ListenerEvent]
     }
     
-    extension [Self <: ListenerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerEvent] (val x: Self) extends AnyVal {
       
       inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
@@ -449,7 +451,8 @@ object mod {
       __obj.asInstanceOf[PollyConfig]
     }
     
-    extension [Self <: PollyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollyConfig] (val x: Self) extends AnyVal {
       
       inline def setAdapterOptions(value: Dictkey): Self = StObject.set(x, "adapterOptions", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object Query {
     __obj.asInstanceOf[Query]
   }
   
-  extension [Self <: Query](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
     
     inline def setFILTERS(value: js.Array[QueryFilter]): Self = StObject.set(x, "FILTERS", value.asInstanceOf[js.Any])
     

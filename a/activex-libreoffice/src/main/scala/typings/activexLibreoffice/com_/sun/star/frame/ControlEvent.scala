@@ -29,7 +29,8 @@ object ControlEvent {
     __obj.asInstanceOf[ControlEvent]
   }
   
-  extension [Self <: ControlEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlEvent] (val x: Self) extends AnyVal {
     
     inline def setAInformation(value: SafeArray[NamedValue]): Self = StObject.set(x, "aInformation", value.asInstanceOf[js.Any])
     

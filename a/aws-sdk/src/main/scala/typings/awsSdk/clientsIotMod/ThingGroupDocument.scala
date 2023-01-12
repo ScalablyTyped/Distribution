@@ -38,7 +38,8 @@ object ThingGroupDocument {
     __obj.asInstanceOf[ThingGroupDocument]
   }
   
-  extension [Self <: ThingGroupDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThingGroupDocument] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

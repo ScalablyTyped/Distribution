@@ -23,7 +23,8 @@ object SFCParserOptions {
     __obj.asInstanceOf[SFCParserOptions]
   }
   
-  extension [Self <: SFCParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SFCParserOptions] (val x: Self) extends AnyVal {
     
     inline def setDeindent(value: Boolean): Self = StObject.set(x, "deindent", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object crashlytics {
       __obj.asInstanceOf[customError]
     }
     
-    extension [Self <: customError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: customError] (val x: Self) extends AnyVal {
       
       inline def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       

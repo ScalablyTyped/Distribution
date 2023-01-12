@@ -55,7 +55,8 @@ object libComponentsContextualMenuContextualMenuDotclassNamesMod {
       __obj.asInstanceOf[IContextualMenuClassNames]
     }
     
-    extension [Self <: IContextualMenuClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContextualMenuClassNames] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object libComponentsContextualMenuContextualMenuDotclassNamesMod {
       __obj.asInstanceOf[IMenuItemClassNames]
     }
     
-    extension [Self <: IMenuItemClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuItemClassNames] (val x: Self) extends AnyVal {
       
       inline def setCheckmarkIcon(value: String): Self = StObject.set(x, "checkmarkIcon", value.asInstanceOf[js.Any])
       

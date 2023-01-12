@@ -29,7 +29,8 @@ object Clock {
     __obj.asInstanceOf[Clock]
   }
   
-  extension [Self <: Clock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
     
     inline def setClock(value: typings.xstate.libInterpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     

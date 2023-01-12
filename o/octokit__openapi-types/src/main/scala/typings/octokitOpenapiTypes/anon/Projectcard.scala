@@ -33,7 +33,8 @@ object Projectcard {
     __obj.asInstanceOf[Projectcard]
   }
   
-  extension [Self <: Projectcard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projectcard] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Avatarurl): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

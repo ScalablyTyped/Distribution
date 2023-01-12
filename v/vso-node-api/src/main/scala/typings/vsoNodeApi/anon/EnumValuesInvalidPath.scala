@@ -15,7 +15,8 @@ object EnumValuesInvalidPath {
     __obj.asInstanceOf[EnumValuesInvalidPath]
   }
   
-  extension [Self <: EnumValuesInvalidPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesInvalidPath] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: InvalidPath): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

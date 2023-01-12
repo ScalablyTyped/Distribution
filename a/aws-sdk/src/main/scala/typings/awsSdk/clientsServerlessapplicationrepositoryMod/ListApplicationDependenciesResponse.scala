@@ -23,7 +23,8 @@ object ListApplicationDependenciesResponse {
     __obj.asInstanceOf[ListApplicationDependenciesResponse]
   }
   
-  extension [Self <: ListApplicationDependenciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListApplicationDependenciesResponse] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: listOfApplicationDependencySummary): Self = StObject.set(x, "Dependencies", value.asInstanceOf[js.Any])
     

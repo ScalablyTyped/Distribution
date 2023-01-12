@@ -22,7 +22,8 @@ object PubsubSnapshotMetadata {
     __obj.asInstanceOf[PubsubSnapshotMetadata]
   }
   
-  extension [Self <: PubsubSnapshotMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubSnapshotMetadata] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

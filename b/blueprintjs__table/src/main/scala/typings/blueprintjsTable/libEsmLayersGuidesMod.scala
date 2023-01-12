@@ -48,7 +48,8 @@ object libEsmLayersGuidesMod {
       __obj.asInstanceOf[IGuideLayerProps]
     }
     
-    extension [Self <: IGuideLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGuideLayerProps] (val x: Self) extends AnyVal {
       
       inline def setHorizontalGuides(value: js.Array[Double]): Self = StObject.set(x, "horizontalGuides", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object libEsmCommonUtilsDomUtilsMod {
       __obj.asInstanceOf[IThrottledReactEventOptions]
     }
     
-    extension [Self <: IThrottledReactEventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThrottledReactEventOptions] (val x: Self) extends AnyVal {
       
       inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
       

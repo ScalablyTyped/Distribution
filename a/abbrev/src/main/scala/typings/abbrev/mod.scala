@@ -33,7 +33,8 @@ object mod {
         __obj.asInstanceOf[Array[T]]
       }
       
-      extension [Self <: Array[?], T](x: Self & Array[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
         
         inline def setAbbrev(value: () => StringDictionary[String]): Self = StObject.set(x, "abbrev", js.Any.fromFunction0(value))
       }
@@ -50,7 +51,8 @@ object mod {
         __obj.asInstanceOf[Object]
       }
       
-      extension [Self <: Object](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
         
         inline def setAbbrev(value: () => StringDictionary[String]): Self = StObject.set(x, "abbrev", js.Any.fromFunction0(value))
       }
@@ -67,7 +69,8 @@ object mod {
         __obj.asInstanceOf[ReadonlyArray[T]]
       }
       
-      extension [Self <: ReadonlyArray[?], T](x: Self & ReadonlyArray[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReadonlyArray[?], T] (val x: Self & ReadonlyArray[T]) extends AnyVal {
         
         inline def setAbbrev(value: () => StringDictionary[String]): Self = StObject.set(x, "abbrev", js.Any.fromFunction0(value))
       }

@@ -34,7 +34,8 @@ object navigateToSmartProgramOptions {
     __obj.asInstanceOf[navigateToSmartProgramOptions]
   }
   
-  extension [Self <: navigateToSmartProgramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: navigateToSmartProgramOptions] (val x: Self) extends AnyVal {
     
     inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
     

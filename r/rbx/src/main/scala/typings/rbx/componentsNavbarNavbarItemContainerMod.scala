@@ -121,7 +121,8 @@ object componentsNavbarNavbarItemContainerMod {
       __obj.asInstanceOf[NavbarItemContainerModifierProps]
     }
     
-    extension [Self <: NavbarItemContainerModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarItemContainerModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -277,7 +278,8 @@ object componentsNavbarNavbarItemContainerMod {
       __obj.asInstanceOf[NavbarItemContainerProps]
     }
     
-    extension [Self <: NavbarItemContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarItemContainerProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -474,7 +476,8 @@ object componentsNavbarNavbarItemContainerMod {
       __obj.asInstanceOf[NavbarItemContainerState]
     }
     
-    extension [Self <: NavbarItemContainerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarItemContainerState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }

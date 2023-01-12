@@ -350,7 +350,8 @@ object ImagePropsPartialThemePro {
     __obj.asInstanceOf[ImagePropsPartialThemePro]
   }
   
-  extension [Self <: ImagePropsPartialThemePro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropsPartialThemePro] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

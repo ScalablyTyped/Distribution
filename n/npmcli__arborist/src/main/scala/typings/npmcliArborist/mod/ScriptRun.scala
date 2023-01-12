@@ -44,7 +44,8 @@ object ScriptRun {
     __obj.asInstanceOf[ScriptRun]
   }
   
-  extension [Self <: ScriptRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptRun] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

@@ -178,7 +178,8 @@ object Mpeg2Settings {
     __obj.asInstanceOf[Mpeg2Settings]
   }
   
-  extension [Self <: Mpeg2Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mpeg2Settings] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveQuantization(value: Mpeg2AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     

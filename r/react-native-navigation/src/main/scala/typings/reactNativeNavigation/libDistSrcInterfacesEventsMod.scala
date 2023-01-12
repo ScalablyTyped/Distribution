@@ -17,7 +17,8 @@ object libDistSrcInterfacesEventsMod {
       __obj.asInstanceOf[BottomTabLongPressedEvent]
     }
     
-    extension [Self <: BottomTabLongPressedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomTabLongPressedEvent] (val x: Self) extends AnyVal {
       
       inline def setSelectedTabIndex(value: Double): Self = StObject.set(x, "selectedTabIndex", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object libDistSrcInterfacesEventsMod {
       __obj.asInstanceOf[BottomTabPressedEvent]
     }
     
-    extension [Self <: BottomTabPressedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomTabPressedEvent] (val x: Self) extends AnyVal {
       
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object libDistSrcInterfacesEventsMod {
       __obj.asInstanceOf[BottomTabSelectedEvent]
     }
     
-    extension [Self <: BottomTabSelectedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomTabSelectedEvent] (val x: Self) extends AnyVal {
       
       inline def setSelectedTabIndex(value: Double): Self = StObject.set(x, "selectedTabIndex", value.asInstanceOf[js.Any])
       
@@ -76,7 +79,8 @@ object libDistSrcInterfacesEventsMod {
       __obj.asInstanceOf[CommandCompletedEvent]
     }
     
-    extension [Self <: CommandCompletedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandCompletedEvent] (val x: Self) extends AnyVal {
       
       inline def setCommandId(value: String): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
       

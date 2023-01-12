@@ -35,7 +35,8 @@ object mod {
         __obj.asInstanceOf[Duration]
       }
       
-      extension [Self <: Duration](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
         
         inline def setAfterMoment(value: String => String): Self = StObject.set(x, "afterMoment", js.Any.fromFunction1(value))
         
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[TwixFormatOptions]
     }
     
-    extension [Self <: TwixFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwixFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAllDay(value: Any): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
@@ -284,7 +286,8 @@ object mod {
       __obj.asInstanceOf[TwixIter]
     }
     
-    extension [Self <: TwixIter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwixIter] (val x: Self) extends AnyVal {
       
       inline def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))
       
@@ -305,7 +308,8 @@ object mod {
       __obj.asInstanceOf[TwixParseAndFormatOptions]
     }
     
-    extension [Self <: TwixParseAndFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwixParseAndFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setParseStrict(value: Boolean): Self = StObject.set(x, "parseStrict", value.asInstanceOf[js.Any])
       
@@ -326,7 +330,8 @@ object mod {
       __obj.asInstanceOf[TwixSimpleFormatOptions]
     }
     
-    extension [Self <: TwixSimpleFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwixSimpleFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setAllDay(value: String): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
       
@@ -349,7 +354,8 @@ object mod {
       __obj.asInstanceOf[TwixStatic]
     }
     
-    extension [Self <: TwixStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TwixStatic] (val x: Self) extends AnyVal {
       
       inline def setFormatTemplate(value: (/* left */ Any, /* right */ Any) => Any): Self = StObject.set(x, "formatTemplate", js.Any.fromFunction2(value))
       

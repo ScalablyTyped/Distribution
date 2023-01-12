@@ -19,7 +19,8 @@ object DocumentFieldsInformation {
     __obj.asInstanceOf[DocumentFieldsInformation]
   }
   
-  extension [Self <: DocumentFieldsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentFieldsInformation] (val x: Self) extends AnyVal {
     
     inline def setDocumentFields(
       value: js.Array[

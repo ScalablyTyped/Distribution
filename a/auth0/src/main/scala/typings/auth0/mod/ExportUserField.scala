@@ -17,7 +17,8 @@ object ExportUserField {
     __obj.asInstanceOf[ExportUserField]
   }
   
-  extension [Self <: ExportUserField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportUserField] (val x: Self) extends AnyVal {
     
     inline def setExport_as(value: String): Self = StObject.set(x, "export_as", value.asInstanceOf[js.Any])
     

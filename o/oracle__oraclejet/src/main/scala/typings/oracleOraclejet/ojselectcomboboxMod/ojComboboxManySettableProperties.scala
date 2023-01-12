@@ -82,7 +82,8 @@ object ojComboboxManySettableProperties {
     __obj.asInstanceOf[ojComboboxManySettableProperties[K, D]]
   }
   
-  extension [Self <: ojComboboxManySettableProperties[?, ?], K, D](x: Self & (ojComboboxManySettableProperties[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojComboboxManySettableProperties[?, ?], K, D] (val x: Self & (ojComboboxManySettableProperties[K, D])) extends AnyVal {
     
     inline def setAsyncValidators(value: js.Array[AsyncValidator[js.Array[Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
     

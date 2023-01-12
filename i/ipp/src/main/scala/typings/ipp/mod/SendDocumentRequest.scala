@@ -20,7 +20,8 @@ object SendDocumentRequest {
     __obj.asInstanceOf[SendDocumentRequest]
   }
   
-  extension [Self <: SendDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

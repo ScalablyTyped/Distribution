@@ -18,7 +18,8 @@ object DescribeSecurityGroupReferencesResult {
     __obj.asInstanceOf[DescribeSecurityGroupReferencesResult]
   }
   
-  extension [Self <: DescribeSecurityGroupReferencesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSecurityGroupReferencesResult] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupReferenceSet(value: SecurityGroupReferences): Self = StObject.set(x, "SecurityGroupReferenceSet", value.asInstanceOf[js.Any])
     

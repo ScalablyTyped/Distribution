@@ -33,7 +33,8 @@ object SchemaVersionSummary {
     __obj.asInstanceOf[SchemaVersionSummary]
   }
   
-  extension [Self <: SchemaVersionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaVersionSummary] (val x: Self) extends AnyVal {
     
     inline def setSchemaArn(value: string): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     

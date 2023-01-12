@@ -77,7 +77,8 @@ object menuItemMenuItemMod extends Shortcut {
       __obj.asInstanceOf[MenuItemTypeMap[P, D]]
     }
     
-    extension [Self <: MenuItemTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (MenuItemTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (MenuItemTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: MenuItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

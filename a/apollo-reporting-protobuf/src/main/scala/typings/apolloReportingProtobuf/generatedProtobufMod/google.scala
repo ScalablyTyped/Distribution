@@ -134,7 +134,8 @@ object google {
         __obj.asInstanceOf[ITimestamp]
       }
       
-      extension [Self <: ITimestamp](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITimestamp] (val x: Self) extends AnyVal {
         
         inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
         

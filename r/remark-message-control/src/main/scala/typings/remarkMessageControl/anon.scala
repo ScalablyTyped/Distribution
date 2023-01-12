@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[OmitOptionsWithResetmarke]
     }
     
-    extension [Self <: OmitOptionsWithResetmarke](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptionsWithResetmarke] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: js.Array[String]): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[OmitOptionsWithoutResetma]
     }
     
-    extension [Self <: OmitOptionsWithoutResetma](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptionsWithoutResetma] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: js.Array[String]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
       

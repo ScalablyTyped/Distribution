@@ -24,7 +24,8 @@ object HtmlTagToken {
     __obj.asInstanceOf[HtmlTagToken]
   }
   
-  extension [Self <: HtmlTagToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlTagToken] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

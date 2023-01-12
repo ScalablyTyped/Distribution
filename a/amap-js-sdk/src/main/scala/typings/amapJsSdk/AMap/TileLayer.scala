@@ -41,7 +41,8 @@ object TileLayer {
       __obj.asInstanceOf[Traffic]
     }
     
-    extension [Self <: Traffic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Traffic] (val x: Self) extends AnyVal {
       
       inline def setAutoRefresh(value: Boolean): Self = StObject.set(x, "autoRefresh", value.asInstanceOf[js.Any])
       

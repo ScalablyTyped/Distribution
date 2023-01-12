@@ -23,7 +23,8 @@ object CreateLabelGroupResponse {
     __obj.asInstanceOf[CreateLabelGroupResponse]
   }
   
-  extension [Self <: CreateLabelGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setLabelGroupArn(value: LabelGroupArn): Self = StObject.set(x, "LabelGroupArn", value.asInstanceOf[js.Any])
     

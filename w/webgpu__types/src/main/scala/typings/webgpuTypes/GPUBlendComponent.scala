@@ -29,7 +29,8 @@ object GPUBlendComponent {
     __obj.asInstanceOf[GPUBlendComponent]
   }
   
-  extension [Self <: GPUBlendComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBlendComponent] (val x: Self) extends AnyVal {
     
     inline def setDstFactor(value: GPUBlendFactor): Self = StObject.set(x, "dstFactor", value.asInstanceOf[js.Any])
     

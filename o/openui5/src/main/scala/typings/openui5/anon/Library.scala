@@ -18,7 +18,8 @@ object Library {
     __obj.asInstanceOf[Library]
   }
   
-  extension [Self <: Library](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Library] (val x: Self) extends AnyVal {
     
     inline def setLibrary(value: String): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     

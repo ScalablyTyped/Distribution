@@ -26,7 +26,8 @@ object ChainArrayElement {
     __obj.asInstanceOf[ChainArrayElement]
   }
   
-  extension [Self <: ChainArrayElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainArrayElement] (val x: Self) extends AnyVal {
     
     inline def setBackref(value: Double | String): Self = StObject.set(x, "backref", value.asInstanceOf[js.Any])
     

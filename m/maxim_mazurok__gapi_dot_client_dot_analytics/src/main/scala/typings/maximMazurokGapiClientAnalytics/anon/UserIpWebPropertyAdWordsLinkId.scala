@@ -52,7 +52,8 @@ object UserIpWebPropertyAdWordsLinkId {
     __obj.asInstanceOf[UserIpWebPropertyAdWordsLinkId]
   }
   
-  extension [Self <: UserIpWebPropertyAdWordsLinkId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIpWebPropertyAdWordsLinkId] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

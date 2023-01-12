@@ -17,7 +17,8 @@ object FunctionName {
     __obj.asInstanceOf[FunctionName]
   }
   
-  extension [Self <: FunctionName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionName] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: String): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

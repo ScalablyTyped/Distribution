@@ -33,7 +33,8 @@ object HighlightProvided {
     __obj.asInstanceOf[HighlightProvided[TDoc]]
   }
   
-  extension [Self <: HighlightProvided[?], TDoc](x: Self & HighlightProvided[TDoc]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightProvided[?], TDoc] (val x: Self & HighlightProvided[TDoc]) extends AnyVal {
     
     inline def setHighlight(value: Attribute[TDoc] => js.Array[IsHighlighted]): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
   }

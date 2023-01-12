@@ -33,7 +33,8 @@ object StopProductSubscriptionRequest {
     __obj.asInstanceOf[StopProductSubscriptionRequest]
   }
   
-  extension [Self <: StopProductSubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopProductSubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsMosaicMod extends Shortcut 
       __obj.asInstanceOf[MosaicProps]
     }
     
-    extension [Self <: MosaicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

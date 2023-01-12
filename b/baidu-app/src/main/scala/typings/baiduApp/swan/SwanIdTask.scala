@@ -18,7 +18,8 @@ object SwanIdTask {
     __obj.asInstanceOf[SwanIdTask]
   }
   
-  extension [Self <: SwanIdTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwanIdTask] (val x: Self) extends AnyVal {
     
     inline def setData(value: Swanid): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

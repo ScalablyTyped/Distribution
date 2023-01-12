@@ -49,7 +49,8 @@ object distLinkSrcUseLinkMod {
       __obj.asInstanceOf[UseLinkProps]
     }
     
-    extension [Self <: UseLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean | Double): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object AudioBufferOptions {
     __obj.asInstanceOf[AudioBufferOptions]
   }
   
-  extension [Self <: AudioBufferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioBufferOptions] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

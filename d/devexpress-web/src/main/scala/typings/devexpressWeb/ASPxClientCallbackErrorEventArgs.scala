@@ -28,7 +28,8 @@ object ASPxClientCallbackErrorEventArgs {
     __obj.asInstanceOf[ASPxClientCallbackErrorEventArgs]
   }
   
-  extension [Self <: ASPxClientCallbackErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCallbackErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

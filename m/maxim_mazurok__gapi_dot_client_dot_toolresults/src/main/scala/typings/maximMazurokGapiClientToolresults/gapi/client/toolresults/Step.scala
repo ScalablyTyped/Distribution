@@ -99,7 +99,8 @@ object Step {
     __obj.asInstanceOf[Step]
   }
   
-  extension [Self <: Step](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
     
     inline def setCompletionTime(value: Timestamp): Self = StObject.set(x, "completionTime", value.asInstanceOf[js.Any])
     

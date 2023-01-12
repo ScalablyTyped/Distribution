@@ -18,7 +18,8 @@ object ValidationWarning {
     __obj.asInstanceOf[ValidationWarning]
   }
   
-  extension [Self <: ValidationWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationWarning] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: ErrorSet): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

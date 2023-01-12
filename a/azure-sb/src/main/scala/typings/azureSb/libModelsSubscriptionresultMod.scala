@@ -49,7 +49,8 @@ object libModelsSubscriptionresultMod {
             __obj.asInstanceOf[SubscriptionProperties]
           }
           
-          extension [Self <: SubscriptionProperties](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: SubscriptionProperties] (val x: Self) extends AnyVal {
             
             inline def setAutoDeleteOnIdle(value: Boolean): Self = StObject.set(x, "AutoDeleteOnIdle", value.asInstanceOf[js.Any])
             
@@ -84,7 +85,8 @@ object libModelsSubscriptionresultMod {
             __obj.asInstanceOf[SubscriptionResult]
           }
           
-          extension [Self <: SubscriptionResult](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: SubscriptionResult] (val x: Self) extends AnyVal {
             
             inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             

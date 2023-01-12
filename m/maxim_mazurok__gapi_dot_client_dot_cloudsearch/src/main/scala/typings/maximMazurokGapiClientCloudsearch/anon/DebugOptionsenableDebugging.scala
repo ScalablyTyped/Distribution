@@ -54,7 +54,8 @@ object DebugOptionsenableDebugging {
     __obj.asInstanceOf[DebugOptionsenableDebugging]
   }
   
-  extension [Self <: DebugOptionsenableDebugging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugOptionsenableDebugging] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

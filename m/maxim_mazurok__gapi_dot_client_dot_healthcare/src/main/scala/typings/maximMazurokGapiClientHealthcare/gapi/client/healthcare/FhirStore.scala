@@ -87,7 +87,8 @@ object FhirStore {
     __obj.asInstanceOf[FhirStore]
   }
   
-  extension [Self <: FhirStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FhirStore] (val x: Self) extends AnyVal {
     
     inline def setComplexDataTypeReferenceParsing(value: String): Self = StObject.set(x, "complexDataTypeReferenceParsing", value.asInstanceOf[js.Any])
     

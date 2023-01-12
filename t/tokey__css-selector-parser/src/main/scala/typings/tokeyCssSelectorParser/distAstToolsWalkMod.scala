@@ -126,7 +126,8 @@ object distAstToolsWalkMod {
       __obj.asInstanceOf[WalkOptions]
     }
     
-    extension [Self <: WalkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WalkOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreList(
         value: js.Array[

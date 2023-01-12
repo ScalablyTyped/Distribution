@@ -35,7 +35,8 @@ object CertPattern {
     __obj.asInstanceOf[CertPattern]
   }
   
-  extension [Self <: CertPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertPattern] (val x: Self) extends AnyVal {
     
     inline def setEnrollmentURI(value: js.Array[String]): Self = StObject.set(x, "EnrollmentURI", value.asInstanceOf[js.Any])
     

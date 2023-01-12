@@ -33,7 +33,8 @@ object NavigationPropertyOptions {
     __obj.asInstanceOf[NavigationPropertyOptions]
   }
   
-  extension [Self <: NavigationPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setAssociationName(value: String): Self = StObject.set(x, "associationName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SNOMEDCTTrait {
     __obj.asInstanceOf[SNOMEDCTTrait]
   }
   
-  extension [Self <: SNOMEDCTTrait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SNOMEDCTTrait] (val x: Self) extends AnyVal {
     
     inline def setName(value: SNOMEDCTTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

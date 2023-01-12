@@ -20,7 +20,8 @@ object ClusterStatsClusterProcess {
     __obj.asInstanceOf[ClusterStatsClusterProcess]
   }
   
-  extension [Self <: ClusterStatsClusterProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterProcess] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: ClusterStatsClusterProcessCpu): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

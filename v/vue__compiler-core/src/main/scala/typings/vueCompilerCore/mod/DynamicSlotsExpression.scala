@@ -27,7 +27,8 @@ object DynamicSlotsExpression {
     __obj.asInstanceOf[DynamicSlotsExpression]
   }
   
-  extension [Self <: DynamicSlotsExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicSlotsExpression] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Tuple2[SlotsObjectExpression, DynamicSlotEntries]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

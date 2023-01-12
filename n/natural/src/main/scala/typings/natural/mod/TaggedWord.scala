@@ -17,7 +17,8 @@ object TaggedWord {
     __obj.asInstanceOf[TaggedWord]
   }
   
-  extension [Self <: TaggedWord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedWord] (val x: Self) extends AnyVal {
     
     inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     

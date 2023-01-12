@@ -24,7 +24,8 @@ object OverrideValue {
     __obj.asInstanceOf[OverrideValue]
   }
   
-  extension [Self <: OverrideValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideValue] (val x: Self) extends AnyVal {
     
     inline def setDo_objectID(value: Uuid): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     

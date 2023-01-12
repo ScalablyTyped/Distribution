@@ -15,7 +15,8 @@ object OnlyFirstError {
     __obj.asInstanceOf[OnlyFirstError]
   }
   
-  extension [Self <: OnlyFirstError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlyFirstError] (val x: Self) extends AnyVal {
     
     inline def setOnlyFirstError(value: Boolean): Self = StObject.set(x, "onlyFirstError", value.asInstanceOf[js.Any])
     

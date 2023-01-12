@@ -53,7 +53,8 @@ object mod {
       __obj.asInstanceOf[CoercionStrategy]
     }
     
-    extension [Self <: CoercionStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoercionStrategy] (val x: Self) extends AnyVal {
       
       inline def setBoolean(value: /* input */ Any => Any): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[IOpenAPIRequestCoercer]
     }
     
-    extension [Self <: IOpenAPIRequestCoercer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOpenAPIRequestCoercer] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: Request => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
     }
@@ -107,7 +109,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestCoercer]
     }
     
-    extension [Self <: OpenAPIRequestCoercer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIRequestCoercer] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: Any => Unit): Self = StObject.set(x, "coerce", js.Any.fromFunction1(value))
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[OpenAPIRequestCoercerArgs]
     }
     
-    extension [Self <: OpenAPIRequestCoercerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenAPIRequestCoercerArgs] (val x: Self) extends AnyVal {
       
       inline def setCoercionStrategy(value: CoercionStrategy): Self = StObject.set(x, "coercionStrategy", value.asInstanceOf[js.Any])
       

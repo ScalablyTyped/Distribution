@@ -53,7 +53,8 @@ object ConferenceDataVersion {
     __obj.asInstanceOf[ConferenceDataVersion]
   }
   
-  extension [Self <: ConferenceDataVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceDataVersion] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

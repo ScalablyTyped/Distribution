@@ -23,7 +23,8 @@ object WebExtensionManifestChromeSettingsOverridesType {
     __obj.asInstanceOf[WebExtensionManifestChromeSettingsOverridesType]
   }
   
-  extension [Self <: WebExtensionManifestChromeSettingsOverridesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestChromeSettingsOverridesType] (val x: Self) extends AnyVal {
     
     inline def setHomepage(value: String): Self = StObject.set(x, "homepage", value.asInstanceOf[js.Any])
     

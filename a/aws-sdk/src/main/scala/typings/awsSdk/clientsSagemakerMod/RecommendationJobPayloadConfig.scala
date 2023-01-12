@@ -23,7 +23,8 @@ object RecommendationJobPayloadConfig {
     __obj.asInstanceOf[RecommendationJobPayloadConfig]
   }
   
-  extension [Self <: RecommendationJobPayloadConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobPayloadConfig] (val x: Self) extends AnyVal {
     
     inline def setSamplePayloadUrl(value: String): Self = StObject.set(x, "SamplePayloadUrl", value.asInstanceOf[js.Any])
     

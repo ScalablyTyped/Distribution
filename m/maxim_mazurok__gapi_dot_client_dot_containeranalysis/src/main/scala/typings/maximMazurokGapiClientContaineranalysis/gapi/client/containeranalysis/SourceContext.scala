@@ -27,7 +27,8 @@ object SourceContext {
     __obj.asInstanceOf[SourceContext]
   }
   
-  extension [Self <: SourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceContext] (val x: Self) extends AnyVal {
     
     inline def setCloudRepo(value: CloudRepoSourceContext): Self = StObject.set(x, "cloudRepo", value.asInstanceOf[js.Any])
     

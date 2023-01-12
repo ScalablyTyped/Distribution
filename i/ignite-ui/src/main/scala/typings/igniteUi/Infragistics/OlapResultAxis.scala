@@ -23,7 +23,8 @@ object OlapResultAxis {
     __obj.asInstanceOf[OlapResultAxis]
   }
   
-  extension [Self <: OlapResultAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResultAxis] (val x: Self) extends AnyVal {
     
     inline def setTupleSize(value: () => Double): Self = StObject.set(x, "tupleSize", js.Any.fromFunction0(value))
     

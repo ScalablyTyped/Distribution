@@ -19,7 +19,8 @@ object IncompleteUploadedBucketItem {
     __obj.asInstanceOf[IncompleteUploadedBucketItem]
   }
   
-  extension [Self <: IncompleteUploadedBucketItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncompleteUploadedBucketItem] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

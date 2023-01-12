@@ -216,7 +216,8 @@ object PartialModalProps {
     __obj.asInstanceOf[PartialModalProps]
   }
   
-  extension [Self <: PartialModalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialModalProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[typings.antdMobile.esComponentsModalModalActionButtonMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object WatchOptions {
     __obj.asInstanceOf[WatchOptions]
   }
   
-  extension [Self <: WatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: BufferEncoding | buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

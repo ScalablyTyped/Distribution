@@ -22,7 +22,8 @@ object DeclarationList {
     __obj.asInstanceOf[DeclarationList]
   }
   
-  extension [Self <: DeclarationList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarationList] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: typings.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

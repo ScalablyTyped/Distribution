@@ -38,7 +38,8 @@ object OutputConfig {
     __obj.asInstanceOf[OutputConfig]
   }
   
-  extension [Self <: OutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputConfig] (val x: Self) extends AnyVal {
     
     inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "CompilerOptions", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IsRegexSupportedResult {
     __obj.asInstanceOf[IsRegexSupportedResult]
   }
   
-  extension [Self <: IsRegexSupportedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRegexSupportedResult] (val x: Self) extends AnyVal {
     
     inline def setIsSupported(value: Boolean): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
     

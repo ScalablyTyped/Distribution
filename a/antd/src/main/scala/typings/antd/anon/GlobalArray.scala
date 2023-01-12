@@ -15,7 +15,8 @@ object GlobalArray {
     __obj.asInstanceOf[GlobalArray]
   }
   
-  extension [Self <: GlobalArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalArray] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: js.Array[scala.Nothing]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     

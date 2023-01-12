@@ -35,7 +35,8 @@ object XMLHttpRequestEventTargetEventMap {
     __obj.asInstanceOf[XMLHttpRequestEventTargetEventMap]
   }
   
-  extension [Self <: XMLHttpRequestEventTargetEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLHttpRequestEventTargetEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

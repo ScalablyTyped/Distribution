@@ -21,7 +21,8 @@ object ConstructorOptions {
     __obj.asInstanceOf[ConstructorOptions]
   }
   
-  extension [Self <: ConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

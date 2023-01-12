@@ -34,7 +34,8 @@ object PictureInPicture {
     __obj.asInstanceOf[PictureInPicture]
   }
   
-  extension [Self <: PictureInPicture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureInPicture] (val x: Self) extends AnyVal {
     
     inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     

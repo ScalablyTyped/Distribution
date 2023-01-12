@@ -32,7 +32,8 @@ object ParticipantData {
     __obj.asInstanceOf[ParticipantData]
   }
   
-  extension [Self <: ParticipantData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantData] (val x: Self) extends AnyVal {
     
     inline def setBioRole(value: BioRole): Self = StObject.set(x, "bioRole", value.asInstanceOf[js.Any])
     

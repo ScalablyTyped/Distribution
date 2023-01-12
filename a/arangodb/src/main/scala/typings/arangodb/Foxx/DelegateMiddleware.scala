@@ -15,7 +15,8 @@ object DelegateMiddleware {
     __obj.asInstanceOf[DelegateMiddleware]
   }
   
-  extension [Self <: DelegateMiddleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegateMiddleware] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: Endpoint => SimpleMiddleware): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
   }

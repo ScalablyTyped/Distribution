@@ -24,7 +24,8 @@ object DescribePortalRequestwait {
     __obj.asInstanceOf[DescribePortalRequestwait]
   }
   
-  extension [Self <: DescribePortalRequestwait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortalRequestwait] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

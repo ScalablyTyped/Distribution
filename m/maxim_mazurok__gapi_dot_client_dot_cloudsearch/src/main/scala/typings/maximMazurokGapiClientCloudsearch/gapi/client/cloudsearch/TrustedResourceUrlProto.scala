@@ -19,7 +19,8 @@ object TrustedResourceUrlProto {
     __obj.asInstanceOf[TrustedResourceUrlProto]
   }
   
-  extension [Self <: TrustedResourceUrlProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrustedResourceUrlProto] (val x: Self) extends AnyVal {
     
     inline def setPrivateDoNotAccessOrElseTrustedResourceUrlWrappedValue(value: String): Self = StObject.set(x, "privateDoNotAccessOrElseTrustedResourceUrlWrappedValue", value.asInstanceOf[js.Any])
     

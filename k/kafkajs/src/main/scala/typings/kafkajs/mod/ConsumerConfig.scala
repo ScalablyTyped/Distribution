@@ -44,7 +44,8 @@ object ConsumerConfig {
     __obj.asInstanceOf[ConsumerConfig]
   }
   
-  extension [Self <: ConsumerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowAutoTopicCreation(value: Boolean): Self = StObject.set(x, "allowAutoTopicCreation", value.asInstanceOf[js.Any])
     

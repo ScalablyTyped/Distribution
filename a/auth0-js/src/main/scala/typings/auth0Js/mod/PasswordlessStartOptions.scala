@@ -23,7 +23,8 @@ object PasswordlessStartOptions {
     __obj.asInstanceOf[PasswordlessStartOptions]
   }
   
-  extension [Self <: PasswordlessStartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordlessStartOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthParams(value: PasswordlessStartAuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
     

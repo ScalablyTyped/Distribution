@@ -46,7 +46,8 @@ object distModelsAnalyticsMod {
       __obj.asInstanceOf[EventMetadata]
     }
     
-    extension [Self <: EventMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMetadata] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object distModelsAnalyticsMod {
       __obj.asInstanceOf[HitPayload]
     }
     
-    extension [Self <: HitPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HitPayload] (val x: Self) extends AnyVal {
       
       inline def setCustomDimensions(value: CustomDimensionsByIndex | CustomDimensionsByField): Self = StObject.set(x, "customDimensions", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object distModelsAnalyticsMod {
       __obj.asInstanceOf[TimingMetadata]
     }
     
-    extension [Self <: TimingMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingMetadata] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

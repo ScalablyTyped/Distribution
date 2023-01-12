@@ -39,7 +39,8 @@ object AdInstance {
     __obj.asInstanceOf[AdInstance]
   }
   
-  extension [Self <: AdInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdInstance] (val x: Self) extends AnyVal {
     
     inline def setGetPlacementID(value: () => String): Self = StObject.set(x, "getPlacementID", js.Any.fromFunction0(value))
     

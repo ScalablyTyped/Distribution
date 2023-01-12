@@ -27,7 +27,8 @@ object SoaData {
     __obj.asInstanceOf[SoaData]
   }
   
-  extension [Self <: SoaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoaData] (val x: Self) extends AnyVal {
     
     inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     

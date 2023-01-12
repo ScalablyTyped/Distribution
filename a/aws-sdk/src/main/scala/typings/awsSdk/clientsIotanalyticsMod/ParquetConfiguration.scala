@@ -18,7 +18,8 @@ object ParquetConfiguration {
     __obj.asInstanceOf[ParquetConfiguration]
   }
   
-  extension [Self <: ParquetConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParquetConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSchemaDefinition(value: SchemaDefinition): Self = StObject.set(x, "schemaDefinition", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OriginTrialTokenWithStatus {
     __obj.asInstanceOf[OriginTrialTokenWithStatus]
   }
   
-  extension [Self <: OriginTrialTokenWithStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginTrialTokenWithStatus] (val x: Self) extends AnyVal {
     
     inline def setParsedToken(value: OriginTrialToken): Self = StObject.set(x, "parsedToken", value.asInstanceOf[js.Any])
     

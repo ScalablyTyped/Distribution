@@ -27,7 +27,8 @@ object IPanoramaConnectionArrow {
     __obj.asInstanceOf[IPanoramaConnectionArrow]
   }
   
-  extension [Self <: IPanoramaConnectionArrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaConnectionArrow] (val x: Self) extends AnyVal {
     
     inline def setGetDirection(value: () => js.Array[Double]): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
     

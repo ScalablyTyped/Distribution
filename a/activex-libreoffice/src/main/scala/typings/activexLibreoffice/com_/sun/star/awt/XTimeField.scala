@@ -99,7 +99,8 @@ object XTimeField {
     __obj.asInstanceOf[XTimeField]
   }
   
-  extension [Self <: XTimeField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTimeField] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Time): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object VirtualCards {
     __obj.asInstanceOf[VirtualCards]
   }
   
-  extension [Self <: VirtualCards](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualCards] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: VirtualCardsCreateRequest => js.Promise[AxiosResponse[VirtualCardsCreateResponse, Any]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

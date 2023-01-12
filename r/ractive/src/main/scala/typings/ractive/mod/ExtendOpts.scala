@@ -40,7 +40,8 @@ object ExtendOpts {
     __obj.asInstanceOf[ExtendOpts[T]]
   }
   
-  extension [Self <: ExtendOpts[?], T /* <: Ractive[T] */](x: Self & ExtendOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendOpts[?], T /* <: Ractive[T] */] (val x: Self & ExtendOpts[T]) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String] | Optional): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

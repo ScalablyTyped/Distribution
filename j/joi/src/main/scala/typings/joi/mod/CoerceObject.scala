@@ -19,7 +19,8 @@ object CoerceObject {
     __obj.asInstanceOf[CoerceObject]
   }
   
-  extension [Self <: CoerceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoerceObject] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String | js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

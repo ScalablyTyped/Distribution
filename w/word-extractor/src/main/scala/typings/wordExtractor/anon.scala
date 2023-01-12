@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[IncludeBody]
     }
     
-    extension [Self <: IncludeBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeBody] (val x: Self) extends AnyVal {
       
       inline def setIncludeBody(value: Boolean): Self = StObject.set(x, "includeBody", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[IncludeFooters]
     }
     
-    extension [Self <: IncludeFooters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeFooters] (val x: Self) extends AnyVal {
       
       inline def setIncludeFooters(value: Boolean): Self = StObject.set(x, "includeFooters", value.asInstanceOf[js.Any])
       

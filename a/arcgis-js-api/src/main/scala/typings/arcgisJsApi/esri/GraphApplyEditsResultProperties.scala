@@ -36,7 +36,8 @@ object GraphApplyEditsResultProperties {
     __obj.asInstanceOf[GraphApplyEditsResultProperties]
   }
   
-  extension [Self <: GraphApplyEditsResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphApplyEditsResultProperties] (val x: Self) extends AnyVal {
     
     inline def setEditResults(value: js.Array[EditResultsObject]): Self = StObject.set(x, "editResults", value.asInstanceOf[js.Any])
     

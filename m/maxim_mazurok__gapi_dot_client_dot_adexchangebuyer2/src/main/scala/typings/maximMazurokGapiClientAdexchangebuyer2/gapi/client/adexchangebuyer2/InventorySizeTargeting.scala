@@ -19,7 +19,8 @@ object InventorySizeTargeting {
     __obj.asInstanceOf[InventorySizeTargeting]
   }
   
-  extension [Self <: InventorySizeTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventorySizeTargeting] (val x: Self) extends AnyVal {
     
     inline def setExcludedInventorySizes(value: js.Array[AdSize]): Self = StObject.set(x, "excludedInventorySizes", value.asInstanceOf[js.Any])
     

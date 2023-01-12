@@ -22,7 +22,8 @@ object RequiredFieldNames {
     __obj.asInstanceOf[RequiredFieldNames]
   }
   
-  extension [Self <: RequiredFieldNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredFieldNames] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

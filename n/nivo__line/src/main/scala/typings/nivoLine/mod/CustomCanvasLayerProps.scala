@@ -31,7 +31,8 @@ object CustomCanvasLayerProps {
     __obj.asInstanceOf[CustomCanvasLayerProps]
   }
   
-  extension [Self <: CustomCanvasLayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomCanvasLayerProps] (val x: Self) extends AnyVal {
     
     inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
   }

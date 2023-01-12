@@ -23,7 +23,8 @@ object RemoveFromGlobalClusterMessage {
     __obj.asInstanceOf[RemoveFromGlobalClusterMessage]
   }
   
-  extension [Self <: RemoveFromGlobalClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveFromGlobalClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setDbClusterIdentifier(value: String): Self = StObject.set(x, "DbClusterIdentifier", value.asInstanceOf[js.Any])
     

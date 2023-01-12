@@ -22,7 +22,8 @@ object SasPortalValidateInstallerRequest {
     __obj.asInstanceOf[SasPortalValidateInstallerRequest]
   }
   
-  extension [Self <: SasPortalValidateInstallerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalValidateInstallerRequest] (val x: Self) extends AnyVal {
     
     inline def setEncodedSecret(value: String): Self = StObject.set(x, "encodedSecret", value.asInstanceOf[js.Any])
     

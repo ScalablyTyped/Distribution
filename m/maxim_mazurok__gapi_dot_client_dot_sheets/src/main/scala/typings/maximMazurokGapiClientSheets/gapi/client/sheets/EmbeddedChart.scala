@@ -25,7 +25,8 @@ object EmbeddedChart {
     __obj.asInstanceOf[EmbeddedChart]
   }
   
-  extension [Self <: EmbeddedChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedChart] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: EmbeddedObjectBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

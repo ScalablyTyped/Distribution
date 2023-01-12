@@ -64,7 +64,8 @@ object srcNgtscShimsSrcExpandoMod {
       __obj.asInstanceOf[NgExtensionData]
     }
     
-    extension [Self <: NgExtensionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgExtensionData] (val x: Self) extends AnyVal {
       
       inline def setFileShim(value: NgFileShimData): Self = StObject.set(x, "fileShim", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object srcNgtscShimsSrcExpandoMod {
       __obj.asInstanceOf[NgFileShimData]
     }
     
-    extension [Self <: NgFileShimData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgFileShimData] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       

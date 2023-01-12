@@ -23,7 +23,8 @@ object TextTransformation {
     __obj.asInstanceOf[TextTransformation]
   }
   
-  extension [Self <: TextTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTransformation] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: TextTransformationPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

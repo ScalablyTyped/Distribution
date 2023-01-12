@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[PartialLatexProps]
     }
     
-    extension [Self <: PartialLatexProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLatexProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

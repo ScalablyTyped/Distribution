@@ -108,7 +108,8 @@ object MKCheckboxProperties {
     __obj.asInstanceOf[MKCheckboxProperties]
   }
   
-  extension [Self <: MKCheckboxProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKCheckboxProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderOffColor(value: String): Self = StObject.set(x, "borderOffColor", value.asInstanceOf[js.Any])
     

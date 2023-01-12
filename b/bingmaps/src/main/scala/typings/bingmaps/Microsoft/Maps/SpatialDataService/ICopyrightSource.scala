@@ -22,7 +22,8 @@ object ICopyrightSource {
     __obj.asInstanceOf[ICopyrightSource]
   }
   
-  extension [Self <: ICopyrightSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICopyrightSource] (val x: Self) extends AnyVal {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "Copyright", value.asInstanceOf[js.Any])
     

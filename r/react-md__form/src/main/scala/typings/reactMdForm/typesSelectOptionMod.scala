@@ -37,7 +37,8 @@ object typesSelectOptionMod {
       __obj.asInstanceOf[OptionProps]
     }
     
-    extension [Self <: OptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionProps] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

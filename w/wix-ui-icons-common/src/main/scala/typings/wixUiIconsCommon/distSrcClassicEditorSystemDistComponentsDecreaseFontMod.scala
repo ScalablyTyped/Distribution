@@ -27,7 +27,8 @@ object distSrcClassicEditorSystemDistComponentsDecreaseFontMod extends Shortcut 
       __obj.asInstanceOf[DecreaseFontProps]
     }
     
-    extension [Self <: DecreaseFontProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecreaseFontProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

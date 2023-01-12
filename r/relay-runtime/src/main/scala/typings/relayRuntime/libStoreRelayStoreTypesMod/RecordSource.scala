@@ -36,7 +36,8 @@ object RecordSource {
     __obj.asInstanceOf[RecordSource]
   }
   
-  extension [Self <: RecordSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordSource] (val x: Self) extends AnyVal {
     
     inline def setGet(value: DataID => js.UndefOr[Record[Any] | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

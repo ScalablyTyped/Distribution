@@ -213,7 +213,8 @@ object RunInstancesRequest {
     __obj.asInstanceOf[RunInstancesRequest]
   }
   
-  extension [Self <: RunInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

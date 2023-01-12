@@ -28,7 +28,8 @@ object FileSystemFileHandle {
     __obj.asInstanceOf[FileSystemFileHandle]
   }
   
-  extension [Self <: FileSystemFileHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemFileHandle] (val x: Self) extends AnyVal {
     
     inline def setGetFile(value: () => js.Promise[File]): Self = StObject.set(x, "getFile", js.Any.fromFunction0(value))
     

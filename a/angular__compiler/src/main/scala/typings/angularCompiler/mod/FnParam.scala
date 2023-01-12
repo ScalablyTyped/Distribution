@@ -20,7 +20,8 @@ object FnParam {
     __obj.asInstanceOf[FnParam]
   }
   
-  extension [Self <: FnParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FnParam] (val x: Self) extends AnyVal {
     
     inline def setIsEquivalent(value: FnParam => Boolean): Self = StObject.set(x, "isEquivalent", js.Any.fromFunction1(value))
     

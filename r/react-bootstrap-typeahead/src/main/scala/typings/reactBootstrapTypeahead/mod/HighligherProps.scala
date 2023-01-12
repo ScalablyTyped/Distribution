@@ -24,7 +24,8 @@ object HighligherProps {
     __obj.asInstanceOf[HighligherProps]
   }
   
-  extension [Self <: HighligherProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighligherProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

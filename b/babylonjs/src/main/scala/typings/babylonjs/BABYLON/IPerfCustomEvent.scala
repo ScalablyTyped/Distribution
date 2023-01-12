@@ -23,7 +23,8 @@ object IPerfCustomEvent {
     __obj.asInstanceOf[IPerfCustomEvent]
   }
   
-  extension [Self <: IPerfCustomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPerfCustomEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

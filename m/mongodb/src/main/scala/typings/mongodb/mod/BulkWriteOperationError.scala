@@ -30,7 +30,8 @@ object BulkWriteOperationError {
     __obj.asInstanceOf[BulkWriteOperationError]
   }
   
-  extension [Self <: BulkWriteOperationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkWriteOperationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: scala.Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

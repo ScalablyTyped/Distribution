@@ -50,7 +50,8 @@ object SourceControlResourceState {
     __obj.asInstanceOf[SourceControlResourceState]
   }
   
-  extension [Self <: SourceControlResourceState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControlResourceState] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

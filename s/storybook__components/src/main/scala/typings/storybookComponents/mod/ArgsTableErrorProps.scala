@@ -15,7 +15,8 @@ object ArgsTableErrorProps {
     __obj.asInstanceOf[ArgsTableErrorProps]
   }
   
-  extension [Self <: ArgsTableErrorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgsTableErrorProps] (val x: Self) extends AnyVal {
     
     inline def setError(value: ArgsTableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

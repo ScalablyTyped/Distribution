@@ -38,7 +38,8 @@ object distSrcSocketToConnMod {
       __obj.asInstanceOf[ToConnectionOptions]
     }
     
-    extension [Self <: ToConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setListeningAddr(value: Multiaddr_): Self = StObject.set(x, "listeningAddr", value.asInstanceOf[js.Any])
       

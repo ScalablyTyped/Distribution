@@ -113,7 +113,8 @@ object dialog {
       __obj.asInstanceOf[DialogDefinition]
     }
     
-    extension [Self <: DialogDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogDefinition] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[typings.ckeditor4.CKEDITOR.dialog.definition.button]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object dialog {
         __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.dialog.definition.button]
       }
       
-      extension [Self <: typings.ckeditor4.CKEDITOR.dialog.definition.button](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.dialog.definition.button] (val x: Self) extends AnyVal {
         
         inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
@@ -211,7 +213,8 @@ object dialog {
         __obj.asInstanceOf[checkbox]
       }
       
-      extension [Self <: checkbox](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: checkbox] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -242,7 +245,8 @@ object dialog {
         __obj.asInstanceOf[content]
       }
       
-      extension [Self <: content](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: content] (val x: Self) extends AnyVal {
         
         inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
         
@@ -285,7 +289,8 @@ object dialog {
         __obj.asInstanceOf[file]
       }
       
-      extension [Self <: file](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: file] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         
@@ -318,7 +323,8 @@ object dialog {
         __obj.asInstanceOf[fileButton]
       }
       
-      extension [Self <: fileButton](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: fileButton] (val x: Self) extends AnyVal {
         
         inline def setFilebrowser(value: String): Self = StObject.set(x, "filebrowser", value.asInstanceOf[js.Any])
         
@@ -355,7 +361,8 @@ object dialog {
         __obj.asInstanceOf[hbox]
       }
       
-      extension [Self <: hbox](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: hbox] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[typings.ckeditor4.CKEDITOR.ui.dialog.uiElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -396,7 +403,8 @@ object dialog {
         __obj.asInstanceOf[html]
       }
       
-      extension [Self <: html](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: html] (val x: Self) extends AnyVal {
         
         inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         
@@ -425,7 +433,8 @@ object dialog {
         __obj.asInstanceOf[labeledElement]
       }
       
-      extension [Self <: labeledElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: labeledElement] (val x: Self) extends AnyVal {
         
         inline def setControlStyle(value: String): Self = StObject.set(x, "controlStyle", value.asInstanceOf[js.Any])
         
@@ -468,7 +477,8 @@ object dialog {
         __obj.asInstanceOf[radio]
       }
       
-      extension [Self <: radio](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: radio] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -507,7 +517,8 @@ object dialog {
         __obj.asInstanceOf[select]
       }
       
-      extension [Self <: select](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: select] (val x: Self) extends AnyVal {
         
         inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
         
@@ -554,7 +565,8 @@ object dialog {
         __obj.asInstanceOf[textInput]
       }
       
-      extension [Self <: textInput](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: textInput] (val x: Self) extends AnyVal {
         
         inline def setBidi(value: Boolean): Self = StObject.set(x, "bidi", value.asInstanceOf[js.Any])
         
@@ -599,7 +611,8 @@ object dialog {
         __obj.asInstanceOf[textarea]
       }
       
-      extension [Self <: textarea](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: textarea] (val x: Self) extends AnyVal {
         
         inline def setBidi(value: Boolean): Self = StObject.set(x, "bidi", value.asInstanceOf[js.Any])
         
@@ -658,7 +671,8 @@ object dialog {
         __obj.asInstanceOf[typings.ckeditor4.CKEDITOR.dialog.definition.uiElement]
       }
       
-      extension [Self <: typings.ckeditor4.CKEDITOR.dialog.definition.uiElement](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ckeditor4.CKEDITOR.dialog.definition.uiElement] (val x: Self) extends AnyVal {
         
         inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
@@ -737,7 +751,8 @@ object dialog {
         __obj.asInstanceOf[vbox]
       }
       
-      extension [Self <: vbox](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: vbox] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[typings.ckeditor4.CKEDITOR.ui.dialog.uiElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         

@@ -25,7 +25,8 @@ object ComplexBehaviorDefinition {
     __obj.asInstanceOf[ComplexBehaviorDefinition]
   }
   
-  extension [Self <: ComplexBehaviorDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplexBehaviorDefinition] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: FormalExpression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

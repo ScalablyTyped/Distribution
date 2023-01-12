@@ -61,7 +61,8 @@ object createjs {
       __obj.asInstanceOf[AbstractRequest]
     }
     
-    extension [Self <: AbstractRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractRequest] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -98,7 +99,8 @@ object createjs {
       __obj.asInstanceOf[ErrorEvent]
     }
     
-    extension [Self <: ErrorEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object createjs {
       __obj.asInstanceOf[LoadItem]
     }
     
-    extension [Self <: LoadItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadItem] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -288,7 +291,8 @@ object createjs {
       __obj.asInstanceOf[ProgressEvent]
     }
     
-    extension [Self <: ProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
       

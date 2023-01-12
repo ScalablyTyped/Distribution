@@ -66,7 +66,8 @@ object XDocumentRecovery {
     __obj.asInstanceOf[XDocumentRecovery]
   }
   
-  extension [Self <: XDocumentRecovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentRecovery] (val x: Self) extends AnyVal {
     
     inline def setRecoverFromFile(value: (String, String, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "recoverFromFile", js.Any.fromFunction3(value))
     

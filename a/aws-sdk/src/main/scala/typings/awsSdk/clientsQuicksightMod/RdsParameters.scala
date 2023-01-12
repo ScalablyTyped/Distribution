@@ -23,7 +23,8 @@ object RdsParameters {
     __obj.asInstanceOf[RdsParameters]
   }
   
-  extension [Self <: RdsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RdsParameters] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object libCoreMod {
       __obj.asInstanceOf[CoreOptions]
     }
     
-    extension [Self <: CoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoreOptions] (val x: Self) extends AnyVal {
       
       inline def setEscapeOnly(value: Boolean): Self = StObject.set(x, "escapeOnly", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libCoreMod {
       __obj.asInstanceOf[FormatOptions]
     }
     
-    extension [Self <: FormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (Double, Double, CoreWithFormatOptions) => String): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
     }

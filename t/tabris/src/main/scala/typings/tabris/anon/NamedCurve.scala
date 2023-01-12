@@ -19,7 +19,8 @@ object NamedCurve {
     __obj.asInstanceOf[NamedCurve]
   }
   
-  extension [Self <: NamedCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedCurve] (val x: Self) extends AnyVal {
     
     inline def setName(value: ECDH): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

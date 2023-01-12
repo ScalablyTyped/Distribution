@@ -21,7 +21,8 @@ object ImageButton {
     __obj.asInstanceOf[ImageButton]
   }
   
-  extension [Self <: ImageButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageButton] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

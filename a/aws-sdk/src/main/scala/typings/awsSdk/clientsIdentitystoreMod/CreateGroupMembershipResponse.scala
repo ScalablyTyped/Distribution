@@ -23,7 +23,8 @@ object CreateGroupMembershipResponse {
     __obj.asInstanceOf[CreateGroupMembershipResponse]
   }
   
-  extension [Self <: CreateGroupMembershipResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGroupMembershipResponse] (val x: Self) extends AnyVal {
     
     inline def setIdentityStoreId(value: IdentityStoreId): Self = StObject.set(x, "IdentityStoreId", value.asInstanceOf[js.Any])
     

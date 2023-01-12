@@ -28,7 +28,8 @@ object ListDistributionConfigurationsRequest {
     __obj.asInstanceOf[ListDistributionConfigurationsRequest]
   }
   
-  extension [Self <: ListDistributionConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDistributionConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

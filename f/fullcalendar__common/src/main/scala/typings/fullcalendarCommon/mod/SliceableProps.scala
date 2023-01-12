@@ -33,7 +33,8 @@ object SliceableProps {
     __obj.asInstanceOf[SliceableProps]
   }
   
-  extension [Self <: SliceableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliceableProps] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

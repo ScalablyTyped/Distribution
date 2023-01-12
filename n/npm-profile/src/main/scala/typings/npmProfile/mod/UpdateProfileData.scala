@@ -38,7 +38,8 @@ object UpdateProfileData {
     __obj.asInstanceOf[UpdateProfileData]
   }
   
-  extension [Self <: UpdateProfileData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProfileData] (val x: Self) extends AnyVal {
     
     inline def setCidr_whitelist(value: js.Array[String]): Self = StObject.set(x, "cidr_whitelist", value.asInstanceOf[js.Any])
     

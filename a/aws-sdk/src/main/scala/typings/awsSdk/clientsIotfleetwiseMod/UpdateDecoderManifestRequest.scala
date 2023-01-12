@@ -58,7 +58,8 @@ object UpdateDecoderManifestRequest {
     __obj.asInstanceOf[UpdateDecoderManifestRequest]
   }
   
-  extension [Self <: UpdateDecoderManifestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDecoderManifestRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

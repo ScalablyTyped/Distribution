@@ -128,7 +128,8 @@ object libComponentsMultiSelectMultiSelectMod {
       __obj.asInstanceOf[MultiSelectProps[T]]
     }
     
-    extension [Self <: MultiSelectProps[?], T /* <: ListBoxBaseItemType */](x: Self & MultiSelectProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectProps[?], T /* <: ListBoxBaseItemType */] (val x: Self & MultiSelectProps[T]) extends AnyVal {
       
       inline def setClearSelectionDescription(value: String): Self = StObject.set(x, "clearSelectionDescription", value.asInstanceOf[js.Any])
       

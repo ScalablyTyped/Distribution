@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[CreateCallsiteRecordOptions]
     }
     
-    extension [Self <: CreateCallsiteRecordOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCallsiteRecordOptions] (val x: Self) extends AnyVal {
       
       inline def setByFunctionName(value: String): Self = StObject.set(x, "byFunctionName", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setCodeFrame(value: Boolean): Self = StObject.set(x, "codeFrame", value.asInstanceOf[js.Any])
       

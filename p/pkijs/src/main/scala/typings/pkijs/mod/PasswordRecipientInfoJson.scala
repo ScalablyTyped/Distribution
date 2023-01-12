@@ -24,7 +24,8 @@ object PasswordRecipientInfoJson {
     __obj.asInstanceOf[PasswordRecipientInfoJson]
   }
   
-  extension [Self <: PasswordRecipientInfoJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordRecipientInfoJson] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKey(value: OctetStringJson): Self = StObject.set(x, "encryptedKey", value.asInstanceOf[js.Any])
     

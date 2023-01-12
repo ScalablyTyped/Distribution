@@ -21,7 +21,8 @@ object BankingScheduledPaymentRecurrenceOnceOff {
     __obj.asInstanceOf[BankingScheduledPaymentRecurrenceOnceOff]
   }
   
-  extension [Self <: BankingScheduledPaymentRecurrenceOnceOff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BankingScheduledPaymentRecurrenceOnceOff] (val x: Self) extends AnyVal {
     
     inline def setPaymentDate(value: String): Self = StObject.set(x, "paymentDate", value.asInstanceOf[js.Any])
   }

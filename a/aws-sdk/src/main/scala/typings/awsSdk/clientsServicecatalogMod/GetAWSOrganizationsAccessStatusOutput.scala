@@ -18,7 +18,8 @@ object GetAWSOrganizationsAccessStatusOutput {
     __obj.asInstanceOf[GetAWSOrganizationsAccessStatusOutput]
   }
   
-  extension [Self <: GetAWSOrganizationsAccessStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAWSOrganizationsAccessStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setAccessStatus(value: AccessStatus): Self = StObject.set(x, "AccessStatus", value.asInstanceOf[js.Any])
     

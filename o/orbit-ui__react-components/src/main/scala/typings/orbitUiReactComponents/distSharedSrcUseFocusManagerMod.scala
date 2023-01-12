@@ -103,7 +103,8 @@ object distSharedSrcUseFocusManagerMod {
       __obj.asInstanceOf[FocusManagerOptions]
     }
     
-    extension [Self <: FocusManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setIsVirtual(value: Boolean): Self = StObject.set(x, "isVirtual", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object distSharedSrcUseFocusManagerMod {
       __obj.asInstanceOf[FocusOptions]
     }
     
-    extension [Self <: FocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
       
       inline def setCanFocus(value: /* element */ HTMLElement => Boolean): Self = StObject.set(x, "canFocus", js.Any.fromFunction1(value))
       

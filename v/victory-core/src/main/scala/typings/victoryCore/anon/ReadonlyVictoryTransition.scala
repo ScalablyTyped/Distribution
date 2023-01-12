@@ -21,7 +21,8 @@ object ReadonlyVictoryTransition {
     __obj.asInstanceOf[ReadonlyVictoryTransition]
   }
   
-  extension [Self <: ReadonlyVictoryTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyVictoryTransition] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

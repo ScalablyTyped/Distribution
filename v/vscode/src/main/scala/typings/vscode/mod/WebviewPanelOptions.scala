@@ -38,7 +38,8 @@ object WebviewPanelOptions {
     __obj.asInstanceOf[WebviewPanelOptions]
   }
   
-  extension [Self <: WebviewPanelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebviewPanelOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableFindWidget(value: Boolean): Self = StObject.set(x, "enableFindWidget", value.asInstanceOf[js.Any])
     

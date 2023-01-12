@@ -27,7 +27,8 @@ object ControlPoint {
     __obj.asInstanceOf[ControlPoint]
   }
   
-  extension [Self <: ControlPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlPoint] (val x: Self) extends AnyVal {
     
     inline def setMapPoint(value: Point): Self = StObject.set(x, "mapPoint", value.asInstanceOf[js.Any])
     

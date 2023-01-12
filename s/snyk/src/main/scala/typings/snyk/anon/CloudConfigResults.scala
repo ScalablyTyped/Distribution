@@ -19,7 +19,8 @@ object CloudConfigResults {
     __obj.asInstanceOf[CloudConfigResults]
   }
   
-  extension [Self <: CloudConfigResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudConfigResults] (val x: Self) extends AnyVal {
     
     inline def setCloudConfigResults(value: js.Array[PolicyMetadata]): Self = StObject.set(x, "cloudConfigResults", value.asInstanceOf[js.Any])
     

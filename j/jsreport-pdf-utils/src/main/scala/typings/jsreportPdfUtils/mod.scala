@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[PdfMeta]
     }
     
-    extension [Self <: PdfMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfMeta] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[PdfOperation]
     }
     
-    extension [Self <: PdfOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfOperation] (val x: Self) extends AnyVal {
       
       inline def setMergeWholeDocument(value: Boolean): Self = StObject.set(x, "mergeWholeDocument", value.asInstanceOf[js.Any])
       
@@ -148,7 +150,8 @@ object mod {
       __obj.asInstanceOf[PdfPassword]
     }
     
-    extension [Self <: PdfPassword](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfPassword] (val x: Self) extends AnyVal {
       
       inline def setContentAccessibility(value: Boolean): Self = StObject.set(x, "contentAccessibility", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object mod {
       __obj.asInstanceOf[PdfSign]
     }
     
-    extension [Self <: PdfSign](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfSign] (val x: Self) extends AnyVal {
       
       inline def setCertificateAsset(value: Contrent): Self = StObject.set(x, "certificateAsset", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object mod {
       __obj.asInstanceOf[PdfTemplate]
     }
     
-    extension [Self <: PdfTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfTemplate] (val x: Self) extends AnyVal {
       
       inline def setPdfMeta(value: PdfMeta): Self = StObject.set(x, "pdfMeta", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setPdfTemplate(value: PdfTemplate): Self = StObject.set(x, "PdfTemplate", value.asInstanceOf[js.Any])
       }

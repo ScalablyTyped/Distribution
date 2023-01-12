@@ -88,7 +88,8 @@ object CreateSessionRequest {
     __obj.asInstanceOf[CreateSessionRequest]
   }
   
-  extension [Self <: CreateSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: SessionCommand): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

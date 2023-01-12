@@ -24,7 +24,8 @@ object PKIStatusInfoParameters {
     __obj.asInstanceOf[PKIStatusInfoParameters]
   }
   
-  extension [Self <: PKIStatusInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PKIStatusInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setFailInfo(value: BitString): Self = StObject.set(x, "failInfo", value.asInstanceOf[js.Any])
     

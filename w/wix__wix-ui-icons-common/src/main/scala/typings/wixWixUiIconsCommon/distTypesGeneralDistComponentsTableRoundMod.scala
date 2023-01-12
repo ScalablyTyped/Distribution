@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTableRoundMod extends Shortcut {
       __obj.asInstanceOf[TableRoundProps]
     }
     
-    extension [Self <: TableRoundProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRoundProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

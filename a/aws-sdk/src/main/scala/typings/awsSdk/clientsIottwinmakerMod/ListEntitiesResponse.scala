@@ -23,7 +23,8 @@ object ListEntitiesResponse {
     __obj.asInstanceOf[ListEntitiesResponse]
   }
   
-  extension [Self <: ListEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntitySummaries(value: EntitySummaries): Self = StObject.set(x, "entitySummaries", value.asInstanceOf[js.Any])
     

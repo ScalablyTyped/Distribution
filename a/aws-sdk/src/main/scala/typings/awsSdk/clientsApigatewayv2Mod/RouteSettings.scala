@@ -38,7 +38,8 @@ object RouteSettings {
     __obj.asInstanceOf[RouteSettings]
   }
   
-  extension [Self <: RouteSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteSettings] (val x: Self) extends AnyVal {
     
     inline def setDataTraceEnabled(value: boolean): Self = StObject.set(x, "DataTraceEnabled", value.asInstanceOf[js.Any])
     

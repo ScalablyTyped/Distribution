@@ -18,7 +18,8 @@ object IExpressionResult {
     __obj.asInstanceOf[IExpressionResult]
   }
   
-  extension [Self <: IExpressionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpressionResult] (val x: Self) extends AnyVal {
     
     inline def setQBadFieldNames(value: js.Array[INxRange]): Self = StObject.set(x, "qBadFieldNames", value.asInstanceOf[js.Any])
     

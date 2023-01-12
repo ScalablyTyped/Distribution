@@ -22,7 +22,8 @@ object ReadonlyPlotSelectionEven {
     __obj.asInstanceOf[ReadonlyPlotSelectionEven]
   }
   
-  extension [Self <: ReadonlyPlotSelectionEven](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPlotSelectionEven] (val x: Self) extends AnyVal {
     
     inline def setLassoPoints(value: SelectionRange): Self = StObject.set(x, "lassoPoints", value.asInstanceOf[js.Any])
     

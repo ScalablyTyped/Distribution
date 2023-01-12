@@ -28,7 +28,8 @@ object CampaignHook {
     __obj.asInstanceOf[CampaignHook]
   }
   
-  extension [Self <: CampaignHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignHook] (val x: Self) extends AnyVal {
     
     inline def setLambdaFunctionName(value: string): Self = StObject.set(x, "LambdaFunctionName", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RotationDescriptor {
     __obj.asInstanceOf[RotationDescriptor]
   }
   
-  extension [Self <: RotationDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationDescriptor] (val x: Self) extends AnyVal {
     
     inline def setRotateAngle(value: Double): Self = StObject.set(x, "RotateAngle", value.asInstanceOf[js.Any])
     

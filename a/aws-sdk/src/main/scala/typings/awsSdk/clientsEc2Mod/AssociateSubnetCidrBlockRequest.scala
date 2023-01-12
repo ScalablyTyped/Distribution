@@ -23,7 +23,8 @@ object AssociateSubnetCidrBlockRequest {
     __obj.asInstanceOf[AssociateSubnetCidrBlockRequest]
   }
   
-  extension [Self <: AssociateSubnetCidrBlockRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateSubnetCidrBlockRequest] (val x: Self) extends AnyVal {
     
     inline def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     

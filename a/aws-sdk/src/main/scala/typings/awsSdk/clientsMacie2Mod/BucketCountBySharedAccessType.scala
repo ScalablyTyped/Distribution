@@ -33,7 +33,8 @@ object BucketCountBySharedAccessType {
     __obj.asInstanceOf[BucketCountBySharedAccessType]
   }
   
-  extension [Self <: BucketCountBySharedAccessType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketCountBySharedAccessType] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: long): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

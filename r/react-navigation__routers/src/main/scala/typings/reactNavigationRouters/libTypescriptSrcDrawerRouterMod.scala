@@ -75,7 +75,8 @@ object libTypescriptSrcDrawerRouterMod {
       __obj.asInstanceOf[DrawerActionHelpers[ParamList]]
     }
     
-    extension [Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */](x: Self & DrawerActionHelpers[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerActionHelpers[ParamList]) extends AnyVal {
       
       inline def setCloseDrawer(value: () => Unit): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
       
@@ -148,7 +149,8 @@ object libTypescriptSrcDrawerRouterMod {
       __obj.asInstanceOf[DrawerNavigationState[ParamList]]
     }
     
-    extension [Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */](x: Self & DrawerNavigationState[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerNavigationState[ParamList]) extends AnyVal {
       
       inline def setDefault(value: DrawerStatus): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object libTypescriptSrcDrawerRouterMod {
       __obj.asInstanceOf[DrawerRouterOptions]
     }
     
-    extension [Self <: DrawerRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultStatus(value: DrawerStatus): Self = StObject.set(x, "defaultStatus", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object IPane {
     __obj.asInstanceOf[IPane]
   }
   
-  extension [Self <: IPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPane] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

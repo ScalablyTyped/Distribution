@@ -140,7 +140,8 @@ object JsFormatOptions {
     __obj.asInstanceOf[JsFormatOptions]
   }
   
-  extension [Self <: JsFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setAsciiOnly(value: Boolean): Self = StObject.set(x, "asciiOnly", value.asInstanceOf[js.Any])
     

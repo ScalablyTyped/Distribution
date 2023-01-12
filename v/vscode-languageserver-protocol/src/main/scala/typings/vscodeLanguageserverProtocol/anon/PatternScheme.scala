@@ -25,7 +25,8 @@ object PatternScheme {
     __obj.asInstanceOf[PatternScheme]
   }
   
-  extension [Self <: PatternScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternScheme] (val x: Self) extends AnyVal {
     
     inline def setNotebookType(value: String): Self = StObject.set(x, "notebookType", value.asInstanceOf[js.Any])
     

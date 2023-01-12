@@ -27,7 +27,8 @@ object ISmsBinaryMessage {
     __obj.asInstanceOf[ISmsBinaryMessage]
   }
   
-  extension [Self <: ISmsBinaryMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISmsBinaryMessage] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: SmsDataFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object JsonpOptions {
     __obj.asInstanceOf[JsonpOptions]
   }
   
-  extension [Self <: JsonpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonpOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

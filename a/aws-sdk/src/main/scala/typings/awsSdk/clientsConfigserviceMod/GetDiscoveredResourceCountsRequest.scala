@@ -28,7 +28,8 @@ object GetDiscoveredResourceCountsRequest {
     __obj.asInstanceOf[GetDiscoveredResourceCountsRequest]
   }
   
-  extension [Self <: GetDiscoveredResourceCountsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiscoveredResourceCountsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

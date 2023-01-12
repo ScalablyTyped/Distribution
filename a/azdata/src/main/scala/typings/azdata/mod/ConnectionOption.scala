@@ -44,7 +44,8 @@ object ConnectionOption {
     __obj.asInstanceOf[ConnectionOption]
   }
   
-  extension [Self <: ConnectionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOption] (val x: Self) extends AnyVal {
     
     inline def setCategoryValues(value: js.Array[CategoryValue]): Self = StObject.set(x, "categoryValues", value.asInstanceOf[js.Any])
     

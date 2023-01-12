@@ -67,7 +67,8 @@ object XummPayloadMeta {
     __obj.asInstanceOf[XummPayloadMeta]
   }
   
-  extension [Self <: XummPayloadMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummPayloadMeta] (val x: Self) extends AnyVal {
     
     inline def setApp_opened(value: Boolean): Self = StObject.set(x, "app_opened", value.asInstanceOf[js.Any])
     

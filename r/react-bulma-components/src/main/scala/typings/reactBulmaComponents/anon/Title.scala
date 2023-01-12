@@ -34,7 +34,8 @@ object Title {
     __obj.asInstanceOf[Title]
   }
   
-  extension [Self <: Title](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
     
     inline def setBody(value: /* props */ js.Object & (ElementProps[js.Object, section]) => ReactElement): Self = StObject.set(x, "Body", js.Any.fromFunction1(value))
     

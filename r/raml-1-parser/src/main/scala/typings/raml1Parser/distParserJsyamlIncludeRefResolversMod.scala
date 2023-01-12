@@ -70,7 +70,8 @@ object distParserJsyamlIncludeRefResolversMod {
       __obj.asInstanceOf[IncludeReferenceResolver]
     }
     
-    extension [Self <: IncludeReferenceResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeReferenceResolver] (val x: Self) extends AnyVal {
       
       inline def setCompleteReference(value: (String, IncludeReference) => js.Array[String]): Self = StObject.set(x, "completeReference", js.Any.fromFunction2(value))
       
@@ -100,7 +101,8 @@ object distParserJsyamlIncludeRefResolversMod {
       __obj.asInstanceOf[ResolvedReference]
     }
     
-    extension [Self <: ResolvedReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedReference] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object distParserJsyamlIncludeRefResolversMod {
       __obj.asInstanceOf[ValidationIssue]
     }
     
-    extension [Self <: ValidationIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationIssue] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

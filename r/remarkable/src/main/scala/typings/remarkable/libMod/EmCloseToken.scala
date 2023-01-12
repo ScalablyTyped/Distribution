@@ -21,7 +21,8 @@ object EmCloseToken {
     __obj.asInstanceOf[EmCloseToken]
   }
   
-  extension [Self <: EmCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: em_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

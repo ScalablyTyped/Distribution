@@ -15,7 +15,8 @@ object UserDeletionResource {
     __obj.asInstanceOf[UserDeletionResource]
   }
   
-  extension [Self <: UserDeletionResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDeletionResource] (val x: Self) extends AnyVal {
     
     inline def setUserDeletionRequest(value: UserDeletionRequestResource): Self = StObject.set(x, "userDeletionRequest", value.asInstanceOf[js.Any])
   }

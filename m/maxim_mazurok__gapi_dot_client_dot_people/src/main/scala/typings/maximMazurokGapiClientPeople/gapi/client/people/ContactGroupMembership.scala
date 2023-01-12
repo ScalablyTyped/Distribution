@@ -23,7 +23,8 @@ object ContactGroupMembership {
     __obj.asInstanceOf[ContactGroupMembership]
   }
   
-  extension [Self <: ContactGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
     

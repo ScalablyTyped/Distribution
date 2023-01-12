@@ -27,7 +27,8 @@ object IngestSetProcessor {
     __obj.asInstanceOf[IngestSetProcessor]
   }
   
-  extension [Self <: IngestSetProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestSetProcessor] (val x: Self) extends AnyVal {
     
     inline def setCopy_from(value: Field): Self = StObject.set(x, "copy_from", value.asInstanceOf[js.Any])
     

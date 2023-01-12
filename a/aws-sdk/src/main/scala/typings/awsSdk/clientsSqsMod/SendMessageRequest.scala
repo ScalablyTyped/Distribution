@@ -48,7 +48,8 @@ object SendMessageRequest {
     __obj.asInstanceOf[SendMessageRequest]
   }
   
-  extension [Self <: SendMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setDelaySeconds(value: Integer): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
     

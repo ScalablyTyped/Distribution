@@ -59,7 +59,8 @@ object ASPxSchedulerViewType {
     __obj.asInstanceOf[ASPxSchedulerViewType]
   }
   
-  extension [Self <: ASPxSchedulerViewType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxSchedulerViewType] (val x: Self) extends AnyVal {
     
     inline def setAgenda(value: String): Self = StObject.set(x, "Agenda", value.asInstanceOf[js.Any])
     

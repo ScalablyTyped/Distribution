@@ -84,7 +84,8 @@ object mod {
       __obj.asInstanceOf[CertificateProperties]
     }
     
-    extension [Self <: CertificateProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateProperties] (val x: Self) extends AnyVal {
       
       inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: Algorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[JWK]
     }
     
-    extension [Self <: JWK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWK] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: Algorithm): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object mod {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String | Buffer | Readable): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object mod {
       __obj.asInstanceOf[Signature]
     }
     
-    extension [Self <: Signature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -332,7 +337,8 @@ object mod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm | Buffer | Readable): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

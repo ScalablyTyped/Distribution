@@ -40,7 +40,8 @@ object UpdateShareMenuOption {
     __obj.asInstanceOf[UpdateShareMenuOption]
   }
   
-  extension [Self <: UpdateShareMenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShareMenuOption] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     

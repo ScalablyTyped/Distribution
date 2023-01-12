@@ -49,7 +49,8 @@ object libUtilsTransformChordMod {
       __obj.asInstanceOf[ChordLayoutOptions]
     }
     
-    extension [Self <: ChordLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: /* node */ Any => Any): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
       
@@ -110,7 +111,8 @@ object libUtilsTransformChordMod {
       __obj.asInstanceOf[ChordLayoutOutputData]
     }
     
-    extension [Self <: ChordLayoutOutputData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChordLayoutOutputData] (val x: Self) extends AnyVal {
       
       inline def setLinks(value: js.Array[OutputLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object libUtilsTransformChordMod {
       __obj.asInstanceOf[OutputLink]
     }
     
-    extension [Self <: OutputLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputLink] (val x: Self) extends AnyVal {
       
       inline def setSource(value: OutputNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object libUtilsTransformChordMod {
       __obj.asInstanceOf[OutputNode]
     }
     
-    extension [Self <: OutputNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputNode] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

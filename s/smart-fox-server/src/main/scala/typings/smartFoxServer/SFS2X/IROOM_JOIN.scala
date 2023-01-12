@@ -16,7 +16,8 @@ object IROOM_JOIN {
     __obj.asInstanceOf[IROOM_JOIN]
   }
   
-  extension [Self <: IROOM_JOIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IROOM_JOIN] (val x: Self) extends AnyVal {
     
     inline def setRoom(value: SFSRoom): Self = StObject.set(x, "room", value.asInstanceOf[js.Any])
   }

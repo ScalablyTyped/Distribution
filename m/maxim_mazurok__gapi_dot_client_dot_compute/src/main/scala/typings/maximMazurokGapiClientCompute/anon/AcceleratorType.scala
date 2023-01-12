@@ -59,7 +59,8 @@ object AcceleratorType {
     __obj.asInstanceOf[AcceleratorType]
   }
   
-  extension [Self <: AcceleratorType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceleratorType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

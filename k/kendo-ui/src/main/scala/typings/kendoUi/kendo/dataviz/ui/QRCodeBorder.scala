@@ -17,7 +17,8 @@ object QRCodeBorder {
     __obj.asInstanceOf[QRCodeBorder]
   }
   
-  extension [Self <: QRCodeBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

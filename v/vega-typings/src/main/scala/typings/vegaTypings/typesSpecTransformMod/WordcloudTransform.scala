@@ -46,7 +46,8 @@ object WordcloudTransform {
     __obj.asInstanceOf[WordcloudTransform]
   }
   
-  extension [Self <: WordcloudTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordcloudTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector7[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

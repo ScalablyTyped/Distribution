@@ -28,7 +28,8 @@ object DeprecatedNavigatorRoute {
     __obj.asInstanceOf[DeprecatedNavigatorRoute]
   }
   
-  extension [Self <: DeprecatedNavigatorRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedNavigatorRoute] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object ConnectionRequestedEventArgs {
     __obj.asInstanceOf[ConnectionRequestedEventArgs]
   }
   
-  extension [Self <: ConnectionRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPeerInformation(value: PeerInformation): Self = StObject.set(x, "peerInformation", value.asInstanceOf[js.Any])
   }

@@ -19,7 +19,8 @@ object CursorPositionParameters {
     __obj.asInstanceOf[CursorPositionParameters]
   }
   
-  extension [Self <: CursorPositionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorPositionParameters] (val x: Self) extends AnyVal {
     
     inline def setCandidateID(value: Double): Self = StObject.set(x, "candidateID", value.asInstanceOf[js.Any])
     

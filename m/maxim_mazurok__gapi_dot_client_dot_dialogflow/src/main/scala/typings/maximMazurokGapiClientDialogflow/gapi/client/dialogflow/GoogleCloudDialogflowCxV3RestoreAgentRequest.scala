@@ -26,7 +26,8 @@ object GoogleCloudDialogflowCxV3RestoreAgentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3RestoreAgentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3RestoreAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3RestoreAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentContent(value: String): Self = StObject.set(x, "agentContent", value.asInstanceOf[js.Any])
     

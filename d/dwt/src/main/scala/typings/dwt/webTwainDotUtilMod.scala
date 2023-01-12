@@ -27,7 +27,8 @@ object webTwainDotUtilMod {
       __obj.asInstanceOf[Authorization]
     }
     
-    extension [Self <: Authorization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
       
       inline def setDetail(value: Any): Self = StObject.set(x, "Detail", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object CheckDNSAvailabilityMessage {
     __obj.asInstanceOf[CheckDNSAvailabilityMessage]
   }
   
-  extension [Self <: CheckDNSAvailabilityMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDNSAvailabilityMessage] (val x: Self) extends AnyVal {
     
     inline def setCNAMEPrefix(value: DNSCnamePrefix): Self = StObject.set(x, "CNAMEPrefix", value.asInstanceOf[js.Any])
   }

@@ -71,7 +71,8 @@ object esStarMod {
       __obj.asInstanceOf[StarProps]
     }
     
-    extension [Self <: StarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StarProps] (val x: Self) extends AnyVal {
       
       inline def setAllowHalf(value: Boolean): Self = StObject.set(x, "allowHalf", value.asInstanceOf[js.Any])
       

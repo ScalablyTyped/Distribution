@@ -17,7 +17,8 @@ object AfterOptions {
     __obj.asInstanceOf[AfterOptions[T]]
   }
   
-  extension [Self <: AfterOptions[?], T /* <: Double | String */](x: Self & AfterOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterOptions[?], T /* <: Double | String */] (val x: Self & AfterOptions[T]) extends AnyVal {
     
     inline def setAfter(value: T): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

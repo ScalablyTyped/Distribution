@@ -19,7 +19,8 @@ object AggregationsSingleMetricAggregateBase {
     __obj.asInstanceOf[AggregationsSingleMetricAggregateBase]
   }
   
-  extension [Self <: AggregationsSingleMetricAggregateBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsSingleMetricAggregateBase] (val x: Self) extends AnyVal {
     
     inline def setValue(value: double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

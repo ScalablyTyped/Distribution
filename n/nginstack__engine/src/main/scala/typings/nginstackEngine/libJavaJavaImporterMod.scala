@@ -37,7 +37,8 @@ object libJavaJavaImporterMod {
       __obj.asInstanceOf[JavaImporter]
     }
     
-    extension [Self <: JavaImporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JavaImporter] (val x: Self) extends AnyVal {
       
       inline def setGetClassesFromPackages(value: String => js.Array[Any]): Self = StObject.set(x, "getClassesFromPackages", js.Any.fromFunction1(value))
       

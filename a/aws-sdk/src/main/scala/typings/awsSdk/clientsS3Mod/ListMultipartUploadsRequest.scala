@@ -50,7 +50,8 @@ object ListMultipartUploadsRequest {
     __obj.asInstanceOf[ListMultipartUploadsRequest]
   }
   
-  extension [Self <: ListMultipartUploadsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMultipartUploadsRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

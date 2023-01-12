@@ -139,7 +139,8 @@ object DirectionsSearchProperties {
     __obj.asInstanceOf[DirectionsSearchProperties]
   }
   
-  extension [Self <: DirectionsSearchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsSearchProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveSourceIndex(value: Double): Self = StObject.set(x, "activeSourceIndex", value.asInstanceOf[js.Any])
     

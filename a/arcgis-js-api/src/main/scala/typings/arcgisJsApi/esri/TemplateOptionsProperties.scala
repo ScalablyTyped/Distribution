@@ -160,7 +160,8 @@ object TemplateOptionsProperties {
     __obj.asInstanceOf[TemplateOptionsProperties]
   }
   
-  extension [Self <: TemplateOptionsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateOptionsProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributionEnabled(value: Boolean): Self = StObject.set(x, "attributionEnabled", value.asInstanceOf[js.Any])
     

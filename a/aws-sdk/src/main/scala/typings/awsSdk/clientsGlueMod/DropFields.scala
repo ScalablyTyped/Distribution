@@ -28,7 +28,8 @@ object DropFields {
     __obj.asInstanceOf[DropFields]
   }
   
-  extension [Self <: DropFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropFields] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: OneInput): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object buildSrcHttpProxyMod {
       __obj.asInstanceOf[ProxyConnectionResult]
     }
     
-    extension [Self <: ProxyConnectionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyConnectionResult] (val x: Self) extends AnyVal {
       
       inline def setRealTarget(value: GrpcUri): Self = StObject.set(x, "realTarget", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object buildSrcHttpProxyMod {
       __obj.asInstanceOf[ProxyMapResult]
     }
     
-    extension [Self <: ProxyMapResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyMapResult] (val x: Self) extends AnyVal {
       
       inline def setExtraOptions(value: ChannelOptions): Self = StObject.set(x, "extraOptions", value.asInstanceOf[js.Any])
       

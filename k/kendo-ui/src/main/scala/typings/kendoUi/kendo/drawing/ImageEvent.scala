@@ -19,7 +19,8 @@ object ImageEvent {
     __obj.asInstanceOf[ImageEvent]
   }
   
-  extension [Self <: ImageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object ReportsConfiguration {
     __obj.asInstanceOf[ReportsConfiguration]
   }
   
-  extension [Self <: ReportsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExposureToConversionEnabled(value: Boolean): Self = StObject.set(x, "exposureToConversionEnabled", value.asInstanceOf[js.Any])
     

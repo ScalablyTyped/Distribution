@@ -25,7 +25,8 @@ object GroundNavigationConstraint {
     __obj.asInstanceOf[GroundNavigationConstraint]
   }
   
-  extension [Self <: GroundNavigationConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundNavigationConstraint] (val x: Self) extends AnyVal {
     
     inline def setType(value: `stay-above` | none_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

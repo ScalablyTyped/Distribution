@@ -143,7 +143,8 @@ object ThemeBadgeProps {
     __obj.asInstanceOf[ThemeBadgeProps]
   }
   
-  extension [Self <: ThemeBadgeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeBadgeProps] (val x: Self) extends AnyVal {
     
     inline def setAirbnbRating(value: PartialSwipeRatingProps): Self = StObject.set(x, "AirbnbRating", value.asInstanceOf[js.Any])
     

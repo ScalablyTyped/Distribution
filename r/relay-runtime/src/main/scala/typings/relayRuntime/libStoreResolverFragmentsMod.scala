@@ -54,7 +54,8 @@ object libStoreResolverFragmentsMod {
       __obj.asInstanceOf[KeyType[TData]]
     }
     
-    extension [Self <: KeyType[?], TData](x: Self & KeyType[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyType[?], TData] (val x: Self & KeyType[TData]) extends AnyVal {
       
       inline def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object libStoreResolverFragmentsMod {
       __obj.asInstanceOf[ResolverContext]
     }
     
-    extension [Self <: ResolverContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolverContext] (val x: Self) extends AnyVal {
       
       inline def setGetDataForResolverFragment(value: (SingularReaderSelector, FragmentType) => Data): Self = StObject.set(x, "getDataForResolverFragment", js.Any.fromFunction2(value))
     }

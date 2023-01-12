@@ -49,7 +49,8 @@ object XPrimitive2DRenderer {
     __obj.asInstanceOf[XPrimitive2DRenderer]
   }
   
-  extension [Self <: XPrimitive2DRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPrimitive2DRenderer] (val x: Self) extends AnyVal {
     
     inline def setRasterize(
       value: (SeqEquiv[XPrimitive2D], SeqEquiv[PropertyValue], Double, Double, RealRectangle2D, Double) => XBitmap

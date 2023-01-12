@@ -33,7 +33,8 @@ object QueryAssistantRequest {
     __obj.asInstanceOf[QueryAssistantRequest]
   }
   
-  extension [Self <: QueryAssistantRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAssistantRequest] (val x: Self) extends AnyVal {
     
     inline def setAssistantId(value: UuidOrArn): Self = StObject.set(x, "assistantId", value.asInstanceOf[js.Any])
     

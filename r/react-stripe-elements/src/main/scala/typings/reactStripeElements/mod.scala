@@ -196,7 +196,8 @@ object mod {
         __obj.asInstanceOf[ElementProps]
       }
       
-      extension [Self <: ElementProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementProps] (val x: Self) extends AnyVal {
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
@@ -243,7 +244,8 @@ object mod {
         __obj.asInstanceOf[InjectOptions]
       }
       
-      extension [Self <: InjectOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectOptions] (val x: Self) extends AnyVal {
         
         inline def setWithRef(value: Boolean): Self = StObject.set(x, "withRef", value.asInstanceOf[js.Any])
         
@@ -264,7 +266,8 @@ object mod {
         __obj.asInstanceOf[InjectedStripeProps]
       }
       
-      extension [Self <: InjectedStripeProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InjectedStripeProps] (val x: Self) extends AnyVal {
         
         inline def setElements(value: typings.stripeV3.stripe.elements.Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
@@ -289,7 +292,8 @@ object mod {
         __obj.asInstanceOf[PaymentRequestButtonElementProps]
       }
       
-      extension [Self <: PaymentRequestButtonElementProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PaymentRequestButtonElementProps] (val x: Self) extends AnyVal {
         
         inline def setOnClick(value: /* event */ Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
         
@@ -401,7 +405,8 @@ object mod {
         __obj.asInstanceOf[StripeProviderOptions]
       }
       
-      extension [Self <: StripeProviderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StripeProviderOptions] (val x: Self) extends AnyVal {
         
         inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
         
@@ -440,7 +445,8 @@ object mod {
         __obj.asInstanceOf[TokenOptions]
       }
       
-      extension [Self <: TokenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TokenOptions] (val x: Self) extends AnyVal {
         
         inline def setType(value: TokenType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         

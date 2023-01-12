@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCheckroomMod extends Shortcut {
       __obj.asInstanceOf[CheckroomProps]
     }
     
-    extension [Self <: CheckroomProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckroomProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

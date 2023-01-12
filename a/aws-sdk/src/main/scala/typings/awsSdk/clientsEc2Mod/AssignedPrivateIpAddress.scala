@@ -18,7 +18,8 @@ object AssignedPrivateIpAddress {
     __obj.asInstanceOf[AssignedPrivateIpAddress]
   }
   
-  extension [Self <: AssignedPrivateIpAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignedPrivateIpAddress] (val x: Self) extends AnyVal {
     
     inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     

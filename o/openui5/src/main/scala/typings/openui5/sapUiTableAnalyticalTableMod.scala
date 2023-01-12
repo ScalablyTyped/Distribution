@@ -648,7 +648,8 @@ object sapUiTableAnalyticalTableMod {
       __obj.asInstanceOf[AnalyticalTableSettings]
     }
     
-    extension [Self <: AnalyticalTableSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticalTableSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoExpandMode(value: String | PropertyBindingInfo): Self = StObject.set(x, "autoExpandMode", value.asInstanceOf[js.Any])
       

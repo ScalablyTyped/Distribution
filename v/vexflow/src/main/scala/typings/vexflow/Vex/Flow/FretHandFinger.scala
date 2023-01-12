@@ -51,7 +51,8 @@ object FretHandFinger {
     __obj.asInstanceOf[FretHandFinger]
   }
   
-  extension [Self <: FretHandFinger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FretHandFinger] (val x: Self) extends AnyVal {
     
     inline def setFinger(value: Double | String): Self = StObject.set(x, "finger", value.asInstanceOf[js.Any])
     

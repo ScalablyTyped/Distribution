@@ -18,7 +18,8 @@ object CreateProtectionResponse {
     __obj.asInstanceOf[CreateProtectionResponse]
   }
   
-  extension [Self <: CreateProtectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProtectionResponse] (val x: Self) extends AnyVal {
     
     inline def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
     

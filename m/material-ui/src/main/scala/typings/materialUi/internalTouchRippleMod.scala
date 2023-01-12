@@ -40,7 +40,8 @@ object internalTouchRippleMod {
       __obj.asInstanceOf[TouchRippleProps]
     }
     
-    extension [Self <: TouchRippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TouchRippleProps] (val x: Self) extends AnyVal {
       
       inline def setAbortOnScroll(value: Boolean): Self = StObject.set(x, "abortOnScroll", value.asInstanceOf[js.Any])
       

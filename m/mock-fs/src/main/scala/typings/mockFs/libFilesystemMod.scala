@@ -159,7 +159,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[DirectoryOptions]
     }
     
-    extension [Self <: DirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       
@@ -295,7 +297,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[FileSystem]
     }
     
-    extension [Self <: FileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystem] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => typings.mockFs.libItemMod.^): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
@@ -318,7 +321,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
@@ -349,7 +353,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCreateCwd(value: Boolean): Self = StObject.set(x, "createCwd", value.asInstanceOf[js.Any])
       
@@ -394,7 +399,8 @@ object libFilesystemMod {
       __obj.asInstanceOf[SymlinkOptions]
     }
     
-    extension [Self <: SymlinkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymlinkOptions] (val x: Self) extends AnyVal {
       
       inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
       

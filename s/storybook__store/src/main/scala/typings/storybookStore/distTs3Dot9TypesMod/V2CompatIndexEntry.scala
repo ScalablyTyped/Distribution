@@ -30,7 +30,8 @@ object V2CompatIndexEntry {
     __obj.asInstanceOf[V2CompatIndexEntry]
   }
   
-  extension [Self <: V2CompatIndexEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: V2CompatIndexEntry] (val x: Self) extends AnyVal {
     
     inline def setKind(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/store.@storybook/store/dist/ts3.9/types.StoryIndexEntry['title'] */ js.Any

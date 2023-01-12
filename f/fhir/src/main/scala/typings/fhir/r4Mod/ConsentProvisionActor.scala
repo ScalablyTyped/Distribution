@@ -25,7 +25,8 @@ object ConsentProvisionActor {
     __obj.asInstanceOf[ConsentProvisionActor]
   }
   
-  extension [Self <: ConsentProvisionActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsentProvisionActor] (val x: Self) extends AnyVal {
     
     inline def setReference(value: Reference): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     

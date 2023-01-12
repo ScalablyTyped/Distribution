@@ -202,7 +202,8 @@ object PickModalBasePropsModalPr {
     __obj.asInstanceOf[PickModalBasePropsModalPr]
   }
   
-  extension [Self <: PickModalBasePropsModalPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickModalBasePropsModalPr] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

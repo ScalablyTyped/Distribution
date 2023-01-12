@@ -56,7 +56,8 @@ object TextContent {
     __obj.asInstanceOf[TextContent]
   }
   
-  extension [Self <: TextContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
     
     inline def setAnchorType(value: TextContentAnchorType): Self = StObject.set(x, "AnchorType", value.asInstanceOf[js.Any])
     

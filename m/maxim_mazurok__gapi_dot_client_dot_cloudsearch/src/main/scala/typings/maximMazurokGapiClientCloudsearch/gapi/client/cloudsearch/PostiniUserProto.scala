@@ -15,7 +15,8 @@ object PostiniUserProto {
     __obj.asInstanceOf[PostiniUserProto]
   }
   
-  extension [Self <: PostiniUserProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostiniUserProto] (val x: Self) extends AnyVal {
     
     inline def setPostiniUserId(value: String): Self = StObject.set(x, "postiniUserId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ResourcePolicy {
     __obj.asInstanceOf[ResourcePolicy]
   }
   
-  extension [Self <: ResourcePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: PolicyDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSocket(value: WebsocketServer): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[WebsocketMessage]
     }
     
-    extension [Self <: WebsocketMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketMessage] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Any): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[WebsocketServerInfo]
     }
     
-    extension [Self <: WebsocketServerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketServerInfo] (val x: Self) extends AnyVal {
       
       inline def setMa(value: Multiaddr_): Self = StObject.set(x, "ma", value.asInstanceOf[js.Any])
       

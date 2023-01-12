@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[FilesRemoved]
     }
     
-    extension [Self <: FilesRemoved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesRemoved] (val x: Self) extends AnyVal {
       
       inline def setFilesRemoved(value: Double): Self = StObject.set(x, "filesRemoved", value.asInstanceOf[js.Any])
       

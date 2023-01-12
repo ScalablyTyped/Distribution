@@ -33,7 +33,8 @@ object AssociationStatus {
     __obj.asInstanceOf[AssociationStatus]
   }
   
-  extension [Self <: AssociationStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociationStatus] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: StatusAdditionalInfo): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

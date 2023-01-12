@@ -74,7 +74,8 @@ object distOutputMod {
       __obj.asInstanceOf[OutputStrategy]
     }
     
-    extension [Self <: OutputStrategy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputStrategy] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object distOutputMod {
       __obj.asInstanceOf[StreamOutputStrategyOptions]
     }
     
-    extension [Self <: StreamOutputStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOutputStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object distOutputMod {
       __obj.asInstanceOf[TTYOutputRedrawerOptions]
     }
     
-    extension [Self <: TTYOutputRedrawerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TTYOutputRedrawerOptions] (val x: Self) extends AnyVal {
       
       inline def setStream(value: WriteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object distOutputMod {
       __obj.asInstanceOf[TTYOutputStrategyOptions]
     }
     
-    extension [Self <: TTYOutputStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TTYOutputStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setStream(value: WriteStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       

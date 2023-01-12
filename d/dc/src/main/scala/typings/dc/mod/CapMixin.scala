@@ -32,7 +32,8 @@ object CapMixin {
     __obj.asInstanceOf[CapMixin[T]]
   }
   
-  extension [Self <: CapMixin[?], T](x: Self & CapMixin[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapMixin[?], T] (val x: Self & CapMixin[T]) extends AnyVal {
     
     inline def setCap(value: IGetSet[Double, T]): Self = StObject.set(x, "cap", value.asInstanceOf[js.Any])
     

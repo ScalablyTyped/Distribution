@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[Weighted]
     }
     
-    extension [Self <: Weighted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Weighted] (val x: Self) extends AnyVal {
       
       inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }

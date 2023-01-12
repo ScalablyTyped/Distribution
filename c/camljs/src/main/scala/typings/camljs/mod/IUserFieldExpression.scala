@@ -46,7 +46,8 @@ object IUserFieldExpression {
     __obj.asInstanceOf[IUserFieldExpression]
   }
   
-  extension [Self <: IUserFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setEqualToCurrentUser(value: () => IExpression): Self = StObject.set(x, "EqualToCurrentUser", js.Any.fromFunction0(value))
     

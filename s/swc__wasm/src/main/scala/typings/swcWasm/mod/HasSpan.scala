@@ -15,7 +15,8 @@ object HasSpan {
     __obj.asInstanceOf[HasSpan]
   }
   
-  extension [Self <: HasSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasSpan] (val x: Self) extends AnyVal {
     
     inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }

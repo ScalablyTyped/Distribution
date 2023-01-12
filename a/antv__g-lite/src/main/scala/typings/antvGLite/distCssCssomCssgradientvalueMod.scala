@@ -61,7 +61,8 @@ object distCssCssomCssgradientvalueMod {
       __obj.asInstanceOf[LinearGradient]
     }
     
-    extension [Self <: LinearGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradient] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object distCssCssomCssgradientvalueMod {
       __obj.asInstanceOf[RadialGradient]
     }
     
-    extension [Self <: RadialGradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadialGradient] (val x: Self) extends AnyVal {
       
       inline def setCx(value: Double): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       

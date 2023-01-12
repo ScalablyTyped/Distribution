@@ -18,7 +18,8 @@ object GetDevicesInPlacementResponse {
     __obj.asInstanceOf[GetDevicesInPlacementResponse]
   }
   
-  extension [Self <: GetDevicesInPlacementResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDevicesInPlacementResponse] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: DeviceMap): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }

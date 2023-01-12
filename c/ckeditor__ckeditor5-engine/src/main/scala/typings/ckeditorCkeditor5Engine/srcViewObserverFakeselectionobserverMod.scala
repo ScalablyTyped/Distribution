@@ -32,7 +32,8 @@ object srcViewObserverFakeselectionobserverMod {
         __obj.asInstanceOf[Observers]
       }
       
-      extension [Self <: Observers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Observers] (val x: Self) extends AnyVal {
         
         inline def setFakeSelectionObserver(value: FakeSelectionObserver): Self = StObject.set(x, "FakeSelectionObserver", value.asInstanceOf[js.Any])
       }

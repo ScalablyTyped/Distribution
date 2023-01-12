@@ -67,7 +67,8 @@ object PartialConfigFile {
     __obj.asInstanceOf[PartialConfigFile]
   }
   
-  extension [Self <: PartialConfigFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConfigFile] (val x: Self) extends AnyVal {
     
     inline def `setFeaturesDotssl-commands`(value: Boolean): Self = StObject.set(x, "features.ssl-commands", value.asInstanceOf[js.Any])
     

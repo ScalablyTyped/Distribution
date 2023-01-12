@@ -19,7 +19,8 @@ object GridViewBatchEditRowDeletingEventArgs {
     __obj.asInstanceOf[GridViewBatchEditRowDeletingEventArgs]
   }
   
-  extension [Self <: GridViewBatchEditRowDeletingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewBatchEditRowDeletingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRowValues(value: Any): Self = StObject.set(x, "rowValues", value.asInstanceOf[js.Any])
     

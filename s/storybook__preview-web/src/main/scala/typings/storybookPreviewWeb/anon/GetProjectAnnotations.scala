@@ -29,7 +29,8 @@ object GetProjectAnnotations {
     __obj.asInstanceOf[GetProjectAnnotations[TFramework]]
   }
   
-  extension [Self <: GetProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & GetProjectAnnotations[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetProjectAnnotations[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & GetProjectAnnotations[TFramework]) extends AnyVal {
     
     inline def setGetProjectAnnotations(value: () => MaybePromise[WebProjectAnnotations[TFramework]]): Self = StObject.set(x, "getProjectAnnotations", js.Any.fromFunction0(value))
     

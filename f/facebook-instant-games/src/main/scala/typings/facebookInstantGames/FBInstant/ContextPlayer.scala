@@ -37,7 +37,8 @@ object ContextPlayer {
     __obj.asInstanceOf[ContextPlayer]
   }
   
-  extension [Self <: ContextPlayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextPlayer] (val x: Self) extends AnyVal {
     
     inline def setGetID(value: () => String): Self = StObject.set(x, "getID", js.Any.fromFunction0(value))
     

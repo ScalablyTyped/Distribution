@@ -469,7 +469,8 @@ object srcDurationMod {
       __obj.asInstanceOf[DurationLikeObject]
     }
     
-    extension [Self <: DurationLikeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationLikeObject] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -536,7 +537,8 @@ object srcDurationMod {
       __obj.asInstanceOf[DurationObjectUnits]
     }
     
-    extension [Self <: DurationObjectUnits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationObjectUnits] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
@@ -591,7 +593,8 @@ object srcDurationMod {
       __obj.asInstanceOf[DurationOptions]
     }
     
-    extension [Self <: DurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DurationOptions] (val x: Self) extends AnyVal {
       
       inline def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
       
@@ -635,7 +638,8 @@ object srcDurationMod {
       __obj.asInstanceOf[ToHumanDurationOptions]
     }
     
-    extension [Self <: ToHumanDurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToHumanDurationOptions] (val x: Self) extends AnyVal {
       
       inline def setListStyle(value: long | short | narrow): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
@@ -688,7 +692,8 @@ object srcDurationMod {
       __obj.asInstanceOf[ToISOTimeDurationOptions]
     }
     
-    extension [Self <: ToISOTimeDurationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToISOTimeDurationOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: ToISOFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

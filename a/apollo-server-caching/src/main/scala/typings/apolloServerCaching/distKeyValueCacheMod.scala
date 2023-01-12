@@ -28,7 +28,8 @@ object distKeyValueCacheMod {
       __obj.asInstanceOf[KeyValueCacheSetOptions]
     }
     
-    extension [Self <: KeyValueCacheSetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyValueCacheSetOptions] (val x: Self) extends AnyVal {
       
       inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       

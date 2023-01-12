@@ -41,7 +41,8 @@ object VolumeInspectInfo {
     __obj.asInstanceOf[VolumeInspectInfo]
   }
   
-  extension [Self <: VolumeInspectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeInspectInfo] (val x: Self) extends AnyVal {
     
     inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     

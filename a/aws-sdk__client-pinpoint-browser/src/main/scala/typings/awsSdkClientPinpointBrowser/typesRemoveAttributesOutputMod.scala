@@ -31,7 +31,8 @@ object typesRemoveAttributesOutputMod {
       __obj.asInstanceOf[RemoveAttributesOutput]
     }
     
-    extension [Self <: RemoveAttributesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveAttributesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

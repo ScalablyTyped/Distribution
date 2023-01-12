@@ -48,7 +48,8 @@ object DatabasePoolType {
     __obj.asInstanceOf[DatabasePoolType]
   }
   
-  extension [Self <: DatabasePoolType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabasePoolType] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: ConnectionRoutineType[Any] => js.Promise[Any]): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     

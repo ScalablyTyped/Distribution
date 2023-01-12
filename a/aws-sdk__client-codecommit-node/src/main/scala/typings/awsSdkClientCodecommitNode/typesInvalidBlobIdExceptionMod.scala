@@ -21,7 +21,8 @@ object typesInvalidBlobIdExceptionMod {
       __obj.asInstanceOf[InvalidBlobIdException]
     }
     
-    extension [Self <: InvalidBlobIdException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidBlobIdException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidBlobIdException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

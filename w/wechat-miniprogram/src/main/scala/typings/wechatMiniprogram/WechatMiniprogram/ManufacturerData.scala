@@ -20,7 +20,8 @@ object ManufacturerData {
     __obj.asInstanceOf[ManufacturerData]
   }
   
-  extension [Self <: ManufacturerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManufacturerData] (val x: Self) extends AnyVal {
     
     inline def setManufacturerId(value: String): Self = StObject.set(x, "manufacturerId", value.asInstanceOf[js.Any])
     

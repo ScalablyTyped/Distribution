@@ -83,7 +83,8 @@ object Aheadby {
     __obj.asInstanceOf[Aheadby]
   }
   
-  extension [Self <: Aheadby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aheadby] (val x: Self) extends AnyVal {
     
     inline def setAhead_by(value: Double): Self = StObject.set(x, "ahead_by", value.asInstanceOf[js.Any])
     

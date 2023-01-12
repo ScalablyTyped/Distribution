@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[TypeofCharacteristic]
     }
     
-    extension [Self <: TypeofCharacteristic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCharacteristic] (val x: Self) extends AnyVal {
       
       inline def setRESULT_ATTR_NOT_LONG(value: Double): Self = StObject.set(x, "RESULT_ATTR_NOT_LONG", value.asInstanceOf[js.Any])
       

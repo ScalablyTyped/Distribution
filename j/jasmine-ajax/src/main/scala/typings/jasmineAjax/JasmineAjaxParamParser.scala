@@ -18,7 +18,8 @@ object JasmineAjaxParamParser {
     __obj.asInstanceOf[JasmineAjaxParamParser]
   }
   
-  extension [Self <: JasmineAjaxParamParser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineAjaxParamParser] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

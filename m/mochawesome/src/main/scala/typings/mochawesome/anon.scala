@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Config): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[OptionsVersion]
     }
     
-    extension [Self <: OptionsVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsVersion] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ReporterOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[PartialReporterOptions]
     }
     
-    extension [Self <: PartialReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

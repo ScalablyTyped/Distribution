@@ -33,7 +33,8 @@ object libFormatsJsonFormatterMod {
       __obj.asInstanceOf[JSONFormatter]
     }
     
-    extension [Self <: JSONFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONFormatter] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Any => Any): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       

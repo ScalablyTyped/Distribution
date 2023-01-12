@@ -28,7 +28,8 @@ object Association {
     __obj.asInstanceOf[Association]
   }
   
-  extension [Self <: Association](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Association] (val x: Self) extends AnyVal {
     
     inline def setAssociationDirection(value: AssociationDirection): Self = StObject.set(x, "associationDirection", value.asInstanceOf[js.Any])
     

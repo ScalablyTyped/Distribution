@@ -33,7 +33,8 @@ object typesInvalidContinuationTokenExceptionMod {
       __obj.asInstanceOf[InvalidContinuationTokenException]
     }
     
-    extension [Self <: InvalidContinuationTokenException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidContinuationTokenException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidContinuationTokenException

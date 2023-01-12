@@ -23,7 +23,8 @@ object PutConfigurationSetSuppressionOptionsRequest {
     __obj.asInstanceOf[PutConfigurationSetSuppressionOptionsRequest]
   }
   
-  extension [Self <: PutConfigurationSetSuppressionOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutConfigurationSetSuppressionOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

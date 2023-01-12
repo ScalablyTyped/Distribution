@@ -69,7 +69,8 @@ object ProtectionController {
     __obj.asInstanceOf[ProtectionController]
   }
   
-  extension [Self <: ProtectionController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionController] (val x: Self) extends AnyVal {
     
     inline def setClearMediaInfoArray(value: () => Unit): Self = StObject.set(x, "clearMediaInfoArray", js.Any.fromFunction0(value))
     

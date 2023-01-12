@@ -55,7 +55,8 @@ object Layersummary {
     __obj.asInstanceOf[Layersummary]
   }
   
-  extension [Self <: Layersummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layersummary] (val x: Self) extends AnyVal {
     
     inline def setAnnotationCount(value: Double): Self = StObject.set(x, "annotationCount", value.asInstanceOf[js.Any])
     

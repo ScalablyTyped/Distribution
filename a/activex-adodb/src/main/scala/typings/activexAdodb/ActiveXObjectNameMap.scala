@@ -55,7 +55,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setADODBDotCommand(value: Command): Self = StObject.set(x, "ADODB.Command", value.asInstanceOf[js.Any])
     

@@ -144,7 +144,8 @@ object TestRun {
     __obj.asInstanceOf[TestRun]
   }
   
-  extension [Self <: TestRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRun] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: ShallowReference): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ContentApplicationjsonExternalurl {
     __obj.asInstanceOf[ContentApplicationjsonExternalurl]
   }
   
-  extension [Self <: ContentApplicationjsonExternalurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonExternalurl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonExternalurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

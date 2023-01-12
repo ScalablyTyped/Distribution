@@ -21,7 +21,8 @@ object PlayReadyLicenseIterable {
     __obj.asInstanceOf[PlayReadyLicenseIterable]
   }
   
-  extension [Self <: PlayReadyLicenseIterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyLicenseIterable] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: () => IIterator[IPlayReadyLicense]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }

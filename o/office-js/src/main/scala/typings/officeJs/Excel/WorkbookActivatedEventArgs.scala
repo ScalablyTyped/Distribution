@@ -29,7 +29,8 @@ object WorkbookActivatedEventArgs {
     __obj.asInstanceOf[WorkbookActivatedEventArgs]
   }
   
-  extension [Self <: WorkbookActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setType(value: WorkbookActivated): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

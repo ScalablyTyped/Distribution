@@ -18,7 +18,8 @@ object GetLoadBalancerTlsPoliciesRequest {
     __obj.asInstanceOf[GetLoadBalancerTlsPoliciesRequest]
   }
   
-  extension [Self <: GetLoadBalancerTlsPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoadBalancerTlsPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

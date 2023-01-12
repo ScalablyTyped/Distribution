@@ -28,7 +28,8 @@ object AdminResetUserPasswordRequest {
     __obj.asInstanceOf[AdminResetUserPasswordRequest]
   }
   
-  extension [Self <: AdminResetUserPasswordRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminResetUserPasswordRequest] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     

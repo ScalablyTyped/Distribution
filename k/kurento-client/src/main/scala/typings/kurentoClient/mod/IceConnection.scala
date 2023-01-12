@@ -19,7 +19,8 @@ object IceConnection {
     __obj.asInstanceOf[IceConnection]
   }
   
-  extension [Self <: IceConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IceConnection] (val x: Self) extends AnyVal {
     
     inline def setComponentId(value: Double): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
     

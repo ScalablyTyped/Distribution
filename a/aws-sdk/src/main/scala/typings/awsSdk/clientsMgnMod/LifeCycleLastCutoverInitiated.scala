@@ -23,7 +23,8 @@ object LifeCycleLastCutoverInitiated {
     __obj.asInstanceOf[LifeCycleLastCutoverInitiated]
   }
   
-  extension [Self <: LifeCycleLastCutoverInitiated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifeCycleLastCutoverInitiated] (val x: Self) extends AnyVal {
     
     inline def setApiCallDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "apiCallDateTime", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Blue]
     }
     
-    extension [Self <: Blue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blue] (val x: Self) extends AnyVal {
       
       inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object anon {
       __obj.asInstanceOf[EmbedId]
     }
     
-    extension [Self <: EmbedId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmbedId] (val x: Self) extends AnyVal {
       
       inline def setEmbedId(value: String): Self = StObject.set(x, "embedId", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -784,7 +787,8 @@ object anon {
       __obj.asInstanceOf[PartialHTMLIFrameElementW]
     }
     
-    extension [Self <: PartialHTMLIFrameElementW](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHTMLIFrameElementW] (val x: Self) extends AnyVal {
       
       inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
       
@@ -2361,7 +2365,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
@@ -2378,7 +2383,8 @@ object anon {
       __obj.asInstanceOf[ResponseId]
     }
     
-    extension [Self <: ResponseId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseId] (val x: Self) extends AnyVal {
       
       inline def setResponseId(value: String): Self = StObject.set(x, "responseId", value.asInstanceOf[js.Any])
     }

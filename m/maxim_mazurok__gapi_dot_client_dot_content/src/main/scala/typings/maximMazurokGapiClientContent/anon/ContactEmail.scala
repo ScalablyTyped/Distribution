@@ -75,7 +75,8 @@ object ContactEmail {
     __obj.asInstanceOf[ContactEmail]
   }
   
-  extension [Self <: ContactEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactEmail] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

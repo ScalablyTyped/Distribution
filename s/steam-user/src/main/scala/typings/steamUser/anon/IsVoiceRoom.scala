@@ -15,7 +15,8 @@ object IsVoiceRoom {
     __obj.asInstanceOf[IsVoiceRoom]
   }
   
-  extension [Self <: IsVoiceRoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsVoiceRoom] (val x: Self) extends AnyVal {
     
     inline def setIsVoiceRoom(value: Boolean): Self = StObject.set(x, "isVoiceRoom", value.asInstanceOf[js.Any])
   }

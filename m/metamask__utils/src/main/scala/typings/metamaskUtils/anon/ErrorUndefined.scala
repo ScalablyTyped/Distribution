@@ -19,7 +19,8 @@ object ErrorUndefined {
     __obj.asInstanceOf[ErrorUndefined]
   }
   
-  extension [Self <: ErrorUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorUndefined] (val x: Self) extends AnyVal {
     
     inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

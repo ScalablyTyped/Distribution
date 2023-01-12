@@ -18,7 +18,8 @@ object ReadsHeaders {
     __obj.asInstanceOf[ReadsHeaders]
   }
   
-  extension [Self <: ReadsHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadsHeaders] (val x: Self) extends AnyVal {
     
     inline def setGetHeader(value: String => js.Array[String] | Null): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
   }

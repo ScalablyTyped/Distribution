@@ -81,7 +81,8 @@ object FlashTextAttrs {
     __obj.asInstanceOf[FlashTextAttrs]
   }
   
-  extension [Self <: FlashTextAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashTextAttrs] (val x: Self) extends AnyVal {
     
     inline def setAliasText(value: Boolean): Self = StObject.set(x, "aliasText", value.asInstanceOf[js.Any])
     

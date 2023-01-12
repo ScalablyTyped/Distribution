@@ -21,7 +21,8 @@ object Geolayerdata {
     __obj.asInstanceOf[Geolayerdata]
   }
   
-  extension [Self <: Geolayerdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geolayerdata] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: Lang): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object typesParamsMod {
       __obj.asInstanceOf[ChannelColor]
     }
     
-    extension [Self <: ChannelColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChannelColor] (val x: Self) extends AnyVal {
       
       inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object typesParamsMod {
       __obj.asInstanceOf[SplitChannelOptions]
     }
     
-    extension [Self <: SplitChannelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitChannelOptions] (val x: Self) extends AnyVal {
       
       inline def setChannelColors(value: NumberDictionary[ChannelColor]): Self = StObject.set(x, "channelColors", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object typesParamsMod {
       __obj.asInstanceOf[WaveSurferParams]
     }
     
-    extension [Self <: WaveSurferParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaveSurferParams] (val x: Self) extends AnyVal {
       
       inline def setAudioContext(value: AudioContext): Self = StObject.set(x, "audioContext", value.asInstanceOf[js.Any])
       

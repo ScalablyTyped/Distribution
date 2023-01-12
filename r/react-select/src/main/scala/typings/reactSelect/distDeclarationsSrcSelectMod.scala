@@ -305,7 +305,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[CategorizedGroup[Option, Group]]
     }
     
-    extension [Self <: CategorizedGroup[?, ?], Option, Group /* <: GroupBase[Option] */](x: Self & (CategorizedGroup[Option, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategorizedGroup[?, ?], Option, Group /* <: GroupBase[Option] */] (val x: Self & (CategorizedGroup[Option, Group])) extends AnyVal {
       
       inline def setData(value: Group): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -379,7 +380,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[CategorizedOption[Option]]
     }
     
-    extension [Self <: CategorizedOption[?], Option](x: Self & CategorizedOption[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategorizedOption[?], Option] (val x: Self & CategorizedOption[Option]) extends AnyVal {
       
       inline def setData(value: Option): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -424,7 +426,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[FormatOptionLabelMeta[Option]]
     }
     
-    extension [Self <: FormatOptionLabelMeta[?], Option](x: Self & FormatOptionLabelMeta[Option]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatOptionLabelMeta[?], Option] (val x: Self & FormatOptionLabelMeta[Option]) extends AnyVal {
       
       inline def setContext(value: FormatOptionLabelContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -745,7 +748,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[Props[Option, IsMulti, Group]]
     }
     
-    extension [Self <: Props[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (Props[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (Props[Option, IsMulti, Group])) extends AnyVal {
       
       inline def `setAria-errormessage`(value: String): Self = StObject.set(x, "aria-errormessage", value.asInstanceOf[js.Any])
       
@@ -1238,7 +1242,8 @@ object distDeclarationsSrcSelectMod {
       __obj.asInstanceOf[State[Option, IsMulti, Group]]
     }
     
-    extension [Self <: State[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (State[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (State[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setAriaSelection(value: typings.reactSelect.distDeclarationsSrcAccessibilityMod.AriaSelection[Option, IsMulti]): Self = StObject.set(x, "ariaSelection", value.asInstanceOf[js.Any])
       

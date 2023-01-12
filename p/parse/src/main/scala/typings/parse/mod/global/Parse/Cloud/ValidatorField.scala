@@ -25,7 +25,8 @@ object ValidatorField {
     __obj.asInstanceOf[ValidatorField]
   }
   
-  extension [Self <: ValidatorField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatorField] (val x: Self) extends AnyVal {
     
     inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
     

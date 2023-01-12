@@ -16,7 +16,8 @@ object ParagraphCollectionData {
     __obj.asInstanceOf[ParagraphCollectionData]
   }
   
-  extension [Self <: ParagraphCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ParagraphData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

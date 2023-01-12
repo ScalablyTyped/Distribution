@@ -43,7 +43,8 @@ object CreateEventIntegrationRequest {
     __obj.asInstanceOf[CreateEventIntegrationRequest]
   }
   
-  extension [Self <: CreateEventIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

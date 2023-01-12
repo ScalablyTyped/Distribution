@@ -34,7 +34,8 @@ object tmovenodesArrayobjectlink {
     __obj.asInstanceOf[tmovenodesArrayobjectlink]
   }
   
-  extension [Self <: tmovenodesArrayobjectlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tmovenodesArrayobjectlink] (val x: Self) extends AnyVal {
     
     inline def setAddToGroup(value: js.Object): Self = StObject.set(x, "addToGroup", value.asInstanceOf[js.Any])
     

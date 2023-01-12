@@ -18,7 +18,8 @@ object ApplicationStatusEventData {
     __obj.asInstanceOf[ApplicationStatusEventData]
   }
   
-  extension [Self <: ApplicationStatusEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationStatusEventData] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

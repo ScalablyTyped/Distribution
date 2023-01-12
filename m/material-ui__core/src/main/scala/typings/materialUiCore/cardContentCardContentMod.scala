@@ -46,7 +46,8 @@ object cardContentCardContentMod extends Shortcut {
       __obj.asInstanceOf[CardContentTypeMap[P, D]]
     }
     
-    extension [Self <: CardContentTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (CardContentTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardContentTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (CardContentTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: CardContentClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

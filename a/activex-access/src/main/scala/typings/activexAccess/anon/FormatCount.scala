@@ -17,7 +17,8 @@ object FormatCount {
     __obj.asInstanceOf[FormatCount]
   }
   
-  extension [Self <: FormatCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatCount] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

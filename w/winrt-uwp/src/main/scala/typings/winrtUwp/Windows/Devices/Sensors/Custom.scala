@@ -68,7 +68,8 @@ object Custom {
       __obj.asInstanceOf[CustomSensorReading]
     }
     
-    extension [Self <: CustomSensorReading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSensorReading] (val x: Self) extends AnyVal {
       
       inline def setProperties(value: IMapView[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object Custom {
       __obj.asInstanceOf[CustomSensorReadingChangedEventArgs]
     }
     
-    extension [Self <: CustomSensorReadingChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setReading(value: CustomSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
     }

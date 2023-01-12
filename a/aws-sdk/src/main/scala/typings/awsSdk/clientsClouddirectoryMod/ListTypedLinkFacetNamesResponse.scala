@@ -23,7 +23,8 @@ object ListTypedLinkFacetNamesResponse {
     __obj.asInstanceOf[ListTypedLinkFacetNamesResponse]
   }
   
-  extension [Self <: ListTypedLinkFacetNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTypedLinkFacetNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setFacetNames(value: TypedLinkNameList): Self = StObject.set(x, "FacetNames", value.asInstanceOf[js.Any])
     

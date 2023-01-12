@@ -40,7 +40,8 @@ object ProjectsDatabasesIndexesGetNamedParameters {
     __obj.asInstanceOf[ProjectsDatabasesIndexesGetNamedParameters]
   }
   
-  extension [Self <: ProjectsDatabasesIndexesGetNamedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsDatabasesIndexesGetNamedParameters] (val x: Self) extends AnyVal {
     
     inline def set$Xgafv(value: ProjectsDatabasesIndexesApiClientXgafv): Self = StObject.set(x, "$Xgafv", value.asInstanceOf[js.Any])
     

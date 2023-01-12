@@ -39,7 +39,8 @@ object IVideo {
     __obj.asInstanceOf[IVideo]
   }
   
-  extension [Self <: IVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVideo] (val x: Self) extends AnyVal {
     
     inline def setGetPosterUrl(value: () => java.lang.String): Self = StObject.set(x, "getPosterUrl", js.Any.fromFunction0(value))
     

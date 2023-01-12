@@ -42,7 +42,8 @@ object Type {
     __obj.asInstanceOf[Type]
   }
   
-  extension [Self <: Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     inline def setPerRequest(value: Boolean): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object BDCAdapterObject {
     __obj.asInstanceOf[BDCAdapterObject]
   }
   
-  extension [Self <: BDCAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BDCAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setEntityName(value: String): Self = StObject.set(x, "EntityName", value.asInstanceOf[js.Any])
     

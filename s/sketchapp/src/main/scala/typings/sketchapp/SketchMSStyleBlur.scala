@@ -28,7 +28,8 @@ object SketchMSStyleBlur {
     __obj.asInstanceOf[SketchMSStyleBlur]
   }
   
-  extension [Self <: SketchMSStyleBlur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStyleBlur] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: X): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

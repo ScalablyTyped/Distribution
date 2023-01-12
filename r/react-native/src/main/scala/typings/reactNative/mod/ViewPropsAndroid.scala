@@ -50,7 +50,8 @@ object ViewPropsAndroid {
     __obj.asInstanceOf[ViewPropsAndroid]
   }
   
-  extension [Self <: ViewPropsAndroid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPropsAndroid] (val x: Self) extends AnyVal {
     
     inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
     

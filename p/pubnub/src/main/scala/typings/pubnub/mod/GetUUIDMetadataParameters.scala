@@ -18,7 +18,8 @@ object GetUUIDMetadataParameters {
     __obj.asInstanceOf[GetUUIDMetadataParameters]
   }
   
-  extension [Self <: GetUUIDMetadataParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUUIDMetadataParameters] (val x: Self) extends AnyVal {
     
     inline def setInclude(value: CustomFields): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     

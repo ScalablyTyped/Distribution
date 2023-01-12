@@ -1220,7 +1220,8 @@ object ObsoleteProperties {
     __obj.asInstanceOf[ObsoleteProperties[TLength, TTime]]
   }
   
-  extension [Self <: ObsoleteProperties[?, ?], TLength, TTime](x: Self & (ObsoleteProperties[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObsoleteProperties[?, ?], TLength, TTime] (val x: Self & (ObsoleteProperties[TLength, TTime])) extends AnyVal {
     
     inline def setAzimuth(value: Azimuth): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DialogflowV1MessageGooglePayload {
     __obj.asInstanceOf[DialogflowV1MessageGooglePayload]
   }
   
-  extension [Self <: DialogflowV1MessageGooglePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageGooglePayload] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

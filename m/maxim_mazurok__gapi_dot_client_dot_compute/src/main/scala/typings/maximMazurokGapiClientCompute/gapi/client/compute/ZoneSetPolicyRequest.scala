@@ -25,7 +25,8 @@ object ZoneSetPolicyRequest {
     __obj.asInstanceOf[ZoneSetPolicyRequest]
   }
   
-  extension [Self <: ZoneSetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneSetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setBindings(value: js.Array[Binding]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     

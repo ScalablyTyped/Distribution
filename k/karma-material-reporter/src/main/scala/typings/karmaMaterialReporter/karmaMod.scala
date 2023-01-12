@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setMaterialReporter(value: MaterialReporterOptions): Self = StObject.set(x, "materialReporter", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object karmaMod {
       __obj.asInstanceOf[MaterialReporterOptions]
     }
     
-    extension [Self <: MaterialReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       

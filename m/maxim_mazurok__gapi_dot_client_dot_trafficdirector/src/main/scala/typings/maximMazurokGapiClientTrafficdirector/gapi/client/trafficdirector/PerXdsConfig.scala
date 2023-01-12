@@ -23,7 +23,8 @@ object PerXdsConfig {
     __obj.asInstanceOf[PerXdsConfig]
   }
   
-  extension [Self <: PerXdsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerXdsConfig] (val x: Self) extends AnyVal {
     
     inline def setClusterConfig(value: ClustersConfigDump): Self = StObject.set(x, "clusterConfig", value.asInstanceOf[js.Any])
     

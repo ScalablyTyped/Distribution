@@ -42,7 +42,8 @@ object ProfileAsCsvParams {
     __obj.asInstanceOf[ProfileAsCsvParams]
   }
   
-  extension [Self <: ProfileAsCsvParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileAsCsvParams] (val x: Self) extends AnyVal {
     
     inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     

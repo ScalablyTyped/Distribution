@@ -40,7 +40,8 @@ object GoogleMapsUnityClientInfo {
     __obj.asInstanceOf[GoogleMapsUnityClientInfo]
   }
   
-  extension [Self <: GoogleMapsUnityClientInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsUnityClientInfo] (val x: Self) extends AnyVal {
     
     inline def setApiClient(value: String): Self = StObject.set(x, "apiClient", value.asInstanceOf[js.Any])
     

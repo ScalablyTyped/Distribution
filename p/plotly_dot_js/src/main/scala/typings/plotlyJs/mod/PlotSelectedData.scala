@@ -32,7 +32,8 @@ object PlotSelectedData {
     __obj.asInstanceOf[PlotSelectedData]
   }
   
-  extension [Self <: PlotSelectedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSelectedData] (val x: Self) extends AnyVal {
     
     inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     

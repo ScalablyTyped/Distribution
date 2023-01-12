@@ -25,7 +25,8 @@ object Enterprise {
     __obj.asInstanceOf[Enterprise]
   }
   
-  extension [Self <: Enterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enterprise] (val x: Self) extends AnyVal {
     
     inline def setAdministrator(value: js.Array[Administrator]): Self = StObject.set(x, "administrator", value.asInstanceOf[js.Any])
     

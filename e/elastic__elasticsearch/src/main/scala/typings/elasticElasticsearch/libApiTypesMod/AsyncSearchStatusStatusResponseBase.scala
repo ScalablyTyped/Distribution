@@ -25,7 +25,8 @@ object AsyncSearchStatusStatusResponseBase {
     __obj.asInstanceOf[AsyncSearchStatusStatusResponseBase]
   }
   
-  extension [Self <: AsyncSearchStatusStatusResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchStatusStatusResponseBase] (val x: Self) extends AnyVal {
     
     inline def setCompletion_status(value: integer): Self = StObject.set(x, "completion_status", value.asInstanceOf[js.Any])
     

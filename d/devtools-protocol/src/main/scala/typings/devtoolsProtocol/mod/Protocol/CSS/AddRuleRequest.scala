@@ -28,7 +28,8 @@ object AddRuleRequest {
     __obj.asInstanceOf[AddRuleRequest]
   }
   
-  extension [Self <: AddRuleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRuleRequest] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: SourceRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Setup {
     __obj.asInstanceOf[Setup[TTarget, TData]]
   }
   
-  extension [Self <: Setup[?, ?], TTarget, TData](x: Self & (Setup[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Setup[?, ?], TTarget, TData] (val x: Self & (Setup[TTarget, TData])) extends AnyVal {
     
     inline def setSetup(value: (TData, String, EventHandler[TTarget, TData]) => Unit | `false`): Self = StObject.set(x, "setup", js.Any.fromFunction3(value))
   }

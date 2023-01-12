@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[DeepEqualOptions[T1, T2]]
     }
     
-    extension [Self <: DeepEqualOptions[?, ?], T1, T2](x: Self & (DeepEqualOptions[T1, T2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepEqualOptions[?, ?], T1, T2] (val x: Self & (DeepEqualOptions[T1, T2])) extends AnyVal {
       
       inline def setComparator(value: (/* leftHandOperand */ T1, /* rightHandOperand */ T2) => Boolean | Null): Self = StObject.set(x, "comparator", js.Any.fromFunction2(value))
       

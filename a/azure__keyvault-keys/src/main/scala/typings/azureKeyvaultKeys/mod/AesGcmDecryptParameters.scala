@@ -45,7 +45,8 @@ object AesGcmDecryptParameters {
     __obj.asInstanceOf[AesGcmDecryptParameters]
   }
   
-  extension [Self <: AesGcmDecryptParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesGcmDecryptParameters] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthenticatedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     

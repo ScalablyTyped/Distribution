@@ -73,7 +73,8 @@ object IParsedTypeCollection {
     __obj.asInstanceOf[IParsedTypeCollection]
   }
   
-  extension [Self <: IParsedTypeCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParsedTypeCollection] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IParsedType => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

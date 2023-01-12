@@ -40,7 +40,8 @@ object Webproperties {
     __obj.asInstanceOf[Webproperties]
   }
   
-  extension [Self <: Webproperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Webproperties] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Webproperty]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

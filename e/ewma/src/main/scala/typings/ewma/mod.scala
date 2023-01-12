@@ -42,7 +42,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ClockLike]
     }
     
-    extension [Self <: ClockLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClockLike] (val x: Self) extends AnyVal {
       
       inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     }
@@ -63,7 +64,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EwmaClass]
     }
     
-    extension [Self <: EwmaClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EwmaClass] (val x: Self) extends AnyVal {
       
       inline def setInsert(value: Double => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       

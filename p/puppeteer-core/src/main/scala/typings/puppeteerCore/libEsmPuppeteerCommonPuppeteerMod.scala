@@ -96,7 +96,8 @@ object libEsmPuppeteerCommonPuppeteerMod {
       __obj.asInstanceOf[CommonPuppeteerSettings]
     }
     
-    extension [Self <: CommonPuppeteerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonPuppeteerSettings] (val x: Self) extends AnyVal {
       
       inline def setIsPuppeteerCore(value: Boolean): Self = StObject.set(x, "isPuppeteerCore", value.asInstanceOf[js.Any])
     }
@@ -119,7 +120,8 @@ object libEsmPuppeteerCommonPuppeteerMod {
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    extension [Self <: ConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowserURL(value: String): Self = StObject.set(x, "browserURL", value.asInstanceOf[js.Any])
       

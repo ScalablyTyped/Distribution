@@ -23,7 +23,8 @@ object PipelineExperimentConfig {
     __obj.asInstanceOf[PipelineExperimentConfig]
   }
   
-  extension [Self <: PipelineExperimentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineExperimentConfig] (val x: Self) extends AnyVal {
     
     inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     

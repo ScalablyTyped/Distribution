@@ -17,7 +17,8 @@ object ScrollSize {
     __obj.asInstanceOf[ScrollSize]
   }
   
-  extension [Self <: ScrollSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollSize] (val x: Self) extends AnyVal {
     
     inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object ParseRemoteConfigBase {
     __obj.asInstanceOf[ParseRemoteConfigBase[T]]
   }
   
-  extension [Self <: ParseRemoteConfigBase[?], T](x: Self & ParseRemoteConfigBase[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseRemoteConfigBase[?], T] (val x: Self & ParseRemoteConfigBase[T]) extends AnyVal {
     
     inline def setDownload(value: `true`): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

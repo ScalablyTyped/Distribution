@@ -28,7 +28,8 @@ object UpdateTableColumnPropertiesRequest {
     __obj.asInstanceOf[UpdateTableColumnPropertiesRequest]
   }
   
-  extension [Self <: UpdateTableColumnPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableColumnPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setColumnIndices(value: js.Array[Double]): Self = StObject.set(x, "columnIndices", value.asInstanceOf[js.Any])
     

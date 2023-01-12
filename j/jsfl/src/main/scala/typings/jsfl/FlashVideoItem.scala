@@ -32,7 +32,8 @@ object FlashVideoItem {
     __obj.asInstanceOf[FlashVideoItem]
   }
   
-  extension [Self <: FlashVideoItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashVideoItem] (val x: Self) extends AnyVal {
     
     inline def setExportToFLV(value: String => Boolean): Self = StObject.set(x, "exportToFLV", js.Any.fromFunction1(value))
     

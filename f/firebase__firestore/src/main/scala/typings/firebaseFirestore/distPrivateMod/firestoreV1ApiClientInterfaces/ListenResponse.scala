@@ -23,7 +23,8 @@ object ListenResponse {
     __obj.asInstanceOf[ListenResponse]
   }
   
-  extension [Self <: ListenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenResponse] (val x: Self) extends AnyVal {
     
     inline def setDocumentChange(value: DocumentChange): Self = StObject.set(x, "documentChange", value.asInstanceOf[js.Any])
     

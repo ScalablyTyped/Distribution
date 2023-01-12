@@ -54,7 +54,8 @@ object SpatialReferenceInfo {
     __obj.asInstanceOf[SpatialReferenceInfo]
   }
   
-  extension [Self <: SpatialReferenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialReferenceInfo] (val x: Self) extends AnyVal {
     
     inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
     

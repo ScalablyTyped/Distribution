@@ -28,7 +28,8 @@ object LabelSeriesProps {
     __obj.asInstanceOf[LabelSeriesProps]
   }
   
-  extension [Self <: LabelSeriesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelSeriesProps] (val x: Self) extends AnyVal {
     
     inline def setAllowOffsetToBeReversed(value: Boolean): Self = StObject.set(x, "allowOffsetToBeReversed", value.asInstanceOf[js.Any])
     

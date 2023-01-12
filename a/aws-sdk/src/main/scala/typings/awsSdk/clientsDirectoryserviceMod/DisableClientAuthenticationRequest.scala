@@ -23,7 +23,8 @@ object DisableClientAuthenticationRequest {
     __obj.asInstanceOf[DisableClientAuthenticationRequest]
   }
   
-  extension [Self <: DisableClientAuthenticationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableClientAuthenticationRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object BaselineColor {
     __obj.asInstanceOf[BaselineColor]
   }
   
-  extension [Self <: BaselineColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineColor] (val x: Self) extends AnyVal {
     
     inline def setBaselineColor(value: inherit | auto): Self = StObject.set(x, "baselineColor", value.asInstanceOf[js.Any])
     

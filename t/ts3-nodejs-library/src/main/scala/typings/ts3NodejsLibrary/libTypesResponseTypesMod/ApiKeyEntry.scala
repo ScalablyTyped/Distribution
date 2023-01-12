@@ -42,7 +42,8 @@ object ApiKeyEntry {
     __obj.asInstanceOf[ApiKeyEntry]
   }
   
-  extension [Self <: ApiKeyEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiKeyEntry] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: Double): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

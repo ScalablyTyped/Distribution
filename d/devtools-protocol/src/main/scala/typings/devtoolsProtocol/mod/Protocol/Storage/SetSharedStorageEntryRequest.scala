@@ -25,7 +25,8 @@ object SetSharedStorageEntryRequest {
     __obj.asInstanceOf[SetSharedStorageEntryRequest]
   }
   
-  extension [Self <: SetSharedStorageEntryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSharedStorageEntryRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfPresent(value: Boolean): Self = StObject.set(x, "ignoreIfPresent", value.asInstanceOf[js.Any])
     

@@ -338,7 +338,8 @@ object anon {
       __obj.asInstanceOf[RecordES2015BuiltinsES201]
     }
     
-    extension [Self <: RecordES2015BuiltinsES201](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2015BuiltinsES201] (val x: Self) extends AnyVal {
       
       inline def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
       
@@ -766,7 +767,8 @@ object anon {
       __obj.asInstanceOf[RecordES2015Builtinsboole]
     }
     
-    extension [Self <: RecordES2015Builtinsboole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2015Builtinsboole] (val x: Self) extends AnyVal {
       
       inline def setArrayDotfrom(value: Boolean): Self = StObject.set(x, "Array.from", value.asInstanceOf[js.Any])
       
@@ -1008,7 +1010,8 @@ object anon {
       __obj.asInstanceOf[RecordES2015SyntaxES2016S]
     }
     
-    extension [Self <: RecordES2015SyntaxES2016S](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2015SyntaxES2016S] (val x: Self) extends AnyVal {
       
       inline def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
       
@@ -1162,7 +1165,8 @@ object anon {
       __obj.asInstanceOf[RecordES2015Syntaxboolean]
     }
     
-    extension [Self <: RecordES2015Syntaxboolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2015Syntaxboolean] (val x: Self) extends AnyVal {
       
       inline def `setArrow function`(value: Boolean): Self = StObject.set(x, "Arrow function", value.asInstanceOf[js.Any])
       
@@ -1228,7 +1232,8 @@ object anon {
       __obj.asInstanceOf[RecordES2016Builtinsboole]
     }
     
-    extension [Self <: RecordES2016Builtinsboole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2016Builtinsboole] (val x: Self) extends AnyVal {
       
       inline def setArrayDotprototypeDotincludes(value: Boolean): Self = StObject.set(x, "Array.prototype.includes", value.asInstanceOf[js.Any])
       
@@ -1256,7 +1261,8 @@ object anon {
       __obj.asInstanceOf[RecordES2016Syntaxboolean]
     }
     
-    extension [Self <: RecordES2016Syntaxboolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2016Syntaxboolean] (val x: Self) extends AnyVal {
       
       inline def `setExponentiation operator`(value: Boolean): Self = StObject.set(x, "Exponentiation operator", value.asInstanceOf[js.Any])
       
@@ -1311,7 +1317,8 @@ object anon {
       __obj.asInstanceOf[RecordES2017Builtinsboole]
     }
     
-    extension [Self <: RecordES2017Builtinsboole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2017Builtinsboole] (val x: Self) extends AnyVal {
       
       inline def setAtomics(value: Boolean): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
       
@@ -1350,7 +1357,8 @@ object anon {
       __obj.asInstanceOf[RecordES2017Syntaxboolean]
     }
     
-    extension [Self <: RecordES2017Syntaxboolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordES2017Syntaxboolean] (val x: Self) extends AnyVal {
       
       inline def setAsyncSlashawait(value: Boolean): Self = StObject.set(x, "async/await", value.asInstanceOf[js.Any])
       

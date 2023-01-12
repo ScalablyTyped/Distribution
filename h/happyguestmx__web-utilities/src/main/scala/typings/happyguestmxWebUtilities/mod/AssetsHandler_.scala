@@ -26,7 +26,8 @@ object AssetsHandler_ {
     __obj.asInstanceOf[AssetsHandler_]
   }
   
-  extension [Self <: AssetsHandler_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetsHandler_] (val x: Self) extends AnyVal {
     
     inline def setAmazonS3Uri(value: String => js.Promise[AmazonS3UriOutput]): Self = StObject.set(x, "amazonS3Uri", js.Any.fromFunction1(value))
     

@@ -34,7 +34,8 @@ object PartialInternationalizati {
     __obj.asInstanceOf[PartialInternationalizati]
   }
   
-  extension [Self <: PartialInternationalizati](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialInternationalizati] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

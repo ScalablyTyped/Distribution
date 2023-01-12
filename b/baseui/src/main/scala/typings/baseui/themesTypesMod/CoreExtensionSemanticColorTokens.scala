@@ -119,7 +119,8 @@ object CoreExtensionSemanticColorTokens {
     __obj.asInstanceOf[CoreExtensionSemanticColorTokens]
   }
   
-  extension [Self <: CoreExtensionSemanticColorTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreExtensionSemanticColorTokens] (val x: Self) extends AnyVal {
     
     inline def setBackgroundAccent(value: String): Self = StObject.set(x, "backgroundAccent", value.asInstanceOf[js.Any])
     

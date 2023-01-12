@@ -55,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Alias]
     }
     
-    extension [Self <: Alias](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Boolean): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -143,7 +145,8 @@ object anon {
       __obj.asInstanceOf[All]
     }
     
-    extension [Self <: All](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All] (val x: Self) extends AnyVal {
       
       inline def setAll(value: String | StyleSpec): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -172,7 +175,8 @@ object anon {
       __obj.asInstanceOf[Except]
     }
     
-    extension [Self <: Except](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Except] (val x: Self) extends AnyVal {
       
       inline def setExcept(value: js.RegExp): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object anon {
       __obj.asInstanceOf[Fallback]
     }
     
-    extension [Self <: Fallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fallback] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     }
@@ -218,7 +223,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -248,7 +254,8 @@ object anon {
       __obj.asInstanceOf[LanguageData]
     }
     
-    extension [Self <: LanguageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageData] (val x: Self) extends AnyVal {
       
       inline def setLanguageData(value: StringDictionary[Any]): Self = StObject.set(x, "languageData", value.asInstanceOf[js.Any])
       
@@ -292,7 +299,8 @@ object anon {
       __obj.asInstanceOf[OverrideIndentation]
     }
     
-    extension [Self <: OverrideIndentation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverrideIndentation] (val x: Self) extends AnyVal {
       
       inline def setOverrideIndentation(value: /* pos */ Double => Double): Self = StObject.set(x, "overrideIndentation", js.Any.fromFunction1(value))
       
@@ -321,7 +329,8 @@ object anon {
       __obj.asInstanceOf[To]
     }
     
-    extension [Self <: To](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: To] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  extension [Self <: Element](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     inline def setComputedStyleMap(value: () => StylePropertyMapReadOnly): Self = StObject.set(x, "computedStyleMap", js.Any.fromFunction0(value))
   }

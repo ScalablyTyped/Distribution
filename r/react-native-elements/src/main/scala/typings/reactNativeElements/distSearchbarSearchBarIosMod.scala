@@ -107,7 +107,8 @@ object distSearchbarSearchBarIosMod {
       __obj.asInstanceOf[SearchBarState]
     }
     
-    extension [Self <: SearchBarState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarState] (val x: Self) extends AnyVal {
       
       inline def setCancelButtonWidth(value: Double): Self = StObject.set(x, "cancelButtonWidth", value.asInstanceOf[js.Any])
       

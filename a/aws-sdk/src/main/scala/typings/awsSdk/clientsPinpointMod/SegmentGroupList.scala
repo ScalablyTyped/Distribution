@@ -23,7 +23,8 @@ object SegmentGroupList {
     __obj.asInstanceOf[SegmentGroupList]
   }
   
-  extension [Self <: SegmentGroupList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentGroupList] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: ListOfSegmentGroup): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

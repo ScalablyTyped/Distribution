@@ -26,7 +26,8 @@ object RepoSecretname {
     __obj.asInstanceOf[RepoSecretname]
   }
   
-  extension [Self <: RepoSecretname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoSecretname] (val x: Self) extends AnyVal {
     
     inline def setOwner(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any

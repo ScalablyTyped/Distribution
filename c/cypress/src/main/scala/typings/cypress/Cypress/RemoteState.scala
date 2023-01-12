@@ -36,7 +36,8 @@ object RemoteState {
     __obj.asInstanceOf[RemoteState]
   }
   
-  extension [Self <: RemoteState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteState] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

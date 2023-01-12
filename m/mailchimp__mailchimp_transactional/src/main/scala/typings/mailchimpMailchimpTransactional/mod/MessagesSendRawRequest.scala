@@ -55,7 +55,8 @@ object MessagesSendRawRequest {
     __obj.asInstanceOf[MessagesSendRawRequest]
   }
   
-  extension [Self <: MessagesSendRawRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesSendRawRequest] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

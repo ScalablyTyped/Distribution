@@ -19,7 +19,8 @@ object GitSourceContext {
     __obj.asInstanceOf[GitSourceContext]
   }
   
-  extension [Self <: GitSourceContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitSourceContext] (val x: Self) extends AnyVal {
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     

@@ -1075,7 +1075,8 @@ object SVGPropsSVGRadialGradient {
     __obj.asInstanceOf[SVGPropsSVGRadialGradient]
   }
   
-  extension [Self <: SVGPropsSVGRadialGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPropsSVGRadialGradient] (val x: Self) extends AnyVal {
     
     inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
     

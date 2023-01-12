@@ -52,7 +52,8 @@ object PackageDetails {
     __obj.asInstanceOf[PackageDetails]
   }
   
-  extension [Self <: PackageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailablePackageVersion(value: PackageVersion): Self = StObject.set(x, "AvailablePackageVersion", value.asInstanceOf[js.Any])
     

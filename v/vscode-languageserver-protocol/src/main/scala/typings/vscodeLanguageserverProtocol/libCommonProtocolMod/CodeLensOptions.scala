@@ -20,7 +20,8 @@ object CodeLensOptions {
     __obj.asInstanceOf[CodeLensOptions]
   }
   
-  extension [Self <: CodeLensOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensOptions] (val x: Self) extends AnyVal {
     
     inline def setResolveProvider(value: Boolean): Self = StObject.set(x, "resolveProvider", value.asInstanceOf[js.Any])
     

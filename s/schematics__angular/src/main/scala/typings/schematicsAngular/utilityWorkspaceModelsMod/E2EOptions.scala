@@ -17,7 +17,8 @@ object E2EOptions {
     __obj.asInstanceOf[E2EOptions]
   }
   
-  extension [Self <: E2EOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: E2EOptions] (val x: Self) extends AnyVal {
     
     inline def setDevServerTarget(value: String): Self = StObject.set(x, "devServerTarget", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TerrainSpecification {
     __obj.asInstanceOf[TerrainSpecification]
   }
   
-  extension [Self <: TerrainSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerrainSpecification] (val x: Self) extends AnyVal {
     
     inline def setExaggeration(value: PropertyValueSpecification[Double]): Self = StObject.set(x, "exaggeration", value.asInstanceOf[js.Any])
     

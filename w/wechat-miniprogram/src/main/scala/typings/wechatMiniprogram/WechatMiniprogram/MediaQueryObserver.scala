@@ -28,7 +28,8 @@ object MediaQueryObserver {
     __obj.asInstanceOf[MediaQueryObserver]
   }
   
-  extension [Self <: MediaQueryObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryObserver] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     

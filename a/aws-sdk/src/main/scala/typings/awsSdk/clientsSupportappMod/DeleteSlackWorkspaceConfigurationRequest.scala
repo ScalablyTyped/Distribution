@@ -18,7 +18,8 @@ object DeleteSlackWorkspaceConfigurationRequest {
     __obj.asInstanceOf[DeleteSlackWorkspaceConfigurationRequest]
   }
   
-  extension [Self <: DeleteSlackWorkspaceConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSlackWorkspaceConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setTeamId(value: teamId): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
   }

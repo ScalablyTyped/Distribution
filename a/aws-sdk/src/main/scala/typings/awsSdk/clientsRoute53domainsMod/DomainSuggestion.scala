@@ -23,7 +23,8 @@ object DomainSuggestion {
     __obj.asInstanceOf[DomainSuggestion]
   }
   
-  extension [Self <: DomainSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainSuggestion] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: String): Self = StObject.set(x, "Availability", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object RelatedAsset {
     __obj.asInstanceOf[RelatedAsset]
   }
   
-  extension [Self <: RelatedAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedAsset] (val x: Self) extends AnyVal {
     
     inline def setAncestors(value: js.Array[String]): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     

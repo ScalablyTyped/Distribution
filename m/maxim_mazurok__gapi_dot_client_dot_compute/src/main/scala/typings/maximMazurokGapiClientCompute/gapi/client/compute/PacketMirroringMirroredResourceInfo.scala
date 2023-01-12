@@ -28,7 +28,8 @@ object PacketMirroringMirroredResourceInfo {
     __obj.asInstanceOf[PacketMirroringMirroredResourceInfo]
   }
   
-  extension [Self <: PacketMirroringMirroredResourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PacketMirroringMirroredResourceInfo] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: js.Array[PacketMirroringMirroredResourceInfoInstanceInfo]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

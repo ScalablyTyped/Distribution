@@ -23,7 +23,8 @@ object EbsBlockDeviceConfig {
     __obj.asInstanceOf[EbsBlockDeviceConfig]
   }
   
-  extension [Self <: EbsBlockDeviceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsBlockDeviceConfig] (val x: Self) extends AnyVal {
     
     inline def setVolumeSpecification(value: VolumeSpecification): Self = StObject.set(x, "VolumeSpecification", value.asInstanceOf[js.Any])
     

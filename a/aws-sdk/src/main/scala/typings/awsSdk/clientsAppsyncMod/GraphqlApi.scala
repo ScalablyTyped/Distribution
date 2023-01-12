@@ -78,7 +78,8 @@ object GraphqlApi {
     __obj.asInstanceOf[GraphqlApi]
   }
   
-  extension [Self <: GraphqlApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphqlApi] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthenticationProviders(value: AdditionalAuthenticationProviders): Self = StObject.set(x, "additionalAuthenticationProviders", value.asInstanceOf[js.Any])
     

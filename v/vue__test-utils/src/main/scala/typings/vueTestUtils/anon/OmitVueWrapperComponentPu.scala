@@ -303,7 +303,8 @@ object OmitVueWrapperComponentPu {
     __obj.asInstanceOf[OmitVueWrapperComponentPu]
   }
   
-  extension [Self <: OmitVueWrapperComponentPu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitVueWrapperComponentPu] (val x: Self) extends AnyVal {
     
     inline def setAttachNativeEventListener(value: Any): Self = StObject.set(x, "attachNativeEventListener", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object RecoveryStats {
     __obj.asInstanceOf[RecoveryStats]
   }
   
-  extension [Self <: RecoveryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent_as_source(value: long): Self = StObject.set(x, "current_as_source", value.asInstanceOf[js.Any])
     

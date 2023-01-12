@@ -39,7 +39,8 @@ object CreateParcelRequest {
     __obj.asInstanceOf[CreateParcelRequest]
   }
   
-  extension [Self <: CreateParcelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParcelRequest] (val x: Self) extends AnyVal {
     
     inline def setDistance_unit(value: DistanceUnit): Self = StObject.set(x, "distance_unit", value.asInstanceOf[js.Any])
     

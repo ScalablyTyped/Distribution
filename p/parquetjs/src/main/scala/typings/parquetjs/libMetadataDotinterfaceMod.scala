@@ -37,7 +37,8 @@ object libMetadataDotinterfaceMod {
       __obj.asInstanceOf[MetadataInterface]
     }
     
-    extension [Self <: MetadataInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataInterface] (val x: Self) extends AnyVal {
       
       inline def setCreated_by(value: String): Self = StObject.set(x, "created_by", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libMetadataDotinterfaceMod {
       __obj.asInstanceOf[MetadataRowGroupsColumnsInterface]
     }
     
-    extension [Self <: MetadataRowGroupsColumnsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataRowGroupsColumnsInterface] (val x: Self) extends AnyVal {
       
       inline def setFile_offset(value: ^): Self = StObject.set(x, "file_offset", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object libMetadataDotinterfaceMod {
       __obj.asInstanceOf[MetadataRowGroupsInterface]
     }
     
-    extension [Self <: MetadataRowGroupsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataRowGroupsInterface] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[MetadataRowGroupsColumnsInterface]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object libMetadataDotinterfaceMod {
       __obj.asInstanceOf[MetadataSchemaInterface]
     }
     
-    extension [Self <: MetadataSchemaInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataSchemaInterface] (val x: Self) extends AnyVal {
       
       inline def setConverted_type(value: String): Self = StObject.set(x, "converted_type", value.asInstanceOf[js.Any])
       

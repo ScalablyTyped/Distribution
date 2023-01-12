@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[FlipMove]
     }
     
-    extension [Self <: FlipMove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipMove] (val x: Self) extends AnyVal {
       
       inline def setFlipMove(value: Boolean): Self = StObject.set(x, "flipMove", value.asInstanceOf[js.Any])
     }
@@ -89,7 +92,8 @@ object anon {
       __obj.asInstanceOf[PartialState]
     }
     
-    extension [Self <: PartialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
       
       inline def setDisplayedChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "displayedChildren", value.asInstanceOf[js.Any])
       

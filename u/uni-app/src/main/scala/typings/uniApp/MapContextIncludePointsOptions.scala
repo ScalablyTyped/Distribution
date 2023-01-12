@@ -23,7 +23,8 @@ object MapContextIncludePointsOptions {
     __obj.asInstanceOf[MapContextIncludePointsOptions]
   }
   
-  extension [Self <: MapContextIncludePointsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextIncludePointsOptions] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

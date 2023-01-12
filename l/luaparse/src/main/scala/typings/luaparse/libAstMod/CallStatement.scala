@@ -19,7 +19,8 @@ object CallStatement {
     __obj.asInstanceOf[CallStatement]
   }
   
-  extension [Self <: CallStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallStatement] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: CallExpression | StringCallExpression | TableCallExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }

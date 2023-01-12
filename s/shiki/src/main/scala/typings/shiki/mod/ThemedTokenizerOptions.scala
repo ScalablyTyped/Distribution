@@ -19,7 +19,8 @@ object ThemedTokenizerOptions {
     __obj.asInstanceOf[ThemedTokenizerOptions]
   }
   
-  extension [Self <: ThemedTokenizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemedTokenizerOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeExplanation(value: Boolean): Self = StObject.set(x, "includeExplanation", value.asInstanceOf[js.Any])
     

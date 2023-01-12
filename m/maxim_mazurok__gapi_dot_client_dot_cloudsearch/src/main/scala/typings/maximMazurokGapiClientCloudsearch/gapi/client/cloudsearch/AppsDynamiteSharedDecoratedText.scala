@@ -43,7 +43,8 @@ object AppsDynamiteSharedDecoratedText {
     __obj.asInstanceOf[AppsDynamiteSharedDecoratedText]
   }
   
-  extension [Self <: AppsDynamiteSharedDecoratedText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedDecoratedText] (val x: Self) extends AnyVal {
     
     inline def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
     

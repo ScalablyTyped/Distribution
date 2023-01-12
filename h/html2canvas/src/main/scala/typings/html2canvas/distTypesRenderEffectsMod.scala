@@ -117,7 +117,8 @@ object distTypesRenderEffectsMod {
       __obj.asInstanceOf[IElementEffect]
     }
     
-    extension [Self <: IElementEffect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementEffect] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

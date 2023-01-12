@@ -18,7 +18,8 @@ object panelConstructorMod {
       __obj.asInstanceOf[PanelConstructor]
     }
     
-    extension [Self <: PanelConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelConstructor] (val x: Self) extends AnyVal {
       
       inline def setThemes(value: ThemesPanel): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     }

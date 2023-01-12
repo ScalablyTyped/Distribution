@@ -20,7 +20,8 @@ object IOperationInfo {
     __obj.asInstanceOf[IOperationInfo]
   }
   
-  extension [Self <: IOperationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOperationInfo] (val x: Self) extends AnyVal {
     
     inline def setMetadataType(value: String): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object typesMerchantMod {
       __obj.asInstanceOf[Merchant]
     }
     
-    extension [Self <: Merchant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Merchant] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: Google): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       

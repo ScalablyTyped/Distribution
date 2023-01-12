@@ -19,7 +19,8 @@ object UpgradeInstanceInternalRequest {
     __obj.asInstanceOf[UpgradeInstanceInternalRequest]
   }
   
-  extension [Self <: UpgradeInstanceInternalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeInstanceInternalRequest] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

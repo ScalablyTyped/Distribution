@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[IDefaults]
     }
     
-    extension [Self <: IDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDefaults] (val x: Self) extends AnyVal {
       
       inline def setAllowProtocolRelative(value: Boolean): Self = StObject.set(x, "allowProtocolRelative", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[IFrame]
     }
     
-    extension [Self <: IFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFrame] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
@@ -208,7 +210,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowIframeRelativeUrls(value: Boolean): Self = StObject.set(x, "allowIframeRelativeUrls", value.asInstanceOf[js.Any])
       
@@ -337,7 +340,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setAttribs(value: Attributes): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols {
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols]
   }
   
-  extension [Self <: univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateContinuousRendererParamsSymbolOptionsSymbols] (val x: Self) extends AnyVal {
     
     inline def setAbove(value: Symbol): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
     

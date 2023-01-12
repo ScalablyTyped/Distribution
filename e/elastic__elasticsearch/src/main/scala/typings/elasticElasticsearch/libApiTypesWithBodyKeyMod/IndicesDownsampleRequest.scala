@@ -22,7 +22,8 @@ object IndicesDownsampleRequest {
     __obj.asInstanceOf[IndicesDownsampleRequest]
   }
   
-  extension [Self <: IndicesDownsampleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDownsampleRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: IndicesDownsampleConfig): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

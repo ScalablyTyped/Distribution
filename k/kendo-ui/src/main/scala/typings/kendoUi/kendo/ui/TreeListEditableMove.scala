@@ -15,7 +15,8 @@ object TreeListEditableMove {
     __obj.asInstanceOf[TreeListEditableMove]
   }
   
-  extension [Self <: TreeListEditableMove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListEditableMove] (val x: Self) extends AnyVal {
     
     inline def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
     

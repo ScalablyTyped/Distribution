@@ -24,7 +24,8 @@ object Steps {
     __obj.asInstanceOf[Steps]
   }
   
-  extension [Self <: Steps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Steps] (val x: Self) extends AnyVal {
     
     inline def setFeaturePath(value: String): Self = StObject.set(x, "featurePath", value.asInstanceOf[js.Any])
     

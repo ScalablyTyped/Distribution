@@ -15,7 +15,8 @@ object ITreeItem {
     __obj.asInstanceOf[ITreeItem]
   }
   
-  extension [Self <: ITreeItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreeItem] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_ITreeItem(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_ITreeItem", value.asInstanceOf[js.Any])
   }

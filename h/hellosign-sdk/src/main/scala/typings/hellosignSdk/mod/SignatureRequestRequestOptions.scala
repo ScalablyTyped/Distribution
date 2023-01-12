@@ -66,7 +66,8 @@ object SignatureRequestRequestOptions {
     __obj.asInstanceOf[SignatureRequestRequestOptions[Metadata]]
   }
   
-  extension [Self <: SignatureRequestRequestOptions[?], Metadata](x: Self & SignatureRequestRequestOptions[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureRequestRequestOptions[?], Metadata] (val x: Self & SignatureRequestRequestOptions[Metadata]) extends AnyVal {
     
     inline def setAllow_decline(value: Double): Self = StObject.set(x, "allow_decline", value.asInstanceOf[js.Any])
     

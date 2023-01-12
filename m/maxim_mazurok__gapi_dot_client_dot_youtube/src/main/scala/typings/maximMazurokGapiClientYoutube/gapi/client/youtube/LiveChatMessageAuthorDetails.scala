@@ -37,7 +37,8 @@ object LiveChatMessageAuthorDetails {
     __obj.asInstanceOf[LiveChatMessageAuthorDetails]
   }
   
-  extension [Self <: LiveChatMessageAuthorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveChatMessageAuthorDetails] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SocialLink {
     __obj.asInstanceOf[SocialLink]
   }
   
-  extension [Self <: SocialLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocialLink] (val x: Self) extends AnyVal {
     
     inline def setGet_text(value: () => String): Self = StObject.set(x, "get_text", js.Any.fromFunction0(value))
     

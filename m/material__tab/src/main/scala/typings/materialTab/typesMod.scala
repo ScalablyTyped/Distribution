@@ -24,7 +24,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTabDimensions]
     }
     
-    extension [Self <: MDCTabDimensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabDimensions] (val x: Self) extends AnyVal {
       
       inline def setContentLeft(value: Double): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object typesMod {
       __obj.asInstanceOf[MDCTabInteractionEventDetail]
     }
     
-    extension [Self <: MDCTabInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCTabInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setTabId(value: String): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }

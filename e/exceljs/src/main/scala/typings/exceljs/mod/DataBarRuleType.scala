@@ -46,7 +46,8 @@ object DataBarRuleType {
     __obj.asInstanceOf[DataBarRuleType]
   }
   
-  extension [Self <: DataBarRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataBarRuleType] (val x: Self) extends AnyVal {
     
     inline def setAxisPosition(value: auto | middle | none_): Self = StObject.set(x, "axisPosition", value.asInstanceOf[js.Any])
     

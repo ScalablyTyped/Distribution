@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[PlainAction[OwnAction, Namespace]]
     }
     
-    extension [Self <: PlainAction[?, ?], OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */](x: Self & (PlainAction[OwnAction, Namespace])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlainAction[?, ?], OwnAction /* <: String */, Namespace /* <: js.UndefOr[String] */] (val x: Self & (PlainAction[OwnAction, Namespace])) extends AnyVal {
       
       inline def setACTION(value: WithNamespace[OwnAction, Namespace]): Self = StObject.set(x, "ACTION", value.asInstanceOf[js.Any])
       

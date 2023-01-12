@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Preserve]
     }
     
-    extension [Self <: Preserve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preserve] (val x: Self) extends AnyVal {
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
     }

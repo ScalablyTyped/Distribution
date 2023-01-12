@@ -18,7 +18,8 @@ object DeleteStackRequest {
     __obj.asInstanceOf[DeleteStackRequest]
   }
   
-  extension [Self <: DeleteStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteStackRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

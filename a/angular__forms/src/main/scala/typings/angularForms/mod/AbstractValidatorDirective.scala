@@ -48,7 +48,8 @@ object AbstractValidatorDirective {
     __obj.asInstanceOf[AbstractValidatorDirective]
   }
   
-  extension [Self <: AbstractValidatorDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractValidatorDirective] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Any => Boolean): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
     

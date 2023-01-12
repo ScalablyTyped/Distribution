@@ -18,7 +18,8 @@ object ElasticGpuSpecification {
     __obj.asInstanceOf[ElasticGpuSpecification]
   }
   
-  extension [Self <: ElasticGpuSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElasticGpuSpecification] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

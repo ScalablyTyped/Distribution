@@ -28,7 +28,8 @@ object ComputeExtraProps {
     __obj.asInstanceOf[ComputeExtraProps[Datum, ExtraProps]]
   }
   
-  extension [Self <: ComputeExtraProps[?, ?], Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */](x: Self & (ComputeExtraProps[Datum, ExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputeExtraProps[?, ?], Datum /* <: DatumWithArc */, ExtraProps /* <: Record[String, Any] */] (val x: Self & (ComputeExtraProps[Datum, ExtraProps])) extends AnyVal {
     
     inline def setComputeExtraProps(value: /* datum */ ArcLinkWithDatum[Datum] => ExtraProps): Self = StObject.set(x, "computeExtraProps", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object ControlCommand {
     __obj.asInstanceOf[ControlCommand]
   }
   
-  extension [Self <: ControlCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlCommand] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: SafeArray[NamedValue]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     

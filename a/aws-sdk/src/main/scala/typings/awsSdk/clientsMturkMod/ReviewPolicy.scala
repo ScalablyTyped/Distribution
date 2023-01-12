@@ -23,7 +23,8 @@ object ReviewPolicy {
     __obj.asInstanceOf[ReviewPolicy]
   }
   
-  extension [Self <: ReviewPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewPolicy] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PolicyParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

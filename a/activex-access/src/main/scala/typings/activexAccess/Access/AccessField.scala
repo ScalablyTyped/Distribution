@@ -21,7 +21,8 @@ object AccessField {
     __obj.asInstanceOf[AccessField]
   }
   
-  extension [Self <: AccessField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessField] (val x: Self) extends AnyVal {
     
     inline def setAccessDotAccessField_typekey(value: AccessField): Self = StObject.set(x, "Access.AccessField_typekey", value.asInstanceOf[js.Any])
     

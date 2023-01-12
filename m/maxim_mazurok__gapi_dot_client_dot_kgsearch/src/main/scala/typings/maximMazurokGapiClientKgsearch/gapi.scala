@@ -41,7 +41,8 @@ object gapi {
           __obj.asInstanceOf[SearchResponse]
         }
         
-        extension [Self <: SearchResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
           
           inline def `set@context`(value: Any): Self = StObject.set(x, "@context", value.asInstanceOf[js.Any])
           

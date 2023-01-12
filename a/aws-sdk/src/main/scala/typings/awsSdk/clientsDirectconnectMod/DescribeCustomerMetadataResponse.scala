@@ -23,7 +23,8 @@ object DescribeCustomerMetadataResponse {
     __obj.asInstanceOf[DescribeCustomerMetadataResponse]
   }
   
-  extension [Self <: DescribeCustomerMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCustomerMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setAgreements(value: AgreementList): Self = StObject.set(x, "agreements", value.asInstanceOf[js.Any])
     

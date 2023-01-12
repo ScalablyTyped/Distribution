@@ -22,7 +22,8 @@ object OnVisibleChange {
     __obj.asInstanceOf[OnVisibleChange]
   }
   
-  extension [Self <: OnVisibleChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnVisibleChange] (val x: Self) extends AnyVal {
     
     inline def setOnOpenChange(value: Unit): Self = StObject.set(x, "onOpenChange", value.asInstanceOf[js.Any])
     

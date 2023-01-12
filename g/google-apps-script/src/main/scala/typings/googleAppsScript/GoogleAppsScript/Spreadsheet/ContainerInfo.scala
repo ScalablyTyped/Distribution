@@ -33,7 +33,8 @@ object ContainerInfo {
     __obj.asInstanceOf[ContainerInfo]
   }
   
-  extension [Self <: ContainerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerInfo] (val x: Self) extends AnyVal {
     
     inline def setGetAnchorColumn(value: () => Integer): Self = StObject.set(x, "getAnchorColumn", js.Any.fromFunction0(value))
     

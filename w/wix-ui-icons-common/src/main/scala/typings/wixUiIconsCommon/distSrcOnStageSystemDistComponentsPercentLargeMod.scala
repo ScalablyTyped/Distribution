@@ -27,7 +27,8 @@ object distSrcOnStageSystemDistComponentsPercentLargeMod extends Shortcut {
       __obj.asInstanceOf[PercentLargeProps]
     }
     
-    extension [Self <: PercentLargeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PercentLargeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

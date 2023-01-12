@@ -30,7 +30,8 @@ object CIMGeometricEffectOffsetHatch {
     __obj.asInstanceOf[CIMGeometricEffectOffsetHatch]
   }
   
-  extension [Self <: CIMGeometricEffectOffsetHatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectOffsetHatch] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

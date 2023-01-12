@@ -142,7 +142,8 @@ object queueMod {
       __obj.asInstanceOf[QueueItem]
     }
     
-    extension [Self <: QueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

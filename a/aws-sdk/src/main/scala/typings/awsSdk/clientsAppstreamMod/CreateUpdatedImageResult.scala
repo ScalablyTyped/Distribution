@@ -20,7 +20,8 @@ object CreateUpdatedImageResult {
     __obj.asInstanceOf[CreateUpdatedImageResult]
   }
   
-  extension [Self <: CreateUpdatedImageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUpdatedImageResult] (val x: Self) extends AnyVal {
     
     inline def setCanUpdateImage(value: Boolean): Self = StObject.set(x, "canUpdateImage", value.asInstanceOf[js.Any])
     

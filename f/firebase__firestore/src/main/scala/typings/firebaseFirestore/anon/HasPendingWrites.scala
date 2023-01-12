@@ -28,7 +28,8 @@ object HasPendingWrites {
     __obj.asInstanceOf[HasPendingWrites]
   }
   
-  extension [Self <: HasPendingWrites](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPendingWrites] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

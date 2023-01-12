@@ -31,7 +31,8 @@ object GooglePrivacyDlpV2PrivacyMetric {
     __obj.asInstanceOf[GooglePrivacyDlpV2PrivacyMetric]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PrivacyMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PrivacyMetric] (val x: Self) extends AnyVal {
     
     inline def setCategoricalStatsConfig(value: GooglePrivacyDlpV2CategoricalStatsConfig): Self = StObject.set(x, "categoricalStatsConfig", value.asInstanceOf[js.Any])
     

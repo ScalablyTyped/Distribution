@@ -15,7 +15,8 @@ object AggregateVersion {
     __obj.asInstanceOf[AggregateVersion]
   }
   
-  extension [Self <: AggregateVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateVersion] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

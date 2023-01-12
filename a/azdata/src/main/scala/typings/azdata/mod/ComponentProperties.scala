@@ -61,7 +61,8 @@ object ComponentProperties {
     __obj.asInstanceOf[ComponentProperties]
   }
   
-  extension [Self <: ComponentProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentProperties] (val x: Self) extends AnyVal {
     
     inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
     

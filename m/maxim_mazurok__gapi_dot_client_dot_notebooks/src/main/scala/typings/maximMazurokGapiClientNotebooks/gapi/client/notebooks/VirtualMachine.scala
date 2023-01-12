@@ -22,7 +22,8 @@ object VirtualMachine {
     __obj.asInstanceOf[VirtualMachine]
   }
   
-  extension [Self <: VirtualMachine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualMachine] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
     

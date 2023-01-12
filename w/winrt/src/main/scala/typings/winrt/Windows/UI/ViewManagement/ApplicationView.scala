@@ -68,7 +68,8 @@ object ApplicationView {
     __obj.asInstanceOf[ApplicationView]
   }
   
-  extension [Self <: ApplicationView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationView] (val x: Self) extends AnyVal {
     
     inline def setAdjacentToLeftDisplayEdge(value: Double): Self = StObject.set(x, "adjacentToLeftDisplayEdge", value.asInstanceOf[js.Any])
     

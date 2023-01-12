@@ -50,7 +50,8 @@ object XCellSeries {
     __obj.asInstanceOf[XCellSeries]
   }
   
-  extension [Self <: XCellSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellSeries] (val x: Self) extends AnyVal {
     
     inline def setFillAuto(value: (FillDirection, Double) => Unit): Self = StObject.set(x, "fillAuto", js.Any.fromFunction2(value))
     

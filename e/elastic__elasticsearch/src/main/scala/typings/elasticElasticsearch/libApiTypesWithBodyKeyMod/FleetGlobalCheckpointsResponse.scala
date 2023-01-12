@@ -17,7 +17,8 @@ object FleetGlobalCheckpointsResponse {
     __obj.asInstanceOf[FleetGlobalCheckpointsResponse]
   }
   
-  extension [Self <: FleetGlobalCheckpointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetGlobalCheckpointsResponse] (val x: Self) extends AnyVal {
     
     inline def setGlobal_checkpoints(value: js.Array[FleetCheckpoint]): Self = StObject.set(x, "global_checkpoints", value.asInstanceOf[js.Any])
     

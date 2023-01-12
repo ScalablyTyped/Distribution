@@ -24,7 +24,8 @@ object libPaypalMod {
       __obj.asInstanceOf[BraintreeConfig]
     }
     
-    extension [Self <: BraintreeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BraintreeConfig] (val x: Self) extends AnyVal {
       
       inline def setBraintree(value: ClientAuthorization): Self = StObject.set(x, "braintree", value.asInstanceOf[js.Any])
     }
@@ -43,7 +44,8 @@ object libPaypalMod {
       __obj.asInstanceOf[DirectConfig]
     }
     
-    extension [Self <: DirectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectConfig] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: DisplayName): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object libPaypalMod {
       __obj.asInstanceOf[PayPalStartOptions]
     }
     
-    extension [Self <: PayPalStartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayPalStartOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Description): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object EventStreamSerdeContext {
     __obj.asInstanceOf[EventStreamSerdeContext]
   }
   
-  extension [Self <: EventStreamSerdeContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStreamSerdeContext] (val x: Self) extends AnyVal {
     
     inline def setEventStreamMarshaller(value: EventStreamMarshaller[Any]): Self = StObject.set(x, "eventStreamMarshaller", value.asInstanceOf[js.Any])
   }

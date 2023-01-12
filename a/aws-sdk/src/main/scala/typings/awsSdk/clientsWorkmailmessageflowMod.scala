@@ -38,7 +38,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[GetRawMessageContentRequest]
     }
     
-    extension [Self <: GetRawMessageContentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRawMessageContentRequest] (val x: Self) extends AnyVal {
       
       inline def setMessageId(value: messageIdType): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     }
@@ -85,7 +87,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[GetRawMessageContentResponse]
     }
     
-    extension [Self <: GetRawMessageContentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRawMessageContentResponse] (val x: Self) extends AnyVal {
       
       inline def setMessageContent(value: messageContentBlob): Self = StObject.set(x, "messageContent", value.asInstanceOf[js.Any])
     }
@@ -110,7 +113,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[PutRawMessageContentRequest]
     }
     
-    extension [Self <: PutRawMessageContentRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutRawMessageContentRequest] (val x: Self) extends AnyVal {
       
       inline def setContent(value: RawMessageContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[RawMessageContent]
     }
     
-    extension [Self <: RawMessageContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawMessageContent] (val x: Self) extends AnyVal {
       
       inline def setS3Reference(value: S3Reference): Self = StObject.set(x, "s3Reference", value.asInstanceOf[js.Any])
     }
@@ -164,7 +169,8 @@ object clientsWorkmailmessageflowMod {
       __obj.asInstanceOf[S3Reference]
     }
     
-    extension [Self <: S3Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Reference] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: s3BucketIdType): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       

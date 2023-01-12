@@ -74,7 +74,8 @@ object ThemableDecorationAttachmentRenderOptions {
     __obj.asInstanceOf[ThemableDecorationAttachmentRenderOptions]
   }
   
-  extension [Self <: ThemableDecorationAttachmentRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemableDecorationAttachmentRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String | ThemeColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RedshiftMetadata {
     __obj.asInstanceOf[RedshiftMetadata]
   }
   
-  extension [Self <: RedshiftMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftMetadata] (val x: Self) extends AnyVal {
     
     inline def setDatabaseUserName(value: RedshiftDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
     

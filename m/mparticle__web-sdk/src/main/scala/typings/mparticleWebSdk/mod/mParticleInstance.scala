@@ -318,7 +318,8 @@ object mParticleInstance {
     __obj.asInstanceOf[mParticleInstance]
   }
   
-  extension [Self <: mParticleInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mParticleInstance] (val x: Self) extends AnyVal {
     
     inline def setCommerceEventType(value: ProductAddToCart): Self = StObject.set(x, "CommerceEventType", value.asInstanceOf[js.Any])
     

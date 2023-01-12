@@ -23,7 +23,8 @@ object GridRowProps {
     __obj.asInstanceOf[GridRowProps[ThemeType]]
   }
   
-  extension [Self <: GridRowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & GridRowProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridRowProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridRowProps[ThemeType]) extends AnyVal {
     
     inline def setGridRow(value: ResponsiveValue[GridRow, ThemeType]): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
     

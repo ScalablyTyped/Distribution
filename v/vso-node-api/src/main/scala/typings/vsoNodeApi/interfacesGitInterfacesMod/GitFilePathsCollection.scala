@@ -19,7 +19,8 @@ object GitFilePathsCollection {
     __obj.asInstanceOf[GitFilePathsCollection]
   }
   
-  extension [Self <: GitFilePathsCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitFilePathsCollection] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     

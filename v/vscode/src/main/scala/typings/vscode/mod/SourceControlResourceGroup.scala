@@ -45,7 +45,8 @@ object SourceControlResourceGroup {
     __obj.asInstanceOf[SourceControlResourceGroup]
   }
   
-  extension [Self <: SourceControlResourceGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceControlResourceGroup] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

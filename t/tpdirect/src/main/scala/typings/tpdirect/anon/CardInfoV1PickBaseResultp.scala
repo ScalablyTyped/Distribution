@@ -77,7 +77,8 @@ object CardInfoV1PickBaseResultp {
     __obj.asInstanceOf[CardInfoV1PickBaseResultp]
   }
   
-  extension [Self <: CardInfoV1PickBaseResultp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardInfoV1PickBaseResultp] (val x: Self) extends AnyVal {
     
     inline def setBank_id(value: String): Self = StObject.set(x, "bank_id", value.asInstanceOf[js.Any])
     

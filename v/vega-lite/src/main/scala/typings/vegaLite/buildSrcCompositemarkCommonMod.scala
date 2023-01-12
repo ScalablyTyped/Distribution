@@ -102,7 +102,8 @@ object buildSrcCompositemarkCommonMod {
       __obj.asInstanceOf[CompositeMarkTooltipSummary]
     }
     
-    extension [Self <: CompositeMarkTooltipSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompositeMarkTooltipSummary] (val x: Self) extends AnyVal {
       
       inline def setFieldPrefix(value: String): Self = StObject.set(x, "fieldPrefix", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object buildSrcCompositemarkCommonMod {
       __obj.asInstanceOf[GenericCompositeMarkDef[T]]
     }
     
-    extension [Self <: GenericCompositeMarkDef[?], T](x: Self & GenericCompositeMarkDef[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericCompositeMarkDef[?], T] (val x: Self & GenericCompositeMarkDef[T]) extends AnyVal {
       
       inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       

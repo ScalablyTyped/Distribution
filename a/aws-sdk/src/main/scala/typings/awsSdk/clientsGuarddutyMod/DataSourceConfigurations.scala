@@ -28,7 +28,8 @@ object DataSourceConfigurations {
     __obj.asInstanceOf[DataSourceConfigurations]
   }
   
-  extension [Self <: DataSourceConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceConfigurations] (val x: Self) extends AnyVal {
     
     inline def setKubernetes(value: KubernetesConfiguration): Self = StObject.set(x, "Kubernetes", value.asInstanceOf[js.Any])
     

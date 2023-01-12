@@ -112,7 +112,8 @@ object mod {
       __obj.asInstanceOf[DefineConfig[T]]
     }
     
-    extension [Self <: DefineConfig[?], T](x: Self & DefineConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefineConfig[?], T] (val x: Self & DefineConfig[T]) extends AnyVal {
       
       inline def setCreatedAt(value: Boolean | String): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[IndexDefinition]
     }
     
-    extension [Self <: IndexDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexDefinition] (val x: Self) extends AnyVal {
       
       inline def setHashKey(value: String): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       

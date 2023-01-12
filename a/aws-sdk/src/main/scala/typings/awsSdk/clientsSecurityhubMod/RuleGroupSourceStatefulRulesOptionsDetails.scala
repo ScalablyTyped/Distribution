@@ -23,7 +23,8 @@ object RuleGroupSourceStatefulRulesOptionsDetails {
     __obj.asInstanceOf[RuleGroupSourceStatefulRulesOptionsDetails]
   }
   
-  extension [Self <: RuleGroupSourceStatefulRulesOptionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSourceStatefulRulesOptionsDetails] (val x: Self) extends AnyVal {
     
     inline def setKeyword(value: NonEmptyString): Self = StObject.set(x, "Keyword", value.asInstanceOf[js.Any])
     

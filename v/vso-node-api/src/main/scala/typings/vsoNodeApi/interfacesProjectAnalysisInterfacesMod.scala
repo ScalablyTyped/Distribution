@@ -122,7 +122,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[AnalyzerDescriptor]
     }
     
-    extension [Self <: AnalyzerDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyzerDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[CodeChangeTrendItem]
     }
     
-    extension [Self <: CodeChangeTrendItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeChangeTrendItem] (val x: Self) extends AnyVal {
       
       inline def setTime(value: js.Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[LanguageStatistics]
     }
     
-    extension [Self <: LanguageStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageStatistics] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[ProjectActivityMetrics]
     }
     
-    extension [Self <: ProjectActivityMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectActivityMetrics] (val x: Self) extends AnyVal {
       
       inline def setAuthorsCount(value: Double): Self = StObject.set(x, "authorsCount", value.asInstanceOf[js.Any])
       
@@ -263,7 +267,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[ProjectLanguageAnalytics]
     }
     
-    extension [Self <: ProjectLanguageAnalytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectLanguageAnalytics] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -296,7 +301,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[RepositoryActivityMetrics]
     }
     
-    extension [Self <: RepositoryActivityMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryActivityMetrics] (val x: Self) extends AnyVal {
       
       inline def setCodeChangesCount(value: Double): Self = StObject.set(x, "codeChangesCount", value.asInstanceOf[js.Any])
       
@@ -333,7 +339,8 @@ object interfacesProjectAnalysisInterfacesMod {
       __obj.asInstanceOf[RepositoryLanguageAnalytics]
     }
     
-    extension [Self <: RepositoryLanguageAnalytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryLanguageAnalytics] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

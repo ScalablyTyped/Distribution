@@ -33,7 +33,8 @@ object PartialFailure {
     __obj.asInstanceOf[PartialFailure]
   }
   
-  extension [Self <: PartialFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFailure] (val x: Self) extends AnyVal {
     
     inline def setExceptionType(value: ExceptionType): Self = StObject.set(x, "ExceptionType", value.asInstanceOf[js.Any])
     

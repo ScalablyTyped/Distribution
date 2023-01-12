@@ -28,7 +28,8 @@ object submoduleUpdateOptionsMod {
       __obj.asInstanceOf[SubmoduleUpdateOptions]
     }
     
-    extension [Self <: SubmoduleUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmoduleUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       

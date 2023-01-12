@@ -33,7 +33,8 @@ object DatasetGroupSummary {
     __obj.asInstanceOf[DatasetGroupSummary]
   }
   
-  extension [Self <: DatasetGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

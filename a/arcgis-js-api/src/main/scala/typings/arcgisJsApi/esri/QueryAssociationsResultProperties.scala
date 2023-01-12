@@ -20,7 +20,8 @@ object QueryAssociationsResultProperties {
     __obj.asInstanceOf[QueryAssociationsResultProperties]
   }
   
-  extension [Self <: QueryAssociationsResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAssociationsResultProperties] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: js.Array[AssociationProperties]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

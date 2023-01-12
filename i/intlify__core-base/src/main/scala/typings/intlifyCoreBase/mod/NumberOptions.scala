@@ -45,7 +45,8 @@ object NumberOptions {
     __obj.asInstanceOf[NumberOptions[Key, Locales]]
   }
   
-  extension [Self <: NumberOptions[?, ?], Key, Locales](x: Self & (NumberOptions[Key, Locales])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOptions[?, ?], Key, Locales] (val x: Self & (NumberOptions[Key, Locales])) extends AnyVal {
     
     inline def setFallbackWarn(value: Boolean): Self = StObject.set(x, "fallbackWarn", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object distEsmNodeSrcServiceMod {
       __obj.asInstanceOf[HttpResponseBody]
     }
     
-    extension [Self <: HttpResponseBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponseBody] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

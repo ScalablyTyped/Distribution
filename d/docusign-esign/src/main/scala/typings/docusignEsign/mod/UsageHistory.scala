@@ -33,7 +33,8 @@ object UsageHistory {
     __obj.asInstanceOf[UsageHistory]
   }
   
-  extension [Self <: UsageHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageHistory] (val x: Self) extends AnyVal {
     
     inline def setLastSentDateTime(value: String): Self = StObject.set(x, "lastSentDateTime", value.asInstanceOf[js.Any])
     

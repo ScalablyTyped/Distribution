@@ -485,7 +485,8 @@ object IErrors {
     __obj.asInstanceOf[IErrors]
   }
   
-  extension [Self <: IErrors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IErrors] (val x: Self) extends AnyVal {
     
     inline def setAdd(
       value: js.Function0[Any] | (js.Function2[/* key */ js.UndefOr[String], /* item */ js.UndefOr[Any], Any])

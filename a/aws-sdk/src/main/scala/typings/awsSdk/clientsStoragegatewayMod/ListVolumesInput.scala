@@ -25,7 +25,8 @@ object ListVolumesInput {
     __obj.asInstanceOf[ListVolumesInput]
   }
   
-  extension [Self <: ListVolumesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVolumesInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object IDirectProxy {
     __obj.asInstanceOf[IDirectProxy]
   }
   
-  extension [Self <: IDirectProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectProxy] (val x: Self) extends AnyVal {
     
     inline def setBuildUrl(value: () => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction0(value))
     

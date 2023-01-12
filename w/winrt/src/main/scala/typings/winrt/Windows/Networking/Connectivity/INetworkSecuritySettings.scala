@@ -17,7 +17,8 @@ object INetworkSecuritySettings {
     __obj.asInstanceOf[INetworkSecuritySettings]
   }
   
-  extension [Self <: INetworkSecuritySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INetworkSecuritySettings] (val x: Self) extends AnyVal {
     
     inline def setNetworkAuthenticationType(value: NetworkAuthenticationType): Self = StObject.set(x, "networkAuthenticationType", value.asInstanceOf[js.Any])
     

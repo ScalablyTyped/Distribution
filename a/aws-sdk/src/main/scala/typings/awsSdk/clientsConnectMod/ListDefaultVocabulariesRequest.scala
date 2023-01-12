@@ -33,7 +33,8 @@ object ListDefaultVocabulariesRequest {
     __obj.asInstanceOf[ListDefaultVocabulariesRequest]
   }
   
-  extension [Self <: ListDefaultVocabulariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDefaultVocabulariesRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

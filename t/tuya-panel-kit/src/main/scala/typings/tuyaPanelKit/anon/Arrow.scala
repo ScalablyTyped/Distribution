@@ -33,7 +33,8 @@ object Arrow {
     __obj.asInstanceOf[Arrow]
   }
   
-  extension [Self <: Arrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

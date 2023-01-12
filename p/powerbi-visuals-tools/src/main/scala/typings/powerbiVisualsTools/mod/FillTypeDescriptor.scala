@@ -22,7 +22,8 @@ object FillTypeDescriptor {
     __obj.asInstanceOf[FillTypeDescriptor]
   }
   
-  extension [Self <: FillTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setGradient(value: StartColor): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     

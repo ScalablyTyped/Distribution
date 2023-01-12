@@ -80,7 +80,8 @@ object ComponentInterface {
     __obj.asInstanceOf[ComponentInterface]
   }
   
-  extension [Self <: ComponentInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentInterface] (val x: Self) extends AnyVal {
     
     inline def setComponentDidLoad(value: () => Unit): Self = StObject.set(x, "componentDidLoad", js.Any.fromFunction0(value))
     

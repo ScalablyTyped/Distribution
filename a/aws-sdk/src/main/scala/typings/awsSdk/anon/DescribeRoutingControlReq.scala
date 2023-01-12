@@ -24,7 +24,8 @@ object DescribeRoutingControlReq {
     __obj.asInstanceOf[DescribeRoutingControlReq]
   }
   
-  extension [Self <: DescribeRoutingControlReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRoutingControlReq] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

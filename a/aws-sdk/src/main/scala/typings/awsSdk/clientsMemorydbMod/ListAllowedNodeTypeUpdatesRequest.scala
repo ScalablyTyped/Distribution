@@ -18,7 +18,8 @@ object ListAllowedNodeTypeUpdatesRequest {
     __obj.asInstanceOf[ListAllowedNodeTypeUpdatesRequest]
   }
   
-  extension [Self <: ListAllowedNodeTypeUpdatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAllowedNodeTypeUpdatesRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
   }

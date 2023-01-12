@@ -28,7 +28,8 @@ object Number {
     __obj.asInstanceOf[Number]
   }
   
-  extension [Self <: Number](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: java.lang.String => java.lang.String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

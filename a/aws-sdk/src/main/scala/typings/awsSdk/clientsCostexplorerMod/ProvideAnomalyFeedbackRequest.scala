@@ -23,7 +23,8 @@ object ProvideAnomalyFeedbackRequest {
     __obj.asInstanceOf[ProvideAnomalyFeedbackRequest]
   }
   
-  extension [Self <: ProvideAnomalyFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvideAnomalyFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
     

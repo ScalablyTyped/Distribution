@@ -23,7 +23,8 @@ object CostCategoryProcessingStatus {
     __obj.asInstanceOf[CostCategoryProcessingStatus]
   }
   
-  extension [Self <: CostCategoryProcessingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostCategoryProcessingStatus] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: CostCategoryStatusComponent): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     

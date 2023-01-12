@@ -38,7 +38,8 @@ object AttachObjectRequest {
     __obj.asInstanceOf[AttachObjectRequest]
   }
   
-  extension [Self <: AttachObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setChildReference(value: ObjectReference): Self = StObject.set(x, "ChildReference", value.asInstanceOf[js.Any])
     

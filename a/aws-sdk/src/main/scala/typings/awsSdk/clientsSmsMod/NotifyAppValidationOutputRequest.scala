@@ -23,7 +23,8 @@ object NotifyAppValidationOutputRequest {
     __obj.asInstanceOf[NotifyAppValidationOutputRequest]
   }
   
-  extension [Self <: NotifyAppValidationOutputRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyAppValidationOutputRequest] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: AppIdWithValidation): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

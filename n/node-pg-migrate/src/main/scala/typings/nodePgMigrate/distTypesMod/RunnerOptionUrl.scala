@@ -19,7 +19,8 @@ object RunnerOptionUrl {
     __obj.asInstanceOf[RunnerOptionUrl]
   }
   
-  extension [Self <: RunnerOptionUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnerOptionUrl] (val x: Self) extends AnyVal {
     
     inline def setDatabaseUrl(value: String | ClientConfig): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
   }

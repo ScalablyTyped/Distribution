@@ -63,7 +63,8 @@ object OrganizationEvent {
     __obj.asInstanceOf[OrganizationEvent]
   }
   
-  extension [Self <: OrganizationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationEvent] (val x: Self) extends AnyVal {
     
     inline def setArn(value: eventArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

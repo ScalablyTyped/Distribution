@@ -27,7 +27,8 @@ object libGridRowContextMod extends Shortcut {
       __obj.asInstanceOf[RowContextState]
     }
     
-    extension [Self <: RowContextState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowContextState] (val x: Self) extends AnyVal {
       
       inline def setGutter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       

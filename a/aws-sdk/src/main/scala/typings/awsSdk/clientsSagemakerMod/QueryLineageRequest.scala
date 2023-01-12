@@ -48,7 +48,8 @@ object QueryLineageRequest {
     __obj.asInstanceOf[QueryLineageRequest]
   }
   
-  extension [Self <: QueryLineageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLineageRequest] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: Direction): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
     

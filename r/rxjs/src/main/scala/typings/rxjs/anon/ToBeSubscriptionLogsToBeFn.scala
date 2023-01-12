@@ -19,7 +19,8 @@ object ToBeSubscriptionLogsToBeFn {
     __obj.asInstanceOf[ToBeSubscriptionLogsToBeFn]
   }
   
-  extension [Self <: ToBeSubscriptionLogsToBeFn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToBeSubscriptionLogsToBeFn] (val x: Self) extends AnyVal {
     
     inline def setToBe(value: /* marbles */ String | js.Array[String] => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
   }

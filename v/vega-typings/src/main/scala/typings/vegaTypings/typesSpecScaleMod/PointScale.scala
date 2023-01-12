@@ -21,7 +21,8 @@ object PointScale {
     __obj.asInstanceOf[PointScale]
   }
   
-  extension [Self <: PointScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointScale] (val x: Self) extends AnyVal {
     
     inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,8 @@ object examplesJsmLoadersColladaLoaderMod {
       __obj.asInstanceOf[Collada]
     }
     
-    extension [Self <: Collada](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collada] (val x: Self) extends AnyVal {
       
       inline def setKinematics(value: js.Object): Self = StObject.set(x, "kinematics", value.asInstanceOf[js.Any])
       

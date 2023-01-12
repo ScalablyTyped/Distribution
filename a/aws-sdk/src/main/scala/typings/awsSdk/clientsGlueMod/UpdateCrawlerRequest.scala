@@ -83,7 +83,8 @@ object UpdateCrawlerRequest {
     __obj.asInstanceOf[UpdateCrawlerRequest]
   }
   
-  extension [Self <: UpdateCrawlerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateCrawlerRequest] (val x: Self) extends AnyVal {
     
     inline def setClassifiers(value: ClassifierNameList): Self = StObject.set(x, "Classifiers", value.asInstanceOf[js.Any])
     

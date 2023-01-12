@@ -48,7 +48,8 @@ object distSrcRpcHandlersGetProvidersMod {
       __obj.asInstanceOf[GetProvidersHandlerComponents]
     }
     
-    extension [Self <: GetProvidersHandlerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProvidersHandlerComponents] (val x: Self) extends AnyVal {
       
       inline def setPeerStore(value: PeerStore): Self = StObject.set(x, "peerStore", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object distSrcRpcHandlersGetProvidersMod {
       __obj.asInstanceOf[GetProvidersHandlerInit]
     }
     
-    extension [Self <: GetProvidersHandlerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProvidersHandlerInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object IAilment {
     __obj.asInstanceOf[IAilment]
   }
   
-  extension [Self <: IAilment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAilment] (val x: Self) extends AnyVal {
     
     inline def setDetected(value: () => js.Promise[Boolean]): Self = StObject.set(x, "detected", js.Any.fromFunction0(value))
     

@@ -24,7 +24,8 @@ object BootstrapCheckBoxEventMap {
     __obj.asInstanceOf[BootstrapCheckBoxEventMap]
   }
   
-  extension [Self <: BootstrapCheckBoxEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapCheckBoxEventMap] (val x: Self) extends AnyVal {
     
     inline def setCheckedChanged(value: ProcessingModeEventArgs): Self = StObject.set(x, "checkedChanged", value.asInstanceOf[js.Any])
   }

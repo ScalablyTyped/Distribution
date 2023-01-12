@@ -15,7 +15,8 @@ object FillString {
     __obj.asInstanceOf[FillString]
   }
   
-  extension [Self <: FillString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillString] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
   }

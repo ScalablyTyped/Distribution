@@ -23,7 +23,8 @@ object GetContextKeysForPrincipalPolicyRequest {
     __obj.asInstanceOf[GetContextKeysForPrincipalPolicyRequest]
   }
   
-  extension [Self <: GetContextKeysForPrincipalPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContextKeysForPrincipalPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setPolicyInputList(value: SimulationPolicyListType): Self = StObject.set(x, "PolicyInputList", value.asInstanceOf[js.Any])
     

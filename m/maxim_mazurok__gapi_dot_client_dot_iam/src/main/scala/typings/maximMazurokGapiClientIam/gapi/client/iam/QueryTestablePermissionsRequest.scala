@@ -25,7 +25,8 @@ object QueryTestablePermissionsRequest {
     __obj.asInstanceOf[QueryTestablePermissionsRequest]
   }
   
-  extension [Self <: QueryTestablePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryTestablePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3TransitionCoverageTransitionNode] (val x: Self) extends AnyVal {
     
     inline def setFlow(value: GoogleCloudDialogflowCxV3Flow): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     

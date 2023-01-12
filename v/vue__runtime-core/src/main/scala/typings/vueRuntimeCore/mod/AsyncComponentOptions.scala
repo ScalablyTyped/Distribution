@@ -37,7 +37,8 @@ object AsyncComponentOptions {
     __obj.asInstanceOf[AsyncComponentOptions[T]]
   }
   
-  extension [Self <: AsyncComponentOptions[?], T](x: Self & AsyncComponentOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncComponentOptions[?], T] (val x: Self & AsyncComponentOptions[T]) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

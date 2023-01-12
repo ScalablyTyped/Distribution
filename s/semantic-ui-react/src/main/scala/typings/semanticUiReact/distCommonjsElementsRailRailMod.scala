@@ -75,7 +75,8 @@ object distCommonjsElementsRailRailMod extends Shortcut {
       __obj.asInstanceOf[StrictRailProps]
     }
     
-    extension [Self <: StrictRailProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictRailProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

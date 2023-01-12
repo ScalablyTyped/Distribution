@@ -30,7 +30,8 @@ object AliascodenumberSequence {
     __obj.asInstanceOf[AliascodenumberSequence]
   }
   
-  extension [Self <: AliascodenumberSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AliascodenumberSequence] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

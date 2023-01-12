@@ -31,7 +31,8 @@ object IstioCanonicalService {
     __obj.asInstanceOf[IstioCanonicalService]
   }
   
-  extension [Self <: IstioCanonicalService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IstioCanonicalService] (val x: Self) extends AnyVal {
     
     inline def setCanonicalService(value: String): Self = StObject.set(x, "canonicalService", value.asInstanceOf[js.Any])
     

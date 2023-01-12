@@ -19,7 +19,8 @@ object XRMediaLayerInit {
     __obj.asInstanceOf[XRMediaLayerInit]
   }
   
-  extension [Self <: XRMediaLayerInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRMediaLayerInit] (val x: Self) extends AnyVal {
     
     inline def setInvertStereo(value: Boolean): Self = StObject.set(x, "invertStereo", value.asInstanceOf[js.Any])
     

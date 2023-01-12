@@ -25,7 +25,8 @@ object Profile {
     __obj.asInstanceOf[Profile]
   }
   
-  extension [Self <: Profile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

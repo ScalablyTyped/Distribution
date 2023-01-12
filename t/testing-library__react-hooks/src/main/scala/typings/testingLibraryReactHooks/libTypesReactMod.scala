@@ -61,7 +61,8 @@ object libTypesReactMod {
       __obj.asInstanceOf[RenderHookOptions[TProps]]
     }
     
-    extension [Self <: RenderHookOptions[?], TProps](x: Self & RenderHookOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderHookOptions[?], TProps] (val x: Self & RenderHookOptions[TProps]) extends AnyVal {
       
       inline def setWrapper(value: WrapperComponent[TProps]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libTypesReactMod {
       __obj.asInstanceOf[RendererOptions[TProps]]
     }
     
-    extension [Self <: RendererOptions[?], TProps](x: Self & RendererOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererOptions[?], TProps] (val x: Self & RendererOptions[TProps]) extends AnyVal {
       
       inline def setWrapper(value: WrapperComponent[TProps]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Provider[Store]]
     }
     
-    extension [Self <: Provider[?], Store /* <: StringDictionary[Any] */](x: Self & Provider[Store]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Provider[?], Store /* <: StringDictionary[Any] */] (val x: Self & Provider[Store]) extends AnyVal {
       
       inline def setProvider(value: ExoticComponent[Children]): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
       

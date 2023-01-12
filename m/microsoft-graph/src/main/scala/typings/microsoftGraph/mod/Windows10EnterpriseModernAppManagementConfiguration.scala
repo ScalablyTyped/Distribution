@@ -18,7 +18,8 @@ object Windows10EnterpriseModernAppManagementConfiguration {
     __obj.asInstanceOf[Windows10EnterpriseModernAppManagementConfiguration]
   }
   
-  extension [Self <: Windows10EnterpriseModernAppManagementConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows10EnterpriseModernAppManagementConfiguration] (val x: Self) extends AnyVal {
     
     inline def setUninstallBuiltInApps(value: Boolean): Self = StObject.set(x, "uninstallBuiltInApps", value.asInstanceOf[js.Any])
     

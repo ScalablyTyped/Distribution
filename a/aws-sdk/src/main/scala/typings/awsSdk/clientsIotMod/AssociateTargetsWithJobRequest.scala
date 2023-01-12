@@ -33,7 +33,8 @@ object AssociateTargetsWithJobRequest {
     __obj.asInstanceOf[AssociateTargetsWithJobRequest]
   }
   
-  extension [Self <: AssociateTargetsWithJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateTargetsWithJobRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: Comment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object Catalog {
     __obj.asInstanceOf[Catalog]
   }
   
-  extension [Self <: Catalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Catalog] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     

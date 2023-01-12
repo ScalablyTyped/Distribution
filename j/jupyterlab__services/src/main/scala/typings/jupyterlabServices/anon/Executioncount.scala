@@ -18,7 +18,8 @@ object Executioncount {
     __obj.asInstanceOf[Executioncount]
   }
   
-  extension [Self <: Executioncount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Executioncount] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

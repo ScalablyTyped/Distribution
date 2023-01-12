@@ -1676,7 +1676,8 @@ object Arcade {
       __obj.asInstanceOf[Collider]
     }
     
-    extension [Self <: Collider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Collider] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -1779,7 +1780,8 @@ object Arcade {
         __obj.asInstanceOf[Angular]
       }
       
-      extension [Self <: Angular](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Angular] (val x: Self) extends AnyVal {
         
         inline def setSetAngularAcceleration(value: Double => Angular): Self = StObject.set(x, "setAngularAcceleration", js.Any.fromFunction1(value))
         
@@ -1886,7 +1888,8 @@ object Arcade {
         __obj.asInstanceOf[Debug]
       }
       
-      extension [Self <: Debug](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
         
         inline def setDebugBodyColor(value: Double): Self = StObject.set(x, "debugBodyColor", value.asInstanceOf[js.Any])
         
@@ -2107,7 +2110,8 @@ object Arcade {
         __obj.asInstanceOf[Mass]
       }
       
-      extension [Self <: Mass](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Mass] (val x: Self) extends AnyVal {
         
         inline def setSetMass(value: Double => Mass): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
       }

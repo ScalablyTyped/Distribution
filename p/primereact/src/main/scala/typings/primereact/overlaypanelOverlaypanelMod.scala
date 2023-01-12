@@ -508,7 +508,8 @@ object overlaypanelOverlaypanelMod {
       __obj.asInstanceOf[OverlayPanelProps]
     }
     
-    extension [Self <: OverlayPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -153,7 +153,8 @@ object ICustomQuestionTypeConfiguration {
     __obj.asInstanceOf[ICustomQuestionTypeConfiguration]
   }
   
-  extension [Self <: ICustomQuestionTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomQuestionTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreateElements(value: Any): Self = StObject.set(x, "createElements", value.asInstanceOf[js.Any])
     

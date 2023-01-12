@@ -17,7 +17,8 @@ object Mdurl {
     __obj.asInstanceOf[Mdurl]
   }
   
-  extension [Self <: Mdurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mdurl] (val x: Self) extends AnyVal {
     
     inline def setMdurl(value: Decode): Self = StObject.set(x, "mdurl", value.asInstanceOf[js.Any])
     

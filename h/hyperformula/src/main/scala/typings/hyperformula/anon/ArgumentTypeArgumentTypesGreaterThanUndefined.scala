@@ -18,7 +18,8 @@ object ArgumentTypeArgumentTypesGreaterThanUndefined {
     __obj.asInstanceOf[ArgumentTypeArgumentTypesGreaterThanUndefined]
   }
   
-  extension [Self <: ArgumentTypeArgumentTypesGreaterThanUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArgumentTypeArgumentTypesGreaterThanUndefined] (val x: Self) extends AnyVal {
     
     inline def setArgumentType(value: ArgumentTypes): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
     

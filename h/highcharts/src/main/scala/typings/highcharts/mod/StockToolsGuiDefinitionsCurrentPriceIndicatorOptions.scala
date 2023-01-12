@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsCurrentPriceIndicatorOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsCurrentPriceIndicatorOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsCurrentPriceIndicatorOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

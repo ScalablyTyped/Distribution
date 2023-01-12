@@ -21,7 +21,8 @@ object AnnotationsControlPointStyleOptions {
     __obj.asInstanceOf[AnnotationsControlPointStyleOptions]
   }
   
-  extension [Self <: AnnotationsControlPointStyleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsControlPointStyleOptions] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

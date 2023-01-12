@@ -31,7 +31,8 @@ object TypeofnonWitnessUtxo {
     __obj.asInstanceOf[TypeofnonWitnessUtxo]
   }
   
-  extension [Self <: TypeofnonWitnessUtxo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofnonWitnessUtxo] (val x: Self) extends AnyVal {
     
     inline def setCanAdd(value: (Any, Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     

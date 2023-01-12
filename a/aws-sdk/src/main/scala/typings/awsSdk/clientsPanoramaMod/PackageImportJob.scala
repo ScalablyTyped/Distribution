@@ -43,7 +43,8 @@ object PackageImportJob {
     __obj.asInstanceOf[PackageImportJob]
   }
   
-  extension [Self <: PackageImportJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageImportJob] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

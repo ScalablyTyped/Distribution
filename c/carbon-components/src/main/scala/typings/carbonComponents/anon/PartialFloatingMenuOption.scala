@@ -39,7 +39,8 @@ object PartialFloatingMenuOption {
     __obj.asInstanceOf[PartialFloatingMenuOption]
   }
   
-  extension [Self <: PartialFloatingMenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFloatingMenuOption] (val x: Self) extends AnyVal {
     
     inline def setAttribAvoidFocusOnOpen(value: String): Self = StObject.set(x, "attribAvoidFocusOnOpen", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Results {
     __obj.asInstanceOf[Results]
   }
   
-  extension [Self <: Results](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
     
     inline def setArtifactManifest(value: String): Self = StObject.set(x, "artifactManifest", value.asInstanceOf[js.Any])
     

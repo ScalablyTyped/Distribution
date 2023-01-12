@@ -19,7 +19,8 @@ object Hl7TypesConfig {
     __obj.asInstanceOf[Hl7TypesConfig]
   }
   
-  extension [Self <: Hl7TypesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hl7TypesConfig] (val x: Self) extends AnyVal {
     
     inline def setType(value: js.Array[Type]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

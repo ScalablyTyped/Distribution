@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setAngular(value: (/* connection */ Any, /* options */ js.UndefOr[Any]) => js.Function0[HandlerResult]): Self = StObject.set(x, "angular", js.Any.fromFunction2(value))
       

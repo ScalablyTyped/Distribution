@@ -24,7 +24,8 @@ object WebGPURenderItemScissor {
     __obj.asInstanceOf[WebGPURenderItemScissor]
   }
   
-  extension [Self <: WebGPURenderItemScissor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPURenderItemScissor] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

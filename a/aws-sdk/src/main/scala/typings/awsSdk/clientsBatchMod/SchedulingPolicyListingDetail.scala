@@ -18,7 +18,8 @@ object SchedulingPolicyListingDetail {
     __obj.asInstanceOf[SchedulingPolicyListingDetail]
   }
   
-  extension [Self <: SchedulingPolicyListingDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulingPolicyListingDetail] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
   }

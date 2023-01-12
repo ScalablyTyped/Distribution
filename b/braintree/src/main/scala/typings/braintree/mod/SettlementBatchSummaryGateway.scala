@@ -16,7 +16,8 @@ object SettlementBatchSummaryGateway {
     __obj.asInstanceOf[SettlementBatchSummaryGateway]
   }
   
-  extension [Self <: SettlementBatchSummaryGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementBatchSummaryGateway] (val x: Self) extends AnyVal {
     
     inline def setGenerate(value: GroupByCustomField => js.Promise[SettlementBatchSummary]): Self = StObject.set(x, "generate", js.Any.fromFunction1(value))
   }

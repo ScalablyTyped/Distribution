@@ -18,7 +18,8 @@ object SetRulePrioritiesInput {
     __obj.asInstanceOf[SetRulePrioritiesInput]
   }
   
-  extension [Self <: SetRulePrioritiesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRulePrioritiesInput] (val x: Self) extends AnyVal {
     
     inline def setRulePriorities(value: RulePriorityList): Self = StObject.set(x, "RulePriorities", value.asInstanceOf[js.Any])
     

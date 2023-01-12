@@ -47,7 +47,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[CommonStatics[R, Props]]
     }
     
-    extension [Self <: CommonStatics[?, ?], R /* <: Runtime */, Props](x: Self & (CommonStatics[R, Props])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonStatics[?, ?], R /* <: Runtime */, Props] (val x: Self & (CommonStatics[R, Props])) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attrs[Props]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[ExecutionContext]
     }
     
-    extension [Self <: ExecutionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionContext] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: DefaultTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -116,7 +118,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[ExtensibleObject]
     }
     
-    extension [Self <: ExtensibleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtensibleObject] (val x: Self) extends AnyVal {
       
       inline def set$as(value: KnownTarget): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[IInlineStyle[Props]]
     }
     
-    extension [Self <: IInlineStyle[?], Props](x: Self & IInlineStyle[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInlineStyle[?], Props] (val x: Self & IInlineStyle[Props]) extends AnyVal {
       
       inline def setGenerateStyleObject(value: js.Object => js.Object): Self = StObject.set(x, "generateStyleObject", js.Any.fromFunction1(value))
       
@@ -259,7 +263,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[IStyledStatics[R, OuterProps]]
     }
     
-    extension [Self <: IStyledStatics[?, ?], R /* <: Runtime */, OuterProps /* <: js.Object */](x: Self & (IStyledStatics[R, OuterProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStyledStatics[?, ?], R /* <: Runtime */, OuterProps /* <: js.Object */] (val x: Self & (IStyledStatics[R, OuterProps])) extends AnyVal {
       
       inline def setComponentStyle(
         value: /* import warning: importer.ImportType#apply Failed type conversion: R extends 'web' ? styled-components.styled-components/native/dist/models/ComponentStyle.default : never */ js.Any
@@ -330,7 +335,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[Keyframes]
     }
     
-    extension [Self <: Keyframes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keyframes] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -627,7 +633,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[StyleSheet]
     }
     
-    extension [Self <: StyleSheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: js.Function): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     }
@@ -658,7 +665,8 @@ object nativeDistTypesMod {
       __obj.asInstanceOf[StyledOptions[R, Props]]
     }
     
-    extension [Self <: StyledOptions[?, ?], R /* <: Runtime */, Props](x: Self & (StyledOptions[R, Props])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledOptions[?, ?], R /* <: Runtime */, Props] (val x: Self & (StyledOptions[R, Props])) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attrs[Props]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

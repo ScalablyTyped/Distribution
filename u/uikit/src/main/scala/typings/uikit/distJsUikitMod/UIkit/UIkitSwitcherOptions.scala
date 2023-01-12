@@ -27,7 +27,8 @@ object UIkitSwitcherOptions {
     __obj.asInstanceOf[UIkitSwitcherOptions]
   }
   
-  extension [Self <: UIkitSwitcherOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitSwitcherOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Double): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

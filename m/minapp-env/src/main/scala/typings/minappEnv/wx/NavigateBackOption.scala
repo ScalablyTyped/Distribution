@@ -25,7 +25,8 @@ object NavigateBackOption {
     __obj.asInstanceOf[NavigateBackOption]
   }
   
-  extension [Self <: NavigateBackOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigateBackOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Future]
     }
     
-    extension [Self <: Future](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Future] (val x: Self) extends AnyVal {
       
       inline def setFuture(value: Record[String, String]): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Now]
     }
     
-    extension [Self <: Now](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Now] (val x: Self) extends AnyVal {
       
       inline def setNow(value: js.Date | Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
       
@@ -197,7 +201,8 @@ object anon {
       __obj.asInstanceOf[RecordSUPPORTEDFIELDnumbe]
     }
     
-    extension [Self <: RecordSUPPORTEDFIELDnumbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordSUPPORTEDFIELDnumbe] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -342,7 +347,8 @@ object anon {
       __obj.asInstanceOf[finDATAFIELDdisplayNamest]
     }
     
-    extension [Self <: finDATAFIELDdisplayNamest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: finDATAFIELDdisplayNamest] (val x: Self) extends AnyVal {
       
       inline def setDay(value: DisplayName): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DescribeAppInstanceResponse {
     __obj.asInstanceOf[DescribeAppInstanceResponse]
   }
   
-  extension [Self <: DescribeAppInstanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppInstanceResponse] (val x: Self) extends AnyVal {
     
     inline def setAppInstance(value: AppInstance): Self = StObject.set(x, "AppInstance", value.asInstanceOf[js.Any])
     

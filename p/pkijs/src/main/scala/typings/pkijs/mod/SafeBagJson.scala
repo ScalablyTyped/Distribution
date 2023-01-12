@@ -19,7 +19,8 @@ object SafeBagJson {
     __obj.asInstanceOf[SafeBagJson]
   }
   
-  extension [Self <: SafeBagJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeBagJson] (val x: Self) extends AnyVal {
     
     inline def setBagAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "bagAttributes", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object XDataPilotMemberResults {
     __obj.asInstanceOf[XDataPilotMemberResults]
   }
   
-  extension [Self <: XDataPilotMemberResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotMemberResults] (val x: Self) extends AnyVal {
     
     inline def setGetResults(value: () => SafeArray[MemberResult]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     

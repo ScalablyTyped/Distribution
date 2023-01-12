@@ -16,7 +16,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setFinger(value: JQueryFingerOptions): Self = StObject.set(x, "Finger", value.asInstanceOf[js.Any])
   }

@@ -144,7 +144,8 @@ object mod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setLength(value: `2048` | `4096`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object mod {
       __obj.asInstanceOf[Verifier]
     }
     
-    extension [Self <: Verifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verifier] (val x: Self) extends AnyVal {
       
       inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object distSrcStartableMod {
       __obj.asInstanceOf[Startable]
     }
     
-    extension [Self <: Startable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Startable] (val x: Self) extends AnyVal {
       
       inline def setAfterStart(value: () => Unit | js.Promise[Unit]): Self = StObject.set(x, "afterStart", js.Any.fromFunction0(value))
       

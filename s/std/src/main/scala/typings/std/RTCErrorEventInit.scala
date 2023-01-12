@@ -18,7 +18,8 @@ object RTCErrorEventInit {
     __obj.asInstanceOf[RTCErrorEventInit]
   }
   
-  extension [Self <: RTCErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: RTCError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

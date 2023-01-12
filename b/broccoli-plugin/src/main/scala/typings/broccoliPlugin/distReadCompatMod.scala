@@ -85,7 +85,8 @@ object distReadCompatMod {
       __obj.asInstanceOf[ReadCompat]
     }
     
-    extension [Self <: ReadCompat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadCompat] (val x: Self) extends AnyVal {
       
       inline def setCachePath(value: String): Self = StObject.set(x, "cachePath", value.asInstanceOf[js.Any])
       

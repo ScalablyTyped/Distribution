@@ -19,7 +19,8 @@ object TypeofSkeletonDebugRender {
     __obj.asInstanceOf[TypeofSkeletonDebugRender]
   }
   
-  extension [Self <: TypeofSkeletonDebugRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSkeletonDebugRender] (val x: Self) extends AnyVal {
     
     inline def setGREEN(value: Any): Self = StObject.set(x, "GREEN", value.asInstanceOf[js.Any])
     

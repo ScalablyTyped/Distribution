@@ -26,7 +26,8 @@ object LinkedEditingRanges {
     __obj.asInstanceOf[LinkedEditingRanges]
   }
   
-  extension [Self <: LinkedEditingRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedEditingRanges] (val x: Self) extends AnyVal {
     
     inline def setRanges(value: js.Array[IRange]): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PartialImageViewerProps {
     __obj.asInstanceOf[PartialImageViewerProps]
   }
   
-  extension [Self <: PartialImageViewerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialImageViewerProps] (val x: Self) extends AnyVal {
     
     inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
     

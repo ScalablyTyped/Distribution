@@ -27,7 +27,8 @@ object WindowsInvocationContext {
     __obj.asInstanceOf[WindowsInvocationContext]
   }
   
-  extension [Self <: WindowsInvocationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsInvocationContext] (val x: Self) extends AnyVal {
     
     inline def setLastError(value: Double): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
   }

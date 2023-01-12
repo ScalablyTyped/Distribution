@@ -27,7 +27,8 @@ object FileReferenceObject {
     __obj.asInstanceOf[FileReferenceObject]
   }
   
-  extension [Self <: FileReferenceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileReferenceObject] (val x: Self) extends AnyVal {
     
     inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

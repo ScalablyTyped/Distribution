@@ -59,7 +59,8 @@ object Statvfs {
     __obj.asInstanceOf[Statvfs]
   }
   
-  extension [Self <: Statvfs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statvfs] (val x: Self) extends AnyVal {
     
     inline def setF_bavail(value: Double): Self = StObject.set(x, "f_bavail", value.asInstanceOf[js.Any])
     

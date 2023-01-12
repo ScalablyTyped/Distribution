@@ -20,7 +20,8 @@ object ProductAdBuilder {
     __obj.asInstanceOf[ProductAdBuilder]
   }
   
-  extension [Self <: ProductAdBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductAdBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithMobilePreferred(value: Boolean => ProductAdBuilder): Self = StObject.set(x, "withMobilePreferred", js.Any.fromFunction1(value))
   }

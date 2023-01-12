@@ -51,7 +51,8 @@ object PublishDiagnosticsClientCapabilities {
     __obj.asInstanceOf[PublishDiagnosticsClientCapabilities]
   }
   
-  extension [Self <: PublishDiagnosticsClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublishDiagnosticsClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCodeDescriptionSupport(value: Boolean): Self = StObject.set(x, "codeDescriptionSupport", value.asInstanceOf[js.Any])
     

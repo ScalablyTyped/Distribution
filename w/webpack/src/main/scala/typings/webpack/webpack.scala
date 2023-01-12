@@ -37,7 +37,8 @@ object webpack {
       __obj.asInstanceOf[ApplyOptions]
     }
     
-    extension [Self <: ApplyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreDeclined(value: Boolean): Self = StObject.set(x, "ignoreDeclined", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object webpack {
       __obj.asInstanceOf[ExportInfo]
     }
     
-    extension [Self <: ExportInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportInfo] (val x: Self) extends AnyVal {
       
       inline def setCanMangle(value: Boolean): Self = StObject.set(x, "canMangle", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object Usenodenamesharing {
     __obj.asInstanceOf[Usenodenamesharing]
   }
   
-  extension [Self <: Usenodenamesharing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Usenodenamesharing] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Unit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

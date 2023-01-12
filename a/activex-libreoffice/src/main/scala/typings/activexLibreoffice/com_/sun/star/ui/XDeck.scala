@@ -91,7 +91,8 @@ object XDeck {
     __obj.asInstanceOf[XDeck]
   }
   
-  extension [Self <: XDeck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDeck] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     

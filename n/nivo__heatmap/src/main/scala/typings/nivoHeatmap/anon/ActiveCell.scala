@@ -54,7 +54,8 @@ object ActiveCell {
     __obj.asInstanceOf[ActiveCell[Datum]]
   }
   
-  extension [Self <: ActiveCell[?], Datum /* <: HeatMapDatum */](x: Self & ActiveCell[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveCell[?], Datum /* <: HeatMapDatum */] (val x: Self & ActiveCell[Datum]) extends AnyVal {
     
     inline def setActiveCell(value: ComputedCell[Datum]): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
     

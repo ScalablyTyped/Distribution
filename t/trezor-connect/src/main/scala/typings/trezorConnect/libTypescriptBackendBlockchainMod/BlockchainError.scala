@@ -20,7 +20,8 @@ object BlockchainError {
     __obj.asInstanceOf[BlockchainError]
   }
   
-  extension [Self <: BlockchainError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockchainError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

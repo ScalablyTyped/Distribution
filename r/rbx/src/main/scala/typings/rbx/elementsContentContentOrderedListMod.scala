@@ -170,7 +170,8 @@ object elementsContentContentOrderedListMod {
       __obj.asInstanceOf[ContentOrderedListModifierProps]
     }
     
-    extension [Self <: ContentOrderedListModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentOrderedListModifierProps] (val x: Self) extends AnyVal {
       
       inline def setType(value: `lower-alpha` | `lower-roman` | `upper-alpha` | `upper-roman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object elementsContentContentOrderedListMod {
       __obj.asInstanceOf[ContentOrderedListProps]
     }
     
-    extension [Self <: ContentOrderedListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentOrderedListProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
@@ -420,7 +422,8 @@ object elementsContentContentOrderedListMod {
       __obj.asInstanceOf[ContentOrderedListVariables]
     }
     
-    extension [Self <: ContentOrderedListVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentOrderedListVariables] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: `lower-alpha` | `lower-roman` | `upper-alpha` | `upper-roman`): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     }
@@ -437,7 +440,8 @@ object elementsContentContentOrderedListMod {
       __obj.asInstanceOf[ContentOrderedListVariablesDefaults]
     }
     
-    extension [Self <: ContentOrderedListVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentOrderedListVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: `lower-alpha` | `lower-roman` | `upper-alpha` | `upper-roman`): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     }

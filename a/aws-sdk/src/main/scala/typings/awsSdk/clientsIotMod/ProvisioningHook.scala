@@ -23,7 +23,8 @@ object ProvisioningHook {
     __obj.asInstanceOf[ProvisioningHook]
   }
   
-  extension [Self <: ProvisioningHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvisioningHook] (val x: Self) extends AnyVal {
     
     inline def setPayloadVersion(value: PayloadVersion): Self = StObject.set(x, "payloadVersion", value.asInstanceOf[js.Any])
     

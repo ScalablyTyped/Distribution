@@ -36,7 +36,8 @@ object GPUBufferDescriptor {
     __obj.asInstanceOf[GPUBufferDescriptor]
   }
   
-  extension [Self <: GPUBufferDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUBufferDescriptor] (val x: Self) extends AnyVal {
     
     inline def setMappedAtCreation(value: Boolean): Self = StObject.set(x, "mappedAtCreation", value.asInstanceOf[js.Any])
     

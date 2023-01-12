@@ -17,7 +17,8 @@ object TraversalHandlers {
     __obj.asInstanceOf[TraversalHandlers[T]]
   }
   
-  extension [Self <: TraversalHandlers[?], T](x: Self & TraversalHandlers[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraversalHandlers[?], T] (val x: Self & TraversalHandlers[T]) extends AnyVal {
     
     inline def setEnter(value: TraversalHandler[T]): Self = StObject.set(x, "enter", value.asInstanceOf[js.Any])
     

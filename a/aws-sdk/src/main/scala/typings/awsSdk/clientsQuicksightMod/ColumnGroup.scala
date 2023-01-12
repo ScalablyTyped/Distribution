@@ -18,7 +18,8 @@ object ColumnGroup {
     __obj.asInstanceOf[ColumnGroup]
   }
   
-  extension [Self <: ColumnGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnGroup] (val x: Self) extends AnyVal {
     
     inline def setGeoSpatialColumnGroup(value: GeoSpatialColumnGroup): Self = StObject.set(x, "GeoSpatialColumnGroup", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object RequestSchedule {
     __obj.asInstanceOf[RequestSchedule]
   }
   
-  extension [Self <: RequestSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSchedule] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: NullableOption[ExpirationPattern]): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

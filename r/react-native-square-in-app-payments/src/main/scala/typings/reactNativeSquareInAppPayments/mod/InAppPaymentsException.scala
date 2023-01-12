@@ -25,7 +25,8 @@ object InAppPaymentsException {
     __obj.asInstanceOf[InAppPaymentsException]
   }
   
-  extension [Self <: InAppPaymentsException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppPaymentsException] (val x: Self) extends AnyVal {
     
     inline def setCode(value: SQIPErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

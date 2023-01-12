@@ -107,7 +107,8 @@ object LimitedByTTL {
     __obj.asInstanceOf[LimitedByTTL]
   }
   
-  extension [Self <: LimitedByTTL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitedByTTL] (val x: Self) extends AnyVal {
     
     inline def setAllowStale(value: Boolean): Self = StObject.set(x, "allowStale", value.asInstanceOf[js.Any])
     

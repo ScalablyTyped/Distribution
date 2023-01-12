@@ -33,7 +33,8 @@ object TreeHeaderTemplateOptions {
     __obj.asInstanceOf[TreeHeaderTemplateOptions]
   }
   
-  extension [Self <: TreeHeaderTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeHeaderTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

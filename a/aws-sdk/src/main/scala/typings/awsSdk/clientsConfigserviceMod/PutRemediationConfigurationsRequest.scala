@@ -18,7 +18,8 @@ object PutRemediationConfigurationsRequest {
     __obj.asInstanceOf[PutRemediationConfigurationsRequest]
   }
   
-  extension [Self <: PutRemediationConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRemediationConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setRemediationConfigurations(value: RemediationConfigurations): Self = StObject.set(x, "RemediationConfigurations", value.asInstanceOf[js.Any])
     

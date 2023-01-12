@@ -77,7 +77,8 @@ object IColumnDef {
     __obj.asInstanceOf[IColumnDef]
   }
   
-  extension [Self <: IColumnDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnDef] (val x: Self) extends AnyVal {
     
     inline def setAggLabelFilter(value: String): Self = StObject.set(x, "aggLabelFilter", value.asInstanceOf[js.Any])
     

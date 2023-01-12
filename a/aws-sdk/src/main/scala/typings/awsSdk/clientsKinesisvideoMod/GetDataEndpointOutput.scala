@@ -18,7 +18,8 @@ object GetDataEndpointOutput {
     __obj.asInstanceOf[GetDataEndpointOutput]
   }
   
-  extension [Self <: GetDataEndpointOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataEndpointOutput] (val x: Self) extends AnyVal {
     
     inline def setDataEndpoint(value: DataEndpoint): Self = StObject.set(x, "DataEndpoint", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PinRemediation {
     __obj.asInstanceOf[PinRemediation]
   }
   
-  extension [Self <: PinRemediation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinRemediation] (val x: Self) extends AnyVal {
     
     inline def setIsTransitive(value: Boolean): Self = StObject.set(x, "isTransitive", value.asInstanceOf[js.Any])
   }

@@ -32,7 +32,8 @@ object CoverageEligibilityRequestSupportingInfo {
     __obj.asInstanceOf[CoverageEligibilityRequestSupportingInfo]
   }
   
-  extension [Self <: CoverageEligibilityRequestSupportingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageEligibilityRequestSupportingInfo] (val x: Self) extends AnyVal {
     
     inline def setAppliesToAll(value: Boolean): Self = StObject.set(x, "appliesToAll", value.asInstanceOf[js.Any])
     

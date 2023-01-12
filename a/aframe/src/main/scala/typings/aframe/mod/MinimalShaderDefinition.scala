@@ -21,7 +21,8 @@ object MinimalShaderDefinition {
     __obj.asInstanceOf[MinimalShaderDefinition]
   }
   
-  extension [Self <: MinimalShaderDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimalShaderDefinition] (val x: Self) extends AnyVal {
     
     inline def setSchema(
       value: Schema_[

@@ -19,7 +19,8 @@ object APIResponseSuccess {
     __obj.asInstanceOf[APIResponseSuccess]
   }
   
-  extension [Self <: APIResponseSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIResponseSuccess] (val x: Self) extends AnyVal {
     
     inline def setData(value: APIResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

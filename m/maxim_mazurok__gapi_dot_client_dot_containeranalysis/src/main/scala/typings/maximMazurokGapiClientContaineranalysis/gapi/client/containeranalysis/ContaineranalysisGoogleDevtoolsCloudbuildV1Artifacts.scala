@@ -26,7 +26,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1Artifacts] (val x: Self) extends AnyVal {
     
     inline def setImages(value: js.Array[String]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

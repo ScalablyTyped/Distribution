@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[BufferOptions]
     }
     
-    extension [Self <: BufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
       
       inline def setRetriesInMilliseconds(value: Double): Self = StObject.set(x, "retriesInMilliseconds", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[LogglyOptions]
     }
     
-    extension [Self <: LogglyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogglyOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

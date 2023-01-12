@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[NavTabProps]
     }
     
-    extension [Self <: NavTabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavTabProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClickOnActive(value: Boolean): Self = StObject.set(x, "allowClickOnActive", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object mod {
       __obj.asInstanceOf[RoutedTabsProps]
     }
     
-    extension [Self <: RoutedTabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutedTabsProps] (val x: Self) extends AnyVal {
       
       inline def setActiveTabClassName(value: String): Self = StObject.set(x, "activeTabClassName", value.asInstanceOf[js.Any])
       

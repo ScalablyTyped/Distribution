@@ -19,7 +19,8 @@ object StreamingSideInputLocation {
     __obj.asInstanceOf[StreamingSideInputLocation]
   }
   
-  extension [Self <: StreamingSideInputLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSideInputLocation] (val x: Self) extends AnyVal {
     
     inline def setStateFamily(value: String): Self = StObject.set(x, "stateFamily", value.asInstanceOf[js.Any])
     

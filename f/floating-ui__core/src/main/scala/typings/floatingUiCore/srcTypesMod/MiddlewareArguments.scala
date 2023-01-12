@@ -39,7 +39,8 @@ object MiddlewareArguments {
     __obj.asInstanceOf[MiddlewareArguments]
   }
   
-  extension [Self <: MiddlewareArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MiddlewareArguments] (val x: Self) extends AnyVal {
     
     inline def setElements(value: Elements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

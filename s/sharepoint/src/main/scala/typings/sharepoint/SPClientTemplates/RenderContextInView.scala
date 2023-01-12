@@ -277,7 +277,8 @@ object RenderContextInView {
     __obj.asInstanceOf[RenderContextInView]
   }
   
-  extension [Self <: RenderContextInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextInView] (val x: Self) extends AnyVal {
     
     inline def setAllowCreateFolder(value: Boolean): Self = StObject.set(x, "AllowCreateFolder", value.asInstanceOf[js.Any])
     

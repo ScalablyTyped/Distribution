@@ -48,7 +48,8 @@ object EmailTemplateRequest {
     __obj.asInstanceOf[EmailTemplateRequest]
   }
   
-  extension [Self <: EmailTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultSubstitutions(value: string): Self = StObject.set(x, "DefaultSubstitutions", value.asInstanceOf[js.Any])
     

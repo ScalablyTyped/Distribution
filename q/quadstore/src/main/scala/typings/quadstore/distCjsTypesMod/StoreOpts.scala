@@ -24,7 +24,8 @@ object StoreOpts {
     __obj.asInstanceOf[StoreOpts]
   }
   
-  extension [Self <: StoreOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreOpts] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: AbstractLevel[Any, Any, Any]): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[AutoSuggester_]
     }
     
-    extension [Self <: AutoSuggester_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoSuggester_] (val x: Self) extends AnyVal {
       
       inline def setAutosuggest(value: String => js.Array[String]): Self = StObject.set(x, "autosuggest", js.Any.fromFunction1(value))
     }

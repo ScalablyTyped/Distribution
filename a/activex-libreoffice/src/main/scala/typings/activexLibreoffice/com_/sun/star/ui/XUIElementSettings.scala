@@ -52,7 +52,8 @@ object XUIElementSettings {
     __obj.asInstanceOf[XUIElementSettings]
   }
   
-  extension [Self <: XUIElementSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIElementSettings] (val x: Self) extends AnyVal {
     
     inline def setGetSettings(value: Boolean => XIndexAccess): Self = StObject.set(x, "getSettings", js.Any.fromFunction1(value))
     

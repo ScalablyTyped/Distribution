@@ -18,7 +18,8 @@ object RatingSelectEvent {
     __obj.asInstanceOf[RatingSelectEvent]
   }
   
-  extension [Self <: RatingSelectEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingSelectEvent] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

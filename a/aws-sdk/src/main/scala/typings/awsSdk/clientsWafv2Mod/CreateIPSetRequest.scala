@@ -43,7 +43,8 @@ object CreateIPSetRequest {
     __obj.asInstanceOf[CreateIPSetRequest]
   }
   
-  extension [Self <: CreateIPSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIPSetRequest] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: IPAddresses): Self = StObject.set(x, "Addresses", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TimeRange {
     __obj.asInstanceOf[TimeRange]
   }
   
-  extension [Self <: TimeRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRange] (val x: Self) extends AnyVal {
     
     inline def setFromInclusive(value: js.Date): Self = StObject.set(x, "FromInclusive", value.asInstanceOf[js.Any])
     

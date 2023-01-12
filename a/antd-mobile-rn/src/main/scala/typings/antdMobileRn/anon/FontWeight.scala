@@ -32,7 +32,8 @@ object FontWeight {
     __obj.asInstanceOf[FontWeight]
   }
   
-  extension [Self <: FontWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeight] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object XpackUsageSecurity {
     __obj.asInstanceOf[XpackUsageSecurity]
   }
   
-  extension [Self <: XpackUsageSecurity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSecurity] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: XpackUsageFeatureToggle): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

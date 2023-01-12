@@ -46,7 +46,8 @@ object ContactsModule {
     __obj.asInstanceOf[ContactsModule]
   }
   
-  extension [Self <: ContactsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactsModule] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

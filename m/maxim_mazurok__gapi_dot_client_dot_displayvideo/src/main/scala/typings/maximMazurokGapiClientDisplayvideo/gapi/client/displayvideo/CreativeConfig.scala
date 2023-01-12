@@ -22,7 +22,8 @@ object CreativeConfig {
     __obj.asInstanceOf[CreativeConfig]
   }
   
-  extension [Self <: CreativeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeConfig] (val x: Self) extends AnyVal {
     
     inline def setCreativeType(value: String): Self = StObject.set(x, "creativeType", value.asInstanceOf[js.Any])
     

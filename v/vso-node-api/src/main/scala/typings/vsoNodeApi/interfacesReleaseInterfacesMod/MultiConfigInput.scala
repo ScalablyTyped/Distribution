@@ -22,7 +22,8 @@ object MultiConfigInput {
     __obj.asInstanceOf[MultiConfigInput]
   }
   
-  extension [Self <: MultiConfigInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiConfigInput] (val x: Self) extends AnyVal {
     
     inline def setMultipliers(value: String): Self = StObject.set(x, "multipliers", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object IssuerDetails {
     __obj.asInstanceOf[IssuerDetails]
   }
   
-  extension [Self <: IssuerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerDetails] (val x: Self) extends AnyVal {
     
     inline def setKeyFingerprint(value: String): Self = StObject.set(x, "KeyFingerprint", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object esMentionsContextMod extends Shortcut {
       __obj.asInstanceOf[MentionsContextProps]
     }
     
-    extension [Self <: MentionsContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MentionsContextProps] (val x: Self) extends AnyVal {
       
       inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       

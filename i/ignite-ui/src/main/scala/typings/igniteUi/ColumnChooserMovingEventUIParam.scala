@@ -33,7 +33,8 @@ object ColumnChooserMovingEventUIParam {
     __obj.asInstanceOf[ColumnChooserMovingEventUIParam]
   }
   
-  extension [Self <: ColumnChooserMovingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnChooserMovingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LabelStyle {
     __obj.asInstanceOf[LabelStyle]
   }
   
-  extension [Self <: LabelStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelStyle] (val x: Self) extends AnyVal {
     
     inline def setLabelStyle(value: FontWeightNumber): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     

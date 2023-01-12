@@ -20,7 +20,8 @@ object TypeofLoaderExtend {
     __obj.asInstanceOf[TypeofLoaderExtend]
   }
   
-  extension [Self <: TypeofLoaderExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofLoaderExtend] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Loader): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

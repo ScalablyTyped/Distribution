@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Camelcase]
     }
     
-    extension [Self <: Camelcase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Camelcase] (val x: Self) extends AnyVal {
       
       inline def setCamelcase(value: Boolean): Self = StObject.set(x, "camelcase", value.asInstanceOf[js.Any])
       

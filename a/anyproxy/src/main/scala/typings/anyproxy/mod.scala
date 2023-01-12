@@ -173,7 +173,8 @@ object mod {
       __obj.asInstanceOf[BeforeDealHttpsRequestDetail]
     }
     
-    extension [Self <: BeforeDealHttpsRequestDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeDealHttpsRequestDetail] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object mod {
       __obj.asInstanceOf[BeforeSendRequestResult]
     }
     
-    extension [Self <: BeforeSendRequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSendRequestResult] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
@@ -242,7 +244,8 @@ object mod {
       __obj.asInstanceOf[BeforeSendResponseResult]
     }
     
-    extension [Self <: BeforeSendResponseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSendResponseResult] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: PartialResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
@@ -304,7 +307,8 @@ object mod {
       __obj.asInstanceOf[ProxyOptions]
     }
     
-    extension [Self <: ProxyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
       
       inline def setDangerouslyIgnoreUnauthorized(value: Boolean): Self = StObject.set(x, "dangerouslyIgnoreUnauthorized", value.asInstanceOf[js.Any])
       
@@ -410,7 +414,8 @@ object mod {
       __obj.asInstanceOf[RecorderInfo]
     }
     
-    extension [Self <: RecorderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecorderInfo] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -471,7 +476,8 @@ object mod {
       __obj.asInstanceOf[RequestDetail]
     }
     
-    extension [Self <: RequestDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDetail] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
@@ -500,7 +506,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -523,7 +530,8 @@ object mod {
       __obj.asInstanceOf[ResponseDetail]
     }
     
-    extension [Self <: ResponseDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseDetail] (val x: Self) extends AnyVal {
       
       inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
@@ -590,7 +598,8 @@ object mod {
       __obj.asInstanceOf[RuleModule]
     }
     
-    extension [Self <: RuleModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuleModule] (val x: Self) extends AnyVal {
       
       inline def setBeforeDealHttpsRequest(value: /* requestDetail */ BeforeDealHttpsRequestDetail => MaybePromise[Boolean]): Self = StObject.set(x, "beforeDealHttpsRequest", js.Any.fromFunction1(value))
       
@@ -641,7 +650,8 @@ object mod {
       __obj.asInstanceOf[WebInterfaceOptions]
     }
     
-    extension [Self <: WebInterfaceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebInterfaceOptions] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object IPathBezierSeed {
     __obj.asInstanceOf[IPathBezierSeed]
   }
   
-  extension [Self <: IPathBezierSeed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathBezierSeed] (val x: Self) extends AnyVal {
     
     inline def setControls(value: js.Array[IPoint]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     

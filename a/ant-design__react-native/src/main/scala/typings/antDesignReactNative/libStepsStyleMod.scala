@@ -97,7 +97,8 @@ object libStepsStyleMod {
       __obj.asInstanceOf[StepsStyle]
     }
     
-    extension [Self <: StepsStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsStyle] (val x: Self) extends AnyVal {
       
       inline def setContent_l(value: ViewStyle): Self = StObject.set(x, "content_l", value.asInstanceOf[js.Any])
       

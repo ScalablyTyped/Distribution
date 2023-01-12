@@ -32,7 +32,8 @@ object AngularBBox {
     __obj.asInstanceOf[AngularBBox]
   }
   
-  extension [Self <: AngularBBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularBBox] (val x: Self) extends AnyVal {
     
     inline def setAngularBBox(value: js.Array[Double]): Self = StObject.set(x, "angularBBox", value.asInstanceOf[js.Any])
     

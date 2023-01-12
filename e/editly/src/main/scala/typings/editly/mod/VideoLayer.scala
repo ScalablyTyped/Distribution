@@ -108,7 +108,8 @@ object VideoLayer {
     __obj.asInstanceOf[VideoLayer]
   }
   
-  extension [Self <: VideoLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoLayer] (val x: Self) extends AnyVal {
     
     inline def setCutFrom(value: Double): Self = StObject.set(x, "cutFrom", value.asInstanceOf[js.Any])
     

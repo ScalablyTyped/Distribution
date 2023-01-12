@@ -58,7 +58,8 @@ object CollectingState {
     __obj.asInstanceOf[CollectingState]
   }
   
-  extension [Self <: CollectingState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectingState] (val x: Self) extends AnyVal {
     
     inline def setAfterCritical(value: LiftEffect): Self = StObject.set(x, "afterCritical", value.asInstanceOf[js.Any])
     

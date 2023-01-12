@@ -32,7 +32,8 @@ object servicesMatrixMod {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: js.Array[Double]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object servicesMatrixMod {
       __obj.asInstanceOf[MatrixRequest]
     }
     
-    extension [Self <: MatrixRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixRequest] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[DirectionsAnnotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object servicesMatrixMod {
       __obj.asInstanceOf[MatrixResponse]
     }
     
-    extension [Self <: MatrixResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixResponse] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object servicesMatrixMod {
       __obj.asInstanceOf[MatrixService]
     }
     
-    extension [Self <: MatrixService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixService] (val x: Self) extends AnyVal {
       
       inline def setGetMatrix(value: MatrixRequest => MapiRequest[MatrixResponse]): Self = StObject.set(x, "getMatrix", js.Any.fromFunction1(value))
     }

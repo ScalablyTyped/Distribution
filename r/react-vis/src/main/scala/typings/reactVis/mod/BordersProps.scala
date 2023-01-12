@@ -29,7 +29,8 @@ object BordersProps {
     __obj.asInstanceOf[BordersProps]
   }
   
-  extension [Self <: BordersProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BordersProps] (val x: Self) extends AnyVal {
     
     inline def setInnerHeight(value: Double): Self = StObject.set(x, "innerHeight", value.asInstanceOf[js.Any])
     

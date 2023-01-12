@@ -61,7 +61,8 @@ object ControllerDatasetOptions {
     __obj.asInstanceOf[ControllerDatasetOptions]
   }
   
-  extension [Self <: ControllerDatasetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControllerDatasetOptions] (val x: Self) extends AnyVal {
     
     inline def setClip(value: Double | ChartArea | `false`): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     

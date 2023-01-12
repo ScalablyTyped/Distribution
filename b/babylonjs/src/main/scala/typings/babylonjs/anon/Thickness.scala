@@ -28,7 +28,8 @@ object Thickness {
     __obj.asInstanceOf[Thickness]
   }
   
-  extension [Self <: Thickness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Thickness] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

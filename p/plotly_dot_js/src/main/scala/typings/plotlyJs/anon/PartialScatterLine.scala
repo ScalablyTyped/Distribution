@@ -32,7 +32,8 @@ object PartialScatterLine {
     __obj.asInstanceOf[PartialScatterLine]
   }
   
-  extension [Self <: PartialScatterLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialScatterLine] (val x: Self) extends AnyVal {
     
     inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

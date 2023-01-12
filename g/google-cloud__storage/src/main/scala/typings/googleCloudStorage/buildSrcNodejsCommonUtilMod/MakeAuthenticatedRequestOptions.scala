@@ -22,7 +22,8 @@ object MakeAuthenticatedRequestOptions {
     __obj.asInstanceOf[MakeAuthenticatedRequestOptions]
   }
   
-  extension [Self <: MakeAuthenticatedRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setOnAuthenticated(value: (/* err */ js.Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit): Self = StObject.set(x, "onAuthenticated", js.Any.fromFunction2(value))
   }

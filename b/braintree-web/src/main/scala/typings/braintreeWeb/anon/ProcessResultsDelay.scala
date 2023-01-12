@@ -15,7 +15,8 @@ object ProcessResultsDelay {
     __obj.asInstanceOf[ProcessResultsDelay]
   }
   
-  extension [Self <: ProcessResultsDelay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessResultsDelay] (val x: Self) extends AnyVal {
     
     inline def setProcessResultsDelay(value: Double): Self = StObject.set(x, "processResultsDelay", value.asInstanceOf[js.Any])
     

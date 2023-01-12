@@ -17,7 +17,8 @@ object DialogflowV1MessageBasicCardButton {
     __obj.asInstanceOf[DialogflowV1MessageBasicCardButton]
   }
   
-  extension [Self <: DialogflowV1MessageBasicCardButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageBasicCardButton] (val x: Self) extends AnyVal {
     
     inline def setOpenUrlAction(value: DialogflowV1MessageBasicCardButtonAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     

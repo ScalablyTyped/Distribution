@@ -29,7 +29,8 @@ object Archivedstate {
     __obj.asInstanceOf[Archivedstate]
   }
   
-  extension [Self <: Archivedstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Archivedstate] (val x: Self) extends AnyVal {
     
     inline def setArchived_state(value: all | archived_ | not_archived): Self = StObject.set(x, "archived_state", value.asInstanceOf[js.Any])
     

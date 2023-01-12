@@ -80,7 +80,8 @@ object Directions {
          with Transport
   }
   
-  extension [Self <: Directions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Directions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Double => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     

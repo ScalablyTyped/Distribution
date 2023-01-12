@@ -25,7 +25,8 @@ object ErrorEventInit {
     __obj.asInstanceOf[ErrorEventInit]
   }
   
-  extension [Self <: ErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object libPlotsTinyColumnChartMod extends Shortcut {
       __obj.asInstanceOf[Opt]
     }
     
-    extension [Self <: Opt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -271,7 +272,8 @@ object libPlotsTinyColumnChartMod extends Shortcut {
       __obj.asInstanceOf[TinyColumnOptions]
     }
     
-    extension [Self <: TinyColumnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TinyColumnOptions] (val x: Self) extends AnyVal {
       
       inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
       

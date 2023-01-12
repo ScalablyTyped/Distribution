@@ -41,7 +41,8 @@ object ContactMapActivatedEventArgs {
     __obj.asInstanceOf[ContactMapActivatedEventArgs]
   }
   
-  extension [Self <: ContactMapActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactMapActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: ContactAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

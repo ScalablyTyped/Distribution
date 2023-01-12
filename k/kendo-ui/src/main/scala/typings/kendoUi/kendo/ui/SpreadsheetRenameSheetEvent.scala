@@ -20,7 +20,8 @@ object SpreadsheetRenameSheetEvent {
     __obj.asInstanceOf[SpreadsheetRenameSheetEvent]
   }
   
-  extension [Self <: SpreadsheetRenameSheetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetRenameSheetEvent] (val x: Self) extends AnyVal {
     
     inline def setNewSheetName(value: String): Self = StObject.set(x, "newSheetName", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object device {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object device {
       __obj.asInstanceOf[ICordova]
     }
     
-    extension [Self <: ICordova](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
       
       inline def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object device {
       __obj.asInstanceOf[IPhoneGap]
     }
     
-    extension [Self <: IPhoneGap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPhoneGap] (val x: Self) extends AnyVal {
       
       inline def setCordova(value: String): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object device {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setOpenURL(value: /* url */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "openURL", js.Any.fromFunction1(value))
       

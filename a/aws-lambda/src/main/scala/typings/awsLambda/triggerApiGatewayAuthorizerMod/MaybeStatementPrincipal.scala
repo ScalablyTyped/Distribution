@@ -17,7 +17,8 @@ object MaybeStatementPrincipal {
     __obj.asInstanceOf[MaybeStatementPrincipal]
   }
   
-  extension [Self <: MaybeStatementPrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaybeStatementPrincipal] (val x: Self) extends AnyVal {
     
     inline def setNotPrincipal(value: PrincipalValue): Self = StObject.set(x, "NotPrincipal", value.asInstanceOf[js.Any])
     

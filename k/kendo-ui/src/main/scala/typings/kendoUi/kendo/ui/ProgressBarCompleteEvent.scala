@@ -17,7 +17,8 @@ object ProgressBarCompleteEvent {
     __obj.asInstanceOf[ProgressBarCompleteEvent]
   }
   
-  extension [Self <: ProgressBarCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

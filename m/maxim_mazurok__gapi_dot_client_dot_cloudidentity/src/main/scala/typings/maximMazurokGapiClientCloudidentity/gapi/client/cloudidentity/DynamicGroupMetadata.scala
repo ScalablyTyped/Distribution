@@ -19,7 +19,8 @@ object DynamicGroupMetadata {
     __obj.asInstanceOf[DynamicGroupMetadata]
   }
   
-  extension [Self <: DynamicGroupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicGroupMetadata] (val x: Self) extends AnyVal {
     
     inline def setQueries(value: js.Array[DynamicGroupQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     

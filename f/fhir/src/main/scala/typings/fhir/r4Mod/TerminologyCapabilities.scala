@@ -183,7 +183,8 @@ object TerminologyCapabilities {
     __obj.asInstanceOf[TerminologyCapabilities]
   }
   
-  extension [Self <: TerminologyCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilities] (val x: Self) extends AnyVal {
     
     inline def setClosure(value: TerminologyCapabilitiesClosure): Self = StObject.set(x, "closure", value.asInstanceOf[js.Any])
     

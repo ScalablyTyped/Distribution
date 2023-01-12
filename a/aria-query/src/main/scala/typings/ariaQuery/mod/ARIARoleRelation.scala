@@ -17,7 +17,8 @@ object ARIARoleRelation {
     __obj.asInstanceOf[ARIARoleRelation]
   }
   
-  extension [Self <: ARIARoleRelation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIARoleRelation] (val x: Self) extends AnyVal {
     
     inline def setConcept(value: ARIARoleRelationConcept): Self = StObject.set(x, "concept", value.asInstanceOf[js.Any])
     

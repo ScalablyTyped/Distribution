@@ -15,7 +15,8 @@ object RestoreDBClusterToPointInTimeResult {
     __obj.asInstanceOf[RestoreDBClusterToPointInTimeResult]
   }
   
-  extension [Self <: RestoreDBClusterToPointInTimeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreDBClusterToPointInTimeResult] (val x: Self) extends AnyVal {
     
     inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     

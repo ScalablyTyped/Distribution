@@ -19,7 +19,8 @@ object PlotSelectionEvent {
     __obj.asInstanceOf[PlotSelectionEvent]
   }
   
-  extension [Self <: PlotSelectionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSelectionEvent] (val x: Self) extends AnyVal {
     
     inline def setLassoPoints(value: SelectionRange): Self = StObject.set(x, "lassoPoints", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object libTypescriptElementsCircleMod {
       __obj.asInstanceOf[CircleProps]
     }
     
-    extension [Self <: CircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleProps] (val x: Self) extends AnyVal {
       
       inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
       

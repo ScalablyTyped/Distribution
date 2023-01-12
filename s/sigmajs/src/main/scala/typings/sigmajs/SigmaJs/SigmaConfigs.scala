@@ -25,7 +25,8 @@ object SigmaConfigs {
     __obj.asInstanceOf[SigmaConfigs]
   }
   
-  extension [Self <: SigmaConfigs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigmaConfigs] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

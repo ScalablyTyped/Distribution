@@ -17,7 +17,8 @@ object DirectionsBounds {
     __obj.asInstanceOf[DirectionsBounds]
   }
   
-  extension [Self <: DirectionsBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsBounds] (val x: Self) extends AnyVal {
     
     inline def setNortheast(value: LatLngLiteral): Self = StObject.set(x, "northeast", value.asInstanceOf[js.Any])
     

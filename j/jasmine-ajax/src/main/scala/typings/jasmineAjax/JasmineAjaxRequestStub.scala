@@ -41,7 +41,8 @@ object JasmineAjaxRequestStub {
     __obj.asInstanceOf[JasmineAjaxRequestStub]
   }
   
-  extension [Self <: JasmineAjaxRequestStub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JasmineAjaxRequestStub] (val x: Self) extends AnyVal {
     
     inline def setAndCallFunction(value: js.Function1[/* request */ JasmineAjaxRequest, Unit] => Unit): Self = StObject.set(x, "andCallFunction", js.Any.fromFunction1(value))
     

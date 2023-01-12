@@ -39,7 +39,8 @@ object libElementsMod {
       __obj.asInstanceOf[PathWithoutQuadratics]
     }
     
-    extension [Self <: PathWithoutQuadratics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathWithoutQuadratics] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[CommandWithoutQuadratics]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libElementsMod {
       __obj.asInstanceOf[Path_]
     }
     
-    extension [Self <: Path_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path_] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[Command]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object libElementsMod {
       __obj.asInstanceOf[SVGWithoutQuadratics]
     }
     
-    extension [Self <: SVGWithoutQuadratics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGWithoutQuadratics] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[PathWithoutQuadratics]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -139,7 +142,8 @@ object libElementsMod {
       __obj.asInstanceOf[SVG_]
     }
     
-    extension [Self <: SVG_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVG_] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Path_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

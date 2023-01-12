@@ -226,7 +226,8 @@ object mod {
       __obj.asInstanceOf[AskmethatRatingOptions]
     }
     
-    extension [Self <: AskmethatRatingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AskmethatRatingOptions] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

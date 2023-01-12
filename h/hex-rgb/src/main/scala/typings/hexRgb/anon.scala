@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Optionsformatarray]
     }
     
-    extension [Self <: Optionsformatarray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsformatarray] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[Optionsformatcss]
     }
     
-    extension [Self <: Optionsformatcss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsformatcss] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Optionsformatobject]
     }
     
-    extension [Self <: Optionsformatobject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsformatobject] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

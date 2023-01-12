@@ -19,7 +19,8 @@ object SHOWADDDIALOG {
     __obj.asInstanceOf[SHOWADDDIALOG]
   }
   
-  extension [Self <: SHOWADDDIALOG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SHOWADDDIALOG] (val x: Self) extends AnyVal {
     
     inline def setSHOW_ADD_DIALOG(value: showAddDialog): Self = StObject.set(x, "SHOW_ADD_DIALOG", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CanvasRenderingContext2D {
     __obj.asInstanceOf[CanvasRenderingContext2D]
   }
   
-  extension [Self <: CanvasRenderingContext2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasRenderingContext2D] (val x: Self) extends AnyVal {
     
     inline def setMsImageSmoothingEnabled(value: Boolean): Self = StObject.set(x, "msImageSmoothingEnabled", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object OnBeforeRequestDetailsTypeRequestBodyType {
     __obj.asInstanceOf[OnBeforeRequestDetailsTypeRequestBodyType]
   }
   
-  extension [Self <: OnBeforeRequestDetailsTypeRequestBodyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBeforeRequestDetailsTypeRequestBodyType] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

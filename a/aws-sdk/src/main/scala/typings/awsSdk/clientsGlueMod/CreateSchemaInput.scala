@@ -48,7 +48,8 @@ object CreateSchemaInput {
     __obj.asInstanceOf[CreateSchemaInput]
   }
   
-  extension [Self <: CreateSchemaInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSchemaInput] (val x: Self) extends AnyVal {
     
     inline def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
     

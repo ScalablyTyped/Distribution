@@ -35,7 +35,8 @@ object MeasureReportGroup {
     __obj.asInstanceOf[MeasureReportGroup]
   }
   
-  extension [Self <: MeasureReportGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasureReportGroup] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

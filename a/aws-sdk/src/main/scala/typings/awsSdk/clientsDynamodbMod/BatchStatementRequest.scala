@@ -28,7 +28,8 @@ object BatchStatementRequest {
     __obj.asInstanceOf[BatchStatementRequest]
   }
   
-  extension [Self <: BatchStatementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchStatementRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     

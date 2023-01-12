@@ -53,7 +53,8 @@ object ResourceComplianceSummaryItem {
     __obj.asInstanceOf[ResourceComplianceSummaryItem]
   }
   
-  extension [Self <: ResourceComplianceSummaryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceComplianceSummaryItem] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ComplianceTypeName): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     

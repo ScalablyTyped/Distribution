@@ -171,7 +171,8 @@ object dxDataGrid {
       __obj.asInstanceOf[AdaptiveDetailRowPreparingInfo]
     }
     
-    extension [Self <: AdaptiveDetailRowPreparingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdaptiveDetailRowPreparingInfo] (val x: Self) extends AnyVal {
       
       inline def setFormOptions(value: Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
     }
@@ -222,7 +223,8 @@ object dxDataGrid {
       __obj.asInstanceOf[CellClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellClickEvent[?, ?], TRowData, TKey](x: Self & (CellClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellClickEvent[?, ?], TRowData, TKey] (val x: Self & (CellClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -297,7 +299,8 @@ object dxDataGrid {
       __obj.asInstanceOf[CellDblClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellDblClickEvent[?, ?], TRowData, TKey](x: Self & (CellDblClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellDblClickEvent[?, ?], TRowData, TKey] (val x: Self & (CellDblClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -375,7 +378,8 @@ object dxDataGrid {
       __obj.asInstanceOf[CellHoverChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellHoverChangedEvent[?, ?], TRowData, TKey](x: Self & (CellHoverChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellHoverChangedEvent[?, ?], TRowData, TKey] (val x: Self & (CellHoverChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -462,7 +466,8 @@ object dxDataGrid {
       __obj.asInstanceOf[CellPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: CellPreparedEvent[?, ?], TRowData, TKey](x: Self & (CellPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (CellPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -816,7 +821,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnBase[TRowData]]
     }
     
-    extension [Self <: ColumnBase[?], TRowData](x: Self & ColumnBase[TRowData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnBase[?], TRowData] (val x: Self & ColumnBase[TRowData]) extends AnyVal {
       
       inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -1091,7 +1097,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnButtonBase]
     }
     
-    extension [Self <: ColumnButtonBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnButtonBase] (val x: Self) extends AnyVal {
       
       inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
@@ -1126,7 +1133,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnButtonClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnButtonClickEvent[?, ?], TRowData, TKey](x: Self & (ColumnButtonClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnButtonClickEvent[?, ?], TRowData, TKey] (val x: Self & (ColumnButtonClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1170,7 +1178,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnButtonTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnButtonTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnButtonTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnButtonTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnButtonTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1235,7 +1244,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1318,7 +1328,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnEditCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnEditCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnEditCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnEditCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnEditCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1401,7 +1412,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnGroupCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnGroupCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnGroupCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnGroupCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnGroupCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1456,7 +1468,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ColumnHeaderCellTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: ColumnHeaderCellTemplateData[?, ?], TRowData, TKey](x: Self & (ColumnHeaderCellTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnHeaderCellTemplateData[?, ?], TRowData, TKey] (val x: Self & (ColumnHeaderCellTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1516,7 +1529,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ContextMenuPreparingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: ContextMenuPreparingEvent[?, ?], TRowData, TKey](x: Self & (ContextMenuPreparingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextMenuPreparingEvent[?, ?], TRowData, TKey] (val x: Self & (ContextMenuPreparingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -1563,7 +1577,8 @@ object dxDataGrid {
       __obj.asInstanceOf[CustomSummaryInfo[TRowData, TKey]]
     }
     
-    extension [Self <: CustomSummaryInfo[?, ?], TRowData, TKey](x: Self & (CustomSummaryInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSummaryInfo[?, ?], TRowData, TKey] (val x: Self & (CustomSummaryInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -1600,7 +1615,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DataChangeInfo[TRowData, TKey]]
     }
     
-    extension [Self <: DataChangeInfo[?, ?], TRowData, TKey](x: Self & (DataChangeInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataChangeInfo[?, ?], TRowData, TKey] (val x: Self & (DataChangeInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setChanges(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -1631,7 +1647,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DataErrorOccurredInfo]
     }
     
-    extension [Self <: DataErrorOccurredInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataErrorOccurredInfo] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -1773,7 +1790,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DataRowTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: DataRowTemplateData[?, ?], TRowData, TKey](x: Self & (DataRowTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataRowTemplateData[?, ?], TRowData, TKey] (val x: Self & (DataRowTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -1814,7 +1832,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DragDropInfo]
     }
     
-    extension [Self <: DragDropInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragDropInfo] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
     }
@@ -1833,7 +1852,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DragReorderInfo]
     }
     
-    extension [Self <: DragReorderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragReorderInfo] (val x: Self) extends AnyVal {
       
       inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
@@ -1869,7 +1889,8 @@ object dxDataGrid {
       __obj.asInstanceOf[DragStartEventInfo[T, TRowData, TKey]]
     }
     
-    extension [Self <: DragStartEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (DragStartEventInfo[T, TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (DragStartEventInfo[T, TRowData, TKey])) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -1959,7 +1980,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Editing[TRowData, TKey]]
     }
     
-    extension [Self <: Editing[?, ?], TRowData, TKey](x: Self & (Editing[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Editing[?, ?], TRowData, TKey] (val x: Self & (Editing[TRowData, TKey])) extends AnyVal {
       
       inline def setAllowAdding(value: Boolean): Self = StObject.set(x, "allowAdding", value.asInstanceOf[js.Any])
       
@@ -2058,7 +2080,8 @@ object dxDataGrid {
       __obj.asInstanceOf[EditingBase[TRowData, TKey]]
     }
     
-    extension [Self <: EditingBase[?, ?], TRowData, TKey](x: Self & (EditingBase[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingBase[?, ?], TRowData, TKey] (val x: Self & (EditingBase[TRowData, TKey])) extends AnyVal {
       
       inline def setChanges(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -2130,7 +2153,8 @@ object dxDataGrid {
       __obj.asInstanceOf[EditingStartEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditingStartEvent[?, ?], TRowData, TKey](x: Self & (EditingStartEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingStartEvent[?, ?], TRowData, TKey] (val x: Self & (EditingStartEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumn(value: Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -2206,7 +2230,8 @@ object dxDataGrid {
       __obj.asInstanceOf[EditingTextsBase]
     }
     
-    extension [Self <: EditingTextsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditingTextsBase] (val x: Self) extends AnyVal {
       
       inline def setAddRow(value: String): Self = StObject.set(x, "addRow", value.asInstanceOf[js.Any])
       
@@ -2295,7 +2320,8 @@ object dxDataGrid {
       __obj.asInstanceOf[EditorPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditorPreparedEvent[?, ?], TRowData, TKey](x: Self & (EditorPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (EditorPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
       
@@ -2383,7 +2409,8 @@ object dxDataGrid {
       __obj.asInstanceOf[EditorPreparingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: EditorPreparingEvent[?, ?], TRowData, TKey](x: Self & (EditorPreparingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorPreparingEvent[?, ?], TRowData, TKey] (val x: Self & (EditorPreparingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -2488,7 +2515,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ExcelCellInfo[TRowData, TKey]]
     }
     
-    extension [Self <: ExcelCellInfo[?, ?], TRowData, TKey](x: Self & (ExcelCellInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelCellInfo[?, ?], TRowData, TKey] (val x: Self & (ExcelCellInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -2877,7 +2905,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ExplicitTypes[TRowData, TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?, ?], TRowData, TKey](x: Self & (ExplicitTypes[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?, ?], TRowData, TKey] (val x: Self & (ExplicitTypes[TRowData, TKey])) extends AnyVal {
       
       inline def setAdaptiveDetailRowPreparingEvent(value: AdaptiveDetailRowPreparingEvent[TRowData, TKey]): Self = StObject.set(x, "AdaptiveDetailRowPreparingEvent", value.asInstanceOf[js.Any])
       
@@ -3112,7 +3141,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Export[TRowData, TKey]]
     }
     
-    extension [Self <: Export[?, ?], TRowData, TKey](x: Self & (Export[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Export[?, ?], TRowData, TKey] (val x: Self & (Export[TRowData, TKey])) extends AnyVal {
       
       inline def setAllowExportSelectedData(value: Boolean): Self = StObject.set(x, "allowExportSelectedData", value.asInstanceOf[js.Any])
       
@@ -3182,7 +3212,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ExportTexts]
     }
     
-    extension [Self <: ExportTexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportTexts] (val x: Self) extends AnyVal {
       
       inline def setExportAll(value: String): Self = StObject.set(x, "exportAll", value.asInstanceOf[js.Any])
       
@@ -3223,7 +3254,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ExportingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: ExportingEvent[?, ?], TRowData, TKey](x: Self & (ExportingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportingEvent[?, ?], TRowData, TKey] (val x: Self & (ExportingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -3256,7 +3288,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FileSavingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FileSavingEvent[?, ?], TRowData, TKey](x: Self & (FileSavingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSavingEvent[?, ?], TRowData, TKey] (val x: Self & (FileSavingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -3303,7 +3336,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FilterPanel[T, TRowData, TKey]]
     }
     
-    extension [Self <: FilterPanel[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (FilterPanel[T, TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPanel[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (FilterPanel[T, TRowData, TKey])) extends AnyVal {
       
       inline def setCustomizeText(value: /* e */ FilterPanelCustomizeTextArg[T] => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
       
@@ -3338,7 +3372,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FilterPanelCustomizeTextArg[T]]
     }
     
-    extension [Self <: FilterPanelCustomizeTextArg[?], T](x: Self & FilterPanelCustomizeTextArg[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterPanelCustomizeTextArg[?], T] (val x: Self & FilterPanelCustomizeTextArg[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -3381,7 +3416,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FocusedCellChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedCellChangedEvent[?, ?], TRowData, TKey](x: Self & (FocusedCellChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedCellChangedEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedCellChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -3438,7 +3474,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FocusedCellChangingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedCellChangingEvent[?, ?], TRowData, TKey](x: Self & (FocusedCellChangingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedCellChangingEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedCellChangingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setCellElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "cellElement", value.asInstanceOf[js.Any])
       
@@ -3484,7 +3521,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FocusedRowChangedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedRowChangedEvent[?, ?], TRowData, TKey](x: Self & (FocusedRowChangedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedRowChangedEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedRowChangedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setRow(value: Row[TRowData, TKey]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
@@ -3523,7 +3561,8 @@ object dxDataGrid {
       __obj.asInstanceOf[FocusedRowChangingEvent[TRowData, TKey]]
     }
     
-    extension [Self <: FocusedRowChangingEvent[?, ?], TRowData, TKey](x: Self & (FocusedRowChangingEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusedRowChangingEvent[?, ?], TRowData, TKey] (val x: Self & (FocusedRowChangingEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setNewRowIndex(value: Double): Self = StObject.set(x, "newRowIndex", value.asInstanceOf[js.Any])
       
@@ -3575,7 +3614,8 @@ object dxDataGrid {
       __obj.asInstanceOf[GroupData[TRowData]]
     }
     
-    extension [Self <: GroupData[?], TRowData](x: Self & GroupData[TRowData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupData[?], TRowData] (val x: Self & GroupData[TRowData]) extends AnyVal {
       
       inline def setAggregates(value: js.Array[Any]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
       
@@ -3642,7 +3682,8 @@ object dxDataGrid {
       __obj.asInstanceOf[GroupPanel]
     }
     
-    extension [Self <: GroupPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupPanel] (val x: Self) extends AnyVal {
       
       inline def setAllowColumnDragging(value: Boolean): Self = StObject.set(x, "allowColumnDragging", value.asInstanceOf[js.Any])
       
@@ -3692,7 +3733,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Grouping]
     }
     
-    extension [Self <: Grouping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grouping] (val x: Self) extends AnyVal {
       
       inline def setAllowCollapsing(value: Boolean): Self = StObject.set(x, "allowCollapsing", value.asInstanceOf[js.Any])
       
@@ -3750,7 +3792,8 @@ object dxDataGrid {
       __obj.asInstanceOf[GroupingTexts]
     }
     
-    extension [Self <: GroupingTexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupingTexts] (val x: Self) extends AnyVal {
       
       inline def setGroupByThisColumn(value: String): Self = StObject.set(x, "groupByThisColumn", value.asInstanceOf[js.Any])
       
@@ -3842,7 +3885,8 @@ object dxDataGrid {
       __obj.asInstanceOf[KeyDownInfo]
     }
     
-    extension [Self <: KeyDownInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyDownInfo] (val x: Self) extends AnyVal {
       
       inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     }
@@ -3882,7 +3926,8 @@ object dxDataGrid {
       __obj.asInstanceOf[MasterDetail[TRowData, TKey]]
     }
     
-    extension [Self <: MasterDetail[?, ?], TRowData, TKey](x: Self & (MasterDetail[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasterDetail[?, ?], TRowData, TKey] (val x: Self & (MasterDetail[TRowData, TKey])) extends AnyVal {
       
       inline def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
       
@@ -3923,7 +3968,8 @@ object dxDataGrid {
       __obj.asInstanceOf[MasterDetailTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: MasterDetailTemplateData[?, ?], TRowData, TKey](x: Self & (MasterDetailTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MasterDetailTemplateData[?, ?], TRowData, TKey] (val x: Self & (MasterDetailTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -3948,7 +3994,8 @@ object dxDataGrid {
       __obj.asInstanceOf[NewRowInfo[TRowData]]
     }
     
-    extension [Self <: NewRowInfo[?], TRowData](x: Self & NewRowInfo[TRowData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewRowInfo[?], TRowData] (val x: Self & NewRowInfo[TRowData]) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4001,7 +4048,8 @@ object dxDataGrid {
       __obj.asInstanceOf[PagingBase]
     }
     
-    extension [Self <: PagingBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagingBase] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -4078,7 +4126,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Row[TRowData, TKey]]
     }
     
-    extension [Self <: Row[?, ?], TRowData, TKey](x: Self & (Row[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row[?, ?], TRowData, TKey] (val x: Self & (Row[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4160,7 +4209,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowClickEvent[?, ?], TRowData, TKey](x: Self & (RowClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowClickEvent[?, ?], TRowData, TKey] (val x: Self & (RowClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -4268,7 +4318,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowDblClickEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowDblClickEvent[?, ?], TRowData, TKey](x: Self & (RowDblClickEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDblClickEvent[?, ?], TRowData, TKey] (val x: Self & (RowDblClickEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -4458,7 +4509,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowDragging[T, TRowData, TKey]]
     }
     
-    extension [Self <: RowDragging[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (RowDragging[T, TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDragging[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (RowDragging[T, TRowData, TKey])) extends AnyVal {
       
       inline def setAllowDropInsideItem(value: Boolean): Self = StObject.set(x, "allowDropInsideItem", value.asInstanceOf[js.Any])
       
@@ -4668,7 +4720,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowDraggingEventInfo[T, TRowData, TKey]]
     }
     
-    extension [Self <: RowDraggingEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (RowDraggingEventInfo[T, TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (RowDraggingEventInfo[T, TRowData, TKey])) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -4775,7 +4828,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowDraggingTemplateDataModel[TRowData]]
     }
     
-    extension [Self <: RowDraggingTemplateDataModel[?], TRowData](x: Self & RowDraggingTemplateDataModel[TRowData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingTemplateDataModel[?], TRowData] (val x: Self & RowDraggingTemplateDataModel[TRowData]) extends AnyVal {
       
       inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
       
@@ -4841,7 +4895,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowInsertedInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowInsertedInfo[?, ?], TRowData, TKey](x: Self & (RowInsertedInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowInsertedInfo[?, ?], TRowData, TKey] (val x: Self & (RowInsertedInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -4881,7 +4936,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowInsertingInfo[TRowData]]
     }
     
-    extension [Self <: RowInsertingInfo[?], TRowData](x: Self & RowInsertingInfo[TRowData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowInsertingInfo[?], TRowData] (val x: Self & RowInsertingInfo[TRowData]) extends AnyVal {
       
       inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -4900,7 +4956,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowKeyInfo[TKey]]
     }
     
-    extension [Self <: RowKeyInfo[?], TKey](x: Self & RowKeyInfo[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowKeyInfo[?], TKey] (val x: Self & RowKeyInfo[TKey]) extends AnyVal {
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -4949,7 +5006,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowPreparedEvent[TRowData, TKey]]
     }
     
-    extension [Self <: RowPreparedEvent[?, ?], TRowData, TKey](x: Self & (RowPreparedEvent[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowPreparedEvent[?, ?], TRowData, TKey] (val x: Self & (RowPreparedEvent[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -5020,7 +5078,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowRemovedInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowRemovedInfo[?, ?], TRowData, TKey](x: Self & (RowRemovedInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRemovedInfo[?, ?], TRowData, TKey] (val x: Self & (RowRemovedInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -5063,7 +5122,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowRemovingInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowRemovingInfo[?, ?], TRowData, TKey](x: Self & (RowRemovingInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowRemovingInfo[?, ?], TRowData, TKey] (val x: Self & (RowRemovingInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5110,7 +5170,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowTemplateData[TRowData, TKey]]
     }
     
-    extension [Self <: RowTemplateData[?, ?], TRowData, TKey](x: Self & (RowTemplateData[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowTemplateData[?, ?], TRowData, TKey] (val x: Self & (RowTemplateData[TRowData, TKey])) extends AnyVal {
       
       inline def setColumns(value: js.Array[Column[TRowData, TKey]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -5177,7 +5238,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowUpdatedInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowUpdatedInfo[?, ?], TRowData, TKey](x: Self & (RowUpdatedInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowUpdatedInfo[?, ?], TRowData, TKey] (val x: Self & (RowUpdatedInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -5223,7 +5285,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowUpdatingInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowUpdatingInfo[?, ?], TRowData, TKey](x: Self & (RowUpdatingInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowUpdatingInfo[?, ?], TRowData, TKey] (val x: Self & (RowUpdatingInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5292,7 +5355,8 @@ object dxDataGrid {
       __obj.asInstanceOf[RowValidatingInfo[TRowData, TKey]]
     }
     
-    extension [Self <: RowValidatingInfo[?, ?], TRowData, TKey](x: Self & (RowValidatingInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowValidatingInfo[?, ?], TRowData, TKey] (val x: Self & (RowValidatingInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setBrokenRules(
         value: js.Array[
@@ -5371,7 +5435,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SavingInfo[TRowData, TKey]]
     }
     
-    extension [Self <: SavingInfo[?, ?], TRowData, TKey](x: Self & (SavingInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavingInfo[?, ?], TRowData, TKey] (val x: Self & (SavingInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -5510,7 +5575,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Scrollable]
     }
     
-    extension [Self <: Scrollable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
       
       inline def set$element(value: () => UserDefinedElement[Element]): Self = StObject.set(x, "$element", js.Any.fromFunction0(value))
       
@@ -5574,7 +5640,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Scrolling]
     }
     
-    extension [Self <: Scrolling](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scrolling] (val x: Self) extends AnyVal {
       
       inline def setMode(value: DataGridScrollMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -5631,7 +5698,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ScrollingBase]
     }
     
-    extension [Self <: ScrollingBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollingBase] (val x: Self) extends AnyVal {
       
       inline def setColumnRenderingMode(value: DataRenderMode): Self = StObject.set(x, "columnRenderingMode", value.asInstanceOf[js.Any])
       
@@ -5695,7 +5763,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Selection]
     }
     
-    extension [Self <: Selection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Selection] (val x: Self) extends AnyVal {
       
       inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
       
@@ -5730,7 +5799,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SelectionBase]
     }
     
-    extension [Self <: SelectionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionBase] (val x: Self) extends AnyVal {
       
       inline def setAllowSelectAll(value: Boolean): Self = StObject.set(x, "allowSelectAll", value.asInstanceOf[js.Any])
       
@@ -5783,7 +5853,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SelectionChangedInfo[TRowData, TKey]]
     }
     
-    extension [Self <: SelectionChangedInfo[?, ?], TRowData, TKey](x: Self & (SelectionChangedInfo[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedInfo[?, ?], TRowData, TKey] (val x: Self & (SelectionChangedInfo[TRowData, TKey])) extends AnyVal {
       
       inline def setCurrentDeselectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "currentDeselectedRowKeys", value.asInstanceOf[js.Any])
       
@@ -5846,7 +5917,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Summary[TRowData, TKey]]
     }
     
-    extension [Self <: Summary[?, ?], TRowData, TKey](x: Self & (Summary[TRowData, TKey])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Summary[?, ?], TRowData, TKey] (val x: Self & (Summary[TRowData, TKey])) extends AnyVal {
       
       inline def setCalculateCustomSummary(value: /* options */ CustomSummaryInfo[TRowData, TKey] => Unit): Self = StObject.set(x, "calculateCustomSummary", js.Any.fromFunction1(value))
       
@@ -5937,7 +6009,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SummaryGroupItem]
     }
     
-    extension [Self <: SummaryGroupItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryGroupItem] (val x: Self) extends AnyVal {
       
       inline def setAlignByColumn(value: Boolean): Self = StObject.set(x, "alignByColumn", value.asInstanceOf[js.Any])
       
@@ -5996,7 +6069,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SummaryItemTextInfo]
     }
     
-    extension [Self <: SummaryItemTextInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryItemTextInfo] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String | Double | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -6060,7 +6134,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SummaryTexts]
     }
     
-    extension [Self <: SummaryTexts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryTexts] (val x: Self) extends AnyVal {
       
       inline def setAvg(value: String): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
       
@@ -6159,7 +6234,8 @@ object dxDataGrid {
       __obj.asInstanceOf[SummaryTotalItem]
     }
     
-    extension [Self <: SummaryTotalItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryTotalItem] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -6229,7 +6305,8 @@ object dxDataGrid {
       __obj.asInstanceOf[Toolbar]
     }
     
-    extension [Self <: Toolbar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Toolbar] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -6263,7 +6340,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ToolbarItem]
     }
     
-    extension [Self <: ToolbarItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
       
       inline def setName(value: DataGridPredefinedToolbarItem | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -6298,7 +6376,8 @@ object dxDataGrid {
       __obj.asInstanceOf[ToolbarPreparingInfo]
     }
     
-    extension [Self <: ToolbarPreparingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarPreparingInfo] (val x: Self) extends AnyVal {
       
       inline def setToolbarOptions(value: dxToolbarOptions[Any, Any]): Self = StObject.set(x, "toolbarOptions", value.asInstanceOf[js.Any])
     }
@@ -6328,7 +6407,8 @@ object dxDataGrid {
       __obj.asInstanceOf[dxDataGridSortByGroupSummaryInfoItem]
     }
     
-    extension [Self <: dxDataGridSortByGroupSummaryInfoItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dxDataGridSortByGroupSummaryInfoItem] (val x: Self) extends AnyVal {
       
       inline def setGroupColumn(value: String): Self = StObject.set(x, "groupColumn", value.asInstanceOf[js.Any])
       

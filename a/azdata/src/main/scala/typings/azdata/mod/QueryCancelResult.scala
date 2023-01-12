@@ -15,7 +15,8 @@ object QueryCancelResult {
     __obj.asInstanceOf[QueryCancelResult]
   }
   
-  extension [Self <: QueryCancelResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCancelResult] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }

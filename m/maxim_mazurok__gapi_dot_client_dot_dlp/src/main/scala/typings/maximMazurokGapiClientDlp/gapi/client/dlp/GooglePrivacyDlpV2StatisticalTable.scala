@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2StatisticalTable {
     __obj.asInstanceOf[GooglePrivacyDlpV2StatisticalTable]
   }
   
-  extension [Self <: GooglePrivacyDlpV2StatisticalTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2StatisticalTable] (val x: Self) extends AnyVal {
     
     inline def setQuasiIds(value: js.Array[GooglePrivacyDlpV2QuasiIdentifierField]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object UpdateProtectedRangeRequest {
     __obj.asInstanceOf[UpdateProtectedRangeRequest]
   }
   
-  extension [Self <: UpdateProtectedRangeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProtectedRangeRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MobileApp {
     __obj.asInstanceOf[MobileApp]
   }
   
-  extension [Self <: MobileApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileApp] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

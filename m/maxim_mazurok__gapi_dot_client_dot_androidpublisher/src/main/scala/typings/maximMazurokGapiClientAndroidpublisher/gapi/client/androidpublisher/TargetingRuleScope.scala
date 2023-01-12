@@ -16,7 +16,8 @@ object TargetingRuleScope {
     __obj.asInstanceOf[TargetingRuleScope]
   }
   
-  extension [Self <: TargetingRuleScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetingRuleScope] (val x: Self) extends AnyVal {
     
     inline def setSpecificSubscriptionInApp(value: String): Self = StObject.set(x, "specificSubscriptionInApp", value.asInstanceOf[js.Any])
     

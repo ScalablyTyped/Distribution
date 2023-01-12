@@ -19,7 +19,8 @@ object Dropbox {
       __obj.asInstanceOf[Chooser]
     }
     
-    extension [Self <: Chooser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Chooser] (val x: Self) extends AnyVal {
       
       inline def setChoose(value: ChooserOptions => Unit): Self = StObject.set(x, "choose", js.Any.fromFunction1(value))
     }
@@ -57,7 +58,8 @@ object Dropbox {
       __obj.asInstanceOf[ChooserFile]
     }
     
-    extension [Self <: ChooserFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooserFile] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object Dropbox {
       __obj.asInstanceOf[ChooserOptions]
     }
     
-    extension [Self <: ChooserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooserOptions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

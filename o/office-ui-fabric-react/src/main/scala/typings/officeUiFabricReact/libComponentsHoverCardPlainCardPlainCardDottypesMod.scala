@@ -29,7 +29,8 @@ object libComponentsHoverCardPlainCardPlainCardDottypesMod {
       __obj.asInstanceOf[IPlainCardProps]
     }
     
-    extension [Self <: IPlainCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlainCardProps] (val x: Self) extends AnyVal {
       
       inline def setOnRenderPlainCard(
         value: (/* props */ js.UndefOr[Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[Any], Element | Null]]) => Element | Null

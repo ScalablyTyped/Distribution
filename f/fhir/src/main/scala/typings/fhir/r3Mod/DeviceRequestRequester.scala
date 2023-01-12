@@ -25,7 +25,8 @@ object DeviceRequestRequester {
     __obj.asInstanceOf[DeviceRequestRequester]
   }
   
-  extension [Self <: DeviceRequestRequester](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRequestRequester] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: Reference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

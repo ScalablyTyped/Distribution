@@ -15,7 +15,8 @@ object Replicas {
     __obj.asInstanceOf[Replicas]
   }
   
-  extension [Self <: Replicas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replicas] (val x: Self) extends AnyVal {
     
     inline def setReplicas(value: Double): Self = StObject.set(x, "Replicas", value.asInstanceOf[js.Any])
     

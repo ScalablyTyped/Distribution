@@ -34,7 +34,8 @@ object typesCardActionsMod {
       __obj.asInstanceOf[CardActionsProps]
     }
     
-    extension [Self <: CardActionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardActionsProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

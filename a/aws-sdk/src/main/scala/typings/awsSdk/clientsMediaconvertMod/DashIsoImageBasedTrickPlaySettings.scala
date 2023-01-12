@@ -43,7 +43,8 @@ object DashIsoImageBasedTrickPlaySettings {
     __obj.asInstanceOf[DashIsoImageBasedTrickPlaySettings]
   }
   
-  extension [Self <: DashIsoImageBasedTrickPlaySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashIsoImageBasedTrickPlaySettings] (val x: Self) extends AnyVal {
     
     inline def setIntervalCadence(value: DashIsoIntervalCadence): Self = StObject.set(x, "IntervalCadence", value.asInstanceOf[js.Any])
     

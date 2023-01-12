@@ -38,7 +38,8 @@ object CSSNumericType {
     __obj.asInstanceOf[CSSNumericType]
   }
   
-  extension [Self <: CSSNumericType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSNumericType] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

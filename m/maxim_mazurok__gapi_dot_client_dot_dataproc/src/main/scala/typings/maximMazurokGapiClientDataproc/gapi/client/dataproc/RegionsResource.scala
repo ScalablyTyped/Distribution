@@ -29,7 +29,8 @@ object RegionsResource {
     __obj.asInstanceOf[RegionsResource]
   }
   
-  extension [Self <: RegionsResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionsResource] (val x: Self) extends AnyVal {
     
     inline def setAutoscalingPolicies(value: AutoscalingPoliciesResource): Self = StObject.set(x, "autoscalingPolicies", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object Logger {
     @js.native
     val ^ : LogLevel = js.native
     
-    extension [Self <: LogLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
       
       inline def setDEBUG(value: `1`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       

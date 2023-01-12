@@ -259,7 +259,8 @@ object SactiveIndexChange {
     __obj.asInstanceOf[SactiveIndexChange]
   }
   
-  extension [Self <: SactiveIndexChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SactiveIndexChange] (val x: Self) extends AnyVal {
     
     inline def setS__beforeBreakpoint(value: _beforeBreakpoint): Self = StObject.set(x, "s__beforeBreakpoint", value.asInstanceOf[js.Any])
     

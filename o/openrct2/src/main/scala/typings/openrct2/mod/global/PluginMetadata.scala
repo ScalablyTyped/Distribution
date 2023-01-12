@@ -40,7 +40,8 @@ object PluginMetadata {
     __obj.asInstanceOf[PluginMetadata]
   }
   
-  extension [Self <: PluginMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginMetadata] (val x: Self) extends AnyVal {
     
     inline def setAuthors(value: String | js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     

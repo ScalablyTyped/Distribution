@@ -31,7 +31,8 @@ object IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions {
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions]
   }
   
-  extension [Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object SnapshotGetParams {
     __obj.asInstanceOf[SnapshotGetParams]
   }
   
-  extension [Self <: SnapshotGetParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotGetParams] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     

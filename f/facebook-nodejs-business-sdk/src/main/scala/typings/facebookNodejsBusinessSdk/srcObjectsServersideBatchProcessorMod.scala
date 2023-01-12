@@ -117,7 +117,8 @@ object srcObjectsServersideBatchProcessorMod {
       __obj.asInstanceOf[BatchProcessor]
     }
     
-    extension [Self <: BatchProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchProcessor] (val x: Self) extends AnyVal {
       
       inline def setProcessEventRequests(
         value: js.Array[typings.facebookNodejsBusinessSdk.srcObjectsServersideEventRequestMod.default] => js.Promise[Unit]

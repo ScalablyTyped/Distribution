@@ -28,7 +28,8 @@ object PrimaryKey {
     __obj.asInstanceOf[PrimaryKey]
   }
   
-  extension [Self <: PrimaryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryKey] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Integer): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

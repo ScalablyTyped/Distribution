@@ -61,7 +61,8 @@ object WorkItemUpdate {
     __obj.asInstanceOf[WorkItemUpdate]
   }
   
-  extension [Self <: WorkItemUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemUpdate] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[WorkItemFieldUpdate]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ToForwardProps {
     __obj.asInstanceOf[ToForwardProps[T]]
   }
   
-  extension [Self <: ToForwardProps[?], T /* <: js.Object */](x: Self & ToForwardProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToForwardProps[?], T /* <: js.Object */] (val x: Self & ToForwardProps[T]) extends AnyVal {
     
     inline def setTo(value: ForwardProps[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object AttrsNonMaxSuppressionV3Attrs {
     __obj.asInstanceOf[AttrsNonMaxSuppressionV3Attrs]
   }
   
-  extension [Self <: AttrsNonMaxSuppressionV3Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsNonMaxSuppressionV3Attrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: NonMaxSuppressionV3Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

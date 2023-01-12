@@ -24,7 +24,8 @@ object UpdatePhotoRequest {
     __obj.asInstanceOf[UpdatePhotoRequest]
   }
   
-  extension [Self <: UpdatePhotoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePhotoRequest] (val x: Self) extends AnyVal {
     
     inline def setPhoto(value: Photo): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ModifyInstancePlacementResult {
     __obj.asInstanceOf[ModifyInstancePlacementResult]
   }
   
-  extension [Self <: ModifyInstancePlacementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstancePlacementResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

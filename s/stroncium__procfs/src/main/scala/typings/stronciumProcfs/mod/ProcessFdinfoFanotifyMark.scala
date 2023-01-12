@@ -23,7 +23,8 @@ object ProcessFdinfoFanotifyMark {
     __obj.asInstanceOf[ProcessFdinfoFanotifyMark]
   }
   
-  extension [Self <: ProcessFdinfoFanotifyMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessFdinfoFanotifyMark] (val x: Self) extends AnyVal {
     
     inline def setDevId(value: Double): Self = StObject.set(x, "devId", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object b2FrictionJoint {
     __obj.asInstanceOf[b2FrictionJoint]
   }
   
-  extension [Self <: b2FrictionJoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2FrictionJoint] (val x: Self) extends AnyVal {
     
     inline def setGetMaxForce(value: () => Double): Self = StObject.set(x, "GetMaxForce", js.Any.fromFunction0(value))
     

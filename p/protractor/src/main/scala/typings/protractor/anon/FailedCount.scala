@@ -18,7 +18,8 @@ object FailedCount {
     __obj.asInstanceOf[FailedCount]
   }
   
-  extension [Self <: FailedCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedCount] (val x: Self) extends AnyVal {
     
     inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object libTypesLocaleMod {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setConversionTag(value: LabelString): Self = StObject.set(x, "conversionTag", value.asInstanceOf[js.Any])
       

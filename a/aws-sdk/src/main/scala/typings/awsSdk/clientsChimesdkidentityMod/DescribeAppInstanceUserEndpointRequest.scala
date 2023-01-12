@@ -23,7 +23,8 @@ object DescribeAppInstanceUserEndpointRequest {
     __obj.asInstanceOf[DescribeAppInstanceUserEndpointRequest]
   }
   
-  extension [Self <: DescribeAppInstanceUserEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppInstanceUserEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserArn(value: SensitiveString1600): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     

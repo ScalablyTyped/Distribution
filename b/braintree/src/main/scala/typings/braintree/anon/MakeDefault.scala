@@ -23,7 +23,8 @@ object MakeDefault {
     __obj.asInstanceOf[MakeDefault]
   }
   
-  extension [Self <: MakeDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeDefault] (val x: Self) extends AnyVal {
     
     inline def setFailOnDuplicatePaymentMethod(value: Boolean): Self = StObject.set(x, "failOnDuplicatePaymentMethod", value.asInstanceOf[js.Any])
     

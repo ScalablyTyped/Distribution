@@ -19,7 +19,8 @@ object Capacity {
     __obj.asInstanceOf[Capacity]
   }
   
-  extension [Self <: Capacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capacity] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object ASPxClientSpreadsheetRectangle {
     __obj.asInstanceOf[ASPxClientSpreadsheetRectangle]
   }
   
-  extension [Self <: ASPxClientSpreadsheetRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientSpreadsheetRectangle] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

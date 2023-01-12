@@ -30,7 +30,8 @@ object distLibFormattersIacOutputTextTypesMod {
       __obj.asInstanceOf[FormattedOutputResult]
     }
     
-    extension [Self <: FormattedOutputResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormattedOutputResult] (val x: Self) extends AnyVal {
       
       inline def setIssue(value: Issue): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distLibFormattersIacOutputTextTypesMod {
       __obj.asInstanceOf[IaCTestFailure]
     }
     
-    extension [Self <: IaCTestFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IaCTestFailure] (val x: Self) extends AnyVal {
       
       inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object distLibFormattersIacOutputTextTypesMod {
       __obj.asInstanceOf[IacTestCounts]
     }
     
-    extension [Self <: IacTestCounts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IacTestCounts] (val x: Self) extends AnyVal {
       
       inline def setContextSuppressedIssues(value: Double): Self = StObject.set(x, "contextSuppressedIssues", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object distLibFormattersIacOutputTextTypesMod {
       __obj.asInstanceOf[IacTestData]
     }
     
-    extension [Self <: IacTestData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IacTestData] (val x: Self) extends AnyVal {
       
       inline def setCounts(value: IacTestCounts): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
       
@@ -189,7 +193,8 @@ object distLibFormattersIacOutputTextTypesMod {
       __obj.asInstanceOf[Issue]
     }
     
-    extension [Self <: Issue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
       
       inline def setCloudConfigPath(value: js.Array[String]): Self = StObject.set(x, "cloudConfigPath", value.asInstanceOf[js.Any])
       

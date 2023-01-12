@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[PartialSettings]
     }
     
-    extension [Self <: PartialSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSettings] (val x: Self) extends AnyVal {
       
       inline def setAstralRegExp(value: js.RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Shortcodes]
     }
     
-    extension [Self <: Shortcodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shortcodes] (val x: Self) extends AnyVal {
       
       inline def setShortcodes(value: js.Array[String]): Self = StObject.set(x, "shortcodes", value.asInstanceOf[js.Any])
       

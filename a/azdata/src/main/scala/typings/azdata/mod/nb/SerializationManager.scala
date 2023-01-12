@@ -20,7 +20,8 @@ object SerializationManager {
     __obj.asInstanceOf[SerializationManager]
   }
   
-  extension [Self <: SerializationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerializationManager] (val x: Self) extends AnyVal {
     
     inline def setContentManager(value: ContentManager): Self = StObject.set(x, "contentManager", value.asInstanceOf[js.Any])
   }

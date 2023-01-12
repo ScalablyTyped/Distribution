@@ -58,7 +58,8 @@ object PlaceOpeningHoursTime {
     __obj.asInstanceOf[PlaceOpeningHoursTime]
   }
   
-  extension [Self <: PlaceOpeningHoursTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceOpeningHoursTime] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

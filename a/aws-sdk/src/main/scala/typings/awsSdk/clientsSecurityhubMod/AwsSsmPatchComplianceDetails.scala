@@ -18,7 +18,8 @@ object AwsSsmPatchComplianceDetails {
     __obj.asInstanceOf[AwsSsmPatchComplianceDetails]
   }
   
-  extension [Self <: AwsSsmPatchComplianceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSsmPatchComplianceDetails] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: AwsSsmPatch): Self = StObject.set(x, "Patch", value.asInstanceOf[js.Any])
     

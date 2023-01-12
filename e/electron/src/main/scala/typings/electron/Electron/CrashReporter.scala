@@ -115,7 +115,8 @@ object CrashReporter {
     __obj.asInstanceOf[CrashReporter]
   }
   
-  extension [Self <: CrashReporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrashReporter] (val x: Self) extends AnyVal {
     
     inline def setAddExtraParameter(value: (String, String) => Unit): Self = StObject.set(x, "addExtraParameter", js.Any.fromFunction2(value))
     

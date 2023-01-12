@@ -23,7 +23,8 @@ object And {
     __obj.asInstanceOf[And[T]]
   }
   
-  extension [Self <: And[?], T](x: Self & And[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: And[?], T] (val x: Self & And[T]) extends AnyVal {
     
     inline def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
     

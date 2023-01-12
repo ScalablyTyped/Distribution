@@ -19,7 +19,8 @@ object TestOrderPickupDetailsPickupPerson {
     __obj.asInstanceOf[TestOrderPickupDetailsPickupPerson]
   }
   
-  extension [Self <: TestOrderPickupDetailsPickupPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOrderPickupDetailsPickupPerson] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

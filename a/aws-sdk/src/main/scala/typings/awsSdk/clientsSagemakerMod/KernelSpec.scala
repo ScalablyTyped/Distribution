@@ -23,7 +23,8 @@ object KernelSpec {
     __obj.asInstanceOf[KernelSpec]
   }
   
-  extension [Self <: KernelSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelSpec] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: KernelDisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

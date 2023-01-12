@@ -110,7 +110,8 @@ object libDataSourceQueryMod {
       __obj.asInstanceOf[DataSourceQuery]
     }
     
-    extension [Self <: DataSourceQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceQuery] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

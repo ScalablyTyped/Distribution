@@ -69,7 +69,8 @@ object ImageInspectInfo {
     __obj.asInstanceOf[ImageInspectInfo]
   }
   
-  extension [Self <: ImageInspectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageInspectInfo] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "Architecture", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object DeviceAuthorizationExtras {
     __obj.asInstanceOf[DeviceAuthorizationExtras]
   }
   
-  extension [Self <: DeviceAuthorizationExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceAuthorizationExtras] (val x: Self) extends AnyVal {
     
     inline def setClientAssertionPayload(value: js.Object): Self = StObject.set(x, "clientAssertionPayload", value.asInstanceOf[js.Any])
     

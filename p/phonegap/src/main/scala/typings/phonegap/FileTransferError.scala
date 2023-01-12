@@ -21,7 +21,8 @@ object FileTransferError {
     __obj.asInstanceOf[FileTransferError]
   }
   
-  extension [Self <: FileTransferError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileTransferError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

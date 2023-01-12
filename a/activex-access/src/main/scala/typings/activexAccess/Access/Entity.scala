@@ -34,7 +34,8 @@ object Entity {
     __obj.asInstanceOf[Entity]
   }
   
-  extension [Self <: Entity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
     
     inline def setAccessDotEntity_typekey(value: Entity): Self = StObject.set(x, "Access.Entity_typekey", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ChartLegendMargin {
     __obj.asInstanceOf[ChartLegendMargin]
   }
   
-  extension [Self <: ChartLegendMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegendMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

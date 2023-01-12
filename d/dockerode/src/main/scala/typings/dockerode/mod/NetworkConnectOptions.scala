@@ -17,7 +17,8 @@ object NetworkConnectOptions {
     __obj.asInstanceOf[NetworkConnectOptions]
   }
   
-  extension [Self <: NetworkConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String): Self = StObject.set(x, "Container", value.asInstanceOf[js.Any])
     

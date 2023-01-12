@@ -22,7 +22,8 @@ object ContainerWaitOptions {
     __obj.asInstanceOf[ContainerWaitOptions]
   }
   
-  extension [Self <: ContainerWaitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerWaitOptions] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

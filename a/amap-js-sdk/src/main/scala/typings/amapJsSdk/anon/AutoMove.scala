@@ -33,7 +33,8 @@ object AutoMove {
     __obj.asInstanceOf[AutoMove]
   }
   
-  extension [Self <: AutoMove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMove] (val x: Self) extends AnyVal {
     
     inline def setAutoMove(value: Boolean): Self = StObject.set(x, "autoMove", value.asInstanceOf[js.Any])
     

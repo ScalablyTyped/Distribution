@@ -60,7 +60,8 @@ object DeviceDefinitionProperty {
     __obj.asInstanceOf[DeviceDefinitionProperty]
   }
   
-  extension [Self <: DeviceDefinitionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceDefinitionProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

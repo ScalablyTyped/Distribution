@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[DarkMode]
     }
     
-    extension [Self <: DarkMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DarkMode] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[DarkModeConfig]
     }
     
-    extension [Self <: DarkModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DarkModeConfig] (val x: Self) extends AnyVal {
       
       inline def setClassNameDark(value: String): Self = StObject.set(x, "classNameDark", value.asInstanceOf[js.Any])
       

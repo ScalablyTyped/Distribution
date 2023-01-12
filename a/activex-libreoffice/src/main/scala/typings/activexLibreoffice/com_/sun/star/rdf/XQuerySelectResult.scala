@@ -42,7 +42,8 @@ object XQuerySelectResult {
     __obj.asInstanceOf[XQuerySelectResult]
   }
   
-  extension [Self <: XQuerySelectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XQuerySelectResult] (val x: Self) extends AnyVal {
     
     inline def setBindingNames(value: SafeArray[String]): Self = StObject.set(x, "BindingNames", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropContext]
     }
     
-    extension [Self <: IDragDropContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropContext] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropEvent]
     }
     
-    extension [Self <: IDragDropEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropEvent] (val x: Self) extends AnyVal {
       
       inline def setIsHandled(value: Boolean): Self = StObject.set(x, "isHandled", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropEvents]
     }
     
-    extension [Self <: IDragDropEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropEvents] (val x: Self) extends AnyVal {
       
       inline def setCanDrag(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
       
@@ -221,7 +224,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropHelper]
     }
     
-    extension [Self <: IDragDropHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropHelper] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -315,7 +319,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropOptions]
     }
     
-    extension [Self <: IDragDropOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropOptions] (val x: Self) extends AnyVal {
       
       inline def setCanDrag(value: /* item */ js.UndefOr[Any] => Boolean): Self = StObject.set(x, "canDrag", js.Any.fromFunction1(value))
       
@@ -378,7 +383,8 @@ object libUtilitiesDragdropInterfacesMod {
       __obj.asInstanceOf[IDragDropTarget]
     }
     
-    extension [Self <: IDragDropTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragDropTarget] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

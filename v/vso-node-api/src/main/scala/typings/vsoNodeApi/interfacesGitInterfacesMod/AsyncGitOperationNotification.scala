@@ -15,7 +15,8 @@ object AsyncGitOperationNotification {
     __obj.asInstanceOf[AsyncGitOperationNotification]
   }
   
-  extension [Self <: AsyncGitOperationNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncGitOperationNotification] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: Double): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
   }

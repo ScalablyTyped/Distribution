@@ -67,7 +67,8 @@ object ModuleInfo {
     __obj.asInstanceOf[ModuleInfo]
   }
   
-  extension [Self <: ModuleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
     
     inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

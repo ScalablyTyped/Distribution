@@ -38,7 +38,8 @@ object DescribeInstanceEventWindowsRequest {
     __obj.asInstanceOf[DescribeInstanceEventWindowsRequest]
   }
   
-  extension [Self <: DescribeInstanceEventWindowsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceEventWindowsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

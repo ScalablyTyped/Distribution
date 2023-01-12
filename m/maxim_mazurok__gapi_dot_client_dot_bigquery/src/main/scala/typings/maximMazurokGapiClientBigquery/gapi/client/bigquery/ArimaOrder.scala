@@ -22,7 +22,8 @@ object ArimaOrder {
     __obj.asInstanceOf[ArimaOrder]
   }
   
-  extension [Self <: ArimaOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArimaOrder] (val x: Self) extends AnyVal {
     
     inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

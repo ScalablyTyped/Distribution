@@ -20,7 +20,8 @@ object PrintResponse {
     __obj.asInstanceOf[PrintResponse]
   }
   
-  extension [Self <: PrintResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintResponse] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

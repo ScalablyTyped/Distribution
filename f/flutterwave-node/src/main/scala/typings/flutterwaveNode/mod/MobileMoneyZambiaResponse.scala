@@ -18,7 +18,8 @@ object MobileMoneyZambiaResponse {
     __obj.asInstanceOf[MobileMoneyZambiaResponse]
   }
   
-  extension [Self <: MobileMoneyZambiaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileMoneyZambiaResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Appfee): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

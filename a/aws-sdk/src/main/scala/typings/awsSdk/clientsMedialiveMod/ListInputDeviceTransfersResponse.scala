@@ -23,7 +23,8 @@ object ListInputDeviceTransfersResponse {
     __obj.asInstanceOf[ListInputDeviceTransfersResponse]
   }
   
-  extension [Self <: ListInputDeviceTransfersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInputDeviceTransfersResponse] (val x: Self) extends AnyVal {
     
     inline def setInputDeviceTransfers(value: listOfTransferringInputDeviceSummary): Self = StObject.set(x, "InputDeviceTransfers", value.asInstanceOf[js.Any])
     

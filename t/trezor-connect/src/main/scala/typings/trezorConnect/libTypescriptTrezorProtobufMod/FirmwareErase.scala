@@ -15,7 +15,8 @@ object FirmwareErase {
     __obj.asInstanceOf[FirmwareErase]
   }
   
-  extension [Self <: FirmwareErase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirmwareErase] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

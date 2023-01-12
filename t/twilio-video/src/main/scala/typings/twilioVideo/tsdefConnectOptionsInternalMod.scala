@@ -20,7 +20,8 @@ object tsdefConnectOptionsInternalMod {
       __obj.asInstanceOf[ConnectOptionsInternal]
     }
     
-    extension [Self <: ConnectOptionsInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectOptionsInternal] (val x: Self) extends AnyVal {
       
       inline def setCreateLocalTracks(value: Any): Self = StObject.set(x, "createLocalTracks", value.asInstanceOf[js.Any])
       

@@ -392,7 +392,8 @@ object valuestringundefineddefau {
     __obj.asInstanceOf[valuestringundefineddefau]
   }
   
-  extension [Self <: valuestringundefineddefau](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: valuestringundefineddefau] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

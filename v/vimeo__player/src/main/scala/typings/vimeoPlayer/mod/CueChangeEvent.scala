@@ -21,7 +21,8 @@ object CueChangeEvent {
     __obj.asInstanceOf[CueChangeEvent]
   }
   
-  extension [Self <: CueChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CueChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setCues(value: js.Array[Cue]): Self = StObject.set(x, "cues", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ExperimentResultConfidenceInterval] (val x: Self) extends AnyVal {
     
     inline def setConfidenceLevel(value: Double): Self = StObject.set(x, "confidenceLevel", value.asInstanceOf[js.Any])
     

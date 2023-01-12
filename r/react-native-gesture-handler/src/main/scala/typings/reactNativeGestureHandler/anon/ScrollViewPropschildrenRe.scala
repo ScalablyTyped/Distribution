@@ -951,7 +951,8 @@ object ScrollViewPropschildrenRe {
     __obj.asInstanceOf[ScrollViewPropschildrenRe]
   }
   
-  extension [Self <: ScrollViewPropschildrenRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewPropschildrenRe] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

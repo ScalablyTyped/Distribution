@@ -19,7 +19,8 @@ object TranscodedPixels {
     __obj.asInstanceOf[TranscodedPixels]
   }
   
-  extension [Self <: TranscodedPixels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranscodedPixels] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object FinalAutoMLJobObjectiveMetric {
     __obj.asInstanceOf[FinalAutoMLJobObjectiveMetric]
   }
   
-  extension [Self <: FinalAutoMLJobObjectiveMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalAutoMLJobObjectiveMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

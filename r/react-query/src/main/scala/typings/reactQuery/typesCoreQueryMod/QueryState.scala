@@ -49,7 +49,8 @@ object QueryState {
     __obj.asInstanceOf[QueryState[TData, TError]]
   }
   
-  extension [Self <: QueryState[?, ?], TData, TError](x: Self & (QueryState[TData, TError])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryState[?, ?], TData, TError] (val x: Self & (QueryState[TData, TError])) extends AnyVal {
     
     inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

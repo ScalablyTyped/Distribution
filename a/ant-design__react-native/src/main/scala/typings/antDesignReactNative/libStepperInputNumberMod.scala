@@ -171,7 +171,8 @@ object libStepperInputNumberMod {
       __obj.asInstanceOf[InputNumberProps]
     }
     
-    extension [Self <: InputNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -266,7 +267,8 @@ object libStepperInputNumberMod {
       __obj.asInstanceOf[InputNumberState]
     }
     
-    extension [Self <: InputNumberState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputNumberState] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

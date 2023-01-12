@@ -18,7 +18,8 @@ object OFIModelPerformance {
     __obj.asInstanceOf[OFIModelPerformance]
   }
   
-  extension [Self <: OFIModelPerformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OFIModelPerformance] (val x: Self) extends AnyVal {
     
     inline def setAuc(value: float): Self = StObject.set(x, "auc", value.asInstanceOf[js.Any])
     

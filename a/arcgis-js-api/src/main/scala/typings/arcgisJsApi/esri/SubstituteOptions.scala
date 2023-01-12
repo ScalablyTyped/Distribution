@@ -21,7 +21,8 @@ object SubstituteOptions {
     __obj.asInstanceOf[SubstituteOptions]
   }
   
-  extension [Self <: SubstituteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstituteOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: HashMap[SubstituteDateTimeFormatOptions | SubstituteNumberFormatOptions]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
   }

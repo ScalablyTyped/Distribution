@@ -16,7 +16,8 @@ object ResizeBilinearInputs {
     __obj.asInstanceOf[ResizeBilinearInputs]
   }
   
-  extension [Self <: ResizeBilinearInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeBilinearInputs] (val x: Self) extends AnyVal {
     
     inline def setImages(value: scala.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     

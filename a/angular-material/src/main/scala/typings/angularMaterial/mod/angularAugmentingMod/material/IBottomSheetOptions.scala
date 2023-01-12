@@ -54,7 +54,8 @@ object IBottomSheetOptions {
     __obj.asInstanceOf[IBottomSheetOptions]
   }
   
-  extension [Self <: IBottomSheetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBottomSheetOptions] (val x: Self) extends AnyVal {
     
     inline def setBindToController(value: Boolean): Self = StObject.set(x, "bindToController", value.asInstanceOf[js.Any])
     

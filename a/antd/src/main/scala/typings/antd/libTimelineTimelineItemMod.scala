@@ -27,7 +27,8 @@ object libTimelineTimelineItemMod extends Shortcut {
       __obj.asInstanceOf[TimeLineItemProps_]
     }
     
-    extension [Self <: TimeLineItemProps_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeLineItemProps_] (val x: Self) extends AnyVal {
       
       inline def set__deprecated_do_not_use_it__(value: Any): Self = StObject.set(x, "__deprecated_do_not_use_it__", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object libTimelineTimelineItemMod extends Shortcut {
       __obj.asInstanceOf[TimelineItemProps]
     }
     
-    extension [Self <: TimelineItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimelineItemProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

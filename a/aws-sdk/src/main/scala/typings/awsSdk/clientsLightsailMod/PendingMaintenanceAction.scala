@@ -28,7 +28,8 @@ object PendingMaintenanceAction {
     __obj.asInstanceOf[PendingMaintenanceAction]
   }
   
-  extension [Self <: PendingMaintenanceAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingMaintenanceAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NonEmptyString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

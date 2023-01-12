@@ -87,7 +87,8 @@ object apiChatterMod {
       __obj.asInstanceOf[BatchRequestParams]
     }
     
-    extension [Self <: BatchRequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchRequestParams] (val x: Self) extends AnyVal {
       
       inline def setRichInput(value: String): Self = StObject.set(x, "richInput", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object apiChatterMod {
       __obj.asInstanceOf[BatchRequestResult]
     }
     
-    extension [Self <: BatchRequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchRequestResult] (val x: Self) extends AnyVal {
       
       inline def setResult(value: RequestResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -129,7 +131,8 @@ object apiChatterMod {
       __obj.asInstanceOf[BatchRequestResults]
     }
     
-    extension [Self <: BatchRequestResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchRequestResults] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object apiChatterMod {
       __obj.asInstanceOf[RequestParams]
     }
     
-    extension [Self <: RequestParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestParams] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

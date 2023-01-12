@@ -21,7 +21,8 @@ object DiagramShapeDefaultsEditable {
     __obj.asInstanceOf[DiagramShapeDefaultsEditable]
   }
   
-  extension [Self <: DiagramShapeDefaultsEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShapeDefaultsEditable] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: Boolean): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

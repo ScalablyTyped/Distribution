@@ -18,7 +18,8 @@ object ToolBarOpenEvent {
     __obj.asInstanceOf[ToolBarOpenEvent]
   }
   
-  extension [Self <: ToolBarOpenEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarOpenEvent] (val x: Self) extends AnyVal {
     
     inline def setSplitButton(value: JQuery): Self = StObject.set(x, "SplitButton", value.asInstanceOf[js.Any])
     

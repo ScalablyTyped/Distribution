@@ -54,7 +54,8 @@ object dxActionSheetOptions {
     __obj.asInstanceOf[dxActionSheetOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxActionSheetOptions[?, ?], TItem /* <: ItemLike[TKey] */, TKey](x: Self & (dxActionSheetOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxActionSheetOptions[?, ?], TItem /* <: ItemLike[TKey] */, TKey] (val x: Self & (dxActionSheetOptions[TItem, TKey])) extends AnyVal {
     
     inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     

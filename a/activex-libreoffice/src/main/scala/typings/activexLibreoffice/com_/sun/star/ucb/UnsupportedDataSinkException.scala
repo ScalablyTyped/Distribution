@@ -28,7 +28,8 @@ object UnsupportedDataSinkException {
     __obj.asInstanceOf[UnsupportedDataSinkException]
   }
   
-  extension [Self <: UnsupportedDataSinkException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedDataSinkException] (val x: Self) extends AnyVal {
     
     inline def setSink(value: XInterface): Self = StObject.set(x, "Sink", value.asInstanceOf[js.Any])
   }

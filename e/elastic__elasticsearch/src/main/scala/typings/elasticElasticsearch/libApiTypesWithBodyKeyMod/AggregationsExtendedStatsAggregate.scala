@@ -44,7 +44,8 @@ object AggregationsExtendedStatsAggregate {
     __obj.asInstanceOf[AggregationsExtendedStatsAggregate]
   }
   
-  extension [Self <: AggregationsExtendedStatsAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsExtendedStatsAggregate] (val x: Self) extends AnyVal {
     
     inline def setStd_deviation(value: double): Self = StObject.set(x, "std_deviation", value.asInstanceOf[js.Any])
     

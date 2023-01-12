@@ -273,7 +273,8 @@ object sapUiAppApplicationMod {
       __obj.asInstanceOf[ApplicationSettings]
     }
     
-    extension [Self <: ApplicationSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplicationSettings] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

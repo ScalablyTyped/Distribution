@@ -17,7 +17,8 @@ object ApplicationjsonAppsArray {
     __obj.asInstanceOf[ApplicationjsonAppsArray]
   }
   
-  extension [Self <: ApplicationjsonAppsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAppsArray] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: AppsArray): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object KeyPart {
     __obj.asInstanceOf[KeyPart]
   }
   
-  extension [Self <: KeyPart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPart] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

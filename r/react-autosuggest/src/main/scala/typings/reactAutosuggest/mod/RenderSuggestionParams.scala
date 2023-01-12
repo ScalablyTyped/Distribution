@@ -17,7 +17,8 @@ object RenderSuggestionParams {
     __obj.asInstanceOf[RenderSuggestionParams]
   }
   
-  extension [Self <: RenderSuggestionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSuggestionParams] (val x: Self) extends AnyVal {
     
     inline def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
     

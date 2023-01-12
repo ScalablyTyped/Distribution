@@ -15,7 +15,8 @@ object QueryQRepositoryid {
     __obj.asInstanceOf[QueryQRepositoryid]
   }
   
-  extension [Self <: QueryQRepositoryid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryQRepositoryid] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: QRepositoryid): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

@@ -166,7 +166,8 @@ object Tilemaps {
       __obj.asInstanceOf[ImageCollection]
     }
     
-    extension [Self <: ImageCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageCollection] (val x: Self) extends AnyVal {
       
       inline def setAddImage(value: (Double, String) => ImageCollection): Self = StObject.set(x, "addImage", js.Any.fromFunction2(value))
       
@@ -342,7 +343,8 @@ object Tilemaps {
       __obj.asInstanceOf[LayerData]
     }
     
-    extension [Self <: LayerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerData] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -549,7 +551,8 @@ object Tilemaps {
       __obj.asInstanceOf[MapData]
     }
     
-    extension [Self <: MapData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapData] (val x: Self) extends AnyVal {
       
       inline def setCollision(value: js.Object): Self = StObject.set(x, "collision", value.asInstanceOf[js.Any])
       
@@ -682,7 +685,8 @@ object Tilemaps {
       __obj.asInstanceOf[ObjectLayer]
     }
     
-    extension [Self <: ObjectLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectLayer] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

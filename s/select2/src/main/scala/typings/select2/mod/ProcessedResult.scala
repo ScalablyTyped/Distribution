@@ -18,7 +18,8 @@ object ProcessedResult {
     __obj.asInstanceOf[ProcessedResult[Result]]
   }
   
-  extension [Self <: ProcessedResult[?], Result](x: Self & ProcessedResult[Result]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessedResult[?], Result] (val x: Self & ProcessedResult[Result]) extends AnyVal {
     
     inline def setPagination(value: More): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     

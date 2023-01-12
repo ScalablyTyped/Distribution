@@ -21,7 +21,8 @@ object SlideTo {
     __obj.asInstanceOf[SlideTo]
   }
   
-  extension [Self <: SlideTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideTo] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

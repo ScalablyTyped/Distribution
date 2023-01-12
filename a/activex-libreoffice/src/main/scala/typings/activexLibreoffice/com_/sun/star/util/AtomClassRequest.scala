@@ -24,7 +24,8 @@ object AtomClassRequest {
     __obj.asInstanceOf[AtomClassRequest]
   }
   
-  extension [Self <: AtomClassRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomClassRequest] (val x: Self) extends AnyVal {
     
     inline def setAtomClass(value: Double): Self = StObject.set(x, "atomClass", value.asInstanceOf[js.Any])
     

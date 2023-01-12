@@ -27,7 +27,8 @@ object DeleteValueParams {
     __obj.asInstanceOf[DeleteValueParams]
   }
   
-  extension [Self <: DeleteValueParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteValueParams] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

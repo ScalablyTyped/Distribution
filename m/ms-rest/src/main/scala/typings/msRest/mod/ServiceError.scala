@@ -31,7 +31,8 @@ object ServiceError {
     __obj.asInstanceOf[ServiceError]
   }
   
-  extension [Self <: ServiceError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceError] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

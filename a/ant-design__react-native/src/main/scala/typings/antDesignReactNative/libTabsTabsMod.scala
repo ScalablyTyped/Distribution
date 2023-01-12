@@ -148,7 +148,8 @@ object libTabsTabsMod {
       __obj.asInstanceOf[StateType]
     }
     
-    extension [Self <: StateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateType] (val x: Self) extends AnyVal {
       
       inline def setContainerHeight(value: Double): Self = StObject.set(x, "containerHeight", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object AdminEvents {
     __obj.asInstanceOf[AdminEvents]
   }
   
-  extension [Self <: AdminEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminEvents] (val x: Self) extends AnyVal {
     
     inline def setCONNECT(value: adminDotconnect): Self = StObject.set(x, "CONNECT", value.asInstanceOf[js.Any])
     

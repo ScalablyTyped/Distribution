@@ -161,7 +161,8 @@ object typesInternalServerErrorExceptionMod {
       __obj.asInstanceOf[InternalServerErrorException]
     }
     
-    extension [Self <: InternalServerErrorException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalServerErrorException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.InternalServerErrorException
@@ -188,7 +189,8 @@ object typesInternalServerErrorExceptionMod {
       __obj.asInstanceOf[InternalServerErrorExceptionDetails]
     }
     
-    extension [Self <: InternalServerErrorExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalServerErrorExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

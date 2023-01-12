@@ -98,7 +98,8 @@ object SoundTrack {
     __obj.asInstanceOf[SoundTrack]
   }
   
-  extension [Self <: SoundTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundTrack] (val x: Self) extends AnyVal {
     
     inline def setAddSound(value: Sound => Unit): Self = StObject.set(x, "addSound", js.Any.fromFunction1(value))
     

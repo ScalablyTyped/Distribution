@@ -56,7 +56,8 @@ object FastReady {
     __obj.asInstanceOf[FastReady]
   }
   
-  extension [Self <: FastReady](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastReady] (val x: Self) extends AnyVal {
     
     inline def setFastReady(value: Boolean): Self = StObject.set(x, "fastReady", value.asInstanceOf[js.Any])
     

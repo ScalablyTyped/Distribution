@@ -29,7 +29,8 @@ object DPlayerDanmaku {
     __obj.asInstanceOf[DPlayerDanmaku]
   }
   
-  extension [Self <: DPlayerDanmaku](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerDanmaku] (val x: Self) extends AnyVal {
     
     inline def setAddition(value: js.Array[String]): Self = StObject.set(x, "addition", value.asInstanceOf[js.Any])
     

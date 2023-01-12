@@ -43,7 +43,8 @@ object FetchOptions {
     __obj.asInstanceOf[FetchOptions]
   }
   
-  extension [Self <: FetchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
     
     inline def setAsArray(value: Boolean): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     

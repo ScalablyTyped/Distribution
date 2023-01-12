@@ -31,7 +31,8 @@ object S3ObjectTagsDeletedNotificationEvent {
     __obj.asInstanceOf[S3ObjectTagsDeletedNotificationEvent]
   }
   
-  extension [Self <: S3ObjectTagsDeletedNotificationEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectTagsDeletedNotificationEvent] (val x: Self) extends AnyVal {
     
     inline def setSource(value: awsDots3): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }

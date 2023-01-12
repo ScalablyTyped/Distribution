@@ -15,7 +15,8 @@ object EnumValuesPreviousChange {
     __obj.asInstanceOf[EnumValuesPreviousChange]
   }
   
-  extension [Self <: EnumValuesPreviousChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesPreviousChange] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: PreviousChange): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

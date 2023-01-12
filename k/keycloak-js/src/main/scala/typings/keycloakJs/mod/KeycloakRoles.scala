@@ -15,7 +15,8 @@ object KeycloakRoles {
     __obj.asInstanceOf[KeycloakRoles]
   }
   
-  extension [Self <: KeycloakRoles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeycloakRoles] (val x: Self) extends AnyVal {
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

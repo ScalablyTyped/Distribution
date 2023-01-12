@@ -31,7 +31,8 @@ object MidiTimeCodeMessage {
     __obj.asInstanceOf[MidiTimeCodeMessage]
   }
   
-  extension [Self <: MidiTimeCodeMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiTimeCodeMessage] (val x: Self) extends AnyVal {
     
     inline def setFrameType(value: Double): Self = StObject.set(x, "frameType", value.asInstanceOf[js.Any])
     

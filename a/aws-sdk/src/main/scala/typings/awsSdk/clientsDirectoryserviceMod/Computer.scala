@@ -28,7 +28,8 @@ object Computer {
     __obj.asInstanceOf[Computer]
   }
   
-  extension [Self <: Computer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Computer] (val x: Self) extends AnyVal {
     
     inline def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object IPointerPointProperties {
     __obj.asInstanceOf[IPointerPointProperties]
   }
   
-  extension [Self <: IPointerPointProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerPointProperties] (val x: Self) extends AnyVal {
     
     inline def setContactRect(value: Rect): Self = StObject.set(x, "contactRect", value.asInstanceOf[js.Any])
     

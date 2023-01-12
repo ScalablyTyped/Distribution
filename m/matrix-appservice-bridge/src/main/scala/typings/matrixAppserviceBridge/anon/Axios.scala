@@ -20,7 +20,8 @@ object Axios {
     __obj.asInstanceOf[Axios]
   }
   
-  extension [Self <: Axios](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Axios] (val x: Self) extends AnyVal {
     
     inline def setAxios(value: typings.axios.mod.Axios): Self = StObject.set(x, "axios", value.asInstanceOf[js.Any])
     

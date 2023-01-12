@@ -42,7 +42,8 @@ object SignatureHelp {
     __obj.asInstanceOf[SignatureHelp]
   }
   
-  extension [Self <: SignatureHelp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelp] (val x: Self) extends AnyVal {
     
     inline def setActiveParameter(value: uinteger): Self = StObject.set(x, "activeParameter", value.asInstanceOf[js.Any])
     

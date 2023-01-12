@@ -22,7 +22,8 @@ object DataViewValueColumnGroup {
     __obj.asInstanceOf[DataViewValueColumnGroup]
   }
   
-  extension [Self <: DataViewValueColumnGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewValueColumnGroup] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: DataViewScopeIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

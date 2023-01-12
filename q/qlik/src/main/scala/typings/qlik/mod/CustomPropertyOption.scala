@@ -17,7 +17,8 @@ object CustomPropertyOption {
     __obj.asInstanceOf[CustomPropertyOption]
   }
   
-  extension [Self <: CustomPropertyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyOption] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

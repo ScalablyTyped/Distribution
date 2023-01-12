@@ -67,7 +67,8 @@ object SubstanceReferenceInformationTarget {
     __obj.asInstanceOf[SubstanceReferenceInformationTarget]
   }
   
-  extension [Self <: SubstanceReferenceInformationTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceReferenceInformationTarget] (val x: Self) extends AnyVal {
     
     inline def setAmountQuantity(value: Quantity): Self = StObject.set(x, "amountQuantity", value.asInstanceOf[js.Any])
     

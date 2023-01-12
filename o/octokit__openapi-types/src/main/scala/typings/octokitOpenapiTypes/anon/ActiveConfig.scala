@@ -33,7 +33,8 @@ object ActiveConfig {
     __obj.asInstanceOf[ActiveConfig]
   }
   
-  extension [Self <: ActiveConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveConfig] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

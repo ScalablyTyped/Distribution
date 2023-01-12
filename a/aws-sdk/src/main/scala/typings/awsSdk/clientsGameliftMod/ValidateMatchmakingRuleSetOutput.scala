@@ -18,7 +18,8 @@ object ValidateMatchmakingRuleSetOutput {
     __obj.asInstanceOf[ValidateMatchmakingRuleSetOutput]
   }
   
-  extension [Self <: ValidateMatchmakingRuleSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateMatchmakingRuleSetOutput] (val x: Self) extends AnyVal {
     
     inline def setValid(value: BooleanModel): Self = StObject.set(x, "Valid", value.asInstanceOf[js.Any])
     

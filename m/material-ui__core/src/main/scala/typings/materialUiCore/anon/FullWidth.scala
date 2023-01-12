@@ -43,7 +43,8 @@ object FullWidth {
     __obj.asInstanceOf[FullWidth]
   }
   
-  extension [Self <: FullWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullWidth] (val x: Self) extends AnyVal {
     
     inline def setDisableFocusRipple(value: Boolean): Self = StObject.set(x, "disableFocusRipple", value.asInstanceOf[js.Any])
     

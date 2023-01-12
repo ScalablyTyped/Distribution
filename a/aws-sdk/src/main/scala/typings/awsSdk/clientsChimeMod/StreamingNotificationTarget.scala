@@ -18,7 +18,8 @@ object StreamingNotificationTarget {
     __obj.asInstanceOf[StreamingNotificationTarget]
   }
   
-  extension [Self <: StreamingNotificationTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingNotificationTarget] (val x: Self) extends AnyVal {
     
     inline def setNotificationTarget(value: NotificationTarget): Self = StObject.set(x, "NotificationTarget", value.asInstanceOf[js.Any])
   }

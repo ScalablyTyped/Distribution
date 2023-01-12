@@ -77,7 +77,8 @@ object PartialPageOptionsPage {
     __obj.asInstanceOf[PartialPageOptionsPage]
   }
   
-  extension [Self <: PartialPageOptionsPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPageOptionsPage] (val x: Self) extends AnyVal {
     
     inline def setCreateIntersectionObserver(value: /* options */ js.UndefOr[CreateIntersectionObserverOption] => IntersectionObserver): Self = StObject.set(x, "createIntersectionObserver", js.Any.fromFunction1(value))
     

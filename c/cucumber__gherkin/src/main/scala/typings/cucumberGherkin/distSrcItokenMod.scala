@@ -44,7 +44,8 @@ object distSrcItokenMod {
       __obj.asInstanceOf[IGherkinLine]
     }
     
-    extension [Self <: IGherkinLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGherkinLine] (val x: Self) extends AnyVal {
       
       inline def setGetLineText(value: Double => String): Self = StObject.set(x, "getLineText", js.Any.fromFunction1(value))
       
@@ -113,7 +114,8 @@ object distSrcItokenMod {
       __obj.asInstanceOf[IToken[TokenType]]
     }
     
-    extension [Self <: IToken[?], TokenType](x: Self & IToken[TokenType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToken[?], TokenType] (val x: Self & IToken[TokenType]) extends AnyVal {
       
       inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
       
@@ -158,7 +160,8 @@ object distSrcItokenMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

@@ -57,7 +57,8 @@ object IllustrationOptions {
     __obj.asInstanceOf[IllustrationOptions]
   }
   
-  extension [Self <: IllustrationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IllustrationOptions] (val x: Self) extends AnyVal {
     
     inline def setCentered(value: Boolean): Self = StObject.set(x, "centered", value.asInstanceOf[js.Any])
     

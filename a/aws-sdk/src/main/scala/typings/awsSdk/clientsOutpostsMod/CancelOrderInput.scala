@@ -18,7 +18,8 @@ object CancelOrderInput {
     __obj.asInstanceOf[CancelOrderInput]
   }
   
-  extension [Self <: CancelOrderInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelOrderInput] (val x: Self) extends AnyVal {
     
     inline def setOrderId(value: OrderId): Self = StObject.set(x, "OrderId", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object RadioButtonsItemProps {
     __obj.asInstanceOf[RadioButtonsItemProps]
   }
   
-  extension [Self <: RadioButtonsItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadioButtonsItemProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }

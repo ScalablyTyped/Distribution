@@ -53,7 +53,8 @@ object libTypescriptElementsPolylineMod {
       __obj.asInstanceOf[PolylineProps]
     }
     
-    extension [Self <: PolylineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolylineProps] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

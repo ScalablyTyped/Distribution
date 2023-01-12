@@ -38,7 +38,8 @@ object UpdateEventLabelRequest {
     __obj.asInstanceOf[UpdateEventLabelRequest]
   }
   
-  extension [Self <: UpdateEventLabelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEventLabelRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignedLabel(value: identifier): Self = StObject.set(x, "assignedLabel", value.asInstanceOf[js.Any])
     

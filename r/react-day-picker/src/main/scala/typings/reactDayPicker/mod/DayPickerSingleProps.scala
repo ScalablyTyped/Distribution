@@ -33,7 +33,8 @@ object DayPickerSingleProps {
     __obj.asInstanceOf[DayPickerSingleProps]
   }
   
-  extension [Self <: DayPickerSingleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerSingleProps] (val x: Self) extends AnyVal {
     
     inline def setMode(value: single): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

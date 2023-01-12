@@ -19,7 +19,8 @@ object SafeUrlProto {
     __obj.asInstanceOf[SafeUrlProto]
   }
   
-  extension [Self <: SafeUrlProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeUrlProto] (val x: Self) extends AnyVal {
     
     inline def setPrivateDoNotAccessOrElseSafeUrlWrappedValue(value: String): Self = StObject.set(x, "privateDoNotAccessOrElseSafeUrlWrappedValue", value.asInstanceOf[js.Any])
     

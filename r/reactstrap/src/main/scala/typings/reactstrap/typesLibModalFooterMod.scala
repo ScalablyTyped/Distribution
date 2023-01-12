@@ -35,7 +35,8 @@ object typesLibModalFooterMod {
       __obj.asInstanceOf[ModalFooterProps]
     }
     
-    extension [Self <: ModalFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalFooterProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

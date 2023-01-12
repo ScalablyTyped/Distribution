@@ -33,7 +33,8 @@ object PublicKeyConfig {
     __obj.asInstanceOf[PublicKeyConfig]
   }
   
-  extension [Self <: PublicKeyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyConfig] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

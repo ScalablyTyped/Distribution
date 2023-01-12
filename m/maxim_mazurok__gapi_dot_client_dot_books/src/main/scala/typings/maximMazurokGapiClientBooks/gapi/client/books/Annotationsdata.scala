@@ -25,7 +25,8 @@ object Annotationsdata {
     __obj.asInstanceOf[Annotationsdata]
   }
   
-  extension [Self <: Annotationsdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotationsdata] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[GeoAnnotationdata]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UserMentionEntity {
     __obj.asInstanceOf[UserMentionEntity]
   }
   
-  extension [Self <: UserMentionEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserMentionEntity] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

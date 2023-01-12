@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ErrorFluxStandardAction[Type, CustomError, Meta]]
     }
     
-    extension [Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: js.Error */, Meta](x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorFluxStandardAction[?, ?, ?], Type /* <: String */, CustomError /* <: js.Error */, Meta] (val x: Self & (ErrorFluxStandardAction[Type, CustomError, Meta])) extends AnyVal {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -137,7 +138,8 @@ object mod {
       __obj.asInstanceOf[FluxStandardAction[Type, Payload, Meta]]
     }
     
-    extension [Self <: FluxStandardAction[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardAction[Type, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxStandardAction[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardAction[Type, Payload, Meta])) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object mod {
       __obj.asInstanceOf[FluxStandardActionWithMeta[Type, Payload, Meta]]
     }
     
-    extension [Self <: FluxStandardActionWithMeta[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardActionWithMeta[Type, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxStandardActionWithMeta[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardActionWithMeta[Type, Payload, Meta])) extends AnyVal {
       
       inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
@@ -211,7 +214,8 @@ object mod {
       __obj.asInstanceOf[FluxStandardActionWithPayload[Type, Payload, Meta]]
     }
     
-    extension [Self <: FluxStandardActionWithPayload[?, ?, ?], Type /* <: String */, Payload, Meta](x: Self & (FluxStandardActionWithPayload[Type, Payload, Meta])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluxStandardActionWithPayload[?, ?, ?], Type /* <: String */, Payload, Meta] (val x: Self & (FluxStandardActionWithPayload[Type, Payload, Meta])) extends AnyVal {
       
       inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }

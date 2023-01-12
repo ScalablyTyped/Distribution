@@ -19,7 +19,8 @@ object EditUpdateCellParams {
     __obj.asInstanceOf[EditUpdateCellParams]
   }
   
-  extension [Self <: EditUpdateCellParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditUpdateCellParams] (val x: Self) extends AnyVal {
     
     inline def setColumnId(value: Double): Self = StObject.set(x, "columnId", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[BuildReporterBuild]
     }
     
-    extension [Self <: BuildReporterBuild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildReporterBuild] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object mod {
       __obj.asInstanceOf[BuildReporterOptions]
     }
     
-    extension [Self <: BuildReporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildReporterOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[SourceMapUploaderOptions]
     }
     
-    extension [Self <: SourceMapUploaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapUploaderOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       

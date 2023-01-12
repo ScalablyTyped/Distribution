@@ -38,7 +38,8 @@ object GetGithubActionsBillingUser {
     __obj.asInstanceOf[GetGithubActionsBillingUser]
   }
   
-  extension [Self <: GetGithubActionsBillingUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGithubActionsBillingUser] (val x: Self) extends AnyVal {
     
     inline def setGetGithubActionsBillingOrg(value: `943`): Self = StObject.set(x, "getGithubActionsBillingOrg", value.asInstanceOf[js.Any])
     

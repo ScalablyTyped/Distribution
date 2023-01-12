@@ -20,7 +20,8 @@ object PushSubscriptionOptions {
     __obj.asInstanceOf[PushSubscriptionOptions]
   }
   
-  extension [Self <: PushSubscriptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushSubscriptionOptions] (val x: Self) extends AnyVal {
     
     inline def setApplicationServerKey(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
     

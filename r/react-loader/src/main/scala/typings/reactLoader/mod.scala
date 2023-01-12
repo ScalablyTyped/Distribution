@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[LoaderProps]
     }
     
-    extension [Self <: LoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

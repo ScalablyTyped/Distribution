@@ -17,7 +17,8 @@ object ScatterChartProps {
     __obj.asInstanceOf[ScatterChartProps]
   }
   
-  extension [Self <: ScatterChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScatterChartProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: ScatterData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

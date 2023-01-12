@@ -15,7 +15,8 @@ object TempDirectoryResult {
     __obj.asInstanceOf[TempDirectoryResult]
   }
   
-  extension [Self <: TempDirectoryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempDirectoryResult] (val x: Self) extends AnyVal {
     
     inline def setDirectoryPath(value: String): Self = StObject.set(x, "directoryPath", value.asInstanceOf[js.Any])
   }

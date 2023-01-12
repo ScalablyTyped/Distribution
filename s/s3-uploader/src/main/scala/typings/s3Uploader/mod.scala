@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[S3UploaderOptions]
     }
     
-    extension [Self <: S3UploaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3UploaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAwsAccessKeyId(value: String): Self = StObject.set(x, "awsAccessKeyId", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[S3UploaderVersion]
     }
     
-    extension [Self <: S3UploaderVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3UploaderVersion] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -253,7 +256,8 @@ object mod {
       __obj.asInstanceOf[image]
     }
     
-    extension [Self <: image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: image] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -288,7 +292,8 @@ object mod {
       __obj.asInstanceOf[imageSize]
     }
     
-    extension [Self <: imageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: imageSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

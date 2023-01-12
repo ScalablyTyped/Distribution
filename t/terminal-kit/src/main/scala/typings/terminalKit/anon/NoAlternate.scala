@@ -15,7 +15,8 @@ object NoAlternate {
     __obj.asInstanceOf[NoAlternate]
   }
   
-  extension [Self <: NoAlternate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoAlternate] (val x: Self) extends AnyVal {
     
     inline def setNoAlternate(value: Boolean): Self = StObject.set(x, "noAlternate", value.asInstanceOf[js.Any])
   }

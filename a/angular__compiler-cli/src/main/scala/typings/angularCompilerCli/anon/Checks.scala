@@ -29,7 +29,8 @@ object Checks {
     __obj.asInstanceOf[Checks]
   }
   
-  extension [Self <: Checks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checks] (val x: Self) extends AnyVal {
     
     inline def setChecks(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ Name in @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/extended_template_diagnostic_name.ExtendedTemplateDiagnosticName ]:? @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api/src/public_options.DiagnosticCategoryLabel} */ js.Any

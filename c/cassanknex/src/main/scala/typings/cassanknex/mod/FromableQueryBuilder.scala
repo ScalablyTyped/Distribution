@@ -15,7 +15,8 @@ object FromableQueryBuilder {
     __obj.asInstanceOf[FromableQueryBuilder]
   }
   
-  extension [Self <: FromableQueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromableQueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String => FromableQueryBuilder): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
   }

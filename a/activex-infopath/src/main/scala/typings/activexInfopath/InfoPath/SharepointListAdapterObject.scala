@@ -37,7 +37,8 @@ object SharepointListAdapterObject {
     __obj.asInstanceOf[SharepointListAdapterObject]
   }
   
-  extension [Self <: SharepointListAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharepointListAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotSharepointListAdapterObject_typekey(value: SharepointListAdapterObject): Self = StObject.set(x, "InfoPath.SharepointListAdapterObject_typekey", value.asInstanceOf[js.Any])
     

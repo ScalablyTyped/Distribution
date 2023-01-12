@@ -53,7 +53,8 @@ object ChangeStreamUpdateDocument {
     __obj.asInstanceOf[ChangeStreamUpdateDocument[TSchema]]
   }
   
-  extension [Self <: ChangeStreamUpdateDocument[?], TSchema /* <: Document */](x: Self & ChangeStreamUpdateDocument[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamUpdateDocument[?], TSchema /* <: Document */] (val x: Self & ChangeStreamUpdateDocument[TSchema]) extends AnyVal {
     
     inline def setFullDocument(value: TSchema): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     

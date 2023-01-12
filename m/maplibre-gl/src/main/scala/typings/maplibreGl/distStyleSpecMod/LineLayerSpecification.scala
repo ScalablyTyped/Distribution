@@ -39,7 +39,8 @@ object LineLayerSpecification {
     __obj.asInstanceOf[LineLayerSpecification]
   }
   
-  extension [Self <: LineLayerSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineLayerSpecification] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FilterSpecification): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

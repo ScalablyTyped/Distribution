@@ -23,7 +23,8 @@ object DescribePatchBaselinesResult {
     __obj.asInstanceOf[DescribePatchBaselinesResult]
   }
   
-  extension [Self <: DescribePatchBaselinesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchBaselinesResult] (val x: Self) extends AnyVal {
     
     inline def setBaselineIdentities(value: PatchBaselineIdentityList): Self = StObject.set(x, "BaselineIdentities", value.asInstanceOf[js.Any])
     

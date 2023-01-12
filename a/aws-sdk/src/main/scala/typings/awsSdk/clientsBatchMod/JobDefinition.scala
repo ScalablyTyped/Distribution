@@ -94,7 +94,8 @@ object JobDefinition {
     __obj.asInstanceOf[JobDefinition]
   }
   
-  extension [Self <: JobDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobDefinition] (val x: Self) extends AnyVal {
     
     inline def setContainerOrchestrationType(value: OrchestrationType): Self = StObject.set(x, "containerOrchestrationType", value.asInstanceOf[js.Any])
     

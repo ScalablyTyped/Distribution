@@ -21,7 +21,8 @@ object TimeFormat {
     __obj.asInstanceOf[TimeFormat]
   }
   
-  extension [Self <: TimeFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeFormat] (val x: Self) extends AnyVal {
     
     inline def setLong(value: String): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

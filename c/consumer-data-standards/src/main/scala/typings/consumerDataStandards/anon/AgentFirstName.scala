@@ -110,7 +110,8 @@ object AgentFirstName {
     __obj.asInstanceOf[AgentFirstName]
   }
   
-  extension [Self <: AgentFirstName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentFirstName] (val x: Self) extends AnyVal {
     
     inline def setAbn(value: String): Self = StObject.set(x, "abn", value.asInstanceOf[js.Any])
     

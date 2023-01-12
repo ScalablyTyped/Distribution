@@ -21,7 +21,8 @@ object QueryRelationsFilter {
     __obj.asInstanceOf[QueryRelationsFilter]
   }
   
-  extension [Self <: QueryRelationsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRelationsFilter] (val x: Self) extends AnyVal {
     
     inline def setDocument_ids(value: js.Array[String]): Self = StObject.set(x, "document_ids", value.asInstanceOf[js.Any])
     

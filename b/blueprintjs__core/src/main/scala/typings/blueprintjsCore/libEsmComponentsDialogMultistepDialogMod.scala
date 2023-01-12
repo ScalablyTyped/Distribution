@@ -137,7 +137,8 @@ object libEsmComponentsDialogMultistepDialogMod {
       __obj.asInstanceOf[IMultistepDialogProps]
     }
     
-    extension [Self <: IMultistepDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultistepDialogProps] (val x: Self) extends AnyVal {
       
       inline def setBackButtonProps(value: DialogStepButtonProps): Self = StObject.set(x, "backButtonProps", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object libEsmComponentsDialogMultistepDialogMod {
       __obj.asInstanceOf[IMultistepDialogState]
     }
     
-    extension [Self <: IMultistepDialogState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultistepDialogState] (val x: Self) extends AnyVal {
       
       inline def setLastViewedIndex(value: Double): Self = StObject.set(x, "lastViewedIndex", value.asInstanceOf[js.Any])
       

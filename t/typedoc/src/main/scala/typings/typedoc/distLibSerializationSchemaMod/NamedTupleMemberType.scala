@@ -29,7 +29,8 @@ object NamedTupleMemberType {
     __obj.asInstanceOf[NamedTupleMemberType]
   }
   
-  extension [Self <: NamedTupleMemberType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedTupleMemberType] (val x: Self) extends AnyVal {
     
     inline def setElement(value: ToSerialized[typings.typedoc.distLibModelsTypesMod.SomeType]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

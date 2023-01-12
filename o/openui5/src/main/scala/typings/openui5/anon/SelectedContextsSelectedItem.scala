@@ -36,7 +36,8 @@ object SelectedContextsSelectedItem {
     __obj.asInstanceOf[SelectedContextsSelectedItem]
   }
   
-  extension [Self <: SelectedContextsSelectedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedContextsSelectedItem] (val x: Self) extends AnyVal {
     
     inline def setSelectedContexts(value: String): Self = StObject.set(x, "selectedContexts", value.asInstanceOf[js.Any])
     

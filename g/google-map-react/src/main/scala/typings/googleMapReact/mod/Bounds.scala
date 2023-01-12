@@ -23,7 +23,8 @@ object Bounds {
     __obj.asInstanceOf[Bounds]
   }
   
-  extension [Self <: Bounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
     
     inline def setNe_(value: Coords): Self = StObject.set(x, "ne", value.asInstanceOf[js.Any])
     

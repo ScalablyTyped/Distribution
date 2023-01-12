@@ -36,7 +36,8 @@ object discoveryMod {
       __obj.asInstanceOf[BasicDiscoveryOptions]
     }
     
-    extension [Self <: BasicDiscoveryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicDiscoveryOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* reg */ MiioSubDeviceOptions => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -73,7 +74,8 @@ object discoveryMod {
       __obj.asInstanceOf[MiioSubDeviceOptions]
     }
     
-    extension [Self <: MiioSubDeviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiioSubDeviceOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: MiioDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object discoveryMod {
       __obj.asInstanceOf[TimedDiscoveryOptions]
     }
     
-    extension [Self <: TimedDiscoveryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimedDiscoveryOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheTime(value: Double): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
       

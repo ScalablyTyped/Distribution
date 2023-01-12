@@ -18,7 +18,8 @@ object FlowLogsConfigurationResult {
     __obj.asInstanceOf[FlowLogsConfigurationResult]
   }
   
-  extension [Self <: FlowLogsConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowLogsConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

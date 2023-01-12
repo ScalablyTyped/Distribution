@@ -27,7 +27,8 @@ object InTangents {
     __obj.asInstanceOf[InTangents]
   }
   
-  extension [Self <: InTangents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InTangents] (val x: Self) extends AnyVal {
     
     inline def setInTangents(value: js.Array[Cartesian3]): Self = StObject.set(x, "inTangents", value.asInstanceOf[js.Any])
     

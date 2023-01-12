@@ -42,7 +42,8 @@ object ILookupMultiFieldExpression {
     __obj.asInstanceOf[ILookupMultiFieldExpression]
   }
   
-  extension [Self <: ILookupMultiFieldExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookupMultiFieldExpression] (val x: Self) extends AnyVal {
     
     inline def setEqualTo(value: Any => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     

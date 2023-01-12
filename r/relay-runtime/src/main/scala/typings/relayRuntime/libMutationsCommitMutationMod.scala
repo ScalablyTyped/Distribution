@@ -81,7 +81,8 @@ object libMutationsCommitMutationMod {
       __obj.asInstanceOf[MutationConfig[TOperation]]
     }
     
-    extension [Self <: MutationConfig[?], TOperation /* <: MutationParameters */](x: Self & MutationConfig[TOperation]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationConfig[?], TOperation /* <: MutationParameters */] (val x: Self & MutationConfig[TOperation]) extends AnyVal {
       
       inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object libMutationsCommitMutationMod {
       __obj.asInstanceOf[MutationParameters]
     }
     
-    extension [Self <: MutationParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationParameters] (val x: Self) extends AnyVal {
       
       inline def setRawResponse(value: js.Object): Self = StObject.set(x, "rawResponse", value.asInstanceOf[js.Any])
       

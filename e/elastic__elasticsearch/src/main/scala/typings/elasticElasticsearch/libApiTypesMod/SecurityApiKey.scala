@@ -36,7 +36,8 @@ object SecurityApiKey {
     __obj.asInstanceOf[SecurityApiKey]
   }
   
-  extension [Self <: SecurityApiKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityApiKey] (val x: Self) extends AnyVal {
     
     inline def setCreation(value: long): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
     

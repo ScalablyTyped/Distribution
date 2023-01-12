@@ -21,7 +21,8 @@ object WhileStatement {
     __obj.asInstanceOf[WhileStatement]
   }
   
-  extension [Self <: WhileStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhileStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

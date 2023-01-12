@@ -120,7 +120,8 @@ object ActiveStyle {
     __obj.asInstanceOf[ActiveStyle]
   }
   
-  extension [Self <: ActiveStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveStyle] (val x: Self) extends AnyVal {
     
     inline def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object locatorLocationToAddressParams {
     __obj.asInstanceOf[locatorLocationToAddressParams]
   }
   
-  extension [Self <: locatorLocationToAddressParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: locatorLocationToAddressParams] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

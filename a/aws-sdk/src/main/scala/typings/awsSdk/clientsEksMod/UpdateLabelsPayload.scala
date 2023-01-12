@@ -23,7 +23,8 @@ object UpdateLabelsPayload {
     __obj.asInstanceOf[UpdateLabelsPayload]
   }
   
-  extension [Self <: UpdateLabelsPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLabelsPayload] (val x: Self) extends AnyVal {
     
     inline def setAddOrUpdateLabels(value: labelsMap): Self = StObject.set(x, "addOrUpdateLabels", value.asInstanceOf[js.Any])
     

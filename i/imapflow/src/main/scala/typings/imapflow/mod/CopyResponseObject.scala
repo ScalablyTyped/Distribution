@@ -22,7 +22,8 @@ object CopyResponseObject {
     __obj.asInstanceOf[CopyResponseObject]
   }
   
-  extension [Self <: CopyResponseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyResponseObject] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object XScaling {
     __obj.asInstanceOf[XScaling]
   }
   
-  extension [Self <: XScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XScaling] (val x: Self) extends AnyVal {
     
     inline def setDoScaling(value: Double => Double): Self = StObject.set(x, "doScaling", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object SlackMetadata {
     __obj.asInstanceOf[SlackMetadata]
   }
   
-  extension [Self <: SlackMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlackMetadata] (val x: Self) extends AnyVal {
     
     inline def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     

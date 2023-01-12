@@ -36,7 +36,8 @@ object buildEnvironmentBrowserDotwebMod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setAttachEvent(value: (String, EventListener) => Boolean): Self = StObject.set(x, "attachEvent", js.Any.fromFunction2(value))
       }

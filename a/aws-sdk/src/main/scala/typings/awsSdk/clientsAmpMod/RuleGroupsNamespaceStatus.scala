@@ -23,7 +23,8 @@ object RuleGroupsNamespaceStatus {
     __obj.asInstanceOf[RuleGroupsNamespaceStatus]
   }
   
-  extension [Self <: RuleGroupsNamespaceStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupsNamespaceStatus] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: RuleGroupsNamespaceStatusCode): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

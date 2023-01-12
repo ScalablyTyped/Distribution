@@ -18,7 +18,8 @@ object PlotSupertrendDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotSupertrendDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotSupertrendDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

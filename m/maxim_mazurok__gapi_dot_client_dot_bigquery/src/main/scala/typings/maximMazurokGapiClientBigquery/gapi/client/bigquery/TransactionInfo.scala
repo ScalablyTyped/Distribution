@@ -16,7 +16,8 @@ object TransactionInfo {
     __obj.asInstanceOf[TransactionInfo]
   }
   
-  extension [Self <: TransactionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionInfo] (val x: Self) extends AnyVal {
     
     inline def setTransactionId(value: String): Self = StObject.set(x, "transactionId", value.asInstanceOf[js.Any])
     

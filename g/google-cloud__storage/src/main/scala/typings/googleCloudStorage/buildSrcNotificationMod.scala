@@ -70,7 +70,8 @@ object buildSrcNotificationMod {
       __obj.asInstanceOf[DeleteNotificationOptions]
     }
     
-    extension [Self <: DeleteNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object buildSrcNotificationMod {
       __obj.asInstanceOf[GetNotificationMetadataOptions]
     }
     
-    extension [Self <: GetNotificationMetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNotificationMetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object buildSrcNotificationMod {
       __obj.asInstanceOf[GetNotificationOptions]
     }
     
-    extension [Self <: GetNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       

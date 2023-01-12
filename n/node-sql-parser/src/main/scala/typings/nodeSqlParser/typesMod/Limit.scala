@@ -17,7 +17,8 @@ object Limit {
     __obj.asInstanceOf[Limit]
   }
   
-  extension [Self <: Limit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
     
     inline def setSeperator(value: String): Self = StObject.set(x, "seperator", value.asInstanceOf[js.Any])
     

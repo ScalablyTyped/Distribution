@@ -30,7 +30,8 @@ object ISeriesList {
     __obj.asInstanceOf[ISeriesList]
   }
   
-  extension [Self <: ISeriesList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISeriesList] (val x: Self) extends AnyVal {
     
     inline def setAnyUsesAxes(value: () => Boolean): Self = StObject.set(x, "anyUsesAxes", js.Any.fromFunction0(value))
     

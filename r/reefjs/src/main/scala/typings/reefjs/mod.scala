@@ -124,7 +124,8 @@ object mod {
       __obj.asInstanceOf[DataStore]
     }
     
-    extension [Self <: DataStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataStore] (val x: Self) extends AnyVal {
       
       inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -192,7 +193,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
       

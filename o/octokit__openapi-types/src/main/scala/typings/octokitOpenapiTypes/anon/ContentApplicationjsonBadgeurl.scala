@@ -15,7 +15,8 @@ object ContentApplicationjsonBadgeurl {
     __obj.asInstanceOf[ContentApplicationjsonBadgeurl]
   }
   
-  extension [Self <: ContentApplicationjsonBadgeurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonBadgeurl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonBadgeurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

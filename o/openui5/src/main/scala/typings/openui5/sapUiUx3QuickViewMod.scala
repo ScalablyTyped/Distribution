@@ -1178,7 +1178,8 @@ object sapUiUx3QuickViewMod {
       __obj.asInstanceOf[QuickViewSettings]
     }
     
-    extension [Self <: QuickViewSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuickViewSettings] (val x: Self) extends AnyVal {
       
       inline def setActionBar(value: typings.openui5.sapUiUx3ActionBarMod.default): Self = StObject.set(x, "actionBar", value.asInstanceOf[js.Any])
       

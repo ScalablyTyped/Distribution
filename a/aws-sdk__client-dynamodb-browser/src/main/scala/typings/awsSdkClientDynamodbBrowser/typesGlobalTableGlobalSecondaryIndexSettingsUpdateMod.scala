@@ -32,7 +32,8 @@ object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
       __obj.asInstanceOf[GlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    extension [Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object typesGlobalTableGlobalSecondaryIndexSettingsUpdateMod {
       __obj.asInstanceOf[UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate]
     }
     
-    extension [Self <: UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGlobalTableGlobalSecondaryIndexSettingsUpdate] (val x: Self) extends AnyVal {
       
       inline def setProvisionedWriteCapacityAutoScalingSettingsUpdate(value: UnmarshalledAutoScalingSettingsUpdate): Self = StObject.set(x, "ProvisionedWriteCapacityAutoScalingSettingsUpdate", value.asInstanceOf[js.Any])
       

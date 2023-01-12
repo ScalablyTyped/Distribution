@@ -17,7 +17,8 @@ object ActivityTimestamps {
     __obj.asInstanceOf[ActivityTimestamps]
   }
   
-  extension [Self <: ActivityTimestamps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityTimestamps] (val x: Self) extends AnyVal {
     
     inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
     

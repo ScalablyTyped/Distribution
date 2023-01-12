@@ -23,7 +23,8 @@ object DeleteQueuedReservedInstancesRequest {
     __obj.asInstanceOf[DeleteQueuedReservedInstancesRequest]
   }
   
-  extension [Self <: DeleteQueuedReservedInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueuedReservedInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

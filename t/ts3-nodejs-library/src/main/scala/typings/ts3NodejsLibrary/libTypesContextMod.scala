@@ -51,7 +51,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[ActiveEvent]
     }
     
-    extension [Self <: ActiveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[BaseContext]
     }
     
-    extension [Self <: BaseContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseContext] (val x: Self) extends AnyVal {
       
       inline def setClientNickname(value: String): Self = StObject.set(x, "clientNickname", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[LoginInfo]
     }
     
-    extension [Self <: LoginInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginInfo] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -158,7 +161,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[SelectNoneContext]
     }
     
-    extension [Self <: SelectNoneContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectNoneContext] (val x: Self) extends AnyVal {
       
       inline def setSelectType(value: NONE): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[SelectPortContext]
     }
     
-    extension [Self <: SelectPortContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectPortContext] (val x: Self) extends AnyVal {
       
       inline def setSelectType(value: PORT): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       
@@ -208,7 +213,8 @@ object libTypesContextMod {
       __obj.asInstanceOf[SelectSidContext]
     }
     
-    extension [Self <: SelectSidContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectSidContext] (val x: Self) extends AnyVal {
       
       inline def setSelectType(value: SID): Self = StObject.set(x, "selectType", value.asInstanceOf[js.Any])
       

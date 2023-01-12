@@ -152,7 +152,8 @@ object AGServerOptions {
     __obj.asInstanceOf[AGServerOptions]
   }
   
-  extension [Self <: AGServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AGServerOptions] (val x: Self) extends AnyVal {
     
     inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
     

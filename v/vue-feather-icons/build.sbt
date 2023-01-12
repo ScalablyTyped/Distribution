@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-feather-icons"
-version := "5.0-dt-20220823Z-9c7de9"
+version := "5.0-dt-20220823Z-1bbf81"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

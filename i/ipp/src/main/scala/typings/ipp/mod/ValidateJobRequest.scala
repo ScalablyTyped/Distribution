@@ -19,7 +19,8 @@ object ValidateJobRequest {
     __obj.asInstanceOf[ValidateJobRequest]
   }
   
-  extension [Self <: ValidateJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateJobRequest] (val x: Self) extends AnyVal {
     
     inline def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     

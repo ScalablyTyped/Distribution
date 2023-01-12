@@ -16,7 +16,8 @@ object WindowsDeviceAccount {
     __obj.asInstanceOf[WindowsDeviceAccount]
   }
   
-  extension [Self <: WindowsDeviceAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowsDeviceAccount] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: NullableOption[String]): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

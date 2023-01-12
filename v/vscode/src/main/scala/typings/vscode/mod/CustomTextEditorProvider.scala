@@ -35,7 +35,8 @@ object CustomTextEditorProvider {
     __obj.asInstanceOf[CustomTextEditorProvider]
   }
   
-  extension [Self <: CustomTextEditorProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTextEditorProvider] (val x: Self) extends AnyVal {
     
     inline def setResolveCustomTextEditor(value: (TextDocument, WebviewPanel, CancellationToken) => Thenable[Unit] | Unit): Self = StObject.set(x, "resolveCustomTextEditor", js.Any.fromFunction3(value))
   }

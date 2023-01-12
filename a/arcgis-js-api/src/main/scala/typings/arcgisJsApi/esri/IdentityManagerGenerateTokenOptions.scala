@@ -34,7 +34,8 @@ object IdentityManagerGenerateTokenOptions {
     __obj.asInstanceOf[IdentityManagerGenerateTokenOptions]
   }
   
-  extension [Self <: IdentityManagerGenerateTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityManagerGenerateTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     

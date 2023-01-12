@@ -67,7 +67,8 @@ object SecureScoreControlProfile {
     __obj.asInstanceOf[SecureScoreControlProfile]
   }
   
-  extension [Self <: SecureScoreControlProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureScoreControlProfile] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: NullableOption[String]): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

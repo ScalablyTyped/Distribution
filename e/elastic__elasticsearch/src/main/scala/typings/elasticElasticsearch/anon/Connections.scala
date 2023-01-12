@@ -25,7 +25,8 @@ object Connections {
     __obj.asInstanceOf[Connections]
   }
   
-  extension [Self <: Connections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connections] (val x: Self) extends AnyVal {
     
     inline def setConnections(value: GraphHop): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
     

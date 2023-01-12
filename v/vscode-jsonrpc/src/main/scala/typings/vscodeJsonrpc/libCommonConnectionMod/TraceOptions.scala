@@ -17,7 +17,8 @@ object TraceOptions {
     __obj.asInstanceOf[TraceOptions]
   }
   
-  extension [Self <: TraceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceOptions] (val x: Self) extends AnyVal {
     
     inline def setSendNotification(value: Boolean): Self = StObject.set(x, "sendNotification", value.asInstanceOf[js.Any])
     

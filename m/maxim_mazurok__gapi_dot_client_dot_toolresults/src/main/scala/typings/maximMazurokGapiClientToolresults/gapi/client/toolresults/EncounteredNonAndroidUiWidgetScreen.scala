@@ -19,7 +19,8 @@ object EncounteredNonAndroidUiWidgetScreen {
     __obj.asInstanceOf[EncounteredNonAndroidUiWidgetScreen]
   }
   
-  extension [Self <: EncounteredNonAndroidUiWidgetScreen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncounteredNonAndroidUiWidgetScreen] (val x: Self) extends AnyVal {
     
     inline def setDistinctScreens(value: Double): Self = StObject.set(x, "distinctScreens", value.asInstanceOf[js.Any])
     

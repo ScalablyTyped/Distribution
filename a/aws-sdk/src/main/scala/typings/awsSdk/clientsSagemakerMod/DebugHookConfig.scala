@@ -33,7 +33,8 @@ object DebugHookConfig {
     __obj.asInstanceOf[DebugHookConfig]
   }
   
-  extension [Self <: DebugHookConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugHookConfig] (val x: Self) extends AnyVal {
     
     inline def setCollectionConfigurations(value: CollectionConfigurations): Self = StObject.set(x, "CollectionConfigurations", value.asInstanceOf[js.Any])
     

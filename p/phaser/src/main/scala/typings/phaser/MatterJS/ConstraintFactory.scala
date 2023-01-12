@@ -23,7 +23,8 @@ object ConstraintFactory {
     __obj.asInstanceOf[ConstraintFactory]
   }
   
-  extension [Self <: ConstraintFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstraintFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: IConstraintDefinition => ConstraintType): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

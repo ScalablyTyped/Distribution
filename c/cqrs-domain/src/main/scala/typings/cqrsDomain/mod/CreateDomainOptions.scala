@@ -75,7 +75,8 @@ object CreateDomainOptions {
     __obj.asInstanceOf[CreateDomainOptions]
   }
   
-  extension [Self <: CreateDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregateLock(value: Db): Self = StObject.set(x, "aggregateLock", value.asInstanceOf[js.Any])
     

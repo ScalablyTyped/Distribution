@@ -176,7 +176,8 @@ object TravelModeProperties {
     __obj.asInstanceOf[TravelModeProperties]
   }
   
-  extension [Self <: TravelModeProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TravelModeProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributeParameterValues(value: js.Array[TravelModeAttributeParameterValues]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     

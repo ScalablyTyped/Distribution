@@ -20,7 +20,8 @@ object NodesClearRepositoriesMeteringArchiveResponseBase {
     __obj.asInstanceOf[NodesClearRepositoriesMeteringArchiveResponseBase]
   }
   
-  extension [Self <: NodesClearRepositoriesMeteringArchiveResponseBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClearRepositoriesMeteringArchiveResponseBase] (val x: Self) extends AnyVal {
     
     inline def setCluster_name(value: Name): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     

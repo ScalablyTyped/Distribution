@@ -17,7 +17,8 @@ object WritingOptions {
     __obj.asInstanceOf[WritingOptions]
   }
   
-  extension [Self <: WritingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WritingOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType | utf8 | base64): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

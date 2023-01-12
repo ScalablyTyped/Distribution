@@ -41,7 +41,8 @@ object WebBrowserCustomTabsResults {
     __obj.asInstanceOf[WebBrowserCustomTabsResults]
   }
   
-  extension [Self <: WebBrowserCustomTabsResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebBrowserCustomTabsResults] (val x: Self) extends AnyVal {
     
     inline def setBrowserPackages(value: js.Array[String]): Self = StObject.set(x, "browserPackages", value.asInstanceOf[js.Any])
     

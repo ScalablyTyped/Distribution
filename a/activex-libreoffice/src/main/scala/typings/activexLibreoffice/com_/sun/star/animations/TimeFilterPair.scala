@@ -17,7 +17,8 @@ object TimeFilterPair {
     __obj.asInstanceOf[TimeFilterPair]
   }
   
-  extension [Self <: TimeFilterPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeFilterPair] (val x: Self) extends AnyVal {
     
     inline def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     

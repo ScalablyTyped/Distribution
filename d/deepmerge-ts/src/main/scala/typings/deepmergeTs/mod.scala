@@ -72,7 +72,8 @@ object mod {
       __obj.asInstanceOf[DeepMergeMergeFunctionUtils]
     }
     
-    extension [Self <: DeepMergeMergeFunctionUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctionUtils] (val x: Self) extends AnyVal {
       
       inline def setDeepmerge(value: Any => Any): Self = StObject.set(x, "deepmerge", js.Any.fromFunction1(value))
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[DeepMergeMergeFunctions]
     }
     
-    extension [Self <: DeepMergeMergeFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctions] (val x: Self) extends AnyVal {
       
       inline def setMergeArrays(value: (Any, Any, Any) => Any): Self = StObject.set(x, "mergeArrays", js.Any.fromFunction3(value))
       
@@ -156,7 +158,8 @@ object mod {
       __obj.asInstanceOf[DeepMergeMergeFunctionsDefaults]
     }
     
-    extension [Self <: DeepMergeMergeFunctionsDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeMergeFunctionsDefaults] (val x: Self) extends AnyVal {
       
       inline def setMergeArrays(value: js.Array[Set[Any]] => Any): Self = StObject.set(x, "mergeArrays", js.Any.fromFunction1(value))
       
@@ -242,7 +245,8 @@ object mod {
       __obj.asInstanceOf[DeepMergeOptionsFull]
     }
     
-    extension [Self <: DeepMergeOptionsFull](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepMergeOptionsFull] (val x: Self) extends AnyVal {
       
       inline def setMergeArrays(
         value: (js.Function3[

@@ -28,7 +28,8 @@ object ListInputRoutingsRequest {
     __obj.asInstanceOf[ListInputRoutingsRequest]
   }
   
-  extension [Self <: ListInputRoutingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInputRoutingsRequest] (val x: Self) extends AnyVal {
     
     inline def setInputIdentifier(value: InputIdentifier): Self = StObject.set(x, "inputIdentifier", value.asInstanceOf[js.Any])
     

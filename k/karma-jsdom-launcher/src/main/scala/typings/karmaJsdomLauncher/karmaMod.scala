@@ -22,7 +22,8 @@ object karmaMod {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setJsdomLauncher(value: JsdomLauncherOptions): Self = StObject.set(x, "jsdomLauncher", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object karmaMod {
       __obj.asInstanceOf[JsdomLauncherOptions]
     }
     
-    extension [Self <: JsdomLauncherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsdomLauncherOptions] (val x: Self) extends AnyVal {
       
       inline def setJsdom(value: ConstructorOptions): Self = StObject.set(x, "jsdom", value.asInstanceOf[js.Any])
     }

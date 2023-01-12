@@ -318,7 +318,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       __obj.asInstanceOf[DependentHostedNumberOrderListInstanceEachOptions]
     }
     
-    extension [Self <: DependentHostedNumberOrderListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ DependentHostedNumberOrderInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -402,7 +403,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       __obj.asInstanceOf[DependentHostedNumberOrderListInstanceOptions]
     }
     
-    extension [Self <: DependentHostedNumberOrderListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -471,7 +473,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       __obj.asInstanceOf[DependentHostedNumberOrderListInstancePageOptions]
     }
     
-    extension [Self <: DependentHostedNumberOrderListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -626,7 +629,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       __obj.asInstanceOf[DependentHostedNumberOrderResource]
     }
     
-    extension [Self <: DependentHostedNumberOrderResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -689,7 +693,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       __obj.asInstanceOf[DependentHostedNumberOrderSolution]
     }
     
-    extension [Self <: DependentHostedNumberOrderSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderSolution] (val x: Self) extends AnyVal {
       
       inline def setSigningDocumentSid(value: String): Self = StObject.set(x, "signingDocumentSid", value.asInstanceOf[js.Any])
       

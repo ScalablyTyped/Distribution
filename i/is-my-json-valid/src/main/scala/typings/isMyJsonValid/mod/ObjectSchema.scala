@@ -24,7 +24,8 @@ object ObjectSchema {
     __obj.asInstanceOf[ObjectSchema[Properties, Required]]
   }
   
-  extension [Self <: ObjectSchema[?, ?], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](x: Self & (ObjectSchema[Properties, Required])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectSchema[?, ?], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] (val x: Self & (ObjectSchema[Properties, Required])) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object MotionScalePullDownProps {
     __obj.asInstanceOf[MotionScalePullDownProps]
   }
   
-  extension [Self <: MotionScalePullDownProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionScalePullDownProps] (val x: Self) extends AnyVal {
     
     inline def setInitScale(value: Double): Self = StObject.set(x, "initScale", value.asInstanceOf[js.Any])
     

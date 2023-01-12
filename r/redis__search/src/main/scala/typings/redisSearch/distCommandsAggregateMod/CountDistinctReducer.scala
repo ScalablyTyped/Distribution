@@ -21,7 +21,8 @@ object CountDistinctReducer {
     __obj.asInstanceOf[CountDistinctReducer]
   }
   
-  extension [Self <: CountDistinctReducer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountDistinctReducer] (val x: Self) extends AnyVal {
     
     inline def setProperty(value: PropertyName): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
   }

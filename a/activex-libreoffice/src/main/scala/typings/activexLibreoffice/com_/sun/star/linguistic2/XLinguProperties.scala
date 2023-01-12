@@ -107,7 +107,8 @@ object XLinguProperties {
     __obj.asInstanceOf[XLinguProperties]
   }
   
-  extension [Self <: XLinguProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinguProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultLocale(value: Locale): Self = StObject.set(x, "DefaultLocale", value.asInstanceOf[js.Any])
     

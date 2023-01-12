@@ -60,7 +60,8 @@ object ExtensionRule {
     __obj.asInstanceOf[ExtensionRule]
   }
   
-  extension [Self <: ExtensionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionRule] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

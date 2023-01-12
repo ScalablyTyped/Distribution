@@ -681,7 +681,8 @@ object PartialDatePickerInputProAbout {
     __obj.asInstanceOf[PartialDatePickerInputProAbout]
   }
   
-  extension [Self <: PartialDatePickerInputProAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDatePickerInputProAbout] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

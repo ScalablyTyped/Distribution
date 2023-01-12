@@ -42,7 +42,8 @@ object VoiceRecognizerTask {
     __obj.asInstanceOf[VoiceRecognizerTask]
   }
   
-  extension [Self <: VoiceRecognizerTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceRecognizerTask] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

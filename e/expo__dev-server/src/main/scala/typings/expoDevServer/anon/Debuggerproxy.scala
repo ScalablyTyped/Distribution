@@ -31,7 +31,8 @@ object Debuggerproxy {
     __obj.asInstanceOf[Debuggerproxy]
   }
   
-  extension [Self <: Debuggerproxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Debuggerproxy] (val x: Self) extends AnyVal {
     
     inline def `setSlashdebugger-proxy`(value: Server[WebSocket]): Self = StObject.set(x, "/debugger-proxy", value.asInstanceOf[js.Any])
     

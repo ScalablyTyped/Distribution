@@ -55,7 +55,8 @@ object TwitterTweetWidgetOptions {
     __obj.asInstanceOf[TwitterTweetWidgetOptions]
   }
   
-  extension [Self <: TwitterTweetWidgetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TwitterTweetWidgetOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

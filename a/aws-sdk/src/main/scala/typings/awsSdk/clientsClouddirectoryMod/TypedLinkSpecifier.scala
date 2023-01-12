@@ -38,7 +38,8 @@ object TypedLinkSpecifier {
     __obj.asInstanceOf[TypedLinkSpecifier]
   }
   
-  extension [Self <: TypedLinkSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedLinkSpecifier] (val x: Self) extends AnyVal {
     
     inline def setIdentityAttributeValues(value: AttributeNameAndValueList): Self = StObject.set(x, "IdentityAttributeValues", value.asInstanceOf[js.Any])
     

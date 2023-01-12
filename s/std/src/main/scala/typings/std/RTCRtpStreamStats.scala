@@ -34,7 +34,8 @@ object RTCRtpStreamStats {
     __obj.asInstanceOf[RTCRtpStreamStats]
   }
   
-  extension [Self <: RTCRtpStreamStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCRtpStreamStats] (val x: Self) extends AnyVal {
     
     inline def setCodecId(value: java.lang.String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
     

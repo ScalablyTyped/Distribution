@@ -107,7 +107,8 @@ object IVaultAsync {
     __obj.asInstanceOf[IVaultAsync]
   }
   
-  extension [Self <: IVaultAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultAsync] (val x: Self) extends AnyVal {
     
     inline def setClassGroupOperations(value: IVaultClassGroupOperationsAsync): Self = StObject.set(x, "ClassGroupOperations", value.asInstanceOf[js.Any])
     

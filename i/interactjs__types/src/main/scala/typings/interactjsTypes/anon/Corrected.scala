@@ -22,7 +22,8 @@ object Corrected {
     __obj.asInstanceOf[Corrected]
   }
   
-  extension [Self <: Corrected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Corrected] (val x: Self) extends AnyVal {
     
     inline def setCorrected(value: FullRect): Self = StObject.set(x, "corrected", value.asInstanceOf[js.Any])
     

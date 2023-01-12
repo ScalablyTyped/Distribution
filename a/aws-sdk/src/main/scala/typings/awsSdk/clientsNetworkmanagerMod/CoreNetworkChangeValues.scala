@@ -48,7 +48,8 @@ object CoreNetworkChangeValues {
     __obj.asInstanceOf[CoreNetworkChangeValues]
   }
   
-  extension [Self <: CoreNetworkChangeValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkChangeValues] (val x: Self) extends AnyVal {
     
     inline def setAsn(value: Long): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
     

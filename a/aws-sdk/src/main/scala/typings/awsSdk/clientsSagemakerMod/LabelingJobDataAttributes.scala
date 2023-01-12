@@ -18,7 +18,8 @@ object LabelingJobDataAttributes {
     __obj.asInstanceOf[LabelingJobDataAttributes]
   }
   
-  extension [Self <: LabelingJobDataAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelingJobDataAttributes] (val x: Self) extends AnyVal {
     
     inline def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
     

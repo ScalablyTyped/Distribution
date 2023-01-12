@@ -38,7 +38,8 @@ object ListFieldOptionsRequest {
     __obj.asInstanceOf[ListFieldOptionsRequest]
   }
   
-  extension [Self <: ListFieldOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFieldOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     

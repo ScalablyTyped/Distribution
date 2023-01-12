@@ -74,7 +74,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CssAndViewSpecificModeConfig]
     }
     
-    extension [Self <: CssAndViewSpecificModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssAndViewSpecificModeConfig] (val x: Self) extends AnyVal {
       
       inline def setCommon(value: String): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DefsAndSymbolSpecificModeConfig]
     }
     
-    extension [Self <: DefsAndSymbolSpecificModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefsAndSymbolSpecificModeConfig] (val x: Self) extends AnyVal {
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setCss(value: CssAndViewSpecificModeConfig | Boolean): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
@@ -304,7 +308,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ModeConfig]
     }
     
-    extension [Self <: ModeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModeConfig] (val x: Self) extends AnyVal {
       
       inline def setBust(value: Boolean): Self = StObject.set(x, "bust", value.asInstanceOf[js.Any])
       
@@ -361,7 +366,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RenderingConfiguration]
     }
     
-    extension [Self <: RenderingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
@@ -467,7 +473,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Shape]
     }
     
-    extension [Self <: Shape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -564,7 +571,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Svg]
     }
     
-    extension [Self <: Svg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
       
       inline def setDimensionAttributes(value: Boolean): Self = StObject.set(x, "dimensionAttributes", value.asInstanceOf[js.Any])
       

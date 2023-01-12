@@ -32,7 +32,8 @@ object distTypesBucketHostnameMod {
       __obj.asInstanceOf[BucketHostname_]
     }
     
-    extension [Self <: BucketHostname_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketHostname_] (val x: Self) extends AnyVal {
       
       inline def setBucketEndpoint(value: Boolean): Self = StObject.set(x, "bucketEndpoint", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object ReservationConfig {
     __obj.asInstanceOf[ReservationConfig]
   }
   
-  extension [Self <: ReservationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationConfig] (val x: Self) extends AnyVal {
     
     inline def setThroughputReservation(value: String): Self = StObject.set(x, "throughputReservation", value.asInstanceOf[js.Any])
     

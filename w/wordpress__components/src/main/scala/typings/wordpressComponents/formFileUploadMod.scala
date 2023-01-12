@@ -152,7 +152,8 @@ object formFileUploadMod {
         __obj.asInstanceOf[BaseProps]
       }
       
-      extension [Self <: BaseProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
         
         inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
@@ -795,7 +796,8 @@ object formFileUploadMod {
         __obj.asInstanceOf[IconButtonProps]
       }
       
-      extension [Self <: IconButtonProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
         
         inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
         
@@ -2048,7 +2050,8 @@ object formFileUploadMod {
         __obj.asInstanceOf[RenderProps]
       }
       
-      extension [Self <: RenderProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderProps] (val x: Self) extends AnyVal {
         
         inline def setRender(value: OpenFileDialog => Element): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       }

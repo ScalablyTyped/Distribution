@@ -142,7 +142,8 @@ object esmTypesMod {
       __obj.asInstanceOf[FetchError]
     }
     
-    extension [Self <: FetchError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchError] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -974,7 +975,8 @@ object esmTypesMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -2607,7 +2609,8 @@ object esmTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -2634,7 +2637,8 @@ object esmTypesMod {
       __obj.asInstanceOf[StorageItem]
     }
     
-    extension [Self <: StorageItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object RenderSearchTemplateResponse {
     __obj.asInstanceOf[RenderSearchTemplateResponse]
   }
   
-  extension [Self <: RenderSearchTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSearchTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setTemplate_output(value: Record[String, Any]): Self = StObject.set(x, "template_output", value.asInstanceOf[js.Any])
   }

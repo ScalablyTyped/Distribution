@@ -28,7 +28,8 @@ object ListResourceComplianceSummariesRequest {
     __obj.asInstanceOf[ListResourceComplianceSummariesRequest]
   }
   
-  extension [Self <: ListResourceComplianceSummariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResourceComplianceSummariesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ComplianceStringFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

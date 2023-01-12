@@ -33,7 +33,8 @@ object ResultByTime {
     __obj.asInstanceOf[ResultByTime]
   }
   
-  extension [Self <: ResultByTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultByTime] (val x: Self) extends AnyVal {
     
     inline def setEstimated(value: Estimated): Self = StObject.set(x, "Estimated", value.asInstanceOf[js.Any])
     

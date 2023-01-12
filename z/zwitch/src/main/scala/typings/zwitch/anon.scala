@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Handlers[UnknownHandler, InvalidHandler, KnownHandler]]
     }
     
-    extension [Self <: Handlers[?, ?, ?], UnknownHandler /* <: Handler */, InvalidHandler /* <: Handler */, KnownHandler /* <: Handler */](x: Self & (Handlers[UnknownHandler, InvalidHandler, KnownHandler])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handlers[?, ?, ?], UnknownHandler /* <: Handler */, InvalidHandler /* <: Handler */, KnownHandler /* <: Handler */] (val x: Self & (Handlers[UnknownHandler, InvalidHandler, KnownHandler])) extends AnyVal {
       
       inline def setHandlers(value: Record[String, KnownHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object ClientOptions {
     __obj.asInstanceOf[ClientOptions]
   }
   
-  extension [Self <: ClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthorizedParties(value: String | js.Array[String]): Self = StObject.set(x, "additionalAuthorizedParties", value.asInstanceOf[js.Any])
     

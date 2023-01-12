@@ -15,7 +15,8 @@ object IncludeDirectories {
     __obj.asInstanceOf[IncludeDirectories]
   }
   
-  extension [Self <: IncludeDirectories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeDirectories] (val x: Self) extends AnyVal {
     
     inline def setIncludeDirectories(value: Boolean): Self = StObject.set(x, "includeDirectories", value.asInstanceOf[js.Any])
     

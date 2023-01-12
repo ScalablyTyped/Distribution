@@ -19,7 +19,8 @@ object PrefixRegSymbol {
     __obj.asInstanceOf[PrefixRegSymbol]
   }
   
-  extension [Self <: PrefixRegSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrefixRegSymbol] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: FNotation): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[ModalDropdownProps[T]]
     }
     
-    extension [Self <: ModalDropdownProps[?], T](x: Self & ModalDropdownProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalDropdownProps[?], T] (val x: Self & ModalDropdownProps[T]) extends AnyVal {
       
       inline def setAdjustFrame(value: /* positionStyle */ PositionStyle => PositionStyle): Self = StObject.set(x, "adjustFrame", js.Any.fromFunction1(value))
       
@@ -314,7 +315,8 @@ object mod {
       __obj.asInstanceOf[PositionStyle]
     }
     
-    extension [Self <: PositionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositionStyle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object A11yRemovalMessage {
     __obj.asInstanceOf[A11yRemovalMessage[Item]]
   }
   
-  extension [Self <: A11yRemovalMessage[?], Item](x: Self & A11yRemovalMessage[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: A11yRemovalMessage[?], Item] (val x: Self & A11yRemovalMessage[Item]) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

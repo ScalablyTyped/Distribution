@@ -61,7 +61,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltip]
     }
     
-    extension [Self <: ITooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltip] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -92,7 +93,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipPosition]
     }
     
-    extension [Self <: ITooltipPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipPosition] (val x: Self) extends AnyVal {
       
       inline def setPlacement(value: TooltipPositionPlacement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -136,7 +138,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipReference]
     }
     
-    extension [Self <: ITooltipReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipReference] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -169,7 +172,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipReferenceOptions]
     }
     
-    extension [Self <: ITooltipReferenceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipReferenceOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipService]
     }
     
-    extension [Self <: ITooltipService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipService] (val x: Self) extends AnyVal {
       
       inline def setCreateReference(value: (HTMLElement, ITooltipReferenceOptions) => ITooltipReference): Self = StObject.set(x, "createReference", js.Any.fromFunction2(value))
       
@@ -245,7 +250,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipShowOptions]
     }
     
-    extension [Self <: ITooltipShowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipShowOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -286,7 +292,8 @@ object distSrcModulesUiCoreTooltipTypesMod {
       __obj.asInstanceOf[ITooltipStyles]
     }
     
-    extension [Self <: ITooltipStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipStyles] (val x: Self) extends AnyVal {
       
       inline def setShowAsElement(value: String): Self = StObject.set(x, "showAsElement", value.asInstanceOf[js.Any])
       

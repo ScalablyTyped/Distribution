@@ -20,7 +20,8 @@ object BottomTabBarSplitLine {
     __obj.asInstanceOf[BottomTabBarSplitLine]
   }
   
-  extension [Self <: BottomTabBarSplitLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomTabBarSplitLine] (val x: Self) extends AnyVal {
     
     inline def setBottomTabBarSplitLine(value: ViewStyle): Self = StObject.set(x, "bottomTabBarSplitLine", value.asInstanceOf[js.Any])
     

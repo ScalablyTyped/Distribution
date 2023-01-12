@@ -802,7 +802,8 @@ object mod {
       __obj.asInstanceOf[ServerOptions]
     }
     
-    extension [Self <: ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: AdapterConstructor): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

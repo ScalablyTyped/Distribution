@@ -780,7 +780,8 @@ object sapMToolbarMod {
       __obj.asInstanceOf[ToolbarSettings]
     }
     
-    extension [Self <: ToolbarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarSettings] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

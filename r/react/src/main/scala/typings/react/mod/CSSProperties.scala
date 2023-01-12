@@ -19,7 +19,8 @@ object CSSProperties {
     __obj.asInstanceOf[CSSProperties]
   }
   
-  extension [Self <: CSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
     
     inline def setHack(value: Any): Self = StObject.set(x, "hack", value.asInstanceOf[js.Any])
     

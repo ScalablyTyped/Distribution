@@ -38,7 +38,8 @@ object distServerLoadComponentsMod {
       __obj.asInstanceOf[LoadComponentsReturnType]
     }
     
-    extension [Self <: LoadComponentsReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadComponentsReturnType] (val x: Self) extends AnyVal {
       
       inline def setApp(value: Any): Self = StObject.set(x, "App", value.asInstanceOf[js.Any])
       

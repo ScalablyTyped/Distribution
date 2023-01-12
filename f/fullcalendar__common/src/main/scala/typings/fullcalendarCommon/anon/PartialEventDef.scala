@@ -40,7 +40,8 @@ object PartialEventDef {
     __obj.asInstanceOf[PartialEventDef]
   }
   
-  extension [Self <: PartialEventDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEventDef] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

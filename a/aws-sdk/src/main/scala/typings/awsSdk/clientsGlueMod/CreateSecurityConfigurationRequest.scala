@@ -23,7 +23,8 @@ object CreateSecurityConfigurationRequest {
     __obj.asInstanceOf[CreateSecurityConfigurationRequest]
   }
   
-  extension [Self <: CreateSecurityConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSecurityConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     

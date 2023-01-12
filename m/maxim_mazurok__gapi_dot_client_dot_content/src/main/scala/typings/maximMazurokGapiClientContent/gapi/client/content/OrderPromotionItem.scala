@@ -25,7 +25,8 @@ object OrderPromotionItem {
     __obj.asInstanceOf[OrderPromotionItem]
   }
   
-  extension [Self <: OrderPromotionItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderPromotionItem] (val x: Self) extends AnyVal {
     
     inline def setLineItemId(value: String): Self = StObject.set(x, "lineItemId", value.asInstanceOf[js.Any])
     

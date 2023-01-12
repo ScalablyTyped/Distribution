@@ -22,7 +22,8 @@ object CloudBuildOptions {
     __obj.asInstanceOf[CloudBuildOptions]
   }
   
-  extension [Self <: CloudBuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudBuildOptions] (val x: Self) extends AnyVal {
     
     inline def setAppYamlPath(value: String): Self = StObject.set(x, "appYamlPath", value.asInstanceOf[js.Any])
     

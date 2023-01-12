@@ -48,7 +48,8 @@ object SnapshotSchedule {
     __obj.asInstanceOf[SnapshotSchedule]
   }
   
-  extension [Self <: SnapshotSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSchedule] (val x: Self) extends AnyVal {
     
     inline def setAssociatedClusterCount(value: IntegerOptional): Self = StObject.set(x, "AssociatedClusterCount", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object typesGetEndpointOutputMod {
       __obj.asInstanceOf[GetEndpointOutput]
     }
     
-    extension [Self <: GetEndpointOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEndpointOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

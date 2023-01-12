@@ -23,7 +23,8 @@ object DescribeMaintenanceWindowTargetsResult {
     __obj.asInstanceOf[DescribeMaintenanceWindowTargetsResult]
   }
   
-  extension [Self <: DescribeMaintenanceWindowTargetsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMaintenanceWindowTargetsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

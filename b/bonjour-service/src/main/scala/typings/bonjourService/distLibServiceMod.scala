@@ -103,7 +103,8 @@ object distLibServiceMod {
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    extension [Self <: ServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setFqdn(value: String): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
       
@@ -157,7 +158,8 @@ object distLibServiceMod {
       __obj.asInstanceOf[ServiceRecord]
     }
     
-    extension [Self <: ServiceRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceRecord] (val x: Self) extends AnyVal {
       
       inline def setData(value: KeyValue | String | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object distLibServiceMod {
       __obj.asInstanceOf[ServiceReferer]
     }
     
-    extension [Self <: ServiceReferer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceReferer] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

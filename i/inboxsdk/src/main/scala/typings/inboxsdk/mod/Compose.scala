@@ -51,7 +51,8 @@ object Compose {
       __obj.asInstanceOf[ComposeButtonClickEvent]
     }
     
-    extension [Self <: ComposeButtonClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeButtonClickEvent] (val x: Self) extends AnyVal {
       
       inline def setComposeView(value: ComposeView): Self = StObject.set(x, "composeView", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object Compose {
       __obj.asInstanceOf[ComposeButtonDescriptor]
     }
     
-    extension [Self <: ComposeButtonDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeButtonDescriptor] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object Compose {
       __obj.asInstanceOf[ComposeInstance]
     }
     
-    extension [Self <: ComposeInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeInstance] (val x: Self) extends AnyVal {
       
       inline def setOpenNewComposeView(value: () => js.Promise[ComposeView]): Self = StObject.set(x, "openNewComposeView", js.Any.fromFunction0(value))
       
@@ -151,7 +154,8 @@ object Compose {
       __obj.asInstanceOf[ComposeNoticeDescriptor]
     }
     
-    extension [Self <: ComposeNoticeDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposeNoticeDescriptor] (val x: Self) extends AnyVal {
       
       inline def setOrderHint(value: Double): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
       
@@ -289,7 +293,8 @@ object Compose {
       __obj.asInstanceOf[RecipientsChangedEvent]
     }
     
-    extension [Self <: RecipientsChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecipientsChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setBcc(value: Added): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
@@ -310,7 +315,8 @@ object Compose {
       __obj.asInstanceOf[SendOptions]
     }
     
-    extension [Self <: SendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
       
       inline def setSendAndArchive(value: Boolean): Self = StObject.set(x, "sendAndArchive", value.asInstanceOf[js.Any])
       
@@ -331,7 +337,8 @@ object Compose {
       __obj.asInstanceOf[StatusBarDescriptor]
     }
     
-    extension [Self <: StatusBarDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBarDescriptor] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -362,7 +369,8 @@ object Compose {
       __obj.asInstanceOf[StatusBarView]
     }
     
-    extension [Self <: StatusBarView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusBarView] (val x: Self) extends AnyVal {
       
       inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
     }

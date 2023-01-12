@@ -28,7 +28,8 @@ object AutoAdjustData {
     __obj.asInstanceOf[AutoAdjustData]
   }
   
-  extension [Self <: AutoAdjustData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoAdjustData] (val x: Self) extends AnyVal {
     
     inline def setAutoAdjustType(value: AutoAdjustType): Self = StObject.set(x, "AutoAdjustType", value.asInstanceOf[js.Any])
     

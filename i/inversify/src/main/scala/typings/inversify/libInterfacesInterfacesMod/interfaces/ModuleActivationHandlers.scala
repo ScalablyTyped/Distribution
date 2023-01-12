@@ -17,7 +17,8 @@ object ModuleActivationHandlers {
     __obj.asInstanceOf[ModuleActivationHandlers]
   }
   
-  extension [Self <: ModuleActivationHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleActivationHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnActivations(value: Lookup[BindingActivation[Any]]): Self = StObject.set(x, "onActivations", value.asInstanceOf[js.Any])
     

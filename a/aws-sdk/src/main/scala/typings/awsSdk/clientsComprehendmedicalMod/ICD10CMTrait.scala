@@ -23,7 +23,8 @@ object ICD10CMTrait {
     __obj.asInstanceOf[ICD10CMTrait]
   }
   
-  extension [Self <: ICD10CMTrait](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICD10CMTrait] (val x: Self) extends AnyVal {
     
     inline def setName(value: ICD10CMTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

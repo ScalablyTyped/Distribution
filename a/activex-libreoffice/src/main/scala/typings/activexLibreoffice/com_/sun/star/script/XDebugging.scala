@@ -110,7 +110,8 @@ object XDebugging {
     __obj.asInstanceOf[XDebugging]
   }
   
-  extension [Self <: XDebugging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDebugging] (val x: Self) extends AnyVal {
     
     inline def setClearAllBreakPoints(value: String => Unit): Self = StObject.set(x, "clearAllBreakPoints", js.Any.fromFunction1(value))
     

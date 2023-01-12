@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[FilterFunctionOptions]
     }
     
-    extension [Self <: FilterFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setGetItemValue(value: (AutoCompleteData, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       
@@ -104,7 +105,8 @@ object anon {
       __obj.asInstanceOf[RequiredFixedPositioningT]
     }
     
-    extension [Self <: RequiredFixedPositioningT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredFixedPositioningT] (val x: Self) extends AnyVal {
       
       inline def setOnEnter(value: /* appearing */ Boolean => Unit): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
       

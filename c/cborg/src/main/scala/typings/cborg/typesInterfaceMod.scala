@@ -40,7 +40,8 @@ object typesInterfaceMod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowBigInt(value: Boolean): Self = StObject.set(x, "allowBigInt", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object typesInterfaceMod {
       __obj.asInstanceOf[DecodeTokenizer]
     }
     
-    extension [Self <: DecodeTokenizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeTokenizer] (val x: Self) extends AnyVal {
       
       inline def setDone(value: () => Boolean): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
       
@@ -130,7 +132,8 @@ object typesInterfaceMod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setAddBreakTokens(value: Boolean): Self = StObject.set(x, "addBreakTokens", value.asInstanceOf[js.Any])
       

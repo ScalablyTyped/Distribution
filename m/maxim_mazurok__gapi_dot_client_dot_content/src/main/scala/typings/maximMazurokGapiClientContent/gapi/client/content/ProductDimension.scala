@@ -19,7 +19,8 @@ object ProductDimension {
     __obj.asInstanceOf[ProductDimension]
   }
   
-  extension [Self <: ProductDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductDimension] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

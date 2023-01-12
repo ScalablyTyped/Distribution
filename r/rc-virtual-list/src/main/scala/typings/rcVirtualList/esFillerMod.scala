@@ -39,7 +39,8 @@ object esFillerMod extends Shortcut {
       __obj.asInstanceOf[FillerProps]
     }
     
-    extension [Self <: FillerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FillerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

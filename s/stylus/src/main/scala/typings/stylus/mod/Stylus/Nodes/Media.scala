@@ -34,7 +34,8 @@ object Media {
     __obj.asInstanceOf[Media]
   }
   
-  extension [Self <: Media](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Media] (val x: Self) extends AnyVal {
     
     inline def setVal(value: java.lang.String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

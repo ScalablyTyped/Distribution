@@ -31,7 +31,8 @@ object CanvasPressEvent {
     __obj.asInstanceOf[CanvasPressEvent]
   }
   
-  extension [Self <: CanvasPressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasPressEvent] (val x: Self) extends AnyVal {
     
     inline def setInsideElementPressed(value: Boolean): Self = StObject.set(x, "insideElementPressed", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object Foundation {
     __obj.asInstanceOf[Foundation]
   }
   
-  extension [Self <: Foundation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Foundation] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: Double): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

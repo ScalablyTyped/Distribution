@@ -17,7 +17,8 @@ object CardViewFocusedCellChangingEventArgs {
     __obj.asInstanceOf[CardViewFocusedCellChangingEventArgs]
   }
   
-  extension [Self <: CardViewFocusedCellChangingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCellInfo(value: BootstrapCardViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }

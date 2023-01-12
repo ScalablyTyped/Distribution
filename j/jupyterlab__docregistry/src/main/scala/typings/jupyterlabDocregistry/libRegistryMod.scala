@@ -433,7 +433,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IChangedArgs]
       }
       
-      extension [Self <: IChangedArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IChangedArgs] (val x: Self) extends AnyVal {
         
         inline def setChange(value: added | removed): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
         
@@ -502,7 +503,8 @@ object libRegistryMod {
         __obj.asInstanceOf[ICodeModel]
       }
       
-      extension [Self <: ICodeModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICodeModel] (val x: Self) extends AnyVal {
         
         inline def setModelDB(value: IModelDB): Self = StObject.set(x, "modelDB", value.asInstanceOf[js.Any])
         
@@ -730,7 +732,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IFileType]
       }
       
-      extension [Self <: IFileType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFileType] (val x: Self) extends AnyVal {
         
         inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
         
@@ -884,7 +887,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IModel]
       }
       
-      extension [Self <: IModel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
         
         inline def setContentChanged(value: ISignal[IModel, Unit]): Self = StObject.set(x, "contentChanged", value.asInstanceOf[js.Any])
         
@@ -1004,7 +1008,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IOpenOptions]
       }
       
-      extension [Self <: IOpenOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOpenOptions] (val x: Self) extends AnyVal {
         
         inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
         
@@ -1055,7 +1060,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setInitialFileTypes(value: js.Array[IFileType]): Self = StObject.set(x, "initialFileTypes", value.asInstanceOf[js.Any])
         
@@ -1095,7 +1101,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IWidgetExtension[T, U]]
       }
       
-      extension [Self <: IWidgetExtension[?, ?], T /* <: Widget */, U /* <: IModel */](x: Self & (IWidgetExtension[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IWidgetExtension[?, ?], T /* <: Widget */, U /* <: IModel */] (val x: Self & (IWidgetExtension[T, U])) extends AnyVal {
         
         inline def setCreateNew(value: (T, IContext[U]) => IDisposable | Unit): Self = StObject.set(x, "createNew", js.Any.fromFunction2(value))
       }
@@ -1198,7 +1205,8 @@ object libRegistryMod {
         __obj.asInstanceOf[IWidgetFactoryOptions[T]]
       }
       
-      extension [Self <: IWidgetFactoryOptions[?], T /* <: Widget */](x: Self & IWidgetFactoryOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IWidgetFactoryOptions[?], T /* <: Widget */] (val x: Self & IWidgetFactoryOptions[T]) extends AnyVal {
         
         inline def setCanStartKernel(value: Boolean): Self = StObject.set(x, "canStartKernel", value.asInstanceOf[js.Any])
         

@@ -73,7 +73,8 @@ object DescribePatchGroupStateResult {
     __obj.asInstanceOf[DescribePatchGroupStateResult]
   }
   
-  extension [Self <: DescribePatchGroupStateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchGroupStateResult] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: Integer): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     

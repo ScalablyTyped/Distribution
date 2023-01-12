@@ -16,7 +16,8 @@ object PaymentSource {
     __obj.asInstanceOf[PaymentSource]
   }
   
-  extension [Self <: PaymentSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentSource] (val x: Self) extends AnyVal {
     
     inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }

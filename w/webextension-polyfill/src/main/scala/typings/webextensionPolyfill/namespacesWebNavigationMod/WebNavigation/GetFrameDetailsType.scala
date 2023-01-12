@@ -32,7 +32,8 @@ object GetFrameDetailsType {
     __obj.asInstanceOf[GetFrameDetailsType]
   }
   
-  extension [Self <: GetFrameDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFrameDetailsType] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

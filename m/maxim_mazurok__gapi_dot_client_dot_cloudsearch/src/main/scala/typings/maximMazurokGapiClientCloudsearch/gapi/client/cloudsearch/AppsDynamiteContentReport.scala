@@ -28,7 +28,8 @@ object AppsDynamiteContentReport {
     __obj.asInstanceOf[AppsDynamiteContentReport]
   }
   
-  extension [Self <: AppsDynamiteContentReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteContentReport] (val x: Self) extends AnyVal {
     
     inline def setReportCreateTimestamp(value: String): Self = StObject.set(x, "reportCreateTimestamp", value.asInstanceOf[js.Any])
     

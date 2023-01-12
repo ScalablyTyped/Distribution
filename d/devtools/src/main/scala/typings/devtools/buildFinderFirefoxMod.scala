@@ -47,7 +47,8 @@ object buildFinderFirefoxMod {
       __obj.asInstanceOf[Priorities]
     }
     
-    extension [Self <: Priorities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Priorities] (val x: Self) extends AnyVal {
       
       inline def setRegex(value: js.RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       

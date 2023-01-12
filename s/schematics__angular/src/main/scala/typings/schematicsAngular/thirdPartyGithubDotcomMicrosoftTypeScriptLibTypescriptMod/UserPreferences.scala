@@ -86,7 +86,8 @@ object UserPreferences {
     __obj.asInstanceOf[UserPreferences]
   }
   
-  extension [Self <: UserPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPreferences] (val x: Self) extends AnyVal {
     
     inline def setAllowIncompleteCompletions(value: Boolean): Self = StObject.set(x, "allowIncompleteCompletions", value.asInstanceOf[js.Any])
     

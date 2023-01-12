@@ -43,7 +43,8 @@ object CopyFpgaImageRequest {
     __obj.asInstanceOf[CopyFpgaImageRequest]
   }
   
-  extension [Self <: CopyFpgaImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyFpgaImageRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

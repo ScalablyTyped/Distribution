@@ -26,7 +26,8 @@ object miscInterfacesIPerfViewerMod {
       __obj.asInstanceOf[IPerfCustomEvent]
     }
     
-    extension [Self <: IPerfCustomEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfCustomEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object miscInterfacesIPerfViewerMod {
       __obj.asInstanceOf[IPerfDatasets]
     }
     
-    extension [Self <: IPerfDatasets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfDatasets] (val x: Self) extends AnyVal {
       
       inline def setData(value: DynamicFloat32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object miscInterfacesIPerfViewerMod {
       __obj.asInstanceOf[IPerfMetadata]
     }
     
-    extension [Self <: IPerfMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPerfMetadata] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

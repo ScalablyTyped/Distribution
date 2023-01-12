@@ -17,7 +17,8 @@ object UnprojectOptions {
     __obj.asInstanceOf[UnprojectOptions]
   }
   
-  extension [Self <: UnprojectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprojectOptions] (val x: Self) extends AnyVal {
     
     inline def setTargetZ(value: Double): Self = StObject.set(x, "targetZ", value.asInstanceOf[js.Any])
     

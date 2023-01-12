@@ -26,7 +26,8 @@ object IBezierRange {
     __obj.asInstanceOf[IBezierRange]
   }
   
-  extension [Self <: IBezierRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBezierRange] (val x: Self) extends AnyVal {
     
     inline def setEndT(value: Double): Self = StObject.set(x, "endT", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object SharedWorkerInfo {
     __obj.asInstanceOf[SharedWorkerInfo]
   }
   
-  extension [Self <: SharedWorkerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedWorkerInfo] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

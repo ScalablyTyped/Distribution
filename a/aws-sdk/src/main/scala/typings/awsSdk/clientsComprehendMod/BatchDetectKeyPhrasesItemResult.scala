@@ -23,7 +23,8 @@ object BatchDetectKeyPhrasesItemResult {
     __obj.asInstanceOf[BatchDetectKeyPhrasesItemResult]
   }
   
-  extension [Self <: BatchDetectKeyPhrasesItemResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectKeyPhrasesItemResult] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Integer): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     

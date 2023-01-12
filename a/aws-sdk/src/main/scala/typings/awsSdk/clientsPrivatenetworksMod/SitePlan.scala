@@ -23,7 +23,8 @@ object SitePlan {
     __obj.asInstanceOf[SitePlan]
   }
   
-  extension [Self <: SitePlan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SitePlan] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

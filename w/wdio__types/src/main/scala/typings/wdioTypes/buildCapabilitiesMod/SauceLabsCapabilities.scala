@@ -320,7 +320,8 @@ object SauceLabsCapabilities {
     __obj.asInstanceOf[SauceLabsCapabilities]
   }
   
-  extension [Self <: SauceLabsCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SauceLabsCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAllowTouchIdEnroll(value: Boolean): Self = StObject.set(x, "allowTouchIdEnroll", value.asInstanceOf[js.Any])
     

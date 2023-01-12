@@ -48,7 +48,8 @@ object printerProvider {
       __obj.asInstanceOf[PrintJob]
     }
     
-    extension [Self <: PrintJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintJob] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object printerProvider {
       __obj.asInstanceOf[PrinterCapabilities]
     }
     
-    extension [Self <: PrinterCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrinterCapabilities] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     }
@@ -106,7 +108,8 @@ object printerProvider {
       __obj.asInstanceOf[PrinterInfo]
     }
     
-    extension [Self <: PrinterInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrinterInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

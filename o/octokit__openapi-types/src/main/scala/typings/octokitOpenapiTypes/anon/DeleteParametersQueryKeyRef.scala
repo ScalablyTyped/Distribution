@@ -29,7 +29,8 @@ object DeleteParametersQueryKeyRef {
     __obj.asInstanceOf[DeleteParametersQueryKeyRef]
   }
   
-  extension [Self <: DeleteParametersQueryKeyRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParametersQueryKeyRef] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersQueryKeyRef): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

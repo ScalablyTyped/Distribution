@@ -21,7 +21,8 @@ object EmailConversationBatch {
     __obj.asInstanceOf[EmailConversationBatch]
   }
   
-  extension [Self <: EmailConversationBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailConversationBatch] (val x: Self) extends AnyVal {
     
     inline def setConversations(value: IVectorView[EmailConversation]): Self = StObject.set(x, "conversations", value.asInstanceOf[js.Any])
     

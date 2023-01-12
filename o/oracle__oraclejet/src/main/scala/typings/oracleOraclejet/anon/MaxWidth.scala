@@ -23,7 +23,8 @@ object MaxWidth {
     __obj.asInstanceOf[MaxWidth[K2, D2]]
   }
   
-  extension [Self <: MaxWidth[?, ?], K2, D2](x: Self & (MaxWidth[K2, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxWidth[?, ?], K2, D2] (val x: Self & (MaxWidth[K2, D2])) extends AnyVal {
     
     inline def setLabel(value: `7`[K2, D2]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

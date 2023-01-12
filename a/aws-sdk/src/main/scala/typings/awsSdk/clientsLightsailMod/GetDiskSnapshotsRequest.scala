@@ -18,7 +18,8 @@ object GetDiskSnapshotsRequest {
     __obj.asInstanceOf[GetDiskSnapshotsRequest]
   }
   
-  extension [Self <: GetDiskSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiskSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

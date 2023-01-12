@@ -151,7 +151,8 @@ object codeCommitConfigurationMod {
       __obj.asInstanceOf[CodeCommitConfiguration]
     }
     
-    extension [Self <: CodeCommitConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeCommitConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object codeCommitConfigurationMod {
       __obj.asInstanceOf[CodeCommitResolvableConfiguration]
     }
     
-    extension [Self <: CodeCommitResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeCommitResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object codeCommitConfigurationMod {
       __obj.asInstanceOf[CodeCommitResolvedConfiguration]
     }
     
-    extension [Self <: CodeCommitResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeCommitResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

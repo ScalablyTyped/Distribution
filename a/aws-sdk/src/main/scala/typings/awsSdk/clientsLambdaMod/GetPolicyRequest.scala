@@ -23,7 +23,8 @@ object GetPolicyRequest {
     __obj.asInstanceOf[GetPolicyRequest]
   }
   
-  extension [Self <: GetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: NamespacedFunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DescribeConfigResponse {
     __obj.asInstanceOf[DescribeConfigResponse]
   }
   
-  extension [Self <: DescribeConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setResources(value: js.Array[typings.kafkajs.anon.ConfigEntries]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     

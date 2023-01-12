@@ -50,7 +50,8 @@ object BuyOnGoogleProgramStatus {
     __obj.asInstanceOf[BuyOnGoogleProgramStatus]
   }
   
-  extension [Self <: BuyOnGoogleProgramStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyOnGoogleProgramStatus] (val x: Self) extends AnyVal {
     
     inline def setBusinessModel(value: js.Array[String]): Self = StObject.set(x, "businessModel", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object NameConstraintsJson {
     __obj.asInstanceOf[NameConstraintsJson]
   }
   
-  extension [Self <: NameConstraintsJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameConstraintsJson] (val x: Self) extends AnyVal {
     
     inline def setExcludedSubtrees(value: js.Array[GeneralSubtreeJson]): Self = StObject.set(x, "excludedSubtrees", value.asInstanceOf[js.Any])
     

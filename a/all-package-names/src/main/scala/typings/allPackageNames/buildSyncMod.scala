@@ -70,7 +70,8 @@ object buildSyncMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setElapsed(value: Double): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object buildSyncMod {
       __obj.asInstanceOf[SyncOptions]
     }
     
-    extension [Self <: SyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
       
       inline def setOnData(value: /* state */ State => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction1(value))
       

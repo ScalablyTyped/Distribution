@@ -23,7 +23,8 @@ object ResponseHeadersPolicyAccessControlAllowMethods {
     __obj.asInstanceOf[ResponseHeadersPolicyAccessControlAllowMethods]
   }
   
-  extension [Self <: ResponseHeadersPolicyAccessControlAllowMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyAccessControlAllowMethods] (val x: Self) extends AnyVal {
     
     inline def setItems(value: AccessControlAllowMethodsList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

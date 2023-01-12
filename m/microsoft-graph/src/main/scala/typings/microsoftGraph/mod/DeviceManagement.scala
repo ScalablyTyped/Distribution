@@ -129,7 +129,8 @@ object DeviceManagement {
     __obj.asInstanceOf[DeviceManagement]
   }
   
-  extension [Self <: DeviceManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagement] (val x: Self) extends AnyVal {
     
     inline def setApplePushNotificationCertificate(value: NullableOption[ApplePushNotificationCertificate]): Self = StObject.set(x, "applePushNotificationCertificate", value.asInstanceOf[js.Any])
     

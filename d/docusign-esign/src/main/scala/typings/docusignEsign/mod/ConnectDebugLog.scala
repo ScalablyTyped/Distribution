@@ -40,7 +40,8 @@ object ConnectDebugLog {
     __obj.asInstanceOf[ConnectDebugLog]
   }
   
-  extension [Self <: ConnectDebugLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectDebugLog] (val x: Self) extends AnyVal {
     
     inline def setConnectConfig(value: String): Self = StObject.set(x, "connectConfig", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GoogleCloudDialogflowCxV3beta1WebhookResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1WebhookResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1WebhookResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookResponse] (val x: Self) extends AnyVal {
     
     inline def setFulfillmentResponse(value: GoogleCloudDialogflowCxV3beta1WebhookResponseFulfillmentResponse): Self = StObject.set(x, "fulfillmentResponse", value.asInstanceOf[js.Any])
     

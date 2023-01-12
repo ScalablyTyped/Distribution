@@ -80,7 +80,8 @@ object Trimesh {
     __obj.asInstanceOf[Trimesh]
   }
   
-  extension [Self <: Trimesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Trimesh] (val x: Self) extends AnyVal {
     
     inline def setCalculateWorldAABB(value: (Vec3, Quaternion, Vec3, Vec3) => Unit): Self = StObject.set(x, "calculateWorldAABB", js.Any.fromFunction4(value))
     

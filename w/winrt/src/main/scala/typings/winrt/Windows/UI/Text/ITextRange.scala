@@ -157,7 +157,8 @@ object ITextRange {
     __obj.asInstanceOf[ITextRange]
   }
   
-  extension [Self <: ITextRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextRange] (val x: Self) extends AnyVal {
     
     inline def setCanPaste(value: Double => Boolean): Self = StObject.set(x, "canPaste", js.Any.fromFunction1(value))
     

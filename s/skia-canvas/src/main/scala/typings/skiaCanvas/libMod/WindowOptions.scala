@@ -37,7 +37,8 @@ object WindowOptions {
     __obj.asInstanceOf[WindowOptions]
   }
   
-  extension [Self <: WindowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

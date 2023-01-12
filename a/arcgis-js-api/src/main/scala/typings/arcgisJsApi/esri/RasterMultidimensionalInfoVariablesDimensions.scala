@@ -69,7 +69,8 @@ object RasterMultidimensionalInfoVariablesDimensions {
     __obj.asInstanceOf[RasterMultidimensionalInfoVariablesDimensions]
   }
   
-  extension [Self <: RasterMultidimensionalInfoVariablesDimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterMultidimensionalInfoVariablesDimensions] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

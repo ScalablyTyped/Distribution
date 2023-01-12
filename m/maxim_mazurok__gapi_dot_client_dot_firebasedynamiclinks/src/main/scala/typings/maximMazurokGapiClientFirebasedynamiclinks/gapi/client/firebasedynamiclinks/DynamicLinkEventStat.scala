@@ -22,7 +22,8 @@ object DynamicLinkEventStat {
     __obj.asInstanceOf[DynamicLinkEventStat]
   }
   
-  extension [Self <: DynamicLinkEventStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicLinkEventStat] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

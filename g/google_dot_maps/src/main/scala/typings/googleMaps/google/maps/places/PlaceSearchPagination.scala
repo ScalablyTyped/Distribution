@@ -28,7 +28,8 @@ object PlaceSearchPagination {
     __obj.asInstanceOf[PlaceSearchPagination]
   }
   
-  extension [Self <: PlaceSearchPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceSearchPagination] (val x: Self) extends AnyVal {
     
     inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
     

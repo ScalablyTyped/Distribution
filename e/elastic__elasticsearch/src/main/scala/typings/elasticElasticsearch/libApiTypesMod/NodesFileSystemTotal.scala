@@ -25,7 +25,8 @@ object NodesFileSystemTotal {
     __obj.asInstanceOf[NodesFileSystemTotal]
   }
   
-  extension [Self <: NodesFileSystemTotal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesFileSystemTotal] (val x: Self) extends AnyVal {
     
     inline def setAvailable(value: String): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
     

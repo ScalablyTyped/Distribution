@@ -31,7 +31,8 @@ object SqlIpConfig {
     __obj.asInstanceOf[SqlIpConfig]
   }
   
-  extension [Self <: SqlIpConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlIpConfig] (val x: Self) extends AnyVal {
     
     inline def setAuthorizedNetworks(value: js.Array[SqlAclEntry]): Self = StObject.set(x, "authorizedNetworks", value.asInstanceOf[js.Any])
     

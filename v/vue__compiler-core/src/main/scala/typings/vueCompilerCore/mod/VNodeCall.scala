@@ -48,7 +48,8 @@ object VNodeCall {
     __obj.asInstanceOf[VNodeCall]
   }
   
-  extension [Self <: VNodeCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VNodeCall] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: js.Array[TemplateChildNode] | TemplateTextChildNode | SlotsExpression | ForRenderListExpression | SimpleExpressionNode

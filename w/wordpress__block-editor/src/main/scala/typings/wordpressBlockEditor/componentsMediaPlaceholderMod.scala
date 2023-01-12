@@ -136,7 +136,8 @@ object componentsMediaPlaceholderMod {
         __obj.asInstanceOf[Props[T]]
       }
       
-      extension [Self <: Props[?], T /* <: Boolean */](x: Self & Props[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props[?], T /* <: Boolean */] (val x: Self & Props[T]) extends AnyVal {
         
         inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         

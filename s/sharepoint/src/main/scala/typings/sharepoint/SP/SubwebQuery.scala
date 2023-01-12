@@ -33,7 +33,8 @@ object SubwebQuery {
     __obj.asInstanceOf[SubwebQuery]
   }
   
-  extension [Self <: SubwebQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubwebQuery] (val x: Self) extends AnyVal {
     
     inline def setGet_configurationFilter(value: () => Double): Self = StObject.set(x, "get_configurationFilter", js.Any.fromFunction0(value))
     

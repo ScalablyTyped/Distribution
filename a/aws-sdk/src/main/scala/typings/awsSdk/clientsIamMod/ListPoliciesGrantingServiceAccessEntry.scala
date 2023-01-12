@@ -23,7 +23,8 @@ object ListPoliciesGrantingServiceAccessEntry {
     __obj.asInstanceOf[ListPoliciesGrantingServiceAccessEntry]
   }
   
-  extension [Self <: ListPoliciesGrantingServiceAccessEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPoliciesGrantingServiceAccessEntry] (val x: Self) extends AnyVal {
     
     inline def setPolicies(value: policyGrantingServiceAccessListType): Self = StObject.set(x, "Policies", value.asInstanceOf[js.Any])
     

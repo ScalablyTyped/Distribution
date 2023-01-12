@@ -57,7 +57,8 @@ object ChangeNotification {
     __obj.asInstanceOf[ChangeNotification]
   }
   
-  extension [Self <: ChangeNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeNotification] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: ChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     

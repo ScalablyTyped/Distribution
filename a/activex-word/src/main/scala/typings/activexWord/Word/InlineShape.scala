@@ -145,7 +145,8 @@ object InlineShape {
     __obj.asInstanceOf[InlineShape]
   }
   
-  extension [Self <: InlineShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineShape] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

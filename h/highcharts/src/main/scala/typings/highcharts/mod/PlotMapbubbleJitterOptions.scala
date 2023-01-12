@@ -25,7 +25,8 @@ object PlotMapbubbleJitterOptions {
     __obj.asInstanceOf[PlotMapbubbleJitterOptions]
   }
   
-  extension [Self <: PlotMapbubbleJitterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMapbubbleJitterOptions] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

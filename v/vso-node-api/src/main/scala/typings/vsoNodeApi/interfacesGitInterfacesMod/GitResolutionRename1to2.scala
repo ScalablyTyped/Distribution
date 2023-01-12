@@ -22,7 +22,8 @@ object GitResolutionRename1to2 {
     __obj.asInstanceOf[GitResolutionRename1to2]
   }
   
-  extension [Self <: GitResolutionRename1to2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitResolutionRename1to2] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GitResolutionRename1to2Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

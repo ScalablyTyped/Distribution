@@ -162,7 +162,8 @@ object mod {
       __obj.asInstanceOf[ParsedOption]
     }
     
-    extension [Self <: ParsedOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedOption] (val x: Self) extends AnyVal {
       
       inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       

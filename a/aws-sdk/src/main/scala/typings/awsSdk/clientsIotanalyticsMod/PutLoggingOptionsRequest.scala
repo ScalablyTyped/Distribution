@@ -18,7 +18,8 @@ object PutLoggingOptionsRequest {
     __obj.asInstanceOf[PutLoggingOptionsRequest]
   }
   
-  extension [Self <: PutLoggingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLoggingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setLoggingOptions(value: LoggingOptions): Self = StObject.set(x, "loggingOptions", value.asInstanceOf[js.Any])
   }

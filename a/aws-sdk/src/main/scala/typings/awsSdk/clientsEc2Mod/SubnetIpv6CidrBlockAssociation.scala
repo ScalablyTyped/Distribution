@@ -28,7 +28,8 @@ object SubnetIpv6CidrBlockAssociation {
     __obj.asInstanceOf[SubnetIpv6CidrBlockAssociation]
   }
   
-  extension [Self <: SubnetIpv6CidrBlockAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubnetIpv6CidrBlockAssociation] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: SubnetCidrAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

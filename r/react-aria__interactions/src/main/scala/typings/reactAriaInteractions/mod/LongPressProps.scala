@@ -44,7 +44,8 @@ object LongPressProps {
     __obj.asInstanceOf[LongPressProps]
   }
   
-  extension [Self <: LongPressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongPressProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityDescription(value: String): Self = StObject.set(x, "accessibilityDescription", value.asInstanceOf[js.Any])
     

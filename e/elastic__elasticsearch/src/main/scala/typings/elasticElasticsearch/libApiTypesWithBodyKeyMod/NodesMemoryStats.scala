@@ -33,7 +33,8 @@ object NodesMemoryStats {
     __obj.asInstanceOf[NodesMemoryStats]
   }
   
-  extension [Self <: NodesMemoryStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesMemoryStats] (val x: Self) extends AnyVal {
     
     inline def setAdjusted_total_in_bytes(value: long): Self = StObject.set(x, "adjusted_total_in_bytes", value.asInstanceOf[js.Any])
     

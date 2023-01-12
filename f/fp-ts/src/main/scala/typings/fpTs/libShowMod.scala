@@ -58,7 +58,8 @@ object libShowMod {
       __obj.asInstanceOf[Show[A]]
     }
     
-    extension [Self <: Show[?], A](x: Self & Show[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Show[?], A] (val x: Self & Show[A]) extends AnyVal {
       
       inline def setShow(value: A => String): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     }

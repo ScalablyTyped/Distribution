@@ -23,7 +23,8 @@ object LifecyclePolicy {
     __obj.asInstanceOf[LifecyclePolicy]
   }
   
-  extension [Self <: LifecyclePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecyclePolicy] (val x: Self) extends AnyVal {
     
     inline def setTransitionToIA(value: TransitionToIARules): Self = StObject.set(x, "TransitionToIA", value.asInstanceOf[js.Any])
     

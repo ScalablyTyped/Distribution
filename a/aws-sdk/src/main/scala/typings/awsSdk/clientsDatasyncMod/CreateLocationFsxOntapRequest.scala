@@ -39,7 +39,8 @@ object CreateLocationFsxOntapRequest {
     __obj.asInstanceOf[CreateLocationFsxOntapRequest]
   }
   
-  extension [Self <: CreateLocationFsxOntapRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationFsxOntapRequest] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: FsxProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     

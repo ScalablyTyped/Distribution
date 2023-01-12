@@ -22,7 +22,8 @@ object AppsDynamiteV1ApiCompatV1Field {
     __obj.asInstanceOf[AppsDynamiteV1ApiCompatV1Field]
   }
   
-  extension [Self <: AppsDynamiteV1ApiCompatV1Field](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteV1ApiCompatV1Field] (val x: Self) extends AnyVal {
     
     inline def setShort(value: Boolean): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     

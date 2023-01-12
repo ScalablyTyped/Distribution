@@ -18,7 +18,8 @@ object PickCompilerHostgetCanoni {
     __obj.asInstanceOf[PickCompilerHostgetCanoni]
   }
   
-  extension [Self <: PickCompilerHostgetCanoni](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCompilerHostgetCanoni] (val x: Self) extends AnyVal {
     
     inline def setGetCanonicalFileName(value: /* fileName */ String => String): Self = StObject.set(x, "getCanonicalFileName", js.Any.fromFunction1(value))
   }

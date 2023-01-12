@@ -27,7 +27,8 @@ object deprecatedTrailingactionTypesMod {
       __obj.asInstanceOf[MDCChipTrailingActionInteractionEventDetail]
     }
     
-    extension [Self <: MDCChipTrailingActionInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipTrailingActionInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setTrigger(value: InteractionTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object deprecatedTrailingactionTypesMod {
       __obj.asInstanceOf[MDCChipTrailingActionNavigationEventDetail]
     }
     
-    extension [Self <: MDCChipTrailingActionNavigationEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipTrailingActionNavigationEventDetail] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }

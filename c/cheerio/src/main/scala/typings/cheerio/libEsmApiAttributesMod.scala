@@ -341,7 +341,8 @@ object libEsmApiAttributesMod {
       __obj.asInstanceOf[StyleProp]
     }
     
-    extension [Self <: StyleProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProp] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

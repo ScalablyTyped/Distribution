@@ -21,7 +21,8 @@ object GenericAbortSignal {
     __obj.asInstanceOf[GenericAbortSignal]
   }
   
-  extension [Self <: GenericAbortSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenericAbortSignal] (val x: Self) extends AnyVal {
     
     inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
     

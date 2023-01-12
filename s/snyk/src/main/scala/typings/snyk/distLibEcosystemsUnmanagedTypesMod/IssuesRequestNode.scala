@@ -19,7 +19,8 @@ object IssuesRequestNode {
     __obj.asInstanceOf[IssuesRequestNode]
   }
   
-  extension [Self <: IssuesRequestNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuesRequestNode] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[IssuesRequestDep]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

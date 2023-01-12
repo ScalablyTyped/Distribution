@@ -131,7 +131,8 @@ object IgTreeGridRowSelectors {
     __obj.asInstanceOf[IgTreeGridRowSelectors]
   }
   
-  extension [Self <: IgTreeGridRowSelectors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridRowSelectors] (val x: Self) extends AnyVal {
     
     inline def setCheckBoxMode(value: String): Self = StObject.set(x, "checkBoxMode", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object UpdateSqlInjectionMatchSetResponse {
     __obj.asInstanceOf[UpdateSqlInjectionMatchSetResponse]
   }
   
-  extension [Self <: UpdateSqlInjectionMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSqlInjectionMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

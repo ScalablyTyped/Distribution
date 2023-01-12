@@ -19,7 +19,8 @@ object AutoUpgradeOptions {
     __obj.asInstanceOf[AutoUpgradeOptions]
   }
   
-  extension [Self <: AutoUpgradeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoUpgradeOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoUpgradeStartTime(value: String): Self = StObject.set(x, "autoUpgradeStartTime", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object TestCustomDataIdentifierRequest {
     __obj.asInstanceOf[TestCustomDataIdentifierRequest]
   }
   
-  extension [Self <: TestCustomDataIdentifierRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCustomDataIdentifierRequest] (val x: Self) extends AnyVal {
     
     inline def setIgnoreWords(value: listOfString): Self = StObject.set(x, "ignoreWords", value.asInstanceOf[js.Any])
     

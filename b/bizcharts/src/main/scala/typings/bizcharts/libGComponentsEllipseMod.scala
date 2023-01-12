@@ -29,7 +29,8 @@ object libGComponentsEllipseMod extends Shortcut {
       __obj.asInstanceOf[IEllipseProps]
     }
     
-    extension [Self <: IEllipseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEllipseProps] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: Rx): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     }

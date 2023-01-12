@@ -38,7 +38,8 @@ object JSONEditorActionParams {
     __obj.asInstanceOf[JSONEditorActionParams]
   }
   
-  extension [Self <: JSONEditorActionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorActionParams] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: JSONEditorNode): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
     

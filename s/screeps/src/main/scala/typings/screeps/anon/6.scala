@@ -15,7 +15,8 @@ object `6` {
     __obj.asInstanceOf[`6`]
   }
   
-  extension [Self <: `6`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
     
     inline def setOH(value: typings.screeps.screepsStrings.LHO2): Self = StObject.set(x, "OH", value.asInstanceOf[js.Any])
   }

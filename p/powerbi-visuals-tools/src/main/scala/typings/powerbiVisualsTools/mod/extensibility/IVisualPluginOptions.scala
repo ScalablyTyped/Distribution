@@ -16,7 +16,8 @@ object IVisualPluginOptions {
     __obj.asInstanceOf[IVisualPluginOptions]
   }
   
-  extension [Self <: IVisualPluginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVisualPluginOptions] (val x: Self) extends AnyVal {
     
     inline def setTransform(value: /* dataview */ js.Array[DataView] => Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     

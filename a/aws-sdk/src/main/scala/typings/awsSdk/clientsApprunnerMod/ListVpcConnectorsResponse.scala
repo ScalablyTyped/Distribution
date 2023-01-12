@@ -23,7 +23,8 @@ object ListVpcConnectorsResponse {
     __obj.asInstanceOf[ListVpcConnectorsResponse]
   }
   
-  extension [Self <: ListVpcConnectorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVpcConnectorsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

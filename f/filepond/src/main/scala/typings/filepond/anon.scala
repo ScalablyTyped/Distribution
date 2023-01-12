@@ -67,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Fetch]
     }
     
-    extension [Self <: Fetch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fetch] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: String | ServerUrl | FetchServerConfigFunction): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: Name): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -626,7 +628,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -645,7 +648,8 @@ object anon {
       __obj.asInstanceOf[IndexNumber]
     }
     
-    extension [Self <: IndexNumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexNumber] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -666,7 +670,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -695,7 +700,8 @@ object anon {
       __obj.asInstanceOf[Output]
     }
     
-    extension [Self <: Output](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
       
       inline def setFile(value: FilePondFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

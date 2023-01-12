@@ -54,7 +54,8 @@ object eventsOmgDoteventMod {
       __obj.asInstanceOf[OMG]
     }
     
-    extension [Self <: OMG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OMG] (val x: Self) extends AnyVal {
       
       inline def setCTD(value: Any): Self = StObject.set(x, "CTD", value.asInstanceOf[js.Any])
       

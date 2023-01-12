@@ -158,7 +158,8 @@ object Collection {
     /* 9 */ val UNKNOWN: typings.rockset.distCodegenApiMod.Collection.StatusEnum.UNKNOWN & Double = js.native
   }
   
-  extension [Self <: Collection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

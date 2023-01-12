@@ -25,7 +25,8 @@ object TradeRestrictions {
     __obj.asInstanceOf[TradeRestrictions]
   }
   
-  extension [Self <: TradeRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TradeRestrictions] (val x: Self) extends AnyVal {
     
     inline def setDefaultEmailChangeProbationDays(value: Double): Self = StObject.set(x, "defaultEmailChangeProbationDays", value.asInstanceOf[js.Any])
     

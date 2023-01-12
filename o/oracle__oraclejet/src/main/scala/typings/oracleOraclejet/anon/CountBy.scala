@@ -15,7 +15,8 @@ object CountBy {
     __obj.asInstanceOf[CountBy]
   }
   
-  extension [Self <: CountBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountBy] (val x: Self) extends AnyVal {
     
     inline def setCountBy(value: String): Self = StObject.set(x, "countBy", value.asInstanceOf[js.Any])
   }

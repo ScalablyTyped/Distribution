@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (String, js.Function2[/* err */ js.Error, /* result */ Any, Unit]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     }
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -113,7 +116,8 @@ object anon {
       __obj.asInstanceOf[JSON]
     }
     
-    extension [Self <: JSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSON] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -179,7 +184,8 @@ object anon {
       __obj.asInstanceOf[Parse]
     }
     
-    extension [Self <: Parse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
       
       inline def setParse(
         value: (String, js.Function1[/* repeated */ Any, Any], js.Function2[/* err */ js.Error, /* result */ Any, Unit]) => Unit

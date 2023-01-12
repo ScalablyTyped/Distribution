@@ -1982,7 +1982,8 @@ object mod {
           __obj.asInstanceOf[RefUnwrapBailTypes]
         }
         
-        extension [Self <: RefUnwrapBailTypes](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: RefUnwrapBailTypes] (val x: Self) extends AnyVal {
           
           inline def setRuntimeDOMBailTypes(value: Node | Window): Self = StObject.set(x, "runtimeDOMBailTypes", value.asInstanceOf[js.Any])
         }

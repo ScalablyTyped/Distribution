@@ -155,7 +155,8 @@ object libComponentsFloatingPickerSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionsHeaderFooterItemProps]
     }
     
-    extension [Self <: ISuggestionsHeaderFooterItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsHeaderFooterItemProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object libComponentsFloatingPickerSuggestionsSuggestionsDottypesMod {
       __obj.asInstanceOf[ISuggestionsHeaderFooterProps]
     }
     
-    extension [Self <: ISuggestionsHeaderFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISuggestionsHeaderFooterProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

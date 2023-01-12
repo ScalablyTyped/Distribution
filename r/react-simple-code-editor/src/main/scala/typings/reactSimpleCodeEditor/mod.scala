@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object mod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -266,7 +268,8 @@ object mod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setSelectionEnd(value: Double): Self = StObject.set(x, "selectionEnd", value.asInstanceOf[js.Any])
       
@@ -287,7 +290,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     }

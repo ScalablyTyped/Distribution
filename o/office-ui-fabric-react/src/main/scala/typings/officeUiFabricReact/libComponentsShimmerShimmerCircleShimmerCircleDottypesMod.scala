@@ -56,7 +56,8 @@ object libComponentsShimmerShimmerCircleShimmerCircleDottypesMod {
       __obj.asInstanceOf[IShimmerCircleProps]
     }
     
-    extension [Self <: IShimmerCircleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerCircleProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object libComponentsShimmerShimmerCircleShimmerCircleDottypesMod {
       __obj.asInstanceOf[IShimmerCircleStyleProps]
     }
     
-    extension [Self <: IShimmerCircleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerCircleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBorderStyle(value: IRawStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object libComponentsShimmerShimmerCircleShimmerCircleDottypesMod {
       __obj.asInstanceOf[IShimmerCircleStyles]
     }
     
-    extension [Self <: IShimmerCircleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShimmerCircleStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

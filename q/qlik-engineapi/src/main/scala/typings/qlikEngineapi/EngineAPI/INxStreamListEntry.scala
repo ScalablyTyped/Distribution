@@ -26,7 +26,8 @@ object INxStreamListEntry {
     __obj.asInstanceOf[INxStreamListEntry]
   }
   
-  extension [Self <: INxStreamListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxStreamListEntry] (val x: Self) extends AnyVal {
     
     inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     

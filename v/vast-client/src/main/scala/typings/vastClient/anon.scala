@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PickVastErrorERRORCODE]
     }
     
-    extension [Self <: PickVastErrorERRORCODE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickVastErrorERRORCODE] (val x: Self) extends AnyVal {
       
       inline def setERRORCODE(value: String | Double): Self = StObject.set(x, "ERRORCODE", value.asInstanceOf[js.Any])
     }
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[PickVastErrorExcludekeyof]
     }
     
-    extension [Self <: PickVastErrorExcludekeyof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickVastErrorExcludekeyof] (val x: Self) extends AnyVal {
       
       inline def setERRORMESSAGE(value: String): Self = StObject.set(x, "ERRORMESSAGE", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object CustomSearch {
     __obj.asInstanceOf[CustomSearch]
   }
   
-  extension [Self <: CustomSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomSearch] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

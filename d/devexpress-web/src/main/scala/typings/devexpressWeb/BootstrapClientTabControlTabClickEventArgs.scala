@@ -35,7 +35,8 @@ object BootstrapClientTabControlTabClickEventArgs {
     __obj.asInstanceOf[BootstrapClientTabControlTabClickEventArgs]
   }
   
-  extension [Self <: BootstrapClientTabControlTabClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientTabControlTabClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

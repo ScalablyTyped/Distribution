@@ -33,7 +33,8 @@ object ContinuousParameterRange {
     __obj.asInstanceOf[ContinuousParameterRange]
   }
   
-  extension [Self <: ContinuousParameterRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousParameterRange] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: Double): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     

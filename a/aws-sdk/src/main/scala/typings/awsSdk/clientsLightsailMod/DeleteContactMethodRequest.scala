@@ -18,7 +18,8 @@ object DeleteContactMethodRequest {
     __obj.asInstanceOf[DeleteContactMethodRequest]
   }
   
-  extension [Self <: DeleteContactMethodRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContactMethodRequest] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: ContactProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }

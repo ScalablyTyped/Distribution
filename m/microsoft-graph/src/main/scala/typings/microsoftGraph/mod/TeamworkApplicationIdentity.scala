@@ -21,7 +21,8 @@ object TeamworkApplicationIdentity {
     __obj.asInstanceOf[TeamworkApplicationIdentity]
   }
   
-  extension [Self <: TeamworkApplicationIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamworkApplicationIdentity] (val x: Self) extends AnyVal {
     
     inline def setApplicationIdentityType(value: NullableOption[TeamworkApplicationIdentityType]): Self = StObject.set(x, "applicationIdentityType", value.asInstanceOf[js.Any])
     

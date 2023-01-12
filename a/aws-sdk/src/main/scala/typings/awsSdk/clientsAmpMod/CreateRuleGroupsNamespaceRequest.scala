@@ -38,7 +38,8 @@ object CreateRuleGroupsNamespaceRequest {
     __obj.asInstanceOf[CreateRuleGroupsNamespaceRequest]
   }
   
-  extension [Self <: CreateRuleGroupsNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRuleGroupsNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: IdempotencyToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

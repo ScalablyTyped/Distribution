@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsUnarchiveMod extends Shortcut {
       __obj.asInstanceOf[UnarchiveProps]
     }
     
-    extension [Self <: UnarchiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnarchiveProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

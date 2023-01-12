@@ -85,7 +85,8 @@ object windows {
       __obj.asInstanceOf[CreateData]
     }
     
-    extension [Self <: CreateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateData] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object windows {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setPopulate(value: Boolean): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object windows {
       __obj.asInstanceOf[UpdateInfo]
     }
     
-    extension [Self <: UpdateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateInfo] (val x: Self) extends AnyVal {
       
       inline def setDrawAttention(value: Boolean): Self = StObject.set(x, "drawAttention", value.asInstanceOf[js.Any])
       
@@ -297,7 +300,8 @@ object windows {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setAlwaysOnTop(value: Boolean): Self = StObject.set(x, "alwaysOnTop", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object windows {
       __obj.asInstanceOf[WindowEventFilter]
     }
     
-    extension [Self <: WindowEventFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowEventFilter] (val x: Self) extends AnyVal {
       
       inline def setWindowTypes(value: js.Array[typings.chrome.chrome.windows.windowTypeEnum]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
       

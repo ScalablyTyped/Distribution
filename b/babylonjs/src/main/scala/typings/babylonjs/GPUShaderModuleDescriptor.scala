@@ -22,7 +22,8 @@ object GPUShaderModuleDescriptor {
     __obj.asInstanceOf[GPUShaderModuleDescriptor]
   }
   
-  extension [Self <: GPUShaderModuleDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUShaderModuleDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String | js.typedarray.Uint32Array): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

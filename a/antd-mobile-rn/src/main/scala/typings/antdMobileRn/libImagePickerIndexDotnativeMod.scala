@@ -64,7 +64,8 @@ object libImagePickerIndexDotnativeMod {
       __obj.asInstanceOf[ImagePickerNativeProps]
     }
     
-    extension [Self <: ImagePickerNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagePickerNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IImagePickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

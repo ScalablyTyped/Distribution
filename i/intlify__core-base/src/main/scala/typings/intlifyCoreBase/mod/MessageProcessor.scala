@@ -19,7 +19,8 @@ object MessageProcessor {
     __obj.asInstanceOf[MessageProcessor[T]]
   }
   
-  extension [Self <: MessageProcessor[?], T](x: Self & MessageProcessor[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageProcessor[?], T] (val x: Self & MessageProcessor[T]) extends AnyVal {
     
     inline def setInterpolate(value: /* val */ Any => MessageType[T]): Self = StObject.set(x, "interpolate", js.Any.fromFunction1(value))
     

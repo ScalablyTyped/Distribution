@@ -67,7 +67,8 @@ object AnimationSpecpolarAreaonP {
     __obj.asInstanceOf[AnimationSpecpolarAreaonP]
   }
   
-  extension [Self <: AnimationSpecpolarAreaonP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpecpolarAreaonP] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[polarArea]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

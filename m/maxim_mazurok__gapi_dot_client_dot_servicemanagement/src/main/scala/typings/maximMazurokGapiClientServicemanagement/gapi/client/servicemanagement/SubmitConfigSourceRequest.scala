@@ -22,7 +22,8 @@ object SubmitConfigSourceRequest {
     __obj.asInstanceOf[SubmitConfigSourceRequest]
   }
   
-  extension [Self <: SubmitConfigSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitConfigSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigSource(value: ConfigSource): Self = StObject.set(x, "configSource", value.asInstanceOf[js.Any])
     

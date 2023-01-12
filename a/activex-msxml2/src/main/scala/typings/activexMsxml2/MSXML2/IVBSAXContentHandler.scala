@@ -64,7 +64,8 @@ object IVBSAXContentHandler {
     __obj.asInstanceOf[IVBSAXContentHandler]
   }
   
-  extension [Self <: IVBSAXContentHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVBSAXContentHandler] (val x: Self) extends AnyVal {
     
     inline def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     

@@ -28,7 +28,8 @@ object PullHeaderProps {
     __obj.asInstanceOf[PullHeaderProps]
   }
   
-  extension [Self <: PullHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setOnHeaderPulling(value: /* evt */ PullingEvent => Unit): Self = StObject.set(x, "onHeaderPulling", js.Any.fromFunction1(value))
     

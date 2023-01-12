@@ -30,7 +30,8 @@ object S3EncryptionSettings {
     __obj.asInstanceOf[S3EncryptionSettings]
   }
   
-  extension [Self <: S3EncryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3EncryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setEncryptionType(value: S3ServerSideEncryptionType): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
     

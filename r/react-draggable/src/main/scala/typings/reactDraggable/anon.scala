@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[PartialDraggableCoreProps]
     }
     
-    extension [Self <: PartialDraggableCoreProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDraggableCoreProps] (val x: Self) extends AnyVal {
       
       inline def setAllowAnyClick(value: Boolean): Self = StObject.set(x, "allowAnyClick", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object anon {
       __obj.asInstanceOf[PartialDraggableProps]
     }
     
-    extension [Self <: PartialDraggableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDraggableProps] (val x: Self) extends AnyVal {
       
       inline def setAllowAnyClick(value: Boolean): Self = StObject.set(x, "allowAnyClick", value.asInstanceOf[js.Any])
       

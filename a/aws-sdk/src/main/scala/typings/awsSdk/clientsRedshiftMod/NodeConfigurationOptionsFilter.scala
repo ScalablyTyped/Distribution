@@ -28,7 +28,8 @@ object NodeConfigurationOptionsFilter {
     __obj.asInstanceOf[NodeConfigurationOptionsFilter]
   }
   
-  extension [Self <: NodeConfigurationOptionsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfigurationOptionsFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: NodeConfigurationOptionsFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

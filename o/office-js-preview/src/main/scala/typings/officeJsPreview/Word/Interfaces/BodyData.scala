@@ -116,7 +116,8 @@ object BodyData {
     __obj.asInstanceOf[BodyData]
   }
   
-  extension [Self <: BodyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BodyData] (val x: Self) extends AnyVal {
     
     inline def setContentControls(value: js.Array[ContentControlData]): Self = StObject.set(x, "contentControls", value.asInstanceOf[js.Any])
     

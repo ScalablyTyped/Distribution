@@ -23,7 +23,8 @@ object GetGroupsResult {
     __obj.asInstanceOf[GetGroupsResult]
   }
   
-  extension [Self <: GetGroupsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGroupsResult] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: GroupSummaryList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

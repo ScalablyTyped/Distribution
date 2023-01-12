@@ -22,7 +22,8 @@ object EstimatedTimeOptions {
     __obj.asInstanceOf[EstimatedTimeOptions]
   }
   
-  extension [Self <: EstimatedTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EstimatedTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setDateAndTime(value: DateTimeType): Self = StObject.set(x, "dateAndTime", value.asInstanceOf[js.Any])
     

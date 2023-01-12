@@ -32,7 +32,8 @@ object ConditionalSpecification {
     __obj.asInstanceOf[ConditionalSpecification]
   }
   
-  extension [Self <: ConditionalSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalSpecification] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

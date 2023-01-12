@@ -71,7 +71,8 @@ object ComponentPropsGaeaEdit {
     __obj.asInstanceOf[ComponentPropsGaeaEdit]
   }
   
-  extension [Self <: ComponentPropsGaeaEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentPropsGaeaEdit] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[ComponentPropsOptionsArrayValue]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

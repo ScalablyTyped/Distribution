@@ -21,7 +21,8 @@ object FormComponent {
     __obj.asInstanceOf[FormComponent[T]]
   }
   
-  extension [Self <: FormComponent[?], T /* <: Component */](x: Self & FormComponent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormComponent[?], T /* <: Component */] (val x: Self & FormComponent[T]) extends AnyVal {
     
     inline def setActions(value: js.Array[Component]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

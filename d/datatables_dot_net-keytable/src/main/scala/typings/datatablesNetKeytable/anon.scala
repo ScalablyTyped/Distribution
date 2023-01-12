@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Disable]
     }
     
-    extension [Self <: Disable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disable] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Api): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       

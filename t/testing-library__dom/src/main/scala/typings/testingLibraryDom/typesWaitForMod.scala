@@ -34,7 +34,8 @@ object typesWaitForMod {
       __obj.asInstanceOf[waitForOptions]
     }
     
-    extension [Self <: waitForOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: waitForOptions] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

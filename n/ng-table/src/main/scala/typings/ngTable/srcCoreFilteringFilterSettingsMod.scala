@@ -72,7 +72,8 @@ object srcCoreFilteringFilterSettingsMod {
       __obj.asInstanceOf[IFilterSettings[T]]
     }
     
-    extension [Self <: IFilterSettings[?], T](x: Self & IFilterSettings[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilterSettings[?], T] (val x: Self & IFilterSettings[T]) extends AnyVal {
       
       inline def setFilterComparator(value: FilterComparator[T]): Self = StObject.set(x, "filterComparator", value.asInstanceOf[js.Any])
       

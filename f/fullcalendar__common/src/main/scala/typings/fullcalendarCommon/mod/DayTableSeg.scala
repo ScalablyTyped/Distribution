@@ -21,7 +21,8 @@ object DayTableSeg {
     __obj.asInstanceOf[DayTableSeg]
   }
   
-  extension [Self <: DayTableSeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayTableSeg] (val x: Self) extends AnyVal {
     
     inline def setFirstCol(value: Double): Self = StObject.set(x, "firstCol", value.asInstanceOf[js.Any])
     

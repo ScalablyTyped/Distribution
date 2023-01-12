@@ -189,7 +189,8 @@ object RendererObject {
     __obj.asInstanceOf[RendererObject]
   }
   
-  extension [Self <: RendererObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RendererObject] (val x: Self) extends AnyVal {
     
     inline def setBlockquote(
       value: js.ThisFunction1[

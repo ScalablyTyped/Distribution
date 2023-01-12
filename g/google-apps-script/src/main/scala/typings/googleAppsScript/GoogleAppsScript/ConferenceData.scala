@@ -134,7 +134,8 @@ object ConferenceData {
       __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData]
     }
     
-    extension [Self <: typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.ConferenceData.ConferenceData] (val x: Self) extends AnyVal {
       
       inline def setPrintJson(value: () => String): Self = StObject.set(x, "printJson", js.Any.fromFunction0(value))
     }
@@ -219,7 +220,8 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceDataBuilder]
     }
     
-    extension [Self <: ConferenceDataBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConferenceDataBuilder] (val x: Self) extends AnyVal {
       
       inline def setAddConferenceParameter(value: ConferenceParameter => ConferenceDataBuilder): Self = StObject.set(x, "addConferenceParameter", js.Any.fromFunction1(value))
       
@@ -287,7 +289,8 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceDataService]
     }
     
-    extension [Self <: ConferenceDataService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConferenceDataService] (val x: Self) extends AnyVal {
       
       inline def setConferenceErrorType(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConferenceErrorType */ Any
@@ -357,7 +360,8 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceError]
     }
     
-    extension [Self <: ConferenceError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConferenceError] (val x: Self) extends AnyVal {
       
       inline def setSetAuthenticationUrl(value: String => ConferenceError): Self = StObject.set(x, "setAuthenticationUrl", js.Any.fromFunction1(value))
       
@@ -398,7 +402,8 @@ object ConferenceData {
       __obj.asInstanceOf[ConferenceParameter]
     }
     
-    extension [Self <: ConferenceParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConferenceParameter] (val x: Self) extends AnyVal {
       
       inline def setSetKey(value: String => ConferenceParameter): Self = StObject.set(x, "setKey", js.Any.fromFunction1(value))
       
@@ -513,7 +518,8 @@ object ConferenceData {
       __obj.asInstanceOf[EntryPoint]
     }
     
-    extension [Self <: EntryPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPoint] (val x: Self) extends AnyVal {
       
       inline def setAddFeature(value: EntryPointFeature => EntryPoint): Self = StObject.set(x, "addFeature", js.Any.fromFunction1(value))
       

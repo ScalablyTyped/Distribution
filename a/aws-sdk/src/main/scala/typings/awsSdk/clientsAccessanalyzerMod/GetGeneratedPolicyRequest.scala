@@ -28,7 +28,8 @@ object GetGeneratedPolicyRequest {
     __obj.asInstanceOf[GetGeneratedPolicyRequest]
   }
   
-  extension [Self <: GetGeneratedPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeneratedPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeResourcePlaceholders(value: Boolean): Self = StObject.set(x, "includeResourcePlaceholders", value.asInstanceOf[js.Any])
     

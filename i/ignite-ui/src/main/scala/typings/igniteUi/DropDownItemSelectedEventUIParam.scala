@@ -33,7 +33,8 @@ object DropDownItemSelectedEventUIParam {
     __obj.asInstanceOf[DropDownItemSelectedEventUIParam]
   }
   
-  extension [Self <: DropDownItemSelectedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownItemSelectedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     

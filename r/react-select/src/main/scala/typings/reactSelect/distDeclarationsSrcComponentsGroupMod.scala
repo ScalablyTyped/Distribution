@@ -68,7 +68,8 @@ object distDeclarationsSrcComponentsGroupMod {
       __obj.asInstanceOf[ForwardedHeadingProps[Option, Group]]
     }
     
-    extension [Self <: ForwardedHeadingProps[?, ?], Option, Group /* <: GroupBase[Option] */](x: Self & (ForwardedHeadingProps[Option, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForwardedHeadingProps[?, ?], Option, Group /* <: GroupBase[Option] */] (val x: Self & (ForwardedHeadingProps[Option, Group])) extends AnyVal {
       
       inline def setData(value: Group): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distDeclarationsSrcComponentsGroupMod {
       __obj.asInstanceOf[GroupHeadingPropsDefinedProps[Option, IsMulti, Group]]
     }
     
-    extension [Self <: GroupHeadingPropsDefinedProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](x: Self & (GroupHeadingPropsDefinedProps[Option, IsMulti, Group])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupHeadingPropsDefinedProps[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (GroupHeadingPropsDefinedProps[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

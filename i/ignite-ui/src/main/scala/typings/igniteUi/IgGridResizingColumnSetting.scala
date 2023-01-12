@@ -49,7 +49,8 @@ object IgGridResizingColumnSetting {
     __obj.asInstanceOf[IgGridResizingColumnSetting]
   }
   
-  extension [Self <: IgGridResizingColumnSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridResizingColumnSetting] (val x: Self) extends AnyVal {
     
     inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
     

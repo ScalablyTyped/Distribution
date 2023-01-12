@@ -23,7 +23,8 @@ object VersionInfo {
     __obj.asInstanceOf[VersionInfo]
   }
   
-  extension [Self <: VersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VersionInfo] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

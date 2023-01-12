@@ -358,7 +358,8 @@ object esComponentsPopupPopupMod {
       __obj.asInstanceOf[PopupProps]
     }
     
-    extension [Self <: PopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

@@ -80,7 +80,8 @@ object AlignItemLabels {
     __obj.asInstanceOf[AlignItemLabels]
   }
   
-  extension [Self <: AlignItemLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignItemLabels] (val x: Self) extends AnyVal {
     
     inline def setAlignItemLabels(value: Boolean): Self = StObject.set(x, "alignItemLabels", value.asInstanceOf[js.Any])
     

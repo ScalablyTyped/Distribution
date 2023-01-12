@@ -79,7 +79,8 @@ object buildUtilsUpdatesMod {
       __obj.asInstanceOf[ExpoConfigUpdates]
     }
     
-    extension [Self <: ExpoConfigUpdates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpoConfigUpdates] (val x: Self) extends AnyVal {
       
       inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       

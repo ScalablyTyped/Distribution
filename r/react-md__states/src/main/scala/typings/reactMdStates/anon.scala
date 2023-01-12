@@ -9973,7 +9973,8 @@ object anon {
       __obj.asInstanceOf[CSSPropertiesleftnumberto]
     }
     
-    extension [Self <: CSSPropertiesleftnumberto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSPropertiesleftnumberto] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -13146,7 +13147,8 @@ object anon {
       __obj.asInstanceOf[PickRippleEventHTMLElemen]
     }
     
-    extension [Self <: PickRippleEventHTMLElemen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRippleEventHTMLElemen] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -13171,7 +13173,8 @@ object anon {
       __obj.asInstanceOf[PickRippleEventHTMLElemenPageX]
     }
     
-    extension [Self <: PickRippleEventHTMLElemenPageX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRippleEventHTMLElemenPageX] (val x: Self) extends AnyVal {
       
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       

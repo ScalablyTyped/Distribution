@@ -25,7 +25,8 @@ object HoneycodeConnectorProfileCredentials {
     __obj.asInstanceOf[HoneycodeConnectorProfileCredentials]
   }
   
-  extension [Self <: HoneycodeConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoneycodeConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: AccessToken): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object AddingPeerEvent {
     __obj.asInstanceOf[AddingPeerEvent]
   }
   
-  extension [Self <: AddingPeerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddingPeerEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: ADDING_PEER): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

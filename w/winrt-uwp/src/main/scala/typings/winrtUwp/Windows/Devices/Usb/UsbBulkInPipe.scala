@@ -44,7 +44,8 @@ object UsbBulkInPipe {
     __obj.asInstanceOf[UsbBulkInPipe]
   }
   
-  extension [Self <: UsbBulkInPipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbBulkInPipe] (val x: Self) extends AnyVal {
     
     inline def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
     

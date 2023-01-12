@@ -55,7 +55,8 @@ object SelectedFields {
     __obj.asInstanceOf[SelectedFields]
   }
   
-  extension [Self <: SelectedFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedFields] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

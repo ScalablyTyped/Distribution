@@ -15,7 +15,8 @@ object ContentApplicationjsonAllowdeletions {
     __obj.asInstanceOf[ContentApplicationjsonAllowdeletions]
   }
   
-  extension [Self <: ContentApplicationjsonAllowdeletions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonAllowdeletions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonAllowdeletions): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

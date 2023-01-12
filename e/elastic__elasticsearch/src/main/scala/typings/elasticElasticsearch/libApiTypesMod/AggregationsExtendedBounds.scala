@@ -17,7 +17,8 @@ object AggregationsExtendedBounds {
     __obj.asInstanceOf[AggregationsExtendedBounds[T]]
   }
   
-  extension [Self <: AggregationsExtendedBounds[?], T](x: Self & AggregationsExtendedBounds[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsExtendedBounds[?], T] (val x: Self & AggregationsExtendedBounds[T]) extends AnyVal {
     
     inline def setMax(value: T): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

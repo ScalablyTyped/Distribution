@@ -35,7 +35,8 @@ object testUtilsCreateShallowMod {
       __obj.asInstanceOf[ShallowOptions]
     }
     
-    extension [Self <: ShallowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShallowOptions] (val x: Self) extends AnyVal {
       
       inline def setDive(value: Boolean): Self = StObject.set(x, "dive", value.asInstanceOf[js.Any])
       

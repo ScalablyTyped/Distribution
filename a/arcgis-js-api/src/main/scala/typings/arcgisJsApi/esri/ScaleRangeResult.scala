@@ -27,7 +27,8 @@ object ScaleRangeResult {
     __obj.asInstanceOf[ScaleRangeResult]
   }
   
-  extension [Self <: ScaleRangeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleRangeResult] (val x: Self) extends AnyVal {
     
     inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     

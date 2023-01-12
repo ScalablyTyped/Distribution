@@ -22,7 +22,8 @@ object OSPolicyAssignmentRollout {
     __obj.asInstanceOf[OSPolicyAssignmentRollout]
   }
   
-  extension [Self <: OSPolicyAssignmentRollout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentRollout] (val x: Self) extends AnyVal {
     
     inline def setDisruptionBudget(value: FixedOrPercent): Self = StObject.set(x, "disruptionBudget", value.asInstanceOf[js.Any])
     

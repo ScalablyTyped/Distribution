@@ -201,7 +201,8 @@ object PlaceDetailsResult {
     __obj.asInstanceOf[PlaceDetailsResult]
   }
   
-  extension [Self <: PlaceDetailsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceDetailsResult] (val x: Self) extends AnyVal {
     
     inline def setAddress_components(value: js.Array[AddressComponent[AddressType | PlaceDetailsAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     

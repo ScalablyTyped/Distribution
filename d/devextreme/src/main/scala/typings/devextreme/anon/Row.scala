@@ -23,7 +23,8 @@ object Row {
     __obj.asInstanceOf[Row[TRowData, TKey]]
   }
   
-  extension [Self <: Row[?, ?], TRowData, TKey](x: Self & (Row[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row[?, ?], TRowData, TKey] (val x: Self & (Row[TRowData, TKey])) extends AnyVal {
     
     inline def setColumn(value: typings.devextreme.mod.DevExpress.ui.dxTreeList.Column[TRowData, TKey]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

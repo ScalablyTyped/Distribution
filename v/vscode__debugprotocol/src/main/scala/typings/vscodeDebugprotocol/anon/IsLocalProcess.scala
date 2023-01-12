@@ -35,7 +35,8 @@ object IsLocalProcess {
     __obj.asInstanceOf[IsLocalProcess]
   }
   
-  extension [Self <: IsLocalProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLocalProcess] (val x: Self) extends AnyVal {
     
     inline def setIsLocalProcess(value: Boolean): Self = StObject.set(x, "isLocalProcess", value.asInstanceOf[js.Any])
     

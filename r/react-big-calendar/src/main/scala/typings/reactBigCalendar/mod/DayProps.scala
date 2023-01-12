@@ -15,7 +15,8 @@ object DayProps {
     __obj.asInstanceOf[DayProps]
   }
   
-  extension [Self <: DayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayProps] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
   }

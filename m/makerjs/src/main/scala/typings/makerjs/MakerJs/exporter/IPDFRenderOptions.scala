@@ -39,7 +39,8 @@ object IPDFRenderOptions {
     __obj.asInstanceOf[IPDFRenderOptions]
   }
   
-  extension [Self <: IPDFRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPDFRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     

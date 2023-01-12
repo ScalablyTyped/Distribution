@@ -17,7 +17,8 @@ object SnapshotCreateResponse {
     __obj.asInstanceOf[SnapshotCreateResponse]
   }
   
-  extension [Self <: SnapshotCreateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotCreateResponse] (val x: Self) extends AnyVal {
     
     inline def setAccepted(value: Boolean): Self = StObject.set(x, "accepted", value.asInstanceOf[js.Any])
     

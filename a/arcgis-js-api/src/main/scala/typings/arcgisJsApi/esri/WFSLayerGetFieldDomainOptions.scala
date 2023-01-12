@@ -20,7 +20,8 @@ object WFSLayerGetFieldDomainOptions {
     __obj.asInstanceOf[WFSLayerGetFieldDomainOptions]
   }
   
-  extension [Self <: WFSLayerGetFieldDomainOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

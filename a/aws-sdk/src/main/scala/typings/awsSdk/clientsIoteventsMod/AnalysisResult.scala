@@ -33,7 +33,8 @@ object AnalysisResult {
     __obj.asInstanceOf[AnalysisResult]
   }
   
-  extension [Self <: AnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: AnalysisResultLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

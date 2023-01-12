@@ -21,7 +21,8 @@ object UpdateOptions {
     __obj.asInstanceOf[UpdateOptions]
   }
   
-  extension [Self <: UpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: PasswordUpdate): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

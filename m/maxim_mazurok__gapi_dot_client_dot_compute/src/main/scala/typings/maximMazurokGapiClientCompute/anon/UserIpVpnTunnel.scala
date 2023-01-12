@@ -59,7 +59,8 @@ object UserIpVpnTunnel {
     __obj.asInstanceOf[UserIpVpnTunnel]
   }
   
-  extension [Self <: UserIpVpnTunnel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIpVpnTunnel] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

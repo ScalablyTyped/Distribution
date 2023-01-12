@@ -33,7 +33,8 @@ object InAppMessageButton {
     __obj.asInstanceOf[InAppMessageButton]
   }
   
-  extension [Self <: InAppMessageButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppMessageButton] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: OverrideButtonConfiguration): Self = StObject.set(x, "Android", value.asInstanceOf[js.Any])
     

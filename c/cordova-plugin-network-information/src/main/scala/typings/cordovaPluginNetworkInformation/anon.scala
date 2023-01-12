@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[typings.cordovaPluginNetworkInformation.anon.Connection]
     }
     
-    extension [Self <: typings.cordovaPluginNetworkInformation.anon.Connection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.cordovaPluginNetworkInformation.anon.Connection] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: typings.cordovaPluginNetworkInformation.Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     }

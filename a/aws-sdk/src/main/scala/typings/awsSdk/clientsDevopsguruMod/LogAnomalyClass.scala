@@ -48,7 +48,8 @@ object LogAnomalyClass {
     __obj.asInstanceOf[LogAnomalyClass]
   }
   
-  extension [Self <: LogAnomalyClass](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogAnomalyClass] (val x: Self) extends AnyVal {
     
     inline def setExplanation(value: Explanation): Self = StObject.set(x, "Explanation", value.asInstanceOf[js.Any])
     

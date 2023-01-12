@@ -33,7 +33,8 @@ object DolbyVision {
     __obj.asInstanceOf[DolbyVision]
   }
   
-  extension [Self <: DolbyVision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DolbyVision] (val x: Self) extends AnyVal {
     
     inline def setL6Metadata(value: DolbyVisionLevel6Metadata): Self = StObject.set(x, "L6Metadata", value.asInstanceOf[js.Any])
     

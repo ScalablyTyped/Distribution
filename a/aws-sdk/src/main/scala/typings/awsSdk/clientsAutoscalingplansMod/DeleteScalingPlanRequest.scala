@@ -23,7 +23,8 @@ object DeleteScalingPlanRequest {
     __obj.asInstanceOf[DeleteScalingPlanRequest]
   }
   
-  extension [Self <: DeleteScalingPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScalingPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setScalingPlanName(value: ScalingPlanName): Self = StObject.set(x, "ScalingPlanName", value.asInstanceOf[js.Any])
     

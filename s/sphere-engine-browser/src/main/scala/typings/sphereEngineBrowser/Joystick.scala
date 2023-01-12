@@ -29,7 +29,8 @@ object Joystick {
     __obj.asInstanceOf[Joystick]
   }
   
-  extension [Self <: Joystick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Joystick] (val x: Self) extends AnyVal {
     
     inline def setGetPosition(value: Double => Double): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
     

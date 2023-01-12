@@ -43,7 +43,8 @@ object DescribeLogStreamsRequest {
     __obj.asInstanceOf[DescribeLogStreamsRequest]
   }
   
-  extension [Self <: DescribeLogStreamsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLogStreamsRequest] (val x: Self) extends AnyVal {
     
     inline def setDescending(value: Descending): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     

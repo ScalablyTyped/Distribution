@@ -42,7 +42,8 @@ object control {
       __obj.asInstanceOf[typings.openlayers.mod.olx.control.AttributionOptions]
     }
     
-    extension [Self <: typings.openlayers.mod.olx.control.AttributionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.openlayers.mod.olx.control.AttributionOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object control {
       __obj.asInstanceOf[ControlOptions]
     }
     
-    extension [Self <: ControlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object control {
       __obj.asInstanceOf[DefaultsOptions]
     }
     
-    extension [Self <: DefaultsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultsOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribution(value: Boolean): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object control {
       __obj.asInstanceOf[FullScreenOptions]
     }
     
-    extension [Self <: FullScreenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -234,7 +238,8 @@ object control {
       __obj.asInstanceOf[MousePositionOptions]
     }
     
-    extension [Self <: MousePositionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MousePositionOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -289,7 +294,8 @@ object control {
       __obj.asInstanceOf[OverviewMapOptions]
     }
     
-    extension [Self <: OverviewMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverviewMapOptions] (val x: Self) extends AnyVal {
       
       inline def setCollapseLabel(value: String | Node): Self = StObject.set(x, "collapseLabel", value.asInstanceOf[js.Any])
       
@@ -356,7 +362,8 @@ object control {
       __obj.asInstanceOf[RotateOptions]
     }
     
-    extension [Self <: RotateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotateOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
       
@@ -411,7 +418,8 @@ object control {
       __obj.asInstanceOf[ScaleLineOptions]
     }
     
-    extension [Self <: ScaleLineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScaleLineOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -460,7 +468,8 @@ object control {
       __obj.asInstanceOf[ZoomOptions]
     }
     
-    extension [Self <: ZoomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -515,7 +524,8 @@ object control {
       __obj.asInstanceOf[ZoomSliderOptions]
     }
     
-    extension [Self <: ZoomSliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomSliderOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -558,7 +568,8 @@ object control {
       __obj.asInstanceOf[ZoomToExtentOptions]
     }
     
-    extension [Self <: ZoomToExtentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomToExtentOptions] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

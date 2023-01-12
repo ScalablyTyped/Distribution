@@ -15,7 +15,8 @@ object Reload {
     __obj.asInstanceOf[Reload]
   }
   
-  extension [Self <: Reload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reload] (val x: Self) extends AnyVal {
     
     inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
   }

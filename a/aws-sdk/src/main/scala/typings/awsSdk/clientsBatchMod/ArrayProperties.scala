@@ -18,7 +18,8 @@ object ArrayProperties {
     __obj.asInstanceOf[ArrayProperties]
   }
   
-  extension [Self <: ArrayProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayProperties] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Integer): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

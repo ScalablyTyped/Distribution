@@ -34,7 +34,8 @@ object BookingQuestionAnswer {
     __obj.asInstanceOf[BookingQuestionAnswer]
   }
   
-  extension [Self <: BookingQuestionAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookingQuestionAnswer] (val x: Self) extends AnyVal {
     
     inline def setAnswer(value: NullableOption[String]): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
     

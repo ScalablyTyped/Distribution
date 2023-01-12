@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[AddConfig]
     }
     
-    extension [Self <: AddConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddConfig] (val x: Self) extends AnyVal {
       
       inline def setBeforeSigner(value: (/* xhr */ XMLHttpRequest, /* url */ String) => Unit): Self = StObject.set(x, "beforeSigner", js.Any.fromFunction2(value))
       
@@ -307,7 +308,8 @@ object mod {
       __obj.asInstanceOf[AddOverrideOptions]
     }
     
-    extension [Self <: AddOverrideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddOverrideOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
       
@@ -508,7 +510,8 @@ object mod {
       __obj.asInstanceOf[CreateConfig]
     }
     
-    extension [Self <: CreateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateConfig] (val x: Self) extends AnyVal {
       
       inline def setAbortCompletionThrottlingMs(value: Double): Self = StObject.set(x, "abortCompletionThrottlingMs", value.asInstanceOf[js.Any])
       
@@ -742,7 +745,8 @@ object mod {
       __obj.asInstanceOf[PauseConfig]
     }
     
-    extension [Self <: PauseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseConfig] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -781,7 +785,8 @@ object mod {
       __obj.asInstanceOf[TransferStats]
     }
     
-    extension [Self <: TransferStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferStats] (val x: Self) extends AnyVal {
       
       inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
       

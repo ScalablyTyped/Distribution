@@ -36,7 +36,8 @@ object VideoPlacementBuilder {
     __obj.asInstanceOf[VideoPlacementBuilder]
   }
   
-  extension [Self <: VideoPlacementBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoPlacementBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoPlacementOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

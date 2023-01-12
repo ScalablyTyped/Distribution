@@ -42,7 +42,8 @@ object WorksheetViewFrozen {
     __obj.asInstanceOf[WorksheetViewFrozen]
   }
   
-  extension [Self <: WorksheetViewFrozen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetViewFrozen] (val x: Self) extends AnyVal {
     
     inline def setState(value: frozen): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

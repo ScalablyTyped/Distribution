@@ -33,7 +33,8 @@ object AddFacetToObjectRequest {
     __obj.asInstanceOf[AddFacetToObjectRequest]
   }
   
-  extension [Self <: AddFacetToObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddFacetToObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     

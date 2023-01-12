@@ -33,7 +33,8 @@ object CreateHttpNamespaceRequest {
     __obj.asInstanceOf[CreateHttpNamespaceRequest]
   }
   
-  extension [Self <: CreateHttpNamespaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHttpNamespaceRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatorRequestId(value: ResourceId): Self = StObject.set(x, "CreatorRequestId", value.asInstanceOf[js.Any])
     

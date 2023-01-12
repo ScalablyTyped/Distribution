@@ -34,7 +34,8 @@ object OptionsPath {
     __obj.asInstanceOf[OptionsPath]
   }
   
-  extension [Self <: OptionsPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPath] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: (Request[ReqRefDefaults], ResponseToolkit[ReqRefDefaults]) => ResponseObject): Self = StObject.set(x, "handler", js.Any.fromFunction2(value))
     

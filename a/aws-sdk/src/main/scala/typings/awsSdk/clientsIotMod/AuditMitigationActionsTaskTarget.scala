@@ -28,7 +28,8 @@ object AuditMitigationActionsTaskTarget {
     __obj.asInstanceOf[AuditMitigationActionsTaskTarget]
   }
   
-  extension [Self <: AuditMitigationActionsTaskTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditMitigationActionsTaskTarget] (val x: Self) extends AnyVal {
     
     inline def setAuditCheckToReasonCodeFilter(value: AuditCheckToReasonCodeFilter): Self = StObject.set(x, "auditCheckToReasonCodeFilter", value.asInstanceOf[js.Any])
     

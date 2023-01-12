@@ -66,7 +66,8 @@ object BaseSyntheticEvent {
     __obj.asInstanceOf[BaseSyntheticEvent[E, C, T]]
   }
   
-  extension [Self <: BaseSyntheticEvent[?, ?, ?], E, C, T](x: Self & (BaseSyntheticEvent[E, C, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSyntheticEvent[?, ?, ?], E, C, T] (val x: Self & (BaseSyntheticEvent[E, C, T])) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

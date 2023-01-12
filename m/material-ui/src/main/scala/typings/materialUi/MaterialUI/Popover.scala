@@ -34,7 +34,8 @@ object Popover {
       __obj.asInstanceOf[PopoverAnimationDefaultProps]
     }
     
-    extension [Self <: PopoverAnimationDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverAnimationDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object Popover {
       __obj.asInstanceOf[PopoverAnimationProps]
     }
     
-    extension [Self <: PopoverAnimationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverAnimationProps] (val x: Self) extends AnyVal {
       
       inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object Popover {
       __obj.asInstanceOf[PopoverAnimationVerticalProps]
     }
     
-    extension [Self <: PopoverAnimationVerticalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverAnimationVerticalProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object Popover {
       __obj.asInstanceOf[PopoverProps]
     }
     
-    extension [Self <: PopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorEl(value: ReactInstance): Self = StObject.set(x, "anchorEl", value.asInstanceOf[js.Any])
       

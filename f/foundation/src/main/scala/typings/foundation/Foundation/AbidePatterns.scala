@@ -44,7 +44,8 @@ object AbidePatterns {
     __obj.asInstanceOf[AbidePatterns]
   }
   
-  extension [Self <: AbidePatterns](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbidePatterns] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: js.RegExp): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

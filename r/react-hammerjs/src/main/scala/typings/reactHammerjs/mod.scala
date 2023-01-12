@@ -67,7 +67,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[HammerOptionsWithRecognizers]
     }
     
-    extension [Self <: HammerOptionsWithRecognizers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HammerOptionsWithRecognizers] (val x: Self) extends AnyVal {
       
       inline def setCssProps(value: CssProps): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactHammerProps]
     }
     
-    extension [Self <: ReactHammerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHammerProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: /* event */ HammerInput => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       

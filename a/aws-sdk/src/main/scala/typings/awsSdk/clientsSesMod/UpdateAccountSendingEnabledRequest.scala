@@ -18,7 +18,8 @@ object UpdateAccountSendingEnabledRequest {
     __obj.asInstanceOf[UpdateAccountSendingEnabledRequest]
   }
   
-  extension [Self <: UpdateAccountSendingEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAccountSendingEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Enabled): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

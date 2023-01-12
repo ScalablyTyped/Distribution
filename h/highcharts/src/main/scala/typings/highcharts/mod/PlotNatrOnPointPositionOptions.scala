@@ -39,7 +39,8 @@ object PlotNatrOnPointPositionOptions {
     __obj.asInstanceOf[PlotNatrOnPointPositionOptions]
   }
   
-  extension [Self <: PlotNatrOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotNatrOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

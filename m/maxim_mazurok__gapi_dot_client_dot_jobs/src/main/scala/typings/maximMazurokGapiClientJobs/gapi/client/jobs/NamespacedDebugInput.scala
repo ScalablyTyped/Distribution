@@ -86,7 +86,8 @@ object NamespacedDebugInput {
     __obj.asInstanceOf[NamespacedDebugInput]
   }
   
-  extension [Self <: NamespacedDebugInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespacedDebugInput] (val x: Self) extends AnyVal {
     
     inline def setAbsolutelyForcedExpNames(value: js.Array[String]): Self = StObject.set(x, "absolutelyForcedExpNames", value.asInstanceOf[js.Any])
     

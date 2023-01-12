@@ -31,7 +31,8 @@ object ILatexTypesetter {
     __obj.asInstanceOf[ILatexTypesetter]
   }
   
-  extension [Self <: ILatexTypesetter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILatexTypesetter] (val x: Self) extends AnyVal {
     
     inline def setTypeset(value: HTMLElement => Unit): Self = StObject.set(x, "typeset", js.Any.fromFunction1(value))
   }

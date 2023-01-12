@@ -144,7 +144,8 @@ object libCommonProtocolDotmonikerMod {
       __obj.asInstanceOf[Moniker]
     }
     
-    extension [Self <: Moniker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Moniker] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object libCommonProtocolDotmonikerMod {
       __obj.asInstanceOf[MonikerClientCapabilities]
     }
     
-    extension [Self <: MonikerClientCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MonikerClientCapabilities] (val x: Self) extends AnyVal {
       
       inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
       

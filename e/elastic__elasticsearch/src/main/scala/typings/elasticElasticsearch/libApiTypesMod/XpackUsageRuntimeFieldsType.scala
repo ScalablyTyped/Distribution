@@ -56,7 +56,8 @@ object XpackUsageRuntimeFieldsType {
     __obj.asInstanceOf[XpackUsageRuntimeFieldsType]
   }
   
-  extension [Self <: XpackUsageRuntimeFieldsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRuntimeFieldsType] (val x: Self) extends AnyVal {
     
     inline def setChars_max(value: long): Self = StObject.set(x, "chars_max", value.asInstanceOf[js.Any])
     

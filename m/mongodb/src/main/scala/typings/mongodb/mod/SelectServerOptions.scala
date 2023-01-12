@@ -20,7 +20,8 @@ object SelectServerOptions {
     __obj.asInstanceOf[SelectServerOptions]
   }
   
-  extension [Self <: SelectServerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectServerOptions] (val x: Self) extends AnyVal {
     
     inline def setReadPreference(value: ReadPreferenceLike): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     

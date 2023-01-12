@@ -37,7 +37,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[AbortOptions]
     }
     
-    extension [Self <: AbortOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbortOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[BaseEntry]
     }
     
-    extension [Self <: BaseEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEntry] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[BaseFile]
     }
     
-    extension [Self <: BaseFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFile] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[BrowserImportCandidate]
     }
     
-    extension [Self <: BrowserImportCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserImportCandidate] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Blob): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[DirectoryEntry]
     }
     
-    extension [Self <: DirectoryEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryEntry] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Unit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }
@@ -208,7 +213,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[FileEntry[Content]]
     }
     
-    extension [Self <: FileEntry[?], Content /* <: AsyncIterable[js.typedarray.Uint8Array] | Blob */](x: Self & FileEntry[Content]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileEntry[?], Content /* <: AsyncIterable[js.typedarray.Uint8Array] | Blob */] (val x: Self & FileEntry[Content]) extends AnyVal {
       
       inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -240,7 +246,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[InputFile]
     }
     
-    extension [Self <: InputFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputFile] (val x: Self) extends AnyVal {
       
       inline def setUnixfs(value: Unit): Self = StObject.set(x, "unixfs", value.asInstanceOf[js.Any])
     }
@@ -257,7 +264,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[PreloadOptions]
     }
     
-    extension [Self <: PreloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreloadOptions] (val x: Self) extends AnyVal {
       
       inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
@@ -283,7 +291,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[ToDirectory]
     }
     
-    extension [Self <: ToDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToDirectory] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Unit): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -307,7 +316,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[ToFile]
     }
     
-    extension [Self <: ToFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToFile] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ToContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -330,7 +340,8 @@ object distSrcUtilsMod {
       __obj.asInstanceOf[ToFileMetadata]
     }
     
-    extension [Self <: ToFileMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToFileMetadata] (val x: Self) extends AnyVal {
       
       inline def setMode(value: ToMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

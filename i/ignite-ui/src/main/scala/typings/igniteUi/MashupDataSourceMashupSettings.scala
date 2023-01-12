@@ -29,7 +29,8 @@ object MashupDataSourceMashupSettings {
     __obj.asInstanceOf[MashupDataSourceMashupSettings]
   }
   
-  extension [Self <: MashupDataSourceMashupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MashupDataSourceMashupSettings] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

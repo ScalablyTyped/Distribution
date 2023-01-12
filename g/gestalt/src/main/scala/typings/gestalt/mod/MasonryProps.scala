@@ -51,7 +51,8 @@ object MasonryProps {
     __obj.asInstanceOf[MasonryProps[T]]
   }
   
-  extension [Self <: MasonryProps[?], T](x: Self & MasonryProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MasonryProps[?], T] (val x: Self & MasonryProps[T]) extends AnyVal {
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

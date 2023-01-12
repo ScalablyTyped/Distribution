@@ -33,7 +33,8 @@ object BannerImageUrl {
     __obj.asInstanceOf[BannerImageUrl]
   }
   
-  extension [Self <: BannerImageUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerImageUrl] (val x: Self) extends AnyVal {
     
     inline def setBannerImageUrl(value: String): Self = StObject.set(x, "bannerImageUrl", value.asInstanceOf[js.Any])
     

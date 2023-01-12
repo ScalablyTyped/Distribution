@@ -66,7 +66,8 @@ object EdgeOptions {
     __obj.asInstanceOf[EdgeOptions]
   }
   
-  extension [Self <: EdgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowStrikethrough(value: Boolean): Self = StObject.set(x, "arrowStrikethrough", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ILBSubsettingConfig {
     __obj.asInstanceOf[ILBSubsettingConfig]
   }
   
-  extension [Self <: ILBSubsettingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILBSubsettingConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

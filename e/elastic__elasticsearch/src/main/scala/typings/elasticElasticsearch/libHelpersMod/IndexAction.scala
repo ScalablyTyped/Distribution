@@ -18,7 +18,8 @@ object IndexAction {
     __obj.asInstanceOf[IndexAction]
   }
   
-  extension [Self <: IndexAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexAction] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: BulkIndexOperation): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }

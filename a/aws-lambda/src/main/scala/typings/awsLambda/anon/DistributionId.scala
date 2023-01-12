@@ -32,7 +32,8 @@ object DistributionId {
     __obj.asInstanceOf[DistributionId]
   }
   
-  extension [Self <: DistributionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionId] (val x: Self) extends AnyVal {
     
     inline def setDistributionDomainName(value: String): Self = StObject.set(x, "distributionDomainName", value.asInstanceOf[js.Any])
     

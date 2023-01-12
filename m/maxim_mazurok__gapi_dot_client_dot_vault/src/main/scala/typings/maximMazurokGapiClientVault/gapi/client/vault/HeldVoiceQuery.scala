@@ -16,7 +16,8 @@ object HeldVoiceQuery {
     __obj.asInstanceOf[HeldVoiceQuery]
   }
   
-  extension [Self <: HeldVoiceQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeldVoiceQuery] (val x: Self) extends AnyVal {
     
     inline def setCoveredData(value: js.Array[String]): Self = StObject.set(x, "coveredData", value.asInstanceOf[js.Any])
     

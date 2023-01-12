@@ -33,7 +33,8 @@ object DeleteLaunchTemplateVersionsResponseErrorItem {
     __obj.asInstanceOf[DeleteLaunchTemplateVersionsResponseErrorItem]
   }
   
-  extension [Self <: DeleteLaunchTemplateVersionsResponseErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchTemplateVersionsResponseErrorItem] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     

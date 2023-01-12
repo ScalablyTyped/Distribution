@@ -50,7 +50,8 @@ object dxPolarChart {
       __obj.asInstanceOf[ArgumentAxisClickEvent]
     }
     
-    extension [Self <: ArgumentAxisClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgumentAxisClickEvent] (val x: Self) extends AnyVal {
       
       inline def setArgument(value: js.Date | Double | String): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     }
@@ -106,7 +107,8 @@ object dxPolarChart {
       __obj.asInstanceOf[LegendClickEvent]
     }
     
-    extension [Self <: LegendClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendClickEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: polarChartSeriesObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -197,7 +199,8 @@ object dxPolarChart {
       __obj.asInstanceOf[SeriesClickEvent]
     }
     
-    extension [Self <: SeriesClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesClickEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: polarChartSeriesObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -229,7 +232,8 @@ object dxPolarChart {
       __obj.asInstanceOf[SeriesInteractionInfo]
     }
     
-    extension [Self <: SeriesInteractionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesInteractionInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: polarChartSeriesObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -319,7 +323,8 @@ object dxPolarChart {
       __obj.asInstanceOf[ZoomEndEvent]
     }
     
-    extension [Self <: ZoomEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomEndEvent] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: ZoomPanAction): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -359,7 +364,8 @@ object dxPolarChart {
       __obj.asInstanceOf[ZoomStartEvent]
     }
     
-    extension [Self <: ZoomStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomStartEvent] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: ZoomPanAction): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       

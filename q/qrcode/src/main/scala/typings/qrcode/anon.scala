@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Dark]
     }
     
-    extension [Self <: Dark](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dark] (val x: Self) extends AnyVal {
       
       inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Buffer | js.typedarray.Uint8ClampedArray | js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[DeflateLevel]
     }
     
-    extension [Self <: DeflateLevel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeflateLevel] (val x: Self) extends AnyVal {
       
       inline def setDeflateLevel(value: Double): Self = StObject.set(x, "deflateLevel", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Quality]
     }
     
-    extension [Self <: Quality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quality] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       

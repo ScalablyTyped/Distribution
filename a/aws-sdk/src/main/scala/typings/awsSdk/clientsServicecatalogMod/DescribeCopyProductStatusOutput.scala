@@ -28,7 +28,8 @@ object DescribeCopyProductStatusOutput {
     __obj.asInstanceOf[DescribeCopyProductStatusOutput]
   }
   
-  extension [Self <: DescribeCopyProductStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCopyProductStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setCopyProductStatus(value: CopyProductStatus): Self = StObject.set(x, "CopyProductStatus", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object mod {
       __obj.asInstanceOf[BuildChangeObject]
     }
     
-    extension [Self <: BuildChangeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildChangeObject] (val x: Self) extends AnyVal {
       
       inline def setChangedNodes(value: js.Array[Boolean]): Self = StObject.set(x, "changedNodes", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[FeatureSet]
     }
     
-    extension [Self <: FeatureSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureSet] (val x: Self) extends AnyVal {
       
       inline def setNeedsCacheFlag(value: Boolean): Self = StObject.set(x, "needsCacheFlag", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object mod {
       __obj.asInstanceOf[NodeCommon[T]]
     }
     
-    extension [Self <: NodeCommon[?], T /* <: NodeInfo */](x: Self & NodeCommon[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeCommon[?], T /* <: NodeInfo */] (val x: Self & NodeCommon[T]) extends AnyVal {
       
       inline def set__broccoliFeatures__(value: FeatureSet): Self = StObject.set(x, "__broccoliFeatures__", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object mod {
       __obj.asInstanceOf[NodeInfoCommon[T]]
     }
     
-    extension [Self <: NodeInfoCommon[?], T /* <: NodeType */](x: Self & NodeInfoCommon[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeInfoCommon[?], T /* <: NodeType */] (val x: Self & NodeInfoCommon[T]) extends AnyVal {
       
       inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object mod {
       __obj.asInstanceOf[NodeInfoMap]
     }
     
-    extension [Self <: NodeInfoMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeInfoMap] (val x: Self) extends AnyVal {
       
       inline def setSource(value: SourceNodeInfo): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object mod {
       __obj.asInstanceOf[NodeMap]
     }
     
-    extension [Self <: NodeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeMap] (val x: Self) extends AnyVal {
       
       inline def setSource(value: SourceNode): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object mod {
       __obj.asInstanceOf[SourceNodeInfo]
     }
     
-    extension [Self <: SourceNodeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceNodeInfo] (val x: Self) extends AnyVal {
       
       inline def setSourceDirectory(value: String): Self = StObject.set(x, "sourceDirectory", value.asInstanceOf[js.Any])
       
@@ -367,7 +374,8 @@ object mod {
       __obj.asInstanceOf[TransformNodeInfo]
     }
     
-    extension [Self <: TransformNodeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformNodeInfo] (val x: Self) extends AnyVal {
       
       inline def setGetCallbackObject(value: () => CallbackObject): Self = StObject.set(x, "getCallbackObject", js.Any.fromFunction0(value))
       

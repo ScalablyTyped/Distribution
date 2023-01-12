@@ -56,7 +56,8 @@ object distCommandsInfoDEBUGMod {
       __obj.asInstanceOf[InfoDebugReply]
     }
     
-    extension [Self <: InfoDebugReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoDebugReply] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[BytesPerSample]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       

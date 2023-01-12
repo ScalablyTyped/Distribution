@@ -47,7 +47,8 @@ object ProgressBarOptions {
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  extension [Self <: ProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setFilled(value: Double): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     

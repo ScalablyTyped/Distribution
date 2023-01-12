@@ -19,7 +19,8 @@ object GoogleCloudMlV1ManualScaling {
     __obj.asInstanceOf[GoogleCloudMlV1ManualScaling]
   }
   
-  extension [Self <: GoogleCloudMlV1ManualScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ManualScaling] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Double): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

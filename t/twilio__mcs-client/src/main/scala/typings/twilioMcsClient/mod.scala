@@ -262,7 +262,8 @@ object mod {
       __obj.asInstanceOf[BackoffOverride]
     }
     
-    extension [Self <: BackoffOverride](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackoffOverride] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -305,7 +306,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setBackoffConfigOverride(value: BackoffOverride): Self = StObject.set(x, "backoffConfigOverride", value.asInstanceOf[js.Any])
       
@@ -338,7 +340,8 @@ object mod {
       __obj.asInstanceOf[Links]
     }
     
-    extension [Self <: Links](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -363,7 +366,8 @@ object mod {
       __obj.asInstanceOf[McsOptions]
     }
     
-    extension [Self <: McsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: McsOptions] (val x: Self) extends AnyVal {
       
       inline def setBackoffConfigOverride(value: BackoffOverride): Self = StObject.set(x, "backoffConfigOverride", value.asInstanceOf[js.Any])
       
@@ -441,7 +445,8 @@ object mod {
       __obj.asInstanceOf[MediaResponse]
     }
     
-    extension [Self <: MediaResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaResponse] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -581,7 +586,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackoffConfigOverride(value: BackoffOverride): Self = StObject.set(x, "backoffConfigOverride", value.asInstanceOf[js.Any])
       
@@ -624,7 +630,8 @@ object mod {
       __obj.asInstanceOf[Options0]
     }
     
-    extension [Self <: Options0](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options0] (val x: Self) extends AnyVal {
       
       inline def setLogLevel(value: LogLevelDesc): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
@@ -655,7 +662,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

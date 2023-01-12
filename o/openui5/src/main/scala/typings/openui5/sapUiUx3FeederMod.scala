@@ -373,7 +373,8 @@ object sapUiUx3FeederMod {
       __obj.asInstanceOf[FeederSettings]
     }
     
-    extension [Self <: FeederSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeederSettings] (val x: Self) extends AnyVal {
       
       inline def setPlaceholderText(value: String | PropertyBindingInfo): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
       

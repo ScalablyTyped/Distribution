@@ -937,7 +937,8 @@ object distEngineTrainingMod {
       __obj.asInstanceOf[ModelCompileArgs]
     }
     
-    extension [Self <: ModelCompileArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelCompileArgs] (val x: Self) extends AnyVal {
       
       inline def setLoss(
         value: String | (js.Array[LossOrMetricFn | String]) | (StringDictionary[LossOrMetricFn | String]) | LossOrMetricFn
@@ -993,7 +994,8 @@ object distEngineTrainingMod {
       __obj.asInstanceOf[ModelEvaluateArgs]
     }
     
-    extension [Self <: ModelEvaluateArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelEvaluateArgs] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

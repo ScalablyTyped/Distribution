@@ -32,7 +32,8 @@ object distTypesInternalOperatorsThrottleMod {
       __obj.asInstanceOf[ThrottleConfig]
     }
     
-    extension [Self <: ThrottleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThrottleConfig] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       

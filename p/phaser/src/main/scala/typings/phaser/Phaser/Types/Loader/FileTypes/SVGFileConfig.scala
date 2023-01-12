@@ -39,7 +39,8 @@ object SVGFileConfig {
     __obj.asInstanceOf[SVGFileConfig]
   }
   
-  extension [Self <: SVGFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGFileConfig] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SaveObjectsOptions {
     __obj.asInstanceOf[SaveObjectsOptions]
   }
   
-  extension [Self <: SaveObjectsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveObjectsOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoGenerateObjectIDIfNotExist(value: Boolean): Self = StObject.set(x, "autoGenerateObjectIDIfNotExist", value.asInstanceOf[js.Any])
     

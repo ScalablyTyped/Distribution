@@ -17,7 +17,8 @@ object PlaidInstitution {
     __obj.asInstanceOf[PlaidInstitution]
   }
   
-  extension [Self <: PlaidInstitution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidInstitution] (val x: Self) extends AnyVal {
     
     inline def setInstitution_id(value: String): Self = StObject.set(x, "institution_id", value.asInstanceOf[js.Any])
     

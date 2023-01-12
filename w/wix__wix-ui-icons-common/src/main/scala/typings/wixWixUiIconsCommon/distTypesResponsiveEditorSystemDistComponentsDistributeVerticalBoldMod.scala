@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsDistributeVerticalBoldMod ex
       __obj.asInstanceOf[DistributeVerticalBoldProps]
     }
     
-    extension [Self <: DistributeVerticalBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributeVerticalBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

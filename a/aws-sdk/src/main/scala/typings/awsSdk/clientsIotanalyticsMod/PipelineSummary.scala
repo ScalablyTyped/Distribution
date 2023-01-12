@@ -33,7 +33,8 @@ object PipelineSummary {
     __obj.asInstanceOf[PipelineSummary]
   }
   
-  extension [Self <: PipelineSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineSummary] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

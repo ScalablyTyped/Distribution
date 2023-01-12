@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Analytics]
     }
     
-    extension [Self <: Analytics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Analytics] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Builder]
     }
     
-    extension [Self <: Builder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
       
       inline def setBuilder(value: BuilderInfo): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    extension [Self <: Current](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object anon {
       __obj.asInstanceOf[CurrentDirectory]
     }
     
-    extension [Self <: CurrentDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentDirectory] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: typings.angularDevkitCore.srcAnalyticsApiMod.Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
@@ -174,7 +178,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: JsonValue): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -197,7 +202,8 @@ object anon {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setState(value: Stopped): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
@@ -218,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setState(value: Waiting): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       

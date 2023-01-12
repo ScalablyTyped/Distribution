@@ -17,7 +17,8 @@ object HeadOptions {
     __obj.asInstanceOf[HeadOptions]
   }
   
-  extension [Self <: HeadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadOptions] (val x: Self) extends AnyVal {
     
     inline def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
   }

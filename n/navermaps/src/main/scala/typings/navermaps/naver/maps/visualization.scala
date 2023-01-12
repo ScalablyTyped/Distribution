@@ -128,7 +128,8 @@ object visualization {
       __obj.asInstanceOf[DotMapOptions]
     }
     
-    extension [Self <: DotMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotMapOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[LatLng | PointArrayLiteral | WeightedLocation]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object visualization {
       __obj.asInstanceOf[HeatMapOptions]
     }
     
-    extension [Self <: HeatMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeatMapOptions] (val x: Self) extends AnyVal {
       
       inline def setColorMap(value: SpectrumStyle): Self = StObject.set(x, "colorMap", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object visualization {
       __obj.asInstanceOf[WeightedLocation]
     }
     
-    extension [Self <: WeightedLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeightedLocation] (val x: Self) extends AnyVal {
       
       inline def setGetLocation(value: () => LatLng): Self = StObject.set(x, "getLocation", js.Any.fromFunction0(value))
       

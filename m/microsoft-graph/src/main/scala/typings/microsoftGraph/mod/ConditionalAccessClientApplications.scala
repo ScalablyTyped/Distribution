@@ -19,7 +19,8 @@ object ConditionalAccessClientApplications {
     __obj.asInstanceOf[ConditionalAccessClientApplications]
   }
   
-  extension [Self <: ConditionalAccessClientApplications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessClientApplications] (val x: Self) extends AnyVal {
     
     inline def setExcludeServicePrincipals(value: js.Array[String]): Self = StObject.set(x, "excludeServicePrincipals", value.asInstanceOf[js.Any])
     

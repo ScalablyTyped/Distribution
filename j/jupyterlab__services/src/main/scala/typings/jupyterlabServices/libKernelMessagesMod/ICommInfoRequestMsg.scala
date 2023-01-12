@@ -27,7 +27,8 @@ object ICommInfoRequestMsg {
     __obj.asInstanceOf[ICommInfoRequestMsg]
   }
   
-  extension [Self <: ICommInfoRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommInfoRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Targetname): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

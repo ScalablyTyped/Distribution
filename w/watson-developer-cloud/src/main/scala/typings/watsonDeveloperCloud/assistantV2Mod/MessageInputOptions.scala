@@ -26,7 +26,8 @@ object MessageInputOptions {
     __obj.asInstanceOf[MessageInputOptions]
   }
   
-  extension [Self <: MessageInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageInputOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternate_intents(value: Boolean): Self = StObject.set(x, "alternate_intents", value.asInstanceOf[js.Any])
     

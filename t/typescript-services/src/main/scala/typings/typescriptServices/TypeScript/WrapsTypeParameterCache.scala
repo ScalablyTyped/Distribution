@@ -23,7 +23,8 @@ object WrapsTypeParameterCache {
     __obj.asInstanceOf[WrapsTypeParameterCache]
   }
   
-  extension [Self <: WrapsTypeParameterCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrapsTypeParameterCache] (val x: Self) extends AnyVal {
     
     inline def setGetWrapsTypeParameter(value: TypeArgumentMap => Double): Self = StObject.set(x, "getWrapsTypeParameter", js.Any.fromFunction1(value))
     

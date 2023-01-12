@@ -85,7 +85,8 @@ object TestCafeConfigurationOptions {
     __obj.asInstanceOf[TestCafeConfigurationOptions]
   }
   
-  extension [Self <: TestCafeConfigurationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestCafeConfigurationOptions] (val x: Self) extends AnyVal {
     
     inline def setAppCommand(value: String): Self = StObject.set(x, "appCommand", value.asInstanceOf[js.Any])
     

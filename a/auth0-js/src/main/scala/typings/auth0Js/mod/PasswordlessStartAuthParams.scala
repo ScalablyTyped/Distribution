@@ -17,7 +17,8 @@ object PasswordlessStartAuthParams {
     __obj.asInstanceOf[PasswordlessStartAuthParams]
   }
   
-  extension [Self <: PasswordlessStartAuthParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordlessStartAuthParams] (val x: Self) extends AnyVal {
     
     inline def setResponseMode(value: String): Self = StObject.set(x, "responseMode", value.asInstanceOf[js.Any])
     

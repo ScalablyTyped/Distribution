@@ -44,7 +44,8 @@ object PartialLocation {
     __obj.asInstanceOf[PartialLocation]
   }
   
-  extension [Self <: PartialLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
     
     inline def setAncestorOrigins(value: DOMStringList): Self = StObject.set(x, "ancestorOrigins", value.asInstanceOf[js.Any])
     

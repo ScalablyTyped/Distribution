@@ -68,7 +68,8 @@ object GetDetectorVersionResult {
     __obj.asInstanceOf[GetDetectorVersionResult]
   }
   
-  extension [Self <: GetDetectorVersionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDetectorVersionResult] (val x: Self) extends AnyVal {
     
     inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

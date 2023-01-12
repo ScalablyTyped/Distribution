@@ -22,7 +22,8 @@ object SuggestedTextStyle {
     __obj.asInstanceOf[SuggestedTextStyle]
   }
   
-  extension [Self <: SuggestedTextStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestedTextStyle] (val x: Self) extends AnyVal {
     
     inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     

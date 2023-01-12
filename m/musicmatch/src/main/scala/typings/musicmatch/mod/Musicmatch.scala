@@ -68,7 +68,8 @@ object Musicmatch {
     __obj.asInstanceOf[Musicmatch]
   }
   
-  extension [Self <: Musicmatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Musicmatch] (val x: Self) extends AnyVal {
     
     inline def setAlbum(value: AlbumParams => js.Promise[Any]): Self = StObject.set(x, "album", js.Any.fromFunction1(value))
     

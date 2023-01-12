@@ -131,7 +131,8 @@ object alertify {
       __obj.asInstanceOf[ILabels]
     }
     
-    extension [Self <: ILabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabels] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object alertify {
       __obj.asInstanceOf[IProperties]
     }
     
-    extension [Self <: IProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProperties] (val x: Self) extends AnyVal {
       
       inline def setButtonFocus(value: String): Self = StObject.set(x, "buttonFocus", value.asInstanceOf[js.Any])
       

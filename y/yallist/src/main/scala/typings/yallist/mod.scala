@@ -40,7 +40,8 @@ object mod {
     @js.native
     val ^ : NodeConstructor = js.native
     
-    extension [Self <: Node[?], T](x: Self & Node[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
       
       inline def setList(value: Yallist[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object mod {
       __obj.asInstanceOf[ForEachIterable[T]]
     }
     
-    extension [Self <: ForEachIterable[?], T](x: Self & ForEachIterable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForEachIterable[?], T] (val x: Self & ForEachIterable[T]) extends AnyVal {
       
       inline def setForEach(value: js.Function1[/* item */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }

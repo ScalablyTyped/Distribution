@@ -19,7 +19,8 @@ object AppsDynamiteIntegrationConfigUpdatedMetadata {
     __obj.asInstanceOf[AppsDynamiteIntegrationConfigUpdatedMetadata]
   }
   
-  extension [Self <: AppsDynamiteIntegrationConfigUpdatedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteIntegrationConfigUpdatedMetadata] (val x: Self) extends AnyVal {
     
     inline def setInitiatorId(value: AppsDynamiteUserId): Self = StObject.set(x, "initiatorId", value.asInstanceOf[js.Any])
     

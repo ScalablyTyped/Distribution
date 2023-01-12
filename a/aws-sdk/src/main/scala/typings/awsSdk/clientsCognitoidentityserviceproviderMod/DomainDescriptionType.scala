@@ -53,7 +53,8 @@ object DomainDescriptionType {
     __obj.asInstanceOf[DomainDescriptionType]
   }
   
-  extension [Self <: DomainDescriptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainDescriptionType] (val x: Self) extends AnyVal {
     
     inline def setAWSAccountId(value: AWSAccountIdType): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object WebCLImageDescriptor {
     __obj.asInstanceOf[WebCLImageDescriptor]
   }
   
-  extension [Self <: WebCLImageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCLImageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setChannelOrder(value: ChannelOrder): Self = StObject.set(x, "channelOrder", value.asInstanceOf[js.Any])
     

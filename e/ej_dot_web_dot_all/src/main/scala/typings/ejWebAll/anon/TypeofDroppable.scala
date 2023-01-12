@@ -20,7 +20,8 @@ object TypeofDroppable {
     __obj.asInstanceOf[TypeofDroppable]
   }
   
-  extension [Self <: TypeofDroppable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDroppable] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Droppable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

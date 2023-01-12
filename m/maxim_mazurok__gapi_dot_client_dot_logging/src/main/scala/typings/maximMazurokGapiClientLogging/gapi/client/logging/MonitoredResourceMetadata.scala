@@ -27,7 +27,8 @@ object MonitoredResourceMetadata {
     __obj.asInstanceOf[MonitoredResourceMetadata]
   }
   
-  extension [Self <: MonitoredResourceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoredResourceMetadata] (val x: Self) extends AnyVal {
     
     inline def setSystemLabels(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

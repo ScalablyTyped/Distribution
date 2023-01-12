@@ -15,7 +15,8 @@ object Origin {
     __obj.asInstanceOf[Origin]
   }
   
-  extension [Self <: Origin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object NewStudioMember {
     __obj.asInstanceOf[NewStudioMember]
   }
   
-  extension [Self <: NewStudioMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewStudioMember] (val x: Self) extends AnyVal {
     
     inline def setPersona(value: StudioPersona): Self = StObject.set(x, "persona", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object AuxiliaryServicesConfig {
     __obj.asInstanceOf[AuxiliaryServicesConfig]
   }
   
-  extension [Self <: AuxiliaryServicesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuxiliaryServicesConfig] (val x: Self) extends AnyVal {
     
     inline def setMetastoreConfig(value: MetastoreConfig): Self = StObject.set(x, "metastoreConfig", value.asInstanceOf[js.Any])
     

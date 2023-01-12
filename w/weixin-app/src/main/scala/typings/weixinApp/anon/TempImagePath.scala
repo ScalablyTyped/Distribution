@@ -15,7 +15,8 @@ object TempImagePath {
     __obj.asInstanceOf[TempImagePath]
   }
   
-  extension [Self <: TempImagePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempImagePath] (val x: Self) extends AnyVal {
     
     inline def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
   }

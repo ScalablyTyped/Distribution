@@ -19,7 +19,8 @@ object ChatMentions {
     __obj.asInstanceOf[ChatMentions]
   }
   
-  extension [Self <: ChatMentions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMentions] (val x: Self) extends AnyVal {
     
     inline def setMention_all(value: Boolean): Self = StObject.set(x, "mention_all", value.asInstanceOf[js.Any])
     

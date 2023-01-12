@@ -33,7 +33,8 @@ object OpenDialogReturnValue {
     __obj.asInstanceOf[OpenDialogReturnValue]
   }
   
-  extension [Self <: OpenDialogReturnValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDialogReturnValue] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: js.Array[String]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     

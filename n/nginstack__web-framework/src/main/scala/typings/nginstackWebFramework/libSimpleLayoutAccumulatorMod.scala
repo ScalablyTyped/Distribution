@@ -65,7 +65,8 @@ object libSimpleLayoutAccumulatorMod {
       __obj.asInstanceOf[Accumulator]
     }
     
-    extension [Self <: Accumulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accumulator] (val x: Self) extends AnyVal {
       
       inline def setFeed(value: Any => Unit): Self = StObject.set(x, "feed", js.Any.fromFunction1(value))
       

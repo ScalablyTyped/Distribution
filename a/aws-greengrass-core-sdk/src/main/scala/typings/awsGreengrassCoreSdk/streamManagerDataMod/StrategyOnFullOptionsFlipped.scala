@@ -21,7 +21,8 @@ object StrategyOnFullOptionsFlipped {
     __obj.asInstanceOf[StrategyOnFullOptionsFlipped]
   }
   
-  extension [Self <: StrategyOnFullOptionsFlipped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrategyOnFullOptionsFlipped] (val x: Self) extends AnyVal {
     
     inline def set0(value: RejectNewData): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object AssociateKmsKeyRequest {
     __obj.asInstanceOf[AssociateKmsKeyRequest]
   }
   
-  extension [Self <: AssociateKmsKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateKmsKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

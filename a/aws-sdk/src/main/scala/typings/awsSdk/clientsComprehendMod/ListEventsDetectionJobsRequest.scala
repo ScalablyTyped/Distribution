@@ -28,7 +28,8 @@ object ListEventsDetectionJobsRequest {
     __obj.asInstanceOf[ListEventsDetectionJobsRequest]
   }
   
-  extension [Self <: ListEventsDetectionJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventsDetectionJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: EventsDetectionJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

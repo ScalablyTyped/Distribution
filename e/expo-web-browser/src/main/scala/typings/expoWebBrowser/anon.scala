@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[SkipRedirectCheck]
     }
     
-    extension [Self <: SkipRedirectCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipRedirectCheck] (val x: Self) extends AnyVal {
       
       inline def setSkipRedirectCheck(value: Boolean): Self = StObject.set(x, "skipRedirectCheck", value.asInstanceOf[js.Any])
       

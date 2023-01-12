@@ -24,7 +24,8 @@ object FancyBoxGroupItem {
     __obj.asInstanceOf[FancyBoxGroupItem]
   }
   
-  extension [Self <: FancyBoxGroupItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxGroupItem] (val x: Self) extends AnyVal {
     
     inline def setOpts(value: FancyBoxOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
     

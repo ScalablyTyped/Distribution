@@ -51,7 +51,8 @@ object LinkedDataTypeAddedEventArgs {
     __obj.asInstanceOf[LinkedDataTypeAddedEventArgs]
   }
   
-  extension [Self <: LinkedDataTypeAddedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedDataTypeAddedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setServiceId(value: Double): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     

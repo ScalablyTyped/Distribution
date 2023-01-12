@@ -22,7 +22,8 @@ object MatchWebFonts {
     __obj.asInstanceOf[MatchWebFonts]
   }
   
-  extension [Self <: MatchWebFonts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchWebFonts] (val x: Self) extends AnyVal {
     
     inline def setFontCheckDelay(value: Double): Self = StObject.set(x, "fontCheckDelay", value.asInstanceOf[js.Any])
     

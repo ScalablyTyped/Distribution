@@ -44,7 +44,8 @@ object libTableMod {
       __obj.asInstanceOf[CreateRecord[TFields]]
     }
     
-    extension [Self <: CreateRecord[?], TFields](x: Self & CreateRecord[TFields]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateRecord[?], TFields] (val x: Self & CreateRecord[TFields]) extends AnyVal {
       
       inline def setFields(value: Partial[TFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
@@ -65,7 +66,8 @@ object libTableMod {
       __obj.asInstanceOf[OptionalParameters]
     }
     
-    extension [Self <: OptionalParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalParameters] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: get | post): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

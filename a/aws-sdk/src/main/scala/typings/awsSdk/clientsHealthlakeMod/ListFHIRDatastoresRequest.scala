@@ -28,7 +28,8 @@ object ListFHIRDatastoresRequest {
     __obj.asInstanceOf[ListFHIRDatastoresRequest]
   }
   
-  extension [Self <: ListFHIRDatastoresRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFHIRDatastoresRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: DatastoreFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

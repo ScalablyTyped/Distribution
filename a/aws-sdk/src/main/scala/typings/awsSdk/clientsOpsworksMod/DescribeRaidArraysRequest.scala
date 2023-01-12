@@ -28,7 +28,8 @@ object DescribeRaidArraysRequest {
     __obj.asInstanceOf[DescribeRaidArraysRequest]
   }
   
-  extension [Self <: DescribeRaidArraysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRaidArraysRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

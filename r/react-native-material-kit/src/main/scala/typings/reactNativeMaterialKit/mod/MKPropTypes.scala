@@ -31,7 +31,8 @@ object MKPropTypes {
       __obj.asInstanceOf[dimen]
     }
     
-    extension [Self <: dimen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: dimen] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object MKPropTypes {
       __obj.asInstanceOf[font]
     }
     
-    extension [Self <: font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: font] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

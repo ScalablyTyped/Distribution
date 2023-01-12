@@ -28,7 +28,8 @@ object TypeofCheckout {
     __obj.asInstanceOf[TypeofCheckout]
   }
   
-  extension [Self <: TypeofCheckout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCheckout] (val x: Self) extends AnyVal {
     
     inline def setSession(value: TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object ColumnInfo {
     __obj.asInstanceOf[ColumnInfo]
   }
   
-  extension [Self <: ColumnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "CaseSensitive", value.asInstanceOf[js.Any])
     

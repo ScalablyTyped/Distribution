@@ -129,7 +129,8 @@ object mod {
       __obj.asInstanceOf[Defaults_]
     }
     
-    extension [Self <: Defaults_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defaults_] (val x: Self) extends AnyVal {
       
       inline def setFont(value: Fonts_): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -186,7 +187,8 @@ object mod {
       __obj.asInstanceOf[FittingRules]
     }
     
-    extension [Self <: FittingRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FittingRules] (val x: Self) extends AnyVal {
       
       inline def setHLayout(value: Double): Self = StObject.set(x, "hLayout", value.asInstanceOf[js.Any])
       
@@ -254,7 +256,8 @@ object mod {
       __obj.asInstanceOf[FontOptions]
     }
     
-    extension [Self <: FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       
@@ -1209,7 +1212,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFont(value: Fonts_): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       

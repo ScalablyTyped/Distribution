@@ -41,7 +41,8 @@ object WatcherInfo {
     __obj.asInstanceOf[WatcherInfo]
   }
   
-  extension [Self <: WatcherInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherInfo] (val x: Self) extends AnyVal {
     
     inline def setChanges(value: Set[String]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     

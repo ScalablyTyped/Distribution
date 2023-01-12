@@ -44,7 +44,8 @@ object QualifiedName {
     __obj.asInstanceOf[QualifiedName]
   }
   
-  extension [Self <: QualifiedName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualifiedName] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: AST): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

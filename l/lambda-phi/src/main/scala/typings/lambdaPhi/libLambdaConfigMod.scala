@@ -17,7 +17,8 @@ object libLambdaConfigMod {
       __obj.asInstanceOf[LambdaConfig]
     }
     
-    extension [Self <: LambdaConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LambdaConfig] (val x: Self) extends AnyVal {
       
       inline def setAllowNullInjection(value: Boolean): Self = StObject.set(x, "allowNullInjection", value.asInstanceOf[js.Any])
     }

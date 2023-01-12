@@ -18,7 +18,8 @@ object ResolveComponentCandidatesResponse {
     __obj.asInstanceOf[ResolveComponentCandidatesResponse]
   }
   
-  extension [Self <: ResolveComponentCandidatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveComponentCandidatesResponse] (val x: Self) extends AnyVal {
     
     inline def setResolvedComponentVersions(value: ResolvedComponentVersionsList): Self = StObject.set(x, "resolvedComponentVersions", value.asInstanceOf[js.Any])
     

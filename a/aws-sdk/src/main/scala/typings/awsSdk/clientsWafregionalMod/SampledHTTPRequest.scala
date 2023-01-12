@@ -38,7 +38,8 @@ object SampledHTTPRequest {
     __obj.asInstanceOf[SampledHTTPRequest]
   }
   
-  extension [Self <: SampledHTTPRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SampledHTTPRequest] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

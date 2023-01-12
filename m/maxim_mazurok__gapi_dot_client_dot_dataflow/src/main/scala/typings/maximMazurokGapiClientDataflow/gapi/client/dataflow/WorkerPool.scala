@@ -98,7 +98,8 @@ object WorkerPool {
     __obj.asInstanceOf[WorkerPool]
   }
   
-  extension [Self <: WorkerPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerPool] (val x: Self) extends AnyVal {
     
     inline def setAutoscalingSettings(value: AutoscalingSettings): Self = StObject.set(x, "autoscalingSettings", value.asInstanceOf[js.Any])
     

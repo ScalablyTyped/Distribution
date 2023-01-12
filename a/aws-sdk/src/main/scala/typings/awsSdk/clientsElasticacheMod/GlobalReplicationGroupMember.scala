@@ -38,7 +38,8 @@ object GlobalReplicationGroupMember {
     __obj.asInstanceOf[GlobalReplicationGroupMember]
   }
   
-  extension [Self <: GlobalReplicationGroupMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalReplicationGroupMember] (val x: Self) extends AnyVal {
     
     inline def setAutomaticFailover(value: AutomaticFailoverStatus): Self = StObject.set(x, "AutomaticFailover", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object DropArgument {
     __obj.asInstanceOf[DropArgument]
   }
   
-  extension [Self <: DropArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropArgument] (val x: Self) extends AnyVal {
     
     inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NotifyOptions {
     __obj.asInstanceOf[NotifyOptions]
   }
   
-  extension [Self <: NotifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyOptions] (val x: Self) extends AnyVal {
     
     inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

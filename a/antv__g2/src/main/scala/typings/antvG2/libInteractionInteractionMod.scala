@@ -91,7 +91,8 @@ object libInteractionInteractionMod {
       __obj.asInstanceOf[Interaction]
     }
     
-    extension [Self <: Interaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: LooseObject): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       

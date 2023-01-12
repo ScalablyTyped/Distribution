@@ -48,7 +48,8 @@ object CreateEnvironmentAccountConnectionInput {
     __obj.asInstanceOf[CreateEnvironmentAccountConnectionInput]
   }
   
-  extension [Self <: CreateEnvironmentAccountConnectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentAccountConnectionInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

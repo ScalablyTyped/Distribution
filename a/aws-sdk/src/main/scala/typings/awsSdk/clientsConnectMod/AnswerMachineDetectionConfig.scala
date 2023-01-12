@@ -23,7 +23,8 @@ object AnswerMachineDetectionConfig {
     __obj.asInstanceOf[AnswerMachineDetectionConfig]
   }
   
-  extension [Self <: AnswerMachineDetectionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerMachineDetectionConfig] (val x: Self) extends AnyVal {
     
     inline def setAwaitAnswerMachinePrompt(value: Boolean): Self = StObject.set(x, "AwaitAnswerMachinePrompt", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StopContinuousExportResponse {
     __obj.asInstanceOf[StopContinuousExportResponse]
   }
   
-  extension [Self <: StopContinuousExportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopContinuousExportResponse] (val x: Self) extends AnyVal {
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

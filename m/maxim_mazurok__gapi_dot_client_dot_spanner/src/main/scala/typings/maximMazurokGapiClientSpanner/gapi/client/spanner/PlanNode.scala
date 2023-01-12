@@ -47,7 +47,8 @@ object PlanNode {
     __obj.asInstanceOf[PlanNode]
   }
   
-  extension [Self <: PlanNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanNode] (val x: Self) extends AnyVal {
     
     inline def setChildLinks(value: js.Array[ChildLink]): Self = StObject.set(x, "childLinks", value.asInstanceOf[js.Any])
     

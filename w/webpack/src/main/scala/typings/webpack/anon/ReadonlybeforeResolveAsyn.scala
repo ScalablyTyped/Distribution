@@ -34,7 +34,8 @@ object ReadonlybeforeResolveAsyn {
     __obj.asInstanceOf[ReadonlybeforeResolveAsyn]
   }
   
-  extension [Self <: ReadonlybeforeResolveAsyn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlybeforeResolveAsyn] (val x: Self) extends AnyVal {
     
     inline def setAfterResolve(value: AsyncSeriesWaterfallHook[js.Array[Any], UnsetAdditionalOptions]): Self = StObject.set(x, "afterResolve", value.asInstanceOf[js.Any])
     

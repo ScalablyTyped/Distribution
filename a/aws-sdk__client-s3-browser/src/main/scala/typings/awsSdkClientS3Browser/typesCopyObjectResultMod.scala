@@ -25,7 +25,8 @@ object typesCopyObjectResultMod {
       __obj.asInstanceOf[CopyObjectResult]
     }
     
-    extension [Self <: CopyObjectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyObjectResult] (val x: Self) extends AnyVal {
       
       inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object typesCopyObjectResultMod {
       __obj.asInstanceOf[UnmarshalledCopyObjectResult]
     }
     
-    extension [Self <: UnmarshalledCopyObjectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCopyObjectResult] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DisassociateWebsiteAuthorizationProviderRequest {
     __obj.asInstanceOf[DisassociateWebsiteAuthorizationProviderRequest]
   }
   
-  extension [Self <: DisassociateWebsiteAuthorizationProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateWebsiteAuthorizationProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationProviderId(value: Id): Self = StObject.set(x, "AuthorizationProviderId", value.asInstanceOf[js.Any])
     

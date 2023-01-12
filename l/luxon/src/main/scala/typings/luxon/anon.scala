@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Floor]
     }
     
-    extension [Self <: Floor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Floor] (val x: Self) extends AnyVal {
       
       inline def setFloor(value: Boolean): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[IncludeConfig]
     }
     
-    extension [Self <: IncludeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeConfig] (val x: Self) extends AnyVal {
       
       inline def setIncludeConfig(value: Boolean): Self = StObject.set(x, "includeConfig", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Literal]
     }
     
-    extension [Self <: Literal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
       
       inline def setLiteral(value: Boolean): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
       
@@ -81,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Separator]
     }
     
-    extension [Self <: Separator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Separator] (val x: Self) extends AnyVal {
       
       inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
@@ -100,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Zone]
     }
     
-    extension [Self <: Zone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
       
       inline def setZone(value: String | typings.luxon.srcZoneMod.Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
       

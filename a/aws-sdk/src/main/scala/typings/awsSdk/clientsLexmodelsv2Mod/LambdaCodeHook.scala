@@ -23,7 +23,8 @@ object LambdaCodeHook {
     __obj.asInstanceOf[LambdaCodeHook]
   }
   
-  extension [Self <: LambdaCodeHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaCodeHook] (val x: Self) extends AnyVal {
     
     inline def setCodeHookInterfaceVersion(value: CodeHookInterfaceVersion): Self = StObject.set(x, "codeHookInterfaceVersion", value.asInstanceOf[js.Any])
     

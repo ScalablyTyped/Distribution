@@ -16,7 +16,8 @@ object MessageCountsResponse {
     __obj.asInstanceOf[MessageCountsResponse]
   }
   
-  extension [Self <: MessageCountsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageCountsResponse] (val x: Self) extends AnyVal {
     
     inline def setChannels(value: StringDictionary[Double]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
   }

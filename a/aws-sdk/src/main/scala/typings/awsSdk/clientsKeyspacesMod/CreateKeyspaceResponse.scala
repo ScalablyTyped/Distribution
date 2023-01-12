@@ -18,7 +18,8 @@ object CreateKeyspaceResponse {
     __obj.asInstanceOf[CreateKeyspaceResponse]
   }
   
-  extension [Self <: CreateKeyspaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyspaceResponse] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }

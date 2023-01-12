@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[ParseElements]
     }
     
-    extension [Self <: ParseElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseElements] (val x: Self) extends AnyVal {
       
       inline def setParseElements(value: js.Tuple3[track, route, waypoint]): Self = StObject.set(x, "parseElements", value.asInstanceOf[js.Any])
     }

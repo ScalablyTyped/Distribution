@@ -59,7 +59,8 @@ object Cardlocale {
     __obj.asInstanceOf[Cardlocale]
   }
   
-  extension [Self <: Cardlocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cardlocale] (val x: Self) extends AnyVal {
     
     inline def setAppfee(value: Double): Self = StObject.set(x, "appfee", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetResolverEndpointResponse {
     __obj.asInstanceOf[GetResolverEndpointResponse]
   }
   
-  extension [Self <: GetResolverEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResolverEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setResolverEndpoint(value: ResolverEndpoint): Self = StObject.set(x, "ResolverEndpoint", value.asInstanceOf[js.Any])
     

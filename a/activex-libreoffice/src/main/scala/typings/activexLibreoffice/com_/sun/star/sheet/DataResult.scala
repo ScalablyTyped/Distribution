@@ -26,7 +26,8 @@ object DataResult {
     __obj.asInstanceOf[DataResult]
   }
   
-  extension [Self <: DataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataResult] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     

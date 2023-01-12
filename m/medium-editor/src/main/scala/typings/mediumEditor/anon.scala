@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Major]
     }
     
-    extension [Self <: Major](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
       
       inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Prop]
     }
     
-    extension [Self <: Prop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prop] (val x: Self) extends AnyVal {
       
       inline def setProp(value: String): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       

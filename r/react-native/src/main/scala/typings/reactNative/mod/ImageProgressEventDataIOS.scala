@@ -17,7 +17,8 @@ object ImageProgressEventDataIOS {
     __obj.asInstanceOf[ImageProgressEventDataIOS]
   }
   
-  extension [Self <: ImageProgressEventDataIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProgressEventDataIOS] (val x: Self) extends AnyVal {
     
     inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ComponentRelation {
     __obj.asInstanceOf[ComponentRelation[D, P]]
   }
   
-  extension [Self <: ComponentRelation[?, ?], D, P](x: Self & (ComponentRelation[D, P])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRelation[?, ?], D, P] (val x: Self & (ComponentRelation[D, P])) extends AnyVal {
     
     inline def setLinkChanged(value: /* target */ Component[D, P, js.Array[Any]] => Unit): Self = StObject.set(x, "linkChanged", js.Any.fromFunction1(value))
     

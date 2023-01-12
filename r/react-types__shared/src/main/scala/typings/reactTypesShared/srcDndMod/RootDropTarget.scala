@@ -20,7 +20,8 @@ object RootDropTarget {
     __obj.asInstanceOf[RootDropTarget]
   }
   
-  extension [Self <: RootDropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootDropTarget] (val x: Self) extends AnyVal {
     
     inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object Size {
     __obj.asInstanceOf[Size]
   }
   
-  extension [Self <: Size](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: typings.vegaLite.buildSrcEncodingMod.Encoding[String]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object Chart3dFrameBottomOptions {
     __obj.asInstanceOf[Chart3dFrameBottomOptions]
   }
   
-  extension [Self <: Chart3dFrameBottomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chart3dFrameBottomOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object LikeOptions {
     __obj.asInstanceOf[LikeOptions]
   }
   
-  extension [Self <: LikeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LikeOptions] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: `18` | `20` | `22` | `24` | `30`): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[Options[F]]
     }
     
-    extension [Self <: Options[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */](x: Self & Options[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] (val x: Self & Options[F]) extends AnyVal {
       
       inline def setFactory(value: F): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[SHACLValidator[F]]
     }
     
-    extension [Self <: SHACLValidator[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */](x: Self & SHACLValidator[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SHACLValidator[?], F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] (val x: Self & SHACLValidator[F]) extends AnyVal {
       
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       

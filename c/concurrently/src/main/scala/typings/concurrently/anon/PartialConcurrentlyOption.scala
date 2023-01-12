@@ -45,7 +45,8 @@ object PartialConcurrentlyOption {
     __obj.asInstanceOf[PartialConcurrentlyOption]
   }
   
-  extension [Self <: PartialConcurrentlyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConcurrentlyOption] (val x: Self) extends AnyVal {
     
     inline def setAdditionalArguments(value: js.Array[String]): Self = StObject.set(x, "additionalArguments", value.asInstanceOf[js.Any])
     

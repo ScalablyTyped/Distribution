@@ -18,7 +18,8 @@ object SensorsWithShortDateRange {
     __obj.asInstanceOf[SensorsWithShortDateRange]
   }
   
-  extension [Self <: SensorsWithShortDateRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SensorsWithShortDateRange] (val x: Self) extends AnyVal {
     
     inline def setAffectedSensorCount(value: Integer): Self = StObject.set(x, "AffectedSensorCount", value.asInstanceOf[js.Any])
   }

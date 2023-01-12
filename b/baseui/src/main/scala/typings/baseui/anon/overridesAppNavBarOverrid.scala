@@ -29,7 +29,8 @@ object overridesAppNavBarOverrid {
     __obj.asInstanceOf[overridesAppNavBarOverrid]
   }
   
-  extension [Self <: overridesAppNavBarOverrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: overridesAppNavBarOverrid] (val x: Self) extends AnyVal {
     
     inline def setOnUserItemSelect(value: /* a */ NavItem => Any): Self = StObject.set(x, "onUserItemSelect", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object MonitorAdvertisement {
     __obj.asInstanceOf[MonitorAdvertisement]
   }
   
-  extension [Self <: MonitorAdvertisement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorAdvertisement] (val x: Self) extends AnyVal {
     
     inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     

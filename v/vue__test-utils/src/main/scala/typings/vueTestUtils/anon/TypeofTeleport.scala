@@ -16,7 +16,8 @@ object TypeofTeleport {
     __obj.asInstanceOf[TypeofTeleport]
   }
   
-  extension [Self <: TypeofTeleport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTeleport] (val x: Self) extends AnyVal {
     
     inline def set__isTeleport(value: `true`): Self = StObject.set(x, "__isTeleport", value.asInstanceOf[js.Any])
   }

@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setBackDelay(value: Double): Self = StObject.set(x, "backDelay", value.asInstanceOf[js.Any])
       

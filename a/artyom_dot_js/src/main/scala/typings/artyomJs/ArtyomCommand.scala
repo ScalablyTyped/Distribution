@@ -21,7 +21,8 @@ object ArtyomCommand {
     __obj.asInstanceOf[ArtyomCommand]
   }
   
-  extension [Self <: ArtyomCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtyomCommand] (val x: Self) extends AnyVal {
     
     inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

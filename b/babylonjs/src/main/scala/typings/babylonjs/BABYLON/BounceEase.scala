@@ -29,7 +29,8 @@ object BounceEase {
     __obj.asInstanceOf[BounceEase]
   }
   
-  extension [Self <: BounceEase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BounceEase] (val x: Self) extends AnyVal {
     
     inline def setBounces(value: Double): Self = StObject.set(x, "bounces", value.asInstanceOf[js.Any])
     

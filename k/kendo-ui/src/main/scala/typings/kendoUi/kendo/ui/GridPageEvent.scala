@@ -17,7 +17,8 @@ object GridPageEvent {
     __obj.asInstanceOf[GridPageEvent]
   }
   
-  extension [Self <: GridPageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPageEvent] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

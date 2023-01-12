@@ -19,7 +19,8 @@ object LabelCut {
     __obj.asInstanceOf[LabelCut]
   }
   
-  extension [Self <: LabelCut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelCut] (val x: Self) extends AnyVal {
     
     inline def setLabelCut(value: String): Self = StObject.set(x, "labelCut", value.asInstanceOf[js.Any])
     

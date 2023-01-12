@@ -28,7 +28,8 @@ object InsightHealth {
     __obj.asInstanceOf[InsightHealth]
   }
   
-  extension [Self <: InsightHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightHealth] (val x: Self) extends AnyVal {
     
     inline def setMeanTimeToRecoverInMilliseconds(value: MeanTimeToRecoverInMilliseconds): Self = StObject.set(x, "MeanTimeToRecoverInMilliseconds", value.asInstanceOf[js.Any])
     

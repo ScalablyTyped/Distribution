@@ -28,7 +28,8 @@ object typesTransportsTypesMod {
       __obj.asInstanceOf[BrowserTransportOptions]
     }
     
-    extension [Self <: BrowserTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
       

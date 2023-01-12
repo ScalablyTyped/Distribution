@@ -28,7 +28,8 @@ object PutImageScanningConfigurationResponse {
     __obj.asInstanceOf[PutImageScanningConfigurationResponse]
   }
   
-  extension [Self <: PutImageScanningConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutImageScanningConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
     

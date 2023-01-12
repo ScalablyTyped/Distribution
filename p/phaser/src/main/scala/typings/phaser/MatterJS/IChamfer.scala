@@ -24,7 +24,8 @@ object IChamfer {
     __obj.asInstanceOf[IChamfer]
   }
   
-  extension [Self <: IChamfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChamfer] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

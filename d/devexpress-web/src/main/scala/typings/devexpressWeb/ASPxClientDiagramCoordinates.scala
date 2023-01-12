@@ -96,7 +96,8 @@ object ASPxClientDiagramCoordinates {
     __obj.asInstanceOf[ASPxClientDiagramCoordinates]
   }
   
-  extension [Self <: ASPxClientDiagramCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramCoordinates] (val x: Self) extends AnyVal {
     
     inline def setArgumentScaleType(value: String): Self = StObject.set(x, "argumentScaleType", value.asInstanceOf[js.Any])
     

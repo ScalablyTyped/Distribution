@@ -18,7 +18,8 @@ object GetOriginAccessControlConfigRequest {
     __obj.asInstanceOf[GetOriginAccessControlConfigRequest]
   }
   
-  extension [Self <: GetOriginAccessControlConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOriginAccessControlConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

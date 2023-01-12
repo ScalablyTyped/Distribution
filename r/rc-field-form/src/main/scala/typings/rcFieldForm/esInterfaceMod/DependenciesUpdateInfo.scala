@@ -26,7 +26,8 @@ object DependenciesUpdateInfo {
     __obj.asInstanceOf[DependenciesUpdateInfo]
   }
   
-  extension [Self <: DependenciesUpdateInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DependenciesUpdateInfo] (val x: Self) extends AnyVal {
     
     inline def setRelatedFields(value: js.Array[InternalNamePath]): Self = StObject.set(x, "relatedFields", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object VoiceCommand {
     __obj.asInstanceOf[VoiceCommand]
   }
   
-  extension [Self <: VoiceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommand] (val x: Self) extends AnyVal {
     
     inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     

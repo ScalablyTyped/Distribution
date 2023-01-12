@@ -20,7 +20,8 @@ object IDownloadFileTask {
     __obj.asInstanceOf[IDownloadFileTask]
   }
   
-  extension [Self <: IDownloadFileTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDownloadFileTask] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: AnyFunction): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

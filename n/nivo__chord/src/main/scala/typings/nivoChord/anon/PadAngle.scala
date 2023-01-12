@@ -15,7 +15,8 @@ object PadAngle {
     __obj.asInstanceOf[PadAngle]
   }
   
-  extension [Self <: PadAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PadAngle] (val x: Self) extends AnyVal {
     
     inline def setPadAngle(value: Double): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
   }

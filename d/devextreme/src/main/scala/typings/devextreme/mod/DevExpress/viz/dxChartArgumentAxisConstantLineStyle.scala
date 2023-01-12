@@ -21,7 +21,8 @@ object dxChartArgumentAxisConstantLineStyle {
     __obj.asInstanceOf[dxChartArgumentAxisConstantLineStyle]
   }
   
-  extension [Self <: dxChartArgumentAxisConstantLineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartArgumentAxisConstantLineStyle] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: dxChartArgumentAxisConstantLineStyleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

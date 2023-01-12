@@ -63,7 +63,8 @@ object DocumentVersionInfo {
     __obj.asInstanceOf[DocumentVersionInfo]
   }
   
-  extension [Self <: DocumentVersionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentVersionInfo] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "CreatedDate", value.asInstanceOf[js.Any])
     

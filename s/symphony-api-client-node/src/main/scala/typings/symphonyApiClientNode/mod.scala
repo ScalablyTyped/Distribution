@@ -475,7 +475,8 @@ object mod {
       __obj.asInstanceOf[AppInfo]
     }
     
-    extension [Self <: AppInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppInfo] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -496,7 +497,8 @@ object mod {
       __obj.asInstanceOf[AuthInfo]
     }
     
-    extension [Self <: AuthInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthInfo] (val x: Self) extends AnyVal {
       
       inline def setKmAuthToken(value: String): Self = StObject.set(x, "kmAuthToken", value.asInstanceOf[js.Any])
       
@@ -587,7 +589,8 @@ object mod {
       __obj.asInstanceOf[SymphonyConfiguration]
     }
     
-    extension [Self <: SymphonyConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SymphonyConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAgentContextPath(value: String): Self = StObject.set(x, "agentContextPath", value.asInstanceOf[js.Any])
       

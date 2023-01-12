@@ -62,7 +62,8 @@ object rsocketserializationMod {
       __obj.asInstanceOf[PayloadSerializers[D, M]]
     }
     
-    extension [Self <: PayloadSerializers[?, ?], D, M](x: Self & (PayloadSerializers[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadSerializers[?, ?], D, M] (val x: Self & (PayloadSerializers[D, M])) extends AnyVal {
       
       inline def setData(value: Serializer[D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

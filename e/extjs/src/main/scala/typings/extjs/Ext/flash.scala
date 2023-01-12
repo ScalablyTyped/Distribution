@@ -56,7 +56,8 @@ object flash {
       __obj.asInstanceOf[typings.extjs.Ext.flash.IComponent]
     }
     
-    extension [Self <: typings.extjs.Ext.flash.IComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.flash.IComponent] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: java.lang.String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

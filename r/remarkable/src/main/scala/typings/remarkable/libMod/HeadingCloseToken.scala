@@ -21,7 +21,8 @@ object HeadingCloseToken {
     __obj.asInstanceOf[HeadingCloseToken]
   }
   
-  extension [Self <: HeadingCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadingCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: heading_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IRequestShortcutConfig]
       }
       
-      extension [Self <: IRequestShortcutConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
         
         inline def setIgnoreLoadingBar(value: Boolean): Self = StObject.set(x, "ignoreLoadingBar", value.asInstanceOf[js.Any])
         
@@ -125,7 +126,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ILoadingBarProvider]
         }
         
-        extension [Self <: ILoadingBarProvider](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ILoadingBarProvider] (val x: Self) extends AnyVal {
           
           inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
           

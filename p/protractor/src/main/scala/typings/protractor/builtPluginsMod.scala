@@ -139,7 +139,8 @@ object builtPluginsMod {
       __obj.asInstanceOf[AssertionResult]
     }
     
-    extension [Self <: AssertionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
       
       inline def setErrorMsg(value: String): Self = StObject.set(x, "errorMsg", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object builtPluginsMod {
       __obj.asInstanceOf[PluginConfig]
     }
     
-    extension [Self <: PluginConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginConfig] (val x: Self) extends AnyVal {
       
       inline def setInline(value: ProtractorPlugin): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -452,7 +454,8 @@ object builtPluginsMod {
       __obj.asInstanceOf[ProtractorPlugin]
     }
     
-    extension [Self <: ProtractorPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtractorPlugin] (val x: Self) extends AnyVal {
       
       inline def setAddFailure(value: (/* message */ js.UndefOr[String], /* info */ js.UndefOr[SpecName]) => Unit): Self = StObject.set(x, "addFailure", js.Any.fromFunction2(value))
       
@@ -529,7 +532,8 @@ object builtPluginsMod {
       __obj.asInstanceOf[SpecResult]
     }
     
-    extension [Self <: SpecResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecResult] (val x: Self) extends AnyVal {
       
       inline def setAssertions(value: js.Array[AssertionResult]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object SonifySeriesOptionsObject {
     __obj.asInstanceOf[SonifySeriesOptionsObject]
   }
   
-  extension [Self <: SonifySeriesOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SonifySeriesOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDataExtremes(value: Dictionary[RangeObject]): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
     

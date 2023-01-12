@@ -15,7 +15,8 @@ object GetCertificateResponse {
     __obj.asInstanceOf[GetCertificateResponse]
   }
   
-  extension [Self <: GetCertificateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCertificateResponse] (val x: Self) extends AnyVal {
     
     inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
     

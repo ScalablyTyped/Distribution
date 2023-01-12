@@ -42,7 +42,8 @@ object WorkflowExecutionDetail {
     __obj.asInstanceOf[WorkflowExecutionDetail]
   }
   
-  extension [Self <: WorkflowExecutionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionDetail] (val x: Self) extends AnyVal {
     
     inline def setExecutionConfiguration(value: WorkflowExecutionConfiguration): Self = StObject.set(x, "executionConfiguration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ScanConditionPair {
     __obj.asInstanceOf[ScanConditionPair]
   }
   
-  extension [Self <: ScanConditionPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanConditionPair] (val x: Self) extends AnyVal {
     
     inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

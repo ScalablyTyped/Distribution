@@ -48,7 +48,8 @@ object AwsNetworkFirewallRuleGroupDetails {
     __obj.asInstanceOf[AwsNetworkFirewallRuleGroupDetails]
   }
   
-  extension [Self <: AwsNetworkFirewallRuleGroupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsNetworkFirewallRuleGroupDetails] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Integer): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

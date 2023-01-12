@@ -38,7 +38,8 @@ object VulnJson {
     __obj.asInstanceOf[VulnJson]
   }
   
-  extension [Self <: VulnJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VulnJson] (val x: Self) extends AnyVal {
     
     inline def setEffects(value: js.Array[String]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object PayPalHostedFieldsComponent {
     __obj.asInstanceOf[PayPalHostedFieldsComponent]
   }
   
-  extension [Self <: PayPalHostedFieldsComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PayPalHostedFieldsComponent] (val x: Self) extends AnyVal {
     
     inline def setIsEligible(value: () => Boolean): Self = StObject.set(x, "isEligible", js.Any.fromFunction0(value))
     

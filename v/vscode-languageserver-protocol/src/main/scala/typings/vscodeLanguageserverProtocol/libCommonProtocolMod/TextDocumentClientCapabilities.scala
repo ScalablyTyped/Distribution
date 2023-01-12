@@ -206,7 +206,8 @@ object TextDocumentClientCapabilities {
     __obj.asInstanceOf[TextDocumentClientCapabilities]
   }
   
-  extension [Self <: TextDocumentClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCallHierarchy(value: CallHierarchyClientCapabilities): Self = StObject.set(x, "callHierarchy", value.asInstanceOf[js.Any])
     

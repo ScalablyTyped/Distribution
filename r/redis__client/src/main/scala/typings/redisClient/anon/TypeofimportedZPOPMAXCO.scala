@@ -26,7 +26,8 @@ object TypeofimportedZPOPMAXCO {
     __obj.asInstanceOf[TypeofimportedZPOPMAXCO]
   }
   
-  extension [Self <: TypeofimportedZPOPMAXCO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedZPOPMAXCO] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchMatMulInputs {
     __obj.asInstanceOf[BatchMatMulInputs]
   }
   
-  extension [Self <: BatchMatMulInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchMatMulInputs] (val x: Self) extends AnyVal {
     
     inline def setA(value: scala.Any): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

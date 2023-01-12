@@ -168,7 +168,8 @@ object libTypescriptFabricUtilsMod {
       __obj.asInstanceOf[ViewProps]
     }
     
-    extension [Self <: ViewProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

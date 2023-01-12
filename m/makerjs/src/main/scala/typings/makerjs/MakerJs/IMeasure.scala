@@ -26,7 +26,8 @@ object IMeasure {
     __obj.asInstanceOf[IMeasure]
   }
   
-  extension [Self <: IMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMeasure] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: IPoint): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

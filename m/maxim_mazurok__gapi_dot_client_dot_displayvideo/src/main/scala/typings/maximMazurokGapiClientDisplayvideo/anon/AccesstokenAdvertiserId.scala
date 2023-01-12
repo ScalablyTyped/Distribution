@@ -56,7 +56,8 @@ object AccesstokenAdvertiserId {
     __obj.asInstanceOf[AccesstokenAdvertiserId]
   }
   
-  extension [Self <: AccesstokenAdvertiserId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccesstokenAdvertiserId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

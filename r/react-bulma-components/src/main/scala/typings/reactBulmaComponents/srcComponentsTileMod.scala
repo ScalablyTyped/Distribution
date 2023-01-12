@@ -43,7 +43,8 @@ object srcComponentsTileMod extends Shortcut {
       __obj.asInstanceOf[TileProps]
     }
     
-    extension [Self <: TileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ancestor | parent | child): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

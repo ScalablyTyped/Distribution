@@ -48,7 +48,8 @@ object appIdstringpathstringunde {
     __obj.asInstanceOf[appIdstringpathstringunde]
   }
   
-  extension [Self <: appIdstringpathstringunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: appIdstringpathstringunde] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

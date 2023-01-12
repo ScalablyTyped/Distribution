@@ -26,7 +26,8 @@ object AttrsResizeNearestNeighborGradAttrs {
     __obj.asInstanceOf[AttrsResizeNearestNeighborGradAttrs]
   }
   
-  extension [Self <: AttrsResizeNearestNeighborGradAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsResizeNearestNeighborGradAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: ResizeNearestNeighborGradAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

@@ -97,7 +97,8 @@ object modifiersRestrictEdgesMod {
       __obj.asInstanceOf[RestrictEdgesOptions]
     }
     
-    extension [Self <: RestrictEdgesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictEdgesOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object modifiersRestrictEdgesMod {
       __obj.asInstanceOf[RestrictEdgesState]
     }
     
-    extension [Self <: RestrictEdgesState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RestrictEdgesState] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object BoothCycle {
     __obj.asInstanceOf[BoothCycle]
   }
   
-  extension [Self <: BoothCycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoothCycle] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

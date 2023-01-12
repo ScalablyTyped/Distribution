@@ -30,7 +30,8 @@ object PointerEvents {
     __obj.asInstanceOf[PointerEvents]
   }
   
-  extension [Self <: PointerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerEvents] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

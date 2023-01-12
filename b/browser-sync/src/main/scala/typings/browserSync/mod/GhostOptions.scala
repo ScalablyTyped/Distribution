@@ -19,7 +19,8 @@ object GhostOptions {
     __obj.asInstanceOf[GhostOptions]
   }
   
-  extension [Self <: GhostOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GhostOptions] (val x: Self) extends AnyVal {
     
     inline def setClicks(value: Boolean): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
     

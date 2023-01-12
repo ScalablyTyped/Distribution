@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[BufferOptions]
     }
     
-    extension [Self <: BufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
       
       inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

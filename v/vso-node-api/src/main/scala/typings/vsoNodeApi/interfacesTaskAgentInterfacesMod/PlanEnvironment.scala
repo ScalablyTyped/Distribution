@@ -24,7 +24,8 @@ object PlanEnvironment {
     __obj.asInstanceOf[PlanEnvironment]
   }
   
-  extension [Self <: PlanEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanEnvironment] (val x: Self) extends AnyVal {
     
     inline def setMask(value: js.Array[MaskHint]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CcrGetAutoFollowPatternResponse {
     __obj.asInstanceOf[CcrGetAutoFollowPatternResponse]
   }
   
-  extension [Self <: CcrGetAutoFollowPatternResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrGetAutoFollowPatternResponse] (val x: Self) extends AnyVal {
     
     inline def setPatterns(value: js.Array[CcrGetAutoFollowPatternAutoFollowPattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
     

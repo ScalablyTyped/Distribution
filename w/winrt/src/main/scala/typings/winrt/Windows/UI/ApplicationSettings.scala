@@ -37,7 +37,8 @@ object ApplicationSettings {
       __obj.asInstanceOf[ISettingsCommandFactory]
     }
     
-    extension [Self <: ISettingsCommandFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsCommandFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (Any, String, UICommandInvokedHandler) => SettingsCommand): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     }
@@ -54,7 +55,8 @@ object ApplicationSettings {
       __obj.asInstanceOf[ISettingsPane]
     }
     
-    extension [Self <: ISettingsPane](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsPane] (val x: Self) extends AnyVal {
       
       inline def setOncommandsrequested(value: Any): Self = StObject.set(x, "oncommandsrequested", value.asInstanceOf[js.Any])
     }
@@ -71,7 +73,8 @@ object ApplicationSettings {
       __obj.asInstanceOf[ISettingsPaneCommandsRequest]
     }
     
-    extension [Self <: ISettingsPaneCommandsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsPaneCommandsRequest] (val x: Self) extends AnyVal {
       
       inline def setApplicationCommands(value: IVector[SettingsCommand]): Self = StObject.set(x, "applicationCommands", value.asInstanceOf[js.Any])
     }
@@ -88,7 +91,8 @@ object ApplicationSettings {
       __obj.asInstanceOf[ISettingsPaneCommandsRequestedEventArgs]
     }
     
-    extension [Self <: ISettingsPaneCommandsRequestedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsPaneCommandsRequestedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: SettingsPaneCommandsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
@@ -109,7 +113,8 @@ object ApplicationSettings {
       __obj.asInstanceOf[ISettingsPaneStatics]
     }
     
-    extension [Self <: ISettingsPaneStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettingsPaneStatics] (val x: Self) extends AnyVal {
       
       inline def setEdge(value: SettingsEdgeLocation): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       

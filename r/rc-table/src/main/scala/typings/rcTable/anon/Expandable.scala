@@ -16,7 +16,8 @@ object Expandable {
     __obj.asInstanceOf[Expandable[RecordType]]
   }
   
-  extension [Self <: Expandable[?], RecordType](x: Self & Expandable[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expandable[?], RecordType] (val x: Self & Expandable[RecordType]) extends AnyVal {
     
     inline def setExpandable(value: ExpandableConfig[RecordType]): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
     

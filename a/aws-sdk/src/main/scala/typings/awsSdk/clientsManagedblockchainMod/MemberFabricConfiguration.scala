@@ -23,7 +23,8 @@ object MemberFabricConfiguration {
     __obj.asInstanceOf[MemberFabricConfiguration]
   }
   
-  extension [Self <: MemberFabricConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberFabricConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdminPassword(value: PasswordString): Self = StObject.set(x, "AdminPassword", value.asInstanceOf[js.Any])
     

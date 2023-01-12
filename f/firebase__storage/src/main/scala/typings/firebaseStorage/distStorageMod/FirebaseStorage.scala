@@ -31,7 +31,8 @@ object FirebaseStorage {
     __obj.asInstanceOf[FirebaseStorage]
   }
   
-  extension [Self <: FirebaseStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirebaseStorage] (val x: Self) extends AnyVal {
     
     inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

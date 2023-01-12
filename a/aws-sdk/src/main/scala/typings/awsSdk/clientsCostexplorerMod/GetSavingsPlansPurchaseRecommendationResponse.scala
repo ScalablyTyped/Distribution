@@ -28,7 +28,8 @@ object GetSavingsPlansPurchaseRecommendationResponse {
     __obj.asInstanceOf[GetSavingsPlansPurchaseRecommendationResponse]
   }
   
-  extension [Self <: GetSavingsPlansPurchaseRecommendationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavingsPlansPurchaseRecommendationResponse] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: SavingsPlansPurchaseRecommendationMetadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     

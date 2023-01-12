@@ -19,7 +19,8 @@ object ResolvedProjectReference {
     __obj.asInstanceOf[ResolvedProjectReference]
   }
   
-  extension [Self <: ResolvedProjectReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedProjectReference] (val x: Self) extends AnyVal {
     
     inline def setCommandLine(value: ParsedCommandLine): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
     

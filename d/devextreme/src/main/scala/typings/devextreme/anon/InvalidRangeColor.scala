@@ -58,7 +58,8 @@ object InvalidRangeColor {
     __obj.asInstanceOf[InvalidRangeColor]
   }
   
-  extension [Self <: InvalidRangeColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidRangeColor] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

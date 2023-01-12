@@ -15,7 +15,8 @@ object BrowserPublic {
     __obj.asInstanceOf[BrowserPublic]
   }
   
-  extension [Self <: BrowserPublic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserPublic] (val x: Self) extends AnyVal {
     
     inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
   }

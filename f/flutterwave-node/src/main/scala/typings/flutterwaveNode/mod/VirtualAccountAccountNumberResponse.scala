@@ -18,7 +18,8 @@ object VirtualAccountAccountNumberResponse {
     __obj.asInstanceOf[VirtualAccountAccountNumberResponse]
   }
   
-  extension [Self <: VirtualAccountAccountNumberResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualAccountAccountNumberResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Accountstatus): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

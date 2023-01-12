@@ -24,7 +24,8 @@ object PermuteLayerArgs {
     __obj.asInstanceOf[PermuteLayerArgs]
   }
   
-  extension [Self <: PermuteLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermuteLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setDims(value: js.Array[Double]): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
     

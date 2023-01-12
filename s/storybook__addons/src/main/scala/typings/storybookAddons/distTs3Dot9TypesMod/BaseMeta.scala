@@ -64,7 +64,8 @@ object BaseMeta {
     __obj.asInstanceOf[BaseMeta[ComponentType]]
   }
   
-  extension [Self <: BaseMeta[?], ComponentType](x: Self & BaseMeta[ComponentType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMeta[?], ComponentType] (val x: Self & BaseMeta[ComponentType]) extends AnyVal {
     
     inline def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

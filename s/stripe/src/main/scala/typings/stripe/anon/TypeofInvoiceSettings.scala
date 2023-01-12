@@ -15,7 +15,8 @@ object TypeofInvoiceSettings {
     __obj.asInstanceOf[TypeofInvoiceSettings]
   }
   
-  extension [Self <: TypeofInvoiceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInvoiceSettings] (val x: Self) extends AnyVal {
     
     inline def setRenderingOptions(value: Any): Self = StObject.set(x, "RenderingOptions", value.asInstanceOf[js.Any])
   }

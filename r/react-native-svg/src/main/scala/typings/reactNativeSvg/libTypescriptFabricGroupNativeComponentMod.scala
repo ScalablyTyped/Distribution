@@ -37,7 +37,8 @@ object libTypescriptFabricGroupNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[ColorStruct]
     }
     
-    extension [Self <: ColorStruct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorStruct] (val x: Self) extends AnyVal {
       
       inline def setBrushRef(value: String): Self = StObject.set(x, "brushRef", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object libTypescriptFabricGroupNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[FontObject]
     }
     
-    extension [Self <: FontObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontObject] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libTypescriptFabricGroupNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgGroupCommonProps]
     }
     
-    extension [Self <: SvgGroupCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgGroupCommonProps] (val x: Self) extends AnyVal {
       
       inline def setFont(value: FontObject): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
@@ -231,7 +234,8 @@ object libTypescriptFabricGroupNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgNodeCommonProps]
     }
     
-    extension [Self <: SvgNodeCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgNodeCommonProps] (val x: Self) extends AnyVal {
       
       inline def setClipPath(value: String): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
       
@@ -324,7 +328,8 @@ object libTypescriptFabricGroupNativeComponentMod extends Shortcut {
       __obj.asInstanceOf[SvgRenderableCommonProps]
     }
     
-    extension [Self <: SvgRenderableCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgRenderableCommonProps] (val x: Self) extends AnyVal {
       
       inline def setFill(value: ColorStruct): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       

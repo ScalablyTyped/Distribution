@@ -16,7 +16,8 @@ object TransportStats {
     __obj.asInstanceOf[TransportStats]
   }
   
-  extension [Self <: TransportStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportStats] (val x: Self) extends AnyVal {
     
     inline def setRtt(value: Double): Self = StObject.set(x, "rtt", value.asInstanceOf[js.Any])
   }

@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[AutocompleteExtraObject]
     }
     
-    extension [Self <: AutocompleteExtraObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteExtraObject] (val x: Self) extends AnyVal {
       
       inline def setPreview(value: String): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[DefinitionObject]
     }
     
-    extension [Self <: DefinitionObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinitionObject] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

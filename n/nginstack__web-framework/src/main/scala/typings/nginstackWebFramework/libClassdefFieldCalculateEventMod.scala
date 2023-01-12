@@ -33,7 +33,8 @@ object libClassdefFieldCalculateEventMod {
       __obj.asInstanceOf[FieldCalculateEvent]
     }
     
-    extension [Self <: FieldCalculateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldCalculateEvent] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

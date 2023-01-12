@@ -31,7 +31,8 @@ object esComponentsSliderTicksMod extends Shortcut {
       __obj.asInstanceOf[TicksProps]
     }
     
-    extension [Self <: TicksProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TicksProps] (val x: Self) extends AnyVal {
       
       inline def setLowerBound(value: Double): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object `9` {
     __obj.asInstanceOf[`9`[BaseToken]]
   }
   
-  extension [Self <: `9`[?], BaseToken](x: Self & `9`[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `9`[?], BaseToken] (val x: Self & `9`[BaseToken]) extends AnyVal {
     
     inline def setBold(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
   }

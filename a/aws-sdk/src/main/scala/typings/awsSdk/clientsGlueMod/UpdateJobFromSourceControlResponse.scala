@@ -18,7 +18,8 @@ object UpdateJobFromSourceControlResponse {
     __obj.asInstanceOf[UpdateJobFromSourceControlResponse]
   }
   
-  extension [Self <: UpdateJobFromSourceControlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJobFromSourceControlResponse] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: NameString): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

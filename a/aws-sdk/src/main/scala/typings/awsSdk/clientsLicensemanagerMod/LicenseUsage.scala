@@ -18,7 +18,8 @@ object LicenseUsage {
     __obj.asInstanceOf[LicenseUsage]
   }
   
-  extension [Self <: LicenseUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseUsage] (val x: Self) extends AnyVal {
     
     inline def setEntitlementUsages(value: EntitlementUsageList): Self = StObject.set(x, "EntitlementUsages", value.asInstanceOf[js.Any])
     

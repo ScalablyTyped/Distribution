@@ -18,7 +18,8 @@ object Visible {
     __obj.asInstanceOf[Visible]
   }
   
-  extension [Self <: Visible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Visible] (val x: Self) extends AnyVal {
     
     inline def setText(value: String | ReactElement): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

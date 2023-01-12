@@ -77,7 +77,8 @@ object typesMockInterceptorMod {
         __obj.asInstanceOf[MockDispatch[TData, TError]]
       }
       
-      extension [Self <: MockDispatch[?, ?], TData /* <: js.Object */, TError /* <: js.Error */](x: Self & (MockDispatch[TData, TError])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockDispatch[?, ?], TData /* <: js.Object */, TError /* <: js.Error */] (val x: Self & (MockDispatch[TData, TError])) extends AnyVal {
         
         inline def setConsumed(value: Boolean): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
         
@@ -108,7 +109,8 @@ object typesMockInterceptorMod {
         __obj.asInstanceOf[MockDispatchData[TData, TError]]
       }
       
-      extension [Self <: MockDispatchData[?, ?], TData /* <: js.Object */, TError /* <: js.Error */](x: Self & (MockDispatchData[TData, TError])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockDispatchData[?, ?], TData /* <: js.Object */, TError /* <: js.Error */] (val x: Self & (MockDispatchData[TData, TError])) extends AnyVal {
         
         inline def setData(value: TData | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -155,7 +157,8 @@ object typesMockInterceptorMod {
         __obj.asInstanceOf[MockResponseCallbackOptions]
       }
       
-      extension [Self <: MockResponseCallbackOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockResponseCallbackOptions] (val x: Self) extends AnyVal {
         
         inline def setBody(value: BodyInit | String | Buffer | js.typedarray.Uint8Array | Readable | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -190,7 +193,8 @@ object typesMockInterceptorMod {
         __obj.asInstanceOf[MockResponseOptions]
       }
       
-      extension [Self <: MockResponseOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MockResponseOptions] (val x: Self) extends AnyVal {
         
         inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
         
@@ -228,7 +232,8 @@ object typesMockInterceptorMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setBody(value: String | js.RegExp | (js.Function1[/* body */ String, Boolean])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         

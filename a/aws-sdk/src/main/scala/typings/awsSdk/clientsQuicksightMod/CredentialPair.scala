@@ -28,7 +28,8 @@ object CredentialPair {
     __obj.asInstanceOf[CredentialPair]
   }
   
-  extension [Self <: CredentialPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialPair] (val x: Self) extends AnyVal {
     
     inline def setAlternateDataSourceParameters(value: DataSourceParametersList): Self = StObject.set(x, "AlternateDataSourceParameters", value.asInstanceOf[js.Any])
     

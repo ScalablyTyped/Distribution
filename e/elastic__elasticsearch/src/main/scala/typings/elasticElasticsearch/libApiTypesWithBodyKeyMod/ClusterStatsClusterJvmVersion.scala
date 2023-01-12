@@ -35,7 +35,8 @@ object ClusterStatsClusterJvmVersion {
     __obj.asInstanceOf[ClusterStatsClusterJvmVersion]
   }
   
-  extension [Self <: ClusterStatsClusterJvmVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterJvmVersion] (val x: Self) extends AnyVal {
     
     inline def setBundled_jdk(value: Boolean): Self = StObject.set(x, "bundled_jdk", value.asInstanceOf[js.Any])
     

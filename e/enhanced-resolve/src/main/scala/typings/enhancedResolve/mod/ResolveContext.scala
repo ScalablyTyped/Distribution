@@ -44,7 +44,8 @@ object ResolveContext {
     __obj.asInstanceOf[ResolveContext]
   }
   
-  extension [Self <: ResolveContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveContext] (val x: Self) extends AnyVal {
     
     inline def setContextDependencies(value: WriteOnlySet[String]): Self = StObject.set(x, "contextDependencies", value.asInstanceOf[js.Any])
     

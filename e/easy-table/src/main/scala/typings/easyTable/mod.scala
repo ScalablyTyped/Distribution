@@ -136,7 +136,8 @@ object mod {
       __obj.asInstanceOf[Aggregators]
     }
     
-    extension [Self <: Aggregators](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aggregators] (val x: Self) extends AnyVal {
       
       inline def setAvg(value: Any): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod {
       __obj.asInstanceOf[ColumnFormat[T]]
     }
     
-    extension [Self <: ColumnFormat[?], T](x: Self & ColumnFormat[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnFormat[?], T] (val x: Self & ColumnFormat[T]) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -297,7 +299,8 @@ object mod {
       __obj.asInstanceOf[PrintColumnOptions[T]]
     }
     
-    extension [Self <: PrintColumnOptions[?], T](x: Self & PrintColumnOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintColumnOptions[?], T] (val x: Self & PrintColumnOptions[T]) extends AnyVal {
       
       inline def setNamePrinter(value: (T, /* width */ Double) => String): Self = StObject.set(x, "namePrinter", js.Any.fromFunction2(value))
       
@@ -337,7 +340,8 @@ object mod {
       __obj.asInstanceOf[TotalOptions[T]]
     }
     
-    extension [Self <: TotalOptions[?], T](x: Self & TotalOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TotalOptions[?], T] (val x: Self & TotalOptions[T]) extends AnyVal {
       
       inline def setInit(value: T): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       

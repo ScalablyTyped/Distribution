@@ -18,7 +18,8 @@ object TestTypeOutput {
     __obj.asInstanceOf[TestTypeOutput]
   }
   
-  extension [Self <: TestTypeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestTypeOutput] (val x: Self) extends AnyVal {
     
     inline def setTypeVersionArn(value: TypeArn): Self = StObject.set(x, "TypeVersionArn", value.asInstanceOf[js.Any])
     

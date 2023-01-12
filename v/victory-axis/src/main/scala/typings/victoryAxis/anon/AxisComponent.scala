@@ -45,7 +45,8 @@ object AxisComponent {
     __obj.asInstanceOf[AxisComponent]
   }
   
-  extension [Self <: AxisComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisComponent] (val x: Self) extends AnyVal {
     
     inline def setAxisComponent(value: Element): Self = StObject.set(x, "axisComponent", value.asInstanceOf[js.Any])
     

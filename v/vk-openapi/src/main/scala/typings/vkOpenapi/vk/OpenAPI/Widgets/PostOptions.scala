@@ -15,7 +15,8 @@ object PostOptions {
     __obj.asInstanceOf[PostOptions]
   }
   
-  extension [Self <: PostOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostOptions] (val x: Self) extends AnyVal {
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

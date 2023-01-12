@@ -23,7 +23,8 @@ object CloudWatchEncryption {
     __obj.asInstanceOf[CloudWatchEncryption]
   }
   
-  extension [Self <: CloudWatchEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchEncryption] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchEncryptionMode(value: CloudWatchEncryptionMode): Self = StObject.set(x, "CloudWatchEncryptionMode", value.asInstanceOf[js.Any])
     

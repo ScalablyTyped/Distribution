@@ -19,7 +19,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuildWarning {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuildWarning]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildWarning] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

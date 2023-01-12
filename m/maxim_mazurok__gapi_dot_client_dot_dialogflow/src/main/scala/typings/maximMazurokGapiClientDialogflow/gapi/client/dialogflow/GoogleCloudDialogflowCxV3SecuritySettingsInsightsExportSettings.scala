@@ -16,7 +16,8 @@ object GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3SecuritySettingsInsightsExportSettings] (val x: Self) extends AnyVal {
     
     inline def setEnableInsightsExport(value: Boolean): Self = StObject.set(x, "enableInsightsExport", value.asInstanceOf[js.Any])
     

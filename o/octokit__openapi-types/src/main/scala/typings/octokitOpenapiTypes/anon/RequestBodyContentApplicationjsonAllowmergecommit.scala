@@ -17,7 +17,8 @@ object RequestBodyContentApplicationjsonAllowmergecommit {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAllowmergecommit]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAllowmergecommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAllowmergecommit] (val x: Self) extends AnyVal {
     
     inline def setRequestBody(value: ContentApplicationjsonAllowmergecommit): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

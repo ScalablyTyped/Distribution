@@ -17,7 +17,8 @@ object HotspotAuthenticationEventDetails {
     __obj.asInstanceOf[HotspotAuthenticationEventDetails]
   }
   
-  extension [Self <: HotspotAuthenticationEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotspotAuthenticationEventDetails] (val x: Self) extends AnyVal {
     
     inline def setEventToken(value: String): Self = StObject.set(x, "eventToken", value.asInstanceOf[js.Any])
   }

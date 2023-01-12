@@ -33,7 +33,8 @@ object OnBehalfOfCredentialSecretOptions {
     __obj.asInstanceOf[OnBehalfOfCredentialSecretOptions]
   }
   
-  extension [Self <: OnBehalfOfCredentialSecretOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBehalfOfCredentialSecretOptions] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DataTablePageParams {
     __obj.asInstanceOf[DataTablePageParams]
   }
   
-  extension [Self <: DataTablePageParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTablePageParams] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

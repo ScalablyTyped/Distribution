@@ -23,7 +23,8 @@ object ListsInstance {
     __obj.asInstanceOf[ListsInstance]
   }
   
-  extension [Self <: ListsInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListsInstance] (val x: Self) extends AnyVal {
     
     inline def setGetSelectedThreadRowViews(value: () => js.Array[ThreadRowView]): Self = StObject.set(x, "getSelectedThreadRowViews", js.Any.fromFunction0(value))
     

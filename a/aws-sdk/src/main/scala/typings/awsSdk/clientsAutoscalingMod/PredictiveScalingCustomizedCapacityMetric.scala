@@ -18,7 +18,8 @@ object PredictiveScalingCustomizedCapacityMetric {
     __obj.asInstanceOf[PredictiveScalingCustomizedCapacityMetric]
   }
   
-  extension [Self <: PredictiveScalingCustomizedCapacityMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictiveScalingCustomizedCapacityMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricDataQueries(value: MetricDataQueries): Self = StObject.set(x, "MetricDataQueries", value.asInstanceOf[js.Any])
     

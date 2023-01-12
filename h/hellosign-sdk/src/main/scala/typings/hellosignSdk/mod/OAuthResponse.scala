@@ -18,7 +18,8 @@ object OAuthResponse {
     __obj.asInstanceOf[OAuthResponse]
   }
   
-  extension [Self <: OAuthResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthResponse] (val x: Self) extends AnyVal {
     
     inline def setOauth(value: OAuth): Self = StObject.set(x, "oauth", value.asInstanceOf[js.Any])
   }

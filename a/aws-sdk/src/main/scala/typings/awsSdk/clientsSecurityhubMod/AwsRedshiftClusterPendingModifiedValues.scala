@@ -68,7 +68,8 @@ object AwsRedshiftClusterPendingModifiedValues {
     __obj.asInstanceOf[AwsRedshiftClusterPendingModifiedValues]
   }
   
-  extension [Self <: AwsRedshiftClusterPendingModifiedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRedshiftClusterPendingModifiedValues] (val x: Self) extends AnyVal {
     
     inline def setAutomatedSnapshotRetentionPeriod(value: Integer): Self = StObject.set(x, "AutomatedSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     

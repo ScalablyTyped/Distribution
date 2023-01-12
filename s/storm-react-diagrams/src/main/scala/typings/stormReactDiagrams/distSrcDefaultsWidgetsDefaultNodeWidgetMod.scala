@@ -34,7 +34,8 @@ object distSrcDefaultsWidgetsDefaultNodeWidgetMod {
       __obj.asInstanceOf[DefaultNodeProps]
     }
     
-    extension [Self <: DefaultNodeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultNodeProps] (val x: Self) extends AnyVal {
       
       inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       

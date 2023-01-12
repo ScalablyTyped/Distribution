@@ -24,7 +24,8 @@ object GetCollectionParams {
     __obj.asInstanceOf[GetCollectionParams]
   }
   
-  extension [Self <: GetCollectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCollectionParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

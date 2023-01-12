@@ -18,7 +18,8 @@ object CreateTopicResponse {
     __obj.asInstanceOf[CreateTopicResponse]
   }
   
-  extension [Self <: CreateTopicResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTopicResponse] (val x: Self) extends AnyVal {
     
     inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
     

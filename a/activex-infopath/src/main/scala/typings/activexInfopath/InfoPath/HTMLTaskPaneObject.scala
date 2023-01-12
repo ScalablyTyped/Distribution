@@ -38,7 +38,8 @@ object HTMLTaskPaneObject {
     __obj.asInstanceOf[HTMLTaskPaneObject]
   }
   
-  extension [Self <: HTMLTaskPaneObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLTaskPaneObject] (val x: Self) extends AnyVal {
     
     inline def setHTMLDocument(value: IHTMLDocument2): Self = StObject.set(x, "HTMLDocument", value.asInstanceOf[js.Any])
     

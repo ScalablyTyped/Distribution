@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: js.Array[
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ErrorObjectstringRecordst]
     }
     
-    extension [Self <: ErrorObjectstringRecordst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObjectstringRecordst] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

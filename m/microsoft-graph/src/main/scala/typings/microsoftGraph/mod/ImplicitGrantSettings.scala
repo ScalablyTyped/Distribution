@@ -19,7 +19,8 @@ object ImplicitGrantSettings {
     __obj.asInstanceOf[ImplicitGrantSettings]
   }
   
-  extension [Self <: ImplicitGrantSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplicitGrantSettings] (val x: Self) extends AnyVal {
     
     inline def setEnableAccessTokenIssuance(value: NullableOption[Boolean]): Self = StObject.set(x, "enableAccessTokenIssuance", value.asInstanceOf[js.Any])
     

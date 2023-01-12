@@ -35,7 +35,8 @@ object AudioFileConfig {
     __obj.asInstanceOf[AudioFileConfig]
   }
   
-  extension [Self <: AudioFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioFileConfig] (val x: Self) extends AnyVal {
     
     inline def setContext(value: AudioContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

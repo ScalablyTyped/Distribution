@@ -17,7 +17,8 @@ object EdgeGestureEventArgs {
     __obj.asInstanceOf[EdgeGestureEventArgs]
   }
   
-  extension [Self <: EdgeGestureEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeGestureEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: EdgeGestureKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

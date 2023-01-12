@@ -49,7 +49,8 @@ object libDescriptionsMod {
       __obj.asInstanceOf[DescriptionsContextProps]
     }
     
-    extension [Self <: DescriptionsContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptionsContextProps] (val x: Self) extends AnyVal {
       
       inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libDescriptionsMod {
       __obj.asInstanceOf[DescriptionsProps]
     }
     
-    extension [Self <: DescriptionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptionsProps] (val x: Self) extends AnyVal {
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object LocalStoreOptions {
     __obj.asInstanceOf[LocalStoreOptions[TItem, TKey]]
   }
   
-  extension [Self <: LocalStoreOptions[?, ?], TItem, TKey](x: Self & (LocalStoreOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalStoreOptions[?, ?], TItem, TKey] (val x: Self & (LocalStoreOptions[TItem, TKey])) extends AnyVal {
     
     inline def setFlushInterval(value: Double): Self = StObject.set(x, "flushInterval", value.asInstanceOf[js.Any])
     

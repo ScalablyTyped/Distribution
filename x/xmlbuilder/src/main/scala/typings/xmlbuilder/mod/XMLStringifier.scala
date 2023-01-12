@@ -155,7 +155,8 @@ object XMLStringifier {
     __obj.asInstanceOf[XMLStringifier]
   }
   
-  extension [Self <: XMLStringifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLStringifier] (val x: Self) extends AnyVal {
     
     inline def setAttEscape(value: /* v */ String => String): Self = StObject.set(x, "attEscape", js.Any.fromFunction1(value))
     

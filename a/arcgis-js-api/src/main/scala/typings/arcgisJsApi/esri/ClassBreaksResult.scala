@@ -46,7 +46,8 @@ object ClassBreaksResult {
     __obj.asInstanceOf[ClassBreaksResult]
   }
   
-  extension [Self <: ClassBreaksResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassBreaksResult] (val x: Self) extends AnyVal {
     
     inline def setClassBreakInfos(value: js.Array[ClassBreak]): Self = StObject.set(x, "classBreakInfos", value.asInstanceOf[js.Any])
     

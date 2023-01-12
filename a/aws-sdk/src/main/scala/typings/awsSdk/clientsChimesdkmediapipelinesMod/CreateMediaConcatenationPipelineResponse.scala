@@ -18,7 +18,8 @@ object CreateMediaConcatenationPipelineResponse {
     __obj.asInstanceOf[CreateMediaConcatenationPipelineResponse]
   }
   
-  extension [Self <: CreateMediaConcatenationPipelineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMediaConcatenationPipelineResponse] (val x: Self) extends AnyVal {
     
     inline def setMediaConcatenationPipeline(value: MediaConcatenationPipeline): Self = StObject.set(x, "MediaConcatenationPipeline", value.asInstanceOf[js.Any])
     

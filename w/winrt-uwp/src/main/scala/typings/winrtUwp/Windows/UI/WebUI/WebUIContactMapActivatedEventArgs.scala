@@ -48,7 +48,8 @@ object WebUIContactMapActivatedEventArgs {
     __obj.asInstanceOf[WebUIContactMapActivatedEventArgs]
   }
   
-  extension [Self <: WebUIContactMapActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIContactMapActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

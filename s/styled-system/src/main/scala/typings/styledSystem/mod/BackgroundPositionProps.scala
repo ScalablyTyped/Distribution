@@ -21,7 +21,8 @@ object BackgroundPositionProps {
     __obj.asInstanceOf[BackgroundPositionProps[ThemeType, TVal]]
   }
   
-  extension [Self <: BackgroundPositionProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (BackgroundPositionProps[ThemeType, TVal])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundPositionProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BackgroundPositionProps[ThemeType, TVal])) extends AnyVal {
     
     inline def setBackgroundPosition(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     

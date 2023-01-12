@@ -435,7 +435,8 @@ object mod {
       __obj.asInstanceOf[EditorSettings]
     }
     
-    extension [Self <: EditorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
       
@@ -520,7 +521,8 @@ object mod {
       __obj.asInstanceOf[MetaboxDescriptor]
     }
     
-    extension [Self <: MetaboxDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaboxDescriptor] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

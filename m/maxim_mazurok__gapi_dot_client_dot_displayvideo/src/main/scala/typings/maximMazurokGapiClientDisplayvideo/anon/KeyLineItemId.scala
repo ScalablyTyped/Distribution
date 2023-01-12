@@ -61,7 +61,8 @@ object KeyLineItemId {
     __obj.asInstanceOf[KeyLineItemId]
   }
   
-  extension [Self <: KeyLineItemId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyLineItemId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

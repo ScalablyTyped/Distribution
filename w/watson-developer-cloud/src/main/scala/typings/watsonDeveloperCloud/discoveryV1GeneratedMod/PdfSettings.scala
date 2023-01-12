@@ -16,7 +16,8 @@ object PdfSettings {
     __obj.asInstanceOf[PdfSettings]
   }
   
-  extension [Self <: PdfSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PdfSettings] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: PdfHeadingDetection): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

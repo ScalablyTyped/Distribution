@@ -42,7 +42,8 @@ object internalExpandTransitionMod {
       __obj.asInstanceOf[ExpandTransitionProps]
     }
     
-    extension [Self <: ExpandTransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandTransitionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

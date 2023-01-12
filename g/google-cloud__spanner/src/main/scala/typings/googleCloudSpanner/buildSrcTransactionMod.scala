@@ -1433,7 +1433,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[BatchUpdateError]
     }
     
-    extension [Self <: BatchUpdateError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchUpdateError] (val x: Self) extends AnyVal {
       
       inline def setRowCounts(value: js.Array[Double]): Self = StObject.set(x, "rowCounts", value.asInstanceOf[js.Any])
       
@@ -1459,7 +1460,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[BatchUpdateOptions]
     }
     
-    extension [Self <: BatchUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1508,7 +1510,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[CommitOptions]
     }
     
-    extension [Self <: CommitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1563,7 +1566,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[ExecuteSqlRequest]
     }
     
-    extension [Self <: ExecuteSqlRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecuteSqlRequest] (val x: Self) extends AnyVal {
       
       inline def setPartitionToken(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "partitionToken", value.asInstanceOf[js.Any])
       
@@ -1617,7 +1621,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[KeyRange]
     }
     
-    extension [Self <: KeyRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
       
       inline def setEndClosed(value: js.Array[Value]): Self = StObject.set(x, "endClosed", value.asInstanceOf[js.Any])
       
@@ -1687,7 +1692,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[ReadRequest]
     }
     
-    extension [Self <: ReadRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadRequest] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -1775,7 +1781,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1832,7 +1839,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[Statement]
     }
     
-    extension [Self <: Statement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[Value]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -1875,7 +1883,8 @@ object buildSrcTransactionMod {
       __obj.asInstanceOf[TimestampBounds]
     }
     
-    extension [Self <: TimestampBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimestampBounds] (val x: Self) extends AnyVal {
       
       inline def setExactStaleness(
         value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.protobuf.IDuration */ Any)

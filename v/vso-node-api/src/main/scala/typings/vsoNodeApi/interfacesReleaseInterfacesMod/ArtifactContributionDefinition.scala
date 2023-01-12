@@ -46,7 +46,8 @@ object ArtifactContributionDefinition {
     __obj.asInstanceOf[ArtifactContributionDefinition]
   }
   
-  extension [Self <: ArtifactContributionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactContributionDefinition] (val x: Self) extends AnyVal {
     
     inline def setArtifactType(value: String): Self = StObject.set(x, "artifactType", value.asInstanceOf[js.Any])
     

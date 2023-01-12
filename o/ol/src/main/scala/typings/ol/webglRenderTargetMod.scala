@@ -111,7 +111,8 @@ object webglRenderTargetMod {
       __obj.asInstanceOf[WebGLRenderTarget]
     }
     
-    extension [Self <: WebGLRenderTarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLRenderTarget] (val x: Self) extends AnyVal {
       
       inline def setClearCachedData(value: () => Unit): Self = StObject.set(x, "clearCachedData", js.Any.fromFunction0(value))
       

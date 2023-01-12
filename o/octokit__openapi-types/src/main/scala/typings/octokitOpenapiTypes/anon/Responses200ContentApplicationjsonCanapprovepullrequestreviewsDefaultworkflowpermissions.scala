@@ -20,7 +20,8 @@ object Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultwork
     __obj.asInstanceOf[Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathEnterpriseString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

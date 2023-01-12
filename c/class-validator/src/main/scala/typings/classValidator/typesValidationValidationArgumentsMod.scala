@@ -41,7 +41,8 @@ object typesValidationValidationArgumentsMod {
       __obj.asInstanceOf[ValidationArguments]
     }
     
-    extension [Self <: ValidationArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationArguments] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: js.Array[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       

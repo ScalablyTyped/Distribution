@@ -33,7 +33,8 @@ object DragStatus {
     __obj.asInstanceOf[DragStatus]
   }
   
-  extension [Self <: DragStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragStatus] (val x: Self) extends AnyVal {
     
     inline def setDragStatus(value: stopped | ready | dragging): Self = StObject.set(x, "dragStatus", value.asInstanceOf[js.Any])
     

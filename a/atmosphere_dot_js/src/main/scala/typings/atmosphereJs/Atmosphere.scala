@@ -33,7 +33,8 @@ object Atmosphere {
       __obj.asInstanceOf[typings.atmosphereJs.Atmosphere.Atmosphere]
     }
     
-    extension [Self <: typings.atmosphereJs.Atmosphere.Atmosphere](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.atmosphereJs.Atmosphere.Atmosphere] (val x: Self) extends AnyVal {
       
       inline def setAtmosphereRequest(value: AtmosphereRequest): Self = StObject.set(x, "AtmosphereRequest", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object Atmosphere {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -478,7 +480,8 @@ object Atmosphere {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setClosedByClientTimeout(value: Boolean): Self = StObject.set(x, "closedByClientTimeout", value.asInstanceOf[js.Any])
       

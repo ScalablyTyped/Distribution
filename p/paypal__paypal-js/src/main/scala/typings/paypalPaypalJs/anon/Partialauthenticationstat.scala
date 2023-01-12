@@ -27,7 +27,8 @@ object Partialauthenticationstat {
     __obj.asInstanceOf[Partialauthenticationstat]
   }
   
-  extension [Self <: Partialauthenticationstat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialauthenticationstat] (val x: Self) extends AnyVal {
     
     inline def setAuthentication_status(value: Y | N | U | A | C | R | D | I): Self = StObject.set(x, "authentication_status", value.asInstanceOf[js.Any])
     

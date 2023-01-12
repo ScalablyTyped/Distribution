@@ -30,7 +30,8 @@ object GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateReques
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesRequestListUpdateRequestConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

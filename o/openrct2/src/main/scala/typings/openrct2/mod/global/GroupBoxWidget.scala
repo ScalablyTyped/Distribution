@@ -20,7 +20,8 @@ object GroupBoxWidget {
     __obj.asInstanceOf[GroupBoxWidget]
   }
   
-  extension [Self <: GroupBoxWidget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupBoxWidget] (val x: Self) extends AnyVal {
     
     inline def setType(value: groupbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

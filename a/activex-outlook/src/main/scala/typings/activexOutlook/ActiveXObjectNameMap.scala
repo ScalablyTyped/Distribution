@@ -134,7 +134,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setDOCSITEDotDocSiteControl(value: DocSiteControl): Self = StObject.set(x, "DOCSITE.DocSiteControl", value.asInstanceOf[js.Any])
     

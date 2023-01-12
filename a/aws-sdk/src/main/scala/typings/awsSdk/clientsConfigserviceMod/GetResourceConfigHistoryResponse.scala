@@ -23,7 +23,8 @@ object GetResourceConfigHistoryResponse {
     __obj.asInstanceOf[GetResourceConfigHistoryResponse]
   }
   
-  extension [Self <: GetResourceConfigHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceConfigHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setConfigurationItems(value: ConfigurationItemList): Self = StObject.set(x, "configurationItems", value.asInstanceOf[js.Any])
     

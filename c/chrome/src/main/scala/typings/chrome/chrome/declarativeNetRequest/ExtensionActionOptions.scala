@@ -21,7 +21,8 @@ object ExtensionActionOptions {
     __obj.asInstanceOf[ExtensionActionOptions]
   }
   
-  extension [Self <: ExtensionActionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionActionOptions] (val x: Self) extends AnyVal {
     
     inline def setDisplayActionCountAsBadgeText(value: Boolean): Self = StObject.set(x, "displayActionCountAsBadgeText", value.asInstanceOf[js.Any])
     

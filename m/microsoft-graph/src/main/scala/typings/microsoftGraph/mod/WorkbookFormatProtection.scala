@@ -27,7 +27,8 @@ object WorkbookFormatProtection {
     __obj.asInstanceOf[WorkbookFormatProtection]
   }
   
-  extension [Self <: WorkbookFormatProtection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookFormatProtection] (val x: Self) extends AnyVal {
     
     inline def setFormulaHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "formulaHidden", value.asInstanceOf[js.Any])
     

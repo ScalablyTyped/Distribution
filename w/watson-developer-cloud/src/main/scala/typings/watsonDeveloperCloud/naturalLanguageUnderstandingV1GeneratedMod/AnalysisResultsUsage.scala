@@ -23,7 +23,8 @@ object AnalysisResultsUsage {
     __obj.asInstanceOf[AnalysisResultsUsage]
   }
   
-  extension [Self <: AnalysisResultsUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisResultsUsage] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: Double): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     

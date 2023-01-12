@@ -18,7 +18,8 @@ object AudioChannelTaggingSettings {
     __obj.asInstanceOf[AudioChannelTaggingSettings]
   }
   
-  extension [Self <: AudioChannelTaggingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioChannelTaggingSettings] (val x: Self) extends AnyVal {
     
     inline def setChannelTag(value: AudioChannelTag): Self = StObject.set(x, "ChannelTag", value.asInstanceOf[js.Any])
     

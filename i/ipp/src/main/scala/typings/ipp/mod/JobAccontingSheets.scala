@@ -23,7 +23,8 @@ object JobAccontingSheets {
     __obj.asInstanceOf[JobAccontingSheets]
   }
   
-  extension [Self <: JobAccontingSheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobAccontingSheets] (val x: Self) extends AnyVal {
     
     inline def `setJob-accounting-output-bin`(value: OutputBin): Self = StObject.set(x, "job-accounting-output-bin", value.asInstanceOf[js.Any])
     

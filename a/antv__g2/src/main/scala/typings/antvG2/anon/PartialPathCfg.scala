@@ -67,7 +67,8 @@ object PartialPathCfg {
     __obj.asInstanceOf[PartialPathCfg]
   }
   
-  extension [Self <: PartialPathCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPathCfg] (val x: Self) extends AnyVal {
     
     inline def setColumnWidthRatio(value: Double): Self = StObject.set(x, "columnWidthRatio", value.asInstanceOf[js.Any])
     

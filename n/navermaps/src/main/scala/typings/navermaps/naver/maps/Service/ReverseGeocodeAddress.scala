@@ -17,7 +17,8 @@ object ReverseGeocodeAddress {
     __obj.asInstanceOf[ReverseGeocodeAddress]
   }
   
-  extension [Self <: ReverseGeocodeAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseGeocodeAddress] (val x: Self) extends AnyVal {
     
     inline def setJibunAddress(value: String): Self = StObject.set(x, "jibunAddress", value.asInstanceOf[js.Any])
     

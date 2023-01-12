@@ -555,7 +555,8 @@ object PartialSelectPropsAbout {
     __obj.asInstanceOf[PartialSelectPropsAbout]
   }
   
-  extension [Self <: PartialSelectPropsAbout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSelectPropsAbout] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

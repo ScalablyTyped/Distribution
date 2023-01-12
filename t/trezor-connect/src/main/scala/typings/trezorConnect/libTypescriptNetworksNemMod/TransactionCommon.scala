@@ -23,7 +23,8 @@ object TransactionCommon {
     __obj.asInstanceOf[TransactionCommon]
   }
   
-  extension [Self <: TransactionCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionCommon] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: Double): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
     

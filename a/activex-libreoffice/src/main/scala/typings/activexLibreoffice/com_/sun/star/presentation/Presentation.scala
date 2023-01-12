@@ -101,7 +101,8 @@ object Presentation {
     __obj.asInstanceOf[Presentation]
   }
   
-  extension [Self <: Presentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Presentation] (val x: Self) extends AnyVal {
     
     inline def setAllowAnimations(value: Boolean): Self = StObject.set(x, "AllowAnimations", value.asInstanceOf[js.Any])
     

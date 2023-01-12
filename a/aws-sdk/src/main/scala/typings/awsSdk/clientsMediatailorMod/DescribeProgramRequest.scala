@@ -23,7 +23,8 @@ object DescribeProgramRequest {
     __obj.asInstanceOf[DescribeProgramRequest]
   }
   
-  extension [Self <: DescribeProgramRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProgramRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelName(value: _String): Self = StObject.set(x, "ChannelName", value.asInstanceOf[js.Any])
     

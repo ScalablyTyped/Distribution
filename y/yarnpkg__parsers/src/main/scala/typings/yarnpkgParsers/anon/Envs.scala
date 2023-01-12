@@ -21,7 +21,8 @@ object Envs {
     __obj.asInstanceOf[Envs]
   }
   
-  extension [Self <: Envs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envs] (val x: Self) extends AnyVal {
     
     inline def setEnvs(value: js.Array[EnvSegment]): Self = StObject.set(x, "envs", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSceneRequest {
     __obj.asInstanceOf[GetSceneRequest]
   }
   
-  extension [Self <: GetSceneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSceneRequest] (val x: Self) extends AnyVal {
     
     inline def setSceneId(value: Id): Self = StObject.set(x, "sceneId", value.asInstanceOf[js.Any])
     

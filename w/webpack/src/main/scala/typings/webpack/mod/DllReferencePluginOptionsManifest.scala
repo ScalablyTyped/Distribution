@@ -47,7 +47,8 @@ object DllReferencePluginOptionsManifest {
     __obj.asInstanceOf[DllReferencePluginOptionsManifest]
   }
   
-  extension [Self <: DllReferencePluginOptionsManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DllReferencePluginOptionsManifest] (val x: Self) extends AnyVal {
     
     inline def setContent(value: DllReferencePluginOptionsContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

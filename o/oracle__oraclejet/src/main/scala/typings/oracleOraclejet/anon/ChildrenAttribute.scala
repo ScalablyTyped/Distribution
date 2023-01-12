@@ -27,7 +27,8 @@ object ChildrenAttribute {
     __obj.asInstanceOf[ChildrenAttribute[D]]
   }
   
-  extension [Self <: ChildrenAttribute[?], D](x: Self & ChildrenAttribute[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenAttribute[?], D] (val x: Self & ChildrenAttribute[D]) extends AnyVal {
     
     inline def setChildrenAttribute(value: String): Self = StObject.set(x, "childrenAttribute", value.asInstanceOf[js.Any])
     

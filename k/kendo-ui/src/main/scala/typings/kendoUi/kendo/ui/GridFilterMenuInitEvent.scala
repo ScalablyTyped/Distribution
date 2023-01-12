@@ -20,7 +20,8 @@ object GridFilterMenuInitEvent {
     __obj.asInstanceOf[GridFilterMenuInitEvent]
   }
   
-  extension [Self <: GridFilterMenuInitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFilterMenuInitEvent] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

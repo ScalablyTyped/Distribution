@@ -18,7 +18,8 @@ object GoogleActionsV2UiElementsTableCardCell {
     __obj.asInstanceOf[GoogleActionsV2UiElementsTableCardCell]
   }
   
-  extension [Self <: GoogleActionsV2UiElementsTableCardCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2UiElementsTableCardCell] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

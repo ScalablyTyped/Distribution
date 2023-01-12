@@ -19,7 +19,8 @@ object IndexTablespace {
     __obj.asInstanceOf[IndexTablespace]
   }
   
-  extension [Self <: IndexTablespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexTablespace] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

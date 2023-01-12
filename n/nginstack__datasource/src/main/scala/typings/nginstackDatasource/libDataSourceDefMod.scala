@@ -102,7 +102,8 @@ object libDataSourceDefMod {
       __obj.asInstanceOf[DataSourceDef]
     }
     
-    extension [Self <: DataSourceDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataSourceDef] (val x: Self) extends AnyVal {
       
       inline def setAutoPurgeUnsolicitedColumns(value: Any): Self = StObject.set(x, "autoPurgeUnsolicitedColumns", value.asInstanceOf[js.Any])
       

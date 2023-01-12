@@ -74,7 +74,8 @@ object srcConversionUpcastdispatcherMod {
       __obj.asInstanceOf[UpcastConversionData[T]]
     }
     
-    extension [Self <: UpcastConversionData[?], T /* <: ViewItem */](x: Self & UpcastConversionData[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpcastConversionData[?], T /* <: ViewItem */] (val x: Self & UpcastConversionData[T]) extends AnyVal {
       
       inline def setModelCursor(value: typings.ckeditorCkeditor5Engine.srcModelPositionMod.default): Self = StObject.set(x, "modelCursor", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object srcConversionUpcastdispatcherMod {
       __obj.asInstanceOf[UpcastEventDataTypes]
     }
     
-    extension [Self <: UpcastEventDataTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpcastEventDataTypes] (val x: Self) extends AnyVal {
       
       inline def setDocumentFragment(value: UpcastConversionData[typings.ckeditorCkeditor5Engine.srcViewDocumentfragmentMod.default]): Self = StObject.set(x, "documentFragment", value.asInstanceOf[js.Any])
       

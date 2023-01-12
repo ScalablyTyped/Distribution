@@ -19,7 +19,8 @@ object FacilitatorDetails {
     __obj.asInstanceOf[FacilitatorDetails]
   }
   
-  extension [Self <: FacilitatorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacilitatorDetails] (val x: Self) extends AnyVal {
     
     inline def setOauthApplicationClientId(value: String): Self = StObject.set(x, "oauthApplicationClientId", value.asInstanceOf[js.Any])
     

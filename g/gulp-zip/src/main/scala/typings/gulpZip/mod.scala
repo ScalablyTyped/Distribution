@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[GulpZipOptions]
     }
     
-    extension [Self <: GulpZipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpZipOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       

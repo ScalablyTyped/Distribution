@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[ApiNamespace]
     }
     
-    extension [Self <: ApiNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApiNamespace] (val x: Self) extends AnyVal {
       
       inline def setApiNamespace(value: String): Self = StObject.set(x, "apiNamespace", value.asInstanceOf[js.Any])
       

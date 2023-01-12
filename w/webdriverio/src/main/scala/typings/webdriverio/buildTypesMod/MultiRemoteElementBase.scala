@@ -22,7 +22,8 @@ object MultiRemoteElementBase {
     __obj.asInstanceOf[MultiRemoteElementBase]
   }
   
-  extension [Self <: MultiRemoteElementBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteElementBase] (val x: Self) extends AnyVal {
     
     inline def setAddCommand(value: js.Function): Self = StObject.set(x, "addCommand", value.asInstanceOf[js.Any])
     

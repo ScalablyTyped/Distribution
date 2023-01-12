@@ -19,7 +19,8 @@ object AlignItemsHeight {
     __obj.asInstanceOf[AlignItemsHeight]
   }
   
-  extension [Self <: AlignItemsHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignItemsHeight] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: String): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

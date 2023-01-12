@@ -71,7 +71,8 @@ object distComponentsTypesDateMod {
       __obj.asInstanceOf[DateTypeState]
     }
     
-    extension [Self <: DateTypeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTypeState] (val x: Self) extends AnyVal {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       

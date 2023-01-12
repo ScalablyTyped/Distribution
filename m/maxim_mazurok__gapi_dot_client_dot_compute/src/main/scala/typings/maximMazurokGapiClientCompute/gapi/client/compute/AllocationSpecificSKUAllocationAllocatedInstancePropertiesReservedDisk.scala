@@ -22,7 +22,8 @@ object AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk {
     __obj.asInstanceOf[AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]
   }
   
-  extension [Self <: AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk] (val x: Self) extends AnyVal {
     
     inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     

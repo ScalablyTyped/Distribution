@@ -22,7 +22,8 @@ object RoutineReference {
     __obj.asInstanceOf[RoutineReference]
   }
   
-  extension [Self <: RoutineReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutineReference] (val x: Self) extends AnyVal {
     
     inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     

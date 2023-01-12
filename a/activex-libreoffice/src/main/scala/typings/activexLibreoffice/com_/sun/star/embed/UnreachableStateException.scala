@@ -24,7 +24,8 @@ object UnreachableStateException {
     __obj.asInstanceOf[UnreachableStateException]
   }
   
-  extension [Self <: UnreachableStateException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnreachableStateException] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: Double): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
     

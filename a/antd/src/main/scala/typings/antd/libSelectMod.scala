@@ -363,7 +363,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[InternalSelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: InternalSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (InternalSelectProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] (val x: Self & (InternalSelectProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -906,7 +907,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[LabeledValue]
     }
     
-    extension [Self <: LabeledValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabeledValue] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -1188,7 +1190,8 @@ object libSelectMod extends Shortcut {
       __obj.asInstanceOf[SelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: SelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (SelectProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] (val x: Self & (SelectProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

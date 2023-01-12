@@ -19,7 +19,8 @@ object Barcode {
     __obj.asInstanceOf[Barcode]
   }
   
-  extension [Self <: Barcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Barcode] (val x: Self) extends AnyVal {
     
     inline def setBlockCompletion(value: Boolean): Self = StObject.set(x, "blockCompletion", value.asInstanceOf[js.Any])
     

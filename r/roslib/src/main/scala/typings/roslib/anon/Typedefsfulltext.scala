@@ -23,7 +23,8 @@ object Typedefsfulltext {
     __obj.asInstanceOf[Typedefsfulltext]
   }
   
-  extension [Self <: Typedefsfulltext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typedefsfulltext] (val x: Self) extends AnyVal {
     
     inline def setTopics(value: js.Array[java.lang.String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

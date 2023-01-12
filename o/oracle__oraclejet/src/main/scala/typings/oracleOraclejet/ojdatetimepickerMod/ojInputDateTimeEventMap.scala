@@ -205,7 +205,8 @@ object ojInputDateTimeEventMap {
     __obj.asInstanceOf[ojInputDateTimeEventMap[SP]]
   }
   
-  extension [Self <: ojInputDateTimeEventMap[?], SP /* <: ojInputDateTimeSettableProperties */](x: Self & ojInputDateTimeEventMap[SP]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojInputDateTimeEventMap[?], SP /* <: ojInputDateTimeSettableProperties */] (val x: Self & ojInputDateTimeEventMap[SP]) extends AnyVal {
     
     inline def setOjAnimateEnd(value: ojAnimateEnd): Self = StObject.set(x, "ojAnimateEnd", value.asInstanceOf[js.Any])
     

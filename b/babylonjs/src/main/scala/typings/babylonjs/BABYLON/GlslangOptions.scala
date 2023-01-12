@@ -28,7 +28,8 @@ object GlslangOptions {
     __obj.asInstanceOf[GlslangOptions]
   }
   
-  extension [Self <: GlslangOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlslangOptions] (val x: Self) extends AnyVal {
     
     inline def setGlslang(value: Any): Self = StObject.set(x, "glslang", value.asInstanceOf[js.Any])
     

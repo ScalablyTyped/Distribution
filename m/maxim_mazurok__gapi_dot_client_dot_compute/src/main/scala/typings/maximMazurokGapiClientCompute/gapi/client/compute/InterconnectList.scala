@@ -35,7 +35,8 @@ object InterconnectList {
     __obj.asInstanceOf[InterconnectList]
   }
   
-  extension [Self <: InterconnectList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

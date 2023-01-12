@@ -26,7 +26,8 @@ object autoIdtruebasePathstringd {
     __obj.asInstanceOf[autoIdtruebasePathstringd]
   }
   
-  extension [Self <: autoIdtruebasePathstringd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: autoIdtruebasePathstringd] (val x: Self) extends AnyVal {
     
     inline def setAutoId(value: `true`): Self = StObject.set(x, "autoId", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PerpageQ {
     __obj.asInstanceOf[PerpageQ]
   }
   
-  extension [Self <: PerpageQ](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageQ] (val x: Self) extends AnyVal {
     
     inline def setOrder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['order'] */ js.Any

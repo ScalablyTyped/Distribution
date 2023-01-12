@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[LineByLine]
     }
     
-    extension [Self <: LineByLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineByLine] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setNewLineCharacter(value: String): Self = StObject.set(x, "newLineCharacter", value.asInstanceOf[js.Any])
       

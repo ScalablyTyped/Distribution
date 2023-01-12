@@ -38,7 +38,8 @@ object CreatePortalRequest {
     __obj.asInstanceOf[CreatePortalRequest]
   }
   
-  extension [Self <: CreatePortalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePortalRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalEncryptionContext(value: EncryptionContextMap): Self = StObject.set(x, "additionalEncryptionContext", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DbTargetDocument {
     __obj.asInstanceOf[DbTargetDocument]
   }
   
-  extension [Self <: DbTargetDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbTargetDocument] (val x: Self) extends AnyVal {
     
     inline def setPath(value: EncodedResourcePath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

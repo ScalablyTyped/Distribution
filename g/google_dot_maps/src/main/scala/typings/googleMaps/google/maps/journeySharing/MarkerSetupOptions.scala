@@ -23,7 +23,8 @@ object MarkerSetupOptions {
     __obj.asInstanceOf[MarkerSetupOptions]
   }
   
-  extension [Self <: MarkerSetupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerSetupOptions] (val x: Self) extends AnyVal {
     
     inline def setMarkerOptions(value: MarkerOptions): Self = StObject.set(x, "markerOptions", value.asInstanceOf[js.Any])
     

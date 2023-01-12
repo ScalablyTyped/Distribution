@@ -48,7 +48,8 @@ object XRecordableDispatch {
     __obj.asInstanceOf[XRecordableDispatch]
   }
   
-  extension [Self <: XRecordableDispatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRecordableDispatch] (val x: Self) extends AnyVal {
     
     inline def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatchRecorder) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
   }

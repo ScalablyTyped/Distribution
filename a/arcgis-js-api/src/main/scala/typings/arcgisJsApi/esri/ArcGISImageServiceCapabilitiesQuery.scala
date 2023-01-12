@@ -62,7 +62,8 @@ object ArcGISImageServiceCapabilitiesQuery {
     __obj.asInstanceOf[ArcGISImageServiceCapabilitiesQuery]
   }
   
-  extension [Self <: ArcGISImageServiceCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISImageServiceCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setMaxRecordCount(value: Boolean): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     

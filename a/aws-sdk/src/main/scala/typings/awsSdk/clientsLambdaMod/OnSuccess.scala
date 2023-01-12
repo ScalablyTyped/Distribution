@@ -18,7 +18,8 @@ object OnSuccess {
     __obj.asInstanceOf[OnSuccess]
   }
   
-  extension [Self <: OnSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnSuccess] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: DestinationArn): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

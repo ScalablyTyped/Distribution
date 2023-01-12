@@ -78,7 +78,8 @@ object ModifyDBClusterMessage {
     __obj.asInstanceOf[ModifyDBClusterMessage]
   }
   
-  extension [Self <: ModifyDBClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     

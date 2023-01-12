@@ -28,7 +28,8 @@ object InsertTableColumnsRequest {
     __obj.asInstanceOf[InsertTableColumnsRequest]
   }
   
-  extension [Self <: InsertTableColumnsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableColumnsRequest] (val x: Self) extends AnyVal {
     
     inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     

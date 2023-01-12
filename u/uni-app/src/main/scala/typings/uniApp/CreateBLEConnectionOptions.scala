@@ -38,7 +38,8 @@ object CreateBLEConnectionOptions {
     __obj.asInstanceOf[CreateBLEConnectionOptions]
   }
   
-  extension [Self <: CreateBLEConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBLEConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

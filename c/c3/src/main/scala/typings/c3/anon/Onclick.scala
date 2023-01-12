@@ -37,7 +37,8 @@ object Onclick {
     __obj.asInstanceOf[Onclick]
   }
   
-  extension [Self <: Onclick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Onclick] (val x: Self) extends AnyVal {
     
     inline def setOnclick(value: js.ThisFunction1[/* this */ ChartInternal, /* id */ String, Unit]): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     

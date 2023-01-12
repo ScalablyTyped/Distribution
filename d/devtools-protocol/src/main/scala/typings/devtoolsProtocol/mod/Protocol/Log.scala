@@ -49,7 +49,8 @@ object Log {
       __obj.asInstanceOf[EntryAddedEvent]
     }
     
-    extension [Self <: EntryAddedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryAddedEvent] (val x: Self) extends AnyVal {
       
       inline def setEntry(value: LogEntry): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     }
@@ -124,7 +125,8 @@ object Log {
       __obj.asInstanceOf[LogEntry]
     }
     
-    extension [Self <: LogEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntry] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[RemoteObject]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object Log {
       __obj.asInstanceOf[StartViolationsReportRequest]
     }
     
-    extension [Self <: StartViolationsReportRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartViolationsReportRequest] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: js.Array[ViolationSetting]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object Log {
       __obj.asInstanceOf[ViolationSetting]
     }
     
-    extension [Self <: ViolationSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolationSetting] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: longTask | longLayout | blockedEvent | blockedParser | discouragedAPIUse | handler | recurringHandler

@@ -42,7 +42,8 @@ object gapi {
           __obj.asInstanceOf[DatabaseInstance]
         }
         
-        extension [Self <: DatabaseInstance](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DatabaseInstance] (val x: Self) extends AnyVal {
           
           inline def setDatabaseUrl(value: String): Self = StObject.set(x, "databaseUrl", value.asInstanceOf[js.Any])
           
@@ -137,7 +138,8 @@ object gapi {
           __obj.asInstanceOf[ListDatabaseInstancesResponse]
         }
         
-        extension [Self <: ListDatabaseInstancesResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListDatabaseInstancesResponse] (val x: Self) extends AnyVal {
           
           inline def setInstances(value: js.Array[DatabaseInstance]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
           
@@ -162,7 +164,8 @@ object gapi {
           __obj.asInstanceOf[LocationsResource]
         }
         
-        extension [Self <: LocationsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
           
           inline def setInstances(value: InstancesResource): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
         }
@@ -179,7 +182,8 @@ object gapi {
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        extension [Self <: ProjectsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
           
           inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         }

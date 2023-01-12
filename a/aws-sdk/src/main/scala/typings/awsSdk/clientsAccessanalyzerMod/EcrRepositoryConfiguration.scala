@@ -18,7 +18,8 @@ object EcrRepositoryConfiguration {
     __obj.asInstanceOf[EcrRepositoryConfiguration]
   }
   
-  extension [Self <: EcrRepositoryConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcrRepositoryConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRepositoryPolicy(value: EcrRepositoryPolicy): Self = StObject.set(x, "repositoryPolicy", value.asInstanceOf[js.Any])
     

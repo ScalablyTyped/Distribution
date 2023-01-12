@@ -238,7 +238,8 @@ object libCommonTextSynchronizationMod {
       __obj.asInstanceOf[ResolvedTextDocumentSyncCapabilities]
     }
     
-    extension [Self <: ResolvedTextDocumentSyncCapabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedTextDocumentSyncCapabilities] (val x: Self) extends AnyVal {
       
       inline def setResolvedTextDocumentSync(value: TextDocumentSyncOptions): Self = StObject.set(x, "resolvedTextDocumentSync", value.asInstanceOf[js.Any])
       
@@ -267,7 +268,8 @@ object libCommonTextSynchronizationMod {
       __obj.asInstanceOf[TextDocumentSynchronizationMiddleware]
     }
     
-    extension [Self <: TextDocumentSynchronizationMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDocumentSynchronizationMiddleware] (val x: Self) extends AnyVal {
       
       inline def setDidChange(value: NextSignature[TextDocumentChangeEvent, js.Promise[Unit]]): Self = StObject.set(x, "didChange", value.asInstanceOf[js.Any])
       

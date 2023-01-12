@@ -77,7 +77,8 @@ object FilterSet {
     __obj.asInstanceOf[FilterSet]
   }
   
-  extension [Self <: FilterSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterSet] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteDateRange(value: AbsoluteDateRange): Self = StObject.set(x, "absoluteDateRange", value.asInstanceOf[js.Any])
     

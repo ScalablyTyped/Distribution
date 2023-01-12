@@ -22,7 +22,8 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   
-  extension [Self <: ValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object StepOptionAuth {
     __obj.asInstanceOf[StepOptionAuth]
   }
   
-  extension [Self <: StepOptionAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionAuth] (val x: Self) extends AnyVal {
     
     inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object EntityFormPageContext {
     __obj.asInstanceOf[EntityFormPageContext]
   }
   
-  extension [Self <: EntityFormPageContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityFormPageContext] (val x: Self) extends AnyVal {
     
     inline def setCreateFromEntity(value: LookupValue): Self = StObject.set(x, "createFromEntity", value.asInstanceOf[js.Any])
     

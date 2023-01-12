@@ -30,7 +30,8 @@ object GridViewSelectionEventArgs {
     __obj.asInstanceOf[GridViewSelectionEventArgs]
   }
   
-  extension [Self <: GridViewSelectionEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridViewSelectionEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
     

@@ -112,7 +112,8 @@ object libContainerMod {
       __obj.asInstanceOf[ContainerConfig]
     }
     
-    extension [Self <: ContainerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerConfig] (val x: Self) extends AnyVal {
       
       inline def setClearBeforeDraw(value: Boolean): Self = StObject.set(x, "clearBeforeDraw", value.asInstanceOf[js.Any])
       

@@ -190,7 +190,8 @@ object global {
       __obj.asInstanceOf[JQuery[TElement]]
     }
     
-    extension [Self <: JQuery[?], TElement](x: Self & JQuery[TElement]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JQuery[?], TElement] (val x: Self & JQuery[TElement]) extends AnyVal {
       
       inline def setEditableList(value: WidgetEditableList): Self = StObject.set(x, "editableList", value.asInstanceOf[js.Any])
       

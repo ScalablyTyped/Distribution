@@ -31,7 +31,8 @@ object SceneViewConstraintsTiltProperties {
     __obj.asInstanceOf[SceneViewConstraintsTiltProperties]
   }
   
-  extension [Self <: SceneViewConstraintsTiltProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewConstraintsTiltProperties] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

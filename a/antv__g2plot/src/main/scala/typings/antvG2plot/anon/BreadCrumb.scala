@@ -17,7 +17,8 @@ object BreadCrumb {
     __obj.asInstanceOf[BreadCrumb]
   }
   
-  extension [Self <: BreadCrumb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadCrumb] (val x: Self) extends AnyVal {
     
     inline def setBreadCrumb(value: DividerText): Self = StObject.set(x, "breadCrumb", value.asInstanceOf[js.Any])
     

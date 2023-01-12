@@ -23,7 +23,8 @@ object PlayerLatencyPolicy {
     __obj.asInstanceOf[PlayerLatencyPolicy]
   }
   
-  extension [Self <: PlayerLatencyPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerLatencyPolicy] (val x: Self) extends AnyVal {
     
     inline def setMaximumIndividualPlayerLatencyMilliseconds(value: WholeNumber): Self = StObject.set(x, "MaximumIndividualPlayerLatencyMilliseconds", value.asInstanceOf[js.Any])
     

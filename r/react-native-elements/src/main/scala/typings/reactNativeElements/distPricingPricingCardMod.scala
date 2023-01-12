@@ -48,7 +48,8 @@ object distPricingPricingCardMod {
       __obj.asInstanceOf[ButtonInformation]
     }
     
-    extension [Self <: ButtonInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonInformation] (val x: Self) extends AnyVal {
       
       inline def setButtonStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distPricingPricingCardMod {
       __obj.asInstanceOf[PricingCardProps]
     }
     
-    extension [Self <: PricingCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PricingCardProps] (val x: Self) extends AnyVal {
       
       inline def setButton(value: ButtonProps | ButtonInformation): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

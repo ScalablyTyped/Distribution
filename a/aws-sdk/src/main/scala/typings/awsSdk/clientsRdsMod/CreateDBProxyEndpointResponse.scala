@@ -18,7 +18,8 @@ object CreateDBProxyEndpointResponse {
     __obj.asInstanceOf[CreateDBProxyEndpointResponse]
   }
   
-  extension [Self <: CreateDBProxyEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDBProxyEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setDBProxyEndpoint(value: DBProxyEndpoint): Self = StObject.set(x, "DBProxyEndpoint", value.asInstanceOf[js.Any])
     

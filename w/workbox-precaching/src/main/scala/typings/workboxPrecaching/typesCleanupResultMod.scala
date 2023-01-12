@@ -17,7 +17,8 @@ object typesCleanupResultMod {
       __obj.asInstanceOf[CleanupResult]
     }
     
-    extension [Self <: CleanupResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleanupResult] (val x: Self) extends AnyVal {
       
       inline def setDeletedCacheRequests(value: js.Array[String]): Self = StObject.set(x, "deletedCacheRequests", value.asInstanceOf[js.Any])
       

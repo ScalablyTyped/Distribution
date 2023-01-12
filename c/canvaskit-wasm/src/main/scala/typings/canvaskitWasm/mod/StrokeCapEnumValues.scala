@@ -21,7 +21,8 @@ object StrokeCapEnumValues {
     __obj.asInstanceOf[StrokeCapEnumValues]
   }
   
-  extension [Self <: StrokeCapEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrokeCapEnumValues] (val x: Self) extends AnyVal {
     
     inline def setButt(value: StrokeCap): Self = StObject.set(x, "Butt", value.asInstanceOf[js.Any])
     

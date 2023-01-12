@@ -47,7 +47,8 @@ object ATVPlayerMetricsData {
     __obj.asInstanceOf[ATVPlayerMetricsData]
   }
   
-  extension [Self <: ATVPlayerMetricsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVPlayerMetricsData] (val x: Self) extends AnyVal {
     
     inline def setFeatureDuration(value: Double): Self = StObject.set(x, "featureDuration", value.asInstanceOf[js.Any])
     

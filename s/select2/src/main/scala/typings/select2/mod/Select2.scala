@@ -47,7 +47,8 @@ object Select2 {
     __obj.asInstanceOf[Select2]
   }
   
-  extension [Self <: Select2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Select2] (val x: Self) extends AnyVal {
     
     inline def set$container(value: JQuery[HTMLElement]): Self = StObject.set(x, "$container", value.asInstanceOf[js.Any])
     

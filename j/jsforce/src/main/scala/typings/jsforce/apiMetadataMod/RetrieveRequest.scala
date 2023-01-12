@@ -23,7 +23,8 @@ object RetrieveRequest {
     __obj.asInstanceOf[RetrieveRequest]
   }
   
-  extension [Self <: RetrieveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveRequest] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

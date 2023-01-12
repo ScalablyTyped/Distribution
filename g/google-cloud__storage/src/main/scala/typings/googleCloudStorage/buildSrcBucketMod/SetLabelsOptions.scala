@@ -18,7 +18,8 @@ object SetLabelsOptions {
     __obj.asInstanceOf[SetLabelsOptions]
   }
   
-  extension [Self <: SetLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     

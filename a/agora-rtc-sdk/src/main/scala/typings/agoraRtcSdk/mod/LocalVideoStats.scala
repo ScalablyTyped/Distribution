@@ -59,7 +59,8 @@ object LocalVideoStats {
     __obj.asInstanceOf[LocalVideoStats]
   }
   
-  extension [Self <: LocalVideoStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalVideoStats] (val x: Self) extends AnyVal {
     
     inline def setCaptureFrameRate(value: String): Self = StObject.set(x, "CaptureFrameRate", value.asInstanceOf[js.Any])
     

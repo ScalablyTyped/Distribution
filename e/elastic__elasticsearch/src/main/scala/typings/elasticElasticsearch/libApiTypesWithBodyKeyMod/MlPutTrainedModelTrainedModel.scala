@@ -19,7 +19,8 @@ object MlPutTrainedModelTrainedModel {
     __obj.asInstanceOf[MlPutTrainedModelTrainedModel]
   }
   
-  extension [Self <: MlPutTrainedModelTrainedModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPutTrainedModelTrainedModel] (val x: Self) extends AnyVal {
     
     inline def setEnsemble(value: MlPutTrainedModelEnsemble): Self = StObject.set(x, "ensemble", value.asInstanceOf[js.Any])
     

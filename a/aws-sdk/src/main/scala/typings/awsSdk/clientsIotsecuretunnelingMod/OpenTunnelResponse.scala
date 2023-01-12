@@ -33,7 +33,8 @@ object OpenTunnelResponse {
     __obj.asInstanceOf[OpenTunnelResponse]
   }
   
-  extension [Self <: OpenTunnelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenTunnelResponse] (val x: Self) extends AnyVal {
     
     inline def setDestinationAccessToken(value: ClientAccessToken): Self = StObject.set(x, "destinationAccessToken", value.asInstanceOf[js.Any])
     

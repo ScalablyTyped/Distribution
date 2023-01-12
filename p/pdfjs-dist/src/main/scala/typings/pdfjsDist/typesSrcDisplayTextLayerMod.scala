@@ -143,7 +143,8 @@ object typesSrcDisplayTextLayerMod {
       __obj.asInstanceOf[TextLayerRenderParameters]
     }
     
-    extension [Self <: TextLayerRenderParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextLayerRenderParameters] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: DocumentFragment | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

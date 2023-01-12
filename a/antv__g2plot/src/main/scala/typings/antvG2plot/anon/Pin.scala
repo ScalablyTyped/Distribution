@@ -17,7 +17,8 @@ object Pin {
     __obj.asInstanceOf[Pin]
   }
   
-  extension [Self <: Pin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pin] (val x: Self) extends AnyVal {
     
     inline def setPin(value: StyleR): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     

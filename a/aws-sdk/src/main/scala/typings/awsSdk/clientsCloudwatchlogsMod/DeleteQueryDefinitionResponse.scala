@@ -18,7 +18,8 @@ object DeleteQueryDefinitionResponse {
     __obj.asInstanceOf[DeleteQueryDefinitionResponse]
   }
   
-  extension [Self <: DeleteQueryDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueryDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Success): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

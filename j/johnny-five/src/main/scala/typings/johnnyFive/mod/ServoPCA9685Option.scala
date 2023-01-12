@@ -17,7 +17,8 @@ object ServoPCA9685Option {
     __obj.asInstanceOf[ServoPCA9685Option]
   }
   
-  extension [Self <: ServoPCA9685Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServoPCA9685Option] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

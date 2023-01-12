@@ -15,7 +15,8 @@ object PlotTreemapClusterStatesOptions {
     __obj.asInstanceOf[PlotTreemapClusterStatesOptions]
   }
   
-  extension [Self <: PlotTreemapClusterStatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreemapClusterStatesOptions] (val x: Self) extends AnyVal {
     
     inline def setHover(value: PlotTreemapClusterStatesHoverOptions): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     

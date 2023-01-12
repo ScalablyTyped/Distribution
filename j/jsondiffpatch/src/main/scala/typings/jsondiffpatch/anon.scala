@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[DetectMove]
     }
     
-    extension [Self <: DetectMove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectMove] (val x: Self) extends AnyVal {
       
       inline def setDetectMove(value: Boolean): Self = StObject.set(x, "detectMove", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Diff]
     }
     
-    extension [Self <: Diff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
       
       inline def setDiff(value: Pipe[DiffContext]): Self = StObject.set(x, "diff", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[MinLength]
     }
     
-    extension [Self <: MinLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinLength] (val x: Self) extends AnyVal {
       
       inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     }

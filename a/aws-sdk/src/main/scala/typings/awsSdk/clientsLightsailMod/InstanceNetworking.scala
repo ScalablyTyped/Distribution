@@ -23,7 +23,8 @@ object InstanceNetworking {
     __obj.asInstanceOf[InstanceNetworking]
   }
   
-  extension [Self <: InstanceNetworking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceNetworking] (val x: Self) extends AnyVal {
     
     inline def setMonthlyTransfer(value: MonthlyTransfer): Self = StObject.set(x, "monthlyTransfer", value.asInstanceOf[js.Any])
     

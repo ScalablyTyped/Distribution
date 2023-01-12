@@ -36,7 +36,8 @@ object IRowEditor {
     __obj.asInstanceOf[IRowEditor]
   }
   
-  extension [Self <: IRowEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRowEditor] (val x: Self) extends AnyVal {
     
     inline def setGetRefItems(value: () => Unit): Self = StObject.set(x, "getRefItems", js.Any.fromFunction0(value))
     

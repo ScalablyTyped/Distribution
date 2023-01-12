@@ -17,7 +17,8 @@ object SupportInfo {
     __obj.asInstanceOf[SupportInfo]
   }
   
-  extension [Self <: SupportInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportInfo] (val x: Self) extends AnyVal {
     
     inline def setLanguages(value: js.Array[SupportLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     

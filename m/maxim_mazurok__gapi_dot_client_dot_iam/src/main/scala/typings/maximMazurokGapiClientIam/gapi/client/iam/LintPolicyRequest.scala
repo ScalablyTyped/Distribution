@@ -23,7 +23,8 @@ object LintPolicyRequest {
     __obj.asInstanceOf[LintPolicyRequest]
   }
   
-  extension [Self <: LintPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LintPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -155,7 +155,8 @@ object OptionsBottomTab {
     __obj.asInstanceOf[OptionsBottomTab]
   }
   
-  extension [Self <: OptionsBottomTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsBottomTab] (val x: Self) extends AnyVal {
     
     inline def setAnimateBadge(value: Boolean): Self = StObject.set(x, "animateBadge", value.asInstanceOf[js.Any])
     

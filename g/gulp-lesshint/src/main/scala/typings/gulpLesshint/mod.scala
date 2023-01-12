@@ -36,7 +36,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[LessHintFile]
       }
       
-      extension [Self <: LessHintFile](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LessHintFile] (val x: Self) extends AnyVal {
         
         inline def setLesshint(value: ResultCount): Self = StObject.set(x, "lesshint", value.asInstanceOf[js.Any])
       }
@@ -55,7 +56,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
         

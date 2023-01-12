@@ -34,7 +34,8 @@ object IpOwner {
     __obj.asInstanceOf[IpOwner]
   }
   
-  extension [Self <: IpOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpOwner] (val x: Self) extends AnyVal {
     
     inline def setAsn(value: string): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     

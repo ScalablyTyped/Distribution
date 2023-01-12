@@ -38,7 +38,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setChangeWidth(value: Boolean): Self = StObject.set(x, "changeWidth", value.asInstanceOf[js.Any])
       

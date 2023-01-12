@@ -105,7 +105,8 @@ object libEsmComponentsBreadcrumbsBreadcrumbsMod {
       __obj.asInstanceOf[IBreadcrumbsProps]
     }
     
-    extension [Self <: IBreadcrumbsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBreadcrumbsProps] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
       

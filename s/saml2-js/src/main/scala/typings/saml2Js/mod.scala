@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[AuthnContextClassRef]
     }
     
-    extension [Self <: AuthnContextClassRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthnContextClassRef] (val x: Self) extends AnyVal {
       
       inline def setClass_refs(value: js.Array[String]): Self = StObject.set(x, "class_refs", value.asInstanceOf[js.Any])
       
@@ -116,7 +117,8 @@ object mod {
       __obj.asInstanceOf[CreateLoginRequestUrlOptions]
     }
     
-    extension [Self <: CreateLoginRequestUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateLoginRequestUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth_context(value: AuthnContextClassRef): Self = StObject.set(x, "auth_context", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[CreateLogoutRequestUrlOptions]
     }
     
-    extension [Self <: CreateLogoutRequestUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateLogoutRequestUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_unencrypted_assertion(value: Boolean): Self = StObject.set(x, "allow_unencrypted_assertion", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object mod {
       __obj.asInstanceOf[CreateLogoutResponseUrlOptions]
     }
     
-    extension [Self <: CreateLogoutResponseUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateLogoutResponseUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setIn_response_to(value: String): Self = StObject.set(x, "in_response_to", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object mod {
       __obj.asInstanceOf[IdentityProviderOptions]
     }
     
-    extension [Self <: IdentityProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_unencrypted_assertion(value: Boolean): Self = StObject.set(x, "allow_unencrypted_assertion", value.asInstanceOf[js.Any])
       
@@ -296,7 +301,8 @@ object mod {
       __obj.asInstanceOf[PostAssertOptions]
     }
     
-    extension [Self <: PostAssertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostAssertOptions] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String | js.RegExp): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -326,7 +332,8 @@ object mod {
       __obj.asInstanceOf[RedirectAssertOptions]
     }
     
-    extension [Self <: RedirectAssertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectAssertOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_unencrypted_assertion(value: Boolean): Self = StObject.set(x, "allow_unencrypted_assertion", value.asInstanceOf[js.Any])
       
@@ -356,7 +363,8 @@ object mod {
       __obj.asInstanceOf[SAMLAssertResponse]
     }
     
-    extension [Self <: SAMLAssertResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAMLAssertResponse] (val x: Self) extends AnyVal {
       
       inline def setResponse_header(value: Destination): Self = StObject.set(x, "response_header", value.asInstanceOf[js.Any])
       
@@ -420,7 +428,8 @@ object mod {
       __obj.asInstanceOf[ServiceProviderOptions]
     }
     
-    extension [Self <: ServiceProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow_unencrypted_assertion(value: Boolean): Self = StObject.set(x, "allow_unencrypted_assertion", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapbox__geo-viewport"
-version := "0.4-dt-20211202Z-497e4e"
+version := "0.4-dt-20211202Z-a93284"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

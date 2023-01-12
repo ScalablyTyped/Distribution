@@ -34,7 +34,8 @@ object ValueMatcher {
     __obj.asInstanceOf[ValueMatcher]
   }
   
-  extension [Self <: ValueMatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueMatcher] (val x: Self) extends AnyVal {
     
     inline def setBoolMatch(value: Boolean): Self = StObject.set(x, "boolMatch", value.asInstanceOf[js.Any])
     

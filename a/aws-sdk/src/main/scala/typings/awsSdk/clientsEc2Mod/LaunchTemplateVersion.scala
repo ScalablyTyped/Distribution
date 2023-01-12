@@ -53,7 +53,8 @@ object LaunchTemplateVersion {
     __obj.asInstanceOf[LaunchTemplateVersion]
   }
   
-  extension [Self <: LaunchTemplateVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateVersion] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

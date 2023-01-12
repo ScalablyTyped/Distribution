@@ -42,7 +42,8 @@ object MessengerOptions {
     __obj.asInstanceOf[MessengerOptions]
   }
   
-  extension [Self <: MessengerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessengerOptions] (val x: Self) extends AnyVal {
     
     inline def setExtraClasses(value: String): Self = StObject.set(x, "extraClasses", value.asInstanceOf[js.Any])
     

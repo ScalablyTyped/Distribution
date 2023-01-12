@@ -29,7 +29,8 @@ object Factory {
     __obj.asInstanceOf[Factory]
   }
   
-  extension [Self <: Factory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
     
     inline def setAddPathMapping(value: (String, Any) => Any): Self = StObject.set(x, "addPathMapping", js.Any.fromFunction2(value))
     

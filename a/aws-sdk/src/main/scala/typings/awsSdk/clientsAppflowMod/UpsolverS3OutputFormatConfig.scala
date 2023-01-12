@@ -22,7 +22,8 @@ object UpsolverS3OutputFormatConfig {
     __obj.asInstanceOf[UpsolverS3OutputFormatConfig]
   }
   
-  extension [Self <: UpsolverS3OutputFormatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsolverS3OutputFormatConfig] (val x: Self) extends AnyVal {
     
     inline def setAggregationConfig(value: AggregationConfig): Self = StObject.set(x, "aggregationConfig", value.asInstanceOf[js.Any])
     

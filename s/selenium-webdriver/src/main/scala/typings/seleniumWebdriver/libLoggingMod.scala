@@ -389,7 +389,8 @@ object libLoggingMod {
       __obj.asInstanceOf[IEntryJSON]
     }
     
-    extension [Self <: IEntryJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEntryJSON] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -425,7 +426,8 @@ object libLoggingMod {
       __obj.asInstanceOf[IType]
     }
     
-    extension [Self <: IType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IType] (val x: Self) extends AnyVal {
       
       inline def setBROWSER(value: String): Self = StObject.set(x, "BROWSER", value.asInstanceOf[js.Any])
       

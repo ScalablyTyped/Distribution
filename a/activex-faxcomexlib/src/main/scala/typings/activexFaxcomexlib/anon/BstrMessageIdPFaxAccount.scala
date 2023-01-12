@@ -18,7 +18,8 @@ object BstrMessageIdPFaxAccount {
     __obj.asInstanceOf[BstrMessageIdPFaxAccount]
   }
   
-  extension [Self <: BstrMessageIdPFaxAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BstrMessageIdPFaxAccount] (val x: Self) extends AnyVal {
     
     inline def setBstrMessageId(value: String): Self = StObject.set(x, "bstrMessageId", value.asInstanceOf[js.Any])
     

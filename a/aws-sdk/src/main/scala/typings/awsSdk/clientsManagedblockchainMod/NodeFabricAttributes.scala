@@ -23,7 +23,8 @@ object NodeFabricAttributes {
     __obj.asInstanceOf[NodeFabricAttributes]
   }
   
-  extension [Self <: NodeFabricAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeFabricAttributes] (val x: Self) extends AnyVal {
     
     inline def setPeerEndpoint(value: String): Self = StObject.set(x, "PeerEndpoint", value.asInstanceOf[js.Any])
     

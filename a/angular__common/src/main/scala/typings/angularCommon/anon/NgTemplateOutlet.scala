@@ -22,7 +22,8 @@ object NgTemplateOutlet {
     __obj.asInstanceOf[NgTemplateOutlet]
   }
   
-  extension [Self <: NgTemplateOutlet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgTemplateOutlet] (val x: Self) extends AnyVal {
     
     inline def setNgTemplateOutlet(value: ngTemplateOutlet): Self = StObject.set(x, "ngTemplateOutlet", value.asInstanceOf[js.Any])
     

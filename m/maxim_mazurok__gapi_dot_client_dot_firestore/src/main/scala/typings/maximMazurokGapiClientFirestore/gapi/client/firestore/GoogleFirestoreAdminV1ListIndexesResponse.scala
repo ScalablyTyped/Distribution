@@ -19,7 +19,8 @@ object GoogleFirestoreAdminV1ListIndexesResponse {
     __obj.asInstanceOf[GoogleFirestoreAdminV1ListIndexesResponse]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1ListIndexesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1ListIndexesResponse] (val x: Self) extends AnyVal {
     
     inline def setIndexes(value: js.Array[GoogleFirestoreAdminV1Index]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     

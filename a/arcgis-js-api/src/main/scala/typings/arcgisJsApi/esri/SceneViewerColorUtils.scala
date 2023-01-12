@@ -25,7 +25,8 @@ object SceneViewerColorUtils {
     __obj.asInstanceOf[SceneViewerColorUtils]
   }
   
-  extension [Self <: SceneViewerColorUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewerColorUtils] (val x: Self) extends AnyVal {
     
     inline def setIsBright(value: Color_ => Boolean): Self = StObject.set(x, "isBright", js.Any.fromFunction1(value))
   }

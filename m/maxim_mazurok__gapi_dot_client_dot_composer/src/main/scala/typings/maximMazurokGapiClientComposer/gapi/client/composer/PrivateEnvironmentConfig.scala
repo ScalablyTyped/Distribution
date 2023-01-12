@@ -55,7 +55,8 @@ object PrivateEnvironmentConfig {
     __obj.asInstanceOf[PrivateEnvironmentConfig]
   }
   
-  extension [Self <: PrivateEnvironmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateEnvironmentConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudComposerConnectionSubnetwork(value: String): Self = StObject.set(x, "cloudComposerConnectionSubnetwork", value.asInstanceOf[js.Any])
     

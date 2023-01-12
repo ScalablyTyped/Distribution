@@ -67,7 +67,8 @@ object EnrollmentToken {
     __obj.asInstanceOf[EnrollmentToken]
   }
   
-  extension [Self <: EnrollmentToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnrollmentToken] (val x: Self) extends AnyVal {
     
     inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     

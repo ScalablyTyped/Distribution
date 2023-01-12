@@ -30,7 +30,8 @@ object mod {
         __obj.asInstanceOf[File]
       }
       
-      extension [Self <: File](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
         
         inline def setExports(value: Any): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
         
@@ -51,7 +52,8 @@ object mod {
         __obj.asInstanceOf[Metadata]
       }
       
-      extension [Self <: Metadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
         
         inline def setFiles(value: StringDictionary[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       }
@@ -83,7 +85,8 @@ object mod {
         __obj.asInstanceOf[Object]
       }
       
-      extension [Self <: Object](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Object] (val x: Self) extends AnyVal {
         
         inline def setBindingType(value: String): Self = StObject.set(x, "bindingType", value.asInstanceOf[js.Any])
         

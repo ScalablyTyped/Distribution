@@ -15,7 +15,8 @@ object ElementCSSInlineStyle {
     __obj.asInstanceOf[ElementCSSInlineStyle]
   }
   
-  extension [Self <: ElementCSSInlineStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementCSSInlineStyle] (val x: Self) extends AnyVal {
     
     inline def setAttributeStyleMap(value: StylePropertyMap): Self = StObject.set(x, "attributeStyleMap", value.asInstanceOf[js.Any])
   }

@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[IDevToolProps]
     }
     
-    extension [Self <: IDevToolProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDevToolProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

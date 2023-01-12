@@ -15,7 +15,8 @@ object ILayoutAnimationBuilder {
     __obj.asInstanceOf[ILayoutAnimationBuilder]
   }
   
-  extension [Self <: ILayoutAnimationBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayoutAnimationBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => LayoutAnimationFunction): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
   }

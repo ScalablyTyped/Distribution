@@ -792,7 +792,8 @@ object httpsMod {
       __obj.asInstanceOf[AgentOptions]
     }
     
-    extension [Self <: AgentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
       
@@ -845,7 +846,8 @@ object httpsMod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
@@ -895,10 +897,11 @@ object httpsMod {
       __obj.asInstanceOf[ServerOptions[Request, Response]]
     }
     
-    extension [Self <: ServerOptions[?, ?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerOptions[?, ?], Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
         /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
         ServerResponse[typings.node.httpMod.IncomingMessage]
-      ] */](x: Self & (ServerOptions[Request, Response])) {
+      ] */] (val x: Self & (ServerOptions[Request, Response])) extends AnyVal {
       
       inline def setIncomingMessage(value: Request): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       

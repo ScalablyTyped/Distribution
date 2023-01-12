@@ -21,7 +21,8 @@ object CcrResumeFollowRequest {
     __obj.asInstanceOf[CcrResumeFollowRequest]
   }
   
-  extension [Self <: CcrResumeFollowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CcrResumeFollowRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Maxoutstandingreadrequests): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ZoomOption {
     __obj.asInstanceOf[ZoomOption]
   }
   
-  extension [Self <: ZoomOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomOption] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

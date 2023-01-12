@@ -26,7 +26,8 @@ object SnapshotPoint {
     __obj.asInstanceOf[SnapshotPoint]
   }
   
-  extension [Self <: SnapshotPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotPoint] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Double => SnapshotPoint): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

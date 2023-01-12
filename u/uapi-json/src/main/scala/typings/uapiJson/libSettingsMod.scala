@@ -31,7 +31,8 @@ object libSettingsMod {
       __obj.asInstanceOf[Auth]
     }
     
-    extension [Self <: Auth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Auth] (val x: Self) extends AnyVal {
       
       inline def setEmulatePcc(value: String | Boolean): Self = StObject.set(x, "emulatePcc", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object libSettingsMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setLogFunction(value: Any => Any): Self = StObject.set(x, "logFunction", js.Any.fromFunction1(value))
     }
@@ -93,7 +95,8 @@ object libSettingsMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

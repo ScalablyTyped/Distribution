@@ -22,7 +22,8 @@ object Readonlyleftnumberundefin {
     __obj.asInstanceOf[Readonlyleftnumberundefin]
   }
   
-  extension [Self <: Readonlyleftnumberundefin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Readonlyleftnumberundefin] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object CustomTransformers {
     __obj.asInstanceOf[CustomTransformers]
   }
   
-  extension [Self <: CustomTransformers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomTransformers] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

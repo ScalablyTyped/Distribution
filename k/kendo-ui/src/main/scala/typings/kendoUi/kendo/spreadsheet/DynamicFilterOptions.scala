@@ -15,7 +15,8 @@ object DynamicFilterOptions {
     __obj.asInstanceOf[DynamicFilterOptions]
   }
   
-  extension [Self <: DynamicFilterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicFilterOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

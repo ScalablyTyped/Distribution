@@ -23,7 +23,8 @@ object PipeableContravariant {
     __obj.asInstanceOf[PipeableContravariant[F]]
   }
   
-  extension [Self <: PipeableContravariant[?], F](x: Self & PipeableContravariant[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableContravariant[?], F] (val x: Self & PipeableContravariant[F]) extends AnyVal {
     
     inline def setContramap(
       value: js.Function1[Any, Any] => js.Function1[

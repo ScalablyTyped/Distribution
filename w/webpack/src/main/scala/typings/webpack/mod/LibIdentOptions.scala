@@ -23,7 +23,8 @@ object LibIdentOptions {
     __obj.asInstanceOf[LibIdentOptions]
   }
   
-  extension [Self <: LibIdentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibIdentOptions] (val x: Self) extends AnyVal {
     
     inline def setAssociatedObjectForCache(value: js.Object): Self = StObject.set(x, "associatedObjectForCache", value.asInstanceOf[js.Any])
     

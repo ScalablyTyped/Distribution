@@ -43,7 +43,8 @@ object FeatureEffectProperties {
     __obj.asInstanceOf[FeatureEffectProperties]
   }
   
-  extension [Self <: FeatureEffectProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureEffectProperties] (val x: Self) extends AnyVal {
     
     inline def setExcludedEffect(value: js.Array[Any] | String): Self = StObject.set(x, "excludedEffect", value.asInstanceOf[js.Any])
     

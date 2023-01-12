@@ -39,7 +39,8 @@ object VideoKeywordBidding {
     __obj.asInstanceOf[VideoKeywordBidding]
   }
   
-  extension [Self <: VideoKeywordBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoKeywordBidding] (val x: Self) extends AnyVal {
     
     inline def setClearCpv(value: () => Unit): Self = StObject.set(x, "clearCpv", js.Any.fromFunction0(value))
     

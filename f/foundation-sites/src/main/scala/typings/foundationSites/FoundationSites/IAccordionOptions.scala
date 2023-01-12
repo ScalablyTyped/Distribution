@@ -29,7 +29,8 @@ object IAccordionOptions {
     __obj.asInstanceOf[IAccordionOptions]
   }
   
-  extension [Self <: IAccordionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccordionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowAllClosed(value: Boolean): Self = StObject.set(x, "allowAllClosed", value.asInstanceOf[js.Any])
     

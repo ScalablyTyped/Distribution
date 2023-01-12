@@ -19,7 +19,8 @@ object SecuritySamlInvalidateRequest {
     __obj.asInstanceOf[SecuritySamlInvalidateRequest]
   }
   
-  extension [Self <: SecuritySamlInvalidateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlInvalidateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Acs): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

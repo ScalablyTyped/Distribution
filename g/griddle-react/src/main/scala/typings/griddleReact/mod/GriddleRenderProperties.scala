@@ -17,7 +17,8 @@ object GriddleRenderProperties {
     __obj.asInstanceOf[GriddleRenderProperties]
   }
   
-  extension [Self <: GriddleRenderProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GriddleRenderProperties] (val x: Self) extends AnyVal {
     
     inline def setColumnProperties(value: PropertyBag[ColumnRenderProperties]): Self = StObject.set(x, "columnProperties", value.asInstanceOf[js.Any])
     

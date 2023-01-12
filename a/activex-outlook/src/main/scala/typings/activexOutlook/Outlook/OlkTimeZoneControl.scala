@@ -47,7 +47,8 @@ object OlkTimeZoneControl {
     __obj.asInstanceOf[OlkTimeZoneControl]
   }
   
-  extension [Self <: OlkTimeZoneControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkTimeZoneControl] (val x: Self) extends AnyVal {
     
     inline def setAppointmentTimeField(value: OlAppointmentTimeField): Self = StObject.set(x, "AppointmentTimeField", value.asInstanceOf[js.Any])
     

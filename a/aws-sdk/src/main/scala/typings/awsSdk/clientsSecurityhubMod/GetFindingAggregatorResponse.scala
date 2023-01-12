@@ -33,7 +33,8 @@ object GetFindingAggregatorResponse {
     __obj.asInstanceOf[GetFindingAggregatorResponse]
   }
   
-  extension [Self <: GetFindingAggregatorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFindingAggregatorResponse] (val x: Self) extends AnyVal {
     
     inline def setFindingAggregationRegion(value: NonEmptyString): Self = StObject.set(x, "FindingAggregationRegion", value.asInstanceOf[js.Any])
     

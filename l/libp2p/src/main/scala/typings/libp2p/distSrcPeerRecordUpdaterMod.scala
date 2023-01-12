@@ -69,7 +69,8 @@ object distSrcPeerRecordUpdaterMod {
       __obj.asInstanceOf[PeerRecordUpdaterComponents]
     }
     
-    extension [Self <: PeerRecordUpdaterComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerRecordUpdaterComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       

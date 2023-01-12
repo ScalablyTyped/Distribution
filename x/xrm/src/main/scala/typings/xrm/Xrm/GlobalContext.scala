@@ -202,7 +202,8 @@ object GlobalContext {
     __obj.asInstanceOf[GlobalContext]
   }
   
-  extension [Self <: GlobalContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalContext] (val x: Self) extends AnyVal {
     
     inline def setClient(value: ClientContext): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ContinueAction {
     __obj.asInstanceOf[ContinueAction]
   }
   
-  extension [Self <: ContinueAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: continue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

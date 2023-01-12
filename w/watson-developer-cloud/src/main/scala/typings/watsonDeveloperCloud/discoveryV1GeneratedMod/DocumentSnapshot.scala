@@ -20,7 +20,8 @@ object DocumentSnapshot {
     __obj.asInstanceOf[DocumentSnapshot]
   }
   
-  extension [Self <: DocumentSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSnapshot] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: js.Object): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     

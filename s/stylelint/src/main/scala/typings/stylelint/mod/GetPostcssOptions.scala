@@ -25,7 +25,8 @@ object GetPostcssOptions {
     __obj.asInstanceOf[GetPostcssOptions]
   }
   
-  extension [Self <: GetPostcssOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPostcssOptions] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

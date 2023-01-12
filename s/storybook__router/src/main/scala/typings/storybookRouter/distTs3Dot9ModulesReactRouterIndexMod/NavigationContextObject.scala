@@ -19,7 +19,8 @@ object NavigationContextObject {
     __obj.asInstanceOf[NavigationContextObject]
   }
   
-  extension [Self <: NavigationContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationContextObject] (val x: Self) extends AnyVal {
     
     inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     

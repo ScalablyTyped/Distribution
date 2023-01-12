@@ -23,7 +23,8 @@ object SqlStatementResult {
     __obj.asInstanceOf[SqlStatementResult]
   }
   
-  extension [Self <: SqlStatementResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlStatementResult] (val x: Self) extends AnyVal {
     
     inline def setNumberOfRecordsUpdated(value: RecordsUpdated): Self = StObject.set(x, "numberOfRecordsUpdated", value.asInstanceOf[js.Any])
     

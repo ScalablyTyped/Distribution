@@ -17,7 +17,8 @@ object IPrivateKeyUsagePeriod {
     __obj.asInstanceOf[IPrivateKeyUsagePeriod]
   }
   
-  extension [Self <: IPrivateKeyUsagePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrivateKeyUsagePeriod] (val x: Self) extends AnyVal {
     
     inline def setNotAfter(value: js.Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
     

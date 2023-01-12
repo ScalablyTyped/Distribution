@@ -26,7 +26,8 @@ object IFunctionDef {
     __obj.asInstanceOf[IFunctionDef]
   }
   
-  extension [Self <: IFunctionDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFunctionDef] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

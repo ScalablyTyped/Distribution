@@ -18,7 +18,8 @@ object CreateModelBiasJobDefinitionResponse {
     __obj.asInstanceOf[CreateModelBiasJobDefinitionResponse]
   }
   
-  extension [Self <: CreateModelBiasJobDefinitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelBiasJobDefinitionResponse] (val x: Self) extends AnyVal {
     
     inline def setJobDefinitionArn(value: MonitoringJobDefinitionArn): Self = StObject.set(x, "JobDefinitionArn", value.asInstanceOf[js.Any])
   }

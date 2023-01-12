@@ -35,7 +35,8 @@ object CanvasClickEvent {
     __obj.asInstanceOf[CanvasClickEvent]
   }
   
-  extension [Self <: CanvasClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasClickEvent] (val x: Self) extends AnyVal {
     
     inline def setOriginalTarget(value: Element): Self = StObject.set(x, "originalTarget", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object IdentityPool {
     __obj.asInstanceOf[IdentityPool]
   }
   
-  extension [Self <: IdentityPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityPool] (val x: Self) extends AnyVal {
     
     inline def setAllowClassicFlow(value: Boolean): Self = StObject.set(x, "AllowClassicFlow", value.asInstanceOf[js.Any])
     

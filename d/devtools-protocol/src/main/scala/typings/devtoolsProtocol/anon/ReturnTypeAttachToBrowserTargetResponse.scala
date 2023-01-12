@@ -18,7 +18,8 @@ object ReturnTypeAttachToBrowserTargetResponse {
     __obj.asInstanceOf[ReturnTypeAttachToBrowserTargetResponse]
   }
   
-  extension [Self <: ReturnTypeAttachToBrowserTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeAttachToBrowserTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[Any]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

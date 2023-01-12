@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AppName]
     }
     
-    extension [Self <: AppName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppName] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[HeartbeatsToSend]
     }
     
-    extension [Self <: HeartbeatsToSend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatsToSend] (val x: Self) extends AnyVal {
       
       inline def setHeartbeatsToSend(value: js.Array[HeartbeatsByUserAgent]): Self = StObject.set(x, "heartbeatsToSend", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[OriginalErrorMessage]
     }
     
-    extension [Self <: OriginalErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setOriginalErrorMessage(value: String): Self = StObject.set(x, "originalErrorMessage", value.asInstanceOf[js.Any])
       
@@ -83,7 +86,8 @@ object anon {
       __obj.asInstanceOf[RequiredFirebaseAppSettin]
     }
     
-    extension [Self <: RequiredFirebaseAppSettin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredFirebaseAppSettin] (val x: Self) extends AnyVal {
       
       inline def setAutomaticDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "automaticDataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[UnsentEntries]
     }
     
-    extension [Self <: UnsentEntries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsentEntries] (val x: Self) extends AnyVal {
       
       inline def setHeartbeatsToSend(value: js.Array[typings.firebaseApp.distEsmAppSrcTypesMod.HeartbeatsByUserAgent]): Self = StObject.set(x, "heartbeatsToSend", value.asInstanceOf[js.Any])
       

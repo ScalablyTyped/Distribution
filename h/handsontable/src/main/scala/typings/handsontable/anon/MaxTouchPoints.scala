@@ -15,7 +15,8 @@ object MaxTouchPoints {
     __obj.asInstanceOf[MaxTouchPoints]
   }
   
-  extension [Self <: MaxTouchPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxTouchPoints] (val x: Self) extends AnyVal {
     
     inline def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object SpreadsheetPdf {
     __obj.asInstanceOf[SpreadsheetPdf]
   }
   
-  extension [Self <: SpreadsheetPdf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetPdf] (val x: Self) extends AnyVal {
     
     inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

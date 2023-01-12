@@ -43,7 +43,8 @@ object VgwTelemetry {
     __obj.asInstanceOf[VgwTelemetry]
   }
   
-  extension [Self <: VgwTelemetry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VgwTelemetry] (val x: Self) extends AnyVal {
     
     inline def setAcceptedRouteCount(value: Integer): Self = StObject.set(x, "AcceptedRouteCount", value.asInstanceOf[js.Any])
     

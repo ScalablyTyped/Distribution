@@ -50,7 +50,8 @@ object distSrcPeerRecordPeerRecordMod {
       
       inline def encode(obj: AddressInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
-      extension [Self <: AddressInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AddressInfo] (val x: Self) extends AnyVal {
         
         inline def setMultiaddr(value: js.typedarray.Uint8Array): Self = StObject.set(x, "multiaddr", value.asInstanceOf[js.Any])
       }
@@ -63,7 +64,8 @@ object distSrcPeerRecordPeerRecordMod {
     
     inline def encode(obj: PeerRecord): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PeerRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerRecord] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[AddressInfo]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       

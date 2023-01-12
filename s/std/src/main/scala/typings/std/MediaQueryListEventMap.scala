@@ -16,7 +16,8 @@ object MediaQueryListEventMap {
     __obj.asInstanceOf[MediaQueryListEventMap]
   }
   
-  extension [Self <: MediaQueryListEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQueryListEventMap] (val x: Self) extends AnyVal {
     
     inline def setChange(value: MediaQueryListEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
   }

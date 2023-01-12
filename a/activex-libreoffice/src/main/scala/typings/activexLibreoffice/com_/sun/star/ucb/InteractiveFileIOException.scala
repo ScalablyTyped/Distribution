@@ -32,7 +32,8 @@ object InteractiveFileIOException {
     __obj.asInstanceOf[InteractiveFileIOException]
   }
   
-  extension [Self <: InteractiveFileIOException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveFileIOException] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
   }

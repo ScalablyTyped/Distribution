@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsGridLayoutThreeOnTwoMod ext
       __obj.asInstanceOf[GridLayoutThreeOnTwoProps]
     }
     
-    extension [Self <: GridLayoutThreeOnTwoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLayoutThreeOnTwoProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

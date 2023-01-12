@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[DecodeOptions]
     }
     
-    extension [Self <: DecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object mod {
       __obj.asInstanceOf[SignOptions]
     }
     
-    extension [Self <: SignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object mod {
       __obj.asInstanceOf[VerifyOptions]
     }
     
-    extension [Self <: VerifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
       

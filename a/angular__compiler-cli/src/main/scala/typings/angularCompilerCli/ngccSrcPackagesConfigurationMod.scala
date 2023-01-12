@@ -165,7 +165,8 @@ object ngccSrcPackagesConfigurationMod {
       __obj.asInstanceOf[NgccEntryPointConfig]
     }
     
-    extension [Self <: NgccEntryPointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgccEntryPointConfig] (val x: Self) extends AnyVal {
       
       inline def setGenerateDeepReexports(value: Boolean): Self = StObject.set(x, "generateDeepReexports", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object ngccSrcPackagesConfigurationMod {
       __obj.asInstanceOf[NgccProjectConfig]
     }
     
-    extension [Self <: NgccProjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NgccProjectConfig] (val x: Self) extends AnyVal {
       
       inline def setHashAlgorithm(value: String): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object ngccSrcPackagesConfigurationMod {
       __obj.asInstanceOf[ProcessLockingConfiguration]
     }
     
-    extension [Self <: ProcessLockingConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessLockingConfiguration] (val x: Self) extends AnyVal {
       
       inline def setRetryAttempts(value: Double): Self = StObject.set(x, "retryAttempts", value.asInstanceOf[js.Any])
       
@@ -282,7 +285,8 @@ object ngccSrcPackagesConfigurationMod {
       __obj.asInstanceOf[RawNgccPackageConfig]
     }
     
-    extension [Self <: RawNgccPackageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawNgccPackageConfig] (val x: Self) extends AnyVal {
       
       inline def setEntryPoints(value: StringDictionary[NgccEntryPointConfig]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
       
@@ -309,7 +313,8 @@ object ngccSrcPackagesConfigurationMod {
       __obj.asInstanceOf[VersionedPackageConfig]
     }
     
-    extension [Self <: VersionedPackageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionedPackageConfig] (val x: Self) extends AnyVal {
       
       inline def setVersionRange(value: String): Self = StObject.set(x, "versionRange", value.asInstanceOf[js.Any])
     }

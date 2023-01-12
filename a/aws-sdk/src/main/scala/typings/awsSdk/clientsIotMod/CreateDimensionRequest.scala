@@ -44,7 +44,8 @@ object CreateDimensionRequest {
     __obj.asInstanceOf[CreateDimensionRequest]
   }
   
-  extension [Self <: CreateDimensionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDimensionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

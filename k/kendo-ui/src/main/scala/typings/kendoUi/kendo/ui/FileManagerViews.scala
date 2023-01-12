@@ -19,7 +19,8 @@ object FileManagerViews {
     __obj.asInstanceOf[FileManagerViews]
   }
   
-  extension [Self <: FileManagerViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManagerViews] (val x: Self) extends AnyVal {
     
     inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     

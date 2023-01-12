@@ -19,7 +19,8 @@ object Resumable {
     __obj.asInstanceOf[Resumable]
   }
   
-  extension [Self <: Resumable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resumable] (val x: Self) extends AnyVal {
     
     inline def setResumable(value: Multipart): Self = StObject.set(x, "resumable", value.asInstanceOf[js.Any])
     

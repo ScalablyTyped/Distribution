@@ -19,7 +19,8 @@ object ReturnTypeGetExceptionDetailsResponse {
     __obj.asInstanceOf[ReturnTypeGetExceptionDetailsResponse]
   }
   
-  extension [Self <: ReturnTypeGetExceptionDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetExceptionDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetExceptionDetailsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

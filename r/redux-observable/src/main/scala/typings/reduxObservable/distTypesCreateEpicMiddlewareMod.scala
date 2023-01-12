@@ -35,7 +35,8 @@ object distTypesCreateEpicMiddlewareMod {
       __obj.asInstanceOf[Options[D]]
     }
     
-    extension [Self <: Options[?], D](x: Self & Options[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], D] (val x: Self & Options[D]) extends AnyVal {
       
       inline def setDependencies(value: D): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

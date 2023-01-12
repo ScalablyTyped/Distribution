@@ -309,7 +309,8 @@ object PopupTipsProps {
     __obj.asInstanceOf[PopupTipsProps]
   }
   
-  extension [Self <: PopupTipsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupTipsProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIdx(value: Double): Self = StObject.set(x, "activeIdx", value.asInstanceOf[js.Any])
     

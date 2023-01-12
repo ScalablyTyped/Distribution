@@ -63,7 +63,8 @@ object libGComponentsBaseHelperMod {
       __obj.asInstanceOf[Helper]
     }
     
-    extension [Self <: Helper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helper] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libGComponentsBaseHelperMod {
       __obj.asInstanceOf[IBaseProps]
     }
     
-    extension [Self <: IBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Callback): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

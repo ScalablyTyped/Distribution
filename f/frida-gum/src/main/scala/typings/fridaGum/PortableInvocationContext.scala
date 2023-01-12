@@ -40,7 +40,8 @@ object PortableInvocationContext {
     __obj.asInstanceOf[PortableInvocationContext]
   }
   
-  extension [Self <: PortableInvocationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortableInvocationContext] (val x: Self) extends AnyVal {
     
     inline def setContext(value: CpuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

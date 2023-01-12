@@ -77,7 +77,8 @@ object VisionPrescription {
     __obj.asInstanceOf[VisionPrescription]
   }
   
-  extension [Self <: VisionPrescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisionPrescription] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

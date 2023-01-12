@@ -25,7 +25,8 @@ object Application {
         __obj.asInstanceOf[DefaultFormsInformation]
       }
       
-      extension [Self <: DefaultFormsInformation](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultFormsInformation] (val x: Self) extends AnyVal {
         
         inline def setDefaultForms(value: FormsInfo): Self = StObject.set(x, "DefaultForms", value.asInstanceOf[js.Any])
         
@@ -49,7 +50,8 @@ object Application {
         __obj.asInstanceOf[DefaultFormsInformationRequestor]
       }
       
-      extension [Self <: DefaultFormsInformationRequestor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultFormsInformationRequestor] (val x: Self) extends AnyVal {
         
         inline def setOnDefaultFormsInformationRetrieveFailure(value: () => Unit): Self = StObject.set(x, "onDefaultFormsInformationRetrieveFailure", js.Any.fromFunction0(value))
         
@@ -76,7 +78,8 @@ object Application {
         __obj.asInstanceOf[FormsInfo]
       }
       
-      extension [Self <: FormsInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FormsInfo] (val x: Self) extends AnyVal {
         
         inline def setContentTypeName(value: String): Self = StObject.set(x, "ContentTypeName", value.asInstanceOf[js.Any])
         
@@ -127,7 +130,8 @@ object Application {
         __obj.asInstanceOf[MoreColorsPage]
       }
       
-      extension [Self <: MoreColorsPage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoreColorsPage] (val x: Self) extends AnyVal {
         
         inline def setGet_moreColorsPicker(value: () => MoreColorsPicker): Self = StObject.set(x, "get_moreColorsPicker", js.Any.fromFunction0(value))
         
@@ -174,7 +178,8 @@ object Application {
         __obj.asInstanceOf[MoreColorsPicker]
       }
       
-      extension [Self <: MoreColorsPicker](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoreColorsPicker] (val x: Self) extends AnyVal {
         
         inline def setGet_colorValue(value: () => String): Self = StObject.set(x, "get_colorValue", js.Any.fromFunction0(value))
         
@@ -233,7 +238,8 @@ object Application {
         __obj.asInstanceOf[ThemeWebPage]
       }
       
-      extension [Self <: ThemeWebPage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThemeWebPage] (val x: Self) extends AnyVal {
         
         inline def setAdd_themeDisplayUpdated(value: js.Function2[/* sender */ Any, /* e */ EventArgs, Unit] => Unit): Self = StObject.set(x, "add_themeDisplayUpdated", js.Any.fromFunction1(value))
         
@@ -260,7 +266,8 @@ object Application {
         __obj.asInstanceOf[ViewInformationRequestor]
       }
       
-      extension [Self <: ViewInformationRequestor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewInformationRequestor] (val x: Self) extends AnyVal {
         
         inline def setOnViewInformationReturned(value: ViewSelectorGroups => Unit): Self = StObject.set(x, "onViewInformationReturned", js.Any.fromFunction1(value))
       }
@@ -294,7 +301,8 @@ object Application {
         __obj.asInstanceOf[ViewSelectorGroups]
       }
       
-      extension [Self <: ViewSelectorGroups](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewSelectorGroups] (val x: Self) extends AnyVal {
         
         inline def setDefaultView(value: ViewSelectorMenuItem): Self = StObject.set(x, "DefaultView", value.asInstanceOf[js.Any])
         
@@ -349,7 +357,8 @@ object Application {
         __obj.asInstanceOf[ViewSelectorMenuItem]
       }
       
-      extension [Self <: ViewSelectorMenuItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewSelectorMenuItem] (val x: Self) extends AnyVal {
         
         inline def setActionScriptText(value: String): Self = StObject.set(x, "ActionScriptText", value.asInstanceOf[js.Any])
         
@@ -405,7 +414,8 @@ object Application {
         __obj.asInstanceOf[ViewSelectorMenuOptions]
       }
       
-      extension [Self <: ViewSelectorMenuOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewSelectorMenuOptions] (val x: Self) extends AnyVal {
         
         inline def setListId(value: String): Self = StObject.set(x, "listId", value.asInstanceOf[js.Any])
         
@@ -440,7 +450,8 @@ object Application {
         __obj.asInstanceOf[ViewSelectorSubMenu]
       }
       
-      extension [Self <: ViewSelectorSubMenu](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ViewSelectorSubMenu] (val x: Self) extends AnyVal {
         
         inline def setImageSourceUrl(value: String): Self = StObject.set(x, "ImageSourceUrl", value.asInstanceOf[js.Any])
         
@@ -463,7 +474,8 @@ object Application {
         __obj.asInstanceOf[WikiPageNameInPlaceEditor]
       }
       
-      extension [Self <: WikiPageNameInPlaceEditor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WikiPageNameInPlaceEditor] (val x: Self) extends AnyVal {
         
         inline def setEditingPageCallback(value: () => Unit): Self = StObject.set(x, "editingPageCallback", js.Any.fromFunction0(value))
         

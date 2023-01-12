@@ -198,7 +198,8 @@ object ModifyDBInstanceMessage {
     __obj.asInstanceOf[ModifyDBInstanceMessage]
   }
   
-  extension [Self <: ModifyDBInstanceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyDBInstanceMessage] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

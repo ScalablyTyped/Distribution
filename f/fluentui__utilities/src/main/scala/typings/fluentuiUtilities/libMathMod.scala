@@ -65,7 +65,8 @@ object libMathMod {
       __obj.asInstanceOf[IFitContentToBoundsOptions]
     }
     
-    extension [Self <: IFitContentToBoundsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFitContentToBoundsOptions] (val x: Self) extends AnyVal {
       
       inline def setBoundsSize(value: ISize): Self = StObject.set(x, "boundsSize", value.asInstanceOf[js.Any])
       

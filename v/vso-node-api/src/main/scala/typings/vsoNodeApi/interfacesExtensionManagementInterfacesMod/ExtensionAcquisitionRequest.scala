@@ -50,7 +50,8 @@ object ExtensionAcquisitionRequest {
     __obj.asInstanceOf[ExtensionAcquisitionRequest]
   }
   
-  extension [Self <: ExtensionAcquisitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAcquisitionRequest] (val x: Self) extends AnyVal {
     
     inline def setAssignmentType(value: AcquisitionAssignmentType): Self = StObject.set(x, "assignmentType", value.asInstanceOf[js.Any])
     

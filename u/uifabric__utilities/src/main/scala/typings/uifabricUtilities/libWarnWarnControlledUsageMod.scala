@@ -54,7 +54,8 @@ object libWarnWarnControlledUsageMod {
       __obj.asInstanceOf[IWarnControlledUsageParams[P]]
     }
     
-    extension [Self <: IWarnControlledUsageParams[?], P](x: Self & IWarnControlledUsageParams[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWarnControlledUsageParams[?], P] (val x: Self & IWarnControlledUsageParams[P]) extends AnyVal {
       
       inline def setComponentId(value: String): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
       

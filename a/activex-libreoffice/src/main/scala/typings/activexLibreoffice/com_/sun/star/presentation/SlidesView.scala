@@ -114,7 +114,8 @@ object SlidesView {
     __obj.asInstanceOf[SlidesView]
   }
   
-  extension [Self <: SlidesView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlidesView] (val x: Self) extends AnyVal {
     
     inline def setVisibleArea(value: Rectangle): Self = StObject.set(x, "VisibleArea", value.asInstanceOf[js.Any])
   }

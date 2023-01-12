@@ -33,7 +33,8 @@ object CustomEditorProps {
     __obj.asInstanceOf[CustomEditorProps[TRow, K]]
   }
   
-  extension [Self <: CustomEditorProps[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (CustomEditorProps[TRow, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEditorProps[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] (val x: Self & (CustomEditorProps[TRow, K])) extends AnyVal {
     
     inline def setDefaultValue(value: /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

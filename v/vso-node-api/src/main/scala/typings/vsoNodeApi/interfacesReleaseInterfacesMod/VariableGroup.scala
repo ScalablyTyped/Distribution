@@ -74,7 +74,8 @@ object VariableGroup {
     __obj.asInstanceOf[VariableGroup]
   }
   
-  extension [Self <: VariableGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableGroup] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DiagramMouseLeaveEvent {
     __obj.asInstanceOf[DiagramMouseLeaveEvent]
   }
   
-  extension [Self <: DiagramMouseLeaveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramMouseLeaveEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ExperienceEntitiesSummary {
     __obj.asInstanceOf[ExperienceEntitiesSummary]
   }
   
-  extension [Self <: ExperienceEntitiesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperienceEntitiesSummary] (val x: Self) extends AnyVal {
     
     inline def setDisplayData(value: EntityDisplayData): Self = StObject.set(x, "DisplayData", value.asInstanceOf[js.Any])
     

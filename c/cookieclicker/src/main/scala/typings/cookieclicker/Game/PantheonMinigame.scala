@@ -135,7 +135,8 @@ object PantheonMinigame {
     __obj.asInstanceOf[PantheonMinigame]
   }
   
-  extension [Self <: PantheonMinigame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PantheonMinigame] (val x: Self) extends AnyVal {
     
     inline def setDragGod(value: PantheonSpirit => Unit): Self = StObject.set(x, "dragGod", js.Any.fromFunction1(value))
     

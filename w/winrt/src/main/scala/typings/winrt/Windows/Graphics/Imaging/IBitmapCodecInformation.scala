@@ -27,7 +27,8 @@ object IBitmapCodecInformation {
     __obj.asInstanceOf[IBitmapCodecInformation]
   }
   
-  extension [Self <: IBitmapCodecInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBitmapCodecInformation] (val x: Self) extends AnyVal {
     
     inline def setCodecId(value: String): Self = StObject.set(x, "codecId", value.asInstanceOf[js.Any])
     

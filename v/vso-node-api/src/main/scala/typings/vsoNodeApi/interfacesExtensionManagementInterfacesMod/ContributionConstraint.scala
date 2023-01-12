@@ -50,7 +50,8 @@ object ContributionConstraint {
     __obj.asInstanceOf[ContributionConstraint]
   }
   
-  extension [Self <: ContributionConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContributionConstraint] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     

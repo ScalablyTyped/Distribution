@@ -19,7 +19,8 @@ object AsyncVoidCallback {
     __obj.asInstanceOf[AsyncVoidCallback]
   }
   
-  extension [Self <: AsyncVoidCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncVoidCallback] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -30,7 +30,8 @@ object AdminServicesProvider {
     __obj.asInstanceOf[AdminServicesProvider]
   }
   
-  extension [Self <: AdminServicesProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminServicesProvider] (val x: Self) extends AnyVal {
     
     inline def setCreateDatabase(value: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse]): Self = StObject.set(x, "createDatabase", js.Any.fromFunction2(value))
     

@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[DocumentTitleProps]
     }
     
-    extension [Self <: DocumentTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentTitleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactChild): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

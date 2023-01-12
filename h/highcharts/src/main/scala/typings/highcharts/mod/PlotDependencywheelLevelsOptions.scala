@@ -62,7 +62,8 @@ object PlotDependencywheelLevelsOptions {
     __obj.asInstanceOf[PlotDependencywheelLevelsOptions]
   }
   
-  extension [Self <: PlotDependencywheelLevelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotDependencywheelLevelsOptions] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

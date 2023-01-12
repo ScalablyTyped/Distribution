@@ -107,7 +107,8 @@ object ExternalAPIEventCallbacks {
     __obj.asInstanceOf[ExternalAPIEventCallbacks]
   }
   
-  extension [Self <: ExternalAPIEventCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalAPIEventCallbacks] (val x: Self) extends AnyVal {
     
     inline def setAudioAvailabilityChanged(value: AudioAvailabilityChangedEvent => Unit): Self = StObject.set(x, "audioAvailabilityChanged", js.Any.fromFunction1(value))
     

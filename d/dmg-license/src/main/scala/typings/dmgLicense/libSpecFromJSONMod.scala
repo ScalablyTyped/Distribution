@@ -40,7 +40,8 @@ object libSpecFromJSONMod {
       __obj.asInstanceOf[FromJSONOptions]
     }
     
-    extension [Self <: FromJSONOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromJSONOptions] (val x: Self) extends AnyVal {
       
       inline def setSpecSourceURL(value: String): Self = StObject.set(x, "specSourceURL", value.asInstanceOf[js.Any])
       

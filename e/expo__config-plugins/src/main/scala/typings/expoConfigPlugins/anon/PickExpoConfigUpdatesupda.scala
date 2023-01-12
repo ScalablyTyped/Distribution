@@ -17,7 +17,8 @@ object PickExpoConfigUpdatesupda {
     __obj.asInstanceOf[PickExpoConfigUpdatesupda]
   }
   
-  extension [Self <: PickExpoConfigUpdatesupda](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigUpdatesupda] (val x: Self) extends AnyVal {
     
     inline def setUpdates(value: CheckAutomatically): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     

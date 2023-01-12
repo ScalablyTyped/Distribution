@@ -147,7 +147,8 @@ object webglHelperMod {
       __obj.asInstanceOf[AttributeDescription]
     }
     
-    extension [Self <: AttributeDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeDescription] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object webglHelperMod {
       __obj.asInstanceOf[BufferCacheEntry]
     }
     
-    extension [Self <: BufferCacheEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferCacheEntry] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: typings.ol.webglBufferMod.default): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object webglHelperMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object webglHelperMod {
       __obj.asInstanceOf[PostProcessesOptions]
     }
     
-    extension [Self <: PostProcessesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostProcessesOptions] (val x: Self) extends AnyVal {
       
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       

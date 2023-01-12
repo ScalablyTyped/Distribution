@@ -165,7 +165,8 @@ object componentsTabsMod {
       __obj.asInstanceOf[TabItemProps]
     }
     
-    extension [Self <: TabItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabItemProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -471,7 +472,8 @@ object componentsTabsMod {
       __obj.asInstanceOf[TabPanelProps]
     }
     
-    extension [Self <: TabPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -779,7 +781,8 @@ object componentsTabsMod {
       __obj.asInstanceOf[TabsContentProps]
     }
     
-    extension [Self <: TabsContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsContentProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1089,7 +1092,8 @@ object componentsTabsMod {
       __obj.asInstanceOf[TabsProps]
     }
     
-    extension [Self <: TabsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

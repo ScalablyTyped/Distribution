@@ -54,7 +54,8 @@ object QueryAutocompletionRequest {
     __obj.asInstanceOf[QueryAutocompletionRequest]
   }
   
-  extension [Self <: QueryAutocompletionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAutocompletionRequest] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

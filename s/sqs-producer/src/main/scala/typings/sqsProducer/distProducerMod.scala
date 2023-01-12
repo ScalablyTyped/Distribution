@@ -59,7 +59,8 @@ object distProducerMod {
       __obj.asInstanceOf[ProducerOptions]
     }
     
-    extension [Self <: ProducerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

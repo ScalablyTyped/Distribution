@@ -42,7 +42,8 @@ object PerformedviagithubappUrl {
     __obj.asInstanceOf[PerformedviagithubappUrl]
   }
   
-  extension [Self <: PerformedviagithubappUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformedviagithubappUrl] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

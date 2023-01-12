@@ -15,7 +15,8 @@ object UpdateAdmChannelResponse {
     __obj.asInstanceOf[UpdateAdmChannelResponse]
   }
   
-  extension [Self <: UpdateAdmChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAdmChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setADMChannelResponse(value: ADMChannelResponse): Self = StObject.set(x, "ADMChannelResponse", value.asInstanceOf[js.Any])
   }

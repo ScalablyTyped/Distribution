@@ -49,7 +49,8 @@ object DataSettings {
     __obj.asInstanceOf[DataSettings]
   }
   
-  extension [Self <: DataSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSettings] (val x: Self) extends AnyVal {
     
     inline def setApplyFilter(value: Boolean): Self = StObject.set(x, "ApplyFilter", value.asInstanceOf[js.Any])
     

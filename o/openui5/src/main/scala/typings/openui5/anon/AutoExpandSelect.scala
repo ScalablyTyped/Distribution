@@ -118,7 +118,8 @@ object AutoExpandSelect {
     __obj.asInstanceOf[AutoExpandSelect]
   }
   
-  extension [Self <: AutoExpandSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoExpandSelect] (val x: Self) extends AnyVal {
     
     inline def setAnnotationURI(value: String | js.Array[String]): Self = StObject.set(x, "annotationURI", value.asInstanceOf[js.Any])
     

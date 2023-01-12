@@ -146,7 +146,8 @@ object libVictoryBrushLineMod {
       __obj.asInstanceOf[VictoryBrushLineProps]
     }
     
-    extension [Self <: VictoryBrushLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryBrushLineProps] (val x: Self) extends AnyVal {
       
       inline def setAllowDrag(value: Boolean): Self = StObject.set(x, "allowDrag", value.asInstanceOf[js.Any])
       

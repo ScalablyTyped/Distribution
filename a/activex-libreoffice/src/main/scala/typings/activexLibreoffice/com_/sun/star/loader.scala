@@ -104,7 +104,8 @@ object loader {
       __obj.asInstanceOf[XImplementationLoader]
     }
     
-    extension [Self <: XImplementationLoader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XImplementationLoader] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: (String, String, String, XRegistryKey) => XInterface): Self = StObject.set(x, "activate", js.Any.fromFunction4(value))
       

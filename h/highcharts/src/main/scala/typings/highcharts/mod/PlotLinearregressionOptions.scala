@@ -769,7 +769,8 @@ object PlotLinearregressionOptions {
     __obj.asInstanceOf[PlotLinearregressionOptions]
   }
   
-  extension [Self <: PlotLinearregressionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotLinearregressionOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

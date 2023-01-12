@@ -19,7 +19,8 @@ object ApigatewayOperationMetadataDiagnostic {
     __obj.asInstanceOf[ApigatewayOperationMetadataDiagnostic]
   }
   
-  extension [Self <: ApigatewayOperationMetadataDiagnostic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApigatewayOperationMetadataDiagnostic] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

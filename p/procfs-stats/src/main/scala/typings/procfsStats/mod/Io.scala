@@ -35,7 +35,8 @@ object Io {
     __obj.asInstanceOf[Io]
   }
   
-  extension [Self <: Io](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Io] (val x: Self) extends AnyVal {
     
     inline def setCancelled_write_bytes(value: String): Self = StObject.set(x, "cancelled_write_bytes", value.asInstanceOf[js.Any])
     

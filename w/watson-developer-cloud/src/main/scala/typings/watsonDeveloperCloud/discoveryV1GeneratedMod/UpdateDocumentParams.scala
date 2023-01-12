@@ -43,7 +43,8 @@ object UpdateDocumentParams {
     __obj.asInstanceOf[UpdateDocumentParams]
   }
   
-  extension [Self <: UpdateDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     

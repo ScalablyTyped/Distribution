@@ -52,7 +52,8 @@ object XPane {
     __obj.asInstanceOf[XPane]
   }
   
-  extension [Self <: XPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPane] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: XCanvas): Self = StObject.set(x, "Canvas", value.asInstanceOf[js.Any])
     

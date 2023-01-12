@@ -23,7 +23,8 @@ object ServerGroupReplicationConfiguration {
     __obj.asInstanceOf[ServerGroupReplicationConfiguration]
   }
   
-  extension [Self <: ServerGroupReplicationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupReplicationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
     

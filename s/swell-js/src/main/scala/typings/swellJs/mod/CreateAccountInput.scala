@@ -23,7 +23,8 @@ object CreateAccountInput {
     __obj.asInstanceOf[CreateAccountInput]
   }
   
-  extension [Self <: CreateAccountInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccountInput] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object MappingFlattenedProperty {
     __obj.asInstanceOf[MappingFlattenedProperty]
   }
   
-  extension [Self <: MappingFlattenedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingFlattenedProperty] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: double): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

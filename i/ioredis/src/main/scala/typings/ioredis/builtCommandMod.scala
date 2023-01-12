@@ -203,7 +203,8 @@ object builtCommandMod {
       __obj.asInstanceOf[CommandNameFlags]
     }
     
-    extension [Self <: CommandNameFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandNameFlags] (val x: Self) extends AnyVal {
       
       inline def setENTER_SUBSCRIBER_MODE(value: js.Tuple2[subscribe, psubscribe]): Self = StObject.set(x, "ENTER_SUBSCRIBER_MODE", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object builtCommandMod {
       __obj.asInstanceOf[CommandOptions]
     }
     
-    extension [Self <: CommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorStack(value: js.Error): Self = StObject.set(x, "errorStack", value.asInstanceOf[js.Any])
       

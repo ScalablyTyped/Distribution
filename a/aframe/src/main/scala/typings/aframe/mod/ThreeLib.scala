@@ -2045,7 +2045,8 @@ object ThreeLib {
     __obj.asInstanceOf[ThreeLib]
   }
   
-  extension [Self <: ThreeLib](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeLib] (val x: Self) extends AnyVal {
     
     inline def setACESFilmicToneMapping(value: ToneMapping): Self = StObject.set(x, "ACESFilmicToneMapping", value.asInstanceOf[js.Any])
     

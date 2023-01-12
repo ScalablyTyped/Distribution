@@ -23,7 +23,8 @@ object StorageRuleType {
     __obj.asInstanceOf[StorageRuleType]
   }
   
-  extension [Self <: StorageRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageRuleType] (val x: Self) extends AnyVal {
     
     inline def setStorageAllocatedInBytes(value: PositiveSizeType): Self = StObject.set(x, "StorageAllocatedInBytes", value.asInstanceOf[js.Any])
     

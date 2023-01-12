@@ -67,7 +67,8 @@ object XCloseListener {
     __obj.asInstanceOf[XCloseListener]
   }
   
-  extension [Self <: XCloseListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCloseListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyClosing(value: EventObject => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
     

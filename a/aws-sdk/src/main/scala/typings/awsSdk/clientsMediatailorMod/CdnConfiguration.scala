@@ -23,7 +23,8 @@ object CdnConfiguration {
     __obj.asInstanceOf[CdnConfiguration]
   }
   
-  extension [Self <: CdnConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CdnConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdSegmentUrlPrefix(value: _String): Self = StObject.set(x, "AdSegmentUrlPrefix", value.asInstanceOf[js.Any])
     

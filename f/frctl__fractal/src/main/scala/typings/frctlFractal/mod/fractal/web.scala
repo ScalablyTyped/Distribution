@@ -109,7 +109,8 @@ object web {
       __obj.asInstanceOf[WebBuilderConfig]
     }
     
-    extension [Self <: WebBuilderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBuilderConfig] (val x: Self) extends AnyVal {
       
       inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object web {
       __obj.asInstanceOf[WebBuilderUrls]
     }
     
-    extension [Self <: WebBuilderUrls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebBuilderUrls] (val x: Self) extends AnyVal {
       
       inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object web {
       __obj.asInstanceOf[WebConfig]
     }
     
-    extension [Self <: WebConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebConfig] (val x: Self) extends AnyVal {
       
       inline def setBuilder(value: WebBuilderConfig): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
@@ -316,7 +319,8 @@ object web {
       __obj.asInstanceOf[WebServerConfig]
     }
     
-    extension [Self <: WebServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebServerConfig] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -356,7 +360,8 @@ object web {
       __obj.asInstanceOf[WebServerSyncOptions]
     }
     
-    extension [Self <: WebServerSyncOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebServerSyncOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: js.Array[String]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -387,7 +392,8 @@ object web {
       __obj.asInstanceOf[WebStaticConfig]
     }
     
-    extension [Self <: WebStaticConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebStaticConfig] (val x: Self) extends AnyVal {
       
       inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       

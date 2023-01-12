@@ -53,7 +53,8 @@ object GetResourcesInput {
     __obj.asInstanceOf[GetResourcesInput]
   }
   
-  extension [Self <: GetResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setExcludeCompliantResources(value: ExcludeCompliantResources): Self = StObject.set(x, "ExcludeCompliantResources", value.asInstanceOf[js.Any])
     

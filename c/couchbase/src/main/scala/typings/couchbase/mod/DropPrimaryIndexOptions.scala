@@ -23,7 +23,8 @@ object DropPrimaryIndexOptions {
     __obj.asInstanceOf[DropPrimaryIndexOptions]
   }
   
-  extension [Self <: DropPrimaryIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropPrimaryIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfNotExists(value: Boolean): Self = StObject.set(x, "ignoreIfNotExists", value.asInstanceOf[js.Any])
     

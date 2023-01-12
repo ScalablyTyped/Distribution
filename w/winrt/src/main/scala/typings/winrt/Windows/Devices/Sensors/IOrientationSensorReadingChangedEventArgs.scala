@@ -15,7 +15,8 @@ object IOrientationSensorReadingChangedEventArgs {
     __obj.asInstanceOf[IOrientationSensorReadingChangedEventArgs]
   }
   
-  extension [Self <: IOrientationSensorReadingChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOrientationSensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReading(value: OrientationSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }

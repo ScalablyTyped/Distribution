@@ -113,7 +113,8 @@ object eitherEitherMod {
       __obj.asInstanceOf[Either]
     }
     
-    extension [Self <: Either](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Either] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: Either => Either): Self = StObject.set(x, "alt", js.Any.fromFunction1(value))
       

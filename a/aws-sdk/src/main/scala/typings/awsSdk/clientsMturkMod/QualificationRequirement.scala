@@ -43,7 +43,8 @@ object QualificationRequirement {
     __obj.asInstanceOf[QualificationRequirement]
   }
   
-  extension [Self <: QualificationRequirement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualificationRequirement] (val x: Self) extends AnyVal {
     
     inline def setActionsGuarded(value: HITAccessActions): Self = StObject.set(x, "ActionsGuarded", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DeleteListenerInput {
     __obj.asInstanceOf[DeleteListenerInput]
   }
   
-  extension [Self <: DeleteListenerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteListenerInput] (val x: Self) extends AnyVal {
     
     inline def setListenerArn(value: ListenerArn): Self = StObject.set(x, "ListenerArn", value.asInstanceOf[js.Any])
   }

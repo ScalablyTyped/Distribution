@@ -22,7 +22,8 @@ object RSAESOAEPParamsParameters {
     __obj.asInstanceOf[RSAESOAEPParamsParameters]
   }
   
-  extension [Self <: RSAESOAEPParamsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSAESOAEPParamsParameters] (val x: Self) extends AnyVal {
     
     inline def setHashAlgorithm(value: AlgorithmIdentifier): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     

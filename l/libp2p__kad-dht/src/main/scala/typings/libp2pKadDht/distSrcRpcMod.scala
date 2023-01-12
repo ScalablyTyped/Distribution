@@ -51,7 +51,8 @@ object distSrcRpcMod {
       __obj.asInstanceOf[DHTMessageHandler]
     }
     
-    extension [Self <: DHTMessageHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DHTMessageHandler] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: (PeerId, Message) => js.Promise[js.UndefOr[Message]]): Self = StObject.set(x, "handle", js.Any.fromFunction2(value))
     }
@@ -96,7 +97,8 @@ object distSrcRpcMod {
       __obj.asInstanceOf[RPCInit]
     }
     
-    extension [Self <: RPCInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RPCInit] (val x: Self) extends AnyVal {
       
       inline def setLan(value: Boolean): Self = StObject.set(x, "lan", value.asInstanceOf[js.Any])
       

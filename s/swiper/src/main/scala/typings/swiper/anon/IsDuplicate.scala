@@ -23,7 +23,8 @@ object IsDuplicate {
     __obj.asInstanceOf[IsDuplicate]
   }
   
-  extension [Self <: IsDuplicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDuplicate] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CommentReply {
     __obj.asInstanceOf[CommentReply]
   }
   
-  extension [Self <: CommentReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentReply] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

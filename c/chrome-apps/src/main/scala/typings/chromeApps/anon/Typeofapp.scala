@@ -37,7 +37,8 @@ object Typeofapp {
     __obj.asInstanceOf[Typeofapp]
   }
   
-  extension [Self <: Typeofapp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofapp] (val x: Self) extends AnyVal {
     
     inline def setRuntime(value: Typeofruntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
     

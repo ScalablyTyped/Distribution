@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[AttachedScope]
     }
     
-    extension [Self <: AttachedScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachedScope] (val x: Self) extends AnyVal {
       
       inline def setAddDeclaration(value: (Node, Boolean, Boolean) => Unit): Self = StObject.set(x, "addDeclaration", js.Any.fromFunction3(value))
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[DataToEsmOptions]
     }
     
-    extension [Self <: DataToEsmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataToEsmOptions] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object XmlOptions {
     __obj.asInstanceOf[XmlOptions]
   }
   
-  extension [Self <: XmlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeRoot(value: Boolean): Self = StObject.set(x, "includeRoot", value.asInstanceOf[js.Any])
     

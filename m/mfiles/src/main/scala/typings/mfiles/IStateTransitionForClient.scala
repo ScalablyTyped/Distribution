@@ -41,7 +41,8 @@ object IStateTransitionForClient {
     __obj.asInstanceOf[IStateTransitionForClient]
   }
   
-  extension [Self <: IStateTransitionForClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateTransitionForClient] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IStateTransitionForClient): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

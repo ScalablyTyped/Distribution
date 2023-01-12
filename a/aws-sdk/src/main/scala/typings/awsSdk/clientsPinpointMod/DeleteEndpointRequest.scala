@@ -23,7 +23,8 @@ object DeleteEndpointRequest {
     __obj.asInstanceOf[DeleteEndpointRequest]
   }
   
-  extension [Self <: DeleteEndpointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEndpointRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

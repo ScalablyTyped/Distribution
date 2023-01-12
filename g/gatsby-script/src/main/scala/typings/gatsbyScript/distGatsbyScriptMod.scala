@@ -76,7 +76,8 @@ object distGatsbyScriptMod {
       __obj.asInstanceOf[ScriptProps]
     }
     
-    extension [Self <: ScriptProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

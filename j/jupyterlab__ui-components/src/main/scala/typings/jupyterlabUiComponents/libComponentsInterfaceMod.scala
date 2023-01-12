@@ -23,7 +23,8 @@ object libComponentsInterfaceMod {
       __obj.asInstanceOf[IElementRefProps[E]]
     }
     
-    extension [Self <: IElementRefProps[?], E /* <: HTMLElement */](x: Self & IElementRefProps[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IElementRefProps[?], E /* <: HTMLElement */] (val x: Self & IElementRefProps[E]) extends AnyVal {
       
       inline def setElementRef(value: /* ref */ E | Null => Unit): Self = StObject.set(x, "elementRef", js.Any.fromFunction1(value))
       

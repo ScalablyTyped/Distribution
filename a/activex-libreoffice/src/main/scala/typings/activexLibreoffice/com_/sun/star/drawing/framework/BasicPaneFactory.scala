@@ -32,7 +32,8 @@ object BasicPaneFactory {
     __obj.asInstanceOf[BasicPaneFactory]
   }
   
-  extension [Self <: BasicPaneFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicPaneFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: XController => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Options[T]]
     }
     
-    extension [Self <: Options[?], T](x: Self & Options[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       inline def setEstimateSize(value: /* index */ Double => Double): Self = StObject.set(x, "estimateSize", js.Any.fromFunction1(value))
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object mod {
       __obj.asInstanceOf[ScrollToOptions]
     }
     
-    extension [Self <: ScrollToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollToOptions] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: ScrollAlignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     }

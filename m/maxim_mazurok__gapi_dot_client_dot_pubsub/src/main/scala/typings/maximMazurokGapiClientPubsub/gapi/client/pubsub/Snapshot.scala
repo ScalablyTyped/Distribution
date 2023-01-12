@@ -32,7 +32,8 @@ object Snapshot {
     __obj.asInstanceOf[Snapshot]
   }
   
-  extension [Self <: Snapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

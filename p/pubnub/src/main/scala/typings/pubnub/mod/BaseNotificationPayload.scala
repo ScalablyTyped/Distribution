@@ -26,7 +26,8 @@ object BaseNotificationPayload {
     __obj.asInstanceOf[BaseNotificationPayload]
   }
   
-  extension [Self <: BaseNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

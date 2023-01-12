@@ -52,7 +52,8 @@ object PartialenabledbooleanminP {
     __obj.asInstanceOf[PartialenabledbooleanminP]
   }
   
-  extension [Self <: PartialenabledbooleanminP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialenabledbooleanminP] (val x: Self) extends AnyVal {
     
     inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
     

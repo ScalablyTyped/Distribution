@@ -23,7 +23,8 @@ object ReceiptFilter {
     __obj.asInstanceOf[ReceiptFilter]
   }
   
-  extension [Self <: ReceiptFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiptFilter] (val x: Self) extends AnyVal {
     
     inline def setIpFilter(value: ReceiptIpFilter): Self = StObject.set(x, "IpFilter", value.asInstanceOf[js.Any])
     

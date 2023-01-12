@@ -21,7 +21,8 @@ object AbortEvent {
     __obj.asInstanceOf[AbortEvent]
   }
   
-  extension [Self <: AbortEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: abort): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

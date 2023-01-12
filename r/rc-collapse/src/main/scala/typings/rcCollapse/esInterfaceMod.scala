@@ -58,7 +58,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[CollapsePanelProps]
     }
     
-    extension [Self <: CollapsePanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapsePanelProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[CollapseProps]
     }
     
-    extension [Self <: CollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
       
       inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
       

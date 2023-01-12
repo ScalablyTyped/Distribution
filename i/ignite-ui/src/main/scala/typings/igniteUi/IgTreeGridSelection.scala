@@ -128,7 +128,8 @@ object IgTreeGridSelection {
     __obj.asInstanceOf[IgTreeGridSelection]
   }
   
-  extension [Self <: IgTreeGridSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridSelection] (val x: Self) extends AnyVal {
     
     inline def setActivation(value: Boolean): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
     

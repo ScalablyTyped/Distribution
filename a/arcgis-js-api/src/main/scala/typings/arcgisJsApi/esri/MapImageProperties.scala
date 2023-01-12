@@ -70,7 +70,8 @@ object MapImageProperties {
     __obj.asInstanceOf[MapImageProperties]
   }
   
-  extension [Self <: MapImageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapImageProperties] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Render {
     __obj.asInstanceOf[Render]
   }
   
-  extension [Self <: Render](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
     
     inline def setRender(value: Validator[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
   }

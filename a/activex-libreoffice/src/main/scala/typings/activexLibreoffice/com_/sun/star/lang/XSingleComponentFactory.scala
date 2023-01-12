@@ -44,7 +44,8 @@ object XSingleComponentFactory {
     __obj.asInstanceOf[XSingleComponentFactory]
   }
   
-  extension [Self <: XSingleComponentFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSingleComponentFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceWithArgumentsAndContext(value: (SeqEquiv[Any], XComponentContext) => XInterface): Self = StObject.set(x, "createInstanceWithArgumentsAndContext", js.Any.fromFunction2(value))
     

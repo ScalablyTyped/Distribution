@@ -59,7 +59,8 @@ object ToolBarItem {
     __obj.asInstanceOf[ToolBarItem]
   }
   
-  extension [Self <: ToolBarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarItem] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

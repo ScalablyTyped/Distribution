@@ -42,7 +42,8 @@ object GetDeliverabilityTestReportResponse {
     __obj.asInstanceOf[GetDeliverabilityTestReportResponse]
   }
   
-  extension [Self <: GetDeliverabilityTestReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDeliverabilityTestReportResponse] (val x: Self) extends AnyVal {
     
     inline def setDeliverabilityTestReport(value: DeliverabilityTestReport): Self = StObject.set(x, "DeliverabilityTestReport", value.asInstanceOf[js.Any])
     

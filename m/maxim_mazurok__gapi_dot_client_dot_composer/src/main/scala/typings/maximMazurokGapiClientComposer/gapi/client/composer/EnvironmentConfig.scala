@@ -75,7 +75,8 @@ object EnvironmentConfig {
     __obj.asInstanceOf[EnvironmentConfig]
   }
   
-  extension [Self <: EnvironmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentConfig] (val x: Self) extends AnyVal {
     
     inline def setAirflowUri(value: String): Self = StObject.set(x, "airflowUri", value.asInstanceOf[js.Any])
     

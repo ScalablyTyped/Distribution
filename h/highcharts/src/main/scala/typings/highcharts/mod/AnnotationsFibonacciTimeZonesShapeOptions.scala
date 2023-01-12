@@ -83,7 +83,8 @@ object AnnotationsFibonacciTimeZonesShapeOptions {
     __obj.asInstanceOf[AnnotationsFibonacciTimeZonesShapeOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciTimeZonesShapeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciTimeZonesShapeOptions] (val x: Self) extends AnyVal {
     
     inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     

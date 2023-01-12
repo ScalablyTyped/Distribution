@@ -28,7 +28,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[KerasFileSerialization]
     }
     
-    extension [Self <: KerasFileSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KerasFileSerialization] (val x: Self) extends AnyVal {
       
       inline def setModel_config(value: ModelSerialization | SequentialSerialization | LegacySequentialSerialization): Self = StObject.set(x, "model_config", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[LegacySequentialSerialization]
     }
     
-    extension [Self <: LegacySequentialSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacySequentialSerialization] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[ModelConfig]
     }
     
-    extension [Self <: ModelConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelConfig] (val x: Self) extends AnyVal {
       
       inline def setInput_layers(value: js.Array[TensorKeyArray]): Self = StObject.set(x, "input_layers", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[ModelSerialization]
     }
     
-    extension [Self <: ModelSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelSerialization] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[SequentialConfig]
     }
     
-    extension [Self <: SequentialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialConfig] (val x: Self) extends AnyVal {
       
       inline def setLayers(value: js.Array[LayerSerialization]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
@@ -172,7 +177,8 @@ object distKerasFormatModelSerializationMod {
       __obj.asInstanceOf[SequentialSerialization]
     }
     
-    extension [Self <: SequentialSerialization](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequentialSerialization] (val x: Self) extends AnyVal {
       
       inline def setBackend(value: String): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
       

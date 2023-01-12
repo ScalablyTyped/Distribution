@@ -16,7 +16,8 @@ object AcceptProposalRequest {
     __obj.asInstanceOf[AcceptProposalRequest]
   }
   
-  extension [Self <: AcceptProposalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptProposalRequest] (val x: Self) extends AnyVal {
     
     inline def setProposalRevision(value: String): Self = StObject.set(x, "proposalRevision", value.asInstanceOf[js.Any])
     

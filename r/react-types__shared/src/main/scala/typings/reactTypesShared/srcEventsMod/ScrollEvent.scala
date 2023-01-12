@@ -19,7 +19,8 @@ object ScrollEvent {
     __obj.asInstanceOf[ScrollEvent]
   }
   
-  extension [Self <: ScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     
